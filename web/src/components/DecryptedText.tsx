@@ -71,8 +71,10 @@ function removeRandom(set: Set<number>, count: number) {
   return new Set(arr);
 }
 
-export interface DecryptedTextProps
-  extends Omit<ComponentPropsWithoutRef<"span">, "children" | "className"> {
+export interface DecryptedTextProps extends Omit<
+  ComponentPropsWithoutRef<"span">,
+  "children" | "className"
+> {
   text: string;
   /** Milliseconds between animation ticks. */
   speed?: number;
