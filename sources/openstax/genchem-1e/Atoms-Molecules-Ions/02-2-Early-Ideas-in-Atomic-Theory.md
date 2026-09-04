@@ -1,5 +1,5 @@
 ---
-title: "2.1: Prelude to Atoms"
+title: "2.2: Early Ideas in Atomic Theory"
 book: "Chemistry 1e (OpenStax)"
 chapter: "2. Atoms, Molecules, and Ions"
 source_url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.02%3A_Early_Ideas_in_Atomic_Theory"
