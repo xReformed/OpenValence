@@ -6,7 +6,7 @@ gets shown next to every citation.
 
 | Document | Source | Author | License |
 | --- | --- | --- | --- |
-| `openstax/genchem/*` | [Chemistry 1e — LibreTexts](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) | OpenStax | CC BY 4.0 |
+| `openstax/genchem-1e/**` | [Chemistry 1e — LibreTexts](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) | OpenStax | CC BY 4.0 |
 
 ## Layout
 

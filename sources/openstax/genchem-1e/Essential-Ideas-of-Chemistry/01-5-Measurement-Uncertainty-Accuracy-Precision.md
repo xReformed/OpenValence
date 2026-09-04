@@ -196,7 +196,7 @@ What is the density of a liquid with a mass of 31.1415 g and a volume of 30.13 c
 
 1.034 g/mL
 
-### Example 1.5.5
+### Example 1.5.4
 
 A piece of rebar is weighed and then submerged in a graduated cylinder partially filled with water, with results as shown.
 
@@ -221,7 +221,7 @@ density = mass / volume = 69.658 g / 8.9 cm^3 = 7.8 g/cm^3
 
 The density of iron is 7.9 g/cm^3, very close to that of rebar, which lends some support to the fact that rebar is mostly iron.
 
-### Exercise 1.5.5
+### Exercise 1.5.4
 
 An irregularly shaped piece of a shiny yellowish material is weighed and then submerged in a graduated cylinder, with results as shown.
 

@@ -40,7 +40,7 @@ Table 1.4.2: Common Unit Prefixes
 | deci | d | 10^-1 | 1 deciliter (dL) = 1 × 10^-1 L (0.1 L) |
 | kilo | k | 10^3 | 1 kilometer (km) = 1 × 10^3 m (1000 m) |
 | mega | M | 10^6 | 3 megahertz (MHz) = 3 × 10^6 Hz (3,000,000 Hz) |
-| giga | G | 10^9 | 8 gigayears (Gyr) = 8 × 10^9 yr (8,000,000,000 yr) |
+| giga | G | 10^9 | 8 gigayears (Gyr) = 8 × 10^9 yr (8,000,000,000 Gyr) |
 | tera | T | 10^12 | 5 terawatts (TW) = 5 × 10^12 W (5,000,000,000,000 W) |
 
 ## 1.4.1: SI Base Units
@@ -143,7 +143,7 @@ Note that since the yellow block is not completely submerged, you cannot determi
 
 density = mass / volume = 5.00 kg / 10.00 L = 0.500 kg/L
 
-#### Exercise 1.4.2
+#### Exercise 1.4.1
 
 Remove all of the blocks from the water and add the green block to the tank of water, placing it approximately in the middle of the tank. Determine the density of the green block.
 
