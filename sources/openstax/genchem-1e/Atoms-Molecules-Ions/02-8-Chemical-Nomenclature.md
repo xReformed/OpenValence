@@ -1,7 +1,7 @@
 ---
 title: "2.8: Chemical Nomenclature"
 book: "Chemistry 1e (OpenStax)"
-chapter: "2.8: Chemical Nomenclature"
+chapter: "2: Atoms, Molecules, and Ions"
 source_url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.08%3A_Chemical_Nomenclature"
 author: "OpenStax"
 license: "CC BY 4.0"
@@ -71,7 +71,7 @@ Table 2.8.4: Names of Some Transition Metal Ionic Compounds
 | HgO | mercury(II) oxide |
 | Cu3(PO4)2 | copper(II) phosphate |
 
-Out-of-date nomenclature used the suffixes *–ic* and *–ous* to designate metals with higher and lower charges, respectively: Iron(III) chloride, FeCl3, was previously called ferric chloride, and iron(II) chloride, FeCl2, was known as ferrous chloride. Though this naming convention has been largely abandoned by the scientific community, it remains in use by some segments of industry. For example, you may see the words *stannous fluoride* on a tube of toothpaste. This represents the formula SnF2, which is more properly named tin(II) fluoride. The other fluoride of tin is SnF4, which was previously called stannic fluoride but is now named tin(IV) fluoride.
+Out-of-date nomenclature used the suffixes _–ic_ and _–ous_ to designate metals with higher and lower charges, respectively: Iron(III) chloride, FeCl3, was previously called ferric chloride, and iron(II) chloride, FeCl2, was known as ferrous chloride. Though this naming convention has been largely abandoned by the scientific community, it remains in use by some segments of industry. For example, you may see the words _stannous fluoride_ on a tube of toothpaste. This represents the formula SnF2, which is more properly named tin(II) fluoride. The other fluoride of tin is SnF4, which was previously called stannic fluoride but is now named tin(IV) fluoride.
 
 ### Example 2.8.1: Naming Ionic Compounds
 
@@ -125,7 +125,7 @@ CrF6
 
 ### Erin Brokovich and Chromium Contamination
 
-In the early 1990s, legal file clerk Erin Brockovich (Figure 2.8.2) discovered a high rate of serious illnesses in the small town of Hinckley, California. Her investigation eventually linked the illnesses to groundwater contaminated by Cr(VI) used by Pacific Gas & Electric (PG&E) to fight corrosion in a nearby natural gas pipeline. As dramatized in the film *Erin Brokovich* (for which Julia Roberts won an Oscar), Erin and lawyer Edward Masry sued PG&E for contaminating the water near Hinckley in 1993. The settlement they won in 1996—$333 million—was the largest amount ever awarded for a direct-action lawsuit in the US at that time.
+In the early 1990s, legal file clerk Erin Brockovich (Figure 2.8.2) discovered a high rate of serious illnesses in the small town of Hinckley, California. Her investigation eventually linked the illnesses to groundwater contaminated by Cr(VI) used by Pacific Gas & Electric (PG&E) to fight corrosion in a nearby natural gas pipeline. As dramatized in the film _Erin Brokovich_ (for which Julia Roberts won an Oscar), Erin and lawyer Edward Masry sued PG&E for contaminating the water near Hinckley in 1993. The settlement they won in 1996—$333 million—was the largest amount ever awarded for a direct-action lawsuit in the US at that time.
 
 Figure 2.8.2: (a) Erin Brockovich found that Cr(VI), used by PG&E, had contaminated the Hinckley, California, water supply. (b) The Cr(VI) ion is often present in water as the polyatomic ions chromate, CrO4^2- (left), and dichromate, Cr2O7^2- (right).
 
@@ -139,7 +139,7 @@ The bonding characteristics of inorganic molecular compounds are different from 
 
 ## 2.8.6: Compounds Composed of Two Elements
 
-When two nonmetallic elements form a molecular compound, several combination ratios are often possible. For example, carbon and oxygen can form the compounds CO and CO2. Since these are different substances with different properties, they cannot both have the same name (they cannot both be called carbon oxide). To deal with this situation, we use a naming method that is somewhat similar to that used for ionic compounds, but with added prefixes to specify the numbers of atoms of each element. The name of the more metallic element (the one farther to the left and/or bottom of the periodic table) is first, followed by the name of the more nonmetallic element (the one farther to the right and/or top) with its ending changed to the suffix *–ide*. The numbers of atoms of each element are designated by the Greek prefixes shown in Table 2.8.5.
+When two nonmetallic elements form a molecular compound, several combination ratios are often possible. For example, carbon and oxygen can form the compounds CO and CO2. Since these are different substances with different properties, they cannot both have the same name (they cannot both be called carbon oxide). To deal with this situation, we use a naming method that is somewhat similar to that used for ionic compounds, but with added prefixes to specify the numbers of atoms of each element. The name of the more metallic element (the one farther to the left and/or bottom of the periodic table) is first, followed by the name of the more nonmetallic element (the one farther to the right and/or top) with its ending changed to the suffix _–ide_. The numbers of atoms of each element are designated by the Greek prefixes shown in Table 2.8.5.
 
 Table 2.8.5: Nomenclature Prefixes
 | Number | Prefix | Number | Prefix |
@@ -150,7 +150,7 @@ Table 2.8.5: Nomenclature Prefixes
 | 4 | tetra- | 9 | nona- |
 | 5 | penta- | 10 | deca- |
 
-When only one atom of the first element is present, the prefix *mono-* is usually deleted from that part. Thus, CO is named carbon monoxide, and CO2 is called carbon dioxide. When two vowels are adjacent, the *a* in the Greek prefix is usually dropped. Some other examples are shown in Table 2.8.6.
+When only one atom of the first element is present, the prefix _mono-_ is usually deleted from that part. Thus, CO is named carbon monoxide, and CO2 is called carbon dioxide. When two vowels are adjacent, the _a_ in the Greek prefix is usually dropped. Some other examples are shown in Table 2.8.6.
 
 Table 2.8.6: Names of Some Molecular Compounds Composed of Two Elements
 | Compound | Name | Compound | Name |
@@ -210,20 +210,20 @@ CCl4
 
 Some compounds containing hydrogen are members of an important class of substances known as acids. The chemistry of these compounds is explored in more detail in later chapters of this text, but for now, it will suffice to note that many acids release hydrogen ions, H^+, when dissolved in water. To denote this distinct chemical property, a mixture of water with an acid is given a name derived from the compound’s name. If the compound is a binary acid (comprised of hydrogen and one other nonmetallic element):
 
-1. The word “hydrogen” is changed to the prefix *hydro-*
-2. The other nonmetallic element name is modified by adding the suffix *-ic*
+1. The word “hydrogen” is changed to the prefix _hydro-_
+2. The other nonmetallic element name is modified by adding the suffix _-ic_
 3. The word “acid” is added as a second word
 
-For example, when the gas HCl (hydrogen chloride) is dissolved in water, the solution is called *hydrochloric acid*. Several other examples of this nomenclature are shown in Table 2.8.7.
+For example, when the gas HCl (hydrogen chloride) is dissolved in water, the solution is called _hydrochloric acid_. Several other examples of this nomenclature are shown in Table 2.8.7.
 
 Table 2.8.7: Names of Some Simple Acids
 | Name of Gas | Name of Acid |
 | --- | --- |
-| HF(*g*), hydrogen fluoride | HF(*aq*), hydrofluoric acid |
-| HCl(*g*), hydrogen chloride | HCl(*aq*), hydrochloric acid |
-| HBr(*g*), hydrogen bromide | HBr(*aq*), hydrobromic acid |
-| HI(*g*), hydrogen iodide | HI(*aq*), hydroiodic acid |
-| H2S(*g*), hydrogen sulfide | H2S(*aq*), hydrosulfuric acid |
+| HF(_g_), hydrogen fluoride | HF(_aq_), hydrofluoric acid |
+| HCl(_g_), hydrogen chloride | HCl(_aq_), hydrochloric acid |
+| HBr(_g_), hydrogen bromide | HBr(_aq_), hydrobromic acid |
+| HI(_g_), hydrogen iodide | HI(_aq_), hydroiodic acid |
+| H2S(_g_), hydrogen sulfide | H2S(_aq_), hydrosulfuric acid |
 
 ## 2.8.8: Oxyacids
 
@@ -231,10 +231,10 @@ Many compounds containing three or more elements (such as organic compounds or c
 
 1. Omit “hydrogen”
 2. Start with the root name of the anion
-3. Replace *–ate* with *–ic*, or *–ite* with *–ous*
+3. Replace _–ate_ with _–ic_, or _–ite_ with _–ous_
 4. Add “acid”
 
-For example, consider H2CO3 (which you might be tempted to call “hydrogen carbonate”). To name this correctly, “hydrogen” is omitted; the *–ate* of carbonate is replace with *–ic*; and acid is added—so its name is carbonic acid. Other examples are given in Table 2.8.8. There are some exceptions to the general naming method (e.g., H2SO4 is called sulfuric acid, not sulfic acid, and H2SO3 is sulfurous, not sulfous, acid).
+For example, consider H2CO3 (which you might be tempted to call “hydrogen carbonate”). To name this correctly, “hydrogen” is omitted; the _–ate_ of carbonate is replace with _–ic_; and acid is added—so its name is carbonic acid. Other examples are given in Table 2.8.8. There are some exceptions to the general naming method (e.g., H2SO4 is called sulfuric acid, not sulfic acid, and H2SO3 is sulfurous, not sulfous, acid).
 
 Table 2.8.8: Names of Common Oxyacids
 | Formula | Anion Name | Acid Name |
@@ -250,4 +250,4 @@ Table 2.8.8: Names of Common Oxyacids
 
 ## Summary
 
-Chemists use nomenclature rules to clearly name compounds. Ionic and molecular compounds are named using somewhat-different methods. Binary ionic compounds typically consist of a metal and a nonmetal. The name of the metal is written first, followed by the name of the nonmetal with its ending changed to *–ide*. For example, K2O is called potassium oxide. If the metal can form ions with different charges, a Roman numeral in parentheses follows the name of the metal to specify its charge. Thus, FeCl2 is iron(II) chloride and FeCl3 is iron(III) chloride. Some compounds contain polyatomic ions; the names of common polyatomic ions should be memorized. Molecular compounds can form compounds with different ratios of their elements, so prefixes are used to specify the numbers of atoms of each element in a molecule of the compound. Examples include SF6, sulfur hexafluoride, and N2O4, dinitrogen tetroxide. Acids are an important class of compounds containing hydrogen and having special nomenclature rules. Binary acids are named using the prefix *hydro-*, changing the *–ide* suffix to *–ic*, and adding “acid;” HCl is hydrochloric acid. Oxyacids are named by changing the ending of the anion (*-ate* to *–ic*, and *-ite* to *-ous*) and adding “acid;” H2CO3 is carbonic acid.
+Chemists use nomenclature rules to clearly name compounds. Ionic and molecular compounds are named using somewhat-different methods. Binary ionic compounds typically consist of a metal and a nonmetal. The name of the metal is written first, followed by the name of the nonmetal with its ending changed to _–ide_. For example, K2O is called potassium oxide. If the metal can form ions with different charges, a Roman numeral in parentheses follows the name of the metal to specify its charge. Thus, FeCl2 is iron(II) chloride and FeCl3 is iron(III) chloride. Some compounds contain polyatomic ions; the names of common polyatomic ions should be memorized. Molecular compounds can form compounds with different ratios of their elements, so prefixes are used to specify the numbers of atoms of each element in a molecule of the compound. Examples include SF6, sulfur hexafluoride, and N2O4, dinitrogen tetroxide. Acids are an important class of compounds containing hydrogen and having special nomenclature rules. Binary acids are named using the prefix _hydro-_, changing the _–ide_ suffix to _–ic_, and adding “acid;” HCl is hydrochloric acid. Oxyacids are named by changing the ending of the anion (_-ate_ to _–ic_, and _-ite_ to _-ous_) and adding “acid;” H2CO3 is carbonic acid.

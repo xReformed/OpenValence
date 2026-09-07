@@ -1,7 +1,7 @@
 ---
 title: "2.7: Molecular and Ionic Compounds"
 book: "Chemistry 1e (OpenStax)"
-chapter: "2.7: Molecular and Ionic Compounds"
+chapter: "2: Atoms, Molecules, and Ions"
 source_url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.07%3A_Molecular_and_Ionic_Compounds"
 author: "OpenStax"
 license: "CC BY 4.0"

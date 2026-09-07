@@ -1,7 +1,7 @@
 ---
 title: "2.4: Atomic Structure and Symbolism"
 book: "Chemistry 1e (OpenStax)"
-chapter: "2.4. Atomic Structure and Symbolism"
+chapter: "2: Atoms, Molecules, and Ions"
 source_url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.02%3A_Early_Ideas_in_Atomic_Theory"
 author: "OpenStax"
 license: "CC BY 4.0"
@@ -215,4 +215,4 @@ Isotopes of an element are atoms with the same atomic number but different mass 
 
 ## 2.4.4: Key Equations
 
-- average mass = Σ_i (fractional abundance × isotopic mass)_i
+- average mass = Σ_i (fractional abundance × isotopic mass)\_i

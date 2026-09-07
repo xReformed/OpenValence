@@ -1,7 +1,7 @@
 ---
 title: "2.6: The Periodic Table"
 book: "Chemistry 1e (OpenStax)"
-chapter: "2.6: Periodic Table"
+chapter: "2: Atoms, Molecules, and Ions"
 source_url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)/02%3A_Atoms_Molecules_and_Ions/2.02%3A_Early_Ideas_in_Atomic_Theory"
 author: "OpenStax"
 license: "CC BY 4.0"
