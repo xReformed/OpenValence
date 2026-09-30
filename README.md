@@ -45,14 +45,15 @@ evals/       Retrieval + answer evaluation suites (empty)
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
 - Node 20+ (for the web app)
 - An embedding API key — OpenAI by default, or anything OpenAI-compatible
+- An Anthropic API key, for answer generation in `api/`
+
+Keys live in a `.env` file at the repo root, which is git-ignored. Both `ingest/` and `api/` load it on startup.
 
 ```bash
-# Windows (PowerShell)
-$env:EMBEDDING_API_KEY = "sk-..."
-
-# macOS / Linux
-export EMBEDDING_API_KEY="sk-..."
+cp .env.example .env    # then fill in the keys
 ```
+
+A real environment variable with the same name takes precedence over `.env`.
 
 Optional overrides: `EMBEDDING_BASE_URL` (default `https://api.openai.com/v1`) and `EMBEDDING_MODEL`. Set both to point at a local or alternative provider.
 

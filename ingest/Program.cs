@@ -11,6 +11,9 @@ using Ingest;
 const string DefaultSources = "sources";
 const string DefaultIndex = "database/index.json";
 
+// Pick up API keys from the repo-root .env. Real environment variables win.
+DotNetEnv.Env.NoClobber().TraversePath().Load();
+
 var command = args.Length > 0 ? args[0].ToLowerInvariant() : "help";
 
 try
