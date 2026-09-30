@@ -124,3 +124,15 @@ The AI does **not** draw molecules. It produces a text identifier; a rendering l
 ## Portfolio framing
 
 For the AI-engineering pivot, keep the repo **public** and write the README so a reviewer immediately sees you've handled: embeddings, a vector store, retrieval, grounding against hallucination, and citation. That combination is the legible signal hiring managers look for — the working app is the proof, the public code is the portfolio.
+
+## Potential Features to be added
+
+Deterministic calculators as tools. Stoichiometry, molar mass, limiting reagent, dilution (C₁V₁ = C₂V₂), pH, gas laws, and unit conversions computed in code, with the LLM only choosing the tool and explaining the result. LLMs make arithmetic slips in chemistry constantly, so this is a big accuracy win and a clear portfolio talking point.
+
+Equation balancer. Balance reactions with a linear-algebra solver rather than the model, then have the model explain the steps.
+
+Interactive 3D molecule viewer. Render structures from SMILES or PubChem with 3Dmol.js or NGL in the React frontend, alongside RDKit 2D depictions.
+
+Property lookup cards. When a compound comes up, show a card with formula, molar mass, melting/boiling point, solubility, and GHS hazard pictograms pulled from PubChem.
+
+Name ↔ structure conversion. IUPAC name, common name, SMILES, and formula conversions (via PubChem or OPSIN), which students struggle with constantly.
