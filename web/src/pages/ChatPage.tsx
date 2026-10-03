@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import ChatComposer from "../components/ChatComposer";
 import ChatSidebar from "../components/ChatSidebar";
 import ChatTurnView from "../components/ChatTurnView";
@@ -14,6 +15,20 @@ export default function ChatPage({ chatId }: { chatId: string }) {
   const { turns, status, error, send } = useChat(chatId);
   const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+
+  /* A question handed over from a topic page (see NewChatRoute). Clearing the
+     route state first means a reload or back-navigation won't re-ask it; the
+     ref covers StrictMode's double effect run. */
+  const location = useLocation();
+  const navigate = useNavigate();
+  const asked = useRef(false);
+  useEffect(() => {
+    const ask = (location.state as { ask?: string } | null)?.ask;
+    if (!ask || asked.current) return;
+    asked.current = true;
+    navigate(location.pathname, { replace: true, state: null });
+    void send(ask);
+  }, [location, navigate, send]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });

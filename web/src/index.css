@@ -8,4 +8,17 @@
      where the bright fill is too light to read on white. */
   --color-accent: #00e26a;
   --color-accent-ink: #018a44;
+
+  /* A check settling into place: slight overshoot, no bounce. */
+  --animate-pop: pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.3) both;
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }

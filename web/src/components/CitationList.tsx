@@ -1,10 +1,12 @@
 import { useState } from "react";
 import type { Citation } from "../lib/types";
+import ChemText from "./ChemText";
 
 /**
  * Numbered markers that expand in place. The snippet is the retrieved chunk
  * shown verbatim — the point is that the reader can check the claim without
- * leaving the answer.
+ * leaving the answer. ChemText only changes how formulas are typeset (H2O →
+ * H₂O); the words are the source's own.
  */
 export default function CitationList({ citations }: { citations: Citation[] }) {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -37,7 +39,7 @@ export default function CitationList({ citations }: { citations: Citation[] }) {
       {open && (
         <figure className="mt-3 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
           <blockquote className="font-sans text-xs leading-relaxed text-neutral-700">
-            {open.snippet}
+            <ChemText text={open.snippet} />
           </blockquote>
           <figcaption className="mt-2 text-[0.55rem] text-neutral-400">
             <a
