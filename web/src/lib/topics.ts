@@ -1,10 +1,3 @@
-/**
- * Landing-page topics and their detail pages. Example questions are ones the
- * corpus can actually answer (most are drawn from evals/questions.jsonl), and
- * "covered" lists real section titles from sources/, so a topic page never
- * promises more than the app can deliver.
- */
-
 export interface Topic {
   slug: string;
   title: string;
@@ -152,7 +145,6 @@ export function findTopic(slug: string | undefined): Topic | undefined {
   return TOPICS.find((topic) => topic.slug === slug);
 }
 
-/** Chat link that starts a new conversation with this question already asked. */
 export function askHref(question: string): string {
   return `/chat?q=${encodeURIComponent(question)}`;
 }

@@ -7,6 +7,11 @@ gets shown next to every citation.
 | Document | Source | Author | License |
 | --- | --- | --- | --- |
 | `openstax/genchem-1e/**` | [Chemistry 1e — LibreTexts](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) | OpenStax | CC BY 4.0 |
+| `openstax/introductory/**` | [Beginning Chemistry (Ball) — LibreTexts](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) | Anonymous (as listed on LibreTexts) | CC BY-NC-SA 3.0 |
+
+`openstax/introductory/` is structure only so far: one front-matter stub per
+section, bodies empty, so `ingest` produces no chunks from it. Note its licence
+is NonCommercial and ShareAlike, unlike the CC BY 4.0 of genchem-1e.
 
 ## Layout
 

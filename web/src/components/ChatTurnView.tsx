@@ -15,8 +15,6 @@ export default function ChatTurnView({ turn }: { turn: ChatTurn }) {
 
   return (
     <div>
-      {/* font-sans opts out of the shell's Michroma: answers are long prose,
-          and Michroma is a display face that punishes reading at length. */}
       <p className="font-sans text-sm leading-relaxed text-neutral-800">
         <ChemText text={turn.content} />
       </p>

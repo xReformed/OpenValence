@@ -59,23 +59,17 @@ const PATTERN = new RegExp(
 );
 
 const STATE_SYMBOL = /\((?:aq|s|l|g)\)$/;
-const LIGAND = /^\([a-z]{1,4}\)/; // (en), (ox), (py) inside complexes
+const LIGAND = /^\([a-z]{1,4}\)/;
 
-/** Strip a {...} or (...) wrapper: ^{2−} → 2−, t_(1/2) → 1/2. */
 function unwrap(group: string): string {
   const first = group[0];
   return first === "{" || first === "(" ? group.slice(1, -1) : group;
 }
 
-/** Use a real minus sign in numeric exponents and charges. */
 function minus(text: string): string {
   return /^[+\-−]?[\d.]*[+\-−]?$/.test(text) ? text.replace(/-/g, MINUS) : text;
 }
 
-/**
- * Formula body → segments, or null if it isn't a plausible formula (in which
- * case the caller leaves the text untouched).
- */
 function formatFormula(rawBody: string, rawCharge: string | undefined): Segment[] | null {
   const state = rawBody.match(STATE_SYMBOL)?.[0] ?? "";
   const body = state ? rawBody.slice(0, -state.length) : rawBody;
@@ -96,7 +90,7 @@ function formatFormula(rawBody: string, rawCharge: string | undefined): Segment[
       const symbol = /^[A-Z][a-z]$/.test(two) && ELEMENTS.has(two) ? two : ch;
       if (!ELEMENTS.has(symbol)) return null;
       const next = body[i + symbol.length];
-      if (next && next >= "a" && next <= "z") return null; // "Hx", "Cla"
+      if (next && next >= "a" && next <= "z") return null;
       out.push({ kind: "text", text: symbol });
       i += symbol.length;
       prev = "atom";
@@ -131,10 +125,9 @@ function formatFormula(rawBody: string, rawCharge: string | undefined): Segment[
   }
 
   if (depth !== 0) return null;
-  if (!hasDigit && !charge) return null; // nothing to format: CO, NaCl, DNA
+  if (!hasDigit && !charge) return null;
 
   if (charge) {
-    /* Fe3+ and [Co(en)3]3+: the trailing digits are the charge, not a count. */
     const singleElement = out.length === 2 && out[0].kind === "text" && /^[A-Z]/.test(out[0].text);
     const afterBracket = out.length >= 2 && out[out.length - 2].text === "]";
     const last = out[out.length - 1];
@@ -225,7 +218,7 @@ export function parseChemText(text: string): Segment[] {
       parts = formulaInProse(g.formula, g.charge);
     }
 
-    if (!parts) continue; // not chemistry after all; stays in the plain run
+    if (!parts) continue;
 
     push(segments, "text", text.slice(cursor, start));
     for (const part of parts) push(segments, part.kind, part.text);

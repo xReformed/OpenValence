@@ -25,7 +25,6 @@ const styles: Record<"wrapper" | "srOnly", CSSProperties> = {
 const DEFAULT_CHARACTERS =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
 
-/** Replaces every not-yet-revealed, non-space character with a random one. */
 function scramble(text: string, revealed: Set<number>, pool: string[]) {
   return text
     .split("")
@@ -37,7 +36,6 @@ function scramble(text: string, revealed: Set<number>, pool: string[]) {
     .join("");
 }
 
-/** Index order in which characters resolve, for the given direction. */
 function computeOrder(len: number, revealDirection: RevealDirection) {
   const order: number[] = [];
   if (len <= 0) return order;
@@ -51,7 +49,6 @@ function computeOrder(len: number, revealDirection: RevealDirection) {
     return order;
   }
 
-  // center: middle, middle-1, middle+1, middle-2, ...
   const middle = Math.floor(len / 2);
   let offset = 0;
   while (order.length < len) {
@@ -76,26 +73,17 @@ export interface DecryptedTextProps extends Omit<
   "children" | "className"
 > {
   text: string;
-  /** Milliseconds between animation ticks. */
   speed?: number;
-  /** Scramble ticks before resolving, when sequential is false. */
   maxIterations?: number;
-  /** Resolve one character at a time instead of scrambling the whole string. */
   sequential?: boolean;
   revealDirection?: RevealDirection;
-  /** Scramble using only the characters present in text. */
   useOriginalCharsOnly?: boolean;
   characters?: string;
-  /** What starts the animation. "load" runs once on mount. */
   animateOn?: AnimateOn;
   clickMode?: ClickMode;
-  /** Milliseconds to wait before a "load" animation starts, for staggering lines. */
   delay?: number;
-  /** Class for resolved characters. */
   className?: string;
-  /** Class for characters still scrambled. */
   encryptedClassName?: string;
-  /** Class for the wrapping span. */
   parentClassName?: string;
 }
 
@@ -125,8 +113,6 @@ export default function DecryptedText({
     [useOriginalCharsOnly, text, characters],
   );
 
-  // Scramble in the initializer so the real text never flashes on first paint,
-  // before the mount effect runs.
   const [displayText, setDisplayText] = useState(() =>
     startsScrambled ? scramble(text, new Set(), pool) : text,
   );
@@ -144,8 +130,6 @@ export default function DecryptedText({
   const revealedRef = useRef<Set<number>>(new Set());
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // The interval reads the revealed set through a ref, so its callback never
-  // has to run inside a state updater.
   const setRevealed = useCallback((next: Set<number>) => {
     revealedRef.current = next;
     setRevealedIndices(next);
@@ -171,7 +155,6 @@ export default function DecryptedText({
   }, [text.length, revealDirection, setRevealed]);
 
   const triggerReverse = useCallback(() => {
-    // Unresolve in the mirror image of the reveal order.
     orderRef.current = computeOrder(text.length, revealDirection).reverse();
     pointerRef.current = 0;
     const full = allIndices();
@@ -190,7 +173,6 @@ export default function DecryptedText({
     setDirection("forward");
   }, [text, setRevealed]);
 
-  /* Animation loop */
   useEffect(() => {
     if (!isAnimating) return;
 
@@ -226,7 +208,6 @@ export default function DecryptedText({
         return;
       }
 
-      // reverse
       if (sequential) {
         if (pointerRef.current >= order.length) {
           stop(false);
@@ -270,13 +251,6 @@ export default function DecryptedText({
     setRevealed,
   ]);
 
-  /*
-   * animateOn="load" kicks off the intro; animateOn="click" just re-scrambles.
-   * Both run on mount and again whenever text changes. The work happens in a
-   * timer callback rather than the effect body so it never cascades a render,
-   * and the useState initializer above already has the text scrambled for the
-   * first paint (and for the whole of `delay`, which is what staggers lines).
-   */
   useEffect(() => {
     if (animateOn !== "load" && animateOn !== "click") return;
 
@@ -290,7 +264,6 @@ export default function DecryptedText({
     return () => clearTimeout(id);
   }, [animateOn, delay, text, encryptInstantly, triggerDecrypt]);
 
-  /* animateOn="view" | "inViewHover" - run when scrolled into view */
   useEffect(() => {
     if (animateOn !== "view" && animateOn !== "inViewHover") return;
 
@@ -347,7 +320,6 @@ export default function DecryptedText({
       {...interaction}
       {...props}
     >
-      {/* Announce the real text - the scrambled copy is decorative. */}
       <span style={styles.srOnly}>{text}</span>
 
       <span aria-hidden="true">

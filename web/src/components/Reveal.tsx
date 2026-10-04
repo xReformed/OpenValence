@@ -1,11 +1,6 @@
 import type { ReactNode } from "react";
 import { useReveal } from "../hooks/useReveal";
 
-/**
- * Fades its children up a few pixels the first time they scroll into view.
- * Elements already on screen at load animate immediately, which is what gives
- * the hero its staggered entrance. Reduced-motion users get the final state.
- */
 export default function Reveal({
   children,
   delay = 0,

@@ -5,11 +5,6 @@ import type { ChatTurn } from "../lib/types";
 
 export type ChatStatus = "idle" | "sending" | "error";
 
-/**
- * Owns one conversation's turns, loaded from and written back to the browser
- * store. ChatPage is keyed on chatId so a route change remounts this hook and
- * the initializer re-reads — no reload-on-prop-change effect needed.
- */
 export function useChat(chatId: string) {
   const [turns, setTurns] = useState<ChatTurn[]>(() => loadTurns(chatId));
   const [status, setStatus] = useState<ChatStatus>("idle");

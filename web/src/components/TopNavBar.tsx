@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { ValenceMark } from "./LandingIcons";
 
-/* Landing-page sections. Router links rather than bare #anchors, so they also
-   work from topic pages; LandingPage scrolls to the hash. */
 const NAV_LINKS = [
   { label: "Features", href: "/#features" },
   { label: "Topics", href: "/#topics" },

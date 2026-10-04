@@ -1,11 +1,5 @@
 import type { ChatTurn } from "./types";
 
-/**
- * Browser-local chat history. This is a stepping stone, not the destination:
- * it exists so the sidebar is real rather than decorative, and it gets
- * replaced by the API + Postgres once /api/ask lands. Nothing here leaves
- * the user's browser.
- */
 
 const INDEX_KEY = "chemia.chats";
 const turnsKey = (id: string) => `chemia.chat.${id}`;
@@ -31,7 +25,7 @@ function write(key: string, value: unknown) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    // Nothing useful to do — history is a convenience, not correctness.
+    // Best effort: history is a convenience, not correctness.
   }
 }
 
@@ -61,7 +55,6 @@ export function getChats(): ChatMeta[] {
   return cache;
 }
 
-/** Next free numeric id, so URLs stay /chat/1, /chat/2, … */
 export function nextChatId(): string {
   const numbers = getChats()
     .map((chat) => Number(chat.id))
@@ -74,7 +67,6 @@ export function loadTurns(id: string): ChatTurn[] {
 }
 
 export function saveTurns(id: string, turns: ChatTurn[]) {
-  // An untouched chat stays out of the sidebar, the way ChatGPT does it.
   if (turns.length === 0) return;
 
   write(turnsKey(id), turns);
@@ -92,7 +84,7 @@ export function deleteChat(id: string) {
   try {
     localStorage.removeItem(turnsKey(id));
   } catch {
-    // Same as above — best effort.
+    // Best effort, as in write().
   }
   write(
     INDEX_KEY,

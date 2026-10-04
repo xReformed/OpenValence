@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import ChatComposer from "../components/ChatComposer";
 import ChatSidebar from "../components/ChatSidebar";
 import ChatTurnView from "../components/ChatTurnView";
@@ -11,24 +11,31 @@ const EXAMPLES = [
   "What is the difference between mass and weight?",
 ];
 
+/* Route component for /chat/:chatId. A different chatId is a different
+   conversation, so remount rather than reconcile — useChat's state
+   initializer then re-reads the store. */
+export function ChatRoute() {
+  const { chatId = "1" } = useParams<{ chatId: string }>();
+  return <ChatPage key={chatId} chatId={chatId} />;
+}
+
 export default function ChatPage({ chatId }: { chatId: string }) {
   const { turns, status, error, send } = useChat(chatId);
   const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  /* A question handed over from a topic page (see NewChatRoute). Clearing the
-     route state first means a reload or back-navigation won't re-ask it; the
-     ref covers StrictMode's double effect run. */
-  const location = useLocation();
-  const navigate = useNavigate();
+  /* A question handed over as ?q= (see newChatLoader in router.ts). Dropping
+     it from the URL first means a reload or back-navigation won't re-ask it;
+     the ref covers StrictMode's double effect run. */
+  const [searchParams, setSearchParams] = useSearchParams();
   const asked = useRef(false);
   useEffect(() => {
-    const ask = (location.state as { ask?: string } | null)?.ask;
-    if (!ask || asked.current) return;
+    const question = searchParams.get("q")?.trim();
+    if (!question || asked.current) return;
     asked.current = true;
-    navigate(location.pathname, { replace: true, state: null });
-    void send(ask);
-  }, [location, navigate, send]);
+    setSearchParams({}, { replace: true });
+    void send(question);
+  }, [searchParams, setSearchParams, send]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });

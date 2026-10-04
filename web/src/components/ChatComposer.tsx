@@ -12,7 +12,6 @@ export default function ChatComposer({
   const [value, setValue] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Grow with the content up to a cap, then scroll internally.
   useLayoutEffect(() => {
     const el = textareaRef.current;
     if (!el) return;

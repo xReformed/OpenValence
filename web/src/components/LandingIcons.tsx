@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 
-/* Stroke icons for the landing page, drawn on a 24-unit grid. */
 function Icon({
   className = "h-5 w-5",
   children,
@@ -26,7 +25,6 @@ function Icon({
 
 type IconProps = { className?: string };
 
-/** Brand mark: a central atom with three bonds. */
 export function ValenceMark({ className }: IconProps) {
   return (
     <Icon className={className}>

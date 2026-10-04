@@ -35,8 +35,6 @@ const DEMO_STEPS = [
   "Attaching citations",
 ];
 
-/* Pacing for the preview: a beat before the first step finishes, then a
-   steady tick, so the whole run reads in about four seconds. */
 const FIRST_STEP_MS = 1100;
 const STEP_MS = 650;
 
@@ -68,10 +66,6 @@ const FEATURES = [
   },
 ];
 
-/**
- * How many demo steps have finished. Starts counting once the preview is on
- * screen and stops when every step is done; reduced-motion users start there.
- */
 function useDemoProgress(start: boolean) {
   const [done, setDone] = useState(() =>
     prefersReducedMotion() ? DEMO_STEPS.length : 0,
@@ -103,11 +97,6 @@ function StepMarker({ state }: { state: StepState }) {
   return <span className="h-4 w-4 shrink-0 rounded-full border border-neutral-300" />;
 }
 
-/**
- * Product preview: a sidebar, one question, the agent's steps ticking through,
- * then the result. The result card holds its space from the start so nothing
- * below it shifts when it fades in.
- */
 function ProductPreview() {
   const [ref, inView] = useReveal<HTMLDivElement>(0.35);
   const done = useDemoProgress(inView);
@@ -220,7 +209,6 @@ function Eyebrow({ children }: { children: ReactNode }) {
   );
 }
 
-/** The dark "Ask a question" button; the arrow nudges forward on hover. */
 function PrimaryButton({ className = "" }: { className?: string }) {
   return (
     <Link
@@ -242,13 +230,10 @@ export default function LandingPage() {
   }, [hash]);
 
   return (
-    /* The app shell doesn't scroll, so the landing page owns its scroll region.
-       font-sans overrides the shell's display font for long-form reading. */
     <div className="min-h-0 flex-1 overflow-y-auto scroll-smooth bg-neutral-50/60 font-sans">
       <TopNavBar />
 
       <main className="mx-auto w-full max-w-352 px-5 sm:px-8 lg:px-12">
-        {/* Hero: each line fades up in turn, then the preview plays. */}
         <section className="grid items-center gap-14 py-14 lg:grid-cols-[1fr_1.05fr] lg:py-20">
           <div>
             <Reveal>
@@ -282,7 +267,6 @@ export default function LandingPage() {
           </Reveal>
         </section>
 
-        {/* Features */}
         <section
           id="features"
           className="grid scroll-mt-6 gap-10 py-16 md:grid-cols-3 lg:gap-16"
@@ -298,7 +282,6 @@ export default function LandingPage() {
           ))}
         </section>
 
-        {/* Topics */}
         <section
           id="topics"
           className="grid scroll-mt-6 items-center gap-12 py-20 lg:grid-cols-[1.3fr_1fr]"
@@ -344,7 +327,6 @@ export default function LandingPage() {
 
       <SiteFooter />
 
-      {/* Marketing-page concern only: on /chat it would sit on the composer. */}
       <CookieNotice />
     </div>
   );
