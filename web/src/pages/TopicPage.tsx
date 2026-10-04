@@ -11,19 +11,19 @@ import {
 import { askHref, TOPICS } from "../lib/topics";
 import type { topicLoader } from "../router";
 
-/* Route component for /topics/:slug. Keyed on slug so moving between topics
-   resets the page (and its scroll position) instead of reusing it. */
 export function TopicRoute() {
   const { slug } = useParams<{ slug: string }>();
   return <TopicPage key={slug} />;
 }
 
 export default function TopicPage() {
+  /* topicLoader has already turned an unknown slug into a 404. */
   const topic = useLoaderData<typeof topicLoader>();
 
   const others = TOPICS.filter((other) => other.slug !== topic.slug);
 
   return (
+    /* Same scroll ownership and font override as the landing page. */
     <div className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
       <TopNavBar />
 

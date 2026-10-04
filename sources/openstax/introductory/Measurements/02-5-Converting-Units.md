@@ -116,7 +116,7 @@ The ability to construct and apply proper conversion factors is a very powerful 
 
 Applying this conversion factor, we get:
 
-555 nm × (1m / 10^9nm) = 0.000000555 m = 5.55 × 10^−7 m
+555 nm × (1m / 10^9 nm) = 0.000000555 m = 5.55 × 10^−7 m
 
 In the final step, we expressed the answer in scientific notation.
 
@@ -222,7 +222,7 @@ When considering the significant figures of a final numerical answer in a conver
 
 neither the 1,000 nor the 1 enter into our consideration of significant figures. The numbers in the numerator and denominator are defined exactly by what the prefix _kilo-_ means. Another way of thinking about it is that these numbers can be thought of as having an infinite number of significant figures, such as:
 
-(1000.0000000000 … g / 1.0000000000 … kg)
+(1000.0000000000… g / 1.0000000000… kg)
 
 The other numbers in the calculation will determine the number of significant figures in the final answer.
 

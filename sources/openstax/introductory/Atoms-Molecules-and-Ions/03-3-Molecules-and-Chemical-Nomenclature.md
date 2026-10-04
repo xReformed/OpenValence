@@ -27,7 +27,7 @@ Some elements exist naturally as molecules. For example, hydrogen and oxygen exi
 
 Figure 3.3.1: Molecular Art of S8 and P4 Molecules. If each green ball represents a sulfur atom, then the diagram on the left represents an S8 molecule. The molecule on the right shows that one form of elemental phosphorus exists, as a four-atom molecule.
 
-Figure 3.3.1: shows two examples of how we will be representing molecules in this text. An atom is represented by a small ball or sphere, which generally indicates where the nucleus is in the molecule. A cylindrical line connecting the balls represents the connection between the atoms that make this collection of atoms a molecule. This connection is called a chemical bond and is the connection between two atoms in a molecule.
+Figure 3.3.1 shows two examples of how we will be representing molecules in this text. An atom is represented by a small ball or sphere, which generally indicates where the nucleus is in the molecule. A cylindrical line connecting the balls represents the connection between the atoms that make this collection of atoms a molecule. This connection is called a chemical bond and is the connection between two atoms in a molecule.
 
 Many compounds exist as molecules. In particular, when nonmetals connect with other nonmetals, the compounds typically exist as molecules. (Compounds between a metal and a nonmetal are different and will be considered in Section 3.4.) In some cases, there are many different kinds of molecules that can be formed between any given elements, with all the different molecules having different chemical and physical properties. How do we tell them apart?
 

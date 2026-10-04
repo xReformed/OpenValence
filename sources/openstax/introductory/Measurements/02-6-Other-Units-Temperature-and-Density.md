@@ -88,7 +88,7 @@ What is 98.6°F on the Kelvin scale?
 
 310.2 K
 
-Figure 2.6.1: compares the three temperature scales. Note that science uses the Celsius and Kelvin scales almost exclusively; virtually no practicing chemist expresses laboratory-measured temperatures with the Fahrenheit scale. In fact, the United States is one of the few countries in the world that still uses the Fahrenheit scale on a daily basis. The other two countries are Liberia and Myanmar (formerly Burma). People driving near the borders of Canada or Mexico may pick up local radio stations on the other side of the border that express the daily weather in degrees Celsius, so do not get confused by their weather reports.
+Figure 2.6.1 compares the three temperature scales. Note that science uses the Celsius and Kelvin scales almost exclusively; virtually no practicing chemist expresses laboratory-measured temperatures with the Fahrenheit scale. In fact, the United States is one of the few countries in the world that still uses the Fahrenheit scale on a daily basis. The other two countries are Liberia and Myanmar (formerly Burma). People driving near the borders of Canada or Mexico may pick up local radio stations on the other side of the border that express the daily weather in degrees Celsius, so do not get confused by their weather reports.
 
 Figure 2.6.1: Fahrenheit, Celsius, and Kelvin Temperatures. A comparison of the three temperature scales.
 
@@ -187,7 +187,7 @@ People who live at high altitudes, typically 2,000 ft above sea level or higher,
 
 [Image: A meat thermometer with a dial, with a Fahrenheit outer scale and a Celsius inner scale.]
 
-_A meat thermometer with a dial. Notice the markings for_ _Fahrenheit (outer scale) and Celsius (inner scale) temperatures. Recipes for cooking food in an oven can use very different numbers, depending on the country you're in. (CC BY2.0_ Bev Sykes)
+_A meat thermometer with a dial. Notice the markings for Fahrenheit (outer scale) and Celsius (inner scale) temperatures. Recipes for cooking food in an oven can use very different numbers, depending on the country you're in. (CC BY2.0_ Bev Sykes)
 
 At the other end is pressure cooking. A pressure cooker is a closed vessel that allows steam to build up additional pressure, which increases the temperature at which water boils. A good pressure cooker can get to temperatures as high as 252°F (122°C); at these temperatures, food cooks much faster than it normally would. Great care must be used with pressure cookers because of the high pressure and high temperature. (When a pressure cooker is used to sterilize medical instruments, it is called an _autoclave_.)
 

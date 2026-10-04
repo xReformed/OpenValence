@@ -11,9 +11,6 @@ const EXAMPLES = [
   "What is the difference between mass and weight?",
 ];
 
-/* Route component for /chat/:chatId. A different chatId is a different
-   conversation, so remount rather than reconcile — useChat's state
-   initializer then re-reads the store. */
 export function ChatRoute() {
   const { chatId = "1" } = useParams<{ chatId: string }>();
   return <ChatPage key={chatId} chatId={chatId} />;
