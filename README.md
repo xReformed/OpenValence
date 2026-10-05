@@ -222,16 +222,74 @@ The index is currently a flat `index.json` loaded into memory — fine at this c
 
 ## Roadmap
 
+Two tracks: the **platform** (what the app can do) and the **subjects** (what it knows). The platform work comes first, because every subject added after it is measured with the same eval runner and inherits the same answer flow.
+
+### Platform
+
 1. **Retrieval eval runner** — an `eval` command in `ingest/` that runs `questions.jsonl` through search and reports recall@1/5/10 and MRR by question kind, plus the top-1 similarity score for every question. Turns chunk-size and embedding-model choices into measurement instead of guesswork
 2. **Answer endpoint** — `POST /api/ask` in `api/`: retrieval wired to Claude with the grounding instruction, returning `{ answer, citations }`; then switch the web app off the mock
 3. **Abstention** — a similarity floor below which the app declines instead of guessing, calibrated from the eval's top-1 scores on answerable vs unanswerable questions. Grounding isn't real until the app can refuse
 4. **Answer grading** — run the eval set through `/api/ask` and grade answers against `expect`, especially the `unanswerable`, `defect` and `contradiction` questions
 5. **Hybrid search** — BM25 alongside vectors. Chemistry is full of exact tokens (`sp3d2`, `ΔH°f`, `ClF4+`) that embeddings blur together; the `exact-token` questions are the before/after measure
-6. **Finish *Beginning Chemistry*** — chapters 11–16
-7. **PubChem facts** — live authoritative properties for compound questions
-8. **Structure rendering** — PubChem PNG endpoint first, then SmilesDrawer for in-app 2D
+6. **Calculator tools** — stoichiometry, molar mass, limiting reagent, dilution, pH, gas laws, and unit conversions computed in code, with the model choosing the tool and explaining the result. Models make arithmetic slips; code doesn't
+7. **Equation balancer** — exact balancing with a linear-algebra solver (including redox in acidic or basic solution), then a step-by-step explanation; can also check a student's own attempt
+8. **PubChem facts** — live authoritative properties for compound questions
+9. **Structure rendering** — PubChem PNG endpoint first, then SmilesDrawer for in-app 2D
 
-Later: adaptive practice mode, scope filtering by chapter or book, 3D structure viewer.
+Later: adaptive practice mode, scope filtering by subject, book, or chapter, 3D structure viewer.
+
+### Subjects
+
+| Subject | Source | License | Status |
+| ------- | ------ | ------- | ------ |
+| Introductory chemistry | *Beginning Chemistry* (Ball) | CC BY-NC-SA 3.0 | **In progress** — chapters 1–10 of 16 transcribed |
+| General chemistry | OpenStax *Chemistry* 1e | CC BY 4.0 | **Transcribed** — not yet embedded or evaluated |
+| Organic chemistry | Candidate: OpenStax *Organic Chemistry* | CC BY-NC-SA 4.0 (confirm before transcribing) | **Planned** — `sources/openstax/orgchem/` exists, empty |
+| Chemical engineering | Not chosen | — | **Planned** |
+| Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
+
+Suggested order: finish introductory, get general chemistry embedded and measured, then organic, then chemical engineering.
+
+**Introductory chemistry** — the on-ramp: the same ground as general chemistry at a gentler level, so it catches beginners' phrasing.
+
+- Transcribe chapters 11–16: Solutions, Acids and Bases, Chemical Equilibrium, Oxidation and Reduction, Nuclear Chemistry, Organic Chemistry
+- Fix the duplicate document IDs first (see [Known issues](#known-issues)) — chapter 13 adds the second collision
+- Write eval questions for this book (all 152 current questions target *Chemistry* 1e), including `defect` questions built from its `[Note: …]` corrections
+- When it is embedded: mark it "In use" in the landing page's Sources section and add it to the footer attribution
+
+**General chemistry** — the core of the app and the subject the eval set is written for.
+
+- First `embed` and retrieval-eval baseline (platform items 1–3 land here first)
+- Calculator tools and the equation balancer (platform items 6–7) — most of the topic pages' "coming soon" items belong to this subject
+
+**Organic chemistry** — the biggest step up in scope, and the first subject where pictures carry the meaning.
+
+- Scope: structure and bonding, functional groups and nomenclature, stereochemistry, reaction mechanisms (substitution, elimination, addition, carbonyl chemistry), and spectroscopy (IR, NMR, mass spec)
+- Structure rendering (platform item 9) becomes essential rather than nice-to-have, and diagrams without alt text will be a larger gap than in the general chemistry books
+- Seven `unanswerable` eval questions become answerable once this book is in: q040 (aldol), q121 (NMR splitting), q122 (IR carbonyl stretch), q123 (SN1/SN2), q124 (Markovnikov), q125 (Hückel's rule), q126 (R/S). Re-label them in the same change, or the abstention eval will report correct answers as failures
+- The candidate book is NonCommercial, like *Beginning Chemistry* — see [Licensing](#licensing)
+
+**Chemical engineering** — the other half of the "Organic chemistry & chemical engineering" topic page.
+
+- Scope: units and dimensional analysis, material balances, energy balances
+- Mostly calculation, so it leans on calculator tools more than on retrieval
+- Needs an openly licensed text; none chosen yet
+
+**Later subjects** — each would turn specific `unanswerable` questions into answerable ones, which is the check that it landed:
+
+- **Analytical chemistry** — titration theory, error analysis, instrumental methods
+- **Physical chemistry** — thermodynamics and kinetics in depth, quantum chemistry (q128 Debye–Hückel, q130 particle in a box)
+- **Inorganic chemistry** — symmetry, crystal field theory (q127 Jahn–Teller distortion)
+- **Biochemistry** — enzyme kinetics and metabolism (q129 Michaelis–Menten, q139 Krebs cycle)
+
+**Adding a subject — definition of done:**
+
+1. License checked and recorded in [sources/ATTRIBUTION.md](sources/ATTRIBUTION.md)
+2. Transcribed with the [conventions](#transcription-conventions) above: mechanical cleaning only, upstream errors flagged with `[Note: …]`
+3. Document IDs unique across books
+4. Eval questions written for it, and any `unanswerable` questions it now covers re-labelled
+5. Embedded, with the retrieval eval re-run — no regression on existing subjects, and watch the `distractor` questions, since overlapping books compete for the same queries
+6. Landing page Sources section, footer attribution, and topic pages updated
 
 ---
 

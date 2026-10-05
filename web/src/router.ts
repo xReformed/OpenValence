@@ -10,6 +10,7 @@ import { findTopic } from "./lib/topics";
 import { ChatRoute } from "./pages/ChatPage";
 import ErrorPage from "./pages/ErrorPage";
 import LandingPage from "./pages/LandingPage";
+import RoadmapPage from "./pages/RoadmapPage";
 import { TopicRoute } from "./pages/TopicPage";
 
 export function topicLoader({ params }: LoaderFunctionArgs) {
@@ -42,6 +43,7 @@ export const router = createBrowserRouter([
         children: [
           { index: true, Component: LandingPage },
           { path: "topics/:slug", loader: topicLoader, Component: TopicRoute },
+          { path: "roadmap", Component: RoadmapPage },
           { path: "chat", loader: newChatLoader },
           { path: "chat/:chatId", Component: ChatRoute },
           { path: "*", loader: notFoundLoader },

@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: "Features", href: "/#features" },
   { label: "Topics", href: "/#topics" },
   { label: "Sources", href: "/#sources" },
+  { label: "Roadmap", href: "/roadmap" },
 ];
 
 export default function TopNavBar() {
