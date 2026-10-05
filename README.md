@@ -236,7 +236,7 @@ Two tracks: the **platform** (what the app can do) and the **subjects** (what it
 8. **PubChem facts** — live authoritative properties for compound questions
 9. **Structure rendering** — PubChem PNG endpoint first, then SmilesDrawer for in-app 2D
 
-Later: adaptive practice mode, scope filtering by subject, book, or chapter, 3D structure viewer.
+Later: adaptive practice mode (question types and grading planned in [docs/practice-question-types.md](docs/practice-question-types.md)), scope filtering by subject, book, or chapter, 3D structure viewer.
 
 ### Subjects
 
