@@ -22,3 +22,13 @@
     }
   }
 }
+
+/* Faint graph paper behind the feature illustrations, fading out at the edges. */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--color-neutral-100) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-neutral-100) 1px, transparent 1px);
+  background-size: 2.75rem 2.75rem;
+  background-position: center;
+  mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
+}

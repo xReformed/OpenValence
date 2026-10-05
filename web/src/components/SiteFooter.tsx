@@ -2,8 +2,7 @@
 export default function SiteFooter() {
   return (
     <footer
-      id="sources"
-      className="mx-auto w-full max-w-352 scroll-mt-6 border-t border-neutral-200 px-5 py-10 text-sm text-neutral-500 sm:px-8 lg:px-12"
+      className="mx-auto w-full max-w-352 border-t border-neutral-200 px-5 py-10 text-sm text-neutral-500 sm:px-8 lg:px-12"
     >
       Answers draw on{" "}
       <a

@@ -130,6 +130,23 @@ export function ArrowRightIcon({ className }: IconProps) {
   );
 }
 
+export function SearchIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-4-4" />
+    </Icon>
+  );
+}
+
+export function ExternalLinkIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M7 17 17 7M8 7h9v9" />
+    </Icon>
+  );
+}
+
 export function SendIcon({ className }: IconProps) {
   return (
     <Icon className={className}>

@@ -1,9 +1,13 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CookieNotice from "../components/CookieNotice";
+import Eyebrow from "../components/Eyebrow";
+import FeaturesSection from "../components/FeaturesSection";
+import HowItWorksSection from "../components/HowItWorksSection";
 import Reveal from "../components/Reveal";
 import { prefersReducedMotion, useReveal } from "../hooks/useReveal";
 import SiteFooter from "../components/SiteFooter";
+import SourcesSection from "../components/SourcesSection";
 import TopNavBar from "../components/TopNavBar";
 import { TOPICS } from "../lib/topics";
 import {
@@ -14,9 +18,7 @@ import {
   CheckIcon,
   ChevronRightIcon,
   DocumentIcon,
-  FlaskIcon,
   HistoryIcon,
-  QuestionIcon,
   SendIcon,
   StepsIcon,
   ValenceMark,
@@ -46,24 +48,6 @@ const DEMO_RESULT: { key: string; label: ReactNode; value: ReactNode }[] = [
   { key: "acid", label: <>[CH<sub>3</sub>CO<sub>2</sub>H]</>, value: "0.10 M" },
   { key: "base", label: <>[CH<sub>3</sub>CO<sub>2</sub><sup>−</sup>]</>, value: "0.10 M" },
   { key: "ph", label: "pH", value: "4.74" },
-];
-
-const FEATURES = [
-  {
-    icon: FlaskIcon,
-    title: "Grounded and cited",
-    body: "Answers come from an openly licensed chemistry textbook, not a model's fuzzy memory. Click any citation to read the exact passage.",
-  },
-  {
-    icon: QuestionIcon,
-    title: "Honest about gaps",
-    body: "If the sources don't cover your question, it says so instead of guessing.",
-  },
-  {
-    icon: StepsIcon,
-    title: "Explains the why",
-    body: "Walks through the reasoning step by step, so you learn the method, not just the answer.",
-  },
 ];
 
 function useDemoProgress(start: boolean) {
@@ -126,7 +110,7 @@ function ProductPreview() {
               active ? "bg-neutral-200/70 text-neutral-900" : "text-neutral-500"
             }`}
           >
-            <ItemIcon className="h-3.5 w-3.5" />
+            <ItemIcon className={`h-3.5 w-3.5 ${active ? "text-accent-ink" : ""}`} />
             {label}
           </div>
         ))}
@@ -179,12 +163,12 @@ function ProductPreview() {
                 ))}
               </dl>
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem]">
-                <span className="flex items-center gap-1.5 rounded-md border border-neutral-200 px-2 py-1">
-                  <DocumentIcon className="h-3 w-3" />
+                <span className="border-accent-ink flex items-center gap-1.5 rounded-md border px-2 py-1">
+                  <DocumentIcon className="text-accent-ink h-3 w-3" />
                   Source: 14.6 Buffers
                 </span>
                 <span className="flex items-center gap-1.5 rounded-md border border-neutral-200 px-2 py-1">
-                  <StepsIcon className="h-3 w-3" />
+                  <StepsIcon className="text-accent-ink h-3 w-3" />
                   Show the steps
                 </span>
               </div>
@@ -194,18 +178,10 @@ function ProductPreview() {
 
         <div className="mt-1 flex items-center justify-between rounded-lg border border-neutral-200 px-3 py-2 text-xs text-neutral-400">
           Ask a follow-up…
-          <SendIcon className="h-3.5 w-3.5 text-neutral-600" />
+          <SendIcon className="text-accent-ink h-3.5 w-3.5" />
         </div>
       </div>
     </div>
-  );
-}
-
-function Eyebrow({ children }: { children: ReactNode }) {
-  return (
-    <p className="text-[0.7rem] tracking-[0.25em] text-neutral-500 uppercase">
-      {children}
-    </p>
   );
 }
 
@@ -213,7 +189,7 @@ function PrimaryButton({ className = "" }: { className?: string }) {
   return (
     <Link
       to="/chat"
-      className={`group inline-flex items-center gap-2 rounded-lg bg-neutral-900 px-6 py-3.5 text-white transition-colors hover:bg-neutral-700 ${className}`}
+      className={`group bg-accent hover:bg-accent-ink inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-neutral-900 transition-colors hover:text-white ${className}`}
     >
       Ask a question
       <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -254,8 +230,8 @@ export default function LandingPage() {
             <Reveal delay={270} className="mt-9 flex flex-wrap items-center gap-8">
               <PrimaryButton />
               <Link
-                to="/#features"
-                className="underline decoration-neutral-300 underline-offset-4 transition-colors hover:decoration-neutral-900"
+                to="/#how-it-works"
+                className="decoration-accent hover:decoration-accent-ink underline underline-offset-4 transition-colors"
               >
                 See how it works
               </Link>
@@ -267,20 +243,7 @@ export default function LandingPage() {
           </Reveal>
         </section>
 
-        <section
-          id="features"
-          className="grid scroll-mt-6 gap-10 py-16 md:grid-cols-3 lg:gap-16"
-        >
-          {FEATURES.map(({ icon: FeatureIcon, title, body }, i) => (
-            <Reveal key={title} delay={i * 120}>
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-neutral-200 bg-white">
-                <FeatureIcon className="h-6 w-6" />
-              </div>
-              <h2 className="mt-6 text-lg">{title}</h2>
-              <p className="mt-2 leading-relaxed text-neutral-500">{body}</p>
-            </Reveal>
-          ))}
-        </section>
+        <FeaturesSection />
 
         <section
           id="topics"
@@ -323,6 +286,10 @@ export default function LandingPage() {
             ))}
           </ul>
         </section>
+
+        <HowItWorksSection />
+
+        <SourcesSection />
       </main>
 
       <SiteFooter />
