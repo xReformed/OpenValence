@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 8.1 Prelude to Electronic Structure
-
 Normal light microscopes can magnify objects up to about 1,500 times. Electron microscopes can magnify objects up to 1,000,000 times. Why can electron microscopes magnify images so much? A microscope's resolution depends on the wavelength of light used. The smaller the wavelength, the more a microscope can magnify. Light is a wave, and as such, it has a wavelength associated with it. The wavelength of visible light, which is detected by the eyes, varies from about 700 nm to about 400 nm.
 
 Figure 8.1.1: Microscopes © Thinkstock (a) A simple light microscope can magnify up to 1,500 times. (b) An electron microscope can magnify up to 1,000,000 times. (c) Flu viruses imaged by an electron microscope. The virus is about 100 nm in diameter.

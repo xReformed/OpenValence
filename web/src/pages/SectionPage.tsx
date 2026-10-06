@@ -119,6 +119,8 @@ const MARKDOWN: Components = {
   h4: ({ children }) => <h4 className="pt-2 text-lg tracking-tight">{chem(children)}</h4>,
   strong: ({ children }) => <strong className="font-medium text-neutral-900">{chem(children)}</strong>,
   em: ({ children }) => <em>{chem(children)}</em>,
+  /* ~~g Ag~~: a unit the book strikes out to show it cancelling. */
+  del: ({ children }) => <del className="decoration-neutral-400">{chem(children)}</del>,
   ul: ({ children }) => <ul className="flex list-disc flex-col gap-1.5 pl-6 marker:text-neutral-400">{children}</ul>,
   ol: ({ children, start }) => (
     <ol start={start} className="flex list-decimal flex-col gap-1.5 pl-6 marker:text-neutral-400">

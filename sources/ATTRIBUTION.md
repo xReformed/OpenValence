@@ -9,14 +9,15 @@ gets shown next to every citation.
 | `openstax/genchem-1e/**` | [Chemistry 1e — LibreTexts](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) | OpenStax | CC BY 4.0 |
 | `openstax/introductory/**` | [Beginning Chemistry (Ball) — LibreTexts](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) | Anonymous (as listed on LibreTexts) | CC BY-NC-SA 3.0 |
 
-`openstax/introductory/` is structure only so far: one front-matter stub per
-section, bodies empty, so `ingest` produces no chunks from it. Note its licence
-is NonCommercial and ShareAlike, unlike the CC BY 4.0 of genchem-1e.
+`openstax/introductory/` is complete: all 100 sections, transcribed from the
+LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Note
+its licence is NonCommercial and ShareAlike, unlike the CC BY 4.0 of genchem-1e.
 
 ## Layout
 
-- `raw/` — original downloads (`.epub`) and the raw pandoc output. Gitignored:
-  large, binary, and re-downloadable.
+- `raw/` — original downloads (`.epub`), the raw pandoc output, and the
+  LibreTexts pages fetched by `tools/transcribe/fetch.py` (`raw/libretexts/`,
+  one folder per book). Gitignored: large, binary, and re-downloadable.
 - `openstax/`, and one folder per source — cleaned markdown, one file per
   section, with front matter. This is what `ingest` actually reads, and it is
   committed so the corpus is reviewable.

@@ -522,49 +522,49 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "11.1",
           "title": "Prelude to Solutions",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-1-Prelude-to-Solutions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.01%3A_Prelude_to_Solutions"
         },
         {
           "number": "11.2",
           "title": "Definitions",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-2-Definitions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.02%3A_Definitions"
         },
         {
           "number": "11.3",
           "title": "Quantitative Units of Concentration",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-3-Quantitative-Units-of-Concentration.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.03%3A_Quantitative_Units_of_Concentration"
         },
         {
           "number": "11.4",
           "title": "Dilutions and Concentrations",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-4-Dilutions-and-Concentrations.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.04%3A_Dilutions_and_Concentrations"
         },
         {
           "number": "11.5",
           "title": "Concentrations as Conversion Factors",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-5-Concentrations-as-Conversion-Factors.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.05%3A_Concentrations_as_Conversion_Factors"
         },
         {
           "number": "11.6",
           "title": "Colligative Properties of Solutions",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-6-Colligative-Properties-of-Solutions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.06%3A_Colligative_Properties_of_Solutions"
         },
         {
           "number": "11.7",
           "title": "Colligative Properties of Ionic Solutes",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Solutions/11-7-Colligative-Properties-of-Ionic-Solutes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/11%3A_Solutions/11.07%3A_Colligative_Properties_of_Ionic_Solutes"
         }
@@ -577,56 +577,56 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "12.1",
           "title": "Introduction",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-1-Introduction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.01%3A_Introduction"
         },
         {
           "number": "12.2",
           "title": "Arrhenius Acids and Bases",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-2-Arrhenius-Acids-and-Bases.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.02%3A_Arrhenius_Acids_and_Bases"
         },
         {
           "number": "12.3",
           "title": "Brønsted-Lowry Acids and Bases",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-3-Bronsted-Lowry-Acids-and-Bases.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.03%3A_Brnsted-Lowry_Acids_and_Bases"
         },
         {
           "number": "12.4",
           "title": "Acid-Base Titrations",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-4-Acid-Base-Titrations.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.04%3A_Acid-Base_Titrations"
         },
         {
           "number": "12.5",
           "title": "Strong and Weak Acids and Bases and their Salts",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-5-Strong-and-Weak-Acids-and-Bases-and-their-Salts.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.05%3A_Strong_and_Weak_Acids_and_Bases_and_their_Salts"
         },
         {
           "number": "12.6",
           "title": "Autoionization of Water",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-6-Autoionization-of-Water.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.06%3A_Autoionization_of_Water"
         },
         {
           "number": "12.7",
           "title": "The pH Scale",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-7-The-pH-Scale.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.07%3A_The_pH_Scale"
         },
         {
           "number": "12.8",
           "title": "Buffers",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Acids-and-Bases/12-8-Buffers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/12%3A_Acids_and_Bases/12.08%3A_Buffers"
         }
@@ -639,42 +639,42 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "13.1",
           "title": "Prelude to Chemical Equilibrium",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-1-Prelude-to-Chemical-Equilibrium.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.01%3A_Prelude_to_Chemical_Equilibrium"
         },
         {
           "number": "13.2",
           "title": "Chemical Equilibrium",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-2-Chemical-Equilibrium.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.02%3A_Chemical_Equilibrium"
         },
         {
           "number": "13.3",
           "title": "The Equilibrium Constant",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-3-The-Equilibrium-Constant.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.03%3A_The_Equilibrium_Constant"
         },
         {
           "number": "13.4",
           "title": "Shifting Equilibria - Le Chatelier's Principle",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-4-Shifting-Equilibria-Le-Chateliers-Principle.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.04%3A_Shifting_Equilibria_-_Le_Chatelier's_Principle"
         },
         {
           "number": "13.5",
           "title": "Calculating Equilibrium Constant Values",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-5-Calculating-Equilibrium-Constant-Values.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.05%3A_Calculating_Equilibrium_Constant_Values"
         },
         {
           "number": "13.6",
           "title": "Some Special Types of Equilibria",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Chemical-Equilibrium/13-6-Some-Special-Types-of-Equilibria.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/13%3A_Chemical_Equilibrium/13.06%3A_Some_Special_Types_of_Equilibria"
         }
@@ -687,35 +687,35 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "14.1",
           "title": "Introduction to Oxidation and Reduction",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Oxidation-and-Reduction/14-1-Introduction-to-Oxidation-and-Reduction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/14%3A_Oxidation_and_Reduction/14.01%3A_Introduction_to_Oxidation_and_Reduction"
         },
         {
           "number": "14.2",
           "title": "Oxidation-Reduction Reactions",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Oxidation-and-Reduction/14-2-Oxidation-Reduction-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/14%3A_Oxidation_and_Reduction/14.02%3A_Oxidation-Reduction_Reactions"
         },
         {
           "number": "14.3",
           "title": "Balancing Redox Reactions",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Oxidation-and-Reduction/14-3-Balancing-Redox-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/14%3A_Oxidation_and_Reduction/14.03%3A_Balancing_Redox_Reactions"
         },
         {
           "number": "14.4",
           "title": "Applications of Redox Reactions - Voltaic Cells",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Oxidation-and-Reduction/14-4-Applications-of-Redox-Reactions-Voltaic-Cells.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/14%3A_Oxidation_and_Reduction/14.04%3A_Applications_of_Redox_Reactions_-_Voltaic_Cells"
         },
         {
           "number": "14.5",
           "title": "Electrolysis",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Oxidation-and-Reduction/14-5-Electrolysis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/14%3A_Oxidation_and_Reduction/14.05%3A_Electrolysis"
         }
@@ -728,42 +728,42 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "15.1",
           "title": "Prelude to Nuclear Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-1-Prelude-to-Nuclear-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.01%3A_Prelude_to_Nuclear_Chemistry"
         },
         {
           "number": "15.2",
           "title": "Radioactivity",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-2-Radioactivity.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.02%3A_Radioactivity"
         },
         {
           "number": "15.3",
           "title": "Half-Life",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-3-Half-Life.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.03%3A_Half-Life"
         },
         {
           "number": "15.4",
           "title": "Units of Radioactivity",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-4-Units-of-Radioactivity.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.04%3A_Units_of_Radioactivity"
         },
         {
           "number": "15.5",
           "title": "Uses of Radioactive Isotopes",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-5-Uses-of-Radioactive-Isotopes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.05%3A_Uses_of_Radioactive_Isotopes"
         },
         {
           "number": "15.6",
           "title": "Nuclear Energy",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Nuclear-Chemistry/15-6-Nuclear-Energy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/15%3A_Nuclear_Chemistry/15.06%3A_Nuclear_Energy"
         }
@@ -776,49 +776,49 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "16.1",
           "title": "Prelude to Organic Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-1-Prelude-to-Organic-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.01%3A_Prelude_to_Organic_Chemistry"
         },
         {
           "number": "16.2",
           "title": "Hydrocarbons",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-2-Hydrocarbons.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.02%3A_Hydrocarbons"
         },
         {
           "number": "16.3",
           "title": "Branched Hydrocarbons",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-3-Branched-Hydrocarbons.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.03%3A_Branched_Hydrocarbons"
         },
         {
           "number": "16.4",
           "title": "Alkyl Halides and Alcohols",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-4-Alkyl-Halides-and-Alcohols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.04%3A_Alkyl_Halides_and_Alcohols"
         },
         {
           "number": "16.5",
           "title": "Other Oxygen-Containing Functional Groups",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-5-Other-Oxygen-Containing-Functional-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.05%3A_Other_Oxygen-Containing_Functional_Groups"
         },
         {
           "number": "16.6",
           "title": "Other Functional Groups",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-6-Other-Functional-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.06%3A_Other_Functional_Groups"
         },
         {
           "number": "16.7",
           "title": "Polymers",
-          "ready": false,
+          "ready": true,
           "file": "introductory/Organic-Chemistry/16-7-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)/16%3A_Organic_Chemistry/16.07%3A_Polymers"
         }

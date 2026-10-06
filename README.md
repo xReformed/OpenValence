@@ -13,13 +13,14 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Piece | State |
 | ----- | ----- |
 | Corpus: OpenStax *Chemistry* 1e | **Complete** — all 21 chapters, 124 sections |
-| Corpus: *Beginning Chemistry* (Ball) | **In progress** — chapters 1–10 done (61 of 100 sections); 11–16 are empty stubs |
+| Corpus: *Beginning Chemistry* (Ball) | **Complete** — all 16 chapters, 100 sections |
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
-| Eval question set | **152 questions** written — no runner yet |
+| Eval question set | **152 questions** written, all for *Chemistry* 1e — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
-| Web UI | **Built** — landing page, topic pages, chat with history and citations, running on mock answers |
+| Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
+| Practice | **Basic** — the books' Examples and Exercises (with their solutions and answers) are practice cards on the section pages: type an answer, then compare with the book's. No grading or mastery tracking yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |
@@ -36,6 +37,8 @@ web/         React + Vite + Tailwind frontend
 core/        Shared domain logic (empty)
 database/    Generated index.json lands here (git-ignored)
 evals/       questions.jsonl — the retrieval and answer eval set
+docs/        Design notes (practice question types)
+tools/       transcribe/ — scripts that turn LibreTexts books into corpus markdown
 ```
 
 ---
@@ -46,6 +49,7 @@ evals/       questions.jsonl — the retrieval and answer eval set
 - Node 20+ (for the web app)
 - An embedding provider — OpenAI by default, or anything with an OpenAI-compatible `/v1/embeddings` endpoint (Voyage, a local Ollama, …). Anthropic has no embeddings API, so this is always a separate provider.
 - An Anthropic API key, for answer generation in `api/` (not used until the answer endpoint exists)
+- Python 3.10+, only if you use the transcription tools in [tools/transcribe/](tools/transcribe/README.md)
 
 Keys live in a `.env` file at the repo root, which is git-ignored. Both `ingest/` and `api/` load it on startup.
 
@@ -109,9 +113,24 @@ What's there today:
 
 - **Landing page** — hero with an animated demo of a grounded answer, then Features, Topics, How it works, and Sources sections
 - **Topic pages** (`/topics/:slug`) — what each subject area covers, with example questions
+- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Only introductory chemistry has content so far; the mastery bars stay empty until graded practice exists
+- **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, *Beginning Chemistry* first, then *Chemistry* 1e. Every transcribed section links to its section page
+- **Section pages** (`/roadmap/:slug/:book/:section`) — a corpus section rendered in the app:
+  - Each Example and Exercise is a **practice card**: type an answer, then compare it with the book's solution, or ask the chat to explain it.
+  - `[Note: …]` corrections show as highlighted asides.
+  - Figures show their captions; eight figures in chapter 1 of *Beginning Chemistry* have illustrations made for OpenValence.
+  - A side panel credits the source and its license, links to the original page, and starts a chat about the section.
 - **Chat** (`/chat`) — a conversation view with a sidebar of past chats (stored in the browser's `localStorage`), chemistry notation rendered with proper sub- and superscripts (formulas, charges, `Ka`-style constants, `sp3d2`), and numbered citations that expand to show the exact source passage and link to it
 
 The chat calls `askQuestion` in [web/src/lib/api.ts](web/src/lib/api.ts), which currently returns a **mock** answer (`USE_MOCK = true`) so the layout can be judged. When `/api/ask` exists, set `USE_MOCK` to `false`; the dev server already proxies `/api` to the API at `http://localhost:5281`.
+
+Section pages read the markdown in `sources/` directly; the dev server is allowed to serve from outside `web/` for this. The learning paths come from the corpus's front matter, via a generated file, [web/src/lib/learningPaths.generated.ts](web/src/lib/learningPaths.generated.ts). After adding or filling corpus files, regenerate it:
+
+```bash
+npm run gen:paths
+```
+
+Otherwise new sections stay unlinked on the learning path, under "Being added".
 
 ---
 
@@ -138,19 +157,26 @@ Two open textbooks, transcribed from [LibreTexts](https://chem.libretexts.org/) 
 | Book | Folder | Coverage | License |
 | ---- | ------ | -------- | ------- |
 | [*Chemistry* 1e](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) — OpenStax | `sources/openstax/genchem-1e/` | All 21 chapters, 124 sections | CC BY 4.0 |
-| [*Beginning Chemistry*](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) (Ball) | `sources/openstax/introductory/` | Chapters 1–10 transcribed (61 of 100 sections); chapters 11–16 are stubs | CC BY-NC-SA 3.0 |
+| [*Beginning Chemistry*](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) (Ball) | `sources/openstax/introductory/` | All 16 chapters, 100 sections | CC BY-NC-SA 3.0 |
 
 Each file carries YAML frontmatter with its title, book, chapter, source URL, author, and license, so any retrieved chunk can be traced back to the page it came from. [sources/ATTRIBUTION.md](sources/ATTRIBUTION.md) records every document and its license.
 
-**Scope is deliberate.** This is introductory and general chemistry, not all of chemistry. A tight corpus that answers its domain well demos better than a sprawling one that answers everything vaguely — and it makes "I don't have a source for that" a meaningful, testable response rather than an excuse. End-of-chapter exercise pages were deliberately not transcribed.
+**Scope is deliberate.** This is introductory and general chemistry, not all of chemistry. A tight corpus that answers its domain well demos better than a sprawling one that answers everything vaguely — and it makes "I don't have a source for that" a meaningful, testable response rather than an excuse. End-of-chapter exercise pages were deliberately not transcribed; exercises that sit inside a section page, with their answers, were kept.
 
 ### Transcription conventions
 
-Cleaning is mechanical only — strip navigation, unwrap glossary links, convert markup — and the text is never rewritten or summarised, because a citation must quote what the source actually said. The conventions that follow from that:
+Cleaning is mechanical only — strip navigation, unwrap glossary links, convert markup — and the text is never rewritten or summarised, because a citation must quote what the source actually said. Chapters 8–16 of *Beginning Chemistry* were converted by the scripts in [tools/transcribe/](tools/transcribe/README.md), which work for any LibreTexts book. The conventions that follow from that:
 
-- **Upstream errors are kept, and flagged.** Where the source is wrong or contradicts itself (a misprinted value, a mislabelled table, arithmetic that doesn't follow), the text is reproduced as printed and a `[Note: …]` paragraph immediately after explains the correction. There are 32 such notes in *Chemistry* 1e and 15 so far in *Beginning Chemistry*. They double as eval material: the `defect` and `contradiction` questions test whether the app follows the note rather than the misprint.
-- **Figures** are represented by their captions and alt text. An image with a real description outside a figure becomes `[Image: …]`; one whose alt text is only a file name becomes `[Image not described in source]`. Many Lewis structures and molecular-shape diagrams fall in that last group, so questions that need the picture itself have no text answer in the corpus.
-- **Math** is written as plain text (`ΔH_vap`, `1s^2 2s^2 2p^6`, `Mg^2+(g) → Mg^3+(g) + e^−`). In *Beginning Chemistry*, Lewis dot diagrams are drawn in TeX in the source, so they survive as text with combining marks (`·Ṇ̇:` is N with single dots to the left, above, and below, and a pair on the right).
+- **Upstream errors are kept, and flagged.** Where the source is wrong or contradicts itself, the text is reproduced as printed and a `[Note: …]` paragraph immediately after explains the correction. Typical cases are a misprinted value, a mislabelled table, arithmetic that doesn't follow, an unbalanced equation, a stale "Example 4" reference, or markup broken on the LibreTexts page. There are 32 such notes in *Chemistry* 1e and 102 in *Beginning Chemistry*. They double as eval material: the `defect` and `contradiction` questions test whether the app follows the note rather than the misprint.
+- **Figures** are represented by their captions and alt text. An image with a real description outside a figure becomes `[Image: …]`; one whose alt text is only a file name becomes `[Image not described in source]` (and an embedded sound clip becomes `[Audio not described in source]`). Many Lewis structures, molecular-shape diagrams and organic structures fall in that last group, so questions that need the picture itself have no text answer in the corpus.
+- **Math** is written as plain text: `ΔH_vap`, `1s^2 2s^2 2p^6`, `Mg^2+(g) → Mg^3+(g) + e^−`. The specific forms:
+  - **Grouped exponents:** an exponent that is an expression is grouped, `e^(−0.693 t/t_1/2)`, or `e^{…}` when it contains parentheses of its own. The site renders both forms, but neither nests.
+  - **Cancelled units:** units cancelled in a worked calculation keep their strikeout, as `~~mol HCl~~`.
+  - **Nuclides:** written with Unicode prescripts, as in the OpenStax nuclear chapter: `²³⁵₉₂U → ⁴₂He + ²³¹₉₀Th`.
+  - **Double bonds:** written without spaces, `CH2=CH2`.
+  - **Lewis dot diagrams:** *Beginning Chemistry* draws these in TeX, so they survive as text with combining marks (`·Ṇ̇:` is N with single dots to the left, above, and below, and a pair on the right).
+- **Exercises and answers** keep their structure. Lettered parts keep their letters (`a. …`), nested under their question. Where a book answers only the odd-numbered exercises, the even ones remain as empty items (`2.`) so the numbering stays right.
+- **Where an Example ends:** markdown can't show where an Example's box ends. In the one place where an Example has no Exercise after it and the book's text resumes (16.5.1), a `<!-- end of example -->` comment marks the end. The site uses it to end the practice card, and the chunker strips HTML comments.
 
 ### Licensing
 
@@ -189,7 +215,7 @@ Do not add material to `sources/` unless you have checked its license and record
 | defect | 9 | The correct answer follows a `[Note: …]`, not the misprinted text |
 | contradiction | 1 | Two sections disagree (Tc-99m half-life) |
 
-The questions currently target *Chemistry* 1e. There is no runner yet; the plan is below.
+All the questions target *Chemistry* 1e; none are written for *Beginning Chemistry* yet. There is no runner yet; the plan is below.
 
 ---
 
@@ -214,8 +240,8 @@ The index is currently a flat `index.json` loaded into memory — fine at this c
 
 ## Known issues
 
-- **Duplicate document IDs across books.** Chunk IDs are `<file name>#<n>`, and two file names exist in both books: `10-2-Intermolecular-Forces` and `13-4-Shifting-Equilibria-Le-Chateliers-Principle`. The first collides as soon as both are embedded (the second once that *Beginning Chemistry* stub is filled), and eval questions q003, q004 and q084 would count the wrong book's chunks as hits. Fix before the next `embed`: include the book folder in the document ID and update the eval `files` entries to match.
-- **The landing page promises more than the app does yet.** It describes abstention ("if the sources don't cover it, it tells you") and grounded, cited answers, neither of which exists until the answer endpoint and the similarity floor are built. The hero demo's "Searching 124 textbook sections" also needs updating once *Beginning Chemistry* is embedded.
+- **Duplicate document IDs across books.** Chunk IDs are `<file name>#<n>`, and two file names exist in both books: `10-2-Intermolecular-Forces` and `13-4-Shifting-Equilibria-Le-Chateliers-Principle`. Both books are now complete, so both collide as soon as the corpus is embedded, and eval questions q003, q004 and q084 would count the wrong book's chunks as hits. Fix before the next `embed`: include the book folder in the document ID and update the eval `files` entries to match.
+- **The landing page promises more than the app does yet.** It describes abstention ("if the sources don't cover it, it tells you") and grounded, cited answers, neither of which exists until the answer endpoint and the similarity floor are built. The hero demo's "Searching 124 textbook sections" also needs updating once *Beginning Chemistry* is embedded (224 sections across both books).
 - **No mobile navigation.** The header links are hidden below the `md` breakpoint with no menu in their place.
 
 ---
@@ -236,26 +262,34 @@ Two tracks: the **platform** (what the app can do) and the **subjects** (what it
 8. **PubChem facts** — live authoritative properties for compound questions
 9. **Structure rendering** — PubChem PNG endpoint first, then SmilesDrawer for in-app 2D
 
-Later: adaptive practice mode (question types and grading planned in [docs/practice-question-types.md](docs/practice-question-types.md)), scope filtering by subject, book, or chapter, 3D structure viewer.
+Later:
+- **Graded practice:** grade answers on the section pages' practice cards and record mastery, which fills the roadmap's mastery bars. Question types and grading are planned in [docs/practice-question-types.md](docs/practice-question-types.md).
+- **Scope filtering** by subject, book, or chapter.
+- **A 3D structure viewer.**
 
 ### Subjects
 
 | Subject | Source | License | Status |
 | ------- | ------ | ------- | ------ |
-| Introductory chemistry | *Beginning Chemistry* (Ball) | CC BY-NC-SA 3.0 | **In progress** — chapters 1–10 of 16 transcribed |
+| Introductory chemistry | *Beginning Chemistry* (Ball) | CC BY-NC-SA 3.0 | **Transcribed** — all 16 chapters; not yet embedded or evaluated |
 | General chemistry | OpenStax *Chemistry* 1e | CC BY 4.0 | **Transcribed** — not yet embedded or evaluated |
 | Organic chemistry | Candidate: OpenStax *Organic Chemistry* | CC BY-NC-SA 4.0 (confirm before transcribing) | **Planned** — `sources/openstax/orgchem/` exists, empty |
 | Chemical engineering | Not chosen | — | **Planned** |
 | Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
 
-Suggested order: finish introductory, get general chemistry embedded and measured, then organic, then chemical engineering.
+Suggested order: fix the duplicate IDs, embed both transcribed books and measure them, then organic, then chemical engineering.
 
 **Introductory chemistry** — the on-ramp: the same ground as general chemistry at a gentler level, so it catches beginners' phrasing.
 
-- Transcribe chapters 11–16: Solutions, Acids and Bases, Chemical Equilibrium, Oxidation and Reduction, Nuclear Chemistry, Organic Chemistry
-- Fix the duplicate document IDs first (see [Known issues](#known-issues)) — chapter 13 adds the second collision
-- Write eval questions for this book (all 152 current questions target *Chemistry* 1e), including `defect` questions built from its `[Note: …]` corrections
-- When it is embedded: mark it "In use" in the landing page's Sources section and add it to the footer attribution
+- Fix the duplicate document IDs first (see [Known issues](#known-issues)); both collisions involve this book
+- Write eval questions for this book (all 152 current questions target *Chemistry* 1e). Its 102 `[Note: …]` corrections are ready-made `defect` questions
+- Re-label two `unanswerable` questions in the same change that embeds it, or the abstention eval will report correct answers as failures:
+  - q133 (S=O bond energy): 9.5's bond-energy table lists S=O at 523 kJ/mol.
+  - q010 (draw a secondary amine): 16.6 shows one as CH3–NH–CH3.
+- When it is embedded:
+  - mark it "In use" in the landing page's Sources section;
+  - add it to the footer attribution;
+  - update the hero demo's section count.
 
 **General chemistry** — the core of the app and the subject the eval set is written for.
 

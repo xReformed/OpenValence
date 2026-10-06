@@ -67,8 +67,8 @@ export const BRANCHES: Branch[] = [
       {
         title: "Beginning Chemistry (Ball)",
         license: "CC BY-NC-SA 3.0",
-        progress: "Chapters 1–10 of 16",
-        complete: false,
+        progress: "All 16 chapters",
+        complete: true,
       },
     ],
     scope: [
@@ -82,8 +82,7 @@ export const BRANCHES: Branch[] = [
     ],
     steps: [
       { label: "Transcribe Chemistry 1e", done: true },
-      { label: "Transcribe Beginning Chemistry, chapters 1–10", done: true },
-      { label: "Transcribe Beginning Chemistry, chapters 11–16" },
+      { label: "Transcribe Beginning Chemistry", done: true },
       { label: "Grounded answers with citations" },
       { label: "Calculator tools and an equation balancer" },
     ],

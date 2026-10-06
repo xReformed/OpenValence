@@ -34,7 +34,7 @@ What is the energy change when 45.7 g of H2O melt at 0°C?
 
 The ΔH_fus of H2O is 6.01 kJ/mol. However, our quantity is given in units of grams, not moles, so the first step is to convert grams to moles using the molar mass of H2O, which is 18.0 g/mol. Then we can use ΔH_fus as a conversion factor. Because the substance is melting, the process is endothermic, so the energy change will have a positive sign.
 
-45.7 g H2O × (1 mol H2O)/(18.0 g) × (6.01 kJ)/mol = 15.3 kJ
+45.7 ~~g H2O~~ × (1 ~~mol H2O~~)/(18.0 ~~g~~) × (6.01 kJ)/~~mol~~ = 15.3 kJ
 
 Without a sign, the number is assumed to be positive.
 
@@ -77,7 +77,7 @@ What is the energy change when 66.7 g of Br2(g) condense to a liquid at 59.5°C?
 
 The ΔHvap of Br2 is 15.4 kJ/mol. Even though this is a condensation process, we can still use the numerical value of ΔHvap as long as we realize that we must take energy out, so the ΔH value will be negative. To determine the magnitude of the energy change, we must first convert the amount of Br2 to moles. Then we can use ΔHvap as a conversion factor.
 
-66.7 g Br2 × (1 mol Br2)/(159.8 g) × (15.4 kJ)/mol = 6.43 kJ
+66.7 ~~g Br2~~ × (1 ~~mol Br2~~)/(159.8 ~~g~~) × (15.4 kJ)/~~mol~~ = 6.43 kJ
 
 Because the process is exothermic, the actual value will be negative: ΔH = −6.43 kJ.
 
