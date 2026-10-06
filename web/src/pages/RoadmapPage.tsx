@@ -1,26 +1,15 @@
-import { useRef } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import Eyebrow from "../components/Eyebrow";
+import MasteryBar from "../components/MasteryBar";
 import Reveal from "../components/Reveal";
 import SiteFooter from "../components/SiteFooter";
+import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
-import { BookIcon, CheckIcon } from "../components/LandingIcons";
+import { ArrowRightIcon, BookIcon, CheckIcon } from "../components/LandingIcons";
 import { prefersReducedMotion } from "../hooks/useReveal";
-import { BRANCHES, findBranch, STATUS_LABEL, type BranchStatus } from "../lib/roadmap";
-
-const STATUS_STYLE: Record<BranchStatus, string> = {
-  "in-progress": "bg-accent text-neutral-900",
-  planned: "border border-neutral-300 text-neutral-600",
-  later: "bg-neutral-100 text-neutral-500",
-};
-
-function StatusPill({ status }: { status: BranchStatus }) {
-  return (
-    <span className={`rounded-full px-2.5 py-0.5 text-xs whitespace-nowrap ${STATUS_STYLE[status]}`}>
-      {STATUS_LABEL[status]}
-    </span>
-  );
-}
+import { loadMastery } from "../lib/masteryStore";
+import { BRANCHES, findBranch } from "../lib/roadmap";
 
 function SectionLabel({ children }: { children: string }) {
   return (
@@ -33,6 +22,7 @@ export default function RoadmapPage() {
   const [params, setParams] = useSearchParams();
   const branch = findBranch(params.get("branch"));
   const panelRef = useRef<HTMLElement>(null);
+  const [mastery] = useState(loadMastery);
 
   function select(slug: string) {
     setParams({ branch: slug }, { replace: true, preventScrollReset: true });
@@ -71,7 +61,7 @@ export default function RoadmapPage() {
                     aria-pressed={selected}
                     aria-controls="branch-panel"
                     onClick={() => select(slug)}
-                    className={`group relative flex h-full min-h-52 w-full flex-col justify-between overflow-hidden rounded-2xl border bg-white p-7 text-left transition-[border-color,box-shadow,translate] duration-200 hover:-translate-y-0.5 ${
+                    className={`group relative flex h-full min-h-60 w-full flex-col justify-between overflow-hidden rounded-2xl border bg-white p-7 text-left transition-[border-color,box-shadow,translate] duration-200 hover:-translate-y-0.5 ${
                       selected
                         ? "border-neutral-900 shadow-[0_14px_30px_-18px_rgba(0,0,0,0.35)]"
                         : "border-neutral-200 hover:border-neutral-400"
@@ -91,11 +81,18 @@ export default function RoadmapPage() {
                     <span className="relative self-start">
                       <StatusPill status={status} />
                     </span>
-                    <span className="relative mt-10 flex items-baseline gap-3">
-                      <span className="text-sm text-neutral-400 tabular-nums">
-                        {String(i + 1).padStart(2, "0")}
+                    <span className="relative mt-10 block">
+                      <span className="flex items-baseline gap-3">
+                        <span className="text-sm text-neutral-400 tabular-nums">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span className="text-2xl leading-tight tracking-tight">{title}</span>
                       </span>
-                      <span className="text-2xl leading-tight tracking-tight">{title}</span>
+                      <MasteryBar
+                        className="mt-5"
+                        score={mastery[slug] ?? 0}
+                        available={status === "in-progress"}
+                      />
                     </span>
                   </button>
                 </Reveal>
@@ -111,12 +108,21 @@ export default function RoadmapPage() {
           aria-labelledby="branch-title"
           className="mt-6 scroll-mt-6 rounded-2xl border border-neutral-200 bg-white p-7 sm:p-10"
         >
-          <div className="flex flex-wrap items-center gap-3">
-            <img src={branch.icon} alt="" width={48} height={48} className="h-12 w-12" />
-            <h2 id="branch-title" className="text-3xl tracking-tight">
-              {branch.title}
-            </h2>
-            <StatusPill status={branch.status} />
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <img src={branch.icon} alt="" width={48} height={48} className="h-12 w-12" />
+              <h2 id="branch-title" className="text-3xl tracking-tight">
+                {branch.title}
+              </h2>
+              <StatusPill status={branch.status} />
+            </div>
+            <Link
+              to={`/roadmap/${branch.slug}`}
+              className="group inline-flex shrink-0 items-center gap-2 rounded-lg bg-neutral-900 px-4 py-2.5 text-sm text-white transition-colors hover:bg-neutral-700"
+            >
+              Go to Roadmap
+              <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+            </Link>
           </div>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-neutral-500">
             {branch.summary}

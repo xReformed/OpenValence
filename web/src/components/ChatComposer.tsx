@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
+import { ArrowUpIcon } from "./LandingIcons";
 
 const MAX_ROWS_PX = 200;
 
@@ -19,55 +20,59 @@ export default function ChatComposer({
     el.style.height = `${Math.min(el.scrollHeight, MAX_ROWS_PX)}px`;
   }, [value]);
 
+  /* The box stays editable while an answer loads, so the next question can be
+     typed; only sending waits. */
+  const canSend = !busy && value.trim() !== "";
   const submit = () => {
-    if (busy || !value.trim()) return;
+    if (!canSend) return;
     onSend(value);
     setValue("");
   };
 
   return (
-    <div className="border-t border-neutral-100 bg-white px-4 pb-6 pt-4">
-      <div className="mx-auto flex w-full max-w-3xl items-end gap-2 rounded-2xl border border-neutral-200 px-3 py-2 focus-within:border-neutral-400">
-        <textarea
-          ref={textareaRef}
-          rows={1}
-          value={value}
-          disabled={busy}
-          onChange={(event) => setValue(event.target.value)}
-          onKeyDown={(event) => {
-            if (event.key === "Enter" && !event.shiftKey) {
-              event.preventDefault();
-              submit();
-            }
-          }}
-          placeholder="Ask a chemistry question"
-          className="flex-1 resize-none bg-transparent py-1.5 font-sans text-sm leading-relaxed text-neutral-800 placeholder:text-neutral-400 focus:outline-none disabled:opacity-50"
-        />
+    <div className="shrink-0 px-4 pt-2 pb-5 sm:px-6">
+      <form
+        className="mx-auto w-full max-w-3xl"
+        onSubmit={(event) => {
+          event.preventDefault();
+          submit();
+        }}
+      >
+        <div className="flex items-end gap-2 rounded-2xl border border-neutral-200 bg-white p-2 pl-4 shadow-[0_10px_30px_-18px_rgba(0,0,0,0.3)] transition-colors focus-within:border-neutral-400">
+          <label htmlFor="chat-question" className="sr-only">
+            Ask a chemistry question
+          </label>
+          <textarea
+            id="chat-question"
+            ref={textareaRef}
+            rows={1}
+            value={value}
+            onChange={(event) => setValue(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" && !event.shiftKey) {
+                event.preventDefault();
+                submit();
+              }
+            }}
+            placeholder="Ask a chemistry question"
+            className="flex-1 resize-none bg-transparent py-2 text-[0.95rem] leading-relaxed text-neutral-800 placeholder:text-neutral-400 focus:outline-none"
+          />
 
-        <button
-          type="button"
-          onClick={submit}
-          disabled={busy || !value.trim()}
-          aria-label="Send question"
-          className="mb-0.5 shrink-0 rounded-lg bg-neutral-900 px-3 py-2 text-white transition-opacity hover:opacity-80 disabled:opacity-25"
-        >
-          <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true">
-            <path
-              d="M12 19V5M12 5l-6 6M12 5l6 6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-      </div>
+          <button
+            type="submit"
+            disabled={!canSend}
+            aria-label="Send question"
+            className="bg-accent hover:bg-accent-ink flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-neutral-900 transition-colors hover:text-white disabled:bg-neutral-100 disabled:text-neutral-400"
+          >
+            <ArrowUpIcon className="h-4 w-4" />
+          </button>
+        </div>
 
-      <p className="mx-auto mt-2 max-w-3xl text-[0.55rem] text-neutral-400">
-        Answers are drawn only from Chemia&#39;s sources. Enter to send,
-        Shift&#8202;+&#8202;Enter for a new line.
-      </p>
+        <p className="mt-2 text-center text-xs text-neutral-400">
+          Answers come only from OpenValence&#39;s textbook sources. Enter to
+          send, Shift&#8202;+&#8202;Enter for a new line.
+        </p>
+      </form>
     </div>
   );
 }

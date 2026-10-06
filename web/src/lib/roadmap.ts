@@ -10,7 +10,17 @@ import introductoryIcon from "../assets/roadmap/introductory.webp";
 import organicIcon from "../assets/roadmap/organic.webp";
 import physicalIcon from "../assets/roadmap/physical.webp";
 
+import type { BookKey } from "./learningPaths.generated";
+
 export type BranchStatus = "in-progress" | "planned" | "later";
+
+/** One textbook in a branch's learning path, studied in this order. */
+export interface PathStage {
+  book: BookKey;
+  label: string;
+  title: string;
+  note: string;
+}
 
 export interface Branch {
   slug: string;
@@ -23,6 +33,8 @@ export interface Branch {
   alreadyCovered?: string;
   scope: string[];
   steps: { label: string; done?: boolean }[];
+  /** Chapters come from learningPaths.generated.ts; absent until a book exists. */
+  path?: PathStage[];
 }
 
 export const STATUS_LABEL: Record<BranchStatus, string> = {
@@ -74,6 +86,20 @@ export const BRANCHES: Branch[] = [
       { label: "Transcribe Beginning Chemistry, chapters 11–16" },
       { label: "Grounded answers with citations" },
       { label: "Calculator tools and an equation balancer" },
+    ],
+    path: [
+      {
+        book: "beginning-chemistry",
+        label: "Start here",
+        title: "Beginning Chemistry (Ball)",
+        note: "A gentler first pass through the core ideas and vocabulary.",
+      },
+      {
+        book: "chemistry-1e",
+        label: "Then",
+        title: "Chemistry 1e (OpenStax)",
+        note: "The full general chemistry sequence, in more depth.",
+      },
     ],
   },
   {
@@ -181,6 +207,12 @@ export const BRANCHES: Branch[] = [
   },
 ];
 
+/** For the roadmap page: an unknown or missing ?branch= falls back to the first. */
 export function findBranch(slug: string | null): Branch {
   return BRANCHES.find((branch) => branch.slug === slug) ?? BRANCHES[0];
+}
+
+/** For /roadmap/:slug, where an unknown slug is a 404. */
+export function getBranch(slug: string | undefined): Branch | undefined {
+  return BRANCHES.find((branch) => branch.slug === slug);
 }

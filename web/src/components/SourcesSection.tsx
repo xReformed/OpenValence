@@ -2,7 +2,6 @@ import Eyebrow from "./Eyebrow";
 import Reveal from "./Reveal";
 import { BookIcon, CheckIcon, ExternalLinkIcon, QuestionIcon } from "./LandingIcons";
 
-/* Mirrors sources/ATTRIBUTION.md: update both when a source is added. */
 const SOURCES: {
   title: string;
   publisher: string;

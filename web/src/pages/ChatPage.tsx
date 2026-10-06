@@ -1,14 +1,30 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type ComponentType } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import ChatComposer from "../components/ChatComposer";
 import ChatSidebar from "../components/ChatSidebar";
-import ChatTurnView from "../components/ChatTurnView";
+import ChatTurnView, { AssistantAvatar } from "../components/ChatTurnView";
+import ChemText from "../components/ChemText";
+import {
+  ArrowRightIcon,
+  BookIcon,
+  CalculatorIcon,
+  MenuIcon,
+  QuestionIcon,
+  ValenceMark,
+} from "../components/LandingIcons";
 import { useChat } from "../hooks/useChat";
+import { getChats, subscribeToChats } from "../lib/chatStore";
 
-const EXAMPLES = [
-  "What makes something count as matter?",
-  "Why is a physical change reversible?",
-  "What is the difference between mass and weight?",
+/* Each one is answerable from the corpus (1.2, 1.3, and the 14.6 buffer example). */
+const EXAMPLES: { kind: string; icon: ComponentType<{ className?: string }>; question: string }[] = [
+  { kind: "Concept", icon: QuestionIcon, question: "What makes something count as matter?" },
+  { kind: "Concept", icon: QuestionIcon, question: "Why is a physical change reversible?" },
+  { kind: "Definition", icon: BookIcon, question: "What is the difference between mass and weight?" },
+  {
+    kind: "Calculation",
+    icon: CalculatorIcon,
+    question: "What is the pH of a buffer made from 0.10 M acetic acid and 0.10 M sodium acetate?",
+  },
 ];
 
 export function ChatRoute() {
@@ -16,10 +32,32 @@ export function ChatRoute() {
   return <ChatPage key={chatId} chatId={chatId} />;
 }
 
+function Thinking() {
+  return (
+    <div role="status" className="flex gap-3 sm:gap-4">
+      <AssistantAvatar />
+      <p className="flex items-center gap-2.5 pt-1.5 text-sm text-neutral-500">
+        <span aria-hidden="true" className="flex gap-1">
+          {[0, 150, 300].map((delay) => (
+            <span
+              key={delay}
+              style={{ animationDelay: `${delay}ms` }}
+              className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400 motion-reduce:animate-none"
+            />
+          ))}
+        </span>
+        Searching the textbook&#8230;
+      </p>
+    </div>
+  );
+}
+
 export default function ChatPage({ chatId }: { chatId: string }) {
   const { turns, status, error, send } = useChat(chatId);
   const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const chats = useSyncExternalStore(subscribeToChats, getChats);
+  const title = chats.find((chat) => chat.id === chatId)?.title ?? "New chat";
 
   /* A question handed over as ?q= (see newChatLoader in router.ts). Dropping
      it from the URL first means a reload or back-navigation won't re-ask it;
@@ -38,10 +76,19 @@ export default function ChatPage({ chatId }: { chatId: string }) {
     bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [turns, status]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [menuOpen]);
+
   const empty = turns.length === 0;
 
   return (
-    <div className="flex min-h-0 flex-1">
+    <div className="flex min-h-0 flex-1 bg-white font-sans">
       <div className="hidden h-full md:block">
         <ChatSidebar activeChatId={chatId} />
       </div>
@@ -52,73 +99,81 @@ export default function ChatPage({ chatId }: { chatId: string }) {
             type="button"
             aria-label="Close chat list"
             onClick={() => setMenuOpen(false)}
-            className="absolute inset-0 bg-neutral-900/20"
+            className="absolute inset-0 bg-neutral-900/30"
           />
-          <div className="absolute inset-y-0 left-0 bg-white">
-            <ChatSidebar
-              activeChatId={chatId}
-              onNavigate={() => setMenuOpen(false)}
-            />
+          <div className="absolute inset-y-0 left-0 shadow-xl">
+            <ChatSidebar activeChatId={chatId} onNavigate={() => setMenuOpen(false)} />
           </div>
         </div>
       )}
 
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="flex shrink-0 items-center px-4 py-3 md:hidden">
+        <header className="flex h-14 shrink-0 items-center gap-3 border-b border-neutral-100 px-4 sm:px-6">
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
             aria-label="Open chat list"
-            className="text-neutral-500 transition-colors hover:text-neutral-900"
+            className="-ml-1 rounded-md p-1 text-neutral-500 transition-colors hover:text-neutral-900 md:hidden"
           >
-            <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
-              <path
-                d="M4 7h16M4 12h16M4 17h16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
+            <MenuIcon className="h-5 w-5" />
           </button>
-        </div>
+          <p className="truncate text-sm text-neutral-700">{title}</p>
+        </header>
 
-        <div className="flex-1 overflow-y-auto">
+        <div className="min-h-0 flex-1 overflow-y-auto">
           {empty ? (
-            <div className="mx-auto flex h-full max-w-3xl flex-col items-center justify-center px-6 text-center">
-              <h1 className="text-lg tracking-tight text-neutral-900 sm:text-xl">
-                What do you want to know?
-              </h1>
-
-              <div className="mt-8 flex flex-col gap-2">
-                {EXAMPLES.map((example) => (
-                  <button
-                    key={example}
-                    type="button"
-                    onClick={() => send(example)}
-                    className="rounded-lg border border-neutral-200 px-4 py-2.5 font-sans text-xs text-neutral-600 transition-colors hover:border-neutral-400 hover:text-neutral-900"
-                  >
-                    {example}
-                  </button>
-                ))}
+            <div className="mx-auto flex min-h-full max-w-3xl flex-col justify-center px-4 py-12 sm:px-6">
+              <div className="text-center">
+                <span className="bg-accent mx-auto flex h-12 w-12 items-center justify-center rounded-2xl">
+                  <ValenceMark className="h-6 w-6 text-neutral-900" />
+                </span>
+                <h1 className="mt-6 text-3xl tracking-tight sm:text-4xl">
+                  What do you want to know?
+                </h1>
+                <p className="mx-auto mt-3 max-w-md leading-relaxed text-neutral-500">
+                  Answers come only from the textbook sources, and every claim
+                  links to the passage it came from.
+                </p>
               </div>
+
+              <ul className="mt-10 grid gap-3 sm:grid-cols-2">
+                {EXAMPLES.map(({ kind, icon: KindIcon, question }) => (
+                  <li key={question}>
+                    <button
+                      type="button"
+                      onClick={() => send(question)}
+                      className="group flex h-full w-full flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-4 text-left transition-[border-color,box-shadow] duration-200 hover:border-neutral-400 hover:shadow-[0_6px_16px_-10px_rgba(0,0,0,0.25)]"
+                    >
+                      <span className="flex items-center justify-between gap-2 text-xs text-neutral-500">
+                        <span className="flex items-center gap-1.5">
+                          <KindIcon className="h-3.5 w-3.5" />
+                          {kind}
+                        </span>
+                        <ArrowRightIcon className="h-3.5 w-3.5 text-neutral-300 transition-[color,translate] group-hover:translate-x-0.5 group-hover:text-neutral-700" />
+                      </span>
+                      <span className="text-sm leading-relaxed text-neutral-800">
+                        <ChemText text={question} />
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
           ) : (
-            <div className="mx-auto flex max-w-3xl flex-col gap-8 px-6 py-10">
+            <div className="mx-auto flex max-w-3xl flex-col gap-10 px-4 py-10 sm:px-6">
               {turns.map((turn) => (
                 <ChatTurnView key={turn.id} turn={turn} />
               ))}
 
-              {status === "sending" && (
-                <p className="font-sans text-sm text-neutral-400">
-                  Retrieving sources&#8230;
-                </p>
-              )}
+              {status === "sending" && <Thinking />}
 
               {status === "error" && (
-                <p className="font-sans text-sm text-red-600">
+                <div
+                  role="alert"
+                  className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700"
+                >
                   {error} &mdash; nothing was answered, so nothing is cited.
-                </p>
+                </div>
               )}
 
               <div ref={bottomRef} />

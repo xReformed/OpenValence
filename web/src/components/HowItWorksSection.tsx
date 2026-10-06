@@ -3,8 +3,6 @@ import Eyebrow from "./Eyebrow";
 import Reveal from "./Reveal";
 import { ChatIcon, CheckIcon, DocumentIcon, SearchIcon } from "./LandingIcons";
 
-/* The examples follow the hero demo's buffer question from start to finish
-   (0.10 M acetic acid / 0.10 M acetate, answered from 14.6 Buffers). */
 const STEPS: {
   icon: ComponentType<{ className?: string }>;
   title: string;
@@ -52,7 +50,6 @@ export default function HowItWorksSection() {
       </Reveal>
 
       <ol className="relative mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Joins the step numbers; it only shows in the gaps between cards. */}
         <span
           aria-hidden="true"
           className="absolute top-10.5 right-[12.5%] left-[12.5%] hidden h-px bg-neutral-300 lg:block"

@@ -8,10 +8,6 @@ import {
   QuestionIcon,
   ValenceMark,
 } from "./LandingIcons";
-
-/* The illustrations reuse the buffer example from the hero demo (14.6 Buffers
-   and its neighbours in chapter 14), so every card shows the same real answer. */
-
 type IconComponent = ComponentType<{ className?: string }>;
 
 function MiniCard({

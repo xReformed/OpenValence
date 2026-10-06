@@ -71,8 +71,9 @@ export function saveTurns(id: string, turns: ChatTurn[]) {
 
   write(turnsKey(id), turns);
 
+  const question = turns.find((turn) => turn.role === "user")?.content ?? "Chat";
   const title =
-    turns.find((turn) => turn.role === "user")?.content.slice(0, 60) ?? "Chat";
+    question.length > 60 ? `${question.slice(0, 59).trimEnd()}…` : question;
   const others = read<ChatMeta[]>(INDEX_KEY, []).filter(
     (chat) => chat.id !== id,
   );

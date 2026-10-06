@@ -8,7 +8,7 @@ export default function CookieNotice() {
     <div className="fixed bottom-5 left-1/2 z-20 w-[min(36rem,calc(100vw-2rem))] -translate-x-1/2 rounded-xl border border-neutral-200 bg-white/90 px-5 py-4 shadow-sm backdrop-blur-sm">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-[0.6rem] leading-relaxed text-neutral-500">
-          We use essential cookies to run Chemia. Accept to allow analytics too
+          We use essential cookies to run OpenValence. Accept to allow analytics too
           &mdash; you can change this any time.
         </p>
 
