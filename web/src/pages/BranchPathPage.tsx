@@ -100,7 +100,7 @@ export default function BranchPathPage() {
         <header className="mt-8 grid items-end gap-8 lg:grid-cols-[1fr_20rem]">
           <div>
             <div className="flex items-center gap-4">
-              <img src={branch.icon} alt="" width={64} height={64} className="h-16 w-16" />
+              <img src={branch.icon} alt="" width={64} height={64} className="h-16 w-16 dark:invert dark:hue-rotate-180" />
               <StatusPill status={branch.status} />
             </div>
             <div className="mt-6">

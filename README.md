@@ -120,6 +120,7 @@ What's there today:
   - `[Note: …]` corrections show as highlighted asides.
   - Figures show their captions; eight figures in chapter 1 of *Beginning Chemistry* have illustrations made for OpenValence.
   - A side panel credits the source and its license, links to the original page, and starts a chat about the section.
+- **Light and dark mode** — follows the system setting until you pick one with the sun/moon button in the header (or the chat sidebar); the choice is remembered in `localStorage`. Dark mode remaps Tailwind's grey scale in [web/src/index.css](web/src/index.css), so components rarely need `dark:` classes
 - **Chat** (`/chat`) — a conversation view with a sidebar of past chats (stored in the browser's `localStorage`), chemistry notation rendered with proper sub- and superscripts (formulas, charges, `Ka`-style constants, `sp3d2`), and numbered citations that expand to show the exact source passage and link to it
 
 The chat calls `askQuestion` in [web/src/lib/api.ts](web/src/lib/api.ts), which currently returns a **mock** answer (`USE_MOCK = true`) so the layout can be judged. When `/api/ask` exists, set `USE_MOCK` to `false`; the dev server already proxies `/api` to the API at `http://localhost:5281`.

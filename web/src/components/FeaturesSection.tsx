@@ -57,7 +57,7 @@ function CitedAnswerArt() {
   return (
     <MiniCard className="flex w-44 flex-col items-center px-4 py-4 text-center">
       <span className="bg-accent flex h-9 w-9 items-center justify-center rounded-full">
-        <DocumentIcon className="h-4 w-4 text-neutral-900" />
+        <DocumentIcon className="h-4 w-4 text-on-accent" />
       </span>
       <p className="mt-3 text-[0.65rem] text-neutral-500">Answer found in</p>
       <p className="mt-1 text-base">14.6 Buffers</p>
@@ -97,7 +97,7 @@ function StepDoc({ label, className = "" }: { label: string; className?: string 
         <span className="h-1 w-full rounded-full bg-neutral-200" />
         <span className="h-1 w-3/5 rounded-full bg-neutral-200" />
       </MiniCard>
-      <span className="bg-accent absolute -right-5 -bottom-2 rounded-full px-1.5 py-0.5 text-[0.55rem] whitespace-nowrap text-neutral-900">
+      <span className="bg-accent absolute -right-5 -bottom-2 rounded-full px-1.5 py-0.5 text-[0.55rem] whitespace-nowrap text-on-accent">
         {label}
       </span>
     </div>
@@ -114,7 +114,7 @@ function StepsArt() {
       <span className="flex h-28 w-28 items-center justify-center rounded-full border border-neutral-200/70 bg-neutral-50/70">
         <span className="flex h-20 w-20 items-center justify-center rounded-full border border-neutral-200 bg-white">
           <span className="bg-accent flex h-12 w-12 items-center justify-center rounded-full shadow-[0_8px_18px_-8px_rgba(1,138,68,0.6)]">
-            <CheckIcon className="h-6 w-6 text-neutral-900" />
+            <CheckIcon className="h-6 w-6 text-on-accent" />
           </span>
         </span>
       </span>
@@ -162,7 +162,7 @@ function OpenSourcesArt() {
         <BookIcon className="h-6 w-6 text-neutral-700" />
       </MiniCard>
       <span className="bg-accent flex h-18 w-18 items-center justify-center rounded-2xl shadow-[0_12px_24px_-10px_rgba(1,138,68,0.6)]">
-        <ValenceMark className="h-8 w-8 text-neutral-900" />
+        <ValenceMark className="h-8 w-8 text-on-accent" />
       </span>
       <MiniCard className="flex h-14 w-14 items-center justify-center">
         <span className="text-xs font-semibold tracking-wide text-neutral-700">CC BY</span>

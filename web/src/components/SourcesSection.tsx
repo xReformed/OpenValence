@@ -90,7 +90,7 @@ export default function SourcesSection() {
                 </div>
                 <span
                   className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs whitespace-nowrap ${
-                    inUse ? "bg-accent text-neutral-900" : "bg-neutral-100 text-neutral-500"
+                    inUse ? "bg-accent text-on-accent" : "bg-neutral-100 text-neutral-500"
                   }`}
                 >
                   {inUse ? "In use" : "Being added"}

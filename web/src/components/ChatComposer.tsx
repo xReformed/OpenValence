@@ -62,7 +62,7 @@ export default function ChatComposer({
             type="submit"
             disabled={!canSend}
             aria-label="Send question"
-            className="bg-accent hover:bg-accent-ink flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-neutral-900 transition-colors hover:text-white disabled:bg-neutral-100 disabled:text-neutral-400"
+            className="bg-accent hover:bg-accent-ink flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-on-accent transition-colors hover:text-white disabled:bg-neutral-100 disabled:text-neutral-400"
           >
             <ArrowUpIcon className="h-4 w-4" />
           </button>

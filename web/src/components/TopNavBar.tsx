@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ValenceMark } from "./LandingIcons";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV_LINKS = [
   { label: "Features", href: "/#features" },
@@ -29,12 +30,15 @@ export default function TopNavBar() {
           ))}
         </nav>
 
-        <Link
-          to="/chat"
-          className="rounded-lg bg-neutral-900 px-4 py-2.5 text-sm text-white transition-colors hover:bg-neutral-700"
-        >
-          Ask a question
-        </Link>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Link
+            to="/chat"
+            className="rounded-lg bg-neutral-900 px-4 py-2.5 text-sm text-white transition-colors hover:bg-neutral-700"
+          >
+            Ask a question
+          </Link>
+        </div>
       </div>
     </header>
   );

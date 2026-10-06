@@ -189,7 +189,7 @@ function PrimaryButton({ className = "" }: { className?: string }) {
   return (
     <Link
       to="/chat"
-      className={`group bg-accent hover:bg-accent-ink inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-neutral-900 transition-colors hover:text-white ${className}`}
+      className={`group bg-accent hover:bg-accent-ink inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-on-accent transition-colors hover:text-white ${className}`}
     >
       Ask a question
       <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />

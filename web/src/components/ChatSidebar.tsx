@@ -8,6 +8,7 @@ import {
   type ChatMeta,
 } from "../lib/chatStore";
 import { LockIcon, PlusIcon, TrashIcon, ValenceMark } from "./LandingIcons";
+import ThemeToggle from "./ThemeToggle";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -45,7 +46,7 @@ export default function ChatSidebar({
 
   return (
     <aside className="flex h-full w-64 shrink-0 flex-col border-r border-neutral-200 bg-neutral-50 font-sans">
-      <div className="shrink-0 px-5 pt-5 pb-4">
+      <div className="flex shrink-0 items-center justify-between pt-4 pr-3 pb-3 pl-5">
         <Link
           to="/"
           onClick={onNavigate}
@@ -54,6 +55,7 @@ export default function ChatSidebar({
           <ValenceMark className="h-5 w-5" />
           OpenValence
         </Link>
+        <ThemeToggle />
       </div>
 
       <div className="shrink-0 px-3">

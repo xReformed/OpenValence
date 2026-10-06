@@ -23,7 +23,7 @@ export default function CookieNotice() {
           <button
             type="button"
             onClick={() => setDismissed(true)}
-            className="bg-accent rounded-md px-3 py-1.5 text-[0.6rem] text-neutral-900 transition-opacity hover:opacity-80"
+            className="bg-accent rounded-md px-3 py-1.5 text-[0.6rem] text-on-accent transition-opacity hover:opacity-80"
           >
             Accept
           </button>

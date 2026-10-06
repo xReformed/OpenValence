@@ -8,6 +8,9 @@
      where the bright fill is too light to read on white. */
   --color-accent: #00e26a;
   --color-accent-ink: #018a44;
+  /* Text and icons on an accent fill: dark in both themes, because the fill
+     stays bright in both. */
+  --color-on-accent: #171717;
 
   /* A check settling into place: slight overshoot, no bounce. */
   --animate-pop: pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.3) both;
@@ -21,6 +24,42 @@
       transform: scale(1);
     }
   }
+}
+
+/* Dark mode is the .dark class on <html>, set by lib/themeStore.ts (and before
+   first paint by the script in index.html). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* The same classes, remapped: the grey scale is mirrored, so white becomes the
+   darkest surface and neutral-900 the brightest text. Every pairing written for
+   light mode ("text-neutral-500 on bg-white", "text-white on bg-neutral-900")
+   keeps its contrast without a dark: variant. */
+:root.dark {
+  color-scheme: dark;
+  --color-white: #0b0b0b;
+  --color-neutral-50: #141414;
+  --color-neutral-100: #1c1c1c;
+  --color-neutral-200: #2b2b2b;
+  --color-neutral-300: #3d3d3d;
+  --color-neutral-400: #6b6b6b;
+  --color-neutral-500: #999999;
+  --color-neutral-600: #b0b0b0;
+  --color-neutral-700: #cccccc;
+  --color-neutral-800: #e0e0e0;
+  --color-neutral-900: #ededed;
+  --color-neutral-950: #f7f7f7;
+
+  /* The bright fill reads on black as it is; the dark ink doesn't. */
+  --color-accent-ink: #3ee08a;
+
+  /* Transcription notes (amber) and errors (red): tinted dark panels. */
+  --color-amber-50: #231a08;
+  --color-amber-200: #5c4512;
+  --color-amber-800: #f2c36b;
+  --color-amber-950: #fbe8c4;
+  --color-red-50: #2a1111;
+  --color-red-200: #6e2323;
+  --color-red-700: #fca5a5;
 }
 
 /* Faint graph paper behind the feature illustrations, fading out at the edges. */

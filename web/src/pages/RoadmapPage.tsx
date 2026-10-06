@@ -68,13 +68,15 @@ export default function RoadmapPage() {
                     }`}
                   >
                     {/* A faded watermark bleeding off the corner; decorative,
-                        since the branch name is right there in text. */}
+                        since the branch name is right there in text. The icons
+                        are black line art, so dark mode flips their brightness
+                        (invert) but not their colours (hue-rotate back). */}
                     <img
                       src={icon}
                       alt=""
                       width={176}
                       height={176}
-                      className={`pointer-events-none absolute -top-6 -right-6 h-36 w-36 transition-[opacity,scale] sm:h-44 sm:w-44 duration-300 group-hover:scale-105 motion-reduce:transition-none ${
+                      className={`pointer-events-none absolute -top-6 -right-6 h-36 w-36 dark:invert dark:hue-rotate-180 transition-[opacity,scale] sm:h-44 sm:w-44 duration-300 group-hover:scale-105 motion-reduce:transition-none ${
                         selected ? "opacity-45" : "opacity-25 group-hover:opacity-40"
                       }`}
                     />
@@ -110,7 +112,7 @@ export default function RoadmapPage() {
         >
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="flex flex-wrap items-center gap-3">
-              <img src={branch.icon} alt="" width={48} height={48} className="h-12 w-12" />
+              <img src={branch.icon} alt="" width={48} height={48} className="h-12 w-12 dark:invert dark:hue-rotate-180" />
               <h2 id="branch-title" className="text-3xl tracking-tight">
                 {branch.title}
               </h2>
