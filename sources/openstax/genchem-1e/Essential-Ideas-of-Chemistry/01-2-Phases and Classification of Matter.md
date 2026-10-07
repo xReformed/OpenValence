@@ -73,6 +73,8 @@ A homogeneous mixture, also called a solution, exhibits a uniform composition an
 Figure 1.2.7: (a) Oil and vinegar salad dressing is a heterogeneous mixture because its composition is not uniform throughout. (b) A commercial sports drink is a homogeneous mixture because its composition is uniform throughout. (credit a “left”: modification of work by John Mayer; credit a “right”: modification of work by Umberto Salvagnin; credit b “left: modification of work by Jeff Bedford)
 Diagram A shows a glass containing a red liquid with a layer of yellow oil floating on the surface of the red liquid. A zoom in box is magnifying a portion of the red liquid that contains some of the yellow oil. The zoomed in image shows that oil is forming round droplets within the red liquid. Diagram B shows a photo of Gatorade G 2. A zoom in box is magnifying a portion of the Gatorade, which is uniformly red.
 
+[Note: the source numbers this figure 1.2.7, the same as the mercury(II) oxide figure above.]
+
 Although there are just over 100 elements, tens of millions of chemical compounds result from different combinations of these elements. Each compound has a specific composition and possesses definite chemical and physical properties by which we can distinguish it from all other compounds. And, of course, there are innumerable ways to combine elements and compounds to form different mixtures. A summary of how to distinguish between the various major classifications of matter is shown in (Figure 1.2.8).
 
 Figure 1.2.8: Depending on its properties, a given substance can be classified as a homogeneous mixture, a heterogeneous mixture, a compound, or an element.

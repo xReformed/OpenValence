@@ -67,6 +67,8 @@ A physical change occurs when a sample of matter changes one or more of its phys
 
 Figure 1.2.2: Physical Changes: The solid ice melts into liquid water—a physical change. A time-lapse animation of ice cubes melting in a glass over 50 minutes. (Public Domain; Moussa).
 
+[Note: the source numbers this figure 1.2.2, the same as the "Chemical Properties" figure above. The text refers to it as Figure 1.2.3 ("a solid may melt"), the number the source gives the "Types of Mixtures" figure below.]
+
 ## Chemical Change
 
 Chemical change is the process of demonstrating a chemical property, such as the burning match in Figure 1.2.2 "Chemical Properties". As the matter in the match burns, its chemical composition changes, and new forms of matter with new physical properties are created. Note that chemical changes are frequently accompanied by physical changes, as the new matter will likely have different physical properties from the original matter.

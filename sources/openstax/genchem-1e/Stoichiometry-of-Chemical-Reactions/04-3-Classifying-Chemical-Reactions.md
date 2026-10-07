@@ -302,6 +302,8 @@ Figure 4.3.4: (a) A copper wire is shown next to a solution containing silver(I)
 
 This figure contains three photographs. In a, a coiled copper wire is shown beside a test tube filled with a clear, colorless liquid. In b, the wire has been inserted into the test tube with the clear, colorless liquid. In c, the test tube contains a light blue liquid and the coiled wire appears to have a fuzzy silver gray coating.
 
+[Note: the source numbers this figure 4.3.4, the same as the ammonia figure earlier in the section, and the text above refers to it by that number too.]
+
 ### Example 4.3.4: Describing Redox Reactions
 
 Identify which equations represent redox reactions, providing a name for the reaction if appropriate. For those reactions identified as redox, name the oxidant and reductant.

@@ -2,9 +2,11 @@
 
    The corpus only has each figure's caption and description: the original
    images were not transcribed, and many are third-party stock photos the
-   books' licences don't cover. Anything listed here is OpenValence's own
-   stand-in; the book's caption stays as printed. Add an entry to show an
-   image above that figure's caption.
+   books' licences don't cover. Most images listed here are OpenValence's own
+   stand-ins; a few are the book's original, where its parts are free to use
+   (3.1 image 1: an 1800s portrait and NASA's sun). Either way the book's
+   caption stays as printed. Add an entry to show an image above that
+   figure's caption.
 
    The images are web copies (WebP, at most 1600px wide) of the PNG originals
    in src/assets. A key is the figure number ("1.2.1"), or the number plus the
@@ -39,14 +41,24 @@ import image2_4_2 from "../assets/figures/beginning-chemistry/2.4-image-2.webp";
 import image2_4_3 from "../assets/figures/beginning-chemistry/2.4-image-3.webp";
 import image2_4_4 from "../assets/figures/beginning-chemistry/2.4-image-4.webp";
 import image2_4_5 from "../assets/figures/beginning-chemistry/2.4-image-5.webp";
+import image3_1_1 from "../assets/figures/beginning-chemistry/3.1-image-1.webp";
+import figure3_2_1 from "../assets/figures/beginning-chemistry/3.2.1.webp";
+import figure3_2_2 from "../assets/figures/beginning-chemistry/3.2.2.webp";
+import figure3_3_1 from "../assets/figures/beginning-chemistry/3.3.1.webp";
+import figure3_4_2 from "../assets/figures/beginning-chemistry/3.4.2.webp";
 import type { BookKey, FigureImage } from "./types";
 
-export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>> = {
+export const FIGURE_IMAGES: Partial<
+  Record<BookKey, Record<string, FigureImage>>
+> = {
   "beginning-chemistry": {
     "1.1.1": { src: figure1_1_1, width: 1448, height: 1086 },
     "1.2.1": { src: figure1_2_1, width: 1600, height: 533 },
-    // The book numbers both of these 1.2.2.
-    "1.2.2 Chemical Properties": { src: figure1_2_2a, width: 1536, height: 1024 },
+    "1.2.2 Chemical Properties": {
+      src: figure1_2_2a,
+      width: 1536,
+      height: 1024,
+    },
     "1.2.2 Physical Changes": { src: figure1_2_2b, width: 1448, height: 1086 },
     "1.2.3": { src: figure1_2_3, width: 1448, height: 1086 },
     "1.2.4": { src: figure1_2_4, width: 1600, height: 800 },
@@ -68,19 +80,38 @@ export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>
     "2.4 image 3": { src: image2_4_3, width: 1536, height: 512 },
     "2.4 image 4": { src: image2_4_4, width: 1536, height: 576 },
     "2.4 image 5": { src: image2_4_5, width: 1536, height: 576 },
+    "3.1 image 1": { src: image3_1_1, width: 1158, height: 663 },
+    "3.2.1 The Structure of the Atom": {
+      src: figure3_2_1,
+      width: 1448,
+      height: 1086,
+    },
+    "3.2.1 A Simple Periodic Table": {
+      src: figure3_2_2,
+      width: 1536,
+      height: 1024,
+    },
+    "3.3.1": { src: figure3_3_1, width: 1448, height: 1086 },
+    "3.4.2": { src: figure3_4_2, width: 1774, height: 887 },
   },
 };
 
-/** "Figure 1.2.2: Physical Changes: The solid ice…" -> the image for that figure, if any. */
-export function findFigureImage(book: BookKey, caption: string): FigureImage | undefined {
-  const match = caption.match(/^Figure (\d+\.\d+\.\d+[a-z]?):?\s*([^.:©]*)/);
+export function findFigureImage(
+  book: BookKey,
+  caption: string,
+): FigureImage | undefined {
+  const match = caption.match(/^Figure (\d+\.\d+\.\d+[a-z]?):?\s*([^.:©\n]*)/);
   if (!match) return undefined;
   const [, number, title] = match;
   const images = FIGURE_IMAGES[book];
   return images?.[`${number} ${title.trim()}`] ?? images?.[number];
 }
 
-export function findPlaceholderImage(book: BookKey, section: string, position: number): FigureImage | undefined {
+export function findPlaceholderImage(
+  book: BookKey,
+  section: string,
+  position: number,
+): FigureImage | undefined {
   return FIGURE_IMAGES[book]?.[`${section} image ${position}`];
 }
 

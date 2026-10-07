@@ -63,6 +63,8 @@ Figure 3.3.3: Distilled white vinegar is a solution of acetic acid in water.
 
 A label on a container is shown. The label has a picture of a salad with the words “Distilled White Vinegar,” and, “Reduced with water to 5% acidity,” written above it.
 
+[Note: the source numbers this figure 3.3.3, but the text above refers to it as Figure 3.3.2. The source gives those numbers again to the copper nitrate figure (3.3.2) and the KMnO4 figure (3.3.3) later in the section.]
+
 **Solution**
 
 As in previous examples, the definition of molarity is the primary equation used to calculate the quantity sought. In this case, the mass of solute is provided instead of its molar amount, so we must use the solute’s molar mass to obtain the amount of solute in moles:

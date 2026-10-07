@@ -96,6 +96,8 @@ The elements are grouped together in a special chart called the periodic table o
 Figure 3.2.1: A Simple Periodic Table
 Periodic table showing atomic number, mass, and symbol of each element is shown.
 
+[Note: the source numbers this figure 3.2.1, the same as "The Structure of the Atom" figure above, but the text refers to it as Figure 3.2.2.]
+
 There is an easy way to represent isotopes using the atomic symbols. We use the construction:
 
 ^A_Z X

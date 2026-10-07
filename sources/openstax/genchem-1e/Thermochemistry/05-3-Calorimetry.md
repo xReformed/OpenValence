@@ -188,6 +188,8 @@ Calculate the value of q for this reaction and explain the meaning of its arithm
 
 Figure 5.3.5: An instant cold pack consists of a bag containing solid ammonium nitrate and a second bag of water. When the bag of water is broken, the pack becomes cold because the dissolution of ammonium nitrate is an endothermic process that removes thermal energy from the water. The cold pack then removes thermal energy from your body.
 
+[Note: the source numbers this figure 5.3.5, the same as the hand warmer figure above, and the text above refers to it by that number too.]
+
 **Solution**
 
 We assume that the calorimeter prevents heat transfer between the solution and its external environment (including the calorimeter itself), in which case:

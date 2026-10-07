@@ -16,6 +16,7 @@ import remarkGfm from "remark-gfm";
 import ChemText from "../components/ChemText";
 import MasteryBar from "../components/MasteryBar";
 import PracticeQuestion from "../components/PracticeQuestion";
+import ReadingProgress from "../components/ReadingProgress";
 import SiteFooter from "../components/SiteFooter";
 import TopNavBar from "../components/TopNavBar";
 import {
@@ -147,7 +148,8 @@ function Paragraph({ children }: { children?: ReactNode }) {
     );
   }
 
-  if (/^Figure \d/.test(first)) {
+  /* "Figure 3.3.1: …" is a caption; "Figure 3.3.1 shows …" is prose. */
+  if (/^Figure \d+\.\d+\.\d+[a-z]?:/.test(first)) {
     /* A stand-in image for this figure, if one has been made (see figureImages.ts).
        The book's caption and description stay visible exactly as printed; the
        description also serves as the image's alt text. */
@@ -423,6 +425,7 @@ export default function SectionPage() {
   /* sectionLoader has already turned an unknown branch, book, or section into a 404. */
   const { branch, stage, meta, chapter, section, text, previous, next } =
     useLoaderData<typeof sectionLoader>();
+  const scroller = useRef<HTMLDivElement>(null);
   const sectionHref = (number: string) =>
     `/roadmap/${branch.slug}/${stage.book}/${number}`;
   const segments = useMemo(
@@ -465,7 +468,8 @@ export default function SectionPage() {
       : `by ${meta.author}, via LibreTexts`;
 
   return (
-    <div className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
+    <div ref={scroller} className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
+      <ReadingProgress container={scroller} />
       <TopNavBar />
 
       <main className="mx-auto w-full max-w-352 px-5 pb-20 sm:px-8 lg:px-12">

@@ -604,6 +604,297 @@ export const PRACTICE: Partial<Record<`${BookKey}/${string}`, Question[]>> = {
     },
   ],
 
+  "beginning-chemistry/3.2": [
+    {
+      id: "dalton-theory",
+      type: "multiple-choice",
+      prompt: "Which of these was not part of the modern atomic theory as John Dalton stated it in 1808?",
+      choices: [
+        { text: "Atoms are made of protons, neutrons, and electrons", correct: true },
+        {
+          text: "All matter is composed of atoms",
+          why: "This is the first part of Dalton's theory.",
+        },
+        {
+          text: "Atoms of the same element are the same; atoms of different elements are different",
+          why: "This is the second part of Dalton's theory.",
+        },
+        {
+          text: "Atoms combine in whole-number ratios to form compounds",
+          why: "This is the third part of Dalton's theory.",
+        },
+      ],
+      explanation:
+        "Dalton's theory has three parts: all matter is composed of atoms, atoms of the same element are the same, and atoms combine in whole-number ratios. The subatomic particles were discovered later: first the electron, then the proton and the neutron.",
+    },
+    {
+      id: "electrons-per-proton",
+      type: "numeric",
+      prompt:
+        "Using Table 3.2.1, about how many electrons together have the same mass as one proton?",
+      answer: 1.6e-27 / 9.1e-31,
+      tolerance: 0.03,
+      explanation:
+        "Divide the masses: (1.6 × 10^−27 kg)/(9.1 × 10^−31 kg) ≈ 1,800, or 1.8 × 10^3. Electrons are so light that almost all of an atom's mass is in its nucleus, with the protons and neutrons.",
+    },
+    {
+      id: "mass-number-from-particles",
+      type: "numeric",
+      prompt: "An atom has 19 protons, 20 neutrons, and 19 electrons. What is its mass number?",
+      answer: 39,
+      explanation:
+        "The mass number counts only the particles in the nucleus: 19 protons + 20 neutrons = 39. Electrons aren't included.",
+    },
+    {
+      id: "isotopes-same-element",
+      type: "multiple-choice",
+      prompt: "Which pair of atoms are isotopes of the same element?",
+      choices: [
+        {
+          text: "One with 8 protons and 8 neutrons, and one with 8 protons and 10 neutrons",
+          correct: true,
+        },
+        {
+          text: "One with 6 protons and 6 neutrons, and one with 7 protons and 6 neutrons",
+          why: "Different numbers of protons mean different elements: these are a carbon atom and a nitrogen atom.",
+        },
+        {
+          text: "One with 6 protons and 8 neutrons, and one with 7 protons and 7 neutrons",
+          why: "Both have a mass number of 14, but they have different numbers of protons, so they are different elements. Isotopes share the number of protons, not the mass number.",
+        },
+      ],
+      explanation:
+        "Isotopes are atoms of the same element, so they have the same number of protons, with different numbers of neutrons. Both of these atoms have 8 protons (oxygen), with 8 and 10 neutrons.",
+    },
+    {
+      id: "chlorine-37-neutrons",
+      type: "numeric",
+      prompt: "How many neutrons are in an atom of chlorine-37? Chlorine's atomic number is 17.",
+      answer: 20,
+      explanation:
+        "The 37 in chlorine-37 is the mass number: protons plus neutrons. The atomic number, 17, is the number of protons, so the atom has 37 − 17 = 20 neutrons.",
+    },
+    {
+      id: "isotope-symbol",
+      type: "multiple-choice",
+      prompt: "Which symbol represents an atom with 15 protons and 16 neutrons?",
+      choices: [
+        { text: "³¹₁₅P", correct: true },
+        {
+          text: "¹⁶₁₅P",
+          why: "The top number is the mass number: protons plus neutrons, 15 + 16 = 31, not just the neutrons.",
+        },
+        {
+          text: "³¹₁₆S",
+          why: "The bottom number is the atomic number, the number of protons: 15, not the 16 neutrons. An atomic number of 15 means phosphorus.",
+        },
+        {
+          text: "¹⁵₃₁P",
+          why: "The numbers are swapped: the mass number goes on top and the atomic number on the bottom.",
+        },
+      ],
+      explanation:
+        "In an isotope's symbol, the top number is the mass number (15 + 16 = 31) and the bottom number is the atomic number (15). The element with atomic number 15 is phosphorus, P.",
+    },
+    {
+      id: "neutral-cobalt-electrons",
+      type: "numeric",
+      prompt: "How many electrons are in a neutral atom of ⁵⁹₂₇Co?",
+      answer: 27,
+      explanation:
+        "A neutral atom has as many electrons as protons. The atomic number, 27, is the number of protons, so the atom has 27 electrons. (59 is the mass number, and 59 − 27 = 32 is the number of neutrons.)",
+    },
+  ],
+
+  "beginning-chemistry/3.3": [
+    {
+      id: "diatomic-element",
+      type: "multiple-choice",
+      prompt: "Which of these elements exists naturally as two-atom (diatomic) molecules?",
+      choices: [
+        { text: "Bromine", correct: true },
+        {
+          text: "Sulfur",
+          why: "Sulfur normally exists as an eight-atom molecule, S8.",
+        },
+        {
+          text: "Phosphorus",
+          why: "One form of phosphorus exists as a four-atom molecule, P4.",
+        },
+        {
+          text: "Neon",
+          why: "Neon isn't one of the elements that form molecules, so it is treated as individual atoms.",
+        },
+      ],
+      explanation:
+        "Seven elements exist as diatomic molecules: hydrogen, oxygen, nitrogen, fluorine, chlorine, bromine, and iodine. So bromine's molecular formula is Br2.",
+    },
+    {
+      id: "name-pcl5",
+      type: "multiple-choice",
+      prompt: "What is the name of PCl5?",
+      choices: [
+        { text: "phosphorus pentachloride", correct: true },
+        {
+          text: "monophosphorus pentachloride",
+          why: "Don't use mono- when there is only one atom of the first element.",
+        },
+        {
+          text: "phosphorus pentchloride",
+          why: "A prefix loses its a or o only before an element name that begins with o, as in pentoxide. Chloride keeps the full penta-.",
+        },
+        {
+          text: "phosphorus pentachlorine",
+          why: "The second element is named with its stem plus -ide: chlor + -ide = chloride.",
+        },
+      ],
+      explanation:
+        "One phosphorus atom gets no prefix, since mono- is never used on the first element. Five chlorine atoms make penta- + chlor + -ide: pentachloride.",
+    },
+    {
+      id: "name-n2o",
+      type: "multiple-choice",
+      prompt: "What is the name of N2O?",
+      choices: [
+        { text: "dinitrogen monoxide", correct: true },
+        {
+          text: "dinitrogen monooxide",
+          why: "When a prefix ends in o and the element name begins with o, the prefix's o is dropped: monoxide.",
+        },
+        {
+          text: "dinitrogen oxide",
+          why: "The second element always gets a numerical prefix, even mono- for one atom. Only the first element skips mono-.",
+        },
+        {
+          text: "nitrogen monoxide",
+          why: "That name means one nitrogen atom: NO. N2O has two, so the first element needs di-.",
+        },
+      ],
+      explanation:
+        "Two nitrogen atoms make dinitrogen. One oxygen atom makes mono- + ox + -ide, with the o of mono- dropped before oxide: monoxide.",
+    },
+    {
+      id: "formula-cl2o7",
+      type: "multiple-choice",
+      prompt: "What is the formula of dichlorine heptoxide?",
+      choices: [
+        { text: "Cl2O7", correct: true },
+        {
+          text: "ClO7",
+          why: "Di- on chlorine means two chlorine atoms, so chlorine needs a subscript 2.",
+        },
+        {
+          text: "Cl2O6",
+          why: "Hepta- means seven; hexa- is six.",
+        },
+        {
+          text: "Cl7O2",
+          why: "Each prefix belongs to the element it is attached to: di- (2) goes with chlorine, hepta- (7) with oxygen.",
+        },
+      ],
+      explanation:
+        "Di- means two chlorine atoms, and hepta- means seven oxygen atoms (the a of hepta- is dropped before oxide). List the symbols in the order of the name: Cl2O7.",
+    },
+    {
+      id: "atoms-in-sf6",
+      type: "numeric",
+      prompt: "How many atoms in all are in one molecule of sulfur hexafluoride?",
+      answer: 7,
+      explanation:
+        "Sulfur has no prefix, so there is one sulfur atom (mono- is never used on the first element), and hexa- means six fluorine atoms. SF6 has 1 + 6 = 7 atoms.",
+    },
+    {
+      id: "atoms-in-p4o10",
+      type: "numeric",
+      prompt: "How many atoms in all are in one molecule of tetraphosphorus decoxide?",
+      answer: 14,
+      explanation:
+        "Tetra- means four phosphorus atoms, and deca- means ten oxygen atoms (the a of deca- is dropped before oxide). P4O10 has 4 + 10 = 14 atoms.",
+    },
+  ],
+
+  "beginning-chemistry/3.4": [
+    {
+      id: "carbon-12-mass",
+      type: "multiple-choice",
+      prompt: "What is the mass of one carbon-12 atom?",
+      choices: [
+        { text: "Exactly 12 u", correct: true },
+        {
+          text: "12.011 u",
+          why: "That is the atomic mass of the element carbon: a weighted average over its isotopes, not the mass of carbon-12 alone.",
+        },
+        {
+          text: "About 12 g",
+          why: "Grams are far too big for a single atom. That's why the atomic mass unit exists.",
+        },
+        {
+          text: "6 u",
+          why: "That counts only the six protons. The six neutrons count too.",
+        },
+      ],
+      explanation:
+        "The atomic mass unit is defined as one-twelfth of the mass of a carbon-12 atom, so a carbon-12 atom is exactly 12 u by definition.",
+    },
+    {
+      id: "atomic-mass-not-whole",
+      type: "multiple-choice",
+      prompt: "Lithium's atomic mass is 6.941 u. Why isn't it a whole number?",
+      choices: [
+        { text: "It is a weighted average of the masses of lithium's isotopes", correct: true },
+        {
+          text: "Each lithium atom has a mass of 6.941 u",
+          why: "No lithium atom need have that mass, just as no atom in the section's 50%/50% example has a mass of 10.5 u. It is an average.",
+        },
+        {
+          text: "Electrons add the extra 0.941 u",
+          why: "Lithium's three electrons add only about 3 × 0.000549 u ≈ 0.002 u.",
+        },
+      ],
+      explanation:
+        "Most elements are mixtures of isotopes, and an element's atomic mass is the weighted average of their masses, so it usually isn't a whole number.",
+    },
+    {
+      id: "weighted-average-mass",
+      type: "numeric",
+      prompt:
+        "An element has two isotopes: 75% of its atoms have a mass of 35 u, and 25% have a mass of 37 u. What is the element's atomic mass?",
+      answer: 0.75 * 35 + 0.25 * 37,
+      unit: "u",
+      explanation:
+        "Multiply each mass by its fractional occurrence and add: 0.75 × 35 u = 26.25 u, and 0.25 × 37 u = 9.25 u, for a total of 35.5 u. It is closer to 35 than to 37 because more of the atoms have a mass of 35 u.",
+    },
+    {
+      id: "molecular-mass-co2",
+      type: "numeric",
+      prompt: "Using Table 3.4.1, what is the molecular mass of CO2?",
+      answer: 12.011 + 2 * 15.999,
+      unit: "u",
+      explanation:
+        "Add one atomic mass of carbon and two of oxygen: 12.011 u + 2 × 15.999 u = 12.011 u + 31.998 u = 44.009 u.",
+    },
+    {
+      id: "molecular-mass-glucose",
+      type: "numeric",
+      prompt: "Glucose, a sugar, has the formula C6H12O6. Using Table 3.4.1, what is its molecular mass?",
+      answer: 6 * 12.011 + 12 * 1.008 + 6 * 15.999,
+      unit: "u",
+      explanation:
+        "6 C masses = 6 × 12.011 u = 72.066 u; 12 H masses = 12 × 1.008 u = 12.096 u; 6 O masses = 6 × 15.999 u = 95.994 u. The total is 180.156 u.",
+    },
+    {
+      id: "molecular-mass-sf6",
+      type: "numeric",
+      prompt:
+        "The section gives the molecular mass of SF6 as about 146 u. Using Table 3.4.1, calculate it to three decimal places.",
+      answer: 32.065 + 6 * 18.998,
+      unit: "u",
+      tolerance: 0.0002,
+      explanation:
+        "Add one atomic mass of sulfur and six of fluorine: 32.065 u + 6 × 18.998 u = 32.065 u + 113.988 u = 146.053 u.",
+    },
+  ],
+
   "beginning-chemistry/12.6": [
     {
       id: "kw-oh-from-h",
