@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 2.4: Significant Figures
-
 ### Learning Objective
 
 - Apply the concept of significant figures to limit a measurement to the proper number of digits.

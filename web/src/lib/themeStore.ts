@@ -1,6 +1,7 @@
+import type { Theme } from "./types";
+
 /* Light or dark mode. Until the reader picks one, the site follows the
    system setting (and keeps following it as it changes). */
-export type Theme = "light" | "dark";
 type Choice = Theme | "system";
 
 /* Read before first paint by the inline script in index.html; keep in sync. */

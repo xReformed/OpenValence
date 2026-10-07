@@ -1,14 +1,8 @@
-import type { ChatTurn } from "./types";
+import type { ChatMeta, ChatTurn } from "./types";
 
 
 const INDEX_KEY = "chemia.chats";
 const turnsKey = (id: string) => `chemia.chat.${id}`;
-
-export interface ChatMeta {
-  id: string;
-  title: string;
-  updatedAt: number;
-}
 
 /* localStorage throws outright in some contexts (blocked site data, private
    windows, quota) — never let that take the page down. */

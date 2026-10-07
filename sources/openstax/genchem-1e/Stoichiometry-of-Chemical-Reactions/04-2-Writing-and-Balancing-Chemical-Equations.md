@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 4.2: Writing and Balancing Chemical Equations
-
 The preceding chapter introduced the use of element symbols to represent individual atoms. When atoms gain or lose electrons to yield ions, or combine with other atoms to form molecules, their symbols are modified or combined to generate chemical formulas that appropriately represent these species. Extending this symbolism to represent both the identities and the relative quantities of substances undergoing a chemical (or physical) change involves writing and balancing a chemical equation. Consider as an example the reaction between one methane molecule (CH4) and two diatomic oxygen molecules (O2) to produce one carbon dioxide molecule (CO2) and two water molecules (H2O). The chemical equation representing this process is provided in the upper half of Figure 4.2.1, with space-filling molecular models shown in the lower half of the figure.
 
 CH4 + 2O2 → CO2 + 2H2O

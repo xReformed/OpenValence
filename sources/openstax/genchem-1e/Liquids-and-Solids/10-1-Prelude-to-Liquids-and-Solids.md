@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 10.1 Prelude to Liquids and Solids
-
 The great distances between atoms and molecules in a gaseous phase, and the corresponding absence of any significant interactions between them, allows for simple descriptions of many physical properties that are the same for all gases, regardless of their chemical identities. As described in the final module of the chapter on gases, this situation changes at high pressures and low temperatures—conditions that permit the atoms and molecules to interact to a much greater extent.
 
 Figure 10.1.1: Solid carbon dioxide (“dry ice”, left) sublimes vigorously when placed in a liquid (right), cooling the liquid and generating a fog of condensed water vapor above the cylinder. (credit: modification of work by Paul Flowers)

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.2: Stoichiometry
-
 ### Learning Objectives
 
 - Define _stoichiometry_.

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 8.1 Prelude to Covalent Bonding
-
 We have examined the basic ideas of bonding, showing that atoms share electrons to form molecules with stable Lewis structures and that we can predict the shapes of those molecules by valence shell electron pair repulsion (VSEPR) theory. These ideas provide an important starting point for understanding chemical bonding. But these models sometimes fall short in their abilities to predict the behavior of real substances. How can we reconcile the geometries of s, p, and d atomic orbitals with molecular shapes that show angles like 120° and 109.5°? Furthermore, we know that electrons and magnetic behavior are related through electromagnetic fields. Both N2 and O2 have fairly similar Lewis structures that contain lone pairs of electrons.
 
 [Lewis structure diagram: N2 and O2. Two Lewis diagrams are shown. The diagram on the left shows two nitrogen atoms, represented by the letter N connected by three lines and with a lone pair of electrons on each end of the structure. The diagram on the right shows two oxygen atoms, depicted by the letter O, connected by two lines. Two pairs of electrons surround each oxygen to the top and ends of the structure.]

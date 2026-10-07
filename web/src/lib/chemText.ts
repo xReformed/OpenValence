@@ -1,3 +1,5 @@
+import type { ChemSegment } from "./types";
+
 /**
  * Splits chemistry text into plain, subscript, and superscript runs.
  * Pure string work with no React, so it can be tested on its own;
@@ -22,11 +24,6 @@
  * corpus does. A single element plus digits plus a sign is read as a charge,
  * so Fe3+ → Fe³⁺ (and, rarely wrong, H2+ → H²⁺).
  */
-
-export interface Segment {
-  kind: "text" | "sub" | "sup";
-  text: string;
-}
 
 const ELEMENTS = new Set(
   (
@@ -70,13 +67,13 @@ function minus(text: string): string {
   return /^[+\-−]?[\d.]*[+\-−]?$/.test(text) ? text.replace(/-/g, MINUS) : text;
 }
 
-function formatFormula(rawBody: string, rawCharge: string | undefined): Segment[] | null {
+function formatFormula(rawBody: string, rawCharge: string | undefined): ChemSegment[] | null {
   const state = rawBody.match(STATE_SYMBOL)?.[0] ?? "";
   const body = state ? rawBody.slice(0, -state.length) : rawBody;
   const charge = rawCharge ? minus(rawCharge) : "";
   if (!body) return null;
 
-  const out: Segment[] = [];
+  const out: ChemSegment[] = [];
   let depth = 0;
   let prev: "start" | "atom" | "open" = "start";
   let hasDigit = false;
@@ -147,7 +144,7 @@ function formatFormula(rawBody: string, rawCharge: string | undefined): Segment[
  * "(H2O, CO2)" ends in "CO2)". Try the body as-is, then without an unmatched
  * bracket at either end, keeping the stripped bracket as plain text.
  */
-function formulaInProse(body: string, charge: string | undefined): Segment[] | null {
+function formulaInProse(body: string, charge: string | undefined): ChemSegment[] | null {
   const lead = /^[([]/.test(body) ? body[0] : "";
   const trail = /[)\]]$/.test(body) ? body[body.length - 1] : "";
   const attempts: [string, string, string | undefined, string][] = [
@@ -168,21 +165,21 @@ function formulaInProse(body: string, charge: string | undefined): Segment[] | n
   return null;
 }
 
-function push(segments: Segment[], kind: Segment["kind"], text: string) {
+function push(segments: ChemSegment[], kind: ChemSegment["kind"], text: string) {
   if (!text) return;
   const last = segments[segments.length - 1];
   if (last && last.kind === kind) last.text += text;
   else segments.push({ kind, text });
 }
 
-export function parseChemText(text: string): Segment[] {
-  const segments: Segment[] = [];
+export function parseChemText(text: string): ChemSegment[] {
+  const segments: ChemSegment[] = [];
   let cursor = 0;
 
   for (const match of text.matchAll(PATTERN)) {
     const start = match.index;
     const g = match.groups!;
-    let parts: Segment[] | null = null;
+    let parts: ChemSegment[] | null = null;
 
     if (g.url !== undefined) {
       parts = [{ kind: "text", text: g.url }];

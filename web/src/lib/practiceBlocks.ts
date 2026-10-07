@@ -1,3 +1,5 @@
+import type { SectionSegment } from "./types";
+
 /* Splits a section's markdown into plain text and practice blocks, so the
    book's Examples and Exercises can be shown as "answer first, then reveal".
    Both textbooks write them the same way:
@@ -8,18 +10,6 @@
      <the book's answer or worked solution>
 
    A block without one of those markers is left as ordinary text. */
-
-export type Segment =
-  | { kind: "text"; markdown: string }
-  | {
-      kind: "practice";
-      type: "Example" | "Exercise";
-      number: string;
-      title?: string;
-      prompt: string;
-      reveal: string;
-      revealLabel: string;
-    };
 
 const START = /^(#{3,4}) (Example|Exercise)\b\s*(.*)$/;
 const MARKER = /^\*\*_?(Solutions?|Answers?)_?( [A-Za-z0-9]+)?\*\*\s*$/;
@@ -69,9 +59,9 @@ function splitAnswer(paragraphs: string[]): [answer: string[], rest: string[]] {
   return [paragraphs.slice(0, n), paragraphs.slice(n)];
 }
 
-export function splitPractice(markdown: string): Segment[] {
+export function splitPractice(markdown: string): SectionSegment[] {
   const lines = markdown.split(/\r?\n/);
-  const segments: Segment[] = [];
+  const segments: SectionSegment[] = [];
   let buffer: string[] = [];
   const flush = () => {
     if (buffer.join("\n").trim()) segments.push({ kind: "text", markdown: buffer.join("\n") });

@@ -23,7 +23,6 @@ export default function TopicPage() {
   const others = TOPICS.filter((other) => other.slug !== topic.slug);
 
   return (
-    /* Same scroll ownership and font override as the landing page. */
     <div className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
       <TopNavBar />
 

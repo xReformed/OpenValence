@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 3.2: Atomic Theory
-
 ### Learning Objectives
 
 - State the modern atomic theory.

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 2.1: Prelude to Atoms
-
 Your overall health and susceptibility to disease depends upon the complex interaction between your genetic makeup and environmental exposure, with the outcome difficult to predict. Early detection of biomarkers, substances that indicate an organism’s disease or physiological state, could allow diagnosis and treatment before a condition becomes serious or irreversible. Recent studies have shown that your exhaled breath can contain molecules that may be biomarkers for recent exposure to environmental contaminants or for pathological conditions ranging from asthma to lung cancer.
 
 Figure 2.1.1: Analysis of molecules in an exhaled breath can provide valuable information, leading to early diagnosis of diseases or detection of environmental exposure to harmful substances. (credit: modification of work by Paul Flowers)

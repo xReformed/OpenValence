@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 2.6: Other Units - Temperature and Density
-
 ### Learning Objective
 
 - Learn about the various temperature scales that are commonly used in chemistry.

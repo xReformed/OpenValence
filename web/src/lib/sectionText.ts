@@ -6,7 +6,6 @@ const SECTIONS = import.meta.glob<string>("../../../sources/openstax/*/*/*.md", 
   import: "default",
 });
 
-/** `file` is a section's path under sources/openstax, as in learningPaths.generated.ts. */
 export async function loadSectionText(file: string): Promise<string | undefined> {
   const load = SECTIONS[`../../../sources/openstax/${file}`];
   if (!load) return undefined;

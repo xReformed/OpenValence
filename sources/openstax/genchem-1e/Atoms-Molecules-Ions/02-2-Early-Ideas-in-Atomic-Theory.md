@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 2.2: Early Ideas in Atomic Theory
-
 ​​​​The language used in chemistry is seen and heard in many disciplines, ranging from medicine to engineering to forensics to art. The language of chemistry includes its own vocabulary as well as its own form of shorthand. Chemical symbols are used to represent atoms and elements. Chemical formulas depict molecules as well as the composition of compounds. Chemical equations provide information about the quality and quantity of the changes associated with chemical reactions.
 
 This chapter will lay the foundation for our study of the language of chemistry. The concepts of this foundation include the atomic theory, the composition and mass of an atom, the variability of the composition of isotopes, ion formation, chemical bonds in ionic and covalent compounds, the types of chemical reactions, and the naming of compounds. We will also introduce one of the most powerful tools for organizing chemical knowledge: the periodic table.

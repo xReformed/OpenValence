@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.2: The Chemical Equation
-
 ### Learning Objectives
 
 - Define _chemical equation_.

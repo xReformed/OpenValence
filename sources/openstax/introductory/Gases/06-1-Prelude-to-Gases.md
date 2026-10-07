@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.1: Prelude to Gases
-
 Perhaps one of the most spectacular chemical reactions involving a gas occurred on May 6, 1937, when the German airship _Hindenburg_ exploded on approach to the Naval Air Station in Lakehurst, New Jersey. The actual cause of the explosion is still unknown, but the entire volume of hydrogen gas used to float the airship, about 200,000 m^3, burned in less than one minute. Thirty-six people, including one on the ground, were killed. Hydrogen is the lightest known gas. Any balloon filled with hydrogen gas will float in air if its mass is not too great. This makes hydrogen an obvious choice for flying machines based on balloons—airships, dirigibles, and blimps.
 
 [Image: German airship Hindenburg (left) and Hindenburg crashing and exploding into a tower.]

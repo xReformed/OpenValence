@@ -20,7 +20,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Eval question set | **152 questions** written, all for *Chemistry* 1e — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
-| Practice | **Basic** — the books' Examples and Exercises (with their solutions and answers) are practice cards on the section pages: type an answer, then compare with the book's. No grading or mastery tracking yet |
+| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions ([practiceQuestions.ts](web/src/lib/practiceQuestions.ts), a few sections so far) get one try each, a section score, and gate the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |
@@ -113,10 +113,12 @@ What's there today:
 
 - **Landing page** — hero with an animated demo of a grounded answer, then Features, Topics, How it works, and Sources sections
 - **Topic pages** (`/topics/:slug`) — what each subject area covers, with example questions
-- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Only introductory chemistry has content so far; the mastery bars stay empty until graded practice exists
+- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Only introductory chemistry has content so far. A branch's mastery bar is the share of its learning path's sections the reader has finished, kept in the browser
 - **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, *Beginning Chemistry* first, then *Chemistry* 1e. Every transcribed section links to its section page
 - **Section pages** (`/roadmap/:slug/:book/:section`) — a corpus section rendered in the app:
   - Each Example and Exercise is a **practice card**: type an answer, then compare it with the book's solution, or ask the chat to explain it.
+  - Sections with questions in [web/src/lib/practiceQuestions.ts](web/src/lib/practiceQuestions.ts) end with **Check yourself**: OpenValence's own numeric and multiple-choice questions. Each gets one try, then locks and shows the reasoning (and, for a wrong choice, why it's wrong); the section totals a score ("You scored 7 out of 9"). The **Next** section link stays locked until every question is answered.
+  - **Books are read in order.** A section counts as finished when you continue past it with Next, and the learning path locks every section and chapter after the first unfinished one, with a "Continue with …" button to pick up where you left off ([progress.ts](web/src/lib/progress.ts), stored as `chemia.progress`). Each book is its own sequence. Answers are kept in `localStorage` (`chemia.practice`), like chat history.
   - `[Note: …]` corrections show as highlighted asides.
   - Figures show their captions; eight figures in chapter 1 of *Beginning Chemistry* have illustrations made for OpenValence.
   - A side panel credits the source and its license, links to the original page, and starts a chat about the section.
@@ -264,7 +266,7 @@ Two tracks: the **platform** (what the app can do) and the **subjects** (what it
 9. **Structure rendering** — PubChem PNG endpoint first, then SmilesDrawer for in-app 2D
 
 Later:
-- **Graded practice:** grade answers on the section pages' practice cards and record mastery, which fills the roadmap's mastery bars. Question types and grading are planned in [docs/practice-question-types.md](docs/practice-question-types.md).
+- **Graded practice:** grade answers on the section pages' practice cards, and let the scores, not just finished sections, drive mastery. Question types and grading are planned in [docs/practice-question-types.md](docs/practice-question-types.md).
 - **Scope filtering** by subject, book, or chapter.
 - **A 3D structure viewer.**
 

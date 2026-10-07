@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 1.2: Basic Definitions
-
 ### Learning Objective
 
 - Learn the basic terms used to describe matter

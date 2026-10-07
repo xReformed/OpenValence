@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 11.1 Prelude to Solutions and Colloids
-
 Coral reefs are home to about 25% of all marine species. They are being threatened by climate change, oceanic acidification, and water pollution, all of which change the composition of the solution we know as seawater. Dissolved oxygen in seawater is critical for sea creatures, but as the oceans warm, oxygen becomes less soluble. As the concentration of carbon dioxide in the atmosphere increases, the concentration of carbon dioxide in the oceans increases, contributing to oceanic acidification. Coral reefs are particularly sensitive to the acidification of the ocean, since the exoskeletons of the coral polyps are soluble in acidic solutions. Humans contribute to the changing of seawater composition by allowing agricultural runoff and other forms of pollution to affect our oceans.
 
 Figure 11.1.1: Coral reefs, such as this one at the Palmyra Atoll National Wildlife Refuge, are vital to the ecosystem of earth's oceans but are threatened by climate change and dissolved pollution. Marine life depends on the specific chemical composition of the complex mixture we know as seawater. (credit: modification of work by “USFWS – Pacific Region”/Wikimedia Commons)

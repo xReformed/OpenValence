@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.5: Composition, Decomposition, and Combustion Reactions
-
 ### Learning Objectives
 
 - Recognize composition, decomposition, and combustion reactions.

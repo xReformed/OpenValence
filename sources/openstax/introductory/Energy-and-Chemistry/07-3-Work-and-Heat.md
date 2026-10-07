@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.3: Work and Heat
-
 ### Learning Objectives
 
 - Define a type of work in terms of pressure and volume.

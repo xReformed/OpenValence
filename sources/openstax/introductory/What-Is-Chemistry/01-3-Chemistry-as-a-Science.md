@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 1.3: Chemistry as a Science
-
 ### Learning Objective
 
 - Learn what science is and how it works.

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 4.4: Reaction Stoichiometry
-
 A balanced chemical equation provides a great deal of information in a very succinct format. Chemical formulas provide the identities of the reactants and products involved in the chemical change, allowing classification of the reaction. Coefficients provide the relative numbers of these chemical species, allowing a quantitative assessment of the relationships between the amounts of substances consumed and produced by the reaction. These quantitative relationships are known as the reaction’s stoichiometry, a term derived from the Greek words *stoicheion* (meaning “element”) and *metron* (meaning “measure”). In this module, the use of balanced chemical equations for various stoichiometric applications is explored.
 
 The general approach to using stoichiometric relationships is similar in concept to the way people go about many common activities. Cooking, for example, offers an appropriate comparison. Suppose a recipe for making eight pancakes calls for 1 cup pancake mix, 3/4 cup milk, and one egg. The “equation” representing the preparation of pancakes per this recipe is

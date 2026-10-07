@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.3: The Mole
-
 ### Learning Objectives
 
 - Describe the unit _mole_.

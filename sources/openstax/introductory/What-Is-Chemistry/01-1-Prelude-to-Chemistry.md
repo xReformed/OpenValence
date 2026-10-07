@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 1.1: Prelude to Chemistry
-
 If you are reading these words, you are likely starting a chemistry course. Get ready for a fantastic journey through a world of wonder, delight, and knowledge. One of the themes of this book is "chemistry is everywhere," and indeed it is; you would not be alive if it were not for chemistry, because your body is a big chemical machine.
 
 Figure 1.1.1: © Thinkstock

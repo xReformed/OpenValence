@@ -5,8 +5,8 @@ import {
   getChats,
   nextChatId,
   subscribeToChats,
-  type ChatMeta,
 } from "../lib/chatStore";
+import type { ChatMeta } from "../lib/types";
 import { LockIcon, PlusIcon, TrashIcon, ValenceMark } from "./LandingIcons";
 import ThemeToggle from "./ThemeToggle";
 
@@ -101,7 +101,6 @@ export default function ChatSidebar({
                       >
                         {chat.title}
                       </Link>
-                      {/* Visible on hover or keyboard focus, and always on touch screens. */}
                       <button
                         type="button"
                         aria-label={`Delete chat: ${chat.title}`}

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.4: Gas Laws
-
 ### Learning Objectives
 
 - Learn what is meant by the term _gas laws_.

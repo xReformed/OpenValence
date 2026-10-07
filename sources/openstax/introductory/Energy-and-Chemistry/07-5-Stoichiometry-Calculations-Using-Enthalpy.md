@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.5: Stoichiometry Calculations Using Enthalpy
-
 ### Learning Objective
 
 - Perform stoichiometry calculations using energy changes from thermochemical equations.

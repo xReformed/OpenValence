@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 3.5: Ions and Ionic Compounds
-
 ### Learning Objectives
 
 - Know how ions form.

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.3: Types of Chemical Reactions - Single and Double Replacement Reactions
-
 ### Learning Objectives
 
 - Recognize chemical reactions as single-replacement reactions and double-replacement reactions.

@@ -1,6 +1,6 @@
 # Practice question types
 
-What kinds of practice questions OpenValence should ask, how each one is graded, and the order to build them in. This is the plan for the "adaptive practice mode" on the [roadmap](../README.md#roadmap); none of it is built yet.
+What kinds of practice questions OpenValence should ask, how each one is graded, and the order to build them in. This is the plan for the "adaptive practice mode" on the [roadmap](../README.md#roadmap). Built so far: numeric and multiple-choice questions, graded in the browser with one try each, a per-section score, and the next section locked until every question is answered (see [Where the questions come from](#where-the-questions-come-from)). Each attempt is saved in the browser as the question ID, correct or incorrect, and the answer given. Mastery currently counts finished sections (a section is finished when the reader continues past it with Next, or Finish at the end of a book); unit conversion, significant-figure checks, and turning scores into mastery levels are not built yet.
 
 ## Principles
 
@@ -81,7 +81,9 @@ Open-ended explanations: "Why does adding a catalyst not change the equilibrium?
 
 ## Where the questions come from
 
-- **Worked Examples and in-chapter Exercises in the corpus.** Both textbooks include them with answers, already tied to a section (for example, Exercise 10.3.1 in *Beginning Chemistry*: 108 g of benzene freezing releases 13.8 kJ). They are the seed bank for numeric, step-by-step, and short-answer questions.
+- **OpenValence's own questions, in one file:** [web/src/lib/practiceQuestions.ts](../web/src/lib/practiceQuestions.ts), keyed by section (`"beginning-chemistry/12.6"`). These are the graded practice set: written for the app rather than taken from the book, so they can be in gradable formats, cover sections that have no exercises, and carry misconception feedback. Section pages show them after the text, under "Check yourself", and grade them on the spot. Numeric and multiple-choice questions work today; the question types in [web/src/lib/types.ts](../web/src/lib/types.ts) document each field. TypeScript rather than JSON, so the build checks every question's shape and numeric answers can be written as the calculation itself. If the file grows past a few thousand lines, split it per book behind the same `practiceFor()` lookup.
+- **The book's Examples and Exercises stay in the section text**, word for word, as "compare with the book's solution" cards. Don't paraphrase them into the question file: a book exercise with only its numbers changed is still an adaptation of the book, under its license.
+- **Worked Examples and in-chapter Exercises in the corpus** are also a source of ideas. Both textbooks include them with answers, already tied to a section (for example, Exercise 10.3.1 in *Beginning Chemistry*: 108 g of benzene freezing releases 13.8 kJ), which helps when writing numeric, step-by-step, and short-answer questions.
 - **Use the corrected answer, never the misprint.** Where a section carries a `[Note: …]`, the printed answer may be wrong (*Chemistry* 1e §14.4 prints pH 11.16 where the problem gives 11.11). Every seeded question must be checked against its note.
 - **Recompute every number** with the calculator tools rather than trusting a transcription.
 - End-of-chapter exercise pages were not transcribed, so they are not available as a source.

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.6: Yields
-
 ### Learning Objective
 
 - Define and determine theoretical yields, actual yields, and percent yields.

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.4: Enthalpy and Chemical Reactions
-
 ### Learning Objectives
 
 - Define _enthalpy_.

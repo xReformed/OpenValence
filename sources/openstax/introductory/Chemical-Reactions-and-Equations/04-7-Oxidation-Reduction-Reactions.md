@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.7: Oxidation-Reduction Reactions
-
 ### Learning Objectives
 
 - Define _oxidation_ and _reduction_.

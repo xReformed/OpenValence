@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.7: Gas Mixtures
-
 ### Learning Objective
 
 - Learn Dalton's law of partial pressures.

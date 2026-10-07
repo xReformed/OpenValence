@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 3.3: Molecules and Chemical Nomenclature
-
 ### Learning Objectives
 
 - Define _molecule_.

@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.4: The Mole in Chemical Reactions
-
 ### Learning Objectives
 
 - Balance a chemical equation in terms of moles.

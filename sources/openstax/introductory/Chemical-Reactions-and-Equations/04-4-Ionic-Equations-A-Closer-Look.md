@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.4: Ionic Equations - A Closer Look
-
 ### Learning Objectives
 
 - Write ionic equations for chemical reactions between ionic compounds.

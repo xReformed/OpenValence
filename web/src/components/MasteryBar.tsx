@@ -1,4 +1,4 @@
-import { masteryLevel } from "../lib/masteryStore";
+import { masteryLevel } from "../lib/mastery";
 
 /* Branches without a textbook have nothing to practise yet, so their bar is
    an empty track rather than a misleading 0%. */
@@ -11,7 +11,9 @@ export default function MasteryBar({
   available: boolean;
   className?: string;
 }) {
-  const percent = Math.round(score * 100);
+  /* Never 0% once something is done, nor 100% before everything is. */
+  const percent =
+    score > 0 && score < 1 ? Math.min(99, Math.max(1, Math.round(score * 100))) : Math.round(score * 100);
   return (
     <span className={`relative block ${className}`}>
       <span className="flex items-baseline justify-between text-xs">

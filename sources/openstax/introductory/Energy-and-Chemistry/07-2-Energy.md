@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.2: Energy
-
 ### Learning Objectives
 
 - Define _energy_.

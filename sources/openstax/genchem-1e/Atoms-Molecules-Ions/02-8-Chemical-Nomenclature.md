@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 2.8: Chemical Nomenclature
-
 Nomenclature, a collection of rules for naming things, is important in science and in many other situations. This module describes an approach that is used to name simple ionic and molecular compounds, such as NaCl, CaCO3, and N2O4. The simplest of these are binary compounds, those containing only two elements, but we will also consider how to name ionic compounds containing polyatomic ions, and one specific, very important class of compounds known as acids (subsequent chapters in this text will focus on these compounds in great detail). We will limit our attention here to inorganic compounds, compounds that are composed principally of elements other than carbon, and will follow the nomenclature guidelines proposed by IUPAC. The rules for organic compounds, in which carbon is the principle element, will be treated in a later chapter on organic chemistry.
 
 ## 2.8.1: Ionic Compounds

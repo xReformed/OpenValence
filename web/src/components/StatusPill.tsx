@@ -1,4 +1,5 @@
-import { STATUS_LABEL, type BranchStatus } from "../lib/roadmap";
+import { STATUS_LABEL } from "../lib/roadmap";
+import type { BranchStatus } from "../lib/types";
 
 const STATUS_STYLE: Record<BranchStatus, string> = {
   "in-progress": "bg-accent text-on-accent",

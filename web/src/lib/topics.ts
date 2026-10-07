@@ -1,13 +1,4 @@
-export interface Topic {
-  slug: string;
-  title: string;
-  soon?: boolean;
-  summary: string;
-  questions: string[];
-  coveredHeading: string;
-  covered: string[];
-  coming?: string[];
-}
+import type { Topic } from "./types";
 
 const CHAPTERS = [
   "1. Essential Ideas of Chemistry",

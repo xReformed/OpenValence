@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.7: Limiting Reagents
-
 ### Learning Objectives
 
 - Identify a limiting reagent from a set of reactants.

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 4.6: Quantitative Chemical Analysis
-
 In the 18th century, the strength (actually the concentration) of vinegar samples was determined by noting the amount of potassium carbonate, K2CO3, which had to be added, a little at a time, before bubbling ceased. The greater the weight of potassium carbonate added to reach the point where the bubbling ended, the more concentrated the vinegar.
 
 We now know that the effervescence that occurred during this process was due to reaction with acetic acid, CH3CO2H, the compound primarily responsible for the odor and taste of vinegar. Acetic acid reacts with potassium carbonate according to the following equation:

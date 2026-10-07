@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.2: Kinetic Theory of Gases
-
 ## Learning Objectives
 
 - State the major concepts behind the kinetic theory of gases.

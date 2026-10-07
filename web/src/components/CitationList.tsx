@@ -48,7 +48,6 @@ export default function CitationList({ citations }: { citations: Citation[] }) {
           id={panelId}
           className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4"
         >
-          {/* The retrieved passage, verbatim: never paraphrased. */}
           <blockquote className="border-accent border-l-2 pl-3 text-sm leading-relaxed text-neutral-700">
             <ChemText text={open.snippet} />
           </blockquote>

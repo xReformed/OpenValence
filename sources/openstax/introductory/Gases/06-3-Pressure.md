@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.3: Pressure
-
 ### Learning Objectives
 
 - Define _pressure_.

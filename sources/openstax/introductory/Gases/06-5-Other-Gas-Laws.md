@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.5: Other Gas Laws
-
 ### Learning Objectives
 
 - Review other simple gas laws.

@@ -1,9 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { askQuestion } from "../lib/api";
 import { loadTurns, saveTurns } from "../lib/chatStore";
-import type { ChatTurn } from "../lib/types";
-
-export type ChatStatus = "idle" | "sending" | "error";
+import type { ChatStatus, ChatTurn } from "../lib/types";
 
 export function useChat(chatId: string) {
   const [turns, setTurns] = useState<ChatTurn[]>(() => loadTurns(chatId));

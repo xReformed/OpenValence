@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 5.5: Mole-Mass and Mass-Mass Calculations
-
 ### Learning Objectives
 
 - From a given number of moles of a substance, calculate the mass of another substance involved using the balanced chemical equation.

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 12.1 Prelude to Kinetics
-
 The lizard in the photograph is not simply enjoying the sunshine or working on its tan. The heat from the sun's rays is critical to the lizard's survival. A warm lizard can move faster than a cold one because the chemical reactions that allow its muscles to move occur more rapidly at higher temperatures. In the absence of warmth, the lizard is an easy meal for predators.
 
 Figure 12.1.1: An agama lizard basks in the sun. As its body warms, the chemical reactions of its metabolism speed up.

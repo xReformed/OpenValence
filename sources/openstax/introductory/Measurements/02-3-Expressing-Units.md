@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 2.3: Expressing Units
-
 ### Learning Objective
 
 - Learn the units that go with various quantities

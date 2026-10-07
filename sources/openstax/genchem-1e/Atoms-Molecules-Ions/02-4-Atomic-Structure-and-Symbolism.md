@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 2.4: Atomic Structure and Symbolism
-
 The development of modern atomic theory revealed much about the inner structure of atoms. It was learned that an atom contains a very small nucleus composed of positively charged protons and uncharged neutrons, surrounded by a much larger volume of space containing negatively charged electrons. The nucleus contains the majority of an atom’s mass because protons and neutrons are much heavier than electrons, whereas electrons occupy almost all of an atom’s volume. The diameter of an atom is on the order of 10^10 m, whereas the diameter of the nucleus is roughly 10^15 m—about 100,000 times smaller. For a perspective about their relative sizes, consider this: If the nucleus were the size of a blueberry, the atom would be about the size of a football stadium (Figure 2.4.1).
 
 Figure 2.4.1: If an atom could be expanded to the size of a football stadium, the nucleus would be the size of a single blueberry. (credit middle: modification of work by “babyknight”/Wikimedia Commons; credit right: modification of work by Paxson Woelber).

@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 4.5: Reaction Yields
-
 Consider another food analogy, making grilled cheese sandwiches (Figure 4.5.1):
 
 1 slice of cheese + 2 slices of bread → 1 sandwich  (4.5.1)

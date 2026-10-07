@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.1: Introduction
-
 It takes energy to launch a spaceship into space. If it takes 1 energy unit to warm 0.25 g of water by 1°C, then it takes over 15,100 energy units to put that 0.25 g of water into earth orbit. The most powerful engines designed to lift rockets into space were part of the Saturn V rocket, that was built by the National Aeronautics and Space Administration (NASA). The rocket had three stages, with the first stage having the capability to launch about 3.5 million kg of mass. About 2.3 million kg was the actual fuel for the first stage; rockets in space have the unpleasant task of having to take their own chemicals with them to provide thrust.
 
 Figure 7.1.1: Saturn V SA-513 lifts off to boost the Skylab Orbital Workshop into Earth orbit. It takes a lot of energy to launch a rocket into space. The Saturn V rocket used five of the most powerful engines ever built to take its initial step into orbit. (Public Domain; NASA)

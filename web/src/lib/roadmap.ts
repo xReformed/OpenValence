@@ -10,32 +10,7 @@ import introductoryIcon from "../assets/roadmap/introductory.webp";
 import organicIcon from "../assets/roadmap/organic.webp";
 import physicalIcon from "../assets/roadmap/physical.webp";
 
-import type { BookKey } from "./learningPaths.generated";
-
-export type BranchStatus = "in-progress" | "planned" | "later";
-
-/** One textbook in a branch's learning path, studied in this order. */
-export interface PathStage {
-  book: BookKey;
-  label: string;
-  title: string;
-  note: string;
-}
-
-export interface Branch {
-  slug: string;
-  title: string;
-  icon: string;
-  status: BranchStatus;
-  summary: string;
-  sources: { title: string; license: string; progress: string; complete: boolean }[];
-  /** What the current books already teach at an introductory level, if anything. */
-  alreadyCovered?: string;
-  scope: string[];
-  steps: { label: string; done?: boolean }[];
-  /** Chapters come from learningPaths.generated.ts; absent until a book exists. */
-  path?: PathStage[];
-}
+import type { Branch, BranchStatus } from "./types";
 
 export const STATUS_LABEL: Record<BranchStatus, string> = {
   "in-progress": "In progress",

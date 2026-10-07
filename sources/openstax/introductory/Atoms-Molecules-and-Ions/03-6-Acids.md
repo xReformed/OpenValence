@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 3.6: Acids
-
 ### Learning Objectives
 
 - Define _acid_.

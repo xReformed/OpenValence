@@ -7,8 +7,6 @@ author: "OpenStax"
 license: "CC BY 4.0"
 ---
 
-## 2.7: Molecular and Ionic Compounds
-
 In ordinary chemical reactions, the nucleus of each atom (and thus the identity of the element) remains unchanged. Electrons, however, can be added to atoms by transfer from other atoms, lost by transfer to other atoms, or shared with other atoms. The transfer and sharing of electrons among atoms govern the chemistry of the elements. During the formation of some compounds, atoms gain or lose electrons, and form electrically charged particles called ions (Figure 2.7.1).
 
 Figure 2.7.1: (a) A sodium atom (Na) has equal numbers of protons and electrons (11) and is uncharged. (b) A sodium cation (Na+) has lost an electron, so it has one more proton (11) than electrons (10), giving it an overall positive charge, signified by a superscripted plus sign.

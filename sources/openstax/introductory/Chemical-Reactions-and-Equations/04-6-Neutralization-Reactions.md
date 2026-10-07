@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 4.6: Neutralization Reactions
-
 ### Learning Objectives
 
 - Identify an acid and a base.

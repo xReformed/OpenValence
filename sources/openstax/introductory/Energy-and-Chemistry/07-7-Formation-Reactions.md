@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.7: Formation Reactions
-
 ### Learning Objectives
 
 - Define a _formation reaction_ and be able to recognize one.

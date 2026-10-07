@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 2.5: Converting Units
-
 ### Learning Objective
 
 - Convert from one unit to another unit of the same type.

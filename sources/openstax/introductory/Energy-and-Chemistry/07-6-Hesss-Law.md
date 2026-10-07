@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 7.6: Hess's Law
-
 ### Learning Objective
 
 - Learn how to combine chemical equations and their enthalpy changes.

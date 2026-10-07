@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 6.6: The Ideal Gas Law and Some Applications
-
 ### Learning Objectives
 
 - Learn the ideal gas law.

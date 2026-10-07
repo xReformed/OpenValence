@@ -7,8 +7,6 @@ author: "Anonymous"
 license: "CC BY-NC-SA 3.0"
 ---
 
-## 3.4: Masses of Atoms and Molecules
-
 ### Learning Objective
 
 - Express the masses of atoms and molecules.

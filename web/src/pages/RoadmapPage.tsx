@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useSyncExternalStore } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Eyebrow from "../components/Eyebrow";
 import MasteryBar from "../components/MasteryBar";
@@ -8,7 +8,8 @@ import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
 import { ArrowRightIcon, BookIcon, CheckIcon } from "../components/LandingIcons";
 import { prefersReducedMotion } from "../hooks/useReveal";
-import { loadMastery } from "../lib/masteryStore";
+import { branchMastery } from "../lib/mastery";
+import { getFinished, subscribeToProgress } from "../lib/progress";
 import { BRANCHES, findBranch } from "../lib/roadmap";
 
 function SectionLabel({ children }: { children: string }) {
@@ -22,7 +23,7 @@ export default function RoadmapPage() {
   const [params, setParams] = useSearchParams();
   const branch = findBranch(params.get("branch"));
   const panelRef = useRef<HTMLElement>(null);
-  const [mastery] = useState(loadMastery);
+  const finished = useSyncExternalStore(subscribeToProgress, getFinished);
 
   function select(slug: string) {
     setParams({ branch: slug }, { replace: true, preventScrollReset: true });
@@ -34,7 +35,6 @@ export default function RoadmapPage() {
   }
 
   return (
-    /* Same scroll ownership and font override as the landing page. */
     <div className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
       <TopNavBar />
 
@@ -51,7 +51,8 @@ export default function RoadmapPage() {
         </Reveal>
 
         <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {BRANCHES.map(({ slug, title, icon, status }, i) => {
+          {BRANCHES.map((card, i) => {
+            const { slug, title, icon, status } = card;
             const selected = slug === branch.slug;
             return (
               <li key={slug}>
@@ -92,7 +93,7 @@ export default function RoadmapPage() {
                       </span>
                       <MasteryBar
                         className="mt-5"
-                        score={mastery[slug] ?? 0}
+                        score={branchMastery(card, finished)}
                         available={status === "in-progress"}
                       />
                     </span>
