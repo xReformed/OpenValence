@@ -61,6 +61,62 @@
   --color-red-700: #fca5a5;
 }
 
+/* The roadmap cards' shine: a green arc that circles the card's edge while
+   it's hovered or focused. --shine-angle is registered so the conic gradient
+   can animate. */
+@property --shine-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes shine-spin {
+  to {
+    --shine-angle: 360deg;
+  }
+}
+
+@layer components {
+  .card-shine::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    padding: 1px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from var(--shine-angle),
+      transparent 0% 65%,
+      color-mix(in oklab, var(--color-accent) 35%, transparent) 88%,
+      var(--color-accent) 99%,
+      transparent 100%
+    );
+    /* Only the 1px ring between the padding box and the content box shows. */
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    /* Paused rather than removed when idle, so it fades out where it is
+       instead of jumping back to the start. */
+    opacity: 0;
+    transition: opacity 300ms;
+    animation: shine-spin 6s linear infinite paused;
+    pointer-events: none;
+  }
+
+  .card-shine:hover::before,
+  .card-shine:focus-visible::before {
+    opacity: 1;
+    animation-play-state: running;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-shine::before {
+      display: none;
+    }
+  }
+}
+
 @utility bg-grid {
   background-image:
     linear-gradient(to right, var(--color-neutral-100) 1px, transparent 1px),

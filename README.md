@@ -270,6 +270,73 @@ Later:
 - **Scope filtering** by subject, book, or chapter.
 - **A 3D structure viewer.**
 
+### Roadmap page restructure (future)
+
+Today `/roadmap` shows one card per branch of chemistry. The planned layout splits it into two kinds of card:
+
+- **One "LibreTexts books" card** for the textbook learning paths. Both transcribed books come from LibreTexts (*Beginning Chemistry* and *Chemistry* 1e), so they sit together under one card, read chapter by chapter as they are now.
+- **One card per concept**, each a levelled path through a single skill across both books:
+  - **Stoichiometry**, following the [stoichiometry roadmap](#stoichiometry-roadmap-future) below
+  - **Chemical balancing**, following the [equation balancing roadmap](#equation-balancing-roadmap-future) below
+  - **Nomenclature**
+  - more concepts later
+
+A concept card's levels link to the textbook sections that teach them; for example, limiting reagents to *Beginning Chemistry* 5.7. Each card has its own mastery bar, so a student can work on one skill without reading the books in order.
+
+### Stoichiometry roadmap (future)
+
+A levelled path through stoichiometry, from units to multi-concept problems, grouped into stages. It covers everything a full general chemistry course teaches; levels marked *advanced* are usually taught later and work well as bonus levels. Each level's example is a worked problem the calculator tools (platform item 6) should be able to check.
+
+| Stage | Level | Skill | Example |
+| --- | --- | --- | --- |
+| Foundations | 1 | Units, dimensional analysis, significant figures | 250 mL = 0.250 L; report answers to correct sig figs |
+| | 2 | Molar mass | Ca(NO₃)₂ = 164.10 g/mol |
+| | 3 | Grams ↔ moles ↔ particles | 36.04 g H₂O = 2.000 mol = 1.204 × 10²⁴ molecules |
+| Formulas | 4 | Percent composition | % H in H₂O = 11.19% |
+| | 5 | Empirical and molecular formulas | 40.0% C, 6.7% H, 53.3% O → CH₂O; molar mass 180 → C₆H₁₂O₆ |
+| | 6 | Hydrate formulas | 2.50 g CuSO₄·xH₂O heated leaves 1.60 g → x = 5 |
+| | 7 | Combustion analysis *(advanced)* | 1.000 g sample gives 3.138 g CO₂ and 1.285 g H₂O → CH₂ |
+| Reaction stoichiometry | 8 | Mole ratios | N₂ + 3H₂ → 2NH₃: 2.0 mol N₂ gives 4.0 mol NH₃ |
+| | 9 | Mass to mass | 16.04 g CH₄ burned gives 44.01 g CO₂ |
+| | 10 | Limiting reagent and theoretical yield | 2.0 mol H₂ + 2.0 mol O₂ → H₂ limiting, 2.0 mol H₂O |
+| | 11 | Excess reagent remaining | Same reaction: 1.0 mol (32.0 g) O₂ left over |
+| | 12 | Percent yield | Theoretical 36.0 g, actual 30.6 g → 85.0% |
+| | 13 | Percent purity | 10.0 g impure CaCO₃ releases 3.96 g CO₂ → 90.1% pure |
+| | 14 | Multi-step reactions | Two steps at 80% and 75% yield → 60% overall |
+| Solutions | 15 | Molarity | 5.844 g NaCl in 0.500 L → 0.200 M |
+| | 16 | Dilution | 10.0 mL of 6.00 M diluted to 100.0 mL → 0.600 M |
+| | 17 | Precipitation and gravimetric analysis | 1.433 g AgCl collected → 0.01000 mol Cl⁻ in sample |
+| | 18 | Titrations | 20.0 mL of 0.100 M NaOH neutralizes 25.0 mL H₂SO₄ → 0.0400 M |
+| | 19 | Back titration *(advanced)* | Add excess acid, titrate what's left, work backward |
+| Gases | 20 | Volume ratios at same T and P | 1.0 L N₂ needs 3.0 L H₂ |
+| | 21 | Gas stoichiometry with PV = nRT | Liters of CO₂ produced at given T and P |
+| | 22 | Gas collected over water | Subtract water vapor pressure (Dalton's law) |
+| Energy and applied | 23 | Thermochemical stoichiometry | Burning 2.000 mol CH₄ (ΔH ≈ −890 kJ/mol) releases about 1780 kJ |
+| | 24 | Atom economy (green chemistry) | CaCO₃ → CaO + CO₂: atom economy for CaO = 56.0% |
+| | 25 | Electrochemical stoichiometry *(advanced)* | 2.00 A for 965 s deposits 0.635 g Cu |
+| | 26 | Real-world multi-concept problems | Burning 1.00 kg propane needs about 3.63 kg O₂ |
+
+### Equation balancing roadmap (future)
+
+A levelled path through balancing chemical equations, from counting atoms to redox and disproportionation. It pairs with the equation balancer (platform item 7): the balancer checks a student's attempt at each level and explains the steps. Every example below balances in atoms and charge.
+
+| Level | Skill | Example |
+| --- | --- | --- |
+| 1 | Atom counting (including hydrates) | Ca(NO₃)₂: 1 Ca, 2 N, 6 O · CuSO₄·5H₂O: 1 Cu, 1 S, 9 O, 10 H |
+| 2 | Synthesis and decomposition, with state symbols | 2Mg(s) + O₂(g) → 2MgO(s) · 2H₂O₂(l) → 2H₂O(l) + O₂(g) |
+| 3 | Odd/even trick | Al + O₂ → Al₂O₃: odd O on the right, so double it → 4Al + 3O₂ → 2Al₂O₃ |
+| 4 | Single and double replacement | Zn + 2HCl → ZnCl₂ + H₂ · AgNO₃ + NaCl → AgCl + NaNO₃ |
+| 5 | Polyatomic ions as units | 3Ca(OH)₂ + 2H₃PO₄ → Ca₃(PO₄)₂ + 6H₂O |
+| 6 | Word equations to balanced equations | "Aluminum reacts with chlorine gas to form aluminum chloride" → 2Al + 3Cl₂ → 2AlCl₃ |
+| 7 | Hydrocarbon combustion (including the fractional method) | C₂H₆ + 7/2 O₂ → 2CO₂ + 3H₂O, then ×2 → 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O |
+| 8 | Combustion of fuels containing oxygen | C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O |
+| 9 | Predicting products | Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ |
+| 10 | Net ionic equations | Ag⁺(aq) + Cl⁻(aq) → AgCl(s) |
+| 11 | Many-element equations (algebraic method) | 2Ca₃(PO₄)₂ + 6SiO₂ + 10C → 6CaSiO₃ + P₄ + 10CO |
+| 12 | Redox in acidic solution | MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O |
+| 13 | Redox in basic solution | 2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8OH⁻ |
+| 14 | Disproportionation | Cl₂ + 2OH⁻ → Cl⁻ + ClO⁻ + H₂O (Cl goes from 0 to −1 and +1) |
+
 ### Subjects
 
 | Subject | Source | License | Status |

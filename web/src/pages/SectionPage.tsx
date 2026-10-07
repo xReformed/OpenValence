@@ -478,10 +478,10 @@ export default function SectionPage() {
           className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-neutral-500"
         >
           <Link
-            to={{ pathname: "/roadmap", search: `?branch=${branch.slug}` }}
+            to={{ pathname: "/roadmap/learn", search: `?branch=${branch.slug}` }}
             className="transition-colors hover:text-neutral-900"
           >
-            Roadmap
+            Learn and Practice
           </Link>
           <span aria-hidden="true">/</span>
           <Link

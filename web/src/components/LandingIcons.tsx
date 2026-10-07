@@ -97,6 +97,34 @@ export function BookIcon({ className }: IconProps) {
   );
 }
 
+export function ScaleIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M12 3v18M7 21h10M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1ZM16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+    </Icon>
+  );
+}
+
+export function AtomIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <circle cx="12" cy="12" r="1" fill="currentColor" />
+      <path d="M20.2 20.2c2-2 0-7.4-4.5-11.9S5.8 1.8 3.8 3.8s0 7.4 4.5 11.9 9.9 6.5 11.9 4.5Z" />
+      <path d="M15.7 15.7c4.5-4.5 6.5-9.9 4.5-11.9s-7.4 0-11.9 4.5-6.5 9.9-4.5 11.9 7.4 0 11.9-4.5Z" />
+    </Icon>
+  );
+}
+
+export function TagIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4Z" />
+      <circle cx="7.5" cy="7.5" r="1" fill="currentColor" />
+    </Icon>
+  );
+}
+
 export function CalculatorIcon({ className }: IconProps) {
   return (
     <Icon className={className}>

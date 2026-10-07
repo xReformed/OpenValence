@@ -146,10 +146,10 @@ export default function BranchPathPage() {
 
       <main className="mx-auto w-full max-w-352 px-5 pb-20 sm:px-8 lg:px-12">
         <Link
-          to={{ pathname: "/roadmap", search: `?branch=${branch.slug}` }}
+          to={{ pathname: "/roadmap/learn", search: `?branch=${branch.slug}` }}
           className="text-sm text-neutral-500 transition-colors hover:text-neutral-900"
         >
-          &larr; Roadmap
+          &larr; Learn and Practice
         </Link>
 
         <header className="mt-8 grid items-end gap-8 lg:grid-cols-[1fr_20rem]">

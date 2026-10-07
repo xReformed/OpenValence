@@ -11,6 +11,9 @@ import { ChatRoute } from "./pages/ChatPage";
 import ErrorPage from "./pages/ErrorPage";
 import LandingPage from "./pages/LandingPage";
 import RoadmapPage from "./pages/RoadmapPage";
+import LearnPracticePage from "./pages/LearnPracticePage";
+import ConceptPathPage from "./pages/ConceptPathPage";
+import { CONCEPTS } from "./lib/concepts";
 import { BranchPathRoute } from "./pages/BranchPathPage";
 import { BOOK_CHAPTERS, BOOK_META } from "./lib/learningPaths.generated";
 import { getBranch } from "./lib/roadmap";
@@ -88,6 +91,14 @@ export const router = createBrowserRouter([
           { index: true, Component: LandingPage },
           { path: "topics/:slug", loader: topicLoader, Component: TopicRoute },
           { path: "roadmap", Component: RoadmapPage },
+          /* A fixed path outranks roadmap/:slug, so "learn" is never read as a branch. */
+          { path: "roadmap/learn", Component: LearnPracticePage },
+          /* Each concept path gets a fixed path the same way, e.g. /roadmap/balancing. */
+          ...CONCEPTS.map((concept) => ({
+            path: `roadmap/${concept.slug}`,
+            loader: () => concept,
+            Component: ConceptPathPage,
+          })),
           { path: "roadmap/:slug", loader: branchLoader, Component: BranchPathRoute },
           {
             path: "roadmap/:slug/:book/:section",

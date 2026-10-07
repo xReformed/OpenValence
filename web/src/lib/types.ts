@@ -9,6 +9,7 @@
 
 export type { BookKey } from "./learningPaths.generated";
 import type { BookKey } from "./learningPaths.generated";
+import type { ComponentType } from "react";
 
 export interface PathSection {
   number: string;
@@ -60,6 +61,35 @@ export interface Branch {
   steps: { label: string; done?: boolean }[];
   /** Chapters come from learningPaths.generated.ts; absent until a book exists. */
   path?: PathStage[];
+}
+
+/** One level of a concept path; the tag will key its questions and mastery. */
+export interface ConceptLevel {
+  skill: string;
+  tag: string;
+  /** In the corpus's notation (SO4^2−, Mg2+), for ChemText to format. */
+  example?: string;
+  /** Usually taught later; works as a bonus level. */
+  advanced?: boolean;
+}
+
+/** A run of levels. Levels are numbered straight through, across stages. */
+export interface ConceptStage {
+  /** Absent when a path isn't split into stages. */
+  title?: string;
+  levels: ConceptLevel[];
+}
+
+/** A levelled path through one skill, like chemical balancing (concepts.ts). */
+export interface Concept {
+  slug: string;
+  title: string;
+  icon: ComponentType<{ className?: string }>;
+  status: BranchStatus;
+  summary: string;
+  /** The card's subtitle on /roadmap, after the level count. */
+  span: string;
+  stages: ConceptStage[];
 }
 
 /* ── Section pages ───────────────────────────────────────────────────────── */
