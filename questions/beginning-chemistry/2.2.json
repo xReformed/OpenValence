@@ -34,5 +34,443 @@
     "answer": 500,
     "unit": "s",
     "explanation": "Enter both numbers into your calculator in scientific notation and divide: (9.3 × 10^7)/(1.86 × 10^5) = 5.0 × 10^2 s, or 500 seconds, a little over 8 minutes."
+  },
+  {
+    "id": "notation-why-scientific-notation",
+    "type": "multiple-choice",
+    "prompt": "Why is scientific notation especially useful for numbers like 0.0000000062 and 5,800,000,000?",
+    "choices": [
+      {
+        "text": "Written out in full, they need many zeros to place the nonzero digits.",
+        "correct": true
+      },
+      {
+        "text": "Standard notation cannot be used for numbers smaller than 1.",
+        "why": "Standard notation works for any number, including 0.0000000062; it is just cumbersome when many zeros are needed."
+      },
+      {
+        "text": "Scientific notation changes them into smaller values that are easier to use.",
+        "why": "Scientific notation doesn't change the value: 5.8 × 10^9 is exactly the same number as 5,800,000,000."
+      },
+      {
+        "text": "Every number used in chemistry must be written in scientific notation.",
+        "why": "Numbers such as 17 or 101.5 are fine in standard notation; scientific notation helps most with very large or very small numbers."
+      }
+    ],
+    "explanation": "For very large or very small numbers, standard notation is cumbersome because of all the zeros needed to place the nonzero digits. Scientific notation uses a power of 10 instead: 6.2 × 10^−9 and 5.8 × 10^9."
+  },
+  {
+    "id": "notation-meaning-of-scientific-notation",
+    "type": "multiple-choice",
+    "prompt": "How does scientific notation express a number?",
+    "choices": [
+      {
+        "text": "As a number multiplied by a power of 10",
+        "correct": true
+      },
+      {
+        "text": "As a number added to a power of 10",
+        "why": "The number is multiplied, not added: 2.5 × 10^3 means 2.5 × 1,000 = 2,500, not 2.5 + 1,000."
+      },
+      {
+        "text": "As a number raised to a power",
+        "why": "Only the 10 is raised to a power: 2.5 × 10^3 means 2.5 × 1,000, not 2.5 multiplied by itself three times."
+      },
+      {
+        "text": "As a number with all of its zeros written out",
+        "why": "Writing out every zero is standard notation, which gets cumbersome; scientific notation replaces the zeros with a power of 10."
+      }
+    ],
+    "explanation": "Scientific notation expresses a number using powers of 10: a number multiplied by a power of 10. For example, 2,500 = 2.5 × 1,000 = 2.5 × 10^3."
+  },
+  {
+    "id": "notation-identify-coefficient",
+    "type": "multiple-choice",
+    "prompt": "In the number 1.67 × 10^−24, which part is the coefficient?",
+    "choices": [
+      {
+        "text": "1.67",
+        "correct": true
+      },
+      {
+        "text": "10",
+        "why": "10 is the number that is raised to the exponent; the coefficient is the number multiplied by the power of 10."
+      },
+      {
+        "text": "−24",
+        "why": "−24 is the exponent on the 10. It tells which power of 10 the coefficient is multiplied by."
+      },
+      {
+        "text": "10^−24",
+        "why": "10^−24 is the power of 10. The coefficient is the part that the power of 10 multiplies."
+      }
+    ],
+    "explanation": "The coefficient is the part of a number in scientific notation that is multiplied by a power of 10. In 1.67 × 10^−24, that is 1.67; 10^−24 is the power of 10."
+  },
+  {
+    "id": "notation-meaning-of-ten-to-the-fourth",
+    "type": "multiple-choice",
+    "prompt": "What does 10^4 mean?",
+    "choices": [
+      {
+        "text": "Four factors of 10 multiplied together",
+        "correct": true
+      },
+      {
+        "text": "10 multiplied by 4",
+        "why": "The exponent counts factors of 10, not a multiplier: 10 × 4 = 40, but 10^4 = 10,000."
+      },
+      {
+        "text": "Four factors of 10 added together",
+        "why": "The factors are multiplied, not added: 10 + 10 + 10 + 10 = 40, but 10 × 10 × 10 × 10 = 10,000."
+      },
+      {
+        "text": "Ten factors of 4 multiplied together",
+        "why": "In 10^4, 10 is the number being multiplied and the raised 4 counts how many factors of 10 there are."
+      }
+    ],
+    "explanation": "The raised number to the right of the 10 tells the number of factors of 10: 10^4 = 10 × 10 × 10 × 10 = 10,000."
+  },
+  {
+    "id": "notation-meaning-of-negative-exponent",
+    "type": "multiple-choice",
+    "prompt": "A number in scientific notation has a negative exponent, as in 6.5 × 10^−3. What does the negative exponent tell you about the number?",
+    "choices": [
+      {
+        "text": "The number is between 0 and 1.",
+        "correct": true
+      },
+      {
+        "text": "The number is less than 0.",
+        "why": "The exponent's sign says nothing about the number's sign: 6.5 × 10^−3 = 0.0065, which is positive."
+      },
+      {
+        "text": "The coefficient is less than 1.",
+        "why": "The coefficient here is 6.5. The negative exponent belongs to the 10, and it makes the whole number less than one."
+      },
+      {
+        "text": "The number is greater than 10.",
+        "why": "Numbers greater than 10 have positive exponents, such as 6.5 × 10^3 = 6,500."
+      }
+    ],
+    "explanation": "A negative exponent implies a decimal number less than one: 6.5 × 10^−3 = 6.5 × 1/1,000 = 0.0065. The power of 10 is negative for numbers between 0 and 1."
+  },
+  {
+    "id": "notation-fraction-as-power-of-ten",
+    "type": "numeric",
+    "prompt": "Written as a power of 10, 1/1,000,000 is 10^{n}. What is n?",
+    "answer": -6,
+    "tolerance": 0,
+    "explanation": "For a fraction like this, the exponent is negative and its value equals the number of zeros in the denominator. 1,000,000 has six zeros, so 1/1,000,000 = 10^−6 = 0.000001."
+  },
+  {
+    "id": "notation-calculator-entry-advice",
+    "type": "multiple-choice",
+    "prompt": "Why should you make sure you know how to enter numbers in scientific notation on your own calculator?",
+    "choices": [
+      {
+        "text": "Different calculator models need different actions to enter it properly.",
+        "correct": true
+      },
+      {
+        "text": "Calculators cannot show answers in scientific notation at all.",
+        "why": "Many calculators do show answers in scientific notation, displaying the coefficient and the power of 10."
+      },
+      {
+        "text": "Every calculator uses the same keys, so one method works on all of them.",
+        "why": "The opposite is true: different models require different actions, so learn the method for the calculator you use."
+      },
+      {
+        "text": "Numbers must be changed to standard notation before any calculation.",
+        "why": "You can enter numbers in scientific notation directly, which is why it matters to know how your calculator does it."
+      }
+    ],
+    "explanation": "Many quantities in chemistry are in scientific notation, and different models of calculators require different actions for entering it. If in doubt, ask your instructor."
+  },
+  {
+    "id": "notation-trillion-as-power-of-ten",
+    "type": "numeric",
+    "prompt": "One trillion is 1,000,000,000,000. Written as a power of 10, it is 10^{n}. What is n?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "For a power of 10, the exponent equals the number of zeros in the number written in standard notation. 1,000,000,000,000 has 12 zeros, so one trillion is 10^12."
+  },
+  {
+    "id": "notation-medicine-dose-scientific",
+    "type": "multiple-choice",
+    "prompt": "A dose of a medicine contains 0.000375 g of its active ingredient. How is this mass written in scientific notation?",
+    "choices": [
+      {
+        "text": "3.75 × 10^−4 g",
+        "correct": true
+      },
+      {
+        "text": "3.75 × 10^−3 g",
+        "why": "This counts only the three zeros after the decimal point. The decimal point must move four places, past the 3, to give 3.75."
+      },
+      {
+        "text": "3.75 × 10^4 g",
+        "why": "A positive exponent means a number greater than 1. A number between 0 and 1 needs a negative power of 10."
+      },
+      {
+        "text": "3.75 × 10^−6 g",
+        "why": "This counts all six digits after the decimal point. Count only the places the decimal point moves to give 3.75, which is four."
+      }
+    ],
+    "explanation": "Write the first nonzero digit, a decimal point, then the rest of the digits: 3.75. Then 0.000375 = 3.75 × 1/10,000 = 3.75 × 10^−4 g."
+  },
+  {
+    "id": "notation-world-population-scientific",
+    "type": "multiple-choice",
+    "prompt": "The world's population is about 8,050,000,000 people. How is this number written in scientific notation?",
+    "choices": [
+      {
+        "text": "8.05 × 10^9",
+        "correct": true
+      },
+      {
+        "text": "8.05 × 10^8",
+        "why": "This counts all eight zeros in the number. The exponent equals the number of zeros only for a power of 10 like 1,000; here count the places the decimal point moves, which is 9."
+      },
+      {
+        "text": "8.05 × 10^7",
+        "why": "This counts only the seven zeros at the end. The decimal point also has to move past the 5 and the 0 between the 8 and the 5."
+      },
+      {
+        "text": "8.5 × 10^9",
+        "why": "The zero between the 8 and the 5 is part of the number and must stay in the coefficient: 8.05."
+      }
+    ],
+    "explanation": "The coefficient is 8.05, and 8,050,000,000 = 8.05 × 1,000,000,000. One billion is 10^9, so the number is 8.05 × 10^9."
+  },
+  {
+    "id": "notation-dust-particle-decimal-places",
+    "type": "numeric",
+    "prompt": "The mass of a small dust particle is 0.000000915 g. To write this mass in scientific notation, how many places must the decimal point be moved to give the coefficient?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "Moving the decimal point past the six zeros and then the 9 gives 9.15, which takes seven places. The number of places equals the power of 10, so the mass is 9.15 × 10^−7 g."
+  },
+  {
+    "id": "notation-city-water-coefficient",
+    "type": "numeric",
+    "prompt": "A city uses about 100,000,000 L of water each day. When this volume is written in scientific notation, what is the coefficient?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "The first nonzero digit is 1, and the zeros after it are left off, so 100,000,000 L = 1 × 10^8 L. The coefficient is 1."
+  },
+  {
+    "id": "notation-moon-distance-standard",
+    "type": "numeric",
+    "prompt": "The average distance from the Earth to the Moon is about 3.84 × 10^5 km. What is this distance in standard notation, in kilometers?",
+    "answer": 384000,
+    "unit": "km",
+    "explanation": "10^5 = 100,000, so 3.84 × 10^5 km = 3.84 × 100,000 km = 384,000 km."
+  },
+  {
+    "id": "notation-hair-width-standard",
+    "type": "multiple-choice",
+    "prompt": "A human hair is about 7.5 × 10^−5 m wide. What is this width in standard notation?",
+    "choices": [
+      {
+        "text": "0.000075 m",
+        "correct": true
+      },
+      {
+        "text": "0.0000075 m",
+        "why": "This is 7.5 × 10^−6 m, ten times too small: the decimal point was moved six places instead of five."
+      },
+      {
+        "text": "0.00075 m",
+        "why": "This moves the decimal point only four places, which is 7.5 × 10^−4 m."
+      },
+      {
+        "text": "750,000 m",
+        "why": "This is 7.5 × 10^5 m. A negative exponent means a number less than one, so the decimal point moves to the left."
+      }
+    ],
+    "explanation": "10^−5 = 1/100,000, so 7.5 × 10^−5 m = 7.5 × 1/100,000 m = 0.000075 m."
+  },
+  {
+    "id": "notation-calculator-display-meaning",
+    "type": "multiple-choice",
+    "prompt": "A student's calculator shows the answer to a problem in scientific notation as 8.2 04, leaving out the \"× 10\". What number is that?",
+    "choices": [
+      {
+        "text": "82,000",
+        "correct": true
+      },
+      {
+        "text": "820,000",
+        "why": "This adds four zeros after 82. Instead, move the decimal point in 8.2 four places to the right: 82,000."
+      },
+      {
+        "text": "4,521",
+        "why": "This comes from multiplying 8.2 by itself four times. The 04 is the exponent on 10, not on 8.2."
+      },
+      {
+        "text": "0.00082",
+        "why": "This is 8.2 × 10^−4. The display shows a positive power of 10, 04, so the number is greater than one."
+      }
+    ],
+    "explanation": "The display means 8.2 × 10^4 = 8.2 × 10,000 = 82,000."
+  },
+  {
+    "id": "notation-juice-volume-below-one",
+    "type": "multiple-choice",
+    "prompt": "A small glass holds 0.62 L of juice. How is this volume written in scientific notation?",
+    "choices": [
+      {
+        "text": "6.2 × 10^−1 L",
+        "correct": true
+      },
+      {
+        "text": "6.2 × 10^0 L",
+        "why": "Even with no zeros in front of the 6, the decimal point must move one place to give 6.2, so the exponent is −1, not 0."
+      },
+      {
+        "text": "6.2 × 10^1 L",
+        "why": "This is 62 L. A positive exponent means a number greater than 1, but 0.62 is less than 1."
+      },
+      {
+        "text": "6.2 × 10^−2 L",
+        "why": "This counts both digits after the decimal point and equals 0.062 L. The decimal point moves only one place, past the 6, to give 6.2."
+      }
+    ],
+    "explanation": "0.62 = 6.2 × 1/10 = 6.2 × 10^−1. It is a number between 0 and 1, so its power of 10 is negative."
+  },
+  {
+    "id": "notation-proper-form",
+    "type": "multiple-choice",
+    "prompt": "Each of these expressions equals 340,000. Which one is written in proper scientific notation?",
+    "choices": [
+      {
+        "text": "3.4 × 10^5",
+        "correct": true
+      },
+      {
+        "text": "34 × 10^4",
+        "why": "The coefficient should be the first nonzero digit, then a decimal point, then the rest of the digits: 3.4, not 34."
+      },
+      {
+        "text": "0.34 × 10^6",
+        "why": "The coefficient should start with the first nonzero digit, 3, not with a zero."
+      },
+      {
+        "text": "3.4 × 100,000",
+        "why": "This is a correct step along the way, but in scientific notation the 100,000 is written as a power of 10: 10^5."
+      }
+    ],
+    "explanation": "Write the first nonzero digit, a decimal point, then the rest of the digits, leaving off the extra zeros: 3.4. Then 340,000 = 3.4 × 100,000 = 3.4 × 10^5."
+  },
+  {
+    "id": "notation-other-name-exponential",
+    "type": "multiple-choice",
+    "prompt": "Scientific notation is sometimes called by another name. What is it?",
+    "choices": [
+      {
+        "text": "Exponential notation",
+        "correct": true
+      },
+      {
+        "text": "Standard notation",
+        "why": "Standard notation is the straightforward way of writing a number, such as 3,080, without a power of 10."
+      },
+      {
+        "text": "Decimal notation",
+        "why": "Writing a number out with its decimal point, such as 0.0517, is standard notation, not scientific notation."
+      },
+      {
+        "text": "Fractional notation",
+        "why": "Scientific notation writes numbers with powers of 10, not as fractions."
+      }
+    ],
+    "explanation": "Scientific notation expresses a number using powers of 10, so it is sometimes called exponential notation."
+  },
+  {
+    "id": "notation-compare-small-numbers",
+    "type": "multiple-choice",
+    "prompt": "Four samples of a powder have these masses. Which sample has the largest mass?",
+    "choices": [
+      {
+        "text": "1.2 × 10^−2 g",
+        "correct": true
+      },
+      {
+        "text": "9.8 × 10^−3 g",
+        "why": "Its coefficient is larger, but its power of 10 is smaller: 9.8 × 10^−3 g = 0.0098 g, which is less than 0.012 g."
+      },
+      {
+        "text": "8.5 × 10^−4 g",
+        "why": "−4 is more negative than −2, so this is a smaller number: 8.5 × 10^−4 g = 0.00085 g."
+      },
+      {
+        "text": "3.0 × 10^−5 g",
+        "why": "Its exponent, −5, is the most negative of the four, so this is the smallest mass: 3.0 × 10^−5 g = 0.000030 g."
+      }
+    ],
+    "explanation": "Compare the powers of 10 first. In standard notation the masses are 0.012 g, 0.0098 g, 0.00085 g, and 0.000030 g, so 1.2 × 10^−2 g is the largest."
+  },
+  {
+    "id": "notation-exponent-between-one-and-ten",
+    "type": "numeric",
+    "prompt": "When the number 7.25 is written in scientific notation, what is the exponent on the 10?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "7.25 already starts with its first nonzero digit followed by the decimal point, so the coefficient is 7.25 and no factors of 10 are needed. Since 10^0 = 1, 7.25 = 7.25 × 10^0, and the exponent is 0."
+  },
+  {
+    "id": "notation-zeros-after-decimal-point",
+    "type": "numeric",
+    "prompt": "When 3.9 × 10^−6 is written in standard notation, how many zeros come between the decimal point and the 3?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "3.9 × 10^−6 = 3.9 × 1/1,000,000 = 0.0000039. The 3 lands in the sixth place after the decimal point, so five zeros come before it."
+  },
+  {
+    "id": "notation-paper-stack-height",
+    "type": "numeric",
+    "prompt": "A sheet of printer paper is about 1.0 × 10^−4 m thick. How tall, in meters, is a stack of 5.0 × 10^5 sheets?",
+    "answer": 50,
+    "unit": "m",
+    "explanation": "Enter both numbers into your calculator in scientific notation and multiply: (5.0 × 10^5)(1.0 × 10^−4 m) = 5.0 × 10^1 m, or 50 m."
+  },
+  {
+    "id": "notation-sand-grain-count",
+    "type": "numeric",
+    "prompt": "A grain of sand has a mass of about 1.2 × 10^−4 g. About how many grains of sand are in a 3.6 × 10^3 g bag of sand?",
+    "answer": 30000000,
+    "explanation": "Divide the total mass by the mass of one grain, entering both numbers in scientific notation: (3.6 × 10^3 g)/(1.2 × 10^−4 g) = 3.0 × 10^7 grains, or 30,000,000."
+  },
+  {
+    "id": "notation-same-coefficient-ratio",
+    "type": "numeric",
+    "prompt": "The numbers 4.0 × 10^3 and 4.0 × 10^−2 have the same coefficient. How many times as large as 4.0 × 10^−2 is 4.0 × 10^3?",
+    "answer": 100000,
+    "explanation": "In standard notation, 4.0 × 10^3 = 4,000 and 4.0 × 10^−2 = 0.040, and 4,000 ÷ 0.040 = 100,000. Going from 10^−2 to 10^3 adds five factors of 10, so the answer is 10^5."
+  },
+  {
+    "id": "notation-find-the-error",
+    "type": "multiple-choice",
+    "prompt": "A student wrote 0.0019 in scientific notation as 1.9 × 10^3. What is wrong?",
+    "choices": [
+      {
+        "text": "The exponent should be −3.",
+        "correct": true
+      },
+      {
+        "text": "The exponent should be −2.",
+        "why": "That counts only the two zeros after the decimal point. The decimal point must move three places, past the 1, to give 1.9; 1.9 × 10^−2 is 0.019."
+      },
+      {
+        "text": "The coefficient should be 19.",
+        "why": "The coefficient is the first nonzero digit, a decimal point, then the rest of the digits: 1.9, not 19."
+      },
+      {
+        "text": "Nothing; the two forms are equal.",
+        "why": "1.9 × 10^3 = 1,900, which is far larger than 0.0019."
+      }
+    ],
+    "explanation": "0.0019 = 1.9 × 1/1,000 = 1.9 × 10^−3. A number between 0 and 1 has a negative power of 10, and the decimal point moves three places."
   }
 ]

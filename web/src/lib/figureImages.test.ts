@@ -41,7 +41,7 @@ describe("findFigureImage", () => {
 /* Catches an image whose file name doesn't match its caption: a typo, a
    wrong number, or a title that differs from the book's. */
 describe("every image file", () => {
-  it("matches a figure caption or image box in its book", async () => {
+  it("matches a figure caption or image box in its book", { timeout: 30_000 }, async () => {
     const used = new Set<FigureImage>();
     for (const book of Object.keys(FIGURE_IMAGES) as BookKey[]) {
       for (const section of BOOK_CHAPTERS[book].flatMap((chapter) => chapter.sections)) {

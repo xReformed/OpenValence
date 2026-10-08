@@ -8,10 +8,10 @@ import PracticeCard from "../components/section/PracticeCard";
 import SectionMarkdown, { FigureSourceProvider } from "../components/section/SectionMarkdown";
 import SectionNav from "../components/section/SectionNav";
 import SectionSidebar from "../components/section/SectionSidebar";
+import { useQuestionSet } from "../hooks/useQuestionSet";
 import { numberImagePlaceholders } from "../lib/figureImages";
 import { splitPractice } from "../lib/practiceBlocks";
-import { getAnswers, subscribeToPractice } from "../lib/practiceStore";
-import { markFinished } from "../lib/progress";
+import { getFinished, isFinished, markFinished, subscribeToProgress } from "../lib/progress";
 import type { sectionLoader } from "../sectionLoader";
 
 export function SectionRoute() {
@@ -46,9 +46,15 @@ export default function SectionPage() {
   const bookQuestions = segments.filter(
     (segment) => segment.kind === "practice",
   ).length;
-  const answers = useSyncExternalStore(subscribeToPractice, getAnswers);
-  const answered = questions.filter((question) => answers[question.id]).length;
-  const score = questions.filter((question) => answers[question.id]?.result === "correct").length;
+  /* OpenValence's questions: the section's pool, the random set of them this
+     student sees, and their score on it (hooks/useQuestionSet.ts). */
+  const set = useQuestionSet(`${stage.book}/${section.number}`, questions);
+  const shown = set.questions;
+  /* Next opens once a set reaches the pass mark, and stays open after that,
+     or once the section is finished. */
+  const finished = useSyncExternalStore(subscribeToProgress, getFinished);
+  const locked =
+    shown.length > 0 && !set.cleared && !isFinished(finished, stage.book, section.number);
 
   return (
     <div ref={scroller} className="min-h-0 flex-1 overflow-y-auto bg-neutral-50/60 font-sans">
@@ -127,20 +133,30 @@ export default function SectionPage() {
 
             {questionsUnavailable && <QuestionsUnavailable />}
 
-            {questions.length > 0 && (
+            {shown.length > 0 && (
               <CheckYourself
-                questions={questions}
+                key={set.round}
+                questions={shown}
+                poolSize={questions.length}
+                unanswered={set.unanswered}
                 context={`section ${section.number}, "${section.title}", of ${meta.title}`}
-                answered={answered}
-                score={score}
+                answered={set.answered}
+                score={set.score}
+                passMark={set.passMark}
+                passed={set.passed}
+                unlocked={!locked}
                 hasNext={Boolean(next)}
+                onDrawNew={set.drawNew}
               />
             )}
 
             <SectionNav
               previous={previous}
               next={next}
-              remaining={questions.length - answered}
+              locked={locked}
+              total={shown.length}
+              remaining={shown.length - set.answered}
+              passMark={set.passMark}
               sectionHref={sectionHref}
               pathHref={`/roadmap/${branch.slug}`}
               bookTitle={stage.title}
@@ -152,9 +168,12 @@ export default function SectionPage() {
             branch={branch}
             section={section}
             meta={meta}
-            questions={questions.length}
-            answered={answered}
-            score={score}
+            questions={shown.length}
+            poolSize={questions.length}
+            answered={set.answered}
+            locked={locked}
+            score={set.score}
+            passMark={set.passMark}
             bookQuestions={bookQuestions}
             hasNext={Boolean(next)}
           />

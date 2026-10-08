@@ -22,6 +22,8 @@ is an example of a single-replacement reaction. The hydrogen atoms in HCl are re
 
 2NaCl(aq) + F2(g) → 2NaF(s) + Cl2(g)
 
+[Note: reproduced as printed, but NaF is a sodium compound, and by this section's own solubility rules (Table 4.3.1) all compounds of Na^+ are soluble, so it would be NaF(aq).]
+
 Here the negatively charged ion changes from chloride to fluoride. A typical characteristic of a single-replacement reaction is that there is one element as a reactant and another element as a product.
 
 Not all proposed single-replacement reactions will occur between two given reactants. This is most easily demonstrated with fluorine, chlorine, bromine, and iodine. Collectively, these elements are called the _halogens_ and are in the next-to-last column on the periodic table (Figure 4.3.1). The elements on top of the column will replace the elements below them on the periodic table, but not the other way around. Thus, the reaction represented by
@@ -148,6 +150,8 @@ Table 4.3.1: Some Useful Solubility Rules (soluble)
 | All compounds of NO3^− and C2H3O2^− | None |
 | Compounds of Cl^−, Br^−, I^− | Ag^+, Hg2^2+, Pb^2+ |
 | Compounds of SO4^2 | Hg2^2+, Pb^2+, Sr^2+, Ba^2+ |
+
+[Note: reproduced as printed. The sulfate ion's charge is missing its minus sign: sulfate is SO4^2−.]
 
 Table 4.3.2: Some Useful Solubility Rules (insoluble)
 |  |  |

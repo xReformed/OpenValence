@@ -1,6 +1,7 @@
 import {
   Children,
   createContext,
+  isValidElement,
   useContext,
   useMemo,
   type ReactNode,
@@ -18,6 +19,15 @@ function chem(children: ReactNode): ReactNode {
   return Children.map(children, (child) =>
     typeof child === "string" ? <ChemText text={child} /> : child,
   );
+}
+
+/* The text inside rendered children, links included: a caption's
+   "Source: http://…" arrives as a link element, not a string. */
+function textOf(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textOf).join("");
+  if (isValidElement<{ children?: ReactNode }>(node)) return textOf(node.props.children);
+  return "";
 }
 
 /* Which section is being rendered, for looking up stand-in images. */
@@ -93,11 +103,8 @@ function Paragraph({ children }: { children?: ReactNode }) {
   /* "Figure 3.3.1: …" is a caption; "Figure 3.3.1 shows …" is prose. */
   if (/^Figure \d+\.\d+\.\d+[a-z]?:/.test(first)) {
     const image = book ? findFigureImage(book, first) : undefined;
-    const plain = parts.every((part) => typeof part === "string")
-      ? parts.join("")
-      : null;
-    if (image && plain !== null) {
-      const [caption, ...description] = plain.split("\n");
+    if (image) {
+      const [caption, ...description] = parts.map(textOf).join("").split("\n");
       return (
         <FigureWithImage
           image={image}

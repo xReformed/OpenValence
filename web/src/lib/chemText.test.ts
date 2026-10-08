@@ -41,6 +41,8 @@ describe("parseChemText", () => {
     ["CuSO4·5H2O", "CuSO_{4}·5H_{2}O"],
     ["CaCl2(aq)", "CaCl_{2}(aq)"],
     ["2H2(g) + O2(g)", "2H_{2}(g) + O_{2}(g)"],
+    ["2H2O(ℓ)", "2H_{2}O(ℓ)"],
+    ["C2H5OH(ℓ) and Br2(ℓ)", "C_{2}H_{5}OH(ℓ) and Br_{2}(ℓ)"],
   ])("subscripts formulas: %j", (input, expected) => {
     expect(render(input)).toBe(expected);
   });

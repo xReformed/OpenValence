@@ -70,5 +70,418 @@
       }
     ],
     "explanation": "6.022 has four significant figures and 0.0150 has three (its leading zeros don't count; its last zero, after the decimal point, does). So the product gets three: 6.022 × 0.0150 = 0.09033, which rounds down to 0.0903."
+  },
+  {
+    "id": "sigfigs-known-plus-estimated",
+    "type": "multiple-choice",
+    "prompt": "Which digits of a measured value are its significant figures?",
+    "choices": [
+      {
+        "text": "The known digits plus one estimated digit",
+        "correct": true
+      },
+      {
+        "text": "Only the digits that are known with certainty",
+        "why": "The convention also includes one estimated digit, the place you judge between the smallest markings."
+      },
+      {
+        "text": "The known digits plus every digit you can estimate",
+        "why": "Once one digit is an estimate, estimating another place after it is fruitless, so the measurement stops at the first estimated digit."
+      },
+      {
+        "text": "Only the nonzero digits in the value",
+        "why": "Zeros can be significant too: embedded zeros (rule 2) and zeros at the end of a number with a decimal point (rule 3)."
+      }
+    ],
+    "explanation": "Significant figures represent the limits of what we are sure of: a measurement is reported with all its known digits and the first estimated digit."
+  },
+  {
+    "id": "sigfigs-read-thermometer",
+    "type": "multiple-choice",
+    "prompt": "A thermometer is marked every 1 °C. The top of the liquid is past the 21 °C mark, about seven-tenths of the way to the 22 °C mark. How should the temperature be reported?",
+    "choices": [
+      {
+        "text": "21.7 °C",
+        "correct": true
+      },
+      {
+        "text": "21 °C",
+        "why": "That reports only the known digits. The convention adds the first estimated digit, which here is the tenths place."
+      },
+      {
+        "text": "22 °C",
+        "why": "Rounding to the nearest mark throws away information. Estimate the tenths place between the marks instead."
+      },
+      {
+        "text": "21.70 °C",
+        "why": "The tenths digit is already an estimate, so a hundredths digit can't be read and shouldn't be reported."
+      }
+    ],
+    "explanation": "The 2 and the 1 are known from the marks, and the tenths place must be estimated: about 7. Reporting all known digits plus the first estimated digit gives 21.7 °C."
+  },
+  {
+    "id": "sigfigs-beaker-reading-count",
+    "type": "numeric",
+    "prompt": "A beaker is marked every 10 mL. The liquid level is between the 60 mL and 70 mL marks, about three-tenths of the way from 60 to 70. When the volume is reported properly, how many significant figures does it have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The tens digit, 6, is known from the marks, and the ones digit must be estimated: about 3. Reporting all known digits plus the first estimated digit gives 63 mL, which has two significant figures."
+  },
+  {
+    "id": "sigfigs-which-digit-estimated",
+    "type": "multiple-choice",
+    "prompt": "Following the convention for measurements, a student measures a pencil with a ruler and reports its length as 15.24 cm. What does this tell you about its digits?",
+    "choices": [
+      {
+        "text": "The 4 is estimated; the 1, 5, and 2 are known",
+        "correct": true
+      },
+      {
+        "text": "All four digits are known for certain",
+        "why": "A properly reported measurement ends with one estimated digit, here the 4."
+      },
+      {
+        "text": "The 2 and the 4 are both estimated",
+        "why": "Only one estimated digit is reported; a second estimate after the first would be meaningless."
+      },
+      {
+        "text": "The ruler had marks every 0.01 cm",
+        "why": "With marks every 0.01 cm, the thousandths place would be estimated. Here the hundredths digit was the estimate, so the marks were every 0.1 cm."
+      }
+    ],
+    "explanation": "The convention is to report all known digits and the first estimated digit, so the last digit reported, the 4, is the estimate."
+  },
+  {
+    "id": "sigfigs-significant-zeros-large-number",
+    "type": "numeric",
+    "prompt": "The distance from Earth's center to a satellite is reported as 7,050,000 m. How many of the zeros in this number are significant?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "The zero between the 7 and the 5 is an embedded zero, so it is significant (rule 2). The four zeros at the end of a number without a decimal point only put the digits in place (rule 3), so just one zero counts."
+  },
+  {
+    "id": "sigfigs-800-vs-800-point-0",
+    "type": "numeric",
+    "prompt": "Two students report the mass of the same bag of flour, one as 800 g and the other as 800.0 g. By the rules for significant figures, how many more significant figures does 800.0 g have than 800 g?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "800 has no decimal point, so its trailing zeros aren't significant (rule 3): one significant figure. 800.0 has a decimal point, so all the zeros at its end are significant (rule 3): four. So 800.0 g has 4 − 1 = 3 more."
+  },
+  {
+    "id": "sigfigs-count-both-notations",
+    "type": "numeric",
+    "prompt": "A reaction time is reported as 3.0050 × 10^−3 s, which is 0.0030050 s written out. How many significant figures does this value have?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Writing it out only adds leading zeros, which aren't significant (rule 4), so both forms have the same count. In 3.0050, the 3 and 5 count (rule 1), the two zeros between them are embedded (rule 2), and the last zero is at the end of a number with a decimal point (rule 3): five."
+  },
+  {
+    "id": "sigfigs-most-sig-figs",
+    "type": "multiple-choice",
+    "prompt": "Which measurement has the most significant figures?",
+    "choices": [
+      {
+        "text": "40.20 g",
+        "correct": true
+      },
+      {
+        "text": "402,000 g",
+        "why": "Its three trailing zeros are at the end of a number without a decimal point, so they aren't significant (rule 3). It has only three significant figures."
+      },
+      {
+        "text": "0.000402 g",
+        "why": "Its leading zeros only put the digits in position (rule 4), so it has only three significant figures."
+      },
+      {
+        "text": "4.02 × 10^5 g",
+        "why": "Only the coefficient's digits are significant figures, not the 10 or the exponent, so it has three."
+      }
+    ],
+    "explanation": "40.20 g has four: the 4 and 2 (rule 1), the embedded zero between them (rule 2), and the zero at the end of a number with a decimal point (rule 3). Each of the others has only three."
+  },
+  {
+    "id": "sigfigs-embedded-zeros-rule",
+    "type": "multiple-choice",
+    "prompt": "The mass 60.08 g has four significant figures. Which rule makes both of its zeros significant?",
+    "choices": [
+      {
+        "text": "Rule 2, for zeros between nonzero digits",
+        "correct": true
+      },
+      {
+        "text": "Rule 3, for zeros at the end of a number with a decimal point",
+        "why": "These zeros aren't at the end of the number; the nonzero 8 comes after them."
+      },
+      {
+        "text": "Rule 4, for zeros at the beginning of a decimal number",
+        "why": "Rule 4 covers leading zeros, as in 0.08, and says they are not significant. Here the nonzero 6 comes first."
+      },
+      {
+        "text": "Rule 1, for nonzero digits",
+        "why": "Rule 1 covers only the 6 and the 8; it says nothing about zeros."
+      }
+    ],
+    "explanation": "Both zeros sit between the nonzero digits 6 and 8, so they are embedded zeros, significant by rule 2. With the 6 and 8 (rule 1), that makes four significant figures."
+  },
+  {
+    "id": "sigfigs-which-zeros-significant",
+    "type": "multiple-choice",
+    "prompt": "Which zeros in the measurement 0.0300 g are significant?",
+    "choices": [
+      {
+        "text": "Only the two zeros after the 3",
+        "correct": true
+      },
+      {
+        "text": "Only the two zeros before the 3",
+        "why": "That's backward. Zeros at the beginning of a decimal number aren't significant (rule 4), while zeros at the end of a number with a decimal point are (rule 3)."
+      },
+      {
+        "text": "All four of the zeros",
+        "why": "The two zeros before the 3 are leading zeros; they only put the 3 in the right position (rule 4), so they aren't significant."
+      },
+      {
+        "text": "None of the zeros",
+        "why": "Zeros at the end of a number with a decimal point are significant (rule 3), so the two zeros after the 3 count."
+      }
+    ],
+    "explanation": "The zeros before the 3 are leading zeros, which aren't significant (rule 4). The zeros after the 3 are at the end of a number with a decimal point, so they are significant (rule 3), giving three significant figures in all."
+  },
+  {
+    "id": "sigfigs-rounding-rule",
+    "type": "multiple-choice",
+    "prompt": "When you drop digits to limit an answer to the proper number of significant figures, when do you round up?",
+    "choices": [
+      {
+        "text": "When the first dropped digit is 5 or greater",
+        "correct": true
+      },
+      {
+        "text": "Only when the first dropped digit is greater than 5",
+        "why": "A first dropped digit of exactly 5 also rounds up; only digits less than 5 round down."
+      },
+      {
+        "text": "When the last digit kept is 5 or greater",
+        "why": "The digit you keep doesn't decide; look at the first digit being dropped."
+      },
+      {
+        "text": "When any of the dropped digits is 5 or greater",
+        "why": "Only the first dropped digit matters; the digits after it are ignored."
+      }
+    ],
+    "explanation": "In this text, round up if the first dropped digit is 5 or greater and round down if it is less than 5. For example, 4.65 limited to two significant figures becomes 4.7, while 4.64 becomes 4.6."
+  },
+  {
+    "id": "sigfigs-round-small-value",
+    "type": "numeric",
+    "prompt": "A calculation gives 0.0084651 g, but the data allow only three significant figures. What value should be reported, in grams?",
+    "answer": 0.00847,
+    "unit": "g",
+    "tolerance": 0,
+    "explanation": "The leading zeros aren't significant (rule 4), so the first three significant figures are 8, 4, and 6. The first dropped digit is 5, so round up: 0.00847 g."
+  },
+  {
+    "id": "sigfigs-round-first-dropped-digit",
+    "type": "numeric",
+    "prompt": "A calculator shows 2,649,800 for a product whose data allow only two significant figures. What value should be reported?",
+    "answer": 2600000,
+    "tolerance": 0,
+    "explanation": "Keep the 2 and the 6. The first dropped digit is 4, which is less than 5, so round down; the 9 after it doesn't matter. Zeros fill the remaining places: 2,600,000."
+  },
+  {
+    "id": "sigfigs-add-subtract-rule",
+    "type": "multiple-choice",
+    "prompt": "When measurements are added or subtracted, what limits the significant figures in the answer?",
+    "choices": [
+      {
+        "text": "The rightmost column in which all the numbers have significant figures",
+        "correct": true
+      },
+      {
+        "text": "The least number of significant figures in any one number",
+        "why": "That's the rule for multiplication and division. Sums and differences are limited by column, not by a count."
+      },
+      {
+        "text": "The rightmost column in which any one number has significant figures",
+        "why": "That keeps digits some of the numbers don't have. The answer has to stop where the least precise number stops."
+      },
+      {
+        "text": "The greatest number of significant figures in any one number",
+        "why": "Neither rule uses the greatest count. For sums and differences, look at the columns where the significant figures stop."
+      }
+    ],
+    "explanation": "For addition and subtraction, limit the answer to the rightmost column that all the numbers have significant figures in common. For example, 1.2 + 4.21 is limited to the tenths column."
+  },
+  {
+    "id": "sigfigs-temperature-change",
+    "type": "numeric",
+    "prompt": "A digital probe gives a starting temperature of 21.416 °C, and an ordinary thermometer reads the final temperature as 35.2 °C. What is the temperature change (final minus starting), in °C, to the proper number of significant figures?",
+    "answer": 13.8,
+    "unit": "°C",
+    "tolerance": 0,
+    "explanation": "A calculator gives 35.2 − 21.416 = 13.784. 35.2 stops its significant figures in the tenths column, so the answer is limited to the tenths place. The first dropped digit is 8, so round up: 13.8 °C."
+  },
+  {
+    "id": "sigfigs-route-total-trailing-zeros",
+    "type": "numeric",
+    "prompt": "A delivery route has three legs measured as 5,200 m, 348 m, and 75.2 m. What is the total distance, in meters, to the proper number of significant figures?",
+    "answer": 5600,
+    "unit": "m",
+    "tolerance": 0,
+    "explanation": "By rule 3, the trailing zeros in 5,200 aren't significant, so its significant figures stop in the hundreds column. That's the rightmost column all three numbers share, so the sum, 5,623.2, is limited to the hundreds place; the first dropped digit is 2, so round down: 5,600 m."
+  },
+  {
+    "id": "sigfigs-tape-sum-trailing-zeros",
+    "type": "multiple-choice",
+    "prompt": "Two pieces of tape, 12.43 cm and 7.57 cm long, are laid end to end. A calculator gives the total length as 20. How should the total be reported?",
+    "choices": [
+      {
+        "text": "20.00 cm",
+        "correct": true
+      },
+      {
+        "text": "20 cm",
+        "why": "That shows only one significant figure (rule 3). Both lengths have significant figures through the hundredths column, so the answer must show that column."
+      },
+      {
+        "text": "20.0 cm",
+        "why": "That stops at the tenths column, but both lengths have significant figures in the hundredths column."
+      },
+      {
+        "text": "20.000 cm",
+        "why": "Neither length has a significant figure in the thousandths column, so the sum can't either."
+      }
+    ],
+    "explanation": "Calculators don't understand significant figures. Both lengths stop their significant figures in the hundredths column, so the sum is limited to, and must show, the hundredths place: 20.00 cm. Those zeros are significant because they end a number with a decimal point (rule 3)."
+  },
+  {
+    "id": "sigfigs-crucible-difference",
+    "type": "multiple-choice",
+    "prompt": "A crucible holding a few crystals has a mass of 8.6472 g. The empty crucible was weighed on a less precise balance at 8.61 g. What is the mass of the crystals, to the proper number of significant figures?",
+    "choices": [
+      {
+        "text": "0.04 g",
+        "correct": true
+      },
+      {
+        "text": "0.0372 g",
+        "why": "That keeps three significant figures, as if this were a division. In a subtraction, the answer is limited to the hundredths column, where 8.61 stops."
+      },
+      {
+        "text": "0.037 g",
+        "why": "That keeps the thousandths column, but 8.61 has no significant figure there."
+      },
+      {
+        "text": "0.03 g",
+        "why": "That drops the 7 without rounding. The first dropped digit is 7, which is 5 or greater, so round up."
+      }
+    ],
+    "explanation": "A calculator gives 8.6472 − 8.61 = 0.0372. 8.61 stops its significant figures in the hundredths column, so the answer is limited to the hundredths place, and the first dropped digit, 7, rounds it up: 0.04 g, only one significant figure."
+  },
+  {
+    "id": "sigfigs-quotient-what-limits",
+    "type": "multiple-choice",
+    "prompt": "A student calculates 0.7258 ÷ 2.1. What limits the number of significant figures in the answer?",
+    "choices": [
+      {
+        "text": "2.1 has two significant figures, so the answer gets two",
+        "correct": true
+      },
+      {
+        "text": "2.1 has one decimal place, so the answer gets one decimal place",
+        "why": "Limiting by decimal place is the rule for addition and subtraction. For division, count significant figures."
+      },
+      {
+        "text": "0.7258 has four significant figures, so the answer gets four",
+        "why": "The answer is limited by the value with the least number of significant figures, not the most."
+      },
+      {
+        "text": "Nothing does, so every digit the calculator shows is kept",
+        "why": "Calculators don't understand significant figures. An answer can't be known more precisely than the data it came from."
+      }
+    ],
+    "explanation": "In multiplication and division, limit the answer to the least number of significant figures in the data. 0.7258 has four (its leading zero doesn't count) and 2.1 has two, so the answer gets two: 0.7258 ÷ 2.1 = 0.3456… ≈ 0.35."
+  },
+  {
+    "id": "sigfigs-runner-speed",
+    "type": "numeric",
+    "prompt": "A runner covers 1,609 m in 4.27 min. Average speed is distance ÷ time. What is the runner's average speed, in m/min, to the proper number of significant figures?",
+    "answer": 377,
+    "unit": "m/min",
+    "tolerance": 0,
+    "explanation": "1,609 has four significant figures (its zero is embedded, rule 2) and 4.27 has three, so the answer gets three. 1,609 ÷ 4.27 = 376.81…, and the first dropped digit is 8, so round up: 377 m/min."
+  },
+  {
+    "id": "sigfigs-salt-fraction",
+    "type": "numeric",
+    "prompt": "A 452.8 g bag of trail mix contains 6.1 g of salt. What fraction of the bag's mass is salt (salt mass ÷ total mass), to the proper number of significant figures?",
+    "answer": 0.013,
+    "tolerance": 0,
+    "explanation": "6.1 has two significant figures and 452.8 has four, so the answer gets two. A calculator gives 0.013471…; its leading zeros don't count (rule 4), so keep the 1 and 3, and the first dropped digit is 4, so round down: 0.013."
+  },
+  {
+    "id": "sigfigs-sand-grain-count",
+    "type": "numeric",
+    "prompt": "A sample of sand has a mass of 18.75 g, and one grain has an average mass of 0.00712 g. How many grains are in the sample (sample mass ÷ mass of one grain), to the proper number of significant figures?",
+    "answer": 2630,
+    "tolerance": 0,
+    "explanation": "18.75 has four significant figures; 0.00712 has three, because its leading zeros don't count (rule 4). So the answer gets three: 18.75 ÷ 0.00712 = 2,633.4…, and the first dropped digit is 3, so round down to 2,630."
+  },
+  {
+    "id": "sigfigs-distance-scientific-notation",
+    "type": "multiple-choice",
+    "prompt": "A cart rolls at 2.5 m/s for 4.00 s. Distance = speed × time, and a calculator shows 10. Which way of reporting the distance shows the proper number of significant figures?",
+    "choices": [
+      {
+        "text": "1.0 × 10^1 m",
+        "correct": true
+      },
+      {
+        "text": "10 m",
+        "why": "By rule 3, the zero at the end of 10 isn't significant, so 10 shows only one significant figure."
+      },
+      {
+        "text": "10.0 m",
+        "why": "That shows three significant figures, but 2.5 has only two."
+      },
+      {
+        "text": "1 × 10^1 m",
+        "why": "That shows only one significant figure; the coefficient needs the significant zero, 1.0."
+      }
+    ],
+    "explanation": "2.5 has two significant figures and 4.00 has three, so the distance gets two. Written as 10, its zero wouldn't count (rule 3), so use scientific notation, which includes a zero in the coefficient only if it is significant: 1.0 × 10^1 m."
+  },
+  {
+    "id": "sigfigs-box-volume",
+    "type": "numeric",
+    "prompt": "A box measures 12.5 cm by 8.03 cm by 4.1 cm. What is its volume (length × width × height), in cm^3, to the proper number of significant figures?",
+    "answer": 410,
+    "unit": "cm^3",
+    "tolerance": 0,
+    "explanation": "12.5 and 8.03 have three significant figures each, but 4.1 has only two, so the volume gets two. A calculator gives 411.5375; keep the 4 and 1, and since the first dropped digit is 1, round down: 410 cm^3."
+  },
+  {
+    "id": "sigfigs-which-result-correct",
+    "type": "multiple-choice",
+    "prompt": "Which calculation's answer is reported to the proper number of significant figures?",
+    "choices": [
+      {
+        "text": "5.67 + 2.1 = 7.8",
+        "correct": true
+      },
+      {
+        "text": "5.67 × 2.1 = 11.9",
+        "why": "That limits the product by decimal places. Multiplication is limited by significant figures: two, from 2.1, so 11.907 rounds to 12."
+      },
+      {
+        "text": "5.67 − 2.1 = 3.57",
+        "why": "A difference stops at the tenths column, where 2.1 stops, so 3.57 rounds to 3.6."
+      },
+      {
+        "text": "5.67 ÷ 2.1 = 2.70",
+        "why": "That shows three significant figures, but 2.1 has only two, so the quotient is 2.7."
+      }
+    ],
+    "explanation": "5.67 + 2.1 = 7.77, and a sum is limited to the tenths column, where 2.1 stops; the first dropped digit is 7, so it rounds up to 7.8. The others should be 12, 3.6, and 2.7."
   }
 ]

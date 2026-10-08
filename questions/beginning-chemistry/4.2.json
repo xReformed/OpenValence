@@ -46,9 +46,9 @@
   {
     "id": "count-oxygen-atoms",
     "type": "numeric",
-    "prompt": "How many oxygen atoms are represented by 3CO2 + 4H2O?",
-    "answer": 10,
-    "explanation": "A coefficient multiplies every atom in the formula after it: 3CO2 has 3 × 2 = 6 oxygen atoms and 4H2O has 4 × 1 = 4, for 10 in all."
+    "prompt": "How many oxygen atoms are represented by 2HNO3 + 3H2SO4?",
+    "answer": 18,
+    "explanation": "A coefficient multiplies every atom in the formula after it: 2HNO3 has 2 × 3 = 6 oxygen atoms and 3H2SO4 has 3 × 4 = 12, for 18 in all."
   },
   {
     "id": "coefficient-aluminum-oxide",
@@ -87,5 +87,405 @@
       }
     ],
     "explanation": "Phase labels show each substance's state: (s) for solid, (ℓ) for liquid, (g) for gas, and (aq) for aqueous, meaning dissolved in water."
+  },
+  {
+    "id": "equation-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a chemical equation?",
+    "choices": [
+      {
+        "text": "A concise way to represent a chemical reaction using chemical formulas",
+        "correct": true
+      },
+      {
+        "text": "The rule that matter cannot be created or destroyed in a reaction",
+        "why": "That is the law of conservation of matter. Chemical equations must obey it, but it isn't what an equation is."
+      },
+      {
+        "text": "A formula that shows the kinds and numbers of atoms in one substance",
+        "why": "That describes a chemical formula. An equation uses formulas to show reactants changing into products."
+      },
+      {
+        "text": "A calculation that predicts how much product a reaction will make",
+        "why": "An equation shows which substances react and which form; it describes a reaction rather than calculating anything."
+      }
+    ],
+    "explanation": "A chemical equation is a concise way of representing a chemical reaction. Formulas of the reactants are written before the arrow and formulas of the products after it."
+  },
+  {
+    "id": "equation-arrow-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the arrow (→) in a chemical equation mean?",
+    "choices": [
+      {
+        "text": "A reaction takes place, turning reactants into products",
+        "correct": true
+      },
+      {
+        "text": "The reactants are only mixed together and do not change",
+        "why": "The arrow means a reaction occurs, so the reactants change into new substances, the products."
+      },
+      {
+        "text": "The reactants must be heated before they can react",
+        "why": "Special conditions such as temperature are written above the arrow; the arrow by itself doesn't mean heating."
+      },
+      {
+        "text": "The products on the right change back into the reactants",
+        "why": "The arrow points from the reactants on the left to the products on the right."
+      }
+    ],
+    "explanation": "The → symbol implies that a chemical reaction takes place: the reactants written before it change into the products written after it."
+  },
+  {
+    "id": "equation-coefficient-term",
+    "type": "multiple-choice",
+    "prompt": "In the equation C + 2H2 → CH4, what is the 2 written in front of H2 called?",
+    "choices": [
+      {
+        "text": "a coefficient",
+        "correct": true
+      },
+      {
+        "text": "a subscript",
+        "why": "A subscript is written after a symbol, like the 2 in H2 itself, and counts atoms within one formula."
+      },
+      {
+        "text": "a phase label",
+        "why": "Phase labels are letters in parentheses after a formula, such as (s) or (g)."
+      },
+      {
+        "text": "a charge",
+        "why": "A charge is written as a superscript on an ion, like H+; this 2 is written in front of the formula."
+      }
+    ],
+    "explanation": "A number written in front of a formula is a coefficient. Here it means that two H2 molecules react with one carbon atom."
+  },
+  {
+    "id": "equation-conditions-above-arrow",
+    "type": "multiple-choice",
+    "prompt": "In some chemical equations, a temperature such as 500°C is written above the arrow. What does it tell you?",
+    "choices": [
+      {
+        "text": "A special condition for running the reaction",
+        "correct": true
+      },
+      {
+        "text": "The phase of each product that forms",
+        "why": "Phases are shown by labels such as (s) and (g) written after each formula."
+      },
+      {
+        "text": "The number of molecules of each product",
+        "why": "Numbers of molecules are shown by the coefficients written in front of the formulas."
+      },
+      {
+        "text": "The temperature the products reach afterward",
+        "why": "A temperature above the arrow is a condition for running the reaction, not a result of it."
+      }
+    ],
+    "explanation": "Special conditions, such as temperature, may be listed above the arrow. They describe how the reaction is carried out, not what it produces."
+  },
+  {
+    "id": "equation-balanced-definition",
+    "type": "multiple-choice",
+    "prompt": "What does it mean to say that a chemical equation is balanced?",
+    "choices": [
+      {
+        "text": "Each element has the same number of atoms in the reactants and the products",
+        "correct": true
+      },
+      {
+        "text": "The reactants and the products contain the same number of molecules",
+        "why": "Molecules can change in number during a reaction: 2SO2 + O2 → 2SO3 is balanced, with three molecules becoming two."
+      },
+      {
+        "text": "The total number of atoms matches, even if some elements' counts differ",
+        "why": "Atoms are counted element by element. Every element must have the same count on both sides, not just the total."
+      },
+      {
+        "text": "The same number of substances appear on each side of the arrow",
+        "why": "The numbers of reactants and products can differ; what must match is the number of atoms of each element."
+      }
+    ],
+    "explanation": "An equation is balanced when the reactants and products have the same number of atoms of every element present. That is what the law of conservation of matter requires."
+  },
+  {
+    "id": "equation-coefficient-of-one-methane",
+    "type": "numeric",
+    "prompt": "In the balanced equation CH4 + 2O2 → CO2 + 2H2O, no number is written in front of CH4. What is the coefficient of CH4?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "If a substance has no coefficient written in front of it, the coefficient is assumed to be 1. One CH4 molecule reacts with two O2 molecules."
+  },
+  {
+    "id": "equation-phase-labels-calcium-carbonate",
+    "type": "multiple-choice",
+    "prompt": "When solid calcium carbonate, CaCO3, is heated, it breaks down into solid calcium oxide, CaO, and carbon dioxide gas. Which equation shows this with correct phase labels?",
+    "choices": [
+      {
+        "text": "CaCO3(s) → CaO(s) + CO2(g)",
+        "correct": true
+      },
+      {
+        "text": "CaCO3(aq) → CaO(s) + CO2(g)",
+        "why": "(aq) means dissolved in water; solid calcium carbonate is labeled (s)."
+      },
+      {
+        "text": "CaCO3(s) → CaO(ℓ) + CO2(g)",
+        "why": "(ℓ) means liquid, but the calcium oxide that forms is a solid, (s)."
+      },
+      {
+        "text": "CaCO3(s) → CaO(s) + CO2(aq)",
+        "why": "The carbon dioxide forms as a gas, labeled (g); (aq) means dissolved in water."
+      }
+    ],
+    "explanation": "Phase labels go after each formula: (s) for solid, (ℓ) for liquid, (g) for gas, and (aq) for aqueous. Both calcium compounds are solids, and carbon dioxide is a gas."
+  },
+  {
+    "id": "equation-gas-phase-label",
+    "type": "multiple-choice",
+    "prompt": "In the equation Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g), which substance is a gas?",
+    "choices": [
+      {
+        "text": "H2",
+        "correct": true
+      },
+      {
+        "text": "HCl",
+        "why": "HCl is labeled (aq), so in this reaction it is dissolved in water."
+      },
+      {
+        "text": "ZnCl2",
+        "why": "ZnCl2 is labeled (aq), meaning it is dissolved in water."
+      },
+      {
+        "text": "Zn",
+        "why": "Zn is labeled (s), meaning it is a solid."
+      }
+    ],
+    "explanation": "The phase label (g) means gas, and only H2 carries it. (s) marks a solid and (aq) marks a substance dissolved in water."
+  },
+  {
+    "id": "equation-coefficient-vs-subscript",
+    "type": "multiple-choice",
+    "prompt": "What do the 4 and the 3 in 4NH3 tell you?",
+    "choices": [
+      {
+        "text": "There are 4 NH3 molecules, and each has 3 hydrogen atoms",
+        "correct": true
+      },
+      {
+        "text": "There are 3 NH3 molecules, and each has 4 hydrogen atoms",
+        "why": "This mixes them up: the coefficient in front counts molecules, and the subscript after H counts hydrogen atoms in each molecule."
+      },
+      {
+        "text": "There are 4 NH3 molecules with 3 hydrogen atoms in all",
+        "why": "The subscript applies to every molecule, so 4NH3 contains 4 × 3 = 12 hydrogen atoms."
+      },
+      {
+        "text": "There is 1 molecule with 4 nitrogen atoms and 3 hydrogen atoms",
+        "why": "A coefficient is not part of the formula; a molecule with 4 nitrogen atoms would be written N4H3."
+      }
+    ],
+    "explanation": "The coefficient 4 says there are four NH3 molecules. The subscript 3 is part of the formula, so each molecule has three hydrogen atoms, 12 in all."
+  },
+  {
+    "id": "equation-why-unbalanced-carbon-monoxide",
+    "type": "multiple-choice",
+    "prompt": "Why is CO + O2 → CO2 not a proper chemical equation?",
+    "choices": [
+      {
+        "text": "There are three oxygen atoms in the reactants but only two in the product",
+        "correct": true
+      },
+      {
+        "text": "There are two reactant molecules but only one product molecule",
+        "why": "The number of molecules can change in a reaction. What must match is the number of atoms of each element."
+      },
+      {
+        "text": "There is one carbon atom in the reactants but two in the product",
+        "why": "CO2 has just one carbon atom; its subscript 2 belongs to oxygen. Carbon is already balanced."
+      },
+      {
+        "text": "Oxygen should be written as O, since only one oxygen atom is needed",
+        "why": "Oxygen exists as diatomic molecules, so its formula is O2. You can't change a formula to balance an equation."
+      }
+    ],
+    "explanation": "Carbon is 1 and 1, but oxygen is 1 + 2 = 3 in the reactants and only 2 in the product, so an oxygen atom would be destroyed. The law of conservation of matter forbids that; the proper equation is 2CO + O2 → 2CO2."
+  },
+  {
+    "id": "equation-unbalanced-element-silver",
+    "type": "multiple-choice",
+    "prompt": "Which element is not balanced in Cu + 2AgNO3 → Cu(NO3)2 + Ag?",
+    "choices": [
+      {
+        "text": "silver",
+        "correct": true
+      },
+      {
+        "text": "copper",
+        "why": "There is one copper atom on each side."
+      },
+      {
+        "text": "nitrogen",
+        "why": "2AgNO3 has 2 nitrogen atoms, and the 2 outside the parentheses in Cu(NO3)2 also gives 2."
+      },
+      {
+        "text": "oxygen",
+        "why": "2AgNO3 has 2 × 3 = 6 oxygen atoms, and Cu(NO3)2 also has 2 × 3 = 6."
+      }
+    ],
+    "explanation": "Copper is 1 and 1, nitrogen is 2 and 2, and oxygen is 6 and 6, but silver is 2 and 1. Writing 2Ag balances it: Cu + 2AgNO3 → Cu(NO3)2 + 2Ag."
+  },
+  {
+    "id": "equation-balanced-calcium-water",
+    "type": "multiple-choice",
+    "prompt": "Calcium reacts with water to make Ca(OH)2 and hydrogen gas. Which equation for this reaction is correctly balanced?",
+    "choices": [
+      {
+        "text": "Ca + 2H2O → Ca(OH)2 + H2",
+        "correct": true
+      },
+      {
+        "text": "Ca + H2O → Ca(OH)2 + H2",
+        "why": "There are 2 hydrogen atoms and 1 oxygen atom on the left, but 4 hydrogen atoms and 2 oxygen atoms on the right."
+      },
+      {
+        "text": "Ca + 2H2O → Ca(OH)2 + 2H2",
+        "why": "There are 4 hydrogen atoms on the left but 2 + 4 = 6 on the right."
+      },
+      {
+        "text": "Ca + H4O2 → Ca(OH)2 + H2",
+        "why": "The atoms balance, but H4O2 is not water. You can't change a formula; change the coefficient in front of H2O instead."
+      }
+    ],
+    "explanation": "Ca(OH)2 contains 2 oxygen and 2 hydrogen atoms, and H2 adds 2 more hydrogen atoms. Two water molecules supply exactly 4 hydrogen and 2 oxygen atoms, so Ca + 2H2O → Ca(OH)2 + H2 is balanced."
+  },
+  {
+    "id": "equation-fix-changed-subscript",
+    "type": "multiple-choice",
+    "prompt": "A student balances Cu + O2 → CuO by rewriting it as Cu + O2 → CuO2. What is the correct balanced equation?",
+    "choices": [
+      {
+        "text": "2Cu + O2 → 2CuO",
+        "correct": true
+      },
+      {
+        "text": "Cu + O2 → CuO2",
+        "why": "Changing the subscript turns CuO into CuO2, a different substance. Balance with coefficients, not subscripts."
+      },
+      {
+        "text": "Cu + O → CuO",
+        "why": "Oxygen exists as diatomic molecules, O2, and a reactant's formula can't be changed either."
+      },
+      {
+        "text": "Cu + O2 → 2CuO",
+        "why": "This balances oxygen, but now there is 1 copper atom on the left and 2 on the right."
+      }
+    ],
+    "explanation": "The formula CuO must stay as it is, so balance oxygen with a coefficient: 2CuO has 2 oxygen atoms. Then 2Cu balances copper, giving 2Cu + O2 → 2CuO."
+  },
+  {
+    "id": "equation-fractional-coefficient",
+    "type": "multiple-choice",
+    "prompt": "While balancing Fe + Cl2 → FeCl3, a student writes Fe + 1.5Cl2 → FeCl3. The atoms balance, but 1.5 is not a whole number. What should the student do?",
+    "choices": [
+      {
+        "text": "Double every coefficient: 2Fe + 3Cl2 → 2FeCl3",
+        "correct": true
+      },
+      {
+        "text": "Round 1.5 up to 2: Fe + 2Cl2 → FeCl3",
+        "why": "That gives 4 chlorine atoms on the left but only 3 on the right."
+      },
+      {
+        "text": "Double only the Cl2: Fe + 3Cl2 → FeCl3",
+        "why": "That gives 6 chlorine atoms on the left but 3 on the right; every coefficient must be multiplied by the same number."
+      },
+      {
+        "text": "Write chlorine as atoms: Fe + 3Cl → FeCl3",
+        "why": "Chlorine exists as diatomic molecules, Cl2, and you can't change a formula to balance an equation."
+      }
+    ],
+    "explanation": "The convention is to use whole numbers in a balanced equation. Multiplying every coefficient by 2 keeps each element balanced, with 2 iron atoms and 6 chlorine atoms on each side."
+  },
+  {
+    "id": "equation-magnesium-nitride",
+    "type": "numeric",
+    "prompt": "Balance Mg + N2 → Mg3N2 using the smallest whole-number coefficients. What is the coefficient of Mg?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Nitrogen is already balanced, with 2 atoms on each side. Mg3N2 has 3 magnesium atoms, so the reactants need 3Mg: 3Mg + N2 → Mg3N2."
+  },
+  {
+    "id": "equation-phosphorus-oxide",
+    "type": "numeric",
+    "prompt": "Balance P4 + O2 → P4O10 using the smallest whole-number coefficients. What is the coefficient of O2?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Phosphorus is already balanced, with 4 atoms on each side. P4O10 has 10 oxygen atoms and each O2 supplies 2, so 5O2 is needed: P4 + 5O2 → P4O10."
+  },
+  {
+    "id": "equation-hydrogen-peroxide",
+    "type": "numeric",
+    "prompt": "Balance H2O2 → H2O + O2 using the smallest whole-number coefficients. What is the coefficient of H2O2?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "With one of each, there are 2 oxygen atoms on the left but 3 on the right. Using 2H2O2 and 2H2O gives 4 hydrogen and 4 oxygen atoms on each side: 2H2O2 → 2H2O + O2."
+  },
+  {
+    "id": "equation-missing-coefficient-ammonia",
+    "type": "numeric",
+    "prompt": "In the balanced form of NH3 + O2 → NO + H2O, the coefficients of NH3, NO, and H2O are 4, 4, and 6. What is the coefficient of O2?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "With those coefficients, nitrogen (4 and 4) and hydrogen (12 and 12) already balance. The products hold 4 + 6 = 10 oxygen atoms, so the reactants need 5O2: 4NH3 + 5O2 → 4NO + 6H2O."
+  },
+  {
+    "id": "equation-potassium-chlorate",
+    "type": "numeric",
+    "prompt": "Balance KClO3 → KCl + O2 using the smallest whole-number coefficients. What is the coefficient of O2?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Potassium and chlorine match one-to-one between KClO3 and KCl, but one KClO3 has 3 oxygen atoms, an odd number that O2 can't match. Doubling to 2KClO3 and 2KCl gives 6 oxygen atoms, which 3O2 supplies: 2KClO3 → 2KCl + 3O2."
+  },
+  {
+    "id": "equation-aluminum-hcl",
+    "type": "numeric",
+    "prompt": "Balance Al + HCl → AlCl3 + H2 using the smallest whole-number coefficients. What is the coefficient of HCl?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "AlCl3 needs 3 chlorine atoms, so 3HCl, but that gives 3 hydrogen atoms, an odd number that H2 can't match. Doubling to 2AlCl3 and 6HCl gives 6 hydrogen atoms for 3H2, and then 2Al: 2Al + 6HCl → 2AlCl3 + 3H2."
+  },
+  {
+    "id": "equation-iron-oxide-carbon-monoxide",
+    "type": "numeric",
+    "prompt": "Balance Fe2O3 + CO → Fe + CO2 using the smallest whole-number coefficients. What is the coefficient of CO?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Iron needs 2Fe. CO and CO2 must have the same coefficient to keep carbon balanced, and each CO2 holds one more oxygen atom than a CO, so 3CO takes up the 3 oxygen atoms from Fe2O3: Fe2O3 + 3CO → 2Fe + 3CO2."
+  },
+  {
+    "id": "equation-calcium-hydroxide-hcl",
+    "type": "numeric",
+    "prompt": "Balance Ca(OH)2 + HCl → CaCl2 + H2O using the smallest whole-number coefficients. What is the coefficient of H2O?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "CaCl2 has 2 chlorine atoms, so use 2HCl. The reactants then have 2 oxygen atoms and 2 + 2 = 4 hydrogen atoms, which 2H2O matches: Ca(OH)2 + 2HCl → CaCl2 + 2H2O."
+  },
+  {
+    "id": "equation-aluminum-copper-sulfate",
+    "type": "numeric",
+    "prompt": "Balance Al + CuSO4 → Al2(SO4)3 + Cu using the smallest whole-number coefficients. What is the coefficient of CuSO4?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Al2(SO4)3 contains 3 SO4 groups, so 3CuSO4 is needed to supply 3 sulfur and 12 oxygen atoms. Then 3Cu balances copper and 2Al balances aluminum: 2Al + 3CuSO4 → Al2(SO4)3 + 3Cu."
+  },
+  {
+    "id": "equation-sodium-oxide-coefficient-sum",
+    "type": "numeric",
+    "prompt": "Balance Na + O2 → Na2O using the smallest whole-number coefficients. What is the sum of all the coefficients, counting any coefficient of 1?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "Two oxygen atoms on the left need 2Na2O, which has 4 sodium atoms, so use 4Na: 4Na + O2 → 2Na2O. The coefficients 4, 1, and 2 add up to 7."
   }
 ]

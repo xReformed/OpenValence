@@ -9,7 +9,7 @@ import type { ChemSegment } from "./types";
  *
  *   caret        10^−5, 1s^2, SO4^2−, Fe^2+, m^3, ^{...}, ^(...)   → superscript
  *   underscore   ΔH°_f, ΔH_vap, m_l, u_rms, t_(1/2), _{...}        → subscript
- *   formulas     H2O, CH3CO2H, Ca(OH)2, CuSO4·5H2O, CaCl2(aq)       → digit subscripts
+ *   formulas     H2O, CH3CO2H, Ca(OH)2, CuSO4·5H2O, CaCl2(aq), H2O(ℓ) → digit subscripts
  *   charges      H3O+, OH−, NH4+, Na+, Fe3+, [Co(en)3]3+, e−       → superscript charge
  *   constants    Ka, Kb, Kw, Ksp, Kc, Kp, Kf, Keq, pKa, E°cell      → subscript
  *   hybrids      sp2, sp3, sp3d, sp3d2                              → superscript
@@ -50,12 +50,13 @@ const PATTERN = new RegExp(
     String.raw`\b(?<kPre>p?)K(?<kSub>sp|eq|a|b|w|c|p|f)\b`,
     String.raw`E°(?<eSub>cell|anode|cathode)\b`,
     String.raw`(?<![A-Za-z])e(?<eSign>[−-])(?=[\s,.;:)]|$)`,
-    String.raw`(?<![A-Za-z_])(?<formula>[A-Z(\[][A-Za-z0-9()\[\]]*)(?<charge>[+−]|-(?=[\s,.;:)(]|$))?`,
+    String.raw`(?<![A-Za-z_])(?<formula>[A-Z(\[][A-Za-z0-9()\[\]ℓ]*)(?<charge>[+−]|-(?=[\s,.;:)(]|$))?`,
   ].join("|"),
   "g",
 );
 
-const STATE_SYMBOL = /\((?:aq|s|l|g)\)$/;
+/* The book writes a liquid as (ℓ), and sometimes (l). */
+const STATE_SYMBOL = /\((?:aq|s|l|ℓ|g)\)$/;
 const LIGAND = /^\([a-z]{1,4}\)/;
 
 function unwrap(group: string): string {

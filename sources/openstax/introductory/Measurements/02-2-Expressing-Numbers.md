@@ -91,6 +91,8 @@ Another way to determine the power of 10 in scientific notation is to count the 
 
 56900 can be written as 5.69 times 10 to the fourth power. 0.000028 can be written as 2.8 times 10 to the negative fifth power.
 
+[Note: reproduced as printed, but the directions are reversed. Getting from 56,900 to 5.69 moves the decimal point four places to the left, and the power is positive, 10^4; getting from 0.000028 to 2.8 moves it five places to the right, and the power is negative, 10^−5. As the Key Takeaways put it, the power is positive for numbers greater than 1 and negative for numbers between 0 and 1.]
+
 Many quantities in chemistry are expressed in scientific notation. When performing calculations, you may have to enter a number in scientific notation into a calculator. Be sure you know how to correctly enter a number in scientific notation into your calculator. Different models of calculators require different actions for properly entering scientific notation. If in doubt, consult your instructor immediately (Figure 2.2.2).
 
 Figure 2.2.2: This calculator shows only the coefficient and the power of 10 to represent the number in scientific notation. Thus, the number being displayed is 3.84951 × 10^18, or 3,849,510,000,000,000,000. Source: "Casio" Asim Bijarani is licensed under Creative Commons Attribution 2.0 Generic.

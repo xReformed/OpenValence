@@ -174,7 +174,7 @@ export default function BranchPathPage() {
         </header>
 
         {branch.path ? (
-          branch.path.map((stage, i) => {
+          branch.path.map((stage, i, stages) => {
             const chapters = BOOK_CHAPTERS[stage.book];
             const sections = chapters.flatMap((chapter) => chapter.sections);
             const ready = sections.filter((section) => section.ready);
@@ -190,7 +190,9 @@ export default function BranchPathPage() {
               <section key={stage.book} className="mt-16">
                 <div className="flex flex-wrap items-end justify-between gap-4">
                   <div>
-                    <Eyebrow>{`Step ${i + 1} · ${stage.label}`}</Eyebrow>
+                    <Eyebrow>
+                      {stages.length > 1 ? `Step ${i + 1} · ${stage.label}` : stage.label}
+                    </Eyebrow>
                     <h2 className="mt-3 text-2xl tracking-tight">{stage.title}</h2>
                     <p className="mt-2 text-neutral-500">{stage.note}</p>
                   </div>

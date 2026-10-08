@@ -20,18 +20,26 @@ export default function SectionSidebar({
   section,
   meta,
   questions,
+  poolSize,
   answered,
+  locked,
   score,
+  passMark,
   bookQuestions,
   hasNext,
 }: {
   branch: Branch;
   section: PathSection;
   meta: BookMeta;
-  /** OpenValence's practice questions: how many, answered, and right. */
+  /** OpenValence's practice questions in the set shown: how many, answered, and right. */
   questions: number;
+  /** How many questions the section has in all; the set is drawn from them. */
+  poolSize: number;
   answered: number;
+  locked: boolean;
   score: number;
+  /** The score the set needs to unlock the next section. */
+  passMark: number;
   /** The book's own Examples and Exercises in the section. */
   bookQuestions: number;
   hasNext: boolean;
@@ -41,14 +49,20 @@ export default function SectionSidebar({
   const remaining = questions - answered;
   const practiceSummary =
     questions > 0
-      ? `${plural(questions, "practice question")} at the end of the section, checked automatically${
+      ? `${plural(questions, "practice question")} at the end of the section${
+          poolSize > questions ? `, picked at random from ${poolSize}` : ""
+        }, checked automatically${
           bookQuestions > 0
             ? `, plus ${bookQuestions} from the book to compare with its solutions`
             : ""
         }. ${
           remaining === 0
-            ? `You scored ${score} out of ${questions}.`
-            : `${answered} of ${questions} answered; answer them all to ${hasNext ? "unlock the next section" : "finish the book"}.`
+            ? `You scored ${score} out of ${questions}.${
+                locked ? ` You need ${passMark} to ${hasNext ? "unlock the next section" : "finish the book"}, so try again.` : ""
+              }`
+            : locked
+              ? `${answered} of ${questions} answered; score ${passMark} or more to ${hasNext ? "unlock the next section" : "finish the book"}.`
+              : `${answered} of ${questions} answered.`
         }`
       : bookQuestions > 0
         ? `This section has ${plural(bookQuestions, "question")} from the book. Answer each one, then compare with the book's solution.`

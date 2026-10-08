@@ -75,5 +75,372 @@
     "unit": "u",
     "tolerance": 0.0002,
     "explanation": "Add one atomic mass of sulfur and six of fluorine: 32.065 u + 6 × 18.998 u = 32.065 u + 113.988 u = 146.053 u."
+  },
+  {
+    "id": "masses-why-not-grams",
+    "type": "multiple-choice",
+    "prompt": "Why do chemists use the atomic mass unit (u) rather than grams to state the masses of individual atoms and molecules?",
+    "choices": [
+      {
+        "text": "Grams are far too large a unit to describe such tiny masses comfortably.",
+        "correct": true
+      },
+      {
+        "text": "Atoms and molecules are too small to have any mass at all.",
+        "why": "All matter has mass, including single atoms and molecules. Their masses are just very small."
+      },
+      {
+        "text": "The atomic mass unit is the SI base unit of mass.",
+        "why": "The SI unit of mass is the kilogram. The atomic mass unit is a separate scale for very small masses."
+      },
+      {
+        "text": "Grams measure volume, while atomic mass units measure mass.",
+        "why": "Grams are a unit of mass too. The problem is that they are much too big for a single atom."
+      }
+    ],
+    "explanation": "Grams and kilograms suit macroscopic objects, but the mass of one atom or molecule is a tiny fraction of a gram, so a much smaller scale, the atomic mass unit, is used."
+  },
+  {
+    "id": "masses-ignore-electrons",
+    "type": "multiple-choice",
+    "prompt": "To estimate the mass of an atom, you can add up its protons and neutrons and ignore its electrons. Why does ignoring the electrons cause so little error?",
+    "choices": [
+      {
+        "text": "Each electron's mass is tiny compared with a proton's or a neutron's.",
+        "correct": true
+      },
+      {
+        "text": "Electrons have no mass, so they add nothing to the atom.",
+        "why": "Electrons do have mass, 0.000549 u each. It is just very small."
+      },
+      {
+        "text": "Electrons are outside the nucleus, so their mass doesn't count.",
+        "why": "Every particle in the atom adds to its mass. Electrons are ignored only because they are so light."
+      },
+      {
+        "text": "An atom has far fewer electrons than it has protons.",
+        "why": "A neutral atom has as many electrons as protons. Electrons are ignored because each one is so light, not because there are few of them."
+      }
+    ],
+    "explanation": "A proton has a mass of 1.00728 u and a neutron 1.00866 u, but an electron only 0.000549 u, so the electrons barely change the total. That is why an atom's mass is close to its mass number."
+  },
+  {
+    "id": "masses-uranium-electron-mass",
+    "type": "numeric",
+    "prompt": "A neutral uranium atom has 92 electrons, and each electron has a mass of 0.000549 u. What is the total mass, in u, of all 92 electrons?",
+    "answer": 0.0505,
+    "unit": "u",
+    "explanation": "92 × 0.000549 u = 0.0505 u. That is tiny next to the atom's total mass of about 238 u, which is why electrons can be ignored when estimating an atom's mass."
+  },
+  {
+    "id": "masses-proton-electron-ratio",
+    "type": "numeric",
+    "prompt": "A proton has a mass of 1.00728 u, and an electron has a mass of 0.000549 u. About how many electrons would it take to equal the mass of one proton?",
+    "answer": 1835,
+    "explanation": "Divide the proton's mass by the electron's mass: 1.00728 u ÷ 0.000549 u ≈ 1,835. A single proton outweighs well over a thousand electrons."
+  },
+  {
+    "id": "masses-estimate-from-nucleons",
+    "type": "numeric",
+    "prompt": "An atom has 31 protons and 38 neutrons in its nucleus. Ignoring the electrons, estimate the mass of this atom in u.",
+    "answer": 69,
+    "unit": "u",
+    "explanation": "Protons and neutrons each have a mass of about 1 u, so the atom's mass is about its mass number: 31 + 38 = 69 u."
+  },
+  {
+    "id": "masses-multiple-of-carbon-12",
+    "type": "numeric",
+    "prompt": "An atom of a certain isotope is 2.25 times as massive as a carbon-12 atom. What is the mass of this atom, in u?",
+    "answer": 27.0,
+    "unit": "u",
+    "explanation": "The atomic mass unit is defined as one-twelfth of the mass of a carbon-12 atom, so a carbon-12 atom has a mass of 12 u. This atom's mass is 2.25 × 12 u = 27 u."
+  },
+  {
+    "id": "masses-weighted-average-method",
+    "type": "multiple-choice",
+    "prompt": "How is the atomic mass of an element found from the masses of its isotopes?",
+    "choices": [
+      {
+        "text": "Multiply each isotope's mass by its fractional occurrence, then add the products.",
+        "correct": true
+      },
+      {
+        "text": "Add the isotope masses, then divide by the number of isotopes.",
+        "why": "That is a simple average. It counts a rare isotope as heavily as a common one."
+      },
+      {
+        "text": "Use the mass of the most common isotope, and ignore the others.",
+        "why": "The other isotopes count too. Each one contributes in proportion to how common it is."
+      },
+      {
+        "text": "Add the masses of all the isotopes together, with no division.",
+        "why": "That gives a total, not an average. An element with two isotopes would come out about twice as heavy as either one."
+      }
+    ],
+    "explanation": "The atomic mass is a weighted average: each isotope's mass is multiplied by its fractional occurrence (in decimal form), and the products are added. Common isotopes therefore count more than rare ones."
+  },
+  {
+    "id": "masses-magnesium-atomic-mass",
+    "type": "numeric",
+    "prompt": "Magnesium has three naturally occurring isotopes: 78.99% magnesium-24 (mass 23.985 u), 10.00% magnesium-25 (mass 24.986 u), and 11.01% magnesium-26 (mass 25.983 u). What is the atomic mass of magnesium, in u?",
+    "answer": 24.305,
+    "unit": "u",
+    "explanation": "Multiply each mass by its fractional occurrence and add: 0.7899 × 23.985 u = 18.946 u; 0.1000 × 24.986 u = 2.499 u; 0.1101 × 25.983 u = 2.861 u. The sum is 24.305 u."
+  },
+  {
+    "id": "masses-copper-remaining-isotope",
+    "type": "numeric",
+    "prompt": "Every copper atom is either copper-63, with a mass of 62.930 u, or copper-65, with a mass of 64.928 u. If 69.17% of copper atoms are copper-63, what is the atomic mass of copper, in u, to two decimal places?",
+    "answer": 63.55,
+    "unit": "u",
+    "tolerance": 0.002,
+    "explanation": "The rest of the atoms, 100% − 69.17% = 30.83%, are copper-65. Then 0.6917 × 62.930 u = 43.529 u and 0.3083 × 64.928 u = 20.017 u, which add to 63.546 u, or 63.55 u."
+  },
+  {
+    "id": "masses-iridium-common-isotope",
+    "type": "multiple-choice",
+    "prompt": "Iridium consists of two isotopes, iridium-191 and iridium-193, and its atomic mass is 192.217 u. What can you conclude?",
+    "choices": [
+      {
+        "text": "Iridium-193 atoms are more common than iridium-191 atoms.",
+        "correct": true
+      },
+      {
+        "text": "Iridium-191 atoms are more common than iridium-193 atoms.",
+        "why": "A weighted average lies closer to the more common isotope, and 192.217 u is closer to 193 than to 191."
+      },
+      {
+        "text": "The two isotopes are present in equal amounts.",
+        "why": "Equal amounts would give an average halfway between the two masses, about 192 u."
+      },
+      {
+        "text": "Some iridium atoms have a mass of exactly 192.217 u.",
+        "why": "Each atom is one isotope or the other. The atomic mass is an average, and no single atom need have it."
+      }
+    ],
+    "explanation": "The atomic mass is pulled toward the isotope that makes up more of the atoms. Since 192.217 u is closer to 193 u than to 191 u, iridium-193 must be the more common isotope."
+  },
+  {
+    "id": "masses-percent-from-atomic-mass",
+    "type": "numeric",
+    "prompt": "Suppose an element consists of only two isotopes, one with a mass of 46 u and one with a mass of 48 u. Its atomic mass is 46.4 u. What percentage of its atoms have a mass of 46 u?",
+    "answer": 80.0,
+    "unit": "%",
+    "explanation": "Let x be the fractional occurrence of the 46 u isotope, so 1 − x is that of the 48 u isotope: 46x + 48(1 − x) = 46.4, so 48 − 2x = 46.4 and x = 0.80. So 80% of the atoms have a mass of 46 u, which is why the atomic mass is so close to 46 u."
+  },
+  {
+    "id": "masses-heavy-elements-not-whole",
+    "type": "multiple-choice",
+    "prompt": "Many atomic masses, especially those of heavier elements, are not very close to whole numbers. According to the section, what is part of the reason?",
+    "choices": [
+      {
+        "text": "Heavier elements tend to have more isotopes mixed together.",
+        "correct": true
+      },
+      {
+        "text": "Heavier atoms have many electrons, which add a lot of mass.",
+        "why": "Each electron is only 0.000549 u, so even 80 electrons add less than 0.05 u."
+      },
+      {
+        "text": "Heavier atoms can contain part of a proton or a neutron.",
+        "why": "Every nucleus has a whole number of protons and neutrons. The fraction comes from averaging isotopes."
+      },
+      {
+        "text": "Heavier elements each consist of only a single isotope.",
+        "why": "A single isotope has a mass close to a whole number (uranium-238 is 238.050788 u). Mixing isotopes is what pulls the average away from whole numbers."
+      }
+    ],
+    "explanation": "An element's atomic mass is a weighted average over its isotopes, and larger atoms tend to have more isotopes in the mix (tin holds the record with 10), so their averages often fall far from whole numbers."
+  },
+  {
+    "id": "masses-neon-sample-total",
+    "type": "numeric",
+    "prompt": "The atomic mass of neon is 20.180 u. A sample of neon with the natural mixture of isotopes contains 5,000 atoms. What is the total mass of these atoms, in u?",
+    "answer": 100900,
+    "unit": "u",
+    "explanation": "The atomic mass is the average mass of the atoms, weighted by how common each isotope is, so the total is 5,000 × 20.180 u = 100,900 u (1.009 × 10^5 u). No single neon atom has a mass of 20.180 u, but the average works for the whole sample."
+  },
+  {
+    "id": "masses-molecular-mass-meaning",
+    "type": "multiple-choice",
+    "prompt": "What is the molecular mass of a molecule?",
+    "choices": [
+      {
+        "text": "The sum of the masses of all the atoms in the molecule",
+        "correct": true
+      },
+      {
+        "text": "The sum of one atomic mass for each element in the formula",
+        "why": "Every atom counts, not every element. For N2O3, nitrogen's mass is added twice and oxygen's three times."
+      },
+      {
+        "text": "The average of the atomic masses of the atoms in the molecule",
+        "why": "The masses of the atoms add up; they aren't averaged. A molecule is heavier than any one atom in it."
+      },
+      {
+        "text": "The mass of the heaviest atom in the molecule",
+        "why": "Every atom in the molecule contributes to its mass, not just the heaviest one."
+      }
+    ],
+    "explanation": "The molecular mass is the sum of the masses of the atoms in a molecule, so you count how many atoms of each element the formula shows and add up all of their atomic masses."
+  },
+  {
+    "id": "masses-isotope-in-molecule",
+    "type": "multiple-choice",
+    "prompt": "Bromine's atomic mass is 79.904 u. Any single HBr molecule contains one particular isotope of bromine, either bromine-79 or bromine-81. Which mass should you use for bromine when you calculate the molecular mass of HBr?",
+    "choices": [
+      {
+        "text": "79.904 u, the atomic mass of bromine",
+        "correct": true
+      },
+      {
+        "text": "About 79 u, the mass of a bromine-79 atom",
+        "why": "Even though each molecule holds one particular isotope, the molecular mass uses the weighted-average atomic mass for every atom."
+      },
+      {
+        "text": "About 81 u, the mass of a bromine-81 atom",
+        "why": "A molecular mass uses each element's weighted-average atomic mass, not the mass of one isotope."
+      },
+      {
+        "text": "35 u, from the 35 protons in a bromine atom",
+        "why": "35 is bromine's atomic number, its count of protons. It leaves out the neutrons and is not the atom's mass."
+      }
+    ],
+    "explanation": "Although each atom in a molecule is a particular isotope, the section uses the weighted average, the atomic mass, for each atom when finding a molecular mass. For bromine that is 79.904 u."
+  },
+  {
+    "id": "masses-specific-n2-molecule",
+    "type": "numeric",
+    "prompt": "One particular N2 molecule is made of one nitrogen-14 atom and one nitrogen-15 atom. Estimating each atom's mass from its mass number, what is the mass of this one molecule, in u?",
+    "answer": 29,
+    "unit": "u",
+    "explanation": "Each atom's mass is about its mass number, so this molecule's mass is about 14 u + 15 u = 29 u. The molecular mass of N2, 28.014 u, is different because it uses nitrogen's weighted-average atomic mass, which describes the natural mix of isotopes."
+  },
+  {
+    "id": "masses-greatest-molecular-mass",
+    "type": "multiple-choice",
+    "prompt": "Which of these molecules has the greatest molecular mass? (Atomic masses: H, 1.008 u; C, 12.011 u; N, 14.007 u; O, 15.999 u; F, 18.998 u.)",
+    "choices": [
+      {
+        "text": "HF",
+        "correct": true
+      },
+      {
+        "text": "CH4",
+        "why": "CH4 has the most atoms, but four of them are light hydrogen atoms: 12.011 u + 4 × 1.008 u = 16.043 u."
+      },
+      {
+        "text": "NH3",
+        "why": "14.007 u + 3 × 1.008 u = 17.031 u, which is less than HF's 20.006 u."
+      },
+      {
+        "text": "H2O",
+        "why": "2 × 1.008 u + 15.999 u = 18.015 u, which is less than HF's 20.006 u."
+      }
+    ],
+    "explanation": "HF: 1.008 u + 18.998 u = 20.006 u, the largest of the four. HF has the fewest atoms, but fluorine is heavier than C, N or O, and the extra hydrogens in the others add only about 1 u each."
+  },
+  {
+    "id": "masses-ethanol-dimethyl-ether",
+    "type": "multiple-choice",
+    "prompt": "Ethanol's formula is written C2H5OH, and dimethyl ether's is written CH3OCH3. How do their molecular masses compare?",
+    "choices": [
+      {
+        "text": "They are equal, because each has 2 C, 6 H, and 1 O atoms.",
+        "correct": true
+      },
+      {
+        "text": "Dimethyl ether's is larger, because it has two CH3 groups.",
+        "why": "Count every atom: CH3OCH3 has 2 C, 6 H and 1 O, exactly the same atoms as C2H5OH."
+      },
+      {
+        "text": "Ethanol's is larger, because it has an extra OH group.",
+        "why": "The OH is part of ethanol's 6 H and 1 O, not an addition. Both molecules contain 2 C, 6 H and 1 O."
+      },
+      {
+        "text": "They can't be compared without knowing which isotopes are present.",
+        "why": "Molecular masses use the weighted-average atomic masses, so both come to 46.069 u."
+      }
+    ],
+    "explanation": "Molecular mass depends only on which atoms are present and how many. Counting all the atoms in each formula gives 2 C, 6 H and 1 O for both, so both molecular masses are 2 × 12.011 u + 6 × 1.008 u + 15.999 u = 46.069 u."
+  },
+  {
+    "id": "masses-p4o10-oxygen-vs-phosphorus",
+    "type": "numeric",
+    "prompt": "In one molecule of P4O10, how much greater, in u, is the total mass of the oxygen atoms than the total mass of the phosphorus atoms? (Atomic masses: P, 30.974 u; O, 15.999 u.)",
+    "answer": 36.094,
+    "unit": "u",
+    "explanation": "Oxygen: 10 × 15.999 u = 159.990 u. Phosphorus: 4 × 30.974 u = 123.896 u. The difference is 159.990 u − 123.896 u = 36.094 u. Each oxygen atom is lighter, but there are many more of them."
+  },
+  {
+    "id": "masses-disulfur-decafluoride",
+    "type": "numeric",
+    "prompt": "What is the molecular mass of disulfur decafluoride, in u? (Atomic masses: S, 32.065 u; F, 18.998 u.)",
+    "answer": 254.11,
+    "unit": "u",
+    "explanation": "Di- means 2 and deca- means 10, so the formula is S2F10. 2 × 32.065 u + 10 × 18.998 u = 64.130 u + 189.980 u = 254.110 u."
+  },
+  {
+    "id": "masses-pentane-hydrogen-count",
+    "type": "numeric",
+    "prompt": "A pentane molecule contains only carbon and hydrogen atoms. It has 5 carbon atoms, and its molecular mass is 72.151 u. How many hydrogen atoms does one pentane molecule contain? (Atomic masses: C, 12.011 u; H, 1.008 u.)",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "The carbon atoms account for 5 × 12.011 u = 60.055 u. The rest, 72.151 u − 60.055 u = 12.096 u, is hydrogen, and 12.096 u ÷ 1.008 u = 12. Pentane is C5H12."
+  },
+  {
+    "id": "masses-identify-x-in-xf6",
+    "type": "multiple-choice",
+    "prompt": "A gas has the molecular formula XF6 and a molecular mass of 352.017 u. Which element is X? (Atomic masses: F, 18.998 u; Ni, 58.693 u; Mo, 95.94 u; W, 183.84 u; U, 238.029 u.)",
+    "choices": [
+      {
+        "text": "uranium",
+        "correct": true
+      },
+      {
+        "text": "nickel",
+        "why": "Dividing 352.017 u by 6 gives about 58.7 u, but the molecular mass is one X atom plus six fluorine atoms, not six X atoms."
+      },
+      {
+        "text": "tungsten",
+        "why": "With tungsten, XF6 would have a molecular mass of 183.84 u + 6 × 18.998 u = 297.83 u, not 352.017 u."
+      },
+      {
+        "text": "molybdenum",
+        "why": "With molybdenum, XF6 would have a molecular mass of 95.94 u + 6 × 18.998 u = 209.93 u, not 352.017 u."
+      }
+    ],
+    "explanation": "Subtract the six fluorine atoms: 352.017 u − 6 × 18.998 u = 352.017 u − 113.988 u = 238.029 u, which is the atomic mass of uranium. The gas is UF6."
+  },
+  {
+    "id": "masses-s8-vs-p4-molecule",
+    "type": "numeric",
+    "prompt": "Sulfur normally exists as S8 molecules, and phosphorus as P4 molecules. How many times as massive as one P4 molecule is one S8 molecule? (Atomic masses: P, 30.974 u; S, 32.065 u.)",
+    "answer": 2.07,
+    "explanation": "S8: 8 × 32.065 u = 256.520 u. P4: 4 × 30.974 u = 123.896 u. Then 256.520 u ÷ 123.896 u = 2.07. It is a little more than 2, even though S8 has exactly twice as many atoms, because a sulfur atom is heavier than a phosphorus atom."
+  },
+  {
+    "id": "masses-sf6-stands-in-for-sarin",
+    "type": "multiple-choice",
+    "prompt": "Scientists who study how the nerve toxin sarin would spread through the air use sulfur hexafluoride, SF6, in its place. Why does SF6 work as a model for sarin?",
+    "choices": [
+      {
+        "text": "Its molecular mass is similar to sarin's, so it behaves similarly as a vapor.",
+        "correct": true
+      },
+      {
+        "text": "It has the same molecular formula as sarin, but it is nontoxic.",
+        "why": "Sarin is C4H10FPO2, a different formula entirely. What the two share is a similar molecular mass."
+      },
+      {
+        "text": "It reacts with sarin and makes it harmless, so it is safe to use.",
+        "why": "SF6 is very chemically inert. It is used in place of sarin, not to destroy it."
+      },
+      {
+        "text": "It is a normal part of the air, so it is easy to obtain and track.",
+        "why": "SF6 is not a normal part of the atmosphere, which is why there is little contamination from natural sources when it is tracked."
+      }
+    ],
+    "explanation": "Sarin and SF6 have similar molecular masses, so they have similar physical properties in the vapor phase. SF6 is also nontoxic and easy to detect at low levels, so researchers can study it without risk."
   }
 ]

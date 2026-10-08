@@ -1,9 +1,9 @@
 import type { PracticeAnswer } from "./types";
 
 /* Each of OpenValence's questions (questions/ in the repo, served from the
-   database by the API) gets one attempt,
-   kept in this browser only, like chat history. A section's score comes from
-   these, and its Next link opens once all of its questions are answered. */
+   database by the API) gets one attempt, kept in this browser only, like chat
+   history. A section's score comes from these, and its Next link opens once a
+   set of its questions reaches the pass mark (questionSets.ts). */
 
 const KEY = "chemia.practice";
 
@@ -35,6 +35,21 @@ export function subscribeToPractice(listener: () => void) {
 
 export function getAnswers(): Readonly<Record<string, PracticeAnswer>> {
   return answers;
+}
+
+/* Forget these questions' attempts, so they can be tried again: when "Try
+   again" brings back questions from an earlier set (questionSets.ts). */
+export function clearAnswers(ids: string[]) {
+  if (!ids.some((id) => answers[id])) return;
+  const next = { ...answers };
+  for (const id of ids) delete next[id];
+  answers = next;
+  try {
+    localStorage.setItem(KEY, JSON.stringify(answers));
+  } catch {
+    // Best effort, as below.
+  }
+  listeners.forEach((listener) => listener());
 }
 
 /* The first attempt is the one that counts. */

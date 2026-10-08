@@ -98,7 +98,8 @@ describe("the corpus", () => {
     ),
   );
 
-  it("splits every section the same way as before", async () => {
+  /* Reads all 224 sections, so it gets more than the default 5 seconds. */
+  it("splits every section the same way as before", { timeout: 30_000 }, async () => {
     const found: Record<string, string[]> = {};
     for (const { book, section } of sections) {
       const text = await loadSectionText(section.file);

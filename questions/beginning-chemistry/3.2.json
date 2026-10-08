@@ -26,7 +26,7 @@
   {
     "id": "electrons-per-proton",
     "type": "numeric",
-    "prompt": "Using Table 3.2.1, about how many electrons together have the same mass as one proton?",
+    "prompt": "A proton has a mass of about 1.6 × 10^−27 kg, and an electron about 9.1 × 10^−31 kg. About how many electrons together have the same mass as one proton?",
     "answer": 1758.24175824,
     "tolerance": 0.03,
     "explanation": "Divide the masses: (1.6 × 10^−27 kg)/(9.1 × 10^−31 kg) ≈ 1,800, or 1.8 × 10^3. Electrons are so light that almost all of an atom's mass is in its nucleus, with the protons and neutrons."
@@ -95,5 +95,461 @@
     "prompt": "How many electrons are in a neutral atom of ⁵⁹₂₇Co?",
     "answer": 27,
     "explanation": "A neutral atom has as many electrons as protons. The atomic number, 27, is the number of protons, so the atom has 27 electrons. (59 is the mass number, and 59 − 27 = 32 is the number of neutrons.)"
+  },
+  {
+    "id": "atomic-atom-definition",
+    "type": "multiple-choice",
+    "prompt": "Which of these is the definition of an atom?",
+    "choices": [
+      {
+        "text": "The smallest piece of an element that keeps the identity of that element",
+        "correct": true
+      },
+      {
+        "text": "A substance that cannot be broken down into simpler substances by ordinary chemical means",
+        "why": "That is the definition of an element, the substance itself. An atom is the smallest piece of an element."
+      },
+      {
+        "text": "The smallest piece of a compound that keeps the identity of that compound",
+        "why": "An atom is a piece of a single element. Compounds are combinations of more than one element, so they are built from atoms of different elements."
+      },
+      {
+        "text": "Any very small particle of matter, such as a grain of dust",
+        "why": "Even a tiny speck of matter contains many millions of atoms; the period at the end of a printed sentence has several million."
+      }
+    ],
+    "explanation": "An atom is the smallest piece of an element that maintains the identity of that element. Atoms are extremely small: even the period at the end of a sentence contains several million of them."
+  },
+  {
+    "id": "atomic-atom-width",
+    "type": "numeric",
+    "prompt": "About fifty million atoms lined up in a row would make a line 1 cm long. Based on this, about how wide is a single atom, in centimeters?",
+    "answer": 2e-08,
+    "unit": "cm",
+    "explanation": "Divide the length of the line by the number of atoms in it: 1 cm ÷ (5 × 10^7 atoms) = 2 × 10^−8 cm per atom."
+  },
+  {
+    "id": "atomic-not-indivisible",
+    "type": "multiple-choice",
+    "prompt": "The word atom comes from a Greek word meaning \"indivisible.\" Why is that meaning no longer accurate?",
+    "choices": [
+      {
+        "text": "Atoms are composed of smaller subatomic particles.",
+        "correct": true
+      },
+      {
+        "text": "Atoms can combine with other atoms to form compounds.",
+        "why": "Combining isn't dividing: atoms combine whole, in whole-number ratios, so this doesn't show that atoms have parts."
+      },
+      {
+        "text": "Atoms are too small to be seen one at a time.",
+        "why": "Being tiny doesn't make something divisible. The name is inaccurate because atoms have smaller parts."
+      },
+      {
+        "text": "Atoms of different elements are different from one another.",
+        "why": "Differences between elements don't show that a single atom has smaller parts inside it."
+      }
+    ],
+    "explanation": "Atoms were once thought to be indivisible, but we now know they are made of smaller subatomic particles: electrons, protons, and neutrons."
+  },
+  {
+    "id": "atomic-particle-charges",
+    "type": "multiple-choice",
+    "prompt": "Which list gives the charges of the proton, the neutron, and the electron, in that order?",
+    "choices": [
+      {
+        "text": "1+, none, 1−",
+        "correct": true
+      },
+      {
+        "text": "1−, none, 1+",
+        "why": "The proton and electron charges are swapped: the proton is positive (p^+) and the electron is negative (e^−)."
+      },
+      {
+        "text": "1+, 1−, none",
+        "why": "The neutron is the particle with no charge; the electron carries the 1− charge."
+      },
+      {
+        "text": "none, 1+, 1−",
+        "why": "The proton has the 1+ charge; the neutron is the particle with no charge."
+      }
+    ],
+    "explanation": "A proton has a 1+ charge, a neutron has no charge, and an electron has a 1− charge. Their symbols show this: p^+, n^0, and e^−."
+  },
+  {
+    "id": "atomic-nucleus-contents",
+    "type": "multiple-choice",
+    "prompt": "Which subatomic particles make up the nucleus of an atom?",
+    "choices": [
+      {
+        "text": "Protons and neutrons",
+        "correct": true
+      },
+      {
+        "text": "Protons and electrons",
+        "why": "Electrons are outside the nucleus, orbiting around it. The neutrons are in the nucleus with the protons."
+      },
+      {
+        "text": "Neutrons and electrons",
+        "why": "Electrons orbit outside the nucleus, and the protons are inside it with the neutrons."
+      },
+      {
+        "text": "Protons, neutrons, and electrons",
+        "why": "Only the protons and neutrons are in the nucleus; the electrons orbit in the space around it."
+      }
+    ],
+    "explanation": "The relatively massive protons and neutrons are collected in the nucleus at the center of the atom, and the electrons orbit in the space around it. This nuclear model came from Ernest Rutherford's experiments in the 1910s."
+  },
+  {
+    "id": "atomic-nitrogen-atomic-number",
+    "type": "multiple-choice",
+    "prompt": "Every nitrogen atom has 7 protons. Which statement is true of every nitrogen atom?",
+    "choices": [
+      {
+        "text": "Its atomic number is 7.",
+        "correct": true
+      },
+      {
+        "text": "Its mass number is 7.",
+        "why": "The mass number counts the neutrons as well as the protons, so it is 7 plus the number of neutrons."
+      },
+      {
+        "text": "It has 7 neutrons.",
+        "why": "Atoms of the same element can have different numbers of neutrons, so not every nitrogen atom has 7."
+      },
+      {
+        "text": "Its mass number is 14.",
+        "why": "A nitrogen atom with 7 neutrons has a mass number of 14, but nitrogen atoms can have different numbers of neutrons, so their mass numbers can differ."
+      }
+    ],
+    "explanation": "The atomic number is the number of protons, which is the same for every atom of an element. The number of neutrons, and so the mass number, can differ from one isotope to another."
+  },
+  {
+    "id": "atomic-isotope-definition",
+    "type": "multiple-choice",
+    "prompt": "What are isotopes?",
+    "choices": [
+      {
+        "text": "Atoms of the same element with different numbers of neutrons",
+        "correct": true
+      },
+      {
+        "text": "Atoms of the same element with different numbers of protons",
+        "why": "The number of protons identifies the element. Atoms with different numbers of protons are atoms of different elements."
+      },
+      {
+        "text": "Atoms of different elements with the same mass number",
+        "why": "Isotopes must be atoms of the same element, with the same number of protons. Atoms of different elements can share a mass number without being isotopes."
+      },
+      {
+        "text": "Atoms of different elements with the same number of neutrons",
+        "why": "Isotopes are atoms of the same element. Sharing a number of neutrons doesn't make atoms of different elements isotopes."
+      }
+    ],
+    "explanation": "Isotopes are atoms of the same element, so they have the same number of protons, but they have different numbers of neutrons. Most naturally occurring elements exist as isotopes."
+  },
+  {
+    "id": "atomic-deuterium-difference",
+    "type": "multiple-choice",
+    "prompt": "Deuterium is an isotope of hydrogen. How does a deuterium atom differ from most hydrogen atoms?",
+    "choices": [
+      {
+        "text": "It has one neutron, while most hydrogen atoms have none.",
+        "correct": true
+      },
+      {
+        "text": "It has two protons, while most hydrogen atoms have one.",
+        "why": "An atom with two protons wouldn't be hydrogen at all. Every hydrogen atom has exactly one proton."
+      },
+      {
+        "text": "It has two electrons, while most hydrogen atoms have one.",
+        "why": "Isotopes differ in the number of neutrons in the nucleus. A neutral deuterium atom has one proton, so it has one electron."
+      },
+      {
+        "text": "It has two neutrons, while most hydrogen atoms have one.",
+        "why": "Most hydrogen atoms have a single proton and no neutron at all; deuterium has just one neutron."
+      }
+    ],
+    "explanation": "Every hydrogen atom has one proton, and most have no neutrons. About one hydrogen atom in a million is deuterium, with one proton and one neutron in its nucleus."
+  },
+  {
+    "id": "atomic-tritium-mass-number",
+    "type": "numeric",
+    "prompt": "Tritium is a very rare isotope of hydrogen. What is the mass number of a tritium atom?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "A tritium nucleus has one proton, like every hydrogen atom, plus two neutrons. The mass number is the sum of the protons and neutrons: 1 + 2 = 3."
+  },
+  {
+    "id": "atomic-neutral-atom-zero-charge",
+    "type": "multiple-choice",
+    "prompt": "Why does a neutral atom have an overall charge of zero?",
+    "choices": [
+      {
+        "text": "It has the same number of electrons as protons.",
+        "correct": true
+      },
+      {
+        "text": "It has the same number of neutrons as protons.",
+        "why": "Neutrons have no charge, so they can't balance the protons' charge. Many neutral atoms have more neutrons than protons."
+      },
+      {
+        "text": "Its neutrons balance the charge of its protons.",
+        "why": "Neutrons have no charge. The positive charge of the protons is balanced by the negative charge of the electrons."
+      },
+      {
+        "text": "It has the same number of electrons as neutrons.",
+        "why": "Neutrons have no charge, so matching them to the electrons balances nothing. The electrons must match the protons."
+      }
+    ],
+    "explanation": "A neutral atom has the same number of electrons as protons, so the negative charges of the electrons exactly cancel the positive charges of the protons. Neutrons have no charge and don't affect the balance."
+  },
+  {
+    "id": "atomic-mass-number-from-electrons",
+    "type": "numeric",
+    "prompt": "A neutral atom has 30 electrons and 36 neutrons. What is its mass number?",
+    "answer": 66,
+    "tolerance": 0,
+    "explanation": "A neutral atom has as many protons as electrons, so this atom has 30 protons. The mass number is protons plus neutrons: 30 + 36 = 66."
+  },
+  {
+    "id": "atomic-atomic-number-from-neutrons",
+    "type": "numeric",
+    "prompt": "An atom has a mass number of 75, and its nucleus contains 42 neutrons. What is its atomic number?",
+    "answer": 33,
+    "tolerance": 0,
+    "explanation": "The mass number is the number of protons plus neutrons, so the atom has 75 − 42 = 33 protons. The atomic number is the number of protons: 33."
+  },
+  {
+    "id": "atomic-tin-isotope-neutron-difference",
+    "type": "numeric",
+    "prompt": "Tin-116 and tin-120 are both isotopes of tin. How many more neutrons does an atom of tin-120 have than an atom of tin-116?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Both atoms are tin, so they have the same number of protons. The whole difference in mass number comes from neutrons: 120 − 116 = 4 more neutrons."
+  },
+  {
+    "id": "atomic-symbol-capitalization",
+    "type": "multiple-choice",
+    "prompt": "Which of these atomic symbols is written correctly?",
+    "choices": [
+      {
+        "text": "Br",
+        "correct": true
+      },
+      {
+        "text": "CA",
+        "why": "The second letter of a symbol is always lowercase; calcium's symbol is Ca."
+      },
+      {
+        "text": "zn",
+        "why": "The first letter of a symbol is always capitalized; zinc's symbol is Zn."
+      },
+      {
+        "text": "Mag",
+        "why": "An atomic symbol has only one or two letters; magnesium's symbol is Mg."
+      }
+    ],
+    "explanation": "An atomic symbol has one or two letters. The first letter is always capitalized and the second, if there is one, is lowercase, as in Br for bromine."
+  },
+  {
+    "id": "atomic-silver-symbol",
+    "type": "multiple-choice",
+    "prompt": "Which element has the atomic symbol Ag?",
+    "choices": [
+      {
+        "text": "silver",
+        "correct": true
+      },
+      {
+        "text": "argon",
+        "why": "Argon's symbol is Ar."
+      },
+      {
+        "text": "gold",
+        "why": "Gold's symbol is Au."
+      },
+      {
+        "text": "aluminum",
+        "why": "Aluminum's symbol is Al."
+      }
+    ],
+    "explanation": "Ag is the symbol for silver. It is one of the symbols to memorize, since it doesn't come from the element's English name."
+  },
+  {
+    "id": "atomic-latin-symbol",
+    "type": "multiple-choice",
+    "prompt": "Which element's atomic symbol does not come from its English name?",
+    "choices": [
+      {
+        "text": "sodium",
+        "correct": true
+      },
+      {
+        "text": "nickel",
+        "why": "Nickel's symbol, Ni, is the first two letters of its English name."
+      },
+      {
+        "text": "neon",
+        "why": "Neon's symbol, Ne, is the first two letters of its English name."
+      },
+      {
+        "text": "nitrogen",
+        "why": "Nitrogen's symbol, N, is the first letter of its English name."
+      }
+    ],
+    "explanation": "Sodium's symbol is Na, which comes from its Latin name, natrium. The symbols for nickel (Ni), neon (Ne), and nitrogen (N) come from their English names."
+  },
+  {
+    "id": "atomic-periodic-table-order",
+    "type": "multiple-choice",
+    "prompt": "In what order are the elements listed on the periodic table?",
+    "choices": [
+      {
+        "text": "In order of increasing atomic number",
+        "correct": true
+      },
+      {
+        "text": "In order of increasing mass number",
+        "why": "A mass number belongs to a particular isotope, and one element can have several. The table is ordered by atomic number."
+      },
+      {
+        "text": "In alphabetical order by name",
+        "why": "The table isn't alphabetical. Elements are listed in order of ascending atomic number, starting with hydrogen."
+      },
+      {
+        "text": "In order of increasing number of neutrons",
+        "why": "Atoms of the same element can have different numbers of neutrons, so neutrons can't set an element's place. Atomic number does."
+      }
+    ],
+    "explanation": "The elements on the periodic table are listed in order of ascending atomic number, so each element's place is set by the number of protons in its atoms."
+  },
+  {
+    "id": "atomic-nonmetal-location",
+    "type": "multiple-choice",
+    "prompt": "Where are the nonmetals found on the periodic table?",
+    "choices": [
+      {
+        "text": "In the upper right-hand corner",
+        "correct": true
+      },
+      {
+        "text": "In the lower left-hand corner",
+        "why": "The lower left-hand part of the table holds metals. The nonmetals are in the upper right-hand corner."
+      },
+      {
+        "text": "In the center of the table",
+        "why": "The elements in the center of the table are metals. Only the upper right-hand corner holds nonmetals."
+      },
+      {
+        "text": "Scattered across the whole table",
+        "why": "The nonmetals are grouped together in the upper right-hand corner, on one side of a heavy line; all other elements are metals."
+      }
+    ],
+    "explanation": "Nonmetals are in the upper right-hand corner of the periodic table, on one side of the heavy line that splits the right side of the chart. All other elements are metals."
+  },
+  {
+    "id": "atomic-lead-208-mass-number",
+    "type": "multiple-choice",
+    "prompt": "In the isotope symbol ²⁰⁸₈₂Pb, what does the number 208 represent?",
+    "choices": [
+      {
+        "text": "The number of protons plus the number of neutrons",
+        "correct": true
+      },
+      {
+        "text": "The number of neutrons",
+        "why": "208 counts the protons too. This atom has 208 − 82 = 126 neutrons."
+      },
+      {
+        "text": "The number of protons",
+        "why": "The number of protons is the atomic number, the bottom number, 82."
+      },
+      {
+        "text": "The number of protons, neutrons, and electrons together",
+        "why": "Electrons aren't counted in the mass number. It counts only the particles in the nucleus."
+      }
+    ],
+    "explanation": "The top number in an isotope symbol is the mass number: the sum of the protons and neutrons in the nucleus. The bottom number, 82, is the atomic number."
+  },
+  {
+    "id": "atomic-copper-65-name",
+    "type": "multiple-choice",
+    "prompt": "Which name describes the isotope ⁶⁵₂₉Cu?",
+    "choices": [
+      {
+        "text": "copper-65",
+        "correct": true
+      },
+      {
+        "text": "copper-29",
+        "why": "The number after the name is the mass number, 65, not the atomic number, 29."
+      },
+      {
+        "text": "copper-36",
+        "why": "36 is the number of neutrons (65 − 29). The number after the name is the mass number."
+      },
+      {
+        "text": "copper-94",
+        "why": "Adding 65 and 29 counts the protons twice; the mass number, 65, already includes them."
+      }
+    ],
+    "explanation": "An isotope can be named by writing its mass number after the element's name. The mass number in ⁶⁵₂₉Cu is the top number, 65, so this is copper-65."
+  },
+  {
+    "id": "atomic-same-neutron-count",
+    "type": "multiple-choice",
+    "prompt": "Which atom has the same number of neutrons as ⁴⁰₂₀Ca?",
+    "choices": [
+      {
+        "text": "³⁹₁₉K",
+        "correct": true
+      },
+      {
+        "text": "⁴⁰₁₈Ar",
+        "why": "It has the same mass number, but 40 − 18 = 22 neutrons. Equal mass numbers don't mean equal numbers of neutrons."
+      },
+      {
+        "text": "⁴²₂₀Ca",
+        "why": "It's the same element, but this isotope has 42 − 20 = 22 neutrons."
+      },
+      {
+        "text": "²⁰₁₀Ne",
+        "why": "Its mass number is 20, but it has only 20 − 10 = 10 neutrons. The match has to be in neutrons, not in the mass number."
+      }
+    ],
+    "explanation": "Subtract the atomic number from the mass number to count neutrons. ⁴⁰₂₀Ca has 40 − 20 = 20 neutrons, and ³⁹₁₉K has 39 − 19 = 20."
+  },
+  {
+    "id": "atomic-equal-particle-counts",
+    "type": "multiple-choice",
+    "prompt": "Which neutral atom has equal numbers of protons, neutrons, and electrons?",
+    "choices": [
+      {
+        "text": "²⁸₁₄Si",
+        "correct": true
+      },
+      {
+        "text": "²⁹₁₄Si",
+        "why": "It has 14 protons and 14 electrons, but 29 − 14 = 15 neutrons."
+      },
+      {
+        "text": "²⁷₁₃Al",
+        "why": "It has 13 protons and 13 electrons, but 27 − 13 = 14 neutrons."
+      },
+      {
+        "text": "¹⁹₉F",
+        "why": "It has 9 protons and 9 electrons, but 19 − 9 = 10 neutrons."
+      }
+    ],
+    "explanation": "A neutral atom always has as many electrons as protons, so look for the atom with as many neutrons as protons. ²⁸₁₄Si has 14 protons, 28 − 14 = 14 neutrons, and 14 electrons."
+  },
+  {
+    "id": "atomic-bromine-81-particle-total",
+    "type": "numeric",
+    "prompt": "Bromine has an atomic number of 35. How many protons, neutrons, and electrons in total are in a neutral atom of bromine-81?",
+    "answer": 116,
+    "tolerance": 0,
+    "explanation": "Bromine-81 has 35 protons and 81 − 35 = 46 neutrons, and as a neutral atom it has 35 electrons. The total is 35 + 46 + 35 = 116."
   }
 ]

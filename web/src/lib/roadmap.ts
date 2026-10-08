@@ -65,14 +65,8 @@ export const BRANCHES: Branch[] = [
       {
         book: "beginning-chemistry",
         label: "Start here",
-        title: "Beginning Chemistry (Ball)",
+        title: "Beginning Chemistry",
         note: "A gentler first pass through the core ideas and vocabulary.",
-      },
-      {
-        book: "chemistry-1e",
-        label: "Then",
-        title: "Chemistry 1e (OpenStax)",
-        note: "The full general chemistry sequence, in more depth.",
       },
     ],
   },

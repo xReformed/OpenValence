@@ -37,7 +37,7 @@ else
 
 // One section's practice questions, in order, in the web app's Question shape
 // (web/src/lib/types.ts). An empty list when the section has none.
-app.MapGet("/api/questions/{book}/{section}", async (string book, string section, IServiceProvider services) =>
+app.MapGet("/api/questions/{book}/{section}", async (string book, string section, IServiceProvider services, ILogger<Program> logger) =>
 {
     var store = services.GetService<QuestionStore>();
     if (store is null)
@@ -52,6 +52,14 @@ app.MapGet("/api/questions/{book}/{section}", async (string book, string section
     catch (InvalidOperationException error)
     {
         return Results.Problem(error.Message, statusCode: 503);
+    }
+    catch (NpgsqlException error)
+    {
+        // The database couldn't be reached (offline, a DNS hiccup, a dropped
+        // VPN) or turned the connection down. The page shows its "couldn't be
+        // loaded" note, and a reload tries again.
+        logger.LogWarning(error, "Couldn't read the questions for {Book} {Section} from the database", book, section);
+        return Results.Problem("The question database isn't available right now. Try again in a moment.", statusCode: 503);
     }
 });
 

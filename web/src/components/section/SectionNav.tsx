@@ -2,14 +2,17 @@ import { Link } from "react-router-dom";
 import { LockIcon } from "../LandingIcons";
 import type { PathSection } from "../../lib/types";
 
-/* Previous and next section. Next stays locked until every practice question
-   is answered; the last section of a book has Finish instead, which goes back
-   to the learning path for the next book. Either one marks the section
+/* Previous and next section. Next stays locked until a set of practice
+   questions reaches the pass mark; the last section of a book has Finish
+   instead, which goes back to the learning path. Either one marks the section
    finished (onContinue). */
 export default function SectionNav({
   previous,
   next,
+  locked,
+  total,
   remaining,
+  passMark,
   sectionHref,
   pathHref,
   bookTitle,
@@ -17,8 +20,12 @@ export default function SectionNav({
 }: {
   previous?: PathSection;
   next?: PathSection;
-  /** Practice questions still unanswered. */
+  locked: boolean;
+  /** Practice questions in the set shown, and how many are still unanswered. */
+  total: number;
   remaining: number;
+  /** The score the set needs to unlock Next. */
+  passMark: number;
   sectionHref: (number: string) => string;
   /** The learning path, where Finish goes. */
   pathHref: string;
@@ -48,7 +55,7 @@ export default function SectionNav({
       ) : (
         <span />
       )}
-      {remaining === 0 && (
+      {!locked && (
         <Link
           to={next ? sectionHref(next.number) : pathHref}
           onClick={onContinue}
@@ -71,7 +78,7 @@ export default function SectionNav({
           </span>
         </Link>
       )}
-      {remaining > 0 && (
+      {locked && (
         <div
           aria-disabled="true"
           className="rounded-xl border border-dashed border-neutral-300 px-5 py-4 text-right"
@@ -99,9 +106,10 @@ export default function SectionNav({
             }
             className="mt-2 text-sm text-neutral-700 underline decoration-neutral-300 underline-offset-4 transition-colors hover:decoration-neutral-900"
           >
-            {remaining === 1
-              ? `Answer the last question to ${next ? "continue" : "finish"}`
-              : `Answer the ${remaining} remaining questions to ${next ? "continue" : "finish"}`}
+            {`Score ${passMark} of ${total} to ${next ? "continue" : "finish"}: `}
+            {remaining === 0
+              ? "try again"
+              : `${remaining} ${remaining === 1 ? "question" : "questions"} left`}
           </button>
         </div>
       )}
