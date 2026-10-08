@@ -3,17 +3,6 @@ using System.Text.Json.Serialization;
 
 namespace Ingest;
 
-/// <summary>
-/// Calls an OpenAI-compatible /v1/embeddings endpoint.
-///
-/// Note: Anthropic has no embeddings API, so even if Claude writes your
-/// answers you need a separate provider for this step. OpenAI's
-/// text-embedding-3-small is the cheap default; Voyage also works — set
-/// EMBEDDING_BASE_URL and EMBEDDING_MODEL to switch.
-///
-/// Whatever you pick, the SAME model must embed your chunks and your
-/// questions. Mixing models does not error; it silently returns nonsense.
-/// </summary>
 public sealed class EmbeddingClient : IDisposable
 {
     private const int BatchSize = 100;

@@ -5,7 +5,7 @@ import MasteryBar from "../components/MasteryBar";
 import SiteFooter from "../components/SiteFooter";
 import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
-import { levelCount } from "../lib/concepts";
+import { levelCount } from "../lib/conceptLevels";
 import type { Concept } from "../lib/types";
 
 /* /roadmap/<concept> — one concept path, like /roadmap/balancing: its levels in order. */
@@ -30,7 +30,16 @@ export default function ConceptPathPage() {
 
         <header className="mt-8 grid items-end gap-8 lg:grid-cols-[1fr_20rem]">
           <div>
-            <StatusPill status={concept.status} />
+            <div className="flex items-center gap-4">
+              <img
+                src={concept.icon}
+                alt=""
+                width={64}
+                height={64}
+                className="h-16 w-16 dark:invert dark:hue-rotate-180"
+              />
+              <StatusPill status={concept.status} />
+            </div>
             <div className="mt-6">
               <Eyebrow>Concept path</Eyebrow>
             </div>

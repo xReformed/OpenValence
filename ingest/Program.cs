@@ -1,17 +1,26 @@
+using Core;
 using Ingest;
+using Npgsql;
 
 // Offline corpus ingestion. Three commands, in the order you use them:
 //
 //   chunk  <path>       print the chunks — no API key needed
-//   embed  <path>       chunk, embed, write index.json
+//   embed  <path>       chunk, embed, write the index
 //   search "question"   embed the question, print the top 5
 //
 // Run 'chunk' until the output looks right, then 'embed', then 'search'.
+// The index goes to Postgres when DATABASE_URL is set, else database/index.json.
+//
+// One more, for the practice questions the app shows:
+//
+//   questions [path] [--check]   check questions/, then load it into Postgres
 
 const string DefaultSources = "sources";
-const string DefaultIndex = "database/index.json";
+const string DefaultQuestions = "questions";
 
-// Pick up API keys from the repo-root .env. Real environment variables win.
+// Pick up keys from the repo root: .env.local (where `neon link` writes the
+// database URLs) wins over .env, and real environment variables win over both.
+DotNetEnv.Env.NoClobber().TraversePath().Load(".env.local");
 DotNetEnv.Env.NoClobber().TraversePath().Load();
 
 var command = args.Length > 0 ? args[0].ToLowerInvariant() : "help";
@@ -23,6 +32,7 @@ try
         "chunk" => RunChunk(args.ElementAtOrDefault(1) ?? DefaultSources),
         "embed" => await RunEmbedAsync(args.ElementAtOrDefault(1) ?? DefaultSources),
         "search" => await RunSearchAsync(args.ElementAtOrDefault(1)),
+        "questions" => await RunQuestionsAsync(args.Skip(1).ToArray()),
         _ => Help(),
     };
 }
@@ -39,9 +49,34 @@ static int Help()
           dotnet run --project ingest -- chunk  [sources-path]
           dotnet run --project ingest -- embed  [sources-path]
           dotnet run --project ingest -- search "your question"
+          dotnet run --project ingest -- questions [questions-path] [--check]
 
         'chunk' needs no API key. 'embed' and 'search' need EMBEDDING_API_KEY.
+        The index lives in Postgres + pgvector when DATABASE_URL is set (in .env
+        or .env.local), otherwise in database/index.json.
+        'questions' needs DATABASE_URL; with --check it only checks the files.
         """);
+    return 0;
+}
+
+static async Task<int> RunQuestionsAsync(string[] options)
+{
+    var checkOnly = options.Contains("--check");
+    var path = options.FirstOrDefault(option => !option.StartsWith("--")) ?? DefaultQuestions;
+
+    var questions = QuestionFiles.Load(path);
+    var sections = questions.Select(q => $"{q.Book}/{q.Section}").Distinct().Count();
+    Console.WriteLine($"{questions.Count} question(s) in {sections} section file(s) under {path}: all valid.");
+    if (checkOnly) return 0;
+
+    var connection = Database.FromEnvironment("DATABASE_URL_UNPOOLED", "DATABASE_URL")
+        ?? throw new InvalidOperationException(
+            "Questions are stored in Postgres: set DATABASE_URL (or run `neon link`). "
+            + "Use --check to check the files without a database.");
+
+    await using var dataSource = NpgsqlDataSource.Create(connection);
+    await new QuestionStore(dataSource).ReplaceAllAsync(questions);
+    Console.WriteLine($"Imported into {Database.Describe(connection)}, replacing the previous questions.");
     return 0;
 }
 
@@ -63,7 +98,10 @@ static List<Chunk> BuildChunks(string sourcesPath)
     foreach (var file in files)
     {
         var document = MarkdownChunker.ParseDocument(File.ReadAllText(file));
-        var documentId = Path.GetFileNameWithoutExtension(file);
+        // sources/openstax/<book>/<chapter>/<section>.md. The book is part of
+        // the ID because both books have a 10-2 and a 13-4.
+        var book = Path.GetFileName(Path.GetDirectoryName(Path.GetDirectoryName(file)));
+        var documentId = $"{book}/{Path.GetFileNameWithoutExtension(file)}";
         var chunks = MarkdownChunker.Chunk(document, documentId);
 
         Console.WriteLine($"{file}  ->  {chunks.Count} chunk(s)");
@@ -110,13 +148,14 @@ static async Task<int> RunEmbedAsync(string sourcesPath)
     var chunks = BuildChunks(sourcesPath);
 
     using var client = new EmbeddingClient();
+    await using var store = ChunkStore.FromEnvironment();
     Console.WriteLine($"\nEmbedding {chunks.Count} chunk(s) with {client.Model}...");
 
     var vectors = await client.EmbedAsync(chunks.Select(c => c.EmbeddedText).ToList());
     for (var i = 0; i < chunks.Count; i++) chunks[i].Embedding = vectors[i];
 
-    ChunkIndex.Save(DefaultIndex, new ChunkIndex(client.Model, chunks));
-    Console.WriteLine($"\nWrote {DefaultIndex} ({chunks.Count} chunks, {vectors[0].Length} dimensions).");
+    await store.SaveAsync(client.Model, chunks);
+    Console.WriteLine($"\nWrote {store.Description} ({chunks.Count} chunks, {vectors[0].Length} dimensions).");
     return 0;
 }
 
@@ -128,20 +167,21 @@ static async Task<int> RunSearchAsync(string? question)
         return 1;
     }
 
-    var index = ChunkIndex.Load(DefaultIndex);
+    await using var store = ChunkStore.FromEnvironment();
+    var indexModel = await store.EmbeddingModelAsync();
 
     using var client = new EmbeddingClient();
-    if (client.Model != index.EmbeddingModel)
+    if (client.Model != indexModel)
     {
         Console.WriteLine(
-            $"WARNING: index was built with {index.EmbeddingModel}, you are querying "
+            $"WARNING: index was built with {indexModel}, you are querying "
             + $"with {client.Model}. Results will be meaningless. Re-run 'embed'.\n");
     }
 
     var queryEmbedding = await client.EmbedOneAsync(question);
-    var results = index.Search(queryEmbedding, topK: 5);
+    var results = await store.SearchAsync(queryEmbedding, topK: 5);
 
-    Console.WriteLine($"\nQuestion: {question}\n");
+    Console.WriteLine($"\nQuestion: {question}\nIndex: {store.Description}\n");
 
     var rank = 1;
     foreach (var (chunk, score) in results)

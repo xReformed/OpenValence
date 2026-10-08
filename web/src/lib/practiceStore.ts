@@ -1,6 +1,7 @@
 import type { PracticeAnswer } from "./types";
 
-/* Each of OpenValence's questions (practiceQuestions.ts) gets one attempt,
+/* Each of OpenValence's questions (questions/ in the repo, served from the
+   database by the API) gets one attempt,
    kept in this browser only, like chat history. A section's score comes from
    these, and its Next link opens once all of its questions are answered. */
 

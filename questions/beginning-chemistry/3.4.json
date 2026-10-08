@@ -1,0 +1,79 @@
+[
+  {
+    "id": "carbon-12-mass",
+    "type": "multiple-choice",
+    "prompt": "What is the mass of one carbon-12 atom?",
+    "choices": [
+      {
+        "text": "Exactly 12 u",
+        "correct": true
+      },
+      {
+        "text": "12.011 u",
+        "why": "That is the atomic mass of the element carbon: a weighted average over its isotopes, not the mass of carbon-12 alone."
+      },
+      {
+        "text": "About 12 g",
+        "why": "Grams are far too big for a single atom. That's why the atomic mass unit exists."
+      },
+      {
+        "text": "6 u",
+        "why": "That counts only the six protons. The six neutrons count too."
+      }
+    ],
+    "explanation": "The atomic mass unit is defined as one-twelfth of the mass of a carbon-12 atom, so a carbon-12 atom is exactly 12 u by definition."
+  },
+  {
+    "id": "atomic-mass-not-whole",
+    "type": "multiple-choice",
+    "prompt": "Lithium's atomic mass is 6.941 u. Why isn't it a whole number?",
+    "choices": [
+      {
+        "text": "It is a weighted average of the masses of lithium's isotopes",
+        "correct": true
+      },
+      {
+        "text": "Each lithium atom has a mass of 6.941 u",
+        "why": "No lithium atom need have that mass, just as no atom in the section's 50%/50% example has a mass of 10.5 u. It is an average."
+      },
+      {
+        "text": "Electrons add the extra 0.941 u",
+        "why": "Lithium's three electrons add only about 3 × 0.000549 u ≈ 0.002 u."
+      }
+    ],
+    "explanation": "Most elements are mixtures of isotopes, and an element's atomic mass is the weighted average of their masses, so it usually isn't a whole number."
+  },
+  {
+    "id": "weighted-average-mass",
+    "type": "numeric",
+    "prompt": "An element has two isotopes: 75% of its atoms have a mass of 35 u, and 25% have a mass of 37 u. What is the element's atomic mass?",
+    "answer": 35.5,
+    "unit": "u",
+    "explanation": "Multiply each mass by its fractional occurrence and add: 0.75 × 35 u = 26.25 u, and 0.25 × 37 u = 9.25 u, for a total of 35.5 u. It is closer to 35 than to 37 because more of the atoms have a mass of 35 u."
+  },
+  {
+    "id": "molecular-mass-co2",
+    "type": "numeric",
+    "prompt": "Using Table 3.4.1, what is the molecular mass of CO2?",
+    "answer": 44.009,
+    "unit": "u",
+    "explanation": "Add one atomic mass of carbon and two of oxygen: 12.011 u + 2 × 15.999 u = 12.011 u + 31.998 u = 44.009 u."
+  },
+  {
+    "id": "molecular-mass-glucose",
+    "type": "numeric",
+    "prompt": "Glucose, a sugar, has the formula C6H12O6. Using Table 3.4.1, what is its molecular mass?",
+    "answer": 180.156,
+    "unit": "u",
+    "explanation": "6 C masses = 6 × 12.011 u = 72.066 u; 12 H masses = 12 × 1.008 u = 12.096 u; 6 O masses = 6 × 15.999 u = 95.994 u. The total is 180.156 u."
+  },
+  {
+    "id": "molecular-mass-sf6",
+    "type": "numeric",
+    "prompt": "The section gives the molecular mass of SF6 as about 146 u. Using Table 3.4.1, calculate it to three decimal places.",
+    "answer": 146.053,
+    "unit": "u",
+    "tolerance": 0.0002,
+    "explanation": "Add one atomic mass of sulfur and six of fluorine: 32.065 u + 6 × 18.998 u = 32.065 u + 113.988 u = 146.053 u."
+  }
+]

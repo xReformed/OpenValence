@@ -3,10 +3,9 @@ using System.Text.Json;
 namespace Ingest;
 
 /// <summary>
-/// The whole "vector store", for now: a JSON file plus a brute-force scan.
-/// At a few thousand chunks that scan takes milliseconds, so there is nothing
-/// to optimise yet — this gets replaced by Postgres + pgvector later, and only
-/// this file changes.
+/// The JSON-file index: the store used when no database URL is set. At a few
+/// thousand chunks a brute-force scan takes milliseconds. Postgres + pgvector
+/// is the other store (PostgresChunkStore); both sit behind IChunkStore.
 /// </summary>
 public sealed record ChunkIndex(string EmbeddingModel, List<Chunk> Chunks)
 {
@@ -66,4 +65,23 @@ public sealed record ChunkIndex(string EmbeddingModel, List<Chunk> Chunks)
             .Take(topK)
             .ToList();
     }
+}
+
+public sealed class JsonChunkStore(string path) : IChunkStore
+{
+    public string Description => path;
+
+    public Task SaveAsync(string embeddingModel, IReadOnlyList<Chunk> chunks)
+    {
+        ChunkIndex.Save(path, new ChunkIndex(embeddingModel, [.. chunks]));
+        return Task.CompletedTask;
+    }
+
+    public Task<string?> EmbeddingModelAsync() =>
+        Task.FromResult<string?>(ChunkIndex.Load(path).EmbeddingModel);
+
+    public Task<List<(Chunk Chunk, float Score)>> SearchAsync(float[] queryEmbedding, int topK) =>
+        Task.FromResult(ChunkIndex.Load(path).Search(queryEmbedding, topK));
+
+    public ValueTask DisposeAsync() => ValueTask.CompletedTask;
 }

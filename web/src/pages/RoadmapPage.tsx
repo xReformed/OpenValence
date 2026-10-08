@@ -6,16 +6,27 @@ import Reveal from "../components/Reveal";
 import SiteFooter from "../components/SiteFooter";
 import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
-import { BookIcon } from "../components/LandingIcons";
-import { CONCEPTS, levelCount } from "../lib/concepts";
+import learnPracticeIcon from "../assets/concept/learn-and-practice.webp";
+import { levelCount } from "../lib/conceptLevels";
+import { CONCEPTS } from "../lib/concepts";
 import { branchMastery } from "../lib/mastery";
 import { getFinished, subscribeToProgress } from "../lib/progress";
 import { BRANCHES } from "../lib/roadmap";
 import { roadmapCardClass } from "../lib/roadmapCard";
 
-/* A faded line icon bleeding off a card's corner, like the branch cards' artwork. */
-const WATERMARK =
-  "pointer-events-none absolute -top-4 -right-4 h-32 w-32 text-neutral-900 opacity-15 transition-[opacity,scale] duration-300 group-hover:scale-105 group-hover:opacity-25 motion-reduce:transition-none sm:h-40 sm:w-40";
+/* Faded artwork bleeding off a card's corner, like the branch cards'. Dark mode
+   flips its brightness (invert) but not its colours (hue-rotate back). */
+function CardArtwork({ src }: { src: string }) {
+  return (
+    <img
+      src={src}
+      alt=""
+      width={176}
+      height={176}
+      className="pointer-events-none absolute -top-6 -right-6 h-36 w-36 opacity-25 transition-[opacity,scale] duration-300 group-hover:scale-105 group-hover:opacity-40 motion-reduce:transition-none sm:h-44 sm:w-44 dark:invert dark:hue-rotate-180"
+    />
+  );
+}
 
 export default function RoadmapPage() {
   const [params] = useSearchParams();
@@ -51,12 +62,12 @@ export default function RoadmapPage() {
           </p>
         </Reveal>
 
-        {/* Learn and Practice, then one card per concept path (lib/concepts.ts). */}
+        {/* Learn and Practice, then one card per concept path (lib/concepts). */}
         <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <li>
             <Reveal className="h-full">
               <Link to="/roadmap/learn" className={roadmapCardClass(false)}>
-                <BookIcon className={WATERMARK} />
+                <CardArtwork src={learnPracticeIcon} />
                 <span className="relative self-start">
                   <StatusPill status="in-progress" />
                 </span>
@@ -70,11 +81,11 @@ export default function RoadmapPage() {
               </Link>
             </Reveal>
           </li>
-          {CONCEPTS.map(({ icon: Icon, ...concept }, i) => (
+          {CONCEPTS.map((concept, i) => (
             <li key={concept.slug}>
               <Reveal delay={(i + 1) * 70} className="h-full">
                 <Link to={`/roadmap/${concept.slug}`} className={roadmapCardClass(false)}>
-                  <Icon className={WATERMARK} />
+                  <CardArtwork src={concept.icon} />
                   <span className="relative self-start">
                     <StatusPill status={concept.status} />
                   </span>

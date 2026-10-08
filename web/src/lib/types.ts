@@ -9,7 +9,6 @@
 
 export type { BookKey } from "./learningPaths.generated";
 import type { BookKey } from "./learningPaths.generated";
-import type { ComponentType } from "react";
 
 export interface PathSection {
   number: string;
@@ -80,11 +79,12 @@ export interface ConceptStage {
   levels: ConceptLevel[];
 }
 
-/** A levelled path through one skill, like chemical balancing (concepts.ts). */
+/** A levelled path through one skill, like chemical balancing (lib/concepts). */
 export interface Concept {
   slug: string;
   title: string;
-  icon: ComponentType<{ className?: string }>;
+  /** Card artwork, an image URL (src/assets/concept). */
+  icon: string;
   status: BranchStatus;
   summary: string;
   /** The card's subtitle on /roadmap, after the level count. */
@@ -120,10 +120,12 @@ export interface FigureImage {
   height: number;
 }
 
-/* ── OpenValence practice questions (practiceQuestions.ts) ───────────────── */
+/* ── OpenValence practice questions ───────────────────────────────────────
+   Written as questions/<book>/<section>.json, imported into the database, and
+   served by the API in exactly this shape (core/QuestionFiles.cs checks it). */
 
 interface QuestionBase {
-  /** Unique across practiceQuestions.ts; mastery records will refer to it. */
+  /** Unique across all question files; saved answers refer to it. */
   id: string;
   prompt: string;
   explanation: string;

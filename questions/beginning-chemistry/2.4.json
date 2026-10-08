@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sigfigs-count-zeros",
+    "type": "numeric",
+    "prompt": "How many significant figures are in the measurement 0.04050 g?",
+    "answer": 4,
+    "explanation": "The leading zeros only put the digits in the correct positions (rule 4), so they don't count. The 4 and 5 are significant (rule 1), the zero between them is significant (rule 2), and the last zero comes after the decimal point, so it is significant too (rule 3): four significant figures."
+  },
+  {
+    "id": "sigfigs-scientific-notation",
+    "type": "multiple-choice",
+    "prompt": "A mass is reported as 52,000 g, but it was measured to three significant figures. Which way of writing it shows that?",
+    "choices": [
+      {
+        "text": "5.20 × 10^4 g",
+        "correct": true
+      },
+      {
+        "text": "5.2 × 10^4 g",
+        "why": "That shows only two significant figures. A coefficient includes a zero only if it is significant."
+      },
+      {
+        "text": "52,000 g",
+        "why": "Zeros at the end of a number without a decimal point aren't significant (rule 3), so 52,000 shows only two significant figures."
+      },
+      {
+        "text": "5.200 × 10^4 g",
+        "why": "That shows four significant figures: every zero in the coefficient counts."
+      }
+    ],
+    "explanation": "Scientific notation includes zeros in the coefficient only if they are significant, so 5.20 × 10^4 g shows exactly three: the 5, the 2, and the zero."
+  },
+  {
+    "id": "sigfigs-sum",
+    "type": "numeric",
+    "prompt": "Report 12.52 + 349.0 + 8.24 to the proper number of significant figures.",
+    "answer": 369.8,
+    "tolerance": 0,
+    "explanation": "A calculator gives 369.76. 349.0 stops its significant figures in the tenths column, so the answer is limited to the tenths place. The first dropped digit is 6, which is 5 or greater, so round up: 369.8."
+  },
+  {
+    "id": "sigfigs-area",
+    "type": "numeric",
+    "prompt": "A rectangle measures 4.5 cm by 12.33 cm. What is its area, to the proper number of significant figures?",
+    "answer": 55,
+    "unit": "cm²",
+    "tolerance": 0,
+    "explanation": "A calculator gives 4.5 × 12.33 = 55.485. In multiplication, limit the answer to the least number of significant figures in the data: 4.5 has two, so the area has two. The first dropped digit is 4, less than 5, so round down: 55 cm^2."
+  },
+  {
+    "id": "sigfigs-product-zeros",
+    "type": "multiple-choice",
+    "prompt": "What is 6.022 × 0.0150, to the proper number of significant figures?",
+    "choices": [
+      {
+        "text": "0.0903",
+        "correct": true
+      },
+      {
+        "text": "0.090",
+        "why": "That's two significant figures, but 0.0150 has three: its last zero comes after the decimal point, so it is significant (rule 3)."
+      },
+      {
+        "text": "0.09033",
+        "why": "That keeps four significant figures. The answer is limited to the least number in the data: three, from 0.0150."
+      },
+      {
+        "text": "0.09",
+        "why": "That's only one significant figure. The leading zeros of 0.0150 don't count, but the 1, the 5, and the last 0 do."
+      }
+    ],
+    "explanation": "6.022 has four significant figures and 0.0150 has three (its leading zeros don't count; its last zero, after the decimal point, does). So the product gets three: 6.022 × 0.0150 = 0.09033, which rounds down to 0.0903."
+  }
+]

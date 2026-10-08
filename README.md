@@ -20,7 +20,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Eval question set | **152 questions** written, all for *Chemistry* 1e — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
-| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions ([practiceQuestions.ts](web/src/lib/practiceQuestions.ts), a few sections so far) get one try each, a section score, and gate the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
+| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database, a few sections so far) get one try each, a section score, and gate the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |
@@ -31,11 +31,13 @@ Retrieval works end to end from the command line, and the web app is built — b
 
 ```
 sources/     Curated corpus — markdown, one file per textbook section
+questions/   Practice questions, one JSON file per section, imported into the database
 ingest/      .NET console app: chunk → embed → search
-api/         ASP.NET Core minimal API (scaffold — loads .env, no endpoints)
+api/         ASP.NET Core minimal API — serves the practice questions; the answer endpoint is still to build
 web/         React + Vite + Tailwind frontend
-core/        Shared domain logic (empty)
-database/    Generated index.json lands here (git-ignored)
+core/        Shared .NET code — database connection, question files and storage
+tests/       xUnit tests for core/ and ingest/
+database/    index.json lands here when no database is configured (git-ignored)
 evals/       questions.jsonl — the retrieval and answer eval set
 docs/        Design notes (practice question types)
 tools/       transcribe/ — scripts that turn LibreTexts books into corpus markdown
@@ -46,12 +48,13 @@ tools/       transcribe/ — scripts that turn LibreTexts books into corpus mark
 ## Requirements
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- Node 20+ (for the web app)
+- Node 22+ (for the web app; CI uses 24)
 - An embedding provider — OpenAI by default, or anything with an OpenAI-compatible `/v1/embeddings` endpoint (Voyage, a local Ollama, …). Anthropic has no embeddings API, so this is always a separate provider.
 - An Anthropic API key, for answer generation in `api/` (not used until the answer endpoint exists)
 - Python 3.10+, only if you use the transcription tools in [tools/transcribe/](tools/transcribe/README.md)
+- Optional: Postgres with the `pgvector` extension, to hold the search index. This project uses [Neon](https://neon.com); a local `pgvector/pgvector` Docker container works the same way. Without one, the index is a JSON file.
 
-Keys live in a `.env` file at the repo root, which is git-ignored. Both `ingest/` and `api/` load it on startup.
+Keys live in a `.env` file at the repo root, which is git-ignored. Both `ingest/` and `api/` load it on startup, and `.env.local` too, where `neon link` writes the database URLs (`DATABASE_URL`, `DATABASE_URL_UNPOOLED`); `.env.local` wins over `.env`.
 
 ```bash
 cp .env.example .env    # then fill in the keys
@@ -83,13 +86,20 @@ dotnet run --project ingest -- chunk
 
 Prints every chunk with its heading path and approximate token count. If a chunk looks like it lost its context or swallowed three topics at once, fix the chunker before going further.
 
-**2. Embed** — builds `database/index.json`.
+**2. Embed** — builds the index: in Postgres + pgvector when `DATABASE_URL` is set (in `.env` or `.env.local`), otherwise in `database/index.json`.
 
 ```bash
 dotnet run --project ingest -- embed
 ```
 
-The index is generated and git-ignored, so each machine builds its own.
+`embed` rebuilds the whole index each run; in Postgres it swaps in the new table in one transaction, so searches never see half an index. A JSON index is git-ignored, so each machine builds its own. A Postgres index is shared by every machine that uses the same `DATABASE_URL`: build it once on Neon and every PC (and, later, the API) searches the same copy. To use Neon, link the repo once (`neon link --project-id <id>`), which writes `.env.local`; to use a local database instead:
+
+```bash
+docker run -d --name openvalence-db -e POSTGRES_PASSWORD=openvalence -p 5432:5432 pgvector/pgvector:pg17
+# then in .env: DATABASE_URL=postgresql://postgres:openvalence@localhost:5432/postgres
+```
+
+`embed` creates the `vector` extension and the `chunks` table itself.
 
 **3. Search** — sanity-check retrieval.
 
@@ -101,6 +111,15 @@ Prints the top 5 chunks with similarity scores. The question to ask yourself is 
 
 `chunk` and `embed` accept an optional path argument if you want to run against a subset of `sources/`.
 
+**Practice questions** — load `questions/` into the database.
+
+```bash
+dotnet run --project ingest -- questions           # check every file, then import
+dotnet run --project ingest -- questions --check   # check only; no database needed
+```
+
+Each section's questions are one JSON file, `questions/<book>/<section>.json` (for example [questions/beginning-chemistry/3.4.json](questions/beginning-chemistry/3.4.json)): an array in the web app's `Question` shape ([types.ts](web/src/lib/types.ts)), in the order the section shows them. The import checks every question first — exactly one correct choice, numeric answers that are numbers, no unknown fields (a misspelled `tolerence` is caught), ids unique across all files — and reports every problem at once. Then it replaces the `questions` table in one transaction, so a question deleted from its file disappears from the app too. Keep ids stable: students' saved answers are stored by id.
+
 ## Running the web app
 
 ```bash
@@ -108,6 +127,14 @@ cd web
 npm install
 npm run dev
 ```
+
+Section pages get their practice questions from the API, which reads them from the database in `DATABASE_URL` (the dev server proxies `/api` to it). Run it alongside:
+
+```bash
+dotnet run --project api
+```
+
+Without it, section pages still work, with a note where the questions would be.
 
 What's there today:
 
@@ -117,10 +144,10 @@ What's there today:
 - **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, *Beginning Chemistry* first, then *Chemistry* 1e. Every transcribed section links to its section page
 - **Section pages** (`/roadmap/:slug/:book/:section`) — a corpus section rendered in the app:
   - Each Example and Exercise is a **practice card**: type an answer, then compare it with the book's solution, or ask the chat to explain it.
-  - Sections with questions in [web/src/lib/practiceQuestions.ts](web/src/lib/practiceQuestions.ts) end with **Check yourself**: OpenValence's own numeric and multiple-choice questions. Each gets one try, then locks and shows the reasoning (and, for a wrong choice, why it's wrong); the section totals a score ("You scored 7 out of 9"). The **Next** section link stays locked until every question is answered.
+  - Sections with questions in [questions/](questions/) end with **Check yourself**: OpenValence's own numeric and multiple-choice questions. Each gets one try, then locks and shows the reasoning (and, for a wrong choice, why it's wrong); the section totals a score ("You scored 7 out of 9"). The **Next** section link stays locked until every question is answered.
   - **Books are read in order.** A section counts as finished when you continue past it with Next, and the learning path locks every section and chapter after the first unfinished one, with a "Continue with …" button to pick up where you left off ([progress.ts](web/src/lib/progress.ts), stored as `chemia.progress`). Each book is its own sequence. Answers are kept in `localStorage` (`chemia.practice`), like chat history.
   - `[Note: …]` corrections show as highlighted asides.
-  - Figures show their captions; eight figures in chapter 1 of *Beginning Chemistry* have illustrations made for OpenValence.
+  - Figures show their captions. Where [web/src/assets/figures/](web/src/assets/figures/) has an image for one, mostly illustrations made for OpenValence, it shows above the caption; the file name says which figure it belongs to (see [figureImages.ts](web/src/lib/figureImages.ts)). `npm run dev` and `npm run build` pick up new images when they start; with the dev server already running, run `npm run gen:figures`.
   - A side panel credits the source and its license, links to the original page, and starts a chat about the section.
 - **Light and dark mode** — follows the system setting until you pick one with the sun/moon button in the header (or the chat sidebar); the choice is remembered in `localStorage`. Dark mode remaps Tailwind's grey scale in [web/src/index.css](web/src/index.css), so components rarely need `dark:` classes
 - **Chat** (`/chat`) — a conversation view with a sidebar of past chats (stored in the browser's `localStorage`), chemistry notation rendered with proper sub- and superscripts (formulas, charges, `Ka`-style constants, `sp3d2`), and numbered citations that expand to show the exact source passage and link to it
@@ -134,6 +161,21 @@ npm run gen:paths
 ```
 
 Otherwise new sections stay unlinked on the learning path, under "Being added".
+
+Concept paths (`/roadmap/balancing` and the rest) are one file each in [web/src/lib/concepts/](web/src/lib/concepts/), listed in its `index.ts`. Each loads with its own page, so the app doesn't carry them all.
+
+---
+
+## Tests
+
+```bash
+cd web && npm test     # Vitest: grading, chemistry notation, the Example/Exercise parser, figure images, concept paths
+dotnet test           # xUnit, from the repo root: question file checks, database URLs, chunking, search scoring
+```
+
+Several tests read the real corpus: every section is parsed, every image file must match a caption or image box in its book, and every file in `questions/` must pass the import's checks. The parser test compares against a snapshot of every Example and Exercise it finds; when a parser change is meant to move one, check the section, then update the snapshot with `npx vitest run -u`.
+
+GitHub Actions ([ci.yml](.github/workflows/ci.yml)) runs all of this, plus lint, both builds, and `questions --check`, on every push to `main` and every pull request. None of it needs a database or API keys.
 
 ---
 
@@ -201,24 +243,24 @@ Do not add material to `sources/` unless you have checked its license and record
 ```json
 {"id": "q005", "kind": "calculation", "answerable": true,
  "q": "How do you calculate the pH of a buffer from the concentrations of the weak acid and its conjugate base?",
- "files": ["14-6-Buffers"], "expect": "Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]).",
+ "files": ["genchem-1e/14-6-Buffers"], "expect": "Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]).",
  "note": "14-7 also mentions Henderson-Hasselbalch in a titration context; 14-6 is where it is derived."}
 ```
 
-`files` names the section(s) a correct retrieval must hit, matching chunk IDs (`14-6-Buffers#3`); `expect` is what a correct answer says; `note` explains what the question tests.
+`files` names the section(s) a correct retrieval must hit, matching chunk IDs (`genchem-1e/14-6-Buffers#3`: the book folder, then the section file); `expect` is what a correct answer says; `note` explains what the question tests.
 
 | Kind | Count | What it tests |
 | ---- | ----: | ------------- |
 | concept | 37 | Explanations, often in casual student phrasing |
 | calculation | 25 | Worked methods and values, recomputed during writing |
-| unanswerable | 23 | Questions the corpus can't answer — near misses (NMR, SN1/SN2), specific values it doesn't list, format gaps, off-topic requests |
-| fact | 22 | Single facts and definitions |
+| unanswerable | 21 | Questions the corpus can't answer — near misses (NMR, SN1/SN2), specific values it doesn't list, format gaps, off-topic requests |
+| fact | 24 | Single facts and definitions |
 | distractor | 22 | A term that appears in many files but is taught in one |
 | exact-token | 13 | Questions that hinge on a precise token (`sp3d2`, `Ka` vs `Kb`) — the baseline for hybrid search |
 | defect | 9 | The correct answer follows a `[Note: …]`, not the misprinted text |
 | contradiction | 1 | Two sections disagree (Tc-99m half-life) |
 
-All the questions target *Chemistry* 1e; none are written for *Beginning Chemistry* yet. There is no runner yet; the plan is below.
+The questions were written for *Chemistry* 1e. Two former `unanswerable` questions are now answered by *Beginning Chemistry*, which `embed` indexes alongside it: q133 (S=O bond energy, its 9.5) and q010 (a secondary amine, its 16.6). Both books have a 10.2 Intermolecular Forces and a 13.4 Le Chatelier section, so q003 and q004 accept either book's; q084 (the Haber process) only *Chemistry* 1e's. There is no runner yet; the plan is below.
 
 ---
 
@@ -227,7 +269,7 @@ All the questions target *Chemistry* 1e; none are written for *Beginning Chemist
 **Ingestion**, offline and one-time:
 
 ```
-markdown → parse frontmatter → chunk → embed → index.json
+markdown → parse frontmatter → chunk → embed → Postgres + pgvector (or index.json)
 ```
 
 **Query**, per question (retrieval exists in the CLI; the rest is the answer endpoint still to build):
@@ -237,13 +279,12 @@ question → embed → top-k by cosine similarity → LLM with "answer only from
 this context" → answer + the chunks as citations
 ```
 
-The index is currently a flat `index.json` loaded into memory — fine at this corpus size, and it keeps the project runnable with no database to stand up. Postgres + `pgvector` is the migration path when the corpus outgrows it.
+The index lives in Postgres + `pgvector` when `DATABASE_URL` is set (Neon, for this project), so every machine — and later the API — queries one copy. Without a database it falls back to a flat `index.json` loaded into memory, which keeps the project runnable with nothing to stand up. Both stores search exactly, by cosine similarity, and return identical results: about 13 ms in Postgres over the current 2,662 chunks. An approximate HNSW index only pays off at tens of thousands of chunks, and would blur the retrieval evals.
 
 ---
 
 ## Known issues
 
-- **Duplicate document IDs across books.** Chunk IDs are `<file name>#<n>`, and two file names exist in both books: `10-2-Intermolecular-Forces` and `13-4-Shifting-Equilibria-Le-Chateliers-Principle`. Both books are now complete, so both collide as soon as the corpus is embedded, and eval questions q003, q004 and q084 would count the wrong book's chunks as hits. Fix before the next `embed`: include the book folder in the document ID and update the eval `files` entries to match.
 - **The landing page promises more than the app does yet.** It describes abstention ("if the sources don't cover it, it tells you") and grounded, cited answers, neither of which exists until the answer endpoint and the similarity floor are built. The hero demo's "Searching 124 textbook sections" also needs updating once *Beginning Chemistry* is embedded (224 sections across both books).
 - **No mobile navigation.** The header links are hidden below the `md` breakpoint with no menu in their place.
 
@@ -347,15 +388,11 @@ A levelled path through balancing chemical equations, from counting atoms to red
 | Chemical engineering | Not chosen | — | **Planned** |
 | Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
 
-Suggested order: fix the duplicate IDs, embed both transcribed books and measure them, then organic, then chemical engineering.
+Suggested order: embed both transcribed books and measure them, then organic, then chemical engineering.
 
 **Introductory chemistry** — the on-ramp: the same ground as general chemistry at a gentler level, so it catches beginners' phrasing.
 
-- Fix the duplicate document IDs first (see [Known issues](#known-issues)); both collisions involve this book
 - Write eval questions for this book (all 152 current questions target *Chemistry* 1e). Its 102 `[Note: …]` corrections are ready-made `defect` questions
-- Re-label two `unanswerable` questions in the same change that embeds it, or the abstention eval will report correct answers as failures:
-  - q133 (S=O bond energy): 9.5's bond-energy table lists S=O at 523 kJ/mol.
-  - q010 (draw a secondary amine): 16.6 shows one as CH3–NH–CH3.
 - When it is embedded:
   - mark it "In use" in the landing page's Sources section;
   - add it to the footer attribution;
