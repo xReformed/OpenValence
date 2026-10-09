@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- The ValenceMark on the accent tile. Drawn bigger and bolder than in the
-       app so it stays readable at 16px; nudged down to sit optically centred. -->
-  <rect width="32" height="32" rx="8" fill="#00e26a"/>
-  <g transform="translate(5.5 6.6) scale(0.875)" fill="#171717" stroke="#171717" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 12V5M12 12l-6 4M12 12l6 4" fill="none"/>
-    <circle cx="12" cy="4" r="2.6" stroke="none"/>
-    <circle cx="5" cy="17" r="2.6" stroke="none"/>
-    <circle cx="19" cy="17" r="2.6" stroke="none"/>
-    <circle cx="12" cy="12" r="1.9" stroke="none"/>
+  <!-- The loading spinner's atom (src/components/Spinner.tsx), held still, in
+       the accent ink: the darker green on light tab bars, the brighter one on
+       dark. Drawn bolder than the spinner so it reads at 16px. -->
+  <style>
+    svg { color: #018a44; }
+    @media (prefers-color-scheme: dark) { svg { color: #3ee08a; } }
+  </style>
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M2.9 16a13.1 4.9 0 1 0 26.2 0a13.1 4.9 0 1 0 -26.2 0" transform="rotate(0 16 16)"/>
+    <path d="M2.9 16a13.1 4.9 0 1 0 26.2 0a13.1 4.9 0 1 0 -26.2 0" transform="rotate(60 16 16)"/>
+    <path d="M2.9 16a13.1 4.9 0 1 0 26.2 0a13.1 4.9 0 1 0 -26.2 0" transform="rotate(120 16 16)"/>
+  </g>
+  <g fill="currentColor">
+    <circle cx="29.10" cy="16.00" r="2.3"/>
+    <circle cx="9.45" cy="4.66" r="2.3"/>
+    <circle cx="9.45" cy="27.34" r="2.3"/>
+    <circle cx="16" cy="16" r="2.8"/>
   </g>
 </svg>

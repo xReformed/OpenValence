@@ -25,15 +25,27 @@ function Icon({
 
 type IconProps = { className?: string };
 
-export function ValenceMark({ className }: IconProps) {
+/* One orbit of the atom, as in Spinner.tsx but sized to a 32-unit box. */
+const MARK_ORBIT = "M2.9 16a13.1 4.9 0 1 0 26.2 0a13.1 4.9 0 1 0-26.2 0";
+
+/* The OpenValence mark: the loading spinner's atom, held still, with an
+   electron at the tip of each orbit. public/favicon.svg draws the same atom;
+   keep the two in step. */
+export function ValenceMark({ className = "h-5 w-5" }: IconProps) {
   return (
-    <Icon className={className}>
-      <path d="M12 12V5M12 12l-6 4M12 12l6 4" />
-      <circle cx="12" cy="4" r="2.2" fill="currentColor" />
-      <circle cx="5" cy="17" r="2.2" fill="currentColor" />
-      <circle cx="19" cy="17" r="2.2" fill="currentColor" />
-      <circle cx="12" cy="12" r="1.6" fill="currentColor" />
-    </Icon>
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className}>
+      <g fill="none" stroke="currentColor" strokeWidth="2">
+        {[0, 60, 120].map((angle) => (
+          <path key={angle} d={MARK_ORBIT} transform={`rotate(${angle} 16 16)`} />
+        ))}
+      </g>
+      <g fill="currentColor">
+        <circle cx="29.1" cy="16" r="2.3" />
+        <circle cx="9.45" cy="4.66" r="2.3" />
+        <circle cx="9.45" cy="27.34" r="2.3" />
+        <circle cx="16" cy="16" r="2.8" />
+      </g>
+    </svg>
   );
 }
 

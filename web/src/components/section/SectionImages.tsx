@@ -32,10 +32,12 @@ export function FigureWithImage({
 
 export function PlaceholderImage({
   label,
+  alt,
   image,
   startOpen,
 }: {
-  label: string;
+  label: ReactNode;
+  alt: string;
   image: FigureImage;
   startOpen: boolean;
 }) {
@@ -56,7 +58,7 @@ export function PlaceholderImage({
       <div className="px-4 pb-4">
         <img
           src={image.src}
-          alt={label.replace(/^Image:\s*/, "")}
+          alt={alt}
           width={image.width}
           height={image.height}
           loading="lazy"

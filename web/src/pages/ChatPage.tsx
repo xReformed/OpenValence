@@ -124,9 +124,7 @@ export default function ChatPage({ chatId }: { chatId: string }) {
           {empty ? (
             <div className="mx-auto flex min-h-full max-w-3xl flex-col justify-center px-4 py-12 sm:px-6">
               <div className="text-center">
-                <span className="bg-accent mx-auto flex h-12 w-12 items-center justify-center rounded-2xl">
-                  <ValenceMark className="h-6 w-6 text-on-accent" />
-                </span>
+                <ValenceMark className="text-accent-ink mx-auto block h-12 w-12" />
                 <h1 className="mt-6 text-3xl tracking-tight sm:text-4xl">
                   What do you want to know?
                 </h1>

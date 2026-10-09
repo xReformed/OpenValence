@@ -13,7 +13,7 @@ export default function TopNavBar() {
   return (
     <header className="mx-auto flex w-full max-w-352 shrink-0 items-center justify-between px-5 py-6 sm:px-8 lg:px-12">
       <Link to="/" className="flex items-center gap-2 text-lg tracking-tight">
-        <ValenceMark className="h-5 w-5" />
+        <ValenceMark className="text-accent-ink h-5 w-5" />
         OpenValence
       </Link>
 

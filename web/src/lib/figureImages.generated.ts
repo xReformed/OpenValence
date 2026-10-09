@@ -74,6 +74,46 @@ import beginningChemistry_8_5_10 from "../assets/figures/beginning-chemistry/8.5
 import beginningChemistry_8_6_1 from "../assets/figures/beginning-chemistry/8.6.1.webp";
 import beginningChemistry_8_6_2 from "../assets/figures/beginning-chemistry/8.6.2.webp";
 import beginningChemistry_8_6_3 from "../assets/figures/beginning-chemistry/8.6.3.webp";
+import beginningChemistry_9_4_image_3 from "../assets/figures/beginning-chemistry/9.4-image-3.webp";
+import beginningChemistry_9_4_image_6 from "../assets/figures/beginning-chemistry/9.4-image-6.webp";
+import beginningChemistry_9_4_image_7 from "../assets/figures/beginning-chemistry/9.4-image-7.webp";
+import beginningChemistry_9_4_image_8 from "../assets/figures/beginning-chemistry/9.4-image-8.webp";
+import beginningChemistry_9_4_image_9 from "../assets/figures/beginning-chemistry/9.4-image-9.webp";
+import beginningChemistry_9_4_image_10 from "../assets/figures/beginning-chemistry/9.4-image-10.webp";
+import beginningChemistry_9_4_image_11 from "../assets/figures/beginning-chemistry/9.4-image-11.webp";
+import beginningChemistry_9_4_image_12 from "../assets/figures/beginning-chemistry/9.4-image-12.webp";
+import beginningChemistry_9_4_image_13 from "../assets/figures/beginning-chemistry/9.4-image-13.webp";
+import beginningChemistry_9_4_image_14 from "../assets/figures/beginning-chemistry/9.4-image-14.webp";
+import beginningChemistry_9_4_image_15 from "../assets/figures/beginning-chemistry/9.4-image-15.webp";
+import beginningChemistry_9_4_image_16 from "../assets/figures/beginning-chemistry/9.4-image-16.webp";
+import beginningChemistry_9_4_image_17 from "../assets/figures/beginning-chemistry/9.4-image-17.webp";
+import beginningChemistry_9_4_image_18 from "../assets/figures/beginning-chemistry/9.4-image-18.webp";
+import beginningChemistry_9_4_image_19 from "../assets/figures/beginning-chemistry/9.4-image-19.webp";
+import beginningChemistry_9_4_image_20 from "../assets/figures/beginning-chemistry/9.4-image-20.webp";
+import beginningChemistry_9_4_image_21 from "../assets/figures/beginning-chemistry/9.4-image-21.webp";
+import beginningChemistry_9_4_image_22 from "../assets/figures/beginning-chemistry/9.4-image-22.webp";
+import beginningChemistry_9_4_image_23 from "../assets/figures/beginning-chemistry/9.4-image-23.webp";
+import beginningChemistry_9_4_image_24 from "../assets/figures/beginning-chemistry/9.4-image-24.webp";
+import beginningChemistry_9_4_image_25 from "../assets/figures/beginning-chemistry/9.4-image-25.webp";
+import beginningChemistry_9_4_image_26 from "../assets/figures/beginning-chemistry/9.4-image-26.webp";
+import beginningChemistry_9_4_image_27 from "../assets/figures/beginning-chemistry/9.4-image-27.webp";
+import beginningChemistry_9_5_image_2 from "../assets/figures/beginning-chemistry/9.5-image-2.webp";
+import beginningChemistry_9_5_image_4 from "../assets/figures/beginning-chemistry/9.5-image-4.webp";
+import beginningChemistry_9_5_image_5 from "../assets/figures/beginning-chemistry/9.5-image-5.webp";
+import beginningChemistry_9_6_image_2 from "../assets/figures/beginning-chemistry/9.6-image-2.webp";
+import beginningChemistry_9_6_image_3 from "../assets/figures/beginning-chemistry/9.6-image-3.webp";
+import beginningChemistry_9_6_image_4 from "../assets/figures/beginning-chemistry/9.6-image-4.webp";
+import beginningChemistry_9_6_image_5 from "../assets/figures/beginning-chemistry/9.6-image-5.webp";
+import beginningChemistry_9_6_image_6 from "../assets/figures/beginning-chemistry/9.6-image-6.webp";
+import beginningChemistry_9_7_image_2 from "../assets/figures/beginning-chemistry/9.7-image-2.webp";
+import beginningChemistry_9_7_image_3 from "../assets/figures/beginning-chemistry/9.7-image-3.webp";
+import beginningChemistry_9_7_image_4 from "../assets/figures/beginning-chemistry/9.7-image-4.webp";
+import beginningChemistry_9_7_image_5 from "../assets/figures/beginning-chemistry/9.7-image-5.webp";
+import beginningChemistry_9_7_image_6 from "../assets/figures/beginning-chemistry/9.7-image-6.webp";
+import beginningChemistry_9_7_image_7 from "../assets/figures/beginning-chemistry/9.7-image-7.webp";
+import beginningChemistry_9_7_image_8 from "../assets/figures/beginning-chemistry/9.7-image-8.webp";
+import beginningChemistry_9_7_image_9 from "../assets/figures/beginning-chemistry/9.7-image-9.webp";
+import beginningChemistry_9_7_image_10 from "../assets/figures/beginning-chemistry/9.7-image-10.webp";
 import type { BookKey, FigureImage } from "./types";
 
 export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>> = {
@@ -150,5 +190,45 @@ export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>
     "8.6.1": { src: beginningChemistry_8_6_1, width: 1448, height: 1086 },
     "8.6.2": { src: beginningChemistry_8_6_2, width: 1448, height: 1086 },
     "8.6.3": { src: beginningChemistry_8_6_3, width: 1448, height: 1086 },
+    "9.4-image-3": { src: beginningChemistry_9_4_image_3, width: 1200, height: 188 },
+    "9.4-image-6": { src: beginningChemistry_9_4_image_6, width: 1200, height: 188 },
+    "9.4-image-7": { src: beginningChemistry_9_4_image_7, width: 1200, height: 188 },
+    "9.4-image-8": { src: beginningChemistry_9_4_image_8, width: 1200, height: 188 },
+    "9.4-image-9": { src: beginningChemistry_9_4_image_9, width: 1200, height: 188 },
+    "9.4-image-10": { src: beginningChemistry_9_4_image_10, width: 1200, height: 188 },
+    "9.4-image-11": { src: beginningChemistry_9_4_image_11, width: 1200, height: 188 },
+    "9.4-image-12": { src: beginningChemistry_9_4_image_12, width: 1200, height: 188 },
+    "9.4-image-13": { src: beginningChemistry_9_4_image_13, width: 1200, height: 264 },
+    "9.4-image-14": { src: beginningChemistry_9_4_image_14, width: 1200, height: 188 },
+    "9.4-image-15": { src: beginningChemistry_9_4_image_15, width: 1200, height: 264 },
+    "9.4-image-16": { src: beginningChemistry_9_4_image_16, width: 1200, height: 282 },
+    "9.4-image-17": { src: beginningChemistry_9_4_image_17, width: 1200, height: 336 },
+    "9.4-image-18": { src: beginningChemistry_9_4_image_18, width: 1200, height: 340 },
+    "9.4-image-19": { src: beginningChemistry_9_4_image_19, width: 1200, height: 424 },
+    "9.4-image-20": { src: beginningChemistry_9_4_image_20, width: 1200, height: 264 },
+    "9.4-image-21": { src: beginningChemistry_9_4_image_21, width: 1200, height: 264 },
+    "9.4-image-22": { src: beginningChemistry_9_4_image_22, width: 1200, height: 332 },
+    "9.4-image-23": { src: beginningChemistry_9_4_image_23, width: 1200, height: 280 },
+    "9.4-image-24": { src: beginningChemistry_9_4_image_24, width: 1200, height: 188 },
+    "9.4-image-25": { src: beginningChemistry_9_4_image_25, width: 1200, height: 188 },
+    "9.4-image-26": { src: beginningChemistry_9_4_image_26, width: 1200, height: 188 },
+    "9.4-image-27": { src: beginningChemistry_9_4_image_27, width: 1200, height: 336 },
+    "9.5-image-2": { src: beginningChemistry_9_5_image_2, width: 1200, height: 188 },
+    "9.5-image-4": { src: beginningChemistry_9_5_image_4, width: 1200, height: 258 },
+    "9.5-image-5": { src: beginningChemistry_9_5_image_5, width: 1200, height: 324 },
+    "9.6-image-2": { src: beginningChemistry_9_6_image_2, width: 1200, height: 362 },
+    "9.6-image-3": { src: beginningChemistry_9_6_image_3, width: 1200, height: 412 },
+    "9.6-image-4": { src: beginningChemistry_9_6_image_4, width: 1200, height: 188 },
+    "9.6-image-5": { src: beginningChemistry_9_6_image_5, width: 1200, height: 444 },
+    "9.6-image-6": { src: beginningChemistry_9_6_image_6, width: 1200, height: 188 },
+    "9.7-image-2": { src: beginningChemistry_9_7_image_2, width: 1200, height: 362 },
+    "9.7-image-3": { src: beginningChemistry_9_7_image_3, width: 1200, height: 246 },
+    "9.7-image-4": { src: beginningChemistry_9_7_image_4, width: 1200, height: 352 },
+    "9.7-image-5": { src: beginningChemistry_9_7_image_5, width: 1200, height: 262 },
+    "9.7-image-6": { src: beginningChemistry_9_7_image_6, width: 1200, height: 242 },
+    "9.7-image-7": { src: beginningChemistry_9_7_image_7, width: 1200, height: 264 },
+    "9.7-image-8": { src: beginningChemistry_9_7_image_8, width: 1200, height: 318 },
+    "9.7-image-9": { src: beginningChemistry_9_7_image_9, width: 1200, height: 272 },
+    "9.7-image-10": { src: beginningChemistry_9_7_image_10, width: 1200, height: 246 },
   },
 };

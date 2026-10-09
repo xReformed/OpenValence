@@ -52,7 +52,7 @@ export default function ChatSidebar({
           onClick={onNavigate}
           className="flex items-center gap-2 text-base tracking-tight"
         >
-          <ValenceMark className="h-5 w-5" />
+          <ValenceMark className="text-accent-ink h-5 w-5" />
           OpenValence
         </Link>
         <ThemeToggle />

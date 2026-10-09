@@ -11,6 +11,7 @@ import remarkGfm from "remark-gfm";
 import ChemText from "../ChemText";
 import { DocumentIcon } from "../LandingIcons";
 import { findFigureImage, findPlaceholderImage } from "../../lib/figureImages";
+import { findImageLabel } from "../../lib/imageLabels";
 import type { BookKey } from "../../lib/types";
 import { FigureWithImage, PlaceholderImage } from "./SectionImages";
 
@@ -83,16 +84,21 @@ function Paragraph({ children }: { children?: ReactNode }) {
   }
 
   if (/^\[[^\]]+\]$/.test(whole.trim())) {
-    const label = whole.trim().slice(1, -1);
-    const image =
-      tag && source ? findPlaceholderImage(source.book, source.section, Number(tag[1])) : undefined;
+    const printed = whole.trim().slice(1, -1);
+    const position = tag ? Number(tag[1]) : 0;
+    /* Our description of a diagram the book left undescribed, in ChemText
+       notation; the book's own alt text is plain prose ("Mg2+"), so it isn't. */
+    const described = source && position ? findImageLabel(source.book, source.section, position) : undefined;
+    const label = described ? chem(described) : printed;
+    const alt = described ? described.replace(/[\^_{}]/g, "") : printed.replace(/^Image:\s*/, "");
+    const image = source && position ? findPlaceholderImage(source.book, source.section, position) : undefined;
     if (image) {
-      return <PlaceholderImage label={label} image={image} startOpen={inPracticeCard} />;
+      return <PlaceholderImage label={label} alt={alt} image={image} startOpen={inPracticeCard} />;
     }
     return (
       <p className="flex items-start gap-2 rounded-xl border border-dashed border-neutral-300 px-4 py-3 text-sm text-neutral-500">
         <DocumentIcon className="mt-0.5 h-4 w-4 shrink-0" />
-        <span>{whole.trim().slice(1, -1)}</span>
+        <span>{label}</span>
       </p>
     );
   }

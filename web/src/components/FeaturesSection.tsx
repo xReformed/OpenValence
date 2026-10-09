@@ -161,9 +161,9 @@ function OpenSourcesArt() {
       <MiniCard className="flex h-14 w-14 items-center justify-center">
         <BookIcon className="h-6 w-6 text-neutral-700" />
       </MiniCard>
-      <span className="bg-accent flex h-18 w-18 items-center justify-center rounded-2xl shadow-[0_12px_24px_-10px_rgba(1,138,68,0.6)]">
-        <ValenceMark className="h-8 w-8 text-on-accent" />
-      </span>
+      <MiniCard className="flex h-18 w-18 items-center justify-center">
+        <ValenceMark className="text-accent-ink h-10 w-10" />
+      </MiniCard>
       <MiniCard className="flex h-14 w-14 items-center justify-center">
         <span className="text-xs font-semibold tracking-wide text-neutral-700">CC BY</span>
       </MiniCard>

@@ -25,6 +25,8 @@ Now consider the HF molecule:
 
 There are two different atoms involved in the covalent bond. The H atom has one proton in its nucleus that is attracting the bonding pair of electrons. However, the F atom has nine protons in its nucleus, with nine times the attraction of the H atom. The F atom attracts the electrons so much more strongly that the electrons remain closer to the F atom than to the H atom; the electrons are no longer equally balanced between the two nuclei. Instead of representing the HF molecule as
 
+[Note: reproduced as printed, but F's pull is not nine times H's. F's inner electrons and its other valence electrons partly shield its nucleus, so the bonding electrons feel much less than nine protons' worth of charge. F still attracts them far more strongly than H does.]
+
 [Image not described in source]
 
 it may be more appropriate to draw the covalent bond as
@@ -66,6 +68,8 @@ Using Figure 9.5.1, we can calculate the difference of the electronegativities o
 
 a. For the C–H bond, the difference in the electronegativities is 2.5 − 2.1 = 0.4. Thus we predict that this bond will be slightly polar covalent.
 b. For the O–H bond, the difference in electronegativities is 3.5 − 2.1 = 1.4, so we predict that this bond will be definitely polar covalent.
+
+[Note: reproduced as printed; this example uses older, rounded electronegativities (C 2.5, H 2.1, O 3.5), while Figure 9.5.1 shows C 2.55, H 2.2 and O 3.44. With the figure's values the differences are 0.35 and 1.24, which give the same classifications.]
 
 ### Exercise 9.5.1
 
@@ -144,6 +148,8 @@ Combining these two numbers:
 | Net Change: | −482 kJ/mol ≈ ΔH |
 
 The actual ΔH is −572 kJ/mol; we are off by about 16%. Although not ideal, a 16% difference is reasonable because we used estimated, not exact, bond energies.
+
+[Note: reproduced as printed, but the comparison isn't like for like. −572 kJ is ΔH for making liquid water, while bond energies describe molecules in the gas phase. For 2H2(g) + O2(g) → 2H2O(g), ΔH is about −484 kJ, so the −482 kJ estimate is very close.]
 
 ### Example 9.5.1
 

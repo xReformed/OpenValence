@@ -29,6 +29,8 @@ Some substances have a trigonal planar electron group distribution, but have ato
 
 From an electron group geometry perspective, GeF2 has a trigonal planar shape, but its real shape is dictated by the positions of the atoms. This shape is called bent or angular.
 
+[Note: reproduced as printed, but GeF2 is also electron-deficient (Section 9.6): with two bonds and one lone pair, the Ge atom has only six electrons around it. Its three electron groups still give the bent shape described here.]
+
 A molecule with four electron groups about the central atom orients the four groups in the direction of a tetrahedron, as shown in Figure 9.7.1: Tetrahedral Geometry. If there are four atoms attached to these electron groups, then the molecular shape is also tetrahedral. Methane (CH4) is an example.
 
 Figure 9.7.1: Tetrahedral Geometry. Four electron groups orient themselves in the shape of a tetrahedron.

@@ -102,7 +102,7 @@ function ProductPreview() {
       className="flex rounded-2xl border border-neutral-200 bg-neutral-50 p-2 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.18)]"
     >
       <aside className="hidden w-36 shrink-0 flex-col gap-1 p-3 sm:flex">
-        <ValenceMark className="mb-4 h-5 w-5" />
+        <ValenceMark className="text-accent-ink mb-4 h-5 w-5" />
         {sidebar.map(({ icon: ItemIcon, label, active }) => (
           <div
             key={label}
@@ -122,7 +122,7 @@ function ProductPreview() {
         </div>
 
         <div className="flex gap-2.5">
-          <ValenceMark className="mt-2 h-4 w-4 shrink-0" />
+          <ValenceMark className="text-accent-ink mt-2 h-4 w-4 shrink-0" />
           <div className="flex min-w-0 flex-1 flex-col gap-3">
             <ul className="flex flex-col gap-2.5 rounded-lg border border-neutral-200 p-3">
               {DEMO_STEPS.map((label, i) => (

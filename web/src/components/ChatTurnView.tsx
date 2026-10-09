@@ -6,7 +6,7 @@ import type { ChatTurn } from "../lib/types";
 export function AssistantAvatar() {
   return (
     <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-neutral-200 bg-white">
-      <ValenceMark className="h-4 w-4" />
+      <ValenceMark className="text-accent-ink h-5 w-5" />
     </span>
   );
 }
