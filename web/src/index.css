@@ -11,6 +11,10 @@
   /* Text and icons on an accent fill: dark in both themes, because the fill
      stays bright in both. */
   --color-on-accent: #171717;
+  /* Long-form text (sections, questions, chat answers). Same as neutral-800 in
+     light mode; softer in dark mode, where near-white on black glares over a
+     long session. */
+  --color-reading: var(--color-neutral-800);
 
   --animate-pop: pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.3) both;
   @keyframes pop {
@@ -47,6 +51,7 @@
   --color-neutral-800: #e0e0e0;
   --color-neutral-900: #ededed;
   --color-neutral-950: #f7f7f7;
+  --color-reading: #cfcfcf;
 
   /* The bright fill reads on black as it is; the dark ink doesn't. */
   --color-accent-ink: #3ee08a;
@@ -61,9 +66,7 @@
   --color-red-700: #fca5a5;
 }
 
-/* The roadmap cards' shine: a green arc that circles the card's edge while
-   it's hovered or focused. --shine-angle is registered so the conic gradient
-   can animate. */
+/* --shine-angle is registered so the conic gradient can animate. */
 @property --shine-angle {
   syntax: "<angle>";
   inherits: false;

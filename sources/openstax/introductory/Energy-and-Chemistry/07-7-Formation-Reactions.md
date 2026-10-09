@@ -30,6 +30,8 @@ In both cases, one of the elements is a diatomic molecule because that is the st
 
 —is _not_ in a standard state because the coefficient on the product is 2; for a proper formation reaction, only one mole of product is formed. Thus, we have to divide all coefficients by 2:
 
+[Note: reproduced as printed, but the elements here are in their standard states. The book means this isn't a proper formation reaction, because it makes 2 mol of H2O instead of 1.]
+
 H2(g) + 1/2 O2(g) → H2O(ℓ)
 
 On a molecular scale, we are using half of an oxygen molecule, which may be problematic to visualize. However, on a molar level, it implies that we are reacting only half of a mole of oxygen molecules, which should be an easy concept for us to understand.
@@ -90,6 +92,8 @@ Note that now we are using kJ/mol as the unit because it is understood that the 
 
 H2(g) → H2(g) ΔH_f = 0
 
+[Note: reproduced as printed, but this holds only for an element in its standard state. Table 7.7.1 below lists C(s, dia) at 1.897 kJ/mol and O3(g) at 142.67 kJ/mol.]
+
 Formation reactions and their enthalpies are important because _these are the thermochemical data that are tabulated_ for any chemical reaction. Table 7.7.1 - Enthalpies of Formation for Various Substances, lists some enthalpies of formation for a variety of substances; in some cases, however, phases can be important (e.g., for H2O).
 
 It is easy to show that any general chemical equation can be written in terms of the formation reactions of its reactants and products, some of them reversed (which means the sign must change in accordance with Hess's law). For example, consider
@@ -102,6 +106,8 @@ We can write it in terms of the (reverse) formation reaction of NO2 and the form
 N2(g) + 2O2(g) → N2O4(g) ΔH = ΔH_r [N2O4] = 9.1kJ
 ---------------------------------
 2NO2(g) → N2O4 ΔH = −57.1kJ
+
+[Note: reproduced as printed; ΔH_r here means the enthalpy of formation, ΔH_f, of NO2 and N2O4 (33.10 and 9.08 kJ/mol in Table 7.7.1).]
 
 We must multiply the first reaction by 2 to get the correct overall balanced equation. We are simply using Hess's law in combining the ΔH_f values of the formation reactions.
 
@@ -138,6 +144,8 @@ Table 7.7.1 Enthalpies of Formation for Various Substances
 
 _Sources: National Institute of Standards and Technology's Chemistry WebBook; D. R. Lide, ed., CRC Handbook of Chemistry and Physics, 89th ed. (Boca Raton, FL: CRC Press, 2008); J. A. Dean, ed., Lange's Handbook of Chemistry, 14th ed. (New York: McGraw-Hill, 1992)._
 
+[Note: reproduced as printed, but two values in this table are wrong: the measured ΔH_f is about −1,387 kJ/mol for Na2SO4(s) and about −411 kJ/mol for NaCl(s).]
+
 ### Example 7.7.3
 
 Show that the reaction
@@ -159,6 +167,8 @@ When these three equations are combined and simplified, the overall reaction is
 
 Fe2O3(s) + 3SO3(s) → Fe2(SO4)3(s)
 
+[Note: reproduced as printed; SO3 is a gas here, SO3(g), as in the reaction at the top of the example.]
+
 ### Exercise 7.7.3
 
 Write the formation reactions that will yield
@@ -169,6 +179,8 @@ Write the formation reactions that will yield
 
 2 × [SO2(g) → S(s) + O2(g)]
 2 × [S(s) + 3/2 O2(g) → 2SO3(g)]
+
+[Note: reproduced as printed, but the second formation reaction makes one SO3: S(s) + 3/2 O2(g) → SO3(g). The 2 × in front doubles it to 2SO3(g).]
 
 Now that formation reactions have been established as the major type of thermochemical reaction being examined in this chapter, is it necessary to write all of the formation reactions when the aim is to determine the enthalpy change of any random chemical reaction? No. There is an easier way. You may have noticed in all of our examples that signs are changed on the enthalpies of formation of the reactants, and signs are not changed on the enthalpies of formation of the products. We also multiply the enthalpies of formation of any substance by its coefficient—technically, even when it is just 1. This allows us to make the following statement: _the enthalpy change of any chemical reaction is equal to the sum of the enthalpies of formation of the products minus the sum of the enthalpies of formation of the reactants_. In mathematical terms,
 

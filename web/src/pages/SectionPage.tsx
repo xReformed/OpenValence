@@ -4,6 +4,7 @@ import ReadingProgress from "../components/ReadingProgress";
 import SiteFooter from "../components/SiteFooter";
 import TopNavBar from "../components/TopNavBar";
 import CheckYourself, { QuestionsUnavailable } from "../components/section/CheckYourself";
+import DevPracticeTools from "../components/section/DevPracticeTools";
 import PracticeCard from "../components/section/PracticeCard";
 import SectionMarkdown, { FigureSourceProvider } from "../components/section/SectionMarkdown";
 import SectionNav from "../components/section/SectionNav";
@@ -19,9 +20,6 @@ export function SectionRoute() {
   return <SectionPage key={`${book}/${section}`} />;
 }
 
-/* One textbook section: the book's text with its Examples and Exercises as
-   cards, OpenValence's practice questions, and Previous / Next. The pieces
-   live in components/section. */
 export default function SectionPage() {
   /* sectionLoader has already turned an unknown branch, book, or section into a 404. */
   const {
@@ -100,7 +98,7 @@ export default function SectionPage() {
             </header>
 
             {text ? (
-              <div className="mt-10 flex max-w-3xl flex-col gap-5 text-[1.02rem] leading-relaxed text-neutral-800">
+              <div className="mt-10 flex max-w-3xl flex-col gap-5 text-[1.02rem] leading-relaxed text-reading">
                 <FigureSourceProvider book={stage.book} section={section.number}>
                   {segments.map((segment, i) =>
                     segment.kind === "text" ? (
@@ -181,6 +179,9 @@ export default function SectionPage() {
       </main>
 
       <SiteFooter />
+      {import.meta.env.DEV && shown.length > 0 && (
+        <DevPracticeTools book={stage.book} section={section.number} questions={shown} pool={questions} />
+      )}
     </div>
   );
 }

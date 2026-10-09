@@ -1,0 +1,449 @@
+[
+  {
+    "id": "stoich-definition",
+    "type": "multiple-choice",
+    "prompt": "What is stoichiometry?",
+    "choices": [
+      {
+        "text": "Relating a quantity of one chemical substance to a quantity of another by using a balanced chemical equation",
+        "correct": true
+      },
+      {
+        "text": "Adjusting the coefficients in a chemical equation until the atoms of each element are balanced",
+        "why": "That is balancing an equation. Stoichiometry starts from an equation that is already balanced and uses it to relate amounts of substances."
+      },
+      {
+        "text": "Converting a quantity from one unit to another, such as from feet to yards, by using a conversion factor",
+        "why": "Stoichiometry uses conversion factors the way unit conversions do, but it relates amounts of different substances through a balanced chemical equation."
+      },
+      {
+        "text": "Identifying which substances in a chemical equation are the reactants and which are the products",
+        "why": "That is only reading the equation. Stoichiometry is about how much of one substance goes with how much of another."
+      }
+    ],
+    "explanation": "Stoichiometry is the relating of one chemical substance to another using a balanced chemical equation. Like a recipe, it tells you how much of one substance goes with a given amount of another."
+  },
+  {
+    "id": "stoich-equation-is-a-recipe",
+    "type": "multiple-choice",
+    "prompt": "A balanced chemical equation can be thought of as a recipe for a chemical reaction. How is it different from a kitchen recipe?",
+    "choices": [
+      {
+        "text": "Its quantities are numbers of atoms and molecules, not cups, pounds, and eggs.",
+        "correct": true
+      },
+      {
+        "text": "Its quantities can't be scaled up or down the way a recipe's can.",
+        "why": "Any numbers of molecules can react as long as they keep the ratio of the coefficients, just as a recipe can be doubled or halved."
+      },
+      {
+        "text": "Its coefficients give the mass in grams of each substance.",
+        "why": "Coefficients count molecules. In 2CO + O2 → 2CO2, the 2 in front of CO means two molecules, not 2 g."
+      },
+      {
+        "text": "It lists the reactants but not the products they make.",
+        "why": "A chemical equation shows both: the reactants on the left of the arrow and the products on the right."
+      }
+    ],
+    "explanation": "A balanced chemical equation is nothing more than a recipe for a chemical reaction, except that it is written in terms of atoms and molecules rather than cups, pounds, and eggs."
+  },
+  {
+    "id": "stoich-recipe-equivalence-meaning",
+    "type": "multiple-choice",
+    "prompt": "A recipe for one batch of trail mix uses 3 c of peanuts and 2 c of raisins, so for this recipe 3 c peanuts ⇔ 2 c raisins. What does the ⇔ symbol mean here?",
+    "choices": [
+      {
+        "text": "For this recipe, 3 c of peanuts goes with 2 c of raisins, so any batch uses them in a 3:2 ratio.",
+        "correct": true
+      },
+      {
+        "text": "3 c of peanuts equals 2 c of raisins, so either one can be used in place of the other.",
+        "why": "⇔ means \"is equivalent to\" as far as this recipe is concerned. The two ingredients are not equal, and one can't replace the other."
+      },
+      {
+        "text": "Any amounts of peanuts and raisins can be used, as long as there are 5 c in all.",
+        "why": "The equivalence fixes the ratio of the two ingredients, not their total. 4 c of peanuts with 1 c of raisins would not follow the recipe."
+      },
+      {
+        "text": "3 c of peanuts weighs the same as 2 c of raisins, so the recipe uses equal masses.",
+        "why": "The equivalence tells which amounts are used together in the recipe. It says nothing about the masses of the ingredients."
+      }
+    ],
+    "explanation": "⇔ means \"is equivalent to.\" It does not say the quantities are equal, only that they are the amounts this recipe uses together, so any amounts used must have the same 3:2 ratio. That is what lets an equivalence be turned into a conversion factor."
+  },
+  {
+    "id": "stoich-recipe-sandwich-turkey",
+    "type": "numeric",
+    "prompt": "A deli's recipe is 2 slices of bread + 3 slices of turkey + 1 slice of cheese → 1 sandwich. How many slices of turkey are needed to go with 48 slices of bread?",
+    "answer": 72,
+    "tolerance": 0,
+    "explanation": "The recipe gives 2 slices bread ⇔ 3 slices turkey. Putting bread on the bottom so it cancels: 48 slices bread × (3 slices turkey / 2 slices bread) = 72 slices turkey."
+  },
+  {
+    "id": "stoich-read-equation-as-molecules",
+    "type": "multiple-choice",
+    "prompt": "Which statement correctly reads the balanced equation 2CO + O2 → 2CO2 in terms of molecules?",
+    "choices": [
+      {
+        "text": "Two CO molecules react with one O2 molecule to make two CO2 molecules.",
+        "correct": true
+      },
+      {
+        "text": "One CO molecule reacts with one O2 molecule to make one CO2 molecule.",
+        "why": "This ignores the coefficients. The 2 in front of CO and of CO2 means two molecules of each."
+      },
+      {
+        "text": "Two grams of CO react with one gram of O2 to make two grams of CO2.",
+        "why": "Coefficients count molecules, not grams."
+      },
+      {
+        "text": "Two CO molecules react with one oxygen atom to make two CO2 molecules.",
+        "why": "O2 is an oxygen molecule made of two oxygen atoms. With only one oxygen atom, the oxygen atoms wouldn't balance."
+      }
+    ],
+    "explanation": "The coefficients of a balanced equation are numbers of molecules, and a coefficient that isn't written is 1. So the equation says two CO molecules react with one O2 molecule to make two CO2 molecules."
+  },
+  {
+    "id": "stoich-ratio-meaning-methanol-water",
+    "type": "multiple-choice",
+    "prompt": "Methanol burns according to the balanced equation 2CH3OH + 3O2 → 2CO2 + 4H2O. What does the 3 to 4 ratio of O2 to H2O tell you?",
+    "choices": [
+      {
+        "text": "For every 3 O2 molecules that react, 4 H2O molecules are produced.",
+        "correct": true
+      },
+      {
+        "text": "For every 4 O2 molecules that react, 3 H2O molecules are produced.",
+        "why": "This reverses the ratio. The 3 is the coefficient of O2 and the 4 is the coefficient of H2O."
+      },
+      {
+        "text": "Every 3 O2 molecules react with 4 H2O molecules.",
+        "why": "H2O is a product. It is made in the reaction; it doesn't react with O2."
+      },
+      {
+        "text": "Every 3 g of O2 that react produce 4 g of H2O.",
+        "why": "Coefficients count molecules, not grams."
+      }
+    ],
+    "explanation": "Coefficients give numbers of molecules. Three O2 molecules react (with two CH3OH molecules) to produce four H2O molecules, so the O2 used and the H2O made are always in a 3:4 ratio."
+  },
+  {
+    "id": "stoich-ratio-oxygen-per-phosphine",
+    "type": "numeric",
+    "prompt": "According to the balanced equation 4PH3 + 8O2 → P4O10 + 6H2O, how many O2 molecules react for each PH3 molecule that reacts?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The coefficients give 4 PH3 molecules ⇔ 8 O2 molecules, so 1 molecule PH3 × (8 molecules O2 / 4 molecules PH3) = 2 molecules O2."
+  },
+  {
+    "id": "stoich-factor-from-coefficients-methanol",
+    "type": "multiple-choice",
+    "prompt": "Methanol can be made by the balanced reaction CO + 2H2 → CH3OH. Which conversion factor follows from this equation?",
+    "choices": [
+      {
+        "text": "(2 molecules H2 / 1 molecule CH3OH)",
+        "correct": true
+      },
+      {
+        "text": "(1 molecule H2 / 2 molecules CH3OH)",
+        "why": "The numbers are attached to the wrong substances. H2 has a coefficient of 2 and CH3OH has a coefficient of 1."
+      },
+      {
+        "text": "(1 molecule CO / 1 molecule H2)",
+        "why": "This ignores the coefficient of H2. One CO molecule reacts with two H2 molecules."
+      },
+      {
+        "text": "(4 molecules H2 / 1 molecule CH3OH)",
+        "why": "CH3OH contains 4 H atoms, but those come from 2 H2 molecules. A factor between molecules comes from the coefficients."
+      }
+    ],
+    "explanation": "The coefficients give 1 CO molecule ⇔ 2 H2 molecules ⇔ 1 CH3OH molecule. Any two of these make a conversion factor, such as (2 molecules H2 / 1 molecule CH3OH)."
+  },
+  {
+    "id": "stoich-why-factor-equals-one",
+    "type": "multiple-choice",
+    "prompt": "For the balanced equation Cl2 + 3F2 → 2ClF3, the conversion factor (3 molecules F2 / 1 molecule Cl2) can be used as if it were equal to 1. Why?",
+    "choices": [
+      {
+        "text": "In this reaction, 3 F2 molecules go with every 1 Cl2 molecule, so the two amounts are equivalent.",
+        "correct": true
+      },
+      {
+        "text": "3 F2 molecules contain the same number of atoms as 1 Cl2 molecule does.",
+        "why": "They don't: 3 F2 molecules have 6 atoms and 1 Cl2 molecule has 2. The equivalence comes from the coefficients, not from atom counts."
+      },
+      {
+        "text": "The units, molecules of F2 and molecules of Cl2, cancel and leave a pure number.",
+        "why": "Molecules of F2 and molecules of Cl2 are different units, so they don't cancel each other. The factor works because the reaction relates them."
+      },
+      {
+        "text": "3 F2 molecules have the same mass as 1 Cl2 molecule does.",
+        "why": "The equivalence is about how many molecules react together, not about their masses."
+      }
+    ],
+    "explanation": "Like a recipe, the balanced equation relates the two quantities: whenever one Cl2 molecule reacts, three F2 molecules react with it. As far as this reaction is concerned, 3 F2 molecules ⇔ 1 Cl2 molecule, so the factor is, in a sense, equal to 1."
+  },
+  {
+    "id": "stoich-choose-factor-methane-oxygen",
+    "type": "multiple-choice",
+    "prompt": "Methane burns according to CH4 + 2O2 → CO2 + 2H2O. To find how many O2 molecules react with a given number of CH4 molecules, which conversion factor should you multiply the number of CH4 molecules by?",
+    "choices": [
+      {
+        "text": "(2 molecules O2 / 1 molecule CH4)",
+        "correct": true
+      },
+      {
+        "text": "(1 molecule CH4 / 2 molecules O2)",
+        "why": "With CH4 on top, molecules of CH4, the given unit, wouldn't cancel. The given substance goes on the bottom."
+      },
+      {
+        "text": "(1 molecule O2 / 2 molecules CH4)",
+        "why": "The coefficients are attached to the wrong substances: one CH4 molecule reacts with two O2 molecules."
+      },
+      {
+        "text": "(2 molecules O2 / 2 molecules H2O)",
+        "why": "This factor is true for the reaction, but it doesn't contain CH4, so it can't convert a number of CH4 molecules."
+      }
+    ],
+    "explanation": "Put the given substance, CH4, on the bottom so it cancels, and the substance you want, O2, on top. The coefficients give 1 CH4 molecule ⇔ 2 O2 molecules, so the factor is (2 molecules O2 / 1 molecule CH4)."
+  },
+  {
+    "id": "stoich-no-from-nitrogen",
+    "type": "numeric",
+    "prompt": "At the high temperature of a lightning strike, nitrogen and oxygen in the air combine according to N2 + O2 → 2NO. How many NO molecules are produced when 75 N2 molecules react?",
+    "answer": 150,
+    "tolerance": 0,
+    "explanation": "75 molecules N2 × (2 molecules NO / 1 molecule N2) = 150 molecules NO."
+  },
+  {
+    "id": "stoich-oxygen-for-ammonia",
+    "type": "numeric",
+    "prompt": "Ammonia reacts with oxygen according to the balanced equation 4NH3 + 5O2 → 4NO + 6H2O. How many O2 molecules are needed to react with 96 NH3 molecules?",
+    "answer": 120,
+    "tolerance": 0,
+    "explanation": "Molecules of NH3 go on the bottom of the conversion factor so they cancel: 96 molecules NH3 × (5 molecules O2 / 4 molecules NH3) = 120 molecules O2."
+  },
+  {
+    "id": "stoich-propane-co2-from-oxygen",
+    "type": "numeric",
+    "prompt": "Propane burns in a gas grill according to C3H8 + 5O2 → 3CO2 + 4H2O. How many CO2 molecules are produced when 250 O2 molecules react?",
+    "answer": 150,
+    "tolerance": 0,
+    "explanation": "A reactant can be related to any product: 250 molecules O2 × (3 molecules CO2 / 5 molecules O2) = 150 molecules CO2."
+  },
+  {
+    "id": "stoich-octane-water",
+    "type": "numeric",
+    "prompt": "Octane, a component of gasoline, burns according to 2C8H18 + 25O2 → 16CO2 + 18H2O. How many H2O molecules are produced when 50 C8H18 molecules burn?",
+    "answer": 450,
+    "tolerance": 0,
+    "explanation": "50 molecules C8H18 × (18 molecules H2O / 2 molecules C8H18) = 450 molecules H2O."
+  },
+  {
+    "id": "stoich-photosynthesis-co2-for-glucose",
+    "type": "numeric",
+    "prompt": "In photosynthesis, plants make glucose by the balanced reaction 6CO2 + 6H2O → C6H12O6 + 6O2. How many CO2 molecules does a plant use to make 35 molecules of glucose, C6H12O6?",
+    "answer": 210,
+    "tolerance": 0,
+    "explanation": "Working back from a product is done the same way: 35 molecules C6H12O6 × (6 molecules CO2 / 1 molecule C6H12O6) = 210 molecules CO2."
+  },
+  {
+    "id": "stoich-n2o5-no2-with-oxygen",
+    "type": "numeric",
+    "prompt": "N2O5 decomposes according to the balanced equation 2N2O5 → 4NO2 + O2. How many NO2 molecules form along with 35 O2 molecules?",
+    "answer": 140,
+    "tolerance": 0,
+    "explanation": "Two products can be related just like a reactant and a product: 35 molecules O2 × (4 molecules NO2 / 1 molecule O2) = 140 molecules NO2."
+  },
+  {
+    "id": "stoich-butane-oxygen",
+    "type": "numeric",
+    "prompt": "Butane in a lighter burns according to 2C4H10 + 13O2 → 8CO2 + 10H2O. How many O2 molecules react with 18 C4H10 molecules?",
+    "answer": 117,
+    "tolerance": 0,
+    "explanation": "18 molecules C4H10 × (13 molecules O2 / 2 molecules C4H10) = 117 molecules O2."
+  },
+  {
+    "id": "stoich-nitric-acid-from-no2",
+    "type": "numeric",
+    "prompt": "Nitrogen dioxide reacts with water to make nitric acid: 3NO2 + H2O → 2HNO3 + NO. How many HNO3 molecules form when 45 NO2 molecules react?",
+    "answer": 30,
+    "tolerance": 0,
+    "explanation": "45 molecules NO2 × (2 molecules HNO3 / 3 molecules NO2) = 30 molecules HNO3."
+  },
+  {
+    "id": "stoich-peroxide-oxygen-scientific-notation",
+    "type": "numeric",
+    "prompt": "Hydrogen peroxide slowly decomposes according to 2H2O2 → 2H2O + O2. How many O2 molecules form when 4.8 × 10^19 H2O2 molecules decompose?",
+    "answer": 2.4e+19,
+    "explanation": "4.8 × 10^19 molecules H2O2 × (1 molecule O2 / 2 molecules H2O2) = 2.4 × 10^19 molecules O2."
+  },
+  {
+    "id": "stoich-spot-upside-down-factor",
+    "type": "multiple-choice",
+    "prompt": "Ethane burns according to 2C2H6 + 7O2 → 4CO2 + 6H2O. To find how many O2 molecules react with 60 C2H6 molecules, a student writes 60 molecules C2H6 × (2 molecules C2H6 / 7 molecules O2) and gets about 17. What went wrong?",
+    "choices": [
+      {
+        "text": "The factor is upside down; (7 molecules O2 / 2 molecules C2H6) gives 210 O2 molecules.",
+        "correct": true
+      },
+      {
+        "text": "Coefficients don't matter here; equal numbers react, so 60 O2 molecules are needed.",
+        "why": "The coefficients give the ratio in which molecules react. Here 7 O2 molecules react for every 2 C2H6 molecules."
+      },
+      {
+        "text": "The factor should be (4 molecules CO2 / 2 molecules C2H6), which gives 120 O2 molecules.",
+        "why": "That factor relates C2H6 to CO2, a product, so it gives a number of CO2 molecules, not O2 molecules."
+      },
+      {
+        "text": "The setup is right; the answer just needs rounding to 17 O2 molecules.",
+        "why": "With C2H6 on top of the factor, molecules of C2H6 don't cancel, so the result isn't a number of O2 molecules at all."
+      }
+    ],
+    "explanation": "The given unit must cancel, so molecules of C2H6 belong on the bottom of the conversion factor: 60 molecules C2H6 × (7 molecules O2 / 2 molecules C2H6) = 210 molecules O2."
+  },
+  {
+    "id": "stoich-spot-unbalanced-equation",
+    "type": "multiple-choice",
+    "prompt": "A student wants to know how many HCl molecules form when 30 H2 molecules react with chlorine. She uses the equation H2 + Cl2 → HCl and gets 30 HCl molecules. What is the problem?",
+    "choices": [
+      {
+        "text": "The equation isn't balanced; balanced, H2 + Cl2 → 2HCl gives 60 HCl molecules.",
+        "correct": true
+      },
+      {
+        "text": "The equation isn't balanced; balanced, H2 + Cl2 → 2HCl gives 15 HCl molecules.",
+        "why": "The balanced equation is right, but the factor is upside down. One H2 molecule makes two HCl molecules, so the number doubles: 30 × 2 = 60."
+      },
+      {
+        "text": "The equation isn't balanced; balanced, H2 + Cl2 → H2Cl2 gives 30 H2Cl2 molecules.",
+        "why": "Changing a subscript changes the substance. An equation is balanced by changing coefficients, never formulas."
+      },
+      {
+        "text": "There is no problem; each H2 molecule makes one HCl molecule, so 30 is right.",
+        "why": "As written, the equation has 2 H atoms and 2 Cl atoms on the left but only 1 of each on the right. A conversion factor must come from a balanced equation."
+      }
+    ],
+    "explanation": "Conversion factors come directly from the coefficients, so the equation must be properly balanced first. H2 + Cl2 → 2HCl gives (2 molecules HCl / 1 molecule H2), and 30 molecules H2 × (2 molecules HCl / 1 molecule H2) = 60 molecules HCl."
+  },
+  {
+    "id": "stoich-reactant-pair-in-ratio",
+    "type": "multiple-choice",
+    "prompt": "Hydrogen sulfide burns according to 2H2S + 3O2 → 2SO2 + 2H2O. Which pair of amounts has the ratio this equation requires, so that the two reactants react exactly with each other?",
+    "choices": [
+      {
+        "text": "40 H2S molecules and 60 O2 molecules",
+        "correct": true
+      },
+      {
+        "text": "60 H2S molecules and 40 O2 molecules",
+        "why": "This reverses the ratio. The equation needs 3 O2 molecules for every 2 H2S molecules, so there must be more O2 than H2S."
+      },
+      {
+        "text": "40 H2S molecules and 40 O2 molecules",
+        "why": "Equal numbers ignore the coefficients. 40 H2S molecules need 40 × 3 ÷ 2 = 60 O2 molecules."
+      },
+      {
+        "text": "40 H2S molecules and 120 O2 molecules",
+        "why": "This multiplies by the 3 but forgets to divide by the 2. The factor is (3 molecules O2 / 2 molecules H2S)."
+      }
+    ],
+    "explanation": "Any amounts that react must have the same ratio as the coefficients, 2 H2S molecules ⇔ 3 O2 molecules. 40 molecules H2S × (3 molecules O2 / 2 molecules H2S) = 60 molecules O2."
+  },
+  {
+    "id": "stoich-factor-from-formula-co2",
+    "type": "multiple-choice",
+    "prompt": "A chemical formula can also supply conversion factors. Which conversion factor comes from the formula CO2?",
+    "choices": [
+      {
+        "text": "(2 atoms O / 1 molecule CO2)",
+        "correct": true
+      },
+      {
+        "text": "(1 atom O / 2 molecules CO2)",
+        "why": "The subscript 2 means each CO2 molecule contains two O atoms, not that two molecules share one O atom."
+      },
+      {
+        "text": "(2 atoms C / 1 molecule CO2)",
+        "why": "The subscript 2 belongs to O. C has no subscript, so each CO2 molecule has one C atom."
+      },
+      {
+        "text": "(1 molecule O2 / 1 molecule CO2)",
+        "why": "A formula counts atoms. A CO2 molecule contains two O atoms, but it doesn't contain an O2 molecule."
+      }
+    ],
+    "explanation": "The formula CO2 shows one carbon atom and two oxygen atoms in each molecule. That gives conversion factors such as (2 atoms O / 1 molecule CO2) and (1 atom C / 1 molecule CO2)."
+  },
+  {
+    "id": "stoich-oxygen-atoms-in-sulfuric-acid",
+    "type": "numeric",
+    "prompt": "How many oxygen atoms are in 35 molecules of sulfuric acid, H2SO4?",
+    "answer": 140,
+    "tolerance": 0,
+    "explanation": "Each H2SO4 molecule has four O atoms, which gives the conversion factor (4 atoms O / 1 molecule H2SO4). 35 molecules H2SO4 × (4 atoms O / 1 molecule H2SO4) = 140 atoms O."
+  },
+  {
+    "id": "stoich-choose-factor-ethane-h-atoms",
+    "type": "multiple-choice",
+    "prompt": "You know how many hydrogen atoms are in a sample of ethane, C2H6, and you want the number of C2H6 molecules. Which conversion factor should you multiply by?",
+    "choices": [
+      {
+        "text": "(1 molecule C2H6 / 6 atoms H)",
+        "correct": true
+      },
+      {
+        "text": "(6 atoms H / 1 molecule C2H6)",
+        "why": "This factor is for going from molecules to atoms. For atoms of H to cancel, they must go on the bottom."
+      },
+      {
+        "text": "(1 molecule C2H6 / 2 atoms H)",
+        "why": "The subscript 2 belongs to carbon. The subscript 6 shows that each C2H6 molecule has 6 H atoms."
+      },
+      {
+        "text": "(1 molecule C2H6 / 8 atoms H)",
+        "why": "Eight is the total number of atoms in a C2H6 molecule, but only 6 of them are H atoms."
+      }
+    ],
+    "explanation": "The formula C2H6 shows 6 H atoms in each molecule. For the given unit to cancel, atoms of H go on the bottom: (1 molecule C2H6 / 6 atoms H)."
+  },
+  {
+    "id": "stoich-ethanol-total-products",
+    "type": "numeric",
+    "prompt": "Ethanol burns according to the balanced equation C2H5OH + 3O2 → 2CO2 + 3H2O. When 40 C2H5OH molecules burn, how many product molecules (CO2 and H2O together) are formed?",
+    "answer": 200,
+    "tolerance": 0,
+    "explanation": "40 molecules C2H5OH × (2 molecules CO2 / 1 molecule C2H5OH) = 80 molecules CO2, and 40 molecules C2H5OH × (3 molecules H2O / 1 molecule C2H5OH) = 120 molecules H2O, for 200 product molecules in all."
+  },
+  {
+    "id": "stoich-sulfuric-acid-two-reactions",
+    "type": "numeric",
+    "prompt": "Sulfuric acid can be made in two reactions: 2SO2 + O2 → 2SO3, and then SO3 + H2O → H2SO4. If all the SO3 from the first reaction is used in the second, how many H2SO4 molecules can be made from 40 O2 molecules?",
+    "answer": 80,
+    "tolerance": 0,
+    "explanation": "40 molecules O2 × (2 molecules SO3 / 1 molecule O2) = 80 molecules SO3, and 80 molecules SO3 × (1 molecule H2SO4 / 1 molecule SO3) = 80 molecules H2SO4."
+  },
+  {
+    "id": "stoich-oxygen-atoms-for-cs2",
+    "type": "numeric",
+    "prompt": "Carbon disulfide burns according to CS2 + 3O2 → CO2 + 2SO2. How many oxygen atoms are in the O2 molecules needed to react with 25 CS2 molecules?",
+    "answer": 150,
+    "tolerance": 0,
+    "explanation": "First use the equation: 25 molecules CS2 × (3 molecules O2 / 1 molecule CS2) = 75 molecules O2. Then use the formula: 75 molecules O2 × (2 atoms O / 1 molecule O2) = 150 atoms O."
+  },
+  {
+    "id": "stoich-oxygen-atoms-in-no2-product",
+    "type": "numeric",
+    "prompt": "In smog, NO reacts with oxygen according to 2NO + O2 → 2NO2. How many oxygen atoms are in the NO2 molecules formed when 45 O2 molecules react?",
+    "answer": 180,
+    "tolerance": 0,
+    "explanation": "45 molecules O2 × (2 molecules NO2 / 1 molecule O2) = 90 molecules NO2, and each NO2 molecule has two O atoms: 90 molecules NO2 × (2 atoms O / 1 molecule NO2) = 180 atoms O."
+  },
+  {
+    "id": "stoich-phosphorus-atoms-to-oxygen",
+    "type": "numeric",
+    "prompt": "Phosphorus burns according to P4 + 5O2 → P4O10. A sample of the P4O10 produced contains 200 phosphorus atoms. How many O2 molecules reacted to make it?",
+    "answer": 250,
+    "tolerance": 0,
+    "explanation": "Each P4O10 molecule has four P atoms: 200 atoms P × (1 molecule P4O10 / 4 atoms P) = 50 molecules P4O10. Then 50 molecules P4O10 × (5 molecules O2 / 1 molecule P4O10) = 250 molecules O2."
+  }
+]

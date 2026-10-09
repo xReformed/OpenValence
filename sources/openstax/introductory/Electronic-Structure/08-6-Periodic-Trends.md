@@ -109,6 +109,8 @@ b. K or K^+
 a. Because Sr is below Ca on the periodic table, it is easier to remove an electron from it; thus, Ca has the higher IE.
 b. Because K^+ has a positive charge, it will be harder to remove another electron from it, so its IE is larger than that of K. Indeed, it will be significantly larger because the next electron in K^+ to be removed comes from another shell.
 
+[Note: reproduced as printed; removing an electron from K^+ is potassium's second ionization energy, so part b compares K's IE1 with its IE2.]
+
 ### Exercise 8.6.2: Ionization Energies
 
 Which atom has the lower ionization energy, C or F?
@@ -126,6 +128,8 @@ EA is also usually expressed in kJ/mol. EA also demonstrates some periodic trend
 as → PT, EA ↑
 
 There is not a definitive trend as you go down the periodic table; sometimes EA increases, sometimes it decreases. Figure 8.6.3 shows EA values versus position on the periodic table for the s- and p-block elements. The trend isn't absolute, especially considering the large positive EA values for the second column. However, the general trend going across the periodic table should be obvious.
+
+[Note: reproduced as printed, but the positive values come from older data. Newer measurements give small negative EAs for Ca, Sr and Ba (about −2, −5 and −14 kJ/mol), while Be and Mg don't form stable negative ions. Either way, the second column breaks the trend across the row.]
 
 Figure 8.6.3: Electron Affinity on the Periodic Table. Values are in kJ/mol.
 Electron affinity on the periodic table.

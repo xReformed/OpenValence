@@ -31,22 +31,18 @@ export function useQuestionSet(key: string, pool: Question[]) {
   const score = questions.filter((question) => answers[question.id]?.result === "correct").length;
   const mark = passMark(questions.length);
   const passed = questions.length > 0 && answered === questions.length && score >= mark;
-  /* This set passed, or an earlier one did. */
   const cleared = passed || Boolean(set.cleared);
 
   return {
     questions,
     answered,
     score,
-    /** The score this set needs to pass. */
     passMark: mark,
     passed,
     /** A set has been passed, so Next stays open. */
     cleared,
-    /** Questions in the whole pool not answered yet. */
     unanswered: pool.filter((question) => !answers[question.id]).length,
     round,
-    /** "Try again": a new random set, new questions first (see drawNewSet). */
     drawNew: () => {
       const { set: next, reset } = drawNewSet(pool, getAnswers(), set.ids, cleared);
       clearAnswers(reset);

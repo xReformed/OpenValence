@@ -25,7 +25,9 @@ public sealed class QuestionFileException(IReadOnlyList<string> problems)
 }
 
 /// <summary>
-/// Reads questions/&lt;book&gt;/&lt;section&gt;.json. Each file is a JSON array in the
+/// Reads questions/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;.json, where the chapter
+/// folder starts with its two-digit number, as in
+/// 04-chemical-reactions-and-equations/4.3.json. Each file is a JSON array in the
 /// web app's Question shape (web/src/lib/types.ts), in the order the section
 /// shows them. Every question is checked before anything is written, and all
 /// problems are reported at once.
@@ -61,11 +63,29 @@ public static partial class QuestionFiles
 
         foreach (var file in files)
         {
-            var book = Path.GetFileName(Path.GetDirectoryName(file))!;
+            var parts = Path.GetRelativePath(root, file).Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            var where = string.Join('/', parts);
+            if (parts.Length != 3)
+            {
+                problems.Add($"{where}: put it in its book's chapter folder, like beginning-chemistry/04-chemical-reactions-and-equations/4.3.json");
+                continue;
+            }
+            var (book, chapter) = (parts[0], parts[1]);
             var section = Path.GetFileNameWithoutExtension(file);
-            var where = $"{book}/{section}.json";
-            if (!Slug().IsMatch(book)) problems.Add($"{where}: the folder must be a book key like beginning-chemistry");
-            if (!SectionNumber().IsMatch(section)) problems.Add($"{where}: the file name must be a section number like 3.4");
+            if (!Slug().IsMatch(book)) problems.Add($"{where}: the first folder must be a book key like beginning-chemistry");
+            if (!SectionNumber().IsMatch(section))
+            {
+                problems.Add($"{where}: the file name must be a section number like 3.4");
+            }
+            else
+            {
+                var number = int.Parse(section[..section.IndexOf('.')]);
+                var folder = ChapterFolder().Match(chapter);
+                if (!folder.Success || int.Parse(folder.Groups[1].Value) != number)
+                {
+                    problems.Add($"{where}: section {section} belongs in chapter {number}'s folder, named like {number:00}-chapter-title");
+                }
+            }
 
             JsonNode? parsed;
             try
@@ -206,4 +226,7 @@ public static partial class QuestionFiles
 
     [GeneratedRegex(@"^\d+\.\d+$")]
     private static partial Regex SectionNumber();
+
+    [GeneratedRegex(@"^(\d{2})-[a-z0-9]+(-[a-z0-9]+)*$")]
+    private static partial Regex ChapterFolder();
 }

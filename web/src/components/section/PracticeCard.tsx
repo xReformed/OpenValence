@@ -6,8 +6,7 @@ import { askHref } from "../../lib/topics";
 import type { PracticeBlock } from "../../lib/types";
 import SectionMarkdown from "./SectionMarkdown";
 
-/* An Example or Exercise from the book: answer first, then compare with the
-   book's solution. Ungraded; OpenValence's own questions are the graded ones. */
+/* Ungraded; OpenValence's own questions are the graded ones. */
 export default function PracticeCard({
   item,
   bookTitle,

@@ -2,9 +2,8 @@ import type { ReactNode } from "react";
 import { ChevronRightIcon, DocumentIcon } from "../LandingIcons";
 import type { FigureImage } from "../../lib/types";
 
-/* A book figure with a stand-in image (lib/figureImages.ts). The book's
-   caption and description stay visible exactly as printed; the description
-   also serves as the image's alt text. */
+/* The book's caption and description stay visible exactly as printed; the
+   description also serves as the image's alt text. */
 export function FigureWithImage({
   image,
   alt,
@@ -31,8 +30,6 @@ export function FigureWithImage({
   );
 }
 
-/* An "[Image: …]" box with a stand-in image: the book's description stays
-   visible, and the image opens below it. */
 export function PlaceholderImage({
   label,
   image,

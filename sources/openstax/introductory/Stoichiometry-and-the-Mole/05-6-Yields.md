@@ -42,6 +42,8 @@ Thus, the theoretical yield is 88.3 g of Zn(NO3)2. The actual yield is the amoun
 
 (65.2 g Zn(NO3)2 / 88.3 g Zn(NO3)2) × 100% = 73.8%
 
+[Note: the leftover cross-reference code in the sentence above is reproduced as printed from the source; it points to the percent yield equation earlier in the section.]
+
 The worker achieved almost three-fourths of the possible yield.
 
 ### Exercise 5.6.1
@@ -70,6 +72,8 @@ A child using an albuterol inhaler, a container of albuterol medication, and a m
 | intermediate C → intermediate D | percent yield = 72% |
 | intermediate D → purified albuterol | percent yield = 35% |
 | overall percent yield = 70% × 100% × 40% × 72% × 35% = 7.5% |  |
+
+[Note: reproduced as printed, but 70% × 100% × 40% × 72% × 35% = 7.1%, not 7.5%, which matches the "about one-fourteenth" below.]
 
 That is, only about _one-fourteenth_ of the original material was turned into the purified drug. This demonstrates one reason why some drugs are so expensive—a lot of material is lost in making a high-purity pharmaceutical.
 

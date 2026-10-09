@@ -5,6 +5,7 @@ import {
   type LoaderFunctionArgs,
 } from "react-router-dom";
 import AppShell from "./components/AppShell";
+import { PageSpinner } from "./components/Spinner";
 import { nextChatId } from "./lib/chatStore";
 import { getBranch } from "./lib/roadmap";
 import { findTopic } from "./lib/topics";
@@ -50,7 +51,7 @@ function notFoundLoader(): never {
 export const router = createBrowserRouter([
   {
     Component: AppShell,
-    HydrateFallback: () => null,
+    HydrateFallback: PageSpinner,
     children: [
       {
         ErrorBoundary: ErrorPage,

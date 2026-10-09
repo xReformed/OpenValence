@@ -3,10 +3,9 @@ using Core;
 namespace Ingest;
 
 /// <summary>
-/// Where embedded chunks live. 'embed' writes a whole new index; 'search'
-/// reads it. Two implementations: Postgres + pgvector when a database URL is
-/// set (Neon, or a local container), otherwise database/index.json, so the
-/// project still runs with no database to stand up.
+/// Two implementations: Postgres + pgvector when a database URL is set (Neon,
+/// or a local container), otherwise database/index.json, so the project still
+/// runs with no database to stand up.
 /// </summary>
 public interface IChunkStore : IAsyncDisposable
 {
@@ -27,10 +26,7 @@ public static class ChunkStore
 {
     public const string JsonPath = "database/index.json";
 
-    /// <summary>
-    /// Neon's link writes DATABASE_URL (pooled) and DATABASE_URL_UNPOOLED.
-    /// The direct connection suits a batch tool that rebuilds a table.
-    /// </summary>
+    /// <summary>The direct connection suits a batch tool that rebuilds a table.</summary>
     public static IChunkStore FromEnvironment()
     {
         var connection = Database.FromEnvironment("DATABASE_URL_UNPOOLED", "DATABASE_URL");

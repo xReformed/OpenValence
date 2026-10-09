@@ -18,8 +18,6 @@ function SectionLabel({ children }: { children: string }) {
   );
 }
 
-/* /roadmap/learn — the "Learn and Practice" card's page: the six branches of
-   chemistry and the open branch's sources, scope and steps. */
 export default function LearnPracticePage() {
   /* The open branch lives in the URL, so /roadmap/learn?branch=organic can be shared. */
   const [params, setParams] = useSearchParams();

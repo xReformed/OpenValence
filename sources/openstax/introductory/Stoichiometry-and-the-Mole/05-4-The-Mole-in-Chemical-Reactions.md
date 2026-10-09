@@ -99,6 +99,8 @@ Using the above equation, how many moles of H2O are produced when 154 mol of O2 
 
 It is important to reiterate that balanced chemical equations are balanced in terms of _moles_. Not grams, kilograms, or liters—but moles. Any stoichiometry problem will likely need to work through the mole unit at some point, especially if you are working with a balanced chemical reaction.
 
+[Note: reproduced as printed, but for gases measured at the same temperature and pressure, volumes in liters do follow the mole ratio (chapter 6). Masses never do.]
+
 ## Summary
 
 Balanced chemical reactions are balanced in terms of moles. A balanced chemical reaction gives equivalents in moles that allow stoichiometry calculations to be performed.

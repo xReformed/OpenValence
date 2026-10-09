@@ -1,0 +1,578 @@
+[
+  {
+    "id": "econfig-pauli-exclusion-principle",
+    "type": "multiple-choice",
+    "prompt": "Which statement is the Pauli exclusion principle?",
+    "choices": [
+      {
+        "text": "No two electrons in an atom can have the same set of four quantum numbers.",
+        "correct": true
+      },
+      {
+        "text": "No two electrons in an atom can have the same principal quantum number.",
+        "why": "Many electrons share a value of n; both electrons in a helium atom have n = 1. Only the full set of four quantum numbers must differ."
+      },
+      {
+        "text": "No two electrons in an atom can be in the same subshell.",
+        "why": "A subshell can hold several electrons, as long as each one's full set of four quantum numbers is different."
+      },
+      {
+        "text": "No two electrons in an atom can have the same spin quantum number.",
+        "why": "There are only two values of ms, +1/2 and −1/2, so many electrons in an atom share a spin. It's the whole set of four that must differ."
+      }
+    ],
+    "explanation": "The Pauli exclusion principle says that no two electrons in an atom can have the same set of four quantum numbers (n, ℓ, mℓ, ms). This limits how many electrons each shell and subshell can hold."
+  },
+  {
+    "id": "econfig-lithium-third-electron",
+    "type": "multiple-choice",
+    "prompt": "Why does the third electron in a lithium atom go into the 2s subshell instead of the 1s subshell?",
+    "choices": [
+      {
+        "text": "In 1s, it would have the same set of four quantum numbers as one of the first two electrons.",
+        "correct": true
+      },
+      {
+        "text": "The 2s subshell is lower in energy than the 1s subshell.",
+        "why": "1s is the lowest-energy subshell, which is why the first two electrons go there. Electrons fill lower-energy subshells first."
+      },
+      {
+        "text": "The 1s subshell can hold only one electron.",
+        "why": "The 1s subshell holds two electrons, as in helium. It is full at two, not at one."
+      },
+      {
+        "text": "Each new element must start a new shell.",
+        "why": "Most elements don't start a new shell; boron through neon, for example, all add their new electrons to the n = 2 shell."
+      }
+    ],
+    "explanation": "The 1s subshell is already full with two electrons, and a third 1s electron would have the same set of four quantum numbers as one of them, which the Pauli exclusion principle forbids. The n = 1 shell has no other subshell, so the electron goes into the next lowest one, 2s."
+  },
+  {
+    "id": "econfig-helium-same-spin-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student says that both electrons in a helium atom have the quantum numbers {1, 0, 0, +1/2}. What is wrong with this?",
+    "choices": [
+      {
+        "text": "Two electrons in one atom can't share all four quantum numbers, so one must have ms = −1/2.",
+        "correct": true
+      },
+      {
+        "text": "The second electron must go into the 2s subshell instead.",
+        "why": "The 1s subshell can hold two electrons, so helium's second electron stays in 1s. It just needs a different spin."
+      },
+      {
+        "text": "A 1s electron must have mℓ = 1, not mℓ = 0.",
+        "why": "An s subshell has only one orbital, and its mℓ can only be 0."
+      },
+      {
+        "text": "The second electron must have ℓ = 1 instead of ℓ = 0.",
+        "why": "The n = 1 shell has only an s subshell (ℓ = 0), so both helium electrons have ℓ = 0."
+      }
+    ],
+    "explanation": "By the Pauli exclusion principle, no two electrons in an atom can have the same set of four quantum numbers. Both helium electrons are in 1s, with n = 1, ℓ = 0 and mℓ = 0, so they must differ in spin: {1, 0, 0, +1/2} and {1, 0, 0, −1/2}."
+  },
+  {
+    "id": "econfig-f-subshell-maximum",
+    "type": "numeric",
+    "prompt": "What is the maximum number of electrons that a 5f subshell can hold?",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "Every f subshell, whatever its shell number, can hold at most 14 electrons. The Pauli exclusion principle allows no more."
+  },
+  {
+    "id": "econfig-n2-shell-maximum",
+    "type": "numeric",
+    "prompt": "What is the greatest number of electrons that the n = 2 shell can hold?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "The n = 2 shell has two subshells: 2s, which holds at most 2 electrons, and 2p, which holds at most 6. When both are full, as in neon (1s^2 2s^2 2p^6), the shell holds 2 + 6 = 8 electrons."
+  },
+  {
+    "id": "econfig-lowest-energy-subshell-first",
+    "type": "multiple-choice",
+    "prompt": "As electrons are added to an atom, which subshell does each new electron usually go into?",
+    "choices": [
+      {
+        "text": "The lowest-energy subshell that still has room",
+        "correct": true
+      },
+      {
+        "text": "The subshell that can hold the most electrons",
+        "why": "The subshells that hold the most electrons, d and f, fill relatively late. Electrons go first to the lowest-energy subshell available."
+      },
+      {
+        "text": "The highest-numbered shell that already has electrons",
+        "why": "Electrons don't simply join the outermost shell. Sodium's 11th electron, for example, starts the n = 3 shell once 2p is full, because each electron goes to the lowest-energy subshell with room."
+      },
+      {
+        "text": "A new shell once the last shell holds two electrons",
+        "why": "Only the n = 1 shell is full at two electrons. The n = 2 shell, for example, takes electrons in both 2s and 2p before n = 3 begins."
+      }
+    ],
+    "explanation": "Electrons are assigned starting with the lowest possible quantum numbers, which are the shells and subshells with the lowest energies. Each new electron goes into the lowest-energy subshell that isn't already full."
+  },
+  {
+    "id": "econfig-superscript-meaning",
+    "type": "multiple-choice",
+    "prompt": "One part of an atom's electron configuration is 4d^7. What does the superscript 7 tell you?",
+    "choices": [
+      {
+        "text": "There are 7 electrons in the 4d subshell.",
+        "correct": true
+      },
+      {
+        "text": "The 4d subshell can hold at most 7 electrons.",
+        "why": "A d subshell can hold up to 10 electrons. The superscript counts the electrons actually there, not the maximum."
+      },
+      {
+        "text": "The atom has 7 electrons in all.",
+        "why": "The atom's total is the sum of all the superscripts in its configuration, not just one of them."
+      },
+      {
+        "text": "The 4d electrons are in the n = 7 shell.",
+        "why": "The shell number is the 4 written before the letter d. The superscript is a count of electrons."
+      }
+    ],
+    "explanation": "An electron configuration lists each shell-subshell label with a right superscript giving the number of electrons in that subshell. So 4d^7 means 7 electrons in the d subshell of the n = 4 shell."
+  },
+  {
+    "id": "econfig-listing-order",
+    "type": "multiple-choice",
+    "prompt": "In the electron configurations in this section, in what order are the shells and subshells listed?",
+    "choices": [
+      {
+        "text": "In the order in which they fill with electrons",
+        "correct": true
+      },
+      {
+        "text": "In order of shell number, one whole shell at a time",
+        "why": "Configurations follow the filling order, which doesn't always go by shell number. Tungsten's [Xe]6s^2 4f^14 5d^4, for example, lists 6s before 4f and 5d."
+      },
+      {
+        "text": "From the most electrons to the fewest electrons",
+        "why": "The superscripts don't set the order: 1s^2 always comes first, even when later subshells hold 6, 10 or 14 electrons."
+      },
+      {
+        "text": "By subshell letter: all s first, then p, d and f",
+        "why": "Grouping by letter would put 3s before 2p, but 2p fills before 3s and is listed before it."
+      }
+    ],
+    "explanation": "An electron configuration lists the shells and subshells in the order of filling. That's why a subshell with a higher shell number is sometimes listed before one with a lower shell number."
+  },
+  {
+    "id": "econfig-subshell-after-5p",
+    "type": "multiple-choice",
+    "prompt": "According to the filling order, which subshell starts to fill once the 5p subshell is full?",
+    "choices": [
+      {
+        "text": "6s",
+        "correct": true
+      },
+      {
+        "text": "5d",
+        "why": "5d fills later: after 5p come 6s and then 4f, and only then 5d."
+      },
+      {
+        "text": "4f",
+        "why": "4f does fill soon, but only after 6s has taken its two electrons."
+      },
+      {
+        "text": "6p",
+        "why": "6s, 4f and 5d all fill before 6p."
+      }
+    ],
+    "explanation": "In the filling order, 5p is followed by 6s, 4f, 5d and 6p. So once 5p is full, the next electrons go into 6s."
+  },
+  {
+    "id": "econfig-filling-sequence-6p-to-6d",
+    "type": "multiple-choice",
+    "prompt": "Which list gives these four subshells in the order they fill with electrons?",
+    "choices": [
+      {
+        "text": "6p, 7s, 5f, 6d",
+        "correct": true
+      },
+      {
+        "text": "6p, 5f, 7s, 6d",
+        "why": "7s fills before 5f, so 5f does not come right after 6p."
+      },
+      {
+        "text": "7s, 6p, 5f, 6d",
+        "why": "6p fills before 7s; 7s starts filling only once 6p is full."
+      },
+      {
+        "text": "6p, 7s, 6d, 5f",
+        "why": "5f fills between 7s and 6d, not after 6d."
+      }
+    ],
+    "explanation": "Near the end, the filling order runs 6p, 7s, 5f, 6d, 7p. After 7s, the 5f subshell fills before 6d, just as 4f fills before 5d after 6s."
+  },
+  {
+    "id": "econfig-why-4s-before-3d",
+    "type": "multiple-choice",
+    "prompt": "Which statement correctly describes how the 4s and 3d subshells fill?",
+    "choices": [
+      {
+        "text": "4s fills first, because putting electrons in 4s gives the atom a lower overall energy.",
+        "correct": true
+      },
+      {
+        "text": "3d fills first, because its principal quantum number, 3, is lower than 4.",
+        "why": "Energy depends on ℓ as well as n. Filling 4s first gives a lower overall energy, so 4s fills before 3d despite its higher n."
+      },
+      {
+        "text": "4s fills first, because every subshell in the n = 3 shell is already full by then.",
+        "why": "The 3d subshell belongs to the n = 3 shell and is still empty when 4s fills. 4s goes first because that gives a lower overall energy."
+      },
+      {
+        "text": "They fill at the same time, with electrons going into each by turns.",
+        "why": "Subshells fill one after another in a set order: 4s takes its two electrons before any go into 3d."
+      }
+    ],
+    "explanation": "The principal quantum number largely sets an electron's energy, but ℓ matters too, and by the 3d and 4s subshells the shells overlap. After 3p is full, filling 4s first gives a lower overall energy, so 4s fills before 3d."
+  },
+  {
+    "id": "econfig-first-atom-with-3d-electron",
+    "type": "numeric",
+    "prompt": "Following the normal filling order, what is the smallest atomic number of an atom that has an electron in a 3d subshell?",
+    "answer": 21,
+    "tolerance": 0,
+    "explanation": "Argon's 18 electrons fill through 3p. The next two electrons go into 4s, which fills before 3d, so the first 3d electron is electron number 21."
+  },
+  {
+    "id": "econfig-aluminum-configuration",
+    "type": "multiple-choice",
+    "prompt": "Aluminum (atomic number 13) has 13 electrons. Which is its electron configuration?",
+    "choices": [
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^1",
+        "correct": true
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^3",
+        "why": "An s subshell can hold at most two electrons, so the 13th electron can't go into 3s."
+      },
+      {
+        "text": "1s^2 2s^2 2p^7 3s^2",
+        "why": "A p subshell can hold at most six electrons, so 2p^7 is impossible."
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3p^3",
+        "why": "3s fills before 3p, so it must get its two electrons before any go into 3p."
+      }
+    ],
+    "explanation": "Fill in order, up to each subshell's maximum: 1s^2 2s^2 2p^6 3s^2 uses 12 electrons, and the 13th goes into 3p. Check: 2 + 2 + 6 + 2 + 1 = 13."
+  },
+  {
+    "id": "econfig-sulfur-3p-electrons",
+    "type": "numeric",
+    "prompt": "Sulfur (atomic number 16) has 16 electrons. How many of them are in the 3p subshell?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Sulfur's electron configuration is 1s^2 2s^2 2p^6 3s^2 3p^4. The 1s, 2s, 2p and 3s subshells take 12 electrons, so the remaining 4 go into 3p."
+  },
+  {
+    "id": "econfig-iron-configuration",
+    "type": "multiple-choice",
+    "prompt": "Iron (atomic number 26) has 26 electrons. Which is its electron configuration?",
+    "choices": [
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6",
+        "correct": true
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 3d^8",
+        "why": "This skips 4s. After 3p is full, 4s fills before 3d, so two electrons go into 4s first."
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^4",
+        "why": "The superscripts add up to only 24 electrons. Iron needs 26, so 3d should hold 6."
+      },
+      {
+        "text": "1s^2 2s^2 2p^8 3s^2 3p^6 4s^2 3d^4",
+        "why": "A p subshell can hold at most six electrons, so 2p^8 is impossible."
+      }
+    ],
+    "explanation": "After 1s^2 2s^2 2p^6 3s^2 3p^6 (18 electrons), 4s takes the next 2 and the remaining 6 go into 3d. Check: 18 + 2 + 6 = 26."
+  },
+  {
+    "id": "econfig-manganese-n3-shell-electrons",
+    "type": "numeric",
+    "prompt": "Manganese (atomic number 25) has 25 electrons. How many of them are in the n = 3 shell?",
+    "answer": 13,
+    "tolerance": 0,
+    "explanation": "Manganese's configuration is 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5. The n = 3 shell includes 3s, 3p and 3d, but not 4s, even though 4s is listed before 3d: 2 + 6 + 5 = 13 electrons."
+  },
+  {
+    "id": "econfig-germanium-p-electrons",
+    "type": "numeric",
+    "prompt": "Germanium (atomic number 32) has 32 electrons. Altogether, how many of them are in p subshells?",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "Germanium's configuration is 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^2. Its p subshells are 2p^6, 3p^6 and 4p^2, for 6 + 6 + 2 = 14 electrons."
+  },
+  {
+    "id": "econfig-zirconium-4d-electrons",
+    "type": "numeric",
+    "prompt": "Zirconium (atomic number 40) has 40 electrons. According to the filling order, how many of them are in the 4d subshell?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Zirconium's configuration is 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^2. The first 36 electrons fill through 4p, 5s takes the next 2 because it fills before 4d, and the last 2 go into 4d."
+  },
+  {
+    "id": "econfig-identify-element-from-configuration",
+    "type": "multiple-choice",
+    "prompt": "Which element has the electron configuration 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^5? (Atomic numbers: Br 35, Te 52, I 53, Xe 54.)",
+    "choices": [
+      {
+        "text": "iodine",
+        "correct": true
+      },
+      {
+        "text": "bromine",
+        "why": "Bromine's configuration also ends in p^5, but at 4p^5 after only 35 electrons. These superscripts add up to 53."
+      },
+      {
+        "text": "tellurium",
+        "why": "Tellurium has 52 electrons, so its configuration would end in 5p^4. These superscripts add up to 53."
+      },
+      {
+        "text": "xenon",
+        "why": "Xenon has 54 electrons, enough to fill 5p completely (5p^6). These superscripts add up to 53."
+      }
+    ],
+    "explanation": "Add the superscripts: 2 + 2 + 6 + 2 + 6 + 2 + 10 + 6 + 2 + 10 + 5 = 53 electrons. A neutral atom with 53 electrons has atomic number 53, which is iodine."
+  },
+  {
+    "id": "econfig-spot-overfilled-subshell",
+    "type": "multiple-choice",
+    "prompt": "Which electron configuration puts more electrons in a subshell than that subshell can hold?",
+    "choices": [
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^7",
+        "correct": true
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^4",
+        "why": "Every subshell here is within its limit. This is a correct configuration for an atom with 34 electrons."
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^3",
+        "why": "A d subshell can hold up to 10 electrons, so 3d^3 is within the limit. This is a correct configuration for an atom with 23 electrons."
+      },
+      {
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^6 3d^6",
+        "why": "This one breaks the filling order by skipping 4s, but no subshell holds more than its maximum."
+      }
+    ],
+    "explanation": "A p subshell can hold at most six electrons, so 4p^7 is impossible. The other configurations keep every subshell within its maximum."
+  },
+  {
+    "id": "econfig-arsenic-filling-order-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student writes the electron configuration of arsenic (atomic number 33, so 33 electrons) as 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 4p^6 3d^7. What is the mistake?",
+    "choices": [
+      {
+        "text": "3d fills before 4p, so the configuration should end 4s^2 3d^10 4p^3.",
+        "correct": true
+      },
+      {
+        "text": "The superscripts add up to the wrong total for arsenic.",
+        "why": "The superscripts add up to 33, which is right for arsenic. The problem is the order of filling."
+      },
+      {
+        "text": "4s fills after 3d, so 4s^2 should come after the 3d electrons.",
+        "why": "4s does fill before 3d, so 4s^2 is in the right place. The error is filling 4p before 3d."
+      },
+      {
+        "text": "A 4p subshell holds at most three electrons, so 4p^6 is too many.",
+        "why": "A p subshell can hold up to six electrons, so 4p^6 is allowed. The problem is that 4p was filled before 3d."
+      }
+    ],
+    "explanation": "In the filling order, 3d comes after 4s and before 4p, and it takes 10 electrons before any go into 4p. Arsenic's configuration is 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3."
+  },
+  {
+    "id": "econfig-argon-wrong-total",
+    "type": "multiple-choice",
+    "prompt": "A student writes the electron configuration of argon (atomic number 18, so 18 electrons) as 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2. What is wrong with it?",
+    "choices": [
+      {
+        "text": "It has 20 electrons, two too many; it should stop at 3p^6.",
+        "correct": true
+      },
+      {
+        "text": "3p can't hold six electrons, so two of them belong in 4s.",
+        "why": "A p subshell can hold up to six electrons, so 3p^6 is fine. The extra 4s^2 is what makes the total wrong."
+      },
+      {
+        "text": "The two 4s electrons should be in 3d instead.",
+        "why": "Argon has no electrons beyond 3p^6, so neither 4s nor 3d should appear."
+      },
+      {
+        "text": "Nothing; all 18 of argon's electrons are shown.",
+        "why": "Adding the superscripts gives 2 + 2 + 6 + 2 + 6 + 2 = 20, not 18."
+      }
+    ],
+    "explanation": "Check a configuration by adding its superscripts. Here they total 20, but argon has 18 electrons, so its configuration is 1s^2 2s^2 2p^6 3s^2 3p^6."
+  },
+  {
+    "id": "econfig-noble-gas-core-meaning",
+    "type": "multiple-choice",
+    "prompt": "Sodium (atomic number 11) has the abbreviated electron configuration [Ne]3s^1. Neon has 10 electrons. What does [Ne] stand for?",
+    "choices": [
+      {
+        "text": "Sodium's first 10 electrons, arranged as in a neon atom",
+        "correct": true
+      },
+      {
+        "text": "A neon atom joined to the sodium atom",
+        "why": "The brackets don't mean a second atom is present. They are shorthand for electrons arranged as in neon."
+      },
+      {
+        "text": "The electrons sodium has beyond those of neon",
+        "why": "Those are written after the bracket, here 3s^1. The bracket stands for the core of electrons up to neon."
+      },
+      {
+        "text": "Only the electrons in neon's last-filled subshell",
+        "why": "The bracket stands for all 10 of neon's electrons, not just those in its last subshell, 2p."
+      }
+    ],
+    "explanation": "In an abbreviated configuration, a noble gas symbol in square brackets stands for that noble gas's electron configuration. [Ne] means 1s^2 2s^2 2p^6, sodium's first 10 electrons, and the one remaining electron is written out as 3s^1."
+  },
+  {
+    "id": "econfig-abbreviated-configuration-purpose",
+    "type": "multiple-choice",
+    "prompt": "What is the main advantage of writing an abbreviated electron configuration?",
+    "choices": [
+      {
+        "text": "It replaces the core electrons with a noble gas symbol, shortening long configurations.",
+        "correct": true
+      },
+      {
+        "text": "It lists only the electrons in the atom's highest-numbered shell.",
+        "why": "Everything beyond the noble-gas core is written out, which can include lower shells: tungsten's [Xe]6s^2 4f^14 5d^4 lists 4f and 5d electrons as well as 6s."
+      },
+      {
+        "text": "It shows the measured configuration instead of the predicted one.",
+        "why": "An abbreviation is just shorthand for the same configuration. It has nothing to do with whether an atom is an exception."
+      },
+      {
+        "text": "It leaves the core electrons out of the atom's electron count.",
+        "why": "The bracketed noble gas still stands for its electrons, and they count toward the atom's total."
+      }
+    ],
+    "explanation": "An abbreviated electron configuration uses a noble gas in square brackets to represent the core of electrons up to that element, then lists the remaining electrons. For large atoms this is a much shorter way to write the same configuration."
+  },
+  {
+    "id": "econfig-gallium-abbreviated",
+    "type": "multiple-choice",
+    "prompt": "Gallium (atomic number 31) has 31 electrons. Which is its abbreviated electron configuration? (Neon has 10 electrons, argon 18, and krypton 36.)",
+    "choices": [
+      {
+        "text": "[Ar]4s^2 3d^10 4p^1",
+        "correct": true
+      },
+      {
+        "text": "[Ar]4s^2 4p^1",
+        "why": "This leaves out 3d, which fills after 4s and before 4p. It accounts for only 21 electrons."
+      },
+      {
+        "text": "[Kr]4s^2 3d^10 4p^1",
+        "why": "Krypton has 36 electrons, more than gallium's 31. The core must be a noble gas with fewer electrons than the atom, here argon."
+      },
+      {
+        "text": "[Ne]4s^2 3d^10 4p^1",
+        "why": "[Ne] stands for only 10 electrons, so this leaves out 3s^2 3p^6 and accounts for just 23 electrons. The core should be argon."
+      }
+    ],
+    "explanation": "Argon, with 18 electrons, is the noble gas just before gallium. The other 13 electrons fill 4s (2), 3d (10) and 4p (1), so gallium is [Ar]4s^2 3d^10 4p^1; check: 18 + 2 + 10 + 1 = 31."
+  },
+  {
+    "id": "econfig-atomic-number-from-abbreviated",
+    "type": "numeric",
+    "prompt": "A neutral atom has the abbreviated electron configuration [Xe]6s^2 4f^6. Xenon has 54 electrons. What is the atomic number of this atom?",
+    "answer": 62,
+    "tolerance": 0,
+    "explanation": "[Xe] stands for 54 electrons. The subshells written out add 2 + 6 = 8 more, for 54 + 8 = 62 electrons, so the atomic number is 62."
+  },
+  {
+    "id": "econfig-lead-abbreviated",
+    "type": "multiple-choice",
+    "prompt": "Lead (atomic number 82) has 82 electrons, and xenon, the noble gas before it, has 54. Which is lead's abbreviated electron configuration?",
+    "choices": [
+      {
+        "text": "[Xe]6s^2 4f^14 5d^10 6p^2",
+        "correct": true
+      },
+      {
+        "text": "[Xe]4f^14 5d^10 6p^4",
+        "why": "This skips 6s. After the xenon core, 6s fills first, so it gets two electrons before any go into 4f."
+      },
+      {
+        "text": "[Xe]6s^2 4f^14 6p^6 5d^6",
+        "why": "5d fills before 6p, so 5d must take all 10 of its electrons before any go into 6p."
+      },
+      {
+        "text": "[Xe]6s^2 4f^14 5d^10 6p^6",
+        "why": "This accounts for 54 + 2 + 14 + 10 + 6 = 86 electrons, four more than lead has."
+      }
+    ],
+    "explanation": "Lead has 82 − 54 = 28 electrons beyond the xenon core. In filling order, 6s takes 2, 4f takes 14, 5d takes 10, and the last 2 go into 6p: [Xe]6s^2 4f^14 5d^10 6p^2."
+  },
+  {
+    "id": "econfig-strontium-core-counted-twice",
+    "type": "multiple-choice",
+    "prompt": "A student writes the abbreviated electron configuration of strontium (atomic number 38, so 38 electrons) as [Kr]4s^2 3d^10 4p^6 5s^2. Krypton has 36 electrons. What is the mistake?",
+    "choices": [
+      {
+        "text": "[Kr] already includes the 4s, 3d and 4p electrons, so they are counted twice; it should be [Kr]5s^2.",
+        "correct": true
+      },
+      {
+        "text": "The core should be [Xe], the noble gas that comes after strontium.",
+        "why": "Xenon has 54 electrons, more than strontium has. The core is the noble gas with fewer electrons, just before the element."
+      },
+      {
+        "text": "The last two electrons belong in 4d rather than 5s.",
+        "why": "5s fills before 4d, so strontium's two electrons beyond krypton go into 5s."
+      },
+      {
+        "text": "Nothing; the configuration is correct as written.",
+        "why": "With the 36-electron core, this configuration accounts for 36 + 20 = 56 electrons, not 38."
+      }
+    ],
+    "explanation": "The [Kr] core stands for krypton's whole configuration, which ends 4s^2 3d^10 4p^6. Strontium has only 38 − 36 = 2 more electrons, which go into 5s: [Kr]5s^2."
+  },
+  {
+    "id": "econfig-copper-exception",
+    "type": "multiple-choice",
+    "prompt": "Experiments show that a copper atom (atomic number 29, so 29 electrons) has the electron configuration [Ar]4s^1 3d^10. Which statement about this configuration is correct?",
+    "choices": [
+      {
+        "text": "It is an exception: the filling order predicts [Ar]4s^2 3d^9, but an electron moves from 4s to fill 3d.",
+        "correct": true
+      },
+      {
+        "text": "It follows the normal filling order, which puts one electron in 4s before 3d fills.",
+        "why": "Normal filling puts two electrons in 4s before any go into 3d, which predicts [Ar]4s^2 3d^9."
+      },
+      {
+        "text": "It is impossible, because a 3d subshell can't hold 10 electrons.",
+        "why": "A d subshell can hold up to 10 electrons, so 3d^10 is a full, allowed subshell."
+      },
+      {
+        "text": "It has one fewer electron than the configuration the filling order predicts.",
+        "why": "Both hold 29 electrons: 18 + 1 + 10 and 18 + 2 + 9."
+      }
+    ],
+    "explanation": "Following the filling order, copper would be [Ar]4s^2 3d^9. Instead, an electron goes from the higher-numbered 4s subshell to the later-filled 3d subshell and fills it, so copper is an exception to the normal rules, like silver."
+  },
+  {
+    "id": "econfig-gold-predicted-5d-electrons",
+    "type": "numeric",
+    "prompt": "Gold (atomic number 79) has 79 electrons, and the noble gas xenon has 54. Following the normal filling order, how many electrons does gold's predicted electron configuration place in the 5d subshell?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "After the 54-electron xenon core, the filling order continues 6s, 4f, 5d: 6s takes 2 electrons, 4f takes 14, and the remaining 79 − 54 − 2 − 14 = 9 go into 5d, giving [Xe]6s^2 4f^14 5d^9. (Gold is one of the exceptions, which is why the question asks for the predicted configuration.)"
+  }
+]

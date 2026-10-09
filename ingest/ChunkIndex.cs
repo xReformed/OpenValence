@@ -4,8 +4,7 @@ namespace Ingest;
 
 /// <summary>
 /// The JSON-file index: the store used when no database URL is set. At a few
-/// thousand chunks a brute-force scan takes milliseconds. Postgres + pgvector
-/// is the other store (PostgresChunkStore); both sit behind IChunkStore.
+/// thousand chunks a brute-force scan takes milliseconds.
 /// </summary>
 public sealed record ChunkIndex(string EmbeddingModel, List<Chunk> Chunks)
 {
@@ -30,8 +29,7 @@ public sealed record ChunkIndex(string EmbeddingModel, List<Chunk> Chunks)
     }
 
     /// <summary>
-    /// Cosine similarity: the dot product divided by both magnitudes. Most
-    /// providers return unit-length vectors, which makes the division a no-op —
+    /// Most providers return unit-length vectors, which makes the division a no-op —
     /// but dividing anyway costs nothing and keeps this correct for any provider.
     /// Result runs -1 to 1; higher is more similar.
     /// </summary>

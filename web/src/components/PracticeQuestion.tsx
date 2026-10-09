@@ -50,7 +50,7 @@ export default function PracticeQuestion({
           </span>
         )}
       </div>
-      <p className="mt-4 leading-relaxed text-neutral-800">
+      <p className="mt-4 leading-relaxed text-reading">
         <ChemText text={question.prompt} />
       </p>
       {question.type === "numeric" ? (
@@ -258,7 +258,7 @@ function Feedback({
 
 function Line({ children }: { children: string }): ReactNode {
   return (
-    <p className="mt-2 leading-relaxed text-neutral-800">
+    <p className="mt-2 leading-relaxed text-reading">
       <ChemText text={children} />
     </p>
   );

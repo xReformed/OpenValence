@@ -2,8 +2,7 @@
    Component props, and helper types that a single file uses privately, stay
    with that file instead. */
 
-/* ── Books and learning paths ──────────────────────────────────────────────
-   The data lives in learningPaths.generated.ts, built from the corpus front
+/* The data lives in learningPaths.generated.ts, built from the corpus front
    matter by scripts/gen-learning-paths.mjs. BookKey is generated too (one per
    book configured there), so it's re-exported rather than written out here. */
 
@@ -29,8 +28,6 @@ export interface BookMeta {
   author: string;
   license: string;
 }
-
-/* ── Roadmap ─────────────────────────────────────────────────────────────── */
 
 export type BranchStatus = "in-progress" | "planned" | "later";
 
@@ -83,7 +80,6 @@ export interface ConceptStage {
 export interface Concept {
   slug: string;
   title: string;
-  /** Card artwork, an image URL (src/assets/concept). */
   icon: string;
   status: BranchStatus;
   summary: string;
@@ -91,8 +87,6 @@ export interface Concept {
   span: string;
   stages: ConceptStage[];
 }
-
-/* ── Section pages ───────────────────────────────────────────────────────── */
 
 export type SectionSegment = { kind: "text"; markdown: string } | PracticeBlock;
 
@@ -107,7 +101,6 @@ export interface PracticeBlock {
   revealLabel: string;
 }
 
-/** A run of chemistry notation, for rendering sub- and superscripts (chemText.ts). */
 export interface ChemSegment {
   kind: "text" | "sub" | "sup";
   text: string;
@@ -120,8 +113,7 @@ export interface FigureImage {
   height: number;
 }
 
-/* ── OpenValence practice questions ───────────────────────────────────────
-   Written as questions/<book>/<section>.json, imported into the database, and
+/* Written as questions/<book>/<chapter>/<section>.json, imported into the database, and
    served by the API in exactly this shape (core/QuestionFiles.cs checks it). */
 
 interface QuestionBase {
@@ -157,8 +149,6 @@ export interface PracticeAnswer {
   answer: string;
 }
 
-/* ── Chat ────────────────────────────────────────────────────────────────── */
-
 export interface Citation {
   id: string;
   sourceTitle: string;
@@ -188,8 +178,6 @@ export interface ChatMeta {
 }
 
 export type ChatStatus = "idle" | "sending" | "error";
-
-/* ── Topics, progress, and preferences ───────────────────────────────────── */
 
 export interface Topic {
   slug: string;

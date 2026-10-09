@@ -113,7 +113,6 @@ public static partial class MarkdownChunker
         return chunks;
     }
 
-    /// <summary>Stage one: "## Heading" starts a new section.</summary>
     private static List<(string Heading, string Body)> SplitOnHeadings(string body)
     {
         var sections = new List<(string, string)>();
@@ -168,8 +167,6 @@ public static partial class MarkdownChunker
             var tokens = EstimateTokens(block);
             var isTable = block.StartsWith('|');
 
-            // A table, or an already-oversized block, becomes its own chunk —
-            // or several, when it is too big to stand as one.
             if (isTable || tokens >= MaxTokens)
             {
                 Flush();

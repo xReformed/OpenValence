@@ -104,6 +104,8 @@ What is the predicted electron configuration for Sn, which has 50 electrons?
 
 We will follow the chart in Figure 8.4., until we can accommodate 50 electrons in the subshells in the proper order: Sn: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^2
 
+[Note: reproduced as printed; the chart is Figure 8.4.1, Electron Shell Filling Order.]
+
 Verify by adding the superscripts, which indicate the number of electrons: 2 + 2 + 6 + 2 + 6 + 2 + 10 + 6 + 2 + 10 + 2 = 50, so we have placed all 50 electrons in subshells in the proper order.
 
 ### Exercise 8.4.3: Barium

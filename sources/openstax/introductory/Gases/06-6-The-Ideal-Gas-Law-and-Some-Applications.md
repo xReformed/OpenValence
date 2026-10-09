@@ -84,6 +84,8 @@ T = ((0.00332)(435) / (1.65 × 10^−5)(62.36))K
 
 Then solving for K, we get _T_ = 1,404 K.
 
+[Note: reproduced as printed, but the solution puts the mass, 0.00332, where the pressure, 0.00120 mmHg, belongs. With the pressure, T = (0.00120)(435) / ((1.65 × 10^−5)(62.36)) K ≈ 507 K.]
+
 ### Exercise 6.6.2
 
 For a 0.00554 mol sample of H2, _P_ = 23.44 torr and _T_ = 557 K. What is its volume?
@@ -124,6 +126,8 @@ H2(g) + Cl2(g) → 2HCl(g)
 
 It should be obvious by now that some physical properties of gases depend strongly on the conditions. What we need is a set of standard conditions so that properties of gases can be properly compared to each other. Standard Temperature and Pressure (STP) is defined as exactly 100 kPa of pressure (0.986 atm) and 273 K (0°C). For simplicity, we will use 1 atm as standard pressure. Defining STP allows us to more directly compare the properties of gases that differ from one another.
 
+[Note: reproduced as printed; 100 kPa is 0.987 atm.]
+
 One property shared among gases is a molar volume. The molar volume is the volume of 1 mol of a gas. At STP, the molar volume of a gas can be easily determined by using the ideal gas law:
 
 (1 atm)V = (1 mol)(0.08205 (L.atm / mol.K))(273 K)
@@ -131,6 +135,8 @@ One property shared among gases is a molar volume. The molar volume is the volum
 All the units cancel except for L, the unit of volume. So _V_ = 22.4 L
 
 Note that we have not specified the identity of the gas; we have specified only that the pressure is 1 atm and the temperature is 273 K. This makes for a very useful approximation: _any gas at STP has a volume of 22.4 L per mole of gas_; that is, the molar volume at STP is 22.4 L/mol (Figure 6.6.1). This molar volume makes a useful conversion factor in stoichiometry problems if the conditions are at STP. If the conditions are not at STP, a molar volume of 22.4 L/mol is not applicable. However, if the conditions are at STP, the combined gas law can be used to calculate what the volume of the gas would be if at STP; then the 22.4 L/mol molar volume can be used.
+
+[Note: reproduced as printed, but the last sentence means "not at STP": the combined gas law converts a volume measured under other conditions to its volume at STP, where 22.4 L/mol applies.]
 
 Figure 6.6.1: Molar Volume. A mole of gas at STP occupies 22.4 L, the volume of a cube that is 28.2 cm on a side.
 22.4 liters of gas at STP are shown in a cube with a side length of 28.2 cm.
@@ -208,6 +214,8 @@ All the units cancel except for L, the unit of volume. So V = 25.6 L
 Knowing the molar mass and the molar volume, we can determine the density of N2 under these conditions using Equation \ref{density}:
 
 d = (28.0 g / 25.6 L) = 1.09 g/L
+
+[Note: the leftover cross-reference code above is reproduced as printed from the source; it points to the density equation earlier in the section.]
 
 ### Exercise 6.6.6
 

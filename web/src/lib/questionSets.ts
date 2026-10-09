@@ -9,7 +9,6 @@ import type { PracticeAnswer, Question } from "./types";
 
 export const SET_SIZE = 10;
 
-/** The score out of SET_SIZE that unlocks the next section. */
 export const PASS_MARK = 6;
 
 /** The score a set of `size` questions needs: 6 of 10, or the same share of a smaller set. */
@@ -26,7 +25,6 @@ export interface QuestionSet {
 
 type Answers = Readonly<Record<string, PracticeAnswer>>;
 
-/* Up to `count` ids picked at random from `ids`. */
 function sample(ids: string[], count: number, random: () => number): string[] {
   const out = [...ids];
   for (let i = out.length - 1; i > 0; i -= 1) {
@@ -93,8 +91,6 @@ export function drawNewSet(
     reset: ids.filter((id) => answers[id]),
   };
 }
-
-/* ── The saved sets, by "<book>/<section>" ─────────────────────────────── */
 
 const KEY = "chemia.questionSets";
 

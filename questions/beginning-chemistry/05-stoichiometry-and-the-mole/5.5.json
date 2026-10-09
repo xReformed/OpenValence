@@ -1,0 +1,434 @@
+[
+  {
+    "id": "massmass-equations-balanced-in-moles",
+    "type": "multiple-choice",
+    "prompt": "Before a balanced chemical equation can relate a mass of one substance to an amount of another substance, the mass must be converted to moles. Why?",
+    "choices": [
+      {
+        "text": "Chemical equations are balanced in terms of moles, not grams.",
+        "correct": true
+      },
+      {
+        "text": "Chemical equations are balanced in terms of grams, not moles.",
+        "why": "It's the other way around. The coefficients count moles (or molecules), so a coefficient of 3 means 3 mol of that substance, not 3 g."
+      },
+      {
+        "text": "Masses in grams can't be used in any conversion factor.",
+        "why": "Molar mass is a conversion factor with grams in it. The problem is that the coefficients of the equation relate moles, not grams."
+      },
+      {
+        "text": "Converting to moles makes the final answer more precise.",
+        "why": "Changing units doesn't add precision. The conversion is needed because the coefficients relate moles."
+      }
+    ],
+    "explanation": "Chemical equations are not balanced in terms of grams; they are balanced in terms of moles. So a given mass must first be converted to moles with the molar mass before the coefficients can relate it to another substance."
+  },
+  {
+    "id": "massmass-mole-ratio-from-coefficients",
+    "type": "multiple-choice",
+    "prompt": "Iron reacts with oxygen to form iron(III) oxide: 4Fe + 3O2 → 2Fe2O3. Which conversion factor converts moles of O2 into moles of Fe2O3?",
+    "choices": [
+      {
+        "text": "(2 mol Fe2O3 / 3 mol O2)",
+        "correct": true
+      },
+      {
+        "text": "(3 mol O2 / 2 mol Fe2O3)",
+        "why": "This factor is upside down. Mol O2 must be in the denominator so that it cancels, leaving mol Fe2O3."
+      },
+      {
+        "text": "(159.69 g Fe2O3 / 32.00 g O2)",
+        "why": "This is a ratio of molar masses in grams, not a mole ratio. The equation relates moles, so the numbers must come from its coefficients."
+      },
+      {
+        "text": "(2 mol Fe2O3 / 4 mol Fe)",
+        "why": "This factor relates Fe2O3 to Fe, not to O2, so mol O2 would not cancel. Use the coefficients of O2 and Fe2O3."
+      }
+    ],
+    "explanation": "The numbers in the conversion factor come from the coefficients in the balanced equation: 3 mol O2 ⇔ 2 mol Fe2O3. Putting mol O2 in the denominator lets it cancel, leaving mol Fe2O3."
+  },
+  {
+    "id": "massmass-invert-molar-mass",
+    "type": "multiple-choice",
+    "prompt": "The molar mass of CO2 is 44.01 g/mol. Which conversion factor converts a mass of CO2 in grams into moles of CO2?",
+    "choices": [
+      {
+        "text": "(1 mol CO2 / 44.01 g CO2)",
+        "correct": true
+      },
+      {
+        "text": "(44.01 g CO2 / 1 mol CO2)",
+        "why": "With grams on top, g CO2 doesn't cancel. This form converts moles of CO2 into grams, so it must be inverted to go from grams to moles."
+      },
+      {
+        "text": "(1 g CO2 / 44.01 mol CO2)",
+        "why": "The molar mass says that 1 mol of CO2 has a mass of 44.01 g, not that 1 g corresponds to 44.01 mol."
+      },
+      {
+        "text": "(1 mol CO2 / 6.022 × 10^23 g CO2)",
+        "why": "Avogadro's number is the number of particles in a mole, not its mass in grams. One mole of CO2 has a mass of 44.01 g."
+      }
+    ],
+    "explanation": "The molar mass gives the equivalence 1 mol CO2 = 44.01 g CO2. To go from grams to moles, invert it so that grams are in the denominator and cancel: × (1 mol CO2 / 44.01 g CO2)."
+  },
+  {
+    "id": "massmass-plan-mass-to-mass",
+    "type": "multiple-choice",
+    "prompt": "You know the mass of substance A that reacts and want to find the mass of substance B in the same balanced equation. Which plan is correct?",
+    "choices": [
+      {
+        "text": "Convert grams of A to moles of A, use the coefficients to get moles of B, then convert moles of B to grams of B.",
+        "correct": true
+      },
+      {
+        "text": "Use the coefficients to convert grams of A straight to grams of B, since the equation is balanced.",
+        "why": "Equations are balanced in terms of moles, not grams, so the coefficients can't be applied to masses."
+      },
+      {
+        "text": "Convert grams of A to moles of A, then convert moles of A to grams of B using the molar mass of B.",
+        "why": "This skips the mole ratio. The molar mass of B converts moles of B, so moles of A must first become moles of B through the coefficients."
+      },
+      {
+        "text": "Convert grams of A to moles of A, use the coefficients to get moles of B, then convert to grams with the molar mass of A.",
+        "why": "The last step turns moles of B into grams of B, so it needs the molar mass of B, not the molar mass of A."
+      }
+    ],
+    "explanation": "The steps are mass A → mol A → mol B → mass B. The mass must be converted to moles before the balanced equation is used, and the molar mass of B is used only at the end."
+  },
+  {
+    "id": "massmass-moles-to-grams-first-step",
+    "type": "multiple-choice",
+    "prompt": "Hydrogen sulfide burns according to 2H2S + 3O2 → 2SO2 + 2H2O. You know how many moles of O2 are consumed and want the mass of SO2 formed. What is the first conversion?",
+    "choices": [
+      {
+        "text": "Moles of O2 to moles of SO2, using (2 mol SO2 / 3 mol O2)",
+        "correct": true
+      },
+      {
+        "text": "Moles of O2 to moles of SO2, using (3 mol SO2 / 2 mol O2)",
+        "why": "The coefficients are 3 for O2 and 2 for SO2, so the factor is 2 mol SO2 per 3 mol O2. This one has the numbers swapped."
+      },
+      {
+        "text": "Moles of O2 to grams of O2, using the molar mass of O2",
+        "why": "That gives grams of O2, which the equation can't relate to SO2, because equations are balanced in moles. Starting from moles, use the mole ratio first."
+      },
+      {
+        "text": "Moles of O2 to grams of SO2, using the molar mass of SO2",
+        "why": "The molar mass of SO2 converts moles of SO2, not moles of O2. First convert to moles of SO2 with the coefficients."
+      }
+    ],
+    "explanation": "Starting from moles, the steps of a mole-mass calculation are done in reverse order: first use the coefficients (3 mol O2 ⇔ 2 mol SO2) to get moles of SO2, then use the molar mass of SO2 to get grams."
+  },
+  {
+    "id": "massmass-molar-masses-needed",
+    "type": "multiple-choice",
+    "prompt": "Sodium reacts with chlorine according to 2Na + Cl2 → 2NaCl. To find the mass of NaCl formed from a known mass of Cl2, which molar masses do you need?",
+    "choices": [
+      {
+        "text": "The molar masses of Cl2 and NaCl",
+        "correct": true
+      },
+      {
+        "text": "Only the molar mass of Cl2",
+        "why": "That gets you to moles of Cl2, and the coefficients get you to moles of NaCl, but turning moles of NaCl into grams needs the molar mass of NaCl."
+      },
+      {
+        "text": "Only the molar mass of NaCl",
+        "why": "The given mass of Cl2 must first be converted to moles of Cl2, which needs the molar mass of Cl2."
+      },
+      {
+        "text": "The molar masses of Na, Cl2, and NaCl",
+        "why": "Na is neither the starting nor the final substance, so its molar mass is never used. The mole ratio links Cl2 directly to NaCl."
+      }
+    ],
+    "explanation": "A mass-mass calculation uses the molar masses of two different substances: the starting one (grams of Cl2 to moles of Cl2) and the final one (moles of NaCl to grams of NaCl). The coefficients link the two."
+  },
+  {
+    "id": "massmass-any-substance-start-end",
+    "type": "multiple-choice",
+    "prompt": "Which statement about mole-mass and mass-mass calculations is correct?",
+    "choices": [
+      {
+        "text": "They can begin with any substance in the balanced equation and end with any other, reactant or product.",
+        "correct": true
+      },
+      {
+        "text": "They must begin with a reactant and end with a product.",
+        "why": "They can also run from a product back to a reactant, such as finding the mass of a reactant needed to make a given amount of product."
+      },
+      {
+        "text": "They can relate two substances only if their coefficients are equal.",
+        "why": "The coefficients give a mole ratio such as 2 mol to 3 mol, which works for any coefficients."
+      },
+      {
+        "text": "They can relate a reactant to a product, but never two reactants.",
+        "why": "Any two substances in the equation are related by their coefficients, so you can find how much of one reactant reacts with a given amount of another."
+      }
+    ],
+    "explanation": "Mole-mass and mass-mass problems can begin and end with any substance in the chemical equation, because the coefficients give a mole ratio between any two of them."
+  },
+  {
+    "id": "massmass-rounding-two-step-vs-one-line",
+    "type": "multiple-choice",
+    "prompt": "Two students use the same balanced equation and the same molar mass to convert a mass of a reactant into moles of a product. Student A works in two steps and rounds the moles of reactant to three significant figures before using the mole ratio. Student B does the whole calculation on one line. Their answers differ only in the last digit. Why?",
+    "choices": [
+      {
+        "text": "Student A rounded the intermediate answer, which can shift the last digit slightly.",
+        "correct": true
+      },
+      {
+        "text": "One of the students must have used a mole ratio that is upside down.",
+        "why": "An upside-down mole ratio changes the answer by a whole factor, such as 3/2 instead of 2/3, not just in the last digit."
+      },
+      {
+        "text": "The one-line method is only an approximation of the two-step method.",
+        "why": "Doing the conversions on one line is mathematically equivalent to doing them one at a time; it is not an approximation."
+      },
+      {
+        "text": "The two-step method is wrong, because the conversions must be done on one line.",
+        "why": "Either way is correct. Both multiply by the same conversion factors, and the final answers are effectively the same."
+      }
+    ],
+    "explanation": "Performing the conversions on one line is mathematically equivalent to doing them in steps. Rounding an intermediate answer can make the last digit slightly different, but the final answers are effectively the same."
+  },
+  {
+    "id": "massmass-pick-one-line-setup",
+    "type": "multiple-choice",
+    "prompt": "Acetylene burns in a welding torch according to 2C2H2 + 5O2 → 4CO2 + 2H2O. Which one-line setup correctly gives the mass of O2 needed to burn 13.0 g of C2H2?",
+    "choices": [
+      {
+        "text": "13.0 g C2H2 × (1 mol C2H2 / 26.04 g C2H2) × (5 mol O2 / 2 mol C2H2) × (32.00 g O2 / 1 mol O2)",
+        "correct": true
+      },
+      {
+        "text": "13.0 g C2H2 × (1 mol C2H2 / 26.04 g C2H2) × (2 mol C2H2 / 5 mol O2) × (32.00 g O2 / 1 mol O2)",
+        "why": "The mole ratio is upside down, so mol C2H2 doesn't cancel. Mol C2H2 belongs in the denominator: 5 mol O2 / 2 mol C2H2."
+      },
+      {
+        "text": "13.0 g C2H2 × (26.04 g C2H2 / 1 mol C2H2) × (5 mol O2 / 2 mol C2H2) × (32.00 g O2 / 1 mol O2)",
+        "why": "The molar mass of C2H2 isn't inverted, so g C2H2 doesn't cancel. To go from grams to moles, grams must be in the denominator."
+      },
+      {
+        "text": "13.0 g C2H2 × (1 mol C2H2 / 26.04 g C2H2) × (5 mol O2 / 2 mol C2H2) × (26.04 g C2H2 / 1 mol C2H2)",
+        "why": "The last factor must be the molar mass of O2, because it converts moles of O2 into grams of O2. With the molar mass of C2H2, mol O2 doesn't cancel."
+      }
+    ],
+    "explanation": "Convert grams of C2H2 to moles (1 mol C2H2 / 26.04 g C2H2), use the coefficients to get moles of O2 (5 mol O2 / 2 mol C2H2), then convert to grams with the molar mass of O2 (32.00 g O2 / 1 mol O2). Every unit cancels except g O2."
+  },
+  {
+    "id": "massmass-mistake-skipped-mole-ratio",
+    "type": "multiple-choice",
+    "prompt": "Hydrogen peroxide decomposes according to 2H2O2 → 2H2O + O2. To find the mass of O2 formed from 34.0 g of H2O2, a student writes 34.0 g H2O2 × (1 mol H2O2 / 34.01 g H2O2) × (32.00 g O2 / 1 mol O2) = 32.0 g O2. What is the mistake?",
+    "choices": [
+      {
+        "text": "The mole ratio (1 mol O2 / 2 mol H2O2) from the equation is missing.",
+        "correct": true
+      },
+      {
+        "text": "The answer should be doubled, because the equation shows 2 mol of H2O2.",
+        "why": "Doubling goes the wrong way. Every 2 mol of H2O2 gives only 1 mol of O2, so the moles of O2 are half the moles of H2O2."
+      },
+      {
+        "text": "The molar mass of H2O2 should be multiplied, not divided.",
+        "why": "Dividing by the molar mass, as the student did, is correct for converting grams of H2O2 to moles of H2O2."
+      },
+      {
+        "text": "The molar mass of O2 should be 16.00 g/mol, not 32.00 g/mol.",
+        "why": "An O2 molecule has two oxygen atoms, so its molar mass is 32.00 g/mol, as the student used."
+      }
+    ],
+    "explanation": "Moles of H2O2 aren't moles of O2: the equation gives 2 mol H2O2 ⇔ 1 mol O2. The units show the slip, since mol H2O2 never cancels. With the mole ratio, 34.0 g × (1 mol / 34.01 g) × (1 mol O2 / 2 mol H2O2) × 32.00 g/mol = 16.0 g O2."
+  },
+  {
+    "id": "massmass-mistake-coefficients-as-grams",
+    "type": "multiple-choice",
+    "prompt": "A student looks at the equation 2H2 + O2 → 2H2O and concludes that 2 g of H2 react with 1 g of O2. What is wrong with this reasoning? (Molar masses: H2, 2.02 g/mol; O2, 32.00 g/mol.)",
+    "choices": [
+      {
+        "text": "The coefficients count moles, so 4.04 g of H2 reacts with 32.00 g of O2.",
+        "correct": true
+      },
+      {
+        "text": "Nothing is wrong; the coefficients give the masses in grams that react.",
+        "why": "Chemical equations are balanced in terms of moles, not grams, so the coefficients are not masses."
+      },
+      {
+        "text": "The ratio is reversed, so 1 g of H2 reacts with 2 g of O2.",
+        "why": "This still treats the coefficients as grams, and flips them besides. The coefficients give moles: 2 mol H2 per 1 mol O2."
+      },
+      {
+        "text": "The coefficients count atoms, so 2 H atoms react with 1 O atom.",
+        "why": "The coefficients count molecules, or moles of molecules: 2 H2 molecules hold 4 H atoms, and 1 O2 molecule holds 2 O atoms."
+      }
+    ],
+    "explanation": "Chemical equations are balanced in terms of moles, not grams. The equation says 2 mol of H2 (4.04 g) reacts with 1 mol of O2 (32.00 g), a mass ratio far from 2 to 1."
+  },
+  {
+    "id": "massmass-compare-methane-propane-co2",
+    "type": "multiple-choice",
+    "prompt": "Methane and propane burn according to CH4 + 2O2 → CO2 + 2H2O and C3H8 + 5O2 → 3CO2 + 4H2O. If 10.0 g of each fuel burns completely, which statement is correct? (Molar masses: CH4, 16.04 g/mol; C3H8, 44.10 g/mol; CO2, 44.01 g/mol.)",
+    "choices": [
+      {
+        "text": "C3H8 makes more CO2, because 10.0 g of it yields more moles of CO2.",
+        "correct": true
+      },
+      {
+        "text": "CH4 makes more CO2, because 10.0 g of it is more moles of fuel.",
+        "why": "10.0 g of CH4 is more moles of fuel, but each mole of C3H8 makes 3 mol of CO2. The CO2 is 0.623 mol from CH4 versus 0.680 mol from C3H8."
+      },
+      {
+        "text": "They make equal masses of CO2, because the masses of fuel are equal.",
+        "why": "Equations are balanced in terms of moles, not grams. Equal masses of different fuels are different numbers of moles."
+      },
+      {
+        "text": "C3H8 makes three times as much CO2, because its CO2 coefficient is 3.",
+        "why": "The 3 is per mole of C3H8, and 10.0 g of C3H8 is fewer moles than 10.0 g of CH4. C3H8 makes more CO2, but not three times as much."
+      }
+    ],
+    "explanation": "CH4: 10.0 g × (1 mol / 16.04 g) × (1 mol CO2 / 1 mol CH4) × 44.01 g/mol = 27.4 g CO2. C3H8: 10.0 g × (1 mol / 44.10 g) × (3 mol CO2 / 1 mol C3H8) × 44.01 g/mol = 29.9 g CO2."
+  },
+  {
+    "id": "massmass-oxygen-grams-to-moles-kclo3",
+    "type": "numeric",
+    "prompt": "Heating potassium chlorate releases oxygen gas: 2KClO3 → 2KCl + 3O2. How many moles of KClO3 must decompose to produce 48.0 g of O2? The molar mass of O2 is 32.00 g/mol. Give your answer in moles.",
+    "answer": 1.0,
+    "unit": "mol",
+    "explanation": "Convert the mass of O2 to moles, then use the coefficients: 48.0 g O2 × (1 mol O2 / 32.00 g O2) × (2 mol KClO3 / 3 mol O2) = 1.00 mol KClO3."
+  },
+  {
+    "id": "massmass-iron-oxide-grams-to-moles-co",
+    "type": "numeric",
+    "prompt": "In a blast furnace, iron ore reacts with carbon monoxide: Fe2O3 + 3CO → 2Fe + 3CO2. How many moles of CO react with 100.0 g of Fe2O3? The molar mass of Fe2O3 is 159.69 g/mol. Give your answer in moles.",
+    "answer": 1.879,
+    "unit": "mol",
+    "explanation": "100.0 g Fe2O3 × (1 mol Fe2O3 / 159.69 g Fe2O3) × (3 mol CO / 1 mol Fe2O3) = 1.879 mol CO."
+  },
+  {
+    "id": "massmass-ethane-grams-to-moles-water",
+    "type": "numeric",
+    "prompt": "Ethane burns according to 2C2H6 + 7O2 → 4CO2 + 6H2O. How many moles of H2O form when 15.0 g of C2H6 burn? The molar mass of C2H6 is 30.07 g/mol. Give your answer in moles.",
+    "answer": 1.497,
+    "unit": "mol",
+    "explanation": "15.0 g C2H6 × (1 mol C2H6 / 30.07 g C2H6) × (6 mol H2O / 2 mol C2H6) = 1.497 mol H2O."
+  },
+  {
+    "id": "massmass-electrolysis-grams-water-to-moles-o2",
+    "type": "numeric",
+    "prompt": "Passing an electric current through water splits it into its elements: 2H2O → 2H2 + O2. How many moles of O2 are produced from 45.0 g of H2O? The molar mass of H2O is 18.02 g/mol. Give your answer in moles.",
+    "answer": 1.249,
+    "unit": "mol",
+    "explanation": "45.0 g H2O × (1 mol H2O / 18.02 g H2O) × (1 mol O2 / 2 mol H2O) = 1.249 mol O2."
+  },
+  {
+    "id": "massmass-moles-o2-to-grams-mgo",
+    "type": "numeric",
+    "prompt": "Magnesium burns in air according to 2Mg + O2 → 2MgO. What mass of MgO, in grams, forms when 0.250 mol of O2 reacts? The molar mass of MgO is 40.30 g/mol.",
+    "answer": 20.15,
+    "unit": "g",
+    "explanation": "Use the mole ratio first, then the molar mass of MgO: 0.250 mol O2 × (2 mol MgO / 1 mol O2) × (40.30 g MgO / 1 mol MgO) = 20.15 g MgO."
+  },
+  {
+    "id": "massmass-moles-water-to-grams-nh3",
+    "type": "numeric",
+    "prompt": "Ammonia reacts with oxygen according to 4NH3 + 5O2 → 4NO + 6H2O. What mass of NH3, in grams, must react to produce 3.00 mol of H2O? The molar mass of NH3 is 17.03 g/mol.",
+    "answer": 34.06,
+    "unit": "g",
+    "explanation": "Go from the product back to the reactant: 3.00 mol H2O × (4 mol NH3 / 6 mol H2O) × (17.03 g NH3 / 1 mol NH3) = 34.06 g NH3."
+  },
+  {
+    "id": "massmass-moles-al-to-grams-hcl",
+    "type": "numeric",
+    "prompt": "Aluminum dissolves in hydrochloric acid according to 2Al + 6HCl → 2AlCl3 + 3H2. What mass of HCl, in grams, reacts with 0.600 mol of Al? The molar mass of HCl is 36.46 g/mol.",
+    "answer": 65.63,
+    "unit": "g",
+    "explanation": "0.600 mol Al × (6 mol HCl / 2 mol Al) × (36.46 g HCl / 1 mol HCl) = 65.63 g HCl."
+  },
+  {
+    "id": "massmass-moles-ethanol-to-grams-water",
+    "type": "numeric",
+    "prompt": "Ethanol burns according to C2H5OH + 3O2 → 2CO2 + 3H2O. What mass of H2O, in grams, is produced when 0.150 mol of C2H5OH burns? The molar mass of H2O is 18.02 g/mol.",
+    "answer": 8.109,
+    "unit": "g",
+    "explanation": "0.150 mol C2H5OH × (3 mol H2O / 1 mol C2H5OH) × (18.02 g H2O / 1 mol H2O) = 8.109 g H2O."
+  },
+  {
+    "id": "massmass-moles-fecl3-to-grams-cl2",
+    "type": "numeric",
+    "prompt": "Iron reacts with chlorine gas according to 2Fe + 3Cl2 → 2FeCl3. What mass of Cl2, in grams, is needed to make 0.800 mol of FeCl3? The molar mass of Cl2 is 70.90 g/mol.",
+    "answer": 85.08,
+    "unit": "g",
+    "explanation": "0.800 mol FeCl3 × (3 mol Cl2 / 2 mol FeCl3) × (70.90 g Cl2 / 1 mol Cl2) = 85.08 g Cl2."
+  },
+  {
+    "id": "massmass-photosynthesis-co2-for-glucose",
+    "type": "numeric",
+    "prompt": "In photosynthesis, plants make glucose according to 6CO2 + 6H2O → C6H12O6 + 6O2. What mass of CO2, in grams, does a plant take in to make 90.0 g of C6H12O6? Molar masses: CO2, 44.01 g/mol; C6H12O6, 180.16 g/mol.",
+    "answer": 131.9,
+    "unit": "g",
+    "explanation": "90.0 g C6H12O6 × (1 mol C6H12O6 / 180.16 g C6H12O6) × (6 mol CO2 / 1 mol C6H12O6) × (44.01 g CO2 / 1 mol CO2) = 131.9 g CO2."
+  },
+  {
+    "id": "massmass-octane-grams-of-oxygen",
+    "type": "numeric",
+    "prompt": "Octane, a component of gasoline, burns according to 2C8H18 + 25O2 → 16CO2 + 18H2O. What mass of O2, in grams, is needed to burn 57.1 g of C8H18 completely? Molar masses: C8H18, 114.23 g/mol; O2, 32.00 g/mol.",
+    "answer": 199.9,
+    "unit": "g",
+    "explanation": "57.1 g C8H18 × (1 mol C8H18 / 114.23 g C8H18) × (25 mol O2 / 2 mol C8H18) × (32.00 g O2 / 1 mol O2) = 199.9 g O2."
+  },
+  {
+    "id": "massmass-thermite-aluminum-to-iron",
+    "type": "numeric",
+    "prompt": "In the thermite reaction, aluminum reacts with iron(III) oxide to make molten iron: Fe2O3 + 2Al → Al2O3 + 2Fe. What mass of Fe, in grams, is produced when 25.0 g of Al react? Molar masses: Al, 26.98 g/mol; Fe, 55.85 g/mol.",
+    "answer": 51.75,
+    "unit": "g",
+    "explanation": "25.0 g Al × (1 mol Al / 26.98 g Al) × (2 mol Fe / 2 mol Al) × (55.85 g Fe / 1 mol Fe) = 51.75 g Fe. The moles are equal, but the masses are not, because Al and Fe have different molar masses."
+  },
+  {
+    "id": "massmass-antacid-hcl-neutralized",
+    "type": "numeric",
+    "prompt": "An antacid tablet neutralizes stomach acid according to CaCO3 + 2HCl → CaCl2 + H2O + CO2. What mass of HCl, in grams, can 0.500 g of CaCO3 neutralize? Molar masses: CaCO3, 100.09 g/mol; HCl, 36.46 g/mol.",
+    "answer": 0.3643,
+    "unit": "g",
+    "explanation": "0.500 g CaCO3 × (1 mol CaCO3 / 100.09 g CaCO3) × (2 mol HCl / 1 mol CaCO3) × (36.46 g HCl / 1 mol HCl) = 0.3643 g HCl."
+  },
+  {
+    "id": "massmass-airbag-sodium-azide",
+    "type": "numeric",
+    "prompt": "A car's air bag inflates when sodium azide decomposes: 2NaN3 → 2Na + 3N2. What mass of NaN3, in grams, is needed to produce 65.0 g of N2? Molar masses: NaN3, 65.01 g/mol; N2, 28.01 g/mol.",
+    "answer": 100.6,
+    "unit": "g",
+    "explanation": "Here the given mass is a product and the answer is a reactant: 65.0 g N2 × (1 mol N2 / 28.01 g N2) × (2 mol NaN3 / 3 mol N2) × (65.01 g NaN3 / 1 mol NaN3) = 100.6 g NaN3."
+  },
+  {
+    "id": "massmass-lime-from-limestone-kilogram",
+    "type": "numeric",
+    "prompt": "Lime, CaO, is made by heating limestone: CaCO3 → CaO + CO2. What mass of CaO, in grams, is produced from 1.00 kg of CaCO3? Molar masses: CaCO3, 100.09 g/mol; CaO, 56.08 g/mol.",
+    "answer": 560.3,
+    "unit": "g",
+    "explanation": "1.00 kg is 1,000 g. 1,000 g CaCO3 × (1 mol CaCO3 / 100.09 g CaCO3) × (1 mol CaO / 1 mol CaCO3) × (56.08 g CaO / 1 mol CaO) = 560.3 g CaO. The moles are equal, but the masses are not."
+  },
+  {
+    "id": "massmass-copper-wire-silver",
+    "type": "numeric",
+    "prompt": "A copper wire placed in silver nitrate solution becomes coated with silver: Cu + 2AgNO3 → Cu(NO3)2 + 2Ag. What mass of Ag, in grams, forms when 3.18 g of Cu react? Molar masses: Cu, 63.55 g/mol; Ag, 107.87 g/mol.",
+    "answer": 10.8,
+    "unit": "g",
+    "explanation": "3.18 g Cu × (1 mol Cu / 63.55 g Cu) × (2 mol Ag / 1 mol Cu) × (107.87 g Ag / 1 mol Ag) = 10.80 g Ag."
+  },
+  {
+    "id": "massmass-methanol-co2-to-water",
+    "type": "numeric",
+    "prompt": "Methanol burns according to 2CH3OH + 3O2 → 2CO2 + 4H2O. When enough methanol burns to produce 44.0 g of CO2, what mass of H2O, in grams, is also produced? Molar masses: CO2, 44.01 g/mol; H2O, 18.02 g/mol.",
+    "answer": 36.03,
+    "unit": "g",
+    "explanation": "Both are products, and the coefficients still relate them: 44.0 g CO2 × (1 mol CO2 / 44.01 g CO2) × (4 mol H2O / 2 mol CO2) × (18.02 g H2O / 1 mol H2O) = 36.03 g H2O."
+  },
+  {
+    "id": "massmass-aspirin-salicylic-acid-milligrams",
+    "type": "numeric",
+    "prompt": "Aspirin, C9H8O4, is made from salicylic acid, C7H6O3: C7H6O3 + C4H6O3 → C9H8O4 + C2H4O2. What mass of C7H6O3, in milligrams, is needed to make the 325 mg of C9H8O4 in one aspirin tablet? Molar masses: C7H6O3, 138.12 g/mol; C9H8O4, 180.16 g/mol.",
+    "answer": 249.2,
+    "unit": "mg",
+    "explanation": "325 mg = 0.325 g. 0.325 g C9H8O4 × (1 mol C9H8O4 / 180.16 g C9H8O4) × (1 mol C7H6O3 / 1 mol C9H8O4) × (138.12 g C7H6O3 / 1 mol C7H6O3) = 0.2492 g, or 249.2 mg C7H6O3."
+  }
+]

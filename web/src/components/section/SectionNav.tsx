@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 import { LockIcon } from "../LandingIcons";
 import type { PathSection } from "../../lib/types";
 
-/* Previous and next section. Next stays locked until a set of practice
-   questions reaches the pass mark; the last section of a book has Finish
-   instead, which goes back to the learning path. Either one marks the section
-   finished (onContinue). */
 export default function SectionNav({
   previous,
   next,
@@ -24,10 +20,8 @@ export default function SectionNav({
   /** Practice questions in the set shown, and how many are still unanswered. */
   total: number;
   remaining: number;
-  /** The score the set needs to unlock Next. */
   passMark: number;
   sectionHref: (number: string) => string;
-  /** The learning path, where Finish goes. */
   pathHref: string;
   bookTitle: string;
   onContinue: () => void;

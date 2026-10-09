@@ -55,6 +55,8 @@ Now we can use this quantity to determine the number of moles of HCl that will f
 
 frac6 mol HCl2 mol AlCl3
 
+[Note: the source's broken formatting is reproduced as printed; the conversion factor is (6 mol HCl / 2 mol AlCl3).]
+
 Applying this conversion factor to the quantity of AlCl3, we get
 
 1.87 mol AlCl3 × (6 mol HCl / 2 mol AlCl3) = 5.61 mol HCl

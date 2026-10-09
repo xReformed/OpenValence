@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseChemText } from "./chemText";
 
-/* Writes the segments back out compactly: H_{2}O, Fe^{3+}. */
 function render(text: string): string {
   return parseChemText(text)
     .map((segment) =>

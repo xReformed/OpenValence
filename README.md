@@ -20,7 +20,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Eval question set | **152 questions** written, all for *Chemistry* 1e — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
-| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of 30 per section through 4.2, of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
+| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section through 8.6 (7.2 and 8.2 still to do), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |
@@ -31,7 +31,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 
 ```
 sources/     Curated corpus — markdown, one file per textbook section
-questions/   Practice questions, one JSON file per section, imported into the database
+questions/   Practice questions: a folder per book and chapter, one JSON file per section, imported into the database
 ingest/      .NET console app: chunk → embed → search
 api/         ASP.NET Core minimal API — serves the practice questions; the answer endpoint is still to build
 web/         React + Vite + Tailwind frontend
@@ -118,7 +118,7 @@ dotnet run --project ingest -- questions           # check every file, then impo
 dotnet run --project ingest -- questions --check   # check only; no database needed
 ```
 
-Each section's questions are one JSON file, `questions/<book>/<section>.json` (for example [questions/beginning-chemistry/3.4.json](questions/beginning-chemistry/3.4.json)): an array in the web app's `Question` shape ([types.ts](web/src/lib/types.ts)), in the order the section shows them. The import checks every question first — exactly one correct choice, numeric answers that are numbers, no unknown fields (a misspelled `tolerence` is caught), ids unique across all files — and reports every problem at once. Then it replaces the `questions` table in one transaction, so a question deleted from its file disappears from the app too. Keep ids stable: students' saved answers are stored by id.
+Each section's questions are one JSON file in its chapter's folder, `questions/<book>/<chapter>/<section>.json` (for example [questions/beginning-chemistry/03-atoms-molecules-and-ions/3.4.json](questions/beginning-chemistry/03-atoms-molecules-and-ions/3.4.json)); every chapter of both books has a folder, named by its two-digit number and title, and the import reports a file in the wrong chapter's folder. Each file is an array in the web app's `Question` shape ([types.ts](web/src/lib/types.ts)), in the order the section shows them. The import checks every question first — exactly one correct choice, numeric answers that are numbers, no unknown fields (a misspelled `tolerence` is caught), ids unique across all files — and reports every problem at once. Then it replaces the `questions` table in one transaction, so a question deleted from its file disappears from the app too. Keep ids stable: students' saved answers are stored by id.
 
 ## Running the web app
 

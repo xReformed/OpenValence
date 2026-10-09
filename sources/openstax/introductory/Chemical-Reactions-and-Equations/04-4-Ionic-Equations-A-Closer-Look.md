@@ -116,6 +116,8 @@ Br^−(aq) + Ag^+(aq) → AgBr(s)
 
 Mg^2+(aq) + SO4^2−(aq) + Ba^2+(aq) + 2NO3^−(aq) → Mg^2+(aq) + 2NO3^−(aq) + BaSo4(s)
 
+[Note: reproduced as printed; barium sulfate is BaSO4.]
+
 The net ionic equation is
 
 SO4^2−(aq) + Ba^2+(aq) → BaSO4(s)
@@ -140,6 +142,8 @@ Figure 4.4.2: Tank water heater © Thinkstock. Most homes in the United States h
 Tank water heater.
 
 Another place where solubility versus insolubility is an issue is the Grand Canyon. We usually think of rock as insoluble. But it is actually ever so slightly soluble. This means that over a period of about two billion years, the Colorado River carved rock from the surface by slowly dissolving it, eventually generating a spectacular series of gorges and canyons. And all because of solubility!
+
+[Note: reproduced as printed, but the canyon is far younger than that: the Colorado River carved most of it over roughly the last 5 to 6 million years. It is the rocks exposed in its walls that are up to about 2 billion years old. The same goes for "billions of years" in the caption below.]
 
 Figure 4.4.3: The Grand Canyon was formed by water running through rock for billions of years, very slowly dissolving it. Note the Colorado River is still present in the lower part of the photo. (Sonaal Bangera via unsplash)
 Painting of the Grand Canyon.

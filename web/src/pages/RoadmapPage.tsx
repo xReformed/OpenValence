@@ -14,8 +14,7 @@ import { getFinished, subscribeToProgress } from "../lib/progress";
 import { BRANCHES } from "../lib/roadmap";
 import { roadmapCardClass } from "../lib/roadmapCard";
 
-/* Faded artwork bleeding off a card's corner, like the branch cards'. Dark mode
-   flips its brightness (invert) but not its colours (hue-rotate back). */
+/* Dark mode flips its brightness (invert) but not its colours (hue-rotate back). */
 function CardArtwork({ src }: { src: string }) {
   return (
     <img
@@ -62,7 +61,6 @@ export default function RoadmapPage() {
           </p>
         </Reveal>
 
-        {/* Learn and Practice, then one card per concept path (lib/concepts). */}
         <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <li>
             <Reveal className="h-full">

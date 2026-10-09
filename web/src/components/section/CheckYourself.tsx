@@ -2,11 +2,8 @@ import PracticeQuestion from "../PracticeQuestion";
 import { SET_SIZE } from "../../lib/questionSets";
 import type { Question } from "../../lib/types";
 
-/* The end-of-section practice questions, written for OpenValence and served
-   by the API: a random set from the section's pool, then the score once any
-   are answered. Scoring the pass mark unlocks the next section; below it,
-   "Try again" draws a new random set. While the section is locked, the Next
-   link (SectionNav) scrolls here: #check-yourself. */
+/* While the section is locked, the Next link (SectionNav) scrolls here:
+   #check-yourself. */
 export default function CheckYourself({
   questions,
   poolSize,
@@ -20,9 +17,7 @@ export default function CheckYourself({
   hasNext,
   onDrawNew,
 }: {
-  /** The set shown. */
   questions: Question[];
-  /** How many questions the section has in all. */
   poolSize: number;
   /** Questions in the whole pool not answered yet. */
   unanswered: number;
@@ -30,13 +25,11 @@ export default function CheckYourself({
   context: string;
   answered: number;
   score: number;
-  /** The score this set needs to pass, and whether it has. */
   passMark: number;
   passed: boolean;
   /** Next is open, from this set or an earlier one. */
   unlocked: boolean;
   hasNext: boolean;
-  /** Draw a new random set: "Try again", or "Try 10 more questions" after a pass. */
   onDrawNew: () => void;
 }) {
   const remaining = questions.length - answered;
@@ -138,7 +131,6 @@ export default function CheckYourself({
   );
 }
 
-/* Shown instead when the API couldn't be reached. */
 export function QuestionsUnavailable() {
   return (
     <p className="mt-16 max-w-3xl rounded-xl border border-dashed border-neutral-300 px-5 py-4 text-sm leading-relaxed text-neutral-500">

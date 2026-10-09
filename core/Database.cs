@@ -2,7 +2,6 @@ using Npgsql;
 
 namespace Core;
 
-/// <summary>Finding and reading the Postgres connection settings.</summary>
 public static class Database
 {
     /// <summary>

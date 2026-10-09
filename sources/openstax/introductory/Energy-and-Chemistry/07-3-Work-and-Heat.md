@@ -68,6 +68,8 @@ For a given object, the amount of heat (_q_) involved is proportional to two thi
 
 qα m × ΔT
 
+[Note: reproduced as printed; the symbol here is ∝, "is proportional to," as the next sentence says, not the Greek letter α.]
+
 where ∝ means "is proportional to." To make a proportionality an equality, we include a proportionality constant. In this case, the proportionality constant is labeled _c_ and is called the specific heat capacity, or, more succinctly, specific heat:
 
 q = mcΔT

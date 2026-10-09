@@ -8,7 +8,6 @@ import TopNavBar from "../components/TopNavBar";
 import { levelCount } from "../lib/conceptLevels";
 import type { Concept } from "../lib/types";
 
-/* /roadmap/<concept> — one concept path, like /roadmap/balancing: its levels in order. */
 export default function ConceptPathPage() {
   const concept = useLoaderData<Concept>();
   const available = concept.status === "in-progress";

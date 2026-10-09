@@ -26,7 +26,7 @@ export default function ChatTurnView({ turn }: { turn: ChatTurn }) {
     <div className="flex gap-3 sm:gap-4">
       <AssistantAvatar />
       <div className="min-w-0 flex-1">
-        <p className="text-[0.95rem] leading-relaxed whitespace-pre-wrap text-neutral-800">
+        <p className="text-[0.95rem] leading-relaxed whitespace-pre-wrap text-reading">
           <ChemText text={turn.content} />
         </p>
         {turn.citations && <CitationList citations={turn.citations} />}

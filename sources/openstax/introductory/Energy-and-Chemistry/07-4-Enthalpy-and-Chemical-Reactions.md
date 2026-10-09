@@ -99,6 +99,8 @@ NaOH (aq) + HCl(aq) → NaCl(aq) + H2O(ℓ)
 
 An observer notes that the temperature increases from 22.4°C to 29.1°C. Assuming that the heat capacities and densities of the solutions are the same as those of pure water, we now have the information we need to determine the enthalpy change of the chemical reaction. The total amount of solution is 200.0 mL, and with a density of 1.00 g/mL, we thus have 200.0 g of solution. Using the equation for _q_, we substitute for our experimental measurements and the specific heat of water (in Table 7.4.1 of Section 7.3).
 
+[Note: reproduced as printed; the specific heat of water is in Table 7.3.1 of Section 7.3.]
+
 q = (200.0g)(4.184 (J / g.°C))(6.7°C)
 
 Solving for _q_, we get

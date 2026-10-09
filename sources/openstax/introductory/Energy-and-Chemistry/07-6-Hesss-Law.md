@@ -19,6 +19,8 @@ In reality, this is extremely difficult to do. Given the opportunity, carbon wil
 
 2C(s) + O2(g) → 2CO2(g) ΔH = −393.5kJ
 
+[Note: reproduced as printed, but this equation isn't balanced, and −393.5 kJ is the ΔH for one mole of CO2: C(s) + O2(g) → CO2(g). For two moles, 2C(s) + 2O2(g) → 2CO2(g), ΔH = −787.0 kJ, as worked out below.]
+
 Is there a way around this? Yes. It comes from the understanding that chemical equations can be treated like algebraic equations, with the arrow acting like the equals sign. Like algebraic equations, chemical equations can be combined, and if the same substance appears on both sides of the arrow, it can be canceled out (much like a spectator ion in ionic equations). For example, consider these two reactions:
 
 2C(s) + 2O2(g) → 2CO2(g)
@@ -58,6 +60,8 @@ C(s) + O2(g) → CO2(g) ΔH = −393.5kJ
 According to the first corollary, the first reaction has an energy change of two times −393.5 kJ, or −787.0 kJ:
 
 2C(s) + 2O2(g) → 2CO2(g) ΔH = −787.0kJ
+
+[Note: reproduced as printed, but it is the second corollary, about multiples, that doubles the ΔH.]
 
 The second reaction in the combination is related to the combustion of CO(g):
 
@@ -116,6 +120,8 @@ which is the reaction we are looking for. The ΔH of this reaction is the sum of
 
 Δ_H_ = +174.5 − 1,692.2 − 167.5 = −1,685.2 kJ
 
+[Note: reproduced as printed. The method is right, but only the first ΔH is close to a measured value. Measured data give about −2,600 kJ for the second reaction and about +1,014 kJ for the third, so burning C2H4 really has ΔH ≈ −1,411 kJ (forming liquid water), not −1,685.2 kJ.]
+
 ### Exercise 7.6.1
 
 Given the thermochemical equations
@@ -127,6 +133,8 @@ PbCl2 + Cl2 → PbCl4 ΔH = −87kJ
 determine ΔH for
 
 2PbCl2 → Pb + PbCl4
+
+[Note: reproduced as printed; these ΔH values don't match measured ones (Table 7.7.1 in Section 7.7 gives −359.41 kJ/mol for forming PbCl2(s)). Use the values given here to answer.]
 
 **Answer**
 

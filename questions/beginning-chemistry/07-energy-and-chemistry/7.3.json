@@ -1,0 +1,434 @@
+[
+  {
+    "id": "workheat-delta-v-definition",
+    "type": "multiple-choice",
+    "prompt": "In the equation for work, w = −P_ext × ΔV, how is ΔV found?",
+    "choices": [
+      {
+        "text": "Final volume minus initial volume, so it can be positive or negative",
+        "correct": true
+      },
+      {
+        "text": "Initial volume minus final volume, so it is negative for an expansion",
+        "why": "A change is always the final value minus the initial value. Subtracting in the other order flips the sign of ΔV, and so the sign of w."
+      },
+      {
+        "text": "Larger volume minus smaller volume, so it is always positive",
+        "why": "ΔV keeps its sign. It is negative when the gas contracts, and that negative sign is what makes w positive for a contraction."
+      },
+      {
+        "text": "Final volume divided by initial volume, so it has no units",
+        "why": "That is a ratio, not a change. ΔV is a difference between two volumes, so it has a volume unit such as liters."
+      }
+    ],
+    "explanation": "ΔV = V_final − V_initial. It is positive when the gas expands and negative when it contracts, which is why w can come out negative or positive."
+  },
+  {
+    "id": "workheat-which-work-positive",
+    "type": "multiple-choice",
+    "prompt": "Using w = −P_ext × ΔV, which process gives a positive value of w for the gas?",
+    "choices": [
+      {
+        "text": "A gas is compressed from 2.0 L to 1.5 L by a constant external pressure.",
+        "correct": true
+      },
+      {
+        "text": "A gas expands from 1.5 L to 2.0 L against a constant external pressure.",
+        "why": "ΔV is positive for an expansion, so the minus sign in the equation makes w negative: the gas loses energy as work."
+      },
+      {
+        "text": "A gas is heated and expands from 1.5 L to 2.0 L at constant external pressure.",
+        "why": "Heating doesn't change the sign of the work. The gas still expands, so ΔV is positive and w is negative."
+      },
+      {
+        "text": "A gas is heated in a rigid container, so its volume stays at 2.0 L.",
+        "why": "If the volume doesn't change, ΔV = 0, so w = 0. No work of this kind is done."
+      }
+    ],
+    "explanation": "For the compression, ΔV = 1.5 L − 2.0 L is negative. The two negative signs in w = −P_ext × ΔV make w positive, so energy is added to the gas as work."
+  },
+  {
+    "id": "workheat-mistake-delta-v-order",
+    "type": "multiple-choice",
+    "prompt": "A gas expands from 1.50 L to 4.00 L against a constant external pressure of 2.00 atm. A student writes ΔV = 1.50 L − 4.00 L = −2.50 L and then w = −(2.00 atm)(−2.50 L) = +5.00 L·atm. What is the student's mistake?",
+    "choices": [
+      {
+        "text": "ΔV must be final minus initial volume, +2.50 L, so w = −5.00 L·atm.",
+        "correct": true
+      },
+      {
+        "text": "There is no mistake; a gas that expands has a positive value of w.",
+        "why": "With w = −P_ext × ΔV, an expansion has a positive ΔV and so a negative w. The expanding gas is losing energy as work."
+      },
+      {
+        "text": "The minus sign in the equation should be dropped, since ΔV is negative.",
+        "why": "The minus sign is always part of w = −P_ext × ΔV. The real error is ΔV, which must be the final volume minus the initial volume."
+      },
+      {
+        "text": "Only the initial volume belongs in the equation, so w = −3.00 L·atm.",
+        "why": "The equation uses the change in volume, ΔV, not either volume by itself."
+      }
+    ],
+    "explanation": "A change is always final minus initial: ΔV = 4.00 L − 1.50 L = +2.50 L. Then w = −(2.00 atm)(2.50 L) = −5.00 L·atm, negative because the expanding gas loses energy as work."
+  },
+  {
+    "id": "workheat-mistake-upside-down-factor",
+    "type": "multiple-choice",
+    "prompt": "A student finds that w = −4.20 L·atm for a gas and converts it to joules: −4.20 L·atm × (1 L·atm / 101.32 J) = −0.0415 J. What is wrong?",
+    "choices": [
+      {
+        "text": "The factor is upside down; the answer should be −426 J.",
+        "correct": true
+      },
+      {
+        "text": "Nothing is wrong; a joule is a larger unit than a liter·atmosphere.",
+        "why": "Since 1 L·atm = 101.32 J, the joule is the smaller unit, so the number of joules must be larger than the number of L·atm."
+      },
+      {
+        "text": "The sign must be dropped when changing units, giving +0.0415 J.",
+        "why": "Changing units never changes the sign of w. The value is negative before and after the conversion; the real error is the inverted factor."
+      },
+      {
+        "text": "The factor should be 4.184 J per L·atm, giving −17.6 J.",
+        "why": "4.184 J is the size of one calorie. The factor between liter·atmospheres and joules is 1 L·atm = 101.32 J."
+      }
+    ],
+    "explanation": "A conversion factor must cancel the unit you start with, so L·atm belongs in the denominator: −4.20 L·atm × (101.32 J / 1 L·atm) = −426 J."
+  },
+  {
+    "id": "workheat-airbag-inflates",
+    "type": "numeric",
+    "prompt": "When a car's airbag inflates, the gas inside expands from a volume of essentially 0 L to 65.0 L, pushing back the surrounding air, which exerts a constant external pressure of 1.00 atm. Using w = −P_ext × ΔV and 1 L·atm = 101.32 J, what is w for the gas, in joules? Include a minus sign if the value is negative.",
+    "answer": -6590,
+    "unit": "J",
+    "explanation": "ΔV = 65.0 L − 0 L = +65.0 L, so w = −(1.00 atm)(65.0 L) = −65.0 L·atm. Converting, −65.0 L·atm × (101.32 J / 1 L·atm) = −6,590 J; the sign is negative because the gas loses energy as work."
+  },
+  {
+    "id": "workheat-syringe-compression-ml",
+    "type": "numeric",
+    "prompt": "Air in a sealed syringe is compressed from 60.0 mL to 25.0 mL by a constant external pressure of 1.80 atm. Using w = −P_ext × ΔV and 1 L·atm = 101.32 J, what is w for the air, in joules? Include a minus sign if the value is negative.",
+    "answer": 6.38,
+    "unit": "J",
+    "explanation": "ΔV = 25.0 mL − 60.0 mL = −35.0 mL = −0.0350 L, so w = −(1.80 atm)(−0.0350 L) = +0.0630 L·atm. Converting, 0.0630 L·atm × (101.32 J / 1 L·atm) = 6.38 J, positive because energy is added to the air as it is compressed."
+  },
+  {
+    "id": "workheat-torr-expansion",
+    "type": "numeric",
+    "prompt": "A gas in a cylinder with a movable piston expands from 3.00 L to 8.00 L against a constant external pressure of 570 torr. Using w = −P_ext × ΔV and 1 atm = 760 torr, what is w, in L·atm? Include a minus sign if the value is negative.",
+    "answer": -3.75,
+    "unit": "L·atm",
+    "explanation": "First convert the pressure: 570 torr × (1 atm / 760 torr) = 0.750 atm. Then w = −(0.750 atm)(8.00 L − 3.00 L) = −3.75 L·atm."
+  },
+  {
+    "id": "workheat-find-external-pressure",
+    "type": "numeric",
+    "prompt": "A gas expands from 1.20 L to 3.70 L against a constant external pressure, and w for the gas is −380 J. Using w = −P_ext × ΔV and 1 L·atm = 101.32 J, what was the external pressure, in atmospheres?",
+    "answer": 1.5,
+    "unit": "atm",
+    "explanation": "Convert w to L·atm: −380 J × (1 L·atm / 101.32 J) = −3.75 L·atm. With ΔV = 3.70 L − 1.20 L = 2.50 L, P_ext = −w ÷ ΔV = 3.75 L·atm ÷ 2.50 L = 1.50 atm."
+  },
+  {
+    "id": "workheat-find-final-volume",
+    "type": "numeric",
+    "prompt": "A gas that starts at 2.50 L expands against a constant external pressure of 0.800 atm, and w for the gas is −162 J. Using w = −P_ext × ΔV and 1 L·atm = 101.32 J, what is the gas's final volume, in liters?",
+    "answer": 4.5,
+    "unit": "L",
+    "explanation": "Convert w to L·atm: −162 J × (1 L·atm / 101.32 J) = −1.60 L·atm. Then ΔV = −w ÷ P_ext = 1.60 L·atm ÷ 0.800 atm = 2.00 L, so V_final = 2.50 L + 2.00 L = 4.50 L."
+  },
+  {
+    "id": "workheat-convert-joules-to-latm",
+    "type": "numeric",
+    "prompt": "When a gas is compressed, w for the gas is +845 J. Using 1 L·atm = 101.32 J, what is this value of w in liter·atmospheres?",
+    "answer": 8.34,
+    "unit": "L·atm",
+    "explanation": "Put joules in the denominator so they cancel: 845 J × (1 L·atm / 101.32 J) = 8.34 L·atm."
+  },
+  {
+    "id": "workheat-volume-decreases-latm",
+    "type": "numeric",
+    "prompt": "The volume of a gas decreases by 1.40 L while a constant external pressure of 2.00 atm acts on it. Using w = −P_ext × ΔV, what is w, in L·atm? Include a minus sign if the value is negative.",
+    "answer": 2.8,
+    "unit": "L·atm",
+    "explanation": "A decrease in volume means ΔV = −1.40 L. Then w = −(2.00 atm)(−1.40 L) = +2.80 L·atm; the two negative signs make w positive, so energy is added to the gas."
+  },
+  {
+    "id": "workheat-heat-definition",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes heat?",
+    "choices": [
+      {
+        "text": "The transfer of energy from one body to another due to a difference in temperature",
+        "correct": true
+      },
+      {
+        "text": "How hot or cold an object is, as measured in degrees with a thermometer",
+        "why": "That describes temperature. Heat is energy being transferred because of a temperature difference, and it is measured in joules."
+      },
+      {
+        "text": "A force acting through a distance, as when a gas pushes back a piston",
+        "why": "That is work. Heat is a different way of transferring energy, one driven by a difference in temperature."
+      },
+      {
+        "text": "The energy needed to raise the temperature of 1 g of a substance by 1°C",
+        "why": "That describes specific heat, a property of a substance. Heat, q, is the amount of energy actually transferred."
+      }
+    ],
+    "explanation": "Heat is the transfer of energy from one body to another due to a difference in temperature. Because heat is a measure of energy transfer, it is measured in joules."
+  },
+  {
+    "id": "workheat-cold-railing",
+    "type": "multiple-choice",
+    "prompt": "On a winter morning you grab a metal railing, and it feels cold. In terms of heat, what is happening?",
+    "choices": [
+      {
+        "text": "Energy is being transferred from your hand to the railing.",
+        "correct": true
+      },
+      {
+        "text": "Energy is being transferred from the railing to your hand.",
+        "why": "If energy were flowing into your hand, the railing would feel hot. It feels cold because energy is leaving your hand."
+      },
+      {
+        "text": "Cold is being transferred from the railing to your hand.",
+        "why": "Heat is a transfer of energy; there is no separate \"cold\" that moves. Your hand feels cold because it is losing energy."
+      },
+      {
+        "text": "No energy is transferred; the railing just has a lower temperature.",
+        "why": "A difference in temperature is exactly what causes heat, the transfer of energy from one body to another."
+      }
+    ],
+    "explanation": "Heat is the transfer of energy due to a difference in temperature. Your hand is warmer than the railing, so energy is transferred from your hand to the railing, and your hand feels cold."
+  },
+  {
+    "id": "workheat-delta-t-kelvin-same",
+    "type": "multiple-choice",
+    "prompt": "A sample warms from 20.0°C to 45.0°C. A student converts both temperatures to kelvins before finding ΔT. What value of ΔT should the student get?",
+    "choices": [
+      {
+        "text": "25.0 K, the same value as the change in degrees Celsius",
+        "correct": true
+      },
+      {
+        "text": "298 K, because 273 must be added to the change in temperature",
+        "why": "Adding 273 converts a temperature reading, not a change. Both readings go up by 273, so the 273s cancel when you subtract."
+      },
+      {
+        "text": "1.09, the ratio of the two kelvin temperatures, 318 K ÷ 293 K",
+        "why": "ΔT is a change, the final value minus the initial value, not a ratio of the two temperatures."
+      },
+      {
+        "text": "−25.0 K, because ΔT is the initial minus the final temperature",
+        "why": "A change is always final minus initial. For a sample that warms, ΔT = 318.0 K − 293.0 K = +25.0 K."
+      }
+    ],
+    "explanation": "In kelvins, ΔT = 318.0 K − 293.0 K = 25.0 K, the same as 45.0°C − 20.0°C = 25.0°C. A change in temperature has the same value in degrees Celsius or kelvins, which is why specific heat can be given in J/g·°C or J/g·K."
+  },
+  {
+    "id": "workheat-gold-vs-aluminum",
+    "type": "multiple-choice",
+    "prompt": "Equal masses of aluminum (specific heat 0.900 J/g·°C) and gold (specific heat 0.129 J/g·°C) each absorb the same amount of heat. Which statement is correct?",
+    "choices": [
+      {
+        "text": "The gold's temperature rises about seven times as much as the aluminum's.",
+        "correct": true
+      },
+      {
+        "text": "The aluminum's temperature rises about seven times as much as the gold's.",
+        "why": "A larger specific heat means more energy is needed to change the temperature, so the same heat changes aluminum's temperature less, not more."
+      },
+      {
+        "text": "Both temperatures rise by the same amount, since they absorb the same heat.",
+        "why": "From q = mcΔT, ΔT = q ÷ (mc), so the temperature change also depends on the specific heat, which differs a lot for these metals."
+      },
+      {
+        "text": "The aluminum's temperature rises more, since aluminum is the less dense metal.",
+        "why": "Density doesn't appear in q = mcΔT. With equal masses and equal heat, the metal with the smaller specific heat has the larger temperature change."
+      }
+    ],
+    "explanation": "From q = mcΔT, ΔT = q ÷ (mc). With q and m the same, the metal with the lower specific heat changes temperature more, and 0.900 ÷ 0.129 = 6.98, about 7."
+  },
+  {
+    "id": "workheat-nail-vs-skillet",
+    "type": "multiple-choice",
+    "prompt": "A 5.0 g iron nail and a 2,000 g iron skillet are each warmed by 10°C. Which statement is correct?",
+    "choices": [
+      {
+        "text": "Same specific heat; the skillet needs more heat to warm by 10°C.",
+        "correct": true
+      },
+      {
+        "text": "Same specific heat; both need the same heat to warm by 10°C.",
+        "why": "q = mcΔT also depends on mass. With 400 times the mass, the skillet needs 400 times as much heat for the same ΔT."
+      },
+      {
+        "text": "The skillet has the larger specific heat, since it needs more heat.",
+        "why": "The skillet needs more heat because of its larger mass. Specific heat is per gram, so it is the same for any piece of iron."
+      },
+      {
+        "text": "The nail has the larger specific heat, since it warms more easily.",
+        "why": "Specific heat is a property of the substance, iron, not of the object's size. The nail needs less heat only because it has less mass."
+      }
+    ],
+    "explanation": "Specific heat is a physical property, a characteristic of the substance, so the nail and the skillet have the same specific heat. Because q = mcΔT, the skillet's 400-times-larger mass means it needs 400 times as much heat for the same ΔT."
+  },
+  {
+    "id": "workheat-negative-q-situation",
+    "type": "multiple-choice",
+    "prompt": "Using q = mcΔT, for which of these objects is q negative?",
+    "choices": [
+      {
+        "text": "A bowl of soup cooling on the table",
+        "correct": true
+      },
+      {
+        "text": "A pot of water warming on a stove",
+        "why": "The water's temperature rises, so ΔT and q are positive: energy is going into the water."
+      },
+      {
+        "text": "Cool water into which a hot iron pan is dunked",
+        "why": "The pan loses energy, but the water gains it. The water's temperature rises, so q for the water is positive."
+      },
+      {
+        "text": "A cold soda can held in a warm hand",
+        "why": "The can's temperature rises, so q for the can is positive. It is the hand that loses energy."
+      }
+    ],
+    "explanation": "ΔT is final minus initial temperature. The soup's temperature falls, so ΔT is negative and q is negative: the soup loses energy as heat. A positive q means energy is going into the object."
+  },
+  {
+    "id": "workheat-mistake-cooling-sign",
+    "type": "multiple-choice",
+    "prompt": "A student calculates q for 42.0 g of iron (specific heat 0.449 J/g·°C) that cools from 95.0°C to 25.0°C. The student writes ΔT = 95.0°C − 25.0°C = 70.0°C, so q = (42.0 g)(0.449 J/g·°C)(70.0°C) = +1,320 J. What is the student's mistake?",
+    "choices": [
+      {
+        "text": "ΔT should be 25.0°C − 95.0°C = −70.0°C, so q = −1,320 J.",
+        "correct": true
+      },
+      {
+        "text": "There is no mistake; q is always positive because it is an amount of energy.",
+        "why": "The sign of q matters. A negative q means energy is leaving the object, as it does when the iron cools."
+      },
+      {
+        "text": "Both temperatures should be changed to kelvins first, which changes q.",
+        "why": "A change in temperature has the same value in kelvins as in degrees Celsius, so converting would not change ΔT or q."
+      },
+      {
+        "text": "The mass should be in kilograms, so q = +1.32 J.",
+        "why": "The specific heat is in J/g·°C, so the mass must be in grams for the units to cancel. Grams were correct here."
+      }
+    ],
+    "explanation": "A change is always final minus initial: ΔT = 25.0°C − 95.0°C = −70.0°C. Then q = (42.0 g)(0.449 J/g·°C)(−70.0°C) = −1,320 J; the negative sign shows the iron loses energy as heat."
+  },
+  {
+    "id": "workheat-identify-metal",
+    "type": "multiple-choice",
+    "prompt": "A 25.0 g sample of an unknown metal absorbs 338 J of heat as its temperature rises from 15.0°C to 30.0°C. The specific heats of four metals, in J/g·°C, are aluminum 0.900, iron 0.449, magnesium 1.03, and gold 0.129. Which metal is the sample?",
+    "choices": [
+      {
+        "text": "Aluminum",
+        "correct": true
+      },
+      {
+        "text": "Iron",
+        "why": "Iron's 0.449 J/g·°C is close to the 0.451 you get by dividing by the final temperature, 30.0°C, instead of by ΔT, 15.0°C."
+      },
+      {
+        "text": "Magnesium",
+        "why": "Magnesium's 1.03 is the closest match to 1.11, the number you get by turning the equation upside down, (m × ΔT) ÷ q. Specific heat is q ÷ (m × ΔT)."
+      },
+      {
+        "text": "Gold",
+        "why": "Gold's specific heat is far too small: 25.0 g of gold would need only about 48 J for this temperature rise."
+      }
+    ],
+    "explanation": "ΔT = 30.0°C − 15.0°C = 15.0°C, so c = q ÷ (m × ΔT) = 338 J ÷ (25.0 g × 15.0°C) = 0.901 J/g·°C, which matches aluminum. Because specific heat is a characteristic of a substance, it can help identify one."
+  },
+  {
+    "id": "workheat-tea-cools",
+    "type": "numeric",
+    "prompt": "A mug holds 250.0 g of tea, which you can treat as water (specific heat 4.184 J/g·°C). As the tea cools from 85.0°C to 22.5°C, what is q for the tea, in joules? Include a minus sign if the value is negative.",
+    "answer": -65400,
+    "unit": "J",
+    "explanation": "ΔT = 22.5°C − 85.0°C = −62.5°C. Then q = (250.0 g)(4.184 J/g·°C)(−62.5°C) = −65,400 J; the sign is negative because the tea loses energy as it cools."
+  },
+  {
+    "id": "workheat-aluminum-pan-kj",
+    "type": "numeric",
+    "prompt": "A 1.25 kg aluminum pan is heated on a stove from 21.0°C to 180.0°C. The specific heat of aluminum is 0.900 J/g·°C. How much heat does the pan absorb, in kilojoules?",
+    "answer": 179,
+    "unit": "kJ",
+    "explanation": "Convert the mass to grams, 1.25 kg = 1,250 g, and find ΔT = 180.0°C − 21.0°C = 159.0°C. Then q = (1,250 g)(0.900 J/g·°C)(159.0°C) = 179,000 J = 179 kJ."
+  },
+  {
+    "id": "workheat-ethanol-temp-rise",
+    "type": "numeric",
+    "prompt": "If 1,500 J of heat is added to 45.0 g of ethyl alcohol (specific heat 2.419 J/g·°C), by how many degrees Celsius does its temperature rise?",
+    "answer": 13.8,
+    "unit": "°C",
+    "explanation": "Solve q = mcΔT for ΔT: ΔT = q ÷ (mc) = 1,500 J ÷ (45.0 g × 2.419 J/g·°C) = 13.8°C."
+  },
+  {
+    "id": "workheat-magnesium-final-temp",
+    "type": "numeric",
+    "prompt": "A 32.0 g block of magnesium at 24.0°C absorbs 850 J of heat. The specific heat of magnesium is 1.03 J/g·°C. What is the block's final temperature, in degrees Celsius?",
+    "answer": 49.8,
+    "unit": "°C",
+    "explanation": "ΔT = q ÷ (mc) = 850 J ÷ (32.0 g × 1.03 J/g·°C) = 25.8°C. Since ΔT = T_final − T_initial, T_final = 24.0°C + 25.8°C = 49.8°C."
+  },
+  {
+    "id": "workheat-iron-initial-temp",
+    "type": "numeric",
+    "prompt": "A 150.0 g iron block loses 2,450 J of heat as it cools to a final temperature of 25.0°C. The specific heat of iron is 0.449 J/g·°C. What was the block's initial temperature, in degrees Celsius?",
+    "answer": 61.4,
+    "unit": "°C",
+    "explanation": "Because the block loses heat, q = −2,450 J, so ΔT = q ÷ (mc) = −2,450 J ÷ (150.0 g × 0.449 J/g·°C) = −36.4°C. Then T_initial = T_final − ΔT = 25.0°C + 36.4°C = 61.4°C."
+  },
+  {
+    "id": "workheat-hot-water-bottle-mass",
+    "type": "numeric",
+    "prompt": "A hot-water bottle releases 45.0 kJ of heat as the water in it cools from 65.0°C to 40.0°C. Using 4.184 J/g·°C for the specific heat of water, what mass of water, in grams, does the bottle hold?",
+    "answer": 430,
+    "unit": "g",
+    "explanation": "The water loses heat, so q = −45.0 kJ = −45,000 J, and ΔT = 40.0°C − 65.0°C = −25.0°C. Then m = q ÷ (cΔT) = −45,000 J ÷ (4.184 J/g·°C × −25.0°C) = 430 g."
+  },
+  {
+    "id": "workheat-helium-vs-oxygen",
+    "type": "numeric",
+    "prompt": "How much more heat, in joules, does it take to warm 10.0 g of helium gas by 20.0°C than to warm 10.0 g of oxygen gas by 20.0°C? The specific heats are 5.171 J/g·°C for helium and 0.918 J/g·°C for oxygen.",
+    "answer": 851,
+    "unit": "J",
+    "explanation": "For helium, q = (10.0 g)(5.171 J/g·°C)(20.0°C) = 1,034.2 J; for oxygen, q = (10.0 g)(0.918 J/g·°C)(20.0°C) = 183.6 J. The difference is 850.6 J, about 851 J."
+  },
+  {
+    "id": "workheat-scale-mass-and-delta-t",
+    "type": "numeric",
+    "prompt": "It takes 4,184 J of heat to warm 100.0 g of water by 10.0°C. Using the fact that q is proportional to m × ΔT, how much heat, in joules, does it take to warm 300.0 g of water by 5.00°C?",
+    "answer": 6276,
+    "unit": "J",
+    "explanation": "Because q ∝ m × ΔT, tripling the mass triples q and halving ΔT halves it: 4,184 J × 3 × 1/2 = 6,276 J. The same answer comes from q = (300.0 g)(4.184 J/g·°C)(5.00°C)."
+  },
+  {
+    "id": "workheat-gold-ring-warms",
+    "type": "numeric",
+    "prompt": "A 15.0 g gold ring warms by 12.5°C after you put it on. The specific heat of gold is 0.129 J/g·°C. How much heat does the ring absorb, in joules?",
+    "answer": 24.2,
+    "unit": "J",
+    "explanation": "ΔT is given directly, so q = mcΔT = (15.0 g)(0.129 J/g·°C)(12.5°C) = 24.2 J."
+  },
+  {
+    "id": "workheat-unknown-liquid-specific-heat",
+    "type": "numeric",
+    "prompt": "A 75.0 g sample of a liquid absorbs 3.10 kJ of heat as it warms from 20.0°C to 38.5°C. What is the specific heat of the liquid, in J/g·°C?",
+    "answer": 2.23,
+    "unit": "J/g·°C",
+    "explanation": "Convert the heat to joules, 3.10 kJ = 3,100 J, and find ΔT = 38.5°C − 20.0°C = 18.5°C. Then c = q ÷ (m × ΔT) = 3,100 J ÷ (75.0 g × 18.5°C) = 2.23 J/g·°C."
+  },
+  {
+    "id": "workheat-mercury-kelvin-units",
+    "type": "numeric",
+    "prompt": "The 3.20 g of mercury in a thermometer warms from 20.0°C to 37.0°C. The specific heat of mercury is 0.139 J/g·K. How much heat, in joules, does the mercury absorb?",
+    "answer": 7.56,
+    "unit": "J",
+    "explanation": "A change in temperature has the same value in kelvins as in degrees Celsius, so ΔT = 37.0°C − 20.0°C = 17.0 K. Then q = (3.20 g)(0.139 J/g·K)(17.0 K) = 7.56 J."
+  }
+]

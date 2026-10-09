@@ -124,7 +124,6 @@ export function splitPractice(markdown: string): SectionSegment[] {
         revealLabel:
           type === "Example" ? "Solution" : lettered || marker[1] === "Answers" ? "Answers" : "Answer",
       });
-      /* The book's prose that resumes after an Exercise's answer. */
       if (rest) buffer.push(rest);
     }
     i = end < lines.length && BOX_END.test(lines[end]) ? end + 1 : end;

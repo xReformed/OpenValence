@@ -1,0 +1,434 @@
+[
+  {
+    "id": "idealgas-no-change-in-conditions-needed",
+    "type": "multiple-choice",
+    "prompt": "How is the ideal gas law, PV = nRT, different from Boyle's law, Charles's law, and the combined gas law?",
+    "choices": [
+      {
+        "text": "It relates P, V, n, and T at one time, so no change in conditions is needed.",
+        "correct": true
+      },
+      {
+        "text": "It applies only when a gas changes from one set of conditions to another.",
+        "why": "That describes the earlier gas laws. The ideal gas law relates the properties of a gas at a single set of conditions."
+      },
+      {
+        "text": "It applies only to gases at standard temperature and pressure.",
+        "why": "PV = nRT works at any temperature and pressure; STP is just a set of benchmark conditions for comparing gases."
+      },
+      {
+        "text": "It can be used only after the identity of the gas is known.",
+        "why": "R is the same for all gases, so the ideal gas law works without knowing which gas is present."
+      }
+    ],
+    "explanation": "The earlier gas laws predict how a property changes when the conditions of a gas change. The ideal gas law relates the four properties of a gas at any one time, so if you know any three, you can calculate the fourth."
+  },
+  {
+    "id": "idealgas-four-variables",
+    "type": "multiple-choice",
+    "prompt": "Which four properties of a gas does the ideal gas law, PV = nRT, relate?",
+    "choices": [
+      {
+        "text": "pressure, volume, amount in moles, and temperature in kelvins",
+        "correct": true
+      },
+      {
+        "text": "pressure, volume, mass in grams, and temperature in kelvins",
+        "why": "n is the amount in moles. A mass in grams must first be converted to moles using the molar mass."
+      },
+      {
+        "text": "pressure, volume, density, and temperature in kelvins",
+        "why": "Density is not one of the four independent properties; it can be calculated from the ideal gas law and the molar mass."
+      },
+      {
+        "text": "pressure, volume, amount in moles, and temperature in degrees Celsius",
+        "why": "As in every gas law, T must be an absolute temperature in kelvins, not degrees Celsius."
+      }
+    ],
+    "explanation": "P is pressure, V is volume, n is the amount in moles, and T is the temperature in kelvins; R is the ideal gas law constant. These are the four independent physical properties of a gas."
+  },
+  {
+    "id": "idealgas-choose-r-for-torr",
+    "type": "multiple-choice",
+    "prompt": "A gas sample's pressure is measured in torr and its volume in liters. To substitute these values into PV = nRT directly, without converting any units, which value of the ideal gas law constant R should you use?",
+    "choices": [
+      {
+        "text": "62.36 L·torr/(mol·K)",
+        "correct": true
+      },
+      {
+        "text": "0.08205 L·atm/(mol·K)",
+        "why": "This value requires the pressure in atmospheres, so it could be used only after converting torr to atm. Used with torr, it gives an answer off by a factor of 760."
+      },
+      {
+        "text": "8.314 J/(mol·K)",
+        "why": "This value has units of joules, an energy unit, so it does not match a pressure in torr and a volume in liters."
+      },
+      {
+        "text": "22.4 L/mol",
+        "why": "22.4 L/mol is the molar volume of a gas at STP, not a value of the gas law constant R."
+      }
+    ],
+    "explanation": "The numerical value of R depends on the units used for pressure and volume. With pressure in torr (or mmHg) and volume in liters, use R = 62.36 L·torr/(mol·K) so that the units cancel."
+  },
+  {
+    "id": "idealgas-convert-milliliters-before-using-r",
+    "type": "multiple-choice",
+    "prompt": "A student wants to find n for a gas with P = 0.950 atm, V = 750. mL, and T = 298 K, using R = 0.08205 L·atm/(mol·K). What must she do before substituting into PV = nRT?",
+    "choices": [
+      {
+        "text": "Convert the volume to 0.750 L.",
+        "correct": true
+      },
+      {
+        "text": "Convert the pressure to 722 torr.",
+        "why": "With R = 0.08205 L·atm/(mol·K), the pressure must stay in atmospheres. A pressure in torr would go with R = 62.36 L·torr/(mol·K)."
+      },
+      {
+        "text": "Convert the temperature to 25°C.",
+        "why": "Temperatures in the ideal gas law must be in kelvins, so 298 K is already correct."
+      },
+      {
+        "text": "Convert the volume to 750. cm^3.",
+        "why": "A milliliter and a cubic centimeter are the same size, so this changes nothing. R contains liters, so the volume must be in liters."
+      }
+    ],
+    "explanation": "The units of R are L·atm/(mol·K), so pressure must be in atm, volume in L, and temperature in K for the units to cancel. Only the volume needs converting: 750. mL = 0.750 L."
+  },
+  {
+    "id": "idealgas-double-the-pressure",
+    "type": "multiple-choice",
+    "prompt": "According to PV = nRT, which single change doubles the pressure of a gas sample?",
+    "choices": [
+      {
+        "text": "doubling the moles of gas while V and T stay the same",
+        "correct": true
+      },
+      {
+        "text": "raising the temperature from 20°C to 40°C while n and V stay the same",
+        "why": "Pressure is proportional to absolute temperature. 20°C to 40°C is 293 K to 313 K, an increase of only about 7%."
+      },
+      {
+        "text": "doubling the volume of the gas while n and T stay the same",
+        "why": "P and V are on the same side of PV = nRT, so doubling V while n and T are fixed cuts the pressure in half."
+      },
+      {
+        "text": "halving the moles of gas while V and T stay the same",
+        "why": "Pressure is proportional to n, so halving the moles halves the pressure instead of doubling it."
+      }
+    ],
+    "explanation": "Rearranged, the ideal gas law is P = nRT/V. With V and T fixed, P is proportional to n, so doubling n doubles P; to double P by heating, the temperature in kelvins would have to double."
+  },
+  {
+    "id": "idealgas-stp-conditions",
+    "type": "multiple-choice",
+    "prompt": "What temperature and pressure are used as standard temperature and pressure (STP) in gas calculations?",
+    "choices": [
+      {
+        "text": "273 K (0°C) and 1 atm",
+        "correct": true
+      },
+      {
+        "text": "298 K (25°C) and 1 atm",
+        "why": "298 K is about room temperature. Standard temperature is 0°C, which is 273 K."
+      },
+      {
+        "text": "0 K and 1 atm",
+        "why": "Standard temperature is 0 on the Celsius scale, which is 273 K, not 0 K."
+      },
+      {
+        "text": "273 K (0°C) and 1 torr",
+        "why": "Standard pressure is about 1 atm, which is 760 torr, not 1 torr."
+      }
+    ],
+    "explanation": "STP is defined as a temperature of 273 K (0°C) and a pressure of 100 kPa, which is very close to 1 atm; for simplicity, 1 atm is used as standard pressure."
+  },
+  {
+    "id": "idealgas-molar-volume-meaning",
+    "type": "multiple-choice",
+    "prompt": "What is the molar volume of a gas?",
+    "choices": [
+      {
+        "text": "the volume occupied by 1 mol of the gas",
+        "correct": true
+      },
+      {
+        "text": "the volume occupied by a single molecule of the gas",
+        "why": "Molar volume refers to a whole mole of gas particles, not to one molecule."
+      },
+      {
+        "text": "the mass of 1 L of the gas",
+        "why": "Mass divided by volume is density, not molar volume."
+      },
+      {
+        "text": "the number of moles of the gas in 1 L",
+        "why": "That is moles per liter, the inverse of molar volume, which is liters per mole."
+      }
+    ],
+    "explanation": "The molar volume is the volume of 1 mol of a gas. It depends on temperature and pressure; at STP, the molar volume of any gas is 22.4 L/mol."
+  },
+  {
+    "id": "idealgas-helium-versus-carbon-dioxide",
+    "type": "multiple-choice",
+    "prompt": "One balloon holds 1.00 mol of He (4.00 g/mol) and another holds 1.00 mol of CO2 (44.01 g/mol), both at STP. Which statement is true?",
+    "choices": [
+      {
+        "text": "They have the same volume, but the CO2 has the greater density.",
+        "correct": true
+      },
+      {
+        "text": "They have the same volume and the same density.",
+        "why": "Equal volumes don't mean equal densities: 1.00 mol of CO2 has much more mass than 1.00 mol of He, so the CO2 is denser."
+      },
+      {
+        "text": "The CO2 has the greater volume because its molecules are heavier.",
+        "why": "The ideal gas law does not depend on the identity of the gas. At the same P, T, and n, any gas has the same volume."
+      },
+      {
+        "text": "The He has the greater volume because its atoms are lighter.",
+        "why": "The volume of a gas sample depends only on P, n, and T, not on the mass of its particles, so both volumes are the same."
+      }
+    ],
+    "explanation": "At STP, 1 mol of any gas occupies 22.4 L, so the volumes are equal. Density is molar mass ÷ molar volume, so CO2 (44.01 g ÷ 22.4 L = 1.96 g/L) is much denser than He (4.00 g ÷ 22.4 L = 0.179 g/L)."
+  },
+  {
+    "id": "idealgas-diaphragm-inhaling",
+    "type": "multiple-choice",
+    "prompt": "How does the diaphragm make air flow into the lungs when you breathe in?",
+    "choices": [
+      {
+        "text": "It moves down, lowering the pressure in the lungs slightly below the outside air pressure.",
+        "correct": true
+      },
+      {
+        "text": "It moves up, raising the pressure in the lungs slightly above the outside air pressure.",
+        "why": "Higher pressure inside the lungs forces air out. That is what happens when you breathe out."
+      },
+      {
+        "text": "It moves up, lowering the pressure in the lungs slightly below the outside air pressure.",
+        "why": "When the diaphragm pushes up against the lungs, it raises the pressure inside them and forces air out."
+      },
+      {
+        "text": "It moves down, lowering the pressure in the lungs by about a quarter of an atmosphere.",
+        "why": "The pressure difference that makes us breathe is only 1 or 2 torr, a tiny fraction of an atmosphere."
+      }
+    ],
+    "explanation": "When the diaphragm moves down, the pressure in the lungs drops a little below the outside pressure, and outside air rushes in to fill the lower-pressure volume. The pressure difference is only 1 or 2 torr."
+  },
+  {
+    "id": "idealgas-mistake-celsius-temperature",
+    "type": "multiple-choice",
+    "prompt": "A student finds the volume of 0.500 mol of gas at 1.00 atm and 27°C this way: V = (0.500 mol)(0.08205 L·atm/(mol·K))(27)/(1.00 atm) = 1.11 L. What is the error?",
+    "choices": [
+      {
+        "text": "The temperature must be in kelvins, 300 K, which gives V = 12.3 L.",
+        "correct": true
+      },
+      {
+        "text": "R must be 62.36 L·torr/(mol·K) because the temperature is in °C.",
+        "why": "The choice of R depends on the units of pressure and volume, not temperature, and every value of R uses kelvins."
+      },
+      {
+        "text": "The pressure must first be converted to 760 torr.",
+        "why": "R = 0.08205 L·atm/(mol·K) goes with pressure in atmospheres, so 1.00 atm is already the right unit."
+      },
+      {
+        "text": "The equation should be V = RT/(nP), which gives 4.43 L.",
+        "why": "Solving PV = nRT for V gives V = nRT/P; n belongs in the numerator."
+      }
+    ],
+    "explanation": "Gas laws need absolute temperature: 27 + 273 = 300 K. Then V = (0.500 mol)(0.08205 L·atm/(mol·K))(300 K)/(1.00 atm) = 12.3 L."
+  },
+  {
+    "id": "idealgas-mistake-torr-with-atm-constant",
+    "type": "multiple-choice",
+    "prompt": "To find the moles of gas in a 2.00 L flask at 380 torr and 300 K, a student writes n = (380 torr)(2.00 L)/((0.08205 L·atm/(mol·K))(300 K)) = 30.9 mol. What went wrong?",
+    "choices": [
+      {
+        "text": "R should be 62.36 L·torr/(mol·K) for torr, which gives n = 0.0406 mol.",
+        "correct": true
+      },
+      {
+        "text": "The temperature should be in degrees Celsius, so T should be 27.",
+        "why": "Gas laws always use kelvins, so 300 K is already correct."
+      },
+      {
+        "text": "The volume should be in milliliters, so V should be 2,000.",
+        "why": "R contains liters, so 2.00 L is already the right unit."
+      },
+      {
+        "text": "R should be 8.314 J/(mol·K), because it is the SI value.",
+        "why": "8.314 J/(mol·K) has energy units that don't match torr and liters. Use the value of R whose units match the units of P and V."
+      }
+    ],
+    "explanation": "The units of R must match the units of P and V. With torr, n = (380 torr)(2.00 L)/((62.36 L·torr/(mol·K))(300 K)) = 0.0406 mol; converting 380 torr to 0.500 atm and using 0.08205 gives the same result."
+  },
+  {
+    "id": "idealgas-mistake-molar-volume-at-room-temperature",
+    "type": "multiple-choice",
+    "prompt": "A student says that 2.00 mol of N2 at 25°C and 1.00 atm occupies 2.00 mol × 22.4 L/mol = 44.8 L. Using R = 0.08205 L·atm/(mol·K) where needed, which statement about the student's answer is correct?",
+    "choices": [
+      {
+        "text": "It is wrong: 22.4 L/mol applies only at STP, and at 298 K the volume is 48.9 L.",
+        "correct": true
+      },
+      {
+        "text": "It is correct: 22.4 L/mol applies to any gas at a pressure of 1 atm.",
+        "why": "The molar volume of 22.4 L/mol requires both 1 atm and 273 K. At 298 K, a mole of gas takes up more room."
+      },
+      {
+        "text": "It is wrong: each N2 molecule has two atoms, so the volume is 4.00 × 22.4 L.",
+        "why": "Molar volume is per mole of gas particles. Here the particles are N2 molecules, so the atoms are not counted separately."
+      },
+      {
+        "text": "It is wrong: 22.4 L/mol applies only to monatomic gases such as Ar.",
+        "why": "Molar volume does not depend on the identity of the gas; at STP, 1 mol of any gas occupies 22.4 L."
+      }
+    ],
+    "explanation": "25°C is 298 K, so the gas is not at STP and 22.4 L/mol does not apply. Using the ideal gas law: V = (2.00 mol)(0.08205 L·atm/(mol·K))(298 K)/(1.00 atm) = 48.9 L."
+  },
+  {
+    "id": "idealgas-scuba-tank-pressure",
+    "type": "numeric",
+    "prompt": "A 12.0 L scuba tank holds 95.0 mol of air at 22°C. Using R = 0.08205 L·atm/(mol·K), what is the pressure of the air in the tank, in atmospheres?",
+    "answer": 191.6,
+    "unit": "atm",
+    "explanation": "T = 22 + 273 = 295 K. P = nRT/V = (95.0 mol)(0.08205 L·atm/(mol·K))(295 K)/(12.0 L) = 191.6 atm."
+  },
+  {
+    "id": "idealgas-helium-balloon-moles",
+    "type": "numeric",
+    "prompt": "A helium party balloon has a volume of 5.50 L at 745 torr and 21°C. Using R = 62.36 L·torr/(mol·K), how many moles of helium does the balloon contain?",
+    "answer": 0.223,
+    "unit": "mol",
+    "explanation": "T = 21 + 273 = 294 K. Because the pressure is in torr, use R = 62.36: n = PV/RT = (745 torr)(5.50 L)/((62.36 L·torr/(mol·K))(294 K)) = 0.223 mol."
+  },
+  {
+    "id": "idealgas-neon-temperature-celsius",
+    "type": "numeric",
+    "prompt": "A 0.250 mol sample of neon is sealed in a 5.00 L container, where its pressure is 1.50 atm. Using R = 0.08205 L·atm/(mol·K), what is the temperature of the neon, in degrees Celsius?",
+    "answer": 92.6,
+    "unit": "°C",
+    "explanation": "T = PV/nR = (1.50 atm)(5.00 L)/((0.250 mol)(0.08205 L·atm/(mol·K))) = 365.6 K. In degrees Celsius, 365.6 − 273 = 92.6°C."
+  },
+  {
+    "id": "idealgas-weather-balloon-volume-aloft",
+    "type": "numeric",
+    "prompt": "A weather balloon is filled with 25.0 mol of helium. High in the atmosphere, where the pressure is 0.100 atm and the temperature is −45°C, what is the volume of the balloon, in liters? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 4680.0,
+    "unit": "L",
+    "explanation": "T = −45 + 273 = 228 K. V = nRT/P = (25.0 mol)(0.08205 L·atm/(mol·K))(228 K)/(0.100 atm) = 4.68 × 10^3 L."
+  },
+  {
+    "id": "idealgas-glass-bulb-pressure-mmhg",
+    "type": "numeric",
+    "prompt": "A 250. mL glass bulb contains 1.25 × 10^−3 mol of gas at 22°C. Using R = 62.36 L·mmHg/(mol·K), what is the pressure in the bulb, in mmHg?",
+    "answer": 92.0,
+    "unit": "mmHg",
+    "explanation": "Convert to the units of R: V = 0.250 L and T = 22 + 273 = 295 K. P = nRT/V = (1.25 × 10^−3 mol)(62.36 L·mmHg/(mol·K))(295 K)/(0.250 L) = 92.0 mmHg."
+  },
+  {
+    "id": "idealgas-nitrogen-cylinder-mass",
+    "type": "numeric",
+    "prompt": "A 20.0 L steel cylinder contains N2 (28.02 g/mol) at a pressure of 15.0 atm and a temperature of 25°C. Using R = 0.08205 L·atm/(mol·K), what mass of N2, in grams, is in the cylinder?",
+    "answer": 343.8,
+    "unit": "g",
+    "explanation": "n = PV/RT = (15.0 atm)(20.0 L)/((0.08205 L·atm/(mol·K))(298 K)) = 12.27 mol. Mass = 12.27 mol × 28.02 g/mol = 343.8 g."
+  },
+  {
+    "id": "idealgas-lighter-gas-molar-mass",
+    "type": "numeric",
+    "prompt": "A student collects 0.567 g of the gas from a disposable lighter in a 0.250 L flask at 0.960 atm and 27°C. Using R = 0.08205 L·atm/(mol·K), what is the molar mass of the gas, in g/mol?",
+    "answer": 58.2,
+    "unit": "g/mol",
+    "explanation": "n = PV/RT = (0.960 atm)(0.250 L)/((0.08205 L·atm/(mol·K))(300 K)) = 0.00975 mol. Molar mass = 0.567 g ÷ 0.00975 mol = 58.2 g/mol, which matches butane, C4H10."
+  },
+  {
+    "id": "idealgas-lungs-mass-of-air",
+    "type": "numeric",
+    "prompt": "When fully inflated, an adult's lungs hold 6.00 L of air at body temperature, 37°C, and a pressure of 1.00 atm. Treating air as a gas with a molar mass of 28.9 g/mol and using R = 0.08205 L·atm/(mol·K), what mass of air, in grams, is in the lungs?",
+    "answer": 6.82,
+    "unit": "g",
+    "explanation": "T = 37 + 273 = 310 K, so n = PV/RT = (1.00 atm)(6.00 L)/((0.08205 L·atm/(mol·K))(310 K)) = 0.236 mol. Mass = 0.236 mol × 28.9 g/mol = 6.82 g."
+  },
+  {
+    "id": "idealgas-particles-per-liter-at-stp",
+    "type": "numeric",
+    "prompt": "How many gas particles (atoms or molecules) are in 1.00 L of any gas at STP (273 K and 1 atm)? Use 6.022 × 10^23 particles/mol.",
+    "answer": 2.69e+22,
+    "explanation": "At STP, 1 mol of any gas occupies 22.4 L, so 1.00 L × (1 mol/22.4 L) = 0.0446 mol. Then 0.0446 mol × 6.022 × 10^23 particles/mol = 2.69 × 10^22 particles, whatever the gas."
+  },
+  {
+    "id": "idealgas-methane-flask-mass-at-stp",
+    "type": "numeric",
+    "prompt": "A 5.00 L flask is filled with methane, CH4 (16.04 g/mol), at STP (273 K and 1 atm). What mass of methane, in grams, is in the flask?",
+    "answer": 3.58,
+    "unit": "g",
+    "explanation": "Use the molar volume at STP: 5.00 L × (1 mol/22.4 L) = 0.223 mol CH4. Then 0.223 mol × 16.04 g/mol = 3.58 g."
+  },
+  {
+    "id": "idealgas-chlorine-density-at-stp",
+    "type": "numeric",
+    "prompt": "What is the density of chlorine gas, Cl2 (70.90 g/mol), at STP (273 K and 1 atm), in grams per liter?",
+    "answer": 3.17,
+    "unit": "g/L",
+    "explanation": "Assume 1 mol of Cl2: its mass is 70.90 g, and at STP it occupies 22.4 L. Density = molar mass ÷ molar volume = 70.90 g ÷ 22.4 L = 3.17 g/L."
+  },
+  {
+    "id": "idealgas-hot-air-balloon-density-difference",
+    "type": "numeric",
+    "prompt": "The air inside a hot-air balloon is heated to 100°C, while the air outside is at 20°C; both are at 1.00 atm. Treating air as a gas with a molar mass of 28.9 g/mol and using R = 0.08205 L·atm/(mol·K), how much lower is the density of the hot air than the density of the outside air, in grams per liter?",
+    "answer": 0.258,
+    "unit": "g/L",
+    "tolerance": 0.02,
+    "explanation": "For 1 mol of air, V = RT/P is 24.04 L outside (293 K) and 30.60 L inside (373 K). The densities are 28.9 g ÷ 24.04 L = 1.202 g/L and 28.9 g ÷ 30.60 L = 0.9444 g/L, so the hot air is 1.202 − 0.9444 = 0.258 g/L less dense."
+  },
+  {
+    "id": "idealgas-molar-mass-from-density",
+    "type": "numeric",
+    "prompt": "An unknown gas has a density of 2.41 g/L at 0.950 atm and 35°C. Using R = 0.08205 L·atm/(mol·K), what is the molar mass of the gas, in g/mol?",
+    "answer": 64.1,
+    "unit": "g/mol",
+    "explanation": "The molar volume at these conditions is V = (1 mol)(0.08205 L·atm/(mol·K))(308 K)/(0.950 atm) = 26.6 L. Since density = molar mass ÷ molar volume, molar mass = 2.41 g/L × 26.6 L/mol = 64.1 g/mol (it could be SO2)."
+  },
+  {
+    "id": "idealgas-air-bag-sodium-azide-mass",
+    "type": "numeric",
+    "prompt": "An air bag inflates with N2 made by the reaction 2NaN3(s) → 2Na(s) + 3N2(g). What mass of NaN3 (65.02 g/mol), in grams, is needed to make 60.0 L of N2 at 1.10 atm and 27°C? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 116.0,
+    "unit": "g",
+    "explanation": "Moles of N2: n = PV/RT = (1.10 atm)(60.0 L)/((0.08205 L·atm/(mol·K))(300 K)) = 2.68 mol. Then 2.68 mol N2 × (2 mol NaN3/3 mol N2) × 65.02 g/mol = 116 g NaN3."
+  },
+  {
+    "id": "idealgas-rising-dough-carbon-dioxide-volume",
+    "type": "numeric",
+    "prompt": "Yeast makes bread dough rise by fermenting glucose: C6H12O6(aq) → 2C2H5OH(aq) + 2CO2(g). What volume of CO2, in liters, is produced from 4.50 g of glucose (180.16 g/mol) at 30°C and 1.00 atm? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 1.24,
+    "unit": "L",
+    "explanation": "4.50 g × (1 mol/180.16 g) × (2 mol CO2/1 mol C6H12O6) = 0.0500 mol CO2. V = nRT/P = (0.0500 mol)(0.08205 L·atm/(mol·K))(303 K)/(1.00 atm) = 1.24 L."
+  },
+  {
+    "id": "idealgas-ammonia-from-hydrogen-volume",
+    "type": "numeric",
+    "prompt": "Ammonia is made by the reaction N2(g) + 3H2(g) → 2NH3(g). What mass of NH3 (17.03 g/mol), in grams, can be made from 15.0 L of H2 measured at 1.20 atm and 300 K, if N2 is in excess? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 8.3,
+    "unit": "g",
+    "explanation": "Moles of H2: n = PV/RT = (1.20 atm)(15.0 L)/((0.08205 L·atm/(mol·K))(300 K)) = 0.731 mol. Then 0.731 mol H2 × (2 mol NH3/3 mol H2) × 17.03 g/mol = 8.30 g NH3."
+  },
+  {
+    "id": "idealgas-magnesium-needed-for-hydrogen-at-stp",
+    "type": "numeric",
+    "prompt": "Magnesium reacts with hydrochloric acid: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). What mass of Mg (24.31 g/mol), in grams, must react with excess HCl to produce 1.50 L of H2 at STP (273 K and 1 atm)?",
+    "answer": 1.63,
+    "unit": "g",
+    "explanation": "At STP, use the molar volume: 1.50 L × (1 mol/22.4 L) = 0.0670 mol H2. The equation gives 1 mol Mg per 1 mol H2, so the mass of Mg = 0.0670 mol × 24.31 g/mol = 1.63 g."
+  },
+  {
+    "id": "idealgas-propane-oxygen-volume-at-stp",
+    "type": "numeric",
+    "prompt": "Propane burns according to C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(ℓ). What volume of O2, in liters, is needed to burn 2.50 L of propane, with both gases measured at STP (273 K and 1 atm)?",
+    "answer": 12.5,
+    "unit": "L",
+    "explanation": "2.50 L × (1 mol/22.4 L) × (5 mol O2/1 mol C3H8) × (22.4 L/1 mol) = 12.5 L of O2. Because both gases have the same molar volume at STP, the volumes are in the same 5:1 ratio as the moles."
+  }
+]

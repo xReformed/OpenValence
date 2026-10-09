@@ -18,6 +18,8 @@ Chemistry uses a unit called mole. A mole (mol) is a number of things equal to t
 
 1 mol = 6.02214179 × 10^23 things
 
+[Note: reproduced as printed. Since 2019 the mole has been defined as exactly 6.02214076 × 10^23 particles, no longer by carbon-12; the 6.022 × 10^23 used in calculations is unchanged.]
+
 Understand that a mole means a specific number of things, just like a dozen means a certain number of things—twelve, in the case of a dozen. But a mole is a much larger number of things. These things can be atoms, or molecules, or eggs; however, in chemistry, we usually use the mole to refer to the amounts of atoms or molecules. Although the number of things in a mole is known to eight decimal places, it is usually fine to use only two or three decimal places in calculations. The numerical value of things in a mole is often called _Avogadro's number_ (N_A). _Avogadro's number_ is also known as the _Avogadro constant_, after Amadeo Avogadro, an Italian chemist who first proposed its importance.
 
 ### Example 5.3.1
@@ -49,6 +51,8 @@ Why is the mole unit so important? It represents the link between the microscopi
 For example, we already know that, by definition, a mole of carbon has a mass of exactly 12 g. This means that exactly 12 g of C has 6.022 × 10^23 atoms:
 
 12 g C = 6.022 × 10^23 atoms C
+
+[Note: reproduced as printed, but only carbon-12 has a mass of exactly 12 g per mole. Natural carbon, a mix of isotopes, is 12.011 g/mol, the value this section uses later.]
 
 We can use this equality as a conversion factor between the number of atoms of carbon and the number of grams of carbon. How many grams are there, say, in 1.50 × 10^25 atoms of carbon? This is a one-step conversion:
 

@@ -18,15 +18,17 @@ Boyle's law is written in terms of two of these properties, with the other two b
 
 Gay-Lussac's law relates pressure with absolute temperature. In terms of two sets of data, Gay-Lussac's law is
 
-(P1 / T1) = (P2 / T2)
+(P_{1} / T_{1}) = (P_{2} / T_{2})
 
 at constant V and n.
 
 Note that it has a structure very similar to that of Charles's law, only with different variables—pressure instead of volume. Avogadro's law introduces the last variable for amount. The original statement of Avogadro's law states that equal volumes of different gases at the same temperature and pressure contain the same number of particles of gas. Because the number of particles is related to the number of moles (1 mol = 6.022 × 10^23 particles), Avogadro's law essentially states that equal volumes of different gases, at the same temperature and pressure, contain the same _amount_ (moles, particles) of gas. Put mathematically into a gas law, Avogadro's law is
 
-(V1 / n1) = (V2 / n2)
+(V_{1} / n_{1}) = (V_{2} / n_{2})
 
 at constant V and T.
+
+[Note: reproduced as printed, but V is one of the law's own variables: Avogadro's law holds at constant pressure and temperature, P and T.]
 
 (First announced in 1811, it was Avogadro's proposal that volume is related to the number of particles that eventually led to naming the number of things in a mole as Avogadro's number.) Avogadro's law is useful because for the first time we are seeing amount, in terms of the number of moles, as a variable in a gas law.
 
@@ -38,15 +40,15 @@ A 2.45 L volume of gas contains 4.5 × 10^21 gas particles. How many gas particl
 
 We can set up Avogadro's law as follows:
 
-(2.45 L / 4.5 × 10^21 particles) = (3.87 L / n2)
+(2.45 L / 4.5 × 10^21 particles) = (3.87 L / n_{2})
 
-We algebraically rearrange to solve for n2:
+We algebraically rearrange to solve for n_{2}:
 
-n2 = ((3.87 L)(4.5 × 10^21 particles) / 2.45 L)
+n_{2} = ((3.87 L)(4.5 × 10^21 particles) / 2.45 L)
 
-The L units cancel, so we solve for n2:
+The L units cancel, so we solve for n_{2}:
 
-n2 = 7.1 × 10^21 particles
+n_{2} = 7.1 × 10^21 particles
 
 ### Exercise 6.5.1
 
@@ -60,7 +62,7 @@ The variable _n_ in Avogadro's law can also stand for the number of moles of gas
 
 One thing we notice about all gas laws, collectively, is that volume and pressure are always in the numerator, and temperature is always in the denominator. This suggests that we can propose a gas law that combines pressure, volume, and temperature. This gas law is known as the combined gas law, and its mathematical form is
 
-(P1V1 / T1) = (P2V2 / T2) at constant n
+(P_{1}V1 / T_{1}) = (P_{2}V2 / T_{2}) at constant n
 
 This allows us to follow changes in all three major properties of a gas. Again, the usual warnings apply about how to solve for an unknown algebraically (isolate it on one side of the equation in the numerator), units (they must be the same for the two similar variables of each type), and units of temperature must be in kelvins.
 
@@ -72,21 +74,21 @@ A sample of gas at an initial volume of 8.33 L, an initial pressure of 1.82 atm,
 
 We can use the combined gas law directly; all the units are consistent with each other, and the temperatures are given in Kelvin. Substituting,
 
-((1.82 atm)(8.33 L) / 286 K) = (P2(5.72 L) / 355 K)
+((1.82 atm)(8.33 L) / 286 K) = (P_{2}(5.72 L) / 355 K)
 
-We rearrange this to isolate the P2 variable all by itself. When we do so, certain units cancel:
+We rearrange this to isolate the P_{2} variable all by itself. When we do so, certain units cancel:
 
-((1.82 atm)(8.33 L)(355 K) / (286 K)(5.72 L)) = P2
+((1.82 atm)(8.33 L)(355 K) / (286 K)(5.72 L)) = P_{2}
 
 Multiplying and dividing all the numbers, we get
 
-P2 = 3.29 atm
+P_{2} = 3.29 atm
 
 Ultimately, the pressure increased, which would have been difficult to predict because two properties of the gas were changing.
 
 ### Exercise 6.5.2
 
-If P1 = 662 torr, V1 = 46.7 mL, T1 = 266 K, P2 = 409 torr, and T2 = 371 K, what is V2?
+If P_{1} = 662 torr, V_{1} = 46.7 mL, T_{1} = 266 K, P_{2} = 409 torr, and T_{2} = 371 K, what is V_{2}?
 
 **Answer**
 

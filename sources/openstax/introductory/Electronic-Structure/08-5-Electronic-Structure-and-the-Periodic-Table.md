@@ -81,6 +81,8 @@ They all have a similar electron configuration in their valence shells: a single
 
 The same concept applies to the other columns of the periodic table. Elements in each column have the same valence shell electron configurations, and the elements have some similar chemical properties. This is strictly true for all elements in the s and p blocks. In the d and f blocks, because there are exceptions to the order of filling of subshells with electrons, similar valence shells are not absolute in these blocks. However, many similarities do exist in these blocks, so a similarity in chemical properties is expected.
 
+[Note: reproduced as printed, but helium is an exception: it heads the last column, above Ne, Ar and the other noble gases, yet its configuration is 1s^2, with no p electrons.]
+
 Similarity of valence shell electron configuration implies that we can determine the electron configuration of an atom solely by its position on the periodic table. Consider Se, as shown in Figure 8.5.10. It is in the fourth column of the p block. This means that its electron configuration should end in a p^4 electron configuration. Indeed, the electron configuration of Se is [Ar]4s^2 3d^10 4p^4, as expected.
 
 Figure 8.5.10: Selenium on the Periodic Table
@@ -115,6 +117,8 @@ b. Cl
 **Answer b**
 
 [Ne]3s^2 3p^5
+
+[Note: reproduced as printed; these answers give each atom's whole abbreviated configuration. The valence shell itself holds 4s^2 for Ti (n = 4) and 3s^2 3p^5 for Cl (n = 3), though Ti's 3d^2 electrons also count as valence electrons, because 3d is its last unfilled subshell.]
 
 ### Food and Drink Application: Artificial Colors
 

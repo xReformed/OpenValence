@@ -3,10 +3,6 @@ using Core;
 
 namespace Tests;
 
-/// <summary>
-/// The checks `dotnet run --project ingest -- questions` runs before anything
-/// reaches the database. Each test writes a small questions/ folder of its own.
-/// </summary>
 public sealed class QuestionFilesTests : IDisposable
 {
     private readonly string root = Directory.CreateTempSubdirectory("openvalence-questions-").FullName;
@@ -29,7 +25,7 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Loads_each_question_with_its_book_section_and_position()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Choice}, {Numeric}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Choice}, {Numeric}]");
 
         var questions = QuestionFiles.Load(root);
 
@@ -44,7 +40,7 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Keeps_only_the_type_specific_fields_in_the_body()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Choice}, {Numeric}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Choice}, {Numeric}]");
 
         var questions = QuestionFiles.Load(root);
 
@@ -57,7 +53,7 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Catches_a_misspelled_field()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Numeric.Replace("\"tolerance\"", "\"tolerence\"")}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Numeric.Replace("\"tolerance\"", "\"tolerence\"")}]");
 
         Assert.Contains(Problems(), problem => problem.Contains("unknown field \"tolerence\""));
     }
@@ -67,7 +63,7 @@ public sealed class QuestionFilesTests : IDisposable
     [InlineData("""[{ "text": "A", "correct": true }, { "text": "B", "correct": true }]""", "found 2")]
     public void Needs_exactly_one_correct_choice(string choices, string found)
     {
-        Write("beginning-chemistry/3.4.json", $$"""[{ "id": "pick-one", "type": "multiple-choice", "prompt": "Which?", "explanation": "Because.", "choices": {{choices}} }]""");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $$"""[{ "id": "pick-one", "type": "multiple-choice", "prompt": "Which?", "explanation": "Because.", "choices": {{choices}} }]""");
 
         Assert.Contains(Problems(), problem => problem.Contains($"exactly one choice must be correct ({found})"));
     }
@@ -75,7 +71,7 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Rejects_correct_false_rather_than_leaving_it_out()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Choice.Replace("{ \"text\": \"B\" }", "{ \"text\": \"B\", \"correct\": false }")}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Choice.Replace("{ \"text\": \"B\" }", "{ \"text\": \"B\", \"correct\": false }")}]");
 
         Assert.Contains(Problems(), problem => problem.Contains("\"correct\" can only be true"));
     }
@@ -89,7 +85,7 @@ public sealed class QuestionFilesTests : IDisposable
     [InlineData("\"prompt\": \"How much?\"", "\"prompt\": \" \"", "\"prompt\" is missing")]
     public void Checks_each_field(string field, string replacement, string problem)
     {
-        Write("beginning-chemistry/3.4.json", $"[{Numeric.Replace(field, replacement)}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Numeric.Replace(field, replacement)}]");
 
         Assert.Contains(Problems(), found => found.Contains(problem));
     }
@@ -97,8 +93,8 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Finds_a_duplicate_id_across_files_even_on_a_question_with_other_problems()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Numeric}]");
-        Write("beginning-chemistry/3.5.json", $"[{Numeric.Replace("\"answer\": 2.5", "\"answer\": \"oops\"")}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Numeric}]");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.5.json", $"[{Numeric.Replace("\"answer\": 2.5", "\"answer\": \"oops\"")}]");
 
         var problems = Problems();
 
@@ -112,16 +108,28 @@ public sealed class QuestionFilesTests : IDisposable
     [Fact]
     public void Reports_every_problem_at_once()
     {
-        Write("beginning-chemistry/3.4.json", $"[{Choice.Replace("\"correct\": true, ", "")}, {Numeric.Replace("\"answer\": 2.5", "\"answr\": 2.5")}]");
-        Write("Beginning Chemistry/intro.json", "{}");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", $"[{Choice.Replace("\"correct\": true, ", "")}, {Numeric.Replace("\"answer\": 2.5", "\"answr\": 2.5")}]");
+        Write("Beginning Chemistry/03-atoms/intro.json", "{}");
 
         var problems = Problems();
 
         Assert.Contains(problems, problem => problem.Contains("found 0"));
         Assert.Contains(problems, problem => problem.Contains("unknown field \"answr\""));
-        Assert.Contains(problems, problem => problem.Contains("the folder must be a book key"));
+        Assert.Contains(problems, problem => problem.Contains("the first folder must be a book key"));
         Assert.Contains(problems, problem => problem.Contains("the file name must be a section number"));
         Assert.Contains(problems, problem => problem.Contains("must be a JSON array"));
+    }
+
+    [Fact]
+    public void Needs_each_file_in_its_own_chapters_folder()
+    {
+        Write("beginning-chemistry/3.4.json", $"[{Numeric}]");
+        Write("beginning-chemistry/04-chemical-reactions/3.5.json", $"[{Choice}]");
+
+        var problems = Problems();
+
+        Assert.Contains(problems, problem => problem.StartsWith("beginning-chemistry/3.4.json") && problem.Contains("put it in its book's chapter folder"));
+        Assert.Contains(problems, problem => problem.Contains("section 3.5 belongs in chapter 3's folder, named like 03-"));
     }
 
     [Fact]
@@ -129,7 +137,7 @@ public sealed class QuestionFilesTests : IDisposable
     {
         Assert.Contains(Problems(), problem => problem.Contains("no .json files"));
 
-        Write("beginning-chemistry/3.4.json", "[{ \"id\": ");
+        Write("beginning-chemistry/03-atoms-molecules-and-ions/3.4.json", "[{ \"id\": ");
         Assert.Contains(Problems(), problem => problem.Contains("not valid JSON"));
     }
 

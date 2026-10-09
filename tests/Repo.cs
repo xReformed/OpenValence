@@ -1,6 +1,5 @@
 namespace Tests;
 
-/// <summary>The repository's root folder, for tests that read its real files.</summary>
 internal static class Repo
 {
     public static string Root { get; } = Find();

@@ -1,7 +1,6 @@
 import { useEffect, useRef, type RefObject } from "react";
 
-/* A thin green bar along the top of the page that fills as the reader
-   scrolls. Pages scroll inside their own container, not the window, so it
+/* Pages scroll inside their own container, not the window, so it
    watches that element. Decorative: the scrollbar already says the same. */
 export default function ReadingProgress({
   container,

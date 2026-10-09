@@ -1,6 +1,5 @@
 namespace Ingest;
 
-/// <summary>One source file: its front matter plus its body text.</summary>
 public sealed record SourceDocument(
     string Title,
     string Book,
@@ -11,10 +10,9 @@ public sealed record SourceDocument(
     string Body);
 
 /// <summary>
-/// One retrievable piece of a document. <see cref="EmbeddedText"/> is what
-/// actually gets embedded — it carries the heading path so the vector knows
-/// what topic the text belongs to. <see cref="Content"/> is what gets shown
-/// to the reader as a citation.
+/// <see cref="EmbeddedText"/> is what actually gets embedded — it carries the
+/// heading path so the vector knows what topic the text belongs to.
+/// <see cref="Content"/> is what gets shown to the reader as a citation.
 /// </summary>
 public sealed record Chunk
 {

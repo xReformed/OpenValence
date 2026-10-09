@@ -28,6 +28,8 @@ where the salt is KCl. By counting the number of atoms of each element, we find 
 
 2HCl(aq) + Mg(OH)2(aq) → 2H2O(ℓ) + MgCl2(aq)
 
+[Note: reproduced as printed, but by the solubility rules in section 4.3, Mg(OH)2 is insoluble (Mg^2+ isn't one of the exceptions for hydroxides), so it would be Mg(OH)2(s).]
+
 Here, the salt is MgCl2. (This is one of several reactions that take place when a type of antacid—a base—is used to treat stomach acid.)
 
 ### Example 4.6.1
@@ -52,6 +54,8 @@ First, we will write the chemical equation with the formulas of the reactants an
      2H3PO4(aq) + 3Ca(OH)2(aq) → 6H2O(ℓ) + Ca3(PO4)2(s)
      This chemical equation is now balanced.
 
+[Note: reproduced as printed, but by the solubility rules in section 4.3, Ca(OH)2 is insoluble (Ca^2+ isn't one of the exceptions for hydroxides), so it would be Ca(OH)2(s), as this section writes it further on.]
+
 ### Exercise 4.6.1
 
 Write the neutralization reaction between H2SO4(aq) and Sr(OH)2(aq).
@@ -59,6 +63,8 @@ Write the neutralization reaction between H2SO4(aq) and Sr(OH)2(aq).
 **Answer**
 
 H2SO4(aq) + Sr(OH)2(aq) → 2H2O(ℓ) + SrSO4(aq)
+
+[Note: reproduced as printed, but section 4.3 lists Sr^2+ as an exception for sulfates and writes SrSO4(s) itself, so it would be SrSO4(s).]
 
 Neutralization reactions are one type of chemical reaction that proceeds even if one reactant is not in the aqueous phase. For example, the chemical reaction between HCl(aq) and Fe(OH)3(s) still proceeds according to the equation:
 

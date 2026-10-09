@@ -14,7 +14,6 @@ const LICENSE_URLS: Record<string, string> = {
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
-/* Beside a section: ask about it, practice progress, and the source. */
 export default function SectionSidebar({
   branch,
   section,
@@ -33,12 +32,10 @@ export default function SectionSidebar({
   meta: BookMeta;
   /** OpenValence's practice questions in the set shown: how many, answered, and right. */
   questions: number;
-  /** How many questions the section has in all; the set is drawn from them. */
   poolSize: number;
   answered: number;
   locked: boolean;
   score: number;
-  /** The score the set needs to unlock the next section. */
   passMark: number;
   /** The book's own Examples and Exercises in the section. */
   bookQuestions: number;

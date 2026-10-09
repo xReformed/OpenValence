@@ -61,6 +61,8 @@ H: +1; O: −2; P: +5
 
 All redox reactions occur with a simultaneous change in the oxidation numbers of some atoms. At least two elements must change their oxidation numbers. When an oxidation number of an atom is increased in the course of a redox reaction, that atom is being _oxidized_. When an oxidation number of an atom is decreased in the course of a redox reaction, that atom is being _reduced_. Oxidation and reduction can also be defined in terms of increasing or decreasing oxidation numbers, respectively.
 
+[Note: reproduced as printed, but this isn't always so. In 2H2O2 → 2H2O + O2, oxygen is both oxidized (−1 to 0) and reduced (−1 to −2), and no other element changes. What every redox reaction needs is at least one atom oxidized and one reduced.]
+
 ### Example 4.7.2
 
 Identify what is being oxidized and reduced in this redox reaction.

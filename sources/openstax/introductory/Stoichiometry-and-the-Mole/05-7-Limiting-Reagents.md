@@ -40,6 +40,8 @@ Identifying the limiting reagent, then, is straightforward. However, there are u
 
 0.334mol As2O3 × (197.84 g As2 / 1 mol As2O3) = 66.1 g As2O3
 
+[Note: reproduced as printed; the molar mass's unit should read g As2O3.]
+
 The second question is somewhat more convoluted to answer. First, we must do a mass-mass calculation relating the limiting reagent (here, As) to the other reagent (O2). Once we determine the mass of O2 that reacted, we subtract that from the original amount to determine the amount left over. According to the mass-mass calculation,
 
 50.0g As × (1mol As / 74.92g As) × (3mol O2 / 4mol As) × (32.00 g O2 / 1 mol O2) = 16.0 g O2 reacted
@@ -69,6 +71,8 @@ Because the question asks what mass of magnesium is formed, we can perform two m
 The 0.711 g of Mg is the lesser quantity, so the associated reactant—5.00 g of Rb—is the limiting reagent. To determine how much of the other reactant is left, we have to do one more mass-mass calculation to determine what mass of MgCl2 reacted with the 5.00 g of Rb, and then subtract the amount reacted from the original amount.
 
 5.00g Rb × (1mol Rb / 85.47g Rb) × (1mol MgCl2 / 2mol Rb) × (95.21 g Mg / 1 mol MgCl2) = 2.78 g MgCl2 reacted
+
+[Note: reproduced as printed; the molar mass's unit should read g MgCl2.]
 
 Because we started with 3.44 g of MgCl2, we have
 

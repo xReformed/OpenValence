@@ -14,7 +14,6 @@ import { findFigureImage, findPlaceholderImage } from "../../lib/figureImages";
 import type { BookKey } from "../../lib/types";
 import { FigureWithImage, PlaceholderImage } from "./SectionImages";
 
-/** Run the chemistry-notation renderer over plain-text children. */
 function chem(children: ReactNode): ReactNode {
   return Children.map(children, (child) =>
     typeof child === "string" ? <ChemText text={child} /> : child,
@@ -30,13 +29,11 @@ function textOf(node: ReactNode): string {
   return "";
 }
 
-/* Which section is being rendered, for looking up stand-in images. */
 const FigureSource = createContext<{ book: BookKey; section: string } | undefined>(undefined);
 
 /* Inside an Example or Exercise, whose question may need its images. */
 const InPracticeCard = createContext(false);
 
-/** Tells the section's markdown which section it is, for its images. */
 export function FigureSourceProvider({
   book,
   section,
@@ -191,8 +188,6 @@ const MARKDOWN: Components = {
   ),
 };
 
-/* A run of the section's markdown, in the corpus's conventions. Inside an
-   Example or Exercise, its "[Image: …]" boxes start open (openImages). */
 export default function SectionMarkdown({
   children,
   openImages = false,
