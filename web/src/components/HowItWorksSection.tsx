@@ -13,13 +13,13 @@ const STEPS: {
     icon: ChatIcon,
     title: "You ask",
     body: "Type a chemistry question in plain language, the way you'd ask a tutor.",
-    example: "What's the pH of this buffer?",
+    example: "What's the percent yield?",
   },
   {
     icon: SearchIcon,
     title: "It searches the textbook",
     body: "Your question is compared with every section of the sources, and the closest passages are pulled out.",
-    example: "Closest match: 14.6 Buffers",
+    example: "Closest match: 5.6 Yields",
   },
   {
     icon: CheckIcon,
@@ -31,7 +31,7 @@ const STEPS: {
     icon: DocumentIcon,
     title: "It answers with citations",
     body: "The answer is written only from those passages, and every claim links back to the one it came from.",
-    example: "pH = 4.74 [1]",
+    example: "Percent yield = 73.8% [1]",
   },
 ];
 

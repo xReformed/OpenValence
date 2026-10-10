@@ -1,0 +1,278 @@
+[
+  {
+    "id": "vanthoff-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the van 't Hoff factor, i?",
+    "choices": [
+      { "text": "The number of particles each solute formula unit breaks apart into when it dissolves", "correct": true },
+      { "text": "The number of atoms in the solute's formula", "why": "Atoms in a polyatomic ion stay together. i counts the particles formed on dissolving, not the atoms." },
+      { "text": "The molality of the solution", "why": "Molality is separate; i multiplies it in ΔT = imK." },
+      { "text": "A constant that depends only on the solvent", "why": "Kb and Kf depend on the solvent. i depends on the solute: how many particles it forms." }
+    ],
+    "explanation": "The van 't Hoff factor (i) is the number of particles each solute formula unit breaks apart into when it dissolves. The ideal value equals the number of ions an ionic compound forms."
+  },
+  {
+    "id": "vanthoff-why-ionic-larger",
+    "type": "multiple-choice",
+    "prompt": "Why does an ionic solute have a larger effect on colligative properties than the same molality of a molecular solute?",
+    "choices": [
+      { "text": "It separates into ions, which increases the total number of dissolved particles.", "correct": true },
+      { "text": "Ions are heavier than molecules.", "why": "Colligative properties depend on the number of particles, not their mass." },
+      { "text": "Ions react with the solvent.", "why": "The ions simply separate; it's the larger number of particles that increases the effect." },
+      { "text": "Ionic solutes are always more soluble.", "why": "Solubility doesn't matter here; at the same molality, the ionic solute makes more particles." }
+    ],
+    "explanation": "Ionic solutes separate into ions when they dissolve. This increases the total number of particles dissolved and increases the impact on the colligative property."
+  },
+  {
+    "id": "vanthoff-nacl-equation",
+    "type": "multiple-choice",
+    "prompt": "Which equation shows what happens when NaCl dissolves in water?",
+    "choices": [
+      { "text": "NaCl(s) → Na^+(aq) + Cl^−(aq)", "correct": true },
+      { "text": "NaCl(s) → NaCl(aq)", "why": "Ionic compounds separate into ions when they dissolve, so NaCl gives two particles, not one." },
+      { "text": "NaCl(s) → Na(s) + Cl2(g)", "why": "Dissolving doesn't break NaCl into its elements; it separates the ions." },
+      { "text": "NaCl(s) → Na^2+(aq) + Cl^2−(aq)", "why": "The ions are Na^+ and Cl^−, with charges of 1+ and 1−." }
+    ],
+    "explanation": "When NaCl dissolves, it separates into two ions: NaCl(s) → Na^+(aq) + Cl^−(aq). So a 1 M NaCl solution has a net particle concentration of 2 M."
+  },
+  {
+    "id": "vanthoff-potassium-sulfate",
+    "type": "numeric",
+    "prompt": "What is the ideal van 't Hoff factor for potassium sulfate, K2SO4?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "K2SO4 → 2K^+(aq) + SO4^2−(aq): three ions, so i = 3."
+  },
+  {
+    "id": "vanthoff-sodium-phosphate",
+    "type": "numeric",
+    "prompt": "What is the ideal van 't Hoff factor for sodium phosphate, Na3PO4?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Na3PO4 → 3Na^+(aq) + PO4^3−(aq): four ions, so i = 4."
+  },
+  {
+    "id": "vanthoff-ammonium-sulfate",
+    "type": "numeric",
+    "prompt": "What is the ideal van 't Hoff factor for ammonium sulfate, (NH4)2SO4?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "(NH4)2SO4 → 2NH4^+(aq) + SO4^2−(aq): three ions, so i = 3. Each polyatomic ion counts as one particle."
+  },
+  {
+    "id": "vanthoff-glucose",
+    "type": "numeric",
+    "prompt": "What is the van 't Hoff factor for glucose, C6H12O6, a molecular solute that does not separate into ions?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "A molecular solute like glucose stays as whole molecules when it dissolves, so each formula unit gives one particle: i = 1. This is what the earlier colligative equations tacitly assumed."
+  },
+  {
+    "id": "vanthoff-atoms-not-ions-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student says the van 't Hoff factor of Na2SO4 is 7, because each formula unit contains 7 atoms. What is wrong?",
+    "choices": [
+      { "text": "The sulfate ion stays together as one particle, so Na2SO4 gives 2 Na^+ and 1 SO4^2−: i = 3.", "correct": true },
+      { "text": "i is 2, because there are two kinds of ions.", "why": "i counts every ion formed, not the kinds. Two Na^+ and one SO4^2− make three particles." },
+      { "text": "i is 1, because Na2SO4 is one compound.", "why": "i is 1 only for solutes that don't separate. Ionic Na2SO4 separates into three ions." },
+      { "text": "Nothing is wrong; i equals the number of atoms.", "why": "i is the number of particles formed on dissolving. A polyatomic ion is one particle." }
+    ],
+    "explanation": "The ideal van 't Hoff factor equals the number of ions that form when an ionic compound dissolves. Na2SO4 → 2Na^+(aq) + SO4^2−(aq), so i = 3."
+  },
+  {
+    "id": "vanthoff-ideal-vs-actual",
+    "type": "multiple-choice",
+    "prompt": "At concentrations greater than about 0.001 M, how does the actual van 't Hoff factor of an ionic compound compare with the ideal one?",
+    "choices": [
+      { "text": "It is smaller, because interactions between oppositely charged ions make the net ion concentration less than expected.", "correct": true },
+      { "text": "It is larger, because concentrated solutions form extra ions.", "why": "Ions of opposite charge interact, so the effective number of particles drops, not rises." },
+      { "text": "It is the same at every concentration.", "why": "The ideal factor is usually correct only for dilute solutions, less than 0.001 M." },
+      { "text": "It becomes zero, because the ions recombine completely.", "why": "The ions interact enough to lower the effective particle count, but the solute still forms some ions." }
+    ],
+    "explanation": "The ideal van 't Hoff factor is usually correct only for dilute solutions (less than 0.001 M). At higher concentrations, interactions between ions of opposite charge make the net ion concentration less than expected, so the actual factor is smaller than the ideal one."
+  },
+  {
+    "id": "vanthoff-historical-evidence",
+    "type": "multiple-choice",
+    "prompt": "Historically, what was one main piece of evidence that ionic compounds separate into ions when they dissolve?",
+    "choices": [
+      { "text": "Their solutions showed greater-than-expected effects on colligative properties.", "correct": true },
+      { "text": "Their solutions had lower electrical conductivity than pure water.", "why": "It was increased conductivity, not decreased, that was further evidence for ions." },
+      { "text": "Their solutions changed color.", "why": "The evidence named in the section is the extra colligative effect, along with increased electrical conductivity." },
+      { "text": "Their crystals were shiny and could be drawn into wires.", "why": "Those are properties of metals. The evidence was the greater-than-expected colligative effect." }
+    ],
+    "explanation": "The greater-than-expected impact of ionic solutes on colligative properties was one main piece of evidence for ionic compounds separating into ions; increased electrical conductivity was another."
+  },
+  {
+    "id": "vanthoff-revised-equations",
+    "type": "multiple-choice",
+    "prompt": "Which equation correctly gives the osmotic pressure of a solution of an ionic solute?",
+    "choices": [
+      { "text": "Π = iMRT", "correct": true },
+      { "text": "Π = MRT", "why": "That ignores the extra particles. For an ionic solute, multiply by the van 't Hoff factor, i." },
+      { "text": "Π = MRT / i", "why": "More particles means a larger osmotic pressure, so i multiplies, not divides." },
+      { "text": "Π = imKf", "why": "imKf gives ΔTf, the freezing point depression. Osmotic pressure is iMRT." }
+    ],
+    "explanation": "To include the effect of ionization, each colligative equation gets the factor i: ΔTb = imKb, ΔTf = imKf, and Π = iMRT."
+  },
+  {
+    "id": "vanthoff-raoult-ionic",
+    "type": "multiple-choice",
+    "prompt": "How must Raoult's law be applied for a solution of an ionic solute?",
+    "choices": [
+      { "text": "The mole fraction of the solvent must be recalculated to count all the ions formed on dissolving.", "correct": true },
+      { "text": "Exactly as for a molecular solute, counting formula units", "why": "Each formula unit gives several particles, so counting formula units underestimates the solute particles." },
+      { "text": "By multiplying the vapor pressure of the pure solvent by i", "why": "That would raise the vapor pressure. Instead, the solvent's mole fraction is recalculated with all the ions counted." },
+      { "text": "It can't be used for ionic solutes.", "why": "It can, as long as the mole fraction counts every ion." }
+    ],
+    "explanation": "To calculate vapor pressure depression with Raoult's law, the mole fraction of solvent particles must be recalculated to take into account the increased number of particles formed on ionization."
+  },
+  {
+    "id": "vanthoff-fp-nacl",
+    "type": "numeric",
+    "prompt": "What is the freezing point, in °C, of a 0.500 m solution of NaCl in water? Use the ideal van 't Hoff factor. For water, the freezing point is 0.00°C and Kf = 1.86°C/m.",
+    "answer": -1.86,
+    "unit": "°C",
+    "explanation": "For NaCl, i = 2. ΔTf = imKf = (2)(0.500 m)(1.86°C/m) = 1.86°C, so the freezing point is 0.00°C − 1.86°C = −1.86°C."
+  },
+  {
+    "id": "vanthoff-fp-potassium-sulfate",
+    "type": "numeric",
+    "prompt": "What is the freezing point, in °C, of a 0.150 m solution of K2SO4 in water? Use the ideal van 't Hoff factor. For water, the freezing point is 0.00°C and Kf = 1.86°C/m.",
+    "answer": -0.837,
+    "unit": "°C",
+    "explanation": "For K2SO4, i = 3. ΔTf = (3)(0.150 m)(1.86°C/m) = 0.837°C, so the freezing point is −0.837°C."
+  },
+  {
+    "id": "vanthoff-bp-calcium-chloride",
+    "type": "numeric",
+    "prompt": "What is the boiling point, in °C, of a 0.400 m solution of CaCl2 in water? Use the ideal van 't Hoff factor. For water, the boiling point is 100.00°C and Kb = 0.512°C/m.",
+    "answer": 100.61,
+    "unit": "°C",
+    "tolerance": 0.0002,
+    "explanation": "For CaCl2, i = 3. ΔTb = imKb = (3)(0.400 m)(0.512°C/m) = 0.614°C, so the boiling point is 100.00°C + 0.61°C = 100.61°C."
+  },
+  {
+    "id": "vanthoff-delta-tb-magnesium-chloride",
+    "type": "numeric",
+    "prompt": "By how many degrees Celsius does dissolving MgCl2 to make a 1.00 m solution raise the boiling point of water? Use the ideal van 't Hoff factor. For water, Kb = 0.512°C/m.",
+    "answer": 1.536,
+    "unit": "°C",
+    "explanation": "For MgCl2, i = 3 (one Mg^2+ and two Cl^−). ΔTb = (3)(1.00 m)(0.512°C/m) = 1.54°C."
+  },
+  {
+    "id": "vanthoff-forgot-i-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the freezing point of a 1.00 m CaCl2 solution in water as 0.00°C − (1.00 m)(1.86°C/m) = −1.86°C. What is wrong?",
+    "choices": [
+      { "text": "The van 't Hoff factor was left out; CaCl2 gives 3 ions, so ΔTf = 5.58°C and the freezing point is −5.58°C.", "correct": true },
+      { "text": "The change should have been added, giving +1.86°C.", "why": "Freezing points always decrease, so subtracting was right. The missing piece is i = 3." },
+      { "text": "Kb should have been used instead of Kf.", "why": "Kf is right for freezing. The error is treating CaCl2 as one particle." },
+      { "text": "Nothing is wrong.", "why": "CaCl2 separates into one Ca^2+ and two Cl^− ions, so its effect is three times as large." }
+    ],
+    "explanation": "For an ionic solute, ΔTf = imKf. CaCl2 → Ca^2+(aq) + 2Cl^−(aq), so i = 3: ΔTf = (3)(1.00 m)(1.86°C/m) = 5.58°C, and the freezing point is −5.58°C."
+  },
+  {
+    "id": "vanthoff-osmotic-saline",
+    "type": "numeric",
+    "prompt": "What is the osmotic pressure, in atm, of a 0.150 M NaCl solution at body temperature, 37°C? Use the ideal van 't Hoff factor and R = 0.08205 L·atm/(mol·K).",
+    "answer": 7.631,
+    "unit": "atm",
+    "explanation": "For NaCl, i = 2, and T = 37 + 273 = 310 K. Π = iMRT = (2)(0.150 mol/L)(0.08205 L·atm/(mol·K))(310 K) = 7.63 atm."
+  },
+  {
+    "id": "vanthoff-osmotic-calcium-chloride",
+    "type": "numeric",
+    "prompt": "What is the osmotic pressure, in atm, of a 0.0500 M CaCl2 solution at 25°C? Use the ideal van 't Hoff factor and R = 0.08205 L·atm/(mol·K).",
+    "answer": 3.668,
+    "unit": "atm",
+    "explanation": "For CaCl2, i = 3, and T = 25 + 273 = 298 K. Π = iMRT = (3)(0.0500 mol/L)(0.08205 L·atm/(mol·K))(298 K) = 3.67 atm."
+  },
+  {
+    "id": "vanthoff-isotonic-saline",
+    "type": "numeric",
+    "prompt": "What molarity of NaCl solution has the same osmotic pressure as a 0.300 M glucose solution at the same temperature? Use the ideal van 't Hoff factor.",
+    "answer": 0.15,
+    "unit": "M",
+    "explanation": "Osmotic pressure depends on iM. Glucose: (1)(0.300 M) = 0.300 M of particles. NaCl has i = 2, so it needs 0.300 M / 2 = 0.150 M."
+  },
+  {
+    "id": "vanthoff-particle-concentration",
+    "type": "numeric",
+    "prompt": "What is the total concentration of dissolved particles in a 0.20 M Na3PO4 solution? Use the ideal van 't Hoff factor.",
+    "answer": 0.8,
+    "unit": "M",
+    "explanation": "Na3PO4 → 3Na^+(aq) + PO4^3−(aq), so i = 4 and the particle concentration is 4 × 0.20 M = 0.80 M."
+  },
+  {
+    "id": "vanthoff-compare-to-molecular",
+    "type": "numeric",
+    "prompt": "How many times larger is the freezing point depression of a 0.10 m AlCl3 solution than that of a 0.10 m glucose solution in the same solvent? Use ideal van 't Hoff factors.",
+    "answer": 4,
+    "explanation": "AlCl3 → Al^3+(aq) + 3Cl^−(aq), so i = 4, while glucose has i = 1. At the same molality, the AlCl3 effect is 4 times as large."
+  },
+  {
+    "id": "vanthoff-molality-for-target",
+    "type": "numeric",
+    "prompt": "What molality of NaCl is needed to lower the freezing point of water by 3.72°C? Use the ideal van 't Hoff factor. For water, Kf = 1.86°C/m.",
+    "answer": 1,
+    "unit": "m",
+    "explanation": "ΔTf = imKf, so m = ΔTf / (iKf) = 3.72°C / [(2)(1.86°C/m)] = 1.00 m."
+  },
+  {
+    "id": "vanthoff-lowest-freezing-point",
+    "type": "multiple-choice",
+    "prompt": "Which 0.10 m aqueous solution has the lowest freezing point? Use ideal van 't Hoff factors.",
+    "choices": [
+      { "text": "AlCl3", "correct": true },
+      { "text": "CaCl2", "why": "CaCl2 forms 3 ions (i = 3); AlCl3 forms 4 (i = 4), so it lowers the freezing point more." },
+      { "text": "NaCl", "why": "NaCl forms only 2 ions, so its freezing point depression is half that of AlCl3." },
+      { "text": "Glucose", "why": "Glucose doesn't form ions (i = 1), so it has the smallest effect." }
+    ],
+    "explanation": "At the same molality, the solute that makes the most particles lowers the freezing point most. AlCl3 → Al^3+ + 3Cl^− gives i = 4, the largest of the four."
+  },
+  {
+    "id": "vanthoff-highest-boiling-point",
+    "type": "multiple-choice",
+    "prompt": "Which aqueous solution has the highest boiling point? Use ideal van 't Hoff factors.",
+    "choices": [
+      { "text": "0.10 m CaCl2", "correct": true },
+      { "text": "0.20 m glucose", "why": "Glucose has i = 1, so its particle molality is 0.20 m, less than CaCl2's (3)(0.10) = 0.30 m." },
+      { "text": "0.10 m NaCl", "why": "NaCl's particle molality is (2)(0.10) = 0.20 m, less than CaCl2's 0.30 m." },
+      { "text": "0.25 m sucrose", "why": "Sucrose has i = 1, so 0.25 m of particles, still less than CaCl2's 0.30 m." }
+    ],
+    "explanation": "Compare i × m, the molality of particles: glucose 0.20 m, NaCl 0.20 m, sucrose 0.25 m, and CaCl2 (3)(0.10) = 0.30 m. The most particles gives the largest boiling point elevation."
+  },
+  {
+    "id": "vanthoff-nacl-vs-sugar",
+    "type": "multiple-choice",
+    "prompt": "How does the freezing point depression of a 0.05 m NaCl solution compare with that of a 0.05 m sugar solution? Use ideal van 't Hoff factors.",
+    "choices": [
+      { "text": "It is about twice as large, because NaCl forms two particles per formula unit.", "correct": true },
+      { "text": "They are the same, because the molalities are the same.", "why": "The molalities match, but NaCl makes twice as many particles, and colligative properties depend on particles." },
+      { "text": "It is half as large, because the salt's ions attract each other.", "why": "Ion interactions make the actual effect a bit less than ideal, but NaCl still makes more particles than sugar." },
+      { "text": "It is smaller, because NaCl has a smaller molar mass.", "why": "Molar mass doesn't matter for colligative properties; the number of particles does." }
+    ],
+    "explanation": "A solution of NaCl has twice the particle concentration of its formula units, so its colligative effect is about twice that of a molecular solute at the same molality."
+  },
+  {
+    "id": "vanthoff-pasta-salt",
+    "type": "multiple-choice",
+    "prompt": "Some people say that salting pasta water makes the pasta cook faster by raising the boiling point. What does the section conclude?",
+    "choices": [
+      { "text": "Raising the boiling point by just 1°C would take nearly a cup of salt in 4 L of water, so a few pinches have no significant effect.", "correct": true },
+      { "text": "It's true: a pinch of salt raises the boiling point by several degrees.", "why": "A pinch makes a very dilute solution. Even a 1°C rise would take about 456 g of salt in 4 kg of water." },
+      { "text": "Salt lowers the boiling point, so the pasta actually cooks more slowly.", "why": "A nonvolatile solute raises the boiling point; the rise from a pinch of salt is just negligible." },
+      { "text": "Salt has no effect on boiling point at all, because it is ionic.", "why": "Salt does raise the boiling point, as any solute does; the amount people add is far too small to matter." }
+    ],
+    "explanation": "The section estimates that raising the boiling point of 4 L of water by 1.0°C would take about 456 g of NaCl, nearly a cup. The few pinches people actually add do not significantly raise the boiling point; taste and habit are the more likely reasons."
+  },
+  {
+    "id": "vanthoff-pasta-estimate",
+    "type": "numeric",
+    "prompt": "Ignoring the van 't Hoff factor, as the section's own estimate does, what mass of NaCl, in grams, would raise the boiling point of 2.00 kg of water by 0.50°C? For water, Kb = 0.512°C/m. The molar mass of NaCl is 58.44 g/mol.",
+    "answer": 114.1,
+    "unit": "g",
+    "explanation": "m = ΔTb / Kb = 0.50°C / (0.512°C/m) = 0.977 m. Then 2.00 kg × (0.977 mol / 1 kg) × (58.44 g / 1 mol) = 114 g of NaCl, far more than a few pinches."
+  }
+]

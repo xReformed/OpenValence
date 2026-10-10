@@ -1,0 +1,274 @@
+[
+  {
+    "id": "conc-molarity-definition",
+    "type": "multiple-choice",
+    "prompt": "How is molarity (M) defined?",
+    "choices": [
+      { "text": "Moles of solute divided by liters of solution", "correct": true },
+      { "text": "Moles of solute divided by liters of solvent", "why": "Molarity uses the volume of the whole solution, not of the solvent alone." },
+      { "text": "Moles of solute divided by kilograms of solvent", "why": "That is molality (m), a different unit." },
+      { "text": "Grams of solute divided by liters of solution", "why": "Molarity counts the solute in moles, so grams must be converted to moles first." }
+    ],
+    "explanation": "Molarity is the number of moles of solute divided by the number of liters of solution: M = mol/L."
+  },
+  {
+    "id": "conc-molality-definition",
+    "type": "multiple-choice",
+    "prompt": "How is molality (m) defined?",
+    "choices": [
+      { "text": "Moles of solute divided by kilograms of solvent", "correct": true },
+      { "text": "Moles of solute divided by liters of solution", "why": "That is molarity (M). Molality uses the mass of the solvent." },
+      { "text": "Grams of solute divided by kilograms of solution", "why": "Molality counts the solute in moles and uses kilograms of solvent, not of solution." },
+      { "text": "Mass of solute divided by mass of sample, times 100%", "why": "That is mass percentage (% m/m)." }
+    ],
+    "explanation": "Molality is the number of moles of solute per kilogram of solvent, not per liter of solution. It is manipulated mathematically in the same way as molarity."
+  },
+  {
+    "id": "conc-molarity-from-moles",
+    "type": "numeric",
+    "prompt": "What is the molarity of a solution that has 0.360 mol of KCl dissolved in 0.750 L of solution?",
+    "answer": 0.48,
+    "unit": "M",
+    "explanation": "M = mol / L = 0.360 mol / 0.750 L = 0.480 M KCl."
+  },
+  {
+    "id": "conc-molarity-from-grams",
+    "type": "numeric",
+    "prompt": "What is the molarity of a solution made by dissolving 14.6 g of NaCl to make 0.500 L of solution? The molar mass of NaCl is 58.44 g/mol.",
+    "answer": 0.4997,
+    "unit": "M",
+    "explanation": "First convert grams to moles: 14.6 g × (1 mol / 58.44 g) = 0.250 mol NaCl. Then M = 0.250 mol / 0.500 L = 0.500 M."
+  },
+  {
+    "id": "conc-molarity-from-grams-and-ml",
+    "type": "numeric",
+    "prompt": "What is the molarity of a solution made by dissolving 10.0 g of NaOH to make 250.0 mL of solution? The molar mass of NaOH is 40.00 g/mol.",
+    "answer": 1,
+    "unit": "M",
+    "explanation": "10.0 g × (1 mol / 40.00 g) = 0.250 mol NaOH, and 250.0 mL = 0.2500 L, so M = 0.250 mol / 0.2500 L = 1.00 M."
+  },
+  {
+    "id": "conc-moles-from-liters",
+    "type": "numeric",
+    "prompt": "How many moles of solute are present in 0.350 L of a 0.200 M glucose solution?",
+    "answer": 0.07,
+    "unit": "mol",
+    "explanation": "Rearrange the definition of molarity: mol = M × L = (0.200 mol/L)(0.350 L) = 0.0700 mol."
+  },
+  {
+    "id": "conc-moles-from-ml",
+    "type": "numeric",
+    "prompt": "How many moles of solute are present in 75.0 mL of a 1.20 M HNO3 solution?",
+    "answer": 0.09,
+    "unit": "mol",
+    "explanation": "75.0 mL = 0.0750 L, so mol = (1.20 mol/L)(0.0750 L) = 0.0900 mol HNO3."
+  },
+  {
+    "id": "conc-volume-for-moles",
+    "type": "numeric",
+    "prompt": "What volume, in liters, of a 0.400 M MgCl2 solution contains 0.150 mol of solute?",
+    "answer": 0.375,
+    "unit": "L",
+    "explanation": "Solve the definition of molarity for liters: L = mol / M = 0.150 mol / (0.400 mol/L) = 0.375 L."
+  },
+  {
+    "id": "conc-volume-in-ml",
+    "type": "numeric",
+    "prompt": "What volume, in milliliters, of a 1.50 M KNO3 solution contains 0.0450 mol of solute?",
+    "answer": 30,
+    "unit": "mL",
+    "explanation": "L = 0.0450 mol / (1.50 mol/L) = 0.0300 L, which is 30.0 mL."
+  },
+  {
+    "id": "conc-molality-from-moles",
+    "type": "numeric",
+    "prompt": "What is the molality of a solution made by dissolving 0.500 mol of glucose in 0.250 kg of water?",
+    "answer": 2,
+    "unit": "m",
+    "explanation": "molality = mol solute / kg solvent = 0.500 mol / 0.250 kg = 2.00 m."
+  },
+  {
+    "id": "conc-molality-from-grams",
+    "type": "numeric",
+    "prompt": "What is the molality of a solution made by dissolving 9.00 g of glucose, C6H12O6, in 500.0 g of water? The molar mass of glucose is 180.16 g/mol.",
+    "answer": 0.09991,
+    "unit": "m",
+    "explanation": "9.00 g × (1 mol / 180.16 g) = 0.0500 mol glucose, and 500.0 g = 0.5000 kg of water, so molality = 0.0500 mol / 0.5000 kg = 0.0999 m."
+  },
+  {
+    "id": "conc-mass-percent-basic",
+    "type": "numeric",
+    "prompt": "A 150.0 g sample of a sugar solution contains 12.0 g of sugar. What is the mass percentage of sugar in the solution?",
+    "answer": 8,
+    "unit": "%",
+    "explanation": "% m/m = (mass of solute / mass of entire sample) × 100% = (12.0 g / 150.0 g) × 100% = 8.00%."
+  },
+  {
+    "id": "conc-mass-percent-solute-plus-solvent",
+    "type": "numeric",
+    "prompt": "A solution is made by dissolving 5.00 g of NaCl in 95.0 g of water. What is the mass percentage of NaCl in the solution?",
+    "answer": 5,
+    "unit": "%",
+    "explanation": "The mass of the entire sample is 5.00 g + 95.0 g = 100.0 g, so % m/m = (5.00 g / 100.0 g) × 100% = 5.00%."
+  },
+  {
+    "id": "conc-mass-percent-denominator-mistake",
+    "type": "multiple-choice",
+    "prompt": "A solution is made by dissolving 5.00 g of NaCl in 95.0 g of water. A student calculates its mass percentage as (5.00 g / 95.0 g) × 100% = 5.26%. What is wrong?",
+    "choices": [
+      { "text": "The denominator must be the mass of the entire sample, 100.0 g, so the answer is 5.00%.", "correct": true },
+      { "text": "The masses must be converted to moles first.", "why": "Mass percentage is a ratio of masses, so grams are fine. The error is dividing by the solvent's mass instead of the whole sample's." },
+      { "text": "The answer should be multiplied by 1000, not 100.", "why": "Multiplying by 1000 gives parts per thousand. For a percentage, ×100% is right." },
+      { "text": "Nothing is wrong; 5.26% is correct.", "why": "% m/m divides by the mass of the entire sample (solute plus solvent), which is 100.0 g here." }
+    ],
+    "explanation": "Mass percentage is (mass of solute / mass of entire sample) × 100%. The entire sample is the solute and the solvent together: 5.00 g + 95.0 g = 100.0 g, giving 5.00%."
+  },
+  {
+    "id": "conc-mass-from-percent",
+    "type": "numeric",
+    "prompt": "A skin cream is labeled 5.0% m/m urea. How many grams of urea are in 250 g of the cream?",
+    "answer": 12.5,
+    "unit": "g",
+    "explanation": "5.0% m/m means 5.0 g of urea per 100 g of product: 250 g × (5.0 g urea / 100 g) = 12.5 g urea."
+  },
+  {
+    "id": "conc-ppth",
+    "type": "numeric",
+    "prompt": "A 150.0 g sample of solution contains 0.450 g of a solute. What is the solute's concentration in parts per thousand (ppth)?",
+    "answer": 3,
+    "unit": "ppth",
+    "explanation": "ppth = (mass of solute / mass of sample) × 1000 = (0.450 g / 150.0 g) × 1000 = 3.00 ppth."
+  },
+  {
+    "id": "conc-ppm",
+    "type": "numeric",
+    "prompt": "A 500.0 g water sample contains 2.50 mg of lead. What is the lead concentration in parts per million (ppm)?",
+    "answer": 5,
+    "unit": "ppm",
+    "explanation": "Both masses must be in the same unit: 2.50 mg = 0.00250 g. ppm = (0.00250 g / 500.0 g) × 1,000,000 = 5.00 ppm."
+  },
+  {
+    "id": "conc-ppb",
+    "type": "numeric",
+    "prompt": "A 1500 g water sample contains 3.0 × 10^−6 g of arsenic. What is the arsenic concentration in parts per billion (ppb)?",
+    "answer": 2,
+    "unit": "ppb",
+    "explanation": "ppb = (mass of solute / mass of sample) × 1,000,000,000 = (3.0 × 10^−6 g / 1500 g) × 10^9 = 2.0 ppb."
+  },
+  {
+    "id": "conc-ppm-mass-of-solute",
+    "type": "numeric",
+    "prompt": "Drinking water contains 2.0 ppm of fluoride ion. What mass of fluoride ion, in milligrams, is in 500.0 mL of this water? Its density is 1.00 g/mL.",
+    "answer": 1,
+    "unit": "mg",
+    "explanation": "500.0 mL × 1.00 g/mL = 500.0 g of water. Rearranging the ppm definition: mass of solute = (2.0 × 500.0 g) / 1,000,000 = 0.0010 g = 1.0 mg."
+  },
+  {
+    "id": "conc-same-mass-units",
+    "type": "multiple-choice",
+    "prompt": "When calculating a concentration in ppm, what must be true of the two masses?",
+    "choices": [
+      { "text": "They must be expressed in the same unit of mass.", "correct": true },
+      { "text": "The solute must be in milligrams and the sample in kilograms.", "why": "Any mass unit works as long as both are the same; the definition is a ratio of masses times 1,000,000." },
+      { "text": "They must be converted to moles first.", "why": "Parts per million is a ratio of masses, not moles." },
+      { "text": "Nothing; the units cancel whatever they are.", "why": "Units cancel only if they are the same. Mixing mg with g gives an answer off by a factor of 1000." }
+    ],
+    "explanation": "For ppth, ppm, and ppb, the two masses must be expressed in the same unit of mass, so conversions may be necessary."
+  },
+  {
+    "id": "conc-lowest-concentration-unit",
+    "type": "multiple-choice",
+    "prompt": "Which of these units is used for the lowest concentrations?",
+    "choices": [
+      { "text": "Parts per billion (ppb)", "correct": true },
+      { "text": "Parts per thousand (ppth)", "why": "ppth is used for the highest concentrations of the three; each step to ppm and ppb is for lower concentrations." },
+      { "text": "Parts per million (ppm)", "why": "ppm is for low concentrations, but ppb is for even lower ones." },
+      { "text": "Mass percentage", "why": "Mass percentage is parts per hundred, suited to much higher concentrations." }
+    ],
+    "explanation": "Parts per thousand, parts per million, and parts per billion are used for progressively lower and lower concentrations."
+  },
+  {
+    "id": "conc-quantitative-unit",
+    "type": "multiple-choice",
+    "prompt": "Which of these is a quantitative unit of concentration?",
+    "choices": [
+      { "text": "Molality", "correct": true },
+      { "text": "Dilute", "why": "Dilute is a qualitative term: it says there is little solute, but not how much." },
+      { "text": "Saturated", "why": "Saturated is qualitative: each solute has its own solubility, so it doesn't give an amount." },
+      { "text": "Concentrated", "why": "Concentrated is qualitative: it says there is a lot of solute, but not exactly how much." }
+    ],
+    "explanation": "Quantitative units of concentration include molarity, molality, mass percentage, ppth, ppm, and ppb. Dilute, concentrated, and saturated are qualitative terms."
+  },
+  {
+    "id": "conc-grams-not-moles-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student dissolves 20.0 g of NaOH to make 0.500 L of solution and reports the concentration as 20.0 g / 0.500 L = 40.0 M. What is wrong?",
+    "choices": [
+      { "text": "The mass must be converted to moles first: 20.0 g is 0.500 mol of NaOH, so the solution is 1.00 M.", "correct": true },
+      { "text": "The volume should be in milliliters: 20.0 g / 500 mL = 0.0400 M.", "why": "Molarity uses liters, so 0.500 L is right. The error is using grams instead of moles." },
+      { "text": "The answer should be 0.500 L / 20.0 g = 0.0250 M.", "why": "Molarity is solute divided by volume, not the other way around, and the solute must be in moles." },
+      { "text": "Nothing is wrong; 40.0 M is correct.", "why": "Molarity is moles per liter. 20.0 g of NaOH (40.00 g/mol) is 0.500 mol, giving 1.00 M." }
+    ],
+    "explanation": "If the solute is given in mass units, you must convert to moles before using the definition of molarity: 20.0 g × (1 mol / 40.00 g) = 0.500 mol, and 0.500 mol / 0.500 L = 1.00 M."
+  },
+  {
+    "id": "conc-milliliters-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the molarity of a solution with 0.100 mol of solute in 250 mL of solution as 0.100 / 250 = 0.000400 M. What is wrong?",
+    "choices": [
+      { "text": "The volume must be in liters: 0.100 mol / 0.250 L = 0.400 M.", "correct": true },
+      { "text": "The moles should be divided by the mass of the solvent.", "why": "That would be molality. For molarity, divide moles by liters of solution." },
+      { "text": "The volume should be divided by the moles.", "why": "Molarity is moles divided by liters. The error is using milliliters." },
+      { "text": "Nothing is wrong.", "why": "Molarity is moles per liter, so 250 mL must first become 0.250 L." }
+    ],
+    "explanation": "Molarity is moles per liter, so both quantities must be in the proper units: 250 mL × (1 L / 1000 mL) = 0.250 L, and 0.100 mol / 0.250 L = 0.400 M."
+  },
+  {
+    "id": "conc-nacl-ion-description",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes a 1 M NaCl solution in terms of its ions?",
+    "choices": [
+      { "text": "It is 1 M Na^+(aq) and 1 M Cl^−(aq).", "correct": true },
+      { "text": "It is 0.5 M Na^+(aq) and 0.5 M Cl^−(aq).", "why": "Each formula unit of NaCl gives one Na^+ ion and one Cl^− ion, so each ion is 1 M, not half." },
+      { "text": "It is 2 M Na^+(aq) and 2 M Cl^−(aq).", "why": "There is one of each ion per formula unit, so each is 1 M. The total ion concentration is 2 M." },
+      { "text": "It contains no ions, only NaCl molecules.", "why": "The ions of an ionic compound go their own way when it dissolves." }
+    ],
+    "explanation": "Because the ions of an ionic compound go their own way when it dissolves, a 1 M NaCl solution can also be described as 1 M Na^+(aq) and 1 M Cl^−(aq), one of each ion per formula unit."
+  },
+  {
+    "id": "conc-chloride-in-cacl2",
+    "type": "numeric",
+    "prompt": "What is the concentration of Cl^−(aq) ions in a 0.25 M CaCl2 solution?",
+    "answer": 0.5,
+    "unit": "M",
+    "explanation": "Each formula unit of CaCl2 gives two Cl^− ions, so [Cl^−] = 2 × 0.25 M = 0.50 M."
+  },
+  {
+    "id": "conc-sulfate-in-aluminum-sulfate",
+    "type": "numeric",
+    "prompt": "What is the concentration of SO4^2−(aq) ions in a 0.10 M Al2(SO4)3 solution?",
+    "answer": 0.3,
+    "unit": "M",
+    "explanation": "Each formula unit of Al2(SO4)3 gives three SO4^2− ions, so [SO4^2−] = 3 × 0.10 M = 0.30 M."
+  },
+  {
+    "id": "conc-total-ions-sodium-sulfate",
+    "type": "numeric",
+    "prompt": "What is the total ion concentration of a 0.30 M Na2SO4 solution?",
+    "answer": 0.9,
+    "unit": "M",
+    "explanation": "Each Na2SO4 gives 2 Na^+ ions and 1 SO4^2− ion: [Na^+] = 0.60 M and [SO4^2−] = 0.30 M. The total ion concentration is their sum, 0.90 M."
+  },
+  {
+    "id": "conc-chloride-in-mgcl2-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student says that a 0.50 M MgCl2 solution has a Cl^− concentration of 0.50 M. What is wrong?",
+    "choices": [
+      { "text": "Each formula unit gives two Cl^− ions, so the Cl^− concentration is 1.0 M.", "correct": true },
+      { "text": "The Cl^− concentration is 0.25 M, because the chloride is shared between two ions.", "why": "Each MgCl2 releases two separate Cl^− ions, so there are twice as many Cl^− ions as formula units, not half as many." },
+      { "text": "The Cl^− concentration is 1.5 M, because there are three ions.", "why": "There are three ions in all (1 Mg^2+ and 2 Cl^−), but only two of them are Cl^−." },
+      { "text": "Nothing is wrong; ions have the same concentration as the salt.", "why": "That's true only when there is one of that ion per formula unit, as for Na^+ in NaCl." }
+    ],
+    "explanation": "The concentration of an ion can differ from that of the salt. MgCl2 has two Cl^− ions per formula unit, so a 0.50 M MgCl2 solution is 1.0 M in Cl^−(aq)."
+  }
+]

@@ -79,7 +79,7 @@ Some very important biological materials are polymers. Of the three major food g
 
 Proteins are formed when hundreds or even thousands of amino acids form amide bonds to make polymers. Proteins play a crucial role in living organisms.
 
-A carbohydrate is a compound that has the general formula Cn(H2O)n. Many carbohydrates are relatively small molecules, such as glucose:
+A carbohydrate is a compound that has the general formula C_n(H2O)n. Many carbohydrates are relatively small molecules, such as glucose:
 
 [Image not described in source]
 

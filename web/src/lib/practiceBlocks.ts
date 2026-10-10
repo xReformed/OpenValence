@@ -4,14 +4,15 @@ import type { SectionSegment } from "./types";
    book's Examples and Exercises can be shown as "answer first, then reveal".
    Both textbooks write them the same way:
 
-     ### Exercise 10.3.1            (or ### Example 8.4.1: Carbon Atoms)
+     ### Exercise 10.3.1            (or ### Example 8.4.1: Carbon Atoms,
+                                     ### Worked Example 1.12.1: …)
      <the question>
      **Answer**                     (or **Solution**, **Answers**, **Answer a** …)
      <the book's answer or worked solution>
 
    A block without one of those markers is left as ordinary text. */
 
-const START = /^(#{3,4}) (Example|Exercise)\b\s*(.*)$/;
+const START = /^(#{3,4}) (?:Worked )?(Example|Exercise)\b\s*(.*)$/;
 const MARKER = /^\*\*_?(Solutions?|Answers?)_?( [A-Za-z0-9]+)?\*\*\s*$/;
 const HEADING = /^(#{2,4}) /;
 /* Written by the transcription where an Example's box ends and the book's
@@ -33,7 +34,7 @@ function isProse(paragraph: string): boolean {
 /* In the original pages an Exercise is a boxed section; in markdown the box is
    gone and the book's prose resumes right after the answer. So the answer is
    its first paragraph, plus whatever follows that still looks like answer:
-   lettered parts ("**Answer b**" and what comes after), transcription notes,
+   lettered parts ("**Answer b**" or "(b) …", and what comes after), transcription notes,
    whatever an answer line ending in ":" introduces ("The completed ICE chart
    is as follows:" and its table), and short non-prose lines — stopping at the
    first prose sentence, figure, table, list, or bold sub-heading. Checked
@@ -47,7 +48,8 @@ function splitAnswer(paragraphs: string[]): [answer: string[], rest: string[]] {
     /* A phrase, not a Lewis diagram whose dots are colons (":Är:"). */
     const introduced =
       n > 0 && /:\s*$/.test(paragraphs[n - 1]) && (paragraphs[n - 1].match(/[A-Za-z]{2,}/g)?.length ?? 0) >= 3;
-    if (n === 0 || afterMarker || introduced || MARKER.test(paragraph) || paragraph.startsWith("[Note")) continue;
+    const part = /^\([a-z]\) /.test(paragraph);
+    if (n === 0 || afterMarker || introduced || part || MARKER.test(paragraph) || paragraph.startsWith("[Note")) continue;
     if (
       /^(Figure |\||#|- )/.test(paragraph) ||
       /^\*\*[^*]+\*\*$/.test(paragraph.trim()) ||

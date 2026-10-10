@@ -61,9 +61,9 @@ It is the "ideal" van 't Hoff factor because this is what we expect from the ion
 
 Revised equations to calculate the effect of ionization are then easily produced:
 
-ΔTb = imKb
+ΔT_b = imK_b
 
-ΔTf = imKg
+ΔT_f = imK_g
 
 [Note: reproduced as printed; Kg should be Kf, the freezing point depression constant.]
 

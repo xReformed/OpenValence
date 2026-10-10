@@ -1,0 +1,305 @@
+[
+  {
+    "id": "ka-definition",
+    "type": "multiple-choice",
+    "prompt": "What is an acid dissociation constant, Ka?",
+    "choices": [
+      { "text": "The equilibrium constant for the dissociation of a weak acid into ions", "correct": true },
+      { "text": "The concentration of a strong acid", "why": "Strong acids ionize 100%, so they don't have an equilibrium to describe. Ka is for weak acids." },
+      { "text": "The pH of an acid solution", "why": "Ka is an equilibrium constant, not a pH, though it can be used to find the pH." },
+      { "text": "The equilibrium constant for a weak base accepting a proton", "why": "That is Kb. The a subscript means the substance is acting as an acid." }
+    ],
+    "explanation": "An acid dissociation constant, Ka, is the equilibrium constant for the dissociation of a weak acid into ions. The a subscript implies the substance is acting as an acid. Ka values are just equilibrium constants."
+  },
+  {
+    "id": "ka-strongest-weak-acid",
+    "type": "multiple-choice",
+    "prompt": "Which of these weak acids is the strongest? Ka values: HC2H3O2, 1.8 × 10^−5; HClO2, 1.1 × 10^−2; HCN, 6.2 × 10^−10; HF, 6.3 × 10^−4.",
+    "choices": [
+      { "text": "HClO2", "correct": true },
+      { "text": "HCN", "why": "HCN has the smallest Ka, so it is the weakest acid of the four." },
+      { "text": "HF", "why": "HF's Ka (6.3 × 10^−4) is smaller than HClO2's (1.1 × 10^−2)." },
+      { "text": "HC2H3O2", "why": "Acetic acid's Ka (1.8 × 10^−5) is much smaller than HClO2's." }
+    ],
+    "explanation": "The larger Ka is, the stronger the acid. HClO2 has the largest Ka of these, 1.1 × 10^−2."
+  },
+  {
+    "id": "ka-weakest-acid",
+    "type": "multiple-choice",
+    "prompt": "Which of these acids ionizes the least? Ka values: HNO2, 5.6 × 10^−4; H3PO4, 7.5 × 10^−3; HCN, 6.2 × 10^−10; HC2H3O2, 1.8 × 10^−5.",
+    "choices": [
+      { "text": "HCN", "correct": true },
+      { "text": "H3PO4", "why": "H3PO4 has the largest Ka here, so it ionizes the most." },
+      { "text": "HNO2", "why": "HNO2's Ka is much larger than HCN's." },
+      { "text": "HC2H3O2", "why": "Acetic acid ionizes only a little, but HCN, with a Ka of 6.2 × 10^−10, ionizes far less." }
+    ],
+    "explanation": "The smaller the Ka, the weaker the acid and the less it ionizes. HCN has by far the smallest Ka."
+  },
+  {
+    "id": "ka-expression-nitrous",
+    "type": "multiple-choice",
+    "prompt": "What is the Ka expression for nitrous acid, HNO2(aq) ⇌ H^+(aq) + NO2^−(aq)?",
+    "choices": [
+      { "text": "Ka = [H^+][NO2^−]/[HNO2]", "correct": true },
+      { "text": "Ka = [HNO2]/([H^+][NO2^−])", "why": "That is reactants over products. Ka, like any equilibrium constant, is products over reactants." },
+      { "text": "Ka = [H^+][NO2^−]", "why": "HNO2 is dissolved, not a pure solid or liquid, so its concentration appears in the denominator." },
+      { "text": "Ka = [H^+] + [NO2^−] − [HNO2]", "why": "Equilibrium constants multiply and divide concentrations; they don't add them." }
+    ],
+    "explanation": "Ka is written like any other equilibrium constant: concentrations of products over concentrations of reactants. The weak acid is dissolved, so it appears in the denominator."
+  },
+  {
+    "id": "ka-polyprotic",
+    "type": "multiple-choice",
+    "prompt": "How do polyprotic acids such as H3PO4 lose their H^+ ions?",
+    "choices": [
+      { "text": "One at a time, in sequence, each step with its own characteristic Ka", "correct": true },
+      { "text": "All at once, with a single Ka", "why": "Each H^+ comes off in its own step: H3PO4 → H2PO4^− first, with Ka = 7.5 × 10^−3, and then H2PO4^− → HPO4^2−." },
+      { "text": "They don't; polyprotic acids are strong acids", "why": "H3PO4 is a weak acid; it loses its protons in steps, each with an equilibrium constant." },
+      { "text": "Two at a time", "why": "Each step removes one H^+ ion, with its own Ka." }
+    ],
+    "explanation": "For polyprotic acids, each H^+ ion comes off in sequence, and each one that ionizes does so with its own characteristic Ka. The acid dissociation constant refers to one H^+ coming off."
+  },
+  {
+    "id": "ka-phosphoric-first-step",
+    "type": "multiple-choice",
+    "prompt": "The Ka of 7.5 × 10^−3 for H3PO4 refers to which equilibrium?",
+    "choices": [
+      { "text": "H3PO4(aq) ⇌ H^+(aq) + H2PO4^−(aq)", "correct": true },
+      { "text": "H3PO4(aq) ⇌ 3H^+(aq) + PO4^3−(aq)", "why": "An acid dissociation constant refers to one H^+ ion coming off, not all three." },
+      { "text": "H2PO4^−(aq) ⇌ H^+(aq) + HPO4^2−(aq)", "why": "That second step has its own, much smaller Ka: 6.2 × 10^−8." },
+      { "text": "H3PO4(aq) ⇌ H2(g) + PO4(aq)", "why": "Acid dissociation releases H^+ ions, not H2 gas." }
+    ],
+    "explanation": "The acid dissociation constant refers to one H^+ ion coming off the initial reactant: H3PO4 ⇌ H^+ + H2PO4^−, Ka = 7.5 × 10^−3. The next step, from H2PO4^−, has Ka = 6.2 × 10^−8."
+  },
+  {
+    "id": "ka-small-x-approximation",
+    "type": "multiple-choice",
+    "prompt": "When finding [H^+] in a weak acid solution, why can (c − x) in the denominator often be replaced by c, the initial acid concentration?",
+    "choices": [
+      { "text": "Ka is small, so the acid ionizes very little and x is tiny compared with c.", "correct": true },
+      { "text": "Because x is always zero for weak acids.", "why": "x isn't zero, or there would be no H^+. It's just small compared with c." },
+      { "text": "Because strong acids work that way.", "why": "Strong acids ionize 100%; the approximation works because weak acids with small Ka ionize so little." },
+      { "text": "Because the denominator doesn't matter in Ka.", "why": "The denominator matters; the approximation works only because x is small next to c." }
+    ],
+    "explanation": "If Ka is much smaller than the acid's concentration, the acid ionizes very little, so x is small and (c − x) ≈ c. This introduces very little error and avoids solving a quadratic equation."
+  },
+  {
+    "id": "ka-nitrous-hydrogen-ion",
+    "type": "numeric",
+    "prompt": "What is [H^+] in a 0.50 M solution of HNO2? Ka = 5.6 × 10^−4. Use the approximation (0.50 − x) ≈ 0.50.",
+    "answer": 0.01673,
+    "unit": "M",
+    "explanation": "x^2/0.50 = 5.6 × 10^−4, so x^2 = 2.8 × 10^−4 and x = [H^+] = 0.0167 M = 1.7 × 10^−2 M."
+  },
+  {
+    "id": "ka-nitrous-ph",
+    "type": "numeric",
+    "prompt": "What is the pH of a 0.50 M solution of HNO2? Ka = 5.6 × 10^−4. Use the approximation (0.50 − x) ≈ 0.50.",
+    "answer": 1.776,
+    "tolerance": 0.005,
+    "explanation": "x = √(0.50 × 5.6 × 10^−4) = √(2.8 × 10^−4) = 0.0167 M = [H^+]. pH = −log(0.0167) = 1.78."
+  },
+  {
+    "id": "ka-acetic-ph",
+    "type": "numeric",
+    "prompt": "What is the pH of a 0.10 M solution of HC2H3O2? Ka = 1.8 × 10^−5. Use the approximation (0.10 − x) ≈ 0.10.",
+    "answer": 2.872,
+    "tolerance": 0.005,
+    "explanation": "x^2/0.10 = 1.8 × 10^−5, so x^2 = 1.8 × 10^−6 and x = [H^+] = 1.3 × 10^−3 M. pH = −log(1.34 × 10^−3) = 2.87."
+  },
+  {
+    "id": "ka-cyanide-hydrogen-ion",
+    "type": "numeric",
+    "prompt": "What is [H^+] in a 0.20 M solution of HCN? Ka = 6.2 × 10^−10. Use the approximation (0.20 − x) ≈ 0.20.",
+    "answer": 1.114e-5,
+    "unit": "M",
+    "explanation": "x^2/0.20 = 6.2 × 10^−10, so x^2 = 0.20 × 6.2 × 10^−10 = 1.24 × 10^−10, and x = [H^+] = 1.1 × 10^−5 M."
+  },
+  {
+    "id": "kb-relationship",
+    "type": "multiple-choice",
+    "prompt": "How is the Kb of a weak base related to the Ka of its conjugate acid?",
+    "choices": [
+      { "text": "Ka × Kb = Kw = 1.0 × 10^−14", "correct": true },
+      { "text": "Ka + Kb = 14", "why": "The relationship is a product of the two constants, equal to Kw." },
+      { "text": "Ka = Kb", "why": "They are equal only if each is 1.0 × 10^−7; in general Ka × Kb = 1.0 × 10^−14." },
+      { "text": "Kb = Ka × 10^14", "why": "Kb = Kw / Ka = (1.0 × 10^−14)/Ka." }
+    ],
+    "explanation": "There is a simple relationship between the Kb of a base and the Ka of its conjugate acid: Ka × Kb = Kw = 1.0 × 10^−14. That's why Kb values are rarely tabulated."
+  },
+  {
+    "id": "kb-fluoride",
+    "type": "numeric",
+    "prompt": "The fluoride ion, F^−, can accept a proton and act as a base. The Ka of its conjugate acid, HF, is 6.3 × 10^−4. What is the Kb of F^−?",
+    "answer": 1.587e-11,
+    "explanation": "Ka × Kb = 1.0 × 10^−14, so Kb = (1.0 × 10^−14)/(6.3 × 10^−4) = 1.6 × 10^−11."
+  },
+  {
+    "id": "kb-nitrite",
+    "type": "numeric",
+    "prompt": "The nitrite ion, NO2^−, can accept a proton and act as a base. The Ka of HNO2 is 5.6 × 10^−4. What is the Kb of NO2^−?",
+    "answer": 1.786e-11,
+    "explanation": "Kb = Kw / Ka = (1.0 × 10^−14)/(5.6 × 10^−4) = 1.8 × 10^−11."
+  },
+  {
+    "id": "kb-cyanide",
+    "type": "numeric",
+    "prompt": "The cyanide ion, CN^−, can accept a proton and act as a base. The Ka of HCN is 6.2 × 10^−10. What is the Kb of CN^−?",
+    "answer": 1.613e-5,
+    "explanation": "Kb = (1.0 × 10^−14)/(6.2 × 10^−10) = 1.6 × 10^−5. HCN is a very weak acid, so its conjugate base is a relatively strong weak base."
+  },
+  {
+    "id": "kw-conjugate-product",
+    "type": "numeric",
+    "prompt": "What is the product Ka × Kb for any conjugate acid-base pair in water?",
+    "answer": 1e-14,
+    "explanation": "Ka × Kb = Kw = 1.0 × 10^−14, the same constant as the autoionization of water."
+  },
+  {
+    "id": "kw-no-denominator",
+    "type": "multiple-choice",
+    "prompt": "The equilibrium H2O(ℓ) + H2O(ℓ) ⇌ H3O^+(aq) + OH^−(aq) has the constant Kw = [H3O^+][OH^−]. Why is there no denominator?",
+    "choices": [
+      { "text": "H2O is a pure liquid, and pure liquids aren't included in equilibrium constant expressions.", "correct": true },
+      { "text": "The concentration of water is zero.", "why": "Water is present in huge amounts; it's left out because it is a pure liquid." },
+      { "text": "Kw isn't really an equilibrium constant.", "why": "Kw is an equilibrium constant; its expression just omits the pure liquid." },
+      { "text": "Water is a strong acid.", "why": "Water isn't a strong acid, which is why its ionization is an equilibrium. It's omitted as a pure liquid." }
+    ],
+    "explanation": "The equilibrium constant includes [H3O^+] and [OH^−] but not [H2O(ℓ)], because it is a pure liquid. So K = [H3O^+][OH^−] = Kw = 1.0 × 10^−14, with no denominator."
+  },
+  {
+    "id": "ksp-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a solubility product constant, Ksp?",
+    "choices": [
+      { "text": "The equilibrium constant for a compound normally considered insoluble, which dissolves only very slightly", "correct": true },
+      { "text": "The mass of a compound that dissolves in 100 g of water", "why": "That's a solubility. Ksp is an equilibrium constant for the slight dissolving of a solid into ions." },
+      { "text": "The equilibrium constant for a strong acid", "why": "Ksp describes slightly soluble ionic compounds, like AgCl, in equilibrium with their ions." },
+      { "text": "The product of the masses of the ions", "why": "Ksp is the product of the ion concentrations, each raised to the power of its coefficient." }
+    ],
+    "explanation": "The equilibrium constant for a compound normally considered insoluble is called a solubility product constant, Ksp. An equilibrium is quickly established between the solid and the few ions that form in solution."
+  },
+  {
+    "id": "ksp-insoluble-is-misleading",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call it \"a bit misleading\" to describe a substance as insoluble?",
+    "choices": [
+      { "text": "Virtually all substances are soluble to some extent; \"insoluble\" ionic compounds dissolve ever so slightly.", "correct": true },
+      { "text": "Insoluble substances dissolve completely if you wait long enough.", "why": "They dissolve only very slightly; an equilibrium with the solid is quickly reached." },
+      { "text": "The solubility rules are wrong.", "why": "The rules are useful; \"insoluble\" just means very slightly soluble, not perfectly insoluble." },
+      { "text": "Only liquids can be insoluble.", "why": "The section is about solid ionic compounds that dissolve very slightly." }
+    ],
+    "explanation": "Virtually all substances are soluble; they are just soluble to different extents. What we call an insoluble ionic compound is actually ever so slightly soluble, and an equilibrium is quickly established with its ions."
+  },
+  {
+    "id": "ksp-no-denominator",
+    "type": "multiple-choice",
+    "prompt": "Why do Ksp expressions have no denominator?",
+    "choices": [
+      { "text": "The reactant is a solid, and solids aren't included in equilibrium constant expressions.", "correct": true },
+      { "text": "Because no reactant is involved.", "why": "The solid compound is the reactant; it's just left out of the expression." },
+      { "text": "Because the products are gases.", "why": "The products are aqueous ions. The denominator is missing because the reactant is a solid." },
+      { "text": "Because Ksp values are very small.", "why": "Size isn't the reason. The solid reactant doesn't appear in the expression." }
+    ],
+    "explanation": "Because the reactant is a solid, its concentration does not appear in the Ksp expression, so, like Kw, Ksp expressions have no denominators."
+  },
+  {
+    "id": "ksp-expression-lead-chloride",
+    "type": "multiple-choice",
+    "prompt": "What is the Ksp expression for lead(II) chloride, PbCl2(s) ⇌ Pb^2+(aq) + 2Cl^−(aq)?",
+    "choices": [
+      { "text": "Ksp = [Pb^2+][Cl^−]^2", "correct": true },
+      { "text": "Ksp = [Pb^2+][Cl^−]", "why": "The coefficient 2 on Cl^− becomes an exponent." },
+      { "text": "Ksp = [Pb^2+][Cl^−]^2/[PbCl2]", "why": "PbCl2 is a solid, so it doesn't appear in the expression." },
+      { "text": "Ksp = [Pb^2+][2Cl^−]", "why": "Coefficients become exponents, not multipliers inside the brackets." }
+    ],
+    "explanation": "Each ion concentration is raised to the power of its coefficient, and the solid is left out: Ksp = [Pb^2+][Cl^−]^2."
+  },
+  {
+    "id": "ksp-expression-aluminum-hydroxide",
+    "type": "multiple-choice",
+    "prompt": "What is the Ksp expression for aluminum hydroxide, Al(OH)3?",
+    "choices": [
+      { "text": "Ksp = [Al^3+][OH^−]^3", "correct": true },
+      { "text": "Ksp = [Al^3+][OH^−]", "why": "Al(OH)3 releases three OH^− ions, so [OH^−] is cubed." },
+      { "text": "Ksp = [Al^3+]^3[OH^−]", "why": "There is one Al^3+ and three OH^− per formula unit, so the exponent 3 goes on [OH^−]." },
+      { "text": "Ksp = [Al(OH)3]", "why": "The solid is left out; Ksp is the product of the ion concentrations." }
+    ],
+    "explanation": "Al(OH)3(s) ⇌ Al^3+(aq) + 3OH^−(aq), so Ksp = [Al^3+][OH^−]^3."
+  },
+  {
+    "id": "ksp-silver-iodide",
+    "type": "numeric",
+    "prompt": "What is [Ag^+] in a saturated solution of AgI? Ksp = 8.5 × 10^−17.",
+    "answer": 9.22e-9,
+    "unit": "M",
+    "explanation": "AgI(s) ⇌ Ag^+(aq) + I^−(aq), so Ksp = (x)(x) = x^2 = 8.5 × 10^−17, and x = [Ag^+] = 9.2 × 10^−9 M."
+  },
+  {
+    "id": "ksp-calcium-hydroxide",
+    "type": "numeric",
+    "prompt": "What is [OH^−] in a saturated solution of Ca(OH)2? Ksp = 5.0 × 10^−6.",
+    "answer": 0.02154,
+    "unit": "M",
+    "explanation": "Ca(OH)2(s) ⇌ Ca^2+ + 2OH^−: [Ca^2+] = x and [OH^−] = 2x. Ksp = (x)(2x)^2 = 4x^3 = 5.0 × 10^−6, so x^3 = 1.25 × 10^−6 and x = 0.0108. [OH^−] = 2x = 0.022 M."
+  },
+  {
+    "id": "ksp-silver-sulfate",
+    "type": "numeric",
+    "prompt": "What is [Ag^+] in a saturated solution of Ag2SO4? Ksp = 1.5 × 10^−5.",
+    "answer": 0.03107,
+    "unit": "M",
+    "explanation": "Ag2SO4(s) ⇌ 2Ag^+ + SO4^2−: [Ag^+] = 2x and [SO4^2−] = x. Ksp = (2x)^2(x) = 4x^3 = 1.5 × 10^−5, so x = 0.0155 and [Ag^+] = 2x = 0.031 M."
+  },
+  {
+    "id": "ksp-mercury-iodide",
+    "type": "numeric",
+    "prompt": "What is [Hg^2+] in a saturated solution of HgI2? Ksp = 2.9 × 10^−29.",
+    "answer": 1.935e-10,
+    "unit": "M",
+    "explanation": "HgI2(s) ⇌ Hg^2+ + 2I^−: Ksp = (x)(2x)^2 = 4x^3 = 2.9 × 10^−29, so x^3 = 7.25 × 10^−30 and x = [Hg^2+] = 1.9 × 10^−10 M."
+  },
+  {
+    "id": "ksp-from-concentration",
+    "type": "numeric",
+    "prompt": "In a saturated solution of a slightly soluble salt MX, which dissolves as MX(s) ⇌ M^+(aq) + X^−(aq), [M^+] = 2.0 × 10^−4 M. What is Ksp?",
+    "answer": 4e-8,
+    "explanation": "[M^+] = [X^−] = 2.0 × 10^−4 M, so Ksp = [M^+][X^−] = (2.0 × 10^−4)^2 = 4.0 × 10^−8."
+  },
+  {
+    "id": "ksp-power-mistake",
+    "type": "multiple-choice",
+    "prompt": "Setting up a Ksp problem, a student rewrites (3x)^3 as 3x^3. What is wrong?",
+    "choices": [
+      { "text": "The power applies to everything in the parentheses, including the number: (3x)^3 = 27x^3.", "correct": true },
+      { "text": "(3x)^3 should be 9x^3.", "why": "3 cubed is 27, not 9: (3x)^3 = 27x^3." },
+      { "text": "(3x)^3 should be x^3, because the 3 is only a coefficient.", "why": "The 3 is part of the concentration (3x), so it is cubed too." },
+      { "text": "Nothing is wrong.", "why": "The exponent affects the number as well as x: (3x)^3 = 27x^3." }
+    ],
+    "explanation": "When you raise each expression in parentheses to its power, the power affects everything inside the parentheses, including the number: (3x)^3 = 27x^3, and (2x)^2 = 4x^2."
+  },
+  {
+    "id": "ksp-ion-is-2x-mistake",
+    "type": "multiple-choice",
+    "prompt": "For Ag2SO4, a student solves 4x^3 = Ksp, finds x = 0.0155, and reports [Ag^+] = 0.0155 M. What is wrong?",
+    "choices": [
+      { "text": "From the ICE chart, [Ag^+] is 2x, so it is 0.031 M; x is [SO4^2−].", "correct": true },
+      { "text": "[Ag^+] should be x/2.", "why": "Two Ag^+ form for each formula unit, so [Ag^+] = 2x, not x/2." },
+      { "text": "x must be squared to get [Ag^+].", "why": "Go back to the ICE chart: [Ag^+] = 2x." },
+      { "text": "Nothing is wrong.", "why": "x is the amount of Ag2SO4 dissolved; each one releases two Ag^+ ions." }
+    ],
+    "explanation": "After solving for x, use the ICE chart to find each concentration. Ag2SO4 releases two Ag^+ for each SO4^2−, so [Ag^+] = 2x and [SO4^2−] = x."
+  },
+  {
+    "id": "ksp-wine-crystals",
+    "type": "multiple-choice",
+    "prompt": "Crystals sometimes form in bottles of red wine or on the cork. What are they?",
+    "choices": [
+      { "text": "Potassium hydrogen tartrate, which is much less soluble than tartaric acid and slowly precipitates", "correct": true },
+      { "text": "Sugar that has crystallized out of the wine", "why": "The crystals are potassium hydrogen tartrate, the potassium salt of tartaric acid." },
+      { "text": "Tartaric acid itself, which is nearly insoluble", "why": "Tartaric acid is very soluble (over 130 g per 100 g of water). Its potassium salt dissolves only about 6 g per 100 g." },
+      { "text": "Pieces of the glass bottle", "why": "The crystals come from the wine: potassium hydrogen tartrate, cream of tartar." }
+    ],
+    "explanation": "Potassium hydrogen tartrate (KHC4H4O6, cream of tartar) has a solubility of only about 6 g per 100 g of water, so over time it slowly precipitates from wine stored cool. The crystals are harmless; their color comes from the wine's pigments."
+  }
+]

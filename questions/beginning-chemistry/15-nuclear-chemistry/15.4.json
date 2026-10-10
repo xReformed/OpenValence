@@ -1,0 +1,233 @@
+[
+  {
+    "id": "radunits-becquerel",
+    "type": "multiple-choice",
+    "prompt": "What is one becquerel (Bq)?",
+    "choices": [
+      { "text": "One radioactive decay per second", "correct": true },
+      { "text": "3.7 × 10^10 decays per second", "why": "That is one curie. A becquerel is just one decay per second." },
+      { "text": "The absorption of 0.01 J by 1 g of tissue", "why": "That is one rad, a unit of absorbed dose." },
+      { "text": "100 rem", "why": "100 rem is a sievert. A becquerel counts decays per second." }
+    ],
+    "explanation": "Perhaps the most direct way of reporting radioactivity is the number of decays per second. One decay per second is one becquerel (Bq), named after Henri Becquerel."
+  },
+  {
+    "id": "radunits-curie",
+    "type": "multiple-choice",
+    "prompt": "How is the curie (Ci) defined?",
+    "choices": [
+      { "text": "As 3.7 × 10^10 decays per second, originally the decay rate of 1 g of radium", "correct": true },
+      { "text": "As one decay per second", "why": "That's a becquerel. A curie is far larger: 3.7 × 10^10 decays per second." },
+      { "text": "As 1 g of any radioactive substance", "why": "The curie measures activity, decays per second; it was originally based on 1 g of radium specifically." },
+      { "text": "As the dose that causes radiation sickness", "why": "The curie measures how many decays occur per second, not a biological effect." }
+    ],
+    "explanation": "The curie, now defined as 3.7 × 10^10 decays/s, was originally the number of decays per second in 1 g of radium. It is named after Marie Curie."
+  },
+  {
+    "id": "radunits-microcurie-to-becquerel",
+    "type": "numeric",
+    "prompt": "How many becquerels are in 1.0 µCi? (1 Ci = 3.7 × 10^10 decays/s.)",
+    "answer": 37000,
+    "unit": "Bq",
+    "explanation": "1.0 µCi = 1.0 × 10^−6 Ci. (1.0 × 10^−6)(3.7 × 10^10 decays/s) = 3.7 × 10^4 decays/s = 3.7 × 10^4 Bq."
+  },
+  {
+    "id": "radunits-smoke-detector",
+    "type": "numeric",
+    "prompt": "The americium in an average smoke detector has an activity of 0.9 µCi. How many decays per second is that? (1 Ci = 3.7 × 10^10 decays/s.)",
+    "answer": 33300,
+    "unit": "decays/s",
+    "explanation": "(0.9 × 10^−6 Ci)(3.7 × 10^10 decays/s per Ci) = 3.3 × 10^4 decays per second."
+  },
+  {
+    "id": "radunits-curies-to-becquerels",
+    "type": "numeric",
+    "prompt": "A radioactive source has an activity of 2.0 Ci. What is its activity in becquerels? (1 Ci = 3.7 × 10^10 decays/s.)",
+    "answer": 74000000000,
+    "unit": "Bq",
+    "explanation": "2.0 × 3.7 × 10^10 = 7.4 × 10^10 decays/s = 7.4 × 10^10 Bq."
+  },
+  {
+    "id": "radunits-cobalt-activity-time",
+    "type": "numeric",
+    "prompt": "A cobalt-60 source has an activity of 32.0 mCi. Cobalt-60 has a half-life of 5.27 y. How many years until its activity is 4.0 mCi?",
+    "answer": 15.81,
+    "unit": "y",
+    "explanation": "32.0 → 16.0 → 8.0 → 4.0 mCi is 3 half-lives: 3 × 5.27 y = 15.8 y."
+  },
+  {
+    "id": "radunits-iodine-activity-left",
+    "type": "numeric",
+    "prompt": "An iodine-131 sample has an activity of 400 µCi. Iodine-131 has a half-life of 8.04 d. What is its activity after 32.16 d?",
+    "answer": 25,
+    "unit": "µCi",
+    "explanation": "32.16 d ÷ 8.04 d = 4 half-lives. 400 µCi × (1/2)^4 = 400/16 = 25 µCi."
+  },
+  {
+    "id": "radunits-activity-noninteger-time",
+    "type": "numeric",
+    "prompt": "An iodine-131 sample has an activity of 10.0 mCi. Iodine-131 has a half-life of 8.04 d. How many days until its activity is 3.0 mCi? Use activity = initial × e^(−0.693 t/t½), and solve for t with the natural logarithm.",
+    "answer": 13.97,
+    "unit": "d",
+    "explanation": "3.0/10.0 = e^(−0.693 t/8.04 d). ln(0.30) = −1.204, so −1.204 = −0.693 t/8.04 d, and t = (1.204)(8.04 d)/0.693 = 14.0 d."
+  },
+  {
+    "id": "radunits-rad",
+    "type": "multiple-choice",
+    "prompt": "What does the unit rad measure?",
+    "choices": [
+      { "text": "Radiation absorbed dose: 1 rad is 0.01 J absorbed per gram of tissue", "correct": true },
+      { "text": "The number of decays per second", "why": "That's measured in becquerels or curies. The rad measures energy absorbed by tissue." },
+      { "text": "The biological effect, adjusted for the type of radiation", "why": "That is the rem, which multiplies the rad by a factor." },
+      { "text": "The half-life of an isotope", "why": "The rad is a unit of absorbed energy: 0.01 J per gram." }
+    ],
+    "explanation": "The rad (radiation absorbed dose) is equivalent to 1 g of tissue absorbing 0.01 J: 1 rad = 0.01 J/g. Another unit, the gray, is 100 rad."
+  },
+  {
+    "id": "radunits-rad-energy",
+    "type": "numeric",
+    "prompt": "A 500 g sample of tissue absorbs a dose of 2.0 rad. How much energy, in joules, does it absorb? (1 rad = 0.01 J/g.)",
+    "answer": 10,
+    "unit": "J",
+    "explanation": "2.0 rad × 0.01 J/g per rad = 0.02 J/g, and 0.02 J/g × 500 g = 10 J."
+  },
+  {
+    "id": "radunits-gray-to-rad",
+    "type": "numeric",
+    "prompt": "How many rad is a dose of 0.50 Gy? (1 Gy = 100 rad.)",
+    "answer": 50,
+    "unit": "rad",
+    "explanation": "0.50 Gy × 100 rad/Gy = 50 rad."
+  },
+  {
+    "id": "radunits-rem-factor",
+    "type": "multiple-choice",
+    "prompt": "Why is the rem calculated as rem = rad × factor?",
+    "choices": [
+      { "text": "Different types of emissions affect tissues differently; the factor accounts for the emission type and sometimes the tissue.", "correct": true },
+      { "text": "To convert joules into grams", "why": "The factor adjusts the absorbed dose for its biological effect." },
+      { "text": "To account for the half-life of the isotope", "why": "The factor depends on the type of emission and tissue, not on half-life." },
+      { "text": "Because the rad is too large a unit", "why": "The rem adjusts for biological effect: factor 1 for beta, 10 for alpha in most tissues, 30 for alpha in the eye." }
+    ],
+    "explanation": "Predicting the effects of radiation is complicated because different emissions affect tissues differently. The rem (röntgen equivalent man) multiplies the rad by a factor ≥ 1 that accounts for the type of emission and sometimes the type of tissue."
+  },
+  {
+    "id": "radunits-rem-alpha",
+    "type": "numeric",
+    "prompt": "Most tissue absorbs a 3.0 rad dose of alpha particles, for which the factor is 10. What is the dose in rem?",
+    "answer": 30,
+    "unit": "rem",
+    "explanation": "rem = rad × factor = 3.0 × 10 = 30 rem."
+  },
+  {
+    "id": "radunits-rem-alpha-eye",
+    "type": "numeric",
+    "prompt": "Eye tissue absorbs a 0.50 rad dose of alpha particles. For alpha particles striking the eye, the factor is 30. What is the dose in rem?",
+    "answer": 15,
+    "unit": "rem",
+    "explanation": "rem = 0.50 × 30 = 15 rem. The same absorbed dose is three times as harmful to the eye as to most tissues."
+  },
+  {
+    "id": "radunits-rem-beta",
+    "type": "numeric",
+    "prompt": "Tissue absorbs a 4.0 rad dose of beta particles, for which the factor is 1. What is the dose in rem?",
+    "answer": 4,
+    "unit": "rem",
+    "explanation": "rem = 4.0 × 1 = 4.0 rem."
+  },
+  {
+    "id": "radunits-sievert",
+    "type": "numeric",
+    "prompt": "How many rem is a dose of 1.5 Sv? (1 Sv = 100 rem.)",
+    "answer": 150,
+    "unit": "rem",
+    "explanation": "1.5 Sv × 100 rem/Sv = 150 rem."
+  },
+  {
+    "id": "radunits-natural-sources",
+    "type": "multiple-choice",
+    "prompt": "About what fraction of our annual radiation exposure comes from natural sources we can't avoid?",
+    "choices": [
+      { "text": "About 82%", "correct": true },
+      { "text": "About 10%", "why": "10% comes from our own bodies, but natural sources together account for about 82%." },
+      { "text": "Almost none; most comes from nuclear power", "why": "Nuclear energy contributes only about 0.05 mrem of the roughly 358 mrem total." },
+      { "text": "Exactly half", "why": "Natural sources account for most of it, about 82%." }
+    ],
+    "explanation": "Fully 82% of the radioactivity and radiation exposure we receive is from natural sources, and 10% comes from our own bodies, largely from carbon-14 and potassium-40."
+  },
+  {
+    "id": "radunits-largest-source",
+    "type": "multiple-choice",
+    "prompt": "Which source contributes the most to average annual radiation exposure?",
+    "choices": [
+      { "text": "Radon gas", "correct": true },
+      { "text": "Nuclear energy", "why": "Nuclear energy contributes only about 0.05 mrem per year." },
+      { "text": "Medical sources", "why": "Medical sources are second, at about 53 mrem; radon contributes about 200 mrem." },
+      { "text": "Consumer products", "why": "Consumer products add about 10 mrem; radon adds about 200." }
+    ],
+    "explanation": "Of a total of about 358 mrem per year, radon gas contributes about 200 mrem, by far the largest share."
+  },
+  {
+    "id": "radunits-radon-percent",
+    "type": "numeric",
+    "prompt": "Of an average annual radiation exposure of 358 mrem, radon gas contributes about 200 mrem. What percentage is that?",
+    "answer": 55.87,
+    "unit": "%",
+    "explanation": "(200 mrem / 358 mrem) × 100% = 56%."
+  },
+  {
+    "id": "radunits-x-rays-per-year",
+    "type": "numeric",
+    "prompt": "A medical X-ray gives about 20 mrem. How many X-rays would equal the average total annual exposure of 358 mrem?",
+    "answer": 17.9,
+    "explanation": "358 mrem ÷ 20 mrem per X-ray = about 18 X-rays."
+  },
+  {
+    "id": "radunits-short-term-effects",
+    "type": "multiple-choice",
+    "prompt": "According to the section, about what short-term exposure (over hours or days) causes visible \"burns\" in the skin, nausea, vomiting, and fatigue?",
+    "choices": [
+      { "text": "200–300 rem", "correct": true },
+      { "text": "1 rem over a full year", "why": "1 rem over a year has no detectable effect." },
+      { "text": "About 20 rem", "why": "About 20 rem increases the risk of some cancers; burns and nausea come at 200–300 rem." },
+      { "text": "About 600 rem", "why": "About 600 rem is fatal." }
+    ],
+    "explanation": "Short-term exposures of 200–300 rem cause visible burns, nausea, vomiting, and fatigue; about 100 rem damages bone marrow; about 600 rem causes death."
+  },
+  {
+    "id": "radunits-flying-cosmic",
+    "type": "multiple-choice",
+    "prompt": "Why does a flight from New York City to San Francisco add about 5 mrem to a person's radiation exposure?",
+    "choices": [
+      { "text": "The plane flies above much of the atmosphere, which normally shields us from cosmic radiation.", "correct": true },
+      { "text": "Airplane engines are nuclear powered.", "why": "The extra dose is cosmic radiation, which the atmosphere usually shields us from." },
+      { "text": "Airport security scanners use radioactive isotopes.", "why": "The section attributes the 5 mrem to cosmic radiation at high altitude." },
+      { "text": "Radon gas builds up in the cabin.", "why": "The added exposure comes from cosmic sources, not radon." }
+    ],
+    "explanation": "Flying adds about 5 mrem because the plane flies above much of the atmosphere, which protects us from cosmic radiation."
+  },
+  {
+    "id": "radunits-film-badge",
+    "type": "multiple-choice",
+    "prompt": "How does a film badge detect a person's radiation exposure?",
+    "choices": [
+      { "text": "Its photographic film is developed regularly, and its exposure is compared with standard exposures.", "correct": true },
+      { "text": "It clicks whenever radiation enters it.", "why": "Clicking is how a Geiger counter signals. A film badge records exposure on film." },
+      { "text": "It changes color when the person gets sick.", "why": "A film badge records exposure on photographic film, which is developed and compared with standards." },
+      { "text": "It blocks all radiation from reaching the wearer.", "why": "A badge detects radiation; it doesn't shield the wearer." }
+    ],
+    "explanation": "A piece of photographic film is embedded in a badge or pen. The film is developed regularly and compared with a set of standard exposures to show how much radiation the person received."
+  },
+  {
+    "id": "radunits-geiger-counter",
+    "type": "multiple-choice",
+    "prompt": "How does a Geiger counter detect radiation?",
+    "choices": [
+      { "text": "Radiation entering a gas-filled chamber knocks electrons off gas atoms, causing a small current that is detected.", "correct": true },
+      { "text": "Radiation darkens a piece of photographic film.", "why": "That's a film badge. A Geiger counter detects a current produced in a gas." },
+      { "text": "Radiation heats a thermometer inside it.", "why": "The energy is far too small to measure that way; the counter detects ionization of a gas." },
+      { "text": "Radiation makes the gas glow.", "why": "The counter detects the small electric current from electrons knocked off gas atoms." }
+    ],
+    "explanation": "A Geiger counter has a gas-filled chamber (usually argon) with a thin membrane at one end. Radiation entering it knocks electrons off gas atoms, and the electrons and positive ions cause a small current, often signaled by an audible click."
+  }
+]

@@ -12,7 +12,7 @@ const OUT = join(here, "../src/lib/learningPaths.generated.ts");
 /* Book key used by the web app -> folder under sources/openstax. */
 const BOOKS = {
   "beginning-chemistry": "introductory",
-  "chemistry-1e": "genchem-1e",
+  "organic-chemistry": "orgchem",
 };
 
 function parse(file, relative) {

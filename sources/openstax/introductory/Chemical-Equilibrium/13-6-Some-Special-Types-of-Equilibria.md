@@ -9,9 +9,9 @@ license: "CC BY-NC-SA 3.0"
 
 ### Learning Objective
 
-- Identify several special chemical equilibria and construct their Ka expressions.
+- Identify several special chemical equilibria and construct their K_a expressions.
 
-In one sense, all chemical equilibria are treated the same. However, there are several classes of reactions that are noteworthy because of either the identities of the reactants and products, or the form of the Keq expression.
+In one sense, all chemical equilibria are treated the same. However, there are several classes of reactions that are noteworthy because of either the identities of the reactants and products, or the form of the K_eq expression.
 
 ## Weak Acids and Bases
 
@@ -27,11 +27,11 @@ HC2H3O2(aq) ⇌ H^+(aq) + C2H3O2^−(aq)
 
 HC2H3O2 is soluble in H2O (in fact, it is the acid in vinegar), so the reactant concentration will appear in the equilibrium constant expression. But not all the molecules separate into ions. This is the case for all weak acids and bases.
 
-An acid dissociation constant, Ka, is the equilibrium constant for the dissociation of a weak acid into ions. Note the a subscript on the K; it implies that the substance is acting as an acid. The larger Ka is, the stronger the acid is. Table 13.6.1 - Acid Dissociation Constants for Some Weak Acids, lists several acid dissociation constants. Keep in mind that they are just equilibrium constants.
+An acid dissociation constant, K_a, is the equilibrium constant for the dissociation of a weak acid into ions. Note the a subscript on the K; it implies that the substance is acting as an acid. The larger K_a is, the stronger the acid is. Table 13.6.1 - Acid Dissociation Constants for Some Weak Acids, lists several acid dissociation constants. Keep in mind that they are just equilibrium constants.
 
 Table, two columns and 7 rows. The first column on the right has different acids in the rows underneath. The second column on the right side has the acid dissociation content for the corresponding acid in the rows underneath.
 
-| Acid | Ka |
+| Acid | K_a |
 | --- | --- |
 | HC2H3O2 | 1.8 × 10^−5 |
 | HClO2 | 1.1 × 10^−2 |
@@ -51,11 +51,11 @@ The H2PO4^− ion, called the dihydrogen phosphate ion, is also a weak acid with
 
 H2PO4^−(aq) ⇌ H^+(aq) + HPO4^2−(aq)    Ka = 6.2 × 10^−8
 
-Thus, for so-called polyprotic acids, each H^+ ion comes off in sequence; each H^+ ion that ionizes does so with its own characteristic Ka.
+Thus, for so-called polyprotic acids, each H^+ ion comes off in sequence; each H^+ ion that ionizes does so with its own characteristic K_a.
 
 ### Example 13.6.1
 
-Write the equilibrium equation and the Ka expression for HSO4^− acting as a weak acid.
+Write the equilibrium equation and the K_a expression for HSO4^− acting as a weak acid.
 
 **Solution**
 
@@ -63,25 +63,25 @@ HSO4^− acts as a weak acid by separating into an H^+ ion and an SO4^2− ion:
 
 HSO4^−(aq) ⇌ H^+(aq) + SO4^2−(aq)
 
-The Ka is written just like any other equilibrium constant, in terms of the concentrations of products divided by concentrations of reactants:
+The K_a is written just like any other equilibrium constant, in terms of the concentrations of products divided by concentrations of reactants:
 
 Ka = ([H^+][SO4^2−])/([HSO4^−])
 
 ### Exercise 13.6.1
 
-Write the equilibrium equation and the Ka expression for HPO4^2− acting as a weak acid.
+Write the equilibrium equation and the K_a expression for HPO4^2− acting as a weak acid.
 
 **Answer**
 
 HPO4^2−(aq) ⇌ H^+(aq) + PO4^3−(aq)    Ka = ([H^+][PO4^3−])/([HPO4^2−])
 
-The Ka is used in equilibrium constant problems just like other equilibrium constants are. However, in some cases, we can simplify the mathematics if the numerical value of the Ka is small, much smaller than the concentration of the acid itself. Example 11 illustrates this.
+The K_a is used in equilibrium constant problems just like other equilibrium constants are. However, in some cases, we can simplify the mathematics if the numerical value of the K_a is small, much smaller than the concentration of the acid itself. Example 11 illustrates this.
 
 [Note: "Example 11" is the numbering of an earlier edition; the example meant is Example 13.6.2, which follows.]
 
 ### Example 13.6.2
 
-What is the pH of a 1.00 M solution of HC2H3O2? The Ka of HC2H3O2 is 1.8 × 10^−5.
+What is the pH of a 1.00 M solution of HC2H3O2? The K_a of HC2H3O2 is 1.8 × 10^−5.
 
 **Solution**
 
@@ -97,7 +97,7 @@ Solutions to Example 13.6.2
 
 [Note: reproduced as printed; H^+ and C2H3O2^− are aqueous ions, (aq), as in the equation above, not gases.]
 
-We now construct the Ka expression, substituting the concentrations from the equilibrium row in the ICE chart:
+We now construct the K_a expression, substituting the concentrations from the equilibrium row in the ICE chart:
 
 Ka = ([H^+][C2H3O2^−])/([HC2H3O2]) = ((x)(x))/((1.00 − x)) = 1.8 × 10^−5
 
@@ -127,27 +127,27 @@ pH = −log[H^+] = −log(4.2 × 10^−3) = 2.38
 
 ### Exercise 13.6.2
 
-What is the pH of a 0.500 M solution of HCN? The Ka of HCN is 6.2 × 10^−10.
+What is the pH of a 0.500 M solution of HCN? The K_a of HCN is 6.2 × 10^−10.
 
 **Answer**
 
 4.75
 
-Weak bases also have dissociation constants, labeled Kb (the b subscript stands for base). However, values of Kb are rarely tabulated because there is a simple relationship between the Kb of a base and the Ka of its conjugate acid:
+Weak bases also have dissociation constants, labeled K_b (the b subscript stands for base). However, values of K_b are rarely tabulated because there is a simple relationship between the K_b of a base and the K_a of its conjugate acid:
 
-Ka × Kb = 1.0 × 10^−14
+K_a × K_b = 1.0 × 10^−14
 
-Thus it is simple to calculate the Kb of a base from the Ka of its conjugate acid.
+Thus it is simple to calculate the K_b of a base from the K_a of its conjugate acid.
 
 ### Example 13.6.3
 
-What is the value of Kb for C2H3O2^−, which can accept a proton and act as a base?
+What is the value of K_b for C2H3O2^−, which can accept a proton and act as a base?
 
 **Solution**
 
-To determine the Kb for C2H3O2^−, we need to know the Ka of its conjugate acid. The conjugate acid of C2H3O2^− is HC2H3O2. The Ka for HC2H3O2 is in Table 13.6.1 "Acid Dissociation Constants for Some Weak Acids" and is 1.8 × 10^−5. Using the mathematical relationship between Ka and Kb:
+To determine the K_b for C2H3O2^−, we need to know the K_a of its conjugate acid. The conjugate acid of C2H3O2^− is HC2H3O2. The K_a for HC2H3O2 is in Table 13.6.1 "Acid Dissociation Constants for Some Weak Acids" and is 1.8 × 10^−5. Using the mathematical relationship between K_a and K_b:
 
-(1.8 × 10^−5)Kb = 1.0 × 10^−14
+(1.8 × 10^−5)K_b = 1.0 × 10^−14
 
 Solving,
 
@@ -155,7 +155,7 @@ Kb = (1.0 × 10^−14)/(1.8 × 10^−5) = 5.6 × 10^−10
 
 ### Exercise 13.6.3
 
-What is the value of Kb for PO4^3−, which can accept a proton and act as a base? The Ka for HPO4^2− is 2.2 × 10^−13.
+What is the value of K_b for PO4^3−, which can accept a proton and act as a base? The K_a for HPO4^2− is 2.2 × 10^−13.
 
 **Answer**
 
@@ -169,11 +169,11 @@ H2O(l) + H2O(l) ⇌ H3O^+(aq) + OH^−(aq)
 
 The equilibrium constant includes [H3O^+] and [OH^−] but not [H2O(ℓ)] because it is a pure liquid. Hence the expression does not have any terms in its denominator:
 
-K = [H3O^+][OH^−] ≡ Kw = 1.0 × 10^−14
+K = [H3O^+][OH^−] ≡ K_w = 1.0 × 10^−14
 
-This is the same Kw that was introduced in Chapter 12 and the same 1.0 × 10^−14 that appears in the relationship between the Ka and the Kb of a conjugate acid-base pair. In fact, we can rewrite this relationship as follows:
+This is the same K_w that was introduced in Chapter 12 and the same 1.0 × 10^−14 that appears in the relationship between the K_a and the K_b of a conjugate acid-base pair. In fact, we can rewrite this relationship as follows:
 
-Ka × Kb = Kw
+K_a × K_b = K_w
 
 ## Insoluble Compounds
 
@@ -183,17 +183,17 @@ Describing a substance as soluble or insoluble is a bit misleading because virtu
 
 MX(s) ⇌ M^+(aq) + X^−(aq)
 
-The equilibrium constant for a compound normally considered insoluble is called a solubility product constant and is labeled Ksp (with the subscript sp, meaning "solubility product"). Because the reactant is a solid, its concentration does not appear in the Ksp expression, so like Kw, expressions for Ksp do not have denominators. For example, the chemical equation and the expression for the Ksp for AgCl, normally considered insoluble, are as follows:
+The equilibrium constant for a compound normally considered insoluble is called a solubility product constant and is labeled K_sp (with the subscript sp, meaning "solubility product"). Because the reactant is a solid, its concentration does not appear in the K_sp expression, so like K_w, expressions for K_sp do not have denominators. For example, the chemical equation and the expression for the K_sp for AgCl, normally considered insoluble, are as follows:
 
 AgCl(s) ⇌ Ag^+(aq) + Cl^−(aq)    K_sp = [Ag^+][Cl^−]
 
-Table 13.6.2 - Solubility Product Constants for Slightly Soluble Ionic Compounds, lists some values of the Ksp for slightly soluble ionic compounds.
+Table 13.6.2 - Solubility Product Constants for Slightly Soluble Ionic Compounds, lists some values of the K_sp for slightly soluble ionic compounds.
 
 Table, two columns and 8 rows. The first column on the right has different compounds in the rows underneath. The second column on the right side has the acid dissociation content for the corresponding compounds in the rows underneath.
 
 [Note: reproduced as printed; the second column of this table holds solubility product constants (Ksp), not acid dissociation constants.]
 
-| Compound | Ksp |
+| Compound | K_sp |
 | --- | --- |
 | BaSO4 | 1.1 × 10^−10 |
 | Ca(OH)2 | 5.0 × 10^−6 |
@@ -208,7 +208,7 @@ Table 13.6.2 Solubility Product Constants for Slightly Soluble Ionic Compounds.
 
 ### Example 13.6.4
 
-Write the Ksp expression for Ca3(PO4)2.
+Write the K_sp expression for Ca3(PO4)2.
 
 **Solution**
 
@@ -216,23 +216,23 @@ Recall that when an ionic compound dissolves, it separates into its individual i
 
 Ca3(PO4)2(s) ⇌ 3Ca^2+(aq) + 2PO4^3−(aq)
 
-Hence the Ksp expression is
+Hence the K_sp expression is
 
-Ksp = [Ca^2+]^3[PO4^3−]^2
+K_sp = [Ca^2+]^3[PO4^3−]^2
 
 ### Exercise 13.6.4
 
-Write the Ksp expression Ag2SO4.
+Write the K_sp expression Ag2SO4.
 
 **Answer**
 
-Ksp = [Ag^+]^2[SO4^2−]
+K_sp = [Ag^+]^2[SO4^2−]
 
-Equilibrium problems involving the Ksp can also be done, and they are usually more straightforward than other equilibrium problems because there is no denominator in the Ksp expression. Care must be taken, however, in completing the ICE chart and evaluating exponential expressions.
+Equilibrium problems involving the K_sp can also be done, and they are usually more straightforward than other equilibrium problems because there is no denominator in the K_sp expression. Care must be taken, however, in completing the ICE chart and evaluating exponential expressions.
 
 ### Example 13.6.5
 
-What are [Ag^+] and [Cl^−] in a saturated solution of AgCl? The Ksp of AgCl is 1.8 × 10^−10.
+What are [Ag^+] and [Cl^−] in a saturated solution of AgCl? The K_sp of AgCl is 1.8 × 10^−10.
 
 **Solution**
 
@@ -240,9 +240,9 @@ The chemical equation for the dissolving of AgCl is
 
 AgCl(s) ⇌ Ag^+(aq) + Cl^−(aq)
 
-The Ksp expression is as follows:
+The K_sp expression is as follows:
 
-Ksp = [Ag^+][Cl^−]
+K_sp = [Ag^+][Cl^−]
 
 So the ICE chart for the equilibrium is as follows:
 
@@ -254,7 +254,7 @@ Solutions to Example 13.6.5
 | C | −x |  | +x |  | +x |
 | E |  |  | +x |  | +x |
 
-Notice that we have little in the column under AgCl except the stoichiometry of the change; we do not need to know its initial or equilibrium concentrations because its concentration does not appear in the Ksp expression. Substituting the equilibrium values into the expression:
+Notice that we have little in the column under AgCl except the stoichiometry of the change; we do not need to know its initial or equilibrium concentrations because its concentration does not appear in the K_sp expression. Substituting the equilibrium values into the expression:
 
 (x)(x) = 1.8 × 10^−10
 
@@ -268,7 +268,7 @@ Thus [Ag^+] and [Cl^−] are both 1.3 × 10^−5 M.
 
 ### Exercise 13.6.5
 
-What are [Ba^2+] and [SO4^2−] in a saturated solution of BaSO4? The Ksp of BaSO4 is 1.1 × 10^−10.
+What are [Ba^2+] and [SO4^2−] in a saturated solution of BaSO4? The K_sp of BaSO4 is 1.1 × 10^−10.
 
 **Answer**
 
@@ -276,7 +276,7 @@ What are [Ba^2+] and [SO4^2−] in a saturated solution of BaSO4? The Ksp of BaS
 
 ### Example 13.6.6
 
-What are [Ca^2+] and [PO4^3−] in a saturated solution of Ca3(PO4)2? The Ksp of Ca3(PO4)2 is 2.1 × 10^−33.
+What are [Ca^2+] and [PO4^3−] in a saturated solution of Ca3(PO4)2? The K_sp of Ca3(PO4)2 is 2.1 × 10^−33.
 
 **Solution**
 
@@ -292,9 +292,9 @@ Solutions to Example 13.6.6
 | C | −x |  | +3x |  | +2x |
 | E |  |  | +3x |  | +2x |
 
-For every unit of Ca3(PO4)2 that dissolves, three Ca^2+ ions and two PO4^3− ions are formed. The expression for the Ksp is also different:
+For every unit of Ca3(PO4)2 that dissolves, three Ca^2+ ions and two PO4^3− ions are formed. The expression for the K_sp is also different:
 
-Ksp = [Ca^2+]^3[PO4^3−]^2 = 2.1 × 10^−33
+K_sp = [Ca^2+]^3[PO4^3−]^2 = 2.1 × 10^−33
 
 Now when we substitute the unknown concentrations into the expression, we get
 
@@ -326,7 +326,7 @@ We are not done yet. We still need to determine the concentrations of the ions. 
 
 ### Exercise 13.6.6
 
-What are [Mg^2+] and [OH^−] in a saturated solution of Mg(OH)2? The Ksp of Mg(OH)2 is 5.6 × 10^−12.
+What are [Mg^2+] and [OH^−] in a saturated solution of Mg(OH)2? The K_sp of Mg(OH)2 is 5.6 × 10^−12.
 
 **Answer**
 

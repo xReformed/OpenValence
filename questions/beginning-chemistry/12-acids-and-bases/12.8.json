@@ -1,0 +1,268 @@
+[
+  {
+    "id": "buffer-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a buffer?",
+    "choices": [
+      { "text": "A solution that resists dramatic changes in pH", "correct": true },
+      { "text": "A solution that always has a pH of exactly 7", "why": "Buffers can have many pH values; what matters is that they resist changes in pH." },
+      { "text": "A strong acid that neutralizes bases", "why": "Buffers are made from weak acids or weak bases and their salts, not strong acids." },
+      { "text": "A substance that changes color with pH", "why": "That is an indicator." }
+    ],
+    "explanation": "A buffer is a solution that resists dramatic changes in pH."
+  },
+  {
+    "id": "buffer-components",
+    "type": "multiple-choice",
+    "prompt": "What pairs of solutes make up a buffer?",
+    "choices": [
+      { "text": "A weak acid plus a salt derived from that weak acid, or a weak base plus a salt of that weak base", "correct": true },
+      { "text": "A strong acid plus a strong base", "why": "These neutralize each other completely. Buffers need a weak acid or weak base with its salt." },
+      { "text": "A strong acid plus its salt", "why": "A strong acid is 100% ionized, so its anion won't take up added H^+. Buffers use weak acids." },
+      { "text": "Any acid plus any salt", "why": "The salt must derive from the same weak acid (or weak base), so the two can trade protons." }
+    ],
+    "explanation": "Buffers are composed of certain pairs of solutes: either a weak acid plus a salt derived from that weak acid, or a weak base plus a salt of that weak base."
+  },
+  {
+    "id": "buffer-identify-hf-naf",
+    "type": "multiple-choice",
+    "prompt": "Which combination of solutes can make a buffer?",
+    "choices": [
+      { "text": "HF and NaF", "correct": true },
+      { "text": "HNO3 and NaNO3", "why": "HNO3 is a strong acid, so this combination can't make a buffer." },
+      { "text": "HF and NaCl", "why": "NaCl isn't a salt of HF. The salt must come from the same weak acid: NaF." },
+      { "text": "NaOH and NaF", "why": "NaOH is a strong base. A buffer needs a weak acid with its salt, or a weak base with its salt." }
+    ],
+    "explanation": "HF is a weak acid, and NaF is a salt derived from it (it contains F^−, the anion of HF). Together they make a buffer."
+  },
+  {
+    "id": "buffer-identify-weak-base",
+    "type": "multiple-choice",
+    "prompt": "Which combination of solutes can make a buffer?",
+    "choices": [
+      { "text": "NH3 and NH4NO3", "correct": true },
+      { "text": "KOH and KNO3", "why": "KOH is a strong base. A buffer needs a weak base and a salt of that weak base." },
+      { "text": "NH4Cl and NaCl", "why": "There's no weak base here; NH4Cl needs to be paired with NH3 itself." },
+      { "text": "HNO3 and NH4NO3", "why": "HNO3 is a strong acid. The weak base NH3 is missing." }
+    ],
+    "explanation": "NH3 is a weak base, and NH4NO3 contains NH4^+, a salt derived from that weak base. Together they make a buffer."
+  },
+  {
+    "id": "buffer-strong-acid-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student proposes making a buffer from HBr and NaBr, an acid and its salt. Why won't this work?",
+    "choices": [
+      { "text": "HBr is a strong acid; a buffer needs a weak acid.", "correct": true },
+      { "text": "NaBr isn't a salt of HBr.", "why": "NaBr does contain Br^−, the anion of HBr. The problem is that HBr is strong." },
+      { "text": "Buffers can only be made from bases.", "why": "Buffers can be made from a weak acid and its salt too, like HC2H3O2 and NaC2H3O2." },
+      { "text": "It will work; any acid with its salt is a buffer.", "why": "Only a weak acid with its salt works. Br^− from a strong acid won't take up added H^+." }
+    ],
+    "explanation": "HBr is a strong acid, not a weak acid, so HBr and NaBr can't make a buffer. A buffer needs a weak acid plus a salt of that weak acid (or a weak base plus its salt)."
+  },
+  {
+    "id": "buffer-wrong-salt-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student tries to make a buffer from acetic acid, HC2H3O2, and sodium chloride, NaCl. Why won't this work?",
+    "choices": [
+      { "text": "The salt must derive from the same weak acid, such as NaC2H3O2; NaCl doesn't.", "correct": true },
+      { "text": "Acetic acid is a strong acid.", "why": "Acetic acid is a weak acid, which is fine. The problem is the salt." },
+      { "text": "NaCl is a base.", "why": "NaCl is a neutral salt. It just doesn't supply the acetate ion the buffer needs." },
+      { "text": "It will work; any weak acid with any salt is a buffer.", "why": "The salt must contain the anion of that weak acid, so it can take up added H^+." }
+    ],
+    "explanation": "A buffer needs a weak acid plus a salt derived from that weak acid. HC2H3O2 needs an acetate salt such as NaC2H3O2, whose C2H3O2^− ions can react with added H^+."
+  },
+  {
+    "id": "buffer-added-base-acetate",
+    "type": "multiple-choice",
+    "prompt": "A strong base, a source of OH^− ions, is added to an HC2H3O2/NaC2H3O2 buffer. What happens to the added OH^−?",
+    "choices": [
+      { "text": "It reacts with HC2H3O2: HC2H3O2 + OH^− → H2O + C2H3O2^−", "correct": true },
+      { "text": "It reacts with C2H3O2^−, making the solution more basic.", "why": "C2H3O2^− is the base part of the buffer; it takes up added H^+, not OH^−." },
+      { "text": "It stays in solution and raises the pH sharply.", "why": "The buffer's weak acid reacts with the OH^− to make water, so the pH doesn't change much." },
+      { "text": "It reacts with Na^+ to form NaOH.", "why": "Na^+ is a spectator ion. The HC2H3O2 neutralizes the added OH^−." }
+    ],
+    "explanation": "Added OH^− ions react with HC2H3O2 in an acid-base reaction, making H2O and C2H3O2^−. Rather than making the solution basic, the OH^− is used up, so the pH doesn't change much."
+  },
+  {
+    "id": "buffer-added-acid-acetate",
+    "type": "multiple-choice",
+    "prompt": "A strong acid, a source of H^+ ions, is added to an HC2H3O2/NaC2H3O2 buffer. What happens to the added H^+?",
+    "choices": [
+      { "text": "It reacts with C2H3O2^− to make molecules of the weak acid HC2H3O2.", "correct": true },
+      { "text": "It reacts with HC2H3O2, making a stronger acid.", "why": "HC2H3O2 is the acid part; it neutralizes added OH^−. Added H^+ combines with the acetate ion." },
+      { "text": "It stays in solution and lowers the pH sharply.", "why": "Because HC2H3O2 is a weak acid, H^+ and C2H3O2^− come together to form it, so the pH doesn't change much." },
+      { "text": "It reacts with Na^+.", "why": "Na^+ is a spectator ion. The acetate ion takes up the H^+." }
+    ],
+    "explanation": "Because HC2H3O2 is a weak acid, H^+ and C2H3O2^− ions in the same solution come together to make HC2H3O2: H^+ + C2H3O2^− → HC2H3O2. The added H^+ is tied up in weak acid molecules."
+  },
+  {
+    "id": "buffer-ammonia-added-acid",
+    "type": "multiple-choice",
+    "prompt": "In a buffer of NH3 and NH4Cl, which species reacts with added H^+ ions?",
+    "choices": [
+      { "text": "NH3, forming NH4^+", "correct": true },
+      { "text": "NH4^+", "why": "NH4^+ is the acid part of the buffer; it reacts with added OH^−, not H^+." },
+      { "text": "Cl^−, forming HCl", "why": "Cl^− comes from a strong acid and doesn't take up H^+. NH3, the weak base, does." },
+      { "text": "Nothing; NH3 buffers react only with OH^−", "why": "The NH3 molecules react with added H^+: NH3 + H^+ → NH4^+." }
+    ],
+    "explanation": "In an NH3/NH4Cl buffer, NH3 molecules react with excess H^+ ions introduced by strong acids: NH3(aq) + H^+(aq) → NH4^+(aq)."
+  },
+  {
+    "id": "buffer-ammonia-added-base",
+    "type": "multiple-choice",
+    "prompt": "In a buffer of NH3 and NH4Cl, which species reacts with added OH^− ions?",
+    "choices": [
+      { "text": "NH4^+, forming NH3 and H2O", "correct": true },
+      { "text": "NH3, forming NH2^− and H2O", "why": "NH3 is the base part of the buffer; it takes up added H^+. NH4^+ neutralizes OH^−." },
+      { "text": "Cl^−, forming HOCl", "why": "Cl^− doesn't react with OH^−. The ammonium ion does." },
+      { "text": "Nothing; the OH^− stays in solution", "why": "NH4^+ reacts with it: NH4^+ + OH^− → NH3 + H2O." }
+    ],
+    "explanation": "The ammonium ion reacts with hydroxide ions introduced by strong bases: NH4^+(aq) + OH^−(aq) → NH3(aq) + H2O(ℓ)."
+  },
+  {
+    "id": "buffer-capacity",
+    "type": "multiple-choice",
+    "prompt": "What happens once one of a buffer's two solutes has completely reacted with added acid or base?",
+    "choices": [
+      { "text": "The solution is no longer a buffer, and rapid changes in pH may occur.", "correct": true },
+      { "text": "The buffer keeps working forever.", "why": "Buffers work only for limited amounts of added acid or base; they have a certain capacity." },
+      { "text": "The solution becomes neutral.", "why": "Once one solute is used up, more acid or base can change the pH rapidly, in either direction." },
+      { "text": "The other solute takes over both jobs.", "why": "Each solute handles only one direction. With one gone, the solution can no longer resist pH changes both ways." }
+    ],
+    "explanation": "Buffers work well only for limited amounts of added strong acid or base. Once either solute is completely reacted, the solution is no longer a buffer: a buffer has a certain capacity."
+  },
+  {
+    "id": "buffer-larger-capacity",
+    "type": "multiple-choice",
+    "prompt": "Which buffer has the larger capacity?",
+    "choices": [
+      { "text": "One with more of its two solutes dissolved in it", "correct": true },
+      { "text": "One with less of its two solutes dissolved in it", "why": "Less solute is used up sooner by added acid or base, so its capacity is smaller." },
+      { "text": "One made with a strong acid", "why": "Strong acids can't make buffers at all." },
+      { "text": "All buffers have the same capacity.", "why": "Capacity depends on how much solute the buffer has to react with added acid or base." }
+    ],
+    "explanation": "Buffers that have more initial solute dissolved in them have larger capacities: they can react with more added acid or base before a solute runs out."
+  },
+  {
+    "id": "buffer-strong-acids-change-ph",
+    "type": "multiple-choice",
+    "prompt": "Without a correcting mechanism, why would a small amount of stomach acid entering the bloodstream be dangerous?",
+    "choices": [
+      { "text": "Very small amounts of strong acid can change the pH of a solution very quickly.", "correct": true },
+      { "text": "Stomach acid is a weak acid that ionizes slowly.", "why": "Stomach acid (approximated as HCl) is a strong acid; that's why even a little would change the pH quickly." },
+      { "text": "Stomach acid would make the blood basic.", "why": "An acid would lower the blood's pH, making it more acidic." },
+      { "text": "Blood can't contain any H^+ ions.", "why": "Blood does contain H^+ (its pH is about 7.4); the danger is a sharp change." }
+    ],
+    "explanation": "Strong acids produce a relatively large amount of H^+, and very small amounts can change pH quickly. 1 mL of stomach acid added to the bloodstream with no correcting mechanism would drop the blood's pH from about 7.4 to about 4.7."
+  },
+  {
+    "id": "buffer-blood-ph-drop",
+    "type": "numeric",
+    "prompt": "Without buffering, adding 1 mL of stomach acid to the bloodstream would drop the blood's pH from about 7.4 to about 4.7. By how many pH units would it fall?",
+    "answer": 2.7,
+    "explanation": "7.4 − 4.7 = 2.7 pH units."
+  },
+  {
+    "id": "buffer-blood-hydrogen-factor",
+    "type": "numeric",
+    "prompt": "If the blood's pH fell from 7.4 to 4.7, by what factor would [H^+] increase?",
+    "answer": 501.2,
+    "explanation": "Each pH unit is a factor of 10, so a drop of 2.7 units multiplies [H^+] by 10^2.7 = 5.0 × 10^2, about 500 times."
+  },
+  {
+    "id": "buffer-blood-bicarbonate",
+    "type": "multiple-choice",
+    "prompt": "One buffer in human blood is based on which pair of species?",
+    "choices": [
+      { "text": "HCO3^− and H2CO3", "correct": true },
+      { "text": "HCl and NaCl", "why": "HCl is a strong acid, so HCl and NaCl can't buffer anything." },
+      { "text": "NaOH and NaCl", "why": "NaOH is a strong base; this pair isn't a buffer." },
+      { "text": "H2O and O2", "why": "Blood's buffer is based on HCO3^− and H2CO3, a weak acid and its anion." }
+    ],
+    "explanation": "One buffer in blood is based on HCO3^− and H2CO3 (another way to write CO2(aq)). With it present, even stomach acid reaching the bloodstream would change the blood's pH only minimally."
+  },
+  {
+    "id": "buffer-carbonic-acid",
+    "type": "multiple-choice",
+    "prompt": "In the blood's HCO3^−/H2CO3 buffer, what is H2CO3 another way of writing?",
+    "choices": [
+      { "text": "CO2(aq)", "correct": true },
+      { "text": "HCO3^−", "why": "HCO3^− is the other member of the pair, with one fewer H^+." },
+      { "text": "H2O", "why": "H2CO3 contains carbon; it is another way to write dissolved CO2." },
+      { "text": "CO3^2−", "why": "CO3^2− has two fewer protons. H2CO3 is CO2(aq)." }
+    ],
+    "explanation": "In the blood buffer based on HCO3^− and H2CO3, the second compound is another way to write CO2(aq)."
+  },
+  {
+    "id": "buffer-cells-phosphate",
+    "type": "multiple-choice",
+    "prompt": "Inside many of the body's cells, the buffering system is based on which ions?",
+    "choices": [
+      { "text": "Phosphate ions", "correct": true },
+      { "text": "Chloride ions", "why": "Cl^− comes from a strong acid and can't buffer. The section names phosphate ions." },
+      { "text": "Sodium ions", "why": "Na^+ comes from a strong base and doesn't affect pH. Cells use phosphate buffers." },
+      { "text": "Hydronium ions only", "why": "A buffer needs a pair of species that can take up both acid and base; inside cells it is based on phosphate ions." }
+    ],
+    "explanation": "Inside many of the body's cells, there is a buffering system based on phosphate ions; in the blood, one buffer is based on HCO3^− and H2CO3."
+  },
+  {
+    "id": "buffer-aspirin-weak-acid",
+    "type": "multiple-choice",
+    "prompt": "Aspirin, acetylsalicylic acid, isn't on the list of strong acids. Why can it still cause problems in the stomach?",
+    "choices": [
+      { "text": "It is a weak acid, but still an acid, and some people take relatively large amounts daily.", "correct": true },
+      { "text": "It is a strong base.", "why": "Aspirin is an acid: the H atom in its CO2H group can be donated." },
+      { "text": "Weak acids are more dangerous than strong ones.", "why": "That's not the point. Aspirin is a weak acid, but large daily amounts of any acid can irritate the stomach lining." },
+      { "text": "It turns into stomach acid, HCl.", "why": "Aspirin stays acetylsalicylic acid; its own acidic nature is the problem." }
+    ],
+    "explanation": "Acetylsalicylic acid acts as a Brønsted-Lowry acid and, not being a strong acid, is weak. It is still an acid, though, and its acidic nature can cause problems in the stomach lining for people who take a lot of it."
+  },
+  {
+    "id": "buffered-aspirin-agent",
+    "type": "multiple-choice",
+    "prompt": "Buffered aspirin contains a buffering agent to minimize aspirin's acidic side effects. What is that agent usually?",
+    "choices": [
+      { "text": "MgO", "correct": true },
+      { "text": "HCl", "why": "HCl is stomach acid itself; adding it would make things worse." },
+      { "text": "NaCl", "why": "NaCl is a neutral salt and doesn't regulate acidity." },
+      { "text": "H2SO4", "why": "H2SO4 is a strong acid, the opposite of what's needed." }
+    ],
+    "explanation": "Buffered aspirin also contains a buffering agent, usually MgO, that regulates the acidity of the aspirin to minimize its acidic side effects."
+  },
+  {
+    "id": "buffer-why-ph-holds-with-base",
+    "type": "multiple-choice",
+    "prompt": "Why does the pH of an acetate buffer barely change when a little NaOH is added?",
+    "choices": [
+      { "text": "The added OH^− reacts with HC2H3O2 to form water, so little free OH^− remains.", "correct": true },
+      { "text": "NaOH doesn't dissolve in a buffer.", "why": "NaOH dissolves and releases OH^−; the buffer's weak acid then reacts with it." },
+      { "text": "The buffer makes NaOH a weak base.", "why": "NaOH stays a strong base. Its OH^− is consumed by HC2H3O2." },
+      { "text": "The buffer's pH is fixed at 7 no matter what.", "why": "Buffers resist pH changes; they don't fix the pH at 7." }
+    ],
+    "explanation": "Rather than changing the pH dramatically, the added OH^− ions react with HC2H3O2 to make H2O and C2H3O2^−, so the pH does not change much."
+  },
+  {
+    "id": "buffer-moles-of-base-absorbed",
+    "type": "numeric",
+    "prompt": "A buffer contains 0.10 mol of HC2H3O2 and 0.10 mol of NaC2H3O2. What is the most NaOH, in moles, that the buffer can neutralize before its HC2H3O2 is used up?",
+    "answer": 0.1,
+    "unit": "mol",
+    "explanation": "Each OH^− reacts with one HC2H3O2: HC2H3O2 + OH^− → H2O + C2H3O2^−. 0.10 mol of HC2H3O2 can neutralize 0.10 mol of NaOH; after that, the solution is no longer a buffer."
+  },
+  {
+    "id": "buffer-acetate-after-base",
+    "type": "numeric",
+    "prompt": "A buffer contains 0.10 mol of HC2H3O2 and 0.10 mol of C2H3O2^−. 0.020 mol of NaOH is added. How many moles of C2H3O2^− are present afterward?",
+    "answer": 0.12,
+    "unit": "mol",
+    "explanation": "HC2H3O2 + OH^− → H2O + C2H3O2^−: the 0.020 mol of OH^− turns 0.020 mol of HC2H3O2 into C2H3O2^−, giving 0.10 + 0.020 = 0.12 mol of C2H3O2^−."
+  },
+  {
+    "id": "buffer-acid-after-acid",
+    "type": "numeric",
+    "prompt": "A buffer contains 0.10 mol of HC2H3O2 and 0.10 mol of C2H3O2^−. 0.030 mol of HCl is added. How many moles of HC2H3O2 are present afterward?",
+    "answer": 0.13,
+    "unit": "mol",
+    "explanation": "H^+ + C2H3O2^− → HC2H3O2: the 0.030 mol of H^+ turns 0.030 mol of C2H3O2^− into HC2H3O2, giving 0.10 + 0.030 = 0.13 mol of HC2H3O2."
+  }
+]

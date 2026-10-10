@@ -88,16 +88,16 @@ Table with two columns and four rows. The first (left) column is labeled "If ℓ
 
 The particular value of mℓ dictates the orientation of an electron's distribution in space. When ℓ is zero, mℓ can be only zero, so there is only one possible orientation. When ℓ is 1, there are three possible orientations for an electron's distribution. When ℓ is 2, there are five possible orientations of electron distribution. This goes on and on for other values of ℓ, but we need not consider any higher values of ℓ here. Each value of mℓ designates a certain orbital. Thus, there is only one orbital when ℓ is zero, three orbitals when ℓ is 1, five orbitals when ℓ is 2, and so forth. The mℓ quantum number has no effect on the energy of an electron unless the electrons are subjected to a magnetic field—hence its name.
 
-The ℓ quantum number dictates the general shape of electron distribution in space (Figure 8.3.4 - Electron Orbitals). Any s orbital is spherically symmetric (Figure 8.3.4a - Electron Orbitals), and there is only one orbital in any s subshell. Any p orbital has a two-lobed, dumbbell-like shape (Figure 8.3.4b - Electron Orbitals); because there are three of them, we normally represent them as pointing along the x-, y-, and z-axes of Cartesian space. The d orbitals are four-lobed rosettes (Figure 8.3.4c - Electron Orbitals) and they are oriented differently in space (the one labeled dz^2 has two lobes and a torus instead of four lobes, but it is equivalent to the other orbitals). When there is more than one possible value of mℓ, each orbital is labeled with one of the possible values. It should be noted that the diagrams in Figure 8.3.4 are estimates of the electron distribution in space, not surfaces electrons are fixed on.
+The ℓ quantum number dictates the general shape of electron distribution in space (Figure 8.3.4 - Electron Orbitals). Any s orbital is spherically symmetric (Figure 8.3.4a - Electron Orbitals), and there is only one orbital in any s subshell. Any p orbital has a two-lobed, dumbbell-like shape (Figure 8.3.4b - Electron Orbitals); because there are three of them, we normally represent them as pointing along the x-, y-, and z-axes of Cartesian space. The d orbitals are four-lobed rosettes (Figure 8.3.4c - Electron Orbitals) and they are oriented differently in space (the one labeled d_z^2 has two lobes and a torus instead of four lobes, but it is equivalent to the other orbitals). When there is more than one possible value of mℓ, each orbital is labeled with one of the possible values. It should be noted that the diagrams in Figure 8.3.4 are estimates of the electron distribution in space, not surfaces electrons are fixed on.
 
 Figure 8.3.4: Electron Orbitals. (a) The lone s orbital is spherical in distribution. (b) The three p orbitals are shaped like dumbbells, and each one points in a different direction. (c) The five d orbitals are rosette in shape, except for the dz2 orbital, which is a "dumbbell + torus" combination. They are all oriented in different directions.
 Electron orbitals. 1 blue, 3 red and five green orbitals from top to bottom.
 
-The final quantum number is the spin quantum number (ms). Electrons and other subatomic particles behave as if they are spinning (we cannot tell if they really are, but they behave as if they are). Electrons themselves have two possible spin states, and because of mathematics, they are assigned the quantum numbers +1/2 and −1/2. These are the only two possible choices for the spin quantum number of an electron.
+The final quantum number is the spin quantum number (m_s). Electrons and other subatomic particles behave as if they are spinning (we cannot tell if they really are, but they behave as if they are). Electrons themselves have two possible spin states, and because of mathematics, they are assigned the quantum numbers +1/2 and −1/2. These are the only two possible choices for the spin quantum number of an electron.
 
 ### Example 8.3.1
 
-Of the set of quantum numbers {n, ℓ, mℓ, ms}, which are possible and which are not allowed?
+Of the set of quantum numbers {n, ℓ, mℓ, m_s}, which are possible and which are not allowed?
 
 a. {3, 2, 1, +1/2}
 b. {2, 2, 0, −1/2}
@@ -111,7 +111,7 @@ c. The principal quantum number n is an integer, but ℓ is not allowed to be ne
 
 ### Exercise 8.3.1
 
-Of the set of quantum numbers {n, ℓ, mℓ, ms}, which are possible and which are not allowed?
+Of the set of quantum numbers {n, ℓ, mℓ, m_s}, which are possible and which are not allowed?
 
 a. {4, 2, −2, 1}
 b. {3, 1, 0, −1/2}

@@ -25,5 +25,239 @@
       }
     ],
     "explanation": "A pH above 7 means the solution is basic; below 7, acidic; exactly 7, neutral."
+  },
+  {
+    "id": "ph-definition",
+    "type": "multiple-choice",
+    "prompt": "How is pH defined?",
+    "choices": [
+      { "text": "pH = −log[H^+]", "correct": true },
+      { "text": "pH = log[H^+]", "why": "Without the minus sign, pH values would be negative for almost every solution. pH = −log[H^+]." },
+      { "text": "pH = −log[OH^−]", "why": "pH is defined from [H^+], not [OH^−]." },
+      { "text": "pH = [H^+] × 10^7", "why": "pH is a logarithmic function of [H^+]: pH = −log[H^+]." }
+    ],
+    "explanation": "pH is commonly defined as a logarithmic function of [H^+]: pH = −log[H^+]."
+  },
+  {
+    "id": "ph-sign-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the pH of a solution with [H^+] = 1.0 × 10^−4 M as log(1.0 × 10^−4) = −4.00. What is wrong?",
+    "choices": [
+      { "text": "The minus sign was left out of pH = −log[H^+]; the pH is 4.00.", "correct": true },
+      { "text": "The pH should be 10.00, because the solution is basic.", "why": "[H^+] = 1.0 × 10^−4 M is greater than 1.0 × 10^−7 M, so the solution is acidic, with pH 4.00." },
+      { "text": "pH can't be calculated from [H^+].", "why": "pH is defined from [H^+]: pH = −log[H^+]." },
+      { "text": "Nothing is wrong; acidic solutions have negative pH.", "why": "Acidic solutions have pH below 7, usually between 0 and 7. The minus sign in the definition makes pH positive here." }
+    ],
+    "explanation": "pH = −log[H^+] = −log(1.0 × 10^−4) = 4.00. The minus sign in the definition is what makes pH a positive number for typical solutions."
+  },
+  {
+    "id": "ph-scale-meaning",
+    "type": "multiple-choice",
+    "prompt": "Which statement about the pH scale is correct?",
+    "choices": [
+      { "text": "pH < 7 is acidic, pH = 7 is neutral, and pH > 7 is basic.", "correct": true },
+      { "text": "pH < 7 is basic, pH = 7 is neutral, and pH > 7 is acidic.", "why": "It's the reverse: more H^+ means a lower pH, so acids have pH below 7." },
+      { "text": "pH = 0 is neutral.", "why": "pH 0 is very acidic. Neutral is pH 7, like pure water." },
+      { "text": "pH is always exactly between 0 and 14.", "why": "pH is usually, but not always, between 0 and 14." }
+    ],
+    "explanation": "If pH < 7, the solution is acidic; if pH = 7, neutral; if pH > 7, basic. pH is usually, but not always, between 0 and 14."
+  },
+  {
+    "id": "ph-classify-seawater",
+    "type": "multiple-choice",
+    "prompt": "Seawater has a typical pH of 8.5. How would you describe it?",
+    "choices": [
+      { "text": "Basic", "correct": true },
+      { "text": "Acidic", "why": "Acidic solutions have pH below 7; 8.5 is above 7." },
+      { "text": "Neutral", "why": "Neutral is exactly pH 7." },
+      { "text": "It can't be told from the pH alone.", "why": "The pH alone is enough: above 7 is basic." }
+    ],
+    "explanation": "With a pH greater than 7, seawater is basic."
+  },
+  {
+    "id": "ph-classify-coffee",
+    "type": "multiple-choice",
+    "prompt": "Black coffee has a typical pH of 5.0. How would you describe it?",
+    "choices": [
+      { "text": "Acidic", "correct": true },
+      { "text": "Basic", "why": "Basic solutions have pH above 7; 5.0 is below 7." },
+      { "text": "Neutral", "why": "Neutral is exactly pH 7." },
+      { "text": "Neither; coffee isn't a solution.", "why": "Coffee is an aqueous solution, and its pH of 5.0 shows it is acidic." }
+    ],
+    "explanation": "With a pH less than 7, black coffee is acidic, like most of the foods in the section's table."
+  },
+  {
+    "id": "ph-highest-hydrogen-concentration",
+    "type": "multiple-choice",
+    "prompt": "Which of these has the highest [H^+]? Typical pH values: stomach acid, 1.7; vinegar, 2.9; milk, 6.9; blood, 7.4.",
+    "choices": [
+      { "text": "Stomach acid", "correct": true },
+      { "text": "Blood", "why": "Blood has the highest pH of the four, which means the lowest [H^+]." },
+      { "text": "Milk", "why": "Milk is close to neutral. The lowest pH, stomach acid, has the highest [H^+]." },
+      { "text": "Vinegar", "why": "Vinegar is acidic, but stomach acid has a lower pH and so a higher [H^+]." }
+    ],
+    "explanation": "Because pH = −log[H^+], the lower the pH, the higher the [H^+]. Stomach acid, at pH 1.7, has the highest [H^+] of the four."
+  },
+  {
+    "id": "ph-lower-when-h-rises",
+    "type": "multiple-choice",
+    "prompt": "As [H^+] in a solution increases, what happens to its pH?",
+    "choices": [
+      { "text": "It decreases.", "correct": true },
+      { "text": "It increases.", "why": "pH = −log[H^+]: the minus sign means more H^+ gives a lower pH." },
+      { "text": "It stays the same.", "why": "pH depends directly on [H^+], so it changes when [H^+] changes." },
+      { "text": "It becomes exactly 7.", "why": "pH 7 is neutral. Adding H^+ makes a solution more acidic, lowering its pH." }
+    ],
+    "explanation": "Because pH = −log[H^+], a higher [H^+] gives a lower pH: more acidic solutions have lower pH values."
+  },
+  {
+    "id": "ph-logarithmic-scale",
+    "type": "multiple-choice",
+    "prompt": "How does [H^+] in a solution of pH 1.0 compare with [H^+] in a solution of pH 2.0?",
+    "choices": [
+      { "text": "It is 10 times greater.", "correct": true },
+      { "text": "It is 2 times greater.", "why": "pH is logarithmic, not linear. One pH unit is a factor of 10 in [H^+]." },
+      { "text": "It is 10 times smaller.", "why": "The lower pH has the higher [H^+]." },
+      { "text": "They are the same.", "why": "Every pH unit is a tenfold change in [H^+]." }
+    ],
+    "explanation": "pH is a logarithmic scale. A solution of pH 1.0 has 10 times the [H^+] of a solution of pH 2.0, which has 10 times the [H^+] of one of pH 3.0, and so on."
+  },
+  {
+    "id": "ph-ratio-three-units",
+    "type": "numeric",
+    "prompt": "How many times greater is [H^+] in a solution of pH 3.0 than in a solution of pH 6.0?",
+    "answer": 1000,
+    "explanation": "Each pH unit is a factor of 10, and the solutions differ by 3 units: 10 × 10 × 10 = 1000."
+  },
+  {
+    "id": "ph-ratio-two-units",
+    "type": "numeric",
+    "prompt": "How many times greater is [H^+] in a solution of pH 2.0 than in a solution of pH 4.0?",
+    "answer": 100,
+    "explanation": "The solutions differ by 2 pH units: 10 × 10 = 100 times the [H^+]."
+  },
+  {
+    "id": "ph-twice-as-acidic-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student says a solution of pH 3 is twice as acidic as a solution of pH 6, because 6 is twice 3. What is wrong?",
+    "choices": [
+      { "text": "pH is logarithmic: 3 pH units is a factor of 1000 in [H^+].", "correct": true },
+      { "text": "The pH 6 solution is the more acidic one.", "why": "The lower pH is more acidic. pH 3 has the higher [H^+]." },
+      { "text": "The difference is a factor of 3.", "why": "pH differences aren't simple factors; each unit is a factor of 10, so 3 units is 1000." },
+      { "text": "Nothing is wrong.", "why": "pH is a logarithmic scale, not a linear one." }
+    ],
+    "explanation": "Each pH unit represents a tenfold change in [H^+], so pH 3 has 10^3 = 1000 times the [H^+] of pH 6."
+  },
+  {
+    "id": "ph-range",
+    "type": "multiple-choice",
+    "prompt": "What range do pH values usually fall in?",
+    "choices": [
+      { "text": "Usually, but not always, between 0 and 14", "correct": true },
+      { "text": "Always exactly between 0 and 14", "why": "pH is usually between 0 and 14, but very concentrated acids or bases can fall outside that range." },
+      { "text": "Between −7 and 7", "why": "Neutral is pH 7, and acidic and basic solutions fall on either side, usually from 0 to 14." },
+      { "text": "Between 1 and 100", "why": "The pH scale usually runs from 0 to 14." }
+    ],
+    "explanation": "pH is usually (but not always) between 0 and 14. The pH scale is this range of values that describes the acidity or basicity of a solution."
+  },
+  {
+    "id": "ph-most-foods-acidic",
+    "type": "multiple-choice",
+    "prompt": "The section's table lists typical pH values of common substances, including lemon juice, soda, wine, coffee, and milk. What does it show about foods?",
+    "choices": [
+      { "text": "Most of the food items listed are acidic.", "correct": true },
+      { "text": "Most of the food items listed are basic.", "why": "Lemon juice, vinegar, soda, wine, and coffee all have pH below 7." },
+      { "text": "All foods are neutral.", "why": "Only pure water is listed at exactly pH 7; most foods are acidic." },
+      { "text": "Foods have no measurable pH.", "why": "The table gives pH values for many foods and drinks." }
+    ],
+    "explanation": "Several food items are in the table, and most of them are acidic, with pH values below 7."
+  },
+  {
+    "id": "ph-from-h-whole-number",
+    "type": "numeric",
+    "prompt": "What is the pH of a solution with [H^+] = 1.0 × 10^−3 M?",
+    "answer": 3,
+    "tolerance": 0.005,
+    "explanation": "pH = −log(1.0 × 10^−3) = 3.00."
+  },
+  {
+    "id": "ph-from-h-basic",
+    "type": "numeric",
+    "prompt": "What is the pH of a solution with [H^+] = 6.3 × 10^−9 M?",
+    "answer": 8.2007,
+    "tolerance": 0.005,
+    "explanation": "pH = −log(6.3 × 10^−9) = 8.20. The pH is above 7, so the solution is basic."
+  },
+  {
+    "id": "ph-from-h-strongly-acidic",
+    "type": "numeric",
+    "prompt": "What is the pH of a solution with [H^+] = 4.5 × 10^−2 M?",
+    "answer": 1.3468,
+    "tolerance": 0.005,
+    "explanation": "pH = −log(4.5 × 10^−2) = 1.35."
+  },
+  {
+    "id": "ph-strong-acid",
+    "type": "numeric",
+    "prompt": "HCl is a strong acid. What is the pH of a 0.010 M HCl solution?",
+    "answer": 2,
+    "tolerance": 0.005,
+    "explanation": "HCl is 100% ionized, so [H^+] = 0.010 M = 1.0 × 10^−2 M, and pH = −log(1.0 × 10^−2) = 2.00."
+  },
+  {
+    "id": "ph-strong-base",
+    "type": "numeric",
+    "prompt": "NaOH is a strong base. What is the pH of a 0.0010 M NaOH solution?",
+    "answer": 11,
+    "tolerance": 0.005,
+    "explanation": "[OH^−] = 1.0 × 10^−3 M, so [H^+] = (1.0 × 10^−14)/(1.0 × 10^−3) = 1.0 × 10^−11 M, and pH = −log(1.0 × 10^−11) = 11.00."
+  },
+  {
+    "id": "ph-from-hydroxide",
+    "type": "numeric",
+    "prompt": "A solution has [OH^−] = 2.5 × 10^−5 M. What is its pH?",
+    "answer": 9.3979,
+    "tolerance": 0.005,
+    "explanation": "[H^+] = (1.0 × 10^−14)/(2.5 × 10^−5) = 4.0 × 10^−10 M, so pH = −log(4.0 × 10^−10) = 9.40."
+  },
+  {
+    "id": "ph-barium-hydroxide",
+    "type": "numeric",
+    "prompt": "Ba(OH)2 is a strong base. What is the pH of a 0.0050 M Ba(OH)2 solution?",
+    "answer": 12,
+    "tolerance": 0.005,
+    "explanation": "Two OH^− per formula unit: [OH^−] = 0.010 M, so [H^+] = (1.0 × 10^−14)/0.010 = 1.0 × 10^−12 M, and pH = 12.00."
+  },
+  {
+    "id": "ph-hydrogen-from-whole-ph",
+    "type": "numeric",
+    "prompt": "What is [H^+] of a solution with a pH of 5.00?",
+    "answer": 1e-5,
+    "unit": "M",
+    "explanation": "[H^+] = 10^−pH = 10^−5.00 = 1.0 × 10^−5 M."
+  },
+  {
+    "id": "ph-hydrogen-from-basic-ph",
+    "type": "numeric",
+    "prompt": "What is [H^+] of a solution with a pH of 8.60?",
+    "answer": 2.512e-9,
+    "unit": "M",
+    "explanation": "[H^+] = 10^−8.60 = 2.5 × 10^−9 M."
+  },
+  {
+    "id": "ph-hydrogen-from-acidic-ph",
+    "type": "numeric",
+    "prompt": "What is [H^+] of a solution with a pH of 2.35?",
+    "answer": 0.004467,
+    "unit": "M",
+    "explanation": "[H^+] = 10^−2.35 = 4.5 × 10^−3 M."
+  },
+  {
+    "id": "ph-hydroxide-from-ph",
+    "type": "numeric",
+    "prompt": "What is [OH^−] of a solution with a pH of 4.00?",
+    "answer": 1e-10,
+    "unit": "M",
+    "explanation": "[H^+] = 10^−4.00 = 1.0 × 10^−4 M, so [OH^−] = (1.0 × 10^−14)/(1.0 × 10^−4) = 1.0 × 10^−10 M."
   }
 ]

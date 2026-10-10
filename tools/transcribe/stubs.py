@@ -85,9 +85,11 @@ def license_and_author(page):
     return license_, (AUTHORS.get(name.lower(), name.replace("-", " ").title()) if name else None)
 
 
-# Letters that Unicode decomposition leaves alone ("Brønsted" must become "Bronsted").
+# Letters that Unicode decomposition leaves alone ("Brønsted" must become "Bronsted"),
+# and dashes, which separate words ("Chemistry Matters—Gasoline" → "Chemistry-Matters-Gasoline").
 LETTERS = str.maketrans({"ø": "o", "Ø": "O", "æ": "ae", "Æ": "AE", "œ": "oe", "Œ": "OE",
-                         "ß": "ss", "ł": "l", "Ł": "L", "đ": "d", "Đ": "D", "þ": "th", "Þ": "Th"})
+                         "ß": "ss", "ł": "l", "Ł": "L", "đ": "d", "Đ": "D", "þ": "th", "Þ": "Th",
+                         "—": " ", "–": " ", "‑": "-"})
 
 
 def slug(text):

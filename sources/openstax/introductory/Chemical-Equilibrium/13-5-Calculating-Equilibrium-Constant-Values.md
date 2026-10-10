@@ -9,11 +9,11 @@ license: "CC BY-NC-SA 3.0"
 
 ### Learning Objective
 
-- Calculate equilibrium concentrations from the values of the initial amounts and the Keq.
+- Calculate equilibrium concentrations from the values of the initial amounts and the K_eq.
 
-There are some circumstances in which, given some initial amounts and the Keq, you will have to determine the concentrations of all species when equilibrium is achieved. Such calculations are not difficult to do, especially if a consistent approach is applied. We will consider such an approach here.
+There are some circumstances in which, given some initial amounts and the K_eq, you will have to determine the concentrations of all species when equilibrium is achieved. Such calculations are not difficult to do, especially if a consistent approach is applied. We will consider such an approach here.
 
-Suppose we have this simple equilibrium. Its associated Keq is 4.0, and the initial concentration of each reactant is 1.0 M:
+Suppose we have this simple equilibrium. Its associated K_eq is 4.0, and the initial concentration of each reactant is 1.0 M:
 
 H2(g) (1.0M) + Cl2(g) (1.0M) ⇌ 2HCl(g)    K_eq = 4.0
 
@@ -25,7 +25,7 @@ How much HCl is made? We start with zero, but we also see that 2 mol of HCl are 
 
 H2(g) ((1.0 − x)M) + Cl2(g) ((1.0 − x)M) ⇌ 2HCl(g) (2xM)    K_eq = 4.0
 
-We can substitute these concentrations into the Keq expression for this reaction and combine it with the known value of Keq:
+We can substitute these concentrations into the K_eq expression for this reaction and combine it with the known value of K_eq:
 
 K_eq = ([HCl]^2)/([H2][Cl2]) = ((2x)^2)/((1 − x)(1 − x)) = 4.0
 
@@ -51,27 +51,27 @@ Now we have to remind ourselves what x is—the amount of H2 and Cl2 that reacte
 
 [Note: reproduced as printed; these are two results run together: 1.0 − x = 1.0 − 0.50 = 0.50 M = [H2] = [Cl2], and 2x = 2(0.50) = 1.0 M = [HCl].]
 
-The units are assumed to be molarity. To check, we simply substitute these concentrations and verify that we get the numerical value of the Keq, in this case 4.0:
+The units are assumed to be molarity. To check, we simply substitute these concentrations and verify that we get the numerical value of the K_eq, in this case 4.0:
 
 ((1.0)^2)/((0.50)(0.50)) = 4.0
 
-We formalize this process by introducing the ICE chart, where ICE stands for initial, change, and equilibrium. The initial values go in the first row of the chart. The change values, usually algebraic expressions because we do not yet know their exact numerical values, go in the next row. However, the change values must be in the proper stoichiometric ratio as indicated by the balanced chemical equation. Finally, the equilibrium expressions in the last row are a combination of the initial value and the change value for each species. The expressions in the equilibrium row are substituted into the Keq expression, which yields an algebraic equation that we try to solve.
+We formalize this process by introducing the ICE chart, where ICE stands for initial, change, and equilibrium. The initial values go in the first row of the chart. The change values, usually algebraic expressions because we do not yet know their exact numerical values, go in the next row. However, the change values must be in the proper stoichiometric ratio as indicated by the balanced chemical equation. Finally, the equilibrium expressions in the last row are a combination of the initial value and the change value for each species. The expressions in the equilibrium row are substituted into the K_eq expression, which yields an algebraic equation that we try to solve.
 
 The ICE chart for the above example would look like this:
 
-|  | H2(g) | + | Cl2(g) | ⇄ | 2HCl(g) | Keq = 4.0 |
+|  | H2(g) | + | Cl2(g) | ⇄ | 2HCl(g) | K_eq = 4.0 |
 | --- | --- | --- | --- | --- | --- | --- |
 | I | 1.0 |  | 1.0 |  | 0 |  |
 | C | −x |  | −x |  | +2x |  |
 | E | 1.0 − x |  | 1.0 − x |  | +2x |  |
 
-Substituting the last row into the expression for the Keq yields
+Substituting the last row into the expression for the K_eq yields
 
 K_eq = ([HCl]^2)/([H2][Cl2]) = ((2x)^2)/((1 − x)(1 − x)) = 4.0
 
 which, of course, is the same expression we have already solved and yields the same answers for the equilibrium concentrations. The ICE chart is a more formalized way to do these types of problems. The + sign is included explicitly in the change row of the ICE chart to avoid any confusion.
 
-Sometimes when an ICE chart is set up and the Keq expression is constructed, a more complex algebraic equation will result. One of the more common equations has an x^2 term in it and is called a quadratic equation. There will be two values possible for the unknown x, and for a quadratic equation with the general formula ax^2 + bx + c = 0 (where a, b, and c are the coefficients of the quadratic equation), the two possible values are as follows:
+Sometimes when an ICE chart is set up and the K_eq expression is constructed, a more complex algebraic equation will result. One of the more common equations has an x^2 term in it and is called a quadratic equation. There will be two values possible for the unknown x, and for a quadratic equation with the general formula ax^2 + bx + c = 0 (where a, b, and c are the coefficients of the quadratic equation), the two possible values are as follows:
 
 x = (−b±√(b^2 − 4ac))/(2a)
 
@@ -111,7 +111,7 @@ At equilibrium, the resulting concentrations will be a combination of the initia
 | C | −x |  | +x |  | +x |
 | E | 0.55 − x |  | +x |  | +x |
 
-The expressions in the equilibrium row go into the Keq expression:
+The expressions in the equilibrium row go into the K_eq expression:
 
 K_eq = ([CO][I2])/([COI2]) = 0.00088 = ((x)(x))/((0.55 − x)))
 
@@ -137,7 +137,7 @@ Going back to determine the final concentrations using the expressions in the E 
 
 [Note: reproduced as printed; these are three results run together: [COI2] = 0.55 − 0.0216 = 0.53 M, [CO] = x = 0.0216 M, and [I2] = x = 0.0216 M.]
 
-You can verify that these numbers are correct by substituting them into the Keq expression and evaluating and comparing to the known Keq value.
+You can verify that these numbers are correct by substituting them into the K_eq expression and evaluating and comparing to the known K_eq value.
 
 ### Exercise 13.5.1
 

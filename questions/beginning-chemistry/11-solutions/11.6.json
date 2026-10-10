@@ -1,0 +1,287 @@
+[
+  {
+    "id": "colligative-definition",
+    "type": "multiple-choice",
+    "prompt": "What do colligative properties depend on?",
+    "choices": [
+      { "text": "The number of solute particles, not their identity", "correct": true },
+      { "text": "The identity of the solute, not how much of it there is", "why": "It's the reverse: colligative means \"related to the number\". Any solute particle has the same effect." },
+      { "text": "The color and odor of the solute", "why": "Colligative properties depend only on how many solute particles there are." },
+      { "text": "Only the temperature of the solution", "why": "Temperature matters for some (like osmotic pressure), but what makes them colligative is that they depend on the number of solute particles." }
+    ],
+    "explanation": "Colligative properties are related to the number of solute particles, not their identities; the word comes from the Greek for \"related to the number\"."
+  },
+  {
+    "id": "colligative-four-properties",
+    "type": "multiple-choice",
+    "prompt": "Which list gives the four colligative properties?",
+    "choices": [
+      { "text": "Vapor pressure depression, boiling point elevation, freezing point depression, and osmotic pressure", "correct": true },
+      { "text": "Density, color, solubility, and boiling point", "why": "Density, color, and solubility depend on what the solute is. Colligative properties depend only on how many particles there are." },
+      { "text": "Vapor pressure elevation, boiling point depression, freezing point elevation, and osmotic pressure", "why": "The directions are reversed: a solute lowers vapor pressure, raises the boiling point, and lowers the freezing point." },
+      { "text": "Molarity, molality, mass percentage, and mole fraction", "why": "Those are units of concentration, used to calculate colligative properties." }
+    ],
+    "explanation": "The four colligative properties are vapor pressure depression, boiling point elevation, freezing point depression, and osmotic pressure."
+  },
+  {
+    "id": "colligative-mole-fraction-range",
+    "type": "multiple-choice",
+    "prompt": "Which statement about mole fraction is true?",
+    "choices": [
+      { "text": "It is a number between 0 and 1 with no units, and the mole fractions of all components add up to 1.", "correct": true },
+      { "text": "It has units of mol/L.", "why": "Mole fraction is moles divided by moles, so it has no units. mol/L is molarity." },
+      { "text": "It can be larger than 1 for a concentrated solution.", "why": "A component's moles can't exceed the total moles, so a mole fraction is never more than 1." },
+      { "text": "It is the moles of solute divided by the kilograms of solvent.", "why": "That is molality. Mole fraction divides by the total moles in the sample." }
+    ],
+    "explanation": "The mole fraction of a component is its moles divided by the total moles. It is always between 0 and 1 (inclusive), has no units, and the mole fractions of all substances in a mixture add up to 1."
+  },
+  {
+    "id": "colligative-mole-fraction-moles",
+    "type": "numeric",
+    "prompt": "A solution contains 1.00 mol of ethanol and 4.00 mol of water. What is the mole fraction of ethanol?",
+    "answer": 0.2,
+    "explanation": "χ = moles of ethanol / total moles = 1.00 mol / (1.00 mol + 4.00 mol) = 0.200."
+  },
+  {
+    "id": "colligative-mole-fraction-grams",
+    "type": "numeric",
+    "prompt": "A solution is made by mixing 9.21 g of ethanol, C2H5OH, with 36.0 g of water. What is the mole fraction of ethanol? Molar masses: C2H5OH, 46.07 g/mol; H2O, 18.02 g/mol.",
+    "answer": 0.09097,
+    "explanation": "9.21 g / 46.07 g/mol = 0.200 mol ethanol; 36.0 g / 18.02 g/mol = 1.998 mol water. χ = 0.200 / (0.200 + 1.998) = 0.0910."
+  },
+  {
+    "id": "colligative-nonvolatile",
+    "type": "multiple-choice",
+    "prompt": "What does it mean that a solute is nonvolatile?",
+    "choices": [
+      { "text": "It does not have a significant vapor pressure of its own.", "correct": true },
+      { "text": "It does not dissolve in the solvent.", "why": "A nonvolatile solute can dissolve perfectly well; it just doesn't evaporate significantly." },
+      { "text": "It does not react with the solvent.", "why": "Nonvolatile is about vapor pressure, not reactivity." },
+      { "text": "It splits into ions when it dissolves.", "why": "That describes ionic solutes. Nonvolatile means the solute has no significant vapor pressure." }
+    ],
+    "explanation": "The term nonvolatile describes a solute that does not have a significant vapor pressure. For such solutes, the solution's vapor pressure is lowered by an amount that depends on the fraction of solute particles."
+  },
+  {
+    "id": "colligative-vapor-pressure-why-lower",
+    "type": "multiple-choice",
+    "prompt": "How does the section explain why a solution with a nonvolatile solute has a lower vapor pressure than the pure solvent?",
+    "choices": [
+      { "text": "Solute particles take positions at the surface in place of solvent particles, so fewer solvent particles can evaporate.", "correct": true },
+      { "text": "The solute reacts with the solvent and uses it up.", "why": "No reaction is needed. Solute particles simply occupy surface positions that solvent particles would otherwise hold." },
+      { "text": "The solute makes the solution colder.", "why": "Vapor pressure is compared at the same temperature. The lowering comes from fewer solvent particles at the surface." },
+      { "text": "The solute evaporates instead of the solvent.", "why": "A nonvolatile solute doesn't evaporate significantly; it just takes up surface positions." }
+    ],
+    "explanation": "Vapor pressure depression is rationalized by presuming that solute particles take positions at the surface in place of solvent particles, so not as many solvent particles can evaporate."
+  },
+  {
+    "id": "colligative-raoult-basic",
+    "type": "numeric",
+    "prompt": "The mole fraction of water in a sugar solution is 0.900. The vapor pressure of pure water at this temperature is 23.8 torr. Using Raoult's law, what is the vapor pressure of the solution, in torr?",
+    "answer": 21.42,
+    "unit": "torr",
+    "explanation": "P_soln = χ_solv P*_solv = (0.900)(23.8 torr) = 21.4 torr."
+  },
+  {
+    "id": "colligative-raoult-from-grams",
+    "type": "numeric",
+    "prompt": "A solution is made by dissolving 18.0 g of glucose, C6H12O6, a nonvolatile solute, in 90.0 g of water. The vapor pressure of pure water at this temperature is 23.8 torr. What is the vapor pressure of the solution, in torr? Molar masses: C6H12O6, 180.16 g/mol; H2O, 18.02 g/mol.",
+    "answer": 23.33,
+    "unit": "torr",
+    "explanation": "18.0 g / 180.16 g/mol = 0.0999 mol glucose; 90.0 g / 18.02 g/mol = 4.994 mol water. χ_water = 4.994 / (4.994 + 0.0999) = 0.9804, so P_soln = (0.9804)(23.8 torr) = 23.3 torr."
+  },
+  {
+    "id": "colligative-vapor-pressure-lowering",
+    "type": "numeric",
+    "prompt": "The mole fraction of a nonvolatile solute in a solution is 0.0500. The vapor pressure of the pure solvent is 100.0 torr. By how many torr is the vapor pressure of the solution lower than that of the pure solvent?",
+    "answer": 5,
+    "unit": "torr",
+    "explanation": "χ_solv = 1 − 0.0500 = 0.950, so P_soln = (0.950)(100.0 torr) = 95.0 torr. The lowering is 100.0 − 95.0 = 5.0 torr."
+  },
+  {
+    "id": "colligative-boiling-why-higher",
+    "type": "multiple-choice",
+    "prompt": "Why does a solution of a nonvolatile solute boil at a higher temperature than the pure solvent?",
+    "choices": [
+      { "text": "Its vapor pressure is lower, so a higher temperature is needed for its vapor pressure to reach the surrounding pressure.", "correct": true },
+      { "text": "The solute particles absorb the heat meant for the solvent.", "why": "The reason is vapor pressure: the solution's is lower, so it must be heated more to reach 1 atm." },
+      { "text": "The solute makes the solvent's molecules heavier.", "why": "The solvent's molecules are unchanged. The solution's lower vapor pressure is what raises the boiling point." },
+      { "text": "Its vapor pressure is higher, so it needs more energy to boil.", "why": "A nonvolatile solute lowers the vapor pressure. That is why a higher temperature is needed." }
+    ],
+    "explanation": "A liquid boils when its vapor pressure equals the surrounding pressure. A solution's vapor pressure is depressed, so it takes a higher temperature for it to reach 1.00 atm: boiling point elevation."
+  },
+  {
+    "id": "colligative-bp-water",
+    "type": "numeric",
+    "prompt": "What is the boiling point, in °C, of a 1.20 m solution of a nonvolatile molecular solute in water? For water, the boiling point is 100.00°C and Kb = 0.512°C/m.",
+    "answer": 100.61,
+    "unit": "°C",
+    "tolerance": 0.0002,
+    "explanation": "ΔTb = mKb = (1.20 m)(0.512°C/m) = 0.614°C. Boiling points are always elevated, so add it: 100.00°C + 0.61°C = 100.61°C."
+  },
+  {
+    "id": "colligative-delta-tb-benzene",
+    "type": "numeric",
+    "prompt": "By how many degrees Celsius is the boiling point of benzene, C6H6, raised in a 0.800 m solution of a nonvolatile solute? For benzene, Kb = 2.53°C/m.",
+    "answer": 2.024,
+    "unit": "°C",
+    "explanation": "ΔTb = mKb = (0.800 m)(2.53°C/m) = 2.02°C. This is the change in boiling point, not the new boiling point."
+  },
+  {
+    "id": "colligative-bp-ccl4",
+    "type": "numeric",
+    "prompt": "What is the boiling point, in °C, of a 1.50 m solution of a nonvolatile solute in CCl4? For CCl4, the boiling point is 76.8°C and Kb = 4.95°C/m.",
+    "answer": 84.2,
+    "unit": "°C",
+    "tolerance": 0.002,
+    "explanation": "ΔTb = (1.50 m)(4.95°C/m) = 7.43°C, so the boiling point is 76.8°C + 7.4°C = 84.2°C."
+  },
+  {
+    "id": "colligative-delta-is-not-boiling-point-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates ΔTb = 0.51°C for a sugar solution in water and reports that the solution boils at 0.51°C. What is wrong?",
+    "choices": [
+      { "text": "0.51°C is the change in boiling point; it must be added to water's boiling point, so the solution boils at 100.51°C.", "correct": true },
+      { "text": "The change should be subtracted from 100.00°C, giving 99.49°C.", "why": "Boiling points of solutions are always higher than the pure solvent's, so the change is added." },
+      { "text": "ΔTb should have been calculated with Kf instead of Kb.", "why": "Kb is right for boiling. The error is reporting the change as if it were the boiling point." },
+      { "text": "Nothing is wrong.", "why": "Water itself boils at 100.00°C, and a solute raises that. ΔTb is how much it rises." }
+    ],
+    "explanation": "ΔTb = mKb gives the change in boiling point, not the new boiling point. Because boiling points are always elevated, add it to the pure solvent's boiling point."
+  },
+  {
+    "id": "colligative-fp-water",
+    "type": "numeric",
+    "prompt": "What is the freezing point, in °C, of a 2.00 m solution of sugar (a nonvolatile molecular solute) in water? For water, the freezing point is 0.00°C and Kf = 1.86°C/m.",
+    "answer": -3.72,
+    "unit": "°C",
+    "explanation": "ΔTf = mKf = (2.00 m)(1.86°C/m) = 3.72°C. Freezing points always decrease, so subtract: 0.00°C − 3.72°C = −3.72°C."
+  },
+  {
+    "id": "colligative-fp-benzene",
+    "type": "numeric",
+    "prompt": "What is the freezing point, in °C, of a 0.500 m solution of a nonvolatile solute in benzene, C6H6? For benzene, the freezing point is 5.51°C and Kf = 4.90°C/m.",
+    "answer": 3.06,
+    "unit": "°C",
+    "explanation": "ΔTf = (0.500 m)(4.90°C/m) = 2.45°C, so the freezing point is 5.51°C − 2.45°C = 3.06°C."
+  },
+  {
+    "id": "colligative-fp-acetic-acid",
+    "type": "numeric",
+    "prompt": "What is the freezing point, in °C, of a 0.250 m solution of a nonvolatile solute in acetic acid, HC2H3O2? For acetic acid, the freezing point is 16.60°C and Kf = 3.90°C/m.",
+    "answer": 15.63,
+    "unit": "°C",
+    "tolerance": 0.003,
+    "explanation": "ΔTf = (0.250 m)(3.90°C/m) = 0.975°C, so the freezing point is 16.60°C − 0.98°C = 15.63°C."
+  },
+  {
+    "id": "colligative-fp-add-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student finds ΔTf = 2.45°C for a solution in benzene (freezing point 5.51°C) and reports the solution's freezing point as 7.96°C. What is wrong?",
+    "choices": [
+      { "text": "Freezing points always decrease, so ΔTf must be subtracted: 5.51°C − 2.45°C = 3.06°C.", "correct": true },
+      { "text": "ΔTf should be multiplied by the freezing point, not added.", "why": "ΔTf is a temperature change, so it's subtracted from the freezing point; multiplying makes no sense." },
+      { "text": "The student should have used Kb instead of Kf.", "why": "Kf is right for freezing. The mistake is adding the change instead of subtracting it." },
+      { "text": "Nothing is wrong; solutes raise freezing points.", "why": "Solute particles interfere with the solvent particles coming together, so the solution freezes at a lower temperature." }
+    ],
+    "explanation": "ΔTf = mKf gives the change in freezing point. Because freezing points always decrease, subtract it from the normal freezing point of the solvent."
+  },
+  {
+    "id": "colligative-fp-why-lower",
+    "type": "multiple-choice",
+    "prompt": "How does the section explain why a solution freezes at a lower temperature than the pure solvent?",
+    "choices": [
+      { "text": "Solute particles interfere with solvent particles coming together to form a solid, so a lower temperature is needed.", "correct": true },
+      { "text": "Solute particles release heat as they dissolve, keeping the solution warm.", "why": "The explanation is that solute particles get in the way of the solvent particles solidifying." },
+      { "text": "The solution's vapor pressure is higher, which prevents freezing.", "why": "A nonvolatile solute lowers vapor pressure. Freezing point depression comes from solute particles interfering with solidification." },
+      { "text": "Solute particles freeze first and use up the cold.", "why": "It's the solvent that freezes; the solute particles get in its way." }
+    ],
+    "explanation": "Think of solute particles as interfering with solvent particles coming together to make a solid, so it takes a lower temperature to get the solvent particles to solidify. This is freezing point depression."
+  },
+  {
+    "id": "colligative-molality-from-fp",
+    "type": "numeric",
+    "prompt": "A solution of a nonvolatile molecular solute in water freezes at −0.93°C. What is its molality? For water, the freezing point is 0.00°C and Kf = 1.86°C/m.",
+    "answer": 0.5,
+    "unit": "m",
+    "explanation": "ΔTf = 0.00°C − (−0.93°C) = 0.93°C. From ΔTf = mKf, m = 0.93°C / (1.86°C/m) = 0.50 m."
+  },
+  {
+    "id": "colligative-molality-from-bp",
+    "type": "numeric",
+    "prompt": "A solution of a nonvolatile molecular solute in water boils at 101.024°C. What is its molality? For water, the boiling point is 100.00°C and Kb = 0.512°C/m.",
+    "answer": 2,
+    "unit": "m",
+    "explanation": "ΔTb = 101.024°C − 100.00°C = 1.024°C. From ΔTb = mKb, m = 1.024°C / (0.512°C/m) = 2.00 m."
+  },
+  {
+    "id": "colligative-road-salt",
+    "type": "multiple-choice",
+    "prompt": "Why do road crews spread salt on icy roads?",
+    "choices": [
+      { "text": "The salt forms a solution with a lower freezing point, so ice melts and runs off instead of re-forming.", "correct": true },
+      { "text": "Salt reacts with ice to produce heat.", "why": "The effect is colligative: the solution has a lower freezing point than pure water." },
+      { "text": "Salt raises the freezing point, so the water freezes into a rougher surface.", "why": "Solutes lower the freezing point; that's why the ice liquefies." },
+      { "text": "Salt raises the boiling point of the water.", "why": "Boiling point elevation doesn't matter on an icy road. Freezing point depression does." }
+    ],
+    "explanation": "Compounds sprinkled on ice make solutions with a lower freezing point, so rather than forming slippery ice, the water stays liquid and runs off. Antifreeze in car radiators works the same way."
+  },
+  {
+    "id": "colligative-osmosis-direction",
+    "type": "multiple-choice",
+    "prompt": "Two solutions of different concentrations are separated by a semipermeable membrane. What happens during osmosis?",
+    "choices": [
+      { "text": "Solvent molecules move from the dilute side to the concentrated side, while the solute stays where it is.", "correct": true },
+      { "text": "Solute particles move from the concentrated side to the dilute side.", "why": "In osmosis the solute remains on its original side; only solvent molecules move through the membrane." },
+      { "text": "Solvent moves from the concentrated side to the dilute side.", "why": "Solvent moves toward the concentrated side, diluting it until the concentrations are equal." },
+      { "text": "Nothing moves, because the membrane blocks everything.", "why": "A semipermeable membrane lets certain small molecules, such as the solvent, pass through." }
+    ],
+    "explanation": "In osmosis, solvent molecules pass through the semipermeable membrane from the dilute solution to the concentrated one until the concentrations are equal. The solute remains on its original side."
+  },
+  {
+    "id": "colligative-osmotic-pressure",
+    "type": "numeric",
+    "prompt": "What is the osmotic pressure, in atm, of a 0.100 M solution of a molecular solute at 25°C? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 2.445,
+    "unit": "atm",
+    "explanation": "T = 25 + 273 = 298 K. Π = MRT = (0.100 mol/L)(0.08205 L·atm/(mol·K))(298 K) = 2.45 atm."
+  },
+  {
+    "id": "colligative-osmotic-body-temperature",
+    "type": "numeric",
+    "prompt": "What is the osmotic pressure, in atm, of a 0.300 M glucose solution at body temperature, 37°C? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 7.631,
+    "unit": "atm",
+    "explanation": "T = 37 + 273 = 310 K. Π = MRT = (0.300 mol/L)(0.08205 L·atm/(mol·K))(310 K) = 7.63 atm."
+  },
+  {
+    "id": "colligative-molarity-from-osmotic",
+    "type": "numeric",
+    "prompt": "A solution of a molecular solute has an osmotic pressure of 4.89 atm at 25°C. What is its molarity? Use R = 0.08205 L·atm/(mol·K).",
+    "answer": 0.2,
+    "unit": "M",
+    "explanation": "Rearrange Π = MRT: M = Π / RT = 4.89 atm / [(0.08205 L·atm/(mol·K))(298 K)] = 0.200 M."
+  },
+  {
+    "id": "colligative-hypotonic-cell",
+    "type": "multiple-choice",
+    "prompt": "A red blood cell is placed in a hypotonic solution, one with a lower concentration than normal blood serum. What happens to the cell?",
+    "choices": [
+      { "text": "It swells, as solvent moves into the cell to dilute the solutes inside.", "correct": true },
+      { "text": "It shrinks, as water leaves the cell.", "why": "That happens in a hypertonic solution. In a hypotonic one, water moves into the more concentrated cell." },
+      { "text": "Nothing happens, because cell membranes block water.", "why": "Cell membranes are semipermeable; water passes through them." },
+      { "text": "Solutes leave the cell to dilute the surrounding solution.", "why": "In osmosis the solvent moves, not the solute. Water flows into the cell." }
+    ],
+    "explanation": "In a hypotonic solution, solvent moves through the cell membrane into the cell to dilute the solutes inside, so the cell plumps up. Only in an isotonic solution can the red blood cell do its job."
+  },
+  {
+    "id": "colligative-seawater",
+    "type": "multiple-choice",
+    "prompt": "Why shouldn't you drink seawater if you're stranded in a lifeboat on the ocean?",
+    "choices": [
+      { "text": "Seawater has a higher osmotic pressure than most body fluids, so it pulls water out of your cells.", "correct": true },
+      { "text": "Seawater has a lower osmotic pressure than body fluids, so your cells swell and burst.", "why": "Seawater is more concentrated than body fluids, so water moves out of the cells, not into them." },
+      { "text": "The salt in seawater freezes inside the body.", "why": "The danger is osmosis: water is drawn out of your cells to dilute the seawater." },
+      { "text": "Seawater has a higher boiling point, so the body can't use it.", "why": "Boiling point doesn't matter here. Seawater's higher osmotic pressure pulls water out of your cells." }
+    ],
+    "explanation": "Seawater has a higher osmotic pressure than most of the fluids in your body. Drinking it pulls water out of your cells as osmosis works to dilute the seawater, so your cells die of thirst."
+  }
+]

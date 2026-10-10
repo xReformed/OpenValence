@@ -52,7 +52,7 @@ Every converted section should come out `identical`. A difference is either a re
 python tools/transcribe/fill.py sources/openstax/introductory --force
 ```
 
-Sections the converter didn't produce are safe from that command. *Chemistry* 1e and chapters 1–7 of *Beginning Chemistry* were transcribed separately, by hand and through an epub/pandoc pipeline. They have no downloaded pages, so they are skipped. `fill.py` also refuses to replace any section whose text matches the conversion by less than 80%. To re-transcribe such a section from scratch, empty its body first.
+Sections the converter didn't produce are safe from that command. Chapters 1–7 of *Beginning Chemistry* were transcribed separately, by hand and through an epub/pandoc pipeline. They have no downloaded pages, so they are skipped. `fill.py` also refuses to replace any section whose text matches the conversion by less than 80%. To re-transcribe such a section from scratch, empty its body first.
 
 ## Files
 
@@ -69,5 +69,5 @@ Sections the converter didn't produce are safe from that command. *Chemistry* 1e
 ## Known quirks
 
 - `scan.py` flags the braces in the quantum-number sets of 8.3 and 8.4 (`{1, 0, 0, +1/2}`); they are printed that way in the source.
-- LibreTexts numbers some appendices as a chapter (*Chemistry* 1e's "22: Appendices" of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
+- LibreTexts numbers some appendices as a chapter (*Chemistry* 1e has a "22: Appendices" chapter of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
 - LibreTexts pages are inconsistent, so the converter carries many page-specific repairs (broken `alt` attributes, pre-rendered MathJax, Example boxes closed mid-solution). Each is commented where it is handled in `lt2md.py`.

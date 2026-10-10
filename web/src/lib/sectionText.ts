@@ -9,7 +9,8 @@ const SECTIONS = import.meta.glob<string>("../../../sources/openstax/*/*/*.md", 
 export async function loadSectionText(file: string): Promise<string | undefined> {
   const load = SECTIONS[`../../../sources/openstax/${file}`];
   if (!load) return undefined;
-  const raw = await load();
+  /* A Windows checkout (core.autocrlf) can give CRLF line endings. */
+  const raw = (await load()).replace(/\r\n/g, "\n");
   /* Drop the YAML front matter; the page shows it as attribution instead. */
-  return raw.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, "").trim();
+  return raw.replace(/^---\n[\s\S]*?\n---\n?/, "").trim();
 }

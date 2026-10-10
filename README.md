@@ -12,15 +12,15 @@ Retrieval works end to end from the command line, and the web app is built — b
 
 | Piece | State |
 | ----- | ----- |
-| Corpus: OpenStax *Chemistry* 1e | **Complete** — all 21 chapters, 124 sections |
 | Corpus: *Beginning Chemistry* (Ball) | **Complete** — all 16 chapters, 100 sections |
+| Corpus: OpenStax *Organic Chemistry* | **Started** — chapter 1 of 31 (16 of 447 sections) |
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
-| Eval question set | **152 questions** written, all for *Chemistry* 1e — no runner yet |
+| Eval question set | **152 questions** written for *Chemistry* 1e, which has since been removed from the corpus — they need re-targeting (see [Evals](#evals)); no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
-| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section through 9.7 (7.2, 8.2 and 9.2 still to do), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
+| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do; none yet for *Organic Chemistry*), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |
@@ -104,7 +104,7 @@ docker run -d --name openvalence-db -e POSTGRES_PASSWORD=openvalence -p 5432:543
 **3. Search** — sanity-check retrieval.
 
 ```bash
-dotnet run --project ingest -- search "why is oxygen paramagnetic?"
+dotnet run --project ingest -- search "how do you calculate percent yield?"
 ```
 
 Prints the top 5 chunks with similarity scores. The question to ask yourself is the one the tool prints back at you: *could you answer the question from these passages alone?* If not, retrieval is the problem, not the model.
@@ -140,8 +140,8 @@ What's there today:
 
 - **Landing page** — hero with an animated demo of a grounded answer, then Features, Topics, How it works, and Sources sections
 - **Topic pages** (`/topics/:slug`) — what each subject area covers, with example questions
-- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Only introductory chemistry has content so far. A branch's mastery bar is the share of its learning path's sections the reader has finished, kept in the browser
-- **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, in study order; introductory chemistry's is *Beginning Chemistry*. Every transcribed section links to its section page
+- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Introductory and organic chemistry have content so far. A branch's mastery bar is the share of its learning path's sections the reader has finished, kept in the browser
+- **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, in study order; introductory chemistry's is *Beginning Chemistry*, organic chemistry's is OpenStax *Organic Chemistry* (chapters still being transcribed show as "Being added"). Every transcribed section links to its section page
 - **Section pages** (`/roadmap/:slug/:book/:section`) — a corpus section rendered in the app:
   - Each Example and Exercise is a **practice card**: type an answer, then compare it with the book's solution, or ask the chat to explain it.
   - Sections with questions in [questions/](questions/) end with **Check yourself**: OpenValence's own numeric and multiple-choice questions. A section's questions are a pool, and each student gets a set of 10 drawn at random (all of them, when there are 10 or fewer), kept in the browser so a reload shows the same ones ([questionSets.ts](web/src/lib/questionSets.ts)). Each question gets one try, then locks and shows the reasoning (and, for a wrong choice, why it's wrong); the set totals a score ("7 / 10 correct"). The **Next** section link stays locked until a set scores **6 or more out of 10** (the same share of a smaller set). Below that, **Try again** draws a new random set: questions the student hasn't seen first, then ones from earlier sets (their old answers cleared), so the pool never runs out. After a pass, **Try 10 more questions** does the same for extra practice, and Next stays open for good.
@@ -201,23 +201,25 @@ Two open textbooks, transcribed from [LibreTexts](https://chem.libretexts.org/) 
 
 | Book | Folder | Coverage | License |
 | ---- | ------ | -------- | ------- |
-| [*Chemistry* 1e](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) — OpenStax | `sources/openstax/genchem-1e/` | All 21 chapters, 124 sections | CC BY 4.0 |
 | [*Beginning Chemistry*](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) (Ball) | `sources/openstax/introductory/` | All 16 chapters, 100 sections | CC BY-NC-SA 3.0 |
+| [*Organic Chemistry*](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) — OpenStax (McMurry, 10th ed.) | `sources/openstax/orgchem/` | Chapter 1 of 31 transcribed (16 sections); the other 431 sections are stubs | CC BY-NC-SA 4.0 |
+
+OpenStax *Chemistry* 1e (`sources/openstax/genchem-1e/`) used to be part of the corpus and has been removed.
 
 Each file carries YAML frontmatter with its title, book, chapter, source URL, author, and license, so any retrieved chunk can be traced back to the page it came from. [sources/ATTRIBUTION.md](sources/ATTRIBUTION.md) records every document and its license.
 
-**Scope is deliberate.** This is introductory and general chemistry, not all of chemistry. A tight corpus that answers its domain well demos better than a sprawling one that answers everything vaguely — and it makes "I don't have a source for that" a meaningful, testable response rather than an excuse. End-of-chapter exercise pages were deliberately not transcribed; exercises that sit inside a section page, with their answers, were kept.
+**Scope is deliberate.** This is introductory chemistry and, as it is transcribed, organic chemistry — not all of chemistry. A tight corpus that answers its domain well demos better than a sprawling one that answers everything vaguely — and it makes "I don't have a source for that" a meaningful, testable response rather than an excuse. End-of-chapter exercise pages were deliberately not transcribed; exercises that sit inside a section page, with their answers, were kept.
 
 ### Transcription conventions
 
-Cleaning is mechanical only — strip navigation, unwrap glossary links, convert markup — and the text is never rewritten or summarised, because a citation must quote what the source actually said. Chapters 8–16 of *Beginning Chemistry* were converted by the scripts in [tools/transcribe/](tools/transcribe/README.md), which work for any LibreTexts book. The conventions that follow from that:
+Cleaning is mechanical only — strip navigation, unwrap glossary links, convert markup — and the text is never rewritten or summarised, because a citation must quote what the source actually said. Chapters 8–16 of *Beginning Chemistry* and the *Organic Chemistry* chapters were converted by the scripts in [tools/transcribe/](tools/transcribe/README.md), which work for any LibreTexts book. The conventions that follow from that:
 
-- **Upstream errors are kept, and flagged.** Where the source is wrong or contradicts itself, the text is reproduced as printed and a `[Note: …]` paragraph immediately after explains the correction. Typical cases are a misprinted value, a mislabelled table, arithmetic that doesn't follow, an unbalanced equation, a stale "Example 4" reference, or markup broken on the LibreTexts page. There are 32 such notes in *Chemistry* 1e and 102 in *Beginning Chemistry*. They double as eval material: the `defect` and `contradiction` questions test whether the app follows the note rather than the misprint.
+- **Upstream errors are kept, and flagged.** Where the source is wrong or contradicts itself, the text is reproduced as printed and a `[Note: …]` paragraph immediately after explains the correction. Typical cases are a misprinted value, a mislabelled table, arithmetic that doesn't follow, an unbalanced equation, a stale "Example 4" reference, or markup broken on the LibreTexts page. There are 158 such notes in *Beginning Chemistry* and 7 so far in *Organic Chemistry*. They double as eval material: the `defect` and `contradiction` questions test whether the app follows the note rather than the misprint.
 - **Figures** are represented by their captions and alt text. An image with a real description outside a figure becomes `[Image: …]`; one whose alt text is only a file name becomes `[Image not described in source]` (and an embedded sound clip becomes `[Audio not described in source]`). Many Lewis structures, molecular-shape diagrams and organic structures fall in that last group, so questions that need the picture itself have no text answer in the corpus.
 - **Math** is written as plain text: `ΔH_vap`, `1s^2 2s^2 2p^6`, `Mg^2+(g) → Mg^3+(g) + e^−`. The specific forms:
   - **Grouped exponents:** an exponent that is an expression is grouped, `e^(−0.693 t/t_1/2)`, or `e^{…}` when it contains parentheses of its own. The site renders both forms, but neither nests.
   - **Cancelled units:** units cancelled in a worked calculation keep their strikeout, as `~~mol HCl~~`.
-  - **Nuclides:** written with Unicode prescripts, as in the OpenStax nuclear chapter: `²³⁵₉₂U → ⁴₂He + ²³¹₉₀Th`.
+  - **Nuclides:** written with Unicode prescripts: `²³⁵₉₂U → ⁴₂He + ²³¹₉₀Th`.
   - **Double bonds:** written without spaces, `CH2=CH2`.
   - **Lewis dot diagrams:** *Beginning Chemistry* draws these in TeX, so they survive as text with combining marks (`·Ṇ̇:` is N with single dots to the left, above, and below, and a pair on the right).
 - **Exercises and answers** keep their structure. Lettered parts keep their letters (`a. …`), nested under their question. Where a book answers only the odd-numbered exercises, the even ones remain as empty items (`2.`) so the numbering stays right.
@@ -225,12 +227,12 @@ Cleaning is mechanical only — strip navigation, unwrap glossary links, convert
 
 ### Licensing
 
-The two books are licensed differently, and the difference matters:
+Both books are NonCommercial and ShareAlike, and that matters:
 
-- ***Chemistry* 1e** — © OpenStax, **CC BY 4.0**, adapted by LibreTexts. Reuse and redistribution with attribution, including commercially.
 - ***Beginning Chemistry*** — **CC BY-NC-SA 3.0** (author listed on LibreTexts as Anonymous). Attribution required, **no commercial use**, and adaptations must be shared under the same license.
+- ***Organic Chemistry*** — © OpenStax (John McMurry), **CC BY-NC-SA 4.0**, via LibreTexts. The same terms: attribution, no commercial use, share alike.
 
-Showing source text back to the reader is the whole premise of the app, which is precisely where copyright bites — so every source file keeps its attribution frontmatter, and the site footer must credit each book whose text it shows. If OpenValence is ever monetised, the NonCommercial book has to come out of the corpus first.
+Showing source text back to the reader is the whole premise of the app, which is precisely where copyright bites — so every source file keeps its attribution frontmatter, and the site footer must credit each book whose text it shows. If OpenValence is ever monetised, both books have to come out of the corpus first, and it would need a commercially reusable (CC BY) source instead.
 
 Do not add material to `sources/` unless you have checked its license and recorded it in `ATTRIBUTION.md`.
 
@@ -260,7 +262,7 @@ Do not add material to `sources/` unless you have checked its license and record
 | defect | 9 | The correct answer follows a `[Note: …]`, not the misprinted text |
 | contradiction | 1 | Two sections disagree (Tc-99m half-life) |
 
-The questions were written for *Chemistry* 1e. Two former `unanswerable` questions are now answered by *Beginning Chemistry*, which `embed` indexes alongside it: q133 (S=O bond energy, its 9.5) and q010 (a secondary amine, its 16.6). Both books have a 10.2 Intermolecular Forces and a 13.4 Le Chatelier section, so q003 and q004 accept either book's; q084 (the Haber process) only *Chemistry* 1e's. There is no runner yet; the plan is below.
+**The set is out of date.** The questions were written for *Chemistry* 1e, which has since been removed from the corpus: 129 of the 152 list a `genchem-1e/…` file, and 127 list nothing else, so as they stand a runner would score them as misses. Before the runner is built, each needs re-targeting to the *Beginning Chemistry* or *Organic Chemistry* section that answers it, or re-labelling `unanswerable` where neither book covers it (most of kinetics, thermodynamics, the main-group and transition elements). A few already point at *Beginning Chemistry*: q133 (S=O bond energy, its 9.5), q010 (a secondary amine, its 16.6), and q003 and q004 (its 10.2 Intermolecular Forces and 13.4 Le Chatelier). The example above still shows the old target. There is no runner yet; the plan is below.
 
 ---
 
@@ -279,13 +281,13 @@ question → embed → top-k by cosine similarity → LLM with "answer only from
 this context" → answer + the chunks as citations
 ```
 
-The index lives in Postgres + `pgvector` when `DATABASE_URL` is set (Neon, for this project), so every machine — and later the API — queries one copy. Without a database it falls back to a flat `index.json` loaded into memory, which keeps the project runnable with nothing to stand up. Both stores search exactly, by cosine similarity, and return identical results: about 13 ms in Postgres over the current 2,662 chunks. An approximate HNSW index only pays off at tens of thousands of chunks, and would blur the retrieval evals.
+The index lives in Postgres + `pgvector` when `DATABASE_URL` is set (Neon, for this project), so every machine — and later the API — queries one copy. Without a database it falls back to a flat `index.json` loaded into memory, which keeps the project runnable with nothing to stand up. Both stores search exactly, by cosine similarity, and return identical results: about 13 ms in Postgres over 2,662 chunks (measured while *Chemistry* 1e was still in the corpus; `embed` rebuilds the index from what is in `sources/`, so the next run drops its chunks). An approximate HNSW index only pays off at tens of thousands of chunks, and would blur the retrieval evals.
 
 ---
 
 ## Known issues
 
-- **The landing page promises more than the app does yet.** It describes abstention ("if the sources don't cover it, it tells you") and grounded, cited answers, neither of which exists until the answer endpoint and the similarity floor are built. The hero demo's "Searching 124 textbook sections" also needs updating once *Beginning Chemistry* is embedded (224 sections across both books).
+- **The landing page promises more than the app does yet.** It describes abstention ("if the sources don't cover it, it tells you") and grounded, cited answers, neither of which exists until the answer endpoint and the similarity floor are built. The hero demo's "Searching 116 textbook sections" (100 in *Beginning Chemistry*, 16 in *Organic Chemistry*) is typed by hand in [LandingPage.tsx](web/src/pages/LandingPage.tsx); update it as organic chapters are added.
 - **No mobile navigation.** The header links are hidden below the `md` breakpoint with no menu in their place.
 
 ---
@@ -315,7 +317,7 @@ Later:
 
 Today `/roadmap` shows one card per branch of chemistry. The planned layout splits it into two kinds of card:
 
-- **One "LibreTexts books" card** for the textbook learning paths. Both transcribed books come from LibreTexts (*Beginning Chemistry* and *Chemistry* 1e), so they sit together under one card, read chapter by chapter as they are now.
+- **One "LibreTexts books" card** for the textbook learning paths. Both books come from LibreTexts (*Beginning Chemistry* and *Organic Chemistry*), so they sit together under one card, read chapter by chapter as they are now.
 - **One card per concept**, each a levelled path through a single skill across both books:
   - **Stoichiometry**, following the [stoichiometry roadmap](#stoichiometry-roadmap-future) below
   - **Chemical balancing**, following the [equation balancing roadmap](#equation-balancing-roadmap-future) below
@@ -383,32 +385,27 @@ A levelled path through balancing chemical equations, from counting atoms to red
 | Subject | Source | License | Status |
 | ------- | ------ | ------- | ------ |
 | Introductory chemistry | *Beginning Chemistry* (Ball) | CC BY-NC-SA 3.0 | **Transcribed** — all 16 chapters; not yet embedded or evaluated |
-| General chemistry | OpenStax *Chemistry* 1e | CC BY 4.0 | **Transcribed** — not yet embedded or evaluated |
-| Organic chemistry | Candidate: OpenStax *Organic Chemistry* | CC BY-NC-SA 4.0 (confirm before transcribing) | **Planned** — `sources/openstax/orgchem/` exists, empty |
+| Organic chemistry | OpenStax *Organic Chemistry* (McMurry, 10th ed.) | CC BY-NC-SA 4.0 (confirmed on LibreTexts) | **In progress** — `sources/openstax/orgchem/` has all 31 chapters (447 sections); chapter 1 is transcribed, the rest are section stubs |
+| General chemistry | None — OpenStax *Chemistry* 1e was removed | — | **Not covered** beyond *Beginning Chemistry* |
 | Chemical engineering | Not chosen | — | **Planned** |
 | Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
 
-Suggested order: embed both transcribed books and measure them, then organic, then chemical engineering.
+Suggested order: embed *Beginning Chemistry* and measure it, keep transcribing organic chemistry chapter by chapter, then chemical engineering.
 
-**Introductory chemistry** — the on-ramp: the same ground as general chemistry at a gentler level, so it catches beginners' phrasing.
+**Introductory chemistry** — the core of the app now that *Chemistry* 1e is gone: the first-year ground at a gentler level, so it also catches beginners' phrasing.
 
-- Write eval questions for this book (all 152 current questions target *Chemistry* 1e). Its 102 `[Note: …]` corrections are ready-made `defect` questions
-- When it is embedded:
-  - mark it "In use" in the landing page's Sources section;
-  - add it to the footer attribution;
-  - update the hero demo's section count.
-
-**General chemistry** — the core of the app and the subject the eval set is written for.
-
+- Re-target the eval set to this book (see [Evals](#evals)); its 158 `[Note: …]` corrections are ready-made `defect` questions
 - First `embed` and retrieval-eval baseline (platform items 1–3 land here first)
 - Calculator tools and the equation balancer (platform items 6–7) — most of the topic pages' "coming soon" items belong to this subject
+- Already done in the app: "In use" in the landing page's Sources section, credited in the footer, and the hero demo built on its Example 5.6.1
 
 **Organic chemistry** — the biggest step up in scope, and the first subject where pictures carry the meaning.
 
 - Scope: structure and bonding, functional groups and nomenclature, stereochemistry, reaction mechanisms (substitution, elimination, addition, carbonyl chemistry), and spectroscopy (IR, NMR, mass spec)
-- Structure rendering (platform item 9) becomes essential rather than nice-to-have, and diagrams without alt text will be a larger gap than in the general chemistry books
+- Structure rendering (platform item 9) becomes essential rather than nice-to-have, and diagrams without alt text will be a larger gap than in *Beginning Chemistry*
 - Seven `unanswerable` eval questions become answerable once this book is in: q040 (aldol), q121 (NMR splitting), q122 (IR carbonyl stretch), q123 (SN1/SN2), q124 (Markovnikov), q125 (Hückel's rule), q126 (R/S). Re-label them in the same change, or the abstention eval will report correct answers as failures
-- The candidate book is NonCommercial, like *Beginning Chemistry* — see [Licensing](#licensing)
+- Transcription: chapter 1 (Structure and Bonding) is done, with 7 `[Note: …]` corrections; chapters 2–31 are stubs. Each new chapter is `fetch.py` then `fill.py` (see [tools/transcribe/](tools/transcribe/README.md)), then `npm run gen:paths` in `web/` so the learning path picks it up
+- The book is NonCommercial, like *Beginning Chemistry* — see [Licensing](#licensing)
 
 **Chemical engineering** — the other half of the "Organic chemistry & chemical engineering" topic page.
 
@@ -445,4 +442,4 @@ Suggested order: embed both transcribed books and measure them, then organic, th
 ## License
 
 Code: **not yet chosen** — add one before making this public.
-Corpus: *Chemistry* 1e is CC BY 4.0, © OpenStax; *Beginning Chemistry* is CC BY-NC-SA 3.0 (see [Licensing](#licensing)).
+Corpus: *Beginning Chemistry* is CC BY-NC-SA 3.0; *Organic Chemistry* is CC BY-NC-SA 4.0, © OpenStax (see [Licensing](#licensing)).

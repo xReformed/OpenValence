@@ -1,0 +1,262 @@
+[
+  {
+    "id": "convfactor-molarity-meaning",
+    "type": "multiple-choice",
+    "prompt": "To use 0.750 M NaCl as a conversion factor, what does 0.750 M mean?",
+    "choices": [
+      { "text": "0.750 mol of NaCl per 1 L of solution", "correct": true },
+      { "text": "0.750 g of NaCl per 1 L of solution", "why": "Molarity counts the solute in moles, not grams." },
+      { "text": "0.750 mol of NaCl per 1 kg of water", "why": "That would be a molality of 0.750 m. Molarity is per liter of solution." },
+      { "text": "0.750 L of solution per 1 mol of NaCl", "why": "That's the reciprocal factor, 1 L / 0.750 mol, which is 1.33 L per mole, not 0.750 L per mole." }
+    ],
+    "explanation": "Because 0.750 M means 0.750 mol/L, the concentration can be written as the conversion factor (0.750 mol NaCl / 1 L solution), or its reciprocal (1 L solution / 0.750 mol NaCl). There is an understood 1 in the denominator."
+  },
+  {
+    "id": "convfactor-reciprocal-when",
+    "type": "multiple-choice",
+    "prompt": "You know the moles of solute you need and want the volume of a 0.750 M solution that contains them. Which conversion factor should you multiply by?",
+    "choices": [
+      { "text": "1 L / 0.750 mol", "correct": true },
+      { "text": "0.750 mol / 1 L", "why": "Multiplying moles by mol/L leaves mol²/L. Use the reciprocal so moles cancel and liters remain." },
+      { "text": "0.750 mol × 1 L", "why": "A conversion factor is a ratio. To cancel moles, moles must go in the denominator: 1 L / 0.750 mol." },
+      { "text": "1 mol / 0.750 L", "why": "That factor doesn't match the concentration; 0.750 M means 0.750 mol in 1 L." }
+    ],
+    "explanation": "Like any conversion factor, the reciprocal of a concentration can also be used. To go from moles to liters, write the concentration as (1 L / 0.750 mol) so the moles cancel."
+  },
+  {
+    "id": "convfactor-moles-from-volume",
+    "type": "numeric",
+    "prompt": "Using concentration as a conversion factor, how many moles of solute are in 0.250 L of 0.640 M KCl?",
+    "answer": 0.16,
+    "unit": "mol",
+    "explanation": "0.250 L × (0.640 mol KCl / 1 L) = 0.160 mol KCl."
+  },
+  {
+    "id": "convfactor-liters-for-moles",
+    "type": "numeric",
+    "prompt": "Using concentration as a conversion factor, how many liters of 1.25 M NaOH contain 0.800 mol of NaOH?",
+    "answer": 0.64,
+    "unit": "L",
+    "explanation": "Use the reciprocal of the concentration: 0.800 mol × (1 L / 1.25 mol) = 0.640 L."
+  },
+  {
+    "id": "convfactor-mass-of-solute",
+    "type": "numeric",
+    "prompt": "What mass of KCl, in grams, is present in 0.500 L of 0.200 M KCl? The molar mass of KCl is 74.55 g/mol.",
+    "answer": 7.455,
+    "unit": "g",
+    "explanation": "0.500 L × (0.200 mol / 1 L) × (74.55 g / 1 mol) = 7.46 g KCl."
+  },
+  {
+    "id": "convfactor-mass-from-ml",
+    "type": "numeric",
+    "prompt": "What mass of glucose, in grams, is present in 250.0 mL of 0.150 M glucose? The molar mass of glucose is 180.16 g/mol.",
+    "answer": 6.756,
+    "unit": "g",
+    "explanation": "250.0 mL = 0.2500 L. 0.2500 L × (0.150 mol / 1 L) × (180.16 g / 1 mol) = 6.76 g glucose."
+  },
+  {
+    "id": "convfactor-volume-from-mass",
+    "type": "numeric",
+    "prompt": "What volume, in mL, of 0.500 M NaOH contains 4.00 g of NaOH? The molar mass of NaOH is 40.00 g/mol.",
+    "answer": 200,
+    "unit": "mL",
+    "explanation": "4.00 g × (1 mol / 40.00 g) × (1 L / 0.500 mol) = 0.200 L, which is 200 mL."
+  },
+  {
+    "id": "convfactor-molality-moles",
+    "type": "numeric",
+    "prompt": "How many moles of solute are dissolved in 0.400 kg of water in a 1.50 m solution?",
+    "answer": 0.6,
+    "unit": "mol",
+    "explanation": "Molality is moles of solute per kilogram of solvent, so it converts kg of solvent to moles: 0.400 kg × (1.50 mol / 1 kg) = 0.600 mol."
+  },
+  {
+    "id": "convfactor-ppm-mass",
+    "type": "numeric",
+    "prompt": "Tap water contains 1.3 ppm of copper. What mass of copper, in milligrams, is in 2.00 kg of this water?",
+    "answer": 2.6,
+    "unit": "mg",
+    "explanation": "1.3 ppm means 1.3 g of copper per 1,000,000 g of water: 2000 g × (1.3 g / 1,000,000 g) = 0.0026 g = 2.6 mg."
+  },
+  {
+    "id": "convfactor-mass-percent-factor",
+    "type": "multiple-choice",
+    "prompt": "Which conversion factor comes from the concentration 3.00% m/m H2O2?",
+    "choices": [
+      { "text": "3.00 g H2O2 / 100 g solution", "correct": true },
+      { "text": "3.00 mol H2O2 / 100 g solution", "why": "Mass percentage relates masses, so the H2O2 is in grams, not moles." },
+      { "text": "3.00 g H2O2 / 100 mL solution", "why": "% m/m is mass per mass: grams of solute per 100 g of solution." },
+      { "text": "3.00 g H2O2 / 100 g water", "why": "The 100 g is the entire solution, not just the water." }
+    ],
+    "explanation": "The definition of mass percentage provides the conversion factor: 3.00% m/m means 3.00 g of H2O2 per 100 g of solution."
+  },
+  {
+    "id": "convfactor-moles-in-percent-solution",
+    "type": "numeric",
+    "prompt": "How many moles of H2O2 are in 200.0 g of a 3.00% m/m H2O2 solution? The molar mass of H2O2 is 34.02 g/mol.",
+    "answer": 0.1764,
+    "unit": "mol",
+    "explanation": "200.0 g solution × (3.00 g H2O2 / 100 g solution) × (1 mol / 34.02 g) = 0.176 mol H2O2."
+  },
+  {
+    "id": "convfactor-mass-of-percent-solution",
+    "type": "numeric",
+    "prompt": "What mass, in grams, of a 5.00% m/m NaCl solution contains 0.250 mol of NaCl? The molar mass of NaCl is 58.44 g/mol.",
+    "answer": 292.2,
+    "unit": "g",
+    "explanation": "0.250 mol × (58.44 g NaCl / 1 mol) × (100 g solution / 5.00 g NaCl) = 292 g of solution."
+  },
+  {
+    "id": "convfactor-reaction-volume-one-to-one",
+    "type": "numeric",
+    "prompt": "AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq). What volume, in liters, of 0.250 M NaCl will react with 0.0500 mol of AgNO3?",
+    "answer": 0.2,
+    "unit": "L",
+    "explanation": "0.0500 mol AgNO3 × (1 mol NaCl / 1 mol AgNO3) × (1 L / 0.250 mol NaCl) = 0.200 L."
+  },
+  {
+    "id": "convfactor-reaction-volume-two-to-one",
+    "type": "numeric",
+    "prompt": "Na2CO3(aq) + 2HCl(aq) → 2NaCl(aq) + H2O(ℓ) + CO2(g). What volume, in liters, of 0.500 M HCl will react with 0.100 mol of Na2CO3?",
+    "answer": 0.4,
+    "unit": "L",
+    "explanation": "0.100 mol Na2CO3 × (2 mol HCl / 1 mol Na2CO3) × (1 L / 0.500 mol HCl) = 0.400 L."
+  },
+  {
+    "id": "convfactor-mole-ratio-mistake",
+    "type": "multiple-choice",
+    "prompt": "For Na2CO3(aq) + 2HCl(aq) → 2NaCl(aq) + H2O(ℓ) + CO2(g), a student finds the volume of 0.500 M HCl that reacts with 0.100 mol of Na2CO3 as 0.100 mol × (1 L / 0.500 mol) = 0.200 L. What is wrong?",
+    "choices": [
+      { "text": "The student skipped the mole ratio: 2 mol HCl react per 1 mol Na2CO3, so 0.400 L is needed.", "correct": true },
+      { "text": "The concentration should have been multiplied, not divided: 0.100 × 0.500 = 0.0500 L.", "why": "To go from moles to liters you divide by molarity (multiply by 1 L / 0.500 mol). The missing step is the 2 : 1 mole ratio." },
+      { "text": "The molar mass of Na2CO3 should have been used.", "why": "The amount is already in moles, so no molar mass is needed. The balanced equation's mole ratio is what's missing." },
+      { "text": "Nothing is wrong.", "why": "The 0.100 mol is Na2CO3, but the molarity is of HCl. The equation's 2 : 1 ratio has to convert between them." }
+    ],
+    "explanation": "First use the balanced equation to convert moles of Na2CO3 to moles of HCl (2 : 1), then use the HCl concentration: 0.100 mol × (2 / 1) × (1 L / 0.500 mol) = 0.400 L."
+  },
+  {
+    "id": "convfactor-reaction-from-mass",
+    "type": "numeric",
+    "prompt": "Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). What volume, in liters, of 2.00 M HCl will react with 6.54 g of Zn? The molar mass of Zn is 65.38 g/mol.",
+    "answer": 0.1,
+    "unit": "L",
+    "explanation": "6.54 g Zn × (1 mol Zn / 65.38 g) × (2 mol HCl / 1 mol Zn) × (1 L / 2.00 mol HCl) = 0.100 L."
+  },
+  {
+    "id": "convfactor-step-order",
+    "type": "multiple-choice",
+    "prompt": "You know the mass of a solid reactant and want the volume of a solution of the other reactant that will react with it. In what order do you use the conversion factors?",
+    "choices": [
+      { "text": "Molar mass, then the mole ratio from the balanced equation, then the concentration of the solution", "correct": true },
+      { "text": "Concentration, then molar mass, then mole ratio", "why": "The concentration converts moles of the dissolved reactant to liters, so it comes last." },
+      { "text": "Mole ratio, then molar mass, then concentration", "why": "The mole ratio works in moles, so the grams must be converted to moles first." },
+      { "text": "Only the concentration is needed", "why": "The concentration belongs to a different substance; you need moles of the solid and the mole ratio first." }
+    ],
+    "explanation": "Convert grams of the solid to moles with its molar mass, use the balanced equation to get moles of the other reactant, and then use that solution's concentration to convert moles to liters."
+  },
+  {
+    "id": "convfactor-precipitate-mass",
+    "type": "numeric",
+    "prompt": "AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq). What mass, in grams, of AgCl precipitate forms when 50.0 mL of 0.200 M NaCl reacts with excess AgNO3? The molar mass of AgCl is 143.32 g/mol.",
+    "answer": 1.433,
+    "unit": "g",
+    "explanation": "0.0500 L × (0.200 mol NaCl / 1 L) × (1 mol AgCl / 1 mol NaCl) × (143.32 g / 1 mol) = 1.43 g AgCl."
+  },
+  {
+    "id": "convfactor-gas-produced",
+    "type": "numeric",
+    "prompt": "Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). How many moles of H2 form when 50.0 mL of 1.00 M HCl reacts with excess magnesium?",
+    "answer": 0.025,
+    "unit": "mol",
+    "explanation": "0.0500 L × (1.00 mol HCl / 1 L) × (1 mol H2 / 2 mol HCl) = 0.0250 mol H2."
+  },
+  {
+    "id": "convfactor-mass-of-solid-reactant",
+    "type": "numeric",
+    "prompt": "CaCO3(s) + 2HCl(aq) → CaCl2(aq) + H2O(ℓ) + CO2(g). What mass, in grams, of CaCO3 reacts with 0.100 L of 1.50 M HCl? The molar mass of CaCO3 is 100.09 g/mol.",
+    "answer": 7.507,
+    "unit": "g",
+    "explanation": "0.100 L × (1.50 mol HCl / 1 L) × (1 mol CaCO3 / 2 mol HCl) × (100.09 g / 1 mol) = 7.51 g CaCO3."
+  },
+  {
+    "id": "convfactor-two-solutions",
+    "type": "numeric",
+    "prompt": "Pb(NO3)2(aq) + 2KI(aq) → PbI2(s) + 2KNO3(aq). What volume, in mL, of 0.100 M KI will react with 20.0 mL of 0.150 M Pb(NO3)2?",
+    "answer": 60,
+    "unit": "mL",
+    "explanation": "0.0200 L × (0.150 mol Pb(NO3)2 / 1 L) = 0.00300 mol Pb(NO3)2; × (2 mol KI / 1 mol) = 0.00600 mol KI; × (1 L / 0.100 mol) = 0.0600 L = 60.0 mL."
+  },
+  {
+    "id": "convfactor-milliliters-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the moles of solute in 25.0 mL of 0.100 M HCl as 25.0 × 0.100 = 2.50 mol. What is wrong?",
+    "choices": [
+      { "text": "Molarity is moles per liter, so 25.0 mL must first be converted to 0.0250 L, giving 0.00250 mol.", "correct": true },
+      { "text": "The volume should be divided by the molarity.", "why": "Multiplying volume by molarity is right for finding moles; the volume just has to be in liters." },
+      { "text": "The molar mass of HCl is needed.", "why": "Molar mass would give grams. Moles come straight from M × L." },
+      { "text": "Nothing is wrong.", "why": "2.50 mol of HCl in 25 mL would be a 100 M solution. Converting mL to L gives 0.00250 mol." }
+    ],
+    "explanation": "When using molarity as a conversion factor, the volume must be in liters: 25.0 mL × (1 L / 1000 mL) × (0.100 mol / 1 L) = 0.00250 mol."
+  },
+  {
+    "id": "convfactor-titration-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a titration?",
+    "choices": [
+      { "text": "A precisely measured experiment that determines the amount of a substance in a sample by reacting it with a solution of known concentration", "correct": true },
+      { "text": "Diluting a solution to a lower concentration", "why": "That is dilution. A titration measures how much of a known solution reacts with the sample." },
+      { "text": "Heating a solution to remove the solvent", "why": "That concentrates a solution. A titration is a measured reaction." },
+      { "text": "Weighing a precipitate after a reaction", "why": "A titration measures the volume of a known solution added until the reaction is complete." }
+    ],
+    "explanation": "A titration is a precisely measured experiment meant to determine the amount of a substance in a sample: a measured amount of one solution is added to another reactant."
+  },
+  {
+    "id": "convfactor-aliquot-and-burette",
+    "type": "multiple-choice",
+    "prompt": "In a titration, what are an aliquot and a burette?",
+    "choices": [
+      { "text": "An aliquot is a precisely measured sample; a burette is a precisely measured tube used to add a solution.", "correct": true },
+      { "text": "An aliquot is the solution of known concentration; a burette is the flask that holds the sample.", "why": "The aliquot is the measured sample being analyzed. The burette delivers the solution of known concentration." },
+      { "text": "Both are names for the solution being added.", "why": "The aliquot is the sample; the burette is the measuring tube." },
+      { "text": "An aliquot is a kind of indicator; a burette is a balance.", "why": "An aliquot is a precisely measured sample, and a burette is a precisely measured tube." }
+    ],
+    "explanation": "An aliquot is a precisely measured sample of a solution, and a burette is a precisely measured tube used to add the other solution and read how much was needed."
+  },
+  {
+    "id": "convfactor-titration-hcl",
+    "type": "numeric",
+    "prompt": "A 25.00 mL aliquot of HCl is titrated with 0.1000 M NaOH: HCl(aq) + NaOH(aq) → NaCl(aq) + H2O(ℓ). It takes 31.20 mL of the NaOH to complete the reaction. What is the concentration of the HCl?",
+    "answer": 0.1248,
+    "unit": "M",
+    "explanation": "0.03120 L × (0.1000 mol NaOH / 1 L) = 0.003120 mol NaOH, which reacts with 0.003120 mol HCl (1 : 1). M = 0.003120 mol / 0.02500 L = 0.1248 M HCl."
+  },
+  {
+    "id": "convfactor-titration-sulfuric",
+    "type": "numeric",
+    "prompt": "A 20.00 mL aliquot of H2SO4 is titrated with 0.1500 M NaOH: H2SO4(aq) + 2NaOH(aq) → Na2SO4(aq) + 2H2O(ℓ). It takes 36.40 mL of the NaOH to complete the reaction. What is the concentration of the H2SO4?",
+    "answer": 0.1365,
+    "unit": "M",
+    "explanation": "0.03640 L × 0.1500 mol/L = 0.005460 mol NaOH; × (1 mol H2SO4 / 2 mol NaOH) = 0.002730 mol H2SO4. M = 0.002730 mol / 0.02000 L = 0.1365 M."
+  },
+  {
+    "id": "convfactor-titration-volume-needed",
+    "type": "numeric",
+    "prompt": "HCl(aq) + NaOH(aq) → NaCl(aq) + H2O(ℓ). What volume, in mL, of 0.200 M NaOH is needed to react completely with 15.0 mL of 0.300 M HCl?",
+    "answer": 22.5,
+    "unit": "mL",
+    "explanation": "0.0150 L × 0.300 mol/L = 0.00450 mol HCl, which needs 0.00450 mol NaOH (1 : 1). 0.00450 mol × (1 L / 0.200 mol) = 0.0225 L = 22.5 mL."
+  },
+  {
+    "id": "convfactor-titration-steps",
+    "type": "multiple-choice",
+    "prompt": "In a titration, you know the volume and molarity of the solution added from the burette and the volume of the aliquot. How do you find the aliquot's concentration?",
+    "choices": [
+      { "text": "Find moles of the added reactant, use the mole ratio to get moles in the aliquot, then divide by the aliquot's volume in liters.", "correct": true },
+      { "text": "Divide the burette solution's molarity by the aliquot's volume.", "why": "Molarity divided by volume isn't a concentration. Go through moles, using the balanced equation." },
+      { "text": "Use M_1 × V_1 = M_2 × V_2 for every titration.", "why": "M_1 × V_1 = M_2 × V_2 is the dilution equation, and it only matches a titration when the mole ratio is 1 : 1. In general, use the balanced equation." },
+      { "text": "Multiply the two volumes together.", "why": "The volumes don't combine like that. Find moles from the burette solution, apply the mole ratio, and divide by the aliquot's volume." }
+    ],
+    "explanation": "Convert the volume added to moles with its concentration, use the balanced equation to find moles of the substance in the aliquot, and divide by the aliquot's volume in liters to get its molarity."
+  }
+]

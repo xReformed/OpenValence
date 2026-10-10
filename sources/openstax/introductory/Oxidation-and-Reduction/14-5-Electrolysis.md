@@ -25,7 +25,7 @@ Na^+ + e^− → Na
 
 Normally we expect elemental sodium and chlorine to react spontaneously to make NaCl. However, by using an input of electricity, we can force the opposite reaction to occur and generate the elements. Lithium, potassium, and magnesium can also be isolated from compounds by electrolysis.
 
-Another element that is isolated by electrolysis is aluminum. Aluminum formerly was a difficult metal to isolate in its elemental form; in fact, the top of the Washington Monument has a 2.8 kg cap of aluminum metal, which at the time (1884) was the largest piece of elemental aluminum ever isolated. However, in 1886, the American Charles Hall and the Frenchman Paul Héroult almost simultaneously worked out an electrolytic process for isolating aluminum from bauxite—an ore of aluminum whose chemical formula is AlOx(OH)3 − 2x . The basic reactions are as follows:
+Another element that is isolated by electrolysis is aluminum. Aluminum formerly was a difficult metal to isolate in its elemental form; in fact, the top of the Washington Monument has a 2.8 kg cap of aluminum metal, which at the time (1884) was the largest piece of elemental aluminum ever isolated. However, in 1886, the American Charles Hall and the Frenchman Paul Héroult almost simultaneously worked out an electrolytic process for isolating aluminum from bauxite—an ore of aluminum whose chemical formula is AlO_x(OH)3 − 2x . The basic reactions are as follows:
 
 [Note: in the source, "3 − 2x" is the subscript of (OH): the formula is AlOx(OH) with x O atoms and 3 − 2x OH groups.]
 

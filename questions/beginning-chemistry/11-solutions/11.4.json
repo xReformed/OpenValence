@@ -1,0 +1,245 @@
+[
+  {
+    "id": "dilution-definition",
+    "type": "multiple-choice",
+    "prompt": "What is dilution?",
+    "choices": [
+      { "text": "Adding solvent, which decreases the concentration of the solute", "correct": true },
+      { "text": "Removing solvent, which increases the concentration of the solute", "why": "That is concentration, the reverse of dilution." },
+      { "text": "Removing solute, which decreases the concentration", "why": "Dilution changes only the amount of solvent; the amount of solute stays the same." },
+      { "text": "Adding solute, which increases the concentration", "why": "Dilution adds solvent, not solute." }
+    ],
+    "explanation": "Dilution is the addition of solvent, which decreases the concentration of the solute in the solution."
+  },
+  {
+    "id": "dilution-concentration-process",
+    "type": "multiple-choice",
+    "prompt": "In the sense used in this section, what does it mean to concentrate a solution?",
+    "choices": [
+      { "text": "To remove solvent, which increases the concentration of the solute", "correct": true },
+      { "text": "To add solvent, which lowers the concentration", "why": "Adding solvent is dilution. Concentrating removes solvent." },
+      { "text": "To measure how much solute is in the solution", "why": "The word has two uses here: the amount of solute, and the process of removing solvent. The process is what's meant." },
+      { "text": "To add more solute until the solution is saturated", "why": "Concentrating, as defined here, removes solvent; the amount of solute stays the same." }
+    ],
+    "explanation": "Concentration, as a process, is the removal of solvent, which increases the concentration of the solute. (Don't confuse the two uses of the word.)"
+  },
+  {
+    "id": "dilution-what-stays-same",
+    "type": "multiple-choice",
+    "prompt": "When a solution is diluted or concentrated, what stays the same?",
+    "choices": [
+      { "text": "The amount (moles) of solute", "correct": true },
+      { "text": "The molarity", "why": "The molarity changes: it falls on dilution and rises on concentration." },
+      { "text": "The volume of the solution", "why": "The volume changes, because solvent is added or removed." },
+      { "text": "The amount of solvent", "why": "Dilution and concentration change only the amount of solvent." }
+    ],
+    "explanation": "In both dilution and concentration, the amount of solute stays the same. Since moles of solute = MV, the product MV is the same before and after."
+  },
+  {
+    "id": "dilution-equation",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the dilution equation?",
+    "choices": [
+      { "text": "M_1 × V_1 = M_2 × V_2", "correct": true },
+      { "text": "M_1/V_1 = M_2/V_2", "why": "Moles of solute equals M × V, not M ÷ V. It's the product MV that stays the same." },
+      { "text": "M_1 × M_2 = V_1 × V_2", "why": "Each molarity must be paired with its own volume: M_1 with V_1 and M_2 with V_2." },
+      { "text": "M_1 × V_2 = M_2 × V_1", "why": "That pairs each molarity with the wrong volume. The initial molarity goes with the initial volume." }
+    ],
+    "explanation": "Moles of solute = MV, and this doesn't change, so MV before equals MV after: M_1 × V_1 = M_2 × V_2."
+  },
+  {
+    "id": "dilution-final-concentration",
+    "type": "numeric",
+    "prompt": "50.0 mL of a 3.00 M solution is diluted to a final volume of 200.0 mL. What is the final concentration?",
+    "answer": 0.75,
+    "unit": "M",
+    "explanation": "M_1 × V_1 = M_2 × V_2: (3.00 M)(50.0 mL) = M_2(200.0 mL), so M_2 = 0.750 M."
+  },
+  {
+    "id": "dilution-final-volume",
+    "type": "numeric",
+    "prompt": "Water is added to 40.0 mL of a 1.20 M KCl solution until its concentration is 0.300 M. What is the new volume of the solution, in mL?",
+    "answer": 160,
+    "unit": "mL",
+    "explanation": "(1.20 M)(40.0 mL) = (0.300 M)V_2, so V_2 = 160 mL."
+  },
+  {
+    "id": "dilution-water-added",
+    "type": "numeric",
+    "prompt": "40.0 mL of a 1.20 M KCl solution is diluted to 0.300 M, giving a final volume of 160 mL. How many milliliters of water were added?",
+    "answer": 120,
+    "unit": "mL",
+    "explanation": "The amount of change is found by subtraction: 160 mL − 40.0 mL = 120 mL of water added."
+  },
+  {
+    "id": "dilution-final-volume-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student needs to dilute 25.0 mL of a solution to a final volume of 100.0 mL, calculated with M_1 × V_1 = M_2 × V_2. The student adds 100.0 mL of water. What is wrong?",
+    "choices": [
+      { "text": "100.0 mL is the final volume, not the amount to add; only 75.0 mL of water should be added.", "correct": true },
+      { "text": "Nothing is wrong; V_2 is the volume of water to add.", "why": "The equation gives only the initial and final conditions. The amount to add is V_2 − V_1." },
+      { "text": "The student should have added 125.0 mL of water.", "why": "The final volume should be 100.0 mL, and 25.0 mL is already there, so only 75.0 mL is needed." },
+      { "text": "The dilution equation can't be used with milliliters.", "why": "Any volume unit works, as long as both volumes are in the same unit." }
+    ],
+    "explanation": "The dilution equation gives only the initial and final conditions, not the amount of the change. The amount of solvent to add is found by subtraction: 100.0 mL − 25.0 mL = 75.0 mL."
+  },
+  {
+    "id": "dilution-stock-volume-needed",
+    "type": "numeric",
+    "prompt": "What volume, in mL, of 6.00 M HCl is needed to make 500.0 mL of 0.150 M HCl?",
+    "answer": 12.5,
+    "unit": "mL",
+    "explanation": "(6.00 M)V_1 = (0.150 M)(500.0 mL), so V_1 = 12.5 mL of the 6.00 M HCl, diluted to 500.0 mL."
+  },
+  {
+    "id": "dilution-stock-in-liters",
+    "type": "numeric",
+    "prompt": "What volume, in liters, of a 2.50 M stock solution is needed to prepare 2.00 L of a 0.500 M solution?",
+    "answer": 0.4,
+    "unit": "L",
+    "explanation": "(2.50 M)V_1 = (0.500 M)(2.00 L), so V_1 = 0.400 L."
+  },
+  {
+    "id": "dilution-concentrated-sulfuric-acid",
+    "type": "numeric",
+    "prompt": "25.0 mL of 18.0 M H2SO4 is diluted to a final volume of 1.00 L. What is the final concentration?",
+    "answer": 0.45,
+    "unit": "M",
+    "explanation": "The volumes must be in the same units: 1.00 L = 1000 mL. (18.0 M)(25.0 mL) = M_2(1000 mL), so M_2 = 0.450 M."
+  },
+  {
+    "id": "dilution-mixed-units",
+    "type": "numeric",
+    "prompt": "15.0 mL of a 4.00 M solution is diluted to 0.250 L. What is the final concentration?",
+    "answer": 0.24,
+    "unit": "M",
+    "explanation": "Put both volumes in the same unit: 0.250 L = 250 mL. (4.00 M)(15.0 mL) = M_2(250 mL), so M_2 = 0.240 M."
+  },
+  {
+    "id": "dilution-same-volume-units",
+    "type": "multiple-choice",
+    "prompt": "When you use M_1 × V_1 = M_2 × V_2, what must be true of the volumes?",
+    "choices": [
+      { "text": "They must be expressed in the same units.", "correct": true },
+      { "text": "They must both be in liters.", "why": "Liters work, but so do milliliters, because the units cancel. They just have to match." },
+      { "text": "The final volume must be in milliliters and the initial one in liters.", "why": "Mixing units gives an answer off by a factor of 1000. Both volumes must be in the same unit." },
+      { "text": "They must be equal.", "why": "In a dilution the volumes are different; the product MV is what stays equal." }
+    ],
+    "explanation": "In the dilution equation, the volumes must be expressed in the same units. Then the units cancel, so either liters or milliliters will do."
+  },
+  {
+    "id": "dilution-labels-pairing",
+    "type": "multiple-choice",
+    "prompt": "In M_1 × V_1 = M_2 × V_2, does it matter which conditions are labeled 1 and which are labeled 2?",
+    "choices": [
+      { "text": "No, as long as each molarity is paired with its own volume", "correct": true },
+      { "text": "Yes; 1 must always be the more concentrated solution", "why": "Either set can be labeled 1. What matters is that each molarity goes with its own volume." },
+      { "text": "Yes; 1 must always be the larger volume", "why": "The labels are arbitrary; just keep each molarity with the volume it belongs to." },
+      { "text": "No, and the molarities and volumes can be paired in any way", "why": "The pairing matters: the initial molarity must go with the initial volume." }
+    ],
+    "explanation": "It does not matter which set of conditions is labeled 1 or 2, as long as the conditions are paired together properly."
+  },
+  {
+    "id": "dilution-concentration-goes-down",
+    "type": "multiple-choice",
+    "prompt": "A student dilutes 20.0 mL of a 0.500 M solution to 80.0 mL and calculates a final concentration of 2.00 M. What most likely went wrong?",
+    "choices": [
+      { "text": "The volumes were swapped; dilution lowers the concentration, and the correct answer is 0.125 M.", "correct": true },
+      { "text": "Nothing; adding water raises the concentration.", "why": "Adding solvent spreads the same solute through more solution, so the concentration goes down." },
+      { "text": "The volumes should have been converted to liters, which would give 0.00200 M.", "why": "Both volumes are already in the same unit, so no conversion is needed. The volumes were paired with the wrong molarities." },
+      { "text": "The student should have added the volumes: 100.0 mL.", "why": "The final volume is given as 80.0 mL. (0.500 M)(20.0 mL) = M_2(80.0 mL) gives 0.125 M." }
+    ],
+    "explanation": "Dilution decreases concentration, so M_2 must be less than 0.500 M. (0.500 M)(20.0 mL) = M_2(80.0 mL) gives M_2 = 0.125 M; 2.00 M comes from swapping the volumes."
+  },
+  {
+    "id": "dilution-moles-unchanged",
+    "type": "numeric",
+    "prompt": "25.0 mL of a 0.400 M solution is diluted to 100.0 mL. How many moles of solute does the diluted solution contain?",
+    "answer": 0.01,
+    "unit": "mol",
+    "explanation": "Dilution doesn't change the amount of solute. Before dilution: (0.400 mol/L)(0.0250 L) = 0.0100 mol, and the diluted solution has the same 0.0100 mol."
+  },
+  {
+    "id": "dilution-tenfold",
+    "type": "numeric",
+    "prompt": "A solution is diluted from 0.900 M to 0.0900 M. How many times larger is the final volume than the initial volume?",
+    "answer": 10,
+    "explanation": "M_1 × V_1 = M_2 × V_2 gives V_2 / V_1 = M_1 / M_2 = 0.900 M / 0.0900 M = 10. The concentration fell by a factor of 10, so the volume grew by a factor of 10."
+  },
+  {
+    "id": "dilution-concentrate-by-boiling",
+    "type": "numeric",
+    "prompt": "500.0 mL of a 0.200 M solution is boiled down to 125.0 mL without losing any solute. What is the new concentration?",
+    "answer": 0.8,
+    "unit": "M",
+    "explanation": "The dilution equation works for concentrating too: (0.200 M)(500.0 mL) = M_2(125.0 mL), so M_2 = 0.800 M."
+  },
+  {
+    "id": "dilution-solvent-removed",
+    "type": "numeric",
+    "prompt": "A solution is concentrated from 500.0 mL to 125.0 mL by boiling off water. How many milliliters of water were removed?",
+    "answer": 375,
+    "unit": "mL",
+    "explanation": "The amount of change is found by subtraction: 500.0 mL − 125.0 mL = 375.0 mL of water removed."
+  },
+  {
+    "id": "dilution-boil-to-target",
+    "type": "numeric",
+    "prompt": "To what volume, in mL, must 300.0 mL of a 0.150 M solution be reduced by evaporation to make its concentration 0.450 M?",
+    "answer": 100,
+    "unit": "mL",
+    "explanation": "(0.150 M)(300.0 mL) = (0.450 M)V_2, so V_2 = 100.0 mL."
+  },
+  {
+    "id": "dilution-how-to-concentrate",
+    "type": "multiple-choice",
+    "prompt": "How is a solution usually concentrated?",
+    "choices": [
+      { "text": "By evaporating or boiling off solvent, assuming the heat doesn't affect the solute", "correct": true },
+      { "text": "By adding more solvent", "why": "Adding solvent dilutes a solution. Concentrating removes solvent." },
+      { "text": "By filtering out the solute", "why": "Removing solute would lower the concentration. Concentrating removes solvent and keeps the solute." },
+      { "text": "By cooling the solution until the solvent freezes", "why": "The section describes removing solvent by evaporating or boiling it off." }
+    ],
+    "explanation": "Concentrating solutions involves removing solvent, usually by evaporating or boiling, assuming that the heat of boiling does not affect the solute. The dilution equation applies here as well."
+  },
+  {
+    "id": "dilution-stock-solution",
+    "type": "multiple-choice",
+    "prompt": "In a hospital, what is a stock solution?",
+    "choices": [
+      { "text": "A more concentrated solution that is diluted to make solutions of the needed concentration", "correct": true },
+      { "text": "A solution already at the exact concentration a patient needs", "why": "A stock solution is more concentrated than needed; it is diluted to the right concentration." },
+      { "text": "Pure water used to dilute other solutions", "why": "The sterile solution in the IV bag does the diluting. The stock solution supplies the solute." },
+      { "text": "A saturated solution that can't be diluted", "why": "Stock solutions are made to be diluted, by drawing some up and adding it to a larger volume." }
+    ],
+    "explanation": "An aide preparing an IV usually draws up some of a more concentrated, sterile stock solution and injects it into an IV bag, diluting it to the proper concentration."
+  },
+  {
+    "id": "dilution-iv-percent-stock",
+    "type": "numeric",
+    "prompt": "An IV bag must contain 250 mL of 0.40% KCl. It is made by diluting a 20.0% KCl stock solution. What volume of stock solution, in mL, is needed?",
+    "answer": 5,
+    "unit": "mL",
+    "explanation": "The dilution equation works with percentages too: (20.0%)V_1 = (0.40%)(250 mL), so V_1 = 5.0 mL of stock solution."
+  },
+  {
+    "id": "dilution-percent-final",
+    "type": "numeric",
+    "prompt": "10.0 mL of a 12.0% solution is diluted to 60.0 mL. What is the final concentration, in percent?",
+    "answer": 2,
+    "unit": "%",
+    "explanation": "(12.0%)(10.0 mL) = C_2(60.0 mL), so C_2 = 2.00%."
+  },
+  {
+    "id": "dilution-iv-volume-approximation",
+    "type": "multiple-choice",
+    "prompt": "When an aide injects a few milliliters of stock solution into a 100 mL IV bag, the final volume is slightly more than 100 mL. Why is the calculated concentration still acceptable?",
+    "choices": [
+      { "text": "The added stock changes the total volume only slightly, so the final concentration is close enough even for medical purposes.", "correct": true },
+      { "text": "The stock solution has no volume once it is mixed in.", "why": "The stock does add volume; the section acknowledges this. The change is just small." },
+      { "text": "Concentration doesn't depend on volume.", "why": "Concentration does depend on volume. The extra few milliliters change it only slightly." },
+      { "text": "The extra volume evaporates before the IV is used.", "why": "The volume doesn't evaporate away. The small extra volume just makes a negligible difference." }
+    ],
+    "explanation": "Adding the stock solution affects the total volume of the diluted solution, but the final concentration is likely close enough even for medical purposes."
+  }
+]

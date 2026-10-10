@@ -36,11 +36,11 @@ In acids, the concentration of H^+(aq)—[H^+]—is greater than 1.0 × 10^−7 
 
 [H^+][OH^−] = 1.0 × 10^−14
 
-This value of the product of concentrations is so important for aqueous solutions that it is called the autoionization constant of water and is denoted Kw:
+This value of the product of concentrations is so important for aqueous solutions that it is called the autoionization constant of water and is denoted K_w:
 
-Kw = [H^+][OH^−] = 1.0 × 10^−14
+K_w = [H^+][OH^−] = 1.0 × 10^−14
 
-This means that if you know [H^+] for a solution, you can calculate what [OH^−] has to be for the product to equal 1.0 × 10^−14, or if you know [OH^−], you can calculate [H^+]. This also implies that as one concentration goes up, the other must go down to compensate so that their product always equals the value of Kw.
+This means that if you know [H^+] for a solution, you can calculate what [OH^−] has to be for the product to equal 1.0 × 10^−14, or if you know [OH^−], you can calculate [H^+]. This also implies that as one concentration goes up, the other must go down to compensate so that their product always equals the value of K_w.
 
 ### Example 12.6.1
 
@@ -48,9 +48,9 @@ What is [OH^−] of an aqueous solution if [H^+] is 1.0 × 10^−4 M?
 
 **Solution**
 
-Using the expression and known value for Kw,
+Using the expression and known value for K_w,
 
-Kw = [H^+][OH^−] = 1.0 × 10^−14 = (1.0 × 10^−4)[OH^−]
+K_w = [H^+][OH^−] = 1.0 × 10^−14 = (1.0 × 10^−4)[OH^−]
 
 We solve by dividing both sides of the equation by 1.0 × 10^−4:
 
@@ -74,7 +74,7 @@ What is [H^+] in a 0.0044 M solution of Ca(OH)2?
 
 **Solution**
 
-We begin by determining [OH^−]. The concentration of the solute is 0.0044 M, but because Ca(OH)2 is a strong base, there are two OH^− ions in solution for every formula unit dissolved, so the actual [OH^−] is two times this, or 2 × 0.0044 M = 0.0088 M. Now we can use the Kw expression:
+We begin by determining [OH^−]. The concentration of the solute is 0.0044 M, but because Ca(OH)2 is a strong base, there are two OH^− ions in solution for every formula unit dissolved, so the actual [OH^−] is two times this, or 2 × 0.0044 M = 0.0088 M. Now we can use the K_w expression:
 
 [H^+][OH^−] = 1.0 × 10^−14 = [H^+](0.0088 M)
 

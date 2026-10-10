@@ -60,7 +60,7 @@ function CitedAnswerArt() {
         <DocumentIcon className="h-4 w-4 text-on-accent" />
       </span>
       <p className="mt-3 text-[0.65rem] text-neutral-500">Answer found in</p>
-      <p className="mt-1 text-base">14.6 Buffers</p>
+      <p className="mt-1 text-base">5.6 Yields</p>
     </MiniCard>
   );
 }
@@ -126,10 +126,10 @@ function StepsArt() {
   );
 }
 
-const SECTIONS = ["14.5 Polyprotic Acids", "14.6 Buffers", "14.7 Acid-Base Titrations"];
+const SECTIONS = ["5.3 The Mole", "5.6 Yields", "5.7 Limiting Reagents"];
 
 /* Fixed 300 x 136 px canvas so the connectors meet the chips: chips are 25px
-   tall with 8px gaps, so the middle ("14.6 Buffers") is centred at y = 89. */
+   tall with 8px gaps, so the middle ("5.6 Yields") is centred at y = 89. */
 function RetrievalArt() {
   return (
     <div className="relative h-34 w-75">

@@ -52,7 +52,7 @@ In which direction—toward reactants or toward products—does the reaction shi
 1. toward reactants
 2. toward reactants
 
-It is worth noting that when reactants or products are added or removed, the value of the Keq does not change. The chemical reaction simply shifts, in a predictable fashion, to reestablish concentrations so that the Keq expression reverts to the correct value.
+It is worth noting that when reactants or products are added or removed, the value of the K_eq does not change. The chemical reaction simply shifts, in a predictable fashion, to reestablish concentrations so that the K_eq expression reverts to the correct value.
 
 How does an equilibrium react to a change in pressure? Pressure changes do not markedly affect the solid or liquid phases. However, pressure strongly impacts the gas phase. Le Chatelier's principle implies that a pressure increase shifts an equilibrium to the side of the reaction with the fewer number of moles of gas, while a pressure decrease shifts an equilibrium to the side of the reaction with the greater number of moles of gas. If the number of moles of gas is the same on both sides of the reaction, pressure has no effect.
 
@@ -104,7 +104,7 @@ N2O4 + 57 kJ ⇌ 2NO2
 
 Equilibrium shifts toward reactants.
 
-In the case of temperature, the value of the equilibrium has changed because the Keq is dependent on temperature. That is why equilibria shift with changes in temperature.
+In the case of temperature, the value of the equilibrium has changed because the K_eq is dependent on temperature. That is why equilibria shift with changes in temperature.
 
 A catalyst is a substance that increases the speed of a reaction. Overall, a catalyst is not a reactant and is not used up, but it still affects how fast a reaction proceeds. However, a catalyst does not affect the extent or position of a reaction at equilibrium. It helps a reaction achieve equilibrium faster.
 

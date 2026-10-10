@@ -1,0 +1,246 @@
+[
+  {
+    "id": "nuclearenergy-source",
+    "type": "multiple-choice",
+    "prompt": "Where does the energy released in a nuclear reaction come from?",
+    "choices": [
+      { "text": "A small amount of mass is converted into energy, according to E = mc^2.", "correct": true },
+      { "text": "Breaking chemical bonds between atoms", "why": "That's the source of energy in chemical reactions. Nuclear energy comes from a tiny loss of mass." },
+      { "text": "Electrons falling into lower shells", "why": "Nuclear energy comes from the nucleus, where a little mass is converted to energy." },
+      { "text": "The heat of the surroundings", "why": "Nuclear reactions give off energy that comes from a slight drop in mass." }
+    ],
+    "explanation": "If we measure the masses of the reactants and products precisely, the mass drops slightly. According to Einstein's E = mc^2, that mass difference is converted to energy, which is given off."
+  },
+  {
+    "id": "nuclearenergy-mass-in-kilograms",
+    "type": "multiple-choice",
+    "prompt": "When using E = mc^2 with c = 3.00 × 10^8 m/s to get energy in joules, what unit must the mass be in?",
+    "choices": [
+      { "text": "Kilograms", "correct": true },
+      { "text": "Grams", "why": "For the units to work out to joules (kg·m²/s²), the mass must be in kilograms." },
+      { "text": "Moles", "why": "Mass is needed, in kilograms, not an amount in moles." },
+      { "text": "Any unit; the result is always in joules", "why": "Only kilograms give joules with c in m/s." }
+    ],
+    "explanation": "For the units to work out, mass must be expressed in kilograms. A mass change found in grams must be converted first."
+  },
+  {
+    "id": "nuclearenergy-one-gram",
+    "type": "numeric",
+    "prompt": "A nuclear reaction converts 0.250 g of mass into energy. How much energy is released, in joules? Use E = mc^2 with c = 3.00 × 10^8 m/s.",
+    "answer": 22500000000000,
+    "unit": "J",
+    "explanation": "0.250 g = 2.50 × 10^−4 kg. E = (2.50 × 10^−4 kg)(3.00 × 10^8 m/s)^2 = (2.50 × 10^−4)(9.00 × 10^16) = 2.25 × 10^13 J."
+  },
+  {
+    "id": "nuclearenergy-one-kilogram",
+    "type": "numeric",
+    "prompt": "How much energy, in joules, would be released if 1.00 kg of mass were completely converted into energy? Use E = mc^2 with c = 3.00 × 10^8 m/s.",
+    "answer": 90000000000000000,
+    "unit": "J",
+    "explanation": "E = (1.00 kg)(3.00 × 10^8 m/s)^2 = 9.00 × 10^16 J."
+  },
+  {
+    "id": "nuclearenergy-gram-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student finds a mass loss of 0.20 g and calculates E = (0.20)(3.00 × 10^8)^2 = 1.8 × 10^16 J. What is wrong?",
+    "choices": [
+      { "text": "The mass must be in kilograms (2.0 × 10^−4 kg), so E = 1.8 × 10^13 J.", "correct": true },
+      { "text": "c should not be squared.", "why": "The equation is E = mc^2, so c is squared. The error is using grams." },
+      { "text": "The mass loss should be multiplied by c, not c^2.", "why": "E = mc^2. The problem is the mass unit." },
+      { "text": "Nothing is wrong.", "why": "With c in m/s, the mass must be in kg for the answer to be in joules. Using grams overstates it by 1000 times." }
+    ],
+    "explanation": "0.20 g = 2.0 × 10^−4 kg, so E = (2.0 × 10^−4 kg)(3.00 × 10^8 m/s)^2 = 1.8 × 10^13 J. Using grams makes the answer 1000 times too large."
+  },
+  {
+    "id": "nuclearenergy-energy-from-masses",
+    "type": "numeric",
+    "prompt": "For ¹₀n (1.0087 g/mol) + ²³⁵₉₂U (235.0439) → ¹⁴¹₅₆Ba (140.9144) + ⁹²₃₆Kr (91.9262) + 3 ¹₀n (3 × 1.0087), what is the energy change, in joules, for 1 mol of reaction? Use E = mc^2 with c = 3.00 × 10^8 m/s. (Give it with its sign.)",
+    "answer": -16731000000000,
+    "unit": "J",
+    "explanation": "Reactants: 1.0087 + 235.0439 = 236.0526 g. Products: 140.9144 + 91.9262 + 3.0261 = 235.8667 g. Δm = −0.1859 g = −1.859 × 10^−4 kg. E = (−1.859 × 10^−4)(9.00 × 10^16) = −1.67 × 10^13 J."
+  },
+  {
+    "id": "nuclearenergy-vs-chemical",
+    "type": "multiple-choice",
+    "prompt": "How does the energy of nuclear reactions compare with that of chemical reactions like combustion?",
+    "choices": [
+      { "text": "Nuclear reactions give off billions of kilojoules per mole; combustion gives off hundreds.", "correct": true },
+      { "text": "They are about the same.", "why": "Nuclear reactions release millions of times more energy per mole." },
+      { "text": "Combustion releases more energy per mole.", "why": "Combustion releases on the order of hundreds of kJ/mol; nuclear reactions, billions." },
+      { "text": "Nuclear reactions absorb energy.", "why": "The fission and fusion reactions described give off enormous amounts of energy." }
+    ],
+    "explanation": "The fission of 1 mol of uranium-235 gives off about 16.5 billion kJ, while hydrocarbon combustion gives off on the order of hundreds of kJ per mole: an extraordinary difference."
+  },
+  {
+    "id": "nuclearenergy-controlled-fission",
+    "type": "multiple-choice",
+    "prompt": "What makes it possible to control the fission of uranium-235 for nuclear energy?",
+    "choices": [
+      { "text": "The fission can be artificially initiated by injecting a neutron into a uranium nucleus.", "correct": true },
+      { "text": "Uranium-235 only undergoes fission when heated.", "why": "Fission is triggered by absorbing a neutron, so controlling the neutrons controls the reaction." },
+      { "text": "Uranium-235 doesn't release neutrons.", "why": "It does release neutrons; controlling how many cause further fissions is how the reaction is controlled." },
+      { "text": "Fission stops by itself after one event.", "why": "Fission releases more neutrons that can cause more fission; it must be controlled." }
+    ],
+    "explanation": "The fission of uranium-235 (and a few other isotopes, like plutonium-239) can be initiated by injecting a neutron, so by carefully adding neutrons, the process can be controlled to provide useful energy."
+  },
+  {
+    "id": "nuclearenergy-neutrons-barium",
+    "type": "numeric",
+    "prompt": "¹₀n + ²³⁵₉₂U → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + ? ¹₀n. How many neutrons are produced?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Mass numbers: 1 + 235 = 236 on the left; 141 + 92 = 233 on the right, so 3 neutrons are needed. Atomic numbers balance already: 92 = 56 + 36."
+  },
+  {
+    "id": "nuclearenergy-neutrons-xenon",
+    "type": "numeric",
+    "prompt": "¹₀n + ²³⁵₉₂U → ¹⁴⁴₅₄Xe + ⁹⁰₃₈Sr + ? ¹₀n. How many neutrons are produced?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "236 = 144 + 90 + x, so x = 2. Atomic numbers: 92 = 54 + 38."
+  },
+  {
+    "id": "nuclearenergy-missing-atomic-number",
+    "type": "numeric",
+    "prompt": "In the fission ¹₀n + ²³⁵₉₂U → ¹⁴³₅₄Xe + ⁹⁰X + 3 ¹₀n, what is the atomic number of the unknown fragment X?",
+    "answer": 38,
+    "tolerance": 0,
+    "explanation": "Atomic numbers must balance: 0 + 92 = 54 + Z + 3(0), so Z = 38 (strontium). Mass numbers check: 236 = 143 + 90 + 3."
+  },
+  {
+    "id": "nuclearenergy-reactor",
+    "type": "multiple-choice",
+    "prompt": "How does a nuclear power plant generate electricity?",
+    "choices": [
+      { "text": "Energy from a controlled nuclear reaction turns water into high-pressure steam, which runs turbines.", "correct": true },
+      { "text": "The nuclear reaction produces electricity directly, like a battery.", "why": "The reactor's energy heats water into steam, and the steam turns turbines that generate electricity." },
+      { "text": "Uranium is burned with oxygen.", "why": "Uranium undergoes fission, not combustion." },
+      { "text": "Fusion of hydrogen in the reactor", "why": "Today's reactors use controlled fission; controlled fusion hasn't been achieved." }
+    ],
+    "explanation": "A nuclear reactor carefully controls a nuclear reaction and extracts the energy: it converts water into high-pressure steam, which runs turbines that generate electricity."
+  },
+  {
+    "id": "nuclearenergy-chain-reaction",
+    "type": "multiple-choice",
+    "prompt": "What is a chain reaction in nuclear fission?",
+    "choices": [
+      { "text": "Neutrons released by one fission cause more fissions, which release more neutrons, so the process grows exponentially.", "correct": true },
+      { "text": "A series of alpha decays from one isotope to the next", "why": "A chain reaction involves fission events triggering more fission through their neutrons." },
+      { "text": "A reaction that stops after a fixed number of steps", "why": "A chain reaction keeps growing as long as each fission triggers more." },
+      { "text": "Two nuclei combining into one", "why": "That's fusion. A chain reaction is fission spreading through neutrons." }
+    ],
+    "explanation": "On average, uranium fission produces about two more free neutrons than it started with. These stimulate other nuclei to undergo fission, releasing more energy and more neutrons: a chain reaction, 1 → 2 → 4 → 8 → …"
+  },
+  {
+    "id": "nuclearenergy-chain-generations",
+    "type": "numeric",
+    "prompt": "In a chain reaction where the number of fissions doubles each step (1 → 2 → 4 → …), how many fissions occur in the 11th step, after 10 doublings?",
+    "answer": 1024,
+    "tolerance": 0,
+    "explanation": "After 10 doublings, 2^10 = 1024 fissions occur in that step. The growth is exponential."
+  },
+  {
+    "id": "nuclearenergy-atomic-bomb",
+    "type": "multiple-choice",
+    "prompt": "What is the mechanism behind an atomic bomb?",
+    "choices": [
+      { "text": "An uncontrolled chain reaction, producing energy exponentially and creating an explosion", "correct": true },
+      { "text": "A controlled chain reaction, like in a power plant", "why": "A bomb's chain reaction is uncontrolled; a power plant controls it." },
+      { "text": "A very large chemical explosion", "why": "An atomic bomb's energy comes from nuclear fission, not chemical reactions." },
+      { "text": "Slow radioactive decay", "why": "The quick, exponential production of energy in a chain reaction causes the explosion." }
+    ],
+    "explanation": "Because energy is produced with each fission event, an uncontrolled chain reaction produces energy exponentially; the quick release of energy creates an explosion. This is the mechanism behind the atomic bomb."
+  },
+  {
+    "id": "nuclearenergy-enrichment",
+    "type": "multiple-choice",
+    "prompt": "Natural uranium is only about 0.7% uranium-235. Why must uranium be enriched?",
+    "choices": [
+      { "text": "Uranium-238, most of natural uranium, doesn't undergo fission; reactors need about 3% uranium-235, and bombs 70% or more.", "correct": true },
+      { "text": "Uranium-238 undergoes fission too easily.", "why": "Uranium-238 doesn't undergo fission; the issue is too little fissionable uranium-235." },
+      { "text": "Enrichment makes uranium radioactive.", "why": "Uranium is already radioactive; enrichment raises the proportion of fissionable uranium-235." },
+      { "text": "Enrichment changes uranium-238 into uranium-235.", "why": "Enrichment is a series of physical and chemical separations that concentrate the uranium-235 already present." }
+    ],
+    "explanation": "Uranium-235 makes up only 0.7% of natural uranium; the rest is mostly uranium-238, which does not undergo fission. Uranium must be enriched to about 3% uranium-235 for reactors, and to 70% or more for a bomb."
+  },
+  {
+    "id": "nuclearenergy-natural-uranium-235",
+    "type": "numeric",
+    "prompt": "Natural uranium is about 0.7% uranium-235. About how many kilograms of uranium-235 are in 1000 kg of natural uranium?",
+    "answer": 7,
+    "unit": "kg",
+    "explanation": "0.7% of 1000 kg = 0.007 × 1000 kg = 7 kg."
+  },
+  {
+    "id": "nuclearenergy-fusion-definition",
+    "type": "multiple-choice",
+    "prompt": "What is nuclear fusion?",
+    "choices": [
+      { "text": "Combining smaller nuclei to make larger nuclei, with a release of energy", "correct": true },
+      { "text": "Splitting a large nucleus into smaller ones", "why": "That is fission. Fusion combines small nuclei." },
+      { "text": "Melting a solid into a liquid", "why": "That's the everyday sense of fusion, melting. Nuclear fusion combines nuclei." },
+      { "text": "Emitting a gamma ray", "why": "Fusion combines nuclei, such as hydrogen into helium." }
+    ],
+    "explanation": "In fusion, smaller nuclei are combined to make larger nuclei, with an accompanying release of energy; for example, hydrogen fusion makes helium."
+  },
+  {
+    "id": "nuclearenergy-fusion-advantages",
+    "type": "multiple-choice",
+    "prompt": "What advantages does hydrogen fusion have over fission?",
+    "choices": [
+      { "text": "Per gram, it gives off about 10 times more energy, and its product is helium rather than a range of radioactive isotopes.", "correct": true },
+      { "text": "It works easily at room temperature.", "why": "Fusion needs extremely high temperatures and pressures; that's the main practical problem." },
+      { "text": "It produces more energy per mole of reactant.", "why": "Per mole, fusion gives off less than uranium fission; per gram, it gives off about 10 times more." },
+      { "text": "It is already used in power plants.", "why": "Researchers are still looking for safe, controlled ways to produce energy by fusion." }
+    ],
+    "explanation": "On a per-gram basis, hydrogen fusion gives off about 10 times more energy than fission, and its product is helium gas rather than a wide range of isotopes, some of them radioactive."
+  },
+  {
+    "id": "nuclearenergy-fusion-stars",
+    "type": "multiple-choice",
+    "prompt": "Where does fusion occur naturally?",
+    "choices": [
+      { "text": "In the sun and other stars", "correct": true },
+      { "text": "In uranium deposits in the earth", "why": "Uranium can undergo fission. Natural fusion powers the stars." },
+      { "text": "In lightning strikes", "why": "The only known stable systems undergoing fusion are the interiors of stars." },
+      { "text": "In living cells", "why": "Fusion needs extreme temperatures and pressures, found in the interiors of stars." }
+    ],
+    "explanation": "The sun and other stars use fusion as their ultimate energy source. Currently, the only known stable systems undergoing fusion are the interiors of stars."
+  },
+  {
+    "id": "nuclearenergy-fusion-problem",
+    "type": "multiple-choice",
+    "prompt": "What is the main practical problem in using fusion as an energy source?",
+    "choices": [
+      { "text": "Fusion requires extremely high pressures and temperatures.", "correct": true },
+      { "text": "Fusion produces large amounts of radioactive waste.", "why": "Hydrogen fusion's product is helium. The challenge is the extreme conditions it needs." },
+      { "text": "There isn't enough hydrogen.", "why": "The problem is creating the extreme conditions fusion needs in a controlled way." },
+      { "text": "Fusion releases too little energy.", "why": "Fusion releases a great deal of energy; it's hard to achieve and control." }
+    ],
+    "explanation": "To perform fusion, extremely high pressures and temperatures are necessary. An atomic bomb can create them, but the resulting fusion is uncontrollable; researchers are seeking safe, controlled ways."
+  },
+  {
+    "id": "nuclearenergy-first-chain-reaction",
+    "type": "multiple-choice",
+    "prompt": "The first controlled chain reaction was achieved on December 2, 1942. Who supervised the experiment?",
+    "choices": [
+      { "text": "Enrico Fermi, at the University of Chicago", "correct": true },
+      { "text": "Albert Einstein, at Princeton", "why": "Einstein gave us E = mc^2; Fermi supervised the first controlled chain reaction." },
+      { "text": "Marie Curie, in Paris", "why": "Marie Curie studied radioactivity in the early 1900s. Fermi supervised the 1942 experiment." },
+      { "text": "Henri Becquerel, in France", "why": "Becquerel discovered radioactivity in 1896." }
+    ],
+    "explanation": "The first controlled chain reaction was achieved on December 2, 1942, in an experiment supervised by Enrico Fermi in a laboratory underneath the football stadium at the University of Chicago."
+  },
+  {
+    "id": "nuclearenergy-mass-lost-not-gained",
+    "type": "multiple-choice",
+    "prompt": "In a fission reaction, how does the total mass of the products compare with the total mass of the reactants?",
+    "choices": [
+      { "text": "The products have slightly less mass; the missing mass became energy.", "correct": true },
+      { "text": "The products have exactly the same mass.", "why": "Precise measurements show the mass drops slightly; that small loss is the energy released." },
+      { "text": "The products have more mass, because more particles are made.", "why": "More particles form, but their total mass is slightly less than the reactants'." },
+      { "text": "The products have no mass.", "why": "Only a tiny fraction of the mass is converted; the products are still massive." }
+    ],
+    "explanation": "If we precisely measure the masses, the amount of mass drops slightly from reactants to products. That mass difference is converted to energy, according to E = mc^2."
+  }
+]

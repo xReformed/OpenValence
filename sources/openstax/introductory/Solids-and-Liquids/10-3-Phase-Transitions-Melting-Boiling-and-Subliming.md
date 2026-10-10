@@ -14,11 +14,11 @@ license: "CC BY-NC-SA 3.0"
 
 Substances can change phase—often because of a temperature change. At low temperatures, most substances are solid; as the temperature increases, they become liquid; at higher temperatures still, they become gaseous.
 
-The process of a solid becoming a liquid is called melting (an older term that you may see sometimes is fusion). The opposite process, a liquid becoming a solid, is called solidification. For any pure substance, the temperature at which melting occurs—known as the melting point—is a characteristic of that substance. It requires energy for a solid to melt into a liquid. Every pure substance has a certain amount of energy it needs to change from a solid to a liquid. This amount is called the enthalpy of fusion (or heat of fusion) of the substance, represented as ΔHfus. Some ΔHfus values are listed in Table 10.3.1; it is assumed that these values are for the melting point of the substance. Note that the unit of ΔHfus is kilojoules per mole, so we need to know the quantity of material to know how much energy is involved. The ΔHfus is always tabulated as a positive number. However, it can be used for both the melting and the solidification processes, minding that melting is always endothermic (so ΔH will be positive), while solidification is always exothermic (so ΔH will be negative).
+The process of a solid becoming a liquid is called melting (an older term that you may see sometimes is fusion). The opposite process, a liquid becoming a solid, is called solidification. For any pure substance, the temperature at which melting occurs—known as the melting point—is a characteristic of that substance. It requires energy for a solid to melt into a liquid. Every pure substance has a certain amount of energy it needs to change from a solid to a liquid. This amount is called the enthalpy of fusion (or heat of fusion) of the substance, represented as ΔH_fus. Some ΔH_fus values are listed in Table 10.3.1; it is assumed that these values are for the melting point of the substance. Note that the unit of ΔH_fus is kilojoules per mole, so we need to know the quantity of material to know how much energy is involved. The ΔH_fus is always tabulated as a positive number. However, it can be used for both the melting and the solidification processes, minding that melting is always endothermic (so ΔH will be positive), while solidification is always exothermic (so ΔH will be negative).
 
 Table 10.3.1: Enthalpies of Fusion for Various Substances
 
-| Substance (Melting Point) | ΔHfus (kJ/mol) |
+| Substance (Melting Point) | ΔH_fus (kJ/mol) |
 | --- | --- |
 | Water (0°C) | 6.01 |
 | Aluminum (660°C) | 10.7 |
@@ -55,11 +55,11 @@ A glass of water (left) & drop of water floating above a man laying down (right)
 
 The phase change between a liquid and a gas has some similarities to the phase change between a solid and a liquid. At a certain temperature, the particles in a liquid have enough energy to become a gas. The process of a liquid becoming a gas is called boiling (or vaporization), while the process of a gas becoming a liquid is called condensation. However, unlike the solid/liquid conversion process, the liquid/gas conversion process is noticeably affected by the surrounding pressure on the liquid because gases are strongly affected by pressure. This means that the temperature at which a liquid becomes a gas, the boiling point, can change with surrounding pressure. Therefore, we define the normal boiling point as the temperature at which a liquid changes to a gas when the surrounding pressure is exactly 1 atm, or 760 torr. Unless otherwise specified, it is assumed that a boiling point is for 1 atm of pressure.
 
-Like the solid/liquid phase change, the liquid/gas phase change involves energy. The amount of energy required to convert a liquid to a gas is called the enthalpy of vaporization (or heat of vaporization), represented as ΔHvap. Some ΔHvap values are listed in Table 10.3.2; it is assumed that these values are for the normal boiling point temperature of the substance, which is also given in the table. The unit for ΔHvap is also kilojoules per mole, so we need to know the quantity of material to know how much energy is involved. The ΔHvap is also always tabulated as a positive number. It can be used for both the boiling and the condensation processes as long as you keep in mind that boiling is always endothermic (so ΔH will be positive), while condensation is always exothermic (so ΔH will be negative).
+Like the solid/liquid phase change, the liquid/gas phase change involves energy. The amount of energy required to convert a liquid to a gas is called the enthalpy of vaporization (or heat of vaporization), represented as ΔH_vap. Some ΔH_vap values are listed in Table 10.3.2; it is assumed that these values are for the normal boiling point temperature of the substance, which is also given in the table. The unit for ΔH_vap is also kilojoules per mole, so we need to know the quantity of material to know how much energy is involved. The ΔH_vap is also always tabulated as a positive number. It can be used for both the boiling and the condensation processes as long as you keep in mind that boiling is always endothermic (so ΔH will be positive), while condensation is always exothermic (so ΔH will be negative).
 
 Table 10.3.1: Enthalpies of Vaporization for Various Substances
 
-| Substance (Normal Boiling Point) | ΔHvap (kJ/mol) |
+| Substance (Normal Boiling Point) | ΔH_vap (kJ/mol) |
 | --- | --- |
 | Water (100°C) | 40.68 |
 | Bromine (59.5°C) | 15.4 |
@@ -75,7 +75,7 @@ What is the energy change when 66.7 g of Br2(g) condense to a liquid at 59.5°C?
 
 **Solution**
 
-The ΔHvap of Br2 is 15.4 kJ/mol. Even though this is a condensation process, we can still use the numerical value of ΔHvap as long as we realize that we must take energy out, so the ΔH value will be negative. To determine the magnitude of the energy change, we must first convert the amount of Br2 to moles. Then we can use ΔHvap as a conversion factor.
+The ΔH_vap of Br2 is 15.4 kJ/mol. Even though this is a condensation process, we can still use the numerical value of ΔH_vap as long as we realize that we must take energy out, so the ΔH value will be negative. To determine the magnitude of the energy change, we must first convert the amount of Br2 to moles. Then we can use ΔH_vap as a conversion factor.
 
 66.7 ~~g Br2~~ × (1 ~~mol Br2~~)/(159.8 ~~g~~) × (15.4 kJ)/~~mol~~ = 6.43 kJ
 
@@ -98,11 +98,11 @@ What happens when a liquid becomes a gas? We have already established that a liq
 Figure 10.3.2: Sub-microscopic view of the diatomic molecules of the element bromine (a) in the gaseous state (above 58°C); (b) in liquid form (between -7.2 and 58.8°C); and (c) in solid form (below -7.2°C). As a solid, the molecules are fixed, but fluctuate. As a liquid, the molecules are in contact but are also able to move around each other. As a gas, most of the volume is actually empty space. The particles are not to scale; in reality, the dots representing the particles would be about 1/100th of the size depicted.
 The molecules are tightly backed together and cannot move freely, but vibrate.
 
-Under some circumstances, the solid phase can transition directly to the gas phase without going through a liquid phase, and a gas can directly become a solid. The solid-to-gas change is called sublimation, while the reverse process is called deposition. Sublimation is isothermal, like the other phase changes. There is a measurable energy change during sublimation—this energy change is called the enthalpy of sublimation, represented as ΔHsub. The relationship between the ΔHsub and the other enthalpy changes is as follows:
+Under some circumstances, the solid phase can transition directly to the gas phase without going through a liquid phase, and a gas can directly become a solid. The solid-to-gas change is called sublimation, while the reverse process is called deposition. Sublimation is isothermal, like the other phase changes. There is a measurable energy change during sublimation—this energy change is called the enthalpy of sublimation, represented as ΔH_sub. The relationship between the ΔH_sub and the other enthalpy changes is as follows:
 
 ΔH_sub = ΔH_fus + ΔH_vap
 
-As such, ΔHsub is not always tabulated because it can be simply calculated from ΔHfus and ΔHvap.
+As such, ΔH_sub is not always tabulated because it can be simply calculated from ΔH_fus and ΔH_vap.
 
 There are several common examples of sublimation. A well-known product, dry ice, is actually solid CO2. Dry ice is dry because it sublimes, with the solid bypassing the liquid phase and going straight to the gas phase. The sublimation occurs at temperature of −77°C, so it must be handled with caution. If you have ever noticed that ice cubes in a freezer tend to get smaller over time, it is because the solid water is very slowly subliming. "Freezer burn" isn't actually a burn; it occurs when certain foods, such as meats, slowly lose solid water content because of sublimation. The food is still good, but looks unappetizing. Reducing the temperature of a freezer will slow the sublimation of solid water.
 

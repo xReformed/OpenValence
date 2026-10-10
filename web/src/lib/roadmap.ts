@@ -31,14 +31,8 @@ export const BRANCHES: Branch[] = [
     title: "Introductory chemistry",
     status: "in-progress",
     summary:
-      "The first-year sequence, from measurement and the mole to equilibrium and electrochemistry. Two textbooks cover it, one gentler than the other.",
+      "The first-year sequence, from measurement and the mole to equilibrium and electrochemistry.",
     sources: [
-      {
-        title: "Chemistry 1e (OpenStax)",
-        license: "CC BY 4.0",
-        progress: "All 21 chapters",
-        complete: true,
-      },
       {
         title: "Beginning Chemistry (Ball)",
         license: "CC BY-NC-SA 3.0",
@@ -56,7 +50,6 @@ export const BRANCHES: Branch[] = [
       "Thermochemistry and electrochemistry",
     ],
     steps: [
-      { label: "Transcribe Chemistry 1e", done: true },
       { label: "Transcribe Beginning Chemistry", done: true },
       { label: "Grounded answers with citations" },
       { label: "Calculator tools and an equation balancer" },
@@ -74,19 +67,19 @@ export const BRANCHES: Branch[] = [
     slug: "organic",
     icon: organicIcon,
     title: "Organic chemistry",
-    status: "planned",
+    status: "in-progress",
     summary:
       "The chemistry of carbon compounds: how they're built, how they're named, and how they react.",
     sources: [
       {
-        title: "Organic Chemistry (OpenStax), candidate",
-        license: "License to confirm",
-        progress: "Not started",
+        title: "Organic Chemistry (OpenStax)",
+        license: "CC BY-NC-SA 4.0",
+        progress: "Chapter 1 of 31",
         complete: false,
       },
     ],
     alreadyCovered:
-      "Chemistry 1e chapter 20 introduces hydrocarbons, functional groups, and naming.",
+      "Beginning Chemistry chapter 16 introduces hydrocarbons, functional groups, and naming.",
     scope: [
       "Structure and bonding",
       "Functional groups and nomenclature",
@@ -95,10 +88,18 @@ export const BRANCHES: Branch[] = [
       "Spectroscopy: IR, NMR, and mass spec",
     ],
     steps: [
-      { label: "Confirm the textbook's license" },
+      { label: "Confirm the textbook's license", done: true },
       { label: "Transcribe it word for word" },
       { label: "Show molecule structures as real diagrams" },
       { label: "Answer questions on mechanisms and spectra, with citations" },
+    ],
+    path: [
+      {
+        book: "organic-chemistry",
+        label: "Start here",
+        title: "Organic Chemistry",
+        note: "OpenStax's organic chemistry course, transcribed chapter by chapter.",
+      },
     ],
   },
   {
@@ -109,8 +110,6 @@ export const BRANCHES: Branch[] = [
     summary:
       "Everything beyond carbon: the main-group and transition elements, their compounds, and the symmetry that explains them.",
     sources: [],
-    alreadyCovered:
-      "Chemistry 1e chapters 18–19 cover the main-group elements, transition metals, and coordination chemistry.",
     scope: [
       "Periodic trends in depth",
       "Symmetry and group theory",
@@ -128,7 +127,7 @@ export const BRANCHES: Branch[] = [
     summary:
       "The physics underneath chemistry: why reactions happen, how fast they go, and what electrons are really doing.",
     sources: [],
-    alreadyCovered: "Chemistry 1e chapters 12 and 16 introduce kinetics and thermodynamics.",
+    alreadyCovered: "Beginning Chemistry chapters 7 and 13 introduce energy, enthalpy, and equilibrium.",
     scope: [
       "Thermodynamics in depth",
       "Chemical kinetics",
@@ -146,7 +145,7 @@ export const BRANCHES: Branch[] = [
       "Finding out what's in a sample and how much: careful measurement, statistics, and instruments.",
     sources: [],
     alreadyCovered:
-      "Chemistry 1e sections 1.5, 4.6, and 14.7 introduce uncertainty, quantitative analysis, and titrations.",
+      "Beginning Chemistry sections 2.4 and 12.4 introduce significant figures and titrations.",
     scope: [
       "Error analysis and statistics",
       "Titrations in depth",

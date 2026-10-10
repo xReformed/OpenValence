@@ -111,11 +111,11 @@ The change in boiling point (ΔTb) is easily calculated:
 
 ΔTb = mKb
 
-where m is the molality of the solution and Kb is called the boiling point elevation constant, which is a characteristic of the solvent. Several boiling point elevation constants (as well as boiling point temperatures) are listed in Table 11.6.1.
+where m is the molality of the solution and K_b is called the boiling point elevation constant, which is a characteristic of the solvent. Several boiling point elevation constants (as well as boiling point temperatures) are listed in Table 11.6.1.
 
 Table 11.6.1: Boiling Point Data for Various Liquids
 
-| Liquid | Boiling Point (°C) | Kb (°C/m) |
+| Liquid | Boiling Point (°C) | K_b (°C/m) |
 | --- | --- | --- |
 | HC2H3O2 | 117.90 | 3.07 |
 | C6H6 | 80.10 | 2.53 |
@@ -132,11 +132,11 @@ What is the boiling point of a 2.50 m solution of C6H4Cl2 in CCl4? Assume that C
 
 Using the equation for the boiling point elevation,
 
-ΔTb = (2.50 m)(4.95°C/m) = 12.4°C
+ΔT_b = (2.50 m)(4.95°C/m) = 12.4°C
 
 Note how the molality units have canceled. However, we are not finished. We have calculated the change in the boiling point temperature, not the final boiling point temperature. If the boiling point goes up by 12.4°C, we need to add this to the normal boiling point of CCl4 to get the new boiling point of the solution:
 
-TBP = 76.8°C + 12.4°C = 89.2°C
+T_BP = 76.8°C + 12.4°C = 89.2°C
 
 The boiling point of the solution is predicted to be 89.2°C.
 
@@ -154,11 +154,11 @@ The equation to calculate the change in the freezing point for a solution is sim
 
 ΔTf = mKf
 
-where m is the molality of the solution and Kf is called the freezing point depression constant, which is also a characteristic of the solvent only. Several freezing point depression constants (as well as freezing point temperatures) are listed in Table 11.6.2.
+where m is the molality of the solution and K_f is called the freezing point depression constant, which is also a characteristic of the solvent only. Several freezing point depression constants (as well as freezing point temperatures) are listed in Table 11.6.2.
 
 Table 11.6.2: Freezing Point Data for Various Liquids
 
-| Liquid | Freezing Point (°C) | Kf (°C/m) |
+| Liquid | Freezing Point (°C) | K_f (°C/m) |
 | --- | --- | --- |
 | HC2H3O2 | 16.60 | 3.90 |
 | C6H6 | 5.51 | 4.90 |
@@ -176,7 +176,7 @@ What is the freezing point of a 1.77 m solution of CBr4 in C6H6?
 
 We use the equation to calculate the change in the freezing point and then subtract this number from the normal freezing point of C6H6 to get the freezing point of the solution:
 
-ΔTf = (1.77 m)(4.90°C/m) = 8.67°C
+ΔT_f = (1.77 m)(4.90°C/m) = 8.67°C
 
 Now we subtract this number from the normal freezing point of C6H6, which is 5.51°C:
 

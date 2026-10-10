@@ -24,15 +24,16 @@ import {
   ValenceMark,
 } from "../components/LandingIcons";
 
-/* Every value in the demo is taken from the worked buffer example in
-   sources/.../14-6-Buffers.md, so the preview shows a real grounded answer. */
+/* Every value in the demo is taken from Example 5.6.1 in
+   sources/openstax/introductory/.../05-6-Yields.md, so the preview shows a
+   real grounded answer. */
 const DEMO_QUESTION =
-  "What is the pH of a buffer made from 0.10 M acetic acid and 0.10 M sodium acetate?";
+  "If 30.5 g of zinc reacts with nitric acid and gives 65.2 g of zinc nitrate, what is the percent yield?";
 
 const DEMO_STEPS = [
   "Understanding the question",
-  "Searching 124 textbook sections",
-  "Found: 14.6 Buffers (OpenStax Chemistry)",
+  "Searching 116 textbook sections",
+  "Found: 5.6 Yields (Beginning Chemistry)",
   "Writing a grounded answer",
   "Attaching citations",
 ];
@@ -43,11 +44,11 @@ const STEP_MS = 650;
 type StepState = "done" | "active" | "pending";
 
 const DEMO_RESULT: { key: string; label: ReactNode; value: ReactNode }[] = [
-  { key: "ka", label: "Ka (acetic acid)", value: <>1.8 × 10<sup>−5</sup></> },
-  { key: "pka", label: "pKa", value: "4.74" },
-  { key: "acid", label: <>[CH<sub>3</sub>CO<sub>2</sub>H]</>, value: "0.10 M" },
-  { key: "base", label: <>[CH<sub>3</sub>CO<sub>2</sub><sup>−</sup>]</>, value: "0.10 M" },
-  { key: "ph", label: "pH", value: "4.74" },
+  { key: "zn", label: "Molar mass of Zn", value: "65.39 g/mol" },
+  { key: "salt", label: <>Molar mass of Zn(NO<sub>3</sub>)<sub>2</sub></>, value: "189.41 g/mol" },
+  { key: "theoretical", label: "Theoretical yield", value: "88.3 g" },
+  { key: "actual", label: "Actual yield", value: "65.2 g" },
+  { key: "percent", label: "Percent yield", value: "73.8%" },
 ];
 
 function useDemoProgress(start: boolean) {
@@ -146,7 +147,7 @@ function ProductPreview() {
               }`}
             >
               <p className="mb-2 text-xs font-medium">
-                Buffer pH (Henderson–Hasselbalch)
+                Percent yield (actual ÷ theoretical × 100%)
               </p>
               <dl className="divide-y divide-neutral-100 rounded-md border border-neutral-100 text-xs">
                 {DEMO_RESULT.map(({ key, label, value }, i) => (
@@ -165,7 +166,7 @@ function ProductPreview() {
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem]">
                 <span className="border-accent-ink flex items-center gap-1.5 rounded-md border px-2 py-1">
                   <DocumentIcon className="text-accent-ink h-3 w-3" />
-                  Source: 14.6 Buffers
+                  Source: 5.6 Yields
                 </span>
                 <span className="flex items-center gap-1.5 rounded-md border border-neutral-200 px-2 py-1">
                   <StepsIcon className="text-accent-ink h-3 w-3" />
@@ -255,8 +256,9 @@ export default function LandingPage() {
               From your first mole to your first titration.
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-neutral-500">
-              Covers all 21 chapters of OpenStax Chemistry, the full general
-              chemistry sequence, with more subjects and tools on the way.
+              Covers all 16 chapters of Beginning Chemistry, the introductory
+              chemistry sequence, and the start of OpenStax Organic Chemistry,
+              with more subjects and tools on the way.
             </p>
             <PrimaryButton className="mt-9" />
           </Reveal>

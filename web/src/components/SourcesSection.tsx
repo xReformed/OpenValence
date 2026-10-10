@@ -12,21 +12,21 @@ const SOURCES: {
   inUse: boolean;
 }[] = [
   {
-    title: "Chemistry 1e",
-    publisher: "OpenStax, via LibreTexts",
-    url: "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)",
-    license: "CC BY 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
-    coverage: "21 chapters · 124 sections",
-    inUse: true,
-  },
-  {
     title: "Beginning Chemistry (Ball)",
     publisher: "LibreTexts",
     url: "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)",
     license: "CC BY-NC-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-    coverage: "16 chapters",
+    coverage: "16 chapters · 100 sections",
+    inUse: true,
+  },
+  {
+    title: "Organic Chemistry (OpenStax)",
+    publisher: "OpenStax, via LibreTexts",
+    url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)",
+    license: "CC BY-NC-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    coverage: "Chapter 1 of 31",
     inUse: false,
   },
 ];

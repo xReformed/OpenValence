@@ -42,5 +42,289 @@
       }
     ],
     "explanation": "Different substituents are listed in alphabetical order, each with its position number: e (ethyl) comes before m (methyl)."
+  },
+  {
+    "id": "branched-iupac",
+    "type": "multiple-choice",
+    "prompt": "Who developed the system of nomenclature used worldwide for naming organic compounds?",
+    "choices": [
+      { "text": "The International Union of Pure and Applied Chemistry (IUPAC)", "correct": true },
+      { "text": "Each country's own chemical society", "why": "One worldwide system exists, developed by IUPAC." },
+      { "text": "The companies that sell the chemicals", "why": "The system is set by IUPAC, so every compound has a unique, agreed name." },
+      { "text": "No one; organic compounds have only common names", "why": "IUPAC rules give every organic compound a specific systematic name." }
+    ],
+    "explanation": "Worldwide, IUPAC has developed the system of nomenclature for organic compounds, so these rules are called the IUPAC rules. With them you can name any organic compound from its structure, or draw its unique structure from its name."
+  },
+  {
+    "id": "branched-longest-chain",
+    "type": "multiple-choice",
+    "prompt": "What determines the parent name of a branched alkane?",
+    "choices": [
+      { "text": "The longest continuous chain of C atoms, which may not be drawn in a straight line", "correct": true },
+      { "text": "The longest chain drawn in a straight horizontal line", "why": "The longest chain may bend in a drawing; follow the carbons to find the longest continuous chain." },
+      { "text": "The total number of C atoms in the molecule", "why": "Carbons in the branches aren't part of the parent chain. The parent is the longest continuous chain." },
+      { "text": "The largest substituent", "why": "Substituents are the branches; the longest continuous chain gives the parent name." }
+    ],
+    "explanation": "First identify the longest continuous chain of C atoms. Note that the longest chain may not be drawn in a straight line. The longest chain determines the parent name of the hydrocarbon."
+  },
+  {
+    "id": "branched-yl-ending",
+    "type": "multiple-choice",
+    "prompt": "How are the names of alkyl substituents formed?",
+    "choices": [
+      { "text": "From the parent hydrocarbon's name, with -yl replacing the -ane ending", "correct": true },
+      { "text": "From the parent name, with -ene replacing -ane", "why": "-ene marks an alkene. Substituents end in -yl, like methyl and ethyl." },
+      { "text": "From the number of H atoms they contain", "why": "Substituent names come from the number of carbons, like the parent alkanes, with the ending -yl." },
+      { "text": "They are always called alkyl.", "why": "Each has its own name, like methyl, ethyl, and propyl." }
+    ],
+    "explanation": "The names of substituents, or alkyl groups, are derived from the names of the parent hydrocarbons, but with the ending -yl instead of -ane: methane → methyl, ethane → ethyl."
+  },
+  {
+    "id": "branched-propyl",
+    "type": "multiple-choice",
+    "prompt": "What is the name of a three-carbon substituent, CH3CH2CH2?",
+    "choices": [
+      { "text": "Propyl", "correct": true },
+      { "text": "Ethyl", "why": "Ethyl has two carbons." },
+      { "text": "Propane", "why": "Propane is the whole molecule. As a substituent, the ending changes to -yl: propyl." },
+      { "text": "Butyl", "why": "Butyl has four carbons." }
+    ],
+    "explanation": "A three-carbon substituent, CH3CH2CH2, is a propyl group: the propane stem with the substituent ending -yl."
+  },
+  {
+    "id": "branched-3-methylhexane",
+    "type": "multiple-choice",
+    "prompt": "A six-carbon chain has a methyl group on its third carbon. What is its name?",
+    "choices": [
+      { "text": "3-methylhexane", "correct": true },
+      { "text": "4-methylhexane", "why": "Number from the end nearer the methyl group, so it gets the lower number, 3." },
+      { "text": "3-methylheptane", "why": "The main chain has six carbons, so the parent is hexane." },
+      { "text": "methylhexane", "why": "The position number is needed: without it, the name could mean more than one isomer." }
+    ],
+    "explanation": "The longest chain has six carbons (hexane), and the methyl group is on carbon 3 numbering from the nearer end: 3-methylhexane."
+  },
+  {
+    "id": "branched-4-ethylheptane",
+    "type": "multiple-choice",
+    "prompt": "A seven-carbon chain has an ethyl group on its middle (fourth) carbon. What is its name?",
+    "choices": [
+      { "text": "4-ethylheptane", "correct": true },
+      { "text": "4-ethylnonane", "why": "The ethyl group is a branch, not part of the main chain, which has seven carbons." },
+      { "text": "4-methylheptane", "why": "A two-carbon branch is ethyl, not methyl." },
+      { "text": "ethylheptane-4", "why": "The position number comes first, followed by a hyphen: 4-ethylheptane." }
+    ],
+    "explanation": "The main chain has seven carbons (heptane), the two-carbon branch is ethyl, and it sits on carbon 4 from either end: 4-ethylheptane."
+  },
+  {
+    "id": "branched-lowest-number",
+    "type": "multiple-choice",
+    "prompt": "A seven-carbon chain has a methyl group on the fifth carbon counting from the left end. What is its name?",
+    "choices": [
+      { "text": "3-methylheptane", "correct": true },
+      { "text": "5-methylheptane", "why": "Number from the right end instead, which gives the methyl group the lower number, 3." },
+      { "text": "3-methylhexane", "why": "All seven carbons are in the main chain, so the parent is heptane." },
+      { "text": "5-methylhexane", "why": "The chain has seven carbons, and the methyl should get the lowest number: 3-methylheptane." }
+    ],
+    "explanation": "The main chain is numbered to give the substituent the lowest possible number. Counting from the right, the fifth carbon from the left is carbon 3: 3-methylheptane."
+  },
+  {
+    "id": "branched-longest-chain-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student names a molecule 2-ethylpentane. Why can't that name be correct?",
+    "choices": [
+      { "text": "An ethyl on carbon 2 extends the main chain; the longest chain has six carbons, so it is 3-methylhexane.", "correct": true },
+      { "text": "Ethyl groups can only be on carbon 1.", "why": "Ethyl groups can be on other carbons; here, though, the ethyl lengthens the longest chain." },
+      { "text": "The name should be 2-ethylbutane.", "why": "That has the same problem. The longest continuous chain runs through the ethyl group." },
+      { "text": "Nothing is wrong with it.", "why": "Follow the chain through the ethyl group: its 2 carbons plus carbons 2 through 5 make 6 carbons in a row, with a methyl branch." }
+    ],
+    "explanation": "An ethyl group on carbon 2 continues the chain: the longest continuous chain has six carbons, with a one-carbon branch on carbon 3. The correct name is 3-methylhexane."
+  },
+  {
+    "id": "branched-2-4-dimethylpentane",
+    "type": "multiple-choice",
+    "prompt": "A five-carbon chain has methyl groups on its second and fourth carbons. What is its name?",
+    "choices": [
+      { "text": "2,4-dimethylpentane", "correct": true },
+      { "text": "2,4-methylpentane", "why": "Two identical substituents need the prefix di-: dimethyl." },
+      { "text": "2-4-dimethylpentane", "why": "Position numbers are separated by commas, not hyphens: 2,4-." },
+      { "text": "2,4-dimethylheptane", "why": "The methyl groups are branches; the main chain has five carbons." }
+    ],
+    "explanation": "The same substituent is named once with a prefix showing how many (di-), and the positions are separated by commas: 2,4-dimethylpentane."
+  },
+  {
+    "id": "branched-3-3-dimethylhexane",
+    "type": "multiple-choice",
+    "prompt": "A six-carbon chain has two methyl groups, both on its third carbon. What is its name?",
+    "choices": [
+      { "text": "3,3-dimethylhexane", "correct": true },
+      { "text": "3-dimethylhexane", "why": "Each substituent gets a number, so two methyls need two numbers: 3,3-." },
+      { "text": "3,4-dimethylhexane", "why": "Both methyl groups are on carbon 3." },
+      { "text": "4,4-dimethylhexane", "why": "Number from the nearer end, giving the substituents the lower numbers: 3,3." }
+    ],
+    "explanation": "The number of position values must agree with the prefix: two methyl groups need two numbers, so the name is 3,3-dimethylhexane."
+  },
+  {
+    "id": "branched-prefix-agreement-mistake",
+    "type": "multiple-choice",
+    "prompt": "What is wrong with the name 2,3-trimethylhexane?",
+    "choices": [
+      { "text": "Tri- means three methyl groups, so there must be three position numbers.", "correct": true },
+      { "text": "Methyl groups must be listed after the parent name.", "why": "Substituents come before the parent name; the problem is the count of numbers." },
+      { "text": "Numbers must be separated by hyphens.", "why": "Commas are right between numbers; the problem is two numbers with tri-." },
+      { "text": "Nothing is wrong with it.", "why": "The number of position values must agree with the numerical prefix before the substituent." }
+    ],
+    "explanation": "The number of position values must agree with the numerical prefix before the substituent: tri- needs three numbers, like 2,3,3-trimethylhexane."
+  },
+  {
+    "id": "branched-numerical-prefix",
+    "type": "multiple-choice",
+    "prompt": "A molecule has four identical substituents. Which numerical prefix goes before the substituent name?",
+    "choices": [
+      { "text": "tetra-", "correct": true },
+      { "text": "tri-", "why": "tri- is for three substituents." },
+      { "text": "penta-", "why": "penta- is for five." },
+      { "text": "di-", "why": "di- is for two." }
+    ],
+    "explanation": "The prefixes are di- (2), tri- (3), tetra- (4), penta- (5), and so forth."
+  },
+  {
+    "id": "branched-two-different-substituents",
+    "type": "multiple-choice",
+    "prompt": "An eight-carbon chain has a methyl group on carbon 2 and an ethyl group on carbon 4 (numbered from the end that gives the lowest numbers). What is its name?",
+    "choices": [
+      { "text": "4-ethyl-2-methyloctane", "correct": true },
+      { "text": "2-methyl-4-ethyloctane", "why": "Substituents are listed alphabetically, so ethyl comes before methyl." },
+      { "text": "4-ethyl-2-methylheptane", "why": "The main chain has eight carbons: octane." },
+      { "text": "4-ethyl,2-methyloctane", "why": "Different substituents are joined with hyphens, with no commas or spaces." }
+    ],
+    "explanation": "Different substituents each get a number and are listed in alphabetical order, joined by hyphens: 4-ethyl-2-methyloctane."
+  },
+  {
+    "id": "branched-alkene-numbering",
+    "type": "multiple-choice",
+    "prompt": "A six-carbon chain has a double bond between carbons 2 and 3 and a methyl group on carbon 4. What is its name?",
+    "choices": [
+      { "text": "4-methyl-2-hexene", "correct": true },
+      { "text": "3-methyl-4-hexene", "why": "The double bond gets the lowest possible number, so number from the end nearer it." },
+      { "text": "4-methyl-2-hexane", "why": "A double bond makes it an alkene: -ene." },
+      { "text": "4-methylhexene", "why": "The double bond's position must be given: 2-hexene." }
+    ],
+    "explanation": "When numbering the main chain of an alkene, the double bond gets the lowest possible number. The double bond starts at carbon 2, and the methyl group is on carbon 4: 4-methyl-2-hexene."
+  },
+  {
+    "id": "branched-alkyne-naming",
+    "type": "multiple-choice",
+    "prompt": "A five-carbon chain has a triple bond between carbons 1 and 2 and a methyl group on carbon 3. What is its name?",
+    "choices": [
+      { "text": "3-methyl-1-pentyne", "correct": true },
+      { "text": "3-methyl-1-pentene", "why": "A triple bond makes it an alkyne: -yne." },
+      { "text": "3-methyl-4-pentyne", "why": "The triple bond gets the lowest possible number: 1." },
+      { "text": "3-methylpentyne", "why": "The triple bond's position must be given: 1-pentyne." }
+    ],
+    "explanation": "The chain must contain the triple bond, which gets the lowest number (1). With a methyl group on carbon 3, the name is 3-methyl-1-pentyne."
+  },
+  {
+    "id": "branched-multiple-bond-priority",
+    "type": "multiple-choice",
+    "prompt": "How do you number the main chain of an alkene or alkyne that also has substituents?",
+    "choices": [
+      { "text": "The chain must contain the multiple bond, and the multiple bond gets the lowest possible number.", "correct": true },
+      { "text": "The substituents always get the lowest numbers.", "why": "In alkenes and alkynes, the double or triple bond takes priority for the lowest number." },
+      { "text": "Number from the left end of the drawing.", "why": "The direction is chosen to give the multiple bond the lowest number, not by how it's drawn." },
+      { "text": "Choose the longest chain, even if it doesn't contain the multiple bond.", "why": "The main chain must contain the double or triple bond." }
+    ],
+    "explanation": "For alkenes and alkynes, the longest chain must contain the C–C double or triple bond, and the multiple bond gets the lowest possible number, even if that gives substituents higher numbers."
+  },
+  {
+    "id": "branched-bromobenzene",
+    "type": "multiple-choice",
+    "prompt": "A benzene ring has one H atom replaced by a bromine atom. What is its name?",
+    "choices": [
+      { "text": "Bromobenzene", "correct": true },
+      { "text": "1-bromobenzene", "why": "With only one substituent, no number is needed." },
+      { "text": "Phenyl bromide", "why": "The IUPAC style here names the substituent as a side chain on benzene: bromobenzene." },
+      { "text": "Bromohexane", "why": "The ring is a benzene ring, an aromatic ring, not a hexane chain." }
+    ],
+    "explanation": "If there is only one substituent on a benzene ring, it is named as a side chain on benzene, with no number: bromobenzene."
+  },
+  {
+    "id": "branched-two-substituent-benzene",
+    "type": "multiple-choice",
+    "prompt": "A benzene ring has a chlorine atom and an ethyl group on neighboring carbons. What is its name?",
+    "choices": [
+      { "text": "1-chloro-2-ethylbenzene", "correct": true },
+      { "text": "1-ethyl-2-chlorobenzene", "why": "The substituent first in alphabetical order (chloro) gets position 1 and is listed first." },
+      { "text": "1-chloro-6-ethylbenzene", "why": "Number around the ring to give the other substituent the lowest number: 2." },
+      { "text": "Chloroethylbenzene", "why": "With two substituents, their positions must be numbered." }
+    ],
+    "explanation": "The substituent that is first alphabetically (chloro) gets position 1, and the ring is numbered to give the other substituent the lowest number, 2: 1-chloro-2-ethylbenzene."
+  },
+  {
+    "id": "branched-phenyl",
+    "type": "multiple-choice",
+    "prompt": "A four-carbon chain has a benzene ring attached to its second carbon. What is its name?",
+    "choices": [
+      { "text": "2-phenylbutane", "correct": true },
+      { "text": "2-benzylbutane", "why": "A benzene ring treated as a substituent is called phenyl." },
+      { "text": "2-butylbenzene", "why": "In this naming, the chain is the parent and the ring is the substituent, phenyl." },
+      { "text": "3-phenylbutane", "why": "Number to give the substituent the lowest number: 2." }
+    ],
+    "explanation": "If a benzene ring is treated as a substituent, it is called phenyl-. On carbon 2 of a butane chain, the molecule is 2-phenylbutane."
+  },
+  {
+    "id": "branched-isomer-of-hexane",
+    "type": "multiple-choice",
+    "prompt": "Which of these is an isomer of hexane, C6H14?",
+    "choices": [
+      { "text": "2,2-dimethylbutane", "correct": true },
+      { "text": "2-methylhexane", "why": "That has seven carbons in all (C7H16), so it isn't an isomer of hexane." },
+      { "text": "Cyclohexane", "why": "A ring has fewer H atoms: cyclohexane is C6H12." },
+      { "text": "1-hexene", "why": "1-hexene is C6H12, with a double bond, so it isn't an isomer of hexane." }
+    ],
+    "explanation": "2,2-dimethylbutane has 4 + 2 = 6 carbons and only single bonds, so it is C6H14, the same formula as hexane but a different structure: an isomer."
+  },
+  {
+    "id": "branched-carbon-count",
+    "type": "numeric",
+    "prompt": "How many carbon atoms are in 3-ethyl-2-methylhexane?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "Hexane has 6 carbons, ethyl adds 2, and methyl adds 1: 6 + 2 + 1 = 9."
+  },
+  {
+    "id": "branched-carbon-count-propyl",
+    "type": "numeric",
+    "prompt": "How many carbon atoms are in 4-propyloctane?",
+    "answer": 11,
+    "tolerance": 0,
+    "explanation": "Octane has 8 carbons and the propyl group adds 3: 8 + 3 = 11."
+  },
+  {
+    "id": "branched-hydrogen-count",
+    "type": "numeric",
+    "prompt": "How many H atoms are in 2,3-dimethylpentane, an alkane? (Every C forms four bonds, and an alkane with n carbons has 2n + 2 H atoms.)",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "2,3-dimethylpentane has 5 + 2 = 7 carbons. As an alkane, it has 2(7) + 2 = 16 H atoms: C7H16."
+  },
+  {
+    "id": "branched-position-number",
+    "type": "numeric",
+    "prompt": "A five-carbon chain has a methyl group on the fourth carbon counting from the left. What position number does the methyl group get in the correct name?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Numbering from the right end gives the methyl group the lowest number, 2: the molecule is 2-methylpentane."
+  },
+  {
+    "id": "branched-hydrogens-omitted",
+    "type": "multiple-choice",
+    "prompt": "Structural formulas of hydrocarbons are often drawn without their H atoms. How should such a drawing be read?",
+    "choices": [
+      { "text": "Any unwritten covalent bonds on a carbon are understood to be bonds to H atoms, so each C has four bonds.", "correct": true },
+      { "text": "The molecule has no hydrogen atoms.", "why": "The H atoms are left out only for clarity; each carbon still makes four bonds." },
+      { "text": "The H atoms have been replaced by methyl groups.", "why": "Unwritten bonds are bonds to H atoms." },
+      { "text": "Each carbon has exactly two H atoms.", "why": "The number of H atoms depends on how many bonds each C already has; it makes up the total to four." }
+    ],
+    "explanation": "It is common to write structural formulas without the H atoms; any unwritten covalent bonds are understood to be bonds with H atoms, so that each carbon makes four bonds."
   }
 ]

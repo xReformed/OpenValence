@@ -3,7 +3,7 @@
 Usage: python lt2md.py <page.html> <section-number e.g. 8.2>
 Prints the markdown body (no front matter) to stdout. Never rewrites text:
 it only drops markup, converts entities/LaTeX to plain text, and formats
-boxes the way sources/openstax/genchem-1e does.
+boxes the way the rest of sources/openstax does.
 """
 import re
 import sys
@@ -309,7 +309,7 @@ class Page(HTMLParser):
         self.alt = None
         self.rows = self.row = self.cell = None
         self.table_caption = None
-        self.spans, self.cell_rowspan = {}, 1
+        self.spans, self.cell_rowspan, self.cell_colspan = {}, 1, 1
         self.caption_at = None
         self.lists = []
         self.prev_lettered = False
@@ -322,6 +322,7 @@ class Page(HTMLParser):
         self.mathml_read = False  # this equation's bare MathML has been read
         self.mms = None  # an <mmultiscripts> being collected
         self.sup_at = None  # where the open <sup>'s text starts: ("buf"|"cell", index)
+        self.sub_at = None  # likewise for <sub>
         self.box_kind = {}  # box depth -> "Example" / "Exercise" (None for other boxes)
 
     def fill_spans(self):
@@ -379,6 +380,10 @@ class Page(HTMLParser):
             self.skip_at = len(self.stack)
         if self.skip_at is None and "mt-comment-datetime" in classes:
             self.skip_at = len(self.stack)  # a page comment's timestamp ("Nov 27, 2021, 2:38 PM")
+        if self.skip_at is None and tag in ("annotation", "annotation-xml"):
+            # MathML's machine-readable copy of the equation it annotates
+            # (Organic Chemistry: "⇅." would otherwise come out "⇅.⇅.").
+            self.skip_at = len(self.stack)
         if self.skip_at is None and tag in ("audio", "video"):
             # The text inside is the player's fallback ("Your browser does not
             # support the audio element."), not content: leave a placeholder.
@@ -413,6 +418,8 @@ class Page(HTMLParser):
             else:
                 self.buf += "^"
                 self.sup_at = ("buf", len(self.buf))
+        elif tag == "sub":
+            self.sub_at = ("cell", len(self.cell)) if self.cell is not None else ("buf", len(self.buf))
         elif tag == "figure":
             self.caption_at = None
             self.in_figure = True
@@ -446,7 +453,14 @@ class Page(HTMLParser):
                 self.pending = "   " * (len(self.lists) - 1) + marker  # nested: indented
         elif tag == "img":
             self.alt = (a.get("alt") or "").strip() or None
-            if not self.in_figure:
+            if self.cell is not None:
+                # An image as a table cell's content (Organic Chemistry Table 1.3.1
+                # draws each configuration): keep its description in the cell.
+                if self.alt and self.alt.lower() not in ("alt", "image", "img"):
+                    self.cell += (" [Image not described in source] " if FILENAME.fullmatch(self.alt)
+                                  else f" [Image: {self.alt}] ")
+                self.alt = None
+            elif not self.in_figure:
                 # An image outside a <figure> has no caption; its alt text is
                 # the only description of what it shows (often an equation).
                 self.flush()
@@ -462,6 +476,8 @@ class Page(HTMLParser):
             self.cell = ""
             span = a.get("rowspan") or "1"
             self.cell_rowspan = int(span) if span.isdigit() else 1
+            cols = a.get("colspan") or "1"
+            self.cell_colspan = int(cols) if cols.isdigit() else 1
         self.stack.append(tag)
 
     def handle_endtag(self, tag):
@@ -490,6 +506,23 @@ class Page(HTMLParser):
                 else:
                     self.buf += out
             return
+        if tag == "sub" and self.sub_at is not None:
+            # p<sub>x</sub> -> p_x, ΔH<sub>vap</sub> -> ΔH_vap: a letter subscript on a
+            # letter is marked, the corpus's convention. Digit subscripts (H<sub>2</sub>O)
+            # stay plain, and so does one after a digit ("3 − 2<sub>x</sub>" in a formula).
+            where, i = self.sub_at
+            self.sub_at = None
+            text = self.cell if where == "cell" else self.buf
+            if (
+                text is not None and 0 < i <= len(text)
+                and re.fullmatch(r"[A-Za-z]+|\?", text[i:])  # "?" is a blank: PH<sub>?</sub>
+                and re.match(r"[A-Za-zΔ]", text[i - 1])
+            ):
+                text = text[:i] + "_" + text[i:]
+                if where == "cell":
+                    self.cell = text
+                else:
+                    self.buf = text
         if tag == "sup" and self.sup_at is not None:
             # e<sup>−(0.693)(60.0 s)/11.0 s</sup>: group an expression exponent.
             where, i = self.sup_at
@@ -532,6 +565,10 @@ class Page(HTMLParser):
             if self.cell_rowspan > 1:  # repeat this cell's column in the rows below
                 self.spans[len(self.row)] = [self.cell_rowspan - 1, value]
             self.row.append(value)
+            # A cell spanning columns keeps its text in the first one and leaves the
+            # rest empty, so later cells stay under their headings (Organic Chemistry
+            # Table 1.9.1: "Bond strength" over "(kJ/mol)" and "(kcal/mol)").
+            self.row.extend([""] * (self.cell_colspan - 1))
             self.cell = None
         elif tag == "tr" and self.row is not None:
             self.fill_spans()
@@ -663,12 +700,14 @@ text = re.sub(r"(?m)^(#{3,4}) [.,;:]+\s*(?=(?:Example|Exercise)\b)", r"\1 ", tex
 text = re.sub(r"(?m)[ \t]+$", "", text)
 text = re.sub(r"\^\s+", "^", text)
 text = re.sub(r"\^(\d+)\^([+−])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+</sup>
+text = text.replace("^°", "°")  # 180<sup>°</sup> (Organic Chemistry): the degree sign is just text
 text = re.sub(r"\^([+−])\^(\d)", r"^\1\2", text)  # 10<sup>−</sup><sup>10</sup>
 text = text.replace("(opens in new window)", "")  # link label for screen readers
 text = text.replace("​", "").replace("﻿", "")  # zero-width spaces ("World War ​​II")
-# Electron configurations, genchem style: 1s^22s^2 -> 1s^2 2s^2
-text = re.sub(r"(\d[spdfg])\^(\d+?)(?=\d[spdfg])", r"\1^\2 ", text)
-text = re.sub(r"(\d[spdfg])\^(\d+?)(?=\d[spdfg])", r"\1^\2 ", text)
+# Electron configurations, corpus style: 1s^22s^2 -> 1s^2 2s^2
+# (and 2p_x^12p_y^1 -> 2p_x^1 2p_y^1, with marked orbital subscripts)
+text = re.sub(r"(\d[spdfg](?:_[xyz]+)?)\^(\d+?)(?=\d[spdfg])", r"\1^\2 ", text)
+text = re.sub(r"(\d[spdfg](?:_[xyz]+)?)\^(\d+?)(?=\d[spdfg])", r"\1^\2 ", text)
 for _ in range(2):  # tighten consecutive list items
     text = re.sub(r"(?m)^( *(?:- |[a-z]\. |\d+\.(?: |$)).*)\n\n(?= *(?:- |[a-z]\. |\d+\.(?: |$)))", r"\1\n", text)
 print(text)

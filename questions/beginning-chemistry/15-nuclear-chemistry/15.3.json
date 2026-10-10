@@ -1,0 +1,228 @@
+[
+  {
+    "id": "halflife-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the half-life of a radioactive isotope?",
+    "choices": [
+      { "text": "The time it takes for one-half of the isotope to decay", "correct": true },
+      { "text": "Half the time it takes for all of the isotope to decay", "why": "Radioactive decay never quite finishes; half-life is the time for half of the sample to decay." },
+      { "text": "The time it takes for the radioactivity to double", "why": "Radioactivity decreases over time; half-life is the time for half the isotope to decay." },
+      { "text": "Half of the isotope's mass number", "why": "Half-life is a time, not a mass." }
+    ],
+    "explanation": "Half-life is the amount of time it takes for one-half of a radioactive isotope to decay."
+  },
+  {
+    "id": "halflife-constant",
+    "type": "multiple-choice",
+    "prompt": "Which statement about the half-life of a specific radioactive isotope is true?",
+    "choices": [
+      { "text": "It is constant, unaffected by conditions and independent of the initial amount.", "correct": true },
+      { "text": "It gets shorter as the sample gets smaller.", "why": "The half-life is the same no matter how much isotope there is." },
+      { "text": "It can be shortened by heating the sample.", "why": "The half-life is unaffected by conditions." },
+      { "text": "It doubles after each half-life.", "why": "The half-life stays constant; what halves each time is the amount of isotope." }
+    ],
+    "explanation": "The half-life of a specific radioactive isotope is constant; it is unaffected by conditions and is independent of the initial amount of that isotope."
+  },
+  {
+    "id": "halflife-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the amount of a radioactive isotope remaining after n half-lives?",
+    "choices": [
+      { "text": "initial amount × (1/2)^{n}", "correct": true },
+      { "text": "initial amount × 2^{n}", "why": "That would make the sample grow. Each half-life multiplies the amount by 1/2." },
+      { "text": "initial amount − n/2", "why": "Decay halves the amount each time; it doesn't subtract a fixed quantity." },
+      { "text": "initial amount ÷ (2n)", "why": "After 3 half-lives, (1/2)^3 = 1/8 remains, not 1/6." }
+    ],
+    "explanation": "amount remaining = initial amount × (1/2)^{n}, where n is the number of half-lives. This expression works even if n is not a whole number."
+  },
+  {
+    "id": "halflife-two-halflives-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student says that since half of a sample decays in one half-life, all of it will be gone after two half-lives. What is wrong?",
+    "choices": [
+      { "text": "Each half-life halves what is left, so after two half-lives one-quarter remains.", "correct": true },
+      { "text": "After two half-lives, three-quarters remains.", "why": "Half remains after one half-life, and half of that, one-quarter, after two." },
+      { "text": "Nothing is wrong.", "why": "The second half-life halves the remaining half, leaving 1/4, not zero." },
+      { "text": "Half-lives don't apply after the first one.", "why": "The half-life is constant; every half-life halves the amount present." }
+    ],
+    "explanation": "During each half-life, half of the amount present at its start decays: 1/2 remains after one half-life, 1/4 after two, 1/8 after three."
+  },
+  {
+    "id": "halflife-fraction-three",
+    "type": "numeric",
+    "prompt": "What fraction of a radioactive isotope remains after 3 half-lives? (Give it as a decimal.)",
+    "answer": 0.125,
+    "explanation": "(1/2)^3 = 1/8 = 0.125."
+  },
+  {
+    "id": "halflife-percent-five",
+    "type": "numeric",
+    "prompt": "What percentage of a radioactive isotope remains after 5 half-lives?",
+    "answer": 3.125,
+    "unit": "%",
+    "explanation": "(1/2)^5 = 1/32 = 0.03125, which is 3.125%."
+  },
+  {
+    "id": "halflife-iodine-131",
+    "type": "numeric",
+    "prompt": "Iodine-131 has a half-life of 8.04 d. A sample contains 80.0 mg of iodine-131. How much remains after 24.12 d?",
+    "answer": 10,
+    "unit": "mg",
+    "explanation": "24.12 d ÷ 8.04 d = 3 half-lives. 80.0 mg × (1/2)^3 = 80.0 mg × 1/8 = 10.0 mg."
+  },
+  {
+    "id": "halflife-strontium-90",
+    "type": "numeric",
+    "prompt": "Strontium-90 has a half-life of 29.1 y. How much of a 2.00 g sample remains after 58.2 y?",
+    "answer": 0.5,
+    "unit": "g",
+    "explanation": "58.2 y ÷ 29.1 y = 2 half-lives. 2.00 g × (1/2)^2 = 0.500 g."
+  },
+  {
+    "id": "halflife-chromium-51",
+    "type": "numeric",
+    "prompt": "Chromium-51 has a half-life of 27.70 d. How much of a 1.60 g sample remains after 110.8 d?",
+    "answer": 0.1,
+    "unit": "g",
+    "explanation": "110.8 d ÷ 27.70 d = 4 half-lives. 1.60 g × (1/2)^4 = 1.60 g × 1/16 = 0.100 g."
+  },
+  {
+    "id": "halflife-berkelium-248",
+    "type": "numeric",
+    "prompt": "Berkelium-248 has a half-life of 23.7 h. How much of a 4.00 mg sample remains after 47.4 h?",
+    "answer": 1,
+    "unit": "mg",
+    "explanation": "47.4 h is 2 half-lives: 4.00 mg × (1/2)^2 = 1.00 mg."
+  },
+  {
+    "id": "halflife-count-radon",
+    "type": "numeric",
+    "prompt": "Radon-222 has a half-life of 3.823 d. How many half-lives pass in 19.115 d?",
+    "answer": 5,
+    "explanation": "19.115 d ÷ 3.823 d = 5.000 half-lives."
+  },
+  {
+    "id": "halflife-tritium-time",
+    "type": "numeric",
+    "prompt": "Tritium has a half-life of 12.3 y. How many years does it take for a 64.0 g sample of tritium to decay to 4.00 g?",
+    "answer": 49.2,
+    "unit": "y",
+    "explanation": "64.0 → 32.0 → 16.0 → 8.00 → 4.00 g is 4 half-lives: 4 × 12.3 y = 49.2 y."
+  },
+  {
+    "id": "halflife-carbon-14-age",
+    "type": "numeric",
+    "prompt": "Carbon-14 has a half-life of 5730 y. How long does it take for one-quarter of an original sample of carbon-14 to remain?",
+    "answer": 11460,
+    "unit": "y",
+    "explanation": "1/4 = (1/2)^2, so 2 half-lives: 2 × 5730 y = 11,460 y."
+  },
+  {
+    "id": "halflife-americium-noninteger",
+    "type": "numeric",
+    "prompt": "Americium-241 has a half-life of 432.7 y. How much of a 10.0 g sample remains after 1000 y? Use amount remaining = initial × e^(−0.693 t/t½).",
+    "answer": 2.016,
+    "unit": "g",
+    "explanation": "The exponent is −(0.693)(1000 y)/(432.7 y) = −1.602, and e^−1.602 = 0.2016, so 10.0 g × 0.2016 = 2.02 g."
+  },
+  {
+    "id": "halflife-iodine-noninteger",
+    "type": "numeric",
+    "prompt": "Iodine-131 has a half-life of 8.04 d. How much of a 50.0 mg sample remains after 20.0 d? Use amount remaining = initial × e^(−0.693 t/t½).",
+    "answer": 8.918,
+    "unit": "mg",
+    "explanation": "The exponent is −(0.693)(20.0 d)/(8.04 d) = −1.724, and e^−1.724 = 0.1784, so 50.0 mg × 0.1784 = 8.92 mg."
+  },
+  {
+    "id": "halflife-radon-noninteger",
+    "type": "numeric",
+    "prompt": "Radon-222 has a half-life of 3.823 d. How much of a 1.00 g sample remains after 10.0 d? Use amount remaining = initial × e^(−0.693 t/t½).",
+    "answer": 0.1632,
+    "unit": "g",
+    "explanation": "The exponent is −(0.693)(10.0 d)/(3.823 d) = −1.813, and e^−1.813 = 0.163, so 0.163 g remains."
+  },
+  {
+    "id": "halflife-same-units",
+    "type": "multiple-choice",
+    "prompt": "When using amount remaining = initial × e^(−0.693 t/t½), what must be true of t and t½?",
+    "choices": [
+      { "text": "They must be in the same units of time.", "correct": true },
+      { "text": "t must always be in seconds and t½ in years.", "why": "Any time unit works, as long as both are the same, so the units cancel." },
+      { "text": "t must be a whole multiple of t½.", "why": "This formula is for when t isn't an exact multiple of the half-life." },
+      { "text": "Nothing; the units never matter.", "why": "The ratio t/t½ is only correct if both are in the same units." }
+    ],
+    "explanation": "The variables t and t½ should have the same units of time, so that they cancel in the exponent. The time t need not be an exact multiple of half-lives."
+  },
+  {
+    "id": "halflife-range",
+    "type": "multiple-choice",
+    "prompt": "How widely do the half-lives of isotopes vary?",
+    "choices": [
+      { "text": "From fractions of a microsecond to billions of years", "correct": true },
+      { "text": "From a few days to a few years", "why": "Some, like seaborgium-260, last milliseconds; others, like uranium-238, billions of years." },
+      { "text": "They are all about the same", "why": "Half-lives vary enormously, from fractions of a microsecond to billions of years." },
+      { "text": "Only from minutes to hours", "why": "The table alone ranges from 4 ms (seaborgium-260) to 4.47 × 10^9 y (uranium-238)." }
+    ],
+    "explanation": "Half-lives of isotopes range from fractions of a microsecond to billions of years."
+  },
+  {
+    "id": "halflife-longest",
+    "type": "multiple-choice",
+    "prompt": "Which of these isotopes has the longest half-life? ⁴⁰K, 1.26 × 10^9 y; ²³⁵U, 7.04 × 10^8 y; ²³⁸U, 4.47 × 10^9 y; ¹⁴C, 5730 y.",
+    "choices": [
+      { "text": "Uranium-238", "correct": true },
+      { "text": "Potassium-40", "why": "1.26 × 10^9 y is long, but uranium-238's 4.47 × 10^9 y is longer." },
+      { "text": "Uranium-235", "why": "7.04 × 10^8 y is shorter than both potassium-40 and uranium-238." },
+      { "text": "Carbon-14", "why": "5730 y is by far the shortest of these." }
+    ],
+    "explanation": "Comparing powers of ten, 4.47 × 10^9 y (uranium-238) is the longest of the four."
+  },
+  {
+    "id": "halflife-body-sources",
+    "type": "multiple-choice",
+    "prompt": "Most of the radioactivity in the human body comes from which two isotopes?",
+    "choices": [
+      { "text": "Potassium-40 and carbon-14", "correct": true },
+      { "text": "Uranium-238 and radium-226", "why": "These are present only in tiny amounts, with low activity. Potassium-40 and carbon-14 dominate." },
+      { "text": "Tritium and lead-210", "why": "Their activities in the body are small; most comes from potassium-40 and carbon-14." },
+      { "text": "None; the human body isn't radioactive", "why": "A small portion of certain elements in the body is radioactive, constantly decaying." }
+    ],
+    "explanation": "Most of the radioactivity in the human body comes from potassium-40 and carbon-14. We can't live without potassium and carbon, so some radioactivity is unavoidable."
+  },
+  {
+    "id": "halflife-body-decay-rate",
+    "type": "multiple-choice",
+    "prompt": "About how many radioactive decays occur each second in an average human body?",
+    "choices": [
+      { "text": "About 8,000", "correct": true },
+      { "text": "None", "why": "The body contains radioactive isotopes like potassium-40 and carbon-14, which decay constantly." },
+      { "text": "About 8", "why": "Potassium-40 alone accounts for over 4,000 decays per second; the total is about 8,000." },
+      { "text": "About 8 billion", "why": "The activities in the section's table add up to about 8,000 decays per second." }
+    ],
+    "explanation": "The activities of the radioactive isotopes in the body add up to about 8,000 decays per second, mostly from potassium-40 and carbon-14."
+  },
+  {
+    "id": "halflife-tritium-decay",
+    "type": "multiple-choice",
+    "prompt": "Tritium, hydrogen-3, decays with a half-life of 12.3 y. What does it decay into?",
+    "choices": [
+      { "text": "Helium-3, by emitting a beta particle", "correct": true },
+      { "text": "Hydrogen-1, by emitting two neutrons", "why": "Tritium decays by beta emission: a neutron becomes a proton, giving helium-3." },
+      { "text": "Helium-4, by emitting an alpha particle", "why": "Alpha emission would lower the mass number. Tritium undergoes beta decay to helium-3." },
+      { "text": "Deuterium", "why": "Tritium decays from hydrogen-3 to helium-3 by emitting a beta particle." }
+    ],
+    "explanation": "Tritium decays from hydrogen-3 to helium-3 by emitting a beta particle: the mass number stays 3, and the atomic number goes from 1 to 2."
+  },
+  {
+    "id": "halflife-characteristic",
+    "type": "multiple-choice",
+    "prompt": "What determines whether a given isotope is radioactive?",
+    "choices": [
+      { "text": "It is a characteristic of that particular isotope.", "correct": true },
+      { "text": "Its temperature", "why": "Radioactivity and half-life are unaffected by conditions like temperature." },
+      { "text": "The size of the sample", "why": "Whether an isotope decays doesn't depend on how much of it there is." },
+      { "text": "Whether it is in a compound", "why": "Radioactivity comes from the nucleus, so it is a property of the isotope itself." }
+    ],
+    "explanation": "Whether a given isotope is radioactive is a characteristic of that particular isotope. Some are stable indefinitely; others decay through a characteristic form of emission."
+  }
+]

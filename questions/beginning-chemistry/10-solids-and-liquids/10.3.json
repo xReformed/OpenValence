@@ -1,0 +1,481 @@
+[
+  {
+    "id": "phase-melting-name",
+    "type": "multiple-choice",
+    "prompt": "What is the process of a solid becoming a liquid called?",
+    "choices": [
+      {
+        "text": "Melting (an older term is fusion)",
+        "correct": true
+      },
+      {
+        "text": "Solidification",
+        "why": "Solidification is the opposite process: a liquid becoming a solid."
+      },
+      {
+        "text": "Sublimation",
+        "why": "Sublimation is a solid becoming a gas directly, skipping the liquid phase."
+      },
+      {
+        "text": "Condensation",
+        "why": "Condensation is a gas becoming a liquid."
+      }
+    ],
+    "explanation": "The process of a solid becoming a liquid is called melting, or fusion; the opposite process is solidification."
+  },
+  {
+    "id": "phase-deposition-name",
+    "type": "multiple-choice",
+    "prompt": "What is the process of a gas becoming a solid directly, without first becoming a liquid, called?",
+    "choices": [
+      {
+        "text": "Deposition",
+        "correct": true
+      },
+      {
+        "text": "Sublimation",
+        "why": "Sublimation is the reverse: a solid becoming a gas directly."
+      },
+      {
+        "text": "Condensation",
+        "why": "Condensation turns a gas into a liquid, not directly into a solid."
+      },
+      {
+        "text": "Solidification",
+        "why": "Solidification turns a liquid into a solid."
+      }
+    ],
+    "explanation": "The solid-to-gas change is called sublimation, and the reverse process, gas directly to solid, is called deposition."
+  },
+  {
+    "id": "phase-melting-freezing-signs",
+    "type": "multiple-choice",
+    "prompt": "ΔH_fus is always tabulated as a positive number. What are the signs of ΔH for melting and for solidification?",
+    "choices": [
+      {
+        "text": "Melting is endothermic, so its ΔH is positive; solidification is exothermic, so its ΔH is negative.",
+        "correct": true
+      },
+      {
+        "text": "Both are positive, because ΔH_fus is always positive.",
+        "why": "ΔH_fus is tabulated as a positive number, but solidification gives off energy, so its ΔH is negative."
+      },
+      {
+        "text": "Melting is exothermic (negative), and solidification is endothermic (positive).",
+        "why": "It's the reverse: a solid needs energy to melt, and a liquid gives that energy back when it solidifies."
+      },
+      {
+        "text": "Both are zero, because the temperature doesn't change during a phase change.",
+        "why": "The temperature stays the same, but energy still goes in or comes out; it goes into changing the phase."
+      }
+    ],
+    "explanation": "The same ΔH_fus value works for both processes: melting is always endothermic (ΔH positive), and solidification is always exothermic (ΔH negative)."
+  },
+  {
+    "id": "phase-melt-ice-energy",
+    "type": "numeric",
+    "prompt": "What is the energy change, in kJ, when 25.0 g of ice melts at 0°C? For water, ΔH_fus = 6.01 kJ/mol and the molar mass is 18.02 g/mol.",
+    "answer": 8.338,
+    "unit": "kJ",
+    "explanation": "Convert grams to moles, then use ΔH_fus: 25.0 g H2O × (1 mol / 18.02 g) × (6.01 kJ / mol) = 8.34 kJ. Melting is endothermic, so the energy change is positive."
+  },
+  {
+    "id": "phase-freeze-water-signed",
+    "type": "numeric",
+    "prompt": "What is the energy change, in kJ, when 2.50 mol of liquid water freezes at 0°C? For water, ΔH_fus = 6.01 kJ/mol. Give it with its sign: negative if energy is given off, positive if energy is absorbed.",
+    "answer": -15.03,
+    "unit": "kJ",
+    "explanation": "2.50 mol × 6.01 kJ/mol = 15.0 kJ. Freezing (solidification) is exothermic, so ΔH = −15.0 kJ."
+  },
+  {
+    "id": "phase-melt-aluminum-energy",
+    "type": "numeric",
+    "prompt": "How much energy, in kJ, is needed to melt 54.0 g of aluminum at its melting point of 660°C? For aluminum, ΔH_fus = 10.7 kJ/mol and the molar mass is 26.98 g/mol.",
+    "answer": 21.42,
+    "unit": "kJ",
+    "explanation": "54.0 g Al × (1 mol / 26.98 g) × (10.7 kJ / mol) = 21.4 kJ."
+  },
+  {
+    "id": "phase-freeze-mercury-signed",
+    "type": "numeric",
+    "prompt": "What is the energy change, in kJ, when 100.0 g of liquid mercury freezes at −38.8°C? For mercury, ΔH_fus = 2.29 kJ/mol and the molar mass is 200.59 g/mol. Give it with its sign: negative if energy is given off, positive if energy is absorbed.",
+    "answer": -1.142,
+    "unit": "kJ",
+    "explanation": "100.0 g Hg × (1 mol / 200.59 g) × (2.29 kJ / mol) = 1.14 kJ. Freezing is exothermic, so ΔH = −1.14 kJ."
+  },
+  {
+    "id": "phase-melt-ethanol-energy",
+    "type": "numeric",
+    "prompt": "How much energy, in kJ, is needed to melt 23.0 g of solid ethanol, C2H5OH, at its melting point of −114.3°C? For ethanol, ΔH_fus = 5.02 kJ/mol and the molar mass is 46.07 g/mol.",
+    "answer": 2.506,
+    "unit": "kJ",
+    "explanation": "23.0 g C2H5OH × (1 mol / 46.07 g) × (5.02 kJ / mol) = 2.51 kJ."
+  },
+  {
+    "id": "phase-moles-melted-by-energy",
+    "type": "numeric",
+    "prompt": "How many moles of ice at 0°C can be melted by 30.0 kJ of energy? For water, ΔH_fus = 6.01 kJ/mol.",
+    "answer": 4.992,
+    "unit": "mol",
+    "explanation": "Use ΔH_fus as a conversion factor the other way up: 30.0 kJ × (1 mol / 6.01 kJ) = 4.99 mol."
+  },
+  {
+    "id": "phase-grams-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the energy needed to melt 36.0 g of ice at 0°C as 36.0 × 6.01 = 216 kJ, using ΔH_fus = 6.01 kJ/mol. What is wrong?",
+    "choices": [
+      {
+        "text": "ΔH_fus is per mole, so the grams must be converted to moles first; the answer is about 12.0 kJ.",
+        "correct": true
+      },
+      {
+        "text": "The answer should be negative, because melting gives off energy.",
+        "why": "Melting is endothermic, so a positive value is right. The mistake is using grams with a per-mole value."
+      },
+      {
+        "text": "ΔH_fus should be divided by 36.0, not multiplied.",
+        "why": "Multiplying is right, but by the number of moles: 36.0 g ÷ 18.02 g/mol = 2.00 mol, and 2.00 mol × 6.01 kJ/mol = 12.0 kJ."
+      },
+      {
+        "text": "Nothing is wrong; 216 kJ is correct.",
+        "why": "The unit of ΔH_fus is kJ per mole, so it has to be multiplied by moles, not grams."
+      }
+    ],
+    "explanation": "ΔH_fus has units of kJ/mol, so you need the amount in moles: 36.0 g × (1 mol / 18.02 g) = 2.00 mol, and 2.00 mol × 6.01 kJ/mol = 12.0 kJ."
+  },
+  {
+    "id": "phase-isothermal-melting",
+    "type": "multiple-choice",
+    "prompt": "A beaker of ice at 0°C is heated steadily. What happens to the temperature while the ice is melting?",
+    "choices": [
+      {
+        "text": "It stays at 0°C until all of the ice has melted; only then does it start to rise.",
+        "correct": true
+      },
+      {
+        "text": "It rises steadily the whole time, because energy is being added.",
+        "why": "During melting the energy goes entirely into changing the phase, not into raising the temperature."
+      },
+      {
+        "text": "It drops below 0°C, because melting takes in energy.",
+        "why": "The energy taken in comes from the heater, not from the ice. The temperature stays at the melting point."
+      },
+      {
+        "text": "It rises until the ice is half melted, then stays constant.",
+        "why": "The temperature stays constant for the whole time the ice is melting."
+      }
+    ],
+    "explanation": "During melting, energy goes exclusively to changing the phase of a substance, not its temperature, so melting is isothermal. Only when all of the substance has melted does additional energy raise its temperature."
+  },
+  {
+    "id": "phase-all-isothermal",
+    "type": "multiple-choice",
+    "prompt": "Which statement about phase changes is true?",
+    "choices": [
+      {
+        "text": "All phase changes are isothermal: the temperature stays the same while the phase is changing.",
+        "correct": true
+      },
+      {
+        "text": "Only melting is isothermal; boiling raises the temperature as it goes.",
+        "why": "Boiling is isothermal too: the energy goes into changing the phase until all of the liquid has boiled."
+      },
+      {
+        "text": "Phase changes happen without any change in energy.",
+        "why": "Every phase change comes with an energy change, such as ΔH_fus for melting and ΔH_vap for boiling."
+      },
+      {
+        "text": "Phase changes can only happen between a solid and a liquid.",
+        "why": "Phase changes can happen between any two phases, including liquid and gas, and solid and gas."
+      }
+    ],
+    "explanation": "Phase changes can occur between any two phases of matter, all of them come with a change in energy, and all of them are isothermal."
+  },
+  {
+    "id": "phase-liquid-particles",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe the particles in a liquid?",
+    "choices": [
+      {
+        "text": "They are still in contact with each other but can move around each other.",
+        "correct": true
+      },
+      {
+        "text": "They are stuck in place and can only vibrate.",
+        "why": "That describes a solid. In a liquid the particles have enough energy to move around, though not enough to separate."
+      },
+      {
+        "text": "They are far apart, each going its own way in space.",
+        "why": "That describes a gas. In a liquid the particles are still in contact."
+      },
+      {
+        "text": "They are packed even more tightly than in the solid.",
+        "why": "Liquid particles are in contact, as in a solid, but they move around each other; they aren't packed more tightly."
+      }
+    ],
+    "explanation": "In a liquid the particles have enough energy to move around but not enough to separate, so they stay in contact while sliding over each other. That's why liquids take the shape of their containers."
+  },
+  {
+    "id": "phase-boiling-depends-on-pressure",
+    "type": "multiple-choice",
+    "prompt": "Why is the temperature at which a liquid boils noticeably affected by the surrounding pressure, while melting is not?",
+    "choices": [
+      {
+        "text": "Boiling produces a gas, and gases are strongly affected by pressure.",
+        "correct": true
+      },
+      {
+        "text": "Boiling needs more energy than melting, and pressure adds energy.",
+        "why": "Pressure doesn't add energy to the liquid. The difference is that boiling makes a gas, and gases respond strongly to pressure."
+      },
+      {
+        "text": "Liquids are easily compressed, but solids are not.",
+        "why": "Liquids are not easily compressed. It's the gas formed in boiling that is strongly affected by pressure."
+      },
+      {
+        "text": "Pressure changes the strength of the covalent bonds in the liquid.",
+        "why": "Pressure doesn't change covalent bonds. Boiling depends on pressure because the product is a gas."
+      }
+    ],
+    "explanation": "Unlike the solid/liquid change, the liquid/gas change is noticeably affected by the surrounding pressure, because gases are strongly affected by pressure. So the boiling point changes with the surrounding pressure."
+  },
+  {
+    "id": "phase-normal-boiling-point",
+    "type": "multiple-choice",
+    "prompt": "What is the normal boiling point of a liquid?",
+    "choices": [
+      {
+        "text": "The temperature at which it changes to a gas when the surrounding pressure is exactly 1 atm (760 torr)",
+        "correct": true
+      },
+      {
+        "text": "The temperature at which the first vapor appears above the liquid",
+        "why": "Liquids form vapor well below their boiling points, by evaporation. The normal boiling point is defined at a pressure of exactly 1 atm."
+      },
+      {
+        "text": "The temperature at which the liquid's molecules break apart into atoms",
+        "why": "Boiling separates whole molecules from each other; it doesn't break them apart. The normal boiling point is the boiling point at exactly 1 atm."
+      },
+      {
+        "text": "The highest temperature the liquid can reach at any pressure",
+        "why": "The boiling point changes with pressure. The normal boiling point is the one at exactly 1 atm."
+      }
+    ],
+    "explanation": "Because the boiling point changes with pressure, the normal boiling point is defined as the temperature at which a liquid changes to a gas when the surrounding pressure is exactly 1 atm, or 760 torr."
+  },
+  {
+    "id": "phase-boil-water-energy",
+    "type": "numeric",
+    "prompt": "How much energy, in kJ, is needed to boil 36.0 g of water at 100°C? For water, ΔH_vap = 40.68 kJ/mol and the molar mass is 18.02 g/mol.",
+    "answer": 81.27,
+    "unit": "kJ",
+    "explanation": "36.0 g H2O × (1 mol / 18.02 g) × (40.68 kJ / mol) = 81.3 kJ."
+  },
+  {
+    "id": "phase-condense-steam-signed",
+    "type": "numeric",
+    "prompt": "What is the energy change, in kJ, when 9.01 g of steam condenses to liquid water at 100°C? For water, ΔH_vap = 40.68 kJ/mol and the molar mass is 18.02 g/mol. Give it with its sign: negative if energy is given off, positive if energy is absorbed.",
+    "answer": -20.34,
+    "unit": "kJ",
+    "explanation": "9.01 g H2O × (1 mol / 18.02 g) × (40.68 kJ / mol) = 20.3 kJ. Condensation is exothermic, so ΔH = −20.3 kJ."
+  },
+  {
+    "id": "phase-boil-benzene-energy",
+    "type": "numeric",
+    "prompt": "How much energy, in kJ, is needed to boil 39.0 g of benzene, C6H6, at its normal boiling point of 80.1°C? For benzene, ΔH_vap = 30.8 kJ/mol and the molar mass is 78.11 g/mol.",
+    "answer": 15.38,
+    "unit": "kJ",
+    "explanation": "39.0 g C6H6 × (1 mol / 78.11 g) × (30.8 kJ / mol) = 15.4 kJ."
+  },
+  {
+    "id": "phase-vaporize-mercury-energy",
+    "type": "numeric",
+    "prompt": "How much energy, in kJ, is needed to boil 5.00 g of mercury at its normal boiling point of 357°C? For mercury, ΔH_vap = 59.23 kJ/mol and the molar mass is 200.59 g/mol.",
+    "answer": 1.476,
+    "unit": "kJ",
+    "explanation": "5.00 g Hg × (1 mol / 200.59 g) × (59.23 kJ / mol) = 1.48 kJ."
+  },
+  {
+    "id": "phase-condense-bromine-signed",
+    "type": "numeric",
+    "prompt": "What is the energy change, in kJ, when 0.250 mol of bromine gas, Br2, condenses to a liquid at 59.5°C? For bromine, ΔH_vap = 15.4 kJ/mol. Give it with its sign: negative if energy is given off, positive if energy is absorbed.",
+    "answer": -3.85,
+    "unit": "kJ",
+    "explanation": "0.250 mol × 15.4 kJ/mol = 3.85 kJ. Condensation is exothermic, so ΔH = −3.85 kJ."
+  },
+  {
+    "id": "phase-grams-boiled-by-energy",
+    "type": "numeric",
+    "prompt": "How many grams of water at 100°C can be boiled by 100.0 kJ of energy? For water, ΔH_vap = 40.68 kJ/mol and the molar mass is 18.02 g/mol.",
+    "answer": 44.3,
+    "unit": "g",
+    "explanation": "100.0 kJ × (1 mol / 40.68 kJ) = 2.458 mol, and 2.458 mol × 18.02 g/mol = 44.3 g of water."
+  },
+  {
+    "id": "phase-vaporization-vs-fusion-ratio",
+    "type": "numeric",
+    "prompt": "For water, ΔH_vap = 40.68 kJ/mol and ΔH_fus = 6.01 kJ/mol. How many times as much energy does it take to boil a mole of water as to melt a mole of ice?",
+    "answer": 6.769,
+    "explanation": "40.68 kJ/mol ÷ 6.01 kJ/mol = 6.77. Boiling takes much more energy because the molecules must separate completely, while melting only lets them move around each other."
+  },
+  {
+    "id": "phase-condensation-sign-mistake",
+    "type": "multiple-choice",
+    "prompt": "A student calculates the energy change when some steam condenses and reports it as a positive number, because ΔH_vap is positive. What is wrong?",
+    "choices": [
+      {
+        "text": "ΔH_vap is tabulated as positive, but condensation is exothermic, so its ΔH is negative.",
+        "correct": true
+      },
+      {
+        "text": "Condensation should use ΔH_fus instead of ΔH_vap.",
+        "why": "ΔH_vap is the right value: it applies to both boiling and condensation. Only the sign needs changing."
+      },
+      {
+        "text": "Nothing is wrong; every phase change has a positive ΔH.",
+        "why": "Melting, boiling, and sublimation are endothermic (positive), but solidification, condensation, and deposition are exothermic (negative)."
+      },
+      {
+        "text": "The value should be zero, because the temperature doesn't change during condensation.",
+        "why": "Condensation is isothermal, but energy still comes out of the substance as it changes phase."
+      }
+    ],
+    "explanation": "ΔH_vap can be used for both boiling and condensation, as long as you remember that boiling is endothermic (ΔH positive) and condensation is exothermic (ΔH negative)."
+  },
+  {
+    "id": "phase-gas-mostly-empty",
+    "type": "multiple-choice",
+    "prompt": "Why can gases be compressed so easily?",
+    "choices": [
+      {
+        "text": "Most of the volume of a gas is empty space; only about 1/1,000th of it is taken up by matter.",
+        "correct": true
+      },
+      {
+        "text": "Gas particles shrink when they are squeezed.",
+        "why": "The particles stay the same size. Compressing a gas pushes them closer together into the empty space between them."
+      },
+      {
+        "text": "Gas particles are in contact with each other but can slide past one another.",
+        "why": "That describes a liquid, which is hard to compress. In a gas the particles are separated, with lots of empty space between them."
+      },
+      {
+        "text": "Gases have stronger intermolecular forces than liquids.",
+        "why": "Gas particles have enough energy to overcome their intermolecular forces and separate; that's what makes them a gas."
+      }
+    ],
+    "explanation": "When a liquid becomes a gas, the particles separate from each other and each goes its own way in space. In the gas phase most of the volume is empty space, only about 1/1,000th is matter, so gases can be compressed."
+  },
+  {
+    "id": "phase-sublimation-enthalpy-water",
+    "type": "numeric",
+    "prompt": "Use ΔH_sub = ΔH_fus + ΔH_vap to calculate the enthalpy of sublimation of water, in kJ/mol, given ΔH_fus = 6.01 kJ/mol and ΔH_vap = 40.68 kJ/mol.",
+    "answer": 46.69,
+    "unit": "kJ/mol",
+    "explanation": "ΔH_sub = ΔH_fus + ΔH_vap = 6.01 kJ/mol + 40.68 kJ/mol = 46.69 kJ/mol."
+  },
+  {
+    "id": "phase-deposition-water-signed",
+    "type": "numeric",
+    "prompt": "Frost forms when water vapor turns directly into ice. What is the energy change, in kJ, when 0.500 mol of water vapor deposits as ice? Use ΔH_sub = ΔH_fus + ΔH_vap, with ΔH_fus = 6.01 kJ/mol and ΔH_vap = 40.68 kJ/mol. Give it with its sign: negative if energy is given off, positive if energy is absorbed.",
+    "answer": -23.35,
+    "unit": "kJ",
+    "explanation": "ΔH_sub = 6.01 + 40.68 = 46.69 kJ/mol, so 0.500 mol × 46.69 kJ/mol = 23.3 kJ. Deposition is the reverse of sublimation, so it is exothermic: ΔH = −23.3 kJ."
+  },
+  {
+    "id": "phase-dry-ice-is-dry",
+    "type": "multiple-choice",
+    "prompt": "Dry ice is solid carbon dioxide. Why is it called \"dry\"?",
+    "choices": [
+      {
+        "text": "It sublimes: the solid goes straight to a gas without passing through the liquid phase.",
+        "correct": true
+      },
+      {
+        "text": "It contains no water, unlike ordinary ice.",
+        "why": "It's true that dry ice isn't water, but that's not why it is dry. It leaves no liquid behind because it sublimes."
+      },
+      {
+        "text": "It melts into a liquid that evaporates instantly.",
+        "why": "Dry ice never becomes a liquid at ordinary pressure; it goes directly from solid to gas."
+      },
+      {
+        "text": "It absorbs moisture from the air around it.",
+        "why": "It is called dry because it sublimes directly into a gas, leaving no puddle."
+      }
+    ],
+    "explanation": "Dry ice is dry because it sublimes: the solid bypasses the liquid phase and goes straight to the gas phase, so it leaves no liquid behind."
+  },
+  {
+    "id": "phase-freezer-burn-cause",
+    "type": "multiple-choice",
+    "prompt": "What causes \"freezer burn\" on foods such as meat?",
+    "choices": [
+      {
+        "text": "The food slowly loses its solid water content by sublimation.",
+        "correct": true
+      },
+      {
+        "text": "The cold damages the food the way heat does, burning it.",
+        "why": "Freezer burn isn't actually a burn. The food dries out as its ice sublimes."
+      },
+      {
+        "text": "The ice in the food slowly melts and drips away.",
+        "why": "A freezer is below the melting point, so the ice doesn't melt; it goes straight to vapor by sublimation."
+      },
+      {
+        "text": "Bacteria grow on the frozen food.",
+        "why": "The food is still good; freezer burn just makes it look unappetizing. It is caused by sublimation."
+      }
+    ],
+    "explanation": "Freezer burn occurs when foods slowly lose solid water content because of sublimation. The food is still good but looks unappetizing; lowering the freezer temperature slows the sublimation."
+  },
+  {
+    "id": "phase-ice-cubes-shrink",
+    "type": "multiple-choice",
+    "prompt": "Ice cubes left in a freezer for a long time slowly get smaller, even though the freezer stays well below 0°C. Why?",
+    "choices": [
+      {
+        "text": "The solid water slowly sublimes, going directly from solid to vapor.",
+        "correct": true
+      },
+      {
+        "text": "The ice slowly melts, and the water evaporates.",
+        "why": "Below 0°C the ice doesn't melt. It goes directly from solid to gas by sublimation."
+      },
+      {
+        "text": "The ice reacts with the air in the freezer.",
+        "why": "No chemical reaction takes place. The ice changes phase, from solid to vapor."
+      },
+      {
+        "text": "The water molecules shrink as they get colder.",
+        "why": "Molecules don't shrink. The cubes lose molecules to the vapor phase by sublimation."
+      }
+    ],
+    "explanation": "Ice cubes in a freezer tend to get smaller over time because the solid water is very slowly subliming. Reducing the temperature of the freezer slows the sublimation."
+  },
+  {
+    "id": "phase-equation-for-boiling",
+    "type": "multiple-choice",
+    "prompt": "Which equation represents liquid water boiling?",
+    "choices": [
+      {
+        "text": "H2O(ℓ) → H2O(g)",
+        "correct": true
+      },
+      {
+        "text": "2H2O(ℓ) → 2H2(g) + O2(g)",
+        "why": "That is a chemical change: water decomposing into hydrogen and oxygen. Boiling is a physical change, so H2O stays H2O."
+      },
+      {
+        "text": "H2O(g) → H2O(ℓ)",
+        "why": "That is condensation, the reverse of boiling."
+      },
+      {
+        "text": "H2O(s) → H2O(g)",
+        "why": "That is sublimation: solid water going directly to a gas."
+      }
+    ],
+    "explanation": "A phase change is written with the same formula on both sides and different phase labels. Boiling turns liquid water into gaseous water: H2O(ℓ) → H2O(g). No chemical change takes place, only a physical one."
+  }
+]

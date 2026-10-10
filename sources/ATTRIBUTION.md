@@ -6,12 +6,19 @@ gets shown next to every citation.
 
 | Document | Source | Author | License |
 | --- | --- | --- | --- |
-| `openstax/genchem-1e/**` | [Chemistry 1e — LibreTexts](https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_1e_(OpenSTAX)) | OpenStax | CC BY 4.0 |
 | `openstax/introductory/**` | [Beginning Chemistry (Ball) — LibreTexts](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) | Anonymous (as listed on LibreTexts) | CC BY-NC-SA 3.0 |
+| `openstax/orgchem/**` | [Organic Chemistry (OpenStax) — LibreTexts](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) | OpenStax (John McMurry, *Organic Chemistry*, 10th ed.) | CC BY-NC-SA 4.0 |
 
 `openstax/introductory/` is complete: all 100 sections, transcribed from the
-LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Note
-its licence is NonCommercial and ShareAlike, unlike the CC BY 4.0 of genchem-1e.
+LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Its
+licence is NonCommercial and ShareAlike.
+
+`openstax/orgchem/` has one folder per chapter (1–31) and one file per
+section. Chapter 1 (Structure and Bonding) is transcribed; the other chapters
+are still stubs with front matter only. The
+"Additional Problems" pages (end-of-chapter exercises) are left out, as are
+the front matter, appendix and back matter. It is NonCommercial and ShareAlike
+too.
 
 ## Layout
 

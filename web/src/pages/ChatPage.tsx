@@ -15,15 +15,15 @@ import {
 import { useChat } from "../hooks/useChat";
 import { getChats, subscribeToChats } from "../lib/chatStore";
 
-/* Each one is answerable from the corpus (1.2, 1.3, and the 14.6 buffer example). */
+/* Each one is answerable from the corpus (Beginning Chemistry 1.2, and its 5.6 percent yield example). */
 const EXAMPLES: { kind: string; icon: ComponentType<{ className?: string }>; question: string }[] = [
   { kind: "Concept", icon: QuestionIcon, question: "What makes something count as matter?" },
-  { kind: "Concept", icon: QuestionIcon, question: "Why is a physical change reversible?" },
-  { kind: "Definition", icon: BookIcon, question: "What is the difference between mass and weight?" },
+  { kind: "Concept", icon: QuestionIcon, question: "What is the difference between a physical change and a chemical change?" },
+  { kind: "Definition", icon: BookIcon, question: "What is the difference between an element and a compound?" },
   {
     kind: "Calculation",
     icon: CalculatorIcon,
-    question: "What is the pH of a buffer made from 0.10 M acetic acid and 0.10 M sodium acetate?",
+    question: "If 30.5 g of zinc reacts with nitric acid and gives 65.2 g of zinc nitrate, what is the percent yield?",
   },
 ];
 
