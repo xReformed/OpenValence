@@ -17,7 +17,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
-| Eval question set | **152 questions** written for *Chemistry* 1e, which has since been removed from the corpus — they need re-targeting (see [Evals](#evals)); no runner yet |
+| Eval question set | **152 questions**, re-checked after *Chemistry* 1e was removed: 50 answerable from the current books, 102 `unanswerable` (see [Evals](#evals)) — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
 | Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do; none yet for *Organic Chemistry*), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
@@ -243,26 +243,25 @@ Do not add material to `sources/` unless you have checked its license and record
 [evals/questions.jsonl](evals/questions.jsonl) holds **152 questions**, one JSON object per line:
 
 ```json
-{"id": "q005", "kind": "calculation", "answerable": true,
- "q": "How do you calculate the pH of a buffer from the concentrations of the weak acid and its conjugate base?",
- "files": ["genchem-1e/14-6-Buffers"], "expect": "Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]).",
- "note": "14-7 also mentions Henderson-Hasselbalch in a titration context; 14-6 is where it is derived."}
+{"id": "q003", "kind": "concept", "answerable": true,
+ "q": "Why does water have a much higher boiling point than hydrogen sulfide?",
+ "files": ["introductory/10-2-Intermolecular-Forces"],
+ "expect": "Water molecules experience hydrogen bonding ... so water boils at 373 K (100 C) versus about -60 C for H2S ...",
+ "note": "Tests whether retrieval finds the hydrogen-bonding paragraph rather than the dispersion/dipole paragraphs earlier in the same file. ..."}
 ```
 
-`files` names the section(s) a correct retrieval must hit, matching chunk IDs (`genchem-1e/14-6-Buffers#3`: the book folder, then the section file); `expect` is what a correct answer says; `note` explains what the question tests.
+`files` names the section(s) a correct retrieval must hit, matching chunk IDs (`introductory/10-2-Intermolecular-Forces#3`: the book folder, then the section file); `expect` is what a correct answer says; `note` explains what the question tests.
 
 | Kind | Count | What it tests |
 | ---- | ----: | ------------- |
-| concept | 37 | Explanations, often in casual student phrasing |
-| calculation | 25 | Worked methods and values, recomputed during writing |
-| unanswerable | 21 | Questions the corpus can't answer — near misses (NMR, SN1/SN2), specific values it doesn't list, format gaps, off-topic requests |
-| fact | 24 | Single facts and definitions |
-| distractor | 22 | A term that appears in many files but is taught in one |
-| exact-token | 13 | Questions that hinge on a precise token (`sp3d2`, `Ka` vs `Kb`) — the baseline for hybrid search |
-| defect | 9 | The correct answer follows a `[Note: …]`, not the misprinted text |
-| contradiction | 1 | Two sections disagree (Tc-99m half-life) |
+| concept | 19 | Explanations, often in casual student phrasing |
+| calculation | 14 | Worked methods and values, recomputed during writing |
+| fact | 12 | Single facts and definitions |
+| exact-token | 3 | Questions that hinge on a precise token — the baseline for hybrid search |
+| distractor | 2 | A term that appears in many files but is taught in one |
+| unanswerable | 102 | Questions the corpus can't answer — near misses (NMR, SN1/SN2, kinetics), specific values it doesn't list, format gaps, off-topic requests |
 
-**The set is out of date.** The questions were written for *Chemistry* 1e, which has since been removed from the corpus: 129 of the 152 list a `genchem-1e/…` file, and 127 list nothing else, so as they stand a runner would score them as misses. Before the runner is built, each needs re-targeting to the *Beginning Chemistry* or *Organic Chemistry* section that answers it, or re-labelling `unanswerable` where neither book covers it (most of kinetics, thermodynamics, the main-group and transition elements). A few already point at *Beginning Chemistry*: q133 (S=O bond energy, its 9.5), q010 (a secondary amine, its 16.6), and q003 and q004 (its 10.2 Intermolecular Forces and 13.4 Le Chatelier). The example above still shows the old target. There is no runner yet; the plan is below.
+The questions were written for OpenStax *Chemistry* 1e. When that book was removed, every one was re-checked against the current corpus: 50 still have an answer and now point at the *Beginning Chemistry* or *Organic Chemistry* section that gives it, with `expect` rewritten to that book's own numbers (for example, q054's bond energies now come from *Organic Chemistry* 1.7–1.9). The other 102 are labelled `unanswerable`, mostly kinetics, thermodynamics, the main-group and transition elements, and anything beyond organic chapter 1. Each keeps its question text unchanged, and its note says what it used to test ("Formerly a … question answered by *Chemistry* 1e …") and what a retriever might wrongly return instead. That leaves the set lopsided: there are no `defect` or `contradiction` questions any more, and few `distractor` or `exact-token` ones, so new questions written for *Beginning Chemistry* and *Organic Chemistry* are the next step (see [Subjects](#subjects)). There is no runner yet; the plan is below.
 
 ---
 
@@ -394,7 +393,7 @@ Suggested order: embed *Beginning Chemistry* and measure it, keep transcribing o
 
 **Introductory chemistry** — the core of the app now that *Chemistry* 1e is gone: the first-year ground at a gentler level, so it also catches beginners' phrasing.
 
-- Re-target the eval set to this book (see [Evals](#evals)); its 158 `[Note: …]` corrections are ready-made `defect` questions
+- Write new eval questions for this book: the set has no `defect` questions left (see [Evals](#evals)), and its 158 `[Note: …]` corrections are ready-made ones
 - First `embed` and retrieval-eval baseline (platform items 1–3 land here first)
 - Calculator tools and the equation balancer (platform items 6–7) — most of the topic pages' "coming soon" items belong to this subject
 - Already done in the app: "In use" in the landing page's Sources section, credited in the footer, and the hero demo built on its Example 5.6.1
@@ -403,7 +402,7 @@ Suggested order: embed *Beginning Chemistry* and measure it, keep transcribing o
 
 - Scope: structure and bonding, functional groups and nomenclature, stereochemistry, reaction mechanisms (substitution, elimination, addition, carbonyl chemistry), and spectroscopy (IR, NMR, mass spec)
 - Structure rendering (platform item 9) becomes essential rather than nice-to-have, and diagrams without alt text will be a larger gap than in *Beginning Chemistry*
-- Seven `unanswerable` eval questions become answerable once this book is in: q040 (aldol), q121 (NMR splitting), q122 (IR carbonyl stretch), q123 (SN1/SN2), q124 (Markovnikov), q125 (Hückel's rule), q126 (R/S). Re-label them in the same change, or the abstention eval will report correct answers as failures
+- Seven `unanswerable` eval questions become answerable as the relevant chapters are transcribed: q040 (aldol), q121 (NMR splitting), q122 (IR carbonyl stretch), q123 (SN1/SN2), q124 (Markovnikov), q125 (Hückel's rule), q126 (R/S). Re-label them in the same change, or the abstention eval will report correct answers as failures
 - Transcription: chapter 1 (Structure and Bonding) is done, with 7 `[Note: …]` corrections; chapters 2–31 are stubs. Each new chapter is `fetch.py` then `fill.py` (see [tools/transcribe/](tools/transcribe/README.md)), then `npm run gen:paths` in `web/` so the learning path picks it up
 - The book is NonCommercial, like *Beginning Chemistry* — see [Licensing](#licensing)
 
