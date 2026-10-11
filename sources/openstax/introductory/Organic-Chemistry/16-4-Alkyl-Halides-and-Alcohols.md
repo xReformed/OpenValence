@@ -16,9 +16,9 @@ license: "CC BY-NC-SA 3.0"
 
 A functional group is any collection of atoms and/or bonds with certain characteristic chemical reactions. We have already seen two functional groups: the C–C double bond and the C–C triple bond. They undergo certain characteristic chemical reactions—for example, the addition of a halogen across the multiple bond.
 
-The presence of a halogen atom (F, Cl, Br, or I; also, X is used to represent any halogen atom) is one of the simplest functional groups. Organic compounds that contain a halogen atom are called alkyl halides. We have already seen some examples of alkyl halides when the addition of halogens across double and triple bonds was introduced in Section 16.3 - "Branched Hydrocarbons;" the products of these reactions were alkyl halides.
+The presence of a halogen atom (F, Cl, Br, or I; also, X is used to represent any halogen atom) is one of the simplest functional groups. Organic compounds that contain a halogen atom are called alkyl halides. We have already seen some examples of alkyl halides when the addition of halogens across double and triple bonds was introduced in Section 16.2 - "Hydrocarbons;" the products of these reactions were alkyl halides.
 
-[Note: halogen addition was introduced in Section 16.2 (Hydrocarbons); the source's section reference is off by one.]
+[Note: corrected; the source prints "Section 16.3 - "Branched Hydrocarbons;"" where this reads "Section 16.2 - "Hydrocarbons;"". Halogen addition was introduced in Section 16.2 (Hydrocarbons); the source's section reference is off by one.]
 
 A simple alkyl halide can be named like an ionic salt, first by stating the name of the parent alkane as a substituent group (with the -yl suffix) and then the name of the halogen as if it were the anion. So CH3Cl has the common name of methyl chloride, while CH3CH2Br is ethyl bromide and CH3CH2CH2I is propyl iodide. However, this system is not ideal for more complicated alkyl halides.
 

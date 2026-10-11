@@ -30,10 +30,10 @@ Table 1.3.1: Ground-State Electron Configurations of Some Elements
 | Element | Atomic number | Configuration |
 | --- | --- | --- |
 | Hydrogen | 1 | [Image: The electron configuration of hydrogen. A 1s orbital contains one electron.] |
-| Carbon | 6 | [Image: The electron configuration of carbon. 1s and 2p orbitals contain a pair of electrons. 2p contains two unpaired electrons and a vacant subshell.] |
+| Carbon | 6 | [Image: The electron configuration of carbon. 1s and 2s orbitals contain a pair of electrons. 2p contains two unpaired electrons and a vacant subshell.] |
 | Phosphorus | 15 | [Image: The electron configuration of phosphorus. 1s, 2s, 2p, and 3s have paired electrons in their subshells. 3p has three unpaired electrons.] |
 
-[Note: reproduced as printed. In the carbon row's image description, "1s and 2p orbitals contain a pair of electrons" should read 1s and 2s: carbon is 1s^2 2s^2 2p^2.]
+[Note: corrected; the source prints "1s and 2p orbitals contain a pair" where this reads "1s and 2s orbitals contain a pair". Carbon is 1s^2 2s^2 2p^2, so its paired electrons are in the 1s and 2s orbitals.]
 
 ### Exercise 1.3.1
 

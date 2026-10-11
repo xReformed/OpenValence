@@ -19,13 +19,15 @@ Transcription notes live in the corpus files themselves: add a "[Note: …]"
 paragraph right after the paragraph it corrects. Whenever a section is
 re-converted, its notes are carried over, each after the same paragraph as
 before. If that paragraph's text changed, the note goes in the nearest matching
-spot and is listed so its place can be checked.
+spot and is listed so its place can be checked. A note that records a
+correction (the source prints "X" where this reads "Y") has it re-applied to
+the paragraph, so re-converting never brings a corrected misprint back.
 """
 import difflib
 import sys
 from collections import defaultdict
 
-from paths import convert, find_sections, flags, split_front
+from paths import convert, correct, corrections, find_sections, flags, printed_paragraphs, split_front
 
 # Below this share of matching paragraphs, a section is not converter output.
 SAME_SOURCE = 0.8
@@ -40,14 +42,16 @@ def paragraphs(text):
 
 
 def carry_notes(old_body, new_body):
-    """Put old_body's notes into new_body. Returns (body, moved, similarity):
-    moved lists the notes whose preceding paragraph changed."""
-    text, notes = [], []  # notes: (index of the text paragraph before it, note)
+    """Put old_body's notes into new_body, and re-apply the corrections they
+    record. Returns (body, moved, similarity): moved lists the notes whose
+    preceding paragraph changed."""
+    notes, count = [], 0  # notes: (index of the text paragraph before it, note)
     for paragraph in paragraphs(old_body):
         if is_note(paragraph):
-            notes.append((len(text) - 1, paragraph))
+            notes.append((count - 1, paragraph))
         else:
-            text.append(paragraph)
+            count += 1
+    text = printed_paragraphs(old_body)  # matched as printed, so corrections don't count as changes
     new = paragraphs(new_body)
     matcher = difflib.SequenceMatcher(None, text, new, autojunk=False)
     place, exact = {}, {}
@@ -67,7 +71,7 @@ def carry_notes(old_body, new_body):
             moved.append(note)
     out = list(after[-1])
     for j, paragraph in enumerate(new):
-        out.append(paragraph)
+        out.append(correct(paragraph, [pair for note in after[j] for pair in corrections(note)]))
         out.extend(after[j])
     return "\n\n".join(out), moved, matcher.ratio() if text else 1.0
 

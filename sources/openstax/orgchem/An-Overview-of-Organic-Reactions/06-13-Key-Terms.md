@@ -6,3 +6,31 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- activation energy (ΔG^(‡))
+- active site
+- addition reaction
+- bond dissociation energy (D)
+- carbocation
+- electrophile
+- elimination reaction
+- endergonic
+- endothermic
+- enthalpy change (ΔH)
+- entropy change (ΔS)
+- enzyme
+- exergonic
+- exothermic
+- Gibbs free-energy change (ΔG)
+- heat of reaction
+- nucleophile
+- polar reaction
+- polarizability
+- radical
+- radical reaction
+- reaction coordinate
+- reaction intermediate
+- reaction mechanism
+- rearrangement reaction
+- substitution reaction
+- transition state

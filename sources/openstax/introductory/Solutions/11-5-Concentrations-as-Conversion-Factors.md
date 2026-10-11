@@ -77,9 +77,9 @@ What volume of 0.0995 M Al(NO3)3 will react with 3.66 g of Ag according to the f
 
 Here, we first must convert the mass of Ag to moles before using the balanced chemical equation and then the definition of molarity as a conversion factor:
 
-3.66 ~~g Ag~~ × (1 ~~mol Ag~~)/(107.97 ~~g Ag~~) × (1 ~~mol Al(NO3)3~~)/(3 ~~mol Ag~~) × (1L solution)/(0.0995 ~~mol Al(NO3)3~~) = 0.114 L
+3.66 ~~g Ag~~ × (1 ~~mol Ag~~)/(107.87 ~~g Ag~~) × (1 ~~mol Al(NO3)3~~)/(3 ~~mol Ag~~) × (1L solution)/(0.0995 ~~mol Al(NO3)3~~) = 0.114 L
 
-[Note: reproduced as printed. The molar mass of silver is 107.87 g/mol, not 107.97 g/mol; the answer, 0.114 L, is the same either way.]
+[Note: corrected; the source prints "(107.97 ~~g Ag~~)" where this reads "(107.87 ~~g Ag~~)". The molar mass of silver is 107.87 g/mol; the answer, 0.114 L, is the same either way.]
 
 The strikeouts show how the units cancel.
 

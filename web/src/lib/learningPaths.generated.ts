@@ -932,112 +932,112 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "2.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.00%3A_Why_This_Chapter"
         },
         {
           "number": "2.1",
           "title": "Polar Covalent Bonds - Electronegativity",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-1-Polar-Covalent-Bonds-Electronegativity.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.01%3A_Polar_Covalent_Bonds_-_Electronegativity"
         },
         {
           "number": "2.2",
           "title": "Polar Covalent Bonds - Dipole Moments",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-2-Polar-Covalent-Bonds-Dipole-Moments.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.02%3A_Polar_Covalent_Bonds_-_Dipole_Moments"
         },
         {
           "number": "2.3",
           "title": "Formal Charges",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-3-Formal-Charges.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.03%3A_Formal_Charges"
         },
         {
           "number": "2.4",
           "title": "Resonance",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-4-Resonance.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.04%3A_Resonance"
         },
         {
           "number": "2.5",
           "title": "Rules for Resonance Forms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-5-Rules-for-Resonance-Forms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.05%3A_Rules_for_Resonance_Forms"
         },
         {
           "number": "2.6",
           "title": "Drawing Resonance Forms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-6-Drawing-Resonance-Forms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.06%3A_Drawing_Resonance_Forms"
         },
         {
           "number": "2.7",
           "title": "Acids and Bases - The Brønsted-Lowry Definition",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-7-Acids-and-Bases-The-Bronsted-Lowry-Definition.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.07%3A_Acids_and_Bases_-_The_Brnsted-Lowry_Definition"
         },
         {
           "number": "2.8",
           "title": "Acid and Base Strength",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-8-Acid-and-Base-Strength.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.08%3A_Acid_and_Base_Strength"
         },
         {
           "number": "2.9",
           "title": "Predicting Acid-Base Reactions from pKa Values",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-9-Predicting-Acid-Base-Reactions-from-pKa-Values.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.09%3A_Predicting_Acid-Base_Reactions_from_pKa_Values"
         },
         {
           "number": "2.10",
           "title": "Organic Acids and Organic Bases",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-10-Organic-Acids-and-Organic-Bases.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.10%3A_Organic_Acids_and_Organic_Bases"
         },
         {
           "number": "2.11",
           "title": "Acids and Bases - The Lewis Definition",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-11-Acids-and-Bases-The-Lewis-Definition.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.11%3A_Acids_and_Bases_-_The_Lewis_Definition"
         },
         {
           "number": "2.12",
           "title": "Noncovalent Interactions Between Molecules",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-12-Noncovalent-Interactions-Between-Molecules.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.12%3A_Noncovalent_Interactions_Between_Molecules"
         },
         {
           "number": "2.13",
           "title": "Chemistry Matters—Alkaloids- From Cocaine to Dental Anesthetics",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-13-Chemistry-Matters-Alkaloids-From-Cocaine-to-Dental-Anesthetics.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.13%3A_Chemistry_MattersAlkaloids-_From_Cocaine_to_Dental_Anesthetics"
         },
         {
           "number": "2.14",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-14-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.14%3A_Key_Terms"
         },
         {
           "number": "2.15",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Polar-Covalent-Bonds-Acids-and-Bases/02-15-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/02%3A_Polar_Covalent_Bonds_Acids_and_Bases/2.15%3A_Summary"
         }
@@ -1050,77 +1050,77 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "3.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.00%3A_Why_This_Chapter"
         },
         {
           "number": "3.1",
           "title": "Functional Groups",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-1-Functional-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.01%3A_Functional_Groups"
         },
         {
           "number": "3.2",
           "title": "Alkanes and Alkane Isomers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-2-Alkanes-and-Alkane-Isomers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.02%3A_Alkanes_and_Alkane_Isomers"
         },
         {
           "number": "3.3",
           "title": "Alkyl Groups",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-3-Alkyl-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.03%3A_Alkyl_Groups"
         },
         {
           "number": "3.4",
           "title": "Naming Alkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-4-Naming-Alkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.04%3A_Naming_Alkanes"
         },
         {
           "number": "3.5",
           "title": "Properties of Alkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-5-Properties-of-Alkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.05%3A_Properties_of_Alkanes"
         },
         {
           "number": "3.6",
           "title": "Conformations of Ethane",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-6-Conformations-of-Ethane.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.06%3A_Conformations_of_Ethane"
         },
         {
           "number": "3.7",
           "title": "Conformations of Other Alkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-7-Conformations-of-Other-Alkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.07%3A_Conformations_of_Other_Alkanes"
         },
         {
           "number": "3.8",
           "title": "Chemistry Matters—Gasoline",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-8-Chemistry-Matters-Gasoline.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.08%3A_Chemistry_MattersGasoline"
         },
         {
           "number": "3.9",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-9-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.09%3A_Key_Terms"
         },
         {
           "number": "3.10",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Alkanes-and-Their-Stereochemistry/03-10-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/03%3A_Organic_Compounds-_Alkanes_and_Their_Stereochemistry/3.10%3A_Summary"
         }
@@ -1133,91 +1133,91 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "4.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.00%3A_Why_This_Chapter"
         },
         {
           "number": "4.1",
           "title": "Naming Cycloalkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-1-Naming-Cycloalkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.01%3A_Naming_Cycloalkanes"
         },
         {
           "number": "4.2",
           "title": "Cis-Trans Isomerism in Cycloalkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-2-Cis-Trans-Isomerism-in-Cycloalkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.02%3A_Cis-Trans_Isomerism_in_Cycloalkanes"
         },
         {
           "number": "4.3",
           "title": "Stability of Cycloalkanes - Ring Strain",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-3-Stability-of-Cycloalkanes-Ring-Strain.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.03%3A_Stability_of_Cycloalkanes_-_Ring_Strain"
         },
         {
           "number": "4.4",
           "title": "Conformations of Cycloalkanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-4-Conformations-of-Cycloalkanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.04%3A_Conformations_of_Cycloalkanes"
         },
         {
           "number": "4.5",
           "title": "Conformations of Cyclohexane",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-5-Conformations-of-Cyclohexane.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.05%3A_Conformations_of_Cyclohexane"
         },
         {
           "number": "4.6",
           "title": "Axial and Equatorial Bonds in Cyclohexane",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-6-Axial-and-Equatorial-Bonds-in-Cyclohexane.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.06%3A_Axial_and_Equatorial_Bonds_in_Cyclohexane"
         },
         {
           "number": "4.7",
           "title": "Conformations of Monosubstituted Cyclohexanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-7-Conformations-of-Monosubstituted-Cyclohexanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.07%3A_Conformations_of_Monosubstituted_Cyclohexanes"
         },
         {
           "number": "4.8",
           "title": "Conformations of Disubstituted Cyclohexanes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-8-Conformations-of-Disubstituted-Cyclohexanes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.08%3A_Conformations_of_Disubstituted_Cyclohexanes"
         },
         {
           "number": "4.9",
           "title": "Conformations of Polycyclic Molecules",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-9-Conformations-of-Polycyclic-Molecules.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.09%3A_Conformations_of_Polycyclic_Molecules"
         },
         {
           "number": "4.10",
           "title": "Chemistry Matters—Molecular Mechanics",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-10-Chemistry-Matters-Molecular-Mechanics.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.10%3A_Chemistry_MattersMolecular_Mechanics"
         },
         {
           "number": "4.11",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-11-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.11%3A_Key_Terms"
         },
         {
           "number": "4.12",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organic-Compounds-Cycloalkanes-and-their-Stereochemistry/04-12-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/04%3A_Organic_Compounds_-_Cycloalkanes_and_their_Stereochemistry/4.12%3A_Summary"
         }
@@ -1230,112 +1230,112 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "5.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.00%3A_Why_This_Chapter"
         },
         {
           "number": "5.1",
           "title": "Enantiomers and the Tetrahedral Carbon",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-1-Enantiomers-and-the-Tetrahedral-Carbon.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.01%3A_Enantiomers_and_the_Tetrahedral_Carbon"
         },
         {
           "number": "5.2",
           "title": "The Reason for Handedness in Molecules - Chirality",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-2-The-Reason-for-Handedness-in-Molecules-Chirality.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.02%3A_The_Reason_for_Handedness_in_Molecules_-_Chirality"
         },
         {
           "number": "5.3",
           "title": "Optical Activity",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-3-Optical-Activity.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.03%3A_Optical_Activity"
         },
         {
           "number": "5.4",
           "title": "Pasteur's Discovery of Enantiomers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-4-Pasteurs-Discovery-of-Enantiomers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.04%3A_Pasteur's_Discovery_of_Enantiomers"
         },
         {
           "number": "5.5",
           "title": "Sequence Rules for Specifying Configuration",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-5-Sequence-Rules-for-Specifying-Configuration.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.05%3A_Sequence_Rules_for_Specifying_Configuration"
         },
         {
           "number": "5.6",
           "title": "Diastereomers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-6-Diastereomers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.06%3A_Diastereomers"
         },
         {
           "number": "5.7",
           "title": "Meso Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-7-Meso-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.07%3A_Meso_Compounds"
         },
         {
           "number": "5.8",
           "title": "Racemic Mixtures and the Resolution of Enantiomers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-8-Racemic-Mixtures-and-the-Resolution-of-Enantiomers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.08%3A_Racemic_Mixtures_and_the_Resolution_of_Enantiomers"
         },
         {
           "number": "5.9",
           "title": "A Review of Isomerism",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-9-A-Review-of-Isomerism.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.09%3A_A_Review_of_Isomerism"
         },
         {
           "number": "5.10",
           "title": "Chirality at Nitrogen, Phosphorus, and Sulfur",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-10-Chirality-at-Nitrogen-Phosphorus-and-Sulfur.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.10%3A_Chirality_at_Nitrogen_Phosphorus_and_Sulfur"
         },
         {
           "number": "5.11",
           "title": "Prochirality",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-11-Prochirality.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.11%3A_Prochirality"
         },
         {
           "number": "5.12",
           "title": "Chirality in Nature and Chiral Environments",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-12-Chirality-in-Nature-and-Chiral-Environments.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.12%3A_Chirality_in_Nature_and_Chiral_Environments"
         },
         {
           "number": "5.13",
           "title": "Chemistry Matters—Chiral Drugs",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-13-Chemistry-Matters-Chiral-Drugs.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.13%3A_Chemistry_MattersChiral_Drugs"
         },
         {
           "number": "5.14",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-14-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.14%3A_Key_Terms"
         },
         {
           "number": "5.15",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Stereochemistry-at-Tetrahedral-Centers/05-15-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/05%3A_Stereochemistry_at_Tetrahedral_Centers/5.15%3A_Summary"
         }
@@ -1348,105 +1348,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "6.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.00%3A_Why_This_Chapter"
         },
         {
           "number": "6.1",
           "title": "Kinds of Organic Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-1-Kinds-of-Organic-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.01%3A_Kinds_of_Organic_Reactions"
         },
         {
           "number": "6.2",
           "title": "How Organic Reactions Occur - Mechanisms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-2-How-Organic-Reactions-Occur-Mechanisms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.02%3A_How_Organic_Reactions_Occur_-_Mechanisms"
         },
         {
           "number": "6.3",
           "title": "Polar Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-3-Polar-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.03%3A_Polar_Reactions"
         },
         {
           "number": "6.4",
           "title": "An Example of a Polar Reaction - Addition of HBr to Ethylene",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-4-An-Example-of-a-Polar-Reaction-Addition-of-HBr-to-Ethylene.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.04%3A_An_Example_of_a_Polar_Reaction_-_Addition_of_HBr_to_Ethylene"
         },
         {
           "number": "6.5",
           "title": "Using Curved Arrows in Polar Reaction Mechanisms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-5-Using-Curved-Arrows-in-Polar-Reaction-Mechanisms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.05%3A_Using_Curved_Arrows_in_Polar_Reaction_Mechanisms"
         },
         {
           "number": "6.6",
           "title": "Radical Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-6-Radical-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.06%3A_Radical_Reactions"
         },
         {
           "number": "6.7",
           "title": "Describing a Reaction - Equilibria, Rates, and Energy Changes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-7-Describing-a-Reaction-Equilibria-Rates-and-Energy-Changes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.07%3A_Describing_a_Reaction_-_Equilibria__Rates_and_Energy_Changes"
         },
         {
           "number": "6.8",
           "title": "Describing a Reaction - Bond Dissociation Energies",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-8-Describing-a-Reaction-Bond-Dissociation-Energies.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.08%3A_Describing_a_Reaction_-_Bond__Dissociation_Energies"
         },
         {
           "number": "6.9",
           "title": "Describing a Reaction - Energy Diagrams and Transition States",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-9-Describing-a-Reaction-Energy-Diagrams-and-Transition-States.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.09%3A_Describing_a_Reaction_-_Energy_Diagrams_and_Transition_States"
         },
         {
           "number": "6.10",
           "title": "Describing a Reaction- Intermediates",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-10-Describing-a-Reaction-Intermediates.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.10%3A_Describing_a_Reaction-_Intermediates"
         },
         {
           "number": "6.11",
           "title": "A Comparison between Biological Reactions and Laboratory Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-11-A-Comparison-between-Biological-Reactions-and-Laboratory-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.11%3A_A_Comparison_between_Biological_Reactions_and_Laboratory_Reactions"
         },
         {
           "number": "6.12",
           "title": "Chemistry Matters—Where Do Drugs Come From?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-12-Chemistry-Matters-Where-Do-Drugs-Come-From.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.12%3A_Chemistry_MattersWhere_Do_Drugs_Come_From"
         },
         {
           "number": "6.13",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-13-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.13%3A_Key_Terms"
         },
         {
           "number": "6.14",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/An-Overview-of-Organic-Reactions/06-14-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/06%3A_An_Overview_of_Organic_Reactions/6.14%3A_Summary"
         }
@@ -1459,105 +1459,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "7.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.00%3A_Why_This_Chapter"
         },
         {
           "number": "7.1",
           "title": "Industrial Preparation and Use of Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-1-Industrial-Preparation-and-Use-of-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.01%3A_Industrial_Preparation_and_Use_of_Alkenes"
         },
         {
           "number": "7.2",
           "title": "Calculating Degree of Unsaturation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-2-Calculating-Degree-of-Unsaturation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.02%3A_Calculating_Degree_of_Unsaturation"
         },
         {
           "number": "7.3",
           "title": "Naming Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-3-Naming-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.03%3A_Naming_Alkenes"
         },
         {
           "number": "7.4",
           "title": "Cis-Trans Isomerism in Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-4-Cis-Trans-Isomerism-in-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.04%3A_Cis-Trans_Isomerism_in_Alkenes"
         },
         {
           "number": "7.5",
           "title": "Alkene Stereochemistry and the E,Z Designation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-5-Alkene-Stereochemistry-and-the-E-Z-Designation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.05%3A_Alkene_Stereochemistry_and_the_EZ_Designation"
         },
         {
           "number": "7.6",
           "title": "Stability of Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-6-Stability-of-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.06%3A_Stability_of_Alkenes"
         },
         {
           "number": "7.7",
           "title": "Electrophilic Addition Reactions of Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-7-Electrophilic-Addition-Reactions-of-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.07%3A_Electrophilic_Addition_Reactions_of_Alkenes"
         },
         {
           "number": "7.8",
           "title": "Orientation of Electrophilic Additions - Markovnikov's Rule",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-8-Orientation-of-Electrophilic-Additions-Markovnikovs-Rule.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.08%3A_Orientation_of_Electrophilic_Additions_-_Markovnikov's_Rule"
         },
         {
           "number": "7.9",
           "title": "Carbocation Structure and Stability",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-9-Carbocation-Structure-and-Stability.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.09%3A_Carbocation_Structure_and_Stability"
         },
         {
           "number": "7.10",
           "title": "The Hammond Postulate",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-10-The-Hammond-Postulate.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.10%3A_The_Hammond_Postulate"
         },
         {
           "number": "7.11",
           "title": "Evidence for the Mechanism of Electrophilic Additions - Carbocation Rearrangements",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-11-Evidence-for-the-Mechanism-of-Electrophilic-Additions-Carbocation-Rearrangements.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.11%3A_Evidence_for_the_Mechanism_of_Electrophilic_Additions_-_Carbocation_Rearrangements"
         },
         {
           "number": "7.12",
           "title": "Chemistry Matters - Bioprospecting - Hunting for Natural Products",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-12-Chemistry-Matters-Bioprospecting-Hunting-for-Natural-Products.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.12%3A_Chemistry_MattersBioprospecting-_Hunting_for_Natural_Products"
         },
         {
           "number": "7.13",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-13-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.13%3A_Key_Terms"
         },
         {
           "number": "7.14",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Structure-and-Reactivity/07-14-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/07%3A_Alkenes-_Structure_and_Reactivity/7.14%3A_Summary"
         }
@@ -1570,126 +1570,126 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "8.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.00%3A_Why_This_Chapter"
         },
         {
           "number": "8.1",
           "title": "Preparation of Alkenes - A Preview of Elimination Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-1-Preparation-of-Alkenes-A-Preview-of-Elimination-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.01%3A_Preparation_of_Alkenes_-_A_Preview_of_Elimination_Reactions"
         },
         {
           "number": "8.2",
           "title": "Halogenation of Alkenes - Addition of X₂",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-2-Halogenation-of-Alkenes-Addition-of-X2.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.02%3A_Halogenation_of_Alkenes_-_Addition_of_X"
         },
         {
           "number": "8.3",
           "title": "Halohydrins from Alkenes - Addition of HO-X",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-3-Halohydrins-from-Alkenes-Addition-of-HO-X.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.03%3A_Halohydrins_from_Alkenes_-_Addition_of_HO-X"
         },
         {
           "number": "8.4",
           "title": "Hydration of Alkenes - Addition of H₂O by Oxymercuration",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-4-Hydration-of-Alkenes-Addition-of-H2O-by-Oxymercuration.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.04%3A_Hydration_of_Alkenes_-_Addition_of_HO_by_Oxymercuration"
         },
         {
           "number": "8.5",
           "title": "Hydration of Alkenes - Addition of H₂O by Hydroboration",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-5-Hydration-of-Alkenes-Addition-of-H2O-by-Hydroboration.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.05%3A_Hydration_of_Alkenes_-_Addition_of_HO_by_Hydroboration"
         },
         {
           "number": "8.6",
           "title": "Reduction of Alkenes - Hydrogenation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-6-Reduction-of-Alkenes-Hydrogenation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.06%3A_Reduction_of_Alkenes_-_Hydrogenation"
         },
         {
           "number": "8.7",
           "title": "Oxidation of Alkenes - Epoxidation and Hydroxylation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-7-Oxidation-of-Alkenes-Epoxidation-and-Hydroxylation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.07%3A_Oxidation_of_Alkenes_-_Epoxidation_and_Hydroxylation"
         },
         {
           "number": "8.8",
           "title": "Oxidation of Alkenes - Cleavage to Carbonyl Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-8-Oxidation-of-Alkenes-Cleavage-to-Carbonyl-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.08%3A_Oxidation_of_Alkenes_-_Cleavage_to_Carbonyl_Compounds"
         },
         {
           "number": "8.9",
           "title": "Addition of Carbenes to Alkenes - Cyclopropane Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-9-Addition-of-Carbenes-to-Alkenes-Cyclopropane-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.09%3A_Addition_of_Carbenes_to_Alkenes_-_Cyclopropane_Synthesis"
         },
         {
           "number": "8.10",
           "title": "Radical Additions to Alkenes - Chain-Growth Polymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-10-Radical-Additions-to-Alkenes-Chain-Growth-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.10%3A_Radical_Additions_to_Alkenes_-__Chain-Growth_Polymers"
         },
         {
           "number": "8.11",
           "title": "Biological Additions of Radicals to Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-11-Biological-Additions-of-Radicals-to-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.11%3A_Biological_Additions_of_Radicals_to__Alkenes"
         },
         {
           "number": "8.12",
           "title": "Stereochemistry of Reactions - Addition of H₂O to an Achiral Alkene",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-12-Stereochemistry-of-Reactions-Addition-of-H2O-to-an-Achiral-Alkene.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.12%3A_Stereochemistry_of_Reactions_-_Addition_of_HO_to_an_Achiral_Alkene"
         },
         {
           "number": "8.13",
           "title": "Stereochemistry of Reactions - Addition of H₂O to a Chiral Alkene",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-13-Stereochemistry-of-Reactions-Addition-of-H2O-to-a-Chiral-Alkene.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.13%3A_Stereochemistry_of_Reactions_-_Addition_of_HO_to_a_Chiral_Alkene"
         },
         {
           "number": "8.14",
           "title": "Chemistry Matters—Terpenes- Naturally Occurring Alkenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-14-Chemistry-Matters-Terpenes-Naturally-Occurring-Alkenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.14%3A_Chemistry_MattersTerpenes-_Naturally_Occurring_Alkenes"
         },
         {
           "number": "8.15",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-15-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.15%3A_Key_Terms"
         },
         {
           "number": "8.16",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-16-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.16%3A_Summary"
         },
         {
           "number": "8.17",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkenes-Reactions-and-Synthesis/08-17-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/08%3A_Alkenes_-_Reactions_and_Synthesis/8.17%3A_Summary_of_Reactions"
         }
@@ -1702,98 +1702,98 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "9.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.00%3A_Why_This_Chapter"
         },
         {
           "number": "9.1",
           "title": "Naming Alkynes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-1-Naming-Alkynes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.01%3A_Naming_Alkynes"
         },
         {
           "number": "9.2",
           "title": "Preparation of Alkynes - Elimination Reactions of Dihalides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-2-Preparation-of-Alkynes-Elimination-Reactions-of-Dihalides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.02%3A_Preparation_of_Alkynes_-_Elimination_Reactions_of_Dihalides"
         },
         {
           "number": "9.3",
           "title": "Reactions of Alkynes - Addition of HX and X₂",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-3-Reactions-of-Alkynes-Addition-of-HX-and-X2.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.03%3A_Reactions_of_Alkynes_-_Addition_of_HX_and_X"
         },
         {
           "number": "9.4",
           "title": "Hydration of Alkynes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-4-Hydration-of-Alkynes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.04%3A_Hydration_of_Alkynes"
         },
         {
           "number": "9.5",
           "title": "Reduction of Alkynes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-5-Reduction-of-Alkynes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.05%3A_Reduction_of_Alkynes"
         },
         {
           "number": "9.6",
           "title": "Oxidative Cleavage of Alkynes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-6-Oxidative-Cleavage-of-Alkynes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.06%3A_Oxidative_Cleavage_of_Alkynes"
         },
         {
           "number": "9.7",
           "title": "Alkyne Acidity - Formation of Acetylide Anions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-7-Alkyne-Acidity-Formation-of-Acetylide-Anions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.07%3A_Alkyne_Acidity_-_Formation_of_Acetylide_Anions"
         },
         {
           "number": "9.8",
           "title": "Alkylation of Acetylide Anions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-8-Alkylation-of-Acetylide-Anions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.08%3A_Alkylation_of_Acetylide_Anions"
         },
         {
           "number": "9.9",
           "title": "An Introduction to Organic Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-9-An-Introduction-to-Organic-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.09%3A_An_Introduction_to_Organic_Synthesis"
         },
         {
           "number": "9.10",
           "title": "Chemistry Matters - The Art of Organic Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-10-Chemistry-Matters-The-Art-of-Organic-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.10%3A_Chemistry_MattersThe_Art_of_Organic_Synthesis"
         },
         {
           "number": "9.11",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-11-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.11%3A_Key_Terms"
         },
         {
           "number": "9.12",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-12-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.12%3A_Summary"
         },
         {
           "number": "9.13",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alkynes-An-Introduction-to-Organic-Synthesis/09-13-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/09%3A_Alkynes_-_An_Introduction_to_Organic_Synthesis/9.13%3A_Summary_of_Reactions"
         }

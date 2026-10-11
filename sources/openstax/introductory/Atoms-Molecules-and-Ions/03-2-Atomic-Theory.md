@@ -93,10 +93,10 @@ Table 3.2.2: Names and Symbols of Common Elements
 
 The elements are grouped together in a special chart called the periodic table of all the elements. A simple periodic table is shown in Figure 3.2.2, while one may view a more extensive periodic table from another source. The elements on the periodic table are listed in order of ascending atomic number. The periodic table has a special shape that will become important to us when we consider the organization of electrons in atoms (Chapter 8). One immediate use of the periodic table helps us identify metals and nonmetals. Nonmetals are in the upper right-hand corner of the periodic table, on one side of the heavy line splitting the right-side part of the chart. All other elements are metals.
 
-Figure 3.2.1: A Simple Periodic Table
+Figure 3.2.2: A Simple Periodic Table
 Periodic table showing atomic number, mass, and symbol of each element is shown.
 
-[Note: the source numbers this figure 3.2.1, the same as "The Structure of the Atom" figure above, but the text refers to it as Figure 3.2.2.]
+[Note: corrected; the source prints "Figure 3.2.1: A Simple Periodic Table" where this reads "Figure 3.2.2: A Simple Periodic Table". The source gave this figure the same number as "The Structure of the Atom" figure above; the text refers to it as Figure 3.2.2.]
 
 There is an easy way to represent isotopes using the atomic symbols. We use the construction:
 

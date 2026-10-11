@@ -26,6 +26,6 @@ The energy level and electron orientation of H 2 molecule and two hydrogen atoms
 How close are the two nuclei in the H2 molecule? If they are too close, they will repel each other because both are positively charged. Yet if they’re too far apart, they won’t be able to share the bonding electrons. Thus, there is an optimum distance between nuclei that leads to maximum stability (Figure 1.5.3). Called the bond length, this distance is 74 pm in the H–H molecule. Every covalent bond has both a characteristic bond strength and bond length.
 
 Figure 1.5.3: A plot of energy versus internuclear distance for two hydrogen atoms. The distance between nuclei at the minimum energy point is the bond length.
-A graph of energy versus internuclear distance. A horizontal line separates the positive and negative energy and a curve with a single trough at 74 ppm is shown.
+A graph of energy versus internuclear distance. A horizontal line separates the positive and negative energy and a curve with a single trough at 74 pm is shown.
 
-[Note: reproduced as printed. The trough is at 74 pm, the H–H bond length given in the text, not 74 ppm.]
+[Note: corrected; the source prints "trough at 74 ppm" where this reads "trough at 74 pm". 74 pm is the H–H bond length given in the text.]

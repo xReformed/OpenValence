@@ -51,10 +51,10 @@ Which combinations of compounds can make a buffer solution?
 
 1. HCHO2 is formic acid, a weak acid, while NaCHO2 is the salt made from the anion of the weak acid (the formate ion [CHO2^−]). The combination of these two solutes would make a buffer solution.
 2. HCl is a strong acid, not a weak acid, so the combination of these two solutes would not make a buffer solution.
-3. CH3NH2 is methylamine, which is like NH3 with one of its H atoms substituted with a CH3 group. Because it is not listed in Table 12.8.1, we can assume that it is a weak base. The compound CH3NH3Cl is a salt made from that weak base, so the combination of these two solutes would make a buffer solution.
+3. CH3NH2 is methylamine, which is like NH3 with one of its H atoms substituted with a CH3 group. Because it is not listed in Table 12.5.1, we can assume that it is a weak base. The compound CH3NH3Cl is a salt made from that weak base, so the combination of these two solutes would make a buffer solution.
 4. NH3 is a weak base, but NaOH is a strong base. The combination of these two solutes would not make a buffer solution.
 
-[Note: the source's table number resolves to Table 12.8.1, but this section has no table; the table of strong acids and bases meant here is Table 12.5.1.]
+[Note: corrected; the source prints "it is not listed in Table 12.8.1" where this reads "it is not listed in Table 12.5.1". This section has no table; the table of strong acids and bases meant here is Table 12.5.1.]
 
 ### Exercise 12.8.1
 
@@ -91,14 +91,14 @@ Human blood has a buffering system to minimize extreme changes in pH. One buffer
 
 Although medicines are not exactly "food and drink," we do ingest them, so let's take a look at an acid that is probably the most common medicine: acetylsalicylic acid, also known as aspirin. Aspirin is well known as a pain reliever and antipyretic (fever reducer).
 
-The structure of aspirin is shown in the accompanying figure. The acid part is circled; it is the H atom in that part that can be donated as aspirin acts as a Brønsted-Lowry acid. Because it is not given in Table 12.8.1, acetylsalicylic acid is a weak acid. However, it is still an acid, and given that some people consume relatively large amounts of aspirin daily, its acidic nature can cause problems in the stomach lining, despite the stomach's defenses against its own stomach acid.
+The structure of aspirin is shown in the accompanying figure. The acid part is circled; it is the H atom in that part that can be donated as aspirin acts as a Brønsted-Lowry acid. Because it is not given in Table 12.5.1, acetylsalicylic acid is a weak acid. However, it is still an acid, and given that some people consume relatively large amounts of aspirin daily, its acidic nature can cause problems in the stomach lining, despite the stomach's defenses against its own stomach acid.
 
-[Note: the source's table number resolves to Table 12.8.1, but this section has no table; the table of strong acids and bases meant here is Table 12.5.1.]
+[Note: corrected; the source prints "it is not given in Table 12.8.1" where this reads "it is not given in Table 12.5.1". This section has no table; the table of strong acids and bases meant here is Table 12.5.1.]
 
 Figure 12.8.2: The Molecular Structure of Aspirin. The circled atoms are the acid part of the molecule.
-The molecule of aspartame is shown. The CO2H is circled to indicate that it is the acidic part of the molecule.
+The molecule of aspirin is shown. The CO2H is circled to indicate that it is the acidic part of the molecule.
 
-[Note: reproduced as printed; the figure shows aspirin (acetylsalicylic acid), not aspartame.]
+[Note: corrected; the source prints "The molecule of aspartame is shown" where this reads "The molecule of aspirin is shown". The figure shows aspirin (acetylsalicylic acid), not aspartame.]
 
 Because the acid properties of aspirin may be problematic, many aspirin brands offer a "buffered aspirin" form of the medicine. In these cases, the aspirin also contains a buffering agent—usually MgO—that regulates the acidity of the aspirin to minimize its acidic side effects.
 

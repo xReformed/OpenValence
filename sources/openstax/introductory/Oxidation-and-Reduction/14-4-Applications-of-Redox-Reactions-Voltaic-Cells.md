@@ -57,15 +57,15 @@ is assigned to be exactly 0.000 V under standard conditions of pressure and conc
 | Cr^3+ + 3e^− → Cr | −0.74 |
 | Zn^2+ + 2e^− → Zn | −0.76 |
 | Cr^2+ + 2e^− → Cr | −0.91 |
-| Ba^2+ + 2e^− → Ba | −1.57 |
+| Ba^2+ + 2e^− → Ba | −2.91 |
 | Al^3++ 3e^− → Al | −1.66 |
 | Mg^2+ + 2e^− → Mg | −2.37 |
 | Na^+ + e^− → Na | −2.714 |
 | Li^+ + e^− → Li | −3.045 |
 
-Table 14.4.1 Standard Reduction Potentials of Half Reactions
+[Note: corrected; the source prints "| Ba^2+ + 2e^− → Ba | −1.57 |" where this reads "| Ba^2+ + 2e^− → Ba | −2.91 |". The accepted standard reduction potential for Ba^2+ + 2e^− → Ba is −2.91 V; the row is left where the source places it, although this value belongs below Mg^2+ (−2.37 V).]
 
-[Note: the Ba^2+ value is reproduced as printed. The accepted standard reduction potential for Ba^2+ + 2e^− → Ba is −2.91 V, which would place it below Mg^2+ (−2.37 V) in this table.]
+Table 14.4.1 Standard Reduction Potentials of Half Reactions
 
 The above table lists only reduction reactions, but a redox reaction has a reduction and an oxidation. To make the oxidation reaction, simply reverse the reduction reaction in the above table and change the sign on the E1/2 value. If the reduction potential is negative, make the voltage for the oxidation positive; if the reduction potential is positive, make the voltage for the oxidation negative.
 
@@ -125,9 +125,9 @@ Because the overall voltage is positive, the reaction is spontaneous as written.
 
 What is the voltage of a voltaic cell based on this reaction? Is the reaction spontaneous as written?
 
-5Ni + 2MnO4^− + 16H^+ → 3Mn^2+ + 8H2O + 5Ni^2+
+5Ni + 2MnO4^− + 16H^+ → 2Mn^2+ + 8H2O + 5Ni^2+
 
-[Note: reproduced as printed, but the equation isn't balanced: there are 2 Mn atoms on the left, so the product should be 2Mn^2+, which also balances the charge.]
+[Note: corrected; the source prints "→ 3Mn^2+ +" where this reads "→ 2Mn^2+ +". The equation was not balanced: there are 2 Mn atoms on the left, and 2Mn^2+ also balances the charge.]
 
 **Answer**
 
@@ -166,9 +166,9 @@ The actual redox reaction depends on the composition of the cathode and is varia
 
 An important secondary battery is the lead storage battery, shown in the Figure 14.4.4 - Lead Storage Batteries. The lead storage battery is based on this redox reaction:
 
-Pb + PbO2 + 4H^+ + SO4^2− → 2PbSO4 + 2H2O
+Pb + PbO2 + 4H^+ + 2SO4^2− → 2PbSO4 + 2H2O
 
-[Note: reproduced as printed, but the equation isn't balanced; it needs two sulfate ions: Pb + PbO2 + 4H^+ + 2SO4^2− → 2PbSO4 + 2H2O.]
+[Note: corrected; the source prints "4H^+ + SO4^2− →" where this reads "4H^+ + 2SO4^2− →". The equation was not balanced; two sulfate ions are needed to make 2PbSO4.]
 
 The redox reaction produces about 2 V, but it is typical to tie several individual batteries together to generate a larger voltage. The lead storage battery has the distinction that the product of both half reactions is PbSO4, which as a solid that accumulates on the many plates within each cell. The lead storage battery is a secondary battery, as it can be recharged and reused many times. Because it is based on lead, these batteries are rather heavy. They should also be recycled when replaced so that potentially dangerous lead does not escape into the environment. Because of their characteristics, lead storage batteries are used to start large engines in automobiles, boats, and airplanes.
 

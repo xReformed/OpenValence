@@ -35,9 +35,9 @@ solute: HCl(g); solvent: CH3OH
 
 One important concept of solutions is in defining how much solute is dissolved in a given amount of solvent. This concept is called concentration. Various words are used to describe the relative amounts of solute. Dilute describes a solution that has very little solute, while concentrated describes a solution that has a lot of solute. One problem is that these terms are qualitative; they describe more or less but not exactly how much.
 
-In most cases, only a certain maximum amount of solute can be dissolved in a given amount of solvent. This maximum amount is called the solubility of the solute. It is usually expressed in terms of the amount of solute that can dissolve in 100 g of the solvent at a given temperature. Table 11.2.1 lists the solubilities of some simple ionic compounds. These solubilities vary widely: NaCl can dissolve up to 31.6 g per 100 g of H2O, while AgCl can dissolve only 0.00019 g per 100 g of H2O.
+In most cases, only a certain maximum amount of solute can be dissolved in a given amount of solvent. This maximum amount is called the solubility of the solute. It is usually expressed in terms of the amount of solute that can dissolve in 100 g of the solvent at a given temperature. Table 11.2.1 lists the solubilities of some simple ionic compounds. These solubilities vary widely: NaCl can dissolve up to 36.1 g per 100 g of H2O, while AgCl can dissolve only 0.00019 g per 100 g of H2O.
 
-[Note: reproduced as printed. Table 11.2.1 gives the solubility of NaCl as 36.1 g per 100 g of H2O, and the text below uses 36.1 g as well.]
+[Note: corrected; the source prints "NaCl can dissolve up to 31.6 g" where this reads "NaCl can dissolve up to 36.1 g". Table 11.2.1 gives the solubility of NaCl as 36.1 g per 100 g of H2O, and the text below uses 36.1 g as well.]
 
 Table 11.2.1: Solubilities of Some Ionic Compounds
 
@@ -49,9 +49,9 @@ Table 11.2.1: Solubilities of Some Ionic Compounds
 | NaCl | 36.1 |
 | NaNO3 | 94.6 |
 
-When the maximum amount of solute has been dissolved in a given amount of solvent, we say that the solution is saturated with solute. When less than the maximum amount of solute is dissolved in a given amount of solute, the solution is unsaturated. These terms are also qualitative terms because each solute has its own solubility. A solution of 0.00019 g of AgCl per 100 g of H2O may be saturated, but with so little solute dissolved, it is also rather dilute. A solution of 36.1 g of NaCl in 100 g of H2O is also saturated but rather concentrated. Ideally, we need more precise ways of specifying the amount of solute in a solution. We will introduce such ways in Section 11.3.
+When the maximum amount of solute has been dissolved in a given amount of solvent, we say that the solution is saturated with solute. When less than the maximum amount of solute is dissolved in a given amount of solvent, the solution is unsaturated. These terms are also qualitative terms because each solute has its own solubility. A solution of 0.00019 g of AgCl per 100 g of H2O may be saturated, but with so little solute dissolved, it is also rather dilute. A solution of 36.1 g of NaCl in 100 g of H2O is also saturated but rather concentrated. Ideally, we need more precise ways of specifying the amount of solute in a solution. We will introduce such ways in Section 11.3.
 
-[Note: reproduced as printed; "a given amount of solute" should read "a given amount of solvent".]
+[Note: corrected; the source prints "amount of solute, the solution is unsaturated" where this reads "amount of solvent, the solution is unsaturated". Solute dissolves in a given amount of solvent, as in the sentence before.]
 
 In some circumstances, it is possible to dissolve more than the maximum amount of a solute in a solution. Usually, this happens by heating the solvent, dissolving more solute than would normally dissolve at regular temperatures, and letting the solution cool down slowly and carefully. Such solutions are called supersaturated solutions and are not stable; given an opportunity (such as dropping a crystal of solute in the solution), the excess solute will precipitate from the solution.
 

@@ -84,6 +84,46 @@ def front_value(path, key):
     return None
 
 
+# A source error is corrected in the text, and the [Note: …] after the paragraph
+# records what the book printed, in this form (one or more per note):
+#   [Note: corrected; the source prints "Section 1.8" where this reads "Section 1.7". …]
+# A recorded string may itself contain quotes, so each one ends only where the
+# sentence goes on: at the next pair, the end of the sentence, or the note's end.
+CORRECTION = re.compile(r'the source prints "(.*?)" where this reads "(.*?)"(?=; the source prints |\. |\.?\]$)', re.S)
+
+
+def corrections(note):
+    """The (printed, corrected) pairs a note records."""
+    return CORRECTION.findall(note)
+
+
+def correct(paragraph, pairs):
+    """Apply (printed, corrected) pairs to a paragraph as the converter wrote it."""
+    for printed, fixed in pairs:
+        paragraph = paragraph.replace(printed, fixed, 1)
+    return paragraph
+
+
+def as_printed(paragraph, pairs):
+    """Undo (printed, corrected) pairs: the paragraph as the source printed it."""
+    for printed, fixed in pairs:
+        paragraph = paragraph.replace(fixed, printed, 1)
+    return paragraph
+
+
+def printed_paragraphs(body):
+    """The body's text paragraphs as the source printed them: notes dropped, and
+    each correction a note records undone. This is what lt2md.py produces."""
+    out = []
+    for paragraph in body.strip().split("\n\n") if body.strip() else []:
+        if paragraph.startswith("[Note:"):
+            if out:
+                out[-1] = as_printed(out[-1], corrections(paragraph))
+        else:
+            out.append(paragraph)
+    return out
+
+
 def convert(section):
     """Run lt2md.py on the section's downloaded page; return its markdown."""
     if not section.raw.exists():

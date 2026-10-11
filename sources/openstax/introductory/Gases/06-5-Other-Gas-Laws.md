@@ -26,9 +26,9 @@ Note that it has a structure very similar to that of Charles's law, only with di
 
 (V_{1} / n_{1}) = (V_{2} / n_{2})
 
-at constant V and T.
+at constant P and T.
 
-[Note: reproduced as printed, but V is one of the law's own variables: Avogadro's law holds at constant pressure and temperature, P and T.]
+[Note: corrected; the source prints "constant V and T" where this reads "constant P and T". V is one of the law's own variables: Avogadro's law holds at constant pressure and temperature.]
 
 (First announced in 1811, it was Avogadro's proposal that volume is related to the number of particles that eventually led to naming the number of things in a mole as Avogadro's number.) Avogadro's law is useful because for the first time we are seeing amount, in terms of the number of moles, as a variable in a gas law.
 

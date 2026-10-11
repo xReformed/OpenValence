@@ -14,8 +14,8 @@ Recall that the active component of a classic acid is the H^+ ion, while the act
 In fact, bases are more potentially dangerous than acids because it is much easier for an OH^− ion to rip off an H^+ ion from surrounding matter than it is for an H^+ ion to rip off an OH^− ion. Certain household chemicals, such as some brands of cleaner, can be very concentrated bases, which makes them among the most potentially hazardous substances found around the home. If spilled on the skin, these strong caustic compounds can immediately remove H^+ ions from the flesh, resulting in chemical burns. Compare this to the fact that we occasionally purposefully ingest substances such as citrus fruits, vinegar, and wine—all of which contain acids. (Of course, some parts of the body, such as the eyes, are extremely sensitive to acids as well as bases.) It seems that our bodies are more capable of dealing with acids than with bases.
 
 Figure 12.1.1: Household chemicals © Thinkstock. On the left is a common acid, and on the right is a common base. Which one is more potentially hazardous?
-A bottle of rosemary & grapes and a bottle of NH2 (aq).
+A bottle of rosemary & grapes and a bottle of NH3 (aq).
 
-[Note: reproduced as printed. Ammonia is NH3, so "NH2 (aq)" presumably means household ammonia, NH3(aq).]
+[Note: corrected; the source prints "NH2 (aq)" where this reads "NH3 (aq)". Ammonia is NH3; the common base on the right is household ammonia, NH3(aq).]
 
 A note to all of the villains out there...get your chemistry right if you want to be successful!

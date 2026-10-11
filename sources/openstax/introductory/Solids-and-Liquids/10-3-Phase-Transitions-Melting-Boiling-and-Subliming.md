@@ -57,7 +57,9 @@ The phase change between a liquid and a gas has some similarities to the phase c
 
 Like the solid/liquid phase change, the liquid/gas phase change involves energy. The amount of energy required to convert a liquid to a gas is called the enthalpy of vaporization (or heat of vaporization), represented as ΔH_vap. Some ΔH_vap values are listed in Table 10.3.2; it is assumed that these values are for the normal boiling point temperature of the substance, which is also given in the table. The unit for ΔH_vap is also kilojoules per mole, so we need to know the quantity of material to know how much energy is involved. The ΔH_vap is also always tabulated as a positive number. It can be used for both the boiling and the condensation processes as long as you keep in mind that boiling is always endothermic (so ΔH will be positive), while condensation is always exothermic (so ΔH will be negative).
 
-Table 10.3.1: Enthalpies of Vaporization for Various Substances
+Table 10.3.2: Enthalpies of Vaporization for Various Substances
+
+[Note: corrected; the source prints "Table 10.3.1" where this reads "Table 10.3.2". The source gives this table the same number as the enthalpies-of-fusion table above; the text refers to it as Table 10.3.2.]
 
 | Substance (Normal Boiling Point) | ΔH_vap (kJ/mol) |
 | --- | --- |
@@ -66,8 +68,6 @@ Table 10.3.1: Enthalpies of Vaporization for Various Substances
 | Benzene (80.1°C) | 30.8 |
 | Ethanol (78.3°C) | 38.6 |
 | Mercury (357°C) | 59.23 |
-
-[Note: the source captions this table "Table 10.3.1", the same number as the enthalpies-of-fusion table above; the text refers to it as Table 10.3.2.]
 
 ### Example 10.3.2
 
@@ -91,9 +91,9 @@ What is the energy change when 822 g of C2H5OH(ℓ) boil at its normal boiling p
 
 As with melting, the energy in boiling goes exclusively to changing the phase of a substance; it does not go into changing the temperature of a substance. So boiling is also an isothermal process. Only when all of a substance has boiled does any additional energy go to changing its temperature.
 
-What happens when a liquid becomes a gas? We have already established that a liquid is composed of particles in contact with each other. When a liquid becomes a gas, the particles separate from each other, with each particle going its own way in space. This is how gases tend to fill their containers. Indeed, in the gas phase most of the volume is empty space; only about 1/1,000th of the volume is actually taken up by matter (Figure 10.3.1). It is this property of gases that explains why they can be compressed, a fact that is considered in Chapter 6.
+What happens when a liquid becomes a gas? We have already established that a liquid is composed of particles in contact with each other. When a liquid becomes a gas, the particles separate from each other, with each particle going its own way in space. This is how gases tend to fill their containers. Indeed, in the gas phase most of the volume is empty space; only about 1/1,000th of the volume is actually taken up by matter (Figure 10.3.2). It is this property of gases that explains why they can be compressed, a fact that is considered in Chapter 6.
 
-[Note: reproduced as printed. Figure 10.3.1 shows liquids and gravity; the view of gas-phase particles described here is Figure 10.3.2.]
+[Note: corrected; the source prints "(Figure 10.3.1)" where this reads "(Figure 10.3.2)". Figure 10.3.1 shows liquids and gravity; the view of gas-phase particles described here is Figure 10.3.2.]
 
 Figure 10.3.2: Sub-microscopic view of the diatomic molecules of the element bromine (a) in the gaseous state (above 58°C); (b) in liquid form (between -7.2 and 58.8°C); and (c) in solid form (below -7.2°C). As a solid, the molecules are fixed, but fluctuate. As a liquid, the molecules are in contact but are also able to move around each other. As a gas, most of the volume is actually empty space. The particles are not to scale; in reality, the dots representing the particles would be about 1/100th of the size depicted.
 The molecules are tightly backed together and cannot move freely, but vibrate.

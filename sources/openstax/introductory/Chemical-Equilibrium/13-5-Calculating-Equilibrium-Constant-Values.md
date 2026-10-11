@@ -75,9 +75,9 @@ Sometimes when an ICE chart is set up and the K_eq expression is constructed, a 
 
 x = (−b±√(b^2 − 4ac))/(2a)
 
-One value of x is the + sign used in the numerator, and the other value of x is the − sign used in the numerator. In this case, one value of x typically makes no sense as an answer and can be discarded as physically impossible, leaving only one possible value and the resulting set of concentrations. Example 9 illustrates this.
+One value of x is the + sign used in the numerator, and the other value of x is the − sign used in the numerator. In this case, one value of x typically makes no sense as an answer and can be discarded as physically impossible, leaving only one possible value and the resulting set of concentrations. Example 13.5.1 illustrates this.
 
-[Note: "Example 9" is the numbering of an earlier edition; the example meant is Example 13.5.1, which follows.]
+[Note: corrected; the source prints "Example 9 illustrates" where this reads "Example 13.5.1 illustrates". The source uses the numbering of an earlier edition; the example meant is the one that follows.]
 
 ### Example 13.5.1
 

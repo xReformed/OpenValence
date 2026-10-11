@@ -17,9 +17,9 @@ In Chapter 2, we also introduced the notation for succinctly representing an iso
 
 ¹²₆C
 
-The element in this example, represented by the symbol C, is carbon. Its atomic number, 6, is the subscript next to the symbol and is the number of protons in the atom. The mass number, the superscript next to the symbol, is the sum of the number of protons and neutrons in the nucleus of this particular isotope. In this case, the mass number is 12, which means that the number of neutrons in the atom is 12 − 6 = 6 (that is, the mass number of the atom minus the number of protons in the nucleus equals the number of neurons). Occasionally, the atomic number is omitted in this notation because the symbol of the element itself conveys its characteristic atomic number. The two isotopes of hydrogen—^2H and ^3H—are given their own names and symbols: deuterium (D) and tritium (T), respectively.
+The element in this example, represented by the symbol C, is carbon. Its atomic number, 6, is the subscript next to the symbol and is the number of protons in the atom. The mass number, the superscript next to the symbol, is the sum of the number of protons and neutrons in the nucleus of this particular isotope. In this case, the mass number is 12, which means that the number of neutrons in the atom is 12 − 6 = 6 (that is, the mass number of the atom minus the number of protons in the nucleus equals the number of neutrons). Occasionally, the atomic number is omitted in this notation because the symbol of the element itself conveys its characteristic atomic number. The two isotopes of hydrogen—^2H and ^3H—are given their own names and symbols: deuterium (D) and tritium (T), respectively.
 
-[Note: reproduced as printed; "neurons" should read "neutrons".]
+[Note: corrected; the source prints "number of neurons)" where this reads "number of neutrons)". Typo for neutrons.]
 
 Atomic theory in the nineteenth century presumed that nuclei had fixed compositions. But in 1896, the French scientist Henri Becquerel found that a uranium compound placed near a photographic plate made an image on the plate, even if the compound was wrapped in black cloth. He reasoned that the uranium compound was emitting some kind of radiation that passed through the cloth to expose the photographic plate. Further investigations showed that the radiation was a combination of particles and electromagnetic rays, with its ultimate source being the atomic nucleus. These emanations were ultimately called, collectively, radioactivity.
 
@@ -31,9 +31,9 @@ to represent an alpha particle. It has a 2+ charge. When a radioactive atom emit
 
 ²³⁵₉₂U → ⁴₂He + ²³¹₉₀Th
 
-Rather than calling this equation a chemical equation, we call it a nuclear equation to emphasize that the change occurs in an atomic nucleus. How do we know that a product of this reaction is ⁹⁰₂₃₁T? We use the law of conservation of matter, which says that matter cannot be created or destroyed. This means that we must have the same number of protons and neutrons on both sides of the nuclear equation. If our uranium nucleus loses 2 protons, there are 90 protons remaining, identifying the element as thorium. Moreover, if we lose four nuclear particles of the original 235, there are 231 remaining. So we use subtraction to identify the isotope of the Th atom—in this case,
+Rather than calling this equation a chemical equation, we call it a nuclear equation to emphasize that the change occurs in an atomic nucleus. How do we know that a product of this reaction is ²³¹₉₀Th? We use the law of conservation of matter, which says that matter cannot be created or destroyed. This means that we must have the same number of protons and neutrons on both sides of the nuclear equation. If our uranium nucleus loses 2 protons, there are 90 protons remaining, identifying the element as thorium. Moreover, if we lose four nuclear particles of the original 235, there are 231 remaining. So we use subtraction to identify the isotope of the Th atom—in this case,
 
-[Note: the source's markup for this symbol is broken: it shows the two numbers swapped and the symbol cut short. The daughter isotope is ²³¹₉₀Th, as in the equations above and below.]
+[Note: corrected; the source prints "⁹⁰₂₃₁T?" where this reads "²³¹₉₀Th?". The source's markup for this symbol is broken, with the two numbers swapped and the symbol cut short; the daughter isotope is thorium-231, as in the equations above and below.]
 
 ²³¹₉₀Th
 
@@ -53,9 +53,9 @@ We represent the alpha particle as
 
 Use subtraction (222 − 4 = 218 and 86 − 2 = 84) to identify the daughter isotope as polonium:
 
-²²²₈₆Rn → ⁴₂He + ²¹⁸₈₄Th
+²²²₈₆Rn → ⁴₂He + ²¹⁸₈₄Po
 
-[Note: reproduced as printed; the daughter isotope is polonium, as the line above says: ²¹⁸₈₄Po, not Th.]
+[Note: corrected; the source prints "²¹⁸₈₄Th" where this reads "²¹⁸₈₄Po". The daughter isotope is polonium, as the line above says.]
 
 ### Exercise 15.2.2
 
@@ -63,15 +63,15 @@ Write the nuclear equation that represents radioactive decay of polonium-208 by 
 
 **Answer**
 
-²⁰⁸₈₀Po → ⁴₂He + ²⁰⁴₈₂Pb
+²⁰⁸₈₄Po → ⁴₂He + ²⁰⁴₈₂Pb
 
-[Note: reproduced as printed; polonium's atomic number is 84, so the parent is ²⁰⁸₈₄Po (84 − 2 = 82 for the lead daughter).]
+[Note: corrected; the source prints "²⁰⁸₈₀Po" where this reads "²⁰⁸₈₄Po". Polonium's atomic number is 84 (84 − 2 = 82 for the lead daughter).]
 
 ²⁰⁴₈₂Pb
 
-The second major type of radioactive emission is called a beta particle, symbolized by the Greek letter β. A beta particle is an electron ejected from the nucleus (not from the shells of electrons about the nucleus) and has a 1− charge. We can also represent a beta particle as e−10. The net effect of beta particle emission on a nucleus is that a neutron is converted to a proton. The overall mass number stays the same, but because the number of protons increases by one, the atomic number goes up by one. Carbon-14 decays by emitting a beta particle:
+The second major type of radioactive emission is called a beta particle, symbolized by the Greek letter β. A beta particle is an electron ejected from the nucleus (not from the shells of electrons about the nucleus) and has a 1− charge. We can also represent a beta particle as ⁰₋₁e. The net effect of beta particle emission on a nucleus is that a neutron is converted to a proton. The overall mass number stays the same, but because the number of protons increases by one, the atomic number goes up by one. Carbon-14 decays by emitting a beta particle:
 
-[Note: the source's markup for this symbol is broken, which leaves "e−10"; the beta particle is written ⁰₋₁e, as in the equation below.]
+[Note: corrected; the source prints "a beta particle as e−10." where this reads "a beta particle as ⁰₋₁e.". The source's markup for this symbol is broken; the beta particle is written as in the equation below.]
 
 ¹⁴₆C → ¹⁴₇N + ⁰₋₁e
 
@@ -119,19 +119,19 @@ Table 15.2.1 The Three Main Forms of Radioactive Emissions
 
 | Characteristic | Alpha Particles | Beta Particles | Gamma Rays |
 | --- | --- | --- | --- |
-| symbols | α, ⁴₂H | β⁰₋₁e | γ |
+| symbols | α, ⁴₂He | β⁰₋₁e | γ |
 | identity | helium nucleus | electron | electromagnetic radiation |
 | charge | 2+ | 1− | none |
 | mass number | 4 | 0 | 0 |
 | penetrating power | minimal (will not penetrate skin) | short (will penetrate skin and some tissues slightly) | deep (will penetrate tissues deeply) |
 
-[Note: reproduced as printed; the alpha particle's symbol is ⁴₂He, not ⁴₂H.]
+[Note: corrected; the source prints "| α, ⁴₂H |" where this reads "| α, ⁴₂He |". The alpha particle is a helium nucleus.]
 
 Occasionally, an atomic nucleus breaks apart into smaller pieces in a radioactive process called spontaneous fission (or fission). Typically, the daughter isotopes produced by fission are a varied mix of products, rather than a specific isotope as with alpha and beta particle emission. Often, fission produces excess neutrons that will sometimes be captured by other nuclei, possibly inducing additional radioactive events. Uranium-235 undergoes spontaneous fission to a small extent. One typical reaction is
 
-²³⁵₉₂Tc → ¹³⁹₅₆Ba + ⁹⁴₃₆Kr + 2 ¹₀n
+²³⁵₉₂U → ¹³⁹₅₆Ba + ⁹⁴₃₆Kr + 2 ¹₀n
 
-[Note: reproduced as printed; the parent is uranium-235, ²³⁵₉₂U, not Tc.]
+[Note: corrected; the source prints "²³⁵₉₂Tc →" where this reads "²³⁵₉₂U →". The parent is uranium-235, as the sentence above says.]
 
 where ¹₀n is a neutron. As with any nuclear process, the sums of the atomic numbers and mass numbers must be the same on both sides of the equation. Spontaneous fission is found only in large nuclei. The smallest nucleus that exhibits spontaneous fission is lead-208. (Fission is the radioactive process used in nuclear power plants and one type of nuclear bomb.)
 

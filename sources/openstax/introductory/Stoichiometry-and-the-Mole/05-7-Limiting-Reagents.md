@@ -38,9 +38,9 @@ Comparing these two answers, it is clear that 0.334 mol of As2O3 is less than 1.
 
 Identifying the limiting reagent, then, is straightforward. However, there are usually two associated questions: (1) what mass of product (or products) is then actually formed? and (2) what mass of what reactant is left over? The first question is straightforward to answer: simply perform a conversion from the number of moles of product formed to its mass, using its molar mass. For As2O3, the molar mass is 197.84 g/mol; knowing that we will form 0.334 mol of As2O3 under the given conditions, we will get
 
-0.334mol As2O3 × (197.84 g As2 / 1 mol As2O3) = 66.1 g As2O3
+0.334mol As2O3 × (197.84 g As2O3 / 1 mol As2O3) = 66.1 g As2O3
 
-[Note: reproduced as printed; the molar mass's unit should read g As2O3.]
+[Note: corrected; the source prints "197.84 g As2 /" where this reads "197.84 g As2O3 /". The molar mass's unit is grams of As2O3.]
 
 The second question is somewhat more convoluted to answer. First, we must do a mass-mass calculation relating the limiting reagent (here, As) to the other reagent (O2). Once we determine the mass of O2 that reacted, we subtract that from the original amount to determine the amount left over. According to the mass-mass calculation,
 
@@ -70,9 +70,9 @@ Because the question asks what mass of magnesium is formed, we can perform two m
 
 The 0.711 g of Mg is the lesser quantity, so the associated reactant—5.00 g of Rb—is the limiting reagent. To determine how much of the other reactant is left, we have to do one more mass-mass calculation to determine what mass of MgCl2 reacted with the 5.00 g of Rb, and then subtract the amount reacted from the original amount.
 
-5.00g Rb × (1mol Rb / 85.47g Rb) × (1mol MgCl2 / 2mol Rb) × (95.21 g Mg / 1 mol MgCl2) = 2.78 g MgCl2 reacted
+5.00g Rb × (1mol Rb / 85.47g Rb) × (1mol MgCl2 / 2mol Rb) × (95.21 g MgCl2 / 1 mol MgCl2) = 2.78 g MgCl2 reacted
 
-[Note: reproduced as printed; the molar mass's unit should read g MgCl2.]
+[Note: corrected; the source prints "95.21 g Mg /" where this reads "95.21 g MgCl2 /". The molar mass's unit is grams of MgCl2.]
 
 Because we started with 3.44 g of MgCl2, we have
 

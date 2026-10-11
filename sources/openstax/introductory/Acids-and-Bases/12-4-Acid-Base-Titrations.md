@@ -34,9 +34,9 @@ So we can construct a conversion factor to convert to number of moles of NaOH re
 
 Then we convert this amount to mass, using the molar mass of NaOH (40.00 g/mol):
 
-0.002766 ~~mol HCl~~ × (40.00 g NaOH)/(1 ~~mol HCl~~) = 0.1106 g NaOH
+0.002766 ~~mol NaOH~~ × (40.00 g NaOH)/(1 ~~mol NaOH~~) = 0.1106 g NaOH
 
-[Note: reproduced as printed. This step should start from the moles of NaOH found in the step before: 0.002766 mol NaOH × (40.00 g NaOH)/(1 mol NaOH) = 0.1106 g NaOH.]
+[Note: corrected; the source prints "0.002766 ~~mol HCl~~" where this reads "0.002766 ~~mol NaOH~~"; the source prints "(1 ~~mol HCl~~)" where this reads "(1 ~~mol NaOH~~)". This step starts from the moles of NaOH found in the step before and uses the molar mass of NaOH.]
 
 This type of calculation is performed as part of a titration.
 

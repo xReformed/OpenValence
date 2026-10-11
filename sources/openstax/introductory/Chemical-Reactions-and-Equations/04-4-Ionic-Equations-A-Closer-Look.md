@@ -114,9 +114,9 @@ Br^−(aq) + Ag^+(aq) → AgBr(s)
 
 1. In the second equation, the Mg^2+(aq) and NO3^−(aq) ions are spectator ions, so they are canceled:
 
-Mg^2+(aq) + SO4^2−(aq) + Ba^2+(aq) + 2NO3^−(aq) → Mg^2+(aq) + 2NO3^−(aq) + BaSo4(s)
+Mg^2+(aq) + SO4^2−(aq) + Ba^2+(aq) + 2NO3^−(aq) → Mg^2+(aq) + 2NO3^−(aq) + BaSO4(s)
 
-[Note: reproduced as printed; barium sulfate is BaSO4.]
+[Note: corrected; the source prints "BaSo4(s)" where this reads "BaSO4(s)". Barium sulfate is BaSO4.]
 
 The net ionic equation is
 

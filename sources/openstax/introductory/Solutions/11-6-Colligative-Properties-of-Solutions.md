@@ -67,9 +67,9 @@ A solution is made by mixing 12.0 g of C10H8 in 45.0 g of C6H6. If the vapor pre
 
 **Solution**
 
-This is the same solution that was in Example 15, but here we need the mole fraction of C6H6. The number of moles of C10H8 is as follows:
+This is the same solution that was in Example 11.6.1, but here we need the mole fraction of C6H6. The number of moles of C10H8 is as follows:
 
-[Note: "Example 15" is the numbering of an earlier edition; the solution meant is the one in Example 11.6.1.]
+[Note: corrected; the source prints "was in Example 15," where this reads "was in Example 11.6.1,". The source uses an earlier edition's numbering; the solution meant is the one in Example 11.6.1.]
 
 12.0 g C10H8 × (1 mol C10H8)/(128.10 g C10H8) = 0.0936 mol C10H8
 
@@ -83,9 +83,9 @@ So the total number of moles is
 
 Now we can calculate the mole fraction of C6H6:
 
-χ_C10H8 = (0.576 mol)/(0.670 mol) = 0.860
+χ_C6H6 = (0.576 mol)/(0.670 mol) = 0.860
 
-[Note: reproduced as printed. This is the mole fraction of C6H6, not C10H8: the 0.576 mol is the benzene, and the mole fraction of C10H8 was 0.140.]
+[Note: corrected; the source prints "χ_C10H8 = (0.576 mol)" where this reads "χ_C6H6 = (0.576 mol)". This is the mole fraction of C6H6, not C10H8: the 0.576 mol is the benzene, and the mole fraction of C10H8 was 0.140.]
 
 (The mole fraction of C10H8 calculated in Example 11.6.1 plus the mole fraction of C6H6 equals 1, which is mathematically required by the definition of mole fraction.) Now we can use Raoult's law to determine the vapor pressure in equilibrium with the solution:
 

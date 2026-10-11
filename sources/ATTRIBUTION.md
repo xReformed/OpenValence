@@ -14,7 +14,11 @@ LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Its
 licence is NonCommercial and ShareAlike.
 
 `openstax/orgchem/` has one folder per chapter (1–31) and one file per
-section. Chapter 1 (Structure and Bonding) is transcribed; the other chapters
+section. Chapters 1–9 (Structure and Bonding; Polar Covalent Bonds, Acids and
+Bases; Alkanes and Their Stereochemistry; Cycloalkanes and Their
+Stereochemistry; Stereochemistry at Tetrahedral Centers; An Overview of Organic
+Reactions; Alkenes: Structure and Reactivity; Alkenes: Reactions and Synthesis;
+Alkynes: An Introduction to Organic Synthesis) are transcribed; the other chapters
 are still stubs with front matter only. The
 "Additional Problems" pages (end-of-chapter exercises) are left out, as are
 the front matter, appendix and back matter. It is NonCommercial and ShareAlike

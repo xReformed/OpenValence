@@ -67,13 +67,15 @@ Table with two columns and four rows. The first (left) column is labeled "If ℓ
 
 The next quantum number is called the magnetic quantum number (mℓ). For any value of ℓ, there are 2ℓ + 1 possible values of mℓ, ranging from −ℓ to ℓ:
 
-−ℓ < mℓ < ℓ
+−ℓ ≤ mℓ ≤ ℓ
+
+[Note: corrected; the source prints "−ℓ < mℓ < ℓ" where this reads "−ℓ ≤ mℓ ≤ ℓ". The sentence above says mℓ ranges from −ℓ to ℓ, and the table below includes both endpoints (for ℓ = 1, mℓ can be −1, 0, or 1), so the signs are ≤, not < (strictly less than).]
 
 or
 
-|mℓ| < ℓ
+|mℓ| ≤ ℓ
 
-[Note: both inequalities are reproduced as printed, with < (strictly less than). The sentence above says mℓ ranges from −ℓ to ℓ, and the table below includes both endpoints (for ℓ = 1, mℓ can be −1, 0, or 1), so the signs should be ≤: −ℓ ≤ mℓ ≤ ℓ, or |mℓ| ≤ ℓ.]
+[Note: corrected; the source prints "|mℓ| < ℓ" where this reads "|mℓ| ≤ ℓ". As in the inequality above, both endpoints are allowed, so the sign is ≤, not < (strictly less than).]
 
 The following explicitly lists the possible values of mℓ for the possible values of ℓ:
 

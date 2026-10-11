@@ -137,7 +137,7 @@ Figure 16.7.2: The DNA in our cells is a polymer of nucleotides, each of which i
 
 1. A polymer is many monomers bonded together.
 2.
-3. [Image: Alternating repeating units of C and C(CH3).]
+3. [Image: Alternating repeating units of C and C(C2H5).]
 4.
 5. In an addition polymer, no small molecule is given off as a product; whereas in a condensation polymer, small parts of each monomer come off as a small molecule.
 6.
@@ -149,4 +149,4 @@ Figure 16.7.2: The DNA in our cells is a polymer of nucleotides, each of which i
 12.
 13. Proteins are polymers of amino acids, which act as the monomers.
 
-[Note: in answer 3 the description reads C(CH3), but the monomer in Exercise 3 carries an ethyl group, CH(C2H5), so the polymer's side groups are C2H5.]
+[Note: corrected; the source prints "C and C(CH3)." where this reads "C and C(C2H5).". The monomer in Exercise 3 carries an ethyl group, CH(C2H5), so the polymer's side groups are C2H5.]

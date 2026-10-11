@@ -31,15 +31,17 @@ Na ·↷·C̤̈l :
 
 resulting in two ions—the Na^+ ion and the Cl^− ion:
 
-Na ·^+    :C̤̈l :^−
+Na^+    :C̤̈l :^−
+
+[Note: corrected; the source prints "Na ·^+    :" where this reads "Na^+    :". The electron has just transferred to Cl, and Section 9.2 draws Na^+ with no dots, so the ion is written without its former valence dot.]
 
 [Ne]    [Ne]3s^2 3p^6
 
-[Note: the Na^+ ion is reproduced as printed, with its single dot still in place (Na·^+). The electron has just transferred to Cl, and Section 9.2 draws Na^+ with no dots, so the ion should be written Na^+ without the dot. The same drawing appears in the equation below.]
-
 Both species now have complete octets, and the electron shells are energetically stable. From basic physics, we know that opposite charges attract. This is what happens to the Na^+ and Cl^− ions:
 
-Na ·^+ + :C̤̈l :^− → Na^+Cl^− or NaCl
+Na^+ + :C̤̈l :^− → Na^+Cl^− or NaCl
+
+[Note: corrected; the source prints "Na ·^+ + :" where this reads "Na^+ + :". As in the drawing above, the Na^+ ion has lost its valence electron, so it is written without the dot.]
 
 where we have written the final formula (the formula for sodium chloride) as per the convention for ionic compounds, without listing the charges explicitly. The attraction between oppositely charged ions is called an ionic bond, and it is one of the main types of chemical bonds in chemistry. Ionic bonds are caused by electrons transferring from one atom to another.
 
@@ -49,9 +51,9 @@ In electron transfer, the number of electrons lost must equal the number of elec
 
 The two ions each have octets as their valence shell, and the two oppositely charged particles attract, making an ionic bond:
 
-Mg^2+ + :Ö̤ :^2−    Mg^2+O^2− or MgO
+Mg^2+ + :Ö̤ :^2− → Mg^2+O^2− or MgO
 
-[Note: reproduced as printed; the equation has no arrow between the ions and the product. The NaCl equation above uses →, and one belongs here as well.]
+[Note: corrected; the source prints ":^2−    Mg^2+O^2−" where this reads ":^2− → Mg^2+O^2−". The equation lacked an arrow between the ions and the product; the NaCl equation above uses →, and one belongs here as well.]
 
 Remember, in the final formula for the ionic compound, we do not write the charges on the ions.
 

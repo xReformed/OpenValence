@@ -76,15 +76,19 @@ We are not given the number of moles of Hg directly, but we are given a mass. We
 
 Pressure is given in units of millimeters of mercury. We can either convert this to atmospheres or use the value of the ideal gas constant that includes the mmHg unit. We will take the second option. Substituting into the ideal gas law,
 
-(0.00332 mm Hg)(435 L) = (1.65 × 10^−5 mol)(62.36 (L.mmHg / mol.K))T
+(0.00120 mm Hg)(435 L) = (1.65 × 10^−5 mol)(62.36 (L.mmHg / mol.K))T
+
+[Note: corrected; the source prints "(0.00332 mm Hg)" where this reads "(0.00120 mm Hg)". The solution put the mass, 0.00332 g, where the pressure, 0.00120 mmHg, belongs; with the pressure, T = (0.00120)(435) / ((1.65 × 10^−5)(62.36)) K ≈ 507 K.]
 
 The mmHg, L, and mol units cancel, leaving the K unit, the unit of temperature. Isolating _T_ on one side, we get
 
-T = ((0.00332)(435) / (1.65 × 10^−5)(62.36))K
+T = ((0.00120)(435) / (1.65 × 10^−5)(62.36))K
 
-Then solving for K, we get _T_ = 1,404 K.
+[Note: corrected; the source prints "((0.00332)(435)" where this reads "((0.00120)(435)". The pressure, 0.00120 mmHg, belongs here, not the mass, 0.00332 g.]
 
-[Note: reproduced as printed, but the solution puts the mass, 0.00332, where the pressure, 0.00120 mmHg, belongs. With the pressure, T = (0.00120)(435) / ((1.65 × 10^−5)(62.36)) K ≈ 507 K.]
+Then solving for K, we get _T_ = 507 K.
+
+[Note: corrected; the source prints "_T_ = 1,404 K" where this reads "_T_ = 507 K". With the pressure, 0.00120 mmHg, in place of the mass, T = (0.00120)(435) / ((1.65 × 10^−5)(62.36)) K ≈ 507 K.]
 
 ### Exercise 6.6.2
 
@@ -124,9 +128,9 @@ H2(g) + Cl2(g) → 2HCl(g)
 
 0.796 atm
 
-It should be obvious by now that some physical properties of gases depend strongly on the conditions. What we need is a set of standard conditions so that properties of gases can be properly compared to each other. Standard Temperature and Pressure (STP) is defined as exactly 100 kPa of pressure (0.986 atm) and 273 K (0°C). For simplicity, we will use 1 atm as standard pressure. Defining STP allows us to more directly compare the properties of gases that differ from one another.
+It should be obvious by now that some physical properties of gases depend strongly on the conditions. What we need is a set of standard conditions so that properties of gases can be properly compared to each other. Standard Temperature and Pressure (STP) is defined as exactly 100 kPa of pressure (0.987 atm) and 273 K (0°C). For simplicity, we will use 1 atm as standard pressure. Defining STP allows us to more directly compare the properties of gases that differ from one another.
 
-[Note: reproduced as printed; 100 kPa is 0.987 atm.]
+[Note: corrected; the source prints "(0.986 atm)" where this reads "(0.987 atm)". 100 kPa / 101.325 kPa/atm = 0.98692 atm, which rounds to 0.987 atm.]
 
 One property shared among gases is a molar volume. The molar volume is the volume of 1 mol of a gas. At STP, the molar volume of a gas can be easily determined by using the ideal gas law:
 
@@ -134,9 +138,9 @@ One property shared among gases is a molar volume. The molar volume is the volum
 
 All the units cancel except for L, the unit of volume. So _V_ = 22.4 L
 
-Note that we have not specified the identity of the gas; we have specified only that the pressure is 1 atm and the temperature is 273 K. This makes for a very useful approximation: _any gas at STP has a volume of 22.4 L per mole of gas_; that is, the molar volume at STP is 22.4 L/mol (Figure 6.6.1). This molar volume makes a useful conversion factor in stoichiometry problems if the conditions are at STP. If the conditions are not at STP, a molar volume of 22.4 L/mol is not applicable. However, if the conditions are at STP, the combined gas law can be used to calculate what the volume of the gas would be if at STP; then the 22.4 L/mol molar volume can be used.
+Note that we have not specified the identity of the gas; we have specified only that the pressure is 1 atm and the temperature is 273 K. This makes for a very useful approximation: _any gas at STP has a volume of 22.4 L per mole of gas_; that is, the molar volume at STP is 22.4 L/mol (Figure 6.6.1). This molar volume makes a useful conversion factor in stoichiometry problems if the conditions are at STP. If the conditions are not at STP, a molar volume of 22.4 L/mol is not applicable. However, if the conditions are not at STP, the combined gas law can be used to calculate what the volume of the gas would be if at STP; then the 22.4 L/mol molar volume can be used.
 
-[Note: reproduced as printed, but the last sentence means "not at STP": the combined gas law converts a volume measured under other conditions to its volume at STP, where 22.4 L/mol applies.]
+[Note: corrected; the source prints "However, if the conditions are at STP" where this reads "However, if the conditions are not at STP". The combined gas law converts a volume measured under other conditions to its volume at STP, where 22.4 L/mol applies.]
 
 Figure 6.6.1: Molar Volume. A mole of gas at STP occupies 22.4 L, the volume of a cube that is 28.2 cm on a side.
 22.4 liters of gas at STP are shown in a cube with a side length of 28.2 cm.

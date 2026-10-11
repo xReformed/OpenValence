@@ -63,9 +63,9 @@ Revised equations to calculate the effect of ionization are then easily produced
 
 ΔT_b = imK_b
 
-ΔT_f = imK_g
+ΔT_f = imK_f
 
-[Note: reproduced as printed; Kg should be Kf, the freezing point depression constant.]
+[Note: corrected; the source prints "imK_g" where this reads "imK_f". The constant is K_f, the freezing point depression constant.]
 
 Π = iMRT
 
@@ -116,6 +116,6 @@ So why do people add some salt to boiling water? There are several possible reas
 
 ## Summary
 
-For ionic solutes, the calculation of colligative properties must include the fact that the solutes separate into multiple particles when they dissolve. The equations for calculating colligative properties of solutions of ionic solvents include the van 't Hoff factor, i.
+For ionic solutes, the calculation of colligative properties must include the fact that the solutes separate into multiple particles when they dissolve. The equations for calculating colligative properties of solutions of ionic solutes include the van 't Hoff factor, i.
 
-[Note: reproduced as printed; "ionic solvents" should read "ionic solutes".]
+[Note: corrected; the source prints "solutions of ionic solvents" where this reads "solutions of ionic solutes". The equations concern ionic solutes, as the first sentence says.]

@@ -27,8 +27,8 @@ import beginningChemistry_2_4_image_5 from "../assets/figures/beginning-chemistr
 import beginningChemistry_2_4_1 from "../assets/figures/beginning-chemistry/2.4.1.webp";
 import beginningChemistry_2_4_2 from "../assets/figures/beginning-chemistry/2.4.2.webp";
 import beginningChemistry_3_1_image_1 from "../assets/figures/beginning-chemistry/3.1-image-1.webp";
-import beginningChemistry_3_2_1_a_simple_periodic_table from "../assets/figures/beginning-chemistry/3.2.1-a-simple-periodic-table.webp";
 import beginningChemistry_3_2_1_the_structure_of_the_atom from "../assets/figures/beginning-chemistry/3.2.1-the-structure-of-the-atom.webp";
+import beginningChemistry_3_2_2_a_simple_periodic_table from "../assets/figures/beginning-chemistry/3.2.2-a-simple-periodic-table.webp";
 import beginningChemistry_3_3_1 from "../assets/figures/beginning-chemistry/3.3.1.webp";
 import beginningChemistry_3_4_2 from "../assets/figures/beginning-chemistry/3.4.2.webp";
 import beginningChemistry_3_5_1 from "../assets/figures/beginning-chemistry/3.5.1.webp";
@@ -143,8 +143,8 @@ export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>
     "2.4.1": { src: beginningChemistry_2_4_1, width: 1536, height: 1024 },
     "2.4.2": { src: beginningChemistry_2_4_2, width: 1774, height: 887 },
     "3.1-image-1": { src: beginningChemistry_3_1_image_1, width: 1158, height: 663 },
-    "3.2.1-a-simple-periodic-table": { src: beginningChemistry_3_2_1_a_simple_periodic_table, width: 1536, height: 1024 },
     "3.2.1-the-structure-of-the-atom": { src: beginningChemistry_3_2_1_the_structure_of_the_atom, width: 1448, height: 1086 },
+    "3.2.2-a-simple-periodic-table": { src: beginningChemistry_3_2_2_a_simple_periodic_table, width: 1536, height: 1024 },
     "3.3.1": { src: beginningChemistry_3_3_1, width: 1448, height: 1086 },
     "3.4.2": { src: beginningChemistry_3_4_2, width: 1774, height: 887 },
     "3.5.1": { src: beginningChemistry_3_5_1, width: 1448, height: 1086 },

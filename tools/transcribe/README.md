@@ -24,7 +24,7 @@ python tools/transcribe/fill.py $BOOK --preview
 # 4. Write the converted text into the empty section files
 python tools/transcribe/fill.py $BOOK
 
-# 5. Add a [Note: …] paragraph in the corpus file after anything the source gets wrong
+# 5. Correct anything the source gets wrong, with a [Note: …] after it recording what it printed (see Notes)
 
 # 6. Look for conversion leftovers
 python tools/transcribe/scan.py $BOOK
@@ -36,7 +36,15 @@ To do one chapter or one section, pass its folder or file instead of the book's.
 
 ## Notes
 
-Corrections are written straight into the corpus files: a paragraph starting `[Note:` directly after the paragraph it corrects. The tools treat them as part of the file. Whenever `fill.py` re-converts a section, it carries each note over after the same paragraph as before. If that paragraph's text has changed, the note goes in the nearest matching spot and `fill.py` prints it, so you can check its place.
+Corrections are written straight into the corpus files: a paragraph starting `[Note:` directly after the paragraph it concerns. Where the source is wrong and the right text is clear, fix the paragraph and record what the book printed in the note, in this form (one or more pairs):
+
+```text
+[Note: corrected; the source prints "Section 1.8" where this reads "Section 1.7". The book's cross-reference points one section ahead of these pages.]
+```
+
+Each `the source prints "X" where this reads "Y"` replaces the first X in the paragraph, so give X enough context to be unique. Where the right text isn't known (a lost image description, a missing passage), leave the paragraph as printed and just explain in the note.
+
+The tools treat notes as part of the file. Whenever `fill.py` re-converts a section, it carries each note over after the same paragraph as before and re-applies the corrections it records, so a fixed misprint never comes back; `regress.py` undoes them before comparing, so a corrected section still counts as identical to its conversion. If a paragraph's text has changed, the note goes in the nearest matching spot and `fill.py` prints it, so you can check its place.
 
 ## After changing lt2md.py
 

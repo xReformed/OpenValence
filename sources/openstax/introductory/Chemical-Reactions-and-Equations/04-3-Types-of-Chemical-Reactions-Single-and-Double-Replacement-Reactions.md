@@ -20,9 +20,9 @@ A single-replacement reaction is a chemical reaction in which one element is sub
 
 is an example of a single-replacement reaction. The hydrogen atoms in HCl are replaced by Zn atoms, and in the process a new element—hydrogen—is formed. Another example of a single-replacement reaction is
 
-2NaCl(aq) + F2(g) → 2NaF(s) + Cl2(g)
+2NaCl(aq) + F2(g) → 2NaF(aq) + Cl2(g)
 
-[Note: reproduced as printed, but NaF is a sodium compound, and by this section's own solubility rules (Table 4.3.1) all compounds of Na^+ are soluble, so it would be NaF(aq).]
+[Note: corrected; the source prints "2NaF(s)" where this reads "2NaF(aq)". NaF is a sodium compound, and by this section's own solubility rules (Table 4.3.1) all compounds of Na^+ are soluble.]
 
 Here the negatively charged ion changes from chloride to fluoride. A typical characteristic of a single-replacement reaction is that there is one element as a reactant and another element as a product.
 
@@ -149,9 +149,9 @@ Table 4.3.1: Some Useful Solubility Rules (soluble)
 | All compounds of Li^+, Na^+, K^+, Rb^+, Cs^+, and NH4^+ | None |
 | All compounds of NO3^− and C2H3O2^− | None |
 | Compounds of Cl^−, Br^−, I^− | Ag^+, Hg2^2+, Pb^2+ |
-| Compounds of SO4^2 | Hg2^2+, Pb^2+, Sr^2+, Ba^2+ |
+| Compounds of SO4^2− | Hg2^2+, Pb^2+, Sr^2+, Ba^2+ |
 
-[Note: reproduced as printed. The sulfate ion's charge is missing its minus sign: sulfate is SO4^2−.]
+[Note: corrected; the source prints "| Compounds of SO4^2 |" where this reads "| Compounds of SO4^2− |". The sulfate ion's charge was missing its minus sign.]
 
 Table 4.3.2: Some Useful Solubility Rules (insoluble)
 |  |  |

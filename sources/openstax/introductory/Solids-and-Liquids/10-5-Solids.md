@@ -14,9 +14,9 @@ license: "CC BY-NC-SA 3.0"
 
 [Note: reproduced as printed. The section describes five types: amorphous solids and four kinds of crystalline solid (ionic, molecular, covalent network, and metallic).]
 
-A solid is like a liquid in that particles are in contact with one another. Solids are unlike liquids in that the intermolecular forces are strong enough to hold the particles in place. At low enough temperatures, all substances are solids (helium is the lone exception), but the temperature at which the solid state becomes the stable phase varies widely among substances, from 20 K (−253°C) for hydrogen to over 3,900 K (3,600°C) for carbon.
+A solid is like a liquid in that particles are in contact with one another. Solids are unlike liquids in that the intermolecular forces are strong enough to hold the particles in place. At low enough temperatures, all substances are solids (helium is the lone exception), but the temperature at which the solid state becomes the stable phase varies widely among substances, from 14 K (−259°C) for hydrogen to over 3,900 K (3,600°C) for carbon.
 
-[Note: reproduced as printed. 20 K (−253°C) is the boiling point of hydrogen; solid hydrogen melts at about 14 K (−259°C).]
+[Note: corrected; the source prints "from 20 K (−253°C) for hydrogen" where this reads "from 14 K (−259°C) for hydrogen". 20 K (−253°C) is the boiling point of hydrogen; solid hydrogen melts at about 14 K (−259°C).]
 
 The solid phase has several characteristics. First, solids maintain their shape. They do not fill their entire containers like gases do, and they do not adopt the shape of their containers like liquids do. They cannot be easily compressed like gases can, and they have relatively high densities.
 

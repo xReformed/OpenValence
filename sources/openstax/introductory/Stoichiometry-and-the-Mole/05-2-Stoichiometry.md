@@ -60,9 +60,9 @@ We can interpret this as, literally, "two hydrogen molecules react with one oxyg
 
 These equivalences allow us to construct conversion factors:
 
-(2 molecules H2 / 1 molecule O2) (2 molecules H2 / 2 molecules H2O) (1 molecule H2 / 2 molecules H2O)
+(2 molecules H2 / 1 molecule O2) (2 molecules H2 / 2 molecules H2O) (1 molecule O2 / 2 molecules H2O)
 
-[Note: reproduced as printed, but the third factor is wrong: H2 and H2O are 2:2 in this equation. It was presumably meant to be (1 molecule O2 / 2 molecules H2O).]
+[Note: corrected; the source prints "(1 molecule H2 / 2 molecules H2O)" where this reads "(1 molecule O2 / 2 molecules H2O)". H2 and H2O are 2:2 in this equation; the third factor relates O2 and H2O, which are 1:2.]
 
 and so forth. These conversions can be used to relate quantities of one substance to quantities of another. For example, suppose we need to know how many molecules of oxygen are needed to react with 16 molecules of H2. As we did with converting units, we start with our given quantity and use the appropriate conversion factor:
 
@@ -106,15 +106,15 @@ Conversion factors like this can also be used in stoichiometry calculations.
 
 ### Example 5.2.2
 
-How many molecules of NH3 can you make if you have 228 atoms of H2?
+How many molecules of NH3 can you make if you have 228 atoms of H?
+
+[Note: corrected; the source prints "228 atoms of H2?" where this reads "228 atoms of H?". The solution works with 228 atoms of H, not H2, and gets 76 molecules of NH3.]
 
 **Solution**
 
 From the formula, we know that one molecule of NH3 has three H atoms. Use that fact as a conversion factor:
 
 228 atoms H × (1 molecule NH3 / 3atoms H) = 76 NH3
-
-[Note: reproduced as printed; the question means 228 atoms of H, not H2, as the solution uses, and the answer is 76 molecules of NH3.]
 
 ### Exercise 5.2.2
 

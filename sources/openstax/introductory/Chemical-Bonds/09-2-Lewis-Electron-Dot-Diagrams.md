@@ -35,9 +35,9 @@ Be:
 
 The next atom is boron. Its valence electron shell is 2s^2 2p^1, so it has three valence electrons. The third electron will go on another side of the symbol:
 
-Ḃe:
+Ḃ:
 
-[Note: the diagram above is reproduced as printed, with the symbol Be. The text is describing boron, so the symbol should be B; the three dots (one above, two to the right) match boron's three valence electrons.]
+[Note: corrected; the source prints "Ḃe:" where this reads "Ḃ:". The text is describing boron, so the symbol is B; the three dots (one above, two to the right) match boron's three valence electrons.]
 
 Again, it does not matter on which sides of the symbol the electron dots are positioned.
 

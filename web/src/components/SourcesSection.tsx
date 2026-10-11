@@ -26,7 +26,7 @@ const SOURCES: {
     url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)",
     license: "CC BY-NC-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    coverage: "Chapter 1 of 31",
+    coverage: "Chapters 1–9 of 31",
     inUse: false,
   },
 ];

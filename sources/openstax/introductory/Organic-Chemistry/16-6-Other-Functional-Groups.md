@@ -189,7 +189,7 @@ Because of the existence of essential amino acids, a diet that is properly balan
    b. tertiary
    c. secondary
 4.
-5. a. C3H3CO2HSHNH2 + HCl → C3H3CO2HSHNH3Cl
+5. a. C2H3CO2HSHNH2 + HCl → C2H3CO2HSHNH3Cl
    b. (C6H11)(C2H5)(CH3)N + HCl → (C6H11)(C2H5)(CH3)NHCl
    c. (C2H5)(CH3)NH + HCl → (C2H5)(CH3)NH2Cl
 6.
@@ -205,4 +205,4 @@ Because of the existence of essential amino acids, a diet that is properly balan
 14.
 15. [Image: HS-C-C-C(C)-C]
 
-[Note: in answer 5a, "C3H3" is reproduced as printed; cysteine has three C atoms, so in this form its formula is C2H3CO2HSHNH2, and the product is C2H3CO2HSHNH3Cl.]
+[Note: corrected; the source prints "C3H3CO2HSHNH2" where this reads "C2H3CO2HSHNH2"; the source prints "C3H3CO2HSHNH3Cl" where this reads "C2H3CO2HSHNH3Cl". Cysteine has three C atoms, so in this form its formula has C2H3 in addition to the CO2H group.]

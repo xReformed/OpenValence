@@ -58,9 +58,9 @@ Empty Periodic table, with 10 squares on the fourth row in the middle filled in 
 
 And so forth. As we go across the columns of the periodic table, the overall shape of the table outlines how the electrons are occupying the shells and subshells.
 
-The first two columns on the left side of the periodic table are where the s subshells are being occupied. Because of this, the first two rows of the periodic table are labeled the s block. Similarly, the p block is the right-most six columns of the periodic table, the d block is the middle 10 columns of the periodic table, while the f block is the 14-column section that is normally depicted as detached from the main body of the periodic table. It could be part of the main body, but then the periodic table would be rather long and cumbersome. Figure 8.5.9 shows the blocks of the periodic table.
+The first two columns on the left side of the periodic table are where the s subshells are being occupied. Because of this, the first two columns of the periodic table are labeled the s block. Similarly, the p block is the right-most six columns of the periodic table, the d block is the middle 10 columns of the periodic table, while the f block is the 14-column section that is normally depicted as detached from the main body of the periodic table. It could be part of the main body, but then the periodic table would be rather long and cumbersome. Figure 8.5.9 shows the blocks of the periodic table.
 
-[Note: reproduced as printed. The s block is the first two columns of the periodic table, as the preceding sentence says, not the first two rows.]
+[Note: corrected; the source prints "the first two rows of the periodic table are labeled" where this reads "the first two columns of the periodic table are labeled". The s block is the first two columns of the periodic table, as the preceding sentence says, not the first two rows.]
 
 Figure 8.5.9: Blocks on the Periodic Table. The periodic table is separated into blocks depending on which subshell is being filled for the atoms that belong in that section.
 Empty periodic table, separated into 4 different colored blocks. S block is blue, d block is green, p block is red and f block is orange.
@@ -133,12 +133,12 @@ Some colorings are artificial. In the United States, the Food and Drug Administr
 - FD&C Blue #1: Brilliant Blue FCF
 - FD&C Blue #2: Indigotine
 - FD&C Green #3: Fast Green FCF
-- RD&C Red #3: Erythrosine
+- FD&C Red #3: Erythrosine
 - FD&C Red #40: Allura Red AC
 - FD&C Yellow #5: Tartrazine
 - FD&C Yellow #6: Sunset Yellow FCF
 
-[Note: "RD&C Red #3" is reproduced as printed; the FDA designation is FD&C Red #3, like the other entries in the list.]
+[Note: corrected; the source prints "RD&C Red #3" where this reads "FD&C Red #3". The FDA designation is FD&C Red #3, like the other entries in the list.]
 
 Lower-numbered colors are no longer on the market or have been removed for various reasons. Typically, these artificial colorings are large molecules that absorb certain colors of light very strongly, making them useful even at very low concentrations in foods and cosmetics. Even at such low amounts, some critics claim that a small portion of the population (especially children) is sensitive to artificial colorings and urge that their use be curtailed or halted. However, formal studies of artificial colorings and their effects on behavior have been inconclusive or contradictory. Many people continue to enjoy processed foods with artificial coloring (like those shown in the accompanying figure).
 

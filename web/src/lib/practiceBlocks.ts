@@ -48,7 +48,8 @@ function splitAnswer(paragraphs: string[]): [answer: string[], rest: string[]] {
     /* A phrase, not a Lewis diagram whose dots are colons (":Är:"). */
     const introduced =
       n > 0 && /:\s*$/.test(paragraphs[n - 1]) && (paragraphs[n - 1].match(/[A-Za-z]{2,}/g)?.length ?? 0) >= 3;
-    const part = /^\([a-z]\) /.test(paragraph);
+    /* "(b) …", or a bare "(b)" and the image or line under it. */
+    const part = /^\([a-z]\)(\s|$)/.test(paragraph) || (n > 0 && /^\([a-z]\)$/.test(paragraphs[n - 1].trim()));
     if (n === 0 || afterMarker || introduced || part || MARKER.test(paragraph) || paragraph.startsWith("[Note")) continue;
     if (
       /^(Figure |\||#|- )/.test(paragraph) ||

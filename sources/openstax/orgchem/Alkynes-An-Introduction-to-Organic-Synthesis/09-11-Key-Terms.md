@@ -6,3 +6,11 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acetylide anion
+- alkylation
+- alkyne
+- enol
+- Lindlar Catalyst
+- retrosynthetic
+- tautomer

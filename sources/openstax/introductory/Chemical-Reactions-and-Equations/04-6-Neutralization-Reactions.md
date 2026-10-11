@@ -24,11 +24,13 @@ where the term salt is generally used to define any ionic compound (soluble or i
 
 HCl(aq) + KOH(aq) → H2O(ℓ) + KCl(aq)
 
-where the salt is KCl. By counting the number of atoms of each element, we find that only one water molecule is formed as a product. However, in the reaction between HCl(aq) and Mg(OH)2(aq), additional molecules of HCl and H2O are required to balance the chemical equation:
+where the salt is KCl. By counting the number of atoms of each element, we find that only one water molecule is formed as a product. However, in the reaction between HCl(aq) and Mg(OH)2(s), additional molecules of HCl and H2O are required to balance the chemical equation:
 
-2HCl(aq) + Mg(OH)2(aq) → 2H2O(ℓ) + MgCl2(aq)
+[Note: corrected; the source prints "HCl(aq) and Mg(OH)2(aq)" where this reads "HCl(aq) and Mg(OH)2(s)". By the solubility rules in section 4.3, Mg(OH)2 is insoluble (Mg^2+ isn't one of the exceptions for hydroxides), as in the equation below.]
 
-[Note: reproduced as printed, but by the solubility rules in section 4.3, Mg(OH)2 is insoluble (Mg^2+ isn't one of the exceptions for hydroxides), so it would be Mg(OH)2(s).]
+2HCl(aq) + Mg(OH)2(s) → 2H2O(ℓ) + MgCl2(aq)
+
+[Note: corrected; the source prints "Mg(OH)2(aq)" where this reads "Mg(OH)2(s)". By the solubility rules in section 4.3, Mg(OH)2 is insoluble (Mg^2+ isn't one of the exceptions for hydroxides).]
 
 Here, the salt is MgCl2. (This is one of several reactions that take place when a type of antacid—a base—is used to treat stomach acid.)
 
@@ -49,12 +51,12 @@ First, we will write the chemical equation with the formulas of the reactants an
      2HNO3(aq) + Ba(OH)2(aq) → 2H2O(ℓ) + Ba(NO3)2(aq)
      This chemical equation is now balanced.
 - b. The expected products are water and calcium phosphate, so the initial chemical equation is
-     H3PO4(aq) + Ca(OH)2(aq) → H2O(ℓ) + Ca3(PO4)2(s)
+     H3PO4(aq) + Ca(OH)2(s) → H2O(ℓ) + Ca3(PO4)2(s)
      According to the solubility rules, Ca3(PO4)2 is insoluble, so it has an (s) phase label. To balance this equation, we need two phosphate ions and three calcium ions. We end up with six water molecules to balance the equation:
-     2H3PO4(aq) + 3Ca(OH)2(aq) → 6H2O(ℓ) + Ca3(PO4)2(s)
+     2H3PO4(aq) + 3Ca(OH)2(s) → 6H2O(ℓ) + Ca3(PO4)2(s)
      This chemical equation is now balanced.
 
-[Note: reproduced as printed, but by the solubility rules in section 4.3, Ca(OH)2 is insoluble (Ca^2+ isn't one of the exceptions for hydroxides), so it would be Ca(OH)2(s), as this section writes it further on.]
+[Note: corrected; the source prints "H3PO4(aq) + Ca(OH)2(aq)" where this reads "H3PO4(aq) + Ca(OH)2(s)"; the source prints "3Ca(OH)2(aq)" where this reads "3Ca(OH)2(s)". By the solubility rules in section 4.3, Ca(OH)2 is insoluble (Ca^2+ isn't one of the exceptions for hydroxides), as this section writes it further on.]
 
 ### Exercise 4.6.1
 
@@ -62,9 +64,9 @@ Write the neutralization reaction between H2SO4(aq) and Sr(OH)2(aq).
 
 **Answer**
 
-H2SO4(aq) + Sr(OH)2(aq) → 2H2O(ℓ) + SrSO4(aq)
+H2SO4(aq) + Sr(OH)2(aq) → 2H2O(ℓ) + SrSO4(s)
 
-[Note: reproduced as printed, but section 4.3 lists Sr^2+ as an exception for sulfates and writes SrSO4(s) itself, so it would be SrSO4(s).]
+[Note: corrected; the source prints "SrSO4(aq)" where this reads "SrSO4(s)". Section 4.3 lists Sr^2+ as an exception for sulfates and writes SrSO4(s) itself.]
 
 Neutralization reactions are one type of chemical reaction that proceeds even if one reactant is not in the aqueous phase. For example, the chemical reaction between HCl(aq) and Fe(OH)3(s) still proceeds according to the equation:
 

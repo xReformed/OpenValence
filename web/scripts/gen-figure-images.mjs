@@ -3,7 +3,7 @@
 // name says where it goes:
 //
 //   <book>/1.2.1.webp                  above the caption "Figure 1.2.1: …"
-//   <book>/3.2.1-a-simple-periodic-table.webp
+//   <book>/3.2.2-a-simple-periodic-table.webp
 //                                      where the book prints a figure number
 //                                      twice: the number plus the caption's
 //                                      title ("Figure 3.2.1: A Simple Periodic

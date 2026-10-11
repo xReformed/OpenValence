@@ -7,9 +7,9 @@ author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
 
-We said in Section 1.6 that chemists use two models for describing covalent bonds: valence bond theory and molecular orbital theory. Having now seen the valence bond approach, which uses hybrid atomic orbitals to account for geometry and assumes the overlap of atomic orbitals to account for electron sharing, let’s look briefly at the molecular orbital approach to bonding. We’ll return to this topic in Chapters 14, 15, and 30 for a more in-depth discussion.
+We said in Section 1.5 that chemists use two models for describing covalent bonds: valence bond theory and molecular orbital theory. Having now seen the valence bond approach, which uses hybrid atomic orbitals to account for geometry and assumes the overlap of atomic orbitals to account for electron sharing, let’s look briefly at the molecular orbital approach to bonding. We’ll return to this topic in Chapters 14, 15, and 30 for a more in-depth discussion.
 
-[Note: reproduced as printed. The two models are introduced in Section 1.5 (Valence Bond Theory); Section 1.6 is sp³ Hybrid Orbitals and the Structure of Methane.]
+[Note: corrected; the source prints "We said in Section 1.6 that" where this reads "We said in Section 1.5 that". The two models are introduced in Section 1.5 (Valence Bond Theory); Section 1.6 is sp³ Hybrid Orbitals and the Structure of Methane.]
 
 Molecular orbital (MO) theory describes covalent bond formation as arising from a mathematical combination of atomic orbitals (wave functions) on different atoms to form molecular orbitals, so called because they belong to the entire molecule rather than to an individual atom. Just as an atomic orbital, whether unhybridized or hybridized, describes a region of space around an atom where an electron is likely to be found, so a molecular orbital describes a region of space in a molecule where electrons are most likely to be found.
 

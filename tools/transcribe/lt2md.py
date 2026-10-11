@@ -16,7 +16,7 @@ SYMBOLS = {
     "pi": "π", "alpha": "α", "beta": "β", "gamma": "γ", "sigma": "σ", "theta": "θ",
     "ell": "ℓ", "cdot": "·", "rightarrow": "→", "leftarrow": "←", "to": "→",
     "rightleftharpoons": "⇌", "approx": "≈", "lt": "<", "gt": ">", "le": "≤",
-    "leq": "≤", "ge": "≥", "geq": "≥", "neq": "≠", "degree": "°", "circ": "°",
+    "leq": "≤", "prime": "′", "ll": "≪", "gg": "≫", "ge": "≥", "geq": "≥", "neq": "≠", "degree": "°", "circ": "°",
     "pm": "±", "infty": "∞", "ldots": "…", "cdots": "…", "uparrow": "↑",
     "downarrow": "↓", "equiv": "≡", "longrightarrow": "⟶", "curvearrowright": "↷",
     "chi": "χ", "Pi": "Π", "phi": "φ", "rho": "ρ", "omega": "ω", "Omega": "Ω",
@@ -150,7 +150,7 @@ def nuclide_match(m):
 
 
 def tex(s):
-    s = s.replace("\xa0", " ")
+    s = s.replace("\xa0", " ").replace("~", " ")  # ~ is TeX's non-breaking space: 100 × 10^{-12}~\mathrm{m}
     s = re.sub(r"\\PageIndex\{(\d+)([a-z]*)\}", lambda m: f"{SEC}.{m.group(1)}{m.group(2)}", s)
     # _{92}^{235}\textrm{U}, \ce{_0^1n}: prescripts on a symbol are a nuclide.
     s = NUCLIDE.sub(nuclide_match, s)
@@ -171,6 +171,11 @@ def tex(s):
         over, after = tex_arg(s, k + len("\\overset"))
         base, end = tex_arg(s, after)
         s = s[:k] + base + "\\; (" + over + ")\\; " + s[end:]
+    # \stackrel{\delta+}{\mathrm{C}}: a partial charge printed above an atom -> "C(δ+)".
+    while (k := s.find("\\stackrel")) >= 0 and "{" in s[k:]:
+        over, after = tex_arg(s, k + len("\\stackrel"))
+        base, end = tex_arg(s, after)
+        s = s[:k] + "{" + base + "}(\\text{" + over.replace("-", "−") + "})" + s[end:]
     # \cancel{g} strikes a unit out to show it cancelling; the text refers to
     # "the strikeouts", so keep them, as markdown strikethrough (~~g~~).
     while (k := s.find("\\cancel")) >= 0 and "{" in s[k:]:
@@ -193,6 +198,7 @@ def tex(s):
         # \ce{NH^{+}4}: mhchem sets a digit after a charge as the formula's
         # subscript (NH₄⁺), so write it in the usual order: NH4^+.
         body = re.sub(r"\^\{([^{}]*)\}(\d+)", r"\2^{\1}", body)
+        body = expand_frac(body)  # \ce{(CH2)_{n} + \dfrac{3 n}{2} O2 -> …}
         s = s[:k] + "\\text{" + body.replace("_", "").replace("{", "").replace("}", "") + "}" + s[end:]
     s = re.sub(r"\\(?:text|textrm|mathrm)\s*\{([^{}]*)\}", protect, s)
     s = re.sub(r"\\[,;: ]|\\quad|\\qquad", "\x04", s)  # explicit TeX spaces survive
@@ -268,7 +274,8 @@ def inline_math(s):
     return re.sub(r"\\\((.*?)\\\)", lambda m: tex(m.group(1)), s, flags=re.S)
 
 
-FILENAME = re.compile(r"\w[\w .,()+-]*\.(?:jpe?g|png|gif|svg|webp)", re.I)  # "The Actions of Buffers.png", "2,4-dimethyl-3-heptene .png"
+FILENAME = re.compile(  # "The Actions of Buffers.png", "2,4-dimethyl-3-heptene .png", or a bare upload hash
+    r"\w[\w .,()+-]*\.(?:jpe?g|png|gif|svg|webp)|[0-9a-f]{32,}", re.I)
 
 BOX_END = "\x07"  # where an Example box closed
 
@@ -699,7 +706,7 @@ text = re.sub(r'\[Image: ([^\]\n]*?)\s*<span class=\]\n\n([^"\n]*)"\s+style="[^\
 text = re.sub(r"(?m)^(#{3,4}) [.,;:]+\s*(?=(?:Example|Exercise)\b)", r"\1 ", text)  # ".Exercise 13.3.4"
 text = re.sub(r"(?m)[ \t]+$", "", text)
 text = re.sub(r"\^\s+", "^", text)
-text = re.sub(r"\^(\d+)\^([+−])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+</sup>
+text = re.sub(r"\^(\d+)\^([+−–])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+</sup>, CO3<sup>2</sup><sup>–</sup>
 text = text.replace("^°", "°")  # 180<sup>°</sup> (Organic Chemistry): the degree sign is just text
 text = re.sub(r"\^([+−])\^(\d)", r"^\1\2", text)  # 10<sup>−</sup><sup>10</sup>
 text = text.replace("(opens in new window)", "")  # link label for screen readers

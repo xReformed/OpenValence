@@ -17,9 +17,9 @@ In one sense, all chemical equilibria are treated the same. However, there are s
 
 In Chapter 12 - Acids and Bases, we noted how some acids and bases are strong and some are weak. If an acid or base is strong, it is ionized 100% in H2O. HCl(aq) is an example of a strong acid:
 
-HCl(aq) = → (100%) H^+(aq) + Cl^−(aq)
+HCl(aq) → (100%) H^+(aq) + Cl^−(aq)
 
-[Note: reproduced as printed; the "=" before the arrow is a stray sign.]
+[Note: corrected; the source prints "HCl(aq) = →" where this reads "HCl(aq) →". The equals sign before the arrow is a stray sign.]
 
 However, if an acid or base is weak, it may dissolve in H2O, but does not ionize completely. This means that there is an equilibrium between the unionized acid or base and the ionized form. HC2H3O2 is an example of a weak acid:
 
@@ -75,9 +75,9 @@ Write the equilibrium equation and the K_a expression for HPO4^2− acting as a 
 
 HPO4^2−(aq) ⇌ H^+(aq) + PO4^3−(aq)    Ka = ([H^+][PO4^3−])/([HPO4^2−])
 
-The K_a is used in equilibrium constant problems just like other equilibrium constants are. However, in some cases, we can simplify the mathematics if the numerical value of the K_a is small, much smaller than the concentration of the acid itself. Example 11 illustrates this.
+The K_a is used in equilibrium constant problems just like other equilibrium constants are. However, in some cases, we can simplify the mathematics if the numerical value of the K_a is small, much smaller than the concentration of the acid itself. Example 13.6.2 illustrates this.
 
-[Note: "Example 11" is the numbering of an earlier edition; the example meant is Example 13.6.2, which follows.]
+[Note: corrected; the source prints "Example 11 illustrates" where this reads "Example 13.6.2 illustrates". The source uses the numbering of an earlier edition; the example meant is the one that follows.]
 
 ### Example 13.6.2
 
@@ -89,13 +89,13 @@ This is a two-part problem. We need to determine [H^+] and then use the definiti
 
 Solutions to Example 13.6.2
 
-|  | HC2H3O2(aq) | ⇄ | H^+(g) | + | C2H3O2^−(g) |
+|  | HC2H3O2(aq) | ⇄ | H^+(aq) | + | C2H3O2^−(aq) |
 | --- | --- | --- | --- | --- | --- |
 | I | 1.00 |  | 0 |  | 0 |
 | C | −x |  | +x |  | +x |
 | E | 1.00 − x |  | +x |  | +x |
 
-[Note: reproduced as printed; H^+ and C2H3O2^− are aqueous ions, (aq), as in the equation above, not gases.]
+[Note: corrected; the source prints "H^+(g)" where this reads "H^+(aq)"; the source prints "C2H3O2^−(g)" where this reads "C2H3O2^−(aq)". These ions are aqueous, as in the equation above, not gases.]
 
 We now construct the K_a expression, substituting the concentrations from the equilibrium row in the ICE chart:
 
@@ -189,9 +189,9 @@ AgCl(s) ⇌ Ag^+(aq) + Cl^−(aq)    K_sp = [Ag^+][Cl^−]
 
 Table 13.6.2 - Solubility Product Constants for Slightly Soluble Ionic Compounds, lists some values of the K_sp for slightly soluble ionic compounds.
 
-Table, two columns and 8 rows. The first column on the right has different compounds in the rows underneath. The second column on the right side has the acid dissociation content for the corresponding compounds in the rows underneath.
+Table, two columns and 8 rows. The first column on the right has different compounds in the rows underneath. The second column on the right side has the solubility product constant for the corresponding compounds in the rows underneath.
 
-[Note: reproduced as printed; the second column of this table holds solubility product constants (Ksp), not acid dissociation constants.]
+[Note: corrected; the source prints "acid dissociation content" where this reads "solubility product constant". The table, Table 13.6.2, lists Ksp values, not acid dissociation constants.]
 
 | Compound | K_sp |
 | --- | --- |
@@ -280,9 +280,9 @@ What are [Ca^2+] and [PO4^3−] in a saturated solution of Ca3(PO4)2? The K_sp o
 
 **Solution**
 
-This is similar to Example 14, but the ICE chart is much different because of the number of ions formed.
+This is similar to Example 13.6.5, but the ICE chart is much different because of the number of ions formed.
 
-[Note: "Example 14" is the numbering of an earlier edition; the example meant is Example 13.6.5.]
+[Note: corrected; the source prints "similar to Example 14," where this reads "similar to Example 13.6.5,". The source uses the numbering of an earlier edition; the example meant is the preceding AgCl example.]
 
 Solutions to Example 13.6.6
 

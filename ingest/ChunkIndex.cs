@@ -32,7 +32,7 @@ public sealed record ChunkIndex(string EmbeddingModel, List<Chunk> Chunks)
     /// Most providers return unit-length vectors, which makes the division a no-op —
     /// but dividing anyway costs nothing and keeps this correct for any provider.
     /// Result runs -1 to 1; higher is more similar.
-    /// </summary>
+    /// </summary>cd we
     public static float CosineSimilarity(float[] a, float[] b)
     {
         if (a.Length != b.Length)

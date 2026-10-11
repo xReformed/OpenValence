@@ -11,7 +11,7 @@
    scripts/gen-figure-images.mjs, which lists them all for the app):
 
      1.2.1.webp                       above "Figure 1.2.1: …"
-     3.2.1-a-simple-periodic-table.webp
+     3.2.2-a-simple-periodic-table.webp
                                       where the book prints a number twice,
                                       plus the caption's title
      2.4-image-1.webp                 section 2.4's first "[Image: …]" box,

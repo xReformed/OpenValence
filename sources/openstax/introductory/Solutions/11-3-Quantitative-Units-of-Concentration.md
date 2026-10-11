@@ -29,9 +29,9 @@ molarity = (0.24 mol NaOH)/(0.500L) = 0.48 M NaOH
 
 The concentration of the solution is 0.48 M, which is spoken as "zero point forty-eight molarity" or "zero point forty-eight molar." If the quantity of the solute is given in mass units, you must convert mass units to mole units before using the definition of molarity to calculate concentration. For example, what is the molar concentration of a solution of 22.4 g of HCl dissolved in 1.56 L? First, convert the mass of solute to moles using the molar mass of HCl (36.5 g/mol):
 
-22.4 ~~gHCl~~ × (1 mol Hcl)/(36.5 ~~gHCl~~) = 0.614 M HCl
+22.4 ~~gHCl~~ × (1 mol Hcl)/(36.5 ~~gHCl~~) = 0.614 mol HCl
 
-[Note: reproduced as printed. This step gives moles, not molarity: 22.4 g of HCl is 0.614 mol HCl, which the next step divides by 1.56 L.]
+[Note: corrected; the source prints "= 0.614 M HCl" where this reads "= 0.614 mol HCl". This step gives moles, not molarity: 22.4 g of HCl is 0.614 mol HCl, which the next step divides by 1.56 L.]
 
 Now we can use the definition of molarity to determine a concentration:
 
@@ -63,9 +63,9 @@ What is the molarity of a solution made when 66.2 g of C6H12O6 are dissolved to 
 
 1.57 M
 
-The definition of molarity can be used to determine the amount of solute or the volume of solution, if the other information is given. Example 4 illustrates this situation.
+The definition of molarity can be used to determine the amount of solute or the volume of solution, if the other information is given. Example 11.3.2 illustrates this situation.
 
-[Note: "Example 4" is the numbering of an earlier edition; the example meant is Example 11.3.2, which follows.]
+[Note: corrected; the source prints "Example 4 illustrates" where this reads "Example 11.3.2 illustrates". The source uses an earlier edition's numbering; the example meant is Example 11.3.2, which follows.]
 
 ### Example 11.3.2
 

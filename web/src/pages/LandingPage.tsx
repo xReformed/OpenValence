@@ -32,7 +32,7 @@ const DEMO_QUESTION =
 
 const DEMO_STEPS = [
   "Understanding the question",
-  "Searching 116 textbook sections",
+  "Searching 234 textbook sections",
   "Found: 5.6 Yields (Beginning Chemistry)",
   "Writing a grounded answer",
   "Attaching citations",

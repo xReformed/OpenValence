@@ -6,3 +6,28 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acidity constant (K_a)
+- alkaloid
+- Brønsted–Lowry acid
+- Brønsted–Lowry base
+- conjugate acid
+- conjugate base
+- dipole moment (μ)
+- dispersion force
+- electronegativity (EN)
+- electrostatic potential map
+- formal charge
+- hydrogen bond
+- hydrophilic
+- hydrophobic
+- inductive effect
+- intermolecular force
+- Lewis acid
+- Lewis base
+- noncovalent interaction
+- pK_a
+- polar covalent bond
+- resonance form
+- resonance hybrid
+- van der Waals force

@@ -17,9 +17,9 @@ Now that we understand that chemical reactions occur with a simultaneous change 
 
 In reality, this is extremely difficult to do. Given the opportunity, carbon will react to make another compound, carbon dioxide:
 
-2C(s) + O2(g) → 2CO2(g) ΔH = −393.5kJ
+C(s) + O2(g) → CO2(g) ΔH = −393.5kJ
 
-[Note: reproduced as printed, but this equation isn't balanced, and −393.5 kJ is the ΔH for one mole of CO2: C(s) + O2(g) → CO2(g). For two moles, 2C(s) + 2O2(g) → 2CO2(g), ΔH = −787.0 kJ, as worked out below.]
+[Note: corrected; the source prints "2C(s) + O2(g) → 2CO2(g) ΔH = −393.5kJ" where this reads "C(s) + O2(g) → CO2(g) ΔH = −393.5kJ". The printed equation isn't balanced, and −393.5 kJ is the ΔH for one mole of CO2, as the section uses it below.]
 
 Is there a way around this? Yes. It comes from the understanding that chemical equations can be treated like algebraic equations, with the arrow acting like the equals sign. Like algebraic equations, chemical equations can be combined, and if the same substance appears on both sides of the arrow, it can be canceled out (much like a spectator ion in ionic equations). For example, consider these two reactions:
 
@@ -57,11 +57,11 @@ This reaction is two times the reaction to make CO2 from C(s) and O2(g), whose e
 
 C(s) + O2(g) → CO2(g) ΔH = −393.5kJ
 
-According to the first corollary, the first reaction has an energy change of two times −393.5 kJ, or −787.0 kJ:
+According to the second corollary, the first reaction has an energy change of two times −393.5 kJ, or −787.0 kJ:
+
+[Note: corrected; the source prints "According to the first corollary" where this reads "According to the second corollary". It is the second corollary, about multiples, that doubles the ΔH.]
 
 2C(s) + 2O2(g) → 2CO2(g) ΔH = −787.0kJ
-
-[Note: reproduced as printed, but it is the second corollary, about multiples, that doubles the ΔH.]
 
 The second reaction in the combination is related to the combustion of CO(g):
 

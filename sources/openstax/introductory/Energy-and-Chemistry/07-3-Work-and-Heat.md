@@ -66,9 +66,9 @@ Heat is another aspect of energy. Heat is the transfer of energy from one body t
 
 For a given object, the amount of heat (_q_) involved is proportional to two things: the mass of the object (m) and the temperature change (ΔT) evoked by the energy transfer. We can write this mathematically as
 
-qα m × ΔT
+q ∝ m × ΔT
 
-[Note: reproduced as printed; the symbol here is ∝, "is proportional to," as the next sentence says, not the Greek letter α.]
+[Note: corrected; the source prints "qα m × ΔT" where this reads "q ∝ m × ΔT". The symbol is the proportionality sign, "is proportional to," as the next sentence says, not the Greek letter alpha.]
 
 where ∝ means "is proportional to." To make a proportionality an equality, we include a proportionality constant. In this case, the proportionality constant is labeled _c_ and is called the specific heat capacity, or, more succinctly, specific heat:
 

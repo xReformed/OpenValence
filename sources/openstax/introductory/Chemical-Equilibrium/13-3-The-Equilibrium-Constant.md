@@ -184,9 +184,9 @@ To determine the change in the number of moles of gas, take the number of moles 
 
 Note that Δn is negative. Now we can substitute into our equation, using R = 0.08205 L·atm/mol·K. The units are omitted for clarity:
 
-K_P = (4.2 × 10^−2)(0.08205)(298)^−2
+K_P = (4.2 × 10^−2)[(0.08205)(298)]^−2
 
-[Note: reproduced as printed, but the exponent applies to the whole product RT: KP = (4.2 × 10^−2)[(0.08205)(298)]^−2 = 7.0 × 10^−5. Applied to 298 alone, as printed, it would give 3.9 × 10^−8.]
+[Note: corrected; the source prints "(0.08205)(298)^−2" where this reads "[(0.08205)(298)]^−2". The exponent applies to the whole product RT, which gives the result below, 7.0 × 10^−5; applied to 298 alone it would give 3.9 × 10^−8.]
 
 Solving,
 

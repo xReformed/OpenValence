@@ -53,9 +53,9 @@ We will do this in two steps: convert the mass of AlCl3 to moles and then use th
 
 Now we can use this quantity to determine the number of moles of HCl that will form. From the balanced chemical equation, we construct a conversion factor between the number of moles of AlCl3 and the number of moles of HCl:
 
-frac6 mol HCl2 mol AlCl3
+(6 mol HCl / 2 mol AlCl3)
 
-[Note: the source's broken formatting is reproduced as printed; the conversion factor is (6 mol HCl / 2 mol AlCl3).]
+[Note: corrected; the source prints "frac6 mol HCl2 mol AlCl3" where this reads "(6 mol HCl / 2 mol AlCl3)". The source's formatting of this fraction was broken; the conversion factor is 6 mol HCl over 2 mol AlCl3.]
 
 Applying this conversion factor to the quantity of AlCl3, we get
 

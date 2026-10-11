@@ -11,9 +11,9 @@ license: "CC BY-NC-SA 3.0"
 
 - Express amounts of radioactivity in a variety of units.
 
-In Section 15.2, we used mass to indicate the amount of radioactive substance present. This is only one of several units used to express amounts of radiation. Some units describe the number of radioactive events occurring per unit time, while others express the amount of a person's exposure to radiation.
+In Section 15.3, we used mass to indicate the amount of radioactive substance present. This is only one of several units used to express amounts of radiation. Some units describe the number of radioactive events occurring per unit time, while others express the amount of a person's exposure to radiation.
 
-[Note: amounts were given as masses in Section 15.3 (Half-Life); the source's section reference is off by one.]
+[Note: corrected; the source prints "In Section 15.2, we used mass" where this reads "In Section 15.3, we used mass". Amounts were given as masses in Section 15.3 (Half-Life); the source's section reference is off by one.]
 
 Perhaps the direct way of reporting radioactivity is the number of radioactive decays per second. One decay per second is called one becquerel (Bq). Even in a small mass of radioactive material, however, there are thousands upon thousands of decays or disintegrations per second. The unit curie (Ci), now defined as 3.7 × 10^10 decays/s, was originally defined as the number of decays per second in 1 g of radium. Many radioactive samples have activities that are on the order of microcuries (µCi) or more. Both the becquerel and the curie can be used in place of grams to describe quantities of radioactive material. As an example, the amount of americium in an average smoke detector has an activity of 0.9 µCi. (The curie is named after Polish scientist Marie Curie, who performed some of the initial investigations into radioactive phenomena in the early 1900s; the becquerel is named after Henri Becquerel, who discovered radioactivity in 1896.)
 
@@ -51,9 +51,9 @@ A sample of radium has an activity of 16.0 mCi. If the half-life of radium is 1,
 
 **Solution**
 
-In this case we do not have an exact number of half-lives, so we need to use the more complicated equation ( Section 15.2) and solve for time. If the initial amount is represented by 16.0 mCi and the final amount is 5.6 mCi, we have
+In this case we do not have an exact number of half-lives, so we need to use the more complicated equation ( Section 15.3) and solve for time. If the initial amount is represented by 16.0 mCi and the final amount is 5.6 mCi, we have
 
-[Note: the equation meant is the one in Section 15.3 (Half-Life); the source's section reference is off by one.]
+[Note: corrected; the source prints "equation ( Section 15.2)" where this reads "equation ( Section 15.3)". The equation meant is the one in Section 15.3 (Half-Life); the source's section reference is off by one.]
 
 5.6 mCi = (16.0 mCi)e^{−0.693 t/(1,600 y)}
 
@@ -63,9 +63,9 @@ To solve, we divide both sides of the equation by 16.0 mCi to cancel the millicu
 
 By taking the natural logarithm of both sides; the natural logarithm cancels the exponential function. The natural logarithm of 5.6/16.0 is −1.050. So
 
-−1.050 = (−0.692 t)/(1,600 y)
+−1.050 = (−0.693 t)/(1,600 y)
 
-[Note: reproduced as printed; the constant is 0.693, as in the line above.]
+[Note: corrected; the source prints "(−0.692 t)" where this reads "(−0.693 t)". The constant is 0.693, as in the line above.]
 
 The negative sign cancels, and we solve for t. Thus
 

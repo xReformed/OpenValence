@@ -30,7 +30,7 @@ describe("findFigureImage", () => {
     expect(findFigureImage(book, "Figure 3.2.1: The Structure of the Atom. Atoms have…")).toBe(
       images["3.2.1-the-structure-of-the-atom"],
     );
-    expect(findFigureImage(book, "Figure 3.2.1: A Simple Periodic Table")).toBe(images["3.2.1-a-simple-periodic-table"]);
+    expect(findFigureImage(book, "Figure 3.2.2: A Simple Periodic Table")).toBe(images["3.2.2-a-simple-periodic-table"]);
   });
 
   it("finds nothing for a figure without an image", () => {

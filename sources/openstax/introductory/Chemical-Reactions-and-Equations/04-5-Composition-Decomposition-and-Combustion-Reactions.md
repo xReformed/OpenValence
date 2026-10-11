@@ -58,9 +58,9 @@ CH4 + 2O2 → CO2 + 2H2O
 
 Kerosene can be approximated with the formula C12H26, and its combustion equation is:
 
-2C12H26 + 37O2 → 24CO − 2 + 26H2O
+2C12H26 + 37O2 → 24CO2 + 26H2O
 
-[Note: reproduced as printed; the product is 24CO2, which balances the equation.]
+[Note: corrected; the source prints "24CO − 2" where this reads "24CO2". The product is carbon dioxide, which balances the equation.]
 
 Sometimes fuels contain oxygen atoms, which must be counted when balancing the chemical equation. One common fuel is ethanol, C2H5OH, whose combustion equation is:
 
@@ -90,9 +90,9 @@ Solution
 
 ### Exercise 4.5.2
 
-Complete and balance the combustion equation for cyclopropanol (\ce{C3H6O}\)).
+Complete and balance the combustion equation for cyclopropanol (C3H6O).
 
-[Note: the source's leftover formatting code is reproduced as printed; cyclopropanol is C3H6O.]
+[Note: corrected; the source prints "(\ce{C3H6O}\))" where this reads "(C3H6O)". Leftover formatting code in the source; the formula of cyclopropanol is C3H6O.]
 
 **Answer**
 

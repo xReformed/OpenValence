@@ -6,3 +6,98 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+Saturated cyclic hydrocarbons are called cycloalkanes, or alicyclic compounds (aliphatic cyclic). Because cycloalkanes consist of rings of −CH2−units, they have the general formula (CH2)n, or C_nH2n, and can be represented by polygons in skeletal drawings.
+
+[Image: An illustration shows four space and ball models and their corresponding molecular structures. The grey balls represent carbon and white balls represent hydrogen in space and ball models. The first structure is of cyclopropane having three sides and its space and ball model shows three carbon atoms and each carbon is shown bonded to two hydrogen atoms. The structure of cyclobutane shows four sides and its space and ball model shows four carbon atoms each carbon is shown bonded to two hydrogen atoms. The third structure is of cyclopentane having five sides and its space and ball model shows five carbon atoms each carbon shows bonds with two hydrogen atoms. The fourth structure is of cyclohexane having six sides and its space and ball model shows six carbon atoms; each carbon is shown bonded to two hydrogen atoms.]
+
+Substituted cycloalkanes are named by rules similar to those we saw in (Section 3.4) for open-chain alkanes. For most compounds, there are only two steps.
+
+[Note: corrected; the source prints "we saw in (Section 3.5)" where this reads "we saw in (Section 3.4)". The book's cross-reference points one section ahead of these pages. Naming alkanes is covered in Section 3.4.]
+
+## STEP 1: Find the parent
+
+Count the number of carbon atoms in the ring and the number in the largest substituent. If the number of carbon atoms in the ring is equal to or greater than the number in the substituent, the compound is named as an alkyl-substituted cycloalkane. If the number of carbon atoms in the largest substituent is greater than the number in the ring, the compound is named as a cycloalkyl-substituted alkane. For example:
+
+[Image: An illustration shows two structures; the first structure labeled as methylcyclopentane shows a pentane ring bonded to a methyl group; the cyclopentane is shown drawn in pink color. The second structure labeled as 1-cyclopropylbutane shows a propane ring having “3 carbons” bonded to butane shown as CH2CH2CH2CH3 comprising of “4 carbons” and drawn in pink.]
+
+## STEP 2: Number the substituents, and write the name
+
+For an alkyl- or halo-substituted cycloalkane, choose a point of attachment as carbon 1 and number the substituents on the ring so that the second substituent has as low a number as possible. If ambiguity still exists, number so that the third or fourth substituent has as low a number as possible, until a point of difference is found.
+
+[Image: An illustration distinguishes the correct and incorrect method of numbering in cycloalkanes by placing “not” in between the correct and incorrect names; all the numbers of the structures are shown in pink color. The correct numbering in the first structure is written as “1 3-Dimethylcyclohexane” wherein 1 3-Dimethyl is written in pink and labeled as “lower”; the incorrect numbering of the first structure is written as “1 5-Dimethylcyclohexane” wherein 1 5-Dimethyl is labeled as “higher” and is written in blue color. The structure of 1 3-Dimethylcyclohexane shows a cyclohexane bonded to methyl groups at two alternate positions; the numbering begins from the tip of the ring as “1” and follows the clockwise path till position “6” on the left side of the ring. The structure of 1 5-Dimethylcyclohexane shows the same structure except that the numbering starts from the upper tip of the ring and follows an anticlockwise path till position “6” on the right side of the ring.]
+
+[Image: The correct numbering in the second structure is written as 2-Ethyl-1 4-dimethylcycloheptane wherein 2-ethyl- is written in pink and is labeled as “lower” 1 4-dimethyl is written in blue and is labeled as “lower”; the structure shows a seven carbon ring having methyl group at the lower right side of the ring labeled as “1”; the numbering continues anticlockwise; the adjacent position is labeled as “2” and shows a bond to CH2CH3 highlighted in pink color; at position “4” a methyl group is shown highlighted in blue color. The first incorrect numbering of the second structure is expressed as 1-Ethyl-2 6-dimethylcycloheptane where 6 is labeled as “higher” shows similar structure except that the numbering starts from CH2CH3 as “1” and continues in clockwise direction ending at the upper tip of the ring labeled as “7.” The second instance of incorrect numbering of the second structure is expressed as 3-Ethyl-1 4-dimethylcycloheptane having the same structure as described earlier except that the numbering begins from the upper left side of the ring and continues in a clockwise direction; at position “3” is shown CH2CH3 and at position “4” is shown the second methyl group; the numbering ends at “7” situated below the methyl group at “1.”]
+
+### SUBSTEP 2a
+
+When two or more different alkyl groups are present that could potentially take the same numbers, number them by alphabetical priority, ignoring numerical prefixes such as di- and tri-.
+
+[Image: An illustration shows correct and incorrect numbering of a compound. The correct numbering of a structure labeled as 1-ethyl-2-methylcyclopentane wherein 1-ethyl-is written in pink and 2-methyl is written in blue color is shown. The structure shows a cyclopentane having an ethyl group CH2CH3 that is written in pink bonded to the upper right side of the ring; a methyl group written in blue color is bonded anticlockwise at the adjacent position; the numbering continues anticlockwise and position “5” occupies the right side of cyclopentane base. The incorrect numbering expressed as 2-Ethyl-1-methylcyclopentane shows the same structure except that the numbering begins with the methyl group as “1” and continues clockwise; the ethyl group CH2CH3 is bonded to position “2”; position “5” is shown at the top left side of the ring.]
+
+### SUBSTEP 2b
+
+If halogens are present, treat them just like alkyl groups.
+
+[Image: An illustration shows correct and incorrect numbering of a compound; the numbering is done in pink color. The correct numbering of a structure labeled as 1-Bromo-2-methylcyclobutane wherein 1-Bromo- is mentioned in pink color and 2-methyl is mentioned in blue color. The structure shows a cyclobutane having a methyl group written in blue color and the adjacent position bonded to bromine that is written in pink color; the numbering begins from bromine as “1” and continues anticlockwise to methyl group as “2.” The incorrect numbering is expressed as 2-Bromo-1-methylcyclobutane having the same structure except that the methyl group is shown at position “1” and bromine at position “2.”]
+
+Some additional examples follow:
+
+[Image: An illustration shows three molecular structures. The first structure belonging to 1-Bromo-3-ethyl-5-methyl-cyclohexane shows a hexane ring having a pink bromine bonded at its tip a blue ethyl group at the left basal position and a green methyl group bonded at the right side basal position on the ring. The numbering begins at the top f ring with bromine at “1” and numbering continues anticlockwise with the ethyl group at “3” and methyl group at “5.” The second structure belonging to (1-Methylpropyl)cyclobutane or sec-butylcyclobutane wherein a butane ring is bonded to a methine bonded to the methylene group that is bonded to methyl group; the methine shares an upward bond with a methyl group; all the bonds attached to the butane ring are written in pink. The third structure shown as 1-Chloro-3-ethyl-2-methyl-cyclopentane wherein a pentane ring is bonded to a green chlorine at its tip a green methyl group at the right side of ring and an ethyl group at the basal right side of the ring. The numbering starts from chlorine as “1” and continues clockwise with methyl group at “2” and ethyl group at “3.”]
+
+### Exercise 4.1.1
+
+Give IUPAC names for the following cycloalkanes:
+
+a. [Image: In a 6-membered carbon ring, C1 and C4 are each bonded to a methyl group.]
+b. [Image: In a 5-membered carbon ring, C1 and C3 are bonded to a methyl and a propyl group, respectively.]
+c. [Image: A cyclobutane ring is bonded to C3 of a 5-carbon chain.]
+d. [Image: In a 10-membered carbon ring, C1 and C4 are bonded to a bromine atom and an ethyl group, respectively.]
+e. [Image: In a 6-membered carbon ring, C1 and C2 are bonded to a C H (C H 3) 2 group and a methyl group, respectively.]
+f. [Image: In a 7-membered carbon ring, C1, C2, and C4 are bonded to a C (C H 3) 3 group, a methyl group, and a bromine atom, respectively.]
+
+**Answer**
+
+a. 1,4-Dimethylcyclohexane
+b. 1-Methyl-3-propylcyclopentane
+c. 3-Cyclobutylpentane
+d. 1-Bromo-4-ethylcyclodecane
+e. 1-Isopropyl-2-methylcyclohexane
+f. 4-Bromo-1-tert-butyl-2-methylcycloheptane
+
+### Exercise 4.1.2
+
+Draw structures corresponding to the following IUPAC names:
+
+a. 1,1-Dimethylcyclooctane
+b. 3-Cyclobutylhexane
+c. 1,2-Dichlorocyclopentane
+d. 1,3-Dibromo-5-methylcyclohexane
+
+**Answer**
+
+(a)
+
+[Image: In an 8-membered carbon ring, C1 is bonded to two methyl groups.]
+
+(b)
+
+[Image: The C3 of a 6-carbon chain is bonded to a 4-membered carbon ring.]
+
+(c)
+
+[Image: In a 5-membered carbon ring, C1 and C2 are each bonded to a chlorine atom.]
+
+(d)
+
+[Image: In a cyclohexane ring, C1 and C3 are each bonded to a bromine atom. C5 is bonded to a methyl group.]
+
+### Exercise 4.1.3
+
+Name the following cycloalkane:
+
+[Image: A ball and stick model has a 5-carbon ring with C1 bonded to ethyl and C3 bonded to two methyl groups. Black and gray spheres represent carbon and hydrogen, respectively.]
+
+**Answer**
+
+3-Ethyl-1,1-dimethylcyclopentane

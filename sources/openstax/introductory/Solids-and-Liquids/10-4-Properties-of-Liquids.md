@@ -24,9 +24,9 @@ During equilibrium, water is becoming vapor at an equal rate that vapor is conde
 
 Understand that the liquid has not stopped evaporating. The reverse process—condensation—is occurring as fast as evaporation, so there is no net change in the amount of vapor in the system. The term dynamic equilibrium represents a situation in which a process still occurs, but the opposite process also occurs at the same rate, so that there is no net change in the system.
 
-The vapor pressure for a substance is dependent on the temperature of the substance; as the temperature increases, so does the vapor pressure. Figure 10.4.3 - Plots of Vapor Pressure versus Temperature for Several Liquids, is a plot of vapor pressure versus temperature for several liquids. Having defined vapor pressure, we can also redefine the boiling point of a liquid: the temperature at which the vapor pressure of a liquid equals the surrounding environmental pressure. The normal vapor pressure, then, is the temperature at which the vapor pressure is 760 torr, or exactly 1 atm. Thus boiling points vary with surrounding pressure, a fact that can have large implications on cooking foods at lower- or higher-than-normal elevations. Atmospheric pressure varies significantly with altitude.
+The vapor pressure for a substance is dependent on the temperature of the substance; as the temperature increases, so does the vapor pressure. Figure 10.4.3 - Plots of Vapor Pressure versus Temperature for Several Liquids, is a plot of vapor pressure versus temperature for several liquids. Having defined vapor pressure, we can also redefine the boiling point of a liquid: the temperature at which the vapor pressure of a liquid equals the surrounding environmental pressure. The normal boiling point, then, is the temperature at which the vapor pressure is 760 torr, or exactly 1 atm. Thus boiling points vary with surrounding pressure, a fact that can have large implications on cooking foods at lower- or higher-than-normal elevations. Atmospheric pressure varies significantly with altitude.
 
-[Note: reproduced as printed. The quantity defined here is the normal boiling point: the temperature at which the vapor pressure is 760 torr (1 atm).]
+[Note: corrected; the source prints "The normal vapor pressure, then, is the temperature" where this reads "The normal boiling point, then, is the temperature". The quantity defined here is the normal boiling point: the temperature at which the vapor pressure is 760 torr (1 atm).]
 
 Figure 10.4.3: Plots of Vapor Pressure versus Temperature for Several Liquids. The vapor pressure of a liquid depends on the identity of the liquid and the temperature, as this plot shows.
 Plot of Vapor Pressure vs Temperature for several liquids.
@@ -41,9 +41,9 @@ See the accompanying figure. Five hundred torr is between 400 and 600, so we ext
 
 [Image: Plot of Vapor Pressure vs Temperature for several liquids.]
 
-By reading the graph properly, you can estimate the boiling point of a liquid at different temperatures.
+By reading the graph properly, you can estimate the boiling point of a liquid at different pressures.
 
-[Note: reproduced as printed. The graph gives boiling points at different pressures, as in the example above.]
+[Note: corrected; the source prints "of a liquid at different temperatures" where this reads "of a liquid at different pressures". The graph gives boiling points at different pressures, as in the example above.]
 
 ### Exercise 10.4.1
 

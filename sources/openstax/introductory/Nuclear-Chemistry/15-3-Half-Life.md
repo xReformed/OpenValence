@@ -103,9 +103,9 @@ The half-life of fluorine-20 is 11.0 s. If a sample initially contains 5.00 g of
 
 **Solution**
 
-Although similar to Example 3, the amount of time is not an exact multiple of a half-life. Here we identify the initial amount as 5.00 g, t = 60.0 s, and t1/2 = 11.0 s. Substituting into the equation:
+Although similar to Example 15.3.1, the amount of time is not an exact multiple of a half-life. Here we identify the initial amount as 5.00 g, t = 60.0 s, and t1/2 = 11.0 s. Substituting into the equation:
 
-[Note: "Example 3" is the numbering of an earlier edition; the example meant is Example 15.3.1.]
+[Note: corrected; the source prints "similar to Example 3," where this reads "similar to Example 15.3.1,". The source uses the numbering of an earlier edition.]
 
 amount remaining = (5.00 g) × e^{−(0.693)(60.0 s)/11.0 s}
 

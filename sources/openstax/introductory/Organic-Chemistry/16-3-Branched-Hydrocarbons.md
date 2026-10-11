@@ -141,9 +141,9 @@ Name this molecule.
 
 2,3,4-trimethyl-2-pentene
 
-Once you master naming hydrocarbons from their given structures, it is rather easy to draw a structure from a given name. Just draw the parent chain with the correct number of C atoms (putting the double or triple bond in the right position, as necessary) and add the substituents in the proper positions. If you start by drawing the C atom backbone, you can go back and complete the structure by adding H atoms to give each C atom four covalent bonds. From the name 2,3-dimethyl-4-propyl-2-heptene, we start by drawing the seven-carbon parent chain with a double bond starting at the third carbon:
+Once you master naming hydrocarbons from their given structures, it is rather easy to draw a structure from a given name. Just draw the parent chain with the correct number of C atoms (putting the double or triple bond in the right position, as necessary) and add the substituents in the proper positions. If you start by drawing the C atom backbone, you can go back and complete the structure by adding H atoms to give each C atom four covalent bonds. From the name 2,3-dimethyl-4-propyl-2-heptene, we start by drawing the seven-carbon parent chain with a double bond starting at the second carbon:
 
-[Note: reproduced as printed; in 2-heptene the double bond starts at the second carbon, as the drawing's description below shows.]
+[Note: corrected; the source prints "starting at the third carbon" where this reads "starting at the second carbon". In 2-heptene the double bond starts at the second carbon, as the drawing's description below shows.]
 
 [Image: A seven carbon chain with a double bond between the second and third carbons from the left.]
 
@@ -273,11 +273,11 @@ A unique name can be given to branched hydrocarbons. A unique structure can be d
 13. a. [Image: An eight carbon chain with two ethyl groups, one each on the third and fourth carbons.]
    b. [Image: A nine carbon chain with two methyl groups on the second carbon and a propyl group on the fourth carbon.]
 14.
-15. a. [Image: A nine carbon chain with a triple bond between the second and third carbon and an ethyl group and propyl group on the fourth carbon.]
+15. a. [Image: An eight carbon chain with a triple bond between the second and third carbon and an ethyl group and propyl group on the fourth carbon.]
    b. [Image: A ten carbon chain with two methyl groups on the second carbon and a butyl group on the fifth carbon.]
 16.
 17. [Image: A seven carbon chain with a an ethyl group on the second carbon.]
 
-[Note: in answer 15a the image description says a nine carbon chain, but the main chain of 4-ethyl-4-propyl-2-octyne has eight carbons.]
+[Note: corrected; the source prints "15. a. [Image: A nine carbon chain" where this reads "15. a. [Image: An eight carbon chain". In answer 15a, the main chain of 4-ethyl-4-propyl-2-octyne has eight carbons.]
 
 [Note: answer 17 is given only as an image, and its description doesn't match: the longest chain in "2-ethylhexane" has seven carbons, with a methyl group on the third, so the correct name is 3-methylheptane.]

@@ -102,12 +102,12 @@ It is easy to show that any general chemical equation can be written in terms of
 
 We can write it in terms of the (reverse) formation reaction of NO2 and the formation reaction of N2O4:
 
-2 × [NO2(g) → 1/2 N2(g) + O2(g)] ΔH = −2 × ΔH_r [NO2] = −2(33.1kJ)
-N2(g) + 2O2(g) → N2O4(g) ΔH = ΔH_r [N2O4] = 9.1kJ
+2 × [NO2(g) → 1/2 N2(g) + O2(g)] ΔH = −2 × ΔH_f [NO2] = −2(33.1kJ)
+N2(g) + 2O2(g) → N2O4(g) ΔH = ΔH_f [N2O4] = 9.1kJ
 ---------------------------------
 2NO2(g) → N2O4 ΔH = −57.1kJ
 
-[Note: reproduced as printed; ΔH_r here means the enthalpy of formation, ΔH_f, of NO2 and N2O4 (33.10 and 9.08 kJ/mol in Table 7.7.1).]
+[Note: corrected; the source prints "ΔH_r [NO2]" where this reads "ΔH_f [NO2]"; the source prints "ΔH_r [N2O4]" where this reads "ΔH_f [N2O4]". These are the enthalpies of formation of NO2 and N2O4 (33.10 and 9.08 kJ/mol in Table 7.7.1).]
 
 We must multiply the first reaction by 2 to get the correct overall balanced equation. We are simply using Hess's law in combining the ΔH_f values of the formation reactions.
 
@@ -165,9 +165,9 @@ Fe2O3(s) → 2Fe(s) + 3/2 O2(g)
 
 When these three equations are combined and simplified, the overall reaction is
 
-Fe2O3(s) + 3SO3(s) → Fe2(SO4)3(s)
+Fe2O3(s) + 3SO3(g) → Fe2(SO4)3(s)
 
-[Note: reproduced as printed; SO3 is a gas here, SO3(g), as in the reaction at the top of the example.]
+[Note: corrected; the source prints "3SO3(s)" where this reads "3SO3(g)". SO3 is a gas here, as in the reaction at the top of the example.]
 
 ### Exercise 7.7.3
 
@@ -178,9 +178,9 @@ Write the formation reactions that will yield
 **Answer**
 
 2 × [SO2(g) → S(s) + O2(g)]
-2 × [S(s) + 3/2 O2(g) → 2SO3(g)]
+2 × [S(s) + 3/2 O2(g) → SO3(g)]
 
-[Note: reproduced as printed, but the second formation reaction makes one SO3: S(s) + 3/2 O2(g) → SO3(g). The 2 × in front doubles it to 2SO3(g).]
+[Note: corrected; the source prints "3/2 O2(g) → 2SO3(g)]" where this reads "3/2 O2(g) → SO3(g)]". The formation reaction makes one SO3; the 2 × in front doubles it to 2SO3(g).]
 
 Now that formation reactions have been established as the major type of thermochemical reaction being examined in this chapter, is it necessary to write all of the formation reactions when the aim is to determine the enthalpy change of any random chemical reaction? No. There is an easier way. You may have noticed in all of our examples that signs are changed on the enthalpies of formation of the reactants, and signs are not changed on the enthalpies of formation of the products. We also multiply the enthalpies of formation of any substance by its coefficient—technically, even when it is just 1. This allows us to make the following statement: _the enthalpy change of any chemical reaction is equal to the sum of the enthalpies of formation of the products minus the sum of the enthalpies of formation of the reactants_. In mathematical terms,
 

@@ -38,9 +38,9 @@ Write the equilibrium equation that exists between calcium carbonate as a reacta
 
 As this is an equilibrium situation, a double arrow is used. The equilibrium equation is written as follows:
 
-CaCO3 + ⇌ CaO + CO2
+CaCO3 ⇌ CaO + CO2
 
-[Note: reproduced as printed; the "+" before ⇌ is a stray sign: CaCO3 ⇌ CaO + CO2.]
+[Note: corrected; the source prints "CaCO3 + ⇌" where this reads "CaCO3 ⇌". The plus sign before the double arrow is a stray sign; there is only one reactant.]
 
 ### Exercise 13.2.1
 
@@ -48,9 +48,9 @@ Write the equilibrium equation between elemental hydrogen and elemental oxygen a
 
 **Answer**
 
-2H2 + O2 + ⇌ 2H2O
+2H2 + O2 ⇌ 2H2O
 
-[Note: reproduced as printed; the "+" before ⇌ is a stray sign: 2H2 + O2 ⇌ 2H2O.]
+[Note: corrected; the source prints "O2 + ⇌" where this reads "O2 ⇌". The plus sign before the double arrow is a stray sign.]
 
 One thing to note about equilibrium is that the reactions do not stop; both the forward reaction and the reverse reaction continue to occur. They both occur at the same rate, so any overall change by one reaction is canceled by the reverse reaction. We say that chemical equilibrium is dynamic, rather than static. Also, because both reactions are occurring simultaneously, the equilibrium can be written backward. For example, representing an equilibrium as
 

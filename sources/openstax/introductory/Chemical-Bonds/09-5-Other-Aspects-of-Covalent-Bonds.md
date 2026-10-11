@@ -151,9 +151,9 @@ The actual ΔH is −572 kJ/mol; we are off by about 16%. Although not ideal, a 
 
 [Note: reproduced as printed, but the comparison isn't like for like. −572 kJ is ΔH for making liquid water, while bond energies describe molecules in the gas phase. For 2H2(g) + O2(g) → 2H2O(g), ΔH is about −484 kJ, so the −482 kJ estimate is very close.]
 
-### Example 9.5.1
+### Example 9.5.2
 
-[Note: the source numbers this example, and the exercise after it, 9.5.1 again; they are the section's second example and second exercise.]
+[Note: corrected; the source prints "Example 9.5.1" where this reads "Example 9.5.2". The source numbers this example 9.5.1 again; it is the section's second example.]
 
 Estimate the energy change of this reaction.
 
@@ -177,7 +177,9 @@ For the bond making:
 
 Overall, the energy change is +1,047 + (−1,176) = −129 kJ/mol.
 
-### Exercise 9.5.1
+### Exercise 9.5.2
+
+[Note: corrected; the source prints "Exercise 9.5.1" where this reads "Exercise 9.5.2". The source numbers this exercise 9.5.1 again; it is the section's second exercise.]
 
 Estimate the energy change of this reaction.
 

@@ -55,9 +55,9 @@ Molecules with a carboxyl group are called carboxylic acids. As with aldehydes, 
 
 Methanoic acid and ethanoic acid are also called formic acid and acetic acid, respectively. Formic acid is the compound that makes certain ant bites sting, while acetic acid is the active substance in vinegar.
 
-How acidic are carboxylic acids? It turns out that they are not very acidic. No carboxylic acid is on the list of strong acids (Table 16.5.1). This means that all carboxylic acids are weak acids. A 1 M solution of formic acid is only about 1.3% dissociated into H^+ ions and formate ions, while a similar solution of acetic acid is ionized by about only 0.4%. Some carboxylic acids are stronger—for example, trichloroacetic acid is about 45% dissociated in aqueous solution. But no carboxylic acid approaches the 100% dissociation amount required by the definition of a strong acid.
+How acidic are carboxylic acids? It turns out that they are not very acidic. No carboxylic acid is on the list of strong acids (Table 12.5.1). This means that all carboxylic acids are weak acids. A 1 M solution of formic acid is only about 1.3% dissociated into H^+ ions and formate ions, while a similar solution of acetic acid is ionized by about only 0.4%. Some carboxylic acids are stronger—for example, trichloroacetic acid is about 45% dissociated in aqueous solution. But no carboxylic acid approaches the 100% dissociation amount required by the definition of a strong acid.
 
-[Note: the source's table number resolves to Table 16.5.1, but this section has no table; the list of strong acids is Table 12.5.1.]
+[Note: corrected; the source prints "strong acids (Table 16.5.1)" where this reads "strong acids (Table 12.5.1)". The source's table number resolves to this section, which has no table; the list of strong acids is in Section 12.5.]
 
 As their name suggests, however, carboxylic acids do act like acids in the presence of bases. The H atom in the carboxyl group comes off as the H^+ ion, leaving a carboxylate anion:
 

@@ -71,9 +71,9 @@ A child using an albuterol inhaler, a container of albuterol medication, and a m
 | intermediate B → intermediate C | percent yield = 40% |
 | intermediate C → intermediate D | percent yield = 72% |
 | intermediate D → purified albuterol | percent yield = 35% |
-| overall percent yield = 70% × 100% × 40% × 72% × 35% = 7.5% |  |
+| overall percent yield = 70% × 100% × 40% × 72% × 35% = 7.1% |  |
 
-[Note: reproduced as printed, but 70% × 100% × 40% × 72% × 35% = 7.1%, not 7.5%, which matches the "about one-fourteenth" below.]
+[Note: corrected; the source prints "× 35% = 7.5%" where this reads "× 35% = 7.1%". 70% × 100% × 40% × 72% × 35% = 7.06%, which matches the "about one-fourteenth" below.]
 
 That is, only about _one-fourteenth_ of the original material was turned into the purified drug. This demonstrates one reason why some drugs are so expensive—a lot of material is lost in making a high-purity pharmaceutical.
 
