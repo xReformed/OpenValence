@@ -105,7 +105,6 @@ export const TOPICS: Topic[] = [
   {
     slug: "organic-and-chemical-engineering",
     title: "Organic chemistry & chemical engineering",
-    soon: true,
     summary:
       "Organic chemistry beyond the basics, and the foundation of chemical engineering: material and energy balances.",
     questions: [

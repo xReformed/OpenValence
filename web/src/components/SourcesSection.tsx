@@ -33,13 +33,13 @@ const SOURCES: {
 
 const PREPARATION = [
   "Copied word for word from the original, never summarized or rewritten.",
-  "Mistakes in the original are flagged with a note, not silently fixed.",
+  "Mistakes in the original are corrected, with a note showing what the book printed.",
   "Each citation shows the exact passage and links to the section it came from.",
 ];
 
 const NOT_COVERED = [
   "End-of-chapter practice problems",
-  "Reaction mechanisms and spectroscopy, such as NMR and IR",
+  "Organic chemistry beyond the chapters added so far",
   "Details that only appear inside a figure or diagram",
   "Anything outside chemistry, like news or regulations",
 ];

@@ -158,6 +158,42 @@ export function MenuIcon({ className }: IconProps) {
   );
 }
 
+export function UserIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" />
+    </Icon>
+  );
+}
+
+export function PencilIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z" />
+    </Icon>
+  );
+}
+
+export function CameraIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M4 8h3l1.5-2.5h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" />
+      <circle cx="12" cy="13" r="3.2" />
+    </Icon>
+  );
+}
+
+export function GearIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" />
+      <circle cx="12" cy="12" r="6.5" />
+    </Icon>
+  );
+}
+
 export function TrashIcon({ className }: IconProps) {
   return (
     <Icon className={className}>

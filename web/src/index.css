@@ -120,6 +120,414 @@
   }
 }
 
+/* An intense animation for special badges (components/BadgeArt.tsx): golden
+   rays turning behind it, a pulsing glow, a shine sweeping across the medal
+   (clipped to its shape by a mask of the same image), and sparkles. The medal
+   itself doesn't move. Everything runs on transform, opacity and filter.
+   Off entirely for reduced motion, where the badge is drawn still. */
+@keyframes badge-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(255 196 0 / 0.4)) drop-shadow(0 0 0 rgb(0 226 106 / 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgb(255 196 0 / 0.95)) drop-shadow(0 0 34px rgb(0 226 106 / 0.6));
+  }
+}
+
+@keyframes badge-rays {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes badge-rays-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Percentages are of the band's own width: from fully off the left edge to
+   fully off the right. */
+@keyframes badge-shine {
+  0% {
+    transform: translateX(-140%) skewX(-22deg);
+  }
+  50%,
+  100% {
+    transform: translateX(290%) skewX(-22deg);
+  }
+}
+
+@keyframes badge-glint {
+  0%,
+  8% {
+    transform: translateX(-200%) skewX(-22deg);
+  }
+  58%,
+  100% {
+    transform: translateX(1100%) skewX(-22deg);
+  }
+}
+
+@keyframes badge-sparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.2) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(90deg);
+  }
+}
+
+
+/* A nature animation for special badges (components/BadgeArt.tsx): a
+   breathing green aura with soft light shafts swaying behind, leaves
+   revolving around the medal and drifting down past it, fireflies rising,
+   and dappled sunlight moving over the medal, which itself stays still.
+   For reduced motion only the aura and the ring of leaves are drawn, still. */
+@keyframes nature-aura {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes nature-shafts {
+  0%,
+  100% {
+    transform: rotate(-12deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes nature-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(76 175 80 / 0.45));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgb(129 199 90 / 0.95)) drop-shadow(0 0 30px rgb(205 220 57 / 0.45));
+  }
+}
+
+@keyframes nature-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Each leaf flutters on its own as the ring carries it round. */
+@keyframes nature-flutter {
+  0%,
+  100% {
+    transform: rotate(-18deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(18deg) scale(1.1);
+  }
+}
+
+@keyframes nature-fall {
+  0% {
+    top: -14%;
+    opacity: 0;
+  }
+  12%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 104%;
+    opacity: 0;
+  }
+}
+
+@keyframes nature-sway {
+  0%,
+  100% {
+    transform: translateX(-10px) rotate(-35deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(40deg);
+  }
+}
+
+@keyframes nature-rise {
+  0% {
+    top: 92%;
+    opacity: 0;
+  }
+  20%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 8%;
+    opacity: 0;
+  }
+}
+
+@keyframes nature-wobble {
+  0%,
+  100% {
+    transform: translateX(-5px) scale(0.7);
+  }
+  50% {
+    transform: translateX(5px) scale(1.2);
+  }
+}
+
+@keyframes nature-sun {
+  0% {
+    transform: translateX(-160%) skewX(-18deg);
+  }
+  60%,
+  100% {
+    transform: translateX(300%) skewX(-18deg);
+  }
+}
+
+@keyframes nature-dapple {
+  to {
+    background-position:
+      60px 30px,
+      -40px 50px;
+  }
+}
+
+@layer components {
+  .badge-intense,
+  .badge-nature {
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+    transition:
+      filter 300ms,
+      opacity 300ms;
+  }
+  /* Locked: greyed out but still moving; hovering its card previews the colours. */
+  .badge-intense--locked,
+  .badge-nature--locked {
+    filter: grayscale(1);
+    opacity: 0.6;
+  }
+  .group:hover .badge-intense--locked,
+  .group:hover .badge-nature--locked {
+    filter: none;
+    opacity: 1;
+  }
+  .badge-intense__rays {
+    position: absolute;
+    inset: -30%;
+    z-index: -1;
+    border-radius: 50%;
+    background: repeating-conic-gradient(rgb(255 205 50 / 0.7) 0deg 5deg, transparent 5deg 15deg);
+    mask: radial-gradient(circle, #000 22%, transparent 68%);
+    animation:
+      badge-rays 5s linear infinite,
+      badge-rays-pulse 1.6s ease-in-out infinite;
+  }
+  /* A block, so the shine's box is exactly the medal's (an inline box isn't).
+     The medal itself stays still; only light moves over and around it. */
+  .badge-intense__body,
+  .badge-nature__body {
+    position: relative;
+    display: block;
+  }
+  .badge-intense__img {
+    display: block;
+    animation: badge-glow 1.6s ease-in-out infinite;
+  }
+  .badge-intense__shine {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  /* A wide bright band, then a thin glint just behind it, sweeping
+     diagonally across the whole medal. */
+  .badge-intense__shine::before,
+  .badge-intense__shine::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+  }
+  .badge-intense__shine::after {
+    width: 40%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(255 255 255 / 0.35) 30%,
+      rgb(255 255 255 / 0.95) 50%,
+      rgb(255 255 255 / 0.35) 70%,
+      transparent
+    );
+    animation: badge-shine 2.2s ease-in-out infinite;
+  }
+  .badge-intense__shine::before {
+    width: 10%;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.85), transparent);
+    animation: badge-glint 2.2s ease-in-out infinite;
+  }
+  .badge-intense__sparkle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle, #fff 20%, #ffd84d 60%);
+    clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+    animation: badge-sparkle 1.8s ease-in-out infinite;
+  }
+
+  .badge-nature__aura {
+    position: absolute;
+    inset: -22%;
+    z-index: -2;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(139 195 74 / 0.55), rgb(56 142 60 / 0.25) 45%, transparent 70%);
+    animation: nature-aura 3.2s ease-in-out infinite;
+  }
+  /* Soft shafts of light, as through a canopy, swaying rather than spinning. */
+  .badge-nature__shafts {
+    position: absolute;
+    inset: -32%;
+    z-index: -1;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+      from -20deg,
+      rgb(220 237 160 / 0.55) 0deg 9deg,
+      transparent 9deg 40deg
+    );
+    mask: radial-gradient(circle, #000 20%, transparent 66%);
+    animation:
+      nature-shafts 7s ease-in-out infinite,
+      badge-rays-pulse 3.2s ease-in-out infinite;
+  }
+  .badge-nature__img {
+    display: block;
+    animation: nature-glow 3.2s ease-in-out infinite;
+  }
+  .badge-nature__leaf {
+    position: absolute;
+    width: 16px;
+    height: 9px;
+    border-radius: 0 100%;
+    background: linear-gradient(135deg, #b5e27a, #4caf50 55%, #2e7d32);
+    box-shadow: 0 0 6px rgb(129 199 90 / 0.6);
+  }
+  /* A ring a little wider than the medal, carrying leaves round it. */
+  .badge-nature__ring {
+    position: absolute;
+    inset: -12%;
+    z-index: 1;
+    pointer-events: none;
+    animation: nature-orbit 14s linear infinite;
+  }
+  .badge-nature__ring .badge-nature__leaf {
+    margin: -4.5px 0 0 -8px;
+    animation: nature-flutter 2.4s ease-in-out infinite;
+  }
+  .badge-nature__fall {
+    margin-left: -8px;
+    z-index: 2;
+    animation:
+      nature-fall 4.8s linear infinite,
+      nature-sway 1.6s ease-in-out infinite;
+  }
+  .badge-nature__firefly {
+    position: absolute;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fffde7 15%, #e6ee9c 45%, transparent 70%);
+    box-shadow: 0 0 8px 2px rgb(220 237 120 / 0.8);
+    animation:
+      nature-rise 4s ease-in-out infinite,
+      nature-wobble 1.3s ease-in-out infinite;
+  }
+  .badge-nature__sun {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  /* Warm sunlight crossing the medal... */
+  .badge-nature__sun::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+    width: 45%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(255 249 196 / 0.35) 30%,
+      rgb(255 253 231 / 0.85) 50%,
+      rgb(255 249 196 / 0.35) 70%,
+      transparent
+    );
+    animation: nature-sun 3.6s ease-in-out infinite;
+  }
+  /* ...over light dappled as if through leaves, slowly shifting. */
+  .badge-nature__sun::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.45;
+    mix-blend-mode: soft-light;
+    background:
+      radial-gradient(circle, #fff 0 18%, transparent 30%) 0 0 / 30px 30px,
+      radial-gradient(circle, #fffde7 0 14%, transparent 26%) 12px 8px / 20px 25px;
+    animation: nature-dapple 6s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .badge-intense__rays,
+    .badge-intense__shine,
+    .badge-intense__sparkle {
+      display: none;
+    }
+    .badge-intense__img {
+      animation: none;
+    }
+    .badge-nature__shafts,
+    .badge-nature__fall,
+    .badge-nature__firefly,
+    .badge-nature__sun {
+      display: none;
+    }
+    .badge-nature__aura,
+    .badge-nature__img,
+    .badge-nature__ring,
+    .badge-nature__ring .badge-nature__leaf {
+      animation: none;
+    }
+  }
+}
+
 @utility bg-grid {
   background-image:
     linear-gradient(to right, var(--color-neutral-100) 1px, transparent 1px),

@@ -92,6 +92,15 @@ export const router = createBrowserRouter([
               return { loader: sectionLoader, Component: SectionRoute };
             },
           },
+          /* Loads on demand: it reads the books' chapter lists, like the roadmap. */
+          {
+            path: "profile",
+            lazy: async () => ({ Component: (await import("./pages/ProfilePage")).default }),
+          },
+          {
+            path: "profile/badges",
+            lazy: async () => ({ Component: (await import("./pages/BadgesPage")).default }),
+          },
           { path: "chat", loader: newChatLoader },
           { path: "chat/:chatId", Component: ChatRoute },
           { path: "*", loader: notFoundLoader },

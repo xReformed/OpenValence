@@ -179,7 +179,7 @@ const FEATURES: {
 }[] = [
   {
     title: "Grounded and cited",
-    body: "Answers come from an openly licensed chemistry textbook, not a model's fuzzy memory. Click any citation to read the exact passage.",
+    body: "Answers come from openly licensed chemistry textbooks, not a model's fuzzy memory. Click any citation to read the exact passage.",
     art: CitedAnswerArt,
   },
   {
@@ -194,7 +194,7 @@ const FEATURES: {
   },
   {
     title: "Finds the right section",
-    body: "Searches every section of the textbook and picks the passages that actually answer your question, even when you word it differently.",
+    body: "Searches every section of the textbooks and picks the passages that actually answer your question, even when you word it differently.",
     art: RetrievalArt,
     wide: true,
   },

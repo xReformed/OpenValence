@@ -9,7 +9,8 @@ import { prefersReducedMotion, useReveal } from "../hooks/useReveal";
 import SiteFooter from "../components/SiteFooter";
 import SourcesSection from "../components/SourcesSection";
 import TopNavBar from "../components/TopNavBar";
-import { TOPICS } from "../lib/topics";
+import { BOOK_COUNT, READY_SECTIONS } from "../lib/corpusStats.generated";
+import { TOPICS, askHref } from "../lib/topics";
 import {
   ArrowRightIcon,
   BookIcon,
@@ -32,10 +33,17 @@ const DEMO_QUESTION =
 
 const DEMO_STEPS = [
   "Understanding the question",
-  "Searching 234 textbook sections",
+  `Searching ${READY_SECTIONS.toLocaleString("en-US")} textbook sections`,
   "Found: 5.6 Yields (Beginning Chemistry)",
   "Writing a grounded answer",
   "Attaching citations",
+];
+
+/* Under the hero's buttons; the counts come from the corpus (npm run gen:paths). */
+const TRUST_POINTS = [
+  `${BOOK_COUNT} open textbooks`,
+  `${READY_SECTIONS.toLocaleString("en-US")} sections, word for word`,
+  "Every claim cited",
 ];
 
 const FIRST_STEP_MS = 1100;
@@ -146,6 +154,14 @@ function ProductPreview() {
                 finished ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
               }`}
             >
+              <p className="mb-3 text-xs leading-relaxed text-neutral-600">
+                The percent yield is <span className="font-medium text-neutral-900">73.8%</span>:
+                30.5 g of zinc could make 88.3 g of zinc nitrate, and 65.2 g
+                was collected.
+                <sup className="text-accent-ink ml-0.5 rounded bg-neutral-100 px-1 py-px text-[0.6rem] font-medium">
+                  1
+                </sup>
+              </p>
               <p className="mb-2 text-xs font-medium">
                 Percent yield (actual ÷ theoretical × 100%)
               </p>
@@ -198,6 +214,45 @@ function PrimaryButton({ className = "" }: { className?: string }) {
   );
 }
 
+/* Each one is answerable from the current corpus (Beginning Chemistry 10.2 and
+   7.6, Organic Chemistry 1.9). */
+const CLOSING_QUESTIONS = [
+  "Why does water have a much higher boiling point than hydrogen sulfide?",
+  "What is Hess's law?",
+  "What is the hybridization and bond angle at the carbon atoms in a carbon-carbon triple bond?",
+];
+
+function ClosingCall() {
+  return (
+    <section className="py-20">
+      <Reveal>
+        <div className="rounded-3xl border border-neutral-200 bg-white px-6 py-12 text-center sm:px-12 sm:py-16">
+          <h2 className="mx-auto max-w-2xl text-4xl leading-[1.1] tracking-tight text-balance sm:text-5xl">
+            Have a chemistry question?
+          </h2>
+          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-neutral-500">
+            Ask it the way you'd ask a tutor. Every answer shows the textbook
+            passage it came from.
+          </p>
+          <ul className="mx-auto mt-9 flex max-w-3xl flex-wrap justify-center gap-2.5">
+            {CLOSING_QUESTIONS.map((question) => (
+              <li key={question}>
+                <Link
+                  to={askHref(question)}
+                  className="hover:border-accent-ink inline-block rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2 text-left text-sm text-neutral-700 transition-colors hover:text-neutral-900"
+                >
+                  {question}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <PrimaryButton className="mt-10" />
+        </div>
+      </Reveal>
+    </section>
+  );
+}
+
 export default function LandingPage() {
   /* The router doesn't scroll to #anchors on its own, and the nav links here
      are router links so they also work from topic pages. */
@@ -237,6 +292,16 @@ export default function LandingPage() {
                 See how it works
               </Link>
             </Reveal>
+            <Reveal delay={330}>
+              <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
+                {TRUST_POINTS.map((point) => (
+                  <li key={point} className="flex items-center gap-2">
+                    <CheckIcon className="text-accent-ink h-4 w-4 shrink-0" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
           </div>
 
           <Reveal delay={350}>
@@ -257,8 +322,8 @@ export default function LandingPage() {
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-neutral-500">
               Covers all 16 chapters of Beginning Chemistry, the introductory
-              chemistry sequence, and the start of OpenStax Organic Chemistry,
-              with more subjects and tools on the way.
+              chemistry sequence, and a growing share of OpenStax Organic
+              Chemistry, with more subjects and tools on the way.
             </p>
             <PrimaryButton className="mt-9" />
           </Reveal>
@@ -292,6 +357,8 @@ export default function LandingPage() {
         <HowItWorksSection />
 
         <SourcesSection />
+
+        <ClosingCall />
       </main>
 
       <SiteFooter />
