@@ -6,3 +6,12 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- alkyl halide
+- allylic
+- carbanion
+- delocalized
+- Gilman reagent (LiR2Cu)
+- Grignard reagent (RMgX)
+- organohalide
+- organometallic

@@ -30,6 +30,8 @@ for section in find_sections(sys.argv[1:]):
     for n, line in enumerate(open(path, encoding="utf8"), 1):
         if line.startswith(("title:", "source_url:")):
             continue  # front matter is copied, not converted
+        if line.startswith("[Note:"):
+            continue  # a note quotes what the source printed, leftovers and all
         # ^{…} is a deliberate superscript group (an exponent with parentheses).
         checked = re.sub(r"\^\{[^{}]*\}", "", line)
         for name, rx in PATTERNS.items():

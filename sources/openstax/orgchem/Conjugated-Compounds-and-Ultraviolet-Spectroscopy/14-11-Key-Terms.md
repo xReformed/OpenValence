@@ -6,3 +6,19 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- 1,2-addition
+- 1,4-addition
+- conjugated
+- Diels–Alder cycloaddition reaction
+- dienophile
+- endo
+- exo
+- highest occupied molecular orbital (HOMO)
+- kinetic control
+- lowest unoccupied molecular orbital (LUMO)
+- molar absorptivity (ε )
+- s-cis conformation
+- stereospecific
+- thermodynamic control
+- ultraviolet (UV) spectroscopy

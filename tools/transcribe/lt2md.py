@@ -7,6 +7,7 @@ boxes the way the rest of sources/openstax does.
 """
 import re
 import sys
+import unicodedata
 from html.parser import HTMLParser
 
 SEC = sys.argv[2]
@@ -28,6 +29,7 @@ SYMBOLS = {
     # layout-only commands: drop
     "left": "", "right": "", "nonumber": "", "displaystyle": "", "mathbf": "",
     "boldsymbol": "", "mathit": "", "cancel": "", "bcancel": "", "xcancel": "",
+    "overline": "",  # the bar over a carbanion carbon in a Wittig ylide (Organic Chemistry 19.11)
 }
 
 
@@ -56,7 +58,11 @@ def expand_frac(s):
     while (k := s.find("\\frac")) >= 0:
         num, after = brace_group(s, s.index("{", k))
         den, end = brace_group(s, s.index("{", after))
-        s = s[:k] + wrap(expand_frac(num)) + "/" + wrap(expand_frac(den)) + s[end:]
+        frac = wrap(expand_frac(num)) + "/" + wrap(expand_frac(den))
+        # The argument of a function: \log \dfrac{I_0}{I} -> log((I0)/I), not log(I0)/I.
+        if re.search(r"(?:\\|\b)(?:log|ln|exp|sin|cos|tan)\s*$", s[:k]):
+            frac = f"({frac})"
+        s = s[:k] + frac + s[end:]
     return s
 
 
@@ -70,6 +76,11 @@ def tex_arg(s, i):
     if i < len(s) and s[i] == "{":
         return brace_group(s, i)
     return s[i:i + 1], i + 1
+
+
+def tilde(letter):
+    """A letter with a tilde over it, precomposed where Unicode has one (ṽ)."""
+    return unicodedata.normalize("NFC", letter + "̃")
 
 
 def mark(text, combining):
@@ -157,6 +168,8 @@ def tex(s):
     s = lewis_dots(s)
     s = s.replace("\\dfrac", "\\frac").replace("\\tfrac", "\\frac").replace("\\%", "%")
     s = re.sub(r"\\label\{[^{}]*\}", "", s)  # equation labels are never displayed
+    s = re.sub(r"\\tilde\{?(\w)\}?", lambda m: tilde(m.group(1)), s)  # \tilde{v}: wavenumber ṽ
+    s = re.sub(r"\\color\{\w+\}", "", s)  # \color{red}: colour can't be shown; a [Note] says what it marked
     # \begin{align*} x + (−6) &= −1 \\ x &= +5 \end{align*}: drop the environment
     # and its alignment marks; the line breaks between steps are kept.
     s = re.sub(r"\\(?:begin|end)\{(?:align|aligned|eqnarray|gather|split)\*?\}", "", s)
@@ -694,9 +707,12 @@ def line_breaks(paragraph):
     return re.sub(" ?\x06 ?", "; " if inline else "\n\n", paragraph)
 
 
+# A bare end-of-chapter problem label left on a page with no problem after it
+# ("Problem 11-20" at the end of Organic Chemistry 11.12).
+STRAY = re.compile(r"[\s.,;:↵]*|Problem \d+-\d+")
 text = "\n\n".join(
     line_breaks(repair_broken_image(p))
-    for p in mark_example_ends([p for p in page.out if p == BOX_END or not re.fullmatch(r"[\s.,;:↵]*", p)])
+    for p in mark_example_ends([p for p in page.out if p == BOX_END or not STRAY.fullmatch(p.strip())])
 )  # also drops stray "." / "↵" paragraphs
 text = re.sub(" ?\x05 ?", "    ", text)  # column gaps from TeX spacing
 text = re.sub(r"(?m)^(#{3,4} (?:Example|Exercise) [\d.]+):[ \t]*$", r"\1", text)  # "Example 13.5.1:"
@@ -706,8 +722,10 @@ text = re.sub(r'\[Image: ([^\]\n]*?)\s*<span class=\]\n\n([^"\n]*)"\s+style="[^\
 text = re.sub(r"(?m)^(#{3,4}) [.,;:]+\s*(?=(?:Example|Exercise)\b)", r"\1 ", text)  # ".Exercise 13.3.4"
 text = re.sub(r"(?m)[ \t]+$", "", text)
 text = re.sub(r"\^\s+", "^", text)
-text = re.sub(r"\^(\d+)\^([+−–])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+</sup>, CO3<sup>2</sup><sup>–</sup>
+text = re.sub(r"\^(\d+|n)\^([+−–])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+</sup>, CO3<sup>2</sup><sup>–</sup>, M + H_n<sup>n</sup><sup>+</sup>
 text = text.replace("^°", "°")  # 180<sup>°</sup> (Organic Chemistry): the degree sign is just text
+# MathML <mover accent><mi>v</mi><mo>&tilde;</mo></mover> comes out "v˜": the wavenumber ṽ.
+text = re.sub(r"(\w)˜", lambda m: tilde(m.group(1)), text)
 text = re.sub(r"\^([+−])\^(\d)", r"^\1\2", text)  # 10<sup>−</sup><sup>10</sup>
 text = text.replace("(opens in new window)", "")  # link label for screen readers
 text = text.replace("​", "").replace("﻿", "")  # zero-width spaces ("World War ​​II")

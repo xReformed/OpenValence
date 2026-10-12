@@ -71,11 +71,12 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 | `lt2md.py` | The converter: one page in, markdown out. `python lt2md.py <page.html> <section, e.g. 16.3>` |
 | `fill.py` | Converts downloaded pages and writes them into the corpus, carrying over existing notes. `--preview` to review first, `--force` to replace changed sections |
 | `regress.py` | Re-converts written sections and diffs them against the corpus, ignoring notes |
-| `scan.py` | Flags leftovers: stray TeX, braces, doubled carets, `H2 O`-style spacing, lone punctuation |
+| `scan.py` | Flags leftovers: stray TeX, braces, doubled carets, `H2 O`-style spacing, lone punctuation. `[Note: …]` lines are skipped, since they quote what the source printed |
 | `paths.py` | Shared helpers: finding section files and where their pages are kept |
 
 ## Known quirks
 
 - `scan.py` flags the braces in the quantum-number sets of 8.3 and 8.4 (`{1, 0, 0, +1/2}`); they are printed that way in the source.
+- `scan.py` flags the braces around HMPA's formula in *Organic Chemistry* 11.3 (`{[(CH3)2N]3PO, abbreviated HMPA}`); they are printed that way in the source.
 - LibreTexts numbers some appendices as a chapter (*Chemistry* 1e has a "22: Appendices" chapter of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
 - LibreTexts pages are inconsistent, so the converter carries many page-specific repairs (broken `alt` attributes, pre-rendered MathJax, Example boxes closed mid-solution). Each is commented where it is handled in `lt2md.py`.

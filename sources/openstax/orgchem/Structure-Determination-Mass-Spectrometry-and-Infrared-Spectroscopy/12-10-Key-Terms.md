@@ -6,3 +6,21 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- absorption spectrum
+- amplitude
+- base peak
+- cation radical
+- electromagnetic spectrum
+- frequency, ν
+- hertz, Hz,
+- infrared (IR) spectroscopy
+- MALDI
+- mass spectrometry (MS)
+- McLafferty Rearrangement
+- parent peak
+- photon
+- quadrupole mass analyzer
+- Time of Flight (TOF)
+- wavelength, λ
+- wavenumber, ṽ

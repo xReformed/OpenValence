@@ -22,7 +22,9 @@ Although essentially free rotation around single bonds is possible (Section 3.6)
 Figure 7.4.1: The π bond must break for rotation to take place around a carbon–carbon double bond.
 An orbital diagram with two parallel p orbitals before rotation. After rotation the p orbitals are perpendicular, which breaks the double bond.
 
-The lack of rotation around carbon–carbon double bonds is of more than just theoretical interest; it also has chemical consequences. Imagine the situation for a disubstituted alkene such as 2-butene. (Disubstituted means that two substituents other than hydrogen are bonded to the double-bond carbons.) The two methyl groups in 2-butene can either be on the same side of the double bond or on opposite sides, a situation similar to that in disubstituted cycloalkanes (Section 4.3).
+The lack of rotation around carbon–carbon double bonds is of more than just theoretical interest; it also has chemical consequences. Imagine the situation for a disubstituted alkene such as 2-butene. (Disubstituted means that two substituents other than hydrogen are bonded to the double-bond carbons.) The two methyl groups in 2-butene can either be on the same side of the double bond or on opposite sides, a situation similar to that in disubstituted cycloalkanes (Section 4.2).
+
+[Note: corrected; the source prints "disubstituted cycloalkanes (Section 4.3)" where this reads "disubstituted cycloalkanes (Section 4.2)". The book's cross-reference points one section ahead of these pages. Cis–trans isomerism in disubstituted cycloalkanes is covered in Section 4.2 (Cis-Trans Isomerism in Cycloalkanes); Section 4.3 is Stability of Cycloalkanes: Ring Strain.]
 
 Since bond rotation can’t occur, the two 2-butenes can’t spontaneously interconvert; they are different, isolable compounds. As with disubstituted cycloalkanes, we call such compounds cis–trans stereoisomers. The compound with substituents on the same side of the double bond is called cis-2-butene, and the isomer with substituents on opposite sides is trans-2-butene (Figure 7.4.2).
 

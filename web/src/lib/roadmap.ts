@@ -74,7 +74,7 @@ export const BRANCHES: Branch[] = [
       {
         title: "Organic Chemistry (OpenStax)",
         license: "CC BY-NC-SA 4.0",
-        progress: "Chapters 1–9 of 31",
+        progress: "Chapters 1–19 of 31",
         complete: false,
       },
     ],

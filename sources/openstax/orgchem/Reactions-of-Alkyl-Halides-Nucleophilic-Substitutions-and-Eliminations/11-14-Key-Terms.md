@@ -6,3 +6,27 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- anti periplanar
+- benzylic
+- bimolecular
+- deuterium isotope effect
+- E1 reaction
+- E1cB reaction
+- E2 reaction
+- first-order reaction
+- ion pair
+- kinetics
+- leaving group
+- nucleophilic substitution reaction
+- periplanar
+- rate-determining step
+- rate-limiting step
+- second-order reaction
+- S_N1 reaction
+- S_N2 reaction
+- solvation
+- syn periplanar
+- tosylate
+- unimolecular
+- Zaitsev’s rule

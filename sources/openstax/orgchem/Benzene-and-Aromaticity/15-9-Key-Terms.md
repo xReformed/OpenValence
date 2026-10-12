@@ -6,3 +6,16 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- antiaromatic
+- arene
+- aromatic
+- benzyl group
+- degenerate orbitals
+- heterocycle
+- Hückel 4n + 2 rule
+- meta (m)
+- ortho (o)
+- para (p)
+- phenyl group
+- ring-current

@@ -1806,91 +1806,91 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "10.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.00%3A_Why_This_Chapter"
         },
         {
           "number": "10.1",
           "title": "Names and Properties of Alkyl Halides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-1-Names-and-Properties-of-Alkyl-Halides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.01%3A_Names_and_Properties_of_Alkyl_Halides"
         },
         {
           "number": "10.2",
           "title": "Preparing Alkyl Halides from Alkanes - Radical Halogenation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-2-Preparing-Alkyl-Halides-from-Alkanes-Radical-Halogenation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.02%3A_Preparing_Alkyl_Halides_from__Alkanes_-_Radical_Halogenation"
         },
         {
           "number": "10.3",
           "title": "Preparing Alkyl Halides from Alkenes - Allylic Bromination",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-3-Preparing-Alkyl-Halides-from-Alkenes-Allylic-Bromination.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.03%3A_Preparing_Alkyl_Halides_from_Alkenes_-_Allylic_Bromination"
         },
         {
           "number": "10.4",
           "title": "Stability of the Allyl Radical - Resonance Revisited",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-4-Stability-of-the-Allyl-Radical-Resonance-Revisited.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.04%3A_Stability_of_the_Allyl_Radical_-_Resonance_Revisited"
         },
         {
           "number": "10.5",
           "title": "Preparing Alkyl Halides from Alcohols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-5-Preparing-Alkyl-Halides-from-Alcohols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.05%3A_Preparing_Alkyl_Halides_from_Alcohols"
         },
         {
           "number": "10.6",
           "title": "Reactions of Alkyl Halides - Grignard Reagents",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-6-Reactions-of-Alkyl-Halides-Grignard-Reagents.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.06%3A_Reactions_of_Alkyl_Halides_-_Grignard_Reagents"
         },
         {
           "number": "10.7",
           "title": "Organometallic Coupling Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-7-Organometallic-Coupling-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.07%3A_Organometallic_Coupling_Reactions"
         },
         {
           "number": "10.8",
           "title": "Oxidation and Reduction in Organic Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-8-Oxidation-and-Reduction-in-Organic-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.08%3A_Oxidation_and_Reduction_in_Organic_Chemistry"
         },
         {
           "number": "10.9",
           "title": "Chemistry Matters - Naturally Occurring Organohalides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-9-Chemistry-Matters-Naturally-Occurring-Organohalides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.09%3A_Chemistry_MattersNaturally_Occurring_Organohalides"
         },
         {
           "number": "10.10",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-10-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.10%3A_Key_Terms"
         },
         {
           "number": "10.11",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-11-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.11%3A_Summary"
         },
         {
           "number": "10.12",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Organohalides/10-12-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/10%3A_Organohalides/10.12%3A_Summary_of_Reactions"
         }
@@ -1903,119 +1903,119 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "11.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.00%3A_Why_This_Chapter"
         },
         {
           "number": "11.1",
           "title": "The Discovery of Nucleophilic Substitution Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-1-The-Discovery-of-Nucleophilic-Substitution-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.01%3A_The_Discovery_of_Nucleophilic_Substitution_Reactions"
         },
         {
           "number": "11.2",
           "title": "The Sₙ2 Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-2-The-Sn2-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.02%3A_The_SN2_Reaction"
         },
         {
           "number": "11.3",
           "title": "Characteristics of the SN2 Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-3-Characteristics-of-the-SN2-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.03%3A_Characteristics_of_the_SN2_Reaction"
         },
         {
           "number": "11.4",
           "title": "The SN1 Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-4-The-SN1-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.4%3A_The_(S_N1)_Reaction"
         },
         {
           "number": "11.5",
           "title": "Characteristics of the SN1 Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-5-Characteristics-of-the-SN1-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.05%3A_Characteristics_of_the_SN1_Reaction"
         },
         {
           "number": "11.6",
           "title": "Biological Substitution Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-6-Biological-Substitution-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.06%3A_Biological_Substitution_Reactions"
         },
         {
           "number": "11.7",
           "title": "Elimination Reactions- Zaitsev's Rule",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-7-Elimination-Reactions-Zaitsevs-Rule.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.07%3A_Elimination_Reactions-_Zaitsev's_Rule"
         },
         {
           "number": "11.8",
           "title": "The E2 Reaction and the Deuterium Isotope Effect",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-8-The-E2-Reaction-and-the-Deuterium-Isotope-Effect.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.08%3A_The_E2_Reaction_and_the_Deuterium_Isotope_Effect"
         },
         {
           "number": "11.9",
           "title": "The E2 Reaction and Cyclohexane Conformation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-9-The-E2-Reaction-and-Cyclohexane-Conformation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.09%3A_The_E2_Reaction_and_Cyclohexane__Conformation"
         },
         {
           "number": "11.10",
           "title": "The E1 and E1cB Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-10-The-E1-and-E1cB-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.10%3A_The_E1_and_E1cB_Reactions"
         },
         {
           "number": "11.11",
           "title": "Biological Elimination Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-11-Biological-Elimination-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.11%3A_Biological_Elimination_Reactions"
         },
         {
           "number": "11.12",
           "title": "A Summary of Reactivity - SN1, SN2, E1, E1cB, and E2",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-12-A-Summary-of-Reactivity-SN1-SN2-E1-E1cB-and-E2.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.12%3A_A_Summary_of_Reactivity_-_SN1_SN2_E1_E1cB_and_E2"
         },
         {
           "number": "11.13",
           "title": "Chemistry Matters—Green Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-13-Chemistry-Matters-Green-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.13%3A_Chemistry_MattersGreen_Chemistry"
         },
         {
           "number": "11.14",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-14-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.14%3A_Key_Terms"
         },
         {
           "number": "11.15",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-15-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.15%3A_Summary"
         },
         {
           "number": "11.16",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Reactions-of-Alkyl-Halides-Nucleophilic-Substitutions-and-Eliminations/11-16-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/11%3A_Reactions_of_Alkyl_Halides-_Nucleophilic_Substitutions_and_Eliminations/11.16%3A_Summary_of_Reactions"
         }
@@ -2028,84 +2028,84 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "12.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.00%3A_Why_This_Chapter"
         },
         {
           "number": "12.1",
           "title": "Mass Spectrometry of Small Molecules - Magnetic-Sector Instruments",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-1-Mass-Spectrometry-of-Small-Molecules-Magnetic-Sector-Instruments.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.01%3A_Mass_Spectrometry_of_Small_Molecules_-_Magnetic-Sector_Instruments"
         },
         {
           "number": "12.2",
           "title": "Interpreting Mass Spectra",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-2-Interpreting-Mass-Spectra.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.02%3A_Interpreting_Mass_Spectra"
         },
         {
           "number": "12.3",
           "title": "Mass Spectrometry of Some Common Functional Groups",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-3-Mass-Spectrometry-of-Some-Common-Functional-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.03%3A_Mass_Spectrometry_of_Some_Common_Functional_Groups"
         },
         {
           "number": "12.4",
           "title": "Mass Spectrometry in Biological - Time-of-flight (TOF) Instruments",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-4-Mass-Spectrometry-in-Biological-Time-of-flight-TOF-Instruments.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.04%3A_Mass_Spectrometry_in_Biological_-_Time-of-flight_(TOF)_Instruments"
         },
         {
           "number": "12.5",
           "title": "Spectroscopy and the Electromagnetic Spectrum",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-5-Spectroscopy-and-the-Electromagnetic-Spectrum.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.05%3A_Spectroscopy_and_the_Electromagnetic_Spectrum"
         },
         {
           "number": "12.6",
           "title": "Infrared Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-6-Infrared-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.06%3A_Infrared_Spectroscopy"
         },
         {
           "number": "12.7",
           "title": "Interpreting Infrared Spectra",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-7-Interpreting-Infrared-Spectra.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.07%3A_Interpreting_Infrared_Spectra"
         },
         {
           "number": "12.8",
           "title": "Infrared Spectra of Some Common Functional Groups",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-8-Infrared-Spectra-of-Some-Common-Functional-Groups.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.08%3A_Infrared_Spectra_of_Some_Common_Functional_Groups"
         },
         {
           "number": "12.9",
           "title": "Chemistry Matters—X-Ray Crystallography",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-9-Chemistry-Matters-X-Ray-Crystallography.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.09%3A_Chemistry_MattersX-Ray_Crystallography"
         },
         {
           "number": "12.10",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-10-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.10%3A_Key_Terms"
         },
         {
           "number": "12.11",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Mass-Spectrometry-and-Infrared-Spectroscopy/12-11-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/12%3A_Structure_Determination_-_Mass_Spectrometry_and_Infrared_Spectroscopy/12.11%3A_Summary"
         }
@@ -2118,119 +2118,119 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "13.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.00%3A_Why_This_Chapter"
         },
         {
           "number": "13.1",
           "title": "Nuclear Magnetic Resonance Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-1-Nuclear-Magnetic-Resonance-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.01%3A_Nuclear_Magnetic_Resonance__Spectroscopy"
         },
         {
           "number": "13.2",
           "title": "The Nature of NMR Absorptions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-2-The-Nature-of-NMR-Absorptions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.02%3A_The_Nature_of_NMR_Absorptions"
         },
         {
           "number": "13.3",
           "title": "Chemical Shifts",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-3-Chemical-Shifts.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.03%3A_Chemical_Shifts"
         },
         {
           "number": "13.4",
           "title": "Chemical Shifts in ¹H NMR Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-4-Chemical-Shifts-in-1H-NMR-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.04%3A_Chemical_Shifts_in_H_NMR__Spectroscopy"
         },
         {
           "number": "13.5",
           "title": "Integration of ¹H NMR Absorptions- Proton Counting",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-5-Integration-of-1H-NMR-Absorptions-Proton-Counting.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.05%3A_Integration_of_H_NMR_Absorptions-_Proton_Counting"
         },
         {
           "number": "13.6",
           "title": "Spin-Spin Splitting in ¹H NMR Spectra",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-6-Spin-Spin-Splitting-in-1H-NMR-Spectra.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.06%3A_Spin-Spin_Splitting_in_H_NMR__Spectra"
         },
         {
           "number": "13.7",
           "title": "¹H NMR Spectroscopy and Proton Equivalence",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-7-1H-NMR-Spectroscopy-and-Proton-Equivalence.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.07%3A_H_NMR_Spectroscopy_and_Proton_Equivalence"
         },
         {
           "number": "13.8",
           "title": "More Complex Spin-Spin Splitting Patterns",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-8-More-Complex-Spin-Spin-Splitting-Patterns.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.08%3A_More_Complex_Spin-Spin_Splitting_Patterns"
         },
         {
           "number": "13.9",
           "title": "Uses of ¹H NMR Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-9-Uses-of-1H-NMR-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.09%3A_Uses_of_H_NMR_Spectroscopy"
         },
         {
           "number": "13.10",
           "title": "¹³C NMR Spectroscopy - Signal Averaging and FT-NMR",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-10-13C-NMR-Spectroscopy-Signal-Averaging-and-FT-NMR.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.10%3A_C_NMR_Spectroscopy_-_Signal_Averaging_and_FT-NMR"
         },
         {
           "number": "13.11",
           "title": "Characteristics of ¹³C NMR Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-11-Characteristics-of-13C-NMR-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.11%3A_Characteristics_of_C_NMR_Spectroscopy"
         },
         {
           "number": "13.12",
           "title": "DEPT ¹³C NMR Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-12-DEPT-13C-NMR-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.12%3A_DEPT_C_NMR_Spectroscopy"
         },
         {
           "number": "13.13",
           "title": "Uses of ¹³C NMR Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-13-Uses-of-13C-NMR-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.13%3A_Uses_of_C_NMR_Spectroscopy"
         },
         {
           "number": "13.14",
           "title": "Chemistry Matters—Magnetic Resonance Imaging (MRI)",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-14-Chemistry-Matters-Magnetic-Resonance-Imaging-MRI.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.14%3A_Chemistry_MattersMagnetic_Resonance_Imaging_(MRI)"
         },
         {
           "number": "13.15",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-15-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.15%3A_Key_Terms"
         },
         {
           "number": "13.16",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Structure-Determination-Nuclear-Magnetic-Resonance-Spectroscopy/13-16-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/13%3A_Structure_Determination_-_Nuclear_Magnetic_Resonance_Spectroscopy/13.16%3A_Summary"
         }
@@ -2243,98 +2243,98 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "14.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.00%3A_Why_This_Chapter"
         },
         {
           "number": "14.1",
           "title": "Stability of Conjugated Dienes- Molecular Orbital Theory",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-1-Stability-of-Conjugated-Dienes-Molecular-Orbital-Theory.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.01%3A_Stability_of_Conjugated_Dienes-_Molecular_Orbital_Theory"
         },
         {
           "number": "14.2",
           "title": "Electrophilic Additions to Conjugated Dienes- Allylic Carbocations",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-2-Electrophilic-Additions-to-Conjugated-Dienes-Allylic-Carbocations.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.02%3A_Electrophilic_Additions_to_Conjugated_Dienes-_Allylic_Carbocations"
         },
         {
           "number": "14.3",
           "title": "Kinetic vs. Thermodynamic Control of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-3-Kinetic-vs-Thermodynamic-Control-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.03%3A_Kinetic_vs._Thermodynamic_Control_of_Reactions"
         },
         {
           "number": "14.4",
           "title": "The Diels-Alder Cycloaddition Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-4-The-Diels-Alder-Cycloaddition-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.04%3A_The_Diels-Alder_Cycloaddition_Reaction"
         },
         {
           "number": "14.5",
           "title": "Characteristics of the Diels-Alder Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-5-Characteristics-of-the-Diels-Alder-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.05%3A_Characteristics_of_the_Diels-Alder_Reaction"
         },
         {
           "number": "14.6",
           "title": "Diene Polymers - Natural and Synthetic Rubbers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-6-Diene-Polymers-Natural-and-Synthetic-Rubbers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.06%3A_Diene_Polymers-_Natural_and_Synthetic_Rubbers"
         },
         {
           "number": "14.7",
           "title": "Ultraviolet Spectroscopy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-7-Ultraviolet-Spectroscopy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.07%3A_Ultraviolet_Spectroscopy"
         },
         {
           "number": "14.8",
           "title": "Interpreting Ultraviolet Spectra- The Effect of Conjugation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-8-Interpreting-Ultraviolet-Spectra-The-Effect-of-Conjugation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.08%3A_Interpreting_Ultraviolet_Spectra-_The_Effect_of_Conjugation"
         },
         {
           "number": "14.9",
           "title": "Conjugation, Color, and the Chemistry of Vision",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-9-Conjugation-Color-and-the-Chemistry-of-Vision.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.09%3A_Conjugation_Color_and_the_Chemistry_of_Vision"
         },
         {
           "number": "14.10",
           "title": "Chemistry Matters—Photolithography",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-10-Chemistry-Matters-Photolithography.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.10%3A_Chemistry_MattersPhotolithography"
         },
         {
           "number": "14.11",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-11-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.11%3A_Key_Terms"
         },
         {
           "number": "14.12",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-12-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.12%3A_Summary"
         },
         {
           "number": "14.13",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Conjugated-Compounds-and-Ultraviolet-Spectroscopy/14-13-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/14%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/14.13%3A_Summary_of_Reactions"
         }
@@ -2347,77 +2347,77 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "15.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.00%3A_Why_This_Chapter"
         },
         {
           "number": "15.1",
           "title": "Naming Aromatic Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-1-Naming-Aromatic-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.01%3A_Naming_Aromatic_Compounds"
         },
         {
           "number": "15.2",
           "title": "Structure and Stability of Benzene",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-2-Structure-and-Stability-of-Benzene.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.02%3A_Structure_and_Stability_of_Benzene"
         },
         {
           "number": "15.3",
           "title": "Aromaticity and the Hückel 4n + 2 Rule",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-3-Aromaticity-and-the-Huckel-4n-2-Rule.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.03%3A_Aromaticity_and_the_Huckel_4n__2_Rule"
         },
         {
           "number": "15.4",
           "title": "Aromatic Ions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-4-Aromatic-Ions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.04%3A_Aromatic_Ions"
         },
         {
           "number": "15.5",
           "title": "Aromatic Heterocycles - Pyridine and Pyrrole",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-5-Aromatic-Heterocycles-Pyridine-and-Pyrrole.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.05%3A_Aromatic_Heterocycles_-_Pyridine_and_Pyrrole"
         },
         {
           "number": "15.6",
           "title": "Polycyclic Aromatic Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-6-Polycyclic-Aromatic-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.06%3A_Polycyclic_Aromatic_Compounds"
         },
         {
           "number": "15.7",
           "title": "Spectroscopy of Aromatic Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-7-Spectroscopy-of-Aromatic-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.07%3A_Spectroscopy_of_Aromatic_Compounds"
         },
         {
           "number": "15.8",
           "title": "Chemistry Matters—Aspirin, NSAIDs, and COX-2 Inhibitors",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-8-Chemistry-Matters-Aspirin-NSAIDs-and-COX-2-Inhibitors.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.08%3A_Chemistry_MattersAspirin_NSAIDs_and_COX-2_Inhibitors"
         },
         {
           "number": "15.9",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-9-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.09%3A_Key_Terms"
         },
         {
           "number": "15.10",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Benzene-and-Aromaticity/15-10-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/15%3A_Benzene_and_Aromaticity/15.10%3A_Summary"
         }
@@ -2430,105 +2430,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "16.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.00%3A_Why_This_Chapter"
         },
         {
           "number": "16.1",
           "title": "Electrophilic Aromatic Substitution Reactions - Bromination",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-1-Electrophilic-Aromatic-Substitution-Reactions-Bromination.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.01%3A_Electrophilic_Aromatic_Substitution_Reactions_-_Bromination"
         },
         {
           "number": "16.2",
           "title": "Other Aromatic Substitutions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-2-Other-Aromatic-Substitutions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.02%3A_Other_Aromatic_Substitutions"
         },
         {
           "number": "16.3",
           "title": "Alkylation and Acylation of Aromatic Rings - The Friedel-Crafts Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-3-Alkylation-and-Acylation-of-Aromatic-Rings-The-Friedel-Crafts-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.03%3A_Alkylation_and_Acylation_of_Aromatic_Rings_-_The_Friedel-Crafts_Reaction"
         },
         {
           "number": "16.4",
           "title": "Substituent Effects in Electrophilic Substitutions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-4-Substituent-Effects-in-Electrophilic-Substitutions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.04%3A_Substituent_Effects_in_Electrophilic_Substitutions"
         },
         {
           "number": "16.5",
           "title": "Trisubstituted Benzenes- Additivity of Effects",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-5-Trisubstituted-Benzenes-Additivity-of-Effects.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.05%3A_Trisubstituted_Benzenes-_Additivity_of_Effects"
         },
         {
           "number": "16.6",
           "title": "Nucleophilic Aromatic Substitution",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-6-Nucleophilic-Aromatic-Substitution.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.06%3A_Nucleophilic_Aromatic_Substitution"
         },
         {
           "number": "16.7",
           "title": "Benzyne",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-7-Benzyne.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.07%3A_Benzyne"
         },
         {
           "number": "16.8",
           "title": "Oxidation of Aromatic Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-8-Oxidation-of-Aromatic-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.08%3A_Oxidation_of_Aromatic_Compounds"
         },
         {
           "number": "16.9",
           "title": "Reduction of Aromatic Compounds",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-9-Reduction-of-Aromatic-Compounds.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.09%3A_Reduction_of_Aromatic_Compounds"
         },
         {
           "number": "16.10",
           "title": "Synthesis of Polysubstituted Benzenes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-10-Synthesis-of-Polysubstituted-Benzenes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.10%3A_Synthesis_of_Polysubstituted_Benzenes"
         },
         {
           "number": "16.11",
           "title": "Chemistry Matters—Combinatorial Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-11-Chemistry-Matters-Combinatorial-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.11%3A_Chemistry_MattersCombinatorial_Chemistry"
         },
         {
           "number": "16.12",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-12-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.12%3A_Key_Terms"
         },
         {
           "number": "16.13",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-13-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.13%3A_Summary"
         },
         {
           "number": "16.14",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Chemistry-of-Benzene-Electrophilic-Aromatic-Substitution/16-14-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/16%3A_Chemistry_of_Benzene_-_Electrophilic_Aromatic_Substitution/16.14%3A_Summary_of_Reactions"
         }
@@ -2541,112 +2541,112 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "17.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.00%3A_Why_This_Chapter"
         },
         {
           "number": "17.1",
           "title": "Naming Alcohols and Phenols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-1-Naming-Alcohols-and-Phenols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.01%3A_Naming_Alcohols_and_Phenols"
         },
         {
           "number": "17.2",
           "title": "Properties of Alcohols and Phenols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-2-Properties-of-Alcohols-and-Phenols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.02%3A_Properties_of_Alcohols_and_Phenols"
         },
         {
           "number": "17.3",
           "title": "Preparation of Alcohols- A Review",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-3-Preparation-of-Alcohols-A-Review.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.03%3A_Preparation_of_Alcohols-_A_Review"
         },
         {
           "number": "17.4",
           "title": "Alcohols from Carbonyl Compounds - Reduction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-4-Alcohols-from-Carbonyl-Compounds-Reduction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.04%3A_Alcohols_from_Carbonyl_Compounds_-_Reduction"
         },
         {
           "number": "17.5",
           "title": "Alcohols from Carbonyl Compounds - Grignard Reagents",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-5-Alcohols-from-Carbonyl-Compounds-Grignard-Reagents.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.05%3A_Alcohols_from_Carbonyl_Compounds_-_Grignard_Reagents"
         },
         {
           "number": "17.6",
           "title": "Reactions of Alcohols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-6-Reactions-of-Alcohols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.06%3A_Reactions_of_Alcohols"
         },
         {
           "number": "17.7",
           "title": "Oxidation of Alcohols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-7-Oxidation-of-Alcohols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.07%3A_Oxidation_of_Alcohols"
         },
         {
           "number": "17.8",
           "title": "Protection of Alcohols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-8-Protection-of-Alcohols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.08%3A_Protection_of_Alcohols"
         },
         {
           "number": "17.9",
           "title": "Phenols and Their Uses",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-9-Phenols-and-Their-Uses.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.09%3A_Phenols_and_Their_Uses"
         },
         {
           "number": "17.10",
           "title": "Reactions of Phenols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-10-Reactions-of-Phenols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.10%3A_Reactions_of_Phenols"
         },
         {
           "number": "17.11",
           "title": "Spectroscopy of Alcohols and Phenols",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-11-Spectroscopy-of-Alcohols-and-Phenols.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.11%3A_Spectroscopy_of_Alcohols_and_Phenols"
         },
         {
           "number": "17.12",
           "title": "Chemistry Matters—Ethanol- Chemical, Drug, and Poison",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-12-Chemistry-Matters-Ethanol-Chemical-Drug-and-Poison.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.12%3A_Chemistry_MattersEthanol-_Chemical_Drug_and_Poison"
         },
         {
           "number": "17.13",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-13-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.13%3A_Key_Terms"
         },
         {
           "number": "17.14",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-14-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.14%3A_Summary"
         },
         {
           "number": "17.15",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Alcohols-and-Phenols/17-15-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/17%3A_Alcohols_and_Phenols/17.15%3A_Summary_of_Reactions"
         }
@@ -2659,98 +2659,98 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "18.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.00%3A_Why_This_Chapter"
         },
         {
           "number": "18.1",
           "title": "Names and Properties of Ethers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-1-Names-and-Properties-of-Ethers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.01%3A_Names_and_Properties_of_Ethers"
         },
         {
           "number": "18.2",
           "title": "Preparing Ethers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-2-Preparing-Ethers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.02%3A_Preparing_Ethers"
         },
         {
           "number": "18.3",
           "title": "Reactions of Ethers - Acidic Cleavage",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-3-Reactions-of-Ethers-Acidic-Cleavage.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.03%3A_Reactions_of_Ethers-_Acidic_Cleavage"
         },
         {
           "number": "18.4",
           "title": "Cyclic Ethers - Epoxides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-4-Cyclic-Ethers-Epoxides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.04%3A_Cyclic_Ethers_-_Epoxides"
         },
         {
           "number": "18.5",
           "title": "Reactions of Epoxides - Ring-opening",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-5-Reactions-of-Epoxides-Ring-opening.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.05%3A_Reactions_of_Epoxides-_Ring-opening"
         },
         {
           "number": "18.6",
           "title": "Crown Ethers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-6-Crown-Ethers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.06%3A_Crown_Ethers"
         },
         {
           "number": "18.7",
           "title": "Thiols and Sulfides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-7-Thiols-and-Sulfides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.07%3A_Thiols_and_Sulfides"
         },
         {
           "number": "18.8",
           "title": "Spectroscopy of Ethers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-8-Spectroscopy-of-Ethers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.08%3A_Spectroscopy_of_Ethers"
         },
         {
           "number": "18.9",
           "title": "Chemistry Matters—Epoxy Resins and Adhesives",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-9-Chemistry-Matters-Epoxy-Resins-and-Adhesives.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.09%3A_Chemistry_MattersEpoxy_Resins_and_Adhesives"
         },
         {
           "number": "18.10",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-10-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.10%3A_Key_Terms"
         },
         {
           "number": "18.11",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-11-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.11%3A_Summary"
         },
         {
           "number": "18.12",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-12-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.12%3A_Summary_of_Reactions"
         },
         {
           "number": "18.14",
           "title": "Preview of Carbonyl Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Ethers-and-Epoxides-Thiols-and-Sulfides/18-14-Preview-of-Carbonyl-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/18%3A_Ethers_and_Epoxides_Thiols_and_Sulfides/18.14%3A_Preview_of_Carbonyl_Chemistry"
         }
@@ -2763,133 +2763,133 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "19.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.00%3A_Why_This_Chapter"
         },
         {
           "number": "19.1",
           "title": "Naming Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-1-Naming-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.01%3A_Naming_Aldehydes_and_Ketones"
         },
         {
           "number": "19.2",
           "title": "Preparing Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-2-Preparing-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.02%3A_Preparing_Aldehydes_and_Ketones"
         },
         {
           "number": "19.3",
           "title": "Oxidation of Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-3-Oxidation-of-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.03%3A_Oxidation_of_Aldehydes_and_Ketones"
         },
         {
           "number": "19.4",
           "title": "Nucleophilic Addition Reactions of Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-4-Nucleophilic-Addition-Reactions-of-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.04%3A_Nucleophilic_Addition_Reactions_of_Aldehydes_and_Ketones"
         },
         {
           "number": "19.5",
           "title": "Nucleophilic Addition of Water- Hydration",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-5-Nucleophilic-Addition-of-Water-Hydration.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.05%3A_Nucleophilic_Addition_of_Water-_Hydration"
         },
         {
           "number": "19.6",
           "title": "Nucleophilic Addition of HCN - Cyanohydrin Formation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-6-Nucleophilic-Addition-of-HCN-Cyanohydrin-Formation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.06%3A_Nucleophilic_Addition_of_HCN-_Cyanohydrin_Formation"
         },
         {
           "number": "19.7",
           "title": "Nucleophilic Addition of Hydride and Grignard Reagents- Alcohol Formation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-7-Nucleophilic-Addition-of-Hydride-and-Grignard-Reagents-Alcohol-Formation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.07%3A_Nucleophilic_Addition_of_Hydride_and_Grignard_Reagents-_Alcohol_Formation"
         },
         {
           "number": "19.8",
           "title": "Nucleophilic Addition of Amines- Imine and Enamine Formation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-8-Nucleophilic-Addition-of-Amines-Imine-and-Enamine-Formation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.08%3A_Nucleophilic_Addition_of_Amines-_Imine_and_Enamine_Formation"
         },
         {
           "number": "19.9",
           "title": "Nucleophilic Addition of Hydrazine - The Wolff-Kishner Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-9-Nucleophilic-Addition-of-Hydrazine-The-Wolff-Kishner-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.09%3A_Nucleophilic_Addition_of_Hydrazine_-_The_Wolff-Kishner_Reaction"
         },
         {
           "number": "19.10",
           "title": "Nucleophilic Addition of Alcohols - Acetal Formation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-10-Nucleophilic-Addition-of-Alcohols-Acetal-Formation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.10%3A_Nucleophilic_Addition_of_Alcohols_-_Acetal_Formation"
         },
         {
           "number": "19.11",
           "title": "Nucleophilic Addition of Phosphorus Ylides- The Wittig Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-11-Nucleophilic-Addition-of-Phosphorus-Ylides-The-Wittig-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.11%3A_Nucleophilic_Addition_of_Phosphorus_Ylides-_The_Wittig_Reaction"
         },
         {
           "number": "19.12",
           "title": "Biological Reductions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-12-Biological-Reductions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.12%3A_Biological_Reductions"
         },
         {
           "number": "19.13",
           "title": "Conjugate Nucleophilic Addition to α,β‑Unsaturated Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-13-Conjugate-Nucleophilic-Addition-to-Unsaturated-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.13%3A_Conjugate_Nucleophilic_Addition_to_Unsaturated_Aldehydes_and_Ketones"
         },
         {
           "number": "19.14",
           "title": "Spectroscopy of Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-14-Spectroscopy-of-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.14%3A_Spectroscopy_of_Aldehydes_and_Ketones"
         },
         {
           "number": "19.15",
           "title": "Chemistry Matters—Enantioselective Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-15-Chemistry-Matters-Enantioselective-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.15%3A_Chemistry_MattersEnantioselective_Synthesis"
         },
         {
           "number": "19.16",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-16-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.16%3A_Key_Terms"
         },
         {
           "number": "19.17",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-17-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.17%3A_Summary"
         },
         {
           "number": "19.18",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Aldehydes-and-Ketones-Nucleophilic-Addition-Reactions/19-18-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/19%3A_Aldehydes_and_Ketones-_Nucleophilic_Addition_Reactions/19.18%3A_Summary_of_Reactions"
         }

@@ -6,3 +6,21 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- chemical shift
+- coupling
+- coupling constant (J)
+- delta (δ) scale
+- DEPT-NMR
+- diastereotopic
+- downfield
+- enantiotopic
+- FT–NMR
+- homotopic
+- integration
+- multiplet
+- n + 1 rule
+- nuclear magnetic resonance (NMR) spectroscopy
+- shielding
+- spin–spin splitting
+- upfield

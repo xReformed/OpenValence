@@ -6,3 +6,25 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acetal, R2C(OR′)2
+- acyl group
+- 1,2-addition
+- 1,4-addition
+- aldehyde (RCHO)
+- Cannizzaro reaction
+- carbinolamine
+- conjugate addition
+- cyanohydrin
+- enamine (R2N–CR═CR2)
+- hemiacetal
+- imine (R2C═NR)
+- ketal
+- ketone (R2CO)
+- McLafferty rearrangement
+- nucleophilic addition reaction
+- phosphorane
+- Schiff bases
+- Wittig reaction
+- Wolff–Kishner reaction
+- ylide

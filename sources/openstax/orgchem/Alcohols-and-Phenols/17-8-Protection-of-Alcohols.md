@@ -6,3 +6,36 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+It often happens, particularly during the synthesis of complex molecules, that one functional group in a molecule interferes with an intended reaction on another functional group elsewhere in the same molecule. We saw earlier in this chapter, for instance, that a Grignard reagent can’t be prepared from an alcohol-containing halide because the C–Mg bond is not compatible with the presence of an acidic –OH group in the same molecule.
+
+[Note: corrected; the source prints "alcohol-containing halidel because" where this reads "alcohol-containing halide because". Halidel is a typo for halide.]
+
+[Image: 3-bromopropan-1-ol (hydroxy hydrogen labeled acidic) does not react with magnesium and ether to form (3-hydroxypropyl)magnesium bromide.]
+
+When this kind of incompatibility arises, it’s sometimes possible to circumvent the problem by protecting the interfering functional group. Protection involves three steps: (1) introducing a protecting group to block the interfering function, (2) carrying out the desired reaction, and (3) removing the protecting group.
+
+One of the more common methods of alcohol protection involves reaction with a chlorotrialkylsilane, Cl–SiR3, to yield a trialkylsilyl ether, R′–O–SiR3. (Chloro-tert-butyldimethylsilane), usually abbreviated either TBS or TBDMS is often used, as is chlorotrimethylsilane (TMS), and the reaction is carried out in the presence of a base, such as triethylamine, to help form the alkoxide anion from the alcohol and to remove the HCl by-product from the reaction.
+
+[Image: An alcohol reacts with chlorotrimethylsilane to form trimethylsilyl ether. For example cyclohexanol reacts with chlorotrimethylsilane and triethylamine to form cyclohexyl trimethylsilyl ether with 94 percent yield.]
+
+The ether-forming step is an S_N2-like reaction of the alkoxide ion on the silicon atom, with concurrent loss of the leaving chloride anion. Unlike most S_N2 reactions, though, this reaction takes place at a tertiary center—a trialkyl-substituted silicon atom. The reaction occurs because silicon, a third-row atom, is larger than carbon and forms longer bonds. In addition, three alkyl substituents attached to silicon offer little steric hindrance to ether formation.
+
+[Image: Ball-and-stick model of chlorotrimethylsilane and tertiary-butyl chloride. Carbon is more hindered for tertiary-butyl chloride and has shorter bonds. Silicon is less hindered for chlorotrimethylsilane and bonds are longer.]
+
+Like most other ethers, which we’ll study in the next chapter, trialkylsilylethers are relatively unreactive. They have no acidic hydrogens and don’t react with oxidizing agents, reducing agents, or Grignard reagents. They do, however, react with aqueous acid or with fluoride ion to regenerate the alcohol. Tetrabutylammonium fluoride is often used.
+
+[Image: Cyclohexyltrimethylsillyl ether reacts with hydronium ion to form cyclohexanol and trimethylsilanol.]
+
+To solve the problem posed at the beginning of this section, note that it’s possible to use an alcohol-containing halide in a Grignard reaction by employing a protection sequence. For example, we can add 3-bromo-1-propanol to acetaldehyde by the route shown in Figure 17.8.1.
+
+Figure 17.8.1: Use of a trialkylsilyl-protected alcohol during a Grignard reaction.
+Different steps are involved in using a protecting group in Grignard reaction. The steps include protecting alcohol, forming Grignard reagent, performing Grignard reaction, and removing protecting group.
+
+### Exercise 17.8.1
+
+Propose a mechanism for the reaction of cyclohexyl TMS ether with LiF to deprotect the silyl ether.
+
+**Answer**
+
+S_N2 reaction of F^− on silicon with displacement of alkoxide ion.

@@ -6,3 +6,14 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acyl group
+- acylation
+- alkylation
+- benzyne
+- combinatorial chemistry
+- electrophilic aromatic substitution
+- Friedel–Crafts reaction
+- inductive effect
+- nucleophilic aromatic substitution
+- resonance effect

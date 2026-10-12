@@ -13,11 +13,11 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Piece | State |
 | ----- | ----- |
 | Corpus: *Beginning Chemistry* (Ball) | **Complete** — all 16 chapters, 100 sections |
-| Corpus: OpenStax *Organic Chemistry* | **Started** — chapters 1–9 of 31 (134 of 447 sections) |
+| Corpus: OpenStax *Organic Chemistry* | **Started** — chapters 1–19 of 31 (282 of 447 sections) |
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
-| Eval question set | **270 questions** for the current books: 168 answerable, 102 `unanswerable` (see [Evals](#evals)) — no runner yet |
+| Eval question set | **270 questions** for the current books: 179 answerable, 91 `unanswerable` (see [Evals](#evals)) — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
 | Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do; none yet for *Organic Chemistry*), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
@@ -202,7 +202,7 @@ Two open textbooks, transcribed from [LibreTexts](https://chem.libretexts.org/) 
 | Book | Folder | Coverage | License |
 | ---- | ------ | -------- | ------- |
 | [*Beginning Chemistry*](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) (Ball) | `sources/openstax/introductory/` | All 16 chapters, 100 sections | CC BY-NC-SA 3.0 |
-| [*Organic Chemistry*](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) — OpenStax (McMurry, 10th ed.) | `sources/openstax/orgchem/` | Chapters 1–9 of 31 transcribed (134 sections); the other 313 sections are stubs | CC BY-NC-SA 4.0 |
+| [*Organic Chemistry*](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) — OpenStax (McMurry, 10th ed.) | `sources/openstax/orgchem/` | Chapters 1–19 of 31 transcribed (282 sections); the other 165 sections are stubs | CC BY-NC-SA 4.0 |
 
 OpenStax *Chemistry* 1e (`sources/openstax/genchem-1e/`) used to be part of the corpus and has been removed.
 
@@ -254,16 +254,16 @@ Do not add material to `sources/` unless you have checked its license and record
 
 | Kind | Count | What it tests |
 | ---- | ----: | ------------- |
-| concept | 45 | Explanations, often in casual student phrasing |
-| calculation | 34 | Worked methods and values, recomputed during writing |
-| fact | 30 | Single facts and definitions |
-| distractor | 20 | A term that appears in many files but is taught in one |
+| concept | 51 | Explanations, often in casual student phrasing |
+| calculation | 35 | Worked methods and values, recomputed during writing |
+| fact | 33 | Single facts and definitions |
+| distractor | 21 | A term that appears in many files but is taught in one |
 | exact-token | 15 | Questions that hinge on a precise token (`K_b` vs `K_a`, `ΔH_sub`, `δ+`) — the baseline for hybrid search |
 | defect | 20 | The book misprinted the answer; the corpus corrects it in place (or flags it in a `[Note: …]`), and the app must give the correct value, not the misprint |
 | contradiction | 4 | Two sections disagree (bond energies in *Beginning Chemistry* 9.5's average table vs *Organic Chemistry* 1.6–1.9) |
-| unanswerable | 102 | Questions the corpus can't answer — near misses (NMR, SN1/SN2, kinetics), specific values it doesn't list, format gaps, off-topic requests |
+| unanswerable | 91 | Questions the corpus can't answer — near misses (aldol reactions, kinetics), specific values it doesn't list, format gaps, off-topic requests |
 
-The questions were written for OpenStax *Chemistry* 1e. When that book was removed, every one was re-checked against the current corpus: 50 still have an answer and now point at the *Beginning Chemistry* or *Organic Chemistry* section that gives it, with `expect` rewritten to that book's own numbers (for example, q054's bond energies now come from *Organic Chemistry* 1.7–1.9). The other 102 are labelled `unanswerable`, mostly kinetics, thermodynamics, the main-group and transition elements, and anything beyond organic chapter 1. Each keeps its question text unchanged, and its note says what it used to test ("Formerly a … question answered by *Chemistry* 1e …") and what a retriever might wrongly return instead. 118 new answerable questions (q153–q270) were then written for the current books, to rebalance the set: every chapter of *Beginning Chemistry* and organic chapter 1, including 20 `defect` questions built on the books' `[Note: …]` corrections and 4 `contradiction` questions. 168 of the 270 are now answerable. There is no runner yet; the plan is below.
+The questions were written for OpenStax *Chemistry* 1e. When that book was removed, every one was re-checked against the current corpus: 50 still have an answer and now point at the *Beginning Chemistry* or *Organic Chemistry* section that gives it, with `expect` rewritten to that book's own numbers (for example, q054's bond energies now come from *Organic Chemistry* 1.7–1.9). The other 102 are labelled `unanswerable`, mostly kinetics, thermodynamics, the main-group and transition elements, and anything beyond organic chapter 1. Each keeps its question text unchanged, and its note says what it used to test ("Formerly a … question answered by *Chemistry* 1e …") and what a retriever might wrongly return instead. 118 new answerable questions (q153–q270) were then written for the current books, to rebalance the set: every chapter of *Beginning Chemistry* and organic chapter 1, including 20 `defect` questions built on the books' `[Note: …]` corrections and 4 `contradiction` questions. 168 of the 270 were then answerable; q123 (SN1 vs SN2), q122 (IR carbonyl stretch), q121 (NMR splitting), q125 (Hückel's rule), q132 (phenol's pKa) and q150 (diethyl ether from ethanol) became answerable when organic chapters 11–18 were transcribed, and q024 (formal charge), q035 (Lewis acid), q116 (cis/trans 2-butene), q124 (Markovnikov) and q126 (R/S), already covered by chapters 2, 5 and 7, were re-labelled at the same time, so 179 are now. There is no runner yet; the plan is below.
 
 ---
 
@@ -386,7 +386,7 @@ A levelled path through balancing chemical equations, from counting atoms to red
 | Subject | Source | License | Status |
 | ------- | ------ | ------- | ------ |
 | Introductory chemistry | *Beginning Chemistry* (Ball) | CC BY-NC-SA 3.0 | **Transcribed** — all 16 chapters; not yet embedded or evaluated |
-| Organic chemistry | OpenStax *Organic Chemistry* (McMurry, 10th ed.) | CC BY-NC-SA 4.0 (confirmed on LibreTexts) | **In progress** — `sources/openstax/orgchem/` has all 31 chapters (447 sections); chapters 1–9 are transcribed, the rest are section stubs |
+| Organic chemistry | OpenStax *Organic Chemistry* (McMurry, 10th ed.) | CC BY-NC-SA 4.0 (confirmed on LibreTexts) | **In progress** — `sources/openstax/orgchem/` has all 31 chapters (447 sections); chapters 1–19 are transcribed, the rest are section stubs |
 | General chemistry | None — OpenStax *Chemistry* 1e was removed | — | **Not covered** beyond *Beginning Chemistry* |
 | Chemical engineering | Not chosen | — | **Planned** |
 | Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
@@ -404,8 +404,8 @@ Suggested order: embed *Beginning Chemistry* and measure it, keep transcribing o
 
 - Scope: structure and bonding, functional groups and nomenclature, stereochemistry, reaction mechanisms (substitution, elimination, addition, carbonyl chemistry), and spectroscopy (IR, NMR, mass spec)
 - Structure rendering (platform item 9) becomes essential rather than nice-to-have, and diagrams without alt text will be a larger gap than in *Beginning Chemistry*
-- Seven `unanswerable` eval questions become answerable as the relevant chapters are transcribed: q040 (aldol), q121 (NMR splitting), q122 (IR carbonyl stretch), q123 (SN1/SN2), q124 (Markovnikov), q125 (Hückel's rule), q126 (R/S). Re-label them in the same change, or the abstention eval will report correct answers as failures
-- Transcription: chapters 1 (Structure and Bonding), 2 (Polar Covalent Bonds; Acids and Bases), 3 (Alkanes and Their Stereochemistry), 4 (Cycloalkanes and Their Stereochemistry), 5 (Stereochemistry at Tetrahedral Centers), 6 (An Overview of Organic Reactions), 7 (Alkenes: Structure and Reactivity), 8 (Alkenes: Reactions and Synthesis) and 9 (Alkynes: An Introduction to Organic Synthesis) are done, with 92 errors corrected in place and 34 other `[Note: …]` paragraphs; chapters 10–31 are stubs. The book's cross-references ("Section 2.12") follow a numbering one section ahead of the LibreTexts pages, so each is checked and noted. Each new chapter is `fetch.py` then `fill.py` (see [tools/transcribe/](tools/transcribe/README.md)), then `npm run gen:paths` in `web/` so the learning path picks it up
+- One `unanswerable` eval question becomes answerable when its chapter is transcribed: q040 (aldol, chapter 23). Re-label them in the same change, or the abstention eval will report correct answers as failures
+- Transcription: chapters 1 (Structure and Bonding), 2 (Polar Covalent Bonds; Acids and Bases), 3 (Alkanes and Their Stereochemistry), 4 (Cycloalkanes and Their Stereochemistry), 5 (Stereochemistry at Tetrahedral Centers), 6 (An Overview of Organic Reactions), 7 (Alkenes: Structure and Reactivity), 8 (Alkenes: Reactions and Synthesis), 9 (Alkynes: An Introduction to Organic Synthesis), 10 (Organohalides), 11 (Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations), 12 (Structure Determination: Mass Spectrometry and Infrared Spectroscopy), 13 (Structure Determination: Nuclear Magnetic Resonance Spectroscopy), 14 (Conjugated Compounds and Ultraviolet Spectroscopy), 15 (Benzene and Aromaticity), 16 (Chemistry of Benzene: Electrophilic Aromatic Substitution), 17 (Alcohols and Phenols), 18 (Ethers and Epoxides; Thiols and Sulfides) and 19 (Aldehydes and Ketones: Nucleophilic Addition Reactions) are done, with 194 errors corrected in place and 97 other `[Note: …]` paragraphs; chapters 20–31 are stubs. q123 (SN1/SN2), q122 (IR carbonyl stretch), q121 (NMR splitting), q125 (Hückel's rule), q132 (phenol's pKa) and q150 (diethyl ether) were re-labelled answerable with chapters 11–18, along with q024, q035, q116, q124 and q126, which chapters 2, 5 and 7 already answered. The book's cross-references ("Section 2.12") often follow a numbering one section ahead of the LibreTexts pages, and figure, table and worked-example references often keep the print book's numbers, so each is checked against its target and corrected with a note. Each new chapter is `fetch.py` then `fill.py` (see [tools/transcribe/](tools/transcribe/README.md)), then `npm run gen:paths` in `web/` so the learning path picks it up
 - The book is NonCommercial, like *Beginning Chemistry* — see [Licensing](#licensing)
 
 **Chemical engineering** — the other half of the "Organic chemistry & chemical engineering" topic page.

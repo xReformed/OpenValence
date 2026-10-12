@@ -6,3 +6,26 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+Up to this point, we’ve focused on developing some general ideas of organic reactivity, looking at the chemistry of hydrocarbons and alkyl halides, and examining some of the tools used in structural studies. With that background, it’s now time to begin a study of the oxygen-containing functional groups that lie at the heart of organic and biological chemistry. We’ll look at alcohols in this chapter and move on to carbonyl compounds in Chapters 19 through 23.
+
+Figure 17.0.1: The phenol resveratrol, found in the skin of red grapes, continues to be studied for its potential anti-cancer, antiarthritic, and hypoglycemic properties. (credit: “Weinreben-Ötlingen” by Pierre Likissas/Wikimedia Commons, CC BY 3.0)
+A photo of purple and red grapes hanging along with their leaves on a grapevine.
+
+Alcohols and phenols can be thought of as organic derivatives of water in which one of water’s hydrogens is replaced by an organic group: H–O–H versus R–O–H and Ar–O–H. In practice, the name alcohol is restricted to compounds that have their –OH group bonded to a saturated, sp^3-hybridized carbon atom, while compounds with their –OH group bonded to a vinylic, sp^2-hybridized carbon are called enols. We’ll look at enols in Chapter 22.
+
+[Image: Three chemical structures. An alcohol has O H on a carbon with three open bonds, phenol is benzene with O H, and an enol is a vinylic O H.]
+
+Alcohols occur widely in nature and have many industrial and pharmaceutical applications. Methanol, for instance, is one of the most important of all industrial chemicals. Historically, methanol was prepared by heating wood in the absence of air and thus came to be called wood alcohol. Today, approximately 173 million tons (50 billion gallons) of methanol is manufactured worldwide each year, most of it by catalytic reduction of carbon monoxide with hydrogen gas. Methanol is toxic to humans, causing blindness in small doses (15 mL) and death in larger amounts (100–250 mL). Industrially, it is used both as a solvent and as a starting material for production of formaldehyde (CH2O) and acetic acid (CH3CO2H).
+
+[Image: Carbon monoxide reacts with two equivalents of H 2 in the presence of 400 degree Celsius and zinc oxide, chromia catalyst to form methanol, represented by formula and ball-and-stick.]
+
+Ethanol was one of the first organic chemicals to be prepared and purified. Its production by fermentation of grains and sugars has been carried out for perhaps 9000 years, and its purification by distillation goes back at least as far as the 12th century. Today, approximately 88 million tons (26 billion gallons) of ethanol are produced worldwide each year, most of it by fermentation of corn, barley, sorghum, and other plant sources. Almost all of this ethanol is used for bus and automobile fuel.
+
+Ethanol for industrial use as a solvent or chemical intermediate is largely obtained by acid-catalyzed hydration of ethylene at high temperature.
+
+[Image: Ethene reacts in the presence of water, and phosphoric acid at 250 degree Celsius to form ethanol. The figure also represents the ball-and-stick model of ethanol.]
+
+Phenols occur widely throughout nature and also serve as intermediates in the industrial synthesis of products as diverse as adhesives and antiseptics. Phenol itself is a general disinfectant found in coal tar; methyl salicylate is a flavoring agent found in oil of wintergreen; and urushiols are the allergenic constituents of poison oak and poison ivy. Note that the word phenol is the name both of the specific compound (hydroxybenzene) and of the class of compounds.
+
+[Image: Three structures named phenol (also called carbolic acid), methyl salicylate, and urushiols in which R is equal to different 15-carbon alkyl and alkenyl chains.]
