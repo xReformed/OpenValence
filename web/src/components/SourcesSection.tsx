@@ -26,7 +26,7 @@ const SOURCES: {
     url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)",
     license: "CC BY-NC-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    coverage: "Chapters 1–19 of 31",
+    coverage: "31 chapters · 447 sections",
     inUse: false,
   },
 ];
@@ -39,7 +39,6 @@ const PREPARATION = [
 
 const NOT_COVERED = [
   "End-of-chapter practice problems",
-  "Organic chemistry beyond the chapters added so far",
   "Details that only appear inside a figure or diagram",
   "Anything outside chemistry, like news or regulations",
 ];

@@ -138,7 +138,11 @@ export default function BadgesPage() {
         status: branch.status,
         href: `/roadmap/${branch.slug}`,
         goal: badge.requirement === "complete" ? goal : badge.description,
-        progress: isTracked(badge.requirement) ? { done, total } : "Help tracking coming soon",
+        progress: !branch.path
+          ? "No textbook yet"
+          : isTracked(badge.requirement)
+            ? { done, total }
+            : "Help tracking coming soon",
         earned: isEarned(badge, BRANCHES, finished),
         image: badge.image,
         effect: badge.effect,

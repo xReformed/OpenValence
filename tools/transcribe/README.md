@@ -78,5 +78,7 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 
 - `scan.py` flags the braces in the quantum-number sets of 8.3 and 8.4 (`{1, 0, 0, +1/2}`); they are printed that way in the source.
 - `scan.py` flags the braces around HMPA's formula in *Organic Chemistry* 11.3 (`{[(CH3)2N]3PO, abbreviated HMPA}`); they are printed that way in the source.
+- `scan.py` flags "C 8 H15 N O 6" in an image description in *Organic Chemistry* 25.7; the source's description spaces the formula that way.
+- Some *Organic Chemistry* equations (24.3, 24.5) are MathML whose `<math>` element closes before its content. The converter reads fractions, scripts and rows wherever they appear, but where the source drops a fraction's structure (24.3's K_a · K_b and K_a = K_w/K_b) the line comes out without its fraction bar and is corrected with a note.
 - LibreTexts numbers some appendices as a chapter (*Chemistry* 1e has a "22: Appendices" chapter of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
 - LibreTexts pages are inconsistent, so the converter carries many page-specific repairs (broken `alt` attributes, pre-rendered MathJax, Example boxes closed mid-solution). Each is commented where it is handled in `lt2md.py`.

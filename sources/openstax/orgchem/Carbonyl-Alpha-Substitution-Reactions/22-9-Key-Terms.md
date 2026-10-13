@@ -6,3 +6,11 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acetoacetic ester synthesis
+- α-substitution reaction
+- decarboxylation
+- enol
+- enolate ion
+- malonic ester synthesis
+- tautomer

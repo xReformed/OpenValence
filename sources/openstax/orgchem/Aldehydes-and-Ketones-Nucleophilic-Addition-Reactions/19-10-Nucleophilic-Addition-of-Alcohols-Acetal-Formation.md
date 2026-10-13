@@ -15,7 +15,7 @@ Acetal formation is similar to the hydration reaction discussed in Section 19.5.
 
 [Image: The structure shows a reversible reaction where a carbonyl group is protonated at oxygen by H A; resonance produces neutral O H group single bonded to carbocation.]
 
-As shown in Figure 19.10.1, nucleophilic addition of an alcohol to the carbonyl group initially yields a hydroxy ether called a hemiacetal, analogous to the gem diol formed by addition of water. Hemiacetals are formed reversibly, with equilibrium normally favoring the carbonyl compound. In the presence of acid, however, a further reaction occurs. Protonation of the –OH group, followed by an E1-like loss of water, leads to an oxonium ion, R2C═O+R, which undergoes a second nucleophilic addition of alcohol to yield the protonated acetal. Loss of a proton completes the reaction.
+As shown in Figure 19.10.1, nucleophilic addition of an alcohol to the carbonyl group initially yields a hydroxy ether called a hemiacetal, analogous to the gem diol formed by addition of water. Hemiacetals are formed reversibly, with equilibrium normally favoring the carbonyl compound. In the presence of acid, however, a further reaction occurs. Protonation of the –OH group, followed by an E1-like loss of water, leads to an oxonium ion, R2C═O^+R, which undergoes a second nucleophilic addition of alcohol to yield the protonated acetal. Loss of a proton completes the reaction.
 
 Figure 19.10.1: Mechanism of acid-catalyzed acetal formation by reaction of an aldehyde or ketone with an alcohol.
 Ketone or aldehyde to acetal via seven steps: protonation of O, alcohol attacks carbonyl, R O H deprotonated to hemiacetal, protonation of hydroxy, loss of water, alcohol attacks oxonium, deprotonation.

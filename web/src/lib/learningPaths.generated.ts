@@ -2902,91 +2902,91 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "20.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.00%3A_Why_This_Chapter"
         },
         {
           "number": "20.1",
           "title": "Naming Carboxylic Acids and Nitriles",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-1-Naming-Carboxylic-Acids-and-Nitriles.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.01%3A_Naming_Carboxylic_Acids_and_Nitriles"
         },
         {
           "number": "20.2",
           "title": "Structure and Properties of Carboxylic Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-2-Structure-and-Properties-of-Carboxylic-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.02%3A_Structure_and_Properties_of_Carboxylic_Acids"
         },
         {
           "number": "20.3",
           "title": "Biological Acids and the Henderson-Hasselbalch Equation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-3-Biological-Acids-and-the-Henderson-Hasselbalch-Equation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.03%3A_Biological_Acids_and_the_Henderson-Hasselbalch_Equation"
         },
         {
           "number": "20.4",
           "title": "Substituent Effects on Acidity",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-4-Substituent-Effects-on-Acidity.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.04%3A_Substituent_Effects_on_Acidity"
         },
         {
           "number": "20.5",
           "title": "Preparing Carboxylic Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-5-Preparing-Carboxylic-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.05%3A_Preparing_Carboxylic_Acids"
         },
         {
           "number": "20.6",
           "title": "Reactions of Carboxylic Acids - An Overview",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-6-Reactions-of-Carboxylic-Acids-An-Overview.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.06%3A_Reactions_of_Carboxylic_Acids_-_An_Overview"
         },
         {
           "number": "20.7",
           "title": "Chemistry of Nitriles",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-7-Chemistry-of-Nitriles.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.07%3A_Chemistry_of_Nitriles"
         },
         {
           "number": "20.8",
           "title": "Spectroscopy of Carboxylic Acids and Nitriles",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-8-Spectroscopy-of-Carboxylic-Acids-and-Nitriles.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.08%3A_Spectroscopy_of_Carboxylic_Acids_and_Nitriles"
         },
         {
           "number": "20.9",
           "title": "Chemistry Matters—Vitamin C",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-9-Chemistry-Matters-Vitamin-C.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.09%3A_Chemistry_MattersVitamin_C"
         },
         {
           "number": "20.10",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-10-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.10%3A_Key_Terms"
         },
         {
           "number": "20.11",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-11-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.11%3A_Summary"
         },
         {
           "number": "20.12",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acids-and-Nitriles/20-12-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/20%3A_Carboxylic_Acids_and_Nitriles/20.12%3A_Summary_of_Reactions"
         }
@@ -2999,105 +2999,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "21.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.00%3A_Why_This_Chapter"
         },
         {
           "number": "21.1",
           "title": "Naming Carboxylic Acid Derivatives",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-1-Naming-Carboxylic-Acid-Derivatives.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.01%3A_Naming_Carboxylic_Acid_Derivatives"
         },
         {
           "number": "21.2",
           "title": "Nucleophilic Acyl Substitution Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-2-Nucleophilic-Acyl-Substitution-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.02%3A_Nucleophilic_Acyl_Substitution_Reactions"
         },
         {
           "number": "21.3",
           "title": "Reactions of Carboxylic Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-3-Reactions-of-Carboxylic-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.03%3A_Reactions_of_Carboxylic_Acids"
         },
         {
           "number": "21.4",
           "title": "Chemistry of Acid Halides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-4-Chemistry-of-Acid-Halides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.04%3A_Chemistry_of_Acid_Halides"
         },
         {
           "number": "21.5",
           "title": "Chemistry of Acid Anhydrides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-5-Chemistry-of-Acid-Anhydrides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.05%3A_Chemistry_of_Acid_Anhydrides"
         },
         {
           "number": "21.6",
           "title": "Chemistry of Esters",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-6-Chemistry-of-Esters.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.06%3A_Chemistry_of_Esters"
         },
         {
           "number": "21.7",
           "title": "Chemistry of Amides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-7-Chemistry-of-Amides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.07%3A_Chemistry_of_Amides"
         },
         {
           "number": "21.8",
           "title": "Chemistry of Thioesters and Acyl Phosphates - Biological Carboxylic Acid Derivatives",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-8-Chemistry-of-Thioesters-and-Acyl-Phosphates-Biological-Carboxylic-Acid-Derivatives.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.08%3A_Chemistry_of_Thioesters_and_Acyl_Phosphates_-_Biological_Carboxylic_Acid_Derivatives"
         },
         {
           "number": "21.9",
           "title": "Polyamides and Polyesters - Step-Growth Polymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-9-Polyamides-and-Polyesters-Step-Growth-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.09%3A_Polyamides_and_Polyesters_-_Step-Growth_Polymers"
         },
         {
           "number": "21.10",
           "title": "Spectroscopy of Carboxylic Acid Derivatives",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-10-Spectroscopy-of-Carboxylic-Acid-Derivatives.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.10%3A_Spectroscopy_of_Carboxylic_Acid_Derivatives"
         },
         {
           "number": "21.11",
           "title": "Chemistry Matters—β-Lactam Antibiotics",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-11-Chemistry-Matters-Lactam-Antibiotics.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.11%3A_Chemistry_Matters-Lactam_Antibiotics"
         },
         {
           "number": "21.12",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-12-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.12%3A_Key_Terms"
         },
         {
           "number": "21.13",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-13-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.13%3A_Summary"
         },
         {
           "number": "21.14",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carboxylic-Acid-Derivatives-Nucleophilic-Acyl-Substitution-Reactions/21-14-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/21%3A_Carboxylic_Acid_Derivatives-_Nucleophilic_Acyl_Substitution_Reactions/21.14%3A_Summary_of_Reactions"
         }
@@ -3110,84 +3110,84 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "22.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.00%3A_Why_This_Chapter"
         },
         {
           "number": "22.1",
           "title": "Keto-Enol Tautomerism",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-1-Keto-Enol-Tautomerism.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.01%3A_Keto-Enol_Tautomerism"
         },
         {
           "number": "22.2",
           "title": "Reactivity of Enols- α-Substitution Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-2-Reactivity-of-Enols-Substitution-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.02%3A_Reactivity_of_Enols-__-Substitution_Reactions"
         },
         {
           "number": "22.3",
           "title": "Alpha Halogenation of Aldehydes and Ketones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-3-Alpha-Halogenation-of-Aldehydes-and-Ketones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.03%3A_Alpha_Halogenation_of_Aldehydes_and_Ketones"
         },
         {
           "number": "22.4",
           "title": "Alpha Bromination of Carboxylic Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-4-Alpha-Bromination-of-Carboxylic-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.04%3A_Alpha_Bromination_of_Carboxylic_Acids"
         },
         {
           "number": "22.5",
           "title": "Acidity of Alpha Hydrogen Atoms- Enolate Ion Formation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-5-Acidity-of-Alpha-Hydrogen-Atoms-Enolate-Ion-Formation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.05%3A_Acidity_of_Alpha_Hydrogen_Atoms-_Enolate_Ion_Formation"
         },
         {
           "number": "22.6",
           "title": "Reactivity of Enolate Ions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-6-Reactivity-of-Enolate-Ions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.06%3A_Reactivity_of_Enolate_Ions"
         },
         {
           "number": "22.7",
           "title": "Alkylation of Enolate Ions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-7-Alkylation-of-Enolate-Ions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.07%3A_Alkylation_of_Enolate_Ions"
         },
         {
           "number": "22.8",
           "title": "Chemistry Matters—Barbiturates",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-8-Chemistry-Matters-Barbiturates.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.08%3A_Chemistry_MattersBarbiturates"
         },
         {
           "number": "22.9",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-9-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.09%3A_Key_Terms"
         },
         {
           "number": "22.10",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-10-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.10%3A_Summary"
         },
         {
           "number": "22.11",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Alpha-Substitution-Reactions/22-11-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/22%3A_Carbonyl_Alpha-Substitution_Reactions/22.11%3A_Summary_of_Reactions"
         }
@@ -3200,126 +3200,126 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "23.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.00%3A_Why_This_Chapter"
         },
         {
           "number": "23.1",
           "title": "Carbonyl Condensations - The Aldol Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-1-Carbonyl-Condensations-The-Aldol-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.01%3A_Carbonyl_Condensations_-_The_Aldol_Reaction"
         },
         {
           "number": "23.2",
           "title": "Carbonyl Condensations versus Alpha Substitutions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-2-Carbonyl-Condensations-versus-Alpha-Substitutions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.02%3A_Carbonyl_Condensations_versus_Alpha_Substitutions"
         },
         {
           "number": "23.3",
           "title": "Dehydration of Aldol Products - Synthesis of Enones",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-3-Dehydration-of-Aldol-Products-Synthesis-of-Enones.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.03%3A_Dehydration_of_Aldol_Products_-_Synthesis_of_Enones"
         },
         {
           "number": "23.4",
           "title": "Using Aldol Reactions in Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-4-Using-Aldol-Reactions-in-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.04%3A_Using_Aldol_Reactions_in_Synthesis"
         },
         {
           "number": "23.5",
           "title": "Mixed Aldol Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-5-Mixed-Aldol-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.05%3A_Mixed_Aldol_Reactions"
         },
         {
           "number": "23.6",
           "title": "Intramolecular Aldol Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-6-Intramolecular-Aldol-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.06%3A_Intramolecular_Aldol_Reactions"
         },
         {
           "number": "23.7",
           "title": "The Claisen Condensation Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-7-The-Claisen-Condensation-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.07%3A_The_Claisen_Condensation_Reaction"
         },
         {
           "number": "23.8",
           "title": "Mixed Claisen Condensations",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-8-Mixed-Claisen-Condensations.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.08%3A_Mixed_Claisen_Condensations"
         },
         {
           "number": "23.9",
           "title": "Intramolecular Claisen Condensations - The Dieckmann Cyclization",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-9-Intramolecular-Claisen-Condensations-The-Dieckmann-Cyclization.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.09%3A_Intramolecular_Claisen__Condensations_-_The_Dieckmann_Cyclization"
         },
         {
           "number": "23.10",
           "title": "Conjugate Carbonyl Additions - The Michael Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-10-Conjugate-Carbonyl-Additions-The-Michael-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.10%3A_Conjugate_Carbonyl_Additions_-_The_Michael_Reaction"
         },
         {
           "number": "23.11",
           "title": "Carbonyl Condensations with Enamines - The Stork Enamine Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-11-Carbonyl-Condensations-with-Enamines-The-Stork-Enamine-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.11%3A_Carbonyl_Condensations_with_Enamines_-_The_Stork_Enamine_Reaction"
         },
         {
           "number": "23.12",
           "title": "The Robinson Annulation Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-12-The-Robinson-Annulation-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.12%3A_The_Robinson_Annulation_Reaction"
         },
         {
           "number": "23.13",
           "title": "Some Biological Carbonyl Condensation Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-13-Some-Biological-Carbonyl-Condensation-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.13%3A_Some_Biological_Carbonyl_Condensation_Reactions"
         },
         {
           "number": "23.14",
           "title": "Chemistry Matters - A Prologue to Metabolism",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-14-Chemistry-Matters-A-Prologue-to-Metabolism.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.14%3A_Chemistry_MattersA_Prologue_to_Metabolism"
         },
         {
           "number": "23.15",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-15-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.15%3A_Key_Terms"
         },
         {
           "number": "23.16",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-16-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.16%3A_Summary"
         },
         {
           "number": "23.17",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Carbonyl-Condensation-Reactions/23-17-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/23%3A_Carbonyl_Condensation_Reactions/23.17%3A_Summary_of_Reactions"
         }
@@ -3332,105 +3332,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "24.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.00%3A_Why_This_Chapter"
         },
         {
           "number": "24.1",
           "title": "Naming Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-1-Naming-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.01%3A_Naming_Amines"
         },
         {
           "number": "24.2",
           "title": "Structure and Properties of Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-2-Structure-and-Properties-of-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.02%3A_Structure_and_Properties_of_Amines"
         },
         {
           "number": "24.3",
           "title": "Basicity of Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-3-Basicity-of-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.03%3A_Basicity_of_Amines"
         },
         {
           "number": "24.4",
           "title": "Basicity of Arylamines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-4-Basicity-of-Arylamines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.04%3A_Basicity_of_Arylamines"
         },
         {
           "number": "24.5",
           "title": "Biological Amines and the Henderson-Hasselbalch Equation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-5-Biological-Amines-and-the-Henderson-Hasselbalch-Equation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.05%3A_Biological_Amines_and_the_Henderson-Hasselbalch_Equation"
         },
         {
           "number": "24.6",
           "title": "Synthesis of Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-6-Synthesis-of-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.06%3A_Synthesis_of_Amines"
         },
         {
           "number": "24.7",
           "title": "Reactions of Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-7-Reactions-of-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.07%3A_Reactions_of_Amines"
         },
         {
           "number": "24.8",
           "title": "Reactions of Arylamines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-8-Reactions-of-Arylamines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.08%3A_Reactions_of_Arylamines"
         },
         {
           "number": "24.9",
           "title": "Heterocyclic Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-9-Heterocyclic-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.09%3A_Heterocyclic_Amines"
         },
         {
           "number": "24.10",
           "title": "Spectroscopy of Amines",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-10-Spectroscopy-of-Amines.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.10%3A_Spectroscopy_of_Amines"
         },
         {
           "number": "24.11",
           "title": "Chemistry Matters - Green Chemistry II- Ionic Liquids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-11-Chemistry-Matters-Green-Chemistry-II-Ionic-Liquids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.11%3A_Chemistry_MattersGreen_Chemistry_II-_Ionic_Liquids"
         },
         {
           "number": "24.12",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-12-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.12%3A_Key_Terms"
         },
         {
           "number": "24.13",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-13-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.13%3A_Summary"
         },
         {
           "number": "24.14",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Amines-and-Heterocycles/24-14-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/24%3A_Amines_and_Heterocycles/24.14%3A_Summary_of_Reactions"
         }
@@ -3443,105 +3443,105 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "25.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.00%3A_Why_This_Chapter"
         },
         {
           "number": "25.1",
           "title": "Classification of Carbohydrates",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-1-Classification-of-Carbohydrates.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.01%3A_Classification_of_Carbohydrates"
         },
         {
           "number": "25.2",
           "title": "Representing Carbohydrate Stereochemistry- Fischer Projections",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-2-Representing-Carbohydrate-Stereochemistry-Fischer-Projections.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.02%3A_Representing_Carbohydrate_Stereochemistry-_Fischer_Projections"
         },
         {
           "number": "25.3",
           "title": "D, L Sugars",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-3-D-L-Sugars.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.03%3A_D_L_Sugars"
         },
         {
           "number": "25.4",
           "title": "Configurations of Aldoses",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-4-Configurations-of-Aldoses.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.04%3A_Configurations_of_Aldoses"
         },
         {
           "number": "25.5",
           "title": "Cyclic Structures of Monosaccharides - Anomers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-5-Cyclic-Structures-of-Monosaccharides-Anomers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.05%3A_Cyclic_Structures_of_Monosaccharides_-_Anomers"
         },
         {
           "number": "25.6",
           "title": "Reactions of Monosaccharides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-6-Reactions-of-Monosaccharides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.06%3A_Reactions_of_Monosaccharides"
         },
         {
           "number": "25.7",
           "title": "The Eight Essential Monosaccharides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-7-The-Eight-Essential-Monosaccharides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.07%3A_The_Eight_Essential_Monosaccharides"
         },
         {
           "number": "25.8",
           "title": "Disaccharides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-8-Disaccharides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.08%3A_Disaccharides"
         },
         {
           "number": "25.9",
           "title": "Polysaccharides and Their Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-9-Polysaccharides-and-Their-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.09%3A_Polysaccharides_and_Their_Synthesis"
         },
         {
           "number": "25.10",
           "title": "Some Other Important Carbohydrates",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-10-Some-Other-Important-Carbohydrates.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.10%3A_Some_Other_Important_Carbohydrates"
         },
         {
           "number": "25.11",
           "title": "Chemistry Matters—Sweetness",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-11-Chemistry-Matters-Sweetness.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.11%3A_Chemistry_MattersSweetness"
         },
         {
           "number": "25.12",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-12-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.12%3A_Key_Terms"
         },
         {
           "number": "25.13",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-13-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.13%3A_Summary"
         },
         {
           "number": "25.14",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Carbohydrates/25-14-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/25%3A_Biomolecules_-_Carbohydrates/25.14%3A_Summary_of_Reactions"
         }
@@ -3554,112 +3554,112 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "26.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.00%3A_Why_This_Chapter"
         },
         {
           "number": "26.1",
           "title": "Structures of Amino Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-1-Structures-of-Amino-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.01%3A_Structures_of_Amino_Acids"
         },
         {
           "number": "26.2",
           "title": "Amino Acids, the Henderson-Hasselbalch Equation, and Isoelectric Points",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-2-Amino-Acids-the-Henderson-Hasselbalch-Equation-and-Isoelectric-Points.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.02%3A_Amino_Acids_the_Henderson-Hasselbalch_Equation_and_Isoelectric_Points"
         },
         {
           "number": "26.3",
           "title": "Synthesis of Amino Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-3-Synthesis-of-Amino-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.03%3A_Synthesis_of_Amino_Acids"
         },
         {
           "number": "26.4",
           "title": "Peptides and Proteins",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-4-Peptides-and-Proteins.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.04%3A_Peptides_and_Proteins"
         },
         {
           "number": "26.5",
           "title": "Amino Acid Analysis of Peptides",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-5-Amino-Acid-Analysis-of-Peptides.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.05%3A_Amino_Acid_Analysis_of_Peptides"
         },
         {
           "number": "26.6",
           "title": "Peptide Sequencing- The Edman Degradation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-6-Peptide-Sequencing-The-Edman-Degradation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.06%3A_Peptide_Sequencing-_The_Edman_Degradation"
         },
         {
           "number": "26.7",
           "title": "Peptide Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-7-Peptide-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.07%3A_Peptide_Synthesis"
         },
         {
           "number": "26.8",
           "title": "Automated Peptide Synthesis- The Merrifield Solid-Phase Method",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-8-Automated-Peptide-Synthesis-The-Merrifield-Solid-Phase-Method.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.08%3A_Automated_Peptide_Synthesis-_The_Merrifield_Solid-Phase_Method"
         },
         {
           "number": "26.9",
           "title": "Protein Structure",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-9-Protein-Structure.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.09%3A_Protein_Structure"
         },
         {
           "number": "26.10",
           "title": "Enzymes and Coenzymes",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-10-Enzymes-and-Coenzymes.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.10%3A_Enzymes_and_Coenzymes"
         },
         {
           "number": "26.11",
           "title": "How do Enzymes Work? Citrate Synthase",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-11-How-do-Enzymes-Work-Citrate-Synthase.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.11%3A_How_do_Enzymes_Work_Citrate_Synthase"
         },
         {
           "number": "26.12",
           "title": "Chemistry Matters - The Protein Data Bank",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-12-Chemistry-Matters-The-Protein-Data-Bank.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.12%3A_Chemistry_MattersThe_Protein_Data_Bank"
         },
         {
           "number": "26.13",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-13-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.13%3A_Key_Terms"
         },
         {
           "number": "26.14",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-14-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.14%3A_Summary"
         },
         {
           "number": "26.15",
           "title": "Summary of Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Amino-Acids-Peptides-and-Proteins/26-15-Summary-of-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/26%3A_Biomolecules-_Amino_Acids_Peptides_and_Proteins/26.15%3A_Summary_of_Reactions"
         }
@@ -3672,77 +3672,77 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "27.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.00%3A_Why_This_Chapter"
         },
         {
           "number": "27.1",
           "title": "Waxes, Fats, and Oils",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-1-Waxes-Fats-and-Oils.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.01%3A_Waxes_Fats_and_Oils"
         },
         {
           "number": "27.2",
           "title": "Soap",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-2-Soap.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.02%3A_Soap"
         },
         {
           "number": "27.3",
           "title": "Phospholipids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-3-Phospholipids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.03%3A_Phospholipids"
         },
         {
           "number": "27.4",
           "title": "Prostaglandins and Other Eicosanoids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-4-Prostaglandins-and-Other-Eicosanoids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.04%3A_Prostaglandins_and_Other_Eicosanoids"
         },
         {
           "number": "27.5",
           "title": "Terpenoids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-5-Terpenoids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.05%3A_Terpenoids"
         },
         {
           "number": "27.6",
           "title": "Steroids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-6-Steroids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.06%3A_Steroids"
         },
         {
           "number": "27.7",
           "title": "Biosynthesis of Steroids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-7-Biosynthesis-of-Steroids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.07%3A_Biosynthesis_of_Steroids"
         },
         {
           "number": "27.8",
           "title": "Chemistry Matters—Saturated Fats, Cholesterol, and Heart Disease",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-8-Chemistry-Matters-Saturated-Fats-Cholesterol-and-Heart-Disease.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.08%3A_Chemistry_MattersSaturated_Fats_Cholesterol_and_Heart_Disease"
         },
         {
           "number": "27.9",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-9-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.09%3A_Key_Terms"
         },
         {
           "number": "27.10",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Lipids/27-10-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/27%3A_Biomolecules_-_Lipids/27.10%3A_Summary"
         }
@@ -3755,84 +3755,84 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "28.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.00%3A_Why_This_Chapter"
         },
         {
           "number": "28.1",
           "title": "Nucleotides and Nucleic Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-1-Nucleotides-and-Nucleic-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.01%3A_Nucleotides_and_Nucleic_Acids"
         },
         {
           "number": "28.2",
           "title": "Base Pairing in DNA",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-2-Base-Pairing-in-DNA.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.02%3A_Base_Pairing_in_DNA"
         },
         {
           "number": "28.3",
           "title": "Replication of DNA",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-3-Replication-of-DNA.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.03%3A_Replication_of_DNA"
         },
         {
           "number": "28.4",
           "title": "Transcription of DNA",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-4-Transcription-of-DNA.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.04%3A_Transcription_of_DNA"
         },
         {
           "number": "28.5",
           "title": "Translation of RNA - Protein Biosynthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-5-Translation-of-RNA-Protein-Biosynthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.05%3A_Translation_of_RNA_-_Protein_Biosynthesis"
         },
         {
           "number": "28.6",
           "title": "DNA Sequencing",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-6-DNA-Sequencing.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.06%3A_DNA_Sequencing"
         },
         {
           "number": "28.7",
           "title": "DNA Synthesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-7-DNA-Synthesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.07%3A_DNA_Synthesis"
         },
         {
           "number": "28.8",
           "title": "The Polymerase Chain Reaction",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-8-The-Polymerase-Chain-Reaction.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.08%3A_The_Polymerase_Chain_Reaction"
         },
         {
           "number": "28.9",
           "title": "Chemistry Matters—DNA Fingerprinting",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-9-Chemistry-Matters-DNA-Fingerprinting.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.09%3A_Chemistry_MattersDNA_Fingerprinting"
         },
         {
           "number": "28.10",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-10-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.10%3A_Key_Terms"
         },
         {
           "number": "28.11",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Biomolecules-Nucleic-Acids/28-11-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/28%3A_Biomolecules_-_Nucleic_Acids/28.11%3A_Summary"
         }
@@ -3845,98 +3845,98 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "29.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.00%3A_Why_This_Chapter"
         },
         {
           "number": "29.1",
           "title": "An Overview of Metabolism and Biochemical Energy",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-1-An-Overview-of-Metabolism-and-Biochemical-Energy.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.01%3A_An_Overview_of_Metabolism_and_Biochemical_Energy"
         },
         {
           "number": "29.2",
           "title": "Catabolism of Triacylglycerols - The Fate of Glycerol",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-2-Catabolism-of-Triacylglycerols-The-Fate-of-Glycerol.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.02%3A_Catabolism_of_Triacylglycerols_-_The_Fate_of_Glycerol"
         },
         {
           "number": "29.3",
           "title": "Catabolism of Triacylglycerols - β-Oxidation",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-3-Catabolism-of-Triacylglycerols-Oxidation.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.03%3A_Catabolism_of_Triacylglycerols_-_-Oxidation"
         },
         {
           "number": "29.4",
           "title": "Biosynthesis of Fatty Acids",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-4-Biosynthesis-of-Fatty-Acids.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.04%3A_Biosynthesis_of_Fatty_Acids"
         },
         {
           "number": "29.5",
           "title": "Catabolism of Carbohydrates- Glycolysis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-5-Catabolism-of-Carbohydrates-Glycolysis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.05%3A_Catabolism_of_Carbohydrates-_Glycolysis"
         },
         {
           "number": "29.6",
           "title": "Conversion of Pyruvate to Acetyl CoA",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-6-Conversion-of-Pyruvate-to-Acetyl-CoA.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.06%3A_Conversion_of_Pyruvate_to_Acetyl_CoA"
         },
         {
           "number": "29.7",
           "title": "The Citric Acid Cycle",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-7-The-Citric-Acid-Cycle.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.07%3A_The_Citric_Acid_Cycle"
         },
         {
           "number": "29.8",
           "title": "Carbohydrate Biosynthesis- Gluconeogenesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-8-Carbohydrate-Biosynthesis-Gluconeogenesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.08%3A_Carbohydrate_Biosynthesis-_Gluconeogenesis"
         },
         {
           "number": "29.9",
           "title": "Catabolism of Proteins- Deamination",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-9-Catabolism-of-Proteins-Deamination.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.09%3A_Catabolism_of_Proteins-_Deamination"
         },
         {
           "number": "29.10",
           "title": "Some Conclusions about Biological Chemistry",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-10-Some-Conclusions-about-Biological-Chemistry.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.10%3A_Some_Conclusions_about_Biological_Chemistry"
         },
         {
           "number": "29.11",
           "title": "Chemistry Matters—Statin Drugs",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-11-Chemistry-Matters-Statin-Drugs.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.11%3A_Chemistry_MattersStatin_Drugs"
         },
         {
           "number": "29.12",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-12-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.12%3A_Key_Terms"
         },
         {
           "number": "29.13",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/The-Organic-Chemistry-of-Metabolic-Pathways/29-13-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/29%3A_The_Organic_Chemistry_of_Metabolic_Pathways/29.13%3A_Summary"
         }
@@ -3949,91 +3949,91 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "30.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.00%3A_Why_This_Chapter"
         },
         {
           "number": "30.1",
           "title": "Molecular Orbitals of Conjugated Pi Systems",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-1-Molecular-Orbitals-of-Conjugated-Pi-Systems.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.01%3A_Molecular_Orbitals_of_Conjugated_Pi_Systems"
         },
         {
           "number": "30.2",
           "title": "Electrocyclic Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-2-Electrocyclic-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.02%3A_Electrocyclic_Reactions"
         },
         {
           "number": "30.3",
           "title": "Stereochemistry of Thermal Electrocyclic Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-3-Stereochemistry-of-Thermal-Electrocyclic-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.03%3A_Stereochemistry_of_Thermal_Electrocyclic_Reactions"
         },
         {
           "number": "30.4",
           "title": "Photochemical Electrocyclic Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-4-Photochemical-Electrocyclic-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.04%3A_Photochemical_Electrocyclic_Reactions"
         },
         {
           "number": "30.5",
           "title": "Cycloaddition Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-5-Cycloaddition-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.05%3A_Cycloaddition_Reactions"
         },
         {
           "number": "30.6",
           "title": "Stereochemistry of Cycloadditions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-6-Stereochemistry-of-Cycloadditions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.06%3A_Stereochemistry_of_Cycloadditions"
         },
         {
           "number": "30.7",
           "title": "Sigmatropic Rearrangements",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-7-Sigmatropic-Rearrangements.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.07%3A_Sigmatropic_Rearrangements"
         },
         {
           "number": "30.8",
           "title": "Some Examples of Sigmatropic Rearrangements",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-8-Some-Examples-of-Sigmatropic-Rearrangements.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.08%3A_Some_Examples_of_Sigmatropic_Rearrangements"
         },
         {
           "number": "30.9",
           "title": "A Summary of Rules for Pericyclic Reactions",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-9-A-Summary-of-Rules-for-Pericyclic-Reactions.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.09%3A_A_Summary_of_Rules_for_Pericyclic_Reactions"
         },
         {
           "number": "30.10",
           "title": "Chemistry Matters—Vitamin D, the Sunshine Vitamin",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-10-Chemistry-Matters-Vitamin-D-the-Sunshine-Vitamin.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.10%3A_Chemistry_MattersVitamin_D_the_Sunshine_Vitamin"
         },
         {
           "number": "30.11",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-11-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.11%3A_Key_Terms"
         },
         {
           "number": "30.12",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Orbitals-and-Organic-Chemistry-Pericyclic-Reactions/30-12-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/30%3A_Orbitals_and_Organic_Chemistry_-_Pericyclic_Reactions/30.12%3A_Summary"
         }
@@ -4046,77 +4046,77 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         {
           "number": "31.0",
           "title": "Why This Chapter?",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-0-Why-This-Chapter.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.00%3A_Why_This_Chapter"
         },
         {
           "number": "31.1",
           "title": "Chain-Growth Polymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-1-Chain-Growth-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.01%3A_Chain-Growth_Polymers"
         },
         {
           "number": "31.2",
           "title": "Stereochemistry of Polymerization- Ziegler-Natta Catalysts",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-2-Stereochemistry-of-Polymerization-Ziegler-Natta-Catalysts.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.02%3A_Stereochemistry_of_Polymerization-_Ziegler-Natta_Catalysts"
         },
         {
           "number": "31.3",
           "title": "Copolymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-3-Copolymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.03%3A_Copolymers"
         },
         {
           "number": "31.4",
           "title": "Step-Growth Polymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-4-Step-Growth-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.04%3A_Step-Growth_Polymers"
         },
         {
           "number": "31.5",
           "title": "Olefin Metathesis Polymerization",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-5-Olefin-Metathesis-Polymerization.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.05%3A_Olefin_Metathesis_Polymerization"
         },
         {
           "number": "31.6",
           "title": "Intramolecular Olefin Metathesis",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-6-Intramolecular-Olefin-Metathesis.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.06%3A_Intramolecular_Olefin_Metathesis"
         },
         {
           "number": "31.7",
           "title": "Polymer Structure and Physical Properties",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-7-Polymer-Structure-and-Physical-Properties.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.07%3A_Polymer_Structure_and_Physical_Properties"
         },
         {
           "number": "31.8",
           "title": "Chemistry Matters—Degradable Polymers",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-8-Chemistry-Matters-Degradable-Polymers.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.08%3A_Chemistry_MattersDegradable_Polymers"
         },
         {
           "number": "31.9",
           "title": "Key Terms",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-9-Key-Terms.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.09%3A_Key_Terms"
         },
         {
           "number": "31.10",
           "title": "Summary",
-          "ready": false,
+          "ready": true,
           "file": "orgchem/Synthetic-Polymers/31-10-Summary.md",
           "sourceUrl": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)/31%3A_Synthetic_Polymers/31.10%3A_Summary"
         }

@@ -42,6 +42,15 @@ describe("badges", () => {
   it("never awards a badge for a roadmap with nothing to read yet", () => {
     const later = BRANCHES.find((branch) => !branch.path)!;
     expect(roadmapComplete(later, allIntroductory)).toBe(false);
+    const everything = new Set([...allIntroductory, ...allOrganic]);
+    expect(earnedIds(everything)).not.toContain("inorganic");
+    expect(earnedIds(everything)).not.toContain("inorganic-master");
+    expect(earnedIds(everything)).not.toContain("physical");
+    expect(earnedIds(everything)).not.toContain("physical-master");
+    expect(earnedIds(everything)).not.toContain("analytical");
+    expect(earnedIds(everything)).not.toContain("analytical-master");
+    expect(earnedIds(everything)).not.toContain("biochemistry");
+    expect(earnedIds(everything)).not.toContain("biochemistry-master");
   });
 
   it("points every badge at a real roadmap, with unique ids", () => {

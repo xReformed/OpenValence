@@ -74,8 +74,8 @@ export const BRANCHES: Branch[] = [
       {
         title: "Organic Chemistry (OpenStax)",
         license: "CC BY-NC-SA 4.0",
-        progress: "Chapters 1–19 of 31",
-        complete: false,
+        progress: "All 31 chapters",
+        complete: true,
       },
     ],
     alreadyCovered:
@@ -89,7 +89,7 @@ export const BRANCHES: Branch[] = [
     ],
     steps: [
       { label: "Confirm the textbook's license", done: true },
-      { label: "Transcribe it word for word" },
+      { label: "Transcribe it word for word", done: true },
       { label: "Show molecule structures as real diagrams" },
       { label: "Answer questions on mechanisms and spectra, with citations" },
     ],

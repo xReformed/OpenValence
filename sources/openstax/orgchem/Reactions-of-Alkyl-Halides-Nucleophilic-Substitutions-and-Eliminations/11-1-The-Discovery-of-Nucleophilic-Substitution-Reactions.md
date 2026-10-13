@@ -31,7 +31,7 @@ From this and nearly a dozen other series of similar reactions, researchers conc
 
 ### Worked Example 11.1.1: Predicting the Stereochemistry of a Nucleophilic Substitution Reaction
 
-What product would you expect from a nucleophilic substitution reaction of (R)-1-bromo-1-phenylethane with cyanide ion, −C≡N, as nucleophile? Show the stereochemistry of both reactant and product, assuming that inversion of configuration occurs.
+What product would you expect from a nucleophilic substitution reaction of (R)-1-bromo-1-phenylethane with cyanide ion, ^−C≡N, as nucleophile? Show the stereochemistry of both reactant and product, assuming that inversion of configuration occurs.
 
 [Image: An incomplete reaction of 1-bromo-1-phenylethane with sodium cyanide yields an unknown product, depicted by a question mark.]
 

@@ -6,3 +6,24 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- anticodon
+- antisense strand
+- codon
+- deoxyribonucleic acid (DNA)
+- double helix
+- 3′ end
+- 5′ end
+- messenger RNA (mRNA)
+- nucleoside
+- nucleotides
+- polymerase chain reaction (PCR)
+- replication
+- ribonucleic acid (RNA)
+- ribosomal RNA (rRNA)
+- Sanger dideoxy method
+- sense strand
+- small RNAs
+- transcription
+- transfer RNA (tRNA)
+- translation

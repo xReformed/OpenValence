@@ -16,7 +16,7 @@ SYMBOLS = {
     "lambda": "λ", "nu": "ν", "times": "×", "Delta": "Δ", "delta": "δ", "mu": "μ",
     "pi": "π", "alpha": "α", "beta": "β", "gamma": "γ", "sigma": "σ", "theta": "θ",
     "ell": "ℓ", "cdot": "·", "rightarrow": "→", "leftarrow": "←", "to": "→",
-    "rightleftharpoons": "⇌", "approx": "≈", "lt": "<", "gt": ">", "le": "≤",
+    "rightleftharpoons": "⇌", "rightleftarrows": "⇄", "approx": "≈", "lt": "<", "gt": ">", "le": "≤",
     "leq": "≤", "prime": "′", "ll": "≪", "gg": "≫", "ge": "≥", "geq": "≥", "neq": "≠", "degree": "°", "circ": "°",
     "pm": "±", "infty": "∞", "ldots": "…", "cdots": "…", "uparrow": "↑",
     "downarrow": "↓", "equiv": "≡", "longrightarrow": "⟶", "curvearrowright": "↷",
@@ -162,7 +162,8 @@ def nuclide_match(m):
 
 def tex(s):
     s = s.replace("\xa0", " ").replace("~", " ")  # ~ is TeX's non-breaking space: 100 × 10^{-12}~\mathrm{m}
-    s = re.sub(r"\\PageIndex\{(\d+)([a-z]*)\}", lambda m: f"{SEC}.{m.group(1)}{m.group(2)}", s)
+    # The part letter can be a capital: \PageIndex{1A} (Organic Chemistry 29.5, a figure in two parts).
+    s = re.sub(r"\\PageIndex\{(\d+)([A-Za-z]*)\}", lambda m: f"{SEC}.{m.group(1)}{m.group(2)}", s)
     # _{92}^{235}\textrm{U}, \ce{_0^1n}: prescripts on a symbol are a nuclide.
     s = NUCLIDE.sub(nuclide_match, s)
     s = lewis_dots(s)
@@ -170,6 +171,9 @@ def tex(s):
     s = re.sub(r"\\label\{[^{}]*\}", "", s)  # equation labels are never displayed
     s = re.sub(r"\\tilde\{?(\w)\}?", lambda m: tilde(m.group(1)), s)  # \tilde{v}: wavenumber ṽ
     s = re.sub(r"\\color\{\w+\}", "", s)  # \color{red}: colour can't be shown; a [Note] says what it marked
+    # \tag{Henderson-Hasselbalch }: an equation's name, printed beside it in parentheses.
+    s = re.sub(r"\\tag\{([^{}]*)\}", lambda m: f"\\text{{  ({m.group(1).strip()})}}", s)
+    s = re.sub(r"\\operatorname\{(\w+)\}", r"\1", s)  # \operatorname{antilog}(2.54)
     # \begin{align*} x + (−6) &= −1 \\ x &= +5 \end{align*}: drop the environment
     # and its alignment marks; the line breaks between steps are kept.
     s = re.sub(r"\\(?:begin|end)\{(?:align|aligned|eqnarray|gather|split)\*?\}", "", s)
@@ -344,6 +348,43 @@ class Page(HTMLParser):
         self.sup_at = None  # where the open <sup>'s text starts: ("buf"|"cell", index)
         self.sub_at = None  # likewise for <sub>
         self.box_kind = {}  # box depth -> "Example" / "Exercise" (None for other boxes)
+        self.first_row = False  # the next <mtr> is its <mtable>'s first
+        self.layout = []  # open MathML <mfrac>/<msub>/<msup>: [tag, depth, where each child starts]
+
+    def at(self):
+        return len(self.cell) if self.cell is not None else len(self.buf)
+
+    def close_layout(self, tag, starts):
+        """Rewrite a MathML fraction or script from its children's text: <mfrac>
+        becomes (num)/(den), <msup> base^sup, <msub> base_sub (letters) or basesub."""
+        text = self.cell if self.cell is not None else self.buf
+        if starts and starts[-1] > len(text):
+            return  # the text it was written into has been flushed
+        parts = [text[s:e] for s, e in zip(starts, starts[1:] + [len(text)])]
+        if tag == "msup" and len(parts) == 1 and parts[0].strip() in ("+", "−", "–"):
+            parts = ["", parts[0]]  # a charge set alone: H<msup>O</msup><msup>+</msup>
+        while tag != "mfrac" and len(parts) > 2 and not parts[-1].strip():
+            blank = parts.pop()
+            parts[-1] += blank  # a blank extra child (Beginning Chemistry 8.3: d_z^2)
+        if len(parts) < 2:
+            return
+        head, last = "".join(parts[:-1]), parts[-1].strip()
+        after = parts[-1][len(parts[-1].rstrip()):]  # "d<msub>z</msub><msup>2 </msup>orbital"
+        if tag == "mfrac":
+            out = wrap(head.strip()) + "/" + wrap(last)
+            if re.search(r"\b(?:log|ln|exp)\s*$", text[:starts[0]]):
+                out = f"({out})"  # log([A–]/[HA]), as with \frac
+        elif tag == "msup":
+            # Ar′ stays; so does a superscript the HTML inside already marked (8.3: <sup>2</sup>)
+            out = head + ("^" + group_sup(last) if last not in ("", "′", "″") and last[0] != "^" else last)
+        else:  # K<sub>b</sub> -> K_b; RNH<sub>2</sub> stays plain, as with HTML <sub>
+            mark = re.match(r"[A-Za-z]", last) and re.search(r"[A-Za-zΔ]$", head)
+            out = head + ("_" if mark else "") + last
+        text = text[:starts[0]] + out + after
+        if self.cell is not None:
+            self.cell = text
+        else:
+            self.buf = text
 
     def fill_spans(self):
         """Insert cells still covered by a rowspan from an earlier row."""
@@ -429,6 +470,22 @@ class Page(HTMLParser):
             self.mms = {"depth": len(self.stack), "parts": [], "pre_at": None}
             self.stack.append(tag)
             return
+        if self.layout and len(self.stack) == self.layout[-1][1] + 1:
+            self.layout[-1][2].append(self.at())  # a child of the open fraction/script
+        if tag in ("mfrac", "msub", "msup"):
+            self.layout.append([tag, len(self.stack), []])
+        elif tag == "mtable":
+            self.first_row = True
+        elif tag == "mtr":
+            # Each row of an equation array is its own line (Organic Chemistry 24.3: Kb,
+            # pKb), but not a table's first row: the source's broken MathML (24.3) starts
+            # a new one-row table for the end of a line ("–log" … "Kb").
+            if not self.first_row and (self.cell if self.cell is not None else self.buf).strip():
+                if self.cell is not None:
+                    self.cell += "\x06"
+                else:
+                    self.buf += "\x06"
+            self.first_row = False
         if tag in BLOCKS:
             self.flush()
         if tag == "sup":
@@ -526,6 +583,9 @@ class Page(HTMLParser):
                 else:
                     self.buf += out
             return
+        if self.layout and self.layout[-1][0] == tag and self.layout[-1][1] == len(self.stack):
+            _, _, starts = self.layout.pop()
+            self.close_layout(tag, starts)
         if tag == "sub" and self.sub_at is not None:
             # p<sub>x</sub> -> p_x, ΔH<sub>vap</sub> -> ΔH_vap: a letter subscript on a
             # letter is marked, the corpus's convention. Digit subscripts (H<sub>2</sub>O)
@@ -642,7 +702,7 @@ class Page(HTMLParser):
         elif tag == "figcaption":
             t = self.text()
             # "Figure8.5.6:" / "Figure 8.4.1 Title" / "Figure 16.2.1 - Title" -> "Figure 8.4.1: Title"
-            t = re.sub(r"^Figure\s*(\d+\.\d+\.\d+[a-z]?)\s*(?:[:\-–]\s*)?", r"Figure \1: ", t)
+            t = re.sub(r"^Figure\s*(\d+\.\d+\.\d+[a-zA-Z]?)\s*(?:[:\-–]\s*)?", r"Figure \1: ", t)
             if not t:
                 pass
             elif self.caption_at is not None:
@@ -726,7 +786,7 @@ text = re.sub(r"\^(\d+|n)\^([+−–])", r"^\1\2", text)  # Fe<sup>2</sup><sup>+
 text = text.replace("^°", "°")  # 180<sup>°</sup> (Organic Chemistry): the degree sign is just text
 # MathML <mover accent><mi>v</mi><mo>&tilde;</mo></mover> comes out "v˜": the wavenumber ṽ.
 text = re.sub(r"(\w)˜", lambda m: tilde(m.group(1)), text)
-text = re.sub(r"\^([+−])\^(\d)", r"^\1\2", text)  # 10<sup>−</sup><sup>10</sup>
+text = re.sub(r"\^([+−–]\d*)\^(\d)", r"^\1\2", text)  # 10<sup>−</sup><sup>10</sup>, 10<sup>–1</sup><sup>4</sup>
 text = text.replace("(opens in new window)", "")  # link label for screen readers
 text = text.replace("​", "").replace("﻿", "")  # zero-width spaces ("World War ​​II")
 # Electron configurations, corpus style: 1s^22s^2 -> 1s^2 2s^2

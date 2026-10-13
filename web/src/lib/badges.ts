@@ -1,5 +1,9 @@
+import analyticalBadge from "../assets/badges/analytical.webp";
+import biochemistryBadge from "../assets/badges/biochemistry.webp";
+import inorganicBadge from "../assets/badges/inorganic.webp";
 import introductoryBadge from "../assets/badges/introductory.webp";
 import organicBadge from "../assets/badges/organic.webp";
+import physicalBadge from "../assets/badges/physical.webp";
 import { branchProgress } from "./mastery";
 import type { Branch } from "./types";
 
@@ -28,8 +32,12 @@ export interface Badge {
   /** The badge artwork (an imported image URL). */
   image: string;
   /** An animated treatment (components/BadgeArt.tsx), for the hardest badges:
-      "intense" (golden rays and sparkles) or "nature" (leaves, fireflies and sunlight). */
-  effect?: "intense" | "nature";
+      "intense" (golden rays and sparkles), "nature" (leaves, fireflies and
+      sunlight), "crystal" (a turning lattice, prismatic light and rising
+      crystals), "quantum" (electrons orbiting, rippling waves and flickers),
+      "spectrum" (spectral bars, a scanning beam, a falling drop and bubbles) or
+      "helix" (a double helix turning round the medal, light and rising bubbles). */
+  effect?: "intense" | "nature" | "crystal" | "quantum" | "spectrum" | "helix";
 }
 
 export const BADGES: Badge[] = [
@@ -66,6 +74,74 @@ export const BADGES: Badge[] = [
     description: "Achieve 100% correct rate without having Claude to help you.",
     image: organicBadge,
     effect: "nature",
+  },
+  {
+    id: "inorganic",
+    roadmap: "inorganic",
+    requirement: "complete",
+    title: "Inorganic chemistry",
+    description: "Finished every section of the inorganic chemistry roadmap.",
+    image: inorganicBadge,
+  },
+  {
+    id: "inorganic-master",
+    roadmap: "inorganic",
+    requirement: "master",
+    title: "Inorganic chemistry Master",
+    description: "Achieve 100% correct rate without having Claude to help you.",
+    image: inorganicBadge,
+    effect: "crystal",
+  },
+  {
+    id: "physical",
+    roadmap: "physical",
+    requirement: "complete",
+    title: "Physical chemistry",
+    description: "Finished every section of the physical chemistry roadmap.",
+    image: physicalBadge,
+  },
+  {
+    id: "physical-master",
+    roadmap: "physical",
+    requirement: "master",
+    title: "Physical chemistry Master",
+    description: "Achieve 100% correct rate without having Claude to help you.",
+    image: physicalBadge,
+    effect: "quantum",
+  },
+  {
+    id: "analytical",
+    roadmap: "analytical",
+    requirement: "complete",
+    title: "Analytical chemistry",
+    description: "Finished every section of the analytical chemistry roadmap.",
+    image: analyticalBadge,
+  },
+  {
+    id: "analytical-master",
+    roadmap: "analytical",
+    requirement: "master",
+    title: "Analytical chemistry Master",
+    description: "Achieve 100% correct rate without having Claude to help you.",
+    image: analyticalBadge,
+    effect: "spectrum",
+  },
+  {
+    id: "biochemistry",
+    roadmap: "biochemistry",
+    requirement: "complete",
+    title: "Biochemistry",
+    description: "Finished every section of the biochemistry roadmap.",
+    image: biochemistryBadge,
+  },
+  {
+    id: "biochemistry-master",
+    roadmap: "biochemistry",
+    requirement: "master",
+    title: "Biochemistry Master",
+    description: "Achieve 100% correct rate without having Claude to help you.",
+    image: biochemistryBadge,
+    effect: "helix",
   },
 ];
 

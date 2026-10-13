@@ -309,9 +309,359 @@
   }
 }
 
+/* A crystal animation for special badges (components/BadgeArt.tsx), after the
+   inorganic artwork: an icy glow breathing behind beams of light in six-fold,
+   hexagonal symmetry, a lattice of atoms turning round the medal with its
+   atoms pulsing in turn, prismatic light refracting across the medal, glints
+   twinkling, and small hexagonal crystals rising past it. The medal itself
+   stays still. For reduced motion only the glow and the lattice are drawn,
+   still. */
+@keyframes crystal-aura {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes crystal-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(59 130 246 / 0.45));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgb(96 165 250 / 0.95)) drop-shadow(0 0 30px rgb(165 180 252 / 0.5));
+  }
+}
+
+/* Percentages are of the band's own width, as for badge-shine. */
+@keyframes crystal-prism {
+  0% {
+    transform: translateX(-150%) skewX(-24deg);
+  }
+  55%,
+  100% {
+    transform: translateX(320%) skewX(-24deg);
+  }
+}
+
+@keyframes crystal-glint {
+  0%,
+  12% {
+    transform: translateX(-250%) skewX(-24deg);
+  }
+  64%,
+  100% {
+    transform: translateX(1300%) skewX(-24deg);
+  }
+}
+
+@keyframes crystal-atom {
+  0%,
+  100% {
+    transform: scale(0.8);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.25);
+    filter: brightness(1.35);
+  }
+}
+
+@keyframes crystal-rise {
+  0% {
+    top: 96%;
+    opacity: 0;
+  }
+  15%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: 2%;
+    opacity: 0;
+  }
+}
+
+@keyframes crystal-spin {
+  0% {
+    transform: translateX(-4px) rotate(0deg) scale(0.7);
+  }
+  50% {
+    transform: translateX(4px) rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: translateX(-4px) rotate(360deg) scale(0.7);
+  }
+}
+
+/* A quantum animation for special badges (components/BadgeArt.tsx), after
+   the physical chemistry artwork's atom: three electron orbits tilted 60°
+   apart round the medal, an electron travelling each, a cyan glow with waves
+   rippling out behind, light sweeping across the medal, and flickers of light
+   round it. The medal itself stays still. For reduced motion only the glow
+   and the orbits are drawn, still. */
+@keyframes quantum-aura {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes quantum-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(34 211 238 / 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgb(56 189 248 / 0.9)) drop-shadow(0 0 30px rgb(250 204 21 / 0.35));
+  }
+}
+
+@keyframes quantum-wave {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.55);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+
+/* Percentages are of the band's own width, as for badge-shine. */
+@keyframes quantum-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  60%,
+  100% {
+    transform: translateX(320%) skewX(-20deg);
+  }
+}
+
+/* The electron's arm turns once round the (squashed) orbit... */
+@keyframes quantum-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ...while the electron turns back the same amount and undoes the squash
+   (1 / 0.36), so it stays a round dot as it goes. */
+@keyframes quantum-electron {
+  from {
+    transform: rotate(0deg) scaleY(2.778);
+  }
+  to {
+    transform: rotate(-360deg) scaleY(2.778);
+  }
+}
+
+@keyframes quantum-flicker {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  55% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* A spectrum animation for special badges (components/BadgeArt.tsx), after
+   the analytical chemistry artwork: a violet glow, a ring of spectral bars
+   rising and falling round the medal like peaks on a readout, a scanning beam
+   crossing the medal, drops falling from the dropper and bubbles rising in
+   the flask. The medal itself stays still. For reduced motion only the glow
+   and the ring of bars are drawn, still. */
+@keyframes spectrum-aura {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes spectrum-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(139 92 246 / 0.45));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgb(167 139 250 / 0.95)) drop-shadow(0 0 30px rgb(96 165 250 / 0.4));
+  }
+}
+
+@keyframes spectrum-peak {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* Percentages are of the beam's own width: from off the left edge to off the right. */
+@keyframes spectrum-scan {
+  0% {
+    transform: translateX(-200%);
+  }
+  70%,
+  100% {
+    transform: translateX(1400%);
+  }
+}
+
+@keyframes spectrum-drop {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.4);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
+  }
+}
+
+@keyframes spectrum-bubble {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  25%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-9px) scale(1.1);
+  }
+}
+
+/* A helix animation for special badges (components/BadgeArt.tsx), after the
+   biochemistry artwork's DNA: a teal and magenta glow, a double helix wound
+   round the medal (two strands of beads crossing over each other, joined by
+   rungs) turning slowly, light sweeping across the medal, and bubbles
+   drifting up past it. The medal itself stays still. For reduced motion only
+   the glow and the helix are drawn, still. */
+@keyframes helix-aura {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes helix-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgb(45 212 191 / 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgb(56 189 248 / 0.85)) drop-shadow(0 0 30px rgb(217 70 239 / 0.4));
+  }
+}
+
+/* A bead swinging across its pair's rung and back: large and bright on the
+   near side, small and dim on the far side, so the strands seem to cross. */
+@keyframes helix-strand {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(-7px) scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: translateY(7px) scale(0.6);
+  }
+}
+
+/* The rung between a pair, shortest when its beads pass each other. */
+@keyframes helix-rung {
+  0%,
+  50%,
+  100% {
+    transform: scaleY(1);
+  }
+  25%,
+  75% {
+    transform: scaleY(0.08);
+  }
+}
+
+/* Percentages are of the band's own width, as for badge-shine. */
+@keyframes helix-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  60%,
+  100% {
+    transform: translateX(320%) skewX(-20deg);
+  }
+}
+
+@keyframes helix-bubble {
+  0% {
+    top: 92%;
+    opacity: 0;
+    transform: translateX(-3px) scale(0.6);
+  }
+  20%,
+  70% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(3px) scale(1);
+  }
+  100% {
+    top: 6%;
+    opacity: 0;
+    transform: translateX(-3px) scale(1.15);
+  }
+}
+
 @layer components {
   .badge-intense,
-  .badge-nature {
+  .badge-nature,
+  .badge-crystal,
+  .badge-quantum,
+  .badge-spectrum,
+  .badge-helix {
     position: relative;
     display: inline-block;
     isolation: isolate;
@@ -321,12 +671,20 @@
   }
   /* Locked: greyed out but still moving; hovering its card previews the colours. */
   .badge-intense--locked,
-  .badge-nature--locked {
+  .badge-nature--locked,
+  .badge-crystal--locked,
+  .badge-quantum--locked,
+  .badge-spectrum--locked,
+  .badge-helix--locked {
     filter: grayscale(1);
     opacity: 0.6;
   }
   .group:hover .badge-intense--locked,
-  .group:hover .badge-nature--locked {
+  .group:hover .badge-nature--locked,
+  .group:hover .badge-crystal--locked,
+  .group:hover .badge-quantum--locked,
+  .group:hover .badge-spectrum--locked,
+  .group:hover .badge-helix--locked {
     filter: none;
     opacity: 1;
   }
@@ -344,7 +702,11 @@
   /* A block, so the shine's box is exactly the medal's (an inline box isn't).
      The medal itself stays still; only light moves over and around it. */
   .badge-intense__body,
-  .badge-nature__body {
+  .badge-nature__body,
+  .badge-crystal__body,
+  .badge-quantum__body,
+  .badge-spectrum__body,
+  .badge-helix__body {
     position: relative;
     display: block;
   }
@@ -504,6 +866,425 @@
     animation: nature-dapple 6s linear infinite;
   }
 
+  .badge-crystal__aura {
+    position: absolute;
+    inset: -22%;
+    z-index: -2;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(147 197 253 / 0.6), rgb(59 130 246 / 0.25) 45%, transparent 70%);
+    animation: crystal-aura 3s ease-in-out infinite;
+  }
+  /* Light split into six beams, the symmetry of a hexagonal crystal: a bright
+     ice-blue beam and a fainter violet one every 60°, turning slowly. */
+  .badge-crystal__facets {
+    position: absolute;
+    inset: -32%;
+    z-index: -1;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+      rgb(219 234 254 / 0.75) 0deg 4deg,
+      transparent 4deg 26deg,
+      rgb(196 181 253 / 0.5) 26deg 33deg,
+      transparent 33deg 60deg
+    );
+    mask: radial-gradient(circle, #000 22%, transparent 66%);
+    animation:
+      badge-rays 16s linear infinite,
+      badge-rays-pulse 2.4s ease-in-out infinite;
+  }
+  .badge-crystal__img {
+    display: block;
+    animation: crystal-glow 3s ease-in-out infinite;
+  }
+  /* A lattice a little wider than the medal, turning the other way to the
+     beams: bonds drawn as a hexagon, with an atom at each corner. */
+  .badge-crystal__lattice {
+    position: absolute;
+    inset: -13%;
+    z-index: 1;
+    pointer-events: none;
+    animation: badge-rays 24s linear infinite reverse;
+  }
+  .badge-crystal__bonds {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    fill: none;
+    stroke: rgb(148 163 184 / 0.7);
+    stroke-width: 1.5;
+  }
+  .badge-crystal__atom {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 50%;
+    animation: crystal-atom 2.4s ease-in-out infinite;
+  }
+  .badge-crystal__atom--gold {
+    background: radial-gradient(circle at 35% 30%, #fff8d6, #f5c542 45%, #b7860b);
+    box-shadow: 0 0 8px rgb(250 204 21 / 0.7);
+  }
+  .badge-crystal__atom--blue {
+    background: radial-gradient(circle at 35% 30%, #dbeafe, #3b82f6 45%, #1e3a8a);
+    box-shadow: 0 0 8px rgb(147 197 253 / 0.8);
+  }
+  .badge-crystal__prism {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  /* Light refracting across the medal, split into ice, white, violet and
+     gold like a prism's... */
+  .badge-crystal__prism::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+    width: 45%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(186 230 253 / 0.45) 25%,
+      rgb(255 255 255 / 0.9) 45%,
+      rgb(221 214 254 / 0.6) 60%,
+      rgb(254 240 138 / 0.35) 75%,
+      transparent
+    );
+    animation: crystal-prism 3.4s ease-in-out infinite;
+  }
+  /* ...with a thin glint following it, as off a cut face. */
+  .badge-crystal__prism::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+    width: 8%;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.85), transparent);
+    animation: crystal-glint 3.4s ease-in-out infinite;
+  }
+  .badge-crystal__glint {
+    position: absolute;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle, #fff 25%, #bfdbfe 60%);
+    clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+    animation: badge-sparkle 2.2s ease-in-out infinite;
+  }
+  .badge-crystal__shard {
+    position: absolute;
+    z-index: 2;
+    width: 9px;
+    height: 10px;
+    margin-left: -4.5px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: linear-gradient(160deg, #eff6ff, #93c5fd 45%, #4f46e5);
+    animation:
+      crystal-rise 4.6s ease-in-out infinite,
+      crystal-spin 2.2s linear infinite;
+  }
+
+  .badge-quantum__aura {
+    position: absolute;
+    inset: -22%;
+    z-index: -2;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(103 232 249 / 0.5), rgb(37 99 235 / 0.25) 45%, transparent 70%);
+    animation: quantum-aura 3s ease-in-out infinite;
+  }
+  /* Rings rippling out from behind the medal, one after the other. */
+  .badge-quantum__wave {
+    position: absolute;
+    inset: -18%;
+    z-index: -1;
+    border-radius: 50%;
+    border: 2px solid rgb(103 232 249 / 0.7);
+    box-shadow: 0 0 12px rgb(56 189 248 / 0.5);
+    animation: quantum-wave 3.2s ease-out infinite;
+  }
+  .badge-quantum__img {
+    display: block;
+    animation: quantum-glow 3s ease-in-out infinite;
+  }
+  .badge-quantum__sweep {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  .badge-quantum__sweep::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+    width: 40%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(165 243 252 / 0.4) 30%,
+      rgb(255 255 255 / 0.85) 50%,
+      rgb(165 243 252 / 0.4) 70%,
+      transparent
+    );
+    animation: quantum-sweep 3.6s ease-in-out infinite;
+  }
+  /* An orbit, tilted inline, in two layers: its path, an ellipse, behind the
+     medal, and its electron in front, riding an arm that turns inside a circle
+     squashed to the same ellipse. (A tilted layer is its own stacking context,
+     so the two can't share one.) */
+  .badge-quantum__orbit {
+    position: absolute;
+    inset: -16%;
+    pointer-events: none;
+  }
+  .badge-quantum__orbit--back {
+    z-index: -1;
+  }
+  .badge-quantum__orbit--front {
+    z-index: 2;
+  }
+  .badge-quantum__path {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    fill: none;
+    stroke: rgb(103 232 249 / 0.55);
+    stroke-width: 1.5;
+  }
+  .badge-quantum__squash {
+    position: absolute;
+    inset: 0;
+    transform: scaleY(0.36);
+  }
+  .badge-quantum__arm {
+    position: absolute;
+    inset: 0;
+    animation: quantum-orbit 3.6s linear infinite;
+  }
+  .badge-quantum__electron {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ecfeff, #22d3ee 45%, #1d4ed8);
+    box-shadow: 0 0 10px 2px rgb(34 211 238 / 0.85);
+    animation: quantum-electron 3.6s linear infinite;
+  }
+  .badge-quantum__flicker {
+    position: absolute;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff 20%, #67e8f9 55%, transparent 75%);
+    box-shadow: 0 0 8px 2px rgb(103 232 249 / 0.7);
+    animation: quantum-flicker 2.6s ease-in-out infinite;
+  }
+
+  .badge-spectrum__aura {
+    position: absolute;
+    inset: -22%;
+    z-index: -2;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(196 181 253 / 0.55), rgb(124 58 237 / 0.25) 45%, transparent 70%);
+    animation: spectrum-aura 3s ease-in-out infinite;
+  }
+  /* A ring of bars behind the medal, turning slowly: each bar stands on an arm
+     turned to its angle and grows outward from its inner end. */
+  .badge-spectrum__ring {
+    position: absolute;
+    inset: -15%;
+    z-index: -1;
+    animation: badge-rays 30s linear infinite;
+  }
+  .badge-spectrum__arm {
+    position: absolute;
+    inset: 0;
+  }
+  .badge-spectrum__bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 16%;
+    margin-left: -2px;
+    border-radius: 2px;
+    background: linear-gradient(to top, rgb(124 58 237 / 0.25), #a78bfa 55%, #e0e7ff);
+    box-shadow: 0 0 6px rgb(167 139 250 / 0.7);
+    transform-origin: 50% 100%;
+    animation: spectrum-peak 1.4s ease-in-out infinite;
+  }
+  .badge-spectrum__img {
+    display: block;
+    animation: spectrum-glow 3s ease-in-out infinite;
+  }
+  .badge-spectrum__scan {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  /* A narrow upright beam crossing the medal, as a spectrometer scans. */
+  .badge-spectrum__scan::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 7%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(196 181 253 / 0.55) 35%,
+      rgb(255 255 255 / 0.95) 50%,
+      rgb(196 181 253 / 0.55) 65%,
+      transparent
+    );
+    animation: spectrum-scan 3.2s ease-in-out infinite;
+  }
+  /* A drop forming at the dropper's tip and falling... */
+  .badge-spectrum__drop {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 81%;
+    width: 4px;
+    height: 5px;
+    margin-left: -2px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: radial-gradient(circle at 40% 35%, #ede9fe, #8b5cf6 55%, #5b21b6);
+    animation: spectrum-drop 2.2s ease-in infinite;
+  }
+  /* ...and bubbles rising in the flask. */
+  .badge-spectrum__bubble {
+    position: absolute;
+    z-index: 2;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 1px solid rgb(237 233 254 / 0.9);
+    background: rgb(255 255 255 / 0.3);
+    animation: spectrum-bubble 2.4s ease-out infinite;
+  }
+
+  .badge-helix__aura {
+    position: absolute;
+    inset: -22%;
+    z-index: -2;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgb(94 234 212 / 0.5),
+      rgb(56 189 248 / 0.22) 42%,
+      rgb(217 70 239 / 0.14) 56%,
+      transparent 70%
+    );
+    animation: helix-aura 3s ease-in-out infinite;
+  }
+  /* The helix: a ring a little wider than the medal, turning slowly, with a
+     base pair on each arm at its outer end. */
+  .badge-helix__ring {
+    position: absolute;
+    inset: -14%;
+    z-index: 1;
+    pointer-events: none;
+    animation: badge-rays 28s linear infinite;
+  }
+  .badge-helix__arm {
+    position: absolute;
+    inset: 0;
+  }
+  .badge-helix__rung {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 14px;
+    margin: -7px 0 0 -1px;
+    border-radius: 1px;
+    background: rgb(240 253 250 / 0.8);
+    animation: helix-rung 2.4s linear infinite;
+  }
+  .badge-helix__bead {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    border-radius: 50%;
+    animation: helix-strand 2.4s ease-in-out infinite;
+  }
+  .badge-helix__bead--blue {
+    background: radial-gradient(circle at 35% 30%, #e0f2fe, #38bdf8 50%, #0369a1);
+    box-shadow: 0 0 6px rgb(56 189 248 / 0.8);
+  }
+  .badge-helix__bead--pink {
+    background: radial-gradient(circle at 35% 30%, #fae8ff, #d946ef 50%, #86198f);
+    box-shadow: 0 0 6px rgb(217 70 239 / 0.75);
+  }
+  .badge-helix__img {
+    display: block;
+    animation: helix-glow 3s ease-in-out infinite;
+  }
+  .badge-helix__sweep {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  .badge-helix__sweep::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: 0;
+    width: 40%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(204 251 241 / 0.35) 30%,
+      rgb(255 255 255 / 0.85) 50%,
+      rgb(245 208 254 / 0.35) 70%,
+      transparent
+    );
+    animation: helix-sweep 3.8s ease-in-out infinite;
+  }
+  .badge-helix__bubble {
+    position: absolute;
+    z-index: 2;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid rgb(204 251 241 / 0.85);
+    background: radial-gradient(circle at 35% 30%, rgb(255 255 255 / 0.8) 15%, rgb(153 246 228 / 0.2) 60%);
+    animation: helix-bubble 4.4s ease-in-out infinite;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .badge-intense__rays,
     .badge-intense__shine,
@@ -524,6 +1305,66 @@
     .badge-nature__ring,
     .badge-nature__ring .badge-nature__leaf {
       animation: none;
+    }
+    .badge-crystal__facets,
+    .badge-crystal__prism,
+    .badge-crystal__glint,
+    .badge-crystal__shard {
+      display: none;
+    }
+    .badge-crystal__aura,
+    .badge-crystal__img,
+    .badge-crystal__lattice,
+    .badge-crystal__atom {
+      animation: none;
+    }
+    .badge-quantum__wave,
+    .badge-quantum__sweep,
+    .badge-quantum__flicker {
+      display: none;
+    }
+    .badge-quantum__aura,
+    .badge-quantum__img,
+    .badge-quantum__arm,
+    .badge-quantum__electron {
+      animation: none;
+    }
+    /* Still round without its animation. */
+    .badge-quantum__electron {
+      transform: scaleY(2.778);
+    }
+    .badge-spectrum__scan,
+    .badge-spectrum__drop,
+    .badge-spectrum__bubble {
+      display: none;
+    }
+    .badge-spectrum__aura,
+    .badge-spectrum__img,
+    .badge-spectrum__ring,
+    .badge-spectrum__bar {
+      animation: none;
+    }
+    /* Bars at a resting height. */
+    .badge-spectrum__bar {
+      transform: scaleY(0.6);
+    }
+    .badge-helix__sweep,
+    .badge-helix__bubble {
+      display: none;
+    }
+    .badge-helix__aura,
+    .badge-helix__img,
+    .badge-helix__ring,
+    .badge-helix__rung,
+    .badge-helix__bead {
+      animation: none;
+    }
+    /* The pairs held apart, one bead either side of its rung. */
+    .badge-helix__bead--blue {
+      transform: translateY(-7px);
+    }
+    .badge-helix__bead--pink {
+      transform: translateY(7px);
     }
   }
 }

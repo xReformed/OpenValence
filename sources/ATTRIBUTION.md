@@ -13,23 +13,11 @@ gets shown next to every citation.
 LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Its
 licence is NonCommercial and ShareAlike.
 
-`openstax/orgchem/` has one folder per chapter (1–31) and one file per
-section. Chapters 1–19 (Structure and Bonding; Polar Covalent Bonds, Acids and
-Bases; Alkanes and Their Stereochemistry; Cycloalkanes and Their
-Stereochemistry; Stereochemistry at Tetrahedral Centers; An Overview of Organic
-Reactions; Alkenes: Structure and Reactivity; Alkenes: Reactions and Synthesis;
-Alkynes: An Introduction to Organic Synthesis; Organohalides; Reactions of Alkyl
-Halides: Nucleophilic Substitutions and Eliminations; Structure Determination:
-Mass Spectrometry and Infrared Spectroscopy; Structure Determination: Nuclear
-Magnetic Resonance Spectroscopy; Conjugated Compounds and Ultraviolet
-Spectroscopy; Benzene and Aromaticity; Chemistry of Benzene: Electrophilic
-Aromatic Substitution; Alcohols and Phenols; Ethers and Epoxides, Thiols and
-Sulfides; Aldehydes and Ketones: Nucleophilic Addition Reactions) are
-transcribed; the other chapters
-are still stubs with front matter only. The
-"Additional Problems" pages (end-of-chapter exercises) are left out, as are
-the front matter, appendix and back matter. It is NonCommercial and ShareAlike
-too.
+`openstax/orgchem/` is complete: one folder per chapter (1–31) and one file per
+section, all 447 sections transcribed from the LibreTexts pages with the scripts
+in `tools/transcribe/`. The "Additional Problems" pages (end-of-chapter
+exercises) are left out, as are the front matter, appendix and back matter. It
+is NonCommercial and ShareAlike too.
 
 ## Layout
 

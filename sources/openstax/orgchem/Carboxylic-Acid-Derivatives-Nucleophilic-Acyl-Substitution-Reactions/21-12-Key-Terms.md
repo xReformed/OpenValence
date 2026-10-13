@@ -6,3 +6,18 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- acid anhydride
+- acid halide
+- acyl phosphate
+- amide
+- carboxylic acid derivative
+- chain-growth polymer
+- ester
+- Fischer esterification reaction
+- lactam
+- lactone
+- nucleophilic acyl substitution reaction
+- saponification
+- step-growth polymer
+- thioester

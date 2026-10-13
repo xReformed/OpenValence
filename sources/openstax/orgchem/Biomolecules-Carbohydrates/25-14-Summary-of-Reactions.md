@@ -6,3 +6,5 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+[Image: Nine reactions of aldoses. The products are ethers, esters, glycosides, alditols, aldonic acids, aldaric acids, uronic acids, and chain-lengthened, and chain-shortened structures formed by the involvement of specific reagents.]

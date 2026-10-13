@@ -6,3 +6,18 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- antarafacial
+- conrotatory
+- cycloaddition reaction
+- disrotatory
+- electrocyclic reaction
+- frontier orbitals
+- highest occupied molecular orbital (HOMO)
+- lowest unoccupied molecular orbital (LUMO)
+- pericyclic reaction
+- photochemical reaction
+- sigmatropic rearrangement
+- suprafacial
+- symmetry-allowed
+- symmetry-disallowed

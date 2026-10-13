@@ -6,3 +6,149 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+## Preparation of Acid Halides
+
+Acid chlorides are prepared from carboxylic acids by reaction with thionyl chloride (SOCl2), as we saw in the previous section. Similar reaction of a carboxylic acid with phosphorus tribromide (PBr3) yields the acid bromide.
+
+[Image: The first reaction shows conversion of a carboxylic acid to an acid chloride using thionyl chloride. The second reaction shows conversion of a carboxylic acid to an acid bromide using phosphorus tribromide in ether.]
+
+## Reactions of Acid Halides
+
+Acid halides are among the most reactive of carboxylic acid derivatives and can be converted into many other kinds of compounds by nucleophilic acyl substitution mechanisms. The halogen can be replaced by –OH to yield an acid, by –OCOR to yield an anhydride, by –OR to yield an ester, by –NH2 to yield an amide, or by R′ to yield a ketone. In addition, the reduction of an acid halide yields a primary alcohol, and reaction with a Grignard reagent yields a tertiary alcohol. Although the reactions we’ll be discussing in this section are illustrated only for acid chlorides, similar processes take place with other acid halides.
+
+[Image: The reaction schemes for converting an acid chloride to an acid using water, acid anhydride using carboxylate ion, ester using alcohol, amide using ammonia, and ketone using diorganocopper-lithium reagents.]
+
+### Conversion of Acid Halides into Carboxylic Acids: Hydrolysis
+
+Acid chlorides react with water to yield carboxylic acids. This hydrolysis reaction is a typical nucleophilic acyl substitution process and is initiated by attack of water on the acid chloride carbonyl group. The tetrahedral intermediate undergoes elimination of Cl^– and loss of H^+ to give the product carboxylic acid plus HCl.
+
+[Image: Mechanism for the reaction of acid chloride with water to give carboxylic acid and H Cl via a tetrahedral intermediate. Water attacks, chloride leaves, deprotonation by base generates neutral compound.]
+
+Because HCl is formed during hydrolysis, the reaction is often carried out in the presence of a base such as pyridine or NaOH to remove the HCl and prevent it from causing side reactions.
+
+### Conversion of Acid Halides into Anhydrides
+
+Nucleophilic acyl substitution reaction of an acid chloride with a carboxylate anion gives an acid anhydride. Both symmetrical and unsymmetrical acid anhydrides can be prepared.
+
+[Image: The reaction of sodium formate with acetyl chloride in ether at twenty-five degrees Celsius forms acetic formic anhydride (sixty-four percent). The product structure has two carbonyl groups attached to a central oxygen atom.]
+
+### Conversion of Acid Halides into Esters: Alcoholysis
+
+Acid chlorides react with alcohols to yield esters in a process analogous to their reaction with water to yield acids. In fact, this reaction is probably the most common method for preparing esters in the laboratory. As with hydrolysis, alcoholysis reactions are usually carried out in the presence of pyridine or NaOH to react with the HCl formed.
+
+[Image: The reaction of benzoyl chloride with cyclohexanol in pyridine forms cyclohexyl benzoate (ninety-seven percent). The product has a cyclohexane ring attached to the oxygen atom of a benzoate group.]
+
+The reaction of an alcohol with an acid chloride is strongly affected by steric hindrance. Bulky groups on either partner slow down the reaction considerably, resulting in a reactivity order among alcohols of primary > secondary > tertiary. As a result, it’s often possible to selectively esterify an unhindered alcohol in the presence of a more hindered one. This can be important in complex syntheses in which it’s sometimes necessary to distinguish between similar functional groups. For example,
+
+[Image: The reaction of 4-(hydroxymethyl)cyclohexanol with acetyl chloride in pyridine, giving the product  where a methyl acetate group is attached to a 4-hydroxycyclohexane ring. The primary alcohol group of the starting material reacts and not the secondary alcohol group.]
+
+### Exercise 21.4.1
+
+Add exercises text here.
+
+[Note: reproduced as printed. This exercise's question is unfilled LibreTexts template text. The answers show it asks how to prepare each ester from an acid chloride and an alcohol.]
+
+a. CH3CH2CO2CH3
+b. CH3CO2CH2CH3
+c. Ethyl benzoate
+
+**Answer**
+
+a. Propanoyl chloride + methanol
+b. Acetyl chloride + ethanol
+c. Benzoyl chloride + ethanol
+
+### Exercise 21.4.2
+
+Which method would you choose if you wanted to prepare cyclohexyl benzoate—Fischer esterification or reaction of an acid chloride with an alcohol? Explain.
+
+**Answer**
+
+Benzoyl chloride + cyclohexanol
+
+### Conversion of Acid Halides into Amides: Aminolysis
+
+Acid chlorides react rapidly with ammonia and amines to give amides. As with the acid chloride-plus-alcohol method for preparing esters, this reaction of acid chlorides with amines is the most commonly used laboratory method for preparing amides. Both monosubstituted and disubstituted amines can be used, but not trisubstituted amines (R3N).
+
+[Image: in=]
+
+[Note: the source's description of this image is broken; it reads only "in=".]
+
+Because HCl is formed during the reaction, two equivalents of the amine must be used. One equivalent reacts with the acid chloride, and one equivalent reacts with the HCl by-product to form an ammonium chloride salt. If, however, the amine component is valuable, amide synthesis is often carried out using one equivalent of the amine plus one equivalent of an inexpensive base such as NaOH. For example, the sedative trimetozine is prepared commercially by reaction of 3,4,5-trimethoxybenzoyl chloride with the amine morpholine in the presence of one equivalent of NaOH.
+
+[Image: The reaction between 3,4,5-trimethoxybenzoyl chloride and morpholine in the presence of aqueous sodium hydroxide gives trimetozine and sodium chloride. Trimetozine is an amide containing C O N bond.]
+
+### Worked Example 21.4.1: Synthesizing an Amide from an Acid Chloride
+
+How might you prepare N-methylpropanamide by reaction of an acid chloride with an amine?
+
+Strategy
+
+As its name implies, N-methylpropanamide can be made by reaction of methylamine with the acid chloride of propanoic acid.
+
+**Solution**
+
+[Image: Propanoyl chloride reacts with two moles of methylamine, forming N-methylpropanamide and methylammonium chloride.]
+
+### Exercise 21.4.3
+
+Write the mechanism of the reaction just shown between 3,4,5-trimethoxybenzoyl chloride and morpholine to form trimetozine. Use curved arrows to show the electron flow in each step.
+
+**Answer**
+
+This is a typical nucleophilic acyl substitution reaction, with morpholine as the nucleophile and chloride as the leaving group.
+
+### Exercise 21.4.4
+
+Write the mechanism of the reaction just shown between 3,4,5-trimethoxybenzoyl chloride and morpholine to form trimetozine. Use curved arrows to show the electron flow in each step.
+
+[Note: reproduced as printed. This question repeats Exercise 21.4.3's; the list and answers below show it asks how to prepare each amide from an acid chloride and an amine.]
+
+a. CH3CH2CONHCH3
+b. N,N-Diethylbenzamide
+c. Propanamide
+
+**Answer**
+
+a. Propanoyl chloride + methylamine
+b. Benzoyl chloride + diethylamine
+c. Propanoyl chloride + ammonia
+
+## Conversion of Acid Chlorides into Alcohols: Reduction and Grignard Reaction
+
+Acid chlorides are reduced by LiAlH4 to yield primary alcohols. The reaction is of little practical value, however, because the parent carboxylic acids are generally more readily available and can themselves be reduced by LiAlH4 to yield alcohols.
+
+Reduction occurs via a typical nucleophilic acyl substitution mechanism in which a hydride ion (H:^–) adds to the carbonyl group, yielding a tetrahedral intermediate that expels Cl^–. The net effect is a substitution of –Cl by –H to yield an aldehyde, which is then further reduced by LiAlH4 in a second step to yield the primary alcohol.
+
+[Image: the=]
+
+[Note: the source's description of this image is broken; it reads only "the=".]
+
+Grignard reagents react with acid chlorides to yield tertiary alcohols with two identical substituents. The mechanism of the reaction is similar to that of LiAlH4 reduction. The first equivalent of Grignard reagent adds to the acid chloride, loss of Cl^– from the tetrahedral intermediate yields a ketone, and a second equivalent of Grignard reagent immediately adds to the ketone to produce an alcohol.
+
+[Image: Benzoyl chloride reacts with methylmagnesium bromide in ether to give acetophenone (intermediate). Further reaction with methylmagnesium bromide (step one) followed by treatment with acid (step two) gives 2-phenyl-2-propanol (ninety-two percent).]
+
+## Conversion of Acid Chlorides into Ketones: Diorganocopper Reaction
+
+The ketone intermediate formed in the reaction of an acid chloride with a Grignard reagent can’t usually be isolated because addition of the second equivalent of organomagnesium reagent occurs too rapidly. A ketone can, however, be isolated from the reaction of an acid chloride with a lithium diorganocopper (Gilman) reagent, Li^+ R′2Cu^–. The reaction occurs by initial nucleophilic acyl substitution on the acid chloride by the diorganocopper anion to yield an acyl diorganocopper intermediate, followed by loss of R′Cu and formation of the ketone.
+
+[Image: An acid chloride reacts with a diorganocuprate in ether to form an acyl diorganocopper intermediate, which goes on to produce a ketone.]
+
+The reaction is generally carried out at –78 °C in ether solution, and yields are often excellent. For example, manicone, a substance secreted by male ants to coordinate ant pairing and mating, has been synthesized by reaction of lithium diethylcopper with (E)-2,4-dimethyl-2-hexenoyl chloride.
+
+[Image: The reaction of 2,4-dimethyl-2-hexenoyl chloride with lithium diethylcopper in ether at minus seventy-eight degrees Celsius gives 4,6-dimethyl-4-octen-3-one (ninety-two percent). The common name of the product is Manicone.]
+
+Note that the diorganocopper reaction occurs only with acid chlorides. Carboxylic acids, esters, acid anhydrides, and amides do not react with lithium diorganocopper reagents.
+
+### Exercise 21.4.5
+
+How could you prepare the following ketones by reaction of an acid chloride with a lithium diorganocopper reagent?
+
+a. [Image: The ball-and-stick model shows a benzene ring single-bonded to a carbonyl carbon single-bonded to an isopropyl group. Black, gray, and red spheres represent carbon, hydrogen, and oxygen, respectively.]
+b. [Image: The ball-and-stick model shows a six-carbon chain. The first carbon is double-bonded to second carbon. Third carbon is a carbonyl. Black, gray, and red spheres represent carbon, hydrogen, and oxygen, respectively.]
+
+**Answer**
+
+a. Benzoyl chloride + [(CH3)2CH]2CuLi, or 2-methylpropanoyl chloride + Ph2CuLi
+b. 2-Propenoyl chloride + (CH3CH2CH2)2CuLi, or butanoyl chloride + (H2C=CH)2CuLi

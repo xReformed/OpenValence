@@ -6,3 +6,9 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- carboxyl group
+- carboxylation
+- carboxylic acid, RCO2H
+- Henderson–Hasselbalch equation
+- nitrile

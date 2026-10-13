@@ -6,3 +6,28 @@ source_url: "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_C
 author: "OpenStax"
 license: "CC BY-NC-SA 4.0"
 ---
+
+- α-amino acids
+- α helix
+- backbone
+- β-pleated sheet
+- C-terminal amino acid
+- coenzyme
+- cofactor
+- denatured
+- Edman degradation
+- enzyme
+- fibrous proteins
+- globular proteins
+- isoelectric point (pI)
+- N-terminal amino acid
+- peptides
+- primary structure
+- proteins
+- quaternary structure
+- residues
+- secondary structure
+- side chain
+- tertiary structure
+- turnover number
+- zwitterion
