@@ -18,11 +18,14 @@ export default function PracticeQuestion({
   question,
   number,
   context,
+  section,
 }: {
   question: Question;
   number: number;
   /* "section 12.6 of Beginning Chemistry (Ball)", for "Ask for an explanation". */
   context: string;
+  /** "<book>/<section>", saved with the answer for the roadmap's correct rate. */
+  section: string;
 }) {
   const id = useId();
   const saved = useSyncExternalStore(subscribeToPractice, getAnswers)[question.id];
@@ -54,9 +57,9 @@ export default function PracticeQuestion({
         <ChemText text={question.prompt} />
       </p>
       {question.type === "numeric" ? (
-        <NumericAnswer question={question} saved={saved} id={id} context={context} />
+        <NumericAnswer question={question} saved={saved} id={id} context={context} section={section} />
       ) : (
-        <ChoiceAnswer question={question} saved={saved} id={id} context={context} />
+        <ChoiceAnswer question={question} saved={saved} id={id} context={context} section={section} />
       )}
     </section>
   );
@@ -67,9 +70,10 @@ interface AnswerProps<Q> {
   saved?: PracticeAnswer;
   id: string;
   context: string;
+  section: string;
 }
 
-function NumericAnswer({ question, saved, id, context }: AnswerProps<NumericQuestion>) {
+function NumericAnswer({ question, saved, id, context, section }: AnswerProps<NumericQuestion>) {
   const [input, setInput] = useState("");
   const [unreadable, setUnreadable] = useState(false);
 
@@ -81,7 +85,7 @@ function NumericAnswer({ question, saved, id, context }: AnswerProps<NumericQues
         if (saved || !input.trim()) return;
         const graded = gradeNumeric(question, input);
         if (graded === "unreadable") setUnreadable(true);
-        else recordAnswer(question.id, { result: graded, answer: input.trim() });
+        else recordAnswer(question.id, { result: graded, answer: input.trim(), section });
       }}
     >
       <label htmlFor={`${id}-answer`} className="text-xs text-neutral-500">
@@ -118,7 +122,7 @@ function NumericAnswer({ question, saved, id, context }: AnswerProps<NumericQues
   );
 }
 
-function ChoiceAnswer({ question, saved, id, context }: AnswerProps<MultipleChoiceQuestion>) {
+function ChoiceAnswer({ question, saved, id, context, section }: AnswerProps<MultipleChoiceQuestion>) {
   const [order] = useState(() => shuffled(question.choices));
   const [picked, setPicked] = useState<number | null>(null);
   const chosen = saved ? order.findIndex((option) => option.text === saved.answer) : picked;
@@ -133,6 +137,7 @@ function ChoiceAnswer({ question, saved, id, context }: AnswerProps<MultipleChoi
         recordAnswer(question.id, {
           result: choice.correct ? "correct" : "incorrect",
           answer: choice.text,
+          section,
         });
       }}
     >

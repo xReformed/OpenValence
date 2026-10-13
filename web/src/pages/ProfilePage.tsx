@@ -232,7 +232,7 @@ export default function ProfilePage() {
   ];
 
   /* One badge per finished roadmap (lib/badges.ts). */
-  const badges = earnedBadges(BRANCHES, finished);
+  const badges = earnedBadges(BRANCHES, finished, { answers, sets });
 
   async function choosePhoto(file: File) {
     try {

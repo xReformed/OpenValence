@@ -138,6 +138,7 @@ export default function SectionPage() {
                 poolSize={questions.length}
                 unanswered={set.unanswered}
                 context={`section ${section.number}, "${section.title}", of ${meta.title}`}
+                section={`${stage.book}/${section.number}`}
                 answered={set.answered}
                 score={set.score}
                 passMark={set.passMark}

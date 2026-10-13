@@ -11,12 +11,14 @@ import Reveal from "../components/Reveal";
 import SiteFooter from "../components/SiteFooter";
 import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
-import { BADGES, type Badge, isEarned, isTracked, roadmapComplete } from "../lib/badges";
+import { BADGES, type Badge, isEarned, roadmapComplete, roadmapPractice } from "../lib/badges";
 import { CONCEPTS } from "../lib/concepts";
 import { branchProgress } from "../lib/mastery";
+import { getAnswers, subscribeToPractice } from "../lib/practiceStore";
 import { getFinished, subscribeToProgress } from "../lib/progress";
+import { getQuestionSets, subscribeToQuestionSets } from "../lib/questionSets";
 import { BRANCHES } from "../lib/roadmap";
-import type { BranchStatus } from "../lib/types";
+import type { Branch, BranchStatus } from "../lib/types";
 
 /* Every badge the app will have: one per roadmap, earned by completing it
    (lib/badges.ts), plus a Master badge where one is drawn. Badges with artwork show
@@ -30,8 +32,9 @@ interface PlannedBadge {
   href: string;
   /** What earns it. */
   goal: string;
-  /** Where the reader stands: a fraction finished, or a note when it isn't tracked. */
-  progress: { done: number; total: number } | string;
+  /** Where the reader stands: so many of so many (sections finished, or
+      answers correct), or a note when it isn't tracked. */
+  progress: { done: number; total: number; unit: string } | string;
   earned: boolean;
   /** The badge's artwork, if it has any yet. */
   image?: string;
@@ -80,7 +83,7 @@ function BadgeTile({ badge }: { badge: PlannedBadge }) {
                   />
                 </div>
                 <p className="mt-2 text-xs text-neutral-500 tabular-nums">
-                  {tracked.done} of {tracked.total} sections
+                  {tracked.done} of {tracked.total} {tracked.unit}
                 </p>
               </>
             ) : (
@@ -124,6 +127,14 @@ function BadgeGroup({
 
 export default function BadgesPage() {
   const finished = useSyncExternalStore(subscribeToProgress, getFinished);
+  const answers = useSyncExternalStore(subscribeToPractice, getAnswers);
+  const sets = useSyncExternalStore(subscribeToQuestionSets, getQuestionSets);
+  const practice = { answers, sets };
+  /* A master badge's progress is the roadmap's correct rate so far. */
+  const masterProgress = (branch: Branch) => {
+    const { answered, correct } = roadmapPractice(branch, practice);
+    return answered ? { done: correct, total: answered, unit: "answers correct" } : "No practice answers yet";
+  };
 
   /* A roadmap with artwork shows its badges (completion, and mastery, whose
      own description says what earns it); the rest, one placeholder each. */
@@ -140,10 +151,10 @@ export default function BadgesPage() {
         goal: badge.requirement === "complete" ? goal : badge.description,
         progress: !branch.path
           ? "No textbook yet"
-          : isTracked(badge.requirement)
-            ? { done, total }
-            : "Help tracking coming soon",
-        earned: isEarned(badge, BRANCHES, finished),
+          : badge.requirement === "complete"
+            ? { done, total, unit: "sections" }
+            : masterProgress(branch),
+        earned: isEarned(badge, BRANCHES, finished, practice),
         image: badge.image,
         effect: badge.effect,
       }));
@@ -155,7 +166,7 @@ export default function BadgesPage() {
         status: branch.status,
         href: `/roadmap/${branch.slug}`,
         goal,
-        progress: branch.path ? { done, total } : "No textbook yet",
+        progress: branch.path ? { done, total, unit: "sections" } : "No textbook yet",
         earned: roadmapComplete(branch, finished),
       },
     ];

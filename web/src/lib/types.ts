@@ -147,6 +147,9 @@ export interface PracticeAnswer {
   result: "correct" | "incorrect";
   /** The choice picked, or the number as typed. */
   answer: string;
+  /** The section it was answered in, "<book>/<section>", so a roadmap's
+      correct rate can be worked out (lib/badges.ts). Older answers lack it. */
+  section?: string;
 }
 
 export interface Citation {

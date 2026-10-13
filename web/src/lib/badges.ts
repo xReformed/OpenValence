@@ -5,16 +5,17 @@ import introductoryBadge from "../assets/badges/introductory.webp";
 import organicBadge from "../assets/badges/organic.webp";
 import physicalBadge from "../assets/badges/physical.webp";
 import { branchProgress } from "./mastery";
-import type { Branch } from "./types";
+import type { QuestionSet } from "./questionSets";
+import type { Branch, PracticeAnswer } from "./types";
 
 /* Badges on the profile page, for completing a roadmap: every section on its
-   learning path finished. Worked out from reading progress (progress.ts), so
-   nothing extra is recorded.
+   learning path finished. Worked out from reading progress (progress.ts) and
+   practice answers (practiceStore.ts), so nothing extra is recorded.
 
-   A roadmap can have two: one for finishing it, and a master badge for a
-   100% correct rate on its practice without asking Claude for help. The
-   second can't be earned yet, since the app doesn't record whether help was
-   used; it shows as locked until it does.
+   A roadmap can have two: one for finishing it, and a master badge for
+   finishing it with a 100% correct rate on its practice. (Asking Claude for
+   help isn't recorded yet; once it is, help will count against the master
+   badge too.)
 
    To add a badge, put its artwork in src/assets/badges/ (a 384px WebP, with
    the full-size original beside it as <name>-badge.webp) and add an entry
@@ -54,7 +55,7 @@ export const BADGES: Badge[] = [
     roadmap: "introductory",
     requirement: "master",
     title: "Introductory chemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: introductoryBadge,
     effect: "intense",
   },
@@ -71,7 +72,7 @@ export const BADGES: Badge[] = [
     roadmap: "organic",
     requirement: "master",
     title: "Organic chemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: organicBadge,
     effect: "nature",
   },
@@ -88,7 +89,7 @@ export const BADGES: Badge[] = [
     roadmap: "inorganic",
     requirement: "master",
     title: "Inorganic chemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: inorganicBadge,
     effect: "crystal",
   },
@@ -105,7 +106,7 @@ export const BADGES: Badge[] = [
     roadmap: "physical",
     requirement: "master",
     title: "Physical chemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: physicalBadge,
     effect: "quantum",
   },
@@ -122,7 +123,7 @@ export const BADGES: Badge[] = [
     roadmap: "analytical",
     requirement: "master",
     title: "Analytical chemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: analyticalBadge,
     effect: "spectrum",
   },
@@ -139,14 +140,40 @@ export const BADGES: Badge[] = [
     roadmap: "biochemistry",
     requirement: "master",
     title: "Biochemistry Master",
-    description: "Achieve 100% correct rate without having Claude to help you.",
+    description: "Finish the roadmap with every practice answer correct.",
     image: biochemistryBadge,
     effect: "helix",
   },
 ];
 
-/** Whether a requirement can be earned yet: help isn't recorded, so master ones can't. */
-export const isTracked = (requirement: BadgeRequirement) => requirement === "complete";
+/** What the practice stores keep: each question's answer, and each section's current set. */
+export interface PracticeRecord {
+  answers: Readonly<Record<string, PracticeAnswer>>;
+  sets: Readonly<Record<string, QuestionSet>>;
+}
+
+const NO_PRACTICE: PracticeRecord = { answers: {}, sets: {} };
+
+/**
+ * A roadmap's practice score: the answers given in its books' sections. An
+ * answer names its section; older ones don't, so they're placed by the
+ * section whose current question set holds them, and left out if none does
+ * (an answer from a set since replaced by "Try again").
+ */
+export function roadmapPractice(branch: Branch, { answers, sets }: PracticeRecord) {
+  const books = new Set<string>((branch.path ?? []).map((stage) => stage.book));
+  const setOf = new Map<string, string>();
+  for (const [key, set] of Object.entries(sets)) for (const id of set.ids) setOf.set(id, key);
+  let answered = 0;
+  let correct = 0;
+  for (const [id, answer] of Object.entries(answers)) {
+    const section = answer.section ?? setOf.get(id);
+    if (!section || !books.has(section.slice(0, section.indexOf("/")))) continue;
+    answered += 1;
+    if (answer.result === "correct") correct += 1;
+  }
+  return { answered, correct };
+}
 
 /** A roadmap counts as complete once every transcribed section on its path is finished. */
 export function roadmapComplete(branch: Branch, finished: ReadonlySet<string>): boolean {
@@ -154,17 +181,30 @@ export function roadmapComplete(branch: Branch, finished: ReadonlySet<string>): 
   return total > 0 && done === total;
 }
 
+/** A master badge also needs every practice answer on the roadmap correct, and at least one. */
+export function practicePerfect(branch: Branch, practice: PracticeRecord): boolean {
+  const { answered, correct } = roadmapPractice(branch, practice);
+  return answered > 0 && correct === answered;
+}
+
 /** Whether one badge is earned. */
-export function isEarned(badge: Badge, branches: Branch[], finished: ReadonlySet<string>): boolean {
+export function isEarned(
+  badge: Badge,
+  branches: Branch[],
+  finished: ReadonlySet<string>,
+  practice: PracticeRecord = NO_PRACTICE,
+): boolean {
   const branch = branches.find((b) => b.slug === badge.roadmap);
-  return !!branch && isTracked(badge.requirement) && roadmapComplete(branch, finished);
+  if (!branch || !roadmapComplete(branch, finished)) return false;
+  return badge.requirement === "complete" || practicePerfect(branch, practice);
 }
 
 /** The badges earned, in list order. */
 export function earnedBadges(
   branches: Branch[],
   finished: ReadonlySet<string>,
+  practice: PracticeRecord = NO_PRACTICE,
   badges: Badge[] = BADGES,
 ): Badge[] {
-  return badges.filter((badge) => isEarned(badge, branches, finished));
+  return badges.filter((badge) => isEarned(badge, branches, finished, practice));
 }

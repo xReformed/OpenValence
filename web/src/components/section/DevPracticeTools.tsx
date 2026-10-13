@@ -12,14 +12,14 @@ const PRACTICE_KEY = "chemia.practice";
 const SETS_KEY = "chemia.questionSets";
 const PROGRESS_KEY = "chemia.progress";
 
-function answerFor(question: Question, correct: boolean): PracticeAnswer {
+function answerFor(question: Question, correct: boolean, section: string): PracticeAnswer {
   const result = correct ? "correct" : "incorrect";
   if (question.type === "numeric") {
     const wrong = question.answer === 0 ? 1 : question.answer * 2;
-    return { result, answer: String(correct ? question.answer : wrong) };
+    return { result, answer: String(correct ? question.answer : wrong), section };
   }
   const choice = question.choices.find((c) => Boolean(c.correct) === correct) ?? question.choices[0];
-  return { result, answer: choice.text };
+  return { result, answer: choice.text, section };
 }
 
 function readJson<T>(key: string, fallback: T): T {
@@ -51,7 +51,7 @@ export default function DevPracticeTools({
       const answers = getAnswers();
       questions
         .filter((question) => !answers[question.id])
-        .forEach((question, i) => recordAnswer(question.id, answerFor(question, i < right)));
+        .forEach((question, i) => recordAnswer(question.id, answerFor(question, i < right, `${book}/${section}`)));
     };
     const resetSection = () => {
       clearAnswers(pool.map((question) => question.id));

@@ -1377,3 +1377,26 @@
   background-position: center;
   mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
 }
+
+/* The landing page hero's clouds (components/HeroSection.tsx) drift slowly
+   back and forth; still for readers who prefer reduced motion. */
+@keyframes hero-cloud-drift {
+  from {
+    transform: translateX(-3%);
+  }
+  to {
+    transform: translateX(3%);
+  }
+}
+
+@layer components {
+  .hero-clouds {
+    animation: hero-cloud-drift 28s ease-in-out infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-clouds {
+      animation: none;
+    }
+  }
+}

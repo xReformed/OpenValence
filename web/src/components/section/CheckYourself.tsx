@@ -9,6 +9,7 @@ export default function CheckYourself({
   poolSize,
   unanswered,
   context,
+  section,
   answered,
   score,
   passMark,
@@ -23,6 +24,8 @@ export default function CheckYourself({
   unanswered: number;
   /** Which section this is, for "Ask for an explanation". */
   context: string;
+  /** "<book>/<section>", saved with each answer. */
+  section: string;
   answered: number;
   score: number;
   passMark: number;
@@ -57,6 +60,7 @@ export default function CheckYourself({
             question={question}
             number={i + 1}
             context={context}
+            section={section}
           />
         ))}
       </div>
