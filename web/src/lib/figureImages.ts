@@ -1,4 +1,6 @@
-/* Images shown for a book's figures, from src/assets/figures/<book>/.
+/* Images shown for a book's figures, served from Cloudflare R2. They are kept
+   locally in web/figures/<book>/ (git-ignored) and uploaded with
+   `npm run upload:figures`, which records them in web/figures.json.
 
    The corpus only has each figure's caption and description: the original
    images were not transcribed, and many are third-party stock photos the
@@ -7,8 +9,8 @@
    (3.1 image 1: an 1800s portrait and NASA's sun). Either way the book's
    caption stays as printed.
 
-   To show an image, add its file; the name says where it goes (see
-   scripts/gen-figure-images.mjs, which lists them all for the app):
+   To show an image, add its file to web/figures/<book>/ and upload it; the
+   name says where it goes (see scripts/figure-files.mjs):
 
      1.2.1.webp                       above "Figure 1.2.1: …"
      3.2.2-a-simple-periodic-table.webp

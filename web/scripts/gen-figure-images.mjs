@@ -1,98 +1,40 @@
-// Builds src/lib/figureImages.generated.ts from the images in
-// src/assets/figures, so showing an image is just adding its file. The file
-// name says where it goes:
+// Builds src/lib/figureImages.generated.ts from figures.json, the list of
+// figure images uploaded to R2 by upload-figures.mjs, so the app knows which
+// figures have an image and where to load it from. The images themselves
+// aren't in the repo; see figure-files.mjs for how their files are named.
 //
-//   <book>/1.2.1.webp                  above the caption "Figure 1.2.1: …"
-//   <book>/3.2.2-a-simple-periodic-table.webp
-//                                      where the book prints a figure number
-//                                      twice: the number plus the caption's
-//                                      title ("Figure 3.2.1: A Simple Periodic
-//                                      Table"), lowercase, words joined by "-"
-//   <book>/2.4-image-1.webp            behind the Show toggle of section 2.4's
-//                                      first "[Image: …]" box
-//
-// Images are WebP; about 1600px wide is plenty. This runs before
-// `npm run dev` and `npm run build`; run it yourself with `npm run gen:figures`.
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+// This runs before `npm run dev` and `npm run build`, and after
+// `npm run upload:figures`; run it yourself with `npm run gen:figures`.
+import { readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { KEY, knownBooks, readManifest } from "./figure-files.mjs";
 
-const here = dirname(fileURLToPath(import.meta.url));
-const FIGURES = join(here, "../src/assets/figures");
-const OUT = join(here, "../src/lib/figureImages.generated.ts");
-const PATHS = join(here, "../src/lib/learningPaths.generated.ts");
+const OUT = join(import.meta.dirname, "../src/lib/figureImages.generated.ts");
 
-const NAME = /^(?:\d+\.\d+\.\d+[a-z]?(?:-[a-z0-9]+)*|\d+\.\d+-image-\d+)\.webp$/;
-const IGNORED = new Set(["desktop.ini", "Thumbs.db"]);
-
-/* The books the app knows, from the generated learning paths. */
-const books = readFileSync(PATHS, "utf8")
-  .match(/^export type BookKey = (.*);$/m)[1]
-  .match(/"[^"]+"/g)
-  .map((key) => JSON.parse(key));
-
-/* Width and height from a WebP header: lossy, lossless, or extended. */
-function webpSize(data) {
-  if (data.toString("ascii", 0, 4) !== "RIFF" || data.toString("ascii", 8, 12) !== "WEBP") return null;
-  switch (data.toString("ascii", 12, 16)) {
-    case "VP8 ":
-      return { width: data.readUInt16LE(26) & 0x3fff, height: data.readUInt16LE(28) & 0x3fff };
-    case "VP8L": {
-      const bits = data.readUInt32LE(21);
-      return { width: (bits & 0x3fff) + 1, height: ((bits >>> 14) & 0x3fff) + 1 };
-    }
-    case "VP8X":
-      return { width: data.readUIntLE(24, 3) + 1, height: data.readUIntLE(27, 3) + 1 };
-    default:
-      return null;
-  }
-}
-
+const books = knownBooks();
+const { baseUrl, images } = readManifest();
 const problems = [];
-const imports = [];
 const entries = {};
 
-for (const book of readdirSync(FIGURES).sort()) {
-  const files = readdirSync(join(FIGURES, book))
-    .filter((file) => !file.startsWith(".") && !IGNORED.has(file))
-    .sort((a, b) => a.localeCompare(b, "en", { numeric: true }));
-  if (files.length === 0) continue;
+for (const [book, list] of Object.entries(images)) {
   if (!books.includes(book)) {
-    problems.push(`${book}/: not a book the app knows (${books.join(", ")})`);
+    problems.push(`${book}: not a book the app knows (${books.join(", ")})`);
     continue;
   }
-
-  entries[book] = [];
-  for (const file of files) {
-    if (!NAME.test(file)) {
-      problems.push(
-        `${book}/${file}: name it like 1.2.1.webp, 1.2.1-caption-title.webp, or 2.4-image-1.webp` +
-          (/\.(png|jpe?g|gif|avif)$/i.test(file) ? ", and convert it to WebP" : ""),
-      );
-      continue;
-    }
-    const size = webpSize(readFileSync(join(FIGURES, book, file)));
-    if (!size) {
-      problems.push(`${book}/${file}: not a WebP image`);
-      continue;
-    }
-    const key = file.slice(0, -".webp".length);
-    const name = `${book.replace(/-(\w)/g, (_, c) => c.toUpperCase())}_${key.replace(/[^a-z0-9]/gi, "_")}`;
-    imports.push(`import ${name} from "../assets/figures/${book}/${file}";`);
-    entries[book].push(`    ${JSON.stringify(key)}: { src: ${name}, width: ${size.width}, height: ${size.height} },`);
-  }
+  entries[book] = Object.entries(list).map(([key, { file, width, height }]) => {
+    if (!KEY.test(key)) problems.push(`${book}/${key}: not a figure image name`);
+    return `    ${JSON.stringify(key)}: { src: ${JSON.stringify(`${baseUrl}/${file}`)}, width: ${width}, height: ${height} },`;
+  });
 }
 
 if (problems.length > 0) {
-  console.error(`gen:figures: ${problems.length} problem(s) in src/assets/figures:\n  ${problems.join("\n  ")}`);
+  console.error(`gen:figures: ${problems.length} problem(s) in figures.json:\n  ${problems.join("\n  ")}`);
   process.exit(1);
 }
 
-const output = `// Generated by scripts/gen-figure-images.mjs from the images in
-// src/assets/figures. Do not edit by hand: add, rename, or remove an image
-// there, and \`npm run dev\` or \`npm run build\` rebuilds this file.
+const output = `// Generated by scripts/gen-figure-images.mjs from figures.json. Do not edit
+// by hand: add or change an image in figures/ and run \`npm run upload:figures\`.
 
-${imports.join("\n")}
 import type { BookKey, FigureImage } from "./types";
 
 export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>> = {

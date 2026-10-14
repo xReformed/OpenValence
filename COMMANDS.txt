@@ -1,0 +1,105 @@
+OpenValence commands
+====================
+
+Run from the repo root unless a section says "in web/". Settings and keys go
+in .env (copy .env.example to .env and fill it in).
+
+
+FIRST-TIME SETUP
+----------------
+cp .env.example .env              Create your local settings file, then fill in the keys
+cd web && npm install             Install the frontend's packages
+
+
+WEB APP (in web/)
+-----------------
+npm run dev                       Start the dev server (regenerates the figure list first)
+npm run build                     Type-check and build the production site into web/dist
+npm run preview                   Serve the production build locally
+npm run lint                      Check the code with ESLint
+npm test                          Run the Vitest tests (grading, chemistry notation,
+                                  the Example/Exercise parser, figure images, concept paths)
+npx vitest run -u                 Run the tests and update the parser snapshot
+                                  (only when a parser change is meant to move an Example/Exercise)
+
+npm run gen:paths                 Rebuild the books' chapter lists (learningPaths.generated.ts)
+                                  from the corpus front matter in sources/
+npm run gen:figures               Rebuild the figure image list (figureImages.generated.ts)
+                                  from web/figures.json
+
+
+FIGURE IMAGES (in web/)
+-----------------------
+Images live in Cloudflare R2. Keep them in web/figures/<book>/ (git-ignored), named
+like 1.2.1.webp, 3.2.2-a-simple-periodic-table.webp, or 2.4-image-1.webp.
+Needs R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET and R2_PUBLIC_URL in .env.
+
+npm run upload:figures            Upload new and changed images, update web/figures.json,
+                                  and regenerate the figure list (commit figures.json after)
+npm run upload:figures -- --dry-run
+                                  Check the files and show what would upload, without uploading
+npm run upload:figures -- --prune Also drop images from figures.json whose files are gone
+
+
+API
+---
+dotnet run --project api          Start the API (serves practice questions at
+                                  /api/questions/{book}/{section}); the dev server
+                                  proxies /api to it at http://localhost:5281
+                                  Needs DATABASE_URL.
+
+
+PRACTICE QUESTIONS
+------------------
+dotnet run --project ingest -- questions --check
+                                  Check every file in questions/ (no database needed)
+dotnet run --project ingest -- questions
+                                  Check every file, then replace the questions table in the
+                                  database at DATABASE_URL with them (all books at once)
+dotnet run --project ingest -- questions <path> [--check]
+                                  Same, for a different questions folder
+
+
+SEARCH INDEX (CORPUS -> EMBEDDINGS)
+-----------------------------------
+dotnet run --project ingest -- chunk [sources-path]
+                                  Split the corpus into chunks and print them (no API calls)
+dotnet run --project ingest -- embed [sources-path]
+                                  Chunk and embed the corpus, then store it in Postgres
+                                  (DATABASE_URL) or database/index.json. Needs EMBEDDING_API_KEY.
+dotnet run --project ingest -- search "your question"
+                                  Show the top 5 chunks for a question, with similarity scores
+
+docker run -d --name openvalence-db -e POSTGRES_PASSWORD=openvalence -p 5432:5432 pgvector/pgvector:pg17
+                                  Optional: a local Postgres with pgvector. Then set
+                                  DATABASE_URL=postgresql://postgres:openvalence@localhost:5432/postgres
+
+
+.NET TESTS
+----------
+dotnet test                       Run the xUnit tests (question file checks, database URLs,
+                                  chunking, search scoring)
+
+
+TRANSCRIBING A TEXTBOOK (tools/transcribe/)
+-------------------------------------------
+Example: BOOK=sources/openstax/orgchem
+
+python tools/transcribe/stubs.py <libretexts url> $BOOK [--book "Title"] [--author "Name"] [--license "CC BY 4.0"]
+                                  1. Create the section files (front matter only) for a book or chapter
+python tools/transcribe/fetch.py $BOOK [--force]
+                                  2. Download each section's LibreTexts page
+python tools/transcribe/fill.py $BOOK --preview
+                                  3. Convert for review only; writes to sources/raw/, the corpus doesn't change
+python tools/transcribe/fill.py $BOOK [--force]
+                                  4. Write the converted text into the empty section files
+                                  (--force rewrites sections that already have text)
+python tools/transcribe/scan.py $BOOK
+                                  6. Flag conversion leftovers
+python tools/transcribe/regress.py $BOOK
+                                  Re-convert written sections and diff them against the corpus
+python tools/transcribe/lt2md.py <page.html> <section-number>
+                                  Convert one downloaded page (used by fill.py)
+
+Step 5 is by hand: correct anything the source gets wrong, with a
+[Note: corrected; the source prints "X" where this reads "Y". ...] after it.

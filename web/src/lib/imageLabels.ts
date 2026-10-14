@@ -5,7 +5,7 @@ import type { BookKey } from "./types";
    in source]"; these are OpenValence's own descriptions, shown in that box's
    place (and read as the image's alt text). The book's text stays as printed.
 
-   Keyed like the image files in src/assets/figures/: "9.4-image-17" is section
+   Keyed like the figure image files (web/figures/): "9.4-image-17" is section
    9.4's 17th image box. Written in ChemText notation (BF4^−, CH2O). */
 const LABELS: Partial<Record<BookKey, Record<string, string>>> = {
   "beginning-chemistry": {
