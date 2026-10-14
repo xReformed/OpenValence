@@ -28,7 +28,9 @@ The structures and ball and stick models of gauche butane (3.8 kilojoules per mo
 
 The exact amount of 1,3-diaxial steric strain in a given substituted cyclohexane depends on the nature and size of the substituent, as indicated in Table 4.7.1. Not surprisingly, the amount of steric strain increases through the series H3C− < CH3CH2− < (CH3)2CH–≪(CH3)3C−, paralleling the increasing size of the alkyl groups.
 
-[Image: In the chain conformation of cyclohexane, C1 is bonded to axial Y. C3 is bonded to axial hydrogen. Both H and Y have a double-headed arrow in-between.]
+[Image: In the chair conformation of cyclohexane, C1 is bonded to axial Y. C3 is bonded to axial hydrogen. Both H and Y have a double-headed arrow in-between.]
+
+[Note: corrected; the source prints "In the chain conformation of cyclohexane" where this reads "In the chair conformation of cyclohexane". A typo in the image description; the figure shows the chair conformation.]
 
 Note that the values given in Table 4.7.1 refer to 1,3-diaxial interactions of the substituent with a single hydrogen atom. These values must be doubled to arrive at the amount of strain in a monosubstituted cyclohexane.
 

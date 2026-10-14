@@ -1,0 +1,305 @@
+[
+  {
+    "id": "oc4-ring-strain-angle-strain-definition",
+    "type": "multiple-choice",
+    "prompt": "What is angle strain?",
+    "choices": [
+      {
+        "text": "The strain induced when bond angles are forced to deviate from the ideal 109° tetrahedral value",
+        "correct": true
+      },
+      {
+        "text": "The strain due to eclipsing of bonds between neighboring atoms",
+        "why": "That is torsional strain, as in eclipsed ethane."
+      },
+      {
+        "text": "The strain due to repulsion when nonbonded atoms approach each other too closely",
+        "why": "That is steric strain, as in gauche butane."
+      },
+      {
+        "text": "The strain that appears only when bond angles are compressed below 109°",
+        "why": "Expansion counts too. Baeyer predicted large flat rings would be strained by bond angles much greater than 109°."
+      }
+    ],
+    "explanation": "Baeyer suggested that small and large rings might be unstable due to angle strain, the strain induced in a molecule when bond angles are forced to deviate from the ideal 109° tetrahedral value, whether by expansion or compression."
+  },
+  {
+    "id": "oc4-ring-strain-baeyer-cyclobutane-angle",
+    "type": "numeric",
+    "prompt": "According to Baeyer's simple geometric picture, what C–C–C bond angle should cyclobutane have, in degrees?",
+    "answer": 90,
+    "unit": "°",
+    "tolerance": 0.01,
+    "explanation": "Baeyer treated rings as flat regular polygons: a four-membered ring (cyclobutane) should be a square with bond angles of 90°, compared with 60° for cyclopropane (an equilateral triangle) and 108° for a regular pentagon."
+  },
+  {
+    "id": "oc4-ring-strain-cyclopropane-deviation",
+    "type": "numeric",
+    "prompt": "By how many degrees do cyclopropane's C–C–C bond angles deviate from the ideal tetrahedral value used by Baeyer?",
+    "answer": 49,
+    "unit": "°",
+    "tolerance": 0.01,
+    "explanation": "Cyclopropane is an equilateral triangle with bond angles of 60°, rather than the ideal 109°. The deviation is 109° − 60° = 49°, the largest of any ring, which is why Baeyer expected it to be strongly strained."
+  },
+  {
+    "id": "oc4-ring-strain-flat-cyclohexane-angle",
+    "type": "numeric",
+    "prompt": "If cyclohexane were a flat regular hexagon, as Baeyer's theory assumed, what would its C–C–C bond angles be, in degrees?",
+    "answer": 120,
+    "unit": "°",
+    "tolerance": 0.01,
+    "explanation": "A regular polygon with n sides has interior angles of (n − 2) × 180°/n, so a hexagon has (4 × 180°)/6 = 120°. Baeyer's argument therefore predicted that cyclohexane, and larger rings even more so, would be strained by angles greater than 109°. In fact, cyclohexane is strain-free (Figure 4.3.1)."
+  },
+  {
+    "id": "oc4-ring-strain-baeyer-vs-data",
+    "type": "multiple-choice",
+    "prompt": "How do the strain energies in Figure 4.3.1 compare with Baeyer's predictions?",
+    "choices": [
+      {
+        "text": "Cyclopropane and cyclobutane are strained as predicted, but cyclopentane is more strained than predicted and cyclohexane is strain-free",
+        "correct": true
+      },
+      {
+        "text": "Baeyer's theory is fully correct: strain rises steadily as the ring angles move away from 109°",
+        "why": "The theory is only partially correct. Cyclohexane, which a flat hexagon would make strained, is actually strain-free."
+      },
+      {
+        "text": "Cyclopropane and cyclobutane turn out to be strain-free",
+        "why": "These small rings are indeed strained, just as Baeyer predicted; cyclopropane has the highest strain in Figure 4.3.1."
+      },
+      {
+        "text": "Cyclopentane is strain-free, as its 108° angle predicts",
+        "why": "Cyclopentane is more strained than Baeyer predicted, because angle strain is not the only kind of strain in a ring."
+      }
+    ],
+    "explanation": "The data in Figure 4.3.1 show that Baeyer's theory is only partially correct. Cyclopropane and cyclobutane are strained, as predicted, but cyclopentane is more strained than predicted, and cyclohexane is strain-free."
+  },
+  {
+    "id": "oc4-ring-strain-baeyer-error",
+    "type": "multiple-choice",
+    "prompt": "Why is Baeyer's theory of ring strain wrong?",
+    "choices": [
+      {
+        "text": "He assumed all cycloalkanes are flat, but most adopt puckered conformations with nearly tetrahedral bond angles",
+        "correct": true
+      },
+      {
+        "text": "He used the wrong ideal bond angle; the tetrahedral value is really 120°",
+        "why": "The ideal tetrahedral value is 109°. The mistake was assuming rings are flat polygons."
+      },
+      {
+        "text": "He ignored the fact that small rings are flexible",
+        "why": "Three- and four-membered rings have little flexibility; that is why they still have angle strain."
+      },
+      {
+        "text": "Heats of combustion were not yet known, so he guessed the strain energies",
+        "why": "The section's reason is geometric: Baeyer assumed flat rings, and most rings are not flat."
+      }
+    ],
+    "explanation": "Baeyer's theory is wrong for the simple reason that he assumed all cycloalkanes to be flat. In fact, most cycloalkanes adopt puckered three-dimensional conformations that allow bond angles to be nearly tetrahedral."
+  },
+  {
+    "id": "oc4-ring-strain-angle-strain-rings",
+    "type": "multiple-choice",
+    "prompt": "In which cycloalkanes does angle strain actually occur?",
+    "choices": [
+      {
+        "text": "Only three- and four-membered rings, which have little flexibility",
+        "correct": true
+      },
+      {
+        "text": "Every ring except cyclopentane, whose 108° angle is nearly tetrahedral",
+        "why": "Most rings pucker to make their angles nearly tetrahedral, so angle strain is limited to the smallest rings."
+      },
+      {
+        "text": "All rings larger than six carbons, whose flat angles exceed 109°",
+        "why": "Larger rings are not flat; puckering lets their bond angles stay nearly tetrahedral."
+      },
+      {
+        "text": "Only medium rings (C7–C11)",
+        "why": "For medium rings the important factors are torsional and steric strain, not angle strain."
+      }
+    ],
+    "explanation": "Because most cycloalkanes adopt puckered conformations with nearly tetrahedral bond angles, angle strain occurs only in three- and four-membered rings, which have little flexibility."
+  },
+  {
+    "id": "oc4-ring-strain-medium-rings",
+    "type": "multiple-choice",
+    "prompt": "What are the most important sources of strain in medium-ring (C7–C11) cycloalkanes?",
+    "choices": [
+      {
+        "text": "Torsional strain from H ⟷ H eclipsing and steric strain from nonbonded atoms approaching too closely",
+        "correct": true
+      },
+      {
+        "text": "Angle strain from bond angles much greater than 109°",
+        "why": "Medium rings pucker so their angles stay nearly tetrahedral; angle strain occurs only in three- and four-membered rings."
+      },
+      {
+        "text": "Angle strain from bond angles much smaller than 109°",
+        "why": "Compressed angles are the problem in cyclopropane and cyclobutane, not in medium rings."
+      },
+      {
+        "text": "None; medium rings are strain-free",
+        "why": "Medium rings have modest strain. The strain-free rings are cyclohexane and rings of 14 or more carbons."
+      }
+    ],
+    "explanation": "For most ring sizes, particularly the medium-ring (C7–C11) cycloalkanes, torsional strain caused by H ⟷ H eclipsing interactions at adjacent carbons and steric strain caused by repulsion between nonbonded atoms that approach too closely are the most important factors."
+  },
+  {
+    "id": "oc4-ring-strain-torsional-definition",
+    "type": "multiple-choice",
+    "prompt": "Which of the three kinds of strain in a cycloalkane is due to eclipsing of bonds between neighboring atoms?",
+    "choices": [
+      {
+        "text": "Torsional strain",
+        "correct": true
+      },
+      {
+        "text": "Angle strain",
+        "why": "Angle strain is due to expansion or compression of bond angles."
+      },
+      {
+        "text": "Steric strain",
+        "why": "Steric strain is due to repulsion when atoms approach each other too closely, not to eclipsed bonds as such."
+      },
+      {
+        "text": "Ring strain",
+        "why": "Ring strain is the overall strain of the ring, made up of angle, torsional and steric strain together."
+      }
+    ],
+    "explanation": "Three kinds of strain contribute to the overall energy of a cycloalkane: angle strain (expansion or compression of bond angles), torsional strain (eclipsing of bonds between neighboring atoms), and steric strain (repulsive interactions when atoms approach each other too closely)."
+  },
+  {
+    "id": "oc4-ring-strain-strain-free",
+    "type": "multiple-choice",
+    "prompt": "According to Figure 4.3.1, which cycloalkanes are strain-free?",
+    "choices": [
+      {
+        "text": "Cyclohexane and rings of 14 carbons or more",
+        "correct": true
+      },
+      {
+        "text": "Cyclopentane and cyclohexane",
+        "why": "Cyclopentane is more strained than Baeyer predicted; of the small rings, only cyclohexane is strain-free."
+      },
+      {
+        "text": "Only cyclopentane, whose 108° angles are closest to tetrahedral",
+        "why": "Despite its nearly ideal flat angle, cyclopentane is strained. Cyclohexane, not cyclopentane, is strain-free."
+      },
+      {
+        "text": "All rings of five carbons or more",
+        "why": "Intermediate rings (C7–C11 and up to C13) still have modest strain."
+      }
+    ],
+    "explanation": "Small and medium rings are strained, but cyclohexane rings and very large rings are strain-free (Figure 4.3.1). Cycloalkanes of intermediate size have only modest strain, and rings of 14 carbons or more are strain-free."
+  },
+  {
+    "id": "oc4-ring-strain-heat-of-combustion",
+    "type": "multiple-choice",
+    "prompt": "Why can a cycloalkane's heat of combustion be used to measure its ring strain?",
+    "choices": [
+      {
+        "text": "The more energy (strain) a compound contains, the more heat it releases when it burns",
+        "correct": true
+      },
+      {
+        "text": "Strained compounds release less heat because some energy is used up breaking the strained bonds",
+        "why": "It is the reverse: strain is extra stored energy, and it comes out as extra heat on combustion."
+      },
+      {
+        "text": "Heat of combustion is the same for all cycloalkanes, so any difference must be strain",
+        "why": "Heat of combustion depends on ring size, which is why the comparison is made per CH2 unit."
+      },
+      {
+        "text": "Burning a ring breaks only its strained bonds",
+        "why": "Complete combustion converts every carbon and hydrogen to CO2 and H2O; strain shows up as extra heat released."
+      }
+    ],
+    "explanation": "The heat of combustion is the amount of heat released when the compound burns completely with oxygen. The more energy (strain) the compound contains, the more energy (heat) is released by combustion, so comparing with a strain-free reference measures the strain."
+  },
+  {
+    "id": "oc4-ring-strain-per-ch2",
+    "type": "multiple-choice",
+    "prompt": "Why are cycloalkane heats of combustion compared per CH2 unit rather than per mole of compound?",
+    "choices": [
+      {
+        "text": "Heat of combustion depends on ring size, since larger rings have more CH2 units to burn",
+        "correct": true
+      },
+      {
+        "text": "Only the CH2 units adjacent to strained bonds release heat",
+        "why": "Every CH2 unit burns to CO2 and H2O; dividing by the number of units removes the effect of ring size."
+      },
+      {
+        "text": "The heat per mole is the same for every cycloalkane",
+        "why": "It is not: a bigger ring has more CH2 units and releases more heat in total."
+      },
+      {
+        "text": "The strain-free reference compound has only one CH2 unit",
+        "why": "The reference is a per-CH2 value derived from a strain-free acyclic alkane, so the cycloalkane must also be put on a per-CH2 basis."
+      }
+    ],
+    "explanation": "Because the heat of combustion of a cycloalkane depends on size, we look at heats of combustion per CH2 unit. A reference value from a strain-free acyclic alkane is subtracted, and the difference is multiplied by the number of CH2 units in the ring to give the overall strain energy."
+  },
+  {
+    "id": "oc4-ring-strain-combustion-oxygen",
+    "type": "numeric",
+    "prompt": "Using the general equation for cycloalkane combustion, (CH2)n + (3n/2) O2 → n CO2 + n H2O, how many moles of O2 are needed to burn 1 mol of cyclohexane completely?",
+    "answer": 9,
+    "unit": "mol",
+    "tolerance": 0.01,
+    "explanation": "Cyclohexane is (CH2)6, so n = 6 and it needs 3n/2 = (3 × 6)/2 = 9 mol of O2, giving 6 mol CO2 and 6 mol H2O."
+  },
+  {
+    "id": "oc4-ring-strain-strain-energy-calc",
+    "type": "numeric",
+    "prompt": "Cyclopropane releases 697.1 kJ/mol of heat per CH2 unit on combustion, and the strain-free acyclic reference value is 658.6 kJ/mol per CH2. Using the method of Figure 4.3.1, what is cyclopropane's strain energy, in kJ/mol?",
+    "answer": 115.5,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "Subtract the reference value and multiply by the number of CH2 units: (697.1 − 658.6) × 3 = 38.5 × 3 = 115.5 kJ/mol, in line with the 115 kJ/mol overall strain energy quoted for cyclopropane."
+  },
+  {
+    "id": "oc4-ring-strain-excess-per-ch2",
+    "type": "numeric",
+    "prompt": "Cyclopropane's overall strain energy is 115 kJ/mol. How much extra heat of combustion per CH2 unit, above the strain-free reference, does that correspond to, in kJ/mol?",
+    "answer": 38.3,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "The strain energy is the per-CH2 excess multiplied by the number of CH2 units in the ring, so the excess per CH2 is 115 kJ/mol ÷ 3 = 38.3 kJ/mol."
+  },
+  {
+    "id": "oc4-ring-strain-cyclopropane-torsional",
+    "type": "numeric",
+    "prompt": "In planar cyclopropane, every C–H bond is eclipsed by a C–H bond on the neighboring carbon. If each H ⟷ H eclipsing interaction costs about 4.0 kJ/mol, as in ethane, how much of cyclopropane's strain energy is torsional strain, in kJ/mol?",
+    "answer": 24,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "Each of the three C–C bonds has two H ⟷ H eclipsing interactions, one on each side of the flat ring, for 3 × 2 = 6 interactions. 6 × 4.0 kJ/mol = 24 kJ/mol, about 21% of the 115 kJ/mol total; the rest is mostly angle strain."
+  },
+  {
+    "id": "oc4-ring-strain-dimethylcyclopropane-stability",
+    "type": "multiple-choice",
+    "prompt": "Which is more stable, cis- or trans-1,2-dimethylcyclopropane, and why?",
+    "choices": [
+      {
+        "text": "Trans, because in the cis isomer the two methyl groups on the same face nearly eclipse each other",
+        "correct": true
+      },
+      {
+        "text": "Cis, because the two methyl groups on the same face attract each other",
+        "why": "Nearby methyl groups repel; the cis isomer has more strain, not less."
+      },
+      {
+        "text": "Neither; they have the same strain because the ring is the same",
+        "why": "The ring strain is the same, but the cis isomer adds strain from its nearly eclipsed methyl groups."
+      },
+      {
+        "text": "Trans, because its bond angles are closer to 109°",
+        "why": "Both isomers have the same 60° ring angles. The difference comes from the methyl groups' positions."
+      }
+    ],
+    "explanation": "cis-1,2-Dimethylcyclopropane has more strain than the trans isomer, so the trans isomer is more stable. In the cis isomer the methyl groups are on the same face of the flat ring and nearly eclipse each other, adding torsional and steric strain."
+  }
+]

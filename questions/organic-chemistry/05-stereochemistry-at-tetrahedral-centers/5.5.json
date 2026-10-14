@@ -1,0 +1,414 @@
+[
+  {
+    "id": "oc5-sequence-rule-atomic-number-order",
+    "type": "multiple-choice",
+    "prompt": "A chirality center carries −Cl, −SH, −OH and −NH2. How do these rank by the sequence rules, highest first?",
+    "choices": [
+      {
+        "text": "−Cl > −SH > −OH > −NH2",
+        "correct": true
+      },
+      {
+        "text": "−OH > −Cl > −NH2 > −SH",
+        "why": "This is the order of electronegativity. Rule 1 ranks the attached atoms by atomic number: Cl (17) > S (16) > O (8) > N (7)."
+      },
+      {
+        "text": "−NH2 > −OH > −SH > −Cl",
+        "why": "This is the right order turned upside down. The atom with the highest atomic number ranks first, not last."
+      },
+      {
+        "text": "−Cl > −OH > −SH > −NH2",
+        "why": "Oxygen is more electronegative than sulfur, but rule 1 uses atomic number, and S (16) is well above O (8)."
+      }
+    ],
+    "explanation": "Rule 1: look at the four atoms directly attached to the chirality center and rank them by atomic number, highest first. Cl (17) > S (16) > O (8) > N (7), so −Cl ranks first and −NH2 fourth."
+  },
+  {
+    "id": "oc5-sequence-rule-isotope-lowest",
+    "type": "multiple-choice",
+    "prompt": "In CH3CHDOH (ethanol with one deuterium on C1), C1 carries −OH, −CH3, −D and −H. Which group ranks fourth (lowest)?",
+    "choices": [
+      {
+        "text": "−H",
+        "correct": true
+      },
+      {
+        "text": "−D",
+        "why": "D and H have the same atomic number, so rule 1 compares isotopes by mass: the heavier deuterium (2H) ranks above protium (1H)."
+      },
+      {
+        "text": "−CH3",
+        "why": "The attached atom of −CH3 is carbon (atomic number 6), which outranks both hydrogen isotopes (atomic number 1)."
+      },
+      {
+        "text": "None: −D and −H tie, so C1 can't be ranked",
+        "why": "They don't tie. When different isotopes of the same element are compared, the heavier isotope ranks higher."
+      }
+    ],
+    "explanation": "Rule 1: rank the attached atoms by atomic number, O > C > H, and when two isotopes of the same element are compared, the heavier ranks higher. So the order is −OH > −CH3 > −D > −H, and protium (−H) is fourth."
+  },
+  {
+    "id": "oc5-sequence-rule-count-above-oh",
+    "type": "numeric",
+    "prompt": "How many of these substituents rank higher than −OH by the sequence rules: −Br, −NH2, −SH, −CH3, −Cl, −PH2?",
+    "answer": 4,
+    "explanation": "Rule 1 compares the atoms attached to the chirality center by atomic number. Oxygen is 8. Br (35), Cl (17), S (16) and P (15) are higher; N (7) and C (6) are lower. That makes 4: −Br, −Cl, −SH and −PH2."
+  },
+  {
+    "id": "oc5-sequence-rule-isopropyl-vs-butyl",
+    "type": "multiple-choice",
+    "prompt": "Which ranks higher by the sequence rules: −CH(CH3)2 or −CH2CH2CH2CH3?",
+    "choices": [
+      {
+        "text": "−CH(CH3)2, because its first carbon carries two carbons",
+        "correct": true
+      },
+      {
+        "text": "−CH2CH2CH2CH3, because it has more carbon atoms",
+        "why": "The rules don't count total atoms. They compare atoms one step at a time from the chirality center, and the first difference decides."
+      },
+      {
+        "text": "They are equal, because both are attached through carbon",
+        "why": "Rule 1 can't separate them, but rule 2 can: go on to the second atoms until a difference is found."
+      },
+      {
+        "text": "−CH2CH2CH2CH3, because its chain reaches farther from the chirality center",
+        "why": "Chain length doesn't matter. The difference already shows up at the second atoms, where the isopropyl carbon carries (C, C, H) and the butyl carbon only (C, H, H)."
+      }
+    ],
+    "explanation": "Rule 1 gives a tie: both groups attach through carbon. Rule 2: look at the second atoms. The first carbon of −CH(CH3)2 carries (C, C, H); the first carbon of −CH2CH2CH2CH3 carries (C, H, H). The first difference is C versus H, so isopropyl ranks higher."
+  },
+  {
+    "id": "oc5-sequence-rule-highest-atom-first",
+    "type": "multiple-choice",
+    "prompt": "Which ranks higher by the sequence rules: −CH2OH or −C(CH3)3?",
+    "choices": [
+      {
+        "text": "−CH2OH, because O is its highest second atom and outranks C",
+        "correct": true
+      },
+      {
+        "text": "−C(CH3)3, because three carbons outweigh one oxygen",
+        "why": "Second atoms are compared highest first, not added up. O (8) beats C (6) in the first comparison, and that settles it."
+      },
+      {
+        "text": "They are equal, because both are attached through carbon",
+        "why": "That only ties them under rule 1. Rule 2 then compares the second atoms, where they differ."
+      },
+      {
+        "text": "−C(CH3)3, because it has more carbon atoms in total",
+        "why": "Total size doesn't count. The rules look for the first point of difference, which here is O versus C at the second atoms."
+      }
+    ],
+    "explanation": "Both groups attach through carbon, so rule 1 gives a tie. Rule 2: compare the second atoms, highest first. −CH2OH carries (O, H, H) and −C(CH3)3 carries (C, C, C). The highest second atom of −CH2OH is O, which outranks C, so −CH2OH ranks higher, as the lactic acid example compares O in −CO2H with H in −CH3."
+  },
+  {
+    "id": "oc5-sequence-rule-first-point-of-difference",
+    "type": "multiple-choice",
+    "prompt": "Which ranks higher by the sequence rules: −CH(CH3)2 or −CH2CH2OH?",
+    "choices": [
+      {
+        "text": "−CH(CH3)2, because the difference appears at the second atoms",
+        "correct": true
+      },
+      {
+        "text": "−CH2CH2OH, because it contains an oxygen",
+        "why": "The oxygen is a third atom. The groups already differ at the second atoms, and the comparison stops at the first point of difference."
+      },
+      {
+        "text": "They are equal, because both have carbon as the first and highest second atom",
+        "why": "The highest second atoms tie (C and C), but the next ones don't: C in isopropyl versus H in −CH2CH2OH."
+      },
+      {
+        "text": "−CH2CH2OH, because its chain is longer",
+        "why": "Chain length isn't a sequence rule. Compare atom by atom from the chirality center until the first difference."
+      }
+    ],
+    "explanation": "Rule 1: both attach through carbon. Rule 2: compare the second atoms. −CH(CH3)2 carries (C, C, H) and −CH2CH2OH carries (C, H, H). Their highest atoms tie (C, C), the next ones differ (C versus H), so isopropyl ranks higher. The oxygen farther out is never reached, because the first difference decides."
+  },
+  {
+    "id": "oc5-sequence-rule-propyl-vs-ethyl",
+    "type": "multiple-choice",
+    "prompt": "Which ranks higher by the sequence rules, −CH2CH2CH3 or −CH2CH3, and where is the difference found?",
+    "choices": [
+      {
+        "text": "−CH2CH2CH3, at the third atoms",
+        "correct": true
+      },
+      {
+        "text": "−CH2CH2CH3, at the second atoms",
+        "why": "The second atoms tie: the first carbon carries (C, H, H) in both groups. The difference comes one step later."
+      },
+      {
+        "text": "−CH2CH3, at the second atoms",
+        "why": "Both groups have (C, H, H) as second atoms, so neither wins there. Going one atom farther, propyl has a carbon where ethyl has only hydrogens."
+      },
+      {
+        "text": "Neither; they tie because their second atoms are identical",
+        "why": "Rule 2 says to keep going to the third or fourth atoms until the first difference is found."
+      }
+    ],
+    "explanation": "Rule 1: both attach through carbon. Rule 2: the second atoms are (C, H, H) in both, still a tie. At the third atoms, ethyl's CH3 carries (H, H, H) while propyl's CH2 carries (C, H, H). C beats H, so propyl ranks higher; the rule says to look at the second, third or fourth atoms until the first difference is found."
+  },
+  {
+    "id": "oc5-sequence-rule-first-atom-decides",
+    "type": "multiple-choice",
+    "prompt": "Which of these substituents ranks highest by the sequence rules: −OH, −CH2Cl, −CH2SH or −CH2OH?",
+    "choices": [
+      {
+        "text": "−OH",
+        "correct": true
+      },
+      {
+        "text": "−CH2Cl",
+        "why": "Cl has the highest atomic number, but it is a second atom. Rule 1 compares the first atoms, and O beats the C of −CH2Cl."
+      },
+      {
+        "text": "−CH2SH",
+        "why": "The sulfur is a second atom. −CH2SH attaches through carbon, which loses to the O of −OH under rule 1."
+      },
+      {
+        "text": "−CH2OH",
+        "why": "It contains an oxygen too, but it attaches through carbon. The first atoms are compared first: O beats C."
+      }
+    ],
+    "explanation": "Rule 1 looks only at the atoms directly attached to the chirality center. −OH attaches through O (8); the other three attach through C (6). So −OH ranks highest, and rule 2 is needed only to order the three carbon groups among themselves."
+  },
+  {
+    "id": "oc5-sequence-rule-acid-vs-aldehyde",
+    "type": "multiple-choice",
+    "prompt": "Which ranks higher by the sequence rules: −CO2H or −CH=O?",
+    "choices": [
+      {
+        "text": "−CO2H, because its carbon counts as bonded to three oxygens",
+        "correct": true
+      },
+      {
+        "text": "−CH=O, because a double bond outranks single bonds",
+        "why": "Bonds aren't ranked themselves. Rule 3 converts a double bond into duplicate single-bonded atoms, and then the atoms are compared."
+      },
+      {
+        "text": "They are equal, because both contain a C=O",
+        "why": "After rule 3, the aldehyde carbon carries (O, O, H) and the acid carbon (O, O, O). The third atom, O versus H, separates them."
+      },
+      {
+        "text": "−CH=O, because it has fewer atoms and is attached more simply",
+        "why": "Size and simplicity play no part. Compare the second atoms: (O, O, O) beats (O, O, H)."
+      }
+    ],
+    "explanation": "Rule 1: both attach through carbon. Rule 3: a doubly bonded oxygen counts as two single-bonded oxygens, so the aldehyde carbon carries (O, O, H), while the acid carbon carries (O, O) from C=O plus O from −OH: (O, O, O). Rule 2: comparing these, O beats H, so −CO2H ranks higher."
+  },
+  {
+    "id": "oc5-sequence-rule-alkyne-duplicates",
+    "type": "numeric",
+    "prompt": "For ranking, the first carbon of an ethynyl group, −C≡CH, is treated as bonded to how many carbon atoms (not counting the chirality center)?",
+    "answer": 3,
+    "explanation": "Rule 3: multiple-bonded atoms are equivalent to the same number of single-bonded atoms. A triple bond to one carbon counts as single bonds to three carbons, so the first carbon of −C≡CH carries (C, C, C)."
+  },
+  {
+    "id": "oc5-sequence-rule-unsaturated-ranking",
+    "type": "multiple-choice",
+    "prompt": "Rank −CH2CH3, −C≡CH, −CH3 and −CH=CH2 by the sequence rules, highest first.",
+    "choices": [
+      {
+        "text": "−C≡CH > −CH=CH2 > −CH2CH3 > −CH3",
+        "correct": true
+      },
+      {
+        "text": "−CH2CH3 > −CH=CH2 > −C≡CH > −CH3",
+        "why": "This treats the groups with more hydrogens as heavier. Rule 3 counts each multiple bond as extra carbons, so unsaturation raises the rank."
+      },
+      {
+        "text": "−C≡CH > −CH2CH3 > −CH=CH2 > −CH3",
+        "why": "This counts the double bond only once. By rule 3 the vinyl carbon carries (C, C, H), which beats ethyl's (C, H, H)."
+      },
+      {
+        "text": "−CH=CH2 > −C≡CH > −CH2CH3 > −CH3",
+        "why": "The triple bond counts as three carbons, so the ethynyl carbon carries (C, C, C), more than the vinyl carbon's (C, C, H)."
+      }
+    ],
+    "explanation": "All four attach through carbon, so rule 2 compares the second atoms, with rule 3 counting multiple bonds as duplicate atoms: −C≡CH (C, C, C) > −CH=CH2 (C, C, H) > −CH2CH3 (C, H, H) > −CH3 (H, H, H)."
+  },
+  {
+    "id": "oc5-sequence-rule-glyceraldehyde-ranking",
+    "type": "multiple-choice",
+    "prompt": "The chirality center of glyceraldehyde, HOCH2CH(OH)CH=O, carries −OH, −CH=O, −CH2OH and −H. How do they rank, highest first?",
+    "choices": [
+      {
+        "text": "−OH > −CH=O > −CH2OH > −H",
+        "correct": true
+      },
+      {
+        "text": "−OH > −CH2OH > −CH=O > −H",
+        "why": "This counts the C=O oxygen once. By rule 3 the aldehyde carbon carries (O, O, H), which beats (O, H, H) for −CH2OH."
+      },
+      {
+        "text": "−CH=O > −OH > −CH2OH > −H",
+        "why": "Rule 1 comes first: −OH attaches through O, the aldehyde through C. Extra oxygens farther out can't overturn that."
+      },
+      {
+        "text": "−CH=O > −CH2OH > −OH > −H",
+        "why": "This ranks by the number of oxygens in each group. The rules compare the attached atom first, and O (in −OH) beats C."
+      }
+    ],
+    "explanation": "Rule 1: −OH attaches through O, so it ranks first; −H ranks fourth. −CH=O and −CH2OH both attach through C, so rule 2 compares their second atoms, using rule 3 for the double bond: (O, O, H) for −CH=O versus (O, H, H) for −CH2OH. The aldehyde wins."
+  },
+  {
+    "id": "oc5-sequence-rule-valinol-rank",
+    "type": "numeric",
+    "prompt": "In 2-amino-3-methyl-1-butanol, HOCH2CH(NH2)CH(CH3)2, the chirality center carries −NH2, −CH2OH, −CH(CH3)2 and −H. What rank (1 to 4) does −CH(CH3)2 get?",
+    "answer": 3,
+    "explanation": "Rule 1: −NH2 attaches through N and ranks 1; −H ranks 4. Rule 2 separates the two carbon groups: −CH2OH carries (O, H, H) and −CH(CH3)2 carries (C, C, H). Comparing the highest second atoms first, O beats C, so −CH2OH is 2 and −CH(CH3)2 is 3."
+  },
+  {
+    "id": "oc5-sequence-rule-count-above-ch2oh",
+    "type": "numeric",
+    "prompt": "How many of these substituents rank higher than −CH2OH by the sequence rules: −CH=O, −CH3, −CO2H, −CH2CH3, −OH, −CH(CH3)2?",
+    "answer": 3,
+    "explanation": "−OH wins by rule 1 (O beats C). The rest attach through C, so rule 2 compares second atoms against (O, H, H) for −CH2OH, with rule 3 for double bonds: −CH=O (O, O, H) and −CO2H (O, O, O) rank higher; −CH(CH3)2 (C, C, H), −CH2CH3 (C, H, H) and −CH3 (H, H, H) rank lower, since O beats C. That makes 3."
+  },
+  {
+    "id": "oc5-sequence-rule-counterclockwise-s",
+    "type": "multiple-choice",
+    "prompt": "With the lowest-ranked group pointing away from you, a curved arrow from priority 1 to 2 to 3 runs counterclockwise. What is the configuration of the chirality center?",
+    "choices": [
+      {
+        "text": "S",
+        "correct": true
+      },
+      {
+        "text": "R",
+        "why": "R is a clockwise (right) turn of the steering wheel. Counterclockwise, a left turn, is S."
+      },
+      {
+        "text": "(−), because counterclockwise means levorotatory",
+        "why": "R and S describe the arrangement of groups; (+) and (−) describe the measured rotation of light. The two are not related."
+      },
+      {
+        "text": "It can't be assigned until the optical rotation is measured",
+        "why": "The configuration comes from the sequence rules and the direction of the arrow alone, with no measurement needed."
+      }
+    ],
+    "explanation": "Rank the groups, orient the molecule so group 4 points directly away, then follow 1 → 2 → 3. Clockwise (a right turn of the steering wheel) is R; counterclockwise (a left turn) is S."
+  },
+  {
+    "id": "oc5-sequence-rule-2-butanol-positions",
+    "type": "multiple-choice",
+    "prompt": "You view the chirality center of 2-butanol, CH3CH(OH)CH2CH3, with −H pointing away from you. You see −OH at the top, −CH3 at the lower right and −CH2CH3 at the lower left. What is the configuration?",
+    "choices": [
+      {
+        "text": "S",
+        "correct": true
+      },
+      {
+        "text": "R",
+        "why": "This ranks −CH3 above −CH2CH3. By rule 2 ethyl ranks higher, so the arrow goes from −OH (top) to −CH2CH3 (lower left): counterclockwise."
+      },
+      {
+        "text": "It can't be assigned, because −CH3 and −CH2CH3 tie by rule 1",
+        "why": "When rule 1 ties, rule 2 decides: ethyl's first carbon carries a carbon, methyl's only hydrogens."
+      },
+      {
+        "text": "It isn't a chirality center",
+        "why": "C2 carries four different groups (−OH, −CH2CH3, −CH3 and −H), so it is a chirality center."
+      }
+    ],
+    "explanation": "Rank: −OH (1, rule 1), −CH2CH3 (2, rule 2), −CH3 (3), −H (4). With −H away, follow 1 → 2 → 3: top → lower left → lower right, which is counterclockwise, a left turn of the steering wheel. The configuration is S."
+  },
+  {
+    "id": "oc5-sequence-rule-lowest-toward-viewer",
+    "type": "multiple-choice",
+    "prompt": "In CH3CHBrCl, you view the chirality center with −H pointing toward you, and −Br → −Cl → −CH3 appears clockwise. What is the configuration?",
+    "choices": [
+      {
+        "text": "S",
+        "correct": true
+      },
+      {
+        "text": "R",
+        "why": "The clockwise rule only applies with the lowest-ranked group pointing away. Here −H points toward you, so the direction you see is reversed."
+      },
+      {
+        "text": "It can't be assigned unless the molecule is redrawn with −H at the back",
+        "why": "Turning the molecule around isn't necessary: viewing from the side opposite the correct one simply reverses the apparent direction."
+      },
+      {
+        "text": "It depends on the sign of optical rotation",
+        "why": "There is no correlation between R,S configuration and the direction of optical rotation."
+      }
+    ],
+    "explanation": "Ranks: −Br (1) > −Cl (2) > −CH3 (3) > −H (4), by rule 1. The configuration is defined with group 4 pointing directly away from you. Looking from the opposite side reverses every apparent rotation, the way a clock seen from behind runs backward, so the clockwise arrow seen from the front is counterclockwise from the correct side: S."
+  },
+  {
+    "id": "oc5-sequence-rule-rectus",
+    "type": "multiple-choice",
+    "prompt": "The letter R comes from the Latin word rectus. What does it mean, and which direction of 1 → 2 → 3 does it match?",
+    "choices": [
+      {
+        "text": "Right; clockwise, like a right turn of a steering wheel",
+        "correct": true
+      },
+      {
+        "text": "Left; counterclockwise, like a left turn",
+        "why": "That is sinister, the source of S."
+      },
+      {
+        "text": "Right; counterclockwise",
+        "why": "A right turn of the steering wheel is clockwise. Counterclockwise is a left turn, S."
+      },
+      {
+        "text": "Rotation; the direction the compound turns plane-polarized light",
+        "why": "R describes the arrangement of groups, not optical rotation; the two are unrelated."
+      }
+    ],
+    "explanation": "If a curved arrow 1 → 2 → 3 is clockwise, the center is R, from the Latin rectus, meaning \"right\". Counterclockwise is S, from sinister, meaning \"left\". Think of a car's steering wheel making a right (clockwise) turn."
+  },
+  {
+    "id": "oc5-sequence-rule-sign-unrelated",
+    "type": "multiple-choice",
+    "prompt": "A compound is known to have the S configuration. What does that tell you about its optical rotation?",
+    "choices": [
+      {
+        "text": "Nothing: an S compound may be either (+) or (−)",
+        "correct": true
+      },
+      {
+        "text": "It is levorotatory (−), because S means left",
+        "why": "The left in sinister describes the direction of the 1 → 2 → 3 arrow, not light. (S)-Alanine, for example, is dextrorotatory."
+      },
+      {
+        "text": "It is dextrorotatory (+)",
+        "why": "(S)-Glyceraldehyde is levorotatory, so S compounds aren't always (+)."
+      },
+      {
+        "text": "Its rotation is smaller in magnitude than that of an R compound",
+        "why": "There is no correlation between R,S configuration and either the direction or the magnitude of optical rotation."
+      }
+    ],
+    "explanation": "The sign of optical rotation is not related to the R,S designation. (S)-Glyceraldehyde happens to be levorotatory (−) and (S)-alanine dextrorotatory (+): there is no simple correlation between R,S configuration and the direction or magnitude of rotation."
+  },
+  {
+    "id": "oc5-sequence-rule-absolute-configuration",
+    "type": "multiple-choice",
+    "prompt": "How was it finally shown that the R configuration belongs to the levorotatory enantiomer of lactic acid, rather than just assumed?",
+    "choices": [
+      {
+        "text": "An X-ray diffraction method, found in 1951, that determines the absolute arrangement of atoms",
+        "correct": true
+      },
+      {
+        "text": "Measuring the optical rotation with a polarimeter",
+        "why": "A polarimeter gives the sign of rotation, but that has no correlation with R or S, so it can't reveal the configuration."
+      },
+      {
+        "text": "By definition: R is the label given to the levorotatory enantiomer",
+        "why": "R and S are assigned from the sequence rules and the 3D arrangement, not from the rotation. Whether they match the real molecules needed an experiment."
+      },
+      {
+        "text": "By applying the sequence rules carefully enough",
+        "why": "The rules turn a known 3D arrangement into a label. They can't tell you which real enantiomer has which arrangement."
+      }
+    ],
+    "explanation": "Because R,S configuration doesn't correlate with optical rotation, the absolute configuration had to be determined directly. That question was solved in 1951, when an X-ray diffraction method was found for determining the absolute spatial arrangement of atoms in a molecule, confirming that the R,S conventions are correct."
+  }
+]

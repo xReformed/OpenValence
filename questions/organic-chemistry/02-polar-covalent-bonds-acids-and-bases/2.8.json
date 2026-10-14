@@ -1,0 +1,338 @@
+[
+  {
+    "id": "oc2-acid-strength-ka-expression",
+    "type": "multiple-choice",
+    "prompt": "For the equilibrium HA(aq) + H2O(l) ⇌ H3O+(aq) + A−(aq), which is the acidity constant expression?",
+    "choices": [
+      {
+        "text": "K_a = [H3O+][A−] / [HA]",
+        "correct": true
+      },
+      {
+        "text": "K_a = [H3O+][A−] / ([HA][H2O])",
+        "why": "Water is the solvent, so its concentration does not appear in the equilibrium expression."
+      },
+      {
+        "text": "K_a = [HA] / ([H3O+][A−])",
+        "why": "This is upside down. Products go in the numerator, so a stronger acid gives a larger K_a."
+      },
+      {
+        "text": "K_a = [H3O+] + [A−] − [HA]",
+        "why": "An equilibrium constant is a ratio of concentrations multiplied together, not a sum."
+      }
+    ],
+    "explanation": "The acidity constant is K_a = [H3O+][A−]/[HA]. The solvent concentration does not appear, and the brackets mean concentrations in moles per liter (molarity)."
+  },
+  {
+    "id": "oc2-acid-strength-solvent-omitted",
+    "type": "multiple-choice",
+    "prompt": "Why does water not appear in the K_a expression for an acid dissolved in water?",
+    "choices": [
+      {
+        "text": "Water is the solvent, and in very dilute solutions its activity has a value of 1",
+        "correct": true
+      },
+      {
+        "text": "Water does not take part in the acid-dissociation reaction",
+        "why": "Water does react: it accepts the proton to become H3O+. It is left out because it is the solvent."
+      },
+      {
+        "text": "The concentration of water is zero",
+        "why": "Water is present in enormous amount. Its activity as the solvent is 1, so it drops out of the ratio."
+      },
+      {
+        "text": "Water is a product, and only reactants appear in K_a",
+        "why": "Water is a reactant here, and both products (H3O+, A−) and the reactant HA appear in K_a."
+      }
+    ],
+    "explanation": "Equilibrium constant expressions are really ratios of activities, determined at the limit of infinite dilution. In these very dilute solutions the activity of the solvent is 1, and each solute's activity can be approximated by its molar concentration."
+  },
+  {
+    "id": "oc2-acid-strength-large-ka",
+    "type": "multiple-choice",
+    "prompt": "What does a large K_a tell you about an acid?",
+    "choices": [
+      {
+        "text": "It is a strong acid, with its dissociation equilibrium lying toward the right",
+        "correct": true
+      },
+      {
+        "text": "It is a weak acid, with its equilibrium lying toward the left",
+        "why": "Weak acids have small acidity constants. A large K_a means a lot of H3O+ and A− at equilibrium."
+      },
+      {
+        "text": "It has a large pK_a",
+        "why": "pK_a = −log K_a, so a larger K_a gives a smaller pK_a."
+      },
+      {
+        "text": "Its conjugate base is a strong base",
+        "why": "A strong acid has a weak conjugate base, because the conjugate base holds H+ weakly."
+      }
+    ],
+    "explanation": "Stronger acids have their equilibria toward the right and thus have larger acidity constants, whereas weaker acids have their equilibria toward the left and have smaller acidity constants."
+  },
+  {
+    "id": "oc2-acid-strength-organic-range",
+    "type": "multiple-choice",
+    "prompt": "In what range do the K_a values of organic acids generally fall?",
+    "choices": [
+      {
+        "text": "10^−5 to 10^−15",
+        "correct": true
+      },
+      {
+        "text": "10^1 to 10^9",
+        "why": "That is the range for common inorganic acids such as H2SO4, HNO3 and HCl."
+      },
+      {
+        "text": "10^15 to 10^−60",
+        "why": "That is the full range of K_a values across all acids, from strongest to weakest."
+      },
+      {
+        "text": "10^5 to 10^15",
+        "why": "K_a values above 1 belong to strong acids. Organic acids are weaker, with K_a values far below 1."
+      }
+    ],
+    "explanation": "Common inorganic acids such as H2SO4, HNO3 and HCl have K_a's in the range of 10^1 to 10^9, while organic acids generally have K_a's in the range of 10^−5 to 10^−15."
+  },
+  {
+    "id": "oc2-acid-strength-inorganic-range",
+    "type": "multiple-choice",
+    "prompt": "Common inorganic acids such as H2SO4, HNO3 and HCl have K_a values in what range?",
+    "choices": [
+      {
+        "text": "10^1 to 10^9",
+        "correct": true
+      },
+      {
+        "text": "10^−5 to 10^−15",
+        "why": "That is the range for most organic acids, which are much weaker."
+      },
+      {
+        "text": "10^−15 to 10^−60",
+        "why": "These tiny K_a values belong to the weakest acids, at the bottom of the full range."
+      },
+      {
+        "text": "Exactly 1",
+        "why": "These acids react almost completely with water, so their K_a's are greater than 1, from 10^1 to 10^9."
+      }
+    ],
+    "explanation": "The range of K_a values is enormous, from about 10^15 for the strongest acids to about 10^−60 for the weakest. Common inorganic acids such as H2SO4, HNO3 and HCl have K_a's of 10^1 to 10^9."
+  },
+  {
+    "id": "oc2-acid-strength-pka-definition",
+    "type": "multiple-choice",
+    "prompt": "How is pK_a defined?",
+    "choices": [
+      {
+        "text": "pK_a = −log K_a",
+        "correct": true
+      },
+      {
+        "text": "pK_a = log K_a",
+        "why": "The negative sign matters: without it a stronger acid would have a larger pK_a, but stronger acids have smaller pK_a's."
+      },
+      {
+        "text": "pK_a = 1/K_a",
+        "why": "pK_a is a logarithm, the negative common logarithm of K_a."
+      },
+      {
+        "text": "pK_a = −ln K_a",
+        "why": "pK_a uses the common (base-10) logarithm, not the natural logarithm."
+      }
+    ],
+    "explanation": "Acid strengths are normally expressed using pK_a values, where the pK_a is the negative common logarithm of the K_a: pK_a = −log K_a."
+  },
+  {
+    "id": "oc2-acid-strength-pka-from-ka-exact",
+    "type": "numeric",
+    "prompt": "An acid has K_a = 1.0 × 10^−5. What is its pK_a?",
+    "answer": 5.0,
+    "tolerance": 0.01,
+    "explanation": "pK_a = −log K_a = −log(1.0 × 10^−5) = 5.00."
+  },
+  {
+    "id": "oc2-acid-strength-pka-from-ka",
+    "type": "numeric",
+    "prompt": "An acid has K_a = 6.3 × 10^−5. What is its pK_a?",
+    "answer": 4.2,
+    "tolerance": 0.01,
+    "explanation": "pK_a = −log K_a = −log(6.3 × 10^−5) = 4.20. Its K_a is larger than acetic acid's, so its pK_a is a little smaller than acetic acid's 4.76."
+  },
+  {
+    "id": "oc2-acid-strength-stronger-pka",
+    "type": "multiple-choice",
+    "prompt": "Acid X has pK_a = 3 and acid Y has pK_a = 9. Which statement is correct?",
+    "choices": [
+      {
+        "text": "X is the stronger acid and has the larger K_a",
+        "correct": true
+      },
+      {
+        "text": "Y is the stronger acid because its pK_a is larger",
+        "why": "A stronger acid has a smaller pK_a. Because pK_a = −log K_a, a larger pK_a means a smaller K_a."
+      },
+      {
+        "text": "X is the stronger acid but has the smaller K_a",
+        "why": "A stronger acid has a larger K_a; a smaller pK_a goes with a larger K_a."
+      },
+      {
+        "text": "They have the same strength, since both pK_a's are positive",
+        "why": "Each unit of pK_a is a factor of 10 in K_a, so these acids differ a great deal."
+      }
+    ],
+    "explanation": "A stronger acid (larger K_a) has a smaller pK_a, and a weaker acid (smaller K_a) has a larger pK_a."
+  },
+  {
+    "id": "oc2-acid-strength-strongest-of-four",
+    "type": "multiple-choice",
+    "prompt": "According to Table 2.8.1, which of these is the strongest acid?",
+    "choices": [
+      {
+        "text": "Acetic acid, CH3CO2H (pK_a 4.76)",
+        "correct": true
+      },
+      {
+        "text": "Ethanol, CH3CH2OH (pK_a 16.00)",
+        "why": "Ethanol has the largest pK_a of the four, so it is the weakest acid."
+      },
+      {
+        "text": "Water, H2O (pK_a 14.00)",
+        "why": "Water's pK_a is much larger than acetic acid's, so it is a weaker acid."
+      },
+      {
+        "text": "Hydrocyanic acid, HCN (pK_a 9.31)",
+        "why": "HCN's pK_a is larger than acetic acid's, so it is the weaker acid."
+      }
+    ],
+    "explanation": "The stronger acid has the smaller pK_a. Table 2.8.1 gives 4.76 for acetic acid, 9.31 for HCN, 14.00 for water and 16.00 for ethanol, so acetic acid is the strongest of these."
+  },
+  {
+    "id": "oc2-acid-strength-phosphate-vs-hcn",
+    "type": "multiple-choice",
+    "prompt": "Table 2.8.1 gives pK_a = 7.21 for dihydrogen phosphate ion, H2PO4−, and pK_a = 9.31 for hydrocyanic acid, HCN. Which is the stronger acid?",
+    "choices": [
+      {
+        "text": "H2PO4−, because it has the smaller pK_a",
+        "correct": true
+      },
+      {
+        "text": "HCN, because it has the larger pK_a",
+        "why": "A larger pK_a means a smaller K_a, so HCN is the weaker acid."
+      },
+      {
+        "text": "HCN, because a negatively charged ion cannot be an acid",
+        "why": "Ions can donate H+ too. Table 2.8.1 lists H2PO4− as an acid with pK_a 7.21."
+      },
+      {
+        "text": "They are equally strong, since both are weak acids",
+        "why": "\"Strong\" and \"weak\" are relative. A pK_a difference of 2.10 means H2PO4−'s K_a is over 100 times larger."
+      }
+    ],
+    "explanation": "A stronger acid has a smaller pK_a. H2PO4− (pK_a 7.21) is a stronger acid than HCN (pK_a 9.31)."
+  },
+  {
+    "id": "oc2-acid-strength-water-vs-ethanol-factor",
+    "type": "numeric",
+    "prompt": "Table 2.8.1 gives pK_a = 14.00 for water and pK_a = 16.00 for ethanol. How many times larger is water's K_a than ethanol's?",
+    "answer": 100,
+    "tolerance": 0.01,
+    "explanation": "Each pK_a unit is a factor of 10 in K_a. The difference is 16.00 − 14.00 = 2.00, so water's K_a is 10^2.00 = 100 times larger: water is the stronger acid."
+  },
+  {
+    "id": "oc2-acid-strength-phosphoric-vs-acetic-factor",
+    "type": "numeric",
+    "prompt": "Table 2.8.1 gives pK_a = 2.16 for phosphoric acid, H3PO4, and pK_a = 4.76 for acetic acid. How many times larger is the K_a of phosphoric acid?",
+    "answer": 398,
+    "tolerance": 0.03,
+    "explanation": "The pK_a's differ by 4.76 − 2.16 = 2.60, and each pK_a unit is a factor of 10 in K_a, so phosphoric acid's K_a is 10^2.60 ≈ 398 times larger (about 400)."
+  },
+  {
+    "id": "oc2-acid-strength-hcl-ka-exponent",
+    "type": "numeric",
+    "prompt": "Table 2.8.1 gives pK_a = −7.0 for HCl. Its K_a is 10^x. What is x?",
+    "answer": 7,
+    "tolerance": 0.01,
+    "explanation": "Since pK_a = −log K_a, K_a = 10^−pK_a = 10^7. A negative pK_a means K_a is greater than 1: HCl reacts almost completely with water."
+  },
+  {
+    "id": "oc2-acid-strength-water-pka",
+    "type": "numeric",
+    "prompt": "What pK_a does Table 2.8.1 give for water?",
+    "answer": 14.0,
+    "tolerance": 0.01,
+    "explanation": "Table 2.8.1 gives water a pK_a of 14.00. It comes from the self-ionization H2O + H2O ⇌ H3O+ + OH−, with K_w = [H3O+][OH−]; water, the solvent, has activity 1 and does not appear in the expression."
+  },
+  {
+    "id": "oc2-acid-strength-chloride-weak-base",
+    "type": "multiple-choice",
+    "prompt": "HCl is a strong acid. What does this mean for its conjugate base, Cl−?",
+    "choices": [
+      {
+        "text": "Cl− holds H+ weakly, so it is a weak base",
+        "correct": true
+      },
+      {
+        "text": "Cl− holds H+ tightly, so it is a strong base",
+        "why": "If Cl− held H+ tightly, HCl would give up its proton with difficulty and be a weak acid."
+      },
+      {
+        "text": "Cl− is also a strong acid",
+        "why": "Cl− has no proton to donate. It is the conjugate base, and a strong acid has a weak conjugate base."
+      },
+      {
+        "text": "An acid's strength tells you nothing about its conjugate base",
+        "why": "There is an inverse relationship: a strong acid has a weak conjugate base, and a weak acid has a strong conjugate base."
+      }
+    ],
+    "explanation": "A strong acid loses H+ easily, meaning that its conjugate base holds the H+ weakly and is therefore a weak base. HCl is a strong acid, so Cl− does not hold H+ tightly and is a weak base."
+  },
+  {
+    "id": "oc2-acid-strength-strongest-conjugate-base",
+    "type": "multiple-choice",
+    "prompt": "Using Table 2.8.1, which of these conjugate bases is the strongest base?",
+    "choices": [
+      {
+        "text": "Ethoxide ion, CH3CH2O− (from ethanol, pK_a 16.00)",
+        "correct": true
+      },
+      {
+        "text": "Chloride ion, Cl− (from HCl, pK_a −7.0)",
+        "why": "HCl is the strongest acid in the table, so Cl− is the weakest base."
+      },
+      {
+        "text": "Acetate ion, CH3CO2− (from acetic acid, pK_a 4.76)",
+        "why": "Acetic acid is a much stronger acid than ethanol, so acetate is a weaker base than ethoxide."
+      },
+      {
+        "text": "Nitrate ion, NO3− (from HNO3, pK_a −1.3)",
+        "why": "HNO3 is a strong acid, so its conjugate base is a weak base."
+      }
+    ],
+    "explanation": "A weak acid has a strong conjugate base, because the conjugate base holds the proton tightly. Ethanol has the largest pK_a in Table 2.8.1 (16.00), making it the weakest acid, so ethoxide is the strongest of these bases."
+  },
+  {
+    "id": "oc2-acid-strength-phosphate-conjugate-base",
+    "type": "multiple-choice",
+    "prompt": "Table 2.8.1 lists dihydrogen phosphate ion, H2PO4−, both as an acid and as a conjugate base. What is the conjugate base of H2PO4−?",
+    "choices": [
+      {
+        "text": "HPO4^2−, hydrogen phosphate ion",
+        "correct": true
+      },
+      {
+        "text": "H3PO4, phosphoric acid",
+        "why": "H3PO4 is the conjugate acid of H2PO4−: adding H+ to H2PO4− gives H3PO4."
+      },
+      {
+        "text": "HPO4−",
+        "why": "Removing H+ also removes a positive charge, so the charge goes from 1− to 2−."
+      },
+      {
+        "text": "PO4^3−",
+        "why": "That would mean losing two protons. A conjugate base differs from its acid by one H+."
+      }
+    ],
+    "explanation": "In Table 2.8.1, H2PO4− (pK_a 7.21) donates H+ to give hydrogen phosphate ion, HPO4^2−. It also appears as the conjugate base of phosphoric acid, H3PO4 (pK_a 2.16)."
+  }
+]

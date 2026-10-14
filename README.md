@@ -20,7 +20,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Eval question set | **270 questions** for the current books: 183 answerable, 87 `unanswerable` (see [Evals](#evals)) — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
-| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do; none yet for *Organic Chemistry*), of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
+| Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do), and for chapters 1–6 of *Organic Chemistry*, of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
 | Grounded answer generation | Not started |
 | Abstention (similarity floor) | Not started |
 | PubChem compound facts | Not started |

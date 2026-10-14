@@ -1,0 +1,273 @@
+[
+  {
+    "id": "oc2-dipole-molecular-polarity",
+    "type": "multiple-choice",
+    "prompt": "What determines the overall polarity of a molecule?",
+    "choices": [
+      {
+        "text": "The vector sum of all the individual bond polarities and lone-pair contributions",
+        "correct": true
+      },
+      {
+        "text": "The polarity of its single most polar bond",
+        "why": "Every bond and lone pair contributes; a polar bond can be cancelled by others, as in CO2."
+      },
+      {
+        "text": "The simple total of its bond polarities, ignoring direction",
+        "why": "Bond polarities add as vectors, so their directions matter. Symmetrical molecules like CH4 have polar bonds but no net polarity."
+      },
+      {
+        "text": "The number of atoms in the molecule",
+        "why": "Size doesn't decide polarity: ethane, CH3CH3, has a zero dipole moment, while smaller water has a large one (1.85 D)."
+      }
+    ],
+    "explanation": "Molecular polarity results from the vector summation of all individual bond polarities and lone-pair contributions in the molecule."
+  },
+  {
+    "id": "oc2-dipole-charge-centers",
+    "type": "multiple-choice",
+    "prompt": "In terms of charge centers, when does a molecule have a net polarity?",
+    "choices": [
+      {
+        "text": "When the center of mass of its positive charges (nuclei) and the center of mass of its negative charges (electrons) don't coincide",
+        "correct": true
+      },
+      {
+        "text": "When it has more electrons than protons",
+        "why": "That would make it a negative ion. A neutral molecule can still be polar if its charge centers are separated."
+      },
+      {
+        "text": "When its positive and negative charge centers coincide",
+        "why": "If the centers coincide, there is no net polarity."
+      },
+      {
+        "text": "Whenever it contains any polar bond",
+        "why": "Polar bonds can cancel by symmetry, as in CO2, so their charge centers coincide."
+      }
+    ],
+    "explanation": "Imagine a center of mass of all positive charges (nuclei) and a center of mass of all negative charges (electrons). If these two centers don't coincide, the molecule has a net polarity, measured by its dipole moment."
+  },
+  {
+    "id": "oc2-dipole-solubility",
+    "type": "multiple-choice",
+    "prompt": "As a practical matter, which substances tend to be soluble in water?",
+    "choices": [
+      {
+        "text": "Strongly polar substances",
+        "correct": true
+      },
+      {
+        "text": "Nonpolar substances",
+        "why": "Less polar substances are generally insoluble in water."
+      },
+      {
+        "text": "Only ionic substances",
+        "why": "Strongly polar molecular substances are often soluble too; water is a polar solvent."
+      },
+      {
+        "text": "Substances with zero dipole moment",
+        "why": "A zero dipole moment means a nonpolar molecule, which tends to be insoluble in water."
+      }
+    ],
+    "explanation": "Strongly polar substances are often soluble in polar solvents like water, whereas less polar substances are insoluble in water."
+  },
+  {
+    "id": "oc2-dipole-definition",
+    "type": "multiple-choice",
+    "prompt": "How is the dipole moment, μ, defined?",
+    "choices": [
+      {
+        "text": "μ = Q × r, the charge at either end of the dipole times the distance between the charges",
+        "correct": true
+      },
+      {
+        "text": "μ = Q / r",
+        "why": "The dipole moment grows with the separation: it is the charge times the distance, not divided by it."
+      },
+      {
+        "text": "The electronegativity difference between the two most different atoms",
+        "why": "Electronegativity differences cause bond polarity, but the dipole moment is a charge times a distance, measured in debyes."
+      },
+      {
+        "text": "The total number of lone pairs in the molecule",
+        "why": "Lone pairs contribute to the dipole moment, but μ is defined as Q × r."
+      }
+    ],
+    "explanation": "The dipole moment μ is the magnitude of the charge Q at either end of the molecular dipole times the distance r between the charges: μ = Q × r. It is expressed in debyes (D)."
+  },
+  {
+    "id": "oc2-dipole-debye-si",
+    "type": "numeric",
+    "prompt": "1 D = ? × 10^−30 C·m. What is the missing number?",
+    "answer": 3.336,
+    "explanation": "Dipole moments are expressed in debyes (D), where 1 D = 3.336 × 10^−30 coulomb meters (C·m) in SI units."
+  },
+  {
+    "id": "oc2-dipole-unit-charges-100pm",
+    "type": "numeric",
+    "prompt": "One positive and one negative unit charge (1.60 × 10^−19 C each) are 100 pm apart. What is the dipole moment, in debyes? (1 D = 3.336 × 10^−30 C·m)",
+    "answer": 4.80,
+    "unit": "D",
+    "explanation": "μ = Q × r = (1.60 × 10^−19 C)(100 × 10^−12 m) = 1.60 × 10^−29 C·m. Dividing by 3.336 × 10^−30 C·m per debye gives 4.80 D."
+  },
+  {
+    "id": "oc2-dipole-largest",
+    "type": "multiple-choice",
+    "prompt": "Of the compounds in Table 2.2.1, which has the largest dipole moment?",
+    "choices": [
+      {
+        "text": "NaCl",
+        "correct": true
+      },
+      {
+        "text": "CH2O",
+        "why": "Formaldehyde (2.33 D) has the largest dipole of the covalent molecules in the table, but NaCl (9.00 D) is far larger."
+      },
+      {
+        "text": "H2O",
+        "why": "Water's dipole moment (1.85 D) is substantial but much smaller than that of ionic NaCl."
+      },
+      {
+        "text": "CO2",
+        "why": "CO2 is symmetrical, so its dipole moment is 0."
+      }
+    ],
+    "explanation": "Table 2.2.1: sodium chloride has the largest dipole moment, 9.00 D, because it is ionic."
+  },
+  {
+    "id": "oc2-dipole-water-value",
+    "type": "numeric",
+    "prompt": "What is the dipole moment of water, in debyes (Table 2.2.1)?",
+    "answer": 1.85,
+    "unit": "D",
+    "explanation": "Water has μ = 1.85 D, a substantial dipole moment, because oxygen is strongly electronegative and has lone-pair electrons."
+  },
+  {
+    "id": "oc2-dipole-ammonia-value",
+    "type": "numeric",
+    "prompt": "What is the dipole moment of ammonia, NH3, in debyes (Table 2.2.1)?",
+    "answer": 1.47,
+    "unit": "D",
+    "explanation": "Ammonia has μ = 1.47 D. Nitrogen is strongly electronegative and carries a lone pair, which makes a large contribution to the dipole moment."
+  },
+  {
+    "id": "oc2-dipole-order-small",
+    "type": "multiple-choice",
+    "prompt": "Which list puts water, methanol, and ammonia in order of increasing dipole moment?",
+    "choices": [
+      {
+        "text": "NH3 < CH3OH < H2O",
+        "correct": true
+      },
+      {
+        "text": "H2O < CH3OH < NH3",
+        "why": "That is decreasing order: water is largest (1.85 D) and ammonia smallest (1.47 D)."
+      },
+      {
+        "text": "CH3OH < NH3 < H2O",
+        "why": "Methanol (1.70 D) is larger than ammonia (1.47 D)."
+      },
+      {
+        "text": "All three are zero",
+        "why": "All three have substantial dipole moments, thanks to electronegative O or N atoms with lone pairs."
+      }
+    ],
+    "explanation": "Table 2.2.1 gives water 1.85 D, methanol 1.70 D, and ammonia 1.47 D."
+  },
+  {
+    "id": "oc2-dipole-lone-pairs",
+    "type": "multiple-choice",
+    "prompt": "Why do small molecules like water, methanol, and ammonia have substantial dipole moments?",
+    "choices": [
+      {
+        "text": "They contain strongly electronegative atoms (O or N), and those atoms have lone pairs that stick out away from the nuclei",
+        "correct": true
+      },
+      {
+        "text": "They are ionic",
+        "why": "These are covalent molecules. NaCl, which is ionic, has a much larger dipole moment (9.00 D)."
+      },
+      {
+        "text": "They have symmetrical structures",
+        "why": "Symmetry makes bond polarities cancel, giving zero dipole moments, as in CO2 and CH4."
+      },
+      {
+        "text": "Only because their O–H and N–H bonds are polar",
+        "why": "Polar bonds are part of it, but the lone pairs on O and N also make a large contribution."
+      }
+    ],
+    "explanation": "Water, methanol, and ammonia contain strongly electronegative atoms (oxygen and nitrogen), and all three have lone-pair electrons. The lone pairs stick out into space away from the positively charged nuclei, giving a considerable charge separation and a large contribution to the dipole moment."
+  },
+  {
+    "id": "oc2-dipole-zero-which",
+    "type": "multiple-choice",
+    "prompt": "Which of these molecules has a dipole moment of zero?",
+    "choices": [
+      {
+        "text": "Carbon dioxide, CO2",
+        "correct": true
+      },
+      {
+        "text": "Water, H2O",
+        "why": "Water has μ = 1.85 D; its polar bonds and lone pairs don't cancel."
+      },
+      {
+        "text": "Chloromethane, CH3Cl",
+        "why": "Chloromethane has μ = 1.87 D (Table 2.2.1)."
+      },
+      {
+        "text": "Methylamine, CH3NH2",
+        "why": "Methylamine has μ = 1.31 D; its dipole points toward the nitrogen lone pair."
+      }
+    ],
+    "explanation": "Carbon dioxide, methane, ethane, and benzene all have zero dipole moments: their symmetrical structures make the individual bond polarities and lone-pair contributions exactly cancel."
+  },
+  {
+    "id": "oc2-dipole-why-zero",
+    "type": "multiple-choice",
+    "prompt": "Why does carbon dioxide have a zero dipole moment?",
+    "choices": [
+      {
+        "text": "Its symmetrical structure makes the individual bond polarities and lone-pair contributions exactly cancel",
+        "correct": true
+      },
+      {
+        "text": "Its C=O bonds are nonpolar",
+        "why": "Oxygen (EN 3.5) is much more electronegative than carbon (2.5), so each C=O bond is polar; they cancel."
+      },
+      {
+        "text": "It has no lone pairs",
+        "why": "The oxygens in CO2 do have lone pairs; their contributions cancel along with the bond polarities."
+      },
+      {
+        "text": "It is a gas",
+        "why": "Physical state isn't what decides it; the symmetry of the molecule is."
+      }
+    ],
+    "explanation": "Molecules such as carbon dioxide, methane, ethane, and benzene have zero dipole moments because, with their symmetrical structures, the individual bond polarities and lone-pair contributions exactly cancel."
+  },
+  {
+    "id": "oc2-dipole-methylamine-direction",
+    "type": "multiple-choice",
+    "prompt": "In which direction does the dipole moment of methylamine, CH3NH2 (μ = 1.31 D), point?",
+    "choices": [
+      {
+        "text": "Generally from the –CH3 group toward the lone pair on nitrogen",
+        "correct": true
+      },
+      {
+        "text": "From the nitrogen toward the –CH3 group",
+        "why": "Electron density is displaced toward the electronegative nitrogen and its lone pair, not away from them."
+      },
+      {
+        "text": "From the N–H hydrogens toward the carbon",
+        "why": "The electron-rich end is the nitrogen with its lone pair, not the carbon."
+      },
+      {
+        "text": "It has no direction, because methylamine has no dipole moment",
+        "why": "Methylamine has μ = 1.31 D (Table 2.2.1)."
+      }
+    ],
+    "explanation": "To predict a dipole's direction, look for lone pairs and atoms with electronegativity substantially different from carbon's. Methylamine has an electronegative nitrogen with a lone pair, so its dipole moment points generally from –CH3 toward the lone pair (Worked Example 2.2.1)."
+  }
+]

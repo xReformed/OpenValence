@@ -1,0 +1,390 @@
+[
+  {
+    "id": "oc4-naming-general-formula",
+    "type": "multiple-choice",
+    "prompt": "What is the general formula of a cycloalkane with n carbon atoms in its ring?",
+    "choices": [
+      {
+        "text": "CnH2n",
+        "correct": true
+      },
+      {
+        "text": "CnH2n+2",
+        "why": "That is the formula of an open-chain alkane. A cycloalkane has no chain ends; it is a ring of −CH2− units, so it has exactly two hydrogens per carbon."
+      },
+      {
+        "text": "CnHn",
+        "why": "Each ring carbon in a cycloalkane is a −CH2− unit with two hydrogens, not one."
+      },
+      {
+        "text": "CnH2n−2",
+        "why": "Cycloalkanes are saturated rings of −CH2− units, so the formula is (CH2)n, with two hydrogens for every carbon."
+      }
+    ],
+    "explanation": "Cycloalkanes consist of rings of −CH2− units, so they have the general formula (CH2)n, or CnH2n. Cyclohexane, for example, is C6H12."
+  },
+  {
+    "id": "oc4-naming-alicyclic",
+    "type": "multiple-choice",
+    "prompt": "Saturated cyclic hydrocarbons are called cycloalkanes. What other name does the section give them?",
+    "choices": [
+      {
+        "text": "Alicyclic compounds",
+        "correct": true
+      },
+      {
+        "text": "Alkyl groups",
+        "why": "Alkyl groups are substituents attached to a parent, such as the methyl in methylcyclopentane, not whole cyclic molecules."
+      },
+      {
+        "text": "Unsaturated hydrocarbons",
+        "why": "Cycloalkanes are saturated: every ring carbon is a −CH2− unit joined by single bonds."
+      },
+      {
+        "text": "Cycloalkyl groups",
+        "why": "A cycloalkyl group is a ring used as a substituent, as in 1-cyclopropylbutane, not the name for the compounds themselves."
+      }
+    ],
+    "explanation": "Saturated cyclic hydrocarbons are called cycloalkanes, or alicyclic compounds (aliphatic cyclic)."
+  },
+  {
+    "id": "oc4-naming-hydrogen-count",
+    "type": "numeric",
+    "prompt": "How many hydrogen atoms are in one molecule of ethylcyclopentane?",
+    "answer": 14,
+    "explanation": "The ring has four −CH2− units (8 H) and one CH carrying the ethyl group (1 H); the ethyl group −CH2CH3 has 5 H. 8 + 1 + 5 = 14, so the formula is C7H14, which fits CnH2n."
+  },
+  {
+    "id": "oc4-naming-chain-parent",
+    "type": "multiple-choice",
+    "prompt": "A cyclopropane ring is attached to the end carbon of an unbranched five-carbon chain. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1-cyclopropylpentane",
+        "correct": true
+      },
+      {
+        "text": "Pentylcyclopropane",
+        "why": "The ring is the parent only if it has at least as many carbons as the largest substituent. Here the chain (5 C) is larger than the ring (3 C), so the chain is the parent."
+      },
+      {
+        "text": "5-cyclopropylpentane",
+        "why": "Right parent, but numbered from the wrong end. Number the chain from the end nearer the substituent, which gives 1."
+      },
+      {
+        "text": "1-cyclopropylhexane",
+        "why": "The ring carbon at the attachment point belongs to the cyclopropyl group, not to the chain. The chain has five carbons, so the parent is pentane."
+      }
+    ],
+    "explanation": "Step 1: compare the ring (3 carbons) with the largest substituent (5 carbons). Because the substituent has more carbons than the ring, the compound is named as a cycloalkyl-substituted alkane: a pentane with a cyclopropyl group on C1."
+  },
+  {
+    "id": "oc4-naming-ring-wins-tie",
+    "type": "multiple-choice",
+    "prompt": "A compound has a ring and an attached chain with the same number of carbon atoms. How is it named?",
+    "choices": [
+      {
+        "text": "As an alkyl-substituted cycloalkane",
+        "correct": true
+      },
+      {
+        "text": "As a cycloalkyl-substituted alkane",
+        "why": "The chain becomes the parent only when the largest substituent has more carbons than the ring. A tie goes to the ring."
+      },
+      {
+        "text": "Either way; both names are acceptable",
+        "why": "Step 1 decides the parent: the ring wins if its carbon count is equal to or greater than the substituent's."
+      },
+      {
+        "text": "By whichever part has more branch points",
+        "why": "Branch points break ties between open chains of equal length. For a ring and a substituent, Step 1 compares only carbon counts, and the ring wins a tie."
+      }
+    ],
+    "explanation": "Step 1: if the number of carbon atoms in the ring is equal to or greater than the number in the largest substituent, the compound is named as an alkyl-substituted cycloalkane. A cyclopentane ring carrying an unbranched five-carbon chain is pentylcyclopentane."
+  },
+  {
+    "id": "oc4-naming-chain-min-carbons",
+    "type": "numeric",
+    "prompt": "A cyclohexane ring carries one carbon substituent. What is the smallest number of carbon atoms that substituent can have for the compound to be named as a cyclohexyl-substituted alkane?",
+    "answer": 7,
+    "explanation": "Step 1: the compound is named as a cycloalkyl-substituted alkane only if the largest substituent has more carbons than the ring. The ring has 6, so the substituent needs at least 7. With 6 or fewer, the ring is the parent."
+  },
+  {
+    "id": "oc4-naming-chain-locant",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentane ring is attached to the second carbon of an unbranched seven-carbon chain. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "2-cyclopentylheptane",
+        "correct": true
+      },
+      {
+        "text": "(1-methylhexyl)cyclopentane",
+        "why": "This makes the ring the parent, but the chain has seven carbons and the ring only five. When the substituent has more carbons than the ring, the chain is the parent."
+      },
+      {
+        "text": "6-cyclopentylheptane",
+        "why": "Right parent, but numbered from the wrong end. Number from the end nearer the substituent, which gives 2."
+      },
+      {
+        "text": "1-cyclopentyl-1-methylhexane",
+        "why": "This six-carbon chain is not the longest. The methyl group continues the chain, so the parent has seven carbons."
+      }
+    ],
+    "explanation": "Step 1: the chain (7 C) has more carbons than the ring (5 C), so the compound is a cycloalkyl-substituted alkane. Named by the open-chain rules, the parent is heptane, numbered from the end nearer the substituent: 2-cyclopentylheptane."
+  },
+  {
+    "id": "oc4-naming-branched-substituent-parent",
+    "type": "multiple-choice",
+    "prompt": "A cyclobutane ring carries a −CH2CH(CH3)CH3 group. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "(2-methylpropyl)cyclobutane",
+        "correct": true
+      },
+      {
+        "text": "1-cyclobutyl-2-methylpropane",
+        "why": "The substituent has four carbons, the same as the ring. When the ring has equal or more carbons, the ring is the parent."
+      },
+      {
+        "text": "Butylcyclobutane",
+        "why": "A butyl group is an unbranched four-carbon chain. This group has a methyl branch on its second carbon."
+      },
+      {
+        "text": "(1-methylpropyl)cyclobutane",
+        "why": "That group has the methyl on the attachment carbon, C1 (a sec-butyl group). Here the methyl is on C2, counting from the attachment point."
+      }
+    ],
+    "explanation": "Step 1: the ring has 4 carbons and the substituent has 4, so the compound is named as an alkyl-substituted cyclobutane. The substituent is named from its attachment point: a three-carbon propyl chain with a methyl on C2, 2-methylpropyl (like the section's (1-methylpropyl)cyclobutane example)."
+  },
+  {
+    "id": "oc4-naming-start-numbering",
+    "type": "multiple-choice",
+    "prompt": "How do you number the ring of a cycloalkane with two or more substituents?",
+    "choices": [
+      {
+        "text": "Make a substituted carbon C1, and go around so the second substituent gets as low a number as possible",
+        "correct": true
+      },
+      {
+        "text": "Start at any ring carbon and number clockwise",
+        "why": "C1 must be a point of attachment, and the direction is chosen to give low numbers, not fixed as clockwise."
+      },
+      {
+        "text": "Always give C1 to the largest substituent",
+        "why": "Size doesn't decide numbering. Low numbers come first; if a tie remains, alphabetical order decides."
+      },
+      {
+        "text": "Always give C1 to the substituent that comes first alphabetically",
+        "why": "Alphabetical order only breaks a tie, when the groups could take the same numbers. Low numbers for the substituents come first."
+      }
+    ],
+    "explanation": "Step 2: choose a point of attachment as carbon 1 and number the substituents on the ring so that the second substituent has as low a number as possible. If ambiguity still exists, look at the third or fourth substituent, and only then use alphabetical priority (Substep 2a)."
+  },
+  {
+    "id": "oc4-naming-shorter-path",
+    "type": "multiple-choice",
+    "prompt": "A cyclooctane ring carries two ethyl groups. Going the shorter way around the ring, two ring carbons lie between the substituted carbons. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1,4-diethylcyclooctane",
+        "correct": true
+      },
+      {
+        "text": "1,6-diethylcyclooctane",
+        "why": "This numbers the long way around the ring. Go the direction that gives the second substituent the lowest number: 4, not 6."
+      },
+      {
+        "text": "1,4-ethylcyclooctane",
+        "why": "Two identical substituents need the multiplier prefix di-."
+      },
+      {
+        "text": "1,4-diethyloctane",
+        "why": "The parent is a ring, so its name needs the prefix cyclo-. Octane is an open chain."
+      }
+    ],
+    "explanation": "Step 2: make one substituted carbon C1 and number toward the other along the shorter path. With two carbons in between, the second ethyl is on C4; the other way it would be on C6. The name is 1,4-diethylcyclooctane."
+  },
+  {
+    "id": "oc4-naming-fix-numbering",
+    "type": "multiple-choice",
+    "prompt": "A student names a compound 1,6-dimethylcycloheptane. What is the correct name of the compound the student drew?",
+    "choices": [
+      {
+        "text": "1,3-dimethylcycloheptane",
+        "correct": true
+      },
+      {
+        "text": "1,6-dimethylcycloheptane; the name is already correct",
+        "why": "The structure is right, but the numbering went the long way around. Numbering in the other direction gives the second methyl the number 3."
+      },
+      {
+        "text": "2,7-dimethylcycloheptane",
+        "why": "C1 must be a carbon that carries a substituent."
+      },
+      {
+        "text": "1,3-dimethylheptane",
+        "why": "The parent is still a seven-carbon ring, so the name keeps cyclo-. Only the numbering changes."
+      }
+    ],
+    "explanation": "In a seven-membered ring, C1 and C6 are separated by just one carbon (C7) going the other way. Step 2: number so the second substituent is as low as possible. Starting at one methyl and going through C7 puts the other methyl on C3: 1,3-dimethylcycloheptane."
+  },
+  {
+    "id": "oc4-naming-same-carbon",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexane ring has two methyl groups on one carbon and an ethyl group on the next carbon. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "2-ethyl-1,1-dimethylcyclohexane",
+        "correct": true
+      },
+      {
+        "text": "1-ethyl-2,2-dimethylcyclohexane",
+        "why": "Alphabetical priority only breaks a tie. Starting at the methyl-bearing carbon gives 1,1,2; starting at the ethyl gives 1,2,2. The second substituent is lower (1 vs 2) the first way."
+      },
+      {
+        "text": "1,1-dimethyl-2-ethylcyclohexane",
+        "why": "Substituents are cited alphabetically, ignoring prefixes such as di-. Ethyl (e) comes before methyl (m)."
+      },
+      {
+        "text": "2-ethyl-1-dimethylcyclohexane",
+        "why": "Each methyl needs its own locant, even on the same carbon: 1,1-dimethyl."
+      }
+    ],
+    "explanation": "Step 2: number so the second substituent has as low a number as possible. Making the carbon with both methyls C1 puts the substituents at 1, 1 and 2, which beats 1, 2, 2. The ethyl group is cited first because the di- prefix is ignored when alphabetizing."
+  },
+  {
+    "id": "oc4-naming-first-difference",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexane ring has methyl groups on two adjacent carbons and an ethyl group on the carbon two positions away from one of the methyls (one ring carbon in between). What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "4-ethyl-1,2-dimethylcyclohexane",
+        "correct": true
+      },
+      {
+        "text": "1-ethyl-3,4-dimethylcyclohexane",
+        "why": "Giving C1 to the ethyl group because it comes first alphabetically gives 1,3,4. But 1,2,4 has a lower second number, and low numbers take priority over alphabetical order."
+      },
+      {
+        "text": "5-ethyl-1,2-dimethylcyclohexane",
+        "why": "The methyls are at 1 and 2 either way, so look at the third substituent: numbering in the other direction gives the ethyl 4 rather than 5."
+      },
+      {
+        "text": "1,2-dimethyl-4-ethylcyclohexane",
+        "why": "Substituents are cited alphabetically, ignoring di-. Ethyl (e) comes before methyl (m)."
+      }
+    ],
+    "explanation": "Step 2: number so the second substituent is as low as possible, then the third, until a point of difference is found. Starting at a methyl and going toward the other methyl gives 1, 2, then the ethyl at 4. Every other numbering has a higher second or third number."
+  },
+  {
+    "id": "oc4-naming-alphabetical-tiebreak",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexane ring has an ethyl group and a propyl group on adjacent carbons. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1-ethyl-2-propylcyclohexane",
+        "correct": true
+      },
+      {
+        "text": "2-ethyl-1-propylcyclohexane",
+        "why": "Both groups could take numbers 1 and 2, so alphabetical priority decides: ethyl (e) gets C1, not the larger propyl group."
+      },
+      {
+        "text": "1-propyl-2-ethylcyclohexane",
+        "why": "Substituents are cited in alphabetical order, so ethyl comes before propyl."
+      },
+      {
+        "text": "1-ethyl-6-propylcyclohexane",
+        "why": "Numbered the long way around the ring. Go toward the propyl group so it gets 2."
+      }
+    ],
+    "explanation": "Either group could be C1 with the other at C2. Substep 2a: when different alkyl groups could take the same numbers, number them by alphabetical priority. Ethyl comes before propyl, so ethyl gets C1."
+  },
+  {
+    "id": "oc4-naming-halogen-like-alkyl",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexane ring has a fluorine and an ethyl group, with one ring carbon between them. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1-ethyl-3-fluorocyclohexane",
+        "correct": true
+      },
+      {
+        "text": "3-ethyl-1-fluorocyclohexane",
+        "why": "A halogen does not automatically get C1. Halogens are treated just like alkyl groups, so alphabetical priority decides: ethyl (e) before fluoro (f)."
+      },
+      {
+        "text": "1-fluoro-3-ethylcyclohexane",
+        "why": "Halogen prefixes are alphabetized with the alkyl groups, so ethyl is cited before fluoro."
+      },
+      {
+        "text": "1-ethyl-5-fluorocyclohexane",
+        "why": "Numbered the long way around the ring. Going the other direction gives fluorine 3."
+      }
+    ],
+    "explanation": "Substep 2b: if halogens are present, treat them just like alkyl groups. Both substituents could take 1 and 3, so Substep 2a's alphabetical priority gives ethyl C1 and fluoro C3."
+  },
+  {
+    "id": "oc4-naming-halogen-alphabetical",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentane ring has a chlorine, a methyl group and a second methyl group on three consecutive carbons, in that order. What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1-chloro-2,3-dimethylcyclopentane",
+        "correct": true
+      },
+      {
+        "text": "3-chloro-1,2-dimethylcyclopentane",
+        "why": "Both numberings give 1,2,3, so alphabetical priority decides. Chloro (c) comes before methyl (m); having two methyls doesn't give them priority."
+      },
+      {
+        "text": "2,3-dimethyl-1-chlorocyclopentane",
+        "why": "Substituents are cited alphabetically, ignoring di-. Chloro comes before methyl."
+      },
+      {
+        "text": "1-chloro-4,5-dimethylcyclopentane",
+        "why": "Numbered the long way around the ring. Go from the chlorine toward the methyls, so they get 2 and 3."
+      }
+    ],
+    "explanation": "Starting at either end of the three substituents gives locants 1, 2, 3. Substeps 2a and 2b: a halogen is treated like an alkyl group, and the tie is broken by alphabetical priority, ignoring di-. Chloro comes before methyl, so chlorine gets C1."
+  },
+  {
+    "id": "oc4-naming-three-alternating",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexane ring has an ethyl, a methyl and a propyl group on alternating carbons (one ring carbon between each pair). What is the IUPAC name?",
+    "choices": [
+      {
+        "text": "1-ethyl-3-methyl-5-propylcyclohexane",
+        "correct": true
+      },
+      {
+        "text": "1-ethyl-5-methyl-3-propylcyclohexane",
+        "why": "Ethyl gets C1, but the direction still follows alphabetical priority: methyl comes next alphabetically, so it gets the lower remaining number, 3."
+      },
+      {
+        "text": "3-ethyl-1-methyl-5-propylcyclohexane",
+        "why": "Every numbering gives 1,3,5, so alphabetical priority decides C1. Ethyl (e) comes before methyl (m), not the smallest group first."
+      },
+      {
+        "text": "1-methyl-3-ethyl-5-propylcyclohexane",
+        "why": "This both numbers and cites the groups out of alphabetical order. Ethyl comes first and gets C1."
+      }
+    ],
+    "explanation": "Any numbering puts the groups at 1, 3 and 5, so the locants never differ. Substep 2a: number by alphabetical priority. Ethyl gets C1, then go toward methyl so it gets 3, leaving propyl at 5."
+  },
+  {
+    "id": "oc4-naming-locant-numeric",
+    "type": "numeric",
+    "prompt": "A cyclononane ring carries an ethyl group and a methyl group. Going the shorter way around the ring, three ring carbons lie between the substituted carbons. In the IUPAC name, what locant does the methyl group get?",
+    "answer": 5,
+    "explanation": "Both groups could take the same pair of numbers, so Substep 2a gives C1 to ethyl (e before m). Step 2: number toward the methyl along the shorter path: C2, C3 and C4 lie between, so the methyl is on C5 (the long way it would be C6). The name is 1-ethyl-5-methylcyclononane."
+  },
+  {
+    "id": "oc4-naming-carbon-count",
+    "type": "numeric",
+    "prompt": "How many carbon atoms are in one molecule of 1,3-diethyl-5-methylcyclohexane?",
+    "answer": 11,
+    "explanation": "The parent cyclohexane is a six-carbon ring. The prefixes add two ethyl groups (2 carbons each) and one methyl group (1 carbon): 6 + 4 + 1 = 11."
+  }
+]

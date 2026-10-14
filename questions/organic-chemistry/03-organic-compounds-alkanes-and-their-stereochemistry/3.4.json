@@ -1,0 +1,373 @@
+[
+  {
+    "id": "oc3-naming-name-parts",
+    "type": "multiple-choice",
+    "prompt": "In an IUPAC name, which part identifies the main part of the molecule and tells how many carbon atoms are in it?",
+    "choices": [
+      {
+        "text": "The parent",
+        "correct": true
+      },
+      {
+        "text": "The prefix",
+        "why": "Prefixes identify the substituent groups attached to the parent, not the main chain."
+      },
+      {
+        "text": "The locant",
+        "why": "Locants are the numbers that give the positions of the substituents."
+      },
+      {
+        "text": "The suffix",
+        "why": "The suffix identifies the primary functional group attached to the parent."
+      }
+    ],
+    "explanation": "An IUPAC name has four parts. The parent names the main part of the molecule and tells how many carbons it has; prefixes identify the substituents, locants give their positions, and the suffix identifies the primary functional group."
+  },
+  {
+    "id": "oc3-naming-turn-corners",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH(CH2CH2CH2CH3)CH2CH3?",
+    "choices": [
+      {
+        "text": "3-methylheptane",
+        "correct": true
+      },
+      {
+        "text": "2-butylbutane",
+        "why": "This takes the chain as it is written. The longest chain runs through the butyl group, so you have to turn a corner to see all seven carbons."
+      },
+      {
+        "text": "2-ethylhexane",
+        "why": "This chain has only six carbons. Going from the butyl group through the CH to the ethyl group gives seven."
+      },
+      {
+        "text": "5-methylheptane",
+        "why": "Right parent, but numbered from the wrong end. Start at the end nearer the branch, which puts the methyl on C3."
+      }
+    ],
+    "explanation": "Step 1: the longest continuous chain runs from the end of the butyl group, through the CH, to the end of the ethyl group: 4 + 1 + 2 = 7 carbons, so the parent is heptane. Step 2: numbering from the end nearer the branch puts the methyl group on C3."
+  },
+  {
+    "id": "oc3-naming-parent-length",
+    "type": "numeric",
+    "prompt": "How many carbon atoms are in the parent chain of CH3CH2CH2CH(CH2CH2CH3)CH2CH2CH2CH2CH3?",
+    "answer": 9,
+    "explanation": "Step 1: find the longest continuous chain. The CH carries a propyl group (3 C), another propyl group (3 C) and a pentyl group (5 C). The longest chain joins the pentyl group, the CH and one propyl group: 5 + 1 + 3 = 9 carbons, a nonane. The compound is 4-propylnonane."
+  },
+  {
+    "id": "oc3-naming-more-branch-points",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH2CH2CH2CH(CH2CH2CH3)CH2CH(CH3)CH3?",
+    "choices": [
+      {
+        "text": "2-methyl-4-propyloctane",
+        "correct": true
+      },
+      {
+        "text": "4-isobutyloctane",
+        "why": "This eight-carbon chain is as long as the correct one, but it has only one branch point. With two chains of equal length, choose the one with more branch points."
+      },
+      {
+        "text": "7-methyl-5-propyloctane",
+        "why": "Numbered from the wrong end. Begin at the end nearer the first branch point, which gives 2 and 4."
+      },
+      {
+        "text": "4-propyl-2-methyloctane",
+        "why": "The substituents must be cited in alphabetical order: methyl before propyl."
+      }
+    ],
+    "explanation": "Two different eight-carbon chains are possible: the butyl group, the CH and either the propyl group or the CH2CH(CH3)CH3 group. Step 1(b): choose the one with more branch points, which runs through CH2CH(CH3)CH3 and has branches at two carbons. Numbering from the end nearer the first branch gives methyl at C2 and propyl at C4, cited alphabetically."
+  },
+  {
+    "id": "oc3-naming-first-branch-locant",
+    "type": "numeric",
+    "prompt": "In the IUPAC name of CH3CH2CH2CH(CH3)CH2CH2CH2CH3, what locant does the methyl group get?",
+    "answer": 4,
+    "explanation": "The parent is octane. Step 2(a): begin numbering at the end nearer the first branch point. From the left the methyl is on C4; from the right it would be on C5. The name is 4-methyloctane."
+  },
+  {
+    "id": "oc3-naming-second-branch-tiebreak",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH(CH3)CH(CH3)CH2CH2CH(CH3)CH3?",
+    "choices": [
+      {
+        "text": "2,3,6-trimethylheptane",
+        "correct": true
+      },
+      {
+        "text": "2,5,6-trimethylheptane",
+        "why": "The first branch is on C2 from either end, so look at the second branch: it is nearer the left end, which gives 3 rather than 5."
+      },
+      {
+        "text": "2,3,6-methylheptane",
+        "why": "Three identical substituents need the multiplier prefix tri-."
+      },
+      {
+        "text": "2,3,6-trimethyl heptane",
+        "why": "The name is written as a single word, with no space before the parent."
+      }
+    ],
+    "explanation": "The parent is heptane, with a methyl branch on the second carbon from each end. Step 2(b): when branching is an equal distance from both ends, begin numbering at the end nearer the second branch point. Numbering from the left gives 2,3,6; from the right it would be 2,5,6."
+  },
+  {
+    "id": "oc3-naming-first-branch-not-sum",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH(CH3)CH2CH2CH2C(CH3)2CH2CH3?",
+    "choices": [
+      {
+        "text": "2,6,6-trimethyloctane",
+        "correct": true
+      },
+      {
+        "text": "3,3,7-trimethyloctane",
+        "why": "These locants add up to less, but the rule is not about the smallest sum. Begin at the end nearer the first branch point: C2 from the left beats C3 from the right."
+      },
+      {
+        "text": "2,6-trimethyloctane",
+        "why": "Two methyls on the same carbon each get the number 6. There must be as many numbers as there are substituents."
+      },
+      {
+        "text": "2-methyl-6,6-dimethyloctane",
+        "why": "Identical substituents are combined under one multiplier prefix: trimethyl, with all three locants."
+      }
+    ],
+    "explanation": "The parent is octane. Step 2(a): begin numbering at the end nearer the first branch point. From the left the first branch is at C2; from the right it is at C3. So the methyls are at C2, C6 and C6, and Step 3(b) gives each one its own number: 2,6,6-trimethyloctane."
+  },
+  {
+    "id": "oc3-naming-same-carbon",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH2C(CH3)2CH2CH2CH3?",
+    "choices": [
+      {
+        "text": "3,3-dimethylhexane",
+        "correct": true
+      },
+      {
+        "text": "3-dimethylhexane",
+        "why": "Two substituents on the same carbon both get the number: there must be as many numbers in the name as there are substituents."
+      },
+      {
+        "text": "4,4-dimethylhexane",
+        "why": "Numbered from the wrong end. The branch point is nearer the left end, at C3."
+      },
+      {
+        "text": "2-ethyl-2-methylpentane",
+        "why": "This parent has only five carbons. The longest chain includes the ethyl group, giving six."
+      }
+    ],
+    "explanation": "The longest chain is the ethyl group, the central carbon and the propyl group: six carbons, a hexane. Numbering from the end nearer the branch puts both methyls on C3, and Step 3(b) says to give both the same number: 3,3-dimethylhexane."
+  },
+  {
+    "id": "oc3-naming-locant-count",
+    "type": "numeric",
+    "prompt": "How many locant numbers appear in the IUPAC name of CH3C(CH3)2CH2C(CH3)2CH3?",
+    "answer": 4,
+    "explanation": "The parent is pentane with two methyl groups on C2 and two on C4. Step 3(b): there must be as many numbers in the name as there are substituents, so the name is 2,2,4,4-tetramethylpentane, with four locants."
+  },
+  {
+    "id": "oc3-naming-alphabetize-multiplier",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3C(CH3)2CH2CH2CH(CH2CH3)CH2CH2CH3?",
+    "choices": [
+      {
+        "text": "5-ethyl-2,2-dimethyloctane",
+        "correct": true
+      },
+      {
+        "text": "2,2-dimethyl-5-ethyloctane",
+        "why": "This alphabetizes by the multiplier prefix di-. Prefixes such as di- and tri- are not used for alphabetizing, so methyl (m) comes after ethyl (e)."
+      },
+      {
+        "text": "4-ethyl-7,7-dimethyloctane",
+        "why": "Numbered from the wrong end. The first branch point is at C2 from the left, but C4 from the right."
+      },
+      {
+        "text": "5-ethyl-2-dimethyloctane",
+        "why": "Each methyl needs its own number, even on the same carbon: 2,2-dimethyl."
+      }
+    ],
+    "explanation": "The parent is octane, numbered from the end nearer the first branch (C2). Step 4: cite different substituents in alphabetical order, but don't use multiplier prefixes for alphabetizing. Ethyl (e) comes before dimethyl, which is alphabetized under m."
+  },
+  {
+    "id": "oc3-naming-punctuation",
+    "type": "multiple-choice",
+    "prompt": "The compound CH3CH(CH3)CH2CH(CH3)CH2CH3 is a hexane with methyl groups on C2 and C4. Which name is written correctly?",
+    "choices": [
+      {
+        "text": "2,4-dimethylhexane",
+        "correct": true
+      },
+      {
+        "text": "2-4-dimethylhexane",
+        "why": "Numbers are separated from each other by commas. Hyphens go between numbers and words."
+      },
+      {
+        "text": "2,4 dimethylhexane",
+        "why": "A hyphen separates the locants from the prefix; the name has no spaces."
+      },
+      {
+        "text": "2,4-dimethyl hexane",
+        "why": "The name is written as a single word, with the prefix joined to the parent."
+      }
+    ],
+    "explanation": "Step 4: write the name as a single word, using commas to separate numbers and hyphens to separate the numbers from the prefixes."
+  },
+  {
+    "id": "oc3-naming-name-to-structure",
+    "type": "multiple-choice",
+    "prompt": "Which condensed structure is 4-ethyl-2-methylhexane?",
+    "choices": [
+      {
+        "text": "CH3CH(CH3)CH2CH(CH2CH3)CH2CH3",
+        "correct": true
+      },
+      {
+        "text": "CH3CH(CH2CH3)CH2CH(CH3)CH2CH3",
+        "why": "This puts the ethyl on C2 and the methyl on C4, swapping the locants. Its longest chain is actually seven carbons (3,5-dimethylheptane)."
+      },
+      {
+        "text": "CH3CH(CH3)CH2CH(CH3)CH2CH3",
+        "why": "This has a methyl on C4, not an ethyl. It is 2,4-dimethylhexane."
+      },
+      {
+        "text": "CH3CH(CH3)CH2CH(CH2CH3)CH2CH2CH3",
+        "why": "This main chain has seven carbons, but hex- means six. It is 4-ethyl-2-methylheptane."
+      }
+    ],
+    "explanation": "Work backward from the name: draw the six-carbon parent (hexane), put a methyl on C2 and an ethyl on C4, then add hydrogens. Checking it the forward way: the longest chain is six carbons, and numbering from the end nearer the first branch gives 2 and 4."
+  },
+  {
+    "id": "oc3-naming-1-methylpropyl",
+    "type": "multiple-choice",
+    "prompt": "A substituent −CH(CH3)CH2CH3 is attached to a main chain at the CH carbon. What is its systematic name?",
+    "choices": [
+      {
+        "text": "1-methylpropyl",
+        "correct": true
+      },
+      {
+        "text": "1-ethylethyl",
+        "why": "Name the substituent as though it were a compound: its main chain is the longest one starting from the attachment point, which is three carbons (propyl), not two."
+      },
+      {
+        "text": "2-methylpropyl",
+        "why": "That would have the methyl on the second carbon from the attachment point, −CH2CH(CH3)CH3. Here the methyl is on the attachment carbon, C1."
+      },
+      {
+        "text": "Butyl",
+        "why": "A butyl group is an unbranched four-carbon chain attached at its end. This group is attached at a carbon that carries a methyl branch."
+      }
+    ],
+    "explanation": "Step 5: name a branched substituent as though it were itself a compound, numbering it from its point of attachment to the main chain. The attachment carbon is C1, and the longest chain from it is three carbons (propyl), with a methyl on C1: 1-methylpropyl."
+  },
+  {
+    "id": "oc3-naming-branched-substituent-alphabet",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH2CH(CH2CH3)CH2CH(CH(CH3)CH(CH3)CH3)CH2CH2CH2CH2CH3?",
+    "choices": [
+      {
+        "text": "5-(1,2-dimethylpropyl)-3-ethyldecane",
+        "correct": true
+      },
+      {
+        "text": "3-ethyl-5-(1,2-dimethylpropyl)decane",
+        "why": "A branched substituent is alphabetized by the first letter of its complete name, including any numerical prefix. Dimethylpropyl goes under d, before ethyl."
+      },
+      {
+        "text": "6-(1,2-dimethylpropyl)-8-ethyldecane",
+        "why": "Numbered from the wrong end. The first branch point is at C3 from the left, but C6 from the right."
+      },
+      {
+        "text": "5-1,2-dimethylpropyl-3-ethyldecane",
+        "why": "A branched substituent's name is set off in parentheses when naming the whole molecule."
+      }
+    ],
+    "explanation": "The parent is decane, numbered from the end nearer the first branch (C3). The substituent on C5, −CH(CH3)CH(CH3)CH3, is named from its attachment point: a propyl chain with methyls on C1 and C2, 1,2-dimethylpropyl. Step 5: it is alphabetized by the first letter of its complete name (d, before ethyl) and set off in parentheses."
+  },
+  {
+    "id": "oc3-naming-iso-alphabetized",
+    "type": "multiple-choice",
+    "prompt": "A branched alkane has one isopropyl group and one methyl group on its parent chain. Which substituent is cited first in the name, and why?",
+    "choices": [
+      {
+        "text": "Isopropyl, because iso- counts for alphabetizing and i comes before m",
+        "correct": true
+      },
+      {
+        "text": "Methyl, because isopropyl is alphabetized under p",
+        "why": "The nonhyphenated prefix iso- is part of the alkyl-group name for alphabetizing, so isopropyl is listed under i."
+      },
+      {
+        "text": "Methyl, because the smaller substituent is cited first",
+        "why": "Substituents are cited in alphabetical order, not by size."
+      },
+      {
+        "text": "Either one, because the order of substituents does not matter",
+        "why": "When two or more different substituents are present, they must be cited in alphabetical order."
+      }
+    ],
+    "explanation": "Different substituents are cited in alphabetical order. The nonhyphenated prefix iso- is considered part of the alkyl-group name, so isopropyl and isobutyl are listed under i. Isopropyl (i) comes before methyl (m)."
+  },
+  {
+    "id": "oc3-naming-tert-alphabetized",
+    "type": "multiple-choice",
+    "prompt": "A branched alkane has one tert-butyl group and one ethyl group on its parent chain. Which substituent is cited first in the name, and why?",
+    "choices": [
+      {
+        "text": "tert-Butyl, because it is alphabetized under b, which comes before e",
+        "correct": true
+      },
+      {
+        "text": "Ethyl, because tert-butyl is alphabetized under t",
+        "why": "The hyphenated, italicized prefixes sec- and tert- are not counted for alphabetizing, so tert-butyl is listed under b."
+      },
+      {
+        "text": "tert-Butyl, because the larger substituent is cited first",
+        "why": "Size has nothing to do with the order. Substituents are cited alphabetically, and tert-butyl comes first only because b comes before e."
+      },
+      {
+        "text": "Whichever has the lower locant number",
+        "why": "Substituents are cited in alphabetical order, not in order of their positions on the chain."
+      }
+    ],
+    "explanation": "Different substituents are cited in alphabetical order. The hyphenated and italicized prefixes sec- and tert- are not considered for alphabetizing, so sec-butyl and tert-butyl are listed under b, before ethyl (e)."
+  },
+  {
+    "id": "oc3-naming-isopropyl-systematic",
+    "type": "multiple-choice",
+    "prompt": "IUPAC rules allow a common name in place of the systematic substituent name 1-methylethyl. Which common name is it?",
+    "choices": [
+      {
+        "text": "Isopropyl",
+        "correct": true
+      },
+      {
+        "text": "Propyl",
+        "why": "Propyl is the unbranched three-carbon group, attached at its end carbon. A 1-methylethyl group has a methyl on the attachment carbon."
+      },
+      {
+        "text": "Isobutyl",
+        "why": "Isobutyl has four carbons. A 1-methylethyl group has three: a two-carbon ethyl chain plus a methyl."
+      },
+      {
+        "text": "tert-Butyl",
+        "why": "tert-Butyl has four carbons. A 1-methylethyl group has only three."
+      }
+    ],
+    "explanation": "Some simple branched alkyl groups have common names that IUPAC rules allow. The section's example compound is properly named either 4-(1-methylethyl)heptane or 4-isopropylheptane, so 1-methylethyl and isopropyl are the same group."
+  },
+  {
+    "id": "oc3-naming-3-methylbutyl-locant",
+    "type": "numeric",
+    "prompt": "The substituent −CH2CH2CH(CH3)CH3 is named as a methyl-substituted butyl group. What number does the methyl get?",
+    "answer": 3,
+    "explanation": "Step 5: number a branched substituent beginning at its point of attachment to the main chain. The attached CH2 is C1, the next CH2 is C2, and the CH carrying the methyl is C3, so the group is 3-methylbutyl."
+  },
+  {
+    "id": "oc3-naming-carbon-count",
+    "type": "numeric",
+    "prompt": "How many carbon atoms are in one molecule of 4-ethyl-2,2-dimethyloctane?",
+    "answer": 12,
+    "explanation": "The parent name tells how many carbons are in the main chain: octane has 8. The prefixes add an ethyl group (2 carbons) and two methyl groups (1 carbon each): 8 + 2 + 2 = 12."
+  }
+]

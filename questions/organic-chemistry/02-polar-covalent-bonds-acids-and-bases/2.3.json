@@ -1,0 +1,192 @@
+[
+  {
+    "id": "oc2-formal-charge-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does a formal charge on an atom in a molecule represent?",
+    "choices": [
+      {
+        "text": "A bookkeeping device for electrons; it doesn't imply an actual ionic charge",
+        "correct": true
+      },
+      {
+        "text": "The real ionic charge the atom carries",
+        "why": "Formal charges are a formalism; they don't imply the presence of actual ionic charges in the molecule."
+      },
+      {
+        "text": "The atom's partial charge from bond polarity",
+        "why": "Partial charges (δ+, δ−) come from electronegativity differences. Formal charge comes from counting the electrons an atom owns."
+      },
+      {
+        "text": "The number of bonds the atom forms",
+        "why": "Formal charge flags atoms with an unusual number of bonds, but it is calculated by counting owned electrons."
+      }
+    ],
+    "explanation": "Formal charges, as the name suggests, are a formalism and don't imply the presence of actual ionic charges in a molecule. They are a device for electron bookkeeping, though they often give clues about chemical reactivity."
+  },
+  {
+    "id": "oc2-formal-charge-ownership",
+    "type": "multiple-choice",
+    "prompt": "For formal-charge bookkeeping, how many electrons of a shared covalent bond does each bonded atom \"own\"?",
+    "choices": [
+      {
+        "text": "One",
+        "correct": true
+      },
+      {
+        "text": "Two",
+        "why": "Both atoms share the pair, so for bookkeeping each is counted as owning half of it, one electron."
+      },
+      {
+        "text": "None",
+        "why": "Each atom is considered to own one electron of the shared pair."
+      },
+      {
+        "text": "It depends on which atom is more electronegative",
+        "why": "Formal charge splits each bond evenly, regardless of electronegativity; that's what makes it a formalism."
+      }
+    ],
+    "explanation": "A typical covalent bond forms when each atom donates one electron. Although the bonding electrons are shared, each atom can still be considered to own one electron for bookkeeping purposes."
+  },
+  {
+    "id": "oc2-formal-charge-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the formal charge on an atom?",
+    "choices": [
+      {
+        "text": "(Valence electrons in the free atom) − (bonding electrons/2 + nonbonding electrons)",
+        "correct": true
+      },
+      {
+        "text": "(Valence electrons in the free atom) − (bonding electrons + nonbonding electrons)",
+        "why": "This counts both electrons of each bond as owned. The atom owns only half of its bonding electrons."
+      },
+      {
+        "text": "(Valence electrons in the free atom) − (bonding electrons/2 + nonbonding electrons/2)",
+        "why": "Lone-pair electrons belong entirely to the atom, so they are counted in full, not halved."
+      },
+      {
+        "text": "(Bonding electrons/2 + nonbonding electrons) − (valence electrons in the free atom)",
+        "why": "This reverses the sign: an atom owning fewer electrons than the free atom should come out positive."
+      }
+    ],
+    "explanation": "Formal charge = (valence electrons in a neutral, isolated atom) − (electrons owned by the bonded atom), and the electrons owned equal half the bonding electrons plus all the nonbonding, lone-pair electrons."
+  },
+  {
+    "id": "oc2-formal-charge-methane-carbon",
+    "type": "numeric",
+    "prompt": "How many valence electrons does the carbon atom in methane, CH4, own for formal-charge bookkeeping?",
+    "answer": 4,
+    "explanation": "The carbon owns one electron in each of the four C–H bonds (8/2 = 4). An isolated carbon atom also has four valence electrons, so the methane carbon has no formal charge."
+  },
+  {
+    "id": "oc2-formal-charge-ammonia-nitrogen",
+    "type": "numeric",
+    "prompt": "How many valence electrons does the nitrogen atom in ammonia, NH3, own for formal-charge bookkeeping?",
+    "answer": 5,
+    "explanation": "The ammonia nitrogen owns one electron in each of its three N–H bonds plus the two electrons of its lone pair: 6/2 + 2 = 5. Atomic nitrogen also has five, so the nitrogen has no formal charge."
+  },
+  {
+    "id": "oc2-formal-charge-dmso-negative",
+    "type": "multiple-choice",
+    "prompt": "In dimethyl sulfoxide, CH3SOCH3, sulfur has three bonds and one lone pair, and oxygen has one bond and three lone pairs. Which atom has a negative formal charge?",
+    "choices": [
+      {
+        "text": "Oxygen",
+        "correct": true
+      },
+      {
+        "text": "Sulfur",
+        "why": "Sulfur owns only five electrons, one fewer than atomic sulfur's six, so its formal charge is +1."
+      },
+      {
+        "text": "Both carbons",
+        "why": "Each carbon has four bonds and owns four electrons, the same as an isolated carbon, so they are neutral."
+      },
+      {
+        "text": "No atom; DMSO is a neutral molecule",
+        "why": "The molecule is neutral overall, but its sulfur (+1) and oxygen (−1) carry formal charges that cancel."
+      }
+    ],
+    "explanation": "The DMSO oxygen owns seven electrons (one in the O–S bond and six in three lone pairs), one more than atomic oxygen's six, so it has formally gained an electron and has a −1 formal charge. The electrostatic potential map agrees, showing the oxygen as negative (red)."
+  },
+  {
+    "id": "oc2-formal-charge-dmso-sulfur",
+    "type": "numeric",
+    "prompt": "In dimethyl sulfoxide, the sulfur has two S–C single bonds, one S–O single bond, and one lone pair. What is its formal charge? (Include the sign.)",
+    "answer": 1,
+    "explanation": "Formal charge = 6 − (6/2 + 2) = 6 − 5 = +1. Sulfur owns one electron in each of its three bonds plus two in its lone pair, one fewer than atomic sulfur's six."
+  },
+  {
+    "id": "oc2-formal-charge-dmso-oxygen-owns",
+    "type": "numeric",
+    "prompt": "In dimethyl sulfoxide, the oxygen has one O–S bond and three lone pairs. How many valence electrons does it own for formal-charge bookkeeping?",
+    "answer": 7,
+    "explanation": "The oxygen owns one electron in the O–S bond plus two in each of three lone pairs: 1 + 6 = 7. That is one more than atomic oxygen's six, so its formal charge is −1."
+  },
+  {
+    "id": "oc2-formal-charge-n-four-bonds",
+    "type": "numeric",
+    "prompt": "What is the formal charge on a nitrogen atom with four bonds and no lone pairs, as in NH4+? (Include the sign.)",
+    "answer": 1,
+    "explanation": "Formal charge = 5 − (8/2 + 0) = +1. Table 2.3.1 lists nitrogen with four bonds and no nonbonding electrons as +1."
+  },
+  {
+    "id": "oc2-formal-charge-n-two-bonds",
+    "type": "numeric",
+    "prompt": "What is the formal charge on a nitrogen atom with two bonds and two lone pairs? (Include the sign.)",
+    "answer": -1,
+    "explanation": "Formal charge = 5 − (4/2 + 4) = 5 − 6 = −1. Table 2.3.1 lists nitrogen with two bonds and four nonbonding electrons as −1."
+  },
+  {
+    "id": "oc2-formal-charge-o-three-bonds",
+    "type": "numeric",
+    "prompt": "What is the formal charge on an oxygen atom with three bonds and one lone pair, as in H3O+? (Include the sign.)",
+    "answer": 1,
+    "explanation": "Formal charge = 6 − (6/2 + 2) = 6 − 5 = +1. Table 2.3.1 lists oxygen with three bonds and two nonbonding electrons as +1."
+  },
+  {
+    "id": "oc2-formal-charge-carbocation",
+    "type": "multiple-choice",
+    "prompt": "A carbon atom has three bonds and no nonbonding electrons. What is its formal charge?",
+    "choices": [
+      {
+        "text": "+1",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "A neutral three-bonded carbon needs one nonbonding electron to own four. With none, it owns only 3."
+      },
+      {
+        "text": "−1",
+        "why": "That is a three-bonded carbon with a lone pair (two nonbonding electrons): 4 − (3 + 2) = −1."
+      },
+      {
+        "text": "+3",
+        "why": "The carbon still owns one electron in each of its three bonds, so it is only one short of four."
+      }
+    ],
+    "explanation": "Formal charge = 4 − (6/2 + 0) = 4 − 3 = +1 (Table 2.3.1)."
+  },
+  {
+    "id": "oc2-formal-charge-carbanion",
+    "type": "numeric",
+    "prompt": "What is the formal charge on a carbon atom with three bonds and one lone pair? (Include the sign.)",
+    "answer": -1,
+    "explanation": "Formal charge = 4 − (6/2 + 2) = 4 − 5 = −1. Table 2.3.1 lists carbon with three bonds and two nonbonding electrons as −1."
+  },
+  {
+    "id": "oc2-formal-charge-carbon-radical",
+    "type": "numeric",
+    "prompt": "What is the formal charge on a carbon atom with three bonds and a single nonbonding electron?",
+    "answer": 0,
+    "explanation": "Formal charge = 4 − (6/2 + 1) = 4 − 4 = 0. Table 2.3.1 lists carbon with three bonds and one nonbonding electron as 0."
+  },
+  {
+    "id": "oc2-formal-charge-phosphorus",
+    "type": "numeric",
+    "prompt": "What is the formal charge on a phosphorus atom with four bonds and no lone pairs? (Include the sign.)",
+    "answer": 1,
+    "explanation": "Phosphorus has five valence electrons, like nitrogen. Formal charge = 5 − (8/2 + 0) = +1 (Table 2.3.1)."
+  }
+]

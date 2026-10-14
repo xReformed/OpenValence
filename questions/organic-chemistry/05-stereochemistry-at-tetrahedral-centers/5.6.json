@@ -1,0 +1,294 @@
+[
+  {
+    "id": "oc5-diastereomer-max-three-centers",
+    "type": "numeric",
+    "prompt": "What is the maximum number of stereoisomers a molecule with three chirality centers can have?",
+    "answer": 8,
+    "explanation": "A molecule with n chirality centers can have up to 2^n stereoisomers. With n = 3, that is 2^3 = 8."
+  },
+  {
+    "id": "oc5-diastereomer-centers-from-count",
+    "type": "numeric",
+    "prompt": "By the 2^n rule, a molecule can have at most 16 stereoisomers. How many chirality centers does it have?",
+    "answer": 4,
+    "explanation": "A molecule with n chirality centers can have up to 2^n stereoisomers. 2^4 = 16, so n = 4."
+  },
+  {
+    "id": "oc5-diastereomer-upper-limit",
+    "type": "multiple-choice",
+    "prompt": "For a molecule with n chirality centers, what does the 2^n rule give?",
+    "choices": [
+      {
+        "text": "The maximum number of stereoisomers; some molecules have fewer",
+        "correct": true
+      },
+      {
+        "text": "The exact number of stereoisomers, always",
+        "why": "The rule says a molecule can have up to 2^n stereoisomers. It may have fewer."
+      },
+      {
+        "text": "The number of pairs of enantiomers",
+        "why": "2^n counts stereoisomers, not pairs. Threonine's 2^2 = 4 stereoisomers make two pairs of enantiomers."
+      },
+      {
+        "text": "The number of diastereomers of any one stereoisomer",
+        "why": "2^n counts all the stereoisomers, including the molecule itself and its enantiomer. Each threonine isomer has only two diastereomers out of four stereoisomers."
+      }
+    ],
+    "explanation": "As a general rule, a molecule with n chirality centers can have up to 2^n stereoisomers, although it may have fewer. Threonine, with two chirality centers, has four."
+  },
+  {
+    "id": "oc5-diastereomer-enantiomer-pairs",
+    "type": "numeric",
+    "prompt": "A compound has two chirality centers and all four possible stereoisomers. Into how many pairs of enantiomers can they be grouped?",
+    "answer": 2,
+    "explanation": "Each stereoisomer has exactly one mirror image. For threonine, 2R,3R pairs with 2S,3S, and 2R,3S pairs with 2S,3R: four stereoisomers, two pairs of enantiomers."
+  },
+  {
+    "id": "oc5-diastereomer-definition",
+    "type": "multiple-choice",
+    "prompt": "What are diastereomers?",
+    "choices": [
+      {
+        "text": "Stereoisomers that are not mirror images of each other",
+        "correct": true
+      },
+      {
+        "text": "Stereoisomers that are nonsuperimposable mirror images",
+        "why": "Those are enantiomers. Diastereomers are the stereoisomers that are not mirror images."
+      },
+      {
+        "text": "Compounds with the same formula but atoms connected differently",
+        "why": "Diastereomers have the same connections; they differ only in the 3D arrangement at some chirality centers. Different connections would make them constitutional isomers."
+      },
+      {
+        "text": "Stereoisomers with opposite configurations at every chirality center",
+        "why": "Opposite configurations at all chirality centers is what defines enantiomers."
+      }
+    ],
+    "explanation": "Diastereomers are stereoisomers that are not mirror images. They have opposite configurations at some (one or more) chirality centers but the same configuration at others."
+  },
+  {
+    "id": "oc5-diastereomer-hands-analogy",
+    "type": "multiple-choice",
+    "prompt": "In the hand analogy, which pair best matches the relationship between two diastereomers?",
+    "choices": [
+      {
+        "text": "Your right hand and a friend's right hand",
+        "correct": true
+      },
+      {
+        "text": "Your right hand and your left hand",
+        "why": "Your own two hands are mirror images, the analogy for enantiomers."
+      },
+      {
+        "text": "Your right hand and the same right hand seen again",
+        "why": "That is identity. Diastereomers are similar but not identical."
+      },
+      {
+        "text": "Your hand and your foot",
+        "why": "A hand and a foot are built differently. Diastereomers are stereoisomers: same atoms, same connections, different 3D arrangement."
+      }
+    ],
+    "explanation": "The relationship between diastereomers is like that of hands from different people. Your hand and your friend's hand look similar, but they aren't identical and they aren't mirror images."
+  },
+  {
+    "id": "oc5-diastereomer-one-center-differs",
+    "type": "multiple-choice",
+    "prompt": "What is the relationship between the (2R,3S) and (2S,3S) stereoisomers of a compound with two chirality centers?",
+    "choices": [
+      {
+        "text": "Diastereomers",
+        "correct": true
+      },
+      {
+        "text": "Enantiomers",
+        "why": "Enantiomers have opposite configurations at all chirality centers. These two are the same (S) at C3."
+      },
+      {
+        "text": "Identical",
+        "why": "C2 is R in one and S in the other, so they are different stereoisomers."
+      },
+      {
+        "text": "Constitutional isomers",
+        "why": "They have the same connections and differ only in configuration, so they are stereoisomers."
+      }
+    ],
+    "explanation": "The two isomers differ at C2 but have the same configuration at C3. Diastereomers have opposite configurations at some chirality centers but the same configuration at others, so these are diastereomers."
+  },
+  {
+    "id": "oc5-diastereomer-both-centers-differ",
+    "type": "multiple-choice",
+    "prompt": "What is the relationship between the (2R,3S) and (2S,3R) stereoisomers of a compound with two chirality centers?",
+    "choices": [
+      {
+        "text": "Enantiomers",
+        "correct": true
+      },
+      {
+        "text": "Identical, because each has one R and one S center",
+        "why": "It matters which carbon is which. C2 is R in one and S in the other, and C3 is opposite too."
+      },
+      {
+        "text": "Diastereomers, because they differ at both centers",
+        "why": "Diastereomers keep at least one center the same. Opposite configurations at every center is the definition of enantiomers."
+      },
+      {
+        "text": "Epimers",
+        "why": "Epimers differ at only one chirality center. These differ at both."
+      }
+    ],
+    "explanation": "Every chirality center is inverted: C2 goes R → S and C3 goes S → R. Enantiomers have opposite configurations at all chirality centers, so these are mirror images, like threonine's 2R,3S and 2S,3R isomers."
+  },
+  {
+    "id": "oc5-diastereomer-enantiomer-of-three",
+    "type": "multiple-choice",
+    "prompt": "A compound has three chirality centers. Which stereoisomer is the enantiomer of the (2R,3R,4S) isomer?",
+    "choices": [
+      {
+        "text": "(2S,3S,4R)",
+        "correct": true
+      },
+      {
+        "text": "(2S,3R,4S)",
+        "why": "Only C2 is inverted. A stereoisomer that differs at just one center is a diastereomer (an epimer), not the enantiomer."
+      },
+      {
+        "text": "(2S,3S,4S)",
+        "why": "C4 is S in both, so not every center is inverted. This is a diastereomer."
+      },
+      {
+        "text": "(2R,3R,4R)",
+        "why": "This changes only C4, making it a diastereomer (an epimer at C4)."
+      }
+    ],
+    "explanation": "Enantiomers have opposite configurations at all chirality centers. Inverting each of 2R, 3R and 4S gives 2S, 3S and 4R."
+  },
+  {
+    "id": "oc5-diastereomer-count-three-centers",
+    "type": "numeric",
+    "prompt": "A compound has three chirality centers and all 2^3 possible stereoisomers. How many of them are diastereomers of the (2R,3R,4S) isomer?",
+    "answer": 6,
+    "explanation": "There are 2^3 = 8 stereoisomers. One is (2R,3R,4S) itself, and one is its enantiomer, (2S,3S,4R), opposite at every center. The other 6 are opposite at some centers and the same at others, so they are diastereomers."
+  },
+  {
+    "id": "oc5-diastereomer-only-one-enantiomer",
+    "type": "multiple-choice",
+    "prompt": "A stereoisomer of a compound with four chirality centers can have how many enantiomers?",
+    "choices": [
+      {
+        "text": "Exactly one",
+        "correct": true
+      },
+      {
+        "text": "Four, one for each chirality center",
+        "why": "Inverting one center gives a diastereomer, not an enantiomer. The enantiomer has all four centers inverted at once."
+      },
+      {
+        "text": "Fifteen, all the other stereoisomers",
+        "why": "Most of the other stereoisomers are diastereomers, with some centers the same and others opposite."
+      },
+      {
+        "text": "It depends on how many centers are R",
+        "why": "Whatever the starting labels, there is only one way to invert every center."
+      }
+    ],
+    "explanation": "Enantiomers have opposite configurations at all chirality centers, and there is only one combination that inverts every center. Each stereoisomer therefore has exactly one enantiomer; the rest of its stereoisomers are diastereomers."
+  },
+  {
+    "id": "oc5-diastereomer-identify-epimers",
+    "type": "multiple-choice",
+    "prompt": "Which pair of stereoisomers are epimers?",
+    "choices": [
+      {
+        "text": "(2R,3R,4R) and (2R,3S,4R)",
+        "correct": true
+      },
+      {
+        "text": "(2R,3R,4R) and (2S,3S,4S)",
+        "why": "These are opposite at every center, which makes them enantiomers."
+      },
+      {
+        "text": "(2R,3S,4R) and (2S,3R,4R)",
+        "why": "These differ at two centers, C2 and C3. They are diastereomers, but epimers differ at only one."
+      },
+      {
+        "text": "(2R,3R,4S) and (2R,3R,4S)",
+        "why": "Every center is the same, so this is one compound written twice."
+      }
+    ],
+    "explanation": "Epimers are the special case of diastereomers that differ at only one chirality center and are the same at all others. (2R,3R,4R) and (2R,3S,4R) differ only at C3, so they are epimeric at C3."
+  },
+  {
+    "id": "oc5-diastereomer-epimers-cholestanol",
+    "type": "multiple-choice",
+    "prompt": "Cholestanol and coprostanol each have nine chirality centers. Eight are the same; the one at C5 is different. What is their relationship?",
+    "choices": [
+      {
+        "text": "Epimers at C5",
+        "correct": true
+      },
+      {
+        "text": "Enantiomers",
+        "why": "Enantiomers would be opposite at all nine centers. These are opposite at only one."
+      },
+      {
+        "text": "Constitutional isomers",
+        "why": "They differ only in the configuration at C5, not in which atoms are connected, so they are stereoisomers."
+      },
+      {
+        "text": "Identical, since eight of nine centers match",
+        "why": "One opposite chirality center is enough to make two different stereoisomers."
+      }
+    ],
+    "explanation": "When two diastereomers differ at only one chirality center but are the same at all others, they are epimers. Cholestanol and coprostanol differ only at C5, so they are epimeric at C5."
+  },
+  {
+    "id": "oc5-diastereomer-some-centers-differ",
+    "type": "multiple-choice",
+    "prompt": "Two stereoisomers each have chirality centers at C2, C3, C4 and C5. They have opposite configurations at C2 and C4 and the same configurations at C3 and C5. What are they?",
+    "choices": [
+      {
+        "text": "Diastereomers, but not epimers",
+        "correct": true
+      },
+      {
+        "text": "Epimers",
+        "why": "Epimers differ at only one chirality center. These differ at two."
+      },
+      {
+        "text": "Enantiomers",
+        "why": "Enantiomers are opposite at all chirality centers. Here C3 and C5 are the same."
+      },
+      {
+        "text": "Identical, since half the centers match",
+        "why": "Any difference in configuration at a chirality center makes them different stereoisomers."
+      }
+    ],
+    "explanation": "Diastereomers have opposite configurations at some (one or more) chirality centers and the same configuration at others. These differ at two centers, so they are diastereomers; epimers would differ at only one."
+  },
+  {
+    "id": "oc5-diastereomer-natural-threonine",
+    "type": "multiple-choice",
+    "prompt": "Natural threonine, the essential nutrient, is the (2S,3R) stereoisomer. Which stereoisomer is its enantiomer?",
+    "choices": [
+      {
+        "text": "(2R,3S)",
+        "correct": true
+      },
+      {
+        "text": "(2S,3S)",
+        "why": "Only C3 is inverted, so this is a diastereomer of natural threonine."
+      },
+      {
+        "text": "(2R,3R)",
+        "why": "Only C2 is inverted, so this is a diastereomer of natural threonine."
+      },
+      {
+        "text": "(2S,3R), because mirror images have the same labels",
+        "why": "A mirror image has the opposite configuration at every chirality center, so both labels flip."
+      }
+    ],
+    "explanation": "Of threonine's four stereoisomers, only 2S,3R occurs naturally. Its enantiomer has opposite configurations at both centers, 2R,3S; the other two, 2R,3R and 2S,3S, are its diastereomers (Table 5.6.1)."
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "id": "oc4-monosubstituted-preferred-position",
+    "type": "multiple-choice",
+    "prompt": "In a monosubstituted cyclohexane, which chair conformation is almost always more stable?",
+    "choices": [
+      {
+        "text": "The one with the substituent equatorial",
+        "correct": true
+      },
+      {
+        "text": "The one with the substituent axial",
+        "why": "An axial substituent is crowded by the axial hydrogens on C3 and C5 (1,3-diaxial interactions), so the axial conformation is the less stable one."
+      },
+      {
+        "text": "Neither; the two chairs are equal in energy because the ring flips rapidly",
+        "why": "Rapid ring-flipping means the two chairs interconvert, not that they are equally stable. For methylcyclohexane they differ by 7.6 kJ/mol."
+      },
+      {
+        "text": "It depends on the temperature: axial at room temperature, equatorial when cold",
+        "why": "The equatorial conformation is the more stable one; temperature only changes how strongly it predominates."
+      }
+    ],
+    "explanation": "Even though cyclohexane rings flip rapidly between chair conformations at room temperature, the two conformations of a monosubstituted cyclohexane aren't equally stable: a substituent is almost always more stable in an equatorial position than in an axial position."
+  },
+  {
+    "id": "oc4-monosubstituted-methyl-energy-difference",
+    "type": "numeric",
+    "prompt": "By how much is the equatorial conformation of methylcyclohexane more stable than the axial conformation, in kJ/mol?",
+    "answer": 7.6,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "In methylcyclohexane, the equatorial conformation is more stable than the axial conformation by 7.6 kJ/mol (1.8 kcal/mol) (Figure 4.7.2)."
+  },
+  {
+    "id": "oc4-monosubstituted-methyl-percent-equatorial",
+    "type": "numeric",
+    "prompt": "Because of the 7.6 kJ/mol energy difference, about what percentage of methylcyclohexane molecules have an equatorial methyl group at any given instant?",
+    "answer": 95,
+    "unit": "%",
+    "tolerance": 0.02,
+    "explanation": "An energy difference of 7.6 kJ/mol means that about 95% of methylcyclohexane molecules have an equatorial methyl group at any given instant, while only 5% have an axial methyl group (Figure 4.7.1)."
+  },
+  {
+    "id": "oc4-monosubstituted-ring-flip-population",
+    "type": "multiple-choice",
+    "prompt": "Which statement best describes methylcyclohexane at room temperature?",
+    "choices": [
+      {
+        "text": "The two chairs interconvert rapidly by ring-flips, but most molecules at any instant have the methyl group equatorial",
+        "correct": true
+      },
+      {
+        "text": "Every molecule is locked in the equatorial conformation",
+        "why": "Cyclohexane rings flip rapidly at room temperature, so molecules keep changing conformation; about 5% are axial at any instant."
+      },
+      {
+        "text": "Half the molecules are axial and half equatorial, because the ring flips so fast",
+        "why": "Fast interconversion doesn't make the populations equal; the 7.6 kJ/mol difference gives about 95% equatorial."
+      },
+      {
+        "text": "Most molecules have the methyl group axial, where it is held closest to the ring",
+        "why": "Axial is the less stable position, because of 1,3-diaxial steric strain; only about 5% of molecules are axial."
+      }
+    ],
+    "explanation": "The ring flips rapidly between chair conformations, but the equatorial conformation is 7.6 kJ/mol more stable, so about 95% of molecules have an equatorial methyl group at any given instant and 5% an axial one."
+  },
+  {
+    "id": "oc4-monosubstituted-energy-percent-trend",
+    "type": "multiple-choice",
+    "prompt": "According to the relationship ΔE = −RT ln K plotted in Figure 4.7.1, what happens as the energy difference between two isomers increases?",
+    "choices": [
+      {
+        "text": "The percentage of the more stable isomer at equilibrium increases",
+        "correct": true
+      },
+      {
+        "text": "The percentages of the two isomers approach 50% each",
+        "why": "Equal percentages correspond to no energy difference. A larger difference shifts the equilibrium further toward the more stable isomer."
+      },
+      {
+        "text": "The percentage of the less stable isomer increases",
+        "why": "The curve for the less stable isomer decreases as the energy difference grows."
+      },
+      {
+        "text": "The percentages don't change; only the rate of interconversion changes",
+        "why": "ΔE = −RT ln K links the energy difference directly to the equilibrium constant, and so to the percentages."
+      }
+    ],
+    "explanation": "The percentages of two isomers at equilibrium can be calculated from ΔE = −RT ln K. In Figure 4.7.1 the curve for the more stable isomer rises and the curve for the less stable isomer falls as the energy difference increases."
+  },
+  {
+    "id": "oc4-monosubstituted-ethyl-percent-equatorial",
+    "type": "numeric",
+    "prompt": "Axial ethylcyclohexane is 8.0 kJ/mol less stable than equatorial. Using ΔE = −RT ln K with R = 8.315 J/(K·mol) and T = 298 K, what percentage of ethylcyclohexane molecules have the ethyl group equatorial at equilibrium?",
+    "answer": 96.2,
+    "unit": "%",
+    "tolerance": 0.005,
+    "explanation": "K = e^(ΔE/RT) = e^(8000 / (8.315 × 298)) = e^3.23 ≈ 25.2, so the equatorial fraction is K/(1 + K) = 25.2/26.2 ≈ 0.962, or 96.2%. Compare about 95% for methylcyclohexane, whose energy difference (7.6 kJ/mol) is slightly smaller."
+  },
+  {
+    "id": "oc4-monosubstituted-diaxial-origin",
+    "type": "multiple-choice",
+    "prompt": "What causes the energy difference between the axial and equatorial conformations of methylcyclohexane?",
+    "choices": [
+      {
+        "text": "Steric strain from 1,3-diaxial interactions between the axial methyl and the axial hydrogens on C3 and C5",
+        "correct": true
+      },
+      {
+        "text": "Angle strain, because an axial substituent bends the ring's bond angles away from tetrahedral",
+        "why": "Both chairs are free of angle strain. The difference is steric: the axial methyl is too close to the axial hydrogens three carbons away."
+      },
+      {
+        "text": "Torsional strain from eclipsed bonds in the axial conformation",
+        "why": "Both chair conformations have all bonds staggered. The extra energy comes from crowding, not eclipsing."
+      },
+      {
+        "text": "Steric strain between the axial methyl and the hydrogens on the adjacent carbons, C2 and C6",
+        "why": "The interactions are 1,3-diaxial: the methyl on C1 crowds the axial hydrogens three carbons away, on C3 and C5."
+      }
+    ],
+    "explanation": "The energy difference between axial and equatorial conformations is due to steric strain caused by 1,3-diaxial interactions. The axial methyl group on C1 is too close to the axial hydrogens three carbons away on C3 and C5, resulting in 7.6 kJ/mol of steric strain (Figure 4.7.2)."
+  },
+  {
+    "id": "oc4-monosubstituted-gauche-butane-link",
+    "type": "multiple-choice",
+    "prompt": "A single 1,3-diaxial interaction between an axial methyl group and an axial hydrogen in methylcyclohexane is the same steric interaction found in which conformation?",
+    "choices": [
+      {
+        "text": "Gauche butane",
+        "correct": true
+      },
+      {
+        "text": "Anti butane",
+        "why": "In anti butane the methyl groups are 180° apart and there is no steric strain; it is the reference conformation."
+      },
+      {
+        "text": "Eclipsed ethane",
+        "why": "Eclipsed ethane has torsional strain from eclipsed bonds. The 1,3-diaxial interaction is steric strain in a staggered arrangement."
+      },
+      {
+        "text": "Butane with the methyl groups eclipsed",
+        "why": "That conformation has both torsional and steric strain (19 kJ/mol). The chair has no eclipsed bonds."
+      }
+    ],
+    "explanation": "Comparing a four-carbon fragment of axial methylcyclohexane with gauche butane shows that the steric interaction is the same in both (Figure 4.7.3). Gauche butane is less stable than anti butane by 3.8 kJ/mol because of steric interference between hydrogen atoms on the two methyl groups."
+  },
+  {
+    "id": "oc4-monosubstituted-gauche-count",
+    "type": "numeric",
+    "prompt": "How many gauche-butane-type steric interactions does axial methylcyclohexane have?",
+    "answer": 2,
+    "explanation": "The axial methyl group interacts with the axial hydrogens on both C3 and C5. Because axial methylcyclohexane has two such interactions, it has 2 × 3.8 = 7.6 kJ/mol of steric strain (Figure 4.7.3). Equatorial methylcyclohexane has none."
+  },
+  {
+    "id": "oc4-monosubstituted-equatorial-strain",
+    "type": "numeric",
+    "prompt": "How much 1,3-diaxial steric strain does equatorial methylcyclohexane have, in kJ/mol?",
+    "answer": 0,
+    "unit": "kJ/mol",
+    "explanation": "Equatorial methylcyclohexane has no 1,3-diaxial (gauche-butane-type) interactions and is therefore more stable than the axial conformer, which has 2 × 3.8 = 7.6 kJ/mol of steric strain."
+  },
+  {
+    "id": "oc4-monosubstituted-table-doubling",
+    "type": "multiple-choice",
+    "prompt": "Table 4.7.1 lists a 1,3-diaxial strain for each substituent (for example, 3.8 kJ/mol for CH3). How do you get the total strain of the axial conformation of a monosubstituted cyclohexane?",
+    "choices": [
+      {
+        "text": "Double the table value, because the axial substituent interacts with two axial hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Use the table value as it is; it is already the total for the molecule",
+        "why": "The values refer to the interaction of the substituent with a single hydrogen atom. Methylcyclohexane's 7.6 kJ/mol is 2 × 3.8."
+      },
+      {
+        "text": "Multiply the table value by three, one for each axial hydrogen on the same face",
+        "why": "The substituent's own carbon is one of the three; it crowds only the axial hydrogens on C3 and C5."
+      },
+      {
+        "text": "Halve the table value, because only one of the two chairs has the substituent axial",
+        "why": "The table value is per hydrogen, and the axial substituent has two such interactions, so it is doubled, not halved."
+      }
+    ],
+    "explanation": "The values given in Table 4.7.1 refer to 1,3-diaxial interactions of the substituent with a single hydrogen atom. These values must be doubled to arrive at the amount of strain in a monosubstituted cyclohexane."
+  },
+  {
+    "id": "oc4-monosubstituted-alkyl-size-order",
+    "type": "multiple-choice",
+    "prompt": "Which list puts these alkyl groups in order of increasing 1,3-diaxial steric strain?",
+    "choices": [
+      {
+        "text": "H3C− < CH3CH2− < (CH3)2CH− ≪ (CH3)3C−",
+        "correct": true
+      },
+      {
+        "text": "(CH3)3C− < (CH3)2CH− < CH3CH2− < H3C−",
+        "why": "That is the reverse. Strain increases with the size of the alkyl group, so tert-butyl is the worst."
+      },
+      {
+        "text": "H3C− ≪ CH3CH2− < (CH3)2CH− < (CH3)3C−",
+        "why": "Methyl (3.8), ethyl (4.0) and isopropyl (4.6 kJ/mol) are close together; the big jump is to tert-butyl (11.4 kJ/mol)."
+      },
+      {
+        "text": "All four cause the same strain, because each attaches to the ring through one carbon",
+        "why": "The amount of strain depends on the nature and size of the substituent, not just the attached atom."
+      }
+    ],
+    "explanation": "The amount of steric strain increases through the series H3C− < CH3CH2− < (CH3)2CH− ≪ (CH3)3C−, paralleling the increasing size of the alkyl groups. Table 4.7.1 gives 3.8, 4.0, 4.6 and 11.4 kJ/mol per 1,3-diaxial interaction with H."
+  },
+  {
+    "id": "oc4-monosubstituted-tert-butyl-strain",
+    "type": "numeric",
+    "prompt": "Table 4.7.1 gives 11.4 kJ/mol for each 1,3-diaxial interaction between a tert-butyl group and a hydrogen. How much steric strain does axial tert-butylcyclohexane have, in kJ/mol?",
+    "answer": 22.8,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The axial tert-butyl group interacts with the axial hydrogens on C3 and C5, so the table value must be doubled: 2 × 11.4 = 22.8 kJ/mol."
+  },
+  {
+    "id": "oc4-monosubstituted-carboxylic-acid-difference",
+    "type": "numeric",
+    "prompt": "Table 4.7.1 gives 2.9 kJ/mol for each 1,3-diaxial interaction between a CO2H group and a hydrogen. What is the energy difference between the axial and equatorial conformations of cyclohexanecarboxylic acid, in kJ/mol?",
+    "answer": 5.8,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The axial CO2H group has two 1,3-diaxial interactions, with the axial hydrogens on C3 and C5: 2 × 2.9 = 5.8 kJ/mol. The equatorial conformation has none, so it is favored by 5.8 kJ/mol."
+  },
+  {
+    "id": "oc4-monosubstituted-largest-difference",
+    "type": "multiple-choice",
+    "prompt": "Using Table 4.7.1, which of these monosubstituted cyclohexanes has the largest energy difference between its axial and equatorial conformations?",
+    "choices": [
+      {
+        "text": "Phenylcyclohexane (C6H5)",
+        "correct": true
+      },
+      {
+        "text": "Isopropylcyclohexane (CH(CH3)2)",
+        "why": "Isopropyl is branched, but its 1,3-diaxial strain (4.6 kJ/mol per H) is less than phenyl's (6.3 kJ/mol)."
+      },
+      {
+        "text": "Ethylcyclohexane (CH2CH3)",
+        "why": "Ethyl (4.0 kJ/mol per H) is only slightly worse than methyl."
+      },
+      {
+        "text": "Cyclohexanol (OH)",
+        "why": "OH is small: 2.1 kJ/mol per H, giving a difference of only 4.2 kJ/mol."
+      }
+    ],
+    "explanation": "Table 4.7.1 gives 1,3-diaxial strains per hydrogen of 6.3 kJ/mol for C6H5, 4.6 for CH(CH3)2, 4.0 for CH2CH3 and 2.1 for OH. Doubling, phenylcyclohexane's axial conformation is 12.6 kJ/mol less stable than its equatorial one, the largest of the four."
+  },
+  {
+    "id": "oc4-monosubstituted-smallest-strain",
+    "type": "multiple-choice",
+    "prompt": "Which substituent in Table 4.7.1 causes the least 1,3-diaxial steric strain?",
+    "choices": [
+      {
+        "text": "CN, at 0.4 kJ/mol",
+        "correct": true
+      },
+      {
+        "text": "F, at 0.5 kJ/mol",
+        "why": "Fluorine is small, but the cyano group's strain is slightly lower still."
+      },
+      {
+        "text": "CH3, at 3.8 kJ/mol",
+        "why": "Methyl's 3.8 kJ/mol is the same as a gauche butane interaction, far more than CN or the halogens."
+      },
+      {
+        "text": "Cl, at 1.0 kJ/mol",
+        "why": "Chlorine and bromine each cause 1.0 kJ/mol, more than F or CN."
+      }
+    ],
+    "explanation": "Table 4.7.1 lists CN at 0.4 kJ/mol per 1,3-diaxial interaction, the smallest value, just below F (0.5) and well below Cl and Br (1.0) and CH3 (3.8)."
+  }
+]

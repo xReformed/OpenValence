@@ -13,7 +13,9 @@ Closely related to the concept of chirality, and particularly important in biolo
 
 [Image: The figure shows a reaction in which 2-butanone (prochiral) forms 2-butanol (chiral). C2 in both structures is highlighted.]
 
-Which enantiomer of 2-butanol is produced depends on which face of the planar carbonyl group undergoes reaction. To distinguish between the possibilities, we use the stereochemical descriptors Re and Si. Rank the three groups attached to the trigonal, sp^2-hybridized carbon, and imagine curved arrows from the highest to second-highest to third-highest ranked substituents. The face on which the arrows curve clockwise is designated the Re face (similar to R), and the face on which the arrows curve counterclockwise is designated the Si face (similar to S). In this example, addition of hydrogen from the Re face gives (S)-2-butane, and addition from the Si face gives (R)-2-butane.
+Which enantiomer of 2-butanol is produced depends on which face of the planar carbonyl group undergoes reaction. To distinguish between the possibilities, we use the stereochemical descriptors Re and Si. Rank the three groups attached to the trigonal, sp^2-hybridized carbon, and imagine curved arrows from the highest to second-highest to third-highest ranked substituents. The face on which the arrows curve clockwise is designated the Re face (similar to R), and the face on which the arrows curve counterclockwise is designated the Si face (similar to S). In this example, addition of hydrogen from the Re face gives (S)-2-butanol, and addition from the Si face gives (R)-2-butanol.
+
+[Note: corrected; the source prints "gives (S)-2-butane, and addition from the Si face gives (R)-2-butane." where this reads "gives (S)-2-butanol, and addition from the Si face gives (R)-2-butanol.". The product of adding hydrogen to 2-butanone is 2-butanol, as the rest of the paragraph says; butane is achiral.]
 
 [Image: 2-Butanone is labeled Si face (counterclockwise) at the bottom and Re face (clockwise) at the top. To the right, the structures of (S)-2-butanol and (R)-2-butanol are drawn.]
 

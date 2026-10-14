@@ -1,0 +1,315 @@
+[
+  {
+    "id": "oc3-propane-barrier",
+    "type": "numeric",
+    "prompt": "What is the total torsional barrier to rotation around a carbon–carbon bond in propane, in kJ/mol?",
+    "answer": 14,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The barrier is slightly higher in propane than in ethane: 14 kJ/mol (3.4 kcal/mol) versus 12 kJ/mol. The staggered conformer is lower in energy by 14 kJ/mol (Figure 3.7.1)."
+  },
+  {
+    "id": "oc3-propane-eclipsed-interactions",
+    "type": "multiple-choice",
+    "prompt": "Which eclipsing interactions are present in the eclipsed conformation of propane?",
+    "choices": [
+      {
+        "text": "Two H ⟷ H interactions and one H ⟷ CH3 interaction",
+        "correct": true
+      },
+      {
+        "text": "Three H ⟷ H interactions",
+        "why": "That is ethane. In propane one rear position carries a methyl group, so one interaction is H ⟷ CH3."
+      },
+      {
+        "text": "One H ⟷ H interaction and two H ⟷ CH3 interactions",
+        "why": "Propane has only one methyl group on the two carbons of the bond being viewed, so only one interaction involves CH3."
+      },
+      {
+        "text": "One CH3 ⟷ CH3 interaction and two H ⟷ H interactions",
+        "why": "A CH3 ⟷ CH3 interaction needs a methyl on each carbon of the bond, as in butane. Propane's C1–C2 bond has only one."
+      }
+    ],
+    "explanation": "The eclipsed conformation of propane has three interactions: two ethane-type hydrogen–hydrogen interactions and one additional hydrogen–methyl interaction."
+  },
+  {
+    "id": "oc3-propane-h-ch3-cost",
+    "type": "numeric",
+    "prompt": "Propane's torsional barrier is 14 kJ/mol, and each H ⟷ H eclipsing interaction costs 4.0 kJ/mol. What energy cost does that leave for the H ⟷ CH3 eclipsing interaction, in kJ/mol?",
+    "answer": 6.0,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The eclipsed conformation has two H ⟷ H interactions and one H ⟷ CH3 interaction, so the H ⟷ CH3 cost is 14 − (2 × 4.0) = 6.0 kJ/mol (1.4 kcal/mol)."
+  },
+  {
+    "id": "oc3-propane-higher-barrier-reason",
+    "type": "multiple-choice",
+    "prompt": "Why is the rotation barrier in propane (14 kJ/mol) higher than in ethane (12 kJ/mol)?",
+    "choices": [
+      {
+        "text": "One of the three eclipsing interactions is H ⟷ CH3, which costs 6.0 kJ/mol instead of 4.0",
+        "correct": true
+      },
+      {
+        "text": "Propane's eclipsed conformation has more eclipsing interactions than ethane's",
+        "why": "Both have three eclipsing interactions. The difference is that one of propane's involves a methyl group."
+      },
+      {
+        "text": "Propane's C–C bond is a stronger bond",
+        "why": "Bond strength is not what sets the barrier; the eclipsing interactions in the eclipsed conformation do."
+      },
+      {
+        "text": "Propane's staggered conformation has steric strain",
+        "why": "The 14 kJ/mol is measured from a staggered conformation with no eclipsing; the extra 2 kJ/mol comes from the H ⟷ CH3 eclipsing interaction."
+      }
+    ],
+    "explanation": "Eclipsed propane has two H ⟷ H interactions (4.0 kJ/mol each) and one H ⟷ CH3 interaction (6.0 kJ/mol): 2 × 4.0 + 6.0 = 14 kJ/mol, versus 3 × 4.0 = 12 kJ/mol for ethane."
+  },
+  {
+    "id": "oc3-butane-anti",
+    "type": "multiple-choice",
+    "prompt": "Viewed along the C2–C3 bond, what is the anti conformation of butane?",
+    "choices": [
+      {
+        "text": "The staggered conformation with the two methyl groups 180° apart",
+        "correct": true
+      },
+      {
+        "text": "The staggered conformation with the two methyl groups 60° apart",
+        "why": "That is the gauche conformation, 3.8 kJ/mol higher in energy than anti."
+      },
+      {
+        "text": "The eclipsed conformation with the two methyl groups at 0°",
+        "why": "That is the highest-energy conformation, with the methyls eclipsing each other."
+      },
+      {
+        "text": "Any conformation in which no bonds are eclipsed",
+        "why": "Both anti and gauche are staggered. Anti is the specific one with the methyls as far apart as possible."
+      }
+    ],
+    "explanation": "In butane, the lowest-energy arrangement, called the anti conformation, is the one in which the two methyl groups are as far apart as possible: 180° away from each other."
+  },
+  {
+    "id": "oc3-butane-eclipsed-ch3-h-strain",
+    "type": "numeric",
+    "prompt": "Rotating butane 60° from the anti conformation gives an eclipsed conformation with two CH3 ⟷ H interactions and one H ⟷ H interaction. How much more strained is it than the anti conformation, in kJ/mol?",
+    "answer": 16,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Using the values from ethane and propane: 2 × 6.0 kJ/mol + 4.0 kJ/mol = 16 kJ/mol (3.8 kcal/mol)."
+  },
+  {
+    "id": "oc3-butane-gauche-energy",
+    "type": "numeric",
+    "prompt": "How much higher in energy is the gauche conformation of butane than the anti conformation, in kJ/mol?",
+    "answer": 3.8,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The gauche conformation, with the methyl groups 60° apart, lies 3.8 kJ/mol (0.9 kcal/mol) above the anti conformation, even though it has no eclipsing interactions (Table 3.7.1)."
+  },
+  {
+    "id": "oc3-butane-gauche-angle",
+    "type": "numeric",
+    "prompt": "In the gauche conformation of butane, what is the dihedral angle between the two methyl groups, in degrees?",
+    "answer": 60,
+    "unit": "°",
+    "tolerance": 0.01,
+    "explanation": "The gauche conformation is the staggered conformation where the methyl groups are 60° apart, compared with 180° in the anti conformation."
+  },
+  {
+    "id": "oc3-butane-gauche-reason",
+    "type": "multiple-choice",
+    "prompt": "The gauche conformation of butane has no eclipsing interactions. Why is it still higher in energy than the anti conformation?",
+    "choices": [
+      {
+        "text": "Steric strain: the hydrogens of the two methyl groups are near one another",
+        "correct": true
+      },
+      {
+        "text": "Torsional strain from eclipsed C–H bonds",
+        "why": "Gauche is a staggered conformation, so no bonds are eclipsed. The strain comes from the methyl groups' crowding."
+      },
+      {
+        "text": "Its C–C bonds are bent away from tetrahedral angles",
+        "why": "The section attributes the 3.8 kJ/mol to the methyl hydrogens being close together, not to bent bonds."
+      },
+      {
+        "text": "It isn't; gauche and anti have the same energy because both are staggered",
+        "why": "Not all staggered conformations have the same energy in butane: gauche lies 3.8 kJ/mol above anti."
+      }
+    ],
+    "explanation": "The 3.8 kJ/mol energy difference occurs because the hydrogen atoms of the methyl groups are near one another in the gauche conformation, resulting in steric strain (Table 3.7.1)."
+  },
+  {
+    "id": "oc3-butane-steric-strain-definition",
+    "type": "multiple-choice",
+    "prompt": "What is steric strain?",
+    "choices": [
+      {
+        "text": "The repulsive interaction that occurs when atoms are forced closer together than their atomic radii allow",
+        "correct": true
+      },
+      {
+        "text": "The extra energy of eclipsed bonds on adjacent carbons",
+        "why": "That is torsional strain, as in eclipsed ethane."
+      },
+      {
+        "text": "The energy needed to break a C–C bond",
+        "why": "Steric strain involves no bond breaking; it is repulsion between atoms that are too close."
+      },
+      {
+        "text": "An attraction between nearby methyl groups",
+        "why": "Steric strain is repulsive: it raises the energy, which is why gauche butane is less stable than anti."
+      }
+    ],
+    "explanation": "Steric strain is the repulsive interaction that occurs when atoms are forced closer together than their atomic radii allow. It's the result of trying to force two atoms to occupy the same space."
+  },
+  {
+    "id": "oc3-butane-fully-eclipsed-total",
+    "type": "numeric",
+    "prompt": "What total strain energy has been estimated for the butane conformation in which the two methyl groups eclipse each other (dihedral angle 0°), in kJ/mol?",
+    "answer": 19,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "With the methyl groups forced even closer than in the gauche conformation, both torsional and steric strain are present, for an estimated total of 19 kJ/mol (4.5 kcal/mol). This is the energy maximum in Figure 3.7.2."
+  },
+  {
+    "id": "oc3-butane-ch3-ch3-cost",
+    "type": "numeric",
+    "prompt": "The fully eclipsed butane conformation has a total strain of 19 kJ/mol, made up of one CH3 ⟷ CH3 eclipsing interaction and two H ⟷ H interactions (4.0 kJ/mol each). What is the cost of the CH3 ⟷ CH3 eclipsing interaction, in kJ/mol?",
+    "answer": 11,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "19 kJ/mol − (2 × 4.0 kJ/mol) = 11 kJ/mol (2.6 kcal/mol) for the CH3 ⟷ CH3 eclipsing interaction (Table 3.7.1)."
+  },
+  {
+    "id": "oc3-butane-ch3-ch3-strain-type",
+    "type": "multiple-choice",
+    "prompt": "According to Table 3.7.1, what causes the energy cost of a CH3 ⟷ CH3 eclipsing interaction?",
+    "choices": [
+      {
+        "text": "Both torsional strain and steric strain",
+        "correct": true
+      },
+      {
+        "text": "Torsional strain only",
+        "why": "H ⟷ H eclipsing is purely torsional, but eclipsed methyls are also forced closer than their size allows, adding steric strain."
+      },
+      {
+        "text": "Steric strain only",
+        "why": "That is the gauche CH3 ⟷ CH3 interaction. When the methyls are eclipsed, the bonds are eclipsed too, adding torsional strain."
+      },
+      {
+        "text": "Neither; the interaction is stabilizing",
+        "why": "It costs 11.0 kJ/mol, the largest cost in Table 3.7.1."
+      }
+    ],
+    "explanation": "Table 3.7.1 lists H ⟷ H eclipsed as torsional strain (4.0 kJ/mol), H ⟷ CH3 eclipsed as mostly torsional (6.0), CH3 ⟷ CH3 eclipsed as torsional and steric (11.0), and CH3 ⟷ CH3 gauche as steric (3.8)."
+  },
+  {
+    "id": "oc3-butane-energy-order",
+    "type": "multiple-choice",
+    "prompt": "Which list puts butane's conformations (about the C2–C3 bond) in order of increasing energy?",
+    "choices": [
+      {
+        "text": "Anti < gauche < eclipsed with CH3 ⟷ H interactions < eclipsed with CH3 ⟷ CH3",
+        "correct": true
+      },
+      {
+        "text": "Gauche < anti < eclipsed with CH3 ⟷ H interactions < eclipsed with CH3 ⟷ CH3",
+        "why": "Anti is the lowest-energy conformation; gauche is 3.8 kJ/mol above it because of steric strain."
+      },
+      {
+        "text": "Anti < gauche < eclipsed with CH3 ⟷ CH3 < eclipsed with CH3 ⟷ H interactions",
+        "why": "The methyl–methyl eclipsed conformation (19 kJ/mol) is higher than the one with two CH3 ⟷ H interactions (16 kJ/mol)."
+      },
+      {
+        "text": "Anti = gauche < eclipsed with CH3 ⟷ H interactions = eclipsed with CH3 ⟷ CH3",
+        "why": "In butane, not all staggered conformations have the same energy, and not all eclipsed ones do either."
+      }
+    ],
+    "explanation": "Relative to anti (0), gauche is 3.8 kJ/mol, the eclipsed conformation with two CH3 ⟷ H and one H ⟷ H interaction is 16 kJ/mol, and the conformation with the methyls eclipsed is 19 kJ/mol (Figure 3.7.2)."
+  },
+  {
+    "id": "oc3-butane-eclipsed-difference",
+    "type": "numeric",
+    "prompt": "By how many kJ/mol is butane's methyl–methyl eclipsed conformation (19 kJ/mol) higher in energy than its other eclipsed conformation (16 kJ/mol)?",
+    "answer": 3,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "19 kJ/mol − 16 kJ/mol = 3 kJ/mol. The two eclipsed conformations differ in energy because one has a CH3 ⟷ CH3 interaction (11 kJ/mol) while the other has two CH3 ⟷ H interactions (2 × 6.0 kJ/mol) in its place: 11 + 8 = 19 versus 12 + 4 = 16."
+  },
+  {
+    "id": "oc3-butane-gauche-to-eclipsed-barrier",
+    "type": "numeric",
+    "prompt": "Using butane's energies relative to anti (gauche 3.8 kJ/mol; eclipsed with two CH3 ⟷ H interactions 16 kJ/mol), how much energy is needed to rotate from the gauche conformation to that eclipsed conformation, in kJ/mol?",
+    "answer": 12.2,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Both energies are measured from anti, so the barrier from gauche is 16 − 3.8 = 12.2 kJ/mol."
+  },
+  {
+    "id": "oc3-butane-gauche-count",
+    "type": "numeric",
+    "prompt": "During one full 360° rotation around butane's C2–C3 bond, how many gauche conformations are passed through?",
+    "answer": 2,
+    "explanation": "Starting from anti, rotation passes an eclipsed conformation, a gauche one, and the methyl–methyl eclipsed one at 0°. After 0° the rotation is a mirror image: another gauche, another eclipsed, and back to anti. That makes two gauche conformations."
+  },
+  {
+    "id": "oc3-higher-alkane-conformation-2-methylbutane-eclipsed",
+    "type": "numeric",
+    "prompt": "Viewed along the C2–C3 bond of 2-methylbutane, C2 carries two CH3 groups and an H, and C3 carries one CH3 and two H's. Using Table 3.7.1, what is the total strain of the eclipsed conformation in which the C3 methyl eclipses a C2 methyl, in kJ/mol?",
+    "answer": 21,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The C3 methyl eclipses a C2 methyl (CH3 ⟷ CH3, 11.0 kJ/mol). The other C2 methyl then eclipses an H (H ⟷ CH3, 6.0 kJ/mol), and the C2 hydrogen eclipses the other H (H ⟷ H, 4.0 kJ/mol). Total: 11.0 + 6.0 + 4.0 = 21 kJ/mol."
+  },
+  {
+    "id": "oc3-higher-alkane-conformation-most-stable",
+    "type": "multiple-choice",
+    "prompt": "What is the most favorable conformation for a larger alkane such as decane?",
+    "choices": [
+      {
+        "text": "All carbon–carbon bonds staggered, with large substituents anti to one another",
+        "correct": true
+      },
+      {
+        "text": "All carbon–carbon bonds eclipsed, so the chain is as compact as possible",
+        "why": "Eclipsed arrangements are energy maxima. The most stable conformation has every bond staggered."
+      },
+      {
+        "text": "All carbon–carbon bonds staggered, with large substituents gauche to one another",
+        "why": "Gauche arrangements carry steric strain (3.8 kJ/mol each for methyls); anti is lower in energy."
+      },
+      {
+        "text": "Every conformation is equally favorable in a long chain",
+        "why": "The same principles as for butane apply to all higher alkanes: staggered and anti is best."
+      }
+    ],
+    "explanation": "The principles developed for butane apply to pentane, hexane, and all higher alkanes. The most favorable conformation has the carbon–carbon bonds in staggered arrangements, with large substituents anti to one another, as in the model of decane (Figure 3.7.3)."
+  },
+  {
+    "id": "oc3-higher-alkane-conformation-more-stable-meaning",
+    "type": "multiple-choice",
+    "prompt": "At room temperature, what does it mean to say that one conformer is \"more stable\" than another?",
+    "choices": [
+      {
+        "text": "All conformers are in rapid equilibrium, but at any instant a larger percentage of molecules are in the more stable one",
+        "correct": true
+      },
+      {
+        "text": "The molecule adopts the more stable conformation and stays in it",
+        "why": "Rotations around σ bonds occur so rapidly at room temperature that molecules keep changing conformation."
+      },
+      {
+        "text": "Only the more stable conformer exists; the others are hypothetical",
+        "why": "All conformers are present in equilibrium; the less stable ones are simply less populated."
+      },
+      {
+        "text": "The more stable conformer can be isolated and stored separately",
+        "why": "Conformers interconvert too rapidly to be isolated."
+      }
+    ],
+    "explanation": "Saying one conformer is more stable doesn't mean the molecule adopts and maintains only that conformation. At room temperature, rotations around σ bonds occur so rapidly that all conformers are in equilibrium, but at any given instant a larger percentage of molecules will be found in a more stable conformation."
+  }
+]

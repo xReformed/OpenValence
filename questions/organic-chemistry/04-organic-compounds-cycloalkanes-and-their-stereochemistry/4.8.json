@@ -1,0 +1,353 @@
+[
+  {
+    "id": "oc4-disubstituted-analyze-both-chairs",
+    "type": "multiple-choice",
+    "prompt": "Why is deciding the favored chair conformation of a disubstituted cyclohexane more complex than for a monosubstituted one?",
+    "choices": [
+      {
+        "text": "The steric effects of both substituents must be weighed in both chair conformations",
+        "correct": true
+      },
+      {
+        "text": "Disubstituted cyclohexanes can't ring-flip, so their conformation is fixed",
+        "why": "They ring-flip just as cyclohexane does; the two chairs simply have to be compared with both substituents taken into account."
+      },
+      {
+        "text": "Both substituents must always be equatorial, which some rings can't manage",
+        "why": "Many isomers (cis-1,2, for example) must have one substituent axial in either chair. The task is to find which chair has less total strain."
+      },
+      {
+        "text": "Substituents in disubstituted rings prefer axial positions",
+        "why": "Equatorial is still the less strained position for each substituent; the complication is that both must be considered at once."
+      }
+    ],
+    "explanation": "Monosubstituted cyclohexanes are always more stable with their substituent equatorial, but with disubstituted cyclohexanes the steric effects of both substituents must be taken into account. All steric interactions for both possible chair conformations must be analyzed before deciding which conformation is favored."
+  },
+  {
+    "id": "oc4-disubstituted-cis-meaning",
+    "type": "multiple-choice",
+    "prompt": "In cis-1,2-dimethylcyclohexane, how are the two methyl groups arranged?",
+    "choices": [
+      {
+        "text": "Both on the same face of the ring",
+        "correct": true
+      },
+      {
+        "text": "On opposite faces of the ring",
+        "why": "That is trans-1,2-dimethylcyclohexane."
+      },
+      {
+        "text": "Both axial",
+        "why": "Cis and trans describe faces of the ring, not axial and equatorial positions. In cis-1,2, one methyl is axial and one equatorial in either chair."
+      },
+      {
+        "text": "Both equatorial",
+        "why": "Both-equatorial is possible only for trans-1,2. Cis-1,2 always has one methyl axial and one equatorial."
+      }
+    ],
+    "explanation": "In the cis isomer, both methyl groups are on the same face of the ring. Drawing the ring as a flat representation first, then converting it to a chair, can make it easier to see whether a compound is cis- or trans-disubstituted."
+  },
+  {
+    "id": "oc4-disubstituted-cis-12-chairs-equal",
+    "type": "multiple-choice",
+    "prompt": "How do the two chair conformations of cis-1,2-dimethylcyclohexane compare in energy?",
+    "choices": [
+      {
+        "text": "They are equal, because each has one axial and one equatorial methyl group",
+        "correct": true
+      },
+      {
+        "text": "The diequatorial chair is favored by 11.4 kJ/mol",
+        "why": "That is trans-1,2-dimethylcyclohexane. In the cis isomer, neither chair can put both methyls equatorial."
+      },
+      {
+        "text": "One chair has both methyls axial and is much less stable",
+        "why": "Both-axial is the trans isomer's ring-flipped form. A ring-flip of cis-1,2 just swaps which methyl is axial."
+      },
+      {
+        "text": "The chair with the C1 methyl axial is more stable than the one with the C2 methyl axial",
+        "why": "The two chairs are mirror cases: each has one axial methyl with two 1,3-diaxial interactions plus the gauche interaction, so they are equal."
+      }
+    ],
+    "explanation": "Both chair conformations of cis-1,2-dimethylcyclohexane have one axial methyl group and one equatorial methyl group (Figure 4.8.1). The ring-flip only changes which methyl is axial, so the two conformations are equal in energy."
+  },
+  {
+    "id": "oc4-disubstituted-cis-12-interactions",
+    "type": "multiple-choice",
+    "prompt": "Which steric interactions does each chair conformation of cis-1,2-dimethylcyclohexane have?",
+    "choices": [
+      {
+        "text": "Two CH3 ⟷ H 1,3-diaxial interactions and one gauche butane interaction between the methyls",
+        "correct": true
+      },
+      {
+        "text": "Four CH3 ⟷ H 1,3-diaxial interactions",
+        "why": "That is the diaxial chair of trans-1,2-dimethylcyclohexane. In the cis isomer only one methyl is axial."
+      },
+      {
+        "text": "Only a gauche butane interaction between the methyls",
+        "why": "That is the diequatorial chair of the trans isomer. The cis isomer always has one axial methyl, adding two 1,3-diaxial interactions."
+      },
+      {
+        "text": "Two CH3 ⟷ H 1,3-diaxial interactions only",
+        "why": "The adjacent methyls are also gauche to each other, which adds a third 3.8 kJ/mol interaction."
+      }
+    ],
+    "explanation": "In one chair the axial methyl at C2 has 1,3-diaxial interactions with hydrogens on C4 and C6; in the ring-flipped chair the axial methyl at C1 interacts with hydrogens on C3 and C5. In addition, both conformations have a gauche butane interaction between the two methyl groups (Figure 4.8.1)."
+  },
+  {
+    "id": "oc4-disubstituted-cis-12-total-strain",
+    "type": "numeric",
+    "prompt": "Each CH3 ⟷ H 1,3-diaxial interaction and each gauche butane interaction costs 3.8 kJ/mol. What is the total steric strain in either chair conformation of cis-1,2-dimethylcyclohexane, in kJ/mol?",
+    "answer": 11.4,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Each chair has one axial methyl (two 1,3-diaxial interactions) plus one gauche interaction between the methyls: 3 × 3.8 kJ/mol = 11.4 kJ/mol (2.7 kcal/mol)."
+  },
+  {
+    "id": "oc4-disubstituted-trans-12-diequatorial-strain",
+    "type": "numeric",
+    "prompt": "A gauche butane interaction costs 3.8 kJ/mol. How much steric strain does the diequatorial chair of trans-1,2-dimethylcyclohexane have, in kJ/mol?",
+    "answer": 3.8,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "With both methyl groups equatorial there are no 1,3-diaxial interactions, only the gauche butane interaction between the adjacent methyls: 3.8 kJ/mol (Figure 4.8.2)."
+  },
+  {
+    "id": "oc4-disubstituted-trans-12-diequatorial-why",
+    "type": "multiple-choice",
+    "prompt": "Diequatorial trans-1,2-dimethylcyclohexane has no axial substituents. What is the source of its steric strain?",
+    "choices": [
+      {
+        "text": "A gauche butane interaction between the two adjacent methyl groups",
+        "correct": true
+      },
+      {
+        "text": "1,3-diaxial interactions between the methyls and axial hydrogens",
+        "why": "Only axial substituents have 1,3-diaxial interactions. With both methyls equatorial there are none."
+      },
+      {
+        "text": "Eclipsing of the two methyl groups",
+        "why": "All bonds in a chair are staggered. The adjacent methyls are gauche, not eclipsed."
+      },
+      {
+        "text": "None; it is completely strain-free",
+        "why": "The two methyls on neighboring carbons are still gauche to each other, costing 3.8 kJ/mol."
+      }
+    ],
+    "explanation": "The diequatorial conformation of trans-1,2-dimethylcyclohexane has both methyl groups equatorial with only a gauche butane interaction between them (3.8 kJ/mol) but no 1,3-diaxial interactions (Figure 4.8.2)."
+  },
+  {
+    "id": "oc4-disubstituted-trans-12-diaxial-strain",
+    "type": "numeric",
+    "prompt": "Each CH3 ⟷ H 1,3-diaxial interaction costs 3.8 kJ/mol. What is the total 1,3-diaxial strain in the diaxial chair of trans-1,2-dimethylcyclohexane, in kJ/mol?",
+    "answer": 15.2,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "The axial methyl at C1 interacts with axial hydrogens at C3 and C5, and the axial methyl at C2 interacts with axial hydrogens at C4 and C6. These four 1,3-diaxial interactions produce 4 × 3.8 = 15.2 kJ/mol of steric strain."
+  },
+  {
+    "id": "oc4-disubstituted-trans-12-difference",
+    "type": "numeric",
+    "prompt": "The diaxial chair of trans-1,2-dimethylcyclohexane has 15.2 kJ/mol of steric strain, and the diequatorial chair has 3.8 kJ/mol. By how much is the diequatorial chair favored, in kJ/mol?",
+    "answer": 11.4,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "15.2 − 3.8 = 11.4 kJ/mol (2.7 kcal/mol) in favor of the diequatorial conformation (Figure 4.8.2)."
+  },
+  {
+    "id": "oc4-disubstituted-trans-12-prediction",
+    "type": "multiple-choice",
+    "prompt": "What does conformational analysis predict for trans-1,2-dimethylcyclohexane?",
+    "choices": [
+      {
+        "text": "It exists almost exclusively in the diequatorial conformation",
+        "correct": true
+      },
+      {
+        "text": "It exists mostly in the diaxial conformation, which avoids the gauche interaction",
+        "why": "Escaping one gauche interaction (3.8 kJ/mol) costs four 1,3-diaxial interactions (15.2 kJ/mol), so diaxial is 11.4 kJ/mol worse."
+      },
+      {
+        "text": "It is a 50 : 50 mixture of the two chairs",
+        "why": "The two chairs differ by 11.4 kJ/mol, so they are far from equally populated."
+      },
+      {
+        "text": "It has one methyl axial and one equatorial in its preferred conformation",
+        "why": "That arrangement belongs to cis-1,2. Trans-1,2 is either diaxial or diequatorial."
+      }
+    ],
+    "explanation": "The diaxial conformation is 15.2 − 3.8 = 11.4 kJ/mol less favorable than the diequatorial conformation, so trans-1,2-dimethylcyclohexane is predicted to exist almost exclusively in the diequatorial conformation."
+  },
+  {
+    "id": "oc4-disubstituted-12-cis-vs-trans",
+    "type": "multiple-choice",
+    "prompt": "Comparing each isomer of 1,2-dimethylcyclohexane in its most stable chair, which is less strained?",
+    "choices": [
+      {
+        "text": "Trans, by 7.6 kJ/mol (3.8 versus 11.4 kJ/mol)",
+        "correct": true
+      },
+      {
+        "text": "Cis, by 7.6 kJ/mol",
+        "why": "Cis-1,2 must keep one methyl axial (two 1,3-diaxial interactions) plus the gauche interaction: 11.4 kJ/mol. Trans can be diequatorial."
+      },
+      {
+        "text": "Trans, by 11.4 kJ/mol",
+        "why": "11.4 kJ/mol is the gap between trans's own two chairs. Its best chair (3.8) versus cis's (11.4) differs by 7.6 kJ/mol."
+      },
+      {
+        "text": "Neither; both have a gauche interaction, so they are equal",
+        "why": "Both do have the gauche interaction, but only cis is forced to have an axial methyl as well."
+      }
+    ],
+    "explanation": "Either chair of cis-1,2-dimethylcyclohexane has 3 × 3.8 = 11.4 kJ/mol of strain, while the diequatorial chair of the trans isomer has only the 3.8 kJ/mol gauche interaction. 11.4 − 3.8 = 7.6 kJ/mol in favor of trans."
+  },
+  {
+    "id": "oc4-disubstituted-13-cis-relationship",
+    "type": "multiple-choice",
+    "prompt": "According to Table 4.8.1, what axial/equatorial relationships are possible for a 1,3-cis disubstituted cyclohexane?",
+    "choices": [
+      {
+        "text": "a,a or e,e",
+        "correct": true
+      },
+      {
+        "text": "a,e or e,a",
+        "why": "That is 1,3-trans (and also 1,2-cis and 1,4-cis). Cis does not mean the same thing at every ring position."
+      },
+      {
+        "text": "Only e,e",
+        "why": "A ring-flip turns every equatorial position axial, so the e,e chair always has an a,a partner."
+      },
+      {
+        "text": "a,e, e,a, a,a or e,e, depending on the ring-flip",
+        "why": "A ring-flip can't change cis to trans. Each pattern has just two chairs, either a,a/e,e or a,e/e,a."
+      }
+    ],
+    "explanation": "Table 4.8.1: 1,2-cis a,e or e,a; 1,2-trans a,a or e,e; 1,3-cis a,a or e,e; 1,3-trans a,e or e,a; 1,4-cis a,e or e,a; 1,4-trans a,a or e,e."
+  },
+  {
+    "id": "oc4-disubstituted-13-trans-relationship",
+    "type": "multiple-choice",
+    "prompt": "According to Table 4.8.1, what axial/equatorial relationships are possible for a 1,3-trans disubstituted cyclohexane?",
+    "choices": [
+      {
+        "text": "a,e or e,a",
+        "correct": true
+      },
+      {
+        "text": "a,a or e,e",
+        "why": "That is 1,3-cis. The pattern alternates: 1,2-trans and 1,4-trans are a,a or e,e, but 1,3-trans is a,e."
+      },
+      {
+        "text": "Only a,a",
+        "why": "A ring-flip converts every axial position to equatorial, so no isomer is stuck diaxial."
+      },
+      {
+        "text": "Only e,e",
+        "why": "In 1,3-trans one substituent is always axial; both can be equatorial only in 1,3-cis."
+      }
+    ],
+    "explanation": "Table 4.8.1 gives a,e or e,a for 1,3-trans disubstituted cyclohexanes, the same as for 1,2-cis and 1,4-cis. Either chair has one axial and one equatorial substituent."
+  },
+  {
+    "id": "oc4-disubstituted-diequatorial-pattern",
+    "type": "multiple-choice",
+    "prompt": "Which of these disubstituted cyclohexanes can adopt a chair with both substituents equatorial?",
+    "choices": [
+      {
+        "text": "trans-1,4",
+        "correct": true
+      },
+      {
+        "text": "cis-1,4",
+        "why": "Table 4.8.1 gives 1,4-cis as a,e or e,a: one substituent is always axial."
+      },
+      {
+        "text": "trans-1,3",
+        "why": "Table 4.8.1 gives 1,3-trans as a,e or e,a."
+      },
+      {
+        "text": "cis-1,2",
+        "why": "Table 4.8.1 gives 1,2-cis as a,e or e,a, which is why both chairs of cis-1,2-dimethylcyclohexane have an axial methyl."
+      }
+    ],
+    "explanation": "Table 4.8.1 lists the a,a or e,e relationship for 1,2-trans, 1,3-cis and 1,4-trans. Of the choices, only trans-1,4 can put both substituents equatorial."
+  },
+  {
+    "id": "oc4-disubstituted-trans-14-dimethyl-difference",
+    "type": "numeric",
+    "prompt": "In trans-1,4-dimethylcyclohexane the methyl groups are too far apart to interact with each other. Each CH3 ⟷ H 1,3-diaxial interaction costs 3.8 kJ/mol. By how much is the diequatorial chair favored over the diaxial chair, in kJ/mol?",
+    "answer": 15.2,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Trans-1,4 is a,a or e,e (Table 4.8.1). In the diaxial chair each axial methyl has two 1,3-diaxial interactions with hydrogens: 4 × 3.8 = 15.2 kJ/mol. The diequatorial chair has none, and unlike trans-1,2 there is no gauche interaction to subtract, so the difference is 15.2 kJ/mol."
+  },
+  {
+    "id": "oc4-disubstituted-tert-butyl-hydroxy-difference",
+    "type": "numeric",
+    "prompt": "cis-4-tert-Butylcyclohexanol has its OH and tert-butyl groups cis-1,4. Table 4.7.1 gives 1,3-diaxial strains with H of 11.4 kJ/mol for tert-butyl and 2.1 kJ/mol for OH. By how much is the more stable chair favored, in kJ/mol?",
+    "answer": 18.6,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Cis-1,4 is a,e or e,a, so one group is always axial. Axial tert-butyl gives 2 × 11.4 = 22.8 kJ/mol; axial OH gives 2 × 2.1 = 4.2 kJ/mol. The chair with tert-butyl equatorial and OH axial is favored by 22.8 − 4.2 = 18.6 kJ/mol."
+  },
+  {
+    "id": "oc4-disubstituted-tert-butyl-phenyl-favored",
+    "type": "multiple-choice",
+    "prompt": "Table 4.7.1 gives 1,3-diaxial strains with H of 11.4 kJ/mol for tert-butyl and 6.3 kJ/mol for phenyl (C6H5). What is the more stable chair of cis-1-tert-butyl-4-phenylcyclohexane?",
+    "choices": [
+      {
+        "text": "tert-Butyl equatorial and phenyl axial, with 12.6 kJ/mol of steric strain",
+        "correct": true
+      },
+      {
+        "text": "Phenyl equatorial and tert-butyl axial, with 22.8 kJ/mol of steric strain",
+        "why": "That chair carries the larger strain. Putting the group with the bigger 1,3-diaxial cost equatorial gives the more stable chair."
+      },
+      {
+        "text": "Both groups equatorial, with no 1,3-diaxial strain",
+        "why": "Cis-1,4 is a,e or e,a (Table 4.8.1), so one group must be axial in either chair."
+      },
+      {
+        "text": "Both groups axial, with 35.4 kJ/mol of steric strain",
+        "why": "Diaxial is possible only for trans-1,4, and it would be the least stable arrangement anyway."
+      }
+    ],
+    "explanation": "In cis-1,4 disubstituted cyclohexanes one substituent is axial in either chair. Axial phenyl costs 2 × 6.3 = 12.6 kJ/mol, axial tert-butyl 2 × 11.4 = 22.8 kJ/mol, so the favored chair has the tert-butyl equatorial and the phenyl axial."
+  },
+  {
+    "id": "oc4-disubstituted-isopropyl-methyl-difference",
+    "type": "numeric",
+    "prompt": "In trans-1-isopropyl-3-methylcyclohexane, one group is axial in each chair. Table 4.7.1 gives 1,3-diaxial strains with H of 4.6 kJ/mol for isopropyl and 3.8 kJ/mol for methyl. By how much is the more stable chair favored, in kJ/mol?",
+    "answer": 1.6,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Trans-1,3 is a,e or e,a (Table 4.8.1). Axial isopropyl gives 2 × 4.6 = 9.2 kJ/mol; axial methyl gives 2 × 3.8 = 7.6 kJ/mol. The chair with methyl axial and isopropyl equatorial is favored by 9.2 − 7.6 = 1.6 kJ/mol, a much smaller preference than when a tert-butyl group is involved."
+  },
+  {
+    "id": "oc4-disubstituted-glucose-mannose",
+    "type": "multiple-choice",
+    "prompt": "Glucose and mannose both have six-membered rings. Which is more strained, and why?",
+    "choices": [
+      {
+        "text": "Mannose, because one of its −OH groups is axial while all of glucose's ring substituents are equatorial",
+        "correct": true
+      },
+      {
+        "text": "Glucose, because all of its substituents are equatorial and crowd one another around the ring",
+        "why": "Equatorial substituents avoid 1,3-diaxial interactions. Having every substituent equatorial makes glucose the less strained one."
+      },
+      {
+        "text": "Neither; they have the same substituents, so their strain is the same",
+        "why": "Same substituents, different positions: mannose has an axial −OH with 1,3-diaxial interactions that glucose lacks."
+      },
+      {
+        "text": "Mannose, because its ring is in a boat conformation",
+        "why": "The difference the section points to is an axial −OH group in mannose, not a different ring conformation."
+      }
+    ],
+    "explanation": "In glucose, all substituents on the six-membered ring are equatorial, while in mannose, one of the −OH groups is axial, making it more strained."
+  }
+]

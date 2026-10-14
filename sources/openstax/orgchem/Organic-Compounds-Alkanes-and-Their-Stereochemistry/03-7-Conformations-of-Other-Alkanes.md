@@ -22,7 +22,9 @@ As bond rotation continues, an energy minimum is reached at the staggered confor
 
 [Image: Eclipsed conformation of butane is rotated by 60 degrees to produce gauche conformation of butane.]
 
-As the dihedral angle between the methyl groups approaches zero, an energy maximum is reached at a second eclipsed conformation. Because the methyl groups are forced even closer together than in the gauche conformation, both torsional strain and steric strain are present. A total strain energy of 19 kJ/mol (4.5 kcal/mol) has been estimated for this conformation, making it possible to calculate a value of 11 kJ/mol (2.6 kcal/mol) for the CH3 ⟷ CH3 eclipsing interaction: total strain of 19 kJ/mol minus the strain of two H ⟷ H eclipsing interactions (2 × 4.0 kcal/mol) equals 11 kJ/mol.
+As the dihedral angle between the methyl groups approaches zero, an energy maximum is reached at a second eclipsed conformation. Because the methyl groups are forced even closer together than in the gauche conformation, both torsional strain and steric strain are present. A total strain energy of 19 kJ/mol (4.5 kcal/mol) has been estimated for this conformation, making it possible to calculate a value of 11 kJ/mol (2.6 kcal/mol) for the CH3 ⟷ CH3 eclipsing interaction: total strain of 19 kJ/mol minus the strain of two H ⟷ H eclipsing interactions (2 × 4.0 kJ/mol) equals 11 kJ/mol.
+
+[Note: corrected; the source prints "(2 × 4.0 kcal/mol) equals 11 kJ/mol" where this reads "(2 × 4.0 kJ/mol) equals 11 kJ/mol". An H ⟷ H eclipsing interaction costs 4.0 kJ/mol (1.0 kcal/mol), and 19 − 8.0 = 11 only in kJ/mol.]
 
 [Image: Gauche conformation of butane is rotated by 60 degrees to produce eclipsed conformation of butane.]
 

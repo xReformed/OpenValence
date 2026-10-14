@@ -1,0 +1,375 @@
+[
+  {
+    "id": "oc6-equilibrium-keq-expression",
+    "type": "multiple-choice",
+    "prompt": "For the generalized reaction 2 A + B ⇌ 3 C, which is the equilibrium constant expression?",
+    "choices": [
+      {
+        "text": "K_eq = [C]^3 / ([A]^2[B])",
+        "correct": true
+      },
+      {
+        "text": "K_eq = [C] / ([A][B])",
+        "why": "Each concentration must be raised to the power of its coefficient in the balanced equation, so [C] is cubed and [A] is squared."
+      },
+      {
+        "text": "K_eq = ([A]^2[B]) / [C]^3",
+        "why": "This is upside down. Product concentrations go in the numerator and reactant concentrations in the denominator."
+      },
+      {
+        "text": "K_eq = 3[C] / (2[A][B])",
+        "why": "Coefficients become exponents on the concentrations, not multipliers in front of them."
+      }
+    ],
+    "explanation": "K_eq equals the product concentrations multiplied together, divided by the reactant concentrations multiplied together, with each concentration raised to the power of its coefficient in the balanced equation: K_eq = [C]^3 / ([A]^2[B])."
+  },
+  {
+    "id": "oc6-equilibrium-small-keq",
+    "type": "multiple-choice",
+    "prompt": "A reaction has K_eq = 5 × 10^−6. What does this tell you about the reaction as written?",
+    "choices": [
+      {
+        "text": "It does not take place as written; the equilibrium lies on the reactant side",
+        "correct": true
+      },
+      {
+        "text": "It proceeds almost completely from left to right",
+        "why": "That is true when K_eq is much larger than 1. A K_eq far below 1 means the reactant term dominates at equilibrium."
+      },
+      {
+        "text": "Appreciable amounts of both reactants and products are present at equilibrium",
+        "why": "That describes a K_eq near 1. At 5 × 10^−6 the products are barely present."
+      },
+      {
+        "text": "It is very slow",
+        "why": "K_eq tells only the position of the equilibrium, not the rate. A reaction with an unfavorable K_eq can still be fast."
+      }
+    ],
+    "explanation": "If K_eq is much smaller than 1, the reaction does not take place as written but instead goes in the reverse direction, from right to left. The product concentration term is much smaller than the reactant concentration term."
+  },
+  {
+    "id": "oc6-equilibrium-keq-near-one",
+    "type": "multiple-choice",
+    "prompt": "A reaction has K_eq = 0.8. What would you expect to find at equilibrium?",
+    "choices": [
+      {
+        "text": "Appreciable amounts of both reactants and products",
+        "correct": true
+      },
+      {
+        "text": "Almost entirely products",
+        "why": "Nearly complete conversion needs K_eq much larger than 1 (in practice, above about 10^3)."
+      },
+      {
+        "text": "Almost entirely reactants",
+        "why": "That requires K_eq much smaller than 1. A value of 0.8 is close to 1."
+      },
+      {
+        "text": "No reaction at all, because K_eq is less than 1",
+        "why": "A K_eq slightly below 1 still gives a substantial amount of product; it does not mean nothing reacts."
+      }
+    ],
+    "explanation": "If K_eq is near 1, appreciable amounts of both reactant and product are present at equilibrium. Only when K_eq is much larger or much smaller than 1 does one side dominate."
+  },
+  {
+    "id": "oc6-equilibrium-practical-threshold",
+    "type": "multiple-choice",
+    "prompt": "For practical purposes, an equilibrium constant greater than about what value means the reactant left over at equilibrium will be barely detectable (less than 0.1%)?",
+    "choices": [
+      {
+        "text": "10^3",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "why": "At K_eq near 1, appreciable amounts of both reactant and product remain."
+      },
+      {
+        "text": "10^−3",
+        "why": "A K_eq below 1 favors the reactants, so most of the reactant is left over."
+      },
+      {
+        "text": "7.1 × 10^7",
+        "why": "That is the K_eq for ethylene + HBr, which converts more than 99.99999% of the ethylene. A much smaller K_eq of about 10^3 already leaves less than 0.1% of the reactant."
+      }
+    ],
+    "explanation": "For practical purposes, an equilibrium constant greater than about 10^3 means that the amount of reactant left over will be barely detectable (less than 0.1%)."
+  },
+  {
+    "id": "oc6-equilibrium-endergonic",
+    "type": "multiple-choice",
+    "prompt": "A reaction has ΔG° = +25 kJ/mol. Which description fits it?",
+    "choices": [
+      {
+        "text": "Endergonic: energy is absorbed from the surroundings, and K_eq is less than 1",
+        "correct": true
+      },
+      {
+        "text": "Exergonic: energy is released to the surroundings, and K_eq is greater than 1",
+        "why": "Exergonic reactions have a negative ΔG. A positive ΔG means energy is absorbed."
+      },
+      {
+        "text": "Endergonic, with K_eq greater than 1",
+        "why": "A positive ΔG° gives an unfavorable equilibrium constant, less than 1 (K_eq = e^(−ΔG°/RT))."
+      },
+      {
+        "text": "Exothermic, because ΔG° is the heat of reaction",
+        "why": "The heat of reaction is ΔH, not ΔG. Exothermic and endothermic describe ΔH; exergonic and endergonic describe ΔG."
+      }
+    ],
+    "explanation": "For an unfavorable reaction, ΔG has a positive value, meaning that energy is absorbed by the chemical system from the surroundings; such reactions are endergonic. Table 6.7.1: when ΔG° is positive, the reaction has an unfavorable equilibrium constant and cannot occur spontaneously."
+  },
+  {
+    "id": "oc6-equilibrium-exergonic-vs-exothermic",
+    "type": "multiple-choice",
+    "prompt": "What is the difference between calling a reaction exergonic and calling it exothermic?",
+    "choices": [
+      {
+        "text": "Exergonic means ΔG is negative; exothermic means ΔH is negative",
+        "correct": true
+      },
+      {
+        "text": "They mean the same thing: heat is released",
+        "why": "ΔG = ΔH − TΔS, so the free-energy change and the heat of reaction are different quantities that differ by the entropy term."
+      },
+      {
+        "text": "Exergonic means ΔH is negative; exothermic means ΔG is negative",
+        "why": "These are swapped. Exergonic refers to the Gibbs free-energy change, exothermic to the enthalpy change (heat of reaction)."
+      },
+      {
+        "text": "Exergonic means ΔS is positive; exothermic means ΔH is negative",
+        "why": "A positive ΔS means randomness increases. Exergonic refers to a negative ΔG."
+      }
+    ],
+    "explanation": "A reaction with negative ΔG is exergonic (favorable equilibrium constant). A reaction with negative ΔH releases heat and is exothermic. They are linked by ΔG° = ΔH° − TΔS° (Table 6.7.1)."
+  },
+  {
+    "id": "oc6-equilibrium-biological-standard",
+    "type": "multiple-choice",
+    "prompt": "What conditions does the biological standard free-energy change, ΔG°′, refer to?",
+    "choices": [
+      {
+        "text": "pH = 7.0 with solute concentrations of 1.0 M",
+        "correct": true
+      },
+      {
+        "text": "Pure substances in their most stable form at 1 atm and 298 K",
+        "why": "Those are the standard conditions for ΔG°. The prime marks the biological standard, at pH 7.0."
+      },
+      {
+        "text": "pH = 0 with solute concentrations of 1.0 M",
+        "why": "A 1.0 M H3O+ solution would be pH 0, far from the conditions in living cells. ΔG°′ is defined at pH 7.0."
+      },
+      {
+        "text": "Body temperature, 310 K, at any pH",
+        "why": "The defining feature of ΔG°′ is pH 7.0 with 1.0 M solutes, not a particular temperature."
+      }
+    ],
+    "explanation": "ΔG° refers to standard conditions, with pure substances in their most stable form at 1 atm pressure and a specified temperature, usually 298 K. For biological reactions, the standard free-energy change is denoted ΔG°′ and refers to a reaction carried out at pH = 7.0 with solute concentrations of 1.0 M."
+  },
+  {
+    "id": "oc6-equilibrium-entropy-elimination",
+    "type": "multiple-choice",
+    "prompt": "What is the sign of ΔS° for the elimination (CH3)3C−Br → (CH3)2C=CH2 + HBr, and why?",
+    "choices": [
+      {
+        "text": "Positive, because one molecule splits into two, increasing freedom of movement",
+        "correct": true
+      },
+      {
+        "text": "Negative, because a new double bond forms and restricts motion",
+        "why": "The dominant change is in the number of molecules: one molecule becoming two gives more randomness, so ΔS is positive."
+      },
+      {
+        "text": "Zero, because no atoms are gained or lost",
+        "why": "Atoms are conserved in every reaction. Entropy measures molecular randomness, which increases when one molecule becomes two."
+      },
+      {
+        "text": "Negative, because bonds are broken",
+        "why": "Breaking bonds relates to the enthalpy change, ΔH. ΔS measures molecular randomness, which increases here."
+      }
+    ],
+    "explanation": "In an elimination reaction of the type A → B + C, there is more freedom of movement and molecular randomness in the products than in the reactant because one molecule has split into two. Thus there is a net increase in entropy and ΔS has a positive value."
+  },
+  {
+    "id": "oc6-equilibrium-entropy-addition",
+    "type": "multiple-choice",
+    "prompt": "The addition of HBr to ethylene, H2C=CH2 + HBr → CH3CH2Br, has ΔS° = −0.132 kJ/(K·mol). Why is ΔS° negative?",
+    "choices": [
+      {
+        "text": "Two molecules join to make one, restricting their freedom of movement",
+        "correct": true
+      },
+      {
+        "text": "The reaction releases heat",
+        "why": "Heat released is described by a negative ΔH. ΔS measures the change in molecular randomness."
+      },
+      {
+        "text": "Bromoethane has stronger bonds than the reactants",
+        "why": "Bond strength determines ΔH, not ΔS. ΔS is negative because two molecules become one."
+      },
+      {
+        "text": "The reaction has a large equilibrium constant",
+        "why": "K_eq depends on ΔG. A large K_eq doesn't make ΔS negative; here ΔS is negative despite the favorable K_eq."
+      }
+    ],
+    "explanation": "In an addition reaction of the type A + B → C, the reaction restricts the freedom of movement of two molecules by joining them together, so the product has less randomness than the reactants and ΔS is negative. The reaction of ethylene and HBr, with ΔS° = −0.132 kJ/(K·mol), is an example."
+  },
+  {
+    "id": "oc6-equilibrium-negative-enthalpy",
+    "type": "multiple-choice",
+    "prompt": "A reaction has a negative ΔH. What does this say about the products compared with the reactants?",
+    "choices": [
+      {
+        "text": "The products are more stable, have stronger bonds, and heat is released",
+        "correct": true
+      },
+      {
+        "text": "The products have weaker bonds, and heat is absorbed",
+        "why": "That describes a positive ΔH (endothermic). A negative ΔH means the products have less energy and stronger bonds."
+      },
+      {
+        "text": "The products have more molecular randomness",
+        "why": "Randomness is measured by ΔS, not ΔH."
+      },
+      {
+        "text": "The products form faster than the reactants re-form",
+        "why": "ΔH says nothing about the rate. Rates and equilibria are entirely different."
+      }
+    ],
+    "explanation": "If ΔH is negative, the products have less energy than the reactants. Thus the products are more stable and have stronger bonds than the reactants, heat is released, and the reaction is exothermic."
+  },
+  {
+    "id": "oc6-equilibrium-gasoline-rate",
+    "type": "multiple-choice",
+    "prompt": "The reaction of gasoline with oxygen has a very favorable equilibrium constant, yet gasoline is stable at room temperature. Why?",
+    "choices": [
+      {
+        "text": "The rate of the reaction is slow at 298 K; K_eq says nothing about how fast equilibrium is reached",
+        "correct": true
+      },
+      {
+        "text": "At room temperature the equilibrium actually favors gasoline and oxygen",
+        "why": "The equilibrium favors water and carbon dioxide. The problem is speed, not position of equilibrium."
+      },
+      {
+        "text": "The reaction is endergonic at 298 K and becomes exergonic only when heated",
+        "why": "The equilibrium constant is favorable, so ΔG° is negative. A lighted match makes the reaction fast, not favorable."
+      },
+      {
+        "text": "Oxygen does not react with organic compounds unless a catalyst is present",
+        "why": "Gasoline does react with oxygen, rapidly and completely, at higher temperatures such as contact with a lighted match."
+      }
+    ],
+    "explanation": "An equilibrium constant tells only the position of the equilibrium, not the rate of reaction. Gasoline is stable at room temperature because the rate of its reaction with oxygen is slow at 298 K. Only at higher temperatures does it react rapidly to give water and carbon dioxide. Rates (how fast) and equilibria (how much) are entirely different."
+  },
+  {
+    "id": "oc6-equilibrium-sign-from-keq",
+    "type": "multiple-choice",
+    "prompt": "A reaction has K_eq = 0.05 at 298 K. What is the sign of ΔG°?",
+    "choices": [
+      {
+        "text": "Positive",
+        "correct": true
+      },
+      {
+        "text": "Negative",
+        "why": "ΔG° = −RT ln K_eq. For K_eq less than 1, ln K_eq is negative, so ΔG° comes out positive."
+      },
+      {
+        "text": "Zero",
+        "why": "ΔG° is zero only when K_eq = 1, since ln 1 = 0."
+      },
+      {
+        "text": "It can't be told without knowing ΔH° and ΔS°",
+        "why": "K_eq alone fixes ΔG° through ΔG° = −RT ln K_eq."
+      }
+    ],
+    "explanation": "ΔG° = −RT ln K_eq. Because K_eq = 0.05 is less than 1, ln K_eq is negative and ΔG° is positive: the reaction is endergonic, with energy in when K_eq < 1."
+  },
+  {
+    "id": "oc6-equilibrium-temperature-effect",
+    "type": "multiple-choice",
+    "prompt": "An addition reaction has ΔH° < 0 and ΔS° < 0. Using ΔG° = ΔH° − TΔS°, how does raising the temperature affect ΔG°?",
+    "choices": [
+      {
+        "text": "ΔG° becomes less negative, because −TΔS° is a positive term that grows with T",
+        "correct": true
+      },
+      {
+        "text": "ΔG° becomes more negative, because higher temperature always favors reaction",
+        "why": "With ΔS° negative, −TΔS° is positive, so a higher T makes ΔG° larger (less favorable)."
+      },
+      {
+        "text": "ΔG° doesn't change, because ΔG° depends only on bond strengths",
+        "why": "Bond strengths set ΔH°. ΔG° also contains the temperature-dependent entropy term TΔS°."
+      },
+      {
+        "text": "ΔG° becomes more negative, because −TΔS° is a negative term that grows with T",
+        "why": "Watch the double negative: with ΔS° negative, −TΔS° is positive, so it pushes ΔG° up as T increases."
+      }
+    ],
+    "explanation": "ΔG° is made up of an enthalpy term, ΔH°, and a temperature-dependent entropy term, TΔS°. When ΔS° is negative, −TΔS° is positive and grows as T increases, so ΔG° becomes less negative and the reaction less favorable."
+  },
+  {
+    "id": "oc6-equilibrium-dg-from-keq",
+    "type": "numeric",
+    "prompt": "A reaction has K_eq = 2.5 × 10^4 at 298 K. Using ΔG° = −RT ln K_eq with R = 8.314 J/(K·mol), what is ΔG° in kJ/mol?",
+    "answer": -25.1,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "ln(2.5 × 10^4) = 10.13. ΔG° = −(8.314 J/(K·mol))(298 K)(10.13) = −25,100 J/mol = −25.1 kJ/mol. The negative sign matches K_eq > 1: the reaction is exergonic."
+  },
+  {
+    "id": "oc6-equilibrium-keq-from-dg",
+    "type": "numeric",
+    "prompt": "A reaction has ΔG° = −10.0 kJ/mol at 298 K. Using K_eq = e^(−ΔG°/RT) with R = 8.314 J/(K·mol), what is K_eq?",
+    "answer": 56.6,
+    "tolerance": 0.03,
+    "explanation": "−ΔG°/RT = 10,000 J/mol / (8.314 J/(K·mol) × 298 K) = 10,000/2477.6 = 4.036. K_eq = e^4.036 = 56.6. Remember to convert kJ to J so the units cancel with R."
+  },
+  {
+    "id": "oc6-equilibrium-keq-positive-dg",
+    "type": "numeric",
+    "prompt": "A biological reaction has ΔG° = +5.0 kJ/mol at 310 K. Using K_eq = e^(−ΔG°/RT) with R = 8.314 J/(K·mol), what is K_eq?",
+    "answer": 0.144,
+    "tolerance": 0.03,
+    "explanation": "−ΔG°/RT = −5000 J/mol / (8.314 J/(K·mol) × 310 K) = −5000/2577.3 = −1.940. K_eq = e^−1.940 = 0.144. A positive ΔG° gives K_eq less than 1: the reaction is endergonic."
+  },
+  {
+    "id": "oc6-equilibrium-dg-kcal",
+    "type": "numeric",
+    "prompt": "A reaction has K_eq = 1.0 × 10^5 at 298 K. Using ΔG° = −RT ln K_eq with R = 1.987 cal/(K·mol), what is ΔG° in kcal/mol?",
+    "answer": -6.82,
+    "unit": "kcal/mol",
+    "tolerance": 0.02,
+    "explanation": "ln(1.0 × 10^5) = 11.51. ΔG° = −(1.987 cal/(K·mol))(298 K)(11.51) = −6820 cal/mol = −6.82 kcal/mol. (With R = 8.314 J/(K·mol) the same calculation gives −28.5 kJ/mol.)"
+  },
+  {
+    "id": "oc6-equilibrium-dh-ethylene-hbr",
+    "type": "numeric",
+    "prompt": "For H2C=CH2 + HBr → CH3CH2Br at 298 K, ΔG° = −44.8 kJ/mol and ΔS° = −0.132 kJ/(K·mol). Using ΔG° = ΔH° − TΔS°, what is ΔH° in kJ/mol?",
+    "answer": -84.1,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "ΔH° = ΔG° + TΔS° = −44.8 kJ/mol + (298 K)(−0.132 kJ/(K·mol)) = −44.8 − 39.3 = −84.1 kJ/mol. The reaction is exothermic, and the enthalpy term is larger than the entropy term, so ΔG° stays negative even though ΔS° is unfavorable."
+  },
+  {
+    "id": "oc6-equilibrium-dg-from-dh-ds",
+    "type": "numeric",
+    "prompt": "An addition reaction has ΔH° = −60.0 kJ/mol and ΔS° = −0.110 kJ/(K·mol). Using ΔG° = ΔH° − TΔS°, what is ΔG° at 298 K, in kJ/mol?",
+    "answer": -27.2,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "ΔG° = ΔH° − TΔS° = −60.0 kJ/mol − (298 K)(−0.110 kJ/(K·mol)) = −60.0 + 32.8 = −27.2 kJ/mol. Subtracting a negative TΔS° makes ΔG° less negative than ΔH°, but the reaction is still exergonic."
+  },
+  {
+    "id": "oc6-equilibrium-dh-bonds",
+    "type": "numeric",
+    "prompt": "A reaction breaks reactant bonds with a total strength of 1250 kJ/mol and forms product bonds with a total strength of 1180 kJ/mol. What is ΔH for the reaction, in kJ/mol?",
+    "answer": 70,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "ΔH = (bonds broken) − (bonds formed) = 1250 − 1180 = +70 kJ/mol. The product bonds are weaker than the reactant bonds, so heat is absorbed and the reaction is endothermic."
+  }
+]
