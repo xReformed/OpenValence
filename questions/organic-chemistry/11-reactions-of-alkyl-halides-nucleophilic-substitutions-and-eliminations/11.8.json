@@ -1,0 +1,399 @@
+[
+  {
+    "id": "oc11-e2-name",
+    "type": "multiple-choice",
+    "prompt": "What does the 2 in E2 stand for?",
+    "choices": [
+      {
+        "text": "Bimolecular",
+        "correct": true
+      },
+      {
+        "text": "Two steps",
+        "why": "The E2 reaction takes place in a single step, without intermediates."
+      },
+      {
+        "text": "Two intermediates",
+        "why": "The E2 reaction has no intermediates at all."
+      },
+      {
+        "text": "A disubstituted alkene product",
+        "why": "The 2 describes the molecularity of the reaction, not the alkene's substitution."
+      }
+    ],
+    "explanation": "E2 stands for elimination, bimolecular. Both the base and the alkyl halide take part in the single, rate-limiting step, so the rate depends on both concentrations."
+  },
+  {
+    "id": "oc11-e2-conditions",
+    "type": "multiple-choice",
+    "prompt": "Under what conditions does the E2 reaction occur?",
+    "choices": [
+      {
+        "text": "When an alkyl halide is treated with a strong base, such as hydroxide ion or an alkoxide ion",
+        "correct": true
+      },
+      {
+        "text": "When an alkyl halide is warmed with a weak acid catalyst and no base",
+        "why": "A strong base is needed to pull off the proton in the same step as the leaving group departs."
+      },
+      {
+        "text": "When the alkyl halide has no hydrogen on the carbon next to the leaving group",
+        "why": "E2 removes a hydrogen from the carbon next to the leaving group, so there must be one there."
+      },
+      {
+        "text": "When an alkyl halide dissociates on its own before any base is added",
+        "why": "Spontaneous dissociation gives a carbocation, which is not part of the one-step E2 mechanism."
+      }
+    ],
+    "explanation": "The E2 reaction occurs when an alkyl halide is treated with a strong base, such as hydroxide ion or alkoxide ion (RO−). It is the most commonly occurring pathway for elimination."
+  },
+  {
+    "id": "oc11-e2-rate-law",
+    "type": "multiple-choice",
+    "prompt": "Which rate law do E2 reactions follow?",
+    "choices": [
+      {
+        "text": "Rate = k × [RX] × [Base]",
+        "correct": true
+      },
+      {
+        "text": "Rate = k × [RX]",
+        "why": "That first-order rate law leaves out the base, which takes part in the rate-limiting step."
+      },
+      {
+        "text": "Rate = k × [Base]",
+        "why": "That leaves out the alkyl halide, which also takes part in the rate-limiting step."
+      },
+      {
+        "text": "Rate = k × [RX]^2 × [Base]",
+        "why": "Each concentration appears to the first power: doubling [RX] doubles the rate, it doesn't quadruple it."
+      }
+    ],
+    "explanation": "E2 reactions show second-order kinetics and follow the rate law rate = k × [RX] × [Base]. Both the base and the alkyl halide take part in the rate-limiting step, supporting the one-step mechanism."
+  },
+  {
+    "id": "oc11-e2-double-base",
+    "type": "numeric",
+    "prompt": "In an E2 reaction, by what factor is the rate multiplied when the base concentration is doubled and everything else stays the same?",
+    "answer": 2,
+    "explanation": "Rate = k × [RX] × [Base]. The rate is directly proportional to [Base], so doubling it doubles the rate."
+  },
+  {
+    "id": "oc11-e2-halve-and-triple",
+    "type": "numeric",
+    "prompt": "In an E2 reaction, the alkyl halide concentration is halved and the base concentration is tripled. By what factor is the rate multiplied?",
+    "answer": 1.5,
+    "explanation": "Rate = k × [RX] × [Base]. The new rate is k × (½[RX]) × (3[Base]), so the factor is ½ × 3 = 1.5."
+  },
+  {
+    "id": "oc11-e2-single-step",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes the single step of an E2 reaction?",
+    "choices": [
+      {
+        "text": "The C–H bond breaks, the C=C bond forms and the leaving group departs, all at the same time",
+        "correct": true
+      },
+      {
+        "text": "The leaving group departs first, and then the base removes H+ from the carbocation that forms",
+        "why": "That is the two-step E1 pathway. E2 has no intermediate."
+      },
+      {
+        "text": "The base removes H+ first to form a carbanion, which then expels the leaving group",
+        "why": "That is the E1cB pathway. In E2 everything happens at once."
+      },
+      {
+        "text": "The base attacks the carbon bearing the leaving group from the back side and displaces it",
+        "why": "That is an S_N2 substitution, not an elimination."
+      }
+    ],
+    "explanation": "Like the S_N2 reaction, the E2 reaction takes place in one step without intermediates. As the base begins to abstract H+ from a carbon next to the leaving group, the C–H bond begins to break, a C=C bond begins to form, and the leaving group begins to depart with the electron pair from the C–X bond."
+  },
+  {
+    "id": "oc11-ch-cd-bond-difference",
+    "type": "numeric",
+    "prompt": "A C–H bond is weaker than the corresponding C–D bond by about how many kJ/mol?",
+    "answer": 5,
+    "tolerance": 0.02,
+    "unit": "kJ/mol",
+    "explanation": "A carbon–hydrogen bond is weaker by about 5 kJ/mol (1.2 kcal/mol) than the corresponding carbon–deuterium bond. So a C–H bond is more easily broken, and C–H cleavage is faster."
+  },
+  {
+    "id": "oc11-ch-breaks-faster",
+    "type": "multiple-choice",
+    "prompt": "Why is a C–H bond broken faster than an equivalent C–D bond?",
+    "choices": [
+      {
+        "text": "The C–H bond is weaker than the C–D bond, so it is more easily broken",
+        "correct": true
+      },
+      {
+        "text": "The C–D bond is weaker, but deuterium is too heavy to be removed quickly",
+        "why": "It's the C–H bond that is the weaker one."
+      },
+      {
+        "text": "Deuterium is a better leaving group than hydrogen",
+        "why": "Neither H nor D is the leaving group; both are removed by the base as part of the elimination."
+      },
+      {
+        "text": "C–D bonds can't be broken by bases at all",
+        "why": "They can: elimination of DBr does occur, just more slowly than elimination of HBr."
+      }
+    ],
+    "explanation": "A C–H bond is weaker by about 5 kJ/mol than the corresponding C–D bond. Thus a C–H bond is more easily broken than an equivalent C–D bond, and the rate of C–H bond cleavage is faster."
+  },
+  {
+    "id": "oc11-isotope-effect-ratio",
+    "type": "numeric",
+    "prompt": "Base-induced elimination of HBr from 1-bromo-2-phenylethane is how many times faster than the corresponding elimination of DBr from 1-bromo-2,2-dideuterio-2-phenylethane?",
+    "answer": 7.11,
+    "explanation": "The elimination of HBr proceeds 7.11 times faster than the elimination of DBr. This deuterium isotope effect shows that the C–H (or C–D) bond is broken in the rate-limiting step."
+  },
+  {
+    "id": "oc11-isotope-effect-conclusion",
+    "type": "multiple-choice",
+    "prompt": "What does the deuterium isotope effect in the elimination of 1-bromo-2-phenylethane tell us?",
+    "choices": [
+      {
+        "text": "The C–H bond is broken in the rate-limiting step",
+        "correct": true
+      },
+      {
+        "text": "The C–H bond is broken after the rate-limiting step",
+        "why": "If the C–H bond broke after the slow step, no rate difference would be seen between H and D."
+      },
+      {
+        "text": "A carbocation forms in the rate-limiting step",
+        "why": "The isotope effect points to C–H cleavage in the rate-limiting step, consistent with a one-step mechanism."
+      },
+      {
+        "text": "The C–Br bond is not broken during the reaction",
+        "why": "HBr is eliminated, so the C–Br bond must break."
+      }
+    ],
+    "explanation": "The faster elimination of HBr than DBr tells us that the C–H (or C–D) bond is broken in the rate-limiting step, consistent with the picture of the E2 reaction as a one-step process. If it were otherwise, we wouldn't observe a rate difference."
+  },
+  {
+    "id": "oc11-no-isotope-difference",
+    "type": "multiple-choice",
+    "prompt": "If the C–H bond were broken after the rate-limiting step, what would a rate comparison of a deuterated and a nondeuterated substrate show?",
+    "choices": [
+      {
+        "text": "No rate difference between the two substrates",
+        "correct": true
+      },
+      {
+        "text": "The deuterated substrate reacting faster",
+        "why": "The C–D bond is the stronger one, so it would never make the deuterated substrate faster."
+      },
+      {
+        "text": "The nondeuterated substrate reacting about seven times faster",
+        "why": "That large difference is seen only when the C–H bond breaks in the rate-limiting step, as in E2."
+      },
+      {
+        "text": "No reaction at all for the deuterated substrate",
+        "why": "C–D bonds can be broken. The question is whether that cleavage affects the rate."
+      }
+    ],
+    "explanation": "A rate difference between C–H and C–D substrates appears only when the C–H bond is broken in the rate-limiting step. If the C–H bond broke after it, we wouldn't observe a rate difference."
+  },
+  {
+    "id": "oc11-periplanar-definition",
+    "type": "multiple-choice",
+    "prompt": "What does periplanar geometry mean for an E2 reaction?",
+    "choices": [
+      {
+        "text": "The hydrogen, the two carbons and the leaving group all lie in the same plane",
+        "correct": true
+      },
+      {
+        "text": "The hydrogen and the leaving group are on the same carbon",
+        "why": "They are on neighboring carbons. Periplanar refers to all four reacting atoms lying in one plane."
+      },
+      {
+        "text": "The base approaches the carbon from 180° away from the leaving group",
+        "why": "That describes backside attack in the S_N2 reaction."
+      },
+      {
+        "text": "The C–H and C–X bonds lie at 90° to each other",
+        "why": "In periplanar geometry the two bonds lie in one plane, either syn (same side) or anti (opposite sides)."
+      }
+    ],
+    "explanation": "E2 reactions occur with periplanar geometry, meaning that all four reacting atoms, the hydrogen, the two carbons and the leaving group, lie in the same plane."
+  },
+  {
+    "id": "oc11-anti-vs-syn",
+    "type": "multiple-choice",
+    "prompt": "In anti periplanar geometry, where are the H and the leaving group X relative to each other?",
+    "choices": [
+      {
+        "text": "On opposite sides of the molecule",
+        "correct": true
+      },
+      {
+        "text": "On the same side of the molecule",
+        "why": "That is syn periplanar geometry."
+      },
+      {
+        "text": "On the same carbon atom",
+        "why": "In an elimination, H and X are on neighboring carbons."
+      },
+      {
+        "text": "Perpendicular to each other, out of the plane",
+        "why": "Anti periplanar geometry is still periplanar: H, both carbons and X are in one plane."
+      }
+    ],
+    "explanation": "Two periplanar geometries are possible: syn periplanar, in which the H and the X are on the same side of the molecule, and anti periplanar, in which they are on opposite sides."
+  },
+  {
+    "id": "oc11-anti-preferred",
+    "type": "multiple-choice",
+    "prompt": "Why is anti periplanar geometry energetically preferred over syn periplanar geometry in E2 reactions?",
+    "choices": [
+      {
+        "text": "Anti geometry lets the substituents on the two carbons be staggered, whereas syn geometry requires them to be eclipsed",
+        "correct": true
+      },
+      {
+        "text": "Syn geometry lets the substituents be staggered, whereas anti geometry requires them to be eclipsed",
+        "why": "That's reversed. The anti arrangement is the staggered, lower-energy one."
+      },
+      {
+        "text": "Only anti geometry places the H and the X in the same plane",
+        "why": "Both syn and anti geometries are periplanar, with all four atoms in one plane."
+      },
+      {
+        "text": "Anti geometry places the base right next to the leaving group",
+        "why": "The base removes the hydrogen, which in the anti arrangement is on the side opposite the leaving group."
+      }
+    ],
+    "explanation": "Of the two periplanar geometries, anti periplanar is energetically preferred because it allows the substituents on the two carbons to adopt a staggered relationship, whereas syn geometry requires that they be eclipsed."
+  },
+  {
+    "id": "oc11-why-periplanar",
+    "type": "multiple-choice",
+    "prompt": "Why must the reacting atoms in an E2 reaction be periplanar?",
+    "choices": [
+      {
+        "text": "The sp3 σ orbitals of the C–H and C–X bonds must overlap and become p π orbitals in the alkene, which is easiest if they start in the same plane",
+        "correct": true
+      },
+      {
+        "text": "The base must attack the carbon bearing the leaving group from the back side, which requires a planar arrangement",
+        "why": "Backside attack at carbon is the S_N2 reaction. In E2 the base removes a hydrogen."
+      },
+      {
+        "text": "A planar carbocation must form first, and only periplanar geometry produces one",
+        "why": "No carbocation forms in an E2 reaction; it takes place in a single step."
+      },
+      {
+        "text": "The H and X must leave together as a single HX molecule, which requires them to be on the same carbon",
+        "why": "H and X are on neighboring carbons; the base removes H+ and X leaves as X−."
+      }
+    ],
+    "explanation": "The sp3 σ orbitals in the reactant C–H and C–X bonds must overlap and become p π orbitals in the alkene product, so there must be some overlap in the transition state. This occurs most easily if all the orbitals are in the same plane to begin with."
+  },
+  {
+    "id": "oc11-e2-sn2-analogy",
+    "type": "multiple-choice",
+    "prompt": "How is an E2 reaction with anti periplanar geometry like an S_N2 reaction with 180° geometry?",
+    "choices": [
+      {
+        "text": "In each, an electron pair pushes out the leaving group on the opposite side of the molecule",
+        "correct": true
+      },
+      {
+        "text": "In each, the reagent forms a new bond to the carbon that bears the leaving group",
+        "why": "In E2 the electron pair comes from a neighboring C–H bond; the base doesn't bond to the carbon."
+      },
+      {
+        "text": "In each, a carbocation forms before the leaving group is pushed out",
+        "why": "Neither reaction has an intermediate; both take place in a single step."
+      },
+      {
+        "text": "In each, the electron pair that pushes out the leaving group comes from the leaving group itself",
+        "why": "The pair comes from the nucleophile in S_N2 and from a neighboring C–H bond in E2."
+      }
+    ],
+    "explanation": "In an S_N2 reaction, an electron pair from the incoming nucleophile pushes out the leaving group on the opposite side of the molecule. In an E2 reaction, an electron pair from a neighboring C–H bond does the same."
+  },
+  {
+    "id": "oc11-meso-dibromide-product",
+    "type": "multiple-choice",
+    "prompt": "What alkene forms when meso-1,2-dibromo-1,2-diphenylethane undergoes E2 elimination of HBr with base?",
+    "choices": [
+      {
+        "text": "Only (E)-1-bromo-1,2-diphenylethylene",
+        "correct": true
+      },
+      {
+        "text": "Only (Z)-1-bromo-1,2-diphenylethylene",
+        "why": "The Z alkene comes from the (1R,2R) and (1S,2S) isomers. Anti periplanar elimination from the meso compound gives E."
+      },
+      {
+        "text": "A 50 : 50 mixture of the E and Z alkenes",
+        "why": "The anti periplanar requirement fixes the geometry, so only one isomer forms."
+      },
+      {
+        "text": "Mostly the Z alkene, with a little of the E alkene",
+        "why": "None of the Z alkene forms from the meso compound."
+      }
+    ],
+    "explanation": "meso-1,2-Dibromo-1,2-diphenylethane gives only the E alkene. None of the Z alkene forms, because the transition state leading to it would need syn periplanar geometry and would be higher in energy."
+  },
+  {
+    "id": "oc11-meso-no-z",
+    "type": "multiple-choice",
+    "prompt": "Why does meso-1,2-dibromo-1,2-diphenylethane give none of the Z alkene on E2 elimination?",
+    "choices": [
+      {
+        "text": "Forming Z would need a syn periplanar transition state, which is higher in energy",
+        "correct": true
+      },
+      {
+        "text": "The Z alkene forms first but then rearranges to the more stable E alkene",
+        "why": "The Z alkene never forms; the anti periplanar transition state leads directly to E."
+      },
+      {
+        "text": "The meso compound has no hydrogen that can be anti periplanar to a bromine",
+        "why": "It does; anti periplanar elimination from it is what gives the E alkene."
+      },
+      {
+        "text": "A Z alkene can't have a bromine atom on one of its double-bond carbons",
+        "why": "(Z)-1-Bromo-1,2-diphenylethylene exists; it's the product from the (1R,2R) and (1S,2S) isomers."
+      }
+    ],
+    "explanation": "Anti periplanar geometry is required for E2. From the meso isomer, the anti periplanar arrangement leads only to the E alkene; reaching the Z alkene would require a syn periplanar, eclipsed, higher-energy transition state."
+  },
+  {
+    "id": "oc11-ss-dibromide-product",
+    "type": "multiple-choice",
+    "prompt": "What alkene forms by anti periplanar E2 elimination of HBr from (1S,2S)-1,2-dibromo-1,2-diphenylethane?",
+    "choices": [
+      {
+        "text": "(Z)-1-bromo-1,2-diphenylethylene",
+        "correct": true
+      },
+      {
+        "text": "(E)-1-bromo-1,2-diphenylethylene",
+        "why": "The E alkene comes from the meso isomer. The (1S,2S) isomer gives Z."
+      },
+      {
+        "text": "An equal mixture of the E and Z alkenes",
+        "why": "Anti periplanar geometry fixes the arrangement of the substituents, so only one isomer forms."
+      },
+      {
+        "text": "1,2-diphenylethylene, with both bromines removed",
+        "why": "Only one HBr is eliminated; one bromine stays on the double bond."
+      }
+    ],
+    "explanation": "Draw the (1S,2S) isomer with the –H and –Br to be eliminated anti periplanar, then eliminate while keeping the other substituents in place. The result is (Z)-1-bromo-1,2-diphenylethylene (Worked Example 11.8.1). The (1R,2R) enantiomer gives the same Z alkene."
+  },
+  {
+    "id": "oc11-z-alkene-isomer-count",
+    "type": "numeric",
+    "prompt": "Of the three stereoisomers of 1,2-dibromo-1,2-diphenylethane, (1R,2R), (1S,2S) and meso, how many give the Z alkene, (Z)-1-bromo-1,2-diphenylethylene, on anti periplanar E2 elimination?",
+    "answer": 2,
+    "explanation": "Both the (1S,2S) isomer (Worked Example 11.8.1) and the (1R,2R) isomer (Exercise 11.8.1) give (Z)-1-bromo-1,2-diphenylethylene. The meso isomer gives only the E alkene."
+  }
+]

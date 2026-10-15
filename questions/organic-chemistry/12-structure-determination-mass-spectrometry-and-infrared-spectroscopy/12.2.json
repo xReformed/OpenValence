@@ -1,0 +1,429 @@
+[
+  {
+    "id": "oc12-mw-tells-apart",
+    "type": "multiple-choice",
+    "prompt": "Hexane (MW = 86), 1-hexene (MW = 84) and 1-hexyne (MW = 82) are in unlabeled bottles. What information from their mass spectra would most easily tell them apart?",
+    "choices": [
+      {
+        "text": "The m/z value of each molecular ion",
+        "correct": true
+      },
+      {
+        "text": "The height of each base peak",
+        "why": "Every base peak is set to 100%, so its height tells you nothing. The molecular weights differ, and the molecular ions show them."
+      },
+      {
+        "text": "Whether each spectrum has an M + 1 peak",
+        "why": "All three contain carbon, so all three show a small M + 1 peak from ^13C."
+      },
+      {
+        "text": "Nothing; mass spectrometry can't tell hydrocarbons apart",
+        "why": "These three have different molecular weights (86, 84 and 82), so mass spectrometry distinguishes them easily."
+      }
+    ],
+    "explanation": "The most obvious information from a mass spectrum is the molecular weight. Hexane (86), 1-hexene (84) and 1-hexyne (82) differ in MW, so their molecular ions easily distinguish them."
+  },
+  {
+    "id": "oc12-double-focusing",
+    "type": "multiple-choice",
+    "prompt": "What lets a double-focusing mass spectrometer distinguish two formulas with the same nominal mass, such as C5H12 and C4H8O?",
+    "choices": [
+      {
+        "text": "Two magnetic sectors give masses accurate to about 0.0005 amu",
+        "correct": true
+      },
+      {
+        "text": "It fragments each molecule twice and compares the two spectra",
+        "why": "Double-focusing refers to the two magnetic sectors in the mass analyzer, which give very high resolution."
+      },
+      {
+        "text": "It uses soft ionization so that no fragment ions form at all",
+        "why": "Soft ionization reduces fragmentation; it doesn't give high resolution. The two magnetic sectors do."
+      },
+      {
+        "text": "It measures the average atomic masses found on the periodic table",
+        "why": "Exact masses come from specific isotopes, not periodic-table averages."
+      }
+    ],
+    "explanation": "Double-focusing mass spectrometers have two magnetic sectors in their mass analyzers. Their resolution is so high that they measure masses to 5 ppm, or about 0.0005 amu, enough to tell C5H12 from C4H8O by their exact masses even though both have MW = 72."
+  },
+  {
+    "id": "oc12-exact-mass-basis",
+    "type": "multiple-choice",
+    "prompt": "A high-resolution mass spectrometer reports the exact mass of a molecule. What is that mass the sum of?",
+    "choices": [
+      {
+        "text": "The exact masses of its specific isotopes, such as ^12C = 12.00000 amu",
+        "correct": true
+      },
+      {
+        "text": "The average atomic masses of the elements, as found on a periodic table",
+        "why": "Exact mass measurements refer to molecules with specific isotopic compositions, not average atomic masses."
+      },
+      {
+        "text": "Whole-number masses, such as 12 for carbon and 1 for hydrogen",
+        "why": "Whole numbers give the nominal mass, which is 72 for both C5H12 and C4H8O. Exact masses differ beyond the decimal point."
+      },
+      {
+        "text": "The masses of all the fragment ions seen in its spectrum",
+        "why": "The exact mass belongs to one molecule: the sum of the isotope masses of its atoms."
+      }
+    ],
+    "explanation": "Exact mass measurements refer to molecules with specific isotopic compositions. The instrument measures the sum of the exact masses of the specific isotopes (1.00783 amu for ^1H, 12.00000 amu for ^12C, 14.00307 amu for ^14N, 15.99491 amu for ^16O), not the sum of the average atomic masses found on a periodic table."
+  },
+  {
+    "id": "oc12-exact-mass-c5h12",
+    "type": "numeric",
+    "prompt": "Using the exact masses ^12C = 12.00000 amu and ^1H = 1.00783 amu, what is the exact mass of C5H12, to four decimal places?",
+    "answer": 72.0939,
+    "unit": "amu",
+    "tolerance": 1e-05,
+    "explanation": "5 × 12.00000 + 12 × 1.00783 = 60.00000 + 12.09396 = 72.09396 amu, which rounds to 72.0940; the section quotes 72.0939 amu, and either is accepted. Its nominal mass is 72, the same as C4H8O, whose exact mass is lower."
+  },
+  {
+    "id": "oc12-exact-mass-c4h8o",
+    "type": "numeric",
+    "prompt": "Using the exact masses ^12C = 12.00000, ^1H = 1.00783 and ^16O = 15.99491 amu, what is the exact mass of C4H8O, to four decimal places?",
+    "answer": 72.0575,
+    "unit": "amu",
+    "tolerance": 1e-05,
+    "explanation": "4 × 12.00000 + 8 × 1.00783 + 15.99491 = 48.00000 + 8.06264 + 15.99491 = 72.05755 amu, which the section gives as 72.0575 amu. C5H12 has the same nominal mass, 72, but a higher exact mass, so a high-resolution instrument can tell them apart."
+  },
+  {
+    "id": "oc12-hexane-butyl-loss",
+    "type": "numeric",
+    "prompt": "Hexane (M^+ = 86) gives a fragment ion at m/z = 29 by losing a butyl radical. What is the mass of the butyl radical?",
+    "answer": 57,
+    "tolerance": 0.001,
+    "explanation": "86 − 29 = 57, which is the mass of a butyl radical, C4H9: 4(12) + 9(1) = 57. Hexane's other fragments come from losing methyl (15), ethyl (29) and propyl (43) radicals."
+  },
+  {
+    "id": "oc12-exact-mass-c6h10n2",
+    "type": "numeric",
+    "prompt": "C6H10N2 is one formula that fits a molecular ion at m/z = 110. Using ^12C = 12.00000, ^1H = 1.00783 and ^14N = 14.00307 amu, what is its exact mass, to four decimal places?",
+    "answer": 110.0844,
+    "unit": "amu",
+    "tolerance": 1e-05,
+    "explanation": "6 × 12.00000 + 10 × 1.00783 + 2 × 14.00307 = 72.00000 + 10.07830 + 28.00614 = 110.0844 amu. Another formula with nominal mass 110, C7H10O, comes to 84.00000 + 10.07830 + 15.99491 = 110.0732 amu, so high-resolution MS can tell them apart."
+  },
+  {
+    "id": "oc12-ppm-accuracy",
+    "type": "numeric",
+    "prompt": "Double-focusing mass spectrometers give mass measurements accurate to how many parts per million (ppm)?",
+    "answer": 5,
+    "unit": "ppm",
+    "explanation": "Double-focusing instruments have such high resolution that they measure masses accurate to 5 ppm, or about 0.0005 amu."
+  },
+  {
+    "id": "oc12-testosterone",
+    "type": "multiple-choice",
+    "prompt": "Testosterone contains only C, H and O, and high-resolution MS gives its mass as 288.2089 amu. Using ^12C = 12.00000, ^1H = 1.00783 and ^16O = 15.99491 amu, which molecular formula fits?",
+    "choices": [
+      {
+        "text": "C19H28O2",
+        "correct": true
+      },
+      {
+        "text": "C20H32O",
+        "why": "Its exact mass is 240.00000 + 32.25056 + 15.99491 = 288.2455 amu, too high."
+      },
+      {
+        "text": "C18H24O3",
+        "why": "Its exact mass is 216.00000 + 24.18792 + 47.98473 = 288.1727 amu, too low."
+      },
+      {
+        "text": "C17H20O4",
+        "why": "Its exact mass is 204.00000 + 20.15660 + 63.97964 = 288.1362 amu, too low."
+      }
+    ],
+    "explanation": "All four formulas have a nominal mass of 288, so only exact masses separate them. For C19H28O2: 228.00000 + 28.21924 + 31.98982 = 288.2091 amu, within 0.0002 amu of the measured 288.2089 amu (Exercise 12.2.1)."
+  },
+  {
+    "id": "oc12-mz-110-formula",
+    "type": "multiple-choice",
+    "prompt": "An unknown compound shows a molecular ion at m/z = 110. Which of these molecular formulas is consistent with that?",
+    "choices": [
+      {
+        "text": "C7H10O",
+        "correct": true
+      },
+      {
+        "text": "C8H16",
+        "why": "C8H16 has a mass of 8(12) + 16(1) = 112, not 110."
+      },
+      {
+        "text": "C7H8O",
+        "why": "C7H8O has a mass of 84 + 8 + 16 = 108, not 110."
+      },
+      {
+        "text": "C6H12N2",
+        "why": "C6H12N2 has a mass of 72 + 12 + 28 = 112, not 110."
+      }
+    ],
+    "explanation": "C7H10O: 7(12) + 10(1) + 16 = 110. Knowing the molecular weight narrows the choices considerably: for M^+ = 110 the section lists C8H14, C7H10O, C6H6O2 and C6H10N2 as likely formulas. For all but the lowest molecular weights several formulas are possible, and a computer can list them."
+  },
+  {
+    "id": "oc12-no-molecular-ion",
+    "type": "multiple-choice",
+    "prompt": "The electron-impact mass spectrum of 2,2-dimethylpropane (MW = 72) shows no molecular ion. Why, and what can be done about it?",
+    "choices": [
+      {
+        "text": "It fragments too easily for M^+ to survive; soft ionization can help",
+        "correct": true
+      },
+      {
+        "text": "It is not volatile enough to reach the source; heating the sample helps",
+        "why": "Volatility isn't the issue. The molecule fragments so easily that no molecular ion is observed."
+      },
+      {
+        "text": "Its molecular ion has no charge; a stronger magnetic field helps",
+        "why": "M^+ is charged by definition. The problem is fragmentation, which soft ionization methods can prevent or minimize."
+      },
+      {
+        "text": "Its M^+ peak is hidden under the M + 1 peak; higher resolution helps",
+        "why": "The M + 1 peak is small and lies one unit above M^+. The real problem is that the molecule fragments too easily."
+      }
+    ],
+    "explanation": "Some compounds, such as 2,2-dimethylpropane, fragment so easily that no molecular ion is observed with electron-impact ionization. In such cases, alternative “soft” ionization methods that don't use electron bombardment can prevent or minimize fragmentation (Section 12.4)."
+  },
+  {
+    "id": "oc12-m-plus-1",
+    "type": "multiple-choice",
+    "prompt": "Why does a mass spectrum show a small peak one mass unit above the molecular ion (the M + 1 peak)?",
+    "choices": [
+      {
+        "text": "Some molecules contain a ^13C atom, and a few contain a ^2H atom",
+        "correct": true
+      },
+      {
+        "text": "Some molecules pick up a hydrogen atom in the ionization source",
+        "why": "The M + 1 peak comes from heavier isotopes already present in the sample, mainly ^13C."
+      },
+      {
+        "text": "Some molecular ions carry two positive charges instead of one",
+        "why": "A second charge would halve m/z, not add 1 to it."
+      },
+      {
+        "text": "Some molecules contain the common ^12C isotope in place of ^13C",
+        "why": "^12C is the most abundant, lighter carbon isotope. The extra mass unit comes from the less common ^13C."
+      }
+    ],
+    "explanation": "Although ^12C is the most abundant carbon isotope, a small amount of ^13C (1.10% natural abundance) is present, so some molecules contain a ^13C atom and give the M + 1 peak. Deuterium (^2H, 0.015% natural abundance) makes a further small contribution."
+  },
+  {
+    "id": "oc12-c13-abundance",
+    "type": "numeric",
+    "prompt": "What is the natural abundance of ^13C, in percent, as the section gives it?",
+    "answer": 1.1,
+    "unit": "%",
+    "explanation": "^13C has a natural abundance of 1.10%. That is why a certain percentage of molecules contain a ^13C atom and give an M + 1 peak."
+  },
+  {
+    "id": "oc12-deuterium-abundance",
+    "type": "numeric",
+    "prompt": "What is the natural abundance of deuterium (^2H), in percent, as the section gives it?",
+    "answer": 0.015,
+    "unit": "%",
+    "explanation": "Deuterium has a natural abundance of 0.015%. It makes a further, smaller contribution to the M + 1 peak, alongside ^13C (1.10%)."
+  },
+  {
+    "id": "oc12-fingerprint-ms",
+    "type": "multiple-choice",
+    "prompt": "Why can an unknown sometimes be identified by computer matching of its mass spectrum against a database?",
+    "choices": [
+      {
+        "text": "Every compound fragments in its own unique way",
+        "correct": true
+      },
+      {
+        "text": "Every compound has a different molecular weight",
+        "why": "Many compounds share a molecular weight; C5H12 and C4H8O both have MW = 72. The whole fragmentation pattern is what is distinctive."
+      },
+      {
+        "text": "Every compound's base peak is its molecular ion",
+        "why": "The molecular ion is often not the base peak, and for some compounds it isn't seen at all."
+      },
+      {
+        "text": "Every compound has its base peak at a different m/z value",
+        "why": "Different compounds can share a base peak: hexane and 2,2-dimethylpropane both have theirs at m/z = 57. The whole pattern is the fingerprint."
+      }
+    ],
+    "explanation": "Every organic compound fragments in a unique way depending on its structure, and the likelihood of two compounds having identical mass spectra is small. A spectrum can be matched against the more than 785,061 searchable spectra in the Registry of Mass Spectral Data."
+  },
+  {
+    "id": "oc12-fragment-pieces",
+    "type": "multiple-choice",
+    "prompt": "When a cation radical in the mass spectrometer breaks apart by cleavage of one bond, what are the two fragments?",
+    "choices": [
+      {
+        "text": "A carbocation and a neutral radical",
+        "correct": true
+      },
+      {
+        "text": "Two cation radicals, each with a positive charge",
+        "why": "Only one fragment keeps the positive charge; the other is a neutral radical."
+      },
+      {
+        "text": "A carbocation and a carbanion",
+        "why": "No negative ion forms. One piece is a carbocation and the other is a neutral radical."
+      },
+      {
+        "text": "Two neutral radicals with no charge",
+        "why": "Then nothing would reach the detector. One fragment keeps the positive charge as a carbocation."
+      }
+    ],
+    "explanation": "Fragmentation occurs when the high-energy cation radical flies apart by spontaneous cleavage of a chemical bond. One of the two fragments keeps the positive charge and is a carbocation, while the other is a neutral radical."
+  },
+  {
+    "id": "oc12-charge-stays",
+    "type": "multiple-choice",
+    "prompt": "During fragmentation in a mass spectrometer, which fragment usually keeps the positive charge?",
+    "choices": [
+      {
+        "text": "The fragment best able to stabilize the charge",
+        "correct": true
+      },
+      {
+        "text": "Always the smaller of the two fragments",
+        "why": "Size isn't the rule. 2,2-Dimethylpropane keeps the charge on the larger tert-butyl group, not the methyl."
+      },
+      {
+        "text": "The fragment with the unpaired electron",
+        "why": "The fragment with the unpaired electron is the neutral radical. The charged fragment is a carbocation."
+      },
+      {
+        "text": "Whichever fragment contains the most hydrogen atoms",
+        "why": "The rule is about stabilizing the charge, not about counting hydrogens."
+      }
+    ],
+    "explanation": "Not surprisingly, the positive charge often remains with the fragment best able to stabilize it, so a relatively stable carbocation forms. For example, 2,2-dimethylpropane fragments so that the charge stays with the tert-butyl group."
+  },
+  {
+    "id": "oc12-neopentane-57",
+    "type": "multiple-choice",
+    "prompt": "2,2-Dimethylpropane, (CH3)4C, has its base peak at m/z = 57. What two fragments form when its cation radical breaks apart this way?",
+    "choices": [
+      {
+        "text": "The tert-butyl cation, C4H9+, and a methyl radical",
+        "correct": true
+      },
+      {
+        "text": "A methyl cation, CH3+, and a tert-butyl radical",
+        "why": "CH3+ would appear at m/z = 15. The charge stays with the tert-butyl group, which stabilizes it better."
+      },
+      {
+        "text": "An ethyl cation, C2H5+, and a propyl radical",
+        "why": "C2H5+ has a mass of 29, and 2,2-dimethylpropane has no ethyl group to lose."
+      },
+      {
+        "text": "A C4H9+ cation and a neutral ethyl radical",
+        "why": "Losing an ethyl radical (29) from 72 would give 43, and the molecule has no ethyl group. 72 − 15 = 57 is loss of a methyl radical."
+      }
+    ],
+    "explanation": "72 − 15 = 57: the cation radical loses a methyl radical (CH3, 15), and the positive charge remains with the tert-butyl group, C4H9+, a relatively stable carbocation. That ion is the base peak at m/z = 57."
+  },
+  {
+    "id": "oc12-hexane-many-ions",
+    "type": "multiple-choice",
+    "prompt": "Why does hexane give a mixture of fragment ions at m/z = 71, 57, 43 and 29?",
+    "choices": [
+      {
+        "text": "Its C–C bonds are electronically similar, so all of them break",
+        "correct": true
+      },
+      {
+        "text": "Hexane gives no molecular ion, so only fragment ions appear",
+        "why": "Hexane shows a moderately abundant molecular ion at m/z = 86, along with these fragments."
+      },
+      {
+        "text": "Only its central C–C bond breaks, giving all four ions",
+        "why": "Breaking the central bond, between carbons 3 and 4, gives only three-carbon pieces (43). The other ions come from breaking other C–C bonds."
+      },
+      {
+        "text": "Its C–H bonds break one at a time, losing hydrogen atoms",
+        "why": "Losing hydrogen atoms would give peaks at 85, 84 and so on. These fragments come from losing alkyl radicals of mass 15, 29, 43 and 57."
+      }
+    ],
+    "explanation": "Most hydrocarbons fragment in many ways. Since all the carbon–carbon bonds of hexane are electronically similar, all break to a similar extent, giving ions at m/z = 71 (loss of methyl), 57 (loss of ethyl), 43 (loss of propyl) and 29 (loss of butyl)."
+  },
+  {
+    "id": "oc12-hexane-lose-methyl",
+    "type": "numeric",
+    "prompt": "Hexane's molecular ion is at m/z = 86. A methyl radical has a mass of 15. At what m/z does the fragment from loss of a methyl radical appear?",
+    "answer": 71,
+    "tolerance": 0.001,
+    "explanation": "86 − 15 = 71. Loss of a methyl radical from the hexane cation radical gives the fragment at m/z = 71 (the section's fragmentation scheme for hexane)."
+  },
+  {
+    "id": "oc12-hexane-lose-ethyl",
+    "type": "numeric",
+    "prompt": "Hexane's molecular ion is at m/z = 86. At what m/z does the fragment from loss of an ethyl radical, C2H5, appear?",
+    "answer": 57,
+    "tolerance": 0.001,
+    "explanation": "An ethyl radical has a mass of 29, and 86 − 29 = 57. This butyl cation, C4H9+, is the base peak in hexane's spectrum."
+  },
+  {
+    "id": "oc12-heptane-lose-methyl",
+    "type": "numeric",
+    "prompt": "Heptane, C7H16, has M^+ = 100. Like hexane, it can lose a methyl radical. At what m/z does that fragment appear?",
+    "answer": 85,
+    "tolerance": 0.001,
+    "explanation": "A methyl radical (CH3) has a mass of 15, so 100 − 15 = 85. This is the same kind of loss that gives hexane its peak at 86 − 15 = 71."
+  },
+  {
+    "id": "oc12-ethylcyclopentane-sample",
+    "type": "multiple-choice",
+    "prompt": "Two unlabeled samples are methylcyclohexane and ethylcyclopentane; both show M^+ = 98. Sample A has its base peak at m/z = 69 and only a small peak at m/z = 83. Which compound is sample A?",
+    "choices": [
+      {
+        "text": "Ethylcyclopentane, because 98 − 69 = 29 is loss of an ethyl group",
+        "correct": true
+      },
+      {
+        "text": "Methylcyclohexane, because 98 − 69 = 29 is loss of a methyl group",
+        "why": "A methyl group has a mass of 15. A loss of 29 is an ethyl group, CH2CH3."
+      },
+      {
+        "text": "Methylcyclohexane, because a six-membered ring gives a base peak at 69",
+        "why": "The clue is the mass lost, 29, which is an ethyl group. Methylcyclohexane gives its base peak at 98 − 15 = 83."
+      },
+      {
+        "text": "Either one, because isomers give identical mass spectra",
+        "why": "Isomers share M^+, but their fragmentation patterns differ, which is how these two are told apart."
+      }
+    ],
+    "explanation": "Both spectra show M^+ = 98 (C7H14). Sample A's base peak at m/z = 69 is loss of CH2CH3 (29 mass units), so A is ethylcyclopentane. Sample B's base peak at m/z = 83 is loss of CH3 (15 mass units), so B is methylcyclohexane (Worked Example 12.1)."
+  },
+  {
+    "id": "oc12-methylcyclohexane-83",
+    "type": "numeric",
+    "prompt": "Methylcyclohexane, C7H14, has M^+ = 98. At what m/z does the fragment from loss of its methyl group appear?",
+    "answer": 83,
+    "tolerance": 0.001,
+    "explanation": "98 − 15 = 83. In Worked Example 12.1, the sample with its base peak at m/z = 83 is methylcyclohexane, while ethylcyclopentane gives its base peak at 98 − 29 = 69."
+  },
+  {
+    "id": "oc12-hexene-isomers",
+    "type": "multiple-choice",
+    "prompt": "2-Methyl-2-pentene and 2-hexene both show M^+ = 84. One spectrum has its base peak at m/z = 41 and the other at m/z = 55. Which assignment does the section give?",
+    "choices": [
+      {
+        "text": "The m/z = 55 spectrum is 2-hexene, and the m/z = 41 spectrum is 2-methyl-2-pentene",
+        "correct": true
+      },
+      {
+        "text": "The m/z = 55 spectrum is 2-methyl-2-pentene, since 84 − 55 = 29 is loss of a methyl group",
+        "why": "A loss of 29 is an ethyl group, not a methyl group (15). The section assigns the m/z = 55 spectrum to 2-hexene."
+      },
+      {
+        "text": "The m/z = 41 spectrum is 2-hexene, since 84 − 41 = 43 is loss of an ethyl group",
+        "why": "A loss of 43 is a propyl group (C3H7); ethyl is 29. The section assigns the m/z = 41 spectrum to 2-methyl-2-pentene."
+      },
+      {
+        "text": "Neither can be assigned, because isomers give the same fragments",
+        "why": "Isomers share a molecular ion but fragment differently, which is why their base peaks differ."
+      }
+    ],
+    "explanation": "In Exercise 12.2.2, the spectrum with its base peak at m/z = 41 is 2-methyl-2-pentene, and the one with its base peak at m/z = 55 is 2-hexene. The two isomers have the same M^+ = 84 but break apart differently because their structures differ."
+  }
+]

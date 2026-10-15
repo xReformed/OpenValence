@@ -1,0 +1,345 @@
+[
+  {
+    "id": "oc17-classify-basis",
+    "type": "multiple-choice",
+    "prompt": "How are alcohols classified as primary (1°), secondary (2°), or tertiary (3°)?",
+    "choices": [
+      {
+        "text": "By the number of organic groups on the hydroxyl-bearing carbon",
+        "correct": true
+      },
+      {
+        "text": "By the number of –OH groups the molecule contains",
+        "why": "A molecule with two –OH groups is a diol, whatever its class. The 1°/2°/3° label looks only at the hydroxyl-bearing carbon."
+      },
+      {
+        "text": "By the number of carbons in the longest chain holding the –OH",
+        "why": "Chain length sets the parent name, not the class. Only the groups on the hydroxyl-bearing carbon count."
+      },
+      {
+        "text": "By the number of hydrogens bonded to the oxygen atom",
+        "why": "Every alcohol has just one hydrogen on its oxygen. The classification looks at the carbon that carries the –OH."
+      }
+    ],
+    "explanation": "Alcohols are classified as primary (1°), secondary (2°), or tertiary (3°) depending on the number of organic groups bonded to the hydroxyl-bearing carbon: one R group for primary, two for secondary, three for tertiary."
+  },
+  {
+    "id": "oc17-classify-isobutyl-alcohol",
+    "type": "multiple-choice",
+    "prompt": "Is 2-methyl-1-propanol, (CH3)2CHCH2OH, a primary, secondary, or tertiary alcohol?",
+    "choices": [
+      {
+        "text": "Primary",
+        "correct": true
+      },
+      {
+        "text": "Secondary",
+        "why": "The –OH is on a CH2 carbon bonded to only one organic group, (CH3)2CH–. The branch is one carbon farther away and doesn't count."
+      },
+      {
+        "text": "Tertiary",
+        "why": "A tertiary alcohol has three organic groups on the hydroxyl-bearing carbon. Here that carbon is a CH2 with just one."
+      },
+      {
+        "text": "It can't be classified, because the chain is branched",
+        "why": "Branching elsewhere in the chain doesn't matter. Only the groups on the hydroxyl-bearing carbon decide the class."
+      }
+    ],
+    "explanation": "Look only at the carbon that carries the –OH. In (CH3)2CHCH2OH it is a CH2 bonded to one organic group, the (CH3)2CH– group, so the alcohol is primary even though the chain is branched."
+  },
+  {
+    "id": "oc17-count-secondary",
+    "type": "numeric",
+    "prompt": "How many of these five alcohols are secondary: 1-butanol, 2-butanol, 2-methyl-2-propanol, cyclohexanol, and 2-methyl-1-propanol?",
+    "answer": 2,
+    "explanation": "2-Butanol, CH3CH(OH)CH2CH3, and cyclohexanol each have two organic groups on the hydroxyl-bearing carbon, so they are secondary. 1-Butanol and 2-methyl-1-propanol are primary (one group), and 2-methyl-2-propanol, (CH3)3COH, is tertiary (three groups)."
+  },
+  {
+    "id": "oc17-propanol-drop-e",
+    "type": "multiple-choice",
+    "prompt": "Why is CH3CH2CH2OH named propanol rather than propaneol?",
+    "choices": [
+      {
+        "text": "The -e of the alkane name is deleted so that two vowels don't sit next to each other",
+        "correct": true
+      },
+      {
+        "text": "The -e is deleted in every alcohol name, whatever letter follows it",
+        "why": "The -e stays when the next letter is a consonant, as in cyclohexanediol."
+      },
+      {
+        "text": "Propane loses a hydrogen atom when the –OH is attached, so its name is shortened",
+        "why": "The rule is about spelling, not atoms: the -e is deleted to avoid two adjacent vowels."
+      },
+      {
+        "text": "Propaneol is reserved for the alcohol with the –OH on carbon 2",
+        "why": "Propaneol isn't used for any alcohol. The position of the –OH is shown by a locant, as in 2-propanol."
+      }
+    ],
+    "explanation": "Rule 1: the parent name comes from the alkane by replacing its -e ending with -ol. The -e is deleted to prevent two adjacent vowels: propanol rather than propaneol."
+  },
+  {
+    "id": "oc17-diol-keeps-e",
+    "type": "multiple-choice",
+    "prompt": "Why is cis-1,4-cyclohexanediol not spelled cis-1,4-cyclohexandiol?",
+    "choices": [
+      {
+        "text": "The -e stays because the next letter, d, is not a vowel",
+        "correct": true
+      },
+      {
+        "text": "The -e is always kept in the names of cyclic alcohols",
+        "why": "Cyclohexanol drops the -e because the next letter, o, is a vowel. Being cyclic has nothing to do with it."
+      },
+      {
+        "text": "The -e shows that the ring contains a double bond",
+        "why": "Cyclohexanediol has no double bond. The -diol suffix means two –OH groups."
+      },
+      {
+        "text": "The cis prefix requires the full alkane name to be kept",
+        "why": "cis only tells you that the two –OH groups are on the same face of the ring. It doesn't affect the spelling."
+      }
+    ],
+    "explanation": "The -e of the alkane name is deleted only to prevent two adjacent vowels. In cyclohexanediol the suffix begins with d, a consonant, so the -e stays: cyclohexanediol rather than cyclohexandiol."
+  },
+  {
+    "id": "oc17-name-4-methyl-2-hexanol",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH2CH(CH3)CH2CH(OH)CH3?",
+    "choices": [
+      {
+        "text": "4-Methyl-2-hexanol",
+        "correct": true
+      },
+      {
+        "text": "3-Methyl-5-hexanol",
+        "why": "This numbers the chain from the wrong end. Rule 2 says to start at the end nearer the hydroxyl group, which puts the –OH on carbon 2."
+      },
+      {
+        "text": "4-Ethyl-2-pentanol",
+        "why": "The parent must be the longest chain containing the –OH. Running through the ethyl group gives six carbons, so the parent is hexanol."
+      },
+      {
+        "text": "4-Methyl-2-pentanol",
+        "why": "Count again: the longest chain containing the –OH has six carbons, not five."
+      }
+    ],
+    "explanation": "The longest chain containing the –OH has six carbons (hexanol). Numbering from the end nearer the –OH puts it on carbon 2 and the methyl group on carbon 4: 4-methyl-2-hexanol (4-methylhexan-2-ol in the newer style)."
+  },
+  {
+    "id": "oc17-newer-iupac-locant",
+    "type": "multiple-choice",
+    "prompt": "Newer IUPAC recommendations place the locant immediately before the suffix. What is the newer name for 3-phenyl-2-butanol?",
+    "choices": [
+      {
+        "text": "3-Phenylbutan-2-ol",
+        "correct": true
+      },
+      {
+        "text": "2-Phenylbutan-3-ol",
+        "why": "The numbering doesn't change with the naming style. The –OH still gets the lower number, carbon 2."
+      },
+      {
+        "text": "3-Phenyl-2-butanol",
+        "why": "That is the older name, with the locant in front of the parent."
+      },
+      {
+        "text": "3-Phenylbut-2-ol",
+        "why": "Only the final -e of butane is dropped before -ol, so the parent stays butan-: butan-2-ol."
+      }
+    ],
+    "explanation": "In the newer style the locant goes right before the suffix: 3-phenyl-2-butanol becomes 3-phenylbutan-2-ol, just as 2-methyl-2-pentanol becomes 2-methylpentan-2-ol and cis-1,4-cyclohexanediol becomes cis-cyclohexane-1,4-diol."
+  },
+  {
+    "id": "oc17-name-methylphenylbutanol",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of C6H5CH2CH2C(OH)(CH3)2?",
+    "choices": [
+      {
+        "text": "2-Methyl-4-phenyl-2-butanol",
+        "correct": true
+      },
+      {
+        "text": "3-Methyl-1-phenyl-3-butanol",
+        "why": "This numbers from the wrong end. The chain is numbered from the end nearer the –OH, which puts it on carbon 2."
+      },
+      {
+        "text": "1,1-Dimethyl-3-phenyl-1-propanol",
+        "why": "The parent must be the longest chain containing the –OH. Including one of the methyl groups gives a four-carbon chain, butanol."
+      },
+      {
+        "text": "4-Phenyl-2-methyl-2-butanol",
+        "why": "Substituents are listed in alphabetical order, so methyl comes before phenyl."
+      }
+    ],
+    "explanation": "The longest chain containing the –OH has four carbons (butanol). Numbering from the end nearer the –OH puts the –OH and one methyl on carbon 2 and the phenyl on carbon 4. Listing substituents alphabetically gives 2-methyl-4-phenyl-2-butanol (Exercise 17.1.1)."
+  },
+  {
+    "id": "oc17-name-methylhexanediol",
+    "type": "multiple-choice",
+    "prompt": "What is the IUPAC name of CH3CH(OH)CH2CH(OH)CH(CH3)2?",
+    "choices": [
+      {
+        "text": "5-Methyl-2,4-hexanediol",
+        "correct": true
+      },
+      {
+        "text": "2-Methyl-3,5-hexanediol",
+        "why": "Numbering starts from the end nearer the hydroxyl groups. That gives them locants 2 and 4, lower than 3 and 5."
+      },
+      {
+        "text": "5-Methyl-2,4-hexandiol",
+        "why": "The -e of hexane is kept, because the suffix -diol begins with d, a consonant."
+      },
+      {
+        "text": "5-Methyl-2,4-heptanediol",
+        "why": "The longest chain has six carbons. The methyl on carbon 5 is a branch, not part of the chain."
+      }
+    ],
+    "explanation": "The longest chain has six carbons and two –OH groups (a hexanediol, keeping the -e). Numbering from the end nearer the –OH groups puts them on carbons 2 and 4 and the methyl on carbon 5: 5-methyl-2,4-hexanediol (Exercise 17.1.1)."
+  },
+  {
+    "id": "oc17-name-bromocyclopentanol",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentane ring has an –OH group on one carbon and a bromine on the next carbon, with the –OH and the –Br on opposite faces of the ring. What is its name?",
+    "choices": [
+      {
+        "text": "trans-2-Bromocyclopentanol",
+        "correct": true
+      },
+      {
+        "text": "cis-2-Bromocyclopentanol",
+        "why": "cis means both groups are on the same face of the ring. Here they are on opposite faces, so the compound is trans."
+      },
+      {
+        "text": "trans-1-Bromo-2-cyclopentanol",
+        "why": "The hydroxyl-bearing carbon is carbon 1, so the bromine is on carbon 2."
+      },
+      {
+        "text": "trans-2-Bromocyclohexanol",
+        "why": "The ring has five carbons, so the parent is cyclopentanol."
+      }
+    ],
+    "explanation": "The parent is cyclopentanol, and the hydroxyl-bearing carbon is numbered 1, so the bromine is on carbon 2. Groups on opposite faces of a ring are trans: trans-2-bromocyclopentanol (Exercise 17.1.1)."
+  },
+  {
+    "id": "oc17-name-bromomethylphenol",
+    "type": "multiple-choice",
+    "prompt": "A benzene ring carries an –OH group, a methyl group meta to the –OH, and a bromine para to the –OH (so the methyl and bromine are on neighboring carbons). What is the compound's name?",
+    "choices": [
+      {
+        "text": "4-Bromo-3-methylphenol",
+        "correct": true
+      },
+      {
+        "text": "3-Methyl-4-bromophenol",
+        "why": "Substituents are listed in alphabetical order, so bromo comes before methyl."
+      },
+      {
+        "text": "4-Bromo-5-methylphenol",
+        "why": "Number around the ring in the direction that gives the lower locants: 3 and 4, not 4 and 5."
+      },
+      {
+        "text": "1-Bromo-2-methyl-4-hydroxybenzene",
+        "why": "Phenols are named with -phenol as the parent name rather than -benzene."
+      }
+    ],
+    "explanation": "Phenols are named like other aromatic compounds, with -phenol as the parent and the hydroxyl-bearing carbon as carbon 1. Numbering toward the methyl puts it on carbon 3 and the bromine on carbon 4, and the substituents are listed alphabetically: 4-bromo-3-methylphenol (Exercise 17.1.1)."
+  },
+  {
+    "id": "oc17-name-cyclopentenol",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentene ring has an –OH group on a carbon right next to one of the double-bond carbons. What is its name?",
+    "choices": [
+      {
+        "text": "2-Cyclopenten-1-ol",
+        "correct": true
+      },
+      {
+        "text": "1-Cyclopenten-3-ol",
+        "why": "The hydroxyl-bearing carbon gets number 1, so the double bond begins at carbon 2."
+      },
+      {
+        "text": "3-Cyclopenten-1-ol",
+        "why": "In 3-cyclopenten-1-ol the double bond starts at carbon 3, so it isn't next to the hydroxyl-bearing carbon."
+      },
+      {
+        "text": "1-Cyclopenten-1-ol",
+        "why": "That name would put the –OH on one of the double-bond carbons, not next to them."
+      }
+    ],
+    "explanation": "The –OH carbon is numbered 1, and numbering continues toward the double bond, which then begins at carbon 2: 2-cyclopenten-1-ol (Exercise 17.1.1)."
+  },
+  {
+    "id": "oc17-glycerol-name",
+    "type": "multiple-choice",
+    "prompt": "Which IUPAC-accepted common name belongs to 1,2,3-propanetriol?",
+    "choices": [
+      {
+        "text": "Glycerol",
+        "correct": true
+      },
+      {
+        "text": "Ethylene glycol",
+        "why": "Ethylene glycol is 1,2-ethanediol, with two carbons and two –OH groups."
+      },
+      {
+        "text": "Allyl alcohol",
+        "why": "Allyl alcohol is 2-propen-1-ol, with one –OH group and a double bond."
+      },
+      {
+        "text": "tert-Butyl alcohol",
+        "why": "tert-Butyl alcohol is 2-methyl-2-propanol, with a single –OH group."
+      }
+    ],
+    "explanation": "Some simple alcohols have common names accepted by IUPAC: benzyl alcohol (phenylmethanol), allyl alcohol (2-propen-1-ol), tert-butyl alcohol (2-methyl-2-propanol), ethylene glycol (1,2-ethanediol), and glycerol (1,2,3-propanetriol), which has an –OH on each of its three carbons."
+  },
+  {
+    "id": "oc17-dinitrophenol-positions",
+    "type": "multiple-choice",
+    "prompt": "In 2,4-dinitrophenol, where are the two nitro groups relative to the –OH group?",
+    "choices": [
+      {
+        "text": "One ortho and one para",
+        "correct": true
+      },
+      {
+        "text": "Both ortho",
+        "why": "That would be 2,6-dinitrophenol. Carbon 4 is across the ring from carbon 1, the para position."
+      },
+      {
+        "text": "One ortho and one meta",
+        "why": "A meta nitro group would be on carbon 3 or 5. Carbon 4 is para."
+      },
+      {
+        "text": "Both meta",
+        "why": "That would be 3,5-dinitrophenol."
+      }
+    ],
+    "explanation": "In a phenol name the hydroxyl-bearing carbon is carbon 1. Carbon 2 is next to it (ortho) and carbon 4 is directly across the ring (para), so 2,4-dinitrophenol has one ortho and one para nitro group."
+  },
+  {
+    "id": "oc17-pentanediol-structure",
+    "type": "multiple-choice",
+    "prompt": "Which condensed formula is 1,4-pentanediol?",
+    "choices": [
+      {
+        "text": "HOCH2CH2CH2CH(OH)CH3",
+        "correct": true
+      },
+      {
+        "text": "HOCH2CH2CH2CH2CH2OH",
+        "why": "This is 1,5-pentanediol. Its second –OH is on carbon 5, not carbon 4."
+      },
+      {
+        "text": "HOCH2CH2CH2CH2OH",
+        "why": "This chain has only four carbons, so it is a butanediol."
+      },
+      {
+        "text": "CH3CH(OH)CH2CH(OH)CH3",
+        "why": "This is 2,4-pentanediol. Numbered from either end, its –OH groups are on carbons 2 and 4."
+      }
+    ],
+    "explanation": "Pentanediol has a five-carbon chain with two –OH groups, and the locants 1 and 4 place them on the first and fourth carbons: HOCH2CH2CH2CH(OH)CH3 (Exercise 17.1.2)."
+  }
+]

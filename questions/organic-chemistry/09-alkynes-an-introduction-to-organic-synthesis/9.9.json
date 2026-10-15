@@ -1,0 +1,431 @@
+[
+  {
+    "id": "oc9-retrosynthesis",
+    "type": "multiple-choice",
+    "prompt": "What does it mean to plan a synthesis in the retrosynthetic direction?",
+    "choices": [
+      {
+        "text": "Start from the target and ask what its immediate precursor was, working backward one step at a time",
+        "correct": true
+      },
+      {
+        "text": "Start from the starting material and ask what reactions it might undergo",
+        "why": "The section warns against this. Look at the final product and work backward instead."
+      },
+      {
+        "text": "Run the planned reactions in reverse in the laboratory",
+        "why": "Retrosynthesis is a way of planning, not a way of running reactions backward."
+      },
+      {
+        "text": "Pick the cheapest starting material first and build forward from it",
+        "why": "You keep the starting material in mind, but it shouldn't be your main focus. The product is where you begin."
+      }
+    ],
+    "explanation": "The only real trick in planning a synthesis is to work backward. Don't look at a potential starting material and ask what reactions it might undergo. Look at the final product and ask, “What was the immediate precursor of that product?” Then work backward again, one step at a time, until you get back to the starting material."
+  },
+  {
+    "id": "oc9-synthesis-industry",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why are syntheses carried out in the chemical industry?",
+    "choices": [
+      {
+        "text": "To devise more economical routes to known compounds",
+        "correct": true
+      },
+      {
+        "text": "To make new molecules that might become useful drugs",
+        "why": "That is the reason given for the pharmaceutical industry."
+      },
+      {
+        "text": "For the intellectual challenge of making extremely complex molecules",
+        "why": "That is sometimes the reason in academic laboratories."
+      },
+      {
+        "text": "To learn how to piece reactions together into a plan",
+        "why": "That is the purpose of the syntheses in this book."
+      }
+    ],
+    "explanation": "The section gives several reasons for laboratory synthesis. In the pharmaceutical industry, new molecules are made in the hope that some might be useful drugs. In the chemical industry, syntheses are done to devise more economical routes to known compounds. In academic laboratories, extremely complex molecules are sometimes made for the intellectual challenge."
+  },
+  {
+    "id": "oc9-alkyl-halide-precursor",
+    "type": "multiple-choice",
+    "prompt": "Working retrosynthetically, what might be the immediate precursor of an alkyl halide?",
+    "choices": [
+      {
+        "text": "An alkene, to which HX could be added",
+        "correct": true
+      },
+      {
+        "text": "An alkyne, which could be hydrogenated over the Lindlar catalyst",
+        "why": "Lindlar hydrogenation gives a cis alkene, not an alkyl halide."
+      },
+      {
+        "text": "An alkane, to which HX could be added",
+        "why": "An alkane has no multiple bond for HX to add to."
+      },
+      {
+        "text": "An alkyne, which could be hydrated with HgSO4 and aqueous acid",
+        "why": "Hydration of an alkyne gives a ketone, not an alkyl halide."
+      }
+    ],
+    "explanation": "If the final product is an alkyl halide, the immediate precursor might be an alkene, to which you could add HX. Worked Example 9.9.2 uses this step: 2-bromopentane from 1-pentene and HBr."
+  },
+  {
+    "id": "oc9-cis-alkene-precursor",
+    "type": "multiple-choice",
+    "prompt": "Working retrosynthetically, what might be the immediate precursor of a cis alkene?",
+    "choices": [
+      {
+        "text": "An alkyne, hydrogenated over the Lindlar catalyst",
+        "correct": true
+      },
+      {
+        "text": "An alkyne, reduced with lithium in liquid ammonia",
+        "why": "Li/NH3 gives a trans alkene, not a cis one."
+      },
+      {
+        "text": "An alkyne, hydrogenated over Pd/C",
+        "why": "Pd/C reduces an alkyne all the way to an alkane."
+      },
+      {
+        "text": "An alkyl halide, treated with HBr",
+        "why": "HBr adds to multiple bonds; it doesn't make a double bond from an alkyl halide."
+      }
+    ],
+    "explanation": "If the final product is a cis alkene, the immediate precursor might be an alkyne, which you could hydrogenate using the Lindlar catalyst. Lithium in liquid ammonia would give the trans alkene instead."
+  },
+  {
+    "id": "oc9-we1-cis-2-hexene",
+    "type": "multiple-choice",
+    "prompt": "How would you synthesize cis-2-hexene from 1-pentyne and an alkyl halide?",
+    "choices": [
+      {
+        "text": "NaNH2, then CH3I; then H2 over the Lindlar catalyst",
+        "correct": true
+      },
+      {
+        "text": "NaNH2, then CH3I; then Li in liquid NH3",
+        "why": "Li/NH3 reduces 2-hexyne to trans-2-hexene."
+      },
+      {
+        "text": "NaNH2, then CH3CH2I; then H2 over the Lindlar catalyst",
+        "why": "An ethyl group gives 3-heptyne and then cis-3-heptene, one carbon too many."
+      },
+      {
+        "text": "H2 over the Lindlar catalyst; then NaNH2, then CH3I",
+        "why": "Reducing first gives 1-pentene, which has no alkyne hydrogen for NaNH2 to remove, so the alkylation can't happen."
+      }
+    ],
+    "explanation": "Worked Example 9.9.1. Working backward: cis-2-hexene comes from 2-hexyne by Lindlar hydrogenation, and 2-hexyne comes from alkylating the anion of 1-pentyne with iodomethane. Forward: 1-pentyne + NaNH2, then CH3I gives 2-hexyne; H2 over the Lindlar catalyst gives cis-2-hexene."
+  },
+  {
+    "id": "oc9-we1-steps",
+    "type": "numeric",
+    "prompt": "In Worked Example 9.9.1, in how many steps is cis-2-hexene made from 1-pentyne and an alkyl halide?",
+    "answer": 3,
+    "explanation": "The solution uses three steps: NaNH2 in NH3 to form the acetylide anion, CH3I in THF to give 2-hexyne, and H2 over the Lindlar catalyst to give cis-2-hexene."
+  },
+  {
+    "id": "oc9-we2-why-1-pentene",
+    "type": "multiple-choice",
+    "prompt": "When planning a synthesis of 2-bromopentane, why is Markovnikov addition of HBr to 1-pentene a better choice than addition to 2-pentene?",
+    "choices": [
+      {
+        "text": "Addition to 2-pentene would give a mixture of isomers",
+        "correct": true
+      },
+      {
+        "text": "2-Pentene doesn't react with HBr",
+        "why": "2-Pentene does add HBr. The trouble is that it gives a mixture."
+      },
+      {
+        "text": "Addition to 1-pentene gives the non-Markovnikov product, 1-bromopentane",
+        "why": "Markovnikov addition to 1-pentene puts Br on C2, giving 2-bromopentane."
+      },
+      {
+        "text": "2-Pentene can't be made from an alkyne",
+        "why": "2-Pentene could be made from 2-pentyne. The reason to avoid it is the mixture HBr would give."
+      }
+    ],
+    "explanation": "Each carbon of the 2-pentene double bond carries one alkyl group, so HBr can put Br on either C2 or C3, giving a mixture of isomers. Markovnikov addition to 1-pentene puts Br only on C2, giving 2-bromopentane (Worked Example 9.9.2)."
+  },
+  {
+    "id": "oc9-we2-sequence",
+    "type": "multiple-choice",
+    "prompt": "Which sequence makes 2-bromopentane from acetylene and an alkyl halide?",
+    "choices": [
+      {
+        "text": "NaNH2, then CH3CH2CH2Br; H2 over the Lindlar catalyst; then HBr",
+        "correct": true
+      },
+      {
+        "text": "NaNH2, then CH3CH2CH2Br; H2 over Pd/C; then HBr",
+        "why": "Pd/C reduces 1-pentyne all the way to pentane, which has no double bond for HBr to add to."
+      },
+      {
+        "text": "NaNH2, then CH3CH2CH2Br; H2 over the Lindlar catalyst; then BH3, then H2O2, NaOH",
+        "why": "Hydroboration–oxidation of 1-pentene gives an alcohol, not an alkyl bromide."
+      },
+      {
+        "text": "NaNH2, then (CH3)2CHBr; H2 over the Lindlar catalyst; then HBr",
+        "why": "2-Bromopropane is a secondary halide, so the acetylide causes elimination instead of alkylation."
+      }
+    ],
+    "explanation": "Worked Example 9.9.2, in four steps: acetylene + NaNH2, then 1-bromopropane gives 1-pentyne; H2 over the Lindlar catalyst gives 1-pentene; Markovnikov addition of HBr gives 2-bromopentane."
+  },
+  {
+    "id": "oc9-we3-precursor",
+    "type": "multiple-choice",
+    "prompt": "When planning a synthesis of the primary alcohol 5-methyl-1-hexanol, what is a good immediate precursor?",
+    "choices": [
+      {
+        "text": "5-Methyl-1-hexene, hydrated by hydroboration–oxidation",
+        "correct": true
+      },
+      {
+        "text": "5-Methyl-1-hexyne, hydrated with HgSO4 and aqueous acid",
+        "why": "Mercury(II)-catalyzed hydration of a terminal alkyne gives a methyl ketone, not a primary alcohol."
+      },
+      {
+        "text": "5-Methyl-1-hexene, treated with HBr",
+        "why": "HBr gives an alkyl bromide, not an alcohol."
+      },
+      {
+        "text": "5-Methyl-2-hexene, hydrated by hydroboration–oxidation",
+        "why": "The –OH would end up on C2 or C3, not on the end carbon. A primary alcohol needs a terminal alkene."
+      }
+    ],
+    "explanation": "A primary alcohol can come from a terminal alkene hydrated with non-Markovnikov regiochemistry, by reaction with borane followed by oxidation with H2O2. So 5-methyl-1-hexanol comes from 5-methyl-1-hexene (Worked Example 9.9.3)."
+  },
+  {
+    "id": "oc9-we3-alkyl-halide",
+    "type": "multiple-choice",
+    "prompt": "To make 5-methyl-1-hexyne, (CH3)2CHCH2CH2C≡CH, from sodium acetylide, which alkyl halide is needed?",
+    "choices": [
+      {
+        "text": "1-bromo-3-methylbutane, (CH3)2CHCH2CH2Br",
+        "correct": true
+      },
+      {
+        "text": "1-bromo-2-methylpropane, (CH3)2CHCH2Br",
+        "why": "This adds only four carbons, giving 4-methyl-1-pentyne."
+      },
+      {
+        "text": "2-bromo-3-methylbutane, (CH3)2CHCHBrCH3",
+        "why": "This is a secondary halide, which gives elimination with acetylide, and it has the wrong skeleton."
+      },
+      {
+        "text": "1-bromo-4-methylpentane, (CH3)2CHCH2CH2CH2Br",
+        "why": "This adds six carbons, giving 6-methyl-1-heptyne, one CH2 too many."
+      }
+    ],
+    "explanation": "5-Methyl-1-hexyne is HC≡C– joined to a (CH3)2CHCH2CH2– group. Alkylating sodium acetylide with the primary halide 1-bromo-3-methylbutane supplies exactly that group (Worked Example 9.9.3)."
+  },
+  {
+    "id": "oc9-ex-cis-4-octene",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne, how would you make cis-4-octene?",
+    "choices": [
+      {
+        "text": "H2 over the Lindlar catalyst",
+        "correct": true
+      },
+      {
+        "text": "Li metal in liquid NH3",
+        "why": "Li/NH3 gives the trans alkene, trans-4-octene."
+      },
+      {
+        "text": "H2 over a Pd/C catalyst",
+        "why": "Pd/C reduces the alkyne all the way to octane."
+      },
+      {
+        "text": "BH3, then H2O2 and NaOH",
+        "why": "Hydroboration–oxidation of an internal alkyne gives a ketone, 4-octanone."
+      }
+    ],
+    "explanation": "Syn hydrogenation over the Lindlar catalyst stops at the alkene and gives the cis isomer, cis-4-octene (Exercise 9.9.1a)."
+  },
+  {
+    "id": "oc9-ex-butanal",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne as the only source of carbon, how would you make butanal, CH3CH2CH2CHO?",
+    "choices": [
+      {
+        "text": "H2 over the Lindlar catalyst; then O3; then Zn, CH3CO2H",
+        "correct": true
+      },
+      {
+        "text": "H2 over the Lindlar catalyst; then KMnO4, H3O+",
+        "why": "Acidic KMnO4 cleaves the alkene to carboxylic acids (Section 8.8), giving butanoic acid rather than the aldehyde."
+      },
+      {
+        "text": "Li in liquid NH3; then BH3; then H2O2, NaOH",
+        "why": "This keeps all eight carbons together: trans-4-octene is hydroborated and oxidized to 4-octanol."
+      },
+      {
+        "text": "H2 over Pd/C; then O3; then Zn, CH3CO2H",
+        "why": "Pd/C reduces the alkyne to octane, which has no double bond for ozone to cleave."
+      }
+    ],
+    "explanation": "Reduce 4-octyne to cis-4-octene with H2 over the Lindlar catalyst, then cleave the double bond with ozone followed by Zn in acetic acid. Each half of the alkene becomes CH3CH2CH2CHO, so one molecule of 4-octyne gives two of butanal (Exercise 9.9.1b)."
+  },
+  {
+    "id": "oc9-ex-4-bromooctane",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne, how would you make 4-bromooctane?",
+    "choices": [
+      {
+        "text": "H2 over the Lindlar catalyst; then HBr",
+        "correct": true
+      },
+      {
+        "text": "HBr (2 equivalents)",
+        "why": "Both HBr molecules add to the alkyne, giving the dibromide 4,4-dibromooctane."
+      },
+      {
+        "text": "H2 over Pd/C; then HBr",
+        "why": "Pd/C gives octane, which has no double bond for HBr to add to."
+      },
+      {
+        "text": "H2 over the Lindlar catalyst; then Br2",
+        "why": "Br2 adds two bromines, giving 4,5-dibromooctane."
+      }
+    ],
+    "explanation": "First reduce 4-octyne to cis-4-octene over the Lindlar catalyst. Adding HBr to that symmetrical alkene gives a single product, 4-bromooctane, whichever carbon the Br goes to (Exercise 9.9.1c)."
+  },
+  {
+    "id": "oc9-ex-4-octanol",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne, how would you make 4-octanol?",
+    "choices": [
+      {
+        "text": "H2 over the Lindlar catalyst; then BH3; then H2O2, NaOH",
+        "correct": true
+      },
+      {
+        "text": "HgSO4, H3O+",
+        "why": "Mercury(II)-catalyzed hydration of the alkyne gives a ketone, 4-octanone, not an alcohol."
+      },
+      {
+        "text": "BH3 on the alkyne itself; then H2O2, NaOH",
+        "why": "Hydroboration–oxidation of an alkyne gives an enol that tautomerizes to a ketone, 4-octanone."
+      },
+      {
+        "text": "H2 over Pd/C; then BH3; then H2O2, NaOH",
+        "why": "Pd/C gives octane, which has no double bond for borane to add to."
+      }
+    ],
+    "explanation": "Reduce 4-octyne to cis-4-octene over the Lindlar catalyst, then hydroborate and oxidize. Because 4-octene is symmetrical, the –OH ends up on C4 either way, giving 4-octanol (Exercise 9.9.1d)."
+  },
+  {
+    "id": "oc9-ex-dichlorooctane",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne, how would you make 4,5-dichlorooctane?",
+    "choices": [
+      {
+        "text": "H2 over the Lindlar catalyst; then Cl2",
+        "correct": true
+      },
+      {
+        "text": "Cl2 (1 equivalent)",
+        "why": "Cl2 adds to the triple bond to give a dichloroalkene; a double bond remains between C4 and C5."
+      },
+      {
+        "text": "Cl2 (2 equivalents)",
+        "why": "Two Cl2 add four chlorines, giving 4,4,5,5-tetrachlorooctane."
+      },
+      {
+        "text": "H2 over the Lindlar catalyst; then HCl",
+        "why": "HCl adds one H and one Cl, giving 4-chlorooctane."
+      }
+    ],
+    "explanation": "Reduce 4-octyne to cis-4-octene, then add Cl2 across the double bond, putting one chlorine on C4 and one on C5: 4,5-dichlorooctane (Exercise 9.9.1e)."
+  },
+  {
+    "id": "oc9-ex-butanoic-acid",
+    "type": "multiple-choice",
+    "prompt": "Starting from 4-octyne, how would you make butanoic acid, CH3CH2CH2CO2H?",
+    "choices": [
+      {
+        "text": "KMnO4, H3O+",
+        "correct": true
+      },
+      {
+        "text": "H2 over the Lindlar catalyst; then O3; then Zn, CH3CO2H",
+        "why": "Ozone cleavage of the alkene followed by Zn gives butanal, the aldehyde, not the acid."
+      },
+      {
+        "text": "HgSO4, H3O+",
+        "why": "Hydration gives 4-octanone and doesn't break the carbon chain."
+      },
+      {
+        "text": "Li in liquid NH3; then HBr",
+        "why": "This gives 4-bromooctane. Nothing breaks the carbon chain."
+      }
+    ],
+    "explanation": "Oxidative cleavage of an internal alkyne with KMnO4 gives carboxylic acids. 4-Octyne is symmetrical, so both halves become butanoic acid (Exercise 9.9.1f)."
+  },
+  {
+    "id": "oc9-ex-decane-carbons",
+    "type": "numeric",
+    "prompt": "Decane is to be made from acetylene by forming the acetylide with NaNH2, alkylating once with a primary alkyl bromide, and then hydrogenating over Pd/C. How many carbon atoms must the alkyl bromide contain?",
+    "answer": 8,
+    "explanation": "Decane has 10 carbons and acetylene supplies 2, so the alkyl bromide must supply 8: 1-bromooctane, CH3(CH2)6CH2Br. Alkylation gives 1-decyne, and H2 over Pd reduces it to decane (Exercise 9.9.2a)."
+  },
+  {
+    "id": "oc9-ex-dimethylhexane",
+    "type": "multiple-choice",
+    "prompt": "Which sequence makes 2,2-dimethylhexane, (CH3)3CCH2CH2CH2CH3, from acetylene and an alkyl halide?",
+    "choices": [
+      {
+        "text": "NaNH2, then (CH3)3CCH2CH2I; then H2 over Pd/C",
+        "correct": true
+      },
+      {
+        "text": "NaNH2, then CH3CH2I; NaNH2, then (CH3)3CI; then H2 over Pd/C",
+        "why": "(CH3)3CI is a tertiary halide, so the acetylide would cause elimination instead of attaching the tert-butyl group."
+      },
+      {
+        "text": "NaNH2, then (CH3)3CCH2CH2I; then H2 over the Lindlar catalyst",
+        "why": "The Lindlar catalyst stops at the alkene. Pd/C is needed to reach the alkane."
+      },
+      {
+        "text": "NaNH2, then (CH3)3CCH2I; then H2 over Pd/C",
+        "why": "This halide is one CH2 short; the product would be 2,2-dimethylpentane."
+      }
+    ],
+    "explanation": "Alkylating sodium acetylide with the primary iodide (CH3)3CCH2CH2I gives (CH3)3CCH2CH2C≡CH, and hydrogenation over Pd/C reduces the triple bond completely to give 2,2-dimethylhexane (Exercise 9.9.2b). The tert-butyl group must already be in the halide, because a tertiary halide can't be used to attach it."
+  },
+  {
+    "id": "oc9-ex-hexanal",
+    "type": "multiple-choice",
+    "prompt": "Which sequence makes hexanal, CH3CH2CH2CH2CH2CHO, from acetylene and an alkyl halide?",
+    "choices": [
+      {
+        "text": "NaNH2, then CH3CH2CH2CH2I; then disiamylborane; then H2O2",
+        "correct": true
+      },
+      {
+        "text": "NaNH2, then CH3CH2CH2CH2I; then HgSO4, H3O+",
+        "why": "Mercury(II)-catalyzed hydration of 1-hexyne gives the methyl ketone 2-hexanone, not the aldehyde."
+      },
+      {
+        "text": "NaNH2, then CH3CH2CH2CH2CH2I; then disiamylborane; then H2O2",
+        "why": "A pentyl group gives 1-heptyne and then heptanal, one carbon too many."
+      },
+      {
+        "text": "NaNH2, then CH3CH2CH2CH2I; then H2 over the Lindlar catalyst; then BH3; then H2O2, NaOH",
+        "why": "Hydroboration–oxidation of the alkene 1-hexene gives an alcohol, 1-hexanol, not hexanal."
+      }
+    ],
+    "explanation": "Alkylating the acetylide with 1-iodobutane gives 1-hexyne. Hydroboration–oxidation of a terminal alkyne gives an aldehyde (a bulky borane such as disiamylborane keeps a second borane from adding), so the product is hexanal (Exercise 9.9.2c)."
+  },
+  {
+    "id": "oc9-ex-heptanone-carbons",
+    "type": "numeric",
+    "prompt": "2-Heptanone, CH3COCH2CH2CH2CH2CH3, is made from acetylene by treatment with NaNH2, then a primary alkyl iodide, then HgSO4 and H3O+. How many carbon atoms does the alkyl iodide contain?",
+    "answer": 5,
+    "explanation": "Mercury(II)-catalyzed hydration turns a terminal alkyne into a methyl ketone, so 2-heptanone comes from 1-heptyne, HC≡CCH2CH2CH2CH2CH3. Acetylene supplies two carbons, so the iodide supplies five: 1-iodopentane, CH3CH2CH2CH2CH2I (Exercise 9.9.2d)."
+  }
+]

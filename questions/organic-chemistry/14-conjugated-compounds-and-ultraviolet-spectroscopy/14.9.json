@@ -1,0 +1,209 @@
+[
+  {
+    "id": "oc14-visible-range",
+    "type": "multiple-choice",
+    "prompt": "Approximately what wavelength range does the visible region of the spectrum cover?",
+    "choices": [
+      {
+        "text": "400 to 800 nm",
+        "correct": true
+      },
+      {
+        "text": "200 to 400 nm",
+        "why": "That is the ultraviolet range of interest to organic chemists. The visible region lies just beyond it."
+      },
+      {
+        "text": "800 to 1600 nm",
+        "why": "Those wavelengths are longer than visible light. The visible region runs from about 400 to 800 nm."
+      },
+      {
+        "text": "10 to 200 nm",
+        "why": "Those short wavelengths lie in the ultraviolet, toward the X-ray region."
+      }
+    ],
+    "explanation": "The visible region of the electromagnetic spectrum is adjacent to the ultraviolet region and extends from approximately 400 to 800 nm."
+  },
+  {
+    "id": "oc14-why-colored",
+    "type": "multiple-choice",
+    "prompt": "Why are some organic compounds, such as β-carotene, colored?",
+    "choices": [
+      {
+        "text": "Their conjugation is so extensive that their absorption reaches into the visible region",
+        "correct": true
+      },
+      {
+        "text": "They absorb every visible wavelength equally",
+        "why": "A colored compound absorbs some visible wavelengths and transmits the rest; β-carotene absorbs only the blue (400–500 nm)."
+      },
+      {
+        "text": "They have no conjugated double bonds, so they absorb only UV light",
+        "why": "It's extensive conjugation that pushes the absorption into the visible."
+      },
+      {
+        "text": "Their absorption lies at wavelengths shorter than 200 nm",
+        "why": "That is even further into the ultraviolet. Colored compounds absorb in the visible, 400–800 nm."
+      }
+    ],
+    "explanation": "Colored compounds have such elaborate systems of conjugation that their \"UV\" absorptions extend into the visible region. β-Carotene, with 11 double bonds in conjugation, absorbs at λ_max = 455 nm, while cholesterol is colorless."
+  },
+  {
+    "id": "oc14-carotene-double-bonds",
+    "type": "numeric",
+    "prompt": "β-Carotene absorbs in the visible region, at λ_max = 455 nm. How many double bonds does it have in conjugation?",
+    "answer": 11,
+    "explanation": "β-Carotene has 11 double bonds in conjugation. Such an elaborate conjugated system shrinks the HOMO–LUMO gap enough that the absorption moves out of the UV into the visible region (455 nm)."
+  },
+  {
+    "id": "oc14-carotene-color",
+    "type": "multiple-choice",
+    "prompt": "Why does β-carotene look yellow-orange in white light?",
+    "choices": [
+      {
+        "text": "It absorbs the blue wavelengths (400–500 nm), and we see the light that remains",
+        "correct": true
+      },
+      {
+        "text": "It absorbs yellow-orange light, so we see that color",
+        "why": "We see the wavelengths that are transmitted, not the ones absorbed. β-Carotene absorbs blue."
+      },
+      {
+        "text": "It gives off yellow-orange light after absorbing UV light",
+        "why": "The color is white light with the blue removed; nothing is emitted."
+      },
+      {
+        "text": "It absorbs every wavelength except 455 nm",
+        "why": "455 nm is where it absorbs most strongly. It absorbs 400–500 nm and transmits the rest."
+      }
+    ],
+    "explanation": "White light contains all visible wavelengths. When it strikes β-carotene, the wavelengths from 400 to 500 nm (blue) are absorbed and all the others are transmitted to our eyes. We see white light with the blue removed, which we perceive as yellow-orange."
+  },
+  {
+    "id": "oc14-carotene-energy",
+    "type": "numeric",
+    "prompt": "Using E = (1.20 × 10^−4 kJ/mol)/λ, with λ in meters, what energy corresponds to β-carotene's λ_max of 455 nm, to the nearest kJ/mol?",
+    "answer": 264,
+    "unit": "kJ/mol",
+    "explanation": "455 nm = 4.55 × 10^−7 m, so E = (1.20 × 10^−4 kJ/mol)/(4.55 × 10^−7) = 264 kJ/mol. That is less than the 300 kJ/mol at the 400 nm edge of the UV range: β-carotene's extended conjugation lets lower-energy visible light excite it."
+  },
+  {
+    "id": "oc14-vision-pathway",
+    "type": "multiple-choice",
+    "prompt": "Which sequence traces how dietary β-carotene becomes the light-sensitive 11-cis-retinal?",
+    "choices": [
+      {
+        "text": "β-Carotene → vitamin A → 11-trans-retinal → 11-cis-retinal",
+        "correct": true
+      },
+      {
+        "text": "β-Carotene → 11-cis-retinal → vitamin A → 11-trans-retinal",
+        "why": "Vitamin A comes first. It is oxidized to 11-trans-retinal, which is then isomerized to 11-cis-retinal."
+      },
+      {
+        "text": "β-Carotene → 11-trans-retinal → vitamin A → 11-cis-retinal",
+        "why": "Enzymes in the liver convert β-carotene to vitamin A first; vitamin A is then oxidized to the aldehyde."
+      },
+      {
+        "text": "Vitamin A → β-carotene → 11-cis-retinal → 11-trans-retinal",
+        "why": "The pathway starts with dietary β-carotene and ends with the cis isomer."
+      }
+    ],
+    "explanation": "Dietary β-carotene is converted to vitamin A by enzymes in the liver, oxidized to an aldehyde called 11-trans-retinal, and then isomerized by a change in geometry of the double bond between carbons 11 and 12 to produce 11-cis-retinal."
+  },
+  {
+    "id": "oc14-rhodopsin",
+    "type": "multiple-choice",
+    "prompt": "What is rhodopsin?",
+    "choices": [
+      {
+        "text": "A light-sensitive substance formed from the protein opsin and 11-cis-retinal",
+        "correct": true
+      },
+      {
+        "text": "A light-sensitive substance formed from the protein opsin and vitamin A",
+        "why": "Rhodopsin contains 11-cis-retinal, the aldehyde made from vitamin A, not vitamin A itself."
+      },
+      {
+        "text": "The trans form produced when light strikes the rod cells",
+        "why": "That trans form is metarhodopsin II."
+      },
+      {
+        "text": "The enzyme in the liver that converts β-carotene to vitamin A",
+        "why": "Rhodopsin is formed in the rod cells of the eye from opsin and 11-cis-retinal."
+      }
+    ],
+    "explanation": "In the rod cells of the eye, 11-cis-retinal is converted into rhodopsin, a light-sensitive substance formed from the protein opsin and 11-cis-retinal."
+  },
+  {
+    "id": "oc14-light-event",
+    "type": "multiple-choice",
+    "prompt": "What happens to rhodopsin when light strikes the rod cells?",
+    "choices": [
+      {
+        "text": "Its double bond between carbons 11 and 12 isomerizes from cis to trans, giving metarhodopsin II",
+        "correct": true
+      },
+      {
+        "text": "Its double bond between carbons 11 and 12 isomerizes from trans to cis, giving 11-cis-retinal",
+        "why": "Light turns the cis double bond of rhodopsin into trans. The trans-to-cis step belongs to the recycling process."
+      },
+      {
+        "text": "Its double bond between carbons 11 and 12 is hydrogenated to a single bond",
+        "why": "The double bond is kept; it changes geometry from cis to trans."
+      },
+      {
+        "text": "It is converted back into β-carotene",
+        "why": "Light causes a cis–trans isomerization, producing metarhodopsin II."
+      }
+    ],
+    "explanation": "When light strikes the rod cells, isomerization of the double bond between carbons 11 and 12 occurs and trans-rhodopsin, called metarhodopsin II, is produced. Without light this takes about 1100 years; with light it occurs within 2 × 10^−13 seconds. The change in geometry sends a nerve impulse through the optic nerve to the brain."
+  },
+  {
+    "id": "oc14-rod-cone",
+    "type": "multiple-choice",
+    "prompt": "What are the rod cells and cone cells of the retina mainly responsible for?",
+    "choices": [
+      {
+        "text": "Rods: dim light and shades of gray; cones: bright light and colors",
+        "correct": true
+      },
+      {
+        "text": "Rods: bright light and colors; cones: dim light and shades of gray",
+        "why": "Reversed. Rod cells handle dim light and shades of gray; cone cells handle bright light and colors."
+      },
+      {
+        "text": "Rods: colors in dim light; cones: shades of gray in bright light",
+        "why": "Rods see dim light in shades of gray, and cones see bright light and colors."
+      },
+      {
+        "text": "Both are mainly responsible for seeing colors",
+        "why": "Only the cone cells are responsible for colors; rod cells handle dim light and shades of gray."
+      }
+    ],
+    "explanation": "There are two main types of light-sensitive receptor cells in the retina. Rod cells are primarily responsible for seeing dim light and shades of gray, while cone cells are responsible for seeing bright light and colors. Rhodopsin is the light-sensitive substance of the rod cells."
+  },
+  {
+    "id": "oc14-rhodopsin-recycle",
+    "type": "multiple-choice",
+    "prompt": "How is metarhodopsin II recycled back into rhodopsin?",
+    "choices": [
+      {
+        "text": "It is cleaved to all-trans-retinal, which is isomerized back to 11-cis-retinal",
+        "correct": true
+      },
+      {
+        "text": "It is cleaved to β-carotene, which is converted back to vitamin A",
+        "why": "Recycling goes through all-trans-retinal, which is isomerized back to 11-cis-retinal."
+      },
+      {
+        "text": "It reverts on its own in the dark within 2 × 10^−13 seconds",
+        "why": "That fast time belongs to the light-driven isomerization. Without light, cis–trans isomerization takes about 1100 years; recycling uses a multistep sequence."
+      },
+      {
+        "text": "Its retinal is hydrogenated at the double bond between carbons 11 and 12",
+        "why": "The double bond is kept. It is isomerized back from trans to cis."
+      }
+    ],
+    "explanation": "Metarhodopsin II is recycled back into rhodopsin by a multistep sequence involving cleavage to all-trans-retinal and cis–trans isomerization back to 11-cis-retinal."
+  }
+]

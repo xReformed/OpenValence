@@ -1,0 +1,250 @@
+[
+  {
+    "id": "oc13-downfield-side",
+    "type": "multiple-choice",
+    "prompt": "On an NMR chart, the applied field strength increases from left to right. Which side is the downfield side?",
+    "choices": [
+      {
+        "text": "The left side, which is the low-field side",
+        "correct": true
+      },
+      {
+        "text": "The right side, which is the low-field side",
+        "why": "The right side is the high-field side, because the field increases to the right."
+      },
+      {
+        "text": "The right side, which is the high-field side",
+        "why": "The high-field side is called upfield, not downfield."
+      },
+      {
+        "text": "The left side, which is the high-field side",
+        "why": "The field increases from left to right, so the left side is the low-field side."
+      }
+    ],
+    "explanation": "Because the field increases from left to right, the left part of the chart is the low-field, or downfield, side, and the right part is the high-field, or upfield, side (Figure 13.3.1)."
+  },
+  {
+    "id": "oc13-downfield-less-shielded",
+    "type": "multiple-choice",
+    "prompt": "A nucleus absorbs on the downfield side of the NMR chart. What does that imply?",
+    "choices": [
+      {
+        "text": "It needs a lower field strength for resonance, so it is less shielded",
+        "correct": true
+      },
+      {
+        "text": "It needs a higher field strength for resonance, so it is more shielded",
+        "why": "That describes a nucleus absorbing upfield, on the right of the chart."
+      },
+      {
+        "text": "It needs a lower field strength for resonance, so it is more shielded",
+        "why": "A more shielded nucleus feels less of the applied field and needs a higher field, not a lower one."
+      },
+      {
+        "text": "It needs a higher field strength for resonance, so it is less shielded",
+        "why": "Downfield means low field. Needing less field means the nucleus is less shielded."
+      }
+    ],
+    "explanation": "Nuclei that absorb on the downfield side need a lower field strength for resonance, so they have less shielding. Nuclei that absorb upfield need a higher field strength, so they have more shielding."
+  },
+  {
+    "id": "oc13-why-tms-reference",
+    "type": "multiple-choice",
+    "prompt": "Why is tetramethylsilane (TMS), (CH3)4Si, used as the reference for both ^1H and ^13C NMR?",
+    "choices": [
+      {
+        "text": "It gives a single peak upfield of the absorptions normally found in organic compounds",
+        "correct": true
+      },
+      {
+        "text": "It gives a single peak downfield of nearly all organic absorptions",
+        "why": "TMS absorbs upfield. Its peak is set at zero, and other absorptions appear downfield, to the left."
+      },
+      {
+        "text": "It is the solvent the sample is dissolved in",
+        "why": "Only a small amount of TMS is added to the sample; the solvent is usually CDCl_3."
+      },
+      {
+        "text": "It gives many peaks spread across the whole chart",
+        "why": "TMS gives a single peak in both the ^1H and ^13C spectra."
+      }
+    ],
+    "explanation": "A small amount of TMS is added to the sample as a reference. It's used for both ^1H and ^13C measurements because in both cases it gives a single peak upfield of other absorptions normally found in organic compounds."
+  },
+  {
+    "id": "oc13-chemical-shift-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the chemical shift of a nucleus?",
+    "choices": [
+      {
+        "text": "The position on the NMR chart at which it absorbs",
+        "correct": true
+      },
+      {
+        "text": "The height of its peak",
+        "why": "The chemical shift is a position along the horizontal axis, not a peak size."
+      },
+      {
+        "text": "The change in its spin when it absorbs rf energy",
+        "why": "That change is the spin-flip. The chemical shift is where on the chart the absorption occurs."
+      },
+      {
+        "text": "The energy needed to flip it at 200 MHz",
+        "why": "The chemical shift is a position on the chart, measured from TMS on the δ scale."
+      }
+    ],
+    "explanation": "The position on the chart at which a nucleus absorbs is called its chemical shift. The chemical shift of TMS is set as zero, and other absorptions normally occur downfield, to the left."
+  },
+  {
+    "id": "oc13-one-delta-400-mhz",
+    "type": "numeric",
+    "prompt": "On the δ scale, 1 δ equals 1 part per million of the spectrometer's operating frequency. How many hertz does 1 δ equal on a 400 MHz instrument?",
+    "answer": 400,
+    "unit": "Hz",
+    "explanation": "1 ppm of 400,000,000 Hz is 400 Hz. The book's examples: 1 δ = 200 Hz on a 200 MHz instrument and 500 Hz on a 500 MHz instrument."
+  },
+  {
+    "id": "oc13-chcl3-delta",
+    "type": "numeric",
+    "prompt": "On a 200 MHz spectrometer, the ^1H NMR peak of CHCl3 is 1454 Hz downfield from TMS. What is its chemical shift in δ units?",
+    "answer": 7.27,
+    "unit": "δ",
+    "explanation": "δ = (shift in Hz from TMS) ÷ (spectrometer frequency in MHz) = 1454 Hz ÷ 200 MHz = 7.27 δ (Exercise 13.3.1)."
+  },
+  {
+    "id": "oc13-ch3cl-delta",
+    "type": "numeric",
+    "prompt": "On a 200 MHz spectrometer, the ^1H NMR peak of CH3Cl is 610 Hz downfield from TMS. What is its chemical shift in δ units?",
+    "answer": 3.05,
+    "unit": "δ",
+    "explanation": "δ = 610 Hz ÷ 200 MHz = 3.05 δ (Exercise 13.3.1)."
+  },
+  {
+    "id": "oc13-ch2cl2-delta",
+    "type": "numeric",
+    "prompt": "On a 200 MHz spectrometer, the ^1H NMR peak of CH2Cl2 is 1060 Hz downfield from TMS. What is its chemical shift in δ units?",
+    "answer": 5.3,
+    "unit": "δ",
+    "explanation": "δ = 1060 Hz ÷ 200 MHz = 5.30 δ (Exercise 13.3.1)."
+  },
+  {
+    "id": "oc13-acetone-hz-200",
+    "type": "numeric",
+    "prompt": "Acetone, CH3COCH3, shows a single sharp ^1H resonance at 2.1 δ on a 200 MHz instrument. How many hertz downfield from TMS is that peak?",
+    "answer": 420,
+    "unit": "Hz",
+    "explanation": "Rearranging the δ equation: shift in Hz = δ × spectrometer frequency in MHz = 2.1 × 200 = 420 Hz (Exercise 13.3.2)."
+  },
+  {
+    "id": "oc13-acetone-hz-500",
+    "type": "numeric",
+    "prompt": "Acetone, CH3COCH3, absorbs at 2.1 δ. How many hertz downfield from TMS is its ^1H peak on a 500 MHz instrument?",
+    "answer": 1050,
+    "unit": "Hz",
+    "explanation": "The δ value stays 2.1 δ on any instrument. At 500 MHz, 2.1 × 500 = 1050 Hz (Exercise 13.3.2)."
+  },
+  {
+    "id": "oc13-acetone-delta-500",
+    "type": "multiple-choice",
+    "prompt": "Acetone's ^1H resonance is at 2.1 δ on a 200 MHz instrument. Where does it appear on a 500 MHz instrument?",
+    "choices": [
+      {
+        "text": "2.1 δ",
+        "correct": true
+      },
+      {
+        "text": "5.25 δ",
+        "why": "δ values don't scale with the instrument. Only the shift in hertz gets larger at higher frequency."
+      },
+      {
+        "text": "0.84 δ",
+        "why": "The δ value is the same on every instrument; it doesn't shrink at higher frequency."
+      },
+      {
+        "text": "1050 δ",
+        "why": "1050 is the shift in hertz at 500 MHz, not the δ value."
+      }
+    ],
+    "explanation": "The chemical shift in δ units is constant, regardless of the spectrometer's operating frequency. A ^1H nucleus that absorbs at 2.1 δ at 200 MHz also absorbs at 2.1 δ at 500 MHz, although that is 1050 Hz rather than 420 Hz from TMS."
+  },
+  {
+    "id": "oc13-why-delta-scale",
+    "type": "multiple-choice",
+    "prompt": "Why are NMR absorptions reported in δ units rather than in hertz?",
+    "choices": [
+      {
+        "text": "Shifts in hertz differ from one instrument to another, but δ values are the same on any instrument",
+        "correct": true
+      },
+      {
+        "text": "Hertz can't be measured on an NMR spectrometer",
+        "why": "Shifts are measured in hertz from TMS; δ simply divides that by the spectrometer frequency in MHz."
+      },
+      {
+        "text": "δ values get larger on stronger instruments, so peaks are easier to tell apart",
+        "why": "δ values stay the same on every instrument. It's the hertz values that grow."
+      },
+      {
+        "text": "δ values give the number of protons causing each peak",
+        "why": "A δ value gives a peak's position. It says nothing about how many protons cause the peak."
+      }
+    ],
+    "explanation": "The rf frequency needed for resonance depends on field strength, so shifts in hertz vary from one instrument to another: a resonance 120 Hz from TMS on one spectrometer might be 600 Hz on another with a more powerful magnet. Expressing shifts in parts per million (δ) makes spectra from different instruments comparable."
+  },
+  {
+    "id": "oc13-shift-ranges",
+    "type": "multiple-choice",
+    "prompt": "Over what ranges do almost all ^1H and ^13C NMR absorptions occur?",
+    "choices": [
+      {
+        "text": "^1H: 0 to 10 δ; ^13C: 1 to 220 δ",
+        "correct": true
+      },
+      {
+        "text": "^1H: 1 to 220 δ; ^13C: 0 to 10 δ",
+        "why": "The ranges are swapped. The ^13C range is the much wider one."
+      },
+      {
+        "text": "Both: 0 to 10 δ",
+        "why": "^13C absorptions spread over a much wider range, 1 to 220 δ."
+      },
+      {
+        "text": "^1H: 0 to 100 δ; ^13C: 0 to 1000 δ",
+        "why": "Almost all ^1H absorptions fall from 0 to 10 δ, and ^13C from 1 to 220 δ."
+      }
+    ],
+    "explanation": "Almost all ^1H NMR absorptions occur from 0 to 10 δ downfield from TMS, and almost all ^13C absorptions from 1 to 220 δ. Because these ranges are narrow, nonequivalent signals sometimes overlap by accident."
+  },
+  {
+    "id": "oc13-separation-at-500-mhz",
+    "type": "numeric",
+    "prompt": "Two ^1H NMR signals are 20 Hz apart on a 200 MHz instrument. How many hertz apart are they on a 500 MHz instrument?",
+    "answer": 50,
+    "unit": "Hz",
+    "explanation": "20 Hz at 200 MHz is 0.1 ppm. At 500 MHz, 0.1 ppm is 0.1 × 500 = 50 Hz. The signals are still 0.1 ppm apart but are more widely separated in hertz."
+  },
+  {
+    "id": "oc13-higher-field-advantage",
+    "type": "multiple-choice",
+    "prompt": "What is the advantage of running a ^1H spectrum on a 500 MHz instrument instead of a 200 MHz one?",
+    "choices": [
+      {
+        "text": "Different absorptions are more widely separated, so accidental overlap is less likely",
+        "correct": true
+      },
+      {
+        "text": "Every absorption moves to a larger δ value",
+        "why": "δ values are the same on any instrument. Only the separations in hertz grow."
+      },
+      {
+        "text": "TMS no longer needs to be added as a reference",
+        "why": "TMS is still needed as the zero point on any instrument."
+      },
+      {
+        "text": "Equivalent nuclei give separate peaks",
+        "why": "Chemically equivalent nuclei always show the same absorption, on any instrument."
+      }
+    ],
+    "explanation": "At higher field strength, different absorptions are more widely separated. Two signals 20 Hz apart at 200 MHz (0.1 ppm) are 50 Hz apart at 500 MHz (still 0.1 ppm). The chance of accidental overlap is lessened, and spectra are easier to interpret."
+  }
+]

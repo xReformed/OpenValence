@@ -1,0 +1,282 @@
+[
+  {
+    "id": "oc13-one-line-per-carbon",
+    "type": "multiple-choice",
+    "prompt": "In a broadband-decoupled ^13C NMR spectrum, what does each chemically different carbon atom give?",
+    "choices": [
+      {
+        "text": "A single sharp resonance line",
+        "correct": true
+      },
+      {
+        "text": "A multiplet split by its attached hydrogens",
+        "why": "Broadband decoupling removes coupling to hydrogens, so each carbon gives a single line."
+      },
+      {
+        "text": "A peak whose area gives the number of attached hydrogens",
+        "why": "^13C peak sizes vary for other reasons, so they can't be integrated that way."
+      },
+      {
+        "text": "Two lines, one for each spin state",
+        "why": "Each different carbon gives one sharp line."
+      }
+    ],
+    "explanation": "At its simplest, ^13C NMR makes it possible to count the different carbon atoms in a molecule. In spectra such as those of methyl acetate and 1-pentanol, a single sharp resonance line is observed for each different carbon atom."
+  },
+  {
+    "id": "oc13-sp3-carbon-range",
+    "type": "multiple-choice",
+    "prompt": "Over what range do sp3-hybridized carbons generally absorb in ^13C NMR?",
+    "choices": [
+      {
+        "text": "0–90 δ",
+        "correct": true
+      },
+      {
+        "text": "110–220 δ",
+        "why": "That is the range for sp2 carbons."
+      },
+      {
+        "text": "160–220 δ",
+        "why": "That is where carbonyl carbons absorb."
+      },
+      {
+        "text": "0–10 δ",
+        "why": "That is the range of almost all ^1H absorptions, not ^13C."
+      }
+    ],
+    "explanation": "sp3-Hybridized carbons generally absorb from 0 to 90 δ, while sp2 carbons absorb from 110 to 220 δ."
+  },
+  {
+    "id": "oc13-carbonyl-carbon-range",
+    "type": "multiple-choice",
+    "prompt": "Where do carbonyl carbons (C=O) absorb in ^13C NMR?",
+    "choices": [
+      {
+        "text": "160–220 δ, at the low-field end of the spectrum",
+        "correct": true
+      },
+      {
+        "text": "0–90 δ, at the high-field end of the spectrum",
+        "why": "That is the sp3 range. C=O carbons are at the opposite, low-field end."
+      },
+      {
+        "text": "9.7–10.0 δ",
+        "why": "That is the ^1H range for an aldehyde proton, not a ^13C range."
+      },
+      {
+        "text": "Upfield of TMS",
+        "why": "Most ^13C resonances are 0 to 220 ppm downfield of TMS, and C=O carbons are the farthest downfield."
+      }
+    ],
+    "explanation": "Carbonyl carbons are particularly distinct in ^13C NMR and are always found at the low-field end of the spectrum, from 160 to 220 δ."
+  },
+  {
+    "id": "oc13-electronegative-carbon-downfield",
+    "type": "multiple-choice",
+    "prompt": "Why do carbons bonded to O, N or a halogen absorb downfield of typical alkane carbons?",
+    "choices": [
+      {
+        "text": "The electronegative atom pulls electrons away from the carbon, deshielding it",
+        "correct": true
+      },
+      {
+        "text": "The electronegative atom pushes electrons onto the carbon, shielding it",
+        "why": "Electronegative atoms attract electrons, so the carbon is deshielded, not shielded."
+      },
+      {
+        "text": "These carbons are always sp2-hybridized",
+        "why": "Carbons bonded to O, N or halogen are often sp3. The downfield shift comes from electronegativity."
+      },
+      {
+        "text": "The electronegative atom splits the carbon signal",
+        "why": "Electronegativity changes a carbon's chemical shift; it doesn't split the signal."
+      }
+    ],
+    "explanation": "Electronegative atoms attract electrons, pulling them away from neighboring carbons. Those carbons are deshielded and come into resonance at lower field, to the left of typical alkane carbons."
+  },
+  {
+    "id": "oc13-bromoacetophenone-why-six",
+    "type": "multiple-choice",
+    "prompt": "para-Bromoacetophenone, BrC6H4COCH3, has eight carbons but shows only six ^13C absorptions. Why?",
+    "choices": [
+      {
+        "text": "A symmetry plane makes two pairs of ring carbons equivalent",
+        "correct": true
+      },
+      {
+        "text": "Quaternary carbons give no signal",
+        "why": "Quaternary carbons give smaller peaks, but they still appear."
+      },
+      {
+        "text": "The C=O and CH3 carbons absorb at the same position",
+        "why": "These two carbons are very different; the C=O carbon is at the low-field end of the spectrum."
+      },
+      {
+        "text": "Broadband decoupling merges the signals of carbons bonded to each other",
+        "why": "Decoupling removes coupling to hydrogens; it doesn't merge carbon signals. The missing signals come from symmetry."
+      }
+    ],
+    "explanation": "para-Bromoacetophenone has a symmetry plane that makes two pairs of ring carbons equivalent. So the six ring carbons give only four absorptions, and the molecule shows six in all."
+  },
+  {
+    "id": "oc13-bromoacetophenone-ring-lines",
+    "type": "numeric",
+    "prompt": "How many ^13C absorptions come from the six ring carbons of para-bromoacetophenone, BrC6H4COCH3, in which Br and COCH3 are para to each other?",
+    "answer": 4,
+    "unit": "absorptions",
+    "explanation": "The ring carbon bonded to Br and the one bonded to the acetyl group are unique. The symmetry plane makes the remaining four into two equivalent pairs. That gives four ring absorptions, in the range 128 to 137 δ."
+  },
+  {
+    "id": "oc13-cant-integrate-c13",
+    "type": "multiple-choice",
+    "prompt": "Why can't ^13C NMR spectra be integrated the way ^1H spectra are?",
+    "choices": [
+      {
+        "text": "Peak sizes aren't uniform, because carbons take different times to return to equilibrium after an rf pulse",
+        "correct": true
+      },
+      {
+        "text": "^13C peaks are too narrow to have a measurable area",
+        "why": "The problem is that one-carbon peaks differ in size, so area doesn't track the number of carbons."
+      },
+      {
+        "text": "Every carbon peak has exactly the same size",
+        "why": "The opposite is true: peaks are not uniform in size, even for one-carbon resonances."
+      },
+      {
+        "text": "^13C spectra have no TMS reference peak",
+        "why": "TMS is used as the reference for both ^1H and ^13C spectra."
+      }
+    ],
+    "explanation": "Peaks in broadband-decoupled ^13C spectra aren't uniform in size, even for one-carbon resonances. A carbon's environment sets both its chemical shift and the time its nuclei take to return to equilibrium after a pulse, so ^13C spectra can't be integrated like ^1H spectra."
+  },
+  {
+    "id": "oc13-quaternary-small-peaks",
+    "type": "multiple-choice",
+    "prompt": "Which carbons typically give smaller ^13C resonances than the others?",
+    "choices": [
+      {
+        "text": "Quaternary carbons",
+        "correct": true
+      },
+      {
+        "text": "Primary carbons",
+        "why": "Primary, secondary and tertiary carbons typically give larger resonances than quaternary carbons."
+      },
+      {
+        "text": "Secondary carbons",
+        "why": "Secondary carbons typically give larger resonances than quaternary carbons."
+      },
+      {
+        "text": "Carbons bonded to oxygen",
+        "why": "The rule is about quaternary carbons, regardless of their substituents."
+      }
+    ],
+    "explanation": "Quaternary carbons, regardless of their hybridization or substituents, typically give smaller resonances than primary, secondary or tertiary carbons."
+  },
+  {
+    "id": "oc13-ethyl-acrylate-carbons",
+    "type": "numeric",
+    "prompt": "How many chemically distinct carbons does ethyl acrylate, H2C=CHCO2CH2CH3, have?",
+    "answer": 5,
+    "unit": "carbons",
+    "explanation": "All five carbons are different: two different C=C carbons, one C=O, one O–C and one alkyl carbon (Worked Example 13.11.1)."
+  },
+  {
+    "id": "oc13-ethyl-acrylate-166",
+    "type": "multiple-choice",
+    "prompt": "Ethyl acrylate, H2C=CHCO2CH2CH3, shows ^13C absorptions at 14.1, 60.5, 128.5, 130.3 and 166.0 δ. Which carbon gives the 166.0 δ peak?",
+    "choices": [
+      {
+        "text": "The C=O carbon",
+        "correct": true
+      },
+      {
+        "text": "The –OCH2– carbon",
+        "why": "That sp3 carbon bonded to oxygen gives the 60.5 δ peak."
+      },
+      {
+        "text": "The terminal =CH2 carbon",
+        "why": "The two C=C carbons give the peaks at 128.5 and 130.3 δ."
+      },
+      {
+        "text": "The –CH3 carbon",
+        "why": "The alkyl –CH3 gives the most upfield peak, 14.1 δ."
+      }
+    ],
+    "explanation": "Carbonyl carbons absorb at the low-field end, 160–220 δ, so the 166.0 δ peak is the C=O carbon. The C=C carbons are at 128.5 and 130.3 δ, the O–C carbon at 60.5 δ and the –CH3 at 14.1 δ (Worked Example 13.11.1)."
+  },
+  {
+    "id": "oc13-lines-methylcyclopentane",
+    "type": "numeric",
+    "prompt": "How many lines would you expect in the ^13C NMR spectrum of methylcyclopentane?",
+    "answer": 4,
+    "unit": "lines",
+    "explanation": "The methyl carbon and the ring carbon bearing it are unique. Symmetry makes the two ring carbons next to that carbon equivalent, and the two beyond them equivalent. That gives 4 lines (Exercise 13.11.1)."
+  },
+  {
+    "id": "oc13-lines-o-xylene",
+    "type": "numeric",
+    "prompt": "How many lines would you expect in the ^13C NMR spectrum of 1,2-dimethylbenzene, C6H4(CH3)2, with its methyl groups on adjacent ring carbons?",
+    "answer": 4,
+    "unit": "lines",
+    "explanation": "Symmetry makes the two methyl carbons equivalent, the two ring carbons bearing methyls equivalent and the remaining four ring carbons two equivalent pairs: 1 + 1 + 2 = 4 lines (Exercise 13.11.1)."
+  },
+  {
+    "id": "oc13-lines-methylbutene",
+    "type": "numeric",
+    "prompt": "How many lines would you expect in the ^13C NMR spectrum of 2-methyl-2-butene, (CH3)2C=CHCH3?",
+    "answer": 5,
+    "unit": "lines",
+    "explanation": "All five carbons are different. The two methyls on carbon 2 aren't equivalent, because one is cis to the CH3 on carbon 3 and the other is trans. That gives 5 lines (Exercise 13.11.1)."
+  },
+  {
+    "id": "oc13-methyl-propanoate-och3",
+    "type": "multiple-choice",
+    "prompt": "Methyl propanoate, CH3CH2CO2CH3, shows ^13C absorptions at 9.3, 27.6, 51.4 and 174.6 δ. Which one is the –OCH3 carbon?",
+    "choices": [
+      {
+        "text": "51.4 δ",
+        "correct": true
+      },
+      {
+        "text": "174.6 δ",
+        "why": "That peak, at the low-field end, is the C=O carbon."
+      },
+      {
+        "text": "27.6 δ",
+        "why": "That is the –CH2– carbon, an ordinary alkyl carbon."
+      },
+      {
+        "text": "9.3 δ",
+        "why": "That is the –CH3 of the ethyl group, the most upfield carbon."
+      }
+    ],
+    "explanation": "The –OCH3 carbon is an sp3 carbon bonded to an electronegative oxygen, so it lies downfield of the alkyl carbons but far upfield of the C=O: 51.4 δ. The others are –CH3 9.3 δ, –CH2– 27.6 δ and C=O 174.6 δ (Exercise 13.11.3)."
+  },
+  {
+    "id": "oc13-six-carbons-five-lines",
+    "type": "multiple-choice",
+    "prompt": "Which six-carbon compound has only five lines in its ^13C NMR spectrum?",
+    "choices": [
+      {
+        "text": "2-Methylpentane, (CH3)2CHCH2CH2CH3",
+        "correct": true
+      },
+      {
+        "text": "Hexane, CH3CH2CH2CH2CH2CH3",
+        "why": "Hexane's symmetry leaves only three kinds of carbon, so it shows three lines."
+      },
+      {
+        "text": "3-Methylpentane, CH3CH2CH(CH3)CH2CH3",
+        "why": "Its two ethyl groups are equivalent, leaving four kinds of carbon and four lines."
+      },
+      {
+        "text": "2,2-Dimethylbutane, (CH3)3CCH2CH3",
+        "why": "Its three methyls on carbon 2 are equivalent, leaving four kinds of carbon and four lines."
+      }
+    ],
+    "explanation": "In 2-methylpentane only the two methyls on carbon 2 are equivalent, so its six carbons give five lines (Exercise 13.11.2)."
+  }
+]

@@ -1,0 +1,560 @@
+[
+  {
+    "id": "oc13-splitting-cause",
+    "type": "multiple-choice",
+    "prompt": "What causes spin–spin splitting of a ^1H NMR signal?",
+    "choices": [
+      {
+        "text": "Coupling of a proton's spin with the spins of nearby protons",
+        "correct": true
+      },
+      {
+        "text": "Shielding by the electrons around the proton",
+        "why": "Shielding sets the chemical shift. Splitting comes from the tiny fields of neighboring nuclei."
+      },
+      {
+        "text": "Rapid interconversion of two forms of the molecule",
+        "why": "Fast interconversion gives a single averaged signal, not a split one."
+      },
+      {
+        "text": "Hydrogens in the solvent",
+        "why": "The usual solvent, CDCl_3, has no hydrogens. Splitting comes from protons within the molecule."
+      }
+    ],
+    "explanation": "Spin–spin splitting is caused by the interaction, or coupling, of the spins of nearby nuclei: the tiny magnetic field of one nucleus affects the field felt by a neighboring nucleus."
+  },
+  {
+    "id": "oc13-bromoethane-ch3-peaks",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of bromoethane, CH3CH2Br, into how many peaks is the –CH3 signal split?",
+    "answer": 3,
+    "unit": "peaks",
+    "explanation": "The –CH3 protons have two neighboring –CH2Br protons. By the n + 1 rule, n = 2 gives a triplet, centered at 1.68 δ."
+  },
+  {
+    "id": "oc13-two-spins-one-each-way",
+    "type": "numeric",
+    "prompt": "Each of the two –CH2Br protons in bromoethane can align with or against the applied field. In how many ways can they align so that one is with the field and one is against it?",
+    "answer": 2,
+    "unit": "ways",
+    "explanation": "Either the first proton is with the field and the second against, or the reverse: two ways. Together with both-with (one way) and both-against (one way), this gives the 1 : 2 : 1 triplet of the –CH3 signal."
+  },
+  {
+    "id": "oc13-both-spins-with-field",
+    "type": "multiple-choice",
+    "prompt": "In some bromoethane molecules, both –CH2Br proton spins align with the applied field. How does that affect the neighboring –CH3 protons?",
+    "choices": [
+      {
+        "text": "They feel a slightly larger effective field, so slightly less applied field is needed for resonance",
+        "correct": true
+      },
+      {
+        "text": "They feel a slightly smaller effective field, so slightly more applied field is needed",
+        "why": "That happens when both –CH2Br spins align against the field."
+      },
+      {
+        "text": "There is no effect on the –CH3 protons",
+        "why": "There's no effect only when one –CH2Br spin is with the field and the other against it."
+      },
+      {
+        "text": "They feel a slightly larger effective field, so slightly more applied field is needed",
+        "why": "If the protons already feel a bit more field, less applied field is needed to reach resonance."
+      }
+    ],
+    "explanation": "If both –CH2Br spins align with the applied field, the effective field felt by the –CH3 protons is slightly larger, so the applied field needed for resonance is slightly reduced. One-with-one-against has no effect, and both-against slightly increases the field needed."
+  },
+  {
+    "id": "oc13-triplet-intensities",
+    "type": "multiple-choice",
+    "prompt": "What are the relative intensities of the three lines of a triplet?",
+    "choices": [
+      {
+        "text": "1 : 2 : 1",
+        "correct": true
+      },
+      {
+        "text": "1 : 1 : 1",
+        "why": "The middle line is twice as large, because the one-with-one-against arrangement can occur two ways."
+      },
+      {
+        "text": "1 : 3 : 1",
+        "why": "Two neighboring spins give arrangements in a 1 : 2 : 1 ratio, not 1 : 3 : 1."
+      },
+      {
+        "text": "2 : 1 : 2",
+        "why": "The middle line is the largest, not the smallest."
+      }
+    ],
+    "explanation": "Two neighboring proton spins can align both-with (one way), one-each (two ways) or both-against (one way). In a large collection of molecules these occur in a 1 : 2 : 1 ratio, giving a 1 : 2 : 1 triplet (Table 13.6.1)."
+  },
+  {
+    "id": "oc13-quartet-origin",
+    "type": "multiple-choice",
+    "prompt": "Why is the –CH2Br signal of bromoethane a 1 : 3 : 3 : 1 quartet?",
+    "choices": [
+      {
+        "text": "The three neighboring –CH3 spins can align in four combinations, which occur 1, 3, 3 and 1 ways",
+        "correct": true
+      },
+      {
+        "text": "The three neighboring –CH3 spins can align in four combinations, each equally likely",
+        "why": "The combinations aren't equally likely: all-with and all-against occur one way each, but two-with-one-against and one-with-two-against occur three ways each."
+      },
+      {
+        "text": "The two –CH2Br protons split each other",
+        "why": "Equivalent protons don't split each other. The quartet comes from the three neighboring –CH3 protons."
+      },
+      {
+        "text": "The bromine atom splits the signal into four",
+        "why": "The n + 1 rule counts neighboring protons: three –CH3 protons give 3 + 1 = 4 peaks."
+      }
+    ],
+    "explanation": "The three –CH3 spins can align all with the field, two with and one against (three ways), one with and two against (three ways), or all against. This gives four peaks for the –CH2Br protons in a 1 : 3 : 3 : 1 ratio."
+  },
+  {
+    "id": "oc13-n-plus-one-rule",
+    "type": "multiple-choice",
+    "prompt": "What does the n + 1 rule say?",
+    "choices": [
+      {
+        "text": "Protons with n equivalent neighboring protons show n + 1 peaks",
+        "correct": true
+      },
+      {
+        "text": "Protons with n equivalent neighboring protons show n peaks",
+        "why": "There is always one more peak than the number of neighbors; a proton with no neighbors is a singlet."
+      },
+      {
+        "text": "A group of n equivalent protons shows n + 1 peaks",
+        "why": "It's the number of neighbors that counts. The six methyl protons of 2-bromopropane give a doublet, because they have one neighbor."
+      },
+      {
+        "text": "Protons on a carbon with n neighboring carbons show n + 1 peaks",
+        "why": "The rule counts neighboring protons, not neighboring carbons."
+      }
+    ],
+    "explanation": "The n + 1 rule: protons that have n equivalent neighboring protons show n + 1 peaks in their NMR spectrum."
+  },
+  {
+    "id": "oc13-bromopropane-ch-peaks",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of 2-bromopropane, (CH3)2CHBr, into how many peaks is the –CHBr– proton signal split?",
+    "answer": 7,
+    "unit": "peaks",
+    "explanation": "The –CHBr– proton has six equivalent neighboring protons on the two methyl groups. n = 6 gives 6 + 1 = 7 peaks, a septet at 4.28 δ."
+  },
+  {
+    "id": "oc13-bromopropane-ch3-peaks",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of 2-bromopropane, (CH3)2CHBr, into how many peaks is the signal of the six methyl protons split?",
+    "answer": 2,
+    "unit": "peaks",
+    "explanation": "The six equivalent methyl protons have one neighboring proton, the –CHBr– proton. n = 1 gives 2 peaks, a doublet at 1.71 δ."
+  },
+  {
+    "id": "oc13-bromopropane-area-ratio",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of 2-bromopropane, (CH3)2CHBr, what is the ratio of the area of the methyl doublet to the area of the –CHBr– septet, as a single number?",
+    "answer": 6,
+    "explanation": "The doublet comes from six methyl protons and the septet from one –CHBr– proton. Integration confirms the expected 6 : 1 ratio."
+  },
+  {
+    "id": "oc13-coupling-constant-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the coupling constant, J?",
+    "choices": [
+      {
+        "text": "The distance between the peaks in a multiplet, in hertz",
+        "correct": true
+      },
+      {
+        "text": "The number of peaks in a multiplet",
+        "why": "The number of peaks follows the n + 1 rule. J is the spacing between them."
+      },
+      {
+        "text": "The chemical shift of the center of a multiplet, in δ",
+        "why": "That is the multiplet's position. J measures the spacing between its peaks."
+      },
+      {
+        "text": "The ratio of the intensities of the peaks in a multiplet",
+        "why": "Intensity ratios such as 1 : 2 : 1 are listed in Table 13.6.1. J is the distance between peaks."
+      }
+    ],
+    "explanation": "The distance between peaks in a multiplet is called the coupling constant, J. Coupling constants are measured in hertz and generally fall in the range 0 to 18 Hz."
+  },
+  {
+    "id": "oc13-open-chain-j",
+    "type": "multiple-choice",
+    "prompt": "What is a typical coupling constant between neighboring protons in an open-chain alkane?",
+    "choices": [
+      {
+        "text": "6 to 8 Hz",
+        "correct": true
+      },
+      {
+        "text": "20 to 30 Hz",
+        "why": "Coupling constants generally fall in the range 0 to 18 Hz, so this is too large."
+      },
+      {
+        "text": "About 200 Hz",
+        "why": "That is the size of 1 δ on a 200 MHz instrument, not a coupling constant."
+      },
+      {
+        "text": "1 to 2 Hz",
+        "why": "Typical open-chain values are larger, 6 to 8 Hz; bromoethane's J is 7 Hz."
+      }
+    ],
+    "explanation": "The exact coupling constant depends on the geometry of the molecule, but a typical value for an open-chain alkane is J = 6 to 8 Hz. In bromoethane, J = 7 Hz."
+  },
+  {
+    "id": "oc13-j-field-independent",
+    "type": "multiple-choice",
+    "prompt": "How does the coupling constant between two groups of protons change if the spectrum is run on a spectrometer with a stronger magnet?",
+    "choices": [
+      {
+        "text": "It doesn't change; J is independent of field strength",
+        "correct": true
+      },
+      {
+        "text": "It increases in proportion to the spectrometer frequency",
+        "why": "That is true of a chemical shift measured in hertz, not of J."
+      },
+      {
+        "text": "It decreases in proportion to the spectrometer frequency",
+        "why": "J doesn't depend on the spectrometer's field strength at all."
+      },
+      {
+        "text": "It changes for one of the coupled groups but not the other",
+        "why": "Two coupled groups always share the same J."
+      }
+    ],
+    "explanation": "The same coupling constant is shared by both groups of hydrogens whose spins are coupled, and it is independent of spectrometer field strength."
+  },
+  {
+    "id": "oc13-bromoethane-triplet-j",
+    "type": "numeric",
+    "prompt": "In bromoethane, CH3CH2Br, the –CH2Br protons appear as a quartet with J = 7 Hz. What is the coupling constant of the –CH3 triplet, in Hz?",
+    "answer": 7,
+    "unit": "Hz",
+    "explanation": "Coupling is a reciprocal interaction, so two groups of protons coupled to each other have the same J (Rule 3). The –CH3 triplet also has J = 7 Hz."
+  },
+  {
+    "id": "oc13-same-j-adjacent",
+    "type": "multiple-choice",
+    "prompt": "Two multiplets in a complex ^1H NMR spectrum have the same coupling constant. What does that suggest?",
+    "choices": [
+      {
+        "text": "The protons causing them are probably adjacent and coupled to each other",
+        "correct": true
+      },
+      {
+        "text": "The protons causing them are chemically equivalent",
+        "why": "Equivalent protons don't split each other at all (Rule 1). A shared J points to two neighboring groups coupled to each other."
+      },
+      {
+        "text": "The two multiplets must have the same number of peaks",
+        "why": "In bromoethane, a triplet and a quartet share J = 7 Hz."
+      },
+      {
+        "text": "The protons causing them are more than two carbons apart",
+        "why": "Protons that far apart don't usually couple. A shared J suggests they are adjacent."
+      }
+    ],
+    "explanation": "Because coupling is reciprocal, two multiplets with the same coupling constant are probably related, and the protons causing them are probably adjacent in the molecule."
+  },
+  {
+    "id": "oc13-sextet-rare",
+    "type": "multiple-choice",
+    "prompt": "Why is a six-line multiplet (sextet) uncommon in ^1H NMR?",
+    "choices": [
+      {
+        "text": "No proton can have five equivalent neighboring protons",
+        "correct": true
+      },
+      {
+        "text": "Six-line patterns are too weak to see",
+        "why": "Weakness isn't the reason. A sextet needs five neighbors, and five neighbors can't all be equivalent."
+      },
+      {
+        "text": "The n + 1 rule never gives an even number of peaks",
+        "why": "Doublets (n = 1) and quartets (n = 3) have even numbers of peaks."
+      },
+      {
+        "text": "Five neighboring protons always give a quintet",
+        "why": "A quintet comes from four equivalent neighbors. Five neighbors would give six peaks."
+      }
+    ],
+    "explanation": "A given proton can't have five equivalent neighboring protons, which is why Table 13.6.1 skips n = 5. A sextet appears only when a proton has five nonequivalent neighbors that happen to couple with an identical J."
+  },
+  {
+    "id": "oc13-quintet-intensities",
+    "type": "multiple-choice",
+    "prompt": "What are the relative intensities of the five lines of a quintet?",
+    "choices": [
+      {
+        "text": "1 : 4 : 6 : 4 : 1",
+        "correct": true
+      },
+      {
+        "text": "1 : 2 : 3 : 2 : 1",
+        "why": "The ratios grow faster than that. Four neighboring spins give 1 : 4 : 6 : 4 : 1."
+      },
+      {
+        "text": "1 : 1 : 1 : 1 : 1",
+        "why": "The lines aren't equal; the arrangements with mixed spins occur in more ways."
+      },
+      {
+        "text": "1 : 3 : 6 : 3 : 1",
+        "why": "The second and fourth lines are 4 times the outer ones, not 3 times."
+      }
+    ],
+    "explanation": "A proton with four equivalent neighbors gives a quintet with intensities 1 : 4 : 6 : 4 : 1 (Table 13.6.1)."
+  },
+  {
+    "id": "oc13-dichloroethane-peaks",
+    "type": "numeric",
+    "prompt": "How many peaks make up the ^1H NMR signal of 1,2-dichloroethane, ClCH2CH2Cl?",
+    "answer": 1,
+    "explanation": "All four protons of 1,2-dichloroethane are chemically equivalent, and equivalent protons don't show spin–spin splitting (Rule 1). The signal is a single peak, even though the protons are on adjacent carbons."
+  },
+  {
+    "id": "oc13-coupling-distance-rule",
+    "type": "multiple-choice",
+    "prompt": "Which protons usually do NOT couple with each other?",
+    "choices": [
+      {
+        "text": "Protons that are farther than two carbon atoms apart",
+        "correct": true
+      },
+      {
+        "text": "Protons on adjacent carbons",
+        "why": "Nonequivalent protons on adjacent carbons do couple, as in bromoethane."
+      },
+      {
+        "text": "Protons with different chemical shifts",
+        "why": "Nonequivalent protons on neighboring carbons have different shifts, and they do couple, as in bromoethane."
+      },
+      {
+        "text": "Protons on carbons bonded to oxygen",
+        "why": "Nothing in the rules stops these from coupling. The –OCH2– protons of diethyl ether are still split into a quartet by the neighboring –CH3."
+      }
+    ],
+    "explanation": "Rule 2: protons that are farther than two carbon atoms apart don't usually couple, although they sometimes show weak coupling when they are separated by a π bond."
+  },
+  {
+    "id": "oc13-methoxypropiophenone-och3",
+    "type": "multiple-choice",
+    "prompt": "In the ^1H NMR spectrum of para-methoxypropiophenone, CH3OC6H4COCH2CH3, the –OCH3 signal at 3.84 δ is a sharp singlet. Why is it unsplit?",
+    "choices": [
+      {
+        "text": "The nearest other protons are too far away to couple",
+        "correct": true
+      },
+      {
+        "text": "The three –OCH3 protons split one another into a singlet",
+        "why": "Equivalent protons don't split each other at all (Rule 1)."
+      },
+      {
+        "text": "Oxygen stops all coupling in the molecule",
+        "why": "The –CH2– and –CH3 signals are still split. The –OCH3 group just has no near neighbors with protons."
+      },
+      {
+        "text": "Its neighbors are the aromatic protons, which are equivalent to it",
+        "why": "The aromatic protons are a different kind of proton and are too far away to couple."
+      }
+    ],
+    "explanation": "The –OCH3 carbon is bonded to oxygen, which has no hydrogens, and the next protons are farther away still. So the –OCH3 signal is unsplit and appears as a sharp singlet at 3.84 δ."
+  },
+  {
+    "id": "oc13-methoxypropiophenone-ch2",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of para-methoxypropiophenone, CH3OC6H4COCH2CH3, into how many peaks is the –CH2– signal at 2.93 δ split?",
+    "answer": 4,
+    "unit": "peaks",
+    "explanation": "The –CH2– protons are next to the three methyl protons. n = 3 gives a quartet. The methyl protons, in turn, appear as a triplet at 1.20 δ."
+  },
+  {
+    "id": "oc13-c5h12o-structure",
+    "type": "multiple-choice",
+    "prompt": "A compound C5H12O shows these ^1H NMR data: 0.92 δ (3 H, triplet, J = 7 Hz), 1.20 δ (6 H, singlet), 1.50 δ (2 H, quartet, J = 7 Hz), 1.64 δ (1 H, broad singlet). What is it?",
+    "choices": [
+      {
+        "text": "2-Methyl-2-butanol, CH3CH2C(CH3)2OH",
+        "correct": true
+      },
+      {
+        "text": "1-Pentanol, CH3CH2CH2CH2CH2OH",
+        "why": "1-Pentanol has no pair of equivalent methyl groups to give a 6 H singlet."
+      },
+      {
+        "text": "3-Methyl-2-butanol, (CH3)2CHCH(OH)CH3",
+        "why": "It has no ethyl group to give the triplet–quartet pair, and its methyls have neighboring protons, so none would be a singlet."
+      },
+      {
+        "text": "tert-Butyl methyl ether, (CH3)3COCH3",
+        "why": "It would show just two singlets, 9 H and 3 H."
+      }
+    ],
+    "explanation": "The 3 H triplet and 2 H quartet with the same J = 7 Hz show an ethyl group, CH3CH2–. The 6 H singlet is two equivalent methyls on a carbon with no hydrogens, (CH3)2C. That accounts for 5 carbons and 11 hydrogens; the broad 1 H singlet is the OH. The compound is 2-methyl-2-butanol (Worked Example 13.6.1)."
+  },
+  {
+    "id": "oc13-six-proton-singlet",
+    "type": "multiple-choice",
+    "prompt": "A C5H12O alcohol shows a six-proton singlet at 1.20 δ. What structural piece does that point to?",
+    "choices": [
+      {
+        "text": "Two equivalent methyl groups on a carbon with no hydrogens, (CH3)2C",
+        "correct": true
+      },
+      {
+        "text": "Two equivalent methyl groups on a CH, (CH3)2CH–",
+        "why": "The CH proton would split the methyl signal into a doublet."
+      },
+      {
+        "text": "An –OCH3 group",
+        "why": "An –OCH3 group has only three protons, and they would absorb farther downfield."
+      },
+      {
+        "text": "An ethyl group, CH3CH2–",
+        "why": "An ethyl group gives a 3 H triplet and a 2 H quartet, not a 6 H singlet."
+      }
+    ],
+    "explanation": "Six protons in one alkane-like signal means two equivalent methyl groups. Because the signal is unsplit, the carbon they are attached to has no hydrogens: (CH3)2C (Worked Example 13.6.1)."
+  },
+  {
+    "id": "oc13-bromomethoxyethane-splitting",
+    "type": "multiple-choice",
+    "prompt": "What splitting patterns do you expect in the ^1H NMR spectrum of 1-bromo-2-methoxyethane, CH3OCH2CH2Br?",
+    "choices": [
+      {
+        "text": "CH3O–, singlet; –OCH2–, triplet; –CH2Br, triplet",
+        "correct": true
+      },
+      {
+        "text": "CH3O–, quartet; –OCH2–, triplet; –CH2Br, triplet",
+        "why": "The CH3O– protons have no protons on the neighboring oxygen, so their signal is a singlet."
+      },
+      {
+        "text": "CH3O–, singlet; –OCH2–, quintet; –CH2Br, quintet",
+        "why": "Each –CH2– has only the other –CH2– (two protons) as neighbors, so each is a triplet."
+      },
+      {
+        "text": "CH3O–, singlet; –OCH2–, singlet; –CH2Br, singlet",
+        "why": "The two –CH2– groups are nonequivalent neighbors, so they split each other."
+      }
+    ],
+    "explanation": "The CH3O– protons have no neighboring protons and appear as a singlet. The –OCH2– and –CH2Br protons are adjacent and nonequivalent; each has two neighbors, so each is a triplet (Exercise 13.6.1)."
+  },
+  {
+    "id": "oc13-dichloropropane-central-ch2",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of 1,3-dichloropropane, ClCH2CH2CH2Cl, into how many peaks is the signal of the central –CH2– split?",
+    "answer": 5,
+    "unit": "peaks",
+    "explanation": "The central –CH2– has four equivalent neighboring protons, two on each ClCH2– group. n = 4 gives a quintet. The ClCH2– protons each have two neighbors and appear as a triplet (Exercise 13.6.1)."
+  },
+  {
+    "id": "oc13-dibromoethane-chbr2",
+    "type": "numeric",
+    "prompt": "In the ^1H NMR spectrum of 1,1-dibromoethane, CH3CHBr2, into how many peaks is the –CHBr2 proton signal split?",
+    "answer": 4,
+    "unit": "peaks",
+    "explanation": "The –CHBr2 proton has three equivalent neighbors on the methyl group, so n = 3 gives a quartet. The –CH3 signal is a doublet (Exercise 13.6.1)."
+  },
+  {
+    "id": "oc13-c2h6o-one-singlet",
+    "type": "multiple-choice",
+    "prompt": "Which compound fits this description: formula C2H6O, with a ^1H NMR spectrum of just one singlet?",
+    "choices": [
+      {
+        "text": "Dimethyl ether, CH3OCH3",
+        "correct": true
+      },
+      {
+        "text": "Ethanol, CH3CH2OH",
+        "why": "Ethanol has the right formula, but its CH3 and CH2 protons are nonequivalent neighbors that split each other."
+      },
+      {
+        "text": "Ethyl methyl ether, CH3OCH2CH3",
+        "why": "That is C3H8O, and its ethyl group would give a triplet and a quartet."
+      },
+      {
+        "text": "1,2-Ethanediol, HOCH2CH2OH",
+        "why": "That is C2H6O2, not C2H6O."
+      }
+    ],
+    "explanation": "In dimethyl ether all six protons are equivalent, so they give one unsplit signal (Exercise 13.6.2)."
+  },
+  {
+    "id": "oc13-c4h8cl2o-two-triplets",
+    "type": "multiple-choice",
+    "prompt": "Which compound of formula C4H8Cl2O shows only two triplets in its ^1H NMR spectrum?",
+    "choices": [
+      {
+        "text": "ClCH2CH2OCH2CH2Cl",
+        "correct": true
+      },
+      {
+        "text": "CH3CHClOCHClCH3",
+        "why": "Its CH3 and CHCl protons split each other into doublets and quartets, not triplets."
+      },
+      {
+        "text": "Cl2CHCH2OCH2CH3",
+        "why": "It has four kinds of protons, including a quartet from the –OCH2– next to the CH3."
+      },
+      {
+        "text": "ClCH2OCH2CH2CH2Cl",
+        "why": "It has four kinds of protons, and the ClCH2O– protons have no neighbors, so they give a singlet."
+      }
+    ],
+    "explanation": "In ClCH2CH2OCH2CH2Cl the two halves are equivalent, leaving two kinds of protons: ClCH2– and –OCH2–. Each has two neighboring protons, so each gives a triplet (Exercise 13.6.2)."
+  },
+  {
+    "id": "oc13-c4h8o2-singlet-triplet-quartet",
+    "type": "multiple-choice",
+    "prompt": "Which compound of formula C4H8O2 shows one singlet, one triplet and one quartet in its ^1H NMR spectrum?",
+    "choices": [
+      {
+        "text": "Ethyl acetate, CH3CO2CH2CH3",
+        "correct": true
+      },
+      {
+        "text": "Butanoic acid, CH3CH2CH2CO2H",
+        "why": "It has four kinds of protons, and its middle –CH2– has neighbors on both sides, so it isn't just a singlet, a triplet and a quartet."
+      },
+      {
+        "text": "2-Methylpropanoic acid, (CH3)2CHCO2H",
+        "why": "Its six methyl protons would be a doublet and its CH proton a septet."
+      },
+      {
+        "text": "Propyl formate, HCO2CH2CH2CH3",
+        "why": "It has four kinds of protons, and none has exactly three equivalent neighbors, so there is no quartet."
+      }
+    ],
+    "explanation": "In ethyl acetate, the CH3CO– protons have no neighbors (singlet), the –OCH2– protons have three neighbors (quartet) and the ethyl –CH3 has two neighbors (triplet). Methyl propanoate, CH3CH2CO2CH3, would fit too (Exercise 13.6.2)."
+  },
+  {
+    "id": "oc13-c4h10o-triplet-quartet",
+    "type": "multiple-choice",
+    "prompt": "A compound C4H10O shows only two ^1H NMR signals: a six-proton triplet and a four-proton quartet. What is it?",
+    "choices": [
+      {
+        "text": "Diethyl ether, CH3CH2OCH2CH3",
+        "correct": true
+      },
+      {
+        "text": "1-Butanol, CH3CH2CH2CH2OH",
+        "why": "1-Butanol has five kinds of protons, counting the OH, not two."
+      },
+      {
+        "text": "2-Methyl-2-propanol, (CH3)3COH",
+        "why": "It would show a nine-proton singlet and a one-proton OH signal."
+      },
+      {
+        "text": "Methyl propyl ether, CH3OCH2CH2CH3",
+        "why": "It has four kinds of protons, including a three-proton –OCH3 singlet."
+      }
+    ],
+    "explanation": "Two signals in a 6 : 4 ratio, a triplet and a quartet, mean two equivalent ethyl groups. With one oxygen left, the compound is diethyl ether, CH3CH2OCH2CH3 (Exercise 13.6.3)."
+  }
+]

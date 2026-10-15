@@ -1,0 +1,196 @@
+[
+  {
+    "id": "oc14-lambda-depends-gap",
+    "type": "multiple-choice",
+    "prompt": "What determines the wavelength needed for the π → π* transition in a conjugated molecule?",
+    "choices": [
+      {
+        "text": "The energy gap between the HOMO and the LUMO",
+        "correct": true
+      },
+      {
+        "text": "The molar mass of the molecule",
+        "why": "The wavelength depends on the HOMO–LUMO gap, which depends on the conjugated system, not on the mass."
+      },
+      {
+        "text": "The concentration of the sample",
+        "why": "Concentration affects the absorbance, not the wavelength at which absorption occurs."
+      },
+      {
+        "text": "The number of C–H bonds in the molecule",
+        "why": "The wavelength depends on the HOMO–LUMO gap of the conjugated π system."
+      }
+    ],
+    "explanation": "The wavelength necessary to effect the π → π* transition depends on the energy gap between HOMO and LUMO, which in turn depends on the nature of the conjugated system. So a UV spectrum gives structural information about any conjugated π electron system in the molecule."
+  },
+  {
+    "id": "oc14-conjugation-trend",
+    "type": "multiple-choice",
+    "prompt": "As the extent of conjugation increases, what happens to the HOMO–LUMO gap and to λ_max?",
+    "choices": [
+      {
+        "text": "The gap decreases and λ_max moves to longer wavelength",
+        "correct": true
+      },
+      {
+        "text": "The gap increases and λ_max moves to longer wavelength",
+        "why": "A larger gap would need more energy, meaning a shorter wavelength. Extended conjugation narrows the gap."
+      },
+      {
+        "text": "The gap decreases and λ_max moves to shorter wavelength",
+        "why": "A smaller gap needs less energy, and lower energy means longer wavelength."
+      },
+      {
+        "text": "The gap increases and λ_max moves to shorter wavelength",
+        "why": "It's the other way round: 1,3-butadiene absorbs at 217 nm, 1,3,5-hexatriene at 258 nm, 1,3,5,7-octatetraene at 290 nm."
+      }
+    ],
+    "explanation": "Molecular orbital calculations show that the HOMO–LUMO energy difference decreases as the extent of conjugation increases. Less energy means longer wavelength, so λ_max rises: 217 nm for 1,3-butadiene, 258 nm for 1,3,5-hexatriene and 290 nm for 1,3,5,7-octatetraene."
+  },
+  {
+    "id": "oc14-hexatriene-shift",
+    "type": "numeric",
+    "prompt": "Adding one more conjugated double bond to 1,3-butadiene (λ_max = 217 nm) gives 1,3,5-hexatriene (λ_max = 258 nm). By how many nanometers does λ_max increase?",
+    "answer": 41,
+    "unit": "nm",
+    "explanation": "258 nm − 217 nm = 41 nm. More conjugation narrows the HOMO–LUMO gap, so the absorption moves to a longer wavelength."
+  },
+  {
+    "id": "oc14-average-shift",
+    "type": "numeric",
+    "prompt": "Going from 1,3-butadiene (λ_max = 217 nm) to 1,3,5,7-octatetraene (λ_max = 290 nm) adds two conjugated double bonds. What is the average increase in λ_max per added double bond, in nm?",
+    "answer": 36.5,
+    "unit": "nm",
+    "tolerance": 0.02,
+    "explanation": "(290 nm − 217 nm) ÷ 2 = 73 nm ÷ 2 = 36.5 nm per added double bond. Each extra conjugated double bond lowers the HOMO–LUMO gap and pushes λ_max to a longer wavelength."
+  },
+  {
+    "id": "oc14-energy-difference",
+    "type": "numeric",
+    "prompt": "Using E = (1.20 × 10^−4 kJ/mol)/λ, with λ in meters, how much less energy is needed to excite 1,3,5,7-octatetraene (λ_max = 290 nm) than 1,3-butadiene (λ_max = 217 nm), in kJ/mol?",
+    "answer": 139,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "E(217 nm) = (1.20 × 10^−4 kJ/mol)/(2.17 × 10^−7) = 553 kJ/mol; E(290 nm) = (1.20 × 10^−4 kJ/mol)/(2.90 × 10^−7) = 414 kJ/mol. The difference is about 139 kJ/mol: the more extended conjugated system has the smaller HOMO–LUMO gap."
+  },
+  {
+    "id": "oc14-uv-absorber-pick",
+    "type": "multiple-choice",
+    "prompt": "Which of these compounds would you expect to show a UV absorption in the 200–400 nm range?",
+    "choices": [
+      {
+        "text": "1,3-Cyclohexadiene",
+        "correct": true
+      },
+      {
+        "text": "1,4-Pentadiene",
+        "why": "Its double bonds are isolated, not conjugated, and UV spectroscopy applies only to conjugated compounds."
+      },
+      {
+        "text": "Cyclohexene",
+        "why": "A single isolated double bond isn't a conjugated system."
+      },
+      {
+        "text": "Cyclohexane",
+        "why": "Cyclohexane has no π electrons at all."
+      }
+    ],
+    "explanation": "UV absorptions in the 200–400 nm range come from conjugated π electron systems. 1,3-Cyclohexadiene is a conjugated diene with λ_max = 256 nm (Table 14.8.1, Exercise 14.8.1)."
+  },
+  {
+    "id": "oc14-other-uv-systems",
+    "type": "multiple-choice",
+    "prompt": "Besides conjugated polyenes, which other kinds of conjugated systems have characteristic UV absorptions useful in structure determination?",
+    "choices": [
+      {
+        "text": "Conjugated enones and aromatic rings",
+        "correct": true
+      },
+      {
+        "text": "Alkanes and cycloalkanes",
+        "why": "These have no π electrons, so they have no conjugated system."
+      },
+      {
+        "text": "Alkyl halides and simple alcohols",
+        "why": "These lack conjugated π systems."
+      },
+      {
+        "text": "Nonconjugated dienes such as 1,4-pentadiene",
+        "why": "Their double bonds are isolated, so they don't form a conjugated system."
+      }
+    ],
+    "explanation": "Other kinds of conjugated systems, such as conjugated enones (3-buten-2-one, λ_max = 219 nm) and aromatic rings (benzene, λ_max = 203 nm), also have characteristic UV absorptions (Table 14.8.1)."
+  },
+  {
+    "id": "oc14-longest-lambda",
+    "type": "multiple-choice",
+    "prompt": "Which of these compounds from Table 14.8.1 absorbs at the longest wavelength?",
+    "choices": [
+      {
+        "text": "1,3,5,7-Octatetraene",
+        "correct": true
+      },
+      {
+        "text": "1,3,5-Hexatriene",
+        "why": "With three conjugated double bonds it absorbs at 258 nm, shorter than octatetraene's 290 nm."
+      },
+      {
+        "text": "2-Methyl-1,3-butadiene",
+        "why": "With only two conjugated double bonds it absorbs at 220 nm."
+      },
+      {
+        "text": "3-Buten-2-one",
+        "why": "This conjugated enone absorbs at 219 nm."
+      }
+    ],
+    "explanation": "1,3,5,7-Octatetraene has the most extended conjugation (four conjugated double bonds), so its HOMO–LUMO gap is smallest and its λ_max is longest: 290 nm, versus 258 nm for 1,3,5-hexatriene, 220 nm for 2-methyl-1,3-butadiene and 219 nm for 3-buten-2-one."
+  },
+  {
+    "id": "oc14-predict-decapentaene",
+    "type": "multiple-choice",
+    "prompt": "1,3,5,7,9-Decapentaene has five conjugated double bonds. What would you predict for its λ_max?",
+    "choices": [
+      {
+        "text": "Longer than 290 nm, the λ_max of 1,3,5,7-octatetraene",
+        "correct": true
+      },
+      {
+        "text": "Shorter than 217 nm, the λ_max of 1,3-butadiene",
+        "why": "More conjugation means a smaller HOMO–LUMO gap and a longer wavelength, not a shorter one."
+      },
+      {
+        "text": "Between 217 and 258 nm",
+        "why": "Each added conjugated double bond has pushed λ_max longer, so five should absorb beyond octatetraene's 290 nm."
+      },
+      {
+        "text": "Exactly 290 nm, the same as 1,3,5,7-octatetraene",
+        "why": "An extra conjugated double bond narrows the HOMO–LUMO gap further, so λ_max increases."
+      }
+    ],
+    "explanation": "The HOMO–LUMO gap decreases as conjugation increases: λ_max = 217 nm with two conjugated double bonds, 258 nm with three and 290 nm with four. A fifth conjugated double bond should push λ_max beyond 290 nm."
+  },
+  {
+    "id": "oc14-less-energy-hexatriene",
+    "type": "multiple-choice",
+    "prompt": "1,3,5-Hexatriene absorbs at 258 nm and 1,3-butadiene at 217 nm. Which needs less energy for its π → π* transition?",
+    "choices": [
+      {
+        "text": "1,3,5-Hexatriene, because a longer wavelength means lower energy",
+        "correct": true
+      },
+      {
+        "text": "1,3-Butadiene, because a shorter wavelength means lower energy",
+        "why": "Shorter wavelength means higher energy. The longer-wavelength absorber, hexatriene, needs less energy."
+      },
+      {
+        "text": "Both need the same energy, since both are conjugated polyenes",
+        "why": "Their λ_max values differ, so their HOMO–LUMO gaps differ too."
+      },
+      {
+        "text": "1,3-Butadiene, because it has fewer π electrons to excite",
+        "why": "Only one electron is promoted either way. What matters is the HOMO–LUMO gap, which is smaller for hexatriene."
+      }
+    ],
+    "explanation": "Longer wavelength means lower energy. 1,3,5-Hexatriene's more extended conjugation gives it a smaller HOMO–LUMO gap, so it absorbs at a longer wavelength (258 nm) than 1,3-butadiene (217 nm) and needs less energy."
+  }
+]

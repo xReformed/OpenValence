@@ -1,0 +1,313 @@
+[
+  {
+    "id": "oc11-zaitsev-rule",
+    "type": "multiple-choice",
+    "prompt": "What does Zaitsev's rule say?",
+    "choices": [
+      {
+        "text": "In the elimination of HX from an alkyl halide, the more highly substituted alkene product predominates",
+        "correct": true
+      },
+      {
+        "text": "In the elimination of HX from an alkyl halide, the less highly substituted alkene product predominates",
+        "why": "That's the reverse. Base-induced eliminations generally give the more stable, more substituted alkene."
+      },
+      {
+        "text": "In the addition of HX to an alkene, the H adds to the carbon that has more hydrogens",
+        "why": "That is Markovnikov's rule, which is about additions, not eliminations."
+      },
+      {
+        "text": "In the elimination of HX from an alkyl halide, a single alkene forms with no other products",
+        "why": "Eliminations almost always give mixtures of alkenes. Zaitsev's rule predicts which one is major."
+      }
+    ],
+    "explanation": "According to Zaitsev's rule (1875), base-induced elimination reactions generally, although not always, give the more stable alkene product, the one with more alkyl substituents on the double-bond carbons."
+  },
+  {
+    "id": "oc11-bromobutane-2-butene-percent",
+    "type": "numeric",
+    "prompt": "When 2-bromobutane is treated with sodium ethoxide in ethanol, what percent of the alkene product is 2-butene?",
+    "answer": 81,
+    "unit": "%",
+    "explanation": "2-Bromobutane gives 2-butene (81%) and 1-butene (19%). The disubstituted 2-butene, the more highly substituted alkene, predominates, as Zaitsev's rule predicts."
+  },
+  {
+    "id": "oc11-bromomethylbutane-major",
+    "type": "multiple-choice",
+    "prompt": "Which alkene is the major product when 2-bromo-2-methylbutane, (CH3)2CBrCH2CH3, is treated with sodium ethoxide in ethanol?",
+    "choices": [
+      {
+        "text": "2-methyl-2-butene",
+        "correct": true
+      },
+      {
+        "text": "2-methyl-1-butene",
+        "why": "That disubstituted alkene is the minor product. The trisubstituted 2-methyl-2-butene predominates."
+      },
+      {
+        "text": "3-methyl-1-butene",
+        "why": "The double bond must include carbon 2, which held the bromine. 3-Methyl-1-butene's double bond doesn't."
+      },
+      {
+        "text": "2-methyl-2-butanol",
+        "why": "That would be a substitution product. The section's example with ethoxide gives a mixture of two alkenes."
+      }
+    ],
+    "explanation": "Loss of HBr gives 2-methyl-2-butene (70%), with three alkyl groups on the double-bond carbons, and 2-methyl-1-butene (30%), with two. The more highly substituted alkene predominates."
+  },
+  {
+    "id": "oc11-bromomethylbutane-minor-percent",
+    "type": "numeric",
+    "prompt": "When 2-bromo-2-methylbutane is treated with sodium ethoxide in ethanol, what percent of the alkene product is 2-methyl-1-butene?",
+    "answer": 30,
+    "unit": "%",
+    "explanation": "2-Bromo-2-methylbutane gives 2-methyl-2-butene (70%) and 2-methyl-1-butene (30%). The less substituted 2-methyl-1-butene is the minor product."
+  },
+  {
+    "id": "oc11-e1-timing",
+    "type": "multiple-choice",
+    "prompt": "In the E1 reaction, in what order are the C–H and C–X bonds broken?",
+    "choices": [
+      {
+        "text": "The C–X bond breaks first to give a carbocation, then a base removes H+",
+        "correct": true
+      },
+      {
+        "text": "Both bonds break at the same time, in a single step",
+        "why": "That is the E2 reaction."
+      },
+      {
+        "text": "The C–H bond breaks first to give a carbanion, then X− leaves",
+        "why": "That is the E1cB reaction."
+      },
+      {
+        "text": "The C–H bond breaks first to give a carbocation, then X− leaves",
+        "why": "Removing H+ leaves an electron pair behind, giving a carbanion, not a carbocation. In E1 the C–X bond breaks first."
+      }
+    ],
+    "explanation": "The E1, E2 and E1cB mechanisms differ in the timing of C–H and C–X bond breaking. In the E1 reaction, the C–X bond breaks first to give a carbocation intermediate, which then undergoes base abstraction of H+ to yield the alkene."
+  },
+  {
+    "id": "oc11-e2-timing",
+    "type": "multiple-choice",
+    "prompt": "In the E2 reaction, how are the C–H and C–X bonds broken?",
+    "choices": [
+      {
+        "text": "At the same time, giving the alkene in a single step",
+        "correct": true
+      },
+      {
+        "text": "The C–X bond first, giving a carbocation, then the C–H bond",
+        "why": "That is the E1 reaction."
+      },
+      {
+        "text": "The C–H bond first, giving a carbanion, then the C–X bond",
+        "why": "That is the E1cB reaction."
+      },
+      {
+        "text": "Only the C–H bond; the C–X bond stays intact in the alkene",
+        "why": "Elimination of HX means the halogen leaves too."
+      }
+    ],
+    "explanation": "In the E2 reaction, base-induced C–H bond cleavage is simultaneous with C–X bond cleavage, giving the alkene in a single step."
+  },
+  {
+    "id": "oc11-e1cb-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does \"cB\" stand for in E1cB, and what intermediate forms?",
+    "choices": [
+      {
+        "text": "Conjugate base; a carbanion forms when the proton is removed first",
+        "correct": true
+      },
+      {
+        "text": "Conjugate base; a carbocation forms when X− leaves first",
+        "why": "In E1cB the proton is removed first, giving a carbanion. A carbocation forms in E1."
+      },
+      {
+        "text": "Carbocation, bimolecular; a carbocation forms when X− leaves first",
+        "why": "cB stands for conjugate base, and the intermediate is a carbanion."
+      },
+      {
+        "text": "Carbonyl bond; no intermediate forms",
+        "why": "cB stands for conjugate base. The reaction does have an intermediate, a carbanion."
+      }
+    ],
+    "explanation": "In the E1cB reaction (cB for \"conjugate base\"), base abstraction of the proton occurs first, giving a carbanion (R:−) intermediate. This anion, the conjugate base of the reactant \"acid,\" then loses X− to give the alkene."
+  },
+  {
+    "id": "oc11-biological-elimination-mechanism",
+    "type": "multiple-choice",
+    "prompt": "Which elimination mechanism predominates in biological pathways?",
+    "choices": [
+      {
+        "text": "E1cB",
+        "correct": true
+      },
+      {
+        "text": "E1",
+        "why": "E1 reactions occur frequently in the laboratory, but E1cB predominates in biological pathways."
+      },
+      {
+        "text": "E2",
+        "why": "E2 reactions occur frequently in the laboratory, but E1cB predominates in biological pathways."
+      },
+      {
+        "text": "All three equally",
+        "why": "All three occur frequently in the laboratory, but in biological pathways E1cB predominates."
+      }
+    ],
+    "explanation": "All three mechanisms, E1, E2 and E1cB, occur frequently in the laboratory, but the E1cB mechanism predominates in biological pathways."
+  },
+  {
+    "id": "oc11-chloromethylcyclohexane-koh",
+    "type": "multiple-choice",
+    "prompt": "What is the major product when 1-chloro-1-methylcyclohexane reacts with KOH in ethanol?",
+    "choices": [
+      {
+        "text": "1-methylcyclohexene",
+        "correct": true
+      },
+      {
+        "text": "Methylenecyclohexane",
+        "why": "That is the minor product. Its double bond carries only two alkyl substituents, versus three in 1-methylcyclohexene."
+      },
+      {
+        "text": "3-methylcyclohexene",
+        "why": "The double bond must include carbon 1, which held the chlorine. 3-Methylcyclohexene's double bond doesn't."
+      },
+      {
+        "text": "1-methylcyclohexanol",
+        "why": "That would be a substitution product. Treating the alkyl halide with the strong base KOH gives alkenes here."
+      }
+    ],
+    "explanation": "Locate the hydrogens on each carbon next to the leaving group and remove HX in each possible way. Removing H from a ring carbon gives 1-methylcyclohexene (trisubstituted, major); removing H from the methyl gives methylenecyclohexane (disubstituted, minor) (Worked Example 11.7.1)."
+  },
+  {
+    "id": "oc11-bromomethylpentane-major",
+    "type": "multiple-choice",
+    "prompt": "Ignoring double-bond stereochemistry, what is the major elimination product of 3-bromo-2-methylpentane, (CH3)2CHCHBrCH2CH3?",
+    "choices": [
+      {
+        "text": "2-methyl-2-pentene",
+        "correct": true
+      },
+      {
+        "text": "4-methyl-2-pentene",
+        "why": "That disubstituted alkene is the minor product. Removing the H from carbon 2 gives the trisubstituted 2-methyl-2-pentene."
+      },
+      {
+        "text": "2-methyl-1-pentene",
+        "why": "The double bond must include carbon 3, which held the bromine. A double bond between carbons 1 and 2 doesn't."
+      },
+      {
+        "text": "2,3-dimethyl-2-butene",
+        "why": "Elimination doesn't change the carbon skeleton, so the product must be a methylpentene."
+      }
+    ],
+    "explanation": "The β carbons are carbon 2 (one H) and carbon 4 (two H's). Loss of H from carbon 2 gives 2-methyl-2-pentene, with three alkyl groups on the double bond (major); loss from carbon 4 gives 4-methyl-2-pentene, with two (minor) (Exercise 11.7.1)."
+  },
+  {
+    "id": "oc11-chlorotrimethylhexane-major",
+    "type": "multiple-choice",
+    "prompt": "What is the major elimination product of 3-chloro-2,3,5-trimethylhexane, (CH3)2CHCCl(CH3)CH2CH(CH3)2?",
+    "choices": [
+      {
+        "text": "2,3,5-trimethyl-2-hexene",
+        "correct": true
+      },
+      {
+        "text": "2,3,5-trimethyl-3-hexene",
+        "why": "That trisubstituted alkene is a minor product. The tetrasubstituted 2,3,5-trimethyl-2-hexene predominates."
+      },
+      {
+        "text": "2-isopropyl-4-methyl-1-pentene",
+        "why": "That disubstituted alkene, from loss of a methyl hydrogen, is a minor product."
+      },
+      {
+        "text": "2,3,5-trimethyl-1-hexene",
+        "why": "The double bond must include carbon 3, which held the chlorine. Carbon 1 isn't next to carbon 3."
+      }
+    ],
+    "explanation": "Removing H from carbon 2 gives 2,3,5-trimethyl-2-hexene, with four alkyl groups on the double bond (major). Removing H from carbon 4 gives 2,3,5-trimethyl-3-hexene (three), and from the 3-methyl group gives 2-isopropyl-4-methyl-1-pentene (two) (Exercise 11.7.1)."
+  },
+  {
+    "id": "oc11-chlorotrimethylhexane-product-count",
+    "type": "numeric",
+    "prompt": "Ignoring double-bond stereochemistry, how many different alkenes can form by elimination of HCl from 3-chloro-2,3,5-trimethylhexane, (CH3)2CHCCl(CH3)CH2CH(CH3)2?",
+    "answer": 3,
+    "explanation": "The chlorine-bearing carbon 3 has three different neighboring carbons with hydrogens: carbon 2, carbon 4 and the 3-methyl group. They give 2,3,5-trimethyl-2-hexene (major), 2,3,5-trimethyl-3-hexene and 2-isopropyl-4-methyl-1-pentene."
+  },
+  {
+    "id": "oc11-bromoethylcyclohexane-major",
+    "type": "multiple-choice",
+    "prompt": "What is the major elimination product of (1-bromoethyl)cyclohexane, C6H11CH(Br)CH3, where C6H11 is a cyclohexyl ring?",
+    "choices": [
+      {
+        "text": "Ethylidenecyclohexane",
+        "correct": true
+      },
+      {
+        "text": "Cyclohexylethylene",
+        "why": "That monosubstituted alkene, from loss of a CH3 hydrogen, is the minor product."
+      },
+      {
+        "text": "1-ethylcyclohexene",
+        "why": "The double bond must include the side-chain carbon that held the bromine. 1-Ethylcyclohexene's double bond lies entirely in the ring."
+      },
+      {
+        "text": "1-cyclohexylethanol",
+        "why": "That is a substitution product, not an elimination product."
+      }
+    ],
+    "explanation": "Removing the H from the ring carbon gives ethylidenecyclohexane, with three alkyl groups on the double bond (major). Removing an H from the CH3 gives cyclohexylethylene, C6H11CH=CH2, with only one (minor) (Exercise 11.7.1)."
+  },
+  {
+    "id": "oc11-make-dimethylheptene",
+    "type": "multiple-choice",
+    "prompt": "Which alkyl halide would give only 3,6-dimethyl-1-heptene, CH2=CHCH(CH3)CH2CH2CH(CH3)2, on elimination of HBr?",
+    "choices": [
+      {
+        "text": "1-bromo-3,6-dimethylheptane",
+        "correct": true
+      },
+      {
+        "text": "2-bromo-3,6-dimethylheptane",
+        "why": "Elimination could then also form a carbon 2–carbon 3 double bond, and Zaitsev's rule says that more substituted alkene would predominate."
+      },
+      {
+        "text": "3-bromo-3,6-dimethylheptane",
+        "why": "Carbon 1 isn't next to carbon 3, so no double bond between carbons 1 and 2 could form."
+      },
+      {
+        "text": "1-bromo-2,5-dimethylheptane",
+        "why": "That would give 2,5-dimethyl-1-heptene; the methyl groups would be on the wrong carbons."
+      }
+    ],
+    "explanation": "With Br on carbon 1, the only neighboring carbon with hydrogens is carbon 2, so elimination can only give the 1-alkene, 3,6-dimethyl-1-heptene (Exercise 11.7.2)."
+  },
+  {
+    "id": "oc11-bromomethylpentane-tertiary",
+    "type": "multiple-choice",
+    "prompt": "Applying Zaitsev's rule, what is the major alkene from base-induced elimination of HBr from 2-bromo-2-methylpentane, (CH3)2CBrCH2CH2CH3?",
+    "choices": [
+      {
+        "text": "2-methyl-2-pentene",
+        "correct": true
+      },
+      {
+        "text": "2-methyl-1-pentene",
+        "why": "That alkene has only two alkyl groups on its double bond. 2-Methyl-2-pentene, with three, predominates."
+      },
+      {
+        "text": "4-methyl-2-pentene",
+        "why": "The double bond must include carbon 2, which held the bromine. 4-Methyl-2-pentene's double bond doesn't."
+      },
+      {
+        "text": "3-methyl-2-pentene",
+        "why": "Elimination doesn't move the methyl group; the product keeps the 2-methylpentane skeleton."
+      }
+    ],
+    "explanation": "Loss of H from carbon 3 gives (CH3)2C=CHCH2CH3, 2-methyl-2-pentene, with three alkyl substituents on the double bond. Loss of H from a methyl group gives 2-methyl-1-pentene, with two. By Zaitsev's rule the more highly substituted 2-methyl-2-pentene predominates."
+  }
+]

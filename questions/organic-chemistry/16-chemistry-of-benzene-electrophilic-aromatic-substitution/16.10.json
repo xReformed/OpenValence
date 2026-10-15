@@ -1,0 +1,448 @@
+[
+  {
+    "id": "oc16-work-backward",
+    "type": "multiple-choice",
+    "prompt": "How does the section recommend working a synthesis problem for a substituted benzene?",
+    "choices": [
+      {
+        "text": "Backward (retrosynthetically), repeatedly asking “What is an immediate precursor of this compound?”",
+        "correct": true
+      },
+      {
+        "text": "Forward from benzene, trying each available reaction until the target appears",
+        "why": "The section recommends the opposite: start from the target and work backward one step at a time."
+      },
+      {
+        "text": "By always putting the most strongly activating group on first",
+        "why": "There is no such fixed rule; the right order depends on the directing effects needed, found by working backward."
+      },
+      {
+        "text": "By choosing reactions that introduce all the substituents in a single step",
+        "why": "Substituents are introduced one at a time, and the order is often critical. The section plans backward from the target."
+      }
+    ],
+    "explanation": "As in Section 9.9, it's usually best to work a synthesis problem backward, or retrosynthetically. Look at the target and ask, “What is an immediate precursor of this compound?” Choose a likely answer and keep working backward, one step at a time, until you reach a simple starting material."
+  },
+  {
+    "id": "oc16-order-matters",
+    "type": "multiple-choice",
+    "prompt": "Why is planning the order of reactions especially important when synthesizing substituted aromatic rings?",
+    "choices": [
+      {
+        "text": "Groups already on the ring direct where each new substituent goes",
+        "correct": true
+      },
+      {
+        "text": "Each new substituent always goes para to the one added just before it",
+        "why": "Where a new group goes depends on whether the groups already present are ortho/para or meta directors, and on their strength."
+      },
+      {
+        "text": "All aromatic substitutions are reversible, so later steps undo earlier ones",
+        "why": "Of the reactions in this chapter, sulfonation is the one described as readily reversible. The order matters because of directing effects."
+      },
+      {
+        "text": "Substituents move around the ring if they are added in the wrong order",
+        "why": "Substituents stay where they are put. The order matters because each group directs where the next one goes."
+      }
+    ],
+    "explanation": "The ability to plan a sequence of reactions in the right order is particularly important in the synthesis of substituted aromatic rings, where the introduction of a new substituent is strongly affected by the directing effects of other substituents. Some reactions, such as Friedel–Crafts reactions, also fail once certain groups are on the ring."
+  },
+  {
+    "id": "oc16-4b2nt-final-step",
+    "type": "multiple-choice",
+    "prompt": "In planning a synthesis of 4-bromo-2-nitrotoluene from benzene, which final step gives the target as a single product?",
+    "choices": [
+      {
+        "text": "Nitration of p-bromotoluene",
+        "correct": true
+      },
+      {
+        "text": "Bromination of o-nitrotoluene",
+        "why": "The activating methyl group would direct bromine to the correct position, but a mixture of product isomers would form."
+      },
+      {
+        "text": "Friedel–Crafts methylation of m-bromonitrobenzene",
+        "why": "Friedel–Crafts reactions don't work on a nitro-substituted (strongly deactivated) ring."
+      },
+      {
+        "text": "Bromination of p-nitrotoluene",
+        "why": "Both groups of p-nitrotoluene direct bromine ortho to the methyl group, giving 2-bromo-4-nitrotoluene, a different compound."
+      }
+    ],
+    "explanation": "Worked Example 16.10.1: the best immediate precursor is p-bromotoluene, which is nitrated ortho to the activating methyl group to give a single product. Bromination of o-nitrotoluene would give a mixture, and a Friedel–Crafts reaction can't be the last step because it fails on a nitro-substituted ring."
+  },
+  {
+    "id": "oc16-4b2nt-route",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into 4-bromo-2-nitrotoluene?",
+    "choices": [
+      {
+        "text": "1. CH3Cl, AlCl3; 2. Br2, FeBr3, keeping the para isomer; 3. HNO3, H2SO4",
+        "correct": true
+      },
+      {
+        "text": "1. HNO3, H2SO4; 2. CH3Cl, AlCl3; 3. Br2, FeBr3",
+        "why": "Friedel–Crafts methylation fails on nitrobenzene, a strongly deactivated ring."
+      },
+      {
+        "text": "1. Br2, FeBr3; 2. HNO3, H2SO4; 3. CH3Cl, AlCl3",
+        "why": "The Friedel–Crafts step comes last, on a nitro-substituted ring, where it doesn't work."
+      },
+      {
+        "text": "1. CH3Cl, AlCl3; 2. HNO3, H2SO4, keeping the para isomer; 3. Br2, FeBr3",
+        "why": "p-Nitrotoluene is brominated ortho to the methyl group, giving 2-bromo-4-nitrotoluene, not the target."
+      }
+    ],
+    "explanation": "Methylating benzene gives toluene, and bromination gives o- and p-bromotoluene, which must be separated. Nitration of p-bromotoluene ortho to the activating methyl group then gives 4-bromo-2-nitrotoluene. Brominating first and then methylating is the other valid way to reach p-bromotoluene."
+  },
+  {
+    "id": "oc16-4b2nt-step-count",
+    "type": "numeric",
+    "prompt": "How many reaction steps does the book's route from benzene to 4-bromo-2-nitrotoluene have?",
+    "answer": 3,
+    "explanation": "Worked Example 16.10.1 introduces each of the three substituents in its own step: methylation (CH3Cl, AlCl3) and bromination (Br2, FeBr3), in either order, give p-bromotoluene, and nitration (HNO3, H2SO4) comes last. That is three steps."
+  },
+  {
+    "id": "oc16-p-bromotoluene-routes",
+    "type": "multiple-choice",
+    "prompt": "The retrosynthetic analysis finds two ways to make p-bromotoluene from benzene. Which statement about them is correct?",
+    "choices": [
+      {
+        "text": "Both methylating bromobenzene and brominating toluene work, but each gives an ortho/para mixture",
+        "correct": true
+      },
+      {
+        "text": "Only bromination of toluene works, because Friedel–Crafts methylation fails on bromobenzene",
+        "why": "The book calls both routes satisfactory; methylating bromobenzene gives a mixture of ortho and para products."
+      },
+      {
+        "text": "Both routes give pure p-bromotoluene, with no ortho isomer to separate",
+        "why": "Both methyl and bromine are ortho and para directors, so both routes unavoidably give mixtures to separate."
+      },
+      {
+        "text": "Both routes give mainly m-bromotoluene, because bromine is deactivating",
+        "why": "Bromine deactivates the ring but is an ortho and para director, so the products are ortho and para."
+      }
+    ],
+    "explanation": "Toluene is a possible precursor because the methyl group directs bromination ortho and para. Bromobenzene is another, because Friedel–Crafts methylation gives a mixture of ortho and para products. Both answers are satisfactory, although both lead unavoidably to a mixture of products that must be separated."
+  },
+  {
+    "id": "oc16-propyl-group-route",
+    "type": "multiple-choice",
+    "prompt": "In the synthesis of 4-chloro-2-propylbenzenesulfonic acid, how is the propyl group put on the ring?",
+    "choices": [
+      {
+        "text": "Friedel–Crafts acylation with CH3CH2COCl and AlCl3, followed by reduction with H2/Pd",
+        "correct": true
+      },
+      {
+        "text": "Friedel–Crafts alkylation with CH3CH2CH2Cl and AlCl3",
+        "why": "Primary alkyl groups such as propyl can't be introduced directly, because the carbocation rearranges."
+      },
+      {
+        "text": "Friedel–Crafts alkylation with 2-chloropropane and AlCl3",
+        "why": "2-Chloropropane gives an isopropyl group, not a propyl group."
+      },
+      {
+        "text": "Friedel–Crafts acylation with CH3CH2COCl and AlCl3, followed by oxidation with KMnO4",
+        "why": "KMnO4 would oxidize the side chain to –CO2H. The C=O must be reduced to CH2 with H2 over Pd."
+      }
+    ],
+    "explanation": "A propyl group can be introduced by Friedel–Crafts acylation with CH3CH2COCl/AlCl3 followed by reduction with H2/Pd. Direct alkylation with a primary alkyl halide gives carbocation rearrangement, and acyl cations don't rearrange."
+  },
+  {
+    "id": "oc16-4c2p-final-step",
+    "type": "multiple-choice",
+    "prompt": "Which final step does the retrosynthetic analysis choose for making 4-chloro-2-propylbenzenesulfonic acid?",
+    "choices": [
+      {
+        "text": "Sulfonation of m-chloropropylbenzene",
+        "correct": true
+      },
+      {
+        "text": "Chlorination of o-propylbenzenesulfonic acid",
+        "why": "Both groups of o-propylbenzenesulfonic acid direct chlorine to other positions, so the reaction would occur at the wrong position."
+      },
+      {
+        "text": "Friedel–Crafts introduction of the propyl group onto p-chlorobenzenesulfonic acid",
+        "why": "Friedel–Crafts reactions don't work on sulfonic-acid-substituted (strongly deactivated) rings."
+      },
+      {
+        "text": "Sulfonation of p-chloropropylbenzene",
+        "why": "In the target, the chlorine is meta to the propyl group, not para, so p-chloropropylbenzene has the wrong substitution pattern."
+      }
+    ],
+    "explanation": "Worked Example 16.10.2: chlorination of o-propylbenzenesulfonic acid would occur at the wrong position, and a Friedel–Crafts reaction fails on a sulfonic-acid-substituted ring. So the immediate precursor is m-chloropropylbenzene, which is sulfonated to give a mixture of isomers that must then be separated."
+  },
+  {
+    "id": "oc16-meta-director-first",
+    "type": "multiple-choice",
+    "prompt": "To make m-chloropropylbenzene from benzene, why is the acyl group put on before the chlorine?",
+    "choices": [
+      {
+        "text": "The first group must direct meta; an acyl group does, but chlorine directs ortho and para",
+        "correct": true
+      },
+      {
+        "text": "Chlorine is a meta director, so it has to be the last group put on the ring",
+        "why": "Chlorine is an ortho and para director. That is exactly why it can't go on first: acylating chlorobenzene would not put the acyl group meta to it."
+      },
+      {
+        "text": "The acyl group must be reduced to propyl before chlorination",
+        "why": "Reducing first would give propylbenzene, an ortho and para director, so chlorine would go to the wrong position. Reduction comes after chlorination."
+      },
+      {
+        "text": "Chlorine must be added last because Cl2 and FeCl3 react with ketones",
+        "why": "The route chlorinates the ketone propiophenone in the ring, at the meta position, without trouble."
+      }
+    ],
+    "explanation": "Because the two substituents have a meta relationship, the first substituent placed on the ring must be a meta director. Benzene is acylated to propiophenone, chlorinated meta to the acyl group to give m-chloropropiophenone, and then reduced to m-chloropropylbenzene."
+  },
+  {
+    "id": "oc16-4c2p-route",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into 4-chloro-2-propylbenzenesulfonic acid?",
+    "choices": [
+      {
+        "text": "1. CH3CH2COCl, AlCl3; 2. Cl2, FeCl3; 3. H2/Pd; 4. SO3, H2SO4",
+        "correct": true
+      },
+      {
+        "text": "1. CH3CH2COCl, AlCl3; 2. H2/Pd; 3. Cl2, FeCl3; 4. SO3, H2SO4",
+        "why": "Reducing first gives propylbenzene, whose propyl group directs chlorine ortho and para, not meta."
+      },
+      {
+        "text": "1. Cl2, FeCl3; 2. CH3CH2COCl, AlCl3; 3. H2/Pd; 4. SO3, H2SO4",
+        "why": "Chlorine is an ortho and para director, so the acyl group would not end up meta to it."
+      },
+      {
+        "text": "1. SO3, H2SO4; 2. CH3CH2COCl, AlCl3; 3. Cl2, FeCl3; 4. H2/Pd",
+        "why": "Friedel–Crafts acylation doesn't work on a sulfonic-acid-substituted (strongly deactivated) ring."
+      }
+    ],
+    "explanation": "Worked Example 16.10.2 gives a four-step route: Friedel–Crafts acylation to propiophenone, chlorination meta to the acyl group, catalytic reduction to m-chloropropylbenzene, and sulfonation (the isomers are then separated)."
+  },
+  {
+    "id": "oc16-4c2p-step-count",
+    "type": "numeric",
+    "prompt": "How many steps does the book's route from benzene to 4-chloro-2-propylbenzenesulfonic acid have?",
+    "answer": 4,
+    "explanation": "The final synthesis is a four-step route from benzene: acylation (CH3CH2COCl, AlCl3), chlorination (Cl2, FeCl3), hydrogenation (H2/Pd), and sulfonation (SO3, H2SO4). The propyl group alone takes two steps, acylation and reduction."
+  },
+  {
+    "id": "oc16-m-chloronitrobenzene",
+    "type": "multiple-choice",
+    "prompt": "How would you make m-chloronitrobenzene from benzene?",
+    "choices": [
+      {
+        "text": "Nitrate first (HNO3, H2SO4), then chlorinate (Cl2, FeCl3)",
+        "correct": true
+      },
+      {
+        "text": "Chlorinate first (Cl2, FeCl3), then nitrate (HNO3, H2SO4)",
+        "why": "Chlorine is an ortho and para director, so nitrating chlorobenzene gives mainly o- and p-chloronitrobenzene."
+      },
+      {
+        "text": "Either order works equally well",
+        "why": "The order matters: only the meta-directing nitro group puts the second group meta."
+      },
+      {
+        "text": "Neither order works, because a nitro group stops any further substitution",
+        "why": "A nitro ring can still be halogenated; for example, bromination of nitrobenzene gives m-bromonitrobenzene."
+      }
+    ],
+    "explanation": "Exercise 16.10.1a: 1. HNO3, H2SO4; 2. Cl2, FeCl3. The nitro group is a meta director, so chlorinating nitrobenzene puts the chlorine meta to it."
+  },
+  {
+    "id": "oc16-m-chloroethylbenzene",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into m-chloroethylbenzene?",
+    "choices": [
+      {
+        "text": "1. CH3COCl, AlCl3; 2. Cl2, FeCl3; 3. H2/Pd",
+        "correct": true
+      },
+      {
+        "text": "1. CH3CH2Cl, AlCl3; 2. Cl2, FeCl3",
+        "why": "An ethyl group is an ortho and para director, so chlorination would give o- and p-chloroethylbenzene."
+      },
+      {
+        "text": "1. Cl2, FeCl3; 2. CH3COCl, AlCl3; 3. H2/Pd",
+        "why": "Chlorine directs ortho and para, so the acetyl group would not end up meta to it."
+      },
+      {
+        "text": "1. CH3COCl, AlCl3; 2. H2/Pd; 3. Cl2, FeCl3",
+        "why": "Reducing first gives ethylbenzene, an ortho and para director, so the chlorine would go to the wrong positions."
+      }
+    ],
+    "explanation": "Exercise 16.10.1b: acylation gives acetophenone, whose acetyl group directs chlorination meta. Catalytic hydrogenation over Pd then reduces the aryl ketone's C=O to CH2, turning the acetyl group into an ethyl group."
+  },
+  {
+    "id": "oc16-4c1n2p-route",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into 4-chloro-1-nitro-2-propylbenzene?",
+    "choices": [
+      {
+        "text": "1. CH3CH2COCl, AlCl3; 2. Cl2, FeCl3; 3. H2/Pd; 4. HNO3, H2SO4",
+        "correct": true
+      },
+      {
+        "text": "1. CH3CH2COCl, AlCl3; 2. Cl2, FeCl3; 3. HNO3, H2SO4; 4. H2/Pd",
+        "why": "Catalytic hydrogenation at the end would also reduce the nitro group to an amino group."
+      },
+      {
+        "text": "1. CH3CH2CH2Cl, AlCl3; 2. Cl2, FeCl3; 3. HNO3, H2SO4",
+        "why": "Alkylation with a primary halide rearranges, and a propyl group would direct chlorine ortho and para instead of meta."
+      },
+      {
+        "text": "1. HNO3, H2SO4; 2. CH3CH2COCl, AlCl3; 3. Cl2, FeCl3; 4. H2/Pd",
+        "why": "Friedel–Crafts acylation fails on nitrobenzene, a strongly deactivated ring."
+      }
+    ],
+    "explanation": "Exercise 16.10.1c: acylation, then chlorination meta to the acyl group, then reduction to m-chloropropylbenzene, and finally nitration. The nitro group must go on last, because a nitro group is reduced to an amino group under H2/Pd conditions (Section 16.9)."
+  },
+  {
+    "id": "oc16-nitro-after-hydrogenation",
+    "type": "multiple-choice",
+    "prompt": "In a route that uses both a ketone reduction with H2/Pd and an aromatic nitration, why must the nitration come after the hydrogenation?",
+    "choices": [
+      {
+        "text": "A nitro group on the ring would be reduced to an amino group by H2/Pd",
+        "correct": true
+      },
+      {
+        "text": "Nitration would oxidize the alkyl side chain to a carboxylic acid",
+        "why": "Side-chain oxidation needs an oxidizing agent such as KMnO4. The problem is what H2/Pd does to a nitro group."
+      },
+      {
+        "text": "H2/Pd reduces the aromatic ring when a nitro group is present",
+        "why": "Pd under ordinary conditions doesn't reduce the ring. It does reduce a nitro group to an amino group."
+      },
+      {
+        "text": "The nitro group would rearrange to the meta position during hydrogenation",
+        "why": "Substituents don't move around the ring. The problem is that the nitro group itself is reduced."
+      }
+    ],
+    "explanation": "Catalytic reduction of aryl alkyl ketones is not compatible with a nitro substituent on the ring, because a nitro group is reduced to an amino group under the reaction conditions; m-nitroacetophenone, for example, gives m-ethylaniline. So in routes such as Exercise 16.10.1c, the nitration is done after the H2/Pd step."
+  },
+  {
+    "id": "oc16-benzonitrile-flaw",
+    "type": "multiple-choice",
+    "prompt": "A planned synthesis starts with Friedel–Crafts acylation of benzonitrile, C6H5CN, using CH3COCl and AlCl3. What is wrong with this step?",
+    "choices": [
+      {
+        "text": "Friedel–Crafts acylation fails on a strongly deactivated ring",
+        "correct": true
+      },
+      {
+        "text": "The acyl cation would rearrange before reacting",
+        "why": "Acyl cations are resonance-stabilized and don't rearrange. The problem is the deactivated ring."
+      },
+      {
+        "text": "The ring would be acylated two or three times",
+        "why": "Acylations never occur more than once, and here the deactivated ring won't react at all."
+      },
+      {
+        "text": "The acetyl group would go ortho and para to the –CN group",
+        "why": "–CN is a meta director, but the real problem is that the deactivated ring doesn't undergo Friedel–Crafts reactions."
+      }
+    ],
+    "explanation": "Exercise 16.10.2a: Friedel–Crafts acylation does not occur on a deactivated ring. –CN is a strongly deactivating meta director, and Friedel–Crafts reactions don't succeed on rings with strongly electron-withdrawing groups."
+  },
+  {
+    "id": "oc16-chlorobenzene-propyl-flaw",
+    "type": "multiple-choice",
+    "prompt": "A planned synthesis treats chlorobenzene with 1-chloropropane and AlCl3 to attach a propyl group. What goes wrong?",
+    "choices": [
+      {
+        "text": "The primary carbocation rearranges, so the ring gets isopropyl groups as well as propyl groups",
+        "correct": true
+      },
+      {
+        "text": "Chlorobenzene is an aryl halide, so its ring can't be alkylated",
+        "why": "Aryl halides can't serve as the alkylating agent, but the chlorobenzene ring itself can be alkylated."
+      },
+      {
+        "text": "1-Chloropropane is a vinylic halide and doesn't react",
+        "why": "1-Chloropropane is a primary alkyl halide. It reacts, but its carbocation rearranges."
+      },
+      {
+        "text": "The chlorine on the ring deactivates it as strongly as a carbonyl group, so nothing happens",
+        "why": "Halogens are only weakly deactivating; the problem the book points out is rearrangement."
+      }
+    ],
+    "explanation": "Exercise 16.10.2b: rearrangement occurs during Friedel–Crafts alkylation with primary halides, so a propyl group can't be introduced this way. Acylation with propanoyl chloride followed by H2/Pd reduction avoids the problem."
+  },
+  {
+    "id": "oc16-m-bromobenzoic-acid",
+    "type": "multiple-choice",
+    "prompt": "Using reactions from this chapter, which sequence converts benzene into m-bromobenzoic acid?",
+    "choices": [
+      {
+        "text": "1. CH3Cl, AlCl3; 2. KMnO4, H2O; 3. Br2, FeBr3",
+        "correct": true
+      },
+      {
+        "text": "1. CH3Cl, AlCl3; 2. Br2, FeBr3; 3. KMnO4, H2O",
+        "why": "Brominating toluene puts bromine ortho and para to the methyl group, so oxidation would give o- and p-bromobenzoic acid."
+      },
+      {
+        "text": "1. Br2, FeBr3; 2. CH3Cl, AlCl3; 3. KMnO4, H2O",
+        "why": "Bromine directs the methyl group ortho and para, so oxidation would give o- and p-bromobenzoic acid."
+      },
+      {
+        "text": "1. Br2, FeBr3; 2. KMnO4, H2O",
+        "why": "Bromobenzene has no alkyl side chain, and the ring itself is inert to KMnO4, so no carboxyl group forms."
+      }
+    ],
+    "explanation": "Oxidizing toluene with KMnO4 gives benzoic acid. The –CO2H group is a meta director, so bromination then puts bromine meta to it. Brominating before oxidation would place bromine ortho or para, because the methyl group is an ortho and para director."
+  },
+  {
+    "id": "oc16-m-nitroacetophenone",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into m-nitroacetophenone?",
+    "choices": [
+      {
+        "text": "1. CH3COCl, AlCl3; 2. HNO3, H2SO4",
+        "correct": true
+      },
+      {
+        "text": "1. HNO3, H2SO4; 2. CH3COCl, AlCl3",
+        "why": "Friedel–Crafts acylation fails on nitrobenzene, a strongly deactivated ring."
+      },
+      {
+        "text": "1. CH3COCl, AlCl3; 2. HNO3, H2SO4; 3. H2/Pd",
+        "why": "The extra hydrogenation would reduce both the ketone and the nitro group, giving m-ethylaniline."
+      },
+      {
+        "text": "1. HNO3, H2SO4; 2. Fe, H3O+, then base; 3. CH3COCl, AlCl3",
+        "why": "Reduction gives aniline, and Friedel–Crafts reactions fail on rings with a basic amino group. The nitro group would also be gone."
+      }
+    ],
+    "explanation": "Acylation of benzene gives acetophenone. The acetyl group is a meta director (nitration of the –COCH3 ring gives 72% meta product), so nitration then gives m-nitroacetophenone. Reversing the order fails because Friedel–Crafts reactions don't work on nitro-substituted rings."
+  },
+  {
+    "id": "oc16-p-chloroacetophenone",
+    "type": "multiple-choice",
+    "prompt": "Which sequence converts benzene into p-chloroacetophenone (after separating isomers where needed)?",
+    "choices": [
+      {
+        "text": "1. Cl2, FeCl3; 2. CH3COCl, AlCl3, then separate the para isomer",
+        "correct": true
+      },
+      {
+        "text": "1. CH3COCl, AlCl3; 2. Cl2, FeCl3",
+        "why": "The acetyl group is a meta director, so chlorination would give m-chloroacetophenone."
+      },
+      {
+        "text": "1. CH3COCl, AlCl3; 2. Cl2, FeCl3; 3. H2/Pd",
+        "why": "This puts the chlorine meta and then reduces the ketone, giving m-chloroethylbenzene."
+      },
+      {
+        "text": "1. Cl2, FeCl3; 2. CH3CH2Cl, AlCl3, then separate the para isomer",
+        "why": "Alkylation with chloroethane puts on an ethyl group, so the product has no C=O; it is p-chloroethylbenzene."
+      }
+    ],
+    "explanation": "To get a para relationship, the first group must be an ortho and para director. Chlorine is one, so acylating chlorobenzene gives a mixture of ortho and para products from which p-chloroacetophenone is separated. Halogens are only weakly deactivating, so the ring still reacts, much as bromobenzene is methylated in Worked Example 16.10.1."
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "oc20-form-low-high-ph",
+    "type": "multiple-choice",
+    "prompt": "In what form does a carboxylic acid exist at low pH, and at high pH?",
+    "choices": [
+      {
+        "text": "Entirely RCO2H at low pH; entirely RCO2^− at high pH",
+        "correct": true
+      },
+      {
+        "text": "Entirely RCO2^− at low pH; entirely RCO2H at high pH",
+        "why": "That is reversed. Acidic solution keeps the acid undissociated, and basic solution removes the proton."
+      },
+      {
+        "text": "Equal amounts of RCO2H and RCO2^− at both low and high pH",
+        "why": "Equal amounts are present only when pH = pK_a."
+      },
+      {
+        "text": "Entirely RCO2H at both low and high pH",
+        "why": "In basic solution, at high pH, a carboxylic acid is completely dissociated to RCO2^−."
+      }
+    ],
+    "explanation": "In acidic solution, at low pH, a carboxylic acid is completely undissociated (RCO2H). In basic solution, at high pH, it is completely dissociated (RCO2^−). In between, the Henderson–Hasselbalch equation gives the ratio of the two."
+  },
+  {
+    "id": "oc20-hh-equation",
+    "type": "multiple-choice",
+    "prompt": "Which is the Henderson–Hasselbalch equation as the section gives it?",
+    "choices": [
+      {
+        "text": "pH = pK_a + log([A^−]/[HA])",
+        "correct": true
+      },
+      {
+        "text": "pH = pK_a − log([A^−]/[HA])",
+        "why": "The sign is wrong. Rearranging pK_a = pH − log([A^−]/[HA]) gives pH = pK_a + log([A^−]/[HA])."
+      },
+      {
+        "text": "pH = pK_a + log([HA]/[A^−])",
+        "why": "The ratio is upside down. The dissociated form, [A^−], goes on top."
+      },
+      {
+        "text": "pH = K_a + log([A^−]/[HA])",
+        "why": "The equation uses pK_a, the negative logarithm of K_a, not K_a itself."
+      }
+    ],
+    "explanation": "Starting from pK_a = −log([H3O+][A^−]/[HA]) = pH − log([A^−]/[HA]) and rearranging gives pH = pK_a + log([A^−]/[HA]), so log([A^−]/[HA]) = pH − pK_a."
+  },
+  {
+    "id": "oc20-hh-gives-ratio",
+    "type": "multiple-choice",
+    "prompt": "If you know the pK_a of an acid and the pH of the solution, what does the Henderson–Hasselbalch equation let you calculate directly?",
+    "choices": [
+      {
+        "text": "The ratio of dissociated to undissociated acid, [A^−]/[HA]",
+        "correct": true
+      },
+      {
+        "text": "The total concentration of the acid, [A^−] + [HA]",
+        "why": "The equation gives only a ratio. To get actual concentrations, as in the acetic acid example, you also need the total concentration."
+      },
+      {
+        "text": "The K_a of the acid",
+        "why": "K_a must already be known, as the pK_a. The equation uses it."
+      },
+      {
+        "text": "How fast the acid dissociates",
+        "why": "The equation describes an equilibrium ratio, not a rate."
+      }
+    ],
+    "explanation": "log([A^−]/[HA]) = pH − pK_a, so knowing pH and pK_a gives the ratio [A^−]/[HA], and from it the percentages of dissociated and undissociated forms."
+  },
+  {
+    "id": "oc20-ph-equals-pka",
+    "type": "multiple-choice",
+    "prompt": "What does the Henderson–Hasselbalch equation say about a solution whose pH equals the pK_a of the acid?",
+    "choices": [
+      {
+        "text": "HA and A^− are present in equal amounts",
+        "correct": true
+      },
+      {
+        "text": "The acid is completely dissociated",
+        "why": "Complete dissociation happens at high pH, well above the pK_a."
+      },
+      {
+        "text": "The acid is completely undissociated",
+        "why": "That happens at low pH, well below the pK_a."
+      },
+      {
+        "text": "[A^−] is ten times [HA]",
+        "why": "A tenfold ratio needs pH − pK_a = 1. When pH = pK_a, log([A^−]/[HA]) = 0, so the ratio is 1."
+      }
+    ],
+    "explanation": "When pH = pK_a, log([A^−]/[HA]) = 0. Since log 1 = 0, [A^−]/[HA] = 1: HA and A^− are present in equal amounts."
+  },
+  {
+    "id": "oc20-ph-below-pka",
+    "type": "multiple-choice",
+    "prompt": "A carboxylic acid is in a solution whose pH is lower than the acid's pK_a. What does the Henderson–Hasselbalch equation tell you?",
+    "choices": [
+      {
+        "text": "[HA] is greater than [A^−]",
+        "correct": true
+      },
+      {
+        "text": "[A^−] is greater than [HA]",
+        "why": "pH − pK_a is negative, so log([A^−]/[HA]) is negative and the ratio is less than 1."
+      },
+      {
+        "text": "[A^−] and [HA] are equal",
+        "why": "That requires pH = pK_a exactly."
+      },
+      {
+        "text": "The acid is completely dissociated",
+        "why": "Below the pK_a most of the acid is undissociated; complete dissociation needs a high pH."
+      }
+    ],
+    "explanation": "log([A^−]/[HA]) = pH − pK_a. If the pH is below the pK_a, the difference is negative, [A^−]/[HA] is less than 1, and more of the acid is present as HA."
+  },
+  {
+    "id": "oc20-acetic-ratio-ph-7-3",
+    "type": "numeric",
+    "prompt": "For acetic acid (pK_a 4.76) at physiological pH 7.3, what is the ratio [A^−]/[HA], to two significant figures?",
+    "answer": 350,
+    "tolerance": 0.02,
+    "explanation": "log([A^−]/[HA]) = pH − pK_a = 7.3 − 4.76 = 2.54, so [A^−]/[HA] = antilog(2.54) = 10^2.54 = 3.5 × 10^2. There are about 350 acetate ions for every undissociated acetic acid molecule."
+  },
+  {
+    "id": "oc20-acetic-ha-concentration",
+    "type": "numeric",
+    "prompt": "A 0.0010 M solution of acetic acid is at pH 7.3, where [A^−]/[HA] = 3.5 × 10^2. Using [A^−] + [HA] = 0.0010 M, what is [HA], in M, to one or two significant figures?",
+    "answer": 2.9e-06,
+    "unit": "M",
+    "tolerance": 0.05,
+    "explanation": "[A^−] = 350[HA], so 350[HA] + [HA] = 0.0010 M and [HA] = 0.0010 M/351 ≈ 2.9 × 10^−6 M (the section rounds to 3 × 10^−6 M). Essentially all of the acid, 0.0010 M, is present as acetate ion."
+  },
+  {
+    "id": "oc20-acetic-undissociated-percent",
+    "type": "numeric",
+    "prompt": "What percentage of acetic acid (pK_a 4.76) remains undissociated at pH 7.3, to two significant figures?",
+    "answer": 0.29,
+    "unit": "%",
+    "tolerance": 0.03,
+    "explanation": "[A^−]/[HA] = 10^(7.3 − 4.76) = 10^2.54 ≈ 347. The undissociated fraction is 1/(1 + 347) ≈ 0.0029, or 0.29%. More than 99.7% is dissociated: essentially 100%, as the section concludes."
+  },
+  {
+    "id": "oc20-benzoic-undissociated-percent",
+    "type": "numeric",
+    "prompt": "What percentage of benzoic acid (pK_a 4.19) remains undissociated at physiological pH 7.3, to two significant figures?",
+    "answer": 0.078,
+    "unit": "%",
+    "tolerance": 0.03,
+    "explanation": "pH − pK_a = 7.3 − 4.19 = 3.11, so [A^−]/[HA] = 10^3.11 ≈ 1288. The undissociated fraction is 1/(1 + 1288) = 7.76 × 10^−4, or about 0.078%. At pH 7.3 the acid is almost entirely benzoate."
+  },
+  {
+    "id": "oc20-glycolic-percent-dissociated",
+    "type": "numeric",
+    "prompt": "What percentage of glycolic acid (HOCH2CO2H, pK_a 3.83) is dissociated in a 0.0010 M solution at pH 4.50, to the nearest whole percent?",
+    "answer": 82,
+    "unit": "%",
+    "tolerance": 0.02,
+    "explanation": "log([A^−]/[HA]) = 4.50 − 3.83 = 0.67, so [A^−]/[HA] = 10^0.67 = 4.68. The dissociated fraction is 4.68/(1 + 4.68) = 0.82: 82% dissociated and 18% undissociated (Exercise 20.3.1a)."
+  },
+  {
+    "id": "oc20-propanoic-percent-dissociated",
+    "type": "numeric",
+    "prompt": "What percentage of propanoic acid (pK_a 4.87) is dissociated in a 0.0020 M solution at pH 5.30, to the nearest whole percent?",
+    "answer": 73,
+    "unit": "%",
+    "tolerance": 0.02,
+    "explanation": "log([A^−]/[HA]) = 5.30 − 4.87 = 0.43, so [A^−]/[HA] = 10^0.43 = 2.69. The dissociated fraction is 2.69/(1 + 2.69) = 0.73: 73% dissociated and 27% undissociated (Exercise 20.3.1b)."
+  },
+  {
+    "id": "oc20-acrylic-one-unit-above",
+    "type": "numeric",
+    "prompt": "Acrylic acid, H2C=CHCO2H, has pK_a 4.25. What percentage of it is dissociated at pH 5.25, to one decimal place?",
+    "answer": 90.9,
+    "unit": "%",
+    "explanation": "pH − pK_a = 5.25 − 4.25 = 1.00, so [A^−]/[HA] = 10^1 = 10. The dissociated fraction is 10/(10 + 1) = 0.909, or 90.9%."
+  },
+  {
+    "id": "oc20-benzoic-two-units-below",
+    "type": "numeric",
+    "prompt": "Benzoic acid has pK_a 4.19. What is the ratio [A^−]/[HA] in a solution at pH 2.19?",
+    "answer": 0.01,
+    "explanation": "log([A^−]/[HA]) = 2.19 − 4.19 = −2.00, so [A^−]/[HA] = 10^−2 = 0.01. Two pH units below the pK_a, only about 1 molecule in 100 is dissociated: at low pH the acid is nearly all RCO2H."
+  },
+  {
+    "id": "oc20-equal-amounts-pka",
+    "type": "numeric",
+    "prompt": "A carboxylic acid solution at pH 3.75 contains equal concentrations of the acid and its carboxylate anion. What is the pK_a of the acid?",
+    "answer": 3.75,
+    "explanation": "When [A^−] = [HA], log([A^−]/[HA]) = log 1 = 0, so pH = pK_a = 3.75. (That is the pK_a of formic acid in Table 20.2.2.)"
+  },
+  {
+    "id": "oc20-cellular-anion-names",
+    "type": "multiple-choice",
+    "prompt": "Why are carboxylic acids inside cells referred to by the names of their anions, such as acetate, lactate and citrate?",
+    "choices": [
+      {
+        "text": "At pH 7.3 inside cells, they are almost entirely dissociated",
+        "correct": true
+      },
+      {
+        "text": "They are strong acids, like HCl, and fully dissociate in any solution",
+        "why": "Carboxylic acids are weak acids; at low pH they are completely undissociated. It's the nearly neutral pH inside cells that dissociates them."
+      },
+      {
+        "text": "At pH 7.3, HA and A^− are present in equal amounts",
+        "why": "Equal amounts occur only when pH = pK_a. At pH 7.3, acetic acid has about 350 acetate ions per undissociated molecule."
+      },
+      {
+        "text": "The anion names are the systematic IUPAC names of the acids",
+        "why": "Acetic, lactic and citric acid are the acid names. The anion names are used because the anions are the forms actually present at pH 7.3."
+      }
+    ],
+    "explanation": "At the physiological pH inside cells, carboxylic acids are almost entirely dissociated; a 0.0010 M acetic acid solution at pH 7.3 is essentially 100% acetate. So cellular carboxylic acids are named as their anions: acetate, lactate, citrate."
+  }
+]

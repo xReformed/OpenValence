@@ -1,0 +1,162 @@
+[
+  {
+    "id": "oc13-c13-information",
+    "type": "multiple-choice",
+    "prompt": "Besides counting nonequivalent carbons, what can ^13C NMR tell you about each carbon?",
+    "choices": [
+      {
+        "text": "Its electronic environment and how many protons are attached to it",
+        "correct": true
+      },
+      {
+        "text": "Its mass and the masses of the fragments it forms",
+        "why": "Masses come from mass spectrometry, not NMR."
+      },
+      {
+        "text": "The vibration frequencies of its bonds",
+        "why": "Bond vibrations are measured by IR spectroscopy."
+      },
+      {
+        "text": "How many carbons of that kind there are, from the peak area",
+        "why": "^13C peaks aren't uniform in size, so they can't be integrated to count carbons."
+      }
+    ],
+    "explanation": "Not only can we count the nonequivalent carbons, we can also get information about the electronic environment of each carbon (from its chemical shift) and find how many protons are attached to each (from DEPT). This answers many structural questions that IR and mass spectrometry leave open."
+  },
+  {
+    "id": "oc13-methylcyclohexene-sp3-lines",
+    "type": "numeric",
+    "prompt": "How many sp3-carbon resonances would you expect in the ^13C NMR spectrum of 1-methylcyclohexene?",
+    "answer": 5,
+    "unit": "resonances",
+    "explanation": "1-Methylcyclohexene has no symmetry, so all seven carbons differ. Two are the sp2 carbons of the double bond, leaving five sp3 carbons: four ring CH2 carbons and the methyl."
+  },
+  {
+    "id": "oc13-methylenecyclohexane-sp3-lines",
+    "type": "numeric",
+    "prompt": "How many sp3-carbon resonances would you expect in the ^13C NMR spectrum of methylenecyclohexane?",
+    "answer": 3,
+    "unit": "resonances",
+    "explanation": "Methylenecyclohexane is symmetrical: ring carbons 2 and 6 are equivalent, as are carbons 3 and 5, and carbon 4 is unique. That gives three sp3 resonances, plus two sp2 resonances for the C=CH2 carbons."
+  },
+  {
+    "id": "oc13-methylenecyclohexane-total-lines",
+    "type": "numeric",
+    "prompt": "How many ^13C resonances in all would you expect for methylenecyclohexane?",
+    "answer": 5,
+    "unit": "resonances",
+    "explanation": "Because of its symmetry, methylenecyclohexane shows three sp3-carbon resonances and two sp2-carbon resonances, five in all."
+  },
+  {
+    "id": "oc13-e2-product-by-c13",
+    "type": "multiple-choice",
+    "prompt": "Treating 1-chloro-1-methylcyclohexane with strong base could give 1-methylcyclohexene or methylenecyclohexane. The product's ^13C spectrum shows five sp3-carbon and two sp2-carbon resonances. Which product formed, and what does that show?",
+    "choices": [
+      {
+        "text": "1-Methylcyclohexene, showing that the E2 reaction follows Zaitsev's rule",
+        "correct": true
+      },
+      {
+        "text": "Methylenecyclohexane, showing that the E2 reaction follows Zaitsev's rule",
+        "why": "Methylenecyclohexane would show only three sp3 resonances. It is also the less substituted alkene."
+      },
+      {
+        "text": "1-Methylcyclohexene, showing that the E2 reaction gives the less substituted alkene",
+        "why": "1-Methylcyclohexene is the trisubstituted alkene, the more highly substituted one."
+      },
+      {
+        "text": "Methylenecyclohexane, the disubstituted alkene",
+        "why": "Its symmetry would give only three sp3-carbon resonances, not five."
+      }
+    ],
+    "explanation": "Five sp3 and two sp2 resonances fit 1-methylcyclohexene, not the symmetrical methylenecyclohexane. Forming the trisubstituted alkene confirms that this E2 reaction follows Zaitsev's rule."
+  },
+  {
+    "id": "oc13-methylenecyclohexane-fewer-lines",
+    "type": "multiple-choice",
+    "prompt": "Why does methylenecyclohexane show fewer ^13C resonances than 1-methylcyclohexene, though both are C7H12?",
+    "choices": [
+      {
+        "text": "Its symmetry makes pairs of ring carbons equivalent",
+        "correct": true
+      },
+      {
+        "text": "It has fewer carbon atoms",
+        "why": "Both compounds are C7H12, with seven carbons each."
+      },
+      {
+        "text": "Its sp2 carbons give no signals",
+        "why": "Its two sp2 carbons each give a resonance."
+      },
+      {
+        "text": "Its CH2 carbons are missing from a broadband-decoupled spectrum",
+        "why": "A broadband-decoupled spectrum shows every kind of carbon, CH2 carbons included."
+      }
+    ],
+    "explanation": "Because of its symmetry, methylenecyclohexane's ring carbons 2 and 6 are equivalent, as are carbons 3 and 5. It shows only three sp3 and two sp2 resonances, compared with five and two for 1-methylcyclohexene."
+  },
+  {
+    "id": "oc13-methylcyclohexene-sp3-range",
+    "type": "multiple-choice",
+    "prompt": "In what range would you expect the five sp3-carbon resonances of 1-methylcyclohexene to fall?",
+    "choices": [
+      {
+        "text": "20 to 50 δ",
+        "correct": true
+      },
+      {
+        "text": "100 to 150 δ",
+        "why": "That is where the two sp2 carbons of 1-methylcyclohexene are expected."
+      },
+      {
+        "text": "160 to 220 δ",
+        "why": "That is the range for carbonyl carbons."
+      },
+      {
+        "text": "0 to 10 δ",
+        "why": "That is the range of almost all ^1H absorptions."
+      }
+    ],
+    "explanation": "1-Methylcyclohexene is expected to have five sp3-carbon resonances in the 20 to 50 δ range and two sp2-carbon resonances in the 100 to 150 δ range."
+  },
+  {
+    "id": "oc13-hbr-hexyne-dept",
+    "type": "multiple-choice",
+    "prompt": "Adding 1 equivalent of HBr to 1-hexyne could give 2-bromo-1-hexene, CH2=CBrCH2CH2CH2CH3, or 1-bromo-1-hexene, BrCH=CHCH2CH2CH2CH3. How could a DEPT experiment tell them apart?",
+    "choices": [
+      {
+        "text": "The DEPT-90 spectrum shows two peaks for 1-bromo-1-hexene but none for 2-bromo-1-hexene",
+        "correct": true
+      },
+      {
+        "text": "The DEPT-90 spectrum shows two peaks for 2-bromo-1-hexene but none for 1-bromo-1-hexene",
+        "why": "That's reversed. 1-Bromo-1-hexene has two =CH– carbons; 2-bromo-1-hexene has no CH carbons."
+      },
+      {
+        "text": "Only 2-bromo-1-hexene shows peaks in the DEPT-135 spectrum",
+        "why": "Both products have CH2 and CH3 carbons, so both show DEPT-135 peaks."
+      },
+      {
+        "text": "They can't be told apart, since both have six carbons",
+        "why": "The products differ in how many hydrogens are on their vinylic carbons, which DEPT detects."
+      }
+    ],
+    "explanation": "DEPT-90 shows only CH carbons. The non-Markovnikov product, RCH=CHBr, has two vinylic CH carbons and gives two DEPT-90 peaks. The Markovnikov product, RCBr=CH2, has no CH carbons and gives none (Exercise 13.13.1)."
+  },
+  {
+    "id": "oc13-markovnikov-dept90",
+    "type": "numeric",
+    "prompt": "How many peaks would the DEPT-90 spectrum of 2-bromo-1-hexene, CH2=CBrCH2CH2CH2CH3, show?",
+    "answer": 0,
+    "unit": "peaks",
+    "explanation": "DEPT-90 shows only CH carbons. 2-Bromo-1-hexene has a =CH2 carbon, a =CBr– carbon with no hydrogens, three CH2 carbons and a CH3, but no CH carbon. So it shows no DEPT-90 peaks."
+  },
+  {
+    "id": "oc13-nonmarkovnikov-dept90",
+    "type": "numeric",
+    "prompt": "How many peaks would the DEPT-90 spectrum of 1-bromo-1-hexene, BrCH=CHCH2CH2CH2CH3, show?",
+    "answer": 2,
+    "unit": "peaks",
+    "explanation": "DEPT-90 shows only CH carbons. 1-Bromo-1-hexene has two: the =CHBr carbon and the =CH– carbon next to it."
+  }
+]

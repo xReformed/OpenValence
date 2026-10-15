@@ -1,0 +1,313 @@
+[
+  {
+    "id": "oc11-e1-name-analog",
+    "type": "multiple-choice",
+    "prompt": "What does E1 stand for, and which substitution reaction is it the close analog of?",
+    "choices": [
+      {
+        "text": "Elimination, unimolecular; the S_N1 reaction",
+        "correct": true
+      },
+      {
+        "text": "Elimination, unimolecular; the S_N2 reaction",
+        "why": "The E2 reaction is the analog of S_N2. E1 shares its first step with S_N1."
+      },
+      {
+        "text": "Elimination, bimolecular; the S_N1 reaction",
+        "why": "The 1 means unimolecular: only the substrate takes part in the rate-limiting step."
+      },
+      {
+        "text": "Elimination, one-step; the S_N2 reaction",
+        "why": "The E1 reaction has two steps and a carbocation intermediate, like S_N1."
+      }
+    ],
+    "explanation": "Just as the E2 reaction is analogous to the S_N2 reaction, the S_N1 reaction has a close analog called the E1 reaction, for elimination, unimolecular."
+  },
+  {
+    "id": "oc11-e1-step-count",
+    "type": "numeric",
+    "prompt": "How many steps are involved in the E1 mechanism?",
+    "answer": 2,
+    "explanation": "The E1 mechanism has two steps, the first of which is rate-limiting: dissociation to a carbocation intermediate, then loss of H+ from the adjacent carbon."
+  },
+  {
+    "id": "oc11-e1-rate-limiting",
+    "type": "multiple-choice",
+    "prompt": "Which step of an E1 reaction is rate-limiting?",
+    "choices": [
+      {
+        "text": "Unimolecular dissociation of the alkyl halide to give a carbocation",
+        "correct": true
+      },
+      {
+        "text": "Loss of H+ from the carbon next to the carbocation",
+        "why": "That second step is fast; it happens after the rate-limiting dissociation."
+      },
+      {
+        "text": "Removal of a proton by base to give a carbanion",
+        "why": "That is the slow step of the E1cB reaction, not E1."
+      },
+      {
+        "text": "Simultaneous loss of the hydrogen and the leaving group",
+        "why": "That one-step process is the E2 reaction."
+      }
+    ],
+    "explanation": "E1 eliminations begin with the same unimolecular dissociation to give a carbocation that we saw in the S_N1 reaction, and this first step is rate-limiting. It is followed by loss of H+ from the adjacent carbon."
+  },
+  {
+    "id": "oc11-e1-sn1-together",
+    "type": "multiple-choice",
+    "prompt": "When do E1 and S_N1 reactions normally occur together?",
+    "choices": [
+      {
+        "text": "When an alkyl halide is treated in a protic solvent with a nonbasic nucleophile",
+        "correct": true
+      },
+      {
+        "text": "When an alkyl halide is treated with a strong base in a polar aprotic solvent",
+        "why": "Strong bases bring about E2. E1 and S_N1 share a carbocation and need nonbasic, protic conditions."
+      },
+      {
+        "text": "When the substrate is a methyl halide",
+        "why": "Methyl halides form the least stable carbocations. The best E1 substrates are the best S_N1 substrates, those that form stable carbocations."
+      },
+      {
+        "text": "Never, because a given substrate reacts by only one mechanism",
+        "why": "Mixtures of substitution and elimination products are usually obtained."
+      }
+    ],
+    "explanation": "The E1 and S_N1 reactions normally occur together whenever an alkyl halide is treated in a protic solvent with a nonbasic nucleophile. The best E1 substrates are also the best S_N1 substrates, and mixtures of substitution and elimination products are usually obtained."
+  },
+  {
+    "id": "oc11-tert-butyl-chloride-alkene-percent",
+    "type": "numeric",
+    "prompt": "When 2-chloro-2-methylpropane is warmed to 65 °C in 80% aqueous ethanol, what percent of the product is 2-methylpropene?",
+    "answer": 36,
+    "unit": "%",
+    "explanation": "The reaction gives a 64 : 36 mixture of 2-methyl-2-propanol (S_N1) and 2-methylpropene (E1), so 36% is the alkene."
+  },
+  {
+    "id": "oc11-tert-butyl-chloride-products",
+    "type": "multiple-choice",
+    "prompt": "When 2-chloro-2-methylpropane is warmed in 80% aqueous ethanol, which pairing of products and mechanisms is correct?",
+    "choices": [
+      {
+        "text": "2-Methyl-2-propanol forms by S_N1, and 2-methylpropene forms by E1",
+        "correct": true
+      },
+      {
+        "text": "2-Methyl-2-propanol forms by E1, and 2-methylpropene forms by S_N1",
+        "why": "That's reversed. The alcohol is the substitution product; the alkene is the elimination product."
+      },
+      {
+        "text": "2-Methyl-2-propanol forms by S_N2, and 2-methylpropene forms by E2",
+        "why": "There's no strong base, and the substrate is tertiary. Both products come from the carbocation, by S_N1 and E1."
+      },
+      {
+        "text": "Only 2-methylpropene forms, by E1",
+        "why": "The alcohol forms too. E1 and S_N1 normally occur together, giving a mixture."
+      }
+    ],
+    "explanation": "The tertiary halide dissociates to a carbocation, which either reacts with water (S_N1, giving 2-methyl-2-propanol) or loses H+ (E1, giving 2-methylpropene). A 64 : 36 mixture of the two results."
+  },
+  {
+    "id": "oc11-e1-kinetics",
+    "type": "multiple-choice",
+    "prompt": "What kinetics do E1 reactions show?",
+    "choices": [
+      {
+        "text": "First-order kinetics, consistent with a rate-limiting unimolecular dissociation",
+        "correct": true
+      },
+      {
+        "text": "Second-order kinetics, because the base removes H+ in the rate-limiting step",
+        "why": "In E1 the H+ is lost after the rate-limiting step, so the base doesn't appear in the rate law."
+      },
+      {
+        "text": "Second-order kinetics, depending on both the alkyl halide and the base",
+        "why": "That describes E2 reactions, not E1."
+      },
+      {
+        "text": "Kinetics that depend only on the base concentration",
+        "why": "The base isn't involved in the rate-limiting step; the rate depends on the alkyl halide."
+      }
+    ],
+    "explanation": "E1 reactions show first-order kinetics, consistent with a rate-limiting, unimolecular dissociation of the alkyl halide to a carbocation."
+  },
+  {
+    "id": "oc11-e1-no-isotope-effect",
+    "type": "multiple-choice",
+    "prompt": "Why do E1 reactions show no deuterium isotope effect?",
+    "choices": [
+      {
+        "text": "The C–H bond breaks after the rate-limiting step",
+        "correct": true
+      },
+      {
+        "text": "The C–H and C–D bonds are equally strong",
+        "why": "A C–H bond is weaker than a C–D bond. The point is when the bond breaks."
+      },
+      {
+        "text": "The C–H bond is never broken in an E1 reaction",
+        "why": "The hydrogen is lost in the second step; that step just isn't rate-limiting."
+      },
+      {
+        "text": "The C–H bond breaks in the rate-limiting step",
+        "why": "Then an isotope effect would be observed, as in E2 reactions."
+      }
+    ],
+    "explanation": "E1 reactions show no deuterium isotope effect because rupture of the C–H (or C–D) bond occurs after the rate-limiting step rather than during it, so no rate difference can be measured between deuterated and nondeuterated substrates."
+  },
+  {
+    "id": "oc11-e1-zaitsev",
+    "type": "multiple-choice",
+    "prompt": "Why does an E1 reaction give the more stable Zaitsev product even where an E2 reaction does not?",
+    "choices": [
+      {
+        "text": "There is no geometric requirement, because the halide and the hydrogen are lost in separate steps",
+        "correct": true
+      },
+      {
+        "text": "E1 requires anti periplanar geometry, and that always leads to the Zaitsev product",
+        "why": "E1 has no geometric requirement at all. Anti periplanar geometry is the E2 requirement."
+      },
+      {
+        "text": "E1 requires syn periplanar geometry, which favors the Zaitsev product",
+        "why": "E1 has no geometric requirement, because the H and X are lost in separate steps."
+      },
+      {
+        "text": "E1 uses a stronger base than E2, which removes the most substituted hydrogen",
+        "why": "E1 occurs under milder conditions, such as dilute base or no base, not with a stronger base."
+      }
+    ],
+    "explanation": "Unlike E2, where anti periplanar geometry is required, the E1 reaction has no geometric requirement because the halide and the hydrogen are lost in separate steps. We therefore get the more stable (Zaitsev) product from E1 reactions."
+  },
+  {
+    "id": "oc11-menthyl-e1-3-menthene",
+    "type": "numeric",
+    "prompt": "Under E1 conditions (dilute base in 80% aqueous ethanol), menthyl chloride gives a mixture of 2-menthene and 3-menthene. What percent is 3-menthene?",
+    "answer": 68,
+    "unit": "%",
+    "explanation": "Under E1 conditions menthyl chloride gives 2-menthene (32%) and 3-menthene (68%). With no geometric requirement, the Zaitsev product, 3-menthene, predominates. Under E2 conditions it gives only 2-menthene."
+  },
+  {
+    "id": "oc11-menthyl-e2-conditions",
+    "type": "multiple-choice",
+    "prompt": "Menthyl chloride gives only 2-menthene under one set of conditions and a mixture rich in 3-menthene under another. Which conditions give only 2-menthene?",
+    "choices": [
+      {
+        "text": "Strong base in 100% ethanol (E2 conditions)",
+        "correct": true
+      },
+      {
+        "text": "Dilute base in 80% aqueous ethanol (E1 conditions)",
+        "why": "Under E1 conditions there is no geometric requirement, so the Zaitsev product, 3-menthene, predominates."
+      },
+      {
+        "text": "Warming in a polar solvent with no strong base",
+        "why": "Those are E1-type conditions, which give a mixture in which 3-menthene predominates."
+      },
+      {
+        "text": "Any conditions, since menthyl chloride always gives only 2-menthene",
+        "why": "Under E1 conditions 3-menthene is the major product."
+      }
+    ],
+    "explanation": "Under E2 conditions (strong base in 100% ethanol), menthyl chloride reacts through an anti periplanar elimination and gives 2-menthene only. Under E1 conditions (dilute base in 80% aqueous ethanol), it gives a mixture in which 3-menthene predominates."
+  },
+  {
+    "id": "oc11-e1cb-intermediate",
+    "type": "multiple-choice",
+    "prompt": "What kind of intermediate does an E1cB reaction go through?",
+    "choices": [
+      {
+        "text": "A carbanion",
+        "correct": true
+      },
+      {
+        "text": "A carbocation",
+        "why": "A carbocation is the intermediate in E1 (and S_N1) reactions."
+      },
+      {
+        "text": "None; the reaction takes place in a single step",
+        "why": "A single step with no intermediate describes E2."
+      },
+      {
+        "text": "A radical",
+        "why": "None of the elimination mechanisms in this chapter goes through a radical. E1cB forms an anion."
+      }
+    ],
+    "explanation": "In contrast to the E1 reaction, which involves a carbocation intermediate, the E1cB reaction takes place through a carbanion intermediate formed when base removes a proton."
+  },
+  {
+    "id": "oc11-e1cb-rate-limiting",
+    "type": "multiple-choice",
+    "prompt": "Which step is rate-limiting in an E1cB reaction?",
+    "choices": [
+      {
+        "text": "Base-induced removal of a proton to give an anion",
+        "correct": true
+      },
+      {
+        "text": "Loss of the leaving group to give a carbocation",
+        "why": "That's the rate-limiting step of E1. E1cB involves a carbanion, not a carbocation."
+      },
+      {
+        "text": "Expulsion of the leaving group from the anion",
+        "why": "That's the second step, which follows the slow proton removal."
+      },
+      {
+        "text": "Simultaneous loss of the proton and the leaving group",
+        "why": "That's the one-step E2 reaction."
+      }
+    ],
+    "explanation": "In the E1cB reaction, base-induced abstraction of a proton in a slow, rate-limiting step gives an anion, which then expels a leaving group on the adjacent carbon."
+  },
+  {
+    "id": "oc11-e1cb-substrate",
+    "type": "multiple-choice",
+    "prompt": "For which kind of substrate is the E1cB reaction particularly common?",
+    "choices": [
+      {
+        "text": "One with a poor leaving group such as –OH two carbons from a carbonyl group",
+        "correct": true
+      },
+      {
+        "text": "A tertiary alkyl halide in a protic solvent with no base",
+        "why": "Those conditions favor S_N1 and E1, through a carbocation."
+      },
+      {
+        "text": "A primary alkyl iodide treated with a strong base such as hydroxide",
+        "why": "A good leaving group with strong base favors E2 (or S_N2), not E1cB."
+      },
+      {
+        "text": "One with the leaving group bonded directly to the carbonyl carbon",
+        "why": "The leaving group is two carbons away from the carbonyl, with the acidic hydrogen on the carbon in between."
+      }
+    ],
+    "explanation": "The E1cB reaction is particularly common in substrates that have a poor leaving group, such as –OH, two carbons removed from a carbonyl group. The poor leaving group disfavors the alternative E1 and E2 possibilities."
+  },
+  {
+    "id": "oc11-e1cb-carbonyl-role",
+    "type": "multiple-choice",
+    "prompt": "In an E1cB substrate with an –OH two carbons removed from a carbonyl group, what does the carbonyl group do?",
+    "choices": [
+      {
+        "text": "It makes the neighboring hydrogen acidic by stabilizing the anion through resonance",
+        "correct": true
+      },
+      {
+        "text": "It acts as the leaving group once the anion has formed",
+        "why": "The –OH is the leaving group. The carbonyl stays in the product."
+      },
+      {
+        "text": "It stabilizes a carbocation intermediate through resonance",
+        "why": "There is no carbocation in E1cB. The carbonyl stabilizes the anion."
+      },
+      {
+        "text": "It turns the poor –OH group into a good leaving group",
+        "why": "The –OH remains a poor leaving group; that's part of why E1 and E2 are disfavored."
+      }
+    ],
+    "explanation": "The carbonyl group makes the adjacent hydrogen unusually acidic by resonance stabilization of the anion intermediate, so base can remove it. The anion then expels the leaving group on the neighboring carbon."
+  }
+]

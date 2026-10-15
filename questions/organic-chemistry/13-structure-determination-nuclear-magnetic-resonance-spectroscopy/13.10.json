@@ -1,0 +1,193 @@
+[
+  {
+    "id": "oc13-c13-natural-abundance",
+    "type": "numeric",
+    "prompt": "What is the natural abundance of ^13C, in percent?",
+    "answer": 1.1,
+    "unit": "%",
+    "explanation": "Carbon-13 is the only naturally occurring carbon isotope with a nuclear spin, but its natural abundance is only 1.1%. The most abundant isotope, ^12C, has no spin."
+  },
+  {
+    "id": "oc13-c13-only-spin-isotope",
+    "type": "multiple-choice",
+    "prompt": "Which statement about ^13C is correct?",
+    "choices": [
+      {
+        "text": "It is the only naturally occurring carbon isotope with a nuclear spin",
+        "correct": true
+      },
+      {
+        "text": "It is the most abundant carbon isotope",
+        "why": "^12C is the most abundant. ^13C makes up only 1.1% of carbon."
+      },
+      {
+        "text": "It has no nuclear spin, so carbon NMR detects ^12C instead",
+        "why": "It's the other way around: ^12C has no spin and can't be seen by NMR; ^13C can."
+      },
+      {
+        "text": "About half of all carbon atoms are ^13C",
+        "why": "Only about 1 of every 100 carbon atoms is ^13C."
+      }
+    ],
+    "explanation": "^12C, the most abundant carbon isotope, has no nuclear spin and can't be seen by NMR. Carbon-13 is the only naturally occurring carbon isotope with a nuclear spin, but it is only 1.1% of carbon."
+  },
+  {
+    "id": "oc13-carbons-observable-per-100",
+    "type": "numeric",
+    "prompt": "Roughly how many of every 100 carbon atoms in an organic sample can be observed by ^13C NMR?",
+    "answer": 1,
+    "explanation": "Because the natural abundance of ^13C is only 1.1%, only about 1 of every 100 carbon atoms in an organic sample can be observed by NMR."
+  },
+  {
+    "id": "oc13-averaging-vs-ft",
+    "type": "multiple-choice",
+    "prompt": "What do signal averaging and FT–NMR each contribute to ^13C NMR?",
+    "choices": [
+      {
+        "text": "Signal averaging increases sensitivity; FT–NMR increases speed",
+        "correct": true
+      },
+      {
+        "text": "Signal averaging increases speed; FT–NMR increases sensitivity",
+        "why": "That's swapped. Averaging many runs boosts sensitivity, and FT–NMR makes each run fast."
+      },
+      {
+        "text": "Both raise the natural abundance of ^13C in the sample",
+        "why": "Neither changes the sample. They are ways of running the instrument."
+      },
+      {
+        "text": "Signal averaging removes C–H splitting; FT–NMR assigns chemical shifts",
+        "why": "C–H splitting is removed by broadband decoupling. Averaging improves sensitivity, and FT improves speed."
+      }
+    ],
+    "explanation": "The low abundance of ^13C has been overcome by signal averaging and Fourier-transform NMR (FT–NMR). Signal averaging increases instrument sensitivity, and FT–NMR increases instrument speed."
+  },
+  {
+    "id": "oc13-why-averaging-works",
+    "type": "multiple-choice",
+    "prompt": "Why does adding together and averaging many runs improve a noisy ^13C spectrum?",
+    "choices": [
+      {
+        "text": "Random background noise grows very slowly as runs are added, while the real signals stand out",
+        "correct": true
+      },
+      {
+        "text": "Each run turns more ^12C into ^13C",
+        "why": "Running spectra doesn't change the isotopes in the sample."
+      },
+      {
+        "text": "The noise cancels completely after two runs",
+        "why": "Noise grows slowly as runs are added; it doesn't vanish. Hundreds or thousands of runs are averaged."
+      },
+      {
+        "text": "Averaging makes all the peaks the same size",
+        "why": "Averaging lets real peaks rise above the noise. It doesn't equalize them."
+      }
+    ],
+    "explanation": "A single ^13C spectrum is very noisy. If hundreds or thousands of runs are added together and averaged, background noise, because it is random, increases very slowly, while the nonzero signals stand out clearly (Figure 13.10.1)."
+  },
+  {
+    "id": "oc13-ft-nmr-method",
+    "type": "multiple-choice",
+    "prompt": "How does an FT–NMR spectrometer record a spectrum?",
+    "choices": [
+      {
+        "text": "A short rf pulse covering all useful frequencies makes all the nuclei resonate at once",
+        "correct": true
+      },
+      {
+        "text": "The rf frequency is held constant while the field is slowly varied",
+        "why": "That is the older method of Section 13.2, which records signals one after another and takes 5 to 10 minutes."
+      },
+      {
+        "text": "Each kind of nucleus is irradiated separately, one frequency at a time",
+        "why": "FT–NMR records all the signals simultaneously, not one at a time."
+      },
+      {
+        "text": "The field is turned off and the sample is irradiated with infrared light",
+        "why": "FT–NMR uses a constant magnetic field and a pulse of rf energy."
+      }
+    ],
+    "explanation": "In FT–NMR, the sample sits in a field of constant strength and is irradiated with a short pulse of rf energy covering the entire range of useful frequencies. All nuclei resonate at once, and the composite signal is converted by Fourier transforms. A whole spectrum takes only a few seconds."
+  },
+  {
+    "id": "oc13-sample-mass-c13",
+    "type": "numeric",
+    "prompt": "Combining FT–NMR with signal averaging, a ^13C NMR spectrum can be obtained from less than how many milligrams of sample?",
+    "answer": 0.1,
+    "unit": "mg",
+    "explanation": "Thousands of spectra can be taken and averaged in a few hours, giving such high sensitivity that a ^13C spectrum can be obtained from less than 0.1 mg of sample, and a ^1H spectrum from only a few micrograms."
+  },
+  {
+    "id": "oc13-no-c13-c13-coupling",
+    "type": "multiple-choice",
+    "prompt": "Why is no coupling between neighboring ^13C nuclei seen in ^13C NMR?",
+    "choices": [
+      {
+        "text": "^13C is so scarce that two ^13C nuclei are unlikely to be next to each other",
+        "correct": true
+      },
+      {
+        "text": "^13C nuclei have no nuclear spin",
+        "why": "^13C does have a spin; that is why it can be observed at all."
+      },
+      {
+        "text": "Broadband decoupling removes it",
+        "why": "Broadband decoupling removes coupling to hydrogens. The lack of C–C coupling comes from low abundance."
+      },
+      {
+        "text": "Carbon–carbon coupling occurs only through π bonds",
+        "why": "The reason given is simpler: with only 1.1% ^13C, two ^13C nuclei are rarely adjacent."
+      }
+    ],
+    "explanation": "No coupling of a ^13C nucleus with nearby carbons is seen because their low natural abundance makes it unlikely that two ^13C nuclei will be adjacent."
+  },
+  {
+    "id": "oc13-no-c13-h-coupling",
+    "type": "multiple-choice",
+    "prompt": "Why is no coupling between ^13C nuclei and nearby hydrogens seen in a normal ^13C spectrum?",
+    "choices": [
+      {
+        "text": "The spectrum is recorded using broadband decoupling",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen nuclei have no spin",
+        "why": "^1H nuclei do have spins; they are what ^1H NMR detects."
+      },
+      {
+        "text": "^13C is too scarce to couple with hydrogens",
+        "why": "Scarcity explains why ^13C–^13C coupling isn't seen. Hydrogens are everywhere, so C–H coupling must be removed by decoupling."
+      },
+      {
+        "text": "Hydrogens are too far from carbon nuclei to couple",
+        "why": "Hydrogens are bonded right to carbons. Coupling is removed by broadband decoupling."
+      }
+    ],
+    "explanation": "No coupling of a ^13C nucleus with nearby hydrogens is seen because ^13C spectra are normally recorded using broadband decoupling."
+  },
+  {
+    "id": "oc13-broadband-decoupling-how",
+    "type": "multiple-choice",
+    "prompt": "How does broadband decoupling work?",
+    "choices": [
+      {
+        "text": "A second band of rf energy covering all hydrogen frequencies makes the hydrogens spin-flip so fast that their local fields average to zero",
+        "correct": true
+      },
+      {
+        "text": "A second band of rf energy covering all carbon frequencies hides the ^13C nuclei from the hydrogens",
+        "why": "The second band covers the hydrogen frequencies, not the carbon ones."
+      },
+      {
+        "text": "The hydrogens are replaced by deuterium before the spectrum is run",
+        "why": "The sample isn't changed. The hydrogens are irradiated so that their spins flip rapidly."
+      },
+      {
+        "text": "The magnetic field is switched off between rf pulses so the hydrogens lose their alignment",
+        "why": "The field stays on. A second band of rf energy makes the hydrogen spins flip rapidly."
+      }
+    ],
+    "explanation": "While the sample is irradiated with a pulse covering the carbon resonance frequencies, it is also irradiated by a second band covering all the hydrogen frequencies. The hydrogens spin-flip so rapidly that their local fields average to zero, and no coupling with carbon spins occurs."
+  }
+]

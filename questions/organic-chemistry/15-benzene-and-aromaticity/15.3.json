@@ -1,0 +1,294 @@
+[
+  {
+    "id": "oc15-huckel-criteria",
+    "type": "multiple-choice",
+    "prompt": "According to Erich Hückel's 1931 theory, what does a molecule need in order to be aromatic?",
+    "choices": [
+      {
+        "text": "A planar, monocyclic system of conjugation with 4n + 2 π electrons",
+        "correct": true
+      },
+      {
+        "text": "A planar, monocyclic system of conjugation with 4n π electrons",
+        "why": "Planar, conjugated molecules with 4n π electrons are antiaromatic, not aromatic."
+      },
+      {
+        "text": "Any ring with alternating single and double bonds",
+        "why": "Cyclooctatetraene has alternating bonds but is tub-shaped and not aromatic. The ring must also be planar and have 4n + 2 π electrons."
+      },
+      {
+        "text": "A six-membered ring with exactly six π electrons",
+        "why": "The rule calls for 4n + 2 π electrons in a planar, monocyclic conjugated system; 2, 10, 14 and 18 also qualify."
+      }
+    ],
+    "explanation": "A molecule is aromatic only if it has a planar, monocyclic system of conjugation and contains a total of 4n + 2 π electrons, where n is an integer (n = 0, 1, 2, 3, …)."
+  },
+  {
+    "id": "oc15-huckel-number",
+    "type": "multiple-choice",
+    "prompt": "Which number of π electrons can give an aromatic molecule?",
+    "choices": [
+      {
+        "text": "10",
+        "correct": true
+      },
+      {
+        "text": "4",
+        "why": "4 = 4n with n = 1. Molecules with 4n π electrons can't be aromatic."
+      },
+      {
+        "text": "8",
+        "why": "8 = 4n with n = 2. Molecules with 4n π electrons can't be aromatic."
+      },
+      {
+        "text": "12",
+        "why": "12 = 4n with n = 3. Molecules with 4n π electrons can't be aromatic."
+      }
+    ],
+    "explanation": "Only molecules with 2, 6, 10, 14, 18, … π electrons (4n + 2) can be aromatic; 10 is 4n + 2 with n = 2. Molecules with 4n π electrons (4, 8, 12, 16, …) can't be aromatic."
+  },
+  {
+    "id": "oc15-n-for-14",
+    "type": "numeric",
+    "prompt": "What value of n in 4n + 2 corresponds to 14 π electrons?",
+    "answer": 3,
+    "explanation": "4n + 2 = 14 gives 4n = 12, so n = 3. Fourteen is one of the Hückel numbers (2, 6, 10, 14, 18, …)."
+  },
+  {
+    "id": "oc15-antiaromatic",
+    "type": "multiple-choice",
+    "prompt": "What does antiaromatic mean?",
+    "choices": [
+      {
+        "text": "A planar, conjugated molecule with 4n π electrons, destabilized by delocalization",
+        "correct": true
+      },
+      {
+        "text": "Any molecule that isn't aromatic",
+        "why": "Antiaromatic is narrower: planar, conjugated molecules with 4n π electrons. Tub-shaped cyclooctatetraene, for example, simply behaves like an open-chain polyene."
+      },
+      {
+        "text": "A planar molecule with 4n + 2 π electrons that resists addition",
+        "why": "That describes an aromatic molecule such as benzene."
+      },
+      {
+        "text": "A nonplanar ring with 4n + 2 π electrons",
+        "why": "Being nonplanar keeps a ring from being aromatic, but antiaromatic refers to planar, conjugated rings with 4n π electrons."
+      }
+    ],
+    "explanation": "Planar, conjugated molecules with 4n π electrons are said to be antiaromatic, because delocalization of their π electrons would lead to their destabilization. Cyclobutadiene, with four π electrons, is the section's example."
+  },
+  {
+    "id": "oc15-cyclobutadiene-pi",
+    "type": "numeric",
+    "prompt": "How many π electrons does cyclobutadiene, a four-membered carbon ring with two double bonds, have?",
+    "answer": 4,
+    "explanation": "Cyclobutadiene has four π electrons, a 4n number (n = 1), so it is antiaromatic. Its π electrons are localized in two double bonds rather than delocalized around the ring."
+  },
+  {
+    "id": "oc15-cyclobutadiene-behavior",
+    "type": "multiple-choice",
+    "prompt": "How does cyclobutadiene behave?",
+    "choices": [
+      {
+        "text": "Even at −78 °C it is so reactive that it dimerizes by a Diels–Alder reaction",
+        "correct": true
+      },
+      {
+        "text": "It is stable and undergoes substitution like benzene",
+        "why": "Cyclobutadiene is antiaromatic and highly reactive; it shows none of the properties of aromaticity."
+      },
+      {
+        "text": "It is tub-shaped and reacts like an open-chain polyene",
+        "why": "That describes cyclooctatetraene. Cyclobutadiene is so reactive it dimerizes even at −78 °C."
+      },
+      {
+        "text": "It is aromatic because it is cyclic, planar and conjugated",
+        "why": "With four π electrons (4n, n = 1) it is antiaromatic, not aromatic."
+      }
+    ],
+    "explanation": "Cyclobutadiene is highly reactive and shows none of the properties associated with aromaticity. It wasn't prepared until 1965, by Rowland Pettit at low temperature, and even at −78 °C it dimerizes by a Diels–Alder reaction."
+  },
+  {
+    "id": "oc15-cyclobutadiene-dimer",
+    "type": "multiple-choice",
+    "prompt": "When cyclobutadiene dimerizes by a Diels–Alder reaction, what roles do the two molecules play?",
+    "choices": [
+      {
+        "text": "One acts as the diene and the other as the dienophile",
+        "correct": true
+      },
+      {
+        "text": "Both act as dienes",
+        "why": "A Diels–Alder reaction joins a diene with a dienophile, so one cyclobutadiene must play each role."
+      },
+      {
+        "text": "Both act as dienophiles",
+        "why": "A Diels–Alder reaction needs a diene as well as a dienophile; one cyclobutadiene plays each role."
+      },
+      {
+        "text": "Each loses a hydrogen atom and the two radicals combine",
+        "why": "The dimerization is a Diels–Alder reaction, not a radical coupling."
+      }
+    ],
+    "explanation": "Cyclobutadiene is so reactive that even at −78 °C it dimerizes by a Diels–Alder reaction: one molecule behaves as a diene and the other as a dienophile."
+  },
+  {
+    "id": "oc15-benzene-n",
+    "type": "numeric",
+    "prompt": "Benzene has six π electrons. What is the value of n in 4n + 2 for benzene?",
+    "answer": 1,
+    "explanation": "4n + 2 = 6 when n = 1, so benzene, with six π electrons, is aromatic."
+  },
+  {
+    "id": "oc15-cot-not-aromatic",
+    "type": "multiple-choice",
+    "prompt": "Why is cyclooctatetraene not aromatic?",
+    "choices": [
+      {
+        "text": "It is tub-shaped, so neighboring p orbitals aren't aligned for cyclic overlap",
+        "correct": true
+      },
+      {
+        "text": "It is planar, and delocalizing its π electrons destabilizes it",
+        "why": "Cyclooctatetraene isn't planar. It is tub-shaped, with its π electrons localized in four double bonds."
+      },
+      {
+        "text": "Its π electrons number 4n + 2, which can't be aromatic",
+        "why": "Cyclooctatetraene has eight π electrons, a 4n number, and 4n + 2 is the count that can be aromatic."
+      },
+      {
+        "text": "Its carbons are sp3 and have no p orbitals",
+        "why": "Its carbons are alkene sp2 carbons; the problem is that their p orbitals aren't parallel."
+      }
+    ],
+    "explanation": "Cyclooctatetraene has eight π electrons, a 4n number. It is tub-shaped rather than planar, so neighboring p orbitals don't have the parallel alignment needed for overlap. Its π electrons are localized in four double bonds, and it reacts like an open-chain polyene."
+  },
+  {
+    "id": "oc15-cot-bond-lengths",
+    "type": "multiple-choice",
+    "prompt": "What do X-ray studies show about the carbon–carbon bonds of cyclooctatetraene?",
+    "choices": [
+      {
+        "text": "The single bonds are 147 pm long and the double bonds 134 pm",
+        "correct": true
+      },
+      {
+        "text": "All the bonds are 139 pm, as in benzene",
+        "why": "Equal bond lengths would mean delocalized electrons. Cyclooctatetraene's bonds alternate because its π electrons are localized."
+      },
+      {
+        "text": "All the bonds are 147 pm",
+        "why": "It has distinct 134 pm double bonds alongside its 147 pm single bonds."
+      },
+      {
+        "text": "The single bonds are 134 pm long and the double bonds 147 pm",
+        "why": "Double bonds are the shorter ones: 134 pm, versus 147 pm for the single bonds."
+      }
+    ],
+    "explanation": "X-ray studies show that the C–C single bonds in cyclooctatetraene are 147 pm long and the double bonds are 134 pm long, as expected for localized double bonds rather than benzene's equal 139 pm bonds."
+  },
+  {
+    "id": "oc15-cot-nmr",
+    "type": "multiple-choice",
+    "prompt": "Cyclooctatetraene's ^1H NMR spectrum shows a single sharp line at 5.78 δ. What does this value indicate?",
+    "choices": [
+      {
+        "text": "Its hydrogens behave like those of an alkene, not an aromatic molecule",
+        "correct": true
+      },
+      {
+        "text": "It is aromatic",
+        "why": "5.78 δ is a value characteristic of an alkene, which fits cyclooctatetraene's localized double bonds."
+      },
+      {
+        "text": "Its eight hydrogens are all different from one another",
+        "why": "A single sharp line means one kind of hydrogen. The telling point is its alkene-like position."
+      },
+      {
+        "text": "It is antiaromatic, like cyclobutadiene",
+        "why": "Cyclooctatetraene is tub-shaped, not planar, so it isn't antiaromatic; it behaves like an ordinary polyene."
+      }
+    ],
+    "explanation": "The single sharp resonance at 5.78 δ is a value characteristic of an alkene rather than an aromatic molecule. Along with its alternating bond lengths, it shows that cyclooctatetraene's π electrons are localized in four double bonds."
+  },
+  {
+    "id": "oc15-mo-pattern",
+    "type": "multiple-choice",
+    "prompt": "Molecular orbital theory explains the 4n + 2 rule. What pattern do the π molecular orbitals of a cyclic conjugated molecule follow?",
+    "choices": [
+      {
+        "text": "A single lowest-energy orbital, with the orbitals above it in degenerate pairs",
+        "correct": true
+      },
+      {
+        "text": "Degenerate pairs all the way up, including the lowest level",
+        "why": "The lowest-lying MO always occurs singly; that's why only two electrons fill the first level."
+      },
+      {
+        "text": "Every orbital at a different energy",
+        "why": "Above the single lowest MO, the orbitals come in degenerate pairs of equal energy."
+      },
+      {
+        "text": "A degenerate pair at the lowest level, with single orbitals above it",
+        "why": "It's the reverse: one single lowest orbital, with degenerate pairs above it."
+      }
+    ],
+    "explanation": "There is always a single lowest-lying MO, above which the MOs come in degenerate pairs. It takes two electrons to fill the lowest orbital and four to fill each of n succeeding levels, a total of 4n + 2. Any other number would leave an energy level partially filled."
+  },
+  {
+    "id": "oc15-degenerate-pair-electrons",
+    "type": "numeric",
+    "prompt": "In a cyclic conjugated molecule, how many electrons does it take to fill one degenerate pair of π molecular orbitals?",
+    "answer": 4,
+    "explanation": "Each orbital holds two electrons, so a degenerate pair takes four electrons (two pairs). Two electrons for the single lowest MO plus four for each of n levels above it gives 4n + 2. In benzene, ψ_1 holds two and the degenerate ψ_2 and ψ_3 hold four."
+  },
+  {
+    "id": "oc15-cyclodecapentaene",
+    "type": "multiple-choice",
+    "prompt": "Cyclodecapentaene, a ten-membered ring with five alternating double bonds, meets one Hückel criterion but not the other, and has resisted all attempts at synthesis. What is the problem?",
+    "choices": [
+      {
+        "text": "Steric interactions keep the ring from being flat",
+        "correct": true
+      },
+      {
+        "text": "Ten is a 4n number of π electrons",
+        "why": "10 = 4n + 2 with n = 2; its electron count is a Hückel number."
+      },
+      {
+        "text": "It has only eight π electrons",
+        "why": "Five double bonds give 10 π electrons."
+      },
+      {
+        "text": "Its double bonds aren't conjugated with one another",
+        "why": "The double bonds alternate with single bonds around the ring; the problem is that the ring can't lie flat."
+      }
+    ],
+    "explanation": "Cyclodecapentaene has 10 π electrons, a Hückel number (n = 2), but it is not flat because of steric interactions. Without a planar, monocyclic system of conjugation it can't be aromatic (Exercise 15.3.1)."
+  },
+  {
+    "id": "oc15-substitution-keeps-conjugation",
+    "type": "multiple-choice",
+    "prompt": "Why does benzene undergo substitution reactions rather than electrophilic addition reactions?",
+    "choices": [
+      {
+        "text": "Substitution keeps the cyclic conjugation, while addition would destroy it",
+        "correct": true
+      },
+      {
+        "text": "Benzene has no π electrons for an electrophile to attack",
+        "why": "Benzene has six π electrons; the point is that substitution leaves its cyclic conjugation intact."
+      },
+      {
+        "text": "Benzene's carbons are already saturated",
+        "why": "Benzene, C6H6, is unsaturated; its carbons are sp2."
+      },
+      {
+        "text": "Addition products are always less stable than substitution products",
+        "why": "Cyclohexene readily gives an addition product. Benzene's preference comes from keeping its cyclic conjugation."
+      }
+    ],
+    "explanation": "Benzene undergoes substitution reactions that retain the cyclic conjugation rather than electrophilic addition reactions that would destroy it. This is one of the features of benzene listed at the start of Section 15.3."
+  }
+]

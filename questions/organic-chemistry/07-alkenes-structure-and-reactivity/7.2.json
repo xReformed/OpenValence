@@ -1,0 +1,226 @@
+[
+  {
+    "id": "oc7-unsaturated-meaning",
+    "type": "multiple-choice",
+    "prompt": "Why is an alkene described as unsaturated?",
+    "choices": [
+      {
+        "text": "It has fewer hydrogens than an alkane with the same number of carbons",
+        "correct": true
+      },
+      {
+        "text": "It has more hydrogens than an alkane with the same number of carbons",
+        "why": "It's the reverse: an alkene is C_{n}H_{2n}, two hydrogens short of the alkane C_{n}H_{2n+2}."
+      },
+      {
+        "text": "It has fewer carbons than the alkane it is compared with",
+        "why": "The comparison is made at the same number of carbons; the difference is in hydrogens."
+      },
+      {
+        "text": "It contains no carbon–hydrogen bonds",
+        "why": "Alkenes have plenty of C–H bonds; ethylene, C2H4, has four. They just have fewer than the matching alkane."
+      }
+    ],
+    "explanation": "Because of its double bond, an alkene has the formula C_{n}H_{2n}, whereas an alkane has C_{n}H_{2n+2}. Ethylene is C2H4 but ethane is C2H6. Having fewer hydrogens is what unsaturated means."
+  },
+  {
+    "id": "oc7-dou-definition",
+    "type": "multiple-choice",
+    "prompt": "What does a molecule's degree of unsaturation tell you?",
+    "choices": [
+      {
+        "text": "The number of rings and/or multiple bonds in the molecule",
+        "correct": true
+      },
+      {
+        "text": "The number of double bonds only",
+        "why": "Rings count too. Each ring or double bond removes two hydrogens from the alkane formula."
+      },
+      {
+        "text": "The number of hydrogens missing compared with the alkane",
+        "why": "Each ring or double bond removes two hydrogens, so the degree of unsaturation is half the number of missing hydrogens."
+      },
+      {
+        "text": "The number of carbon atoms in the longest chain",
+        "why": "Chain length has nothing to do with it. The degree of unsaturation counts rings and multiple bonds."
+      }
+    ],
+    "explanation": "Each ring or double bond corresponds to the loss of two hydrogens from the alkane formula C_{n}H_{2n+2}. Working backward from a molecular formula gives the degree of unsaturation: the number of rings and/or multiple bonds present."
+  },
+  {
+    "id": "oc7-dou-c6h10",
+    "type": "numeric",
+    "prompt": "An unknown hydrocarbon has a molecular weight of 82 amu, which corresponds to the formula C6H10. What is its degree of unsaturation?",
+    "answer": 2,
+    "explanation": "The saturated C6 alkane, hexane, is C6H14. C6H10 has four fewer hydrogens, or two pairs (H14 − H10 = H4 = 2 H2), so its degree of unsaturation is 2."
+  },
+  {
+    "id": "oc7-c6h10-structures",
+    "type": "multiple-choice",
+    "prompt": "A hydrocarbon has the formula C6H10. Which combination of structural features could it have?",
+    "choices": [
+      {
+        "text": "One ring and one double bond",
+        "correct": true
+      },
+      {
+        "text": "One double bond and no rings",
+        "why": "That accounts for only one degree of unsaturation (C6H12). C6H10 has two."
+      },
+      {
+        "text": "Three double bonds",
+        "why": "That would be three degrees of unsaturation (C6H8). C6H10 has two."
+      },
+      {
+        "text": "One ring and one triple bond",
+        "why": "A triple bond alone accounts for two degrees, so adding a ring makes three (C6H8). C6H10 has two."
+      }
+    ],
+    "explanation": "C6H10 has two degrees of unsaturation (hexane is C6H14). It could contain two double bonds, one ring and one double bond, two rings, or one triple bond: for example 4-methyl-1,3-pentadiene, cyclohexene, bicyclo[3.1.0]hexane, or 4-methyl-2-pentyne."
+  },
+  {
+    "id": "oc7-dou-halogen-rule",
+    "type": "multiple-choice",
+    "prompt": "How do you account for halogen atoms (F, Cl, Br, I) when calculating degree of unsaturation?",
+    "choices": [
+      {
+        "text": "Add the number of halogens to the number of hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Subtract the number of halogens from the number of hydrogens",
+        "why": "Subtracting is the rule for nitrogen. A halogen replaces a hydrogen, so it is added to the hydrogens."
+      },
+      {
+        "text": "Ignore them",
+        "why": "Ignoring is the rule for oxygen. A halogen takes the place of a hydrogen, so it must be counted with the hydrogens."
+      },
+      {
+        "text": "Add the number of halogens to the number of carbons",
+        "why": "A halogen forms one bond, like hydrogen, not four like carbon. It's counted with the hydrogens."
+      }
+    ],
+    "explanation": "A halogen substituent acts as a replacement for hydrogen, so add the number of halogens to the number of hydrogens to get an equivalent hydrocarbon formula. For example, C4H6Br2 is equivalent to C4H8."
+  },
+  {
+    "id": "oc7-dou-c4h6br2",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C4H6Br2?",
+    "answer": 1,
+    "explanation": "Add halogens to hydrogens: 6 + 2 = 8, so C4H6Br2 is equivalent to C4H8. The alkane C4H10 has two more hydrogens (one pair), so the degree of unsaturation is 1, as in 1,4-dibromo-2-butene."
+  },
+  {
+    "id": "oc7-dou-oxygen-rule",
+    "type": "multiple-choice",
+    "prompt": "Why can oxygen atoms be ignored when calculating degree of unsaturation?",
+    "choices": [
+      {
+        "text": "Oxygen forms two bonds, so inserting it into a bond doesn't change the hydrogen count",
+        "correct": true
+      },
+      {
+        "text": "Oxygen replaces a hydrogen, just as a halogen does, so it can be left out",
+        "why": "A halogen forms one bond and takes a hydrogen's place, so halogens are added to the hydrogens. Oxygen forms two bonds and slips in between atoms."
+      },
+      {
+        "text": "Oxygen forms three bonds, so it brings in one extra hydrogen of its own",
+        "why": "That describes nitrogen, which is why nitrogens are subtracted. Oxygen forms two bonds: C–C becomes C–O–C and C–H becomes C–O–H."
+      },
+      {
+        "text": "Oxygen atoms are never found in rings or double bonds, so they add nothing",
+        "why": "That isn't the reason. Oxygen is ignored because putting a two-bonded atom into a bond doesn't change the number of hydrogens."
+      }
+    ],
+    "explanation": "Oxygen forms two bonds, so it doesn't affect the formula of an equivalent hydrocarbon: C–C becomes C–O–C, or C–H becomes C–O–H, with no change in the number of hydrogens. For example, C5H8O is equivalent to C5H8."
+  },
+  {
+    "id": "oc7-dou-c5h8o",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C5H8O?",
+    "answer": 2,
+    "explanation": "Ignore the oxygen: C5H8O is equivalent to C5H8. The alkane C5H12 has four more hydrogens (two pairs), so the degree of unsaturation is 2."
+  },
+  {
+    "id": "oc7-dou-nitrogen-rule",
+    "type": "multiple-choice",
+    "prompt": "How do you account for nitrogen atoms when calculating degree of unsaturation?",
+    "choices": [
+      {
+        "text": "Subtract the number of nitrogens from the number of hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Add the number of nitrogens to the number of hydrogens",
+        "why": "Adding is the rule for halogens. Each nitrogen brings in one extra hydrogen, so that hydrogen must be subtracted."
+      },
+      {
+        "text": "Ignore the nitrogens, just as you ignore oxygens",
+        "why": "Ignoring is the rule for oxygen, which forms two bonds. Nitrogen forms three, so it changes the hydrogen count."
+      },
+      {
+        "text": "Subtract two hydrogens from the hydrogen count for each nitrogen",
+        "why": "Each nitrogen adds only one hydrogen (C–C becomes C–NH–C, C–H becomes C–NH2), so subtract one per nitrogen."
+      }
+    ],
+    "explanation": "Nitrogen forms three bonds, so an organonitrogen compound has one more hydrogen than a related hydrocarbon: C–C becomes C–NH–C, or C–H becomes C–NH2. Subtract the number of nitrogens from the number of hydrogens. C5H9N, for example, is equivalent to C5H8."
+  },
+  {
+    "id": "oc7-dou-c5h9n",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C5H9N?",
+    "answer": 2,
+    "explanation": "Subtract one hydrogen per nitrogen: 9 − 1 = 8, so C5H9N is equivalent to C5H8. The alkane C5H12 has four more hydrogens (two pairs), so there are 2 degrees of unsaturation."
+  },
+  {
+    "id": "oc7-dou-which-two",
+    "type": "multiple-choice",
+    "prompt": "Which formula has exactly two degrees of unsaturation?",
+    "choices": [
+      {
+        "text": "C3H4",
+        "correct": true
+      },
+      {
+        "text": "C4H8",
+        "why": "C4H10 is the alkane, so C4H8 is two hydrogens short: one degree of unsaturation."
+      },
+      {
+        "text": "C9H16Br2",
+        "why": "Add halogens to hydrogens: C9H18. Compared with C9H20, that's one degree of unsaturation."
+      },
+      {
+        "text": "C8H9Cl3",
+        "why": "Add halogens to hydrogens: C8H12. Compared with C8H18, that's three degrees of unsaturation."
+      }
+    ],
+    "explanation": "The alkane C3H8 has four more hydrogens than C3H4, so C3H4 has two degrees of unsaturation. C4H8 and C9H16Br2 each have 1, and C8H9Cl3 has 3."
+  },
+  {
+    "id": "oc7-dou-c6h5n",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C6H5N?",
+    "answer": 5,
+    "explanation": "Subtract the nitrogen from the hydrogens: 5 − 1 = 4, giving C6H4. The alkane C6H14 has 10 more hydrogens, or 5 pairs, so the degree of unsaturation is 5."
+  },
+  {
+    "id": "oc7-dou-c10h12n2o3",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C10H12N2O3?",
+    "answer": 6,
+    "explanation": "Ignore the three oxygens and subtract the two nitrogens: 12 − 2 = 10, giving C10H10. The alkane C10H22 has 12 more hydrogens, or 6 pairs, so the degree of unsaturation is 6."
+  },
+  {
+    "id": "oc7-dou-c20h32cln",
+    "type": "numeric",
+    "prompt": "What is the degree of unsaturation of C20H32ClN?",
+    "answer": 5,
+    "explanation": "Add the chlorine and subtract the nitrogen: 32 + 1 − 1 = 32, giving C20H32. The alkane C20H42 has 10 more hydrogens, or 5 pairs, so the degree of unsaturation is 5."
+  },
+  {
+    "id": "oc7-diazepam-hydrogens",
+    "type": "numeric",
+    "prompt": "Diazepam (Valium) has three rings, eight double bonds, and the formula C16H_{x}ClN2O. How many hydrogens (x) does diazepam have?",
+    "answer": 13,
+    "explanation": "Three rings plus eight double bonds is 11 degrees of unsaturation, so the equivalent hydrocarbon has 2 × 11 = 22 fewer hydrogens than C16H34: C16H12. The equivalent count is x + 1 (the chlorine) − 2 (the nitrogens) = 12, so x = 13. Diazepam is C16H13ClN2O."
+  }
+]

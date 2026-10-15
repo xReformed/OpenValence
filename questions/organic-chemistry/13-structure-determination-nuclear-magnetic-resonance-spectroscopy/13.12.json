@@ -1,0 +1,266 @@
+[
+  {
+    "id": "oc13-dept-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does DEPT–NMR make it possible to determine?",
+    "choices": [
+      {
+        "text": "Whether each carbon is a CH3, CH2, CH or quaternary carbon",
+        "correct": true
+      },
+      {
+        "text": "The relative number of each kind of carbon, from peak areas",
+        "why": "^13C peaks can't be integrated. DEPT tells how many hydrogens each carbon carries."
+      },
+      {
+        "text": "The number of protons on neighboring carbons, from n + 1 splitting",
+        "why": "Splitting patterns belong to ^1H NMR. DEPT sorts carbons by their own attached hydrogens."
+      },
+      {
+        "text": "The coupling constants between neighboring carbons",
+        "why": "DEPT distinguishes CH3, CH2, CH and quaternary carbons; it doesn't measure coupling constants."
+      }
+    ],
+    "explanation": "DEPT–NMR (distortionless enhancement by polarization transfer) makes it possible to distinguish between signals due to CH3, CH2, CH and quaternary carbons. That is, the number of hydrogens attached to each carbon can be determined."
+  },
+  {
+    "id": "oc13-dept-first-stage",
+    "type": "multiple-choice",
+    "prompt": "What is run first in a DEPT experiment, and why?",
+    "choices": [
+      {
+        "text": "An ordinary broadband-decoupled spectrum, to locate the chemical shifts of all the carbons",
+        "correct": true
+      },
+      {
+        "text": "A DEPT-90 spectrum, to locate all the carbons",
+        "why": "DEPT-90 shows only CH carbons, so it can't locate them all."
+      },
+      {
+        "text": "A DEPT-135 spectrum, to find the quaternary carbons",
+        "why": "Quaternary carbons are absent from DEPT-135."
+      },
+      {
+        "text": "A ^1H spectrum, to count the hydrogens on each carbon",
+        "why": "A DEPT experiment uses three ^13C spectra; the first is the ordinary broadband-decoupled one."
+      }
+    ],
+    "explanation": "A DEPT experiment is usually done in three stages. First an ordinary broadband-decoupled spectrum locates the chemical shifts of all carbons; then a DEPT-90 and a DEPT-135 spectrum are run."
+  },
+  {
+    "id": "oc13-dept90-shows",
+    "type": "multiple-choice",
+    "prompt": "Which carbons give signals in a DEPT-90 spectrum?",
+    "choices": [
+      {
+        "text": "Only CH carbons",
+        "correct": true
+      },
+      {
+        "text": "Only CH3 carbons",
+        "why": "CH3 signals are absent from DEPT-90; they appear as positive peaks in DEPT-135."
+      },
+      {
+        "text": "CH3 and CH carbons",
+        "why": "That describes the positive peaks of DEPT-135. DEPT-90 shows only CH carbons."
+      },
+      {
+        "text": "All carbons except quaternary ones",
+        "why": "DEPT-90 also leaves out CH3 and CH2 carbons."
+      }
+    ],
+    "explanation": "A DEPT-90 spectrum is run under special conditions in which only signals due to CH carbons appear. Signals due to CH3, CH2 and quaternary carbons are absent."
+  },
+  {
+    "id": "oc13-dept135-shows",
+    "type": "multiple-choice",
+    "prompt": "How do the different kinds of carbons appear in a DEPT-135 spectrum?",
+    "choices": [
+      {
+        "text": "CH3 and CH positive, CH2 negative, quaternary absent",
+        "correct": true
+      },
+      {
+        "text": "CH3 and CH2 positive, CH negative, quaternary absent",
+        "why": "CH2 carbons are the ones that appear as negative peaks, below the baseline."
+      },
+      {
+        "text": "CH and CH2 positive, CH3 negative, quaternary absent",
+        "why": "CH3 carbons appear as positive peaks; CH2 carbons are negative."
+      },
+      {
+        "text": "CH3 and CH positive, CH2 negative, quaternary positive but small",
+        "why": "Quaternary carbons are absent from DEPT-135."
+      }
+    ],
+    "explanation": "In a DEPT-135 spectrum, CH3 and CH resonances appear as positive signals, CH2 resonances appear as negative signals (below the baseline) and quaternary carbons are absent."
+  },
+  {
+    "id": "oc13-dept-find-quaternary",
+    "type": "multiple-choice",
+    "prompt": "How are quaternary carbons identified in a DEPT experiment?",
+    "choices": [
+      {
+        "text": "By subtracting all the DEPT-135 peaks from the broadband-decoupled peaks",
+        "correct": true
+      },
+      {
+        "text": "As the negative peaks in the DEPT-135 spectrum",
+        "why": "Negative DEPT-135 peaks are CH2 carbons."
+      },
+      {
+        "text": "As the peaks in the DEPT-90 spectrum",
+        "why": "DEPT-90 peaks are CH carbons."
+      },
+      {
+        "text": "By subtracting the DEPT-90 peaks from the positive DEPT-135 peaks",
+        "why": "That identifies the CH3 carbons."
+      }
+    ],
+    "explanation": "Quaternary carbons are absent from both DEPT spectra, so they are the broadband-decoupled peaks left over after all the DEPT-135 peaks are subtracted."
+  },
+  {
+    "id": "oc13-dept-find-ch3",
+    "type": "multiple-choice",
+    "prompt": "How are CH3 carbons identified in a DEPT experiment?",
+    "choices": [
+      {
+        "text": "By subtracting the DEPT-90 peaks from the positive DEPT-135 peaks",
+        "correct": true
+      },
+      {
+        "text": "As the negative peaks in the DEPT-135 spectrum",
+        "why": "Negative DEPT-135 peaks are CH2 carbons."
+      },
+      {
+        "text": "As the peaks in the DEPT-90 spectrum",
+        "why": "DEPT-90 shows only CH carbons."
+      },
+      {
+        "text": "By subtracting all the DEPT-135 peaks from the broadband-decoupled peaks",
+        "why": "That leaves the quaternary carbons."
+      }
+    ],
+    "explanation": "Positive DEPT-135 peaks are CH3 or CH carbons. The CH carbons also appear in DEPT-90, so subtracting the DEPT-90 peaks from the positive DEPT-135 peaks leaves the CH3 carbons."
+  },
+  {
+    "id": "oc13-heptenol-dept90",
+    "type": "numeric",
+    "prompt": "6-Methyl-5-hepten-2-ol, CH3CH(OH)CH2CH2CH=C(CH3)2, shows signals for all eight of its carbons in a broadband-decoupled ^13C spectrum. How many signals appear in its DEPT-90 spectrum?",
+    "answer": 2,
+    "unit": "signals",
+    "explanation": "DEPT-90 shows only CH carbons. 6-Methyl-5-hepten-2-ol has two: carbon 2, bearing the OH, and the vinylic carbon 5 (Figure 13.12.1)."
+  },
+  {
+    "id": "oc13-heptenol-dept135-positive",
+    "type": "numeric",
+    "prompt": "6-Methyl-5-hepten-2-ol, CH3CH(OH)CH2CH2CH=C(CH3)2, shows signals for all eight of its carbons in a broadband-decoupled ^13C spectrum. How many positive signals appear in its DEPT-135 spectrum?",
+    "answer": 5,
+    "unit": "signals",
+    "explanation": "CH3 and CH carbons are positive in DEPT-135. There are two CH carbons (carbons 2 and 5) and three different CH3 carbons: carbon 1 and the two methyls on carbon 6, which aren't equivalent because one is cis and one trans across the double bond. 2 + 3 = 5 (Figure 13.12.1)."
+  },
+  {
+    "id": "oc13-heptenol-quaternary",
+    "type": "numeric",
+    "prompt": "6-Methyl-5-hepten-2-ol, CH3CH(OH)CH2CH2CH=C(CH3)2, shows signals for all eight of its carbons in a broadband-decoupled ^13C spectrum. How many of those eight signals are missing from its DEPT-135 spectrum?",
+    "answer": 1,
+    "unit": "signal",
+    "explanation": "Only quaternary carbons are absent from DEPT-135. The molecule has two CH, two CH2 and three CH3 carbons, which all appear, leaving one quaternary carbon: the vinylic carbon 6, which carries no hydrogens."
+  },
+  {
+    "id": "oc13-c4h10o-dept-structure",
+    "type": "multiple-choice",
+    "prompt": "An alcohol C4H10O gives these ^13C data. Broadband decoupled: 19.0, 31.7, 69.5 δ. DEPT-90: 31.7 δ. DEPT-135: positive peaks at 19.0 and 31.7 δ, negative peak at 69.5 δ. What is the alcohol?",
+    "choices": [
+      {
+        "text": "2-Methyl-1-propanol, (CH3)2CHCH2OH",
+        "correct": true
+      },
+      {
+        "text": "1-Butanol, CH3CH2CH2CH2OH",
+        "why": "1-Butanol has four different carbons, three of them CH2, and no CH carbon to appear in DEPT-90."
+      },
+      {
+        "text": "2-Butanol, CH3CH(OH)CH2CH3",
+        "why": "2-Butanol has four different carbons, so it would show four signals, not three."
+      },
+      {
+        "text": "2-Methyl-2-propanol, (CH3)3COH",
+        "why": "It has only two kinds of carbon, with no CH or CH2 carbon at all."
+      }
+    ],
+    "explanation": "Four carbons but three signals means two carbons are equivalent. DEPT-90 shows that 31.7 δ is a CH; DEPT-135 shows that 19.0 δ is a CH3 and 69.5 δ is a CH2, and 69.5 δ is in the region for carbon bonded to oxygen. Two equivalent methyls on a CH, (CH3)2CH–, plus –CH2OH gives 2-methyl-1-propanol (Worked Example 13.12.1)."
+  },
+  {
+    "id": "oc13-negative-peak-69",
+    "type": "multiple-choice",
+    "prompt": "In the ^13C spectrum of 2-methyl-1-propanol, (CH3)2CHCH2OH, the peak at 69.5 δ is negative in the DEPT-135 spectrum. What does that show?",
+    "choices": [
+      {
+        "text": "It is a CH2 carbon, and its downfield position shows it is bonded to oxygen",
+        "correct": true
+      },
+      {
+        "text": "It is a CH carbon bonded to oxygen",
+        "why": "CH carbons appear as positive DEPT-135 peaks and also in DEPT-90."
+      },
+      {
+        "text": "It is a CH3 carbon bonded to oxygen",
+        "why": "CH3 carbons appear as positive DEPT-135 peaks."
+      },
+      {
+        "text": "It is a quaternary carbon",
+        "why": "Quaternary carbons are absent from DEPT-135."
+      }
+    ],
+    "explanation": "Negative DEPT-135 peaks are CH2 carbons. The 69.5 δ peak lies in the region of a carbon bonded to an electronegative atom, so it is the –CH2OH carbon (Worked Example 13.12.1)."
+  },
+  {
+    "id": "oc13-c11h16-structure",
+    "type": "multiple-choice",
+    "prompt": "An aromatic hydrocarbon C11H16 gives these ^13C data. Broadband decoupled: 29.5, 31.8, 50.2, 125.5, 127.5, 130.3, 139.8 δ. DEPT-90: 125.5, 127.5, 130.3 δ. DEPT-135: positive peaks at 29.5, 125.5, 127.5, 130.3 δ; negative peak at 50.2 δ. What is it?",
+    "choices": [
+      {
+        "text": "(2,2-Dimethylpropyl)benzene, C6H5CH2C(CH3)3",
+        "correct": true
+      },
+      {
+        "text": "Pentylbenzene, C6H5CH2CH2CH2CH2CH3",
+        "why": "Pentylbenzene has four different CH2 carbons, so its DEPT-135 would show four negative peaks, not one."
+      },
+      {
+        "text": "1-tert-Butyl-4-methylbenzene, (CH3)3CC6H4CH3",
+        "why": "It has no CH2 carbon, so it couldn't give the negative DEPT-135 peak at 50.2 δ."
+      },
+      {
+        "text": "Pentamethylbenzene, C6H(CH3)5",
+        "why": "It has no CH2 carbon and only one ring CH, but the data show one CH2 and three ring CH signals."
+      }
+    ],
+    "explanation": "DEPT-90 shows three aromatic CH carbons (125.5, 127.5, 130.3 δ). The positive 29.5 δ peak not in DEPT-90 is CH3, the negative 50.2 δ peak is CH2, and 31.8 and 139.8 δ, missing from DEPT-135, are quaternary. A monosubstituted ring with a –CH2C(CH3)3 group fits: C6H5CH2C(CH3)3 (Exercise 13.12.3)."
+  },
+  {
+    "id": "oc13-c11h16-quaternary-count",
+    "type": "numeric",
+    "prompt": "An aromatic hydrocarbon C11H16 gives these ^13C data. Broadband decoupled: 29.5, 31.8, 50.2, 125.5, 127.5, 130.3, 139.8 δ. DEPT-90: 125.5, 127.5, 130.3 δ. DEPT-135: positive peaks at 29.5, 125.5, 127.5, 130.3 δ; negative peak at 50.2 δ. How many of its signals come from quaternary carbons?",
+    "answer": 2,
+    "unit": "signals",
+    "explanation": "Quaternary carbons are the broadband-decoupled peaks missing from DEPT-135. The seven broadband peaks minus the five DEPT-135 peaks leaves two: 31.8 δ (the C of the tert-butyl group) and 139.8 δ (the ring carbon bearing the side chain)."
+  },
+  {
+    "id": "oc13-methylcyclohexane-negative",
+    "type": "numeric",
+    "prompt": "How many negative peaks would the DEPT-135 spectrum of methylcyclohexane show?",
+    "answer": 3,
+    "unit": "peaks",
+    "explanation": "Negative DEPT-135 peaks are CH2 carbons. By symmetry, ring carbons 2 and 6 are equivalent, carbons 3 and 5 are equivalent, and carbon 4 is unique, giving three different CH2 signals. The CH and CH3 carbons are positive."
+  },
+  {
+    "id": "oc13-butanone-dept90",
+    "type": "numeric",
+    "prompt": "How many signals would appear in the DEPT-90 spectrum of 2-butanone, CH3COCH2CH3?",
+    "answer": 0,
+    "unit": "signals",
+    "explanation": "DEPT-90 shows only CH carbons. 2-Butanone has two CH3 carbons, one CH2 and one C=O carbon with no hydrogens, but no CH carbon, so its DEPT-90 spectrum shows no signals."
+  }
+]

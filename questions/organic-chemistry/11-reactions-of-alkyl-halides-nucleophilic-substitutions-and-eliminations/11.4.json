@@ -1,0 +1,351 @@
+[
+  {
+    "id": "oc11-tertiary-water-million",
+    "type": "numeric",
+    "prompt": "The reaction of 2-bromo-2-methylpropane, (CH3)3CBr, with H2O to give 2-methyl-2-propanol is more than how many times faster than the corresponding reaction of CH3Br to give methanol?",
+    "answer": 1000000,
+    "explanation": "The tertiary halide reacts with water more than 1 million times faster than CH3Br does. A hindered substrate and a neutral, protic nucleophile should be among the slowest S_N2 cases, so the reaction must be going by a different mechanism, the S_N1 reaction."
+  },
+  {
+    "id": "oc11-sn1-water-substrate-order",
+    "type": "multiple-choice",
+    "prompt": "For the reaction of alkyl bromides, R–Br, with H2O to give alcohols, which order of reactivity is observed?",
+    "choices": [
+      {
+        "text": "Tertiary > secondary > primary > methyl",
+        "correct": true
+      },
+      {
+        "text": "Methyl > primary > secondary > tertiary",
+        "why": "That is the S_N2 order. With water the order is backward: tertiary reacts fastest."
+      },
+      {
+        "text": "Secondary > tertiary > primary > methyl",
+        "why": "Tertiary halides react fastest with water, faster even than secondary ones."
+      },
+      {
+        "text": "Methyl > tertiary > secondary > primary",
+        "why": "Methyl bromide is the slowest of all with water, not the fastest."
+      }
+    ],
+    "explanation": "With water, the reactivity order is methyl < primary < secondary < tertiary, the reverse of the S_N2 order. This backward order shows that these reactions take place by another mechanism, the S_N1 reaction."
+  },
+  {
+    "id": "oc11-sn1-name",
+    "type": "multiple-choice",
+    "prompt": "What does the abbreviation S_N1 stand for?",
+    "choices": [
+      {
+        "text": "Substitution, nucleophilic, unimolecular",
+        "correct": true
+      },
+      {
+        "text": "Substitution, nucleophilic, bimolecular",
+        "why": "That is S_N2, the mechanism in which nucleophile and alkyl halide react together in one step."
+      },
+      {
+        "text": "Substitution, nucleophilic, one-step",
+        "why": "The S_N1 reaction has more than one step. The 1 means unimolecular."
+      },
+      {
+        "text": "Substitution, neutral, unimolecular",
+        "why": "N stands for nucleophilic, not neutral."
+      }
+    ],
+    "explanation": "The S_N1 reaction is named for substitution, nucleophilic, unimolecular. Only one molecule, the alkyl halide, takes part in the rate-limiting step."
+  },
+  {
+    "id": "oc11-sn1-rate-law",
+    "type": "multiple-choice",
+    "prompt": "What is the rate equation for the S_N1 reaction of (CH3)3CBr (RX) with H2O?",
+    "choices": [
+      {
+        "text": "Rate = k × [RX]",
+        "correct": true
+      },
+      {
+        "text": "Rate = k × [RX] × [H2O]",
+        "why": "The rate is independent of the H2O concentration, because water isn't involved in the rate-limiting step."
+      },
+      {
+        "text": "Rate = k × [H2O]",
+        "why": "The rate depends on the alkyl halide concentration, not on the water concentration."
+      },
+      {
+        "text": "Rate = k × [RX]^2",
+        "why": "The rate depends on [RX] to the first power: the reaction is first-order."
+      }
+    ],
+    "explanation": "The S_N1 reaction of (CH3)3CBr with H2O has a rate that depends only on the alkyl halide concentration: rate = k × [RX]. It is a first-order reaction; the nucleophile's concentration doesn't appear in the rate equation."
+  },
+  {
+    "id": "oc11-sn1-double-water",
+    "type": "numeric",
+    "prompt": "In the S_N1 reaction of (CH3)3CBr with H2O, by what factor is the rate multiplied if the concentration of water is doubled?",
+    "answer": 1,
+    "explanation": "Rate = k × [RX]. The water concentration doesn't appear in the rate equation, so doubling it multiplies the rate by 1: no change."
+  },
+  {
+    "id": "oc11-sn1-triple-halide",
+    "type": "numeric",
+    "prompt": "For an S_N1 reaction, by what factor is the rate multiplied if the alkyl halide concentration is tripled and the nucleophile concentration is doubled?",
+    "answer": 3,
+    "explanation": "Rate = k × [RX]. Tripling [RX] triples the rate; doubling the nucleophile concentration has no effect, since the nucleophile isn't in the rate equation. The factor is 3."
+  },
+  {
+    "id": "oc11-rate-limiting-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the rate-limiting step of a reaction that takes place in several steps?",
+    "choices": [
+      {
+        "text": "The step with the highest-energy transition state",
+        "correct": true
+      },
+      {
+        "text": "Always the first step, whatever its energy",
+        "why": "It's defined by having the highest transition state. In S_N1 that happens to be step 1, but not because it comes first."
+      },
+      {
+        "text": "The step with the lowest-energy transition state",
+        "why": "The lowest barrier is the fastest step. The slowest, rate-limiting step has the highest transition state."
+      },
+      {
+        "text": "The step that forms the final product",
+        "why": "In the S_N1 reaction, the steps after carbocation formation are fast; the bottleneck comes first."
+      }
+    ],
+    "explanation": "One step of a multistep reaction usually has a higher-energy transition state than the others and is therefore slower. This rate-limiting (rate-determining) step acts like a traffic jam: no reaction can go faster than its rate-limiting step."
+  },
+  {
+    "id": "oc11-sn1-rate-limiting-step",
+    "type": "multiple-choice",
+    "prompt": "In the S_N1 reaction of 2-bromo-2-methylpropane with H2O, which step is rate-limiting?",
+    "choices": [
+      {
+        "text": "Dissociation of the alkyl bromide into the tert-butyl carbocation and Br−",
+        "correct": true
+      },
+      {
+        "text": "Attack of water on the tert-butyl carbocation that has formed",
+        "why": "Water traps the carbocation immediately, in a faster second step."
+      },
+      {
+        "text": "Loss of a proton from the protonated alcohol to give the product",
+        "why": "Proton loss comes after the carbocation has been trapped; it isn't the slow step."
+      },
+      {
+        "text": "Backside attack of water on the C–Br carbon as bromide leaves",
+        "why": "That is an S_N2 picture. In S_N1 the leaving group departs before the nucleophile approaches."
+      }
+    ],
+    "explanation": "2-Bromo-2-methylpropane spontaneously dissociates to the tert-butyl carbocation, (CH3)3C+, plus Br− in a slow, rate-limiting step. The carbocation is then immediately trapped by water in a faster step."
+  },
+  {
+    "id": "oc11-sn1-step-count",
+    "type": "numeric",
+    "prompt": "According to the section, how many steps does the S_N1 mechanism for the reaction of 2-bromo-2-methylpropane with H2O involve?",
+    "answer": 3,
+    "explanation": "The mechanism involves three steps: (1) spontaneous, rate-limiting dissociation to the carbocation and Br−, (2) fast reaction of the carbocation with water, and (3) loss of a proton to give the neutral alcohol and H3O+."
+  },
+  {
+    "id": "oc11-water-not-in-rate-law",
+    "type": "multiple-choice",
+    "prompt": "Why doesn't the concentration of H2O appear in the rate equation for the S_N1 reaction of (CH3)3CBr?",
+    "choices": [
+      {
+        "text": "Water reacts only in a faster step that comes after the rate-limiting dissociation",
+        "correct": true
+      },
+      {
+        "text": "Water is the solvent, so it never becomes part of the product",
+        "why": "Water does react: it traps the carbocation and ends up as the –OH of 2-methyl-2-propanol."
+      },
+      {
+        "text": "Water is too weak a nucleophile to react with an alkyl halide at all",
+        "why": "Water does react, with the carbocation, in a fast step after the slow one."
+      },
+      {
+        "text": "The reaction is second-order, and the water concentration cancels out",
+        "why": "The reaction is first-order: its rate depends only on [RX]."
+      }
+    ],
+    "explanation": "The nucleophile concentration doesn't appear in the first-order rate equation, so the nucleophile can't be involved in the rate-limiting step. Water reacts with the carbocation in a later, faster step, so it isn't a reactant in the step whose rate is measured."
+  },
+  {
+    "id": "oc11-sn1-vs-sn2-timing",
+    "type": "multiple-choice",
+    "prompt": "How does the timing of leaving-group loss in an S_N1 reaction differ from that in an S_N2 reaction?",
+    "choices": [
+      {
+        "text": "In S_N1 the leaving group departs before the nucleophile approaches; in S_N2 it departs as the nucleophile comes in",
+        "correct": true
+      },
+      {
+        "text": "In S_N1 the leaving group departs as the nucleophile comes in; in S_N2 it departs before the nucleophile approaches",
+        "why": "That's reversed. S_N2 is the single-step mechanism; S_N1 forms a carbocation first."
+      },
+      {
+        "text": "In both mechanisms the leaving group departs before the nucleophile approaches",
+        "why": "That's true only of S_N1. In S_N2 the nucleophile displaces the leaving group in a single step."
+      },
+      {
+        "text": "In S_N1 the nucleophile bonds to carbon first, and the leaving group departs in a later step",
+        "why": "In S_N1 the nucleophile can't bond until the carbocation has formed, so the leaving group goes first."
+      }
+    ],
+    "explanation": "Unlike an S_N2 reaction, where the leaving group is displaced while the incoming nucleophile approaches, an S_N1 reaction takes place by loss of the leaving group before the nucleophile approaches, giving a carbocation intermediate."
+  },
+  {
+    "id": "oc11-sn1-carbocation-description",
+    "type": "multiple-choice",
+    "prompt": "Which description fits the carbocation intermediate in an S_N1 reaction?",
+    "choices": [
+      {
+        "text": "Planar, sp2-hybridized and achiral",
+        "correct": true
+      },
+      {
+        "text": "Tetrahedral, sp3-hybridized and chiral",
+        "why": "A carbocation has only three groups on the positive carbon and is planar, not tetrahedral."
+      },
+      {
+        "text": "Planar, sp2-hybridized and chiral",
+        "why": "A planar carbocation is symmetrical and achiral, which is why it can be attacked equally from either side."
+      },
+      {
+        "text": "Linear, sp-hybridized and achiral",
+        "why": "A carbocation with three groups around carbon is planar and sp2-hybridized, not linear."
+      }
+    ],
+    "explanation": "Carbocations are planar, sp2-hybridized and achiral. An S_N1 reaction that passes through such an intermediate loses the stereochemical information of a chiral reactant."
+  },
+  {
+    "id": "oc11-sn1-racemic-expected",
+    "type": "multiple-choice",
+    "prompt": "Why would an S_N1 reaction on one enantiomer of a chiral substrate be expected to give a racemic product?",
+    "choices": [
+      {
+        "text": "The achiral carbocation can react with the nucleophile equally well from either side",
+        "correct": true
+      },
+      {
+        "text": "The nucleophile always attacks from the side opposite the leaving group",
+        "why": "Backside attack gives inversion, not racemization. That's the S_N2 result."
+      },
+      {
+        "text": "The substrate racemizes completely before it dissociates into ions",
+        "why": "The substrate keeps its configuration; it's the achiral intermediate that loses the stereochemical information."
+      },
+      {
+        "text": "The nucleophile always attacks from the same side as the leaving group",
+        "why": "Attack from one side only would give a single enantiomer (retention), not a racemic mixture."
+      }
+    ],
+    "explanation": "The symmetrical, planar carbocation can react with a nucleophile equally well from either side, leading to a racemic, 50 : 50 mixture of enantiomers. An enantiomerically pure reactant would give an optically inactive product."
+  },
+  {
+    "id": "oc11-sn1-actual-stereochemistry",
+    "type": "multiple-choice",
+    "prompt": "What do most S_N1 reactions of enantiomerically pure substrates actually give?",
+    "choices": [
+      {
+        "text": "A largely racemized product with a minor excess of inversion",
+        "correct": true
+      },
+      {
+        "text": "Complete racemization, an exact 50 : 50 mixture of enantiomers",
+        "why": "Few S_N1 displacements occur with complete racemization."
+      },
+      {
+        "text": "Complete inversion of configuration, as in S_N2 reactions",
+        "why": "Inversion is only a minor excess; most of the product is racemized."
+      },
+      {
+        "text": "A largely racemized product with a minor excess of retention",
+        "why": "The excess is of inversion, because the departing anion shields one side of the carbocation."
+      }
+    ],
+    "explanation": "Racemization is nearly, but not exactly, what is found. Few S_N1 displacements occur with complete racemization; most give a minor (0–20%) excess of inversion."
+  },
+  {
+    "id": "oc11-chlorodimethyloctane-percent-s",
+    "type": "numeric",
+    "prompt": "The S_N1 reaction of (R)-6-chloro-2,6-dimethyloctane with H2O gives an alcohol that is about 80% racemized and 20% inverted. Inversion gives the S configuration. What percent of the alcohol is S?",
+    "answer": 60,
+    "unit": "%",
+    "explanation": "The 80% racemized portion is half R and half S: 40% R + 40% S. The 20% inverted portion is all S. Total S = 40% + 20% = 60%, and R = 40%."
+  },
+  {
+    "id": "oc11-racemized-90-inverted-10",
+    "type": "numeric",
+    "prompt": "An S_N1 reaction on an enantiomerically pure substrate gives a product that is 90% racemized and 10% inverted. What percent of the product has the inverted configuration?",
+    "answer": 55,
+    "unit": "%",
+    "explanation": "The racemized 90% is half inverted and half retained: 45% + 45%. Adding the 10% that is purely inverted gives 45% + 10% = 55% inverted (and 45% retained), the same bookkeeping as the section's 80% racemized + 20% inverted example (40% R + 60% S)."
+  },
+  {
+    "id": "oc11-ion-pair-explanation",
+    "type": "multiple-choice",
+    "prompt": "According to Saul Winstein's explanation, why do most S_N1 reactions give some net inversion rather than complete racemization?",
+    "choices": [
+      {
+        "text": "The departing anion stays nearby as an ion pair, shielding one side of the carbocation",
+        "correct": true
+      },
+      {
+        "text": "The carbocation is chiral and remembers the configuration of the reactant",
+        "why": "The carbocation is planar and achiral. The shielding comes from the nearby leaving group."
+      },
+      {
+        "text": "The nucleophile prefers to attack the side the leaving group just left",
+        "why": "That would give an excess of retention. The leaving group blocks that side, so inversion is favored."
+      },
+      {
+        "text": "Water bonds to carbon before the C–X bond has begun to break",
+        "why": "In S_N1 the C–X bond breaks first. The partial inversion comes from ion pairs."
+      }
+    ],
+    "explanation": "Dissociation gives an ion pair in which the two ions are still loosely associated and the carbocation is shielded on one side by the departing anion. If some substitution occurs before the ions fully diffuse apart, a net inversion of configuration is observed."
+  },
+  {
+    "id": "oc11-chloromethyloctane-acetic-acid",
+    "type": "multiple-choice",
+    "prompt": "What product would you expect from the S_N1 reaction of (S)-3-chloro-3-methyloctane with acetic acid?",
+    "choices": [
+      {
+        "text": "Racemic 1-ethyl-1-methylhexyl acetate",
+        "correct": true
+      },
+      {
+        "text": "(R)-1-ethyl-1-methylhexyl acetate only",
+        "why": "Complete inversion is the S_N2 result. This tertiary substrate reacts through a planar carbocation that can be attacked from either side."
+      },
+      {
+        "text": "(S)-1-ethyl-1-methylhexyl acetate only",
+        "why": "There's no reason for retention; the achiral carbocation is attacked from both sides."
+      },
+      {
+        "text": "Racemic 3-methyl-3-octanol",
+        "why": "The nucleophile is acetic acid, so the product is an acetate, not an alcohol."
+      }
+    ],
+    "explanation": "The tertiary chloride dissociates to an achiral, planar carbocation, which acetic acid attacks from either side. The product is racemic 1-ethyl-1-methylhexyl acetate (Exercise 11.4.1)."
+  },
+  {
+    "id": "oc11-tosylate-acetate-percent-inversion",
+    "type": "numeric",
+    "prompt": "The optically pure tosylate of 2,2-dimethyl-1-phenyl-1-propanol gives the corresponding acetate with [α]_D = +5.3 when heated in acetic acid. Had complete inversion occurred, the optically pure acetate would have [α]_D = +53.6. What percentage inversion occurred, to one decimal place?",
+    "answer": 9.9,
+    "tolerance": 0.02,
+    "unit": "%",
+    "explanation": "Only the inverted portion contributes rotation; the racemized portion contributes zero. Percent inversion = (5.3 ÷ 53.6) × 100 = 9.9%, so the other 90.1% was racemized (Exercise 11.4.2)."
+  },
+  {
+    "id": "oc11-tosylate-acetate-percent-racemization",
+    "type": "numeric",
+    "prompt": "The optically pure tosylate of 2,2-dimethyl-1-phenyl-1-propanol gives the corresponding acetate with [α]_D = +5.3 when heated in acetic acid. Had complete inversion occurred, the optically pure acetate would have [α]_D = +53.6. What percentage racemization occurred, to one decimal place?",
+    "answer": 90.1,
+    "unit": "%",
+    "explanation": "The observed rotation is 5.3 ÷ 53.6 = 0.099 of the fully inverted value, so 9.9% inversion occurred. The rest, 100% − 9.9% = 90.1%, was racemized (Exercise 11.4.2)."
+  }
+]

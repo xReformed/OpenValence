@@ -104,7 +104,11 @@ function NumericAnswer({ question, saved, id, context, section }: AnswerProps<Nu
           placeholder="e.g. 6.0e-3 or 6.0 × 10^-3"
           className="w-full max-w-64 rounded-xl border border-neutral-200 bg-neutral-50/60 px-3.5 py-2.5 tabular-nums transition-colors placeholder:text-neutral-400 focus:border-neutral-400 focus:bg-white focus:outline-none read-only:bg-white"
         />
-        {question.unit && <span className="text-neutral-500">{question.unit}</span>}
+        {question.unit && (
+          <span className="text-neutral-500">
+            <ChemText text={question.unit} />
+          </span>
+        )}
       </div>
 
       {unreadable && (

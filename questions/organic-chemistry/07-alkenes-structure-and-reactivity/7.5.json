@@ -1,0 +1,448 @@
+[
+  {
+    "id": "oc7-ez-why-needed",
+    "type": "multiple-choice",
+    "prompt": "Why does the book introduce the E,Z system in addition to cis–trans names?",
+    "choices": [
+      {
+        "text": "Cis–trans names work only for disubstituted alkenes, not trisubstituted or tetrasubstituted ones",
+        "correct": true
+      },
+      {
+        "text": "Cis–trans names can be used only for cycloalkanes, not for alkenes",
+        "why": "Section 7.4 uses cis and trans for alkenes such as 2-butene. The limitation is that they work only for disubstituted double bonds."
+      },
+      {
+        "text": "Cis and trans alkene isomers interconvert freely, but E and Z isomers can be isolated",
+        "why": "Cis and trans alkenes can't interconvert without breaking the π bond. E,Z is simply a more general way to describe the geometry."
+      },
+      {
+        "text": "The E,Z system is needed for alkenes that have no substituents other than hydrogen",
+        "why": "Such alkenes, like ethylene, have no double-bond stereoisomers. E,Z is needed for trisubstituted and tetrasubstituted double bonds."
+      }
+    ],
+    "explanation": "The cis–trans system works only with disubstituted alkenes, which have two substituents other than hydrogen on the double bond. For trisubstituted and tetrasubstituted double bonds, the E,Z system uses the Cahn–Ingold–Prelog sequence rules to describe the geometry."
+  },
+  {
+    "id": "oc7-trisubstituted-count",
+    "type": "numeric",
+    "prompt": "How many substituents other than hydrogen are attached to the double-bond carbons of (CH3)2C=CHCH3?",
+    "answer": 3,
+    "explanation": "One double-bond carbon carries two methyl groups and the other carries one methyl and one hydrogen: three substituents other than hydrogen. This is a trisubstituted alkene, so it needs the E,Z system rather than cis–trans if it has stereoisomers."
+  },
+  {
+    "id": "oc7-z-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean when an alkene has the Z configuration?",
+    "choices": [
+      {
+        "text": "The higher-ranked groups on the two double-bond carbons are on the same side of the double bond",
+        "correct": true
+      },
+      {
+        "text": "The higher-ranked groups on the two double-bond carbons are on opposite sides of the double bond",
+        "why": "That is the E configuration, from entgegen, meaning “opposite.”"
+      },
+      {
+        "text": "The two largest groups are on the same side of the double bond",
+        "why": "Rank is set by the sequence rules (atomic number), not by size."
+      },
+      {
+        "text": "The lower-ranked groups on the two double-bond carbons are on opposite sides of the double bond",
+        "why": "If the lower-ranked groups are on opposite sides, so are the higher-ranked ones: that is E."
+      }
+    ],
+    "explanation": "Rank the two groups on each double-bond carbon by the sequence rules. If the higher-ranked groups are on the same side, the alkene is Z, for zusammen (“together”); if they are on opposite sides, it is E, for entgegen (“opposite”). The groups are on “ze zame zide” in the Z isomer."
+  },
+  {
+    "id": "oc7-ez-rule-1",
+    "type": "multiple-choice",
+    "prompt": "Sequence rule 1 ranks the two groups on a double-bond carbon by what property?",
+    "choices": [
+      {
+        "text": "The atomic number of the first atom in each group",
+        "correct": true
+      },
+      {
+        "text": "The total mass of all the atoms in each group",
+        "why": "Rule 1 looks only at the atomic number of the first attached atom, not at the mass of the whole group."
+      },
+      {
+        "text": "The electronegativity of the first atom in each group",
+        "why": "The rule uses atomic number. Cl outranks O, for example, even though O is more electronegative."
+      },
+      {
+        "text": "The total number of atoms in each group",
+        "why": "Group size doesn't matter. The first atom with the higher atomic number ranks higher."
+      }
+    ],
+    "explanation": "Rule 1: considering each double-bond carbon separately, rank its two substituents by the atomic number of the first atom (8 for oxygen, 6 for carbon, 1 for hydrogen, and so forth). Higher atomic number ranks higher."
+  },
+  {
+    "id": "oc7-ez-rule-3-vinyl",
+    "type": "multiple-choice",
+    "prompt": "Under sequence rule 3, what set of atoms is the first carbon of a vinyl group, −CH=CH2, treated as carrying (besides the atom it is attached to)?",
+    "choices": [
+      {
+        "text": "(C, C, H)",
+        "correct": true
+      },
+      {
+        "text": "(C, H)",
+        "why": "Rule 3 says a multiple-bonded atom is equivalent to the same number of single-bonded atoms, so the doubly bonded carbon counts twice."
+      },
+      {
+        "text": "(C, H, H)",
+        "why": "That's the first carbon of an ethyl group, −CH2CH3. The double bond to CH2 counts as two carbons."
+      },
+      {
+        "text": "(C, C, C)",
+        "why": "The first vinyl carbon carries one hydrogen; only the doubly bonded carbon is counted twice."
+      }
+    ],
+    "explanation": "Rule 3: multiple-bonded atoms are equivalent to the same number of single-bonded atoms. The first carbon of −CH=CH2 is bonded to H and doubly bonded to C, so it is treated as carrying (C, C, H), which outranks the (C, H, H) of an ethyl group."
+  },
+  {
+    "id": "oc7-ez-chlorobutene",
+    "type": "multiple-choice",
+    "prompt": "In one isomer of 2-chloro-2-butene, CH3CCl=CHCH3, the Cl atom and the CH3 group on the other double-bond carbon are on opposite sides of the double bond. What is its configuration?",
+    "choices": [
+      {
+        "text": "E",
+        "correct": true
+      },
+      {
+        "text": "Z, because the two CH3 groups are on the same side",
+        "why": "On the chlorine-bearing carbon, −Cl (atomic number 17) outranks −CH3 (6), so it's Cl, not CH3, that is compared with the other carbon's CH3."
+      },
+      {
+        "text": "Z, because −Cl and the other carbon's −CH3 are the higher-ranked groups",
+        "why": "They are the higher-ranked groups, but they're on opposite sides, which makes the alkene E."
+      },
+      {
+        "text": "Neither, because E and Z apply only to disubstituted alkenes",
+        "why": "E,Z works for any alkene with double-bond stereoisomers; it was introduced precisely for trisubstituted and tetrasubstituted double bonds."
+      }
+    ],
+    "explanation": "On C2, −Cl outranks −CH3 by rule 1 (17 versus 6). On C3, −CH3 outranks −H. The higher-ranked groups, Cl and the C3 methyl, are on opposite sides, so this isomer is (E)-2-chloro-2-butene. In it, the two methyl groups happen to be on the same side."
+  },
+  {
+    "id": "oc7-cis-butene-ez",
+    "type": "multiple-choice",
+    "prompt": "How is cis-2-butene described in the E,Z system?",
+    "choices": [
+      {
+        "text": "(Z)-2-butene",
+        "correct": true
+      },
+      {
+        "text": "(E)-2-butene",
+        "why": "On each carbon, −CH3 outranks −H, and in the cis isomer the two methyls are on the same side. Same side means Z."
+      },
+      {
+        "text": "It has no E,Z designation, because it is only disubstituted",
+        "why": "The E,Z system works for any double bond with stereoisomers; for disubstituted alkenes it simply isn't required."
+      },
+      {
+        "text": "(R)-2-butene",
+        "why": "R and S describe chirality centers (Section 5.5). Double-bond geometry is described as E or Z."
+      }
+    ],
+    "explanation": "On each double-bond carbon, −CH3 ranks higher than −H by rule 1. In cis-2-butene both methyls are on the same side of the double bond, so the higher-ranked groups are together: Z."
+  },
+  {
+    "id": "oc7-ez-worked-example",
+    "type": "multiple-choice",
+    "prompt": "One double-bond carbon carries −H and −CH3; the other carries −CH(CH3)2 and −CH2OH. The −CH3 and −CH2OH groups are on the same side. What is the configuration, and why?",
+    "choices": [
+      {
+        "text": "Z, because −CH2OH outranks −CH(CH3)2",
+        "correct": true
+      },
+      {
+        "text": "E, because −CH(CH3)2 has more carbon atoms than −CH2OH",
+        "why": "The number of atoms doesn't matter. By rule 2, −CH2OH's highest second atom is O, which beats C."
+      },
+      {
+        "text": "E, because the (C, C, H) of −CH(CH3)2 beats the (O, H, H) of −CH2OH",
+        "why": "Second atoms are compared highest first: O beats C at the first comparison, so −CH2OH ranks higher."
+      },
+      {
+        "text": "It can't be assigned, because both right-hand groups are attached through carbon",
+        "why": "Rule 1 ties them, but rule 2 breaks the tie by looking at the second atoms."
+      }
+    ],
+    "explanation": "On the left, −CH3 outranks −H (rule 1). On the right, −CH(CH3)2 and −CH2OH tie by rule 1 (both C), but by rule 2 −CH2OH has oxygen as its highest second atom while −CH(CH3)2 has only carbon. The higher-ranked −CH3 and −CH2OH are on the same side, so the configuration is Z (Worked Example 7.5.1)."
+  },
+  {
+    "id": "oc7-rank-vinyl-bromoethyl",
+    "type": "multiple-choice",
+    "prompt": "Which group ranks higher by the sequence rules: −CH2CH2Br or −CH=CH2?",
+    "choices": [
+      {
+        "text": "−CH=CH2",
+        "correct": true
+      },
+      {
+        "text": "−CH2CH2Br, because bromine has the highest atomic number",
+        "why": "The comparison stops at the first point of difference, at the second atoms: (C, C, H) for vinyl beats (C, H, H). The Br is never reached."
+      },
+      {
+        "text": "They rank equally, because both are attached through carbon",
+        "why": "Rule 1 ties them, but rule 2 finds a difference at the second atoms."
+      },
+      {
+        "text": "−CH2CH2Br, because it has more atoms",
+        "why": "The size of a group doesn't count; the first point of difference decides."
+      }
+    ],
+    "explanation": "Both groups attach through carbon. At the second atoms, −CH=CH2 counts as (C, C, H) by rule 3, while −CH2CH2Br has (C, H, H). The first difference favors −CH=CH2, so it ranks higher even though −CH2CH2Br contains bromine."
+  },
+  {
+    "id": "oc7-rank-cho-ch2oh",
+    "type": "multiple-choice",
+    "prompt": "Which group ranks higher by the sequence rules: −CH2OH or −CH=O?",
+    "choices": [
+      {
+        "text": "−CH=O",
+        "correct": true
+      },
+      {
+        "text": "−CH2OH, because it has more hydrogens",
+        "why": "Hydrogen has the lowest atomic number. −CH=O carries (O, O, H) by rule 3, which beats (O, H, H)."
+      },
+      {
+        "text": "They rank equally, because each carbon carries one oxygen",
+        "why": "By rule 3, the doubly bonded O of −CH=O counts as two oxygens: (O, O, H) versus (O, H, H)."
+      },
+      {
+        "text": "−CH2OH, because its oxygen also carries a hydrogen",
+        "why": "The comparison stops at the first difference, which comes at the second atoms: (O, O, H) beats (O, H, H)."
+      }
+    ],
+    "explanation": "Both groups attach through carbon. By rule 3, the carbon of −CH=O is treated as carrying (O, O, H), while the carbon of −CH2OH carries (O, H, H). The second oxygen decides it: −CH=O ranks higher."
+  },
+  {
+    "id": "oc7-rank-set-halogen",
+    "type": "multiple-choice",
+    "prompt": "How do −CH3, −OH, −H, and −Cl rank by the sequence rules, highest first?",
+    "choices": [
+      {
+        "text": "−Cl > −OH > −CH3 > −H",
+        "correct": true
+      },
+      {
+        "text": "−OH > −Cl > −CH3 > −H",
+        "why": "Oxygen is more electronegative, but the rule uses atomic number: Cl (17) outranks O (8)."
+      },
+      {
+        "text": "−H > −CH3 > −OH > −Cl",
+        "why": "That's the order reversed. Higher atomic number ranks higher."
+      },
+      {
+        "text": "−CH3 > −OH > −Cl > −H",
+        "why": "The size of a group doesn't count. Rank by the atomic number of the first atom: Cl 17, O 8, C 6, H 1."
+      }
+    ],
+    "explanation": "Rule 1: rank by the atomic number of the first atom. Cl (17) > O (8) > C (6) > H (1), so −Cl > −OH > −CH3 > −H."
+  },
+  {
+    "id": "oc7-rank-set-vinyl",
+    "type": "multiple-choice",
+    "prompt": "How do −CH3, −CH2CH3, −CH=CH2, and −CH2OH rank by the sequence rules, highest first?",
+    "choices": [
+      {
+        "text": "−CH2OH > −CH=CH2 > −CH2CH3 > −CH3",
+        "correct": true
+      },
+      {
+        "text": "−CH=CH2 > −CH2OH > −CH2CH3 > −CH3",
+        "why": "Second atoms are compared highest first: −CH2OH has O, which beats the C of −CH=CH2."
+      },
+      {
+        "text": "−CH2OH > −CH2CH3 > −CH=CH2 > −CH3",
+        "why": "By rule 3, −CH=CH2 counts as (C, C, H), which beats the (C, H, H) of −CH2CH3."
+      },
+      {
+        "text": "−CH2CH3 > −CH=CH2 > −CH2OH > −CH3",
+        "why": "Chain length isn't a sequence rule. The O in −CH2OH puts it first."
+      }
+    ],
+    "explanation": "All four attach through carbon, so compare the second atoms: −CH2OH (O, H, H), −CH=CH2 (C, C, H), −CH2CH3 (C, H, H), −CH3 (H, H, H). Highest first: −CH2OH > −CH=CH2 > −CH2CH3 > −CH3."
+  },
+  {
+    "id": "oc7-rank-set-nitrile",
+    "type": "multiple-choice",
+    "prompt": "How do −CO2H, −CH2OH, −C≡N, and −CH2NH2 rank by the sequence rules, highest first?",
+    "choices": [
+      {
+        "text": "−CO2H > −CH2OH > −C≡N > −CH2NH2",
+        "correct": true
+      },
+      {
+        "text": "−CO2H > −C≡N > −CH2OH > −CH2NH2",
+        "why": "Compare the highest second atoms first: −CH2OH has O while −C≡N has only N, so −CH2OH ranks higher despite the triple bond."
+      },
+      {
+        "text": "−C≡N > −CO2H > −CH2OH > −CH2NH2",
+        "why": "−C≡N counts as (N, N, N), but −CO2H counts as (O, O, O), and O beats N."
+      },
+      {
+        "text": "−CH2OH > −CO2H > −C≡N > −CH2NH2",
+        "why": "−CO2H carries (O, O, O) by rule 3, which beats the (O, H, H) of −CH2OH."
+      }
+    ],
+    "explanation": "All four attach through carbon. Their second atoms, using rule 3 for multiple bonds, are −CO2H (O, O, O), −CH2OH (O, H, H), −C≡N (N, N, N), −CH2NH2 (N, H, H). Compare the highest atom first, then the next: −CO2H > −CH2OH > −C≡N > −CH2NH2."
+  },
+  {
+    "id": "oc7-rank-set-ether",
+    "type": "multiple-choice",
+    "prompt": "How do −CH2CH3, −C≡CH, −C≡N, and −CH2OCH3 rank by the sequence rules, highest first?",
+    "choices": [
+      {
+        "text": "−CH2OCH3 > −C≡N > −C≡CH > −CH2CH3",
+        "correct": true
+      },
+      {
+        "text": "−C≡N > −CH2OCH3 > −C≡CH > −CH2CH3",
+        "why": "The highest second atom of −CH2OCH3 is O, which beats the N of −C≡N at the first comparison."
+      },
+      {
+        "text": "−C≡N > −C≡CH > −CH2OCH3 > −CH2CH3",
+        "why": "Triple bonds don't automatically win: −CH2OCH3 has an O among its second atoms, and O outranks both N and C."
+      },
+      {
+        "text": "−CH2OCH3 > −C≡CH > −C≡N > −CH2CH3",
+        "why": "−C≡N counts as (N, N, N) and −C≡CH as (C, C, C); N outranks C."
+      }
+    ],
+    "explanation": "Second atoms: −CH2OCH3 (O, H, H), −C≡N (N, N, N), −C≡CH (C, C, C), −CH2CH3 (C, H, H). Comparing the highest atoms first gives −CH2OCH3 > −C≡N > −C≡CH > −CH2CH3."
+  },
+  {
+    "id": "oc7-count-above-vinyl",
+    "type": "numeric",
+    "prompt": "How many of these groups rank higher than −CH=CH2 by the sequence rules: −CH2OH, −CH2CH3, −C≡CH, −CH3, −CH=O?",
+    "answer": 3,
+    "explanation": "−CH=CH2 counts as (C, C, H). Higher: −CH2OH (O, H, H), −C≡CH (C, C, C), and −CH=O (O, O, H). Lower: −CH2CH3 (C, H, H) and −CH3 (H, H, H). That makes 3."
+  },
+  {
+    "id": "oc7-ez-chloro-methoxy",
+    "type": "multiple-choice",
+    "prompt": "One double-bond carbon carries −Cl and −OCH3; the other carries −CH2CH3 and −CH2CH2CH3. The −Cl and −CH2CH3 are on the same side. What is the configuration?",
+    "choices": [
+      {
+        "text": "E",
+        "correct": true
+      },
+      {
+        "text": "Z, because −Cl and −CH2CH3 are on the same side",
+        "why": "−Cl is the higher-ranked group on its carbon, but −CH2CH2CH3 outranks −CH2CH3, so the higher-ranked groups are on opposite sides."
+      },
+      {
+        "text": "Z, because −OCH3 outranks −Cl",
+        "why": "Rule 1 compares the first atoms: Cl (17) beats O (8). The rest of the methoxy group doesn't matter."
+      },
+      {
+        "text": "It can't be assigned, because ethyl and propyl tie",
+        "why": "They tie at the first carbon, but one atom farther out the propyl's CH2 (C, H, H) beats the ethyl's CH3 (H, H, H)."
+      }
+    ],
+    "explanation": "Left carbon: −Cl outranks −OCH3 (atomic number 17 versus 8). Right carbon: −CH2CH3 and −CH2CH2CH3 tie at the first carbon (C, H, H); one atom farther out, propyl's (C, H, H) beats ethyl's (H, H, H). The higher-ranked −Cl and −CH2CH2CH3 are on opposite sides, so the alkene is E."
+  },
+  {
+    "id": "oc7-ez-nitrile",
+    "type": "multiple-choice",
+    "prompt": "One double-bond carbon carries −H and −CH3; the other carries −C≡N and −CH2NH2. The −CH3 and −CH2NH2 groups are on the same side. What is the configuration?",
+    "choices": [
+      {
+        "text": "E",
+        "correct": true
+      },
+      {
+        "text": "Z, because −CH3 and −CH2NH2 are on the same side",
+        "why": "−CH2NH2 is the lower-ranked group on its carbon: −C≡N counts as (N, N, N), which beats (N, H, H)."
+      },
+      {
+        "text": "Z, because −H outranks −CH3",
+        "why": "Hydrogen has the lowest atomic number of all; −CH3 outranks −H."
+      },
+      {
+        "text": "It can't be assigned, because both right-hand groups contain nitrogen",
+        "why": "Rule 3 treats −C≡N as (N, N, N), and −CH2NH2 is (N, H, H), so −C≡N ranks higher."
+      }
+    ],
+    "explanation": "Left: −CH3 outranks −H. Right: both groups attach through carbon; by rule 3 −C≡N carries (N, N, N) while −CH2NH2 carries (N, H, H), so −C≡N ranks higher. −CH3 is on the same side as −CH2NH2, so it is opposite −C≡N: the higher-ranked groups are on opposite sides, and the alkene is E."
+  },
+  {
+    "id": "oc7-z-hydroxymethylbutenoic",
+    "type": "multiple-choice",
+    "prompt": "In (Z)-2-hydroxymethyl-2-butenoic acid, HO2CC(CH2OH)=CHCH3, which group on C2 lies on the same side of the double bond as the CH3 on C3?",
+    "choices": [
+      {
+        "text": "−CO2H, because it outranks −CH2OH",
+        "correct": true
+      },
+      {
+        "text": "−CH2OH, because it outranks −CO2H",
+        "why": "By rule 3, −CO2H carries (O, O, O), which beats the (O, H, H) of −CH2OH."
+      },
+      {
+        "text": "−CH2OH, because Z places the two smaller groups together",
+        "why": "Z places the higher-ranked groups together, regardless of size."
+      },
+      {
+        "text": "Neither can be decided, because both groups have oxygen as their highest second atom",
+        "why": "The highest atoms tie, so compare the next ones: O in −CO2H beats H in −CH2OH."
+      }
+    ],
+    "explanation": "On C3, −CH3 outranks −H. On C2, −CO2H (O, O, O) outranks −CH2OH (O, H, H). In the Z isomer the higher-ranked groups are on the same side, so −CO2H is on the same side as the C3 methyl."
+  },
+  {
+    "id": "oc7-e-methylpentadiene",
+    "type": "multiple-choice",
+    "prompt": "In (E)-3-methyl-1,3-pentadiene, CH2=CHC(CH3)=CHCH3, which group on C3 ranks higher, and how are the C3 methyl and the C5 methyl arranged?",
+    "choices": [
+      {
+        "text": "−CH=CH2 ranks higher, so the two methyls are on the same side",
+        "correct": true
+      },
+      {
+        "text": "−CH3 ranks higher, so the two methyls are on opposite sides",
+        "why": "By rule 3 the first vinyl carbon carries (C, C, H), which beats the (H, H, H) of −CH3."
+      },
+      {
+        "text": "−CH=CH2 ranks higher, so the two methyls are on opposite sides",
+        "why": "E puts −CH=CH2 opposite the C5 methyl, which leaves the C3 methyl on the same side as the C5 methyl."
+      },
+      {
+        "text": "−CH3 ranks higher, so the two methyls are on the same side",
+        "why": "By rule 3 the first vinyl carbon carries (C, C, H), which beats the (H, H, H) of −CH3."
+      }
+    ],
+    "explanation": "On C3, −CH=CH2 (C, C, H) outranks −CH3 (H, H, H); on C4, the C5 methyl outranks −H. E puts the higher-ranked groups, −CH=CH2 and the C5 methyl, on opposite sides. The C3 methyl is then on the same side as the C5 methyl."
+  },
+  {
+    "id": "oc7-ez-bromochloro",
+    "type": "multiple-choice",
+    "prompt": "In BrClC=CHCH3, the Br atom and the CH3 group are on the same side of the double bond. What is the configuration?",
+    "choices": [
+      {
+        "text": "Z",
+        "correct": true
+      },
+      {
+        "text": "E, because Cl ranks higher than Br",
+        "why": "Rule 1 uses atomic number: Br (35) outranks Cl (17)."
+      },
+      {
+        "text": "E, because the higher-ranked Br and CH3 are on the same side",
+        "why": "Same side for the higher-ranked groups means Z (zusammen), not E."
+      },
+      {
+        "text": "Neither, because one double-bond carbon carries no hydrogen",
+        "why": "E,Z needs only two different groups on each double-bond carbon. Br and Cl differ, and so do CH3 and H."
+      }
+    ],
+    "explanation": "On the first carbon, −Br (atomic number 35) outranks −Cl (17). On the second, −CH3 outranks −H. The higher-ranked Br and CH3 are on the same side, so the alkene is Z."
+  }
+]

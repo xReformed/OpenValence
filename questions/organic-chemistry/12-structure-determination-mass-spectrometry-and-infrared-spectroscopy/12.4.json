@@ -1,0 +1,193 @@
+[
+  {
+    "id": "oc12-bio-ionization",
+    "type": "multiple-choice",
+    "prompt": "Which ionization methods do mass spectrometry analyses of sensitive biological samples typically use?",
+    "choices": [
+      {
+        "text": "ESI (electrospray) or MALDI (matrix-assisted laser desorption)",
+        "correct": true
+      },
+      {
+        "text": "Electron-impact ionization with a beam of about 70 eV",
+        "why": "Biological samples rarely use electron-impact, magnetic-sector methods; they cause heavy fragmentation."
+      },
+      {
+        "text": "Electron impact followed by a double-focusing magnetic analyzer",
+        "why": "Magnetic-sector instruments are rarely used for sensitive biological samples. ESI or MALDI with a TOF analyzer is typical."
+      },
+      {
+        "text": "Neutralizing the sample so the magnetic field can't deflect it",
+        "why": "Neutral molecules can't be sorted or detected. ESI and MALDI give charged, protonated molecules."
+      }
+    ],
+    "explanation": "MS analyses of sensitive biological samples rarely use magnetic-sector instruments. Instead they typically use electrospray ionization (ESI) or matrix-assisted laser desorption ionization (MALDI), usually linked to a time-of-flight (TOF) mass analyzer."
+  },
+  {
+    "id": "oc12-soft-ionization",
+    "type": "multiple-choice",
+    "prompt": "What do ESI and MALDI have in common?",
+    "choices": [
+      {
+        "text": "Both give charged molecules with little fragmentation",
+        "correct": true
+      },
+      {
+        "text": "Both bombard the sample with high-energy electrons",
+        "why": "That is electron-impact ionization, which causes heavy fragmentation."
+      },
+      {
+        "text": "Both remove an electron from the sample to give cation radicals",
+        "why": "Both add protons to the sample, giving variably protonated molecules, M + H_n^{n+}."
+      },
+      {
+        "text": "Both sort the ions they form with a strong magnetic field",
+        "why": "ESI and MALDI are ionization methods. They are typically linked to a time-of-flight analyzer, not a magnetic sector."
+      }
+    ],
+    "explanation": "Both ESI and MALDI are soft ionization methods that produce charged molecules with little fragmentation, even for sensitive biological samples of very high molecular weight."
+  },
+  {
+    "id": "oc12-esi",
+    "type": "multiple-choice",
+    "prompt": "In an electrospray ionization (ESI) source, how do the sample molecules become charged?",
+    "choices": [
+      {
+        "text": "They gain protons from charged solvent molecules in the droplets",
+        "correct": true
+      },
+      {
+        "text": "A laser ionizes a matrix compound, which then protonates them",
+        "why": "That describes MALDI, where the sample is adsorbed onto a matrix such as 2,5-dihydroxybenzoic acid."
+      },
+      {
+        "text": "A beam of high-energy electrons knocks out one of their electrons",
+        "why": "That is electron-impact ionization, which ESI avoids."
+      },
+      {
+        "text": "They lose protons to the solvent and become negative ions",
+        "why": "They gain one or more protons and become positive ions."
+      }
+    ],
+    "explanation": "In an ESI source, the sample solution is subjected to a high voltage as it exits a tube, which charges the droplets. The sample molecules gain one or more protons from charged solvent molecules, and the volatile solvent evaporates, leaving variably protonated sample molecules (M + H_n^{n+})."
+  },
+  {
+    "id": "oc12-maldi",
+    "type": "multiple-choice",
+    "prompt": "In a MALDI source, what is the role of a compound such as 2,5-dihydroxybenzoic acid?",
+    "choices": [
+      {
+        "text": "A laser ionizes it, and it then protonates the sample",
+        "correct": true
+      },
+      {
+        "text": "It is the solvent that evaporates from charged droplets",
+        "why": "Charged, evaporating droplets describe ESI. In MALDI the sample is adsorbed onto a matrix compound."
+      },
+      {
+        "text": "It is the detector surface that counts the separated ions",
+        "why": "It is part of the ionization source, not the detector."
+      },
+      {
+        "text": "It is a reference compound fragmented to calibrate masses",
+        "why": "The section describes it as the matrix the sample is adsorbed onto, which transfers energy and a proton to the sample."
+      }
+    ],
+    "explanation": "In a MALDI source, the sample is adsorbed onto a suitable matrix compound, such as 2,5-dihydroxybenzoic acid, which is ionized by a short burst of laser light. The matrix then transfers the energy to the sample and protonates it, forming M + H_n^{n+} ions."
+  },
+  {
+    "id": "oc12-tof-separation",
+    "type": "multiple-choice",
+    "prompt": "In a time-of-flight analyzer, every ion in a packet gets the same kick of energy. How are ions of different mass separated?",
+    "choices": [
+      {
+        "text": "Lighter ions move faster and reach the end sooner",
+        "correct": true
+      },
+      {
+        "text": "Heavier ions move faster because they carry more energy",
+        "why": "Every ion gets the same energy, E = mv^2/2, so the heavier ones move more slowly."
+      },
+      {
+        "text": "A magnetic field in the drift tube bends lighter ions more",
+        "why": "The drift tube is simply an electrically grounded metal tube. Ions separate by how long their flight takes."
+      },
+      {
+        "text": "An oscillating field lets only one m/z through at a time",
+        "why": "That describes a quadrupole mass analyzer."
+      }
+    ],
+    "explanation": "Each ion gets the same energy, E = mv^2/2, so it moves with velocity v = √(2E/m). Lighter molecules move faster and heavier ones slower, so in the drift tube they separate and take different amounts of time to complete their flight."
+  },
+  {
+    "id": "oc12-tof-speed-ratio",
+    "type": "numeric",
+    "prompt": "In a TOF analyzer every singly charged ion gets the same energy, so its velocity is v = √(2E/m). How many times faster does an ion of mass 1,000 amu move than an ion of mass 9,000 amu?",
+    "answer": 3,
+    "explanation": "v is proportional to 1/√m, so the speed ratio is √(9,000/1,000) = √9 = 3. The lighter ion moves 3 times as fast and finishes its flight first."
+  },
+  {
+    "id": "oc12-tof-protein-limit",
+    "type": "numeric",
+    "prompt": "With a time-of-flight instrument, protein samples up to how many atomic mass units can be separated?",
+    "answer": 100000,
+    "unit": "amu",
+    "explanation": "The TOF technique is considerably more sensitive than the magnetic-sector alternative: protein samples of up to 100 kilodaltons (100,000 amu) can be separated."
+  },
+  {
+    "id": "oc12-tof-accuracy",
+    "type": "numeric",
+    "prompt": "Protein samples up to 100,000 amu can be separated by a TOF instrument with a mass accuracy of how many parts per million (ppm)?",
+    "answer": 3,
+    "unit": "ppm",
+    "explanation": "Protein samples of up to 100 kilodaltons (100,000 amu) can be separated with a mass accuracy of 3 ppm."
+  },
+  {
+    "id": "oc12-dalton",
+    "type": "multiple-choice",
+    "prompt": "Biochemists usually report masses in daltons (Da). How does a dalton compare with an atomic mass unit?",
+    "choices": [
+      {
+        "text": "They are equivalent: 1 Da = 1 amu",
+        "correct": true
+      },
+      {
+        "text": "1 Da = 1000 amu",
+        "why": "1000 amu is a kilodalton. The dalton and the amu are the same size."
+      },
+      {
+        "text": "1 Da is the mass of one protein molecule",
+        "why": "A dalton is a unit of mass equal to 1 amu; a protein such as lysozyme has a mass of thousands of daltons."
+      },
+      {
+        "text": "1 Da = 100 amu",
+        "why": "The two units are the same size: 1 dalton = 1 amu."
+      }
+    ],
+    "explanation": "Biochemists generally use the unit dalton, abbreviated Da, instead of amu, although the two are equivalent (1 dalton = 1 amu)."
+  },
+  {
+    "id": "oc12-lysozyme-peaks",
+    "type": "multiple-choice",
+    "prompt": "The MALDI–TOF spectrum of chicken egg-white lysozyme shows peaks at 14,306.7578 and 28,614.2188 daltons. What do these peaks represent?",
+    "choices": [
+      {
+        "text": "The protonated protein, M + H^+, and a dimer of the protein",
+        "correct": true
+      },
+      {
+        "text": "The molecular ion, M^+, and its M + 2 isotope peak",
+        "why": "An M + 2 peak would be only 2 units higher. 28,614 is about twice 14,306."
+      },
+      {
+        "text": "The protein with one added proton and with two added protons",
+        "why": "Adding protons raises the charge, which puts the extra protonated species at lower m/z values, not at about double."
+      },
+      {
+        "text": "Two large fragments formed when the protein breaks apart",
+        "why": "Fragments would be lighter than the protein. The peak at 28,614 is heavier, about twice the protein's mass."
+      }
+    ],
+    "explanation": "In the MALDI–TOF spectrum of lysozyme (MW = 14,306.7578 Da), the peak at 14,306.7578 daltons is the monoprotonated protein, M + H^+, and the peak at 28,614.2188 daltons is an impurity formed by dimerization of the protein. Other peaks at lower m/z values are various protonated species, M + H_n^{n+}."
+  }
+]

@@ -1,0 +1,369 @@
+[
+  {
+    "id": "oc13-why-different-frequencies",
+    "type": "multiple-choice",
+    "prompt": "Why don't all the ^1H nuclei in a molecule absorb at exactly the same frequency?",
+    "choices": [
+      {
+        "text": "Each is shielded to a slightly different extent by the electrons around it",
+        "correct": true
+      },
+      {
+        "text": "Some ^1H nuclei have a spin and others don't",
+        "why": "Every ^1H nucleus has a spin. The differences come from shielding by electrons."
+      },
+      {
+        "text": "Hydrogen atoms in different places have different masses",
+        "why": "All ^1H nuclei are the same. What differs is each one's electronic environment."
+      },
+      {
+        "text": "The applied field is stronger at one end of the molecule than the other",
+        "why": "The applied field is the same throughout. The local fields set up by electrons differ from nucleus to nucleus."
+      }
+    ],
+    "explanation": "Electrons moving around nuclei set up tiny local magnetic fields. Each chemically distinct nucleus is in a slightly different electronic environment, so it is shielded to a slightly different extent, feels a slightly different effective field and gives its own NMR signal."
+  },
+  {
+    "id": "oc13-effective-field",
+    "type": "multiple-choice",
+    "prompt": "How does the effective magnetic field felt by a nucleus in a molecule compare with the applied field?",
+    "choices": [
+      {
+        "text": "It is a bit weaker, because local fields from the electrons oppose the applied field",
+        "correct": true
+      },
+      {
+        "text": "It is a bit stronger, because local fields from the electrons add to the applied field",
+        "why": "The local fields act in opposition to the applied field: B_effective = B_applied − B_local."
+      },
+      {
+        "text": "It is exactly the same as the applied field",
+        "why": "If it were, every ^1H would absorb at the same frequency. The electrons' local fields weaken it slightly."
+      },
+      {
+        "text": "It is a bit weaker, because the nucleus's own spin cancels part of it",
+        "why": "The weakening comes from the local fields of the surrounding electrons, not from the nucleus itself."
+      }
+    ],
+    "explanation": "When a field is applied, the electrons around a nucleus set up small local fields that oppose it, so B_effective = B_applied − B_local. The nucleus is shielded from the full effect of the applied field."
+  },
+  {
+    "id": "oc13-shielding-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean to say that a nucleus is shielded?",
+    "choices": [
+      {
+        "text": "Its surrounding electrons protect it from the full effect of the applied field",
+        "correct": true
+      },
+      {
+        "text": "Neighboring atoms block the rf radiation from reaching it",
+        "why": "Shielding is about the magnetic field the nucleus feels, and it is caused by electrons."
+      },
+      {
+        "text": "Its spin can't be flipped at any frequency",
+        "why": "Shielded nuclei still come into resonance. They just feel a slightly weaker effective field."
+      },
+      {
+        "text": "It feels a field stronger than the applied field",
+        "why": "A shielded nucleus feels a weaker field, because the electrons' local fields oppose the applied one."
+      }
+    ],
+    "explanation": "Nuclei experience shielding from the full effect of the applied field by the surrounding electrons. The effective field they feel is B_applied − B_local."
+  },
+  {
+    "id": "oc13-methyl-acetate-c13-peaks",
+    "type": "numeric",
+    "prompt": "How many peaks does the ^13C NMR spectrum of methyl acetate, CH3CO2CH3, show?",
+    "answer": 3,
+    "unit": "peaks",
+    "explanation": "Methyl acetate has three chemically distinct carbons: the CH3 bonded to C=O, the C=O carbon and the –OCH3 carbon. Each gives one peak in the ^13C spectrum (Figure 13.2.1b)."
+  },
+  {
+    "id": "oc13-methyl-acetate-h1-peaks",
+    "type": "numeric",
+    "prompt": "Methyl acetate, CH3CO2CH3, has six hydrogens. How many peaks does its ^1H NMR spectrum show?",
+    "answer": 2,
+    "unit": "peaks",
+    "explanation": "There are only two peaks: one for the three CH3C=O hydrogens and one for the three –OCH3 hydrogens. The hydrogens within each methyl group are equivalent, but the two methyl groups are not."
+  },
+  {
+    "id": "oc13-methyl-acetate-why-two",
+    "type": "multiple-choice",
+    "prompt": "Methyl acetate, CH3CO2CH3, has six hydrogens, but its ^1H NMR spectrum shows only two peaks. Why?",
+    "choices": [
+      {
+        "text": "The three hydrogens in each methyl group are equivalent, but the two methyl groups are not",
+        "correct": true
+      },
+      {
+        "text": "All six hydrogens are equivalent, and their peak is split in two",
+        "why": "The CH3C=O and –OCH3 groups are in different environments, so they are not equivalent and absorb at different positions."
+      },
+      {
+        "text": "Only two of the six hydrogens have a nuclear spin",
+        "why": "Every ^1H nucleus has a spin. Equivalent hydrogens simply absorb at the same position."
+      },
+      {
+        "text": "The hydrogens of each methyl group are all different but overlap",
+        "why": "Within one methyl group the three hydrogens have the same electronic environment, so they are truly equivalent."
+      }
+    ],
+    "explanation": "Because the three hydrogens in each methyl group have the same electronic environment, they are shielded to the same extent and are equivalent. Chemically equivalent nuclei always show the same absorption. The two methyl groups themselves are not equivalent, so they give two peaks."
+  },
+  {
+    "id": "oc13-nmr-maps-framework",
+    "type": "multiple-choice",
+    "prompt": "Since each chemically distinct ^1H or ^13C nucleus gives its own signal, what does an NMR spectrum effectively map?",
+    "choices": [
+      {
+        "text": "The carbon–hydrogen framework of the molecule",
+        "correct": true
+      },
+      {
+        "text": "The vibrations of the molecule's bonds",
+        "why": "Bond vibrations are what IR spectroscopy measures."
+      },
+      {
+        "text": "The mass of the molecule and of its fragments",
+        "why": "That is what mass spectrometry measures."
+      },
+      {
+        "text": "Only the oxygen and nitrogen atoms in the molecule",
+        "why": "NMR as described here looks at ^1H and ^13C nuclei, so it maps carbons and hydrogens."
+      }
+    ],
+    "explanation": "Each chemically distinct ^13C or ^1H nucleus gives a distinct signal, so an NMR spectrum effectively maps the carbon–hydrogen framework of an organic molecule. With practice, you can read this map for structural information."
+  },
+  {
+    "id": "oc13-spectrum-axes",
+    "type": "multiple-choice",
+    "prompt": "What do the horizontal and vertical axes of an NMR spectrum show?",
+    "choices": [
+      {
+        "text": "Horizontal: effective field strength felt by the nuclei; vertical: intensity of rf absorption",
+        "correct": true
+      },
+      {
+        "text": "Horizontal: intensity of rf absorption; vertical: effective field strength",
+        "why": "The axes are swapped. Field strength runs along the horizontal axis."
+      },
+      {
+        "text": "Horizontal: wavenumber; vertical: percent transmittance",
+        "why": "Those are the axes of an IR spectrum."
+      },
+      {
+        "text": "Horizontal: mass-to-charge ratio; vertical: relative abundance",
+        "why": "Those are the axes of a mass spectrum."
+      }
+    ],
+    "explanation": "In an NMR spectrum the horizontal axis shows the effective field strength felt by the nuclei, and the vertical axis shows the intensity of absorption of rf energy. Each peak corresponds to a chemically distinct ^1H or ^13C nucleus."
+  },
+  {
+    "id": "oc13-zero-line-position",
+    "type": "multiple-choice",
+    "prompt": "Where is the zero-absorption line on an NMR spectrum, compared with an IR spectrum?",
+    "choices": [
+      {
+        "text": "At the bottom in NMR, but at the top in IR",
+        "correct": true
+      },
+      {
+        "text": "At the top in NMR, but at the bottom in IR",
+        "why": "That's reversed. NMR peaks rise up from a baseline at the bottom."
+      },
+      {
+        "text": "At the bottom in both",
+        "why": "IR spectra have the zero-absorption line at the top."
+      },
+      {
+        "text": "At the top in both",
+        "why": "NMR spectra have the zero-absorption line at the bottom."
+      }
+    ],
+    "explanation": "NMR spectra are formatted with the zero-absorption line at the bottom, whereas IR spectra have it at the top (Section 12.5)."
+  },
+  {
+    "id": "oc13-h1-c13-recorded-separately",
+    "type": "multiple-choice",
+    "prompt": "Why can't the ^1H and ^13C NMR spectra of a compound be observed at the same time on the same spectrometer?",
+    "choices": [
+      {
+        "text": "Different amounts of energy are needed to spin-flip the two kinds of nuclei",
+        "correct": true
+      },
+      {
+        "text": "^13C nuclei have a spin only when no hydrogens are present",
+        "why": "^13C always has a spin. The two spectra are run separately because they need different energies."
+      },
+      {
+        "text": "The large ^1H signals would hide the ^13C signals",
+        "why": "The reason given is energy: ^1H and ^13C need different amounts of energy for a spin-flip."
+      },
+      {
+        "text": "The two kinds of spectra need different solvents",
+        "why": "Both are usually run in CDCl_3. The issue is the different energy each nucleus needs."
+      }
+    ],
+    "explanation": "^1H and ^13C spectra can't be observed simultaneously on the same spectrometer, because different amounts of energy are required to spin-flip the different kinds of nuclei. The two spectra must be recorded separately."
+  },
+  {
+    "id": "oc13-nmr-solvent",
+    "type": "multiple-choice",
+    "prompt": "What solvent is usually used for an NMR sample, and why is it suitable?",
+    "choices": [
+      {
+        "text": "Deuteriochloroform, CDCl_3, because it has no hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Chloroform, CHCl3, because its hydrogen gives a handy reference peak",
+        "why": "The solvent is chosen to have no hydrogens. A small amount of TMS is added to give the reference peak."
+      },
+      {
+        "text": "Water, because it dissolves most organic compounds",
+        "why": "Water has hydrogens of its own. The usual solvent is CDCl_3, which has none."
+      },
+      {
+        "text": "Tetramethylsilane, (CH3)4Si, because it has no hydrogens",
+        "why": "TMS has 12 hydrogens. Only a small amount is added, as a calibration peak."
+      }
+    ],
+    "explanation": "An organic sample is dissolved in a suitable solvent, usually deuteriochloroform (CDCl_3), which has no hydrogens, and placed in a thin glass tube between the poles of a magnet."
+  },
+  {
+    "id": "oc13-basic-spectrometer-operation",
+    "type": "multiple-choice",
+    "prompt": "In the basic NMR spectrometer described in this section, how is the spectrum recorded?",
+    "choices": [
+      {
+        "text": "The rf frequency is held constant while the strength of the applied field is varied",
+        "correct": true
+      },
+      {
+        "text": "The field is held constant while the rf frequency is slowly scanned",
+        "why": "In the basic instrument described, it's the frequency that stays constant and the field that is varied."
+      },
+      {
+        "text": "The field is switched off and the rf frequency is varied",
+        "why": "Without a field, the two spin states have the same energy, so there is nothing to absorb."
+      },
+      {
+        "text": "The field is held constant and the sample is irradiated with infrared light",
+        "why": "NMR uses radiofrequency energy, not infrared light."
+      }
+    ],
+    "explanation": "The sample sits in a strong field and is irradiated with rf energy. If the rf frequency is held constant and the field strength is varied, each nucleus comes into resonance at a slightly different field strength. A detector monitors the absorption, and the amplified signal is displayed as a peak."
+  },
+  {
+    "id": "oc13-ir-nmr-timescales",
+    "type": "multiple-choice",
+    "prompt": "About how long do the IR and NMR absorption processes take?",
+    "choices": [
+      {
+        "text": "IR: about 10^−13 s; NMR: about 10^−3 s",
+        "correct": true
+      },
+      {
+        "text": "IR: about 10^−3 s; NMR: about 10^−13 s",
+        "why": "That's swapped. IR absorption is essentially instantaneous; NMR is much slower."
+      },
+      {
+        "text": "Both take about 10^−13 s",
+        "why": "NMR is much slower than IR, about 10^−3 s."
+      },
+      {
+        "text": "Both take about 10^−3 s",
+        "why": "IR absorption is essentially instantaneous, about 10^−13 s."
+      }
+    ],
+    "explanation": "The absorption of IR energy is essentially instantaneous (about 10^−13 s), but the NMR process is much slower (about 10^−3 s)."
+  },
+  {
+    "id": "oc13-averaged-spectrum-rate",
+    "type": "numeric",
+    "prompt": "Two species are interconverting in an NMR sample. NMR records only a single, averaged spectrum if they interconvert faster than how many times per second?",
+    "answer": 1000,
+    "unit": "times per second",
+    "explanation": "If two species interconvert faster than 10^3 (1000) times per second, NMR records a single, averaged spectrum rather than separate spectra of the two species."
+  },
+  {
+    "id": "oc13-camera-analogy",
+    "type": "multiple-choice",
+    "prompt": "In the camera analogy for IR and NMR, what is recorded for a sample of two rapidly interconverting species?",
+    "choices": [
+      {
+        "text": "IR, the fast camera, records both species; NMR, the slow camera, records one averaged spectrum",
+        "correct": true
+      },
+      {
+        "text": "NMR records both species; IR records one averaged spectrum",
+        "why": "It's the other way around. IR freezes the action; NMR gives a blurred, time-averaged picture."
+      },
+      {
+        "text": "Both techniques record one averaged spectrum",
+        "why": "IR acts like a fast camera and records the spectrum of both species."
+      },
+      {
+        "text": "Both techniques record both species separately",
+        "why": "NMR is too slow to separate species that interconvert faster than about 10^3 times per second."
+      }
+    ],
+    "explanation": "IR is like a camera with a very fast shutter: it freezes the action and records the spectrum of both species. NMR is like a slow shutter: it takes a blurred, time-averaged picture and shows a single averaged spectrum."
+  },
+  {
+    "id": "oc13-cyclohexane-25c",
+    "type": "numeric",
+    "prompt": "How many ^1H NMR absorptions does cyclohexane show at 25 °C?",
+    "answer": 1,
+    "explanation": "At room temperature the cyclohexane ring-flip is so fast that axial and equatorial hydrogens can't be distinguished by NMR. Only a single, averaged absorption is seen at 25 °C."
+  },
+  {
+    "id": "oc13-cyclohexane-minus-90c",
+    "type": "numeric",
+    "prompt": "At −90 °C, how many ^1H NMR absorption peaks does cyclohexane show?",
+    "answer": 2,
+    "unit": "peaks",
+    "explanation": "At −90 °C the ring-flip is slow enough that two peaks appear: one for the six axial hydrogens and one for the six equatorial hydrogens."
+  },
+  {
+    "id": "oc13-ring-flip-activation-energy",
+    "type": "numeric",
+    "prompt": "From the temperature and the rate at which its NMR signal blurring begins, what activation energy is calculated for the cyclohexane ring-flip, in kJ/mol?",
+    "answer": 45,
+    "unit": "kJ/mol",
+    "explanation": "Knowing the temperature and the rate at which signal blurring begins, the activation energy of the cyclohexane ring-flip works out to 45 kJ/mol (10.8 kcal/mol). This is how NMR can measure the rates and activation energies of very fast processes."
+  },
+  {
+    "id": "oc13-chloropropene-proton-kinds",
+    "type": "numeric",
+    "prompt": "How many kinds of protons does 2-chloropropene, CH2=C(Cl)CH3, show in its ^1H NMR spectrum?",
+    "answer": 3,
+    "unit": "kinds",
+    "explanation": "2-Chloropropene shows three kinds of protons: the three methyl protons, the =CH2 proton cis to the methyl group and the =CH2 proton cis to the chlorine (Exercise 13.2.1)."
+  },
+  {
+    "id": "oc13-chloropropene-why-three",
+    "type": "multiple-choice",
+    "prompt": "2-Chloropropene, CH2=C(Cl)CH3, shows signals for three kinds of protons, not two. Why?",
+    "choices": [
+      {
+        "text": "Its two =CH2 protons are nonequivalent: one is cis to the methyl group and the other cis to the chlorine",
+        "correct": true
+      },
+      {
+        "text": "Its three methyl protons are not all equivalent",
+        "why": "The three methyl hydrogens share the same environment and give one signal."
+      },
+      {
+        "text": "The chlorine atom gives its own signal in the ^1H spectrum",
+        "why": "A ^1H spectrum shows only protons. The extra signal comes from the two different =CH2 protons."
+      },
+      {
+        "text": "One =CH2 proton is equivalent to the methyl protons",
+        "why": "A vinylic proton and a methyl proton are in different environments; the two =CH2 protons also differ from each other."
+      }
+    ],
+    "explanation": "The vinylic C–H protons are nonequivalent: one =CH2 hydrogen is cis to the methyl group and the other is cis to the chlorine. Together with the methyl group, that makes three kinds of protons (Exercise 13.2.1)."
+  }
+]

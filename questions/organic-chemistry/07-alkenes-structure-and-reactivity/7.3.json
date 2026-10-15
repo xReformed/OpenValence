@@ -1,0 +1,465 @@
+[
+  {
+    "id": "oc7-name-parent-chain",
+    "type": "multiple-choice",
+    "prompt": "When naming an alkene, which carbon chain is chosen as the parent?",
+    "choices": [
+      {
+        "text": "The longest carbon chain that contains the double bond",
+        "correct": true
+      },
+      {
+        "text": "The longest carbon chain in the molecule, whether or not it contains the double bond",
+        "why": "The parent must contain the double bond, even if a longer chain exists elsewhere. That's why 2-ethyl-1-pentene is a pentene, not a hexane."
+      },
+      {
+        "text": "The chain that carries the most substituents",
+        "why": "Step 1 picks the longest chain containing the double bond; the number of substituents doesn't decide it."
+      },
+      {
+        "text": "The shortest chain that contains the double bond",
+        "why": "Step 1 asks for the longest chain that contains the double bond."
+      }
+    ],
+    "explanation": "Step 1: find the longest carbon chain containing the double bond, and name the compound with the suffix -ene. In 2-ethyl-1-pentene a six-carbon chain exists, but it doesn't contain the double bond, so the compound is named as a pentene."
+  },
+  {
+    "id": "oc7-name-ethylpentene",
+    "type": "multiple-choice",
+    "prompt": "What is the name of CH2=C(CH2CH3)CH2CH2CH3?",
+    "choices": [
+      {
+        "text": "2-Ethyl-1-pentene",
+        "correct": true
+      },
+      {
+        "text": "3-Methylenehexane",
+        "why": "That name uses the six-carbon chain, which doesn't contain the double bond. The parent must be the five-carbon chain that does."
+      },
+      {
+        "text": "2-Propyl-1-butene",
+        "why": "The longest chain containing the double bond runs through the propyl group, giving five carbons, not four."
+      },
+      {
+        "text": "4-Ethyl-4-pentene",
+        "why": "Number from the end nearer the double bond, so the double-bond carbons get the lowest numbers, C1 and C2."
+      }
+    ],
+    "explanation": "The longest chain containing the double bond is CH2=C–CH2CH2CH3, five carbons, so the parent is pentene. Numbering from the end nearer the double bond puts it at C1 and the ethyl group at C2: 2-ethyl-1-pentene."
+  },
+  {
+    "id": "oc7-name-numbering-rule",
+    "type": "multiple-choice",
+    "prompt": "How do you number the parent chain of an open-chain alkene?",
+    "choices": [
+      {
+        "text": "From the end nearer the double bond, or, if it is equidistant from both ends, from the end nearer the first branch point",
+        "correct": true
+      },
+      {
+        "text": "From the end nearer the first branch point, wherever the double bond is",
+        "why": "The double bond comes first: it must get the lowest possible numbers. The branch point only breaks a tie."
+      },
+      {
+        "text": "From the end that gives the substituents the lowest numbers, whatever that does to the double bond",
+        "why": "The double-bond carbons are numbered as low as possible first; substituents only decide when the double bond is equidistant."
+      },
+      {
+        "text": "From the end nearer the double bond, or, if it is equidistant, so the substituents come in alphabetical order",
+        "why": "When the double bond is equidistant, start at the end nearer the first branch point. Alphabetical order is only for listing substituents in the name."
+      }
+    ],
+    "explanation": "Step 2: begin at the end nearer the double bond or, if the double bond is equidistant from the two ends, begin at the end nearer the first branch point. This ensures the double-bond carbons receive the lowest possible numbers."
+  },
+  {
+    "id": "oc7-name-hexene-locant",
+    "type": "numeric",
+    "prompt": "In the IUPAC name of CH3CH2CH2CH=CHCH3, what number gives the position of the double bond?",
+    "answer": 2,
+    "explanation": "Number from the end nearer the double bond: the CH3 on the right is C1, and the double bond runs from C2 to C3. Only the first alkene carbon's number is used, so the compound is 2-hexene, not 4-hexene."
+  },
+  {
+    "id": "oc7-name-methylhexene-equidistant",
+    "type": "multiple-choice",
+    "prompt": "What is the name of (CH3)2CHCH=CHCH2CH3?",
+    "choices": [
+      {
+        "text": "2-Methyl-3-hexene",
+        "correct": true
+      },
+      {
+        "text": "5-Methyl-3-hexene",
+        "why": "The double bond is at C3 from either end, so start at the end nearer the first branch point. That puts the methyl at C2, not C5."
+      },
+      {
+        "text": "2-Methyl-4-hexene",
+        "why": "Counting from the methyl end, the double bond runs from C3 to C4, so its locant is 3."
+      },
+      {
+        "text": "1,1-Dimethyl-2-pentene",
+        "why": "The longest chain containing the double bond runs through one of the methyl groups, giving six carbons: a hexene."
+      }
+    ],
+    "explanation": "The parent chain has six carbons, and the double bond lies between C3 and C4 counting from either end. Since it's equidistant, start at the end nearer the first branch point: the methyl is on C2. The name is 2-methyl-3-hexene."
+  },
+  {
+    "id": "oc7-name-methylpentene",
+    "type": "multiple-choice",
+    "prompt": "What is the name of (CH3)2CHCH2CH=CH2?",
+    "choices": [
+      {
+        "text": "4-Methyl-1-pentene",
+        "correct": true
+      },
+      {
+        "text": "2-Methyl-4-pentene",
+        "why": "Numbering must start at the end nearer the double bond, so the double-bond carbons get the lowest numbers, C1 and C2."
+      },
+      {
+        "text": "4,4-Dimethyl-1-butene",
+        "why": "One of the two methyls on that carbon is part of the longest chain containing the double bond, so the parent is a pentene with one methyl."
+      },
+      {
+        "text": "4-Methyl-2-pentene",
+        "why": "That would be (CH3)2CHCH=CHCH3. Here the double bond is at the end of the chain, between C1 and C2."
+      }
+    ],
+    "explanation": "The longest chain containing the double bond has five carbons. Number from the CH2= end so the double bond gets C1 and C2; the methyl then sits on C4: 4-methyl-1-pentene."
+  },
+  {
+    "id": "oc7-name-methylhexene-branch",
+    "type": "multiple-choice",
+    "prompt": "What is the name of CH3CH2CH=C(CH3)CH2CH3?",
+    "choices": [
+      {
+        "text": "3-Methyl-3-hexene",
+        "correct": true
+      },
+      {
+        "text": "4-Methyl-3-hexene",
+        "why": "The double bond is at C3 from either end, so number from the end nearer the branch point. That gives the methyl C3, not C4."
+      },
+      {
+        "text": "3-Ethyl-2-pentene",
+        "why": "That uses a five-carbon chain. The longest chain containing the double bond has six carbons."
+      },
+      {
+        "text": "3-Methyl-2-hexene",
+        "why": "That would be CH3CH=C(CH3)CH2CH2CH3. Here the double bond starts at C3."
+      }
+    ],
+    "explanation": "The six-carbon chain has its double bond between C3 and C4 counting from either end. Because it's equidistant, start at the end nearer the methyl branch: methyl on C3, double bond at C3. The name is 3-methyl-3-hexene."
+  },
+  {
+    "id": "oc7-name-trimethylpentene",
+    "type": "multiple-choice",
+    "prompt": "What is the name of CH2=CHCH(CH3)C(CH3)3?",
+    "choices": [
+      {
+        "text": "3,4,4-Trimethyl-1-pentene",
+        "correct": true
+      },
+      {
+        "text": "2,2,3-Trimethyl-4-pentene",
+        "why": "That numbers from the wrong end. The double bond must get the lowest number, so start at the CH2= end."
+      },
+      {
+        "text": "3-tert-Butyl-1-butene",
+        "why": "The longest chain containing the double bond runs into the tert-butyl group, giving five carbons, not four."
+      },
+      {
+        "text": "3,4,4-Trimethyl-1-hexene",
+        "why": "The main chain has five carbons: C1 and C2 of the double bond, C3, C4, and one methyl of C4 as C5. The other three methyls are substituents."
+      }
+    ],
+    "explanation": "The longest chain containing the double bond is CH2=CH–CH–C–CH3, five carbons. Numbering from the CH2= end gives the double bond C1, one methyl on C3, and two methyls on C4: 3,4,4-trimethyl-1-pentene."
+  },
+  {
+    "id": "oc7-name-dimethyloctadiene",
+    "type": "multiple-choice",
+    "prompt": "What is the name of (CH3)2CHCH=CHCH(CH3)CH=CHCH3?",
+    "choices": [
+      {
+        "text": "4,7-Dimethyl-2,5-octadiene",
+        "correct": true
+      },
+      {
+        "text": "2,5-Dimethyl-3,6-octadiene",
+        "why": "That numbers from the isopropyl end, giving the double bonds 3 and 6. From the other end they get the lower numbers 2 and 5."
+      },
+      {
+        "text": "4,7-Dimethyl-2,5-octene",
+        "why": "With two double bonds, the suffix must be -diene, with a locant for each double bond."
+      },
+      {
+        "text": "4,7-Dimethyl-2,6-octadiene",
+        "why": "Counting from the CH3CH= end, the second double bond runs from C5 to C6, so its locant is 5."
+      }
+    ],
+    "explanation": "The eight-carbon chain contains both double bonds. Numbering from the CH3CH= end gives them C2 and C5 (from the other end they'd be C3 and C6). The methyls are then on C4 and C7, and two double bonds take the suffix -diene: 4,7-dimethyl-2,5-octadiene."
+  },
+  {
+    "id": "oc7-name-locant-older",
+    "type": "multiple-choice",
+    "prompt": "In the naming style this book uses, where is the number for the double bond placed?",
+    "choices": [
+      {
+        "text": "Directly before the parent name, as in 2-butene",
+        "correct": true
+      },
+      {
+        "text": "Immediately before the -ene suffix, as in but-2-ene",
+        "why": "That is the 1993 IUPAC recommendation, which hasn't been widely accepted in the United States. The book stays with the older style."
+      },
+      {
+        "text": "After the full name, as in butene-2",
+        "why": "Neither system puts the locant at the end. The book writes it directly before the parent name."
+      },
+      {
+        "text": "Nowhere, because the double-bond position is never given in a name",
+        "why": "It's left out only for cycloalkenes with one double bond, which is always between C1 and C2. Open-chain alkenes need it."
+      }
+    ],
+    "explanation": "Step 3: give the number of the first alkene carbon directly before the parent name, as in 2-butene. IUPAC changed its recommendation in 1993 to place the locant immediately before the -ene suffix (but-2-ene), but that change hasn't been widely accepted in the United States, so the book uses the older names."
+  },
+  {
+    "id": "oc7-name-newer-system",
+    "type": "multiple-choice",
+    "prompt": "Under the 1993 IUPAC recommendations, what is the name of the compound the book calls 2,5-dimethyl-3-heptene?",
+    "choices": [
+      {
+        "text": "2,5-Dimethylhept-3-ene",
+        "correct": true
+      },
+      {
+        "text": "2,5-Dimethyl-3-heptene",
+        "why": "That is the older name, which the book uses. The newer system moves the double-bond locant to just before -ene."
+      },
+      {
+        "text": "3,6-Dimethylhept-4-ene",
+        "why": "Changing the naming style doesn't change the numbering; the double bond still gets the lowest number, 3."
+      },
+      {
+        "text": "2,5-Dimethylheptene-3",
+        "why": "The newer system places the locant immediately before the -ene suffix, not after it: hept-3-ene."
+      }
+    ],
+    "explanation": "The 1993 rules place the locant immediately before the -ene suffix, so 2,5-dimethyl-3-heptene becomes 2,5-dimethylhept-3-ene. Likewise 3-propyl-1,4-hexadiene becomes 3-propylhexa-1,4-diene."
+  },
+  {
+    "id": "oc7-name-butadiene",
+    "type": "multiple-choice",
+    "prompt": "What is the name of CH2=CHCH=CH2?",
+    "choices": [
+      {
+        "text": "1,3-Butadiene",
+        "correct": true
+      },
+      {
+        "text": "1,3-Butene",
+        "why": "With more than one double bond, give a locant for each and use the suffix -diene."
+      },
+      {
+        "text": "2,4-Butadiene",
+        "why": "Use the number of the first carbon of each double bond: the double bonds start at C1 and C3."
+      },
+      {
+        "text": "1,3-Dibutene",
+        "why": "Two double bonds are shown by the suffix -diene, not by a di- prefix on the parent."
+      }
+    ],
+    "explanation": "If more than one double bond is present, indicate the position of each and use the suffix -diene, -triene, and so on. The four-carbon chain has double bonds starting at C1 and C3: 1,3-butadiene."
+  },
+  {
+    "id": "oc7-name-isoprene",
+    "type": "multiple-choice",
+    "prompt": "Isoprene is CH2=C(CH3)CH=CH2. What is its systematic name?",
+    "choices": [
+      {
+        "text": "2-Methyl-1,3-butadiene",
+        "correct": true
+      },
+      {
+        "text": "3-Methyl-1,3-butadiene",
+        "why": "The double bonds get 1 and 3 from either end, so start at the end nearer the branch point: the methyl is on C2."
+      },
+      {
+        "text": "2-Methyl-1,3-butene",
+        "why": "Two double bonds call for the suffix -diene."
+      },
+      {
+        "text": "2-Methyl-1,3-pentadiene",
+        "why": "The chain containing both double bonds has four carbons; the fifth carbon is the methyl substituent."
+      }
+    ],
+    "explanation": "The four-carbon chain contains both double bonds, at C1 and C3 from either end. The tie is broken by the methyl branch, which then sits on C2: 2-methyl-1,3-butadiene, commonly called isoprene (Table 7.3.1)."
+  },
+  {
+    "id": "oc7-name-isobutylene",
+    "type": "multiple-choice",
+    "prompt": "What is the common name of 2-methylpropene, (CH3)2C=CH2?",
+    "choices": [
+      {
+        "text": "Isobutylene",
+        "correct": true
+      },
+      {
+        "text": "Isoprene",
+        "why": "Isoprene is 2-methyl-1,3-butadiene, a diene with five carbons."
+      },
+      {
+        "text": "Propylene",
+        "why": "Propylene is propene, CH3CH=CH2, with no methyl branch."
+      },
+      {
+        "text": "Ethylene",
+        "why": "Ethylene is ethene, H2C=CH2."
+      }
+    ],
+    "explanation": "Table 7.3.1 lists common names recognized by IUPAC: ethylene (ethene), propylene (propene), isobutylene (2-methylpropene), and isoprene (2-methyl-1,3-butadiene)."
+  },
+  {
+    "id": "oc7-name-ethylene-accepted",
+    "type": "multiple-choice",
+    "prompt": "Why is H2C=CH2 usually called ethylene rather than ethene?",
+    "choices": [
+      {
+        "text": "The name ethylene has been used for so long that IUPAC accepts it",
+        "correct": true
+      },
+      {
+        "text": "Ethene is the name of the H2C=CH– substituent",
+        "why": "That substituent is called a vinyl group. Ethene is the systematic name of H2C=CH2 itself."
+      },
+      {
+        "text": "The -ene suffix is used only for alkenes with three or more carbons",
+        "why": "The -ene suffix applies to any alkene; ethene is the systematic name. Ethylene is a historical name that IUPAC keeps."
+      },
+      {
+        "text": "Ethylene is the newer 1993 IUPAC name",
+        "why": "The 1993 change concerned where the double-bond locant goes. Ethylene is an old name that is firmly entrenched."
+      }
+    ],
+    "explanation": "The alkene derived from ethane should be called ethene, but the name ethylene has been used for so long that it is accepted by IUPAC. A few other common names, such as propylene, isobutylene, and isoprene, are also recognized (Table 7.3.1)."
+  },
+  {
+    "id": "oc7-allyl-group",
+    "type": "multiple-choice",
+    "prompt": "What is the H2C=CHCH2– substituent called?",
+    "choices": [
+      {
+        "text": "An allyl group",
+        "correct": true
+      },
+      {
+        "text": "A vinyl group",
+        "why": "A vinyl group is H2C=CH–, attached directly through a double-bond carbon."
+      },
+      {
+        "text": "A methylene group",
+        "why": "A methylene group is =CH2, attached by a double bond."
+      },
+      {
+        "text": "A propyl group",
+        "why": "A propyl group, CH3CH2CH2–, has no double bond."
+      }
+    ],
+    "explanation": "The book names three alkene-related substituents: =CH2 is a methylene group, H2C=CH– is a vinyl group, and H2C=CHCH2– is an allyl group."
+  },
+  {
+    "id": "oc7-name-cycloalkene-rule",
+    "type": "multiple-choice",
+    "prompt": "How is a cycloalkene numbered?",
+    "choices": [
+      {
+        "text": "So the double bond is C1–C2 and the first substituent gets the lowest possible number",
+        "correct": true
+      },
+      {
+        "text": "So the first substituent is on C1, wherever the double bond happens to be",
+        "why": "The double bond comes first: it must be between C1 and C2. Then the substituents get the lowest numbers possible."
+      },
+      {
+        "text": "From any ring carbon, with the double bond's locant always written in the name",
+        "why": "The double bond is always between C1 and C2, so its position doesn't need to be given in the name."
+      },
+      {
+        "text": "So the double bond is between C2 and C3, leaving C1 for the first substituent",
+        "why": "The double bond is always placed between C1 and C2."
+      }
+    ],
+    "explanation": "With no chain end to start from, number a cycloalkene so the double bond is between C1 and C2 and the first substituent has as low a number as possible. Because the double bond is always between C1 and C2, its position isn't given in the name."
+  },
+  {
+    "id": "oc7-name-methylcyclohexene",
+    "type": "multiple-choice",
+    "prompt": "A cyclohexene ring carries a methyl group on one of its two double-bond carbons. What is the compound's name?",
+    "choices": [
+      {
+        "text": "1-Methylcyclohexene",
+        "correct": true
+      },
+      {
+        "text": "2-Methylcyclohexene",
+        "why": "Either double-bond carbon can be C1, so choose the numbering that gives the methyl the lower number, 1."
+      },
+      {
+        "text": "3-Methylcyclohexene",
+        "why": "C3 is a ring carbon next to the double bond, not a double-bond carbon. The methyl here is on a double-bond carbon."
+      },
+      {
+        "text": "Methylcyclohexane",
+        "why": "The ring still has a double bond, so the name ends in -ene."
+      }
+    ],
+    "explanation": "The double bond must be between C1 and C2. Making the methyl-bearing double-bond carbon C1 gives the substituent the lowest possible number: 1-methylcyclohexene."
+  },
+  {
+    "id": "oc7-name-dimethylcyclopentene",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentene ring has one methyl group on a double-bond carbon and a second methyl group on the ring carbon next to it, outside the double bond. What is the compound's name?",
+    "choices": [
+      {
+        "text": "1,5-Dimethylcyclopentene",
+        "correct": true
+      },
+      {
+        "text": "2,3-Dimethylcyclopentene",
+        "why": "That numbering puts the first methyl on C2. Making the methyl-bearing double-bond carbon C1 gives a lower first number."
+      },
+      {
+        "text": "1,2-Dimethylcyclopentene",
+        "why": "That would have both methyls on the double-bond carbons. Here the second methyl is on the ring carbon next to C1, outside the double bond."
+      },
+      {
+        "text": "1,3-Dimethylcyclopentene",
+        "why": "C3 is next to C2, the other double-bond carbon. The second methyl is next to C1, which makes it C5."
+      }
+    ],
+    "explanation": "The double bond is C1–C2. Put the methyl-bearing double-bond carbon at C1, so the first substituent gets the lowest number. Going around the ring through C2, C3, and C4 brings you to C5, the carbon next to C1 that carries the second methyl: 1,5-dimethylcyclopentene."
+  },
+  {
+    "id": "oc7-name-isopropylcyclopentene",
+    "type": "multiple-choice",
+    "prompt": "A cyclopentene ring has an isopropyl group on a ring carbon that is directly bonded to one of the double-bond carbons. What is the compound's name?",
+    "choices": [
+      {
+        "text": "3-Isopropylcyclopentene",
+        "correct": true
+      },
+      {
+        "text": "5-Isopropylcyclopentene",
+        "why": "Numbering around the ring the other way gives the substituent 3, which is lower."
+      },
+      {
+        "text": "1-Isopropylcyclopentene",
+        "why": "C1 is a double-bond carbon. The isopropyl group is on the carbon next to the double bond."
+      },
+      {
+        "text": "4-Isopropylcyclopentene",
+        "why": "C4 isn't bonded to either double-bond carbon. The ring carbon next to C2 is C3."
+      }
+    ],
+    "explanation": "The double bond is C1–C2, and the ring carbons next to it are C3 (beside C2) and C5 (beside C1). Number in the direction that gives the substituent the lower number: 3-isopropylcyclopentene."
+  }
+]

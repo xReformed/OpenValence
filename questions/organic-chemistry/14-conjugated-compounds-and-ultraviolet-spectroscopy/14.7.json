@@ -1,0 +1,353 @@
+[
+  {
+    "id": "oc14-uv-info",
+    "type": "multiple-choice",
+    "prompt": "What structural information does UV spectroscopy give?",
+    "choices": [
+      {
+        "text": "The nature of any conjugated π electron system",
+        "correct": true
+      },
+      {
+        "text": "The molecular size and formula",
+        "why": "That is what mass spectrometry gives."
+      },
+      {
+        "text": "The functional groups present",
+        "why": "That is what IR spectroscopy gives."
+      },
+      {
+        "text": "The carbon–hydrogen framework",
+        "why": "That is what NMR spectroscopy gives."
+      }
+    ],
+    "explanation": "Mass spectrometry, IR and NMR spectroscopy apply to all organic molecules. Ultraviolet spectroscopy is applicable only to conjugated compounds and gives information about conjugated π electron systems."
+  },
+  {
+    "id": "oc14-uv-range",
+    "type": "multiple-choice",
+    "prompt": "Which part of the ultraviolet region is of greatest interest to organic chemists?",
+    "choices": [
+      {
+        "text": "200 to 400 nm",
+        "correct": true
+      },
+      {
+        "text": "400 to 800 nm",
+        "why": "The UV region ends at 400 nm (4 × 10^−7 m), the short-wavelength end of the visible region. Longer wavelengths are not UV."
+      },
+      {
+        "text": "10 to 200 nm",
+        "why": "These shorter wavelengths are UV too, but the narrow range of greatest interest runs from 2 × 10^−7 m to 4 × 10^−7 m."
+      },
+      {
+        "text": "2 to 4 nm",
+        "why": "2 × 10^−7 m is 200 nm, not 2 nm, because 1 nm = 10^−9 m."
+      }
+    ],
+    "explanation": "The UV region runs from 4 × 10^−7 m (the short-wavelength end of the visible region) to 10^−8 m (the long-wavelength end of the X-ray region). The narrow range from 2 × 10^−7 m to 4 × 10^−7 m, or 200 to 400 nm, is of greatest interest to organic chemists."
+  },
+  {
+    "id": "oc14-nm-to-m",
+    "type": "numeric",
+    "prompt": "1,3-Butadiene absorbs at λ_max = 217 nm. Given that 1 nm = 10^−9 m, what is this wavelength in meters?",
+    "answer": 2.17e-07,
+    "unit": "m",
+    "explanation": "217 nm × 10^−9 m/nm = 2.17 × 10^−7 m, inside the 2 × 10^−7 m to 4 × 10^−7 m range of interest."
+  },
+  {
+    "id": "oc14-uv-absorbed-energy",
+    "type": "multiple-choice",
+    "prompt": "When a conjugated molecule absorbs UV radiation, what does the absorbed energy do?",
+    "choices": [
+      {
+        "text": "It promotes an electron from a lower-energy orbital to a higher-energy one",
+        "correct": true
+      },
+      {
+        "text": "It increases molecular vibrations",
+        "why": "That is what absorbed IR radiation does."
+      },
+      {
+        "text": "It moves an electron from an antibonding orbital down to a bonding one",
+        "why": "Absorbed energy promotes the electron upward, from a bonding π orbital to an antibonding π* orbital."
+      },
+      {
+        "text": "It breaks a π bond to give two radicals",
+        "why": "UV absorption promotes one electron to a higher-energy orbital; no bond is broken to form radicals."
+      }
+    ],
+    "explanation": "With IR irradiation, the energy absorbed increases molecular vibrations. With UV radiation, the energy absorbed is the amount needed to promote an electron from a lower-energy orbital to a higher-energy one in a conjugated molecule."
+  },
+  {
+    "id": "oc14-homo-lumo-butadiene",
+    "type": "multiple-choice",
+    "prompt": "When 1,3-butadiene absorbs UV light, between which orbitals is an electron promoted?",
+    "choices": [
+      {
+        "text": "From ψ_2 (the HOMO) to ψ_3* (the LUMO)",
+        "correct": true
+      },
+      {
+        "text": "From ψ_1 to ψ_2",
+        "why": "Both are bonding orbitals and both are already full. The electron goes from the HOMO, ψ_2, to the LUMO, ψ_3*."
+      },
+      {
+        "text": "From ψ_1 to ψ_4*",
+        "why": "The excitation goes from the highest occupied orbital to the lowest unoccupied one: ψ_2 to ψ_3*."
+      },
+      {
+        "text": "From ψ_3* (the HOMO) to ψ_4* (the LUMO)",
+        "why": "ψ_3* is empty in the ground state, so it is the LUMO. The HOMO is ψ_2."
+      }
+    ],
+    "explanation": "1,3-Butadiene's two bonding π MOs are occupied and its two antibonding MOs are empty. UV excitation promotes an electron from ψ_2, the highest occupied molecular orbital (HOMO), to ψ_3*, the lowest unoccupied molecular orbital (LUMO) (Figure 14.7.2)."
+  },
+  {
+    "id": "oc14-pi-pi-star",
+    "type": "multiple-choice",
+    "prompt": "Why is the UV excitation of 1,3-butadiene called a π → π* excitation?",
+    "choices": [
+      {
+        "text": "An electron goes from a bonding π MO to an antibonding π* MO",
+        "correct": true
+      },
+      {
+        "text": "An electron goes from an antibonding π* MO to a bonding π MO",
+        "why": "Absorbing energy moves the electron up, from bonding to antibonding."
+      },
+      {
+        "text": "A π bond is converted into a σ bond",
+        "why": "No bonds are rearranged. One electron moves to a higher-energy orbital."
+      },
+      {
+        "text": "An electron goes from a σ orbital to a π orbital",
+        "why": "Both orbitals involved are π orbitals: bonding π to antibonding π*."
+      }
+    ],
+    "explanation": "Because the electron is promoted from a bonding π molecular orbital to an antibonding π* molecular orbital, the transition is called a π → π* excitation (\"pi to pi star\"). For 1,3-butadiene it takes UV light of 217 nm."
+  },
+  {
+    "id": "oc14-absorbance-def",
+    "type": "multiple-choice",
+    "prompt": "In the definition of absorbance, A = log(I_0/I), what are I_0 and I?",
+    "choices": [
+      {
+        "text": "I_0 is the intensity of the incident light; I is the intensity transmitted through the sample",
+        "correct": true
+      },
+      {
+        "text": "I_0 is the intensity transmitted through the sample; I is the intensity of the incident light",
+        "why": "Reversed: I_0 is the light going in and I is the light that gets through."
+      },
+      {
+        "text": "I_0 is the intensity at λ_max; I is the intensity at any other wavelength",
+        "why": "Both are measured at the same wavelength: incident versus transmitted light."
+      },
+      {
+        "text": "I_0 is the sample concentration; I is the path length",
+        "why": "Concentration and path length appear in the molar absorptivity equation, ε = A/(c × l)."
+      }
+    ],
+    "explanation": "Absorbance is defined as A = log(I_0/I), where I_0 is the intensity of the incident light and I is the intensity of the light transmitted through the sample."
+  },
+  {
+    "id": "oc14-absorbance-1pct",
+    "type": "numeric",
+    "prompt": "A sample lets through only 1% of the incident UV light at λ_max, so I_0/I = 100. What is its absorbance?",
+    "answer": 2,
+    "explanation": "A = log(I_0/I) = log(100) = 2."
+  },
+  {
+    "id": "oc14-uv-display",
+    "type": "multiple-choice",
+    "prompt": "How does the way a UV spectrum is displayed differ from an IR spectrum?",
+    "choices": [
+      {
+        "text": "UV spectra have the baseline at the bottom, so a peak shows an absorption",
+        "correct": true
+      },
+      {
+        "text": "UV spectra have the baseline at the top, so a valley shows an absorption",
+        "why": "That is how IR spectra are usually displayed."
+      },
+      {
+        "text": "UV spectra plot absorbance against concentration instead of wavelength",
+        "why": "A UV spectrum plots wavelength versus absorbance."
+      },
+      {
+        "text": "There is no difference; both show absorptions as valleys",
+        "why": "Only IR spectra show absorptions as valleys. UV spectra show them as peaks."
+      }
+    ],
+    "explanation": "For historical reasons, IR spectra put the zero-absorption baseline across the top of the chart, so a valley indicates an absorption. UV spectra put the baseline at the bottom, so a peak indicates an absorption."
+  },
+  {
+    "id": "oc14-epsilon-constant",
+    "type": "multiple-choice",
+    "prompt": "Which statement about molar absorptivity (ε) is correct?",
+    "choices": [
+      {
+        "text": "It is a physical constant, characteristic of the substance's π electron system",
+        "correct": true
+      },
+      {
+        "text": "It rises as the sample concentration rises",
+        "why": "Absorbance rises with concentration, but ε = A/(c × l) stays constant for a given substance."
+      },
+      {
+        "text": "It depends on the length of the sample cell",
+        "why": "Path length is divided out in ε = A/(c × l). ε is characteristic of the compound."
+      },
+      {
+        "text": "It has units of mol/L",
+        "why": "Its units are L/(mol · cm), usually dropped. Mol/L is the unit of concentration."
+      }
+    ],
+    "explanation": "Molar absorptivity, ε = A/(c × l), is a physical constant, characteristic of the particular substance being observed and so of its π electron system. Its units, L/(mol · cm), are usually dropped."
+  },
+  {
+    "id": "oc14-epsilon-typical",
+    "type": "multiple-choice",
+    "prompt": "What range of molar absorptivity (ε) is typical for conjugated dienes?",
+    "choices": [
+      {
+        "text": "10,000 to 25,000",
+        "correct": true
+      },
+      {
+        "text": "10 to 25",
+        "why": "That is about a thousand times too small. Conjugated dienes absorb strongly, with ε = 10,000 to 25,000."
+      },
+      {
+        "text": "100 to 250",
+        "why": "Typical values for conjugated dienes are far larger: 10,000 to 25,000."
+      },
+      {
+        "text": "About 138,000",
+        "why": "That is the molar absorptivity of β-carotene, not a typical conjugated diene."
+      }
+    ],
+    "explanation": "Typical molar absorptivities for conjugated dienes are in the range ε = 10,000 to 25,000 L/(mol · cm), with the units usually dropped."
+  },
+  {
+    "id": "oc14-epsilon-calc",
+    "type": "numeric",
+    "prompt": "A conjugated diene at 4.0 × 10^−5 mol/L in a 1.00 cm cell has absorbance A = 0.84 at its λ_max. What is its molar absorptivity, ε, in L/(mol · cm)?",
+    "answer": 21000,
+    "unit": "L/(mol · cm)",
+    "explanation": "ε = A/(c × l) = 0.84 / (4.0 × 10^−5 mol/L × 1.00 cm) = 21,000 L/(mol · cm), inside the typical range of 10,000 to 25,000 for conjugated dienes."
+  },
+  {
+    "id": "oc14-carotene-conc",
+    "type": "numeric",
+    "prompt": "β-Carotene has ε = 138,000 L/(mol · cm). A sample in a cell with a 1.0 cm path length has a UV absorbance of 0.37. What is the β-carotene concentration, in mol/L?",
+    "answer": 2.7e-06,
+    "unit": "mol/L",
+    "tolerance": 0.02,
+    "explanation": "c = A/(ε × l) = 0.37 / (1.38 × 10^5 L/(mol · cm) × 1.0 cm) = 2.7 × 10^−6 mol/L. Rearranging ε = A/(c × l) this way lets you measure a concentration when A, ε and l are known."
+  },
+  {
+    "id": "oc14-vitamin-a-conc",
+    "type": "numeric",
+    "prompt": "Pure vitamin A has λ_max = 325 nm and ε = 50,100. A sample has A = 0.735 at 325 nm in a 1.00 cm cell. What is its vitamin A concentration, in mol/L, to three significant figures?",
+    "answer": 1.47e-05,
+    "unit": "mol/L",
+    "explanation": "c = A/(ε × l) = 0.735 / (50,100 × 1.00) = 1.47 × 10^−5 M (Exercise 14.7.2)."
+  },
+  {
+    "id": "oc14-absorbance-predict",
+    "type": "numeric",
+    "prompt": "A conjugated diene has ε = 20,000. What absorbance would a 2.5 × 10^−5 mol/L solution of it give in a 1.00 cm cell?",
+    "answer": 0.5,
+    "explanation": "From ε = A/(c × l), A = ε × c × l = 20,000 × 2.5 × 10^−5 × 1.00 = 0.50."
+  },
+  {
+    "id": "oc14-energy-400nm",
+    "type": "numeric",
+    "prompt": "Using E = (1.20 × 10^−4 kJ/mol)/λ, with λ in meters, what is the energy of 400 nm UV radiation, in kJ/mol?",
+    "answer": 300,
+    "unit": "kJ/mol",
+    "explanation": "400 nm = 4.00 × 10^−7 m, so E = (1.20 × 10^−4 kJ/mol)/(4.00 × 10^−7) = 300 kJ/mol. At 200 nm the energy is 600 kJ/mol, so the UV range of interest spans 300–600 kJ/mol (Exercise 14.7.1)."
+  },
+  {
+    "id": "oc14-energy-217nm",
+    "type": "numeric",
+    "prompt": "Using E = (1.20 × 10^−4 kJ/mol)/λ, with λ in meters, how much energy does the 217 nm light that excites 1,3-butadiene carry, to the nearest kJ/mol?",
+    "answer": 553,
+    "unit": "kJ/mol",
+    "explanation": "217 nm = 2.17 × 10^−7 m, so E = (1.20 × 10^−4 kJ/mol)/(2.17 × 10^−7) = 553 kJ/mol, within the 300–600 kJ/mol span of the 200–400 nm UV range."
+  },
+  {
+    "id": "oc14-uv-energy-compare",
+    "type": "multiple-choice",
+    "prompt": "How does the energy of UV radiation in the 200–400 nm range compare with the energies used in IR and NMR spectroscopy?",
+    "choices": [
+      {
+        "text": "UV energy is greater than both",
+        "correct": true
+      },
+      {
+        "text": "UV energy is less than both",
+        "why": "UV radiation (300–600 kJ/mol) is more energetic than the radiation used in IR or NMR."
+      },
+      {
+        "text": "UV energy lies between the IR and NMR energies",
+        "why": "UV radiation carries more energy than both IR and NMR radiation."
+      },
+      {
+        "text": "All three use about the same energy",
+        "why": "UV energy (300–600 kJ/mol) is greater than IR or NMR energy."
+      }
+    ],
+    "explanation": "The 200–400 nm range corresponds to 300–600 kJ/mol, more energy than is involved in IR or NMR spectroscopy (Exercise 14.7.1). That is enough to promote an electron to a higher orbital rather than just increase vibrations."
+  },
+  {
+    "id": "oc14-lambda-max",
+    "type": "multiple-choice",
+    "prompt": "What is λ_max in a UV spectrum?",
+    "choices": [
+      {
+        "text": "The wavelength at the top of the absorption peak",
+        "correct": true
+      },
+      {
+        "text": "The longest wavelength the instrument can measure",
+        "why": "λ_max marks the position of the absorption peak, not an instrument limit."
+      },
+      {
+        "text": "The wavelength at which the absorbance is zero",
+        "why": "λ_max is where the absorbance is greatest, at the top of the peak."
+      },
+      {
+        "text": "The largest molar absorptivity any compound can have",
+        "why": "That would be a value of ε. λ_max is a wavelength."
+      }
+    ],
+    "explanation": "Unlike IR and NMR spectra, UV spectra are usually quite simple, often a single broad peak. Its position is given by the wavelength at the top of the peak, λ_max (\"lambda max\"); for 1,3-butadiene, λ_max = 217 nm."
+  },
+  {
+    "id": "oc14-uv-neighbors",
+    "type": "multiple-choice",
+    "prompt": "Between which neighboring regions of the electromagnetic spectrum does the ultraviolet region lie?",
+    "choices": [
+      {
+        "text": "Between the visible region (at 4 × 10^−7 m) and the X-ray region (at 10^−8 m)",
+        "correct": true
+      },
+      {
+        "text": "Between the visible region (at 10^−8 m) and the X-ray region (at 4 × 10^−7 m)",
+        "why": "The values are swapped. The visible region begins at 4 × 10^−7 m; the X-ray region begins at 10^−8 m."
+      },
+      {
+        "text": "Between the visible region and the infrared region",
+        "why": "Infrared lies beyond the long-wavelength end of the visible region. UV lies on the short-wavelength side."
+      },
+      {
+        "text": "Between the near-infrared and infrared regions",
+        "why": "Those regions lie at longer wavelengths than visible light. UV lies at shorter wavelengths."
+      }
+    ],
+    "explanation": "The ultraviolet region extends from the short-wavelength end of the visible region (4 × 10^−7 m) to the long-wavelength end of the X-ray region (10^−8 m) (Figure 14.7.1)."
+  }
+]

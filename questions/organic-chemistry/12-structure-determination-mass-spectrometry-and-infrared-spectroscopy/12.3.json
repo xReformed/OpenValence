@@ -1,0 +1,354 @@
+[
+  {
+    "id": "oc12-alcohol-alpha-cleavage",
+    "type": "multiple-choice",
+    "prompt": "In the alpha-cleavage pathway of an alcohol in a mass spectrometer, which bond breaks and what charged fragment forms?",
+    "choices": [
+      {
+        "text": "A C–C bond nearest the hydroxyl group breaks, giving a resonance-stabilized, oxygen-containing cation",
+        "correct": true
+      },
+      {
+        "text": "The C–O bond breaks, giving a carbocation and a hydroxyl radical",
+        "why": "In alpha cleavage the oxygen stays in the charged fragment. The bond that breaks is a C–C bond nearest the hydroxyl group."
+      },
+      {
+        "text": "A C–C bond nearest the hydroxyl group breaks, giving an alkyl cation and an oxygen-containing radical",
+        "why": "The charge goes the other way: the oxygen-containing piece is the resonance-stabilized cation, and the alkyl piece leaves as a neutral radical."
+      },
+      {
+        "text": "A C–H bond breaks and a molecule of water is lost",
+        "why": "Losing water is the other pathway, dehydration, which gives an alkene radical cation 18 amu lighter than M^+."
+      }
+    ],
+    "explanation": "Alcohols fragment by two pathways, alpha cleavage and dehydration. In alpha cleavage, a C–C bond nearest the hydroxyl group is broken, yielding a neutral radical plus a resonance-stabilized, oxygen-containing cation."
+  },
+  {
+    "id": "oc12-2-pentanol-base-peak",
+    "type": "multiple-choice",
+    "prompt": "2-Pentanol, CH3CH(OH)CH2CH2CH3 (M^+ = 88), has its base peak at m/z = 45 from alpha cleavage. Which neutral radical is lost?",
+    "choices": [
+      {
+        "text": "A propyl radical, C3H7 (43 mass units)",
+        "correct": true
+      },
+      {
+        "text": "A methyl radical, CH3 (15 mass units)",
+        "why": "Losing methyl would give 88 − 15 = 73, not 45."
+      },
+      {
+        "text": "An ethyl radical, C2H5 (29 mass units)",
+        "why": "Losing ethyl would give 59. Also, the carbon bearing the OH is bonded to a methyl and a propyl group, so alpha cleavage can't remove an ethyl group."
+      },
+      {
+        "text": "A hydroxyl radical, OH (17 mass units)",
+        "why": "That would give 71, and alpha cleavage keeps the oxygen in the charged fragment."
+      }
+    ],
+    "explanation": "The carbon bearing the OH in 2-pentanol is bonded to a methyl group and a propyl group. Alpha cleavage of the C–C bond to the propyl group removes C3H7 (43) and leaves an oxygen-containing cation at 88 − 43 = 45, the base peak. Only a small peak from dehydration appears."
+  },
+  {
+    "id": "oc12-2-pentanol-dehydration",
+    "type": "numeric",
+    "prompt": "2-Pentanol has M^+ = 88. At what m/z would the alkene radical cation from dehydration appear?",
+    "answer": 70,
+    "tolerance": 0.001,
+    "explanation": "Dehydration eliminates water, giving an alkene radical cation with a mass 18 amu less than M^+: 88 − 18 = 70. In the spectrum of 2-pentanol only a small dehydration peak is observed."
+  },
+  {
+    "id": "oc12-cyclohexanol-dehydration",
+    "type": "numeric",
+    "prompt": "Cyclohexanol, C6H11OH, undergoes dehydration in a mass spectrometer. At what m/z does the charged fragment appear?",
+    "answer": 82,
+    "tolerance": 0.001,
+    "explanation": "Cyclohexanol, C6H12O, has M^+ = 6(12) + 12(1) + 16 = 100. Dehydration removes water (18), giving an alkene radical cation at 100 − 18 = 82 (Exercise 12.3.1b)."
+  },
+  {
+    "id": "oc12-nitrogen-rule-apply",
+    "type": "multiple-choice",
+    "prompt": "An unknown compound shows its molecular ion at m/z = 73. What does the nitrogen rule suggest?",
+    "choices": [
+      {
+        "text": "It probably contains one or three nitrogen atoms",
+        "correct": true
+      },
+      {
+        "text": "It probably contains no nitrogen atoms",
+        "why": "A compound with no nitrogen has an even molecular weight. An odd molecular ion points to an odd number of nitrogens."
+      },
+      {
+        "text": "It probably contains two nitrogen atoms",
+        "why": "Two nitrogens give an even molecular weight, and 73 is odd."
+      },
+      {
+        "text": "It probably contains four nitrogen atoms",
+        "why": "Four is an even number of nitrogens, which goes with an even molecular weight. 73 is odd."
+      }
+    ],
+    "explanation": "The nitrogen rule says that a compound with an odd number of nitrogen atoms has an odd-numbered molecular weight. So an odd-numbered molecular ion, like 73, usually means one or three nitrogen atoms; an even-numbered one usually means zero or two."
+  },
+  {
+    "id": "oc12-nitrogen-rule-why",
+    "type": "multiple-choice",
+    "prompt": "What is the logic behind the nitrogen rule?",
+    "choices": [
+      {
+        "text": "Nitrogen is trivalent, which requires an odd number of hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Nitrogen's atomic mass, like its valence, is an odd number",
+        "why": "Nitrogen's mass, 14, is even. The rule comes from nitrogen's valence of 3."
+      },
+      {
+        "text": "Nitrogen has two common isotopes in about a 1 : 1 ratio",
+        "why": "That describes bromine, ^79Br and ^81Br. The nitrogen rule comes from nitrogen being trivalent."
+      },
+      {
+        "text": "Ions that contain nitrogen always carry two positive charges",
+        "why": "Ions usually carry a single charge. The rule comes from the odd number of hydrogens that trivalent nitrogen requires."
+      }
+    ],
+    "explanation": "The logic behind the nitrogen rule is that nitrogen is trivalent, which requires an odd number of hydrogen atoms in a molecule with one nitrogen, and so an odd-numbered molecular weight."
+  },
+  {
+    "id": "oc12-triethylamine-alpha",
+    "type": "numeric",
+    "prompt": "Triethylamine, (CH3CH2)3N, has M^+ = 101. Alpha cleavage breaks a C–C bond nearest the nitrogen. At what m/z does the resulting nitrogen-containing cation appear?",
+    "answer": 86,
+    "tolerance": 0.001,
+    "explanation": "The C–C bond nearest the nitrogen in each ethyl group is the CH2–CH3 bond, so alpha cleavage loses a methyl radical (15): 101 − 15 = 86. That is the base peak of triethylamine. Note that M^+ = 101 is odd, as the nitrogen rule predicts for one nitrogen."
+  },
+  {
+    "id": "oc12-chlorine-ratio",
+    "type": "multiple-choice",
+    "prompt": "Chloroethane shows peaks at m/z = 64 (M) and m/z = 66 (M + 2). About what height ratio do they have, and why?",
+    "choices": [
+      {
+        "text": "About 3 : 1, because ^35Cl and ^37Cl occur in roughly a 3 : 1 ratio",
+        "correct": true
+      },
+      {
+        "text": "About 1 : 1, because ^35Cl and ^37Cl are about equally abundant",
+        "why": "Two nearly equal isotopes describes bromine. For chlorine, three out of four molecules contain ^35Cl."
+      },
+      {
+        "text": "About 1 : 3, because ^37Cl is the more abundant isotope",
+        "why": "^35Cl is the more abundant isotope, so the M peak (m/z = 64) is the taller one."
+      },
+      {
+        "text": "About 100 : 1, because only ^13C contributes to the M + 2 peak",
+        "why": "^13C gives the small M + 1 peak. The M + 2 peak here comes from molecules containing ^37Cl."
+      }
+    ],
+    "explanation": "Chlorine exists as ^35Cl and ^37Cl in roughly a 3 : 1 ratio. In chloroethane, three out of four molecules contain ^35Cl (M at m/z = 64) and one in four contains ^37Cl (M + 2 at m/z = 66), so M : M + 2 is about 3 : 1."
+  },
+  {
+    "id": "oc12-chloropropane-m-plus-2",
+    "type": "numeric",
+    "prompt": "Using C = 12, H = 1, ^35Cl = 35 and ^37Cl = 37, at what m/z does the M + 2 peak of 2-chloropropane, CH3CHClCH3, appear?",
+    "answer": 80,
+    "tolerance": 0.001,
+    "explanation": "The M + 2 peak comes from molecules containing ^37Cl: 3(12) + 7(1) + 37 = 80. The molecular ion with ^35Cl is at m/z = 78, and the two peaks have about a 3 : 1 height ratio, just as for chloroethane."
+  },
+  {
+    "id": "oc12-bromine-pattern",
+    "type": "multiple-choice",
+    "prompt": "Bromine is 50.7% ^79Br and 49.3% ^81Br. How does this show up in the mass spectrum of 1-bromohexane?",
+    "choices": [
+      {
+        "text": "As peaks at m/z = 164 (M) and 166 (M + 2) of nearly equal height",
+        "correct": true
+      },
+      {
+        "text": "As peaks at m/z = 164 and 166 in about a 3 : 1 ratio",
+        "why": "A 3 : 1 ratio is chlorine's pattern. Bromine's two isotopes are nearly equally abundant."
+      },
+      {
+        "text": "As peaks at m/z = 164 and 165 of nearly equal height",
+        "why": "The two bromine isotopes differ by 2 mass units, so the second peak is M + 2, at 166."
+      },
+      {
+        "text": "As a single molecular ion at m/z = 165, the average of the two",
+        "why": "Each molecule contains one particular isotope, so two separate peaks appear. Nothing appears at the average mass."
+      }
+    ],
+    "explanation": "With 50.7% ^79Br and 49.3% ^81Br, 1-bromohexane shows its molecular ion at m/z = 164 for ^79Br-containing ions and an M + 2 peak at m/z = 166 for ^81Br-containing ions, of nearly equal height."
+  },
+  {
+    "id": "oc12-bromine-fragments",
+    "type": "multiple-choice",
+    "prompt": "The mass spectrum of 1-bromohexane has nearly equal peaks at m/z = 135 and 137, and a peak at m/z = 85 with no large peak at m/z = 87. What do these peaks tell you?",
+    "choices": [
+      {
+        "text": "The ions at 135 and 137 contain bromine; the ion at 85 does not",
+        "correct": true
+      },
+      {
+        "text": "The ion at 85 contains bromine; the ions at 135 and 137 do not",
+        "why": "That is backward. A bromine-containing ion comes with a near-equal partner 2 units higher, which 135/137 has and 85 lacks."
+      },
+      {
+        "text": "All three ions, 85, 135 and 137, contain bromine",
+        "why": "An ion containing bromine would have a near-equal partner 2 units higher, and there is no large peak at 87."
+      },
+      {
+        "text": "None of the three ions contains a bromine atom",
+        "why": "The nearly equal pair at 135 and 137 is the bromine isotope signature."
+      }
+    ],
+    "explanation": "Two nearly equally large peaks two mass units apart tell you an ion still contains a bromine atom, as for m/z = 135 and 137. The peak at m/z = 85 does not contain bromine, because there is no large peak at m/z = 87."
+  },
+  {
+    "id": "oc12-mclafferty-requirement",
+    "type": "multiple-choice",
+    "prompt": "Which ketones and aldehydes undergo the McLafferty rearrangement in a mass spectrometer?",
+    "choices": [
+      {
+        "text": "Those with a hydrogen on a carbon three atoms from the carbonyl group",
+        "correct": true
+      },
+      {
+        "text": "Those with a hydrogen on the carbon next to the carbonyl carbon",
+        "why": "That carbon is the alpha carbon. The hydrogen that moves must be on the carbon three atoms away from the carbonyl group."
+      },
+      {
+        "text": "Only those with an aromatic ring next to the carbonyl group",
+        "why": "Butyrophenone has one, but the requirement is a hydrogen three atoms away from the carbonyl group, not a ring."
+      },
+      {
+        "text": "Any ketone or aldehyde at all, whatever its chain length",
+        "why": "The rearrangement needs a hydrogen on a carbon three atoms away from the carbonyl group, so a short chain without one can't do it."
+      }
+    ],
+    "explanation": "Ketones and aldehydes that have a hydrogen on a carbon three atoms away from the carbonyl group undergo a characteristic cleavage called the McLafferty rearrangement."
+  },
+  {
+    "id": "oc12-mclafferty-steps",
+    "type": "multiple-choice",
+    "prompt": "What happens in a McLafferty rearrangement?",
+    "choices": [
+      {
+        "text": "A hydrogen moves to the carbonyl oxygen, the alpha–beta C–C bond breaks, and a neutral alkene is lost",
+        "correct": true
+      },
+      {
+        "text": "The bond between the carbonyl carbon and the alpha carbon breaks, giving an acyl cation",
+        "why": "That is alpha cleavage, the other common fragmentation of ketones and aldehydes."
+      },
+      {
+        "text": "A hydrogen moves to the carbonyl oxygen, the C–O bond breaks, and water is lost",
+        "why": "Losing water is the dehydration pathway of alcohols. The McLafferty rearrangement loses a neutral alkene."
+      },
+      {
+        "text": "A hydrogen moves to the carbonyl oxygen, and the alkene fragment keeps the positive charge",
+        "why": "The charge remains with the oxygen-containing fragment; the alkene leaves as a neutral molecule."
+      }
+    ],
+    "explanation": "In the McLafferty rearrangement, the hydrogen atom is transferred to the carbonyl oxygen, a C–C bond between the alpha and beta carbons is broken, and a neutral alkene fragment is produced. The charge remains with the oxygen-containing fragment."
+  },
+  {
+    "id": "oc12-ketone-alpha-cleavage",
+    "type": "multiple-choice",
+    "prompt": "In the alpha cleavage of a ketone, which bond breaks and what charged fragment results?",
+    "choices": [
+      {
+        "text": "The bond between the carbonyl carbon and a neighboring carbon breaks, giving a resonance-stabilized acyl cation",
+        "correct": true
+      },
+      {
+        "text": "The bond between the alpha and beta carbons breaks, giving a neutral alkene",
+        "why": "That bond breaks in the McLafferty rearrangement, not in alpha cleavage."
+      },
+      {
+        "text": "The C=O bond breaks, giving an oxygen radical",
+        "why": "The carbonyl group stays intact; the charged fragment is an acyl cation that still contains the C=O."
+      },
+      {
+        "text": "The bond between the carbonyl carbon and a neighboring carbon breaks, giving an alkyl cation and an acyl radical",
+        "why": "The charge goes to the acyl fragment, which is resonance-stabilized. The alkyl piece leaves as a neutral radical."
+      }
+    ],
+    "explanation": "Ketones and aldehydes frequently undergo alpha cleavage of the bond between the carbonyl carbon and the neighboring (alpha) carbon, giving a neutral radical and a resonance-stabilized acyl cation."
+  },
+  {
+    "id": "oc12-2-pentanone-alpha",
+    "type": "numeric",
+    "prompt": "Alpha cleavage of 2-pentanone, CH3COCH2CH2CH3, can break the bond on either side of the carbonyl carbon. At what m/z does the acyl cation appear when the propyl radical is lost?",
+    "answer": 43,
+    "tolerance": 0.001,
+    "explanation": "2-Pentanone, C5H10O, has M^+ = 86. Losing the propyl radical (C3H7, 43) leaves the acyl cation CH3CO+ at 86 − 43 = 43. Losing the methyl radical instead gives 86 − 15 = 71 (Exercise 12.3.1a: 43, 71)."
+  },
+  {
+    "id": "oc12-butyrophenone-alpha",
+    "type": "numeric",
+    "prompt": "Butyrophenone, C6H5COCH2CH2CH3, has M^+ = 148. At what m/z does the acyl cation from alpha cleavage of its propyl group appear?",
+    "answer": 105,
+    "tolerance": 0.001,
+    "explanation": "Alpha cleavage removes the propyl group, C3H7 = 43 mass units: 148 − 43 = 105. This acyl cation, C6H5CO+, is the base peak of butyrophenone."
+  },
+  {
+    "id": "oc12-butyrophenone-mclafferty",
+    "type": "numeric",
+    "prompt": "In its McLafferty rearrangement, butyrophenone (M^+ = 148) loses ethylene, C2H4. At what m/z does the charged fragment appear?",
+    "answer": 120,
+    "tolerance": 0.001,
+    "explanation": "Ethylene, C2H4, has a mass of 28, so 148 − 28 = 120. The charge stays with the oxygen-containing fragment."
+  },
+  {
+    "id": "oc12-mclafferty-4-methyl-2-pentanone",
+    "type": "numeric",
+    "prompt": "4-Methyl-2-pentanone, CH3COCH2CH(CH3)2, undergoes a McLafferty rearrangement. At what m/z does the charged fragment appear?",
+    "answer": 58,
+    "tolerance": 0.001,
+    "explanation": "M^+ for C6H12O is 6(12) + 12(1) + 16 = 100. A hydrogen on one of the CH3 groups, three atoms away from the carbonyl group, moves to the oxygen; the alpha–beta C–C bond breaks; and the neutral alkene CH2=CHCH3 (42) is lost: 100 − 42 = 58 (Exercise 12.3.1c)."
+  },
+  {
+    "id": "oc12-2-methyl-3-pentanol",
+    "type": "multiple-choice",
+    "prompt": "2-Methyl-3-pentanol, (CH3)2CHCH(OH)CH2CH3 (M^+ = 102), could give fragment ions at m/z = 84, 73 and 59. Its spectrum shows peaks at 73 and 59 but none at 84. What does this mean?",
+    "choices": [
+      {
+        "text": "Both alpha cleavages occur, but dehydration doesn't",
+        "correct": true
+      },
+      {
+        "text": "Dehydration takes place, but alpha cleavage doesn't",
+        "why": "m/z = 84 is the dehydration fragment (102 − 18), and it is missing. The peaks at 73 and 59 come from alpha cleavage."
+      },
+      {
+        "text": "Only one of the two alpha cleavages takes place",
+        "why": "73 (loss of ethyl, 29) and 59 (loss of a C3H7 group, 43) are two different alpha cleavages, and both peaks appear."
+      },
+      {
+        "text": "McLafferty rearrangements give the ions at 73 and 59",
+        "why": "The McLafferty rearrangement is described for ketones and aldehydes. This alcohol fragments by alpha cleavage."
+      }
+    ],
+    "explanation": "In Worked Example 12.2, 2-methyl-3-pentanol (M^+ = 102) can lose water (102 − 18 = 84) or undergo alpha cleavage on either side of the C–OH carbon: losing ethyl gives 102 − 29 = 73, and losing the C3H7 group gives 102 − 43 = 59. Dehydration is not observed, but both alpha cleavages take place."
+  },
+  {
+    "id": "oc12-2-methyl-2-pentanol",
+    "type": "multiple-choice",
+    "prompt": "2-Methyl-2-pentanol, (CH3)2C(OH)CH2CH2CH3, has M^+ = 102. Which pair of m/z values would you expect from its alpha cleavages?",
+    "choices": [
+      {
+        "text": "87 and 59",
+        "correct": true
+      },
+      {
+        "text": "73 and 59",
+        "why": "73 needs the loss of an ethyl group (29), but the C–OH carbon here carries two methyl groups and a propyl group."
+      },
+      {
+        "text": "87 and 84",
+        "why": "84 is the dehydration fragment (102 − 18), not an alpha-cleavage ion."
+      },
+      {
+        "text": "73 and 87",
+        "why": "87 (loss of methyl) fits, but 73 needs the loss of an ethyl group, which this alcohol doesn't have next to the C–OH carbon."
+      }
+    ],
+    "explanation": "The carbon bearing the OH is bonded to two CH3 groups and one CH2CH2CH3 group. Breaking a C–CH3 bond loses 15 (102 − 15 = 87); breaking the bond to the propyl group loses 43 (102 − 43 = 59). Dehydration would give m/z = 84."
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "id": "oc7-mechanism-proof",
+    "type": "multiple-choice",
+    "prompt": "What does the book say about proving that a reaction mechanism is correct?",
+    "choices": [
+      {
+        "text": "It can never be entirely proven, only shown to be consistent with all known facts",
+        "correct": true
+      },
+      {
+        "text": "It is proven once it accounts for the results of a single experiment",
+        "why": "One consistent experiment isn't proof. A mechanism is probably correct only if enough facts are accounted for."
+      },
+      {
+        "text": "A correct mechanism can be proven, but an incorrect one can never be disproved",
+        "why": "It's the other way around: an incorrect mechanism can be disproved by showing it doesn't account for observed data."
+      },
+      {
+        "text": "It is proven by directly observing the transition state of each step",
+        "why": "Transition states have no finite lifetime and can't be observed (Section 7.10)."
+      }
+    ],
+    "explanation": "An incorrect reaction mechanism can be disproved by showing that it doesn't account for observed data, but a correct mechanism can never be entirely proven. The best we can do is show that a proposed mechanism is consistent with all known facts."
+  },
+  {
+    "id": "oc7-whitmore",
+    "type": "multiple-choice",
+    "prompt": "Who discovered in the 1930s that structural rearrangements often occur during the reaction of HX with an alkene?",
+    "choices": [
+      {
+        "text": "F. C. Whitmore",
+        "correct": true
+      },
+      {
+        "text": "Christopher Ingold",
+        "why": "Ingold's studies led to the two-step mechanism for electrophilic addition (Section 7.7). Whitmore found the rearrangements."
+      },
+      {
+        "text": "Vladimir Markovnikov",
+        "why": "Markovnikov proposed his rule about the orientation of addition in 1869. Whitmore found the rearrangements."
+      },
+      {
+        "text": "Linus Pauling",
+        "why": "Pauling developed hybrid orbitals. The rearrangement evidence came from Whitmore."
+      }
+    ],
+    "explanation": "One of the best pieces of evidence for the carbocation mechanism was discovered during the 1930s by F. C. Whitmore of Pennsylvania State University, who found that structural rearrangements often occur during the reaction of HX with an alkene."
+  },
+  {
+    "id": "oc7-methylbutene-hcl",
+    "type": "multiple-choice",
+    "prompt": "What does the reaction of HCl with 3-methyl-1-butene, CH2=CHCH(CH3)2, give?",
+    "choices": [
+      {
+        "text": "Roughly equal amounts of 2-chloro-3-methylbutane and 2-chloro-2-methylbutane",
+        "correct": true
+      },
+      {
+        "text": "Only 2-chloro-3-methylbutane",
+        "why": "That's the “expected” product, but a substantial amount of rearranged 2-chloro-2-methylbutane forms too."
+      },
+      {
+        "text": "Only 2-chloro-2-methylbutane",
+        "why": "About half the product is the unrearranged 2-chloro-3-methylbutane."
+      },
+      {
+        "text": "Roughly equal amounts of 1-chloro-3-methylbutane and 2-chloro-3-methylbutane",
+        "why": "Cl doesn't end up on C1. The second product is the rearranged 2-chloro-2-methylbutane."
+      }
+    ],
+    "explanation": "Reaction of HCl with 3-methyl-1-butene yields about 50% of the “expected” product, 2-chloro-3-methylbutane, and about 50% of the rearranged product, 2-chloro-2-methylbutane."
+  },
+  {
+    "id": "oc7-methylbutene-rearranged-percent",
+    "type": "numeric",
+    "prompt": "In the reaction of HCl with 3-methyl-1-butene, approximately what percentage of the product is the rearranged 2-chloro-2-methylbutane?",
+    "answer": 50,
+    "unit": "%",
+    "explanation": "The reaction gives approximately 50% 2-chloro-3-methylbutane and approximately 50% 2-chloro-2-methylbutane, the product of a hydride shift in the carbocation intermediate."
+  },
+  {
+    "id": "oc7-hydride-shift",
+    "type": "multiple-choice",
+    "prompt": "What is a hydride shift?",
+    "choices": [
+      {
+        "text": "The shift of a hydrogen atom and its electron pair (:H−) between neighboring carbons",
+        "correct": true
+      },
+      {
+        "text": "The shift of a proton (H+), without its electrons, between neighboring carbons",
+        "why": "The hydrogen moves with its electron pair, as a hydride ion, :H−."
+      },
+      {
+        "text": "The shift of a hydrogen atom with a single electron between neighboring carbons",
+        "why": "The hydrogen moves with its bonding electron pair, not with one electron."
+      },
+      {
+        "text": "The loss of a hydrogen from the carbocation to form an alkene",
+        "why": "In a hydride shift the hydrogen stays in the molecule, moving to the neighboring positive carbon."
+      }
+    ],
+    "explanation": "A hydride shift is the shift of a hydrogen atom and its electron pair (a hydride ion, :H−) between neighboring carbons. It lets a less stable carbocation rearrange to a more stable one."
+  },
+  {
+    "id": "oc7-methylbutene-rearrangement",
+    "type": "multiple-choice",
+    "prompt": "How does the carbocation from protonating 3-methyl-1-butene rearrange?",
+    "choices": [
+      {
+        "text": "The secondary carbocation becomes a more stable tertiary carbocation by a hydride shift",
+        "correct": true
+      },
+      {
+        "text": "A tertiary carbocation becomes a secondary carbocation by a hydride shift",
+        "why": "Here the rearrangement goes from less stable to more stable: secondary to tertiary."
+      },
+      {
+        "text": "The secondary carbocation becomes a tertiary carbocation by a methyl shift",
+        "why": "Moving a methyl from the neighboring carbon would leave a secondary cation. It's the hydrogen on that carbon that shifts."
+      },
+      {
+        "text": "A primary carbocation becomes a secondary carbocation by a hydride shift",
+        "why": "Protonation first gives a secondary cation, which then becomes tertiary."
+      }
+    ],
+    "explanation": "Protonation of 3-methyl-1-butene gives a secondary carbocation, CH3CH+CH(CH3)2. A hydride shift from the neighboring carbon converts it into the more stable tertiary carbocation, (CH3)2C+CH2CH3, which adds Cl− to give 2-chloro-2-methylbutane."
+  },
+  {
+    "id": "oc7-tertiary-after-shift",
+    "type": "numeric",
+    "prompt": "After the hydride shift, the carbocation from 3-methyl-1-butene is (CH3)2C+CH2CH3. How many alkyl groups are bonded to its positively charged carbon?",
+    "answer": 3,
+    "explanation": "The positive carbon carries two methyl groups and an ethyl group, three alkyl groups, so it is tertiary and more stable than the secondary cation it came from."
+  },
+  {
+    "id": "oc7-rearrangement-evidence",
+    "type": "multiple-choice",
+    "prompt": "Why do rearrangements like these support a carbocation mechanism for electrophilic addition?",
+    "choices": [
+      {
+        "text": "A one-step reaction couldn't easily explain them, but a rearranging carbocation can",
+        "correct": true
+      },
+      {
+        "text": "They show that the reaction occurs in a single step, with H and X adding together",
+        "why": "It points the other way: a single-step reaction would make rearrangement difficult to explain."
+      },
+      {
+        "text": "They show that the reaction goes through radical intermediates rather than ions",
+        "why": "The rearranging species is a carbocation; the groups move with their electron pairs."
+      },
+      {
+        "text": "They show that the starting alkene isomerizes before HX ever adds to it",
+        "why": "Whitmore proposed that it is the carbocation intermediate that rearranges, not the starting alkene."
+      }
+    ],
+    "explanation": "If the reaction took place in a single step, rearrangement would be difficult to account for, but if it takes place in several steps, rearrangement is more easily explained. Whitmore suggested that the carbocation intermediate undergoes rearrangement."
+  },
+  {
+    "id": "oc7-dimethylbutene-hcl",
+    "type": "multiple-choice",
+    "prompt": "What does the reaction of HCl with 3,3-dimethyl-1-butene, CH2=CHC(CH3)3, give?",
+    "choices": [
+      {
+        "text": "An equal mixture of 3-chloro-2,2-dimethylbutane and 2-chloro-2,3-dimethylbutane",
+        "correct": true
+      },
+      {
+        "text": "Only 3-chloro-2,2-dimethylbutane",
+        "why": "That is the unrearranged product, but an equal amount of rearranged product forms too."
+      },
+      {
+        "text": "Only 2-chloro-2,3-dimethylbutane",
+        "why": "That's the rearranged product; the unrearranged 3-chloro-2,2-dimethylbutane forms in equal amount."
+      },
+      {
+        "text": "An equal mixture of 1-chloro-3,3-dimethylbutane and 3-chloro-2,2-dimethylbutane",
+        "why": "Cl doesn't end up on C1. The second product is the rearranged 2-chloro-2,3-dimethylbutane."
+      }
+    ],
+    "explanation": "3,3-Dimethyl-1-butene and HCl give an equal mixture of unrearranged 3-chloro-2,2-dimethylbutane and rearranged 2-chloro-2,3-dimethylbutane. The rearranged product comes from a methyl shift in the carbocation."
+  },
+  {
+    "id": "oc7-methyl-shift",
+    "type": "multiple-choice",
+    "prompt": "In the reaction of 3,3-dimethyl-1-butene with HCl, what moves when the carbocation rearranges?",
+    "choices": [
+      {
+        "text": "A methyl group with its electron pair (:CH3−)",
+        "correct": true
+      },
+      {
+        "text": "A hydride ion (:H−) from the neighboring carbon",
+        "why": "The neighboring carbon, C(CH3)3, carries no hydrogen; a methyl group shifts instead."
+      },
+      {
+        "text": "A methyl group without its electrons (CH3+)",
+        "why": "The migrating group takes its bonding electron pair with it, as :CH3−."
+      },
+      {
+        "text": "An ethyl group with its electron pair",
+        "why": "The groups on the neighboring carbon are all methyls; a methyl shifts."
+      }
+    ],
+    "explanation": "The secondary carbocation CH3CH+C(CH3)3 rearranges to a more stable tertiary carbocation by the shift of a methyl group with its electron pair. The neighboring C(CH3)3 carbon has no hydrogen to shift, so an alkyl group moves instead."
+  },
+  {
+    "id": "oc7-dimethylbutene-rearranged-percent",
+    "type": "numeric",
+    "prompt": "In the reaction of 3,3-dimethyl-1-butene with HCl, what percentage of the product is the rearranged 2-chloro-2,3-dimethylbutane?",
+    "answer": 50,
+    "unit": "%",
+    "explanation": "The reaction gives an equal mixture of unrearranged 3-chloro-2,2-dimethylbutane and rearranged 2-chloro-2,3-dimethylbutane, so each is 50%."
+  },
+  {
+    "id": "oc7-shift-features",
+    "type": "multiple-choice",
+    "prompt": "What do the hydride shift and the methyl shift in these two examples have in common?",
+    "choices": [
+      {
+        "text": "A group moves to the adjacent positive carbon with its electron pair, giving a more stable cation",
+        "correct": true
+      },
+      {
+        "text": "A group moves two or more carbons away and leaves its bonding electrons behind",
+        "why": "In both cases the group moves to the adjacent carbon and takes its electron pair with it."
+      },
+      {
+        "text": "A group moves to the adjacent carbon, turning a more stable cation into a less stable one",
+        "why": "In both examples a less stable (secondary) cation becomes a more stable (tertiary) one."
+      },
+      {
+        "text": "A group moves to the adjacent carbon, and the positive charge ends up on that group",
+        "why": "The group takes its electron pair along; the positive charge ends up on the carbon the group left."
+      }
+    ],
+    "explanation": "In both rearrangements a group (:H− or :CH3−) moves to an adjacent positively charged carbon, taking its bonding electron pair with it. Also in both cases, a less stable carbocation rearranges to a more stable ion."
+  },
+  {
+    "id": "oc7-cholesterol-shift",
+    "type": "multiple-choice",
+    "prompt": "During the biosynthesis of cholesterol, the book shows a hydride shift. What kind of change does it make?",
+    "choices": [
+      {
+        "text": "A tertiary carbocation rearranges to an isomeric tertiary carbocation",
+        "correct": true
+      },
+      {
+        "text": "A primary carbocation rearranges to a tertiary carbocation",
+        "why": "Both the starting and the rearranged cations in this example are tertiary."
+      },
+      {
+        "text": "A secondary carbocation rearranges to a tertiary carbocation by a methyl shift",
+        "why": "The cholesterol example is a hydride shift between two tertiary cations."
+      },
+      {
+        "text": "A tertiary carbocation rearranges to a secondary carbocation",
+        "why": "The example shows a tertiary cation becoming another tertiary cation."
+      }
+    ],
+    "explanation": "Carbocation rearrangements are particularly important in the biological pathways by which steroids and related substances are synthesized. During the biosynthesis of cholesterol, a hydride shift converts a tertiary carbocation into an isomeric tertiary carbocation."
+  },
+  {
+    "id": "oc7-vinylcyclohexane",
+    "type": "multiple-choice",
+    "prompt": "Vinylcyclohexane reacts with HBr to give 1-bromo-1-ethylcyclohexane. Which sequence accounts for this?",
+    "choices": [
+      {
+        "text": "A secondary cation forms next to the ring, then a hydride shift from the ring carbon makes it tertiary",
+        "correct": true
+      },
+      {
+        "text": "A tertiary cation forms directly on the ring carbon, with no rearrangement needed",
+        "why": "H+ adds to the CH2 end, so the first cation is on the side-chain CH, which has only two alkyl groups (secondary). A hydride shift makes it tertiary."
+      },
+      {
+        "text": "A secondary cation forms next to the ring and adds Br− without rearranging",
+        "why": "That would put Br on the side-chain carbon, not on the ring carbon as in 1-bromo-1-ethylcyclohexane."
+      },
+      {
+        "text": "A secondary cation forms next to the ring, then a methyl shift from the ring makes it tertiary",
+        "why": "There is no methyl group on the ring. A hydrogen shifts from the ring carbon to the neighboring positive carbon."
+      }
+    ],
+    "explanation": "Protonation of the vinyl group gives a secondary carbocation on the carbon next to the ring. A hydride shift from the ring carbon to that positive carbon gives a more stable tertiary carbocation on the ring, which reacts with Br− to give 1-bromo-1-ethylcyclohexane (Exercise 7.11.1)."
+  },
+  {
+    "id": "oc7-focus-advice",
+    "type": "multiple-choice",
+    "prompt": "When looking at a complex chemical transformation, such as the hydride shift in cholesterol biosynthesis, what does the book advise?",
+    "choices": [
+      {
+        "text": "Focus on the part of the molecule where the change occurs",
+        "correct": true
+      },
+      {
+        "text": "Redraw and analyze the whole molecule before each step",
+        "why": "The book advises focusing only on the small part of the molecule where the chemistry is taking place."
+      },
+      {
+        "text": "Treat biochemical reactions as following their own special rules",
+        "why": "The advice applies to any complex transformation, biochemical or not; the same carbocation chemistry is at work."
+      },
+      {
+        "text": "Skip the mechanism and memorize the overall product",
+        "why": "The advice is to focus on the part of the molecule where the change happens, not to skip the mechanism."
+      }
+    ],
+    "explanation": "As always, when looking at any complex chemical transformation, whether biochemical or not, focus on the part of the molecule where the change is occurring and don't worry about the rest. In the cholesterol example, all the chemistry takes place in a small part of the molecule."
+  }
+]
