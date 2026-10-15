@@ -1,0 +1,210 @@
+[
+  {
+    "id": "oc26-edman-reagents",
+    "type": "multiple-choice",
+    "prompt": "What reagents are used, in order, in the Edman degradation?",
+    "choices": [
+      {
+        "text": "Phenyl isothiocyanate (C6H5–N=C=S), then trifluoroacetic acid",
+        "correct": true
+      },
+      {
+        "text": "Trifluoroacetic acid, then phenyl isothiocyanate (C6H5–N=C=S)",
+        "why": "PITC must first attach to the N-terminal –NH2 group; the acid then splits off the terminal residue."
+      },
+      {
+        "text": "Ninhydrin in aqueous NaOH, then iodoacetic acid",
+        "why": "Ninhydrin is used to detect amino acids in amino acid analysis, not to sequence peptides."
+      },
+      {
+        "text": "Aqueous 6 M HCl at 110 °C for 24 hours",
+        "why": "These conditions hydrolyze all the amide bonds for amino acid analysis, which destroys the sequence information."
+      }
+    ],
+    "explanation": "Edman degradation treats a peptide with phenyl isothiocyanate (PITC), C6H5–N=C=S, followed by trifluoroacetic acid. The first step attaches PITC to the N-terminal –NH2 group, and the second splits off the N-terminal residue."
+  },
+  {
+    "id": "oc26-edman-which-end",
+    "type": "multiple-choice",
+    "prompt": "Which residue does each cycle of the Edman degradation remove from a peptide?",
+    "choices": [
+      {
+        "text": "The N-terminal residue",
+        "correct": true
+      },
+      {
+        "text": "The C-terminal residue",
+        "why": "PITC attaches to the free –NH2 group, so the residue removed is at the N-terminal end."
+      },
+      {
+        "text": "Any residue next to Arg or Lys",
+        "why": "That describes cleavage by trypsin, not the Edman degradation."
+      },
+      {
+        "text": "A random residue, because the acid step is unselective",
+        "why": "Edman degradation cleaves one amino acid at a time from the N-terminal end; it is acid hydrolysis that is unselective."
+      }
+    ],
+    "explanation": "The first step of the Edman degradation attaches PITC to the –NH2 group of the N-terminal amino acid, and the second step splits that N-terminal residue from the chain. The chain-shortened peptide is then resubmitted for another cycle."
+  },
+  {
+    "id": "oc26-edman-pth",
+    "type": "multiple-choice",
+    "prompt": "In the Edman degradation, what happens to the anilinothiazolinone (ATZ) derivative of the cleaved residue?",
+    "choices": [
+      {
+        "text": "Aqueous acid rearranges it to a phenylthiohydantoin (PTH), which is identified by its elution time",
+        "correct": true
+      },
+      {
+        "text": "It is hydrolyzed back to the free amino acid, which is identified by its ninhydrin color",
+        "why": "The ATZ is converted into a PTH derivative, which is identified by comparing elution times with known PTH derivatives."
+      },
+      {
+        "text": "It reattaches to the chain-shortened peptide for the next cycle",
+        "why": "The chain-shortened peptide goes on to the next cycle; the ATZ is converted into a PTH for identification."
+      },
+      {
+        "text": "It is identified directly by its molecular weight in Table 26.1.1",
+        "why": "The ATZ is first converted into a PTH, which is identified by elution time."
+      }
+    ],
+    "explanation": "Cleavage gives an anilinothiazolinone (ATZ) derivative plus the chain-shortened peptide. Further acid-catalyzed rearrangement with aqueous acid converts the ATZ into a phenylthiohydantoin (PTH), identified by comparing its elution time with those of the PTH derivatives of the 20 common amino acids."
+  },
+  {
+    "id": "oc26-edman-cycles",
+    "type": "numeric",
+    "prompt": "Automated protein sequencers can carry out as many as how many repetitive Edman cycles before by-products interfere with the results?",
+    "answer": 50,
+    "unit": "cycles",
+    "explanation": "Automated sequencers allow as many as 50 repetitive cycles before a buildup of unwanted by-products interferes. For this reason, large proteins are first partially hydrolyzed into smaller fragments, which are sequenced and fitted together by their overlapping ends."
+  },
+  {
+    "id": "oc26-angiotensin-chymotrypsin",
+    "type": "multiple-choice",
+    "prompt": "Angiotensin II has the sequence Asp-Arg-Val-Tyr-Ile-His-Pro-Phe. What fragments form when it is cleaved with chymotrypsin?",
+    "choices": [
+      {
+        "text": "Asp-Arg-Val-Tyr + Ile-His-Pro-Phe",
+        "correct": true
+      },
+      {
+        "text": "Asp-Arg + Val-Tyr-Ile-His-Pro-Phe",
+        "why": "These are the trypsin fragments, from cleavage on the carboxyl side of Arg."
+      },
+      {
+        "text": "Asp-Arg-Val + Tyr-Ile-His-Pro-Phe",
+        "why": "Chymotrypsin cleaves on the carboxyl side of the aryl-substituted residue, so Tyr stays at the end of the first fragment."
+      },
+      {
+        "text": "Asp-Arg-Val-Tyr-Ile-His + Pro-Phe",
+        "why": "Chymotrypsin doesn't cleave next to His; it cleaves after Phe, Tyr, and Trp."
+      }
+    ],
+    "explanation": "Chymotrypsin cleaves only at the carboxyl side of the aryl-substituted amino acids phenylalanine, tyrosine, and tryptophan. Angiotensin II is cut after Tyr; Phe is already the C-terminal residue. The fragments are Asp-Arg-Val-Tyr and Ile-His-Pro-Phe (Exercise 26.6.1)."
+  },
+  {
+    "id": "oc26-angiotensin-trypsin",
+    "type": "multiple-choice",
+    "prompt": "Angiotensin II has the sequence Asp-Arg-Val-Tyr-Ile-His-Pro-Phe. What fragments form when it is cleaved with trypsin?",
+    "choices": [
+      {
+        "text": "Asp-Arg + Val-Tyr-Ile-His-Pro-Phe",
+        "correct": true
+      },
+      {
+        "text": "Asp + Arg-Val-Tyr-Ile-His-Pro-Phe",
+        "why": "Trypsin cleaves on the carboxyl side of Arg, so Arg stays with Asp."
+      },
+      {
+        "text": "Asp-Arg-Val-Tyr + Ile-His-Pro-Phe",
+        "why": "These are the chymotrypsin fragments, from cleavage after Tyr."
+      },
+      {
+        "text": "Asp-Arg + Val-Tyr-Ile-His + Pro-Phe",
+        "why": "Trypsin cleaves only after the basic residues Arg and Lys; His is not one of them."
+      }
+    ],
+    "explanation": "Trypsin catalyzes hydrolysis only at the carboxyl side of arginine and lysine. Angiotensin II has one such residue, Arg, so trypsin gives Asp-Arg and Val-Tyr-Ile-His-Pro-Phe (Exercise 26.6.1)."
+  },
+  {
+    "id": "oc26-angiotensin-first-pth",
+    "type": "multiple-choice",
+    "prompt": "Angiotensin II (Asp-Arg-Val-Tyr-Ile-His-Pro-Phe) undergoes one cycle of Edman degradation. From which amino acid is the PTH derivative formed?",
+    "choices": [
+      {
+        "text": "Aspartic acid",
+        "correct": true
+      },
+      {
+        "text": "Phenylalanine",
+        "why": "Phe is the C-terminal residue; the Edman degradation removes the N-terminal residue."
+      },
+      {
+        "text": "Arginine",
+        "why": "Arg is the second residue; it is removed in the second cycle."
+      },
+      {
+        "text": "Proline",
+        "why": "Pro is next to the C-terminal end; Edman degradation works from the N-terminal end."
+      }
+    ],
+    "explanation": "The Edman degradation removes the N-terminal residue, which is written on the left. For angiotensin II that is Asp, so the first PTH derivative is that of aspartic acid; its side chain carries an acetic acid residue, –CH2CO2H (Exercise 26.6.3)."
+  },
+  {
+    "id": "oc26-hexapeptide-a",
+    "type": "multiple-choice",
+    "prompt": "A hexapeptide containing Arg, Gly, Ile, Leu, Pro, and Val gives the fragments Pro-Leu-Gly, Arg-Pro, and Gly-Ile-Val on partial acid hydrolysis. What is its sequence?",
+    "choices": [
+      {
+        "text": "Arg-Pro-Leu-Gly-Ile-Val",
+        "correct": true
+      },
+      {
+        "text": "Pro-Leu-Gly-Ile-Val-Arg",
+        "why": "This sequence has no Arg-Pro link, so it can't give the Arg-Pro fragment."
+      },
+      {
+        "text": "Gly-Ile-Val-Arg-Pro-Leu",
+        "why": "Here Leu is C-terminal with no Gly after it, so the Pro-Leu-Gly fragment can't form."
+      },
+      {
+        "text": "Arg-Pro-Gly-Ile-Val-Leu",
+        "why": "This sequence has no Pro-Leu link, so it can't give the Pro-Leu-Gly fragment."
+      }
+    ],
+    "explanation": "Fit the fragments by their overlapping ends: Arg-Pro overlaps Pro-Leu-Gly at Pro, and Pro-Leu-Gly overlaps Gly-Ile-Val at Gly. That gives Arg-Pro-Leu-Gly-Ile-Val (Exercise 26.6.4)."
+  },
+  {
+    "id": "oc26-hexapeptide-b",
+    "type": "multiple-choice",
+    "prompt": "A hexapeptide with the composition N, L, M, W, V2 gives the fragments V-L, V-M-W, and W-N-V on partial acid hydrolysis. What is its sequence?",
+    "choices": [
+      {
+        "text": "Val-Met-Trp-Asn-Val-Leu",
+        "correct": true
+      },
+      {
+        "text": "Leu-Val-Asn-Trp-Met-Val",
+        "why": "This is the right sequence read backward. Peptides are written from the N-terminal end, so the fragments V-M-W and W-N-V must read left to right."
+      },
+      {
+        "text": "Val-Met-Trp-Asn-Leu-Val",
+        "why": "This sequence has no W-N-V or V-L link, so it can't give those fragments."
+      },
+      {
+        "text": "Val-Leu-Val-Met-Trp-Asn",
+        "why": "Here Asn is C-terminal with no Val after it, so the W-N-V fragment can't form."
+      }
+    ],
+    "explanation": "V-M-W overlaps W-N-V at W, giving V-M-W-N-V, and W-N-V overlaps V-L at the second V, giving V-M-W-N-V-L. In three-letter codes that is Val-Met-Trp-Asn-Val-Leu; N is asparagine (Exercise 26.6.4)."
+  },
+  {
+    "id": "oc26-trypsin-new-count",
+    "type": "numeric",
+    "prompt": "How many fragments form when the peptide Gly-Lys-Ala-Phe-Arg-Ser is completely cleaved with trypsin?",
+    "answer": 3,
+    "unit": "fragments",
+    "explanation": "Trypsin cleaves only at the carboxyl side of Arg and Lys. This peptide is cut after Lys and after Arg, giving three fragments: Gly-Lys, Ala-Phe-Arg, and Ser."
+  }
+]

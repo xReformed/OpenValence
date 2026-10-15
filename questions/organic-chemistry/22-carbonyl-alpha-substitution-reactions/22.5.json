@@ -1,0 +1,349 @@
+[
+  {
+    "id": "oc22-acetone-pka",
+    "type": "numeric",
+    "prompt": "In the section's comparison of acetone with ethane, what pK_a is given for acetone?",
+    "answer": 19.3,
+    "tolerance": 0.02,
+    "explanation": "Acetone has pK_a = 19.3, while ethane has pK_a ≈ 60. Table 22.5.1 rounds the value for a ketone to 19."
+  },
+  {
+    "id": "oc22-acidity-factor-exponent",
+    "type": "numeric",
+    "prompt": "Comparing acetone (pK_a = 19.3) with ethane (pK_a ≈ 60), the neighboring carbonyl group increases acidity by a factor of 10 to about what power?",
+    "answer": 40,
+    "tolerance": 0.02,
+    "explanation": "The section says the carbonyl group increases the acidity of the ketone over the alkane by a factor of 10^40. (60 − 19.3 ≈ 40.7 pK_a units, which the section rounds to 40.)"
+  },
+  {
+    "id": "oc22-enolate-charge-sites",
+    "type": "multiple-choice",
+    "prompt": "Over which atoms is the negative charge of an enolate ion shared?",
+    "choices": [
+      {
+        "text": "The oxygen and the α carbon",
+        "correct": true
+      },
+      {
+        "text": "Only the α carbon",
+        "why": "Resonance spreads the charge onto the electronegative oxygen, which is what stabilizes the enolate ion."
+      },
+      {
+        "text": "Only the carbonyl carbon",
+        "why": "The charge is shared by the oxygen and the α carbon, not the carbonyl carbon."
+      },
+      {
+        "text": "The α carbon and the β carbon",
+        "why": "The charge is shared with the oxygen through overlap with the carbonyl p orbitals. The β carbon isn't part of that π system."
+      }
+    ],
+    "explanation": "The enolate ion is stabilized by resonance: the negative charge is shared by the electronegative oxygen and the α carbon, as the electrostatic potential map in Figure 22.5.1 shows."
+  },
+  {
+    "id": "oc22-enolate-alpha-carbon",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes the α carbon of an enolate ion?",
+    "choices": [
+      {
+        "text": "It is sp2-hybridized, and its p orbital overlaps the carbonyl p orbitals",
+        "correct": true
+      },
+      {
+        "text": "It is sp3-hybridized, and the negative charge stays on it",
+        "why": "In the enolate the α carbon is sp2, so its p orbital can overlap the carbonyl p orbitals and share the charge with oxygen."
+      },
+      {
+        "text": "It is sp-hybridized, like a carbon in a triple bond",
+        "why": "The α carbon has three σ bonds plus a p orbital, so it is sp2."
+      },
+      {
+        "text": "It is sp2-hybridized, but its p orbital is perpendicular to the carbonyl p orbitals",
+        "why": "If the orbitals didn't overlap, the oxygen couldn't share the charge and there would be no resonance stabilization."
+      }
+    ],
+    "explanation": "The α carbon of the enolate ion is sp2-hybridized and has a p orbital that overlaps the neighboring carbonyl p orbitals. So the negative charge is shared by the electronegative oxygen, and the enolate ion is resonance-stabilized."
+  },
+  {
+    "id": "oc22-alpha-ch-orientation",
+    "type": "multiple-choice",
+    "prompt": "How must the α C–H bond be oriented for a base to abstract the proton?",
+    "choices": [
+      {
+        "text": "Roughly parallel to the p orbitals of the carbonyl group",
+        "correct": true
+      },
+      {
+        "text": "Perpendicular to the p orbitals of the carbonyl group",
+        "why": "The section says proton abstraction occurs when the C–H bond is roughly parallel to the carbonyl p orbitals."
+      },
+      {
+        "text": "Pointing directly at the carbonyl oxygen",
+        "why": "What matters is alignment with the carbonyl p orbitals, so the new p orbital on the α carbon can overlap them."
+      },
+      {
+        "text": "Orientation doesn't matter for proton abstraction",
+        "why": "The section states that abstraction occurs when the bond is oriented roughly parallel to the carbonyl p orbitals."
+      }
+    ],
+    "explanation": "Proton abstraction from a carbonyl compound occurs when the α C–H bond is oriented roughly parallel to the p orbitals of the carbonyl group, so the resulting p orbital on the α carbon overlaps the carbonyl π system (Figure 22.5.1)."
+  },
+  {
+    "id": "oc22-ethoxide-incomplete",
+    "type": "multiple-choice",
+    "prompt": "Why does sodium ethoxide deprotonate acetone only to the extent of about 0.1%?",
+    "choices": [
+      {
+        "text": "Acetone (pK_a 19.3) is a weaker acid than ethanol (pK_a 16)",
+        "correct": true
+      },
+      {
+        "text": "Acetone is a stronger acid than ethanol",
+        "why": "It's the other way round: ethanol (pK_a 16) is the stronger acid, so the equilibrium favors acetone and ethoxide."
+      },
+      {
+        "text": "Acetone's α hydrogens aren't acidic at all",
+        "why": "They are weakly acidic. A more powerful base such as LDA removes them completely."
+      },
+      {
+        "text": "Ethoxide is too sterically hindered to reach the α hydrogens",
+        "why": "The section's reason is the relative acid strengths: ethanol is a stronger acid than acetone."
+      }
+    ],
+    "explanation": "Because carbonyl compounds are only weakly acidic, a strong base is needed. With an alkoxide such as sodium ethoxide, deprotonation of acetone takes place only to about 0.1% because acetone is a weaker acid than ethanol (pK_a = 16). A more powerful base converts the carbonyl compound completely into its enolate ion."
+  },
+  {
+    "id": "oc22-ethoxide-percent",
+    "type": "numeric",
+    "prompt": "To about what extent, in percent, does sodium ethoxide deprotonate acetone?",
+    "answer": 0.1,
+    "unit": "%",
+    "explanation": "Deprotonation takes place only to the extent of about 0.1%, because acetone (pK_a 19.3) is a weaker acid than ethanol (pK_a 16)."
+  },
+  {
+    "id": "oc22-complete-enolate-base",
+    "type": "multiple-choice",
+    "prompt": "Which base readily converts most carbonyl compounds completely into their enolate ions?",
+    "choices": [
+      {
+        "text": "Lithium diisopropylamide, LDA",
+        "correct": true
+      },
+      {
+        "text": "Sodium ethoxide, NaOCH2CH3",
+        "why": "Ethoxide deprotonates acetone only to about 0.1%, because ethanol is a stronger acid than acetone."
+      },
+      {
+        "text": "Diisopropylamine, HN(i-C3H7)2",
+        "why": "Diisopropylamine is the weak acid (pK_a 36) that LDA is made from; LDA is its lithium salt."
+      },
+      {
+        "text": "Sodium methoxide, NaOCH3",
+        "why": "Like ethoxide, methoxide is an alkoxide. Its conjugate acid, CH3OH (pK_a 16), is more acidic than a ketone, so deprotonation is incomplete."
+      }
+    ],
+    "explanation": "LDA, LiN(i-C3H7)2, is the lithium salt of the weak acid diisopropylamine (pK_a = 36), so it is a strong enough base to deprotonate most carbonyl compounds completely."
+  },
+  {
+    "id": "oc22-diisopropylamine-pka",
+    "type": "numeric",
+    "prompt": "What is the pK_a of diisopropylamine, the acid from which LDA is made?",
+    "answer": 36,
+    "explanation": "Diisopropylamine has pK_a = 36 (Table 22.5.1, dialkylamine). Because it is such a weak acid, its lithium salt, LDA, is a strong base that can readily deprotonate most carbonyl compounds."
+  },
+  {
+    "id": "oc22-lda-preparation",
+    "type": "multiple-choice",
+    "prompt": "How is LDA prepared?",
+    "choices": [
+      {
+        "text": "By reaction of butyllithium with diisopropylamine",
+        "correct": true
+      },
+      {
+        "text": "By reaction of sodium ethoxide with diisopropylamine",
+        "why": "Ethoxide is far too weak a base to remove a proton from diisopropylamine (pK_a 36), and it would give a sodium salt, not a lithium one."
+      },
+      {
+        "text": "By reaction of butyllithium with butane",
+        "why": "Butane is the by-product of making LDA, not a starting material."
+      },
+      {
+        "text": "By reaction of a lithium enolate with diisopropylamine",
+        "why": "That is the reverse of enolate formation. Diisopropylamine (pK_a 36) is a much weaker acid than a ketone, so the reaction runs the other way."
+      }
+    ],
+    "explanation": "LDA is easily prepared by reaction of butyllithium with diisopropylamine in tetrahydrofuran, which gives LDA and butane."
+  },
+  {
+    "id": "oc22-lda-soluble",
+    "type": "multiple-choice",
+    "prompt": "Why is LDA soluble in organic solvents?",
+    "choices": [
+      {
+        "text": "Because of its two alkyl (isopropyl) groups",
+        "correct": true
+      },
+      {
+        "text": "Because it is a neutral amine, not a salt",
+        "why": "LDA is the lithium salt of diisopropylamine."
+      },
+      {
+        "text": "Because it is a weak base",
+        "why": "LDA is a strong base; its conjugate acid has pK_a 36. Its solubility comes from its alkyl groups."
+      },
+      {
+        "text": "Because it contains no metal",
+        "why": "LDA contains lithium: its formula is LiN(i-C3H7)2."
+      }
+    ],
+    "explanation": "LDA, LiN(i-C3H7)2, is soluble in organic solvents because of its two alkyl groups."
+  },
+  {
+    "id": "oc22-most-acidic-compound",
+    "type": "multiple-choice",
+    "prompt": "According to Table 22.5.1, which compound has the most acidic C–H hydrogens?",
+    "choices": [
+      {
+        "text": "2,4-Pentanedione, CH3COCH2COCH3",
+        "correct": true
+      },
+      {
+        "text": "Acetone, CH3COCH3",
+        "why": "A ketone has pK_a about 19, much less acidic than a 1,3-diketone (pK_a 9)."
+      },
+      {
+        "text": "Methyl acetate, CH3CO2CH3",
+        "why": "An ester has pK_a about 25."
+      },
+      {
+        "text": "N,N-Dimethylacetamide, CH3CON(CH3)2",
+        "why": "An N,N-dialkylamide has pK_a about 30, the least acidic of these four."
+      }
+    ],
+    "explanation": "Table 22.5.1 gives pK_a values of about 9 for a 1,3-diketone, 19 for a ketone, 25 for an ester, and 30 for an N,N-dialkylamide. The lower the pK_a, the stronger the acid, so 2,4-pentanedione is the most acidic."
+  },
+  {
+    "id": "oc22-diketone-vs-ketone",
+    "type": "numeric",
+    "prompt": "Using the values in Table 22.5.1, by how many pK_a units is a 1,3-diketone such as 2,4-pentanedione more acidic than a ketone such as acetone?",
+    "answer": 10,
+    "explanation": "Table 22.5.1 lists a ketone at pK_a 19 and a 1,3-diketone at pK_a 9: 19 − 9 = 10 pK_a units. A hydrogen flanked by two carbonyl groups is much more acidic."
+  },
+  {
+    "id": "oc22-ketoester-pka",
+    "type": "numeric",
+    "prompt": "According to Table 22.5.1, what is the approximate pK_a of a 3-keto ester such as methyl acetoacetate, CH3COCH2CO2CH3?",
+    "answer": 11,
+    "explanation": "Table 22.5.1 lists 3-keto esters (β-keto esters) at pK_a 11, between 1,3-diketones (9) and 1,3-diesters (13)."
+  },
+  {
+    "id": "oc22-dicarbonyl-why-acidic",
+    "type": "multiple-choice",
+    "prompt": "Why are β-dicarbonyl compounds such as 2,4-pentanedione much more acidic than simple ketones?",
+    "choices": [
+      {
+        "text": "Their enolate ions share the negative charge with both carbonyl oxygens",
+        "correct": true
+      },
+      {
+        "text": "They have more α hydrogens than simple ketones",
+        "why": "Acidity depends on how well the anion is stabilized, not on how many α hydrogens a compound has. The most acidic hydrogens are the two on the carbon between the carbonyls."
+      },
+      {
+        "text": "Their enolate ions keep the negative charge on the α carbon only",
+        "why": "The charge is spread over the α carbon and both carbonyl oxygens, which is the source of the extra stability."
+      },
+      {
+        "text": "They are carboxylic acids, with acidic –OH hydrogens",
+        "why": "2,4-Pentanedione has no –OH group. Its acidic hydrogens are on the carbon between the two carbonyls."
+      }
+    ],
+    "explanation": "When a hydrogen is flanked by two carbonyl groups, its acidity is enhanced further. The enolate ions of β-dicarbonyl compounds are stabilized by sharing the negative charge with the two neighboring carbonyl oxygens; the enolate of 2,4-pentanedione has three resonance forms."
+  },
+  {
+    "id": "oc22-pentanedione-resonance-forms",
+    "type": "numeric",
+    "prompt": "How many resonance forms does the enolate ion of 2,4-pentanedione have?",
+    "answer": 3,
+    "explanation": "The enolate ion of 2,4-pentanedione has three resonance forms: one with the charge on the central carbon and one with the charge on each of the two carbonyl oxygens."
+  },
+  {
+    "id": "oc22-worked-example-ranking",
+    "type": "multiple-choice",
+    "prompt": "Rank these compounds from most acidic to least acidic: (a) 1-phenyl-1,3-butanedione, C6H5COCH2COCH3; (b) methyl 2-methylpropanoate, (CH3)2CHCO2CH3; (c) cyclopentanecarbaldehyde, a cyclopentane ring bearing a –CHO group.",
+    "choices": [
+      {
+        "text": "(a) > (c) > (b)",
+        "correct": true
+      },
+      {
+        "text": "(a) > (b) > (c)",
+        "why": "An aldehyde's α hydrogen is more acidic than an ester's, so (c) comes before (b)."
+      },
+      {
+        "text": "(c) > (a) > (b)",
+        "why": "A β-dicarbonyl compound such as (a) is the most acidic of the three."
+      },
+      {
+        "text": "(b) > (c) > (a)",
+        "why": "This is the reverse. A carboxylic acid derivative such as the ester (b) is the least acidic."
+      }
+    ],
+    "explanation": "As Worked Example 22.5.1 explains, a β-dicarbonyl compound is most acidic, a ketone or aldehyde is next, and a carboxylic acid derivative is least acidic. So the order is (a) > (c) > (b)."
+  },
+  {
+    "id": "oc22-phenylbutanedione-most-acidic",
+    "type": "multiple-choice",
+    "prompt": "Which hydrogens of 1-phenyl-1,3-butanedione, C6H5COCH2COCH3, are the most acidic?",
+    "choices": [
+      {
+        "text": "The CH2 hydrogens between the two carbonyl groups",
+        "correct": true
+      },
+      {
+        "text": "The CH3 hydrogens, next to one carbonyl group",
+        "why": "They are α to one carbonyl group and somewhat acidic, but less so than the hydrogens flanked by two carbonyls."
+      },
+      {
+        "text": "The five hydrogens on the benzene ring",
+        "why": "Ring hydrogens are not on a carbon next to a carbonyl group, so they aren't acidic."
+      },
+      {
+        "text": "The CH3 and CH2 hydrogens, all equally acidic",
+        "why": "The CH2 hydrogens are flanked by two carbonyl groups, which makes them more acidic than the CH3 hydrogens."
+      }
+    ],
+    "explanation": "In Worked Example 22.5.1, the hydrogens on carbon 2, flanked by both carbonyl groups, are the most acidic; those on carbon 4 (the CH3) are less acidic."
+  },
+  {
+    "id": "oc22-isobutyrate-alpha-h",
+    "type": "numeric",
+    "prompt": "How many acidic α hydrogens does methyl 2-methylpropanoate, (CH3)2CHCO2CH3, have?",
+    "answer": 1,
+    "explanation": "The α carbon is the CH next to the carbonyl group, and it has just 1 hydrogen (Worked Example 22.5.1). The two CH3 groups on it are β, and the OCH3 hydrogens are on the far side of the ester oxygen."
+  },
+  {
+    "id": "oc22-nitrile-anion",
+    "type": "multiple-choice",
+    "prompt": "How is the anion formed by removing an α hydrogen from acetonitrile, CH3C≡N, stabilized?",
+    "choices": [
+      {
+        "text": "By resonance that places the negative charge on nitrogen as well as on carbon",
+        "correct": true
+      },
+      {
+        "text": "By resonance that places the negative charge on the nitrile carbon",
+        "why": "The resonance form that stabilizes the anion puts the charge on the electronegative nitrogen."
+      },
+      {
+        "text": "It isn't stabilized, because nitriles aren't acidic",
+        "why": "Nitriles are acidic (pK_a about 25 in Table 22.5.1) and form enolate-like anions."
+      },
+      {
+        "text": "By hydrogen bonding between the anion's carbon and nitrogen",
+        "why": "The stabilization comes from resonance delocalization of the charge onto nitrogen, not from hydrogen bonding."
+      }
+    ],
+    "explanation": "Nitriles, too, are acidic and can be converted into enolate-like anions. The acetonitrile anion has two resonance forms, one with the negative charge on the CH2 carbon and one with it on nitrogen (Exercise 22.5.2)."
+  }
+]

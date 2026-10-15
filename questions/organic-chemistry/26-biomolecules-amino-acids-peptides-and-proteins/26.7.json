@@ -1,0 +1,226 @@
+[
+  {
+    "id": "oc26-synthesis-problem",
+    "type": "multiple-choice",
+    "prompt": "A simple amide can be made by treating an amine and a carboxylic acid with a carbodiimide. Why is peptide synthesis more difficult?",
+    "choices": [
+      {
+        "text": "Many amide bonds must form in a specific order, not at random",
+        "correct": true
+      },
+      {
+        "text": "Amino acids don't react with carbodiimides",
+        "why": "DCC or EDC does couple amino acids; the problem is controlling which groups react."
+      },
+      {
+        "text": "Peptide bonds are esters, which carbodiimides can't form",
+        "why": "Peptide bonds are amides, the same kind of bond carbodiimides form."
+      },
+      {
+        "text": "Amino acids have no free amino groups in solution",
+        "why": "Amino acids have both amino and carboxyl groups, and that is exactly what makes the coupling unselective."
+      }
+    ],
+    "explanation": "A carbodiimide such as DCC or EDC can form an amide from an amine and a carboxylic acid, but in peptide synthesis many different amide bonds must be formed in a specific order. The solution to this specificity problem is protection."
+  },
+  {
+    "id": "oc26-ala-leu-protect",
+    "type": "multiple-choice",
+    "prompt": "To synthesize the dipeptide Ala-Leu, which groups must be protected before coupling?",
+    "choices": [
+      {
+        "text": "The –NH2 group of alanine and the –CO2H group of leucine",
+        "correct": true
+      },
+      {
+        "text": "The –CO2H group of alanine and the –NH2 group of leucine",
+        "why": "These are the two groups that must react to form the Ala-Leu amide bond, so they are left free."
+      },
+      {
+        "text": "The –NH2 groups of both amino acids",
+        "why": "Leucine's –NH2 must stay free to form the amide bond with alanine's carboxyl."
+      },
+      {
+        "text": "No groups; DCC alone couples them selectively",
+        "why": "Without protection, coupling would form amide bonds at random, giving mixtures such as Leu-Ala and Ala-Ala."
+      }
+    ],
+    "explanation": "In Ala-Leu, alanine is N-terminal and leucine is C-terminal, so the bond forms between the alanine carboxyl and the leucine amino group. The –NH2 of alanine and the –CO2H of leucine are protected, the Ala-Leu bond is formed with DCC or EDC, and the protecting groups are removed."
+  },
+  {
+    "id": "oc26-leu-ala-steps",
+    "type": "multiple-choice",
+    "prompt": "Which is the correct first step in the five-step synthesis of Leu-Ala from leucine and alanine?",
+    "choices": [
+      {
+        "text": "Protect the amino group of leucine",
+        "correct": true
+      },
+      {
+        "text": "Protect the amino group of alanine",
+        "why": "In Leu-Ala, alanine's amino group forms the peptide bond, so it must stay free; alanine's carboxyl group is protected instead."
+      },
+      {
+        "text": "Couple leucine and alanine with DCC",
+        "why": "Coupling comes third, after both protecting groups are in place."
+      },
+      {
+        "text": "Protect the carboxyl group of leucine",
+        "why": "Leucine's carboxyl group forms the peptide bond in Leu-Ala, so it must stay free."
+      }
+    ],
+    "explanation": "Exercise 26.7.2: 1. Protect the amino group of leucine. 2. Protect the carboxylic acid group of alanine. 3. Couple the protected amino acids with DCC. 4. Remove the leucine protecting group. 5. Remove the alanine protecting group."
+  },
+  {
+    "id": "oc26-dipeptide-steps",
+    "type": "numeric",
+    "prompt": "How many steps does the book say are needed to synthesize a dipeptide such as Ala-Leu?",
+    "answer": 5,
+    "unit": "steps",
+    "explanation": "Five steps: protect the amino group of one amino acid, protect the carboxyl group of the other, couple them with DCC, and remove each of the two protecting groups."
+  },
+  {
+    "id": "oc26-carboxyl-protection",
+    "type": "multiple-choice",
+    "prompt": "How are carboxyl groups usually protected in peptide synthesis, and how is the protection removed?",
+    "choices": [
+      {
+        "text": "As methyl or benzyl esters, removed by mild hydrolysis with aqueous NaOH",
+        "correct": true
+      },
+      {
+        "text": "As Boc amides, removed with trifluoroacetic acid",
+        "why": "Boc protects amino groups, not carboxyl groups."
+      },
+      {
+        "text": "As Fmoc amides, removed with piperidine",
+        "why": "Fmoc protects amino groups, not carboxyl groups."
+      },
+      {
+        "text": "As methyl or benzyl esters, removed by treatment with DCC",
+        "why": "DCC is the coupling reagent; the esters are removed by mild hydrolysis with aqueous NaOH."
+      }
+    ],
+    "explanation": "Carboxyl groups are often protected as methyl or benzyl esters, introduced by standard ester formation and removed by mild hydrolysis with aqueous NaOH. Benzyl esters can also be cleaved by catalytic hydrogenolysis."
+  },
+  {
+    "id": "oc26-benzyl-hydrogenolysis",
+    "type": "multiple-choice",
+    "prompt": "A benzyl ester protecting group, RCO2–CH2Ph, is removed by catalytic hydrogenolysis with H2. What are the products?",
+    "choices": [
+      {
+        "text": "RCO2H and PhCH3 (toluene)",
+        "correct": true
+      },
+      {
+        "text": "RCH2OH and PhCH2OH",
+        "why": "Hydrogenolysis breaks only the weak benzylic C–O bond; the carboxyl group isn't reduced."
+      },
+      {
+        "text": "RCO2^− Na+ and PhCH2OH",
+        "why": "These are the products of hydrolysis with aqueous NaOH, not of hydrogenolysis."
+      },
+      {
+        "text": "RCHO and PhCH2OH",
+        "why": "Hydrogenolysis cleaves the benzylic C–O bond to give the free acid and toluene."
+      }
+    ],
+    "explanation": "Benzyl esters can be cleaved by catalytic hydrogenolysis of the weak benzylic C–O bond: RCO2–CH2Ph + H2 → RCO2H + PhCH3."
+  },
+  {
+    "id": "oc26-boc-in-out",
+    "type": "multiple-choice",
+    "prompt": "How is the Boc (tert-butyloxycarbonyl) amino-protecting group introduced and removed?",
+    "choices": [
+      {
+        "text": "Introduced with di-tert-butyl dicarbonate; removed by brief treatment with trifluoroacetic acid",
+        "correct": true
+      },
+      {
+        "text": "Introduced with fluorenylmethyloxycarbonyl chloride; removed with piperidine in DMF",
+        "why": "These are the conditions for the Fmoc group."
+      },
+      {
+        "text": "Introduced with di-tert-butyl dicarbonate; removed with 20% piperidine in DMF",
+        "why": "Piperidine removes the Fmoc group; Boc is removed with a strong acid such as CF3CO2H."
+      },
+      {
+        "text": "Introduced with methanol and HCl; removed with aqueous NaOH",
+        "why": "These conditions make and remove methyl esters, which protect carboxyl groups."
+      }
+    ],
+    "explanation": "The Boc group is introduced by reaction of the amino acid with di-tert-butyl dicarbonate in a nucleophilic acyl substitution and is removed by brief treatment with a strong acid such as trifluoroacetic acid, CF3CO2H."
+  },
+  {
+    "id": "oc26-fmoc-removal",
+    "type": "multiple-choice",
+    "prompt": "How is the Fmoc (fluorenylmethyloxycarbonyl) protecting group removed?",
+    "choices": [
+      {
+        "text": "With 20% piperidine in dimethylformamide",
+        "correct": true
+      },
+      {
+        "text": "With trifluoroacetic acid, CF3CO2H",
+        "why": "Trifluoroacetic acid removes the Boc group."
+      },
+      {
+        "text": "With mild aqueous NaOH",
+        "why": "Mild hydrolysis with aqueous NaOH removes methyl and benzyl ester protecting groups from carboxyl groups."
+      },
+      {
+        "text": "With H2 and a hydrogenation catalyst",
+        "why": "Catalytic hydrogenolysis is a way to remove benzyl esters."
+      }
+    ],
+    "explanation": "The Fmoc group, used more commonly than Boc to protect amino groups, is introduced with fluorenylmethyloxycarbonyl chloride and removed with a 20% solution of piperidine in dimethylformamide."
+  },
+  {
+    "id": "oc26-boc-mechanism",
+    "type": "multiple-choice",
+    "prompt": "Formation of a Boc derivative from an amino acid and di-tert-butyl dicarbonate is a nucleophilic acyl substitution. What is the leaving group, and what happens to it?",
+    "choices": [
+      {
+        "text": "tert-Butyl carbonate, which then loses CO2 to give tert-butoxide",
+        "correct": true
+      },
+      {
+        "text": "Chloride ion, which leaves from the acyl carbon",
+        "why": "There is no chlorine in di-tert-butyl dicarbonate; a chloride leaves when Fmoc chloride is used."
+      },
+      {
+        "text": "The amino acid's own carboxylate group, as a carboxylate ion",
+        "why": "The amino acid's amine is the nucleophile; the leaving group comes from the dicarbonate."
+      },
+      {
+        "text": "A tert-butyl cation, which leaves in an S_N1 step",
+        "why": "In a nucleophilic acyl substitution the leaving group departs from the acyl carbon; here that is tert-butyl carbonate."
+      }
+    ],
+    "explanation": "Exercise 26.7.1: the amine of the amino acid is the nucleophile and tert-butyl carbonate is the leaving group. The tert-butyl carbonate then loses CO2 to give tert-butoxide, which is protonated."
+  },
+  {
+    "id": "oc26-insulin-hodgkin",
+    "type": "multiple-choice",
+    "prompt": "Who determined the three-dimensional structure of insulin, work recognized with the 1964 Nobel Prize in Chemistry?",
+    "choices": [
+      {
+        "text": "Dorothy Crowfoot Hodgkin",
+        "correct": true
+      },
+      {
+        "text": "R. Bruce Merrifield",
+        "why": "Merrifield developed solid-phase peptide synthesis (Section 26.8)."
+      },
+      {
+        "text": "William Knowles",
+        "why": "Knowles discovered enantioselective hydrogenation for making amino acids (Section 26.3)."
+      },
+      {
+        "text": "William Stein and Stanford Moore",
+        "why": "Stein and Moore developed the techniques behind the amino acid analyzer (Section 26.5)."
+      }
+    ],
+    "explanation": "Insulin, two chains totaling 51 amino acids linked by two disulfide bridges, has been completely synthesized. Its three-dimensional structure was determined by Dorothy Crowfoot Hodgkin, a British chemist who received the 1964 Nobel Prize in Chemistry."
+  }
+]

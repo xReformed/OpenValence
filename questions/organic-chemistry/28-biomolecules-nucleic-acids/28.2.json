@@ -1,0 +1,234 @@
+[
+  {
+    "id": "oc28-chargaff-guanine",
+    "type": "numeric",
+    "prompt": "A DNA sample contains 22% adenine. What percentage of its bases is guanine?",
+    "answer": 28,
+    "unit": "%",
+    "explanation": "A pairs with T, so T = 22% too, and A + T = 44%. The remaining 56% is split equally between G and C, which also pair: 56% ÷ 2 = 28% guanine."
+  },
+  {
+    "id": "oc28-chargaff-clostridium",
+    "type": "numeric",
+    "prompt": "The DNA of the bacterium Clostridium perfringens contains about 37% adenine. What percentage of its bases is cytosine?",
+    "answer": 13,
+    "unit": "%",
+    "explanation": "Adenine and thymine are present in equal amounts, so A + T = 37% + 37% = 74%. Guanine and cytosine share the remaining 26% equally: 13% each, as the section reports."
+  },
+  {
+    "id": "oc28-chargaff-thymine",
+    "type": "numeric",
+    "prompt": "A DNA sample contains 18% cytosine. What percentage of its bases is thymine?",
+    "answer": 32,
+    "unit": "%",
+    "explanation": "C pairs with G, so G = 18% and G + C = 36%. That leaves 64% for A + T, which are equal: 64% ÷ 2 = 32% thymine."
+  },
+  {
+    "id": "oc28-strands-direction",
+    "type": "multiple-choice",
+    "prompt": "According to the double-helix model, how are the two strands of DNA related?",
+    "choices": [
+      {
+        "text": "They run in opposite directions and are complementary rather than identical",
+        "correct": true
+      },
+      {
+        "text": "They run in the same direction and are identical",
+        "why": "The two strands run in opposite directions, and each is the complement of the other, not a copy."
+      },
+      {
+        "text": "They run in the same direction and are complementary",
+        "why": "The strands are complementary, but they run in opposite directions."
+      },
+      {
+        "text": "They run in opposite directions and are identical",
+        "why": "The strands run in opposite directions, but they are complementary: an A in one is opposite a T in the other, and a C is opposite a G."
+      }
+    ],
+    "explanation": "DNA consists of two polynucleotide strands running in opposite directions and coiled around each other in a double helix. The two strands are complementary rather than identical, held together by hydrogen bonds between A and T and between C and G."
+  },
+  {
+    "id": "oc28-gc-hbonds",
+    "type": "numeric",
+    "prompt": "How many hydrogen bonds hold a G–C base pair together?",
+    "answer": 3,
+    "unit": "hydrogen bonds",
+    "explanation": "In DNA, the G–C pair involves three hydrogen bonds and the A–T pair involves two (Figure 28.2.1)."
+  },
+  {
+    "id": "oc28-at-hbonds",
+    "type": "numeric",
+    "prompt": "How many hydrogen bonds hold an A–T base pair together?",
+    "answer": 2,
+    "unit": "hydrogen bonds",
+    "explanation": "The A–T pair involves two hydrogen bonds, while the G–C pair involves three (Figure 28.2.1)."
+  },
+  {
+    "id": "oc28-hbonds-segment",
+    "type": "numeric",
+    "prompt": "The DNA strand 5′-ATGCGCATTA-3′ is paired with its complementary strand. How many hydrogen bonds hold the two strands together over this segment?",
+    "answer": 24,
+    "unit": "hydrogen bonds",
+    "explanation": "The strand has 6 A or T bases (each in an A–T pair with two hydrogen bonds) and 4 G or C bases (each in a G–C pair with three). Total = 6 × 2 + 4 × 3 = 12 + 12 = 24."
+  },
+  {
+    "id": "oc28-complement-tatgcat",
+    "type": "multiple-choice",
+    "prompt": "What is the complementary DNA strand, written 5′→3′, of 5′-TATGCAT-3′?",
+    "choices": [
+      {
+        "text": "5′-ATGCATA-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-ATACGTA-3′",
+        "why": "ATACGTA is the complement read from the 3′ end. Running opposite to the original, it is (3′) ATACGTA (5′), which reads ATGCATA when written 5′→3′."
+      },
+      {
+        "text": "5′-TACGTAT-3′",
+        "why": "This is just the original sequence reversed, with no base swapped for its partner."
+      },
+      {
+        "text": "5′-TATGCAT-3′",
+        "why": "This is the original strand itself. The two strands are complementary, not identical."
+      }
+    ],
+    "explanation": "Replace A by T, G by C, T by A, and C by G, remembering that the complement runs in the opposite direction. Original (5′) TATGCAT (3′); complement (3′) ATACGTA (5′), or (5′) ATGCATA (3′), as in Worked Example 28.2.1."
+  },
+  {
+    "id": "oc28-complement-ggctaatccgt",
+    "type": "multiple-choice",
+    "prompt": "What is the complementary DNA strand, written 5′→3′, of 5′-GGCTAATCCGT-3′?",
+    "choices": [
+      {
+        "text": "5′-ACGGATTAGCC-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-CCGATTAGGCA-3′",
+        "why": "These are the right partner bases, but in 3′→5′ order. Reading them from the other end gives ACGGATTAGCC."
+      },
+      {
+        "text": "5′-TGCCTAATCGG-3′",
+        "why": "This is the original sequence reversed, with no base swapped for its partner."
+      },
+      {
+        "text": "5′-ACGGAUUAGCC-3′",
+        "why": "DNA uses T, not U. Uracil occurs in RNA."
+      }
+    ],
+    "explanation": "Pair each base (G with C, A with T), then write the new strand from its 5′ end. The complement of (5′) GGCTAATCCGT (3′) is (3′) CCGATTAGGCA (5′), which is (5′) ACGGATTAGCC (3′), as in Exercise 28.2.1."
+  },
+  {
+    "id": "oc28-complement-aacgtg",
+    "type": "multiple-choice",
+    "prompt": "What is the complementary DNA strand, written 5′→3′, of 5′-AACGTG-3′?",
+    "choices": [
+      {
+        "text": "5′-CACGTT-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-TTGCAC-3′",
+        "why": "These are the partner bases, but listed 3′→5′. Written from the 5′ end, the complement is CACGTT."
+      },
+      {
+        "text": "5′-GTGCAA-3′",
+        "why": "This is the original sequence reversed, with no base swapped for its partner."
+      },
+      {
+        "text": "5′-CACGUU-3′",
+        "why": "DNA uses T, not U. Uracil occurs in RNA."
+      }
+    ],
+    "explanation": "Pair A with T and G with C: the complement of (5′) AACGTG (3′) is (3′) TTGCAC (5′). Written in the 5′ → 3′ direction, that is (5′) CACGTT (3′)."
+  },
+  {
+    "id": "oc28-bp-per-turn",
+    "type": "numeric",
+    "prompt": "How many base pairs are there in each full turn of the DNA double helix?",
+    "answer": 10,
+    "unit": "base pairs",
+    "explanation": "The double helix is 20 Å wide, has 10 base pairs per turn, and each turn is 34 Å long (Figure 28.2.2)."
+  },
+  {
+    "id": "oc28-helix-length-50bp",
+    "type": "numeric",
+    "prompt": "How long, in Å, is a stretch of DNA double helix containing 50 base pairs?",
+    "answer": 170,
+    "unit": "Å",
+    "explanation": "There are 10 base pairs per turn and each turn is 34 Å long, so 50 base pairs make 5 turns: 5 × 34 Å = 170 Å."
+  },
+  {
+    "id": "oc28-intercalate",
+    "type": "multiple-choice",
+    "prompt": "What does it mean for a flat polycyclic aromatic molecule to intercalate in DNA?",
+    "choices": [
+      {
+        "text": "It slips sideways between the stacked bases of the double helix",
+        "correct": true
+      },
+      {
+        "text": "It forms a covalent bond to the sugar–phosphate backbone",
+        "why": "Intercalation means slipping between the stacked bases, not bonding to the backbone."
+      },
+      {
+        "text": "It pairs with a base by hydrogen bonding in place of the partner base",
+        "why": "Intercalating molecules slide in between stacked base pairs; they don't replace a base in a pair."
+      },
+      {
+        "text": "It cuts the DNA chain at a specific base sequence",
+        "why": "Intercalation doesn't cut DNA. It is the insertion of a flat molecule between the stacked bases."
+      }
+    ],
+    "explanation": "Both the major groove (12 Å wide) and the minor groove (6 Å wide) are lined by flat heterocyclic bases, so other polycyclic aromatic molecules can slip sideways, or intercalate, between the stacked bases. Many cancer-causing and cancer-preventing agents act this way."
+  },
+  {
+    "id": "oc28-translation-def",
+    "type": "multiple-choice",
+    "prompt": "In the central dogma, which process decodes genetic messages and uses them to synthesize proteins?",
+    "choices": [
+      {
+        "text": "Translation",
+        "correct": true
+      },
+      {
+        "text": "Transcription",
+        "why": "Transcription reads genetic messages and carries them out of the nucleus to the ribosomes; it doesn't make the protein."
+      },
+      {
+        "text": "Replication",
+        "why": "Replication makes identical copies of DNA."
+      },
+      {
+        "text": "Intercalation",
+        "why": "Intercalation is a molecule slipping between DNA's stacked bases, not a step in the central dogma."
+      }
+    ],
+    "explanation": "Three fundamental processes take place: replication (making identical copies of DNA), transcription (reading genetic messages and carrying them to the ribosomes), and translation (decoding the messages to synthesize proteins)."
+  },
+  {
+    "id": "oc28-why-a-equals-t",
+    "type": "multiple-choice",
+    "prompt": "Why do DNA samples always contain equal amounts of adenine and thymine?",
+    "choices": [
+      {
+        "text": "Wherever an A occurs in one strand, a T occurs opposite it in the other strand",
+        "correct": true
+      },
+      {
+        "text": "Adenine and thymine are both purines, so they are made together",
+        "why": "Thymine is a pyrimidine. The equal amounts come from base pairing between the strands."
+      },
+      {
+        "text": "All species have the same proportions of the four bases",
+        "why": "Proportions differ between species: human DNA has about 30% A, while Clostridium perfringens has about 37% A. In every case, though, A equals T."
+      },
+      {
+        "text": "Each adenine is covalently bonded to a thymine in the same strand",
+        "why": "The pairing is between strands, by hydrogen bonds, not by covalent bonds within one strand."
+      }
+    ],
+    "explanation": "The two strands of the double helix are held together by hydrogen bonds between specific pairs of bases, A with T and C with G. This complementary base-pairing explains why A and T are always present in equal amounts, as are G and C."
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "oc28-taq",
+    "type": "multiple-choice",
+    "prompt": "What is Taq polymerase, the key to PCR?",
+    "choices": [
+      {
+        "text": "A heat-stable DNA polymerase from the thermophilic bacterium Thermus aquaticus",
+        "correct": true
+      },
+      {
+        "text": "A restriction enzyme that cuts DNA at a palindromic sequence",
+        "why": "Taq polymerase builds DNA strands; restriction enzymes cut them."
+      },
+      {
+        "text": "A heat-stable DNA ligase that joins Okazaki fragments",
+        "why": "Taq is a polymerase. It extends a primed strand to construct the complete complementary strand."
+      },
+      {
+        "text": "An RNA polymerase that makes mRNA from a DNA template",
+        "why": "Taq makes DNA, not RNA."
+      }
+    ],
+    "explanation": "Taq DNA polymerase is a heat-stable enzyme isolated from Thermus aquaticus, found in a hot spring in Yellowstone National Park. It takes a single DNA strand with a short primer segment at one end and finishes constructing the entire complementary strand."
+  },
+  {
+    "id": "oc28-pcr-denature-temp",
+    "type": "numeric",
+    "prompt": "In the first step of PCR, at what temperature, in °C, does the double-stranded DNA denature into two single strands?",
+    "answer": 95,
+    "unit": "°C",
+    "explanation": "At 95 °C, double-stranded DNA denatures, spontaneously breaking apart into two single strands. Then the temperature is lowered to between 37 and 50 °C for annealing, and raised to 72 °C for synthesis."
+  },
+  {
+    "id": "oc28-pcr-anneal",
+    "type": "multiple-choice",
+    "prompt": "In PCR, what happens when the temperature is lowered to between 37 and 50 °C?",
+    "choices": [
+      {
+        "text": "The primers anneal by hydrogen-bonding to their complementary sequences at the ends of the target strands",
+        "correct": true
+      },
+      {
+        "text": "Taq polymerase adds nucleotides to the primed strands",
+        "why": "Synthesis happens when the temperature is raised to 72 °C."
+      },
+      {
+        "text": "The double-stranded DNA separates into single strands",
+        "why": "Strand separation happens at 95 °C."
+      },
+      {
+        "text": "The two original strands rejoin before the primers can bind",
+        "why": "Because the primers are present in large excess, they anneal to the target strands."
+      }
+    ],
+    "explanation": "In step 2 the temperature is lowered to between 37 and 50 °C, allowing the primers, because of their relatively high concentration, to anneal by hydrogen-bonding to their complementary sequence at the end of each target strand."
+  },
+  {
+    "id": "oc28-pcr-extend-temp",
+    "type": "numeric",
+    "prompt": "In the third step of PCR, to what temperature, in °C, is the mixture raised for Taq polymerase to add nucleotides to the primed strands?",
+    "answer": 72,
+    "unit": "°C",
+    "explanation": "In step 3 the temperature is raised to 72 °C, and Taq polymerase catalyzes the addition of further nucleotides to the two primed DNA strands."
+  },
+  {
+    "id": "oc28-pcr-5-cycles",
+    "type": "numeric",
+    "prompt": "Starting from one double-stranded DNA molecule, how many copies does PCR give in theory after 5 cycles?",
+    "answer": 32,
+    "unit": "copies",
+    "explanation": "Each denature–anneal–synthesize cycle doubles the number of copies: 2 after one cycle, 4 after two, 8 after three, and so on. After 5 cycles: 2^5 = 32 copies."
+  },
+  {
+    "id": "oc28-pcr-1000-copies",
+    "type": "numeric",
+    "prompt": "Starting from one double-stranded DNA molecule, what is the fewest PCR cycles that gives at least 1000 copies in theory?",
+    "answer": 10,
+    "unit": "cycles",
+    "explanation": "After n cycles there are 2^n copies. 2^9 = 512, which is too few, and 2^10 = 1024, so 10 cycles are needed."
+  },
+  {
+    "id": "oc28-pcr-100-start",
+    "type": "numeric",
+    "prompt": "A sample contains 100 molecules of a target DNA. In theory, how many copies are there after 4 PCR cycles?",
+    "answer": 1600,
+    "unit": "copies",
+    "explanation": "Each cycle doubles every molecule present, so after 4 cycles there are 100 × 2^4 = 100 × 16 = 1600 copies."
+  },
+  {
+    "id": "oc28-pcr-practice",
+    "type": "multiple-choice",
+    "prompt": "Thirty PCR cycles should theoretically amplify DNA by 2^30 (∼10^9), yet about 10^6 to 10^8 is routinely achieved. Why?",
+    "choices": [
+      {
+        "text": "The efficiency of each cycle is less than 100%",
+        "correct": true
+      },
+      {
+        "text": "Taq polymerase is destroyed by the 95 °C step",
+        "why": "Taq is heat-stable; that is why it is used. The shortfall comes from each cycle being less than 100% efficient."
+      },
+      {
+        "text": "Each cycle triples the DNA rather than doubling it",
+        "why": "Each cycle at most doubles the DNA; tripling would give more copies, not fewer."
+      },
+      {
+        "text": "Only 10 of the 30 cycles copy DNA",
+        "why": "Every cycle copies DNA; each one just falls short of a perfect doubling."
+      }
+    ],
+    "explanation": "PCR has been automated, and 30 or so cycles can be run in an hour, for a theoretical amplification of 2^30 (∼10^9). In practice, the efficiency of each cycle is less than 100%, and an experimental amplification of about 10^6 to 10^8 is routinely achieved for 30 cycles."
+  },
+  {
+    "id": "oc28-pcr-primers",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes the primers used in PCR?",
+    "choices": [
+      {
+        "text": "Short oligonucleotides of about 20 bases, each complementary to the sequence at the end of one target strand, used in large excess",
+        "correct": true
+      },
+      {
+        "text": "Short oligonucleotides of about 20 bases, each identical to the sequence at the end of one target strand, used in trace amounts",
+        "why": "Each primer is complementary to its target sequence, and it is used in large excess so that it anneals readily."
+      },
+      {
+        "text": "Long DNA strands of about 10,000 bases that copy the whole target, used in large excess",
+        "why": "The primers are short, about 20 bases each. A chain length of 10,000 nucleotides is the size of the starting DNA in the section's example, not of a primer."
+      },
+      {
+        "text": "Short RNA strands of about 20 bases that block Taq polymerase at the end of each target",
+        "why": "The primers are DNA oligonucleotides that Taq extends; they don't block it."
+      }
+    ],
+    "explanation": "Step 1 mixes the DNA with Taq polymerase, Mg^2+ ion, the four dNTPs, and a large excess of two short oligonucleotide primers of about 20 bases each. Each primer is complementary to the sequence at the end of one of the target DNA segments."
+  },
+  {
+    "id": "oc28-vent-pfu",
+    "type": "multiple-choice",
+    "prompt": "How do Vent polymerase and Pfu polymerase compare with Taq polymerase?",
+    "choices": [
+      {
+        "text": "Both are heat-stable, and their error rates are substantially lower than Taq's",
+        "correct": true
+      },
+      {
+        "text": "Both are heat-stable, but their error rates are substantially higher than Taq's",
+        "why": "They are improvements: their error rates are substantially less than that of Taq."
+      },
+      {
+        "text": "Neither is heat-stable, so fresh enzyme must be added after each 95 °C step",
+        "why": "Both are heat-stable, isolated from bacteria growing near geothermal vents in the ocean floor."
+      },
+      {
+        "text": "Both come from the same Yellowstone hot spring as Taq",
+        "why": "Vent and Pfu come from bacteria near geothermal vents in the ocean floor."
+      }
+    ],
+    "explanation": "More recently, improved heat-stable DNA polymerases have become available, including Vent polymerase and Pfu polymerase, both isolated from bacteria growing near geothermal vents in the ocean floor. The error rate of both enzymes is substantially less than that of Taq."
+  }
+]

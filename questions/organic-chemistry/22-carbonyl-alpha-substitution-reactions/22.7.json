@@ -1,0 +1,586 @@
+[
+  {
+    "id": "oc22-alkylation-sn2",
+    "type": "multiple-choice",
+    "prompt": "By what mechanism does an enolate ion react with an alkyl halide in an alkylation?",
+    "choices": [
+      {
+        "text": "S_N2: the enolate displaces the leaving group by backside attack",
+        "correct": true
+      },
+      {
+        "text": "S_N1: the alkyl halide first ionizes to a carbocation",
+        "why": "Enolate alkylation is an S_N2 reaction and is subject to the same constraints as all S_N2 reactions."
+      },
+      {
+        "text": "E2: the enolate removes a β hydrogen from the alkyl halide",
+        "why": "E2 is the competing reaction that takes over with tertiary halides. The alkylation itself is S_N2."
+      },
+      {
+        "text": "Nucleophilic acyl substitution at a carbonyl carbon",
+        "why": "The alkyl halide has no carbonyl group; the enolate attacks the carbon bearing the halogen."
+      }
+    ],
+    "explanation": "Alkylation occurs when the nucleophilic enolate ion reacts with the electrophilic alkyl halide in an S_N2 reaction and displaces the leaving group by backside attack, forming a new C–C bond."
+  },
+  {
+    "id": "oc22-tertiary-halide-fails",
+    "type": "multiple-choice",
+    "prompt": "Why can't 2-bromo-2-methylpropane, (CH3)3CBr, be used to alkylate an enolate ion?",
+    "choices": [
+      {
+        "text": "A competing E2 elimination of HBr occurs instead",
+        "correct": true
+      },
+      {
+        "text": "Bromide can't act as the leaving group in enolate alkylations",
+        "why": "Chloride, bromide, and iodide are all usable leaving groups."
+      },
+      {
+        "text": "It is an aryl halide, so backside approach is blocked",
+        "why": "It is a tertiary alkyl halide. Blocked backside approach is the reason vinylic and aryl halides fail."
+      },
+      {
+        "text": "It reacts so fast that it gives several alkylation products",
+        "why": "Tertiary halides don't react at all in enolate alkylations."
+      }
+    ],
+    "explanation": "Alkylations follow the usual S_N2 constraints: R should be primary or methyl, and preferably allylic or benzylic. Secondary halides react poorly, and tertiary halides don't react at all because a competing E2 elimination of HX occurs instead."
+  },
+  {
+    "id": "oc22-fastest-halide",
+    "type": "multiple-choice",
+    "prompt": "Which halide reacts fastest with an enolate ion?",
+    "choices": [
+      {
+        "text": "Benzyl bromide, C6H5CH2Br",
+        "correct": true
+      },
+      {
+        "text": "1-Bromopropane, CH3CH2CH2Br",
+        "why": "Primary halides work, but allylic and benzylic halides react faster."
+      },
+      {
+        "text": "2-Bromopropane, (CH3)2CHBr",
+        "why": "Secondary halides react poorly."
+      },
+      {
+        "text": "Bromobenzene, C6H5Br",
+        "why": "Aryl halides are unreactive because a backside approach is sterically prevented."
+      }
+    ],
+    "explanation": "The alkyl group should be primary or methyl, and preferably allylic or benzylic. Allylic and benzylic halides react fastest, then primary, then secondary; vinylic and aryl halides are unreactive."
+  },
+  {
+    "id": "oc22-malonic-pka",
+    "type": "numeric",
+    "prompt": "What is the pK_a of diethyl malonate (malonic ester)?",
+    "answer": 13,
+    "explanation": "Diethyl propanedioate (diethyl malonate, or malonic ester) is relatively acidic, pK_a = 13, because its α hydrogens are flanked by two carbonyl groups."
+  },
+  {
+    "id": "oc22-malonic-ethoxide-enough",
+    "type": "multiple-choice",
+    "prompt": "Why can sodium ethoxide in ethanol be used to make the enolate of diethyl malonate, while direct alkylation of a ketone needs LDA?",
+    "choices": [
+      {
+        "text": "Malonic ester's α hydrogens are flanked by two carbonyl groups, making it relatively acidic",
+        "correct": true
+      },
+      {
+        "text": "Sodium ethoxide is a stronger base than LDA",
+        "why": "LDA is the stronger base. Ethoxide works here only because malonic ester is unusually acidic."
+      },
+      {
+        "text": "Diethyl malonate is less acidic than a ketone, so a milder base is needed",
+        "why": "It is more acidic: pK_a 13 for malonic ester versus about 19 for a ketone."
+      },
+      {
+        "text": "Diethyl malonate has more α hydrogens than a ketone",
+        "why": "Acidity comes from the two flanking carbonyl groups, not the number of α hydrogens; malonic ester has only two."
+      }
+    ],
+    "explanation": "Malonic ester and acetoacetic ester syntheses are easy because they involve relatively acidic dicarbonyl compounds, so sodium ethoxide in ethanol can be used to make the enolate ions. Direct alkylation of a monocarbonyl compound needs a strong, sterically hindered base such as LDA."
+  },
+  {
+    "id": "oc22-malonic-chain-length",
+    "type": "numeric",
+    "prompt": "The malonic ester synthesis converts an alkyl halide into a carboxylic acid. By how many carbon atoms does it lengthen the carbon chain?",
+    "answer": 2,
+    "explanation": "The overall effect of the malonic ester synthesis is RX → RCH2CO2H: the alkyl group gains a CH2 and a CO2H, lengthening the chain by two atoms."
+  },
+  {
+    "id": "oc22-malonic-remaining-h",
+    "type": "numeric",
+    "prompt": "After diethyl malonate has been alkylated once, how many acidic α hydrogens does the product have left?",
+    "answer": 1,
+    "explanation": "Malonic ester has two acidic α hydrogens. The monoalkylated product has one left, so the alkylation can be repeated to give a dialkylated malonic ester."
+  },
+  {
+    "id": "oc22-decarboxylation-which",
+    "type": "multiple-choice",
+    "prompt": "Which compound loses CO2 when heated?",
+    "choices": [
+      {
+        "text": "Methylpropanedioic acid, CH3CH(CO2H)2",
+        "correct": true
+      },
+      {
+        "text": "Hexanoic acid, CH3(CH2)4CO2H",
+        "why": "Decarboxylation isn't a general reaction of carboxylic acids. This acid has no second carbonyl group."
+      },
+      {
+        "text": "4-Oxopentanoic acid, CH3COCH2CH2CO2H",
+        "why": "Its ketone carbonyl is one carbon too far from the –CO2H; it isn't a β-keto acid."
+      },
+      {
+        "text": "Butanedioic acid, HO2CCH2CH2CO2H",
+        "why": "Its carboxyl groups are separated by two CH2 groups, so it isn't a substituted malonic acid."
+      }
+    ],
+    "explanation": "Decarboxylation is unique to compounds with a second carbonyl group two atoms away from the –CO2H: substituted malonic acids and β-keto acids. The reaction goes by a cyclic mechanism that first forms an enol, which is why the second carbonyl must be positioned just so."
+  },
+  {
+    "id": "oc22-heptanoic-halide-carbons",
+    "type": "numeric",
+    "prompt": "To make heptanoic acid by a malonic ester synthesis, how many carbon atoms must the alkyl halide have?",
+    "answer": 5,
+    "explanation": "The malonic ester synthesis adds two carbons (RX → RCH2CO2H), so a seven-carbon acid must come from a five-carbon alkyl halide, 1-bromopentane (Worked Example 22.7.1)."
+  },
+  {
+    "id": "oc22-phenylpropanoic-halide",
+    "type": "multiple-choice",
+    "prompt": "Which alkyl halide would you use to make 3-phenylpropanoic acid, C6H5CH2CH2CO2H, by a malonic ester synthesis?",
+    "choices": [
+      {
+        "text": "Benzyl bromide, C6H5CH2Br",
+        "correct": true
+      },
+      {
+        "text": "Bromobenzene, C6H5Br",
+        "why": "Aryl halides don't undergo the S_N2 alkylation, and the product would have one carbon too few anyway."
+      },
+      {
+        "text": "(2-Bromoethyl)benzene, C6H5CH2CH2Br",
+        "why": "This would give C6H5CH2CH2CH2CO2H, 4-phenylbutanoic acid, one carbon too many."
+      },
+      {
+        "text": "1-Bromo-1-phenylethane, C6H5CHBrCH3",
+        "why": "This is a secondary halide, which reacts poorly, and it would give a branched acid, 3-phenylbutanoic acid."
+      }
+    ],
+    "explanation": "Since RX → RCH2CO2H, the R group must be C6H5CH2–, from benzyl bromide: 1. NaOEt; 2. C6H5CH2Br; 3. H3O+, heat (Exercise 22.7.1). Benzylic halides are also among the best S_N2 substrates."
+  },
+  {
+    "id": "oc22-methylpentanoic-halides",
+    "type": "multiple-choice",
+    "prompt": "Which alkyl halide(s) would you use to make 2-methylpentanoic acid, CH3CH2CH2CH(CH3)CO2H, by a malonic ester synthesis?",
+    "choices": [
+      {
+        "text": "1-Bromopropane, then bromomethane, in two alkylations",
+        "correct": true
+      },
+      {
+        "text": "2-Bromopentane, CH3CH2CH2CHBrCH3, in one alkylation",
+        "why": "This secondary halide reacts poorly, and it would put the branch on carbon 3, giving 3-methylhexanoic acid."
+      },
+      {
+        "text": "1-Bromobutane, CH3CH2CH2CH2Br, in one alkylation",
+        "why": "That gives hexanoic acid, an unbranched six-carbon acid."
+      },
+      {
+        "text": "Bromoethane, CH3CH2Br, in two successive alkylations",
+        "why": "Two ethyl groups on the α carbon give 2-ethylbutanoic acid."
+      }
+    ],
+    "explanation": "The α carbon of 2-methylpentanoic acid carries a propyl group and a methyl group, so the malonic ester is alkylated twice: 1. NaOEt; 2. CH3CH2CH2Br; 3. NaOEt; 4. CH3Br; 5. H3O+, heat (Exercise 22.7.1)."
+  },
+  {
+    "id": "oc22-malonic-dialkyl-product",
+    "type": "multiple-choice",
+    "prompt": "Diethyl malonate is treated with sodium ethoxide and 1-bromobutane, then with sodium ethoxide and CH3I, and finally heated with aqueous HCl. What is the product?",
+    "choices": [
+      {
+        "text": "2-Methylhexanoic acid, CH3CH2CH2CH2CH(CH3)CO2H",
+        "correct": true
+      },
+      {
+        "text": "Hexanoic acid, CH3(CH2)4CO2H",
+        "why": "That forms when only the butyl group is added. The second alkylation also puts a methyl group on the α carbon."
+      },
+      {
+        "text": "Heptanoic acid, CH3(CH2)5CO2H",
+        "why": "The methyl group goes on the α carbon as a branch; it doesn't lengthen the chain."
+      },
+      {
+        "text": "Butylmethylpropanedioic acid, CH3(CH2)3C(CH3)(CO2H)2",
+        "why": "Heating with aqueous acid both hydrolyzes the esters and decarboxylates the substituted malonic acid."
+      }
+    ],
+    "explanation": "Alkylation with 1-bromobutane followed by hydrolysis and decarboxylation would give hexanoic acid. A second alkylation with methyl iodide before the acid step puts a methyl on the α carbon, so the product is 2-methylhexanoic acid."
+  },
+  {
+    "id": "oc22-cyclization-base-equiv",
+    "type": "numeric",
+    "prompt": "To make cyclopentanecarboxylic acid, 1,4-dibromobutane is treated with diethyl malonate in the presence of sodium ethoxide. How many equivalents of sodium ethoxide are used?",
+    "answer": 2,
+    "explanation": "Two equivalents of sodium ethoxide are used: one for each alkylation. The second alkylation occurs intramolecularly to close the ring, and hydrolysis and decarboxylation then give cyclopentanecarboxylic acid."
+  },
+  {
+    "id": "oc22-cyclobutane-acid",
+    "type": "multiple-choice",
+    "prompt": "Diethyl malonate is treated with 1,3-dibromopropane, BrCH2CH2CH2Br, and two equivalents of sodium ethoxide, and the product is heated with aqueous HCl. What is the final product?",
+    "choices": [
+      {
+        "text": "Cyclobutanecarboxylic acid",
+        "correct": true
+      },
+      {
+        "text": "Cyclopropanecarboxylic acid",
+        "why": "The ring contains the malonic ester's α carbon plus all three CH2 groups of the dibromide: four carbons, not three."
+      },
+      {
+        "text": "Cyclopentanecarboxylic acid",
+        "why": "That forms from 1,4-dibromobutane, which has one more CH2 group."
+      },
+      {
+        "text": "5-Bromopentanoic acid, BrCH2CH2CH2CH2CO2H",
+        "why": "That would form if the dibromide reacted only once. With two equivalents of base, the second alkylation happens intramolecularly and closes a ring."
+      }
+    ],
+    "explanation": "When a dihalide is used with two equivalents of base, the second alkylation step occurs intramolecularly to give a cyclic product. Here the ring is the α carbon plus three CH2 groups, a four-membered ring; hydrolysis and decarboxylation give cyclobutanecarboxylic acid. Three- to six-membered rings can be made this way."
+  },
+  {
+    "id": "oc22-dibromopentane-ring",
+    "type": "numeric",
+    "prompt": "Diethyl malonate is treated with 1,5-dibromopentane and two equivalents of sodium ethoxide, then heated with aqueous HCl. How many carbon atoms are in the ring of the cycloalkanecarboxylic acid formed?",
+    "answer": 6,
+    "explanation": "The ring is made of the five CH2 groups of the dibromide plus the malonic ester's α carbon: 6 carbons, giving cyclohexanecarboxylic acid. Three-, four-, five-, and six-membered rings can be made this way, though yields decrease for larger rings."
+  },
+  {
+    "id": "oc22-trialkyl-acetic",
+    "type": "multiple-choice",
+    "prompt": "Why can't a trialkylated acetic acid, R3C–CO2H, be made by a malonic ester synthesis?",
+    "choices": [
+      {
+        "text": "Malonic ester has only two acidic α hydrogens to replace",
+        "correct": true
+      },
+      {
+        "text": "The third alkyl halide would have to be tertiary",
+        "why": "Each R group could come from a primary halide. The limit is the number of acidic hydrogens."
+      },
+      {
+        "text": "A dialkylated malonic ester is too acidic to be alkylated again",
+        "why": "A dialkylated malonic ester has no α hydrogen left to remove at all."
+      },
+      {
+        "text": "Decarboxylation would remove one of the three alkyl groups",
+        "why": "Decarboxylation removes CO2 from a carboxyl group, not an alkyl group."
+      }
+    ],
+    "explanation": "Malonic ester has only two acidic α hydrogens, so it can be alkylated at most twice. Mono- and dialkylated acetic acids can be made, but not trialkylated ones (Exercise 22.7.2)."
+  },
+  {
+    "id": "oc22-acetoacetic-carbons-added",
+    "type": "numeric",
+    "prompt": "The acetoacetic ester synthesis converts an alkyl halide into a methyl ketone. How many carbon atoms does it add to the alkyl group of the halide?",
+    "answer": 3,
+    "explanation": "The acetoacetic ester synthesis converts an alkyl halide, RX, into a methyl ketone, RCH2COCH3, having three more carbons. Those three carbons come from acetoacetic ester."
+  },
+  {
+    "id": "oc22-pentanone-acetoacetic",
+    "type": "multiple-choice",
+    "prompt": "Which alkyl halide would you use to make 2-pentanone, CH3COCH2CH2CH3, by an acetoacetic ester synthesis?",
+    "choices": [
+      {
+        "text": "Bromoethane, CH3CH2Br",
+        "correct": true
+      },
+      {
+        "text": "1-Bromopropane, CH3CH2CH2Br",
+        "why": "That adds a three-carbon group, giving 2-hexanone."
+      },
+      {
+        "text": "Bromomethane, CH3Br",
+        "why": "That gives 2-butanone, which has one carbon too few."
+      },
+      {
+        "text": "2-Bromopropane, (CH3)2CHBr",
+        "why": "This secondary halide reacts poorly, and it would give the branched ketone 4-methyl-2-pentanone."
+      }
+    ],
+    "explanation": "The acetoacetic ester synthesis adds three carbons, CH2COCH3, to the alkyl group: RCH2COCH3. For 2-pentanone, R must be ethyl, so bromoethane is used (Worked Example 22.7.2)."
+  },
+  {
+    "id": "oc22-methylhexanone-halide",
+    "type": "multiple-choice",
+    "prompt": "Which alkyl halide would you use to make 5-methyl-2-hexanone, (CH3)2CHCH2CH2COCH3, by an acetoacetic ester synthesis?",
+    "choices": [
+      {
+        "text": "1-Bromo-2-methylpropane, (CH3)2CHCH2Br",
+        "correct": true
+      },
+      {
+        "text": "2-Bromopropane, (CH3)2CHBr",
+        "why": "This secondary halide reacts poorly, and it would give 4-methyl-2-pentanone, one carbon short."
+      },
+      {
+        "text": "1-Bromo-3-methylbutane, (CH3)2CHCH2CH2Br",
+        "why": "This would give (CH3)2CHCH2CH2CH2COCH3, 6-methyl-2-heptanone, one carbon too many."
+      },
+      {
+        "text": "2-Bromo-2-methylpropane, (CH3)3CBr",
+        "why": "Tertiary halides don't alkylate enolates; E2 elimination occurs instead."
+      }
+    ],
+    "explanation": "Removing the CH2COCH3 that acetoacetic ester supplies leaves R = (CH3)2CHCH2–, so the alkyl halide is (CH3)2CHCH2Br (Exercise 22.7.4), a primary halide that reacts well."
+  },
+  {
+    "id": "oc22-acetoacetic-dimethyl",
+    "type": "multiple-choice",
+    "prompt": "Ethyl acetoacetate is treated with sodium ethoxide and CH3I, then again with sodium ethoxide and CH3I, and finally heated with aqueous HCl. What is the product?",
+    "choices": [
+      {
+        "text": "3-Methyl-2-butanone, CH3COCH(CH3)2",
+        "correct": true
+      },
+      {
+        "text": "2-Butanone, CH3COCH2CH3",
+        "why": "That comes from a single methylation. Two methyl groups are added here."
+      },
+      {
+        "text": "3,3-Dimethyl-2-butanone, CH3COC(CH3)3",
+        "why": "That would need three methyl groups on the α carbon, but acetoacetic ester has only two acidic α hydrogens."
+      },
+      {
+        "text": "2,2-Dimethyl-3-oxobutanoic acid, CH3COC(CH3)2CO2H",
+        "why": "This β-keto acid forms on hydrolysis, but it loses CO2 on heating."
+      }
+    ],
+    "explanation": "Acetoacetic ester has two acidic α hydrogens, so it can be dialkylated. Heating with aqueous HCl hydrolyzes the ester to a β-keto acid, which decarboxylates to the ketone. The α carbon ends up with two methyl groups and one hydrogen: CH3COCH(CH3)2."
+  },
+  {
+    "id": "oc22-phenylacetone-impossible",
+    "type": "multiple-choice",
+    "prompt": "Why can't phenylacetone, C6H5CH2COCH3, be made by an acetoacetic ester synthesis?",
+    "choices": [
+      {
+        "text": "It would need bromobenzene, an aryl halide, which doesn't undergo the S_N2 alkylation",
+        "correct": true
+      },
+      {
+        "text": "It isn't a methyl ketone",
+        "why": "It is a methyl ketone (CH3CO–). The trouble is the group that would have to come from the alkyl halide."
+      },
+      {
+        "text": "It would need benzyl bromide, which is too unreactive",
+        "why": "Benzylic halides are among the best. Benzyl bromide would give 4-phenyl-2-butanone instead."
+      },
+      {
+        "text": "Acetoacetic ester can't be alkylated by any halide containing a benzene ring",
+        "why": "C6H5CH2CH2Br, for example, works and gives 5-phenyl-2-pentanone (Exercise 22.7.4)."
+      }
+    ],
+    "explanation": "Phenylacetone is RCH2COCH3 with R = C6H5, so the alkyl halide would have to be bromobenzene. Aryl halides are unreactive in S_N2 reactions because a backside approach is sterically prevented (Exercise 22.7.5)."
+  },
+  {
+    "id": "oc22-cyclic-ketoester",
+    "type": "multiple-choice",
+    "prompt": "Ethyl 2-oxocyclohexanecarboxylate is treated with sodium ethoxide, then with benzyl bromide, and the product is heated with aqueous acid. What is the final product?",
+    "choices": [
+      {
+        "text": "2-Benzylcyclohexanone",
+        "correct": true
+      },
+      {
+        "text": "Ethyl 1-benzyl-2-oxocyclohexanecarboxylate",
+        "why": "That is the alkylated intermediate. Heating in acid hydrolyzes the ester and decarboxylates it."
+      },
+      {
+        "text": "1-Benzyl-2-oxocyclohexanecarboxylic acid",
+        "why": "This β-keto acid loses CO2 on heating."
+      },
+      {
+        "text": "2-Phenylcyclohexanone",
+        "why": "Benzyl bromide adds a benzyl group, C6H5CH2–, not a phenyl group."
+      }
+    ],
+    "explanation": "The three-step sequence of enolate formation, alkylation, and hydrolysis/decarboxylation works for all β-keto esters with acidic α hydrogens. Cyclic β-keto esters such as ethyl 2-oxocyclohexanecarboxylate give 2-substituted cyclohexanones, here 2-benzylcyclohexanone."
+  },
+  {
+    "id": "oc22-lda-why",
+    "type": "multiple-choice",
+    "prompt": "Why is a strong, sterically hindered base such as LDA used for direct alkylation of a ketone?",
+    "choices": [
+      {
+        "text": "To convert the ketone completely to its enolate, without nucleophilic addition",
+        "correct": true
+      },
+      {
+        "text": "Because LDA itself supplies the alkyl group",
+        "why": "The alkyl group comes from the alkyl halide added afterward. LDA only forms the enolate."
+      },
+      {
+        "text": "Because a weak base leaves most of the ketone unchanged, which is desirable",
+        "why": "The goal is complete conversion to the enolate ion, which needs a strong base."
+      },
+      {
+        "text": "Because it works best in a protic solvent such as ethanol",
+        "why": "A nonprotic solvent, such as THF, must be used."
+      }
+    ],
+    "explanation": "To alkylate the α position of a monocarbonyl compound directly, a strong, sterically hindered base such as LDA is needed so that complete conversion to the enolate ion takes place rather than a nucleophilic addition, and a nonprotic solvent must be used."
+  },
+  {
+    "id": "oc22-aldehyde-alkylation",
+    "type": "multiple-choice",
+    "prompt": "Which kind of compound rarely gives high yields of pure products when alkylated directly with LDA?",
+    "choices": [
+      {
+        "text": "Aldehydes",
+        "correct": true
+      },
+      {
+        "text": "Ketones",
+        "why": "Ketones can be alkylated with LDA in THF; 2-methylcyclohexanone is one example."
+      },
+      {
+        "text": "Esters",
+        "why": "Esters can be alkylated with LDA in THF; ethyl 2-methylpropanoate gives ethyl 2,2-dimethylpropanoate in 87% yield."
+      },
+      {
+        "text": "Nitriles",
+        "why": "Nitriles can be alkylated with LDA in THF; phenylacetonitrile gives 2-phenylpropanenitrile in 71% yield."
+      }
+    ],
+    "explanation": "Ketones, esters, and nitriles can all be alkylated using LDA in THF. Aldehydes rarely give high yields of pure products because their enolate ions undergo carbonyl condensation reactions instead of alkylation."
+  },
+  {
+    "id": "oc22-methylcyclohexanone-lda",
+    "type": "multiple-choice",
+    "prompt": "2-Methylcyclohexanone is treated with LDA in THF and then with CH3I. What is the major product?",
+    "choices": [
+      {
+        "text": "2,6-Dimethylcyclohexanone",
+        "correct": true
+      },
+      {
+        "text": "2,2-Dimethylcyclohexanone",
+        "why": "This forms too, but only as the minor product (6% versus 56%). Alkylation happens mainly at the less hindered carbon."
+      },
+      {
+        "text": "2-Ethylcyclohexanone",
+        "why": "The hydrogens of the methyl group on carbon 2 are β hydrogens, not α, so they aren't removed."
+      },
+      {
+        "text": "2,3-Dimethylcyclohexanone",
+        "why": "Carbon 3 is a β carbon; its hydrogens aren't acidic."
+      }
+    ],
+    "explanation": "Both possible enolate ions form, so a mixture results. The major product comes from alkylation at the less hindered, more accessible position: carbon 6 (secondary) rather than carbon 2 (tertiary). So 2,6-dimethylcyclohexanone (56%) dominates over 2,2-dimethylcyclohexanone (6%)."
+  },
+  {
+    "id": "oc22-cyclohexanone-permethylation",
+    "type": "numeric",
+    "prompt": "Cyclohexanone is treated with LDA and excess CH3I until no α hydrogens remain. How many methyl groups does the product carry?",
+    "answer": 4,
+    "explanation": "Cyclohexanone has two α carbons, each a CH2, so it has 4 α hydrogens. Replacing them all gives 2,2,6,6-tetramethylcyclohexanone (Exercise 22.7.7)."
+  },
+  {
+    "id": "oc22-methylcyclohexanecarboxylate-route",
+    "type": "multiple-choice",
+    "prompt": "How might you prepare ethyl 1-methylcyclohexanecarboxylate, a cyclohexane ring with a CO2CH2CH3 group and a CH3 group on the same carbon, by an alkylation?",
+    "choices": [
+      {
+        "text": "Treat ethyl cyclohexanecarboxylate with LDA in THF, then with CH3I",
+        "correct": true
+      },
+      {
+        "text": "Treat ethyl cyclohexanecarboxylate with sodium ethoxide in ethanol, then with CH3I",
+        "why": "A monocarbonyl ester needs a strong, hindered base such as LDA and a nonprotic solvent; ethoxide in ethanol suits the more acidic dicarbonyl compounds."
+      },
+      {
+        "text": "Treat ethyl acetate with LDA in THF, then with 1-bromo-1-methylcyclohexane",
+        "why": "A tertiary halide doesn't alkylate enolates; E2 elimination occurs instead. It would also give a different product."
+      },
+      {
+        "text": "Treat ethyl cyclohexanecarboxylate with LDA in THF, then with CH3OH",
+        "why": "Methanol isn't an alkylating agent. Alkylation needs an alkyl halide such as CH3I."
+      }
+    ],
+    "explanation": "The target has a methyl group on the α carbon of an ester, which can be introduced by S_N2 alkylation of the ester enolate with iodomethane. The enolate is made from ethyl cyclohexanecarboxylate with LDA in THF (Worked Example 22.7.3)."
+  },
+  {
+    "id": "oc22-ethylmethylbutanoate-route",
+    "type": "multiple-choice",
+    "prompt": "Which route uses an alkylation to make methyl 2-ethyl-3-methylbutanoate, (CH3)2CHCH(CH2CH3)CO2CH3?",
+    "choices": [
+      {
+        "text": "Methyl 3-methylbutanoate, (CH3)2CHCH2CO2CH3, with LDA, then CH3CH2I",
+        "correct": true
+      },
+      {
+        "text": "Methyl butanoate, CH3CH2CH2CO2CH3, with LDA, then 2-iodopropane",
+        "why": "This needs a secondary halide, and secondary halides react poorly in enolate alkylations."
+      },
+      {
+        "text": "Methyl 3-methylbutanoate, (CH3)2CHCH2CO2CH3, with LDA, then CH3I",
+        "why": "That adds a methyl group, giving methyl 2,3-dimethylbutanoate."
+      },
+      {
+        "text": "Methyl 2-ethylbutanoate, (CH3CH2)2CHCO2CH3, with LDA, then CH3I",
+        "why": "That gives methyl 2-ethyl-2-methylbutanoate, with no isopropyl group."
+      }
+    ],
+    "explanation": "Look for a methyl or primary alkyl group on the α carbon. The target's α carbon carries an ethyl group (primary, from CH3CH2I) and an isopropyl group (which would need a poorly reacting secondary halide). So alkylate the enolate of methyl 3-methylbutanoate with iodoethane (Exercise 22.7.7)."
+  },
+  {
+    "id": "oc22-pentanenitrile-product",
+    "type": "multiple-choice",
+    "prompt": "Pentanenitrile, CH3CH2CH2CH2CN, is treated with LDA in THF and then with CH3CH2I. What is the product?",
+    "choices": [
+      {
+        "text": "2-Ethylpentanenitrile, CH3CH2CH2CH(CH2CH3)CN",
+        "correct": true
+      },
+      {
+        "text": "Heptanenitrile, CH3(CH2)5CN",
+        "why": "Alkylation happens at the α carbon, next to the C≡N, not at the far end of the chain."
+      },
+      {
+        "text": "3-Ethylpentanenitrile, CH3CH2CH(CH2CH3)CH2CN",
+        "why": "Carbon 3 is a β carbon. Only the α position is deprotonated and alkylated."
+      },
+      {
+        "text": "No reaction, because nitriles have no acidic hydrogens",
+        "why": "Nitriles are acidic at the α position and can be alkylated with LDA in THF, just as ketones and esters can."
+      }
+    ],
+    "explanation": "LDA removes an α hydrogen from the nitrile, and the anion displaces iodide from iodoethane in an S_N2 reaction, putting an ethyl group on the α carbon: 2-ethylpentanenitrile (Exercise 22.7.7)."
+  },
+  {
+    "id": "oc22-biological-alkylation",
+    "type": "multiple-choice",
+    "prompt": "What does the section say about \"enolate ion\" intermediates in biological alkylations, such as the biosynthesis of indolmycin?",
+    "choices": [
+      {
+        "text": "They're short-lived in water; proton removal and alkylation likely occur together",
+        "correct": true
+      },
+      {
+        "text": "They are stable, long-lived ions that can be isolated from cells",
+        "why": "In an aqueous cellular environment such enolate ions are unlikely to exist for long."
+      },
+      {
+        "text": "They are alkylated by alkyl bromides made in the cell",
+        "why": "In indolmycin biosynthesis the alkylating agent is the methyl group of S-adenosylmethionine (SAM)."
+      },
+      {
+        "text": "Enolate alkylations are among the most common reactions in cells",
+        "why": "The section says alkylations are rare, though not unknown, in biological chemistry."
+      }
+    ],
+    "explanation": "In indolmycin biosynthesis, a base removes an acidic α hydrogen from indolylpyruvate and the enolate carries out an S_N2 alkylation on the methyl group of SAM. Enolate ions are unlikely to last long in water, so proton removal and alkylation probably occur at essentially the same time (Figure 22.7.1)."
+  }
+]

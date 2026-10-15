@@ -1,0 +1,370 @@
+[
+  {
+    "id": "oc28-codon-def",
+    "type": "multiple-choice",
+    "prompt": "What is a codon?",
+    "choices": [
+      {
+        "text": "A sequence of three ribonucleotides on mRNA that specifies an amino acid or chain termination",
+        "correct": true
+      },
+      {
+        "text": "A sequence of three amino acids coded by a single gene",
+        "why": "A codon is a triplet of ribonucleotides on mRNA. It specifies one amino acid, not three."
+      },
+      {
+        "text": "The three-ribonucleotide segment on the middle leaf of a tRNA",
+        "why": "That is the anticodon, which is complementary to the codon."
+      },
+      {
+        "text": "A sequence of two ribonucleotides on mRNA that specifies an amino acid",
+        "why": "Each codon has three ribonucleotides, giving 4^3 = 64 possible triplets."
+      }
+    ],
+    "explanation": "Each “word,” or codon, along the mRNA chain is a sequence of three ribonucleotides specific for a given amino acid. For example, UUC directs incorporation of phenylalanine. Three of the codons instead code for chain termination."
+  },
+  {
+    "id": "oc28-triplet-count",
+    "type": "numeric",
+    "prompt": "RNA has four bases. How many different three-base triplets (codons) are possible?",
+    "answer": 64,
+    "unit": "codons",
+    "explanation": "Each of the three positions can be any of four bases, so there are 4^3 = 4 × 4 × 4 = 64 possible triplets. Of these, 61 code for specific amino acids and 3 code for chain termination."
+  },
+  {
+    "id": "oc28-stop-count",
+    "type": "numeric",
+    "prompt": "Of the 64 possible codons, how many code for chain termination (stop)?",
+    "answer": 3,
+    "unit": "codons",
+    "explanation": "61 of the 64 triplets code for specific amino acids and 3 code for chain termination. Table 28.5.1 lists them as UAA, UAG, and UGA."
+  },
+  {
+    "id": "oc28-trna-count",
+    "type": "numeric",
+    "prompt": "How many different tRNAs are there, one for each codon that specifies an amino acid?",
+    "answer": 61,
+    "unit": "tRNAs",
+    "explanation": "There are 61 different tRNAs, one for each of the 61 codons that specify an amino acid. The other 3 codons are stop codons."
+  },
+  {
+    "id": "oc28-codon-cau",
+    "type": "multiple-choice",
+    "prompt": "According to Table 28.5.1, which amino acid does the mRNA codon CAU specify?",
+    "choices": [
+      {
+        "text": "His",
+        "correct": true
+      },
+      {
+        "text": "Gln",
+        "why": "Gln is coded by CAA and CAG. With U as the third base, CA_ codes for His."
+      },
+      {
+        "text": "Tyr",
+        "why": "Tyr is coded by UAU and UAC. Reading CAU backward gives UAC, but codons are read 5′ → 3′ as written."
+      },
+      {
+        "text": "Leu",
+        "why": "Leu is coded by CU_ codons (and UUA, UUG). CAU has A as its second base."
+      }
+    ],
+    "explanation": "In Table 28.5.1, the first base is C, the second is A, and the third is U. That row reads His, His, Gln, Gln for third bases U, C, A, G, so CAU codes for His."
+  },
+  {
+    "id": "oc28-codon-aug",
+    "type": "multiple-choice",
+    "prompt": "According to Table 28.5.1, which amino acid does the codon AUG specify?",
+    "choices": [
+      {
+        "text": "Met",
+        "correct": true
+      },
+      {
+        "text": "Ile",
+        "why": "AUU, AUC, and AUA code for Ile, but AUG, with G as the third base, codes for Met."
+      },
+      {
+        "text": "Val",
+        "why": "Val is coded by GU_ codons, which begin with G."
+      },
+      {
+        "text": "Trp",
+        "why": "Trp is coded by UGG."
+      }
+    ],
+    "explanation": "First base A, second base U: the row reads Ile, Ile, Ile, Met for third bases U, C, A, G. So AUG codes for Met."
+  },
+  {
+    "id": "oc28-stop-codon",
+    "type": "multiple-choice",
+    "prompt": "Which of these mRNA codons is a stop codon?",
+    "choices": [
+      {
+        "text": "UGA",
+        "correct": true
+      },
+      {
+        "text": "UGG",
+        "why": "UGG codes for Trp, the only codon for that amino acid."
+      },
+      {
+        "text": "UAU",
+        "why": "UAU codes for Tyr. The stop codons in the UA_ row are UAA and UAG."
+      },
+      {
+        "text": "AGA",
+        "why": "AGA codes for Arg."
+      }
+    ],
+    "explanation": "Table 28.5.1 lists three stop codons: UAA, UAG, and UGA. When a stop codon is reached, protein synthesis ends and the protein is released from the ribosome."
+  },
+  {
+    "id": "oc28-ser-codons",
+    "type": "numeric",
+    "prompt": "According to Table 28.5.1, how many different codons specify Ser?",
+    "answer": 6,
+    "unit": "codons",
+    "explanation": "Ser is coded by all four UC_ codons (UCU, UCC, UCA, UCG) plus AGU and AGC: 6 codons in total."
+  },
+  {
+    "id": "oc28-ile-codons",
+    "type": "numeric",
+    "prompt": "According to Table 28.5.1, how many different codons specify Ile?",
+    "answer": 3,
+    "unit": "codons",
+    "explanation": "Ile is coded by AUU, AUC, and AUA. The fourth codon in that row, AUG, codes for Met."
+  },
+  {
+    "id": "oc28-anticodon-aug",
+    "type": "multiple-choice",
+    "prompt": "What is the anticodon, written 5′→3′, on the tRNA that reads the mRNA codon 5′-AUG-3′?",
+    "choices": [
+      {
+        "text": "5′-CAU-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-UAC-3′",
+        "why": "UAC pairs base by base with AUG, but it runs 3′ → 5′. Written in the 5′ → 3′ direction, the anticodon is CAU."
+      },
+      {
+        "text": "5′-AUG-3′",
+        "why": "That is the codon itself. The anticodon is complementary to it."
+      },
+      {
+        "text": "5′-CAT-3′",
+        "why": "tRNA is RNA, so it contains U, not T."
+      }
+    ],
+    "explanation": "The complement of (5′)-AUG-(3′) is (3′)-UAC-(5′), which is written (5′)-CAU-(3′). Nucleotide sequences are written 5′ → 3′, so the anticodon's sequence must be reversed, just as UUC is read by the anticodon GAA."
+  },
+  {
+    "id": "oc28-anticodon-tyr",
+    "type": "multiple-choice",
+    "prompt": "Which anticodon, written 5′→3′, is found on a tRNA carrying Tyr?",
+    "choices": [
+      {
+        "text": "GUA",
+        "correct": true
+      },
+      {
+        "text": "UAC",
+        "why": "UAC is a codon for Tyr on mRNA, not the anticodon on the tRNA."
+      },
+      {
+        "text": "AUG",
+        "why": "AUG pairs base by base with the Tyr codon UAC, but it hasn't been reversed into the 5′ → 3′ direction."
+      },
+      {
+        "text": "CAU",
+        "why": "CAU is the anticodon that reads AUG, the codon for Met."
+      }
+    ],
+    "explanation": "Tyr is coded by UAU and UAC. The complement of (5′)-UAC-(3′) is (3′)-AUG-(5′), written (5′)-GUA-(3′); for UAU the anticodon is AUA. Exercise 28.5.2 gives AUA and GUA."
+  },
+  {
+    "id": "oc28-anticodon-ugg",
+    "type": "multiple-choice",
+    "prompt": "A tRNA has the anticodon 5′-UGG-3′. Which amino acid does it carry?",
+    "choices": [
+      {
+        "text": "Pro",
+        "correct": true
+      },
+      {
+        "text": "Trp",
+        "why": "UGG is the Trp codon, but here it is the anticodon. The codon it reads is complementary to it."
+      },
+      {
+        "text": "Thr",
+        "why": "ACC pairs base by base with UGG, but it runs 3′ → 5′. Written 5′ → 3′, the codon is CCA."
+      },
+      {
+        "text": "Gly",
+        "why": "GGU is UGG written backward, without pairing the bases. The codon must be complementary to the anticodon."
+      }
+    ],
+    "explanation": "The codon is complementary to the anticodon: (5′)-UGG-(3′) pairs with (3′)-ACC-(5′), which is the codon (5′)-CCA-(3′). In Table 28.5.1, CCA codes for Pro."
+  },
+  {
+    "id": "oc28-worked-example-peptide",
+    "type": "multiple-choice",
+    "prompt": "What amino acid sequence is coded by the DNA coding (sense) strand 5′-CTA-ACT-AGC-GGG-TCG-CCG-3′?",
+    "choices": [
+      {
+        "text": "Leu-Thr-Ser-Gly-Ser-Pro",
+        "correct": true
+      },
+      {
+        "text": "Arg-Arg-Pro-Ala-Ser-Stop",
+        "why": "This treats the given strand as the template. The mRNA is a copy of the coding strand, with U for T."
+      },
+      {
+        "text": "Asp-Stop-Ser-Pro-Ser-Gly",
+        "why": "This pairs each base with its complement. The mRNA copies the coding strand, so it reads CUA-ACU-AGC-GGG-UCG-CCG."
+      },
+      {
+        "text": "Ala-Ala-Gly-Arg-Ser-Ile",
+        "why": "This reads the mRNA from the 3′ end. Codons are read 5′ → 3′."
+      }
+    ],
+    "explanation": "The mRNA made during transcription is a copy of the coding strand with each T replaced by U: (5′) CUA-ACU-AGC-GGG-UCG-CCG (3′). Table 28.5.1 then gives Leu-Thr-Ser-Gly-Ser-Pro (Worked Example 28.5.1)."
+  },
+  {
+    "id": "oc28-mrna-cuu-aug",
+    "type": "multiple-choice",
+    "prompt": "What amino acid sequence is coded by the mRNA CUU-AUG-GCU-UGG-CCC-UAA?",
+    "choices": [
+      {
+        "text": "Leu-Met-Ala-Trp-Pro-Stop",
+        "correct": true
+      },
+      {
+        "text": "Asn-Pro-Gly-Ser-Val-Phe",
+        "why": "This reads the sequence backward. Codons are read 5′ → 3′, in the order written."
+      },
+      {
+        "text": "Leu-Met-Ala-Cys-Pro-Stop",
+        "why": "UGG codes for Trp. Cys is coded by UGU and UGC."
+      },
+      {
+        "text": "Leu-Ile-Ala-Trp-Pro-Stop",
+        "why": "AUG codes for Met. Ile is coded by AUU, AUC, and AUA."
+      }
+    ],
+    "explanation": "From Table 28.5.1: CUU = Leu, AUG = Met, GCU = Ala, UGG = Trp, CCC = Pro, and UAA = Stop. The sequence is Leu-Met-Ala-Trp-Pro-Stop (Exercise 28.5.3)."
+  },
+  {
+    "id": "oc28-template-for-mrna",
+    "type": "multiple-choice",
+    "prompt": "The mRNA 5′-CUU-AUG-GCU-UGG-CCC-UAA-3′ was made on a DNA template strand. What is that template strand, written 5′→3′?",
+    "choices": [
+      {
+        "text": "5′-TTA-GGG-CCA-AGC-CAT-AAG-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-GAA-TAC-CGA-ACC-GGG-ATT-3′",
+        "why": "These are the right partner bases, but in 3′→5′ order. Read from the 5′ end they give TTA-GGG-CCA-AGC-CAT-AAG."
+      },
+      {
+        "text": "5′-CTT-ATG-GCT-TGG-CCC-TAA-3′",
+        "why": "This is the coding (sense) strand, which the mRNA copies. The template strand is complementary to the mRNA."
+      },
+      {
+        "text": "5′-TTA-GGG-CCA-AGC-CAU-AAG-3′",
+        "why": "DNA contains T, not U."
+      }
+    ],
+    "explanation": "The template is complementary to the mRNA: (5′) CUU-AUG-GCU-UGG-CCC-UAA (3′) pairs with (3′) GAA-TAC-CGA-ACC-GGG-ATT (5′). Written 5′→3′, that is (5′) TTA-GGG-CCA-AGC-CAT-AAG (3′), as in Exercise 28.5.4."
+  },
+  {
+    "id": "oc28-coding-strand-new",
+    "type": "multiple-choice",
+    "prompt": "What amino acid sequence is coded by the DNA coding (sense) strand 5′-ATG-CAC-GTT-TGA-3′?",
+    "choices": [
+      {
+        "text": "Met-His-Val-Stop",
+        "correct": true
+      },
+      {
+        "text": "Met-His-Val-Trp",
+        "why": "TGA gives the mRNA codon UGA, a stop codon. Trp is UGG."
+      },
+      {
+        "text": "Met-Gln-Val-Stop",
+        "why": "CAC gives the codon CAC, which codes for His. Gln is CAA and CAG."
+      },
+      {
+        "text": "Met-Ile-Val-Stop",
+        "why": "CAC gives the codon CAC, which codes for His. Ile is coded by AUU, AUC, and AUA."
+      }
+    ],
+    "explanation": "The mRNA copies the coding strand with U for T: (5′) AUG-CAC-GUU-UGA (3′). Table 28.5.1 gives AUG = Met, CAC = His, GUU = Val, and UGA = Stop."
+  },
+  {
+    "id": "oc28-trna-ester",
+    "type": "multiple-choice",
+    "prompt": "How is the amino acid bonded to its tRNA?",
+    "choices": [
+      {
+        "text": "By an ester linkage through the 3′ hydroxyl on ribose at the 3′ end of the tRNA",
+        "correct": true
+      },
+      {
+        "text": "By an amide linkage to the anticodon on the middle leaf",
+        "why": "The anticodon pairs with the codon. The amino acid is attached at the 3′ end by an ester linkage."
+      },
+      {
+        "text": "By hydrogen bonds to the bases of the anticodon",
+        "why": "The amino acid is attached covalently, by an ester linkage at the tRNA's 3′ end."
+      },
+      {
+        "text": "By an ester linkage through the 5′ phosphate at the 5′ end of the tRNA",
+        "why": "The linkage is at the other end: through the 3′ hydroxyl at the 3′ end."
+      }
+    ],
+    "explanation": "A typical tRNA has about 70 to 100 ribonucleotides and a roughly cloverleaf shape. It is bonded to a specific amino acid by an ester linkage through the 3′ hydroxyl on ribose at its 3′ end, and it carries an anticodon on its middle leaf."
+  },
+  {
+    "id": "oc28-ribosome-rrna",
+    "type": "numeric",
+    "prompt": "Ribosomes consist of ribosomal RNA and protein. About what percentage of a ribosome is ribosomal RNA?",
+    "answer": 60,
+    "unit": "%",
+    "explanation": "Ribosomes are small granular particles in the cytoplasm that consist of about 60% ribosomal RNA and 40% protein. Protein biosynthesis takes place on them."
+  },
+  {
+    "id": "oc28-peptide-length",
+    "type": "numeric",
+    "prompt": "Using Table 28.5.1, how many amino acids are in the peptide coded by the mRNA 5′-AUG-GCU-AAA-UGG-UAG-3′?",
+    "answer": 4,
+    "unit": "amino acids",
+    "explanation": "AUG = Met, GCU = Ala, AAA = Lys, UGG = Trp, and UAG = Stop. The stop codon adds no amino acid; it signals the end. The peptide is Met-Ala-Lys-Trp, 4 amino acids."
+  },
+  {
+    "id": "oc28-stop-signal",
+    "type": "multiple-choice",
+    "prompt": "What happens when a stop codon on mRNA is reached during translation?",
+    "choices": [
+      {
+        "text": "Synthesis ends and the protein is released from the ribosome",
+        "correct": true
+      },
+      {
+        "text": "A tRNA brings a special terminating amino acid into position",
+        "why": "Of the 61 tRNAs, each matches a codon that specifies an amino acid. A stop codon signals the end instead."
+      },
+      {
+        "text": "The ribosome jumps to the next codon and continues the chain",
+        "why": "A stop codon ends synthesis; it doesn't get skipped."
+      },
+      {
+        "text": "The mRNA is spliced and translation starts over",
+        "why": "Splicing happens to transcribed mRNA before translation, not at a stop codon."
+      }
+    ],
+    "explanation": "As each codon is read, tRNAs bring the correct amino acids into position for transfer to the growing peptide. When synthesis of the protein is complete, a “stop” codon signals the end, and the protein is released from the ribosome."
+  }
+]

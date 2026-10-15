@@ -1,0 +1,298 @@
+[
+  {
+    "id": "oc28-restriction-enzyme",
+    "type": "multiple-choice",
+    "prompt": "What do restriction endonucleases (restriction enzymes) do in the first step of DNA sequencing?",
+    "choices": [
+      {
+        "text": "Cleave DNA at points in the chain where a specific base sequence occurs",
+        "correct": true
+      },
+      {
+        "text": "Cleave DNA at random points to give fragments of every length",
+        "why": "Each restriction enzyme cuts only where its specific base sequence occurs, so the cleavage points are known."
+      },
+      {
+        "text": "Join small DNA fragments into one long chain",
+        "why": "Joining fragments is what DNA ligases do in replication. Restriction enzymes cut DNA."
+      },
+      {
+        "text": "Add dye-labeled nucleotides to the end of a DNA fragment",
+        "why": "Dye-labeled dideoxyribonucleotides are added by DNA polymerase in the Sanger method, later."
+      }
+    ],
+    "explanation": "The first step in DNA sequencing is to cleave the enormous chain at known points into smaller, more manageable pieces. Each restriction enzyme cleaves DNA at a point in the chain where a specific base sequence occurs."
+  },
+  {
+    "id": "oc28-alui-site",
+    "type": "multiple-choice",
+    "prompt": "Where does the restriction enzyme AluI cleave DNA?",
+    "choices": [
+      {
+        "text": "Between G and C in the sequence AGCT",
+        "correct": true
+      },
+      {
+        "text": "Between A and G in the sequence AGCT",
+        "why": "AluI cuts in the middle of AG-CT, between G and C."
+      },
+      {
+        "text": "Between C and T in the sequence AGCT",
+        "why": "AluI cuts in the middle of AG-CT, between G and C."
+      },
+      {
+        "text": "After every G in the chain",
+        "why": "Restriction enzymes cut only at a specific sequence, AGCT for AluI, not at every G."
+      }
+    ],
+    "explanation": "AluI cleaves between G and C in the four-base sequence AG-CT. This sequence is a palindrome: (5′)-AGCT-(3′) is the same as its complement (3′)-TCGA-(5′) when both are read 5′ → 3′."
+  },
+  {
+    "id": "oc28-palindrome",
+    "type": "multiple-choice",
+    "prompt": "In the book's sense, which of these DNA sequences is a palindrome, the same as its complement when both are read 5′ → 3′?",
+    "choices": [
+      {
+        "text": "5′-GAATTC-3′",
+        "correct": true
+      },
+      {
+        "text": "5′-GAATTG-3′",
+        "why": "Its complement, read 5′ → 3′, is CAATTC, which differs."
+      },
+      {
+        "text": "5′-GACTTC-3′",
+        "why": "Its complement, read 5′ → 3′, is GAAGTC, which differs."
+      },
+      {
+        "text": "5′-AGGCCA-3′",
+        "why": "Its complement, read 5′ → 3′, is TGGCCT, which differs."
+      }
+    ],
+    "explanation": "Write the complement and read it 5′ → 3′. For GAATTC the complement is (3′)-CTTAAG-(5′), which reads (5′)-GAATTC-(3′): the same sequence. AluI's site, AGCT, is a palindrome in the same way."
+  },
+  {
+    "id": "oc28-sanger-genome",
+    "type": "multiple-choice",
+    "prompt": "Which sequencing method was responsible for first sequencing the entire human genome?",
+    "choices": [
+      {
+        "text": "The Sanger dideoxy method",
+        "correct": true
+      },
+      {
+        "text": "The polymerase chain reaction",
+        "why": "PCR makes copies of a DNA sequence; it doesn't read the sequence."
+      },
+      {
+        "text": "Cleavage by AluI alone",
+        "why": "Restriction enzymes cut DNA into manageable pieces, but the pieces still have to be sequenced."
+      },
+      {
+        "text": "Automated solid-phase DNA synthesis",
+        "why": "DNA synthesizers build oligonucleotides; they don't determine a sequence."
+      }
+    ],
+    "explanation": "The Sanger dideoxy method is among the most frequently used of the dozen or so sequencing methods, and it was the method responsible for first sequencing the entire human genome of 3.0 billion base pairs."
+  },
+  {
+    "id": "oc28-overlap",
+    "type": "multiple-choice",
+    "prompt": "Why is a DNA molecule cut with a second restriction enzyme of different specificity?",
+    "choices": [
+      {
+        "text": "Its segments overlap the first set, so the overlaps let the full sequence be pieced together",
+        "correct": true
+      },
+      {
+        "text": "The second enzyme repairs errors made by the first",
+        "why": "Restriction enzymes cut DNA; they don't repair it."
+      },
+      {
+        "text": "The second enzyme removes the primers left by the first",
+        "why": "Primers are part of the Sanger reaction, not of restriction cleavage."
+      },
+      {
+        "text": "The second enzyme cuts the same sites, doubling the amount of each fragment",
+        "why": "A different specificity means different cut sites, which give different, overlapping segments."
+      }
+    ],
+    "explanation": "Cutting the original DNA with another restriction enzyme gives segments whose sequences partially overlap those from the first enzyme. Sequencing all the segments and identifying the overlapping regions allows complete DNA sequencing."
+  },
+  {
+    "id": "oc28-primer",
+    "type": "multiple-choice",
+    "prompt": "In the Sanger dideoxy method, what is the primer?",
+    "choices": [
+      {
+        "text": "A small piece of DNA complementary to the sequence at the 3′ end of the restriction fragment",
+        "correct": true
+      },
+      {
+        "text": "A small piece of DNA identical to the sequence at the 5′ end of the restriction fragment",
+        "why": "The primer is complementary, not identical, and it pairs at the fragment's 3′ end."
+      },
+      {
+        "text": "A dye-labeled dideoxyribonucleoside triphosphate",
+        "why": "The ddNTPs are separate components that stop chain growth."
+      },
+      {
+        "text": "The enzyme that adds nucleotides to the growing strand",
+        "why": "That is DNA polymerase. The primer is a short DNA piece that the new strand grows from."
+      }
+    ],
+    "explanation": "The mixture contains the restriction fragment, a primer whose sequence is complementary to that on the 3′ end of the fragment, the four dNTPs, and very small amounts of the four dye-labeled ddNTPs. DNA polymerase grows a complementary strand from the end of the primer."
+  },
+  {
+    "id": "oc28-ddntp-structure",
+    "type": "multiple-choice",
+    "prompt": "What is missing from the ribose of a 2′,3′-dideoxyribonucleoside triphosphate (ddNTP)?",
+    "choices": [
+      {
+        "text": "Both the 2′ and 3′ –OH groups",
+        "correct": true
+      },
+      {
+        "text": "Only the 2′ –OH group",
+        "why": "That describes an ordinary 2′-deoxyribonucleoside triphosphate (dNTP), which still has its 3′ –OH."
+      },
+      {
+        "text": "Only the 3′ –OH group",
+        "why": "In a 2′,3′-dideoxy sugar, both the 2′ and 3′ –OH groups are missing."
+      },
+      {
+        "text": "The 5′ triphosphate group",
+        "why": "A ddNTP is still a triphosphate. It lacks the 2′ and 3′ –OH groups."
+      }
+    ],
+    "explanation": "A 2′,3′-dideoxyribonucleoside triphosphate is one in which both the 2′ and 3′ –OH groups are missing from ribose. In the Sanger method each of the four ddNTPs carries a fluorescent dye of a different color."
+  },
+  {
+    "id": "oc28-ddntp-stops",
+    "type": "multiple-choice",
+    "prompt": "Why does DNA synthesis stop when a dideoxyribonucleotide is incorporated into the growing chain?",
+    "choices": [
+      {
+        "text": "The chain end no longer has a 3′-hydroxyl group for adding further nucleotides",
+        "correct": true
+      },
+      {
+        "text": "The fluorescent dye blocks DNA polymerase from the template",
+        "why": "Synthesis stops because of the sugar, not the dye: there is no 3′-hydroxyl left to react."
+      },
+      {
+        "text": "The chain end no longer has a 5′-phosphate group for adding further nucleotides",
+        "why": "New nucleotides add to the 3′ end of the chain, at a 3′-hydroxyl. That group is what's missing."
+      },
+      {
+        "text": "Dideoxyribonucleotides can't pair with any base in the template",
+        "why": "They are incorporated by base pairing; the problem is the missing 3′-hydroxyl afterward."
+      }
+    ],
+    "explanation": "Every so often a dideoxyribonucleotide is incorporated instead of a normal deoxyribonucleotide. DNA synthesis then stops because the chain end no longer has a 3′-hydroxyl group for adding further nucleotides."
+  },
+  {
+    "id": "oc28-ddntp-small-amount",
+    "type": "multiple-choice",
+    "prompt": "In the Sanger method, why are dideoxyribonucleotides incorporated only every so often rather than at every position?",
+    "choices": [
+      {
+        "text": "The normal dNTPs are present at much higher concentration than the ddNTPs",
+        "correct": true
+      },
+      {
+        "text": "DNA polymerase can only add a ddNTP at the very end of the fragment",
+        "why": "A ddNTP can be added at any position; that's why fragments of all possible lengths form."
+      },
+      {
+        "text": "The ddNTPs pair with the template more weakly than dNTPs do",
+        "why": "The section explains it by concentration: only very small amounts of ddNTPs are used."
+      },
+      {
+        "text": "The ddNTPs must first lose their dye before they can be added",
+        "why": "The dye stays attached; it is what identifies the terminal nucleotide."
+      }
+    ],
+    "explanation": "Only very small amounts of the four ddNTPs are used. Most of the time only normal deoxyribonucleotides are incorporated because of their much higher concentration, but every so often a dideoxyribonucleotide is, giving fragments of all possible lengths."
+  },
+  {
+    "id": "oc28-read-sequence",
+    "type": "multiple-choice",
+    "prompt": "After the Sanger reaction, how is the sequence of the restriction fragment read?",
+    "choices": [
+      {
+        "text": "The fragments are separated by size by gel electrophoresis, and the dye color shows the terminal dideoxyribonucleotide of each",
+        "correct": true
+      },
+      {
+        "text": "The fragments are separated by size by gel electrophoresis, and the mass of each shows its terminal nucleotide",
+        "why": "The terminal nucleotide of each piece is identified by the color with which its attached dye fluoresces."
+      },
+      {
+        "text": "The fragments are cut again with AluI, and the cut points show each base",
+        "why": "Restriction cleavage comes before sequencing; the Sanger products are read by size and dye color."
+      },
+      {
+        "text": "The fragments are amplified by PCR, and the number of copies shows each base",
+        "why": "Copy number doesn't reveal a base. The dye color on each size of fragment does."
+      }
+    ],
+    "explanation": "The product is a mixture of DNA fragments of all possible lengths, each ending in one of the four dye-labeled dideoxyribonucleotides. Gel electrophoresis separates them by size, and the color of each fragment's fluorescent dye identifies its last nucleotide, so the sequence can be read in order."
+  },
+  {
+    "id": "oc28-sanger-length",
+    "type": "numeric",
+    "prompt": "Up to about how many nucleotides long a sequence can the automated dideoxy method read?",
+    "answer": 1100,
+    "unit": "nucleotides",
+    "explanation": "The automated dideoxy method can sequence up to 1100 nucleotides in length, with a throughput of up to 19,000 bases per hour, at 98% accuracy."
+  },
+  {
+    "id": "oc28-sanger-accuracy",
+    "type": "numeric",
+    "prompt": "With what percentage accuracy can the automated dideoxy method sequence DNA?",
+    "answer": 98,
+    "unit": "%",
+    "explanation": "Sequences up to 1100 nucleotides long, at up to 19,000 bases per hour, can be sequenced with 98% accuracy."
+  },
+  {
+    "id": "oc28-sanger-throughput",
+    "type": "numeric",
+    "prompt": "At its maximum throughput of 19,000 bases per hour, how many bases can the automated dideoxy method sequence in 3 hours?",
+    "answer": 57000,
+    "unit": "bases",
+    "explanation": "19,000 bases/hour × 3 hours = 57,000 bases."
+  },
+  {
+    "id": "oc28-human-genes",
+    "type": "numeric",
+    "prompt": "About how many genes does the human genome appear to contain?",
+    "answer": 21000,
+    "unit": "genes",
+    "explanation": "Our genome appears to contain only about 21,000 genes, less than one-fourth the previously predicted number and only about twice the number in the common roundworm. The number of kinds of proteins may be about 500,000."
+  },
+  {
+    "id": "oc28-genes-vs-proteins",
+    "type": "multiple-choice",
+    "prompt": "A human has about 21,000 genes but perhaps 500,000 kinds of proteins. How does the section explain this?",
+    "choices": [
+      {
+        "text": "Most proteins are modified after translation, so one gene can give many different proteins",
+        "correct": true
+      },
+      {
+        "text": "Each mRNA is translated by several ribosomes into different proteins",
+        "why": "Every ribosome reads the same codons the same way. The section credits modifications made after translation."
+      },
+      {
+        "text": "Most proteins are made without any gene, directly from amino acids",
+        "why": "Proteins are made by translating mRNA transcribed from genes."
+      },
+      {
+        "text": "Each of the 61 tRNAs makes its own version of every protein",
+        "why": "tRNAs carry amino acids to the ribosome; they don't multiply the number of proteins per gene."
+      }
+    ],
+    "explanation": "The number of genes (about 21,000) is much smaller than the number of kinds of proteins (perhaps 500,000) because most proteins are modified in various ways after translation (posttranslational modifications), so a single gene can ultimately give many different proteins."
+  }
+]

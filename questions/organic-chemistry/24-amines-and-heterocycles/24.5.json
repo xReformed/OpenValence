@@ -1,0 +1,163 @@
+[
+  {
+    "id": "oc24-hh-amine-species",
+    "type": "multiple-choice",
+    "prompt": "When the Henderson–Hasselbalch equation, pH = pK_a + log([A−]/[HA]), is applied to an amine, what are A− and HA?",
+    "choices": [
+      {
+        "text": "A− is the amine, RNH2, and HA is the ammonium ion, RNH3+",
+        "correct": true
+      },
+      {
+        "text": "A− is the ammonium ion, RNH3+, and HA is the amine, RNH2",
+        "why": "That's reversed. HA is the acid form, the one carrying the extra proton: RNH3+."
+      },
+      {
+        "text": "A− is hydroxide ion, and HA is water",
+        "why": "The equation compares the two forms of the amine itself, protonated and unprotonated."
+      },
+      {
+        "text": "A− is the amide anion, RNH−, and HA is the amine, RNH2",
+        "why": "Removing an N–H proton takes a base as strong as butyllithium. In buffered water the pair is the amine and its ammonium ion."
+      }
+    ],
+    "explanation": "For an amine, the acid form HA is the ammonium ion, RNH3+, and the base form A− is the neutral amine, RNH2. So log([RNH2]/[RNH3+]) = pH − pK_a."
+  },
+  {
+    "id": "oc24-methylamine-log-ratio",
+    "type": "numeric",
+    "prompt": "Methylammonium ion has pK_a = 10.64. For methylamine at pH 7.3, what is log([RNH2]/[RNH3+]), to two decimal places?",
+    "answer": -3.34,
+    "explanation": "log([RNH2]/[RNH3+]) = pH − pK_a = 7.3 − 10.64 = −3.34. The negative value shows that the protonated form, methylammonium ion, is far more abundant."
+  },
+  {
+    "id": "oc24-methylamine-ratio",
+    "type": "multiple-choice",
+    "prompt": "For methylamine at pH 7.3, log([RNH2]/[RNH3+]) = −3.34. What is the ratio [RNH2]/[RNH3+]?",
+    "choices": [
+      {
+        "text": "4.6 × 10^−4",
+        "correct": true
+      },
+      {
+        "text": "2.2 × 10^3",
+        "why": "That is the inverse ratio, [RNH3+]/[RNH2]. The antilog of −3.34 is a small number, because the amine is mostly protonated."
+      },
+      {
+        "text": "−3.34",
+        "why": "That is the logarithm of the ratio. The ratio itself is antilog(−3.34)."
+      },
+      {
+        "text": "3.34 × 10^−4",
+        "why": "antilog(−3.34) = 10^−3.34, which is 4.6 × 10^−4, not 3.34 × 10^−4."
+      }
+    ],
+    "explanation": "[RNH2]/[RNH3+] = antilog(−3.34) = 4.6 × 10^−4, so [RNH2] = (4.6 × 10^−4)[RNH3+]. There is only about one methylamine molecule for every 2200 methylammonium ions."
+  },
+  {
+    "id": "oc24-methylamine-concentrations",
+    "type": "multiple-choice",
+    "prompt": "In a 0.0010 M solution of methylamine at pH 7.3, what are the concentrations of methylammonium ion and of free methylamine?",
+    "choices": [
+      {
+        "text": "[RNH3+] = 0.0010 M and [RNH2] = 5 × 10^−7 M",
+        "correct": true
+      },
+      {
+        "text": "[RNH3+] = 5 × 10^−7 M and [RNH2] = 0.0010 M",
+        "why": "That's reversed. At pH 7.3, far below the pK_a of 10.64, nearly all of the amine is protonated."
+      },
+      {
+        "text": "[RNH3+] = [RNH2] = 0.0005 M",
+        "why": "Equal amounts are present only when pH = pK_a. At pH 7.3 the ammonium ion dominates."
+      },
+      {
+        "text": "[RNH3+] = 0.0010 M and [RNH2] = 4.6 × 10^−4 M",
+        "why": "4.6 × 10^−4 is the ratio [RNH2]/[RNH3+], not a concentration. Multiplying it by 0.0010 M gives about 5 × 10^−7 M."
+      }
+    ],
+    "explanation": "Solving [RNH2] = (4.6 × 10^−4)[RNH3+] together with [RNH2] + [RNH3+] = 0.0010 M gives [RNH3+] = 0.0010 M and [RNH2] = 5 × 10^−7 M. Essentially 100% of the methylamine is present as methylammonium ion."
+  },
+  {
+    "id": "oc24-physiological-amine-form",
+    "type": "multiple-choice",
+    "prompt": "In what form does the section say amines exist inside living cells, at the physiological pH of 7.3?",
+    "choices": [
+      {
+        "text": "Essentially entirely in their protonated, ammonium-ion form",
+        "correct": true
+      },
+      {
+        "text": "Essentially entirely as the neutral amine",
+        "why": "That's reversed. At pH 7.3, a 0.0010 M methylamine solution is essentially 100% methylammonium ion."
+      },
+      {
+        "text": "About half protonated and half neutral",
+        "why": "Equal amounts occur only when pH = pK_a. Alkylammonium pK_a's of 10 to 11 are far above 7.3."
+      },
+      {
+        "text": "Mostly neutral, because pH 7.3 is slightly basic",
+        "why": "What matters is pH compared with pK_a. pH 7.3 is more than 3 units below methylammonium's pK_a of 10.64, so the protonated form dominates."
+      }
+    ],
+    "explanation": "At pH 7.3, essentially 100% of the methylamine in a 0.0010 M solution exists as methylammonium ion, and the same is true of other amine bases. So cellular amines are always written in their protonated form."
+  },
+  {
+    "id": "oc24-alanine-form",
+    "type": "multiple-choice",
+    "prompt": "How is an amino acid such as alanine written to show its structure at physiological pH?",
+    "choices": [
+      {
+        "text": "With an –NH3+ group and a –CO2− group",
+        "correct": true
+      },
+      {
+        "text": "With a neutral –NH2 group and a neutral –CO2H group",
+        "why": "At pH 7.3 the amino group is protonated and the carboxylic acid is dissociated."
+      },
+      {
+        "text": "With an –NH3+ group and a neutral –CO2H group",
+        "why": "Carboxylic acids are almost entirely dissociated into carboxylate anions at pH 7.3."
+      },
+      {
+        "text": "With a neutral –NH2 group and a –CO2− group",
+        "why": "Amines are essentially 100% protonated at pH 7.3, so the amino group is –NH3+."
+      }
+    ],
+    "explanation": "At physiological pH, amines are essentially all protonated and carboxylic acids are almost entirely dissociated. So amino acids are written in their ammonium carboxylate form: alanine's amino group is protonated and its carboxylic acid group is dissociated."
+  },
+  {
+    "id": "oc24-ammonia-percent-protonated",
+    "type": "numeric",
+    "prompt": "Ammonium ion, NH4+, has pK_a = 9.26. Using the Henderson–Hasselbalch equation, what percentage of ammonia is present as NH4+ in a solution buffered at pH 7.3, to one decimal place?",
+    "answer": 98.9,
+    "unit": "%",
+    "tolerance": 0.001,
+    "explanation": "log([NH3]/[NH4+]) = pH − pK_a = 7.3 − 9.26 = −1.96, so [NH3]/[NH4+] = 10^−1.96 = 0.011. The protonated fraction is 1/(1 + 0.011) = 0.989, or 98.9% NH4+."
+  },
+  {
+    "id": "oc24-triethylamine-percent-protonated",
+    "type": "numeric",
+    "prompt": "Triethylammonium ion has pK_a = 10.76. What percentage of triethylamine is protonated in a solution buffered at pH 9.76, to one decimal place?",
+    "answer": 90.9,
+    "unit": "%",
+    "tolerance": 0.002,
+    "explanation": "log([amine]/[ammonium ion]) = pH − pK_a = 9.76 − 10.76 = −1.00, so [amine]/[ammonium ion] = 10^−1 = 0.10. The protonated fraction is 1/(1 + 0.10) = 0.909, or 90.9%."
+  },
+  {
+    "id": "oc24-ph-equals-pka-percent",
+    "type": "numeric",
+    "prompt": "Methylammonium ion has pK_a = 10.64. What percentage of methylamine is protonated in a solution buffered at pH 10.64?",
+    "answer": 50,
+    "unit": "%",
+    "explanation": "log([RNH2]/[RNH3+]) = pH − pK_a = 10.64 − 10.64 = 0, so the ratio is 10^0 = 1. The amine and its ammonium ion are present in equal amounts: 50% protonated."
+  },
+  {
+    "id": "oc24-diethylamine-ratio",
+    "type": "numeric",
+    "prompt": "Diethylammonium ion has pK_a = 10.98. At pH 7.3, what is the ratio [ammonium ion]/[amine] for diethylamine, to two significant figures?",
+    "answer": 4800,
+    "tolerance": 0.02,
+    "explanation": "log([amine]/[ammonium ion]) = 7.3 − 10.98 = −3.68, so [ammonium ion]/[amine] = 10^3.68 ≈ 4.8 × 10^3. There are about 4800 diethylammonium ions for every neutral diethylamine molecule: essentially all of it is protonated."
+  }
+]

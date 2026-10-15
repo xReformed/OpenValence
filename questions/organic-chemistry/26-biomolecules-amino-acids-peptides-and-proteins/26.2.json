@@ -1,0 +1,348 @@
+[
+  {
+    "id": "oc26-hh-pka-equal",
+    "type": "multiple-choice",
+    "prompt": "According to the Henderson–Hasselbalch equation, what is true when the pH of a solution equals the pK_a of an acid HA?",
+    "choices": [
+      {
+        "text": "[A^−] and [HA] are equal, because log 1 = 0",
+        "correct": true
+      },
+      {
+        "text": "All of the acid is in the undissociated HA form",
+        "why": "When pH = pK_a, log([A^−]/[HA]) = 0, so the ratio is 1, not 0."
+      },
+      {
+        "text": "All of the acid is in the dissociated A^− form",
+        "why": "Complete deprotonation needs a pH well above the pK_a; at pH = pK_a the two forms are equal."
+      },
+      {
+        "text": "[A^−] is ten times [HA], because log 10 = 1",
+        "why": "A ratio of 10 needs pH − pK_a = 1; at pH = pK_a the difference is 0 and the ratio is 1."
+      }
+    ],
+    "explanation": "Using pH = pK_a + log([A^−]/[HA]), when pH = pK_a the log term must be 0. Since log 1 = 0, [A^−]/[HA] = 1: the two forms are present in equal amounts."
+  },
+  {
+    "id": "oc26-hh-which-pka",
+    "type": "multiple-choice",
+    "prompt": "To find the species present in a solution of alanine (pK_a1 = 2.34, pK_a2 = 9.69) at pH 9.00, which pK_a does the book use in the Henderson–Hasselbalch equation, and why?",
+    "choices": [
+      {
+        "text": "pK_a2, because the pH is much closer to pK_a2 than to pK_a1",
+        "correct": true
+      },
+      {
+        "text": "pK_a1, because the first dissociation always controls the equilibrium",
+        "why": "At pH 9.00 the carboxyl group is fully deprotonated; the equilibrium that matters is the one near pH 9, with pK_a2."
+      },
+      {
+        "text": "The average of pK_a1 and pK_a2, because alanine has two acidic groups",
+        "why": "The average of the two pK_a values is the isoelectric point, not the pK_a used for this calculation."
+      },
+      {
+        "text": "pK_a2, because it is always larger than pK_a1",
+        "why": "pK_a2 is chosen because the pH is near it, not because of its size; at a pH near 2.34 the book would use pK_a1."
+      }
+    ],
+    "explanation": "Because the pH of the solution (9.00) is much closer to pK_a2 (9.69) than to pK_a1 (2.34), the book uses pK_a2: log([A^−]/[HA]) = 9.00 − 9.69 = −0.69."
+  },
+  {
+    "id": "oc26-hh-alanine-ph9",
+    "type": "numeric",
+    "prompt": "In a 1.00 M solution of alanine at pH 9.00 (pK_a2 = 9.69), what percent of the alanine molecules are neutral zwitterions, to the nearest whole percent?",
+    "answer": 83,
+    "unit": "%",
+    "explanation": "log([A^−]/[HA]) = 9.00 − 9.69 = −0.69, so [A^−]/[HA] = antilog(−0.69) = 0.20. With [A^−] + [HA] = 1.00 M, [HA] = 1.00/1.20 = 0.83 M. So 83% of the alanine is zwitterionic and 17% is deprotonated."
+  },
+  {
+    "id": "oc26-hh-glycine-ph1060",
+    "type": "numeric",
+    "prompt": "Glycine has pK_a2 = 9.60 (Table 26.1.1). Using the Henderson–Hasselbalch equation as the book does for alanine, what percent of glycine is in the deprotonated (anion) form at pH 10.60, to the nearest whole percent?",
+    "answer": 91,
+    "unit": "%",
+    "explanation": "log([A^−]/[HA]) = pH − pK_a = 10.60 − 9.60 = 1.00, so [A^−]/[HA] = antilog(1.00) = 10. The fraction deprotonated is 10/(10 + 1) = 0.909, or 91%."
+  },
+  {
+    "id": "oc26-hh-alanine-ratio-334",
+    "type": "numeric",
+    "prompt": "Protonated alanine has pK_a1 = 2.34. At pH 3.34, what is the ratio of zwitterionic alanine to protonated (cationic) alanine?",
+    "answer": 10,
+    "explanation": "For the first dissociation, the zwitterion is A^− and the cation is HA. log([A^−]/[HA]) = 3.34 − 2.34 = 1.00, so the ratio is antilog(1.00) = 10."
+  },
+  {
+    "id": "oc26-hh-glycine-ph-ratio",
+    "type": "numeric",
+    "prompt": "Glycine has pK_a2 = 9.60. At what pH is the ratio of deprotonated glycine to zwitterionic glycine, [A^−]/[HA], equal to 0.10 (to two decimal places)?",
+    "answer": 8.6,
+    "explanation": "pH = pK_a + log([A^−]/[HA]) = 9.60 + log(0.10) = 9.60 + (−1.00) = 8.60."
+  },
+  {
+    "id": "oc26-titration-half-equiv",
+    "type": "numeric",
+    "prompt": "Protonated alanine (pK_a1 = 2.34, pK_a2 = 9.69) is titrated with NaOH. What is the pH after 0.5 equivalent of NaOH has been added (to two decimal places)?",
+    "answer": 2.34,
+    "explanation": "When 0.5 equivalent of NaOH is added, the deprotonation of H2A^+ is 50% complete, so [HA] = [H2A^+] and pH = pK_a1 = 2.34. Figure 26.2.1 notes that at pH 2.34 alanine is a 50 : 50 mix of protonated and neutral forms."
+  },
+  {
+    "id": "oc26-titration-one-equiv",
+    "type": "multiple-choice",
+    "prompt": "During the titration of protonated alanine with NaOH, what is the situation after exactly 1.0 equivalent of NaOH has been added?",
+    "choices": [
+      {
+        "text": "Deprotonation of H2A^+ is finished and the neutral zwitterion HA predominates",
+        "correct": true
+      },
+      {
+        "text": "Alanine is a 50 : 50 mix of protonated and zwitterionic forms",
+        "why": "That is the situation after 0.5 equivalent, at pH 2.34."
+      },
+      {
+        "text": "Alanine is a 50 : 50 mix of zwitterionic and deprotonated forms",
+        "why": "That is the situation after 1.5 equivalents, at pH 9.69."
+      },
+      {
+        "text": "Alanine is entirely deprotonated",
+        "why": "Complete deprotonation of HA requires 2.0 equivalents of NaOH."
+      }
+    ],
+    "explanation": "In the book's titration of alanine: at 0.5 equivalent, deprotonation of H2A^+ is 50% complete; at 1.0 equivalent it is finished and HA predominates (pH 6.01, the pI); at 1.5 equivalents deprotonation of HA is 50% complete; and at 2.0 equivalents it is finished."
+  },
+  {
+    "id": "oc26-pi-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the isoelectric point (pI) of an amino acid?",
+    "choices": [
+      {
+        "text": "The pH at which it exists mainly as the neutral zwitterion, balanced between cation and anion",
+        "correct": true
+      },
+      {
+        "text": "The pH at which the amino acid is entirely protonated and exists as a cation",
+        "why": "That happens in acid solution, well below the pI."
+      },
+      {
+        "text": "The pH at which the amino acid is a 50 : 50 mix of zwitterion and anion",
+        "why": "That is the pH equal to pK_a2 (9.69 for alanine), not the pI."
+      },
+      {
+        "text": "The pK_a value of the α-amino (–NH3^+) group of the amino acid",
+        "why": "The pI is the average of the two pK_a values that involve the neutral zwitterion, not a single pK_a."
+      }
+    ],
+    "explanation": "In acid an amino acid exists mainly as a cation and in base mainly as an anion. In between is the pH at which it is exactly balanced between anionic and cationic forms, existing mainly as the neutral zwitterion: the isoelectric point. For alanine, pI = 6.01."
+  },
+  {
+    "id": "oc26-pi-cysteine",
+    "type": "numeric",
+    "prompt": "Cysteine has pK_a values of 1.96 (α-CO2H), 10.28 (α-NH3^+), and 8.18 (side chain). Using the book's rule for amino acids with a weakly acidic side chain, what is its isoelectric point (to two decimal places)?",
+    "answer": 5.07,
+    "explanation": "For amino acids with a strongly or weakly acidic side chain, pI is the average of the two lowest pK_a values: (1.96 + 8.18)/2 = 5.07, matching Table 26.1.1."
+  },
+  {
+    "id": "oc26-pi-lysine",
+    "type": "numeric",
+    "prompt": "Lysine has pK_a values of 2.18 (α-CO2H), 8.95 (α-NH3^+), and 10.53 (side chain). What is its isoelectric point (to two decimal places)?",
+    "answer": 9.74,
+    "explanation": "For the three amino acids with a basic side chain, pI is the average of the two highest pK_a values: (8.95 + 10.53)/2 = 9.74, matching Table 26.1.1."
+  },
+  {
+    "id": "oc26-pi-glutamic",
+    "type": "numeric",
+    "prompt": "Glutamic acid has pK_a values of 2.19 (α-CO2H), 9.67 (α-NH3^+), and 4.25 (side chain). What is its isoelectric point (to two decimal places)?",
+    "answer": 3.22,
+    "explanation": "For amino acids with an acidic side chain, pI is the average of the two lowest pK_a values: (2.19 + 4.25)/2 = 3.22, matching Table 26.1.1."
+  },
+  {
+    "id": "oc26-pi-basic-rule",
+    "type": "multiple-choice",
+    "prompt": "How does the book calculate the pI of an amino acid with a basic side chain, such as arginine?",
+    "choices": [
+      {
+        "text": "Average the two highest pK_a values",
+        "correct": true
+      },
+      {
+        "text": "Average the two lowest pK_a values",
+        "why": "That rule is for amino acids with a strongly or weakly acidic side chain."
+      },
+      {
+        "text": "Average pK_a1 and pK_a2 of the α groups",
+        "why": "That rule is for the 13 amino acids with a neutral side chain."
+      },
+      {
+        "text": "Average all three pK_a values",
+        "why": "The pI averages only the two pK_a values that involve the neutral zwitterion."
+      }
+    ],
+    "explanation": "The pI of any amino acid is the average of the two pK_a values that involve the neutral zwitterion. For basic side chains that means the two highest: for arginine, (9.04 + 12.48)/2 = 10.76."
+  },
+  {
+    "id": "oc26-pi-tyrosine-pair",
+    "type": "multiple-choice",
+    "prompt": "Tyrosine has pK_a values of 2.20 (α-CO2H), 9.11 (α-NH3^+), and 10.07 (side-chain phenol). Which two values are averaged to give its pI?",
+    "choices": [
+      {
+        "text": "2.20 and 9.11",
+        "correct": true
+      },
+      {
+        "text": "9.11 and 10.07",
+        "why": "Averaging the two highest values is the rule for basic side chains; tyrosine has a weakly acidic side chain."
+      },
+      {
+        "text": "2.20 and 10.07",
+        "why": "The rule for an acidic side chain is to average the two lowest values, which are 2.20 and 9.11."
+      },
+      {
+        "text": "All three values",
+        "why": "The pI averages two pK_a values, the ones that involve the neutral zwitterion."
+      }
+    ],
+    "explanation": "Tyrosine is one of the four amino acids with a strongly or weakly acidic side chain, so its pI is the average of the two lowest pK_a values: (2.20 + 9.11)/2 = 5.66, as in Table 26.1.1."
+  },
+  {
+    "id": "oc26-neutral-pi-range",
+    "type": "multiple-choice",
+    "prompt": "In what pH range are the isoelectric points of the 15 neutral amino acids?",
+    "choices": [
+      {
+        "text": "5.0 to 6.5",
+        "correct": true
+      },
+      {
+        "text": "2.5 to 3.5",
+        "why": "Low pI values like these belong to the two acidic amino acids, aspartic acid (2.77) and glutamic acid (3.22)."
+      },
+      {
+        "text": "7.5 to 11.0",
+        "why": "High pI values belong to the three basic amino acids: histidine (7.59), lysine (9.74), and arginine (10.76)."
+      },
+      {
+        "text": "Exactly 7.0 for all of them",
+        "why": "Their pI values vary slightly, from 5.0 to 6.5, near but not at neutrality."
+      }
+    ],
+    "explanation": "The 15 neutral amino acids have isoelectric points near neutrality, in the pH range 5.0 to 6.5. The acidic amino acids have lower pI values and the basic ones higher pI values."
+  },
+  {
+    "id": "oc26-protein-solubility-pi",
+    "type": "multiple-choice",
+    "prompt": "At what pH is a protein's solubility in water usually lowest?",
+    "choices": [
+      {
+        "text": "At its isoelectric point, where the protein has no net charge",
+        "correct": true
+      },
+      {
+        "text": "Well below its isoelectric point, where it is protonated",
+        "why": "Below the pI the protein carries a positive charge, and solubility is higher."
+      },
+      {
+        "text": "Well above its isoelectric point, where it is deprotonated",
+        "why": "Above the pI the protein carries a negative charge, and solubility is higher."
+      },
+      {
+        "text": "At pH 7.3 for every protein",
+        "why": "Proteins have different pI values (lysozyme 11.0, pepsin about 1.0), so the pH of lowest solubility differs."
+      }
+    ],
+    "explanation": "Solubility in water is usually lowest at the isoelectric point, where the protein has no net charge, and higher both above and below the pI, where the protein is charged."
+  },
+  {
+    "id": "oc26-lysozyme-pi",
+    "type": "multiple-choice",
+    "prompt": "Why does the enzyme lysozyme have a high isoelectric point (pI = 11.0)?",
+    "choices": [
+      {
+        "text": "It has a preponderance of basic amino acids",
+        "correct": true
+      },
+      {
+        "text": "It has a preponderance of acidic amino acids",
+        "why": "A preponderance of acidic amino acids gives a low pI, as in pepsin (pI about 1.0)."
+      },
+      {
+        "text": "It contains no charged amino acids at all",
+        "why": "A protein's pI reflects the cumulative effect of its acidic and basic amino acids; a high pI means many basic ones."
+      },
+      {
+        "text": "It is made only of neutral amino acids, whose pI values are high",
+        "why": "Neutral amino acids have pI values of only 5.0 to 6.5."
+      }
+    ],
+    "explanation": "A protein's overall pI reflects the cumulative effect of its acidic and basic amino acids. Lysozyme has a preponderance of basic amino acids and a high pI (11.0); pepsin has a preponderance of acidic amino acids and a low pI (about 1.0)."
+  },
+  {
+    "id": "oc26-electrophoresis-basic",
+    "type": "multiple-choice",
+    "prompt": "In electrophoresis with a buffer at pH 6.00, how does a basic protein behave?",
+    "choices": [
+      {
+        "text": "It is protonated and migrates toward the negative electrode",
+        "correct": true
+      },
+      {
+        "text": "It is deprotonated and migrates toward the positive electrode",
+        "why": "That describes an acidic protein, whose pI is below the buffer pH."
+      },
+      {
+        "text": "It has no net charge and does not migrate",
+        "why": "That describes a neutral protein with a pI near 6.00."
+      },
+      {
+        "text": "It is protonated and migrates toward the positive electrode",
+        "why": "A positively charged protein moves toward the negative electrode, not the positive one."
+      }
+    ],
+    "explanation": "A basic protein has a pI above the buffer pH of 6.00, so it is protonated and positively charged and migrates toward the negative electrode. An acidic protein is deprotonated and migrates toward the positive electrode, and a neutral protein doesn't migrate (Figure 26.2.2)."
+  },
+  {
+    "id": "oc26-electrophoresis-glu",
+    "type": "multiple-choice",
+    "prompt": "A mixture of glutamic acid (pI 3.22), histidine (pI 7.59), and lysine (pI 9.74) is placed on an electrophoresis strip buffered at pH 6.00. Which one migrates toward the positive electrode?",
+    "choices": [
+      {
+        "text": "Glutamic acid",
+        "correct": true
+      },
+      {
+        "text": "Histidine",
+        "why": "Its pI (7.59) is above 6.00, so it is protonated and migrates toward the negative electrode."
+      },
+      {
+        "text": "Lysine",
+        "why": "Its pI (9.74) is above 6.00, so it is protonated and migrates toward the negative electrode."
+      },
+      {
+        "text": "None of them; all three stay at the center",
+        "why": "Only a species whose pI equals the buffer pH stays put; all three pI values differ from 6.00."
+      }
+    ],
+    "explanation": "Species whose pI is below the buffer pH are deprotonated, carry a negative charge, and migrate toward the positive electrode. Only glutamic acid (pI 3.22) qualifies. Histidine and lysine, with pI values above 6.00, are protonated and move toward the negative electrode."
+  },
+  {
+    "id": "oc26-hemoglobin-charge",
+    "type": "multiple-choice",
+    "prompt": "Hemoglobin has pI = 6.8. What is its net charge at pH 5.3 and at pH 7.3?",
+    "choices": [
+      {
+        "text": "Net positive at pH 5.3; net negative at pH 7.3",
+        "correct": true
+      },
+      {
+        "text": "Net negative at pH 5.3; net positive at pH 7.3",
+        "why": "This is reversed: below the pI a protein is protonated (positive), and above it deprotonated (negative)."
+      },
+      {
+        "text": "Net positive at both pH values",
+        "why": "At pH 7.3, above the pI of 6.8, hemoglobin is deprotonated and negative."
+      },
+      {
+        "text": "No net charge at either pH value",
+        "why": "A protein has no net charge only at its pI, 6.8."
+      }
+    ],
+    "explanation": "Exercise 26.2.1: at pH 5.3, below the pI of 6.8, hemoglobin is protonated and has a net positive charge. At pH 7.3, above the pI, it is deprotonated and has a net negative charge."
+  }
+]

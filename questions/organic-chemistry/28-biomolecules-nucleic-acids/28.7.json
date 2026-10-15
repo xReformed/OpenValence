@@ -1,0 +1,210 @@
+[
+  {
+    "id": "oc28-oligos",
+    "type": "multiple-choice",
+    "prompt": "What are oligonucleotides, or oligos?",
+    "choices": [
+      {
+        "text": "Short DNA segments, such as those made by automated DNA synthesizers",
+        "correct": true
+      },
+      {
+        "text": "Single nucleotides bonded to a silica support",
+        "why": "Synthesis starts with one nucleotide on silica, but oligos are the short DNA segments built from many."
+      },
+      {
+        "text": "Short peptides made on a solid support",
+        "why": "Peptides are made of amino acids. Oligonucleotides are short DNA segments."
+      },
+      {
+        "text": "The full DNA molecules of a chromosome",
+        "why": "Chromosomal DNA is enormous. Oligos are short DNA segments."
+      }
+    ],
+    "explanation": "The revolution in molecular biology has increased demand for the chemical synthesis of short DNA segments, called oligonucleotides, or simply oligos. Automated DNA synthesizers can make them up to 200 nucleotides long."
+  },
+  {
+    "id": "oc28-synthesizer-length",
+    "type": "numeric",
+    "prompt": "Automated DNA synthesizers allow fast, reliable synthesis of DNA segments up to how many nucleotides long?",
+    "answer": 200,
+    "unit": "nucleotides",
+    "explanation": "Automated DNA synthesizers are available that allow the fast and reliable synthesis of DNA segments up to 200 nucleotides in length."
+  },
+  {
+    "id": "oc28-silica-link",
+    "type": "multiple-choice",
+    "prompt": "In the first step of DNA synthesis, how is the protected deoxynucleoside attached to the silica (SiO2) support?",
+    "choices": [
+      {
+        "text": "By an ester linkage to its 3′ –OH group",
+        "correct": true
+      },
+      {
+        "text": "By an ester linkage to its 5′ –OH group",
+        "why": "The 5′ –OH is protected as a DMT ether. The silica is attached through the 3′ –OH."
+      },
+      {
+        "text": "By a phosphodiester bond to its heterocyclic base",
+        "why": "The base's –NH2 groups are protected, not attached. The link is an ester at the 3′ –OH."
+      },
+      {
+        "text": "By a phosphite linkage to its 3′ –OH group",
+        "why": "The phosphite forms in the coupling step. The link to silica is an ester."
+      }
+    ],
+    "explanation": "Step 1 attaches a protected deoxynucleoside to a silica (SiO2) support by an ester linkage to the 3′ –OH group. Both the 5′ –OH on the sugar and free –NH2 groups on the bases must be protected."
+  },
+  {
+    "id": "oc28-base-protection",
+    "type": "multiple-choice",
+    "prompt": "In DNA synthesis, which base requires no protecting group?",
+    "choices": [
+      {
+        "text": "Thymine",
+        "correct": true
+      },
+      {
+        "text": "Adenine",
+        "why": "Adenine is protected by a benzoyl group."
+      },
+      {
+        "text": "Cytosine",
+        "why": "Cytosine is protected by a benzoyl group."
+      },
+      {
+        "text": "Guanine",
+        "why": "Guanine is protected by an isobutyryl group."
+      }
+    ],
+    "explanation": "Free –NH2 groups on the heterocyclic bases must be protected. Adenine and cytosine are protected by benzoyl groups, guanine by an isobutyryl group, and thymine requires no protection."
+  },
+  {
+    "id": "oc28-dmt-removal",
+    "type": "multiple-choice",
+    "prompt": "The DMT protecting group is removed by dichloroacetic acid in CH2Cl2. By what mechanism, and why is it fast?",
+    "choices": [
+      {
+        "text": "S_N1, because the tertiary, benzylic dimethoxytrityl cation is stable",
+        "correct": true
+      },
+      {
+        "text": "S_N2, because the dimethoxytrityl carbon is unhindered",
+        "why": "The DMT carbon is tertiary and crowded. The cleavage goes by S_N1 through a stable cation."
+      },
+      {
+        "text": "E2, because the dimethoxytrityl group has acidic β hydrogens",
+        "why": "The section describes DMT removal as an S_N1 reaction. The E2 step is the β-cyanoethyl removal with ammonia."
+      },
+      {
+        "text": "S_N1, because the primary dimethoxytrityl cation is stable",
+        "why": "The dimethoxytrityl cation is tertiary and benzylic, not primary."
+      }
+    ],
+    "explanation": "Step 2 removes the DMT group by treatment with dichloroacetic acid in CH2Cl2. It occurs by an S_N1 mechanism: protonation of the ether oxygen, then loss of the stable tertiary, benzylic dimethoxytrityl (triarylmethyl) cation (Exercise 28.7.1)."
+  },
+  {
+    "id": "oc28-coupling",
+    "type": "multiple-choice",
+    "prompt": "In the coupling step of DNA synthesis, which catalyst is required, and what kind of phosphorus product forms?",
+    "choices": [
+      {
+        "text": "Tetrazole; a phosphite, P(OR)3",
+        "correct": true
+      },
+      {
+        "text": "Tetrazole; a phosphate",
+        "why": "Coupling gives a phosphite. It is oxidized to a phosphate in the next step."
+      },
+      {
+        "text": "Iodine; a phosphite, P(OR)3",
+        "why": "Iodine is the oxidizing agent in step 4. Coupling is catalyzed by tetrazole."
+      },
+      {
+        "text": "Dichloroacetic acid; a phosphoramidite",
+        "why": "Dichloroacetic acid removes the DMT group. The phosphoramidite is the reactant in coupling, not the product."
+      }
+    ],
+    "explanation": "Step 3 couples the polymer-bonded deoxynucleoside with a protected deoxynucleoside carrying a 3′ phosphoramidite group [R2NP(OR)2]. The reaction is run in acetonitrile, requires catalysis by tetrazole, gives a phosphite, P(OR)3, and goes in better than 99% yield."
+  },
+  {
+    "id": "oc28-oxidation",
+    "type": "multiple-choice",
+    "prompt": "How is the phosphite formed in the coupling step converted to a phosphate?",
+    "choices": [
+      {
+        "text": "By oxidation with iodine in aqueous tetrahydrofuran in the presence of 2,6-dimethylpyridine",
+        "correct": true
+      },
+      {
+        "text": "By treatment with aqueous NH3",
+        "why": "Aqueous NH3 is used in the final step to remove protecting groups and cleave the DNA from the silica."
+      },
+      {
+        "text": "By treatment with dichloroacetic acid in CH2Cl2",
+        "why": "Dichloroacetic acid removes the DMT protecting group."
+      },
+      {
+        "text": "By reduction with tetrazole in acetonitrile",
+        "why": "Tetrazole catalyzes the coupling, and a phosphite becomes a phosphate by oxidation, not reduction."
+      }
+    ],
+    "explanation": "In step 4 the phosphite product is oxidized to a phosphate by iodine in aqueous tetrahydrofuran in the presence of 2,6-dimethylpyridine. The cycle of deprotection, coupling, and oxidation is then repeated until the desired sequence is built."
+  },
+  {
+    "id": "oc28-final-step",
+    "type": "multiple-choice",
+    "prompt": "What single treatment, in the final step, removes all the protecting groups and cleaves the DNA from the silica support?",
+    "choices": [
+      {
+        "text": "Aqueous NH3",
+        "correct": true
+      },
+      {
+        "text": "Dichloroacetic acid in CH2Cl2",
+        "why": "This removes only the DMT group from the 5′ –OH in each cycle."
+      },
+      {
+        "text": "Iodine in aqueous tetrahydrofuran",
+        "why": "This oxidizes the phosphite to a phosphate."
+      },
+      {
+        "text": "Tetrazole in acetonitrile",
+        "why": "Tetrazole catalyzes the coupling step."
+      }
+    ],
+    "explanation": "The final step removes all protecting groups and cleaves the ester bond holding the DNA to the silica. All these reactions are done at the same time by treatment with aqueous NH3, and purification by electrophoresis then yields the synthetic DNA."
+  },
+  {
+    "id": "oc28-cyanoethyl-e2",
+    "type": "multiple-choice",
+    "prompt": "When aqueous ammonia removes the β-cyanoethyl group (–OCH2CH2C≡N) from a phosphate, acrylonitrile (H2C=CHCN) forms as a by-product. What kind of reaction is this?",
+    "choices": [
+      {
+        "text": "An E2 elimination",
+        "correct": true
+      },
+      {
+        "text": "An S_N1 substitution",
+        "why": "S_N1 describes DMT removal by acid. Here ammonia removes a hydrogen as the phosphate leaves, forming a C=C bond: an E2 reaction."
+      },
+      {
+        "text": "An S_N2 substitution",
+        "why": "A substitution wouldn't make an alkene. Forming acrylonitrile's C=C bond shows an elimination."
+      },
+      {
+        "text": "An oxidation",
+        "why": "No oxidizing agent is involved. Ammonia acts as a base in an E2 elimination."
+      }
+    ],
+    "explanation": "Ammonia removes a hydrogen from the carbon next to the C≡N group while the phosphate leaves from the neighboring carbon, giving the alkene acrylonitrile, H2C=CHCN. This is an E2 reaction (Exercise 28.7.2)."
+  },
+  {
+    "id": "oc28-coupling-cycles",
+    "type": "numeric",
+    "prompt": "A synthesizer builds a 20-nucleotide oligo, starting with the first deoxynucleoside attached to the silica support. How many cycles of deprotection, coupling, and oxidation are needed?",
+    "answer": 19,
+    "unit": "cycles",
+    "explanation": "The first nucleoside is attached to the silica in step 1. Each cycle of deprotection, coupling, and oxidation adds one more nucleotide, so 20 − 1 = 19 cycles are needed."
+  }
+]

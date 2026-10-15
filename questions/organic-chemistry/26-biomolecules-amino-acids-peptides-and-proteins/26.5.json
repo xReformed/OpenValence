@@ -1,0 +1,210 @@
+[
+  {
+    "id": "oc26-analyzer-answers",
+    "type": "multiple-choice",
+    "prompt": "Of the three questions asked about a peptide's structure, which does an amino acid analyzer answer?",
+    "choices": [
+      {
+        "text": "Which amino acids are present and how much of each is present",
+        "correct": true
+      },
+      {
+        "text": "The sequence in which the amino acids occur",
+        "why": "The analyzer breaks the peptide into free amino acids, so the sequence is lost; sequencing is a separate step."
+      },
+      {
+        "text": "Only which amino acids are present, not how much of each",
+        "why": "The analyzer also measures the amount of each amino acid, from the intensity of the ninhydrin color."
+      },
+      {
+        "text": "The secondary and tertiary structure of the protein",
+        "why": "These are determined by NMR or X-ray crystallography, not by amino acid analysis."
+      }
+    ],
+    "explanation": "To determine a peptide's structure we need to know which amino acids are present, how much of each, and their sequence. An amino acid analyzer answers the first two; the sequence is found by peptide sequencing."
+  },
+  {
+    "id": "oc26-analysis-prep",
+    "type": "multiple-choice",
+    "prompt": "How is a peptide prepared for amino acid analysis?",
+    "choices": [
+      {
+        "text": "Reduce disulfides, cap –SH with iodoacetic acid, then heat with 6 M HCl at 110 °C for 24 hours",
+        "correct": true
+      },
+      {
+        "text": "Disulfide bonds are oxidized, and amide bonds are hydrolyzed with aqueous NaOH at 25 °C for 1 hour",
+        "why": "Disulfides are reduced, not oxidized, and hydrolysis uses hot 6 M HCl for 24 hours."
+      },
+      {
+        "text": "The N-terminal residue is removed with phenyl isothiocyanate one cycle at a time",
+        "why": "That is the Edman degradation, used for sequencing, not for amino acid analysis."
+      },
+      {
+        "text": "The peptide is cleaved with trypsin into fragments ending in Arg or Lys",
+        "why": "Trypsin gives peptide fragments for sequencing; analysis needs complete hydrolysis to free amino acids."
+      }
+    ],
+    "explanation": "In preparation for analysis, the peptide is broken into its amino acids by reducing all disulfide bonds, capping the –SH groups of cysteine by S_N2 reaction with iodoacetic acid, and hydrolyzing the amide bonds by heating with aqueous 6 M HCl at 110 °C for 24 hours."
+  },
+  {
+    "id": "oc26-hydrolysis-hours",
+    "type": "numeric",
+    "prompt": "For how many hours is a peptide heated with aqueous 6 M HCl at 110 °C to hydrolyze its amide bonds before amino acid analysis?",
+    "answer": 24,
+    "unit": "hours",
+    "explanation": "The amide bonds are hydrolyzed by heating with aqueous 6 M HCl at 110 °C for 24 hours."
+  },
+  {
+    "id": "oc26-iodoacetic-role",
+    "type": "multiple-choice",
+    "prompt": "What is the role of iodoacetic acid in preparing a peptide for amino acid analysis?",
+    "choices": [
+      {
+        "text": "It caps cysteine –SH groups by S_N2 reaction",
+        "correct": true
+      },
+      {
+        "text": "It hydrolyzes the amide bonds of the peptide",
+        "why": "Amide bonds are hydrolyzed by heating with aqueous 6 M HCl."
+      },
+      {
+        "text": "It reacts with each amino acid to give a purple color",
+        "why": "That is ninhydrin's role, after the amino acids are separated."
+      },
+      {
+        "text": "It reduces the disulfide bonds to thiols",
+        "why": "The disulfide bonds are reduced first; iodoacetic acid then caps the freed –SH groups."
+      }
+    ],
+    "explanation": "After all disulfide bonds are reduced, the –SH groups of cysteine residues are capped by S_N2 reaction with iodoacetic acid, ICH2CO2H."
+  },
+  {
+    "id": "oc26-cys-iodoacetic-product",
+    "type": "multiple-choice",
+    "prompt": "A cysteine residue's –SH group reacts with iodoacetic acid, ICH2CO2H, in an S_N2 reaction. What side chain results?",
+    "choices": [
+      {
+        "text": "–CH2SCH2CO2H",
+        "correct": true
+      },
+      {
+        "text": "–CH2SI",
+        "why": "Iodide is the leaving group in the S_N2 reaction; the sulfur bonds to the CH2 carbon of iodoacetic acid."
+      },
+      {
+        "text": "–CH2S–SCH2CO2H",
+        "why": "The S_N2 reaction forms a new C–S bond, not an S–S bond."
+      },
+      {
+        "text": "–CH2SC(=O)CH2I",
+        "why": "Iodoacetic acid alkylates the sulfur at the carbon bearing iodine; it doesn't acylate it."
+      }
+    ],
+    "explanation": "In the S_N2 reaction the cysteine sulfur attacks the CH2 carbon of ICH2CO2H and displaces iodide, giving the side chain –CH2SCH2CO2H, which carries an extra carboxylic acid group (Exercise 26.5.1)."
+  },
+  {
+    "id": "oc26-chromatography-phases",
+    "type": "multiple-choice",
+    "prompt": "In HPLC and ion-exchange chromatography, what are the mobile and stationary phases?",
+    "choices": [
+      {
+        "text": "Mobile phase: the solvent carrying the mixture; stationary phase: the adsorbent in the column",
+        "correct": true
+      },
+      {
+        "text": "The mobile phase is the adsorbent in the column; the stationary phase is the solvent",
+        "why": "This is reversed: the solvent moves through the column, and the adsorbent stays in place."
+      },
+      {
+        "text": "The mobile phase is ninhydrin; the stationary phase is the amino acid mixture",
+        "why": "Ninhydrin is added to the amino acids after they elute; it isn't a chromatography phase."
+      },
+      {
+        "text": "The mobile phase is the electrode buffer; the stationary phase is a paper strip",
+        "why": "That describes electrophoresis, not chromatography."
+      }
+    ],
+    "explanation": "The mixture is dissolved in a solvent, the mobile phase, and passed through a metal tube or glass column containing an adsorbent material, the stationary phase. Compounds adsorb to different extents, migrate at different rates, and are separated as they elute."
+  },
+  {
+    "id": "oc26-identity-elution",
+    "type": "multiple-choice",
+    "prompt": "In an amino acid analyzer, how are the identities of the amino acids determined?",
+    "choices": [
+      {
+        "text": "From their elution times, which are reproducible on a standard column",
+        "correct": true
+      },
+      {
+        "text": "From the intensity of the purple ninhydrin color",
+        "why": "The color intensity tells how much of each amino acid is present, not which one it is."
+      },
+      {
+        "text": "From the PTH derivatives formed in Edman degradation",
+        "why": "PTH derivatives are used in sequencing, not in amino acid analysis."
+      },
+      {
+        "text": "From the mass of each amino acid, measured by mass spectrometry",
+        "why": "The analyzer separates the amino acids by chromatography; identity comes from how long each takes to elute."
+      }
+    ],
+    "explanation": "Because the time required for a given amino acid to elute from a standard column is reproducible, the identities of the amino acids can be determined. The amount of each is measured from the intensity of its purple ninhydrin color."
+  },
+  {
+    "id": "oc26-amount-ninhydrin",
+    "type": "multiple-choice",
+    "prompt": "How is the amount of each amino acid in the sample measured by an amino acid analyzer?",
+    "choices": [
+      {
+        "text": "From the intensity of the purple color formed with ninhydrin",
+        "correct": true
+      },
+      {
+        "text": "From its elution time from the column",
+        "why": "Elution time identifies the amino acid; it doesn't measure the amount."
+      },
+      {
+        "text": "From the mass of each amino acid weighed after it elutes",
+        "why": "The amount is measured spectroscopically, from the intensity of the ninhydrin color."
+      },
+      {
+        "text": "From the number of Edman degradation cycles",
+        "why": "Edman degradation is used for sequencing, not for measuring amounts."
+      }
+    ],
+    "explanation": "Eluting amino acids mix with ninhydrin and give an intense purple color. A spectrometer measures the color, and the intensity gives the amount of each amino acid."
+  },
+  {
+    "id": "oc26-ninhydrin-valine",
+    "type": "multiple-choice",
+    "prompt": "Valine, (CH3)2CHCH(NH2)CO2H, reacts with ninhydrin. Besides the purple compound, what products form?",
+    "choices": [
+      {
+        "text": "2-Methylpropanal, (CH3)2CHCHO, and CO2",
+        "correct": true
+      },
+      {
+        "text": "2-Methylpropanoic acid, (CH3)2CHCO2H, and CO2",
+        "why": "The side chain ends up in an aldehyde, not a carboxylic acid."
+      },
+      {
+        "text": "3-Methylbutanal, (CH3)2CHCH2CHO, and CO2",
+        "why": "This aldehyde has one carbon too many; it would come from leucine, whose side chain has an extra CH2."
+      },
+      {
+        "text": "Valine methyl ester and H2O",
+        "why": "Ninhydrin breaks the amino acid down, giving an aldehyde and CO2."
+      }
+    ],
+    "explanation": "In the ninhydrin reaction, an α-amino acid gives the purple compound plus an aldehyde and carbon dioxide. Valine gives isobutyraldehyde (2-methylpropanal), (CH3)2CHCHO, and CO2 (Exercise 26.5.2)."
+  },
+  {
+    "id": "oc26-analysis-sample-size",
+    "type": "numeric",
+    "prompt": "About how many picomoles of sample does amino acid analysis typically require for a protein containing about 200 residues?",
+    "answer": 100,
+    "unit": "picomoles",
+    "explanation": "Typically, amino acid analysis requires about 100 picomoles (2–3 μg) of sample for a protein containing about 200 residues."
+  }
+]
