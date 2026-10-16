@@ -76,27 +76,10 @@ export function QuestionIcon({ className }: IconProps) {
   );
 }
 
-export function StepsIcon({ className }: IconProps) {
-  return (
-    <Icon className={className}>
-      <path d="M10 6h11M10 12h11M10 18h11M4 6h1v4M4 10h2M6 18H4c0-1 2-2 2-3s-1-1.5-2-1" />
-    </Icon>
-  );
-}
-
 export function ChatIcon({ className }: IconProps) {
   return (
     <Icon className={className}>
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z" />
-    </Icon>
-  );
-}
-
-export function HistoryIcon({ className }: IconProps) {
-  return (
-    <Icon className={className}>
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 6v6l4 2" />
     </Icon>
   );
 }
@@ -249,14 +232,6 @@ export function ExternalLinkIcon({ className }: IconProps) {
   return (
     <Icon className={className}>
       <path d="M7 17 17 7M8 7h9v9" />
-    </Icon>
-  );
-}
-
-export function SendIcon({ className }: IconProps) {
-  return (
-    <Icon className={className}>
-      <path d="M5 12 3 4l18 8-18 8 2-8Zm0 0h7" />
     </Icon>
   );
 }

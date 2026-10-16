@@ -2,6 +2,3 @@
 
 /** Transcribed (non-stub) sections across all books. */
 export const READY_SECTIONS = 547;
-
-/** Books with at least one transcribed section. */
-export const BOOK_COUNT = 2;

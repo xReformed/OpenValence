@@ -110,9 +110,6 @@ writeFileSync(
 
 /** Transcribed (non-stub) sections across all books. */
 export const READY_SECTIONS = ${ready.length};
-
-/** Books with at least one transcribed section. */
-export const BOOK_COUNT = ${Object.values(data).filter((chapters) => chapters.some((c) => c.sections.some((s) => s.ready))).length};
 `,
 );
 
