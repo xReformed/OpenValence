@@ -8,6 +8,7 @@ whole book folder, or a glob. A section file is
 (stubs.py creates them in that layout). Nothing here is specific to one book.
 """
 import glob
+import json
 import os
 import re
 import subprocess
@@ -47,6 +48,18 @@ class Section(NamedTuple):
         except ValueError:
             book = Path(self.book.name)
         return RAW / book / f"{self.chapter:02d}-{self.number}.html"
+
+    @property
+    def manifest(self):
+        """The section's sub-pages, in reading order: <NN>-<n>.pages.json beside
+        its page, written by fetch.py. Their pages are kept in <NN>-<n>/."""
+        return self.raw.with_suffix(".pages.json")
+
+    def subpages(self):
+        """[{"label", "title", "depth", "url", "file"}] for each sub-page, or []."""
+        if not self.manifest.exists():
+            return []
+        return json.loads(self.manifest.read_text(encoding="utf8"))
 
 
 def find_sections(args):
@@ -124,18 +137,60 @@ def printed_paragraphs(body):
     return out
 
 
-def convert(section):
-    """Run lt2md.py on the section's downloaded page; return its markdown."""
-    if not section.raw.exists():
-        sys.exit(f"{section.raw} is missing; run fetch.py on {section.path.parent} first")
+def lt2md(page, label):
+    """Run lt2md.py on one downloaded page. An empty file is a page with no text
+    of its own (LibreTexts redirects those to its home page; see fetch.py)."""
+    if page.stat().st_size == 0:
+        return ""
     result = subprocess.run(
-        [sys.executable, str(HERE / "lt2md.py"), str(section.raw), section.label],
+        [sys.executable, str(HERE / "lt2md.py"), str(page), label],
         capture_output=True, text=True, encoding="utf8",
         env={**os.environ, "PYTHONIOENCODING": "utf-8"},
     )
     if result.returncode:
-        sys.exit(f"lt2md.py failed on {section.raw}:\n{result.stderr}")
+        sys.exit(f"lt2md.py failed on {page}:\n{result.stderr}")
     return result.stdout.strip()
+
+
+HEADING = re.compile(r"^(#+) ", re.M)
+
+
+def demote(markdown, levels):
+    """Push every heading down the given number of levels (at most to ######)."""
+    return HEADING.sub(lambda m: "#" * min(len(m[1]) + levels, 6) + " ", markdown)
+
+
+def has_text_below(pages, texts, i):
+    """Whether any page nested under pages[i] (the run after it that is deeper) has text."""
+    for page, text in zip(pages[i + 1:], texts[i + 1:]):
+        if page["depth"] <= pages[i]["depth"]:
+            return False
+        if text:
+            return True
+    return False
+
+
+def convert(section):
+    """Run lt2md.py on the section's downloaded page; return its markdown.
+
+    A section with sub-pages (a LibreTexts hub such as 8.5, with 8.5.1 and 8.5.2
+    beneath it) gets each sub-page after its own text, under a heading with the
+    sub-page's title, one level deeper per level of nesting: ## 8.5.1: …,
+    ### 8.2.4.1: …. The sub-page's own headings move down to sit beneath it."""
+    if not section.raw.exists():
+        sys.exit(f"{section.raw} is missing; run fetch.py on {section.path.parent} first")
+    parts = [lt2md(section.raw, section.label)]
+    folder = section.raw.with_suffix("")
+    pages = section.subpages()
+    texts = [lt2md(folder / page["file"], page["label"]) for page in pages]
+    for i, page in enumerate(pages):
+        # A sub-page with no text, and none beneath it, is left out (LibreTexts has
+        # some created and never written); its heading alone would be noise.
+        if not texts[i] and not has_text_below(pages, texts, i):
+            continue
+        heading = "#" * min(page["depth"] + 1, 6) + " " + page["title"]
+        parts += [heading, demote(texts[i], page["depth"])]
+    return "\n\n".join(part for part in parts if part)
 
 
 def flags(argv, *names):

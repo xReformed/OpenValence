@@ -60,7 +60,8 @@ Table 15.5.1: Some Radioactive Isotopes with Medical Applications
 | ^131I | diagnosis and treatment of thyroid function |
 | ^133Xe | lung imaging |
 | ^198Au | liver disease diagnosis |
-| *The "m" means that it is a metastable form of this isotope of technetium. |  |
+
+*The "m" means that it is a metastable form of this isotope of technetium.
 
 In addition to the direct application of radioactive isotopes to diseased tissue, the gamma ray emissions of some isotopes can be directed toward the tissue to be destroyed. Cobalt-60 is a useful isotope for this kind of procedure.
 

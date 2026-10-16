@@ -24,14 +24,14 @@ Table 15.1.1 Common Names of Some Aromatic Compounds
 
 | Structure | Name |
 | --- | --- |
-| [Image: A benzene ring is bonded to a methyl group.] | Toluene (bp 111 °C) |
-| [Image: A benzene ring is bonded to a hydroxyl group.] | Phenol (mp 43 °C) |
-| [Image: A benzene ring is bonded to an amine group.] | Aniline (bp 184 °C) |
-| [Image: A central carbonyl group is bonded to a benzene ring and a methyl group.] | Acetophenone (mp 21 °C) |
-| [Image: A benzene ring is bonded to an aldehyde group.] | Benzaldehyde (bp 178 °C) |
-| [Image: A benzene ring is bonded to a carboxylic acid group.] | Benzoic acid (mp 122 °C) |
-| [Image: In a benzene ring, C 1 and C 2 are each bonded to a methyl group.] | ortho-Xylene (bp 144 °C) |
-| [Image: A benzene ring is bonded to an ethene group.] | Styrene (bp 145 °C) |
+| [Image: A benzene ring is bonded to a methyl group.] | Toluene; (bp 111 °C) |
+| [Image: A benzene ring is bonded to a hydroxyl group.] | Phenol; (mp 43 °C) |
+| [Image: A benzene ring is bonded to an amine group.] | Aniline; (bp 184 °C) |
+| [Image: A central carbonyl group is bonded to a benzene ring and a methyl group.] | Acetophenone; (mp 21 °C) |
+| [Image: A benzene ring is bonded to an aldehyde group.] | Benzaldehyde; (bp 178 °C) |
+| [Image: A benzene ring is bonded to a carboxylic acid group.] | Benzoic acid; (mp 122 °C) |
+| [Image: In a benzene ring, C 1 and C 2 are each bonded to a methyl group.] | ortho-Xylene; (bp 144 °C) |
+| [Image: A benzene ring is bonded to an ethene group.] | Styrene; (bp 145 °C) |
 
 Monosubstituted benzenes are named systematically in the same manner as other hydrocarbons, with -benzene as the parent name. Thus, C6H5Br is bromobenzene, C6H5NO2 is nitrobenzene, and C6H5CH2CH2CH3 is propylbenzene.
 

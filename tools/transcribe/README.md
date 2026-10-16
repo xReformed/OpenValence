@@ -46,6 +46,14 @@ Each `the source prints "X" where this reads "Y"` replaces the first X in the pa
 
 The tools treat notes as part of the file. Whenever `fill.py` re-converts a section, it carries each note over after the same paragraph as before and re-applies the corrections it records, so a fixed misprint never comes back; `regress.py` undoes them before comparing, so a corrected section still counts as identical to its conversion. If a paragraph's text has changed, the note goes in the nearest matching spot and `fill.py` prints it, so you can check its place.
 
+## Sub-pages
+
+Some books split a section into sub-pages: in *Inorganic Chemistry (LibreTexts)*, 8.5 is a short hub page over 8.5.1 and 8.5.2, and 8.13's sub-pages go three levels deeper. The corpus keeps one file per section regardless, so lessons, learning paths and question pools stay one per section. `fetch.py` lists each section's sub-pages through the LibreTexts API, in reading order, in `<NN>-<n>.pages.json`, and downloads them to `<NN>-<n>/`. `convert()` then puts each one after the section's own text, under its title as a heading (`## 8.5.1: …`, one level deeper per level of nesting) with its own headings moved down beneath it. Sub-pages that are problem sets, discussion questions or reference lists are left out.
+
+A hub page with no text of its own redirects to the LibreTexts home page; `fetch.py` saves it as an empty file, and the section is its sub-pages alone. A section that is empty and has no sub-pages has nothing to transcribe, so delete its stub.
+
+LibreTexts sets the license per page, so a section's sub-pages can carry different licenses from the hub. Record the most restrictive one in the section's `license`.
+
 ## After changing lt2md.py
 
 Each LibreTexts book brings markup the converter hasn't seen, so expect to extend `lt2md.py`. After any change, re-run the regression check over everything converted so far:
@@ -67,7 +75,7 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 | File | What it does |
 | ---- | ------------ |
 | `stubs.py` | Creates the section files for a book or chapter from its LibreTexts page: `<Chapter-Title>/<NN>-<n>-<Section-Title>.md`, front matter only. Reads the title, author, and license from the page (override with `--book`, `--author`, `--license`). Never overwrites, and skips end-of-chapter pages |
-| `fetch.py` | Downloads each section's page, using its `source_url`, to `sources/raw/libretexts/<book path>/` (git-ignored) |
+| `fetch.py` | Downloads each section's page, using its `source_url`, to `sources/raw/libretexts/<book path>/` (git-ignored), and its sub-pages (see below) |
 | `lt2md.py` | The converter: one page in, markdown out. `python lt2md.py <page.html> <section, e.g. 16.3>` |
 | `fill.py` | Converts downloaded pages and writes them into the corpus, carrying over existing notes. `--preview` to review first, `--force` to replace changed sections |
 | `regress.py` | Re-converts written sections and diffs them against the corpus, ignoring notes |
@@ -79,6 +87,8 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 - `scan.py` flags the braces in the quantum-number sets of 8.3 and 8.4 (`{1, 0, 0, +1/2}`); they are printed that way in the source.
 - `scan.py` flags the braces around HMPA's formula in *Organic Chemistry* 11.3 (`{[(CH3)2N]3PO, abbreviated HMPA}`); they are printed that way in the source.
 - `scan.py` flags "C 8 H15 N O 6" in an image description in *Organic Chemistry* 25.7; the source's description spaces the formula that way.
+- `scan.py` flags the braces in formulas of *Inorganic Chemistry* 9.2–9.4 ("[Co{Co(NH3)4(OH)2}3]", "bis{[…]Nickel(II)}", "K{Fe^II[Cr^III(CN)6]}"): they are the source's own nesting brackets.
+- `scan.py` flags the braces in the cluster formulas "[Al69{N(SiMe3)2}18]^3- and [Al77{N(SiMe3)2}20]^2-" in *Inorganic Chemistry* 8.6.2. They group the ligand in the source (the second is a corrected source typo).
 - Some *Organic Chemistry* equations (24.3, 24.5) are MathML whose `<math>` element closes before its content. The converter reads fractions, scripts and rows wherever they appear, but where the source drops a fraction's structure (24.3's K_a · K_b and K_a = K_w/K_b) the line comes out without its fraction bar and is corrected with a note.
 - LibreTexts numbers some appendices as a chapter (*Chemistry* 1e has a "22: Appendices" chapter of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
 - LibreTexts pages are inconsistent, so the converter carries many page-specific repairs (broken `alt` attributes, pre-rendered MathJax, Example boxes closed mid-solution). Each is commented where it is handled in `lt2md.py`.

@@ -73,7 +73,8 @@ Table 12.7.1 Typical pH Values of Various Substances*
 | milk of magnesia | 10.5 |
 | ammonia solution | 12.5 |
 | 1.0 M NaOH | 14.0 |
-| *Actual values may vary depending on conditions |  |
+
+*Actual values may vary depending on conditions
 
 pH is a logarithmic scale. A solution that has a pH of 1.0 has 10 times the [H^+] as a solution with a pH of 2.0, which in turn has 10 times the [H^+] as a solution with a pH of 3.0 and so forth.
 

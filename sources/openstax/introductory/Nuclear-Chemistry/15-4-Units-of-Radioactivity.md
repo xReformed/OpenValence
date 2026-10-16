@@ -115,7 +115,8 @@ Table 15.4.1: Average Annual Radiation Exposure (Approximate)
 | consumer products | 10 |
 | nuclear energy | 0.05 |
 | Total | 358 |
-| *Flying from New York City to San Francisco adds 5 mrem to your overall radiation exposure because the plane flies above much of the atmosphere, which protects us from cosmic radiation. |  |
+
+*Flying from New York City to San Francisco adds 5 mrem to your overall radiation exposure because the plane flies above much of the atmosphere, which protects us from cosmic radiation.
 
 The actual effects of radioactivity and radiation exposure on a person's health depend on the type of radioactivity, the length of exposure, and the tissues exposed. Table 15.4.2 - Effects of Short-Term Exposure to Radioactivity and Radiation, lists the potential threats to health at various amounts of exposure over short periods of time (hours or days).
 

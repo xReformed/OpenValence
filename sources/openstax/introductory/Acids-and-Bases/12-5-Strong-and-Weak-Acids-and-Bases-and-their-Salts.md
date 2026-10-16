@@ -163,8 +163,8 @@ c. Although the Br^− ions derive from a strong acid (HBr), the NH4^+ ion deriv
 
 Identify each salt as acidic, basic, or neutral.
 
-1. (C5H5NH)Cl
-2. Na2SO3
+A. (C5H5NH)Cl
+B. Na2SO3
 
 **Answer a**
 

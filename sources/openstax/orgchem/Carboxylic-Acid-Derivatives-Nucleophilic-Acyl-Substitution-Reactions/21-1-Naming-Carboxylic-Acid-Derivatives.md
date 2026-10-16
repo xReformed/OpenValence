@@ -59,12 +59,12 @@ Table 21.1.1: Nomenclature of Carboxylic Acid Derivatives
 
 | Functional group | Structure | Name ending |
 | --- | --- | --- |
-| Carboxylic acid | [Image: The structure of a carboxylic acid where an R group is attached to a carbonyl group which in turn is attached to a hydroxyl group.] | -ic acid (-carboxylic acid) |
-| Acid halide | [Image: The structure of an acid halide where an R group is attached to a carbonyl group which in turn is attached to an X group.] | -oyl halide (-carbonyl halide) |
+| Carboxylic acid | [Image: The structure of a carboxylic acid where an R group is attached to a carbonyl group which in turn is attached to a hydroxyl group.] | -ic acid; (-carboxylic acid) |
+| Acid halide | [Image: The structure of an acid halide where an R group is attached to a carbonyl group which in turn is attached to an X group.] | -oyl halide; (-carbonyl halide) |
 | Acid anhydride | [Image: The structure of an acid anhydride where two carbonyl groups are linked by an oxygen atom. An R group is attached to one of the carbonyls and an R dash group to the other.] | anhydride |
-| Amide | [Image: The structure of an amide where an R group and an amino groups are connected to a carbonyl carbon.] | -amide (-carboxamide) |
-| Ester | [Image: The structure of an ester where an R group is attached to a carbonyl group which in turn is attached to an O R dash group.] | -oate (-carboxylate) |
-| Thioester | [Image: The structure of a thioester where an R group is attached to a carbonyl group which in turn is attached to an S R dash group.] | -thioate (-carbothioate) |
+| Amide | [Image: The structure of an amide where an R group and an amino groups are connected to a carbonyl carbon.] | -amide; (-carboxamide) |
+| Ester | [Image: The structure of an ester where an R group is attached to a carbonyl group which in turn is attached to an O R dash group.] | -oate; (-carboxylate) |
+| Thioester | [Image: The structure of a thioester where an R group is attached to a carbonyl group which in turn is attached to an S R dash group.] | -thioate; (-carbothioate) |
 | Acyl phosphate | [Image: The structure of an acyl phosphate where an R group is attached to a carbonyl group which in turn is attached to an O P O 3 group.] | -oyl phosphate |
 
 ### Exercise 21.1.1

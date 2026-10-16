@@ -223,11 +223,11 @@ T = 25 + 273 = 298 K
 
 Now we can substitute into the equation for osmotic pressure, recalling the value for R:
 
-Π = (0.333M)(0.08205(L.atm)/(mol.K))(298K)
+Π = (0.333M)(0.08205 (L.atm)/(mol.K))(298K)
 
 The units may not make sense until we realize that molarity is defined as moles per liter:
 
-Π = (0.333 mol/L)(0.08205(L.atm)/(mol.K))(298K)
+Π = (0.333 mol/L)(0.08205 (L.atm)/(mol.K))(298K)
 
 Now we see that the moles, liters, and kelvins cancel, leaving atmospheres, which is a unit of pressure. Solving,
 

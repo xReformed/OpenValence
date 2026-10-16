@@ -8,6 +8,7 @@ gets shown next to every citation.
 | --- | --- | --- | --- |
 | `openstax/introductory/**` | [Beginning Chemistry (Ball) — LibreTexts](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) | Anonymous (as listed on LibreTexts) | CC BY-NC-SA 3.0 |
 | `openstax/orgchem/**` | [Organic Chemistry (OpenStax) — LibreTexts](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) | OpenStax (John McMurry, *Organic Chemistry*, 10th ed.) | CC BY-NC-SA 4.0 |
+| `openstax/inorgchem/**` | [Inorganic Chemistry (LibreTexts)](https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)) | Mixed: per section, see each file's front matter | Mixed: per section (CC BY, CC BY-SA, CC BY-NC, CC BY-NC-SA) |
 
 `openstax/introductory/` is complete: all 100 sections, transcribed from the
 LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Its
@@ -18,6 +19,16 @@ section, all 447 sections transcribed from the LibreTexts pages with the scripts
 in `tools/transcribe/`. The "Additional Problems" pages (end-of-chapter
 exercises) are left out, as are the front matter, appendix and back matter. It
 is NonCommercial and ShareAlike too.
+
+`openstax/inorgchem/` has its layout only: one folder per chapter (1–15) and
+79 section files holding front matter, not yet transcribed. Each section's
+sub-pages go into its file (see `tools/transcribe/README.md`). The problem
+pages and the appendix are left out, as are 7.4, 7.5, 7.6, 8.8, 8.10, 8.12 and
+15.1, which are empty on LibreTexts. The book is compiled from several authors,
+so the license and author are recorded per section, read from its pages; where
+a section's pages differ, the most restrictive license is recorded. 4.2, 9.3,
+11.1 and 15.3 carry no license tag on LibreTexts and are marked
+`"Unverified"`; confirm them before ingesting.
 
 ## Layout
 

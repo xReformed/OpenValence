@@ -68,4 +68,4 @@ One of the steps in fat metabolism is the reaction of glycerol (1,2,3-propanetri
 
 HOCH2CH(OH)CH2OH + ATP → HOCH2CH(OH)CH2OPO3^2− + ADP
 
-[Note: corrected; the source prints "CH2OPO32− + ADP" where this reads "CH2OPO3^2− + ADP". The source types the charge as part of the subscript, so it reads OPO with subscript 32; the phosphate group is OPO3^2−, as in HOPO3^2– above.]
+[Note: corrected; the source prints "CH2OPO32^− + ADP" where this reads "CH2OPO3^2− + ADP". The source types the charge as part of the subscript, so it reads OPO with subscript 32; the phosphate group is OPO3^2−, as in HOPO3^2– above.]

@@ -25,8 +25,8 @@ Table 30.9.1: Stereochemical Rules for Pericyclic Reactions
 
 | Electronic state | Electron pairs | Stereochemistry |
 | --- | --- | --- |
-| Ground state (thermal) | Even number Odd number | Antara–con Supra–dis |
-| Excited state (photochemical) | Even number Odd number | Supra–dis Antara–con |
+| Ground state (thermal) | Even number; Odd number | Antara–con; Supra–dis |
+| Excited state (photochemical) | Even number; Odd number | Supra–dis; Antara–con |
 
 ### Exercise 30.9.1
 

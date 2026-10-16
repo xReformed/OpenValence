@@ -17,12 +17,12 @@ Table 31.3.1 Some Common Copolymers and Their Uses
 
 | Monomers | Structures | Trade name | Uses |
 | --- | --- | --- | --- |
-| Vinyl chloride Vinylidene chloride | [Image: Structures of vinyl chloride and vinylidene chloride (C H 2 C Cl 2) separated by a plus sign.] | Saran | Fibers, food packaging |
-| Styrene 1,3-Butadiene | [Image: Structures of styrene (vinylbenzene) and 1,3-butadiene separated by a plus sign.] | SBR (styrene–butadiene rubber) | Tires, rubber articles |
-| Hexafluoropropene Vinylidene fluoride | [Image: Structures of hexafluoropropene and vinylidene fluoride (C H 2 C F 2) separated by a plus sign.] | Viton | Gaskets, seals |
-| Acrylonitrile 1,3-Butadiene | [Image: Structures of acrylonitrile (cyanoethene) and 1,3-butadiene separated by a plus sign.] | Nitrile rubber | Adhesives, hoses |
-| Isobutylene Isoprene | [Image: Structures of isobutylene (2-methyl-1-propene) and isoprene (2-methyl-1,3-butadiene) separated by a plus sign.] | Butyl rubber | Inner tubes |
-| Acrylonitrile 1,3-Butadiene Styrene | [Image: Structures of acrylonitrile (cyanoethene) and styrene (vinylbenzene) on the left separated from 1,3-butadiene on the right by a plus sign.] | ABS (monomer initials) | Pipes, high-impact applications |
+| Vinyl chloride; Vinylidene chloride | [Image: Structures of vinyl chloride and vinylidene chloride (C H 2 C Cl 2) separated by a plus sign.] | Saran | Fibers, food packaging |
+| Styrene; 1,3-Butadiene | [Image: Structures of styrene (vinylbenzene) and 1,3-butadiene separated by a plus sign.] | SBR (styrene–butadiene rubber) | Tires, rubber articles |
+| Hexafluoropropene; Vinylidene fluoride | [Image: Structures of hexafluoropropene and vinylidene fluoride (C H 2 C F 2) separated by a plus sign.] | Viton | Gaskets, seals |
+| Acrylonitrile; 1,3-Butadiene | [Image: Structures of acrylonitrile (cyanoethene) and 1,3-butadiene separated by a plus sign.] | Nitrile rubber | Adhesives, hoses |
+| Isobutylene; Isoprene | [Image: Structures of isobutylene (2-methyl-1-propene) and isoprene (2-methyl-1,3-butadiene) separated by a plus sign.] | Butyl rubber | Inner tubes |
+| Acrylonitrile; 1,3-Butadiene; Styrene | [Image: Structures of acrylonitrile (cyanoethene) and styrene (vinylbenzene) on the left separated from 1,3-butadiene on the right by a plus sign.] | ABS (monomer initials) | Pipes, high-impact applications |
 
 Several different types of copolymers can be defined, depending on the distribution of monomer units in the chain. If monomer A is copolymerized with monomer B, for instance, the resultant product might have a random distribution of the two units throughout the chain, or it might have an alternating distribution.
 

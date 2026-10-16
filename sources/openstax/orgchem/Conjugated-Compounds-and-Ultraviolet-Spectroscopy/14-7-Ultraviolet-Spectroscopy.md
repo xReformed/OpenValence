@@ -54,7 +54,7 @@ c = A/(ε × l).
 
 This formulation lets us measure the concentration of a sample in solution when A, ε, and l are known. As an example, β-carotene, the pigment responsible for the orange color of carrots, has ε = 138,000 L/(mol · cm). If a sample of β-carotene is placed in a cell with a pathlength of 1.0 cm and the UV absorbance reads 0.37, then the concentration of β-carotene in the sample is
 
-c = A/(εl) = 0.37/((1.38 × 10^5( L)/( mol· cm))(1.00 cm))
+c = A/(εl) = 0.37/((1.38 × 10^5 ( L)/( mol· cm))(1.00 cm))
 
 = 2.7 × 10^−6 mol/L
 

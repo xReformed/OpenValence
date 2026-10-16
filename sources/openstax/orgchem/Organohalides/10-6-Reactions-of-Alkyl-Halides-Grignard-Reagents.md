@@ -33,8 +33,8 @@ How strong a base would you expect a Grignard reagent to be? Look at Table 9.7.1
 
 [Note: corrected; the source prints "Look at Table 9.1" where this reads "Look at Table 9.7.1". The table of hydrocarbon acidities is Table 9.7.1 in Section 9.7.]
 
-a. CH3MgBr + H–C≡C–H  → CH4 + H–C≡C–MgBr
-b. CH3MgBr + NH3  → CH4 + H2N–MgBr
+a. CH3MgBr + H–C≡C–H → CH4 + H–C≡C–MgBr
+b. CH3MgBr + NH3 → CH4 + H2N–MgBr
 
 **Answer**
 
