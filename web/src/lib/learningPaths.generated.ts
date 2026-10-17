@@ -5,7 +5,7 @@
 
 import type { BookMeta, PathChapter } from "./types";
 
-export type BookKey = "beginning-chemistry" | "organic-chemistry";
+export type BookKey = "beginning-chemistry" | "organic-chemistry" | "inorganic-chemistry";
 
 export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
   "beginning-chemistry": [
@@ -4122,6 +4122,809 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         }
       ]
     }
+  ],
+  "inorganic-chemistry": [
+    {
+      "number": 1,
+      "title": "Introduction to Inorganic Chemistry",
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "What is Inorganic Chemistry?",
+          "ready": true,
+          "file": "inorgchem/Introduction-to-Inorganic-Chemistry/01-1-What-is-Inorganic-Chemistry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/01%3A_Introduction_to_Inorganic_Chemistry/1.01%3A_What_is_Inorganic_Chemistry",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.2",
+          "title": "Inorganic vs Organic Chemistry",
+          "ready": true,
+          "file": "inorgchem/Introduction-to-Inorganic-Chemistry/01-2-Inorganic-vs-Organic-Chemistry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/01%3A_Introduction_to_Inorganic_Chemistry/1.02%3A_Inorganic_vs_Organic_Chemistry",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.3",
+          "title": "History of Inorganic Chemistry",
+          "ready": true,
+          "file": "inorgchem/Introduction-to-Inorganic-Chemistry/01-3-History-of-Inorganic-Chemistry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/01%3A_Introduction_to_Inorganic_Chemistry/1.03%3A_History_of_Inorganic_Chemistry",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.4",
+          "title": "Perspectives",
+          "ready": true,
+          "file": "inorgchem/Introduction-to-Inorganic-Chemistry/01-4-Perspectives.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/01%3A_Introduction_to_Inorganic_Chemistry/1.04%3A_Perspectives",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Atomic Structure",
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "Historical Development of Atomic Theory",
+          "ready": true,
+          "file": "inorgchem/Atomic-Structure/02-1-Historical-Development-of-Atomic-Theory.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/02%3A_Atomic_Structure/2.01%3A_Historical_Development_of_Atomic_Theory",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.2",
+          "title": "The Schrödinger equation, particle in a box, and atomic wavefunctions",
+          "ready": true,
+          "file": "inorgchem/Atomic-Structure/02-2-The-Schrodinger-equation-particle-in-a-box-and-atomic-wavefunctions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/02%3A_Atomic_Structure/2.02%3A_The_Schrodinger_equation_particle_in_a_box_and_atomic_wavefunctions",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.3",
+          "title": "Periodic Properties of Atoms",
+          "ready": true,
+          "file": "inorgchem/Atomic-Structure/02-3-Periodic-Properties-of-Atoms.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/02%3A_Atomic_Structure/2.03%3A_Periodic_Properties_of_Atoms",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Simple Bonding Theory",
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "Lewis Electron-Dot Diagrams",
+          "ready": true,
+          "file": "inorgchem/Simple-Bonding-Theory/03-1-Lewis-Electron-Dot-Diagrams.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/03%3A_Simple_Bonding_Theory/3.01%3A_Lewis_Electron-Dot_Diagrams",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.2",
+          "title": "Valence Shell Electron-Pair Repulsion",
+          "ready": true,
+          "file": "inorgchem/Simple-Bonding-Theory/03-2-Valence-Shell-Electron-Pair-Repulsion.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/03%3A_Simple_Bonding_Theory/3.02%3A_Valence_Shell_Electron-Pair_Repulsion",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.3",
+          "title": "Molecular Polarity",
+          "ready": true,
+          "file": "inorgchem/Simple-Bonding-Theory/03-3-Molecular-Polarity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/03%3A_Simple_Bonding_Theory/3.03%3A_Molecular_Polarity",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.4",
+          "title": "Hydrogen Bonding",
+          "ready": true,
+          "file": "inorgchem/Simple-Bonding-Theory/03-4-Hydrogen-Bonding.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/03%3A_Simple_Bonding_Theory/3.04%3A_Hydrogen_Bonding",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Symmetry and Group Theory",
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "Symmetry Elements and Operations",
+          "ready": true,
+          "file": "inorgchem/Symmetry-and-Group-Theory/04-1-Symmetry-Elements-and-Operations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/04%3A_Symmetry_and_Group_Theory/4.01%3A_Symmetry_Elements_and_Operations",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.2",
+          "title": "Point Groups",
+          "ready": true,
+          "file": "inorgchem/Symmetry-and-Group-Theory/04-2-Point-Groups.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/04%3A_Symmetry_and_Group_Theory/4.02%3A_Point_Groups",
+          "author": "Kathryn Haas",
+          "license": "Unverified"
+        },
+        {
+          "number": "4.3",
+          "title": "Properties and Representations of Groups",
+          "ready": true,
+          "file": "inorgchem/Symmetry-and-Group-Theory/04-3-Properties-and-Representations-of-Groups.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/04%3A_Symmetry_and_Group_Theory/4.03%3A_Properties_and_Representations_of_Groups",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.4",
+          "title": "Examples and Applications of Symmetry",
+          "ready": true,
+          "file": "inorgchem/Symmetry-and-Group-Theory/04-4-Examples-and-Applications-of-Symmetry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/04%3A_Symmetry_and_Group_Theory/4.04%3A_Examples_and_Applications_of_Symmetry",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Molecular Orbitals",
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "Formation of Molecular Orbitals from Atomic Orbitals",
+          "ready": true,
+          "file": "inorgchem/Molecular-Orbitals/05-1-Formation-of-Molecular-Orbitals-from-Atomic-Orbitals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/05%3A_Molecular_Orbitals/5.01%3A_Formation_of_Molecular_Orbitals_from_Atomic_Orbitals",
+          "author": "Kathryn Haas",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "5.2",
+          "title": "Homonuclear Diatomic Molecules",
+          "ready": true,
+          "file": "inorgchem/Molecular-Orbitals/05-2-Homonuclear-Diatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/05%3A_Molecular_Orbitals/5.02%3A_Homonuclear_Diatomic_Molecules",
+          "author": "Kathryn Haas",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "5.3",
+          "title": "Heteronuclear Diatomic Molecules",
+          "ready": true,
+          "file": "inorgchem/Molecular-Orbitals/05-3-Heteronuclear-Diatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/05%3A_Molecular_Orbitals/5.03%3A_Heteronuclear_Diatomic_Molecules",
+          "author": "Kathryn Haas",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "5.4",
+          "title": "Larger (Polyatomic) Molecules",
+          "ready": true,
+          "file": "inorgchem/Molecular-Orbitals/05-4-Larger-Polyatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/05%3A_Molecular_Orbitals/5.04%3A_Larger_(Polyatomic)_Molecules",
+          "author": "Kathryn Haas",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Acid-Base and Donor-Acceptor Chemistry",
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "Acid-Base Models as Organizing Concepts",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-1-Acid-Base-Models-as-Organizing-Concepts.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.01%3A_Acid-Base_Models_as_Organizing_Concepts",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "6.2",
+          "title": "Arrhenius Concept",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-2-Arrhenius-Concept.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.02%3A_Arrhenius_Concept",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "6.3",
+          "title": "Brønsted-Lowry Concept",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-3-Bronsted-Lowry-Concept.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.03%3A_Brnsted-Lowry_Concept",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "6.4",
+          "title": "Lewis Concept and Frontier Orbitals",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-4-Lewis-Concept-and-Frontier-Orbitals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.04%3A_Lewis_Concept_and_Frontier_Orbitals",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "6.5",
+          "title": "Intermolecular Forces",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-5-Intermolecular-Forces.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.05%3A_Intermolecular_Forces",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "6.6",
+          "title": "Hard and Soft Acids and Bases",
+          "ready": true,
+          "file": "inorgchem/Acid-Base-and-Donor-Acceptor-Chemistry/06-6-Hard-and-Soft-Acids-and-Bases.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/06%3A_Acid-Base_and_Donor-Acceptor_Chemistry/6.06%3A_Hard_and_Soft_Acids_and_Bases",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "The Crystalline Solid State",
+      "sections": [
+        {
+          "number": "7.1",
+          "title": "Molecular Orbitals and Band Structure",
+          "ready": true,
+          "file": "inorgchem/The-Crystalline-Solid-State/07-1-Molecular-Orbitals-and-Band-Structure.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/07%3A_The_Crystalline_Solid_State/7.01%3A_Molecular_Orbitals_and_Band_Structure",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "7.2",
+          "title": "Formulas and Structures of Solids",
+          "ready": true,
+          "file": "inorgchem/The-Crystalline-Solid-State/07-2-Formulas-and-Structures-of-Solids.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/07%3A_The_Crystalline_Solid_State/7.02%3A_Formulas_and_Structures_of_Solids",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "7.3",
+          "title": "Superconductivity",
+          "ready": true,
+          "file": "inorgchem/The-Crystalline-Solid-State/07-3-Superconductivity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/07%3A_The_Crystalline_Solid_State/7.03%3A_Superconductivity",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "7.7",
+          "title": "Thermodynamics of Ionic Crystal Formation",
+          "ready": true,
+          "file": "inorgchem/The-Crystalline-Solid-State/07-7-Thermodynamics-of-Ionic-Crystal-Formation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/07%3A_The_Crystalline_Solid_State/7.07%3A_Thermodynamics_of_Ionic_Crystal_Formation",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Chemistry of the Main Group Elements",
+      "sections": [
+        {
+          "number": "8.1",
+          "title": "What are the main group elements and why should anyone care about them?",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-1-What-are-the-main-group-elements-and-why-should-anyone-care-about-them.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.01%3A_What_are_the_main_group_elements_and_why_should_anyone_care_about_them",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.2",
+          "title": "General Trends in Main Group Chemistry",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-2-General-Trends-in-Main-Group-Chemistry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.02%3A_General_Trends_in_Main_Group_Chemistry",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.3",
+          "title": "Group 1, The Alkali Metals",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-3-Group-1-The-Alkali-Metals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.03%3A_Group_1_The_Alkali_Metals",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.4",
+          "title": "Hydrogen",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-4-Hydrogen.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.04%3A_Hydrogen",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.5",
+          "title": "Group 2, The Alkaline Earth Metals",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-5-Group-2-The-Alkaline-Earth-Metals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.05%3A_Group_2_The_Alkaline_Earth_Metals",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.6",
+          "title": "Group 13 (and a note on the post-transition metals)",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-6-Group-13-and-a-note-on-the-post-transition-metals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.06%3A_Group_13_(and_a_note_on_the_post-transition_metals)",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.7",
+          "title": "Group 14",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-7-Group-14.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.07%3A_Group_14",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.9",
+          "title": "The Nitrogen Family",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-9-The-Nitrogen-Family.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.09%3A_The_Nitrogen_Family",
+          "author": "Stephen Contakes",
+          "license": "CC BY"
+        },
+        {
+          "number": "8.11",
+          "title": "The Oxygen Family (The Chalcogens)",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-11-The-Oxygen-Family-The-Chalcogens.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.11%3A_The_Oxygen_Family_(The_Chalcogens)",
+          "author": "Stephen Contakes",
+          "license": "CC BY"
+        },
+        {
+          "number": "8.13",
+          "title": "The Halogens",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-13-The-Halogens.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.13%3A_The_Halogens",
+          "author": "Stephen Contakes",
+          "license": "CC BY"
+        },
+        {
+          "number": "8.14",
+          "title": "The Noble Gases",
+          "ready": true,
+          "file": "inorgchem/Chemistry-of-the-Main-Group-Elements/08-14-The-Noble-Gases.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/08%3A_Chemistry_of_the_Main_Group_Elements/8.14%3A_The_Noble_Gases",
+          "author": "Stephen Contakes",
+          "license": "CC BY"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Coordination Chemistry I - Structure and Isomers",
+      "sections": [
+        {
+          "number": "9.1",
+          "title": "Prelude to Coordination Chemistry I - Structure and Isomers",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-1-Prelude-to-Coordination-Chemistry-I-Structure-and-Isomers.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.01%3A_Prelude_to_Coordination_Chemistry_I_-_Structure_and_Isomers",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "9.2",
+          "title": "History",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-2-History.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.02%3A_History",
+          "author": "Stephen Contakes",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.3",
+          "title": "Nomenclature and Ligands",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-3-Nomenclature-and-Ligands.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.03%3A_Nomenclature_and_Ligands",
+          "author": "Stephen Contakes",
+          "license": "Unverified"
+        },
+        {
+          "number": "9.4",
+          "title": "Isomerism",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-4-Isomerism.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.04%3A_Isomerism",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "9.5",
+          "title": "Coordination Numbers and Structures",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-5-Coordination-Numbers-and-Structures.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.05%3A_Coordination_Numbers_and_Structures",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "9.6",
+          "title": "Coordination Frameworks",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-I-Structure-and-Isomers/09-6-Coordination-Frameworks.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/09%3A_Coordination_Chemistry_I_-_Structure_and_Isomers/9.06%3A_Coordination_Frameworks",
+          "author": "Stephen Contakes",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Coordination Chemistry II - Bonding",
+      "sections": [
+        {
+          "number": "10.1",
+          "title": "Evidence for Electronic Structures",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-1-Evidence-for-Electronic-Structures.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.01%3A_Evidence_for_Electronic_Structures",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.2",
+          "title": "Bonding Theories",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-2-Bonding-Theories.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.02%3A_Bonding_Theories",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.3",
+          "title": "Ligand Field Theory",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-3-Ligand-Field-Theory.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.03%3A_Ligand_Field_Theory",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.4",
+          "title": "Angular Overlap",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-4-Angular-Overlap.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.04%3A_Angular_Overlap",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.5",
+          "title": "The Jahn-Teller Effect",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-5-The-Jahn-Teller-Effect.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.05%3A_The_Jahn-Teller_Effect",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.6",
+          "title": "Four- and Six-Coordinate Preferences",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-6-Four-and-Six-Coordinate-Preferences.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.06%3A_Four-_and_Six-Coordinate_Preferences",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        },
+        {
+          "number": "10.7",
+          "title": "Other Shapes",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-II-Bonding/10-7-Other-Shapes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/10%3A_Coordination_Chemistry_II_-_Bonding/10.07%3A_Other_Shapes",
+          "author": "Chris Schaller",
+          "license": "CC BY-NC 3.0"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Coordination Chemistry III - Electronic Spectra",
+      "sections": [
+        {
+          "number": "11.1",
+          "title": "Absorption of Light",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-III-Electronic-Spectra/11-1-Absorption-of-Light.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/11%3A_Coordination_Chemistry_III_-_Electronic_Spectra/11.01%3A_Absorption_of_Light",
+          "author": "Kathryn Haas",
+          "license": "Unverified"
+        },
+        {
+          "number": "11.2",
+          "title": "Quantum Numbers of Multielectron Atoms",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-III-Electronic-Spectra/11-2-Quantum-Numbers-of-Multielectron-Atoms.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/11%3A_Coordination_Chemistry_III_-_Electronic_Spectra/11.02%3A_Quantum_Numbers_of_Multielectron_Atoms",
+          "author": "Kathryn Haas",
+          "license": "Unverified"
+        },
+        {
+          "number": "11.3",
+          "title": "Electronic Spectra of Coordination Compounds",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-III-Electronic-Spectra/11-3-Electronic-Spectra-of-Coordination-Compounds.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/11%3A_Coordination_Chemistry_III_-_Electronic_Spectra/11.03%3A_Electronic_Spectra_of_Coordination_Compounds",
+          "author": "Kathryn Haas",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Coordination Chemistry IV - Reactions and Mechanisms",
+      "sections": [
+        {
+          "number": "12.1",
+          "title": "Introduction to Reactions of Metal Complexes",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-1-Introduction-to-Reactions-of-Metal-Complexes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.01%3A_Introduction_to_Reactions_of_Metal_Complexes",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.2",
+          "title": "Substitutions Reactions",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-2-Substitutions-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.02%3A_Substitutions_Reactions",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.3",
+          "title": "Kinetics Hint at the Reaction Mechanism",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-3-Kinetics-Hint-at-the-Reaction-Mechanism.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.03%3A_Kinetics_Hint_at_the_Reaction_Mechanism",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.4",
+          "title": "Experimental Evidence in Octahedral Substitutions",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-4-Experimental-Evidence-in-Octahedral-Substitutions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.04%3A_Experimental_Evidence_in_Octahedral_Substitutions",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.5",
+          "title": "Stereochemistry of Octahedral Reactions",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-5-Stereochemistry-of-Octahedral-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.05%3A_Stereochemistry_of_Octahedral_Reactions",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.6",
+          "title": "Substitutions in Square Planar Complexes",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-6-Substitutions-in-Square-Planar-Complexes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.06%3A_Substitutions_in_Square_Planar_Complexes",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.7",
+          "title": "The Trans Effect",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-7-The-Trans-Effect.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.07%3A_The_Trans_Effect",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.8",
+          "title": "Redox Mechanisms",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-8-Redox-Mechanisms.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.08%3A_Redox_Mechanisms",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "12.9",
+          "title": "Reactions of Coordinated Ligands",
+          "ready": true,
+          "file": "inorgchem/Coordination-Chemistry-IV-Reactions-and-Mechanisms/12-9-Reactions-of-Coordinated-Ligands.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/12%3A_Coordination_Chemistry_IV_-_Reactions_and_Mechanisms/12.09%3A_Reactions_of_Coordinated_Ligands",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Organometallic Chemistry",
+      "sections": [
+        {
+          "number": "13.1",
+          "title": "Introduction to Organometallic Chemistry",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-1-Introduction-to-Organometallic-Chemistry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.01%3A_Introduction_to_Organometallic_Chemistry",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.2",
+          "title": "Nomenclature, Ligands, and Classification",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-2-Nomenclature-Ligands-and-Classification.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.02%3A_Nomenclature_Ligands_and_Classification",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.3",
+          "title": "Electron Counting in Organometallic Complexes",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-3-Electron-Counting-in-Organometallic-Complexes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.03%3A_Electron_Counting_in_Organometallic_Complexes",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.4",
+          "title": "Survey of Organometallic Ligands",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-4-Survey-of-Organometallic-Ligands.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.04%3A_Survey_of_Organometallic_Ligands",
+          "author": "Michael Evans",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.5",
+          "title": "Bonding between Metal Atoms and Organic Pi Systems",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-5-Bonding-between-Metal-Atoms-and-Organic-Pi-Systems.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.05%3A_Bonding_between_Metal_Atoms_and_Organic_Pi_Systems",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.6",
+          "title": "Metal-Carbon Bonds",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-6-Metal-Carbon-Bonds.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.06%3A_Metal-Carbon_Bonds",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC 4.0"
+        },
+        {
+          "number": "13.7",
+          "title": "Characterization of Organometallic Complexes",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Chemistry/13-7-Characterization-of-Organometallic-Complexes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/13%3A_Organometallic_Chemistry/13.07%3A_Characterization_of_Organometallic_Complexes",
+          "author": "Balakrishna Ghosh",
+          "license": "CC BY-NC 4.0"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Organometallic Reactions and Catalysis",
+      "sections": [
+        {
+          "number": "14.1",
+          "title": "Reactions Involving Gain or Loss of Ligands",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Reactions-and-Catalysis/14-1-Reactions-Involving-Gain-or-Loss-of-Ligands.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/14%3A_Organometallic_Reactions_and_Catalysis/14.01%3A_Reactions_Involving_Gain_or_Loss_of_Ligands",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.2",
+          "title": "Reactions Invloving Modification of Unsaturated Ligands",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Reactions-and-Catalysis/14-2-Reactions-Invloving-Modification-of-Unsaturated-Ligands.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/14%3A_Organometallic_Reactions_and_Catalysis/14.02%3A_Reactions_Invloving_Modification_of_Unsaturated_Ligands",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.3",
+          "title": "Organometallic Catalysts",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Reactions-and-Catalysis/14-3-Organometallic-Catalysts.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/14%3A_Organometallic_Reactions_and_Catalysis/14.03%3A_Organometallic_Catalysts",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.4",
+          "title": "Heterogeneous Catalysts",
+          "ready": true,
+          "file": "inorgchem/Organometallic-Reactions-and-Catalysis/14-4-Heterogeneous-Catalysts.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/14%3A_Organometallic_Reactions_and_Catalysis/14.04%3A_Heterogeneous_Catalysts",
+          "author": "Kathryn Haas",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Parallels between Main Group and Organometallic Chemistry",
+      "sections": [
+        {
+          "number": "15.2",
+          "title": "The Isolobal Analogy",
+          "ready": true,
+          "file": "inorgchem/Parallels-between-Main-Group-and-Organometallic-Chemistry/15-2-The-Isolobal-Analogy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/15%3A_Parallels_between_Main_Group_and_Organometallic_Chemistry/15.02%3A_The_Isolobal_Analogy",
+          "author": "Kathryn Haas",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "15.3",
+          "title": "Metal-Metal Bonds",
+          "ready": true,
+          "file": "inorgchem/Parallels-between-Main-Group-and-Organometallic-Chemistry/15-3-Metal-Metal-Bonds.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/15%3A_Parallels_between_Main_Group_and_Organometallic_Chemistry/15.03%3A_Metal-Metal_Bonds",
+          "author": "Kathryn Haas",
+          "license": "Unverified"
+        },
+        {
+          "number": "15.4",
+          "title": "Cluster Compounds",
+          "ready": true,
+          "file": "inorgchem/Parallels-between-Main-Group-and-Organometallic-Chemistry/15-4-Cluster-Compounds.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/15%3A_Parallels_between_Main_Group_and_Organometallic_Chemistry/15.04%3A_Cluster_Compounds",
+          "author": "Kathryn Haas",
+          "license": "Unverified"
+        }
+      ]
+    }
   ]
 };
 
@@ -4135,5 +4938,10 @@ export const BOOK_META: Record<BookKey, BookMeta> = {
     "title": "Organic Chemistry (OpenStax)",
     "author": "OpenStax",
     "license": "CC BY-NC-SA 4.0"
+  },
+  "inorganic-chemistry": {
+    "title": "Inorganic Chemistry (LibreTexts)",
+    "author": "various authors",
+    "license": "Mixed"
   }
 };

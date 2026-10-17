@@ -13,7 +13,7 @@ export default function SiteFooter() {
       >
         Beginning Chemistry (Ball)
       </a>{" "}
-      (CC BY-NC-SA 3.0) and{" "}
+      (CC BY-NC-SA 3.0),{" "}
       <a
         href="https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)"
         className="underline underline-offset-4 hover:text-neutral-900"
@@ -22,7 +22,16 @@ export default function SiteFooter() {
       >
         Organic Chemistry by OpenStax
       </a>{" "}
-      (CC BY-NC-SA 4.0), via LibreTexts. OpenValence is an educational tool; check anything
+      (CC BY-NC-SA 4.0), and{" "}
+      <a
+        href="https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)"
+        className="underline underline-offset-4 hover:text-neutral-900"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Inorganic Chemistry
+      </a>{" "}
+      (Creative Commons licenses that vary by section), via LibreTexts. OpenValence is an educational tool; check anything
       safety-critical against a primary source.
     </footer>
   );

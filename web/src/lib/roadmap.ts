@@ -106,18 +106,41 @@ export const BRANCHES: Branch[] = [
     slug: "inorganic",
     icon: inorganicIcon,
     title: "Inorganic chemistry",
-    status: "later",
+    status: "in-progress",
     summary:
       "Everything beyond carbon: the main-group and transition elements, their compounds, and the symmetry that explains them.",
-    sources: [],
-    scope: [
-      "Periodic trends in depth",
-      "Symmetry and group theory",
-      "Crystal field theory",
-      "Coordination compounds",
-      "Solid-state structures",
+    sources: [
+      {
+        title: "Inorganic Chemistry (LibreTexts)",
+        license: "CC BY, BY-SA, BY-NC or BY-NC-SA, by section",
+        progress: "All 15 chapters",
+        complete: true,
+      },
     ],
-    steps: CHOOSE_AND_ANSWER,
+    alreadyCovered:
+      "Beginning Chemistry chapters 8 and 9 introduce electron configurations, Lewis structures, and molecular shape.",
+    scope: [
+      "Atomic structure and periodic trends",
+      "Symmetry and group theory",
+      "Molecular orbitals and acid-base chemistry",
+      "Main-group elements and solid-state structures",
+      "Coordination compounds: bonding, spectra, and mechanisms",
+      "Organometallic chemistry and catalysis",
+    ],
+    steps: [
+      { label: "Choose an openly licensed textbook", done: true },
+      { label: "Transcribe it word for word", done: true },
+      { label: "Confirm the license of the sections LibreTexts leaves unmarked" },
+      { label: "Answer questions on bonding, symmetry, and coordination compounds, with citations" },
+    ],
+    path: [
+      {
+        book: "inorganic-chemistry",
+        label: "Start here",
+        title: "Inorganic Chemistry",
+        note: "A LibreTexts textbook written by several instructors, from atomic structure to organometallic catalysis.",
+      },
+    ],
   },
   {
     slug: "physical",

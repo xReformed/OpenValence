@@ -14,6 +14,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | ----- | ----- |
 | Corpus: *Beginning Chemistry* (Ball) | **Complete** — all 16 chapters, 100 sections |
 | Corpus: OpenStax *Organic Chemistry* | **Complete** — all 31 chapters, 447 sections |
+| Corpus: *Inorganic Chemistry* (LibreTexts) | **Complete** — all 15 chapters, 79 sections |
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
@@ -140,7 +141,7 @@ What's there today:
 
 - **Landing page** — hero with an animated demo of a grounded answer, then Features, Topics, How it works, and Sources sections
 - **Topic pages** (`/topics/:slug`) — what each subject area covers, with example questions
-- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Introductory and organic chemistry have content so far. A branch's mastery bar is the share of its learning path's sections the reader has finished, kept in the browser
+- **Roadmap** (`/roadmap`) — the six branches of chemistry (introductory, organic, inorganic, physical, analytical, biochemistry) as cards, each with its sources, scope, and a mastery bar. Introductory, organic and inorganic chemistry have content so far. A branch's mastery bar is the share of its learning path's sections the reader has finished, kept in the browser
 - **Learning paths** (`/roadmap/:slug`) — a branch's books chapter by chapter, in study order; introductory chemistry's is *Beginning Chemistry*, organic chemistry's is OpenStax *Organic Chemistry* (chapters still being transcribed show as "Being added"). Every transcribed section links to its section page
 - **Profile** (`/profile`, the person icon in the header) — a banner with the reader's photo, name, what they're studying and a short "about" line (all optional, set with Edit profile, and stored only in this browser; the photo is cropped and shrunk to a 192 px WebP first, [profileStore.ts](web/src/lib/profileStore.ts)), then a Badges panel: badges for completing a roadmap, earned by finishing every section on its learning path. Introductory and organic chemistry each have two, with their own artwork: one for completing the roadmap (100%), and a Master badge, for finishing the roadmap with every practice answer in its book correct (asking Claude for help isn't recorded yet, so it doesn't count against the badge). The Master badges are animated, with the medal itself held still: introductory chemistry's with rotating golden rays, a pulsing glow, a shine sweeping across the medal and sparkles, and organic chemistry's with a nature theme (leaves revolving round the medal and drifting past it, fireflies rising, swaying shafts of light, a breathing green aura and dappled sunlight crossing the medal) ( [BadgeArt.tsx](web/src/components/BadgeArt.tsx)), still for readers who prefer reduced motion, and greyed out while locked, with hovering previewing its colours. With none earned the panel says "No badges yet", with a button to **Badges to earn** (`/profile/badges`), which lists all 22 planned badges (the subject roadmaps, including the two each for introductory and organic chemistry, and 14 concept paths) as locked placeholders (or greyed-out artwork, where it exists) with each roadmap's status and, for the learning paths, section progress ([badges.ts](web/src/lib/badges.ts) explains how to add one). Then their record, worked out from what the other pages keep in this browser: Practice stats (the correct rate as a ring, with questions answered, sections practised, sets passed and perfect sets), Learning progress per book with a "Continue with …" link, practice scores (lowest first), recent chats, and export / import / reset of everything OpenValence stores. There are no accounts, so nothing leaves the browser ([profileData.ts](web/src/lib/profileData.ts)).
 - **Section pages** (`/roadmap/:slug/:book/:section`) — a corpus section rendered in the app:
@@ -389,7 +390,8 @@ A levelled path through balancing chemical equations, from counting atoms to red
 | Organic chemistry | OpenStax *Organic Chemistry* (McMurry, 10th ed.) | CC BY-NC-SA 4.0 (confirmed on LibreTexts) | **Transcribed** — all 31 chapters (447 sections); not yet embedded or evaluated |
 | General chemistry | None — OpenStax *Chemistry* 1e was removed | — | **Not covered** beyond *Beginning Chemistry* |
 | Chemical engineering | Not chosen | — | **Planned** |
-| Analytical, physical, inorganic, biochemistry | Not chosen | — | **Later** |
+| Inorganic chemistry | *Inorganic Chemistry* (LibreTexts), compiled from several authors | CC BY, BY-SA, BY-NC or BY-NC-SA, recorded per section; 5 sections unmarked on LibreTexts | **Transcribed** — all 15 chapters (79 sections); not yet embedded or evaluated |
+| Analytical, physical, biochemistry | Not chosen | — | **Later** |
 
 Suggested order: embed *Beginning Chemistry* and measure it, keep transcribing organic chemistry chapter by chapter, then chemical engineering.
 

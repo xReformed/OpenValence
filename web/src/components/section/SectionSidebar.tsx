@@ -7,10 +7,14 @@ import { getFinished, subscribeToProgress } from "../../lib/progress";
 import { askHref } from "../../lib/topics";
 import type { BookMeta, Branch, PathSection } from "../../lib/types";
 
-const LICENSE_URLS: Record<string, string> = {
-  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
-  "CC BY-NC-SA 3.0": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-};
+/* "CC BY-NC-SA 4.0" -> its deed on creativecommons.org; undefined for anything else
+   (Inorganic Chemistry marks sections whose pages carry no license "Unverified"). */
+function licenseUrl(license: string) {
+  const match = license.match(/^CC (BY(?:-NC)?(?:-ND|-SA)?) (\d\.\d)$/);
+  return match
+    ? `https://creativecommons.org/licenses/${match[1].toLowerCase()}/${match[2]}/`
+    : undefined;
+}
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
@@ -64,10 +68,13 @@ export default function SectionSidebar({
       : bookQuestions > 0
         ? `This section has ${plural(bookQuestions, "question")} from the book. Answer each one, then compare with the book's solution.`
         : "Graded practice questions for this section are coming soon.";
+  const author = section.author ?? meta.author;
+  const license = section.license ?? meta.license;
+  const url = licenseUrl(license);
   const credit =
-    meta.author === "Anonymous"
+    author === "Anonymous"
       ? "published on LibreTexts"
-      : `by ${meta.author}, via LibreTexts`;
+      : `by ${author}, via LibreTexts`;
 
   return (
     <aside className="flex flex-col gap-4 lg:sticky lg:top-6">
@@ -110,16 +117,24 @@ export default function SectionSidebar({
       <div className="rounded-2xl border border-neutral-200 bg-white p-5 text-sm leading-relaxed text-neutral-600">
         <h2 className="font-medium text-neutral-900">Source</h2>
         <p className="mt-2">
-          From <cite>{meta.title}</cite>, {credit}. Licensed{" "}
-          <a
-            href={LICENSE_URLS[meta.license]}
-            target="_blank"
-            rel="noreferrer"
-            className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
-          >
-            {meta.license}
-          </a>
-          . Transcribed word for word; transcription notes are marked
+          From <cite>{meta.title}</cite>, {credit}.{" "}
+          {url ? (
+            <>
+              Licensed{" "}
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
+              >
+                {license}
+              </a>
+              .
+            </>
+          ) : (
+            "LibreTexts doesn't state a license for this section."
+          )}{" "}
+          Transcribed word for word; transcription notes are marked
           separately.
         </p>
         {section.sourceUrl && (

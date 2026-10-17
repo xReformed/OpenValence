@@ -14,6 +14,15 @@ const STATS_OUT = join(here, "../src/lib/corpusStats.generated.ts");
 const BOOKS = {
   "beginning-chemistry": "introductory",
   "organic-chemistry": "orgchem",
+  "inorganic-chemistry": "inorgchem",
+};
+
+/* LibreTexts usernames in the front matter -> the names shown in credits. */
+const AUTHORS = {
+  Khaas: "Kathryn Haas",
+  Cschaller: "Chris Schaller",
+  Smcontakes: "Stephen Contakes",
+  Mevans: "Michael Evans",
 };
 
 function parse(file, relative) {
@@ -33,7 +42,7 @@ function parse(file, relative) {
     chapterNumber: Number(chapter[1]),
     chapterTitle: chapter[2],
     sectionMinor: Number(title[2]),
-    meta: { title: field("book"), author: field("author"), license: field("license") },
+    meta: { title: field("book"), author: AUTHORS[field("author")] ?? field("author"), license: field("license") },
     section: {
       number: `${title[1]}.${title[2]}`,
       title: title[3],
@@ -46,6 +55,11 @@ function parse(file, relative) {
 
 const bookMeta = {};
 
+/* A book compiled from several authors (Inorganic Chemistry) records the author and
+   license per section. Its book-level credit then says so, and each section carries
+   its own; a book with one author and license keeps them at the book level only. */
+const MIXED = { author: "various authors", license: "Mixed" };
+
 function chaptersOf(folder) {
   const root = join(SOURCES, folder);
   const byChapter = new Map();
@@ -57,20 +71,33 @@ function chaptersOf(folder) {
         join(root, dir.name, name),
         `${folder}/${dir.name}/${name}`,
       );
-      bookMeta[folder] ??= meta;
+      const book = (bookMeta[folder] ??= { ...meta });
+      if (book.author !== meta.author) book.author = MIXED.author;
+      if (book.license !== meta.license) book.license = MIXED.license;
+      section.author = meta.author;
+      section.license = meta.license;
       if (!byChapter.has(chapterNumber)) {
         byChapter.set(chapterNumber, { number: chapterNumber, title: chapterTitle, sections: [] });
       }
       byChapter.get(chapterNumber).sections.push({ minor: sectionMinor, ...section });
     }
   }
+  const book = bookMeta[folder];
   return [...byChapter.values()]
     .sort((a, b) => a.number - b.number)
     .map((chapter) => ({
       ...chapter,
       sections: chapter.sections
         .sort((a, b) => a.minor - b.minor)
-        .map(({ number, title, ready, file, sourceUrl }) => ({ number, title, ready, file, sourceUrl })),
+        .map(({ number, title, ready, file, sourceUrl, author, license }) => ({
+          number,
+          title,
+          ready,
+          file,
+          sourceUrl,
+          ...(book.author === MIXED.author && { author }),
+          ...(book.license === MIXED.license && { license }),
+        })),
     }));
 }
 

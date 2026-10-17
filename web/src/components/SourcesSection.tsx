@@ -29,6 +29,15 @@ const SOURCES: {
     coverage: "31 chapters · 447 sections",
     inUse: false,
   },
+  {
+    title: "Inorganic Chemistry (LibreTexts)",
+    publisher: "Several authors, via LibreTexts",
+    url: "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)",
+    license: "CC licenses, by section",
+    licenseUrl: "https://creativecommons.org/licenses/",
+    coverage: "15 chapters · 79 sections",
+    inUse: false,
+  },
 ];
 
 const PREPARATION = [

@@ -15,6 +15,9 @@ export interface PathSection {
   ready: boolean;
   file: string;
   sourceUrl: string;
+  /** Set only in books whose author and license vary by section (Inorganic Chemistry). */
+  author?: string;
+  license?: string;
 }
 
 export interface PathChapter {
