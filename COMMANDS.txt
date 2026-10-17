@@ -49,6 +49,39 @@ dotnet run --project api          Start the API (serves practice questions at
                                   Needs DATABASE_URL.
 
 
+DOCKER AND AZURE
+----------------
+One image holds the whole site: the API serves the built web app from wwwroot.
+Settings are environment variables; .env files never go into the image.
+
+docker build -t openvalence .     Build the image (web app, then API)
+docker run --rm -p 8080:8080 --env-file .env openvalence
+                                  Run it at http://localhost:8080 with your .env settings
+
+The live site is Azure App Service on the free F1 plan (Linux), which runs the
+.NET app directly rather than the image. Needs the Azure CLI: az login first.
+
+One-time setup (in PowerShell; single quotes keep the & in the URL intact):
+az appservice plan create -n openvalence-plan -g openvalence-rg --sku F1 --is-linux
+az webapp create -n openvalence -g openvalence-rg -p openvalence-plan --runtime "DOTNETCORE:10.0"
+az webapp config set -n openvalence -g openvalence-rg --startup-file "dotnet api.dll"
+az webapp config appsettings set -n openvalence -g openvalence-rg --settings 'DATABASE_URL=<pooled url>' ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+
+.\deploy.ps1                      Build the web app and API and deploy them (the
+                                  site's address is the app's Default domain in the portal)
+.\deploy.ps1 -BuildOnly           Only build artifacts\site, without deploying
+
+Or from VS Code, with no CLI: in the Azure sidebar (Azure App Service extension),
+right-click openvalence > Deploy to Web App. It runs deploy.ps1 -BuildOnly first
+(appService.preDeployTask in .vscode/settings.json), then uploads artifacts\site.
+az webapp log tail -n openvalence -g openvalence-rg
+                                  Follow the live app's logs
+
+The image runs unchanged on a paid plan (B1 and up, with the app setting
+WEBSITES_PORT=8080) or on Azure Container Apps:
+az containerapp up -n openvalence -g openvalence-rg --source . --ingress external --target-port 8080
+
+
 PRACTICE QUESTIONS
 ------------------
 dotnet run --project ingest -- questions --check

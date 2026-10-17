@@ -62,4 +62,31 @@ app.MapGet("/api/questions/{book}/{section}", async (string book, string section
     }
 });
 
+// In the container image the built web app sits in wwwroot (see Dockerfile),
+// so one process serves both. Under `dotnet run` there's no wwwroot and the
+// Vite dev server serves the pages instead.
+if (app.Environment.WebRootFileProvider.GetFileInfo("index.html").Exists)
+{
+    // Vite fingerprints everything under assets/, so those can be cached for
+    // good; index.html must be checked each time so a deploy shows up.
+    var staticFiles = new StaticFileOptions
+    {
+        OnPrepareResponse = context =>
+        {
+            context.Context.Response.Headers.CacheControl = context.Context.Request.Path.StartsWithSegments("/assets")
+                ? "public, max-age=31536000, immutable"
+                : "no-cache";
+        },
+    };
+    app.UseDefaultFiles();
+    app.UseStaticFiles(staticFiles);
+
+    // An unknown API route is a 404, not the app's index.html.
+    app.Map("/api/{**rest}", () => Results.NotFound());
+
+    // Everything else is a client-side route (createBrowserRouter in
+    // web/src/router.ts).
+    app.MapFallbackToFile("index.html", staticFiles);
+}
+
 app.Run();

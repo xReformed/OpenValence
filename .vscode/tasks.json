@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // Runs before every "Deploy to Web App" (appService.preDeployTask in
+            // settings.json): builds the web app and API into artifacts\site.
+            "label": "Build site for Azure",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\deploy.ps1", "-BuildOnly"],
+            "problemMatcher": []
+        }
+    ]
+}
