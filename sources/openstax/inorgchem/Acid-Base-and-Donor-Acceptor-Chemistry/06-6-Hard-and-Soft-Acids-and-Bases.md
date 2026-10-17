@@ -209,7 +209,7 @@ Table 6.6.1.2: E and C Parameters for selected Lewis acids and bases according t
 | CH3C(O)CH3 | 1.74 | 1.26 |  | 0.72 |
 | (C2H5)2O | 1.80 | 1.63 |  | 0.91 |
 | [Image not described in source] | 1.64 | 2.18 |  | 1.3 |
-| ^( [Image not described in source] )(EtOAc) | 1.63 | 0.95 |  | 0.58 |
+| ^([Image not described in source]) (EtOAc) | 1.63 | 0.95 |  | 0.58 |
 | [Image not described in source] | 2.35^(†) | 1.31 |  | 0.56 |
 | (CH3)2S | 0.25 | 3.75 |  | 16 |
 | (CH3CH2)2S | 0.24 | 3.92^(†) |  | 15 |
@@ -412,7 +412,7 @@ The Hard-Soft acid-base principle (HSAB Principle) explains patterns in Lewis ac
 
 Applications of the HSAB principle include
 
-1. Predicting the equilibrium or speed of Lewis acid-base metathesis and displacement reactions. In a Lewis acid-base metathesis reaction the acids and bases swap partners A1:B1 + A2:B2 ⇌ [k1, Keq] A1:B2 + A2:B1
+1. Predicting the equilibrium or speed of Lewis acid-base metathesis and displacement reactions. In a Lewis acid-base metathesis reaction the acids and bases swap partners A1:B1 + A2:B2 ⇌ (k1, Keq) A1:B2 + A2:B1
 
 For example, the equilibrium position of the metathesis reaction between TlF and K2S favors the products:
 

@@ -572,13 +572,13 @@ Table 2.2.2.3. Components of the angular wavefunction and the resulting orbital 
 | --- | --- | --- | --- | --- | --- |
 | l = 0, s | ml = 0 | 1/(√2) | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
 | l = 1, p | ml = 0 | (√6)/2 cosθ | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
-| l = 1, p | ml = +1 | (√3)/2 sinθ | 1/(√(2π))e^iφ | [Image not described in source] | [Image not described in source] |
-| l = 1, p | ml = −1 | (√3)/2 sinθ | 1/(√(2π))e^−iφ | [Image not described in source] | [Image not described in source] |
+| l = 1, p | ml = +1 | (√3)/2 sinθ | (1/(√(2π)))e^iφ | [Image not described in source] | [Image not described in source] |
+| l = 1, p | ml = −1 | (√3)/2 sinθ | (1/(√(2π)))e^−iφ | [Image not described in source] | [Image not described in source] |
 | l = 2, d | 0 | (√10)/4(3 cos^2θ − 1) | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = +1 | (√15)/2 sinθ cosθ | 1/(√(2π))e^iφ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = −1 | (√15)/2 sinθ cosθ | 1/(√(2π))e^−iφ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = +2 | (√15)/4 sin^2θ | 1/(√(2π))e^i2φ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = −2 | (√15)/4 sin^2θ | 1/(√(2π))e^−i2φ | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = +1 | (√15)/2 sinθ cosθ | (1/(√(2π)))e^iφ | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = −1 | (√15)/2 sinθ cosθ | (1/(√(2π)))e^−iφ | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = +2 | (√15)/4 sin^2θ | (1/(√(2π)))e^i2φ | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = −2 | (√15)/4 sin^2θ | (1/(√(2π)))e^−i2φ | [Image not described in source] | [Image not described in source] |
 
 #### Angular nodes
 

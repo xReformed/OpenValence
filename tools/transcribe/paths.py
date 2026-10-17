@@ -179,10 +179,15 @@ def convert(section):
     ### 8.2.4.1: …. The sub-page's own headings move down to sit beneath it."""
     if not section.raw.exists():
         sys.exit(f"{section.raw} is missing; run fetch.py on {section.path.parent} first")
-    parts = [lt2md(section.raw, section.label)]
+    own = lt2md(section.raw, section.label)
     folder = section.raw.with_suffix("")
     pages = section.subpages()
     texts = [lt2md(folder / page["file"], page["label"]) for page in pages]
+    # A hub whose own text is a copy of its sub-pages' (Inorganic Chemistry 15.3 repeats
+    # 15.3.1) would give the section twice; keep the sub-page's copy, under its heading.
+    if own and mirrors(own, "\n\n".join(texts)):
+        own = ""
+    parts = [own]
     for i, page in enumerate(pages):
         # A sub-page with no text, and none beneath it, is left out (LibreTexts has
         # some created and never written); its heading alone would be noise.
@@ -191,6 +196,17 @@ def convert(section):
         heading = "#" * min(page["depth"] + 1, 6) + " " + page["title"]
         parts += [heading, demote(texts[i], page["depth"])]
     return "\n\n".join(part for part in parts if part)
+
+
+def _key(paragraph):
+    return HEADING.sub("", paragraph.strip())  # a heading repeated one level deeper is the same heading
+
+
+def mirrors(text, others):
+    """Whether every substantial paragraph of text also appears in others."""
+    long = [_key(p) for p in text.split("\n\n") if len(p) >= 150]
+    have = {_key(p) for p in others.split("\n\n")}
+    return len(long) >= 2 and all(p in have for p in long)
 
 
 def flags(argv, *names):

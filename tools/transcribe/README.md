@@ -50,6 +50,8 @@ The tools treat notes as part of the file. Whenever `fill.py` re-converts a sect
 
 Some books split a section into sub-pages: in *Inorganic Chemistry (LibreTexts)*, 8.5 is a short hub page over 8.5.1 and 8.5.2, and 8.13's sub-pages go three levels deeper. The corpus keeps one file per section regardless, so lessons, learning paths and question pools stay one per section. `fetch.py` lists each section's sub-pages through the LibreTexts API, in reading order, in `<NN>-<n>.pages.json`, and downloads them to `<NN>-<n>/`. `convert()` then puts each one after the section's own text, under its title as a heading (`## 8.5.1: …`, one level deeper per level of nesting) with its own headings moved down beneath it. Sub-pages that are problem sets, discussion questions or reference lists are left out.
 
+A hub page whose own text only repeats its sub-pages (*Inorganic Chemistry* 15.3 copies 15.3.1) is left out, so the section's text appears once, under the sub-page's heading.
+
 A hub page with no text of its own redirects to the LibreTexts home page; `fetch.py` saves it as an empty file, and the section is its sub-pages alone. A section that is empty and has no sub-pages has nothing to transcribe, so delete its stub.
 
 LibreTexts sets the license per page, so a section's sub-pages can carry different licenses from the hub. Record the most restrictive one in the section's `license`.
@@ -89,6 +91,7 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 - `scan.py` flags "C 8 H15 N O 6" in an image description in *Organic Chemistry* 25.7; the source's description spaces the formula that way.
 - `scan.py` flags the braces in formulas of *Inorganic Chemistry* 9.2–9.4 ("[Co{Co(NH3)4(OH)2}3]", "bis{[…]Nickel(II)}", "K{Fe^II[Cr^III(CN)6]}"): they are the source's own nesting brackets.
 - `scan.py` flags the braces in the cluster formulas "[Al69{N(SiMe3)2}18]^3- and [Al77{N(SiMe3)2}20]^2-" in *Inorganic Chemistry* 8.6.2. They group the ligand in the source (the second is a corrected source typo).
+- `scan.py` flags the braces in "^13C{^1H} NMR" in *Inorganic Chemistry* 13.7: proton-decoupled carbon NMR is written that way.
 - Some *Organic Chemistry* equations (24.3, 24.5) are MathML whose `<math>` element closes before its content. The converter reads fractions, scripts and rows wherever they appear, but where the source drops a fraction's structure (24.3's K_a · K_b and K_a = K_w/K_b) the line comes out without its fraction bar and is corrected with a note.
 - LibreTexts numbers some appendices as a chapter (*Chemistry* 1e has a "22: Appendices" chapter of data tables), so `stubs.py` creates them. Delete the stubs you don't want to transcribe.
 - LibreTexts pages are inconsistent, so the converter carries many page-specific repairs (broken `alt` attributes, pre-rendered MathJax, Example boxes closed mid-solution). Each is commented where it is handled in `lt2md.py`.

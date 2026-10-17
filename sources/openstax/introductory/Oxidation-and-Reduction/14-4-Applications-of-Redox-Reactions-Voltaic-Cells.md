@@ -30,7 +30,7 @@ Each individual system that contains a half reaction is called a half cell. The 
 
 The tendency for electrons to go from one half cell to another is called the voltage of the voltaic cell, represented by E. Sometimes the term potential is used to represent the voltage of a cell. Voltage is expressed in volts (V). The voltage of a voltaic cell is determined by the difference in the tendencies of the individual half cells and is characteristic of a given redox reaction when concentrations are specific (1.0 M for dissolved species and 1.0 atm for gases). Because the voltage of a redox reaction is determined by the difference of the tendencies of the individual half reactions, absolute voltages are unnecessary; only relative voltages of each half reaction are needed. The relative voltage of each half cell is represented as E1/2 and is based on the standard that the E1/2 for the reaction
 
-H^+ + e^− → 1/2H2
+H^+ + e^− → (1/2)H2
 
 is assigned to be exactly 0.000 V under standard conditions of pressure and concentration. Table 14.4.1 - Standard Reduction Potentials of Half Reactions, lists some relative E1/2 values for some half reactions. Note that all half reactions are listed as reduction reactions, so these values are called the standard reduction potentials of each half reaction.
 

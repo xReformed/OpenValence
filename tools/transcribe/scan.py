@@ -14,8 +14,9 @@ if len(sys.argv) < 2:
     sys.exit(__doc__)
 
 PATTERNS = {
-    # "\#" is a deliberate markdown escape ("# mol HCl" must not become a heading).
-    "backslash (TeX command left over)": re.compile(r"\\(?!#)"),
+    # "\#" is a deliberate markdown escape ("# mol HCl" must not become a heading), and
+    # "\|" a bar inside a table cell (|l1 + l2|, Inorganic Chemistry 11.2).
+    "backslash (TeX command left over)": re.compile(r"\\(?![#|])"),
     "brace": re.compile(r"[{}]"),
     "PageIndex": re.compile(r"PageIndex"),
     "doubled caret": re.compile(r"\^\^"),

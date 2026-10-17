@@ -35,6 +35,8 @@ SYMBOLS = {
     "propto": "∝", "textstyle": "", "scriptstyle": "",
     "Psi": "Ψ", "Phi": "Φ", "Theta": "Θ", "Xi": "Ξ", "Upsilon": "Υ", "zeta": "ζ", "iota": "ι",
     "star": "*",  # σ_u^{\star}: the antibonding mark (Inorganic Chemistry 5.2)
+    # ΔG^{\circ\ddagger}: activation (Inorganic Chemistry 12.1); ⟸ points at a rate-limiting step (12.2.3).
+    "ddagger": "‡", "dagger": "†", "Longleftarrow": "⟸", "Longrightarrow": "⟹",
     "partial": "∂", "int": "∫", "lessapprox": "⪅", "gtrapprox": "⪆",
     "sf": "", "bf": "", "rm": "", "large": "", "Large": "", "small": "", "normalsize": "",
     "big": "", "Big": "", "bigg": "", "Bigg": "", "bigl": "", "bigr": "", "Bigl": "", "Bigr": "",
@@ -73,8 +75,12 @@ def expand_frac(s):
         if re.search(r"(?:\\|\b)(?:log|ln|exp|sin|cos|tan)\s*$", s[:k]):
             frac = f"({frac})"
         # A factor after a fraction: \dfrac{-8\pi^2m_eE}{h^2}\psi -> ((−8π^2 meE)/h^2)ψ, so ψ
-        # can't be read as part of the denominator.
-        elif re.match(r"[{}]*[α-ωΑ-Ω]", s[end:]):  # also across groups: \textcolor{green}{\dfrac…}\textcolor{red}{\psi}
+        # can't be read as part of the denominator. Likewise a number or letter:
+        # \frac{1}{4} 3(3+1) -> (1/4)3(3+1), not 1/43(3+1) (Inorganic Chemistry 10.1.2).
+        # (Only a letter or digit right after it, not one past a closing group, ^{\frac{1}{3}}a,
+        # or a function name: (0.05916 V)/1 log(…).)
+        elif re.match(r"[{}]*[α-ωΑ-Ω]", s[end:]) or (
+                re.match(r"\w", s[end:]) and not re.match(r"(?:log|ln|exp|sin|cos|tan)(?![a-z])", s[end:])):  # also across groups: \textcolor{green}{\dfrac…}\textcolor{red}{\psi}
             frac = f"({frac})"
         s = s[:k] + frac + s[end:]
     return s
@@ -141,6 +147,10 @@ def nuclide(base, sub, sup):
     return sup.strip().translate(SUP) + sub.strip().translate(SUB) + base.strip()
 
 
+# mhchem \bond{…}, by symbol or by order: \ce{C \bond{3} M} is C≡M (Inorganic Chemistry 13.6.4).
+BONDS = {"-": "−", "=": "=", "#": "≡", "1": "−", "2": "=", "3": "≡", "...": "···", "~": "~"}
+
+
 # A superscript that needs no grouping: a number, word, or charge (10^−14, i^th,
 # SO4^2−, P^*). Anything else is an expression and is grouped: e^(−0.693 t/t_1/2).
 SIMPLE_SUP = re.compile(r"[+\-−–]?[\w.*′°\x00\x0e\x0f]*[+\-−–]?")
@@ -149,7 +159,10 @@ SIMPLE_SUP = re.compile(r"[+\-−–]?[\w.*′°\x00\x0e\x0f]*[+\-−–]?")
 def group_sup(content):
     if SIMPLE_SUP.fullmatch(content.strip()):
         return content
-    return ("{" + content + "}") if re.search(r"[()]", content) else ("(" + content + ")")
+    # <sup>‡ </sup>= (Inorganic Chemistry 12.3.5): spaces stay outside the group, G^(‡) =.
+    core = content.strip()
+    after = " " if content != content.rstrip() else ""
+    return (("{" + core + "}") if re.search(r"[()]", core) else ("(" + core + ")")) + after
 
 
 # _{92}^{235}\textrm{U}, ^{90}_{231}T, _{ }^{1}n, 5_{0}^{1}n: scripts written before
@@ -166,6 +179,10 @@ def nuclide_match(m):
     sub = (m["s1"] or m["s2"]).strip("{} ")
     sup = (m["p1"] or m["p2"]).strip("{} ")
     symbol = m["b"].strip("{} ")
+    if "\\" in sub and not re.sub(r"\\[,;:! ]", "", sub).strip():
+        # \ce{^4_{\,}A_{2g}}: a spacer, not an atomic number, so a term symbol's
+        # multiplicity, written as the text writes the others: ^4A2g (Inorganic Chemistry 11.3.5).
+        return f"^{sup}{symbol}"
     before = m.string[m.start() - 1] if m.start() else ""
     lead = "\\;" if before.isdigit() or before == "?" else ""  # a coefficient: 5 ¹₀n (\; survives TeX whitespace removal)
     if re.fullmatch(r"[−\-]?\d*", sub):
@@ -226,6 +243,9 @@ def environments(s):
 def tex(s):
     # ~ is TeX's non-breaking space: 100 × 10^{-12}~\mathrm{m}. It is an explicit space, kept
     # through the whitespace removal below: "Lewis~basicity~of~B" (Inorganic Chemistry 6.4.4).
+    # A ~ with spaces either side ties nothing: it means "about the same", \ce{py > NH3 ~ Cl^-}
+    # (Inorganic Chemistry 12.6.2).
+    s = re.sub(r"(?<= )~(?= )", r"\\sim", s)
     s = s.replace("\xa0", " ").replace("~", "\\ ")
     s = s.replace("​", "").replace("﻿", "")  # zero-width spaces: "XeF_​2" (Inorganic Chemistry 8.14.10)
     # The part letter can be a capital: \PageIndex{1A} (Organic Chemistry 29.5, a figure in two parts).
@@ -269,6 +289,10 @@ def tex(s):
     # Source typo: "\widetilde{ u}" (Inorganic Chemistry 2.1) — "\n" of \nu lost to a newline.
     s = re.sub(r"\\widetilde\{ u\}", "\\\\tilde{ν}", s)
     s = re.sub(r"\\(?:wide)?tilde\{?\s*(\w)\}?", lambda m: tilde(m.group(1)), s)  # \tilde{v}: wavenumber ṽ
+    # \sum_i^n m_{l_i}: a space between the sum's limits and its term, Σi^n m_li, not Σi^nm_li (Inorganic Chemistry 11.2).
+    s = re.sub(r"\\sum\s*_\{?(\w+)\}?\s*\^\{?(\w+)\}?\s*", "Σ_\\1^\\2\\\\ ", s)
+    # \bar{v}: the wavenumber written with a bar, v̄ (Inorganic Chemistry 11.1.1).
+    s = re.sub(r"\\bar\{?\s*(\w)\}?", lambda m: m.group(1) + "̄", s)
     # \hat{H}: an operator, Ĥ.
     s = re.sub(r"\\(?:wide)?hat\{?\s*(\w)\}?", lambda m: unicodedata.normalize("NFC", m.group(1) + "̂"), s)
     # \hat{\sigma}_{xz}: the same on a Greek letter (Inorganic Chemistry 4.3.2).
@@ -339,14 +363,23 @@ def tex(s):
     # mhchem \ce{H_2O}/\ce{H2O}: subscripts are implicit, so drop _ and braces.
     while (k := s.find("\\ce")) >= 0 and "{" in s[k:]:
         body, end = brace_group(s, s.index("{", k))
+        # \ce{$K_E = \ce{\frac{…}{…}}$} (Inorganic Chemistry 12.3.4): the inner \ce adds nothing.
+        body = re.sub(r"\\ce\s*(?=\{)", "", body)
+        # mhchem bonds: \ce{Co \bond{-} X} is Co−X, [Y\bond{...}ML_{n}] a partial bond (Inorganic Chemistry 12.2.3).
+        body = re.sub(r"\s*\\bond\{([^{}]*)\}\s*", lambda b: BONDS.get(b.group(1), b.group(1)), body)
         # ->[\text{electric}][\text{discharge}]: an arrow with conditions over and under it,
         # "→ (electric discharge)" (Inorganic Chemistry 8.11.4).
         body = re.sub(r"\s*->\[([^\[\]]*)\](?:\[([^\[\]]*)\])?\s*",
                       lambda m: " → (" + " ".join(re.sub(r"\\text\s*\{([^{}]*)\}", r"\1", part).strip()
                                                   for part in m.groups() if part) + ") ", body)
         body = re.sub(r"\s*(?:->|\\rightarrow)\s*", " → ", body)
+        # <=>[k_1][k_{-1}]: an equilibrium's rate constants, "⇌ (k1, k−1)" (Inorganic Chemistry 12.2.3).
+        body = re.sub(r"\s*<=>\[([^\[\]]*)\](?:\[([^\[\]]*)\])?\s*",
+                      lambda m: " ⇌ (" + ", ".join(part.strip() for part in m.groups() if part) + ") ", body)
         # <=>> and <<=> lean the equilibrium one way (Inorganic Chemistry 6.6.2); still ⇌.
         body = re.sub(r"\s*(?:<=>>|<<=>|<=>|\\rightleftharpoons)\s*", " ⇌ ", body)
+        # \ce{\Delta G^\circ_{rxn}}: symbols are read before the braces go, or \circ runs into rxn (12.1).
+        body = re.sub(r"\\([A-Za-z]+)(?![A-Za-z])", lambda c: SYMBOLS.get(c.group(1), c.group(0)), body)
         # \ce{NH^{+}4}: mhchem sets a digit after a charge as the formula's
         # subscript (NH₄⁺), so write it in the usual order: NH4^+.
         body = re.sub(r"\^\{([^{}]*)\}(\d+)", r"\2^{\1}", body)
@@ -442,11 +475,33 @@ def tex(s):
     return re.sub(r" ?\x05 ?", "\x05", s).strip()  # gap is expanded at the very end
 
 
+def bare_arrays(s):
+    """A \\begin{array} … \\end{array} typed straight into a paragraph, outside \\[ \\] or \\( \\)
+    (Inorganic Chemistry 13.5.2's D5h character table), gets the display delimiters it lacks."""
+    out, k = [], 0
+    for m in re.finditer(r"\\begin\{array\}.*?\\end\{array\}", s, re.S):
+        before = s[:m.start()]
+        open_math = (before.count("\\[") - before.count("\\]")) + (before.count("\\(") - before.count("\\)"))
+        out.append(s[k:m.start()])
+        out.append(m.group() if open_math > 0 else "\\[" + m.group() + "\\]")
+        k = m.end()
+    return "".join(out) + s[k:]
+
+
 def inline_math(s):
     # Source typo: "\(\ce{C10H8}\ is" — the closing "\)" typed as "\ ".
     s = re.sub(r"\\\(\\ce\{([^{}]*)\}\\ (?!\))", r"\(\\ce{\1}\) ", s)
     # Source typo: "\(ce{HNO3}\)" (Inorganic Chemistry 1.3) — the backslash of \ce dropped.
     s = re.sub(r"\\\(ce\{", r"\(\\ce{", s)
+    # Source typo: "\(\ce[ML_{n}XY]}\)" (Inorganic Chemistry 12.2.3) — the brace of \ce dropped.
+    s = re.sub(r"\\ce\[(?=[^{}\s]*(?:\{[^{}]*\}[^{}\s]*)*\]\})", r"\\ce{[", s)
+    # Source typos around \ce (Inorganic Chemistry 13.5.4, 14.2.1, 15.4.1): "(\ce{Ru3(CO)9(C60)}\)"
+    # with the backslash of \( dropped, "\(\ce{^- LX})" with that of \) dropped, and "\{\ce{B4H10}\)".
+    ce = r"\\ce\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}"
+    s = re.sub(r"(?<!\\)\((" + ce + r")\\\)", r"\\(\1\\)", s)
+    s = re.sub(r"\\\((" + ce + r")\)", r"\\(\1\\))", s)
+    s = re.sub(r"\\\{(?=" + ce + r"\\\))", r"\\(", s)
+    s = bare_arrays(s)
     # Source typo: "/(n_l = 1\)" (Inorganic Chemistry 2.1) — the opening "\(" typed as "/(".
     s = re.sub(r"(?<![\w)])/\((?=[^()\\]*\\\))", r"\(", s)
     # Source typo: "\( u\)", "\[ u=constant" (Inorganic Chemistry 2.1.2) — the "\n" of \nu lost
@@ -477,7 +532,9 @@ def inline_math(s):
 FILENAME = re.compile(  # "The Actions of Buffers.png", "2,4-dimethyl-3-heptene .png", or a bare upload hash
     # "Unknown": a file name with its extension dropped (Inorganic Chemistry 2.2.2).
     # A mangled <img>'s alt: escaped quotes or the start of a tag (Inorganic Chemistry 7.2.2).
-    r"\w[\w .,()+-]*\.(?:jpe?g|png|gif|svg|webp)|[0-9a-f]{32,}|Unknown(?:-\d+)?|(?:&quot;|\")+|<div\b.*", re.I)
+    # A pasted image's generated name, letters, digits, _ and - with no spaces (Inorganic Chemistry 10.1).
+    # "undefined": an editor's empty alt (Inorganic Chemistry 10.3.2). "ROMtoM'Marcus.png" (12.8.1).
+    r"\w[\w .,()+'-]*\.(?:jpe?g|png|gif|svg|webp)|[0-9a-f]{32,}|[\w-]{60,}|Unknown(?:-\d+)?|undefined|(?:&quot;|\")+|<div\b.*", re.I)
 # The letters of the Symbol typeface: <font face="Symbol">s</font> is σ.
 SYMBOL_FONT = str.maketrans("abgdezhqiklmnxprstufcywDGQLXPSUFYW­¯®¬",
                             "αβγδεζηθικλμνξπρστυφχψωΔΓΘΛΞΠΣΥΦΨΩ↑↓→←")  # and its arrows (Inorganic Chemistry 7.7.1)
@@ -765,7 +822,12 @@ class Page(HTMLParser):
         elif tag == "img" and (a.get("alt") or "").strip().lower() == "edit section":
             pass  # the LibreTexts editor's icon inside a heading (Inorganic Chemistry 8.9.2), not content
         elif tag == "img":
-            self.alt = (a.get("alt") or "").strip() or None
+            # Word's generated alt text, "Chart, line chart\n\nDescription automatically
+            # generated" (Inorganic Chemistry 10.6): keep the description, drop the trailer.
+            alt = (a.get("alt") or "").strip()
+            if alt.endswith("Description automatically generated"):
+                alt = re.sub(r"\s+", " ", alt.removesuffix("Description automatically generated")).strip()
+            self.alt = alt or None
             glyph = GLYPH.fullmatch(self.alt or "")
             if glyph:
                 # A letter set as a picture inside a sentence: "sufficient <img alt="delta.GIF">+
@@ -961,7 +1023,8 @@ class Page(HTMLParser):
                 self.out.append(self.table_caption)
             if self.rows:
                 w = max(len(r) for r in self.rows)
-                rows = [r + [""] * (w - len(r)) for r in self.rows]
+                # A bar in a cell, |l1 + l2| (Inorganic Chemistry 11.2), is escaped so it can't end the cell.
+                rows = [[c.replace("|", "\\|") for c in r] + [""] * (w - len(r)) for r in self.rows]
                 lines = ["| " + " | ".join(rows[0]) + " |", "| " + " | ".join(["---"] * w) + " |"]
                 lines += ["| " + " | ".join(r) + " |" for r in rows[1:]]
                 self.out.append("\n".join(lines))
@@ -1096,7 +1159,10 @@ def line_breaks(paragraph):
 # ("Problem 11-20" at the end of Organic Chemistry 11.12).
 # … and the attributes of a mangled <img> spilled out as text (Inorganic Chemistry 7.2.2:
 # '" height="200" width="463" src="/@api/deki/files/…jpg">').
-STRAY = re.compile(r'[\s.,;:↵]*|Problem \d+-\d+|"\s+(?:height|width|style|src)=".*>')
+# … and an author's donation appeal closing a page (Inorganic Chemistry 11.3.3: "Dr. Kai
+# Landskron (Lehigh University). If you like this textbook, please consider to make a donation …").
+STRAY = re.compile(r'[\s.,;:↵]*|Problem \d+-\d+|"\s+(?:height|width|style|src)=".*>'
+                   r'|.*If you like this textbook, please consider to make a donation.*')
 text = "\n\n".join(
     line_breaks(repair_broken_image(p))
     for p in mark_example_ends([p for p in page.out if p == BOX_END or not STRAY.fullmatch(p.strip())])

@@ -459,11 +459,11 @@ y' = −x sinθ + y cosθ
 
 For a C3 rotation counterclockwise through 120° (or (2π)/3):
 
-x' = x cos(2π/3) + y sin(2π/3) = −1/2x − (√3)/2y
+x' = x cos(2π/3) + y sin(2π/3) = −(1/2)x − ((√3)/2)y
 
 [Note: since sin(2π/3) = +√3/2, the middle expressions here and in the line below don't equal the results given (they would give −1/2x + (√3)/2y and −(√3)/2x − 1/2y). The results and the C3 matrix below are right for a rotation by +120°, which follows from x' = x cosθ − y sinθ and y' = x sinθ + y cosθ; the general formulas above have their signs reversed. The character of C3, −1, is not affected. The equations are left as printed.]
 
-y' = −x sin(2π/3) + y cos(2π/3) = (√3)/2x − 1/2y
+y' = −x sin(2π/3) + y cos(2π/3) = ((√3)/2)x − (1/2)y
 
 The transformation matrices for symmetry operations of C_3v are as follows:
 

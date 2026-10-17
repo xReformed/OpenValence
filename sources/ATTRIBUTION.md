@@ -20,15 +20,17 @@ in `tools/transcribe/`. The "Additional Problems" pages (end-of-chapter
 exercises) are left out, as are the front matter, appendix and back matter. It
 is NonCommercial and ShareAlike too.
 
-`openstax/inorgchem/` has its layout only: one folder per chapter (1–15) and
-79 section files holding front matter, not yet transcribed. Each section's
-sub-pages go into its file (see `tools/transcribe/README.md`). The problem
-pages and the appendix are left out, as are 7.4, 7.5, 7.6, 8.8, 8.10, 8.12 and
-15.1, which are empty on LibreTexts. The book is compiled from several authors,
-so the license and author are recorded per section, read from its pages; where
-a section's pages differ, the most restrictive license is recorded. 4.2, 9.3,
-11.1 and 15.3 carry no license tag on LibreTexts and are marked
-`"Unverified"`; confirm them before ingesting.
+`openstax/inorgchem/` is complete: one folder per chapter (1–15) and one file
+per section, all 79 sections transcribed from the LibreTexts pages with the
+scripts in `tools/transcribe/`. Each section's sub-pages go into its file (see
+`tools/transcribe/README.md`). The problem pages and the appendix are left out,
+as are 7.4, 7.5, 7.6, 8.8, 8.10, 8.12 and 15.1, which are empty on LibreTexts,
+and the empty sub-pages 15.2.2 and 15.4.2–15.4.6. The book is compiled from
+several authors, so the license and author are recorded per section, read from
+its pages; where a section's pages differ, the most restrictive license is
+recorded. 4.2, 9.3, 11.1 and 15.3 carry no license tag on LibreTexts, nor do
+11.2's sub-pages or 15.4.1, and these are marked `"Unverified"`; confirm them
+before ingesting.
 
 ## Layout
 

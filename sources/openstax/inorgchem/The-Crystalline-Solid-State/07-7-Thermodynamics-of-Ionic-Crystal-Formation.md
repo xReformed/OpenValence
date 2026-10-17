@@ -109,7 +109,7 @@ There are many other factors to be considered such as covalent character and ele
 
 As an example, let us consider the the NaCl crystal. In the following discussion, assume r be the distance between Na^+ and Cl^- ions. The nearest neighbors of Na^+ are 6 Cl^- ions at a distance 1r, 12 Na^+ ions at a distance 2r, 8 Cl^- at 3r, 6 Na^+ at 4r, 24 Na^+ at 5r, and so on. Thus, the energy due to one ion is
 
-E = (Z^2 e^2)/(4πεor)M
+E = ((Z^2 e^2)/(4πεor))M
 
 The Madelung constant, M, is a poorly converging series of interaction energies:
 
@@ -407,9 +407,9 @@ It is impossible to measure the enthalpy change starting from a solid crystal an
 
 Before we start talking about Born-Haber cycles, we need to define the atomization enthalpy, ΔH^oa. The standard atomization enthalpy is the enthalpy change when 1 mole of gaseous atoms is formed from the element in its standard state. Enthalpy change of atomization is always positive. You are always going to have to supply energy to break an element into its separate gaseous atoms. All of the following equations represent changes involving atomization enthalpy:
 
-1/2Cl2(g) → Cl(g)    ΔH^oa = +122 kJ mol^−1
+(1/2)Cl2(g) → Cl(g)    ΔH^oa = +122 kJ mol^−1
 
-1/2Br2(l) → Br(g)    ΔH^oa = +112 kJ mol^−1
+(1/2)Br2(l) → Br(g)    ΔH^oa = +112 kJ mol^−1
 
 [Note: corrected; the source prints "ΔH^oa = +122" where this reads "ΔH^oa = +112". The atomization enthalpy of bromine from Br2(l) is +112 kJ/mol; +122 kJ/mol is chlorine's.]
 
