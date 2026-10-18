@@ -1,0 +1,281 @@
+[
+  {
+    "id": "ic3-dipole-origin",
+    "type": "multiple-choice",
+    "prompt": "What gives a covalent bond a dipole moment?",
+    "choices": [
+      {
+        "text": "A difference in electronegativity, so one atom pulls the shared electrons more tightly",
+        "correct": true
+      },
+      {
+        "text": "A difference in the atoms' masses",
+        "why": "Mass doesn't create a dipole. Unequal sharing of electrons, from an electronegativity difference, does."
+      },
+      {
+        "text": "The bond being a double bond",
+        "why": "Bond order doesn't decide polarity; the electronegativity difference between the atoms does."
+      },
+      {
+        "text": "Both atoms being the same element",
+        "why": "Identical atoms share electrons equally, which gives no dipole."
+      }
+    ],
+    "explanation": "When atoms share electrons unequally, because one is more electronegative and pulls more tightly on the shared pair, they create a dipole moment. The larger the electronegativity difference, the larger the dipole moment."
+  },
+  {
+    "id": "ic3-dipole-factors",
+    "type": "multiple-choice",
+    "prompt": "A dipole moment is the separated charge multiplied by what?",
+    "choices": [
+      {
+        "text": "The distance between the charges",
+        "correct": true
+      },
+      {
+        "text": "The mass of the atoms",
+        "why": "Dipole moment is charge × distance, μ = Q × r. Mass doesn't appear."
+      },
+      {
+        "text": "The bond energy",
+        "why": "Dipole moment is charge × distance, measured in debyes (1 D = 3.34 × 10^−30 C·m)."
+      },
+      {
+        "text": "The number of lone pairs",
+        "why": "Lone pairs can affect a molecule's dipole, but the dipole moment itself is defined as charge × distance."
+      }
+    ],
+    "explanation": "The size of a dipole is its dipole moment, μ: the charge multiplied by the distance between the charges, μ = Q × r. It is measured in debyes, where 1 D = 3.34 × 10^−30 C·m."
+  },
+  {
+    "id": "ic3-pure-charge-dipole",
+    "type": "numeric",
+    "prompt": "A charge of +1 and a charge of −1 (a proton and an electron) separated by 100 pm give a dipole moment of 4.80 D, and the dipole moment grows linearly with distance. What is the dipole moment, in debyes, if they are 130 pm apart?",
+    "answer": 6.24,
+    "unit": "D",
+    "tolerance": 0.01,
+    "explanation": "The dipole moment is proportional to the separation: μ = (130/100) × 4.80 D = 6.24 D."
+  },
+  {
+    "id": "ic3-percent-ionic-hcl",
+    "type": "numeric",
+    "prompt": "HCl has a bond length of 127 pm and a measured dipole moment of 1.08 D. If the bond were 100% ionic (full +1 and −1 charges), its dipole would be (127/100) × 4.80 D. What is the percent ionic character of the H–Cl bond?",
+    "answer": 17.7,
+    "unit": "%",
+    "tolerance": 0.01,
+    "explanation": "A 100% ionic bond would have μ = 1.27 × 4.80 D = 6.10 D. Percent ionic character = (1.08 D ÷ 6.10 D) × 100% = 17.7%."
+  },
+  {
+    "id": "ic3-dipole-arrow-convention",
+    "type": "multiple-choice",
+    "prompt": "In the chemistry convention, which way does the arrow for a dipole moment point?",
+    "choices": [
+      {
+        "text": "From the positive end toward the negative end",
+        "correct": true
+      },
+      {
+        "text": "From the negative end toward the positive end",
+        "why": "That is the orientation physicists tend to use. Chemists draw the arrow from positive to negative."
+      },
+      {
+        "text": "Perpendicular to the bond",
+        "why": "A bond dipole lies along the axis of the bond, from positive to negative."
+      }
+    ],
+    "explanation": "The convention in chemistry is that the arrow representing a dipole moment goes from positive to negative, for both individual bond dipoles and the net molecular dipole. Physicists tend to use the opposite orientation."
+  },
+  {
+    "id": "ic3-water-polar",
+    "type": "multiple-choice",
+    "prompt": "Why is water a polar molecule?",
+    "choices": [
+      {
+        "text": "Its O–H bonds are polar, and its bent shape keeps the bond dipoles from cancelling",
+        "correct": true
+      },
+      {
+        "text": "Its O–H bonds are polar, which always makes a molecule polar",
+        "why": "Polar bonds alone aren't enough: CO2 has polar bonds but is nonpolar. Water's bent shape is what keeps its bond dipoles from cancelling."
+      },
+      {
+        "text": "It is linear, so the bond dipoles add up",
+        "why": "Water isn't linear. A linear H–O–H would cancel its bond dipoles; water's lone pairs make it bent."
+      },
+      {
+        "text": "Hydrogen is more electronegative than oxygen",
+        "why": "Oxygen is the more electronegative atom, so the dipole points from between the hydrogens toward the oxygen."
+      }
+    ],
+    "explanation": "Because of the lone pairs on oxygen, water is bent, so the dipole vectors of its two polar O–H bonds don't cancel. The net dipole points from between the two hydrogens toward the oxygen."
+  },
+  {
+    "id": "ic3-water-dipole-calculation",
+    "type": "numeric",
+    "prompt": "A bent molecule has two identical bonds, each with a bond moment of 1.6 D, and a bond angle of 120°. Its net dipole is 2 × (bond moment) × cos(half the angle). What is the net dipole moment, in D?",
+    "answer": 1.6,
+    "unit": "D",
+    "tolerance": 0.01,
+    "explanation": "μ = 2 × 1.6 D × cos(120°/2) = 2 × 1.6 × cos(60°) = 2 × 1.6 × 0.5 = 1.6 D. This is the same calculation that gives water's net dipole, 2(1.5 D) cos(104.5°/2) = 1.84 D."
+  },
+  {
+    "id": "ic3-co2-nonpolar",
+    "type": "multiple-choice",
+    "prompt": "Each C=O bond in carbon dioxide is polar. Why does the CO2 molecule have no dipole moment?",
+    "choices": [
+      {
+        "text": "It is linear, so its two bond dipoles point in opposite directions and cancel",
+        "correct": true
+      },
+      {
+        "text": "Its C=O bonds aren't really polar",
+        "why": "The C=O bonds are polar: carbon is partly positive and the oxygens partly negative. The linear shape makes the dipoles cancel."
+      },
+      {
+        "text": "Carbon and oxygen have the same electronegativity",
+        "why": "Oxygen is more electronegative, so each bond is polar. The two bond dipoles cancel because the molecule is linear."
+      },
+      {
+        "text": "Its lone pairs cancel its bond dipoles",
+        "why": "The two C=O bond dipoles cancel each other, because they point in exactly opposite directions in the linear molecule."
+      }
+    ],
+    "explanation": "CO2 is linear, and each C=O bond is polar. Because the two bond dipoles point in opposite directions, their vector sum is zero and the molecule has no dipole moment (μ = 0)."
+  },
+  {
+    "id": "ic3-symmetric-geometries",
+    "type": "multiple-choice",
+    "prompt": "In an ABn molecule where all the B atoms are the same, which geometry always gives zero dipole moment, even with polar bonds?",
+    "choices": [
+      {
+        "text": "Tetrahedral",
+        "correct": true
+      },
+      {
+        "text": "Bent",
+        "why": "A bent molecule like water isn't symmetric, so its bond dipoles don't cancel."
+      },
+      {
+        "text": "Trigonal pyramidal",
+        "why": "A trigonal pyramid like NH3 isn't symmetric: its bond dipoles add up along the axis."
+      },
+      {
+        "text": "Seesaw",
+        "why": "A seesaw, like SF4, isn't fully symmetric, so its bond dipoles don't cancel."
+      }
+    ],
+    "explanation": "For ABn molecules with identical B atoms, the symmetric geometries (linear, trigonal planar, tetrahedral, octahedral, and trigonal bipyramidal) have bond dipoles that cancel exactly, giving no net dipole."
+  },
+  {
+    "id": "ic3-c2cl4-nonpolar",
+    "type": "multiple-choice",
+    "prompt": "Tetrachloroethylene, Cl2C=CCl2, has rather polar C–Cl bonds. Does it have a net dipole moment?",
+    "choices": [
+      {
+        "text": "No: its structure is symmetric, so the bond dipoles cancel",
+        "correct": true
+      },
+      {
+        "text": "Yes: any molecule with polar bonds has a net dipole",
+        "why": "Polar bonds are needed for a dipole, but in a symmetric molecule like Cl2C=CCl2 the bond dipoles cancel."
+      },
+      {
+        "text": "Yes: the C=C double bond is polar",
+        "why": "A C=C bond between identical atoms isn't polar, and the C–Cl dipoles cancel in this symmetric structure."
+      }
+    ],
+    "explanation": "Although the C–Cl bonds are rather polar, the individual bond dipoles cancel in the symmetric Cl2C=CCl2 structure, so it has no net dipole moment. A polar bond is a prerequisite for a dipole, but not every molecule with polar bonds has one."
+  },
+  {
+    "id": "ic3-hx-dipole-trend",
+    "type": "multiple-choice",
+    "prompt": "From HF to HI, the bond gets longer, yet the dipole moment falls (1.82 D to 0.44 D). Why?",
+    "choices": [
+      {
+        "text": "The electronegativity difference falls, and that outweighs the longer bond",
+        "correct": true
+      },
+      {
+        "text": "Longer bonds always give smaller dipoles",
+        "why": "For the same charges, a longer distance gives a larger dipole. Here the charges shrink, because the electronegativity difference falls."
+      },
+      {
+        "text": "Iodine is more electronegative than fluorine",
+        "why": "Electronegativity decreases down the group: fluorine is the most electronegative halogen."
+      },
+      {
+        "text": "HI is a symmetric molecule",
+        "why": "A diatomic HI molecule has one polar bond; its dipole is small because the electronegativity difference is only 0.4."
+      }
+    ],
+    "explanation": "Down the halogens, bond length increases but electronegativity decreases (difference 1.9 for HF, 0.4 for HI). The greater influence is the electronegativity difference, which sets the size of the charges at the ends of the dipole."
+  },
+  {
+    "id": "ic3-measuring-dipoles",
+    "type": "multiple-choice",
+    "prompt": "Substances are placed between charged plates. How do CCl4, acetone, and water compare?",
+    "choices": [
+      {
+        "text": "CCl4 is not deflected, acetone deflects slightly, and water deflects strongly",
+        "correct": true
+      },
+      {
+        "text": "All three deflect equally",
+        "why": "The response depends on polarity: nonpolar CCl4 doesn't respond, moderately polar acetone responds slightly, highly polar water strongly."
+      },
+      {
+        "text": "CCl4 deflects most strongly, because it has four polar bonds",
+        "why": "CCl4 is tetrahedral, so its bond dipoles cancel. It's nonpolar and isn't deflected."
+      },
+      {
+        "text": "Water is not deflected",
+        "why": "Water is highly polar and deflects strongly."
+      }
+    ],
+    "explanation": "Polar molecules increase the charge stored on charged plates, which allows their dipole moments to be measured. Nonpolar CCl4 is not deflected, moderately polar acetone deflects slightly, and highly polar water deflects strongly."
+  },
+  {
+    "id": "ic3-polar-alignment",
+    "type": "multiple-choice",
+    "prompt": "Which of these do polar molecules align themselves with?",
+    "choices": [
+      {
+        "text": "An electric field, each other, and ions",
+        "correct": true
+      },
+      {
+        "text": "Only magnetic fields",
+        "why": "The section describes polar molecules aligning in an electric field, with respect to one another, and with respect to ions."
+      },
+      {
+        "text": "Nothing: their orientation is always random",
+        "why": "Polar molecules align in an electric field, with each other, and around ions."
+      }
+    ],
+    "explanation": "In general, polar molecules align themselves (1) in an electric field, (2) with respect to one another, and (3) with respect to ions."
+  },
+  {
+    "id": "ic3-polar-needs-asymmetry",
+    "type": "multiple-choice",
+    "prompt": "What decides whether a molecule with polar bonds is polar overall?",
+    "choices": [
+      {
+        "text": "Whether its centers of positive and negative charge coincide, which depends on its shape",
+        "correct": true
+      },
+      {
+        "text": "Only the number of polar bonds",
+        "why": "CO2 and CCl4 have several polar bonds and are nonpolar. What matters is whether the charge centers coincide."
+      },
+      {
+        "text": "Only the size of the atoms",
+        "why": "Shape and bond polarity decide it: a symmetric molecule's bond dipoles cancel."
+      },
+      {
+        "text": "Whether it contains hydrogen",
+        "why": "CO2 (no hydrogen) is nonpolar and CH3Cl (with hydrogen) is polar, but it's the shape, not hydrogen, that decides."
+      }
+    ],
+    "explanation": "The shape of a molecule and the polarity of its bonds determine its overall polarity. If the centers of positive and negative charge lie at the same point, the molecule is nonpolar; a molecule can only be polar if its structure is not symmetric."
+  }
+]

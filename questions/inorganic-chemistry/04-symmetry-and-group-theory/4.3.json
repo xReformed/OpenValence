@@ -1,0 +1,534 @@
+[
+  {
+    "id": "ic4-operation-order",
+    "type": "multiple-choice",
+    "prompt": "In NH3 (C3v), applying C3 then σv gives σv'', but applying σv then C3 gives σv'. What does this show?",
+    "choices": [
+      {
+        "text": "The order of symmetry operations matters: AB is not necessarily BA",
+        "correct": true
+      },
+      {
+        "text": "One of the two calculations must be wrong",
+        "why": "Both are right. Symmetry operations don't in general commute, so the two orders give different results."
+      },
+      {
+        "text": "C3 and σv are the same operation",
+        "why": "They're different operations; the example shows that combining them in different orders gives different results."
+      },
+      {
+        "text": "NH3 isn't really in C3v",
+        "why": "Both results, σv'' and σv', are operations of C3v, as group theory requires."
+      }
+    ],
+    "explanation": "For two symmetry operations A and B, AB is not necessarily the same as BA: symmetry operations don't in general commute. Groups in which they do commute are called Abelian."
+  },
+  {
+    "id": "ic4-notation-right-to-left",
+    "type": "multiple-choice",
+    "prompt": "The combined operation σvC3 is written as a product. Which operation is applied first?",
+    "choices": [
+      {
+        "text": "C3, the one on the right",
+        "correct": true
+      },
+      {
+        "text": "σv, the one on the left",
+        "why": "Like operators in quantum mechanics, symmetry operations act on what is directly to their right, so the rightmost one (C3) acts first."
+      },
+      {
+        "text": "Both at once",
+        "why": "They're applied in sequence, working from right to left: C3 first, then σv."
+      }
+    ],
+    "explanation": "Symmetry operations operate on the thing directly to their right, as operators do in quantum mechanics, so the notation is read from right to left: σvC3 means C3 first, then σv."
+  },
+  {
+    "id": "ic4-abelian",
+    "type": "multiple-choice",
+    "prompt": "What is an Abelian group?",
+    "choices": [
+      {
+        "text": "A group whose symmetry operations all commute (AB = BA)",
+        "correct": true
+      },
+      {
+        "text": "A group with no inversion center",
+        "why": "Abelian is about commuting: in an Abelian group, the order of operations doesn't matter."
+      },
+      {
+        "text": "A group with only one operation",
+        "why": "Abelian groups can have many operations; what defines them is that every pair commutes."
+      },
+      {
+        "text": "A group of linear molecules",
+        "why": "Abelian describes groups in which the symmetry operations commute."
+      }
+    ],
+    "explanation": "In general, symmetry operations don't commute. Groups in which the symmetry operations do commute are said to be Abelian."
+  },
+  {
+    "id": "ic4-class-definition",
+    "type": "multiple-choice",
+    "prompt": "In NH3, the three mirror planes σv, σv', and σv'' belong to the same class. What makes operations part of the same class?",
+    "choices": [
+      {
+        "text": "They are related to each other by other symmetry operations of the group",
+        "correct": true
+      },
+      {
+        "text": "They are all reflections",
+        "why": "Being the same type of operation isn't enough. The three planes in NH3 form a class because a C3 rotation relates them."
+      },
+      {
+        "text": "They give the same result when applied",
+        "why": "Each plane reflects differently. They're in one class because other operations of the group, here C3, relate them."
+      },
+      {
+        "text": "They commute with each other",
+        "why": "Class membership is about operations being related through other operations of the group."
+      }
+    ],
+    "explanation": "Symmetry operations related to each other by other operations of the group belong to the same class. NH3's three mirror planes are related through a C3 rotation; C3^+ and C3^− are related by a vertical mirror plane."
+  },
+  {
+    "id": "ic4-group-properties",
+    "type": "multiple-choice",
+    "prompt": "Which of these is not one of the four properties a mathematical group must have?",
+    "choices": [
+      {
+        "text": "Every pair of elements commutes",
+        "correct": true
+      },
+      {
+        "text": "It includes the identity",
+        "why": "Including the identity E is required."
+      },
+      {
+        "text": "Every element has an inverse in the group",
+        "why": "Each operation must have an inverse that is also in the group."
+      },
+      {
+        "text": "The combination rule is associative",
+        "why": "Associativity, A(BC) = (AB)C, is required."
+      }
+    ],
+    "explanation": "A group must (1) include the identity, (2) contain the combination of any pair of its elements, (3) contain an inverse for every element, and (4) have an associative combination rule. Commuting isn't required; groups where it holds are Abelian."
+  },
+  {
+    "id": "ic4-group-closure",
+    "type": "multiple-choice",
+    "prompt": "In C3v, a C3 rotation followed by a σv reflection gives σv''. Which group property does this illustrate?",
+    "choices": [
+      {
+        "text": "The combination of any two elements is also an element of the group",
+        "correct": true
+      },
+      {
+        "text": "Every element has an inverse",
+        "why": "The inverse property is about undoing an operation. This example shows two operations combining into another operation of the group."
+      },
+      {
+        "text": "The group includes the identity",
+        "why": "The example shows that combining two operations gives another operation already in the group."
+      },
+      {
+        "text": "Associativity",
+        "why": "Associativity is about how three operations are grouped. This example shows two operations combining into a third that is in the group."
+      }
+    ],
+    "explanation": "One group property is that the combination of any pair of elements is also an element of the group. In C3v, a C3 rotation followed by σv gives σv'', which is already part of the group."
+  },
+  {
+    "id": "ic4-inverse-c3",
+    "type": "multiple-choice",
+    "prompt": "In the C3v point group, what is the inverse of C3^+ (a counterclockwise 120° rotation)?",
+    "choices": [
+      {
+        "text": "C3^−, the clockwise 120° rotation",
+        "correct": true
+      },
+      {
+        "text": "C3^+ itself",
+        "why": "Applying C3^+ twice gives a 240° rotation, not the identity. Its inverse is the clockwise rotation, C3^−."
+      },
+      {
+        "text": "σv",
+        "why": "A reflection doesn't undo a rotation. C3^− does: C3^+C3^− = E."
+      },
+      {
+        "text": "It has no inverse",
+        "why": "Every operation in a group must have an inverse in the group. For C3^+ it's C3^−."
+      }
+    ],
+    "explanation": "Each operation must have an inverse in the group that undoes it, so that AA^−1 = A^−1A = E. In C3v, the inverse of C3^+ is C3^−."
+  },
+  {
+    "id": "ic4-associative",
+    "type": "multiple-choice",
+    "prompt": "What does it mean that the combination rule of a group is associative?",
+    "choices": [
+      {
+        "text": "The grouping doesn't matter: (AB)C = A(BC)",
+        "correct": true
+      },
+      {
+        "text": "The order doesn't matter: AB = BA",
+        "why": "That's commuting, which groups don't generally have. Associativity is about grouping: (AB)C = A(BC)."
+      },
+      {
+        "text": "Every operation can be undone",
+        "why": "That's the inverse property. Associativity says (AB)C = A(BC)."
+      },
+      {
+        "text": "Combining two operations gives a third in the group",
+        "why": "That's the group (closure) property. Associativity is about how operations are grouped."
+      }
+    ],
+    "explanation": "The rule of combination must be associative: (AiAj)Ak = Ai(AjAk). The grouping of operations doesn't matter, although the order in which they're applied does."
+  },
+  {
+    "id": "ic4-matrix-trace",
+    "type": "numeric",
+    "prompt": "The trace of a square matrix is the sum of its diagonal elements. What is the trace of the matrix with rows (2, 0, 1), (4, −3, 5), (1, 1, 7)?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The diagonal elements are 2, −3, and 7, so the trace is 2 + (−3) + 7 = 6."
+  },
+  {
+    "id": "ic4-determinant",
+    "type": "numeric",
+    "prompt": "For a 2 × 2 matrix with rows (a, b) and (c, d), the determinant is ad − cb. What is the determinant of the matrix with rows (4, 3) and (2, 5)?",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "det = (4)(5) − (2)(3) = 20 − 6 = 14. Since it isn't zero, the matrix is nonsingular."
+  },
+  {
+    "id": "ic4-matrix-dimensions",
+    "type": "multiple-choice",
+    "prompt": "Matrix A is 2 × 3 and matrix B is 3 × 4. What can you say about the product AB?",
+    "choices": [
+      {
+        "text": "It is defined and has dimensions 2 × 4",
+        "correct": true
+      },
+      {
+        "text": "It is defined and has dimensions 3 × 3",
+        "why": "An m × n matrix times an n × p matrix gives an m × p matrix: here 2 × 4."
+      },
+      {
+        "text": "It isn't defined, because the matrices are different sizes",
+        "why": "Multiplication only needs A's columns to match B's rows. A has 3 columns and B has 3 rows, so AB is defined."
+      },
+      {
+        "text": "It is defined and has dimensions 4 × 2",
+        "why": "The result takes its rows from A and its columns from B: 2 × 4."
+      }
+    ],
+    "explanation": "To multiply two matrices, the number of columns in the first must equal the number of rows in the second. If A is m × n and B is n × p, AB is m × p: here 2 × 4."
+  },
+  {
+    "id": "ic4-matrix-product-entry",
+    "type": "numeric",
+    "prompt": "Row 1 of matrix A is (2, 1, 0) and column 1 of matrix B is (1, 3, −2). What is the entry c11 of the product AB?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "c11 multiplies row 1 of A by column 1 of B, entry by entry, and adds the results: 2 × 1 + 1 × 3 + 0 × (−2) = 2 + 3 + 0 = 5."
+  },
+  {
+    "id": "ic4-commutator",
+    "type": "multiple-choice",
+    "prompt": "How is the commutator of two square matrices A and B defined?",
+    "choices": [
+      {
+        "text": "[A, B] = AB − BA",
+        "correct": true
+      },
+      {
+        "text": "[A, B] = AB + BA",
+        "why": "The commutator measures how much AB and BA differ, so it is their difference: AB − BA."
+      },
+      {
+        "text": "[A, B] = A − B",
+        "why": "The commutator involves the products: [A, B] = AB − BA."
+      },
+      {
+        "text": "[A, B] = AB / BA",
+        "why": "The commutator is AB − BA. It is zero exactly when A and B commute."
+      }
+    ],
+    "explanation": "Matrix multiplication is not, in general, commutative, so it is useful to define the commutator, [A, B] = AB − BA. It is zero when the two matrices commute."
+  },
+  {
+    "id": "ic4-c2-matrix",
+    "type": "multiple-choice",
+    "prompt": "A C2 rotation about the z axis moves a point (x, y, z) to which new position?",
+    "choices": [
+      {
+        "text": "(−x, −y, z)",
+        "correct": true
+      },
+      {
+        "text": "(x, −y, z)",
+        "why": "That's a reflection through the xz plane. A 180° rotation about z reverses both x and y."
+      },
+      {
+        "text": "(−x, −y, −z)",
+        "why": "That's inversion. A rotation about z leaves z unchanged."
+      },
+      {
+        "text": "(x, y, −z)",
+        "why": "That's reflection through the xy plane. Rotation about z changes x and y, not z."
+      }
+    ],
+    "explanation": "A 2-fold rotation around the z axis changes (x, y, z) to (−x, −y, z), so its transformation matrix has −1, −1, 1 on the diagonal and zeros elsewhere."
+  },
+  {
+    "id": "ic4-inversion-character",
+    "type": "numeric",
+    "prompt": "Inversion takes (x, y, z) to (−x, −y, −z), so its transformation matrix has −1, −1, −1 on the diagonal and zeros elsewhere. What is its character?",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "The character of a matrix is its trace, the sum of its diagonal elements: (−1) + (−1) + (−1) = −3."
+  },
+  {
+    "id": "ic4-character-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the character of a symmetry operation's transformation matrix?",
+    "choices": [
+      {
+        "text": "Its trace: the sum of the diagonal elements",
+        "correct": true
+      },
+      {
+        "text": "Its determinant",
+        "why": "The character is the trace. For C2 about z the trace is (−1) + (−1) + 1 = −1."
+      },
+      {
+        "text": "The number of rows in the matrix",
+        "why": "That's the matrix's dimension, which equals the character only for the identity. The character is the trace."
+      },
+      {
+        "text": "The largest entry in the matrix",
+        "why": "The character is the trace, the sum of the diagonal elements."
+      }
+    ],
+    "explanation": "For a square matrix, the character is the trace of the matrix. For the C2 matrix of water's point group, the trace is (−1) + (−1) + 1 = −1."
+  },
+  {
+    "id": "ic4-c2v-reducible",
+    "type": "multiple-choice",
+    "prompt": "Using the x, y, z coordinates, the characters for E, C2, σv(xz), and σv'(yz) in C2v are 3, −1, 1, 1. What is this set called?",
+    "choices": [
+      {
+        "text": "A reducible representation (Γ)",
+        "correct": true
+      },
+      {
+        "text": "An irreducible representation",
+        "why": "This set can be broken down into three 1 × 1 representations, one each for x, y, and z, so it is reducible."
+      },
+      {
+        "text": "The character table",
+        "why": "A character table is the complete set of irreducible representations. This is a single reducible representation."
+      },
+      {
+        "text": "The order of the group",
+        "why": "The order is the number of operations, 4 for C2v. These are characters."
+      }
+    ],
+    "explanation": "The set of characters for a point group, here from the 3 × 3 transformation matrices, is a reducible representation, Γ. For C2v using x, y, z, Γ = 3, −1, 1, 1. It breaks down into irreducible representations for x, y, and z."
+  },
+  {
+    "id": "ic4-character-table-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a character table?",
+    "choices": [
+      {
+        "text": "The complete set of irreducible representations of a symmetry group",
+        "correct": true
+      },
+      {
+        "text": "A list of the molecule's bond lengths and angles",
+        "why": "A character table is about symmetry: the characters of every irreducible representation under every class of operation."
+      },
+      {
+        "text": "A table of a molecule's reducible representations",
+        "why": "Reducible representations break down into the irreducible ones, and the character table is the complete set of irreducible representations."
+      },
+      {
+        "text": "A table of electronegativities",
+        "why": "A character table lists a group's irreducible representations and their characters."
+      }
+    ],
+    "explanation": "A character table is the complete set of irreducible representations of a symmetry group. Along the top are the classes of operations, down the left the irreducible representations with their Mulliken labels, and on the right the functions that transform as each."
+  },
+  {
+    "id": "ic4-totally-symmetric",
+    "type": "multiple-choice",
+    "prompt": "Every character table has a totally symmetric representation. What are its characters?",
+    "choices": [
+      {
+        "text": "All 1",
+        "correct": true
+      },
+      {
+        "text": "All 0",
+        "why": "In the totally symmetric representation every character is 1, like A1 in C2v."
+      },
+      {
+        "text": "Alternating 1 and −1",
+        "why": "Representations with −1 characters, like B1 in C2v, aren't totally symmetric. In the totally symmetric one, every character is 1."
+      },
+      {
+        "text": "Equal to the order of the group",
+        "why": "Every character of the totally symmetric representation is 1."
+      }
+    ],
+    "explanation": "There is always a totally symmetric representation in which all the characters are 1. In C2v it is A1."
+  },
+  {
+    "id": "ic4-c3v-order",
+    "type": "numeric",
+    "prompt": "The order (h) of a group is the total number of its symmetry operations. C3v contains E, two C3 rotations, and three σv planes. What is h?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "h counts every operation, not every class: 1 (E) + 2 (C3 and C3^2) + 3 (σv, σv', σv'') = 6. In the character table these appear as three classes, E, 2C3, and 3σv."
+  },
+  {
+    "id": "ic4-square-tables",
+    "type": "multiple-choice",
+    "prompt": "Why are all character tables square?",
+    "choices": [
+      {
+        "text": "The number of irreducible representations (rows) equals the number of classes (columns)",
+        "correct": true
+      },
+      {
+        "text": "Every group has exactly four operations",
+        "why": "C2v has four, but C3v has six. Tables are square because the number of irreducible representations equals the number of classes."
+      },
+      {
+        "text": "By convention, extra rows are deleted",
+        "why": "Nothing is deleted. The number of irreducible representations always equals the number of classes."
+      },
+      {
+        "text": "Each operation gets its own column and row",
+        "why": "Columns are classes, not operations: C3v has six operations but three classes, and three irreducible representations."
+      }
+    ],
+    "explanation": "The number of irreducible representations (rows) must equal the number of classes (columns), so all character tables are square. C2v has four classes and four irreducible representations; C3v has three of each."
+  },
+  {
+    "id": "ic4-c3v-e-squares",
+    "type": "numeric",
+    "prompt": "In C3v, the characters under E for the irreducible representations A1, A2, and E are 1, 1, and 2. What is the sum of their squares?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "1^2 + 1^2 + 2^2 = 1 + 1 + 4 = 6, which equals the order of the group (h = 6), as it must: the sum of squares of the characters under E always equals h."
+  },
+  {
+    "id": "ic4-c3-character",
+    "type": "numeric",
+    "prompt": "In C3v, the C3 rotation acts on x and y through a 2 × 2 block whose diagonal entries are −1/2 and −1/2. What is the character of C3 in this two-dimensional (E) representation?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "The character is the trace of the block: (−1/2) + (−1/2) = −1, the value in the E row under 2C3 in the C3v character table."
+  },
+  {
+    "id": "ic4-mulliken-labels",
+    "type": "multiple-choice",
+    "prompt": "In Mulliken labels, what does the letter E mean for an irreducible representation?",
+    "choices": [
+      {
+        "text": "Doubly degenerate (2 × 2)",
+        "correct": true
+      },
+      {
+        "text": "The identity operation",
+        "why": "The identity operation is also written E, but as a Mulliken label for a representation, E means doubly degenerate."
+      },
+      {
+        "text": "Triply degenerate",
+        "why": "Triply degenerate representations are labeled T."
+      },
+      {
+        "text": "Symmetric to the principal axis",
+        "why": "That's A (singly degenerate, symmetric to the principal axis). E means doubly degenerate."
+      }
+    ],
+    "explanation": "Mulliken labels: A is singly degenerate and symmetric to the principal axis, B singly degenerate and antisymmetric to it, E doubly degenerate, and T triply degenerate. Subscripts g and u mean symmetric and antisymmetric to inversion."
+  },
+  {
+    "id": "ic4-g-u-subscripts",
+    "type": "multiple-choice",
+    "prompt": "What does the subscript g in a Mulliken label such as A1g mean?",
+    "choices": [
+      {
+        "text": "Symmetric with respect to the inversion center",
+        "correct": true
+      },
+      {
+        "text": "Antisymmetric with respect to the inversion center",
+        "why": "That's u. The subscript g means symmetric to inversion."
+      },
+      {
+        "text": "Symmetric with respect to σh",
+        "why": "Symmetry to σh is shown by a prime ('). The subscript g refers to inversion."
+      },
+      {
+        "text": "Doubly degenerate",
+        "why": "Degeneracy is shown by the letter (E for doubly degenerate). The subscript g means symmetric to inversion."
+      }
+    ],
+    "explanation": "In Mulliken labels, g means symmetric to the inversion center and u antisymmetric to it. A prime (') means symmetric to σh and a double prime (\") antisymmetric to σh."
+  },
+  {
+    "id": "ic4-orthogonality",
+    "type": "multiple-choice",
+    "prompt": "In C2v, B1 has characters 1, −1, 1, −1 and B2 has 1, −1, −1, 1. Multiplying their characters operation by operation and adding gives 1 + 1 − 1 − 1 = 0. Which property does this show?",
+    "choices": [
+      {
+        "text": "Irreducible representations are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Irreducible representations are all identical",
+        "why": "B1 and B2 are different representations. The zero sum shows they're orthogonal."
+      },
+      {
+        "text": "The order of the group is zero",
+        "why": "C2v has order 4. The zero sum is the orthogonality of two different irreducible representations."
+      },
+      {
+        "text": "The group is not Abelian",
+        "why": "The calculation shows that two irreducible representations are orthogonal: their characters' products sum to zero."
+      }
+    ],
+    "explanation": "Irreducible representations are orthogonal: for any two different representations i and j, the sum over operations of χi(R)χj(R) is zero. For B1 and B2 of C2v, [1 × 1] + [−1 × −1] + [1 × −1] + [−1 × 1] = 0."
+  },
+  {
+    "id": "ic4-orbital-functions",
+    "type": "multiple-choice",
+    "prompt": "In the C2v character table, z is listed with A1 and xy with A2. What does this tell you?",
+    "choices": [
+      {
+        "text": "A pz orbital has A1 symmetry, and a dxy orbital has A2 symmetry",
+        "correct": true
+      },
+      {
+        "text": "A pz orbital has A2 symmetry",
+        "why": "p orbitals take the symmetry of their axis: pz goes with z, listed under A1."
+      },
+      {
+        "text": "The functions are unrelated to orbitals",
+        "why": "The functions show orbital symmetry: p orbitals match x, y, z, and d orbitals match the binary products, such as xy."
+      },
+      {
+        "text": "A dxy orbital is totally symmetric",
+        "why": "The totally symmetric representation, A1, goes with x^2, y^2, z^2 (and so with s orbitals). dxy matches xy, under A2."
+      }
+    ],
+    "explanation": "The functions in a character table indicate orbital symmetries: an s orbital is totally symmetric, each p orbital has the symmetry of its axis (pz with z), and each d orbital has the symmetry of its binary product (dxy with xy)."
+  }
+]

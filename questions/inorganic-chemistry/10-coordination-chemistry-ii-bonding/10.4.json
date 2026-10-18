@@ -1,0 +1,425 @@
+[
+  {
+    "id": "ic10-s4-overlap-core-idea",
+    "type": "multiple-choice",
+    "prompt": "In the angular overlap model, what happens when a ligand orbital overlaps more strongly with a metal d orbital?",
+    "choices": [
+      {
+        "text": "The ligand-centered bonding orbital is stabilized more and the metal-centered antibonding orbital is destabilized more",
+        "correct": true
+      },
+      {
+        "text": "The bonding orbital is stabilized more, but the antibonding orbital is left unchanged",
+        "why": "Stronger overlap means a stronger interaction in both directions: the bonding combination drops further and the antibonding combination rises further."
+      },
+      {
+        "text": "Both the bonding and antibonding orbitals are stabilized more",
+        "why": "Only the in-phase, bonding combination drops in energy. The out-of-phase, antibonding combination is raised."
+      },
+      {
+        "text": "The interaction gets weaker, because the orbitals repel each other more",
+        "why": "Greater overlap gives a greater interaction, not a weaker one. That is the core idea of the model."
+      }
+    ],
+    "explanation": "The model's core idea is that ligand orbitals overlap with metal d orbitals to different extents depending on the angle of approach. Stronger overlap means a greater interaction: more stabilization of the ligand-centered bonding orbital and more destabilization of the metal-centered antibonding orbital."
+  },
+  {
+    "id": "ic10-s4-tetrahedral-dz2-overlap",
+    "type": "multiple-choice",
+    "prompt": "A ligand sits at one corner of a tetrahedral array (a cube corner) around a metal. Which of these d orbitals has essentially no σ overlap with it?",
+    "choices": [
+      {
+        "text": "dz2, because its on-axis lobe points too far away from the cube corner",
+        "correct": true
+      },
+      {
+        "text": "dxz, because it lies between the axes",
+        "why": "The dxz orbital reaches a little closer to the corner position, so it overlaps somewhat; it gets 1/3 eσ from a tetrahedral ligand."
+      },
+      {
+        "text": "dxy, because it lies in the xy plane",
+        "why": "Like dxz, dxy reaches toward the cube corners and picks up 1/3 eσ from each tetrahedral ligand."
+      },
+      {
+        "text": "dyz, because it lies in the yz plane",
+        "why": "The dyz orbital also reaches toward the cube corners; a tetrahedral ligand contributes 1/3 eσ to it, just as it does to dxy and dxz."
+      }
+    ],
+    "explanation": "The dz2 orbital's big lobes lie along the z axis, too far from the cube corners where tetrahedral ligands sit, so there is no bonding or antibonding interaction. The dxz orbital reaches closer to a corner and has some overlap. In the σ table, a tetrahedral position gives 0 for dz2 and dx2−y2 and 1/3 eσ each for dxy, dxz and dyz."
+  },
+  {
+    "id": "ic10-s4-e-sigma-reference",
+    "type": "multiple-choice",
+    "prompt": "In the angular overlap model, the quantity eσ is defined from which interaction, with every other σ interaction expressed as a fraction of it?",
+    "choices": [
+      {
+        "text": "A dz2 orbital interacting with a ligand on its axis (an axial ligand)",
+        "correct": true
+      },
+      {
+        "text": "A dz2 orbital interacting with an equatorial ligand",
+        "why": "An equatorial ligand meets only the small toroid of dz2 and gets 1/4 eσ. The reference is the strong, on-axis interaction."
+      },
+      {
+        "text": "A dxz orbital interacting with a ligand at a tetrahedral corner",
+        "why": "That interaction is weak (1/3 eσ). The reference is the strongest overlap, dz2 with an axial ligand."
+      },
+      {
+        "text": "A dxz orbital interacting with a ligand p orbital perpendicular to the bond axis",
+        "why": "That is the reference for π interactions, eπ, not eσ."
+      }
+    ],
+    "explanation": "When an axial ligand interacts with dz2, the bonding combination drops by eσ and the antibonding combination rises by eσ. This is a strong interaction, so other metal–ligand σ interactions, with less overlap, are expressed as fractions of eσ."
+  },
+  {
+    "id": "ic10-s4-t-shaped-dz2",
+    "type": "numeric",
+    "prompt": "A T-shaped ML3 complex has σ-donor ligands at positions 1 and 6 (both on the z axis) and position 2 (on the x axis). From the σ table, a ligand at position 1 or 6 contributes 1 eσ to dz2 and a ligand at position 2 contributes 1/4 eσ. By how much, in units of eσ, is the dz2 orbital raised?",
+    "answer": 2.25,
+    "unit": "eσ",
+    "tolerance": 0,
+    "explanation": "Add the dz2 contributions of each occupied position: (1 + 1/4 + 1) eσ = 9/4 eσ = 2.25 eσ."
+  },
+  {
+    "id": "ic10-s4-tetrahedral-sigma-pattern",
+    "type": "multiple-choice",
+    "prompt": "In σ-only tetrahedral ML4 (positions 7–10), each ligand contributes 0 eσ to dz2 and dx2−y2 and 1/3 eσ to each of dxy, dxz and dyz. What splitting pattern results?",
+    "choices": [
+      {
+        "text": "dxy, dxz and dyz are each raised by 4/3 eσ, while dz2 and dx2−y2 stay at 0",
+        "correct": true
+      },
+      {
+        "text": "dz2 and dx2−y2 are each raised by 3 eσ, while dxy, dxz and dyz stay at 0",
+        "why": "That is the octahedral pattern. Tetrahedral ligands don't touch dz2 or dx2−y2 at all."
+      },
+      {
+        "text": "All five d orbitals are raised by 4/5 eσ",
+        "why": "The interactions aren't spread evenly: only the three orbitals with a 1/3 eσ entry are affected, each by 4 × 1/3 = 4/3 eσ."
+      },
+      {
+        "text": "dxy, dxz and dyz are each raised by 1/3 eσ",
+        "why": "That is the contribution of one ligand. Four ligands each contribute 1/3 eσ, giving 4/3 eσ per orbital."
+      }
+    ],
+    "explanation": "Summing each column over positions 7–10 gives dz2: 0, dx2−y2: 0, and dxy, dxz, dyz: 4 × 1/3 = 4/3 eσ each. The three orbitals that point between the axes are destabilized; the two that point along the axes are not."
+  },
+  {
+    "id": "ic10-s4-ligand-row-sum",
+    "type": "multiple-choice",
+    "prompt": "In the σ table, every row (one ligand position, summed across all five d orbitals) adds up to 1; for example, position 11 gives 1/4 + 3/16 + 9/16 = 1. What does this mean for a σ-donor ligand?",
+    "choices": [
+      {
+        "text": "Wherever it sits, each ligand donor orbital is stabilized by a total of eσ",
+        "correct": true
+      },
+      {
+        "text": "Each ligand interacts with only one d orbital",
+        "why": "A row can have several nonzero entries, as position 11 does. The point is that they always add up to 1 eσ."
+      },
+      {
+        "text": "Each d orbital is raised by exactly eσ in every geometry",
+        "why": "Column sums give the d orbital energies, and they vary: in octahedral geometry dz2 rises by 3 eσ while dxy doesn't rise at all."
+      },
+      {
+        "text": "Ligands at tetrahedral positions are stabilized less than ligands on the axes",
+        "why": "A tetrahedral row is 1/3 + 1/3 + 1/3 = 1, the same total as an axial row. Each ligand is stabilized by eσ."
+      }
+    ],
+    "explanation": "To find how much a ligand is stabilized, add across its row. Every row sums to 1, so each σ-donor ligand drops by −eσ regardless of its position. In octahedral geometry, for example, all six ligands are stabilized by −eσ each."
+  },
+  {
+    "id": "ic10-s4-octahedral-hs-d4-net",
+    "type": "numeric",
+    "prompt": "In σ-only octahedral geometry, dz2 and dx2−y2 are each raised by 3 eσ, the other three d orbitals are unchanged, and each of the six ligand donor orbitals (two electrons each) is stabilized by eσ. What is the net σ-bonding energy, in units of eσ, of a high-spin d4 complex? (Use a negative number for stabilization.)",
+    "answer": -9,
+    "unit": "eσ",
+    "tolerance": 0,
+    "explanation": "Ligand electrons: 6 ligands × 2 electrons × (−eσ) = −12 eσ. High-spin d4 puts three electrons in the unchanged orbitals (0) and one in an orbital raised by 3 eσ (+3 eσ). Net: −12 eσ + 3 eσ = −9 eσ."
+  },
+  {
+    "id": "ic10-s4-square-planar-d8-net",
+    "type": "numeric",
+    "prompt": "In σ-only square planar ML4 (positions 2–5), dx2−y2 is raised by 3 eσ, dz2 by 1 eσ, and dxy, dxz and dyz are unchanged; each of the four ligand donor orbitals (two electrons each) is stabilized by eσ. What is the net σ-bonding energy, in units of eσ, of a d8 complex with the dx2−y2 orbital left empty? (Use a negative number for stabilization.)",
+    "answer": -6,
+    "unit": "eσ",
+    "tolerance": 0,
+    "explanation": "Ligand electrons: 4 × 2 × (−eσ) = −8 eσ. Eight d electrons fill dxy, dxz and dyz (6 electrons, 0) and dz2 (2 electrons × 1 eσ = +2 eσ), leaving dx2−y2 empty. Net: −8 eσ + 2 eσ = −6 eσ."
+  },
+  {
+    "id": "ic10-s4-aom-limitation",
+    "type": "multiple-choice",
+    "prompt": "The angular overlap model reproduces the familiar octahedral splitting diagram. What simplification does it make compared with ligand field theory?",
+    "choices": [
+      {
+        "text": "It neglects any interaction between ligand orbitals and the metal s and p orbitals",
+        "correct": true
+      },
+      {
+        "text": "It ignores the d orbitals and considers only the metal s and p orbitals",
+        "why": "It is the other way around: the model focuses on the metal d orbitals and leaves out the s and p orbitals."
+      },
+      {
+        "text": "It assumes every ligand overlaps equally with every d orbital",
+        "why": "The whole point of the model is that overlap depends on the angle at which ligand and d orbitals meet."
+      },
+      {
+        "text": "It cannot give relative d orbital energies",
+        "why": "Giving relative d orbital energies is what the model does very straightforwardly, by summing tabulated interactions."
+      }
+    ],
+    "explanation": "The angular overlap results are simplified compared with ligand field theory: they completely neglect interactions of the ligand orbitals with the metal s and p orbitals. In exchange, the model gives a very straightforward calculation of the relative d orbital energies."
+  },
+  {
+    "id": "ic10-s4-pi-acceptor-effect",
+    "type": "multiple-choice",
+    "prompt": "In the angular overlap model, what does π back-bonding to an acceptor ligand such as CO do to the orbital energies?",
+    "choices": [
+      {
+        "text": "The filled metal d orbital is lowered (its electrons become bonding) and the empty ligand orbital is raised",
+        "correct": true
+      },
+      {
+        "text": "The filled metal d orbital is raised and the ligand orbital is lowered",
+        "why": "That describes a π donor, where the ligand electrons form the π bond. With an acceptor, the metal electrons are stabilized."
+      },
+      {
+        "text": "Only the ligand orbital changes; the d orbitals are unaffected",
+        "why": "The interaction works on both partners: the d orbital drops and the ligand orbital rises."
+      },
+      {
+        "text": "Both orbitals are lowered by the same amount, eπ",
+        "why": "One combination goes down and the other goes up. The metal electrons are stabilized while the empty ligand orbital is destabilized."
+      }
+    ],
+    "explanation": "An empty ligand orbital approaches perpendicular to the bond axis and overlaps with a filled metal d orbital. The d electrons drop in energy and become bonding in nature, while the empty ligand orbital is raised. The energy is expressed in eπ, which is somewhat smaller than eσ because the overlap is smaller."
+  },
+  {
+    "id": "ic10-s4-octahedral-pi-acceptor-d6",
+    "type": "numeric",
+    "prompt": "In an octahedral complex with six π-acceptor ligands, the angular overlap model lowers each of dxy, dxz and dyz by 4 eπ. For a low-spin d6 complex, with all six d electrons in these three orbitals, what is the total π stabilization of the d electrons, in units of eπ? (Use a negative number for stabilization.)",
+    "answer": -24,
+    "unit": "eπ",
+    "tolerance": 0,
+    "explanation": "Each of the six electrons sits in an orbital lowered by 4 eπ: 6 × (−4 eπ) = −24 eπ."
+  },
+  {
+    "id": "ic10-s4-tetrahedral-pi-donor-dz2",
+    "type": "numeric",
+    "prompt": "In tetrahedral ML4, the ligands occupy positions 7–10, and the π table gives each of these positions a value of 2/3 for dz2. With four π-donor ligands, by how much is dz2 raised, in units of eπ?",
+    "answer": 2.67,
+    "unit": "eπ",
+    "tolerance": 0.01,
+    "explanation": "Four ligands each contribute 2/3 eπ: 4 × 2/3 eπ = 8/3 eπ ≈ 2.67 eπ. With π donors the d orbitals they overlap are destabilized, so this is a rise in energy."
+  },
+  {
+    "id": "ic10-s4-pi-donor-effect",
+    "type": "multiple-choice",
+    "prompt": "Halide and alkoxide ligands act as π donors. What makes them π donors, and what does the π interaction do to the d orbitals it involves?",
+    "choices": [
+      {
+        "text": "Their donor atom has more than one lone pair; the ligand electrons are stabilized and the d orbitals they overlap are destabilized",
+        "correct": true
+      },
+      {
+        "text": "Their donor atom has an empty π* orbital; the d orbitals they overlap are stabilized",
+        "why": "An empty π* orbital makes a ligand a π acceptor, and acceptors stabilize the d orbitals. Halides and alkoxides donate extra lone pairs."
+      },
+      {
+        "text": "Their donor atom has only one lone pair; the d orbitals are unaffected",
+        "why": "A single lone pair makes a simple σ donor like NH3. π donors have an additional lone pair."
+      },
+      {
+        "text": "Their donor atom has more than one lone pair; the d orbitals they overlap are stabilized",
+        "why": "Because the ligand electrons form the π bond, it is the ligand electrons that are stabilized and the d orbitals that rise."
+      }
+    ],
+    "explanation": "Ligands whose donor atom has more than one lone pair can donate π density to the metal. The overlap is the same as for π acceptors, so the same table applies, but because ligand electrons form the π bond, those electrons are stabilized and the d orbitals they overlap are destabilized. In octahedral geometry the off-axis d orbitals are raised modestly."
+  },
+  {
+    "id": "ic10-s4-interaction-factors",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which two factors determine how strongly a metal orbital and a ligand orbital interact, and so the size of the field splitting?",
+    "choices": [
+      {
+        "text": "How close the two orbitals are in energy, and how much they overlap",
+        "correct": true
+      },
+      {
+        "text": "The number of ligands and the mass of the metal",
+        "why": "Mass plays no role. The interaction depends on the energy match and the overlap of the two orbitals."
+      },
+      {
+        "text": "The size of the ligand and the color of the complex",
+        "why": "The color reflects Δo; it doesn't cause it. The interaction depends on the energy match and overlap of the orbitals."
+      },
+      {
+        "text": "How far apart the two orbitals are in energy (farther is stronger), and how much they overlap",
+        "why": "Overlap is right, but the energy factor is reversed: the closer the two orbitals are in energy, the greater the interaction."
+      }
+    ],
+    "explanation": "The field strength of a ligand depends on both the relative energies of the metal and ligand orbitals and the degree of overlap between them. The closer in energy the two orbitals are, and the greater their overlap, the greater the interaction."
+  },
+  {
+    "id": "ic10-s4-halide-field-strength",
+    "type": "multiple-choice",
+    "prompt": "Among the halides, which produces the largest field splitting, and how does the section explain it?",
+    "choices": [
+      {
+        "text": "Fluoride, because it is the most basic halide and its p orbital overlaps better with the d orbital of a positive metal ion",
+        "correct": true
+      },
+      {
+        "text": "Iodide, because it is the largest and most polarizable halide",
+        "why": "Iodide gives the smallest splitting of the halides. The section links the trend to basicity and to better overlap for fluoride."
+      },
+      {
+        "text": "Chloride, because it is in the middle of the group",
+        "why": "The trend is F− > Cl− > Br− > I−, so fluoride produces the largest splitting."
+      },
+      {
+        "text": "Fluoride, because it is a π acceptor",
+        "why": "Halides are π donors, not acceptors. Fluoride's large splitting is put down to its basicity and better overlap."
+      }
+    ],
+    "explanation": "Among the halides, fluoride produces the largest field splitting and iodide the smallest: F− > Cl− > Br− > I−. The section explains this by basicity (fluoride is the most basic) and by better overlap between fluorine's p orbital and the d acceptor of a positively charged metal ion, compared with larger halides like iodine."
+  },
+  {
+    "id": "ic10-s4-phen-vs-co",
+    "type": "multiple-choice",
+    "prompt": "Phenanthroline and carbon monoxide are both neutral π acceptors, yet phenanthroline gives the weaker field. What reason does the section give?",
+    "choices": [
+      {
+        "text": "The donor nitrogen has a smaller lobe in phenanthroline's π* orbital than carbon has in CO's π*, so metal–ligand π overlap is poorer",
+        "correct": true
+      },
+      {
+        "text": "Phenanthroline carries a negative charge, which makes it a weaker acceptor",
+        "why": "Phenanthroline is neutral. A negative charge is the reason given for cyanide being slightly weaker than CO."
+      },
+      {
+        "text": "Phenanthroline has no π* orbital",
+        "why": "Phenanthroline is aromatic and has a π bond that includes the donor nitrogen, so it does have a π* orbital available for back-donation."
+      },
+      {
+        "text": "Nitrogen is less electronegative than carbon, so it contributes less to the bonding orbital",
+        "why": "Nitrogen is more electronegative than carbon. That is why it contributes more to the C=N π bonding orbital and less to the π* orbital."
+      }
+    ],
+    "explanation": "Because nitrogen is more electronegative than carbon, it contributes more to the C=N π bonding orbital and less to the antibonding orbital. So the π* orbital of phenanthroline has a small lobe on the donor nitrogen, whereas CO's π* has a larger lobe on carbon. The result is better metal–ligand π overlap with CO."
+  },
+  {
+    "id": "ic10-s4-ligand-classification",
+    "type": "multiple-choice",
+    "prompt": "Which set of ligands does the section classify as π donors?",
+    "choices": [
+      {
+        "text": "acac, oxide, oxalate and sulfide",
+        "correct": true
+      },
+      {
+        "text": "bpy, pyridine and CH3CN",
+        "why": "These aromatic or π-bonded donors are classified as weak π acceptors, like phen."
+      },
+      {
+        "text": "NH3 and en",
+        "why": "Each donor nitrogen has a single lone pair, so these are simple σ donors."
+      },
+      {
+        "text": "CO, CN− and PPh3",
+        "why": "These are π acceptors. PPh3 has only one lone pair, but phosphines tend to behave as π acceptors."
+      }
+    ],
+    "explanation": "Acac, oxide, oxalate and sulfide are π donors: in each, the donor atom has a lone pair in addition to the σ-donor pair. Bpy, pyridine and acetonitrile behave as weak π acceptors, NH3 and en are simple σ donors, and PPh3, despite having only one lone pair, tends to behave as a π acceptor."
+  },
+  {
+    "id": "ic10-s4-pyridine-e-pi",
+    "type": "numeric",
+    "prompt": "For octahedral geometry the angular overlap model gives Δ = 3eσ − 4eπ. For pyridine bound to Cr3+, eσ = 6,150 cm−1 and Δ = 19,770 cm−1. What is eπ, in cm−1?",
+    "answer": -330,
+    "unit": "cm−1",
+    "tolerance": 0,
+    "explanation": "Rearrange: eπ = (3eσ − Δ)/4 = (3 × 6,150 − 19,770)/4 = (18,450 − 19,770)/4 = −1,320/4 = −330 cm−1. The negative sign marks pyridine as a π acceptor."
+  },
+  {
+    "id": "ic10-s4-cyanide-pi-contribution",
+    "type": "numeric",
+    "prompt": "For octahedral geometry Δ = 3eσ − 4eπ, where eπ is positive for a π donor and negative for a π acceptor. For cyanide on Cr3+, eσ = 7,530 cm−1 and eπ = −930 cm−1. By how much, in cm−1, does the π term increase Δ above the σ-only value of 3eσ?",
+    "answer": 3720,
+    "unit": "cm−1",
+    "tolerance": 0,
+    "explanation": "The π term is −4eπ = −4 × (−930 cm−1) = +3,720 cm−1. Check: Δ = 3 × 7,530 + 3,720 = 22,590 + 3,720 = 26,310 cm−1, the tabulated value."
+  },
+  {
+    "id": "ic10-s4-e-pi-sign",
+    "type": "multiple-choice",
+    "prompt": "In the expression Δ = 3eσ − 4eπ for an octahedral complex, what is the sign convention for eπ, and what does it mean for the splitting?",
+    "choices": [
+      {
+        "text": "eπ is positive for a π donor, which lowers Δ, and negative for a π acceptor, which raises Δ",
+        "correct": true
+      },
+      {
+        "text": "eπ is positive for a π acceptor, which raises Δ",
+        "why": "With a positive eπ the term −4eπ would lower Δ. Acceptors take a negative eπ so that −4eπ adds to the splitting."
+      },
+      {
+        "text": "eπ is always positive, so π bonding always lowers Δ",
+        "why": "π acceptors have a negative eπ and increase Δ; cyanide, with eπ = −930 cm−1, gives the largest Δ in the Cr(III) table."
+      },
+      {
+        "text": "eπ is negative for a π donor, which raises Δ",
+        "why": "π donors have positive eπ (for example 2,000 cm−1 for F−), which makes Δ smaller."
+      }
+    ],
+    "explanation": "eπ is positive for a π donor and negative for a π acceptor. Since Δ = 3eσ − 4eπ, π donors reduce the splitting and π acceptors increase it, matching the spectrochemical series: π acceptors give the largest splittings, π donors the smallest."
+  },
+  {
+    "id": "ic10-s4-magnetochemical-basis",
+    "type": "multiple-choice",
+    "prompt": "How does the magnetochemical series differ from the spectrochemical series in the information it relies on?",
+    "choices": [
+      {
+        "text": "It is based only on observation of the ground state, using the spin state of iron(III) porphyrins with different axial ligands",
+        "correct": true
+      },
+      {
+        "text": "It is based on the d–d absorption band of octahedral Co(III) complexes",
+        "why": "That describes the spectrochemical series, which is inferred from the difference between ground and excited states."
+      },
+      {
+        "text": "It is based on the melting points of iron(III) complexes",
+        "why": "The series comes from the spin state of iron(III) porphyrins, followed by the NMR shift of the pyrrole hydrogens."
+      },
+      {
+        "text": "It relies on excited-state lifetimes of copper complexes",
+        "why": "It relies only on the ground state, in iron(III) porphyrin complexes."
+      }
+    ],
+    "explanation": "The spectrochemical series depends on an inference drawn from the difference between the ground and excited states. The magnetochemical series is based solely on the ground state: changing the axial ligand on an iron(III) porphyrin shifts its spin state (between S = 3/2 and S = 5/2, often as a quantum admixture), and the NMR shift of the pyrrole hydrogens tracks the axial ligand's field strength."
+  },
+  {
+    "id": "ic10-s4-magnetochemical-water",
+    "type": "multiple-choice",
+    "prompt": "In the magnetochemical series, water sits far lower (weaker field) than it does in the Co(III) spectrochemical series, and below hydroxide. What explanation does the section give?",
+    "choices": [
+      {
+        "text": "The usually high-spin Fe(III) centre makes π bonding less favorable, so the order mostly reflects σ donation, and anionic hydroxide is the better σ donor",
+        "correct": true
+      },
+      {
+        "text": "Water is a strong π acceptor toward iron",
+        "why": "Water is not a π acceptor. The explanation is that the iron series mainly reflects σ donation."
+      },
+      {
+        "text": "Iron(III) porphyrins are always low spin, which favors π donation from water",
+        "why": "The Fe(III) centres are usually high spin, and that makes π bonding less favorable."
+      },
+      {
+        "text": "Water binds to iron through hydrogen rather than oxygen",
+        "why": "Water binds through oxygen. The section explains the order by weak π bonding at high-spin Fe(III), leaving σ donation in charge."
+      }
+    ],
+    "explanation": "The difference is thought to come from low-spin Co(III) versus usually high-spin Fe(III). Pi bonding is less favorable for the iron complexes, so their order more strongly reflects σ donation. Hydroxide is a better σ donor than water because its negative charge gives greater electrostatic attraction to the metal."
+  }
+]

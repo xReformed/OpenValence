@@ -1,0 +1,227 @@
+[
+  {
+    "id": "ic4-symmetry-operation-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a symmetry operation?",
+    "choices": [
+      {
+        "text": "An operation that leaves a molecule indistinguishable from, and superimposable on, its original position",
+        "correct": true
+      },
+      {
+        "text": "Any motion of a molecule, such as a vibration",
+        "why": "A symmetry operation must leave the molecule looking exactly as it did before: indistinguishable and superimposable."
+      },
+      {
+        "text": "A chemical reaction that keeps the molecule's shape",
+        "why": "Symmetry operations are geometric: rotations, reflections, inversions. They don't change the molecule chemically."
+      },
+      {
+        "text": "The point, line, or plane that an operation is performed about",
+        "why": "That's a symmetry element. The operation is what's done with respect to it."
+      }
+    ],
+    "explanation": "A symmetry operation is performed on a molecule and leaves it indistinguishable and superimposable on its original position. Symmetry operations are performed with respect to symmetry elements: points, lines, or planes."
+  },
+  {
+    "id": "ic4-operation-vs-element",
+    "type": "multiple-choice",
+    "prompt": "A water molecule is rotated by 180° and looks exactly the same. In this example, what are the symmetry operation and the symmetry element?",
+    "choices": [
+      {
+        "text": "The operation is the rotation; the element is the axis of rotation",
+        "correct": true
+      },
+      {
+        "text": "The operation is the axis; the element is the rotation",
+        "why": "This is reversed. The element is the geometric object (here an axis), and the operation is what's done about it (the rotation)."
+      },
+      {
+        "text": "Both are the water molecule",
+        "why": "The operation is the 180° rotation, and the element is the C2 axis it's performed about."
+      },
+      {
+        "text": "The operation is a reflection; the element is a mirror plane",
+        "why": "This example is a rotation, about a C2 axis. (Water does have mirror planes too.)"
+      }
+    ],
+    "explanation": "In the 180° rotation of water, the symmetry operation is the rotation and the symmetry element is the axis of rotation. A 180° rotation is called a C2 operation."
+  },
+  {
+    "id": "ic4-five-operations",
+    "type": "multiple-choice",
+    "prompt": "Which of these is not one of the five types of symmetry operation?",
+    "choices": [
+      {
+        "text": "Translation",
+        "correct": true
+      },
+      {
+        "text": "Inversion",
+        "why": "Inversion, through a center of symmetry, is one of the five."
+      },
+      {
+        "text": "Improper rotation",
+        "why": "Improper rotation (S_n), a rotation followed by a reflection, is one of the five."
+      },
+      {
+        "text": "Identity",
+        "why": "Identity (E), doing nothing, is one of the five, and every molecule has it."
+      }
+    ],
+    "explanation": "The five types of symmetry operation are identity (E), reflection (σ), inversion (i), proper rotation (C_n), and improper rotation (S_n). Moving a molecule to a new place isn't one of them."
+  },
+  {
+    "id": "ic4-rotation-angle",
+    "type": "numeric",
+    "prompt": "A C_n rotation turns a molecule by 360°/n. By how many degrees does a C6 operation rotate a molecule?",
+    "answer": 60,
+    "unit": "°",
+    "tolerance": 0,
+    "explanation": "A C_n rotation is by 360°/n, so C6 rotates by 360°/6 = 60°. Likewise C2 is 180° and C3 is 120°."
+  },
+  {
+    "id": "ic4-principal-axis",
+    "type": "multiple-choice",
+    "prompt": "A molecule has both C2 and C4 axes. Which is its principal axis?",
+    "choices": [
+      {
+        "text": "The C4 axis, because it has the highest order",
+        "correct": true
+      },
+      {
+        "text": "The C2 axis, because 180° is the larger rotation",
+        "why": "The principal axis is the one of highest order (largest n), not the largest angle. C4 is higher order than C2."
+      },
+      {
+        "text": "Whichever axis passes through the most atoms",
+        "why": "The principal axis is defined by order: the highest-order proper rotation axis, here C4."
+      },
+      {
+        "text": "Neither: only molecules with a C3 axis have a principal axis",
+        "why": "Any molecule with proper rotation axes has a principal axis: the one of highest order."
+      }
+    ],
+    "explanation": "The principal axis of a molecule is its highest-order proper rotation axis. If a molecule has C2 and C4 axes, the C4 is the principal axis."
+  },
+  {
+    "id": "ic4-mirror-plane-types",
+    "type": "multiple-choice",
+    "prompt": "How is a horizontal mirror plane (σh) oriented?",
+    "choices": [
+      {
+        "text": "Perpendicular to the principal axis",
+        "correct": true
+      },
+      {
+        "text": "Containing (parallel to) the principal axis",
+        "why": "Planes containing the principal axis are vertical (σv) or dihedral (σd)."
+      },
+      {
+        "text": "Parallel to the principal axis and bisecting two C2' axes",
+        "why": "That describes a dihedral plane, σd."
+      },
+      {
+        "text": "Parallel to the ground, whatever the molecule's axes",
+        "why": "\"Horizontal\" is defined relative to the principal axis: a σh plane is perpendicular to it."
+      }
+    ],
+    "explanation": "There are three classes of mirror plane: σh (horizontal), perpendicular to the principal axis; σv (vertical), parallel to the principal axis; and σd (dihedral), parallel to the principal axis and bisecting two C2' axes."
+  },
+  {
+    "id": "ic4-dihedral-plane",
+    "type": "multiple-choice",
+    "prompt": "What distinguishes a dihedral mirror plane (σd) from a vertical one (σv)?",
+    "choices": [
+      {
+        "text": "A σd plane bisects two C2' axes; both kinds contain the principal axis",
+        "correct": true
+      },
+      {
+        "text": "A σd plane is perpendicular to the principal axis",
+        "why": "A plane perpendicular to the principal axis is horizontal (σh). σd and σv both contain the principal axis."
+      },
+      {
+        "text": "A σd plane doesn't contain any atoms",
+        "why": "The defining feature in the section is that σd planes bisect two C2' axes."
+      },
+      {
+        "text": "There is no difference",
+        "why": "Both contain the principal axis, but dihedral planes also bisect two C2' axes."
+      }
+    ],
+    "explanation": "Vertical (σv) and dihedral (σd) planes are both parallel to the principal axis; dihedral planes also bisect two C2' axes."
+  },
+  {
+    "id": "ic4-inversion-center",
+    "type": "multiple-choice",
+    "prompt": "Which shape lacks an inversion center?",
+    "choices": [
+      {
+        "text": "A tetrahedron",
+        "correct": true
+      },
+      {
+        "text": "An octahedron",
+        "why": "An octahedron has an inversion center: each vertex has an identical one directly opposite through the center."
+      },
+      {
+        "text": "A square",
+        "why": "A square has an inversion center at its middle: every corner has an identical one directly opposite."
+      },
+      {
+        "text": "A linear molecule like CO2",
+        "why": "CO2 has an inversion center at carbon: each oxygen is opposite the other."
+      }
+    ],
+    "explanation": "Inversion takes every point (x, y, z) through the center to (−x, −y, −z). Tetrahedra, triangles, and pentagons lack an inversion center, because a vertex is opposite a face or edge rather than an identical vertex."
+  },
+  {
+    "id": "ic4-improper-rotation",
+    "type": "multiple-choice",
+    "prompt": "What does an improper rotation, S_n, consist of?",
+    "choices": [
+      {
+        "text": "A C_n rotation followed by reflection through a plane perpendicular to that axis (σh)",
+        "correct": true
+      },
+      {
+        "text": "A rotation in the wrong direction (clockwise)",
+        "why": "\"Improper\" means the rotation is combined with a reflection, not that it turns the other way."
+      },
+      {
+        "text": "A reflection followed by inversion",
+        "why": "S_n is a rotation by 360°/n followed by reflection through the plane perpendicular to the rotation axis."
+      },
+      {
+        "text": "Two proper rotations about different axes",
+        "why": "S_n combines one rotation with a reflection through the plane perpendicular to that axis."
+      }
+    ],
+    "explanation": "An improper rotation combines a rotation about an axis (C_n) with a reflection through a plane perpendicular to that axis. In short, S_n is equivalent to C_n followed by σh."
+  },
+  {
+    "id": "ic4-identity",
+    "type": "multiple-choice",
+    "prompt": "Which molecules have the identity element, E?",
+    "choices": [
+      {
+        "text": "All molecules",
+        "correct": true
+      },
+      {
+        "text": "Only molecules with no other symmetry",
+        "why": "Every molecule has E, whatever else it has; for molecules with no other symmetry, E is all there is."
+      },
+      {
+        "text": "Only symmetric molecules",
+        "why": "Even the least symmetric molecule has E: doing nothing always leaves it unchanged."
+      },
+      {
+        "text": "Only linear molecules",
+        "why": "All molecules have the identity element."
+      }
+    ],
+    "explanation": "All molecules have the identity element. The identity operation is doing nothing to the molecule: it doesn't rotate, reflect, or invert."
+  }
+]

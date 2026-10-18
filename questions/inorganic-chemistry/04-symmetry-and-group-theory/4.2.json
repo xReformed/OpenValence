@@ -1,0 +1,326 @@
+[
+  {
+    "id": "ic4-point-group-definition",
+    "type": "multiple-choice",
+    "prompt": "What does a molecule's point group describe?",
+    "choices": [
+      {
+        "text": "All the symmetry operations that leave the molecule indistinguishable from the original",
+        "correct": true
+      },
+      {
+        "text": "The group of the periodic table its central atom is in",
+        "why": "Point groups are about symmetry, not the periodic table: they collect all of a molecule's symmetry operations."
+      },
+      {
+        "text": "Only the molecule's highest-order rotation axis",
+        "why": "The principal axis is one part. A point group contains all the symmetry operations."
+      },
+      {
+        "text": "The molecule's chemical functional groups",
+        "why": "A point group describes symmetry: all the operations that leave the molecule looking unchanged."
+      }
+    ],
+    "explanation": "A point group describes all the symmetry operations that can be performed on a molecule and give a conformation indistinguishable from the original. Point groups are used in group theory to determine properties such as molecular orbitals."
+  },
+  {
+    "id": "ic4-assigning-first-step",
+    "type": "multiple-choice",
+    "prompt": "Do you need to identify every symmetry operation of a molecule to assign its point group?",
+    "choices": [
+      {
+        "text": "No: a set of steps checking for particular symmetry elements is enough",
+        "correct": true
+      },
+      {
+        "text": "Yes: every operation must be found first",
+        "why": "A decision tree, checking for the presence or absence of particular elements, gives the point group without listing everything."
+      },
+      {
+        "text": "Yes: the point group is just the count of operations",
+        "why": "The point group is found by checking key elements in order: high or low symmetry, the highest C_n, perpendicular C2 axes, then mirror planes."
+      }
+    ],
+    "explanation": "It isn't necessary to identify all of a molecule's operations. A molecule's point group can be found by steps that check for particular elements: whether it's of high or low symmetry, its highest-order axis, perpendicular C2 axes, and mirror planes."
+  },
+  {
+    "id": "ic4-d-groups",
+    "type": "multiple-choice",
+    "prompt": "A molecule has a principal C_n axis and n C2 axes perpendicular to it. Which set of point groups is it in?",
+    "choices": [
+      {
+        "text": "The D groups",
+        "correct": true
+      },
+      {
+        "text": "The C groups",
+        "why": "The C groups are characterized by the absence of perpendicular C2 axes."
+      },
+      {
+        "text": "The S groups",
+        "why": "The S groups lack perpendicular C2 axes and mirror planes, but have an S2n axis."
+      },
+      {
+        "text": "The low-symmetry groups",
+        "why": "C1, Cs, and Ci have no rotation axes beyond the identity."
+      }
+    ],
+    "explanation": "If a molecule has C2 axes perpendicular to the principal C_n axis, there are n of them, and the molecule is in the D set of point groups. Without them, it's in the C or S set."
+  },
+  {
+    "id": "ic4-benzene-d6h",
+    "type": "multiple-choice",
+    "prompt": "Benzene has a C6 principal axis, six perpendicular C2 axes, and a horizontal mirror plane. What is its point group?",
+    "choices": [
+      {
+        "text": "D6h",
+        "correct": true
+      },
+      {
+        "text": "C6v",
+        "why": "Perpendicular C2 axes put benzene in the D groups, and its σh makes it D_nh."
+      },
+      {
+        "text": "D6d",
+        "why": "D_nd has dihedral planes but no σh. Benzene has a horizontal mirror plane: D6h."
+      },
+      {
+        "text": "C6h",
+        "why": "C_nh lacks perpendicular C2 axes. Benzene has six."
+      }
+    ],
+    "explanation": "Benzene's highest-order axis is C6, it has 6 C2 axes perpendicular to it (a D group), and it has a horizontal mirror plane (σh). It is in the D6h point group."
+  },
+  {
+    "id": "ic4-benzene-c2-count",
+    "type": "numeric",
+    "prompt": "How many C2 axes perpendicular to the principal axis does a molecule in the D6h point group, like benzene, have?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "A molecule in a D_n group has n C2 axes perpendicular to its principal C_n axis. For D6h, n = 6: six perpendicular C2 axes."
+  },
+  {
+    "id": "ic4-c1-example",
+    "type": "multiple-choice",
+    "prompt": "CHFClBr has four different atoms on carbon. What is its point group?",
+    "choices": [
+      {
+        "text": "C1: its only symmetry operation is the identity",
+        "correct": true
+      },
+      {
+        "text": "Td, because it is tetrahedral",
+        "why": "Td needs four identical groups. With four different atoms, CHFClBr has no symmetry except E."
+      },
+      {
+        "text": "Cs, because it has a mirror plane",
+        "why": "No plane can reflect CHFClBr onto itself: all four atoms on carbon are different."
+      },
+      {
+        "text": "C3v, like NH3",
+        "why": "C3v needs three identical groups around a C3 axis. CHFClBr has four different ones."
+      }
+    ],
+    "explanation": "The low-symmetry point groups are C1 (only E), Cs (E and one mirror plane), and Ci (E and an inversion center). CHFClBr has only the identity, so it is C1."
+  },
+  {
+    "id": "ic4-cs-ci",
+    "type": "multiple-choice",
+    "prompt": "A molecule's only symmetry operations are the identity and an inversion center. What is its point group?",
+    "choices": [
+      {
+        "text": "Ci",
+        "correct": true
+      },
+      {
+        "text": "Cs",
+        "why": "Cs has the identity and one mirror plane, not an inversion center."
+      },
+      {
+        "text": "C1",
+        "why": "C1 has only the identity. A molecule with an inversion center too is Ci."
+      },
+      {
+        "text": "C2",
+        "why": "C2 has a C2 rotation axis. A molecule with only E and i is Ci."
+      }
+    ],
+    "explanation": "Ci contains only the identity (E) and a center of inversion (i); C2H2Cl2Br2 is an example. Cs contains E and one mirror plane, and C1 only E."
+  },
+  {
+    "id": "ic4-linear-groups",
+    "type": "multiple-choice",
+    "prompt": "HBr and CO2 are both linear. Why is HBr C∞v while CO2 is D∞h?",
+    "choices": [
+      {
+        "text": "CO2 also has a horizontal mirror plane, perpendicular C2 axes, and an inversion center",
+        "correct": true
+      },
+      {
+        "text": "HBr isn't really linear",
+        "why": "Both are linear. CO2 is symmetric end to end, which gives it σh, perpendicular C2 axes, and i."
+      },
+      {
+        "text": "CO2 has more atoms",
+        "why": "The number of atoms isn't the difference. CO2's two ends are identical, so it has a σh and an inversion center; HBr's ends differ."
+      },
+      {
+        "text": "HBr has an inversion center and CO2 doesn't",
+        "why": "It's the other way round: CO2 has an inversion center at carbon; HBr, with different ends, doesn't."
+      }
+    ],
+    "explanation": "Both linear groups have the molecular axis and vertical mirror planes. D∞h, like CO2, adds perpendicular C2 axes, a horizontal mirror plane (σh), and an inversion center (i). HBr, with two different ends, is C∞v."
+  },
+  {
+    "id": "ic4-td-c3-axes",
+    "type": "numeric",
+    "prompt": "A tetrahedral molecule such as CH4 (point group Td) has how many C3 axes?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "A tetrahedron has four C3 axes, one through each vertex. Td molecules have 4 C3 axes, 3 C2 axes, 3 S4 axes, and 6 dihedral mirror planes."
+  },
+  {
+    "id": "ic4-high-symmetry-examples",
+    "type": "multiple-choice",
+    "prompt": "Which molecule belongs to the octahedral point group Oh?",
+    "choices": [
+      {
+        "text": "SF6",
+        "correct": true
+      },
+      {
+        "text": "CH4",
+        "why": "CH4 is tetrahedral, point group Td."
+      },
+      {
+        "text": "B12H12^2−",
+        "why": "B12H12^2− is icosahedral, point group Ih."
+      },
+      {
+        "text": "NH3",
+        "why": "NH3 is trigonal pyramidal, point group C3v."
+      }
+    ],
+    "explanation": "Oh molecules typically have octahedral geometry, with 3 C4 axes, 4 C3 axes, and an inversion center, like SF6. CH4 is Td and B12H12^2− is Ih."
+  },
+  {
+    "id": "ic4-dnd-allene",
+    "type": "multiple-choice",
+    "prompt": "Propadiene (allene), C3H4, is in the D2d point group. What symmetry elements does a D_nd group have besides its principal axis?",
+    "choices": [
+      {
+        "text": "n perpendicular C2 axes and n dihedral mirror planes",
+        "correct": true
+      },
+      {
+        "text": "n perpendicular C2 axes and a horizontal mirror plane",
+        "why": "That's D_nh, like benzene (D6h). D_nd has dihedral planes instead."
+      },
+      {
+        "text": "n perpendicular C2 axes and no mirror planes",
+        "why": "That's D_n, like [Co(en)3]^3+ (D3)."
+      },
+      {
+        "text": "Only vertical mirror planes, and no perpendicular C2 axes",
+        "why": "That's C_nv, like NH3. D groups have perpendicular C2 axes."
+      }
+    ],
+    "explanation": "D_nd groups have n C2 axes perpendicular to the principal axis and n dihedral mirror planes (σd), which bisect those C2 axes. Allene, D2d, has two."
+  },
+  {
+    "id": "ic4-dn-no-mirrors",
+    "type": "multiple-choice",
+    "prompt": "[Co(en)3]^3+ has a C3 axis and three perpendicular C2 axes, but no mirror planes. What is its point group?",
+    "choices": [
+      {
+        "text": "D3",
+        "correct": true
+      },
+      {
+        "text": "D3h",
+        "why": "D3h would need a horizontal mirror plane. [Co(en)3]^3+ has no mirror planes."
+      },
+      {
+        "text": "C3v",
+        "why": "C3v has vertical mirror planes and no perpendicular C2 axes. This ion has perpendicular C2 axes and no mirror planes."
+      },
+      {
+        "text": "C3",
+        "why": "C3 lacks the perpendicular C2 axes that [Co(en)3]^3+ has."
+      }
+    ],
+    "explanation": "D_n groups have n perpendicular C2 axes and no mirror planes. [Co(en)3]^3+ is the section's D3 example."
+  },
+  {
+    "id": "ic4-c-groups",
+    "type": "multiple-choice",
+    "prompt": "Ammonia has a C3 axis, no perpendicular C2 axes, and three vertical mirror planes containing the C3 axis. What is its point group?",
+    "choices": [
+      {
+        "text": "C3v",
+        "correct": true
+      },
+      {
+        "text": "C3h",
+        "why": "C_nh has a horizontal mirror plane, like boric acid (C3h). NH3's planes are vertical."
+      },
+      {
+        "text": "D3h",
+        "why": "D groups need perpendicular C2 axes, which NH3 lacks."
+      },
+      {
+        "text": "C3",
+        "why": "C_n has no mirror planes, like P(C6H5)3. NH3 has three vertical ones."
+      }
+    ],
+    "explanation": "In the C groups there are no perpendicular C2 axes. C_nv has vertical mirror planes containing the principal axis (NH3 is C3v); C_nh has a horizontal plane (H3BO3 is C3h); C_n has none (P(C6H5)3 is C3)."
+  },
+  {
+    "id": "ic4-s-groups",
+    "type": "multiple-choice",
+    "prompt": "12-crown-4 is in the S4 point group. What characterizes the S2n groups?",
+    "choices": [
+      {
+        "text": "No perpendicular C2 axes and no mirror planes, but an improper axis collinear with the principal axis",
+        "correct": true
+      },
+      {
+        "text": "Perpendicular C2 axes and a horizontal mirror plane",
+        "why": "That describes D_nh. The S groups lack both perpendicular C2 axes and mirror planes."
+      },
+      {
+        "text": "Only the identity",
+        "why": "That's C1. S2n groups have an improper rotation axis."
+      },
+      {
+        "text": "Vertical mirror planes only",
+        "why": "That's C_nv. S2n groups have no mirror planes."
+      }
+    ],
+    "explanation": "The S set of groups lacks perpendicular C2 axes and horizontal or vertical/dihedral mirror planes, but has an improper rotation (rotation-reflection) axis collinear with the principal C_n axis. 12-crown-4 is S4."
+  },
+  {
+    "id": "ic4-ih-c5-axes",
+    "type": "multiple-choice",
+    "prompt": "Which characteristic symmetry elements does the section give for the icosahedral point group, Ih?",
+    "choices": [
+      {
+        "text": "Six C5 axes",
+        "correct": true
+      },
+      {
+        "text": "Three C4 axes",
+        "why": "Three C4 axes are characteristic of Oh, octahedral molecules like SF6."
+      },
+      {
+        "text": "Four C3 axes and no other rotations",
+        "why": "Ih molecules, like B12H12^2−, are characterized by their six C5 axes."
+      },
+      {
+        "text": "A single C∞ axis",
+        "why": "That belongs to linear molecules (C∞v and D∞h)."
+      }
+    ],
+    "explanation": "Ih molecules typically have an icosahedral structure, with 6 C5 axes as characteristic symmetry operations; B12H12^2− is an example."
+  }
+]

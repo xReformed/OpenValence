@@ -1,0 +1,133 @@
+[
+  {
+    "id": "ic11-color-depends-on",
+    "type": "multiple-choice",
+    "prompt": "The color of a transition metal complex, like the size of its d-orbital splitting Δ, depends on which set of factors?",
+    "choices": [
+      {
+        "text": "The metal ion, the coordination geometry, and the identity of the ligands",
+        "correct": true
+      },
+      {
+        "text": "Only the oxidation state of the metal",
+        "why": "The oxidation state matters, but so do the coordination geometry and which ligands are bound."
+      },
+      {
+        "text": "Only the counter-ion in the salt",
+        "why": "The color comes from the complex's own d-orbital splitting, which is set by the metal ion, its geometry, and its ligands."
+      },
+      {
+        "text": "Only the concentration of the solution",
+        "why": "Concentration changes how much light is absorbed (A = εlc), not which wavelengths are absorbed."
+      }
+    ],
+    "explanation": "The d-orbital splitting Δ happens to be the right size to absorb visible light. Both the color and Δ depend on the identity of the metal ion, the coordination geometry, and the identity of the ligands, which is why the absorption spectrum can reveal the metal's oxidation state, its ligands, and its geometry."
+  },
+  {
+    "id": "ic11-complementary-color",
+    "type": "multiple-choice",
+    "prompt": "A complex shows a single absorption band in the visible region, at about 600 nm (orange light). What color does the solution appear?",
+    "choices": [
+      {
+        "text": "Blue",
+        "correct": true
+      },
+      {
+        "text": "Orange",
+        "why": "Orange is the light being absorbed. We see the complementary color of the absorbed light, not the absorbed color itself."
+      },
+      {
+        "text": "Red",
+        "why": "Red is observed when green light (about 520–560 nm) is absorbed."
+      },
+      {
+        "text": "Violet",
+        "why": "Violet is observed when yellow light (about 560–590 nm) is absorbed."
+      }
+    ],
+    "explanation": "When a solution absorbs one band of visible light, we see the complementary color, the one opposite the absorbed color on the color wheel. Light at about 590–635 nm is orange, so the solution looks blue. This simple prediction only works when there is just one absorption band in the visible spectrum."
+  },
+  {
+    "id": "ic11-photon-energy-ev",
+    "type": "numeric",
+    "prompt": "A complex absorbs light at 450 nm. Using E = hc/λ, with h = 6.626 × 10^−34 J·s, c = 2.998 × 10^8 m/s, and 1 eV = 1.602 × 10^−19 J, what is the energy of one absorbed photon, in eV?",
+    "answer": 2.76,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "E = hc/λ = (6.626 × 10^−34 J·s)(2.998 × 10^8 m/s) ÷ (450 × 10^−9 m) = 4.414 × 10^−19 J. Dividing by 1.602 × 10^−19 J/eV gives 2.76 eV, at the boundary between violet and blue light."
+  },
+  {
+    "id": "ic11-d9-delta-from-band",
+    "type": "numeric",
+    "prompt": "An approximately octahedral d^9 complex shows one d → d absorption band in the visible, at 625 nm. Treating it as a simple t_2g → eg transition, what is Δo, in cm^−1?",
+    "answer": 16000,
+    "unit": "cm^−1",
+    "tolerance": 0.01,
+    "explanation": "A d^9 ion has only one d → d transition, an electron moving from t_2g to eg, so the energy absorbed equals Δo. In wavenumbers, ν̄ = 1/λ = 1/(625 × 10^−7 cm) = 10^7/625 = 16,000 cm^−1."
+  },
+  {
+    "id": "ic11-why-multiple-bands",
+    "type": "multiple-choice",
+    "prompt": "Why do many complexes show several absorption bands, rather than the single band a simple t_2g → eg picture predicts?",
+    "choices": [
+      {
+        "text": "There are several possible excited states, and electron–electron repulsions differ between the ground and excited states",
+        "correct": true
+      },
+      {
+        "text": "Each band comes from a different metal ion in the solution",
+        "why": "A solution of one complex can show several bands from that single complex, because it has several possible electronic transitions."
+      },
+      {
+        "text": "The solvent absorbs at the extra wavelengths",
+        "why": "The extra bands belong to the complex: they come from its multiple excited states and their different electron–electron repulsion energies."
+      },
+      {
+        "text": "Δ changes each time the complex absorbs a photon",
+        "why": "Δ is a property of the complex. The bands differ because the excited states differ in electron–electron repulsion, not because Δ changes."
+      }
+    ],
+    "explanation": "Only simple cases, like octahedral d^9, have one d → d transition. In most cases there are multiple possible electronic transitions, and their energies are affected by differences in electron–electron repulsion between the ground and excited states. Tanabe–Sugano diagrams account for this."
+  },
+  {
+    "id": "ic11-beer-lambert-units",
+    "type": "multiple-choice",
+    "prompt": "In the Beer–Lambert law, A = εlc, which statement about the units is correct?",
+    "choices": [
+      {
+        "text": "A is unitless, and ε has units of L mol^−1 cm^−1",
+        "correct": true
+      },
+      {
+        "text": "A has units of M, and ε is unitless",
+        "why": "Absorbance is log(Io/I), the log of a ratio of intensities, so it has no units. The units of l and c are cancelled by ε."
+      },
+      {
+        "text": "A has units of cm^−1, like a wavenumber",
+        "why": "Absorbance is a unitless log of an intensity ratio; cm^−1 is the unit of wavenumber, a measure of energy."
+      },
+      {
+        "text": "A and ε both have units of L mol^−1 cm^−1",
+        "why": "Only ε carries those units. They cancel the cm of the path length and the mol/L of the concentration, leaving A unitless."
+      }
+    ],
+    "explanation": "Absorbance is A = log(Io/I). Because Io/I is a ratio of intensities, A is unitless. With l in cm and c in mol/L, the molar absorptivity ε must have units of L mol^−1 cm^−1 (L/(mol × cm))."
+  },
+  {
+    "id": "ic11-beer-lambert-absorbance",
+    "type": "numeric",
+    "prompt": "A solution of a complex has ε = 45 L mol^−1 cm^−1 at its band maximum. If its concentration is 0.0120 M and the path length is 1.00 cm, what is the absorbance?",
+    "answer": 0.54,
+    "tolerance": 0.01,
+    "explanation": "A = εlc = (45 L mol^−1 cm^−1)(1.00 cm)(0.0120 mol/L) = 0.54. The units cancel, so absorbance is unitless."
+  },
+  {
+    "id": "ic11-beer-lambert-concentration",
+    "type": "numeric",
+    "prompt": "A complex has ε = 130 L mol^−1 cm^−1 at the wavelength measured. In a 2.00 cm cell, its solution has an absorbance of 0.65. What is its concentration, in M?",
+    "answer": 0.0025,
+    "unit": "M",
+    "tolerance": 0.01,
+    "explanation": "Rearranging A = εlc gives c = A/(εl) = 0.65 ÷ (130 L mol^−1 cm^−1 × 2.00 cm) = 0.0025 M."
+  }
+]

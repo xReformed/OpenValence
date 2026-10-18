@@ -1,0 +1,605 @@
+[
+  {
+    "id": "ic11-dd-impossible-ion",
+    "type": "multiple-choice",
+    "prompt": "Which of these metal ions cannot show a d–d transition in its complexes?",
+    "choices": [
+      {
+        "text": "Zn^2+",
+        "correct": true
+      },
+      {
+        "text": "Cu^2+",
+        "why": "Cu^2+ is d^9. d–d transitions are possible for any d^1 to d^9 ion."
+      },
+      {
+        "text": "Ti^3+",
+        "why": "Ti^3+ is d^1, with one electron that can be promoted from t_2g to eg."
+      },
+      {
+        "text": "Co^2+",
+        "why": "Co^2+ is d^7, with a partly filled d subshell, so d–d transitions are possible."
+      }
+    ],
+    "explanation": "A d–d transition needs an electron to move between d-based orbitals, which is impossible when the d subshell is empty (d^0) or full (d^10). Zn^2+ is d^10, so it has no d–d transitions; only d^1 to d^9 ions do."
+  },
+  {
+    "id": "ic11-band-intensity-ct",
+    "type": "multiple-choice",
+    "prompt": "A complex shows an absorption band with ε = 9,000 L mol^−1 cm^−1. What kind of transition is this band most likely due to?",
+    "choices": [
+      {
+        "text": "A charge-transfer transition",
+        "correct": true
+      },
+      {
+        "text": "A d–d transition in an octahedral complex",
+        "why": "Octahedral d–d bands are Laporte-forbidden and weak, typically with ε ≤ 100. d–d bands in general have ε below 1,000."
+      },
+      {
+        "text": "A spin-forbidden transition",
+        "why": "Spin-forbidden bands are very weak, with ε of about 1 or less."
+      },
+      {
+        "text": "A d–d transition in a d^10 complex",
+        "why": "A d^10 ion has a full d subshell and no d–d transitions at all."
+      }
+    ],
+    "explanation": "d–d transitions appear as relatively weak bands with ε less than 1,000, while charge-transfer transitions are usually both spin- and Laporte-allowed and appear with ε much greater than 1,000. A band with ε = 9,000 is most likely charge transfer."
+  },
+  {
+    "id": "ic11-lmct-definition",
+    "type": "multiple-choice",
+    "prompt": "In a ligand-to-metal charge transfer (LMCT) transition, where does the electron go, and what kind of ligand is needed?",
+    "choices": [
+      {
+        "text": "From an MO that is mostly ligand in character to one that is mostly metal in character; the ligand must be a π-donor",
+        "correct": true
+      },
+      {
+        "text": "From an MO that is mostly metal in character to a ligand π* orbital; the ligand must be a π-acceptor",
+        "why": "That describes metal-to-ligand charge transfer (MLCT), the opposite direction."
+      },
+      {
+        "text": "Between two MOs that are both mostly metal in character; any ligand works",
+        "why": "That describes a d–d transition. Charge transfer moves an electron between metal-based and ligand-based orbitals."
+      },
+      {
+        "text": "From a ligand π orbital to a ligand π* orbital; the ligand must be a chromophore",
+        "why": "That is an intraligand band, which stays on the ligand. LMCT moves electron density from the ligand to the metal."
+      }
+    ],
+    "explanation": "If the metal is bound to a π-donor ligand, electrons in lower-energy MOs that are mostly ligand in character can be excited into MOs that are mostly metal in character: an LMCT transition. With π-acceptor ligands, electrons in metal-based MOs can be excited into ligand π* orbitals: an MLCT transition."
+  },
+  {
+    "id": "ic11-spin-selection-d8",
+    "type": "multiple-choice",
+    "prompt": "An octahedral d^8 complex has a ^3A_2g ground term. Which transition from the ground term is spin-allowed?",
+    "choices": [
+      {
+        "text": "^3A_2g → ^3T_1g",
+        "correct": true
+      },
+      {
+        "text": "^3A_2g → ^1E_g",
+        "why": "The multiplicity changes from 3 to 1, so ΔS ≠ 0 and the transition is spin-forbidden."
+      },
+      {
+        "text": "^3A_2g → ^1T_2g",
+        "why": "The superscript changes from 3 to 1, so the total spin changes and the transition is spin-forbidden."
+      },
+      {
+        "text": "^3A_2g → ^1A_1g",
+        "why": "A triplet-to-singlet transition changes S, which the spin selection rule forbids."
+      }
+    ],
+    "explanation": "The spin selection rule, ΔS = 0, allows transitions only between terms with the same total spin, and therefore the same multiplicity (the left superscript). Only ^3A_2g → ^3T_1g keeps the multiplicity at 3; the others go from a triplet to a singlet."
+  },
+  {
+    "id": "ic11-laporte-term-labels",
+    "type": "multiple-choice",
+    "prompt": "In a centrosymmetric complex, which transition is allowed by the Laporte selection rule?",
+    "choices": [
+      {
+        "text": "A_1g → T_1u",
+        "correct": true
+      },
+      {
+        "text": "E_g → T_2g",
+        "why": "Both terms are g. The Laporte rule forbids transitions between two terms of the same parity."
+      },
+      {
+        "text": "A_2g → T_1g",
+        "why": "g → g transitions keep the same parity, so they are Laporte-forbidden."
+      },
+      {
+        "text": "T_1u → T_2u",
+        "why": "u → u transitions are forbidden too. Only transitions that change parity, g ↔ u, are allowed."
+      }
+    ],
+    "explanation": "The Laporte rule, which applies to molecules with a center of inversion, allows transitions only between states of different parity: g → u or u → g. A_1g → T_1u changes parity; transitions between two g terms or two u terms are forbidden."
+  },
+  {
+    "id": "ic11-laporte-orbital",
+    "type": "multiple-choice",
+    "prompt": "s and d orbitals are symmetric with respect to an inversion center (g), and p orbitals are antisymmetric (u). Which orbital-to-orbital transition does the Laporte rule allow?",
+    "choices": [
+      {
+        "text": "p → s",
+        "correct": true
+      },
+      {
+        "text": "d → s",
+        "why": "s and d orbitals are both symmetric with respect to inversion, so d → s keeps the same parity and is forbidden."
+      },
+      {
+        "text": "d → d",
+        "why": "A d → d transition stays within one type of orbital, with no change in parity, so it is Laporte-forbidden."
+      },
+      {
+        "text": "p → p",
+        "why": "Both orbitals are antisymmetric with respect to inversion, so p → p is forbidden."
+      }
+    ],
+    "explanation": "Because the Laporte rule forbids transitions between states of the same parity, it forbids s → s, p → p, d → d, and d → s transitions, and allows transitions that change parity, such as p → s and d → p."
+  },
+  {
+    "id": "ic11-vibronic-coupling",
+    "type": "multiple-choice",
+    "prompt": "d → d transitions in octahedral complexes are Laporte-forbidden, yet they are observed. How does vibronic coupling allow them?",
+    "choices": [
+      {
+        "text": "Bond vibrations temporarily distort the complex, removing its center of symmetry for a moment, so the transitions occur weakly",
+        "correct": true
+      },
+      {
+        "text": "Spin–orbit coupling changes the multiplicity of the excited state",
+        "why": "Spin–orbit coupling relaxes the spin selection rule and gives very weak spin-forbidden bands. Vibronic coupling is about vibrations distorting the symmetry."
+      },
+      {
+        "text": "The ligands transfer an electron to the metal",
+        "why": "That is a charge-transfer transition, not a mechanism for d → d transitions."
+      },
+      {
+        "text": "The Laporte rule does not apply to octahedral complexes",
+        "why": "It does apply, because an octahedron has a center of inversion. Vibrations relax the rule by breaking that symmetry for an instant."
+      }
+    ],
+    "explanation": "The bonds of metal complexes vibrate, causing temporary distortions in symmetry, along with some orbital mixing. In those moments of distortion, d → d transitions can occur. Because the distortion is only temporary, the bands are weak, with molar absorptivities of about 100 M^−1 cm^−1 or less."
+  },
+  {
+    "id": "ic11-intensity-ranking",
+    "type": "multiple-choice",
+    "prompt": "Which ranking of typical band intensities (ε), from weakest to strongest, is correct?",
+    "choices": [
+      {
+        "text": "Spin-forbidden band < octahedral d–d band < charge-transfer band",
+        "correct": true
+      },
+      {
+        "text": "Octahedral d–d band < spin-forbidden band < charge-transfer band",
+        "why": "Spin-forbidden bands are the weakest, with ε of about 1 or less; octahedral d–d bands reach ε of about 100."
+      },
+      {
+        "text": "Charge-transfer band < octahedral d–d band < spin-forbidden band",
+        "why": "This is reversed. Charge-transfer bands are usually spin- and Laporte-allowed and are the strongest, with ε much greater than 1,000."
+      },
+      {
+        "text": "Spin-forbidden band < charge-transfer band < octahedral d–d band",
+        "why": "Charge-transfer bands, with ε much greater than 1,000, are far stronger than Laporte-forbidden octahedral d–d bands (ε ≤ 100)."
+      }
+    ],
+    "explanation": "Spin-forbidden bands, made possible by spin–orbit coupling, have ε of about 1 M^−1 cm^−1 or less. Laporte-forbidden octahedral d–d bands, made possible by vibronic coupling, have ε of about 100 or less. Charge-transfer bands are usually both spin- and Laporte-allowed, with ε much greater than 1,000."
+  },
+  {
+    "id": "ic11-f-term-splitting",
+    "type": "multiple-choice",
+    "prompt": "Into which terms does a free ion F term split in an octahedral field?",
+    "choices": [
+      {
+        "text": "A_2g + T_2g + T_1g",
+        "correct": true
+      },
+      {
+        "text": "T_2g + E_g",
+        "why": "That is how a D term splits, like the d orbitals splitting into t_2g and eg."
+      },
+      {
+        "text": "It stays as a single T_1g term",
+        "why": "That is a P term, which doesn't split. F terms do split in an octahedral field."
+      },
+      {
+        "text": "A_1g + E_g + T_2g + T_1g",
+        "why": "That is the splitting of a G term, into four terms. An F term gives three."
+      }
+    ],
+    "explanation": "Terms behave like orbitals in a ligand field. S and P terms don't split (S → A_1g, P → T_1g), while D, F, G and higher terms do: D → T_2g + E_g, F → A_2g + T_2g + T_1g, and G → A_1g + E_g + T_2g + T_1g."
+  },
+  {
+    "id": "ic11-d2-terms-octahedral-count",
+    "type": "numeric",
+    "prompt": "A free d^2 ion has five terms: ^3F, ^1D, ^3P, ^1G, and ^1S. In an octahedral field, S → A_1g; P → T_1g; D → T_2g + E_g; F → A_2g + T_2g + T_1g; G → A_1g + E_g + T_2g + T_1g. How many terms does the d^2 ion have in an octahedral field?",
+    "answer": 11,
+    "tolerance": 0,
+    "explanation": "Count the terms each free ion term splits into: ^3F gives 3, ^1D gives 2, ^3P gives 1, ^1G gives 4, and ^1S gives 1. In total, 3 + 2 + 1 + 4 + 1 = 11 terms, each keeping the multiplicity of the term it came from."
+  },
+  {
+    "id": "ic11-strong-field-limit",
+    "type": "multiple-choice",
+    "prompt": "On a correlation diagram for an octahedral d^2 ion, what happens to the terms in the hypothetical limit of an infinitely strong ligand field?",
+    "choices": [
+      {
+        "text": "They collapse into three groups of equal energy, t_2g^2, t_2g^1 e_g^1, and e_g^2, because electron–electron repulsion becomes negligible",
+        "correct": true
+      },
+      {
+        "text": "They return to the free ion terms ^3F, ^1D, ^3P, ^1G, and ^1S",
+        "why": "The free ion terms are at the zero-field side of the diagram. At very strong field the terms gather by orbital configuration instead."
+      },
+      {
+        "text": "All the terms merge into one level",
+        "why": "Three groups remain, one for each way of placing two electrons in t_2g and eg: t_2g^2, t_2g^1 e_g^1, and e_g^2."
+      },
+      {
+        "text": "Every term splits into more and more levels without limit",
+        "why": "The opposite happens: in the strong-field limit terms in the same group become identical in energy."
+      }
+    ],
+    "explanation": "As the field gets stronger, the terms gather into three groups. In the infinitely strong limit the field is so large that electron–electron interactions are negligible, and the terms in each group become identical in energy. The three states are t_2g^2 (lowest), t_2g^1 e_g^1, and e_g^2."
+  },
+  {
+    "id": "ic11-tanabe-sugano-axes",
+    "type": "multiple-choice",
+    "prompt": "How does a Tanabe–Sugano diagram differ from a simple correlation diagram?",
+    "choices": [
+      {
+        "text": "Energies are plotted as E/B against Δ/B, with the ground term drawn along the horizontal axis",
+        "correct": true
+      },
+      {
+        "text": "Absorbance is plotted against wavelength",
+        "why": "That is an absorption spectrum. A Tanabe–Sugano diagram plots term energies against ligand field strength."
+      },
+      {
+        "text": "Term energies are plotted against temperature",
+        "why": "The horizontal axis is ligand field strength, given as Δ/B."
+      },
+      {
+        "text": "Only the ground term is shown",
+        "why": "All the terms are shown, plotted relative to the ground term, which becomes the horizontal axis."
+      }
+    ],
+    "explanation": "A Tanabe–Sugano diagram is a modified correlation diagram: term energies (E/B) and ligand field strength (Δ/B) are both divided by the Racah parameter B, and every term is plotted relative to the lowest-energy term, which therefore lies along the x-axis."
+  },
+  {
+    "id": "ic11-all-g-terms",
+    "type": "multiple-choice",
+    "prompt": "All the terms of an octahedral d^n complex have g subscripts. What does this mean for its d–d transitions?",
+    "choices": [
+      {
+        "text": "They are all Laporte-forbidden, so they are observed only as low-intensity bands",
+        "correct": true
+      },
+      {
+        "text": "They are all Laporte-allowed and intense",
+        "why": "Laporte allows only g ↔ u transitions. Every g → g transition is forbidden."
+      },
+      {
+        "text": "They can never be observed",
+        "why": "The Laporte rule doesn't hold strictly. It lowers the probability of a transition, so the band is weak but still observed."
+      },
+      {
+        "text": "They are all spin-forbidden",
+        "why": "The g subscript concerns parity, which governs the Laporte rule. Spin selection depends on the multiplicity."
+      }
+    ],
+    "explanation": "Since every term of an octahedral complex is g, no d–d transition is allowed by the Laporte rule. The rule only reduces the probability of a transition, though, so these bands are still observed, just with lower intensity than Laporte-allowed bands."
+  },
+  {
+    "id": "ic11-d8-spin-allowed-count",
+    "type": "numeric",
+    "prompt": "Octahedral [Ni(H2O)6]^2+ is d^8, with a ^3A_2g ground term. Its other triplet terms are one ^3T_2g and two ^3T_1g terms. How many spin-allowed d–d transitions are expected from the ground term?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Spin-allowed transitions go from the ground term to other terms of the same multiplicity. There are three other triplet terms (^3T_2g and two ^3T_1g), so three spin-allowed transitions are expected, which is why [Ni(H2O)6]^2+ shows several bands rather than one."
+  },
+  {
+    "id": "ic11-hs-d6-spin-allowed-count",
+    "type": "numeric",
+    "prompt": "High-spin octahedral [Fe(H2O)6]^2+ is d^6, with a ^5T_2g ground term. The only other quintet term is ^5E_g. How many spin-allowed d–d transitions are expected?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "A spin-allowed transition must reach a term of the same multiplicity. ^5E_g is the only other quintet term, so there is one spin-allowed transition, ^5T_2g → ^5E_g."
+  },
+  {
+    "id": "ic11-hs-d5-pale",
+    "type": "multiple-choice",
+    "prompt": "A solution of high-spin octahedral [Mn(H2O)6]^2+ (d^5) is nearly colorless, only very faintly pink. Why?",
+    "choices": [
+      {
+        "text": "Its ground term is the only sextet term, so it has no spin-allowed d–d transitions; the faint color comes from rare spin-forbidden ones",
+        "correct": true
+      },
+      {
+        "text": "Mn^2+ is a d^0 ion, so it has no d electrons",
+        "why": "Mn^2+ is d^5. Its five d electrons can't make a spin-allowed transition because there's no other sextet term."
+      },
+      {
+        "text": "Its d–d transitions are Laporte-allowed, but they fall in the ultraviolet",
+        "why": "Octahedral d–d transitions are Laporte-forbidden. The problem here is spin: there is no other sextet term to reach."
+      },
+      {
+        "text": "It absorbs strongly through charge transfer at all visible wavelengths",
+        "why": "Strong absorption across the visible would make the solution dark, not nearly colorless."
+      }
+    ],
+    "explanation": "A high-spin d^5 ion has five unpaired electrons, S = 5/2, and a sextet ground term. There is no other sextet term, so there is no spin-allowed transition. The very slight pink color comes from spin-forbidden transitions, which occur only with very low probability."
+  },
+  {
+    "id": "ic11-d1-no-tanabe-sugano",
+    "type": "multiple-choice",
+    "prompt": "Why isn't a Tanabe–Sugano diagram needed to interpret the spectrum of an octahedral d^1 complex?",
+    "choices": [
+      {
+        "text": "With one electron there are no electron–electron interactions, so the ^2D term simply splits into T_2g and E_g, with one transition",
+        "correct": true
+      },
+      {
+        "text": "A d^1 ion has no d–d transitions",
+        "why": "A d^1 ion has exactly one d–d transition, from the T_2g term to the E_g term."
+      },
+      {
+        "text": "d^1 ions are always tetrahedral",
+        "why": "Octahedral d^1 complexes exist. A Tanabe–Sugano diagram isn't needed because one electron has no electron–electron repulsion to account for."
+      },
+      {
+        "text": "Its ^2D term doesn't split in an octahedral field",
+        "why": "A D term does split, into T_2g and E_g. That splitting gives the single transition."
+      }
+    ],
+    "explanation": "Tanabe–Sugano diagrams account for electron–electron repulsion. A d^1 ion has none, so the simple orbital picture is enough: the ^2D term splits into T_2g and E_g, and there is only one electron transition. The same is true of its hole analog, d^9."
+  },
+  {
+    "id": "ic11-d9-ground-term",
+    "type": "multiple-choice",
+    "prompt": "In an octahedral field, the ^2D free ion term of d^9 splits into ^2E_g and ^2T_2g. Which is the ground term, and why?",
+    "choices": [
+      {
+        "text": "^2E_g, because the ground configuration t_2g^6 e_g^3 can be arranged in two ways",
+        "correct": true
+      },
+      {
+        "text": "^2T_2g, because the ground configuration has the hole in t_2g",
+        "why": "In d^9 the t_2g set is full (t_2g^6); the single hole is in eg, giving a doubly degenerate ground state."
+      },
+      {
+        "text": "^2T_2g, because d^9 behaves exactly like d^1",
+        "why": "d^9 is the opposite of d^1. For d^1 the ground term is ^2T_2g; for d^9 it is ^2E_g."
+      },
+      {
+        "text": "Both terms have the same energy",
+        "why": "The octahedral field splits the ^2D term into two terms of different energy."
+      }
+    ],
+    "explanation": "A term label reflects the degeneracy of its electron configuration. The d^9 ground configuration, t_2g^6 e_g^3, has the hole in the doubly degenerate eg set, so it is ^2E_g. The excited configuration t_2g^5 e_g^4 is triply degenerate: ^2T_2g. This is the reverse of d^1, by the positive hole concept."
+  },
+  {
+    "id": "ic11-jahn-teller-t2g-split",
+    "type": "multiple-choice",
+    "prompt": "A tetragonal Jahn–Teller distortion lowers the symmetry of an octahedron from Oh to D_4h, splitting the t_2g orbitals into eg (d_xz, d_yz) and b_2g (d_xy). How does a T_2g term split?",
+    "choices": [
+      {
+        "text": "Into E_g and B_2g terms",
+        "correct": true
+      },
+      {
+        "text": "Into A_1g and B_1g terms",
+        "why": "That is how an E_g term splits, following the eg orbitals, which become a_1g (d_z^2) and b_1g (d_x^2−y^2)."
+      },
+      {
+        "text": "It stays a single T_2g term",
+        "why": "In D_4h the three orbitals are no longer all equivalent, so the triply degenerate term splits."
+      },
+      {
+        "text": "Into three separate A terms",
+        "why": "d_xz and d_yz remain degenerate in D_4h, so one part of the split is a doubly degenerate E_g term."
+      }
+    ],
+    "explanation": "Terms follow the orbitals that share their symmetry. In D_4h the t_2g set splits into eg (d_xz, d_yz) and b_2g (d_xy), so a T_2g term splits into E_g and B_2g. The eg set splits into a_1g and b_1g, so an E_g term splits into A_1g and B_1g."
+  },
+  {
+    "id": "ic11-d3-delta-from-nu1",
+    "type": "numeric",
+    "prompt": "On the Tanabe–Sugano diagram for an octahedral d^3 ion, the lowest-energy spin-allowed band (^4T_2g ← ^4A_2g) has E/B equal to Δo/B at every field strength. An octahedral Cr^3+ complex has this band at 575 nm. What is Δo, in cm^−1?",
+    "answer": 17391,
+    "unit": "cm^−1",
+    "tolerance": 0.01,
+    "explanation": "Because E(ν1)/B = Δo/B, the energy of the lowest band equals Δo. Converting the wavelength: ν̄ = 10^7 nm/cm ÷ 575 nm = 17,391 cm^−1, so Δo ≈ 17,400 cm^−1."
+  },
+  {
+    "id": "ic11-d3-racah-b",
+    "type": "numeric",
+    "prompt": "An octahedral d^3 complex has spin-allowed bands at 14,000, 21,000, and 31,500 cm^−1. Sliding a ruler across the d^3 Tanabe–Sugano diagram gives: at Δo/B = 10, E(ν2)/E(ν1) = 1.7 and E(ν3)/E(ν1) = 2.9; at Δo/B = 20, 1.5 and 2.25; at Δo/B = 30, 1.33 and 2.13. At each point E(ν1)/B = Δo/B. What is the Racah parameter B, in cm^−1?",
+    "answer": 700,
+    "unit": "cm^−1",
+    "tolerance": 0.01,
+    "explanation": "The ratios are 21,000/14,000 = 1.5 and 31,500/14,000 = 2.25, which match Δo/B = 20. There E(ν1)/B = 20, so B = 14,000 cm^−1 ÷ 20 = 700 cm^−1. (Then Δo = 20 × 700 = 14,000 cm^−1.)"
+  },
+  {
+    "id": "ic11-tetrahedral-more-intense",
+    "type": "multiple-choice",
+    "prompt": "Why do tetrahedral complexes often have more intense d–d bands than octahedral complexes?",
+    "choices": [
+      {
+        "text": "A tetrahedron has no center of inversion, so the Laporte rule doesn't apply, and its orbitals mix p character into the d orbitals",
+        "correct": true
+      },
+      {
+        "text": "Tetrahedral complexes have a larger Δ",
+        "why": "Δt is smaller than Δo (Δt = (4/9)Δo). Intensity depends on whether the transition is allowed, not on the size of Δ."
+      },
+      {
+        "text": "d–d transitions in a tetrahedron are spin-allowed, but in an octahedron they are not",
+        "why": "Spin selection depends on the multiplicities of the terms, not the geometry. The difference is the Laporte rule, which applies only to centrosymmetric complexes."
+      },
+      {
+        "text": "Tetrahedral complexes always contain more d electrons",
+        "why": "The geometry, not the electron count, makes the difference: without an inversion center, the Laporte rule doesn't forbid the transitions."
+      }
+    ],
+    "explanation": "The Laporte rule applies only to centrosymmetric complexes. An octahedron has a center of inversion, but a tetrahedron does not, so its terms carry no g subscripts and its d–d transitions don't violate the rule. In orbital terms, s and p orbitals mix with the d orbitals in a tetrahedral complex, allowing transitions that are forbidden for pure d orbitals."
+  },
+  {
+    "id": "ic11-delta-t-from-delta-o",
+    "type": "numeric",
+    "prompt": "For a given metal and set of ligands, Δt = (4/9)Δo. If the octahedral complex has Δo = 18,000 cm^−1, what is Δt for the analogous tetrahedral complex, in cm^−1?",
+    "answer": 8000,
+    "unit": "cm^−1",
+    "tolerance": 0.01,
+    "explanation": "Δt = (4/9) × 18,000 cm^−1 = 8,000 cm^−1. The smaller splitting means the tetrahedral complex absorbs at lower energy and longer wavelength than the analogous octahedral one."
+  },
+  {
+    "id": "ic11-tetrahedral-diagram-choice",
+    "type": "multiple-choice",
+    "prompt": "[CoCl4]^2− is a tetrahedral Co(II) complex, a d^7 ion. Which Tanabe–Sugano diagram can be used to interpret its spectrum?",
+    "choices": [
+      {
+        "text": "The octahedral d^3 diagram, with the g subscripts dropped",
+        "correct": true
+      },
+      {
+        "text": "The octahedral d^7 diagram",
+        "why": "Tetrahedral splitting is the opposite of octahedral splitting, so a tetrahedral d^n ion matches the octahedral d^(10 − n) diagram, not d^n."
+      },
+      {
+        "text": "The octahedral d^2 diagram",
+        "why": "The d^2 diagram serves tetrahedral d^8 ions, such as [NiCl4]^2−. For d^7 it is d^(10 − 7) = d^3."
+      },
+      {
+        "text": "No diagram, because tetrahedral complexes have no d–d transitions",
+        "why": "Tetrahedral complexes do have d–d transitions, and they are Laporte-allowed."
+      }
+    ],
+    "explanation": "Because tetrahedral splitting is exactly opposite to octahedral splitting, the transitions of a d^n tetrahedral complex are represented by the octahedral d^(10 − n) diagram, with the g subscripts dropped. For d^7 [CoCl4]^2−, that is the d^3 diagram."
+  },
+  {
+    "id": "ic11-solvatochromism",
+    "type": "multiple-choice",
+    "prompt": "How can a charge-transfer band be distinguished from a d–d band in the same spectrum?",
+    "choices": [
+      {
+        "text": "The charge-transfer band shifts in energy when the polarity of the solvent changes",
+        "correct": true
+      },
+      {
+        "text": "The charge-transfer band is always weaker",
+        "why": "Charge-transfer bands are usually spin- and Laporte-allowed, so they are typically much more intense than d–d bands."
+      },
+      {
+        "text": "Only the d–d band changes when the solvent is changed",
+        "why": "It's the charge-transfer band that is solvatochromic, because the transition changes the polarity of the complex."
+      },
+      {
+        "text": "The charge-transfer band always lies in the infrared",
+        "why": "Charge-transfer bands often fall in the visible or ultraviolet. Many intensely colored complexes owe their color to them."
+      }
+    ],
+    "explanation": "A charge-transfer transition moves electron density between the metal and the ligands, changing the polarity of the complex. Its energy therefore often changes as the solvent polarity is varied (it is solvatochromic), which can be used to tell charge-transfer bands from d–d bands."
+  },
+  {
+    "id": "ic11-lmct-favored",
+    "type": "multiple-choice",
+    "prompt": "Which combination of metal and ligand favors a visible LMCT transition?",
+    "choices": [
+      {
+        "text": "A metal in a very high oxidation state with few or no d electrons, bound to negatively charged π-donor ligands such as oxo ligands",
+        "correct": true
+      },
+      {
+        "text": "A metal in a low oxidation state with many d electrons, bound to π-acceptor ligands such as CO",
+        "why": "Those conditions raise the metal orbitals and supply low-lying π* orbitals, which favors MLCT, not LMCT."
+      },
+      {
+        "text": "A d^10 metal ion bound to water",
+        "why": "A full d subshell has no room to accept an electron from the ligand, so LMCT into the d orbitals isn't possible."
+      },
+      {
+        "text": "A metal in a very high oxidation state bound to neutral π-acceptor ligands",
+        "why": "LMCT needs high-energy filled ligand orbitals to donate from, which negatively charged π-donors such as oxo and halo ligands provide."
+      }
+    ],
+    "explanation": "LMCT needs low-energy metal orbitals and high-energy ligand orbitals. A high positive charge lowers the metal d-orbital energies, and few d electrons leave room to accept an electron with little repulsion; examples are Mn(VII), Cr(VI), and Ti(IV). Negatively charged π-donor ligands, such as oxo and halo ligands, have high-energy orbitals. Permanganate, Mn(VII) with oxo ligands, is deep purple because of LMCT."
+  },
+  {
+    "id": "ic11-cu-phen-mlct",
+    "type": "multiple-choice",
+    "prompt": "Bis(phenanthroline)copper(I) is d^10, yet it is dark orange, with a band at 458 nm. What causes its color?",
+    "choices": [
+      {
+        "text": "An MLCT transition from the electron-rich Cu(I) d orbitals into low-lying π* orbitals of phenanthroline",
+        "correct": true
+      },
+      {
+        "text": "A d–d transition",
+        "why": "Cu(I) is d^10, with a full d subshell, so no d–d transition is possible."
+      },
+      {
+        "text": "An LMCT transition into the copper d orbitals",
+        "why": "The d^10 Cu(I) center has no empty d orbital to accept an electron, and its low charge doesn't favor LMCT."
+      },
+      {
+        "text": "A spin-forbidden transition",
+        "why": "Spin-forbidden bands are very weak. This intense color comes from an MLCT transition that is both spin- and Laporte-allowed."
+      }
+    ],
+    "explanation": "MLCT is favored when the metal orbitals are high in energy, as with a low positive charge and many d electrons repelling each other, as in Cu(I), and when the ligand is a π-acceptor with low-lying π* orbitals, like phenanthroline. The MLCT band at 458 nm is spin- and Laporte-allowed, so the color is intense even though no d–d transition is possible."
+  },
+  {
+    "id": "ic11-ru-bpy-long-lived",
+    "type": "multiple-choice",
+    "prompt": "Why does [Ru(bpy)3]^2+ have a long-lived excited state after MLCT excitation?",
+    "choices": [
+      {
+        "text": "Strong spin–orbit coupling in Ru drives intersystem crossing from the singlet excited state to a triplet, and the triplet's return to the singlet ground state is spin-forbidden",
+        "correct": true
+      },
+      {
+        "text": "The MLCT absorption itself is spin-forbidden",
+        "why": "The absorption is spin-allowed: a singlet ground state gives a singlet excited state. The triplet forms afterward, by intersystem crossing."
+      },
+      {
+        "text": "Ru(II) is d^0, so the excited electron has nowhere to return to",
+        "why": "Ru(II) is d^6, and its ground state is a singlet with all electrons paired."
+      },
+      {
+        "text": "The excited state is identical to the ground state, so nothing happens",
+        "why": "The excited state is a triplet MLCT state, with an electron moved from Ru onto a bpy ligand; it is not the ground state."
+      }
+    ],
+    "explanation": "[Ru(bpy)3]^2+ has a singlet ground state, and the spin selection rule allows excitation to a singlet excited state. Heavy d^6 ions like Ru have strong spin–orbit coupling, which favors intersystem crossing to a triplet excited state of about the same energy. Relaxing from that triplet to the singlet ground state is spin-forbidden, so the excited state lives a long time."
+  },
+  {
+    "id": "ic11-mlct-redox-change",
+    "type": "multiple-choice",
+    "prompt": "In terms of oxidation states, what does MLCT excitation of [Ru(bpy)3]^2+ do?",
+    "choices": [
+      {
+        "text": "It formally oxidizes the ruthenium and reduces a bipyridine ligand",
+        "correct": true
+      },
+      {
+        "text": "It formally reduces the ruthenium and oxidizes a bipyridine ligand",
+        "why": "That would be ligand-to-metal charge transfer. MLCT moves an electron from the metal onto the ligand."
+      },
+      {
+        "text": "It changes no oxidation states, because the electron stays on the metal",
+        "why": "That describes a d–d transition. In MLCT the electron moves to a ligand π* orbital."
+      },
+      {
+        "text": "It oxidizes both the ruthenium and the ligands",
+        "why": "The electron removed from Ru is placed on a bpy ligand, so the ligand is reduced, not oxidized."
+      }
+    ],
+    "explanation": "MLCT excitation removes an electron from Ru, a formal oxidation to a Ru^3+ center, and places it on a bpy ligand, reducing it. The Ru^3+ center is a powerful oxidant and the reduced bpy is a powerful reductant, which is why the excited complex is useful as a photosensitizer."
+  }
+]

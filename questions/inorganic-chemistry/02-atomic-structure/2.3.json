@@ -1,0 +1,512 @@
+[
+  {
+    "id": "ic2-ionization-energy-definition",
+    "type": "multiple-choice",
+    "prompt": "What is ionization energy?",
+    "choices": [
+      {
+        "text": "The energy required to remove an electron from a neutral atom or cation in the gas phase",
+        "correct": true
+      },
+      {
+        "text": "The energy released when an electron is added to a gaseous atom",
+        "why": "That describes electron affinity, under its more common definition."
+      },
+      {
+        "text": "The energy required to remove an electron from an atom in a solid",
+        "why": "Ionization energy is defined for atoms and ions in the gaseous phase."
+      },
+      {
+        "text": "The energy required to break a bond between two atoms",
+        "why": "Ionization energy is about removing an electron from one atom or cation, not breaking a bond."
+      }
+    ],
+    "explanation": "Ionization energy (IE), also called ionization potential, is the energy required to remove an electron from a neutral atom or cation in its gaseous phase: A^n+(g) ⟶ A^(n+1)+(g) + e^−."
+  },
+  {
+    "id": "ic2-second-ionization-equation",
+    "type": "multiple-choice",
+    "prompt": "Which equation represents the second ionization energy (I2) of an element A?",
+    "choices": [
+      {
+        "text": "A^+(g) → A^2+(g) + e^−",
+        "correct": true
+      },
+      {
+        "text": "A(g) → A^+(g) + e^−",
+        "why": "That is the first ionization energy, I1: removing an electron from the neutral atom."
+      },
+      {
+        "text": "A(g) → A^2+(g) + 2e^−",
+        "why": "That removes two electrons at once, the sum of I1 and I2. I2 alone starts from the +1 ion."
+      },
+      {
+        "text": "A(g) + e^− → A^−(g)",
+        "why": "Adding an electron describes electron affinity, not ionization."
+      }
+    ],
+    "explanation": "I2 is the energy required to remove an electron from an ion with a +1 charge: A^+(g) → A^2+(g) + e^−. I1 starts from the neutral atom, and I3 from the +2 ion."
+  },
+  {
+    "id": "ic2-successive-ionization",
+    "type": "multiple-choice",
+    "prompt": "How do an element's successive ionization energies compare?",
+    "choices": [
+      {
+        "text": "Each is larger than the one before: I1 < I2 < I3 < …",
+        "correct": true
+      },
+      {
+        "text": "Each is smaller than the one before: I1 > I2 > I3 > …",
+        "why": "This is reversed. Each further electron is removed from a more positive ion, so it takes more energy: magnesium's I2 (1451 kJ/mol) is about twice its I1 (738 kJ/mol)."
+      },
+      {
+        "text": "They are all equal, since each removes one electron",
+        "why": "Each succeeding ionization energy is larger than the one before."
+      },
+      {
+        "text": "They have no consistent order",
+        "why": "I1 < I2 < I3 < … < In is always true."
+      }
+    ],
+    "explanation": "Each succeeding ionization energy is larger than the preceding one, so I1 < I2 < I3 < … < In is always true. For magnesium, I1 = 738 kJ/mol and I2 = 1451 kJ/mol."
+  },
+  {
+    "id": "ic2-magnesium-total-ionization",
+    "type": "numeric",
+    "prompt": "Magnesium's first ionization energy is 738 kJ/mol and its second is 1451 kJ/mol. How much energy, in kJ/mol, does it take to turn gaseous Mg atoms into gaseous Mg^2+ ions?",
+    "answer": 2189,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Making Mg^2+ takes both steps: Mg → Mg^+ (738 kJ/mol), then Mg^+ → Mg^2+ (1451 kJ/mol). The total is 738 + 1451 = 2189 kJ/mol."
+  },
+  {
+    "id": "ic2-ionization-attraction",
+    "type": "multiple-choice",
+    "prompt": "Element X has a much higher first ionization energy than element Y. What does that tell you?",
+    "choices": [
+      {
+        "text": "X's nucleus attracts its valence electrons more strongly",
+        "correct": true
+      },
+      {
+        "text": "X's valence electrons are more weakly attracted, so they need more energy",
+        "why": "A higher ionization energy means a stronger attraction between the nucleus and the valence electrons, which is why more energy is needed."
+      },
+      {
+        "text": "X must have more electrons than Y",
+        "why": "Ionization energy reflects how strongly the valence electrons are held, not simply how many electrons there are."
+      },
+      {
+        "text": "X gains electrons more easily",
+        "why": "Ionization energy is about removing an electron. Gaining one is electron affinity."
+      }
+    ],
+    "explanation": "Ionization energy is correlated with the strength of attraction between the positively charged nucleus and the negatively charged valence electrons. The higher the ionization energy, the stronger that attraction, and the more energy needed to remove a valence electron."
+  },
+  {
+    "id": "ic2-ionization-across-period",
+    "type": "multiple-choice",
+    "prompt": "What is the general trend in first ionization energy across a period, from left to right?",
+    "choices": [
+      {
+        "text": "It generally increases, as Z* increases",
+        "correct": true
+      },
+      {
+        "text": "It generally decreases, as atoms get larger",
+        "why": "Atoms get smaller across a period, not larger, and ionization energy generally increases as Z* rises."
+      },
+      {
+        "text": "It stays constant across the period",
+        "why": "Z* increases across a period, so ionization energy generally increases, with some breaks."
+      },
+      {
+        "text": "It increases smoothly with no exceptions",
+        "why": "The general trend is upward, but there are breaks, such as the dips at B and O."
+      }
+    ],
+    "explanation": "As Z* increases across a period, ionization energy generally increases from left to right. There are breaks in the trend, such as the low values for B, Al, and Ga, and for O and S."
+  },
+  {
+    "id": "ic2-ionization-boron-dip",
+    "type": "multiple-choice",
+    "prompt": "Boron's first ionization energy is lower than beryllium's, even though boron comes later in the period. Why?",
+    "choices": [
+      {
+        "text": "Removing boron's electron leaves a newly empty p subshell",
+        "correct": true
+      },
+      {
+        "text": "Boron has a smaller nuclear charge than beryllium",
+        "why": "Boron (Z = 5) has a larger nuclear charge than beryllium (Z = 4). The dip comes from its electron configuration."
+      },
+      {
+        "text": "Removing boron's electron leaves a half-filled p subshell",
+        "why": "That explains the dips at O and S. Boron's one 2p electron leaves an empty p subshell when removed."
+      },
+      {
+        "text": "Boron is a noble gas",
+        "why": "Noble gases have very high ionization energies, and boron isn't one. Its dip comes from emptying its p subshell."
+      }
+    ],
+    "explanation": "Ionization energy is especially low when removing an electron creates a newly empty p subshell, as for B, Al, and Ga. Boron's single 2p electron is removed to leave the 2p subshell empty."
+  },
+  {
+    "id": "ic2-ionization-oxygen-dip",
+    "type": "multiple-choice",
+    "prompt": "Which element has the lower first ionization energy, nitrogen or oxygen?",
+    "choices": [
+      {
+        "text": "Oxygen, because removing its electron leaves a half-filled p subshell",
+        "correct": true
+      },
+      {
+        "text": "Nitrogen, because it comes earlier in the period",
+        "why": "The general trend would predict that, but oxygen is an exception: removing one of its electrons leaves a half-filled 2p subshell."
+      },
+      {
+        "text": "Oxygen, because removing its electron leaves an empty p subshell",
+        "why": "Oxygen has four 2p electrons; removing one leaves three, a half-filled subshell, not an empty one."
+      },
+      {
+        "text": "They are equal, because they're in the same period",
+        "why": "Elements in the same period have different ionization energies. Oxygen's is lower, because its ionization leaves a half-filled p subshell."
+      }
+    ],
+    "explanation": "Ionization energy is especially low where removing an electron results in a half-filled p or d subshell, as for O and S. Oxygen's 2p^4 becomes a half-filled 2p^3 when one electron is removed."
+  },
+  {
+    "id": "ic2-ionization-new-period",
+    "type": "multiple-choice",
+    "prompt": "What happens to first ionization energy from neon to sodium, at the start of a new period?",
+    "choices": [
+      {
+        "text": "It drops sharply",
+        "correct": true
+      },
+      {
+        "text": "It rises sharply, because sodium has one more proton",
+        "why": "Sodium's valence electron is alone in a new shell, so removing it is especially easy, and ionization energy drops sharply."
+      },
+      {
+        "text": "It stays about the same",
+        "why": "There is an especially large decrease at the start of every new period, as from Ne to Na."
+      }
+    ],
+    "explanation": "There is an especially large decrease in ionization energy at the start of every new period (He to Li, Ne to Na), consistent with IE being especially low when removing an electron creates a newly empty s subshell."
+  },
+  {
+    "id": "ic2-ionization-helium",
+    "type": "multiple-choice",
+    "prompt": "Which element has the highest first ionization energy of all?",
+    "choices": [
+      {
+        "text": "Helium",
+        "correct": true
+      },
+      {
+        "text": "Fluorine",
+        "why": "Fluorine has a high ionization energy, but the noble gases are higher still, and helium is highest of all."
+      },
+      {
+        "text": "Hydrogen",
+        "why": "Hydrogen's is 13.6 eV. Helium, a noble gas, has the highest ionization energy of all the elements."
+      },
+      {
+        "text": "Francium",
+        "why": "Alkali metals like francium have low ionization energies. Helium has the highest."
+      }
+    ],
+    "explanation": "The noble gases possess very high ionization energies, and helium has the highest ionization energy of all the elements."
+  },
+  {
+    "id": "ic2-ionization-d-block",
+    "type": "multiple-choice",
+    "prompt": "Why does ionization energy increase more gradually across the d and f blocks than across the s and p blocks?",
+    "choices": [
+      {
+        "text": "d and f electrons are weakly penetrating and experience especially low Z*",
+        "correct": true
+      },
+      {
+        "text": "d and f electrons penetrate more than s and p electrons",
+        "why": "The reverse: penetration follows s > p > d > f, so d and f electrons feel an especially low Z*."
+      },
+      {
+        "text": "The nuclear charge doesn't increase across the d block",
+        "why": "Z increases by one with each element, but weakly penetrating d and f electrons feel especially low Z*."
+      }
+    ],
+    "explanation": "Ionization energy increases more gradually across the d and f subshells than across s and p because d and f electrons are weakly penetrating and experience especially low Z*."
+  },
+  {
+    "id": "ic2-electron-affinity-zeroth",
+    "type": "multiple-choice",
+    "prompt": "Why is electron affinity sometimes called the \"zeroth ionization energy\"?",
+    "choices": [
+      {
+        "text": "It can be defined as the energy required to remove an electron from a gaseous anion, A^−(g) → A(g) + e^−",
+        "correct": true
+      },
+      {
+        "text": "It is always zero",
+        "why": "Electron affinities have real, nonzero values. The name comes from the reaction: removing an electron from the anion, the step before the first ionization."
+      },
+      {
+        "text": "It is measured before any electrons are present",
+        "why": "The name comes from defining electron affinity as removing an electron from a gaseous anion, one step before the first ionization energy."
+      },
+      {
+        "text": "It is the energy to remove the innermost electron",
+        "why": "Electron affinity, defined this way, removes the extra electron from an anion, which mirrors the reactions that define ionization energies."
+      }
+    ],
+    "explanation": "One definition of electron affinity is the energy required to remove an electron from a gaseous anion, A^−(g) ⟶ A(g) + e^−. This reaction is like those that define ionization energy, one step earlier, so EA is also described as the zeroth ionization energy."
+  },
+  {
+    "id": "ic2-electron-affinity-sign",
+    "type": "multiple-choice",
+    "prompt": "Using the definition of electron affinity as a zeroth ionization energy, what does a larger, more positive value mean?",
+    "choices": [
+      {
+        "text": "The atom has a stronger affinity for electrons",
+        "correct": true
+      },
+      {
+        "text": "The atom has a weaker affinity for electrons",
+        "why": "Under this definition, a more positive EA means more energy is needed to take the electron back off the anion: a stronger affinity."
+      },
+      {
+        "text": "The atom ionizes more easily",
+        "why": "Electron affinity is about holding an extra electron, not losing one of its own."
+      }
+    ],
+    "explanation": "Under the definition of EA as the energy required to remove an electron from a gaseous anion, the more positive the EA value, the higher the atom's affinity for electrons."
+  },
+  {
+    "id": "ic2-electron-affinity-electronegativity",
+    "type": "multiple-choice",
+    "prompt": "How does electron affinity differ from electronegativity?",
+    "choices": [
+      {
+        "text": "Electron affinity is a well-defined quantitative measurement",
+        "correct": true
+      },
+      {
+        "text": "Electron affinity applies only to metals",
+        "why": "Electron affinity applies to atoms in general. The difference is that it is a well-defined, measured quantity."
+      },
+      {
+        "text": "They are unrelated concepts",
+        "why": "They are conceptually quite similar. The difference is that EA is a well-defined quantitative measurement."
+      }
+    ],
+    "explanation": "Conceptually, electron affinity (the energy released when an electron is added to a gaseous atom) is quite similar to electronegativity; but unlike electronegativity, EA is a well-defined quantitative measurement."
+  },
+  {
+    "id": "ic2-electron-affinity-across-period",
+    "type": "multiple-choice",
+    "prompt": "What is the general trend in electron affinity across a row of the periodic table?",
+    "choices": [
+      {
+        "text": "It generally increases, consistent with the increase in Z* from left to right",
+        "correct": true
+      },
+      {
+        "text": "It generally decreases from left to right",
+        "why": "Like ionization energy, electron affinity generally increases across a row as Z* increases."
+      },
+      {
+        "text": "It increases smoothly, with no variations",
+        "why": "There are variations across a period, similar to those in ionization energy, explained by shielding, penetration, and electron configuration."
+      }
+    ],
+    "explanation": "Similar to ionization energy, electron affinity generally increases across a row, consistent with the increase in Z* from left to right, with variations explained by shielding, penetration, and electron configuration."
+  },
+  {
+    "id": "ic2-electron-affinity-peak-shift",
+    "type": "multiple-choice",
+    "prompt": "Electron affinity peaks at fluorine, and first ionization energy peaks at neon. Following the same shift, where does the second ionization energy (I2) peak?",
+    "choices": [
+      {
+        "text": "Sodium",
+        "correct": true
+      },
+      {
+        "text": "Neon",
+        "why": "Neon is the I1 peak. Each later ionization shifts the zig-zag by one more element, so I2 peaks at sodium."
+      },
+      {
+        "text": "Fluorine",
+        "why": "Fluorine is the EA peak. I1 peaks one element later (Ne), and I2 one more (Na)."
+      },
+      {
+        "text": "Magnesium",
+        "why": "Magnesium is the I3 peak, two elements after neon."
+      }
+    ],
+    "explanation": "The zig-zag pattern in EA is displaced by one unit from I1, two from I2, and so on: EA peaks at F, I1 at Ne, I2 at Na, and I3 at Mg. Na^+ has neon's configuration, so removing its next electron (I2) is especially hard."
+  },
+  {
+    "id": "ic2-nonpolar-radius",
+    "type": "numeric",
+    "prompt": "In a nonpolar diatomic molecule X2, the nuclei of the two X atoms are 228 pm apart. What is the nonpolar atomic radius of X, in pm?",
+    "answer": 114,
+    "unit": "pm",
+    "tolerance": 0.01,
+    "explanation": "The nonpolar atomic radius is one-half the distance between the nuclei of two atoms in a covalent bond: 228 pm ÷ 2 = 114 pm."
+  },
+  {
+    "id": "ic2-radius-methods",
+    "type": "multiple-choice",
+    "prompt": "How are crystal radii of atoms and ions determined?",
+    "choices": [
+      {
+        "text": "From electron density maps made from X-ray data",
+        "correct": true
+      },
+      {
+        "text": "From collisions with other atoms",
+        "why": "That describes the van der Waals radius."
+      },
+      {
+        "text": "As half the bond length in a nonpolar molecule",
+        "why": "That describes the nonpolar atomic radius."
+      },
+      {
+        "text": "From the atom's mass divided by its density",
+        "why": "Mass divided by density gives molar volume, not a crystal radius. Crystal radii come from X-ray electron density maps."
+      }
+    ],
+    "explanation": "Crystal radii are determined using electron density maps from X-ray data. Nonpolar atomic radii come from bond lengths in nonpolar molecules, and van der Waals radii from collisions with other atoms."
+  },
+  {
+    "id": "ic2-radius-fuzzy",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call the size of an atom or ion a \"fuzzy\" measure?",
+    "choices": [
+      {
+        "text": "The measured radius depends on conditions such as bonding, coordination number, physical state, and neighboring atoms",
+        "correct": true
+      },
+      {
+        "text": "Atoms have no size at all",
+        "why": "Atoms do have sizes, and they show clear periodic trends. But the measured value shifts slightly with conditions."
+      },
+      {
+        "text": "Radii can only be guessed, not measured",
+        "why": "Radii are measured, in several ways. The measured value depends on the method and the conditions."
+      }
+    ],
+    "explanation": "Measured atomic and ionic size depends on factors including covalent character, coordination number, physical state, nearby atoms or ions, and crystal structure. The radius under a different set of conditions will probably change slightly, though clear trends still show."
+  },
+  {
+    "id": "ic2-radius-across-period",
+    "type": "multiple-choice",
+    "prompt": "Why does atomic radius decrease only gradually across a period?",
+    "choices": [
+      {
+        "text": "Increasing Z pulls electrons in, but each added proton comes with another electron, and the two effects partly balance",
+        "correct": true
+      },
+      {
+        "text": "The shell number increases across a period",
+        "why": "Within a period the shell stays the same. A new shell, at the start of a new period, is what makes atoms larger."
+      },
+      {
+        "text": "Z* decreases across a period",
+        "why": "Z* increases across a period, which is why atoms get smaller."
+      },
+      {
+        "text": "Electrons repel the nucleus",
+        "why": "Electrons are attracted to the nucleus. The decrease is gradual because added electrons partly offset the growing nuclear charge."
+      }
+    ],
+    "explanation": "Across a period, increasing Z raises Z* and pulls electrons closer, but each added unit of Z brings an added electron. The change in size is a balance of compression by the nucleus and expansion from more electrons, so the radius decreases gradually."
+  },
+  {
+    "id": "ic2-radius-down-group",
+    "type": "multiple-choice",
+    "prompt": "Atomic size increases down a group, even though Z and Z* also increase. Why?",
+    "choices": [
+      {
+        "text": "The valence electrons occupy higher shells, with larger n",
+        "correct": true
+      },
+      {
+        "text": "Z* decreases down a group",
+        "why": "Z* increases down a group. Atoms still get larger because the valence electrons are in higher shells."
+      },
+      {
+        "text": "The nucleus gets larger and pushes the electrons out",
+        "why": "Size grows because the valence electrons occupy higher shells, with larger n, farther from the nucleus."
+      },
+      {
+        "text": "Atoms lower in a group have fewer electrons",
+        "why": "Atoms lower in a group have more electrons, in more shells."
+      }
+    ],
+    "explanation": "Going down a group, valence electrons occupy higher shells because of the increasing quantum number n, so size increases despite Z and Z* increasing."
+  },
+  {
+    "id": "ic2-cation-smaller",
+    "type": "multiple-choice",
+    "prompt": "How does a cation's size compare with its neutral atom's, and why?",
+    "choices": [
+      {
+        "text": "Smaller: with fewer electrons, Z* increases and the remaining electrons are pulled in",
+        "correct": true
+      },
+      {
+        "text": "Larger: losing electrons lets the rest spread out",
+        "why": "Removing electrons significantly increases Z*, which pulls the remaining electrons closer. Cations are smaller."
+      },
+      {
+        "text": "The same: the nuclear charge doesn't change",
+        "why": "Z is the same, but there are fewer electrons, so each remaining electron feels a larger Z* and the ion contracts."
+      }
+    ],
+    "explanation": "A cation has the same Z as its atom but fewer electrons. Removing electrons significantly increases the effective nuclear charge, so the remaining electrons are more strongly attracted to the nucleus, and the ion contracts."
+  },
+  {
+    "id": "ic2-anion-larger",
+    "type": "multiple-choice",
+    "prompt": "How does an anion's size compare with its neutral atom's, and why?",
+    "choices": [
+      {
+        "text": "Larger: added electrons lower Z*, weakening the attraction to the nucleus",
+        "correct": true
+      },
+      {
+        "text": "Smaller: the extra electron pulls the others closer to the nucleus",
+        "why": "Electrons repel each other. Adding one lowers the effective nuclear charge, so the ion expands."
+      },
+      {
+        "text": "The same: the number of protons doesn't change",
+        "why": "Z is the same, but with more electrons the effective nuclear charge decreases, and the ion expands."
+      }
+    ],
+    "explanation": "An anion has the same Z as its atom but more electrons. Adding electrons decreases the effective nuclear charge, lowering the attractive force between the nucleus and electrons, so the anion is larger than its atom."
+  },
+  {
+    "id": "ic2-ionic-radius-factors",
+    "type": "multiple-choice",
+    "prompt": "Besides following the general trends in atomic radius, ionic radius depends on which of these?",
+    "choices": [
+      {
+        "text": "The ion's charge and its electron configuration (for example, high spin or low spin)",
+        "correct": true
+      },
+      {
+        "text": "Only the element's atomic mass",
+        "why": "Ionic radius varies with the ion's charge (its number of electrons) and its electron configuration, such as high or low spin."
+      },
+      {
+        "text": "Nothing: every ion of an element has the same radius",
+        "why": "Ions of the same element with different charges have different radii, and electron configuration matters too."
+      }
+    ],
+    "explanation": "Trends in ionic radius follow those in atomic radius for ions of the same charge, but ionic radius also varies with the charge of the ion (its number of electrons) and its electron configuration, for example high spin or low spin."
+  }
+]

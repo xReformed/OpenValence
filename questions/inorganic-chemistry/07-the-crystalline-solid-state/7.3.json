@@ -1,0 +1,258 @@
+[
+  {
+    "id": "ic7-superconductor-magnets",
+    "type": "multiple-choice",
+    "prompt": "Why are superconductors so useful for the electromagnets in MRI and NMR machines?",
+    "choices": [
+      {
+        "text": "They carry current with zero resistance, so once current starts flowing in the coils it doesn't stop",
+        "correct": true
+      },
+      {
+        "text": "They have a very high resistance that generates a strong magnetic field",
+        "why": "Superconductors have zero resistance; that is what lets current persist in the magnet coils."
+      },
+      {
+        "text": "They become ferromagnetic below their transition temperature",
+        "why": "Below the critical field, superconductors are perfect diamagnets, not ferromagnets. Their use in magnets comes from zero resistance."
+      },
+      {
+        "text": "They work at room temperature without any cooling",
+        "why": "Superconductivity occurs only below the transition temperature T_c, which for known materials requires cooling."
+      }
+    ],
+    "explanation": "Superconductivity is the flow of electrical current with zero resistance. Such materials are important in electromagnets for MRI and NMR because once current starts flowing in the coils, it doesn't stop."
+  },
+  {
+    "id": "ic7-superconductor-diamagnet",
+    "type": "multiple-choice",
+    "prompt": "Why can a magnet levitate above a cooled superconductor?",
+    "choices": [
+      {
+        "text": "Below a critical field strength, a superconductor is a perfect diamagnet that is not penetrated by magnetic flux; surface currents exclude the magnet's field and repel it",
+        "correct": true
+      },
+      {
+        "text": "The superconductor is strongly attracted to the magnet, which balances gravity",
+        "why": "The interaction is repulsive. The superconductor excludes the magnetic field, acting like an electromagnet that pushes the magnet away."
+      },
+      {
+        "text": "The superconductor is ferromagnetic, with spins aligned against the magnet",
+        "why": "Superconductors are perfect diamagnets, not ferromagnets."
+      },
+      {
+        "text": "Cold air from the coolant pushes the magnet upward",
+        "why": "Levitation comes from the superconductor excluding magnetic flux, not from gas flow."
+      }
+    ],
+    "explanation": "Below a critical field strength, superconductors are perfect diamagnets that are not penetrated by magnetic flux lines. Persistent current flows on the surface of the superconductor, excluding the magnet's field; this current effectively forms an electromagnet that repels the magnet."
+  },
+  {
+    "id": "ic7-cooper-pair-boson",
+    "type": "multiple-choice",
+    "prompt": "Why can Cooper pairs, unlike individual electrons, all condense into the same lowest energy level?",
+    "choices": [
+      {
+        "text": "A Cooper pair has zero overall spin, so it is a boson, and any number of bosons can occupy the same level",
+        "correct": true
+      },
+      {
+        "text": "Cooper pairs have spin 1/2, so the Pauli principle doesn't apply to them",
+        "why": "Particles with spin 1/2 are fermions and do obey the Pauli principle. A Cooper pair has total spin zero."
+      },
+      {
+        "text": "The two electrons in a pair are bound in the same atom",
+        "why": "The electrons in a Cooper pair are far apart: a few nm in cuprates and up to a micron in aluminum."
+      },
+      {
+        "text": "Their positive charge cancels the lattice repulsion",
+        "why": "Cooper pairs are made of two electrons and are negatively charged. Their key property is their integer (zero) spin."
+      }
+    ],
+    "explanation": "Individual electrons have spin 1/2 and are fermions, so no more than two can occupy the same quantum state. Particles with integer spin, bosons, have no such restriction. Because a Cooper pair's overall spin angular momentum is zero, it is a boson, and at low enough temperature the pairs condense into the lowest energy level."
+  },
+  {
+    "id": "ic7-zero-resistance-reason",
+    "type": "multiple-choice",
+    "prompt": "Why does resistance drop abruptly to zero below T_c?",
+    "choices": [
+      {
+        "text": "The condensed Cooper pairs can't scatter, because the next energy level is a gap of a few meV away, more than kT, and scattering would require changing their energy",
+        "correct": true
+      },
+      {
+        "text": "The lattice stops vibrating completely at T_c",
+        "why": "The lattice still vibrates. Scattering is forbidden because the pairs have no accessible lower-energy or nearby state to scatter into."
+      },
+      {
+        "text": "Electrons stop moving below T_c",
+        "why": "Current still flows; the pairs move without scattering."
+      },
+      {
+        "text": "The number of electrons grows without limit",
+        "why": "The electron count doesn't change. Zero resistance comes from the energy gap that blocks scattering."
+      }
+    ],
+    "explanation": "When the temperature is low enough, the Cooper pairs condense into the lowest energy level. The next level, typically a few meV higher, is not accessible as long as the energy gap is larger than kT. Scattering dissipates energy, so it becomes forbidden: the pairs cannot change their energy state. Since resistance arises from scattering, it drops abruptly to zero below T_c."
+  },
+  {
+    "id": "ic7-critical-current",
+    "type": "multiple-choice",
+    "prompt": "A superconductor is held below its T_c, but the current through it is increased beyond a certain value. What happens?",
+    "choices": [
+      {
+        "text": "Above a critical current density j_c, the Cooper pairs are broken apart and the material returns to a normal metal",
+        "correct": true
+      },
+      {
+        "text": "The resistance stays zero no matter how large the current",
+        "why": "Fast-moving Cooper pairs can be broken apart, so superconductivity is lost above a critical current density."
+      },
+      {
+        "text": "The material becomes an insulator",
+        "why": "It reverts to a normal metal, with finite resistance, not to an insulator."
+      },
+      {
+        "text": "T_c rises in proportion to the current",
+        "why": "Large currents destroy superconductivity; they don't raise T_c."
+      }
+    ],
+    "explanation": "Cooper pairs can be broken apart when they move fast, so superconductors turn back into normal metals, even below T_c, above a critical current density j_c. This is related to the critical magnetic field, H_c, that also quenches superconductivity."
+  },
+  {
+    "id": "ic7-bcs-mechanism",
+    "type": "multiple-choice",
+    "prompt": "In conventional (BCS) superconductors, what causes two electrons, which repel each other, to pair up?",
+    "choices": [
+      {
+        "text": "A strong electron-lattice interaction: one electron distorts the lattice, and the distortion attracts a second electron",
+        "correct": true
+      },
+      {
+        "text": "The electrons share a covalent bond between two atoms",
+        "why": "The electrons in a Cooper pair are typically far apart. Their attraction is mediated by lattice distortion."
+      },
+      {
+        "text": "The electrons' magnetic moments align ferromagnetically",
+        "why": "The paired electrons are spin-paired (zero total spin), and the attraction comes through the lattice."
+      },
+      {
+        "text": "The mechanism is unknown for all superconductors",
+        "why": "It is well understood for conventional superconductors, though not yet known with certainty for high-temperature oxides."
+      }
+    ],
+    "explanation": "In BCS superconductors, spin pairing is mediated by the lattice. A strong electron-lattice interaction distorts the lattice as an electron moves through, and this elastic deformation is felt as an attraction by a second electron moving the opposite way, like two people on a trampoline. The picture is supported by isotope effects on T_c and by quantitative predictions of T_c."
+  },
+  {
+    "id": "ic7-bad-metals-superconduct",
+    "type": "multiple-choice",
+    "prompt": "Which kind of metal tends to make the best superconductors (highest T_c)?",
+    "choices": [
+      {
+        "text": "\"Bad\" metals near a metal-insulator transition, with poor orbital overlap and a high density of states at the Fermi level",
+        "correct": true
+      },
+      {
+        "text": "The most conductive metals, such as Ag, Au, and Cu",
+        "why": "These good metals make the worst superconductors, with T_c values often below 0.01 K."
+      },
+      {
+        "text": "Metals with long electron mean free paths, around 40 nm",
+        "why": "Long mean free paths are a feature of good metals like Au and Cu. In bad metals the mean free path is only a few Å."
+      },
+      {
+        "text": "Metals with very strong orbital overlap, far from any metal-insulator transition",
+        "why": "Good superconductors have poor orbital overlap, just enough to be metallic (Δ ≈ U)."
+      }
+    ],
+    "explanation": "The most conductive metals (Ag, Au, Cu, Cs) have the lowest superconducting transition temperatures. Bad metals, such as niobium alloys, certain copper oxides, MgB2, and FeSe, can have relatively high T_c. Most good superconductors lie very near a metal-insulator transition, with orbital overlap just barely enough to be metallic, a high density of states at E_F, and electron mean free paths on the order of the lattice spacing."
+  },
+  {
+    "id": "ic7-carbide-nitride-role",
+    "type": "multiple-choice",
+    "prompt": "Carbides and nitrides of Nb, Ta, and W, such as NbC and TaN, are typically superconducting. What role do the carbon and nitrogen atoms play?",
+    "choices": [
+      {
+        "text": "They adjust the valence electron density of these \"bad\" metals",
+        "correct": true
+      },
+      {
+        "text": "They make the compounds into insulators, which then superconduct",
+        "why": "All superconductors are metals above T_c. The C and N atoms tune the electron density of the metallic compound."
+      },
+      {
+        "text": "They supply magnetic moments that drive pairing",
+        "why": "Magnetism is associated with poor d-d overlap in metals like Cr and Fe; C and N are there to adjust valence electron density."
+      },
+      {
+        "text": "They increase orbital overlap so the compounds become good metals",
+        "why": "Good metals make poor superconductors. Nb, Ta, and W are already just barely metallic, and C and N tune their electron count."
+      }
+    ],
+    "explanation": "The elements Nb, Ta, and W have just barely enough d-d orbital overlap to be on the metallic side of the metal-insulator transition, making them bad metals. Their carbides and nitrides are typically superconducting, with the carbon and nitrogen atoms serving to adjust the valence electron density (for example, NbN has T_c = 15.2 K and TaN 17.8 K)."
+  },
+  {
+    "id": "ic7-ybco-structure",
+    "type": "multiple-choice",
+    "prompt": "YBa2Cu3O7−δ has a structure based on perovskite, ABO3. How is it related to an ideal perovskite?",
+    "choices": [
+      {
+        "text": "It corresponds to A3B3O9 with Y and Ba on the A sites, Cu on the B sites, and two of the nine O atoms missing",
+        "correct": true
+      },
+      {
+        "text": "Cu occupies the A sites and Y and Ba occupy the B sites",
+        "why": "Y and Ba are the large A-site cations; Cu sits on the B sites."
+      },
+      {
+        "text": "It has two extra oxygen atoms beyond the perovskite formula",
+        "why": "A3B3O9 would have nine oxygens; YBa2Cu3O7 has only seven, so two are missing."
+      },
+      {
+        "text": "It is not related to perovskite; it has the NaCl structure",
+        "why": "Almost all cuprate superconductors are variants of the perovskite lattice."
+      }
+    ],
+    "explanation": "An ideal perovskite lattice would have the formula ABO3 = A3B3O9. In YBa2Cu3O7−δ, Y and Ba occupy the A cation sites, Cu occupies the B sites, and two of the nine O atoms are missing. Its planar CuO2 sheets carry the supercurrent, while Cu-O ribbons act as a charge reservoir controlling the doping of the sheets."
+  },
+  {
+    "id": "ic7-ybco-copper-oxidation-state",
+    "type": "numeric",
+    "prompt": "In YBa2Cu3O7, yttrium is Y^3+, barium is Ba^2+, and oxygen is O^2−. What is the average oxidation state of copper?",
+    "answer": 2.33,
+    "tolerance": 0.01,
+    "explanation": "Charge balance: 3 (Y) + 2 × 2 (Ba) + 3x (Cu) = 7 × 2 (O), so 7 + 3x = 14 and x = 7/3 = 2.33. The value between 2 and 3 reflects the mixed-valent copper(II/III) oxide sheets."
+  },
+  {
+    "id": "ic7-lsco-copper-oxidation-state",
+    "type": "numeric",
+    "prompt": "In La2−xSrxCuO4, substituting Sr^2+ for La^3+ oxidizes some Cu^2+ to Cu^3+. With La^3+, Sr^2+, and O^2−, what is the average oxidation state of copper when x = 0.10?",
+    "answer": 2.1,
+    "tolerance": 0.01,
+    "explanation": "Charge balance: 3(2 − x) + 2x + y = 4 × 2 = 8, so y = 8 − 6 + x = 2 + x. For x = 0.10, y = 2.10. Each Sr^2+ replacing La^3+ removes one positive charge, which is made up by oxidizing Cu^2+ to Cu^3+, doping the lattice with holes."
+  },
+  {
+    "id": "ic7-lsco-doping",
+    "type": "multiple-choice",
+    "prompt": "How does undoped La2CuO4 behave, and what does Sr doping do to it?",
+    "choices": [
+      {
+        "text": "Undoped, it contains only Cu^2+ and is an antiferromagnetic insulator; Sr^2+ for La^3+ dopes it with holes, driving it to a bad metal and then a superconductor",
+        "correct": true
+      },
+      {
+        "text": "Undoped, it is a superconductor; Sr doping destroys the superconductivity",
+        "why": "Undoped La2CuO4 is an antiferromagnetic insulator. Superconductivity appears only after enough hole doping."
+      },
+      {
+        "text": "Undoped, it is a good metal; Sr doping turns it into an insulator",
+        "why": "It is the reverse. Doping drives the insulator across the metal-insulator transition."
+      },
+      {
+        "text": "Sr^2+ for La^3+ reduces Cu^2+ to Cu^+, doping the lattice with electrons",
+        "why": "Removing positive charge (Sr^2+ for La^3+) oxidizes Cu^2+ to Cu^3+, which dopes the lattice with holes."
+      }
+    ],
+    "explanation": "Undoped La2CuO4 contains only Cu^2+ and is an antiferromagnetic insulator. Substituting a small amount of Sr^2+ for La^3+ oxidizes some Cu^2+ to Cu^3+, doping the lattice with holes. As doping increases, the antiferromagnetic phase transforms into a bad metal, and at slightly higher doping the superconducting phase appears. This proximity to the metal-insulator transition is a hallmark of cuprate superconductors."
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "id": "ic8-s4-isotopes",
+    "type": "multiple-choice",
+    "prompt": "Which statement about the isotopes of hydrogen is correct?",
+    "choices": [
+      {
+        "text": "Tritium has two neutrons and is radioactive, with a half-life of 12.32 years",
+        "correct": true
+      },
+      {
+        "text": "Deuterium has two neutrons",
+        "why": "Deuterium (²H) has one neutron; tritium (³H) has two."
+      },
+      {
+        "text": "Deuterium is the most abundant isotope, at about 99.99%",
+        "why": "Protium (¹H) makes up 99.9885% of hydrogen; deuterium is only 0.0115%."
+      },
+      {
+        "text": "Protium has a nuclear spin of 1",
+        "why": "Protium is NMR active with spin 1/2; deuterium has spin 1."
+      }
+    ],
+    "explanation": "Protium (¹H) has no neutrons and makes up 99.9885% of hydrogen; it is NMR active with spin 1/2. Deuterium (D) has one neutron, 0.0115% abundance, and spin 1. Tritium (T) has two neutrons, an abundance of about 10^−17 %, and a half-life of 12.32 years."
+  },
+  {
+    "id": "ic8-s4-tritium-decay",
+    "type": "numeric",
+    "prompt": "Tritium has a half-life of 12.32 years. What fraction of a tritium sample remains after 36.96 years?",
+    "answer": 0.125,
+    "tolerance": 0.01,
+    "explanation": "36.96 years ÷ 12.32 years = 3 half-lives, so the fraction remaining is (1/2)^3 = 0.125."
+  },
+  {
+    "id": "ic8-s4-syngas",
+    "type": "multiple-choice",
+    "prompt": "Industrial hydrogen is mostly made by steam reforming: CH4(g) + H2O(g) → CO(g) + 3 H2(g) over Ni. What is the CO/H2 product mixture called, and how is more H2 obtained from it?",
+    "choices": [
+      {
+        "text": "Syngas; its CO reduces more water to H2 in the water-gas shift reaction, CO + H2O → CO2 + H2",
+        "correct": true
+      },
+      {
+        "text": "Syngas; its CO is burned with O2 to make H2",
+        "why": "Burning CO gives CO2 but no hydrogen. Additional H2 comes from CO reducing water in the water-gas shift."
+      },
+      {
+        "text": "Natural gas; it is used directly as fuel with no further H2 produced",
+        "why": "The CO/H2 mixture is called syngas (synthesis gas) because it is used in other syntheses, and its CO can make more H2."
+      },
+      {
+        "text": "Syngas; H2 is extracted by electrolysis of the CO",
+        "why": "CO is not electrolyzed. It acts as a reductant toward water in the water-gas shift reaction."
+      }
+    ],
+    "explanation": "Steam reforming gives a mixture of CO and H2 called syngas (synthesis gas), since it is used in other industrial syntheses. In steam reforming the formally C^4− of methane is the reductant. The CO can then reduce water in the water-gas shift reaction, CO(g) + H2O(g) → CO2(g) + H2(g), to produce additional hydrogen."
+  },
+  {
+    "id": "ic8-s4-h2-per-methane",
+    "type": "numeric",
+    "prompt": "Steam reforming, CH4 + H2O → CO + 3 H2, is followed by the water-gas shift reaction, CO + H2O → CO2 + H2. If all the CO is converted, how many moles of H2 are produced in total from 2.5 mol CH4?",
+    "answer": 10,
+    "unit": "mol",
+    "tolerance": 0.01,
+    "explanation": "Each CH4 gives 3 H2 and 1 CO in steam reforming, and the CO gives 1 more H2 in the water-gas shift, for 4 H2 per CH4. So 2.5 mol CH4 × 4 = 10 mol H2."
+  },
+  {
+    "id": "ic8-s4-hydrogen-fuel-obstacle",
+    "type": "multiple-choice",
+    "prompt": "Hydrogen combustion gives only water, yet hydrogen is not yet a widely used green fuel. What major obstacle does the section identify?",
+    "choices": [
+      {
+        "text": "Producing it by steam reforming and the water-gas shift generates CO and CO2 and costs more energy than its combustion releases",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen combustion is endothermic",
+        "why": "Hydrogen combustion is highly exothermic. The problem lies in how the hydrogen is produced."
+      },
+      {
+        "text": "Burning hydrogen produces CO2",
+        "why": "Hydrogen combustion gives only water. The CO and CO2 come from producing H2 from hydrocarbons."
+      },
+      {
+        "text": "Hydrogen cannot be made from water by any method",
+        "why": "Water can be split into H2 and O2 by electrolysis; photocatalytic water splitting is a major research goal."
+      }
+    ],
+    "explanation": "Dihydrogen combustion is highly exothermic and gives only water. But producing H2 by steam reforming and the water-gas shift generates CO and CO2, and costs more energy than is gained from burning it. That is why photocatalytic water splitting is considered one of the holy grails of energy research."
+  },
+  {
+    "id": "ic8-s4-hydride-types",
+    "type": "multiple-choice",
+    "prompt": "Which elements form ionic (saline) hydrides, salts of the hydride anion H^−?",
+    "choices": [
+      {
+        "text": "The alkali metals and the alkaline earth metals except beryllium",
+        "correct": true
+      },
+      {
+        "text": "The nonmetals such as N, O, and F",
+        "why": "Nonmetals form covalent molecular hydrides like NH3, H2O, and HF."
+      },
+      {
+        "text": "The transition metals of groups 7–9",
+        "why": "No hydrides are known for groups 7–9; they make up the \"hydride gap.\""
+      },
+      {
+        "text": "Beryllium and the group 13 elements",
+        "why": "Be and the group 13 elements form electron-deficient hydrides with bridging E–H–E bonds, not ionic hydrides."
+      }
+    ],
+    "explanation": "There are three main types of hydrides. Ionic hydrides are formed by the alkali metals and all the alkaline earth metals except Be. Covalent hydrides are formed by the nonmetals. Interstitial (metallic) hydrides are formed by some transition metals, though no hydrides are known for groups 7–9 (the hydride gap). Be, some metalloids, and some post-transition metals form intermediate hydrides."
+  },
+  {
+    "id": "ic8-s4-ionic-hydride-reactivity",
+    "type": "multiple-choice",
+    "prompt": "Why is CaH2 widely used as a drying agent for organic solvents?",
+    "choices": [
+      {
+        "text": "As an ionic hydride it acts as a strong base toward water, reacting exothermically to release H2 and consume the water",
+        "correct": true
+      },
+      {
+        "text": "It absorbs water as water of hydration without reacting",
+        "why": "CaH2 reacts chemically with water, liberating hydrogen gas."
+      },
+      {
+        "text": "It is a strong acid that protonates water",
+        "why": "The hydride ion is a strong base, not an acid. It deprotonates water to give H2 and hydroxide."
+      },
+      {
+        "text": "It oxidizes water to O2",
+        "why": "Hydride is a reductant. It reacts with water's protons to give H2."
+      }
+    ],
+    "explanation": "Ionic hydrides act as strong bases toward protic E–H bonds; all react exothermically with water to liberate hydrogen gas, for example MH(s) + H2O(l) → M^+(aq) + H2(g) + OH^−(aq). This is why CaH2 is used to dry organic solvents. Ionic hydrides also reduce metal oxides and can deprotonate reactive C–H bonds, such as those of terminal alkynes."
+  },
+  {
+    "id": "ic8-s4-electron-deficient-hydrides",
+    "type": "multiple-choice",
+    "prompt": "BH3 and AlH3 are electron-deficient hydrides. How do they make up for their lack of electrons?",
+    "choices": [
+      {
+        "text": "They form dimers held together by bridging E–H–E three-center two-electron bonds, and they act as Lewis acids",
+        "correct": true
+      },
+      {
+        "text": "They use lone pairs on the central atom to form bonds",
+        "why": "Electron-deficient hydrides have no lone pairs on the central atom; electron-rich hydrides such as NH3 and H2O do."
+      },
+      {
+        "text": "They act as Lewis bases toward metal ions",
+        "why": "With too few electrons to satisfy the octet, they act as Lewis acids, accepting electron pairs from bases like THF."
+      },
+      {
+        "text": "They form ionic lattices of E^3+ and H^− ions",
+        "why": "Their bonding is covalent: they dimerize (or, for Be, polymerize) through bridging E–H–E bonds."
+      }
+    ],
+    "explanation": "The monomeric hydrides of Be and the group 13 elements don't have enough electrons to satisfy the octet rule, so they form dimers (B, Al, Ga, In, Tl) or polymers (Be) held together by bridging E–H–E bonds, described as three-center two-electron bonds. They also tend to act as Lewis acids, forming adducts with bases like THF."
+  },
+  {
+    "id": "ic8-s4-group14-hydride-stability",
+    "type": "multiple-choice",
+    "prompt": "Which is the correct order of stability for the group 14 hydrides?",
+    "choices": [
+      {
+        "text": "CH4 > SiH4 > GeH4 > SnH4 > PbH4",
+        "correct": true
+      },
+      {
+        "text": "PbH4 > SnH4 > GeH4 > SiH4 > CH4",
+        "why": "Element hydride stability decreases down a group, so CH4 is the most stable and PbH4 the least."
+      },
+      {
+        "text": "All five are about equally stable",
+        "why": "Stability drops markedly down the group; there are far fewer silanes and germanes than alkanes."
+      },
+      {
+        "text": "SiH4 > CH4 > GeH4 > SnH4 > PbH4",
+        "why": "Methane is more stable than silane; stability decreases steadily down the group."
+      }
+    ],
+    "explanation": "Whatever its classification, the stability of element hydrides decreases down a group: CH4 > SiH4 > GeH4 > SnH4 > PbH4. The same is true of compounds with E–E bonds: a vast number of alkanes are known, but relatively few silanes, fewer germanes, and only organic analogs of the stannanes."
+  },
+  {
+    "id": "ic8-s4-acid-vs-hydride-donor",
+    "type": "multiple-choice",
+    "prompt": "Element hydrides can act as Brønsted acids or as hydride donors. What mainly decides which?",
+    "choices": [
+      {
+        "text": "The polarity of the E–H bond: H on an electronegative element tends to be acidic, while H on an electropositive element tends to be donated as hydride",
+        "correct": true
+      },
+      {
+        "text": "The number of hydrogen atoms in the molecule",
+        "why": "The behavior depends on E–H bond polarity, not on how many H atoms there are."
+      },
+      {
+        "text": "Whether the hydride is a gas or a solid",
+        "why": "Physical state isn't the deciding factor. Bond polarity, plus solvation and the stability of the products, is."
+      },
+      {
+        "text": "Hydrides of electropositive elements are always the stronger Brønsted acids",
+        "why": "It's the reverse: H bound to electropositive elements carries partial negative charge and is donated as hydride, as in LiAlH4."
+      }
+    ],
+    "explanation": "Depending on E–H bond polarity, any element hydride can act as a weak Brønsted acid or a hydride donor. Hydrogen bound to an electronegative element (as in HCl) tends to be acidic, while hydrogen bound to an electropositive element (as in AlH4^−) tends to be donated as hydride. Other factors also matter: GeH4, expected to be a hydride donor, can be deprotonated in liquid ammonia, likely because of the large solvation energy of the resulting H^+."
+  },
+  {
+    "id": "ic8-s4-interstitial-hydrides",
+    "type": "multiple-choice",
+    "prompt": "Which statement describes interstitial (metallic) hydrides?",
+    "choices": [
+      {
+        "text": "Hydrogen dissolves reversibly in the interstices of a metal lattice, giving nonstoichiometric MH_n solids that keep metallic properties",
+        "correct": true
+      },
+      {
+        "text": "They are stoichiometric salts of the H^− ion with an NaCl-type lattice",
+        "why": "That describes ionic hydrides of the alkali metals. Interstitial hydrides are nonstoichiometric solid solutions."
+      },
+      {
+        "text": "They are molecular gases like NH3 and CH4",
+        "why": "Those are covalent hydrides of nonmetals. Interstitial hydrides are metallic solids."
+      },
+      {
+        "text": "They form irreversibly, so hydrogen can never be recovered from them",
+        "why": "Their formation is reversible, which is why they have been considered as hydrogen storage materials."
+      }
+    ],
+    "explanation": "In interstitial hydrides, hydrogen dissolves in a metal to form nonstoichiometric solid solutions, MH_n, with H in the interstices of an FCC, HCP, or BCC lattice (which expands 10–20%). They keep metallic luster, hardness, and conductivity. Because the process is reversible, they have been considered for hydrogen storage."
+  }
+]

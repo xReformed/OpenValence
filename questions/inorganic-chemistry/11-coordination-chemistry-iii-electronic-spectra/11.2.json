@@ -1,0 +1,394 @@
+[
+  {
+    "id": "ic11-microstate-meaning",
+    "type": "multiple-choice",
+    "prompt": "Carbon's 2p^2 electrons can be arranged among the three 2p orbitals in 15 different ways, each with its own set of electron m_l and m_s values. What is each of these arrangements called?",
+    "choices": [
+      {
+        "text": "A microstate",
+        "correct": true
+      },
+      {
+        "text": "A term",
+        "why": "A term is a group of microstates that have the same energy, not a single arrangement."
+      },
+      {
+        "text": "An orbital",
+        "why": "An orbital holds up to two electrons. A microstate is one specific way of placing all the electrons into the orbitals, with particular spins."
+      },
+      {
+        "text": "A subshell",
+        "why": "The 2p subshell is the set of three p orbitals; the 15 arrangements of two electrons within it are microstates."
+      }
+    ],
+    "explanation": "Each different way of arranging the electrons within a partly filled subshell, with its own individual m_l and m_s values, is a microstate. Two electrons in carbon's three p orbitals give 15 microstates. Microstates are then grouped into terms."
+  },
+  {
+    "id": "ic11-term-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the analysis of electronic spectra, what is a term?",
+    "choices": [
+      {
+        "text": "A group of microstates that have the same energy",
+        "correct": true
+      },
+      {
+        "text": "A single arrangement of electrons with particular m_l and m_s values",
+        "why": "That is a microstate. A term collects all the microstates that share one energy."
+      },
+      {
+        "text": "A transition between the t_2g and eg orbitals",
+        "why": "That is an electronic transition. Transitions happen between terms, which are groups of microstates of equal energy."
+      },
+      {
+        "text": "The set of d orbitals of one energy in a ligand field",
+        "why": "Orbitals are one-electron functions. A term describes a state of the whole atom or ion: a group of microstates of equal energy."
+      }
+    ],
+    "explanation": "A group of microstates with the same energy is called a term. Electronic transitions happen between terms of different energy, so the number of electronic transitions can be predicted from the number of terms."
+  },
+  {
+    "id": "ic11-lft-misses-repulsion",
+    "type": "multiple-choice",
+    "prompt": "Ligand field theory predicts a single t_2g → eg absorption band for octahedral [Ni(H2O)6]^2+ (d^8), but its spectrum shows several bands. What does the simple LFT picture leave out?",
+    "choices": [
+      {
+        "text": "Repulsion between the d electrons, which depends on how their orbitals are oriented",
+        "correct": true
+      },
+      {
+        "text": "The splitting of the d orbitals into t_2g and eg",
+        "why": "LFT includes that splitting; it is the basis of the one-band prediction. What it ignores is electron–electron repulsion."
+      },
+      {
+        "text": "The spins of the electrons",
+        "why": "The missing piece is electron–electron interaction: electrons in d orbitals repel each other to different extents depending on their orbitals' orientations."
+      },
+      {
+        "text": "The effect of the ligands on the d orbitals",
+        "why": "LFT is built on the ligands' effect on the d orbitals. It assumes no electron–electron interactions, and that is why it fails here."
+      }
+    ],
+    "explanation": "LFT assumes there are no electron–electron interactions. In reality d electrons repel each other, and how strongly depends on the relative orientations of the orbitals they occupy. Excited states that LFT treats as equal in energy are therefore different, and the complex absorbs at several energies."
+  },
+  {
+    "id": "ic11-excited-microstates-differ",
+    "type": "multiple-choice",
+    "prompt": "In an excited octahedral d^2 ion, one microstate has electrons in d_xy and d_z^2, and another has electrons in d_xz and d_z^2. Why do these two microstates have different energies?",
+    "choices": [
+      {
+        "text": "d_xz has electron density along the z-axis while d_xy is perpendicular to d_z^2, so the d_z^2 electron repels the other electron differently in each case",
+        "correct": true
+      },
+      {
+        "text": "They have the same energy, because both have one electron in t_2g and one in eg",
+        "why": "That is the LFT prediction, and it is wrong: the electrons interact differently in the two microstates."
+      },
+      {
+        "text": "d_xy and d_xz belong to different sets in an octahedral field",
+        "why": "d_xy and d_xz are both t_2g orbitals. The difference comes from their orientation relative to d_z^2."
+      },
+      {
+        "text": "One microstate has paired spins and the other doesn't",
+        "why": "Each has one electron in each of two different orbitals. The difference is the orbitals' relative orientation, which changes the electron–electron repulsion."
+      }
+    ],
+    "explanation": "The d_xz orbital has electron density on the z-axis, where d_z^2 is concentrated, while d_xy is perpendicular to d_z^2. An electron in d_z^2 therefore interacts differently with a d_xz electron than with a d_xy electron, so the two excited microstates need different amounts of energy to reach."
+  },
+  {
+    "id": "ic11-microstates-d3",
+    "type": "numeric",
+    "prompt": "For a d^n configuration, the number of microstates is 10!/((10 − n)! n!). How many microstates does a d^3 ion have?",
+    "answer": 120,
+    "tolerance": 0,
+    "explanation": "10!/((10 − 3)! 3!) = 10!/(7! × 3!) = (10 × 9 × 8)/(3 × 2 × 1) = 720/6 = 120 microstates."
+  },
+  {
+    "id": "ic11-microstates-in-term",
+    "type": "numeric",
+    "prompt": "The number of microstates belonging to one term is (2L + 1)(2S + 1). How many microstates are in a ^5D term?",
+    "answer": 25,
+    "tolerance": 0,
+    "explanation": "For ^5D, the multiplicity 2S + 1 = 5 and D means L = 2, so 2L + 1 = 5. The term has (5)(5) = 25 microstates."
+  },
+  {
+    "id": "ic11-l-values-p-plus-d",
+    "type": "multiple-choice",
+    "prompt": "An excited atom has one open-shell p electron (l = 1) and one open-shell d electron (l = 2). What are the possible values of L?",
+    "choices": [
+      {
+        "text": "3, 2, and 1 (F, D, and P)",
+        "correct": true
+      },
+      {
+        "text": "3 only (F)",
+        "why": "L runs from l1 + l2 down to |l1 − l2| in steps of one, so 2 and 1 are possible too."
+      },
+      {
+        "text": "2 and 1 only (D and P)",
+        "why": "The largest value, l1 + l2 = 3, is also possible."
+      },
+      {
+        "text": "3, 2, 1, and 0 (F, D, P, and S)",
+        "why": "The smallest value is |l1 − l2| = |1 − 2| = 1, so L = 0 is not possible."
+      }
+    ],
+    "explanation": "For two electrons, L takes the values l1 + l2, l1 + l2 − 1, …, |l1 − l2|. Here that runs from 1 + 2 = 3 down to |1 − 2| = 1, giving L = 3, 2, 1, the F, D, and P terms."
+  },
+  {
+    "id": "ic11-ml-versus-l",
+    "type": "multiple-choice",
+    "prompt": "Which statement correctly contrasts L and M_L?",
+    "choices": [
+      {
+        "text": "L describes a whole set of microstates, while M_L belongs to an individual microstate and can be negative",
+        "correct": true
+      },
+      {
+        "text": "L belongs to an individual microstate, while M_L describes a set of microstates",
+        "why": "It's the other way round: L is assigned to a collection of microstates, and M_L is specific to one microstate in that group."
+      },
+      {
+        "text": "Both L and M_L can be negative",
+        "why": "L can't be negative. M_L, the z-component of the orbital angular momentum, can be."
+      },
+      {
+        "text": "M_L always equals L",
+        "why": "M_L takes the values L, L − 1, …, −L across the microstates of a term; only one of them equals L."
+      }
+    ],
+    "explanation": "L is the total orbital angular momentum of a collection of microstates and cannot be negative. M_L is the total z-component of the electrons' orbital angular momentum in one specific microstate. It tells which way the angular momentum points, and runs from L to −L."
+  },
+  {
+    "id": "ic11-ml-count-p-plus-d",
+    "type": "numeric",
+    "prompt": "An excited atom has one open-shell p electron (m_l = −1, 0, +1) and one open-shell d electron (m_l = −2 to +2). How many different values of M_L are possible?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "The largest M_L is (+1) + (+2) = +3 and the smallest is (−1) + (−2) = −3. M_L takes every integer in between: +3, +2, +1, 0, −1, −2, −3, which is 7 values. Because the electrons are in different subshells, Pauli doesn't forbid any of them."
+  },
+  {
+    "id": "ic11-max-ms-d7",
+    "type": "numeric",
+    "prompt": "Seven electrons are placed in the five d orbitals, obeying the Pauli exclusion principle. What is the largest possible value of M_S?",
+    "answer": 1.5,
+    "tolerance": 0.01,
+    "explanation": "At most five electrons can be spin-up (one per orbital); the other two must then be spin-down. M_S = 5(+1/2) + 2(−1/2) = 5/2 − 1 = 3/2. A larger value, such as 7/2, would need two electrons with the same set of quantum numbers, which Pauli forbids."
+  },
+  {
+    "id": "ic11-term-symbol-from-l-s",
+    "type": "multiple-choice",
+    "prompt": "A term has L = 5 and S = 1. What is its term symbol?",
+    "choices": [
+      {
+        "text": "^3H",
+        "correct": true
+      },
+      {
+        "text": "^2H",
+        "why": "The superscript is the multiplicity 2S + 1, not S + 1. With S = 1, 2S + 1 = 3."
+      },
+      {
+        "text": "^3G",
+        "why": "L = 4 is G. The letters run S, P, D, F, G, H for L = 0 to 5, so L = 5 is H."
+      },
+      {
+        "text": "^1H",
+        "why": "Multiplicity 1 means S = 0. With S = 1 the multiplicity is 2(1) + 1 = 3."
+      }
+    ],
+    "explanation": "A term symbol takes the form ^(2S + 1)L. The multiplicity is 2(1) + 1 = 3, and L = 0, 1, 2, 3, 4, 5 correspond to S, P, D, F, G, H, so L = 5 is H. The term is ^3H, a triplet."
+  },
+  {
+    "id": "ic11-multiplicity-unpaired",
+    "type": "numeric",
+    "prompt": "In a term's representative microstate, an ion has four unpaired electrons. What is the multiplicity of the term?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Multiplicity = 2S + 1 = number of unpaired electrons + 1. With four unpaired electrons, S = 4 × 1/2 = 2, and 2S + 1 = 5: a quintet."
+  },
+  {
+    "id": "ic11-microstate-table-term",
+    "type": "multiple-choice",
+    "prompt": "When terms are read from a microstate table, a rectangular box of microstates is found whose highest values are M_L = 2 and M_S = 1. What term does the box represent?",
+    "choices": [
+      {
+        "text": "^3D",
+        "correct": true
+      },
+      {
+        "text": "^2D",
+        "why": "M_S = 1 gives S = 1, and the multiplicity is 2S + 1 = 3, not 2."
+      },
+      {
+        "text": "^3P",
+        "why": "The highest M_L in the box gives L = 2, which is D. ^3P would need a highest M_L of 1."
+      },
+      {
+        "text": "^1D",
+        "why": "A singlet has only M_S = 0. A highest M_S of 1 means S = 1, a triplet."
+      }
+    ],
+    "explanation": "The microstate with the highest M_L and M_S in the box sets the term: L equals that M_L and S equals that M_S. Here L = 2 (D) and S = 1, so 2S + 1 = 3 and the term is ^3D. Its box holds (2L + 1)(2S + 1) = 5 × 3 = 15 microstates."
+  },
+  {
+    "id": "ic11-hund-ground-p3",
+    "type": "multiple-choice",
+    "prompt": "The terms arising from a p^3 configuration are ^4S, ^2D, and ^2P. Which is the ground term?",
+    "choices": [
+      {
+        "text": "^4S",
+        "correct": true
+      },
+      {
+        "text": "^2D",
+        "why": "Hund's second rule (largest L) only decides among terms of the same multiplicity. Maximum multiplicity comes first, and ^4S has the highest."
+      },
+      {
+        "text": "^2P",
+        "why": "^2P has neither the highest multiplicity nor the largest L among the doublets."
+      },
+      {
+        "text": "^2D and ^2P are equally low",
+        "why": "Different terms have different energies. Hund's first rule picks the term of highest multiplicity, ^4S."
+      }
+    ],
+    "explanation": "By Hund's first rule, the lowest-energy term has the maximum multiplicity. ^4S is the only quartet, so it is the ground term even though its L = 0 is the smallest. Hund's second rule, largest L, only breaks ties between terms of the same multiplicity."
+  },
+  {
+    "id": "ic11-ground-term-mn2",
+    "type": "multiple-choice",
+    "prompt": "Using the shortcut for ground-state free ion terms, what is the ground term of the metal ion in [Mn(H2O)6]^2+?",
+    "choices": [
+      {
+        "text": "^6S",
+        "correct": true
+      },
+      {
+        "text": "^6D",
+        "why": "Five electrons fill m_l = +2, +1, 0, −1, −2 once each, so L = 2 + 1 + 0 − 1 − 2 = 0, which is S, not D."
+      },
+      {
+        "text": "^2D",
+        "why": "Electrons go into separate orbitals before pairing, so all five d electrons are unpaired: S = 5/2 and the multiplicity is 6."
+      },
+      {
+        "text": "^5D",
+        "why": "That is the ground term of d^4 or d^6. Mn^2+ is d^5, with five unpaired electrons and L = 0."
+      }
+    ],
+    "explanation": "Mn^2+ is a d^5 ion. Filling one electron into each of the five orbitals (m_l = +2, +1, 0, −1, −2), all spin-up, gives S = 5 × 1/2 = 5/2, so 2S + 1 = 6. L = 2 + 1 + 0 + (−1) + (−2) = 0, an S term. The ground term is ^6S."
+  },
+  {
+    "id": "ic11-ground-term-co2",
+    "type": "multiple-choice",
+    "prompt": "Using the shortcut for ground-state free ion terms, what is the ground term of the metal ion in [Co(H2O)6]^2+?",
+    "choices": [
+      {
+        "text": "^4F",
+        "correct": true
+      },
+      {
+        "text": "^4P",
+        "why": "L is the sum of the m_l values, which is 3 here (F). After spin is maximized, L should be the maximum possible."
+      },
+      {
+        "text": "^2D",
+        "why": "That would follow from one unpaired electron. Filling singly before pairing leaves three unpaired electrons in d^7."
+      },
+      {
+        "text": "^3F",
+        "why": "^3F is the ground term of d^2 and d^8. Co^2+ is d^7, with three unpaired electrons and a multiplicity of 4."
+      }
+    ],
+    "explanation": "Co^2+ is d^7. Five electrons go spin-up into m_l = +2, +1, 0, −1, −2; the remaining two pair up in the highest m_l orbitals, +2 and +1. Three electrons stay unpaired, so S = 3/2 and 2S + 1 = 4. L = (2 + 1 + 0 − 1 − 2) + (2 + 1) = 3, an F term. The ground term is ^4F."
+  },
+  {
+    "id": "ic11-l-ground-ni2",
+    "type": "numeric",
+    "prompt": "Ni^2+ is a d^8 ion. Using the shortcut (fill the highest m_l first, singly before pairing), what is L for its ground free ion term?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Five electrons go spin-up into m_l = +2, +1, 0, −1, −2 (sum 0); the remaining three pair up in m_l = +2, +1, 0 (sum 3). L = 0 + 3 = 3, an F term. With two unpaired electrons the multiplicity is 3, so the ground term is ^3F."
+  },
+  {
+    "id": "ic11-hole-equivalent-d3",
+    "type": "multiple-choice",
+    "prompt": "A p^2 configuration has the same term symbols as p^4. Which d configuration has the same term symbols as d^3?",
+    "choices": [
+      {
+        "text": "d^7",
+        "correct": true
+      },
+      {
+        "text": "d^4",
+        "why": "The relationship pairs n electrons with n holes: d^n matches d^(10 − n), so d^3 matches d^7."
+      },
+      {
+        "text": "d^6",
+        "why": "d^6 is related in the same way to d^4. d^3 pairs with d^(10 − 3) = d^7."
+      },
+      {
+        "text": "d^8",
+        "why": "d^8 has the same terms as d^2. d^3 pairs with d^7."
+      }
+    ],
+    "explanation": "Just as p^1 matches p^5 and p^2 matches p^4 (6 − n), a d^n configuration has the same term symbols as d^(10 − n). So d^3 and d^7 share their terms, and both have a ^4F ground term."
+  },
+  {
+    "id": "ic11-j-ground-d3",
+    "type": "multiple-choice",
+    "prompt": "A d^3 free ion has a ^4F ground term. Spin–orbit coupling splits it into states with J = 9/2, 7/2, 5/2, and 3/2. Which state is lowest in energy?",
+    "choices": [
+      {
+        "text": "J = 3/2",
+        "correct": true
+      },
+      {
+        "text": "J = 9/2",
+        "why": "The largest J is lowest only for subshells that are more than half full. d^3 is less than half full."
+      },
+      {
+        "text": "J = 5/2",
+        "why": "Hund's third rule picks an extreme J value, the lowest or the highest, depending on how full the subshell is."
+      },
+      {
+        "text": "All four have the same energy",
+        "why": "Spin–orbit coupling splits a free ion term into states of different energies."
+      }
+    ],
+    "explanation": "J runs from L + S to |L − S|: for ^4F, L = 3 and S = 3/2, so J = 9/2, 7/2, 5/2, 3/2. By Hund's third rule, for a subshell less than half full (d^3 of a possible d^10), the lowest-energy state has the lowest J, 3/2."
+  },
+  {
+    "id": "ic11-j-ground-d8",
+    "type": "multiple-choice",
+    "prompt": "A d^8 free ion has a ^3F ground term, which spin–orbit coupling splits into J = 4, 3, and 2. Which state is lowest in energy?",
+    "choices": [
+      {
+        "text": "J = 4",
+        "correct": true
+      },
+      {
+        "text": "J = 2",
+        "why": "The lowest J is lowest in energy only for subshells less than half full. d^8 is more than half full."
+      },
+      {
+        "text": "J = 3",
+        "why": "Hund's third rule picks the largest J for a more-than-half-filled subshell, not the middle value."
+      },
+      {
+        "text": "All three have the same energy",
+        "why": "Spin–orbit coupling splits the ^3F term into states of different energies."
+      }
+    ],
+    "explanation": "For ^3F, L = 3 and S = 1, so J = 4, 3, 2. By Hund's third rule, a subshell more than half full has the largest J as its lowest-energy state, so J = 4 is lowest for d^8."
+  },
+  {
+    "id": "ic11-j-states-3d",
+    "type": "numeric",
+    "prompt": "Spin–orbit coupling splits a free ion term into states with J = L + S, L + S − 1, …, |L − S|. Into how many states does a ^3D term split?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "^3D has 2S + 1 = 3, so S = 1, and D means L = 2. J runs from L + S = 3 to |L − S| = 1: J = 3, 2, 1, which is three states."
+  }
+]

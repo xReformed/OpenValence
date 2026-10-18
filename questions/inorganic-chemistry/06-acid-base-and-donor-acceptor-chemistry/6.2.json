@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ic6-arrhenius-acid-definition",
+    "type": "multiple-choice",
+    "prompt": "Under the Arrhenius concept, what defines an acid?",
+    "choices": [
+      {
+        "text": "It increases the concentration of hydronium ion, H3O^+, when dissolved in water",
+        "correct": true
+      },
+      {
+        "text": "It donates an H^+ to any base, in any medium",
+        "why": "That is the broader Brønsted-Lowry definition. The Arrhenius definition is tied to the effect on [H3O^+] in aqueous solution."
+      },
+      {
+        "text": "It increases the concentration of hydroxide ion in water",
+        "why": "Increasing [OH^−] is what an Arrhenius base does. An acid increases [H3O^+], which decreases [OH^−]."
+      },
+      {
+        "text": "It contains hydrogen atoms",
+        "why": "Containing hydrogen isn't enough. NH3 contains hydrogen but is an Arrhenius base because it decreases [H3O^+]."
+      }
+    ],
+    "explanation": "The Arrhenius concept defines acids and bases by how they affect the amount of H3O^+ (and by extension OH^−) in aqueous solution. An acid increases [H3O^+] when dissolved in water, usually by losing a proton to water: HA(aq) + H2O(l) ⇌ H3O^+(aq) + A^−(aq)."
+  },
+  {
+    "id": "ic6-strong-vs-weak-arrhenius",
+    "type": "multiple-choice",
+    "prompt": "Both HCl and acetic acid, CH3CO2H, increase [H3O^+] in water. In Arrhenius terms, what is the major difference between them?",
+    "choices": [
+      {
+        "text": "HCl dissociates completely to give a stoichiometric amount of H3O^+, while acetic acid only partly dissociates",
+        "correct": true
+      },
+      {
+        "text": "HCl contains more ionizable hydrogens than acetic acid",
+        "why": "Each acid donates one H^+ here. The difference is the extent of dissociation: complete for HCl, partial for acetic acid."
+      },
+      {
+        "text": "Acetic acid dissociates completely, while HCl only partly dissociates",
+        "why": "It's the other way around. HCl is the strong acid that dissociates completely; acetic acid is weak."
+      },
+      {
+        "text": "HCl decreases [H3O^+] while acetic acid increases it",
+        "why": "Both are Arrhenius acids and both increase [H3O^+]. They differ in how completely they dissociate."
+      }
+    ],
+    "explanation": "Hydrochloric acid dissociates completely in solution to yield stoichiometric amounts of H3O^+, while acetic acid only partially dissociates. Acids that completely dissociate in water, like HCl, are classified as strong; those that do not, like acetic acid, are weak."
+  },
+  {
+    "id": "ic6-weak-acid-ka-below-one",
+    "type": "multiple-choice",
+    "prompt": "Why are the Ka values of weak acids always less than 1, and why are they usually tabulated as pKa values?",
+    "choices": [
+      {
+        "text": "A weak acid dissociates incompletely, so Ka < 1, and Ka values span many orders of magnitude, so a log scale is convenient",
+        "correct": true
+      },
+      {
+        "text": "Ka is always less than 1 for every acid, strong or weak",
+        "why": "Strong acids have Ka values greater than 1. A Ka below 1 is what marks an acid as weak."
+      },
+      {
+        "text": "Ka values are less than 1 because they are measured in units of mol/L",
+        "why": "The size of Ka reflects the extent of dissociation, not its units. Weak acids dissociate incompletely, so Ka < 1."
+      },
+      {
+        "text": "pKa values are used because Ka values of weak acids are all nearly the same",
+        "why": "The opposite is true: weak-acid Ka values vary over many orders of magnitude, which is why a logarithmic scale is used."
+      }
+    ],
+    "explanation": "Weak acids dissociate incompletely, so their Ka values are less than one (otherwise they would not be weak). Those values vary over many orders of magnitude, so it is customary to tabulate them as pKa = −log Ka."
+  },
+  {
+    "id": "ic6-pka-strongest-from-table",
+    "type": "multiple-choice",
+    "prompt": "Using these pKa values, which acid is the strongest? Benzoic acid, 4.20; hypochlorous acid, 7.40; hydrocyanic acid, 9.21; formic acid, 3.750.",
+    "choices": [
+      {
+        "text": "Formic acid",
+        "correct": true
+      },
+      {
+        "text": "Hydrocyanic acid",
+        "why": "HCN has the highest pKa, which makes it the weakest acid in the list. A lower pKa means a stronger acid."
+      },
+      {
+        "text": "Hypochlorous acid",
+        "why": "HOCl's pKa of 7.40 is higher than those of formic and benzoic acid, so it is weaker than both."
+      },
+      {
+        "text": "Benzoic acid",
+        "why": "Benzoic acid (pKa 4.20) is stronger than HOCl and HCN, but formic acid has a lower pKa (3.750), so formic acid is stronger."
+      }
+    ],
+    "explanation": "Because pKa = −log Ka, the stronger the weak acid (the larger its Ka), the lower its pKa. Formic acid has the lowest pKa, 3.750 (Ka = 1.78 × 10^−4), so it is the strongest of these acids."
+  },
+  {
+    "id": "ic6-pka-from-ka",
+    "type": "numeric",
+    "prompt": "A weak monoprotic acid has Ka = 4.5 × 10^−4. What is its pKa?",
+    "answer": 3.35,
+    "tolerance": 0.01,
+    "explanation": "pKa = −log Ka = −log(4.5 × 10^−4) = 3.35. That would make it slightly weaker than nitrous acid (pKa 3.25) and stronger than formic acid (pKa 3.750)."
+  },
+  {
+    "id": "ic6-ka-from-pka",
+    "type": "numeric",
+    "prompt": "A weak acid has pKa = 6.35. What is its Ka?",
+    "answer": 4.47e-07,
+    "tolerance": 0.01,
+    "explanation": "Since pKa = −log Ka, Ka = 10^−pKa = 10^−6.35 = 4.47 × 10^−7."
+  },
+  {
+    "id": "ic6-ka-ratio-from-pka",
+    "type": "numeric",
+    "prompt": "Nitrous acid, HNO2, has pKa = 3.25 and hypochlorous acid, HOCl, has pKa = 7.40. Using these pKa values, by what factor is the Ka of HNO2 larger than the Ka of HOCl?",
+    "answer": 14100,
+    "tolerance": 0.01,
+    "explanation": "Each unit of pKa corresponds to a tenfold change in Ka. The difference is 7.40 − 3.25 = 4.15 pKa units, so Ka(HNO2)/Ka(HOCl) = 10^4.15 ≈ 1.41 × 10^4."
+  },
+  {
+    "id": "ic6-pka-tenfold",
+    "type": "multiple-choice",
+    "prompt": "Weak acid X has pKa = 4.0 and weak acid Y has pKa = 6.0. How do their Ka values compare?",
+    "choices": [
+      {
+        "text": "X's Ka is 100 times larger than Y's",
+        "correct": true
+      },
+      {
+        "text": "X's Ka is 2 times larger than Y's",
+        "why": "pKa is a logarithmic scale. A difference of 2 pKa units is a factor of 10^2 = 100, not 2."
+      },
+      {
+        "text": "Y's Ka is 100 times larger than X's",
+        "why": "The lower pKa belongs to the stronger acid with the larger Ka. X, with pKa 4.0, has the larger Ka."
+      },
+      {
+        "text": "X's Ka is 20 times larger than Y's",
+        "why": "Each pKa unit is a factor of ten, so two units is 10 × 10 = 100."
+      }
+    ],
+    "explanation": "Each unit increase or decrease in pKa corresponds to a tenfold change in Ka, and the lower pKa belongs to the stronger acid. X is 2 pKa units lower than Y, so its Ka is 10^2 = 100 times larger."
+  },
+  {
+    "id": "ic6-strong-base-lowers-hydronium",
+    "type": "multiple-choice",
+    "prompt": "How does dissolving a strong base such as NaOH decrease [H3O^+] in water?",
+    "choices": [
+      {
+        "text": "The added OH^− shifts the water autoionization equilibrium, 2H2O ⇌ H3O^+ + OH^−, toward water",
+        "correct": true
+      },
+      {
+        "text": "It only dilutes the H3O^+ already present in the water",
+        "why": "Dilution isn't the mechanism. The added hydroxide shifts the autoionization equilibrium of water to the left, consuming H3O^+."
+      },
+      {
+        "text": "Na^+ ions accept protons from H3O^+",
+        "why": "Na^+ doesn't react. It is the hydroxide from the completely dissociated salt that lowers [H3O^+]."
+      },
+      {
+        "text": "NaOH only partly dissociates, establishing an equilibrium with OH^−",
+        "why": "Strong bases such as alkali metal hydroxides dissociate completely. Partial reaction with water to give OH^− describes weak bases."
+      }
+    ],
+    "explanation": "Strong bases, mostly alkali metal hydroxides or quaternary ammonium salts, dissociate completely: MOH(aq) → M^+(aq) + OH^−(aq). The added hydroxide decreases [H3O^+] by shifting the water autoionization equilibrium, 2H2O(l) ⇌ H3O^+(aq) + OH^−(aq), towards water."
+  },
+  {
+    "id": "ic6-strongest-base-from-pkb",
+    "type": "multiple-choice",
+    "prompt": "These conjugate bases have the pKb values shown: CN^−, 4.79; F^−, 10.80; OCl^−, 6.60; CH3CO2^−, 9.24. Which is the strongest base?",
+    "choices": [
+      {
+        "text": "CN^−",
+        "correct": true
+      },
+      {
+        "text": "F^−",
+        "why": "F^− has the highest pKb, so it is the weakest base in the list. As with pKa, a lower pKb means a stronger base."
+      },
+      {
+        "text": "CH3CO2^−",
+        "why": "Acetate's pKb of 9.24 is higher than those of CN^− and OCl^−, so it is weaker than both."
+      },
+      {
+        "text": "OCl^−",
+        "why": "Hypochlorite (pKb 6.60) is fairly basic, but CN^− has a lower pKb (4.79), so CN^− is the stronger base."
+      }
+    ],
+    "explanation": "A weak base reacts with water as B(aq) + H2O(l) ⇌ BH^+(aq) + OH^−(aq), and its base ionization constant Kb measures its strength. The lowest pKb (largest Kb) belongs to CN^− (Kb = 1.6 × 10^−5), the conjugate base of the weakest acid in this set, HCN."
+  },
+  {
+    "id": "ic6-arrhenius-base-criteria",
+    "type": "multiple-choice",
+    "prompt": "A compound is added to pure water and the solution pH rises. How is the compound classified under the Arrhenius concept?",
+    "choices": [
+      {
+        "text": "As an Arrhenius base, because it caused the pH to increase",
+        "correct": true
+      },
+      {
+        "text": "As an Arrhenius acid, because the hydroxide concentration changed",
+        "why": "An Arrhenius acid decreases [OH^−] and lowers the pH. A rise in pH means [OH^−] increased, which marks a base."
+      },
+      {
+        "text": "As neither, because only substances containing OH^− can be Arrhenius bases",
+        "why": "Arrhenius bases need not contain hydroxide. Any substance that causes, directly or otherwise, a decrease in [H3O^+], an increase in [OH^−], or an increase in pH qualifies."
+      },
+      {
+        "text": "It can't be classified unless it donates H^+",
+        "why": "H^+ donation describes acids, not bases. The Arrhenius concept classifies by the effect on the solution, and a pH increase marks a base."
+      }
+    ],
+    "explanation": "Because the Arrhenius concept is concerned with the state of the water autoionization reaction, acids and bases can be recognized by their effect on pH. To qualify as an Arrhenius base, a chemical must cause, directly or otherwise, a decrease in [H3O^+], an increase in [OH^−], or an increase in pH."
+  },
+  {
+    "id": "ic6-arrhenius-limitation",
+    "type": "multiple-choice",
+    "prompt": "Why can't the Arrhenius concept describe acid-base reactions in the gas phase or in molten salts?",
+    "choices": [
+      {
+        "text": "It defines acids and bases by their effect on an aqueous solution, so it doesn't apply without water as the solvent",
+        "correct": true
+      },
+      {
+        "text": "Gas-phase and molten reactions never involve H^+ transfer",
+        "why": "Such reactions can involve H^+ transfer (gaseous HCl and NH3, for example). The limitation is that the Arrhenius definition is tied to aqueous solution."
+      },
+      {
+        "text": "The Arrhenius concept only applies to strong acids",
+        "why": "The Arrhenius concept covers both strong and weak acids, through Ka. Its limitation is its reliance on water."
+      },
+      {
+        "text": "Equilibrium constants can't be defined outside water",
+        "why": "Equilibrium constants exist in any medium. The problem is that Arrhenius acids and bases are defined by their impact on the state of an aqueous solution."
+      }
+    ],
+    "explanation": "Because the Arrhenius model defines acids and bases in terms of their impact on the state of an aqueous solution, it is unable to describe reactions in nonaqueous solvents, gases, molten liquids, and the solid state. Other models are needed for H^+ and other transfers in nonaqueous media."
+  }
+]

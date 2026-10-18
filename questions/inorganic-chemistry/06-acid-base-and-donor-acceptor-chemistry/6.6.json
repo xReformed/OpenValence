@@ -1,0 +1,425 @@
+[
+  {
+    "id": "ic6-thiocyanate-binding-site",
+    "type": "multiple-choice",
+    "prompt": "Thiocyanate can bind a metal through N or through S. In [Hg(SCN)4]^2−, through which atom is Hg^2+ bound, and why?",
+    "choices": [
+      {
+        "text": "Through S, because the large Hg^2+ prefers the softer S end of the ligand",
+        "correct": true
+      },
+      {
+        "text": "Through N, because nitrogen is more electronegative",
+        "why": "Smaller ions such as Cu^2+ form N-thiocyanato complexes, but the larger, softer Hg^2+ forms S-thiocyanato complexes."
+      },
+      {
+        "text": "Through both N and S at once on each ligand",
+        "why": "Each thiocyanate binds through one end. Hg^2+ prefers S."
+      },
+      {
+        "text": "Through C, the central atom of SCN^−",
+        "why": "Thiocyanate is ambidentate through its N or S atoms. Hg^2+ binds at S."
+      }
+    ],
+    "explanation": "Ambidentate ligands such as thiocyanate can coordinate through more than one site. Cu^2+ and Zn^2+ form N-thiocyanato complexes such as [Cu(NCS)2(py)2] and [Zn(NCS)4]^2−, while their larger congeners Au^3+ and Hg^2+ preferentially form S-thiocyanato complexes such as [Hg(SCN)4]^2−. This natural affinity of some acids for some bases is the origin of the HSAB principle."
+  },
+  {
+    "id": "ic6-silver-halide-solubility",
+    "type": "multiple-choice",
+    "prompt": "The silver halides are all poorly soluble in water, but which is the least soluble, and how does the trend compare with the lithium halides?",
+    "choices": [
+      {
+        "text": "AgI is least soluble (AgF >> AgCl > AgBr > AgI), the opposite of the LiX order (LiF << LiCl < LiBr << LiI)",
+        "correct": true
+      },
+      {
+        "text": "AgF is least soluble, the same order as the lithium halides",
+        "why": "AgF is the most soluble silver halide. The silver and lithium halide trends run opposite."
+      },
+      {
+        "text": "AgI is least soluble, the same order as the lithium halides",
+        "why": "AgI is the least soluble silver halide, but LiF is the least soluble lithium halide, so the trends are opposite."
+      },
+      {
+        "text": "All silver halides have the same solubility",
+        "why": "Their modest solubilities follow a clear order, F >> Cl > Br > I."
+      }
+    ],
+    "explanation": "Salts can be thought of as Lewis acid-base adducts of cations and anions. The solubility of AgX follows F >> Cl > Br > I, while LiX follows F << Cl < Br << I. Silver binds the soft iodide most strongly, and lithium binds the hard fluoride most strongly. This is one of the observations behind the HSAB principle."
+  },
+  {
+    "id": "ic6-hard-soft-polarizability",
+    "type": "multiple-choice",
+    "prompt": "What property do Pearson's terms 'hard' and 'soft' refer to?",
+    "choices": [
+      {
+        "text": "Polarizability: soft acids and bases have electron clouds that are easily distorted, and hard ones are difficult to polarize",
+        "correct": true
+      },
+      {
+        "text": "Physical hardness of the solid compound",
+        "why": "The terms describe how 'soft' the electron cloud is toward distortion, not the mechanical hardness of a solid."
+      },
+      {
+        "text": "Strength as a Brønsted acid or base",
+        "why": "Hardness is not acid strength. It describes polarizability and governs which partners an acid or base prefers."
+      },
+      {
+        "text": "Solubility in water",
+        "why": "Solubility trends can reflect hardness, but the terms themselves refer to polarizability."
+      }
+    ],
+    "explanation": "Ahrland, Chatt, and Davies classified Lewis acids and bases into class a and class b. Pearson renamed them hard and soft, terms that reflect how 'soft' a substance's electron cloud is toward distortion, its polarizability. Relatively polarizable acids and bases are soft, and those that are difficult to polarize are hard."
+  },
+  {
+    "id": "ic6-absolute-hardness-definition",
+    "type": "multiple-choice",
+    "prompt": "How is Pearson's absolute hardness, η, estimated from ionization energy (IE) and electron affinity (EA)?",
+    "choices": [
+      {
+        "text": "η ≈ (IE − EA)/2, which is about half the HOMO–LUMO gap",
+        "correct": true
+      },
+      {
+        "text": "η ≈ (IE + EA)/2",
+        "why": "(IE + EA)/2 is the Mulliken electronegativity, χ. Hardness uses the difference, (IE − EA)/2."
+      },
+      {
+        "text": "η ≈ IE × EA",
+        "why": "Hardness is half the difference between IE and EA, which corresponds to half the HOMO–LUMO gap."
+      },
+      {
+        "text": "η ≈ 1/(IE − EA)",
+        "why": "An inverse quantity like this resembles softness, which is the inverse of hardness. η itself is (IE − EA)/2."
+      }
+    ],
+    "explanation": "Operationally, η ≈ (IE − EA)/2 and χ ≈ (IE + EA)/2, in eV. By Koopmans' theorem IE = −E_HOMO, and E_LUMO ≈ −EA, so η ≈ (E_LUMO − E_HOMO)/2, half the HOMO–LUMO gap. Hard species have large gaps. Softness is the inverse of hardness, 1/η."
+  },
+  {
+    "id": "ic6-absolute-hardness-calc",
+    "type": "numeric",
+    "prompt": "A species has an ionization energy of 9.2 eV and an electron affinity of 1.4 eV. Using η ≈ (IE − EA)/2, what is its Pearson absolute hardness, in eV?",
+    "answer": 3.9,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "η ≈ (IE − EA)/2 = (9.2 − 1.4)/2 = 7.8/2 = 3.9 eV. That places it between I^− (3.70 eV) and Br^− (4.24 eV) in Table 6.6.1.1, much softer than F^− (7.01 eV)."
+  },
+  {
+    "id": "ic6-mulliken-electronegativity-calc",
+    "type": "numeric",
+    "prompt": "A species has an ionization energy of 11.4 eV and an electron affinity of 2.2 eV. Using χ ≈ (IE + EA)/2, what is its Mulliken electronegativity, in eV?",
+    "answer": 6.8,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "χ ≈ (IE + EA)/2 = (11.4 + 2.2)/2 = 13.6/2 = 6.8 eV."
+  },
+  {
+    "id": "ic6-hardness-from-orbital-energies",
+    "type": "numeric",
+    "prompt": "A molecule has E_HOMO = −10.2 eV and E_LUMO = −1.6 eV. Using η ≈ (E_LUMO − E_HOMO)/2, what is its absolute hardness, in eV?",
+    "answer": 4.3,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "η ≈ (E_LUMO − E_HOMO)/2 = (−1.6 − (−10.2))/2 = 8.6/2 = 4.3 eV. Hardness is half the HOMO–LUMO gap."
+  },
+  {
+    "id": "ic6-hardness-table-trends",
+    "type": "multiple-choice",
+    "prompt": "Pearson hardness values (eV) include Li^+ 35.12, Cs^+ 10.6, Na^+ 21.08, Mg^2+ 32.55, Al^3+ 45.77, Fe^2+ 7.24, and Fe^3+ 12.08. Which conclusion do these data support?",
+    "choices": [
+      {
+        "text": "Hardness decreases down a group (larger ions) and increases with higher positive charge",
+        "correct": true
+      },
+      {
+        "text": "Hardness increases down a group and decreases with higher charge",
+        "why": "Both trends are reversed: Li^+ (35.12) is far harder than Cs^+ (10.6), and Fe^3+ (12.08) is harder than Fe^2+ (7.24)."
+      },
+      {
+        "text": "Hardness depends only on charge, not on size",
+        "why": "Li^+ and Cs^+ have the same charge but very different hardness, so size matters too."
+      },
+      {
+        "text": "Transition metal ions are harder than alkali metal ions of the same charge",
+        "why": "Compare charges and sizes: Fe^2+ (7.24 eV) is much softer than Mg^2+ (32.55 eV)."
+      }
+    ],
+    "explanation": "Hardness falls down group 1, from Li^+ (35.12 eV) to Cs^+ (10.6 eV), as the ions get larger. Across the isoelectronic series Na^+ < Mg^2+ < Al^3+, hardness rises with charge, and Fe^3+ is harder than Fe^2+. All other things being equal, hardness increases with oxidation state."
+  },
+  {
+    "id": "ic6-hard-acid-recognize",
+    "type": "multiple-choice",
+    "prompt": "Which of these Lewis acids would you expect to be the hardest: Al^3+, Tl^+, Cu^+, or Hg^2+?",
+    "choices": [
+      {
+        "text": "Al^3+",
+        "correct": true
+      },
+      {
+        "text": "Tl^+",
+        "why": "Tl^+ is large, has a low charge, and keeps two valence electrons, all of which make it soft."
+      },
+      {
+        "text": "Cu^+",
+        "why": "Cu^+ is a low-charge ion toward the right of the periodic table. Its absolute hardness is only 6.28 eV."
+      },
+      {
+        "text": "Hg^2+",
+        "why": "Hg^2+ is a large, polarizable ion and is classed as soft."
+      }
+    ],
+    "explanation": "Hard acids are small, highly charged relative to their size, have few valence electrons to polarize, and lie toward the left of the periodic table. Soft acids are larger, have lower oxidation states, have many valence electrons, and lie toward the middle or right. Al^3+ (η = 45.77 eV) is the hardest of these."
+  },
+  {
+    "id": "ic6-hsab-principle",
+    "type": "multiple-choice",
+    "prompt": "What does the HSAB principle state?",
+    "choices": [
+      {
+        "text": "Hard acids prefer hard bases and soft acids prefer soft bases, both thermodynamically (stronger adducts) and kinetically (faster reactions)",
+        "correct": true
+      },
+      {
+        "text": "Hard acids prefer soft bases, so that opposite properties balance",
+        "why": "The preference is 'like with like': hard with hard, soft with soft."
+      },
+      {
+        "text": "Hard acids always form stronger adducts than soft acids, whatever the base",
+        "why": "Adduct strength depends on matching. A soft acid forms a stronger complex with a soft base than a hard acid does."
+      },
+      {
+        "text": "It applies to equilibria only, not to reaction rates",
+        "why": "It applies both ways: hard electrophiles react faster with hard nucleophiles and soft with soft."
+      }
+    ],
+    "explanation": "The HSAB principle explains patterns in Lewis acid-base reactivity as a like-reacts-with-like preference. Thermodynamically, hard acids form stronger complexes with hard bases and soft acids with soft bases. Kinetically, hard acids and electrophiles react faster with hard bases and nucleophiles, and soft with soft."
+  },
+  {
+    "id": "ic6-hsab-metathesis-prediction",
+    "type": "multiple-choice",
+    "prompt": "Predict the position of equilibrium for LiI + CsF ⇌ LiF + CsI. (Hardness values: Li^+ 35.12 eV, Cs^+ 10.6 eV, F^− 7.01 eV, I^− 3.70 eV.)",
+    "choices": [
+      {
+        "text": "It favors the products, which pair the harder Li^+ with hard F^− and the softer Cs^+ with soft I^−",
+        "correct": true
+      },
+      {
+        "text": "It favors the reactants, because the reactants already contain hard-soft pairs",
+        "why": "Hard-soft pairs are the less stable combinations. Swapping partners to make hard-hard and soft-soft pairs is favored."
+      },
+      {
+        "text": "It lies near K ≈ 1, because all four ions are monovalent",
+        "why": "Equal charges don't make K ≈ 1. The hardness mismatch in the reactants drives the exchange."
+      },
+      {
+        "text": "It favors the reactants, because Cs^+ is harder than Li^+",
+        "why": "The data show the reverse: Li^+ (35.12 eV) is much harder than Cs^+ (10.6 eV)."
+      }
+    ],
+    "explanation": "In a Lewis acid-base metathesis, A1:B1 + A2:B2 ⇌ A1:B2 + A2:B1, the HSAB principle predicts the side with hard-hard and soft-soft pairs is favored. In LiI and CsF, both pairs are mismatched. In LiF (hard-hard) and CsI (softer-soft) they are matched, so the equilibrium lies to the right."
+  },
+  {
+    "id": "ic6-hsab-mercury-magnesium",
+    "type": "multiple-choice",
+    "prompt": "Predict whether K for MgI2 + HgF2 ⇌ MgF2 + HgI2 is much greater than 1 or much less than 1. (Mg^2+ is a hard acid and Hg^2+ a soft acid.)",
+    "choices": [
+      {
+        "text": "K >> 1, because the products pair hard Mg^2+ with hard F^− and soft Hg^2+ with soft I^−",
+        "correct": true
+      },
+      {
+        "text": "K << 1, because MgI2 and HgF2 are the more stable pairs",
+        "why": "MgI2 and HgF2 are hard-soft mismatches, the less stable combinations. The products are matched."
+      },
+      {
+        "text": "K ≈ 1, because both metals are 2+ ions",
+        "why": "Equal charge doesn't make K ≈ 1. The hard-soft mismatch in the reactants drives the reaction forward."
+      },
+      {
+        "text": "K << 1, because F^− is softer than I^−",
+        "why": "F^− is the harder halide (η 7.01 vs 3.70 eV), so it pairs best with the hard Mg^2+."
+      }
+    ],
+    "explanation": "The HSAB principle predicts that hard-hard and soft-soft interactions are more stable than hard-soft ones, so a metathesis equilibrium favors the side with matched pairs. In MgF2 and HgI2, the hard acid Mg^2+ pairs with the hard base F^− and the soft acid Hg^2+ with the soft base I^−, so K >> 1."
+  },
+  {
+    "id": "ic6-borane-toward-ammonia",
+    "type": "multiple-choice",
+    "prompt": "Which of BH3, BMe3, and BF3 is the strongest Lewis acid toward the hard base NH3?",
+    "choices": [
+      {
+        "text": "BF3, the hardest of the three acids",
+        "correct": true
+      },
+      {
+        "text": "BH3, because it is the smallest borane",
+        "why": "BH3 is the softest of the three (H donates electron density to B), so it is strongest toward soft bases such as AsH3, not toward NH3."
+      },
+      {
+        "text": "BMe3, because methyl groups are electron withdrawing",
+        "why": "BMe3 is intermediate in hardness. The electron-withdrawing F atoms make BF3 the hardest acid, best matched to NH3."
+      },
+      {
+        "text": "All three are equally strong toward NH3",
+        "why": "Their hardness differs, so their strength toward a hard base differs."
+      }
+    ],
+    "explanation": "The HSAB principle can predict the relative strengths of a set of Lewis acids toward a given substrate. Of BH3, BMe3, and BF3, the hardest acid, BF3 (with electron-withdrawing F substituents), is strongest toward the hard base NH3, while BH3 is strongest toward the soft base AsH3."
+  },
+  {
+    "id": "ic6-hsab-orbital-explanation",
+    "type": "multiple-choice",
+    "prompt": "What is the frontier orbital explanation of the HSAB principle?",
+    "choices": [
+      {
+        "text": "Hard-hard adducts are held together mainly by electrostatic attraction (large HOMO–LUMO gaps), while soft-soft adducts are held together mainly by covalent bonding (small gaps)",
+        "correct": true
+      },
+      {
+        "text": "Hard-hard adducts are mainly covalent, while soft-soft adducts are mainly electrostatic",
+        "why": "This is reversed. The large energy gap between a hard base's HOMO and a hard acid's LUMO limits covalent mixing, so electrostatics dominate."
+      },
+      {
+        "text": "Hard acids and bases have small HOMO–LUMO gaps",
+        "why": "Hard species have low-energy HOMOs and high-energy LUMOs, giving large gaps. Soft species have small gaps."
+      },
+      {
+        "text": "Hard-soft adducts are the most stable, because they combine both kinds of bonding",
+        "why": "Hard-soft adducts are intermediate and less stable: the hard acid can't stabilize the diffuse soft base electrostatically, and the orbital energies are too mismatched for strong covalency."
+      }
+    ],
+    "explanation": "Hard acids and bases have low-energy HOMOs and high-energy LUMOs, giving large HOMO–LUMO gaps. Soft species have smaller gaps. In hard-hard adducts the gap is so large that the dominant stabilization is electrostatic, between the dense base lone pair and the small, highly charged acid. In soft-soft adducts the small gap allows a well-stabilized covalent bonding orbital."
+  },
+  {
+    "id": "ic6-ec-model-adduct-enthalpy",
+    "type": "numeric",
+    "prompt": "Use the Drago-Wayland EC model, −ΔH = E_A E_B + C_A C_B, to estimate ΔH (kcal/mol) for forming the adduct of B(CH3)3 (E_A = 2.90, C_A = 3.60) with (CH3)3N (E_B = 1.21, C_B = 5.61).",
+    "answer": -23.7,
+    "unit": "kcal/mol",
+    "tolerance": 0.01,
+    "explanation": "−ΔH = (2.90)(1.21) + (3.60)(5.61) = 3.51 + 20.20 = 23.7 kcal/mol, so ΔH = −23.7 kcal/mol. The covalent term dominates, as you'd expect for a base with a large C_B."
+  },
+  {
+    "id": "ic6-ec-model-base-exchange",
+    "type": "numeric",
+    "prompt": "I2 has E_A = 0.5 and C_A = 2. Dimethyl sulfide has E_B = 0.25, C_B = 3.75, and dimethyl sulfoxide has E_B = 2.4, C_B = 1.47. Using −ΔH = E_A E_B + C_A C_B, estimate ΔH (kcal/mol) for I2–OS(CH3)2 + (CH3)2S → I2–S(CH3)2 + (CH3)2SO.",
+    "answer": -3.49,
+    "unit": "kcal/mol",
+    "tolerance": 0.01,
+    "explanation": "−ΔH(I2–SMe2) = (0.5)(0.25) + (2)(3.75) = 7.625 kcal/mol. −ΔH(I2–OSMe2) = (0.5)(2.4) + (2)(1.47) = 4.14 kcal/mol. By Hess's law, ΔH = (−7.625) − (−4.14) = −3.49 kcal/mol. The soft acid I2 prefers the soft sulfur base."
+  },
+  {
+    "id": "ic6-ec-model-percent-electrostatic",
+    "type": "numeric",
+    "prompt": "For the adduct of Al(CH3)3 (E_A = 8.66, C_A = 3.68) with NH3 (E_B = 2.31, C_B = 2.04), what percentage of the EC-model interaction energy, −ΔH = E_A E_B + C_A C_B, comes from the electrostatic term E_A E_B?",
+    "answer": 72.7,
+    "unit": "%",
+    "tolerance": 0.01,
+    "explanation": "E_A E_B = (8.66)(2.31) = 20.00 kcal/mol; C_A C_B = (3.68)(2.04) = 7.51 kcal/mol; total = 27.51 kcal/mol. Electrostatic share = 20.00/27.51 × 100% = 72.7%."
+  },
+  {
+    "id": "ic6-ecw-model-enthalpy",
+    "type": "numeric",
+    "prompt": "In the ECW model, −ΔH = E_A E_B + C_A C_B + W. For (CF3)3COH (E_A = 3.06, C_A = 1.88, W = −0.87 kcal/mol) with (CH3)3N (E_B = 1.21, C_B = 5.61, no W term for the base), estimate ΔH (kcal/mol) for adduct formation.",
+    "answer": -13.4,
+    "unit": "kcal/mol",
+    "tolerance": 0.01,
+    "explanation": "−ΔH = (3.06)(1.21) + (1.88)(5.61) + (−0.87) = 3.70 + 10.55 − 0.87 = 13.38 kcal/mol, so ΔH = −13.4 kcal/mol."
+  },
+  {
+    "id": "ic6-ec-group15-hardness",
+    "type": "multiple-choice",
+    "prompt": "On going from (CH3)3N to (CH3)3P, C_B rises only from 5.61 to 5.81, while E_B falls from 1.21 to 0.25. What does this suggest about the decrease in base hardness down group 15?",
+    "choices": [
+      {
+        "text": "It is mainly due to a loss of electrostatic interaction ability, not a gain in covalent ability",
+        "correct": true
+      },
+      {
+        "text": "It is mainly due to a large increase in covalent interaction ability",
+        "why": "C_B barely changes (5.61 to 5.81). The big change is in E_B, which drops to 20% of the Me3N value."
+      },
+      {
+        "text": "Electrostatic and covalent factors change by about the same amount",
+        "why": "E_B falls by about 80% while C_B changes by less than 4%, so electrostatic factors dominate."
+      },
+      {
+        "text": "The bases become harder down the group",
+        "why": "Phosphines are softer than amines. The EC parameters show this comes mainly from a drop in E_B."
+      }
+    ],
+    "explanation": "EC parameters show that some hardness trends reflect changes in electrostatic ability and others changes in covalent ability. For the dimethylchalcogenides, C_B rises and E_B falls down group 16, so both factors are involved. For amines and phosphines, E_B falls to 20% of the Me3N value while C_B barely changes, so electrostatic factors are mainly responsible for the decrease in hardness down group 15."
+  },
+  {
+    "id": "ic6-ecw-extension-purpose",
+    "type": "multiple-choice",
+    "prompt": "Forming the Lewis acid AlCl3 requires first cleaving the dimer, Al2Cl6 → 2AlCl3. Which extension of the EC model adds a term for constant energy contributions like this?",
+    "choices": [
+      {
+        "text": "The ECW model, which adds a constant W term",
+        "correct": true
+      },
+      {
+        "text": "The ECT model, which adds an R_A T_B term",
+        "why": "The R_A T_B term in the ECT model accounts for charge transfer from base to acid on adduct formation, not for constant terms such as dimer cleavage."
+      },
+      {
+        "text": "The Hancock-Martell extension, which subtracts a D_A D_B term",
+        "why": "The D term accounts for extra steric strain on adduct formation. Constant energy terms are handled by W."
+      },
+      {
+        "text": "The simple EC model already includes it in E_A",
+        "why": "The simple EC model only has electrostatic and covalent terms. It ignores steric, lattice, and constant contributions."
+      }
+    ],
+    "explanation": "The simple EC model only includes electrostatic and covalent terms. Extensions add a steric D term (Hancock and Martell: −ΔH = E_A E_B + C_A C_B − D_A D_B), a charge transfer term (ECT: + R_A T_B), and a constant term W = W_A + W_B (ECW: −ΔH = E_A E_B + C_A C_B + W) for contributions such as cleaving a dimer to form the Lewis acid."
+  },
+  {
+    "id": "ic6-ec-deviation-meaning",
+    "type": "multiple-choice",
+    "prompt": "An adduct's measured enthalpy of formation is noticeably less exothermic than the simple EC model predicts. What does this deviation suggest?",
+    "choices": [
+      {
+        "text": "Steric strain in the adduct, which the simple EC model doesn't include",
+        "correct": true
+      },
+      {
+        "text": "π-backbonding in the adduct",
+        "why": "π-backbonding would make adduct formation more exothermic than predicted, not less."
+      },
+      {
+        "text": "That the E and C parameters are always wrong for adducts",
+        "why": "Deviations aren't random errors. Because EC parameters assume σ bonding only, deviations point to other contributions such as sterics or π-backbonding."
+      },
+      {
+        "text": "Unusually strong covalent bonding",
+        "why": "The EC model already includes covalent bonding through C_A C_B. A less exothermic result points to a destabilizing factor like steric strain."
+      }
+    ],
+    "explanation": "EC parameters assume σ bonding, so deviations between calculated and experimental enthalpies can be attributed to other contributions. Strained adducts show a less exothermic heat of formation than expected, and the difference estimates the steric strain energy. Adducts with π-backbonding show a more exothermic heat than expected."
+  },
+  {
+    "id": "ic6-pearson-softness-toxicity",
+    "type": "multiple-choice",
+    "prompt": "Pearson proposed log K = S_A S_B + σ_A σ_B for adduct formation. What have the related Pearson and Mawby softness parameters most often been used for?",
+    "choices": [
+      {
+        "text": "Predicting metal ion toxicity, which can depend on how strongly a metal binds soft bases in living systems",
+        "correct": true
+      },
+      {
+        "text": "Calculating pH values in aqueous solution",
+        "why": "Softness parameters relate to Lewis acid-base binding, not pH."
+      },
+      {
+        "text": "Replacing the EC model as the most widely accepted method for adduct enthalpies",
+        "why": "The Pearson approach hasn't found as wide acceptance as the Drago-Wayland and absolute hardness parameters."
+      },
+      {
+        "text": "Measuring Hammett acidities of superacids",
+        "why": "Hammett acidity is a Brønsted measure. Softness parameters have mainly been used to predict metal toxicity."
+      }
+    ],
+    "explanation": "Pearson's softness-based log K equation hasn't been widely adopted for studying reactivity. But because the toxicity of metal ions sometimes depends on their tendency to bind soft Lewis bases in living systems, the softness parameters of Pearson and Mawby, based on the relative energies of metal–fluorine and metal–iodine bonds, have been widely used to predict metal ion toxicity."
+  }
+]

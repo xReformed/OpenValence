@@ -1,0 +1,575 @@
+[
+  {
+    "id": "ic2-wave-mechanics-dual-nature",
+    "type": "multiple-choice",
+    "prompt": "What was the major change in thinking that Schrödinger and Heisenberg introduced in 1925–1927?",
+    "choices": [
+      {
+        "text": "They treated electrons as having a dual nature, with properties of both waves and particles",
+        "correct": true
+      },
+      {
+        "text": "They showed that electrons travel in fixed circular orbits",
+        "why": "Circular orbits were Bohr's assumption. Wave mechanics replaced that picture by giving electrons wave properties."
+      },
+      {
+        "text": "They discovered that atoms have a nucleus",
+        "why": "The nucleus came from Rutherford's gold foil experiments. Schrödinger and Heisenberg attributed wave properties to electrons."
+      },
+      {
+        "text": "They proved that electrons have no mass",
+        "why": "Electrons do have mass, and the Schrödinger equation includes it. The new idea was that electrons also behave as waves."
+      }
+    ],
+    "explanation": "Considering the failures of the Bohr model, Schrödinger and Heisenberg attributed wave properties to electrons, treating them as having a \"dual\" nature: properties of both waves and particles. Both received Nobel prizes for this wave mechanics, or \"new quantum mechanics\"."
+  },
+  {
+    "id": "ic2-hamiltonian-parts",
+    "type": "multiple-choice",
+    "prompt": "In the Schrödinger equation, Ĥψ = Eψ, what does the Hamiltonian operator Ĥ correspond to?",
+    "choices": [
+      {
+        "text": "The sum of the kinetic and potential energies of the particles in the system",
+        "correct": true
+      },
+      {
+        "text": "The probability of finding the electron at a point",
+        "why": "Probability comes from the square of the wavefunction, ψ^2. The Hamiltonian sums the kinetic and potential energies."
+      },
+      {
+        "text": "The electron's position, exactly",
+        "why": "The Hamiltonian is an operator for energy, kinetic plus potential. An exact position would violate the Heisenberg uncertainty principle."
+      },
+      {
+        "text": "The kinetic energy alone",
+        "why": "Its first part is the kinetic energy, but its second part, −Ze^2/(4πε0 r), is the potential energy."
+      }
+    ],
+    "explanation": "The Hamiltonian is like a set of instructions for what to do with the function after it. It corresponds to the sum of the kinetic energies and potential energies of the particles in the system: here, one electron and its nucleus."
+  },
+  {
+    "id": "ic2-potential-energy-distance",
+    "type": "multiple-choice",
+    "prompt": "How does the potential energy of an electron change as it moves farther from the nucleus?",
+    "choices": [
+      {
+        "text": "It stays negative but gets smaller in magnitude, reaching zero at infinite distance",
+        "correct": true
+      },
+      {
+        "text": "It becomes a larger negative number",
+        "why": "The potential energy is most negative close to the nucleus, where the attraction is strongest. Farther away, it is smaller in magnitude."
+      },
+      {
+        "text": "It becomes positive once the electron leaves the nucleus",
+        "why": "The attraction between opposite charges gives a negative potential energy at every finite distance, approaching zero only at r = ∞."
+      },
+      {
+        "text": "It stays the same at every distance",
+        "why": "The potential energy depends on r, the distance from the nucleus: −Ze^2/(4πε0 r)."
+      }
+    ],
+    "explanation": "Like the attraction between opposite charges in Coulomb's law, the potential energy is negative. Close to the nucleus it is a large negative number (strong attraction); farther away it is still negative but smaller; at r = ∞ the attraction and the potential energy are zero."
+  },
+  {
+    "id": "ic2-psi-squared-meaning",
+    "type": "multiple-choice",
+    "prompt": "What has a physical meaning: the wavefunction ψ or its square, ψ^2?",
+    "choices": [
+      {
+        "text": "ψ^2, which gives the probability of finding the electron at a point in space",
+        "correct": true
+      },
+      {
+        "text": "ψ, which gives the electron's exact position",
+        "why": "ψ itself has no actual physical meaning, and an exact position would violate the uncertainty principle. Its square gives a probability."
+      },
+      {
+        "text": "ψ, which gives the electron's energy",
+        "why": "The energy E comes from solving Ĥψ = Eψ. It's the square of ψ that describes where the electron is likely to be."
+      },
+      {
+        "text": "Neither: both are purely mathematical",
+        "why": "ψ alone has no physical meaning, but ψ^2 is the probability of finding the electron, which describes an orbital's shape and size."
+      }
+    ],
+    "explanation": "The wavefunction describes the electron's wave properties but has no physical meaning on its own. Its square, ψ^2 (or ψψ*), is the probability of finding the electron somewhere in space, and so describes the shape and size of an orbital."
+  },
+  {
+    "id": "ic2-normalized",
+    "type": "multiple-choice",
+    "prompt": "A physically meaningful wavefunction must be normalized. What does that mean?",
+    "choices": [
+      {
+        "text": "The total probability of finding the electron somewhere in all of space is 1",
+        "correct": true
+      },
+      {
+        "text": "The wavefunction equals 1 everywhere",
+        "why": "The wavefunction varies from place to place. Normalization is about its square adding up to 1 over all of space."
+      },
+      {
+        "text": "Any two orbitals in an atom don't overlap",
+        "why": "That is orthogonality, a separate requirement."
+      },
+      {
+        "text": "The wavefunction is zero at the nucleus",
+        "why": "Normalization is about the total probability: the electron must be somewhere, so it adds up to 1."
+      }
+    ],
+    "explanation": "A normalized wavefunction gives a total probability of 1 for finding the electron in all of space: ∫ψψ*dτ = 1. In the particle-in-a-box model, this requirement gives A = √(2/a)."
+  },
+  {
+    "id": "ic2-box-potential",
+    "type": "multiple-choice",
+    "prompt": "In the particle-in-a-box model, what is the particle's potential energy inside and outside the box?",
+    "choices": [
+      {
+        "text": "Zero inside the box, infinite outside",
+        "correct": true
+      },
+      {
+        "text": "Infinite inside the box, zero outside",
+        "why": "This is reversed. The particle can exist only inside, where V = 0; outside, V = ∞, so it never goes there."
+      },
+      {
+        "text": "Zero both inside and outside",
+        "why": "Then nothing would trap the particle. The infinite potential energy outside the walls keeps it in the box."
+      },
+      {
+        "text": "−Ze^2/(4πε0 r) inside, as in an atom",
+        "why": "No forces act on the particle inside the box, so V = 0 there; that's why the potential energy term drops out of the equation."
+      }
+    ],
+    "explanation": "No forces act on the particle inside the box, so its potential energy there is zero (V = 0). Outside the walls the potential energy is infinite (V = ∞), so it is infinitely unfavorable for the particle-wave to be outside, and it never is."
+  },
+  {
+    "id": "ic2-box-energy-ratio",
+    "type": "numeric",
+    "prompt": "The energy of a particle in a one-dimensional box is E = n^2h^2/(8ma^2). How many times greater is the energy of the n = 3 level than the n = 1 level?",
+    "answer": 9,
+    "tolerance": 0.01,
+    "explanation": "Energy is proportional to n^2, and everything else is the same, so E3/E1 = 3^2/1^2 = 9."
+  },
+  {
+    "id": "ic2-box-length-doubled",
+    "type": "numeric",
+    "prompt": "Using E = n^2h^2/(8ma^2), by what factor does the energy of the n = 1 level change if the box is made twice as long? (Give the factor as a number, for example 0.5 for half.)",
+    "answer": 0.25,
+    "tolerance": 0.01,
+    "explanation": "Energy is proportional to 1/a^2. Doubling a multiplies the energy by 1/2^2 = 1/4 = 0.25: a longer box gives lower energy levels."
+  },
+  {
+    "id": "ic2-box-nodes",
+    "type": "numeric",
+    "prompt": "For a particle in a one-dimensional box, how many nodes does the wavefunction have for n = 6?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "The number of nodes is n − 1, so n = 6 has 5 nodes. The points where ψ = 0 at the walls don't count: they aren't places where ψ changes sign."
+  },
+  {
+    "id": "ic2-box-walls-not-nodes",
+    "type": "multiple-choice",
+    "prompt": "For n = 1, the particle-in-a-box wavefunction is zero at both walls. Why aren't those points nodes?",
+    "choices": [
+      {
+        "text": "A node is where ψ changes sign, and ψ doesn't change sign at the walls",
+        "correct": true
+      },
+      {
+        "text": "They are nodes: n = 1 has two nodes",
+        "why": "n = 1 has zero nodes (nodes = n − 1). ψ is zero at the walls, but it doesn't cross zero and change sign there."
+      },
+      {
+        "text": "The particle has its highest probability at the walls",
+        "why": "The probability is zero at the walls. They aren't nodes because ψ doesn't change sign there."
+      },
+      {
+        "text": "Nodes only occur in three dimensions",
+        "why": "Nodes occur in the one-dimensional box too: n = 2 has one, and n = 3 has two."
+      }
+    ],
+    "explanation": "A node is where ψ changes sign (and ψ = ψ^2 = 0). The wavefunction is zero at the walls, but they are boundaries, analogous to the nucleus and the boundary surface of an orbital, not nodes. So n = 1 has zero nodes, n = 2 one, and n = 3 two."
+  },
+  {
+    "id": "ic2-invalid-quantum-numbers",
+    "type": "multiple-choice",
+    "prompt": "Which set of quantum numbers (n, l, ml) is not allowed?",
+    "choices": [
+      {
+        "text": "n = 2, l = 2, ml = 0",
+        "correct": true
+      },
+      {
+        "text": "n = 3, l = 2, ml = −2",
+        "why": "This is allowed: l can be 0 to n − 1 (here up to 2), and ml can be any integer from +l to −l."
+      },
+      {
+        "text": "n = 2, l = 1, ml = +1",
+        "why": "This is allowed: a 2p orbital, with ml one of −1, 0, +1."
+      },
+      {
+        "text": "n = 1, l = 0, ml = 0",
+        "why": "This is allowed: the 1s orbital."
+      }
+    ],
+    "explanation": "l can take integer values from 0 to n − 1, so for n = 2 the largest allowed l is 1. A set with n = 2 and l = 2 is impossible: there is no 2d subshell."
+  },
+  {
+    "id": "ic2-f-subshell-orbitals",
+    "type": "numeric",
+    "prompt": "How many orbitals are in an f subshell (l = 3)?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "ml can be any integer from +l to −l. For l = 3 that is +3, +2, +1, 0, −1, −2, −3: seven values, so seven orbitals."
+  },
+  {
+    "id": "ic2-hydrogenic-ionization",
+    "type": "numeric",
+    "prompt": "For a hydrogenic (one-electron) atom or ion, En = −(13.607 eV)(Z/n)^2. What is the ionization energy, in eV, of the ground-state electron in Li^2+?",
+    "answer": 122.5,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "Lithium has Z = 3, and the ground state is n = 1: E1 = −13.607 eV × (3/1)^2 = −122.5 eV. Removing the electron takes +122.5 eV, nine times hydrogen's 13.6 eV."
+  },
+  {
+    "id": "ic2-hydrogenic-species",
+    "type": "multiple-choice",
+    "prompt": "Which of these is a hydrogenic species?",
+    "choices": [
+      {
+        "text": "Li^2+",
+        "correct": true
+      },
+      {
+        "text": "He",
+        "why": "Neutral helium has two electrons. A hydrogenic species has exactly one."
+      },
+      {
+        "text": "H^−",
+        "why": "H^− has two electrons. A hydrogenic species has exactly one."
+      },
+      {
+        "text": "Li^+",
+        "why": "Li^+ has two electrons (lithium's three minus one). A hydrogenic species has exactly one."
+      }
+    ],
+    "explanation": "Hydrogenic atoms are atoms or ions with only one electron, like H, He^+, and Li^2+. Lithium has three electrons, so Li^2+ has one."
+  },
+  {
+    "id": "ic2-s-orbital-radial-maximum",
+    "type": "multiple-choice",
+    "prompt": "What is unique about the radial wavefunction R(r) of s orbitals?",
+    "choices": [
+      {
+        "text": "It reaches a maximum at r = 0, at the nucleus",
+        "correct": true
+      },
+      {
+        "text": "It is zero at the nucleus",
+        "why": "That describes p and d orbitals, whose R(r) approaches zero as r approaches zero. s orbitals are the exception."
+      },
+      {
+        "text": "It has no radial nodes, for every s orbital",
+        "why": "Only 1s has no radial nodes; 2s has one and 3s two (n − l − 1)."
+      },
+      {
+        "text": "It never approaches zero, even far from the nucleus",
+        "why": "Every orbital's wavefunction approaches zero far from the nucleus. What's unique to s orbitals is the maximum at r = 0."
+      }
+    ],
+    "explanation": "The radial wavefunction of every s orbital reaches a maximum at r = 0, which is unique to the s orbitals. For p and d orbitals R(r) approaches zero as r approaches zero, which affects how closely their electrons can approach the nucleus."
+  },
+  {
+    "id": "ic2-bohr-radius",
+    "type": "multiple-choice",
+    "prompt": "For an electron in hydrogen's 1s orbital, where is the most probable distance from the nucleus?",
+    "choices": [
+      {
+        "text": "At the Bohr radius, a0 = 52.9 pm",
+        "correct": true
+      },
+      {
+        "text": "At the nucleus, r = 0",
+        "why": "The 1s radial wavefunction is largest at r = 0, but the radial probability function, 4πr^2R^2, is zero there and peaks at a0."
+      },
+      {
+        "text": "At infinite distance",
+        "why": "The probability approaches zero far from the nucleus. It peaks at the Bohr radius."
+      },
+      {
+        "text": "At twice the Bohr radius",
+        "why": "The radial probability function for 1s has its maximum at r = 1a0 = 52.9 pm."
+      }
+    ],
+    "explanation": "The maximum of the radial probability function gives the most probable distance. For hydrogen's 1s electron it is at r = 1a0, the Bohr radius: 52.9 pm, or 0.529 Å."
+  },
+  {
+    "id": "ic2-radial-nodes-5p",
+    "type": "numeric",
+    "prompt": "How many radial nodes does a 5p orbital have?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The number of radial nodes is n − l − 1. For 5p, n = 5 and l = 1: 5 − 1 − 1 = 3."
+  },
+  {
+    "id": "ic2-orbital-from-nodes",
+    "type": "multiple-choice",
+    "prompt": "An orbital has 2 radial nodes and 1 angular node. Which orbital is it?",
+    "choices": [
+      {
+        "text": "4p",
+        "correct": true
+      },
+      {
+        "text": "3p",
+        "why": "3p has 1 angular node, but only 3 − 1 − 1 = 1 radial node."
+      },
+      {
+        "text": "3d",
+        "why": "3d has 2 angular nodes (l = 2) and 3 − 2 − 1 = 0 radial nodes."
+      },
+      {
+        "text": "4s",
+        "why": "4s has 0 angular nodes (l = 0) and 4 − 0 − 1 = 3 radial nodes."
+      }
+    ],
+    "explanation": "The number of angular nodes equals l, so 1 angular node means a p orbital (l = 1). Radial nodes are n − l − 1, so 2 = n − 1 − 1 gives n = 4: a 4p orbital."
+  },
+  {
+    "id": "ic2-node-vs-boundary",
+    "type": "multiple-choice",
+    "prompt": "Far from the nucleus, the probability of finding an electron falls off rapidly. Why is this a boundary surface rather than a node?",
+    "choices": [
+      {
+        "text": "The probability approaches zero but is never exactly zero, while at a node it is exactly zero",
+        "correct": true
+      },
+      {
+        "text": "A boundary surface is where ψ changes sign",
+        "why": "A sign change marks a node, where ψ = ψ^2 = 0. At a boundary surface the probability only approaches zero."
+      },
+      {
+        "text": "There is no difference: the two terms mean the same thing",
+        "why": "At a node the probability is exactly zero. Far from the nucleus it is improbable, but not impossible, to find the electron."
+      },
+      {
+        "text": "The electron can never be found beyond the boundary surface",
+        "why": "It's unlikely, but not impossible: the probability never reaches exactly zero."
+      }
+    ],
+    "explanation": "A true node occurs where ψ = ψ^2 = 0. Far from the nucleus the probability rapidly approaches zero but is never exactly zero, so finding the electron there is improbable but not impossible. That rapid fall creates a boundary surface, the region where the electron is most of the time."
+  },
+  {
+    "id": "ic2-aufbau-order",
+    "type": "multiple-choice",
+    "prompt": "In the usual order of filling ground-state orbitals, which comes right after 3p?",
+    "choices": [
+      {
+        "text": "4s",
+        "correct": true
+      },
+      {
+        "text": "3d",
+        "why": "3d fills after 4s: the order is 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p."
+      },
+      {
+        "text": "4p",
+        "why": "4p comes after both 4s and 3d."
+      },
+      {
+        "text": "3f",
+        "why": "There is no 3f subshell: for n = 3, l can only be 0, 1, or 2."
+      }
+    ],
+    "explanation": "The order of filling ground-state orbitals is 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, and so on. Elements that break the expected configurations are all in the d and f blocks."
+  },
+  {
+    "id": "ic2-pauli-exclusion",
+    "type": "multiple-choice",
+    "prompt": "Two electrons occupy the same orbital. What does the Pauli exclusion principle require of them?",
+    "choices": [
+      {
+        "text": "Opposite spins: one ms = +1/2, the other ms = −1/2",
+        "correct": true
+      },
+      {
+        "text": "The same spin",
+        "why": "Two electrons in one orbital already share n, l, and ml, so their ms values must differ."
+      },
+      {
+        "text": "Different values of n",
+        "why": "Electrons in the same orbital have the same n, l, and ml. Only ms can differ."
+      },
+      {
+        "text": "Nothing: any two electrons can share all four quantum numbers",
+        "why": "No two electrons in an atom can have the same set of all four quantum numbers."
+      }
+    ],
+    "explanation": "No two electrons in an atom can have the same set of four quantum numbers. Electrons in the same orbital share n, l, and ml, so they must have opposite spins, +1/2 and −1/2."
+  },
+  {
+    "id": "ic2-hund-multiplicity",
+    "type": "numeric",
+    "prompt": "Multiplicity is the number of unpaired electrons plus 1. What is the multiplicity of the ground state of three electrons in a set of three degenerate p orbitals, following Hund's rule?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Hund's rule puts the electrons in separate orbitals before pairing them, so all three are unpaired. Multiplicity = 3 + 1 = 4."
+  },
+  {
+    "id": "ic2-exchange-interaction",
+    "type": "multiple-choice",
+    "prompt": "In a ground-state configuration, what does the exchange interaction require of the unpaired electrons?",
+    "choices": [
+      {
+        "text": "They all have the same spin, conventionally written spin up",
+        "correct": true
+      },
+      {
+        "text": "They alternate between spin up and spin down",
+        "why": "The exchange interaction gives unpaired electrons identical spins."
+      },
+      {
+        "text": "They pair up in the same orbital",
+        "why": "Hund's rule keeps them unpaired; the exchange interaction makes their spins the same."
+      },
+      {
+        "text": "They occupy orbitals of different energies",
+        "why": "The exchange interaction is about spin: unpaired electrons all have the same spin."
+      }
+    ],
+    "explanation": "The exchange interaction, a quantum mechanical effect between identical particles rather than a true energy or force, results in ground-state configurations whose unpaired electrons all have the same spin. By convention they are written spin up."
+  },
+  {
+    "id": "ic2-shielding-hydrogen",
+    "type": "multiple-choice",
+    "prompt": "In which atom does no shielding occur?",
+    "choices": [
+      {
+        "text": "Hydrogen",
+        "correct": true
+      },
+      {
+        "text": "Helium",
+        "why": "Helium has two electrons, and each partly shields the other. Shielding is absent only with a single electron."
+      },
+      {
+        "text": "The noble gases",
+        "why": "Noble gases have many electrons, so shielding occurs. Only hydrogen, with one electron, has none."
+      },
+      {
+        "text": "Lithium",
+        "why": "Lithium's 1s electrons shield its 2s electron: the 2s electron feels a Z* of only +1.28."
+      }
+    ],
+    "explanation": "Shielding is the reduction of the nuclear charge Z to the effective nuclear charge Z* by other electrons. It occurs in every atom or ion with more than one electron; hydrogen is the only atom without it."
+  },
+  {
+    "id": "ic2-lithium-zstar",
+    "type": "multiple-choice",
+    "prompt": "Lithium's nucleus has a charge of +3. Which statement about the effective nuclear charge (Z*) its electrons feel is correct?",
+    "choices": [
+      {
+        "text": "The 1s electrons feel close to +3 (about +2.69); the 2s electron feels much less (about +1.28)",
+        "correct": true
+      },
+      {
+        "text": "All three electrons feel the full +3",
+        "why": "None of the three feels the full +3: each is shielded to some extent by the others."
+      },
+      {
+        "text": "The 2s electron feels more than the 1s electrons, because it is farther away",
+        "why": "The reverse: the 1s core electrons shield the 2s electron, so it feels a much smaller Z*."
+      },
+      {
+        "text": "Each electron feels exactly +1, one proton's worth",
+        "why": "Shielding doesn't cancel one unit of charge per electron. The 1s electrons feel +2.69 and the 2s electron +1.28."
+      }
+    ],
+    "explanation": "In lithium, the 1s electrons experience Z* = +2.69 and the 2s electron Z* = +1.28. In general core electrons feel a Z* close to, but less than, Z, while valence electrons feel a Z* much less than Z."
+  },
+  {
+    "id": "ic2-penetration-2s-2p",
+    "type": "multiple-choice",
+    "prompt": "In the first two rows of the periodic table, why is a 2s orbital lower in energy than a 2p orbital?",
+    "choices": [
+      {
+        "text": "2s penetrates closer to the nucleus, through its small inner lobe, so it feels a larger Z*",
+        "correct": true
+      },
+      {
+        "text": "2s is closer to the nucleus on average",
+        "why": "On average 2p is slightly closer. 2s is lower in energy because it penetrates more, getting inside the 1s orbital."
+      },
+      {
+        "text": "2s has more nodes than 2p",
+        "why": "2s and 2p each have one node. The difference comes from penetration and the Z* it brings."
+      },
+      {
+        "text": "2s and 2p are always equal in energy",
+        "why": "They are equal (degenerate) only in hydrogen, which has no shielding. With more electrons, penetration splits them."
+      }
+    ],
+    "explanation": "The 2s orbital penetrates inside the 1s orbital because of its central lobe, while 2p can't approach the nucleus as closely. An electron in that inner lobe feels a relatively large Z*, so in the first two rows penetration makes 2s lower in energy than 2p, even though 2p is slightly closer on average."
+  },
+  {
+    "id": "ic2-slater-oxygen",
+    "type": "numeric",
+    "prompt": "Use Slater's rules to estimate Z* for a 2p electron in an oxygen atom (Z = 8, configuration 1s^2 2s^2 2p^4).",
+    "answer": 4.55,
+    "tolerance": 0.01,
+    "explanation": "Group the orbitals: (1s)(2s,2p). The other 5 electrons in (2s,2p) contribute 0.35 each, and the 2 electrons in the next lower shell contribute 0.85 each: S = 5(0.35) + 2(0.85) = 1.75 + 1.70 = 3.45. So Z* = 8 − 3.45 = 4.55."
+  },
+  {
+    "id": "ic2-slater-potassium",
+    "type": "numeric",
+    "prompt": "Use Slater's rules to estimate Z* for the 4s electron in a potassium atom (Z = 19, configuration 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1).",
+    "answer": 2.2,
+    "tolerance": 0.01,
+    "explanation": "The 4s electron has no other electrons in its group. The 8 electrons in the next lower shell (3s, 3p) contribute 0.85 each, and the 10 in shells 1 and 2 contribute 1.00 each: S = 8(0.85) + 10(1.00) = 16.8. So Z* = 19 − 16.8 = 2.2."
+  },
+  {
+    "id": "ic2-zstar-new-period",
+    "type": "multiple-choice",
+    "prompt": "Going from neon (Z = 10) to sodium (Z = 11), how does the valence Z* change, and why?",
+    "choices": [
+      {
+        "text": "It drops sharply, because sodium's valence electron is in a new, farther shell, shielded by all the electrons below it",
+        "correct": true
+      },
+      {
+        "text": "It rises, because sodium has one more proton",
+        "why": "Z rises by one, but the valence electron moves to a new shell, farther out and shielded by all ten inner electrons, so Z* drops sharply."
+      },
+      {
+        "text": "It stays the same, because the extra proton and electron cancel",
+        "why": "Each electron shields less than a full unit of charge, and the new shell changes everything: Z* drops sharply."
+      }
+    ],
+    "explanation": "Going from one period to the next, Z rises by one but the shell number also rises, so the valence electrons are much farther from the nucleus and more shielded by all the electrons in lower shells. The result is a relatively large decrease in Z*, as from Ne to Na."
+  },
+  {
+    "id": "ic2-hydrogen-degenerate",
+    "type": "multiple-choice",
+    "prompt": "Why are the 2s and 2p subshells exactly equal in energy (degenerate) in a hydrogen atom?",
+    "choices": [
+      {
+        "text": "Hydrogen has only one electron, so there is no shielding, and penetration doesn't matter",
+        "correct": true
+      },
+      {
+        "text": "The 2s and 2p orbitals have the same shape",
+        "why": "Their shapes differ: s orbitals have no angular nodes and p orbitals have one. The reason is that hydrogen has no other electrons to shield it."
+      },
+      {
+        "text": "Hydrogen's nucleus has no charge",
+        "why": "Hydrogen's nucleus has a charge of +1. With only one electron, though, there's no shielding to split the subshells."
+      },
+      {
+        "text": "2s and 2p are degenerate in every atom",
+        "why": "In multi-electron atoms, penetration and shielding split them; in the first two rows 2s is lower than 2p."
+      }
+    ],
+    "explanation": "The hydrogen atom has only one electron, so there is no shielding to consider. Without other electrons, penetration and shielding are irrelevant, and the subshells within a shell are degenerate."
+  }
+]

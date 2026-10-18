@@ -1,0 +1,491 @@
+[
+  {
+    "id": "ic5-salc-definition",
+    "type": "multiple-choice",
+    "prompt": "What are SALCs (symmetry adapted linear combinations) in a polyatomic MO diagram?",
+    "choices": [
+      {
+        "text": "Group orbitals made from pendant atoms' orbitals, matching the symmetry of the central atom's orbitals",
+        "correct": true
+      },
+      {
+        "text": "The central atom's own atomic orbitals",
+        "why": "SALCs are built from orbitals on the pendant atoms, grouped to match the central atom's symmetry."
+      },
+      {
+        "text": "The final molecular orbitals of the molecule",
+        "why": "SALCs are combined with the central atom's orbitals to make the molecular orbitals; they aren't the MOs themselves."
+      },
+      {
+        "text": "Hybrid orbitals on the central atom",
+        "why": "SALCs are groups of pendant-atom orbitals, not hybrids on the central atom."
+      }
+    ],
+    "explanation": "SALCs, also called group orbitals, are groups of orbitals on the pendant atoms that match the symmetry of valence orbitals on the central atom. Combining SALCs with central-atom orbitals gives the molecule's MO diagram."
+  },
+  {
+    "id": "ic5-salc-count-bf3",
+    "type": "numeric",
+    "prompt": "Each of BF3's three fluorine atoms has four valence orbitals (2s, 2px, 2py, 2pz). How many SALCs should you expect?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "There is one SALC for each pendant-atom orbital: 3 atoms × 4 orbitals = 12 SALCs, in four sets of three (2s, 2px, 2py, 2pz)."
+  },
+  {
+    "id": "ic5-d2h-substitute",
+    "type": "multiple-choice",
+    "prompt": "For linear molecules in D∞h, why is it acceptable to use the D2h character table instead?",
+    "choices": [
+      {
+        "text": "The orbitals themselves don't keep the C∞ axis (a px orbital has only a C2), so D2h keeps the symmetry that matters",
+        "correct": true
+      },
+      {
+        "text": "D∞h molecules aren't really linear",
+        "why": "They are linear. The point is that orbitals like px don't share the C∞ symmetry, so the simpler D2h captures what's needed."
+      },
+      {
+        "text": "D2h has more operations, so it's more accurate",
+        "why": "D2h has far fewer operations than D∞h. It's used because it keeps the critical symmetry of the orbitals."
+      },
+      {
+        "text": "Character tables don't exist for D∞h",
+        "why": "D∞h has a character table, but it's unwieldy; D2h keeps the orbital symmetries and is simpler."
+      }
+    ],
+    "explanation": "When we focus on orbitals, their symmetry is what matters. In D∞h or C∞v the molecule has a C∞ axis, but a px orbital doesn't: it has only a C2. It is sufficient and useful to substitute D2h for D∞h and C2v for C∞v."
+  },
+  {
+    "id": "ic5-fhf-compatible-salcs",
+    "type": "multiple-choice",
+    "prompt": "In [F–H–F]^−, why can't the SALCs made from fluorine 2px and 2py orbitals bond with the hydrogen 1s orbital?",
+    "choices": [
+      {
+        "text": "Their nodes run through the center of the H 1s orbital, so their symmetry doesn't match",
+        "correct": true
+      },
+      {
+        "text": "They are too far away in energy",
+        "why": "The issue is symmetry: the px and py nodes pass right through hydrogen, so overlap cancels."
+      },
+      {
+        "text": "They hold no electrons",
+        "why": "Fluorine's 2p orbitals hold electrons. They can't bond with H 1s because of their symmetry."
+      },
+      {
+        "text": "They're used to bond the two fluorines directly",
+        "why": "The px and py SALCs end up as nonbonding orbitals, because their symmetry doesn't match H 1s."
+      }
+    ],
+    "explanation": "The F 2px and 2py orbitals have nodes that run through the center of the H 1s orbital, so all SALCs built from them are eliminated. Only the fully symmetric SALCs from F 2s and F 2pz (SALCs 1 and 7) can combine with H 1s."
+  },
+  {
+    "id": "ic5-fhf-2s-weak",
+    "type": "multiple-choice",
+    "prompt": "In [F–H–F]^−, the F 2s SALC has the right symmetry to combine with H 1s. Why does it interact only weakly?",
+    "choices": [
+      {
+        "text": "F 2s (−46.37 eV) is much lower in energy than H 1s (−13.6 eV)",
+        "correct": true
+      },
+      {
+        "text": "Its symmetry doesn't actually match",
+        "why": "SALC-1, from F 2s, does have compatible symmetry. The energy gap makes the interaction weak."
+      },
+      {
+        "text": "It is too close in energy",
+        "why": "The opposite: it's far too low. F 2pz (−18.7 eV) is the good match for H 1s."
+      }
+    ],
+    "explanation": "The F 2pz orbital (−18.7 eV) is a good energy match for H 1s (−13.6 eV), but the F 2s orbital, at −46.37 eV, is far lower and interacts only weakly. Its SALC is mostly nonbonding."
+  },
+  {
+    "id": "ic5-delocalized-lone-pairs",
+    "type": "multiple-choice",
+    "prompt": "How does the MO description of bifluoride's lone pairs differ from the Lewis description?",
+    "choices": [
+      {
+        "text": "In MO theory each lone pair is spread over both fluorine atoms; in Lewis theory each sits on one atom",
+        "correct": true
+      },
+      {
+        "text": "MO theory has no lone pairs at all",
+        "why": "MO theory has nonbonding electron pairs too. The difference is that they're delocalized over both F atoms."
+      },
+      {
+        "text": "Both theories place each lone pair on one fluorine",
+        "why": "In the MO description each lone pair is distributed over both fluorine atoms at once."
+      },
+      {
+        "text": "MO theory puts the lone pairs on hydrogen",
+        "why": "The nonbonding pairs are on the fluorines, but each spread over both of them."
+      }
+    ],
+    "explanation": "In Lewis theory the lone pairs are localized on individual fluorine atoms, while in the MO description each lone pair is distributed over both fluorine atoms at once. CO2's nonbonding pairs are delocalized over both oxygens in the same way."
+  },
+  {
+    "id": "ic5-salc-nodes-energy",
+    "type": "multiple-choice",
+    "prompt": "When placing SALCs on an MO diagram, which of two SALCs from the same type of atomic orbital is higher in energy?",
+    "choices": [
+      {
+        "text": "The one with more nodal planes",
+        "correct": true
+      },
+      {
+        "text": "The one with fewer nodal planes",
+        "why": "More nodes means higher energy, just as antibonding orbitals are above bonding ones."
+      },
+      {
+        "text": "They are always equal in energy",
+        "why": "SALCs from the same orbitals can differ: the one with more nodes is slightly higher."
+      }
+    ],
+    "explanation": "The more nodal planes in a SALC, the higher its energy. In bifluoride, SALCs with more nodes (SALC-4, -6, -8) are slightly higher than those with fewer (SALC-3, -5, -7)."
+  },
+  {
+    "id": "ic5-co2-carbon-symmetries",
+    "type": "multiple-choice",
+    "prompt": "Using the D2h character table for CO2, which symmetry does carbon's 2pz orbital have?",
+    "choices": [
+      {
+        "text": "B1u, the representation listed with z",
+        "correct": true
+      },
+      {
+        "text": "Ag, the totally symmetric representation",
+        "why": "Ag goes with x^2, y^2, z^2: that's carbon's 2s orbital. 2pz matches z, listed under B1u."
+      },
+      {
+        "text": "B3u",
+        "why": "B3u is listed with x, so it's the symmetry of carbon's 2px."
+      },
+      {
+        "text": "B2g",
+        "why": "B2g has no linear function, so it matches none of carbon's p orbitals; the O 2px SALC of B2g symmetry stays nonbonding."
+      }
+    ],
+    "explanation": "In D2h, carbon's 2s orbital is Ag (x^2, y^2, z^2), 2px is B3u (x), 2py is B2u (y), and 2pz is B1u (z). SALCs of matching symmetry combine with each."
+  },
+  {
+    "id": "ic5-co2-nonbonding",
+    "type": "multiple-choice",
+    "prompt": "In CO2, the oxygen SALCs of b2g and b3g symmetry form what kind of molecular orbitals?",
+    "choices": [
+      {
+        "text": "Truly nonbonding orbitals, mostly oxygen in character, spread over both oxygens",
+        "correct": true
+      },
+      {
+        "text": "Strong σ bonds with carbon",
+        "why": "Carbon has no valence orbitals of b2g or b3g symmetry, so these SALCs have nothing to combine with."
+      },
+      {
+        "text": "π bonds with carbon's 2px and 2py",
+        "why": "Carbon's 2px and 2py are b3u and b2u, which bond with the matching u SALCs. The g SALCs have no partner."
+      },
+      {
+        "text": "Antibonding orbitals only",
+        "why": "With no symmetry match on carbon, these SALCs form nonbonding orbitals."
+      }
+    ],
+    "explanation": "The b2g and b3g SALCs from oxygen 2px and 2py have no compatible carbon valence orbital, so they form truly nonbonding orbitals, mostly oxygen in character but each spread across both oxygen atoms. These hold CO2's HOMO electrons."
+  },
+  {
+    "id": "ic5-co2-o2s",
+    "type": "multiple-choice",
+    "prompt": "In CO2, why are the molecular orbitals built from the oxygen 2s SALCs mostly nonbonding?",
+    "choices": [
+      {
+        "text": "Oxygen 2s (−32.36 eV) is far lower in energy than all the other valence orbitals",
+        "correct": true
+      },
+      {
+        "text": "Their symmetry doesn't match any carbon orbital",
+        "why": "The O 2s SALCs are Ag and B1u, which do match carbon's 2s and 2pz. They're mostly nonbonding because of the energy gap."
+      },
+      {
+        "text": "They hold no electrons",
+        "why": "They're filled. They're mostly nonbonding because oxygen 2s lies far below the other valence orbitals."
+      }
+    ],
+    "explanation": "The oxygen 2s orbitals (−32.36 eV) are far lower than the other valence orbitals (O 2p −15.87, C 2s −19.47, C 2p −10.66 eV), so the molecular orbitals built from them, the lowest a_g and b_1u, are mostly nonbonding."
+  },
+  {
+    "id": "ic5-water-salcs",
+    "type": "multiple-choice",
+    "prompt": "In water (C2v), the hydrogen 1s orbitals give Γ = 2, 0, 2, 0 under E, C2, σv(xz), σv'(yz). Which SALCs result?",
+    "choices": [
+      {
+        "text": "A1 and B1",
+        "correct": true
+      },
+      {
+        "text": "A1 and A2",
+        "why": "A2 has characters −1 under both σv planes; this Γ reduces to A1 + B1."
+      },
+      {
+        "text": "A1 only",
+        "why": "Two hydrogen orbitals give two SALCs. Γ = 2, 0, 2, 0 reduces to A1 + B1."
+      },
+      {
+        "text": "B1 and B2",
+        "why": "One SALC is totally symmetric (A1). Γ reduces to A1 + B1."
+      }
+    ],
+    "explanation": "Γ = 2, 0, 2, 0 reduces to A1 + B1. The A1 SALC, N(ψHa + ψHb), is compatible with oxygen's 2s and 2pz; the B1 SALC, N(ψHa − ψHb), is compatible with oxygen's 2px."
+  },
+  {
+    "id": "ic5-water-homo",
+    "type": "multiple-choice",
+    "prompt": "What is the HOMO of water, according to its MO diagram?",
+    "choices": [
+      {
+        "text": "The 1b2 orbital, a truly nonbonding orbital that is essentially oxygen 2py",
+        "correct": true
+      },
+      {
+        "text": "The 2a1 orbital",
+        "why": "2a1 is the lowest-energy valence orbital, mostly nonbonding but deep. The HOMO is 1b2."
+      },
+      {
+        "text": "The 3a1* orbital",
+        "why": "3a1* is antibonding and empty: it's the LUMO."
+      },
+      {
+        "text": "An sp3 hybrid orbital holding a lone pair",
+        "why": "Hybrid orbitals belong to valence bond theory. In MO theory the HOMO is the nonbonding 1b2."
+      }
+    ],
+    "explanation": "In water's MO diagram, the oxygen 2py orbital has no matching SALC and forms the truly nonbonding 1b2 orbital, which is also the HOMO. The LUMO is 3a1*."
+  },
+  {
+    "id": "ic5-water-lone-pairs",
+    "type": "multiple-choice",
+    "prompt": "How does MO theory's picture of water's two lone pairs differ from the Lewis/valence bond picture?",
+    "choices": [
+      {
+        "text": "MO theory says the two lone pairs are not equivalent; the Lewis/VB picture makes them two equivalent sp3 pairs",
+        "correct": true
+      },
+      {
+        "text": "MO theory says the lone pairs are equivalent and localized on oxygen",
+        "why": "That's the Lewis/VB picture. MO theory puts them in different orbitals (1b2 and 2a1), each spread over the molecule."
+      },
+      {
+        "text": "Both pictures agree exactly",
+        "why": "They differ: MO theory's lone pairs are inequivalent and delocalized."
+      },
+      {
+        "text": "MO theory says water has no lone pairs",
+        "why": "MO theory has nonbonding pairs too: one in the truly nonbonding 1b2, another largely in 2a1."
+      }
+    ],
+    "explanation": "The Lewis structure with valence bond theory puts two equivalent lone pairs in sp3 orbitals on oxygen. MO theory predicts two inequivalent lone pairs, each distributed over the molecule: one in the truly nonbonding 1b2 (the HOMO), and the mostly nonbonding 2a1."
+  },
+  {
+    "id": "ic5-water-lumo-site",
+    "type": "multiple-choice",
+    "prompt": "Where on a water molecule would a nucleophile be predicted to react, according to MO theory?",
+    "choices": [
+      {
+        "text": "At the hydrogen atoms, where the LUMO (3a1*) has its major lobe",
+        "correct": true
+      },
+      {
+        "text": "At the oxygen lone pairs",
+        "why": "The HOMO, centered on oxygen, reacts with electrophiles. Nucleophiles react at the LUMO, mostly on the H atoms."
+      },
+      {
+        "text": "At the 2a1 orbital",
+        "why": "2a1 is a deep, filled orbital, unlikely to react. Nucleophiles use the LUMO, 3a1*."
+      }
+    ],
+    "explanation": "MO theory predicts reactions at the HOMO and LUMO. The HOMO, centered on oxygen, reacts with electrophiles. The LUMO, 3a1*, has a major lobe more heavily distributed over the H atoms, so nucleophiles are predicted to react there."
+  },
+  {
+    "id": "ic5-normalization-factor",
+    "type": "numeric",
+    "prompt": "The normalizing factor for a group orbital is N = 1/√(Σci^2). A SALC is made from four ligand orbitals, each with coefficient 1. What is N?",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "explanation": "N = 1/√(1^2 + 1^2 + 1^2 + 1^2) = 1/√4 = 1/2 = 0.5. By the same rule, water's H SALCs have N = 1/√2 and ammonia's A1 SALC 1/√3."
+  },
+  {
+    "id": "ic5-nh3-salcs",
+    "type": "multiple-choice",
+    "prompt": "For NH3 (C3v), the hydrogen 1s orbitals give Γ = 3, 0, 1. It reduces to only two irreducible representations. How many SALCs are there?",
+    "choices": [
+      {
+        "text": "Three: one A1 and two degenerate E",
+        "correct": true
+      },
+      {
+        "text": "Two: one A1 and one E",
+        "why": "E is doubly degenerate, so it stands for two SALCs. With A1, that's three, one per hydrogen orbital."
+      },
+      {
+        "text": "Six, one for each operation",
+        "why": "There's one SALC per pendant orbital: three hydrogens, three SALCs (A1 + two E)."
+      },
+      {
+        "text": "One, since all three H atoms are equivalent",
+        "why": "Three orbitals always give three SALCs: A1 plus a degenerate E pair."
+      }
+    ],
+    "explanation": "Γ = 3, 0, 1 reduces to A1 + E. The E representation is doubly degenerate, corresponding to two degenerate SALCs, so there are three SALCs in all, matching the three hydrogen orbitals."
+  },
+  {
+    "id": "ic5-projection-e",
+    "type": "multiple-choice",
+    "prompt": "Applying the projection operator to Ha in NH3 with the E characters (2, −1, −1, 0, 0, 0) gives 2Ha − Hb − Hc. What does this tell you about this E SALC?",
+    "choices": [
+      {
+        "text": "It has a node, with Ha's contribution opposite in sign to Hb's and Hc's",
+        "correct": true
+      },
+      {
+        "text": "All three hydrogens contribute with the same sign",
+        "why": "That's the A1 SALC (2Ha + 2Hb + 2Hc). The minus signs here mean a node."
+      },
+      {
+        "text": "Ha doesn't contribute",
+        "why": "Ha contributes most here (coefficient 2). It's the second E SALC that has no Ha contribution."
+      },
+      {
+        "text": "The SALC doesn't exist",
+        "why": "A zero sum would mean no SALC, as for A2. This nonzero combination is a real E SALC."
+      }
+    ],
+    "explanation": "2Ha − Hb − Hc has both positive and negative contributions, so the SALC has a node, with the positive and negative parts equal. Normalized, it is (1/√6)[2ψHa − ψHb − ψHc], with the symmetry of x, compatible with nitrogen's px."
+  },
+  {
+    "id": "ic5-projection-zero",
+    "type": "multiple-choice",
+    "prompt": "In the projection operator method for NH3, the A2 representation gives a linear combination of 0. What does this mean?",
+    "choices": [
+      {
+        "text": "There is no SALC of A2 symmetry, consistent with Γ reducing to A1 + E",
+        "correct": true
+      },
+      {
+        "text": "The calculation was done wrong",
+        "why": "A zero result is expected: only representations found when reducing Γ produce SALCs, and A2 wasn't among them."
+      },
+      {
+        "text": "The A2 SALC has zero energy",
+        "why": "A zero sum means there's no A2 SALC at all."
+      }
+    ],
+    "explanation": "Only the irreducible representations found when reducing Γ produce SALCs. Applying the projection operator to any others, like A2 for NH3, gives a sum of zero, which is a good check on your work."
+  },
+  {
+    "id": "ic5-nh3-energy-match",
+    "type": "numeric",
+    "prompt": "The nitrogen 2p orbitals are at −13.14 eV and the hydrogen 1s orbital at −13.64 eV. What is the energy difference, in eV?",
+    "answer": 0.5,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "−13.14 eV − (−13.64 eV) = 0.50 eV, a very close energy match, so the H SALCs are placed at about the same energy as the N 2p orbitals in the MO diagram."
+  },
+  {
+    "id": "ic5-nh3-pz-overlap",
+    "type": "multiple-choice",
+    "prompt": "In NH3, nitrogen's 2pz orbital is a good energy match for the A1 hydrogen SALC. Why does it still form a largely nonbonding a1 orbital?",
+    "choices": [
+      {
+        "text": "Its orientation gives poor overlap: half points away from the hydrogens, and half toward the center of their triangle",
+        "correct": true
+      },
+      {
+        "text": "Its symmetry doesn't match the A1 SALC",
+        "why": "2pz has A1 symmetry in C3v, so it matches. The problem is poor spatial overlap."
+      },
+      {
+        "text": "It is far too low in energy",
+        "why": "N 2p and H 1s differ by only about 0.5 eV. The problem is the 2pz orbital's orientation."
+      }
+    ],
+    "explanation": "The 2pz orbital has half its angular distribution pointed away from the hydrogens and half toward the center of their triangle, so it overlaps poorly with them. N 2s, 2pz, and the A1 SALC give a bonding, a mid-energy nonbonding (2pz-like), and an antibonding a1 orbital."
+  },
+  {
+    "id": "ic5-bf3-sets",
+    "type": "multiple-choice",
+    "prompt": "In BF3 (D3h), how are the twelve fluorine orbitals treated when finding SALCs?",
+    "choices": [
+      {
+        "text": "As four separate sets (2s, 2px, 2py, 2pz), each giving a Γ that reduces to one A and one E representation",
+        "correct": true
+      },
+      {
+        "text": "As one set of twelve orbitals with one Γ",
+        "why": "BF3 is the first case with several types of pendant orbital, so each type is treated as its own set with its own Γ."
+      },
+      {
+        "text": "Only the 2s orbitals are used",
+        "why": "All four types of fluorine valence orbital are used, each as a separate set of three SALCs."
+      },
+      {
+        "text": "Each set gives three singly degenerate representations",
+        "why": "Each Γ reduces to one singly degenerate (A) and one doubly degenerate (E) representation: three SALCs per set."
+      }
+    ],
+    "explanation": "BF3 has s and p orbitals on all its pendant atoms, so each type of fluorine orbital is treated as its own set of SALCs. Each set's Γ reduces to one A and one E representation (three SALCs), giving twelve SALCs in all."
+  },
+  {
+    "id": "ic5-mulliken-case",
+    "type": "multiple-choice",
+    "prompt": "In MO diagrams, what is the difference between labels like A1 and a1?",
+    "choices": [
+      {
+        "text": "Upper case marks a symmetry or irreducible representation; lower case names an orbital with that symmetry",
+        "correct": true
+      },
+      {
+        "text": "Lower case means antibonding",
+        "why": "Antibonding orbitals are marked with an asterisk (3a1*). Case distinguishes a symmetry label (A1) from an orbital (a1)."
+      },
+      {
+        "text": "They mean exactly the same thing",
+        "why": "By convention, upper case labels the symmetry and lower case the orbital that has it."
+      },
+      {
+        "text": "Lower case is used only for core orbitals",
+        "why": "Lower case labels any molecular orbital with that symmetry, valence or core."
+      }
+    ],
+    "explanation": "Upper-case symbols indicate symmetry and irreducible representations, while lower-case symbols indicate the identity of an orbital with that symmetry. Lower-case Mulliken labels are the most rigorous way to label orbitals in polyatomic molecules."
+  },
+  {
+    "id": "ic5-salc-one-per-orbital",
+    "type": "multiple-choice",
+    "prompt": "How many SALCs do you expect from the valence orbitals of the pendant atoms?",
+    "choices": [
+      {
+        "text": "One SALC for each pendant-atom orbital",
+        "correct": true
+      },
+      {
+        "text": "One SALC per pendant atom",
+        "why": "Count orbitals, not atoms: each F in bifluoride has four valence orbitals, giving eight SALCs from two atoms."
+      },
+      {
+        "text": "One SALC per central-atom orbital",
+        "why": "SALCs come from the pendant atoms, one per pendant orbital."
+      },
+      {
+        "text": "Always four",
+        "why": "The number depends on the pendant orbitals: 2 for water, 8 for CO2, 12 for BF3."
+      }
+    ],
+    "explanation": "We expect one SALC for each ligand orbital. The two fluorines of bifluoride, with four valence orbitals each, give eight SALCs; CO2's oxygens also give eight; water's two hydrogens give two."
+  },
+  {
+    "id": "ic5-co2-salc-count",
+    "type": "numeric",
+    "prompt": "Each oxygen in CO2 has four valence orbitals (2s, 2px, 2py, 2pz). How many SALCs do the two oxygens give?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "One SALC per pendant orbital: 2 oxygens × 4 orbitals = 8 SALCs, with symmetries 2Ag + 2B1u + B2g + B3u + B3g + B2u in D2h."
+  }
+]
