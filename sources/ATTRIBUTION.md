@@ -33,8 +33,10 @@ recorded. 4.2, 9.3, 11.1 and 15.3 carry no license tag on LibreTexts, nor do
 11.2's sub-pages or 15.4.1, and these are marked `"Unverified"`; confirm them
 before ingesting.
 
-`openstax/physchem/` has its layout only: one folder per chapter (1–31) and 277
-section files holding front matter, not yet transcribed. The end-of-chapter
+`openstax/physchem/` is in progress: one folder per chapter (1–31) and 277
+section files. Chapter 1 (9 sections) is transcribed from the LibreTexts pages
+with the scripts in `tools/transcribe/`; the other files hold front matter
+only. The end-of-chapter
 exercise pages are left out, as are chapter 32 ("Math Chapters") and chapter 33
 (appendices). No section has text-bearing sub-pages, and none is empty. The
 license and author are recorded per section, read from its page: 229 sections

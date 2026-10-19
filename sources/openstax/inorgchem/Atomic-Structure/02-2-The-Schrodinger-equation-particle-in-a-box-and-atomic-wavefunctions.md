@@ -772,6 +772,8 @@ In the calculation of S, it is assumed that electrons closer to the nucleus than
 
 #### A video explaining how to use Slater's Rules
 
+[Video not described in source]
+
 #### Example 2.2.4.1: Fluorine, Neon, and Sodium
 
 What is the Z* experienced by the valence electrons in the three isoelectronic species: fluorine anion (F^-), neutral neon atom (Ne), and sodium cation (Na^+)?

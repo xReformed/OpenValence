@@ -88,7 +88,7 @@ BH3 + H^− ⟶ BH4^−
 
 A large number of boron compounds are of this sort. These include
 
-a. The borates and boric acid derivatives which comprise a few ppm of the Earth's crust. These contain borate anions similar to the representative set shown in Scheme 8.6.1.II. Of these, sodium borate or borox is commonly used in household detergents. More precisely, there is a mixture of boraxes, all of which are of formula [Na(H2O)x]2H2B4O9 (often written as Na2B4O7·xH2O) and differ in the number of waters of hydration. All contain the tetraborate anion, B4O5(OH)4^2-, which has the structure shown at right in Scheme 8.6.1.II..
+a. The borates and boric acid derivatives which comprise a few ppm of the Earth's crust. These contain borate anions similar to the representative set shown in Scheme 8.6.1.II. Of these, sodium borate or borox is commonly used in household detergents. More precisely, there is a mixture of boraxes, all of which are of formula [Na(H2O)_x]2H2B4O9 (often written as Na2B4O7·xH2O) and differ in the number of waters of hydration. All contain the tetraborate anion, B4O5(OH)4^2-, which has the structure shown at right in Scheme 8.6.1.II..
 
 Scheme 8.6.1.II. The tetraborate anion.
 

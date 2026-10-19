@@ -278,7 +278,7 @@ where all values are for the gas phase atoms in units of eV
 
 The Allred-Rochow electronegativity scale attempts to quantify electronegativity in terms of the electrostatic force attracting the bonding electrons to the atomic center. It does this by calculating the electronegativity as the associated electrostatic force.
 
-χ_(Allred-Rochow, raw) = −1/(4πε0)(e^2 Z*)/(r_bond^2)
+χ_(Allred-Rochow, raw) = −1/(4πε0) · (e^2 Z*)/(r_bond^2)
 
 These raw values have units of force (N/electron or dyne/electron) and do not correspond closely to electronegativity values reported on the Pauling Scale. Consequently, an empirical correction factor is used to adjust the scale to give electronegativities that more closely correspond to their Pauling equivalents.
 
@@ -595,7 +595,7 @@ Scheme 8.2.4.1.VI. Partial Latimer diagram for nitrogen in acid.
 
 The relevant thermodynamic cycle that may be used to calculate the unknown potential involves the free energies and is depicted in Scheme 8.2.4.1.VII.
 
-Scheme 8.2.4.1.VII. Thermodynamic cycle that may be used to determine E°_N2O4 → NO.
+Scheme 8.2.4.1.VII. Thermodynamic cycle that may be used to determine E°_(N2O4 → NO).
 
 The free energy for each conversion step in the cycle is related to the corresponding potential by the relationship
 
@@ -890,17 +890,17 @@ In many cases the relevant standard reduction potentials are neither tabulated n
 
 In such cases the relevant reduction potential should be calculated by taking into account the fact that since free energy is a state function, the free energy for formation of that oxidation state is the sum of the free energies of the steps described in the Latimer diagram. For example, to calculate NE° for the formation of NiO2, the following relationship may be used:
 
-ΔG°_NiO2 → Ni = ΔG°_NiO2 → Ni^2+ + ΔG°_Ni^2+ → Ni
+ΔG°_(NiO2 → Ni) = ΔG°_(NiO2 → Ni^2+) + ΔG°_(Ni^2+ → Ni)
 
 But since ΔG = −nFE°, where n is the number of electrons involved in each reduction, then the above expression may be rewritten as
 
-−n_e^−, NiO2 → Ni FE°_NiO2 → Ni = −n_e^−, NiO2 → Ni^2+ FE°_NiO2 → Ni^2+ + −n_e^−, Ni^2+ → Ni FE°_Ni^2+ → Ni
+−n_(e^−, NiO2 → Ni) FE°_(NiO2 → Ni) = −n_(e^−, NiO2 → Ni^2+) FE°_(NiO2 → Ni^2+) + −n_(e^−, Ni^2+ → Ni) FE°_(Ni^2+ → Ni)
 
 which may be further simplified by cancelling the Faraday constant, F, from both sides, giving an expression for the desired value of NE°:
 
-−n_e^−, NiO2 → Ni E°_NiO2 → Ni = NE°_Ni → NiO2 = −n_e^−, NiO2 → Ni^2+ E°_NiO2 → Ni^2+ + −n_e^−, Ni^2+ → Ni E°_Ni^2+ → Ni
+−n_(e^−, NiO2 → Ni) E°_(NiO2 → Ni) = NE°_(Ni → NiO2) = −n_(e^−, NiO2 → Ni^2+) E°_(NiO2 → Ni^2+) + −n_(e^−, Ni^2+ → Ni) E°_(Ni^2+ → Ni)
 
-From this expression the value of NE°_Ni → NiO2 may be calculated by inserting the relevant reduction potentials and number of electrons:
+From this expression the value of NE°_(Ni → NiO2) may be calculated by inserting the relevant reduction potentials and number of electrons:
 
 NE°_Ni → NiO2 = 2 × (+1.593V) + 2 × (−0.257V) = +2.672V
 
@@ -924,15 +924,15 @@ Table 8.2.4.2.1: Calculation of NE° for each oxidation state of nitrogen.
 
 | Oxidation State | Step | NE° = | Calculated as the sum of the steps | Notes |
 | --- | --- | --- | --- | --- |
-| 5 | N2 → NO3^- | 5 × (E°_NO3^− → N2) | N2 → N2O4 → NO3^− NE° = 1 × E°_NO3^− → N2O4 + 4 × E°_N2O4 → N2 NE° = 1 × E°_NO3^− → N2O4 + NE°_(+4 O.S.) NE° = 1 × 0.803V + 5.426V = 6.229V | Calculate NE° for the +4 oxidation state, NO, first. Then use it in this calculation. |
-| 4 | N2 → N2O4 | 4 × (E°_N2O4 → N2) | N2 → HNO2 → N2O4 NE° = 1 × E°_HNO2 → NO + 3 × E°_HNO2 → N2 NE° = 1 × E°_N2O4 → HNO2 + NE°_(+3 O.S.) NE° = 1 × 1.07V + 4.356V = 5.426V | Calculate NE° for the +3 oxidation state, NO, first. Then use it in this calculation. |
-| 3 | N2 → HNO2 | 3 × (E°_HNO2 → N2) | N2 → NO → HNO2 NE° = 1 × E°_HNO2 → NO + 2 × E°_NO → N2 NE° = 1 × E°_NO → N2O + NE°_(+2 O.S.) NE° = 1 × 0.996V + 3.36V = 4.356V | Calculate NE° for the +2 oxidation state, NO, first. Then use it in this calculation. |
-| 2 | N2 → NO | 2 × (E°_NO → N2) | N2 → N2O → NO NE° = 1 × E°_NO → N2O + 1 × E°_N2O → N2 NE° = 1 × E°_NO → N2O + NE°_(+1 O.S.) NE° = 1 × 1.59V + 1.77V = 3.36V | Calculate NE° for the +1 oxidation state, NO, first. Then use it in this calculation. |
-| 1 | N2 → N2O | 1 × E°_N2O → N2 | N2 → N2O NE° = 1 × E°_N2O → N2 NE° = 1 × + 1.77V = +1.77V |  |
+| 5 | N2 → NO3^- | 5 × (E°_(NO3^− → N2)) | N2 → N2O4 → NO3^− NE° = 1 × E°_(NO3^− → N2O4) + 4 × E°_(N2O4 → N2) NE° = 1 × E°_(NO3^− → N2O4) + NE°_(+4 O.S.) NE° = 1 × 0.803V + 5.426V = 6.229V | Calculate NE° for the +4 oxidation state, NO, first. Then use it in this calculation. |
+| 4 | N2 → N2O4 | 4 × (E°_(N2O4 → N2)) | N2 → HNO2 → N2O4 NE° = 1 × E°_(HNO2 → NO) + 3 × E°_(HNO2 → N2) NE° = 1 × E°_(N2O4 → HNO2) + NE°_(+3 O.S.) NE° = 1 × 1.07V + 4.356V = 5.426V | Calculate NE° for the +3 oxidation state, NO, first. Then use it in this calculation. |
+| 3 | N2 → HNO2 | 3 × (E°_(HNO2 → N2)) | N2 → NO → HNO2 NE° = 1 × E°_(HNO2 → NO) + 2 × E°_(NO → N2) NE° = 1 × E°_(NO → N2O) + NE°_(+2 O.S.) NE° = 1 × 0.996V + 3.36V = 4.356V | Calculate NE° for the +2 oxidation state, NO, first. Then use it in this calculation. |
+| 2 | N2 → NO | 2 × (E°_(NO → N2)) | N2 → N2O → NO NE° = 1 × E°_(NO → N2O) + 1 × E°_(N2O → N2) NE° = 1 × E°_(NO → N2O) + NE°_(+1 O.S.) NE° = 1 × 1.59V + 1.77V = 3.36V | Calculate NE° for the +1 oxidation state, NO, first. Then use it in this calculation. |
+| 1 | N2 → N2O | 1 × E°_(N2O → N2) | N2 → N2O NE° = 1 × E°_(N2O → N2) NE° = 1 × + 1.77V = +1.77V |  |
 | 0 | None | 0 V | NE° = 0V by definition. | Defined as 0 V |
-| -1 | N2 → NH3OH^+ | (−1) × E°_N2 → NH3OH^+ | N2 → NH3OH^+ NE° = (−1)E°_N2 → NH3OH^+ NE° = (−1) × (−1.87V) = +1.87V |  |
-| -2 | N2 → N2H5^+ | (−2) × E°_N2 → N2H5^+ | N2 → NH3OH^+ → N2H5^+ NE° = (−1) × E°_N2 → NH3OH^+ + (−1)E°_NH3OH^+ → N2H5^+ NE° = NE°_(−1 O.S.) + (−1)E°_NH3OH^+ → N2H5^+ NE° = +1.87V + (−1) × 1.41V = 0.46V | Calculate NE° for the -1 oxidation state, NO, first. Then use it in this calculation. |
-| -3 | N2 → NH4^+ | (−3) × E°_N2 → NH4^+ | N2 → N2H5^+ → NH4^+ NE° = (−1)E°_N2 → N2H5^+ + (−1)E°_N2H5^+ → NH4^+ NE° = NE°_(−2 O.S.) + (−1)E°_N2H5^+ → NH4^+ NE° = +0.46V + (−1) × 1.275V = −0.815V | Calculate NE° for the -2 oxidation state, NO, first. Then use it in this calculation. |
+| -1 | N2 → NH3OH^+ | (−1) × E°_(N2 → NH3OH^+) | N2 → NH3OH^+ NE° = (−1)E°_(N2 → NH3OH^+) NE° = (−1) × (−1.87V) = +1.87V |  |
+| -2 | N2 → N2H5^+ | (−2) × E°_(N2 → N2H5^+) | N2 → NH3OH^+ → N2H5^+ NE° = (−1) × E°_(N2 → NH3OH^+) + (−1)E°_(NH3OH^+ → N2H5^+) NE° = NE°_(−1 O.S.) + (−1)E°_(NH3OH^+ → N2H5^+) NE° = +1.87V + (−1) × 1.41V = 0.46V | Calculate NE° for the -1 oxidation state, NO, first. Then use it in this calculation. |
+| -3 | N2 → NH4^+ | (−3) × E°_(N2 → NH4^+) | N2 → N2H5^+ → NH4^+ NE° = (−1)E°_(N2 → N2H5^+) + (−1)E°_(N2H5^+ → NH4^+) NE° = NE°_(−2 O.S.) + (−1)E°_(N2H5^+ → NH4^+) NE° = +0.46V + (−1) × 1.275V = −0.815V | Calculate NE° for the -2 oxidation state, NO, first. Then use it in this calculation. |
 
 The resulting Frost diagram for acidic aqueous nitrogen is given below.
 

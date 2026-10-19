@@ -364,7 +364,7 @@ Prove that the characters in the reducible representation for C_2v are correct:
 
 For the E operation, with the transformation matrix (1, 0, 0; 0, 1, 0; 0, 0, 1), the trace is 1 + 1 + 1 = 3.
 
-For the C^z2 operation, with the transformation matrix (−1, 0, 0; 0, −1, 0; 0, 0, 1), the trace is (−1) + (−1) + 1 = −1.
+For the C2^z operation, with the transformation matrix (−1, 0, 0; 0, −1, 0; 0, 0, 1), the trace is (−1) + (−1) + 1 = −1.
 
 For the σ_v(xz)' operation, with the transformation matrix (1, 0, 0; 0, −1, 0; 0, 0, 1), the trace is 1 + (−1) + 1 = 1.
 

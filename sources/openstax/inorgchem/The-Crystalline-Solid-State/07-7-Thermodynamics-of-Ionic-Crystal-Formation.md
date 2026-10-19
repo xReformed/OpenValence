@@ -405,15 +405,15 @@ It is impossible to measure the enthalpy change starting from a solid crystal an
 
 #### Standard Atomization Enthalpies
 
-Before we start talking about Born-Haber cycles, we need to define the atomization enthalpy, ΔH^oa. The standard atomization enthalpy is the enthalpy change when 1 mole of gaseous atoms is formed from the element in its standard state. Enthalpy change of atomization is always positive. You are always going to have to supply energy to break an element into its separate gaseous atoms. All of the following equations represent changes involving atomization enthalpy:
+Before we start talking about Born-Haber cycles, we need to define the atomization enthalpy, ΔHa^o. The standard atomization enthalpy is the enthalpy change when 1 mole of gaseous atoms is formed from the element in its standard state. Enthalpy change of atomization is always positive. You are always going to have to supply energy to break an element into its separate gaseous atoms. All of the following equations represent changes involving atomization enthalpy:
 
-(1/2)Cl2(g) → Cl(g)    ΔH^oa = +122 kJ mol^−1
+(1/2)Cl2(g) → Cl(g)    ΔHa^o = +122 kJ mol^−1
 
-(1/2)Br2(l) → Br(g)    ΔH^oa = +112 kJ mol^−1
+(1/2)Br2(l) → Br(g)    ΔHa^o = +112 kJ mol^−1
 
-[Note: corrected; the source prints "ΔH^oa = +122" where this reads "ΔH^oa = +112". The atomization enthalpy of bromine from Br2(l) is +112 kJ/mol; +122 kJ/mol is chlorine's.]
+[Note: corrected; the source prints "ΔHa^o = +122" where this reads "ΔHa^o = +112". The atomization enthalpy of bromine from Br2(l) is +112 kJ/mol; +122 kJ/mol is chlorine's.]
 
-Na(s) → Na(g)    ΔH^oa = +107 kJ mol^−1
+Na(s) → Na(g)    ΔHa^o = +107 kJ mol^−1
 
 Notice particularly that the "mol^-1" is per mole of atoms formed - NOT per mole of element that you start with. You will quite commonly have to write fractions into the left-hand side of the equation. Getting this wrong is a common mistake.
 

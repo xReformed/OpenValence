@@ -89,7 +89,7 @@ After having understood the principles of the bonding in carbonyls let us next t
 
 Figure 13.4.1.9: Mononuclear carbonyls vs dinuclear carbonyls. Attribution: W. Petz
 
-In this case the number of ligands x is just 18 minus the number of metal electrons divided by 2. We would therefore expect a mononuclear carbonyl of the type M(CO)x (Figure 13.4.1.9). For metals with an odd number of electrons, the situation is more complicated because an odd number plus two multiplied with an integer number never gives 18. In this case, as many ligands x as needed to make a 17 valence electron complex are added to the metal, and then the 17 valence electron complex dimerizes to form a dinuclear carbonyl of the composition M2(CO)x. An exception is the vanadium. It makes a 17 valence electron vanadium hexacarbonyl that does not dimerize because a coordination number of 7 is not favorable.
+In this case the number of ligands x is just 18 minus the number of metal electrons divided by 2. We would therefore expect a mononuclear carbonyl of the type M(CO)_x (Figure 13.4.1.9). For metals with an odd number of electrons, the situation is more complicated because an odd number plus two multiplied with an integer number never gives 18. In this case, as many ligands x as needed to make a 17 valence electron complex are added to the metal, and then the 17 valence electron complex dimerizes to form a dinuclear carbonyl of the composition M2(CO)_x. An exception is the vanadium. It makes a 17 valence electron vanadium hexacarbonyl that does not dimerize because a coordination number of 7 is not favorable.
 
 [Note: corrected; the source prints "an odd number times two multiplied" where this reads "an odd number plus two multiplied". An odd metal electron count plus 2 for each of a whole number of CO ligands can never be 18; an odd number times two would be even.]
 
@@ -211,7 +211,7 @@ The 17 valence electron fragment of the carbonyl of vanadium has the composition
 
 Metal carbonyl complexes containing only CO ligands abound, but most cannot be synthesized by the method we all wish worked, bathing the elemental metal in an atmosphere of carbon monoxide (entropy is a problem, as we already discussed for W(CO)6). This method does work for nickel(0) and iron(0) carbonyls, however.
 
-M + n CO → M(CO)n [M = Fe, n = 5; M = Ni, n = 4]
+M + n CO → M(CO)_n [M = Fe, n = 5; M = Ni, n = 4]
 
 Other metal carbonyl complexes can be prepared by reductive carbonylation, the treatment of a high-oxidation-state complex with CO. These methods usually require significant heat and pressure. One example:
 

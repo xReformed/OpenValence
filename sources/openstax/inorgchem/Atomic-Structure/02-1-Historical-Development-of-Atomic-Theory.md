@@ -27,6 +27,8 @@ By the end of this section, you will be able to:
 
 ## A Video Introduction to Atomic Theory through the Nineteenth Century From Crash Course Chemistry
 
+[Video not described in source]
+
 Video 2.1.1: Lavoisier's discovery of The Law of Conservation of Matter led to the Laws of Definite and Multiple Proportions and eventually Dalton's Atomic Theory.
 
 ## Atomic Theory through the Nineteenth Century
@@ -56,6 +58,8 @@ Figure 2.1.3: When the elements copper (a shiny, red-brown solid, shown here as 
 Dalton’s atomic theory provides a microscopic explanation of the many macroscopic properties of matter that you’ve learned about. For example, if an element such as copper consists of only one kind of atom, then it cannot be broken down into simpler substances, that is, into substances composed of fewer types of atoms. And if atoms are neither created nor destroyed during a chemical change, then the total mass of matter present when matter changes from one type to another will remain constant (the law of conservation of matter (or mass)).
 
 ### Want to learn more about the Law of Conservation of Mass?
+
+[Video not described in source]
 
 Video 2.1.2: "We are made of star stuff" - Carl Sagan.
 
@@ -204,15 +208,23 @@ Figure 2.1.9: The α particles are deflected only when they collide with or pass
 
 After many more experiments, Rutherford also discovered that the nuclei of other elements contain the hydrogen nucleus as a “building block,” and he named this more fundamental particle the proton, the positively charged, subatomic particle found in the nucleus. With one addition, which you will learn next, this nuclear model of the atom, proposed over a century ago, is still used today.
 
+[Interactive simulation not described in source]
+
 Another important finding was the discovery of isotopes. During the early 1900s, scientists identified several substances that appeared to be new elements, isolating them from radioactive ores. For example, a “new element” produced by the radioactive decay of thorium was initially given the name mesothorium. However, a more detailed analysis showed that mesothorium was chemically identical to radium (another decay product), despite having a different atomic mass. This result, along with similar findings for other elements, led the English chemist Frederick Soddy to realize that an element could have types of atoms with different masses that were chemically indistinguishable. These different types are called isotopes—atoms of the same element that differ in mass. Soddy was awarded the Nobel Prize in Chemistry in 1921 for this discovery.
 
 One puzzle remained: The nucleus was known to contain almost all of the mass of an atom, with the number of protons only providing half, or less, of that mass. Different proposals were made to explain what constituted the remaining mass, including the existence of neutral particles in the nucleus. As you might expect, detecting uncharged particles is very challenging, and it was not until 1932 that James Chadwick found evidence of neutrons, uncharged, subatomic particles with a mass approximately the same as that of protons. The existence of the neutron also explained isotopes: They differ in mass because they have different numbers of neutrons, but they are chemically identical because they have the same number of protons. This will be explained in more detail later in this unit.
+
+[Video not described in source]
 
 Video 2.1.2: An Introduction to Subatomic Particles
 
 ## Summary
 
+[Video not described in source]
+
 Video 2.1.3: A summary of discoveries in atomic theory.
+
+[Video not described in source]
 
 Video 2.1.4: A different summary of discoveries in atomic theory.
 
@@ -318,6 +330,8 @@ Figure 3.4.3: Mendeleev’s periodic table, as published in the German journal A
 The groups in Mendeleev's table are determined by how many oxygen or hydrogen atoms are needed to form compounds with each element. For example, in Group I, two atoms of hydrogen (H), lithium (Li), sodium (Na), and potassium (K) form compounds with one atom of oxygen. In Group VII, one atom of fluorine (F), chlorine (Cl), and bromine (Br), reacts with one atom of hydrogen. Notice how this approach has trouble with the transition metals. Until roughly 1960, a rectangular table developed from Mendeleev's table and based on reactivity was standard at the front of chemistry lecture halls.
 
 The most convincing evidence in support of Mendeleev’s arrangement of the elements was the discovery of two previously unknown elements whose properties closely corresponded with his predictions (Table 3.4.1 ). Two of the blanks Mendeleev had left in his original table were below aluminum and silicon, awaiting the discovery of two as-yet-unknown elements, eka-aluminum and eka-silicon (from the Sanskrit eka, meaning “one,” as in “one beyond aluminum”). The observed properties of gallium and germanium matched those of eka-aluminum and eka-silicon so well that once they were discovered, Mendeleev’s periodic table rapidly gained acceptance.
+
+[Video not described in source]
 
 Table 3.4.1 Comparison of the properties predicted by Mendeleev in 1869 for eka-aluminum and eka-silicon with the properties of gallium (discovered in 1875) and germanium (discovered in 1886)
 

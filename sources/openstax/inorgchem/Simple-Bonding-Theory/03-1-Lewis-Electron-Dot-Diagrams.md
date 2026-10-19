@@ -175,6 +175,8 @@ Chemical structure of the nitrate ion (NO₃⁻), showing nitrogen bonded to thr
 
 Note: We would expect that the bond lengths in the NO3^- ion to be somewhat shorter than a single bond.
 
+[Video not described in source]
+
 #### Example 3.1.1.1: Benzene
 
 Benzene is a common organic solvent that was previously used in gasoline; it is no longer used for this purpose, however, because it is now known to be a carcinogen. The benzene molecule (C6H6) consists of a regular hexagon of carbon atoms, each of which is also bonded to a hydrogen atom. Use resonance structures to describe the bonding in benzene.

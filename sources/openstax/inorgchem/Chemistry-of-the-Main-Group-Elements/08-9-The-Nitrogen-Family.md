@@ -260,7 +260,7 @@ Nitrides are compounds of nitrogen with a less electronegative atom; in other wo
 
 When mixed with water, nitride will form ammonia; the nitride ion acts as a very strong base.
 
-N^3− + 3H2O_(l) → NH3 + 3OH^−_(aq)
+N^3− + 3H2O_(l) → NH3 + 3OH_(aq)^−
 
 When nitrogen forms compounds with other atoms, it primarily forms covalent bonds. These are normally formed with other metals and look like: MN, M3N, and M4N. These compounds are typically hard, inert, and have high melting points because of nitrogen's ability to form triple covalent bonds.
 

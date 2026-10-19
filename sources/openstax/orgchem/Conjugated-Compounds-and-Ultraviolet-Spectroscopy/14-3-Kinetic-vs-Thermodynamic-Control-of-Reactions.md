@@ -15,7 +15,7 @@ To understand the effect of temperature on product distribution, let’s briefly
 
 [Image: The figure shows reactant A forms product B and product C.]
 
-Let’s assume that B forms faster than C (in other words, ΔG^‡B < ΔG^‡C) but that C is more stable than B (in other words, ΔG^oC > ΔG^oB). An energy diagram for the two processes might look like that shown in Figure 14.3.1.
+Let’s assume that B forms faster than C (in other words, ΔGB^‡ < ΔGC^‡) but that C is more stable than B (in other words, ΔGC^o > ΔGB^o). An energy diagram for the two processes might look like that shown in Figure 14.3.1.
 
 Figure 14.3.1: An energy diagram for two competing reactions in which the less stable product B forms faster than the more stable product C.
 The energy diagram shows the thermodynamic control curve forming a higher peak than the kinetic control curve. The x and y axes denotes reaction progress and energy, respectively.

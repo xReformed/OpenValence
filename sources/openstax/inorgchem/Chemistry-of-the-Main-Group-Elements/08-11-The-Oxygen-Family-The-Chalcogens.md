@@ -213,6 +213,8 @@ Phlogiston theory is the outdated belief that a fire-like element called phlogis
 - Ionization energy: 13.618 eV
 - Oxygen is easily reduced and is a great oxidizing agent making it readily reactive with other elements
 
+[Video not described in source]
+
 ### Magnetic Properties of Oxygen
 
 Oxygen (O2) is paramagnetic. An oxygen atom has six valence electrons, so the O2 molecule has 12 valence electrons with the electron configuration shown below:
@@ -222,6 +224,8 @@ Oxygen (O2) is paramagnetic. An oxygen atom has six valence electrons, so the O2
 [Image not described in source]
 
 As shown, there are two unpaired electrons, which causes O2 to be paramagnetic. There are also eight valence electrons in the bonding orbitals and four in antibonding orbitals, which makes the bond order 2. This accounts for the double covalent bond that is present in O2.
+
+[Video not described in source]
 
 Video 8.11.2.1: A chemical demonstration of the paramagnetism of molecular oxygen, as shown by the attraction of liquid oxygen to magnets.
 
@@ -632,9 +636,9 @@ H2SO3 is a diprotic acid that acts as a weak acid in both steps, and H2SO4 is al
 
 Boiling elemental sulfur in a solution of sodium sulfite yields thiosulfate. Not only are thiosulfates important in photographic processing, but they are also common analytical reagents used with iodine (like in the following two reactions).
 
-2Cu^2+_(aq) + 5I^−_(aq) → 2CuI_(s) + I^−_3(aq)
+2Cu_(aq)^2+ + 5I_(aq)^− → 2CuI_(s) + I_3(aq)^−
 
-I^−_3(aq) + 2S2O^2−_3(aq) → 3I^−_(aq) + S4O^2−_6(aq)
+I_3(aq)^− + 2S2O_3(aq)^2− → 3I_(aq)^− + S4O_6(aq)^2−
 
 with excess triiodide ion titrated with Na2S2O3(aq).
 

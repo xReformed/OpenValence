@@ -33,6 +33,8 @@ SYMBOLS = {
     # Inorganic Chemistry (LibreTexts): calculus in the Schrödinger equation (2.2), font
     # switches (\sf, \bf) and sizes, and \big( … \big) delimiters.
     "propto": "∝", "textstyle": "", "scriptstyle": "",
+    # Physical Chemistry (LibreTexts): ħ, ∇, expectation-value brackets, limits.
+    "hbar": "ħ", "nabla": "∇", "langle": "⟨", "rangle": "⟩", "lim": "\x13lim",
     "Psi": "Ψ", "Phi": "Φ", "Theta": "Θ", "Xi": "Ξ", "Upsilon": "Υ", "zeta": "ζ", "iota": "ι",
     "star": "*",  # σ_u^{\star}: the antibonding mark (Inorganic Chemistry 5.2)
     # ΔG^{\circ\ddagger}: activation (Inorganic Chemistry 12.1); ⟸ points at a rate-limiting step (12.2.3).
@@ -82,6 +84,10 @@ def expand_frac(s):
         elif re.match(r"[{}]*[α-ωΑ-Ω]", s[end:]) or (
                 re.match(r"\w", s[end:]) and not re.match(r"(?:log|ln|exp|sin|cos|tan)(?![a-z])", s[end:])):  # also across groups: \textcolor{green}{\dfrac…}\textcolor{red}{\psi}
             frac = f"({frac})"
+        # Two fractions side by side multiply: \frac{2hc^2}{\lambda^5}\frac{1}{e^{…}-1} ->
+        # (2hc^2)/λ^5 · 1/(…), not …/λ^51/(…) (Physical Chemistry 1.2).
+        if re.match(r"\s*\\frac", s[end:]):
+            frac += " · "
         s = s[:k] + frac + s[end:]
     return s
 
@@ -168,7 +174,7 @@ def group_sup(content):
 # _{92}^{235}\textrm{U}, ^{90}_{231}T, _{ }^{1}n, 5_{0}^{1}n: scripts written before
 # a symbol (not after a letter or bracket, where they'd belong to what precedes).
 NUCLIDE = re.compile(
-    r"(?<![A-Za-z)\]}])"
+    r"(?<![A-Za-zΑ-Ωα-ωħ)\]}])"
     r"(?:_(?P<s1>\{[^{}]*\}|[−\-]?\d)\s*\^(?P<p1>\{\s*\d+\s*\}|\d)"
     r"|\^(?P<p2>\{\s*\d+\s*\}|\d)\s*_(?P<s2>\{[^{}]*\}|[−\-]?\d))"
     r"\s*(?:\\(?:textrm|mathrm|text)\s*)?(?P<b>\{\s*[A-Za-zαβγ][a-z]?\s*\}|[A-Za-zαβγ][a-z]?)"
@@ -248,10 +254,27 @@ def tex(s):
     s = re.sub(r"(?<= )~(?= )", r"\\sim", s)
     s = s.replace("\xa0", " ").replace("~", "\\ ")
     s = s.replace("​", "").replace("﻿", "")  # zero-width spaces: "XeF_​2" (Inorganic Chemistry 8.14.10)
+    # Unicode typed into the TeX: 4π&#1013;_0, n^2&#8463;^2, 10^{&#8209;11} (Physical Chemistry 1.8).
+    s = s.replace("ϵ", "ε").replace("ℏ", "ħ").replace("‑", "-")
     # The part letter can be a capital: \PageIndex{1A} (Organic Chemistry 29.5, a figure in two parts).
     s = re.sub(r"\\PageIndex\{(\d+)([A-Za-z]*)\}", lambda m: f"{SEC}.{m.group(1)}{m.group(2)}", s)
+    # A script belongs to the letter before it even after a space: \epsilon ^2_0 h^3 is
+    # ε0^2 h^3, not ε ²₀h^3 (Physical Chemistry 1.8). After an arrow it starts a nuclide:
+    # \rightarrow _{138.9088}^{139}\textrm{Ba} (Introductory Chemistry 15.6).
+    def attach(m):
+        command = m.group(1)[1:] if m.group(1).startswith("\\") else None
+        if command is not None and not re.fullmatch(r"[Α-Ωα-ωħ]", SYMBOLS.get(command, "")):
+            return m.group(0)
+        return m.group(1)
+    s = re.sub(r"(\\[A-Za-z]+|[A-Za-z])\s+(?=[_^])", attach, s)
     # _{92}^{235}\textrm{U}, \ce{_0^1n}: prescripts on a symbol are a nuclide.
     s = NUCLIDE.sub(nuclide_match, s)
+    # A superscript written before the subscript, p^2_n, \epsilon^2_0: put the subscript
+    # first, as it is displayed, or it reads "p^2 n", "ε^20" (Physical Chemistry 1.8);
+    # ΔG^‡_B too (Organic Chemistry 14.3). Not a degree sign: E°_(N2O4 → NO) reads as
+    # displayed (Inorganic Chemistry 8.2).
+    s = re.sub(r"\^\s*(?!\{?\s*(?:\\circ(?![A-Za-z])|°|\\degree(?![A-Za-z])))(\{[^{}]*\}|\\[A-Za-z]+|[^\s{}\\_^()\[\]])"
+               r"\s*_\s*(\{[^{}]*\}|\\[A-Za-z]+|\w)", r"_\2^\1", s)
     s = lewis_dots(s)
     s = s.replace("\\dfrac", "\\frac").replace("\\tfrac", "\\frac").replace("\\%", "%")
     s = re.sub(r"\^\{\s*\^\{([^{}]*)\}\s*\}", r"^{\1}", s)  # n^{^{2}} (Inorganic Chemistry 2.1.2): n^2
@@ -288,6 +311,12 @@ def tex(s):
     s = environments(s)
     # Source typo: "\widetilde{ u}" (Inorganic Chemistry 2.1) — "\n" of \nu lost to a newline.
     s = re.sub(r"\\widetilde\{ u\}", "\\\\tilde{ν}", s)
+    # \widetilde{\nu}, \bar {\nu}: an accent over a Greek letter (Physical Chemistry 1.2, 1.4): ν̃, ν̄.
+    s = re.sub(r"\\(?:wide)?tilde\s*\{\s*\\([A-Za-z]+)\s*\}",
+               lambda m: unicodedata.normalize("NFC", SYMBOLS.get(m.group(1), m.group(1)) + "\u0303"), s)
+    s = re.sub(r"(?<![A-Za-z])\\bar\s*\{\s*(?:\\([A-Za-z]+)|(\w))\s*\}|(?<![A-Za-z])\\bar\s+(\w)",
+               lambda m: unicodedata.normalize("NFC", SYMBOLS.get(m.group(1), m.group(1)) if m.group(1)
+                                               else (m.group(2) or m.group(3))) + "\u0304", s)
     s = re.sub(r"\\(?:wide)?tilde\{?\s*(\w)\}?", lambda m: tilde(m.group(1)), s)  # \tilde{v}: wavenumber ṽ
     # \sum_i^n m_{l_i}: a space between the sum's limits and its term, Σi^n m_li, not Σi^nm_li (Inorganic Chemistry 11.2).
     s = re.sub(r"\\sum\s*_\{?(\w+)\}?\s*\^\{?(\w+)\}?\s*", "Σ_\\1^\\2\\\\ ", s)
@@ -390,6 +419,9 @@ def tex(s):
         body = expand_frac(body)  # \ce{(CH2)_{n} + \dfrac{3 n}{2} O2 -> …}
         s = s[:k] + "\\text{" + body.replace("_", "").replace("{", "").replace("}", "") + "}" + s[end:]
     s = re.sub(r"\\(text|textrm|mathrm|textbf|textit)\s*\{([^{}]*)\}", protect, s)
+    s = s.replace("\\!", "")  # a negative thin space: d\!ν
+    # An integral's limits end before its integrand: \int_0^k x^2 -> ∫0^k x^2, not ∫0^kx^2.
+    s = re.sub(r"(\\int\s*_\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w)\s*\^\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w))", r"\1\\ ", s)
     s = re.sub(r"\\[,;: ]|\\quad|\\qquad", "\x04", s)  # explicit TeX spaces survive
     s = re.sub(r"\\([A-Za-z]+)", lambda m: SYMBOLS.get(m.group(1), "\\" + m.group(1)) + "\x01", s)
     s = re.sub(r"\s+", "", s).replace("\x01", "")
@@ -433,7 +465,8 @@ def tex(s):
     def word_sub(content):
         # A sign in a subscript belongs to its label, and a label of several words is
         # grouped: NE^{\circ}_{+4~O.S.} -> NE°_(+4 O.S.) (Inorganic Chemistry 8.2.4.3).
-        if " " in content.strip():
+        # So is one holding an arrow or operator: \lim_{n_2 \to \infty} -> lim_(n2→∞).
+        if " " in content.strip() or re.search(r"[→=<>≤≥]", content):
             return "(" + sign(content.strip()) + ")"
         return content
 
@@ -712,6 +745,14 @@ class Page(HTMLParser):
             self.flush()
             self.out.append(f"[{tag.capitalize()} not described in source]")
             self.skip_at = len(self.stack)
+        if self.skip_at is None and tag == "iframe":
+            # An embedded player (YouTube) or simulation (PhET): Inorganic Chemistry
+            # 2.1 and Physical Chemistry 1.9 point to them in the text.
+            self.flush()
+            video = re.search(r"youtube\.com|youtu\.be|vimeo\.com", a.get("src") or "")
+            self.out.append("[Video not described in source]" if video
+                            else "[Interactive simulation not described in source]")
+            self.skip_at = len(self.stack)
         if self.skip_at is not None:
             self.stack.append(tag)
             return
@@ -926,13 +967,14 @@ class Page(HTMLParser):
             # p<sub>x</sub> -> p_x, ΔH<sub>vap</sub> -> ΔH_vap: a letter subscript on a
             # letter is marked, the corpus's convention. Digit subscripts (H<sub>2</sub>O)
             # stay plain, and so does one after a digit ("3 − 2<sub>x</sub>" in a formula).
+            # A closing bracket takes one too: (Hg)<sub>liquid</sub> (Physical Chemistry 1.4).
             where, i = self.sub_at
             self.sub_at = None
             text = self.cell if where == "cell" else self.buf
             if (
                 text is not None and 0 < i <= len(text)
                 and re.fullmatch(r"[A-Za-z]+\s*|\?", text[i:])  # "?" is a blank: PH<sub>?</sub>; "p<sub>z </sub>"
-                and re.match(r"[A-Za-zΔ]", text[i - 1])
+                and re.match(r"[A-Za-zΔ)]", text[i - 1])
             ):
                 text = text[:i] + "_" + text[i:]
                 if where == "cell":

@@ -142,17 +142,17 @@ Note that only F2 and Cl2 are gases in their natural states, so the energies ass
 
 - 2) Δ_EAH1 is the energy liberated when the atom is converted into a negative ion and is related to the Electron Affinity
 
-X_(g) + e^− → X^−_(g)
+X_(g) + e^− → X_(g)^−
 
 Addition of an electron to the small F atom is accompanied by larger e^-/e^- repulsion than is found for the larger Cl, Br or I atoms. This would suggest that the process for F should be less exothermic than for Cl and not fit the trend that shows a general decrease going down the group.
 
 - 3) Δ_hydH°(X^-,g) is the energy liberated upon the hydration of the ion, the Hydration energy.
 
-X^−_(g) + H2O → X^−_(aq)
+X_(g)^− + H2O → X_(aq)^−
 
 The overall reaction is then:
 
-½X_2(g) → X^−_(aq)
+½X_2(g) → X_(aq)^−
 
 Table 8.13.1.2
 
@@ -177,7 +177,7 @@ X2 + H2O_(l) → HX_(aq) + HXO_(aq)
 
 where X = Cl, Br, I. When base is added then the reaction goes to completion forming hypohalites, or at higher temperatures, halates; for example, heating dichlorine:
 
-3Cl_2(g) + 6OH^−_(aq) → ClO^−_3(aq) + 5Cl^−_(aq) + 3H2O(l)
+3Cl_2(g) + 6OH_(aq)^− → ClO_3(aq)^− + 5Cl_(aq)^− + 3H2O(l)
 
 ### First Ionization Energies
 
@@ -1330,15 +1330,15 @@ The chloride precipitate is easily identified, but the other two are quite simil
 
 The precipitates are insoluble silver halides: silver chloride, silver bromide or silver iodide. The formation of these is illustrated in the following equations:
 
-Ag^+_aq + Cl^−_(aq) → AgCl_(s)
+Ag_aq^+ + Cl_(aq)^− → AgCl_(s)
 
-Ag^+_aq + Br^−_(aq) → AgBr_(s)
+Ag_aq^+ + Br_(aq)^− → AgBr_(s)
 
-Ag^+_aq + I^−_(aq) → AgI_(s)
+Ag_aq^+ + I_(aq)^− → AgI_(s)
 
 Silver fluoride is soluble, so no precipitate is formed.
 
-Ag^+_aq + F^−_(aq) → Ag^+_aq + F^−_(aq)
+Ag_aq^+ + F_(aq)^− → Ag_aq^+ + F_(aq)^−
 
 #### Confirming the precipitate using ammonia solution
 
@@ -1920,11 +1920,11 @@ The negative ions, chloride and hydroxide, are attracted to the positively charg
 
 The major reaction at the anode is therefore:
 
-2Cl^−_(aq) → Cl_2(g) + 2e^−
+2Cl_(aq)^− → Cl_2(g) + 2e^−
 
 Two chloride ions each give up an electron to the anode, and the atoms produced combine into chlorine gas. The chlorine is, however, contaminated with small amounts of oxygen because of a reaction involving hydroxide ions, which also give up electrons:
 
-4OH^−_(aq) → 2H2O_(l) + O_2(g) + 4e^−
+4OH_(aq)^− → 2H2O_(l) + O_2(g) + 4e^−
 
 The chlorine must be purified by removing this oxygen.
 
@@ -1932,7 +1932,7 @@ The chlorine must be purified by removing this oxygen.
 
 Sodium ions and protons (from the water) are attracted to the negative cathode. It is much easier for a proton to pick up an electron than for a sodium ion to do so. Therefore, the following reaction occurs:
 
-2H^+_(aq) + 2e^− → H_2(g)
+2H_(aq)^+ + 2e^− → H_2(g)
 
 As protons convert into hydrogen gas, the equilibrium below shifts to the right to replace them:
 

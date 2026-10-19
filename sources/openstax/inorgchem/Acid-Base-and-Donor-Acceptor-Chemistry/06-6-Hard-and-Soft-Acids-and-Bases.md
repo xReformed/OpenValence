@@ -46,7 +46,7 @@ X = F << Cl < Br << I (for the solubility of LiX)
 
 The recognition that hard acids and bases possess a large HOMO-LUMO gap suggests that the gap size itself might serve as a useful index of hardness. The basis for this idea may be found by considering Pearson’s definition of absolute hardness, η.^1 Pearson's absolute hardness, η, is half the second derivative of a species' energy with respect to changes in total number of electrons, N_e^−.
 
-Pearson’s absolute hardness = η = 1/2(d^2 E)/(dN_e^−2)
+Pearson’s absolute hardness = η = 1/2 · (d^2 E)/(dN_e^−2)
 
 (in eV)
 

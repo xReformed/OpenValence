@@ -31,7 +31,7 @@ General periodic trends are specific patterns that are present within the period
 
 Ionization energy (IE) is the energy required to remove an electron from a neutral atom or cation in its gaseous phase. IE is also known as ionization potential.
 
-A^n+_(g) ⟶ A^{(n + 1)+}_(g) + e^−    IE = ΔU
+A_(g)^n+ ⟶ A_(g)^{(n + 1)+} + e^−    IE = ΔU
 
 Conceptually, ionization energy is the affinity of an element for its outermost electron (an electron it already has in its valence shell).
 
@@ -41,9 +41,9 @@ The symbol I1 stands for the first ionization energy (energy required to take aw
 
 [Note: corrected; the source prints "an atom with a +1 charge, n = 2.)" where this reads "an atom with a +1 charge, n = 1.)". In A^n+ ⟶ A^{(n + 1)+}, the ion with a +1 charge has n = 1 (the neutral atom has n = 0).]
 
-- First Ionization Energy, I1 (general element, A): A_(g) → A^1+_(g) + e^−
-- Second Ionization Energy, I2 (general element, A): A^1+_(g) → A^2+_(g) + e^−
-- Third Ionization Energy, I3 (general element, A): A^2+_(g) → A^3+_(g) + e^−
+- First Ionization Energy, I1 (general element, A): A_(g) → A_(g)^1+ + e^−
+- Second Ionization Energy, I2 (general element, A): A_(g)^1+ → A_(g)^2+ + e^−
+- Third Ionization Energy, I3 (general element, A): A_(g)^2+ → A_(g)^3+ + e^−
 
 Each succeeding ionization energy is larger than the preceding energy. This means that I1 < I2 < I3 < ... < In will always be true. For example, ionization energy increases as succeeding electrons are taken away from Mg.
 
@@ -89,7 +89,7 @@ Electron affinity can be defined as the energy required when an electron is remo
 
 [Note: the exceptions are not exactly the noble gases and the alkaline earth metals. Calcium, strontium and barium do form stable anions (electron affinities of about 2, 5 and 14 kJ/mol), while beryllium, magnesium, nitrogen, manganese and the group 12 metals (zinc, cadmium, mercury) do not, along with the noble gases. The same applies to the second definition below. The paragraph is left as printed.]
 
-A^−_(g) ⟶ A_(g) + e^−    EA = ΔU
+A_(g)^− ⟶ A_(g) + e^−    EA = ΔU
 
 The reaction shown in Equation (EA1) is similar those that define ionization energy. For this reason, the EA is also described as the zeroth ionization energy.
 
@@ -97,7 +97,7 @@ The reaction shown in Equation (EA1) is similar those that define ionization ene
 
 An alternate and more common definition is the microscopic reverse of Equation (EA1). This more common definition states that electron affinity is the energy released when an electron is added to a gaseous atom, as shown in Equation (EA2). The reaction as shown in equation (EA2) is exothermic (negative ΔU) for elements except noble gases and alkaline earth metals. The more negative this EA value, the higher an atom's affinity for electrons.
 
-A_(g) + e^− ⟶ A^−_(g)    EA = ΔU
+A_(g) + e^− ⟶ A_(g)^−    EA = ΔU
 
 [Note: with electron affinity defined as the energy released, EA is −ΔU of this reaction, not ΔU. That is how IUPAC's two definitions agree: both give the same positive value (chlorine about +349 kJ/mol), and the more positive the electron affinity, the higher the affinity for electrons. The equation is left as printed.]
 

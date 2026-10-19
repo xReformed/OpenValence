@@ -351,7 +351,7 @@ Table 9.3.4. Prefixes used to specify ligands' isomerism when naming and writing
 | --- | --- | --- |
 | when a multidentate ligand binds through less than the full number of atoms | [Image not described in source] | κ^n where n is the number of attached atoms; used when the attached atoms are not directly connected by a chemical bond. The metal-ligand bonding usually involves σ-type coordination. |
 | hapticity | [Image not described in source] | η^n where n is the number of attached atoms; used when the coordinated atoms are all connected by bonds. Usually the metal-ligand bonding involves π-type coordination. In speech, η^1=monohapto; η^2=dihapto; η^3=trihapto, etc. |
-| bridging ligands | [Image not described in source] | μn where n is the number of atoms bridged. The number n is usually omitted when n =2. |
+| bridging ligands | [Image not described in source] | μ_n where n is the number of atoms bridged. The number n is usually omitted when n =2. |
 | chelating ligand ring twist | [Image not described in source] | λ- or δ- |
 
 A example showing how the nomenclature rule is applied to a ligand that can have two coordination modes is given in Scheme 9.3.IV.

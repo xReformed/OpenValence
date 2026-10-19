@@ -15,7 +15,7 @@ Cyanohydrin formation is somewhat unusual because it is one of the few examples 
 
 Cyanohydrin formation is useful because of the further chemistry that can be carried out on the product. For example, a nitrile (R–C≡N) can be reduced with LiAlH4 to yield a primary amine (RCH2NH2) and can be hydrolyzed by hot aqueous acid to yield a carboxylic acid. Thus, cyanohydrin formation provides a method for transforming an aldehyde or ketone into a different functional group.
 
-[Note: corrected; the source prints "(\ce{R–C≡N}\)" where this reads "(R–C≡N)". The source's TeX markup is missing its opening delimiter, so the formula is not typeset.]
+[Note: corrected; the source prints "a nitrile R–C≡N can" where this reads "a nitrile (R–C≡N) can". The source's TeX markup is missing its opening delimiter, so the formula is not typeset.]
 
 [Image: Hydrogen cyanide converts benzaldehyde to mandelonitrile. Mandelonitrile is reduced to 2-amino-1-phenylethanol using lithium aluminum hydride in tetrahydrofuran, then hydronium. It’s hydrolyzed to mandelic acid (90 percent) in hydronium with heat.]
 

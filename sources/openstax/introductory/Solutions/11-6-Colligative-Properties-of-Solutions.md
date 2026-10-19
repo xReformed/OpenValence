@@ -59,7 +59,7 @@ Now that this new concentration unit has been introduced, the first colligative 
 
 P_soln = χ_solv P_solv^*
 
-where P_soln is the vapor pressure of the solution, χ_solv is the mole fraction of the solvent particles, and P^*_solv is the vapor pressure of the pure solvent at that temperature (which is data that must be provided). Equation (Raoult's law) is known as Raoult's law (the approximate pronunciation is rah-OOLT). Vapor pressure depression is rationalized by presuming that solute particles take positions at the surface in place of solvent particles, so not as many solvent particles can evaporate.
+where P_soln is the vapor pressure of the solution, χ_solv is the mole fraction of the solvent particles, and P_solv^* is the vapor pressure of the pure solvent at that temperature (which is data that must be provided). Equation (Raoult's law) is known as Raoult's law (the approximate pronunciation is rah-OOLT). Vapor pressure depression is rationalized by presuming that solute particles take positions at the surface in place of solvent particles, so not as many solvent particles can evaporate.
 
 ### Example 11.6.2: Vapor Pressure Reduction
 

@@ -40,7 +40,7 @@ Note that UV spectra differ from IR spectra in how they are presented. For histo
 Figure 14.7.3: The ultraviolet spectrum of 1,3-butadiene, λmax = 217 nm.
 The ultraviolet spectrum of 1,3-butadiene shows a peak at (217, 0.85) where lambda max equals 217 nanometers. The x-axis and y-axis represent wavelength and absorbance, respectively.
 
-The amount of UV light absorbed is expressed as the sample’s molar absorptivity (ϵ), defined by the equation
+The amount of UV light absorbed is expressed as the sample’s molar absorptivity (ε), defined by the equation
 
 ε = A/(c × l)
 

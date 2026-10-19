@@ -20,8 +20,6 @@ export default function ChatComposer({
     el.style.height = `${Math.min(el.scrollHeight, MAX_ROWS_PX)}px`;
   }, [value]);
 
-  /* The box stays editable while an answer loads, so the next question can be
-     typed; only sending waits. */
   const canSend = !busy && value.trim() !== "";
   const submit = () => {
     if (!canSend) return;
