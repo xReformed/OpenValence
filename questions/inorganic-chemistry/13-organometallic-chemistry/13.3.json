@@ -1,0 +1,338 @@
+[
+  {
+    "id": "ic13-3-methods-agree",
+    "type": "multiple-choice",
+    "prompt": "The section teaches two ways to count valence electrons: the donor pair method and the neutral atom (neutral ligand) method. How do their results compare?",
+    "choices": [
+      {
+        "text": "Done correctly, both give the same total electron count",
+        "correct": true
+      },
+      {
+        "text": "The donor pair method gives 1 more electron for every X-type ligand",
+        "why": "X-type ligands do donate 2 electrons in the donor pair method instead of 1, but the metal is counted with 1 fewer electron per X ligand (its oxidation state), so the totals match."
+      },
+      {
+        "text": "The neutral atom method works only for complexes with no overall charge",
+        "why": "Step 2 of the neutral atom method handles charge: subtract the charge of a cation, or add the charge of an anion."
+      },
+      {
+        "text": "Only the donor pair method gives the true count; the neutral atom method is an approximation",
+        "why": "Both lead to the same result if done correctly. Which one you use is \"personal taste\", and both are about equally common in the literature."
+      }
+    ],
+    "explanation": "Each of the two methods leads to the same result if done correctly. For cis-[PtCl2(NH3)2], for example, the donor pair method gives 8 (Pt^{II}) + 8 (four 2-electron ligands) = 16, and the neutral atom method gives 10 (Pt) + 2 (two Cl) + 4 (two NH3) = 16."
+  },
+  {
+    "id": "ic13-3-donor-pair-advantage",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is an advantage of the donor pair method?",
+    "choices": [
+      {
+        "text": "It treats metal–ligand bonds as dative bonds, so you always cleave them heterolytically and never have to cleave them in artificial ways",
+        "correct": true
+      },
+      {
+        "text": "It never requires you to work out the metal's oxidation state or the ligands' charges",
+        "why": "That is the neutral atom method's advantage. The donor pair method's disadvantage is that it requires calculating ligand charges to find the oxidation state."
+      },
+      {
+        "text": "It always cleaves bonds homolytically, so every ligand and the metal end up neutral",
+        "why": "Homolytic cleavage to neutral fragments is part of the neutral atom method. The donor pair method always cleaves heterolytically."
+      },
+      {
+        "text": "It gives a count closer to 18 than the neutral atom method does",
+        "why": "The two methods give the same total. For cisplatin, both give 16."
+      }
+    ],
+    "explanation": "The donor pair method accounts for the donor–acceptor nature of a coordination compound: bonds are considered dative, and electrons are assigned to the ligands and metal accordingly. Because bonds are always cleaved heterolytically, there is no need to cleave them artificially. Its disadvantage is the extra, non-trivial step of calculating ligand charges and the metal's oxidation state."
+  },
+  {
+    "id": "ic13-3-neutral-method-drawback",
+    "type": "multiple-choice",
+    "prompt": "What is the main disadvantage of the neutral atom method?",
+    "choices": [
+      {
+        "text": "You must decide how to cleave bonds to give neutral fragments, sometimes in a way that is contrary to the real donor–acceptor nature of the bond",
+        "correct": true
+      },
+      {
+        "text": "You must calculate the charge on every ligand to find the metal's oxidation state",
+        "why": "That is the donor pair method's disadvantage. The neutral atom method's advantage is that it skips charges and oxidation states."
+      },
+      {
+        "text": "It can't be applied to charged complexes",
+        "why": "It can: step 2 subtracts electrons for a positive charge on the complex and adds electrons for a negative charge."
+      },
+      {
+        "text": "It always gives a total that is 2 electrons lower than the donor pair method",
+        "why": "Done correctly, both methods give the same total."
+      }
+    ],
+    "explanation": "The neutral atom method has the advantage that we don't have to calculate ligand charges or metal oxidation states. The disadvantage is that we must think about how to cleave bonds to create neutral fragments, and we may need to cleave them in a way that is contrary to the real donor–acceptor nature of a coordination compound."
+  },
+  {
+    "id": "ic13-3-cisplatin-pt-electrons",
+    "type": "numeric",
+    "prompt": "In step 2 of the donor pair method for cis-[PtCl2(NH3)2], you find the number of valence electrons on the metal ion. Pt is in group 10 and is Pt(II) here. How many valence electrons does Pt(II) have?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "Two Cl^− ligands and two neutral NH3 ligands give −2 total, so in the neutral complex Pt is +2. Subtracting the oxidation state from the group number gives 10 − 2 = 8. Each of the four ligands is a 2-electron donor (8 more), so the total is 16. The neutral atom method agrees: 10 + 2(1) + 2(2) = 16."
+  },
+  {
+    "id": "ic13-3-cisplatin-ligand-electrons",
+    "type": "numeric",
+    "prompt": "Using the neutral atom method for cis-[PtCl2(NH3)2], how many electrons do the four ligands contribute in total?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "In the neutral atom method each Cl is considered to donate 1 electron and each ammine 2 electrons: 2(1) + 2(2) = 6. With 10 electrons from neutral Pt (group 10) and no charge to account for, the total is 10 + 6 = 16, the same as the donor pair count of 8 + 8 = 16."
+  },
+  {
+    "id": "ic13-3-pd-bond-cleavage",
+    "type": "multiple-choice",
+    "prompt": "In the neutral atom method for square planar [PdCl2(NH3)2], how must the Pd–Cl and Pd–N bonds be cleaved to give neutral fragments?",
+    "choices": [
+      {
+        "text": "Pd–Cl bonds homolytically and Pd–N bonds heterolytically",
+        "correct": true
+      },
+      {
+        "text": "Both kinds of bonds heterolytically, with both electrons going to the ligand",
+        "why": "That is the donor pair way. It turns each Cl into Cl^−, which isn't a neutral fragment."
+      },
+      {
+        "text": "Pd–Cl bonds heterolytically and Pd–N bonds homolytically",
+        "why": "That gives charged fragments: Cl^− from the Pd–Cl bond and a cationic NH3 from splitting the N lone pair."
+      },
+      {
+        "text": "Both kinds of bonds homolytically, with one electron going to each side",
+        "why": "Splitting the Pd–N dative bond homolytically would leave NH3 with a positive charge. Ammine must keep both electrons to stay neutral."
+      }
+    ],
+    "explanation": "To get neutral ligands, the Pd–Cl bonds are cleaved homolytically (giving neutral Cl atoms, 1-electron donors) and the Pd–N bonds heterolytically (giving neutral NH3, 2-electron donors). The count is 10 (Pd) + 4 (two NH3) + 2 (two Cl) = 16. By the donor pair method: Pd(II) has 8, plus 4 × 2 = 8, for 16."
+  },
+  {
+    "id": "ic13-3-eighteen-basis",
+    "type": "multiple-choice",
+    "prompt": "What is the typical explanation for why 18 is a favorable valence electron count for transition metal complexes?",
+    "choices": [
+      {
+        "text": "Filling the metal's nine valence orbitals (one s, three p, five d) takes 18 electrons",
+        "correct": true
+      },
+      {
+        "text": "A metal's d subshell can hold up to 18 electrons",
+        "why": "The five d orbitals hold only 10 electrons. The 18 comes from the s, p and d orbitals together."
+      },
+      {
+        "text": "Stable complexes have nine ligands, and each donates two electrons",
+        "why": "Coordination number 9 is too high for a stable complex, as the tetrabenzyltitanium example shows. The 18 counts metal and ligand electrons together."
+      },
+      {
+        "text": "Eighteen is the octet of 8 plus the 10 electrons of the metal's d subshell",
+        "why": "The octet rule is an analogy for main-group elements, not part of the count. The 18 fills one s, three p and five d orbitals."
+      }
+    ],
+    "explanation": "A valence configuration that fills all valence orbitals, ns^2 (n − 1)d^10 np^6, is equivalent to a noble-gas configuration and is analogous to the octet rule. The typical explanation points to 9 valence orbitals (1 s, 3 p, 5 d). The section adds that this is an \"empirical guideline\" with little theoretical support, since p orbital participation in complex MOs is unlikely, but the rule is still very useful."
+  },
+  {
+    "id": "ic13-3-sixteen-unsaturated",
+    "type": "multiple-choice",
+    "prompt": "A transition metal complex has a total valence electron count of 16. How does the section classify it, and how does it tend to react?",
+    "choices": [
+      {
+        "text": "Coordinatively unsaturated; it tends to add ligands and to be reduced",
+        "correct": true
+      },
+      {
+        "text": "Coordinatively unsaturated; it tends to lose ligands and to be oxidized",
+        "why": "Losing ligands and oxidation lower the count further. That is how oversaturated complexes (more than 18 electrons) react."
+      },
+      {
+        "text": "Coordinatively saturated; it is at the most stable count and doesn't react",
+        "why": "Coordinatively saturated means exactly 18 electrons. A 16-electron complex is below that."
+      },
+      {
+        "text": "Coordinatively oversaturated; it tends to add ligands",
+        "why": "Oversaturated means more than 18 electrons. A 16-electron complex has fewer than 18."
+      }
+    ],
+    "explanation": "Coordinatively unsaturated complexes have fewer than 18 electrons. They tend to undergo associations that add ligands and electrons, and to gain electrons through redox reactions (the metal is reduced). Saturated complexes have exactly 18, and oversaturated complexes have more than 18 and tend to lose ligands and be oxidized."
+  },
+  {
+    "id": "ic13-3-rh-d-count",
+    "type": "numeric",
+    "prompt": "A neutral rhodium complex (Rh is in group 9) has one chloride, an X-type ligand, and three L-type ligands. Using number of d electrons = group number − oxidation state, how many d electrons does Rh have?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "Oxidation state = number of X-type ligands + overall charge = 1 + 0 = +1, so this is Rh(I). Number of d electrons = 9 − 1 = 8: rhodium's 9 valence electrons minus the 1 used for bonding to Cl. The three L-type (dative) ligands don't change the d count, because both electrons in each of those bonds come from the ligand."
+  },
+  {
+    "id": "ic13-3-fe-cp-ethyl-count",
+    "type": "numeric",
+    "prompt": "Using the donor pair method, what is the total valence electron count of CpFe(CO)2(CH2CH3), an Fe(II) complex with an η^5-Cp ligand, two CO ligands and an ethyl ligand?",
+    "answer": 18,
+    "tolerance": 0,
+    "explanation": "Cp and ethyl are the X-type ligands, so the oxidation state is 2 + 0 = +2 and Fe(II) has 8 − 2 = 6 d electrons. The ligands give 6 (Cp, an L2X ligand) + 2 + 2 (two CO) + 2 (ethyl) = 12, so the total is 6 + 12 = 18. Neutral atom check: 8 (Fe) + 5 (Cp) + 2 + 2 (CO) + 1 (ethyl) = 18."
+  },
+  {
+    "id": "ic13-3-mo-oxidation-state",
+    "type": "numeric",
+    "prompt": "[CpMo(CO)3(H2O)]^+ has one η^5-Cp ligand (L2X), three CO ligands, a water ligand and an overall charge of +1. Using oxidation state = number of X-type ligands + overall charge, what is the oxidation state of Mo (give the sign)?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Cp has one X-type binding point; CO and H2O are dative, L-type ligands. Oxidation state = 1 + 1 = +2, since the overall positive charge is lumped into the oxidation state. Mo is in group 6, so Mo(II) has 6 − 2 = 4 d electrons, and the total count is 4 + (6 + 2 + 2 + 2 + 2) = 18. Neutral atom check: 6 − 1 (for the + charge) + 5 + 2 + 2 + 2 + 2 = 18."
+  },
+  {
+    "id": "ic13-3-cobaltocene-count",
+    "type": "numeric",
+    "prompt": "Using the donor pair method, how many valence electrons does cobaltocene, CoCp2 (two η^5-Cp ligands), have?",
+    "answer": 19,
+    "tolerance": 0,
+    "explanation": "Two Cp^− ligands make cobalt Co(II), with 9 − 2 = 7 d electrons. Each Cp donates 6 electrons, so the total is 7 + (6 + 6) = 19. Neutral atom check: 9 (Co) + 5 + 5 = 19. With one electron more than 18, cobaltocene is coordinatively oversaturated."
+  },
+  {
+    "id": "ic13-3-cobaltocene-reactivity",
+    "type": "multiple-choice",
+    "prompt": "Based on its valence electron count, how does the section say cobaltocene, CoCp2, behaves?",
+    "choices": [
+      {
+        "text": "It is a good one-electron reducing agent, giving up an electron to form [CoCp2]^+",
+        "correct": true
+      },
+      {
+        "text": "It is a good one-electron oxidizing agent, taking up an electron to form [CoCp2]^−",
+        "why": "Gaining an electron would move the count to 20, further from 18. Cobaltocene gives an electron away instead."
+      },
+      {
+        "text": "It adds a two-electron ligand to reach a more stable count",
+        "why": "Adding a 2-electron ligand would give 21 electrons. Complexes with more than 18 electrons tend to lose ligands, not gain them."
+      },
+      {
+        "text": "It is coordinatively saturated and unreactive",
+        "why": "Coordinatively saturated means exactly 18 electrons. With 19, cobaltocene is oversaturated."
+      }
+    ],
+    "explanation": "With 7 + (6 + 6) = 19 electrons, cobaltocene can relieve the strain of not having 18 electrons by giving up an electron. In practice it is a great one-electron reducing agent and can be used to prepare anionic complexes through electron transfer: CoCp2 + MLn → [CoCp2]^+ + [MLn]^−."
+  },
+  {
+    "id": "ic13-3-which-has-18",
+    "type": "multiple-choice",
+    "prompt": "Using the donor pair method, which of these complexes has exactly 18 valence electrons?",
+    "choices": [
+      {
+        "text": "[CoCp2]^+",
+        "correct": true
+      },
+      {
+        "text": "CoCp2",
+        "why": "Neutral cobaltocene is Co(II), d^7: 7 + 6 + 6 = 19 electrons."
+      },
+      {
+        "text": "[FeCp2]^+",
+        "why": "This cation is Fe(III), d^5: 5 + 6 + 6 = 17 electrons."
+      },
+      {
+        "text": "cis-[PtCl2(NH3)2]",
+        "why": "Cisplatin is Pt(II), d^8, with four 2-electron ligands: 8 + 8 = 16 electrons."
+      }
+    ],
+    "explanation": "In [CoCp2]^+, two Cp^− ligands and the +1 charge make cobalt Co(III), with 9 − 3 = 6 d electrons; 6 + 6 + 6 = 18. Neutral atom check: 9 − 1 (for the + charge) + 5 + 5 = 18. This is why cobaltocene (19 electrons) readily gives up one electron to form [CoCp2]^+."
+  },
+  {
+    "id": "ic13-3-exception-groups",
+    "type": "multiple-choice",
+    "prompt": "According to the section, complexes of which groups most often deviate from the 18-electron rule?",
+    "choices": [
+      {
+        "text": "Groups 3, 4 and 10",
+        "correct": true
+      },
+      {
+        "text": "Groups 6, 7 and 8",
+        "why": "The section doesn't single these out. Its 18-electron examples, the Fe(II) and Mo(II) complexes it counts, come from this part of the table."
+      },
+      {
+        "text": "Groups 5, 9 and 11",
+        "why": "The section names groups 3, 4 and 10 as the ones that deviate often."
+      },
+      {
+        "text": "Groups 11 and 12 only",
+        "why": "The section's exceptions are groups 3 and 4 (few d electrons) and group 10 (square planar 16-electron complexes)."
+      }
+    ],
+    "explanation": "The 18-electron rule has many exceptions; group 3, 4 and 10 complexes deviate from it often. Groups 3 and 4 have too few d electrons to reach 18 without too many ligands or too much negative charge, and group 10 metals in the +2 oxidation state form square planar complexes, which prefer 16 electrons."
+  },
+  {
+    "id": "ic13-3-tibenzyl-count",
+    "type": "numeric",
+    "prompt": "Using the neutral atom method, what is the total valence electron count of tetrabenzyltitanium(IV), Ti(CH2C6H5)4, a neutral tetrahedral complex?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "Neutral Ti (group 4) has 4 valence electrons, the complex has no charge, and each benzyl, cleaved homolytically to a neutral fragment, donates 1 electron: 4 + 4(1) = 8. The section's donor pair (oxidation state) count agrees: four benzyl anions make Ti(IV), with 4 − 4 = 0 electrons, and each ligand donates 2: 0 + 8 = 8."
+  },
+  {
+    "id": "ic13-3-tibenzyl-stability",
+    "type": "multiple-choice",
+    "prompt": "Tetrabenzyltitanium(IV) is stable even though its valence electron count is far below 18. How does the section explain this?",
+    "choices": [
+      {
+        "text": "Reaching 18 would need five more 2-electron ligands (coordination number 9) or ten added electrons (a 10− charge), and both are too much",
+        "correct": true
+      },
+      {
+        "text": "Titanium is a group 10 metal, and group 10 complexes prefer 16 rather than 18 electrons",
+        "why": "Titanium is in group 4. The 16-electron preference applies to square planar group 10 complexes such as [PdCl2(NH3)2]."
+      },
+      {
+        "text": "Each benzyl ligand actually donates 4 electrons, so the complex is not really electron-poor",
+        "why": "Each benzyl is a 2-electron donor in the donor pair method (1 in the neutral atom method). Both methods give 8."
+      },
+      {
+        "text": "The complex is square planar, and square planar complexes prefer 8 electrons",
+        "why": "Tetrabenzyltitanium(IV) is tetrahedral, and the section says square planar complexes prefer 16 electrons, not 8."
+      }
+    ],
+    "explanation": "To reach 18 electrons, the complex would need five additional 2-electron ligands, raising the coordination number to 9, which is too high for a stable complex. Adding 10 electrons instead would give a 10− charge, far too high because of electron–electron repulsion. Group 3 and 4 metals have only a few d electrons, so this argument applies to them generally."
+  },
+  {
+    "id": "ic13-3-group10-sixteen",
+    "type": "multiple-choice",
+    "prompt": "Why are 16-electron complexes common for group 10 metals such as Pd and Pt?",
+    "choices": [
+      {
+        "text": "In the +2 oxidation state they like to form square planar complexes, which prefer 16 rather than 18 electrons",
+        "correct": true
+      },
+      {
+        "text": "They have so few d electrons that reaching 18 would need too many ligands",
+        "why": "That is the explanation for groups 3 and 4. Group 10 elements have many d electrons, so this argument doesn't apply."
+      },
+      {
+        "text": "They are coordinatively oversaturated, so they lose ligands until they reach 16",
+        "why": "Oversaturated means more than 18 electrons. A 16-electron complex is below 18, and its count reflects the square planar preference."
+      },
+      {
+        "text": "The neutral atom method undercounts chloride ligands, so the real count is 18",
+        "why": "Both methods give 16 for [PdCl2(NH3)2]. The low count is real, not a counting artifact."
+      }
+    ],
+    "explanation": "The group 3 and 4 arguments can't be applied to group 10, because these elements have many d electrons. Instead, group 10 metals like to form square planar complexes when their oxidation number is +2, and square planar complexes prefer 16 electrons. Square planar [PdCl2(NH3)2], with 10 + 4 + 2 = 16 electrons, is the section's example."
+  },
+  {
+    "id": "ic13-3-ptcl4-count",
+    "type": "numeric",
+    "prompt": "Using the neutral atom method, what is the total valence electron count of [PtCl4]^2−?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "Neutral Pt (group 10) has 10 electrons. The complex is a 2− anion, so add 2. Each Cl, cleaved homolytically to a neutral atom, donates 1: 10 + 2 + 4 = 16. Donor pair check: four Cl^− and a 2− overall charge make Pt(II), with 10 − 2 = 8 electrons, plus 4 × 2 = 8 from the ligands: 16, the count typical of square planar group 10 complexes."
+  },
+  {
+    "id": "ic13-3-fe-co4-negative",
+    "type": "numeric",
+    "prompt": "In the donor pair method, a negative oxidation state means you add electrons to the group number instead of subtracting. How many valence electrons does the iron center contribute in [Fe(CO)4]^2−?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "CO is a neutral L-type ligand, so the whole 2− charge sits on iron: Fe(−II). Fe is in group 8, so it contributes 8 + 2 = 10 electrons. Adding 4 × 2 = 8 from the CO ligands gives 18. Neutral atom check: 8 (Fe) + 2 (anionic charge) + 8 (four CO) = 18."
+  }
+]

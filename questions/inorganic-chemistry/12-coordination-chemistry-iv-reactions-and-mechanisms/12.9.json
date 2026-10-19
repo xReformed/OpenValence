@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ic12-9-bound-water-acidity",
+    "type": "multiple-choice",
+    "prompt": "Compare H2O ⇌ H^+ + OH^− with [Zn(H2O)]^2+ ⇌ H^+ + [Zn(OH)]^+. In which case is water the better acid, and why?",
+    "choices": [
+      {
+        "text": "Water bound to Zn^2+, because the metal–ligand bond weakens the O–H bond and stabilizes the conjugate base",
+        "correct": true
+      },
+      {
+        "text": "Free water, because Zn^2+ holds the protons more tightly",
+        "why": "Binding to a Lewis acidic metal makes the protons more acidic: water's pKa drops from 14 to 10 on Zn^2+."
+      },
+      {
+        "text": "Free water, because hydroxide is more stable as a free ion",
+        "why": "Hydroxide is stabilized when it is bound to Zn^2+, which favors deprotonation of the bound water."
+      },
+      {
+        "text": "Neither; the bond to Zn^2+ is purely electrostatic, so the acidity is unchanged",
+        "why": "The bond between H2O and Zn is considered covalent, and it makes bound water a much better acid (pKa 10 versus 14)."
+      }
+    ],
+    "explanation": "Transition metal ions act as Lewis acids. Water bound to Zn^2+ is a better acid than free water: the metal–ligand interaction weakens the O–H bond and stabilizes the conjugate base formed on deprotonation. The pKa drops from 14 for free water to 10 for water bound to Zn^2+ in aqueous solution."
+  },
+  {
+    "id": "ic12-9-zinc-sulfate-ph",
+    "type": "numeric",
+    "prompt": "Water bound to Zn^2+ in aqueous solution has pKa = 10. Treating the zinc aqua ion as a weak acid, what is the pH of a 0.1 M ZnSO4 solution, to one decimal place?",
+    "answer": 5.5,
+    "tolerance": 0.02,
+    "explanation": "Ka = 10^−10. With 0.1 M Zn^2+ and x = [H^+], x^2/0.1 ≈ 10^−10, so x = √(10^−11) ≈ 3.2 × 10^−6 M and pH = −log(3.2 × 10^−6) ≈ 5.5. Pure water has pH 7, so dissolving the zinc salt makes the solution clearly acidic."
+  },
+  {
+    "id": "ic12-9-alkali-vs-transition",
+    "type": "multiple-choice",
+    "prompt": "Transition metal ions dramatically lower the pH of water, but alkali metal ions do not significantly affect it. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "Transition metals form more covalent bonds with water, while alkali metal–water interactions are more electrostatic",
+        "correct": true
+      },
+      {
+        "text": "Alkali metals form more covalent bonds with water than transition metals do",
+        "why": "This is reversed. The more covalent interaction is what lets transition metals acidify bound water."
+      },
+      {
+        "text": "Alkali metal ions do not interact with water at all",
+        "why": "Alkali metal ions do interact with water; the interaction is simply more electrostatic in character."
+      },
+      {
+        "text": "Alkali metals have partially filled d subshells that prevent bonding",
+        "why": "It's the transition metals that have partially filled d subshells. Alkali metal ions have noble gas configurations."
+      }
+    ],
+    "explanation": "Transition metals form more covalent bonds with water, which lowers the pKa of the bound water and so the solution pH; alkali metal interactions are more electrostatic. The section suggests why: alkali metal ions have the electron configurations of the noble gases, which may make covalent bonding unfavorable, while the partially filled d orbitals of transition metals enable bonding interactions with ligands."
+  },
+  {
+    "id": "ic12-9-cysteine-thiolate",
+    "type": "multiple-choice",
+    "prompt": "When a transition metal binds a cysteine side chain, it usually binds the thiolate (R–S^−) form. Why does the cysteine lose its proton?",
+    "choices": [
+      {
+        "text": "Binding to the metal weakens the S–H bond and lowers the thiol's pKa so much that, near neutral pH, the proton is lost",
+        "correct": true
+      },
+      {
+        "text": "Binding to the metal raises the thiol's pKa, which pushes the proton off",
+        "why": "A higher pKa would make the proton harder to remove. Metal binding lowers the pKa."
+      },
+      {
+        "text": "Free cysteine is already fully deprotonated near neutral pH, so the metal simply binds the thiolate already present",
+        "why": "The section says it is binding to the metal that lowers the pKa enough for the proton to be lost near neutral pH."
+      },
+      {
+        "text": "The metal oxidizes the sulfur, which releases H^+",
+        "why": "No redox is involved. The metal acts as a Lewis acid that polarizes the S–H bond."
+      }
+    ],
+    "explanation": "Bonding of the cysteine S to a metal ion weakens the S–H bond and increases the acidity of that proton, so its pKa decreases. Under biological conditions, near neutral pH, the pKa can drop so far that the H is lost, leaving the conjugate base thiolate bound to the metal."
+  },
+  {
+    "id": "ic12-9-carbonic-anhydrase-his",
+    "type": "numeric",
+    "prompt": "In the active site of human carbonic anhydrase IV, how many histidine side chains are bound to the zinc ion?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The Zn active site has zinc bound to 3 histidine (His) side chains. The Zn^2+ acts as a Lewis acid: it lowers the pKa of the water it binds and stabilizes the hydroxide nucleophile that converts CO2 into bicarbonate."
+  },
+  {
+    "id": "ic12-9-active-site-ka-factor",
+    "type": "numeric",
+    "prompt": "The pKa of water is 10 in aqueous [Zn(H2O)6]^2+ but 7 in the zinc active site of carbonic anhydrase. By what factor is the Ka of the active-site water larger?",
+    "answer": 1000,
+    "tolerance": 0,
+    "explanation": "pKa = −log Ka, so a drop of 3 pKa units means Ka is 10^3 = 1000 times larger: it goes from 10^−10 to 10^−7. The protein environment around the Zn site lowers the pKa even further than aqueous Zn^2+ does."
+  },
+  {
+    "id": "ic12-9-active-site-pocket",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what lets the carbonic anhydrase active site lower the pKa of zinc-bound water below its value in aqueous [Zn(H2O)6]^2+?",
+    "choices": [
+      {
+        "text": "The hydrophobic pocket around the Zn site, which cannot stabilize charges the way bulk water does",
+        "correct": true
+      },
+      {
+        "text": "The active-site zinc is bound to six water molecules",
+        "why": "The active-site Zn is bound to three histidine side chains, not six waters. It's the protein's hydrophobic pocket that matters."
+      },
+      {
+        "text": "The active site is more polar than bulk water",
+        "why": "It's the opposite: the pocket is hydrophobic, unlike bulk water, where charges are well solvated."
+      },
+      {
+        "text": "The zinc is replaced by an alkali metal ion in the enzyme",
+        "why": "Alkali metal ions don't significantly affect water's acidity. Carbonic anhydrase uses Zn^2+."
+      }
+    ],
+    "explanation": "The pKa of water is 14 when free, 10 in aqueous [Zn(H2O)6]^2+, and 7 in the active site of carbonic anhydrase. The extra lowering comes from the protein environment: the section credits the hydrophobic pocket of the active site, which makes charge separation less stable than in bulk water, where charges are better solvated."
+  },
+  {
+    "id": "ic12-9-deprotonation-at-ph",
+    "type": "multiple-choice",
+    "prompt": "In carbonic anhydrase, why does the water deprotonation step become favorable at a biological pH of 7.4?",
+    "choices": [
+      {
+        "text": "The active site lowers the pKa of the Zn-bound water to 7, below the pH",
+        "correct": true
+      },
+      {
+        "text": "The active site raises the pKa of the Zn-bound water above the pH",
+        "why": "If the pKa were above 7.4, deprotonation would be unfavorable. The active site lowers it to 7."
+      },
+      {
+        "text": "Free water already has a pKa of 7, below the pH",
+        "why": "Free water has a pKa of 14. Without the metal and protein, this step would be nearly impossible at pH 7.4."
+      },
+      {
+        "text": "The pKa stays at 10, but the enzyme raises the pH of the blood",
+        "why": "The step becomes favorable because the pKa is lowered to 7, below the pH, not because the pH changes."
+      }
+    ],
+    "explanation": "For water with a high pKa, deprotonation at pH 7.4 would happen too infrequently to be useful in biological systems. In carbonic anhydrase, the Zn site and its protein environment lower the pKa of the bound water to 7, below the pH, so the water deprotonation step becomes so favorable that it happens spontaneously. The resulting Zn-bound hydroxide is the nucleophile that converts CO2 into bicarbonate (HCO3^−)."
+  },
+  {
+    "id": "ic12-9-template-reaction",
+    "type": "multiple-choice",
+    "prompt": "What is a template reaction?",
+    "choices": [
+      {
+        "text": "A reaction in which a metal ion brings reactive sites close together, giving a different product from the one formed without the metal",
+        "correct": true
+      },
+      {
+        "text": "A reaction in which a metal ion catalyzes hydrolysis by lowering the pKa of a bound water",
+        "why": "That is metal-catalyzed hydrolysis. A template reaction uses the metal to bring reactive sites into close proximity."
+      },
+      {
+        "text": "A reaction that gives the same product with or without the metal, only faster with it",
+        "why": "In a template reaction, the metal changes the product: without it, the same reaction gives a different product, such as a polymer."
+      },
+      {
+        "text": "A reaction in which coordination makes a ligand carbon nucleophilic toward electrophiles",
+        "why": "That describes electrophilic substitution on a coordinated ligand such as acac."
+      }
+    ],
+    "explanation": "A template reaction is one in which a metal ion acts as a template to bring reactive sites into close proximity. In the absence of the metal ion, the same reaction proceeds to a different product. For example, the dialkylation of nickel dithiolate works on the Ni template, while the same dialkylation without the Ni template creates a polymer."
+  },
+  {
+    "id": "ic12-9-crown-ether-template",
+    "type": "multiple-choice",
+    "prompt": "18-crown-6 can be made by a Williamson ether synthesis templated by a metal cation. Which cation is the template, and what forms without it?",
+    "choices": [
+      {
+        "text": "K^+; without the template, the reaction forms a polymer",
+        "correct": true
+      },
+      {
+        "text": "K^+; without the template, the same crown ether forms, only more slowly",
+        "why": "A template changes the product, not just the rate. Without the metal, the same reaction forms a polymer."
+      },
+      {
+        "text": "Ni^2+; without the template, the reaction forms a polymer",
+        "why": "Nickel is the template in the dithiolate dialkylation. For 18-crown-6, the template cation is potassium ion."
+      },
+      {
+        "text": "Zn^2+; without the template, the same crown ether forms, only more slowly",
+        "why": "Zn^2+ appears in the section as a Lewis acid in hydrolysis. The 18-crown-6 synthesis uses K^+, and without it a polymer forms."
+      }
+    ],
+    "explanation": "18-crown-6 can be synthesized by the Williamson ether synthesis using potassium ion as the template cation. As with the dialkylation of nickel dithiolate, the same reaction carried out without the template metal would form a polymer."
+  },
+  {
+    "id": "ic12-9-acac-nucleophilic-carbon",
+    "type": "multiple-choice",
+    "prompt": "Coordination of acetylacetone (acac) to a metal ion makes the ligand's central carbon react with electrophiles. Why?",
+    "choices": [
+      {
+        "text": "Coordination induces enol tautomerization, placing electron density on the central alpha carbon and making it a potent nucleophile",
+        "correct": true
+      },
+      {
+        "text": "Coordination removes electron density from the central carbon, making it a strong electrophile",
+        "why": "The central carbon gains electron density and becomes nucleophilic, which is why it reacts with electrophiles."
+      },
+      {
+        "text": "Coordination lowers the pKa of a bound water, which then attacks the electrophile",
+        "why": "That is the metal-catalyzed hydrolysis idea. Here the reactive site is the acac ligand's own central carbon."
+      },
+      {
+        "text": "The metal holds two acac ligands close together so that they react with each other",
+        "why": "That describes a template reaction. Electrophilic substitution happens at the nucleophilic central carbon of the acac ligand."
+      }
+    ],
+    "explanation": "Metal binding can shift electron density within a ligand, giving positions on it new reactivity. Coordination to acac induces enol tautomerization, placing electron density at the central alpha carbon and making it a potent nucleophile. It then reacts with electrophiles (E^+) in a manner similar to the electrophilic aromatic substitution reactions of organic chemistry."
+  }
+]

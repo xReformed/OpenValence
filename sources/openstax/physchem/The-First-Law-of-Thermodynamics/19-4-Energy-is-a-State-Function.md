@@ -1,0 +1,8 @@
+---
+title: "19.4: Energy is a State Function"
+book: "Physical Chemistry (LibreTexts)"
+chapter: "19: The First Law of Thermodynamics"
+source_url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.04%3A_Energy_is_a_State_Function"
+author: "Anonymous"
+license: "CC BY-NC-SA 4.0"
+---

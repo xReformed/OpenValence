@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ic12-6-solvent-assisted-term",
+    "type": "multiple-choice",
+    "prompt": "Substitution in square planar complexes often follows rate = k_1[ML3X] + k_2[ML3X][Y]. Why does the first-order k_1 term still correspond to an associative pathway?",
+    "choices": [
+      {
+        "text": "Solvent associates and replaces X in the rate-determining step, but the solvent concentration barely changes, so it doesn't appear in the rate law",
+        "correct": true
+      },
+      {
+        "text": "X dissociates first, and the resulting three-coordinate intermediate then picks up Y",
+        "why": "The section treats both terms as associative. In the k_1 pathway, bulk solvent replaces X and is then replaced by Y."
+      },
+      {
+        "text": "The k_1 term is the dissociative contribution, and only the k_2 term is associative",
+        "why": "Both terms are associative. The k_1 term looks first order only because solvent, present in huge excess, enters in its rate-determining step."
+      },
+      {
+        "text": "Y binds in the rate-determining step, but its concentration cancels out of the rate law",
+        "why": "In the k_1 pathway, Y enters only after solvent has replaced X, in a faster step. The rate-determining association involves solvent, not Y."
+      }
+    ],
+    "explanation": "The k_2[ML3X][Y] term is a simple associative pathway. The k_1[ML3X] term also corresponds to an associative pathway: bulk solvent replaces the leaving group, and then the entering group replaces the solvent. Because solvent concentration doesn't appreciably change, it isn't part of the rate law, even though solvent is involved in the rate-determining association. The step in which Y replaces solvent must be faster than the solvent-assisted replacement of X."
+  },
+  {
+    "id": "ic12-6-kobs-two-term",
+    "type": "numeric",
+    "prompt": "A square planar substitution follows rate = k_1[ML3X] + k_2[ML3X][Y], with Y kept in large excess so the rate can be written rate = k_obs[ML3X]. If k_1 = 2.0 × 10^−5 s^−1, k_2 = 4.0 × 10^−3 M^−1 s^−1 and [Y] = 0.050 M, what is k_obs, in s^−1?",
+    "answer": 0.00022,
+    "unit": "s^−1",
+    "tolerance": 0.01,
+    "explanation": "Factoring out [ML3X] gives k_obs = k_1 + k_2[Y] = 2.0 × 10^−5 + (4.0 × 10^−3)(0.050) = 2.0 × 10^−5 + 2.0 × 10^−4 = 2.2 × 10^−4 s^−1. The k_1 part is the solvent-assisted pathway, which contributes even though it doesn't depend on [Y]."
+  },
+  {
+    "id": "ic12-6-equal-pathways",
+    "type": "numeric",
+    "prompt": "For a square planar substitution with rate = k_1[ML3X] + k_2[ML3X][Y], k_1 = 3.0 × 10^−5 s^−1 and k_2 = 6.0 × 10^−3 M^−1 s^−1. At what concentration of Y, in M, do the solvent-assisted pathway and the direct associative pathway contribute equally to the rate?",
+    "answer": 0.005,
+    "unit": "M",
+    "tolerance": 0.01,
+    "explanation": "The two terms are equal when k_1 = k_2[Y], so [Y] = k_1/k_2 = (3.0 × 10^−5 s^−1)/(6.0 × 10^−3 M^−1 s^−1) = 5.0 × 10^−3 M. At lower [Y], the solvent-assisted k_1 pathway dominates; at higher [Y], the direct k_2 pathway does."
+  },
+  {
+    "id": "ic12-6-stereo-retention",
+    "type": "multiple-choice",
+    "prompt": "cis-[PtL2Cl2] reacts with an entering ligand Y, which replaces one chloride. Which product forms?",
+    "choices": [
+      {
+        "text": "cis-[PtL2ClY], with the two L ligands still cis",
+        "correct": true
+      },
+      {
+        "text": "trans-[PtL2ClY], with the two L ligands now trans",
+        "why": "Square planar substitutions keep the reactant's stereochemistry. Y takes the vacated site, trans to the same ligand that was trans to X."
+      },
+      {
+        "text": "A mixture of cis- and trans-[PtL2ClY]",
+        "why": "No scrambling occurs: stereochemistry is strictly retained in the reactions of square planar complexes."
+      },
+      {
+        "text": "A five-coordinate [PtL2Cl2Y] product",
+        "why": "A five-coordinate species is at most a fleeting transition state or intermediate. The product is square planar again, with Y in place of Cl."
+      }
+    ],
+    "explanation": "Square planar complexes react with retention of stereochemistry: a trans reactant gives a trans product, and a cis reactant gives a cis product. In the trigonal bipyramidal transition state, X, Y and T (the ligand trans to X) lie in the trigonal plane, and as the M–X bond breaks and the M–Y bond forms, Y replaces X in the position trans to T."
+  },
+  {
+    "id": "ic12-6-ia-classification",
+    "type": "multiple-choice",
+    "prompt": "Five-coordinate square pyramidal species such as [Ni(CN)5]^3− and [Pt(SnCl3)5]^3− exist, which suggests that five-coordinate intermediates are possible. Why are square planar substitutions still generally classified as associative interchange (I_a)?",
+    "choices": [
+      {
+        "text": "Isolation of a true intermediate is rarely accomplished",
+        "correct": true
+      },
+      {
+        "text": "The rate does not depend on the entering group",
+        "why": "The rate depends strongly on the entering group, with rate constants spanning nearly ten orders of magnitude."
+      },
+      {
+        "text": "The leaving group dissociates completely before the entering group binds",
+        "why": "That would be a dissociative pathway. The evidence from entering groups, leaving groups and trans ligands points to associative character."
+      },
+      {
+        "text": "Stereochemistry is lost, which rules out a five-coordinate intermediate",
+        "why": "Stereochemistry is strictly retained in these substitutions. The I_a label rests on a true intermediate rarely being isolated."
+      }
+    ],
+    "explanation": "Species like [Ni(CN)5]^3− and [Pt(SnCl3)5]^3− show that five-coordinate structures can exist, but a true intermediate is rarely isolated in these substitutions, so they are generally classified as I_a. The details are still debated; for example, some argue that a six-coordinate transition state may exist in the solvent-assisted pathway."
+  },
+  {
+    "id": "ic12-6-spectator-ligands",
+    "type": "multiple-choice",
+    "prompt": "In the trigonal bipyramidal transition state for substitution in a square planar complex, why do the ligands cis to the leaving group (L and L') have little effect on the rate?",
+    "choices": [
+      {
+        "text": "They lie in the perpendicular plane, so they use different metal orbitals from X and Y",
+        "correct": true
+      },
+      {
+        "text": "They lie in the trigonal plane with X and Y, but too far from the metal to matter",
+        "why": "The trigonal plane holds T, X and Y with the metal. L and L' are in the perpendicular plane."
+      },
+      {
+        "text": "They dissociate before the entering group arrives",
+        "why": "L and L' stay bound throughout the reaction; that is why they are called spectator ligands."
+      },
+      {
+        "text": "They are always weak σ donors, so they barely bond to the metal",
+        "why": "The spectator effect isn't about donor strength. L and L' simply use different orbitals from the ones that break M–X and form M–Y."
+      }
+    ],
+    "explanation": "In the transition state, T, X and Y lie in the trigonal plane with the metal, so all three interact with the same d orbitals; that is why each of them influences the rate. L and L' are in a perpendicular plane and interact with different orbitals, so these spectator ligands have little effect on how easily the M–X bond breaks and the M–Y bond forms."
+  },
+  {
+    "id": "ic12-6-entering-group",
+    "type": "multiple-choice",
+    "prompt": "For substitution in trans-[PtL2Cl2], the rate depends heavily on the entering ligand Y. Which of these entering ligands reacts fastest?",
+    "choices": [
+      {
+        "text": "I^−",
+        "correct": true
+      },
+      {
+        "text": "Br^−",
+        "why": "Bromide is close behind, but iodide is softer and comes ahead of it in the series."
+      },
+      {
+        "text": "NH3",
+        "why": "Ammonia is near the slow end of the series, about equal to Cl^−."
+      },
+      {
+        "text": "CH3OH",
+        "why": "Methanol is the most kinetically inert entering group in the series."
+      }
+    ],
+    "explanation": "The order is PR3 > CN^− > SCN^− > I^− > Br^− > N3^− > NO2^− > py > NH3 ~ Cl^− > CH3OH. Ligands that form the strongest bonds with Pt(II), thanks to their soft character or π-binding ability, react fastest. The rate constants span nearly ten orders of magnitude, which suggests that M–Y bond formation is part of the rate-limiting step: evidence for rate-determining association (A or I_a)."
+  },
+  {
+    "id": "ic12-6-leaving-group",
+    "type": "multiple-choice",
+    "prompt": "For the reaction of [Pt(diene)X]^+ with pyridine, the leaving group X is varied. How does the rate depend on X?",
+    "choices": [
+      {
+        "text": "The softer the leaving group, the slower it leaves, so NO3^− is replaced fastest and CN^− slowest",
+        "correct": true
+      },
+      {
+        "text": "The softer the leaving group, the faster it leaves, so CN^− is replaced fastest and NO3^− slowest",
+        "why": "This is reversed. Soft ligands bond strongly to Pt(II), so they dissociate slowly."
+      },
+      {
+        "text": "The leaving group has no effect, because bond breaking happens after the rate-determining step",
+        "why": "Rate constants span about five orders of magnitude with X, so M–X bond breaking is part of the rate-determining step."
+      },
+      {
+        "text": "The order matches the entering-group order, so I^− is replaced faster than Cl^−",
+        "why": "The leaving-group order is nearly the opposite of the entering-group order. I^− leaves more slowly than Cl^− or Br^−."
+      }
+    ],
+    "explanation": "The observed order, from most labile to most inert, is NO3^− > Cl^− > Br^− > I^− > N3^− > SCN^− > NO2^− > CN^−. It is nearly opposite to the order for entering groups: the softer the ligand, the slower its dissociation. The range of about five orders of magnitude shows that breaking of the M–X bond is part of the rate-determining step. The importance of the leaving group also depends somewhat on the entering group, and vice versa."
+  },
+  {
+    "id": "ic12-6-trans-ligand-series",
+    "type": "multiple-choice",
+    "prompt": "In Pt(II) substitutions, varying the ligand T that is trans to the leaving group X changes the rate. Which T makes X most labile?",
+    "choices": [
+      {
+        "text": "C2H4",
+        "correct": true
+      },
+      {
+        "text": "I^−",
+        "why": "Iodide is in the middle of the series, below CN^−, CO, C2H4, PH3, SH2 and NO2^−."
+      },
+      {
+        "text": "NH3",
+        "why": "NH3, like py, is near the inert end, ahead of only OH^− and H2O."
+      },
+      {
+        "text": "H2O",
+        "why": "Water is at the very end: X trans to H2O is the most kinetically inert."
+      }
+    ],
+    "explanation": "When T is varied, the rate of substitution of X follows CN^− ~ CO ~ C2H4 > PH3 ~ SH2 > NO2^− > I^− > Br^− > py ~ NH3 > OH^− > H2O, from the most labile M–X bond to the most inert. Like X and Y, T occupies the trigonal plane of the transition state, so it too influences the rate. This trans effect is discussed further in the next section."
+  }
+]

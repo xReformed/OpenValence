@@ -9,6 +9,7 @@ gets shown next to every citation.
 | `openstax/introductory/**` | [Beginning Chemistry (Ball) — LibreTexts](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Beginning_Chemistry_(Ball)) | Anonymous (as listed on LibreTexts) | CC BY-NC-SA 3.0 |
 | `openstax/orgchem/**` | [Organic Chemistry (OpenStax) — LibreTexts](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_(OpenStax)) | OpenStax (John McMurry, *Organic Chemistry*, 10th ed.) | CC BY-NC-SA 4.0 |
 | `openstax/inorgchem/**` | [Inorganic Chemistry (LibreTexts)](https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)) | Mixed: per section, see each file's front matter | Mixed: per section (CC BY, CC BY-SA, CC BY-NC, CC BY-NC-SA) |
+| `openstax/physchem/**` | [Physical Chemistry (LibreTexts)](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)) | Mixed: per section, see each file's front matter | Mixed: per section (mostly CC BY-NC-SA 4.0; some CC BY, CC BY-SA) |
 
 `openstax/introductory/` is complete: all 100 sections, transcribed from the
 LibreTexts pages (chapters 8–16 with the scripts in `tools/transcribe/`). Its
@@ -31,6 +32,19 @@ its pages; where a section's pages differ, the most restrictive license is
 recorded. 4.2, 9.3, 11.1 and 15.3 carry no license tag on LibreTexts, nor do
 11.2's sub-pages or 15.4.1, and these are marked `"Unverified"`; confirm them
 before ingesting.
+
+`openstax/physchem/` has its layout only: one folder per chapter (1–31) and 277
+section files holding front matter, not yet transcribed. The end-of-chapter
+exercise pages are left out, as are chapter 32 ("Math Chapters") and chapter 33
+(appendices). No section has text-bearing sub-pages, and none is empty. The
+license and author are recorded per section, read from its page: 229 sections
+are CC BY-NC-SA 4.0 and the rest CC BY or CC BY-SA. 12.10–12.13 and 19.14 carry
+no license tag on LibreTexts and are marked `"Unverified"`; confirm them before
+ingesting. Most pages name no author (no tag and no contributors note), and
+those are recorded as `"Anonymous"`; the others carry LibreTexts usernames
+(Zielinskit, Flowlerm, Delmar, Mtuckerman, …) to be mapped to names in
+`AUTHORS` in `web/scripts/gen-learning-paths.mjs` when the book is added to the
+app.
 
 ## Layout
 

@@ -1,0 +1,210 @@
+[
+  {
+    "id": "ic12-7-trans-effect-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the trans effect?",
+    "choices": [
+      {
+        "text": "A ligand's influence on how fast the ligand trans to it is substituted",
+        "correct": true
+      },
+      {
+        "text": "The tendency of square planar substitutions to give trans products",
+        "why": "The trans effect is about rates of substitution, not a preference for trans products. Used well, it gives cis-platin."
+      },
+      {
+        "text": "The tendency of two mutually trans ligands to leave together",
+        "why": "Only one ligand is replaced at a time. The trans effect is how one ligand speeds or slows replacement of the ligand opposite it."
+      },
+      {
+        "text": "The greater thermodynamic stability of trans isomers",
+        "why": "The trans effect is kinetic. The section explains the platin results by how fast a ligand leaves, not by which isomer is more stable."
+      }
+    ],
+    "explanation": "The trans effect is the role of trans ligands in influencing substitution rates in square planar complexes. A ligand with a strong trans effect makes the ligand trans to it substituted very quickly; a ligand with a modest trans effect lets the ligand trans to it be substituted only slowly."
+  },
+  {
+    "id": "ic12-7-cisplatin-route",
+    "type": "multiple-choice",
+    "prompt": "Which route gives cis-platin, cis-[Pt(NH3)2Cl2]?",
+    "choices": [
+      {
+        "text": "Treating a tetrachloroplatinate salt, [PtCl4]^2−, with ammonia to replace two chlorides",
+        "correct": true
+      },
+      {
+        "text": "Treating tetraammineplatinum(II), [Pt(NH3)4]^2+, with chloride salts to replace two ammonias",
+        "why": "That route gives trans-platin, which has the side effects of the cis isomer but none of its therapeutic benefit."
+      },
+      {
+        "text": "Either route, since each replaces two ligands to give [Pt(NH3)2Cl2]",
+        "why": "The two routes give different isomers: [PtCl4]^2− with ammonia gives cis, and [Pt(NH3)4]^2+ with chloride gives trans."
+      },
+      {
+        "text": "Neither route; both give trans-platin",
+        "why": "The section says treating tetrachloroplatinate with ammonia works really well and provides cis-platin."
+      }
+    ],
+    "explanation": "Treating tetraammineplatinum(II) with chloride salts gives trans-platin, which has all of the nasty side effects of the cis isomer with none of the therapeutic benefit. Treating tetrachloroplatinate salts with ammonia replaces two chloride ligands and provides cis-platin. In both routes, the ligand replaced is trans to a chloride."
+  },
+  {
+    "id": "ic12-7-trans-platin-second-step",
+    "type": "multiple-choice",
+    "prompt": "Reacting [Pt(NH3)4]^2+ with chloride first gives [Pt(NH3)3Cl]^+. When a second chloride enters, which ammonia is replaced, and what is the product?",
+    "choices": [
+      {
+        "text": "The NH3 trans to Cl^−, giving trans-[Pt(NH3)2Cl2]",
+        "correct": true
+      },
+      {
+        "text": "An NH3 trans to another NH3, giving cis-[Pt(NH3)2Cl2]",
+        "why": "NH3 has a weaker trans effect than Cl^−, so the ammonias trans to NH3 are replaced more slowly. This route gives trans-platin."
+      },
+      {
+        "text": "The NH3 trans to Cl^−, giving cis-[Pt(NH3)2Cl2]",
+        "why": "If the new chloride takes the place of the NH3 opposite the first chloride, the two chlorides end up trans to each other."
+      },
+      {
+        "text": "Each NH3 equally, giving a statistical mixture of cis and trans products",
+        "why": "The route gives trans-platin specifically, because the ligand trans to chloride is replaced fastest."
+      }
+    ],
+    "explanation": "In both platin syntheses, the ligand that gets replaced is trans to a chloride, not trans to an ammonia: Cl^− has the stronger trans effect. In [Pt(NH3)3Cl]^+, the NH3 opposite Cl^− leaves fastest, so the second chloride enters trans to the first, giving trans-platin. Starting from [PtCl4]^2− instead, the chloride replaced in the second step is trans to another chloride, which leaves the two NH3 ligands cis."
+  },
+  {
+    "id": "ic12-7-kinetic-control",
+    "type": "multiple-choice",
+    "prompt": "The two platin syntheses give different isomers of [Pt(NH3)2Cl2] depending on the starting complex. What does this suggest about the reactions?",
+    "choices": [
+      {
+        "text": "At least one is under kinetic control: its product forms because it forms faster, not because it is more stable",
+        "correct": true
+      },
+      {
+        "text": "Both are under thermodynamic control, so each gives the more stable isomer",
+        "why": "Under thermodynamic control, both routes would give the same, more stable isomer. Different products point to kinetic control."
+      },
+      {
+        "text": "cis- and trans-platin must have exactly equal stability",
+        "why": "One isomer is probably more stable than the other. The different outcomes come from rates, not from equal stabilities."
+      },
+      {
+        "text": "The reactions must go by a dissociative mechanism",
+        "why": "The section suggests the mechanism is probably associative because of the square planar geometry. The different outcomes point to kinetic control."
+      }
+    ],
+    "explanation": "If thermodynamics were in charge, the same, more stable isomer would form both times. Since two different products result depending on how the reaction is done, there is an element of kinetic control for at least one of the pathways: a product may form not because it is more stable, but simply because it forms more quickly."
+  },
+  {
+    "id": "ic12-7-methyl-vs-chloride-rate",
+    "type": "numeric",
+    "prompt": "For substitution of Cl^− by pyridine in trans-[Pt(PEt3)2LCl] at 25 °C, k_obs = 6.0 × 10^−4 s^−1 when the trans ligand L is CH3^− and 3.5 × 10^−6 s^−1 when L is Cl^−. How many times faster is the chloride replaced when L is CH3^−?",
+    "answer": 171,
+    "tolerance": 0.02,
+    "explanation": "6.0 × 10^−4 ÷ 3.5 × 10^−6 ≈ 171. Changing only the ligand trans to the leaving chloride speeds the substitution more than a hundredfold. The same table shows even larger k_obs values trans to PMe3, H^− and PEt3, measured at the lower temperature of 0 °C."
+  },
+  {
+    "id": "ic12-7-sigma-donor-mechanism",
+    "type": "multiple-choice",
+    "prompt": "How does a strong σ-donor ligand weaken the bond to the ligand trans to it?",
+    "choices": [
+      {
+        "text": "Both ligands donate to the same metal p orbital; the strong donor gets better overlap and forms a strong bond, leaving the trans ligand with a weak one",
+        "correct": true
+      },
+      {
+        "text": "It accepts π electron density from the metal and stabilizes a trigonal bipyramidal intermediate",
+        "why": "That describes how strong π acceptors exert their trans effect, a different mechanism."
+      },
+      {
+        "text": "It donates to a different metal orbital from the trans ligand, so the two don't compete",
+        "why": "The two trans ligands donate to the same metal p orbital, and their competition is the whole point."
+      },
+      {
+        "text": "It crowds the trans ligand sterically and pushes it away",
+        "why": "The explanation is electronic: competition for overlap with one metal orbital, not steric crowding."
+      }
+    ],
+    "explanation": "A ligand and the ligand trans to it bond by donation to the same metal p orbital, so they compete. The strong σ donor gets good overlap, and the resulting interaction drops low in energy; the metal orbital interacts much less with the weaker donor, since that wouldn't lower the energy as much. The result is a strong bond on one side of the metal and a weak bond on the other, and the weak bond breaks easily."
+  },
+  {
+    "id": "ic12-7-pi-acceptor-mechanism",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does a strong π acceptor such as CO exert its trans effect?",
+    "choices": [
+      {
+        "text": "It stabilizes a trigonal bipyramidal intermediate in which it and the ligand trans to it lie in the equatorial plane, where it draws π density from two donors; the trans ligand then leaves",
+        "correct": true
+      },
+      {
+        "text": "It moves to an axial position of the intermediate, where it draws π density most effectively from two donors",
+        "why": "In an axial position it would draw most effectively from just one donor. The equatorial plane lets it draw from two."
+      },
+      {
+        "text": "It competes with the trans ligand for the same metal p orbital through strong σ donation",
+        "why": "That is the σ-donor mechanism. A π acceptor acts by stabilizing a particular geometry of the five-coordinate intermediate."
+      },
+      {
+        "text": "It stabilizes the intermediate and then leaves itself",
+        "why": "The π acceptor is held by its stabilizing, delocalizing bonding. The ligand that leaves is the trans ligand dragged into the equatorial plane with it."
+      }
+    ],
+    "explanation": "The incoming ligand pushes two ligands down from the square plane to form a trigonal bipyramid. A strong π acceptor makes sure that it, along with the ligand opposite it, gets into the electron-rich equatorial plane, where it can draw electron density by π donation from two different donors; axially, it would draw mostly from one. The ligand that keeps moving and leaves is not the π acceptor but the unlucky trans ligand dragged along with it."
+  },
+  {
+    "id": "ic12-7-donor-atom-trend",
+    "type": "multiple-choice",
+    "prompt": "Among ligands that bind through O, N or C, the trans effect follows an electronegativity trend. Which of these ligands should have the strongest trans effect?",
+    "choices": [
+      {
+        "text": "CH3^−",
+        "correct": true
+      },
+      {
+        "text": "NH3",
+        "why": "Nitrogen is more electronegative than carbon, so NH3 has a weaker trans effect than a carbon donor."
+      },
+      {
+        "text": "OH^−",
+        "why": "Oxygen is the most electronegative of the three donor atoms, and most π donors like OH^− have weaker trans effects."
+      },
+      {
+        "text": "H2O",
+        "why": "Water binds through the electronegative O atom, so its trans effect is very modest."
+      }
+    ],
+    "explanation": "The less electronegative the donor atom, the greater the trans effect, as in the series O, N, C and among the halogens. Less electronegative donor ions such as C^− and H^−, along with the more polarizable donor atoms S, P and I, are typically the strongest σ donors. So CH3^−, a carbon donor, has the strongest trans effect of these."
+  },
+  {
+    "id": "ic12-7-ruthenium-oxo-trans",
+    "type": "multiple-choice",
+    "prompt": "In [Ru2O(L)6(acetate)2]^2+, where L is a neutral donor, the ligands L trans to the bridging oxo ligand are labile. What explanation does the section give?",
+    "choices": [
+      {
+        "text": "The oxo is a strong σ donor that hogs the shared metal orbital, leaving little bonding for the ligand trans to it",
+        "correct": true
+      },
+      {
+        "text": "The oxo is a weak σ donor, so the ligand trans to it bonds more strongly",
+        "why": "A stronger bond to the trans ligand would make it inert, not labile."
+      },
+      {
+        "text": "The acetate bridges crowd the ligands trans to the oxo",
+        "why": "The lability is tied to the position trans to the oxo, an electronic trans effect, not steric crowding by acetate."
+      },
+      {
+        "text": "The oxo leaves first, opening a site for the incoming ligand",
+        "why": "The bridging oxo stays in place. It is the ligands L trans to it that are labile."
+      }
+    ],
+    "explanation": "This is the σ-donor trans effect. The oxo donates strongly into the metal orbital it shares with the ligand opposite it, leaving very little room for bonding trans to it. The ligands L trans to the oxo therefore have weak bonds and are replaced easily."
+  },
+  {
+    "id": "ic12-7-pyridine-order",
+    "type": "numeric",
+    "prompt": "Pyridine replaces the aqua ligands in [Ru2O(py)4(H2O)2(acetate)2]^2+ to give [Ru2O(py)6(acetate)2]^2+. The observed rate constants are: [py] = 0.005 M, k_obs = 1.75 × 10^−3 s^−1; 0.012 M, 2.53 × 10^−3 s^−1; 0.025 M, 9.7 × 10^−3 s^−1; 0.049 M, 16.7 × 10^−3 s^−1; 0.100 M, 35.2 × 10^−3 s^−1. What is the reaction order in pyridine?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Although there is some error in the data, doubling the pyridine concentration roughly doubles k_obs (for example, 0.049 → 0.100 M takes k_obs from 16.7 to 35.2 × 10^−3 s^−1). So the reaction is first order in pyridine, with rate = k[MLn][py]. The mechanism needs an associative first step; because the complex is already 18 electrons, associative interchange is likely."
+  }
+]

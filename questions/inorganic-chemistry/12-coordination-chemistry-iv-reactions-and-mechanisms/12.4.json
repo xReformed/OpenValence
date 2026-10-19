@@ -1,0 +1,355 @@
+[
+  {
+    "id": "ic12-4-lfae-definition",
+    "type": "multiple-choice",
+    "prompt": "For a dissociative substitution of an octahedral complex, what is the ligand field activation energy (LFAE)?",
+    "choices": [
+      {
+        "text": "The difference between the LFSE of the octahedral reactant and that of the square pyramidal intermediate",
+        "correct": true
+      },
+      {
+        "text": "The difference between the LFSE of the octahedral reactant and that of the final product",
+        "why": "LFAE compares the reactant with the intermediate formed when a ligand dissociates, not with the product."
+      },
+      {
+        "text": "The difference between the LFSE of the octahedral reactant and that of a seven-coordinate intermediate",
+        "why": "A seven-coordinate intermediate would come from an associative pathway. Dissociation from an octahedron gives a square pyramid."
+      },
+      {
+        "text": "The energy needed to break the M–X bond, with the d electrons ignored",
+        "why": "LFAE is specifically the ligand field part: the change in LFSE between the octahedral reactant and the intermediate."
+      }
+    ],
+    "explanation": "In a D mechanism, an octahedral complex first loses a ligand to form a square pyramidal intermediate, and this step is rate-limiting. Anything that lowers the energy of the transition state or intermediate speeds the reaction, including differences in LFSE. The difference between the LFSE of the octahedral reactant and that of the intermediate is the ligand field activation energy, calculated from the splitting energies of the two geometries for a given d-electron count."
+  },
+  {
+    "id": "ic12-4-volume-of-activation",
+    "type": "multiple-choice",
+    "prompt": "The rate of an octahedral substitution decreases as the pressure is raised, giving a positive volume of activation, ΔV‡. What does this suggest?",
+    "choices": [
+      {
+        "text": "A dissociative mechanism, because one complex becoming two species takes up more space",
+        "correct": true
+      },
+      {
+        "text": "An associative mechanism, because two species becoming one takes up more space",
+        "why": "One molecule generally takes up less space than two separate molecules, so association shrinks the volume."
+      },
+      {
+        "text": "An associative mechanism, because pressure always slows bond formation",
+        "why": "The section links a rate that falls with pressure, and a positive ΔV‡, to dissociation: the system expands on the way to the intermediate."
+      },
+      {
+        "text": "Nothing, because pressure has no effect on reactions in solution",
+        "why": "The volume argument usually holds in solution too, although the solvation of ions should be taken into account."
+      }
+    ],
+    "explanation": "One molecule generally takes up less space than two separate molecules, and this usually holds in solution. In a dissociative mechanism, one complex becomes two separate species, so the intermediate should take up more space than the reactant. Raising the pressure then slows the reaction, giving a positive ΔV‡. Solvation of ions can also affect volume, so it should be considered when interpreting pressure data."
+  },
+  {
+    "id": "ic12-4-coulombic-evidence",
+    "type": "multiple-choice",
+    "prompt": "For a series of related octahedral complexes, the substitution rate decreases as the charge on the metal ion increases and as its radius decreases. What does this suggest?",
+    "choices": [
+      {
+        "text": "A dissociative mechanism, because stronger attraction to the leaving group slows its departure",
+        "correct": true
+      },
+      {
+        "text": "An associative mechanism, because a smaller, more highly charged metal attracts entering ligands more strongly",
+        "why": "Stronger attraction to entering ligands would speed association. A rate that falls points to the leaving group's departure as the key step."
+      },
+      {
+        "text": "A dissociative mechanism, because a higher charge weakens the bond to the leaving group",
+        "why": "A higher charge and smaller radius strengthen the attraction to the leaving group. That's why dissociation slows."
+      },
+      {
+        "text": "No conclusion, because Coulombic attraction affects only thermodynamic stability",
+        "why": "Coulombic attraction affects rates too. It slows the dissociation of a ligand."
+      }
+    ],
+    "explanation": "Coulombic attraction between the dissociating ligand X and the metal complex should slow ligand dissociation. The attraction increases with the size of the charges and as the distance decreases. So if the rate slows as the charge of the metal ion or ligand increases, or as the radius of the metal ion decreases, this is evidence for a dissociative mechanism."
+  },
+  {
+    "id": "ic12-4-lfer-slope-one",
+    "type": "multiple-choice",
+    "prompt": "In a linear free energy relationship study, ln k is plotted against ln K for reactions that differ only in the leaving group. The plot is linear with a slope of about 1. What does this indicate?",
+    "choices": [
+      {
+        "text": "A purely dissociative (D) pathway, because changing X affects ΔG and ΔG‡ to a similar extent",
+        "correct": true
+      },
+      {
+        "text": "An associative pathway, because the leaving group has no effect on the rate",
+        "why": "A slope of 1 means the leaving group affects the rate as strongly as it affects K."
+      },
+      {
+        "text": "A dissociative pathway with some associative character, such as I_d",
+        "why": "That is what a linear plot with a slope less than 1 indicates."
+      },
+      {
+        "text": "That thermodynamic stability and rate are unrelated for these complexes",
+        "why": "A linear plot shows that they are correlated, because breaking the M–X bond matters in the rate-determining step."
+      }
+    ],
+    "explanation": "In a dissociative mechanism, breaking the M–X bond is critical, so its strength affects both the extent of reaction (K) and the rate (k): ln k = ln K + c. A slope close to 1 means varying the leaving group changes ΔG (related to K) and ΔG‡ (related to k) by similar amounts, indicating a purely dissociative pathway, as for the hydrolysis of [Co(NH3)5X]^2+. A linear plot with a slope less than 1 indicates a dissociative mechanism with some associative character, such as I_d or a preassociation complex."
+  },
+  {
+    "id": "ic12-4-lfer-rate-factor",
+    "type": "numeric",
+    "prompt": "The hydrolysis of [Co(NH3)5X]^2+ follows ln k = ln K + c, with a slope of about 1. If switching to a different leaving group raises K by a factor of 50, by about what factor should the rate constant k rise?",
+    "answer": 50,
+    "tolerance": 0.01,
+    "explanation": "With a slope of 1, ln k changes by exactly as much as ln K when the leaving group is changed, so the ratio of the new rate constant to the old one equals the ratio of the equilibrium constants: k rises by the same factor of 50. A slope of 1 means the leaving group has a similar effect on the thermodynamics (ΔG, related to K) and the kinetics (ΔG‡, related to k), the mark of a dissociative pathway."
+  },
+  {
+    "id": "ic12-4-chromium-ammine-ratio",
+    "type": "numeric",
+    "prompt": "For [Cr(NH3)5(H2O)]^3+ + Y^− → [Cr(NH3)5Y]^2+ + H2O, the rate constants (in 10^−4 M^−1 s^−1) are 4.2 for NCS^−, 0.7 for Cl^−, 3.7 for Br^− and 1.4 for CF3CO2^−. What is the ratio of the largest rate constant to the smallest?",
+    "answer": 6.0,
+    "tolerance": 0.01,
+    "explanation": "Largest ÷ smallest = 4.2 ÷ 0.7 = 6. The rate constants are within about one order of magnitude, so the identity of the entering ligand has little effect: Y is not involved in the rate-determining step. This points to a dissociatively activated mechanism, and other evidence suggests it is I_d."
+  },
+  {
+    "id": "ic12-4-associative-conditions",
+    "type": "multiple-choice",
+    "prompt": "Associative character is uncommon in octahedral substitution. Under which conditions does it become more likely?",
+    "choices": [
+      {
+        "text": "Ligands with low steric bulk, a larger metal ion with longer bonds, or a low d-electron count",
+        "correct": true
+      },
+      {
+        "text": "Bulky ligands crowded around a small 3d metal ion with short metal–ligand bonds",
+        "why": "These increase crowding around the metal, which hinders an entering ligand."
+      },
+      {
+        "text": "Strong σ-donor ligands that make the metal center electron rich and less electrophilic",
+        "why": "Low electron density at the metal favors nucleophilic attack. An electron-rich center, as in [Cr(NH3)5(H2O)]^3+, reacts dissociatively."
+      },
+      {
+        "text": "A high d-electron count, which puts high electron density on the metal center",
+        "why": "Associative reactions of octahedral complexes have been seen with low d-electron counts and low electron density, which make nucleophilic attack more favorable."
+      }
+    ],
+    "explanation": "Six ligands sterically hinder the metal, so associative mechanisms are less common for octahedral complexes. They become more likely when the ligands have low steric bulk, when the metal ion is larger with longer bonds (as for 4d and 5d ions), or when the d-electron count or electron density around the metal is low, presumably making nucleophilic attack more favorable. Octahedral complexes with associative character usually react by I_a."
+  },
+  {
+    "id": "ic12-4-chromium-aqua-ratio",
+    "type": "numeric",
+    "prompt": "For [Cr(H2O)6]^3+ + Y^− → [Cr(H2O)5Y]^2+ + H2O, the rate constants (in 10^−4 M^−1 s^−1) are 180 for NCS^−, 73 for NO3^−, 2.9 for Cl^−, 0.9 for Br^− and 0.08 for I^−. What is the ratio of the largest rate constant to the smallest?",
+    "answer": 2250,
+    "tolerance": 0.01,
+    "explanation": "Largest ÷ smallest = 180 ÷ 0.08 = 2,250, more than three orders of magnitude. Such a large effect of the incoming ligand on the rate constant is evidence for an associative mechanism, I_a. Compare [Cr(NH3)5(H2O)]^3+, whose rate constants span only about 6-fold."
+  },
+  {
+    "id": "ic12-4-chromium-aqua-versus-ammine",
+    "type": "multiple-choice",
+    "prompt": "[Cr(H2O)6]^3+ substitutes by an I_a mechanism, but [Cr(NH3)5(H2O)]^3+ substitutes dissociatively. How does the section explain the difference?",
+    "choices": [
+      {
+        "text": "Ammine is a stronger σ donor, so the ammine complex's metal is more electron rich and less electrophilic",
+        "correct": true
+      },
+      {
+        "text": "Water is a stronger σ donor, so the aqua complex's metal center is more electron rich",
+        "why": "This is reversed. The ammine ligand is the stronger σ donor, which leaves the hexaaqua complex with the more electrophilic center."
+      },
+      {
+        "text": "Chromium has a higher oxidation state in the ammine complex than in the aqua complex",
+        "why": "Both are chromium(III) complexes with a 3+ charge. The difference is the electron density the ligands supply."
+      },
+      {
+        "text": "The ammine ligands are too small to crowd the metal, so an entering ligand can't approach",
+        "why": "Less crowding would make association easier, not harder. The section's explanation is electron density at the metal."
+      }
+    ],
+    "explanation": "The two chromium(III) complexes differ in the electron density around the metal. Ammine is a stronger σ donor than water, so the metal in [Cr(NH3)5(H2O)]^3+ is more electron rich. [Cr(H2O)6]^3+ has a more electrophilic center, so nucleophilic attack by an incoming ligand is more likely, and it reacts by I_a."
+  },
+  {
+    "id": "ic12-4-negative-activation-entropy",
+    "type": "multiple-choice",
+    "prompt": "Substitution of the aqua ligand in [Ru(EDTA)(H2O)]^− has a negative entropy of activation, ΔS‡. What does this indicate?",
+    "choices": [
+      {
+        "text": "An associative (I_a) pathway, because two species combining into one lowers the entropy",
+        "correct": true
+      },
+      {
+        "text": "A dissociative pathway, because one species splitting into two lowers the entropy",
+        "why": "Splitting into two species increases entropy, which gives a positive ΔS‡."
+      },
+      {
+        "text": "A dissociative pathway, because a negative ΔS‡ means a bond is breaking",
+        "why": "Bond breaking with release of a ligand raises the entropy. A negative ΔS‡ reflects two species becoming one."
+      },
+      {
+        "text": "That the overall reaction can't happen, because entropy decreases",
+        "why": "ΔS‡ describes the path to the transition state; it doesn't decide whether the overall reaction is favorable."
+      }
+    ],
+    "explanation": "The temperature dependence of the rate gives the entropy of activation. When an incoming ligand associates with a metal complex, two molecules become one and the entropy decreases, so a negative ΔS‡ indicates an associative pathway. For [Ru(EDTA)(H2O)]^−, the negative ΔS‡ indicates an I_a mechanism."
+  },
+  {
+    "id": "ic12-4-acidic-aquo-product",
+    "type": "multiple-choice",
+    "prompt": "In acidic water, [Co(NH3)5X]^2+ is treated with various entering groups Y^−, but the main product is always [Co(NH3)5(OH2)]^3+, whatever Y^− is. What does this suggest?",
+    "choices": [
+      {
+        "text": "Breaking the Co–X bond matters more than forming the bond to Y^−: the reaction has dissociative character",
+        "correct": true
+      },
+      {
+        "text": "Forming the bond to the most nucleophilic group present controls which product forms",
+        "why": "If nucleophilicity controlled the outcome, the amount of [Co(NH3)5Y]^2+ should rise with the nucleophilicity of Y^−. Instead water wins regardless."
+      },
+      {
+        "text": "The reaction must be associative, with water attacking cobalt before X has left",
+        "why": "A product that doesn't depend on Y^− shows that bond breaking, not bond making, dominates: dissociative character."
+      },
+      {
+        "text": "Y^− can never bind to cobalt(III) in water, so only the aquo complex can form",
+        "why": "Y^− does bind, by replacing the aquo ligand in a second step. The aquo complex is an intermediate on the way."
+      }
+    ],
+    "explanation": "The reaction goes through the aquo complex: Co–X breaks and Co–OH2 forms first, and Y^− can replace the water later. Water is far more concentrated than any Y^−, so it wins the competition. But the amount of [Co(NH3)5Y]^2+ should still grow with the nucleophilicity of Y^− if bond making mattered. Because the aquo complex dominates regardless of Y^−, Co–X bond breaking is more important to the outcome: the reaction has dissociative character."
+  },
+  {
+    "id": "ic12-4-base-hydrolysis-puzzle",
+    "type": "multiple-choice",
+    "prompt": "Base hydrolysis of [Co(NH3)5X]^{n+} follows a second-order rate law, Rate = k[Co(NH3)5X^{n+}][OH^−]. Why is a simple associative mechanism, with OH^− attacking cobalt, hard to accept?",
+    "choices": [
+      {
+        "text": "Hydroxide is not usually an effective nucleophile, so it would have to be uniquely reactive toward Co(III)",
+        "correct": true
+      },
+      {
+        "text": "The second-order rate law shows that hydroxide plays no role at all in the reaction",
+        "why": "The rate law is first order in OH^−, so hydroxide is clearly involved in the kinetics."
+      },
+      {
+        "text": "Hydroxide substitutes more slowly than water does, so it can't be the attacking group",
+        "why": "Substitution by hydroxide is kinetically faster than substitution by water in acidic solution."
+      },
+      {
+        "text": "The hydroxo product never forms when other entering groups are present in solution",
+        "why": "The hydroxo complex dominates even when other entering groups Y^− are present."
+      }
+    ],
+    "explanation": "The second-order rate law fits an associative (I_a) attack by hydroxide on cobalt, and hydroxide does seem to be a uniquely effective nucleophile toward cobalt(III). But toward most other electrophilic centers, hydroxide is not a particularly effective nucleophile. An associative assignment would need an explanation for that. The conjugate-base (S_N1CB) mechanism also fits the second-order rate law and resolves the puzzle."
+  },
+  {
+    "id": "ic12-4-sn1cb-acidic-protons",
+    "type": "multiple-choice",
+    "prompt": "[Co(bpy)2(O2CCH3)]^2+, where bpy is 2,2'-bipyridine, does not undergo the base-catalyzed substitution that [Co(NH3)5Cl]^2+ does. Why?",
+    "choices": [
+      {
+        "text": "Its nitrogen donors carry no acidic protons, so no conjugate base can form",
+        "correct": true
+      },
+      {
+        "text": "Its cobalt is in a different oxidation state from the ammine complex's",
+        "why": "It is a cobalt(III) complex too: x + 2(0) + (−1) = +2 gives x = +3. The difference is the missing N–H protons."
+      },
+      {
+        "text": "Hydroxide can't approach a positively charged complex closely enough",
+        "why": "[Co(NH3)5Cl]^2+ is also positively charged, and it reacts readily with hydroxide."
+      },
+      {
+        "text": "Its acetate ligand is bound too strongly to ever leave cobalt",
+        "why": "The section traces the failure to the missing N–H protons: with no H–N–Co unit, hydroxide has nothing to deprotonate."
+      }
+    ],
+    "explanation": "The S_N1CB mechanism starts with hydroxide removing a proton from a metal-bound ligand, so it requires a ligand with acidic protons, such as an amine, ammine or aquo ligand. H–D exchange of [Co(NH3)5Cl]^2+ in basic D2O shows that its ammine protons are acidic. The bipyridine complex has no H–N–Co units, so the reaction doesn't occur."
+  },
+  {
+    "id": "ic12-4-amido-ligand-role",
+    "type": "multiple-choice",
+    "prompt": "In the S_N1CB mechanism for [Co(NH3)5Cl]^2+, hydroxide first removes a proton from an ammine ligand. How does this speed up the loss of chloride?",
+    "choices": [
+      {
+        "text": "The new amido (NH2^−) ligand π-donates to cobalt, labilizing the other ligands, especially the trans one",
+        "correct": true
+      },
+      {
+        "text": "The amido ligand withdraws electron density from cobalt, strengthening the Co–Cl bond",
+        "why": "Deprotonation increases the electron density on the metal, which helps the leaving group depart."
+      },
+      {
+        "text": "The proton removed from the ammine transfers to chloride, which then leaves as HCl",
+        "why": "The proton goes to hydroxide, forming water. Chloride leaves as Cl^− in the rate-determining step."
+      },
+      {
+        "text": "The amido nitrogen bonds directly to the chloride and pulls it away from the metal",
+        "why": "The amido ligand acts through the metal by π donation; it doesn't bond to chloride."
+      }
+    ],
+    "explanation": "Step 1, [Co(NH3)5Cl]^2+ + OH^− ⇌ [Co(NH3)4(NH2)Cl]^+ + H2O, forms the conjugate base. Its amido ligand is a π donor, which makes it easier for another ligand to dissociate, particularly the one trans to it. In the rate-determining step 2, chloride leaves to give the five-coordinate [Co(NH3)4(NH2)]^2+, which quickly picks up water; proton transfers then give [Co(NH3)5OH]^2+."
+  },
+  {
+    "id": "ic12-4-conjugate-base-charge",
+    "type": "numeric",
+    "prompt": "In the S_N1CB mechanism, hydroxide removes one proton from an ammine ligand of [Co(NH3)5Br]^2+. What is the overall charge of the conjugate base that forms (give the sign)?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Removing H^+ lowers the overall charge by one, from 2+ to 1+: [Co(NH3)4(NH2)Br]^+. Check by summing: Co(III) is +3, the four NH3 are neutral, the amido ligand NH2^− is −1 and bromide is −1, so +3 + 0 − 1 − 1 = +1. Cobalt stays in the +3 oxidation state."
+  },
+  {
+    "id": "ic12-4-common-intermediate",
+    "type": "multiple-choice",
+    "prompt": "Base hydrolysis of [Co(NH3)5X]^{n+} is run with another entering group Y present. The complex is consumed at the same rate as without Y, and the ratio of hydroxo product to Y product is the same whatever the leaving group X. What does this show?",
+    "choices": [
+      {
+        "text": "All the reactants give the same intermediate, [Co(NH3)4(NH2)]^2+, which then forms the products",
+        "correct": true
+      },
+      {
+        "text": "Y attacks the reactant complex directly, in the rate-determining step, before X leaves",
+        "why": "If Y took part in the rate-determining step, the rate of consumption would change when Y is added."
+      },
+      {
+        "text": "The leaving group X is still bound to cobalt when the product-forming step occurs",
+        "why": "If X were still bound, changing X should change the product ratio. A constant ratio means X is gone before the products form."
+      },
+      {
+        "text": "Y blocks the conjugate-base pathway, so the reaction switches to a different mechanism",
+        "why": "The unchanged rate of consumption shows the conjugate-base pathway still operates with Y present."
+      }
+    ],
+    "explanation": "With Y present, the rate at which [Co(NH3)5X]^{n+} is used up is unchanged, but the product is a mixture of [Co(NH3)5OH]^2+ and the Y complex. The proportions are constant whatever the leaving group. That fits a mechanism in which all the reactants give the same intermediate, [Co(NH3)4(NH2)]^2+: the product distribution is always the same because the same species always undergoes the product-forming reaction."
+  },
+  {
+    "id": "ic12-4-kinetic-chelate-rates",
+    "type": "multiple-choice",
+    "prompt": "Compare the first dissociation step of a bidentate ligand (rate constant k_1, reverse k_{−1}) with dissociation of an analogous monodentate ligand (k'_1, reverse k'_{−1}). Which relationship describes the kinetic chelate effect?",
+    "choices": [
+      {
+        "text": "k_1 < k'_1 and k_{−1} > k'_{−1}: the chelate's first dissociation is slower and its re-association faster",
+        "correct": true
+      },
+      {
+        "text": "k_1 > k'_1 and k_{−1} < k'_{−1}: the chelate's first dissociation is faster and its re-association slower",
+        "why": "This is reversed. Chelates are more inert, so their first dissociation is slower."
+      },
+      {
+        "text": "k_1 < k'_1 and k_{−1} < k'_{−1}: both of the chelate's steps are slower",
+        "why": "Re-association of the dangling donor is faster, because it can't move away from the metal."
+      },
+      {
+        "text": "k_1 = k'_1 and k_{−1} = k'_{−1}: the donor atoms are the same, so the rates match",
+        "why": "The chelate's geometry changes both rates: it must rotate to move the free end away, and the free end stays nearby."
+      }
+    ],
+    "explanation": "The kinetic chelate effect comes from a slower first dissociation step and a faster re-association step than for a monodentate ligand. The first dissociation is slower partly because the chelate must rotate to move the freed donor away from the open site on the metal; for the same reason, the reverse step (re-association) is faster. Because K_eq = k_f/k_r, these rate differences go with the larger equilibrium constants of chelates."
+  },
+  {
+    "id": "ic12-4-equilibrium-from-rates",
+    "type": "numeric",
+    "prompt": "At equilibrium, the forward and reverse rates are equal, so k_f/k_r = K_eq. A ligand binding reaction has k_f = 2.0 × 10^5 M^−1 s^−1 and k_r = 4.0 × 10^−3 s^−1. What is K_eq, in M^−1?",
+    "answer": 50000000,
+    "unit": "M^−1",
+    "tolerance": 0.01,
+    "explanation": "K_eq = k_f/k_r = (2.0 × 10^5 M^−1 s^−1)/(4.0 × 10^−3 s^−1) = 5.0 × 10^7 M^−1. This link between rates and equilibrium is why chelating ligands, with their larger K_eq, must also differ in their binding and dissociation rates: the kinetic chelate effect."
+  }
+]

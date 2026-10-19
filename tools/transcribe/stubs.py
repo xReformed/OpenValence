@@ -99,6 +99,21 @@ def slug(text):
     return re.sub(r"[^A-Za-z0-9]+", "-", text).strip("-")
 
 
+# A file name's title part is cut at a word break past this length. Windows paths
+# stop at 260 characters, and Physical Chemistry (LibreTexts) has section titles
+# of 150+ ("SCF-LCAO-MO Wavefunctions are Molecular Orbitals formed from …"). The
+# full title stays in the front matter. Longer than any title in the earlier books,
+# so re-running on them finds the same files.
+MAX_SLUG = 100
+
+
+def short(text):
+    """'A-Very-Long-Title-…' cut at the last hyphen within MAX_SLUG characters."""
+    if len(text) <= MAX_SLUG:
+        return text
+    return text[:MAX_SLUG].rsplit("-", 1)[0]
+
+
 def quoted(value):
     return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
@@ -141,7 +156,7 @@ def main():
                 continue  # "16.E: … (Exercises)", or a link to another chapter
             if section[3].lower().startswith("end-of-chapter"):
                 continue  # "13.7: End-of-Chapter Material" is numbered like a section
-            path = folder / f"{int(section[1]):02d}-{int(section[2])}-{slug(section[3])}.md"
+            path = folder / f"{int(section[1]):02d}-{int(section[2])}-{short(slug(section[3]))}.md"
             if path.exists():
                 existing += 1
                 continue

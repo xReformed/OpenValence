@@ -1,0 +1,195 @@
+[
+  {
+    "id": "ic12-1-redox-definition",
+    "type": "multiple-choice",
+    "prompt": "This chapter divides reactions of metal complexes into three types. What type is a reaction in which the metal's oxidation state formally changes by gaining or losing electrons?",
+    "choices": [
+      {
+        "text": "A redox reaction",
+        "correct": true
+      },
+      {
+        "text": "A substitution reaction",
+        "why": "In a substitution, one ligand replaces another in the metal's inner coordination sphere. That doesn't require the oxidation state to change."
+      },
+      {
+        "text": "A ligand reaction",
+        "why": "Ligand reactions happen primarily on the ligands bound to the metal, not by the metal gaining or losing electrons."
+      },
+      {
+        "text": "An acid–base reaction",
+        "why": "Acid–base reactions aren't one of the chapter's three types. A formal change in the metal's oxidation state defines a redox reaction."
+      }
+    ],
+    "explanation": "The chapter sorts reactions of metal complexes into three types. Substitution reactions replace one ligand with another within the metal's inner coordination sphere. Redox reactions formally change the metal's oxidation state by gaining or losing electrons. Ligand reactions occur primarily on the ligands bound to the metal ion."
+  },
+  {
+    "id": "ic12-1-reverse-reaction",
+    "type": "multiple-choice",
+    "prompt": "A reaction has ΔG° = +12 kJ/mol in the forward direction. Which statement about the reverse reaction is correct?",
+    "choices": [
+      {
+        "text": "It is exergonic, with ΔG° = −12 kJ/mol and K_eq greater than 1",
+        "correct": true
+      },
+      {
+        "text": "It is endergonic, with ΔG° = +12 kJ/mol and K_eq between 0 and 1",
+        "why": "That describes the forward reaction. Reversing a reaction keeps the size of ΔG° but flips its sign."
+      },
+      {
+        "text": "It is exergonic, with ΔG° = −12 kJ/mol and K_eq between 0 and 1",
+        "why": "A negative ΔG° corresponds to K_eq greater than 1, an equilibrium that favors products."
+      },
+      {
+        "text": "Its ΔG° can't be known without the activation energy",
+        "why": "ΔG° is the energy difference between reactants and products. The activation energy controls the rate, not ΔG°."
+      }
+    ],
+    "explanation": "ΔG° for the reverse reaction has the same size as for the forward reaction, with the opposite sign: −12 kJ/mol. A negative ΔG° (an exergonic reaction) corresponds to K_eq greater than 1, which favors products; a positive ΔG° (endergonic) corresponds to K_eq between 0 and 1."
+  },
+  {
+    "id": "ic12-1-dg-from-keq",
+    "type": "numeric",
+    "prompt": "A ligand substitution has K_eq = 1.0 × 10^3 at 298 K. Using ΔG° = −RT ln K_eq with R = 8.314 J mol^−1 K^−1, what is ΔG°, in kJ/mol (give the sign)?",
+    "answer": -17.1,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "ΔG° = −(8.314 J mol^−1 K^−1)(298 K)(ln 1000) = −(2,477.6 J/mol)(6.908) = −17,115 J/mol ≈ −17.1 kJ/mol. The negative sign fits the rule: an exergonic reaction has K_eq greater than 1 and favors products."
+  },
+  {
+    "id": "ic12-1-overall-order",
+    "type": "numeric",
+    "prompt": "A reaction has three reactants, A, B and C, and its rate law is Rate = k[A][B]^2. What is the overall order of the reaction?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The order with respect to each reactant is its power in the rate law: first order in A, second order in B, and zero order in C, which doesn't appear. The overall order is the sum of the powers: 1 + 2 + 0 = 3."
+  },
+  {
+    "id": "ic12-1-rate-determining-step",
+    "type": "multiple-choice",
+    "prompt": "In a multi-step reaction, which step is the rate-determining step?",
+    "choices": [
+      {
+        "text": "The step with the largest energy barrier, which is the slowest step",
+        "correct": true
+      },
+      {
+        "text": "The step with the smallest energy barrier, which is the fastest step",
+        "why": "The smallest barrier gives the fastest step. The bottleneck is the step with the largest barrier."
+      },
+      {
+        "text": "Always the last step, the one that forms the products",
+        "why": "Any step can be rate-determining; it's whichever step is slowest. In the section's three-step example, it's the first step."
+      },
+      {
+        "text": "The step that releases the most energy",
+        "why": "How far downhill a step goes is a thermodynamic question. The rate depends on the size of the barrier."
+      }
+    ],
+    "explanation": "The slowest step, the one with the largest energy barrier, is the rate-limiting or rate-determining step. It acts as a bottleneck: a factor that affects this step affects the overall rate, while a factor that affects only a much faster step won't significantly change the overall rate. The overall free energy of activation is measured from the reactants to the highest-energy transition state."
+  },
+  {
+    "id": "ic12-1-intermediate-vs-ts",
+    "type": "multiple-choice",
+    "prompt": "How does an intermediate differ from a transition state on a reaction coordinate diagram?",
+    "choices": [
+      {
+        "text": "An intermediate sits at a local energy minimum and may be detectable; a transition state sits at an energy maximum",
+        "correct": true
+      },
+      {
+        "text": "An intermediate sits at an energy maximum; a transition state sits at a local energy minimum",
+        "why": "This is reversed. Transition states are the highest-energy structures along the pathway; intermediates sit in the valleys between them."
+      },
+      {
+        "text": "A one-step reaction has one intermediate but no transition state",
+        "why": "A one-step reaction has one transition state and no intermediate. A two-step reaction has two transition states and one intermediate."
+      },
+      {
+        "text": "Transition states can often be isolated and detected, but intermediates never can",
+        "why": "This is reversed. Intermediates sometimes exist long enough, and in high enough concentration, to be detected."
+      }
+    ],
+    "explanation": "A transition state is the transient species at an energy maximum. An intermediate is a high-energy structure at a local minimum, an energy valley between two transition states. Intermediates are sometimes thought of as long-lived transition states, and unlike transition states they sometimes last long enough, at high enough concentration, to be detected experimentally."
+  },
+  {
+    "id": "ic12-1-hammond-postulate",
+    "type": "multiple-choice",
+    "prompt": "According to Hammond's postulate, which species does a transition state's structure most closely resemble?",
+    "choices": [
+      {
+        "text": "The neighboring species (reactant, product or intermediate) that is closest to it in energy",
+        "correct": true
+      },
+      {
+        "text": "The neighboring species (reactant, product or intermediate) that is farthest from it in energy",
+        "why": "This is reversed. The transition state looks most like the adjacent species closest to it in energy."
+      },
+      {
+        "text": "Always the reactants, since the transition state forms from them",
+        "why": "The transition state can resemble the reactants, the products or an intermediate, whichever adjacent species is closest in energy."
+      },
+      {
+        "text": "Always the final products, since the reaction is heading toward them",
+        "why": "It resembles whichever adjacent species is closest in energy, which need not be the final products."
+      }
+    ],
+    "explanation": "Hammond's postulate says that the structure of a transition state should resemble the lower-energy species (R, P or I) next to it along the reaction coordinate, and that it most closely resembles the species closest to it in energy."
+  },
+  {
+    "id": "ic12-1-microscopic-reversibility",
+    "type": "multiple-choice",
+    "prompt": "What does the principle of microscopic reversibility say about a reaction's forward and reverse directions?",
+    "choices": [
+      {
+        "text": "The lowest-energy pathway from R to P is also the lowest-energy pathway from P to R, through the same intermediates and transition states",
+        "correct": true
+      },
+      {
+        "text": "The reverse reaction must follow a different pathway, through higher-energy intermediates and transition states",
+        "why": "Microscopic reversibility says the opposite: the same lowest-energy pathway serves both directions."
+      },
+      {
+        "text": "The forward and reverse reactions always run at the same rate, whatever the conditions",
+        "why": "The principle is about the pathway, not the rates. The barriers measured from the reactant side and from the product side generally differ."
+      },
+      {
+        "text": "Once products form, the reaction can't run in reverse along any pathway",
+        "why": "If a reaction can proceed from R to P, then in principle it can also proceed from P to R."
+      }
+    ],
+    "explanation": "If a reaction can proceed in the forward direction from R to P, then in principle it can also proceed in reverse, from P to R. There may be many possible ways for the reaction to happen, but the lowest-energy pathway forward is also the lowest-energy pathway in reverse: the reaction passes through the same lowest-energy intermediates and transition states both ways."
+  },
+  {
+    "id": "ic12-1-steady-state",
+    "type": "multiple-choice",
+    "prompt": "In a two-step reaction R → I → P, the barrier for the second step is much smaller than for the first. Why does this justify the steady-state approximation?",
+    "choices": [
+      {
+        "text": "The intermediate reacts at least as fast as it forms, so its concentration stays roughly constant",
+        "correct": true
+      },
+      {
+        "text": "The intermediate builds up to a high concentration that is easy to measure",
+        "why": "With a fast second step, the intermediate is used up as fast as it forms, so it doesn't accumulate."
+      },
+      {
+        "text": "The first step becomes the fast step, so it no longer affects the rate",
+        "why": "The larger barrier makes the first step the slow, rate-determining step."
+      },
+      {
+        "text": "The intermediate's concentration falls steadily to zero as soon as the reaction starts",
+        "why": "The approximation assumes the intermediate's concentration stays steady through the reaction, not that it keeps falling."
+      }
+    ],
+    "explanation": "The steady-state approximation assumes that an intermediate reacts as quickly as it forms, so its concentration stays \"steady\" throughout the reaction. Here the second step has a much smaller barrier than the first, so it is faster: the intermediate is consumed at least as fast as it is made, and [I] doesn't build up. The approximation is useful for analyzing reaction kinetics."
+  },
+  {
+    "id": "ic12-1-intermediates-count",
+    "type": "numeric",
+    "prompt": "A one-step reaction has one transition state and no intermediate; a two-step reaction has two transition states and one intermediate. How many intermediates would a four-step mechanism show on its reaction coordinate diagram?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Each step passes over one transition state, and an intermediate (a local minimum) separates each pair of consecutive steps. Four steps give four transition states and three intermediates. In the same way, the section's three-step reaction from A to D has three transition states and two intermediates, B and C."
+  }
+]

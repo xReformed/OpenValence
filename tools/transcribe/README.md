@@ -76,8 +76,8 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 
 | File | What it does |
 | ---- | ------------ |
-| `stubs.py` | Creates the section files for a book or chapter from its LibreTexts page: `<Chapter-Title>/<NN>-<n>-<Section-Title>.md`, front matter only. Reads the title, author, and license from the page (override with `--book`, `--author`, `--license`). Never overwrites, and skips end-of-chapter pages |
-| `fetch.py` | Downloads each section's page, using its `source_url`, to `sources/raw/libretexts/<book path>/` (git-ignored), and its sub-pages (see below) |
+| `stubs.py` | Creates the section files for a book or chapter from its LibreTexts page: `<Chapter-Title>/<NN>-<n>-<Section-Title>.md`, front matter only. Reads the title, author, and license from the page (override with `--book`, `--author`, `--license`). Never overwrites, and skips end-of-chapter pages. A title longer than 100 characters is cut at a word break in the file name (Windows paths stop at 260); the full title stays in the front matter |
+| `fetch.py` | Downloads each section's page, using its `source_url`, to `sources/raw/libretexts/<book path>/` (git-ignored), and its sub-pages (see below). A busy server (503, 429) is retried after a pause |
 | `lt2md.py` | The converter: one page in, markdown out. `python lt2md.py <page.html> <section, e.g. 16.3>` |
 | `fill.py` | Converts downloaded pages and writes them into the corpus, carrying over existing notes. `--preview` to review first, `--force` to replace changed sections |
 | `regress.py` | Re-converts written sections and diffs them against the corpus, ignoring notes |

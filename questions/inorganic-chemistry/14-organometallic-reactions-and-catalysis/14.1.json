@@ -1,0 +1,468 @@
+[
+  {
+    "id": "ic14-1-fe-co5-photodissociation",
+    "type": "multiple-choice",
+    "prompt": "Irradiating Fe(CO)5 with UV light gives Fe(CO)4 and free CO. How is this step classified?",
+    "choices": [
+      {
+        "text": "A dissociation: the coordination number falls and the oxidation state is unchanged",
+        "correct": true
+      },
+      {
+        "text": "A reductive elimination: the coordination number and oxidation state both fall",
+        "why": "Reductive elimination lowers the oxidation state by 2 as two X-type ligands leave as X–Y. CO is a neutral L-type ligand, so iron stays at 0."
+      },
+      {
+        "text": "An oxidative addition: the coordination number and oxidation state both rise",
+        "why": "Here the coordination number falls from 5 to 4, and iron's oxidation state doesn't change."
+      },
+      {
+        "text": "An association: the coordination number rises and the oxidation state is unchanged",
+        "why": "Association adds a ligand. Losing CO lowers the coordination number."
+      }
+    ],
+    "explanation": "Fe(CO)5 → Fe(CO)4 + CO lowers the coordination number from 5 to 4. CO is a neutral ligand, so iron is 0 in both Fe(CO)5 and Fe(CO)4. A drop in coordination number with no change in oxidation state is a dissociation. The Fe(CO)4 formed is reactive toward association: it readily captures other ligands for an overall substitution, or gives Fe2(CO)9 if no ligand associates."
+  },
+  {
+    "id": "ic14-1-substitution-charge",
+    "type": "multiple-choice",
+    "prompt": "A chloride ion replaces one CO ligand of the neutral complex Cr(CO)6, releasing CO. What is the product, and what happens to the oxidation state of chromium?",
+    "choices": [
+      {
+        "text": "[Cr(CO)5Cl]^−, with chromium still at 0",
+        "correct": true
+      },
+      {
+        "text": "Cr(CO)5Cl, with chromium oxidized to +1",
+        "why": "Ligand substitution doesn't change the metal's oxidation state. Charge is conserved, so the −1 charge brought in by chloride stays on the complex."
+      },
+      {
+        "text": "[Cr(CO)5Cl]^−, with chromium oxidized to +1",
+        "why": "Oxidation state = number of X-type ligands + overall charge = 1 + (−1) = 0. Chromium is unchanged."
+      },
+      {
+        "text": "[Cr(CO)5Cl]^+, with chromium still at 0",
+        "why": "Swapping a neutral CO for an anionic chloride makes the complex more negative, not positive."
+      }
+    ],
+    "explanation": "Ligand substitution exchanges one ligand for another with no change in the metal's oxidation state. When the ligand type changes, the charge of the complex changes: replacing a neutral L-type CO with an X-type Cl^− adds a −1 charge, giving [Cr(CO)5Cl]^−. Check: oxidation state = 1 X-type ligand + (−1) charge = 0, the same as in Cr(CO)6."
+  },
+  {
+    "id": "ic14-1-associative-candidate",
+    "type": "multiple-choice",
+    "prompt": "Which of these complexes is most likely to undergo ligand substitution by an associative mechanism?",
+    "choices": [
+      {
+        "text": "[PtCl4]^2−",
+        "correct": true
+      },
+      {
+        "text": "Cr(CO)6",
+        "why": "Cr(0) is d^6, and six CO ligands donate 12 electrons: 18 in total. Associative attack would need a 20-electron intermediate."
+      },
+      {
+        "text": "Fe(CO)5",
+        "why": "Fe(0) is d^8, and five CO ligands donate 10 electrons: 18 in total, so substitution is dissociative."
+      },
+      {
+        "text": "Ni(CO)4",
+        "why": "Ni(0) is d^10, and four CO ligands donate 8 electrons: 18 in total. It's the 16-electron group 10 complexes that substitute associatively."
+      }
+    ],
+    "explanation": "Using the donor pair method, [PtCl4]^2− has Pt(II), d^8 (group 10 − 2), plus four 2-electron chlorides: 8 + 8 = 16 electrons. Associative substitution is common for 16-electron complexes, like the d^8 complexes of Ni, Pd and Pt. For 18-electron complexes, an incoming ligand would create a 20-electron intermediate, so they react by dissociation through 16-electron intermediates instead."
+  },
+  {
+    "id": "ic14-1-cr-co5-count",
+    "type": "numeric",
+    "prompt": "Loss of CO from octahedral Cr(CO)6 gives the five-coordinate intermediate Cr(CO)5. Using the donor pair method, what is the total electron count of Cr(CO)5?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "All five CO ligands are neutral, so chromium (group 6) is Cr(0) with 6 d electrons. Each CO donates 2 electrons: 6 + 5 × 2 = 16. A regular trigonal bipyramid would leave this d^6 intermediate with unpaired electrons, so five-coordinate d^6 complexes typically adopt square pyramidal or distorted TBP geometries."
+  },
+  {
+    "id": "ic14-1-dissociative-saturation-rate",
+    "type": "numeric",
+    "prompt": "For dissociative substitution, rate = k_{1}k_{2}[LnM–L^{d}][L^{i}]/(k_{−1}[L^{d}] + k_2[L^{i}]). A reaction is run with so much incoming ligand that k_2[L^{i}] ≫ k_{−1}[L^{d}]. If k_1 = 2.0 × 10^−3 s^−1, [LnM–L^{d}] = 0.050 M and [L^{i}] = 0.50 M, what is the rate, in M s^−1?",
+    "answer": 0.0001,
+    "unit": "M s^−1",
+    "tolerance": 0.01,
+    "explanation": "When k_2[L^{i}] dominates the denominator, the k_2[L^{i}] terms cancel and the rate law reduces to rate = k_1[LnM–L^{d}], which doesn't depend on [L^{i}]. Rate = (2.0 × 10^−3 s^−1)(0.050 M) = 1.0 × 10^−4 M s^−1. Multiplying by [L^{i}] too would treat the reaction as associative, whose rate law is second order."
+  },
+  {
+    "id": "ic14-1-sp-intermediate-retention",
+    "type": "multiple-choice",
+    "prompt": "In dissociative substitution of an octahedral complex, the five-coordinate intermediate adopts a square pyramidal geometry. What stereochemical outcome is expected?",
+    "choices": [
+      {
+        "text": "Retention, because the incoming ligand enters the site the departing ligand left",
+        "correct": true
+      },
+      {
+        "text": "Inversion, because the incoming ligand enters opposite the departing ligand",
+        "why": "Inversion is more likely when the intermediate is a distorted trigonal bipyramid, which is favored by good π-donor ligands."
+      },
+      {
+        "text": "No preference, because the vacancy is equally open from every direction",
+        "why": "The vacancy is at one particular site, where the departing ligand was, and the incoming ligand simply approaches there."
+      },
+      {
+        "text": "Retention, because the incoming ligand bonds before the departing ligand leaves",
+        "why": "Bonding first is the associative order of events. In dissociative substitution the departing ligand leaves first."
+      }
+    ],
+    "explanation": "When the unsaturated ML5 intermediate is square pyramidal (favored for good π-acceptors and σ-donors), the incoming ligand can simply approach where the departing ligand left, so the stereochemistry is retained. Inversion is more likely with a distorted trigonal bipyramidal intermediate (favored for good π-donors), and fluxionality of the five-coordinate intermediate can complicate the outcome."
+  },
+  {
+    "id": "ic14-1-dissociative-rate-order",
+    "type": "multiple-choice",
+    "prompt": "Among the three most common types of 18-electron complexes, which type reacts fastest in dissociative substitution?",
+    "choices": [
+      {
+        "text": "d^8 trigonal bipyramidal complexes",
+        "correct": true
+      },
+      {
+        "text": "d^10 tetrahedral complexes",
+        "why": "These fall in the middle of the order d^8 TBP > d^10 tetrahedral > d^6 octahedral."
+      },
+      {
+        "text": "d^6 octahedral complexes",
+        "why": "Octahedral geometry suits six d electrons so well that these complexes are particularly stable and react most slowly."
+      },
+      {
+        "text": "All three types react at about the same rate, since each has 18 electrons",
+        "why": "The electron count is the same, but the match between d electron count and geometry differs, so the rates differ."
+      }
+    ],
+    "explanation": "Complexes with a \"natural\" d electron count for a geometry, but bearing one extra ligand, are ripe for dissociative substitution. A d^8 TBP complex loses a ligand to become a d^8 square planar complex, a geometry that suits eight d electrons (think Pt(II) and Pd(II)). d^6 octahedral complexes are already well matched to their geometry and react most slowly. The order is d^8 TBP > d^10 tetrahedral > d^6 octahedral."
+  },
+  {
+    "id": "ic14-1-steric-bulk-chelation",
+    "type": "multiple-choice",
+    "prompt": "Which change to an 18-electron complex would most encourage dissociative substitution?",
+    "choices": [
+      {
+        "text": "Replacing its ligands with bulkier analogues",
+        "correct": true
+      },
+      {
+        "text": "Replacing two monodentate ligands with one chelating ligand",
+        "why": "Chelation has the opposite effect: it steels the starting complex against dissociation."
+      },
+      {
+        "text": "Replacing its ligands with smaller analogues",
+        "why": "Smaller ligands relieve crowding in the starting complex and so stabilize it. Dissociation is favored when it relieves steric congestion."
+      },
+      {
+        "text": "Choosing a metal that makes it a d^6 octahedral complex",
+        "why": "d^6 octahedral complexes are particularly stable and react most slowly in dissociative substitution."
+      }
+    ],
+    "explanation": "Features that destabilize the starting complex or stabilize the unsaturated intermediate encourage dissociative substitution, since both lower the activation barrier. Adding steric bulk to the ligands destabilizes the starting complex, and dissociation relieves the congestion. Chelation works the other way and makes dissociation harder."
+  },
+  {
+    "id": "ic14-1-kobs-intercept",
+    "type": "numeric",
+    "prompt": "An associative substitution is followed under pseudo-first-order conditions, where k_obs = k_1[L^{i}] + k_s. At [L^{i}] = 0.10 M, k_obs = 0.050 s^−1; at [L^{i}] = 0.30 M, k_obs = 0.090 s^−1. What is k_s, in s^−1?",
+    "answer": 0.03,
+    "unit": "s^−1",
+    "tolerance": 0.01,
+    "explanation": "The slope gives k_1 = (0.090 − 0.050) s^−1 ÷ (0.30 − 0.10) M = 0.20 M^−1 s^−1. The intercept is k_s = 0.050 s^−1 − (0.20 M^−1 s^−1)(0.10 M) = 0.030 s^−1. A non-zero intercept means some pathway doesn't depend on the incoming ligand: solvent associates with the complex in a slow step, then the incoming ligand quickly displaces the solvent."
+  },
+  {
+    "id": "ic14-1-entropy-sign",
+    "type": "multiple-choice",
+    "prompt": "A ligand substitution has a negative entropy of activation. Which mechanism does this support, and why?",
+    "choices": [
+      {
+        "text": "Associative: the incoming ligand and the complex come together in the rate-determining step",
+        "correct": true
+      },
+      {
+        "text": "Dissociative: the departing ligand leaves in the rate-determining step",
+        "why": "Losing a ligand in the rate-determining step increases entropy and gives a positive ΔS‡."
+      },
+      {
+        "text": "Dissociative: a negative ΔS‡ means the number of particles grows",
+        "why": "It's the reverse. Two species combining into one lowers entropy; one species splitting into two raises it."
+      },
+      {
+        "text": "Associative: the departing ligand leaves before the incoming ligand binds",
+        "why": "Leaving first is the dissociative order of events, which gives a positive ΔS‡."
+      }
+    ],
+    "explanation": "In associative substitution, entropy decreases as the incoming ligand and the complex come together in the rate-determining step, so the entropy of activation is typically negative. In dissociative substitution, loss of the departing ligand in the rate-determining step increases entropy, giving a positive entropy of activation."
+  },
+  {
+    "id": "ic14-1-tbp-equatorial-sites",
+    "type": "multiple-choice",
+    "prompt": "In associative substitution through a trigonal bipyramidal intermediate, which positions do the entering and departing ligands occupy?",
+    "choices": [
+      {
+        "text": "Both occupy equatorial positions",
+        "correct": true
+      },
+      {
+        "text": "The entering ligand is axial and the departing ligand is equatorial",
+        "why": "Then the forward and reverse reactions would follow different paths, which violates microscopic reversibility."
+      },
+      {
+        "text": "Both occupy axial positions",
+        "why": "Axial approach and departure are unlikely on electronic grounds: the equatorial sites are more electron rich, and σ bonding to the axial d_z^2 orbital is strong."
+      },
+      {
+        "text": "The entering ligand is equatorial and the departing ligand is axial",
+        "why": "This also makes the forward and reverse mechanisms differ, violating microscopic reversibility."
+      }
+    ],
+    "explanation": "Microscopic reversibility requires the forward substitution and its reverse to follow the same mechanism, so the entering and departing ligands must occupy the same kind of site: both equatorial. Because the axial ligands don't move, the configuration of the starting complex is normally retained, although Berry pseudorotation of the often fluxional TBP intermediate can scramble it."
+  },
+  {
+    "id": "ic14-1-nitrosyl-bending",
+    "type": "multiple-choice",
+    "prompt": "An 18-electron complex can undergo associative substitution if a coordination site opens up first. Which change can open such a site?",
+    "choices": [
+      {
+        "text": "A linear nitrosyl ligand converting to its bent form",
+        "correct": true
+      },
+      {
+        "text": "A bent nitrosyl ligand converting to its linear form",
+        "why": "This is the reverse. Going from linear to bent is what opens a site for an external ligand."
+      },
+      {
+        "text": "An allyl ligand converting from its σ form to its π form",
+        "why": "This is also the reverse. Converting from π to σ leaves an open site where the π bond was."
+      },
+      {
+        "text": "A CO ligand binding to give a 20-electron complex",
+        "why": "This adds a ligand rather than opening a site, and a 20-electron species is exactly what 18-electron complexes avoid."
+      }
+    ],
+    "explanation": "Associative substitution can occur in 18-electron complexes if a site opens first. Examples include a change in hapticity of a cyclopentadienyl or indenyl ligand, an allyl ligand converting from its π to its σ form, and a nitrosyl converting from linear to bent. Such open sites are often hidden in the dynamism of 18-electron complexes with labile ligands."
+  },
+  {
+    "id": "ic14-1-redox-electron-poor",
+    "type": "multiple-choice",
+    "prompt": "Single-electron redox can turn on substitution in an otherwise inert 18-electron complex. For an electron-poor metal carbonyl complex, which approach works best?",
+    "choices": [
+      {
+        "text": "One-electron reduction, giving a 19-electron complex",
+        "correct": true
+      },
+      {
+        "text": "One-electron oxidation, giving a 17-electron complex",
+        "why": "Oxidation works best on electron-rich complexes. Electron-poor metal carbonyls are happy to accept an extra electron instead."
+      },
+      {
+        "text": "One-electron reduction, giving a 17-electron complex",
+        "why": "Adding one electron to an 18-electron complex gives 19 electrons, not 17."
+      },
+      {
+        "text": "Neither, because 17- and 19-electron complexes are less reactive than 18-electron ones",
+        "why": "It's the reverse: odd-electron complexes are much more reactive toward substitution than their 18-electron analogues."
+      }
+    ],
+    "explanation": "Complexes with 17 or 19 total electrons are much more reactive toward substitution than their 18-electron counterparts, so adding or removing one electron can turn substitution on. Oxidation works best on electron-rich complexes and reduction on electron-poor ones. Electron-poor metal carbonyls readily accept an extra electron, so one-electron reduction to a 19-electron complex is the method of choice."
+  },
+  {
+    "id": "ic14-1-ir-ch3br-d-count",
+    "type": "numeric",
+    "prompt": "A square planar Ir(I) complex with three neutral ligands and one chloride adds CH3Br by trans oxidative addition, giving an octahedral complex. Counting CH3 as CH3^−, how many d electrons does iridium have in the product?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "In the product, Cl^−, Br^− and CH3^− are X-type ligands and the complex is neutral, so iridium is +3, up from +1, as the coordination number rises from 4 to 6. Iridium is in group 9, so d electrons = 9 − 3 = 6. The oxidative addition turned a d^8 Ir(I) center into a d^6 Ir(III) center."
+  },
+  {
+    "id": "ic14-1-co2co8-dinuclear",
+    "type": "multiple-choice",
+    "prompt": "Dicobalt octacarbonyl reacts with H2: Co2(CO)8 + H2 → 2 HCo(CO)4. How do the oxidation state and coordination number of each cobalt change?",
+    "choices": [
+      {
+        "text": "The oxidation state rises from 0 to +1, and the coordination number stays 5",
+        "correct": true
+      },
+      {
+        "text": "The oxidation state rises from 0 to +2, and the coordination number rises from 5 to 7",
+        "why": "That is the mononuclear pattern. Here the Co–Co bond breaks and each Co(CO)4 fragment gains only one H."
+      },
+      {
+        "text": "The oxidation state stays 0, because hydrogen is a neutral ligand",
+        "why": "The hydrido ligand is counted as H^−, an X-type ligand, so cobalt is +1 in HCo(CO)4."
+      },
+      {
+        "text": "The oxidation state falls from +1 to 0, and the coordination number stays 5",
+        "why": "In Co2(CO)8, all ligands are neutral CO and the molecule is neutral, so cobalt starts at 0. It is oxidized, not reduced."
+      }
+    ],
+    "explanation": "This is a dinuclear oxidative addition: H2 adds across the Co–Co bond, cleaving it and adding one H to each fragment, so it is neither cis nor trans. Cobalt is 0 in Co2(CO)8 and +1 in HCo(CO)4, where the hydride carries a −1 charge. The coordination number doesn't increase: both the reactant and the products have coordination number 5."
+  },
+  {
+    "id": "ic14-1-pt-alkyne-os",
+    "type": "numeric",
+    "prompt": "Diphenylethyne adds to Pt(PPh3)3 with loss of one PPh3, giving Pt(PPh3)2(PhC2Ph), in which the alkyne binds side-on through two Pt–C single bonds. Treating the bound alkyne as (PhC=CPh)^2−, what is the oxidation state of platinum in the product?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "In Pt(PPh3)3, the three phosphines are neutral and the complex is neutral, so platinum is 0. Assigning the four electrons of the two Pt–C bonds to the ligand makes it (PhC=CPh)^2−, so in the neutral product platinum is +2. This is an oxidative addition with an intact ligand: the C–C bond order drops from 3 to 2 but the ligand stays in one piece, and the coordination number rises from 3 to 4."
+  },
+  {
+    "id": "ic14-1-collman-count",
+    "type": "numeric",
+    "prompt": "Collman's reagent, [Fe(CO)4]^2−, reacts with an alkyl halide R–X to give [RFe(CO)4]^−. Using the neutral atom method, what is the total electron count of [RFe(CO)4]^−?",
+    "answer": 18,
+    "tolerance": 0,
+    "explanation": "Neutral iron (group 8) contributes 8 electrons, the 1− charge adds 1, the four CO ligands add 4 × 2 = 8, and the alkyl adds 1: 8 + 1 + 8 + 1 = 18. [Fe(CO)4]^2− is also an 18-electron complex, so this nucleophilic displacement added a ligand but no electrons. Iron's oxidation state does change, from −2 to 0, which is why the reaction is classed as an oxidative addition even though it doesn't strictly meet the definition."
+  },
+  {
+    "id": "ic14-1-collman-ketone",
+    "type": "multiple-choice",
+    "prompt": "In [RFe(CO)4]^−, made from Collman's reagent, the Fe–C bond is polarized toward carbon, so R acts as a nucleophile. What forms when [RFe(CO)4]^− reacts with a second alkyl halide, R'–X?",
+    "choices": [
+      {
+        "text": "A ketone, R–C(O)–R'",
+        "correct": true
+      },
+      {
+        "text": "An alkane, R–H",
+        "why": "An alkane forms when [RFe(CO)4]^− reacts with protons."
+      },
+      {
+        "text": "A carboxylic acid",
+        "why": "A carboxylic acid forms when [RFe(CO)4]^− reacts with oxygen."
+      },
+      {
+        "text": "An aldehyde",
+        "why": "An aldehyde forms when CO first inserts into the Fe–C bond and the product is then treated with acid."
+      }
+    ],
+    "explanation": "Collman's reagent turns the electrophile R–X into a nucleophile, R bound to iron. [RFe(CO)4]^− gives an alkane with protons, a carboxylic acid with oxygen, and a ketone R–C(O)–R' with another alkyl halide R'–X. After migratory insertion of CO, acid gives an aldehyde and a dihalogen X2 gives an acyl halide."
+  },
+  {
+    "id": "ic14-1-re-requirements",
+    "type": "multiple-choice",
+    "prompt": "Which statement about reductive elimination of X–Y from a complex LnM(X)(Y) is correct?",
+    "choices": [
+      {
+        "text": "X and Y must be cis, and the metal's oxidation state drops by 2",
+        "correct": true
+      },
+      {
+        "text": "X and Y must be trans, and the metal's oxidation state drops by 2",
+        "why": "The two ligands must be cis to form the new X–Y bond, just as the two cis hydrides of the iridium complex are needed to form H2."
+      },
+      {
+        "text": "X and Y must be cis, and the metal's oxidation state rises by 2",
+        "why": "A rising oxidation state belongs to oxidative addition. In reductive elimination the metal gains electrons."
+      },
+      {
+        "text": "X and Y are L-type ligands, and the metal's oxidation state is unchanged",
+        "why": "The eliminating ligands are always X-type, and losing two X-type ligands lowers the oxidation state by 2."
+      }
+    ],
+    "explanation": "Reductive elimination is the microscopic reverse of oxidative addition, and it can only occur when the two eliminating ligands are cis. The electrons of the M–X bond head toward Y and those of the M–Y bond head to the metal. An X–Y bond forms, two open coordination sites appear, and the metal's oxidation state decreases by two units. The eliminating ligands are always X-type."
+  },
+  {
+    "id": "ic14-1-hydrocyanation-ligand-design",
+    "type": "multiple-choice",
+    "prompt": "In hydrocyanation, reductive elimination of C–CN from the metal is the turnover-limiting step. Which change would be expected to speed up this step?",
+    "choices": [
+      {
+        "text": "Using more π-acidic ancillary ligands, so the metal center is more electron poor",
+        "correct": true
+      },
+      {
+        "text": "Using more strongly donating ancillary ligands, so the metal center is more electron rich",
+        "why": "The metal gains electrons during reductive elimination, so electron-poor metal centers react faster, not electron-rich ones."
+      },
+      {
+        "text": "Using smaller ancillary ligands, so the complex is less crowded",
+        "why": "Bulky ancillary ligands promote reductive elimination, since releasing the two eliminating groups eases steric strain."
+      },
+      {
+        "text": "Using an electron-poor alkene, such as an unsaturated ketone, as the substrate",
+        "why": "The eliminating ligands lose electron density, so electron-rich ones react faster. Electron-poor alkyls derived from unsaturated ketones are bad enough at reductive elimination to prevent turnover altogether."
+      }
+    ],
+    "explanation": "Reactivity trends in reductive elimination are opposite those of oxidative addition. The metal gains electrons, so electron-poor metal centers, bearing π-acidic ligands or ligands with electron-withdrawing groups, react faster. The eliminating ligands lose electrons, so electron-rich ones react faster. Sterically bulky ancillary ligands also promote the step."
+  },
+  {
+    "id": "ic14-1-sigma-metathesis-metal",
+    "type": "multiple-choice",
+    "prompt": "In σ-bond metathesis, a metal–ligand σ bond exchanges partners with a σ bond in another reagent, such as R–H, with no change in the metal's oxidation state. Which metal center is most typical for this reaction?",
+    "choices": [
+      {
+        "text": "Zr(IV)",
+        "correct": true
+      },
+      {
+        "text": "Ir(I)",
+        "why": "Ir(I) is d^8 and readily undergoes oxidative addition. σ-Bond metathesis is mainly observed for d^0 metals."
+      },
+      {
+        "text": "Pd(0)",
+        "why": "Pd(0) is d^10. σ-Bond metathesis is mainly observed for d^0 metals."
+      },
+      {
+        "text": "Fe(II)",
+        "why": "Fe(II) is d^6. σ-Bond metathesis is mainly observed for d^0 metals."
+      }
+    ],
+    "explanation": "σ-Bond metathesis is mainly observed for complexes of d^0 metals, such as Sc(III), Zr(IV), Nb(V) and Ta(V), and for f-block elements regardless of their f electron count. For metals unsuited for redox, it offers a way to introduce substituents. A currently accepted model has a \"kite-shaped\" transition state, consistent with the highly negative entropy of activation."
+  },
+  {
+    "id": "ic14-1-pincer-thermal-stability",
+    "type": "multiple-choice",
+    "prompt": "Why can pincer complexes catalyze alkane dehydrogenation homogeneously at about 200 °C, where most homogeneous catalysts don't survive?",
+    "choices": [
+      {
+        "text": "Their rigid tridentate binding inhibits ligand exchange and cyclometallation",
+        "correct": true
+      },
+      {
+        "text": "They bind only one site, so the metal stays coordinatively open",
+        "why": "Pincers bind tightly to three adjacent coplanar sites of the metal."
+      },
+      {
+        "text": "Their flexible backbone lets the complex rearrange as it heats",
+        "why": "The backbone is rigid and planar, and that inflexibility is what gives high thermal stability."
+      },
+      {
+        "text": "They readily cyclometallate, which protects the metal",
+        "why": "Cyclometallation is a deactivation process for other chelates. The pincer's constrained geometry inhibits it."
+      }
+    ],
+    "explanation": "Pincer ligands bind tightly to three adjacent coplanar sites, often with an anionic two-electron donor (like the central carbanion of a PCP pincer) flanked by two neutral two-electron donors, on a rigid, usually aryl, backbone. The inflexible pincer–metal interaction gives high thermal stability, partly because the constrained geometry inhibits ligand exchange and cyclometallation. So pincer catalysts survive the ~200 °C needed for alkane dehydrogenation."
+  },
+  {
+    "id": "ic14-1-pincer-tof",
+    "type": "numeric",
+    "prompt": "Jensen and co-workers reported iridium and rhodium pincer catalysts that dehydrogenate cyclooctane with a turnover frequency of 12 min^−1 (12 turnovers per catalyst molecule per minute) at 200 °C. At that rate, how many turnovers does each catalyst molecule complete in one hour?",
+    "answer": 720,
+    "tolerance": 0,
+    "explanation": "12 turnovers per minute × 60 minutes = 720 turnovers per hour. That rate was two orders of magnitude greater than those previously reported. The iridium pincer was more active than the rhodium one, possibly because the available Ir(V) oxidation state allows stronger Ir–C and Ir–H bonds."
+  },
+  {
+    "id": "ic14-1-suzuki-steps",
+    "type": "multiple-choice",
+    "prompt": "Pincer complexes can catalyze Suzuki–Miyaura coupling of an organoborane with an organic halide under basic conditions. Which three basic steps does Suzuki coupling proceed through?",
+    "choices": [
+      {
+        "text": "Oxidative addition, transmetallation, reductive elimination",
+        "correct": true
+      },
+      {
+        "text": "Oxidative addition, migratory insertion, β-hydride elimination",
+        "why": "β-Hydride elimination forms a C=C bond and a metal hydride. In Suzuki coupling the boron's carbon group arrives by transmetallation and the C–C bond forms by reductive elimination."
+      },
+      {
+        "text": "Ligand dissociation, σ-bond metathesis, reductive elimination",
+        "why": "σ-Bond metathesis is typical of d^0 metals. Suzuki coupling begins with oxidative addition of the halide."
+      },
+      {
+        "text": "Transmetallation, oxidative addition, migratory insertion",
+        "why": "Migratory insertion isn't one of the three basic steps. The new C–C bond forms by reductive elimination."
+      }
+    ],
+    "explanation": "Suzuki–Miyaura coupling joins an alkenyl, aryl or alkynyl organoborane with a halide or triflate under basic conditions, typically with Pd, making C–C bonds in conjugated alkenes, styrenes or biaryls. It proceeds via three basic steps: oxidative addition, transmetallation and reductive elimination."
+  }
+]

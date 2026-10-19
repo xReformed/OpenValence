@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ic13-2-hapticity-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the formula of an organometallic complex, what does the η^{n} notation for a ligand indicate?",
+    "choices": [
+      {
+        "text": "Its hapticity: the number of ligand atoms involved in the bonding interaction with the metal",
+        "correct": true
+      },
+      {
+        "text": "The number of metal atoms the ligand bridges",
+        "why": "Bridging is shown with μ (mu), written μn for a ligand bridging n metals. η counts ligand atoms bonded to the metal."
+      },
+      {
+        "text": "The number of electrons the ligand donates to the metal",
+        "why": "Electron donation depends on the ligand type and counting method. η^{n} counts the atoms bonded to the metal."
+      },
+      {
+        "text": "The ligand's charge in the donor pair method",
+        "why": "Ligand charges come from the CBC class and the counting method. η^{n} describes how many ligand atoms bind the metal."
+      }
+    ],
+    "explanation": "The eta (η) symbol indicates the hapticity of ligands with conjugated π systems: the number of atoms involved in the metal bonding interaction. For example, Cp can bind η^1 (one carbon), η^3 (three carbons) or η^5 (all five carbons interacting equally through the π system)."
+  },
+  {
+    "id": "ic13-2-mu3-carbonyl",
+    "type": "multiple-choice",
+    "prompt": "How is a carbonyl ligand that bridges three metal atoms written?",
+    "choices": [
+      {
+        "text": "μ3-CO",
+        "correct": true
+      },
+      {
+        "text": "η^3-CO",
+        "why": "η gives hapticity, the number of ligand atoms bonded to the metal. Bridging between metals is shown with μ."
+      },
+      {
+        "text": "μ-CO",
+        "why": "μ with no subscript means the ligand bridges two metals, since the subscript is usually omitted only when n = 2."
+      },
+      {
+        "text": "CO, with no symbol",
+        "why": "A plain CO with no μ is a terminal carbonyl, bound to just one metal."
+      }
+    ],
+    "explanation": "Ligands that bridge two or more metal ions are indicated with μ (mu), written μn for a ligand bridging n metals. A carbonyl bridging three metals is μ3-CO; one bridging two is μ2-CO, usually written just μ-CO; a terminal carbonyl needs no μ."
+  },
+  {
+    "id": "ic13-2-carbyne-neutral-count",
+    "type": "numeric",
+    "prompt": "In the CBC table, a carbyne (alkylidyne) is an X3 ligand. Using the neutral ligand method, how many electrons does it donate to the metal?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "In the neutral ligand method each X-type binding point is considered neutral and donates 1 electron to the metal. An X3 ligand has three such points: 3 × 1 = 3 electrons. (In the donor pair method each X point is treated as anionic and donates 2.)"
+  },
+  {
+    "id": "ic13-2-cp-eta5-class",
+    "type": "multiple-choice",
+    "prompt": "In the covalent bond classification (CBC), how is a cyclopentadienyl ligand bound in a pentahapto (η^5) fashion described?",
+    "choices": [
+      {
+        "text": "L2X",
+        "correct": true
+      },
+      {
+        "text": "X",
+        "why": "X is the description for η^1-Cp, bound through a single carbon."
+      },
+      {
+        "text": "LX",
+        "why": "LX is the description for η^3-Cp, bound through three carbons."
+      },
+      {
+        "text": "L3",
+        "why": "L3 is the description for η^6-benzene. Cp is an anion, so its classification includes an X-type binding point."
+      }
+    ],
+    "explanation": "The CBC description of Cp depends on its hapticity: X for η^1, LX for η^3, and L2X for η^5. In the η^5 mode, all five ring carbons interact equally with the metal through the π system."
+  },
+  {
+    "id": "ic13-2-allyl-neutral-count",
+    "type": "numeric",
+    "prompt": "The η^3-allyl ligand (C3H5) is described as LX in the CBC scheme. Using the neutral ligand method values from the section's CBC table, how many electrons does it donate to the metal?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "In the neutral ligand method, an L-type binding point is neutral and donates 2 electrons, and an X-type binding point is considered neutral and donates 1 electron. LX gives 2 + 1 = 3 electrons. (The η^1-allyl ligand, X-type, would donate 1.)"
+  },
+  {
+    "id": "ic13-2-x-type-two-methods",
+    "type": "multiple-choice",
+    "prompt": "How is an X-type ligand such as Cl^− treated in the two electron-counting methods?",
+    "choices": [
+      {
+        "text": "Neutral ligand method: neutral, donating 1 electron; donor pair method: anionic, donating 2 electrons",
+        "correct": true
+      },
+      {
+        "text": "Neutral ligand method: anionic, donating 2 electrons; donor pair method: neutral, donating 1 electron",
+        "why": "This swaps the methods. The neutral ligand method treats every ligand as neutral, so X-type ligands give 1 electron."
+      },
+      {
+        "text": "Both methods: neutral, donating 2 electrons",
+        "why": "That is how both methods treat L-type ligands like CO, NH3 and H2O. X-type ligands are treated differently in each method."
+      },
+      {
+        "text": "Neutral ligand method: neutral, accepting 2 electrons; donor pair method: cationic, donating 0 electrons",
+        "why": "That describes Z-type ligands such as BR3, which are Lewis acids."
+      }
+    ],
+    "explanation": "In the CBC table, X-type ligands (H^−, Cl^−, H3C^−) are considered neutral and donate 1 electron in the neutral ligand method, but are considered anionic and donate 2 electrons in the donor pair method. L-type ligands (CO, NH3, H2O) are neutral 2-electron donors in both."
+  },
+  {
+    "id": "ic13-2-z-type-ligand",
+    "type": "multiple-choice",
+    "prompt": "What is a Z-type ligand in the covalent bond classification, such as BR3?",
+    "choices": [
+      {
+        "text": "A Lewis acid that accepts 2 electrons from the metal; in the donor pair method it is cationic and donates 0 electrons",
+        "correct": true
+      },
+      {
+        "text": "A neutral ligand that donates 2 electrons to the metal in both counting methods",
+        "why": "That describes L-type ligands like CO, NH3 and H2O, which are Lewis bases."
+      },
+      {
+        "text": "A ligand that donates 1 electron in the neutral ligand method and 2 in the donor pair method",
+        "why": "That describes X-type ligands like H^−, Cl^− and H3C^−."
+      },
+      {
+        "text": "A ligand that bridges two or more metals, written with μ",
+        "why": "Bridging is a binding mode, not a CBC class. Z-type refers to ligands that accept electrons from the metal."
+      }
+    ],
+    "explanation": "The CBC method sorts ligands into three types. Z-type ligands (rarely used) are Lewis acids such as BR3: in the neutral ligand method they are considered neutral and accept 2 electrons; in the donor pair method they are considered cationic and donate 0 electrons."
+  }
+]

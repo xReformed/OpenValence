@@ -1,0 +1,488 @@
+[
+  {
+    "id": "ic12-3-dissociative-rate-law",
+    "type": "multiple-choice",
+    "prompt": "A D mechanism has the steps ML_{n}X ⇌ ML_{n} + X (k_1, k_{−1}) and ML_{n} + Y → ML_{n}Y (k_2). Applying the steady-state approximation to ML_{n}, which rate law describes formation of ML_{n}Y?",
+    "choices": [
+      {
+        "text": "Rate = k_1 k_2[ML_{n}X][Y] / (k_{−1}[X] + k_2[Y])",
+        "correct": true
+      },
+      {
+        "text": "Rate = k_1 k_2[ML_{n}X][Y] / (k_{−1} + k_2)",
+        "why": "That is the form of the associative rate law, whose intermediate is ML_{n}XY. For D, [X] and [Y] both appear in the denominator."
+      },
+      {
+        "text": "Rate = k_2[ML_{n}][Y]",
+        "why": "This is the rate of the second step, but [ML_{n}] can't be measured. The steady-state approximation replaces it with measurable concentrations."
+      },
+      {
+        "text": "Rate = k_1 k_2[ML_{n}X][X] / (k_{−1}[Y] + k_2[X])",
+        "why": "This swaps X and Y. The leaving group appears only in the denominator, which is why adding X slows the reaction."
+      }
+    ],
+    "explanation": "Product forms in the second step, rate = k_2[ML_{n}][Y]. Setting d[ML_{n}]/dt = k_1[ML_{n}X] − k_{−1}[ML_{n}][X] − k_2[ML_{n}][Y] = 0 gives [ML_{n}] = k_1[ML_{n}X]/(k_{−1}[X] + k_2[Y]). Substituting gives Rate = k_1 k_2[ML_{n}X][Y]/(k_{−1}[X] + k_2[Y]), which depends only on species whose concentrations can be measured."
+  },
+  {
+    "id": "ic12-3-added-leaving-group",
+    "type": "multiple-choice",
+    "prompt": "The concentrations of a metal complex and of the incoming ligand are held constant while more of the departing ligand is added, and the rate drops. How does a dissociative mechanism explain this?",
+    "choices": [
+      {
+        "text": "It pushes the dissociation equilibrium back toward the starting complex, leaving less intermediate",
+        "correct": true
+      },
+      {
+        "text": "It speeds up the first step, so the second step becomes rate-limiting instead",
+        "why": "Adding X doesn't speed up dissociation. It speeds up the reverse reaction, in which X recombines with the intermediate ML_{n}."
+      },
+      {
+        "text": "It doesn't; a rate that falls as departing ligand is added shows an associative mechanism",
+        "why": "A rate that falls as [X] rises is evidence for a D mechanism; the k_{−1}[X] term sits in the D rate law's denominator."
+      },
+      {
+        "text": "It binds the incoming ligand and removes it from solution before it can react",
+        "why": "In the D mechanism, the departing ligand reacts with the intermediate ML_{n}, re-forming the reactant; it doesn't capture Y."
+      }
+    ],
+    "explanation": "The D rate law, Rate = k_1 k_2[ML_{n}X][Y]/(k_{−1}[X] + k_2[Y]), has an inverse dependence on [X]. The more departing ligand is added, the more the dissociation equilibrium is pushed back toward the original complex. With less of the dissociated intermediate around, the entering ligand can't form the new complex as quickly. A rate that decreases as [X] increases is evidence for a D mechanism."
+  },
+  {
+    "id": "ic12-3-dissociative-saturation",
+    "type": "multiple-choice",
+    "prompt": "For a D mechanism, what does the rate law become at very high concentration of the incoming ligand Y?",
+    "choices": [
+      {
+        "text": "Rate = k_1[ML_{n}X], first order in the complex and independent of [Y]",
+        "correct": true
+      },
+      {
+        "text": "Rate = k_1 k_2[ML_{n}X][Y] / (k_{−1}[X]), first order in [Y]",
+        "why": "That is the limit when [X] is much larger than [Y]. At high [Y], the k_2[Y] term dominates the denominator and [Y] cancels."
+      },
+      {
+        "text": "Rate = k[ML_{n}X][Y], second order overall",
+        "why": "A rate that keeps rising in proportion to [Y] is the associative pattern. A D reaction levels off at high [Y]."
+      },
+      {
+        "text": "Rate = 0, because Y crowds out the leaving group",
+        "why": "The incoming ligand fills the open site of the intermediate; it doesn't stop the reaction."
+      }
+    ],
+    "explanation": "When [Y] is large, k_{−1}[X] becomes insignificant next to k_2[Y], and the rate law simplifies to the pseudo-first-order Rate = k_1[ML_{n}X]. This saturation kinetics at high incoming-ligand concentration is characteristic of the dissociative mechanism. It makes sense: losing a ligand needs no collision, just a bond breaking, so once Y is plentiful, its concentration hardly matters."
+  },
+  {
+    "id": "ic12-3-energy-distribution",
+    "type": "multiple-choice",
+    "prompt": "The molecules in a sample have a bell-curve-like distribution of available energy. Why does warming the sample speed up a ligand dissociation?",
+    "choices": [
+      {
+        "text": "A larger fraction of the molecules have at least the energy needed to get over the activation barrier",
+        "correct": true
+      },
+      {
+        "text": "Warming lowers the activation barrier for the dissociation",
+        "why": "The energy needed, the barrier, is fixed for a given reaction. Temperature changes the energy available."
+      },
+      {
+        "text": "Warming gives every molecule enough energy, so all of them react at once",
+        "why": "Even at higher temperature, energy is spread over a distribution, and energy is necessary but not sufficient for reaction."
+      },
+      {
+        "text": "Warming makes the complex collide more often with the incoming ligand, which is needed to break the bond",
+        "why": "No collision is needed for a complex to lose a ligand. A bond simply has to break, which takes time and energy."
+      }
+    ],
+    "explanation": "Two factors govern how fast a reaction goes: the energy needed (the activation barrier) and the energy available (indicated by the temperature). At a low temperature only a small portion of the molecules have enough energy, so the reaction is slow; at higher temperatures a larger fraction does. Even then, a molecule needs its energy in the right places, so bond breaking stays a statistical process."
+  },
+  {
+    "id": "ic12-3-half-life-remaining",
+    "type": "numeric",
+    "prompt": "A first-order ligand dissociation has a half-life of 90 seconds. What percentage of the starting complex remains after 6.0 minutes?",
+    "answer": 6.25,
+    "unit": "%",
+    "tolerance": 0.01,
+    "explanation": "6.0 minutes = 360 s = 4 × 90 s, which is four half-lives. Each half-life leaves half of what was there: 0.5 × 0.5 × 0.5 × 0.5 = 0.0625, so 6.25% remains. The half-life is a fixed time, set by how long it takes half of the complex to gain enough energy to dissociate."
+  },
+  {
+    "id": "ic12-3-concentration-change-rate",
+    "type": "numeric",
+    "prompt": "A first-order ligand substitution has a half-life of 2.0 s. Starting from 0.80 M complex, what is the average rate of change in concentration over the first half-life, in M/s?",
+    "answer": 0.2,
+    "unit": "M/s",
+    "tolerance": 0.01,
+    "explanation": "After one half-life, 0.80 M falls to 0.40 M, a change of 0.40 M in 2.0 s: 0.40 M ÷ 2.0 s = 0.20 M/s. The half-life doesn't depend on concentration, but the change in concentration per unit time does. Starting from 0.40 M, the same half-life would give only 0.10 M/s, which is why the complex's concentration appears in the rate law."
+  },
+  {
+    "id": "ic12-3-dissociative-rate-factor",
+    "type": "numeric",
+    "prompt": "Under high [Y], a D substitution follows Rate = k_1[ML_{n}X]. If the incoming ligand concentration is tripled and the complex concentration is halved, by what factor does the rate change?",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "explanation": "The rate depends only on the complex's concentration, not on the incoming ligand. Halving [ML_{n}X] halves the rate, and tripling the ligand concentration has no effect: the new rate is 0.5 times the original."
+  },
+  {
+    "id": "ic12-3-coordinating-solvent",
+    "type": "multiple-choice",
+    "prompt": "In solvents such as THF, acetonitrile and pyridine, substitution often follows Rate = k_1[ML_{n}] + k_2[ML_{n}][X], where X is the incoming ligand. How can this rate law fit an entirely associative mechanism?",
+    "choices": [
+      {
+        "text": "The solvent acts as a second nucleophile; its concentration is constant, so its term looks first order",
+        "correct": true
+      },
+      {
+        "text": "The solvent removes the leaving group from the complex, which makes the k_1 term first order",
+        "why": "In this explanation, the solvent's role is as a nucleophile attacking the metal, just like the incoming ligand."
+      },
+      {
+        "text": "The k_1 term must come from a dissociative pathway, so the mechanism can't be entirely associative",
+        "why": "Competing D and A pathways are one possible explanation, but the same rate law also fits one associative mechanism with two nucleophiles."
+      },
+      {
+        "text": "These solvents lack lone pairs, so they can't take part, and the k_1 term is an artifact",
+        "why": "THF, acetonitrile and pyridine all have lone pairs, so they can act as Lewis bases or nucleophiles."
+      }
+    ],
+    "explanation": "The rate law could reflect two competing mechanisms, but it is also consistent with a single associative mechanism and two different nucleophiles. When the incoming ligand attacks, the k_2[ML_{n}][X] term appears. When the solvent attacks, forming a third complex, its concentration is effectively constant, because it can't be varied the way the reactant concentrations are, so its term shows up as k_1[ML_{n}]."
+  },
+  {
+    "id": "ic12-3-interchange-versus-dissociative",
+    "type": "multiple-choice",
+    "prompt": "Kinetic experiments at high ligand concentrations can separate an I mechanism from a D mechanism. Which statement describes the difference?",
+    "choices": [
+      {
+        "text": "At high [Y], a D rate depends only on the reactant complex; a reversible I rate at high [X] and [Y] still depends on the product complex",
+        "correct": true
+      },
+      {
+        "text": "At high [X] and [Y], an I rate becomes independent of every concentration, including the product's",
+        "why": "The I rate law at high [X] and [Y], k_1[ML_{n}X] − k_{−1}[ML_{n}Y], still contains concentration terms."
+      },
+      {
+        "text": "At high [Y], a D rate keeps rising in direct proportion to [Y], with no leveling off",
+        "why": "A D reaction shows saturation: at high [Y], its rate stops depending on [Y]."
+      },
+      {
+        "text": "There's no difference, because at high concentrations both reduce to Rate = k_1[ML_{n}X]",
+        "why": "Only D reduces to that pseudo-first-order form. The reversible I rate law keeps its product term."
+      }
+    ],
+    "explanation": "At high [X] and [Y], a reversible I reaction behaves like two competing pseudo-first-order reactions: d[ML_{n}Y]/dt = k_1[ML_{n}X] − k_{−1}[ML_{n}Y]. So its rate is not a simple first-order rate law: it still depends on the concentration of the product complex. A D reaction at high [Y] saturates to a pseudo-first-order rate law that depends only on the reactant complex."
+  },
+  {
+    "id": "ic12-3-interchange-equilibrium-constant",
+    "type": "numeric",
+    "prompt": "For an interchange reaction ML_{n}X + Y ⇌ ML_{n}Y + X, the forward and reverse rate constants are k_1 = 6.0 × 10^−3 M^−1 s^−1 and k_{−1} = 2.0 × 10^−4 M^−1 s^−1. Using K = k_1/k_{−1}, what is the equilibrium constant K?",
+    "answer": 30,
+    "tolerance": 0.01,
+    "explanation": "K = k_1/k_{−1} = (6.0 × 10^−3)/(2.0 × 10^−4) = 30. The units cancel because both steps are second order. When the reverse reaction is significant, the rate law has both a forward and a reverse term, and the equilibrium constant is a helpful extra piece of information."
+  },
+  {
+    "id": "ic12-3-ia-versus-id",
+    "type": "multiple-choice",
+    "prompt": "How can an I_a reaction be distinguished from an I_d reaction experimentally?",
+    "choices": [
+      {
+        "text": "Vary the entering and leaving groups: a large dependence on the entering group, and less on the leaving group, points to I_a",
+        "correct": true
+      },
+      {
+        "text": "Vary the entering and leaving groups: a large dependence on the leaving group, and little on the entering group, points to I_a",
+        "why": "This is reversed. A strong dependence on the leaving group, with little on the entering group, points to I_d."
+      },
+      {
+        "text": "Look for the intermediate: I_a gives a higher-coordinate one and I_d a lower-coordinate one",
+        "why": "Interchange mechanisms have no detectable intermediate. Detecting one would make the mechanism A or D."
+      },
+      {
+        "text": "Compare their speeds: I_a reactions are always faster than I_d reactions",
+        "why": "The labels describe which bond matters most in the transition state, not how fast the reaction is."
+      }
+    ],
+    "explanation": "I_a and I_d reactions differ in the relative strength of the M–X and M–Y bonds in the transition state. To tell them apart, change the identities of X and Y and see how the rate responds. A large dependence on the incoming ligand, and less on the outgoing ligand, suggests I_a; the opposite pattern suggests I_d."
+  },
+  {
+    "id": "ic12-3-associative-rate-constant",
+    "type": "multiple-choice",
+    "prompt": "For an A mechanism, ML_{n}X + Y ⇌ ML_{n}XY (k_1, k_{−1}) followed by ML_{n}XY → ML_{n}Y + X (k_2), the steady-state rate law is Rate = k[ML_{n}X][Y]. What is k?",
+    "choices": [
+      {
+        "text": "k = k_1 k_2/(k_{−1} + k_2)",
+        "correct": true
+      },
+      {
+        "text": "k = k_1 k_2/(k_{−1}[X] + k_2[Y])",
+        "why": "That denominator belongs to the D rate law. In the A rate law, no concentrations appear in the denominator."
+      },
+      {
+        "text": "k = k_1/k_{−1}",
+        "why": "That ratio describes the first step's equilibrium and leaves out how fast the intermediate goes on to products."
+      },
+      {
+        "text": "k = k_2",
+        "why": "Product forms in step 2, but [ML_{n}XY] depends on k_1, k_{−1} and k_2 through the steady-state approximation."
+      }
+    ],
+    "explanation": "Product forms in the second step: rate = k_2[ML_{n}XY]. The steady-state condition, k_1[ML_{n}X][Y] − k_{−1}[ML_{n}XY] − k_2[ML_{n}XY] = 0, gives [ML_{n}XY] = k_1[ML_{n}X][Y]/(k_{−1} + k_2). Substituting gives Rate = k_1 k_2[ML_{n}X][Y]/(k_{−1} + k_2), so k = k_1 k_2/(k_{−1} + k_2). The rate law is second order overall and first order in each reactant."
+  },
+  {
+    "id": "ic12-3-associative-rate-factor",
+    "type": "numeric",
+    "prompt": "An associative substitution follows Rate = k[ML_{n}X][Y]. If the incoming ligand concentration is quadrupled and the complex concentration is halved, by what factor does the rate change?",
+    "answer": 2,
+    "tolerance": 0.01,
+    "explanation": "The rate is first order in each reactant, so each concentration change multiplies the rate directly: 0.5 × 4 = 2. The rate doubles. Two molecules must meet to react, so a higher concentration of either one makes an encounter proportionally more likely."
+  },
+  {
+    "id": "ic12-3-rate-constant-from-slope",
+    "type": "numeric",
+    "prompt": "In an associative substitution, the complex is held at [ML_{n}X] = 0.020 M while [Y] is varied. A plot of initial rate against [Y] is a straight line with slope 4.8 × 10^−3 s^−1. What is the rate constant k, in M^−1 s^−1?",
+    "answer": 0.24,
+    "unit": "M^−1 s^−1",
+    "tolerance": 0.01,
+    "explanation": "For Rate = k[ML_{n}X][Y] with [ML_{n}X] held constant, the slope of rate against [Y] is k[ML_{n}X]. So k = slope/[ML_{n}X] = (4.8 × 10^−3 s^−1)/(0.020 M) = 0.24 M^−1 s^−1."
+  },
+  {
+    "id": "ic12-3-initial-rates",
+    "type": "multiple-choice",
+    "prompt": "Kinetic studies usually hold one concentration constant while varying another, and report the initial rate. Why use the initial rate?",
+    "choices": [
+      {
+        "text": "Early on, the concentrations are still close to the known starting values",
+        "correct": true
+      },
+      {
+        "text": "The rate is zero at the start of a reaction, which makes a convenient reference",
+        "why": "The initial rate is the rate at the very beginning, and it isn't zero. It's used because the concentrations are best known then."
+      },
+      {
+        "text": "Only the initial rate depends on the rate constant; later rates don't",
+        "why": "The rate constant applies throughout the reaction. The initial rate is used because the concentrations at that point are known."
+      },
+      {
+        "text": "Reactions speed up as they go, so the start is easier to measure",
+        "why": "The rate changes over time because reactants are consumed. Early on, the concentrations still match the starting values."
+      }
+    ],
+    "explanation": "The rate changes over time because the reactant concentrations change as they are consumed. Measuring only the initial rate, usually while the reaction is less than 5% or 10% complete, means the concentrations are still about what you started with, so you can confidently pair each rate with a concentration. Holding one concentration constant avoids doubt about which concentration affected the rate."
+  },
+  {
+    "id": "ic12-3-associative-versus-interchange",
+    "type": "multiple-choice",
+    "prompt": "Why is it hard to tell an A mechanism from a reversible I mechanism by their rate laws?",
+    "choices": [
+      {
+        "text": "Both have the same form, first order in each reactant, so only detecting an intermediate can decide",
+        "correct": true
+      },
+      {
+        "text": "The A rate law is first order overall, while the I rate law is zero order overall",
+        "why": "Both are second order: first order in the complex and first order in the entering ligand."
+      },
+      {
+        "text": "Both rate laws depend only on the concentration of the leaving group, X",
+        "why": "The A rate law, k[ML_{n}X][Y], depends on the complex and the entering ligand."
+      },
+      {
+        "text": "Neither rate law can be measured, because both reactions are far too fast to follow",
+        "why": "Both rate laws can be measured. The problem is that they have the same form."
+      }
+    ],
+    "explanation": "The rate law for an A mechanism and for a reversible I mechanism have the same form, each first order with respect to each reactant. An unambiguous choice between them would require detecting the A intermediate, which exists only at very low concentration."
+  },
+  {
+    "id": "ic12-3-encounter-complex",
+    "type": "multiple-choice",
+    "prompt": "In the Eigen–Wilkins mechanism, what is the encounter complex?",
+    "choices": [
+      {
+        "text": "A short-lived ion pair of the complex and the incoming ligand, formed in a fast pre-equilibrium",
+        "correct": true
+      },
+      {
+        "text": "The rate-determining transition state in which the bond to the leaving group breaks",
+        "why": "The encounter complex is an intermediate formed before the rate-determining step, not a transition state."
+      },
+      {
+        "text": "A seven-coordinate intermediate in which Y is already covalently bonded to the metal",
+        "why": "In the encounter complex, Y is ion-paired with the complex through Coulomb interactions, not bonded to the metal."
+      },
+      {
+        "text": "The product complex, held briefly in place before the leaving group diffuses away",
+        "why": "The encounter complex forms from the reactant complex and Y, before any ligand has been replaced."
+      }
+    ],
+    "explanation": "The Eigen–Wilkins mechanism doesn't define the rate-limiting step. Instead, it adds a pre-equilibrium step, ML_{5}X + Y ⇌ (ML_{5}X*Y), with equilibrium constant K_E. The encounter complex is a short-lived ion pair of the metal complex and the incoming ligand, an intermediate formed through Coulomb interactions. It then goes on to products: (ML_{5}X*Y) → ML_{5}Y + X."
+  },
+  {
+    "id": "ic12-3-eigen-wilkins-limits",
+    "type": "multiple-choice",
+    "prompt": "For [Cr(H2O)6]^3+ reacting with NH3, the rate depends on [NH3] under most conditions but becomes independent of [NH3] at very high [NH3]. How does the Eigen–Wilkins rate law, Rate = k_2 K_E[M]_total[Y]/(1 + K_E[Y]), explain this?",
+    "choices": [
+      {
+        "text": "At low [Y], 1 + K_E[Y] ≈ 1 (second order); at high [Y], it ≈ K_E[Y], so Rate = k_2[M]_total",
+        "correct": true
+      },
+      {
+        "text": "At low [Y], Rate = k_2[M]_total; at high [Y], the rate is second order in [Y]",
+        "why": "This is reversed. Only at high [Y] does K_E[Y] dominate the denominator and cancel [Y] from the rate law."
+      },
+      {
+        "text": "The mechanism switches from associative to dissociative as more NH3 is added",
+        "why": "One mechanism explains both limits. The apparent change comes from the pre-equilibrium that forms the encounter complex."
+      },
+      {
+        "text": "At high [Y], the encounter complex can no longer form, so the rate stops rising",
+        "why": "At high [Y], the denominator becomes K_E[Y], which cancels [Y]; nothing prevents the encounter complex from forming."
+      }
+    ],
+    "explanation": "The Eigen–Wilkins rate law simplifies at the two extremes. At low [Y], the denominator 1 + K_E[Y] is about 1, giving a second-order rate law, Rate = k_obs[M]_total[Y] with k_obs = k_2 K_E, which looks associative. At high [Y], the denominator is about K_E[Y], giving the first-order Rate = k_2[M]_total, which looks dissociative. A transient encounter complex reconciles the two observations."
+  },
+  {
+    "id": "ic12-3-eigen-wilkins-k2",
+    "type": "numeric",
+    "prompt": "At low [Y], an Eigen–Wilkins reaction follows Rate = k_obs[M]_total[Y], where k_obs = k_2 K_E. If k_obs = 3.0 × 10^−3 M^−1 s^−1 and K_E = 0.15 M^−1, what is k_2, in s^−1?",
+    "answer": 0.02,
+    "unit": "s^−1",
+    "tolerance": 0.01,
+    "explanation": "k_2 = k_obs/K_E = (3.0 × 10^−3 M^−1 s^−1)/(0.15 M^−1) = 0.020 s^−1. The observed rate constant can be measured, and K_E can be determined theoretically, so k_2 follows. It is also the first-order rate constant seen at high [Y], where Rate = k_2[M]_total."
+  },
+  {
+    "id": "ic12-3-rate-constant-variables",
+    "type": "multiple-choice",
+    "prompt": "In k = (RT/Nh)e^(−ΔG‡/RT), the rate constant depends on just two variables. Which two?",
+    "choices": [
+      {
+        "text": "The free energy of activation, ΔG‡, and the temperature, T",
+        "correct": true
+      },
+      {
+        "text": "The concentrations of the complex and the entering ligand",
+        "why": "Concentrations appear in the rate law, not in the rate constant itself."
+      },
+      {
+        "text": "The free energy of reaction, ΔG°, and the temperature, T",
+        "why": "ΔG° sets the position of equilibrium. The rate constant depends on the barrier, ΔG‡."
+      },
+      {
+        "text": "Avogadro's number, N, and Planck's constant, h",
+        "why": "N, h and R are constants, the same for every reaction. The variables are ΔG‡ and T."
+      }
+    ],
+    "explanation": "k depends on ΔG‡, the energy required for the reaction, and T, an index of the energy available from the surroundings. Their ratio compares energy needs with energy available: the more energy available relative to what's needed, the smaller ΔG‡/RT becomes, the larger the exponential term, and the faster the reaction."
+  },
+  {
+    "id": "ic12-3-activation-parameters-classify",
+    "type": "multiple-choice",
+    "prompt": "A substitution has a relatively high ΔH‡ and ΔS‡ = +45 J mol^−1 K^−1. Which pathway do these activation parameters suggest?",
+    "choices": [
+      {
+        "text": "Dissociative, because a bond breaks in the rate-determining step and one molecule becomes two",
+        "correct": true
+      },
+      {
+        "text": "Associative, because a positive ΔS‡ shows two molecules coming together",
+        "why": "Two molecules joining into one have fewer ways to distribute their energy, so entropy decreases and ΔS‡ is negative."
+      },
+      {
+        "text": "Associative, because a high ΔH‡ shows bond making before the transition state",
+        "why": "Associative pathways have low ΔH‡, because no bond must break before the transition state. A high ΔH‡ reflects bond breaking."
+      },
+      {
+        "text": "Neither, because activation parameters say nothing about the transition state",
+        "why": "Activation parameters can reveal a lot about what happens on the way to the transition state."
+      }
+    ],
+    "explanation": "A dissociative pathway has a higher enthalpy of activation, because a bond must break in the rate-determining step, and a positive entropy of activation, because one molecule becomes two with more degrees of freedom. An associative pathway shows the reverse: low ΔH‡ and negative ΔS‡."
+  },
+  {
+    "id": "ic12-3-entropy-of-activation",
+    "type": "numeric",
+    "prompt": "A substitution has ΔH‡ = 60.0 kJ/mol and ΔG‡ = 75.0 kJ/mol at 300 K. Using ΔG‡ = ΔH‡ − TΔS‡, what is ΔS‡, in J mol^−1 K^−1 (give the sign)?",
+    "answer": -50.0,
+    "unit": "J mol^−1 K^−1",
+    "tolerance": 0.01,
+    "explanation": "Rearranging, ΔS‡ = (ΔH‡ − ΔG‡)/T = (60.0 − 75.0) kJ/mol ÷ 300 K = −0.0500 kJ mol^−1 K^−1 = −50.0 J mol^−1 K^−1. A negative entropy of activation points to an associative pathway, in which two molecules come together in the rate-determining step."
+  },
+  {
+    "id": "ic12-3-free-energy-of-activation",
+    "type": "numeric",
+    "prompt": "A ligand dissociation has ΔH‡ = 105 kJ/mol and ΔS‡ = +40 J mol^−1 K^−1. Using ΔG‡ = ΔH‡ − TΔS‡, what is ΔG‡ at 298 K, in kJ/mol?",
+    "answer": 93.1,
+    "unit": "kJ/mol",
+    "tolerance": 0.01,
+    "explanation": "Convert ΔS‡ to kJ: +0.040 kJ mol^−1 K^−1. Then ΔG‡ = 105 kJ/mol − (298 K)(0.040 kJ mol^−1 K^−1) = 105 − 11.9 = 93.1 kJ/mol. The positive ΔS‡ of a dissociation, where one molecule becomes two, lowers ΔG‡ below ΔH‡."
+  },
+  {
+    "id": "ic12-3-associative-steric-hindrance",
+    "type": "multiple-choice",
+    "prompt": "Besides the drop in entropy, what other factor can raise the free energy of the transition state as an incoming ligand associates with a metal complex?",
+    "choices": [
+      {
+        "text": "Steric hindrance, as the metal center becomes more crowded",
+        "correct": true
+      },
+      {
+        "text": "The energy needed to break the bond to the leaving group",
+        "why": "In an associative step, bonds don't need to be broken before the transition state; that's why ΔH‡ is low."
+      },
+      {
+        "text": "A rise in entropy as the two molecules combine",
+        "why": "Two molecules combining into one lowers the entropy; it doesn't raise it."
+      },
+      {
+        "text": "The energy released as the leaving group escapes into solution",
+        "why": "The leaving group departs in the later, dissociative step, and released energy wouldn't raise the transition state."
+      }
+    ],
+    "explanation": "As the new ligand arrives, the metal center becomes more crowded, so steric hindrance can add energy to the transition state. Along with the entropy cost of bringing two molecules together, this can make the first, associative step slower than the second, dissociative step."
+  },
+  {
+    "id": "ic12-3-pi-donor-assisted-loss",
+    "type": "multiple-choice",
+    "prompt": "In one proposed substitution mechanism, a bound ligand uses an extra lone pair to π-donate to the metal, pushing another ligand out. Which bound ligand cannot assist in this way?",
+    "choices": [
+      {
+        "text": "A neutral nitrogen donor such as NH3",
+        "correct": true
+      },
+      {
+        "text": "An oxygen donor such as hydroxide",
+        "why": "Oxygen donors are good candidates: besides the lone pair in the σ bond, they have another available for π donation."
+      },
+      {
+        "text": "A halide donor such as chloride",
+        "why": "Halogen donors also have additional lone pairs available for π donation."
+      },
+      {
+        "text": "An anionic nitrogen donor such as amido, NH2^−",
+        "why": "An anionic nitrogen has an additional lone pair, so it can π-donate."
+      }
+    ],
+    "explanation": "The assisting ligand needs a second lone pair beyond the one already used in its σ bond to the metal. Oxygen, halogen and anionic nitrogen donors have one; a neutral nitrogen donor has only one lone pair, so it can't. Because the bond-breaking step is probably rate-determining, the rate law would be first order in the complex alone."
+  },
+  {
+    "id": "ic12-3-crowded-saturated-complex",
+    "type": "multiple-choice",
+    "prompt": "A metal complex is crowded with bulky ligands and already has eighteen electrons. Which substitution mechanism is it more likely to follow, and why?",
+    "choices": [
+      {
+        "text": "Dissociative, because there's no room for another ligand and no capacity for another electron pair",
+        "correct": true
+      },
+      {
+        "text": "Dissociative, because crowding helps the entering ligand bind to the metal faster",
+        "why": "Crowding makes it harder, not easier, for an entering ligand to bind; that's why dissociation is favored."
+      },
+      {
+        "text": "Associative, because crowding pushes the entering ligand in toward the metal center",
+        "why": "In an associative step an extra ligand must come in and bind, which is difficult when the metal is already crowded."
+      },
+      {
+        "text": "Associative, because an eighteen-electron metal readily accepts another bonding pair",
+        "why": "An eighteen-electron metal is electronically saturated; it can't easily accept an additional bonding pair."
+      }
+    ],
+    "explanation": "Steric crowding and electronic saturation can both lead to a dissociative rather than associative mechanism. An associative step needs room for an extra ligand and a metal able to accept another bonding pair. With less crowding, and room for more electrons, an associative pathway may result."
+  }
+]

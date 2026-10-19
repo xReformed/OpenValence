@@ -1,0 +1,418 @@
+[
+  {
+    "id": "ic12-2-mechanism-definition",
+    "type": "multiple-choice",
+    "prompt": "In discussing ligand substitution, what does the term \"mechanism\" mean?",
+    "choices": [
+      {
+        "text": "The order of the elementary bond-making and bond-breaking steps",
+        "correct": true
+      },
+      {
+        "text": "The balanced overall equation that shows which ligand replaces which",
+        "why": "The overall equation shows only the net change. Even a simple substitution can occur by different sequences of steps."
+      },
+      {
+        "text": "The rate constant of the slowest step in the reaction",
+        "why": "A rate constant tells how fast a step goes. The mechanism is the sequence of steps itself."
+      },
+      {
+        "text": "The equilibrium constant for replacing one ligand with another",
+        "why": "That is a thermodynamic quantity. The mechanism describes how the reaction happens, step by step."
+      }
+    ],
+    "explanation": "Elementary reaction steps are the individual bond-making and bond-breaking events that lead to an overall change, and the mechanism (or mechanistic pathway) is their order. Even a simple ligand substitution can happen in different ways, and the sequence of steps decides how factors such as the concentrations of the components affect the reaction."
+  },
+  {
+    "id": "ic12-2-taube-labile-definition",
+    "type": "multiple-choice",
+    "prompt": "By Taube's suggested definition, when is a metal complex kinetically labile?",
+    "choices": [
+      {
+        "text": "When half of it is consumed by substitution within about one minute (t_(1/2) < 1 min)",
+        "correct": true
+      },
+      {
+        "text": "When its substitution has a half-life longer than one minute",
+        "why": "That is Taube's definition of a kinetically inert (non-labile) complex."
+      },
+      {
+        "text": "When it has a large formation constant",
+        "why": "A large formation constant means thermodynamic stability, which is a separate property. [Fe(H2O)5Cl]^2+ is both stable and labile."
+      },
+      {
+        "text": "When the products of its substitution are thermodynamically unfavorable",
+        "why": "Lability is about how fast substitution happens, not whether the products are favored."
+      }
+    ],
+    "explanation": "Taube suggested that kinetically labile complexes undergo \"kinetically fast\" substitution, with half of the reactant consumed in one minute or less (t_(1/2) < 1 min). Kinetically inert complexes react more slowly, with t_(1/2) > 1 min. Both are kinetic terms, separate from thermodynamic stability."
+  },
+  {
+    "id": "ic12-2-ni-cr-rate-ratio",
+    "type": "numeric",
+    "prompt": "For the substitution of water by ammonia in hexaaqua complexes, the section gives k = 10^4 s^−1 for [Ni(OH2)6]^2+ and k = 10^−3 s^−1 for [Cr(OH2)6]^3+. By what factor is the nickel rate constant larger than the chromium one?",
+    "answer": 10000000,
+    "tolerance": 0.01,
+    "explanation": "10^4 s^−1 ÷ 10^−3 s^−1 = 10^7. The nickel complex is labile and the chromium complex inert, while the copper complex, with k = 10^8 s^−1, is very labile. The three reactions are nearly identical apart from the metal ion, and the products are thermodynamically favored in every case, so the difference is purely kinetic."
+  },
+  {
+    "id": "ic12-2-stable-but-labile",
+    "type": "multiple-choice",
+    "prompt": "[Fe(H2O)5Cl]^2+ has a large formation constant, yet it exchanges ligands quickly. How is this complex best described?",
+    "choices": [
+      {
+        "text": "Thermodynamically stable and kinetically labile",
+        "correct": true
+      },
+      {
+        "text": "Thermodynamically unstable and kinetically labile",
+        "why": "A large formation constant means the complex is thermodynamically stable."
+      },
+      {
+        "text": "Thermodynamically stable and kinetically inert",
+        "why": "It reacts quickly, so it is labile. Being stable doesn't make a complex inert."
+      },
+      {
+        "text": "Thermodynamically unstable and kinetically inert",
+        "why": "That describes [Co(NH3)6]^3+ in acidic solution, which decomposes spontaneously to [Co(H2O)6]^3+, but slowly."
+      }
+    ],
+    "explanation": "Labile and inert are kinetic terms (how fast a complex reacts); stable and unstable are thermodynamic terms (whether reaction is favored). [Fe(H2O)5Cl]^2+ is thermodynamically stable yet labile. [Co(NH3)6]^3+ is the opposite case: unstable in acidic solution, but inert, so it decomposes slowly. Using the full terms, such as \"kinetically labile\" and \"thermodynamically stable\", avoids confusion."
+  },
+  {
+    "id": "ic12-2-unstable-inert-diagram",
+    "type": "multiple-choice",
+    "prompt": "For the reaction [ML_{6}]^{n+} + X ⇌ [ML_{5}X]^{n+} + L, which reaction coordinate diagram fits an [ML_{6}]^{n+} that is thermodynamically unstable but kinetically inert?",
+    "choices": [
+      {
+        "text": "Products lower in energy than reactants (negative ΔG), with a large activation energy",
+        "correct": true
+      },
+      {
+        "text": "Products lower in energy than reactants (negative ΔG), with a small activation energy",
+        "why": "A small barrier means fast substitution, so this describes a complex that is unstable and labile."
+      },
+      {
+        "text": "Products higher in energy than reactants (positive ΔG), with a large activation energy",
+        "why": "Here the reactant complex is favored, so [ML_{6}]^{n+} is thermodynamically stable (and inert)."
+      },
+      {
+        "text": "Products higher in energy than reactants (positive ΔG), with a small activation energy",
+        "why": "That describes a complex that is thermodynamically stable but kinetically labile."
+      }
+    ],
+    "explanation": "Thermodynamics is shown by the relative energies of reactants and products: an unstable [ML_{6}]^{n+} lies above its products, so ΔG for the substitution is negative. Kinetics is shown by the height of the barrier: an inert complex has a large activation energy. So the diagram goes downhill overall but over a high hill."
+  },
+  {
+    "id": "ic12-2-coulombic-attraction",
+    "type": "multiple-choice",
+    "prompt": "How does stronger Coulombic attraction between a metal ion and its ligands generally affect the elementary steps of substitution?",
+    "choices": [
+      {
+        "text": "It slows dissociation steps and speeds up association steps",
+        "correct": true
+      },
+      {
+        "text": "It speeds up dissociation steps and slows association steps",
+        "why": "This is reversed. A tighter electrostatic hold makes it harder for a ligand to leave and easier for a new one to bind."
+      },
+      {
+        "text": "It speeds up both dissociation and association steps",
+        "why": "A stronger attraction holds the departing ligand more tightly, so dissociation slows."
+      },
+      {
+        "text": "It changes only the complex's stability, not the rates of its steps",
+        "why": "Coulombic attraction is one of the three main factors the section names as influencing substitution rates."
+      }
+    ],
+    "explanation": "Higher charge density on the metal ion or on the ligands generally gives stronger electrostatic attraction between them. Stronger Coulombic attraction generally leads to slower dissociation steps and faster association steps. How this changes the overall rate depends on which elementary steps are part of the rate-determining step."
+  },
+  {
+    "id": "ic12-2-taube-chromium-exception",
+    "type": "multiple-choice",
+    "prompt": "Al^3+, V^3+, Fe^3+, Ga^3+ and Cr^3+ all have about the same size and the same charge. The first four exchange ligands at about the same rate, but Cr^3+ is much less labile. What did Taube conclude from exceptions like this?",
+    "choices": [
+      {
+        "text": "Kinetic lability must also be affected by the d-electron configuration",
+        "correct": true
+      },
+      {
+        "text": "Ions with the same charge and radius must always react at the same rate",
+        "why": "Cr^3+ is the counterexample: the same charge and size as the others, yet much less labile."
+      },
+      {
+        "text": "Larger ions form stronger bonds, so Cr^3+ must be the largest of the five",
+        "why": "Smaller ions typically form stronger bonds, and Cr^3+ is about the same size as the others, so size can't explain it."
+      },
+      {
+        "text": "A higher charge always makes a metal ion more labile",
+        "why": "Higher charges generally make metal ions bind ligands more tightly. Besides, all five ions here are 3+."
+      }
+    ],
+    "explanation": "Charge and size alone predict that ions like these should react alike, but Cr^3+ doesn't, and similar exceptions exist (Mo^5+ compounds are more labile than Mo^3+ ones). Taube concluded that electrostatics alone can't predict lability: the d-electron configuration matters too. Cr^3+ is d^3, with three t2g electrons and none in the σ-antibonding eg set."
+  },
+  {
+    "id": "ic12-2-heavier-metals-inert",
+    "type": "multiple-choice",
+    "prompt": "4d and 5d transition metal ions are much larger than 3d ions, yet they are usually much more inert. Which explanation does the section give?",
+    "choices": [
+      {
+        "text": "They are usually low spin, with a high ligand field stabilization energy",
+        "correct": true
+      },
+      {
+        "text": "Larger ions form stronger electrostatic bonds to their ligands",
+        "why": "Typically, smaller ions form stronger bonds. Size predicts the opposite of what is seen, which is why electrostatics alone can't explain it."
+      },
+      {
+        "text": "They always carry higher charges than 3d ions",
+        "why": "The comparison isn't about charge. The section links the inertness to the d-electron configuration and its high LFSE."
+      },
+      {
+        "text": "They place electrons in the σ-antibonding eg set",
+        "why": "Electrons in the eg set weaken metal–ligand bonds and make complexes more labile, not more inert."
+      }
+    ],
+    "explanation": "The section's generalizations say that 4d and 5d metals are usually inert due to higher LFSE: they are low spin, with high LFSE. As long as no electrons occupy higher-energy (antibonding) orbitals, lability correlates roughly with LFSE: the more negative the LFSE, the more inert the complex."
+  },
+  {
+    "id": "ic12-2-cu-eg-electrons",
+    "type": "numeric",
+    "prompt": "Taube noted that Cu^2+ is very labile because its octahedral complexes have electrons in the σ-antibonding eg set. How many electrons occupy the eg set of octahedral Cu^2+, a d^9 ion?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Nine d electrons fill the t2g set with six and put the remaining three in eg: t2g^6 eg^3. Electrons in the higher-energy, antibonding eg level weaken the bond to the ligand, so the ligand can be replaced more easily. V^2+ (d^3, t2g^3 with an empty eg set) is rather inert by comparison."
+  },
+  {
+    "id": "ic12-2-d0-ions-labile",
+    "type": "multiple-choice",
+    "prompt": "Ca^2+, Sc^3+ and Ti^4+ have no d electrons at all, yet they are quite labile. What is the section's explanation?",
+    "choices": [
+      {
+        "text": "An empty orbital is free for the entering ligand to donate into",
+        "correct": true
+      },
+      {
+        "text": "Electrons in their eg sets weaken the bonds to their ligands",
+        "why": "These ions have no d electrons, so there are no eg electrons to weaken anything."
+      },
+      {
+        "text": "They have a large, negative ligand field stabilization energy",
+        "why": "With no d electrons, there is no LFSE. A large negative LFSE would make a complex more inert, not more labile."
+      },
+      {
+        "text": "Their high charges make them hold their ligands only weakly",
+        "why": "Higher charges generally make metal ions bind ligands more tightly, not more weakly."
+      }
+    ],
+    "explanation": "These ions have no electrons in the mostly nonbonding t2g levels, and it's hard to see why filling those orbitals would affect the strength of the metal–ligand bonds. Instead, the explanation lies in the other half of substitution: a new ligand must bond in place of the old one. Having an empty orbital for the entering ligand to donate into, with no electrons in the way, makes that part of the reaction easier."
+  },
+  {
+    "id": "ic12-2-co3-high-spin-eg",
+    "type": "numeric",
+    "prompt": "Octahedral Co^3+ is a d^6 ion. How many electrons occupy the eg set in a high-spin Co^3+ complex?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "High-spin d^6 places one electron in each of the five d orbitals and pairs the sixth in t2g: t2g^4 eg^2, so 2 electrons are in eg. Because it has electrons in the higher-energy d set, high-spin Co^3+ is labile. Low-spin Co^3+ (t2g^6 eg^0) has all its electrons in the lower set and is not labile."
+  },
+  {
+    "id": "ic12-2-inert-ion",
+    "type": "multiple-choice",
+    "prompt": "Which of these octahedral metal ions is expected to be kinetically inert?",
+    "choices": [
+      {
+        "text": "Low-spin Fe^2+",
+        "correct": true
+      },
+      {
+        "text": "High-spin Fe^2+",
+        "why": "High-spin d^6 (t2g^4 eg^2) has electrons in the higher-energy eg set, which makes it labile."
+      },
+      {
+        "text": "Zn^2+",
+        "why": "Zn^2+ is d^10, with a filled eg set. d^10 ions such as Zn^2+, Cu^+ and Hg^2+ are labile."
+      },
+      {
+        "text": "Cu^2+",
+        "why": "Cu^2+ is d^9, with three electrons in the eg set, and it is very labile."
+      }
+    ],
+    "explanation": "Low-spin Fe^2+ is d^6 with all six electrons in t2g (t2g^6 eg^0) and a large LFSE, so it is not labile. The section's generalizations list d^3 and low-spin d^6 ions, such as Cr^3+, Co^3+ and low-spin Fe^2+, as inert. Ions with electrons in the eg set, including high-spin Fe^2+, are labile."
+  },
+  {
+    "id": "ic12-2-group2-lability-order",
+    "type": "multiple-choice",
+    "prompt": "Mg^2+, Ca^2+ and Sr^2+ have the same charge but different sizes. Which order runs from most labile to most inert?",
+    "choices": [
+      {
+        "text": "Sr^2+ > Ca^2+ > Mg^2+",
+        "correct": true
+      },
+      {
+        "text": "Mg^2+ > Ca^2+ > Sr^2+",
+        "why": "This is reversed. Mg^2+ is the smallest, with the highest charge density, so it holds its ligands most tightly."
+      },
+      {
+        "text": "Ca^2+ > Sr^2+ > Mg^2+",
+        "why": "Lability follows size here. The largest ion, Sr^2+, has the lowest charge density and is the most labile."
+      },
+      {
+        "text": "All three are equally labile, since they have the same charge",
+        "why": "Their charges match, but their sizes don't. Smaller ions have higher charge density and attract ligands more strongly."
+      }
+    ],
+    "explanation": "With equal charges, the deciding factor is size. Going from Sr^2+ to Ca^2+ to Mg^2+, the ions get smaller and their charge density increases, so they become more inert. This matches the section's generalization that s-block ions are very labile except those with very high charge density, such as Mg^2+."
+  },
+  {
+    "id": "ic12-2-kinetic-chelate-effect",
+    "type": "multiple-choice",
+    "prompt": "Chelate complexes are often more inert than complexes with monodentate ligands. Which pair of reasons does the section give for this kinetic chelate effect?",
+    "choices": [
+      {
+        "text": "The ligand must rotate and bend to break its first bond, and the detached donor stays close by, so it often rebinds",
+        "correct": true
+      },
+      {
+        "text": "Releasing extra free ligand molecules raises the entropy, and the higher entropy slows dissociation",
+        "why": "The entropy increase explains the thermodynamic chelate effect, the greater stability of chelates, not their slower kinetics."
+      },
+      {
+        "text": "Chelation puts electrons into the eg set, which strengthens the metal–ligand bonds",
+        "why": "Electrons in the σ-antibonding eg set make complexes more labile. The kinetic chelate effect comes from the ligand's shape."
+      },
+      {
+        "text": "Chelate rings make the metal ion larger, and larger ions always hold ligands more tightly",
+        "why": "Chelation doesn't change the metal ion's size, and larger ions don't generally bind ligands more tightly."
+      }
+    ],
+    "explanation": "First, the whole chelating ligand has to rotate and bend to cleave the first metal–ligand bond, which takes time and slows the cleavage. Second, the detached donor atom can't leave the vicinity of the metal, because the ligand is still attached through its other donor atom. That raises the chance that the bond re-forms, and lowers the chance that both bonds break."
+  },
+  {
+    "id": "ic12-2-associative-intermediate",
+    "type": "multiple-choice",
+    "prompt": "In a substitution reaction, an intermediate with a higher coordination number than the reactant complex is detected. How is the stoichiometric mechanism classified?",
+    "choices": [
+      {
+        "text": "Associative (A)",
+        "correct": true
+      },
+      {
+        "text": "Dissociative (D)",
+        "why": "A D intermediate has a lower coordination number than the reactant, because a ligand leaves first."
+      },
+      {
+        "text": "Interchange (I)",
+        "why": "The hallmark of an I mechanism is that no intermediate can be detected."
+      },
+      {
+        "text": "Dissociatively activated interchange (I_d)",
+        "why": "I_d is an interchange pathway, with no detectable intermediate. Its subscript describes the intimate mechanism, not the intermediate."
+      }
+    ],
+    "explanation": "The stoichiometric mechanism is defined by the intermediate, or its absence. In an associative (A) mechanism, the incoming ligand bonds first, giving a detectable intermediate with a higher coordination number; the leaving group departs in a second step. A mechanisms are typical of square planar d^8 complexes."
+  },
+  {
+    "id": "ic12-2-dissociative-intermediate-cn",
+    "type": "numeric",
+    "prompt": "An octahedral complex ML_{5}X undergoes substitution by a dissociative (D) mechanism. What is the coordination number of the intermediate?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "In a D mechanism the first step breaks the bond to the leaving group: ML_{5}X → ML_{5} + X. The intermediate ML_{5} is five-coordinate, one lower than the six-coordinate reactant. The entering group Y then binds in the second step to give ML_{5}Y."
+  },
+  {
+    "id": "ic12-2-interchange-hallmark",
+    "type": "multiple-choice",
+    "prompt": "What distinguishes an interchange (I) mechanism from the A and D mechanisms?",
+    "choices": [
+      {
+        "text": "No intermediate can be detected; the entering group binds as the leaving group departs, in one concerted step",
+        "correct": true
+      },
+      {
+        "text": "Its intermediate is long-lived enough to be detected and has the same coordination number as the reactant",
+        "why": "If an intermediate is detected, the mechanism is classified as A or D. In an I mechanism there is none to detect."
+      },
+      {
+        "text": "The leaving group departs completely before the entering group arrives",
+        "why": "That is the order of steps in a D mechanism. In an I mechanism, bond making and bond breaking happen together."
+      },
+      {
+        "text": "The entering group binds first, giving a higher-coordinate intermediate that later loses the leaving group",
+        "why": "That describes an A mechanism, which has a detectable intermediate."
+      }
+    ],
+    "explanation": "In an interchange mechanism, bond formation and bond breaking happen simultaneously, in one concerted step, and no intermediate is detectable: either none exists, or it is too short-lived to detect. The species [Y···ML_{n}···X]^{‡} can be treated as a transition state. Interchange is common for many six-coordinate (octahedral) complexes."
+  },
+  {
+    "id": "ic12-2-intimate-classification",
+    "type": "multiple-choice",
+    "prompt": "For one substitution, the rate constant ranges only from 2.0 × 10^−5 to 7.0 × 10^−5 s^−1 as the entering group is varied among several ligands. How is the intimate mechanism classified?",
+    "choices": [
+      {
+        "text": "Dissociatively activated (d), because the rate changes by less than 10-fold",
+        "correct": true
+      },
+      {
+        "text": "Associatively activated (a), because the rate depends on the entering group at all",
+        "why": "Some variation is allowed for either class. Only a change of more than 10-fold marks associative activation."
+      },
+      {
+        "text": "Associatively activated (a), because the rate changes by more than 10-fold",
+        "why": "The largest value is only 3.5 times the smallest, well under 10-fold."
+      },
+      {
+        "text": "It can't be classified until an intermediate is detected",
+        "why": "Detecting an intermediate settles the stoichiometric mechanism (A, D or I). The intimate mechanism comes from how the rate depends on the entering group."
+      }
+    ],
+    "explanation": "The intimate mechanism is defined by the rate-limiting step. A reaction is associatively activated (subscript a) if the rate changes by more than 10-fold as the entering group is varied, and dissociatively activated (subscript d) if it changes by less than 10-fold. Here 7.0/2.0 = 3.5, so the reaction is dissociatively activated: its rate is largely independent of the incoming ligand."
+  },
+  {
+    "id": "ic12-2-aa-versus-ia",
+    "type": "multiple-choice",
+    "prompt": "Why is it often impossible to distinguish an A_a mechanism from an I_a mechanism?",
+    "choices": [
+      {
+        "text": "In A_a, the intermediate reacts as soon as it forms, so its concentration stays near zero",
+        "correct": true
+      },
+      {
+        "text": "Both form the same intermediate, with a lower coordination number than the reactant",
+        "why": "A_a forms a higher-coordinate intermediate, and I_a has no detectable intermediate at all."
+      },
+      {
+        "text": "In both, the rate-limiting step is departure of the leaving group from the complex",
+        "why": "Both are associatively activated: the rate-limiting step is association of the entering group Y."
+      },
+      {
+        "text": "In both, the rate is almost independent of which entering group is used",
+        "why": "Associatively activated reactions depend strongly on the entering group."
+      }
+    ],
+    "explanation": "In both A_a and I_a, the rate-limiting step is association of the entering group Y with ML_{n}X. In A_a the first step is slower than the second (k_1 < k_2), so the intermediate has a steady-state concentration close to zero: it reacts as soon as it forms. Telling A_a from I_a means detecting and characterizing that elusive intermediate, which is often impossible."
+  },
+  {
+    "id": "ic12-2-da-rate-limiting-step",
+    "type": "multiple-choice",
+    "prompt": "In an associatively activated dissociative (D_a) mechanism, which step is rate-limiting?",
+    "choices": [
+      {
+        "text": "The entering group Y binding to the lower-coordinate intermediate ML_{n}",
+        "correct": true
+      },
+      {
+        "text": "Loss of the leaving group X from the starting complex, ML_{n}X",
+        "why": "That is the rate-limiting step of the dissociatively activated pathways D_d and I_d."
+      },
+      {
+        "text": "Loss of X from a higher-coordinate intermediate, ML_{n}XY",
+        "why": "That describes A_d, a dissociatively activated associative pathway."
+      },
+      {
+        "text": "The entering group Y binding directly to the reactant complex, ML_{n}X",
+        "why": "That is the rate-limiting step of A_a and I_a."
+      }
+    ],
+    "explanation": "In D_a, the first step, ML_{n}X ⇌ ML_{n} + X, is a dissociation that gives a lower-coordinate intermediate. The second step, association of Y with ML_{n}, is rate-limiting. Because the second step is slower than the first (k_1 > k_2), the intermediate's concentration should be measurable."
+  }
+]

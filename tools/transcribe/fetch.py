@@ -20,6 +20,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -33,10 +34,18 @@ SKIP = re.compile(r"^(?:[\d.]+:\s*)?(problems|discussion questions|references|ex
 
 
 def get(url):
-    """(final url, body) after redirects."""
+    """(final url, body) after redirects. A busy server (503, 429) is retried after a pause."""
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(request, timeout=60) as response:
-        body, final = response.read(), response.geturl()
+    for wait in (10, 30, 90, None):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                body, final = response.read(), response.geturl()
+            break
+        except urllib.error.HTTPError as error:
+            if error.code not in (429, 503) or wait is None:
+                raise
+            print(f"    LibreTexts busy ({error.code}); retrying in {wait} s", flush=True)
+            time.sleep(wait)
     time.sleep(1)  # be polite to LibreTexts
     return final, body
 
