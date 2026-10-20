@@ -40,33 +40,33 @@ A Dissociative (D) mechanism is two steps in which the first step is the dissoci
 
 
 
-If we assume that k_ − 2 < < k2, the rate law for the formation of products is the rate law of the second step.
+If we assume that k_−2 < < k2, the rate law for the formation of products is the rate law of the second step.
 
 (d[MLnY])/dt = k2[MLn][Y]
 
 [Note: corrected; the source prints "(d[MLn])/dt = k2[MLn][Y]" where this reads "(d[MLnY])/dt = k2[MLn][Y]". This is the rate of forming the product, MLnY, as the sentence before says and as the rate law below uses.]
 
-We can assume that the concentration of the intermediate is small enough that it would be difficult or impossible to measure its concentration. Here, we can evoke the steady-state approximation and assume that the concentration, [MLn], is approximately unchanging over the course of reaction. The [MLn] depends on k1, k_ − 1 and k2. These assumption are expressed mathematically as follows. (d[MLn])/dt = k1[MLnX]−k_ − 1[MLn][X]−k2[MLn][Y] = 0
+We can assume that the concentration of the intermediate is small enough that it would be difficult or impossible to measure its concentration. Here, we can evoke the steady-state approximation and assume that the concentration, [MLn], is approximately unchanging over the course of reaction. The [MLn] depends on k1, k_−1 and k2. These assumption are expressed mathematically as follows. (d[MLn])/dt = k1[MLn X]−k_−1[MLn][X]−k2[MLn][Y] = 0
 
 We can then use the equation above to solve for [MLn].
 
-MLn = (k1[MLnX])/(k_ − 1[X] + k2[Y])
+MLn = (k1[MLn X])/(k_−1[X] + k2[Y])
 
 Then substitution this into the rate law given above for the second step of the mechanism. This would yield a rate law that depends only on species with measurable concentrations.
 
-(d[MLnY])/dt = (k2 k1[MLnX][Y])/(k_ − 1[X] + k2[Y])
+(d[MLn Y])/dt = (k2 k1[MLn X][Y])/(k_−1[X] + k2[Y])
 
 The rate law above suggests that the rate of product formation has an inverse relationship to the concentration of the outgoing ligand, X. This is one piece of evidence that can be used to distinguish a Dissociative mechanism; that is if the rate of reaction decreases as [X] in solution is increased it is evidence of a D mechanism. This rate law also suggests that there is a complicated dependence of the reaction rate on the concentration of incoming ligand, Y. The importance of [Y] compared to [X] depends mathematically on the weight of the two values in the denominator of the rate law. If [X] >> [Y], then a valid approximation is to assume that the k2[Y] term is relatively small and simplify the rate law by dropping it out completely.
 
 [Note: corrected; the source prints "that ther is" where this reads "that there is"; the source prints "mathmatically" where this reads "mathematically"; the source prints "demoninator" where this reads "denominator". Typing errors.]
 
-If X >> Y, then simplify: (d[MLnY])/dt = (k2 k1[MLnX][Y])/(k_ − 1[X])
+If X >> Y, then simplify: (d[MLn Y])/dt = (k2 k1[MLn X][Y])/(k_−1[X])
 
 The resulting rate law (above) has a simpler dependence on [Y]; that is when [X] is large, the reaction rate is directly related to [Y].
 
-The opposite extreme is under conditions of high [Y]. This yields a rate law that is first order in its dependence on the reactant metal complex. When [Y] is large, and the k_ − 1[X] term is relatively insignificant, the rate law can be simplified to the pseudo-first order rate law as follows.
+The opposite extreme is under conditions of high [Y]. This yields a rate law that is first order in its dependence on the reactant metal complex. When [Y] is large, and the k_−1[X] term is relatively insignificant, the rate law can be simplified to the pseudo-first order rate law as follows.
 
-If Y >> X, then simplify: (d[MLnY])/dt = k1[MLnX]
+If Y >> X, then simplify: (d[MLn Y])/dt = k1[MLnX]
 
 The best type of experimental evidence to determine a dissociative mechanism would be a systematic study of the dependence of rate on both [X] and [Y]. However, the dissociative reaction is unique in that it displays this type of saturation kinetics at high concentration of the incoming ligand, and so the study of how a reaction rate behaves under high [Y] is common.
 
@@ -267,15 +267,15 @@ The rate law of this one-step reaction depends on whether the relative rates of 
 
 On the other hand, if the rate of re-formation of reactant is significant, then the rates of forward and reverse reactions must be considered in the rate law.
 
-(d[MLnY])/dt = k1[MLnX][Y]−k_ − 1[MLnY][X]
+(d[MLnY])/dt = k1[MLnX][Y]−k_−1[MLnY][X]
 
-[Note: corrected; the source prints "k_ − 1[MLnX][X]" where this reads "k_ − 1[MLnY][X]". The reverse reaction is MLnY + X, so its rate is k−1[MLnY][X].]
+[Note: corrected; the source prints "k_−1[MLnX][X]" where this reads "k_−1[MLnY][X]". The reverse reaction is MLnY + X, so its rate is k−1[MLnY][X].]
 
-In the latter case where there is a dependence of rate on both [X] and [Y], an effective strategy is to employ the condition where solution concentration of both [X] and [Y] are simultaneously high so that the reaction is effectively a competition of two pseudo-first order reactions that depend primarily on the metal complex concentrations. In such a case as this, another helpful piece of information is the equilibrium constant for the reaction (K = (k1)/(k_ − 1)). The rate law is written below.
+In the latter case where there is a dependence of rate on both [X] and [Y], an effective strategy is to employ the condition where solution concentration of both [X] and [Y] are simultaneously high so that the reaction is effectively a competition of two pseudo-first order reactions that depend primarily on the metal complex concentrations. In such a case as this, another helpful piece of information is the equilibrium constant for the reaction (K = (k1)/(k_−1)). The rate law is written below.
 
-When [X] and [Y] are very high: (d[MLnY])/dt = k1[MLnX]−k_ − 1[MLnY] = −(d[MLnX])/dt
+When [X] and [Y] are very high: (d[MLnY])/dt = k1[MLnX]−k_−1[MLnY] = −(d[MLnX])/dt
 
-[Note: corrected; the source prints "= k1[MLnY]−k_ − 1[MLnX] =" where this reads "= k1[MLnX]−k_ − 1[MLnY] =". The forward term depends on the reactant MLnX and the reverse term on the product MLnY, as in the rate law above.]
+[Note: corrected; the source prints "= k1[MLnY]−k_−1[MLnX] =" where this reads "= k1[MLnX]−k_−1[MLnY] =". The forward term depends on the reactant MLnX and the reverse term on the product MLnY, as in the rate law above.]
 
 One distinguishing feature of an I mechanism compared to a D mechanism can be determined from such an experiment under high concentration of X and Y. In the case of a D mechanism and sufficiently high concentration of incoming ligand, [Y], the reaction demonstrates saturation kinetics to give a pseudo-first order rate law depending only on the concentration of reactant metal complex. In the case of I, the reaction rate is not a simple first order rate law because even under high [Y] and [X], there is a dependence of rate on concentration of the product complex.
 
@@ -296,17 +296,17 @@ Associative (A) mechanisms involve a first step where the incoming ligand bonds 
 
 
 
-To determine the rate law, we can use a similar process as we followed for D mechanisms, which are also two steps. Assuming that k2 > > k_ − 2, the rate of formation of product from the second step is: (d[MLnY])/dt = k2[MLnXY]
+To determine the rate law, we can use a similar process as we followed for D mechanisms, which are also two steps. Assuming that k2 > > k_−2, the rate of formation of product from the second step is: (d[MLnY])/dt = k2[MLnXY]
 
 The steady state approximation allows us to assume that the intermediate is in low concentration (too low to be reliably measured) and that it is unchanging. We can use the rate law for the first step to find [MLnXY] in terms of species that can be reliably measured.
 
-(d[MLnXY])/dt = k1[MLnX][Y]−k_ − 1[MLnXY]−k2[MLnXY] = 0
+(d[MLnXY])/dt = k1[MLnX][Y]−k_−1[MLnXY]−k2[MLnXY] = 0
 
-...solving this first-step rate law for [MLnXY] gives [MLnXY] = (k1[MLnX][Y])/(k_ − 1 + k2)
+...solving this first-step rate law for [MLnXY] gives [MLnXY] = (k1[MLnX][Y])/(k_−1 + k2)
 
-And then substitution [MLnXY] into the rate law for the second step, and let k = (k1 k2)/(k_ − 1 + k2) to gives the overall rate law below.
+And then substitution [MLnXY] into the rate law for the second step, and let k = (k1 k2)/(k_−1 + k2) to gives the overall rate law below.
 
-(d[MLnY])/dt = (k1 k2[MLnX][Y])/(k_ − 1 + k2) = k[MLnX][Y]
+(d[MLnY])/dt = (k1 k2[MLnX][Y])/(k_−1 + k2) = k[MLnX][Y]
 
 This overall rate law is second order, and first order with respect to each of the reactants. This means that there is a direct (linear) relationship between concentration of either reactant and the rate of reaction.
 
@@ -455,13 +455,13 @@ KE = ([(ML5X*Y)])/([ML5X][Y])
 
 This can be rearranged to solve for concentration of the encounter complex.
 
-[(ML5X*Y)] = KE[ML5X][Y]
+[(ML5X*Y)] = KE [ML5X][Y]
 
 ...and we can re-write the rate expression to remove the encounter complex from the expression. But by doing so, we remove the problem of the unmeasurable encounter complex being in the expression, but add the problem of the reactant metal complex being part of the expression:
 
 [Note: corrected; the source prints "experssion" where this reads "expression". A typing error.]
 
-Rate = k2KE[ML5X][Y]
+Rate = k2KE [ML5X][Y]
 
 The problem is that we don't precisely know what the value of [ML5X]. We only know the total amount we initially added. But, we assume that k1 is large, and so the initial concentration of the metal complex may change immediately to produce some of the encounter complex. As long as k2 is relatively small, we can assume that the initial total concentration of metal complex at the start of reaction consists primarily of the reactant complex plus the encounter complex:
 
@@ -471,31 +471,31 @@ We can substitute XXX into XXX to remove the encounter complex from the expressi
 
 [Note: The source leaves its equation references as XXX: the expression for [(ML5X*Y)] above is substituted into the one for [M]total. The text is left as printed.]
 
-[M]total = [ML5X] + KE[ML5X][Y]
+[M]total = [ML5X] + KE [ML5X][Y]
 
-= [ML5X](1 + KE[Y])
+= [ML5X](1 + KE [Y])
 
-[ML5X] = ([M]total)/(1 + KE[Y])
+[ML5X] = ([M]total)/(1 + KE [Y])
 
 Now this allows us to do one more substitution into the rate expression to get the rate into terms of constants and solution concentrations that are known:
 
-Rate = k2KE([M]total[Y])/(1 + KE[Y])
+Rate = k2KE ([M]total[Y])/(1 + KE [Y])
 
 This rate expression is complex, but can be simplified under extremely high or low concentrations of the incoming ligand, [Y].
 
-High [Y]: If the reaction proceeds at high concentration of Y, then the denominator, 1 + KE[Y] becomes approximately KE[Y]. The expression is simplified to a first-order rate law under high [Y]:
+High [Y]: If the reaction proceeds at high concentration of Y, then the denominator, 1 + KE [Y] becomes approximately KE [Y]. The expression is simplified to a first-order rate law under high [Y]:
 
 [Note: corrected; the source prints "recation" where this reads "reaction". A typing error.]
 
-Rate = k2KE([M]total[Y])/(KE[Y]) = k2[M]total
+Rate = k2KE ([M]total[Y])/(KE [Y]) = k2[M]total
 
 This would allow determination of k2 because the rate could be directly observed by varying the concentration of [M]total at high [Y].
 
-Low [Y]: If the reaction is run at very low [Y], then the denominator, 1 + KE[Y] becomes approximately 1. We can let the observed rate constant, k_obs = k2KE to get a simplified second-order rate law under very low [Y]:
+Low [Y]: If the reaction is run at very low [Y], then the denominator, 1 + KE [Y] becomes approximately 1. We can let the observed rate constant, k_obs = k2KE to get a simplified second-order rate law under very low [Y]:
 
 Rate = k2KE[M]total[Y] = (d[ML5Y])/dt = k_obs[M]total[Y]
 
-[Note: corrected; the source prints "Rate = k2KE([M]total[Y])/(KE[Y]) =" where this reads "Rate = k2KE[M]total[Y] =". At low [Y] the denominator 1 + KE[Y] is about 1, as the sentence before says; the source repeats the high-[Y] expression.]
+[Note: corrected; the source prints "Rate = k2KE ([M]total[Y])/(KE [Y]) =" where this reads "Rate = k2KE[M]total[Y] =". At low [Y] the denominator 1 + KE[Y] is about 1, as the sentence before says; the source repeats the high-[Y] expression.]
 
 The observed rate constant can be measured experimentally, and KE can be determined theoretically (k_obs = k2KE)
 

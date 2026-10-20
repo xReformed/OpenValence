@@ -89,13 +89,13 @@ This half reaction is now also balanced.
 
 When combining the two half reactions into a balanced chemical equation, the key is that the total number of electrons must cancel, so the number of electrons lost by atoms are equal to the number of electrons gained by other atoms. This may require we multiply one or both half reaction(s) by an integer to make the number of electrons on each side equal. With three electrons as products and one as a reactant, the least common multiple of these two numbers is three. We can use a single aluminum reaction, but must take three times the silver reaction:
 
-Al → Al^3+ + 3e^−3 × [Ag^+ + e^− → Ag]
+Al → Al^3+ + 3e^− 3 × [Ag^+ + e^− → Ag]
 
 [Note: reproduced as printed; these are two half reactions run together: Al → Al^3+ + 3e^−, and 3 × [Ag^+ + e^− → Ag].]
 
 The 3 on the second reaction is distributed to all species in the reaction:
 
-Al → Al^3+ + 3e^−3Ag^+ + 3e^− → 3Ag
+Al → Al^3+ + 3e^− 3Ag^+ + 3e^− → 3Ag
 
 [Note: reproduced as printed; these are two half reactions run together: Al → Al^3+ + 3e^−, and 3Ag^+ + 3e^− → 3Ag.]
 
@@ -129,7 +129,7 @@ Cr → Cr^3+ + 3e^−Fe^2+ + 2e^− → Fe
 
 The first reaction involves three electrons, while the second reaction involves two electrons. The least common multiple of these two numbers is six, so to get six electrons in each reaction we need to double the first reaction and triple the second one:
 
-2 × [Cr → Cr^3+ + 3e^−] = 2Cr → 2Cr^3+ + 6e^−3 × [Fe^2+ + 2e^− → Fe] = 3Fe^2+ + 6e^− → 3Fe
+2 × [Cr → Cr^3+ + 3e^−] = 2Cr → 2Cr^3+ + 6e^− 3 × [Fe^2+ + 2e^− → Fe] = 3Fe^2+ + 6e^− → 3Fe
 
 [Note: reproduced as printed; these are two half reactions run together: 2 × [Cr → Cr^3+ + 3e^−] = 2Cr → 2Cr^3+ + 6e^−, and 3 × [Fe^2+ + 2e^− → Fe] = 3Fe^2+ + 6e^− → 3Fe.]
 
@@ -219,7 +219,7 @@ The Mn atom is going from +4 to 0 in oxidation number, which requires a gain of 
 
 Then we balance the O atoms and then the H atoms:
 
-4e^− + MnO2 → Mn + 2OH^−2H^+ + 4e^− + MnO2 → Mn + 2OH^−
+4e^− + MnO2 → Mn + 2OH^− 2H^+ + 4e^− + MnO2 → Mn + 2OH^−
 
 [Note: reproduced as printed; these are two steps run together: 4e^− + MnO2 → Mn + 2OH^− (O atoms balanced), then 2H^+ + 4e^− + MnO2 → Mn + 2OH^− (H atoms balanced).]
 

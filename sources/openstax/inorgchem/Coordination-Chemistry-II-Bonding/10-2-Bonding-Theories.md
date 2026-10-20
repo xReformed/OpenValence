@@ -47,7 +47,7 @@ Of course, when these metal electrons are placed in a field of negative charge, 
 
 Figure 10.2.1.4: The relative energy levels of the valence d orbitals corresponding to the imaginary situations pictured in Figure 10.2.1.2 above. (Left) The five valence d orbitals of a "lone" metal ion are degenerate. (Middle) The electrons in the five valence d orbitals of a metal ion would be uniformly repelled by a spherical distribution of negative charge, and thus would be higher in energy than a "lone" metal ion. (Right) The electrons in each of the five valence d orbitals of a metal ion would interact to different extents with ligands located along each of the Cartesian coordinates, and thus their energies would be raised or lowered compared to the situation where charge was distributed in a uniform sphere. (CC-BY-NC; Chris Schaller)
 
-The octahedral field is a different question, however, because the five d orbitals have different spatial distributions. Two of them (the d_z^2 and d_x^2 − y^2) lie along the axes. These orbitals are referred to as having eg symmetry. The other three (the d_xy, d_xz, and d_yz) lie in between the axes. These three are referred to as having t_2g symmetry.
+The octahedral field is a different question, however, because the five d orbitals have different spatial distributions. Two of them (the d_(z^2) and d_(x^2−y^2)) lie along the axes. These orbitals are referred to as having eg symmetry. The other three (the d_xy, d_xz, and d_yz) lie in between the axes. These three are referred to as having t_2g symmetry.
 
 Figure 10.2.1.5: Illustration of the boundary surfaces of the five d orbitals. (CC-BY-NC; Chris Schaller)
 
@@ -57,9 +57,9 @@ These two sets of orbitals are therefore found at two different energy levels. T
 
 A parameter called the crystal field stabilization energy (CFSE) was developed to assess the energy difference between the metal ion in an octahedral coordination geometry and a spherical field. To determine CFSE, we simply add up the energy of all the electrons relative to the energy level of electrons in the spherical field, in units of Δo. For an octahedral case:
 
-CFSE = [−2/5(# of electrons in t_2g) + 3/5(# of electrons in eg)] × Δo
+CFSE = [−(2/5)(# of electrons in t_2g) + (3/5)(# of electrons in eg)] × Δo
 
-[Note: corrected; the source prints "CFSE = [2/5(# of electrons in t_2g)" where this reads "CFSE = [−2/5(# of electrons in t_2g)". The t_2g set lies 2/5Δo below the barycenter, so its electrons count negatively, as in the answers below (−0.4 per t_2g electron).]
+[Note: corrected; the source prints "CFSE = [(2/5)(# of electrons in t_2g)" where this reads "CFSE = [−(2/5)(# of electrons in t_2g)". The t_2g set lies 2/5Δo below the barycenter, so its electrons count negatively, as in the answers below (−0.4 per t_2g electron).]
 
 ### Problems
 

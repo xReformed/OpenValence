@@ -162,7 +162,7 @@ H2 + Cl2 ⇌ 2HCl
 
 There is a simple relationship between K_eq (based on concentration units) and K_P (based on pressure units):
 
-KP = K_eq·(RT)^Δn
+KP = K_eq·(RT)^(Δn)
 
 where R is the ideal gas law constant (in units of L·atm/mol·K), T is the absolute temperature, and Δn is the change in the number of moles of gas in the balanced chemical equation, defined as n_gas,prods − n_gas,rcts. Note that this equation implies that if the number of moles of gas are the same in reactants and products, K_eq = K_P.
 

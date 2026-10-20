@@ -203,43 +203,43 @@ A unique name can be given to branched hydrocarbons. A unique structure can be d
 2. How does a substituent get its unique name?
 3. Name this molecule.
 
-[Image: A six carbon chain with a double bond between the second and third carbons and a methyl group on the third carbon.]
+   [Image: A six carbon chain with a double bond between the second and third carbons and a methyl group on the third carbon.]
 
 4. Name this molecule.
 
-[Image: A five carbon chain with two methyl groups on the second carbon and another methyl group on the third carbon.]
+   [Image: A five carbon chain with two methyl groups on the second carbon and another methyl group on the third carbon.]
 
 5. Name this molecule.
 
-[Image: A five carbon chain with a double bond between the fourth and fifth carbons and two methyl groups on the second carbon.]
+   [Image: A five carbon chain with a double bond between the fourth and fifth carbons and two methyl groups on the second carbon.]
 
 6. Name this molecule.
 
-[Image: Two chains of five carbons each intersect at the second carbon of each of them.]
+   [Image: Two chains of five carbons each intersect at the second carbon of each of them.]
 
 7. Name this molecule.
 
-[Image: A five carbon chain with a double bond between the second and third carbons and two methyl groups, one on the second carbon and one on the fourth carbon.]
+   [Image: A five carbon chain with a double bond between the second and third carbons and two methyl groups, one on the second carbon and one on the fourth carbon.]
 
 8. Name this molecule.
 
-[Image: A five carbon chain with a methyl group on the first carbon and a triple bond between the second and third carbons.]
+   [Image: A five carbon chain with a methyl group on the first carbon and a triple bond between the second and third carbons.]
 
 9. Name this molecule.
 
-[Image: An eight carbon chain with an ethyl group on the third carbon and an ethyl group on the fourth carbon.]
+   [Image: An eight carbon chain with an ethyl group on the third carbon and an ethyl group on the fourth carbon.]
 
 10. Name this molecule.
 
-[Image: A seven carbon chain with a double bond between the fourth and fifth carbons. There is a methyl group on the third and fourth carbons.]
+   [Image: A seven carbon chain with a double bond between the fourth and fifth carbons. There is a methyl group on the third and fourth carbons.]
 
 11. Name this molecule.
 
-[Image: An aromatic 6 membered ring with a chlorine on the top carbon and a bromine on the bottom carbon.]
+   [Image: An aromatic 6 membered ring with a chlorine on the top carbon and a bromine on the bottom carbon.]
 
 12. Name this molecule.
 
-[Image: A six membered aromatic ring with an ethyl group on the top carbon and each of the two carbons on the right have a methyl group.]
+   [Image: A six membered aromatic ring with an ethyl group on the top carbon and each of the two carbons on the right have a methyl group.]
 
 13. Draw the carbon backbone for each molecule.
    a. 3,4-diethyloctane

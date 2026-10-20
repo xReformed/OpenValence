@@ -453,13 +453,13 @@ The orbital interactions involved in halogen bond formation are shown in Figure 
 
 Figures 6.4.2.2 and 6.4.2.4. This work by Stephen Contakes is licensed under a Creative Commons Attribution 4.0 International License.
 
-Because the I-I bond weakening and I2 π^* → σ^* blueshift increase with the Lewis basicity of the donor, the blueshift and the I-I vibrational stretching frequency are sometimes used as measures of donor's halogen bond affinity. However, the data obtained from such spectroscopic measurements should be interpreted with a degree of caution. As seen in Table 6.4.5.1, the extent to which the I-I bond is weakened (indicated by Δν_I-I) and the I2's π^* → σ^* band is blue shifted are imperfectly correlated overall. However, a careful comparison of the data in 6.4.5.1. reveals that the I-I bond weakening and I2's π^* → σ^* blue shift correlate well for Lewis bases of a given type. Consequently, shifts in the I-I stretching frequency and I2 π^* → σ^* absorption band are not useful as an absolute measure of Lewis basicity but can be used to rank the halogen bond affinity of a closely-related set of donors.**
+Because the I-I bond weakening and I2 π^* → σ^* blueshift increase with the Lewis basicity of the donor, the blueshift and the I-I vibrational stretching frequency are sometimes used as measures of donor's halogen bond affinity. However, the data obtained from such spectroscopic measurements should be interpreted with a degree of caution. As seen in Table 6.4.5.1, the extent to which the I-I bond is weakened (indicated by Δν_(I-I)) and the I2's π^* → σ^* band is blue shifted are imperfectly correlated overall. However, a careful comparison of the data in 6.4.5.1. reveals that the I-I bond weakening and I2's π^* → σ^* blue shift correlate well for Lewis bases of a given type. Consequently, shifts in the I-I stretching frequency and I2 π^* → σ^* absorption band are not useful as an absolute measure of Lewis basicity but can be used to rank the halogen bond affinity of a closely-related set of donors.**
 
 [Note: corrected; the source prints "Because the I-I bond strength and" where this reads "Because the I-I bond weakening and". The I–I bond weakens, it does not strengthen, as the base gets stronger.]
 
 Table 6.4.6.1. Spectroscopic measures of Lewis basicity for I2 adducts of selected bases arranged in order of extent of blue shift. The data are excerpted from the extensive compilation given in reference 4.
 
-| Base (type) | Δν_I-I cm^−1 | Blue shift of I2's π* → σ* |
+| Base (type) | Δν_(I-I) cm^−1 | Blue shift of I2's π* → σ* |
 | --- | --- | --- |
 | 4-methylpyridine (pyridines) | 29.1 | 4730 |
 | pyridine (pyridines) | 27.4 | 4560 |

@@ -94,7 +94,7 @@ The proximity of fast moving electrons to massive nuclei in the heavier transiti
 
 The combination of smaller sizes and altered orbital energies affects coordination preferences. Relativistic effects contribute to the greater tendency of Au^I relative to other group 11 metals to form linear two-coordinate complexes. As shown in Figure 9.5.6B, the relative closeness in energy of the 6s and 5d orbitals of gold makes mixing of these orbitals more favorable, facilitating the ability of gold to form two-coordinate complexes with strong sigma bonds oriented 180° from one another.
 
-Figure 9.5.6: (A) Gold experiences relativistic expansion and contraction of its 5d and 6s orbitals, resulting in shifts to their relative energies. (B) This makes mixing of these orbitals more favorable, facilitating the ability of gold to form two-coordinate complexes with strong sigma bonds that involve considerable sd_z^2 character. This work by Stephen Contakes is licensed under a Creative Commons Attribution 4.0 International License.
+Figure 9.5.6: (A) Gold experiences relativistic expansion and contraction of its 5d and 6s orbitals, resulting in shifts to their relative energies. (B) This makes mixing of these orbitals more favorable, facilitating the ability of gold to form two-coordinate complexes with strong sigma bonds that involve considerable sd_(z^2) character. This work by Stephen Contakes is licensed under a Creative Commons Attribution 4.0 International License.
 
 ## What structures do coordination complexes form?
 

@@ -69,7 +69,7 @@ Write the equations for the remaining passages of the β-oxidation pathway follo
 
 **Answer**
 
-Caprylyl CoA → Hexanoyl CoA →  Butyryl CoA → 2 Acetyl CoA
+Caprylyl CoA → Hexanoyl CoA → Butyryl CoA → 2 Acetyl CoA
 
 ### Exercise 29.3.2
 

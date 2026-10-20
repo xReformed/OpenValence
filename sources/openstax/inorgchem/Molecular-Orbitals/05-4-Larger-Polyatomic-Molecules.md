@@ -24,7 +24,7 @@ Below is a set of steps you can follow to find SALCs and draw an MO Diagram. Eac
 5. If you are asked to sketch the shapes of SALCs, determine what they “look like” using one of the following strategies. (a) Shortcut: if the reducible representations are listed with s, p, or d orbitals in the character table, just draw them (… and skip steps b-c) (b) Systematic (Projection Operator) method: Draw an expanded character table and draw your molecule with each ligand identified by letters or numbers (a,b,c... or i,j,k... or 1,2,3...) Determine where each pendant atom/orbital ends up under each of the operations of your expanded table. Project the values for each irreducible representation onto the chart you created and then add up the values. Positive and negative values are opposite signed orbitals.
 6. Draw the MO diagram by combining SALCs with AO’s of like symmetry. When drawing SALC energy levels, remember that the more nodal planes in your SALC orbital drawing, the higher the energy for that SALC orbital.
 
-* When we are focused on orbitals, as in the case for finding group orbitals and drawing molecular orbital diagrams, the symmetry of the orbitals is what we are interested in. In the case of high-symmetry point groups, like D_∞h and C_∞v, even though the molecule may have a C_∞ axis, the orbitals do not necessarily retain this symmetry element. For example, the px orbital would not have a C_∞ axis, but rather a C2 axis. It is sufficient and useful to substitute D_2h for D_∞h and C_2v for C_∞v to simplify the problem.
+* When we are focused on orbitals, as in the case for finding group orbitals and drawing molecular orbital diagrams, the symmetry of the orbitals is what we are interested in. In the case of high-symmetry point groups, like D∞h and C∞v, even though the molecule may have a C∞ axis, the orbitals do not necessarily retain this symmetry element. For example, the px orbital would not have a C∞ axis, but rather a C2 axis. It is sufficient and useful to substitute D_2h for D∞h and C_2v for C∞v to simplify the problem.
 
 5.4.1: Bifluoride anion
 
@@ -52,7 +52,7 @@ The linear anion [F-H-F]^− is a good place to start as an example to illustrat
 
 #### Step 1. Find the point group of the molecule and assign Cartesian coordinates so that z is the principal axis.
 
-We begin by assigning the appropriate point group for this molecule: D_∞h (Figure 5.4.1.1). As mentioned in the previous page, it is useful to substitute D_2h for D_∞h when generating SALCs and molecular orbital diagrams. The z axis is assigned to be colinear with the principal axis, and in this case is the same as the C_∞ axis (Figure 5.4.1.1).
+We begin by assigning the appropriate point group for this molecule: D∞h (Figure 5.4.1.1). As mentioned in the previous page, it is useful to substitute D_2h for D∞h when generating SALCs and molecular orbital diagrams. The z axis is assigned to be colinear with the principal axis, and in this case is the same as the C∞ axis (Figure 5.4.1.1).
 
 Figure 5.4.1.1: The [FHF]^− anion belongs to the D∞h point group. (CC-BY-NC-SA; Kathryn Haas)
 
@@ -78,9 +78,9 @@ The molecular orbital diagram for [F-H-F]^− is shown in Figure 5.4.1.4. Notice
 
 Figure 5.4.1.4:The molecular orbital diagram for [F-H-F]^−. The molecular orbital surfaces and relative energy levels were calculated using Spartan software. SALCs are labeled according to numbers assigned in Figure 5.4.1.2. The symmetry of each SALC and orbital under the D_2h point group is shown in red font. (CC-BY-NC-SA; Kathryn Haas)
 
-Click here for a version of Figure 5.4.1.4 using D_∞h labeling:
+Click here for a version of Figure 5.4.1.4 using D∞h labeling:
 
-For high-symmetry groups, a shortcut is to use a lower-symmetry group that maintains the critical symmetry elements. In the case of the D_∞h point group, it is often sufficient to use the approximation of the D_2h point group and character table. This is the same MO diagram as shown above, but using the symmetry labels appropriate for the D_2h approximation.
+For high-symmetry groups, a shortcut is to use a lower-symmetry group that maintains the critical symmetry elements. In the case of the D∞h point group, it is often sufficient to use the approximation of the D_2h point group and character table. This is the same MO diagram as shown above, but using the symmetry labels appropriate for the D_2h approximation.
 
 Alternate Figure 5.4.1.4: The molecular orbital diagram for [F-H-F]^−. The molecular orbital surfaces and relative energy levels were calculated using Spartan software. SALCs are labeled according to numbers assigned in Figure 5.4.1.2. The symmetry of each SALC and orbital under the D_2h point group is shown in red font. (CC-BY-NC-SA; Kathryn Haas)
 
@@ -106,9 +106,9 @@ Carbon dioxide is another linear molecule. This example is slightly more complex
 
 ##### Step 1. Find the point group of the molecule and assign Cartesian coordinates so that z is the principal axis.
 
-The CO2 molecule is linear and its point group is D_∞h. The z axis is collinear with the C_∞ axis. We will use the D_2h point group as a substitute since the orbital symmetries are retained in the D_2h point group.
+The CO2 molecule is linear and its point group is D∞h. The z axis is collinear with the C∞ axis. We will use the D_2h point group as a substitute since the orbital symmetries are retained in the D_2h point group.
 
-Figure 5.4.2.1: CO2 belongs to the D_∞h point group. (CC_BY-NC-SA; Kathryn Haas)
+Figure 5.4.2.1: CO2 belongs to the D∞h point group. (CC_BY-NC-SA; Kathryn Haas)
 
 ##### Step 2. Identify and count the pendant atoms' valence orbitals.
 
@@ -302,9 +302,9 @@ c. Where are sites on the molecule that will undergo reaction with electrophiles
 
 ##### Expressing molecular orbitals in terms of Ψ
 
-The general expression for a molecular orbital, or the linear combination of atomic orbitals (LCAO), was given previously as Ψ = caψa + cbψb. In this expression, the wavefunction of two atoms (ψa and ψb) is combined to form the wavefunction of the molecular orbital. The coefficients ca and cb quantify the contribution of each atomic ψ to the molecular Ψ.
+The general expression for a molecular orbital, or the linear combination of atomic orbitals (LCAO), was given previously as Ψ = ca ψa + cb ψb. In this expression, the wavefunction of two atoms (ψa and ψb) is combined to form the wavefunction of the molecular orbital. The coefficients ca and cb quantify the contribution of each atomic ψ to the molecular Ψ.
 
-Ψ = caψa + cbψb
+Ψ = ca ψa + cb ψb
 
 In the case of polyatomic orbitals, each LCAO is constructed of atomic orbitals from a central atom and group orbitals (SALCs) from the pendent atoms. In the case of water, the expression above could be modified to give the expression below. Ψ = c_oxygen(ψ_oxygen) + c_SALCs(N(ψ_Ha±ψ_Hb)) N represents the normalizing requirement that was mentioned previously in reference to the requirements for electron wavefunctions and probability functions. The normalizing requirement simply stated is the requirement that the probability of finding the electron in any orbital, including group orbitals, is 1. In general, the value of N for a group orbital is... N = 1/√(Σci^2) ...where ci is the coefficient of each unique atomic orbital that contributes to the group. For the hydrogen SALCs of water, there are two atomic orbitals that contribute to equally to each SALC, and so the coefficient on each of the two orbitals is 1. This gives N = (1/(√(1^2 + 1^2))) = 1/(√2) for the H SALCs of water.
 
@@ -422,10 +422,10 @@ Notice that there are only two irreducible representations that produce SALCs, a
 
 The meaning of the linear combinations found in Table (expanded2) is as follows:
 
-- Sketch the SALC with A1 symmetry: The linear combination 2Ha + 2Hb + 2Hc indicates all contributions to this SALC are of the same sign (of the wavefunction). Qualitatively, this means there is no node in this SALC. We can take this SALC almost literally to assume that all three H 1s wavefunctions contribute equally to the SALC. We can also use the fact that the A1 representation possesses the full symmetry of the C3 v point group, is compatible with an s orbital on N, and thus is a totally symmetric SALC. Quantitatively, we can apply the normalizing factor, N, for this SALC. The linear combination for the A1 SALC in Table (expanded2) shows us that the coefficient for each orbital is 1. Thus, the normalizing factor for the A1 SALC is N = (1/(√(1^2 + 1^2 + 1^2))) = 1/(√3). This tells us that Ha, Hb, and Hc each contribute 1/(√3) to the normalized A1 group orbital: A1 group orbital = 1/(√3)[ψ_Ha + ψ_Hb + ψ_Hc] This is shown visually in Figure 5.4.4.3.
+- Sketch the SALC with A1 symmetry: The linear combination 2Ha + 2Hb + 2Hc indicates all contributions to this SALC are of the same sign (of the wavefunction). Qualitatively, this means there is no node in this SALC. We can take this SALC almost literally to assume that all three H 1s wavefunctions contribute equally to the SALC. We can also use the fact that the A1 representation possesses the full symmetry of the C3 v point group, is compatible with an s orbital on N, and thus is a totally symmetric SALC. Quantitatively, we can apply the normalizing factor, N, for this SALC. The linear combination for the A1 SALC in Table (expanded2) shows us that the coefficient for each orbital is 1. Thus, the normalizing factor for the A1 SALC is N = (1/(√(1^2 + 1^2 + 1^2))) = 1/(√3). This tells us that Ha, Hb, and Hc each contribute 1/(√3) to the normalized A1 group orbital: A1 group orbital = (1/(√3))[ψ_Ha + ψ_Hb + ψ_Hc] This is shown visually in Figure 5.4.4.3.
 - Sketch two SALCs with E symmetry: The linear combination 2Ha − Hb − Hc indicates that there are contributions with both positive and negative sign to the wavefunction for each of the E group orbitals. Qualitatively, this tells us that there is a node within each of these two SALCs, and that the total contribution of the positive portion of the wavefunction is equal to the contribution of the negative portion.
-   - Finding the first E SALC: For one of the SALCs, we can take the linear combination from Table (expanded2) almost literally: The contribution from Ha is equal and opposite to the sum of the contributions from Hb + Hc. This would result in a SALC as shown in Figure 5.4.4.3 (E, left), that would have symmetry of the x axis and that would be compatible with the px orbital on N. The node exists in the yz plane and there is an equal contribution of positive and negative parts of the total wavefunction. We can also apply the normalizing factor, N, to find this SALC. The linear combination for the E SALC in Table (expanded2) shows us that the coefficients for orbital contributions are 2, -1, and -1. Thus, the normalizing factor for the first E SALC is N = (1/(√(2^2 + (−1)^2 + (−1)^2))) = 1/(√6). This normalized E group orbital is: First E group orbital = 1/(√6)[2ψ_Ha − ψ_Hb − ψ_Hc] This is shown visually in Figure 5.4.4.3 (E, left).
-   - Finding the second E SALC: The second SALC is less obvious at first glance. We must use clues from the character table to help us determine what it should "look like". Since the E representation transforms as the group, (x, y), we know that one of the SALCs will have the symmetry of the x axis and px orbital on the central nitrogen atom, while the other should possess the symmetry of the y axis and be compatible with the py orbital on nitrogen. This alone could lead you to the sketch of the second SALC with E symmetry shown in Figure 5.4.4.3 (E, right). This second E SALC must have a node in the xz plane, and because Ha lies in this node, Ha cannot contribute to this group orbital. Retaining the fact that the positive and negative contributions of the linear combination must be equal, we can arrive at a SALC that has equal but opposite contributions of Hb and Hc, and no contribution by Ha (Figure 5.4.4.3, right). We can also apply the normalizing factor, N, to find this SALC. But we must apply the fact that Ha cannot contribute to the SALC with "y" symmetry. We remove the contribution of Ha, leaving us with coefficients of 0 for Ha and 1 for Hb and Hc. Thus, the normalizing factor for the second E SALC is N = (1/(√(0^2 + 1^2 + 1^2))) = 1/(√2). To this, we must add positive and negative coefficients so that the entire wavefunction of this SALC is normalized. The result for this normalized E group orbital is: Second E group orbital = 1/(√2)[ψ_Hb − ψ_Hc] This is shown visually in Figure 5.4.4.3.
+   - Finding the first E SALC: For one of the SALCs, we can take the linear combination from Table (expanded2) almost literally: The contribution from Ha is equal and opposite to the sum of the contributions from Hb + Hc. This would result in a SALC as shown in Figure 5.4.4.3 (E, left), that would have symmetry of the x axis and that would be compatible with the px orbital on N. The node exists in the yz plane and there is an equal contribution of positive and negative parts of the total wavefunction. We can also apply the normalizing factor, N, to find this SALC. The linear combination for the E SALC in Table (expanded2) shows us that the coefficients for orbital contributions are 2, -1, and -1. Thus, the normalizing factor for the first E SALC is N = (1/(√(2^2 + (−1)^2 + (−1)^2))) = 1/(√6). This normalized E group orbital is: First E group orbital = (1/(√6))[2ψ_Ha − ψ_Hb − ψ_Hc] This is shown visually in Figure 5.4.4.3 (E, left).
+   - Finding the second E SALC: The second SALC is less obvious at first glance. We must use clues from the character table to help us determine what it should "look like". Since the E representation transforms as the group, (x, y), we know that one of the SALCs will have the symmetry of the x axis and px orbital on the central nitrogen atom, while the other should possess the symmetry of the y axis and be compatible with the py orbital on nitrogen. This alone could lead you to the sketch of the second SALC with E symmetry shown in Figure 5.4.4.3 (E, right). This second E SALC must have a node in the xz plane, and because Ha lies in this node, Ha cannot contribute to this group orbital. Retaining the fact that the positive and negative contributions of the linear combination must be equal, we can arrive at a SALC that has equal but opposite contributions of Hb and Hc, and no contribution by Ha (Figure 5.4.4.3, right). We can also apply the normalizing factor, N, to find this SALC. But we must apply the fact that Ha cannot contribute to the SALC with "y" symmetry. We remove the contribution of Ha, leaving us with coefficients of 0 for Ha and 1 for Hb and Hc. Thus, the normalizing factor for the second E SALC is N = (1/(√(0^2 + 1^2 + 1^2))) = 1/(√2). To this, we must add positive and negative coefficients so that the entire wavefunction of this SALC is normalized. The result for this normalized E group orbital is: Second E group orbital = (1/(√2))[ψ_Hb − ψ_Hc] This is shown visually in Figure 5.4.4.3.
 
 [Note: corrected; the source prints "and no contribution by Hc" where this reads "and no contribution by Ha". The second E SALC has equal and opposite contributions from Hb and Hc and none from Ha.]
 
@@ -451,7 +451,7 @@ Figure 5.4.4.4: The molecular orbital diagram of ammonia. Molecular orbitals sur
 
 The process for finding SALCs and constructing the molecular orbital diagram for carbon dioxide was described in a previous section (Section 5.4.2). However, we also just presented an alternative strategy, the projection operator method, to finding the shapes of SALCs in Section 5.4.4. Let's revisit carbon dioxide and demonstrate how you can use the projection operator method to find SALCs for carbon dioxide.
 
-Just as before, we can simplify the problem by approximating the D_∞hpoint group using D_2h. The first four steps for constructing the MO diagram would be the same as described in Section 5.4.2. and we will pick up from that point (with Step 5) to find what the SALCs look like using the projection operator method.
+Just as before, we can simplify the problem by approximating the D∞hpoint group using D_2h. The first four steps for constructing the MO diagram would be the same as described in Section 5.4.2. and we will pick up from that point (with Step 5) to find what the SALCs look like using the projection operator method.
 
 ### The projection operator method applied to CO2
 
@@ -459,7 +459,7 @@ Just as before, we can simplify the problem by approximating the D_∞hpoint gro
 
 We can label the pendant atoms as Oa and Ob, as in Figure 5.4.5.1.
 
-Figure 5.4.5.1: The structure of carbon dioxide with pendant oxygen atoms distinguished with labels a and b. Note that we will approximate the C_∞ axis as a C2 axis to simplify the process of finding the SALCs. (CC-BY-SA; Kathryn Haas)
+Figure 5.4.5.1: The structure of carbon dioxide with pendant oxygen atoms distinguished with labels a and b. Note that we will approximate the C∞ axis as a C2 axis to simplify the process of finding the SALCs. (CC-BY-SA; Kathryn Haas)
 
 #### Step 5.2: Create an expanded character table with one pendant atom's projected position for each operation
 
@@ -505,21 +505,21 @@ Notice that there are only two irreducible representations that produce SALCs, t
 
 #### Step 5.4: Sketch the SALCs
 
-The SALCs with Ag symmetry: Quantitatively, we can apply the normalizing factor, N, for these SALCs. Each atom contributes equally to the SALCs, thus the normalizing factor for the Ag SALC is N = (1/(√(1^2 + 1^2))) = 1/(√2). This tells us that each oxygen contributes 1/(√2) to each of the normalized Ag group orbitals: Ag group orbital = 1/(√2)[ψ_Oa + ψ_Ob]
+The SALCs with Ag symmetry: Quantitatively, we can apply the normalizing factor, N, for these SALCs. Each atom contributes equally to the SALCs, thus the normalizing factor for the Ag SALC is N = (1/(√(1^2 + 1^2))) = 1/(√2). This tells us that each oxygen contributes 1/(√2) to each of the normalized Ag group orbitals: Ag group orbital = (1/(√2))[ψ_Oa + ψ_Ob]
 
 The linear combination 4Oa + 4Ob indicates that wavefunctions from each oxygen atom contribute equally to each of the two SALCs, with the same sign of the wavefunction for each. Because we know that Ag is totally symmetric (all 1's in the characters), we can assume that the SALC's will look like a symmetric arrangement of oxygen orbitals. But which orbitals contribute? We could peek at the character table to get a hint. But we'll treat this problem systematically.
 
-The SALCs with B_1u symmetry: The linear combination 4Oa − 4Ob indicates that each oxygen atom contributes equally, but that they have opposite wavefunctions. Application of the normalizing factor would give us: B_1u group orbital = 1/(√2)[ψ_Oa − ψ_Ob] But how do we know what the SALCs look like? Again, the character table can give us some hints, but we'll use a systematic process, below. What do the SALCs look like? One way to systematically derive the SALC shapes is to perform the projection (Step 5.3) on specific groups of orbitals on the oxygen atom. For example, if we replicate Table (expanded2) using just the group of oxygen 2s orbitals and the Ag and B_1u representations, we get the following:
+The SALCs with B_1u symmetry: The linear combination 4Oa − 4Ob indicates that each oxygen atom contributes equally, but that they have opposite wavefunctions. Application of the normalizing factor would give us: B_1u group orbital = (1/(√2))[ψ_Oa − ψ_Ob] But how do we know what the SALCs look like? Again, the character table can give us some hints, but we'll use a systematic process, below. What do the SALCs look like? One way to systematically derive the SALC shapes is to perform the projection (Step 5.3) on specific groups of orbitals on the oxygen atom. For example, if we replicate Table (expanded2) using just the group of oxygen 2s orbitals and the Ag and B_1u representations, we get the following:
 
-[Note: corrected; the source prints "B_1u group orbital = 1/(√2)[ψ_Oa + ψ_Ob]" where this reads "B_1u group orbital = 1/(√2)[ψ_Oa − ψ_Ob]". The combination 4Oa − 4Ob has opposite signs on the two oxygens.]
+[Note: corrected; the source prints "B_1u group orbital = (1/(√2))[ψ_Oa + ψ_Ob]" where this reads "B_1u group orbital = (1/(√2))[ψ_Oa − ψ_Ob]". The combination 4Oa − 4Ob has opposite signs on the two oxygens.]
 
 
 
 | D_2h | E | C2(z) | C2(y) | C2(x) | i | σ(xy) | σ(xz) | σ(yz) | Linear Combination |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Projection of 2s orbital of Oa | O1 sa | O1 sa | O1 sb | O1 sb | O1 sb | O1 sb | O1 sa | O1 sa | |
-| Ag | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | = 4O1 sa + 4O1 sb |
-| B_1u | 1 | 1 | −1 | −1 | −1 | −1 | 1 | 1 | = 4O1 sa − 4O1 sb |
+| Projection of 2s orbital of Oa | O1sa | O1sa | O1sb | O1sb | O1sb | O1sb | O1sa | O1sa | |
+| Ag | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | = 4O1sa + 4O1sb |
+| B_1u | 1 | 1 | −1 | −1 | −1 | −1 | 1 | 1 | = 4O1sa − 4O1sb |
 
 
 

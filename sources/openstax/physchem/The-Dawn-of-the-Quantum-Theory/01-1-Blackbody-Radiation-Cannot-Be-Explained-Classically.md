@@ -193,7 +193,7 @@ Lord Rayleigh and J. H. Jeans developed an equation which explained blackbody ra
 
 dρ(ν, T) = ρν(T)dν
 
-= ((8πkBT)/c^3)ν^2 dν
+= ((8πkB T)/c^3)ν^2 dν
 
 Experimental data performed on the black box showed slightly different results than what was expected by the Rayleigh-Jeans law (Figure 1.1.5 ). The law had been studied and widely accepted by many physicists of the day, but the experimental results did not lie, something was different between what was theorized and what actually happens. The experimental results showed a bell type of curve, but according to the Rayleigh-Jeans law the energy density diverged as it neared the ultraviolet region (Equation (Eq3)). Ehrenfest later dubbed this the "ultraviolet catastrophe". It is important to emphasizing that Equation (Eq3) is a classical result: the only inputs are classical dynamics and Maxwell’s electromagnetic theory.
 
@@ -208,17 +208,17 @@ Graph showing spectral data with multiple curves, highlighting classical predict
 
 Radiation is understood as a continuous distribution of amplitude vs. wavelength or, equivalently, amplitude vs. frequency (Figure 1.1.5 ). According to Rayleigh-Jeans law, the intensity at a specific frequency ν and temperature is
 
-ρ(ν, T) = (8πkbTν^2)/c^3.
+ρ(ν, T) = (8πkb Tν^2)/c^3 .
 
 However, in practice, we are more interested in frequency intervals. An exact frequency is the limit of a sequence of smaller and smaller intervals. If we make the assumption that, for a sufficiently small interval, ρ(ν, T) does not vary, we get your definition for the differential dρ(ν, T) in Equation (Eq3):
 
-The assumption is fair due to the continuity of ρ(ν, T). This is the approximation of an integral on a very small interval dν by the height of a point inside this interval ((8πkbTν^2)/c^3) times its length (dν). So, if we sum an infinite amount of small intervals like the one above we get an integral. The total radiation between ν1 and ν2 will be:
+The assumption is fair due to the continuity of ρ(ν, T). This is the approximation of an integral on a very small interval dν by the height of a point inside this interval ((8πkb Tν^2)/c^3) times its length (dν). So, if we sum an infinite amount of small intervals like the one above we get an integral. The total radiation between ν1 and ν2 will be:
 
 ∫_ν1^ν2 dρ(ν, T) = ∫_ν1^ν2 ρ(ν, T)dν
 
-= ∫_ν1^ν2 ((8πkbTν^2)/c^3)dν
+= ∫_ν1^ν2 ((8πkb Tν^2)/c^3)dν
 
-= 8πkbT(v2^3 − v1^3)/(3c^3).
+= 8πkb T(v2^3 − v1^3)/(3c^3).
 
 Observe that ρ(ν, T) is quadratic in ν.
 
@@ -232,15 +232,15 @@ The total spectral radiance ρ_tot(T) is the combined emission over all possible
 
 ρ_tot(T) = ∫0^∞ dρ(ν, T)
 
-= ∫0^∞ ((8πkBT)/c^3)ν^2 dν
+= ∫0^∞ ((8πkB T)/c^3)ν^2 dν
 
 but the integral
 
-∫0^∞ x^2dx
+∫0^∞ x^2 dx
 
 does not converge. Worse, it is infinite,
 
-lim_(k → ∞)∫0^k x^2dx = ∞
+lim_(k → ∞)∫0^k x^2 dx = ∞
 
 Hence, the classically derived Rayleigh-Jeans law predicts that the radiance of a blackbody is infinite. Since radiance is power per angle and unit area, this also implies that the total power and hence the energy a blackbody emitter gives off is infinite, which is patently absurd. This is called the ultraviolet catastrophe because the absurd prediction is caused by the classical law not predicting the behavior at high frequencies/small wavelengths correctly (Figure 1.1.5 ).
 

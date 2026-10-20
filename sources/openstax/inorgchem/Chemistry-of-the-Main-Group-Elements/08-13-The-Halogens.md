@@ -723,15 +723,15 @@ The radius of an atom is governed by
 
 - Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons. It is usually measured on the Pauling scale, on which the most electronegative element (fluorine) is given an electronegativity of 4.0.
 
-[Image not described in source]
+   [Image not described in source]
 
-As shown in the figure above, electronegativity decreases from fluorine to iodine; the atoms become less effective at attracting bonding pairs of electrons as they grow larger. This can be visualized using dots-and-crosses diagrams for hydrogen fluoride and hydrogen chloride.
+   As shown in the figure above, electronegativity decreases from fluorine to iodine; the atoms become less effective at attracting bonding pairs of electrons as they grow larger. This can be visualized using dots-and-crosses diagrams for hydrogen fluoride and hydrogen chloride.
 
-[Image not described in source]
+   [Image not described in source]
 
-The bonding electrons between the hydrogen and the halogen experience the same net charge of +7 from either the fluorine or the chlorine. However, in the chlorine case, the nucleus is further away from the bonding pair. Therefore, electrons are not as strongly attracted to the chlorine nucleus as they are to the fluorine nucleus.
+   The bonding electrons between the hydrogen and the halogen experience the same net charge of +7 from either the fluorine or the chlorine. However, in the chlorine case, the nucleus is further away from the bonding pair. Therefore, electrons are not as strongly attracted to the chlorine nucleus as they are to the fluorine nucleus.
 
-The stronger attraction to the closer fluorine nucleus makes fluorine more electronegative.
+   The stronger attraction to the closer fluorine nucleus makes fluorine more electronegative.
 
 ##### Summarizing the trend down the group
 

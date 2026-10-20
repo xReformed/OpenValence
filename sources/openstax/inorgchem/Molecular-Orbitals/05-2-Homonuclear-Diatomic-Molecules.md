@@ -33,7 +33,7 @@ There are some things you should note as you inspect Figure 5.2.1.1 (and keep th
 
 Another important thing to notice is that the diagram in Figure 5.2.1.1 lacks electrons (because it is generic for any second-row diatomic molecule). If this were a complete molecular orbital diagram it would include the electrons for each atom and for the molecule. Electrons in molecular orbitals are filled in the same way an atomic orbital diagram would be filled, where electrons occupy lower energy orbitals before higher energy orbitals, and electrons occupy empty degenerate orbitals before pairing. A complete molecular orbital diagram would show whether the molecule is diamagnetic or paramagnetic. It can also be used to calculate the bond order of the molecule (the number of bonds between atoms) using the formula below:
 
-Bond order = 1/2[(number of electrons in bonding orbitals) − (number of electrons in antibonding orbitals)]
+Bond order = (1/2)[(number of electrons in bonding orbitals) − (number of electrons in antibonding orbitals)]
 
 In general, non-valence (core) electrons can be ignored because they contribute nothing to the bond order. In fact, many molecular orbital diagrams will ignore the core orbitals, as they are insignificant for bonding interactions and reactivity.
 
@@ -49,7 +49,7 @@ Let's change Figure 5.2.1.1 to make it specific for O2. Re-draw the MO diagram (
 
 The diagram in Figure 5.2.1.1 includes core orbitals (the 1s) and valence electrons (2s, 2p). Therefore, we will consider all the electrons in an oxygen atom and a dioxygen molecule. An oxygen atom has eight total electrons. So we fill eight electrons into the atomic orbitals for the oxygen atom on the right, and eight electrons into the atomic orbitals for oxygen on the left. The total number of electrons for the molecule is sixteen, so fill in 16 electrons into the molecular orbitals, being sure to apply Hund's rule and the Aufbau principle. The result is a diagram that looks like the one drawn below in Figure 5.2.1.2.
 
-The bond order is calculated using the molecular orbitals (we can ignore atomic orbitals). There are 10 electrons in binding orbitals and 6 electrons in antibonding orbitals). This gives a bond order of 1/2(10 − 6) = 2. This bond order is consistent with valence bond theory!
+The bond order is calculated using the molecular orbitals (we can ignore atomic orbitals). There are 10 electrons in binding orbitals and 6 electrons in antibonding orbitals). This gives a bond order of (1/2)(10 − 6) = 2. This bond order is consistent with valence bond theory!
 
 This diagram indicates that dioxygen is paramagnetic; it has two unpaired electrons in the π^* orbitals. This paramagnetic electron configuration explains why dioxygen is attacted to magnetic fields!
 
@@ -72,7 +72,7 @@ In the previous section, we introduced a simplified molecular orbital (MO) diagr
 In reality, orbitals of compatible symmetry can combine, or mix, even when they have different energies. When sets of orbitals mix, it has the effect of decreasing the energy of the lower-energy set and increasing the energy of the higher-energy set. There are two ways to explain mixing, described in the points below. The diagram on the right of side of Figure 5.2.2.1 shows how energy levels are affected by orbital mixing.
 
 - Starting from the simplified MO diagram and mixing molecular orbitals of like symmetry: If we start with the "no mixing" simplified diagram shown on the left, we can pick out the orbitals with like symmetry and consider what will happen if these molecular orbitals mix. For example, starting from the MO diagram on the left side of Figure 5.2.2.1, we see that there are two σg orbitals that have identical symmetry (hence they have identical symmetry labels). Upon mixing, the lower-energy σg(2s) will decrease in energy while the higher-energy σg(2p) will increase in energy. Likewise, there are two σu^* orbitals that will mix, decreasing the energy of σu^*(2s) while increasing the energy of σu^*(2p).
-- Starting from and mixing atomic orbitals of compatible symmetry: Starting from the atomic orbitals, we can select the orbitals that have compatible symmetry to make productive interactions, and combine them as a set to make molecular orbitals. From the two sets of atomic orbitals on the right panel in Figure 5.2.2.1, there are two sets of four orbitals with compatable symmetry; one is the set of two 2s and two 2pz orbitals. These four orbitals can combine to form molecular orbitals with σ symmetry. They combine to form one lowest-energy bonding σg, a highest-energy σu^*, and two orbitals with intermediate energy (σg, and σu^*). This treatment can be expressed as the linear combination of four atomic orbitals: Ψ = c1ψ(2 sa)±c2ψ(2 sb)±c3ψ(2 pa)±c4ψ(2 pb) where the coefficients c1 = c2 and c3 = c4 for homonuclear diatomic molecules.
+- Starting from and mixing atomic orbitals of compatible symmetry: Starting from the atomic orbitals, we can select the orbitals that have compatible symmetry to make productive interactions, and combine them as a set to make molecular orbitals. From the two sets of atomic orbitals on the right panel in Figure 5.2.2.1, there are two sets of four orbitals with compatable symmetry; one is the set of two 2s and two 2pz orbitals. These four orbitals can combine to form molecular orbitals with σ symmetry. They combine to form one lowest-energy bonding σg, a highest-energy σu^*, and two orbitals with intermediate energy (σg, and σu^*). This treatment can be expressed as the linear combination of four atomic orbitals: Ψ = c1ψ(2sa)±c2ψ(2sb)±c3ψ(2pa)±c4ψ(2pb) where the coefficients c1 = c2 and c3 = c4 for homonuclear diatomic molecules.
 
 Figure 5.2.2.1: Mixing of orbitals with like symmetry affects the energies of molecular orbitals. The simplified case where no mixing occurs is shown on the left. The effects of mixing are shown on the right. The σg orbitals of like symmetry are highlighted in fuschia and the σu^* orbitals of like symmetry are highlighted in blue. A group of atomic orbitals of similar symmetry are highlighted in yellow boxes; these atomic orbitals combine to give all σ molecular orbitals. (CC-BY-SA, Kathryn Haas)
 
@@ -134,7 +134,7 @@ Draw the complete molecular orbital diagram for O2. Show calculation of its bond
 
 O2 is paramagnetic with a bond order of 2. Its σg(2p) molecular orbital is lower in energy that the set of πu(2p) orbitals.
 
-Bond order = 1/2[(8 electrons in valence bonding orbitals) − (4 electrons in valence antibonding orbitals)]
+Bond order = (1/2)[(8 electrons in valence bonding orbitals) − (4 electrons in valence antibonding orbitals)]
 
 Figure for Exercise 5.2.3.2. Molecular orbital diagram of O2. (CC-BY-NC-SA, Kathryn Haas)
 

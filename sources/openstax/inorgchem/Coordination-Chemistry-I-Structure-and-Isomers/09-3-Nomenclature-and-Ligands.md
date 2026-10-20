@@ -305,11 +305,11 @@ Scheme 9.3.III. Example of the use of prefixes to specify the number of ligands 
 
 3. Ligand names are based on their charge.
 - Neutral and cationic ligand names are the same as the names of their neutral compounds with two caveats:
-1. names that involve spaces should either be put in parentheses or the spaces should be eliminated (preferred)
+i. names that involve spaces should either be put in parentheses or the spaces should be eliminated (preferred)
 
 Example: cis-dichlorobis(dimethyl sulfoxide)platinum(II) or cis-dichlorobis(dimethylsulfoxide)platinum(II)
 
-2. A few ligands are given common names.
+ii. A few ligands are given common names.
 - H2O = aqua
 - NH3 = ammine (notice that there are two n's)
 - CO = carbonyl
@@ -366,7 +366,7 @@ Scheme 9.3.V. Use of the μ notation to specify bridging ligands in metal comple
 
 6. If desired, parentheses may be used to delineate a ligand name to make it easier to identify in the name of the complex. This can be particularly helpful when the entire name contains a lot of information to keep track of. An example is given in Scheme 9.3.VI.
 
-Scheme 9.3.VI. When naming the complex shown, cis-diaquabis(ethylenediamine)chromium(III) nitrate is easier to read than cis-diaquabisethylenediaminechromium(III) nitrate.
+   Scheme 9.3.VI. When naming the complex shown, cis-diaquabis(ethylenediamine)chromium(III) nitrate is easier to read than cis-diaquabisethylenediaminechromium(III) nitrate.
 
 [Image not described in source]
 

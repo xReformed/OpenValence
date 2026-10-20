@@ -85,13 +85,13 @@ The first major step is to find a reducible representation (Γ) for the movement
 
 Γ_modes is the sum of the characters (trace) of the transformation matrix for the entire molecule (in the case of water, there are 9 degrees of freedom and this is now a 9x9 matrix). Let's walk through this step-by-step. The transformation matrix of E and C2 are shown below:
 
-E = (1, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0, 0, 0; 0, 0, 0, 1, 0, 0, 0, 0, 0; 0, 0, 0, 0, 1, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 0, 0, 0; 0, 0, 0, 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 1)(x_oxygen; y_oxygen; z_oxygen; x_hydrogen-a; y_hydrogen-a; z_hydrogen-a; x_hydrogen-b; y_hydrogen-b; z_hydrogen-b) = (x'_oxygen; y'_oxygen; z'_oxygen; x'_hydrogen-a; y'_hydrogen-a; z'_hydrogen-a; x'_hydrogen-b; y'_hydrogen-b; z'_hydrogen-b), χ = 9
+E = (1, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0, 0, 0; 0, 0, 0, 1, 0, 0, 0, 0, 0; 0, 0, 0, 0, 1, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 0, 0, 0; 0, 0, 0, 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 1)(x_oxygen; y_oxygen; z_oxygen; x_(hydrogen-a); y_(hydrogen-a); z_(hydrogen-a); x_(hydrogen-b); y_(hydrogen-b); z_(hydrogen-b)) = (x'_oxygen; y'_oxygen; z'_oxygen; x'_(hydrogen-a); y'_(hydrogen-a); z'_(hydrogen-a); x'_(hydrogen-b); y'_(hydrogen-b); z'_(hydrogen-b)), χ = 9
 
-C2 = (−1, 0, 0, 0, 0, 0, 0, 0, 0; 0, −1, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, −1, 0, 0; 0, 0, 0, 0, 0, 0, 0, −1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 1; 0, 0, 0, −1, 0, 0, 0, 0, 0; 0, 0, 0, 0, −1, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 0, 0, 0)(x_oxygen; y_oxygen; z_oxygen; x_hydrogen-a; y_hydrogen-a; z_hydrogen-a; x_hydrogen-b; y_hydrogen-b; z_hydrogen-b) = (x'_oxygen; y'_oxygen; z'_oxygen; x'_hydrogen-a; y'_hydrogen-a; z'_hydrogen-a; x'_hydrogen-b; y'_hydrogen-b; z'_hydrogen-b), χ = −1
+C2 = (−1, 0, 0, 0, 0, 0, 0, 0, 0; 0, −1, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, −1, 0, 0; 0, 0, 0, 0, 0, 0, 0, −1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 1; 0, 0, 0, −1, 0, 0, 0, 0, 0; 0, 0, 0, 0, −1, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 0, 0, 0)(x_oxygen; y_oxygen; z_oxygen; x_(hydrogen-a); y_(hydrogen-a); z_(hydrogen-a); x_(hydrogen-b); y_(hydrogen-b); z_(hydrogen-b)) = (x'_oxygen; y'_oxygen; z'_oxygen; x'_(hydrogen-a); y'_(hydrogen-a); z'_(hydrogen-a); x'_(hydrogen-b); y'_(hydrogen-b); z'_(hydrogen-b)), χ = −1
 
-[Note: corrected; the source prints "z'_hydrogen-b), χ = 1" where this reads "z'_hydrogen-b), χ = −1". The trace of this C2 matrix is −1 − 1 + 1 = −1, the value used in Γ_modes below.]
+[Note: corrected; the source prints "z'_(hydrogen-b)), χ = 1" where this reads "z'_(hydrogen-b)), χ = −1". The trace of this C2 matrix is −1 − 1 + 1 = −1, the value used in Γ_modes below.]
 
-It is unnecessary to find the transformation matrix for each operation since it is only the TRACE that gives us the character, and any off-diagonal entries do not contribute to Γ_modes. The values that contribute to the trace can be found simply by performing each operation in the point group and assigning a value to each individual atom to represent how it is changed by that operation. If the atom moves away from itself, that atom gets a character of zero (this is because any non-zero characters of the transformation matrix are off of the diagonal). If the atom remains in place, each of its three dimensions is assigned a value of cosθ. For the example of H2O under the C_2v point group, the axes that remain unchanged (θ = 0°) are assigned a value of cos(0°) = 1, while those that are moved into the negative of themselves (rotated or reflected to θ = 180°) are assigned cos(180°) = −1. The character for Γ is the sum of the values for each transformation.
+It is unnecessary to find the transformation matrix for each operation since it is only the TRACE that gives us the character, and any off-diagonal entries do not contribute to Γ_modes. The values that contribute to the trace can be found simply by performing each operation in the point group and assigning a value to each individual atom to represent how it is changed by that operation. If the atom moves away from itself, that atom gets a character of zero (this is because any non-zero characters of the transformation matrix are off of the diagonal). If the atom remains in place, each of its three dimensions is assigned a value of cos θ. For the example of H2O under the C_2v point group, the axes that remain unchanged (θ = 0°) are assigned a value of cos(0°) = 1, while those that are moved into the negative of themselves (rotated or reflected to θ = 180°) are assigned cos(180°) = −1. The character for Γ is the sum of the values for each transformation.
 
 Let's walk through the steps to assign characters of Γ_modes for H2O to illustrate how this works:
 
@@ -146,13 +146,13 @@ In the C_2v point group, each class has only one operation, so the number of ope
 
 **Answer**
 
-The number of A1 = 1/4[(1 × 9 × 1) + (1 × (−1) × 1) + (1 × 3 × 1) + (1 × 1 × 1)] = 3A1
+The number of A1 = (1/4)[(1 × 9 × 1) + (1 × (−1) × 1) + (1 × 3 × 1) + (1 × 1 × 1)] = 3A1
 
-The number of A2 = 1/4[(1 × 9 × 1) + (1 × (−1) × 1) + ((−1) × 3 × 1) + ((−1) × 1 × 1)] = 1A2
+The number of A2 = (1/4)[(1 × 9 × 1) + (1 × (−1) × 1) + ((−1) × 3 × 1) + ((−1) × 1 × 1)] = 1A2
 
-The number of B1 = 1/4[(1 × 9 × 1) + ((−1) × (−1) × 1) + (1 × 3 × 1) + ((−1) × 1 × 1)] = 3B1
+The number of B1 = (1/4)[(1 × 9 × 1) + ((−1) × (−1) × 1) + (1 × 3 × 1) + ((−1) × 1 × 1)] = 3B1
 
-The number of B2 = 1/4[(1 × 9 × 1) + ((−1) × (−1) × 1) + ((−1) × 3 × 1) + (1 × 1 × 1)] = 2B2
+The number of B2 = (1/4)[(1 × 9 × 1) + ((−1) × (−1) × 1) + ((−1) × 3 × 1) + (1 × 1 × 1)] = 2B2
 
 #### STEP 3: Subtract rotations and translations to find vibrational modes.
 
@@ -286,21 +286,21 @@ First, assign a vector along each C—O bond in the molecule to represent the di
 
 ##### cis- ML2(CO)2:
 
-For cis- ML2(CO)2, the point group is C_2v and so we use the operations under the C_2v character table to create the Γ_cis-CO.
+For cis- ML2(CO)2, the point group is C_2v and so we use the operations under the C_2v character table to create the Γ_(cis-CO).
 
 | C_2v | E | C2 | σv(xz) | σv'(yz) |
 | --- | --- | --- | --- | --- |
-| Γ_cis-CO | 2 | 0 | 2 | 0 |
+| Γ_(cis-CO) | 2 | 0 | 2 | 0 |
 
 
 
 ##### trans- ML2(CO)2:
 
-For trans- ML2(CO)2, the point group is D_2h and so we use the operations under the D_2h character table to create the Γ_trans-CO.
+For trans- ML2(CO)2, the point group is D_2h and so we use the operations under the D_2h character table to create the Γ_(trans-CO).
 
 | D_2h | E | C2(z) | C2(y) | C2(x) | i | σ(xy) | σ(xz) | σ(yz) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Γ_trans-CO | 2 | 0 | 0 | 2 | 0 | 2 | 2 | 0 |
+| Γ_(trans-CO) | 2 | 0 | 0 | 2 | 0 | 2 | 2 | 0 |
 
 
 
@@ -312,7 +312,7 @@ In the case of the cis- ML2(CO)2, the CO stretching vibrations are represented b
 
 | C_2v | E | C2 | σv(xz) | σv'(yz) | | |
 | --- | --- | --- | --- | --- | --- | --- |
-| Γ_cis-CO | 2 | 0 | 2 | 0 | | |
+| Γ_(cis-CO) | 2 | 0 | 2 | 0 | | |
 | A1 | 1 | 1 | 1 | 1 | z | x^2, y^2, z^2 |
 | B1 | 1 | −1 | 1 | −1 | x, Ry | xz |
 
@@ -326,7 +326,7 @@ In the case of trans- ML2(CO)2, the CO stretching vibrations are represented by 
 
 | D_2h | E | C2(z) | C2(y) | C2(x) | i | σ(xy) | σ(xz) | σ(yz) | | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Γ_trans-CO | 2 | 0 | 0 | 2 | 0 | 2 | 2 | 0 | | |
+| Γ_(trans-CO) | 2 | 0 | 0 | 2 | 0 | 2 | 2 | 0 | | |
 | Ag | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | | x^2, y^2, z^2 |
 | B_3u | 1 | −1 | −1 | 1 | −1 | 1 | 1 | −1 | x | |
 
@@ -360,11 +360,11 @@ Step 3: Break each into its component irreducible representations.
 
 Step 4: Determine which vibrational modes are IR-active and/or Raman-active.
 
-For fac-ML3(CO)3, the point group is C_3v and so we use the operations under the C_3v character table to create the Γ_fac-CO. Then break it into its irreducible representations and determine which are IR and Raman active:
+For fac-ML3(CO)3, the point group is C_3v and so we use the operations under the C_3v character table to create the Γ_(fac-CO). Then break it into its irreducible representations and determine which are IR and Raman active:
 
 | C_3v | E | 2C3 | 3σv |
 | --- | --- | --- | --- |
-| Γ_fac-CO | 3 | 0 | 1 |
+| Γ_(fac-CO) | 3 | 0 | 1 |
 
 [Note: corrected; the source prints "| C_3v | E | 2C2 | 3σv |" where this reads "| C_3v | E | 2C3 | 3σv |". The classes of C_3v are E, 2C3 and 3σv.]
 
@@ -374,11 +374,11 @@ This reduces to A1 + E. Both of these are IR active, and since one is singly deg
 
 [Note: A1 + E gives two IR bands and two Raman bands, not three: the two members of a degenerate E pair give a single band. The paragraph is left as printed.]
 
-For mer-ML3(CO)3, the point group is C_2v and so we use the operations under the C_2v character table to create the Γ_mer-CO. Then break it into its irreducible representations and determine which are IR and Raman active:
+For mer-ML3(CO)3, the point group is C_2v and so we use the operations under the C_2v character table to create the Γ_(mer-CO). Then break it into its irreducible representations and determine which are IR and Raman active:
 
 | C_2v | E | C2 | σv(xz) | σv'(yz) |
 | --- | --- | --- | --- | --- |
-| Γ_mer-CO | 3 | 1 | 3 | 1 |
+| Γ_(mer-CO) | 3 | 1 | 3 | 1 |
 
 
 

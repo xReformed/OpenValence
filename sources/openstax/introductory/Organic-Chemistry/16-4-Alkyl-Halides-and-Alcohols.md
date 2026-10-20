@@ -128,51 +128,51 @@ Predict the organic product(s) of this reaction.
 2. What is elimination? How does it differ for alkyl halides and alcohols?
 3. Name this molecule.
 
-[Image: A four carbon chain with a bromine on the second carbon.]
+   [Image: A four carbon chain with a bromine on the second carbon.]
 
 4. Name this molecule.
 
-[Image: A five carbon chain with a chlorine on the first and second carbons and a methyl group on carbon 3.]
+   [Image: A five carbon chain with a chlorine on the first and second carbons and a methyl group on carbon 3.]
 
 5. Name this molecule.
 
-[Image: A seven carbon chain with a chlorine on carbon 2, fluorine on carbon 3, and a methyl group on the fourth carbon.]
+   [Image: A seven carbon chain with a chlorine on carbon 2, fluorine on carbon 3, and a methyl group on the fourth carbon.]
 
 6. Name this molecule.
 
-[Image: A single carbon with two bromines and two iodines attached to it.]
+   [Image: A single carbon with two bromines and two iodines attached to it.]
 
 7. Name this molecule.
 
-[Image: A three carbon chain with a methyl group and hydroxy group on the second carbon.]
+   [Image: A three carbon chain with a methyl group and hydroxy group on the second carbon.]
 
 8. Name this molecule.
 
-[Image: A five carbon chain with a chlorine and hydroxy group on the third carbon.]
+   [Image: A five carbon chain with a chlorine and hydroxy group on the third carbon.]
 
 9. Name this molecule.
 
-[Image: An eight carbon chain with a hydroxy group on the fifth carbon.]
+   [Image: An eight carbon chain with a hydroxy group on the fifth carbon.]
 
 10. Name this molecule.
 
-[Image: A six carbon chain with a methyl group on carbon 2, a hydroxy group on carbon 3, an ethyl group on carbon 4, and a methyl group on carbon 5.]
+   [Image: A six carbon chain with a methyl group on carbon 2, a hydroxy group on carbon 3, an ethyl group on carbon 4, and a methyl group on carbon 5.]
 
 11. Predict the product(s) of this elimination reaction.
 
-[Image: 3-pentanol reacts with acid.]
+   [Image: 3-pentanol reacts with acid.]
 
 12. Predict the product(s) of this elimination reaction.
 
-[Image: 3-chloro-3-ethylpentane reacts with base.]
+   [Image: 3-chloro-3-ethylpentane reacts with base.]
 
 13. Predict the product(s) of this elimination reaction.
 
-[Image: 3-chlorohexane reacts with base.]
+   [Image: 3-chlorohexane reacts with base.]
 
 14. Predict the product(s) of this elimination reaction.
 
-[Image: 3-methyl-3-pentanol reacts with acid.]
+   [Image: 3-methyl-3-pentanol reacts with acid.]
 
 **Answers**
 

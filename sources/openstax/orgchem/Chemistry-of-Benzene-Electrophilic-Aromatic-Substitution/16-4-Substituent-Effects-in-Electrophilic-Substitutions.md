@@ -11,7 +11,7 @@ Only one product can form when an electrophilic substitution occurs on benzene, 
 
 - Substituents affect the reactivity of the aromatic ring. Some substituents activate the ring, making it more reactive than benzene, and some deactivate the ring, making it less reactive than benzene. In aromatic nitration, for instance, an –OH substituent makes the ring 1000 times more reactive than benzene, while an –NO2 substituent makes the ring more than 10 million times less reactive.
 
-[Image: Nitrobenzene, chlorobenzene, benzene, and phenol are arranged in order of increasing reactivity. Their respective relative rate of nitration values are mentioned.]
+   [Image: Nitrobenzene, chlorobenzene, benzene, and phenol are arranged in order of increasing reactivity. Their respective relative rate of nitration values are mentioned.]
 
 - Substituents affect the orientation of the reaction. The three possible disubstituted products—ortho, meta, and para—are usually not formed in equal amounts. Instead, the nature of the substituent initially present on the benzene ring determines the position of the second substitution. An –OH group directs substitution toward the ortho and para positions, for instance, while a carbonyl group such as –CHO directs substitution primarily toward the meta position. Table 16.1 lists experimental results for the nitration of some substituted benzenes.
 

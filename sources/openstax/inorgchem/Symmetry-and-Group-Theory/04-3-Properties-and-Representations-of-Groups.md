@@ -32,8 +32,8 @@ A mathematical group is defined as a set of elements (A1, A2, A3...) together wi
 
 1. The group must include the identity E, which commutes with other members of the group. In other terms, EAi = Ai for all the elements of the group. Application of the identity operation before or after another operation, Ai, results in the same outcome as Ai alone.
 2. The elements must satisfy the group property that the combination of any pair of elements is also an element of the group. For example, in the C_3v point group, a C3 rotation followed by a σv gives another operation that is already part of the group: a σv".
-3. Each symmetry operation Ai must have an inverse Ai^−1, which is also an element of the group, such that AiAi^−1 = Ai^−1 Ai = E The inverse gi^−1 effectively 'undoes’ the effect of the symmetry operation gi. For example, in the C_3v point group, the inverse of C3^+ is C3^−.
-4. The rule of combination must be associative (AiAj)(Ak) = Ai(AjAk) Or A(BC) = (AB)C. In other words, the grouping of operations should not matter.
+3. Each symmetry operation Ai must have an inverse Ai^−1, which is also an element of the group, such that Ai Ai^−1 = Ai^−1 Ai = E The inverse gi^−1 effectively 'undoes’ the effect of the symmetry operation gi. For example, in the C_3v point group, the inverse of C3^+ is C3^−.
+4. The rule of combination must be associative (Ai Aj)(Ak) = Ai(Aj Ak) Or A(BC) = (AB)C. In other words, the grouping of operations should not matter.
 
 [Note: corrected; the source prints "In other words, the order of operations should not matter." where this reads "In other words, the grouping of operations should not matter.". Associativity is about how operations are grouped, (AB)C = A(BC); the order in which they are applied does matter, as the start of this section shows.]
 
@@ -63,11 +63,11 @@ Figure 4.3.1.1: Matrices of different dimensions
 Some types of matrices have special names:
 
 - A square matrix:(3, −2, 4; 5, 3i, 3; −i, 1/2, 9) with m = n
-- A rectangular matrix:(3, −2, 4; 5, 3i, 3) with m≠n
+- A rectangular matrix:(3, −2, 4; 5, 3i, 3) with m ≠ n
 - A column vector:(3; 5; −i) with n = 1
 - A row vector:(3, −2, 4) with m = 1
-- The identity matrix:(1, 0, 0; 0, 1, 0; 0, 0, 1) with a_ij = δ_i, j, where δ_i, j is a function defined as δ_i, j = 1 if i = j and δ_i, j = 0 if i≠j.
-- A diagonal matrix:(a, 0, 0; 0, b, 0; 0, 0, c) with a_ij = ciδ_i, j.
+- The identity matrix:(1, 0, 0; 0, 1, 0; 0, 0, 1) with a_ij = δ_(i, j), where δ_(i, j) is a function defined as δ_(i, j) = 1 if i = j and δ_(i, j) = 0 if i ≠ j.
+- A diagonal matrix:(a, 0, 0; 0, b, 0; 0, 0, c) with a_ij = ci δ_(i, j).
 - An upper triangular matrix:(a, b, c; 0, d, e; 0, 0, f) All the entries below the main diagonal are zero.
 - A lower triangular matrix:(a, 0, 0; b, c, 0; d, e, f) All the entries above the main diagonal are zero.
 - A triangular matrix is one that is either lower triangular or upper triangular.
@@ -314,7 +314,7 @@ Figure 4.3.2.3: A reflection through the xz plane
 
 Following the same logic we used for the rotation matrix, we can write the σ_xz transformation matrix as:
 
-σ_x, z = (1, 0, 0; 0, −1, 0; 0, 0, 1)
+σ_(x, z) = (1, 0, 0; 0, −1, 0; 0, 0, 1)
 
 This is true because
 
@@ -322,7 +322,7 @@ This is true because
 
 #### Exercise 4.3.2.1
 
-Find the transformation matrix of the identity (E) and the σ_y, z operations under the C_2v point group.
+Find the transformation matrix of the identity (E) and the σ_(y, z) operations under the C_2v point group.
 
 **Answer**
 
@@ -404,7 +404,7 @@ The irreducible representations add to form the reducible representation, Γ. Th
 - Parts of this page was adapted from Matrices (click here) (Symmetry Operators), contributed by Marcia Levitus, Associate Professor (Biodesign Institute) at Arizona State University.
 - Parts of this page were adapted from Reductions of Representations, contributed by
 
-Claire Vallance (University of Oxford)
+   Claire Vallance (University of Oxford)
 
 - Curated or created by Kathryn Haas
 
@@ -453,9 +453,9 @@ Th C_3v point group has three classes of operations: E, C3, and σ_v(xz). The de
 
 [Note: corrected; the source prints "the C_3v operation does not give" where this reads "the C3 operation does not give". The operation meant is the C3 rotation; C_3v is the point group.]
 
-x' = x cosθ + y sinθ
+x' = x cos θ + y sin θ
 
-y' = −x sinθ + y cosθ
+y' = −x sin θ + y cos θ
 
 For a C3 rotation counterclockwise through 120° (or (2π)/3):
 
@@ -508,8 +508,8 @@ The character table for C_3v is shown below.
 | E | doubly degenerate (2x2) |
 | T | triply degenerate (3x3) |
 | Subscripts and superscripts | meaning |
-| 1 | symmetric to σvor perpendicular to C2 |
-| 2 | anti-symmetric to σvor perpendicular to C2 |
+| 1 | symmetric to σv or perpendicular to C2 |
+| 2 | anti-symmetric to σv or perpendicular to C2 |
 | g | symmetric to inversion center |
 | u | anti-symmetric to inversion center |
 | ' | symmetric to σh |
@@ -530,4 +530,4 @@ Figure 4.3.3.2: Visual summary of the sections of a character table and their me
 - Curated or created by Kathryn Haas
 - Claire Vallance (University of Oxford)
 
-adapted from Character Tables (click here)
+   adapted from Character Tables (click here)

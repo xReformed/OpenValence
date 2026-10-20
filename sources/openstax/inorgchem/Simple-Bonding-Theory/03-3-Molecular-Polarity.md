@@ -17,7 +17,7 @@ When atoms in a molecule share electrons unequally, they create what is called a
 
 When two electrical charges, of opposite sign and equal magnitude, are separated by a distance, an electric dipole is established. The size of a dipole is measured by its dipole moment (μ). Dipole moment is measured in Debye units, which is equal to the distance between the charges multiplied by the charge (1 Debye equals 3.34 × 10^−30 C m). The dipole moment of a molecule can be calculated by Equation (1):
 
-μ⃗ = Σiqi r⃗i
+μ⃗ = Σi qi r⃗i
 
 where
 
@@ -57,9 +57,9 @@ The Debye characterizes the size of the dipole moment. When a proton and electro
 
 4.80 D is a key reference value and represents a pure charge of +1 and -1 separated by 100 pm. If the charge separation is increased then the dipole moment increases (linearly):
 
-- If the proton and electron are separated by 120 pm: μ = 120/100(4.80 D) = 5.76 D
-- If the proton and electron are separated by 150 pm: μ = 150/100(4.80 D) = 7.20 D
-- If the proton and electron are separated by 200 pm: μ = 200/100(4.80 D) = 9.60 D
+- If the proton and electron are separated by 120 pm: μ = (120/100)(4.80 D) = 5.76 D
+- If the proton and electron are separated by 150 pm: μ = (150/100)(4.80 D) = 7.20 D
+- If the proton and electron are separated by 200 pm: μ = (200/100)(4.80 D) = 9.60 D
 
 ### Example 3.3.1: Water
 
@@ -93,7 +93,7 @@ Although the C–Cl bonds are rather polar, the individual bond dipoles cancel o
 
 C-Cl, the key polar bond, is 178 pm. Measurement reveals 1.87 D. From this data, % ionic character can be computed. If this bond were 100% ionic (based on proton & electron),
 
-μ = 178/100(4.80 D)
+μ = (178/100)(4.80 D)
 
 = 8.54 D
 

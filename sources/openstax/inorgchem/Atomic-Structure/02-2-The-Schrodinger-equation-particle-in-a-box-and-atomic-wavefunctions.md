@@ -17,13 +17,13 @@ where Ĥ is the Hamiltonian operator, E is the energy of the electron, and ψ is
 
 The Hamiltonian operator is like a set of instructions that tells us what to do with the function that follows it. A Hamiltonian operator is a function over three-dimensional space that corresponds to the sum of kinetic energies and potential energies of the particles in a system, one electron and its nucleus in this case. The Hamiltonian operator for a one-electron system is:
 
-Ĥ = (−h^2)/(8π^2 me)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r),
+Ĥ = ((−h^2)/(8π^2 me))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r),
 
 where h is Planck's constant, me is the mass of the electron, e is the charge of the electron, r is the distance from the nucleus (r = √(x^2 + y^2 + z^2)), Z is the charge of the nucleus, and 4πε0 is the permittivity of a vacuum.
 
 ### Kinetic Energy
 
-The first part of the Hamiltonian written above, (−h^2)/(8π^2 me)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) describes the kinetic energy of the electron. This is the energy due to motion of the electron.
+The first part of the Hamiltonian written above, ((−h^2)/(8π^2 me))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) describes the kinetic energy of the electron. This is the energy due to motion of the electron.
 
 ### Potential energy
 
@@ -39,9 +39,9 @@ The potential energy depends on the attractive electrostatic force between the e
 
 In simple terms, the wavefunction (ψ) of an electron describes the electron's position in space, relative to the nucleus. The square of the ψ describes an atomic orbital. We can't define the position too exactly because we would violate the Heisenberg Uncertainty principle, but we can define its wave. A simple example of a ψ is described in the next section: Particle in a Box. Here, we will describe the ψ in general terms. Generally, in a one-electron atom, the electron ψ is defined by the wave's distance from the nucleus and its angle with respect to the x, y, and z axes of the atom's Cartesian coordinates (the nucleus is at the origin). The general form of the (ψ) for an electron in a hydrogen atom can be written as follows:
 
-ψ_n, l, ml = R_n, l(r) × Y_l, ml(θ, φ)
+ψ_(n, l, ml) = R_(n, l)(r) × Y_(l, ml)(θ, φ)
 
-[Note: corrected; the source prints "R_n, l(r) + Y_l, ml(θ, φ)" where this reads "R_n, l(r) × Y_l, ml(θ, φ)". The wavefunction is the product of its radial and angular parts, as the equation in 2.2.2 gives.]
+[Note: corrected; the source prints "R_(n, l)(r) + Y_(l, ml)(θ, φ)" where this reads "R_(n, l)(r) × Y_(l, ml)(θ, φ)". The wavefunction is the product of its radial and angular parts, as the equation in 2.2.2 gives.]
 
 ### Quantum Numbers define ψ
 
@@ -68,8 +68,8 @@ There are some requirements for a physically realistic and meaningful solution f
 
 1. There is only one possible value for ψ for any set of the three quantum numbers n, l, ml.
 2. The ψ approaches zero as r approaches infinity, and so ψ^2 also approaches zero as r → ∞.
-3. The wavefunction must be normalized. In other words, the total probability of finding the electron in all of space must be 1. ∫_all space ψAψA^*dτ = 1
-4. Any two orbitals must not occupy the same space. In other words, any two orbitals in an atom are orthogonal. If ψA and ψB are wavefunctions for different orbitals in the same atom, ∫_all space ψAψB^*dτ = 0
+3. The wavefunction must be normalized. In other words, the total probability of finding the electron in all of space must be 1. ∫_(all space) ψA ψA^*dτ = 1
+4. Any two orbitals must not occupy the same space. In other words, any two orbitals in an atom are orthogonal. If ψA and ψB are wavefunctions for different orbitals in the same atom, ∫_(all space) ψA ψB^*dτ = 0
 5. The probability of finding the electron anywhere in infinite space must be defined. This means that the wave functions and their first derivatives must be continuous (i.e. not change abruptly from one point to the next).
 
 ## Awesome Sources for further reading
@@ -96,11 +96,11 @@ The Schrödinger Equation (from equation 2.2.1): Ĥψ = Eψ
 
 The Hamiltonian in three dimensions (from equation 2.2.2):
 
-Ĥ = (−h^2)/(8π^2 me)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r)
+Ĥ = ((−h^2)/(8π^2 me))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r)
 
 In the particle in a box model, there is only one dimension, x. Because the y and z values are zero, we can drop y and z out of our Hamiltonian equation. And, since V = 0 inside the box, we can drop the whole part of the Hamiltonian equation that describes the potential energy ((−Ze^2)/(4πε0 r)). This leaves us with a much simplified Hamiltonian operator, which we can then use to write the Schrödinger wave equation for a particle moving in one dimension. One last thing we'll do is use a more general value m for the mass of the particle, rather than me that specifically represents the mass of an electron. The Schrödinger equation for a particle-wave in a one-dimensional box is:
 
-(−h^2)/(8π^2 m)((∂^2ψ(x))/(∂x^2)) = Eψ
+((−h^2)/(8π^2 m))((∂^2ψ(x))/(∂x^2)) = Eψ
 
 #### Exercise 2.2.1.1
 
@@ -110,19 +110,19 @@ Follow the steps that were described in the last paragraph to find Equation (1DS
 
 Here is the Hamitlonian Equation for in three dimensions.
 
-Ĥ = (−h^2)/(8π^2 m)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r)
+Ĥ = ((−h^2)/(8π^2 m))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) − Ze^2/(4πε0 r)
 
-There are two parts to this equation: the kinetic energy contribution and the potential energy contribution. While the first part of this expression, (−h^2)/(8π^2 m)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)), is the kinetic energy contribution, the second part of the expression, −Ze^2/(4πε0 r), is the potential energy (V) contribution.
+There are two parts to this equation: the kinetic energy contribution and the potential energy contribution. While the first part of this expression, ((−h^2)/(8π^2 m))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)), is the kinetic energy contribution, the second part of the expression, −Ze^2/(4πε0 r), is the potential energy (V) contribution.
 
 (1) Simplify the expression for kinetic energy
 
 Your particle-wave is moving in only one dimension. We can arbitrarily choose the dimension x. This means that x is a variable and will have some value from 0 to a. On the other hand, the particle does not move in the other two dimensions, y and z. You can assign the position of the particle along x and y axes as zero or you can just understand that they do not exist in any significant capacity in our 1-D space. Either way, you can just drop them out of the kinetic energy part of the Hamiltonian, as so:
 
-When y = z = 0 and the particle-wave only exists/moves in the x dimension, (−h^2)/(8π^2 m)((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) = (−h^2)/(8π^2 m)((∂^2)/(∂x^2))
+When y = z = 0 and the particle-wave only exists/moves in the x dimension, ((−h^2)/(8π^2 m))((∂^2)/(∂x^2) + (∂^2)/(∂y^2) + (∂^2)/(∂z^2)) = ((−h^2)/(8π^2 m))((∂^2)/(∂x^2))
 
 And the overall Hamiltonian is simplified:
 
-Ĥ = (−h^2)/(8π^2 m)((∂^2)/(∂x^2)) − Ze^2/(4πε0 r)
+Ĥ = ((−h^2)/(8π^2 m))((∂^2)/(∂x^2)) − Ze^2/(4πε0 r)
 
 (2) Simplify the expression for potential energy (V).
 
@@ -130,7 +130,7 @@ The particle's potential energy inside the box is zero (V = 0). Therefore, V = �
 
 The simplified Hamiltonian is now:
 
-Ĥ = (−h^2)/(8π^2 m)((∂^2)/(∂x^2))
+Ĥ = ((−h^2)/(8π^2 m))((∂^2)/(∂x^2))
 
 (3) Substitute the simplified Hamiltonian into the Schrödinger Equation.
 
@@ -138,7 +138,7 @@ The Schrödinger is: Ĥψ = Eψ
 
 When the simplified Hamiltonian is substituted into this equation, the result is the 1-D Schrödinger Equation (1DSchr).
 
-((−h^2)/(8π^2 m)((∂^2ψ(x))/(∂x^2))) = Eψ
+(((−h^2)/(8π^2 m))((∂^2ψ(x))/(∂x^2))) = Eψ
 
 ### The wavefunction of a one-dimensional wave
 
@@ -150,9 +150,9 @@ Let's dissect Equation (1DSchr). Here it is again for reference:
 
 The expression (−h^2)/(8π^2 me) is just a negative constant. This negative constant is multiplied by the second derivative of the wavefunction in the expression above. And E is a constant multiplied by that same function. We can rearrange this equation as follows:
 
-(∂^2ψ(x))/(∂x^2) = ((−8π^2 meE)/h^2)ψ = −Cψ
+(∂^2ψ(x))/(∂x^2) = ((−8π^2 me E)/h^2)ψ = −Cψ
 
-where C is just the constant; C = (8π^2 meE)/h^2
+where C is just the constant; C = (8π^2 me E)/h^2
 
 To an expert in the mathematical field of Differential Equations, this expression (1DSchr) follows a familiar pattern that makes it easy to translate. If you're not an expert in differential equations, that is OK; you'll just have to bear with this while things get a little "hand-wavy" and try Exercise 2.2.1.2 to prove it to yourself that the following "hand waviness" is true. An expert in differential equations could tell you that when the second derivative of a function is equal to a negative constant times that same function, the function can be written in terms of sin and cos, as shown in Equation (wf1) (that was the hand-wavy part...see, not so bad):
 
@@ -164,7 +164,7 @@ A, B, r, and s are constants in Equation (wf1). This expression is useful becaus
 
 If we substitute expression (wf1) into Equation (1DSchr) and solve for r and s, we find the expressions below.
 
-r = s = √(2 meE)((2π)/h)
+r = s = √(2 me E)((2π)/h)
 
 This shows us that r and s are equal and constant; we know the values for π, h, and me, and we can solve for the constant E.
 
@@ -176,9 +176,9 @@ To do this problem, you'll also need to know the basic differentiation rules of 
 
 Differentiation Rules for sin and cos:
 
-d/dx(sin(rx)) = r cos(rx), where r is a constant.
+(d/dx)(sin(rx)) = r cos(rx), where r is a constant.
 
-d/dx(cos(rx)) = −r sin(rx), where r is a constant.
+(d/dx)(cos(rx)) = −r sin(rx), where r is a constant.
 
 **Answer**
 
@@ -220,9 +220,9 @@ Although it is difficult to explain the derivation of the expression ψ = A sin(
 
 *Complete Exercise 2.2.1.2 before attempting this one.
 
-Derive the expression for r below (from Equation (rs)) using the 1-D wavefunction ((wf1): ψ = A sin(rx) + B cos(sx)) and the 1-D Schrödinger equation ((1DSchr): ((−h^2)/(8π^2 me)((∂^2ψ(x))/(∂x^2)) = Eψ)).
+Derive the expression for r below (from Equation (rs)) using the 1-D wavefunction ((wf1): ψ = A sin(rx) + B cos(sx)) and the 1-D Schrödinger equation ((1DSchr): (((−h^2)/(8π^2 me))((∂^2ψ(x))/(∂x^2)) = Eψ)).
 
-r = (2π)/h√(2 meE)
+r = ((2π)/h)√(2 me E)
 
 **Answer**
 
@@ -232,21 +232,21 @@ The steps below could be carried out in a different sequence:
 
 Let's move all constants to the right side of (1DSchr) so that we arrive at the expression that is shown in part of Equation (Schrx) .
 
-(∂^2ψ(x))/(∂x^2) = ((−8π^2 meE)/h^2)ψ
+(∂^2ψ(x))/(∂x^2) = ((−8π^2 me E)/h^2)ψ
 
 (2) Take the second derivative of ψ, which we found in Exercise 2.2.1.2.
 
-(∂^2ψ(x))/(∂x^2) = −r^2(A sin(rx) + B cos(sx)) = ((−8π^2 meE)/h^2)ψ
+(∂^2ψ(x))/(∂x^2) = −r^2(A sin(rx) + B cos(sx)) = ((−8π^2 me E)/h^2)ψ
 
 And since ψ = A sin(rx) + B cos(sx), we can simplify this by dividing both sides by ψ (or by A sin(rx) + B cos(sx)).
 
 **recall that s = r. So, you could have substituted r for s in the expression above, and you'd still be on the right track.
 
-−r^2 = (−8π^2 meE)/h^2
+−r^2 = (−8π^2 me E)/h^2
 
 (3) Solve for r (*we already showed r = s in the Exercise 2.2.1.2).
 
-r = √((8π^2 meE)/h^2) = (2π)/h√(2 meE)
+r = √((8π^2 me E)/h^2) = ((2π)/h)√(2 me E)
 
 #### What are A and B?
 
@@ -284,7 +284,7 @@ and substitute the value r = (nπ)/a into Equation (wf2) to get:
 
 ψ = A sin((nπx)/a)
 
-Recall that the square of the wavefunction (ψ^2) gives the probability of finding the electron anywhere in space. In our model, the probability of finding the particle-wave inside the box is unity (it is 1). Mathematically, this is the normalizing requirement (expressed as ∫ψAψA^*dτ = 1), which can be solved to find the value of A.
+Recall that the square of the wavefunction (ψ^2) gives the probability of finding the electron anywhere in space. In our model, the probability of finding the particle-wave inside the box is unity (it is 1). Mathematically, this is the normalizing requirement (expressed as ∫ψA ψA^*dτ = 1), which can be solved to find the value of A.
 
 A = √(2/a)
 
@@ -397,9 +397,9 @@ Table 2.2.2.1. Quantum Numbers
 
 ### 1-Electron Wavefunctions (Atomic orbitals)
 
-One simplified representation of the three-dimensional wavefunction is shown below. This representation breaks the wavefunction into two parts: the radial contribution (R_n, l(r)) and the angular contribution (Y_l, ml(θ, φ)).
+One simplified representation of the three-dimensional wavefunction is shown below. This representation breaks the wavefunction into two parts: the radial contribution (R_(n, l)(r)) and the angular contribution (Y_(l, ml)(θ, φ)).
 
-ψ_(n, l, ml) = R_n, l(r) × Y_l, ml(θ, φ)
+ψ_(n, l, ml) = R_(n, l)(r) × Y_(l, ml)(θ, φ)
 
 Allowed Energies
 
@@ -458,36 +458,36 @@ Hydrogenic atoms are atoms or ions that contain only one electron. H, He^+, and 
 
 #### Radial and Angular contributions to the wavefunction:
 
-##### Radial contribution, R_n, l(r)
+##### Radial contribution, R_(n, l)(r)
 
-The radial part of the wavefunction, R_n, l(r) gives the radial variation of ψ. In other words, R_n, l(r) defines how the wavefunction depends on the distance of the electron from the nucleus (the radius). The R_n, l(r) parts of the wavefunction for a hydrogenic atom are listed in Table 2.2.2.2, and they are plotted in Figure 2.2.2.1. Notice that the R_n, l(r) of all s-orbitals (solid lines) reaches a maximum at r = 0. This is unique to the s-orbitals' R_n, l(r). The R_n, l(r) of p- and d-orbitals orbitals approaches zero as r approaches zero. This has important consequences for how closely an electron in these orbitals can approach the nucleus.
+The radial part of the wavefunction, R_(n, l)(r) gives the radial variation of ψ. In other words, R_(n, l)(r) defines how the wavefunction depends on the distance of the electron from the nucleus (the radius). The R_(n, l)(r) parts of the wavefunction for a hydrogenic atom are listed in Table 2.2.2.2, and they are plotted in Figure 2.2.2.1. Notice that the R_(n, l)(r) of all s-orbitals (solid lines) reaches a maximum at r = 0. This is unique to the s-orbitals' R_(n, l)(r). The R_(n, l)(r) of p- and d-orbitals orbitals approaches zero as r approaches zero. This has important consequences for how closely an electron in these orbitals can approach the nucleus.
 
-Figure 2.2.2.1: Plots of the radial wavefunction, R_n, l(r), for the first three shells. The wavefunctions are plotted relative to r/(a0), where a0 = 52.9 pm = 0.529Å is the Bohr Radius (the radius of a hydrogen 1s orbital). The expressions for these radial wavefunctions (R_n, l(r)) are shown in Table 2.2.2.2. (Kathryn Haas; CC-NC-BY-SA)
+Figure 2.2.2.1: Plots of the radial wavefunction, R_(n, l)(r), for the first three shells. The wavefunctions are plotted relative to r/(a0), where a0 = 52.9 pm = 0.529Å is the Bohr Radius (the radius of a hydrogen 1s orbital). The expressions for these radial wavefunctions (R_(n, l)(r)) are shown in Table 2.2.2.2. (Kathryn Haas; CC-NC-BY-SA)
 
 Table 2.2.2.2. Radial wavefunctions (R(r)) for the first three shells of a hydrogen atom. Z is the nuclear charge, and a0 = 52.9 pm = 0.529Å is the Bohr radius (the radius of a hydrogen 1s orbital). For the H atom, Z = 1 (the nuclear charge of hydrogen). Plotting of the functions can be simplified if we set a0 = 1 and plot the functions with respect to r/a0, which was done to find the plots shown in Figure 2.2.2.1.
 
-| Orbital | n | l | R_n, l(r) |
+| Orbital | n | l | R_(n, l)(r) |
 | --- | --- | --- | --- |
 | 1s | 1 | 0 | 2[Z/(a0)]^(3/2)e^(−Zr/a0) |
 | 2s | 2 | 0 | [Z/(2a0)]^(3/2)(2 − Zr/(a0))e^(−Zr/2a0) |
-| 2p | 2 | 1 | 1/(√3)[Z/(2a0)]^(3/2)(Zr/(a0))e^(−Zr/2a0) |
-| 3s | 3 | 0 | 2/27[Z/(3a0)]^(3/2)(27 − 18 Zr/(a0) + 2(Zr/(a0))^2)e^(−Zr/3a0) |
-| 3p | 3 | 1 | 1/(81√3)[(2Z)/(a0)]^(3/2)(6 − Zr/(a0))(Zr/(a0))e^(−Zr/3a0) |
-| 3d | 3 | 2 | 1/(81√15)[(2Z)/(a0)]^(3/2)(Zr/(a0))^2 e^(−Zr/3a0) |
+| 2p | 2 | 1 | (1/(√3))[Z/(2a0)]^(3/2)(Zr/(a0))e^(−Zr/2a0) |
+| 3s | 3 | 0 | (2/27)[Z/(3a0)]^(3/2)(27 − 18 Zr/(a0) + 2(Zr/(a0))^2)e^(−Zr/3a0) |
+| 3p | 3 | 1 | (1/(81√3))[(2Z)/(a0)]^(3/2)(6 − Zr/(a0))(Zr/(a0))e^(−Zr/3a0) |
+| 3d | 3 | 2 | (1/(81√15))[(2Z)/(a0)]^(3/2)(Zr/(a0))^2 e^(−Zr/3a0) |
 
-[Note: corrected; the source prints "| 2s | 2 | 0 | 2[Z/(2a0)]" where this reads "| 2s | 2 | 0 | [Z/(2a0)]"; the source prints "| 2p | 2 | 1 | 1/(√3)[Z/(3a0)]" where this reads "| 2p | 2 | 1 | 1/(√3)[Z/(2a0)]"; the source prints "(27 − 18 Zr/(a0) − 2(Zr/(a0))^2)" where this reads "(27 − 18 Zr/(a0) + 2(Zr/(a0))^2)". These are the standard hydrogen-like radial functions. As printed, the 2s function has an extra factor of 2, the 2p function has 3a0 for 2a0, and the 3s polynomial has a minus sign before its squared term; none of the three is normalized, and the 3s function would have one radial node instead of the two the table of nodes below gives.]
+[Note: corrected; the source prints "| 2s | 2 | 0 | 2[Z/(2a0)]" where this reads "| 2s | 2 | 0 | [Z/(2a0)]"; the source prints "| 2p | 2 | 1 | (1/(√3))[Z/(3a0)]" where this reads "| 2p | 2 | 1 | (1/(√3))[Z/(2a0)]"; the source prints "(27 − 18 Zr/(a0) − 2(Zr/(a0))^2)" where this reads "(27 − 18 Zr/(a0) + 2(Zr/(a0))^2)". These are the standard hydrogen-like radial functions. As printed, the 2s function has an extra factor of 2, the 2p function has 3a0 for 2a0, and the 3s polynomial has a minus sign before its squared term; none of the three is normalized, and the 3s function would have one radial node instead of the two the table of nodes below gives.]
 
-#### Radial probability function, 4πr^2(R_n, l(r))^2
+#### Radial probability function, 4πr^2(R_(n, l)(r))^2
 
-Just like in the particle-in-a-box model, the square of the wavefunction is proportional to the probability of finding a particle (electron) at some point in space. The square of the radial part of the wavefunction is called the radial distribution function 4πr^2(R_n, l(r))^2, and it describes the probability of locating the electron at some distance r away from the nucleus. When we normalize the probability functions by dividing the function by its integral over all space, we get the plots shown in Figure 2.2.2.2. The normalized probability functions are compared to the original radial part of the wavefunctions in Figure 2.2.2.3. The most probable distance for finding an electron is shown by the maximum value of the function. For an electron in the 1s orbital of H, the most probable distance from the nucleus occurs at r = 1a0. This is the Bohr Radius, and it has a value of a0 = 52.9 pm = 0.529Å. It is convenient to plot the functions of the hydrogen atomic orbitals relative to the size of its smallest orbital, the 1s orbital; this is the reason we plot R_n, l(r) and 4πr^2(R_n, l(r))^2 relative to r/(a0).
+Just like in the particle-in-a-box model, the square of the wavefunction is proportional to the probability of finding a particle (electron) at some point in space. The square of the radial part of the wavefunction is called the radial distribution function 4πr^2(R_(n, l)(r))^2, and it describes the probability of locating the electron at some distance r away from the nucleus. When we normalize the probability functions by dividing the function by its integral over all space, we get the plots shown in Figure 2.2.2.2. The normalized probability functions are compared to the original radial part of the wavefunctions in Figure 2.2.2.3. The most probable distance for finding an electron is shown by the maximum value of the function. For an electron in the 1s orbital of H, the most probable distance from the nucleus occurs at r = 1a0. This is the Bohr Radius, and it has a value of a0 = 52.9 pm = 0.529Å. It is convenient to plot the functions of the hydrogen atomic orbitals relative to the size of its smallest orbital, the 1s orbital; this is the reason we plot R_(n, l)(r) and 4πr^2(R_(n, l)(r))^2 relative to r/(a0).
 
-Figure 2.2.2.2: Plots of the normalized radial probability functions for the first three shells. The radial wavefunctions (R_n, l(r)) are shown in Table 2.2.2.2. (Kathryn Haas; CC-NC-BY-SA)
+Figure 2.2.2.2: Plots of the normalized radial probability functions for the first three shells. The radial wavefunctions (R_(n, l)(r)) are shown in Table 2.2.2.2. (Kathryn Haas; CC-NC-BY-SA)
 
 Figure 2.2.2.2: Plots of the normalized radial probability function for each orbital in the first three shells (shaded curves). The radial wavefunctions are also shown (Table 2.2.2.2). The y-axis on the left of each plot corresponds to the radial wavefunction (line); the y-axis on the right of each plot corresponds to the radial probability function (shaded). (Kathryn Haas; CC-NC-BY-SA)
 
 #### Radial nodes
 
-From the discussion of the 1-dimensional particle in a box, we learned that nodes exist where ψ = 0. In the case of the 3-dimensional wavefunction, there are two different types of nodes: radial nodes and angular nodes. Radial nodes occur where the radial part of the wavefunction is zero (R(x) = 0). These are easy to find by plotting the radial part of the wavefunction and finding where the radial part of the wavefunction (and the radial probability function) is zero (where R_n, l(r) = 0) and where 4πr^2(R_n, l(r))^2 = 0. These nodes are spherical in shape and depend on the energy level and subshell (the values of n and l). The number of radial nodes is n − l − 1. An example of a radial node is the single node that occurs in the 2s orbital (2 − 0 − 1 = 1 node). In contrast, the 1s orbital has zero radial nodes (1 − 0 − 1 = 0 nodes). Where there is a node, there is zero probability of finding an electron.
+From the discussion of the 1-dimensional particle in a box, we learned that nodes exist where ψ = 0. In the case of the 3-dimensional wavefunction, there are two different types of nodes: radial nodes and angular nodes. Radial nodes occur where the radial part of the wavefunction is zero (R(x) = 0). These are easy to find by plotting the radial part of the wavefunction and finding where the radial part of the wavefunction (and the radial probability function) is zero (where R_(n, l)(r) = 0) and where 4πr^2(R_(n, l)(r))^2 = 0. These nodes are spherical in shape and depend on the energy level and subshell (the values of n and l). The number of radial nodes is n − l − 1. An example of a radial node is the single node that occurs in the 2s orbital (2 − 0 − 1 = 1 node). In contrast, the 1s orbital has zero radial nodes (1 − 0 − 1 = 0 nodes). Where there is a node, there is zero probability of finding an electron.
 
 Figure 2.2.2.3: Visualization of the 1s and 2s atomic orbitals. Each orbital is shown as both an electron probability density plot and a contour plot above its wavefunction and probability density function. The 1s orbital has zero radial nodes. The 2s orbital has one radial node where its wavefunction changes sign and its radial probability function is zero. (Kathryn Haas; CC-BY-SA)
 
@@ -537,52 +537,52 @@ f-orbital
 
 Draw a rough plot of the following:
 
-a. The radial wavefunction, R_n, l(r) and the probability density function, 4πr^2(R_n, l(r))^2, for the 1s orbital.
-b. The radial wavefunction, R_n, l(r) and the probability density function, 4πr^2(R_n, l(r))^2, for the 4s orbital.
+a. The radial wavefunction, R_(n, l)(r) and the probability density function, 4πr^2(R_(n, l)(r))^2, for the 1s orbital.
+b. The radial wavefunction, R_(n, l)(r) and the probability density function, 4πr^2(R_(n, l)(r))^2, for the 4s orbital.
 
 Answer, 1s
 
-The 1s orbital's R_n, l(r) reaches a maximum near the origin and approaches zero far from the nucleus. The 4πr^2(R_n, l(r))^2 approaches zero at the origin, has a maximum intensity at the Bohr radius, and approaches zero far from the nucleus (its boundary surface).
+The 1s orbital's R_(n, l)(r) reaches a maximum near the origin and approaches zero far from the nucleus. The 4πr^2(R_(n, l)(r))^2 approaches zero at the origin, has a maximum intensity at the Bohr radius, and approaches zero far from the nucleus (its boundary surface).
 
 [Image not described in source]
 
 Answer, 4s
 
-Like all s orbitals, the 4s orbital's R_n, l(r) reaches a maximum near X=0, but it would be less intense than the function of the 1s, 2s, and 3s orbitals. It should have three radial nodes and so its wavefunction would change sign three times. This would give four regions of electron density in the probability function while the function would approach zero (boundary surface) far from the nucleus.
+Like all s orbitals, the 4s orbital's R_(n, l)(r) reaches a maximum near X=0, but it would be less intense than the function of the 1s, 2s, and 3s orbitals. It should have three radial nodes and so its wavefunction would change sign three times. This would give four regions of electron density in the probability function while the function would approach zero (boundary surface) far from the nucleus.
 
 [Image not described in source]
 
-##### Angular contribution, Y_l, ml(θ, φ), and angular probability function, (Y_l, ml(θ, φ))^2
+##### Angular contribution, Y_(l, ml)(θ, φ), and angular probability function, (Y_(l, ml)(θ, φ))^2
 
 [Image not described in source]
 
-The angular contribution to the wavefunction, Y_l, ml(θ, φ), describes the wavefunction's shape, or the angle with respect to a coordinate system. To describe the direction in space, we use spherical coordinates that tell us distance and orientation in 3-dimensional space. There are three spherical coordinates: r, φ, and θ. r is the radius, or the actual distance from the origin. φ and θ are angles. φ is measured from the positive x axis in the xy plane and may be between 0 and 2π. θ is measured from the positive z axis towards the xy plane and may be between 0 and π.
+The angular contribution to the wavefunction, Y_(l, ml)(θ, φ), describes the wavefunction's shape, or the angle with respect to a coordinate system. To describe the direction in space, we use spherical coordinates that tell us distance and orientation in 3-dimensional space. There are three spherical coordinates: r, φ, and θ. r is the radius, or the actual distance from the origin. φ and θ are angles. φ is measured from the positive x axis in the xy plane and may be between 0 and 2π. θ is measured from the positive z axis towards the xy plane and may be between 0 and π.
 
-Y_l, ml(θ, φ) = (1/(4π))^(1/2)y(θ, φ)
+Y_(l, ml)(θ, φ) = (1/(4π))^(1/2)y(θ, φ)
 
-Y_l, ml(θ, φ), is slightly more difficult to describe than the radial contribution was. This is partly because Y_l, ml(θ, φ) contains imaginary numbers, which have no real, physical meaning. However, the angular part of the wavefunction becomes more "real" when you square it to get angular probability density, a more tangible concept described as the shapes of orbitals.
+Y_(l, ml)(θ, φ), is slightly more difficult to describe than the radial contribution was. This is partly because Y_(l, ml)(θ, φ) contains imaginary numbers, which have no real, physical meaning. However, the angular part of the wavefunction becomes more "real" when you square it to get angular probability density, a more tangible concept described as the shapes of orbitals.
 
-The values of θ, φ, and y(θ, φ) for orbitals in the hydrogen atom are listed in Table 2.2.2.3. But Y_l, ml(θ, φ) is only a mathematical function and has no real physical meaning. The square of the angular wavefunction, Y_l, ml(θ, φ)^2, gives the probability of finding the electron at a point in space on a ray described by (φ, θ). Thus Y_l, ml(θ, φ)^2 describes the shape of the orbital.
+The values of θ, φ, and y(θ, φ) for orbitals in the hydrogen atom are listed in Table 2.2.2.3. But Y_(l, ml)(θ, φ) is only a mathematical function and has no real physical meaning. The square of the angular wavefunction, Y_(l, ml)(θ, φ)^2, gives the probability of finding the electron at a point in space on a ray described by (φ, θ). Thus Y_(l, ml)(θ, φ)^2 describes the shape of the orbital.
 
-[Note: corrected; the source prints "The square of the radial wavefunction, Y_l, ml" where this reads "The square of the angular wavefunction, Y_l, ml". Y_l, ml(θ, φ) is the angular part of the wavefunction.]
+[Note: corrected; the source prints "The square of the radial wavefunction, Y_(l, ml)" where this reads "The square of the angular wavefunction, Y_(l, ml)". Y_(l, ml)(θ, φ) is the angular part of the wavefunction.]
 
 Table 2.2.2.3. Components of the angular wavefunction and the resulting orbital shapes. The plots in the two right hand columns were created using Desmos and Mathematica: specifically "Spherical Harmonics" from the Wolfram Demonstrations Project, http://demonstrations.wolfram.com/SphericalHarmonics/ and "Visualizing Atomic Orbitals" demonstrations.wolfram.com/Vi...tomicOrbitals/.
 
 | subshell | ml (orbital) | θ | φ | Plots of θ^2 | orbital shapes |
 | --- | --- | --- | --- | --- | --- |
 | l = 0, s | ml = 0 | 1/(√2) | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
-| l = 1, p | ml = 0 | (√6)/2 cosθ | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
-| l = 1, p | ml = +1 | (√3)/2 sinθ | (1/(√(2π)))e^iφ | [Image not described in source] | [Image not described in source] |
-| l = 1, p | ml = −1 | (√3)/2 sinθ | (1/(√(2π)))e^−iφ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | 0 | (√10)/4(3 cos^2θ − 1) | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = +1 | (√15)/2 sinθ cosθ | (1/(√(2π)))e^iφ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = −1 | (√15)/2 sinθ cosθ | (1/(√(2π)))e^−iφ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = +2 | (√15)/4 sin^2θ | (1/(√(2π)))e^i2φ | [Image not described in source] | [Image not described in source] |
-| l = 2, d | ml = −2 | (√15)/4 sin^2θ | (1/(√(2π)))e^−i2φ | [Image not described in source] | [Image not described in source] |
+| l = 1, p | ml = 0 | ((√6)/2) cos θ | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
+| l = 1, p | ml = +1 | ((√3)/2) sin θ | (1/(√(2π)))e^(iφ) | [Image not described in source] | [Image not described in source] |
+| l = 1, p | ml = −1 | ((√3)/2) sin θ | (1/(√(2π)))e^(−iφ) | [Image not described in source] | [Image not described in source] |
+| l = 2, d | 0 | ((√10)/4)(3 cos^2θ − 1) | 1/(√(2π)) | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = +1 | ((√15)/2) sin θ cos θ | (1/(√(2π)))e^(iφ) | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = −1 | ((√15)/2) sin θ cos θ | (1/(√(2π)))e^(−iφ) | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = +2 | ((√15)/4) sin^2θ | (1/(√(2π)))e^(i2φ) | [Image not described in source] | [Image not described in source] |
+| l = 2, d | ml = −2 | ((√15)/4) sin^2θ | (1/(√(2π)))e^(−i2φ) | [Image not described in source] | [Image not described in source] |
 
 #### Angular nodes
 
-Angular nodes exist where (Y_l, ml(θ, φ))^2 = 0. These nodes are planar in shape, and they depend on the value of l. The number of angular nodes in any orbital is equal to l. This means that s-orbitals (l = 0) have zero angular nodes, p-orbitals (l = 1) have one angular node, d-orbitals (l = 2) have two angular nodes, and so on. Planar nodes can be flat planes (like the nodes in all p orbitals) or they can have a conical shape, like the two angular nodes in the d_Z^2 orbital. Angular nodes in some p and d orbitals are shown in Figure 2.2.2.4.
+Angular nodes exist where (Y_(l, ml)(θ, φ))^2 = 0. These nodes are planar in shape, and they depend on the value of l. The number of angular nodes in any orbital is equal to l. This means that s-orbitals (l = 0) have zero angular nodes, p-orbitals (l = 1) have one angular node, d-orbitals (l = 2) have two angular nodes, and so on. Planar nodes can be flat planes (like the nodes in all p orbitals) or they can have a conical shape, like the two angular nodes in the d_(Z^2) orbital. Angular nodes in some p and d orbitals are shown in Figure 2.2.2.4.
 
 Figure 2.2.2.4: The angular nodes in p-orbitals and d-orbitals are shown. Every p orbital has one angular node, and every d orbital has two angular nodes. The number of angular nodes in any orbital is equal to the value of the quantum number, l. (CC BY-NC-SA; anonymous by request)
 
@@ -798,7 +798,7 @@ Calculate Z* for a 3d-electron in a zinc (Zn) atom.
 
 **Answer**
 
-Write out the relevant orbitals: (1s)(2s,2p)(3s,3p)(3d) (4s)
+Write out the relevant orbitals: (1s)(2s,2p)(3s,3p)(3d) ~~(4s)~~
 
 Notice that although 4s is fully occupied, we don't include it because in Zn, 4s is higher in energy than 3d. Therefore, 4s is to the right of the d electrons we are considering. The electron-of-interest is in 3d, so the other nine electrons in 3d each contribute 0.35 to the value of S. The other 18 electrons each contribute 1 to the value of S.
 
@@ -818,7 +818,7 @@ Figure 2.2.4.4: This chart shows Z* values calculated by Clementi et al. in 1963
 
 When valence electrons experience less nuclear charge than core electrons, different electrons experience different magnitudes of attraction to the nucleus. A modified form of Coulomb's Law is written below, where e is the charge of an electron, Z* is the effective nuclear charge experienced by that electron, and r is the radius (distance of the electron from the nucleus).
 
-F_eff = k(Z*e^2)/r^2
+F_eff = k (Z*e^2)/r^2
 
 This formula suggests that if we can estimate Z*, then we can predict the attractive force experienced by, and the energy of, an electron in a multi-electron atom (ex. Li).
 

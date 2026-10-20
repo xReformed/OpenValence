@@ -143,41 +143,41 @@ The two R groups may be the same or different. Naming ethers is like the alterna
    b. [Image: A chain of two carbons with a carbonyl on the second carbon is attached to a chain of four carbons through an ether.]
 7. Name the molecule.
 
-[Image: A chain of two carbons is connected to a chain of three carbons through an ether.]
+   [Image: A chain of two carbons is connected to a chain of three carbons through an ether.]
 
 8. Name the molecule.
 
-[Image: A benzene is connected to a chain of two carbons through an ether.]
+   [Image: A benzene is connected to a chain of two carbons through an ether.]
 
 9. Give an alternate but acceptable name to the molecule in Exercise 3b.
 10. Give an alternate but acceptable name to the molecule in Exercise 4b.
 11. Complete this chemical reaction.
 
-[Image: Propanoic acid reacts with KOH.]
+   [Image: Propanoic acid reacts with KOH.]
 
 12. Complete this chemical reaction.
 
-[Image: A chain of four carbons with two methyl groups on the second carbon and a carbonyl and hydroxy group on the fourth carbon reacts with sodium hydroxide.]
+   [Image: A chain of four carbons with two methyl groups on the second carbon and a carbonyl and hydroxy group on the fourth carbon reacts with sodium hydroxide.]
 
 13. The drug known as aspirin has this molecular structure:
 
-[Image: Structure of aspirin.]
+   [Image: Structure of aspirin.]
 
-Identify the functional group(s) in this molecule.
+   Identify the functional group(s) in this molecule.
 
 14. The drug known as naproxen sodium is the sodium salt of this molecule:
 
-[Image: Structure of naproxen.]
+   [Image: Structure of naproxen.]
 
-(The extra H atoms are omitted for clarity.) Identify the functional group(s) in this molecule.
+   (The extra H atoms are omitted for clarity.) Identify the functional group(s) in this molecule.
 
 15. Identify the ester made by reacting these molecules.
 
-[Image: Propanoic acid reacts with propanol.]
+   [Image: Propanoic acid reacts with propanol.]
 
 16. Identify the ester made by reacting these molecules.
 
-[Image: Ethanoic acid reacts with butanol.]
+   [Image: Ethanoic acid reacts with butanol.]
 
 **Answers**
 

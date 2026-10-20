@@ -110,11 +110,11 @@ Figure 16.7.2: The DNA in our cells is a polymer of nucleotides, each of which i
 2. Must a monomer have a double bond to make a polymer? Give an example to illustrate your answer.
 3. Draw the polymer made from this monomer.
 
-[Image: CH2 double bonded to CH(C2H5).]
+   [Image: CH2 double bonded to CH(C2H5).]
 
 4. Draw the polymer made from this monomer.
 
-[Image: CHBr double bonded CHBr.]
+   [Image: CHBr double bonded CHBr.]
 
 5. What is the difference between an addition polymer and a condensation polymer?
 6. What is the difference between a condensation polymer and a copolymer?
@@ -122,11 +122,11 @@ Figure 16.7.2: The DNA in our cells is a polymer of nucleotides, each of which i
 8. List three uses of polymers.
 9. Draw the silicone made from this monomer.
 
-[Image: SiCH3H double bonded to SiCH3H.]
+   [Image: SiCH3H double bonded to SiCH3H.]
 
 10. Draw the silicone made from this monomer.
 
-[Image: Two silicone atoms double bonded together, each having two cyclopropane groups on them.]
+   [Image: Two silicone atoms double bonded together, each having two cyclopropane groups on them.]
 
 11. Explain how starch is a polymer.
 12. What is the difference between starch and cellulose?

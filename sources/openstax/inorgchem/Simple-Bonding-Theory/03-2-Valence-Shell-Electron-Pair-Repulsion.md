@@ -371,7 +371,7 @@ D. Describe the molecular geometry.
 
 1. A The central atom, P, has five valence electrons and each fluorine has seven valence electrons, so the Lewis structure of PF5 is
 
-[Image not described in source]
+   [Image not described in source]
 
 B There are five bonding groups about phosphorus. The structure that minimizes repulsions is a trigonal bipyramid.
 
@@ -383,15 +383,15 @@ D The PF5 molecule has five nuclei and no lone pairs of electrons, so its molecu
 
 - A The central atom, O, has six valence electrons, and each H atom contributes one valence electron. Subtracting one electron for the positive charge gives a total of eight valence electrons, so the Lewis electron structure is
 
-[Image not described in source]
+   [Image not described in source]
 
-B There are four electron groups around oxygen, three bonding pairs and one lone pair. Like NH3, repulsions are minimized by directing each hydrogen atom and the lone pair to the corners of a tetrahedron.
+   B There are four electron groups around oxygen, three bonding pairs and one lone pair. Like NH3, repulsions are minimized by directing each hydrogen atom and the lone pair to the corners of a tetrahedron.
 
-C With three bonding pairs and one lone pair, the structure is designated as AX3E and has a total of four electron pairs (three X and one E). We expect the LP–BP interactions to cause the bonding pair angles to deviate significantly from the angles of a perfect tetrahedron.
+   C With three bonding pairs and one lone pair, the structure is designated as AX3E and has a total of four electron pairs (three X and one E). We expect the LP–BP interactions to cause the bonding pair angles to deviate significantly from the angles of a perfect tetrahedron.
 
-D There are three nuclei and one lone pair, so the molecular geometry is trigonal pyramidal, in essence a tetrahedron missing a vertex. However, the H–O–H bond angles are less than the ideal angle of 109.5° because of LP–BP repulsions:
+   D There are three nuclei and one lone pair, so the molecular geometry is trigonal pyramidal, in essence a tetrahedron missing a vertex. However, the H–O–H bond angles are less than the ideal angle of 109.5° because of LP–BP repulsions:
 
-[Image not described in source]
+   [Image not described in source]
 
 #### Exercise 3.2.1.1
 
@@ -432,7 +432,7 @@ Use the strategy given in Example3.2.1.1.
 
 1. A Xenon contributes eight electrons and each fluorine seven valence electrons, so the Lewis electron structure is
 
-[Image not described in source]
+   [Image not described in source]
 
 B There are five electron groups around the central atom, two bonding pairs and three lone pairs. Repulsions are minimized by placing the groups in the corners of a trigonal bipyramid.
 
@@ -446,13 +446,13 @@ D With two nuclei about the central atom, the molecular geometry of XeF2 is line
 
 - A The tin atom donates 4 valence electrons and each chlorine atom donates 7 valence electrons. With 18 valence electrons, the Lewis electron structure is
 
-[Image not described in source]
+   [Image not described in source]
 
-B There are three electron groups around the central atom, two bonding groups and one lone pair of electrons. To minimize repulsions the three groups are initially placed at 120° angles from each other.
+   B There are three electron groups around the central atom, two bonding groups and one lone pair of electrons. To minimize repulsions the three groups are initially placed at 120° angles from each other.
 
-C From B we designate SnCl2 as AX2E. It has a total of three electron pairs, two X and one E. Because the lone pair of electrons occupies more space than the bonding pairs, we expect a decrease in the Cl–Sn–Cl bond angle due to increased LP–BP repulsions.
+   C From B we designate SnCl2 as AX2E. It has a total of three electron pairs, two X and one E. Because the lone pair of electrons occupies more space than the bonding pairs, we expect a decrease in the Cl–Sn–Cl bond angle due to increased LP–BP repulsions.
 
-D With two nuclei around the central atom and one lone pair of electrons, the molecular geometry of SnCl2 is bent, like SO2, but with a Cl–Sn–Cl bond angle of 95°. The molecular geometry can be described as a trigonal planar arrangement with one vertex missing.
+   D With two nuclei around the central atom and one lone pair of electrons, the molecular geometry of SnCl2 is bent, like SO2, but with a Cl–Sn–Cl bond angle of 95°. The molecular geometry can be described as a trigonal planar arrangement with one vertex missing.
 
 #### Exercise 3.2.1.2
 

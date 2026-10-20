@@ -51,15 +51,15 @@ A sample of radium has an activity of 16.0 mCi. If the half-life of radium is 1,
 
 **Solution**
 
-In this case we do not have an exact number of half-lives, so we need to use the more complicated equation ( Section 15.3) and solve for time. If the initial amount is represented by 16.0 mCi and the final amount is 5.6 mCi, we have
+In this case we do not have an exact number of half-lives, so we need to use the more complicated equation (Section 15.3) and solve for time. If the initial amount is represented by 16.0 mCi and the final amount is 5.6 mCi, we have
 
-[Note: corrected; the source prints "equation ( Section 15.2)" where this reads "equation ( Section 15.3)". The equation meant is the one in Section 15.3 (Half-Life); the source's section reference is off by one.]
+[Note: corrected; the source prints "equation (Section 15.2)" where this reads "equation (Section 15.3)". The equation meant is the one in Section 15.3 (Half-Life); the source's section reference is off by one.]
 
-5.6 mCi = (16.0 mCi)e^{−0.693 t/(1,600 y)}
+5.6 mCi = (16.0 mCi)e^{−0.693t/(1,600 y)}
 
 To solve, we divide both sides of the equation by 16.0 mCi to cancel the millicurie units:
 
-5.6/16.0 = e^{−0.693 t/(1,600y)}
+5.6/16.0 = e^{−0.693t/(1,600y)}
 
 By taking the natural logarithm of both sides; the natural logarithm cancels the exponential function. The natural logarithm of 5.6/16.0 is −1.050. So
 

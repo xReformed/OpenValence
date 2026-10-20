@@ -87,7 +87,7 @@ where ε0 is known as the permittivity of free space with the numerical value ε
 
 The total energy of the electron (the nucleus is assumed to be fixed in space at the origin) is the sum of kinetic and potential energies:
 
-E_total = p^2/(2 me) (kinetic energy) − Ze^2/(4πε0 r) (potential energy)
+E_total = (p^2/(2 me)) (kinetic energy) − (Ze^2/(4πε0 r)) (potential energy)
 
 The force on the electron is
 
@@ -97,25 +97,25 @@ and its magnitude is
 
 F = |F⃗| = Ze^2/(4πε0 r^3)|r| = Ze^2/(4πε0 r^2)
 
-since F⃗ = mea⃗, the magnitude, it follows that |F⃗| = me|a⃗|. If we assume that the orbit is circular, then the acceleration is purely centripetal, so
+since F⃗ = me a⃗, the magnitude, it follows that |F⃗| = me|a⃗|. If we assume that the orbit is circular, then the acceleration is purely centripetal, so
 
 |a| = v^2/r
 
 where v is the velocity of the electron. Equating force |F| to me|a|, we obtain
 
-Ze^2/(4πε0 r^2) = mev^2/r
+Ze^2/(4πε0 r^2) = me v^2/r
 
 or
 
-Ze^2/(4πε0) = mev^2 r
+Ze^2/(4πε0) = me v^2 r
 
 or
 
-(Ze^2 mer)/(4πε0) = (mevr)^2
+(Ze^2 me r)/(4πε0) = (me vr)^2
 
-The reason for writing the equation this way is that the quantity mevr is the classical orbital angular momentum of the electron. Bohr was familiar with Maxwell's theory of classical electromagnetism and knew that in a classical theory, the orbiting electron should radiate energy away and eventually collapse into the nucleus (Figure 1.8.1 ). He circumvented this problem by following Planck's idea underlying blackbody radiation and positing that the orbital angular momentum mevr of the electron could only take on specific values
+The reason for writing the equation this way is that the quantity me vr is the classical orbital angular momentum of the electron. Bohr was familiar with Maxwell's theory of classical electromagnetism and knew that in a classical theory, the orbiting electron should radiate energy away and eventually collapse into the nucleus (Figure 1.8.1 ). He circumvented this problem by following Planck's idea underlying blackbody radiation and positing that the orbital angular momentum me vr of the electron could only take on specific values
 
-mevr = nħ
+me vr = nħ
 
 with n = 1,2,3, ....
 
@@ -123,29 +123,29 @@ Note that the electron must be in motion, so n = 0 is not allowed.
 
 Substituting Equation (1.8.15) into the Equation (1.8.14), we find
 
-(Ze^2 mer)/(4πε0) = n^2(ħ)^2
+(Ze^2 me r)/(4πε0) = n^2(ħ)^2
 
 Equation (1.8.16) implies that orbits could only have certain allowed radii
 
-rn = ((4πε0ħ^2)/(Ze^2 me))n^2
+rn = ((4πε0 ħ^2)/(Ze^2 me))n^2
 
 = ((a0)/Z)n^2
 
 with n = 1,2,3, .... The collection of constants has been defined to be a0
 
-a0 = (4πε0ħ^2)/(e^2 me)
+a0 = (4πε0 ħ^2)/(e^2 me)
 
 a quantity that is known as the Bohr radius.
 
-We can also calculate the allowed momenta since mevr = nħ, and p = mev. Thus,
+We can also calculate the allowed momenta since me vr = nħ, and p = me v. Thus,
 
-pnrn = nħ
+pn rn = nħ
 
 pn = (nħ)/(rn)
 
 = (ħZ)/(a0 n)
 
-= (Ze^2 me)/(4πε0ħn)
+= (Ze^2 me)/(4πε0 ħn)
 
 From pn and rn, we can calculate the allowed energies from
 
@@ -161,7 +161,7 @@ We can redefine a new energy scale by defining the Rydberg as
 
 and this simplifies the allowed energies predicted by the Bohr model (Equation (1.8.20)) as
 
-En = −(2.18 × 10^−18)Z^2/n^2 J = −Z^2/n^2 Ry
+En = −(2.18 × 10^−18)(Z^2/n^2) J = −(Z^2/n^2) Ry
 
 Hence, the energy of the electron in an atom also is quantized. Equation (1.8.21) gives the energies of the electronic states of the hydrogen atom. It is very useful in analyzing spectra to represent these energies graphically in an energy-level diagram. An energy-level diagram has energy plotted on the vertical axis with a horizontal line drawn to locate each energy level (Figure 1.8.4 ).
 
@@ -178,7 +178,7 @@ Calculate a value for the Bohr radius using Equation (1.8.16) to check that this
 
 Starting from Equation (1.8.16) and solving for r:
 
-(Ze^2 mer)/(4πε0) = n^2ħ^2
+(Ze^2 me r)/(4πε0) = n^2ħ^2
 
 r = (4 n^2ħ^2πε0)/(Ze^2 me)
 
@@ -222,29 +222,29 @@ Graph showing a curve with data points, labeled on the x-axis as "Processing E" 
 
 [Note: the line after the caption is the image's alt text, which reads as machine-written and does not describe the image, which is a plot of orbit radius against n; the caption above describes it.]
 
-4πε0 = 1.113 × 10^−10C^2J^−1m^−1 and ħ = 1.054 × 10^−34Js, also knowing
+4πε0 = 1.113 × 10^−10 C^2 J^−1 m^−1 and ħ = 1.054 × 10^−34 Js, also knowing
 
-e = 1.602 × 10^−19C with
+e = 1.602 × 10^−19 C with
 
-me = 9.109 × 10^−31kg
+me = 9.109 × 10^−31 kg
 
 and Z is the nuclear charge, we use this equation directly. A simplification can be made by taking advantage of the fact that
 
-a0 = (4πε0ħ^2)/(e^2 me)
+a0 = (4πε0 ħ^2)/(e^2 me)
 
 resulting in
 
 rn = ((a0)/Z)n^2
 
-where a0 = 5.292 × 10^−11m which is the Bohr Radius.
+where a0 = 5.292 × 10^−11 m which is the Bohr Radius.
 
 Suppose we want to find the radius where n = 200.n^2 = 40000 so plugging in directly we have
 
-rn = ((5.292 × 10^−11))/((1))(40000)
+rn = (((5.292 × 10^−11))/((1)))(40000)
 
 = 2.117 × 10^−6 m
 
-for the radius of a hydrogen atom with an electron excited to the n = 200 state. The diameter is then 4.234 × 10^−6m.
+for the radius of a hydrogen atom with an electron excited to the n = 200 state. The diameter is then 4.234 × 10^−6 m.
 
 ## The Wave Argument for Quantization
 
@@ -277,13 +277,13 @@ E_nf = E_ni − hν
 
 or
 
-ν = (E_ni − E_nf)/h = (Z^2 e^4 me)/(8ε0^2 h^3)(1/(nf^2) − 1/(ni^2))
+ν = (E_ni − E_nf)/h = ((Z^2 e^4 me)/(8ε0^2 h^3))(1/(nf^2) − 1/(ni^2))
 
 We can now identify the Rydberg constant RH with the ratio of constants on the right hand side of Equation (1.8.23)
 
-RH = (mee^4)/(8ε0^2 h^3)
+RH = (me e^4)/(8ε0^2 h^3)
 
-[Note: as defined here from Equation (1.8.23), which gives a frequency, RH is in s^−1 (about 3.29 × 10^15 s^−1). The wavenumber form used in Sections 1.4 and 1.5, 109,737 cm^−1, is this divided by the speed of light: (mee^4)/(8ε0^2 h^3 c).]
+[Note: as defined here from Equation (1.8.23), which gives a frequency, RH is in s^−1 (about 3.29 × 10^15 s^−1). The wavenumber form used in Sections 1.4 and 1.5, 109,737 cm^−1, is this divided by the speed of light: (me e^4)/(8ε0^2 h^3 c).]
 
 Evaluating RH from the fundamental constants in this formula gives a value within 0.5% of that obtained experimentally from the hydrogen atom spectrum.
 
@@ -298,7 +298,7 @@ E_nf = E_ni + hν
 
 or
 
-ν = (E_nf − E_ni)/h = (Z^2 e^4 me)/(8ε0^2 h^3)(1/(ni^2) − 1/(nf^2))
+ν = (E_nf − E_ni)/h = ((Z^2 e^4 me)/(8ε0^2 h^3))(1/(ni^2) − 1/(nf^2))
 
 ### Exercise 1.8.3
 
@@ -315,9 +315,9 @@ E_photon = hν = E_ni − E_nf
 
 [Note: corrected; the source prints "E_photon = hν = E_nf − E_ni" where this reads "E_photon = hν = E_ni − E_nf". From E_nf = E_ni − hν, the photon carries away E_ni − E_nf, which is what the next line evaluates.]
 
-= (Z^2 e^4 me)/(8εo^2 h^2)(1/(nf^2) − 1/(ni^2))
+= ((Z^2 e^4 me)/(8εo^2 h^2))(1/(nf^2) − 1/(ni^2))
 
-= (e^4 me)/(8εo^2 h^2)(1/(1^2) − 1/(4^2))
+= ((e^4 me)/(8εo^2 h^2))(1/(1^2) − 1/(4^2))
 
 = 2.18 × 10^−18(1 − 1/16)
 
@@ -327,11 +327,11 @@ b:
 
 As ni → ∞
 
-E_photon = (e^4 me)/(8εo^2 h^2)(1/(nf^2) − 1/(ni^2))
+E_photon = ((e^4 me)/(8εo^2 h^2))(1/(nf^2) − 1/(ni^2))
 
 1/(ni^2) → 0
 
-E_photon → (e^4 me)/(8εo^2 h^2)(1/(nf^2))
+E_photon → ((e^4 me)/(8εo^2 h^2))(1/(nf^2))
 
 
 

@@ -44,21 +44,21 @@ X = F << Cl < Br << I (for the solubility of LiX)
 
 ### Pearson Absolute Hardness is a useful metric of hardness based on orbital energies
 
-The recognition that hard acids and bases possess a large HOMO-LUMO gap suggests that the gap size itself might serve as a useful index of hardness. The basis for this idea may be found by considering Pearson’s definition of absolute hardness, η.^1 Pearson's absolute hardness, η, is half the second derivative of a species' energy with respect to changes in total number of electrons, N_e^−.
+The recognition that hard acids and bases possess a large HOMO-LUMO gap suggests that the gap size itself might serve as a useful index of hardness. The basis for this idea may be found by considering Pearson’s definition of absolute hardness, η.^1 Pearson's absolute hardness, η, is half the second derivative of a species' energy with respect to changes in total number of electrons, N_(e^−).
 
-Pearson’s absolute hardness = η = 1/2 · (d^2 E)/(dN_e^−2)
+Pearson’s absolute hardness = η = 1/2 · (d^2 E)/(dN_(e^−)^2)
 
 (in eV)
 
 and, since acids' and bases’ hardness and softness are inversely related, Pearson’s absolute softness, σ, is just the inverse of hardness.
 
-Pearson’s softness = 1/(η)
+Pearson’s softness = 1/η
 
 Of these, Pearson’s absolute hardness is related to the Mulliken definition of electronegativity as the first derivative of a species' energy with respect to changes in total number of electrons.
 
-Mulliken electronegativity = χ = −dE/(dN_e^−)
+Mulliken electronegativity = χ = −dE/(dN_(e^−))
 
-[Note: corrected; the source prints "χ = dE/(dN_e^−)" where this reads "χ = −dE/(dN_e^−)". Electronegativity is the negative of the chemical potential; the minus sign gives χ ≈ (IE + EA)/2, as used below.]
+[Note: corrected; the source prints "χ = dE/(dN_(e^−))" where this reads "χ = −dE/(dN_(e^−))". Electronegativity is the negative of the chemical potential; the minus sign gives χ ≈ (IE + EA)/2, as used below.]
 
 (in eV)
 
@@ -169,7 +169,7 @@ A + B ⇌ AB    ΔH_(AB adduct)
 
 from the acid (A) and base (B) can be calculated as the sum of products of electrostatic (E) and covalent (C) factors that reflect the propensity of the acid and base to engage in strong electrostatic and covalent interactions with one another:
 
-−ΔH_(AB adduct) = EAEB + CACB
+−ΔH_(AB adduct) = EA EB + CA CB
 
 where E_A and C_A are the electrostatic and covalent parameters for the acid and E_B and C_B the electrostatic and covalent parameters for the base given in units of kcal^½ mol^-½. E and C parameters for selected acids and bases are given in Table 6.6.1.2 .
 
@@ -238,17 +238,17 @@ The simple EC model only includes electrostatic and covalent considerations and 
 
 - Steric strain. Specifically, Hancock and Martell^6 introduced a D parameter to account for any additional steric strain introduced upon adduct formation,* giving
 
-−ΔH_(AB adduct) = EAEB + CACB − DADB
+−ΔH_(AB adduct) = EA EB + CA CB − DA DB
 
 - Charge transfer upon adduct formation. As discussed in section 6.4.2, the formation of a Lewis acid-base complex results in a net transfer of electron density from the electron donor (base) to the acceptor (acid). Drago and Wong^7 extended the EC model to include that charge transfer by adding what they called receptance factors that account for the acid's ability to receive electron density (R_A) and transference factors that account for the base's ability to donate electron density (T_B), giving
 
-−ΔH_(AB adduct) = EAEB + CACB + RATB
+−ΔH_(AB adduct) = EA EB + CA CB + RA TB
 
 This extension of the EC model is called the electrostatic-covalent-transfer or ECT model. Notably, it has been applied successfully to adducts involving ions, for which the R_AT_B term can account for as much as 31% of the interaction energy.
 
 - Any constant energy term, such as the energy needed to cleave a dimer in order to make the Lewis acid (e.g., Al2Cl6 → 2AlCl3). Drago and Vogel^4 extended the EC model to accommodate these constant energy terms, which they designated W. The resulting model is called the ECW model, for which
 
-−∆H_(AB adduct) = EAEB + CACB + W
+−∆H_(AB adduct) = EA EB + CA CB + W
 
 where
 
@@ -264,23 +264,23 @@ Since H3N is a hard base and BF3 and InMe3 are harder and softer acids, respecti
 
 For H3N-BF3:
 
-−ΔH_H3N-BF3 = E_BF3 E_NH3 + C_BF3 C_NH3
+−ΔH_(H3N-BF3) = E_BF3 E_NH3 + C_BF3 C_NH3
 
-−ΔH_H3N-BF3 = (1.62)(2.31) + (9.88)(2.04)
+−ΔH_(H3N-BF3) = (1.62)(2.31) + (9.88)(2.04)
 
-−∆H_H3N-BF3 = 3.74 kcal/mol + 20.1 kcal/mol = 23.8 kcal/mol
+−∆H_(H3N-BF3) = 3.74 kcal/mol + 20.1 kcal/mol = 23.8 kcal/mol
 
-∆H_H3N-BF3 = −23.8 kcal/mol
+∆H_(H3N-BF3) = −23.8 kcal/mol
 
 For H3N-InMe3:
 
-−∆H_H3N-InMe3 = E_InMe3 E_NH3 + C_InMe3 C_NH3
+−∆H_(H3N-InMe3) = E_InMe3 E_NH3 + C_InMe3 C_NH3
 
-−∆H_H3N-InMe3 = (6.6)(2.31) + (2.15)(2.04)
+−∆H_(H3N-InMe3) = (6.6)(2.31) + (2.15)(2.04)
 
-−∆H_H3N-InMe3 = 15.25 kcal/mol + 4.39 kcal/mol = 19.63 kcal/mol
+−∆H_(H3N-InMe3) = 15.25 kcal/mol + 4.39 kcal/mol = 19.63 kcal/mol
 
-∆H_H3N-InMe3 = −19.63 kcal/mol
+∆H_(H3N-InMe3) = −19.63 kcal/mol
 
 So H3N-BF3 is enthalpically favored by -4.2 kcal/mol [=-23.8 kcal/mol - (-19.63 kcal/mol) according to Hess' Law].
 
@@ -303,7 +303,7 @@ A + B ⇌ (K) AB
 
 for which Pearson proposed
 
-logK = SASB + σAσB
+logK = SA SB + σA σB
 
 where S_A and S_B are acid and base parameters related to the strength of the acid-base interaction and σA and σB are acid and base parameters related to softness. This approach hasn't found as wide an acceptance in studies of chemical reactivity as the Drago-Wayland and absolute hardness parameters. However, because the toxicity of metal ions sometimes depends on their propensity to bind soft Lewis bases in living systems, the softness parameters which Pearson and Mawby subsequently proposed based on the relative energies of metal fluorine and metal iodine bonds^12 have been widely used as a tool for predicting metal ion toxicity.^13
 

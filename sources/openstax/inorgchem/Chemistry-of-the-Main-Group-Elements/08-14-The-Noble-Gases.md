@@ -409,7 +409,7 @@ d.) It solidifies and expands, breaking the dividers of the petri dish, and fill
 
 ### Contributors and Attributions
 
-- Jun-Hyun Hwa ng - University of California, Davis
+- Jun-Hyun Hwang - University of California, Davis
 
 ## 8.14.6: Chemistry of Neon (Z=10)
 
@@ -439,7 +439,7 @@ Krypton is one of the six Noble Gas elements (Group 18), which are widely known 
 
 - - Element number: 36
 
-[Image not described in source]
+      [Image not described in source]
 
    - Electron configuration: [Ar]3d^10 4s^2 4p^6
    - Atomic weight: 83.798g/mol
@@ -454,7 +454,7 @@ Krypton is one of the six Noble Gas elements (Group 18), which are widely known 
    - 6 Stable isotopes
    - Produced by breakdown of uranium and plutonium in the earth's crust at a very small %
 
-[Image not described in source]
+      [Image not described in source]
 
 ### The Origin and History
 

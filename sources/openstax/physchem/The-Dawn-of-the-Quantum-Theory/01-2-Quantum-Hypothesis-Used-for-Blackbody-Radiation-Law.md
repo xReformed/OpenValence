@@ -55,7 +55,7 @@ With that assumption, Planck calculated the following formula for the radiation 
 
 dρ(ν, T) = ρν(T)dν
 
-= (8πhν^3)/c^3·(1/(exp(hν/(kBT)) − 1))dν
+= (8πhν^3)/c^3·(1/(exp(hν/(kB T)) − 1))dν
 
 with
 
@@ -68,7 +68,7 @@ with
 
 Planck's radiation energy density (Equation (Eq2a)) can also be expressed in terms of wavelength λ.
 
-ρ(λ, T) = (8πhc)/λ^5(1/(e^(hc/λkBT) − 1))
+ρ(λ, T) = ((8πhc)/λ^5)(1/(e^(hc/λkB T) − 1))
 
 With a wavelength of maximum energy density at:
 
@@ -80,7 +80,7 @@ dBν(ν, T) = (c/4π)ρν(T)dν
 
 [Note: corrected; the source prints "dBν(ν, T) = ρν(T)dν" where this reads "dBν(ν, T) = (c/4π)ρν(T)dν". The radiance is c/4π times the energy density, not equal to it, as the next line shows: (c/4π)(8πhν^3)/c^3 = (2 hν^3)/c^2.]
 
-= (2 hν^3)/c^2·(1/(exp(hν/(kBT)) − 1))dν
+= (2 hν^3)/c^2·(1/(exp(hν/(kB T)) − 1))dν
 
 or
 

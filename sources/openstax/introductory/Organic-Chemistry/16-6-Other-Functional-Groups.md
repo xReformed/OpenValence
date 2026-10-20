@@ -166,11 +166,11 @@ Because of the existence of essential amino acids, a diet that is properly balan
    b. [Image: NH2 bound to cyclopropane.]
 9. A peptide is a short chain of amino acids connected by amide bonds. How many amide bonds are present in this peptide?
 
-[Image: H2N-CHCH3-CO-NH-CHCH3-CO-NH-CHCH3-CO-OH]
+   [Image: H2N-CHCH3-CO-NH-CHCH3-CO-NH-CHCH3-CO-OH]
 
 10. How many amide bonds are present in this peptide? (See Exercise 9 for the definition of a peptide.)
 
-[Image: H2N-CH(CH2SH)-CO-NH-CH(CH2SH)-CO-OH]
+   [Image: H2N-CH(CH2SH)-CO-NH-CH(CH2SH)-CO-OH]
 
 11. Draw the backbone structure of the amide formed by reacting propylamine with propanoic acid.
 12. Draw the backbone structure of the amide formed by reacting hexylamine with ethanoic acid.

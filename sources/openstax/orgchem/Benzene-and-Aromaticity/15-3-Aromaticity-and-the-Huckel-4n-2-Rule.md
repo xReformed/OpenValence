@@ -21,7 +21,7 @@ Let’s look at several examples to see how the Hückel 4n + 2 rule works.
 
 - Cyclobutadiene has four π electrons and is antiaromatic. As indicated by the electrostatic potential map, the π electrons are localized in two double bonds rather than delocalized around the ring.
 
-[Image: The structure of cyclobutadiene is a four-membered carbon ring with  two double bonds and four pi electrons. To the right, the electrostatic potential map of cyclobutadiene shows its ball-and-stick model inside.]
+   [Image: The structure of cyclobutadiene is a four-membered carbon ring with  two double bonds and four pi electrons. To the right, the electrostatic potential map of cyclobutadiene shows its ball-and-stick model inside.]
 
 Cyclobutadiene is highly reactive and shows none of the properties associated with aromaticity. In fact, it was not even prepared until 1965, when Rowland Pettit at the University of Texas was able to make it at low temperature. Even at –78 °C, however, cyclobutadiene is so reactive that it dimerizes by a Diels–Alder reaction. One molecule behaves as a diene and the other as a dienophile.
 
@@ -29,11 +29,11 @@ Cyclobutadiene is highly reactive and shows none of the properties associated wi
 
 - Benzene has six π electrons (4n + 2 = 6 when n = 1) and is aromatic.
 
-[Image: Benzene has three double bonds and six pi electrons.]
+   [Image: Benzene has three double bonds and six pi electrons.]
 
 - Cyclooctatetraene has eight π electrons, but when it was first prepared in 1911 by the German chemist Richard Willstätter, it was found not to be particularly stable. In fact, its π electrons are localized into four double bonds rather than delocalized around the ring, and the molecule is tub-shaped rather than planar. It has no cyclic conjugation because neighboring p orbitals don’t have the necessary parallel alignment for overlap, and it resembles an open-chain polyene in its reactivity.
 
-[Image: Cyclooctatetraene has four double bonds and eight pi electrons. To the right, electrostatic potential map of cyclooctatetraene has its ball-and-stick model inside.]
+   [Image: Cyclooctatetraene has four double bonds and eight pi electrons. To the right, electrostatic potential map of cyclooctatetraene has its ball-and-stick model inside.]
 
 X-ray studies show that the C–C single bonds in cyclooctatetraene are 147 pm long and the double bonds are 134 pm long. In addition, the ^1H NMR spectrum shows a single sharp resonance line at 5.78 δ, a value characteristic of an alkene rather than an aromatic molecule.
 

@@ -93,7 +93,7 @@ Most of the radioactivity in the human body comes from potassium-40 and carbon-1
 
 What if the elapsed time is not an exact number of half-lives? We can still calculate the amount of material we have left, but the equation is more complicated. The equation is
 
-amount remaining = (amount initial) × e^(−0.693 t/t_1/2)
+amount remaining = (amount initial) × e^(−0.693t/t_1/2)
 
 where e is the base of natural logarithms (2.71828182…), t is the elapsed time, and t1/2 is the half-life of the radioactive isotope. The variables t and t1/2 should have the same units of time, and you may need to make sure you know how to evaluate natural-logarithm powers on your calculator (for many calculators, there is an "inverse logarithm" function that you can use; consult your instructor if you are not sure how to use your calculator). Although this is a more complicated formula, the length of time t need not be an exact multiple of half-lives.
 

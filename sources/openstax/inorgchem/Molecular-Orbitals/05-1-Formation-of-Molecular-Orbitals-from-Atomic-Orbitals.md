@@ -11,7 +11,7 @@ Molecular orbital theory extends from quantum theory and the atomic orbital wave
 
 The LCAO for the wavefunction of two atoms (ψa and ψb) is represented by the general expression below. The coefficients ca and cb quantify the contribution of each atomic ψ to the molecular Ψ.
 
-Ψ = caψa + cbψb
+Ψ = ca ψa + cb ψb
 
 For two atomic ψs to form a bond, three conditions must be satisfied:
 
@@ -238,7 +238,7 @@ Figure 5.1.3.1: The five 3d orbitals are shown. The orientation of the axes is c
 
 ### Sigma (σ) bonding with d orbitals
 
-σ bonds are symmetric with respect to the inter-nuclear axis (in a diatomic molecule, this is the z axis). An example of a σ bond formed by d orbitals is that of two d_z^2 orbitals (see Figure 5.1.3.2). If a bonded atom is in a position other than on the z axis (in an octahedral geometry, for example), σ bonds can also form. For example, two d_x^2 − y^2 orbitals on atoms bonded along the x or y axes could also form a σ bond.
+σ bonds are symmetric with respect to the inter-nuclear axis (in a diatomic molecule, this is the z axis). An example of a σ bond formed by d orbitals is that of two d_(z^2) orbitals (see Figure 5.1.3.2). If a bonded atom is in a position other than on the z axis (in an octahedral geometry, for example), σ bonds can also form. For example, two d_(x^2−y^2) orbitals on atoms bonded along the x or y axes could also form a σ bond.
 
 d orbitals can also form σ bonds with other types of orbitals with the appropriate symmetry. Examples of orbitals with appropriate symmetry are the s orbital and certain p orbitals on another atom, as shown below in Figure 5.1.3.2.
 
@@ -252,7 +252,7 @@ Figure 5.1.3.3: Selected examples of π bonds involving d orbitals along the z i
 
 ### Delta (δ) bonding with d orbitals
 
-δ bonds are those with two nodes that are in-plane with the internuclear axis. δ bonds can form between two d orbitals with appropriate symmetry. For example, when two atoms bond along the z axis, the d_xy orbitals and the two d_x^2 − y^2 orbitals can form δ bonds (Figure 5.1.3.4).
+δ bonds are those with two nodes that are in-plane with the internuclear axis. δ bonds can form between two d orbitals with appropriate symmetry. For example, when two atoms bond along the z axis, the d_xy orbitals and the two d_(x^2−y^2) orbitals can form δ bonds (Figure 5.1.3.4).
 
 Figure 5.1.3.4: Selected examples of δ bonds involving d orbitals along the z internuclear axis (shown in bold horizontal line) between two atoms. (CC-BY-SA; Kathryn Haas)
 

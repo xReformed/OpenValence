@@ -248,9 +248,9 @@ While the Pauling scale considers electronegativity in terms of bonding, there a
 
 #### The Mulliken Electronegativity Scale defines electronegativity in terms of Electron Affinity and Ionization Energy
 
-The Mulliken definition of electronegativity was previously described in connection with absolute hardness and softness as the first derivative of a species energy with respect to changes in total number of electrons, N_e^−.
+The Mulliken definition of electronegativity was previously described in connection with absolute hardness and softness as the first derivative of a species energy with respect to changes in total number of electrons, N_(e^−).
 
-Mulliken electronegativity = χ = dE/(dN_e^−)
+Mulliken electronegativity = χ = dE/(dN_(e^−))
 
 where E is in eV
 
@@ -282,7 +282,7 @@ The Allred-Rochow electronegativity scale attempts to quantify electronegativity
 
 These raw values have units of force (N/electron or dyne/electron) and do not correspond closely to electronegativity values reported on the Pauling Scale. Consequently, an empirical correction factor is used to adjust the scale to give electronegativities that more closely correspond to their Pauling equivalents.
 
-χ_Allred-Rochow = 3590 (e^2 Z*)/(r_bond^2)+0.744
+χ_(Allred-Rochow) = 3590 (e^2 Z*)/(r_bond^2)+0.744
 
 Mulliken electronegativities so calculated are given in Table 8.2.2.4.
 
@@ -492,15 +492,15 @@ Latimer diagrams not only provide a compact summary of an element's redox chemis
 
 Disproportionation occurs when a species reacts with itself to produce two or more stable products. For instance, in basic solution ReO3 can undergo disproportionation to ReO4^- and ReO2·2H2O.
 
-2Re^VI O3 + 2H2O → Re^VII O4^− + Re^VO2·2H2O
+2Re^VI O3 + 2H2O → Re^VII O4^− + Re^V O2·2H2O
 
 As with all redox reactions, disproportionation reactions are thermodynamically favored when they possess a positive reaction potential. To see when this will be the case it is helpful to separate the disproportionation reaction into its half reactions:
 
-Reduction:Re^VI O3 + H2O + 2H^+ + e^− → Re^VO2·2H2O    E° = −0.446V
+Reduction:Re^VI O3 + H2O + 2H^+ + e^− → Re^V O2·2H2O    E° = −0.446V
 
 Oxidation:Re^VI O3 + H2O → Re^VII O4^− + 2H^+ + e^−    E° = +0.889V
 
-Sum:2Re^VI O3 + 2H2O → Re^VII O4^− + Re^VO2·2H2O    E° = −0.446V + 0.889V = +0.443V
+Sum:2Re^VI O3 + 2H2O → Re^VII O4^− + Re^V O2·2H2O    E° = −0.446V + 0.889V = +0.443V
 
 Notice that the disproportionation of ReO3 in basic solution is favored because the favorable reaction potential for ReO3 oxidation is larger in magnitude than the negative oxidation potential for ReO3 reduction.
 
@@ -589,7 +589,7 @@ As the examples above indicate, Latimer diagrams are helpful summaries of elemen
 
 ##### Note 8.2.4.1.1.
 
-Potentials that are not shown in a Latimer diagram may always be calculated by constructing a thermodynamic cycle. Consider the interconversion of N2O4 to NO, E°_IV/II, the value of which is not given in the standard nitrogen Latimer diagram presented in Scheme 8.2.4.1.II. Part of that diagram is reproduced as Scheme 8.2.4.1.VI below.
+Potentials that are not shown in a Latimer diagram may always be calculated by constructing a thermodynamic cycle. Consider the interconversion of N2O4 to NO, E°_(IV/II), the value of which is not given in the standard nitrogen Latimer diagram presented in Scheme 8.2.4.1.II. Part of that diagram is reproduced as Scheme 8.2.4.1.VI below.
 
 Scheme 8.2.4.1.VI. Partial Latimer diagram for nitrogen in acid.
 
@@ -607,13 +607,13 @@ Scheme 8.2.4.1.VIII. Thermodynamic cycle expressed in terms of standard potentia
 
 From Scheme 8.2.4.1.VIII it may be seen that
 
-ΔG°_IV/II = −(2 mol e^−)FE°_IV/II = −(1 mol e^−)FE°_IV/III − (1 mol e^−)FE°_III/II
+ΔG°_(IV/II) = −(2 mol e^−)FE°_(IV/II) = −(1 mol e^−)FE°_(IV/III) − (1 mol e^−)FE°_(III/II)
 
 Cancelling the constant F and replacing the unknown potentials with the values in Scheme 8.2.4.1.VI gives
 
-−(2 mol e^−)E°_IV/II = −(1 mol e^−)(1.07 V) − (1 mol e^−)(0.996 V)
+−(2 mol e^−)E°_(IV/II) = −(1 mol e^−)(1.07 V) − (1 mol e^−)(0.996 V)
 
-from which E°_IV/II may be calculated, giving E°_IV/II = +1.033 V.
+from which E°_(IV/II) may be calculated, giving E°_(IV/II) = +1.033 V.
 
 #### References
 
@@ -784,17 +784,17 @@ Using the simplified Latimer diagram for Cr in aqueous acid, reproduced below, v
 
 The disproportionation of Cr^4+ to Cr^3+ and Cr^6+ is the sum of two processes:
 
-Cr^4+reduction:    Cr^4+ + e^− → Cr^3+    E°_Cr^(4/3+) = 2.10 V
+Cr^4+reduction:    Cr^4+ + e^− → Cr^3+    E°_(Cr^(4/3+)) = 2.10 V
 
-Cr^4+oxidation:    Cr^4+ → Cr^6+ + 2e^−    E° = −E°_Cr^(6/4+)
+Cr^4+oxidation:    Cr^4+ → Cr^6+ + 2e^−    E° = −E°_(Cr^(6/4+))
 
-Sum: 3Cr^4+ + → Cr^6+ + 2Cr^3+    E°_disproportionation = E°_Cr^(4/3+) − E°_Cr^(6/4+)
+Sum: 3Cr^4+ + → Cr^6+ + 2Cr^3+    E°_disproportionation = E°_(Cr^(4/3+)) − E°_(Cr^(6/4+))
 
-The value of E°_Cr^(6/4+) is just the sum of the Cr^(6/5+) and Cr^(5/4+) reduction potentials (+0.55 V + 1.34 V) or +1.89 V. Consequently,
+The value of E°_(Cr^(6/4+)) is just the sum of the Cr^(6/5+) and Cr^(5/4+) reduction potentials (+0.55 V + 1.34 V) or +1.89 V. Consequently,
 
 [Note: reduction potentials cannot simply be added: for two one-electron steps, E°(6/4+) = (1 × 0.55 + 1 × 1.34)/2 = 0.945 V, which makes the disproportionation potential 2.10 − 0.945 = +1.155 V, not +0.21 V. The text is left as printed.]
 
-E°_disproportionation = E°_Cr^(4/3+)    E°_Cr^(6/4+) = 2.10 V − 1.89 V = +0.21 V
+E°_disproportionation = E°_(Cr^(4/3+))    E°_(Cr^(6/4+)) = 2.10 V − 1.89 V = +0.21 V
 
 which is spontaneous.
 
@@ -808,9 +808,9 @@ Using the simplified Latimer diagram for Cr in aqueous acid, reproduced below, v
 
 The comproportionation of Cr^2+ and Cr^4+ to Cr^3+ is the sum of two processes:
 
-Cr^4+reduction:    Cr^4+ + e^− → Cr^3+    E°_Cr^(4/3+) = +2.10 V
+Cr^4+reduction:    Cr^4+ + e^− → Cr^3+    E°_(Cr^(4/3+)) = +2.10 V
 
-Cr^2+oxidation:    Cr^2+ → Cr^3+ + e^−    E° = −E°_Cr^(3/2+) = −(−0.424 V) = = +0.424 V
+Cr^2+oxidation:    Cr^2+ → Cr^3+ + e^−    E° = −E°_(Cr^(3/2+)) = −(−0.424 V) = = +0.424 V
 
 Sum: Cr^2+ + Cr^4+ → 2Cr^3+    E°_comproportionation = +2.10 V + 0.424 V = +2.524 V
 
@@ -852,7 +852,7 @@ The free energy for formation of each oxidation state is determined as follows:
 1. For free elements the free energy of formation, E°, and consequently NE°, are all by definition zero.
 2. Negative oxidation states are formed by reduction of the free element
 
-E + ne^− → E^O.S.    E° = E°_red
+E + ne^− → E^(O.S.)    E° = E°_red
 
 so that
 
@@ -870,7 +870,7 @@ NE° = (1/F)ΔG°_red
 
 3. Positive oxidation states are formed by oxidation of the element:
 
-E → E^O.S. + ne^−    E°_ox = E° = −E°_red
+E → E^(O.S.) + ne^−    E°_ox = E° = −E°_red
 
 in which the number of electrons, n, is equal to the oxidation state, N and
 
@@ -902,7 +902,7 @@ which may be further simplified by cancelling the Faraday constant, F, from both
 
 From this expression the value of NE°_(Ni → NiO2) may be calculated by inserting the relevant reduction potentials and number of electrons:
 
-NE°_Ni → NiO2 = 2 × (+1.593V) + 2 × (−0.257V) = +2.672V
+NE°_(Ni → NiO2) = 2 × (+1.593V) + 2 × (−0.257V) = +2.672V
 
 For complex cases it can be helpful to tabulate the calculations, as is done in the following example.
 
@@ -918,7 +918,7 @@ The value of NE° for each oxidation state is calculated as described in Table 8
 
 1. Set NE° = 0 for the free element.
 2. Use NE° = O.S. × associated E° to calculate NE° for the lowest positive and negative oxidation states.
-3. Iteratively use NE° = NE°_last step + NE°_one lower oxidation state to calculate NE° for all higher oxidation states.
+3. Iteratively use NE° = NE°_(last step) + NE°_(one lower oxidation state) to calculate NE° for all higher oxidation states.
 
 Table 8.2.4.2.1: Calculation of NE° for each oxidation state of nitrogen.
 
@@ -1005,9 +1005,9 @@ Use the information in Figure 8.2.4.3.2 (Do not use the information in Figure 8.
 
 The phase lines in Pourbaix diagrams correspond to switchpoints between the dominant species in solution for solution phase species or the points at which precipitation or phase change occurs for equilibria involving solid and/or pure liquid phases. To see how this works it helps to consider the three common cases:
 
-- Equilibria that involve electron transfer only give rise to horizontal lines because the potential does not depend on pH. An example is the line between the Fe^3+ and Fe^2+ regions, marked 2 in Figure 8.2.4.3.2. In this case the reaction potential when (Fe^2+)/(Fe^3+)=1 is E°_Fe^(3/2+):
+- Equilibria that involve electron transfer only give rise to horizontal lines because the potential does not depend on pH. An example is the line between the Fe^3+ and Fe^2+ regions, marked 2 in Figure 8.2.4.3.2. In this case the reaction potential when (Fe^2+)/(Fe^3+)=1 is E°_(Fe^(3/2+)):
 
-Fe^3+ + e^− → Fe^2+    E = E°_Fe^(3/2+) − (0.05916 V)/1 log([Fe^2+])/([Fe^3+]) = E°_Fe^(3/2+) − (0.05916 V)log1 = E°_Fe^(3/2+)
+Fe^3+ + e^− → Fe^2+    E = E°_(Fe^(3/2+)) − ((0.05916 V)/1)log(([Fe^2+])/([Fe^3+])) = E°_(Fe^(3/2+)) − (0.05916 V)log1 = E°_(Fe^(3/2+))
 
 - Acid-base equilibria that do not involve changes in the redox state of the elements involved give rise to vertical lines, the position of which depend on the stated concentration of the diagram. An example is the line between the Fe^3+(aq) and Fe2O3(s) regions, marked 3 in Figure 8.2.4.3.2. This corresponds to the equilibrium:
 
@@ -1025,7 +1025,7 @@ Fe2O3(s) + 6 H^+ + 2 e^− → 2 Fe^2+ + 3 H2O
 
 for which
 
-E = E°_Fe2O3/Fe^2+ − (0.05916 V)/2 log([Fe^2+]^2)/([H^+]^6)
+E = E°_(Fe2O3/Fe^2+) − ((0.05916 V)/2)log(([Fe^2+]^2)/([H^+]^6))
 
 from which it can be seen that the potential will be pH dependent.
 

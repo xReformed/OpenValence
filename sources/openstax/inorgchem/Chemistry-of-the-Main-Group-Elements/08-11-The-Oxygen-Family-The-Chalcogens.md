@@ -834,9 +834,9 @@ Selenium reacts to form salts called selenites, e.g., silver selenite (Ag2SeO3) 
 
 ### Reference
 
-1. Mi naev, V. S., S. P. Timoshenkov, and V. V. Kalugin. "Structural and Phase Transformations in Condensed Selenium." Journal of Optoelectronics and Advanced Materials, volume 7, number 4, 2005, pp. 1717–1741.
+1. Minaev, V. S., S. P. Timoshenkov, and V. V. Kalugin. "Structural and Phase Transformations in Condensed Selenium." Journal of Optoelectronics and Advanced Materials, volume 7, number 4, 2005, pp. 1717–1741.
 2. Mary Elvira Weeks and Henry M. Leicester. Discovery of the Elements, 7th edition. Easton, PA: Journal of Chemical Education, 1968.
-3. Petrucci, Ralph H. General Chemis try. 9th ed. Upper Saddle River: Prentice Hall, 2007
+3. Petrucci, Ralph H. General Chemistry. 9th ed. Upper Saddle River: Prentice Hall, 2007
 
 ### Contributors and Attributions
 

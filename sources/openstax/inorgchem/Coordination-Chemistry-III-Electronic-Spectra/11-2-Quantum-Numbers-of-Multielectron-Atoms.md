@@ -39,11 +39,11 @@ What we find is that the absorption spectrum is far more complex than expected. 
 
 To illustrate how electrons in different orbitals might have different interactions, let's consider the case of a d^2 excited state in an octahedral ligand field (Figure 11.2.3).
 
-Figure 11.2.3: Two microstates with different energies for a d^2 ion in an octahedral ligand field. Electron configurations of two different microstates are shown on the top, and the orbitals associated with each shown underneath each configuration. Left: An excited microstate with one electron in the d_xy orbital (shown in green) and one electron in the d_z^2 (shown in red). Right: An excited microstate with one electron in the d_xz orbital (shown in green) and one electron in the d_z^2 (shown in red).
+Figure 11.2.3: Two microstates with different energies for a d^2 ion in an octahedral ligand field. Electron configurations of two different microstates are shown on the top, and the orbitals associated with each shown underneath each configuration. Left: An excited microstate with one electron in the d_xy orbital (shown in green) and one electron in the d_(z^2) (shown in red). Right: An excited microstate with one electron in the d_xz orbital (shown in green) and one electron in the d_(z^2) (shown in red).
 
-According to LFT, both electrons would be in the t_2g orbitals in the ground state. For instance, they could be in the microstate where one electron is in d_xy, and the other is in the d_xz orbital (not pictured). This configuration is called a microstate of a state because there are other combinations of orbitals possible. For example, the ground state would also be realized by a microstate in which the electrons were in the d_xz and the d_yz orbitals. Upon absorption of light, the electron in the d_xy orbital could be excited into one of the higher-energy eg orbitals. That excited electron could occupy either the d_z^2 or the d_x^2 − y^2 orbitals. Those two possibilities reflect two different microstates associated with the excited state. For a moment, let's assume that the excited electron goes into the d_z^2 orbital. In this microstate one electron would be in the d_xz orbital and the other one in the d_z^2 orbital (Figure 11.2.3, right). There is another possibility for how to excite an electron from the ground state. We could assume that instead of the d_xy electron being promoted, the d_xz electron gets promoted. In this case, we would realize a microstate in which one electron in the d_xy orbital and the other one in the d_z^2 orbital (Figure 11.2.3, left).
+According to LFT, both electrons would be in the t_2g orbitals in the ground state. For instance, they could be in the microstate where one electron is in d_xy, and the other is in the d_xz orbital (not pictured). This configuration is called a microstate of a state because there are other combinations of orbitals possible. For example, the ground state would also be realized by a microstate in which the electrons were in the d_xz and the d_yz orbitals. Upon absorption of light, the electron in the d_xy orbital could be excited into one of the higher-energy eg orbitals. That excited electron could occupy either the d_(z^2) or the d_(x^2−y^2) orbitals. Those two possibilities reflect two different microstates associated with the excited state. For a moment, let's assume that the excited electron goes into the d_(z^2) orbital. In this microstate one electron would be in the d_xz orbital and the other one in the d_(z^2) orbital (Figure 11.2.3, right). There is another possibility for how to excite an electron from the ground state. We could assume that instead of the d_xy electron being promoted, the d_xz electron gets promoted. In this case, we would realize a microstate in which one electron in the d_xy orbital and the other one in the d_(z^2) orbital (Figure 11.2.3, left).
 
-Now let us compare the two cases shown in Figure 11.2.3. Ligand field theory would argue that both excited microstates have the same energy. However, in fact they do not. Why? It is because the electrons in the first excited microstate interact differently than those of the second excited microstate. This difference becomes plausible when considering the orbital shapes and orientations (Figure 11.2.3, bottom). The d_xz orbital has electron density on the z-axis, while the d_xy orbital is perpendicular to d_z^2. The different relative orientations of d_xy and d_xz with respect to d_z^2 cause electrons in the d_z^2 orbital to interact differently with an electron in a d_xy than in a d_xz. As a result, the two excited microstates do not have the same energy. In other words, to achieve either of these different excited microstates from the ground state, we need different amounts of energy. Thus, the complex would absorb light with different energies (or wavelengths). This is in contrast to what LFT predicts.
+Now let us compare the two cases shown in Figure 11.2.3. Ligand field theory would argue that both excited microstates have the same energy. However, in fact they do not. Why? It is because the electrons in the first excited microstate interact differently than those of the second excited microstate. This difference becomes plausible when considering the orbital shapes and orientations (Figure 11.2.3, bottom). The d_xz orbital has electron density on the z-axis, while the d_xy orbital is perpendicular to d_(z^2). The different relative orientations of d_xy and d_xz with respect to d_(z^2) cause electrons in the d_(z^2) orbital to interact differently with an electron in a d_xy than in a d_xz. As a result, the two excited microstates do not have the same energy. In other words, to achieve either of these different excited microstates from the ground state, we need different amounts of energy. Thus, the complex would absorb light with different energies (or wavelengths). This is in contrast to what LFT predicts.
 
 If LFT cannot predict the number of electronic transitions, then how can we correctly predict how many absorption bands we get? The answer is, we must find all possible microstates for the d^2 electron configuration and group together those with the same energy. A group of microstates with the same energy is called a term. The number of electron transitions can then be predicted from the number of terms.
 
@@ -53,8 +53,8 @@ The table below summarizes the quantum numbers of atoms (individual microstates 
 
 | Symbol | Name | Allowed Range | Comment |
 | --- | --- | --- | --- |
-| L | Total Orbital Angular Momentum | \|l1 + l2\|, \|l1 + l2‐1\|, …, \|l1‐l2\| | Total orbital angular momentum of a collection of microstates, designated as S, P, D, F..etc |
-| S | Total Intrinsic Spin | \|ms1 + ms2\|, \|ms1 + ms2‐1\|, ..., \|ms1‐ms2\| | Total spin of a collection of microstates |
+| L | Total Orbital Angular Momentum | \|l1 + l2\|, \|l1 + l2 − 1\|, …, \|l1 − l2\| | Total orbital angular momentum of a collection of microstates, designated as S, P, D, F..etc |
+| S | Total Intrinsic Spin | \|ms1 + ms2\|, \|ms1 + ms2 − 1\|, ..., \|ms1 − ms2\| | Total spin of a collection of microstates |
 | Ml | Magnetic Quantum Number | L, L − 1, L − 2, ..., −L | Direction of total angular momentum for an individual microstate |
 | Ms | Spin Magnetic Quantum Number | S, S − 1, S − 2, ...−S | Total spin of electrons for an individual microstate |
 | J | Total Angular Momentum | L + S, ..., \|L − S\| | Total angular momentum |
@@ -67,7 +67,7 @@ The quantum numbers S and L represent sets of microstates. Once these values are
 
 L gives the total sum of orbital angular momentum vectors in a multielectron atom. The possible values of L can be found from the values of l for individual electrons in the system. For example, in a system with two electrons with values of m_l1 and m_l2, the possible values of L are:
 
-L = Σi^n m_li = |m_l1 + m_l2|, |m_l1 + m_l2‐1|, …, |m_l1‐m_l2|
+L = Σi^n m_li = |m_l1 + m_l2|, |m_l1 + m_l2 − 1|, …, |m_l1 − m_l2|
 
 [Note: L is built from the electrons' l values, as in the table above: L = l1 + l2, l1 + l2 − 1, …, |l1 − l2|. The sum of the m_l values is M_L, not L, and the m_l1 and m_l2 of the sentence above should likewise be l1 and l2. The text is left as printed.]
 
@@ -77,7 +77,7 @@ The absolute value symbols indicate that L cannot be a negative value. The value
 
 The sum total of the spin vectors of all of the electrons is called S. The values of S are computed from ms in a manner very similar to how L is computed from ml. Because S measures the magnitude of a vector, it cannot be negative. For a system with two electrons, each with spin ms1, and ms2, the possible values of S are given below.
 
-S = Σi^n msi = |ms1 + ms2|, |ms1 + ms2‐1|, ..., |ms1‐ms2|
+S = Σi^n msi = |ms1 + ms2|, |ms1 + ms2 − 1|, ..., |ms1 − ms2|
 
 [Note: The sum of the m_s values is M_S, not S; for two electrons S = s1 + s2, …, |s1 − s2|, that is 1 or 0. The text is left as printed.]
 
@@ -102,7 +102,7 @@ What are the possible L values for the electrons in the [Xe]6s^2 4f^1 5d^1 ?
 
 We can ignore the electrons in the [Xe] core and the electrons in the 6s block. So all we have to consider is the lone f electron (l = 3) and the lone d electron (l = 2).
 
-The two extremes for possible L values are 3 + 2 = 5 and 3‐2 = 1.
+The two extremes for possible L values are 3 + 2 = 5 and 3 − 2 = 1.
 
 Thus, possible values of L for this atom are 5(H), 4(G), 3(F), 2(D), and 1(P).
 
@@ -178,7 +178,7 @@ What are the Ms values for 1s^2 2s^2 2p^2 ?
 
 **Solution**
 
-This system is paramagnetic, with two unpaired electrons in the 2p orbital. The three p orbitals have values of ms = −1,0,1. The maximum value of Ms = +1 would come from the two electrons occupying m_s1 = +1 and m_s2 = 0. The minimum value, Ms = −1 would come from the two electrons occupying m_s1 = −1 and m_s2 = 0. Thus, the possible values for the total spin magnetic quantum number are Ms = 1,0, ‐1, where the value of Ms = 0 comes from a configuration where, for example, m_s1 = +1 and m_s2 = −1.
+This system is paramagnetic, with two unpaired electrons in the 2p orbital. The three p orbitals have values of ms = −1,0,1. The maximum value of Ms = +1 would come from the two electrons occupying m_s1 = +1 and m_s2 = 0. The minimum value, Ms = −1 would come from the two electrons occupying m_s1 = −1 and m_s2 = 0. Thus, the possible values for the total spin magnetic quantum number are Ms = 1,0, −1, where the value of Ms = 0 comes from a configuration where, for example, m_s1 = +1 and m_s2 = −1.
 
 [Note: This solution describes m_l and M_L rather than m_s and M_S: the p orbitals have m_l = −1, 0, +1, while each electron has m_s = ±1/2. M_S = +1 comes from two electrons with m_s = +1/2, M_S = −1 from two with m_s = −1/2, and M_S = 0 from one of each. The answer, M_S = 1, 0, −1, is right. The text is left as printed.]
 
@@ -234,7 +234,7 @@ e. L = 3, S = 2
 
 What are the possible microstates and the overall number of microstates for a free ion with d^2-electron configuration? We can express this in a so-called microstate table (11.2.1.2).
 
-Figure 11.2.1.2: d^2 electron configuration microstate table. This table is organized with Ml values increasing horizontally and Ms values decreasing vertically. You may see different ways to organize a microstate table, and there is no wrong orientation to use, as long as you can use it to correctly find and organize microstates. Each microstate is indicated using notation (ml)^ms, where only the sign of ms is indicated for simplicity. For example, an electron in ml = −2 with ms = +1/2 is notated −2^+.
+Figure 11.2.1.2: d^2 electron configuration microstate table. This table is organized with Ml values increasing horizontally and Ms values decreasing vertically. You may see different ways to organize a microstate table, and there is no wrong orientation to use, as long as you can use it to correctly find and organize microstates. Each microstate is indicated using notation (ml)^(ms), where only the sign of ms is indicated for simplicity. For example, an electron in ml = −2 with ms = +1/2 is notated −2^+.
 
 [Note: corrected; the source prints "is indicating using notion" where this reads "is indicated using notation". Typing errors.]
 
@@ -318,7 +318,7 @@ Let's use the example of the [Cr(NH3)6]^3+ complex ion, and determine its ground
 1. Determine the number of d-electrons. [Cr(NH3)6]^3+ contains Cr^3+, which is a d^3 metal ion. There are three d electrons.
 2. Draw a diagram of five degenerate d orbitals, with ml values labeled. Fill in the electrons to maximize ms and ml.
 
-[Image not described in source]
+   [Image not described in source]
 
 3. Calculate spin multiplicity (should be the maximum possible value!). S = m_s1 + m_s2 + m_s3 = +1/2 + + 1/2 + + 1/2 = 3/2 Spin multiplicity = 2S + 1 = 2(3/2) + 1 = 4
 4. Calculate L (should be the maximum possible value after spin is maximized. L = m_l1 + m_l2 + m_l3 = 2 + 1 + 0 = 3

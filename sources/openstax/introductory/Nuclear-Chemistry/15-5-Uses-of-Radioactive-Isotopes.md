@@ -56,7 +56,7 @@ Table 15.5.1: Some Radioactive Isotopes with Medical Applications
 | ^32P | cancer detection and treatment, especially in eyes and skin |
 | ^59Fe | anemia diagnosis |
 | ^60Co | gamma ray irradiation of tumors |
-| ^99mTc* | brain, thyroid, liver, bone marrow, lung, heart, and intestinal scanning; blood volume determination |
+| ^(99m)Tc* | brain, thyroid, liver, bone marrow, lung, heart, and intestinal scanning; blood volume determination |
 | ^131I | diagnosis and treatment of thyroid function |
 | ^133Xe | lung imaging |
 | ^198Au | liver disease diagnosis |

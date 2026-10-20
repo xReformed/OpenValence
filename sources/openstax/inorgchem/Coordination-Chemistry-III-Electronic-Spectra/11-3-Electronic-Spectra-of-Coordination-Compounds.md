@@ -290,7 +290,7 @@ Jahn-teller usually causes a tetragonal distortion of an octahedron. This would 
 
 Figure 11.3.4.3: Splitting of d-orbitals from Oh to D_4h symmetry by Jahn-Teller distortion. (CC-BY-SA; Kathryn Haas)
 
-The t_2g orbitals (the set d_xy, d_xz, d_yz are split into eg (d_xz, d_yz) and b_2g (d_xy) by this symmetry change. Thus, we can expect any T_2g terms to be split similarly into Eg and B_2g terms by Jahn-Teller distortion. The eg orbitals under Oh are split into a1 g (d^(z^2)) and b1 g (d_x^2 − y^2) under D_4h. Thus, we can expect Eg terms to be split into B_1g and A_1g terms by Jahn-Teller distortion (Figure 11.3.4.4).
+The t_2g orbitals (the set d_xy, d_xz, d_yz are split into eg (d_xz, d_yz) and b_2g (d_xy) by this symmetry change. Thus, we can expect any T_2g terms to be split similarly into Eg and B_2g terms by Jahn-Teller distortion. The eg orbitals under Oh are split into a1 g (d^(z^2)) and b1 g (d_(x^2−y^2)) under D_4h. Thus, we can expect Eg terms to be split into B_1g and A_1g terms by Jahn-Teller distortion (Figure 11.3.4.4).
 
 Figure 11.3.4.4: Splitting of d^1 from an octahedral field to D_4h by Jahn-Teller tetragonal distortion. (CC-BY-SA; Kathryn Haas)
 

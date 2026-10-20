@@ -20,7 +20,7 @@ Because a given chiral molecule can be drawn in many ways, it’s sometimes nece
 
 - A Fischer projection can be rotated on the page by 180°, but not by 90° or 270°. Only a 180° rotation maintains the Fischer convention by keeping the same substituent groups going into and coming out of the plane. In the following Fischer projection of (R)-glyceraldehyde, for instance, the –H and –OH groups come out of the plane both before and after a 180° rotation.
 
-[Image: The structures of (R)-glyceraldehyde before and after a 180-degree rotation are the same having an R configuration. The figure shows the ball-and-stick model of both structures.]
+   [Image: The structures of (R)-glyceraldehyde before and after a 180-degree rotation are the same having an R configuration. The figure shows the ball-and-stick model of both structures.]
 
 A 90° rotation breaks the Fischer convention by exchanging the groups that go into the plane with those that come out. In the following Fischer projections of (R)-glyceraldehyde, the –H and –OH groups originally come out of the plane but go into the plane after a 90° rotation. As a result, the rotated projection represents (S)-glyceraldehyde.
 

@@ -61,7 +61,7 @@ The organometallic compounds containing carbonyl groups are regularly studied us
 
 The solid state structure elucidation using single crystal diffraction studies are extremely useful techniques for the characterization of the organometallic compounds and for which the X-ray diffraction and neutron diffraction studies are often undertaken. As these methods give a three dimensional structural rendition at a molecular level, they are of significant importance among the various available characterization methods. The X-ray diffraction technique is founded on Bragg’s law that explains the diffraction pattern arising out of a repetitive arrangement of the atoms located at the crystal lattices.
 
-2d sinθ = nλ
+2d sin θ = nλ
 
 A major limitation of the X-ray diffraction is that the technique is not sensitive enough to detect the hydrogen atoms, which appear as weak peaks as opposed to intense peaks arising out of the more electron rich metal atoms, and hence are not very useful for metal hydride compounds. Neutron diffraction studies can detect hydrogens more accurately and thus are good for the analysis of the metal hydride complexes.
 

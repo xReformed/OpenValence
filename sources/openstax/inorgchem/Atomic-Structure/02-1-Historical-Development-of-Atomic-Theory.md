@@ -433,7 +433,7 @@ Plot molar volume versus molar mass for these substances. According to Meyer, wh
 
 1. [Image not described in source]
 
-Meyer found that the alkali metals had the highest molar volumes, and that molar volumes decreased steadily with increasing atomic mass, then leveled off, and finally rose again. The elements located on the rising portion of a plot of molar volume versus molar mass were typically nonmetals. If we look at the plot of the data in the table, we can immediately identify those elements with the largest molar volumes (A, B, F) as metals located on the left side of the periodic table. The element with the smallest molar volume (E) is aluminum. The plot shows that the subsequent elements (C, D) have molar volumes that are larger than that of E, but smaller than those of A and B. Thus, C and D are most likely to be nonmetals (which is the case: C = sulfur, D = phosphorus).
+   Meyer found that the alkali metals had the highest molar volumes, and that molar volumes decreased steadily with increasing atomic mass, then leveled off, and finally rose again. The elements located on the rising portion of a plot of molar volume versus molar mass were typically nonmetals. If we look at the plot of the data in the table, we can immediately identify those elements with the largest molar volumes (A, B, F) as metals located on the left side of the periodic table. The element with the smallest molar volume (E) is aluminum. The plot shows that the subsequent elements (C, D) have molar volumes that are larger than that of E, but smaller than those of A and B. Thus, C and D are most likely to be nonmetals (which is the case: C = sulfur, D = phosphorus).
 
 ### Contributors and Attributions
 
@@ -562,7 +562,7 @@ In 1913, a Danish physicist, Niels Bohr (1885–1962; Nobel Prize in Physics, 19
 
 Using classical physics, Niels Bohr showed that the energy of an electron in a particular orbit is given by
 
-En = (−RHhc)/n^2
+En = (−RH hc)/n^2
 
 where RH is the Rydberg constant, h is Planck’s constant, c is the speed of light, and n is a positive integer corresponding to the number assigned to the orbit, with n = 1 corresponding to the orbit closest to the nucleus. In this model n = ∞ corresponds to the level where the energy holding the electron and the nucleus together is zero. In that level, the electron is unbound from the nucleus and the atom has been separated into a negatively charged (the electron) and a positively charged (the nucleus) ion. In this state the radius of the orbit is also infinite. The atom has been ionized.
 
@@ -582,13 +582,13 @@ Figure 2.1.2.3: The emission of light by a hydrogen atom in an excited state. (a
 
 So the difference in energy (ΔE) between any two orbits or energy levels is given by ΔE = E_nl − E_nh, where nl is the final orbit and nh the initial orbit. Substituting from Bohr’s equation (Equation 2.1.2.4) for each energy value gives
 
-ΔE = E_final − E_initial = −(RHhc)/(nh^2) − (−(RHhc)/(nl^2)) = −RHhc(1/(nh^2) − 1/(nl^2))
+ΔE = E_final − E_initial = −(RH hc)/(nh^2) − (−(RH hc)/(nl^2)) = −RH hc(1/(nh^2) − 1/(nl^2))
 
 [Note: with nl the final orbit, as the paragraph above says, the expression after the first equals sign is E_initial − E_final, not E_final − E_initial: E_final − E_initial = −RHhc(1/(nl^2) − 1/(nh^2)). The book's expression is the energy of the emitted photon, a positive quantity, and the equation for 1/λ that follows from it is the usual Rydberg equation. The equation is left as printed.]
 
 If n_h > n_l, the transition is from a higher energy state (larger-radius orbit) to a lower energy state (smaller-radius orbit), as shown by the dashed arrow in part (a) in Figure 2.1.2.3. Substituting hc/λ for ΔE gives
 
-ΔE = hc/λ = −RHhc(1/(nh^2) − 1/(nl^2))
+ΔE = hc/λ = −RH hc(1/(nh^2) − 1/(nl^2))
 
 Canceling hc on both sides gives
 

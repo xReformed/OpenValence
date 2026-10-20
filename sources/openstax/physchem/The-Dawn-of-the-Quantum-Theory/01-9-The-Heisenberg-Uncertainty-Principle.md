@@ -58,7 +58,7 @@ Equation (1.9.4) was further refined by Heisenberg and his colleague Niels Bohr,
 
 [Note: the inequality with ħ/2 was proved by Earle Kennard in 1927 (and by Hermann Weyl in 1928), not by Heisenberg and Bohr; Heisenberg's 1927 paper gave the approximate relation. The text is left as printed.]
 
-ΔpxΔx ≥ h/(4π) = (ħ)/2
+ΔpxΔx ≥ h/(4π) = ħ/2
 
 with ħ = h/(2π) = 1.0545718 × 10^−34 m^2·kg/s.
 
@@ -81,15 +81,15 @@ An electron is confined to the size of a magnesium atom with a 150 pm radius. Wh
 
 The uncertainty principle (Equation (1.9.5)):
 
-ΔpΔx ≥ (ħ)/2
+ΔpΔx ≥ ħ/2
 
 can be written
 
-Δp ≥ (ħ)/(2Δx)
+Δp ≥ ħ/(2Δx)
 
 and substituting Δp = mΔv since the mass is not uncertain.
 
-Δv ≥ (ħ)/(2 m Δx)
+Δv ≥ ħ/(2 m Δx)
 
 the relevant parameters are
 
@@ -127,7 +127,7 @@ b. What is the maximum uncertainty of its position?
 
 From Equation (1.9.5), the Δpx = mΔvx with m = 1.0 g. Solving for Δx to get
 
-Δx = (ħ)/(2 mΔv)
+Δx = ħ/(2 mΔv)
 
 = (1.0545718 × 10^−34 m^2·kg/s)/((2)(0.001 kg)(10^−6 m/s))
 

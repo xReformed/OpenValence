@@ -114,7 +114,7 @@ Many soaps are also slightly basic because they contain compounds that act as Br
 
 Perhaps the most dangerous household chemical is the lye-based drain cleaner. Lye is a common name for NaOH, although it is also used as a synonym for KOH. Lye is an extremely caustic chemical that can react with grease, hair, food particles, and other substances that may build up and clog a water pipe. Unfortunately, lye can also attack body tissues and other substances in our bodies. Thus when we use lye-based drain cleaners, we must be very careful not to touch any of the solid drain cleaner or spill the water it was poured into. Safer, non-lye drain cleaners (like the one in the accompanying figure) use peroxide compounds to react on the materials in the clog and clear the drain.
 
-Figure 12.3.1: Drain Cleaners. Drain cleaners can be made from a reactive material that is less caustic than a base. Source: Photo used by permission of Citrasolv, LLC .
+Figure 12.3.1: Drain Cleaners. Drain cleaners can be made from a reactive material that is less caustic than a base. Source: Photo used by permission of Citrasolv, LLC.
 
 ## Key Takeaways
 

@@ -11,11 +11,11 @@ Let’s review briefly some of the methods for preparing carboxylic acids that w
 
 - Oxidation of a substituted alkylbenzene with KMnO4 gives a substituted benzoic acid (Section 16.8). Both primary and secondary alkyl groups can be oxidized, but tertiary groups are not affected.
 
-[Image: The oxidation reaction of p-nitrotoluene using potassium permanganate and water at 95 degrees Celcius to form p-nitrobenzoic acid (88 percent yield). Methyl group is oxidized to carboxylic acid.]
+   [Image: The oxidation reaction of p-nitrotoluene using potassium permanganate and water at 95 degrees Celcius to form p-nitrobenzoic acid (88 percent yield). Methyl group is oxidized to carboxylic acid.]
 
 - Oxidation of a primary alcohol or an aldehyde yields a carboxylic acid (Section 17.7 and Section 19.3). Primary alcohols are often oxidized with the Dess Martin periodinane, and aldehydes are similarly oxidized with alkaline KMnO4.
 
-[Image: Oxidation reactions of 4-methyl-1-pentanol to 4-methylpentanoic acid via Dess Martin periodinane, and hexanal to hexanoic acid via potassium permanganate with water and sodium hydroxide.]
+   [Image: Oxidation reactions of 4-methyl-1-pentanol to 4-methylpentanoic acid via Dess Martin periodinane, and hexanal to hexanoic acid via potassium permanganate with water and sodium hydroxide.]
 
 ### Hydrolysis of Nitriles
 

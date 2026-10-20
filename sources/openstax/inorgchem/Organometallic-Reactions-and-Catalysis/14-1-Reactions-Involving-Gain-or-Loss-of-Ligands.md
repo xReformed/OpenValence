@@ -63,27 +63,27 @@ A general scheme for dissociative ligand substitution.
 
 Let’s begin with the general situation in which k1 and k_–1 are similar in magnitude. Since k1 is rate limiting, k2 is assumed to be much larger than k1 and k_–1. Most importantly, we need to assume that variation in the concentration of the unsaturated intermediate is essentially zero. This is called the steady state approximation, and it allows us to set up an equation that relates reaction rate to observable concentrations Hold onto that for a second; first, we can use step 2 to establish a preliminary rate expression.
 
-rate = k2[LnM–◊][Li] (1)
+rate = k2[Ln M–◊][Li] (1)
 
 Of course, the unsaturated complex is present in very small concentration and is unmeasurable, so this equation doesn’t help us much. We need to remove the concentration of the unmeasurable intermediate from (1), and the steady state approximation helps us do this. We can express variation in the concentration of the unsaturated intermediate as (processes that make it) minus (processes that destroy it), multiplying by an arbitrary time length to make the units work out. All of that equals zero, according to the SS approximation. The painful math is almost over! Since Δt must not be zero, the other factor, the collection of terms, must equal zero.
 
-Δ[LnM–◊] = 0 = (k1[LnM–L^d]–k–1[LnM–◊][L^d]–k2[LnM–◊][Li])Δt (2)
+Δ[Ln M–◊] = 0 = (k1[Ln M–L^d]–k–1[Ln M–◊][L^d]–k2[Ln M–◊][Li])Δt (2)
 
-0 = k1[LnM–Ld]–k_ − 1[LnM–◊][Ld]–k2[LnM–◊][Li] (3)
+0 = k1[Ln M–Ld]–k_−1[Ln M–◊][Ld]–k2[Ln M–◊][Li] (3)
 
-Rearranging to solve for [LnM–◊], we arrive at the following.
+Rearranging to solve for [Ln M–◊], we arrive at the following.
 
-[LnM–◊] = k1 ([LnM–Ld])/((k_ − 1[Ld] + k2[Li]) (4)
+[Ln M–◊] = k1 ([Ln M–Ld])/((k_−1[Ld] + k2[Li]) (4)
 
 Finally, substituting into equation (1) we reach a verifiable rate equation.
 
-rate = k2 k1 ([LnM–Ld][Li])/((k_ − 1[Ld] + k2[Li]) (5)
+rate = k2 k1 ([Ln M–Ld][Li])/((k_−1[Ld] + k2[Li]) (5)
 
 When k_–1 is negligibly small, (5) reduces to the familiar equation (6), typical of dissociative reactions like S_N1.
 
-rate = k1[LnM–Ld] (6)
+rate = k1[Ln M–Ld] (6)
 
-Unlike the associative rate law, this rate does not depend on the concentration of incoming ligand. For reactions that are better described by (5), we can drown the reaction in incoming ligand to make k2[Li] far greater than k_ − 1[Ld], essentially forcing the reaction to fit equation (6).
+Unlike the associative rate law, this rate does not depend on the concentration of incoming ligand. For reactions that are better described by (5), we can drown the reaction in incoming ligand to make k2[Li] far greater than k_−1[Ld], essentially forcing the reaction to fit equation (6).
 
 #### The Unsaturated Intermediate & Stereochemistry
 
@@ -126,18 +126,18 @@ The prototypical mechanism of associative ligand substitution. The first step is
 
 Reaction kinetics are commonly used to elucidate organometallic reaction mechanisms, and ligand substitution is no exception. Different mechanisms of substitution may follow different rate laws, so plotting the dependence of reaction rate on concentration often allows us to distinguish mechanisms. Associative substitution’s rate law is analogous to that of the S_N2 reaction—rate depends on the concentrations of both starting materials.
 
-LnM–L^d + Li → LnM–Li + L^d
+Ln M–L^d + Li → Ln M–Li + L^d
 
-(d[LnM–L^i])/dt = rate = k1[LnM–L^d][L^i]
+(d[Ln M–L^i])/dt = rate = k1[Ln M–L^d][L^i]
 
-The easiest way to determine this rate law is to use pseudo-first-order conditions. Although the rate law is second order overall, if we could somehow render the concentration of the incoming ligand unchanging, the reaction would appear first order. The observed rate constant under these conditions reflects the constancy of the incoming ligand’s concentration (k_obs = k1[L^i], where both k1 and [Li] are constants). How can we make the concentration of the incoming ligand invariant, you ask? We can drown the reaction in ligand to achieve this. The teensy weensy bit actually used up in the reaction has a negligible effect on the concentration of the “sea” of starting ligand we began with. The observed rate is equal to k_obs[LnM–L^d], as shown by the purple trace below. By determining k_obs at a variety of [L^i] values, we can finally isolate k1, the rate constant for the slow step. The red trace below at right shows the idea.
+The easiest way to determine this rate law is to use pseudo-first-order conditions. Although the rate law is second order overall, if we could somehow render the concentration of the incoming ligand unchanging, the reaction would appear first order. The observed rate constant under these conditions reflects the constancy of the incoming ligand’s concentration (k_obs = k1[L^i], where both k1 and [Li] are constants). How can we make the concentration of the incoming ligand invariant, you ask? We can drown the reaction in ligand to achieve this. The teensy weensy bit actually used up in the reaction has a negligible effect on the concentration of the “sea” of starting ligand we began with. The observed rate is equal to k_obs[Ln M–L^d], as shown by the purple trace below. By determining k_obs at a variety of [L^i] values, we can finally isolate k1, the rate constant for the slow step. The red trace below at right shows the idea.
 
 Figure 14.1.1.3: Associative substitution under pseudo-first-order conditions. The reaction is “swamped out” with incoming ligand. (Michael Evans)
 Associative substitution under pseudo-first-order conditions. The reaction is
 
 In many cases, the red trace ends up with a non-zero y-intercept…curious, if we limit ourselves to the simple mechanism shown in the first figure of this post. A non-zero intercept suggests a more complex mechanism. We need to add a new term (called ks for reasons to become clear shortly) to our first set of equations:
 
-rate = (k1[Li] + ks)[LnM–L^d]
+rate = (k1[Li] + ks)[Ln M–L^d]
 
 k_obs = k1[Li] + ks
 
@@ -155,7 +155,7 @@ As we saw in discussions of the trans effect, the entering and departing ligands
 Figure 14.1.1.5: A mechanism involving approach to an axial position and departure from an equatorial position violates microscopic reversibility. Forward and reverse reactions a and b differ! (Michael Evans)
 A mechanism involving approach to an axial position and departure from an equatorial position violates microscopic reversibility.
 
-The figure above shows why a mechanism involving axial approach and equatorial departure (or vice versa) is not possible. The forward and reverse reactions differ, in fact, in both steps. In forward mechanism a, the incoming ligand enters an axial site. But in the reverse reaction, the incoming ligand (viz., the departing ligand in mechanism a) sits on an equatorial site. The second steps of each mechanism differ too—a involves loss of an equatorial ligand, while b involves loss of an axial ligand. Long story short, this mechanism violates microscopic reversibility. And what about a mechanism involving axial approach and axial departure? Such a mechanism is unlikely on electronic grounds. The equatorial sites are more electron rich than the axial sites, and σ bonding to the axial d_z^2 orbital is expected to be strong. Intuitively, then, loss of ligand from an axial site is less favorable than loss from an equatorial site.
+The figure above shows why a mechanism involving axial approach and equatorial departure (or vice versa) is not possible. The forward and reverse reactions differ, in fact, in both steps. In forward mechanism a, the incoming ligand enters an axial site. But in the reverse reaction, the incoming ligand (viz., the departing ligand in mechanism a) sits on an equatorial site. The second steps of each mechanism differ too—a involves loss of an equatorial ligand, while b involves loss of an axial ligand. Long story short, this mechanism violates microscopic reversibility. And what about a mechanism involving axial approach and axial departure? Such a mechanism is unlikely on electronic grounds. The equatorial sites are more electron rich than the axial sites, and σ bonding to the axial d_(z^2) orbital is expected to be strong. Intuitively, then, loss of ligand from an axial site is less favorable than loss from an equatorial site.
 
 I know what you’re thinking: what the heck does all of this have to do with stereochemistry? Notice that, in the equatorial-equatorial mechanism (first figure of this post), the axial ligands don’t move at all. The configuration of the starting complex is thus retained in the product. Although retention is “normal,” complications often arise because five-coordinate TBP complexes—like other odd-coordinate organometallic complexes—are often fluxional. Axial and equatorial ligands can rapidly exchange through a process called Berry pseudorotation, which resembles the axial ligands “cutting through” a pair of equatorial ligands like scissors (animation!). Fluxionality means that all stereochemical bets are off, since any ligand can feasibly occupy an equatorial site. In the example below, the departing ligand starts out cis to L, but the incoming ligand ends up trans to L.
 

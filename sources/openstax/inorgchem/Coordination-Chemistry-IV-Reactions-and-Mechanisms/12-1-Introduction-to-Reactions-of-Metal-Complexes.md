@@ -127,7 +127,7 @@ e. Δ G°rxn for the reverse reaction (D to A) is the same as for the forward di
 
 [Note: corrected; the source prints "froward" where this reads "forward". A typing error.]
 
-[Image not described in source]
+   [Image not described in source]
 
 f. The fastest step has the lowest barriers: this would be the step to/from B and C.
 

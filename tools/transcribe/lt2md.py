@@ -41,9 +41,24 @@ SYMBOLS = {
     "ddagger": "‡", "dagger": "†", "Longleftarrow": "⟸", "Longrightarrow": "⟹",
     "partial": "∂", "int": "∫", "lessapprox": "⪅", "gtrapprox": "⪆",
     "sf": "", "bf": "", "rm": "", "large": "", "Large": "", "small": "", "normalsize": "",
+    "scriptsize": "", "footnotesize": "", "tiny": "",
+    # Γ1 ⊗ Γ2: the direct product of two representations (Physical Chemistry 12.15).
+    "otimes": "⊗", "oplus": "⊕",
     "big": "", "Big": "", "bigg": "", "Bigg": "", "bigl": "", "bigr": "", "Bigl": "", "Bigr": "",
     # A function name: spaced off from a coefficient before it (A sin(rx), not Asin(rx)).
-    "sin": "\x13sin", "cos": "\x13cos", "tan": "\x13tan",
+    # And from a variable after it (\cos m\theta: cos mθ, not cosmθ; Physical Chemistry 2.5).
+    "sin": "\x13sin\x16", "cos": "\x13cos\x16", "tan": "\x13tan\x16", "cot": "\x13cot\x16",
+    # Physical Chemistry (LibreTexts) 2–4: operators, probabilities and set notation.
+    # \lbrace and \rbrace are literal braces (\x1a \x1b until the end, like \{ \}).
+    "vert": "|", "Vert": "‖", "ast": "*", "in": "∈", "notin": "∉", "imath": "i", "jmath": "j",
+    "checkmark": "✓", "Rightarrow": "⇒", "Leftarrow": "⇐", "Leftrightarrow": "⇔",
+    "iint": "∬", "iiint": "∭", "oint": "∮", "dots": "…", "bigtriangledown": "∇",
+    "square": "□", "lbrace": "\x1a", "rbrace": "\x1b",
+    # Physical Chemistry 5–6: φ written \varphi, i ≠ j written i \ne j, a result in a \boxed{…}.
+    "varphi": "φ", "vartheta": "θ", "ne": "≠", "boxed": "",
+    # A Slater determinant's elided rows and columns (Physical Chemistry 8.6).
+    "vdots": "⋮", "ddots": "⋱", "mp": "∓",  # E = α ∓ β (10.5)
+    "hslash": "ħ", "leadsto": "⇝",  # (9.1, 10.2)
 }
 
 
@@ -64,7 +79,8 @@ def wrap(part):
     # Braces stay (sub/superscripts are resolved later); they're ignored for the test.
     # Bare only for a single symbol (n^2, λ, mol) or a plain number; "18.0g" keeps parens.
     # Strikeout markers (\x0e…\x0f) don't count: a struck-out "mol" is still one symbol.
-    simple = re.fullmatch(r"[A-Za-zℓλνΔ]+(?:\^[−\d]+)?|[\d.]+", re.sub("[{}\x0e\x0f]", "", part))
+    # A lone Greek letter too: \left(\dfrac{a}{\pi}\right) -> (a/π), not (a/(π)) (Physical Chemistry 7.4).
+    simple = re.fullmatch(r"[A-Za-zℓλνΔ]+(?:\^[−\d]+)?|[α-ωΑ-Ωħ](?:\^[−\d]+)?|[\d.]+", re.sub("[{}\x0e\x0f]", "", part))
     return part if simple else f"({part})"
 
 
@@ -73,16 +89,19 @@ def expand_frac(s):
         num, after = brace_group(s, s.index("{", k))
         den, end = brace_group(s, s.index("{", after))
         frac = wrap(expand_frac(num)) + "/" + wrap(expand_frac(den))
-        # The argument of a function: \log \dfrac{I_0}{I} -> log((I0)/I), not log(I0)/I.
-        if re.search(r"(?:\\|\b)(?:log|ln|exp|sin|cos|tan)\s*$", s[:k]):
+        # The argument of a function: \log \dfrac{I_0}{I} -> log((I0)/I), not log(I0)/I;
+        # braced or squared too, \sin{\dfrac{n \pi x}{L_x}}, \sin^2 \dfrac{3\pi x}{L} (Physical Chemistry 3.5, 3.9).
+        if re.search(r"(?:\\|\b)(?:log|ln|exp|sin|cos|tan|cot)(?:\^\d+)?[\s{]*$", s[:k]):
             frac = f"({frac})"
         # A factor after a fraction: \dfrac{-8\pi^2m_eE}{h^2}\psi -> ((−8π^2 meE)/h^2)ψ, so ψ
         # can't be read as part of the denominator. Likewise a number or letter:
         # \frac{1}{4} 3(3+1) -> (1/4)3(3+1), not 1/43(3+1) (Inorganic Chemistry 10.1.2).
-        # (Only a letter or digit right after it, not one past a closing group, ^{\frac{1}{3}}a,
-        # or a function name: (0.05916 V)/1 log(…).)
-        elif re.match(r"[{}]*[α-ωΑ-Ω]", s[end:]) or (
-                re.match(r"\w", s[end:]) and not re.match(r"(?:log|ln|exp|sin|cos|tan)(?![a-z])", s[end:])):  # also across groups: \textcolor{green}{\dfrac…}\textcolor{red}{\psi}
+        # (Only right after it, not past a closing group: ^{\frac{1}{3}}a.)
+        # So does an integral or root: \frac{2}{L}\int … -> (2/L)∫…, not 2/L∫… (Physical Chemistry 3.6),
+        # a function, \frac{2}{L}\sin^2 … -> (2/L) sin^2…, and a bracket, \dfrac{h}{x}(f(x)+3) ->
+        # (h/x)(f(x) + 3), not h/x(f(x) + 3) (Physical Chemistry 3.6, 4.6).
+        elif re.match(r"[{}]*[α-ωΑ-Ω∫∬∭∮√∇]", s[end:]) or re.match(r"\{*\s*[\w(\[\x0e]", s[end:]):  # \x0e: a struck-out factor; [ (8.6)
+            # (also across groups: \textcolor{green}{\dfrac…}\textcolor{red}{\psi})
             frac = f"({frac})"
         # Two fractions side by side multiply: \frac{2hc^2}{\lambda^5}\frac{1}{e^{…}-1} ->
         # (2hc^2)/λ^5 · 1/(…), not …/λ^51/(…) (Physical Chemistry 1.2).
@@ -107,6 +126,15 @@ def tex_arg(s, i):
 def tilde(letter):
     """A letter with a tilde over it, precomposed where Unicode has one (ṽ)."""
     return unicodedata.normalize("NFC", letter + "̃")
+
+
+def roman(n):
+    """A list number in lower-case roman numerals: 4 -> iv."""
+    out = ""
+    for value, digits in ((10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i")):
+        while n >= value:
+            out, n = out + digits, n - value
+    return out
 
 
 def mark(text, combining):
@@ -159,11 +187,27 @@ BONDS = {"-": "−", "=": "=", "#": "≡", "1": "−", "2": "=", "3": "≡", "..
 
 # A superscript that needs no grouping: a number, word, or charge (10^−14, i^th,
 # SO4^2−, P^*). Anything else is an expression and is grouped: e^(−0.693 t/t_1/2).
-SIMPLE_SUP = re.compile(r"[+\-−–]?[\w.*′°\x00\x0e\x0f]*[+\-−–]?")
+SIMPLE_SUP = re.compile(r"[+\-−–]?[\w.*′°∞\x00\x0e\x0f]*[+\-−–]?")
+
+
+def simple_sup(content):
+    """A superscript that needs no grouping. A product of a number and a letter, or of
+    letters, is an expression, e^{-4t}, e^{ikx} -> e^(−4t), e^(ikx) (Physical Chemistry
+    2.2); an ordinal or a roman numeral is a word: i^th, Fe^III."""
+    core = content.strip()
+    if not SIMPLE_SUP.fullmatch(core):
+        return False
+    # A text run counts as a letter: \mathrm{e}^{\mathrm{i}\phi} -> e^(iφ) (Physical Chemistry 6.6).
+    core = re.sub(r"\x00\d+\x00", "a", core).strip("+-−–")
+    letters = re.sub(r"[\W\d_]", "", core)
+    if re.search(r"\d[^\W\d_]", core) or (
+            len(letters) >= 2 and not re.fullmatch(r"\d*(?:th|st|nd|rd)|[IVX]+", core)):
+        return False
+    return True
 
 
 def group_sup(content):
-    if SIMPLE_SUP.fullmatch(content.strip()):
+    if simple_sup(content):
         return content
     # <sup>‡ </sup>= (Inorganic Chemistry 12.3.5): spaces stay outside the group, G^(‡) =.
     core = content.strip()
@@ -221,15 +265,40 @@ def environments(s):
     # "\begin {array}" with a space appears too (Inorganic Chemistry 5.4.3).
     matrix = re.compile(r"\\begin\s*\{(p|b|B|v|V|small|)matrix\}((?:(?!\\begin\s*\{).)*?)\\end\s*\{\1matrix\}", re.S)
     array = re.compile(r"\\begin\s*\{array\}\s*\{([^{}]*)\}((?:(?!\\begin\s*\{).)*?)\\end\s*\{array\}", re.S)
+    # \begin{cases} 0 & 0 \leq x \leq L \\ \infty & … \end{cases}: a function defined piece
+    # by piece (Physical Chemistry 3.5), written like a matrix: {0, 0 ≤ x ≤ L; ∞, …}.
+    cases = re.compile(r"\\begin\s*\{cases\}((?:(?!\\begin\s*\{).)*?)\\end\s*\{cases\}", re.S)
     while True:
-        if m := matrix.search(s):
+        if m := cases.search(s):
+            inner = "; ".join(", ".join(tex(cell) for cell in row if cell) for row in rows_of(m.group(1)))
+            s = s[:m.start()] + as_text("{" + inner + "}") + s[m.end():]
+        elif (m := matrix.search(s)) and m.group(1) == "p" and len(rows := rows_of(m.group(2))) == 1 \
+                and len(rows[0]) == 1:
+            # A one-entry pmatrix is a pair of brackets: \dfrac{1}{\sqrt{6}}\begin{pmatrix} 2s_1 - s_2
+            # - s_3 \end{pmatrix} -> (1/(√6))(2s1 − s2 − s3) (Physical Chemistry 12.8).
+            s = s[:m.start()] + "\\left(" + rows[0][0] + "\\right)" + s[m.end():]
+        elif m := matrix.search(s):
             left, right = brackets[m.group(1) + "matrix"]
             inner = "; ".join(", ".join(tex(cell) for cell in row) for row in rows_of(m.group(2)))
             s = s[:m.start()] + as_text(left + inner + right) + s[m.end():]
         elif m := array.search(s):
             spec, body = m.groups()
             rows = [[tex(cell) for cell in row] for row in rows_of(body)]
-            if "|" in spec or "\\hline" in body:
+            if (re.search(r"\\left\s*(?:\(|\[|\||\\\{|\\lbrack|\\vert)\s*$", s[:m.start()])
+                    and len(re.sub(r"[^lcr]", "", spec)) > 1):  # (one column is stacked text, below)
+                # An array set inside \left( … \right) is a matrix or determinant, written as one:
+                # det(φ1s α(1), φ1s β(1), φ2s α(1); …) (Physical Chemistry 8.6's Slater determinants).
+                s = s[:m.start()] + as_text("; ".join(", ".join(c for c in row) for row in rows)) + s[m.end():]
+            elif ("|" in spec or "\\hline" in body
+                  # Unruled, but a grid of matrices: each operation's matrix under its name,
+                  # its character below (Physical Chemistry 12.15).
+                  or any(sum(bool(re.fullmatch(r"[(\[{|‖].*;.*[)\]}|‖]", c, re.S)) for c in row) >= 2
+                         for row in rows)
+                  # … or a grid of four or more columns with no cell opening on a relation (not
+                  # aligned equations): characters under each operation, χ_3N: 9 −1 3 1 (12.10).
+                  or (len(re.sub(r"[^lcr]", "", spec)) >= 4 and len(rows) >= 2
+                      and not any(re.match(r"\s*[=<>≈≤≥→⟶⇌∝≡]", c)
+                                  for row in rows for c in row))):
                 width = max(len(row) for row in rows)
                 rows = [row + [""] * (width - len(row)) for row in rows]
                 lines = ["| " + " | ".join(row) + " |" for row in rows]
@@ -255,9 +324,43 @@ def tex(s):
     s = s.replace("\xa0", " ").replace("~", "\\ ")
     s = s.replace("​", "").replace("﻿", "")  # zero-width spaces: "XeF_​2" (Inorganic Chemistry 8.14.10)
     # Unicode typed into the TeX: 4π&#1013;_0, n^2&#8463;^2, 10^{&#8209;11} (Physical Chemistry 1.8).
-    s = s.replace("ϵ", "ε").replace("ℏ", "ħ").replace("‑", "-")
+    s = s.replace("ϵ", "ε").replace("ℏ", "ħ").replace("‑", "-").replace("‐", "-")  # also U+2010: m_{l2} ‐ 1 (8.8)
+    s = re.sub("[\u2061-\u2063]", "", s)  # invisible "function application": exp\u2061 (Physical Chemistry 5.7)
+    # The cross product typed as a letter: v_{i} = \omega{X}r_{i} (Physical Chemistry 5.8) -> vi = ω × ri.
+    s = re.sub(r"(\\omega|v_\{i\})\{X\}", r"\1\\times ", s)
+    # Source typo: "\text(18.1)" (Physical Chemistry 12.15) \u2014 an equation number typed with parentheses, not braces.
+    s = re.sub(r"\\text\s*\((?=[\d.]+\))", "(", s)
     # The part letter can be a capital: \PageIndex{1A} (Organic Chemistry 29.5, a figure in two parts).
     s = re.sub(r"\\PageIndex\{(\d+)([A-Za-z]*)\}", lambda m: f"{SEC}.{m.group(1)}{m.group(2)}", s)
+    # \ket{a}, \bra{a}, \braket{a}{b}: Dirac notation macros the page defines (Physical Chemistry 9.9).
+    for _ in range(3):  # nested: \ket{\psi} inside other groups
+        s = re.sub(r"\\ket\s*\{((?:[^{}]|\{[^{}]*\})*)\}", r"|\1\\rangle ", s)
+        s = re.sub(r"\\bra\s*\{((?:[^{}]|\{[^{}]*\})*)\}", r"\\langle \1|", s)
+        s = re.sub(r"\\braket\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}",
+                   r"\\langle \1|\2\\rangle ", s)
+    # \{X_i(x)T_i(t)\}: literal braces, a set (Physical Chemistry 2.2), kept out of the
+    # brace handling below until the end.
+    s = s.replace("\\{", "\x1a").replace("\\}", "\x1b")
+    # \int\limits_a^b: limits set above and below; they read the same here.
+    s = re.sub(r"\\(?:no)?limits(?![A-Za-z])", "", s)
+    # \not= and \not\in: a struck-through relation (Physical Chemistry 4.6).
+    s = re.sub(r"\\not\s*=", r"\\neq ", s)
+    s = re.sub(r"\\not\s*\\in(?![A-Za-z])", r"\\notin ", s)
+    # A \not before anything else strikes nothing meaningful: ⟨ψ_v'|\not \hat{\mu}(x)|ψ_v⟩
+    # (Physical Chemistry 5.5) is the transition moment ⟨ψ_v'|μ̂(x)|ψ_v⟩; a [Note] says so.
+    s = re.sub(r"\\not(?![A-Za-z])\s*", "", s)
+    # {\partial \over \partial x}: plain TeX's fraction (Physical Chemistry 3.8), as \frac.
+    while (m := re.search(r"\\over(?![A-Za-z])", s)):
+        depth, start = 0, m.start()
+        while start > 0 and not (s[start - 1] == "{" and depth == 0):
+            start -= 1
+            depth += {"}": 1, "{": -1}.get(s[start], 0)
+        if start == 0:  # no group around it: the whole expression is the fraction
+            s = "{" + s + "}"
+            continue
+        _, end = brace_group(s, start - 1)
+        s = (s[:start - 1] + "\\frac{" + s[start:m.start()] + "}{" + s[m.end():end - 1] + "}"
+             + s[end:])
     # A script belongs to the letter before it even after a space: \epsilon ^2_0 h^3 is
     # ε0^2 h^3, not ε ²₀h^3 (Physical Chemistry 1.8). After an arrow it starts a nuclide:
     # \rightarrow _{138.9088}^{139}\textrm{Ba} (Introductory Chemistry 15.6).
@@ -272,15 +375,54 @@ def tex(s):
     # A superscript written before the subscript, p^2_n, \epsilon^2_0: put the subscript
     # first, as it is displayed, or it reads "p^2 n", "ε^20" (Physical Chemistry 1.8);
     # ΔG^‡_B too (Organic Chemistry 14.3). Not a degree sign: E°_(N2O4 → NO) reads as
-    # displayed (Inorganic Chemistry 8.2).
-    s = re.sub(r"\^\s*(?!\{?\s*(?:\\circ(?![A-Za-z])|°|\\degree(?![A-Za-z])))(\{[^{}]*\}|\\[A-Za-z]+|[^\s{}\\_^()\[\]])"
-               r"\s*_\s*(\{[^{}]*\}|\\[A-Za-z]+|\w)", r"_\2^\1", s)
+    # displayed (Inorganic Chemistry 8.2). A command moved to the end is braced, or it
+    # runs into what follows: \int ^\infty_{-\infty}x -> \int _{-\infty}^{\infty}x (Physical Chemistry 3.8).
+    # A script may hold one group of its own: \int^{\frac{L}{2}}_0 (Physical Chemistry 3.5).
+    group = r"\{(?:[^{}]|\{[^{}]*\})*\}"
+    s = re.sub(r"\^\s*(?!\{?\s*(?:\\circ(?![A-Za-z])|°|\\degree(?![A-Za-z])))(" + group
+               + r"|\\[A-Za-z]+|[^\s{}\\_^()\[\]])\s*_\s*(" + group + r"|\\[A-Za-z]+|\w)",
+               lambda m: "_" + m.group(2) + "^" + ("{" + m.group(1) + "}" if m.group(1).startswith("\\")
+                                                   else m.group(1)), s)
+    # A superscript ends before a number set after it: 1\sigma^2_g 1\sigma^2_u -> 1σg^2 1σu^2,
+    # not 1σg^21σu^2 (Physical Chemistry 9.6).
+    s = re.sub(r"(\^\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w))(?=\s+\d)", r"\1\\ ", s)
+    # The limits of an evaluation bar end before what follows: \right|_{x_0}^{x} (x - x_0)
+    # -> |_x0^x (x − x0), not |_x0^x(x − x0) (Physical Chemistry 5.3).
+    s = re.sub(r"(\\(?:right|[bB]ig[lr]?)\s*\|\s*_\s*(?:\{[^{}]*\}|\w)\s*\^\s*(?:\{[^{}]*\}|\w))", r"\1\\ ", s)
+    # A group holding a superscript, raised to a power, is bracketed: {\sigma^*_{1s}}^2 ->
+    # (σ_1s^*)^2, not σ_1s^*^2 (Physical Chemistry 9.10).
+    s = re.sub(r"(?<![_^A-Za-z])\{((?:[^{}]|\{[^{}]*\})*\^(?:[^{}]|\{[^{}]*\})*)\}(?=\s*\^)", r"\\left(\1\\right)", s)
+    # \phi_{N/2}^1: a fraction as a subscript, with a superscript after it, is grouped (9.9).
+    s = re.sub(r"_\{([^{}()]*/[^{}()]*)\}(?=\s*\^)", r"_{(\1)}", s)
+    # \psi_\uparrow: a spin arrow as a subscript joins its symbol, ψ↑ (10.1); \ue000/\ue001 until the end.
+    s = re.sub(r"_\s*\{?\s*\\uparrow\s*\}?", "\ue000", s)
+    s = re.sub(r"_\s*\{?\s*\\downarrow\s*\}?", "\ue001", s)
+    # \left. and \right.: an invisible delimiter, the open side of |_a^b (Physical Chemistry 3.5).
+    s = re.sub(r"\\(?:left|right)\s*\.", "", s)
+    # \cancelto{S}{⟨ψa|ψ'a⟩}: a term struck out, with the value it becomes, "~~⟨ψa|ψ'a⟩~~ (→ S)"
+    # (Physical Chemistry 3.6, 4.5); \cancel below would strike the value instead.
+    while (k := s.find("\\cancelto")) >= 0 and "{" in s[k:]:
+        value, after = tex_arg(s, k + len("\\cancelto"))
+        body, end = tex_arg(s, after)
+        s = s[:k] + "\\cancel{" + body + "}\\;(\\rightarrow " + value + ")" + s[end:]
+    # A struck-out relation is its negation: \xcancel{<} is ≮ (Physical Chemistry 4.1).
+    s = re.sub(r"\\[bx]?cancel\s*\{\s*(?:<|\\lt)\s*\}", "≮", s)
+    s = re.sub(r"\\[bx]?cancel\s*\{\s*(?:>|\\gt)\s*\}", "≯", s)
+    s = re.sub(r"\\[bx]?cancel\s*\{\s*=\s*\}", r"\\neq ", s)
+    # \bcancel and \xcancel strike out as \cancel does (Physical Chemistry 2.4).
+    s = re.sub(r"\\[bx]cancel(?![A-Za-z])", r"\\cancel", s)
     s = lewis_dots(s)
     s = s.replace("\\dfrac", "\\frac").replace("\\tfrac", "\\frac").replace("\\%", "%")
+    # \dfrac {1}2: a one-character argument without braces, braced, or the next group in the
+    # expression would be read as the denominator (Physical Chemistry 8.6).
+    arg = r"(\{(?:[^{}]|\{[^{}]*\})*\}|\\[A-Za-z]+|[^\s{}\\])"
+    s = re.sub(r"\\frac\s*" + arg + r"\s*" + arg,
+               lambda m: "\\frac" + "".join(a if a.startswith("{") else "{" + a + "}" for a in m.groups()), s)
     s = re.sub(r"\^\{\s*\^\{([^{}]*)\}\s*\}", r"^{\1}", s)  # n^{^{2}} (Inorganic Chemistry 2.1.2): n^2
     # A subscript that is a condition: \psi_{x=0} -> ψ_(x=0), not ψ_x = 0.
     s = re.sub(r"_\{([^{}]*=[^{}]*)\}", lambda m: "_{(" + m.group(1).replace("=", "\x14") + ")}", s)
     s = re.sub(r"\\label\s*\{[^{}]*\}", "", s)  # equation labels are never displayed
+    s = re.sub(r"\\label(?![A-Za-z])(?!\s*\{)", "", s)  # nor a \label left without one (Physical Chemistry 8.4)
     # … nor a label holding other markup: \label{\(\PageIndex{8}\)} (Inorganic Chemistry 8.7.2).
     while (m := re.search(r"\\label\s*\{", s)):
         _, end = brace_group(s, m.end() - 1)
@@ -297,15 +439,29 @@ def tex(s):
         above, end = brace_group(s, m.end())
         label = ", ".join(part for part in (above.strip(), (m.group(1) or "").strip()) if part)
         s = s[:m.start()] + "\\rightarrow" + (f"\\; ({label})\\; " if label else "") + s[end:]
-    # \underbrace{reaction}_{\text{Direct combustion}}: a label under an expression.
-    while (m := re.search(r"\\underbrace\s*(?=\{)", s)):
+    # \underbrace{reaction}_{\text{Direct combustion}}: a label under an expression; and
+    # \overbrace{\psi^*}^{R_{n,l}Y_l^{m_l}}, one over it (Physical Chemistry 6.4).
+    while (m := re.search(r"\\(under|over)brace\s*(?=\{)", s)):
         body, end = brace_group(s, m.end())
         label = ""
-        if (under := re.match(r"\s*_\s*(?=\{)", s[end:])):
+        if (under := re.match(r"\s*[_^]\s*(?=\{)", s[end:])):
             label, end = brace_group(s, end + under.end())
+        # A sum or difference labelled as a whole is bracketed (Physical Chemistry 8.2), not a
+        # chemical equation (\ce{…}), which reads as one already.
+        if (label and "\\ce" not in body
+                and not re.search(r"\\(?:long)?rightarrow|\\rightleftharpoons|\\leftrightarrow|->|<=>|[→⇌]", body)
+                and re.search(r"(?<=[^\s{(])\s*[-+]\s*(?=\S)", body.strip())
+                and not re.fullmatch(r"\s*[\[(].*[\])]\s*", body, re.S)):  # [ … ] is bracketed already
+            body = "(" + body + ")"
         s = s[:m.start()] + body + (f"\\; ({label})" if label else "") + s[end:]
     s = re.sub(r"\\mathring\s*\{\s*(?:\\mathrm\s*\{\s*A\s*\}|A)\s*\}", "Å", s)  # \mathring{\mathrm{A}}: ångström
     s = re.sub(r"\\ce\s+(\w+)", r"\\ce{\1}", s)  # "\ce C": a one-token argument without braces
+    # m_\ce{H}, m_\ce{^35Cl}: a formula as a subscript, braced (Physical Chemistry 5.2); a
+    # plain one joins (mH), one with a mass number is grouped, m_(^35Cl).
+    s = re.sub(r"_\s*\\ce\s*\{\s*([A-Za-z]+)\s*\}", r"_{\1}", s)
+    # m_\mathrm{e} e^2: an upright subscript without braces, braced (Physical Chemistry 8.1).
+    s = re.sub(r"_\s*(\\(?:mathrm|textrm|text)\s*\{[^{}]*\})", r"_{\1}", s)
+    s = re.sub(r"_\s*\\ce\s*(\{[^{}]*\})", r"_{\\ce\1}", s)
     s = re.sub(r"\\PageIndex\{\}", "", s)  # "Exercise \(\PageIndex{}\)": the source left the number out
     s = re.sub(r"\\rule\s*\{[^{}]*\}\s*\{[^{}]*\}", "", s)  # a drawn line under a sum (Inorganic Chemistry 6.3.6)
     s = environments(s)
@@ -322,13 +478,24 @@ def tex(s):
     s = re.sub(r"\\sum\s*_\{?(\w+)\}?\s*\^\{?(\w+)\}?\s*", "Σ_\\1^\\2\\\\ ", s)
     # \bar{v}: the wavenumber written with a bar, v̄ (Inorganic Chemistry 11.1.1).
     s = re.sub(r"\\bar\{?\s*(\w)\}?", lambda m: m.group(1) + "̄", s)
-    # \hat{H}: an operator, Ĥ.
-    s = re.sub(r"\\(?:wide)?hat\{?\s*(\w)\}?", lambda m: unicodedata.normalize("NFC", m.group(1) + "̂"), s)
+    # \hat{\boldsymbol{\mu}}: bold type under the hat can't be shown; the hat is on μ (Physical Chemistry 12.15).
+    s = re.sub(r"(\\(?:wide)?hat\s*\{\s*)\\(?:boldsymbol|mathbf|bm)\s*\{\s*(\\[A-Za-z]+|\w)\s*\}(\s*\})", r"\1\2\3", s)
+    # \hat {\vec {p}}: a vector operator, p̂⃗ (Physical Chemistry 3.3).
+    s = re.sub(r"\\(?:wide)?hat\s*\{\s*\\vec\s*\{?\s*(\w)\s*\}?\s*\}", "\\1\x18\x15", s)
+    # \hat {KE}: a hat over a name, over each letter (Physical Chemistry 3.3).
+    s = re.sub(r"\\(?:wide)?hat\s*\{\s*([A-Za-z]{2,})\s*\}",
+               lambda m: unicodedata.normalize("NFC", "".join(c + "̂" for c in m.group(1))), s)
+    # \hat{H}: an operator, Ĥ; \hat {A} with a space too (Physical Chemistry 4.5). In
+    # \hat{P_x} the hat is on the P, and the group stays open: {P̂_x}.
+    s = re.sub(r"\\(?:wide)?hat\s*(?:\{\s*(\w)\s*\}|(\{)\s*(\w)|(\w))",
+               lambda m: (m.group(2) or "") + unicodedata.normalize(
+                   "NFC", (m.group(1) or m.group(3) or m.group(4)) + "̂"), s)
     # \hat{\sigma}_{xz}: the same on a Greek letter (Inorganic Chemistry 4.3.2).
     s = re.sub(r"\\(?:wide)?hat\s*\{\s*(\\[A-Za-z]+)\s*\}", "\\1\x18", s)
-    # \vec{\mu}, \vec{r}_i, \vec{v_1}: a vector, with an arrow over its symbol (μ⃗, v⃗_1).
-    s = re.sub(r"\\vec\s*\{\s*(\\[A-Za-z]+|\w)", lambda m: "{" + m.group(1) + "\x15", s)
-    s = re.sub(r"\\vec\s*(\\[A-Za-z]+|\w)", lambda m: m.group(1) + "\x15", s)
+    # \vec{\mu}, \vec{r}_i, \vec{v_1}: a vector, with an arrow over its symbol (μ⃗, v⃗_1);
+    # \overrightarrow {x} too (Physical Chemistry 11.2).
+    s = re.sub(r"\\(?:vec|overrightarrow)\s*\{\s*(\\[A-Za-z]+|\w)", lambda m: "{" + m.group(1) + "\x15", s)
+    s = re.sub(r"\\(?:vec|overrightarrow)\s*(\\[A-Za-z]+|\w)", lambda m: m.group(1) + "\x15", s)
     s = re.sub(r"\\color\{\w+\}", "", s)  # \color{red}: colour can't be shown; a [Note] says what it marked
     # \textcolor{red}{…}: the same, with the coloured part as an argument; keep the part.
     while (m := re.search(r"\\textcolor\s*\{\w+\}\s*(?=\{)", s)):
@@ -359,13 +526,17 @@ def tex(s):
     # product does: \sqrt{2m_eE} -> √(2meE), not √2meE.
     while (k := s.find("\\sqrt")) >= 0 and "{" in s[k:]:
         body, end = tex_arg(s, k + len("\\sqrt"))
-        single = re.fullmatch(r"\w+", body) and not re.search(r"\d[A-Za-z]|_", body)
+        # Nor is one with a factor right after it: \sqrt{K}x -> √(K)x, not √Kx (Physical Chemistry 2.2).
+        single = (re.fullmatch(r"\w+", body) and not re.search(r"\d[^\W\d_]|_", body)
+                  and not re.match(r"\s*(?:\w|\\(?![,;: !]|left|right|[bB]ig))", s[end:]))
         s = s[:k] + ("√" + body if single else "√(" + body + ")") + s[end:]
     # \overset{100\%}{\rightarrow}: a label printed above an arrow -> "→ (100%)".
     while (k := s.find("\\overset")) >= 0 and "{" in s[k:]:
         over, after = tex_arg(s, k + len("\\overset"))
         base, end = tex_arg(s, after)
         s = s[:k] + base + "\\; (" + over + ")\\; " + s[end:]
+    # \stackrel{\circ}{A}: the ångström sign, Å (Physical Chemistry 5.9).
+    s = re.sub(r"\\(?:stackrel|overset)\s*\{\s*\\circ\s*\}\s*\{\s*(?:\\mathrm\s*\{\s*A\s*\}|A)\s*\}", r"\\,Å", s)
     # \stackrel{\delta+}{\mathrm{C}}: a partial charge printed above an atom -> "C(δ+)".
     while (k := s.find("\\stackrel")) >= 0 and "{" in s[k:]:
         over, after = tex_arg(s, k + len("\\stackrel"))
@@ -396,6 +567,7 @@ def tex(s):
         body = re.sub(r"\\ce\s*(?=\{)", "", body)
         # mhchem bonds: \ce{Co \bond{-} X} is Co−X, [Y\bond{...}ML_{n}] a partial bond (Inorganic Chemistry 12.2.3).
         body = re.sub(r"\s*\\bond\{([^{}]*)\}\s*", lambda b: BONDS.get(b.group(1), b.group(1)), body)
+        body = re.sub(r"(?<=[A-Za-z\d)])#(?=[A-Za-z(])", "≡", body)  # \ce{N#N}: a triple bond (9.10)
         # ->[\text{electric}][\text{discharge}]: an arrow with conditions over and under it,
         # "→ (electric discharge)" (Inorganic Chemistry 8.11.4).
         body = re.sub(r"\s*->\[([^\[\]]*)\](?:\[([^\[\]]*)\])?\s*",
@@ -418,14 +590,28 @@ def tex(s):
                       lambda m: m.group(1) + "^{" + m.group(2).replace("-", "−") + "}", body)
         body = expand_frac(body)  # \ce{(CH2)_{n} + \dfrac{3 n}{2} O2 -> …}
         s = s[:k] + "\\text{" + body.replace("_", "").replace("{", "").replace("}", "") + "}" + s[end:]
-    s = re.sub(r"\\(text|textrm|mathrm|textbf|textit)\s*\{([^{}]*)\}", protect, s)
+    s = re.sub(r"\\(text|textrm|mathrm|textbf|textit|mbox)\s*\{([^{}]*)\}", protect, s)
     s = s.replace("\\!", "")  # a negative thin space: d\!ν
-    # An integral's limits end before its integrand: \int_0^k x^2 -> ∫0^k x^2, not ∫0^kx^2.
-    s = re.sub(r"(\\int\s*_\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w)\s*\^\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w))", r"\1\\ ", s)
+    # An integral's limits end before its integrand: \int_0^k x^2 -> ∫0^k x^2, not ∫0^kx^2;
+    # a double or triple one's too (\iint, Physical Chemistry 3.6).
+    s = re.sub(r"(\\(?:i+nt|oint)\s*_\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w)\s*\^\s*(?:\{[^{}]*\}|\\[A-Za-z]+|\w))",
+               r"\1\\ ", s)
     s = re.sub(r"\\[,;: ]|\\quad|\\qquad", "\x04", s)  # explicit TeX spaces survive
     s = re.sub(r"\\([A-Za-z]+)", lambda m: SYMBOLS.get(m.group(1), "\\" + m.group(1)) + "\x01", s)
     s = re.sub(r"\s+", "", s).replace("\x01", "")
-    s = re.sub("(?<=[\\w)′])\x13", "\x04", s).replace("\x13", "")  # A sin(rx); sin(ra) = 0
+    # A one-letter superscript is spaced off from a letter after it: \sum_{n=0}^v c_n x^n
+    # -> Σ_(n=0)^v cn x^n, 2^v v!, (r/a0)^l L (Physical Chemistry 5.6, 5.7, 6.4). A word
+    # superscript was braced (i^{th}) and is untouched.
+    s = re.sub(r"(\^[A-Za-zα-ωΑ-Ω∞])(?=[A-Za-zα-ωΑ-Ω\\])", "\\1\x04", s)
+    # So is a one-digit one from the digit after it, as TeX sets it: 1\sigma_g^21\sigma_u^2 ->
+    # 1σg^2 1σu^2 (Physical Chemistry 9.15): only before a molecular orbital's number and Greek
+    # letter, since d^10 and 10^23 are typed for d^{10} and 10^{23}.
+    s = re.sub(r"(\^\d)(?=\d[α-ωΑ-Ω])", "\\1\x04", s)
+    # A one-letter variable before a fraction is a separate factor: y\dfrac{d}{dx} -> y d/dx (5.8).
+    # γ 3/(4a^2) (7.4); a one-letter subscript too, \sum_{R}\dfrac{1}{…} -> ΣR 1/(…) (8.3).
+    s = re.sub(r"(?<![A-Za-z\\])([A-Za-zα-ωΑ-Ω]\}?)(?=\\frac)", "\\1\x04", s)
+    s = re.sub("(?<=[\\w)′}\x00])\x13", "\x04", s).replace("\x13", "")  # A sin(rx); sin(ra) = 0
+    s = re.sub("\x16(?=\\{?[^\\W_])", "\x04", s).replace("\x16", "")  # sin kx, \cos{2\phi}; sin(kx), sin^2
     # A number before a fraction is a separate factor: 10^7\frac{1}{m} -> 10^7 1/m, not 10^71/m.
     s = re.sub(r"(?<=\d)(?=\\frac)", "\x04", s)
     # Three or more explicit spaces separate columns (atom vs. ion): keep a gap.
@@ -443,11 +629,13 @@ def tex(s):
     while (k := s.find("^{", k)) >= 0:
         body, end = brace_group(s, k + 1)
         flat = re.sub(r"[{}]", "", body)
-        if not SIMPLE_SUP.fullmatch(flat):
+        if not simple_sup(flat):
             left, right = ("\x11", "\x12") if re.search(r"[()]", flat) else ("(", ")")
             # A charge after a group is a sign, not an operator: A^{(n+1)+} (Inorganic Chemistry 2.3).
             # So is one ending a mixed-valence label: Cr^{4/3+} (Inorganic Chemistry 8.2.4).
             body = re.sub(r"(?<=[\w)])[+−]$", lambda c: sign(c.group()), body)
+            # \x08 keeps a coefficient on its variable, e^(−4t), from the number-unit spacing below.
+            body = re.sub(r"(?<=\d)(?=[^\W\d_])", "\x08", body)
             s = s[:k] + "^" + left + body + right + s[end:]
         k += 1
     # A word superscript runs into the next word in TeX source (i^{th}component).
@@ -466,45 +654,104 @@ def tex(s):
         # A sign in a subscript belongs to its label, and a label of several words is
         # grouped: NE^{\circ}_{+4~O.S.} -> NE°_(+4 O.S.) (Inorganic Chemistry 8.2.4.3).
         # So is one holding an arrow or operator: \lim_{n_2 \to \infty} -> lim_(n2→∞).
-        if " " in content.strip() or re.search(r"[→=<>≤≥]", content):
-            return "(" + sign(content.strip()) + ")"
-        return content
+        # And a fraction with a bracketed part: \int_{\frac{99 L}{200}} -> ∫_((99L)/200),
+        # not ∫_(99L)/200 (Physical Chemistry 3.6).
+        # A list or a range too: \iint_{a_1, a_2} -> ∬_(a1, a2), P_{x \in a:b} -> P_(x∈a:b);
+        # not a comma already in brackets: ψ_{(n,l,m_l)}, CX_{4(l,s)} (Inorganic Chemistry 2.2, 8.7).
+        # And a sum or difference: x_{n-1} -> x_(n−1), not x_n − 1 (Physical Chemistry 2.3).
+        # And a relation or a superscript: \sum_{i \ne j} -> Σ_(i ≠ j), d_{z^2} -> d_(z^2),
+        # \psi_{21\pm 1} -> ψ_(21±1); a text run counts by its text, \int_{\text{all space}} (6.2, 6.7).
+        # And a quotient of a letter: C_{n/2} -> C_(n/2), not C_n/2 (12.2); t_{1/2} stays.
+        test = re.sub("\x00(\\d+)\x00", lambda t: keep[int(t.group(1))], content)
+        if re.fullmatch(r"\s*\([^()]*\)\s*", content):  # bracketed already: ∫_{(L/2)}, φ_{(N/2)}
+            return content.strip()
+        if (" " in test.strip() or re.search(r"[→=<>≤≥∈≠≈≡^\x19]|\)/|/\(|\w[+−±]\w|[A-Za-z]/\w", test)
+                or "," in re.sub(r"\([^()]*\)", "", content)):
+            # A list is spaced evenly: ψ_{2,1,+1} -> ψ_(2, 1, +1) (Physical Chemistry 6.6).
+            if "," in re.sub(r"\([^()]*\)", "", content):
+                content = re.sub(r",\s*", ", ", content)
+            return "(" + re.sub(r"(?<=\d)(?=[^\W\d_])", "\x08", sign(content.strip())) + ")"
+        # A leading sign is the label's, not an operator: \int_{-a}^a -> ∫_−a^a (Physical Chemistry 5.7).
+        return re.sub(r"^[+−]", lambda c: sign(c.group()), content)
 
+    def letter_sub(m):
+        # A one-letter subscript joins its symbol (k_B -> kB); one followed by another
+        # symbol is spaced off from it: \omega_n t -> ωn t, k_x x -> kx x, not ωnt, kxx
+        # (Physical Chemistry 2.4, 2.5). A digit joins both sides: H_2O -> H2O.
+        # Not a word run on from it: E_cryst, the braces left out (Inorganic Chemistry 7.7).
+        sub = m.group(1) or m.group(2)
+        # An integral's limit keeps "_": \int_Q^{Q + dQ} -> ∫_Q^(Q + dQ), not ∫Q^(…) (Physical Chemistry 5.4).
+        if sub.isalpha() and m.string[m.start() - 1:m.start()] in "∫∬∭∮" and m.start():
+            return "\x10" + sub
+        # A symbol after it in braces counts too: C_n\bf{u} -> Cn u (Physical Chemistry 12.4).
+        after = m.string[m.end():m.end() + 6].lstrip("{")[:3]
+        # A digit subscript on a Greek symbol before a letter, \epsilon_0 R -> ε0 R (9.2), and a letter
+        # subscript before an orbital, C_A 1s_A -> CA 1sA (9.2), are spaced off too.
+        before = m.string[m.start() - 1:m.start()] if m.start() else ""
+        if sub.isdigit() and re.match(r"[α-ωΑ-Ω]", before) and re.match(r"[^\W\d_]", after):
+            return sub + " "
+        if sub.isalpha() and re.match(r"\d[spdf]", after):
+            return sub + " "
+        return sub + (" " if sub.isalpha() and re.match(r"[^\W\d_]|\x00", after)
+                      and not re.fullmatch(r"[a-z]{3}", after) else "")
+
+    # C_\infty, C_{\infty v}: the infinite-fold axis joins its symbol like a letter, C∞, C∞v (Physical Chemistry 12.2).
+    s = re.sub(r"(?<![∫∬∭∮])_(?:\{(∞[a-z]?)\}|(∞))", lambda m: m.group(1) or m.group(2), s)
+    # An integral's limit holding a fraction is grouped: \int_{L/2}^L -> ∫_(L/2)^L (Physical Chemistry 7.4).
+    s = re.sub(r"([∫∬∭∮])_\{([^{}()]*/[^{}()]*)\}", r"\1_{(\2)}", s)  # (a bracketed one is grouped below)
+    # \psi_+, \psi_-: a sign alone as a subscript, ψ_(+), not ψ_ + (Physical Chemistry 2.3).
+    # (Not the sign of what follows: \int_{-\infty} is ∫_−∞.)
+    s = re.sub(r"_(?:\{([+−])\}|([+−]))",
+               lambda m: "\x10(" + sign(m.group(1) or m.group(2)) + ")", s)
     previous = None
     while previous != s:
         previous = s
-        s = re.sub(r"_\{(\d+)\}", r"\1", s)
-        s = re.sub(r"_\{(\w)\}|_(\w)", lambda m: m.group(1) or m.group(2), s)
-        s = re.sub(r"_\{([^{}]*)\}(?=[A-Za-zΑ-ω])", lambda m: "\x10" + word_sub(m.group(1)) + " ", s)
+        # A digit subscript joins (H_{2}O -> H2O); on a Greek symbol, before a letter, it is spaced
+        # off: \epsilon_{0}R -> ε0 R (Physical Chemistry 9.2).
+        s = re.sub(r"(?<=([α-ωΑ-Ω]))_\{(\d+)\}(?=[^\W\d_])|_\{(\d+)\}",
+                   lambda m: m.group(2) + " " if m.group(2) else m.group(3), s)
+        s = re.sub(r"_\{(\w)\}|_(\w)", letter_sub, s)
+        # A plain group inside a subscript goes, so the subscript can be read: \psi_{n\ {el_1}} (7.1).
+        s = re.sub(r"(?<=[^_\\^])\{([^{}]*)\}(?=[^{}]*\})", r"\1", s)
+        s = re.sub(r"_\{([^{}]*)\}(?=[A-Za-zΑ-ω\d])", lambda m: "\x10" + word_sub(m.group(1)) + " ", s)
         s = re.sub(r"_\{([^{}]*)\}", lambda m: "\x10" + word_sub(m.group(1)), s)
     s = s.replace("\x10", "_")
     s = s.replace("{", "").replace("}", "")
-    s = re.sub(r"\s*([=×<>≤≥→⟶⇌⇄↑↓≡+])\s*", r" \1 ", s)
+    s = re.sub(r"\s*([=×<>≤≥→⟶⇌⇄↑↓≡+≠⇒≮≯⇝⊗⊕])\s*", r" \1 ", s)
+    s = s.replace("( → ", "(→ ")  # \cancelto's "(→ S)"
     # Between carbon groups "=" is a double bond, not an equation: CH2=CH2.
     s = re.sub(r"\b(C|CH|CH2) = (?=(?:CH2|CH|C)(?![a-z]))", r"\1=", s)
-    # A sign, not an addition: x = +5, (+2), or a leading +3.
+    # A sign, not an addition: x = +5, (+2), or a leading +3; e^(+iωt) too (Physical Chemistry 3.6).
     s = re.sub(r"(=|\(|^) *\+ +(?=[\d.])", lambda m: (m.group(1) + " " if m.group(1) == "=" else m.group(1)) + "+", s)
+    s = re.sub(r"\( *\+ +(?=[A-Za-zα-ωΑ-Ω/])", "(+", s)  # (+s) − (−s) = 1 (8.4); (+/−) (9.14)
+    s = re.sub(r"(?<=\^\() \+ (?=\w)", "+", s)
     s = re.sub(r"(?<=[\w)])−(?=[\w(])", " − ", s)
     s = re.sub(r",(?=[^\d\s])", ", ", s)
     s = s.replace("\x02", "+").replace("\x03", "−").replace("\x14", "=")
     s = s.replace("\x15", "⃗").replace("\x18", "̂")  # \vec's arrow, \hat's circumflex
     s = s.replace("\x19", "-")
     for _ in range(2):  # electron configurations: 4s^23d^6 -> 4s^2 3d^6 (no 0f: 4s^2p^6d^10f^14)
-        s = re.sub(r"(\d[spdfg])\^(\d+?)(?=[1-9][spdfg])", r"\1^\2 ", s)
-    s = re.sub(r"(\^−?[\d.]+)(?=[A-Za-z])", r"\1 ", s)
+        s = re.sub(r"(\d[spdfg][xyz]?)\^(\d+?)(?=[1-9][spdfg])", r"\1^\2 ", s)  # 2px^2 2py^2 (10.1)
+        s = re.sub(r"(?<!\d)(\d[spdf][xyz]?)(?=[1-9][spdf])", r"\1 ", s)  # 2s 2pz, 2px 2py (10.1)
+    s = re.sub(r"(\^−?[\d.]+)(?=[A-Za-z\x00])", r"\1 ", s)  # 10^14 rad, a \text unit too (5.5)
     # number then unit (109,700cm -> 109,700 cm), but not orbital labels (3s, 4d)
     # and not formulas: a digit before a capital is a subscript or coefficient (H2O, 2H2)
     # and not algebra: a run of variables (2x, 0.00088x, 4ac) stays attached.
     # Nor electrons: 3e^−, not 3 e^−. Nor a subscript: the point group C_2v (Inorganic
     # Chemistry 4), and not an imaginary number in a matrix: 3i.
-    s = re.sub(r"(?<!_)(?<!_\d)(?<!_\d\d)(\d)(?=[a-z])(?![spdf](?:\^|\s|$|[)\]\x05]|[xyz]\b)|e\^)(?![abcxyi]+(?![a-z]))",
+    # Nor a denominator: p^2/2m, not p^2/2 m, which reads (p^2/2)m (Physical Chemistry 3.3).
+    s = re.sub(r"(?<!_)(?<!_\d)(?<!_\d\d)(?<!/)(?<!/\d)(?<!/\d\d)(\d)(?=[a-z])"
+               r"(?![spdf](?:\^|\s|$|[)\]\x05⟩|]|[xyz]\b)|e\^)(?![abcxyi]+(?![a-z]))"  # |1s⟩ (8.4)
+               r"(?![spdf](?:_|\x0f|[a-dA-Z]\d?(?:[\s)(\]⟩|,_\x0f]|$)))",  # |1sa⟩, 1sA(r), |2p_z1⟩, 2s~~ (9.2, 9.5, 10.1, 10.5, 10.7); not 52.9 pm
                r"\1 ", s)
     s = re.sub(r"(\d)(?=\x0e)", r"\1 ", s)  # 45.7 ~~g~~, not 45.7~~g~~
+    s = re.sub(r"(?<=[A-Za-zα-ωΑ-Ω])(\d)(?=e\^)", r"\1 ", s)  # x0 e^(iωt) (Physical Chemistry 5.1); 3e^− stays
     s = s.replace("\x0e", "~~").replace("\x0f", "~~")
     s = re.sub("\x00(\\d+)\x00", lambda m: keep[int(m.group(1))], s)
     s = re.sub(r" +", " ", s)
     s = re.sub(r" \^", "^", s)  # \mathbf{Mg\,}^{2+} -> Mg^2+
-    s = s.replace("\x11", "{").replace("\x12", "}")
+    s = s.replace("\x11", "{").replace("\x12", "}").replace("\x1a", "{").replace("\x1b", "}").replace("\x08", "")
+    s = s.replace("\ue000", "↑").replace("\ue001", "↓")
     return re.sub(r" ?\x05 ?", "\x05", s).strip()  # gap is expanded at the very end
 
 
@@ -512,7 +759,8 @@ def bare_arrays(s):
     """A \\begin{array} … \\end{array} typed straight into a paragraph, outside \\[ \\] or \\( \\)
     (Inorganic Chemistry 13.5.2's D5h character table), gets the display delimiters it lacks."""
     out, k = [], 0
-    for m in re.finditer(r"\\begin\{array\}.*?\\end\{array\}", s, re.S):
+    # An align* block too (Physical Chemistry 6.6's 2p_x and 2p_y derivation).
+    for m in re.finditer(r"\\begin\{(array|align\*?|aligned)\}.*?\\end\{\1\}", s, re.S):
         before = s[:m.start()]
         open_math = (before.count("\\[") - before.count("\\]")) + (before.count("\\(") - before.count("\\)"))
         out.append(s[k:m.start()])
@@ -522,6 +770,15 @@ def bare_arrays(s):
 
 
 def inline_math(s):
+    # A zero-width space hides where a display equation ends and the next sentence starts:
+    # "\[ … \]​A linear combination" (Physical Chemistry 11.1).
+    s = s.replace("​", "")
+    # A point group's Hermann-Mauguin symbol, not a length: \(3m\) (Physical Chemistry 12.6).
+    s = s.replace("Hermann-Mauguin (\\(3m\\))", "Hermann-Mauguin (3m)")
+    # A space typed before "\)" keeps the math off the next word: \(Z_x \)is -> Zx is (Physical Chemistry 9.1).
+    s = re.sub(r"(?<!\\)\s+\\\)(?=[A-Za-z])", r"\\) ", s)
+    # <sup>1</sup>⁄<sub>2</sub>: a fraction set with the fraction slash, ½ -> 1/2 (Physical Chemistry 8.1).
+    s = re.sub(r"\^(\d+)\s*⁄\s*(\d+)", r"\1/\2", s)
     # Source typo: "\(\ce{C10H8}\ is" — the closing "\)" typed as "\ ".
     s = re.sub(r"\\\(\\ce\{([^{}]*)\}\\ (?!\))", r"\(\\ce{\1}\) ", s)
     # Source typo: "\(ce{HNO3}\)" (Inorganic Chemistry 1.3) — the backslash of \ce dropped.
@@ -552,7 +809,18 @@ def inline_math(s):
     s = s.replace("\\)\\)", "\\)")
     # Source typo: "\((n-1\)d\)" (Inorganic Chemistry 2.2.4) — the ")" of (n-1) typed as "\)".
     s = s.replace("\\((n-1\\)d\\)", "\\((n-1)d\\)")
-    # A cross-reference in running text to an equation label; show the label.
+    # Source typo: "is (N-1\), the number" (Physical Chemistry 6.2) — the opening "\(" typed as "(".
+    s = re.sub(r"(?<![\\\w(])\((?=[^()\\]*\\\))", r"\(", s)
+    # Source typo (Physical Chemistry 12.14): "A1Tj(b1)= \frac{1}{\sqrt{2}} (b_{1} +b_{2})\)" — math
+    # with its opening "\(" left out, after an "=" outside any math.
+    s = re.sub(r"(= )(\\frac\{(?:(?!\\[(\[]).)*?\\\))",
+               lambda m: m.group(0) if m.string[:m.start()].count("\\(") > m.string[:m.start()].count("\\)")
+               else m.group(1) + "\\(" + m.group(2), s)
+    # Source typo (Physical Chemistry 12.11): "from our \Gamma to get" — a symbol typed outside math.
+    s = s.replace("our \\Gamma to", "our \\(\\Gamma\\) to")
+    # A cross-reference in running text to an equation label; show the label. Alone in its
+    # math it is text, not math: \(\ref{3-23}\) is (3-23), not (3 − 23) (Physical Chemistry 4.3).
+    s = re.sub(r"\\\(\s*\\ref\{([^{}]*)\}\s*\\\)", r"(\1)", s)
     s = re.sub(r"\\ref\{([^{}]*)\}", r"(\1)", s)
     # Display math set apart from text run up against it: "(CE)\[CE = …\]" in a table cell.
     s = re.sub(r"\\\]\s*\\\[", "\\]\x06\\[", s)  # two display equations in a row: one per line
@@ -619,6 +887,8 @@ class Page(HTMLParser):
         self.spans, self.cell_rowspan, self.cell_colspan = {}, 1, 1
         self.caption_at = None
         self.lists = []
+        self.open_items = 0  # <li>s open: text after a nested list is still its item's
+        self.floated = []  # alt texts of images floated into the paragraph being read
         self.prev_lettered = False
         self.in_figure = False
         self.figure_depth = 0
@@ -695,6 +965,8 @@ class Page(HTMLParser):
         if self.alt:
             # An image can be a list item's whole content: "a. [Image: …]".
             marker, self.pending = self.pending or "", None
+            if not marker and self.continues_item():
+                marker = "   " * len(self.lists)  # further down an item, indented like its text
             # alt text that is just the upload's file name, or a placeholder word
             # ("alt": Inorganic Chemistry 4.3 has diagrams the text goes on to discuss)
             if FILENAME.fullmatch(self.alt) or self.alt.lower() in ("alt", "image", "img"):
@@ -709,19 +981,33 @@ class Page(HTMLParser):
         self.last_sup = None
         return t
 
+    def continues_item(self):
+        """Whether what comes next is more of an open list item, after the text that began it.
+        Not after a table in the item, which stands outside the list already."""
+        return bool(self.lists and self.open_items >= len(self.lists) and self.out
+                    and re.match(r" *(?:- |[a-zA-Z]\. |[ivx]+\. |\d+\. )|   ", self.out[-1]))
+
     def flush(self, prefix=""):
         if t := self.text():
             # A list item's text can sit in a <div>/<p> or come before a nested
             # list; either way its first text carries the item's marker.
             if not prefix and self.pending is not None:
                 prefix, self.pending = self.pending, None
+            # More of an item's text after a list nested in it stays in the item, indented
+            # under its marker (Physical Chemistry 12.2: "If the z-axis lies in the plane …").
+            elif not prefix and self.continues_item():
+                prefix = "   " * len(self.lists)
             # "# mol HCl = …" means "number of"; unescaped it would be a heading.
             if not prefix and t.startswith("#"):
                 t = "\\" + t
             self.out.append(prefix + t)
+        while self.floated:  # pictures floated beside this paragraph
+            self.alt = self.floated.pop(0)
+            self.image_paragraph()
 
     def handle_starttag(self, tag, a):
         a = dict(a)
+        self.after_sup = False  # only text straight after a </sup> counts (handle_data)
         # Some pages were saved with MathJax already rendered: an equation can
         # hold bare <semantics> MathML, a typeset copy (class "math"), and a
         # screen-reader copy. Never read the typeset copy; read the
@@ -730,9 +1016,12 @@ class Page(HTMLParser):
         if "inlineequation" in classes:
             self.mathml_read = False
         if self.skip_at is None and (
-            "math" in classes or ("MJX_Assistive_MathML" in classes and self.mathml_read)
+            ("math" in classes and not {"inline", "display"} & set(classes))  # "math inline": raw TeX (9.9)
+            or ("MJX_Assistive_MathML" in classes and self.mathml_read)
         ):
             self.skip_at = len(self.stack)
+        if self.skip_at is None and re.search(r"display\s*:\s*none", a.get("style") or ""):
+            self.skip_at = len(self.stack)  # hidden: a MathML fallback and broken TeX (Physical Chemistry 10.5)
         if self.skip_at is None and "mt-comment-datetime" in classes:
             self.skip_at = len(self.stack)  # a page comment's timestamp ("Nov 27, 2021, 2:38 PM")
         if self.skip_at is None and tag in ("annotation", "annotation-xml"):
@@ -788,8 +1077,8 @@ class Page(HTMLParser):
                 else:
                     self.buf += "\x06"
             self.first_row = False
-        if tag in BLOCKS:
-            self.flush()
+        if tag in BLOCKS or (tag == "table" and self.cell is None):
+            self.flush()  # text before a table comes before it: a list item's text (Physical Chemistry 11.2)
         if tag == "sup":
             where = "cell" if self.cell is not None else "buf"
             text = self.cell if where == "cell" else self.buf
@@ -814,6 +1103,9 @@ class Page(HTMLParser):
             self.last_sup = None
         elif tag == "sub":
             self.sub_at = ("cell", len(self.cell)) if self.cell is not None else ("buf", len(self.buf))
+        elif tag in ("s", "del", "strike"):
+            # A struck-out table cell, <s>4</s> -> ~~4~~ (Physical Chemistry 8.8's microstate table).
+            self.handle_data("~~")
         elif tag == "pre":
             self.flush()
             self.in_pre = True
@@ -843,16 +1135,19 @@ class Page(HTMLParser):
                 kind = "bullet"
             elif "upper-alpha" in (a.get("style") or ""):
                 kind = "Alpha"  # A., B.: the Strategy steps that answers call "A" (Inorganic Chemistry 2.1.2)
-            elif "lower-alpha" in (a.get("style") or "") or (start > 0 and self.prev_lettered):
-                kind = "alpha"
+            elif re.search(r"lower-(?:alpha|latin)", a.get("style") or "") or (start > 0 and self.prev_lettered):
+                kind = "alpha"  # lower-latin is the same (Physical Chemistry 11.2)
+            elif "lower-roman" in (a.get("style") or ""):
+                kind = "roman"  # i., ii., iii. (Physical Chemistry 12.10)
             else:
                 kind = "decimal"
             self.lists.append([kind, start, len(self.out)])  # kind, items so far, where its output starts
         elif tag == "li" and self.lists:
             kind, n, _ = self.lists[-1]
             self.lists[-1][1] += 1
+            self.open_items += 1
             marker = {"bullet": "- ", "alpha": f"{chr(ord('a') + n)}. ",
-                      "Alpha": f"{chr(ord('A') + n)}. "}.get(kind, f"{n + 1}. ")
+                      "Alpha": f"{chr(ord('A') + n)}. ", "roman": f"{roman(n + 1)}. "}.get(kind, f"{n + 1}. ")
             if self.pending is not None:
                 # The parent item has no text of its own: "3. a. toward reactants".
                 self.pending += marker
@@ -868,6 +1163,9 @@ class Page(HTMLParser):
             alt = (a.get("alt") or "").strip()
             if alt.endswith("Description automatically generated"):
                 alt = re.sub(r"\s+", " ", alt.removesuffix("Description automatically generated")).strip()
+            if "\\(" in alt or "\\[" in alt:
+                # Math in the description: "one in red for \( y = \frac{1}{2}x^2 \)" (Physical Chemistry 5.1).
+                alt = re.sub(r"\s+", " ", inline_math(alt)).strip()
             self.alt = alt or None
             glyph = GLYPH.fullmatch(self.alt or "")
             if glyph:
@@ -884,6 +1182,12 @@ class Page(HTMLParser):
                 if self.alt and self.alt.lower() not in ("alt", "image", "img"):
                     self.cell += (" [Image not described in source] " if FILENAME.fullmatch(self.alt)
                                   else f" [Image: {self.alt}] ")
+                self.alt = None
+            elif not self.in_figure and re.search(r"float\s*:\s*(?:left|right)", a.get("style") or "") \
+                    and re.search(r"\w$", self.buf):
+                # A picture floated beside a paragraph, set into it mid-word: "the orbital
+                # ener<img>gies" (Physical Chemistry 12.15). It follows the paragraph.
+                self.floated.append(self.alt)
                 self.alt = None
             elif not self.in_figure:
                 # An image outside a <figure> has no caption; its alt text is
@@ -963,6 +1267,8 @@ class Page(HTMLParser):
                 self.cell = self.cell[:i] + self.cell[i:].translate(SYMBOL_FONT)
             elif where == "buf":
                 self.buf = self.buf[:i] + self.buf[i:].translate(SYMBOL_FONT)
+        if tag in ("s", "del", "strike"):
+            self.handle_data("~~")
         if tag == "sub" and self.sub_at is not None:
             # p<sub>x</sub> -> p_x, ΔH<sub>vap</sub> -> ΔH_vap: a letter subscript on a
             # letter is marked, the corpus's convention. Digit subscripts (H<sub>2</sub>O)
@@ -1004,6 +1310,7 @@ class Page(HTMLParser):
                     self.cell = text
                 else:
                     self.buf = text
+                self.after_sup = True  # (see handle_data)
         while self.boxes and len(self.stack) <= self.boxes[-1]:
             depth = self.boxes.pop()
             self.note_boxes.discard(depth)
@@ -1091,6 +1398,7 @@ class Page(HTMLParser):
                 self.out.append(t)  # e.g. a figure caption set as a heading
         elif tag == "li":
             self.flush()
+            self.open_items = max(0, self.open_items - 1)
             if self.pending is not None:
                 # An empty numbered item still holds its place (answers to odd
                 # exercises only: "1. …", "2.", "3. …"); other empty items go.
@@ -1163,6 +1471,11 @@ class Page(HTMLParser):
             if self.mms["parts"]:
                 self.mms["parts"][-1] += d
             return
+        # A number straight after a superscript is a new term: 3σ<sup>2</sup>1π<sup>4</sup> ->
+        # 3σ^2 1π^4, not 3σ^21π^4 (Physical Chemistry 10.4).
+        if getattr(self, "after_sup", False) and d[:1].isdigit():
+            d = " " + d
+        self.after_sup = False
         if self.cell is not None:
             self.cell += d
         else:
@@ -1186,13 +1499,14 @@ def repair_broken_image(paragraph):
 
 def line_breaks(paragraph):
     """TeX line breaks between steps: separate paragraphs, except inside a list
-    item or table, where a paragraph break would split it ("x + (−6) = −1; x = +5")."""
-    inline = re.match(r" *(?:- |[a-zA-Z]\. |\d+\. |\|)", paragraph)
+    item or table, where a paragraph break would split it ("x + (−6) = −1; x = +5").
+    A table row starts "| "; "|ψ|^2 ≈ …" is an equation (Physical Chemistry 3.6)."""
+    inline = re.match(r" *(?:- |[a-zA-Z]\. |\d+\. |\| )", paragraph)
     pieces = re.split(" ?\x06 ?", paragraph)
     out = pieces[0]
     for before, piece in zip(pieces, pieces[1:]):
         # A table set in TeX (environments()) always stands as its own block.
-        table = piece.startswith("|") or before.startswith("|") and before.endswith("|")
+        table = piece.startswith("| ") or before.startswith("| ") and before.endswith("|")
         out += ("; " if inline and not table else "\n\n") + piece
     return out
 
@@ -1215,7 +1529,7 @@ text = re.sub(r"(?m)(^\|.*\|)\n\n[.,;:](?=\n|$)", r"\1", text)  # "\[ … \end{a
 text = re.sub(r"(?m)^(#{3,4} (?:Example|Exercise) [\d.]+):[ \t]*$", r"\1", text)  # "Example 13.5.1:"
 # An alt attribute cut at an embedded "<span class=" spills the rest of the tag
 # into the text: '[Image: Propanoic acid reacts with <span class=]' + 'KOH." style="…'.
-text = re.sub(r'\[Image: ([^\]\n]*?)\s*<span class=\]\n\n([^"\n]*)"\s+style="[^\n]*', r"[Image: \1 \2]", text)
+text = re.sub(r'\[Image: ([^\]\n]*?)\s*<span class=\]\n\n *([^"\n]*)"\s+style="[^\n]*', r"[Image: \1 \2]", text)
 text = re.sub(r"(?m)^(#{3,4}) [.,;:]+\s*(?=(?:Example|Exercise)\b)", r"\1 ", text)  # ".Exercise 13.3.4"
 text = re.sub(r"(?m)[ \t]+$", "", text)
 text = re.sub(r"\^\s+\^", " ^", text)  # an empty <sup> </sup> before a real one: "specifically ^83Kr"
@@ -1235,5 +1549,6 @@ text = text.replace("­", "")  # soft hyphens: invisible on the page ("a. ­mer-
 text = re.sub(r"(\d[spdfg](?:_[xyz]+)?)\^(\d+?)(?=[1-9][spdfg])", r"\1^\2 ", text)
 text = re.sub(r"(\d[spdfg](?:_[xyz]+)?)\^(\d+?)(?=[1-9][spdfg])", r"\1^\2 ", text)
 for _ in range(2):  # tighten consecutive list items
-    text = re.sub(r"(?m)^( *(?:- |[a-zA-Z]\. |\d+\.(?: |$)).*)\n\n(?= *(?:- |[a-zA-Z]\. |\d+\.(?: |$)))", r"\1\n", text)
+    text = re.sub(r"(?m)^( *(?:- |[a-zA-Z]\. |[ivx]+\. |\d+\.(?: |$)).*)\n\n(?= *(?:- |[a-zA-Z]\. |[ivx]+\. |\d+\.(?: |$)))",
+                  r"\1\n", text)
 print(text)

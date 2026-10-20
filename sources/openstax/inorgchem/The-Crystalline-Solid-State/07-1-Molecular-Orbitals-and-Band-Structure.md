@@ -78,7 +78,7 @@ Let's consider a chain of a large number (N) of atoms as we did in Chapter 6. Fo
 
 A solution to this problem was proposed by J. Hubbard in 1963.^([1]) Hubbard considered the energy required to transfer an electron from an atom to its nearest neighbor, as shown in the picture at the right. Because each atom already has one electron (with random spin), moving an electron over by one atom requires overcoming the energy of electron-electron repulsion to make a cation-anion pair. For well-separated atoms this energy (U) is given by:
 
-U = IP − Ea − e^2/(4πε0d)
+U = IP − Ea − e^2/(4πε0 d)
 
 where IP and EA are the ionization energy and electron affinity, ε0 is the permittivity of free space, and the last term in the equation represents the coulombic attraction between the cation and the anion. For atoms such as alkali metals, U is on the order of 3–5 eV, which is much larger than the thermal energy kT. Thus we expect there to be very few anion-cation pairs at room temperature, and the chain of atoms should be insulating.
 
@@ -106,7 +106,7 @@ V(r) = −(e^2/(4πε0 r))exp(−qr)
 
 where q, which is the inverse of the screening length, is given by:
 
-q^2 = 4 me^2((3 n)/(π))^(1/3)((2π)/h)
+q^2 = 4 me^2((3 n)/π)^(1/3)((2π)/h)
 
 [Note: the Thomas-Fermi screening parameter is q^2 = 4 m_e e^2 (3n/π)^(1/3) (2π/h)^2: the source writes m_e^2 for m_e e^2 and leaves the last factor unsquared. The text is left as printed.]
 
@@ -243,7 +243,7 @@ n × p = ni^2 = e^{((ΔS^o)/R)}e^{((−ΔH^o)/RT)}
 
 The entropy change for creating electron hole pairs is given by:
 
-ΔS^o = Rln(NC) + Rln(NV) = Rln(NCNV)
+ΔS^o = Rln(NC) + Rln(NV) = Rln(NC NV)
 
 [Note: corrected; the source prints "ΔS^o = Rln(NV) + Rln(NV)" where this reads "ΔS^o = Rln(NC) + Rln(NV)". The two terms are for the conduction and valence bands, NC and NV, as the result shows.]
 
@@ -251,17 +251,17 @@ where N_V and N_C are the effective density of states in the valence and conduct
 
 and thus we obtain
 
-ni^2 = NCNVe^{((−ΔH^o)/RT)}
+ni^2 = NC NV e^{((−ΔH^o)/RT)}
 
-[Note: corrected; the source prints "ni^2 = NCNVe^{(−ΔH^oRT)}" where this reads "ni^2 = NCNVe^{((−ΔH^o)/RT)}". The exponent is −ΔH^o/RT, as in the line above; the source's TeX leaves out the fraction.]
+[Note: corrected; the source prints "ni^2 = NC NV e^{(−ΔH^oRT)}" where this reads "ni^2 = NC NV e^{((−ΔH^o)/RT)}". The exponent is −ΔH^o/RT, as in the line above; the source's TeX leaves out the fraction.]
 
 Since the volume change is negligible, ΔH^o≈ΔE^o, and therefore (ΔH^o)/R≈(E_gap)/k, from which we obtain
 
-ni^2 = NCNVe^{((−E_gap)/kT)}
+ni^2 = NC NV e^{((−E_gap)/kT)}
 
 and finally
 
-n = p = ni = (NCNV)^(1/2)e^{((−E_gap)/(2 kT))}
+n = p = ni = (NC NV)^(1/2)e^{((−E_gap)/(2kT))}
 
 For pure Si (E_gap = 1.1 eV) with N ≈ 10^22/cm^3, we can calculate from this equation a carrier density n_i of approximately 10^10/cm^3 at 300 K. This is about 12 orders of magnitude lower than the valence electron density of Al, the element just to the left of Si in the periodic table. Thus we expect the conductivity of pure semiconductors to be many orders of magnitude lower than those of metals.
 
@@ -281,7 +281,7 @@ where e is the fundamental unit of charge, τ is the scattering time, and m is t
 
 Taking an average of the electron and hole mobilities, and using n = p, we obtain
 
-σ = σoe^{((−E_gap)/(2 kT))}, where σo = 2(NCNV)^(1/2)eμ
+σ = σo e^{((−E_gap)/(2kT))}, where σo = 2(NC NV)^(1/2)eμ
 
 By measuring the conductivity as a function of temperature, it is possible to obtain the activation energy for conduction, which is E_gap/2. This kind of plot, which resembles an Arrhenius plot, is shown at the right for three different undoped semiconductors. The slope of the line in each case is -E_gap/2k.
 

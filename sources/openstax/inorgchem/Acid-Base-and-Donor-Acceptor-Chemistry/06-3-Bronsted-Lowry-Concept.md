@@ -270,13 +270,13 @@ These structures exhibit Hammett acidity parameters in the superacid range. Howe
 
 The acid ionization constants typically used to measure weak acids' acidity are only valid in dilute aqueous solutions. A more general measure of acidity that in principle is valid for any acid is the Hammett acidity function. The Hammett acidity function, Ho, is analogous to the pH used to describe the acidity of aqueous solutions but instead refers to the pure acid:
 
-pH = −log(A_H^+) (for dilute aqueous solutions)
+pH = −log(A_(H^+)) (for dilute aqueous solutions)
 
-Ho = −log(A_H^+) (for pure acids)
+Ho = −log(A_(H^+)) (for pure acids)
 
 where AH^+ is the activity of H^+, which in many dilute solutions is approximately equal to the hydrogen ion concentration (that is why the pH is often defined in terms of [H^+].
 
-At first glance it may seem that the Hammett acidity function is simply a generalization of the pH concept for use in nonaqueous solutions. This is especially so since in water the the pH and Ho do refer to the same quantity. However, the hydrogen ion of the Hammett acidity function is more than a generalization of the pH concept. Its real genius lies in that A_H^+ does not necessarily represent an actual chemical species of identity H^+ but rather an acid's ability to protonate weak indicator bases, B, specifically via the reaction:
+At first glance it may seem that the Hammett acidity function is simply a generalization of the pH concept for use in nonaqueous solutions. This is especially so since in water the the pH and Ho do refer to the same quantity. However, the hydrogen ion of the Hammett acidity function is more than a generalization of the pH concept. Its real genius lies in that A_(H^+) does not necessarily represent an actual chemical species of identity H^+ but rather an acid's ability to protonate weak indicator bases, B, specifically via the reaction:
 
 H^+ + B ⇌ BH^+
 
@@ -284,23 +284,23 @@ This reaction gives the weak acid BH^+ which can ionize in the reaction that is 
 
 BH^+ ⇌ B + H^+
 
-The extent of this ionization will depend on A_H^+ according to
+The extent of this ionization will depend on A_(H^+) according to
 
-K_ion = ([BH^+])/(A_H^+[B])
+K_ion = ([BH^+])/(A_(H^+)[B])
 
 Taking the negative logarithm of both sides and rearranging gives the Henderson-Hasselbach equation for the indicator base, B:
 
-−K_ion = −logA_H^+−log([BH^+])/([B])
+−K_ion = −logA_(H^+) − log(([BH^+])/([B]))
 
 [Note: this derivation mixes up its signs: K_ion as written above is an association constant (the ionization constant is A_H^+[B]/[BH^+]), the left side here should be pK_ion = −log K_ion, and the line below should read pK_ion = Ho + log([BH^+]/[B]). The final result, Ho = pK_ion − log([BH^+]/[B]), is correct. The text is left as printed.]
 
 which can be rearranged to give
 
-pK_ion = Ho − log([BH^+])/([B])
+pK_ion = Ho − log(([BH^+])/([B]))
 
 or
 
-Ho = pK_ion − log([BH^+])/([B])
+Ho = pK_ion − log(([BH^+])/([B]))
 
 From this it is apparent that Ho represents an acid's ability to donate a hydrogen ion, as measured in terms of its ability to shift the equilibrium between B and BH^+ towards BH^+. More negative values of Ho correspond to stronger Brønsted acids with a greater hydrogen ion transfer ability while less negative ones indicate weaker Brønsted acidity.
 
@@ -539,7 +539,7 @@ The reason for this is that in the hydrogen halides, the bond to be broken (H-E 
 
 Here we are looking at the trend for acids in which there are variable numbers of oxygen bound to a given central atom. An examples is the perchloric (ClO4^-), chloric (ClO3^-), chlorous (ClO2^-), and hypochlous (ClO^-) acid series. In such a series, the greater the number of oxygens, the stronger the acid. This can be explained in several ways. From the viewpoint of the acid itself the key factor is again the inductive effect, in this case involving the ability of the oxygens attached to the central atom to pull on electron density across the OH bond. This is seen from the charge density diagram for the chlorine oxoacids shown in Figure 6.3.7.1, in which the partial positive charge on the acidic hydrogen increases with the number of oxygens present.
 
-Figure 6.3.7.1: Increasing the number of oxygens increases K_a, as evidenced by the decreased electron density on the acidic hydrogen (which is most blue in HClO4 ). Note, K_a =10^-pK_a, and so the larger the pK_a, the smaller the K_a. (CC BY-SA-NC; anonymous)
+Figure 6.3.7.1: Increasing the number of oxygens increases K_a, as evidenced by the decreased electron density on the acidic hydrogen (which is most blue in HClO4 ). Note, K_a =10^(-pK_a), and so the larger the pK_a, the smaller the K_a. (CC BY-SA-NC; anonymous)
 
 The increase in oxoacid acidity with the number of oxygens bound to the central atom may also be seen by considering the stability of the conjugate oxyanion. That the stability of the conjugate base increases with the number of oxygens may be seen from the charge distribution diagrams and Lewis bonding models for the chlorine oxyanions shown in figure 6.3.7.2. As the negative charge is spread over more oxygen atoms it becomes increasingly diffuse.
 
@@ -595,14 +595,14 @@ Calculate the theoretical pKa values for phosphoric and carbonic acid and their 
 
 For phosphoric acid, Pauling's rules (Equation (PaulingRules)) predict the pKa values quite well:
 
-- H3PO4: p = 3 and q = 1 and pK_a1, predicted = 8 − 5 × 1 = 3 This is slightly greater than the observed value of 2.2.
-- H2PO4^-: pK_a2, predicted = pK_a1, experimental + 5 = 7.2 This is spot on with experiment.
-- HPO4^2-: pK_a3, predicted = pK_a2, experimental + 5 = 12.2 This is slightly less than the experimental value of 12.4.
+- H3PO4: p = 3 and q = 1 and pK_(a1, predicted) = 8 − 5 × 1 = 3 This is slightly greater than the observed value of 2.2.
+- H2PO4^-: pK_(a2, predicted) = pK_(a1, experimental) + 5 = 7.2 This is spot on with experiment.
+- HPO4^2-: pK_(a3, predicted) = pK_(a2, experimental) + 5 = 12.2 This is slightly less than the experimental value of 12.4.
 
 For carbonic acid Pauling's rules predict pK_a1 reasonably well, but pK_a2 less so:
 
-- H2CO3: p = 2, q = 1 and pK_a1, predicted = 8 − 5 × 1 = 3 This is slightly lower than the observed value of 3.6.
-- HCO3^-: pK_a2, predicted = pK_a1, experimental + 5 = 8.6 This is 1.7 units less than the experimental value of 10.3.
+- H2CO3: p = 2, q = 1 and pK_(a1, predicted) = 8 − 5 × 1 = 3 This is slightly lower than the observed value of 3.6.
+- HCO3^-: pK_(a2, predicted) = pK_(a1, experimental) + 5 = 8.6 This is 1.7 units less than the experimental value of 10.3.
 
 In some cases discrepancies between experimental pKa values and those predicted by Pauling's rules suggest that structural rearrangements may be taking place upon ionization or else that the reported pKa values do not really represent the ionization in question because they do not fully account for all the equilibria taking place in solution. In the case of carbonic acid, however, the reason for the discrepancy between the predicted and experimental pK_a2 values is not entirely clear.
 

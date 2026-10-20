@@ -446,7 +446,7 @@ A pair of images is shown that has four sections. In the first section, two sinu
 
 When X-rays of a certain wavelength, λ, are scattered by atoms in adjacent crystal planes separated by a distance, d, they may undergo constructive interference when the difference between the distances traveled by the two waves prior to their combination is an integer factor, n, of the wavelength. This condition is satisfied when the angle of the diffracted beam, θ, is related to the wavelength and interatomic distance by the equation:
 
-nλ = 2d sinθ
+nλ = 2d sin θ
 
 This relation is known as the Bragg equation in honor of W. H. Bragg, the English physicist who first explained this phenomenon. Figure 7.2.2.18 illustrates two examples of diffracted waves from the same two crystal planes. The figure on the left depicts waves diffracted at the Bragg angle, resulting in constructive interference, while that on the right shows diffraction and a different angle that does not satisfy the Bragg condition, resulting in destructive interference.
 
@@ -468,7 +468,7 @@ The distance between the planes is found by solving the Bragg equation (Equation
 
 This gives
 
-d = nλ/(2 sinθ) = (1(0.1315 nm))/(2 sin(25.25°)) = 0.154 nm
+d = nλ/(2 sin θ) = (1(0.1315 nm))/(2 sin(25.25°)) = 0.154 nm
 
 #### Exercise 7.2.2.6
 

@@ -41,11 +41,11 @@ where h is Planck’s constant (6.62 × 10^–34 J ‧ s = 1.58 × 10^–34 cal 
 
 The Planck equation says that the energy of a given photon varies directly with its frequency ν but inversely with its wavelength λ. High frequencies and short wavelengths correspond to high-energy radiation such as gamma rays; low frequencies and long wavelengths correspond to low-energy radiation such as radio waves. Multiplying ε by Avogadro’s number NA gives the same equation in more familiar units, where E represents the energy of Avogadro’s number (one “mole”) of photons of wavelength λ:
 
-E = (NAhc)/λ
+E = (NA hc)/λ
 
 = (1.20 × 10^−4 kJ/mol)/(λ( m))
 
-= (2.86 × 10^−5kcal/mol)/(λ( m))
+= (2.86 × 10^−5 kcal/mol)/(λ( m))
 
 When an organic compound is exposed to a beam of electromagnetic radiation, it absorbs energy of some wavelengths but passes, or transmits, energy of other wavelengths. If we irradiate the sample with energy of many different wavelengths and determine which are absorbed and which are transmitted, we can measure the absorption spectrum of the compound.
 

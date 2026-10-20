@@ -27,7 +27,7 @@ What Crick called the “central dogma of molecular genetics” says that the fu
 - Transcription is the process by which genetic messages are read and carried out of the cell nucleus to ribosomes, where protein synthesis occurs.
 - Translation is the process by which the genetic messages are decoded and used to synthesize proteins.
 
-[Image: D N A undergoes replication to form its new copies. A gene from D N A is converted into R N A by transcription which is converted into proteins by translation.]
+   [Image: D N A undergoes replication to form its new copies. A gene from D N A is converted into R N A by transcription which is converted into proteins by translation.]
 
 ### Worked Example 28.2.1: Predicting the Complementary Base Sequence in Double-Stranded DNA
 

@@ -509,17 +509,17 @@ Commercially, phosphorus compounds are used in the manufacture of phosphoric aci
 
 1. Answer... d
 
-The middle number, (for example, 6-5-8) specifies the percentage of phosphorus compound in a fertilizer. Phosphorus is an important element for plant life.
+   The middle number, (for example, 6-5-8) specifies the percentage of phosphorus compound in a fertilizer. Phosphorus is an important element for plant life.
 
 2. Answer H3PO4
 
-P4O10 + 6 H2O → 4 H3PO4
+   P4O10 + 6 H2O → 4 H3PO4
 
 3. Answer H3PO3
 
-PCl3 + 3 H2O → H3PO3 + 3 HCl
+   PCl3 + 3 H2O → H3PO3 + 3 HCl
 
-This is a weaker acid than H3PO4.
+   This is a weaker acid than H3PO4.
 
 [Note: H3PO3 (pKa1 about 1.3) is a slightly stronger acid than H3PO4 (pKa1 2.15). The text is left as printed.]
 

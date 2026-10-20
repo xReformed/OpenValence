@@ -109,7 +109,7 @@ There are many other factors to be considered such as covalent character and ele
 
 As an example, let us consider the the NaCl crystal. In the following discussion, assume r be the distance between Na^+ and Cl^- ions. The nearest neighbors of Na^+ are 6 Cl^- ions at a distance 1r, 12 Na^+ ions at a distance 2r, 8 Cl^- at 3r, 6 Na^+ at 4r, 24 Na^+ at 5r, and so on. Thus, the energy due to one ion is
 
-E = ((Z^2 e^2)/(4πεor))M
+E = ((Z^2 e^2)/(4πεo r))M
 
 The Madelung constant, M, is a poorly converging series of interaction energies:
 
@@ -146,9 +146,9 @@ Table 7.7.1.2: Madelung Constants
 
 Madelung constants for a few more types of crystal structures are available from the Handbook Menu. There are other factors to consider for the evaluation of energy of crystallization, and the treatment by M. Born led to the formula for the evaluation of crystallization energy E_cryst, for a mole of crystalline solid.
 
-E_cryst = (NMZ^2 e^2)/(4πεor)(1 − 1/n)
+E_cryst = ((NMZ^2 e^2)/(4πεo r))(1 − 1/n)
 
-[Note: corrected; the source prints "E_cryst = (NZ^2 e^2)" where this reads "E_cryst = (NMZ^2 e^2)". The Born-Landé equation includes the Madelung constant M, as the example below uses.]
+[Note: corrected; the source prints "E_cryst = ((NZ^2 e^2)" where this reads "E_cryst = ((NMZ^2 e^2)". The Born-Landé equation includes the Madelung constant M, as the example below uses.]
 
 where N is the Avogadro's number (6.022x10^23), and n is a number related to the electronic configurations of the ions involved. The n values and the electronic configurations (e.c.) of the corresponding inert gases are given below:
 
@@ -172,7 +172,7 @@ Estimate the energy of crystallization for NaCl.
 
 Using the values giving in the discussion above, the estimation is given by Equation (6.13.3a):
 
-Ecryst = ((6.022 × 10^23/mol(1.6022 × 10^−19)^2(1.747558))/(4π (8.854 × 10^−12 C^2/m)(282 × 10^−12 m)(1 − 1/9.1)
+Ecryst = (((6.022 × 10^23/mol(1.6022 × 10^−19)^2(1.747558))/(4π (8.854 × 10^−12 C^2/m)(282 × 10^−12 m))(1 − 1/9.1)
 
 = −766 kJ/mol
 
@@ -571,7 +571,7 @@ Due to its high simplicity and ease, the Born-Landé equation is commonly used b
 
 The Born-Landé equation was derived from these two following equations. the first is the electrostatic potential energy:
 
-ΔU = −(NAM|Z^+||Z^−|e^2)/(4πεor)
+ΔU = −(NA M|Z^+||Z^−|e^2)/(4πεo r)
 
 with
 
@@ -586,7 +586,7 @@ with
 
 The second equation is the repulsive interaction:
 
-ΔU = (NAB)/(r^n)
+ΔU = (NA B)/(r^n)
 
 with
 
@@ -595,7 +595,7 @@ with
 
 These equations combine to form:
 
-ΔU(0K) = (NAM|Z^+||Z^−|e^2)/(4πεoro)(1 − 1/n)
+ΔU(0K) = ((NA M|Z^+||Z^−|e^2)/(4πεo ro))(1 − 1/n)
 
 [Note: the combined equation needs the leading minus sign of the equation above: the lattice energy defined here is negative. The text is left as printed.]
 

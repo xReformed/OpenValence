@@ -261,15 +261,15 @@ There is an additional approximation in these cases, based on how the values of 
 
 In reality, observed magnetic moments are slightly different than spin-only magnetic moments. In some cases, the observed magnetic moment is smaller than expected, but those cases are more complicated and we won’t consider them here. Very often, the observed magnetic moments are larger than predicted because orbital angular momentum also plays a role in determining the magnitude of the overall magnetic moment. We may use a modified expression that takes this part into account.
 
-μ_eff≈μ_s + L = g√(S(S + 1) + (1/4)L(L + 1))
+μ_eff≈μ_(s+L) = g√(S(S + 1) + (1/4)L(L + 1))
 
 Just as S is the absolute value of the sum of the spin quantum numbers in the ion, ms, L is the absolute value of the sum of the orbital quantum numbers, ml. There are five d orbitals, with ml = 2,1,0, −1, −2, and the value of L has to be maximized according to Hund’s rule. That means the value of L can be 3, 2, or 0.
 
 As an example, suppose we have a Co^2+ ion. Co^2+ ion has a d^7 configuration. It has five d orbitals, so four of these electrons are paired, leaving only three unpaired electrons with parallel spins, so S = 3/2. In order to maximize the orbital quantum number, L, two electrons will be in an orbital with ml = 2, two electrons will be in an orbital with ml = 1, and one electron will be in each orbital with ml = 0, -1, and -2. When we take the sum, we find L = 2 + 2 + 1 + 1 + 0 − 1 − 2 = 3. That gives us:
 
-μ_s + L = g√(3/2(3/2 + 1) + (1/4)3(3 + 1)) = 5.20
+μ_(s+L) = g√(3/2(3/2 + 1) + (1/4)3(3 + 1)) = 5.20
 
-In comparison, μ_so = 3.87 in this case. Observed values of μ_eff vary between different Co^2+ complexes but are generally in the range 4.1 – 5.2 BM.^2 The orbital contribution is often smaller than expected, so magnetic susceptibilities frequently fall somewhere between μ_so and μ_S + L.
+In comparison, μ_so = 3.87 in this case. Observed values of μ_eff vary between different Co^2+ complexes but are generally in the range 4.1 – 5.2 BM.^2 The orbital contribution is often smaller than expected, so magnetic susceptibilities frequently fall somewhere between μ_so and μ_(S+L).
 
 [Note: corrected; the source prints "m_so = 3.87" where this reads "μ_so = 3.87". The quantity is the spin-only moment, μ_so.]
 
@@ -329,9 +329,9 @@ g) Cr^3+ h) V^3+
 
 **Answer**
 
-a) V^4+ is d^1;S = 1/2;L = 2;μ_s + L = g√(1/2(1/2 + 1) + (1/4)2(2 + 1)) = 3.00 b) Cr^2+ is d^4;S = 2;L = 2 + 1 + 0 − 1 = 2;μ_s + L = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 c) Ni^2+ is d^8;S = 1;L = 2 + 2 + 1 + 1 + 0 + 0 − 1 − 2 = 3;μ_s + L = g√(1(1 + 1) + (1/4)3(3 + 1)) = 4.47 d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_s + L = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 e) Mn^2+ is d^5;S = 5/2;L = 2 + 1 + 0 − 1 − 2 = 0;μ_s + L = g√(5/2(5/2 + 1) + (1/4)0(0 + 1)) = 5.92 f) Fe^2+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_s + L = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 g) Cr^3+ is d^3;S = 3/2;L = 2 + 1 + 0 = 3;μ_s + L = g√(3/2(3/2 + 1) + (1/4)3(3 + 1)) = 5.20 h) V^3+ is d^2;S = 1;L = 2 + 1 = 3;μ_s + L = g√(1(1 + 1) + (1/4)3(3 + 1)) = 4.47
+a) V^4+ is d^1;S = 1/2;L = 2;μ_(s+L) = g√(1/2(1/2 + 1) + (1/4)2(2 + 1)) = 3.00 b) Cr^2+ is d^4;S = 2;L = 2 + 1 + 0 − 1 = 2;μ_(s+L) = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 c) Ni^2+ is d^8;S = 1;L = 2 + 2 + 1 + 1 + 0 + 0 − 1 − 2 = 3;μ_(s+L) = g√(1(1 + 1) + (1/4)3(3 + 1)) = 4.47 d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_(s+L) = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 e) Mn^2+ is d^5;S = 5/2;L = 2 + 1 + 0 − 1 − 2 = 0;μ_(s+L) = g√(5/2(5/2 + 1) + (1/4)0(0 + 1)) = 5.92 f) Fe^2+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_(s+L) = g√(2(2 + 1) + (1/4)2(2 + 1)) = 5.48 g) Cr^3+ is d^3;S = 3/2;L = 2 + 1 + 0 = 3;μ_(s+L) = g√(3/2(3/2 + 1) + (1/4)3(3 + 1)) = 5.20 h) V^3+ is d^2;S = 1;L = 2 + 1 = 3;μ_(s+L) = g√(1(1 + 1) + (1/4)3(3 + 1)) = 4.47
 
-[Note: corrected; the source prints "= 2.24 d)" where this reads "= 4.47 d)"; the source prints "d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_s + L = g√((2 + 1) +" where this reads "d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_s + L = g√(2(2 + 1) +"; the source prints "= 2.24" where this reads "= 4.47". For Ni^2+ and V^3+, 2√(1(1 + 1) + (1/4)3(3 + 1)) = 2√5 = 4.47; the printed 2.24 is √5 without g. The Co^3+ line drops the S of S(S + 1), though its 5.48 is right.]
+[Note: corrected; the source prints "= 2.24 d)" where this reads "= 4.47 d)"; the source prints "d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_(s+L) = g√((2 + 1) +" where this reads "d) Co^3+ is d^6;S = 2;L = 2 + 2 + 1 + 0 − 1 − 2 = 2;μ_(s+L) = g√(2(2 + 1) +"; the source prints "= 2.24" where this reads "= 4.47". For Ni^2+ and V^3+, 2√(1(1 + 1) + (1/4)3(3 + 1)) = 2√5 = 4.47; the printed 2.24 is √5 without g. The Co^3+ line drops the S of S(S + 1), though its 5.48 is right.]
 
 ### References
 
