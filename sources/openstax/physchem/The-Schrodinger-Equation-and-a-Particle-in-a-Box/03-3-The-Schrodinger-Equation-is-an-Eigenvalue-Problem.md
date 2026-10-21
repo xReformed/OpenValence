@@ -16,7 +16,7 @@ license: "CC BY-NC-SA 4.0"
 
 As per the definition, an operator acting on a function gives another function, however a special case occurs when the generated function is proportional to the original
 
-Âψ∝ψ
+Âψ ∝ ψ
 
 This case can be expressed in terms of a equality by introducing a proportionality constant k
 
@@ -147,7 +147,7 @@ While the wavefunction may not be the eigenstate of an observable, when that ope
 
 [Note: applying an operator to a wavefunction does not make it an eigenstate; a measurement of the observable leaves the system in one of its eigenstates (the collapse). And an eigenstate of energy can also be an eigenstate of momentum: the free-particle state in Example 3.3.1b is both, as the next paragraph allows ("although not always"). The text is left as printed.]
 
-If a wavefunction is an eigenstate of one operator, (e.g., momentum), that state is not necessarily an eigenstate of a different operator (e.g., energy), although not always.
+> If a wavefunction is an eigenstate of one operator, (e.g., momentum), that state is not necessarily an eigenstate of a different operator (e.g., energy), although not always.
 
 The wavefunction immediately after a measurement is an eigenstate of the operator associated with this measurement. What happens to the wavefunction after the measurement is a different topic.
 

@@ -73,7 +73,7 @@ The atomic properties of alkali metals reflect the relatively high energy and la
 
 Table 8.3.2. Selected atomic properties of the alkali metals and selected reference compounds.^(3,4)
 
-| Substance | Atomic radius (Angstroms) | Ionization energy (kJ/mol) | Pauling Electronegativity |
+| Substance | Atomic radius; (Angstroms) | Ionization energy; (kJ/mol) | Pauling Electronegativity |
 | --- | --- | --- | --- |
 | Alkali Metal |  |  |  |
 | Lithium, Li | 1.45 | 513 | 0.98 |
@@ -108,7 +108,7 @@ The alkali metals tend to form +1 cations. Cation formation is favored by the re
 
 Table 8.3.1.1. Selected thermodynamic properties of alkali metals and their cations.^(2,3)
 
-| Alkali Metal | Ionization Energy (kJ/mol) | Solvation Enthalpy of the +1 Cation (kJ/mol) |
+| Alkali Metal | Ionization Energy; (kJ/mol) | Solvation Enthalpy; of the +1 Cation; (kJ/mol) |
 | --- | --- | --- |
 | Lithium, Li | 513 | -1091 |
 | Sodium, Na | 496 | -515 |
@@ -189,7 +189,7 @@ Crown ethers and cryptands prefer to bind alkali metal cations with sizes that m
 
 Table 8.3.1.2. Crown ethers preferentially bind cations with sizes that match the cavity size of their crown-shaped conformers. Cavity and cation diameters are taken from reference 10.
 
-| Crown ether | ...with a cavity diameter of (in Å ) | ...preferentially binds | ...which has a cation diameter of (in Å ) |
+| Crown ether | ...with a cavity diameter of; (in Å ) | ...preferentially binds | ...which has a cation diameter of; (in Å ) |
 | --- | --- | --- | --- |
 | [Image not described in source] | 1.2-1.5 | Li^+ | 1.36 |
 | [Image not described in source] | 1.7-2.2 | Na^+ | 1.94 |
@@ -210,7 +210,7 @@ The cryptands might be expected to selectively bind the largest ion which fits w
 
 Table 8.3.1.3. Predicted selectivity of crown ethers for alkali metal cations based on the hypothesis that they will selectively bind the largest ion which fits their binding cavity.
 
-| Cryptand | ...with a cavity diameter of (Å) | ...will be selective for | ...with a radius of (in Å) |
+| Cryptand | ...with a cavity diameter of; (Å) | ...will be selective for | ...with a radius of; (in Å) |
 | --- | --- | --- | --- |
 | 2.1.1-cryptand | 1.60 | Li^+ | 1.36 |
 | 2.1.1-cryptand | 2.20 | Na^+ | 1.96 |

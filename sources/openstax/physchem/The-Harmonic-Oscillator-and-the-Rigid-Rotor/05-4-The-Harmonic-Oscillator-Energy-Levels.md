@@ -60,7 +60,7 @@ The lowest allowed energy for the quantum mechanical oscillator is called the ze
 
 (ħω)/2 = (kQ0^2)/2
 
-The zero-point energy is the lowest possible energy that a quantum mechanical physical system may have. Hence, it is the energy of its ground state.
+> The zero-point energy is the lowest possible energy that a quantum mechanical physical system may have. Hence, it is the energy of its ground state.
 
 Recall that k is the effective force constant of the oscillator in a particular normal mode and that the frequency of the normal mode is given by Equation (5.4.1) which is
 

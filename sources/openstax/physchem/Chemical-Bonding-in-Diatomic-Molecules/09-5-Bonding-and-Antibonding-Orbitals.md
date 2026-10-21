@@ -34,14 +34,14 @@ Conversely, subtracting one atomic orbital from another corresponds to destructi
 
 The electron density in the σ1s molecular orbital is greatest between the two positively charged nuclei, and the resulting electron–nucleus electrostatic attractions reduce repulsions between the nuclei. Thus the σ1s orbital represents a bonding molecular orbital. A molecular orbital that forms when atomic orbitals or orbital lobes with the same sign interact to give increased electron probability between the nuclei due to constructive reinforcement of the wavefunctions. In contrast, electrons in the σ_1s^* orbital are generally found in the space outside the internuclear region. Because this allows the positively charged nuclei to repel one another, the σ_1s^* orbital is an antibonding molecular orbital (a molecular orbital that forms when atomic orbitals or orbital lobes of opposite sign interact to give decreased electron probability between the nuclei due to destructive reinforcement of the wavefunctions).
 
-Antibonding orbitals contain a node perpendicular to the internuclear axis; bonding orbitals do not.
+> Antibonding orbitals contain a node perpendicular to the internuclear axis; bonding orbitals do not.
 
 Because electrons in the σ1s orbital interact simultaneously with both nuclei, they have a lower energy than electrons that interact with only one nucleus. This means that the σ1s molecular orbital has a lower energy than either of the hydrogen 1s atomic orbitals. Conversely, electrons in the σ_1s^* orbital interact with only one hydrogen nucleus at a time. In addition, they are farther away from the nucleus than they were in the parent hydrogen 1s atomic orbitals. Consequently, the σ_1s^* molecular orbital has a higher energy than either of the hydrogen 1s atomic orbitals. The σ1s (bonding) molecular orbital is stabilized relative to the 1s atomic orbitals, and the σ_1s^* (antibonding) molecular orbital is destabilized. The relative energy levels of these orbitals are shown in the energy-level diagram (a schematic drawing that compares the energies of the molecular orbitals (bonding, antibonding, and nonbonding) with the energies of the parent atomic orbitals) in Figure 9.5.2
 
 Figure 9.5.2: Molecular Orbital Energy-Level Diagram for H2. The two available electrons (one from each H atom) in this diagram fill the bonding σ1s molecular orbital. Because the energy of the σ1s molecular orbital is lower than that of the two H 1s atomic orbitals, the H2 molecule is more stable (at a lower energy) than the two isolated H atoms.
 Diagram illustrating molecular orbitals of hydrogen, showing bonding and antibonding states with energy levels marked.
 
-A bonding molecular orbital is always lower in energy (more stable) than the component atomic orbitals, whereas an antibonding molecular orbital is always higher in energy (less stable).
+> A bonding molecular orbital is always lower in energy (more stable) than the component atomic orbitals, whereas an antibonding molecular orbital is always higher in energy (less stable).
 
 ## Expanding Beyond the 1s Orbital Basis Set
 

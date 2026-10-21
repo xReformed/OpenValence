@@ -96,6 +96,8 @@ What happens when a liquid becomes a gas? We have already established that a liq
 [Note: corrected; the source prints "(Figure 10.3.1)" where this reads "(Figure 10.3.2)". Figure 10.3.1 shows liquids and gravity; the view of gas-phase particles described here is Figure 10.3.2.]
 
 Figure 10.3.2: Sub-microscopic view of the diatomic molecules of the element bromine (a) in the gaseous state (above 58°C); (b) in liquid form (between -7.2 and 58.8°C); and (c) in solid form (below -7.2°C). As a solid, the molecules are fixed, but fluctuate. As a liquid, the molecules are in contact but are also able to move around each other. As a gas, most of the volume is actually empty space. The particles are not to scale; in reality, the dots representing the particles would be about 1/100th of the size depicted.
+The molecules float around freely and quickly.
+The molecules are bunched together but remain able to move freely around each other.
 The molecules are tightly backed together and cannot move freely, but vibrate.
 
 Under some circumstances, the solid phase can transition directly to the gas phase without going through a liquid phase, and a gas can directly become a solid. The solid-to-gas change is called sublimation, while the reverse process is called deposition. Sublimation is isothermal, like the other phase changes. There is a measurable energy change during sublimation—this energy change is called the enthalpy of sublimation, represented as ΔH_sub. The relationship between the ΔH_sub and the other enthalpy changes is as follows:

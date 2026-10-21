@@ -129,7 +129,7 @@ CH2=CH2 + H2 → (metal catalyst) CH3CH3
 
 By far the most common reaction of hydrocarbons is combustion, which is the combination of a hydrocarbon with O2 to make CO2 and H2O. The combustion of hydrocarbons is accompanied by a release of energy and is a primary source of energy production in our society (Figure 16.2.2 - Combustion). The combustion reaction for gasoline, for example, which can be represented by C8H18, is as follows:
 
-2C8H18 + 25O2 → 16CO2 + 18H2O + ~5060 kJ
+2C8H18 + 25O2 → 16CO2 + 18H2O + ∼ 5060 kJ
 
 [Note: reproduced as printed. About 5,060 kJ is the energy released per mole of octane (about 5,470 kJ if the water forms as a liquid), so the equation as written, with 2 mol of C8H18, releases about twice that.]
 

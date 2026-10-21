@@ -114,7 +114,7 @@ Table 9.3.1. Common monodentate ligands. Most chemists still prefer common names
 | NH^2- | imido | azanediido |
 | NH2^- | amido | azanido |
 | NH3 | ammine | ammine |
-| RNH2, R2NH, R3N | alkylamine, dialkylamine, trialkalyamine (e.g. methylamine for CH3NH2) | alkylamine, dialkylamine, trialkalyamine (e.g. methylamine for CH3NH2) |
+| RNH2, R2NH, R3N | alkylamine, dialkylamine, trialkalyamine; (e.g. methylamine for CH3NH2) | alkylamine, dialkylamine, trialkalyamine; (e.g. methylamine for CH3NH2) |
 | [Image not described in source] , piperidine, abbreviated pip | piperidine | piperidine |
 | [Image not described in source] , pyridine, abbreviated py | pyridine | pyridine |
 | CH3CN, acetonitrile, abbreviated MeCN | acetonitrile | acetonitrile |
@@ -122,7 +122,7 @@ Table 9.3.1. Common monodentate ligands. Most chemists still prefer common names
 | PH3 | phosphine | phosphane |
 | PR3 | trialkylphosphine (e.g. trimethylphosphine for Me3P) | trialkylphosphane (e.g. trimethylphosphane for Me3P) |
 | PAr3 | triarylphosphine (e.g. triphenylphosphine for Ph3P) | triarylphosphine (e.g. triphenylphosphane for Ph3P) |
-| [Image not described in source] , dimethylsulfoxide or DMSO or dmso | dimethylsulfoxide (sometimes called dimethylsulfoxo but this usage is rare and violates the nomenclature rules for neutral ligands) | (methanesulfinyl)methane or dimethyl(oxido)sulfur |
+| [Image not described in source] , dimethylsulfoxide or DMSO or dmso | dimethylsulfoxide; (sometimes called dimethylsulfoxo but this usage is rare and violates the nomenclature rules for neutral ligands) | (methanesulfinyl)methane or dimethyl(oxido)sulfur |
 | [Image not described in source] , thiourea or tu | thiourea | thiourea |
 | O^2- | oxo | oxido |
 | OH^- | hydroxo | hydroxido |
@@ -160,22 +160,22 @@ Table 9.3.2. Common chelating ligands organized by denticity. Most chemists use 
 | acetylacetonato | 2,4-pentanediono | acac | [Image not described in source] |
 | R-BINAP and S-BINAP | R- or S-2,2'-bis(diphenylphosphino)-1,1'-binapthyl | BINAP | [Image not described in source] |
 | 2,2'-bipyridine | 2,2'-bipyridine | bpy or bipy | [Image not described in source] |
-| cyclooctadiene | 1,5-cyclooctadiene | COD | [Image not described in source] (binding to the metal occurs through the alkene π cloud) |
+| cyclooctadiene | 1,5-cyclooctadiene | COD | [Image not described in source]; (binding to the metal occurs through the alkene π cloud) |
 | dialkyldithiocarbamato | dialkylcarbamodithiolato | R2NCS2^- or dtc | [Image not described in source] |
-| dimethylgloximato | butanedienedioxime | Hdmg or DMG | [Image not described in source] |
-| diphenylphosphinoethane or 1,2-(diphenylphosphino)ethane | Ethane-1,2-diylbis(diphenylphosphane) | dppe | [Image not described in source] |
+| dimethylgloximato | butanedienedioxime | Hdmg; or DMG | [Image not described in source] |
+| diphenylphosphinoethane; or 1,2-(diphenylphosphino)ethane | Ethane-1,2-diylbis(diphenylphosphane) | dppe | [Image not described in source] |
 | ethylenediamine | Ethane-1,2-diamine | en | [Image not described in source] |
 | ethylenedithiolato | Ethane-1,2-dithiolato | C2H2S2^2- | [Image not described in source] |
 | nacnac | N,N'-diphenyl-2,4-pentanediiminato | nacnac | [Image not described in source] |
 | oxalato | oxalato | ox | [Image not described in source] |
 | 1,10-phenanthroline or o-phenanthroline | 1,10-phenanthroline | phen or o-phen | [Image not described in source] |
-| phenylpyridinato | 2-phenylpyridinato-C^2,N or 2-phenylpyridinato-κC^2,N | ppy | [Image not described in source] |
+| phenylpyridinato | 2-phenylpyridinato-C^2,N; or 2-phenylpyridinato-κC^2,N | ppy | [Image not described in source] |
 |  |  |  |  |
 | tridentate ligands |  |  |  |
 | triazacyclononane | 1,4,7-triazacyclononane | tacn | [Image not described in source] |
 | diethylenetriamine | 1,4,7-triazaheptane | dien | [Image not described in source] |
-| pyrazoylborato (scorpionate) | hydrotris(pyrazo-1-yl)borato | Tp | [Image not described in source] |
-| terpyridine or 2,2';6',2"-terpyridine | 1^2,2^2:2^6,3^2-terpyridine or 2,6-bis(2-pyridyl)pyridine, tripyridyl, 2,2′:6′,2″-terpyridine | tpy or terpy | [Image not described in source] |
+| pyrazoylborato; (scorpionate) | hydrotris(pyrazo-1-yl)borato | Tp | [Image not described in source] |
+| terpyridine; or 2,2';6',2"-terpyridine | 1^2,2^2:2^6,3^2-terpyridine; or 2,6-bis(2-pyridyl)pyridine, tripyridyl, 2,2′:6′,2″-terpyridine | tpy or terpy | [Image not described in source] |
 |  |  |  |  |
 | tetradentate ligands |  |  |  |
 | β, β', β''-triaminotriethylamine | β, β', β''-tris(2-aminoethyl)amine | tren | [Image not described in source] |
@@ -187,7 +187,7 @@ Table 9.3.2. Common chelating ligands organized by denticity. Most chemists use 
 | cyclen | 1,4,7,10-tetraazacyclododecane | cyclen | [Image not described in source] |
 | tris(2-pyridylmethyl)amine | 1-pyridin-2-yl-N,N-bis(pyridin-2-ylmethyl)methanamine | tpa or TPA | [Image not described in source] |
 | phthalocyanines | variable and generally not used | variable, usually a modified Pc | [Image not described in source] |
-| porphyrins | variable and generally not used | variable, usually a modified por, Por, or P (e.g. TPP = tetraphenylporphyrin) | [Image not described in source] |
+| porphyrins | variable and generally not used | variable, usually a modified por, Por, or P; (e.g. TPP = tetraphenylporphyrin) | [Image not described in source] |
 | salen | 2,2'-ethylenebis(nitrilomethylidene)diphenoxido | salen | [Image not described in source] |
 |  |  |  |  |
 | pentadentate ligands |  |  |  |
@@ -195,14 +195,14 @@ Table 9.3.2. Common chelating ligands organized by denticity. Most chemists use 
 | tetraethylenepentamine | 1,4,7,10,13-pentaazatridecane | tepa or TEPA | [Image not described in source] |
 | hexadentate ligands |  |  |  |
 | 18-crown-6 | 1,4,7,10,13,16-hexaoxacyclooctadecane | 18-crown-6 | [Image not described in source] |
-| 2,1,1-cryptand | 4,7,13,18-Tetraoxa-1,10-diazabicyclo[8.5.5]icosane | 2,1,1-crypt or [2.1.1]-cryptand kryptofix 211 and variations thereof | [Image not described in source] |
+| 2,1,1-cryptand | 4,7,13,18-Tetraoxa-1,10-diazabicyclo[8.5.5]icosane | 2,1,1-crypt; or [2.1.1]-cryptand; kryptofix 211; and variations thereof | [Image not described in source] |
 | ethylenediaminetetraaceto | 2,2′,2″,2‴-(Ethane-1,2-diyldinitrilo)tetraaceto | EDTA, edta, Y^4- | [Image not described in source] |
 |  |  |  |  |
 | heptadentate ligands |  |  |  |
-| 2,2,1-cryptand | 4,7,13,16,21-pentaoxa-1,10-diazabicyclo[8.8.5]icosane | 2,2,1-crypt or [2.2.1]-cryptand kryptofix 221 and variations thereof | [Image not described in source] |
+| 2,2,1-cryptand | 4,7,13,16,21-pentaoxa-1,10-diazabicyclo[8.8.5]icosane | 2,2,1-crypt; or [2.2.1]-cryptand; kryptofix 221; and variations thereof | [Image not described in source] |
 |  |  |  |  |
 | octadentate ligands |  |  |  |
-| 2,2,2-cryptand | 4,7,13,16,21,24-Hexaoxa-1,10-diazabicyclo[8.8.8]hexacosan | 2,2,2-crypt or [2.2.2]-cryptand kryptofix 222 and variations thereof | [Image not described in source] |
+| 2,2,2-cryptand | 4,7,13,16,21,24-Hexaoxa-1,10-diazabicyclo[8.8.8]hexacosan | 2,2,2-crypt; or [2.2.2]-cryptand; kryptofix 222; and variations thereof | [Image not described in source] |
 | pentetato acid or diethylenetriaminepentaacetato or DTPA | 2-[bis[2-[bis(carboxylatomethyl)amino]ethyl]amino]acetato | DTPA | [Image not described in source] |
 | DOTA or tetraxetan | 1,4,7,10-Tetraazacyclododecane-1,4,7,10-tetraacetic acid | Dota, DOTA | [Image not described in source] |
 
@@ -519,7 +519,7 @@ h. IrCl(PPh3)3
 | d | Fe(CN)6^3- | hexacyanoferrate(III) or hexacyanidoferrrate(III) | hexacyanoferrate(3-) or hexacyanidoferrate(3-) |
 | e | K4[Fe(CN)6] | potassium hexacyanoferrate(II) or potassium hexacyanidoferrrate(II) | potassium hexacyanoferrate(4-) or potassium hexacyanidoferrrate(4-) |
 | f | trans-[Cu(en)2(NO2)2] (the N is bound to Cu) | bis(ethylenediamine)bisnitrocopper(II) or bis(ethylenediamine)bis(nitrito-κN)copper(II) | bis(ethylenediamine)bisnitrocopper(0) or bis(ethylenediamine)bis(nitrito-κN)copper(0) |
-| g | cis-IrCl2(CO)(PPh3) | cis-dichlorocarbonyltriphenylphosphineiridium(I) or cis-dichloro(carbonyl)(triphenylphosphine)iridium(I) | cis-dichlorocarbonyltriphenylphosphineiridium(0) or cis-dichloro(carbonyl)(triphenylphosphine)iridium(0) |
+| g | cis-IrCl2(CO)(PPh3) | cis-dichlorocarbonyltriphenylphosphineiridium(I); or cis-dichloro(carbonyl)(triphenylphosphine)iridium(I) | cis-dichlorocarbonyltriphenylphosphineiridium(0); or cis-dichloro(carbonyl)(triphenylphosphine)iridium(0) |
 | h | IrCl(PPh3)3 | chlorotris(triphenylphosphine)iridium(I) | chlorotris(triphenylphosphine)iridium(0) |
 
 ### Exercise 9.3.5: Even more simple nomenclature problems.
@@ -543,10 +543,10 @@ Sample Answers
 | b | Na2[CuBr4] | sodium tetrabromocuprate(II) | sodium tetrabromocuprate(2-) |
 | c | [Co(NH3)6][Co(ox)3] | hexamminecobalt(III) tris(oxalato)cobalt(III) | hexamminecobalt(3+) tris(oxalato)cobalt(3-) |
 | d | [Ag(NH3)2]BF4 | diamminesilver(I) tetrafluoroborate | diamminesilver(1+) tetrafluoroborate |
-| e | [Ag(NH3)2][Ag(CN)2] | diamminesilver(I) dicyanoargentate(I) or diamminesilver(I) dicyanidoargentate(I) | diamminesilver(1+) dicyanoargentate(1-) or diamminesilver(1+) dicyanidoargentate(1-) |
+| e | [Ag(NH3)2][Ag(CN)2] | diamminesilver(I) dicyanoargentate(I); or diamminesilver(I) dicyanidoargentate(I) | diamminesilver(1+) dicyanoargentate(1-); or diamminesilver(1+) dicyanidoargentate(1-) |
 | f | [Ni(CN)4]^2- | tetracyanonickelate(II) or tetracyanonickelate(II) ion | tetracyanonickelate(2-) or tetracyanonickelate(2-) ion |
 | g | [Co(N3)(NH3)5]SO4 | pentammineazidocobalt(III) sulfate | pentammineazidocobalt(2+) sulfate |
-| h | [CoBrCl(H2O)(NH3)]I (ignore stereochemistry) | ammineaquabromochlorocobalt(III) iodide | ammineaquabromochlorocobalt(1+) iodide |
+| h | [CoBrCl(H2O)(NH3)]I; (ignore stereochemistry) | ammineaquabromochlorocobalt(III) iodide | ammineaquabromochlorocobalt(1+) iodide |
 
 [Note: in this answer table, anionic complexes need the -ate ending: tris(oxalato)cobaltate, nonahydridorhenate, hexachlorochromate and ruthenate. Several answers also do not match their questions (Na2[CuBr4] for K2[CuBr4], K[…] for K3[fac-RuCl3(PMe3)3], with PMe3 named triphenylphosphine), and Fe(acac)3 is tris(acetylacetonato)iron(III), not tris(acetoacetato)iron. The text is left as printed.]
 
@@ -571,11 +571,11 @@ k. K3[fac-RuCl3(PMe3)3]
 |  | Complex | Stock system name | Ewing-Bassett System name |
 | --- | --- | --- | --- |
 | a | trans-[Cu(dppe)2(NO2)2] | trans-bis(diphenylphosphinoethane)bisnitrocopper(II) or trans-bis(diphenylphosphinoethane)bis(nitrito-κN)copper(II) | trans-bis(diphenylphosphinoethane)bisnitrocopper(0) or trans-bis(diphenylphosphino)ethanebis(nitrito-κN)copper(0) |
-| b | [Pd(en)2(SCN)2], with the thiocyanates bound Pd-SCN | bis(ethylenediamine)bisthiocyanatopalladium(II) or bis(ethylenediamine)bis(thiocyanato-S)palladium(II) or bis(ethylenediamine)bis(thiocyanato-κS)palladium(II) | bis(ethylenediamine)bisthiocyanatopalladium(0) or bis(ethylenediamine)bis(thiocyanato-S)palladium(0) or bis(ethylenediamine)bis(thiocyanato-κS)palladium(0) |
+| b | [Pd(en)2(SCN)2], with the thiocyanates bound Pd-SCN | bis(ethylenediamine)bisthiocyanatopalladium(II); or bis(ethylenediamine)bis(thiocyanato-S)palladium(II); or bis(ethylenediamine)bis(thiocyanato-κS)palladium(II) | bis(ethylenediamine)bisthiocyanatopalladium(0); or bis(ethylenediamine)bis(thiocyanato-S)palladium(0); or bis(ethylenediamine)bis(thiocyanato-κS)palladium(0) |
 | c | [Mn(CO)6]BPh4 | hexacarbonylmanganese(I) tetraphenylborate | hexacarbonylmanganese(1+) tetraphenylborate |
 | d | Rb[AgF4] | rubidium tetrafluoroargentate(III) | rubidium tetrafluoroargentate(1-) |
 | e | K2ReH9 | potassium nonahydridorhenium(VII) | potassium nonahydridorhenium(2-) |
-| f | K3CrCl6 or K3[CrCl6] | potassium hexachlorochromium(III) or potassium hexachloridochromium(III) | potassium hexachlorochromium(3-) or potassium hexachloridochromium(3-) |
+| f | K3CrCl6 or K3[CrCl6] | potassium hexachlorochromium(III) or; potassium hexachloridochromium(III) | potassium hexachlorochromium(3-) or; potassium hexachloridochromium(3-) |
 | g | [Ru(H2O)6]Cl2 | hexaaquaruthenium(II) chloride | hexaaquaruthenium(2+) chloride |
 | h | [cis-Fe(CO)4I2] | cis-tetracarbonyldiiodoiron(II) | cis-tetracarbonyldiiodoiron(0) |
 | i | K2[trans-Fe(CN)4(CO)2] | potassium trans-dicarbonyltetracyanoferrate(II) | potassium trans-dicarbonyltetracyanoferrate(2-) |
@@ -594,11 +594,11 @@ Name the compounds and ions below using both the Stock and Ewing-Bassett systems
 
 | # | Structure | Stock system name | Ewing-Bassett system name |
 | --- | --- | --- | --- |
-| 1 | [Image not described in source] | cis-tetraacetonitriledicyanoiron(II) or cis-tetraacetonitriledicyanidoiron(II) | cis-tetraacetonitriledicyanoiron(0) or cis-tetraacetonitriledicyanidoiron(0) |
-| 2 | [Image not described in source] | trans-tetraacetonitriledicyanoiron(II) or trans-tetraacetonitriledicyanidoiron(II) | trans-tetraacetonitriledicyanoiron(0) or trans-tetraacetonitriledicyanidoiron(0) |
-| 3 | [Image not described in source] | trans-bromochlorobis(ethylenediamine)iron(III) or trans-bromidochloridobis(ethylenediamine)iron(III) | trans-bromochlorobis(ethylenediamine)iron(1+) or trans-bromidochloridobis(ethylenediamine)iron(1+) |
-| 4 | [Image not described in source] | fac-tricarbonyltricyanomolybdate(0) or fac-tricarbonyltricyanidomolybdate(0) | fac-tricarbonyltricyanomolybdate(3-) or fac-tricarbonyltricyanidomolybdate(3-) |
-| 5 | [Image not described in source] | mer-tricarbonyltricyanomolybdate(0) or mer-tricarbonyltricyanidomolybdate(0) | mer-tricarbonyltricyanomolybdate(3-) or mer-tricarbonyltricyanidomolybdate(3-) |
+| 1 | [Image not described in source] | cis-tetraacetonitriledicyanoiron(II); or cis-tetraacetonitriledicyanidoiron(II) | cis-tetraacetonitriledicyanoiron(0); or cis-tetraacetonitriledicyanidoiron(0) |
+| 2 | [Image not described in source] | trans-tetraacetonitriledicyanoiron(II); or trans-tetraacetonitriledicyanidoiron(II) | trans-tetraacetonitriledicyanoiron(0); or trans-tetraacetonitriledicyanidoiron(0) |
+| 3 | [Image not described in source] | trans-bromochlorobis(ethylenediamine)iron(III); or trans-bromidochloridobis(ethylenediamine)iron(III) | trans-bromochlorobis(ethylenediamine)iron(1+); or trans-bromidochloridobis(ethylenediamine)iron(1+) |
+| 4 | [Image not described in source] | fac-tricarbonyltricyanomolybdate(0); or fac-tricarbonyltricyanidomolybdate(0) | fac-tricarbonyltricyanomolybdate(3-); or fac-tricarbonyltricyanidomolybdate(3-) |
+| 5 | [Image not described in source] | mer-tricarbonyltricyanomolybdate(0); or mer-tricarbonyltricyanidomolybdate(0) | mer-tricarbonyltricyanomolybdate(3-); or mer-tricarbonyltricyanidomolybdate(3-) |
 | 6 | [Image not described in source] | pentamminenitrito-N-cobalt(III), pentamminenitrito-κN-cobalt(III), or pentamminenitrocobalt(III) | pentamminenitrito-N-cobalt(2+), pentamminenitrito-κN-cobalt(2+), or pentamminenitrocobalt(2+) |
 | 7 | [Image not described in source] | pentamminenitrito-O-cobalt(2+), pentamminenitrito-κO-cobalt(2+), or pentamminenitritocobalt(2+) | pentamminenitrito-O-cobalt(2+), pentamminenitrito-κO-cobalt(2+), or pentamminenitritocobalt(2+) |
 

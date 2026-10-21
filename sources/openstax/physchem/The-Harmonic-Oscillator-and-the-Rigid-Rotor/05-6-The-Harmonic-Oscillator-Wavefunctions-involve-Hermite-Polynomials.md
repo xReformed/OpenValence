@@ -63,11 +63,11 @@ lim_(x → ∞) ψv(x) = 0
 
 The function that has this property and satisfies the differential equation for large values of x is the exponential function, i.e.,
 
-lim_(x → ∞) φv(x)exp((−x^2)/2) = 0
+lim_(x → ∞) φv(x) exp((−x^2)/2) = 0
 
 where the wavefunctions are
 
-ψv(x)∝φv(x)exp((−x^2)/2)
+ψv(x) ∝ φv(x) exp((−x^2)/2)
 
 The general expression for a power series of φv(x) is
 

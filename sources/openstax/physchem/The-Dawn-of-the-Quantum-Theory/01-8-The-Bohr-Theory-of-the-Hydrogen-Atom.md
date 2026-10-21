@@ -17,13 +17,13 @@ Ernest Rutherford had proposed a model of atoms based on the α-particle scatter
 
 There are some basic problems with the Rutherford model. The Coulomb force that exists between oppositely charge particles means that a positive nucleus and negative electrons should attract each other, and the atom should collapse. To prevent the collapse, the electron was postulated to be orbiting the positive nucleus. The Coulomb force (discussed below) is used to change the direction of the velocity, just as a string pulls a ball in a circular orbit around your head or the gravitational force holds the moon in orbit around the Earth. The origin for this hypothesis that suggests this perspective is plausible is the similarity of gravity and Coulombic interactions. The expression for the force of gravity between two masses (Newton's Law of gravity) is
 
-F_gravity∝(m1 m2)/r^2
+F_gravity ∝ (m1 m2)/r^2
 
 with m1 and m2 representing the mass of object 1 and 2, respectively and r representing the distance between the objects centers
 
 The expression for the Coulomb force between two charged species is
 
-F_Coulomb∝(Q1Q2)/r^2
+F_Coulomb ∝ (Q1Q2)/r^2
 
 with Q1 and Q2 representing the charge of object 1 and 2, respectively and r representing the distance between the objects centers.
 
@@ -119,7 +119,7 @@ me vr = nħ
 
 with n = 1,2,3, ....
 
-Note that the electron must be in motion, so n = 0 is not allowed.
+> Note that the electron must be in motion, so n = 0 is not allowed.
 
 Substituting Equation (1.8.15) into the Equation (1.8.14), we find
 

@@ -77,9 +77,9 @@ Table 9.2.2: Comparison of ions predicted for the CoCl3·xNH3 series by coordina
 
 | Compound | Color | Ions predicted by Werner's coordination theory | Number of ions predicted by coordination theory | Ions predicted by Blomstrand-Jørgensen chain theory | Number of ions predicted by chain theory | Observed Number of ions in solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| CoCl3·6NH3 | yellow | [Co(NH3)6]^3+ Cl^- Cl^- Cl^- | 4 | [Image not described in source] | 4 | 4 |
-| CoCl3·5NH3 | violet | [Co(NH3)5Cl]^2+ Cl^- Cl^- | 3 | [Image not described in source] | 3 | 3 |
-| CoCl3·4NH3 | green | [Co(NH3)4Cl2]^+ Cl^- | 2 | [Image not described in source] | 2 | 2 |
+| CoCl3·6NH3 | yellow | [Co(NH3)6]^3+; Cl^-; Cl^-; Cl^- | 4 | [Image not described in source] | 4 | 4 |
+| CoCl3·5NH3 | violet | [Co(NH3)5Cl]^2+; Cl^-; Cl^- | 3 | [Image not described in source] | 3 | 3 |
+| CoCl3·4NH3 | green | [Co(NH3)4Cl2]^+; Cl^- | 2 | [Image not described in source] | 2 | 2 |
 | CoCl3·3NH3 | orange | None | 0 | [Image not described in source] | 2 | 0 |
 
 As can be seen by comparing the number of ions predicted by coordination and chain theory in Table 9.2.2, coordination theory successfully explains all the observed ion counts, while chain theory fails to explain the lack of ions observed for CoCl3·3NH3.

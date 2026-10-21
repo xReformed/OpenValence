@@ -233,7 +233,7 @@ Table 8.2.2.3. Amphoteric behavior of the oxides and hydroxides of beryllium and
 | Reaction | Be | Al |
 | --- | --- | --- |
 | Oxide hydrolysis to hydroxide | BeO + H2O → Be(OH)2 | Al2O3 + 3H2O → 2Al(OH)3 |
-| Hydroxide as an Arrhenius and Brønsted Base | Be(OH)2 → Be(OH)^+ + OH^− or Be(OH)2 + 2H^+ → Be^2+ + 2H2O | Al(OH)3 → Al(OH)2^+ + OH^− or Al(OH)3 + 3H^+ → Al^3+ + 3H2O |
+| Hydroxide as an Arrhenius and Brønsted Base | Be(OH)2 → Be(OH)^+ + OH^−; or; Be(OH)2 + 2H^+ → Be^2+ + 2H2O | Al(OH)3 → Al(OH)2^+ + OH^−; or; Al(OH)3 + 3H^+ → Al^3+ + 3H2O |
 | Hydroxide as a Lewis Acid | Be(OH)2 + 2OH^− → Be(OH)4^2− | Al(OH)3 + OH^− → Al(OH)4^− |
 
 [Note: corrected; the source prints "Be(OH)2 → BeO(OH)^+ + OH^−" where this reads "Be(OH)2 → Be(OH)^+ + OH^−"; the source prints "Al(OH)3 → 2AlO(OH)2^+ + OH^−" where this reads "Al(OH)3 → Al(OH)2^+ + OH^−". As printed, the products put Be at +4 and Al at +5 and the equations do not balance.]
@@ -258,7 +258,7 @@ Since this derivative is difficult to evaluate experimentally, the Mulliken elec
 
 [Note: corrected; the source prints "ionization energy and electronegativity." where this reads "ionization energy and electron affinity.". Mulliken electronegativity is the average of the ionization energy and the electron affinity.]
 
-Mulliken electronegativity = χ≈(IE + EA)/2
+Mulliken electronegativity = χ ≈ (IE + EA)/2
 
 where IE and EA are in eV
 
@@ -266,11 +266,11 @@ which, if the IE is approximated by Koopman's theorem as the opposite of the ene
 
 [Note: corrected; the source prints "lowest unoccupied atomic orbital (LUAO) (IE" where this reads "highest occupied atomic orbital (HOAO) (IE". By Koopmans' theorem the ionization energy is the negative of the highest occupied orbital's energy, as the IE = −E_HOMO in the same sentence says.]
 
-E_LUMO≈−EA
+E_LUMO ≈ −EA
 
 and the Mulliken electronegativity is just the average of the HOAO and LUAO energies (~Fermi energy):
 
-Mulliken electronegativity, χ≈−(E_LUAO + E_HOAO)/2
+Mulliken electronegativity, χ ≈ −(E_LUAO + E_HOAO)/2
 
 where all values are for the gas phase atoms in units of eV
 
@@ -304,7 +304,7 @@ These values correlate reasonably well with Pauling electronegativities. One con
 
 One of the advantages of the Allred-Rochow and Mulliken electronegativity systems over that of Pauling's is that they can consider electronegativity in the context of compounds, in which electron donating and withdrawing groups modify the ability of atomic centers to attract electrons in a bond. As was considered in the section on measures of hardness, the Mulliken scale can be used to define the electronegativity of Lewis acid centers simply by considering the HOMO and LUMO energy in place of the HOAO and LUAO energies.
 
-Mulliken electronegativity of Lewis acid, χ≈−(E_LUAO + E_HOAO)/2
+Mulliken electronegativity of Lewis acid, χ ≈ −(E_LUAO + E_HOAO)/2
 
 where all values are in units of eV
 
@@ -646,7 +646,7 @@ Consider the Frost diagram for copper at pH 0 shown in Figure 8.2.4.2.1.
 
 Figure 8.2.4.2.1: Frost diagram for copper in aqueous acid. (CC BY-SA 4.0 International; Stephen Contakes)
 
-As can be seen in Figure 8.2.4.2.1, Cu^+ and Cu^2+ are both higher in free energy (∝NE°) than free Cu. This is consistent with copper's status as a noble metal that can only be dissolved in acid with the aid of oxidizing agents like O2, H2O2, or NO3^- (e.g., as in HNO3).
+As can be seen in Figure 8.2.4.2.1, Cu^+ and Cu^2+ are both higher in free energy (∝ NE°) than free Cu. This is consistent with copper's status as a noble metal that can only be dissolved in acid with the aid of oxidizing agents like O2, H2O2, or NO3^- (e.g., as in HNO3).
 
 The acidic Frost diagram of Nickel shown in Figure 8.2.4.2.2 provides an example of a metal which dissolves in acid under otherwise nonoxidizing conditions (i.e., without the aid of oxidants like O2 or H2O2).
 
@@ -924,15 +924,15 @@ Table 8.2.4.2.1: Calculation of NE° for each oxidation state of nitrogen.
 
 | Oxidation State | Step | NE° = | Calculated as the sum of the steps | Notes |
 | --- | --- | --- | --- | --- |
-| 5 | N2 → NO3^- | 5 × (E°_(NO3^− → N2)) | N2 → N2O4 → NO3^− NE° = 1 × E°_(NO3^− → N2O4) + 4 × E°_(N2O4 → N2) NE° = 1 × E°_(NO3^− → N2O4) + NE°_(+4 O.S.) NE° = 1 × 0.803V + 5.426V = 6.229V | Calculate NE° for the +4 oxidation state, NO, first. Then use it in this calculation. |
-| 4 | N2 → N2O4 | 4 × (E°_(N2O4 → N2)) | N2 → HNO2 → N2O4 NE° = 1 × E°_(HNO2 → NO) + 3 × E°_(HNO2 → N2) NE° = 1 × E°_(N2O4 → HNO2) + NE°_(+3 O.S.) NE° = 1 × 1.07V + 4.356V = 5.426V | Calculate NE° for the +3 oxidation state, NO, first. Then use it in this calculation. |
-| 3 | N2 → HNO2 | 3 × (E°_(HNO2 → N2)) | N2 → NO → HNO2 NE° = 1 × E°_(HNO2 → NO) + 2 × E°_(NO → N2) NE° = 1 × E°_(NO → N2O) + NE°_(+2 O.S.) NE° = 1 × 0.996V + 3.36V = 4.356V | Calculate NE° for the +2 oxidation state, NO, first. Then use it in this calculation. |
-| 2 | N2 → NO | 2 × (E°_(NO → N2)) | N2 → N2O → NO NE° = 1 × E°_(NO → N2O) + 1 × E°_(N2O → N2) NE° = 1 × E°_(NO → N2O) + NE°_(+1 O.S.) NE° = 1 × 1.59V + 1.77V = 3.36V | Calculate NE° for the +1 oxidation state, NO, first. Then use it in this calculation. |
-| 1 | N2 → N2O | 1 × E°_(N2O → N2) | N2 → N2O NE° = 1 × E°_(N2O → N2) NE° = 1 × + 1.77V = +1.77V |  |
+| 5 | N2 → NO3^- | 5 × (E°_(NO3^− → N2)) | N2 → N2O4 → NO3^−; NE° = 1 × E°_(NO3^− → N2O4) + 4 × E°_(N2O4 → N2); NE° = 1 × E°_(NO3^− → N2O4) + NE°_(+4 O.S.); NE° = 1 × 0.803V + 5.426V = 6.229V | Calculate NE° for the +4 oxidation state, NO, first. Then use it in this calculation. |
+| 4 | N2 → N2O4 | 4 × (E°_(N2O4 → N2)) | N2 → HNO2 → N2O4; NE° = 1 × E°_(HNO2 → NO) + 3 × E°_(HNO2 → N2); NE° = 1 × E°_(N2O4 → HNO2) + NE°_(+3 O.S.); NE° = 1 × 1.07V + 4.356V = 5.426V | Calculate NE° for the +3 oxidation state, NO, first. Then use it in this calculation. |
+| 3 | N2 → HNO2 | 3 × (E°_(HNO2 → N2)) | N2 → NO → HNO2; NE° = 1 × E°_(HNO2 → NO) + 2 × E°_(NO → N2); NE° = 1 × E°_(NO → N2O) + NE°_(+2 O.S.); NE° = 1 × 0.996V + 3.36V = 4.356V | Calculate NE° for the +2 oxidation state, NO, first. Then use it in this calculation. |
+| 2 | N2 → NO | 2 × (E°_(NO → N2)) | N2 → N2O → NO; NE° = 1 × E°_(NO → N2O) + 1 × E°_(N2O → N2); NE° = 1 × E°_(NO → N2O) + NE°_(+1 O.S.); NE° = 1 × 1.59V + 1.77V = 3.36V | Calculate NE° for the +1 oxidation state, NO, first. Then use it in this calculation. |
+| 1 | N2 → N2O | 1 × E°_(N2O → N2) | N2 → N2O; NE° = 1 × E°_(N2O → N2); NE° = 1 × + 1.77V = +1.77V |  |
 | 0 | None | 0 V | NE° = 0V by definition. | Defined as 0 V |
-| -1 | N2 → NH3OH^+ | (−1) × E°_(N2 → NH3OH^+) | N2 → NH3OH^+ NE° = (−1)E°_(N2 → NH3OH^+) NE° = (−1) × (−1.87V) = +1.87V |  |
-| -2 | N2 → N2H5^+ | (−2) × E°_(N2 → N2H5^+) | N2 → NH3OH^+ → N2H5^+ NE° = (−1) × E°_(N2 → NH3OH^+) + (−1)E°_(NH3OH^+ → N2H5^+) NE° = NE°_(−1 O.S.) + (−1)E°_(NH3OH^+ → N2H5^+) NE° = +1.87V + (−1) × 1.41V = 0.46V | Calculate NE° for the -1 oxidation state, NO, first. Then use it in this calculation. |
-| -3 | N2 → NH4^+ | (−3) × E°_(N2 → NH4^+) | N2 → N2H5^+ → NH4^+ NE° = (−1)E°_(N2 → N2H5^+) + (−1)E°_(N2H5^+ → NH4^+) NE° = NE°_(−2 O.S.) + (−1)E°_(N2H5^+ → NH4^+) NE° = +0.46V + (−1) × 1.275V = −0.815V | Calculate NE° for the -2 oxidation state, NO, first. Then use it in this calculation. |
+| -1 | N2 → NH3OH^+ | (−1) × E°_(N2 → NH3OH^+) | N2 → NH3OH^+; NE° = (−1)E°_(N2 → NH3OH^+); NE° = (−1) × (−1.87V) = +1.87V |  |
+| -2 | N2 → N2H5^+ | (−2) × E°_(N2 → N2H5^+) | N2 → NH3OH^+ → N2H5^+; NE° = (−1) × E°_(N2 → NH3OH^+) + (−1)E°_(NH3OH^+ → N2H5^+); NE° = NE°_(−1 O.S.) + (−1)E°_(NH3OH^+ → N2H5^+); NE° = +1.87V + (−1) × 1.41V = 0.46V | Calculate NE° for the -1 oxidation state, NO, first. Then use it in this calculation. |
+| -3 | N2 → NH4^+ | (−3) × E°_(N2 → NH4^+) | N2 → N2H5^+ → NH4^+; NE° = (−1)E°_(N2 → N2H5^+) + (−1)E°_(N2H5^+ → NH4^+); NE° = NE°_(−2 O.S.) + (−1)E°_(N2H5^+ → NH4^+); NE° = +0.46V + (−1) × 1.275V = −0.815V | Calculate NE° for the -2 oxidation state, NO, first. Then use it in this calculation. |
 
 The resulting Frost diagram for acidic aqueous nitrogen is given below.
 

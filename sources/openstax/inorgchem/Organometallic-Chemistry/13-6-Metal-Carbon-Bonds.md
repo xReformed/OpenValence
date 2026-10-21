@@ -279,7 +279,7 @@ Diagrams illustrating doublet, quartet, Fischer, and Schrock carbynes, showing m
 
 [Note: corrected; the source prints "Fisher, and Schulze carbenes" where this reads "Fischer, and Schrock carbynes". The figure shows Fischer and Schrock carbynes, as its caption says.]
 
-Analogously, in the quartet carbyne spin state in the Schrock carbyne systems three covalent bonds occur between the singly occupied sp, p_yand p_z orbitals of carbyne−C moiety with the respective singly occupied metal d orbitals (Figure 13.6.3.1).
+Analogously, in the quartet carbyne spin state in the Schrock carbyne systems three covalent bonds occur between the singly occupied sp, p_y and p_z orbitals of carbyne−C moiety with the respective singly occupied metal d orbitals (Figure 13.6.3.1).
 
 Similar to what has been observed earlier in the case of the Fischer carbenes and Schrock carbenes, the Fischer carbyne complexes are formed with metal centers in lower oxidation states for e.g. as in Br(CO)4W≡CMe, while the Schrock carbyne complexes are formed with metals in higher oxidation state, e.g. as in (t−BuO)3W≡Ct−Bu.
 

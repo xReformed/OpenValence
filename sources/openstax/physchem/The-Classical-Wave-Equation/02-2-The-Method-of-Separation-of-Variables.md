@@ -128,7 +128,7 @@ y(x) = c1 e^(k x) + c2 e^(−k x)
 
 Solve
 
-y'' + 3y'−4y = 0
+y'' + 3y' − 4y = 0
 
 **Solution**
 
@@ -170,7 +170,7 @@ y2 = e^(−4t)
 
 Now let
 
-L(y) = y'' + 3y'−4y
+L(y) = y'' + 3y' − 4y
 
 It is easy to verify that if y1 and y2 are solutions to
 
@@ -190,7 +190,7 @@ Represents a two dimensional family (vector space) of solutions. Later we will p
 
 Solve
 
-y''−y'−6y = 0
+y'' − y' − 6y = 0
 
 with y(0) = 1 and y'(0) = 2.
 

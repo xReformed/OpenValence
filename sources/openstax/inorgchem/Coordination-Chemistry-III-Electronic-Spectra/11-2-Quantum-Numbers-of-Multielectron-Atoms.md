@@ -256,9 +256,7 @@ You can see that the largest possible box is the red box drawn (Figure 11.2.1.5)
 
 Next, we look what is the next-largest rectangular box we can draw, and which contains microstates we did not consider yet. We can see that the blue box contains nine fields equaling nine microstates. The microstate within this box that has the highest Ml and Ms values is the one with Ml = 4 and Ms = 0. This defines a ^1G term. This is a singlet term. Note that a singlet term ONLY has microstates with paired spins (M_s=0).
 
-There is another rectangular box which also contains nine microstates. It is the green one. The microstate with the highest Ml and Ms values is the one with Ml = 1 and Ms = 1. Thus, L = 1, and 2S + 1 = 3, which defines a ^3 P term. Note that despite this being a triplet term, which indicates two unpaired electrons (S=1), the term also contains three microstates that have opposite spins with a total Ms = 0.
-
-[Note: corrected; the source prints "(\S=1\)" where this reads "(S=1)". The source's TeX is broken.]
+There is another rectangular box which also contains nine microstates. It is the green one. The microstate with the highest Ml and Ms values is the one with Ml = 1 and Ms = 1. Thus, L = 1, and 2S + 1 = 3, which defines a ^3 P term. Note that despite this being a triplet term, which indicates two unpaired electrons (S = 1), the term also contains three microstates that have opposite spins with a total Ms = 0.
 
 The next-largest box is the purple one containing five fields and five microstates. What is the term with the highest Ml and Ms values? It is the one with Ml = 2 and Ms = 0. This means that L=2 and S=0, which defines a ^1D term, a singlet term with only microstates with paired spins. There is one microstate left that we did not consider thus far, the one with Ml = 0 and Ms = 0. These are the highest Ml and Ms values because there is no other microstate. Thus, this term contains only one microstate and the term symbol is ^1 S. Now we have found all the terms and term symbols.
 
@@ -311,7 +309,7 @@ In this case, we'll focus on transition metal d-orbitals. To begin, you'll need 
 4. Calculate L using the diagram drawn from #2.
 5. Write the term symbol for the ground state.
 
-[Note: corrected; the source prints "Calcuate" where this reads "Calculate"; the source prints "(\S\)" where this reads "(S)". A typing error, and broken TeX.]
+[Note: corrected; the source prints "Calcuate" where this reads "Calculate". A typing error.]
 
 Let's use the example of the [Cr(NH3)6]^3+ complex ion, and determine its ground state term following the shortcut described above.
 

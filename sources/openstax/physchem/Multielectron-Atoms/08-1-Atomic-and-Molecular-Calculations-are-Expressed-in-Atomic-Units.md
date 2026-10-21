@@ -46,7 +46,7 @@ All the units that make the SI version of the Hamiltonian disappear to emphasize
 
 <!-- end of example -->
 
-Atomic units are derived from certain fundamental properties of the physical world, and are free of anthropocentric considerations. It should be kept in mind that atomic units were designed for atomic-scale calculations in the present-day universe, with units normalize the reduced Planck constant and also mass and charge of the electron are set to 1, and, as a result, the speed of light in atomic units is a large value, 1/α≈137. For example, the orbital velocity of an electron around a small atom is of the order of 1 in atomic units. Table 8.1.2 give a few derived units. Some of them have proper names and symbols assigned, as indicated in the table.
+Atomic units are derived from certain fundamental properties of the physical world, and are free of anthropocentric considerations. It should be kept in mind that atomic units were designed for atomic-scale calculations in the present-day universe, with units normalize the reduced Planck constant and also mass and charge of the electron are set to 1, and, as a result, the speed of light in atomic units is a large value, 1/α ≈ 137. For example, the orbital velocity of an electron around a small atom is of the order of 1 in atomic units. Table 8.1.2 give a few derived units. Some of them have proper names and symbols assigned, as indicated in the table.
 
 Table 8.1.2 : Derived atomic units
 

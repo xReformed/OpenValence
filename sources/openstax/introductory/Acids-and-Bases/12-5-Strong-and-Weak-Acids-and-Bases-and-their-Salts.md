@@ -19,7 +19,7 @@ HCl → (100%) H^+(aq)+Cl^-(aq)
 
 Any acid that dissociates 100% into ions is called a strong acid. If it does not dissociate 100%, it is a weak acid. Acetic acid (HC2H3O2) is an example of a weak acid:
 
-HC2H3O2 ⟶ (~ 5%) H^+(aq) + C2H3O2^-(aq)
+HC2H3O2 ⟶ (∼ 5%) H^+(aq) + C2H3O2^-(aq)
 
 Because this reaction does not go 100% to completion, it is more appropriate to write it as a reversible reaction:
 

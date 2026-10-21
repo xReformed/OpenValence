@@ -65,11 +65,11 @@ Graph showing a wave function Ψ plotted against a horizontal axis from 0 to L, 
 
 This area can be computed:
 
-|ψ_(n=1)|^2≈(2/L)~~sin^2((π(L/2))/L)~~ (→ 1)Δx
+|ψ_(n=1)|^2 ≈ (2/L)~~sin^2((π(L/2))/L)~~ (→ 1)Δx
 
-≈(2/L)(L/100)
+≈ (2/L)(L/100)
 
-≈1/50 = 0.02
+≈ 1/50 = 0.02
 
 Given that the wavefunction is sinusoidal, the actual probability of finding an electron within the given interval at L/2 should be slightly less because of the behavior of the sinusoid at L/2 is at its peak of the wavefunction (Figure 3.6.2 ).
 
@@ -86,11 +86,11 @@ We can use the same graphical interpretation as above, but using the probability
 Figure 3.6.3: The probability can be interpreted as an area under the probability density |ψ2|^2. (CC BY-NC Copyright; Ümit Kaya via LibreTexts)
 Graph showing a wave function (Ψ) with peaks and troughs along the x-axis labeled from 0 to L.
 
-|ψ_(n=2)|^2≈(2/L)~~sin^2((2π(L/2))/L)~~ (→ 0)Δx
+|ψ_(n=2)|^2 ≈ (2/L)~~sin^2((2π(L/2))/L)~~ (→ 0)Δx
 
-[Note: corrected; the source prints "|ψ_(n=1)|^2≈(2/L)~~sin^2((2π" where this reads "|ψ_(n=2)|^2≈(2/L)~~sin^2((2π". This is the n = 2 calculation.]
+[Note: corrected; the source prints "|ψ_(n=1)|^2 ≈ (2/L)~~sin^2((2π" where this reads "|ψ_(n=2)|^2 ≈ (2/L)~~sin^2((2π". This is the n = 2 calculation.]
 
-≈0
+≈ 0
 
 The probability of finding an electron in a box at L/2 for n = 2 is approximately zero.
 
@@ -212,6 +212,6 @@ Not all wavefunctions can be normalized according to the scheme set out in Equat
 
 is not square-integrable, and, thus, cannot be normalized. For such wavefunctions, the best we can say is that
 
-P_(x∈a:b)(t)∝∫_a^b |Ψ(x, t)|^2 dx.
+P_(x∈a:b)(t) ∝ ∫_a^b |Ψ(x, t)|^2 dx.
 
 In the following, all wavefunctions are assumed to be square-integrable and normalized, unless otherwise stated.

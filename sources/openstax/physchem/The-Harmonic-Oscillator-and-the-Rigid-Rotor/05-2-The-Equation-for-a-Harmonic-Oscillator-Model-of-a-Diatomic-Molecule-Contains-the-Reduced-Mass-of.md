@@ -36,7 +36,7 @@ Determine the reduced mass of the two body system of a proton and electron with 
 
 The classical Harmonic Oscillator approximation is a simple yet powerful representation of the energetics of an oscillating spring system. Central to this model is the formulation of the quadratic potential energy
 
-V(x)≈(1/2)kx^2
+V(x) ≈ (1/2)kx^2
 
 One problem with this classical formulation is that it is not general. We cannot use it, for example, to describe vibrations of diatomic molecules, where quantum effects are important. This require the formulation for Schrödinger Equation using Equation (potential).
 

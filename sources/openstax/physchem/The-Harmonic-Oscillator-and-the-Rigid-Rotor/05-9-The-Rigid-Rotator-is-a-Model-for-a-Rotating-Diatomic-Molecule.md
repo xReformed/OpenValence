@@ -83,7 +83,7 @@ E_photon = Ef − Ei
 
 with Ji and Jf representing the rotational quantum numbers of the initial (lower) and final (upper) levels involved in the absorption transition.
 
-Since microwave spectroscopists use frequency units and infrared spectroscopists use wavenumber units when describing rotational spectra and energy levels, both ν and ν̄ are important to calculate. When we add in the constraints imposed by the selection rules to identify possible transitions, Jf in Equation (5.9.6) can be replaced by Ji + 1, since the selection rule requires Jf–Ji = 1 for the absorption of a photon (Equation (5.9.3)). The equation for absorption transitions (Equation (5.9.6)) then can be written in terms of the only the quantum number Ji of the initial state.
+Since microwave spectroscopists use frequency units and infrared spectroscopists use wavenumber units when describing rotational spectra and energy levels, both ν and ν̄ are important to calculate. When we add in the constraints imposed by the selection rules to identify possible transitions, Jf in Equation (5.9.6) can be replaced by Ji + 1, since the selection rule requires Jf − Ji = 1 for the absorption of a photon (Equation (5.9.3)). The equation for absorption transitions (Equation (5.9.6)) then can be written in terms of the only the quantum number Ji of the initial state.
 
 E_photon = hν
 
@@ -148,8 +148,6 @@ B/h = B(infreq.) = h/(8π^2μro^2) ≡ [1/s]
 B/hc = B̃ = h/(8π^2μcro^2) ≡ [1/m]
 
 [Note: corrected; the source prints "≡ [s/m]" where this reads "≡ [1/m]". J s/(kg (m/s) m^2) = m^−1, a wavenumber (in practice cm^−1).]
-
-
 
 ### Exercise 5.9.4
 

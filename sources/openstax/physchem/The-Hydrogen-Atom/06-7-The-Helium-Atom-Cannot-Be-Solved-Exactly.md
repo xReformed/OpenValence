@@ -19,7 +19,7 @@ The second element in the periodic table provides our first example of a quantum
 
 Figure 6.7.1 shows a schematic representation of a helium atom with two electrons whose coordinates are given by the vectors r1 and r2. The electrons are separated by a distance r12 = |r1 − r2|. The origin of the coordinate system is fixed at the nucleus. As with the hydrogen atom, the nuclei for multi-electron atoms are so much heavier than an electron that the nucleus is assumed to be the center of mass. Fixing the origin of the coordinate system at the nucleus allows us to exclude translational motion of the center of mass from our quantum mechanical treatment.
 
-Figure 6.7.1: (a) The nucleus (++) and electrons (e-) of the helium atom. (b) Equivalent reduced particles with the center of mass (approximately located at the nucleus) at the origin of the coordinate system. Note that μ1 and μ2≈me.
+Figure 6.7.1: (a) The nucleus (++) and electrons (e-) of the helium atom. (b) Equivalent reduced particles with the center of mass (approximately located at the nucleus) at the origin of the coordinate system. Note that μ1 and μ2 ≈ me.
 Two diagrams representing directed graphs. The first graph shows nodes and directed edges labeled with values, while the second graph outlines a similar structure with additional labels.
 
 The Hamiltonian operator for the hydrogen atom serves as a reference point for writing the Hamiltonian operator for atoms with more than one electron. Start with the same general form we used for the hydrogen atom Hamiltonian
@@ -122,11 +122,11 @@ Unfortunately, the Coulomb repulsion terms (Equation (6.7.5)) make it impossible
 
 The most basic approximations to the exact solutions to a multi-electron atom Hamiltonian, Ĥ, (Equation (6.7.7)) involve writing a multi-electron wavefunction (ψ(r1, r2, …, rn)) as a simple product of single-electron wavefunctions (φi(ri) ):
 
-ψ(r1, r2, …, rn)≈φ1(r1)φ2(r2)…φn(rn)
+ψ(r1, r2, …, rn) ≈ φ1(r1)φ2(r2)…φn(rn)
 
 or in Dirac notation
 
-|ψ(r1, r2, …, rn)⟩≈|φ1(r1)⟩|φ2(r2)⟩…|φn(rn)⟩
+|ψ(r1, r2, …, rn)⟩ ≈ |φ1(r1)⟩|φ2(r2)⟩…|φn(rn)⟩
 
 The energy of the atom in the state associated with a specific multi-electron wavefunction (E) is obtained from the multi-electron Schrödinger Equation
 
@@ -134,7 +134,7 @@ The energy of the atom in the state associated with a specific multi-electron wa
 
 Within the approximation in Equation (6.7.8), E can be expressed sum of the energies of the one-electron components (εi).
 
-E≈Σi εi
+E ≈ Σi εi
 
 This is called the orbital approximation.
 

@@ -66,9 +66,9 @@ Operationally, both the Pearson hardness and Mulliken electronegativity are appr
 
 [Note: corrected; the source prints "ionization energies and electronegativities" where this reads "ionization energies and electron affinities". Unit changes in the number of electrons are ionization energies and electron affinities.]
 
-Pearson’s absolute hardness = η≈(IE–EA)/2
+Pearson’s absolute hardness = η ≈ (IE − EA)/2
 
-Mulliken electronegativity = χ≈(IE + EA)/2
+Mulliken electronegativity = χ ≈ (IE + EA)/2
 
 where IE and EA are in eV.
 
@@ -78,17 +78,17 @@ IE = −E_HOMO
 
 Similarly, the electron affinity (EA), defined as the opposite of the energy released on absorption of an electron, may be taken as an approximation of the LUMO energy.
 
-E_LUMO≈−EA
+E_LUMO ≈ −EA
 
 So Pearson’s absolute hardness is just half the HOMO-LUMO gap (band gap) size in electron volts:
 
-Pearson's absolute hardness = η≈(E_LUMO–E_HOMO)/2
+Pearson's absolute hardness = η ≈ (E_LUMO − E_HOMO)/2
 
 where all values are given in eV,
 
 and the Mulliken electronegativity is just the average of the HOMO and LUMO energies (~Fermi energy):
 
-Mulliken electronegativity, χ≈−(E_LUMO + E_HOMO)/2
+Mulliken electronegativity, χ ≈ −(E_LUMO + E_HOMO)/2
 
 where all values are given in eV
 

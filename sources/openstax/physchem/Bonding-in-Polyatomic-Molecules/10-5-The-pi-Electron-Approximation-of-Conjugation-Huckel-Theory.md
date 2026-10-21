@@ -60,7 +60,7 @@ The bonding occurs via the mixing of the electrons in the sp^2 hybrid orbitals o
 Figure 10.5.3: Molecular orbitals demonstrating the sigma-pi separability of the π-bonding framework (blue) and the σ-bonding frameworks (red) of ethylene. (CC BY-NC; Ümit Kaya via LibreTexts)
 Diagram depicting a geometric shape with labeled dimensions and various dashed and solid lines in multiple colors.
 
-Hückel treatment is concerned only with describing the molecular orbitals and energies of the π bonding framework.
+> Hückel treatment is concerned only with describing the molecular orbitals and energies of the π bonding framework.
 
 Since Hückel theory is a special consideration of molecular orbital theory, the molecular orbitals |ψi⟩ can be described as a linear combination of the 2pz atomic orbitals φ at carbon with their corresponding {ci} coefficients:
 
@@ -230,7 +230,7 @@ These molecular orbitals form the π-bonding framework and since each carbon con
 Figure 10.5.5: Schemetic representation of the π molecular orbitals framework for ethylene . Notice that the antibonding molecular orbital has one more node than the bonding molecular orbital as expected since it is higher in energy. (CC BY-NC; Ümit Kaya via LibreTexts)
 Diagram illustrating a comparison of two structures, featuring orange hourglass shapes and surrounding blue boxes.
 
-HOMO and LUMO are acronyms for highest occupied molecular orbital and lowest unoccupied molecular orbital, respectively and are often referred to as frontier orbitals. The energy difference between the HOMO and LUMO is termed the HOMO–LUMO gap.
+> HOMO and LUMO are acronyms for highest occupied molecular orbital and lowest unoccupied molecular orbital, respectively and are often referred to as frontier orbitals. The energy difference between the HOMO and LUMO is termed the HOMO–LUMO gap.
 
 The 3-D calculated π molecular orbitals are shown in Figure 10.5.6 .
 

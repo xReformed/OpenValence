@@ -37,7 +37,7 @@ where I0 is the intensity of the incident light and I is the intensity of the li
 
 Note that UV spectra differ from IR spectra in how they are presented. For historical reasons, IR spectra are usually displayed so that the baseline corresponding to zero absorption runs across the top of the chart and a valley indicates an absorption, whereas UV spectra are displayed with the baseline at the bottom of the chart so that a peak indicates an absorption (Figure 14.7.3).
 
-Figure 14.7.3: The ultraviolet spectrum of 1,3-butadiene, λmax = 217 nm.
+Figure 14.7.3: The ultraviolet spectrum of 1,3-butadiene, λ_max = 217 nm.
 The ultraviolet spectrum of 1,3-butadiene shows a peak at (217, 0.85) where lambda max equals 217 nanometers. The x-axis and y-axis represent wavelength and absorbance, respectively.
 
 The amount of UV light absorbed is expressed as the sample’s molar absorptivity (ε), defined by the equation
@@ -58,7 +58,7 @@ c = A/(εl) = 0.37/((1.38 × 10^5 ( L)/( mol· cm))(1.00 cm))
 
 = 2.7 × 10^−6 mol/L
 
-Unlike IR and NMR spectra, which show many absorptions for a given molecule, UV spectra are usually quite simple—often only a single peak. The peak is usually broad, and we identify its position by noting the wavelength at the top of the peak—λmax, read as “lambda max.”
+Unlike IR and NMR spectra, which show many absorptions for a given molecule, UV spectra are usually quite simple—often only a single peak. The peak is usually broad, and we identify its position by noting the wavelength at the top of the peak—λ_max, read as “lambda max.”
 
 ### Exercise 14.7.1
 
@@ -72,7 +72,7 @@ Calculate the energy range of electromagnetic radiation in the UV region of the 
 
 ### Exercise 14.7.2
 
-If pure vitamin A has λmax = 325 (ε = 50,100), what is the vitamin A concentration in a sample whose absorbance at 325 nm is A = 0.735 in a cell with a pathlength of 1.00 cm?
+If pure vitamin A has λ_max = 325 (ε = 50,100), what is the vitamin A concentration in a sample whose absorbance at 325 nm is A = 0.735 in a cell with a pathlength of 1.00 cm?
 
 **Answer**
 

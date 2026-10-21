@@ -6,3 +6,19 @@ source_url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Ch
 author: "Anonymous"
 license: "Unverified"
 ---
+
+Our expression for internal energy at constant pressure:
+
+ΔU = qP + w = qP − PΔV
+
+Rearrange:
+
+qP = ΔU + PΔV = U2 − U1 + P(V2 − V1)
+
+qP = (U2 + PV2) − (U1 + PV1)
+
+We can define this term as enthalpy:
+
+H ≡ U + PV
+
+This is a new state function.

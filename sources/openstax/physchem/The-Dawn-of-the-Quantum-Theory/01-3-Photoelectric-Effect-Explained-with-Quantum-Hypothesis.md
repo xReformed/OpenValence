@@ -75,7 +75,7 @@ eV_stop = hν − Φ
 
 Thus, Einstein's theory makes a very definite quantitative prediction: if the frequency of the incident light is varied, and V_stop plotted as a function of frequency, the slope of the line should be h/e (Figure 1.3.4A). It is also clear that there is a minimum light frequency for a given metal νo, that for which the quantum of energy is equal to Φ (Equation (Eq1)). Light below that frequency, no matter how bright, will not eject electrons.
 
-According to both Planck and Einstein, the energy of light is proportional to its frequency rather than its amplitude, there will be a minimum frequency ν0 needed to eject an electron with no residual energy.
+> According to both Planck and Einstein, the energy of light is proportional to its frequency rather than its amplitude, there will be a minimum frequency ν0 needed to eject an electron with no residual energy.
 
 Since every photon of sufficient energy excites only one electron, increasing the light's intensity (i.e. the number of photons/sec) only increases the number of released electrons and not their kinetic energy. In addition, no time is necessary for the atom to be heated to a critical temperature and therefore the release of the electron is nearly instantaneous upon absorption of the light. Finally, because the photons must be above a certain energy to satisfy the workfunction, a threshold frequency exists below which no photoelectrons are observed. This frequency is measured in units of Hertz (1/second) in honor of the discoverer of the photoelectric effect.
 
@@ -164,9 +164,9 @@ Solution for (b)
 
 Finding the kinetic energy of the ejected electron is now a simple application of Equation (Eq1). Substituting the photon energy and binding energy yields
 
-KEe = hν–Φ
+KEe = hν − Φ
 
-= 2.96 eV–2.71 eV
+= 2.96 eV − 2.71 eV
 
 = 0.246 eV.
 
@@ -202,7 +202,7 @@ Although Hertz discovered the photoelectric effect in 1887, it was not until 190
 
 [Note: corrected; the source prints "Hertz discovered the photoelectron in 1887" where this reads "Hertz discovered the photoelectric effect in 1887". Hertz observed the effect in 1887; the photoelectrons were identified by J.J. Thomson in 1899, as the section says at the start.]
 
-The photoelectric effect is the process in which electromagnetic radiation ejects electrons from a material. Einstein proposed photons to be quanta of electromagnetic radiation having energy E = hν is the frequency of the radiation. All electromagnetic radiation is composed of photons. As Einstein explained, all characteristics of the photoelectric effect are due to the interaction of individual photons with individual electrons. The maximum kinetic energy KEe of ejected electrons (photoelectrons) is given by KEe = hν–Φ, where hν is the photon energy and Φ is the workfunction (or binding energy) of the electron to the particular material.
+The photoelectric effect is the process in which electromagnetic radiation ejects electrons from a material. Einstein proposed photons to be quanta of electromagnetic radiation having energy E = hν is the frequency of the radiation. All electromagnetic radiation is composed of photons. As Einstein explained, all characteristics of the photoelectric effect are due to the interaction of individual photons with individual electrons. The maximum kinetic energy KEe of ejected electrons (photoelectrons) is given by KEe = hν − Φ, where hν is the photon energy and Φ is the workfunction (or binding energy) of the electron to the particular material.
 
 ## Conceptual Questions
 

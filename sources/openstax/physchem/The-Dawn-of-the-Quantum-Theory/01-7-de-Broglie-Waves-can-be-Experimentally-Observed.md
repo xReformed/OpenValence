@@ -15,7 +15,7 @@ The validity of de Broglie’s proposal was confirmed by electron diffraction ex
 
 [Note: corrected; the source prints "G.P. Thomson in 1926" where this reads "G.P. Thomson in 1927". G.P. Thomson's electron diffraction experiments (with A. Reid) were reported in 1927, the same year as Davisson and Germer's.]
 
-Diffraction occurs when waves encounter obstacles whose size is comparable with its wavelength.
+> Diffraction occurs when waves encounter obstacles whose size is comparable with its wavelength.
 
 Continuing with our analysis of experiments that lead to the new quantum theory, we now look at the phenomenon of electron diffraction.
 
@@ -40,7 +40,7 @@ The wave nature of light causes the light waves passing through the two slits to
 
 [Note: corrected; the source prints "(Figure 1.7.0c)" where this reads "(Figure 1.7.2c)". There is no Figure 1.7.0; the interference pattern is part (c) of Figure 1.7.2.]
 
-Interference is a wave phenomenon in which two (or more) waves superimpose to form a resultant wave of greater or lower amplitude. It is the primary property used to identify wave behavior.
+> Interference is a wave phenomenon in which two (or more) waves superimpose to form a resultant wave of greater or lower amplitude. It is the primary property used to identify wave behavior.
 
 ## Diffraction of Electrons (Electrons as Waves)
 

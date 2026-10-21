@@ -33,7 +33,7 @@ The angular momentum vector L⃗ is directed along the axis of rotation. From th
 
 The important point of the above discussion is that both the angular momentum and the energy of an atom remain constant if the atom is left undisturbed. Any physical quantity which is constant in a classical system is both conserved and quantized in a quantum mechanical system. Thus both the energy and the angular momentum are quantized for an atom.
 
-Any physical quantity which is constant in a classical system is both conserved and quantized in a quantum mechanical system.
+> Any physical quantity which is constant in a classical system is both conserved and quantized in a quantum mechanical system.
 
 [Note: not every conserved quantity is quantized: the energy and momentum of a free particle, and the energy of an unbound electron, are conserved but take continuous values. The text is left as printed.]
 
@@ -60,7 +60,7 @@ Three pairs of overlapping red and green egg-shaped forms, arranged in varying o
 
 When l = 1, the orbitals are called p orbitals. In this case the orbital and its electron density are concentrated along a line (axis) in space. The 2p orbital or wavefunction is positive in value on one side and negative in value on the other side of a plane which is perpendicular to the axis of the orbital and passes through the nucleus. The orbital has a node in this plane, and consequently an electron in a 2p orbital does not place any electronic charge density at the nucleus. The electron density of a 1s orbital, on the other hand, is a maximum at the nucleus. The same diagram for the 2p density distribution is obtained for any plane which contains this axis. Thus in three dimensions the electron density would appear to be concentrated in two lobes, one on each side of the nucleus, each lobe being circular in cross section Figure 6.6.3 .
 
-An electron possesses orbital angular momentum has a density distributions is no longer spherical.
+> An electron possesses orbital angular momentum has a density distributions is no longer spherical.
 
 ## The ml Quantum Number and Magnetic Fields
 
@@ -109,7 +109,7 @@ In the equations below, we're going to make use of some trigonometry, notably Eu
 
 e^(iφ) = cos φ + i sin φ
 
-sin φ = (e^(iφ)−e^(−iφ))/(2i)
+sin φ = (e^(iφ) − e^(−iφ))/(2i)
 
 cos φ = (e^(iφ) + e^(−iφ))/2
 
@@ -127,11 +127,9 @@ We're also going to use x = r sin θ cos ϕ and y = r sin θ sin ϕ.
 
 ψ_2py = ((i)/(√2))(ψ_(2, 1, +1) + ψ_(2, 1, −1))
 
-= (1/(2i))(e^(iφ)−e^(−iφ))r sin θf(r)
+= (1/(2i))(e^(iφ) − e^(−iφ))r sin θf(r)
 
 = r sin θ sin φf(r) = yf(r)
-
-
 
 So, while ml = 0 corresponds to |pz⟩, ml = +1 and ml = −1 cannot be directly assigned to either |px⟩ or |py⟩, but rather a combination of |px⟩ and |py⟩. An alternative description is that ml = +1 might correspond to (|px⟩ + |py⟩) and ml = −1 might correspond to (|px⟩ −|py⟩).
 

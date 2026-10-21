@@ -120,7 +120,7 @@ The cyclic permutations of the above result yield the fundamental commutation re
 
 The three commutation relations (Equations (6.3.17a) - (6.3.17c)) are the foundation for the whole theory of angular momentum in quantum mechanics. Whenever we encounter three operators having these commutation relations, we know that the dynamical variables that they represent have identical properties to those of the components of an angular momentum (which we are about to derive). In fact, we shall assume that any three operators that satisfy the commutation relations (Equations (6.3.17a) - (6.3.17c)) represent the components of some sort of angular momentum.
 
-Any three operators that satisfy the cyclic commutation relations represent the components of some sort of angular momentum.
+> Any three operators that satisfy the cyclic commutation relations represent the components of some sort of angular momentum.
 
 ### Example 6.3.1 : Commutators
 
@@ -198,7 +198,7 @@ The mathematics of commutation relations is relatively straightforward, but what
 
 If two operators Â and B̂ commute with each other then
 
-ÂB̂−B̂Â = 0,
+ÂB̂ − B̂Â = 0,
 
 which can be rearranged to
 

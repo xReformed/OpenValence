@@ -259,7 +259,7 @@ Potassium: Reacts with oxygen to form a mixture of potassium peroxide and potass
 
 Rubidium and Cesium: Both metals react to produce superoxides through the same process as that of the potassium superoxide reaction.
 
-The oxides of these metals form metal hydroxides when they react with water. These metal hydroxides make the solution basic or alkaline, hence the name alkaline metals.
+> The oxides of these metals form metal hydroxides when they react with water. These metal hydroxides make the solution basic or alkaline, hence the name alkaline metals.
 
 Group 2 metals (alkaline earth metals) react with oxygen through the process of burning to form metal oxides but there are a few exceptions.
 

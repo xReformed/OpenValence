@@ -37,7 +37,7 @@ where
 
 The standard Gibbs free energy change for a reaction can be related to the reaction's equilibrium constant K_eq by the equation:
 
-ΔG° = −RTlnK_eq
+ΔG° = −RT ln K_eq
 
 where R is the gas constant (8.314 J/mol×K) and T is the temperature in Kelvin (K).
 
@@ -47,7 +47,7 @@ A negative value for Δ G°rxn (an exergonic reaction) corresponds to Keq being 
 
 ### Kinetics
 
-The highest point between two energy minima is a transition state (TS). The difference in energies of the reactant and the highest-energy TS is the standard free energy of activation (Δ G° ‡). The activation energy, in combination with the temperature at which the reaction is being run, determines the rate of a reaction: the higher the activation energy, the slower the reaction. The rate constant (k) is the proportionality constant relating the rate of the reaction to the concentrations of reactants. The relationship between activation energy and the rate constant, k, is given by the Arrhenius equation: k = Ae^{−(Ea)/RT} or lnk = lnA − (EA)/RT
+The highest point between two energy minima is a transition state (TS). The difference in energies of the reactant and the highest-energy TS is the standard free energy of activation (Δ G° ‡). The activation energy, in combination with the temperature at which the reaction is being run, determines the rate of a reaction: the higher the activation energy, the slower the reaction. The rate constant (k) is the proportionality constant relating the rate of the reaction to the concentrations of reactants. The relationship between activation energy and the rate constant, k, is given by the Arrhenius equation: k = Ae^{−(Ea)/RT} or ln k = ln A − (EA)/RT
 
 A rate law is an expression showing the relationship of the reaction rate to the concentrations of each reactant. The rate is defined as the change in reactants or products over time. For example, in a reaction of two reactants (R1 and R2) to form product (P), a rate law could be written as follows: (d[P])/dT = k[R1][R2] The rate law above is second order overall, and first order with respect to both R1 and R2. The order indicates the power of reactant concentrations for individual reactants or overall for the reaction.
 

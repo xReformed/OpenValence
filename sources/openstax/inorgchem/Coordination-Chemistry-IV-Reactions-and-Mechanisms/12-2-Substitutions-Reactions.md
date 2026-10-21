@@ -178,7 +178,7 @@ Consider all possible electron configurations for octahedral complexes (d^0 to d
 
 |  | Kinetically Inert (Slow) | Kinetically Labile (Fast) |
 | --- | --- | --- |
-| d^n electron count and ligand field strength | Octahedral configurations with empty eg orbitals: d^3 low-spin d^4, d^5, d^6 Strong-field d^8 (square planar) | Octahedral configurations with occupied eg orbitals: d^1, d^2, d^7, d^9, d^10 high-spin d^4, d^5, d^6 Weak-field d^8 (usually tetrahedral) |
+| d^n electron count and ligand field strength | Octahedral configurations with empty eg orbitals: d^3 low-spin d^4, d^5, d^6; Strong-field d^8 (square planar) | Octahedral configurations with occupied eg orbitals: d^1, d^2, d^7, d^9, d^10 high-spin d^4, d^5, d^6; Weak-field d^8 (usually tetrahedral) |
 
 #### Exercise 12.2.2.4
 

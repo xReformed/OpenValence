@@ -14,18 +14,6 @@ license: "CC BY-SA"
 
 Hermite polynomials were defined by Laplace (1810) though in scarcely recognizable form, and studied in detail by Chebyshev (1859). Chebyshev's work was overlooked and they were named later after Charles Hermite who wrote on the polynomials in 1864 describing them as new. They were consequently not new although in later 1865 papers Hermite was the first to define the multidimensional polynomials. The first six Hermite polynomial are plotted in Figure 5.7.1 .
 
-[Image: Hermite_poly_phys n=0.svg]
-
-[Image: Hermite_poly_phys n=1.svg]
-
-[Image: Hermite_poly_phys n=2.svg]
-
-[Image: Hermite_poly_phys n=3.svg]
-
-[Image: Hermite_poly_phys n=4.svg]
-
-[Image: Hermite_poly_phys n=5.svg]
-
 Figure 5.7.1: The first six Hermite polynomials Hn(x). (CC BY-SA 3.0 Unported; Alessio Damato, Vulpecula and others via Wikipedia)
 
 ### Generating Formula

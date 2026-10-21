@@ -111,7 +111,7 @@ Figure 5.3.2.2: Molecular Orbital diagram of hydrogen fluoride. Molecular orbita
 
 Knowledge of molecular orbital diagrams, and the shapes of molecular orbitals, can be used to accurately explain and predict chemical reactivity. Chemical reactions take place using the highest occupied molecular orbitals (HOMO) of a nucleophile or Lewis base, and the lowest unoccupied molecular orbital (LUMO) of an electrophile or Lewis acid.
 
-Lewis bases react using electrons in the HOMO, while Lewis acids react using the empty LUMO.
+> Lewis bases react using electrons in the HOMO, while Lewis acids react using the empty LUMO.
 
 #### Example: Reactivity of CO with metal ions
 

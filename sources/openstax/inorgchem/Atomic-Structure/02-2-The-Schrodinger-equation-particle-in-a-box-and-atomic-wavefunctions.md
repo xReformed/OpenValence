@@ -54,7 +54,7 @@ For review, a list of the quantum numbers, their values, and meanings are in the
 | SYMBOL | NAME | VALUES | MEANING |
 | --- | --- | --- | --- |
 | n | principal | 1,2,3...(any integer) | energy level, shell |
-| l | angular momentum | 0 → n − 1 | subshell, 0 = s,1 = p,2 = d,3 = f... this is the angular dependence of the orbital, shape of the orbital; *letters have historical meaning, sharp, principle, diffuse, fundamental |
+| l | angular momentum | 0 → n − 1 | subshell, 0 = s,1 = p,2 = d,3 = f...; this is the angular dependence of the orbital, shape of the orbital; *letters have historical meaning, sharp, principle, diffuse, fundamental |
 | ml | magnetic | + l → −l | orientation of angular momentum in space, orbital |
 | ms | spin | +1/2, −1/2 | the imaginary property we call "spin", up or down |
 
@@ -391,7 +391,7 @@ Table 2.2.2.1. Quantum Numbers
 | SYMBOL | NAME | VALUES | MEANING |
 | --- | --- | --- | --- |
 | n | principal | 1,2,3...(any integer) | energy level, shell |
-| l | angular momentum | 0 → n − 1 | subshell, 0 = s,1 = p,2 = d,3 = f... this is the angular dependence of the orbital, shape of the orbital; *letters have historical meaning, sharp, principle, diffuse, fundamental |
+| l | angular momentum | 0 → n − 1 | subshell, 0 = s,1 = p,2 = d,3 = f...; this is the angular dependence of the orbital, shape of the orbital; *letters have historical meaning, sharp, principle, diffuse, fundamental |
 | ml | magnetic | + l → −l | orientation of angular momentum in space, orbital |
 | ms | spin | +1/2, −1/2 | the imaginary property we call "spin", up or down |
 
@@ -592,7 +592,7 @@ Atomic orbitals result from a combination of both the radial and angular contrib
 
 The chart below compares the radial variation, angular variation, and their combinations (orbitals).
 
-| Orbital | Radial Probability | Radial Nodes | Angular Probability | Angular Nodes | Combination (Orbital) | Total Nodes |
+| Orbital | Radial Probability | Radial Nodes | Angular Probability | Angular Nodes | Combination; (Orbital) | Total Nodes |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1s | [Image not described in source] | 0 | [Image not described in source] | 0 | [Image not described in source] | 0 |
 | 2s | [Image not described in source] | 1 | [Image not described in source] | 0 | [Image not described in source] | 1 |
@@ -658,7 +658,7 @@ For example, in lithium (Li), none of the three electrons "feel" the full +3 cha
 In summary:
 
 - Core electrons: Z^*⪅Z
-- Valence electrons: Z^*≪Z
+- Valence electrons: Z^* ≪ Z
 
 ### Shielding:
 
@@ -806,7 +806,7 @@ S = 18(1) + 9(0.35) = 21.15
 
 Z* = 30 − 21.15 = 8.85
 
-So, although the nuclear charge of Zn is 30, the 3d electrons only experience a Z*≈8.85!
+So, although the nuclear charge of Zn is 30, the 3d electrons only experience a Z* ≈ 8.85!
 
 #### "Best" values for Z*
 

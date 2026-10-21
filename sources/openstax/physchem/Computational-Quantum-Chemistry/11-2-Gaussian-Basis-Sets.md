@@ -19,7 +19,7 @@ The linear variational method is used to find values for parameters in the basis
 
 The ultimate goal is a mathematical description of electrons in molecules that enables chemists and other scientists to develop a deep understanding of chemical bonding and reactivity, to calculate properties of molecules, and to make predictions based on these calculations. For example, an active area of research in industry involves calculating changes in chemical properties of pharmaceutical drugs as a result of changes in chemical structure.
 
-Selecting the ab initio model for a chemical system is almost always involves a trade-off between accuracy and computational cost. More accurate methods and larger basis sets make jobs run longer.
+> Selecting the ab initio model for a chemical system is almost always involves a trade-off between accuracy and computational cost. More accurate methods and larger basis sets make jobs run longer.
 
 In modern computational chemistry, quantum chemical calculations are typically performed using a finite set of basis functions. In these cases, the wavefunctions of the system in question are represented as vectors, the components of which correspond to coefficients in a linear combination of the basis functions in the basis set used.
 

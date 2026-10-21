@@ -58,7 +58,7 @@ Since the angular momentum operator does not involve the radial variable, r, we 
 
 ψ(r, θ, φ) = R(r)Y(θ, φ)
 
-The Spherical Harmonic functions provide information about where the electron is around the proton, and the radial function R(r) describes how far the electron is away from the proton.
+> The Spherical Harmonic functions provide information about where the electron is around the proton, and the radial function R(r) describes how far the electron is away from the proton.
 
 To separate variables, substitute the product function, Equation (6.1.8) into Equation (6.1.7), evaluate partial derivatives, divide each side by R(r) Y(θ, φ), and set each side of that resulting equation equal to a constant λ.
 

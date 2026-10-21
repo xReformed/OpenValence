@@ -106,7 +106,7 @@ Comparing Equation (29) with Equation (29), the total π energy of butadiene lie
 
 [Note: corrected; the source prints "by 0.48β" where this reads "by 0.47β". 4.472β − 4β = 0.472β; with β ≈ −75 kJ/mol that is the −35 kJ/mol given.]
 
-The delocalization energy is the extra stabilization resulting from the electrons extending over the whole molecule.
+> The delocalization energy is the extra stabilization resulting from the electrons extending over the whole molecule.
 
 ### Delocalization Energy in Valence Bond Theory
 

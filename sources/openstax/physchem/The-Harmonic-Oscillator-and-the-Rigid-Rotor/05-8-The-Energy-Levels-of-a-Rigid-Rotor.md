@@ -114,7 +114,7 @@ and the φ-equation
 
 The partial derivatives have been replaced by total derivatives because only a single variable is involved in each equation.
 
-Often mJ is referred to as just m for convenience.
+> Often mJ is referred to as just m for convenience.
 
 ### Exercise 5.8.2
 
@@ -236,7 +236,7 @@ J can be 0 or any positive integer greater than or equal to |mJ|. Each pair of v
 
 [Note: corrected; the source prints "greater than or equal to mJ." where this reads "greater than or equal to |mJ|.". J ≥ |mJ|.]
 
-Each pair of values for the quantum numbers, J and mJ, identifies a rotational state and hence a specific wavefunction with associated energy.
+> Each pair of values for the quantum numbers, J and mJ, identifies a rotational state and hence a specific wavefunction with associated energy.
 
 The combination of Equations (5.8.16) and (5.8.28) reveals that the energy of this system is quantized.
 
@@ -251,7 +251,7 @@ Using Equation (5.8.30), you can construct a rotational energy level diagram (Fi
 Figure 5.8.2: Energy spacing for a rigid rotor (in 3D). Notice the energy depends only on J and not depend on mJ. That is, the energy of the rotor is not affected by its orientation.
 Vertical lines labeled with numerical values 4, 3, 2, 1, and an arrow indicating J=0 at the bottom.
 
-Each allowed energy of rigid rotor is (2J + 1)-fold degenerate. Hence, there exist (2J + 1) different wavefunctions with that energy.
+> Each allowed energy of rigid rotor is (2J + 1)-fold degenerate. Hence, there exist (2J + 1) different wavefunctions with that energy.
 
 ### Exercise 5.8.6
 

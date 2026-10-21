@@ -7,7 +7,9 @@ author: "Anonymous"
 license: "CC BY-NC-SA 4.0"
 ---
 
-In the mid 1920's the German physicist Werner Heisenberg showed that if we try to locate an electron within a region Δx; e.g. by scattering light from it, some momentum is transferred to the electron, and it is not possible to determine exactly how much momentum is transferred, even in principle. Heisenberg showed that consequently there is a relationship between the uncertainty in position Δx and the uncertainty in momentum Δp.
+In the late 1920s the German physicist Werner Heisenberg showed that if we try to locate an electron within a region Δx; e.g. by scattering light from it, some momentum is transferred to the electron, and it is not possible to determine exactly how much momentum is transferred, even in principle. Heisenberg showed that consequently there is a relationship between the uncertainty in position Δx and the uncertainty in momentum Δp.
+
+[Note: corrected; the source prints "In the mid 1920's" where this reads "In the late 1920s". Heisenberg's uncertainty principle dates from 1927, as in Sections 14.2 and 14.3.]
 
 ΔpΔx ≥ ħ/2
 

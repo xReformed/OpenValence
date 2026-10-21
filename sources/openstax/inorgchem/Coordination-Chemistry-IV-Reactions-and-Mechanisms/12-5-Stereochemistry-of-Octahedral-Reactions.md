@@ -101,7 +101,7 @@ The reactions run under acidic conditions is shown below, and its data is shown 
 
 The reactions run under basic conditions is shown below, and its data is shown in the right column in Table 12.5.2.1. Note that in all but one case, the reactions run under basic conditions were done so using optically pure starting material, and gave an optically active product.
 
-Δ−cis-[Co(en)2LCl]^+ + OH^- <==> [Co(en)2L(OH)]^+ + Cl^-
+Δ − cis-[Co(en)2LCl]^+ + OH^- <==> [Co(en)2L(OH)]^+ + Cl^-
 
 Table 12.5.2.1: % cis product under different conditions
 

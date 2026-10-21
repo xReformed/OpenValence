@@ -102,7 +102,7 @@ Because the difference is zero, the two operators commute.
 
 Although it will not be proven here, there is a general statement of the uncertainty principle in terms of the commutation property of operators. If two operators Â and B̂ do not commute, then the uncertainties (standard deviations σ) in the physical quantities associated with these operators must satisfy
 
-σA σB ≥ (1/2)|∫ψ^*[ÂB̂−B̂Â]ψ dτ|
+σA σB ≥ (1/2)|∫ψ^*[ÂB̂ − B̂Â]ψ dτ|
 
 [Note: corrected; the source prints "σA σB ≥ |∫ψ^*" where this reads "σA σB ≥ (1/2)|∫ψ^*". The general uncertainty relation has a factor 1/2, which gives the ħ/2 of Exercise 4.6.1.]
 
@@ -126,7 +126,7 @@ They also help to explain observations made in the experimentally. An example of
 
 However the components do not commute themselves. An additional property of commuters that commute is that both quantities can be measured simultaneously. Thus, the magnitude of the angular momentum and ONE of the components (usually z) can be known at the same time however, NOTHING is known about the other components.
 
-The physical quantities corresponding to operators that commute can be measured simultaneously to any precision.
+> The physical quantities corresponding to operators that commute can be measured simultaneously to any precision.
 
 ### Example 4.6.2A
 

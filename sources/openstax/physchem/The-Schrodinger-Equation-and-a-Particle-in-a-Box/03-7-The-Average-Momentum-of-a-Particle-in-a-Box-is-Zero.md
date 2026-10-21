@@ -77,7 +77,7 @@ Hence, the quantum mechanical expectation value ⟨o⟩ for an observable, o, as
 
 where x is the range of space that is integrated over (i.e., an integration over all possible probabilities). The expectation value changes as the wavefunction changes and the operator used (i.e, which observable you are averaging over).
 
-In general, changing the wavefunction changes the expectation value for that operator for a state defined by that wavefunction.
+> In general, changing the wavefunction changes the expectation value for that operator for a state defined by that wavefunction.
 
 ## Average Energy of a Particle in a Box
 
@@ -313,7 +313,7 @@ The interpretation of the results of Exercise 3.7.6 is physically interesting. T
 Figure 3.7.2: Two waves traveling in opposite directions across the same medium combine linearly. In this animation, both waves have the same wavelength and the sum of amplitudes results in a standing wave. (Public Domain; LucasVB).
 Graph showing two overlapping sine wave patterns, with red dots marking their peaks and troughs.
 
-The electrons are moving, they have kinetic energy and momentum, yet the average momentum is zero.
+> The electrons are moving, they have kinetic energy and momentum, yet the average momentum is zero.
 
 ### Did we just Violate the Uncertainty Principle?
 

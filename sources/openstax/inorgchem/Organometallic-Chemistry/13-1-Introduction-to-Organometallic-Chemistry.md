@@ -94,9 +94,9 @@ In 1890, a further milestone in organometallic chemistry was reached with the sy
 
 [Note: corrected; the source prints "ca. 220°" where this reads "ca. 220°C". The unit is missing; the equation below gives 220 − 250°C.]
 
-Ni(s, ~ impure) + 4 CO(g) → Ni(CO)4(g)50 − 60°C (also spontaneous at room temp)
+Ni(s, ∼ impure) + 4 CO(g) → Ni(CO)4(g); 50 − 60°C (also spontaneous at room temp)
 
-Ni(CO)4(g) → Ni(s, ~ purified) + 4 CO220 − 250°C (Ni is purified)
+Ni(CO)4(g) → Ni(s, ∼ purified) + 4 CO; 220 − 250°C (Ni is purified)
 
 Figure 13.1.5: Purified Ni spheres prepared through the Mond process (René Rausch, Nickel kugeln, CC BY-SA 3.0 DE)
 

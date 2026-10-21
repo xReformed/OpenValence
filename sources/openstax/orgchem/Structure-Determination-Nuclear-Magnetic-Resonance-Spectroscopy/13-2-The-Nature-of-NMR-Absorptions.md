@@ -9,7 +9,7 @@ license: "CC BY-NC-SA 4.0"
 
 From the description thus far, you might expect all ^1H nuclei in a molecule to absorb energy at the same frequency and all ^13C nuclei to absorb at the same frequency. If so, we would observe only a single NMR absorption signal in the ^1H or ^13C spectrum of a molecule, a situation that would be of little use. In fact, the absorption frequency is not the same for all ^1H or all ^13C nuclei.All nuclei in molecules are surrounded by electrons. When an external magnetic field is applied to a molecule, the electrons moving around nuclei set up tiny local magnetic fields of their own. These local magnetic fields act in opposition to the applied field so that the effective field actually felt by the nucleus is a bit weaker than the applied field.
 
-B_effective = B_applied −B_local
+B_effective = B_applied − B_local
 
 In describing this effect of local fields, we say that nuclei experience shielding from the full effect of the applied field by the surrounding electrons. Because each chemically distinct nucleus in a molecule is in a slightly different electronic environment, each nucleus is shielded to a slightly different extent and the effective magnetic field felt by each is slightly different. These tiny differences in the effective magnetic fields experienced by different nuclei can be detected, and we thus see a distinct NMR signal for each chemically distinct ^13C or ^1H nucleus in a molecule. As a result, an NMR spectrum effectively maps the carbon–hydrogen framework of an organic molecule. With practice, it’s possible to read this map and derive structural information.
 

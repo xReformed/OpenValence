@@ -119,7 +119,7 @@ E = hc/λ
 
 = hcν̃
 
-∝ν̃
+∝ ν̃
 
 ### Example 1.4.1 : Balmer Series
 

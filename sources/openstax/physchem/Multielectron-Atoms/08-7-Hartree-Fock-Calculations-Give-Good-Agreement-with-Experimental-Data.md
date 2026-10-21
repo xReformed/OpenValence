@@ -21,7 +21,7 @@ Although the Hartree equations are numerically tractable via the self-consistent
 
 which clearly cannot be satisfied by the multi-electron wavefunctions of the form used in the Hartree Approximation, i.e., the orbital approximation (Equation (2.3)).
 
-Ψ(r1, r2, …, rN)≈ψ1(r1)ψ2(r2)…ψN(rN)
+Ψ(r1, r2, …, rN) ≈ ψ1(r1)ψ2(r2)…ψN(rN)
 
 This indistinguishability condition can be satisfied by forming a Slater determinant of single-particle orbitals
 
@@ -148,7 +148,7 @@ E_(N+1) = Σ_(i=1)^(N + 1)⟨φi|T + V|φi⟩ + (1/2)Σ_(i, j=1)^(N + 1)[J_(i, j
 
 The difference between these two energies is given by
 
-EN–E_(N+1) = −⟨φ_(N+1)|T + V|φ_(N+1)⟩−(1/2)Σ_(i=1)^(N + 1)[J_(i, N+1) − K_(i, N+1)]
+EN − E_(N+1) = −⟨φ_(N+1)|T + V|φ_(N+1)⟩−(1/2)Σ_(i=1)^(N + 1)[J_(i, N+1) − K_(i, N+1)]
 
 −(1/2)Σ_(j=1)^(N + 1)[J_(N+1, j) − K_(N+1, j)]
 

@@ -25,7 +25,7 @@ A forge with glowing coals and flames on the left, paired with a bright image of
 
 Blackbody radiation has a characteristic, continuous frequency spectrum that experimentally depends only on the body's temperature. In fact, we can be much more precise:
 
-A body emits radiation at a given temperature and frequency exactly as well as it absorbs the same radiation.
+> A body emits radiation at a given temperature and frequency exactly as well as it absorbs the same radiation.
 
 This statement was proved by Gustav Kirchhoff: the essential point is that if we instead suppose a particular body can absorb better than it emits, then in a room full of objects all at the same temperature, it will absorb radiation from the other bodies better than it radiates energy back to them. This means it will get hotter, and the rest of the room will grow colder, contradicting the second law of thermodynamics. Thus, a body must emit radiation exactly as well as it absorbs the same radiation at a given temperature and frequency in order to not violate the second law of thermodynamics.
 
@@ -106,7 +106,7 @@ P_total = PA = (5.98 × 10^7 Watts/m^2)(6.08 × 10^18 m^2)
 
 The second phenomenological observation from experiment was Wien’s Displacement Law. Wien's law identifies the dominant (peak) wavelength, or color, of light coming from a body at a given temperature. As the oven temperature varies, so does the frequency at which the emitted radiation is most intense (Figure 1.1.3 ). In fact, that frequency is directly proportional to the absolute temperature:
 
-ν_max∝T
+ν_max ∝ T
 
 where the proportionality constant is 5.879 × 10^10 Hz/K.
 
@@ -116,7 +116,7 @@ Another representation of Wien's Law (Equation (Eq2)) in terms of the peak wavel
 
 λ_max = b/T
 
-where T is the absolute temperature in kelvin and b is a constant of proportionality called Wien's displacement constant, equal to 2.898 × 10^−3 m K, or more conveniently to obtain wavelength in micrometers, b≈2900 μm·K. This is an inverse relationship between wavelength and temperature. So the higher the temperature, the shorter or smaller the wavelength of the thermal radiation. The lower the temperature, the longer or larger the wavelength of the thermal radiation. For visible radiation, hot objects emit bluer light than cool objects.
+where T is the absolute temperature in kelvin and b is a constant of proportionality called Wien's displacement constant, equal to 2.898 × 10^−3 m K, or more conveniently to obtain wavelength in micrometers, b ≈ 2900 μm·K. This is an inverse relationship between wavelength and temperature. So the higher the temperature, the shorter or smaller the wavelength of the thermal radiation. The lower the temperature, the longer or larger the wavelength of the thermal radiation. For visible radiation, hot objects emit bluer light than cool objects.
 
 [Note: corrected; the source prints "equal to 2.89 × 10^−3 m K" where this reads "equal to 2.898 × 10^−3 m K". Wien's displacement constant is 2.898 × 10^−3 m K, the value used in Example 1.1.2.]
 

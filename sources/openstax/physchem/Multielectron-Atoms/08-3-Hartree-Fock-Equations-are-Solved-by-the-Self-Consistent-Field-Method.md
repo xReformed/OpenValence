@@ -47,7 +47,7 @@ The method for finding best possible one-electron wavefunctions that was publish
 
 The Hartree approximation starts by invoking an initial ansatz that the multi-electron wavefunction in Equation (8.3.4) can be expanded as a product of single-electron wavefunctions (i.e., orbitals)
 
-|ψ(r1, r2, …, rN)⟩≈ψ1(r1)ψ2(r2)…ψN(rN)
+|ψ(r1, r2, …, rN)⟩ ≈ ψ1(r1)ψ2(r2)…ψN(rN)
 
 from which it follows that the electrons are independent, and interact only via the mean-field Coulomb potential. This yields one-electron Schrödinger equations of the form
 
@@ -104,7 +104,7 @@ Flowchart illustrating steps for calculating charge density and potential, inclu
 
 Although we are concerned here with atoms, the same methodology is used for molecules or even solids (with appropriate potential symmetries and boundary conditions). This is a variational method, so wherever we refer to wavefunctions, we assume that they are expanded in some appropriate basis set.
 
-Fock improved on Hartree’s method by using proper "antisymmetrized wavefunctions" (called the Hartree-Fock method) instead of simple one-electron wavefunctions.
+> Fock improved on Hartree’s method by using proper "antisymmetrized wavefunctions" (called the Hartree-Fock method) instead of simple one-electron wavefunctions.
 
 ### Shielding and Effective Charges Concepts are Useful
 

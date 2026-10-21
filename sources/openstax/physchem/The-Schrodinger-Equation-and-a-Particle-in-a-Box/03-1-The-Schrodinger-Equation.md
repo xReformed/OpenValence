@@ -51,7 +51,7 @@ where
 
 Since Planck's constant occurs in most formulas with the denominator 2π, the ħ symbol was introduced by Paul Dirac. Equation (3.1.5) represents in some way the wavelike nature of a particle with energy E and momentum p. The time derivative of Equation (3.1.7) gives
 
-(∂Ψ)/(∂t) = −(iE/ħ)exp[(i(px − Et))/ħ]
+(∂Ψ)/(∂t) = −(iE/ħ) exp[(i(px − Et))/ħ]
 
 Thus from a simple comparison of Equations (3.1.7) and (3.1.9)
 

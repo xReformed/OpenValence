@@ -344,7 +344,7 @@ Table 3.4.1 Comparison of the properties predicted by Mendeleev in 1869 for eka-
 | oxide | E2O3 | Ga2O3 | EO2 | GeO2 |
 | oxide | d = 5.5 g/cm^3 | d = 6.0 g/cm^3 | d = 4.7 g/cm^3 | d = 4.25 g/cm^3 |
 | chloride | ECl3 | GaCl3 | ECl4 | GeCl4 |
-| chloride | volatile | mp = 78°C bp* = 201°C | bp < 100°C | bp = 87°C |
+| chloride | volatile | mp = 78°C; bp* = 201°C | bp < 100°C | bp = 87°C |
 
 *mp = melting point; bp = boiling point.
 

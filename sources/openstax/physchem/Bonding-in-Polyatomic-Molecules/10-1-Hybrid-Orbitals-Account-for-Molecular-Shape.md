@@ -53,7 +53,7 @@ The fact that ψu is antibonding can be easily determined by looking for a nodal
 
 Substituting these into ψu(x1, x2), we obtain
 
-ψu(x1, x2) = Cu[AA'−A'A][ψ↑(s1)ψ↓(s2) + ψ↑(s2)ψ↓(s1)] = 0
+ψu(x1, x2) = Cu[AA' − A'A][ψ↑(s1)ψ↓(s2) + ψ↑(s2)ψ↓(s1)] = 0
 
 Since the wavefunction has a node midway between the two atoms, it is clearly antibonding and should have a higher energy than the corresponding bonding wavefunction ψg.
 
@@ -210,11 +210,11 @@ BH3 with B at the origin, one H on the +x axis and two H atoms at 120° and 240�
 
 If we simply combine the 2s with the 2px and 2py orbitals of boron, the resulting hybrid orbitals will not point in the correct direction. For this reason, we will create rotated versions of the px and py orbitals, which, as we will see are tantamount to taking new combinations of 2px and 2py orbitals to combine with the 2s. Since the rotation occurs in the xy plane, the coordinate that controls this is the azimuthal angle φ. For the px and py orbitals, the φ dependence is
 
-ψ_2px~cos φ ; ψ_2py~sin φ
+ψ_2px ∼ cos φ ; ψ_2py ∼ sin φ
 
 If we rotate 2py by −30 degrees (Figure 10.1.5 ; blue is positive and red is negative), the φ dependence becomes
 
-ψ_2py^{(rot)}~sin(φ + 30)
+ψ_2py^{(rot)} ∼ sin(φ + 30)
 
 Figure 10.1.5: Rotation of a 2py orbital by −30 degrees.
 A 2py orbital (positive lobe blue, negative red) before and after rotation by −30°.
@@ -229,19 +229,19 @@ sin(α±β) = sin α cos β ± cos α sin β
 
 this rotation gives
 
-ψ_2py^{(rot,1)}~sin φ cos 30 + cos φ sin 30
+ψ_2py^{(rot,1)} ∼ sin φ cos 30 + cos φ sin 30
 
-~[((√3)/2) sin φ + (1/2) cos φ]
+∼ [((√3)/2) sin φ + (1/2) cos φ]
 
-~[((√3)/2)ψ_2py + (1/2)ψ_2px]
+∼ [((√3)/2)ψ_2py + (1/2)ψ_2px]
 
 Similarly, consider rotating −ψ_2py by +30 degrees (Figure 10.1.6 ). This gives
 
-−ψ_2py^{(rot,2)}~−sin(φ − 30)
+−ψ_2py^{(rot,2)} ∼ −sin(φ − 30)
 
-~−[((√3)/2) sin φ − (1/2) cos φ]
+∼ −[((√3)/2) sin φ − (1/2) cos φ]
 
-~−((√3)/2)ψ_2py + (1/2)ψ_2px
+∼ −((√3)/2)ψ_2py + (1/2)ψ_2px
 
 Figure 10.1.6: Rotation of a −2py orbital by 30 degrees.
 A −2py orbital (positive lobe blue, negative red) before and after rotation by +30°.

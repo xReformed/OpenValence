@@ -121,7 +121,7 @@ Under the orbital approximation this assumption gives a trial wavefunction of th
 
 |ψ(1,2)⟩_trial = φ(1)φ(2)
 
-= exp(−αr1)exp(−αr2) + exp(−αr1)exp(−βr2) + exp(−βr1)exp(−αr2) + exp(−βr1)exp(−βr2)
+= exp(−αr1) exp(−αr2) + exp(−αr1) exp(−βr2) + exp(−βr1) exp(−αr2) + exp(−βr1) exp(−βr2)
 
 Inspection of this trial wavefunction indicates that 50% of the time the electrons are in different orbitals, while for the first trial wavefunction the electrons were in the same orbital 100% of the time. Notice the enormous increase in the complexity of the variational expression for the energy for this trial wavefunction (Equation (7.3.1a)). However, the calculation is very similar to that using the previous trial wavefunction. The differences are that in this case the expression for the energy is more complex and that it is being minimized simultaneously with respect to two parameters (α and β) rather than just one (α).
 
@@ -141,7 +141,7 @@ Clearly introducing some electron-electron interactions into the trial wavefunct
 
 The extent of electron-electron interactions can be increased further by eliminating the first and last term in the second trial wavefunction (Equation (7.3.4b)). This yields a multi-electron wavefunction of the form,
 
-|ψ(1,2)⟩_trial = exp(−αr1)exp(−βr2) + exp(−βr1)exp(−αr2)
+|ψ(1,2)⟩_trial = exp(−αr1) exp(−βr2) + exp(−βr1) exp(−αr2)
 
 This trial wavefunction places the electrons in different scaled hydrogen 1s orbitals 100% of the time this adds further improvement in the agreement with the literature value of the ground-state energy is obtained. The variational energy obtained after minimizing Equation (7.3.1a) after substituting the trial wavefunction (Equation (7.3.5)) by varying α and β is
 
@@ -177,7 +177,7 @@ This modification of the trial wavefunction has further improved the agreement b
 
 Chandrasakar brought about further improvement by adding Hylleraas's r12 term to the third trial wavefunction (Equation (7.3.5)) as shown here.
 
-|ψ(1,2)⟩_trial = [exp(−αr1)exp(−βr2) + exp(−βr1)exp(−αr2)][1 + γr12]
+|ψ(1,2)⟩_trial = [exp(−αr1) exp(−βr2) + exp(−βr1) exp(−αr2)][1 + γr12]
 
 Chandrasakar's three parameter wavefunction gives rise to a fairly complicated variational expression for ground-state energy. The variational energy obtained after minimizing Equation (7.3.1a) after substituting the trial wavefunction (Equation (7.3.7)) by varying α, β and γ is
 

@@ -280,7 +280,7 @@ The case v' = v + 1 corresponds to going from one vibrational state to a higher 
 
 For perfect harmonic oscillators, the only possible allowed transitions are Δ = ±1 with all other transitions forbidden (Figure 5.5.1). This conclusion predicts that the vibrational absorption spectrum of a diatomic molecule consists of a single line since the energy levels are equally spaced in the harmonic oscillator model (Figure 5.5.1). If the vibration were anharmonic, then the levels would not be equally spaced and then transitions from v = 0 to v = 1 and from v = 1 to v = 2, etc. would occur at different frequencies.
 
-Only the fundamental transitions, Δ = ±1, are observed in infrared spectra within harmonic oscillator model.
+> Only the fundamental transitions, Δ = ±1, are observed in infrared spectra within harmonic oscillator model.
 
 The actual IR spectrum is more complex, especially at high resolution. There is a fine structure due to the rotational states of the molecule. These states will be discussed in Sections 5.8 and 5.9. The spectrum is enriched further by the appearance of lines due to transitions corresponding to Δ = ±n where n > 1. These transitions are called overtone transitions and their appearance in spectra despite being forbidden in the harmonic oscillator model is due to the anharmonicity of molecular vibrations. Anharmonicity means the potential energy function is not strictly the harmonic potential. The first overtone, Δv = 2, generally appears at a frequency slightly less than twice that of the fundamental, i.e. the frequency due to the Δv = 1 transition.
 

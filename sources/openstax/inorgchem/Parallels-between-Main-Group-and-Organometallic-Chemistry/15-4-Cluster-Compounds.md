@@ -39,13 +39,11 @@ I. First, find the number of skeletal electron pairs
 1. Determine the total number of valence electrons from the chemical formula, i.e., 3 electrons per B, and 1 electron per H.
 2. Subtract 2 electrons for each vertex unit (B-H, C-H in a carborane, etc.).
 3. Divide the number of remaining electrons by 2 to get the number of skeletal electron pairs (SEP).
-
 II. Then determine the number of vertices in the parent deltahedron, n, from the number of SEP.
 
 n = vertices in the parent deltahedron = SEP -1
 
 III. Finally, determine whether the cluster is closo-, nido-, arachno-, hypho-, klado-, or otherwise by comparing the number of vertex atoms with those in the parent deltahedron.
-
 1. When n vertex atoms are present (i.e., n boron atoms) the cluster has a closo- structure, specifically that of the parent deltahedron.
 2. When n-1 vertex atoms are present (i.e., n-1 boron atoms) the cluster has a nido structure.
 3. When n-2 vertex atoms are present (i.e., n-2 boron atoms) the cluster has a arachno structure.

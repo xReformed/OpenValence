@@ -6,3 +6,25 @@ source_url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Ch
 author: "Anonymous"
 license: "CC BY-NC-SA 4.0"
 ---
+
+Need to define a new variable. The thermodynamic activity, a, is the effective concentration of a species in a mixture. It is a dimensionless quantity that are calculated with respect to standard states. For a gas, this would be related to the fugacity and for a solution, to the concentration. The activity for a real gas:
+
+ai = (fi)/(P°) = (φi Pi)/(P°) = (φi(yi P))/(P°)
+
+For systems where we treat the gases as ideal:
+
+φi = 1
+
+ai = (Pi)/(P°) = yi P/(P°)
+
+The activity for a solution:
+
+ai = γi ([A])/(1 M̲)
+
+General chemistry and organic chemistry use ideal reactants where γi = 1:
+
+ai = ([A])/(1 M̲)
+
+The activity for a solid or liquid:
+
+ai = 1

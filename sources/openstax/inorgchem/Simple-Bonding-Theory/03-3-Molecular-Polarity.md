@@ -77,7 +77,7 @@ Figure 3.3.3: Charge distributions of CO2 and H2O. Blue and red colored regions 
 
 A good example of a nonpolar molecule that contains polar bonds is carbon dioxide (Figure 3.3.3a). This is a linear molecule and each C=O bond is, in fact, polar. The central carbon will have a net positive charge, and the two outer oxygen atoms a net negative charge. However, since the molecule is linear, these two bond dipoles cancel each other out (i.e. the vector addition of the dipoles equals zero) and the overall molecule has a zero dipole moment (μ = 0).
 
-Although a polar bond is a prerequisite for a molecule to have a dipole, not all molecules with polar bonds exhibit dipoles
+> Although a polar bond is a prerequisite for a molecule to have a dipole, not all molecules with polar bonds exhibit dipoles
 
 For ABn molecules, where A is the central atom and B are all the same types of atoms, there are certain molecular geometries which are symmetric. Therefore, they will have no dipole even if the bonds are polar. These geometries include linear, trigonal planar, tetrahedral, octahedral and trigonal bipyramid.
 

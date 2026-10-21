@@ -19,7 +19,7 @@ Periodic Table.
 
 Why does the periodic table have the structure it does? The answer is rather simple, if you understand electron configurations, the shape of the periodic table mimics the filling of the subshells with electrons.
 
-The shape of the periodic table mimics the filling of the subshells with electrons.
+> The shape of the periodic table mimics the filling of the subshells with electrons.
 
 Let us start with H and He. Their electron configurations are 1s^1 and 1s^2, respectively; with He, the n = 1 shell is filled. These two elements make up the first row of the periodic table (Figure 8.5.2)
 

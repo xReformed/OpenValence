@@ -38,7 +38,7 @@ Notice that in each of these molecules:
 - The hydrogen is attached directly to a highly electronegative atoms, causing the hydrogen to acquire a highly positive charge.
 - Each of the highly electronegative atoms attains a high negative charge and has at least one "active" lone pair. Lone pairs at the 2-level have electrons contained in a relatively small volume of space, resulting in a high negative charge density. Lone pairs at higher levels are more diffuse and, resulting in a lower charge density and lower affinity for positive charge.
 
-If you are not familiar with electronegativity, you should follow this link before you go on.
+> If you are not familiar with electronegativity, you should follow this link before you go on.
 
 Consider two water molecules coming close together.
 
@@ -58,7 +58,7 @@ This is why the boiling point of water is higher than that of ammonia or hydroge
 
 When an ionic substance dissolves in water, water molecules cluster around the separated ions. This process is called hydration. Water frequently attaches to positive ions by co-ordinate (dative covalent) bonds. It bonds to negative ions using hydrogen bonds.
 
-If you are interested in the bonding in hydrated positive ions, you could follow this link to co-ordinate (dative covalent) bonding.
+> If you are interested in the bonding in hydrated positive ions, you could follow this link to co-ordinate (dative covalent) bonding.
 
 The diagram shows the potential hydrogen bonds formed with a chloride ion, Cl-. Although the lone pairs in the chloride ion are at the 3-level and would not normally be active enough to form hydrogen bonds, they are made more attractive by the full negative charge on the chlorine in this case.
 

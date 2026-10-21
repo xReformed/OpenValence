@@ -35,7 +35,7 @@ and energies (Figure 7.4.1 ):
 
 En^o (unperturbed) ⇒ En (Perturbed)
 
-The basic assumption in perturbation theory is that H^1 is sufficiently small that the leading corrections are the same order of magnitude as H^1 itself, and the true energies can be better and better approximated by a successive series of corrections, each of order H^1/H^o compared with the previous one.
+> The basic assumption in perturbation theory is that H^1 is sufficiently small that the leading corrections are the same order of magnitude as H^1 itself, and the true energies can be better and better approximated by a successive series of corrections, each of order H^1/H^o compared with the previous one.
 
 The strategy is to expand the true wavefunction and corresponding eigenenergy as series in Ĥ^1/Ĥ^o. These series are then fed into Equation (7.4.2), and terms of the same order of magnitude in Ĥ^1/Ĥ^o on the two sides are set equal. The equations thus generated are solved one by one to give progressively more accurate results.
 
@@ -47,13 +47,13 @@ En = Σ_(i=0)^m λ^i En^i
 
 where m is how many terms in the expansion we are considering. The ket |n^i⟩ is multiplied by λ^i and is therefore of order (H^1/H^o)^i.
 
-λ is purely a bookkeeping device: we will set it equal to 1 when we are through! It’s just there to keep track of the orders of magnitudes of the various terms.
+> λ is purely a bookkeeping device: we will set it equal to 1 when we are through! It’s just there to keep track of the orders of magnitudes of the various terms.
 
 For example, in first order perturbation theory, Equations (7.4.5) are truncated at m = 1 (and setting λ = 1):
 
-|n⟩≈|n^o⟩ + |n^1⟩
+|n⟩ ≈ |n^o⟩ + |n^1⟩
 
-En≈En^o + En^1
+En ≈ En^o + En^1
 
 However, let's consider the general case for now. Adding the full expansions for the eigenstate (Equation (7.4.5)) and energies (Equation (7.4.6)) into the Schrödinger equation for the perturbation Equation (7.4.2) in
 
@@ -109,13 +109,13 @@ since the unperturbed set of eigenstates are orthogonal (Equation (7.4.16)) and 
 
 En^1 = ⟨n^o|Ĥ^1|n^o⟩
 
-The first-order change in the energy of a state resulting from adding a perturbing term Ĥ^1 to the Hamiltonian is just the expectation value of Ĥ^1 in the unperturbed wavefunctions.
+> The first-order change in the energy of a state resulting from adding a perturbing term Ĥ^1 to the Hamiltonian is just the expectation value of Ĥ^1 in the unperturbed wavefunctions.
 
 That is, the first order energies (Equation (7.4.13)) are given by
 
-En≈En^o + En^1
+En ≈ En^o + En^1
 
-≈(En^o + ⟨n^o|H^1|n^o⟩) (First Order Perturbation)
+≈ (En^o + ⟨n^o|H^1|n^o⟩) (First Order Perturbation)
 
 ### Example 7.4.1A: A Perturbed Particle in a Box
 
@@ -147,9 +147,9 @@ En^1 = ⟨n^o|H^1|n^o⟩ = ⟨n^o|Vo|n^o⟩ = Vo⟨n^o|n^o⟩ = Vo
 
 so via Equation (7.4.17.2), the energy of each perturbed eigenstate is
 
-En≈En^o + En^1
+En ≈ En^o + En^1
 
-≈(h^2/(8 mL^2))n^2 + Vo
+≈ (h^2/(8 mL^2))n^2 + Vo
 
 While this is the first order perturbation to the energy, it is also the exact value.
 
@@ -185,9 +185,9 @@ En^1 = ((2Vo)/L)[((−1)/(2 (πn)/L)) cos(((nπ)/L)x) sin(((nπ)/L)x) + x/2]0^(L
 
 The energy of each perturbed eigenstate, via Equation (7.4.17.2), is
 
-En≈En^o + (Vo)/2
+En ≈ En^o + (Vo)/2
 
-≈(h^2/(8 mL^2))n^2 + (Vo)/2
+≈ (h^2/(8 mL^2))n^2 + (Vo)/2
 
 ## First-Order Expression of Wavefunction (λ = 1)
 
@@ -221,15 +221,15 @@ so
 
 and therefore the wavefunction corrected to first order is:
 
-|n⟩≈|n^o⟩ + |n^1⟩
+|n⟩ ≈ |n^o⟩ + |n^1⟩
 
-≈(|n^o⟩ + Σ_(m ≠ n) (|m^o⟩⟨m^o|H^1|n^o⟩)/(En^o − Em^o)) (First Order Perturbation Theory)
+≈ (|n^o⟩ + Σ_(m ≠ n) (|m^o⟩⟨m^o|H^1|n^o⟩)/(En^o − Em^o)) (First Order Perturbation Theory)
 
 Equation (7.4.24) is essentially is an expansion of the unknown wavefunction correction as a linear combination of known unperturbed wavefunctions (7.4.24.2):
 
-|n⟩≈|n^o⟩ + |n^1⟩
+|n⟩ ≈ |n^o⟩ + |n^1⟩
 
-≈|n^o⟩ + Σ_(m ≠ n) c_(m, n)|m^o⟩
+≈ |n^o⟩ + Σ_(m ≠ n) c_(m, n)|m^o⟩
 
 with the expansion coefficients determined by
 
@@ -247,7 +247,7 @@ Calculating the first order perturbation to the wavefunctions is in general an i
 
 [Note: corrected; the source prints "see Example 7.4.3 )" where this reads "see Example 7.4.2 )". The cubic, odd perturbation is Example 7.4.2.]
 
-The denominators in Equation (7.4.24) argues that terms in this sum will be preferentially dictated by states that are of comparable energy. That is, eigenstates that have energies significantly greater or lower than the unperturbed eigenstate will weakly contribute to the perturbed wavefunction.
+> The denominators in Equation (7.4.24) argues that terms in this sum will be preferentially dictated by states that are of comparable energy. That is, eigenstates that have energies significantly greater or lower than the unperturbed eigenstate will weakly contribute to the perturbed wavefunction.
 
 ### Example 7.4.2 : A Harmonic Oscillator with a Cubic Perturbation
 

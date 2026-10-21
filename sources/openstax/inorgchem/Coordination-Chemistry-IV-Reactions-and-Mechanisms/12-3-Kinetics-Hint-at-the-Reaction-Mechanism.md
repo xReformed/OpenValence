@@ -40,7 +40,7 @@ A Dissociative (D) mechanism is two steps in which the first step is the dissoci
 
 
 
-If we assume that k_−2 < < k2, the rate law for the formation of products is the rate law of the second step.
+If we assume that k_−2 ≪ k2, the rate law for the formation of products is the rate law of the second step.
 
 (d[MLnY])/dt = k2[MLn][Y]
 
@@ -60,13 +60,13 @@ The rate law above suggests that the rate of product formation has an inverse re
 
 [Note: corrected; the source prints "that ther is" where this reads "that there is"; the source prints "mathmatically" where this reads "mathematically"; the source prints "demoninator" where this reads "denominator". Typing errors.]
 
-If X >> Y, then simplify: (d[MLn Y])/dt = (k2 k1[MLn X][Y])/(k_−1[X])
+If X ≫ Y, then simplify: (d[MLn Y])/dt = (k2 k1[MLn X][Y])/(k_−1[X])
 
 The resulting rate law (above) has a simpler dependence on [Y]; that is when [X] is large, the reaction rate is directly related to [Y].
 
 The opposite extreme is under conditions of high [Y]. This yields a rate law that is first order in its dependence on the reactant metal complex. When [Y] is large, and the k_−1[X] term is relatively insignificant, the rate law can be simplified to the pseudo-first order rate law as follows.
 
-If Y >> X, then simplify: (d[MLn Y])/dt = k1[MLnX]
+If Y ≫ X, then simplify: (d[MLn Y])/dt = k1[MLnX]
 
 The best type of experimental evidence to determine a dissociative mechanism would be a systematic study of the dependence of rate on both [X] and [Y]. However, the dissociative reaction is unique in that it displays this type of saturation kinetics at high concentration of the incoming ligand, and so the study of how a reaction rate behaves under high [Y] is common.
 
@@ -296,7 +296,7 @@ Associative (A) mechanisms involve a first step where the incoming ligand bonds 
 
 
 
-To determine the rate law, we can use a similar process as we followed for D mechanisms, which are also two steps. Assuming that k2 > > k_−2, the rate of formation of product from the second step is: (d[MLnY])/dt = k2[MLnXY]
+To determine the rate law, we can use a similar process as we followed for D mechanisms, which are also two steps. Assuming that k2 ≫ k_−2, the rate of formation of product from the second step is: (d[MLnY])/dt = k2[MLnXY]
 
 The steady state approximation allows us to assume that the intermediate is in low concentration (too low to be reliably measured) and that it is unchanging. We can use the rate law for the first step to find [MLnXY] in terms of species that can be reliably measured.
 

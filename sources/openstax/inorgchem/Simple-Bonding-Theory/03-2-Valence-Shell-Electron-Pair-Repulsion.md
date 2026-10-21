@@ -15,7 +15,7 @@ We can use the VSEPR model to predict the geometry around the atoms in a polyato
 
 Table 3.2.1. Geometries predicted using VSEPR theory (bonded groups only).
 
-| Groups around central atom (m + n) | Geometry Name | Geometry Sketch | Predicted bond Angle | Example |
+| Groups around central atom; (m + n) | Geometry Name | Geometry Sketch | Predicted bond Angle | Example |
 | --- | --- | --- | --- | --- |
 | 2 | linear | [Image not described in source] | 180° | [Image not described in source] |
 | 3 | trigonal plane | [Image not described in source] | 120° | [Image not described in source] |
@@ -152,11 +152,11 @@ Table 3.2.1.1: Predictions of molecular geometry and bond angles around atoms wi
 
 | Electron Groups (m + n) |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  | 2 (steric number = 2) | 3 (steric number = 3) | 4 (steric number = 4) | 5 (steric number = 5) | 6 (steric number = 6) |
-| Parent Geometry (0 lone pairs) AX_m | [Image not described in source] AX2, linear 180° | [Image not described in source] AX3, trig. plane 120° | [Image not described in source] AX4, tetrahedron 109.5° | [Image not described in source] AX5, trig. bipyramid 90°, 120° | [Image not described in source] AX6, octahedron 90° |
-| 1 lone pair AX_mE1 |  | [Image not described in source] AX2E1, bent <120° | [Image not described in source] AX3E1, trig. pyramid <109.5° | [Image not described in source] AX4E1, see-saw <90°, <120° | [Image not described in source] AX5E1, square pyramid 90°, <90° |
-| 2 lone pairs AX_mE2 |  |  | [Image not described in source] AX2E2, bent <109.5° | [Image not described in source] AX3E2, T-shape <90° | [Image not described in source] AX4E2, square plane 90° |
-| 3 lone pairs AX_mE3 |  |  |  | [Image not described in source] AX2E3, linear 180° |  |
+|  | 2; (steric number = 2) | 3; (steric number = 3) | 4; (steric number = 4) | 5; (steric number = 5) | 6; (steric number = 6) |
+| Parent Geometry; (0 lone pairs); AX_m | [Image not described in source]; AX2, linear; 180° | [Image not described in source]; AX3, trig. plane; 120° | [Image not described in source]; AX4, tetrahedron; 109.5° | [Image not described in source]; AX5, trig. bipyramid; 90°, 120° | [Image not described in source]; AX6, octahedron; 90° |
+| 1 lone pair; AX_mE1 |  | [Image not described in source]; AX2E1, bent; <120° | [Image not described in source]; AX3E1, trig. pyramid; <109.5° | [Image not described in source]; AX4E1, see-saw; <90°, <120° | [Image not described in source]; AX5E1, square pyramid; 90°, <90° |
+| 2 lone pairs; AX_mE2 |  |  | [Image not described in source]; AX2E2, bent; <109.5° | [Image not described in source]; AX3E2, T-shape; <90° | [Image not described in source]; AX4E2, square plane; 90° |
+| 3 lone pairs; AX_mE3 |  |  |  | [Image not described in source]; AX2E3, linear; 180° |  |
 
 Table 3.2.1.1 summarizes the geometries and bond angles predicted for nearest-neighbor bonded groups on central atoms with a mixture of lone pairs and bonded groups. The table does not cover all possible situations; it only includes cases where there are two bonded groups in which an X-X angle is measurable between nearest-neighbors. A more detailed description of some selected cases is given below.
 

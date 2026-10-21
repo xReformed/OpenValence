@@ -32,12 +32,12 @@ Table 26.10.1: Classification of Enzymes
 
 | Class | Some subclasses | Function |
 | --- | --- | --- |
-| Oxidoreductases | Dehydrogenases Oxidases Reductases | Introduction of double bond Oxidation Reduction |
-| Transferases | Kinases Transaminases | Transfer of phosphate group Transfer of amino group |
-| Hydrolases | Lipases Nucleases Proteases | Hydrolysis of ester Hydrolysis of phosphate Hydrolysis of amide |
-| Lyases | Decarboxylases Dehydrases | Loss of CO2 Loss of H2O |
+| Oxidoreductases | Dehydrogenases; Oxidases; Reductases | Introduction of double bond; Oxidation; Reduction |
+| Transferases | Kinases; Transaminases | Transfer of phosphate group; Transfer of amino group |
+| Hydrolases | Lipases; Nucleases; Proteases | Hydrolysis of ester; Hydrolysis of phosphate; Hydrolysis of amide |
+| Lyases | Decarboxylases; Dehydrases | Loss of CO2; Loss of H2O |
 | Isomerases | Epimerases | Isomerization of chirality center |
-| Ligases | Carboxylases Synthetases | Addition of CO2 Formation of a new bond |
+| Ligases | Carboxylases; Synthetases | Addition of CO2; Formation of a new bond |
 
 In addition to their protein part, most enzymes also contain a small non-protein part called a cofactor. A cofactor can be either an inorganic ion, such as Zn^2+, or a small organic molecule, called a coenzyme. A coenzyme is not a catalyst but is a reactant that undergoes chemical change during the reaction and requires an additional step to return to its initial state.
 

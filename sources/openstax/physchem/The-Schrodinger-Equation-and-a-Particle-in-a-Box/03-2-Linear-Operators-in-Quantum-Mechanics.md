@@ -44,7 +44,7 @@ To help identify if the inequality in Equation (comlaw) holds for any two specif
 
 It is convenient to define the commutator of Â and B̂
 
-[Â, B̂] ≡ ÂB̂−B̂Â
+[Â, B̂] ≡ ÂB̂ − B̂Â
 
 If Â and B̂ commute, then
 
@@ -156,4 +156,4 @@ In mathematical terminology, an operator Â for which
 
 for all functions f and g which obey specified boundary conditions is classified as Hermitian or self-adjoint. Evidently, the Hamiltonian is a Hermitian operator. It is postulated that all quantum-mechanical operators that represent dynamical variables are Hermitian. The term is also used for specific times of matrices in linear algebra courses.
 
-All quantum-mechanical operators that represent dynamical variables are Hermitian.
+> All quantum-mechanical operators that represent dynamical variables are Hermitian.

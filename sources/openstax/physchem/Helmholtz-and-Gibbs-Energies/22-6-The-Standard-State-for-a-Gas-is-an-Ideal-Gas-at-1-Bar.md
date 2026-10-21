@@ -6,3 +6,5 @@ source_url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Ch
 author: "Anonymous"
 license: "CC BY-NC-SA 4.0"
 ---
+
+Tabulated data are expressed in terms of a pure ideal gas (no mixing) at 1 bar, known as standard state conditions (SSC). Standard states are indicated with the ∘ symbol. These values are tabulated at a specific temperature, but that temperature can vary and is not included in the definition of SSC. No real gas has perfectly ideal behavior, but this definition of the standard state allows corrections for non-ideality to be made consistently for all the different gases.

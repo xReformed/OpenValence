@@ -115,7 +115,7 @@ Use Equation (Eq2b) to show that the units of ρ(λ, T) dλ are J/m^3 as expecte
 
 The near perfect agreement of this formula with precise experiments (e.g., Figure 1.2.3 ), and the consequent necessity of energy quantization, was the most important advance in physics in the century. His blackbody curve was completely accepted as the correct one: more and more accurate experiments confirmed it time and again, yet the radical nature of the quantum assumption did not sink in. Planck was not too upset—he didn’t believe it either, he saw it as a technical fix that (he hoped) would eventually prove unnecessary.
 
-Part of the problem was that Planck’s route to the formula was long, difficult and implausible—he even made contradictory assumptions at different stages, as Einstein pointed out later. However, the result was correct anyway!
+> Part of the problem was that Planck’s route to the formula was long, difficult and implausible—he even made contradictory assumptions at different stages, as Einstein pointed out later. However, the result was correct anyway!
 
 The mathematics implied that the energy given off by a blackbody was not continuous, but given off at certain specific wavelengths, in regular increments. If Planck assumed that the energy of blackbody radiation was in the form
 
@@ -123,7 +123,7 @@ E = nhν
 
 where n is an integer, then he could explain what the mathematics represented. This was indeed difficult for Planck to accept, because at the time, there was no reason to presume that the energy should only be radiated at specific frequencies. Nothing in Maxwell’s laws suggested such a thing. It was as if the vibrations of a mass on the end of a spring could only occur at specific energies. Imagine the mass slowly coming to rest due to friction, but not in a continuous manner. Instead, the mass jumps from one fixed quantity of energy to another without passing through the intermediate energies.
 
-To use a different analogy, it is as if what we had always imagined as smooth inclined planes were, in fact, a series of closely spaced steps that only presented the illusion of continuity.
+> To use a different analogy, it is as if what we had always imagined as smooth inclined planes were, in fact, a series of closely spaced steps that only presented the illusion of continuity.
 
 ## Summary
 

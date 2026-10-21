@@ -56,9 +56,9 @@ The Hamiltonian for the Helium atom is:
 
 If we simply ignore the electron-electron repulsion term, then Equation (7.1.3) can be simplified to
 
-Ĥ≈−(ħ^2/(2 me))∇_el1^2 − Ze^2/(4πε0 r1) − (ħ^2/(2 me))∇_el2^2 − Ze^2/(4πε0 r2)
+Ĥ ≈ −(ħ^2/(2 me))∇_el1^2 − Ze^2/(4πε0 r1) − (ħ^2/(2 me))∇_el2^2 − Ze^2/(4πε0 r2)
 
-≈h1(r1) + h2(r2)
+≈ h1(r1) + h2(r2)
 
 where h1 and h2 are one electron Hamiltonians for electron 1 and 2, respectively, and are just the hydrogen-like Hamiltonians. The approximation in Equation (7.1.3C) is convenient since electron 1 is separable from electron 2, so that the two-electron wavefunction is approximated as a product to two one-electron wavefunctions:
 
@@ -124,13 +124,13 @@ Flowchart illustrating a process with boxes labeled "Define Your Mission," "Eval
 
 [Note: the line above is the image's alt text, which reads as machine-written and misreads the image: its boxes read Define Hamiltonian, Define Trial Function, Evaluate the Variational Energy, Find its Minimum, Construct the Trial Wavefunction, and Compare with known data.]
 
-The variational energy E_trial is only equal to the true energy E_true when the the corresponding trial wavefunction ψ_trial is equal to the true wavefunction ψ_true.
+> The variational energy E_trial is only equal to the true energy E_true when the the corresponding trial wavefunction ψ_trial is equal to the true wavefunction ψ_true.
 
 ## Application to the Helium atom Ground State
 
 Often the expectation values (numerator) and normalization integrals (denominator) in Equation (7.1.8) can be evaluated analytically. For the case of the He atom, let's consider the trial wavefunction as the product wavefunction given by Equation (7-13) (this is called the orbital approximation),
 
-ψ(r1, r2)≈φ(r1)φ(r2)
+ψ(r1, r2) ≈ φ(r1)φ(r2)
 
 The adjustable or variable parameter in the trial wavefunction is the effective nuclear charge ζ, and the Hamiltonian is the complete form given below (Note: quantum calculations typically refer to effective nuclear charge as ζ rather than Z_eff as we used previously).
 
@@ -162,7 +162,7 @@ The variational method requires following the workflow in Figure 7.1.2 .
 - Step 1: Define the Hamiltonian - This is given by Equation (9-9).
 - Step 2: Define the trial wavefunction as a function of at least one parameter - This is given by Equation (7-13).
 - Step 3: Evaluate variational energy (E_trial integral (Equation (7.1.8)) - This procedure was already above in Equation (7.1.9).
-- Step 4: Minimize the variational energy as a function of the parameter(s) - Following the standard approach to find extrema in calculus, evaluate the derivative of E_trial with respect to ζ and set to zero: (dE_trial)/(dζ) = ((μe^4)/(4ε0^2 h))(2ζ − 27/8) = 0 then find solve for the roots of this polynomial 2ζ − 27/8 = 0 or ζ = 27/16≈1.6875
+- Step 4: Minimize the variational energy as a function of the parameter(s) - Following the standard approach to find extrema in calculus, evaluate the derivative of E_trial with respect to ζ and set to zero: (dE_trial)/(dζ) = ((μe^4)/(4ε0^2 h))(2ζ − 27/8) = 0 then find solve for the roots of this polynomial 2ζ − 27/8 = 0 or ζ = 27/16 ≈ 1.6875
 - Step 5-6: The question does not ask for the optimized wavefunction (Step 5) or to compare the result with the true value to evaluate the quality of the approximation (Step 6). We can skip these steps.
 
 From Exercise 7.1.1 , the ζ = 1.6875 and the approximate energy we calculate using this approximation method, E_approx = -77.483 eV. Table 7.1.1 show that a substantial improvement in the accuracy of the computed binding energy is obtained by using shielding to account for the electron-electron interaction. Including the effect of electron shielding in the wavefunction reduces the error in the binding energy to about 2%. This idea is very simple, elegant, and significant.

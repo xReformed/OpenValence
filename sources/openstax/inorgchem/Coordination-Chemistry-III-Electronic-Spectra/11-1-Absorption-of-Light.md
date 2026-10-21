@@ -30,16 +30,16 @@ Table 11.1.1: Approximate wavelengths of absorption and their complementary colo
 | λ absorbed | E (cm^−1) | E (eV) | Approximate color absorbed | Predicted color observed (by eye) |
 | --- | --- | --- | --- | --- |
 | > 700 nm | < 14,300 1/(cm) | < 1.77 eV | Infrared | not observable |
-| ≈700 − 635 nm | ≈14,300 − 15,700 1/(cm) | ≈1.77 − 1.95 eV | Red | Green |
-| ≈635 − 590 nm | ≈15,700 − 16,900 1/(cm) | ≈1.95 − 2.10 eV | Orange | Blue |
-| ≈590 − 560 nm | ≈16,900 − 17,900 1/(cm) | ≈2.10 − 2.21 eV | Yellow | Violet |
-| ≈560 − 520 nm | ≈17,900 − 19,200 1/(cm) | ≈2.21 − 2.38 eV | Green | Red |
-| ≈520 − 490 nm | ≈19,200 − 20,400 1/(cm) | ≈2.38 − 2.53 eV | Cyan | Red-Orange |
-| ≈490 − 450 nm | ≈20,400 − 22,200 1/(cm) | ≈2.53 − 2.76 eV | Blue | Orange |
-| 400 − 450 nm | ≈22,200 − 25,000 1/(cm) | ≈2.76 − 3.10 eV | Violet | Yellow |
+| ≈ 700 − 635 nm | ≈ 14,300 − 15,700 1/(cm) | ≈ 1.77 − 1.95 eV | Red | Green |
+| ≈ 635 − 590 nm | ≈ 15,700 − 16,900 1/(cm) | ≈ 1.95 − 2.10 eV | Orange | Blue |
+| ≈ 590 − 560 nm | ≈ 16,900 − 17,900 1/(cm) | ≈ 2.10 − 2.21 eV | Yellow | Violet |
+| ≈ 560 − 520 nm | ≈ 17,900 − 19,200 1/(cm) | ≈ 2.21 − 2.38 eV | Green | Red |
+| ≈ 520 − 490 nm | ≈ 19,200 − 20,400 1/(cm) | ≈ 2.38 − 2.53 eV | Cyan | Red-Orange |
+| ≈ 490 − 450 nm | ≈ 20,400 − 22,200 1/(cm) | ≈ 2.53 − 2.76 eV | Blue | Orange |
+| 400 − 450 nm | ≈ 22,200 − 25,000 1/(cm) | ≈ 2.76 − 3.10 eV | Violet | Yellow |
 | <400 nm | > 25,000 1/(cm) | > 3.10 eV | Ultraviolet (UV) | not observable |
 
-[Note: corrected; the source prints "| > 700 nm | < 14,000 1/(cm) |" where this reads "| > 700 nm | < 14,300 1/(cm) |"; the source prints "≈14,300 − 16,000 1/(cm)" where this reads "≈14,300 − 15,700 1/(cm)". 700 nm is 14,300 cm^−1 and 635 nm is 15,700 cm^−1, the bounds the neighbouring rows use.]
+[Note: corrected; the source prints "| > 700 nm | < 14,000 1/(cm) |" where this reads "| > 700 nm | < 14,300 1/(cm) |"; the source prints "≈ 14,300 − 16,000 1/(cm)" where this reads "≈ 14,300 − 15,700 1/(cm)". 700 nm is 14,300 cm^−1 and 635 nm is 15,700 cm^−1, the bounds the neighbouring rows use.]
 
 ### Energy of electronic absorption
 

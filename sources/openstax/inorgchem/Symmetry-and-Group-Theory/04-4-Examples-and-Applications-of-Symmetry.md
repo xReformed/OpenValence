@@ -113,7 +113,7 @@ Now you try! Find the characters of σ_v(xz) and σ_v(yz) under the C_2v point g
 
 Now that we've found the Γ_modes ((gammamodes)), we need to break it down into the individual irreducible representations (i, j, k...) for the point group. We can do this systematically using the following formula:
 
-\# of i = (1/h)Σ(\# of operations in class) × (χΓ) × (χi)
+\# of i = (1/h)Σ(# of operations in class) × (χΓ) × (χi)
 
 In other words, the number of irreducible representations of type i is equal to the sum of the number of operations in the class × the character of the Γ_modes × the character of i, and that sum is divided by the order of the group (h).
 
@@ -158,11 +158,11 @@ The number of B2 = (1/4)[(1 × 9 × 1) + ((−1) × (−1) × 1) + ((−1) × 3 
 
 Because we are interested in molecular vibrations, we need to subtract the rotations and translations from the total degrees of freedom.
 
-Vibrations = Γ_modes− Rotations − Translations
+Vibrations = Γ_modes − Rotations − Translations
 
 In the example of H2O, the total degrees of freedom are given above in equation (water), and therefore the vibrational degrees of freedom can be found by:
 
-H2O vibrations = (3A1 + 1A2 + 3B1 + 2B2)− Rotations − Translations
+H2O vibrations = (3A1 + 1A2 + 3B1 + 2B2) − Rotations − Translations
 
 But which of the irreducible representations are ones that represent rotations and translations? The symmetry of rotational and translational degree modes can be found by inspecting the right-hand columns of any character table. Rotational modes correspond to irreducible representations that include Rx, Ry, and Rz in the table, while each of the three translational modes has the same symmetry as the x, y and z axes. For a non-linear molecule, subtract three rotational irreducible representations and three translational irreducible representations from the total Γ_modes.
 
@@ -183,7 +183,7 @@ In C_2v, translations correspond to B1, B2, and A1 (respectively for x, y, z), a
 
 [Note: corrected; the source prints "(respectively for x, yz)" where this reads "(respectively for x, y, z)"; the source prints "rotations correspond to B2, B1, and A1 (respectively" where this reads "rotations correspond to B2, B1, and A2 (respectively". In C_2v, Rz transforms as A2, as the character table gives.]
 
-H2O vibrations = Γ_modes− Rotations − Translations
+H2O vibrations = Γ_modes − Rotations − Translations
 
 = (3A1 + 1A2 + 3B1 + 2B2) − (A1 + B1 + B2) − (A2 + B1 + B2)
 

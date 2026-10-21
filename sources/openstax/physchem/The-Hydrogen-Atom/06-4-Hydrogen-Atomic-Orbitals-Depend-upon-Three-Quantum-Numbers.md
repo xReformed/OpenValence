@@ -75,7 +75,7 @@ The notation 3d specifies the quantum numbers for an electron in the hydrogen at
 
 The asymptotic behavior (i.e., far away from the nucleus) to the radial part of the wavefunction is
 
-R_asymptotic(r)~exp(−r/(na0))
+R_asymptotic(r) ∼ exp(−r/(na0))
 
 [Note: corrected; the source prints "exp(−(r/n)a0)" where this reads "exp(−r/(na0))". a0 belongs in the denominator, as in the radial functions below.]
 

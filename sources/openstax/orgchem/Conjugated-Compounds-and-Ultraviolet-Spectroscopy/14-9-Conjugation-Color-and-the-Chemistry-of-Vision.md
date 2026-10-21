@@ -9,7 +9,7 @@ license: "CC BY-NC-SA 4.0"
 
 Why are some organic compounds colored while others are not? β-Carotene, the pigment in carrots, is yellow-orange, for instance, while cholesterol is colorless. The answer involves both the chemical structures of colored molecules and the way we perceive light.
 
-The visible region of the electromagnetic spectrum is adjacent to the ultraviolet region, extending from approximately 400 to 800 nm. Colored compounds have such elaborate systems of conjugation that their “UV” absorptions extend into the visible region. β-Carotene, for instance, has 11 double bonds in conjugation, and its absorption occurs at λmax = 455 nm (Figure 14.9.1).
+The visible region of the electromagnetic spectrum is adjacent to the ultraviolet region, extending from approximately 400 to 800 nm. Colored compounds have such elaborate systems of conjugation that their “UV” absorptions extend into the visible region. β-Carotene, for instance, has 11 double bonds in conjugation, and its absorption occurs at λ_max = 455 nm (Figure 14.9.1).
 
 Figure 14.9.1: Ultraviolet spectrum of β-carotene, a conjugated molecule with 11 double bonds. The absorption occurs in the visible region.
 The ultraviolet spectrum of beta-carotene shows a curve with a peak (lambda max) at 455 nanometers. The x-axis and y-axis represent wavelength and absorbance, respectively.

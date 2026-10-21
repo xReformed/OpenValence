@@ -98,7 +98,7 @@ For the AH2 molecular system, Walsh produced the first angular correlation diagr
 
 A typical prediction result for water is an bond angle of 90°, which is not even close to the experimental value of 104°. At best, the method is able to differentiate between a bent and linear molecule.
 
-Walsh's rule for predicting shapes of molecules states that a molecule will adopt a structure that best provides the most stability for its HOMO. If a particular structural change does not perturb the HOMO, the closest occupied molecular orbital governs the preference for geometrical orientation.
+> Walsh's rule for predicting shapes of molecules states that a molecule will adopt a structure that best provides the most stability for its HOMO. If a particular structural change does not perturb the HOMO, the closest occupied molecular orbital governs the preference for geometrical orientation.
 
 Figure 10.3.4 illustrates the difference between the actual linear case we just analyzed and the truly bent molecule, e.g. H2O. The geometry changes the ordering somewhat, but the qualitative picture we obtain from the linear case makes it a useful construction. The oxygen atomic orbitals are labeled according to their symmetry (Figure 10.3.5) as a1 for the 2s orbital and b1 (2px), b2 (2py) and a1 (2pz) for the three 2p orbitals. The two hydrogen 1s orbitals are premixed to form a1 and b2 molecular orbitals.
 

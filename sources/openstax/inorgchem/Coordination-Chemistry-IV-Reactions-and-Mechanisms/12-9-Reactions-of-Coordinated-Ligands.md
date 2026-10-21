@@ -51,7 +51,7 @@ Water has a pKa of 14. When water is bound to a Zn^2+ ion in aqueous solution, i
 
 Hint
 
-You will need the chemical equations above and you will need to recall the definitions of Ka and pKa, as well as pH to complete this task. Recall that pKa = −logKa and pH = −log[H^+]. The Ka is the equilibrium constant for the chemical equation. Use an I.C.E. table to calculate the amount of hydrogen ion at equilibrium.
+You will need the chemical equations above and you will need to recall the definitions of Ka and pKa, as well as pH to complete this task. Recall that pKa = −log Ka and pH = −log[H^+]. The Ka is the equilibrium constant for the chemical equation. Use an I.C.E. table to calculate the amount of hydrogen ion at equilibrium.
 
 **Answer**
 

@@ -30,7 +30,7 @@ K_a = ([A^−][H3O^+])/([HA])
 
 with
 
-pK_a = −logK_a
+pK_a = −log K_a
 
 Compounds with a smaller K_a and larger pK_a are less acidic, whereas compounds with a larger K_a and smaller pK_a are more acidic. As shown in Table 17.2.1, simple alcohols like methanol and ethanol are about as acidic as water, but the more highly substituted tert-butyl alcohol is somewhat weaker. Substituent groups also have a significant effect: 2,2,2-trifluoroethanol is approximately 3700 times stronger than ethanol, for instance. Phenols and thiols, the sulfur analogs of alcohols, are substantially more acidic than water.
 

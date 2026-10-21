@@ -107,7 +107,7 @@ Equivalent Lewis dot structures, such as those of ozone, are called resonance st
 
 The double-headed arrow indicates that the actual electronic structure is an average of those shown, not that the molecule oscillates between the two structures.
 
-When it is possible to write more than one equivalent resonance structure for a molecule or ion, the actual structure is the average of the resonance structures.
+> When it is possible to write more than one equivalent resonance structure for a molecule or ion, the actual structure is the average of the resonance structures.
 
 #### The Carbonate (CO3^2−) Ion
 
@@ -268,7 +268,7 @@ For main group molecules, chemists (like Pauling) thought a long time ago that h
 
 While hybrid orbitals are a powerful tool to describe the geometries and shape of molecules and metal complexes, in "real" molecules their significance may be debated. Often a more realistic molecular orbitals approach is needed. However, from an epistemologically simple point of view, bonding theories can only be judged by their predictions. To the extent that hybridization can explain the shapes of PF5 and SF6, valence bond theory is a perfectly good theory. To the extent that if you write out the valence bond wavefunction using hybridized orbitals and calculate energies and other properties à la Pauling (i.e., ionization energy and electron affinities) and find them to be off from experimental results (by tens of kcals/mol), then valence bond theory is not accurate.
 
-Bonding theories can only be judged by their predictions.
+> Bonding theories can only be judged by their predictions.
 
 A simple explanation that can be given is that molecular wavefunctions constructed out of hybridized atomic orbitals are accurate enough to predict some things, but not others. Predictions of any theory must be compared with empirical evidence to assess when they work and when they fail. When a theory gives the wrong answer, at least one assumption must not hold. In this case, the valence bond wavefunction is not accurate enough to capture some important features of a system's electronic structure. It may not be the most intellectually satisfying answer, but to say more would result in a much more complicated answer and certainly far beyond the level reasonably expected from general chemistry discussions.
 

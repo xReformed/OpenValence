@@ -82,7 +82,7 @@ Now we can add all the energies together to get the total energy:
 
 Do these equations look familiar? They should because we have now reduced the 3D box into three particle in a 1D box problems!
 
-(d^2 X)/dx^2 + ((2 m)/ħ^2)Ex X = 0≈(d^2ψ)/dx^2 = −((4π^2)/λ^2)ψ
+(d^2 X)/dx^2 + ((2 m)/ħ^2)Ex X = 0 ≈ (d^2ψ)/dx^2 = −((4π^2)/λ^2)ψ
 
 Now the equations are very similar to a 1-D box and the boundary conditions are identical, i.e.,
 

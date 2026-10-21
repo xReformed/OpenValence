@@ -56,11 +56,11 @@ Make a table that provides the energy, number of radial nodes, and the number of
 
 **Answer**
 
-|  | Energy 1.Particle in a Box (h^2n^2/8m_eL^2) 2.Harmonic Oscillator((n+0.5)ℏω) 3.Hydrogen (-13.6eV/n^2) | Number of Radial Nodes (n-l-1) | Number of Angular Nodes l = (n-1) l : s =0 p = 1 d = 2 | Total Number of Nodes |
+|  | Energy; 1.Particle in a Box (h^2n^2/8m_eL^2); 2.Harmonic Oscillator((n+0.5)ℏω); 3.Hydrogen (-13.6eV/n^2) | Number of Radial Nodes; (n-l-1) | Number of Angular Nodes; l = (n-1); l : s =0; p = 1; d = 2 | Total Number of Nodes |
 | --- | --- | --- | --- | --- |
-| n = 1 | 1. 6.02 *10^-38 J/L^2 2. 1.5ℏω 3. -13.6 eV | - | 0 | 0 |
-| n = 2 | 1. 2.41 *10^-37 J/L^2 2. 2.5ℏω 3. -3.4 eV | for s: 1 for p: 0 | for s: 0 for p: 1 | 1 |
-| n = 3 | 1. 5.42 *10^-37 J/L^2 2. 3.5ℏω 3. -1.51 eV | for s: 2 for p: 1 for d: 0 | for s: 0 for p:1 for d: 2 | 2 |
+| n = 1 | 1. 6.02 *10^-38 J/L^2; 2. 1.5ℏω; 3. -13.6 eV | - | 0 | 0 |
+| n = 2 | 1. 2.41 *10^-37 J/L^2; 2. 2.5ℏω; 3. -3.4 eV | for s: 1; for p: 0 | for s: 0; for p: 1 | 1 |
+| n = 3 | 1. 5.42 *10^-37 J/L^2; 2. 3.5ℏω; 3. -1.51 eV | for s: 2; for p: 1; for d: 0 | for s: 0; for p:1; for d: 2 | 2 |
 
 [Note: corrected; the source prints "| n = 2 | 1. 6.02 *10^-38 J/L^2" where this reads "| n = 2 | 1. 2.41 *10^-37 J/L^2"; the source prints "| n = 3 | 1. 6.02 *10^-38 J/L^2" where this reads "| n = 3 | 1. 5.42 *10^-37 J/L^2"; the source prints "3. 1.51 eV |" where this reads "3. -1.51 eV |". The particle-in-a-box energy grows as n^2 (h^2/(8me) = 6.02 × 10^−38 J m^2, with L in m), and the hydrogen n = 3 energy is −13.6/9 = −1.51 eV.]
 
@@ -103,7 +103,7 @@ The curve passes through zero at r = 0 since the surface area of a sphere of zer
 
 [Note: corrected; the source prints "4πr^2 Dr" where this reads "4πr^2 Δr". A thin shell of thickness Δr.]
 
-The radial distribution function gives the probability density for an electron to be found anywhere on the surface of a sphere located a distance r from the proton. Since the area of a spherical surface is 4πr^2, the radial distribution function is given by 4πr^2 R(r)^*R(r).
+> The radial distribution function gives the probability density for an electron to be found anywhere on the surface of a sphere located a distance r from the proton. Since the area of a spherical surface is 4πr^2, the radial distribution function is given by 4πr^2 R(r)^*R(r).
 
 Radial distribution functions are shown in Figure 6.5.6 . At small values of r, the radial distribution function is low because the small surface area for small radii modulates the high value of the radial probability density function near the nucleus. As we increase r, the surface area associated with a given value of r increases, and the r^2 term causes the radial distribution function to increase even though the radial probability density is beginning to decrease. At large values of r, the exponential decay of the radial function outweighs the increase caused by the r^2 term and the radial distribution function decreases.
 

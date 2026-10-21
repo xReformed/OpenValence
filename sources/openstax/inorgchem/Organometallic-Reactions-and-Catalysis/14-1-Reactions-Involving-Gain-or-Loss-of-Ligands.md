@@ -67,9 +67,9 @@ rate = k2[Ln M–◊][Li] (1)
 
 Of course, the unsaturated complex is present in very small concentration and is unmeasurable, so this equation doesn’t help us much. We need to remove the concentration of the unmeasurable intermediate from (1), and the steady state approximation helps us do this. We can express variation in the concentration of the unsaturated intermediate as (processes that make it) minus (processes that destroy it), multiplying by an arbitrary time length to make the units work out. All of that equals zero, according to the SS approximation. The painful math is almost over! Since Δt must not be zero, the other factor, the collection of terms, must equal zero.
 
-Δ[Ln M–◊] = 0 = (k1[Ln M–L^d]–k–1[Ln M–◊][L^d]–k2[Ln M–◊][Li])Δt (2)
+Δ[Ln M–◊] = 0 = (k1[Ln M–L^d]−k–1[Ln M–◊][L^d]−k2[Ln M–◊][Li])Δt (2)
 
-0 = k1[Ln M–Ld]–k_−1[Ln M–◊][Ld]–k2[Ln M–◊][Li] (3)
+0 = k1[Ln M–Ld]−k_−1[Ln M–◊][Ld]−k2[Ln M–◊][Li] (3)
 
 Rearranging to solve for [Ln M–◊], we arrive at the following.
 

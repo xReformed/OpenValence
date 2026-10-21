@@ -114,7 +114,7 @@ P̂12|ψ(r1, r2)⟩ = −|ψ(r2, r1)⟩
 
 These particles are called fermions and have half-integer spin and include electrons, protons, and neutrinos. Since electrons are fermion, any wavefunction used to describe multiple electrons must be antisymmetric with respect to permutation of the electrons. The requirement that the wavefunction be antisymmetric applies to all multi-electron functions ψ(r1, r2, …ri), including those approximated as products of single electron functions
 
-|ψ(r1, r2, …ri)⟩≈φa(r1)φb(r2)…φi(ri)
+|ψ(r1, r2, …ri)⟩ ≈ φa(r1)φb(r2)…φi(ri)
 
 ### Exercise 8.5.4
 
@@ -144,7 +144,7 @@ and symmetric combination
 
 where the C_ab terms are expansion and normalization parameters.
 
-Note that the antisymmetric combination (Equation (ASym)) cannot include terms where both particles are in the same state (spin-orbital), but there are three possibilities for the symmetric state (Equation (Sym)).
+> Note that the antisymmetric combination (Equation (ASym)) cannot include terms where both particles are in the same state (spin-orbital), but there are three possibilities for the symmetric state (Equation (Sym)).
 
 Although any linear combinations of C_ab, C_bb, and C_aa in Equation (Sym) is possible, there are three limiting expressions for possible symmetric combinations:
 
@@ -167,4 +167,4 @@ The Pauli Exclusion Principle argues that two electrons could not be described b
 
 For example, if this were the case for the anti-symmetric combination for helium (Equation (ASym)), then the wavefunction collapses to zero. We can only constructs wavefunctions that are antisymmetric with respect to permutation symmetry only if each electron is described by a different function.
 
-The Pauli Exclusion Principle is simply the requirement that the wavefunction be antisymmetric for electrons, since they are fermions.
+> The Pauli Exclusion Principle is simply the requirement that the wavefunction be antisymmetric for electrons, since they are fermions.

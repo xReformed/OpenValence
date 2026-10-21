@@ -11,7 +11,7 @@ Diatomic molecules with two different atoms are called heteronuclear diatomic mo
 
 Figure 9.12.4: Molecular Orbital Energy-Level Diagram for a Heteronuclear Diatomic Molecule AB, Where χB > χA. The bonding molecular orbitals are closer in energy to the atomic orbitals of the more electronegative B atom. Consequently, the electrons in the bonding orbitals are not shared equally between the two atoms. On average, they are closer to the B atom, resulting in a polar covalent bond.
 
-A molecular orbital energy-level diagram is always skewed toward the more electronegative atom.
+> A molecular orbital energy-level diagram is always skewed toward the more electronegative atom.
 
 ### An Odd Number of Valence Electrons: NO
 
@@ -35,7 +35,7 @@ Molecular orbital theory is also able to explain the presence of lone pairs of e
 
 Figure 9.12.6: Molecular Orbital Energy-Level Diagram for HCl. The hydrogen 1s atomic orbital interacts most strongly with the 3p_z orbital on chlorine, producing a bonding/antibonding pair of molecular orbitals. The other electrons on Cl are best viewed as nonbonding. As a result, only the bonding σ orbital is occupied by electrons, giving a bond order of 1.
 
-Electrons in nonbonding molecular orbitals have no effect on bond order.
+> Electrons in nonbonding molecular orbitals have no effect on bond order.
 
 ### Example 9.12.4: The Cyanide Ion
 

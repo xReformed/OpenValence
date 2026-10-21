@@ -506,15 +506,15 @@ Let’s look at the case of a d^4 complex. That’s an interesting case, because
 
 The ligand field stabilization energy is the difference between energy in a spherical field and in an octahedral field. In the high spin d^4 case, that means three electrons are lower in energy and one is higher in an octahedral environment.
 
-- High spin d^4: LFSE = [0.6(1)–0.4(3)]Δo; = [0.6–1.2]Δo; = −0.6Δo
+- High spin d^4: LFSE = [0.6(1) − 0.4(3)]Δo; = [0.6 − 1.2]Δo; = −0.6Δo
 
 For comparison, in the low spin case, all four of the electrons are lower in energy in the presence of the octahedral field.
 
-- Low spin d^4: LFSE = [0.6(0)–0.4(4)]Δo; = −1.6Δo
+- Low spin d^4: LFSE = [0.6(0) − 0.4(4)]Δo; = −1.6Δo
 
 Of course, the ligand field stabilization energy isn’t the only contributor to energetic differences between possible electron configurations. Pairing energy will also play a role, including Coulombic or repulsive terms as well as exchange terms. The total energy difference between a high spin and low spin configuration will compare those energies as well. For the d^4 case:
 
-ΔE(low spin – high spin) = (−1.6Δo + Πc + 3Πe) − (−0.6Δo + 3Πe)
+ΔE(low spin - high spin) = (−1.6Δo + Πc + 3Πe) − (−0.6Δo + 3Πe)
 
 = −Δo + Πc
 

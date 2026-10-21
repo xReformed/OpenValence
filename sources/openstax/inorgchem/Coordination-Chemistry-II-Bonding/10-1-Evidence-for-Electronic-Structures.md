@@ -47,11 +47,11 @@ Many complexation reactions take place in aqueous solution by dissolving a metal
 
 For example, the formation of [Cu(NH3)(OH2)5]^2+ complex ion from Cu^2+(aq) can be represented by the following stepwise reaction:^1
 
-[Cu(OH2)6]^2+ + NH3⇌[Cu(NH3)(OH2)5]^2+ + H2O K1 = 1.9 × 10^4
+[Cu(OH2)6]^2+ + NH3⇌[Cu(NH3)(OH2)5]^2+ + H2O    K1 = 1.9 × 10^4
 
 The formation constant, K1, is a stepwise formation constant because it represents the substitution of a single aquo ligand (a coordinated water) by an ammine ligand. Another example is the reaction below that represents the substitution of four aquo ligands for four ammine ligands. The overall formation of the [Cu(NH3)4(OH2)2]^2+ complex ion from Cu^2+(aq) would be represented by this equation:
 
-[Cu(OH2)6]^2+ + 4NH3⇌[Cu(NH3)4(OH2)2]^2+ + 4H2O β4 = 1.1 × 10^13
+[Cu(OH2)6]^2+ + 4NH3⇌[Cu(NH3)4(OH2)2]^2+ + 4H2O    β4 = 1.1 × 10^13
 
 This time, the formation constant represents the substitution of four ammine ligands for four aquo ligands. This transformation does not happen in one step, so the formation constant, β4 is a composite of the equilibrium constants for four individual steps:
 
@@ -66,8 +66,6 @@ This time, the formation constant represents the substitution of four ammine lig
 β4 = K1 × K2 × K3 × K4 = (1.9 × 10^4)(3.9 × 10^3)(1.0 × 10^3)(1.5 × 10^2) = 1.1 × 10^13
 
 #### β notation
-
-[Note: corrected; the source prints "(\beta\) notation" where this reads "β notation". The heading's TeX is missing its opening backslash; it is the β of β4.]
 
 The β notation is used to distinguish an overall formation constant from a stepwise formation constant. However, sometimes alternative notation will be used. You may see other texts, the literature, or your instructor using alternative ways to distinguish an overall formation constant like β4 from the stepwise formation constant, like K4. The important thing is to understand the conventions used for whatever source you are reading.
 
@@ -131,7 +129,7 @@ Show how we can combine the formation constants given above for [Ni(NH3)6]^2+ an
 
 [Note: corrected; the source prints "[Ni(HO2)6]^2+" where this reads "[Ni(OH2)6]^2+". The aqua complex is [Ni(OH2)6]^2+ throughout.]
 
-[Ni(OH2)6]^2+ + 3 en ⇄ [Ni(en)3]^2+ + 6 H2O K = ?
+[Ni(OH2)6]^2+ + 3 en ⇄ [Ni(en)3]^2+ + 6 H2O    K = ?
 
 **Answer**
 
@@ -181,7 +179,7 @@ Note that this trend is very different for Cu(II) than for a similar series of l
 
 Ethylenediamine can be displaced from nickel by tren, (NH2CH2CH2)3N, another polydentate ligand.^3
 
-[Ni(en)2(OH2)2]^2+ + tren ⇄ [Ni(tren)(H2O)2]^2+ + 2 en K = 76
+[Ni(en)2(OH2)2]^2+ + tren ⇄ [Ni(tren)(H2O)2]^2+ + 2 en    K = 76
 
 a. What is the denticity of tren?
 b. It is reported that ΔH° = +13.0 kJ mol^-1 and ΔS° = 79.5 J mol^-1 K^-1. Propose a reason for the moderately large formation constant.
@@ -234,7 +232,7 @@ in which e is the charge on an electron; h is Planck’s constant; m is the mass
 
 This experimental quantity is fitted to a simple relationship that depends on the number of unpaired electrons. This mathematical model gives a prediction of the “spin-only” magnetic moment. If the magnetic moment arises purely from the number of unpaired electrons without additional complicating factors, the fit to the experimental data is pretty good.
 
-μ_eff≈μ_so = g√(S(S + 1))
+μ_eff ≈ μ_so = g√(S(S + 1))
 
 Here, g is the gyromagnetic ratio, which is a proportionality constant between the angular momentum of the electron and the magnetic moment. It has a value of 2.00023, or approximately 2.0. The term √(S(S + 1)) is the value of the angular momentum, which depends on the number of unpaired electrons; S is the absolute value of the sum of the individual spins of the valence electrons. Of course, the spins would cancel out in electrons that were paired, because one would have ms = 1/2 and the other would have ms = −1/2. For unpaired electrons, Hund’s rule states that they would have parallel spins; for example, two unpaired electrons gives S = 1.
 
@@ -255,13 +253,13 @@ The table above shows how the magnetic moment changes with the number of unpaire
 
 Note that the expression for spin-only magnetic moment is sometimes written in an alternative way, based directly on the number of unpaired electrons, n, rather than S.
 
-μ_eff≈μ_so = √(n(n + 2))
+μ_eff ≈ μ_so = √(n(n + 2))
 
-There is an additional approximation in these cases, based on how the values of the spin-only magnetic moment correlate with the number of unpaired electrons. If we always round the value of μ_so, then it is one greater than the number of unpaired electrons. Thus, μ_so≈n + 1, provided of course that there are any unpaired electrons at all; the relationship doesn’t hold if n = 0 because then μ_so = 0, not 1.
+There is an additional approximation in these cases, based on how the values of the spin-only magnetic moment correlate with the number of unpaired electrons. If we always round the value of μ_so, then it is one greater than the number of unpaired electrons. Thus, μ_so ≈ n + 1, provided of course that there are any unpaired electrons at all; the relationship doesn’t hold if n = 0 because then μ_so = 0, not 1.
 
 In reality, observed magnetic moments are slightly different than spin-only magnetic moments. In some cases, the observed magnetic moment is smaller than expected, but those cases are more complicated and we won’t consider them here. Very often, the observed magnetic moments are larger than predicted because orbital angular momentum also plays a role in determining the magnitude of the overall magnetic moment. We may use a modified expression that takes this part into account.
 
-μ_eff≈μ_(s+L) = g√(S(S + 1) + (1/4)L(L + 1))
+μ_eff ≈ μ_(s+L) = g√(S(S + 1) + (1/4)L(L + 1))
 
 Just as S is the absolute value of the sum of the spin quantum numbers in the ion, ms, L is the absolute value of the sum of the orbital quantum numbers, ml. There are five d orbitals, with ml = 2,1,0, −1, −2, and the value of L has to be maximized according to Hund’s rule. That means the value of L can be 3, 2, or 0.
 

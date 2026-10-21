@@ -86,7 +86,7 @@ In the first row of the periodic table, the valence atomic orbitals are 1s. Ther
 
 Dihydrogen, H2 [σg^2(1s)]: This is the simplest diatomic molecule. It has only two molecular orbitals (σg and σu^*), two electrons, a bond order of 1, and is diamagnetic. Its bond length is 74 pm. MO theory would lead us to expect bond order to decrease and bond length to increase if we either add or subtract one electron. The calculated bond length for the H2^+ ion is approximately 105 pm.^1
 
-Dihelium, He2 [σg^2σu^*2(1s)]: This molecule has a bond order of zero due to equal number of electrons in bonding and antibonding orbitals. Like other nobel gases, He exists in the atomic form and does not form bonds at ordinary temperatures and pressures.
+Dihelium, He2 [σg^2σu^(*2)(1s)]: This molecule has a bond order of zero due to equal number of electrons in bonding and antibonding orbitals. Like other nobel gases, He exists in the atomic form and does not form bonds at ordinary temperatures and pressures.
 
 #### Exercise 5.2.3.1
 
@@ -108,23 +108,23 @@ Figure 5.2.3.1: Molecular orbital energy-level diagrams for the diatomic molecul
 
 Dilithium, Li2 [σg^2(2s)]: This molecule has a bond order of one and is observed experimentally in the gas phase to have one Li-Li bond.
 
-Diberylium, Be2 [σg^2σu^*2(2s)]: This molecule has a bond order of zero due to the equal number of electrons in bonding and antibonding orbitals. Although Be2 does not exist under ordinary conditions, it can be produced in a laboratory and its bond length measured (Figure 5.2.3.2). Although the bond is very weak, its bond length is surprisingly ordinary for a covalent bond of the second period elements.^2
+Diberylium, Be2 [σg^2σu^(*2)(2s)]: This molecule has a bond order of zero due to the equal number of electrons in bonding and antibonding orbitals. Although Be2 does not exist under ordinary conditions, it can be produced in a laboratory and its bond length measured (Figure 5.2.3.2). Although the bond is very weak, its bond length is surprisingly ordinary for a covalent bond of the second period elements.^2
 
-Diboron, B2 [σg^2σu^*2(2s)πu^1πu^1(2p)]: The case of diboron is one that is much better described by molecular orbital theory than by Lewis structures or valence bond theory. This molecule has a bond order of one. The molecular orbital description of diboron also predicts, accurately, that diboron is paramagnetic. The paramagnetism is a consequence of orbital mixing, resulting in the σg orbital's being at a higher energy than the two degenerate πu orbitals.
+Diboron, B2 [σg^2σu^(*2)(2s)πu^1πu^1(2p)]: The case of diboron is one that is much better described by molecular orbital theory than by Lewis structures or valence bond theory. This molecule has a bond order of one. The molecular orbital description of diboron also predicts, accurately, that diboron is paramagnetic. The paramagnetism is a consequence of orbital mixing, resulting in the σg orbital's being at a higher energy than the two degenerate πu orbitals.
 
 [Note: corrected; the source prints "than the two degenerate πu^* orbitals" where this reads "than the two degenerate πu orbitals". The πu(2p) orbitals are bonding orbitals; diboron's configuration on the same line puts its two unpaired electrons in πu^1πu^1.]
 
-Dicarbon, C2 [σg^2σu^*2(2s)πu^2πu^2(2p)]: This molecule has a bond order of two. Molecular orbital theory predicts two bonds with π symmetry, and no σ bonding. C2 is rare in nature because its allotrope, diamond, is much more stable.
+Dicarbon, C2 [σg^2σu^(*2)(2s)πu^2πu^2(2p)]: This molecule has a bond order of two. Molecular orbital theory predicts two bonds with π symmetry, and no σ bonding. C2 is rare in nature because its allotrope, diamond, is much more stable.
 
 [Note: graphite, not diamond, is the most stable form of carbon (diamond is metastable relative to graphite); C2 is rare because the solid allotropes are far more stable than the diatomic molecule. The sentence is left as printed.]
 
-Dinitrogen, N2 [σg^2σu^*2(2s)πu^2πu^2σg^2(2p)]: This molecule is predicted to have a triple bond. This prediction is consistent with its short bond length and bond dissociation energy. The energies of the σg(2p) and πu(2p) orbitals are very close, and their relative energy levels have been a subject of some debate (see next section for discussion).
+Dinitrogen, N2 [σg^2σu^(*2)(2s)πu^2πu^2σg^2(2p)]: This molecule is predicted to have a triple bond. This prediction is consistent with its short bond length and bond dissociation energy. The energies of the σg(2p) and πu(2p) orbitals are very close, and their relative energy levels have been a subject of some debate (see next section for discussion).
 
-Dioxygen, O2 [σg^2σu^*2(2s)σg^2πu^2πu^2πg^*1πg^*1(2p)]: This is another case where valence bond theory fails to predict actual properties. Molecular orbital theory correctly predicts that dioxygen is paramagnetic, with a bond order of two. Here, the molecular orbital diagram returns to its "normal" order of orbitals where orbital mixing could be somewhat ignored, and where σg(2p) is lower in energy than πu(2p).
+Dioxygen, O2 [σg^2σu^(*2)(2s)σg^2πu^2πu^2πg^(*1)πg^(*1)(2p)]: This is another case where valence bond theory fails to predict actual properties. Molecular orbital theory correctly predicts that dioxygen is paramagnetic, with a bond order of two. Here, the molecular orbital diagram returns to its "normal" order of orbitals where orbital mixing could be somewhat ignored, and where σg(2p) is lower in energy than πu(2p).
 
-Difluorine, F2 [σg^2σu^*2(2s)σg^2πu^2πu^2πg^*2πg^*2(2p)]: This molecule has a bond order of one and like oxygen, the σg(2p) is lower in energy than πu(2p).
+Difluorine, F2 [σg^2σu^(*2)(2s)σg^2πu^2πu^2πg^(*2)πg^(*2)(2p)]: This molecule has a bond order of one and like oxygen, the σg(2p) is lower in energy than πu(2p).
 
-Dineon, Ne2 [σg^2σu^*2(2s)σg^2πu^2πu^2πg^*2πg^*2σu^*2(2p)]: Like other noble gases, Ne exists in the atomic form and does not form bonds at ordinary temperatures and pressures. Like Be2, Ne2 is an unstable species that has been created in extreme laboratory conditions and its bond length has been measured (Figure 5.2.3.2)
+Dineon, Ne2 [σg^2σu^(*2)(2s)σg^2πu^2πu^2πg^(*2)πg^(*2)σu^(*2)(2p)]: Like other noble gases, Ne exists in the atomic form and does not form bonds at ordinary temperatures and pressures. Like Be2, Ne2 is an unstable species that has been created in extreme laboratory conditions and its bond length has been measured (Figure 5.2.3.2)
 
 #### Exercise 5.2.3.2
 

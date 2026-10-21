@@ -24,7 +24,7 @@ Born proposed in 1926, the most commonly accepted interpretation of the wavefunc
 
 [Note: corrected; the source prints "the probability amplitude P(x, t)" where this reads "the probability density P(x, t)". P = |ψ|^2 is the probability density; the next paragraph calls the wavefunction itself the probability amplitude.]
 
-The Born interpretation therefore calls the wavefunction the probability amplitude, the absolute square of the wavefunction is called the probability density, and the probability density times a volume element in three-dimensional space (dτ) is the probability P
+> The Born interpretation therefore calls the wavefunction the probability amplitude, the absolute square of the wavefunction is called the probability density, and the probability density times a volume element in three-dimensional space (dτ) is the probability P
 
 The probability that a single quantum particle moving in one spatial dimension will be found in a region x∈[a, b] if a measurement of its location is performed is
 

@@ -47,12 +47,12 @@ Selected properties of the Group 13 elements are given in Table 8.6.1.1.
 
 Table 8.6.1.1. Selected Properties of Group 13 Elements other than Nihonium. For more information about how this data was sourced see note 1.
 
-| Element | Elemental Form | Melting Point (°C) | Pauling Electronegativity | Ionization Energy (kJ/mol) | Electron Affinity (kJ/mol) | Atomic Radius (Å) | Covalent Radius (Å) |
+| Element | Elemental Form | Melting Point; (°C) | Pauling Electronegativity | Ionization Energy; (kJ/mol) | Electron Affinity; (kJ/mol) | Atomic Radius; (Å) | Covalent Radius; (Å) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Boron, B | Network Covalent Solid characterized by the sharing of electrons in boron clusters, primarily linked icosahedra, like those depicted schematically below. [Image not described in source] | 2180 | 2.04 | 801 | 27 | 1.92 | 0.84 |
-| Aluminum or Aluminium,^2Al | FCC Metal [Image: Face-centered cubic crystal structure for aluminium] | 660 | 1.61 | 577 | 42 | 1.84 | 1.24 |
+| Aluminum or Aluminium,^2Al | FCC Metal; [Image: Face-centered cubic crystal structure for aluminium] | 660 | 1.61 | 577 | 42 | 1.84 | 1.24 |
 | Gallium, Ga | Metal with a nonstandard crystal structure that may be described as packed Ga2 units, which are shown linked by the thicker pink lines in the structure below. [Image not described in source] | 30 | 1.81 | 579 | 41 | 1.87 | 1.23 |
-| Indium, In | Distorted close packed metal [Image not described in source] | 157 | 1.78 | 558 | 36 | 1.93 | 1.42 |
+| Indium, In | Distorted close packed metal; [Image not described in source] | 157 | 1.78 | 558 | 36 | 1.93 | 1.42 |
 | Thallium, Tl | HCP Metal | 304 | 1.8 | 589 | 28.9 | 1.96 | 1.44 |
 
 From the data given in Table 8.6.1.1 several things are apparent:
@@ -174,7 +174,7 @@ B_pz,1, B_pz,2
 
 Using the projection operator method with the following generator orbitals gives:
 
-| Generator orbital | E | C2 (z) | C2 (y) | C2 (x) | i | σ (xy) | σ (xz) | σ (yz) |
+| Generator orbital | E | C2; (z) | C2; (y) | C2; (x) | i | σ; (xy) | σ; (xz) | σ; (yz) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Set 1: H1s,a | H1s,a | H1s,c | H1s,d | H1s,b | H1s,d | H1s,b | H1s,a | H1s,c |
 | Set 2: H1s,e | H1s,e | H1s,f | H1s,e | H1s,f | H1s,f | H1s,e | H1s,f | H1s,e |
@@ -470,7 +470,6 @@ alpha emission:    [¹¹₅B]^* ⟶ ⁷₃Li + ⁴₂He
 This sequence of reactions in medical applications to treat tumors is called neutron capture therapy. The basic principles of neutron capture therapy are summarized in Figure 8.6.1.4.
 
 Figure 8.6.1.4: Use of neutron capture therapy to destroy cancerous cells. The image is by Pat Kenny (Illustrator) / Public domain.
-File:Boron neutron capture therapy (bnct) illustration.jpg
 
 As can be seen from Figure 8.6.1.4, the process involves irradiating the boron-infused tumor with neutrons. These neutrons are poorly absorbed by tissues comprised primarily of the big six elements of biochemistry (C, H, N, O, S, and P) and so minimally damage normal tissue. However, in boron-infused tumor cells, [¹¹₅B]^* produced by neutron capture degrades to give high energy ⁷₃Li and ⁴₂He that damage the surrounding cancerous tissue.
 
@@ -563,12 +562,12 @@ Some representative features of these elements illustrative of their chemistry a
 
 Table 8.6.2.1. Illustrative properties of the group 13 metals.^(9,10)
 
-| Group 13 Metal | Natural Source | Oxides (major product of reaction of the element with O2 is given in bold) | Illustrative Stable Mononuclear Halides | Redox Behavior in Acidic Solution |
+| Group 13 Metal | Natural Source | Oxides; (major product of reaction of the element with O2 is given in bold) | Illustrative Stable Mononuclear Halides | Redox Behavior in Acidic Solution |
 | --- | --- | --- | --- | --- |
 | Aluminum, Al | Aluminosilicates like feldspars of formula MAlSi3O8 or M'Al2Si2O8 where M = alkali metal and M' = alkaline earth metal clays like kaolinite, Al2Si2O5(OH)4 Bauxites containing Al2O3·xH2O | Al2O3 | AlX3 (X = F, Cl, Br, I) | [Image not described in source] |
-| Gallium, Ga | As impurities in Aluminum and Fe/Zn ores Bauxites, Al2O3·xH2O Sphalerites, ZnS Small amounts in Gallite, CuGaS2 | Ga2O3 Ga2O | Network covalent GaF3 Dimeric Ga2X6 (X = Cl, Br, I) Ga^IGa^III2Cl7 Ga^IGa^IIIX4 (X = Cl, Br, I) | [Image not described in source] |
-| Indium, In | As impurities in Zn and Cu/Fe ores Sphalerites, ZnS Chalcopyrite, CuFeS2 | In2O3 | InX3 (X = F, Cl, Br, I) In^I3(In^IIIX6) (X = Cl, Br) In^IIn^IIIX4 (X = Br, I) InX (X = Cl, Br, I) | [Image not described in source] |
-| Thallium, Tl | As impurities in sulfide-rich ores CuFeS2, CuS, Cu2S PbS ZnS small amounts in minerals like TlCu7Se4, TlPbAs5S9, others | Tl2O3 Tl2O | TlF3 TlX (X = F, Cl, Br, I) thallium(I) triiodide, Tl^I(I3) | [Image not described in source] |
+| Gallium, Ga | As impurities in Aluminum and Fe/Zn ores Bauxites, Al2O3·xH2O Sphalerites, ZnS; Small amounts in Gallite, CuGaS2 | Ga2O3; Ga2O | Network covalent GaF3; Dimeric Ga2X6 (X = Cl, Br, I); Ga^IGa^III2Cl7; Ga^IGa^IIIX4 (X = Cl, Br, I) | [Image not described in source] |
+| Indium, In | As impurities in Zn and Cu/Fe ores Sphalerites, ZnS Chalcopyrite, CuFeS2 | In2O3 | InX3 (X = F, Cl, Br, I); In^I3(In^IIIX6) (X = Cl, Br); In^IIn^IIIX4 (X = Br, I); InX (X = Cl, Br, I) | [Image not described in source] |
+| Thallium, Tl | As impurities in sulfide-rich ores CuFeS2, CuS, Cu2S PbS ZnS; small amounts in minerals like TlCu7Se4, TlPbAs5S9, others | Tl2O3; Tl2O | TlF3; TlX (X = F, Cl, Br, I); thallium(I) triiodide, Tl^I(I3) | [Image not described in source] |
 
 As may be seen from the data in Table 8.6.2.1, on moving down group 13 from Al to Tl
 
@@ -619,9 +618,9 @@ Table 8.6.2.2. Ionization energy costs for formation of M^+ and M^3+. Recalculat
 
 | Process | B | Al | Ga | In | Tl |
 | --- | --- | --- | --- | --- | --- |
-| M → M^+ IE1 (kJ/mol) | 800 | 577 | 578 | 558 | 589 |
-| M → M^3+ IE1 + IE2 + IE3 (kJ/mol) | 6886 | 5137 | 5520 | 5082 | 5438 |
-| Inert pair oxidation: M^+ → M^3+ IE2 + IE3 (kJ/mol) | 6,086 | 4,560 | 4,942 | 4,524 | 4,849 |
+| M → M^+; IE1 (kJ/mol) | 800 | 577 | 578 | 558 | 589 |
+| M → M^3+; IE1 + IE2 + IE3 (kJ/mol) | 6886 | 5137 | 5520 | 5082 | 5438 |
+| Inert pair oxidation: M^+ → M^3+; IE2 + IE3 (kJ/mol) | 6,086 | 4,560 | 4,942 | 4,524 | 4,849 |
 
 Table 8.6.2.3. M-Cl homolytic bond energies in kJ/mol.^15
 

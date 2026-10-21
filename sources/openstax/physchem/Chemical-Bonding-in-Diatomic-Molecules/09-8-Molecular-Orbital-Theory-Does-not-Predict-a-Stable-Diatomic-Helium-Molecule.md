@@ -119,7 +119,7 @@ Hence, the anti-bonding σ_1s^* molecular orbital is more destabilized relative 
 
 The fact that the anti-bonding MO energy difference is larger than the bonding σ_1s molecular orbital energy difference is the true reason that helium dimer is not predicted to exist with a covalent bond. Of the four valence electrons in helium dimer, two will fill the bonding σ_1s molecular orbital, and the other two will fill the anti-bonding σ_1s^* molecular orbital. The two electrons in the bonding σ_1s molecular orbital will achieve some stabilization relative to the 1s atomic orbitals, but the two electrons in the anti-bonding σ_1s^* molecular orbital will achieve greater de-stabilization relative to their position in the atomic orbitals. The net result is a less stable molecule than if the electrons remained in their respective 1s atomic orbitals.
 
-The electrons in antibonding orbitals cancel (and exceed) the stabilization resulting from electrons in bonding orbitals. Consequently, any system that has equal numbers of bonding and antibonding electrons will have a bond order of 0, and it is predicted to be unstable and therefore not to exist in nature (at least as a covalently bonding complex).
+> The electrons in antibonding orbitals cancel (and exceed) the stabilization resulting from electrons in bonding orbitals. Consequently, any system that has equal numbers of bonding and antibonding electrons will have a bond order of 0, and it is predicted to be unstable and therefore not to exist in nature (at least as a covalently bonding complex).
 
 ### However, Van der Waals Helium Dimers do exist
 

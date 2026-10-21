@@ -25,11 +25,11 @@ You should recall that the Hα^1 line in the Balmer series at 656.279 nm was und
 
 Specifying the orbital configuration of an atom does not uniquely identify the electronic state of the atom because the orbital angular momentum, the spin angular momentum, and the total angular momentum are not precisely specified. For example in the hydrogen 2p^1 configuration, the electron can be in any of the three p-orbitals, ml = +1, 0, and –1, and have spins with ms = +1/2 or –1/2. Thus, there are 3 times 2 different possibilities or states. Also, the orbital and spin angular momentum of the electrons combine in multiple ways to produce angular momentum vectors that are characteristic of the entire atom not just individual electrons, and these different combinations can have different energies. This coupling of orbital and spin angular momentum occurs because both the electron spin and orbital motion produce magnetic dipole moments. As we have seen previously, the relationship between the angular momentum and the magnetic moment is given by the gyromagnetic ratio. These magnetic dipoles interact just like two tiny bar magnets attracting and repelling each other. This interaction is called spin-orbit interaction. The interaction energy is proportional to the scalar product of the magnetic dipole moments, which are proportional to the angular momentum vectors.
 
-E_(s-o)∝S·L
+E_(s-o) ∝ S·L
 
 with the following terms added to the Hamiltonian
 
-Ĥ_(s-o)∝Ŝ·L̂
+Ĥ_(s-o) ∝ Ŝ·L̂
 
 where the constant of proportionality is called the spin-orbit coupling constant. The spin-orbit interaction couples the spin motion and orbital motion of all the electrons together. This coupling means that exact wavefunctions are not eigenfunctions of the spin and orbital angular momentum operators separately. Rather the total angular momentum J = L + S, the vector sum of the spin and orbital angular momentum, is required to be coupled for a completely accurate description of the system. Trying to describe the coupled system in terms of spin and orbital angular momentum separately is analogous to trying to describe the positions of two coupled bar magnets independently. It cannot be done; their interaction must be taken into account (Figure 8.11.1 ).
 

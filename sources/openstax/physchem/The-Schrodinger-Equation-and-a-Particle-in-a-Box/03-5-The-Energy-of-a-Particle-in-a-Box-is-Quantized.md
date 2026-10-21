@@ -89,9 +89,9 @@ The state of lowest energy for a quantum system is termed its ground state.
 
 ### Zero Point Energy
 
-An interesting point is that E1 > 0, whereas the corresponding classical system would have a minimum energy of zero. This is a recurrent phenomenon in quantum mechanics. The residual energy of the ground state, that is, the energy in excess of the classical minimum, is known as zero point energy. In effect, the kinetic energy, hence the momentum, of a bound particle cannot be reduced to zero. The minimum value of momentum is found by equating E1 to p^2/2m, giving p_min = ±h/2L. This can be expressed as an uncertainty in momentum given by Δp≈h/L. Coupling this with the uncertainty in position, Δx≈L, from the size of the box, we can write
+An interesting point is that E1 > 0, whereas the corresponding classical system would have a minimum energy of zero. This is a recurrent phenomenon in quantum mechanics. The residual energy of the ground state, that is, the energy in excess of the classical minimum, is known as zero point energy. In effect, the kinetic energy, hence the momentum, of a bound particle cannot be reduced to zero. The minimum value of momentum is found by equating E1 to p^2/2m, giving p_min = ±h/2L. This can be expressed as an uncertainty in momentum given by Δp ≈ h/L. Coupling this with the uncertainty in position, Δx ≈ L, from the size of the box, we can write
 
-ΔxΔp≈h
+ΔxΔp ≈ h
 
 This is in accord with the Heisenberg uncertainty principle.
 
@@ -155,7 +155,7 @@ therefore,
 
 P(a, b) = (2/L)∫_a^b sin^2((3πx)/L) dx
 
-= (2/L)(x/2 − (L sin((6πx)/L))/(12π))|a^b
+= (2/L)(x/2 − (L sin((6πx)/L))/(12π))|_a^b
 
 = (b − a)/L − (1/(6π))[sin((6πb)/L) − sin((6πa)/L)]
 
@@ -224,7 +224,7 @@ Four labeled graphs (A, B, C, D) depicting different waveforms, including a stat
 
 Note that as n increased, the energy of the wavefunction increases (Equation (3.5.11)) and both the number of nodes and antinodes increase and the frequency of oscillation of the wavefunction increases.
 
-It is generally true in quantum systems (not just for particles in boxes) that the number of nodes in a wavefunction increases with the energy of the quantum state.
+> It is generally true in quantum systems (not just for particles in boxes) that the number of nodes in a wavefunction increases with the energy of the quantum state.
 
 ## Orthonormality of the Eigenstates
 

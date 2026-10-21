@@ -290,7 +290,7 @@ K_ion = ([BH^+])/(A_(H^+)[B])
 
 Taking the negative logarithm of both sides and rearranging gives the Henderson-Hasselbach equation for the indicator base, B:
 
-−K_ion = −logA_(H^+) − log(([BH^+])/([B]))
+−K_ion = −log A_(H^+) − log(([BH^+])/([B]))
 
 [Note: this derivation mixes up its signs: K_ion as written above is an association constant (the ionization constant is A_H^+[B]/[BH^+]), the left side here should be pK_ion = −log K_ion, and the line below should read pK_ion = Ho + log([BH^+]/[B]). The final result, Ho = pK_ion − log([BH^+]/[B]), is correct. The text is left as printed.]
 
@@ -335,7 +335,7 @@ This is particularly true in aqueous systems in which the energies and entropies
 
 Table 6.3.5.1: Thermochemical parameters for acid dissociation of selected inorganic acids.^(1,2)
 
-| Acid | ΔS° (J/mol-K) | −T × ΔS° (kJ/mol) | ΔH° (kJ/mol) | ΔG° (kJ/mol) | Ka (calcd. from ΔG° ) |
+| Acid | ΔS°; (J/mol-K) | −T × ΔS°; (kJ/mol) | ΔH°; (kJ/mol) | ΔG°; (kJ/mol) | Ka; (calcd. from ΔG° ) |
 | --- | --- | --- | --- | --- | --- |
 | HF | -102 | 30 | -16 | 14 | 6.8 × 10^−4 |
 | HCl | -35 | 10 | -57 | -47 | 10^8 |
@@ -456,7 +456,7 @@ This is confirmed by the values for the proton affinities and hydration energies
 
 Table 6.3.6.2 Contribution of heterolytic bond dissociation and hydration (hyd) energies to the enthalpy of dissociation for the hydrohalic acids.1
 
-| Acid | Proton Affinity (PA) H − A(g) → H^+(g) + A^−(g) (kJ/mol) | ΔH_hyd for HX HX(aq) → HX(g) (kJ/mol) | Δ H_hyd for H^+ H^+(g) → H^+(aq) (kJ/mol) | Δ H_hyd for X^− X^−(g) → X^−(aq) (kJ/mol) | Total (acid dissociation enthalpy) H − A(aq) → H^+(aq) + A^−(aq) (kJ/mol) |
+| Acid | Proton Affinity (PA); H − A(g) → H^+(g) + A^−(g); (kJ/mol) | ΔH_hyd for HX; HX(aq) → HX(g); (kJ/mol) | Δ H_hyd for H^+; H^+(g) → H^+(aq); (kJ/mol) | Δ H_hyd for X^−; X^−(g) → X^−(aq); (kJ/mol) | Total (acid dissociation enthalpy); H − A(aq) → H^+(aq) + A^−(aq); (kJ/mol) |
 | --- | --- | --- | --- | --- | --- |
 | HF | +1555 | +48 | -1091 | -524 | -12 |
 | HCl | +1390 | +18 | -1091 | -378 | -61 |
@@ -531,7 +531,7 @@ Note that the influence of central atom electronegativity on the strength of oxy
 
 [Note: corrected; the source prints "binary hydrides in Table 6.3.7.5," where this reads "binary hydrides in Table 6.3.3.1,". The table of binary hydride acidities is in 6.3.3.]
 
-HI > HBr > HCl≫HF
+HI > HBr > HCl ≫ HF
 
 The reason for this is that in the hydrogen halides, the bond to be broken (H-E bond) decreased in strength down the group, while in oxyacids the bond to be broken is always an O-H bond and so varies much less in strength with the electronegativity of the central atom.
 
@@ -562,19 +562,19 @@ Sulfurous acid should be more acidic. Since sulfur is more electronegative than 
 
 Oxoacids with multiple O-H bonds are called polyprotic since they can donate more than one hydrogen ion. In this case hydrogen ions are removed in successive ionization reactions. Examples include phosphoric and carbonic acid:
 
-H3PO4 ⇌ H^+ + H2PO4^-pK_a1 = 2.2
+H3PO4 ⇌ H^+ + H2PO4^-; pK_a1 = 2.2
 
-H2PO4^- ⇌ H^+ + HPO4^2-pK_a2 = 7.2
+H2PO4^- ⇌ H^+ + HPO4^2-; pK_a2 = 7.2
 
-HPO4^2- ⇌ H^+ + PO4^3-pK_a3 = 12.4
+HPO4^2- ⇌ H^+ + PO4^3-; pK_a3 = 12.4
 
 [Note: corrected; the source prints "HPO4 ⇌ H^+ + PO4^3-" where this reads "HPO4^2- ⇌ H^+ + PO4^3-". The third ionization of phosphoric acid is from HPO4^2-.]
 
-H2CO3 ⇌ H^+ + HCO3^-pK_a1 = 3.6
+H2CO3 ⇌ H^+ + HCO3^-; pK_a1 = 3.6
 
-HCO3^- ⇌ H^+ + CO3^2-pK_a2 = 10.3
+HCO3^- ⇌ H^+ + CO3^2-; pK_a2 = 10.3
 
-[Note: corrected; the source prints "CO3^2-pK_a1 = 10.3" where this reads "CO3^2-pK_a2 = 10.3". This is carbonic acid's second ionization.]
+[Note: corrected; the source prints "CO3^2-; pK_a1 = 10.3" where this reads "CO3^2-; pK_a2 = 10.3". This is carbonic acid's second ionization.]
 
 The dissociation constants for successive ionization constants decrease by about five orders of magnitude between successive hydrogen ions. This is reflected in Linus Pauling's rules for oxoacids and their oxyanions:
 

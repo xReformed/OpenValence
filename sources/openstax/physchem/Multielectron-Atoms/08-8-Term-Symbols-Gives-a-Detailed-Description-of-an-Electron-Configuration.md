@@ -157,7 +157,7 @@ We have not done a three electron case yet, but they are not hard. Find all the 
 
 ## The Total Angular Momentum Quantum Number J
 
-The total orbital angular momentum of an atom (measured in terms of l), and the total spin angular momentum of an atom (measure in S) combine to form total angular momentum, a number that is quantized by the number J. L and S do not necessarily have to be pointing in the same direction (Figure 8.8.1 ), so J can range from L + S to |L–S|.
+The total orbital angular momentum of an atom (measured in terms of l), and the total spin angular momentum of an atom (measure in S) combine to form total angular momentum, a number that is quantized by the number J. L and S do not necessarily have to be pointing in the same direction (Figure 8.8.1 ), so J can range from L + S to |L − S|.
 
 Figure 8.8.1: Illustration of L-S coupling. Total angular momentum J is purple, orbital L is blue, and spin S is green.
 A geometric illustration showing overlapping cones in various colors, labeled with letters S, J, and L.

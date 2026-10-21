@@ -65,7 +65,7 @@ Figure 12.6.2.1: Substitution reaction of trans-[PtL2Cl2]. (CC-BY-SA; Kathryn Ha
 
 For example, the rate of the reaction shown above depends heavily on the ligand, Y, as follows:
 
-most kinetically labile PR3 > CN^- > SCN^- > I^- > Br^- > N3^- > NO2^- > py > NH3 ~ Cl^- > CH3OH most kinetically inert
+most kinetically labile PR3 > CN^- > SCN^- > I^- > Br^- > N3^- > NO2^- > py > NH3 ∼ Cl^- > CH3OH most kinetically inert
 
 In general, ligands that would form the strongest bonds with Pt(II) due to their soft character or π-binding ability react fastest. The rate constants in the above series range by nearly ten orders of magnitude. This huge range of rate constants as a factor of Y suggests that M-Y bond formation is part of the rate limiting step. This is evidence for rate-determining association A or Ia.
 
@@ -89,7 +89,7 @@ The trans ligand also occupies a similar position to X and Y in the transition s
 
 [Note: corrected; the source prints "general follows" where this reads "generally follows". A typing error.]
 
-M-X most kinetically labile CN^- ~ CO ~ C2H4 > PH3 ~ SH2 > NO2^- > I^- > Br^- > py ~ NH3 > OH^- > H2O M-X most kinetically inert
+M-X most kinetically labile CN^- ∼ CO ∼ C2H4 > PH3 ∼ SH2 > NO2^- > I^- > Br^- > py ∼ NH3 > OH^- > H2O M-X most kinetically inert
 
 The effect of the trans ligand deserves a more thorough discussion, and will be addressed in the next section. It is mentioned here because it is evidence for the trigonal bipyramidal intermediate that was described earlier for associative substitution in square planar metal complexes.
 

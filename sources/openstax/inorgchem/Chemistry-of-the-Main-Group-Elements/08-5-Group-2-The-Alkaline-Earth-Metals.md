@@ -97,7 +97,7 @@ Table 8.5.1.2. Selected atomic properties of the alkaline earth metals and selec
 
 [Note: corrected; the source prints "atomic properties of the alkali metals" where this reads "atomic properties of the alkaline earth metals". This table is for group 2.]
 
-| Substance | Atomic Radius (Angstroms) | First Ionization Energy (kJ/mol) | Pauling Electronegativity | Density of the Solid (g/mL) |
+| Substance | Atomic Radius; (Angstroms) | First Ionization Energy; (kJ/mol) | Pauling Electronegativity | Density of the Solid; (g/mL) |
 | --- | --- | --- | --- | --- |
 | Alkaline Earth Metal |  |  |  |  |
 | Beryllium, Be | 1.05 | 899 | 1.57 | 1.85 |
@@ -209,7 +209,7 @@ Complex factors govern decomposition of the nitrates but, as shown in Table 8.5.
 
 Table 8.5.2.1. Decomposition temperatures of alkaline earth carbonates
 
-| Carbonate | Midpoint of decomposition range^2 (K) |
+| Carbonate | Midpoint of decomposition range^2; (K) |
 | --- | --- |
 | BeCO3 | not reported; unstable at room temperature (298 K) |
 | MgCO3 | 903 |

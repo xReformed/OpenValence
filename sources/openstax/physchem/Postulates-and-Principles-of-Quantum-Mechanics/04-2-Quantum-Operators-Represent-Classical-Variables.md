@@ -63,9 +63,9 @@ Table 4.2.1 : Some common Operators in Quantum Mechanics
 | Position (in 1D) | x | X̂ | Multiply by x |
 | Position (in 3D) | r⃗ | R̂ | Multiply by r⃗ |
 | Momentum (in 1D) | px | P̂x | -iħd/dx |
-| Momentum (in 3D) | p⃗ | P̂ | -iħ[î d/dx + ĵd/dy + k̂d/dz] |
+| Momentum (in 3D) | p⃗ | P̂ | -iħ[î d/dx + ĵd/dy + k̂ d/dz] |
 | Kinetic Energy (in 1D) | Tx | T̂x | (−ħ^2)/(2 m) · d^2/dx^2 |
-| Kinetic Energy (in 3D) | T | T̂ | ((−ħ^2)/(2 m))[d^2/dx^2 + d^2/dy^2 + d^2/dz^2] Which can be simplified to (−ħ^2)/(2 m)∇^2 |
+| Kinetic Energy (in 3D) | T | T̂ | ((−ħ^2)/(2 m))[d^2/dx^2 + d^2/dy^2 + d^2/dz^2]; Which can be simplified to; (−ħ^2)/(2 m)∇^2 |
 | Potential Energy (in 1D) | V(x) | V̂(x) | Multiply by V(x) |
 | Potential Energy (in 3D) | V(x, y, z) | V̂(x, y, z) | Multiply by V(x, y, z) |
 | Total Energy | E | Ê | ((−ħ^2)/(2 m))∇^2 + V(x, y, z) |

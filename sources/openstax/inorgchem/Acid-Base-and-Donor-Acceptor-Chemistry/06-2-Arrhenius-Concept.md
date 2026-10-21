@@ -47,7 +47,7 @@ Table 6.2.1: Values of Ka, pKa, Kb, and pKb for selected monoprotic acids.
 
 As can be seen from the table the K_a values for weak acids are less than one (otherwise they would not be weak) and vary over many orders of magnitude. Consequently it is customary to tabulate acid ionization constants as pK_a values:
 
-pKa = −logKa
+pKa = −log Ka
 
 Because pK_a values essentially place the K_a values on a negative base ten logarithmic scale, the stronger the weak acid, the lower its pK_a. Weak acids with larger K_a values will have lower pK_a values than weaker acids with smaller K_a. Moreover, each unit increase or decrease in the pK_a corresponds to a tenfold increase or decrease in the corresponding K_a.
 

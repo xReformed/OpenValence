@@ -656,7 +656,7 @@ CoCl2(en)(gly) is M(AA)(AB)C2
    2. Then systematically list out the other possible trans pairs by permuting the remaining trans arrangements. It can help to organize the permutations in a table, such as that shown below for an MABCDEF complex where A and B are assigned trans. In looking at the table notice how the second set of trans permutations is systematically varied. This helps ensure that no possibility is skipped.
    3. Go through the list of isomers and remove any duplicates you generated so far. For instance, notice in the table below that the last three stereoisomers are identical with the first three (e.g., stereoisomer 4 is identical to stereoisomer 3, 5 with 2, and 6 with 1).
 
-| Stereoisomer 1 | Stereoisomer 2 | Stereoisomer 3 | Stereoisomer 4 (same as isomer 3) | Stereoisomer 5 (same as isomer 2) | Stereoisomer 6 (same as isomer 1) |
+| Stereoisomer 1 | Stereoisomer 2 | Stereoisomer 3 | Stereoisomer 4; (same as isomer 3) | Stereoisomer 5; (same as isomer 2) | Stereoisomer 6; (same as isomer 1) |
 | --- | --- | --- | --- | --- | --- |
 | trans AB (fixed) | trans AB (fixed) | trans AB (fixed) | trans AB (fixed) | trans AB (fixed) | trans AB (fixed) |
 | trans CD | trans CE | trans CF | trans DE | trans DF | trans EF |

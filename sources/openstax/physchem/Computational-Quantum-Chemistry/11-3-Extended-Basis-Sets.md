@@ -13,7 +13,7 @@ Today, there are hundreds of basis sets composed of Gaussian Type Orbitals (GTOs
 
 A minimum basis set is one in which a single basis function is used for each orbital in a Hartree-Fock calculation on the atom. However, for atoms such as lithium, basis functions of p type are added to the basis functions corresponding to the 1s and 2s orbitals of each atom. For example, each atom in the first row of the periodic system (Li - Ne) would have a basis set of five functions (two s functions and three p functions).
 
-In a minimum basis set, a single basis function is used for each atomic orbital on each constituent atom in the system.
+> In a minimum basis set, a single basis function is used for each atomic orbital on each constituent atom in the system.
 
 The most common minimal basis set is STO-nG, where n is an integer. This n value represents the number GTOs used to approximate the Slater Type orbital (STO) for both core and valence orbitals. Minimal basis sets typically give rough results that are insufficient for research-quality publication, but are much cheaper (less calculations requires) than the larger basis sets discussed below. Commonly used minimal basis sets of this type are: STO-3G, STO-4G, and STO-6G.
 

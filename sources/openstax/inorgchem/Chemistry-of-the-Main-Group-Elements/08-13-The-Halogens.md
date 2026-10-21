@@ -66,13 +66,13 @@ Table 8.13.1.1: Properties of Group 17 (The Halogens)
 | Melting point, /K | 53.53 | 171.6 | 265.8 | 386.85 |
 | Boiling point, /K | 85.01 | 239.18 | 331.93 | 457.5 |
 | Enthalpy of atomization, Δ_aH° (298K) / kJ mol^-1 | 79.08 | 121.8 | 111.7 | 106.7 |
-| Standard enthalpy of fusion of X2, Δ_fusH°(mp) / kJ mol^-1 | 0.51 | 6.4 | 10.57 | 15.52 |
-| Standard enthalpy of vaporization of X2, Δ_vapH°(bp) / kJ mol^-1 | 6.62 | 20.41 | 29.96 | 41.57 |
+| Standard enthalpy of fusion of X2, Δ_fus H°(mp) / kJ mol^-1 | 0.51 | 6.4 | 10.57 | 15.52 |
+| Standard enthalpy of vaporization of X2, Δ_vap H°(bp) / kJ mol^-1 | 6.62 | 20.41 | 29.96 | 41.57 |
 | First ionization energy, IE1 / kJ mol^-1 | 1681 | 1251.1 | 1139.9 | 1008.4 |
-| Δ_EAH1°(298K) / kJ mol^-1 | -333 | -348 | -324 | -295 |
-| Δ_hydH°(X^-,g) / kJ mol^-1 | -504 | -361 | -330 | -285 |
-| Δ_hydS°(X^-,g) / JK^-1 mol^-1 | -150 | -90 | -70 | -50 |
-| Δ_hydG°(X^-,g) / kJ mol^-1 | -459 | -334 | -309 | -270 |
+| Δ_EA H1°(298K) / kJ mol^-1 | -333 | -348 | -324 | -295 |
+| Δ_hyd H°(X^-,g) / kJ mol^-1 | -504 | -361 | -330 | -285 |
+| Δ_hyd S°(X^-,g) / JK^-1 mol^-1 | -150 | -90 | -70 | -50 |
+| Δ_hyd G°(X^-,g) / kJ mol^-1 | -459 | -334 | -309 | -270 |
 | Standard redox potential, E°(X2 /2X^-) /V | 2.87 | 1.36 | 1.09 | 0.54 |
 | Covalent radius, r_cov = ½ X-X bond length /pm | 72 | 100 | 114.2 | 133.3 |
 | Ionic radius, r_ion for X^- /pm | 133 | 181 | 196 | 220 |
@@ -129,8 +129,8 @@ Figure 4:
 The most characteristic chemical feature of the halogens is their oxidizing strength. Fluorine has the strongest oxidizing ability, so that a simple chemical preparation is almost impossible and it must be prepared by electrolysis. Note that since fluorine reacts explosively with water, oxidizing it to dioxygen, finding reaction conditions for any reaction can be difficult. When fluorine is combined with other elements they generally exhibit high oxidation states. Chlorine is the next strongest oxidizing agent, but it can be prepared by chemical oxidation. Most elements react directly with chlorine, bromine and iodine, with decreasing reactivity going down the group, but often the reaction must be activated by heat or UV light. [2] The energy changes in redox process are:
 
 1. Enthalpy of atomization,
-2. Δ_EAH1,
-3. Δ_hydH°(X^-,g)
+2. Δ_EA H1,
+3. Δ_hyd H°(X^-,g)
 
 The redox potential, E°, X2/2X^-, measures a free-energy change, usually dominated by the ΔH term. The values in the Table below show that there is a decrease in oxidizing strength proceeding down the group (2.87, 1.36, 1.09, 0.54 V). This can be explained by comparing the steps shown above.
 
@@ -140,13 +140,13 @@ The redox potential, E°, X2/2X^-, measures a free-energy change, usually domina
 
 Note that only F2 and Cl2 are gases in their natural states, so the energies associated with atomization of Br2 and I2 require converting the liquid or solid to gas first.
 
-- 2) Δ_EAH1 is the energy liberated when the atom is converted into a negative ion and is related to the Electron Affinity
+- 2) Δ_EA H1 is the energy liberated when the atom is converted into a negative ion and is related to the Electron Affinity
 
 X_(g) + e^− → X_(g)^−
 
 Addition of an electron to the small F atom is accompanied by larger e^-/e^- repulsion than is found for the larger Cl, Br or I atoms. This would suggest that the process for F should be less exothermic than for Cl and not fit the trend that shows a general decrease going down the group.
 
-- 3) Δ_hydH°(X^-,g) is the energy liberated upon the hydration of the ion, the Hydration energy.
+- 3) Δ_hyd H°(X^-,g) is the energy liberated upon the hydration of the ion, the Hydration energy.
 
 X_(g)^− + H2O → X_(aq)^−
 
@@ -156,16 +156,16 @@ The overall reaction is then:
 
 Table 8.13.1.2
 
-| Halogen | atomization energy; (kJ mol^-1) | Δ_EAH1; (kJ mol^-1) | hydration enthalpy; (kJ mol^-1) | overall; (kJ mol^-1) |
+| Halogen | atomization energy; (kJ mol^-1) | Δ_EA H1; (kJ mol^-1) | hydration enthalpy; (kJ mol^-1) | overall; (kJ mol^-1) |
 | --- | --- | --- | --- | --- |
 | F | +79.08 | -333 | -504 | -758 |
 | Cl | +121.8 | -348 | -361 | -587 |
 | Br | +111.7 | -324 | -330 | -542 |
 | I | +106.7 | -295 | -285 | -473 |
 
-This shows a very negative energy change for the fluoride compared to the others in the group. This comes about because of two main factors: the high hydration energy and the low atomization energy. For F2 2) is less than for Cl2, but since the energy needed to break the F-F bond is also less and the hydration more, the total energy drop is much greater. In spite of their lower atomization energies, Br2 and I2 are weaker oxidizing agents than Cl2 and this is due to their smaller Δ_EAH1 and smaller Δ_hydH°.
+This shows a very negative energy change for the fluoride compared to the others in the group. This comes about because of two main factors: the high hydration energy and the low atomization energy. For F2 2) is less than for Cl2, but since the energy needed to break the F-F bond is also less and the hydration more, the total energy drop is much greater. In spite of their lower atomization energies, Br2 and I2 are weaker oxidizing agents than Cl2 and this is due to their smaller Δ_EA H1 and smaller Δ_hyd H°.
 
-It can be seen that the Δ_EAH1 value for fluorine is in between those for chlorine and bromine and so this value alone does not provide a good explanation for the observed variation.
+It can be seen that the Δ_EA H1 value for fluorine is in between those for chlorine and bromine and so this value alone does not provide a good explanation for the observed variation.
 
 Each of the halogens is able to oxidize any of the heavier halogens situated below it in the group. They can oxidize hydrogen and nonmetals such as:
 
@@ -1741,7 +1741,7 @@ Chlorine, which is similar to fluorine but not as reactive, was prepared by Shee
 | Heat of Vaporization | 68 g cal/g |
 | Heat of Fusion | 22 g cal/g |
 | Critical Temperature | 114°C |
-| Standard Electron Potential Cl2 + 2e^− → 2Cl^− | 1.358V |
+| Standard Electron Potential; Cl2 + 2e^− → 2Cl^− | 1.358V |
 
 [Note: corrected; the source prints "[Na]3s^2 3p^5" where this reads "[Ne]3s^2 3p^5". Chlorine's core is the neon configuration.]
 
