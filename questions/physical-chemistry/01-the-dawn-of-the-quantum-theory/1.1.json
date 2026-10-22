@@ -1,0 +1,570 @@
+[
+  {
+    "id": "pc1-blackbody-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a blackbody?",
+    "choices": [
+      {
+        "text": "An object that absorbs all the radiation that falls on it, at every wavelength",
+        "correct": true
+      },
+      {
+        "text": "An object that gives off no radiation at all",
+        "why": "All matter above absolute zero emits radiation. A blackbody absorbs everything, and so is also a perfect emitter."
+      },
+      {
+        "text": "An object that reflects all the radiation that falls on it",
+        "why": "That describes a perfect mirror. A blackbody absorbs all radiation instead of reflecting it."
+      },
+      {
+        "text": "Any object that is painted black",
+        "why": "A blackbody is defined by absorbing all radiation at all wavelengths, not by its paint. A hole in an oven is a better example."
+      }
+    ],
+    "explanation": "A blackbody absorbs all radiation falling on it, at all wavelengths. Because a body emits as well as it absorbs, a blackbody is also a perfect emitter, and its emission depends only on its temperature."
+  },
+  {
+    "id": "pc1-blackbody-color-order",
+    "type": "multiple-choice",
+    "prompt": "As a blackbody gets hotter, in what order does the color of its glow change?",
+    "choices": [
+      {
+        "text": "Dull red, then yellow, then white, then blue-white",
+        "correct": true
+      },
+      {
+        "text": "Blue-white, then white, then yellow, then dull red",
+        "why": "That is the reverse. A hotter body emits more at shorter wavelengths, so the color moves from red toward blue."
+      },
+      {
+        "text": "It stays dull red and only gets brighter",
+        "why": "The peak moves to shorter wavelengths as the temperature rises, so the color changes, not just the brightness."
+      },
+      {
+        "text": "Blue first, then red, then white",
+        "why": "The color moves steadily from red toward blue as the temperature rises; it does not jump around."
+      }
+    ],
+    "explanation": "A blackbody that is just hot enough to see glows dull red. As its temperature rises it becomes yellow, white, and finally blue-white, because the peak of its emission moves to shorter wavelengths."
+  },
+  {
+    "id": "pc1-stefan-boltzmann-doubling",
+    "type": "numeric",
+    "prompt": "The Stefan-Boltzmann law says P = σT^4. If a blackbody's absolute temperature doubles, by what factor does the power it radiates per square meter increase?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "P is proportional to T^4, so doubling T multiplies P by 2^4 = 16."
+  },
+  {
+    "id": "pc1-stefan-boltzmann-1000k",
+    "type": "numeric",
+    "prompt": "Use P = σT^4 with σ = 5.67 × 10^−8 W m^−2 K^−4. How much power does each square meter of a blackbody at 1000 K radiate, in W/m^2?",
+    "answer": 56700,
+    "unit": "W/m^2",
+    "explanation": "P = (5.67 × 10^−8 W m^−2 K^−4)(1000 K)^4 = (5.67 × 10^−8)(10^12) W/m^2 = 5.67 × 10^4 W/m^2, or 56,700 W/m^2."
+  },
+  {
+    "id": "pc1-wien-direction",
+    "type": "multiple-choice",
+    "prompt": "According to Wien's displacement law, what happens to the peak wavelength of a blackbody's radiation when its temperature rises?",
+    "choices": [
+      {
+        "text": "It gets shorter",
+        "correct": true
+      },
+      {
+        "text": "It gets longer",
+        "why": "λ_max = b/T, so a higher temperature gives a smaller (shorter) peak wavelength."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The peak moves with temperature: λ_max = b/T."
+      },
+      {
+        "text": "The spectrum stops having a peak",
+        "why": "Every blackbody spectrum has a peak; it just moves to shorter wavelengths as T rises."
+      }
+    ],
+    "explanation": "Wien's law is λ_max = b/T: the peak wavelength is inversely proportional to the absolute temperature, so hotter objects peak at shorter wavelengths and look bluer."
+  },
+  {
+    "id": "pc1-wien-peak",
+    "type": "numeric",
+    "prompt": "Use Wien's law, λ_max = b/T, with b = 2.898 × 10^−3 m K. What is the peak wavelength of a blackbody at 2898 K, in micrometers (μm)?",
+    "answer": 1.0,
+    "unit": "μm",
+    "explanation": "λ_max = (2.898 × 10^−3 m K)/(2898 K) = 1.000 × 10^−6 m = 1.00 μm."
+  },
+  {
+    "id": "pc1-not-a-blackbody",
+    "type": "multiple-choice",
+    "prompt": "Which of these is NOT a blackbody radiator?",
+    "choices": [
+      {
+        "text": "A fluorescent light tube",
+        "correct": true
+      },
+      {
+        "text": "An incandescent light bulb",
+        "why": "The section lists incandescent bulbs as blackbodies: their light comes from the thermal activity of the hot filament."
+      },
+      {
+        "text": "A star",
+        "why": "Stars are given as examples of blackbodies; the Sun is an excellent approximation of one."
+      },
+      {
+        "text": "A hot stove top",
+        "why": "The section lists hot stove tops as blackbodies: their emission depends only on temperature."
+      }
+    ],
+    "explanation": "A blackbody gives a continuous spectrum that depends only on temperature, like an incandescent bulb, a star, or a hot stove top. A fluorescent tube instead emits a mixture of discrete bands at particular wavelengths."
+  },
+  {
+    "id": "pc1-ultraviolet-catastrophe",
+    "type": "multiple-choice",
+    "prompt": "What was the \"ultraviolet catastrophe\"?",
+    "choices": [
+      {
+        "text": "The classical Rayleigh-Jeans law predicted that the energy radiated grows without limit at high frequencies, so a blackbody would give off infinite energy",
+        "correct": true
+      },
+      {
+        "text": "Ultraviolet light from the Sun destroying the ozone layer",
+        "why": "The name refers to a failed theory, not to an event: the classical law broke down toward the ultraviolet."
+      },
+      {
+        "text": "Planck's law failing to fit the data at long, infrared wavelengths",
+        "why": "Planck's law fits the data at all wavelengths. The Rayleigh-Jeans law worked at low frequencies but failed toward the ultraviolet."
+      },
+      {
+        "text": "Blackbodies giving off no ultraviolet light at any temperature",
+        "why": "The catastrophe was the opposite: the classical theory predicted ever more radiation at high frequencies."
+      }
+    ],
+    "explanation": "The Rayleigh-Jeans law, built on classical physics, predicted an energy density that keeps growing toward high frequencies, so the total radiated energy would be infinite. Experiment showed a curve with a peak. Ehrenfest called this failure the ultraviolet catastrophe."
+  },
+  {
+    "id": "pc1-perfect-absorber",
+    "type": "multiple-choice",
+    "prompt": "How did Kirchhoff suggest making a nearly perfect absorber (and so a perfect emitter) in the laboratory?",
+    "choices": [
+      {
+        "text": "A small hole in the side of a large box or oven",
+        "correct": true
+      },
+      {
+        "text": "A polished silver sphere",
+        "why": "A polished surface reflects most of the light falling on it. A small hole in a box traps the light instead."
+      },
+      {
+        "text": "A thin sheet of black paper",
+        "why": "Paper absorbs well but not perfectly. Radiation entering a small hole in a large box bounces around inside and hardly ever gets out."
+      },
+      {
+        "text": "A glass prism",
+        "why": "A prism separates light into colors; it is not an absorber. Kirchhoff's idea was a small hole in a large box."
+      }
+    ],
+    "explanation": "Radiation that goes through a small hole in a large box bounces around inside, losing some energy at every bounce, and has little chance of getting out again. So the hole is an excellent absorber, and the radiation coming out of a hole in a hot oven is a good example of blackbody radiation."
+  },
+  {
+    "id": "pc1-thermal-radiation-emitters",
+    "type": "multiple-choice",
+    "prompt": "Which objects give off thermal (electromagnetic) radiation?",
+    "choices": [
+      {
+        "text": "All normal matter above absolute zero",
+        "correct": true
+      },
+      {
+        "text": "Only objects hot enough to glow",
+        "why": "Objects too cool to glow still radiate, mostly in the infrared, which the eye cannot see. All matter above absolute zero emits."
+      },
+      {
+        "text": "Only objects that are black",
+        "why": "Color does not decide whether a body emits. Any normal matter above absolute zero gives off thermal radiation."
+      },
+      {
+        "text": "Only objects that have absorbed sunlight",
+        "why": "Thermal radiation comes from a body's own internal thermal energy, not from stored sunlight. All matter above absolute zero emits it."
+      }
+    ],
+    "explanation": "All normal matter above absolute zero emits electromagnetic radiation. The body converts some of its internal thermal energy into electromagnetic energy, so this is called thermal radiation."
+  },
+  {
+    "id": "pc1-blackbody-room-temp-black",
+    "type": "multiple-choice",
+    "prompt": "Why does a blackbody at room temperature look black?",
+    "choices": [
+      {
+        "text": "It radiates mostly infrared, which the eye cannot see",
+        "correct": true
+      },
+      {
+        "text": "It gives off no radiation at room temperature",
+        "why": "Every body above absolute zero radiates. At room temperature the radiation is mostly infrared, which is invisible to us."
+      },
+      {
+        "text": "It radiates mostly ultraviolet, which the eye cannot see",
+        "why": "A cool body radiates at long wavelengths, not short ones. Its radiation is mostly infrared."
+      },
+      {
+        "text": "It reflects all the visible light that falls on it",
+        "why": "A body that reflected all visible light would look white. A blackbody absorbs light, and what it emits at room temperature is mostly infrared."
+      }
+    ],
+    "explanation": "A room-temperature blackbody does radiate, but most of that energy is infrared, which the human eye cannot perceive. It starts to glow visibly, dull red, only when it is much hotter."
+  },
+  {
+    "id": "pc1-kirchhoff-emit-absorb",
+    "type": "multiple-choice",
+    "prompt": "According to Kirchhoff, how well does a body emit radiation at a given temperature and frequency, compared with how well it absorbs the same radiation?",
+    "choices": [
+      {
+        "text": "Exactly as well as it absorbs it",
+        "correct": true
+      },
+      {
+        "text": "Better than it absorbs it",
+        "why": "Then the body would cool below a room at the same temperature all on its own. Kirchhoff showed that emission and absorption must match exactly."
+      },
+      {
+        "text": "Less well than it absorbs it",
+        "why": "Then the body would warm up while the room around it cooled, which breaks the second law of thermodynamics. Emission and absorption must match."
+      },
+      {
+        "text": "The two have no connection",
+        "why": "They are tightly linked: a body emits radiation of a given frequency and temperature exactly as well as it absorbs it."
+      }
+    ],
+    "explanation": "Kirchhoff proved that a body emits radiation at a given temperature and frequency exactly as well as it absorbs the same radiation. So a perfect absorber, a blackbody, is also a perfect emitter."
+  },
+  {
+    "id": "pc1-kirchhoff-second-law",
+    "type": "multiple-choice",
+    "prompt": "Kirchhoff argued that a body that absorbed radiation better than it emitted would get hotter while the room around it, at first at the same temperature, grew colder. Which law would that break?",
+    "choices": [
+      {
+        "text": "The second law of thermodynamics",
+        "correct": true
+      },
+      {
+        "text": "The first law of thermodynamics",
+        "why": "Energy would still be conserved, just moved from the room into the body. Heat flowing on its own from a colder place to a hotter one is what breaks the second law."
+      },
+      {
+        "text": "Newton's second law of motion",
+        "why": "Newton's laws are about forces and motion. A body getting hotter than its surroundings on its own breaks the second law of thermodynamics."
+      },
+      {
+        "text": "The law of conservation of mass",
+        "why": "No mass is created or destroyed here. The problem is heat flowing on its own from a colder room into a hotter body, which breaks the second law of thermodynamics."
+      }
+    ],
+    "explanation": "If a body absorbed better than it emitted, it would get hotter and the room colder with no outside help, contradicting the second law of thermodynamics. So a body must emit exactly as well as it absorbs."
+  },
+  {
+    "id": "pc1-blackbody-spectrum-depends",
+    "type": "multiple-choice",
+    "prompt": "The spectrum of a blackbody depends on which property of the body?",
+    "choices": [
+      {
+        "text": "Only its temperature",
+        "correct": true
+      },
+      {
+        "text": "The material it is made of",
+        "why": "Blackbody radiation comes from the thermal activity of the material, not the nature of the material. Only the temperature matters."
+      },
+      {
+        "text": "How it was heated",
+        "why": "The section says the radiation does not depend on how the body got thermally excited, only on its temperature."
+      },
+      {
+        "text": "Its size and shape",
+        "why": "A bigger body gives off more radiation in total, but the shape of its spectrum depends only on its temperature."
+      }
+    ],
+    "explanation": "Blackbody radiation has a continuous spectrum that depends only on the body's temperature. It comes from the thermal activity of the material, not from the kind of material or how it was heated."
+  },
+  {
+    "id": "pc1-wien-lummer-grating",
+    "type": "multiple-choice",
+    "prompt": "In 1895 Wien and Lummer measured the radiation coming out of a small hole in a closed oven. What did they pass the beam through to send different wavelengths in different directions?",
+    "choices": [
+      {
+        "text": "A diffraction grating",
+        "correct": true
+      },
+      {
+        "text": "A converging lens",
+        "why": "A lens focuses a beam; it does not spread the wavelengths apart for measurement. They used a diffraction grating."
+      },
+      {
+        "text": "A polarizing filter",
+        "why": "A polarizer selects a direction of vibration, not a wavelength. A diffraction grating sends different wavelengths in different directions."
+      },
+      {
+        "text": "A sheet of black paper",
+        "why": "Black paper would simply absorb the beam. A diffraction grating was needed to spread the wavelengths out onto a screen."
+      }
+    ],
+    "explanation": "Wien and Lummer passed the beam from the hole through a diffraction grating, which sent different wavelengths in different directions onto a screen. A detector moved along the screen measured how much energy came out in each wavelength range."
+  },
+  {
+    "id": "pc1-blackbody-phenomenological-laws",
+    "type": "multiple-choice",
+    "prompt": "The Stefan-Boltzmann law and Wien's displacement law are called phenomenological laws. What does that mean?",
+    "choices": [
+      {
+        "text": "They are based on experimental observations",
+        "correct": true
+      },
+      {
+        "text": "They were derived from the new quantum theory",
+        "why": "Both were found before quantum theory existed. Phenomenological means they came from experimental observations, not from basic principles."
+      },
+      {
+        "text": "They are guesses that were never tested",
+        "why": "They summarize careful measurements of blackbody curves. Phenomenological means based on observation."
+      },
+      {
+        "text": "They describe only the ultraviolet region",
+        "why": "They describe the whole blackbody curve: its total power and where its peak lies. Phenomenological means formulated from experiments."
+      }
+    ],
+    "explanation": "A phenomenological law is formulated from experimental observations, not from basic principles of nature. Measuring blackbody curves at different temperatures gave both the Stefan-Boltzmann law and Wien's displacement law."
+  },
+  {
+    "id": "pc1-stefan-boltzmann-p-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the Stefan-Boltzmann law, P = σT^4, what does P stand for?",
+    "choices": [
+      {
+        "text": "Total power radiated per square meter",
+        "correct": true
+      },
+      {
+        "text": "Power radiated at the peak wavelength only",
+        "why": "P adds up the radiation over all frequencies, not just the peak."
+      },
+      {
+        "text": "Total power radiated by the whole object",
+        "why": "P is per square meter of surface, in W/m^2. For a whole object, multiply P by its surface area."
+      },
+      {
+        "text": "Pressure of the radiation inside the oven",
+        "why": "Here P is a power per square meter of surface, in W/m^2, not a pressure."
+      }
+    ],
+    "explanation": "P is the total power, added up over all frequencies, radiated from one square meter of the surface, in W/m^2. To get the power from a whole object, multiply P by its surface area."
+  },
+  {
+    "id": "pc1-stefan-boltzmann-area-under-curve",
+    "type": "multiple-choice",
+    "prompt": "When blackbody curves measured at different temperatures are compared, which feature shows the Stefan-Boltzmann law?",
+    "choices": [
+      {
+        "text": "The area under the curve grows quickly as T rises",
+        "correct": true
+      },
+      {
+        "text": "The peak moves to shorter wavelengths as T rises",
+        "why": "That shift is Wien's displacement law. The Stefan-Boltzmann law is about the total power, the area under the curve."
+      },
+      {
+        "text": "Each curve is continuous, not a set of lines",
+        "why": "That shows the light is blackbody radiation rather than the bands of a fluorescent tube. The T^4 law shows up in how the area under the curve grows."
+      },
+      {
+        "text": "The curve rises without limit toward the ultraviolet",
+        "why": "That is the classical Rayleigh-Jeans prediction, not what is measured. Measured curves have a peak, and their area grows as T^4."
+      }
+    ],
+    "explanation": "The Stefan-Boltzmann law is about the total power, summed over all frequencies, which is the area under a blackbody curve. That area grows as T^4, so it rises steeply with temperature."
+  },
+  {
+    "id": "pc1-wien-frequency-proportional",
+    "type": "multiple-choice",
+    "prompt": "According to Wien's law, how does ν_max, the frequency at which a blackbody's emission is most intense, depend on its absolute temperature T?",
+    "choices": [
+      {
+        "text": "ν_max is directly proportional to T",
+        "correct": true
+      },
+      {
+        "text": "ν_max is inversely proportional to T",
+        "why": "That is true of the peak wavelength, λ_max = b/T. The peak frequency goes up with temperature: ν_max ∝ T."
+      },
+      {
+        "text": "ν_max is proportional to T^4",
+        "why": "T^4 belongs to the Stefan-Boltzmann law for the total power. The peak frequency is simply proportional to T."
+      },
+      {
+        "text": "ν_max does not depend on T",
+        "why": "The peak moves when the oven temperature changes: ν_max rises in proportion to T."
+      }
+    ],
+    "explanation": "In frequency form, Wien's law is ν_max ∝ T, with a proportionality constant of 5.879 × 10^10 Hz/K. Since a higher frequency means a shorter wavelength, the peak wavelength falls as T rises."
+  },
+  {
+    "id": "pc1-wien-uv-peak-hot-body",
+    "type": "multiple-choice",
+    "prompt": "For a blackbody at 10,000 K or more, in which region does the peak of its emission lie?",
+    "choices": [
+      {
+        "text": "The ultraviolet",
+        "correct": true
+      },
+      {
+        "text": "The infrared",
+        "why": "Cool bodies, such as objects at room temperature, peak in the infrared. Very hot bodies peak at short wavelengths, beyond the visible in the ultraviolet."
+      },
+      {
+        "text": "The red end of the visible",
+        "why": "A body that just glows deep red is at around 900 K. At 10,000 K the peak has moved past blue into the ultraviolet."
+      },
+      {
+        "text": "The radio region",
+        "why": "Radio waves are even longer than infrared. Hotter bodies peak at shorter wavelengths, so at 10,000 K the peak is in the ultraviolet."
+      }
+    ],
+    "explanation": "As T rises, the glow changes from deep red through orange and yellow to blue. At very high temperatures, 10,000 K or more, the peak has moved beyond the visible into the ultraviolet."
+  },
+  {
+    "id": "pc1-wien-sun-prism-all-colors",
+    "type": "multiple-choice",
+    "prompt": "The Sun's emission peaks near yellow, yet sunlight passed through a prism shows every color of the rainbow. Why?",
+    "choices": [
+      {
+        "text": "Thermal radiation spans a wide range of wavelengths",
+        "correct": true
+      },
+      {
+        "text": "The prism adds the missing colors to the light",
+        "why": "A prism only spreads out colors that are already in the light. Thermal radiation covers a wide range of wavelengths; λ_max is just the peak."
+      },
+      {
+        "text": "The Sun's peak keeps moving through all the colors",
+        "why": "The Sun's temperature, and so its peak, stays about the same. The other colors are there because thermal radiation is spread over a wide range of wavelengths."
+      },
+      {
+        "text": "Earth's air turns yellow light into the other colors",
+        "why": "The atmosphere scatters some sunlight but does not make new colors. The Sun's thermal radiation already contains a wide range of wavelengths."
+      }
+    ],
+    "explanation": "Thermal radiation always spans a wide range of wavelengths, and Wien's law gives only the single wavelength at the peak. So sunlight contains all the colors, even though its peak is near yellow."
+  },
+  {
+    "id": "pc1-rayleigh-jeans-continuous-energy",
+    "type": "multiple-choice",
+    "prompt": "What did Rayleigh and Jeans assume about the energy of the atomic oscillations that produce blackbody radiation?",
+    "choices": [
+      {
+        "text": "It could take any value, changing continuously",
+        "correct": true
+      },
+      {
+        "text": "It came only in whole-number multiples of hν",
+        "why": "That was Planck's later quantum idea. Rayleigh and Jeans used classical physics, in which energy can take any continuous value."
+      },
+      {
+        "text": "It was fixed by the chemical makeup of the walls",
+        "why": "Their key assumption was about continuity: like position or acceleration, energy was assumed to take any value."
+      },
+      {
+        "text": "It was zero for all frequencies above the visible",
+        "why": "Their law in fact predicts more and more energy at high frequencies. Their key assumption was that energy is continuous."
+      }
+    ],
+    "explanation": "Rayleigh and Jeans built their law on classical physics, which assumed that the energy of atomic oscillations could take any continuous value, with infinitesimal amounts added as the frequency increased. That assumption is what failed."
+  },
+  {
+    "id": "pc1-rayleigh-jeans-low-frequency",
+    "type": "multiple-choice",
+    "prompt": "In which part of the blackbody spectrum did the Rayleigh-Jeans law agree with experiment?",
+    "choices": [
+      {
+        "text": "At low frequencies (long wavelengths)",
+        "correct": true
+      },
+      {
+        "text": "At high frequencies, in the ultraviolet",
+        "why": "That is exactly where it failed: it predicted energy growing without limit toward the ultraviolet."
+      },
+      {
+        "text": "At every frequency",
+        "why": "It matched only at low frequencies. Toward the ultraviolet it predicted infinite energy, the ultraviolet catastrophe."
+      },
+      {
+        "text": "Only right at the peak of the curve",
+        "why": "The Rayleigh-Jeans curve has no peak at all; it keeps rising. It matched experiment only at low frequencies."
+      }
+    ],
+    "explanation": "Rayleigh and Jeans developed an equation that explained blackbody radiation at low frequencies. At high frequencies its prediction kept rising while the measured curve fell, which was the ultraviolet catastrophe."
+  },
+  {
+    "id": "pc1-ultraviolet-catastrophe-ehrenfest",
+    "type": "multiple-choice",
+    "prompt": "Who gave the failure of the Rayleigh-Jeans law the name \"ultraviolet catastrophe\"?",
+    "choices": [
+      {
+        "text": "Ehrenfest",
+        "correct": true
+      },
+      {
+        "text": "Planck",
+        "why": "Planck solved the problem with his quantum hypothesis. The name came from Ehrenfest."
+      },
+      {
+        "text": "Rayleigh",
+        "why": "Rayleigh helped develop the law that failed. Ehrenfest later dubbed its failure the ultraviolet catastrophe."
+      },
+      {
+        "text": "Kirchhoff",
+        "why": "Kirchhoff showed that a body emits as well as it absorbs and proposed the hole-in-a-box absorber. The name came from Ehrenfest."
+      }
+    ],
+    "explanation": "The Rayleigh-Jeans law predicted an energy density that grows without limit toward the ultraviolet. Ehrenfest later dubbed this failure the \"ultraviolet catastrophe\"."
+  },
+  {
+    "id": "pc1-stefan-boltzmann-81-times",
+    "type": "numeric",
+    "prompt": "The Stefan-Boltzmann law says P = σT^4. By what factor must a blackbody's absolute temperature increase for it to radiate 81 times as much power per square meter?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "P is proportional to T^4, so the temperature factor x must satisfy x^4 = 81. Since 3^4 = 3 × 3 × 3 × 3 = 81, the temperature must triple."
+  },
+  {
+    "id": "pc1-wien-filament-3000k",
+    "type": "numeric",
+    "prompt": "Use Wien's law, λ_max = b/T, with b = 2.898 × 10^−3 m·K. What is the peak wavelength of a light-bulb filament at 3000 K, in nm?",
+    "answer": 966,
+    "unit": "nm",
+    "explanation": "λ_max = (2.898 × 10^−3 m·K)/(3000 K) = 9.66 × 10^−7 m = 966 nm. That is longer than 700 nm, so the peak is in the infrared."
+  },
+  {
+    "id": "pc1-wien-star-temperature",
+    "type": "numeric",
+    "prompt": "Use Wien's law in the form T = b/λ_max, with b = 2.898 × 10^−3 m·K. A star's emission peaks at 500 nm (5.00 × 10^−7 m). What is its surface temperature, in K?",
+    "answer": 5796,
+    "unit": "K",
+    "explanation": "T = (2.898 × 10^−3 m·K)/(5.00 × 10^−7 m) = 5796 K, about 5800 K."
+  },
+  {
+    "id": "pc1-wien-peak-frequency-1000k",
+    "type": "numeric",
+    "prompt": "Wien's law in frequency form is ν_max = (5.879 × 10^10 Hz/K) × T. At what frequency, in Hz, is the emission of a blackbody at 1000 K most intense? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 58790000000000.0,
+    "unit": "Hz",
+    "explanation": "ν_max = (5.879 × 10^10 Hz/K) × (1000 K) = 5.879 × 10^13 Hz."
+  },
+  {
+    "id": "pc1-rayleigh-jeans-triple-frequency",
+    "type": "numeric",
+    "prompt": "The Rayleigh-Jeans law gives ρ(ν, T) = (8πk_B Tν^2)/c^3. At a fixed temperature, by what factor does ρ increase when the frequency ν triples?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "ρ is proportional to ν^2, so tripling ν multiplies ρ by 3^2 = 9. This growth without limit at high frequencies is what led to the ultraviolet catastrophe."
+  }
+]

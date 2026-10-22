@@ -32,6 +32,7 @@ import {
 import { getFinished, isFinished, sectionLocks, subscribeToProgress } from "../lib/progress";
 import { getQuestionSets, passMark, subscribeToQuestionSets } from "../lib/questionSets";
 import { BRANCHES } from "../lib/roadmap";
+import { stageChapters } from "../lib/stages";
 import type { BookKey } from "../lib/types";
 
 /* The reader's profile. Their name, photo and goal are what they enter here
@@ -211,12 +212,24 @@ export default function ProfilePage() {
 
   /* Each learning path's book: how far along, and where to pick up. */
   const books = LEARNING_BRANCHES.flatMap((branch) =>
-    branch.path!.map((stage) => {
-      const chapters = BOOK_CHAPTERS[stage.book];
+    branch.path!.map((stage, i) => {
+      const chapters = stageChapters(stage);
       const ready = chapters.flatMap((chapter) => chapter.sections).filter((s) => s.ready);
       const done = ready.filter((s) => isFinished(finished, stage.book, s.number)).length;
       const { blockedBy } = sectionLocks(stage.book, chapters, finished);
-      return { branch, book: stage.book, ready: ready.length, done, next: ready.find((s) => s.number === blockedBy) };
+      /* A part of a book (Physical Chemistry's) is named by the part, after the book. */
+      const title = stage.chapters
+        ? `${BOOK_META[stage.book].title.replace(/ \(.*\)$/, "")}: ${stage.title}`
+        : BOOK_META[stage.book].title;
+      return {
+        key: `${stage.book}-${i}`,
+        branch,
+        book: stage.book,
+        title,
+        ready: ready.length,
+        done,
+        next: ready.find((s) => s.number === blockedBy),
+      };
     }),
   );
   /* How well the reader is answering: every recorded answer, and the sets
@@ -459,17 +472,17 @@ export default function ProfilePage() {
             <Panel className="flex flex-col p-6">
               <CardTitle icon={BookIcon}>Learning progress</CardTitle>
               <ul className="mt-5 flex flex-col gap-5">
-                {books.map(({ branch, book, ready, done, next }) => {
+                {books.map(({ key, branch, book, title, ready, done, next }) => {
                   const percent = ready ? Math.round((done / ready) * 100) : 0;
                   return (
-                    <li key={book}>
+                    <li key={key}>
                       <div className="flex justify-between text-sm">
-                        <span>{BOOK_META[book].title}</span>
+                        <span>{title}</span>
                         <span className="tabular-nums text-neutral-600">{done > 0 && percent === 0 ? "<1" : percent}%</span>
                       </div>
                       <div
                         role="progressbar"
-                        aria-label={BOOK_META[book].title}
+                        aria-label={title}
                         aria-valuemin={0}
                         aria-valuemax={100}
                         aria-valuenow={percent}

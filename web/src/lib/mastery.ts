@@ -1,5 +1,5 @@
-import { BOOK_CHAPTERS } from "./learningPaths.generated";
 import { isFinished } from "./progress";
+import { stageChapters } from "./stages";
 import type { Branch } from "./types";
 
 /* Mastery of a roadmap branch, from 0 (nothing yet) to 1 (mastered): the share
@@ -7,7 +7,7 @@ import type { Branch } from "./types";
    reading progress (progress.ts), so it lives in this browser too. */
 export function branchProgress(branch: Branch, done: ReadonlySet<string>) {
   const sections = (branch.path ?? []).flatMap((stage) =>
-    BOOK_CHAPTERS[stage.book]
+    stageChapters(stage)
       .flatMap((chapter) => chapter.sections)
       .filter((section) => section.ready)
       .map((section) => isFinished(done, stage.book, section.number)),

@@ -1,0 +1,519 @@
+[
+  {
+    "id": "pc3-probability-complex-wavefunction",
+    "type": "multiple-choice",
+    "prompt": "Why can't the physical meaning of a wavefunction be read from the wavefunction itself?",
+    "choices": [
+      {
+        "text": "It can be complex, and complex numbers aren't physical",
+        "correct": true
+      },
+      {
+        "text": "It is zero at most points, so it carries no information",
+        "why": "Wavefunctions are not zero everywhere. The problem is that they can be complex, so the meaning is found in Ψ^*Ψ instead."
+      },
+      {
+        "text": "It changes too quickly in time for any instrument to measure",
+        "why": "Speed is not the issue. A wavefunction can be complex, and √(−1) is not a property of the physical world, so the meaning lies in |Ψ|^2."
+      },
+      {
+        "text": "It describes only particles that are completely at rest",
+        "why": "Nothing restricts it to particles at rest. Its meaning is found in |Ψ|^2 because Ψ itself can be complex."
+      }
+    ],
+    "explanation": "Wavefunctions can in general be complex, and √(−1) is not a property of the physical world. The physical meaning is found instead in the product of the wavefunction and its complex conjugate, Ψ^*Ψ = |Ψ|^2."
+  },
+  {
+    "id": "pc3-probability-psi-star-psi",
+    "type": "multiple-choice",
+    "prompt": "Which product gives the absolute square |Ψ|^2 of a wavefunction?",
+    "choices": [
+      {
+        "text": "Ψ^*Ψ, the wavefunction times its complex conjugate",
+        "correct": true
+      },
+      {
+        "text": "ΨΨ, the wavefunction times itself",
+        "why": "For a complex Ψ, ΨΨ can itself be complex or negative. You need the complex conjugate: Ψ^*Ψ."
+      },
+      {
+        "text": "Ψ + Ψ^*, the wavefunction plus its complex conjugate",
+        "why": "That is a sum, not a product. The absolute square is Ψ^*Ψ."
+      },
+      {
+        "text": "Ψ^*/Ψ, the complex conjugate divided by the wavefunction",
+        "why": "Dividing does not give the absolute square. Multiply instead: |Ψ|^2 = Ψ^*Ψ."
+      }
+    ],
+    "explanation": "P = Ψ^*Ψ = |Ψ|^2. Multiplying a wavefunction by its complex conjugate always gives a real number that is never negative, so it can serve as a probability density."
+  },
+  {
+    "id": "pc3-probability-complex-value",
+    "type": "numeric",
+    "prompt": "At one point, a wavefunction has the value ψ = 3 + 4i (in arbitrary units). Its complex conjugate is ψ^* = 3 − 4i. Using i^2 = −1, what is ψ^*ψ at that point?",
+    "answer": 25,
+    "tolerance": 0,
+    "explanation": "ψ^*ψ = (3 − 4i)(3 + 4i) = 9 + 12i − 12i − 16i^2 = 9 + 16 = 25. The result is real and positive, as a probability density must be."
+  },
+  {
+    "id": "pc3-probability-modulus",
+    "type": "multiple-choice",
+    "prompt": "The section calls |Ψ|^2 the \"square of the modulus\". What is the modulus |Ψ| of a wavefunction also called?",
+    "choices": [
+      {
+        "text": "Its absolute value",
+        "correct": true
+      },
+      {
+        "text": "Its complex conjugate",
+        "why": "The complex conjugate Ψ^* is a different thing: i is replaced by −i. The modulus |Ψ| is the absolute value."
+      },
+      {
+        "text": "Its real part",
+        "why": "The real part ignores the imaginary part entirely. The modulus is the absolute value, |Ψ|."
+      },
+      {
+        "text": "Its eigenvalue",
+        "why": "An eigenvalue comes from an operator acting on Ψ. The modulus is the absolute value, |Ψ|."
+      }
+    ],
+    "explanation": "The modulus of Ψ is its absolute value, |Ψ|. Squaring it gives |Ψ|^2 = Ψ^*Ψ, called the absolute square or the square of the modulus."
+  },
+  {
+    "id": "pc3-probability-phase-factor",
+    "type": "numeric",
+    "prompt": "At one point, a wavefunction has the value ψ = 0.50e^(iπ/3). Its complex conjugate is ψ^* = 0.50e^(−iπ/3). What is |ψ|^2 = ψ^*ψ there? (Give it as a decimal.)",
+    "answer": 0.25,
+    "explanation": "ψ^*ψ = (0.50)(0.50)e^(−iπ/3)e^(iπ/3) = 0.25 × e^0 = 0.25. A factor like e^(iθ) has an absolute square of 1, so it does not change the probability density."
+  },
+  {
+    "id": "pc3-probability-why-square",
+    "type": "multiple-choice",
+    "prompt": "Why is the square of the modulus used, rather than the modulus itself?",
+    "choices": [
+      {
+        "text": "Just as light intensity depends on the square of the electric field",
+        "correct": true
+      },
+      {
+        "text": "Because the modulus itself is a complex, unphysical number",
+        "why": "The modulus is a real number. The section's reason is an analogy: a light wave's intensity depends on the square of its electric field."
+      },
+      {
+        "text": "Because the square of a modulus is the same at every point",
+        "why": "|Ψ|^2 changes from point to point. The square is used just as light intensity depends on the square of the electric field."
+      },
+      {
+        "text": "Because squaring turns the wavefunction into an operator",
+        "why": "Squaring a function gives another function, not an operator. The section compares it to light intensity, which depends on the square of the electric field."
+      }
+    ],
+    "explanation": "The square is used, rather than the modulus itself, in the same way that the intensity of a light wave depends on the square of the electric field."
+  },
+  {
+    "id": "pc3-probability-born-1926",
+    "type": "multiple-choice",
+    "prompt": "Who proposed, in 1926, the most commonly accepted interpretation of the wavefunction, linking it to probability?",
+    "choices": [
+      {
+        "text": "Max Born",
+        "correct": true
+      },
+      {
+        "text": "Niels Bohr",
+        "why": "Bohr is known for his model of the atom and the Correspondence Principle. The probability interpretation is Born's."
+      },
+      {
+        "text": "Erwin Schrödinger",
+        "why": "Schrödinger wrote the wave equation for ψ. Born proposed that |ψ|^2 gives a probability density."
+      },
+      {
+        "text": "Werner Heisenberg",
+        "why": "Heisenberg is known for the uncertainty principle. The probability interpretation was proposed by Born in 1926."
+      }
+    ],
+    "explanation": "In 1926, Max Born proposed that the square of the modulus of the wavefunction is proportional to the probability density. This Born interpretation is the most commonly accepted interpretation of the wavefunction."
+  },
+  {
+    "id": "pc3-probability-born-density",
+    "type": "multiple-choice",
+    "prompt": "According to the Born interpretation, what is |ψ|^2 at a point proportional to?",
+    "choices": [
+      {
+        "text": "The probability density for finding the particle there",
+        "correct": true
+      },
+      {
+        "text": "The particle's energy at that point",
+        "why": "Energy comes from the Hamiltonian, not from |ψ|^2. |ψ|^2 is proportional to the probability density."
+      },
+      {
+        "text": "The particle's momentum at that point",
+        "why": "Momentum comes from the momentum operator. |ψ|^2 gives the probability density for finding the particle."
+      },
+      {
+        "text": "The amount of the particle's mass smeared out there",
+        "why": "The particle is not smeared out. |ψ|^2 tells you how likely you are to find it at that point."
+      }
+    ],
+    "explanation": "Born proposed that |ψ|^2 is proportional to the probability density: the probability per unit volume of finding the particle at that point."
+  },
+  {
+    "id": "pc3-probability-density-per-volume",
+    "type": "multiple-choice",
+    "prompt": "In three dimensions, what does \"probability density\" mean?",
+    "choices": [
+      {
+        "text": "Probability per unit volume",
+        "correct": true
+      },
+      {
+        "text": "Probability per unit time",
+        "why": "The density here is per unit volume, not per unit time. Multiplying it by a volume element dτ gives a probability."
+      },
+      {
+        "text": "Mass per unit volume",
+        "why": "That is ordinary density. Probability density is probability per unit volume."
+      },
+      {
+        "text": "The total probability over all space",
+        "why": "That is a single number for the whole of space. Probability density is the probability per unit volume at each point."
+      }
+    ],
+    "explanation": "Probability density is probability per unit volume. Multiplying it by a small volume element dτ gives the probability of finding the particle in that volume."
+  },
+  {
+    "id": "pc3-probability-amplitude",
+    "type": "multiple-choice",
+    "prompt": "In the Born interpretation, what is the wavefunction ψ itself called?",
+    "choices": [
+      {
+        "text": "The probability amplitude",
+        "correct": true
+      },
+      {
+        "text": "The probability density",
+        "why": "That name belongs to |ψ|^2, the absolute square. ψ itself is the probability amplitude."
+      },
+      {
+        "text": "The probability",
+        "why": "A probability is |ψ|^2 times a volume element dτ. ψ itself is the probability amplitude."
+      },
+      {
+        "text": "The eigenvalue",
+        "why": "An eigenvalue is a number produced by an operator. In the Born interpretation, ψ is the probability amplitude."
+      }
+    ],
+    "explanation": "The Born interpretation calls the wavefunction ψ the probability amplitude, its absolute square |ψ|^2 the probability density, and |ψ|^2 times a volume element dτ the probability."
+  },
+  {
+    "id": "pc3-probability-double-slit",
+    "type": "multiple-choice",
+    "prompt": "The section says the probability density is the three-dimensional analog of what?",
+    "choices": [
+      {
+        "text": "The pattern from the electron double-slit experiment",
+        "correct": true
+      },
+      {
+        "text": "The spectrum of light given off by a hot blackbody",
+        "why": "The blackbody spectrum is about emitted light. The probability density is compared with the electron double-slit pattern."
+      },
+      {
+        "text": "The bright lines in the emission spectrum of hydrogen",
+        "why": "Line spectra come from jumps between energy levels. The section compares the probability density with the double-slit pattern for electrons."
+      },
+      {
+        "text": "The fixed orbit of an electron in the Bohr model",
+        "why": "A fixed orbit is a definite path, the opposite of a probability description. The comparison is with the electron double-slit pattern."
+      }
+    ],
+    "explanation": "Because the wavefunction describes the wave properties of matter, the probability density shows wave-like behavior. It is the three-dimensional analog of the diffraction pattern on the two-dimensional screen in the double-slit experiment for electrons."
+  },
+  {
+    "id": "pc3-probability-interval-integral",
+    "type": "multiple-choice",
+    "prompt": "For a particle moving in one dimension, what does ∫_a^(b) |ψ(x)|^2 dx give?",
+    "choices": [
+      {
+        "text": "The probability the particle is between a and b",
+        "correct": true
+      },
+      {
+        "text": "The probability density at the single point x = a",
+        "why": "A density at one point needs no integral. Integrating |ψ|^2 from a to b gives the probability of being anywhere in that region."
+      },
+      {
+        "text": "The particle's average position between a and b",
+        "why": "An average position would need an extra x inside the integral. ∫_a^(b) |ψ|^2 dx is just the probability of finding the particle in [a, b]."
+      },
+      {
+        "text": "The energy of the particle between x = a and x = b",
+        "why": "Energy comes from the Hamiltonian. Integrating |ψ|^2 over a region gives a probability."
+      }
+    ],
+    "explanation": "P(x∈[a, b]) = ∫_a^(b) |ψ(x)|^2 dx is the probability that a measurement of the particle's position finds it in the region from a to b."
+  },
+  {
+    "id": "pc3-probability-small-interval",
+    "type": "numeric",
+    "prompt": "Near x = 0.50 nm, a particle's probability density is |ψ(x)|^2 = 1.2 nm^−1. For a small interval of width Δx, the probability is about P ≈ |ψ(x)|^2Δx. What is the probability of finding the particle in an interval of width 0.010 nm there? (Give it as a decimal.)",
+    "answer": 0.012,
+    "explanation": "P ≈ |ψ(x)|^2Δx = (1.2 nm^−1)(0.010 nm) = 0.012, about a 1.2% chance. This is the integral ∫_a^(b) |ψ(x)|^2 dx for an interval so narrow that |ψ|^2 hardly changes across it."
+  },
+  {
+    "id": "pc3-probability-density-ratio",
+    "type": "numeric",
+    "prompt": "A real wavefunction has the value ψ = 0.6 at point A and ψ = 0.3 at point B. How many times larger is the probability density at A than at B?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The probability density is |ψ|^2: 0.36 at A and 0.09 at B. The ratio is 0.36/0.09 = 4. Twice the wavefunction means four times the probability density."
+  },
+  {
+    "id": "pc3-probability-density-at-point",
+    "type": "numeric",
+    "prompt": "A particle's wavefunction is ψ(x) = √(2) sin(πx) between x = 0 and x = 1. What is the probability density |ψ(x)|^2 at x = 1/6? Use sin(π/6) = 0.5. (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "ψ(1/6) = √(2) × sin(π/6) = √(2) × 0.5. Since ψ is real, |ψ|^2 = ψ^2 = 2 × 0.25 = 0.5."
+  },
+  {
+    "id": "pc3-probability-3d-integrand",
+    "type": "multiple-choice",
+    "prompt": "To find the probability that a particle is inside a volume V in three dimensions, what do you integrate over V?",
+    "choices": [
+      {
+        "text": "|ψ|^2 dτ, the probability density times the volume element",
+        "correct": true
+      },
+      {
+        "text": "ψ dτ, the wavefunction times the volume element",
+        "why": "ψ is the amplitude and can be complex. The probability needs the absolute square, |ψ|^2."
+      },
+      {
+        "text": "ψ^* dτ, the complex conjugate times the volume element",
+        "why": "ψ^* alone can still be complex. Multiply it by ψ to get |ψ|^2, then integrate |ψ|^2 dτ."
+      },
+      {
+        "text": "|ψ|^2 dx, along the x-axis only",
+        "why": "In three dimensions you integrate over a volume, so dx is replaced by the volume element dτ, such as dx dy dz."
+      }
+    ],
+    "explanation": "In three dimensions, P = ∫_V |ψ|^2 dτ: the probability density |ψ|^2 is integrated over the volume V, where dτ is the volume element of the coordinate system used (dx dy dz in Cartesian coordinates)."
+  },
+  {
+    "id": "pc3-probability-spherical-element",
+    "type": "multiple-choice",
+    "prompt": "Which is the volume element dτ in spherical coordinates?",
+    "choices": [
+      {
+        "text": "r^2 sin θ dr dθ dφ",
+        "correct": true
+      },
+      {
+        "text": "r dr dφ dz",
+        "why": "That is the cylindrical volume element. Spherical coordinates use r^2 sin θ dr dθ dφ."
+      },
+      {
+        "text": "dx dy dz",
+        "why": "That is the Cartesian volume element. In spherical coordinates, dτ = r^2 sin θ dr dθ dφ."
+      },
+      {
+        "text": "dr dθ dφ",
+        "why": "The volume element must include the Jacobian factor r^2 sin θ: dτ = r^2 sin θ dr dθ dφ."
+      }
+    ],
+    "explanation": "The volume element includes a Jacobian for the coordinate system: dτ = dx dy dz in Cartesian, r^2 sin θ dr dθ dφ in spherical, and r dr dφ dz in cylindrical coordinates."
+  },
+  {
+    "id": "pc3-probability-cylindrical-element",
+    "type": "multiple-choice",
+    "prompt": "In which coordinate system is the volume element dτ = r dr dφ dz?",
+    "choices": [
+      {
+        "text": "Cylindrical",
+        "correct": true
+      },
+      {
+        "text": "Spherical",
+        "why": "Spherical coordinates have no z. Their volume element is r^2 sin θ dr dθ dφ."
+      },
+      {
+        "text": "Cartesian",
+        "why": "Cartesian coordinates use dτ = dx dy dz, with no factor of r."
+      },
+      {
+        "text": "Two-dimensional polar",
+        "why": "Two-dimensional polar coordinates have no z and describe an area, not a volume. r, φ and z together are cylindrical coordinates."
+      }
+    ],
+    "explanation": "Cylindrical coordinates (r, φ, z) have the volume element dτ = r dr dφ dz. The factor r is the Jacobian for these coordinates."
+  },
+  {
+    "id": "pc3-probability-single-valued",
+    "type": "multiple-choice",
+    "prompt": "Why must a wavefunction be a single-valued function of its coordinates?",
+    "choices": [
+      {
+        "text": "So each point has one probability density",
+        "correct": true
+      },
+      {
+        "text": "So the wavefunction is always a real function",
+        "why": "Wavefunctions can be complex. Single-valued means one value at each point, so the probability density there is unique."
+      },
+      {
+        "text": "So the particle has the same energy everywhere",
+        "why": "Single-valuedness is about the probability density, not energy: each point must have one well-defined probability density."
+      },
+      {
+        "text": "So the wavefunction can never be zero",
+        "why": "Wavefunctions can be zero at some points. The requirement is that each point has only one value."
+      }
+    ],
+    "explanation": "A wavefunction must be single-valued because the probability density ought to be uniquely determined at each point in space. Two different values of ψ at one point would give two different probability densities there."
+  },
+  {
+    "id": "pc3-probability-finite",
+    "type": "multiple-choice",
+    "prompt": "Why must a wavefunction be finite?",
+    "choices": [
+      {
+        "text": "An infinite probability has no meaning",
+        "correct": true
+      },
+      {
+        "text": "So that the wavefunction can be complex",
+        "why": "Being finite has nothing to do with being complex. |ψ|^2 gives a probability, and an infinite probability is meaningless."
+      },
+      {
+        "text": "So that the particle's energy is zero",
+        "why": "The energy need not be zero. The wavefunction must be finite because an infinite probability has no meaning."
+      },
+      {
+        "text": "Because operators act only on small functions",
+        "why": "Operators can act on any function. The reason is that |ψ|^2 gives a probability, which cannot be infinite."
+      }
+    ],
+    "explanation": "Because |ψ|^2 gives a probability density, the wavefunction must be finite: an infinite probability has no meaning."
+  },
+  {
+    "id": "pc3-probability-not-required",
+    "type": "multiple-choice",
+    "prompt": "Which of these is NOT one of the requirements for a well-behaved wavefunction listed in the section?",
+    "choices": [
+      {
+        "text": "It must be a real function",
+        "correct": true
+      },
+      {
+        "text": "It must be single-valued",
+        "why": "This is required, so that the probability density is uniquely determined at each point."
+      },
+      {
+        "text": "It must be finite",
+        "why": "This is required, because an infinite probability has no meaning."
+      },
+      {
+        "text": "It must be continuous",
+        "why": "This is required, as expected for a physically meaningful probability density."
+      }
+    ],
+    "explanation": "A well-behaved wavefunction is single-valued, finite and continuous. It does not need to be real: wavefunctions can be complex, which is why the probability comes from |ψ|^2 = ψ^*ψ."
+  },
+  {
+    "id": "pc3-probability-quantization",
+    "type": "multiple-choice",
+    "prompt": "What do the requirements that wavefunctions be single-valued, finite and continuous lead to?",
+    "choices": [
+      {
+        "text": "Only certain values of the energy are allowed",
+        "correct": true
+      },
+      {
+        "text": "Every value of the energy becomes allowed",
+        "why": "The opposite: these conditions restrict the solutions, so only certain energies are allowed. This is quantization."
+      },
+      {
+        "text": "The wavefunction must be zero everywhere",
+        "why": "A wavefunction that is zero everywhere describes no particle. The conditions pick out allowed solutions with certain energies."
+      },
+      {
+        "text": "The particle must follow an exact orbit",
+        "why": "Quantum mechanics describes probabilities, not exact orbits. The conditions lead to quantized energies."
+      }
+    ],
+    "explanation": "The conditions that the wavefunction be single-valued, finite and continuous (\"well behaved\") restrict the solutions of the Schrödinger equation, so only certain values of the energy and other dynamical variables are allowed. This is quantization, the feature that gives quantum mechanics its name."
+  },
+  {
+    "id": "pc3-probability-charge-cloud",
+    "type": "multiple-choice",
+    "prompt": "Does the Born interpretation mean that a single electron is physically spread out over a large region, like a \"charge cloud\"?",
+    "choices": [
+      {
+        "text": "No; it describes the results of many measurements",
+        "correct": true
+      },
+      {
+        "text": "Yes; the electron's charge is literally smeared out",
+        "why": "The section says the opposite. A class's grade distribution doesn't smear out one student's grade, and |ψ|^2 likewise describes the results of many measurements."
+      },
+      {
+        "text": "Yes, but only for electrons inside atoms",
+        "why": "The interpretation is the same everywhere: the wavefunction does not mean the particle is distributed as a charge cloud."
+      },
+      {
+        "text": "No; the electron always sits at the nucleus",
+        "why": "The electron is not fixed at the nucleus. The point is that |ψ|^2 gives probabilities, which show up over many measurements."
+      }
+    ],
+    "explanation": "The wavefunction does not mean the particle is distributed over a large region as a charge cloud. The section compares it with the grade distribution of a large class: the distribution does not smear out one student's grade, but describes the results of many measurements."
+  },
+  {
+    "id": "pc3-probability-stationary-state",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.4.1, Ψ(r⃗, t) = ψ(r⃗)e^(−iωt). How does |Ψ|^2 change with time?",
+    "choices": [
+      {
+        "text": "It does not change with time",
+        "correct": true
+      },
+      {
+        "text": "It oscillates with angular frequency ω",
+        "why": "Ψ itself oscillates, but in Ψ^*Ψ the factors e^(iωt) and e^(−iωt) multiply to 1, so |Ψ|^2 stays constant."
+      },
+      {
+        "text": "It decays exponentially with time",
+        "why": "e^(−iωt) is an oscillating phase factor, not a decay. Its absolute square is 1, so |Ψ|^2 = |ψ|^2 at all times."
+      },
+      {
+        "text": "It grows steadily with time",
+        "why": "Nothing grows: e^(iωt)e^(−iωt) = 1, so |Ψ|^2 stays equal to |ψ|^2."
+      }
+    ],
+    "explanation": "|Ψ|^2 = Ψ^*Ψ = ψ^*e^(iωt)ψe^(−iωt) = ψ^*ψ, because e^(iωt)e^(−iωt) = 1. The probability density does not depend on time, which is why such states are called stationary states."
+  },
+  {
+    "id": "pc3-probability-volume-element",
+    "type": "multiple-choice",
+    "prompt": "Example 3.4.2 asks about eψ^*(r_0)ψ(r_0)dτ. According to the Born interpretation, what does the part ψ^*(r_0)ψ(r_0)dτ represent?",
+    "choices": [
+      {
+        "text": "The probability the electron is in dτ at r_0",
+        "correct": true
+      },
+      {
+        "text": "The probability density of the electron at r_0",
+        "why": "ψ^*ψ alone is the probability density. Multiplying it by the volume element dτ turns it into a probability."
+      },
+      {
+        "text": "The probability amplitude of the electron at r_0",
+        "why": "The amplitude is ψ itself. ψ^*ψdτ, the density times a volume, is a probability."
+      },
+      {
+        "text": "The energy of the electron in the volume dτ at r_0",
+        "why": "Energy comes from the Hamiltonian. ψ^*ψdτ is the probability of finding the electron in dτ."
+      }
+    ],
+    "explanation": "ψ^*ψ is the probability density, and multiplying it by a volume element dτ gives a probability: the chance of finding the electron in the tiny volume dτ located at r_0."
+  }
+]

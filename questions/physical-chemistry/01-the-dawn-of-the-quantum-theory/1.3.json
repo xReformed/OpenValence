@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pc1-photoelectric-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the photoelectric effect?",
+    "choices": [
+      {
+        "text": "Light shining on a metal surface knocks electrons out of it",
+        "correct": true
+      },
+      {
+        "text": "Electrons hitting a metal make it glow",
+        "why": "That is the reverse process. In the photoelectric effect, light ejects electrons from the metal."
+      },
+      {
+        "text": "A metal heated in a flame changes color",
+        "why": "That is thermal (blackbody) radiation. The photoelectric effect is light ejecting electrons."
+      },
+      {
+        "text": "White light passing through a prism splits into colors",
+        "why": "That is dispersion of light. The photoelectric effect is light ejecting electrons from a material."
+      }
+    ],
+    "explanation": "The photoelectric effect is the process in which electromagnetic radiation ejects electrons (photoelectrons) from a material, such as a metal surface."
+  },
+  {
+    "id": "pc1-photoelectric-intensity",
+    "type": "multiple-choice",
+    "prompt": "In Lenard's experiments, what happened when the light was made twice as intense (at a frequency above the threshold)?",
+    "choices": [
+      {
+        "text": "Twice as many electrons were ejected, but their maximum kinetic energy stayed the same",
+        "correct": true
+      },
+      {
+        "text": "The same number of electrons came out, but faster",
+        "why": "This was the classical expectation, and it was wrong. Intensity changes the number of electrons, not their energy."
+      },
+      {
+        "text": "Nothing changed at all",
+        "why": "The number of electrons (the current) doubled. Only their maximum kinetic energy stayed the same."
+      },
+      {
+        "text": "The electrons came out only after a delay",
+        "why": "Electrons are released almost instantly; no time is needed to build up energy."
+      }
+    ],
+    "explanation": "Lenard found that doubling the light intensity doubled the number of electrons emitted but did not change their maximum kinetic energy. The stopping voltage did not depend on intensity at all."
+  },
+  {
+    "id": "pc1-photoelectric-frequency",
+    "type": "multiple-choice",
+    "prompt": "Above the threshold frequency, how does the maximum kinetic energy of the ejected electrons change as the light's frequency increases?",
+    "choices": [
+      {
+        "text": "It increases in a straight line with the frequency",
+        "correct": true
+      },
+      {
+        "text": "It decreases",
+        "why": "Higher-frequency light gives each electron more energy: KE = hν − Φ."
+      },
+      {
+        "text": "It stays the same",
+        "why": "Millikan found that higher-frequency light ejects electrons with greater kinetic energy."
+      },
+      {
+        "text": "It depends only on how bright the light is",
+        "why": "Brightness changes the number of electrons, not their energy. The energy depends on the frequency."
+      }
+    ],
+    "explanation": "The kinetic energy of the ejected electrons rises linearly with the frequency of the light above the threshold, as Einstein's equation KE = hν − Φ shows."
+  },
+  {
+    "id": "pc1-threshold-frequency",
+    "type": "multiple-choice",
+    "prompt": "What happens if the light's frequency is below the metal's threshold frequency, however bright the light is?",
+    "choices": [
+      {
+        "text": "No electrons are ejected",
+        "correct": true
+      },
+      {
+        "text": "A few slow electrons are ejected",
+        "why": "Below the threshold each photon has less energy than the workfunction, so it cannot free any electron."
+      },
+      {
+        "text": "Electrons are ejected after a long wait",
+        "why": "Waiting doesn't help: one photon is absorbed by one electron, and each photon below threshold has too little energy."
+      },
+      {
+        "text": "More electrons are ejected if the light is brighter",
+        "why": "Brighter light only means more photons, and none of them has enough energy below the threshold."
+      }
+    ],
+    "explanation": "There is a minimum frequency ν_0 for which the photon energy hν_0 equals the workfunction Φ. Light below that frequency, no matter how bright, will not eject electrons."
+  },
+  {
+    "id": "pc1-einstein-equation",
+    "type": "multiple-choice",
+    "prompt": "Which is Einstein's equation for the maximum kinetic energy of an electron ejected by a photon of frequency ν from a metal with workfunction Φ?",
+    "choices": [
+      {
+        "text": "KE = hν − Φ",
+        "correct": true
+      },
+      {
+        "text": "KE = hν + Φ",
+        "why": "The workfunction is energy the electron must spend to leave the metal, so it is subtracted, not added."
+      },
+      {
+        "text": "KE = Φ − hν",
+        "why": "That would make the kinetic energy negative whenever the photon frees an electron. The photon energy comes first: KE = hν − Φ."
+      },
+      {
+        "text": "KE = hνΦ",
+        "why": "Energies are added and subtracted here, not multiplied: KE = hν − Φ."
+      }
+    ],
+    "explanation": "One photon of energy hν is absorbed by one electron. The electron spends the workfunction Φ to leave the surface and keeps the rest as kinetic energy: KE = hν − Φ."
+  },
+  {
+    "id": "pc1-photoelectron-energy",
+    "type": "numeric",
+    "prompt": "Photons with an energy of 3.00 eV shine on sodium, whose workfunction is 2.36 eV. Using KE = hν − Φ, what is the maximum kinetic energy of the ejected electrons, in eV?",
+    "answer": 0.64,
+    "unit": "eV",
+    "explanation": "KE = hν − Φ = 3.00 eV − 2.36 eV = 0.64 eV."
+  },
+  {
+    "id": "pc1-workfunction-vs-ionization",
+    "type": "multiple-choice",
+    "prompt": "For a metal, how does the workfunction usually compare with the ionization energy of the gas-phase atom?",
+    "choices": [
+      {
+        "text": "The workfunction is lower",
+        "correct": true
+      },
+      {
+        "text": "The workfunction is higher",
+        "why": "Table 1.3.1 shows the opposite: copper, for example, has a workfunction of 4.7 eV but an ionization energy of 7.7 eV."
+      },
+      {
+        "text": "They are always exactly equal",
+        "why": "They are similar ideas but differ in size: electrons in a bulk metal are less tightly bound than in a single atom."
+      },
+      {
+        "text": "The workfunction is always zero",
+        "why": "Every metal has a workfunction, for example 4.7 eV for copper. It is just smaller than the ionization energy."
+      }
+    ],
+    "explanation": "The workfunction is the energy needed to remove an electron from the surface of a bulk metal; the ionization energy is the energy to remove one from a gas-phase atom. The workfunction is generally lower, because electrons in a bulk metal are less tightly bound (copper: 4.7 eV against 7.7 eV)."
+  },
+  {
+    "id": "pc1-lowest-workfunction",
+    "type": "multiple-choice",
+    "prompt": "According to Table 1.3.1, which of these metals has the lowest workfunction, so that the lowest-energy photons can eject its electrons?",
+    "choices": [
+      {
+        "text": "Cesium",
+        "correct": true
+      },
+      {
+        "text": "Gold",
+        "why": "Gold's workfunction is 5.17 eV, one of the highest in the table. Cesium's is 1.95 eV."
+      },
+      {
+        "text": "Silver",
+        "why": "Silver's workfunction is 4.72 eV. Cesium's is much lower, 1.95 eV."
+      },
+      {
+        "text": "Iron",
+        "why": "Iron's workfunction is 4.67 eV. Cesium's is much lower, 1.95 eV."
+      }
+    ],
+    "explanation": "Table 1.3.1 gives cesium a workfunction of 1.95 eV, the lowest in the table, compared with 4.67 eV for iron, 4.72 eV for silver and 5.17 eV for gold."
+  },
+  {
+    "id": "pc1-one-photon-one-electron",
+    "type": "multiple-choice",
+    "prompt": "In Einstein's picture of the photoelectric effect, how many electrons does one absorbed photon of sufficient energy free?",
+    "choices": [
+      {
+        "text": "One",
+        "correct": true
+      },
+      {
+        "text": "As many as its energy allows",
+        "why": "A photon's energy goes to a single electron: one photon is absorbed by one electron."
+      },
+      {
+        "text": "None; electrons are freed only by many photons together",
+        "why": "A single photon of high enough energy frees one electron, almost instantly."
+      },
+      {
+        "text": "Two, one from each side of the metal",
+        "why": "One photon is absorbed by one electron."
+      }
+    ],
+    "explanation": "In photoemission, one quantum of energy hν is absorbed by one electron. That is why brighter light (more photons) frees more electrons but does not give each one more energy."
+  },
+  {
+    "id": "pc1-photoelectric-hertz-1887",
+    "type": "multiple-choice",
+    "prompt": "Who first documented the photoelectric effect, in 1887?",
+    "choices": [
+      {
+        "text": "Heinrich Hertz",
+        "correct": true
+      },
+      {
+        "text": "Albert Einstein",
+        "why": "Einstein explained the effect in 1905, using quanta of light. Hertz had discovered it in 1887."
+      },
+      {
+        "text": "J.J. Thomson",
+        "why": "Thomson showed in 1899 that the effect releases electrons. The effect itself was first documented by Hertz."
+      },
+      {
+        "text": "Robert Millikan",
+        "why": "Millikan later tested Einstein's theory of the effect and confirmed it by 1916. Hertz discovered the effect in 1887."
+      }
+    ],
+    "explanation": "The German physicist Heinrich Hertz documented the photoelectric effect in 1887 while working with a spark-gap transmitter, so it is sometimes called the Hertz effect. The unit of frequency, the hertz, is named in his honor."
+  },
+  {
+    "id": "pc1-photoelectric-thomson-electrons",
+    "type": "multiple-choice",
+    "prompt": "Hertz saw substances give off a spark when they absorbed certain frequencies of light. In 1899, what did J.J. Thomson identify this spark as?",
+    "choices": [
+      {
+        "text": "Electrons knocked out of the metal by the light",
+        "correct": true
+      },
+      {
+        "text": "Light reflected back off the metal's surface",
+        "why": "Thomson found that particles were leaving the surface: electrons, now called photoelectrons."
+      },
+      {
+        "text": "Positive ions boiling off the metal as it heated up",
+        "why": "The particles were negative electrons freed by the light, not ions driven off by heat."
+      },
+      {
+        "text": "Whole atoms of the metal evaporating from its surface",
+        "why": "Thomson identified the particles as electrons, called photoelectrons, not whole atoms."
+      }
+    ],
+    "explanation": "J.J. Thomson identified the spark as light-excited electrons, called photoelectrons, leaving the metal's surface."
+  },
+  {
+    "id": "pc1-photoelectric-classical-shaking",
+    "type": "multiple-choice",
+    "prompt": "In the classical (wave) picture, how was light thought to free electrons from a metal?",
+    "choices": [
+      {
+        "text": "Its electric field shook the electrons until some broke loose",
+        "correct": true
+      },
+      {
+        "text": "Each photon of light gave all its energy to a single electron",
+        "why": "That is Einstein's quantum picture of 1905. The classical picture had no photons, only a continuous wave."
+      },
+      {
+        "text": "It slowly warmed the whole metal until electrons boiled off",
+        "why": "The classical picture in this section is the light's electric field shaking the electrons loose, not heating the metal."
+      },
+      {
+        "text": "It pushed the electrons out with the pressure of its beam",
+        "why": "Classically, the light's oscillating electric field set the electrons vibrating, harder for brighter light, until some were shaken loose."
+      }
+    ],
+    "explanation": "Classically, the electrons in the metal were shaken and set vibrating by the oscillating electric field of the light, and eventually some were shaken loose. So brighter light was expected to give faster electrons, and very dim light to need some time before any came out."
+  },
+  {
+    "id": "pc1-photoelectric-no-delay",
+    "type": "multiple-choice",
+    "prompt": "Even very dim light above the threshold frequency ejects electrons almost instantly. How does Einstein's picture explain this?",
+    "choices": [
+      {
+        "text": "Each electron gets its energy all at once, from a single photon",
+        "correct": true
+      },
+      {
+        "text": "Dim light heats the metal very quickly",
+        "why": "No heating to a critical temperature is needed. One photon hands its energy to one electron at once."
+      },
+      {
+        "text": "Dim light has a higher frequency than bright light",
+        "why": "Brightness and frequency are separate: dim light just has fewer photons per second, each still with energy hν."
+      },
+      {
+        "text": "The electrons slowly collect energy from many photons",
+        "why": "That would cause a delay, which is not seen. A single photon gives one electron all its energy at once."
+      }
+    ],
+    "explanation": "Because one photon of enough energy is absorbed by one electron, no time is needed for energy to build up, and the electron is released nearly instantly. Dim light only means fewer photons, so fewer electrons."
+  },
+  {
+    "id": "pc1-photoelectric-lenard-collector",
+    "type": "multiple-choice",
+    "prompt": "In Lenard's experiment, why did he charge the collector plate negatively?",
+    "choices": [
+      {
+        "text": "To repel electrons, so only those with enough energy reached it",
+        "correct": true
+      },
+      {
+        "text": "To attract more of the ejected electrons to the collector",
+        "why": "Electrons are negative, so a negative plate repels them. That is what let Lenard measure their energy."
+      },
+      {
+        "text": "To speed the electrons up, giving them extra energy on the way",
+        "why": "The negative plate slows the electrons down: only those with enough kinetic energy get up the potential hill."
+      },
+      {
+        "text": "To make the lit metal plate give off more light of its own",
+        "why": "The plate was charged to measure the electrons' energy: it turns back any electron without enough kinetic energy."
+      }
+    ],
+    "explanation": "Lenard charged the collector negatively to repel the ejected electrons. Only electrons ejected with enough kinetic energy to get up this potential hill contributed to the current, so the voltage that just stopped the current, V_stop, measured their maximum energy."
+  },
+  {
+    "id": "pc1-photoelectric-calcium-light-meter",
+    "type": "multiple-choice",
+    "prompt": "Calcium's threshold wavelength is 459 nm, in the blue. Why would a light meter that uses calcium not respond to red light?",
+    "choices": [
+      {
+        "text": "Each photon of red light has too little energy to free an electron",
+        "correct": true
+      },
+      {
+        "text": "Red light is always too dim to be measured",
+        "why": "Brightness is not the problem: even very bright red light has photons below calcium's threshold."
+      },
+      {
+        "text": "Red photons have too much energy and pass straight through",
+        "why": "Red light has a longer wavelength than blue, so each photon carries less energy (E = hc/λ), not more."
+      },
+      {
+        "text": "Red light frees electrons, but only after a long delay",
+        "why": "There is no build-up of energy over time. Below the threshold, no electrons come out however long you wait."
+      }
+    ],
+    "explanation": "Light with a wavelength longer than 459 nm has photons with less energy than calcium's workfunction, 2.71 eV, because E = hc/λ. Red light has a longer wavelength than blue, so it ejects no electrons from calcium, however bright it is."
+  },
+  {
+    "id": "pc1-photoelectric-vstop-slope",
+    "type": "multiple-choice",
+    "prompt": "Einstein's equation eV_stop = hν − Φ predicts a straight line when V_stop is plotted against the light's frequency ν. What is the slope of that line?",
+    "choices": [
+      {
+        "text": "h/e",
+        "correct": true
+      },
+      {
+        "text": "e/h",
+        "why": "That is upside down. Dividing eV_stop = hν − Φ by e gives V_stop = (h/e)ν − Φ/e, so the slope is h/e."
+      },
+      {
+        "text": "Φ",
+        "why": "The workfunction sets where the line crosses zero (the threshold frequency), not its slope. The slope is h/e."
+      },
+      {
+        "text": "h",
+        "why": "h is the slope of kinetic energy against frequency. For the voltage, divide by the electron's charge: h/e."
+      }
+    ],
+    "explanation": "Dividing eV_stop = hν − Φ by the electron's charge e gives V_stop = (h/e)ν − Φ/e, a straight line of slope h/e. This gave a way to measure Planck's constant that was completely different from blackbody radiation."
+  },
+  {
+    "id": "pc1-photoelectric-blue-red",
+    "type": "multiple-choice",
+    "prompt": "In Millikan's experiment, a voltage on the collector stops the electrons ejected by red light but not those ejected by blue light from the same metal. Why?",
+    "choices": [
+      {
+        "text": "Blue photons carry more energy, so their electrons leave faster",
+        "correct": true
+      },
+      {
+        "text": "The blue light was brighter, so it ejected more electrons",
+        "why": "Brightness changes how many electrons come out, not how fast they are. Blue light's photons each carry more energy."
+      },
+      {
+        "text": "Red light's photons have a higher frequency than blue light's",
+        "why": "It is the reverse: blue light has the shorter wavelength and higher frequency, so more energy per photon."
+      },
+      {
+        "text": "Electrons ejected by red light are heavier and so move slower",
+        "why": "All electrons have the same mass. The difference is the energy each photon gives: blue photons carry more."
+      }
+    ],
+    "explanation": "Blue light has a shorter wavelength and higher frequency than red light, so each photon carries more energy, hν. The electrons it ejects have more kinetic energy, so a voltage that turns back red light's electrons can be below V_stop for blue light."
+  },
+  {
+    "id": "pc1-photoelectric-millikan-doubts",
+    "type": "multiple-choice",
+    "prompt": "How did Robert Millikan first regard Einstein's photon theory of the photoelectric effect?",
+    "choices": [
+      {
+        "text": "He rejected it as an attack on the wave theory of light",
+        "correct": true
+      },
+      {
+        "text": "He had proposed the same idea a year earlier",
+        "why": "The idea was Einstein's, in 1905. Millikan spent ten years testing it, hoping to avoid its conclusion."
+      },
+      {
+        "text": "He accepted it at once and never tested it",
+        "why": "Millikan worked on the photoelectric effect for ten years, until 1916, before confirming Einstein's theory."
+      },
+      {
+        "text": "He accepted it, and his 1916 results proved it wrong",
+        "why": "Millikan doubted the theory at first, and his 1916 results confirmed it, although he had hoped they would not."
+      }
+    ],
+    "explanation": "Millikan initially did not accept Einstein's theory, which he saw as an attack on the wave theory of light. He worked on the photoelectric effect for ten years and, despite himself, confirmed Einstein's theory by 1916."
+  },
+  {
+    "id": "pc1-photoelectric-einstein-planck",
+    "type": "multiple-choice",
+    "prompt": "Whose idea did Einstein borrow in 1905 when he treated light as quanta of energy hν?",
+    "choices": [
+      {
+        "text": "Max Planck's, from his work on blackbody radiation",
+        "correct": true
+      },
+      {
+        "text": "Niels Bohr's, from his model of the hydrogen atom",
+        "why": "Bohr's model came in 1913, after Einstein's paper. Einstein borrowed Planck's quantized energy from blackbody research."
+      },
+      {
+        "text": "Louis de Broglie's, from his idea of matter waves",
+        "why": "De Broglie's matter waves came much later. Einstein borrowed Planck's hypothesis from blackbody research."
+      },
+      {
+        "text": "James Clerk Maxwell's, from his equations for light",
+        "why": "Maxwell's equations treat light as a continuous wave. The idea of quanta of energy hν came from Planck."
+      }
+    ],
+    "explanation": "Einstein borrowed Planck's hypothesis of quantized energy from his blackbody research, and treated the incoming light as quanta of energy hν, with ν the frequency."
+  },
+  {
+    "id": "pc1-workfunction-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the workfunction, Φ, of a metal?",
+    "choices": [
+      {
+        "text": "The least energy needed to remove an electron from the solid metal",
+        "correct": true
+      },
+      {
+        "text": "The energy needed to remove an electron from a single gas-phase atom",
+        "why": "That is the ionization energy. The workfunction is for the bulk (solid) metal, and it is usually smaller."
+      },
+      {
+        "text": "The kinetic energy of the fastest electron the light ejects",
+        "why": "That is KE = hν − Φ: what is left over after the workfunction has been paid."
+      },
+      {
+        "text": "The energy carried by each photon that strikes the metal",
+        "why": "That is hν. The workfunction is the part of it needed just to free the electron from the surface."
+      }
+    ],
+    "explanation": "The workfunction is the minimum energy needed to remove an electron from the surface of the bulk (solid) metal, M(s) + Φ → M^+(s) + e^−. It is sometimes called the binding energy."
+  },
+  {
+    "id": "pc1-photoelectric-surface-electrons",
+    "type": "multiple-choice",
+    "prompt": "Why do the most energetic photoelectrons come from very close to the metal's surface?",
+    "choices": [
+      {
+        "text": "Deeper electrons lose some energy on the way to the surface",
+        "correct": true
+      },
+      {
+        "text": "Light cannot reach any electron below the very surface",
+        "why": "Electrons some distance into the metal can absorb photons too; they just lose some energy getting out."
+      },
+      {
+        "text": "Electrons near the surface absorb more than one photon",
+        "why": "One photon is absorbed by one electron. Electrons right at the surface simply lose no energy on the way out."
+      },
+      {
+        "text": "Electrons near the surface do not have to pay the workfunction",
+        "why": "Every electron pays the workfunction to leave. Deeper electrons also lose energy moving through the metal first."
+      }
+    ],
+    "explanation": "An electron some distance into the metal loses some energy as it moves toward the surface, and every electron pays the workfunction Φ to leave. So the fastest electrons are those from very close to the surface, which leave with KE = hν − Φ."
+  },
+  {
+    "id": "pc1-photoelectric-classical-amplitude",
+    "type": "multiple-choice",
+    "prompt": "In classical wave theory, what sets the energy carried by light?",
+    "choices": [
+      {
+        "text": "The square of its amplitude, whatever its frequency",
+        "correct": true
+      },
+      {
+        "text": "Its frequency, through E = hν",
+        "why": "That is the quantum view of Planck and Einstein. Classical theory tied the energy to the amplitude."
+      },
+      {
+        "text": "The number of photons it contains",
+        "why": "Classical theory had no photons: it treated light as a continuous wave whose energy depends on its amplitude."
+      },
+      {
+        "text": "Its speed, which differs from color to color",
+        "why": "All light travels at the same speed c in a vacuum. Classically, the energy depends on the square of the amplitude."
+      }
+    ],
+    "explanation": "Classical theory says the energy carried by light is proportional to the square of its amplitude, independent of its frequency. That could not explain why Lenard and Millikan found the electrons' energy depends on frequency; Planck and Einstein instead made the energy proportional to the frequency."
+  },
+  {
+    "id": "pc1-workfunction-metal-property",
+    "type": "multiple-choice",
+    "prompt": "If the light shining on a metal is changed to a higher frequency, what happens to the metal's workfunction?",
+    "choices": [
+      {
+        "text": "Nothing; the workfunction is a property of the metal",
+        "correct": true
+      },
+      {
+        "text": "It increases along with the frequency",
+        "why": "The photon energy hν goes up, but Φ belongs to the metal. The extra energy goes into the electron's kinetic energy."
+      },
+      {
+        "text": "It decreases, so electrons escape more easily",
+        "why": "Electrons do leave faster, but because hν is bigger, not because Φ changes."
+      },
+      {
+        "text": "It becomes equal to the new photon energy",
+        "why": "Φ equals hν only at the threshold frequency ν_0. Φ itself is fixed by the metal."
+      }
+    ],
+    "explanation": "The workfunction is an intrinsic property of the metal; Table 1.3.1 lists a value for each element. Changing the light changes hν, and so the kinetic energy KE = hν − Φ, but not Φ."
+  },
+  {
+    "id": "pc1-workfunction-table-potassium",
+    "type": "multiple-choice",
+    "prompt": "Photons with an energy of 2.5 eV shine on four metals. According to Table 1.3.1, which metal gives off photoelectrons?",
+    "choices": [
+      {
+        "text": "Potassium",
+        "correct": true
+      },
+      {
+        "text": "Copper",
+        "why": "Copper's workfunction is 4.7 eV, more than the 2.5 eV photon energy, so no electrons are ejected."
+      },
+      {
+        "text": "Aluminum",
+        "why": "Aluminum's workfunction is 4.20 eV, more than the 2.5 eV photon energy, so no electrons are ejected."
+      },
+      {
+        "text": "Iron",
+        "why": "Iron's workfunction is 4.67 eV, more than the 2.5 eV photon energy, so no electrons are ejected."
+      }
+    ],
+    "explanation": "A photon can eject an electron only if hν is at least the workfunction. Potassium's workfunction, 2.3 eV, is below 2.5 eV, so electrons come out with up to 0.2 eV of kinetic energy. Copper (4.7 eV), iron (4.67 eV) and aluminum (4.20 eV) need more energetic photons."
+  },
+  {
+    "id": "pc1-workfunction-from-kinetic-energy",
+    "type": "numeric",
+    "prompt": "Photons with an energy of 4.00 eV strike a metal, and the fastest ejected electrons have a kinetic energy of 1.70 eV. Using KE = hν − Φ, what is the metal's workfunction Φ, in eV?",
+    "answer": 2.3,
+    "unit": "eV",
+    "explanation": "Rearranging KE = hν − Φ gives Φ = hν − KE = 4.00 eV − 1.70 eV = 2.30 eV, close to potassium's 2.3 eV in Table 1.3.1."
+  },
+  {
+    "id": "pc1-photoelectric-stopping-voltage-cesium",
+    "type": "numeric",
+    "prompt": "Photons with an energy of 3.50 eV shine on cesium, whose workfunction is 1.95 eV. Using eV_stop = hν − Φ, what stopping voltage V_stop, in volts, turns back even the fastest electrons?",
+    "answer": 1.55,
+    "unit": "V",
+    "explanation": "eV_stop = hν − Φ = 3.50 eV − 1.95 eV = 1.55 eV. An electron with 1.55 eV of kinetic energy is just stopped by a potential of 1.55 V, so V_stop = 1.55 V."
+  },
+  {
+    "id": "pc1-photoelectric-threshold-frequency-calc",
+    "type": "numeric",
+    "prompt": "At the threshold frequency ν_0, the photon energy just equals the workfunction: hν_0 = Φ. A metal has Φ = 3.315 × 10^−19 J. Using h = 6.63 × 10^−34 J·s, what is ν_0, in Hz? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 500000000000000.0,
+    "unit": "Hz",
+    "explanation": "ν_0 = Φ/h = (3.315 × 10^−19 J)/(6.63 × 10^−34 J·s) = 5.00 × 10^14 Hz. Light of lower frequency, however bright, ejects no electrons from this metal."
+  },
+  {
+    "id": "pc1-photoelectric-joules-to-ev",
+    "type": "numeric",
+    "prompt": "A photon has an energy of 4.80 × 10^−19 J. Using 1 eV = 1.60 × 10^−19 J, what is its energy in eV?",
+    "answer": 3.0,
+    "unit": "eV",
+    "explanation": "E = (4.80 × 10^−19 J)/(1.60 × 10^−19 J/eV) = 3.00 eV. Atomic and molecular energies are typically a few eV, which is why the electron volt is a handy unit here."
+  },
+  {
+    "id": "pc1-photoelectric-threshold-wavelength-calc",
+    "type": "numeric",
+    "prompt": "The longest wavelength of light that can eject electrons from a metal is λ_0 = hc/Φ. With hc = 1240 eV·nm, what is λ_0, in nm, for a metal whose workfunction is 2.48 eV?",
+    "answer": 500,
+    "unit": "nm",
+    "explanation": "λ_0 = hc/Φ = (1240 eV·nm)/(2.48 eV) = 500 nm. Light of any longer wavelength has photons with less than 2.48 eV and ejects no electrons."
+  }
+]

@@ -1,0 +1,568 @@
+[
+  {
+    "id": "pc3-spread-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the uncertainty ΔA in a quantity A?",
+    "choices": [
+      {
+        "text": "√(⟨A^2⟩−⟨A⟩^2)",
+        "correct": true
+      },
+      {
+        "text": "⟨A^2⟩−⟨A⟩^2",
+        "why": "That is ΔA^2. Take its square root to get ΔA."
+      },
+      {
+        "text": "√(⟨A⟩^2−⟨A^2⟩)",
+        "why": "The order is reversed. ⟨A^2⟩ comes first; ⟨A⟩^2 is subtracted from it."
+      },
+      {
+        "text": "√(⟨A^2⟩) − ⟨A⟩",
+        "why": "Both terms are subtracted inside the square root: √(⟨A^2⟩−⟨A⟩^2)."
+      }
+    ],
+    "explanation": "ΔA = √(⟨A^2⟩−⟨A⟩^2), where ⟨A^2⟩ and ⟨A⟩ are expectation values for the particle's wavefunction. For position and momentum this gives Δx = √(⟨x^2⟩−⟨x⟩^2) and Δp = √(⟨p^2⟩−⟨p⟩^2)."
+  },
+  {
+    "id": "pc3-spread-a-squared",
+    "type": "multiple-choice",
+    "prompt": "In ΔA = √(⟨A^2⟩−⟨A⟩^2), what is ⟨A^2⟩?",
+    "choices": [
+      {
+        "text": "The expectation value of the operator Â^2",
+        "correct": true
+      },
+      {
+        "text": "The square of the average, ⟨A⟩ × ⟨A⟩",
+        "why": "That is ⟨A⟩^2, the other term. The average of A^2 and the square of the average of A generally differ, and the difference measures the spread."
+      },
+      {
+        "text": "The largest value of A^2 that can be measured",
+        "why": "⟨A^2⟩ is an average, found from an expectation-value integral with Â^2."
+      },
+      {
+        "text": "The probability of measuring A twice",
+        "why": "⟨A^2⟩ is not a probability. It is the average of A^2, from ∫ψ^*Â^2ψ dx."
+      }
+    ],
+    "explanation": "⟨A^2⟩ is the expectation value of Â^2, the operator applied twice; for position it is ⟨x^2⟩ = ∫Ψ^*x^2Ψ dx. It is not the same as ⟨A⟩^2."
+  },
+  {
+    "id": "pc3-spread-depends-on-state",
+    "type": "multiple-choice",
+    "prompt": "What does the uncertainty ΔA calculated in this section depend on?",
+    "choices": [
+      {
+        "text": "The wavefunction, since ⟨A⟩ and ⟨A^2⟩ are calculated from it",
+        "correct": true
+      },
+      {
+        "text": "Only the quality of the measuring instrument",
+        "why": "This ΔA comes from the wavefunction itself, through the expectation values ⟨A⟩ and ⟨A^2⟩, not from the instrument."
+      },
+      {
+        "text": "Only the operator Â, so it is the same for every state",
+        "why": "Different wavefunctions give different expectation values, so different uncertainties."
+      },
+      {
+        "text": "Only ħ, so it is always ħ/2",
+        "why": "ħ/2 is the lower limit for the product ΔpΔx. ΔA itself is set by the wavefunction."
+      }
+    ],
+    "explanation": "⟨A⟩ and ⟨A^2⟩ are expectation values of Â and Â^2 for a specific wavefunction, so the uncertainty ΔA is a property of the state the particle is in."
+  },
+  {
+    "id": "pc3-spread-position-value",
+    "type": "numeric",
+    "prompt": "A particle's wavefunction gives ⟨x⟩ = 3.0 nm and ⟨x^2⟩ = 13.0 nm^2. Using Δx = √(⟨x^2⟩−⟨x⟩^2), what is Δx, in nm?",
+    "answer": 2.0,
+    "unit": "nm",
+    "explanation": "Δx = √(13.0 nm^2 − (3.0 nm)^2) = √(13.0 − 9.0) nm = √(4.0) nm = 2.0 nm."
+  },
+  {
+    "id": "pc3-spread-not-compatible",
+    "type": "multiple-choice",
+    "prompt": "The section says the operators x̂ and p̂ are not compatible. What does this mean?",
+    "choices": [
+      {
+        "text": "No measurement can find both x and p exactly at the same time",
+        "correct": true
+      },
+      {
+        "text": "x and p can never be measured at all",
+        "why": "Each can be measured. What is ruled out is finding both precisely at the same time."
+      },
+      {
+        "text": "x and p have different units, so they can't be compared",
+        "why": "Compatibility is not about units. It means whether both can be known exactly together."
+      },
+      {
+        "text": "x and p always average to zero",
+        "why": "Their averages can be anything; a particle in a box has ⟨x⟩ = L/2. Not compatible means no simultaneous exact measurement."
+      }
+    ],
+    "explanation": "Because x̂ and p̂ are not compatible, no measurement can precisely determine x and p simultaneously. The uncertainty relation tells you how uncertain one must be, given the precision of the other."
+  },
+  {
+    "id": "pc3-spread-infinite",
+    "type": "multiple-choice",
+    "prompt": "Suppose a particle's position were known with infinite precision (Δx = 0). What would the uncertainty in its momentum be?",
+    "choices": [
+      {
+        "text": "Infinite",
+        "correct": true
+      },
+      {
+        "text": "Zero",
+        "why": "Then ΔpΔx would be 0, below the limit ħ/2. Knowing x exactly makes p completely uncertain."
+      },
+      {
+        "text": "Exactly ħ/2",
+        "why": "ħ/2 is the limit for the product ΔpΔx, not for Δp. With Δx = 0, no finite Δp keeps the product at least ħ/2."
+      },
+      {
+        "text": "The same as before Δx was reduced",
+        "why": "The two uncertainties are linked: making Δx smaller forces Δp to grow."
+      }
+    ],
+    "explanation": "If one quantity could be determined with infinite precision, there would be an infinite uncertainty in the other. That follows from ΔpΔx ≥ ħ/2."
+  },
+  {
+    "id": "pc3-spread-principle",
+    "type": "multiple-choice",
+    "prompt": "How does the section write the Heisenberg uncertainty principle?",
+    "choices": [
+      {
+        "text": "ΔpΔx ≥ ħ/2",
+        "correct": true
+      },
+      {
+        "text": "ΔpΔx ≤ ħ/2",
+        "why": "The inequality goes the other way: ħ/2 is the smallest the product can be, not the largest."
+      },
+      {
+        "text": "ΔpΔx = 0",
+        "why": "The product can never be zero; it is at least ħ/2."
+      },
+      {
+        "text": "Δp + Δx ≥ ħ/2",
+        "why": "The principle limits the product of the uncertainties, not their sum."
+      }
+    ],
+    "explanation": "ΔpΔx ≥ ħ/2: the product of the uncertainties in momentum and position can never be smaller than ħ/2. The more precisely one is known, the less precisely the other can be."
+  },
+  {
+    "id": "pc3-spread-minimum-momentum",
+    "type": "numeric",
+    "prompt": "An electron's position is uncertain by Δx = 1.0 × 10^−10 m. Using ΔpΔx ≥ ħ/2 with ħ = 1.055 × 10^−34 J·s, what is the smallest possible Δp, in kg·m/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 5.275e-25,
+    "explanation": "Δp ≥ ħ/(2Δx) = (1.055 × 10^−34 J·s)/(2 × 1.0 × 10^−10 m) = 5.3 × 10^−25 kg·m/s (5.275 × 10^−25 before rounding)."
+  },
+  {
+    "id": "pc3-spread-check-pair",
+    "type": "multiple-choice",
+    "prompt": "A proposed state has Δx = 1.0 × 10^−10 m and Δp = 1.0 × 10^−25 kg·m/s. With ħ = 1.055 × 10^−34 J·s, does it obey ΔpΔx ≥ ħ/2?",
+    "choices": [
+      {
+        "text": "No: ΔpΔx = 1.0 × 10^−35 J·s, which is less than ħ/2",
+        "correct": true
+      },
+      {
+        "text": "Yes: ΔpΔx = 1.0 × 10^−35 J·s, which is more than ħ/2",
+        "why": "ħ/2 = 5.3 × 10^−35 J·s, which is larger than 1.0 × 10^−35 J·s, so the product is too small."
+      },
+      {
+        "text": "Yes: any two small uncertainties are allowed",
+        "why": "Their product must be at least ħ/2 = 5.3 × 10^−35 J·s, and this one is only 1.0 × 10^−35 J·s."
+      },
+      {
+        "text": "No: ΔpΔx must equal ħ/2 exactly",
+        "why": "The principle is an inequality; a product larger than ħ/2 is fine. This one fails because it is smaller."
+      }
+    ],
+    "explanation": "ΔpΔx = (1.0 × 10^−10 m)(1.0 × 10^−25 kg·m/s) = 1.0 × 10^−35 J·s, while ħ/2 = 5.3 × 10^−35 J·s. The product is below the limit, so no real state can have these uncertainties."
+  },
+  {
+    "id": "pc3-spread-factor",
+    "type": "numeric",
+    "prompt": "The smallest Δp allowed by ΔpΔx ≥ ħ/2 is ħ/(2Δx). If Δx is made 3 times smaller, how many times larger does this smallest Δp become?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The smallest Δp is ħ/(2Δx), inversely proportional to Δx. Dividing Δx by 3 multiplies it by 3."
+  },
+  {
+    "id": "pc3-spread-free-particle",
+    "type": "multiple-choice",
+    "prompt": "Which case does the section give for Δp approaching 0, so that Δx approaches ∞?",
+    "choices": [
+      {
+        "text": "A free particle, with V(x) = 0 everywhere",
+        "correct": true
+      },
+      {
+        "text": "A particle trapped in a one-dimensional box",
+        "why": "A particle in a box is confined to length L, so Δx stays finite and Δp can't approach 0."
+      },
+      {
+        "text": "The Gaussian wavefunction of Example 3.8.1",
+        "why": "The Gaussian has a finite Δx = 1/(2√a) and a finite Δp = ħ√a."
+      },
+      {
+        "text": "A particle held still at one known point",
+        "why": "That would be Δx approaching 0, the opposite case, which makes Δp approach ∞."
+      }
+    ],
+    "explanation": "As Δp approaches 0, Δx must approach ∞. That is the case of the free particle, whose momentum can be determined precisely while its position is completely uncertain."
+  },
+  {
+    "id": "pc3-spread-box-not-zero",
+    "type": "multiple-choice",
+    "prompt": "A particle in a box is confined to a length L, so Δx is finite. What does ΔpΔx ≥ ħ/2 then say about Δp?",
+    "choices": [
+      {
+        "text": "Δp can't be zero",
+        "correct": true
+      },
+      {
+        "text": "Δp must be zero, because ⟨p⟩ = 0",
+        "why": "An average of zero doesn't mean no spread. +p and −p average to 0, but they differ, so Δp is not zero."
+      },
+      {
+        "text": "Δp must be infinite",
+        "why": "Δp would have to be infinite only if Δx were 0. A finite Δx needs only a finite, nonzero Δp."
+      },
+      {
+        "text": "Nothing, because the principle applies only to free particles",
+        "why": "The principle applies to every wavefunction, bound or free."
+      }
+    ],
+    "explanation": "If Δp were 0, the product ΔpΔx would be 0, below ħ/2. With Δx finite, Δp must be at least ħ/(2Δx), so it can't be zero."
+  },
+  {
+    "id": "pc3-spread-large-dx",
+    "type": "multiple-choice",
+    "prompt": "What does a large Δx tell you about a particle?",
+    "choices": [
+      {
+        "text": "Its measured positions are widely spread",
+        "correct": true
+      },
+      {
+        "text": "It is, on average, far from the origin",
+        "why": "Where the particle is on average is ⟨x⟩. Δx is the spread; the Gaussian has ⟨x⟩ = 0 but Δx > 0."
+      },
+      {
+        "text": "It is moving fast along the x direction",
+        "why": "Speed relates to momentum. Δx is about how spread out the position results are."
+      },
+      {
+        "text": "Its position has been measured very precisely",
+        "why": "That would be a small Δx. A large Δx means the position is very uncertain."
+      }
+    ],
+    "explanation": "Δx measures the spread of the position results about their average ⟨x⟩. A large Δx means the position is very uncertain; it says nothing about where the average lies."
+  },
+  {
+    "id": "pc3-spread-braket",
+    "type": "multiple-choice",
+    "prompt": "What does ⟨Ψ(t)|x̂|Ψ(t)⟩ stand for?",
+    "choices": [
+      {
+        "text": "The integral ∫Ψ^*xΨ dx, the average position",
+        "correct": true
+      },
+      {
+        "text": "The probability of finding the particle at x",
+        "why": "That is Ψ^*Ψ at that point. The bra-ket with x̂ in the middle is the average position, ⟨x⟩."
+      },
+      {
+        "text": "The uncertainty in position, Δx, at time t",
+        "why": "Δx also needs ⟨x^2⟩: Δx = √(⟨x^2⟩−⟨x⟩^2). This bra-ket is just ⟨x⟩."
+      },
+      {
+        "text": "The normalization integral ∫Ψ^*Ψ dx, equal to 1",
+        "why": "That integral has no x̂ in it. With x̂ in the middle, the bra-ket gives ⟨x⟩."
+      }
+    ],
+    "explanation": "Dirac's bra-ket notation is shorthand for the integral: ⟨Ψ(t)|x̂|Ψ(t)⟩ = ∫Ψ^*(x, t)xΨ(x, t) dx = ⟨x⟩."
+  },
+  {
+    "id": "pc3-spread-p-squared-operator",
+    "type": "multiple-choice",
+    "prompt": "Which operator is used in the integral for ⟨p^2⟩?",
+    "choices": [
+      {
+        "text": "−ħ^2 ∂^2/∂x^2",
+        "correct": true
+      },
+      {
+        "text": "−iħ ∂/∂x",
+        "why": "That is p̂ itself, used for ⟨p⟩. ⟨p^2⟩ needs p̂ applied twice."
+      },
+      {
+        "text": "ħ^2 ∂^2/∂x^2",
+        "why": "The sign is wrong: applying −iħ ∂/∂x twice gives (−iħ)^2 = i^2ħ^2 = −ħ^2."
+      },
+      {
+        "text": "x^2",
+        "why": "x^2 is used for ⟨x^2⟩, the average of position squared."
+      }
+    ],
+    "explanation": "p̂^2 is p̂ = −iħ ∂/∂x applied twice: (−iħ)^2 ∂^2/∂x^2 = −ħ^2 ∂^2/∂x^2. So ⟨p^2⟩ = ∫Ψ^*(−ħ^2 ∂^2/∂x^2)Ψ dx."
+  },
+  {
+    "id": "pc3-spread-partial",
+    "type": "multiple-choice",
+    "prompt": "Why does the section write the momentum operator as p̂x = −iħ ∂/∂x, with a partial derivative?",
+    "choices": [
+      {
+        "text": "Ψ depends on x and t, and p̂ differentiates only in x",
+        "correct": true
+      },
+      {
+        "text": "p̂ differentiates with respect to both x and t",
+        "why": "p̂ differentiates only with respect to x; t is held fixed. That is what the partial derivative means."
+      },
+      {
+        "text": "The derivative is taken twice, once for each variable",
+        "why": "Taking it twice gives p̂^2. The ∂ shows that only one of several variables, x, is being varied."
+      },
+      {
+        "text": "Momentum is only partly known, by the uncertainty principle",
+        "why": "The word \"partial\" is about calculus: differentiating with respect to one variable while holding the others fixed."
+      }
+    ],
+    "explanation": "The wavefunction Ψ(x, t) is a function of both x and t. The momentum operator varies x while holding t fixed, which is a partial derivative, ∂/∂x."
+  },
+  {
+    "id": "pc3-spread-stationary",
+    "type": "multiple-choice",
+    "prompt": "If V(x) does not depend on time, how do expectation values from Ψ(x, t) = ψ(x)e^(−iEt/ħ) compare with those from ψ(x)?",
+    "choices": [
+      {
+        "text": "They are the same, and they don't change with time",
+        "correct": true
+      },
+      {
+        "text": "They oscillate in time with frequency E/h",
+        "why": "The time factor cancels out of every expectation value, so nothing oscillates."
+      },
+      {
+        "text": "They are smaller by the factor e^(−iEt/ħ)",
+        "why": "The factor e^(−iEt/ħ) cancels against e^(+iEt/ħ) from Ψ^*, so it leaves no trace."
+      },
+      {
+        "text": "They are complex, while those from ψ(x) are real",
+        "why": "The time factor cancels, so both give the same value."
+      }
+    ],
+    "explanation": "If V(x) is time independent, the wavefunctions are stationary and their expectation values are time independent. You get the same answer from Ψ(x, t) = ψ(x)e^(−iEt/ħ) as from ψ(x)."
+  },
+  {
+    "id": "pc3-spread-phase-cancels",
+    "type": "multiple-choice",
+    "prompt": "For a stationary state Ψ(x, t) = ψ(x)e^(−iEt/ħ), why does the time factor drop out of ∫Ψ^*xΨ dx?",
+    "choices": [
+      {
+        "text": "e^(+iEt/ħ) from Ψ^* times e^(−iEt/ħ) is 1",
+        "correct": true
+      },
+      {
+        "text": "e^(−iEt/ħ) itself equals 1 at every time t",
+        "why": "e^(−iEt/ħ) changes with time. Only its product with its complex conjugate, e^(+iEt/ħ), is always 1."
+      },
+      {
+        "text": "The energy E is zero for every stationary state",
+        "why": "A stationary state has a definite energy E, which need not be zero. The factor cancels against its conjugate."
+      },
+      {
+        "text": "The integral is only ever taken at time t = 0",
+        "why": "The factor cancels at every time t, because Ψ^* brings in e^(+iEt/ħ)."
+      }
+    ],
+    "explanation": "Taking the complex conjugate flips the sign of i, so Ψ^* = ψ^*(x)e^(+iEt/ħ). Multiplying by Ψ gives e^(+iEt/ħ)e^(−iEt/ħ) = e^0 = 1, so only ψ(x) is left in the integral."
+  },
+  {
+    "id": "pc3-spread-gaussian-mean",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.8.1, why is ⟨x⟩ = 0 for the Gaussian ψ(x) = ((2a)/π)^(1/4)e^(−ax²)?",
+    "choices": [
+      {
+        "text": "The integrand is odd, so −x and +x parts cancel",
+        "correct": true
+      },
+      {
+        "text": "ψ is zero at x = 0, so the integral is zero",
+        "why": "The Gaussian is largest at x = 0. ⟨x⟩ = 0 because it is symmetric about x = 0."
+      },
+      {
+        "text": "The particle is always found exactly at x = 0",
+        "why": "Its position is spread out, with Δx = 1/(2√a). Only the average is 0."
+      },
+      {
+        "text": "The constant a is zero for this wavefunction",
+        "why": "a is a positive constant; with a = 0 there would be no Gaussian."
+      }
+    ],
+    "explanation": "The integrand is x times e^(−2ax²), an odd function times an even one, so it is odd and its integral from −∞ to ∞ is 0. The Gaussian is symmetric about x = 0, so the average position is 0."
+  },
+  {
+    "id": "pc3-spread-even-odd",
+    "type": "multiple-choice",
+    "prompt": "Example 3.8.1 uses a rule about even and odd functions. What is an even function times an odd function?",
+    "choices": [
+      {
+        "text": "An odd function",
+        "correct": true
+      },
+      {
+        "text": "An even function",
+        "why": "An even function times an even function is even. Even times odd is odd."
+      },
+      {
+        "text": "Zero everywhere",
+        "why": "The product isn't zero; only its integral over a range symmetric about 0 is."
+      },
+      {
+        "text": "Neither even nor odd",
+        "why": "Even times odd is always odd: f(−x)g(−x) = f(x)(−g(x)) = −f(x)g(x)."
+      }
+    ],
+    "explanation": "If f is even and g is odd, then f(−x)g(−x) = −f(x)g(x), so the product is odd. An odd function integrated from −∞ to ∞ gives 0, which is how the example gets ⟨x⟩ = 0 and ⟨p⟩ = 0."
+  },
+  {
+    "id": "pc3-spread-gaussian-x-squared",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.8.1, ⟨x⟩ = 0 but ⟨x^2⟩ = 1/(4a). Why doesn't ⟨x^2⟩ come out zero too?",
+    "choices": [
+      {
+        "text": "x^2 is never negative, so nothing cancels",
+        "correct": true
+      },
+      {
+        "text": "The Gaussian is not normalized",
+        "why": "It is normalized; the factor ((2a)/π)^(1/4) does that. The difference is that x^2 is even."
+      },
+      {
+        "text": "x^2 is an odd function, like x itself",
+        "why": "x^2 is even: (−x)^2 = x^2. That is why its integral doesn't cancel."
+      },
+      {
+        "text": "The Gaussian is not symmetric about x = 0",
+        "why": "It is symmetric, which is why ⟨x⟩ = 0. ⟨x^2⟩ survives because x^2 is never negative."
+      }
+    ],
+    "explanation": "x^2 e^(−2ax²) is positive on both sides of x = 0, so there is no cancellation and ⟨x^2⟩ = 1/(4a) > 0. This is what makes Δx = √(1/(4a) − 0) nonzero."
+  },
+  {
+    "id": "pc3-spread-mean-zero",
+    "type": "multiple-choice",
+    "prompt": "For a state with ⟨p⟩ = 0, what does Δp = √(⟨p^2⟩−⟨p⟩^2) become?",
+    "choices": [
+      {
+        "text": "√(⟨p^2⟩)",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "⟨p⟩ = 0 doesn't mean p is known exactly; ⟨p^2⟩ is usually not zero, so neither is Δp."
+      },
+      {
+        "text": "⟨p^2⟩",
+        "why": "The square root is still there: Δp = √(⟨p^2⟩ − 0)."
+      },
+      {
+        "text": "Infinity",
+        "why": "Nothing becomes infinite here. Only the ⟨p⟩^2 term drops out."
+      }
+    ],
+    "explanation": "With ⟨p⟩ = 0 the second term vanishes, so Δp = √(⟨p^2⟩). For the Gaussian of Example 3.8.1, ⟨p^2⟩ = aħ^2, so Δp = ħ√a."
+  },
+  {
+    "id": "pc3-spread-gaussian-dx",
+    "type": "numeric",
+    "prompt": "For the Gaussian wavefunction of Example 3.8.1, Δx = 1/(2√a). If a = 4.0 nm^−2, what is Δx, in nm?",
+    "answer": 0.25,
+    "unit": "nm",
+    "explanation": "√a = √(4.0 nm^−2) = 2.0 nm^−1, so Δx = 1/(2 × 2.0 nm^−1) = 0.25 nm."
+  },
+  {
+    "id": "pc3-spread-gaussian-dp",
+    "type": "numeric",
+    "prompt": "For the Gaussian wavefunction of Example 3.8.1, Δp = ħ√a. If a = 1.0 × 10^20 m^−2 and ħ = 1.055 × 10^−34 J·s, what is Δp, in kg·m/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.055e-24,
+    "explanation": "√a = √(1.0 × 10^20 m^−2) = 1.0 × 10^10 m^−1, so Δp = (1.055 × 10^−34 J·s)(1.0 × 10^10 m^−1) = 1.055 × 10^−24 kg·m/s."
+  },
+  {
+    "id": "pc3-spread-gaussian-a",
+    "type": "multiple-choice",
+    "prompt": "For the Gaussian of Example 3.8.1, Δx = 1/(2√a) and Δp = ħ√a. If the constant a is made larger, how do Δx and Δp change?",
+    "choices": [
+      {
+        "text": "Δx gets smaller and Δp gets larger",
+        "correct": true
+      },
+      {
+        "text": "Both get larger",
+        "why": "a is in the denominator of Δx, so a larger a makes Δx smaller."
+      },
+      {
+        "text": "Both get smaller",
+        "why": "Δp = ħ√a grows with a. The two always change in opposite directions."
+      },
+      {
+        "text": "Δx gets larger and Δp gets smaller",
+        "why": "It is the other way round: √a is in the denominator of Δx and the numerator of Δp."
+      }
+    ],
+    "explanation": "A larger a makes the Gaussian narrower, so Δx = 1/(2√a) shrinks while Δp = ħ√a grows. Their product stays (1/(2√a))(ħ√a) = ħ/2."
+  },
+  {
+    "id": "pc3-spread-gaussian-minimum",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.8.1, ΔpΔx for the Gaussian comes out exactly ħ/2. What does this show?",
+    "choices": [
+      {
+        "text": "It has the smallest product the principle allows",
+        "correct": true
+      },
+      {
+        "text": "The Gaussian breaks the uncertainty principle",
+        "why": "The principle says ΔpΔx ≥ ħ/2, and equal to ħ/2 is allowed."
+      },
+      {
+        "text": "Every wavefunction gives a product of exactly ħ/2",
+        "why": "Most wavefunctions give a larger product. The section calls the Gaussian special because it reaches the equality."
+      },
+      {
+        "text": "The Gaussian's position is known exactly at x = 0",
+        "why": "Its Δx = 1/(2√a) is not zero; only the product of the uncertainties is as small as possible."
+      }
+    ],
+    "explanation": "ΔpΔx = (1/(2√a))(ħ√a) = ħ/2. The principle holds, and the equality is reached, which makes the Gaussian a special, minimum-uncertainty wavefunction."
+  },
+  {
+    "id": "pc3-spread-wave-origin",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the uncertainty principle a consequence of?",
+    "choices": [
+      {
+        "text": "The wave property of matter",
+        "correct": true
+      },
+      {
+        "text": "Clumsy or imprecise measuring instruments",
+        "why": "The uncertainties here are calculated from the wavefunction itself, not from any instrument."
+      },
+      {
+        "text": "Heat from the surroundings",
+        "why": "Temperature plays no part. The uncertainty comes from the particle behaving as a wave."
+      },
+      {
+        "text": "The electric charge of the particle",
+        "why": "It applies to any particle. It comes from the wave nature of matter."
+      }
+    ],
+    "explanation": "A wave has some finite extent in space and is generally not localized at a point. So a quantum particle, described by a wave, usually has a significant uncertainty in its position."
+  }
+]

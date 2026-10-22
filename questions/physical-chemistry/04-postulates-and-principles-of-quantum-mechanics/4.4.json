@@ -1,0 +1,593 @@
+[
+  {
+    "id": "pc4-timedep-two-flavors",
+    "type": "multiple-choice",
+    "prompt": "What are the two \"flavors\" of the Schrödinger equation described in this section?",
+    "choices": [
+      {
+        "text": "The time-dependent and the time-independent Schrödinger equations",
+        "correct": true
+      },
+      {
+        "text": "The classical and the quantum Schrödinger equations",
+        "why": "The Schrödinger equation is a quantum equation; its classical counterpart is Newton's second law. The two flavors are the time-dependent and time-independent equations."
+      },
+      {
+        "text": "The one-dimensional and the three-dimensional Schrödinger equations",
+        "why": "The number of dimensions can change, but the two flavors the section contrasts are the time-dependent and the time-independent equations."
+      },
+      {
+        "text": "The equation for stationary states and the equation for collapsed states",
+        "why": "Collapse is caused by a measurement, not by a separate equation. The two flavors are the time-dependent and time-independent equations."
+      }
+    ],
+    "explanation": "There are two versions: the time-dependent Schrödinger equation, ĤΨ(x, t) = iħ (∂/∂t)Ψ(x, t), which tells how a wavefunction changes in time, and the time-independent one, Ĥψ(x) = Eψ(x), which gives the allowed energies and stationary-state wavefunctions."
+  },
+  {
+    "id": "pc4-timedep-tise-missing",
+    "type": "multiple-choice",
+    "prompt": "The time-independent Schrödinger equation, Ĥψ(x) = Eψ(x), gives the allowed energies and their wavefunctions. What does it not tell us?",
+    "choices": [
+      {
+        "text": "How the system evolves in time",
+        "correct": true
+      },
+      {
+        "text": "Which energies the system is allowed to have",
+        "why": "That is exactly what Ĥψ(x) = Eψ(x) gives: the allowed energies E. What it leaves out is how the system changes in time."
+      },
+      {
+        "text": "The wavefunction that goes with each allowed energy",
+        "why": "The time-independent equation does give these wavefunctions ψ(x). It is silent about how a state changes in time."
+      },
+      {
+        "text": "The probability density |ψ(x)|^2 of each allowed state",
+        "why": "Once you have ψ(x), you have its probability density |ψ(x)|^2. The missing piece is the time evolution."
+      }
+    ],
+    "explanation": "Ĥψ(x) = Eψ(x) yields the allowed energies and the corresponding wavefunctions, but it contains no t, so it cannot say how a state evolves in time. That job belongs to the time-dependent Schrödinger equation."
+  },
+  {
+    "id": "pc4-timedep-classical-time",
+    "type": "multiple-choice",
+    "prompt": "In classical mechanics, which equation tells how the position of a particle changes in time?",
+    "choices": [
+      {
+        "text": "Newton's second law, m (d^2x)/(dt^2) = F(x)",
+        "correct": true
+      },
+      {
+        "text": "The time-dependent Schrödinger equation",
+        "why": "That is the quantum-mechanical equation for how a wavefunction evolves. Classical positions and velocities follow Newton's second law."
+      },
+      {
+        "text": "The time-independent equation Ĥψ(x) = Eψ(x)",
+        "why": "That is a quantum equation, and it contains no time at all. Classical motion follows m (d^2x)/(dt^2) = F(x)."
+      },
+      {
+        "text": "The de Broglie relation λ = h/p",
+        "why": "That links a particle's wavelength to its momentum; it does not give motion in time. Newton's second law does."
+      }
+    ],
+    "explanation": "Classical mechanics gives the time dependence of positions and velocities by solving Newton's second law, m (d^2x)/(dt^2) = F(x). Quantum mechanics needs its own equation for time, the time-dependent Schrödinger equation."
+  },
+  {
+    "id": "pc4-timedep-what-evolves",
+    "type": "multiple-choice",
+    "prompt": "In quantum mechanics, what is it that evolves in time?",
+    "choices": [
+      {
+        "text": "The wavefunction and its probability density",
+        "correct": true
+      },
+      {
+        "text": "The exact path of the particle, as in classical mechanics",
+        "why": "Quantum mechanics does not give a definite path. What changes with time is the wavefunction, and with it the probability density."
+      },
+      {
+        "text": "The allowed energies E_n of the system",
+        "why": "The allowed energies are fixed values set by the Hamiltonian. It is the wavefunction (and its probability density) that evolves."
+      },
+      {
+        "text": "Nothing: quantum systems do not change in time",
+        "why": "Quantum systems do change: the time-dependent Schrödinger equation tells how the wavefunction evolves."
+      }
+    ],
+    "explanation": "The section's answer to \"what must evolve in time?\" is the wavefunction, and with it the probability density p(x, t) = |Ψ(x, t)|^2. The time-dependent Schrödinger equation tells how."
+  },
+  {
+    "id": "pc4-timedep-tdse-form",
+    "type": "multiple-choice",
+    "prompt": "Which of these is the time-dependent Schrödinger equation?",
+    "choices": [
+      {
+        "text": "ĤΨ(x, t) = iħ (∂/∂t)Ψ(x, t)",
+        "correct": true
+      },
+      {
+        "text": "Ĥψ(x) = Eψ(x)",
+        "why": "That is the time-independent Schrödinger equation; it has no t in it. The time-dependent one has iħ (∂/∂t) on the right."
+      },
+      {
+        "text": "ĤΨ(x, t) = −iħ (∂/∂t)Ψ(x, t)",
+        "why": "Check the sign: the equation is ĤΨ = +iħ (∂/∂t)Ψ. With that sign, ψ_n(x)e^(−iE_n t/ħ) is a solution."
+      },
+      {
+        "text": "m (d^2x)/(dt^2) = F(x)",
+        "why": "That is Newton's second law, the classical equation of motion. The quantum equation acts on the wavefunction: ĤΨ = iħ (∂/∂t)Ψ."
+      }
+    ],
+    "explanation": "The time-dependent Schrödinger equation is ĤΨ(x, t) = iħ (∂/∂t)Ψ(x, t). Starting from Ψ(x, 0), it tells how the wavefunction Ψ(x, t) evolves."
+  },
+  {
+    "id": "pc4-timedep-postulate-v",
+    "type": "multiple-choice",
+    "prompt": "What does Postulate V of quantum mechanics state?",
+    "choices": [
+      {
+        "text": "Wavefunctions change in time according to the time-dependent Schrödinger equation",
+        "correct": true
+      },
+      {
+        "text": "Eigenfunctions of a Hermitian operator with different eigenvalues are orthogonal",
+        "why": "That is a theorem about eigenfunctions, not Postulate V. Postulate V says the time-dependent Schrödinger equation governs how wavefunctions change in time."
+      },
+      {
+        "text": "A wavefunction stays exactly the same once the system has been prepared",
+        "why": "Wavefunctions do change in time; Postulate V says the time-dependent Schrödinger equation governs how."
+      },
+      {
+        "text": "Measuring the energy never changes the state of the system",
+        "why": "A measurement does change a quantum state (the collapse of the wavefunction). Postulate V is about time evolution by the time-dependent Schrödinger equation."
+      }
+    ],
+    "explanation": "Postulate V: the time dependence of wavefunctions is governed by the time-dependent Schrödinger equation, ĤΨ(x, t) = iħ (∂/∂t)Ψ(x, t)."
+  },
+  {
+    "id": "pc4-timedep-initial-any-state",
+    "type": "multiple-choice",
+    "prompt": "Does the starting wavefunction Ψ(x, 0) have to be one of the eigenstates ψ_n(x)?",
+    "choices": [
+      {
+        "text": "No; it can be other states too, such as a mixture of eigenstates",
+        "correct": true
+      },
+      {
+        "text": "Yes; otherwise the time-dependent equation has no solution",
+        "why": "The time-dependent Schrödinger equation evolves any starting state Ψ(x, 0). A mixture like (1/√2)[ψ_1(x) + ψ_2(x)] works too."
+      },
+      {
+        "text": "Yes; it must always be the ground state ψ_1(x)",
+        "why": "The system can start in an excited state or in a mixture. The section notes that Ψ(x, 0) need not be an eigenstate at all."
+      },
+      {
+        "text": "Yes; only eigenstates have a probability density",
+        "why": "Any wavefunction has a probability density, |Ψ(x, 0)|^2. Ψ(x, 0) does not need to be an eigenstate."
+      }
+    ],
+    "explanation": "The section notes that Ψ(x, 0) does not necessarily need to be one of the eigenstates ψ_n(x). For example, it can be a mixture like (1/√2)[ψ_1(x) + ψ_2(x)], which is a nonstationary state."
+  },
+  {
+    "id": "pc4-timedep-initial-density",
+    "type": "multiple-choice",
+    "prompt": "A system is prepared at t = 0 with amplitude Ψ(x, 0). How is its probability density p(x, 0) related to Ψ(x, 0)?",
+    "choices": [
+      {
+        "text": "p(x, 0) = |Ψ(x, 0)|^2",
+        "correct": true
+      },
+      {
+        "text": "p(x, 0) = Ψ(x, 0)",
+        "why": "Ψ can be negative or complex, so it cannot be a probability itself. The probability density is its square magnitude, |Ψ(x, 0)|^2."
+      },
+      {
+        "text": "p(x, 0) = √(Ψ(x, 0))",
+        "why": "The probability density is the square of the magnitude, not the square root: p(x, 0) = |Ψ(x, 0)|^2."
+      },
+      {
+        "text": "p(x, 0) = 2Ψ(x, 0)",
+        "why": "The probability density comes from squaring the magnitude of Ψ, not from doubling it."
+      }
+    ],
+    "explanation": "The probability density is the square of the magnitude of the amplitude: p(x, 0) = |Ψ(x, 0)|^2. Ψ itself can be negative or complex, but |Ψ|^2 is real and never negative."
+  },
+  {
+    "id": "pc4-timedep-stationary-form",
+    "type": "multiple-choice",
+    "prompt": "A system starts in the eigenstate Ψ(x, 0) = ψ_n(x), which has energy E_n. What is Ψ(x, t) at a later time t?",
+    "choices": [
+      {
+        "text": "ψ_n(x)e^(−iE_n t/ħ)",
+        "correct": true
+      },
+      {
+        "text": "ψ_n(x), with no time dependence at all",
+        "why": "Even a stationary state carries a time factor: Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ). Only its probability density is constant."
+      },
+      {
+        "text": "ψ_n(x)e^(−E_n t/ħ)",
+        "why": "Without the i this is a decaying exponential, so the wavefunction would shrink away. The time factor is e^(−iE_n t/ħ), which only changes the phase."
+      },
+      {
+        "text": "e^(−iE_n t/ħ), with no dependence on x",
+        "why": "The spatial shape ψ_n(x) is still there; the time factor multiplies it: Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ)."
+      }
+    ],
+    "explanation": "If Ψ(x, 0) = ψ_n(x), then Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ). The eigenstate keeps its shape and is multiplied by a time factor that depends on its energy E_n."
+  },
+  {
+    "id": "pc4-timedep-time-derivative",
+    "type": "multiple-choice",
+    "prompt": "What is the time derivative dΨ/dt of Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ)?",
+    "choices": [
+      {
+        "text": "(−iE_n/ħ)ψ_n(x)e^(−iE_n t/ħ)",
+        "correct": true
+      },
+      {
+        "text": "ψ_n(x)e^(−iE_n t/ħ)",
+        "why": "The derivative of e^(at) is ae^(at), so a factor a = −iE_n/ħ comes down in front."
+      },
+      {
+        "text": "(iE_n/ħ)ψ_n(x)e^(−iE_n t/ħ)",
+        "why": "Check the sign: the exponent is −iE_n t/ħ, so the factor that comes down is −iE_n/ħ."
+      },
+      {
+        "text": "0, because a stationary state does not change",
+        "why": "Ψ(x, t) does change: its phase factor e^(−iE_n t/ħ) depends on t. Only the probability density stays constant."
+      }
+    ],
+    "explanation": "Using d/dt e^(at) = ae^(at) with a = −iE_n/ħ: dΨ/dt = (−iE_n/ħ)ψ_n(x)e^(−iE_n t/ħ). ψ_n(x) does not depend on t, so it just comes along."
+  },
+  {
+    "id": "pc4-timedep-ih-times-derivative",
+    "type": "multiple-choice",
+    "prompt": "For Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ), the time derivative is dΨ/dt = (−iE_n/ħ)Ψ. What is iħ(dΨ/dt)?",
+    "choices": [
+      {
+        "text": "E_n ψ_n(x)e^(−iE_n t/ħ)",
+        "correct": true
+      },
+      {
+        "text": "−E_n ψ_n(x)e^(−iE_n t/ħ)",
+        "why": "i × (−i) = −i^2 = +1, so the sign is positive: iħ(dΨ/dt) = E_n Ψ."
+      },
+      {
+        "text": "(E_n/ħ)ψ_n(x)e^(−iE_n t/ħ)",
+        "why": "The ħ in iħ cancels the ħ in −iE_n/ħ, leaving just E_n."
+      },
+      {
+        "text": "iE_n ψ_n(x)e^(−iE_n t/ħ)",
+        "why": "The i in iħ multiplies the −i to give 1, so no i is left: the result is E_n Ψ."
+      }
+    ],
+    "explanation": "iħ × (−iE_n/ħ) = −i^2 E_n = E_n, since i^2 = −1. So iħ(dΨ/dt) = E_n ψ_n(x)e^(−iE_n t/ħ). Because ĤΨ gives the same result, Ψ satisfies the time-dependent Schrödinger equation."
+  },
+  {
+    "id": "pc4-timedep-hamiltonian-time-factor",
+    "type": "multiple-choice",
+    "prompt": "When Ĥ acts on Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ), what happens to the time factor e^(−iE_n t/ħ)?",
+    "choices": [
+      {
+        "text": "It is carried along unchanged, and Ĥ acts on ψ_n(x)",
+        "correct": true
+      },
+      {
+        "text": "Ĥ turns it into the energy E_n",
+        "why": "Ĥ does not act on the time factor; the section writes ĤΨ = e^(−iE_n t/ħ)Ĥψ_n(x). The E_n comes from Ĥψ_n(x) = E_n ψ_n(x)."
+      },
+      {
+        "text": "It becomes 1, because Ĥ removes the time dependence",
+        "why": "Ĥ leaves the time factor as it is. The phase factors cancel to 1 only in the probability density |Ψ|^2."
+      },
+      {
+        "text": "It is differentiated with respect to t",
+        "why": "Differentiating with respect to t is the job of iħ (∂/∂t) on the other side of the equation. Ĥ leaves the time factor alone."
+      }
+    ],
+    "explanation": "The section writes ĤΨ(x, t) = e^(−iE_n t/ħ)Ĥψ_n(x) = e^(−iE_n t/ħ)E_n ψ_n(x). The time factor passes through Ĥ, and Ĥψ_n(x) = E_n ψ_n(x) because ψ_n is an eigenstate."
+  },
+  {
+    "id": "pc4-timedep-stationary-meaning",
+    "type": "multiple-choice",
+    "prompt": "Why is an eigenstate ψ_n(x) called a stationary state?",
+    "choices": [
+      {
+        "text": "Its probability density does not change with time",
+        "correct": true
+      },
+      {
+        "text": "The particle sits still at one point",
+        "why": "\"Stationary\" refers to the probability density, not to a particle at rest. |Ψ(x, t)|^2 stays the same at all times."
+      },
+      {
+        "text": "Its wavefunction Ψ(x, t) has no time dependence at all",
+        "why": "Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ) still depends on t through its phase factor. It is |Ψ|^2 that stays constant."
+      },
+      {
+        "text": "Its energy is zero",
+        "why": "A stationary state has a fixed, well-defined energy E_n, which is usually not zero. It is called stationary because its probability density does not change."
+      }
+    ],
+    "explanation": "For Ψ(x, t) = ψ_n(x)e^(−iE_n t/ħ), the probability density is |Ψ(x, t)|^2 = |ψ_n(x)|^2 = p(x, 0) at every time. Because the probability does not change in time, ψ_n(x) is called a stationary state."
+  },
+  {
+    "id": "pc4-timedep-phase-product",
+    "type": "multiple-choice",
+    "prompt": "Working out the probability density of a stationary state gives the product e^(iE_n t/ħ) × e^(−iE_n t/ħ). What does this product equal?",
+    "choices": [
+      {
+        "text": "1",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "The exponents add: iE_n t/ħ − iE_n t/ħ = 0, and e^0 = 1, not 0."
+      },
+      {
+        "text": "e^(−2iE_n t/ħ)",
+        "why": "When exponentials are multiplied, their exponents add. Here they are equal and opposite, so they cancel to give e^0 = 1."
+      },
+      {
+        "text": "−1",
+        "why": "The two phase factors cancel exactly, with no change of sign: e^(iθ)e^(−iθ) = e^0 = 1."
+      }
+    ],
+    "explanation": "Multiplying exponentials adds their exponents: e^(iE_n t/ħ)e^(−iE_n t/ħ) = e^0 = 1. This is why the time factor drops out of |Ψ(x, t)|^2 for a stationary state."
+  },
+  {
+    "id": "pc4-timedep-density-later",
+    "type": "numeric",
+    "prompt": "A particle is in the stationary state Ψ(x, t) = ψ_2(x)e^(−iE_2 t/ħ). At t = 0 its probability density at a point x_0 is 0.40 nm^−1. What is its probability density at x_0 at t = 5.0 ps, in nm^−1?",
+    "answer": 0.4,
+    "explanation": "For a stationary state, p(x, t) = |ψ_2(x)|^2 e^(iE_2 t/ħ) e^(−iE_2 t/ħ) = |ψ_2(x)|^2 = p(x, 0). The density never changes, so at t = 5.0 ps it is still 0.40 nm^−1."
+  },
+  {
+    "id": "pc4-timedep-energy-fixed",
+    "type": "numeric",
+    "prompt": "A system is in the stationary state Ψ(x, t) = ψ_3(x)e^(−iE_3 t/ħ), with E_3 = 2.5 eV. If its energy is measured at t = 10 s, what value is found, in eV?",
+    "answer": 2.5,
+    "unit": "eV",
+    "explanation": "In a stationary state the energy remains fixed at the well-defined value E_n. Here that is E_3 = 2.5 eV, whenever the measurement is made."
+  },
+  {
+    "id": "pc4-timedep-when-tise",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when can stationary states be described by the time-independent Schrödinger equation?",
+    "choices": [
+      {
+        "text": "When Ĥ is not explicitly time dependent",
+        "correct": true
+      },
+      {
+        "text": "Only when the particle is completely at rest",
+        "why": "\"Stationary\" means an unchanging probability density, not a particle at rest. The condition is that Ĥ does not depend explicitly on time."
+      },
+      {
+        "text": "Only at the starting instant, t = 0",
+        "why": "The time-independent equation describes states that are stationary at all times, provided Ĥ does not depend explicitly on time."
+      },
+      {
+        "text": "Only when the energy of the system is zero",
+        "why": "The time-independent equation gives the allowed energies, which are usually not zero. The condition is a Hamiltonian with no explicit time dependence."
+      }
+    ],
+    "explanation": "The time-independent Schrödinger equation, Ĥψ = Eψ, is used only when the Hamiltonian is not explicitly time dependent. Its solutions still have a time dependence, through the factor e^(−iE_n t/ħ)."
+  },
+  {
+    "id": "pc4-timedep-nonstationary-meaning",
+    "type": "multiple-choice",
+    "prompt": "In this section, what kind of state is a nonstationary state?",
+    "choices": [
+      {
+        "text": "A mixture such as aψ_1(x) + bψ_2(x)",
+        "correct": true
+      },
+      {
+        "text": "A single eigenstate ψ_n(x) of Ĥ",
+        "why": "A single eigenstate is a stationary state: its probability density does not change in time."
+      },
+      {
+        "text": "A state whose probability density never changes",
+        "why": "That describes a stationary state. In a nonstationary state, p(x, t) changes with time."
+      },
+      {
+        "text": "A state with zero energy",
+        "why": "Zero energy has nothing to do with it. A nonstationary state is a mixture of eigenstates with different energies."
+      }
+    ],
+    "explanation": "A nonstationary state is a mixture of eigenstates with different energies, such as Ψ(x, 0) = aψ_1(x) + bψ_2(x). Unlike a stationary state, its probability density changes with time: p(x, t) ≠ p(x, 0)."
+  },
+  {
+    "id": "pc4-timedep-mixture-density",
+    "type": "multiple-choice",
+    "prompt": "A system starts in Ψ(x, 0) = (1/√2)[ψ_1(x) + ψ_2(x)]. How does its probability density behave as time passes?",
+    "choices": [
+      {
+        "text": "It changes with time, so p(x, t) ≠ p(x, 0)",
+        "correct": true
+      },
+      {
+        "text": "It stays equal to p(x, 0) at all times",
+        "why": "That is true only for a single eigenstate. For a mixture of ψ_1 and ψ_2, which have different energies, the density changes."
+      },
+      {
+        "text": "It falls to zero as the state decays",
+        "why": "The particle does not vanish. The density of this mixture changes with time, but it does not fall to zero."
+      },
+      {
+        "text": "It changes only at the instant a measurement is made",
+        "why": "A measurement causes a sudden change (collapse), but this mixture's density also changes on its own as time passes: p(x, t) ≠ p(x, 0)."
+      }
+    ],
+    "explanation": "For the mixture (1/√2)[ψ_1(x) + ψ_2(x)], the probability density at time t is not the same as at t = 0: p(x, t) = |Ψ(x, t)|^2 ≠ p(x, 0). That is what makes it a nonstationary state."
+  },
+  {
+    "id": "pc4-timedep-mixture-energy",
+    "type": "multiple-choice",
+    "prompt": "For a mixture of ψ_1(x) and ψ_2(x) to be possible, what must be true of the system?",
+    "choices": [
+      {
+        "text": "It has enough energy that it might be found in ψ_2(x)",
+        "correct": true
+      },
+      {
+        "text": "It must be cooled to a temperature of absolute zero",
+        "why": "The requirement is about energy: there must be enough for some chance of finding the particle in the excited state ψ_2."
+      },
+      {
+        "text": "ψ_1(x) and ψ_2(x) must have the same energy",
+        "why": "ψ_1 and ψ_2 are the two lowest states and have different energies. The system needs enough energy for some chance of being found in ψ_2."
+      },
+      {
+        "text": "Its energy must already have been measured once",
+        "why": "Measuring the energy would collapse the mixture onto one state. The mixture needs enough energy for some chance of finding the particle in ψ_2."
+      }
+    ],
+    "explanation": "For such a mixture to be possible, there must be sufficient energy in the system that there is some probability of measuring the particle to be in its excited state, ψ_2."
+  },
+  {
+    "id": "pc4-timedep-measurement-outcomes",
+    "type": "multiple-choice",
+    "prompt": "A system is in a mixture of ψ_1(x) and ψ_2(x), which have energies E_1 and E_2. What values can a single measurement of its energy give?",
+    "choices": [
+      {
+        "text": "Either E_1 or E_2",
+        "correct": true
+      },
+      {
+        "text": "Only the average, (E_1 + E_2)/2",
+        "why": "A single measurement gives one allowed energy. The section's measurement gives E_1, and there is also some probability of finding the excited state, with E_2."
+      },
+      {
+        "text": "Any value between E_1 and E_2",
+        "why": "Energies in between are not allowed values. The measurement finds the system in ψ_1 (energy E_1) or in ψ_2 (energy E_2)."
+      },
+      {
+        "text": "Only E_1, the lowest energy",
+        "why": "The section says there is some probability of measuring the particle to be in its excited state, which has energy E_2."
+      }
+    ],
+    "explanation": "A measurement finds the system in one of the states in the mixture: E_1 (ground state ψ_1) or E_2 (excited state ψ_2). In the section's example the measurement happens to give E_1."
+  },
+  {
+    "id": "pc4-timedep-state-after-measurement",
+    "type": "multiple-choice",
+    "prompt": "A system that started in Ψ(x, 0) = (1/√2)[ψ_1(x) + ψ_2(x)] evolves for a while, and then a measurement of its energy gives E_1. What is the state just after the measurement?",
+    "choices": [
+      {
+        "text": "ψ_1(x)",
+        "correct": true
+      },
+      {
+        "text": "Still the mixture of ψ_1(x) and ψ_2(x)",
+        "why": "The measurement changes the state. Since the energy is now known to be E_1 with 100% certainty, the state must be ψ_1(x)."
+      },
+      {
+        "text": "ψ_2(x)",
+        "why": "The measurement gave E_1, the energy of ψ_1. A system in ψ_2 would give E_2."
+      },
+      {
+        "text": "Zero everywhere: the wavefunction disappears",
+        "why": "\"Collapse\" does not mean the wavefunction vanishes. It jumps to the state that matches the result, ψ_1(x)."
+      }
+    ],
+    "explanation": "Once the measurement gives E_1, the energy is known with 100% certainty, and the only state with that property is ψ_1(x). The dependence on ψ_2(x) drops out for all later times."
+  },
+  {
+    "id": "pc4-timedep-repeat-measurement",
+    "type": "numeric",
+    "prompt": "A measurement of the energy of a system in a mixture of ψ_1(x) and ψ_2(x) gives E_1. What is the probability, in percent, that a second energy measurement made later gives E_1 again?",
+    "answer": 100,
+    "unit": "%",
+    "tolerance": 0,
+    "explanation": "After the first measurement the state is ψ_1(x), with no dependence on ψ_2(x) for all later times. So any later energy measurement gives E_1 with 100% certainty."
+  },
+  {
+    "id": "pc4-timedep-collapse",
+    "type": "multiple-choice",
+    "prompt": "What is the sudden, discontinuous change in a quantum state caused by a measurement called?",
+    "choices": [
+      {
+        "text": "The collapse of the wavefunction",
+        "correct": true
+      },
+      {
+        "text": "Normalization of the wavefunction",
+        "why": "Normalization means scaling ψ so that the total probability is 1. The jump caused by a measurement is called collapse."
+      },
+      {
+        "text": "Quantization of energy",
+        "why": "Quantization means only certain energies are allowed. The change of state caused by a measurement is the collapse of the wavefunction."
+      },
+      {
+        "text": "Time evolution by the Schrödinger equation",
+        "why": "That evolution is smooth and continuous. The sudden jump caused by a measurement is the collapse of the wavefunction."
+      }
+    ],
+    "explanation": "A measurement makes the state jump discontinuously to the one that matches the result, for example from a mixture of ψ_1 and ψ_2 to ψ_1. This is called the collapse of the wavefunction."
+  },
+  {
+    "id": "pc4-timedep-observer-effect",
+    "type": "multiple-choice",
+    "prompt": "What is the quantum observer effect?",
+    "choices": [
+      {
+        "text": "Observing a quantum system changes how it evolves in time",
+        "correct": true
+      },
+      {
+        "text": "A system evolves the same way whether or not it is observed",
+        "why": "That is true of classical systems. In quantum mechanics the act of observing changes how the system evolves."
+      },
+      {
+        "text": "Measurements are imprecise only because the instruments are poor",
+        "why": "The effect is not about bad instruments: the measurement itself couples the experimenter to the system and changes its state."
+      },
+      {
+        "text": "Observing a system makes its energy zero",
+        "why": "A measurement of the energy gives one of the allowed values, such as E_1. The observer effect is that observing changes the system's time evolution."
+      }
+    ],
+    "explanation": "Because measuring a quantum system changes its time evolution, the experimenter is coupled to the system: the act of observing influences the phenomenon being observed. By simply observing a system, we change it."
+  },
+  {
+    "id": "pc4-timedep-classical-observing",
+    "type": "multiple-choice",
+    "prompt": "How does observing a classical system affect the way it evolves in time?",
+    "choices": [
+      {
+        "text": "It doesn't; it follows Newton's laws whether or not we observe it",
+        "correct": true
+      },
+      {
+        "text": "It collapses into a single state, just like a quantum system",
+        "why": "Collapse is a quantum effect. A classical system follows Newton's laws independent of whether it is observed."
+      },
+      {
+        "text": "It stops moving while it is being observed",
+        "why": "Observing a classical system does not affect it at all; it keeps following Newton's laws of motion."
+      },
+      {
+        "text": "It switches from Newton's laws to the Schrödinger equation",
+        "why": "Classical systems always follow Newton's laws. In classical mechanics the observer is not coupled to the system."
+      }
+    ],
+    "explanation": "In classical mechanics there is no coupling between observer and system: a classical system evolves according to Newton's laws of motion whether or not we observe it. Quantum systems are different."
+  },
+  {
+    "id": "pc4-timedep-mixture-probability",
+    "type": "numeric",
+    "prompt": "A system is in Ψ(x, 0) = (1/√2)[ψ_1(x) + ψ_2(x)]. The probability of measuring the energy E_1 is the square of the coefficient of ψ_1(x). What is this probability? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "The coefficient of ψ_1(x) is 1/√2, so the probability is (1/√2)^2 = 1/2 = 0.5. The coefficient of ψ_2(x) is the same, so E_2 is just as likely."
+  },
+  {
+    "id": "pc4-timedep-phase-at-zero",
+    "type": "numeric",
+    "prompt": "What is the value of the time factor e^(−iE_n t/ħ) at t = 0?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "At t = 0 the exponent is 0, and e^0 = 1. So Ψ(x, 0) = ψ_n(x)e^0 = ψ_n(x), which matches the starting state."
+  }
+]

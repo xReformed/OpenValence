@@ -7,7 +7,7 @@ import type { ChemSegment } from "./types";
  *
  * It understands the notation the corpus (and so the model's answers) uses:
  *
- *   caret        10^−5, 1s^2, SO4^2−, Fe^2+, m^3, ^{...}, ^(...)   → superscript
+ *   caret        10^−5, 1s^2, SO4^2−, Fe^2+, m^3, ψ^*, ^{...}, ^(...) → superscript
  *   underscore   ΔH°_f, ΔH_vap, m_l, u_rms, t_(1/2), _{...}        → subscript
  *   formulas     H2O, CH3CO2H, Ca(OH)2, CuSO4·5H2O, CaCl2(aq), H2O(ℓ) → digit subscripts
  *   charges      H3O+, OH−, NH4+, Na+, Fe3+, [Co(en)3]3+, e−       → superscript charge
@@ -44,7 +44,9 @@ const PATTERN = new RegExp(
     String.raw`(?<url>https?:\/\/\S+)`,
     /* A trailing sign is a charge (SO4^2−, Mg^2+O^2−) unless it is a hyphen
        followed by a letter, as in "10^−5-M", where it joins the unit. */
-    String.raw`\^(?<caret>\{[^}]*\}|\([^)]*\)|[+\-−]?\d+(?:\.\d+)?(?:[+−]|-(?![A-Za-z]))?|[+\-−])`,
+    /* A star is a complex conjugate (ψ^*), an antibonding orbital (σ_1s^*) or a
+       pure substance (μ^*). */
+    String.raw`\^(?<caret>\{[^}]*\}|\([^)]*\)|[+\-−]?\d+(?:\.\d+)?(?:[+−]|-(?![A-Za-z]))?|[+\-−]|\*+)`,
     String.raw`(?<=[^\s_])_(?<under>\{[^}]*\}|\([^)]*\)|[A-Za-z0-9]+)`,
     String.raw`\bsp(?<spN>[23])(?:d(?<spD>[12])?)?\b`,
     String.raw`\b(?<kPre>p?)K(?<kSub>sp|eq|a|b|w|c|p|f)\b`,

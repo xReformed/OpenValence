@@ -5,7 +5,7 @@
 
 import type { BookMeta, PathChapter } from "./types";
 
-export type BookKey = "beginning-chemistry" | "organic-chemistry" | "inorganic-chemistry";
+export type BookKey = "beginning-chemistry" | "organic-chemistry" | "inorganic-chemistry" | "physical-chemistry";
 
 export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
   "beginning-chemistry": [
@@ -4925,6 +4925,2633 @@ export const BOOK_CHAPTERS: Record<BookKey, PathChapter[]> = {
         }
       ]
     }
+  ],
+  "physical-chemistry": [
+    {
+      "number": 1,
+      "title": "The Dawn of the Quantum Theory",
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "Blackbody Radiation Cannot Be Explained Classically",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-1-Blackbody-Radiation-Cannot-Be-Explained-Classically.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.01%3A_Blackbody_Radiation_Cannot_Be_Explained_Classically",
+          "author": "Anonymous",
+          "license": "CC BY"
+        },
+        {
+          "number": "1.2",
+          "title": "Quantum Hypothesis Used for Blackbody Radiation Law",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-2-Quantum-Hypothesis-Used-for-Blackbody-Radiation-Law.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.02%3A_Quantum_Hypothesis_Used_for_Blackbody_Radiation_Law",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.3",
+          "title": "Photoelectric Effect Explained with Quantum Hypothesis",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-3-Photoelectric-Effect-Explained-with-Quantum-Hypothesis.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.03%3A_Photoelectric_Effect_Explained_with_Quantum_Hypothesis",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.4",
+          "title": "The Hydrogen Atomic Spectrum",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-4-The-Hydrogen-Atomic-Spectrum.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.04%3A_The_Hydrogen_Atomic_Spectrum",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.5",
+          "title": "The Rydberg Formula and the Hydrogen Atomic Spectrum",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-5-The-Rydberg-Formula-and-the-Hydrogen-Atomic-Spectrum.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.05%3A_The_Rydberg_Formula_and_the_Hydrogen_Atomic_Spectrum",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.6",
+          "title": "Matter Has Wavelike Properties",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-6-Matter-Has-Wavelike-Properties.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.06%3A_Matter_Has_Wavelike_Properties",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.7",
+          "title": "de Broglie Waves can be Experimentally Observed",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-7-de-Broglie-Waves-can-be-Experimentally-Observed.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.07%3A_de_Broglie_Waves_can_be_Experimentally_Observed",
+          "author": "Delmar Larsen",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.8",
+          "title": "The Bohr Theory of the Hydrogen Atom",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-8-The-Bohr-Theory-of-the-Hydrogen-Atom.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.08%3A_The_Bohr_Theory_of_the_Hydrogen_Atom",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "1.9",
+          "title": "The Heisenberg Uncertainty Principle",
+          "ready": true,
+          "file": "physchem/The-Dawn-of-the-Quantum-Theory/01-9-The-Heisenberg-Uncertainty-Principle.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.09%3A_The_Heisenberg_Uncertainty_Principle",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "The Classical Wave Equation",
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "The One-Dimensional Wave Equation",
+          "ready": true,
+          "file": "physchem/The-Classical-Wave-Equation/02-1-The-One-Dimensional-Wave-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/02%3A_The_Classical_Wave_Equation/2.01%3A_The_One-Dimensional_Wave_Equation",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.2",
+          "title": "The Method of Separation of Variables",
+          "ready": true,
+          "file": "physchem/The-Classical-Wave-Equation/02-2-The-Method-of-Separation-of-Variables.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/02%3A_The_Classical_Wave_Equation/2.02%3A_The_Method_of_Separation_of_Variables",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.3",
+          "title": "Oscillatory Solutions to Differential Equations",
+          "ready": true,
+          "file": "physchem/The-Classical-Wave-Equation/02-3-Oscillatory-Solutions-to-Differential-Equations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/02%3A_The_Classical_Wave_Equation/2.03%3A_Oscillatory_Solutions_to_Differential_Equations",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.4",
+          "title": "The General Solution is a Superposition of Normal Modes",
+          "ready": true,
+          "file": "physchem/The-Classical-Wave-Equation/02-4-The-General-Solution-is-a-Superposition-of-Normal-Modes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/02%3A_The_Classical_Wave_Equation/2.04%3A_The_General_Solution_is_a_Superposition_of_Normal_Modes",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "2.5",
+          "title": "A Vibrating Membrane",
+          "ready": true,
+          "file": "physchem/The-Classical-Wave-Equation/02-5-A-Vibrating-Membrane.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/02%3A_The_Classical_Wave_Equation/2.05%3A_A_Vibrating_Membrane",
+          "author": "Delmar Larsen",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The Schrödinger Equation and a Particle in a Box",
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "The Schrödinger Equation",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-1-The-Schrodinger-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.01%3A_The_Schrodinger_Equation",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.2",
+          "title": "Linear Operators in Quantum Mechanics",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-2-Linear-Operators-in-Quantum-Mechanics.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.02%3A_Linear_Operators_in_Quantum_Mechanics",
+          "author": "S. M. Blinder",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.3",
+          "title": "The Schrödinger Equation is an Eigenvalue Problem",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-3-The-Schrodinger-Equation-is-an-Eigenvalue-Problem.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.03%3A_The_Schrodinger_Equation_is_an_Eigenvalue_Problem",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.4",
+          "title": "Wavefunctions Have a Probabilistic Interpretation",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-4-Wavefunctions-Have-a-Probabilistic-Interpretation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.04%3A_Wavefunctions_Have_a_Probabilistic_Interpretation",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.5",
+          "title": "The Energy of a Particle in a Box is Quantized",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-5-The-Energy-of-a-Particle-in-a-Box-is-Quantized.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.05%3A_The_Energy_of_a_Particle_in_a_Box_is_Quantized",
+          "author": "S. M. Blinder",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.6",
+          "title": "Wavefunctions Must Be Normalized",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-6-Wavefunctions-Must-Be-Normalized.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.06%3A_Wavefunctions_Must_Be_Normalized",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.7",
+          "title": "The Average Momentum of a Particle in a Box is Zero",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-7-The-Average-Momentum-of-a-Particle-in-a-Box-is-Zero.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.07%3A_The_Average_Momentum_of_a_Particle_in_a_Box_is_Zero",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.8",
+          "title": "The Uncertainty Principle - Estimating Uncertainties from Wavefunctions",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-8-The-Uncertainty-Principle-Estimating-Uncertainties-from-Wavefunctions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.08%3A_The_Uncertainty_Principle_-_Estimating_Uncertainties_from_Wavefunctions",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "3.9",
+          "title": "A Particle in a Three-Dimensional Box",
+          "ready": true,
+          "file": "physchem/The-Schrodinger-Equation-and-a-Particle-in-a-Box/03-9-A-Particle-in-a-Three-Dimensional-Box.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/03%3A_The_Schrodinger_Equation_and_a_Particle_in_a_Box/3.09%3A_A_Particle_in_a_Three-Dimensional_Box",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Postulates and Principles of Quantum Mechanics",
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "The Wavefunction Specifies the State of a System",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-1-The-Wavefunction-Specifies-the-State-of-a-System.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.01%3A_The_Wavefunction_Specifies_the_State_of_a_System",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.2",
+          "title": "Quantum Operators Represent Classical Variables",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-2-Quantum-Operators-Represent-Classical-Variables.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.02%3A_Quantum_Operators_Represent_Classical_Variables",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.3",
+          "title": "Observable Quantities Must Be Eigenvalues of Quantum Mechanical Operators",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-3-Observable-Quantities-Must-Be-Eigenvalues-of-Quantum-Mechanical-Operators.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.03%3A_Observable_Quantities_Must_Be_Eigenvalues_of_Quantum_Mechanical_Operators",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.4",
+          "title": "The Time-Dependent Schrödinger Equation",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-4-The-Time-Dependent-Schrodinger-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.04%3A_The_Time-Dependent_Schrodinger_Equation",
+          "author": "Mark Tuckerman",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.5",
+          "title": "Eigenfunctions of Operators are Orthogonal",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-5-Eigenfunctions-of-Operators-are-Orthogonal.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.05%3A_Eigenfunctions_of_Operators_are_Orthogonal",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "4.6",
+          "title": "Commuting Operators Allow Infinite Precision",
+          "ready": true,
+          "file": "physchem/Postulates-and-Principles-of-Quantum-Mechanics/04-6-Commuting-Operators-Allow-Infinite-Precision.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/04%3A_Postulates_and_Principles_of_Quantum_Mechanics/4.06%3A_Commuting_Operators_Allow_Infinite_Precision",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "The Harmonic Oscillator and the Rigid Rotor",
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "A Harmonic Oscillator Obeys Hooke's Law",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-1-A-Harmonic-Oscillator-Obeys-Hookes-Law.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.01%3A_A_Harmonic_Oscillator_Obeys_Hooke's_Law",
+          "author": "Michael Fowler",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.2",
+          "title": "The Equation for a Harmonic-Oscillator Model of a Diatomic Molecule Contains the Reduced Mass of the Molecule",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-2-The-Equation-for-a-Harmonic-Oscillator-Model-of-a-Diatomic-Molecule-Contains-the-Reduced-Mass-of.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.02%3A_The_Equation_for_a_Harmonic-Oscillator_Model_of_a_Diatomic_Molecule_Contains_the_Reduced_Mass_of_the_Molecule",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.3",
+          "title": "The Harmonic Oscillator Approximates Molecular Vibrations",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-3-The-Harmonic-Oscillator-Approximates-Molecular-Vibrations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.03%3A_The_Harmonic_Oscillator_Approximates_Molecular_Vibrations",
+          "author": "Anonymous",
+          "license": "CC BY"
+        },
+        {
+          "number": "5.4",
+          "title": "The Harmonic Oscillator Energy Levels",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-4-The-Harmonic-Oscillator-Energy-Levels.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.04%3A_The_Harmonic_Oscillator_Energy_Levels",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.5",
+          "title": "The Harmonic Oscillator and Infrared Spectra",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-5-The-Harmonic-Oscillator-and-Infrared-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.05%3A_The_Harmonic_Oscillator_and_Infrared_Spectra",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.6",
+          "title": "The Harmonic Oscillator Wavefunctions involve Hermite Polynomials",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-6-The-Harmonic-Oscillator-Wavefunctions-involve-Hermite-Polynomials.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.06%3A_The_Harmonic_Oscillator_Wavefunctions_involve_Hermite_Polynomials",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.7",
+          "title": "Hermite Polynomials are either Even or Odd Functions",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-7-Hermite-Polynomials-are-either-Even-or-Odd-Functions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.07%3A_Hermite_Polynomials_are_either_Even_or_Odd_Functions",
+          "author": "Delmar Larsen",
+          "license": "CC BY-SA"
+        },
+        {
+          "number": "5.8",
+          "title": "The Energy Levels of a Rigid Rotor",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-8-The-Energy-Levels-of-a-Rigid-Rotor.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.08%3A_The_Energy_Levels_of_a_Rigid_Rotor",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "5.9",
+          "title": "The Rigid Rotator is a Model for a Rotating Diatomic Molecule",
+          "ready": true,
+          "file": "physchem/The-Harmonic-Oscillator-and-the-Rigid-Rotor/05-9-The-Rigid-Rotator-is-a-Model-for-a-Rotating-Diatomic-Molecule.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/05%3A_The_Harmonic_Oscillator_and_the_Rigid_Rotor/5.09%3A_The_Rigid_Rotator_is_a_Model_for_a_Rotating_Diatomic_Molecule",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "The Hydrogen Atom",
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "The Schrodinger Equation for the Hydrogen Atom Can Be Solved Exactly",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-1-The-Schrodinger-Equation-for-the-Hydrogen-Atom-Can-Be-Solved-Exactly.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.01%3A_The_Schrodinger_Equation_for_the_Hydrogen_Atom_Can_Be_Solved_Exactly",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.2",
+          "title": "The Wavefunctions of a Rigid Rotator are Called Spherical Harmonics",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-2-The-Wavefunctions-of-a-Rigid-Rotator-are-Called-Spherical-Harmonics.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.02%3A_The_Wavefunctions_of_a_Rigid_Rotator_are_Called_Spherical_Harmonics",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.3",
+          "title": "The Three Components of Angular Momentum Cannot be Measured Simultaneously with Arbitrary Precision",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-3-The-Three-Components-of-Angular-Momentum-Cannot-be-Measured-Simultaneously-with-Arbitrary-Precision.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.03%3A_The_Three_Components_of_Angular_Momentum_Cannot_be_Measured_Simultaneously_with_Arbitrary_Precision",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.4",
+          "title": "Hydrogen Atomic Orbitals Depend upon Three Quantum Numbers",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-4-Hydrogen-Atomic-Orbitals-Depend-upon-Three-Quantum-Numbers.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.04%3A_Hydrogen_Atomic_Orbitals_Depend_upon_Three_Quantum_Numbers",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.5",
+          "title": "s-orbitals are Spherically Symmetric",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-5-s-orbitals-are-Spherically-Symmetric.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.05%3A_s-orbitals_are_Spherically_Symmetric",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.6",
+          "title": "Orbital Angular Momentum and the p-Orbitals",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-6-Orbital-Angular-Momentum-and-the-p-Orbitals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.06%3A_Orbital_Angular_Momentum_and_the_p-Orbitals",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "6.7",
+          "title": "The Helium Atom Cannot Be Solved Exactly",
+          "ready": true,
+          "file": "physchem/The-Hydrogen-Atom/06-7-The-Helium-Atom-Cannot-Be-Solved-Exactly.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/06%3A_The_Hydrogen_Atom/6.07%3A_The_Helium_Atom_Cannot_Be_Solved_Exactly",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Approximation Methods",
+      "sections": [
+        {
+          "number": "7.1",
+          "title": "The Variational Method Approximation",
+          "ready": true,
+          "file": "physchem/Approximation-Methods/07-1-The-Variational-Method-Approximation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/07%3A_Approximation_Methods/7.01%3A_The_Variational_Method_Approximation",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "7.2",
+          "title": "Linear Variational Method and the Secular Determinant",
+          "ready": true,
+          "file": "physchem/Approximation-Methods/07-2-Linear-Variational-Method-and-the-Secular-Determinant.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/07%3A_Approximation_Methods/7.02%3A_Linear_Variational_Method_and_the_Secular_Determinant",
+          "author": "Claire Vallance",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "7.3",
+          "title": "Trial Functions Can Be Linear Combinations of Functions That Also Contain Variational Parameters",
+          "ready": true,
+          "file": "physchem/Approximation-Methods/07-3-Trial-Functions-Can-Be-Linear-Combinations-of-Functions-That-Also-Contain-Variational-Parameters.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/07%3A_Approximation_Methods/7.03%3A_Trial_Functions_Can_Be_Linear_Combinations_of_Functions_That_Also_Contain_Variational_Parameters",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "7.4",
+          "title": "Perturbation Theory Expresses the Solutions in Terms of Solved Problems",
+          "ready": true,
+          "file": "physchem/Approximation-Methods/07-4-Perturbation-Theory-Expresses-the-Solutions-in-Terms-of-Solved-Problems.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/07%3A_Approximation_Methods/7.04%3A_Perturbation_Theory_Expresses_the_Solutions_in_Terms_of_Solved_Problems",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Multielectron Atoms",
+      "sections": [
+        {
+          "number": "8.1",
+          "title": "Atomic and Molecular Calculations are Expressed in Atomic Units",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-1-Atomic-and-Molecular-Calculations-are-Expressed-in-Atomic-Units.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.01%3A_Atomic_and_Molecular_Calculations_are_Expressed_in_Atomic_Units",
+          "author": "Wikipedia contributors",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "8.2",
+          "title": "Perturbation Theory and the Variational Method for Helium",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-2-Perturbation-Theory-and-the-Variational-Method-for-Helium.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.02%3A_Perturbation_Theory_and_the_Variational_Method_for_Helium",
+          "author": "Frank Rioux",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.3",
+          "title": "Hartree-Fock Equations are Solved by the Self-Consistent Field Method",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-3-Hartree-Fock-Equations-are-Solved-by-the-Self-Consistent-Field-Method.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.03%3A_Hartree-Fock_Equations_are_Solved_by_the_Self-Consistent_Field_Method",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.4",
+          "title": "An Electron has an Intrinsic Spin Angular Momentum",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-4-An-Electron-has-an-Intrinsic-Spin-Angular-Momentum.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.04%3A_An_Electron_has_an_Intrinsic_Spin_Angular_Momentum",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.5",
+          "title": "Wavefunctions must be Antisymmetric to Interchange of any Two Electrons",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-5-Wavefunctions-must-be-Antisymmetric-to-Interchange-of-any-Two-Electrons.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.05%3A_Wavefunctions_must_be_Antisymmetric_to_Interchange_of_any_Two_Electrons",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.6",
+          "title": "Antisymmetric Wavefunctions can be Represented by Slater Determinants",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-6-Antisymmetric-Wavefunctions-can-be-Represented-by-Slater-Determinants.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.06%3A_Antisymmetric_Wavefunctions_can_be_Represented_by_Slater_Determinants",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.7",
+          "title": "Hartree-Fock Calculations Give Good Agreement with Experimental Data",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-7-Hartree-Fock-Calculations-Give-Good-Agreement-with-Experimental-Data.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.07%3A_Hartree-Fock_Calculations_Give_Good_Agreement_with_Experimental_Data",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.8",
+          "title": "Term Symbols Gives a Detailed Description of an Electron Configuration",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-8-Term-Symbols-Gives-a-Detailed-Description-of-an-Electron-Configuration.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.08%3A_Term_Symbols_Gives_a_Detailed_Description_of_an_Electron_Configuration",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "8.9",
+          "title": "The Allowed Values of J - the Total Angular Momentum Quantum Number",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-9-The-Allowed-Values-of-J-the-Total-Angular-Momentum-Quantum-Number.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.09%3A_The_Allowed_Values_of_J_-_the_Total_Angular_Momentum_Quantum_Number",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.10",
+          "title": "Hund's Rules Determine the Term Symbols of the Ground Electronic States",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-10-Hunds-Rules-Determine-the-Term-Symbols-of-the-Ground-Electronic-States.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.10%3A_Hund's_Rules_Determine_the_Term_Symbols_of_the_Ground_Electronic_States",
+          "author": "Delmar Larsen",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "8.11",
+          "title": "Using Atomic Term Symbols to Interpret Atomic Spectra",
+          "ready": true,
+          "file": "physchem/Multielectron-Atoms/08-11-Using-Atomic-Term-Symbols-to-Interpret-Atomic-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/08%3A_Multielectron_Atoms/8.11%3A_Using_Atomic_Term_Symbols_to_Interpret_Atomic_Spectra",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Chemical Bonding in Diatomic Molecules",
+      "sections": [
+        {
+          "number": "9.1",
+          "title": "The Born-Oppenheimer Approximation Simplifies the Schrödinger Equation for Molecules",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-1-The-Born-Oppenheimer-Approximation-Simplifies-the-Schrodinger-Equation-for-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.01%3A_The_Born-Oppenheimer_Approximation_Simplifies_the_Schrodinger_Equation_for_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.2",
+          "title": "The H₂⁺ Prototypical Species",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-2-The-H2-Prototypical-Species.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.02%3A_The_H_Prototypical_Species",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.3",
+          "title": "The Overlap Integral",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-3-The-Overlap-Integral.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.03%3A_The_Overlap_Integral",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.4",
+          "title": "Chemical Bond Stability",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-4-Chemical-Bond-Stability.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.04%3A_Chemical_Bond_Stability",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.5",
+          "title": "Bonding and Antibonding Orbitals",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-5-Bonding-and-Antibonding-Orbitals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.05%3A_Bonding_and_Antibonding_Orbitals",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.6",
+          "title": "A Simple Molecular-Orbital Treatment of H₂ Places Both Electrons in a Bonding Orbital",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-6-A-Simple-Molecular-Orbital-Treatment-of-H2-Places-Both-Electrons-in-a-Bonding-Orbital.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.06%3A_A_Simple_Molecular-Orbital_Treatment_of_H_Places_Both_Electrons_in_a_Bonding_Orbital",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.7",
+          "title": "Molecular Orbitals Can Be Ordered According to Their Energies",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-7-Molecular-Orbitals-Can-Be-Ordered-According-to-Their-Energies.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.07%3A_Molecular_Orbitals_Can_Be_Ordered_According_to_Their_Energies",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.8",
+          "title": "Molecular-Orbital Theory Does not Predict a Stable Diatomic Helium Molecule",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-8-Molecular-Orbital-Theory-Does-not-Predict-a-Stable-Diatomic-Helium-Molecule.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.08%3A_Molecular-Orbital_Theory_Does_not_Predict_a_Stable_Diatomic_Helium_Molecule",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.9",
+          "title": "Electrons Populate Molecular Orbitals According to the Pauli Exclusion Principle",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-9-Electrons-Populate-Molecular-Orbitals-According-to-the-Pauli-Exclusion-Principle.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.09%3A_Electrons_Populate_Molecular_Orbitals_According_to_the_Pauli_Exclusion_Principle",
+          "author": "Kyle Crabtree",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.10",
+          "title": "Molecular Orbital Theory Predicts that Molecular Oxygen is Paramagnetic",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-10-Molecular-Orbital-Theory-Predicts-that-Molecular-Oxygen-is-Paramagnetic.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.10%3A_Molecular_Orbital_Theory_Predicts_that_Molecular_Oxygen_is_Paramagnetic",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.11",
+          "title": "Photoelectron Spectra Support the Existence of Molecular Orbitals",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-11-Photoelectron-Spectra-Support-the-Existence-of-Molecular-Orbitals.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.11%3A_Photoelectron_Spectra_Support_the_Existence_of_Molecular_Orbitals",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.12",
+          "title": "Molecular-Orbital Theory Also Applies to Heteronuclear Diatomic Molecules",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-12-Molecular-Orbital-Theory-Also-Applies-to-Heteronuclear-Diatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.12%3A_Molecular-Orbital_Theory_Also_Applies_to_Heteronuclear_Diatomic_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "9.14",
+          "title": "Molecular Term Symbols Describe Electronic States of Molecules",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-14-Molecular-Term-Symbols-Describe-Electronic-States-of-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.14%3A_Molecular_Term_Symbols_Describe_Electronic_States_of_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "9.15",
+          "title": "Molecular Term Symbols Designate Symmetry",
+          "ready": true,
+          "file": "physchem/Chemical-Bonding-in-Diatomic-Molecules/09-15-Molecular-Term-Symbols-Designate-Symmetry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.15%3A_Molecular_Term_Symbols_Designate_Symmetry",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Bonding in Polyatomic Molecules",
+      "sections": [
+        {
+          "number": "10.1",
+          "title": "Hybrid Orbitals Account for Molecular Shape",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-1-Hybrid-Orbitals-Account-for-Molecular-Shape.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.01%3A_Hybrid_Orbitals_Account_for_Molecular_Shape",
+          "author": "Mark Tuckerman",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "10.2",
+          "title": "Hybrid Orbitals in Water",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-2-Hybrid-Orbitals-in-Water.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.02%3A_Hybrid_Orbitals_in_Water",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "10.3",
+          "title": "BeH₂ is Linear and H₂O is Bent",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-3-BeH2-is-Linear-and-H2O-is-Bent.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.03%3A_BeH_is_Linear_and_HO_is_Bent",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "10.4",
+          "title": "Photoelectron Spectroscopy",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-4-Photoelectron-Spectroscopy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.04%3A_Photoelectron_Spectroscopy",
+          "author": "Roger Nix",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "10.5",
+          "title": "The pi-Electron Approximation of Conjugation (Hückel Theory)",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-5-The-pi-Electron-Approximation-of-Conjugation-Huckel-Theory.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.05%3A_The_pi-Electron_Approximation_of_Conjugation_(Huckel_Theory)",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "10.6",
+          "title": "Butadiene is Stabilized by a Delocalization Energy",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-6-Butadiene-is-Stabilized-by-a-Delocalization-Energy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.06%3A_Butadiene_is_Stabilized_by_a_Delocalization_Energy",
+          "author": "Delmar Larsen",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "10.7",
+          "title": "Benzene and Aromaticity",
+          "ready": true,
+          "file": "physchem/Bonding-in-Polyatomic-Molecules/10-7-Benzene-and-Aromaticity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/10%3A_Bonding_in_Polyatomic_Molecules/10.07%3A_Benzene_and_Aromaticity",
+          "author": "William Reusch",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Computational Quantum Chemistry",
+      "sections": [
+        {
+          "number": "11.1",
+          "title": "Overview of Quantum Calculations",
+          "ready": true,
+          "file": "physchem/Computational-Quantum-Chemistry/11-1-Overview-of-Quantum-Calculations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/11%3A_Computational_Quantum_Chemistry/11.01%3A_Overview_of_Quantum_Calculations",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "11.2",
+          "title": "Gaussian Basis Sets",
+          "ready": true,
+          "file": "physchem/Computational-Quantum-Chemistry/11-2-Gaussian-Basis-Sets.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/11%3A_Computational_Quantum_Chemistry/11.02%3A_Gaussian_Basis_Sets",
+          "author": "Theresa Julia Zielinski",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "11.3",
+          "title": "Extended Basis Sets",
+          "ready": true,
+          "file": "physchem/Computational-Quantum-Chemistry/11-3-Extended-Basis-Sets.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/11%3A_Computational_Quantum_Chemistry/11.03%3A_Extended_Basis_Sets",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "11.4",
+          "title": "Orbital Polarization Terms in Basis Sets",
+          "ready": true,
+          "file": "physchem/Computational-Quantum-Chemistry/11-4-Orbital-Polarization-Terms-in-Basis-Sets.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/11%3A_Computational_Quantum_Chemistry/11.04%3A_Orbital_Polarization_Terms_in_Basis_Sets",
+          "author": "Wikipedia contributors",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Group Theory - The Exploitation of Symmetry",
+      "sections": [
+        {
+          "number": "12.1",
+          "title": "The Exploitation of Symmetry Can Help Simplify Numerical Calculations",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-1-The-Exploitation-of-Symmetry-Can-Help-Simplify-Numerical-Calculations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.01%3A_The_Exploitation_of_Symmetry_Can_Help_Simplify_Numerical_Calculations",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.2",
+          "title": "Symmetry Elements and Operations Define the Point Groups",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-2-Symmetry-Elements-and-Operations-Define-the-Point-Groups.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.02%3A_Symmetry_Elements_and_Operations_Define_the_Point_Groups",
+          "author": "Claire Vallance",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.3",
+          "title": "Symmetry Operations Define Groups",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-3-Symmetry-Operations-Define-Groups.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.03%3A_Symmetry_Operations_Define_Groups",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.4",
+          "title": "Symmetry Operations as Matrices",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-4-Symmetry-Operations-as-Matrices.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.04%3A_Symmetry_Operations_as_Matrices",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.5",
+          "title": "Molecules can be Represented by Reducible Representations",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-5-Molecules-can-be-Represented-by-Reducible-Representations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.05%3A_Molecules_can_be_Represented_by_Reducible_Representations",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.6",
+          "title": "Character Tables Summarize the Properties of a Point Group",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-6-Character-Tables-Summarize-the-Properties-of-a-Point-Group.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.06%3A_Character_Tables_Summarize_the_Properties_of_a_Point_Group",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "12.7",
+          "title": "Characters of Irreducible Representations",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-7-Characters-of-Irreducible-Representations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.07%3A_Characters_of_Irreducible_Representations",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "12.8",
+          "title": "Using Symmetry to Solve Secular Determinants",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-8-Using-Symmetry-to-Solve-Secular-Determinants.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.08%3A_Using_Symmetry_to_Solve_Secular_Determinants",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.10",
+          "title": "Molecular Motions of a Molecule can be Represented by a Reducible Reperesentation",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-10-Molecular-Motions-of-a-Molecule-can-be-Represented-by-a-Reducible-Reperesentation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.10%3A_Molecular_Motions_of_a_Molecule_can_be_Represented_by_a_Reducible_Reperesentation",
+          "author": "Anonymous",
+          "license": "Unverified"
+        },
+        {
+          "number": "12.11",
+          "title": "Reducible Representations are Comprised of Irreducible Representations",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-11-Reducible-Representations-are-Comprised-of-Irreducible-Representations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.11%3A_Reducible_Representations_are_Comprised_of_Irreducible_Representations",
+          "author": "Anonymous",
+          "license": "Unverified"
+        },
+        {
+          "number": "12.12",
+          "title": "Normal Modes of Vibrations Describe how Molecules Vibrate",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-12-Normal-Modes-of-Vibrations-Describe-how-Molecules-Vibrate.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.12%3A_Normal_Modes_of_Vibrations_Describe_how_Molecules_Vibrate",
+          "author": "Anonymous",
+          "license": "Unverified"
+        },
+        {
+          "number": "12.13",
+          "title": "Symmetry of Vibrations Describes their Spectroscopic Behavior",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-13-Symmetry-of-Vibrations-Describes-their-Spectroscopic-Behavior.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.13%3A_Symmetry_of_Vibrations_Describes_their_Spectroscopic_Behavior",
+          "author": "Anonymous",
+          "license": "Unverified"
+        },
+        {
+          "number": "12.14",
+          "title": "Symmetry Adapted Linear Combinations are the Sum over all Basis functions",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-14-Symmetry-Adapted-Linear-Combinations-are-the-Sum-over-all-Basis-functions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.14%3A_Symmetry_Adapted_Linear_Combinations_are_the_Sum_over_all_Basis_functions",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "12.15",
+          "title": "Molecular Orbitals can be Constructed on the Basis of Symmetry",
+          "ready": true,
+          "file": "physchem/Group-Theory-The-Exploitation-of-Symmetry/12-15-Molecular-Orbitals-can-be-Constructed-on-the-Basis-of-Symmetry.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/12%3A_Group_Theory_-_The_Exploitation_of_Symmetry/12.15%3A_Molecular_Orbitals_can_be_Constructed_on_the_Basis_of_Symmetry",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Molecular Spectroscopy",
+      "sections": [
+        {
+          "number": "13.1",
+          "title": "The Electromagnetic Spectrum",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-1-The-Electromagnetic-Spectrum.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.01%3A_The_Electromagnetic_Spectrum",
+          "author": "Delmar Larsen",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "13.2",
+          "title": "Rotations Accompany Vibrational Transitions",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-2-Rotations-Accompany-Vibrational-Transitions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.02%3A_Rotations_Accompany_Vibrational_Transitions",
+          "author": "Delmar Larsen",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "13.3",
+          "title": "Unequal Spacings in Vibration-Rotation Spectra",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-3-Unequal-Spacings-in-Vibration-Rotation-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.03%3A_Unequal_Spacings_in_Vibration-Rotation_Spectra",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.4",
+          "title": "Unequal Spacings in Pure Rotational Spectra",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-4-Unequal-Spacings-in-Pure-Rotational-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.04%3A_Unequal_Spacings_in_Pure_Rotational_Spectra",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.5",
+          "title": "Vibrational Overtones",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-5-Vibrational-Overtones.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.05%3A_Vibrational_Overtones",
+          "author": "Delmar Larsen",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "13.6",
+          "title": "Electronic Spectra Contain Electronic, Vibrational, and Rotational Information",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-6-Electronic-Spectra-Contain-Electronic-Vibrational-and-Rotational-Information.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.06%3A_Electronic_Spectra_Contain_Electronic_Vibrational_and_Rotational_Information",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "13.7",
+          "title": "The Franck-Condon Principle",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-7-The-Franck-Condon-Principle.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.07%3A_The_Franck-Condon_Principle",
+          "author": "Stephen Lower",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.8",
+          "title": "Rotational Spectra of Polyatomic Molecules",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-8-Rotational-Spectra-of-Polyatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.08%3A_Rotational_Spectra_of_Polyatomic_Molecules",
+          "author": "Jack Simons",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.9",
+          "title": "Normal Modes in Polyatomic Molecules",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-9-Normal-Modes-in-Polyatomic-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.09%3A_Normal_Modes_in_Polyatomic_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.10",
+          "title": "Irreducible Representation of Point Groups",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-10-Irreducible-Representation-of-Point-Groups.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.10%3A_Irreducible_Representation_of_Point_Groups",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.11",
+          "title": "Time-Dependent Perturbation Theory",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-11-Time-Dependent-Perturbation-Theory.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.11%3A_Time-Dependent_Perturbation_Theory",
+          "author": "Wikipedia contributors",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "13.12",
+          "title": "The Selection Rule for the Rigid Rotor",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-12-The-Selection-Rule-for-the-Rigid-Rotor.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.12%3A_The_Selection_Rule_for_the_Rigid_Rotor",
+          "author": "Anonymous",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "13.13",
+          "title": "The Harmonic Oscillator Selection Rule",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-13-The-Harmonic-Oscillator-Selection-Rule.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.13%3A_The_Harmonic_Oscillator_Selection_Rule",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "13.14",
+          "title": "Group Theory Determines Infrared Activity",
+          "ready": true,
+          "file": "physchem/Molecular-Spectroscopy/13-14-Group-Theory-Determines-Infrared-Activity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/13%3A_Molecular_Spectroscopy/13.14%3A_Group_Theory_Determines_Infrared_Activity",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Nuclear Magnetic Resonance Spectroscopy",
+      "sections": [
+        {
+          "number": "14.1",
+          "title": "Nuclei Have Intrinsic Spin Angular Momenta",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-1-Nuclei-Have-Intrinsic-Spin-Angular-Momenta.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.01%3A_Nuclei_Have_Intrinsic_Spin_Angular_Momenta",
+          "author": "Anonymous",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "14.2",
+          "title": "Magnetic Moments Interact with Magnetic Fields",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-2-Magnetic-Moments-Interact-with-Magnetic-Fields.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.02%3A_Magnetic_Moments_Interact_with_Magnetic_Fields",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.3",
+          "title": "Proton NMR Spectrometers Operate at Frequencies Between 60 MHz and 750 MHz",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-3-Proton-NMR-Spectrometers-Operate-at-Frequencies-Between-60-MHz-and-750-MHz.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.03%3A_Proton_NMR_Spectrometers_Operate_at_Frequencies_Between_60_MHz_and_750_MHz",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.4",
+          "title": "The Magnetic Field Acting upon Nuclei in Molecules is Shielded",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-4-The-Magnetic-Field-Acting-upon-Nuclei-in-Molecules-is-Shielded.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.04%3A_The_Magnetic_Field_Acting_upon_Nuclei_in_Molecules_is_Shielded",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.5",
+          "title": "Chemical Shifts Depend upon the Chemical Environment of the Nucleus",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-5-Chemical-Shifts-Depend-upon-the-Chemical-Environment-of-the-Nucleus.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.05%3A_Chemical_Shifts_Depend_upon_the_Chemical_Environment_of_the_Nucleus",
+          "author": "Anonymous",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "14.6",
+          "title": "Spin-Spin Coupling Can Lead to Multiplets in NMR Spectra",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-6-Spin-Spin-Coupling-Can-Lead-to-Multiplets-in-NMR-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.06%3A_Spin-Spin_Coupling_Can_Lead_to_Multiplets_in_NMR_Spectra",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.7",
+          "title": "Spin-Spin Coupling Between Chemically Equivalent Protons is Not Observed",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-7-Spin-Spin-Coupling-Between-Chemically-Equivalent-Protons-is-Not-Observed.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.07%3A_Spin-Spin_Coupling_Between_Chemically_Equivalent_Protons_is_Not_Observed",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "14.8",
+          "title": "The n+1 Rule Applies Only to First-Order Spectra",
+          "ready": true,
+          "file": "physchem/Nuclear-Magnetic-Resonance-Spectroscopy/14-8-The-n-1-Rule-Applies-Only-to-First-Order-Spectra.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/14%3A_Nuclear_Magnetic_Resonance_Spectroscopy/14.08%3A_The_n1_Rule_Applies_Only_to_First-Order_Spectra",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Lasers, Laser Spectroscopy, and Photochemistry",
+      "sections": [
+        {
+          "number": "15.1",
+          "title": "Electronically Excited Molecules can Relax by a Number of Processes",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-1-Electronically-Excited-Molecules-can-Relax-by-a-Number-of-Processes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.01%3A_Electronically_Excited_Molecules_can_Relax_by_a_Number_of_Processes",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "15.2",
+          "title": "The Dynamics of Transitions can be Modeled by Rate Equations",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-2-The-Dynamics-of-Transitions-can-be-Modeled-by-Rate-Equations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.02%3A_The_Dynamics_of_Transitions_can_be_Modeled_by_Rate_Equations",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "15.3",
+          "title": "A Two-Level System Cannot Achieve a Population Inversion",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-3-A-Two-Level-System-Cannot-Achieve-a-Population-Inversion.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.03%3A_A_Two-Level_System_Cannot_Achieve_a_Population_Inversion",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "15.4",
+          "title": "Population Inversion can be Achieved in a Three-Level System",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-4-Population-Inversion-can-be-Achieved-in-a-Three-Level-System.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.04%3A_Population_Inversion_can_be_Achieved_in_a_Three-Level_System",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "15.5",
+          "title": "What is Inside a Laser?",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-5-What-is-Inside-a-Laser.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.05%3A_What_is_Inside_a_Laser",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "15.6",
+          "title": "The Helium-Neon Laser",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-6-The-Helium-Neon-Laser.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.06%3A_The_Helium-Neon_Laser",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "15.7",
+          "title": "Modern Applications of Laser Spectroscopy",
+          "ready": true,
+          "file": "physchem/Lasers-Laser-Spectroscopy-and-Photochemistry/15-7-Modern-Applications-of-Laser-Spectroscopy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.07%3A_Modern_Applications_of_Laser_Spectroscopy",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "The Properties of Gases",
+      "sections": [
+        {
+          "number": "16.1",
+          "title": "All Dilute Gases Behave Ideally",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-1-All-Dilute-Gases-Behave-Ideally.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.01%3A_All_Dilute_Gases_Behave_Ideally",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "16.2",
+          "title": "van der Waals and Redlich-Kwong Equations of State",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-2-van-der-Waals-and-Redlich-Kwong-Equations-of-State.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.02%3A_van_der_Waals_and_Redlich-Kwong_Equations_of_State",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "16.3",
+          "title": "A Cubic Equation of State",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-3-A-Cubic-Equation-of-State.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.03%3A_A_Cubic_Equation_of_State",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "16.4",
+          "title": "The Law of Corresponding States",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-4-The-Law-of-Corresponding-States.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.04%3A_The_Law_of_Corresponding_States",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "16.5",
+          "title": "The Second Virial Coefficient",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-5-The-Second-Virial-Coefficient.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.05%3A_The_Second_Virial_Coefficient",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "16.6",
+          "title": "The Repulsive Term in the Lennard-Jones Potential",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-6-The-Repulsive-Term-in-the-Lennard-Jones-Potential.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.06%3A_The_Repulsive_Term_in_the_Lennard-Jones_Potential",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "16.7",
+          "title": "Van der Waals Constants in Terms of Molecular Parameters",
+          "ready": true,
+          "file": "physchem/The-Properties-of-Gases/16-7-Van-der-Waals-Constants-in-Terms-of-Molecular-Parameters.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/16%3A_The_Properties_of_Gases/16.07%3A_Van_der_Waals_Constants_in_Terms_of_Molecular_Parameters",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Boltzmann Factor and Partition Functions",
+      "sections": [
+        {
+          "number": "17.1",
+          "title": "The Boltzmann Factor is used to Approximate the Fraction of Particles in a Large System",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-1-The-Boltzmann-Factor-is-used-to-Approximate-the-Fraction-of-Particles-in-a-Large-System.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.01%3A_The_Boltzmann_Factor_is_used_to_Approximate_the_Fraction_of_Particles_in_a_Large_System",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "17.2",
+          "title": "The Boltzmann Distribution represents a Thermally Equilibrated Distribution",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-2-The-Boltzmann-Distribution-represents-a-Thermally-Equilibrated-Distribution.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.02%3A_The_Boltzmann_Distribution_represents_a_Thermally_Equilibrated_Distribution",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "17.3",
+          "title": "The Average Ensemble Energy is Equal to the Observed Energy of a System",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-3-The-Average-Ensemble-Energy-is-Equal-to-the-Observed-Energy-of-a-System.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.03%3A_The_Average_Ensemble_Energy_is_Equal_to_the_Observed_Energy_of_a_System",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "17.4",
+          "title": "Heat Capacity at Constant Volume is the Change in Internal Energy with Temperature",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-4-Heat-Capacity-at-Constant-Volume-is-the-Change-in-Internal-Energy-with-Temperature.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.04%3A_Heat_Capacity_at_Constant_Volume_is_the_Change_in_Internal_Energy_with_Temperature",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "17.5",
+          "title": "Pressure can be Expressed in Terms of the Canonical Partition Function",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-5-Pressure-can-be-Expressed-in-Terms-of-the-Canonical-Partition-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.05%3A_Pressure_can_be_Expressed_in_Terms_of_the_Canonical_Partition_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "17.6",
+          "title": "The Partition Function of Distinguishable, Independent Molecules is the Product of the Molecular Partition Functions",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-6-The-Partition-Function-of-Distinguishable-Independent-Molecules-is-the-Product-of-the-Molecular.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.06%3A_The_Partition_Function_of_Distinguishable_Independent_Molecules_is_the_Product_of_the_Molecular_Partition_Functions",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "17.7",
+          "title": "Partition Functions of Indistinguishable Molecules Must Avoid Over Counting States",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-7-Partition-Functions-of-Indistinguishable-Molecules-Must-Avoid-Over-Counting-States.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.07%3A_Partition_Functions_of_Indistinguishable_Molecules_Must_Avoid_Over_Counting_States",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "17.8",
+          "title": "Partition Functions can be Decomposed into Partition Functions of Each Degree of Freedom",
+          "ready": true,
+          "file": "physchem/Boltzmann-Factor-and-Partition-Functions/17-8-Partition-Functions-can-be-Decomposed-into-Partition-Functions-of-Each-Degree-of-Freedom.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/17%3A_Boltzmann_Factor_and_Partition_Functions/17.08%3A_Partition_Functions_can_be_Decomposed_into_Partition_Functions_of_Each_Degree_of_Freedom",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Partition Functions and Ideal Gases",
+      "sections": [
+        {
+          "number": "18.1",
+          "title": "Translational Partition Functions of Monotonic Gases",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-1-Translational-Partition-Functions-of-Monotonic-Gases.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.01%3A_Translational_Partition_Functions_of_Monotonic_Gases",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.2",
+          "title": "Most Atoms are in the Ground Electronic State",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-2-Most-Atoms-are-in-the-Ground-Electronic-State.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.02%3A_Most_Atoms_are_in_the_Ground_Electronic_State",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.3",
+          "title": "The Energy of a Diatomic/Polyatomic Molecule Can Be Approximated as a Sum of Separate Terms",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-3-The-Energy-of-a-Diatomic-Polyatomic-Molecule-Can-Be-Approximated-as-a-Sum-of-Separate-Terms.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.03%3A_The_Energy_of_a_Diatomic_Polyatomic_Molecule_Can_Be_Approximated_as_a_Sum_of_Separate_Terms",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.4",
+          "title": "Most Molecules are in the Ground Vibrational State",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-4-Most-Molecules-are-in-the-Ground-Vibrational-State.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.04%3A_Most_Molecules_are_in_the_Ground_Vibrational_State",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.5",
+          "title": "Most Molecules are Rotationally Excited at Ordinary Temperatures",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-5-Most-Molecules-are-Rotationally-Excited-at-Ordinary-Temperatures.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.05%3A_Most_Molecules_are_Rotationally_Excited_at_Ordinary_Temperatures",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.6",
+          "title": "Rotational Partition Functions of Diatomic Gases Contain a Symmetry Number",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-6-Rotational-Partition-Functions-of-Diatomic-Gases-Contain-a-Symmetry-Number.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.06%3A_Rotational_Partition_Functions_of_Diatomic_Gases_Contain_a_Symmetry_Number",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.7",
+          "title": "Vibrational Partition Functions of Polyatomic Molecules Include the Partition Function for Each Normal Coordinate",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-7-Vibrational-Partition-Functions-of-Polyatomic-Molecules-Include-the-Partition-Function-for-Each.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.07%3A_Vibrational_Partition_Functions_of_Polyatomic_Molecules_Include_the_Partition_Function_for_Each_Normal_Coordinate",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.8",
+          "title": "Rotational Partition Functions of Polyatomic Molecules Depend on the Sphar of the Molecule",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-8-Rotational-Partition-Functions-of-Polyatomic-Molecules-Depend-on-the-Sphar-of-the-Molecule.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.08%3A_Rotational_Partition_Functions_of_Polyatomic_Molecules_Depend_on_the_Sphar_of_the_Molecule",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.9",
+          "title": "Molar Heat Capacities",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-9-Molar-Heat-Capacities.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.09%3A_Molar_Heat_Capacities",
+          "author": "Tandy Grubbs",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.10",
+          "title": "Ortho and Para Hydrogen",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-10-Ortho-and-Para-Hydrogen.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.10%3A_Ortho_and_Para_Hydrogen",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "18.11",
+          "title": "The Equipartition Principle",
+          "ready": true,
+          "file": "physchem/Partition-Functions-and-Ideal-Gases/18-11-The-Equipartition-Principle.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/18%3A_Partition_Functions_and_Ideal_Gases/18.11%3A_The_Equipartition_Principle",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "The First Law of Thermodynamics",
+      "sections": [
+        {
+          "number": "19.2",
+          "title": "Pressure-Volume Work",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-2-Pressure-Volume-Work.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.02%3A_Pressure-Volume_Work",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "19.3",
+          "title": "Work and Heat are not State Functions",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-3-Work-and-Heat-are-not-State-Functions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.03%3A_Work_and_Heat_are_not_State_Functions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.4",
+          "title": "Energy is a State Function",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-4-Energy-is-a-State-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.04%3A_Energy_is_a_State_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.5",
+          "title": "An Adiabatic Process is a Process in which No Energy as Heat is Transferred",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-5-An-Adiabatic-Process-is-a-Process-in-which-No-Energy-as-Heat-is-Transferred.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.05%3A_An_Adiabatic_Process_is_a_Process_in_which_No_Energy_as_Heat_is_Transferred",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.6",
+          "title": "The Temperature of a Gas Decreases in a Reversible Adiabatic Expansion",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-6-The-Temperature-of-a-Gas-Decreases-in-a-Reversible-Adiabatic-Expansion.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.06%3A_The_Temperature_of_a_Gas_Decreases_in_a_Reversible_Adiabatic_Expansion",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.7",
+          "title": "Work and Heat Have a Simple Molecular Interpretation",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-7-Work-and-Heat-Have-a-Simple-Molecular-Interpretation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.07%3A_Work_and_Heat_Have_a_Simple_Molecular_Interpretation",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.8",
+          "title": "Pressure-Volume Work",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-8-Pressure-Volume-Work.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.08%3A_Pressure-Volume_Work",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.9",
+          "title": "Heat Capacity is a Path Function",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-9-Heat-Capacity-is-a-Path-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.09%3A_Heat_Capacity_is_a_Path_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.10",
+          "title": "Relative Enthalpies Can Be Determined from Heat Capacity Data and Heats of Transition",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-10-Relative-Enthalpies-Can-Be-Determined-from-Heat-Capacity-Data-and-Heats-of-Transition.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.10%3A_Relative_Enthalpies_Can_Be_Determined_from_Heat_Capacity_Data_and_Heats_of_Transition",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.11",
+          "title": "Enthalpy Changes for Chemical Equations are Additive",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-11-Enthalpy-Changes-for-Chemical-Equations-are-Additive.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.11%3A_Enthalpy_Changes_for_Chemical_Equations_are_Additive",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.12",
+          "title": "Heats of Reactions Can Be Calculated from Tabulated Heats of Formation",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-12-Heats-of-Reactions-Can-Be-Calculated-from-Tabulated-Heats-of-Formation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.12%3A_Heats_of_Reactions_Can_Be_Calculated_from_Tabulated_Heats_of_Formation",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.13",
+          "title": "The Temperature Dependence of ΔH",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-13-The-Temperature-Dependence-of-H.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.13%3A_The_Temperature_Dependence_of_H",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "19.14",
+          "title": "Enthalpy is a State Function",
+          "ready": true,
+          "file": "physchem/The-First-Law-of-Thermodynamics/19-14-Enthalpy-is-a-State-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/19%3A_The_First_Law_of_Thermodynamics/19.14%3A_Enthalpy_is_a_State_Function",
+          "author": "Anonymous",
+          "license": "Unverified"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Entropy and The Second Law of Thermodynamics",
+      "sections": [
+        {
+          "number": "20.1",
+          "title": "Energy Does not Determine Spontaneity",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-1-Energy-Does-not-Determine-Spontaneity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.01%3A_Energy_Does_not_Determine_Spontaneity",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.2",
+          "title": "Nonequilibrium Isolated Systems Evolve in a Direction That Increases Their Energy Dispersal",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-2-Nonequilibrium-Isolated-Systems-Evolve-in-a-Direction-That-Increases-Their-Energy-Dispersal.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.02%3A_Nonequilibrium_Isolated_Systems_Evolve_in_a_Direction_That_Increases_Their_Energy_Dispersal",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.3",
+          "title": "Unlike heat, Entropy is a State Function",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-3-Unlike-heat-Entropy-is-a-State-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.03%3A_Unlike_heat_Entropy_is_a_State_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.4",
+          "title": "The Second Law of Thermodynamics",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-4-The-Second-Law-of-Thermodynamics.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.04%3A_The_Second_Law_of_Thermodynamics",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.5",
+          "title": "The Famous Equation of Statistical Thermodynamics is S=k ln W",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-5-The-Famous-Equation-of-Statistical-Thermodynamics-is-S-k-ln-W.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.05%3A_The_Famous_Equation_of_Statistical_Thermodynamics_is_Sk_ln_W",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.6",
+          "title": "We Must Always Devise a Reversible Process to Calculate Entropy Changes",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-6-We-Must-Always-Devise-a-Reversible-Process-to-Calculate-Entropy-Changes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.06%3A_We_Must_Always_Devise_a_Reversible_Process_to_Calculate_Entropy_Changes",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.7",
+          "title": "Thermodynamics Provides Insight into the Conversion of Heat into Work",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-7-Thermodynamics-Provides-Insight-into-the-Conversion-of-Heat-into-Work.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.07%3A_Thermodynamics_Provides_Insight_into_the_Conversion_of_Heat_into_Work",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.8",
+          "title": "Entropy Can Be Expressed in Terms of a Partition Function",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-8-Entropy-Can-Be-Expressed-in-Terms-of-a-Partition-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.08%3A_Entropy_Can_Be_Expressed_in_Terms_of_a_Partition_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "20.9",
+          "title": "The Statistical Definition of Entropy is Analogous to the Thermodynamic Definition",
+          "ready": true,
+          "file": "physchem/Entropy-and-The-Second-Law-of-Thermodynamics/20-9-The-Statistical-Definition-of-Entropy-is-Analogous-to-the-Thermodynamic-Definition.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/20%3A_Entropy_and_The_Second_Law_of_Thermodynamics/20.09%3A_The_Statistical_Definition_of_Entropy_is_Analogous_to_the_Thermodynamic_Definition",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Entropy and the Third Law of Thermodynamics",
+      "sections": [
+        {
+          "number": "21.1",
+          "title": "Entropy Increases with Increasing Temperature",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-1-Entropy-Increases-with-Increasing-Temperature.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.01%3A_Entropy_Increases_with_Increasing_Temperature",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.2",
+          "title": "The 3rd Law of Thermodynamics Puts Entropy on an Absolute Scale",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-2-The-3rd-Law-of-Thermodynamics-Puts-Entropy-on-an-Absolute-Scale.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.02%3A_The_3rd_Law_of_Thermodynamics_Puts_Entropy_on_an_Absolute_Scale",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.3",
+          "title": "The Entropy of a Phase Transition can be Calculated from the Enthalpy of the Phase Transition",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-3-The-Entropy-of-a-Phase-Transition-can-be-Calculated-from-the-Enthalpy-of-the-Phase-Transition.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.03%3A_The_Entropy_of_a_Phase_Transition_can_be_Calculated_from_the_Enthalpy_of_the_Phase_Transition",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.4",
+          "title": "The Debye Function is Used to Calculate the Heat Capacity at Low Temperatures",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-4-The-Debye-Function-is-Used-to-Calculate-the-Heat-Capacity-at-Low-Temperatures.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.04%3A_The_Debye_Function_is_Used_to_Calculate_the_Heat_Capacity_at_Low_Temperatures",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.5",
+          "title": "Practical Absolute Entropies Can Be Determined Calorimetrically",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-5-Practical-Absolute-Entropies-Can-Be-Determined-Calorimetrically.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.05%3A_Practical_Absolute_Entropies_Can_Be_Determined_Calorimetrically",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.6",
+          "title": "Practical Absolute Entropies of Gases Can Be Calculated from Partition Functions",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-6-Practical-Absolute-Entropies-of-Gases-Can-Be-Calculated-from-Partition-Functions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.06%3A_Practical_Absolute_Entropies_of_Gases_Can_Be_Calculated_from_Partition_Functions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.7",
+          "title": "Standard Entropies Depend Upon Molecular Mass and Structure",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-7-Standard-Entropies-Depend-Upon-Molecular-Mass-and-Structure.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.07%3A_Standard_Entropies_Depend_Upon_Molecular_Mass_and_Structure",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.8",
+          "title": "Spectroscopic Entropies sometimes disgree with Calorimetric Entropies",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-8-Spectroscopic-Entropies-sometimes-disgree-with-Calorimetric-Entropies.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.08%3A_Spectroscopic_Entropies_sometimes_disgree_with_Calorimetric_Entropies",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "21.9",
+          "title": "Standard Entropies Can Be Used to Calculate Entropy Changes of Chemical Reactions",
+          "ready": true,
+          "file": "physchem/Entropy-and-the-Third-Law-of-Thermodynamics/21-9-Standard-Entropies-Can-Be-Used-to-Calculate-Entropy-Changes-of-Chemical-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/21%3A_Entropy_and_the_Third_Law_of_Thermodynamics/21.09%3A_Standard_Entropies_Can_Be_Used_to_Calculate_Entropy_Changes_of_Chemical_Reactions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Helmholtz and Gibbs Energies",
+      "sections": [
+        {
+          "number": "22.1",
+          "title": "Helmholtz Energy",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-1-Helmholtz-Energy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.01%3A_Helmholtz_Energy",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.2",
+          "title": "Gibbs Energy Determines the Direction of Spontaneity at Constant Pressure and Temperature",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-2-Gibbs-Energy-Determines-the-Direction-of-Spontaneity-at-Constant-Pressure-and-Temperature.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.02%3A_Gibbs_Energy_Determines_the_Direction_of_Spontaneity_at_Constant_Pressure_and_Temperature",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.3",
+          "title": "The Maxwell Relations",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-3-The-Maxwell-Relations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.03%3A_The_Maxwell_Relations",
+          "author": "Patrick Fleming",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.4",
+          "title": "The Enthalpy of an Ideal Gas is Independent of Pressure",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-4-The-Enthalpy-of-an-Ideal-Gas-is-Independent-of-Pressure.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.04%3A_The_Enthalpy_of_an_Ideal_Gas_is_Independent_of_Pressure",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.5",
+          "title": "Thermodynamic Functions have Natural Variables",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-5-Thermodynamic-Functions-have-Natural-Variables.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.05%3A_Thermodynamic_Functions_have_Natural_Variables",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.6",
+          "title": "The Standard State for a Gas is an Ideal Gas at 1 Bar",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-6-The-Standard-State-for-a-Gas-is-an-Ideal-Gas-at-1-Bar.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.06%3A_The_Standard_State_for_a_Gas_is_an_Ideal_Gas_at_1_Bar",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.7",
+          "title": "The Gibbs-Helmholtz Equation",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-7-The-Gibbs-Helmholtz-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.07%3A_The_Gibbs-Helmholtz_Equation",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "22.8",
+          "title": "Fugacity Measures Nonideality of a Gas",
+          "ready": true,
+          "file": "physchem/Helmholtz-and-Gibbs-Energies/22-8-Fugacity-Measures-Nonideality-of-a-Gas.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/22%3A_Helmholtz_and_Gibbs_Energies/22.08%3A_Fugacity_Measures_Nonideality_of_a_Gas",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Phase Equilibria",
+      "sections": [
+        {
+          "number": "23.1",
+          "title": "A Phase Diagram Summarizes the Solid-Liquid-Gas Behavior of a Substance",
+          "ready": true,
+          "file": "physchem/Phase-Equilibria/23-1-A-Phase-Diagram-Summarizes-the-Solid-Liquid-Gas-Behavior-of-a-Substance.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/23%3A_Phase_Equilibria/23.01%3A_A_Phase_Diagram_Summarizes_the_Solid-Liquid-Gas_Behavior_of_a_Substance",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "23.2",
+          "title": "Gibbs Energies and Phase Diagrams",
+          "ready": true,
+          "file": "physchem/Phase-Equilibria/23-2-Gibbs-Energies-and-Phase-Diagrams.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/23%3A_Phase_Equilibria/23.02%3A_Gibbs_Energies_and_Phase_Diagrams",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "23.3",
+          "title": "The Chemical Potentials of a Pure Substance in Two Phases in Equilibrium",
+          "ready": true,
+          "file": "physchem/Phase-Equilibria/23-3-The-Chemical-Potentials-of-a-Pure-Substance-in-Two-Phases-in-Equilibrium.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/23%3A_Phase_Equilibria/23.03%3A_The_Chemical_Potentials_of_a_Pure_Substance_in_Two_Phases_in_Equilibrium",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "23.4",
+          "title": "The Clausius-Clapeyron Equation",
+          "ready": true,
+          "file": "physchem/Phase-Equilibria/23-4-The-Clausius-Clapeyron-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/23%3A_Phase_Equilibria/23.04%3A_The_Clausius-Clapeyron_Equation",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "23.5",
+          "title": "Chemical Potential Can be Evaluated From a Partition Function",
+          "ready": true,
+          "file": "physchem/Phase-Equilibria/23-5-Chemical-Potential-Can-be-Evaluated-From-a-Partition-Function.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/23%3A_Phase_Equilibria/23.05%3A_Chemical_Potential_Can_be_Evaluated_From_a_Partition_Function",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Solutions I - Volatile Solutes",
+      "sections": [
+        {
+          "number": "24.1",
+          "title": "A Mixture is a Combination of Two or More Substances",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-1-A-Mixture-is-a-Combination-of-Two-or-More-Substances.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.01%3A_A_Mixture_is_a_Combination_of_Two_or_More_Substances",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.2",
+          "title": "The Gibbs-Duhem Equation Relates Chemical Potential and Composition at Equilibrium",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-2-The-Gibbs-Duhem-Equation-Relates-Chemical-Potential-and-Composition-at-Equilibrium.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.02%3A_The_Gibbs-Duhem_Equation_Relates_Chemical_Potential_and_Composition_at_Equilibrium",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.3",
+          "title": "Chemical Potential of Each Component Has the Same Value in Each Phase in Which the Component Appears",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-3-Chemical-Potential-of-Each-Component-Has-the-Same-Value-in-Each-Phase-in-Which-the-Component-Appears.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.03%3A_Chemical_Potential_of_Each_Component_Has_the_Same_Value_in_Each_Phase_in_Which_the_Component_Appears",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.4",
+          "title": "Ideal Solutions obey Raoult's Law",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-4-Ideal-Solutions-obey-Raoults-Law.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.04%3A_Ideal_Solutions_obey_Raoult's_Law",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.5",
+          "title": "Most Solutions are Not Ideal",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-5-Most-Solutions-are-Not-Ideal.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.05%3A_Most_Solutions_are_Not_Ideal",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.6",
+          "title": "Vapor Pressures of Volatile Binary Solutions",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-6-Vapor-Pressures-of-Volatile-Binary-Solutions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.06%3A_Vapor_Pressures_of_Volatile_Binary_Solutions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.7",
+          "title": "Activities of Nonideal Solutions",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-7-Activities-of-Nonideal-Solutions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.07%3A_Activities_of_Nonideal_Solutions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.8",
+          "title": "Activities are Calculated with Respect to Standard States",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-8-Activities-are-Calculated-with-Respect-to-Standard-States.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.08%3A_Activities_are_Calculated_with_Respect_to_Standard_States",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "24.9",
+          "title": "Gibbs Energy of Mixing of Binary Solutions in Terms of the Activity Coefficient",
+          "ready": true,
+          "file": "physchem/Solutions-I-Volatile-Solutes/24-9-Gibbs-Energy-of-Mixing-of-Binary-Solutions-in-Terms-of-the-Activity-Coefficient.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/24%3A_Solutions_I_-_Volatile_Solutes/24.09%3A_Gibbs_Energy_of_Mixing_of_Binary_Solutions_in_Terms_of_the_Activity_Coefficient",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Solutions II - Nonvolatile Solutes",
+      "sections": [
+        {
+          "number": "25.1",
+          "title": "Standard State of Nonvolatile Solutions",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-1-Standard-State-of-Nonvolatile-Solutions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.01%3A_Standard_State_of_Nonvolatile_Solutions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.2",
+          "title": "The Activities of Nonvolatile Solutes",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-2-The-Activities-of-Nonvolatile-Solutes.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.02%3A_The_Activities_of_Nonvolatile_Solutes",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.3",
+          "title": "Colligative Properties Depend only on Number Density",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-3-Colligative-Properties-Depend-only-on-Number-Density.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.03%3A_Colligative_Properties_Depend_only_on_Number_Density",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.4",
+          "title": "Osmotic Pressure can Determine Molecular Masses",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-4-Osmotic-Pressure-can-Determine-Molecular-Masses.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.04%3A_Osmotic_Pressure_can_Determine_Molecular_Masses",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.5",
+          "title": "Electrolytes Solutions are Nonideal at Low Concentrations",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-5-Electrolytes-Solutions-are-Nonideal-at-Low-Concentrations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.05%3A_Electrolytes_Solutions_are_Nonideal_at_Low_Concentrations",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.6",
+          "title": "The Debye-Hückel Theory",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-6-The-Debye-Huckel-Theory.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.06%3A_The_Debye-Huckel_Theory",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "25.7",
+          "title": "Extending Debye-Hückel Theory to Higher Concentrations",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-7-Extending-Debye-Huckel-Theory-to-Higher-Concentrations.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.07%3A_Extending_Debye-Huckel_Theory_to_Higher_Concentrations",
+          "author": "Wikipedia contributors",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "25.8",
+          "title": "Homework Problems",
+          "ready": true,
+          "file": "physchem/Solutions-II-Nonvolatile-Solutes/25-8-Homework-Problems.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/25%3A_Solutions_II_-_Nonvolatile_Solutes/25.08%3A_Homework_Problems",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Chemical Equilibrium",
+      "sections": [
+        {
+          "number": "26.1",
+          "title": "Equilibrium Results when Gibbs Energy is Minimized",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-1-Equilibrium-Results-when-Gibbs-Energy-is-Minimized.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.01%3A_Equilibrium_Results_when_Gibbs_Energy_is_Minimized",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.2",
+          "title": "An Equilibrium Constant is a Function of Temperature Only",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-2-An-Equilibrium-Constant-is-a-Function-of-Temperature-Only.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.02%3A_An_Equilibrium_Constant_is_a_Function_of_Temperature_Only",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.3",
+          "title": "Standard Gibbs Energies of Formation Can Be Used to Calculate Equilibrium Constants",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-3-Standard-Gibbs-Energies-of-Formation-Can-Be-Used-to-Calculate-Equilibrium-Constants.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.03%3A_Standard_Gibbs_Energies_of_Formation_Can_Be_Used_to_Calculate_Equilibrium_Constants",
+          "author": "Howard DeVoe",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.4",
+          "title": "Gibbs Energy of a Reaction vs. Extent of Reaction is a Minimum at Equilibrium",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-4-Gibbs-Energy-of-a-Reaction-vs-Extent-of-Reaction-is-a-Minimum-at-Equilibrium.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.04%3A_Gibbs_Energy_of_a_Reaction_vs._Extent_of_Reaction_is_a_Minimum_at_Equilibrium",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "26.5",
+          "title": "Reaction Quotient and Equilibrium Constant Ratio Determines Reaction Direction",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-5-Reaction-Quotient-and-Equilibrium-Constant-Ratio-Determines-Reaction-Direction.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.05%3A_Reaction_Quotient_and_Equilibrium_Constant_Ratio_Determines_Reaction_Direction",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "26.6",
+          "title": "The Sign of ΔG and not ΔG° Determines the Direction of Reaction Spontaneity",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-6-The-Sign-of-G-and-not-G-Determines-the-Direction-of-Reaction-Spontaneity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.06%3A_The_Sign_of_G_and_not_G_Determines_the_Direction_of_Reaction_Spontaneity",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.7",
+          "title": "The van 't Hoff Equation",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-7-The-van-t-Hoff-Equation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.07%3A_The_van_'t_Hoff_Equation",
+          "author": "Mark Tuckerman",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.8",
+          "title": "Equilibrium Constants in Terms of Partition Functions",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-8-Equilibrium-Constants-in-Terms-of-Partition-Functions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.08%3A_Equilibrium_Constants_in_Terms_of_Partition_Functions",
+          "author": "Wikipedia contributors",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "26.9",
+          "title": "Molecular Partition Functions and Related Thermodynamic Data Are Extensively Tabulated",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-9-Molecular-Partition-Functions-and-Related-Thermodynamic-Data-Are-Extensively-Tabulated.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.09%3A_Molecular_Partition_Functions_and_Related_Thermodynamic_Data_Are_Extensively_Tabulated",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.10",
+          "title": "Real Gases Are Expressed in Terms of Partial Fugacities",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-10-Real-Gases-Are-Expressed-in-Terms-of-Partial-Fugacities.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.10%3A_Real_Gases_Are_Expressed_in_Terms_of_Partial_Fugacities",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.11",
+          "title": "Thermodynamic Equilibrium Constants Are Expressed in Terms of Activities",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-11-Thermodynamic-Equilibrium-Constants-Are-Expressed-in-Terms-of-Activities.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.11%3A_Thermodynamic_Equilibrium_Constants_Are_Expressed_in_Terms_of_Activities",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.12",
+          "title": "Activities are Important for Ionic Species",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-12-Activities-are-Important-for-Ionic-Species.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.12%3A_Activities_are_Important_for_Ionic_Species",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "26.13",
+          "title": "Homework Problems",
+          "ready": true,
+          "file": "physchem/Chemical-Equilibrium/26-13-Homework-Problems.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/26%3A_Chemical_Equilibrium/26.13%3A_Homework_Problems",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "title": "The Kinetic Theory of Gases",
+      "sections": [
+        {
+          "number": "27.1",
+          "title": "The Average Translational Kinetic Energy of a Gas",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-1-The-Average-Translational-Kinetic-Energy-of-a-Gas.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.01%3A_The_Average_Translational_Kinetic_Energy_of_a_Gas",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.2",
+          "title": "The Gaussian Distribution of One Component of the Molecular Velocity",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-2-The-Gaussian-Distribution-of-One-Component-of-the-Molecular-Velocity.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.02%3A_The_Gaussian_Distribution_of_One_Component_of_the_Molecular_Velocity",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.3",
+          "title": "The Distribution of Molecular Speeds is Given by the Maxwell-Boltzmann Distribution",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-3-The-Distribution-of-Molecular-Speeds-is-Given-by-the-Maxwell-Boltzmann-Distribution.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.03%3A_The_Distribution_of_Molecular_Speeds_is_Given_by_the_Maxwell-Boltzmann_Distribution",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.4",
+          "title": "The Frequency of Collisions with a Wall",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-4-The-Frequency-of-Collisions-with-a-Wall.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.04%3A_The_Frequency_of_Collisions_with_a_Wall",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.5",
+          "title": "The Maxwell-Boltzmann Distribution Has Been Verified Experimentally",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-5-The-Maxwell-Boltzmann-Distribution-Has-Been-Verified-Experimentally.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.05%3A_The_Maxwell-Boltzmann_Distribution_Has_Been_Verified_Experimentally",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.6",
+          "title": "Mean Free Path",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-6-Mean-Free-Path.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.06%3A_Mean_Free_Path",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "27.7",
+          "title": "Rates of Gas-Phase Chemical Reactions",
+          "ready": true,
+          "file": "physchem/The-Kinetic-Theory-of-Gases/27-7-Rates-of-Gas-Phase-Chemical-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/27%3A_The_Kinetic_Theory_of_Gases/27.07%3A_Rates_of_Gas-Phase_Chemical_Reactions",
+          "author": "Mark Tuckerman",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "title": "Chemical Kinetics I - Rate Laws",
+      "sections": [
+        {
+          "number": "28.1",
+          "title": "The Time Dependence of a Chemical Reaction is Described by a Rate Law",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-1-The-Time-Dependence-of-a-Chemical-Reaction-is-Described-by-a-Rate-Law.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.01%3A_The_Time_Dependence_of_a_Chemical_Reaction_is_Described_by_a_Rate_Law",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.2",
+          "title": "Rate Laws Must Be Determined Experimentally",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-2-Rate-Laws-Must-Be-Determined-Experimentally.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.02%3A_Rate_Laws_Must_Be_Determined_Experimentally",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.3",
+          "title": "First-Order Reactions Show an Exponential Decay of Reactant Concentration with Time",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-3-First-Order-Reactions-Show-an-Exponential-Decay-of-Reactant-Concentration-with-Time.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.03%3A_First-Order_Reactions_Show_an_Exponential_Decay_of_Reactant_Concentration_with_Time",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.4",
+          "title": "Different Rate Laws Predict Different Kinetics",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-4-Different-Rate-Laws-Predict-Different-Kinetics.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.04%3A_Different_Rate_Laws_Predict_Different_Kinetics",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.5",
+          "title": "Reactions can also be Reversible",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-5-Reactions-can-also-be-Reversible.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.05%3A_Reactions_can_also_be_Reversible",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.6",
+          "title": "The Rate Constants of a Reversible Reaction Can Be Determined Using Relaxation Techniques",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-6-The-Rate-Constants-of-a-Reversible-Reaction-Can-Be-Determined-Using-Relaxation-Techniques.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.06%3A_The_Rate_Constants_of_a_Reversible_Reaction_Can_Be_Determined_Using_Relaxation_Techniques",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "28.8",
+          "title": "Transition-State Theory Can Be Used to Estimate Reaction Rate Constants",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-I-Rate-Laws/28-8-Transition-State-Theory-Can-Be-Used-to-Estimate-Reaction-Rate-Constants.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/28%3A_Chemical_Kinetics_I_-_Rate_Laws/28.08%3A_Transition-State_Theory_Can_Be_Used_to_Estimate_Reaction_Rate_Constants",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "title": "Chemical Kinetics II- Reaction Mechanisms",
+      "sections": [
+        {
+          "number": "29.1",
+          "title": "A Mechanism is a Sequence of Elementary Reactions",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-1-A-Mechanism-is-a-Sequence-of-Elementary-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.01%3A_A_Mechanism_is_a_Sequence_of_Elementary_Reactions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.2",
+          "title": "The Principle of Detailed Balance",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-2-The-Principle-of-Detailed-Balance.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.02%3A_The_Principle_of_Detailed_Balance",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.3",
+          "title": "Multiple Mechanisms are often Indistinguishable",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-3-Multiple-Mechanisms-are-often-Indistinguishable.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.03%3A_Multiple_Mechanisms_are_often_Indistinguishable",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.4",
+          "title": "The Steady-State Approximation",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-4-The-Steady-State-Approximation.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.04%3A_The_Steady-State_Approximation",
+          "author": "Patrick Fleming",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.5",
+          "title": "Rate Laws Do Not Imply Unique Mechanism",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-5-Rate-Laws-Do-Not-Imply-Unique-Mechanism.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.05%3A_Rate_Laws_Do_Not_Imply_Unique_Mechanism",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.6",
+          "title": "The Lindemann Mechanism",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-6-The-Lindemann-Mechanism.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.06%3A_The_Lindemann_Mechanism",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.7",
+          "title": "Some Reaction Mechanisms Involve Chain Reactions",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-7-Some-Reaction-Mechanisms-Involve-Chain-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.07%3A_Some_Reaction_Mechanisms_Involve_Chain_Reactions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.8",
+          "title": "A Catalyst Affects the Mechanism and Activation Energy",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-8-A-Catalyst-Affects-the-Mechanism-and-Activation-Energy.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.08%3A_A_Catalyst_Affects_the_Mechanism_and_Activation_Energy",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "29.9",
+          "title": "The Michaelis-Menten Mechanism for Enzyme Catalysis",
+          "ready": true,
+          "file": "physchem/Chemical-Kinetics-II-Reaction-Mechanisms/29-9-The-Michaelis-Menten-Mechanism-for-Enzyme-Catalysis.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/29%3A_Chemical_Kinetics_II-_Reaction_Mechanisms/29.09%3A_The_Michaelis-Menten_Mechanism_for_Enzyme_Catalysis",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "title": "Gas-Phase Reaction Dynamics",
+      "sections": [
+        {
+          "number": "30.1",
+          "title": "The Rate of Bimolecular Gas-Phase Reaction Can Be Estimated Using Hard-Sphere Collision Theory and an Energy-Dependent Reaction Cross Section",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-1-The-Rate-of-Bimolecular-Gas-Phase-Reaction-Can-Be-Estimated-Using-Hard-Sphere-Collision-Theory-and.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.01%3A_The_Rate_of_Bimolecular_Gas-Phase_Reaction_Can_Be_Estimated_Using_Hard-Sphere_Collision_Theory_and_an_Energy-Dependent_Reaction_Cross_Section",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.2",
+          "title": "A Reaction Cross Section Depends Upon the Impact Parameter",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-2-A-Reaction-Cross-Section-Depends-Upon-the-Impact-Parameter.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.02%3A_A_Reaction_Cross_Section_Depends_Upon_the_Impact_Parameter",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.3",
+          "title": "The Rate Constant for a Gas-Phase Chemical Reaction May Depend on the Orientations of the Colliding Molecules",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-3-The-Rate-Constant-for-a-Gas-Phase-Chemical-Reaction-May-Depend-on-the-Orientations-of-the-Colliding.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.03%3A_The_Rate_Constant_for_a_Gas-Phase_Chemical_Reaction_May_Depend_on_the_Orientations_of_the_Colliding_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.4",
+          "title": "The Internal Energy of the Reactants Can Affect the Cross Section of a Reaction",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-4-The-Internal-Energy-of-the-Reactants-Can-Affect-the-Cross-Section-of-a-Reaction.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.04%3A_The_Internal_Energy_of_the_Reactants_Can_Affect_the_Cross_Section_of_a_Reaction",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.5",
+          "title": "A Reactive Collision Can Be Described in a Center-of-Mass Coordinate System",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-5-A-Reactive-Collision-Can-Be-Described-in-a-Center-of-Mass-Coordinate-System.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.05%3A_A_Reactive_Collision_Can_Be_Described_in_a_Center-of-Mass_Coordinate_System",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.6",
+          "title": "Reactive Collisions Can be Studied Using Crossed Molecular Beam Machines",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-6-Reactive-Collisions-Can-be-Studied-Using-Crossed-Molecular-Beam-Machines.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.06%3A_Reactive_Collisions_Can_be_Studied_Using_Crossed_Molecular_Beam_Machines",
+          "author": "Anonymous",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "number": "30.7",
+          "title": "Reactions Can Produce Vibrationally Excited Molecules",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-7-Reactions-Can-Produce-Vibrationally-Excited-Molecules.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.07%3A_Reactions_Can_Produce_Vibrationally_Excited_Molecules",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.8",
+          "title": "The Velocity and Angular Distribution of the Products of a Reactive Collision",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-8-The-Velocity-and-Angular-Distribution-of-the-Products-of-a-Reactive-Collision.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.08%3A_The_Velocity_and_Angular_Distribution_of_the_Products_of_a_Reactive_Collision",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.9",
+          "title": "Not All Gas-Phase Chemical Reactions are Rebound Reactions",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-9-Not-All-Gas-Phase-Chemical-Reactions-are-Rebound-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.09%3A_Not_All_Gas-Phase_Chemical_Reactions_are_Rebound_Reactions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "30.10",
+          "title": "The Potential-Energy Surface Can Be Calculated Using Quantum Mechanics",
+          "ready": true,
+          "file": "physchem/Gas-Phase-Reaction-Dynamics/30-10-The-Potential-Energy-Surface-Can-Be-Calculated-Using-Quantum-Mechanics.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/30%3A_Gas-Phase_Reaction_Dynamics/30.10%3A_The_Potential-Energy_Surface_Can_Be_Calculated_Using_Quantum_Mechanics",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "title": "Solids and Surface Chemistry",
+      "sections": [
+        {
+          "number": "31.1",
+          "title": "The Unit Cell is the Fundamental Building Block of a Crystal",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-1-The-Unit-Cell-is-the-Fundamental-Building-Block-of-a-Crystal.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.01%3A_The_Unit_Cell_is_the_Fundamental_Building_Block_of_a_Crystal",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.2",
+          "title": "The Orientation of a Lattice Plane is Described by its Miller Indices",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-2-The-Orientation-of-a-Lattice-Plane-is-Described-by-its-Miller-Indices.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.02%3A_The_Orientation_of_a_Lattice_Plane_is_Described_by_its_Miller_Indices",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.3",
+          "title": "The Spacing Between Lattice Planes Can Be Determined from X-Ray Diffraction Measurements",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-3-The-Spacing-Between-Lattice-Planes-Can-Be-Determined-from-X-Ray-Diffraction-Measurements.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.03%3A_The_Spacing_Between_Lattice_Planes_Can_Be_Determined_from_X-Ray_Diffraction_Measurements",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.4",
+          "title": "The Total Scattering Intensity is Related to the Periodic Structure of the Electron Density in the Crystal",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-4-The-Total-Scattering-Intensity-is-Related-to-the-Periodic-Structure-of-the-Electron-Density-in-the.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.04%3A_The_Total_Scattering_Intensity_is_Related_to_the_Periodic_Structure_of_the_Electron_Density_in_the_Crystal",
+          "author": "Anonymous",
+          "license": "CC BY 4.0"
+        },
+        {
+          "number": "31.5",
+          "title": "The Structure Factor and the Electron Density Are Related by a Fourier Transform",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-5-The-Structure-Factor-and-the-Electron-Density-Are-Related-by-a-Fourier-Transform.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.05%3A_The_Structure_Factor_and_the_Electron_Density_Are_Related_by_a_Fourier_Transform",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.6",
+          "title": "Atoms and Molecules can Physisorb or Chemisorb to a Surface",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-6-Atoms-and-Molecules-can-Physisorb-or-Chemisorb-to-a-Surface.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.06%3A_Atoms_and_Molecules_can_Physisorb_or_Chemisorb_to_a_Surface",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.7",
+          "title": "Isotherms are Plots of Surface Coverage as a Function of Gas Pressure at Constant Temperature",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-7-Isotherms-are-Plots-of-Surface-Coverage-as-a-Function-of-Gas-Pressure-at-Constant-Temperature.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.07%3A_Isotherms_are_Plots_of_Surface_Coverage_as_a_Function_of_Gas_Pressure_at_Constant_Temperature",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.8",
+          "title": "Using Langmuir Isotherms to Derive Rate Laws for Surface-Catalyzed Gas-Phase Reactions",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-8-Using-Langmuir-Isotherms-to-Derive-Rate-Laws-for-Surface-Catalyzed-Gas-Phase-Reactions.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.08%3A_Using_Langmuir_Isotherms_to_Derive_Rate_Laws_for_Surface-Catalyzed_Gas-Phase_Reactions",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.9",
+          "title": "The Structure of a Surface is Different from that of a Bulk Solid",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-9-The-Structure-of-a-Surface-is-Different-from-that-of-a-Bulk-Solid.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.09%3A_The_Structure_of_a_Surface_is_Different_from_that_of_a_Bulk_Solid",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        },
+        {
+          "number": "31.10",
+          "title": "The Haber-Bosch Reaction Can Be Surface Catalyzed",
+          "ready": true,
+          "file": "physchem/Solids-and-Surface-Chemistry/31-10-The-Haber-Bosch-Reaction-Can-Be-Surface-Catalyzed.md",
+          "sourceUrl": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/31%3A_Solids_and_Surface_Chemistry/31.10%3A_The_Haber-Bosch_Reaction_Can_Be_Surface_Catalyzed",
+          "author": "Anonymous",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      ]
+    }
   ]
 };
 
@@ -4941,6 +7568,11 @@ export const BOOK_META: Record<BookKey, BookMeta> = {
   },
   "inorganic-chemistry": {
     "title": "Inorganic Chemistry (LibreTexts)",
+    "author": "various authors",
+    "license": "Mixed"
+  },
+  "physical-chemistry": {
+    "title": "Physical Chemistry (LibreTexts)",
     "author": "various authors",
     "license": "Mixed"
   }

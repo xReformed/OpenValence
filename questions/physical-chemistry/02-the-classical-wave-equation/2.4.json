@@ -1,0 +1,556 @@
+[
+  {
+    "id": "pc2-normal-mode",
+    "type": "multiple-choice",
+    "prompt": "In the general solution u(x, t) = Σ un(x, t), what is each un(x, t) called?",
+    "choices": [
+      {
+        "text": "A normal mode",
+        "correct": true
+      },
+      {
+        "text": "A boundary condition",
+        "why": "Boundary conditions are the rules at the ends of the string. Each un is a solution that obeys them."
+      },
+      {
+        "text": "A node",
+        "why": "A node is a point that doesn't move. Each un is a whole standing-wave solution."
+      },
+      {
+        "text": "A traveling wave",
+        "why": "Each un is a standing wave, with nodes fixed in place."
+      }
+    ],
+    "explanation": "Each un(x, t) is a normal mode of the string: a standing wave with its own quantum number n. The general motion of the string is a sum of these modes."
+  },
+  {
+    "id": "pc2-fundamental",
+    "type": "multiple-choice",
+    "prompt": "What is the n = 1 normal mode of a string usually called?",
+    "choices": [
+      {
+        "text": "The fundamental",
+        "correct": true
+      },
+      {
+        "text": "The first overtone",
+        "why": "The overtones (harmonics) are the modes after the first one, n = 2, 3, …"
+      },
+      {
+        "text": "The trivial solution",
+        "why": "The trivial solution is u = 0, from n = 0. n = 1 is a real vibration."
+      },
+      {
+        "text": "The antinode",
+        "why": "An antinode is a point of greatest motion, not a mode."
+      }
+    ],
+    "explanation": "The n = 1 mode, with no nodes between the ends, is the fundamental. Each mode after it is called an overtone or harmonic."
+  },
+  {
+    "id": "pc2-superposition-principle",
+    "type": "multiple-choice",
+    "prompt": "What does the Principle of Superposition say about the wave equation?",
+    "choices": [
+      {
+        "text": "The sum of two or more solutions is also a solution",
+        "correct": true
+      },
+      {
+        "text": "Only one solution can exist at a time",
+        "why": "Many solutions can be present at once; you simply add them."
+      },
+      {
+        "text": "Two waves that meet always cancel completely",
+        "why": "They add. They cancel only where their displacements are equal and opposite."
+      },
+      {
+        "text": "The product of two solutions is a solution",
+        "why": "It is the sum (or any af + bg with constants a and b), not the product."
+      }
+    ],
+    "explanation": "The wave equation is linear, so if f and g are solutions, f + g is too, and so is af + bg for any constants a and b. This is the Principle of Superposition."
+  },
+  {
+    "id": "pc2-interference-sum",
+    "type": "numeric",
+    "prompt": "Two pulses meet on a string. At one point, the first would displace the string by +3 mm and the second by −1 mm. By superposition, what is the string's displacement there, in mm?",
+    "answer": 2,
+    "unit": "mm",
+    "explanation": "Displacements simply add: +3 mm + (−1 mm) = +2 mm. Because the two pulses point in opposite directions, the string is displaced less than by the first pulse alone; this is interference."
+  },
+  {
+    "id": "pc2-fundamental-frequency",
+    "type": "numeric",
+    "prompt": "The natural frequencies of a string are νn = nv/(2L). A string is 0.5 m long and waves travel along it at v = 200 m/s. What is the frequency of its fundamental (n = 1), in Hz?",
+    "answer": 200,
+    "unit": "Hz",
+    "explanation": "ν1 = (1)(200 m/s)/(2 × 0.5 m) = 200 m/s ÷ 1 m = 200 Hz."
+  },
+  {
+    "id": "pc2-overtone-frequency",
+    "type": "numeric",
+    "prompt": "Since νn = nv/(2L), the frequency of mode n is n times the fundamental. If a string's fundamental is 110 Hz, what is the frequency of its n = 3 mode, in Hz?",
+    "answer": 330,
+    "unit": "Hz",
+    "explanation": "ν3 = 3 × ν1 = 3 × 110 Hz = 330 Hz."
+  },
+  {
+    "id": "pc2-curvature-frequency",
+    "type": "multiple-choice",
+    "prompt": "As n increases, the normal modes of a string have more curvature (more nodes). What happens to how fast they oscillate in time?",
+    "choices": [
+      {
+        "text": "They oscillate faster: ωn = nπv/L grows with n",
+        "correct": true
+      },
+      {
+        "text": "They oscillate more slowly",
+        "why": "ωn = nπv/L, so a larger n gives a larger angular frequency, not a smaller one."
+      },
+      {
+        "text": "All modes oscillate at the same rate",
+        "why": "Each mode has its own angular frequency, ωn = nπv/L."
+      },
+      {
+        "text": "They stop oscillating",
+        "why": "Every mode with n = 1, 2, 3, … oscillates, at ωn = nπv/L."
+      }
+    ],
+    "explanation": "The time part of mode n oscillates with angular frequency ωn = nπv/L. So more spatial curvature goes with faster oscillation in time, a pattern seen again and again in quantum mechanics."
+  },
+  {
+    "id": "pc2-quantum-number",
+    "type": "multiple-choice",
+    "prompt": "The whole number n that labels the string's solutions sin(nπx/L) is an example of what?",
+    "choices": [
+      {
+        "text": "A quantum number",
+        "correct": true
+      },
+      {
+        "text": "A boundary condition",
+        "why": "The boundary conditions are u(0, t) = u(L, t) = 0. n comes out of meeting them."
+      },
+      {
+        "text": "The wave's speed",
+        "why": "The speed is v. n counts which allowed solution you have."
+      },
+      {
+        "text": "A phase constant",
+        "why": "A phase constant shifts a wave. n tells which of the allowed standing waves it is."
+      }
+    ],
+    "explanation": "Meeting the boundary conditions allows only the solutions with n = 1, 2, 3, … The whole number n that tells them apart is an example of a quantum number, a central idea in quantum mechanics."
+  },
+  {
+    "id": "pc2-time-constants",
+    "type": "multiple-choice",
+    "prompt": "The time part of each mode is T(t) = E cos(ωn t) + F sin(ωn t). Why don't the boundary conditions fix E and F?",
+    "choices": [
+      {
+        "text": "The boundary conditions are about the ends of the string (position), not about time",
+        "correct": true
+      },
+      {
+        "text": "Because E and F are always zero",
+        "why": "If both were zero, the string wouldn't move. They are left open, not zero."
+      },
+      {
+        "text": "Because the time part has no solutions",
+        "why": "It does: E cos(ωn t) + F sin(ωn t)."
+      },
+      {
+        "text": "Because ωn is unknown",
+        "why": "ωn = nπv/L is known once n is chosen. It is E and F that remain open."
+      }
+    ],
+    "explanation": "The boundary conditions u(0, t) = u(L, t) = 0 constrain X(x), the position part. Nothing similar fixes the time part, so E and F stay open; they depend on how the string is set moving."
+  },
+  {
+    "id": "pc2-modes-sqrt-k",
+    "type": "multiple-choice",
+    "prompt": "For the string, the separation constant is negative, so it is written K = −p^2. What is √K then?",
+    "choices": [
+      {
+        "text": "ip, an imaginary number",
+        "correct": true
+      },
+      {
+        "text": "p, a real number",
+        "why": "The minus sign inside the root does not disappear: √(−p^2) = ip, which is imaginary."
+      },
+      {
+        "text": "−p^2, the same as K",
+        "why": "−p^2 is K itself, not its square root. The square root is √(−p^2) = ip."
+      },
+      {
+        "text": "p^2, a positive number",
+        "why": "Taking a square root doesn't remove the minus sign. The square root of a negative number is imaginary: √(−p^2) = ip."
+      }
+    ],
+    "explanation": "Since K = −p^2 is negative, √K = √(−p^2) = ip. That is why complex numbers appear: the solution becomes X(x) = Ae^(ipx) + Be^(−ipx), which Euler's formula turns into cosines and sines."
+  },
+  {
+    "id": "pc2-modes-cos-sin-form",
+    "type": "multiple-choice",
+    "prompt": "Euler's formula, e^(iθ) = cos θ + i sin θ, is used to rewrite the string's solution X(x) = Ae^(ipx) + Be^(−ipx). Which form does it take?",
+    "choices": [
+      {
+        "text": "X(x) = C cos(px) + D sin(px)",
+        "correct": true
+      },
+      {
+        "text": "X(x) = Ce^(px) + De^(−px)",
+        "why": "Real exponentials like these only grow or decay; they come from a positive K and can't be zero at both ends. Euler's formula turns e^(±ipx) into cosines and sines."
+      },
+      {
+        "text": "X(x) = C sin(px), with no cosine term",
+        "why": "Both a cosine and a sine appear at first. The cosine term is removed only later, by the boundary condition X(0) = 0."
+      },
+      {
+        "text": "X(x) = C cos(px) × D sin(px)",
+        "why": "Each exponential becomes a sum of a cosine and a sine, so collecting terms gives a sum, not a product."
+      }
+    ],
+    "explanation": "e^(ipx) = cos(px) + i sin(px) and e^(−ipx) = cos(px) − i sin(px). Collecting terms gives (A + B) cos(px) + i(A − B) sin(px), which is C cos(px) + D sin(px) with C = A + B and D = i(A − B)."
+  },
+  {
+    "id": "pc2-modes-infinite-set",
+    "type": "multiple-choice",
+    "prompt": "Meeting both boundary conditions of the string requires pL = nπ. How many different solutions X(x) = D sin(nπx/L) does this allow?",
+    "choices": [
+      {
+        "text": "Infinitely many, one for each whole number n = 1, 2, 3, …",
+        "correct": true
+      },
+      {
+        "text": "Exactly one, the fundamental",
+        "why": "Any whole number n makes sin(nπx/L) zero at both ends, so every n = 1, 2, 3, … gives an allowed solution."
+      },
+      {
+        "text": "Exactly two, one for each end of the string",
+        "why": "The two ends give the two boundary conditions, not two solutions. Every whole number n gives its own solution."
+      },
+      {
+        "text": "None, apart from X(x) = 0",
+        "why": "Only a positive K leaves nothing but the trivial solution. With K < 0, the sine solutions work for every n = 1, 2, 3, …"
+      }
+    ],
+    "explanation": "Each whole number n = 1, 2, 3, … gives a sine that fits the string, so the set of solutions is infinitely large. The solutions are told apart by n, an example of a quantum number."
+  },
+  {
+    "id": "pc2-modes-spatial-factor",
+    "type": "multiple-choice",
+    "prompt": "In u_n(x, t) = [G_n cos(ω_n t) + H_n sin(ω_n t)] sin(nπx/L), which part gives the shape of the string along its length?",
+    "choices": [
+      {
+        "text": "sin(nπx/L)",
+        "correct": true
+      },
+      {
+        "text": "G_n cos(ω_n t) + H_n sin(ω_n t)",
+        "why": "This bracket depends only on the time t. It makes the whole shape swell and shrink, but doesn't say how the string is shaped along x."
+      },
+      {
+        "text": "ω_n",
+        "why": "ω_n is the mode's angular frequency, a single number that sets how fast it oscillates in time, not its shape."
+      },
+      {
+        "text": "G_n and H_n",
+        "why": "These are constants that set how large the motion is. The shape along the string comes from sin(nπx/L)."
+      }
+    ],
+    "explanation": "The solution is a product of a spatial part and a temporal part. sin(nπx/L) depends only on x and gives the standing-wave shape; the bracket depends only on t and makes that shape oscillate."
+  },
+  {
+    "id": "pc2-modes-time-behavior",
+    "type": "multiple-choice",
+    "prompt": "How does each normal mode of a vibrating string change with time?",
+    "choices": [
+      {
+        "text": "It oscillates like a cosine or sine, at its own angular frequency ω_n",
+        "correct": true
+      },
+      {
+        "text": "It dies away smoothly toward zero, like a decaying exponential",
+        "why": "The time part is T(t) = E cos(ω_n t) + F sin(ω_n t), which keeps oscillating; it does not decay."
+      },
+      {
+        "text": "It keeps one fixed displacement that never changes",
+        "why": "The shape sin(nπx/L) stays the same, but its size swings back and forth in time as cos(ω_n t) and sin(ω_n t)."
+      },
+      {
+        "text": "It grows steadily larger as time goes on",
+        "why": "Steady growth would come from an exponential. The time equation has the same form as the spatial one, so its solutions are cosines and sines."
+      }
+    ],
+    "explanation": "The time equation for mode n is (d^2 T)/dt^2 + ω_n^2 T = 0, the same form as the spatial equation. Its solutions are T(t) = E cos(ω_n t) + F sin(ω_n t), so each mode oscillates sinusoidally with angular frequency ω_n = nπv/L."
+  },
+  {
+    "id": "pc2-modes-linear-name",
+    "type": "multiple-choice",
+    "prompt": "A differential equation has this property: whenever f and g are solutions, f + g is also a solution. What is such an equation called?",
+    "choices": [
+      {
+        "text": "A linear differential equation",
+        "correct": true
+      },
+      {
+        "text": "A separable differential equation",
+        "why": "Separable means the solution can be written as a product such as X(x)T(t). The adding property described here is what makes an equation linear."
+      },
+      {
+        "text": "A partial differential equation",
+        "why": "Partial means the equation has more than one independent variable. Adding solutions to get new ones is the mark of a linear equation."
+      },
+      {
+        "text": "An ordinary differential equation",
+        "why": "Ordinary means only one independent variable, which says nothing about adding solutions. That property is called linearity."
+      }
+    ],
+    "explanation": "Any differential equation for which the sum of two solutions is again a solution is called linear. The wave equation is linear, and so af + bg is a solution too, for any constants a and b."
+  },
+  {
+    "id": "pc2-modes-interference-name",
+    "type": "multiple-choice",
+    "prompt": "When two waves meet on a string, the displacement at each point is just the sum of the displacements from each wave alone. What is this adding of displacements called?",
+    "choices": [
+      {
+        "text": "Interference",
+        "correct": true
+      },
+      {
+        "text": "Reflection",
+        "why": "Reflection is a wave bouncing back, for example from a fixed end. Adding the displacements of waves that meet is interference."
+      },
+      {
+        "text": "Separation of variables",
+        "why": "Separation of variables is a method for solving the wave equation, not what happens when waves meet."
+      },
+      {
+        "text": "Quantization",
+        "why": "Quantization means being restricted to whole-number values such as n = 1, 2, 3, … The adding of displacements is called interference."
+      }
+    ],
+    "explanation": "This simple addition of displacements is called interference. Where the two waves are displaced in opposite directions they partly cancel, and the string moves less than it would for one wave alone."
+  },
+  {
+    "id": "pc2-modes-verify-solution",
+    "type": "multiple-choice",
+    "prompt": "How can you check that a proposed function X(x) really solves the equation (d^2 X)/dx^2 + p^2 X = 0?",
+    "choices": [
+      {
+        "text": "Put X(x) and its second derivative into the equation and see if it gives 0",
+        "correct": true
+      },
+      {
+        "text": "Check that it satisfies X(0) = 0 at the left end of the string",
+        "why": "X(0) = 0 is a boundary condition, not the differential equation itself. A solution must make the equation true at every x."
+      },
+      {
+        "text": "Check that X(x) is never equal to zero for any x",
+        "why": "Solutions such as sin(px) are zero at some points, and that is fine. What matters is that the equation is satisfied."
+      },
+      {
+        "text": "Plot X(x) and check that the graph looks like a wave",
+        "why": "A wavy shape is not proof. You must substitute X and its second derivative into the equation and see that it gives 0."
+      }
+    ],
+    "explanation": "To verify a solution, take the derivatives the equation needs, substitute them and the function into it, and check that everything cancels to 0. For example, X = sin(px) has second derivative −p^2 sin(px), and −p^2 sin(px) + p^2 sin(px) = 0."
+  },
+  {
+    "id": "pc2-modes-why-sum",
+    "type": "multiple-choice",
+    "prompt": "Why can the total motion of the string be written as a sum of all its normal modes, u(x, t) = Σ u_n(x, t)?",
+    "choices": [
+      {
+        "text": "The wave equation is linear and homogeneous, so a sum of solutions is also a solution",
+        "correct": true
+      },
+      {
+        "text": "Only one mode can vibrate at a time, so the sum has just one nonzero term",
+        "why": "Many modes can vibrate at once. Because the equation is linear, their sum is still a solution."
+      },
+      {
+        "text": "All the normal modes have the same frequency, so they merge into one wave",
+        "why": "Each mode has its own frequency, ν_n = nv/(2L). They can be added because the wave equation is linear."
+      },
+      {
+        "text": "The boundary conditions force the string to use every mode equally",
+        "why": "The boundary conditions decide which modes are allowed, not how much of each is present. Adding them is allowed because the equation is linear."
+      }
+    ],
+    "explanation": "The wave equation is a linear homogeneous differential equation, so by the Principle of Superposition any sum of its solutions is also a solution. The general motion is therefore a sum of normal modes over n = 1, 2, 3, …"
+  },
+  {
+    "id": "pc2-modes-standing-waves",
+    "type": "multiple-choice",
+    "prompt": "What kind of waves are the normal modes of a string held fixed at both ends?",
+    "choices": [
+      {
+        "text": "Standing waves",
+        "correct": true
+      },
+      {
+        "text": "Traveling waves that move toward one end",
+        "why": "A normal mode sin(nπx/L) keeps its nodes in the same places; it doesn't travel along the string."
+      },
+      {
+        "text": "Waves that decay away exponentially",
+        "why": "Normal modes oscillate steadily in time, as cos(ω_n t) and sin(ω_n t); they don't decay."
+      },
+      {
+        "text": "Pulses that cross the string once",
+        "why": "A pulse travels along the string. Each normal mode stays in place and just oscillates up and down."
+      }
+    ],
+    "explanation": "Each normal mode is a fixed shape sin(nπx/L), with nodes that never move, oscillating up and down in time. That is a standing wave."
+  },
+  {
+    "id": "pc2-modes-overtone-name",
+    "type": "multiple-choice",
+    "prompt": "The n = 1 normal mode of a string is the fundamental. What are the modes after it (n = 2, 3, 4, …) called?",
+    "choices": [
+      {
+        "text": "Overtones, or harmonics",
+        "correct": true
+      },
+      {
+        "text": "Nodes",
+        "why": "Nodes are points on the string that don't move. The higher modes themselves are called overtones or harmonics."
+      },
+      {
+        "text": "Trivial solutions",
+        "why": "The trivial solution is u = 0 (from n = 0), which is left out. The modes with n = 2, 3, … are overtones."
+      },
+      {
+        "text": "Boundary conditions",
+        "why": "Boundary conditions are the requirements at the ends of the string, u = 0 there. The higher modes are overtones or harmonics."
+      }
+    ],
+    "explanation": "The first mode, n = 1, is the fundamental; each mode after it is called an overtone or harmonic. Mode n vibrates at n times the fundamental frequency."
+  },
+  {
+    "id": "pc2-modes-wave-speed",
+    "type": "multiple-choice",
+    "prompt": "The natural frequencies of a string are ν_n = nv/(2L). If the wave speed v is doubled while the length L stays the same, what happens to every ν_n?",
+    "choices": [
+      {
+        "text": "Each one doubles",
+        "correct": true
+      },
+      {
+        "text": "Each one halves",
+        "why": "v is in the numerator of nv/(2L), so a larger v gives a larger frequency, not a smaller one."
+      },
+      {
+        "text": "Each one stays the same, because n and L have not changed",
+        "why": "ν_n also depends on v. Doubling v doubles nv/(2L)."
+      },
+      {
+        "text": "Each one becomes four times larger",
+        "why": "ν_n is proportional to v itself, not to v^2, so doubling v doubles it."
+      }
+    ],
+    "explanation": "ν_n = nv/(2L) is directly proportional to v. Doubling the wave speed doubles the fundamental and every overtone."
+  },
+  {
+    "id": "pc2-modes-wavenumber",
+    "type": "multiple-choice",
+    "prompt": "Each normal mode of a string of length L is characterized by its wavenumber. Which expression is the wavenumber of mode n?",
+    "choices": [
+      {
+        "text": "nπ/L",
+        "correct": true
+      },
+      {
+        "text": "nv/(2L)",
+        "why": "That is ν_n, the natural frequency of mode n, not its wavenumber."
+      },
+      {
+        "text": "nπv/L",
+        "why": "That is ω_n, the angular frequency: the wavenumber multiplied by the wave speed v."
+      },
+      {
+        "text": "2L/n",
+        "why": "That is the wavelength of mode n. The wavenumber is 2π divided by the wavelength, which gives nπ/L."
+      }
+    ],
+    "explanation": "The spatial part of mode n is sin((nπ/L)x), so its wavenumber is nπ/L. Multiplying by v gives the angular frequency ω_n = nπv/L, and dividing that by 2π gives the natural frequency ν_n = nv/(2L)."
+  },
+  {
+    "id": "pc2-modes-node-count-n4",
+    "type": "multiple-choice",
+    "prompt": "A string's mode sin(nπx/L) is zero wherever nπx/L is a whole multiple of π. How many nodes lie between the two fixed ends in the n = 4 mode?",
+    "choices": [
+      {
+        "text": "Three, at x = L/4, L/2 and 3L/4",
+        "correct": true
+      },
+      {
+        "text": "Four, at x = L/4, L/2, 3L/4 and L",
+        "why": "x = L is the fixed end of the string, not a point between the ends. Only three nodes lie inside."
+      },
+      {
+        "text": "Five, at x = 0, L/4, L/2, 3L/4 and L",
+        "why": "x = 0 and x = L are the fixed ends. Between them there are three nodes."
+      },
+      {
+        "text": "Two, at x = L/3 and 2L/3",
+        "why": "Those are the nodes of the n = 3 mode. For n = 4 the sine is zero at x = L/4, L/2 and 3L/4."
+      }
+    ],
+    "explanation": "4πx/L is a whole multiple of π at x = 0, L/4, L/2, 3L/4 and L. Leaving out the two fixed ends, the n = 4 mode has three nodes; in general, mode n has n − 1 nodes between the ends."
+  },
+  {
+    "id": "pc2-modes-omega-1",
+    "type": "numeric",
+    "prompt": "The angular frequency of mode n of a string is ω_n = nπv/L. Waves travel at v = 100 m/s on a string 0.5 m long. What is ω_1, in rad/s?",
+    "answer": 628.3,
+    "unit": "rad/s",
+    "explanation": "ω_1 = (1 × π × 100 m/s)/(0.5 m) = 200π rad/s ≈ 628 rad/s."
+  },
+  {
+    "id": "pc2-modes-nu-from-omega",
+    "type": "numeric",
+    "prompt": "The natural frequency of a mode is ν = ω/(2π). A mode of a string has angular frequency ω = 942 rad/s. What is its natural frequency, in Hz?",
+    "answer": 149.9,
+    "unit": "Hz",
+    "explanation": "ν = (942 rad/s)/(2π) = 149.9 Hz, or about 150 Hz."
+  },
+  {
+    "id": "pc2-modes-length-doubled",
+    "type": "numeric",
+    "prompt": "The fundamental frequency of a string is ν_1 = v/(2L). If the string is made twice as long and the wave speed v stays the same, by what factor does ν_1 change? (Give a decimal.)",
+    "answer": 0.5,
+    "tolerance": 0,
+    "explanation": "L is in the denominator, so ν_1 is inversely proportional to L: doubling L multiplies ν_1 by 1/2 = 0.5. A longer string has a lower fundamental."
+  },
+  {
+    "id": "pc2-modes-scaled-sum",
+    "type": "numeric",
+    "prompt": "f(x, t) and g(x, t) are both solutions of the wave equation, so 3f − 2g is a solution too. At one point and instant, f = 2 mm and g = 1 mm. What is the value of 3f − 2g there, in mm?",
+    "answer": 4,
+    "unit": "mm",
+    "tolerance": 0,
+    "explanation": "Multiples of solutions add point by point: 3f − 2g = 3 × 2 mm − 2 × 1 mm = 6 mm − 2 mm = 4 mm."
+  },
+  {
+    "id": "pc2-modes-midpoint-sum",
+    "type": "numeric",
+    "prompt": "A string of length L vibrates in a mix of its first two modes. At one instant its displacement is u = 3 sin(πx/L) + 2 sin(2πx/L), in mm. What is the displacement at the midpoint, x = L/2, in mm? (Use sin(π/2) = 1 and sin(π) = 0.)",
+    "answer": 3,
+    "unit": "mm",
+    "tolerance": 0,
+    "explanation": "At x = L/2: u = 3 sin(π/2) + 2 sin(π) = 3 × 1 + 2 × 0 = 3 mm. The midpoint is a node of the n = 2 mode, so only the n = 1 mode moves it."
+  },
+  {
+    "id": "pc2-modes-which-mode",
+    "type": "numeric",
+    "prompt": "A string's natural frequencies are ν_n = nv/(2L), so mode n vibrates at n times the fundamental. If the fundamental is 100 Hz, which mode n vibrates at 500 Hz?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "ν_n = n × ν_1, so n = (500 Hz)/(100 Hz) = 5."
+  }
+]

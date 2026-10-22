@@ -244,7 +244,7 @@ The simple EC model only includes electrostatic and covalent considerations and 
 
 −ΔH_(AB adduct) = EA EB + CA CB + RA TB
 
-This extension of the EC model is called the electrostatic-covalent-transfer or ECT model. Notably, it has been applied successfully to adducts involving ions, for which the R_AT_B term can account for as much as 31% of the interaction energy.
+This extension of the EC model is called the electrostatic-covalent-transfer or ECT model. Notably, it has been applied successfully to adducts involving ions, for which the R_A T_B term can account for as much as 31% of the interaction energy.
 
 - Any constant energy term, such as the energy needed to cleave a dimer in order to make the Lewis acid (e.g., Al2Cl6 → 2AlCl3). Drago and Vogel^4 extended the EC model to accommodate these constant energy terms, which they designated W. The resulting model is called the ECW model, for which
 

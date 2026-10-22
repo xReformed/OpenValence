@@ -1,0 +1,586 @@
+[
+  {
+    "id": "pc3-operator-what-is",
+    "type": "multiple-choice",
+    "prompt": "What is an operator?",
+    "choices": [
+      {
+        "text": "A rule for turning one function into another function",
+        "correct": true
+      },
+      {
+        "text": "A rule for turning one number into another number",
+        "why": "That describes a function. An operator acts on a whole function and gives back a function."
+      },
+      {
+        "text": "A constant number that multiplies the wavefunction",
+        "why": "A number such as E is an eigenvalue. An operator is a rule acting on functions, such as d/dx."
+      },
+      {
+        "text": "A special function that gives the energy of a system",
+        "why": "An operator is not itself a function of x. It turns one function into another; the Hamiltonian is one example."
+      }
+    ],
+    "explanation": "A function is a rule for turning one number into another; an operator is a rule for turning one function into another. For example, d/dx turns x^2 into 2x."
+  },
+  {
+    "id": "pc3-operator-hamiltonian",
+    "type": "multiple-choice",
+    "prompt": "Which operator is the Hamiltonian, Ĥ, of the time-independent Schrödinger equation?",
+    "choices": [
+      {
+        "text": "−(ħ^2/(2m))∇^2 + V(r⃗)",
+        "correct": true
+      },
+      {
+        "text": "−iħ d/dx",
+        "why": "That is the linear momentum operator, from Example 3.2.1. The Hamiltonian is the kinetic-energy term plus V(r⃗)."
+      },
+      {
+        "text": "∇^2 + E",
+        "why": "E is the eigenvalue the Hamiltonian produces, not part of the operator."
+      },
+      {
+        "text": "V(r⃗) on its own",
+        "why": "V(r⃗) is only the potential energy. Ĥ also includes the kinetic-energy term −(ħ^2/(2m))∇^2."
+      }
+    ],
+    "explanation": "The Hamiltonian is the bracketed operator in the time-independent Schrödinger equation: Ĥ = −(ħ^2/(2m))∇^2 + V(r⃗). It is the most common operator in quantum mechanics."
+  },
+  {
+    "id": "pc3-operator-hat",
+    "type": "multiple-choice",
+    "prompt": "What does a 'hat' over a symbol, as in Ĥ, usually tell you?",
+    "choices": [
+      {
+        "text": "That the symbol stands for an operator",
+        "correct": true
+      },
+      {
+        "text": "That the symbol stands for a unit vector",
+        "why": "In this book the unit vectors are written with arrows, like x⃗. A hat marks an operator."
+      },
+      {
+        "text": "That the quantity has been normalized",
+        "why": "A hat doesn't mean normalized here. It marks an operator, as in Ĥ for the Hamiltonian."
+      },
+      {
+        "text": "That the quantity is an average value",
+        "why": "A hat doesn't mark an average. It marks an operator, a rule that acts on functions."
+      }
+    ],
+    "explanation": "An operator is often, but not always, marked with a hat, as in Ĥ. With this notation the time-independent Schrödinger equation becomes simply Ĥψ(r⃗) = Eψ(r⃗)."
+  },
+  {
+    "id": "pc3-operator-eigenvalue-equation",
+    "type": "multiple-choice",
+    "prompt": "What makes Ĥψ = Eψ an eigenvalue equation?",
+    "choices": [
+      {
+        "text": "The operator gives back a constant times the same function",
+        "correct": true
+      },
+      {
+        "text": "It contains both an operator and a function",
+        "why": "Every operator acts on a function. It's an eigenvalue equation only if the result is a constant times that same function."
+      },
+      {
+        "text": "The operator turns ψ into a completely different function",
+        "why": "In an eigenvalue equation the function comes back unchanged, just multiplied by a constant."
+      },
+      {
+        "text": "The constant E must be equal to zero",
+        "why": "E can be any constant. What matters is getting a constant times the same function back."
+      }
+    ],
+    "explanation": "In an eigenvalue equation, an operator acting on a function produces a constant times that same function. The function is called the eigenfunction and the constant the eigenvalue."
+  },
+  {
+    "id": "pc3-operator-eigen-names",
+    "type": "multiple-choice",
+    "prompt": "In Ĥψ = Eψ, what are ψ and E called?",
+    "choices": [
+      {
+        "text": "ψ is the eigenfunction and E is the eigenvalue",
+        "correct": true
+      },
+      {
+        "text": "ψ is the eigenvalue and E is the eigenfunction",
+        "why": "It's the other way round: the function ψ is the eigenfunction and the number E is the eigenvalue."
+      },
+      {
+        "text": "ψ is the operator and E is the eigenfunction",
+        "why": "The operator is Ĥ. ψ is the eigenfunction, and the number E is the eigenvalue."
+      },
+      {
+        "text": "ψ and E are both operators",
+        "why": "Only Ĥ is an operator. ψ is a function (the eigenfunction) and E is a number (the eigenvalue)."
+      }
+    ],
+    "explanation": "The function ψ that comes back unchanged is the eigenfunction, and the number E that multiplies it is the eigenvalue. Here the eigenvalue is the energy, a scalar and an observable."
+  },
+  {
+    "id": "pc3-operator-eigen-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the German word \"eigen\" mean?",
+    "choices": [
+      {
+        "text": "Self or own",
+        "correct": true
+      },
+      {
+        "text": "Energy",
+        "why": "\"Eigen\" is not short for energy. It is German for self or own."
+      },
+      {
+        "text": "Wave",
+        "why": "The German word for wave is Welle. \"Eigen\" means self or own."
+      },
+      {
+        "text": "Equal",
+        "why": "\"Eigen\" means self or own, not equal."
+      }
+    ],
+    "explanation": "Eigen is German for self or own. An eigenfunction is the operator's \"own\" function: the operator gives it back as itself, times a number."
+  },
+  {
+    "id": "pc3-operator-product-order",
+    "type": "multiple-choice",
+    "prompt": "In the operator product ÂB̂f, which operator acts on f first?",
+    "choices": [
+      {
+        "text": "B̂, the one written next to f",
+        "correct": true
+      },
+      {
+        "text": "Â, the one written first",
+        "why": "Products act from right to left: ÂB̂f ≡ Â[B̂f], so B̂ acts first."
+      },
+      {
+        "text": "Both act on f at the same time",
+        "why": "One acts after the other: B̂ acts on f, then Â acts on the result."
+      },
+      {
+        "text": "Whichever one you like, since order never matters",
+        "why": "Order often matters, because operators generally don't commute."
+      }
+    ],
+    "explanation": "The product is defined by ÂB̂f ≡ Â[B̂f]: B̂ acts on f first, then Â acts on the result. Since ÂB̂ is generally not the same as B̂Â, the order matters."
+  },
+  {
+    "id": "pc3-operator-equal",
+    "type": "multiple-choice",
+    "prompt": "When are two operators Â and B̂ equal?",
+    "choices": [
+      {
+        "text": "When Âf = B̂f for every function f",
+        "correct": true
+      },
+      {
+        "text": "When Âf = B̂f for at least one function f",
+        "why": "Agreeing on one function isn't enough. For example, d/dx and 1̂ both leave e^(x) unchanged, but they are different operators."
+      },
+      {
+        "text": "When they are written with the same letter",
+        "why": "Equality is about what the operators do to functions, not what they are called."
+      },
+      {
+        "text": "When they commute with each other",
+        "why": "Commuting means ÂB̂ = B̂Â. That is different from Â and B̂ being the same operator."
+      }
+    ],
+    "explanation": "Two operators are equal if Âf = B̂f for all functions f: they must do the same thing to every function, not just to one."
+  },
+  {
+    "id": "pc3-operator-identity",
+    "type": "multiple-choice",
+    "prompt": "What does the identity operator 1̂ do to a function f?",
+    "choices": [
+      {
+        "text": "Nothing: 1̂f = f",
+        "correct": true
+      },
+      {
+        "text": "It turns f into the number 1",
+        "why": "1̂ multiplies by 1, which leaves f unchanged."
+      },
+      {
+        "text": "It differentiates f once",
+        "why": "That is d/dx. The identity operator does nothing: 1̂f = f."
+      },
+      {
+        "text": "It reverses the sign of f",
+        "why": "That would be multiplying by −1. The identity multiplies by 1, so f is unchanged."
+      }
+    ],
+    "explanation": "The identity operator does nothing, or equivalently multiplies by 1: 1̂f = f."
+  },
+  {
+    "id": "pc3-operator-commutative-fails",
+    "type": "multiple-choice",
+    "prompt": "Which rule from the algebra of numbers does not generally hold for operators?",
+    "choices": [
+      {
+        "text": "The commutative law, ÂB̂ = B̂Â",
+        "correct": true
+      },
+      {
+        "text": "The associative law, Â(B̂Ĉ) = (ÂB̂)Ĉ",
+        "why": "The associative law does hold for operators. It is the commutative law that generally fails."
+      },
+      {
+        "text": "The sum rule, (Â + B̂)f = Âf + B̂f",
+        "why": "Sums of operators always work this way. It is the order of a product that generally can't be swapped."
+      },
+      {
+        "text": "The identity rule, 1̂f = f",
+        "why": "The identity always leaves a function unchanged. The commutative law is the one that fails."
+      }
+    ],
+    "explanation": "For numbers, ab = ba. For operators, in general (but not always) ÂB̂ ≠ B̂Â, so the order of operating matters. The associative law, however, does hold."
+  },
+  {
+    "id": "pc3-operator-commutator-definition",
+    "type": "multiple-choice",
+    "prompt": "How is the commutator [Â, B̂] defined?",
+    "choices": [
+      {
+        "text": "ÂB̂ − B̂Â",
+        "correct": true
+      },
+      {
+        "text": "ÂB̂ + B̂Â",
+        "why": "The commutator is a difference, so it is zero when the order doesn't matter."
+      },
+      {
+        "text": "Â − B̂",
+        "why": "The commutator compares the two products, ÂB̂ and B̂Â, not the operators themselves."
+      },
+      {
+        "text": "ÂÂ − B̂B̂",
+        "why": "It compares the two orders of the product, ÂB̂ and B̂Â, not the squares of each operator."
+      }
+    ],
+    "explanation": "[Â, B̂] ≡ ÂB̂ − B̂Â. It tells you whether the order of operating matters: if it is zero, it doesn't."
+  },
+  {
+    "id": "pc3-operator-commute-meaning",
+    "type": "multiple-choice",
+    "prompt": "If [Â, B̂] = 0, what does that tell you?",
+    "choices": [
+      {
+        "text": "Â and B̂ commute: the order doesn't matter",
+        "correct": true
+      },
+      {
+        "text": "Â and B̂ are both the zero operator",
+        "why": "The operators themselves needn't be zero; only ÂB̂ − B̂Â is."
+      },
+      {
+        "text": "Â and B̂ must be the same operator",
+        "why": "Different operators can commute too. A zero commutator just means ÂB̂ = B̂Â."
+      },
+      {
+        "text": "Neither Â nor B̂ is a linear operator",
+        "why": "Linearity is a separate property. A zero commutator means both orders give the same result."
+      }
+    ],
+    "explanation": "A zero commutator means ÂB̂ = B̂Â: the operators commute. If the commutator is not zero, the order of operating matters and the operators do not commute."
+  },
+  {
+    "id": "pc3-operator-self-commutator",
+    "type": "multiple-choice",
+    "prompt": "Using [Â, B̂] ≡ ÂB̂ − B̂Â, what is [Â, Â], the commutator of an operator with itself?",
+    "choices": [
+      {
+        "text": "0",
+        "correct": true
+      },
+      {
+        "text": "Â^2",
+        "why": "Both products are ÂÂ, so they cancel: ÂÂ − ÂÂ = 0."
+      },
+      {
+        "text": "2Â^2",
+        "why": "The two terms are subtracted, not added: ÂÂ − ÂÂ = 0."
+      },
+      {
+        "text": "It depends on which operator Â is",
+        "why": "For any operator, ÂÂ − ÂÂ = 0. Every operator commutes with itself."
+      }
+    ],
+    "explanation": "[Â, Â] = ÂÂ − ÂÂ = 0. Every operator commutes with itself, since there is only one order in which to apply it."
+  },
+  {
+    "id": "pc3-operator-linear-conditions",
+    "type": "multiple-choice",
+    "prompt": "Which pair of conditions makes an operator Ô linear?",
+    "choices": [
+      {
+        "text": "Ô(f + g) = Ôf + Ôg and Ôcf = cÔf",
+        "correct": true
+      },
+      {
+        "text": "Ô(fg) = (Ôf)(Ôg) and Ôcf = cÔf",
+        "why": "Linearity is about sums and constant multiples, not products of functions. Condition A is Ô(f + g) = Ôf + Ôg."
+      },
+      {
+        "text": "Ô(f + g) = Ôf + Ôg and Ôcf = Ôf",
+        "why": "In Condition B the constant comes out in front, Ôcf = cÔf. It can't just disappear."
+      },
+      {
+        "text": "ÔÂ = ÂÔ for every operator Â",
+        "why": "That is commuting, not linearity. Linearity needs Ô(f + g) = Ôf + Ôg and Ôcf = cÔf."
+      }
+    ],
+    "explanation": "A linear operator satisfies Condition A, Ô(f + g) = Ôf + Ôg, and Condition B, Ôcf = cÔf, where c is any constant, which can even be complex."
+  },
+  {
+    "id": "pc3-operator-one-condition-fails",
+    "type": "multiple-choice",
+    "prompt": "An operator satisfies Condition A, Ô(f + g) = Ôf + Ôg, but fails Condition B, Ôcf = cÔf. Is it linear?",
+    "choices": [
+      {
+        "text": "No; a linear operator must satisfy both",
+        "correct": true
+      },
+      {
+        "text": "Yes; one of the two conditions is enough",
+        "why": "Both are required. Failing either one means the operator is not linear."
+      },
+      {
+        "text": "Yes, as long as c is a real number",
+        "why": "c may be any constant, even a complex one. Failing Condition B means the operator is not linear."
+      },
+      {
+        "text": "It depends on the function it acts on",
+        "why": "Linearity is a property of the operator itself. Failing either condition means it is not linear."
+      }
+    ],
+    "explanation": "If an operator fails either Condition A or Condition B, it is not a linear operator. Both must hold."
+  },
+  {
+    "id": "pc3-operator-momentum-example",
+    "type": "multiple-choice",
+    "prompt": "Example 3.2.1 shows that Ô = −iħ d/dx is linear. Which quantity does this operator represent?",
+    "choices": [
+      {
+        "text": "Linear momentum",
+        "correct": true
+      },
+      {
+        "text": "Energy",
+        "why": "The energy operator is the Hamiltonian, Ĥ. −iħ d/dx is the linear momentum operator."
+      },
+      {
+        "text": "Position",
+        "why": "−iħ d/dx takes a derivative; the section identifies it as the linear momentum operator."
+      },
+      {
+        "text": "Angular momentum",
+        "why": "This operator takes a derivative along a straight line, x. The section calls it the linear momentum operator."
+      }
+    ],
+    "explanation": "−iħ d/dx passes both tests: the derivative of a sum is the sum of the derivatives, and a constant can be pulled out of a derivative. It is the linear momentum operator."
+  },
+  {
+    "id": "pc3-operator-square-root",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 3.2.1, why is the square root operator not linear?",
+    "choices": [
+      {
+        "text": "√(cf(x)) ≠ c√(f(x)), so Condition B fails",
+        "correct": true
+      },
+      {
+        "text": "√(f(x)) is not a function, so it isn't an operator",
+        "why": "√(f(x)) is a perfectly good function. The problem is that a constant doesn't come out unchanged."
+      },
+      {
+        "text": "√(f(x) + g(x)) = √(f(x)) + √(g(x)), so Condition A fails",
+        "why": "If that were true, Condition A would hold, not fail. The section shows the operator fails Condition B."
+      },
+      {
+        "text": "It is linear; it passes both conditions",
+        "why": "It fails Condition B: with c = 4 and f = 9, √(36) = 6, but 4√(9) = 12."
+      }
+    ],
+    "explanation": "A linear operator needs Ôcf = cÔf. But √(cf(x)) ≠ c√(f(x)): with c = 4 and f = 9, √(36) = 6 while 4√(9) = 12. Condition B fails, so the square root operator is not linear."
+  },
+  {
+    "id": "pc3-operator-classical-quantities",
+    "type": "multiple-choice",
+    "prompt": "In quantum mechanics, how are classical-mechanical quantities such as energy and momentum represented?",
+    "choices": [
+      {
+        "text": "By linear operators",
+        "correct": true
+      },
+      {
+        "text": "By ordinary numbers that multiply ψ",
+        "why": "Numbers like E appear as eigenvalues. The quantities themselves are represented by operators, such as Ĥ for energy."
+      },
+      {
+        "text": "By nonlinear operators such as √",
+        "why": "The square root operator is not linear. The operators of quantum mechanics are linear."
+      },
+      {
+        "text": "By the wavefunction ψ itself",
+        "why": "ψ is what the operators act on. Each quantity has its own linear operator."
+      }
+    ],
+    "explanation": "Classical-mechanical quantities are represented by linear operators: the Hamiltonian Ĥ for energy, and −iħ d/dx for linear momentum. Most operators in quantum mechanics are linear."
+  },
+  {
+    "id": "pc3-operator-hermitian-definition",
+    "type": "multiple-choice",
+    "prompt": "Which condition defines a Hermitian (self-adjoint) operator Â?",
+    "choices": [
+      {
+        "text": "∫f^* Â g dτ = (∫g^* Â f dτ)^*",
+        "correct": true
+      },
+      {
+        "text": "Âf = f for every function f",
+        "why": "That defines the identity operator. A Hermitian operator is defined by an integral condition."
+      },
+      {
+        "text": "ÂB̂ = B̂Â for every operator B̂",
+        "why": "That is about commuting. A Hermitian operator satisfies ∫f^* Â g dτ = (∫g^* Â f dτ)^*."
+      },
+      {
+        "text": "Â(f + g) = Âf + Âg for all f and g",
+        "why": "That is Condition A for linearity. Being Hermitian is a different property, defined by an integral."
+      }
+    ],
+    "explanation": "An operator Â is Hermitian, or self-adjoint, if ∫f^* Â g dτ = (∫g^* Â f dτ)^* for all functions f and g that obey the specified boundary conditions."
+  },
+  {
+    "id": "pc3-operator-hermitian-postulate",
+    "type": "multiple-choice",
+    "prompt": "Which operators in quantum mechanics are postulated to be Hermitian?",
+    "choices": [
+      {
+        "text": "All operators that represent dynamical variables",
+        "correct": true
+      },
+      {
+        "text": "Only the Hamiltonian, and no other operator",
+        "why": "The Hamiltonian is shown to be Hermitian, but the postulate covers every operator that represents a dynamical variable."
+      },
+      {
+        "text": "None; the term applies only to matrices",
+        "why": "The term is also used for matrices, but all quantum operators for dynamical variables are postulated to be Hermitian."
+      },
+      {
+        "text": "Only operators that commute with Ĥ",
+        "why": "Commuting is a separate property. The postulate covers all operators for dynamical variables."
+      }
+    ],
+    "explanation": "The section shows that the Hamiltonian is Hermitian, and it is postulated that all quantum-mechanical operators that represent dynamical variables are Hermitian."
+  },
+  {
+    "id": "pc3-operator-integration-by-parts",
+    "type": "multiple-choice",
+    "prompt": "For the particle-in-a-box Hamiltonian, what technique does the section use to show that Ĥ is Hermitian?",
+    "choices": [
+      {
+        "text": "Integration by parts, done twice",
+        "correct": true
+      },
+      {
+        "text": "Separation of variables",
+        "why": "Separation of variables splits a function of several variables. Here the section moves derivatives from g onto f by integrating by parts."
+      },
+      {
+        "text": "Working out the commutator [Ĥ, Ĥ]",
+        "why": "Every operator commutes with itself, which says nothing about being Hermitian. The section integrates by parts twice."
+      },
+      {
+        "text": "Euler's formula for e^(iθ)",
+        "why": "Euler's formula links e^(iθ) to cos θ and sin θ. Showing Ĥ is Hermitian uses integration by parts."
+      }
+    ],
+    "explanation": "Integrating ∫f(x) g''(x) dx by parts twice moves both derivatives from g onto f. The boundary terms vanish, so ∫f Ĥ g dx = ∫g Ĥ f dx, and the Hamiltonian is Hermitian."
+  },
+  {
+    "id": "pc3-operator-boundary-terms",
+    "type": "multiple-choice",
+    "prompt": "When the section integrates by parts to show Ĥ is Hermitian, why do the boundary terms vanish?",
+    "choices": [
+      {
+        "text": "f and g are zero at x = 0 and at x = a",
+        "correct": true
+      },
+      {
+        "text": "f' and g' are zero everywhere in the box",
+        "why": "Then f and g would be constants. The terms vanish because f and g themselves are zero at the ends of the box."
+      },
+      {
+        "text": "ħ is so small that the terms can be neglected",
+        "why": "The terms are exactly zero, not just small, because f and g vanish at x = 0 and x = a."
+      },
+      {
+        "text": "The box Hamiltonian has no potential-energy term",
+        "why": "The boundary terms depend on f and g at the ends. They vanish because f and g are zero at x = 0 and x = a."
+      }
+    ],
+    "explanation": "f and g are chosen to obey the same boundary conditions as the eigenfunctions of Ĥ: they vanish at x = 0 and x = a. So terms like f(x)g'(x) evaluated at 0 and a are zero."
+  },
+  {
+    "id": "pc3-operator-eigenvalue-exp",
+    "type": "numeric",
+    "prompt": "The operator d/dx acts on f(x) = e^(3x). The result is a constant times e^(3x). What is that constant, the eigenvalue?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "d/dx e^(3x) = 3e^(3x). The result is 3 times the same function, so e^(3x) is an eigenfunction of d/dx with eigenvalue 3."
+  },
+  {
+    "id": "pc3-operator-power-sine",
+    "type": "numeric",
+    "prompt": "Â^2 means applying Â twice: Â^2 f = ÂÂf. With Â = d/dx and f(x) = sin(2x), Â^2 f is a constant times sin(2x). What is the constant?",
+    "answer": -4,
+    "tolerance": 0,
+    "explanation": "Âf = d/dx sin(2x) = 2cos(2x), and applying Â again gives d/dx 2cos(2x) = −4sin(2x). So Â^2 sin(2x) = −4sin(2x). Note that sin(2x) is an eigenfunction of d^2/dx^2, though not of d/dx."
+  },
+  {
+    "id": "pc3-operator-sum",
+    "type": "numeric",
+    "prompt": "Two operators add as (Â + B̂)f = Âf + B̂f. Let Â = d/dx and let B̂ multiply by 3. For f(x) = e^(2x), (Â + B̂)f is a constant times e^(2x). What is the constant?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Âf = 2e^(2x) and B̂f = 3e^(2x), so (Â + B̂)f = 2e^(2x) + 3e^(2x) = 5e^(2x)."
+  },
+  {
+    "id": "pc3-operator-product",
+    "type": "numeric",
+    "prompt": "The product of two operators is ÂB̂f ≡ Â[B̂f]. Let Â multiply by 5 and let B̂ = d/dx. For f(x) = e^(−2x), ÂB̂f is a constant times e^(−2x). What is the constant?",
+    "answer": -10,
+    "tolerance": 0,
+    "explanation": "B̂ acts first: d/dx e^(−2x) = −2e^(−2x). Then Â multiplies by 5: 5 × (−2e^(−2x)) = −10e^(−2x)."
+  },
+  {
+    "id": "pc3-operator-commutator-swap",
+    "type": "numeric",
+    "prompt": "The section states that [Â, B̂] = −[B̂, Â]. Suppose that for some function f, [Â, B̂]f = 4f. What number multiplies f in [B̂, Â]f?",
+    "answer": -4,
+    "tolerance": 0,
+    "explanation": "Swapping the order flips the sign of the commutator: [B̂, Â]f = −[Â, B̂]f = −4f."
+  },
+  {
+    "id": "pc3-operator-linear-combination",
+    "type": "numeric",
+    "prompt": "Ô is a linear operator. At a certain x, the functions Ôf and Ôg have the values 2 and 5. Using Conditions A and B, what is the value of Ô(3f + g) there?",
+    "answer": 11,
+    "tolerance": 0,
+    "explanation": "Condition A splits the sum and Condition B pulls out the constant: Ô(3f + g) = 3Ôf + Ôg = 3 × 2 + 5 = 11."
+  },
+  {
+    "id": "pc3-operator-momentum-eigenvalue",
+    "type": "numeric",
+    "prompt": "Take ħ = 1, so the momentum operator −iħ d/dx becomes −i d/dx. Acting on e^(2ix), it gives a constant times e^(2ix). What is the constant? (Use i × i = −1.)",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "d/dx e^(2ix) = 2i e^(2ix). Multiplying by −i gives −i × 2i = −2i^2 = 2, so −i d/dx e^(2ix) = 2e^(2ix): e^(2ix) has momentum eigenvalue 2 (in units where ħ = 1)."
+  }
+]

@@ -24,14 +24,6 @@ public sealed class QuestionFileException(IReadOnlyList<string> problems)
     public IReadOnlyList<string> Problems { get; } = problems;
 }
 
-/// <summary>
-/// Reads questions/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;.json, where the chapter
-/// folder starts with its two-digit number, as in
-/// 04-chemical-reactions-and-equations/4.3.json. Each file is a JSON array in the
-/// web app's Question shape (web/src/lib/types.ts), in the order the section
-/// shows them. Every question is checked before anything is written, and all
-/// problems are reported at once.
-/// </summary>
 public static partial class QuestionFiles
 {
     private static readonly string[] CommonFields = ["id", "type", "prompt", "explanation"];

@@ -1,0 +1,584 @@
+[
+  {
+    "id": "pc4-operator-observable-definition",
+    "type": "multiple-choice",
+    "prompt": "What is an observable?",
+    "choices": [
+      {
+        "text": "A property of a system that can be measured experimentally",
+        "correct": true
+      },
+      {
+        "text": "Any property of a system that can be seen with the naked eye",
+        "why": "Observables need not be visible: momentum and kinetic energy are observables. What matters is that they can be measured in an experiment."
+      },
+      {
+        "text": "A mathematical operation that acts on the wavefunction",
+        "why": "That describes an operator. The observable is the measurable quantity; the operator is what represents it in quantum mechanics."
+      },
+      {
+        "text": "The wavefunction that describes the state of a system",
+        "why": "The wavefunction describes the state. An observable is a measurable variable, such as position, momentum or kinetic energy."
+      }
+    ],
+    "explanation": "An observable is a dynamic variable of a system that can be measured experimentally, for example position, momentum or kinetic energy. In quantum mechanics each observable is represented by an operator."
+  },
+  {
+    "id": "pc4-operator-classical-real",
+    "type": "multiple-choice",
+    "prompt": "In classical mechanics, what kind of quantity is an observable such as position or momentum?",
+    "choices": [
+      {
+        "text": "A real-valued function, never a complex one",
+        "correct": true
+      },
+      {
+        "text": "An operator that acts on a wavefunction",
+        "why": "Operators represent observables in quantum mechanics. In classical mechanics an observable is simply a real-valued function."
+      },
+      {
+        "text": "A complex-valued function",
+        "why": "The section says a classical observable is real-valued, never complex."
+      },
+      {
+        "text": "A probability that lies between 0 and 1",
+        "why": "A classical observable has a definite real value, such as a position in meters, not a probability."
+      }
+    ],
+    "explanation": "In classical mechanics an observable is a real-valued function (never complex). In quantum mechanics each observable is instead represented by an operator, used to get information about the observable from the wavefunction."
+  },
+  {
+    "id": "pc4-operator-acts-on-wavefunction",
+    "type": "multiple-choice",
+    "prompt": "In quantum mechanics, what does the operator for an observable act on to give physical information about that observable?",
+    "choices": [
+      {
+        "text": "The wavefunction of the system",
+        "correct": true
+      },
+      {
+        "text": "The particle's classical trajectory",
+        "why": "Quantum mechanics does not describe a particle by a classical path. The operator acts on the wavefunction."
+      },
+      {
+        "text": "The measuring instrument",
+        "why": "The operator is a mathematical instruction applied to the wavefunction, not to the apparatus."
+      },
+      {
+        "text": "The observable's own measured value",
+        "why": "The measured value is what you want to find out. The operator acts on the wavefunction to extract it."
+      }
+    ],
+    "explanation": "Every observable in quantum mechanics is represented by an operator, and the operator acts on the wavefunction to obtain physical information about the observable. For example, p̂_x = −iħ d/dx acts on ψ(x)."
+  },
+  {
+    "id": "pc4-operator-correspondence-principle",
+    "type": "multiple-choice",
+    "prompt": "What does Postulate II, the correspondence principle, state?",
+    "choices": [
+      {
+        "text": "Every observable property of a system has a corresponding quantum mechanical operator",
+        "correct": true
+      },
+      {
+        "text": "Quantum and classical mechanics always give the same predictions for any system",
+        "why": "That is not what Postulate II says here. It says that each observable property has its own quantum mechanical operator."
+      },
+      {
+        "text": "Every observable property of a system can be measured with unlimited precision",
+        "why": "Postulate II says nothing about precision. It says that each observable property has a corresponding operator."
+      },
+      {
+        "text": "Only position and momentum have corresponding quantum mechanical operators",
+        "why": "Postulate II applies to every observable property, including kinetic energy, potential energy, total energy and angular momentum."
+      }
+    ],
+    "explanation": "Postulate II, the correspondence principle, says that for every observable property of a system there is a corresponding quantum mechanical operator. Table 4.2.1 lists several: position, momentum, kinetic energy, potential energy, total energy and angular momentum."
+  },
+  {
+    "id": "pc4-operator-q-of-x-p",
+    "type": "multiple-choice",
+    "prompt": "A classical observable is written as a function Q(x, p) of position and momentum. What is the corresponding quantum mechanical operator?",
+    "choices": [
+      {
+        "text": "Q(x̂, p̂)",
+        "correct": true
+      },
+      {
+        "text": "Q(x̂, p)",
+        "why": "Momentum must be replaced by its operator too. Both x and p become operators: Q(x̂, p̂)."
+      },
+      {
+        "text": "Q(x, p̂)",
+        "why": "Position must be replaced by its operator too, giving Q(x̂, p̂)."
+      },
+      {
+        "text": "Q(x, p), unchanged",
+        "why": "In quantum mechanics the classical variables are replaced by operators, so Q(x, p) becomes Q(x̂, p̂)."
+      }
+    ],
+    "explanation": "For an observable represented in classical physics by a function Q(x, p), the operator is Q(x̂, p̂): the same function with x and p replaced by their operators. For example, the kinetic energy p^2/(2m) becomes p̂^2/(2m)."
+  },
+  {
+    "id": "pc4-operator-position-1d",
+    "type": "multiple-choice",
+    "prompt": "According to Table 4.2.1, what does the one-dimensional position operator X̂ do to a wavefunction?",
+    "choices": [
+      {
+        "text": "It multiplies the wavefunction by x",
+        "correct": true
+      },
+      {
+        "text": "It takes the derivative of the wavefunction with respect to x",
+        "why": "Taking d/dx is part of the momentum operator. The position operator just multiplies by x."
+      },
+      {
+        "text": "It replaces the wavefunction with its value at x = 0",
+        "why": "The position operator does not evaluate ψ at one point. It multiplies ψ(x) by x at every x."
+      },
+      {
+        "text": "It squares the wavefunction",
+        "why": "Squaring ψ has to do with probability, not position. X̂ simply multiplies the wavefunction by x."
+      }
+    ],
+    "explanation": "The position operator is the simplest one in Table 4.2.1: X̂ψ(x) = xψ(x). It takes no derivative; it only multiplies by x."
+  },
+  {
+    "id": "pc4-operator-position-3d",
+    "type": "multiple-choice",
+    "prompt": "What is the position operator for a particle in three dimensions?",
+    "choices": [
+      {
+        "text": "r⃗ = xi⃗ + yj⃗ + zk⃗",
+        "correct": true
+      },
+      {
+        "text": "x + y + z",
+        "why": "Position in three dimensions is a vector with three separate components, not the sum of the coordinates."
+      },
+      {
+        "text": "−iħ∇",
+        "why": "−iħ∇ is the three-dimensional momentum operator. The position operator is just the set of coordinates."
+      },
+      {
+        "text": "−(ħ^2/(2m))∇^2",
+        "why": "That is the three-dimensional kinetic energy operator. The position operator is just the set of coordinates x, y and z."
+      }
+    ],
+    "explanation": "In three dimensions the position operator is the set of coordinates x, y and z written as a vector, r⃗ = (x, y, z) = xi⃗ + yj⃗ + zk⃗. Acting on a wavefunction, it multiplies by r⃗."
+  },
+  {
+    "id": "pc4-operator-momentum-x",
+    "type": "multiple-choice",
+    "prompt": "Which expression is the operator for the x component of linear momentum, p̂_x?",
+    "choices": [
+      {
+        "text": "−iħ d/dx",
+        "correct": true
+      },
+      {
+        "text": "−(ħ^2/(2m)) d^2/dx^2",
+        "why": "That is the one-dimensional kinetic energy operator, with a second derivative. The momentum operator has a first derivative."
+      },
+      {
+        "text": "Multiply by p_x",
+        "why": "Unlike position, momentum's operator is not a simple multiplication. It takes a derivative: p̂_x = −iħ d/dx."
+      },
+      {
+        "text": "−iħ d^2/dx^2",
+        "why": "The momentum operator has a first derivative, not a second one: p̂_x = −iħ d/dx."
+      }
+    ],
+    "explanation": "The operator for the x component of linear momentum is p̂_x = −iħ d/dx: take the first derivative of the wavefunction with respect to x, then multiply by −iħ."
+  },
+  {
+    "id": "pc4-operator-momentum-y-reverse",
+    "type": "multiple-choice",
+    "prompt": "Which observable does the operator −iħ d/dy represent?",
+    "choices": [
+      {
+        "text": "The y component of linear momentum",
+        "correct": true
+      },
+      {
+        "text": "The y component of angular momentum",
+        "why": "Angular momentum components mix two coordinates, for example L̂_y = −iħ[z d/dx − x d/dz]. A single −iħ d/dy is linear momentum along y."
+      },
+      {
+        "text": "The kinetic energy along y",
+        "why": "Kinetic energy has a second derivative, −(ħ^2/(2m)) d^2/dy^2. A first derivative times −iħ is momentum."
+      },
+      {
+        "text": "The y coordinate of position",
+        "why": "The position operator simply multiplies by y; it takes no derivative."
+      }
+    ],
+    "explanation": "Just as p̂_x = −iħ d/dx, the y component of linear momentum is p̂_y = −iħ d/dy. The x, y and z components together make up the three-dimensional momentum operator, p̂ = −iħ∇."
+  },
+  {
+    "id": "pc4-operator-kinetic-1d",
+    "type": "multiple-choice",
+    "prompt": "Which expression is the one-dimensional kinetic energy operator, T̂_x?",
+    "choices": [
+      {
+        "text": "−(ħ^2/(2m)) d^2/dx^2",
+        "correct": true
+      },
+      {
+        "text": "−iħ d/dx",
+        "why": "That is the momentum operator, p̂_x. The kinetic energy operator has a second derivative and the factor −(ħ^2/(2m))."
+      },
+      {
+        "text": "−(ħ^2/(2m)) d/dx",
+        "why": "Kinetic energy needs a second derivative, d^2/dx^2, not a first derivative."
+      },
+      {
+        "text": "Multiply by (1/2)mv^2",
+        "why": "That is the classical kinetic energy. In quantum mechanics kinetic energy is an operator that takes a second derivative of the wavefunction."
+      }
+    ],
+    "explanation": "The kinetic energy operator in one dimension is T̂_x = −(ħ^2/(2m)) d^2/dx^2. It takes the second derivative of the wavefunction and multiplies the result by −(ħ^2/(2m))."
+  },
+  {
+    "id": "pc4-operator-kinetic-minus-sign",
+    "type": "multiple-choice",
+    "prompt": "Classically, kinetic energy is T = p^2/(2m). Replacing p with p̂_x = −iħ d/dx gives T̂_x. Why does T̂_x have a minus sign in front of ħ^2?",
+    "choices": [
+      {
+        "text": "Because (−i)^2 = −1, so (−iħ)^2 = −ħ^2",
+        "correct": true
+      },
+      {
+        "text": "Because kinetic energy is always negative",
+        "why": "Kinetic energy is never negative. The minus sign comes from squaring the i in −iħ, since i^2 = −1."
+      },
+      {
+        "text": "Because the particle moves in the −x direction",
+        "why": "The sign has nothing to do with direction. It appears because (−iħ)^2 = −ħ^2."
+      },
+      {
+        "text": "Because the potential energy is subtracted from it",
+        "why": "T̂_x contains no potential energy. The minus sign comes from i^2 = −1 when p̂_x is squared."
+      }
+    ],
+    "explanation": "Squaring the momentum operator gives p̂_x^2 = (−iħ)^2 d^2/dx^2 = −ħ^2 d^2/dx^2, since i^2 = −1. Dividing by 2m gives T̂_x = −(ħ^2/(2m)) d^2/dx^2."
+  },
+  {
+    "id": "pc4-operator-laplacian",
+    "type": "multiple-choice",
+    "prompt": "In the three-dimensional kinetic energy operator, T̂ = −(ħ^2/(2m))∇^2, what does ∇^2 stand for?",
+    "choices": [
+      {
+        "text": "d^2/dx^2 + d^2/dy^2 + d^2/dz^2",
+        "correct": true
+      },
+      {
+        "text": "d/dx + d/dy + d/dz",
+        "why": "Those are first derivatives. Kinetic energy needs second derivatives, so ∇^2 is the sum of d^2/dx^2, d^2/dy^2 and d^2/dz^2."
+      },
+      {
+        "text": "d^2/dx^2, the same as in one dimension",
+        "why": "That covers just one dimension. In three dimensions ∇^2 adds the second derivatives with respect to y and z too."
+      },
+      {
+        "text": "x^2 + y^2 + z^2",
+        "why": "∇^2 is a sum of second derivatives, not of squared coordinates."
+      }
+    ],
+    "explanation": "Table 4.2.1 shows ∇^2 = d^2/dx^2 + d^2/dy^2 + d^2/dz^2. So the three-dimensional kinetic energy operator adds up the kinetic energy operators for x, y and z."
+  },
+  {
+    "id": "pc4-operator-momentum-3d-vector",
+    "type": "multiple-choice",
+    "prompt": "The three-dimensional momentum operator is p̂ = −iħ[î d/dx + ĵ d/dy + k̂ d/dz]. Why does it contain the unit vectors î, ĵ and k̂?",
+    "choices": [
+      {
+        "text": "Momentum is a vector, with a separate component along each axis",
+        "correct": true
+      },
+      {
+        "text": "To combine the three derivatives into a single number",
+        "why": "The unit vectors do the opposite: they keep three separate components, one for each direction."
+      },
+      {
+        "text": "Because î, ĵ and k̂ are imaginary numbers",
+        "why": "Here î, ĵ and k̂ are unit vectors along x, y and z. The only imaginary number is the i in −iħ."
+      },
+      {
+        "text": "To turn the first derivatives into second derivatives",
+        "why": "The unit vectors don't change the derivatives. They label the direction of each component of momentum."
+      }
+    ],
+    "explanation": "Linear momentum is a vector. Each unit vector carries one component: î with −iħ d/dx (p̂_x), ĵ with −iħ d/dy (p̂_y) and k̂ with −iħ d/dz (p̂_z). In short, p̂ = −iħ∇."
+  },
+  {
+    "id": "pc4-operator-potential",
+    "type": "multiple-choice",
+    "prompt": "What does the potential energy operator V̂(x) do to a wavefunction?",
+    "choices": [
+      {
+        "text": "It multiplies the wavefunction by V(x)",
+        "correct": true
+      },
+      {
+        "text": "It takes the second derivative of the wavefunction",
+        "why": "That is what the kinetic energy operator does. The potential energy operator simply multiplies by V(x)."
+      },
+      {
+        "text": "It multiplies the wavefunction by −iħ",
+        "why": "−iħ appears in the momentum operator, along with a derivative. V̂ just multiplies by V(x)."
+      },
+      {
+        "text": "It replaces the wavefunction with V(x)",
+        "why": "The wavefunction is not thrown away; it is multiplied by V(x), giving V(x)ψ(x)."
+      }
+    ],
+    "explanation": "Like the position operator, the potential energy operator is a \"multiply by\" operator: V̂(x)ψ(x) = V(x)ψ(x). In three dimensions it multiplies by V(x, y, z)."
+  },
+  {
+    "id": "pc4-operator-hamiltonian-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the Hamiltonian operator, Ĥ?",
+    "choices": [
+      {
+        "text": "The total energy operator: kinetic energy plus potential energy",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy operator on its own, with no potential term",
+        "why": "Ĥ includes the potential energy too: Ĥ = T̂ + V̂."
+      },
+      {
+        "text": "The operator for the linear momentum of the particle",
+        "why": "Momentum's operator is p̂ = −iħ∇. Ĥ is the total energy operator, T̂ + V̂."
+      },
+      {
+        "text": "The potential energy operator minus the kinetic energy operator",
+        "why": "Ĥ is the sum, not the difference: Ĥ = T̂ + V̂, the total energy."
+      }
+    ],
+    "explanation": "The Hamiltonian Ĥ is the total energy operator: the kinetic energy operator plus the potential energy operator, Ĥ = T̂ + V̂ = −(ħ^2/(2m))∇^2 + V̂(x, y, z)."
+  },
+  {
+    "id": "pc4-operator-free-particle-hamiltonian",
+    "type": "multiple-choice",
+    "prompt": "For a particle with no potential energy (V = 0), what does the Hamiltonian Ĥ = −(ħ^2/(2m))∇^2 + V̂ reduce to?",
+    "choices": [
+      {
+        "text": "The kinetic energy operator, −(ħ^2/(2m))∇^2",
+        "correct": true
+      },
+      {
+        "text": "Zero, since the particle has no energy at all",
+        "why": "Only the potential energy term vanishes. The particle can still have kinetic energy."
+      },
+      {
+        "text": "Just the three-dimensional momentum operator, −iħ∇",
+        "why": "Setting V = 0 leaves the kinetic energy term, which has a second derivative. It does not leave the momentum operator."
+      },
+      {
+        "text": "Just the potential energy operator, V̂",
+        "why": "V̂ is the term that vanishes when V = 0. What remains is the kinetic energy operator."
+      }
+    ],
+    "explanation": "Ĥ = T̂ + V̂. When V = 0, the potential term vanishes and the Hamiltonian is just the kinetic energy operator, −(ħ^2/(2m))∇^2."
+  },
+  {
+    "id": "pc4-operator-hamilton-name",
+    "type": "multiple-choice",
+    "prompt": "Who is the Hamiltonian operator named after?",
+    "choices": [
+      {
+        "text": "William Hamilton, an Irish mathematician",
+        "correct": true
+      },
+      {
+        "text": "Isaac Newton, an English physicist",
+        "why": "Newton's second law, F⃗ = ma⃗, is the approach Hamilton's formulation replaced. The operator is named after William Hamilton."
+      },
+      {
+        "text": "Erwin Schrödinger, an Austrian physicist",
+        "why": "Schrödinger's equation uses the Hamiltonian, but the operator is named after William Hamilton, whose classical mechanics is based on the total energy."
+      },
+      {
+        "text": "Max Planck, a German physicist",
+        "why": "Planck introduced energy quanta. The Hamiltonian is named after the Irish mathematician William Hamilton."
+      }
+    ],
+    "explanation": "The Hamiltonian is named after the Irish mathematician William Hamilton. His formulation of classical mechanics is based on the total energy, H = T + V, rather than on Newton's second law."
+  },
+  {
+    "id": "pc4-operator-hamilton-vs-newton",
+    "type": "multiple-choice",
+    "prompt": "Hamilton's formulation of classical mechanics is not based on Newton's second law, F⃗ = ma⃗. What is it based on instead?",
+    "choices": [
+      {
+        "text": "The total energy, H = T + V",
+        "correct": true
+      },
+      {
+        "text": "The momentum alone, p = mv",
+        "why": "Hamilton's formulation is built on the total energy, kinetic plus potential, not on momentum alone."
+      },
+      {
+        "text": "The forces acting on each particle",
+        "why": "Forces are the basis of Newton's second law, F⃗ = ma⃗. Hamilton's formulation uses the total energy instead."
+      },
+      {
+        "text": "The probability density, |ψ|^2",
+        "why": "Hamilton's formulation is classical mechanics, which has no wavefunction. It is based on the total energy, H = T + V."
+      }
+    ],
+    "explanation": "Hamilton formulated classical mechanics in terms of the total energy, H = T + V, instead of Newton's F⃗ = ma⃗. In quantum mechanics this becomes the Hamiltonian operator, Ĥ = T̂ + V̂."
+  },
+  {
+    "id": "pc4-operator-hamiltonian-usual-terms",
+    "type": "multiple-choice",
+    "prompt": "In many cases, which energy terms are the only ones included in a Hamiltonian?",
+    "choices": [
+      {
+        "text": "Kinetic energy and Coulomb potential energy",
+        "correct": true
+      },
+      {
+        "text": "Kinetic energy only, with no potential energy",
+        "why": "Charged particles also have Coulomb potential energy, which is usually included alongside the kinetic energy."
+      },
+      {
+        "text": "External magnetic field energy only",
+        "why": "Magnetic terms are extra terms, added when they are needed. Usually just the kinetic energy and the Coulomb potential energy are considered."
+      },
+      {
+        "text": "Gravitational and rest-mass energy",
+        "why": "Neither is among the usual terms. In many cases only the kinetic energy and the electrostatic (Coulomb) potential energy of the charges are considered."
+      }
+    ],
+    "explanation": "In many cases only the kinetic energy of the particles and the electrostatic, or Coulomb, potential energy due to their charges are considered. In general, though, every term that contributes to the energy belongs in the Hamiltonian."
+  },
+  {
+    "id": "pc4-operator-hamiltonian-extra-terms",
+    "type": "multiple-choice",
+    "prompt": "Besides kinetic energy and Coulomb potential energy, which of these can add an extra term to a Hamiltonian?",
+    "choices": [
+      {
+        "text": "An external electric or magnetic field",
+        "correct": true
+      },
+      {
+        "text": "The normalization constant of the wavefunction",
+        "why": "A normalization constant is not an energy. Extra Hamiltonian terms come from things like external fields and magnetic moments."
+      },
+      {
+        "text": "Nothing: a Hamiltonian only ever has those two terms",
+        "why": "In general all terms that contribute to the energy appear in the Hamiltonian, such as those from external electric and magnetic fields."
+      },
+      {
+        "text": "The number of times the system is measured",
+        "why": "Making measurements does not add an energy term. Extra terms come from external fields and from magnetic interactions."
+      }
+    ],
+    "explanation": "In general every term that contributes to the energy appears in the Hamiltonian. Extra terms account for external electric and magnetic fields and for magnetic interactions due to the particles' magnetic moments and their motion."
+  },
+  {
+    "id": "pc4-operator-angular-z",
+    "type": "multiple-choice",
+    "prompt": "In Table 4.2.1, which observable does the operator −iħ[x d/dy − y d/dx] represent?",
+    "choices": [
+      {
+        "text": "The z component of angular momentum, L_z",
+        "correct": true
+      },
+      {
+        "text": "The z component of linear momentum, p_z",
+        "why": "Linear momentum along z is −iħ d/dz, a single derivative. This operator mixes x and y, which marks angular momentum about the z axis."
+      },
+      {
+        "text": "The kinetic energy in the xy plane",
+        "why": "Kinetic energy uses second derivatives and the factor −(ħ^2/(2m)). This operator has first derivatives multiplied by coordinates."
+      },
+      {
+        "text": "The x component of angular momentum, L_x",
+        "why": "L̂_x = −iħ[y d/dz − z d/dy] involves y and z. The operator with only x and y is L̂_z."
+      }
+    ],
+    "explanation": "Table 4.2.1 gives L̂_z = −iħ[x d/dy − y d/dx]. Each angular momentum component uses the other two coordinates: L̂_x uses y and z, L̂_y uses z and x, and L̂_z uses x and y."
+  },
+  {
+    "id": "pc4-operator-contains-i",
+    "type": "multiple-choice",
+    "prompt": "Which of these operators contains the imaginary unit i?",
+    "choices": [
+      {
+        "text": "The linear momentum operator",
+        "correct": true
+      },
+      {
+        "text": "The position operator",
+        "why": "The position operator just multiplies by x; there is no i in it. The momentum operator, −iħ d/dx, does contain i."
+      },
+      {
+        "text": "The potential energy operator",
+        "why": "V̂ multiplies by the real function V(x), with no i. The momentum operator, −iħ d/dx, contains i."
+      },
+      {
+        "text": "The kinetic energy operator",
+        "why": "T̂_x = −(ħ^2/(2m)) d^2/dx^2 has no i, because squaring −iħ turned i^2 into −1. The momentum operator, −iħ d/dx, keeps the i."
+      }
+    ],
+    "explanation": "The linear momentum operator, p̂_x = −iħ d/dx, contains i, and so do the angular momentum operators. The position, potential energy and kinetic energy operators in Table 4.2.1 have no i."
+  },
+  {
+    "id": "pc4-operator-hat-notation",
+    "type": "multiple-choice",
+    "prompt": "Table 4.2.1 lists each observable, such as x or E, next to an operator symbol, such as X̂ or Ê. What does the hat on X̂ or Ê show?",
+    "choices": [
+      {
+        "text": "That the symbol stands for an operator that acts on a wavefunction",
+        "correct": true
+      },
+      {
+        "text": "That the quantity is an average over many measurements",
+        "why": "Averages are written with angle brackets, like ⟨x⟩. The hat marks an operator, as in X̂ or Ĥ."
+      },
+      {
+        "text": "That the quantity has been squared",
+        "why": "A square is written with a superscript 2. The hat marks an operator, such as X̂, P̂_x or Ĥ."
+      },
+      {
+        "text": "That the quantity is always a complex number",
+        "why": "Operators such as X̂ and V̂ involve no complex numbers. The hat marks an operator, not a complex value."
+      }
+    ],
+    "explanation": "Table 4.2.1 lists each observable (x, p_x, T_x, V(x), E) next to its operator (X̂, P̂_x, T̂_x, V̂(x), Ê). The hat shows that the symbol is an operator, an instruction that acts on a wavefunction, rather than a number."
+  },
+  {
+    "id": "pc4-operator-momentum-on-exponential",
+    "type": "numeric",
+    "prompt": "Apply p̂_x = −iħ d/dx to ψ = e^(2ix), using d/dx e^(ax) = a e^(ax) and i^2 = −1. The result is a number times ħ e^(2ix). What is that number?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "d/dx e^(2ix) = 2i e^(2ix), so p̂_x ψ = −iħ(2i) e^(2ix) = −2i^2 ħ e^(2ix) = 2ħ e^(2ix). The number is 2."
+  },
+  {
+    "id": "pc4-operator-kinetic-on-cosine",
+    "type": "numeric",
+    "prompt": "Take ħ = 1 and m = 1, so the kinetic energy operator is T̂_x = −(1/2) d^2/dx^2. Using d^2/dx^2 cos(ax) = −a^2 cos(ax), applying T̂_x to cos(3x) gives a number times cos(3x). What is that number? (Give it as a decimal.)",
+    "answer": 4.5,
+    "explanation": "d^2/dx^2 cos(3x) = −9 cos(3x), so T̂_x cos(3x) = −(1/2) × (−9 cos(3x)) = 4.5 cos(3x). The two minus signs cancel, so the kinetic energy comes out positive."
+  },
+  {
+    "id": "pc4-operator-position-multiply",
+    "type": "numeric",
+    "prompt": "The position operator X̂ means \"multiply by x\". At x = 2.0, a wavefunction has the value ψ = 0.30. What is the value of X̂ψ at that point?",
+    "answer": 0.6,
+    "explanation": "X̂ψ = xψ = (2.0)(0.30) = 0.60 at that point. The position operator takes no derivative; it only multiplies by x."
+  },
+  {
+    "id": "pc4-operator-hamilton-total-energy",
+    "type": "numeric",
+    "prompt": "In Hamilton's formulation of mechanics, the total energy is H = T + V. A particle has kinetic energy T = 2.5 eV and potential energy V = −4.0 eV. What is its total energy, in eV?",
+    "answer": -1.5,
+    "unit": "eV",
+    "explanation": "H = T + V = 2.5 eV + (−4.0 eV) = −1.5 eV. The quantum Hamiltonian, Ĥ = T̂ + V̂, is built the same way: kinetic plus potential."
+  }
+]

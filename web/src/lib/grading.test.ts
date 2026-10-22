@@ -39,6 +39,12 @@ describe("parseNumber", () => {
     expect(parseNumber("1.2 × 10^3 kJ", "kJ")).toBeCloseTo(1200, 9);
   });
 
+  it("drops a unit with a minus sign, whichever minus is typed", () => {
+    expect(parseNumber("20000 cm^-1", "cm^−1")).toBe(20000);
+    expect(parseNumber("20000 cm^−1", "cm^−1")).toBe(20000);
+    expect(parseNumber("20000 cm^-1", "cm^-1")).toBe(20000);
+  });
+
   it("keeps a unit it wasn't told about unreadable", () => {
     expect(parseNumber("25.0 mL")).toBeNull();
     expect(parseNumber("25.0 g", "mL")).toBeNull();

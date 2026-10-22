@@ -1,0 +1,592 @@
+[
+  {
+    "id": "pc4-orthogonal-definition",
+    "type": "multiple-choice",
+    "prompt": "When are two wavefunctions ψ_1(x) and ψ_2(x) said to be orthogonal?",
+    "choices": [
+      {
+        "text": "When ∫_(−∞)^(∞) ψ_1^*ψ_2 dx = 0",
+        "correct": true
+      },
+      {
+        "text": "When ∫_(−∞)^(∞) ψ_1^*ψ_2 dx = 1",
+        "why": "An integral of 1 is the normalization condition for a single function (ψ_1 = ψ_2). Orthogonal means the integral is 0."
+      },
+      {
+        "text": "When ψ_1(x)ψ_2(x) = 0 at every point x",
+        "why": "The product need not be zero everywhere. Only its integral over all x must vanish, with positive and negative parts cancelling."
+      },
+      {
+        "text": "When ψ_1 and ψ_2 have the same eigenvalue",
+        "why": "That makes them degenerate, which does not guarantee orthogonality. Orthogonal means ∫ψ_1^*ψ_2 dx = 0."
+      }
+    ],
+    "explanation": "Two wavefunctions are orthogonal if ∫_(−∞)^(∞) ψ_1^*ψ_2 dx = 0. The product ψ_1^*ψ_2 can be positive in some places and negative in others, as long as the total integral is zero."
+  },
+  {
+    "id": "pc4-orthogonal-theorem",
+    "type": "multiple-choice",
+    "prompt": "What does the orthogonality theorem state?",
+    "choices": [
+      {
+        "text": "Eigenfunctions of a Hermitian operator are orthogonal if they have different eigenvalues",
+        "correct": true
+      },
+      {
+        "text": "Eigenfunctions of a Hermitian operator are orthogonal if they have the same eigenvalue",
+        "why": "Eigenfunctions with the same eigenvalue (degenerate ones) are not automatically orthogonal. The theorem needs different eigenvalues."
+      },
+      {
+        "text": "Any two normalized functions are orthogonal to each other",
+        "why": "Normalization (∫ψ^*ψ dx = 1) is a different condition. The theorem is about eigenfunctions of a Hermitian operator with different eigenvalues."
+      },
+      {
+        "text": "Eigenfunctions of a Hermitian operator always have different eigenvalues",
+        "why": "Eigenfunctions can share an eigenvalue; these are degenerate. The theorem says eigenfunctions with different eigenvalues are orthogonal."
+      }
+    ],
+    "explanation": "The orthogonality theorem: eigenfunctions of a Hermitian operator are orthogonal if they have different eigenvalues. Degenerate eigenfunctions are not covered by it, but they can be made orthogonal."
+  },
+  {
+    "id": "pc4-orthogonal-why-useful",
+    "type": "multiple-choice",
+    "prompt": "Why is the orthogonality theorem useful?",
+    "choices": [
+      {
+        "text": "It identifies orthogonal functions without having to do the integral",
+        "correct": true
+      },
+      {
+        "text": "It finds the eigenvalues of an operator without solving any equation",
+        "why": "The theorem uses eigenvalues; it does not find them. What it saves is the integration needed to check orthogonality."
+      },
+      {
+        "text": "It makes every wavefunction normalized automatically",
+        "why": "Normalization is a separate step. The theorem tells you which eigenfunctions are orthogonal without integrating."
+      },
+      {
+        "text": "It shows that position and momentum can be known exactly together",
+        "why": "That is not true, and it is not what the theorem says. The theorem lets you identify orthogonal functions without integrating."
+      }
+    ],
+    "explanation": "Because of the theorem, we can identify orthogonal functions easily, without having to integrate or analyze their symmetry: two eigenfunctions of a Hermitian operator with different eigenvalues must be orthogonal."
+  },
+  {
+    "id": "pc4-orthogonal-real-eigenvalues",
+    "type": "multiple-choice",
+    "prompt": "The eigenvalues of operators associated with experimental measurements are the values that can be measured. What kind of numbers must they be?",
+    "choices": [
+      {
+        "text": "Real numbers",
+        "correct": true
+      },
+      {
+        "text": "Purely imaginary numbers",
+        "why": "A measurement gives a real number, so the eigenvalues of operators for observables are all real."
+      },
+      {
+        "text": "Positive numbers only",
+        "why": "Eigenvalues must be real, but a real eigenvalue can be negative or zero as well as positive."
+      },
+      {
+        "text": "Whole numbers only",
+        "why": "Eigenvalues such as energies are often not whole numbers. What they must be is real."
+      }
+    ],
+    "explanation": "Eigenvalues correspond to measurable quantities, so they must be real. As the section states, the eigenvalues of operators associated with experimental measurements are all real."
+  },
+  {
+    "id": "pc4-orthogonal-observables-hermitian",
+    "type": "multiple-choice",
+    "prompt": "What kind of operator corresponds to an experimental observable in quantum mechanics?",
+    "choices": [
+      {
+        "text": "A Hermitian operator",
+        "correct": true
+      },
+      {
+        "text": "Any operator at all",
+        "why": "Only Hermitian operators qualify. Their eigenvalues are real, as measured values must be."
+      },
+      {
+        "text": "An operator whose eigenvalues are imaginary",
+        "why": "Measured values are real. The operators for observables are Hermitian, and Hermitian operators have real eigenvalues."
+      },
+      {
+        "text": "Only the Hamiltonian operator",
+        "why": "The Hamiltonian is one example, for energy, but every observable has its own Hermitian operator."
+      }
+    ],
+    "explanation": "All experimental observables are obtained from Hermitian operators. A Hermitian operator has real eigenvalues, which is what a measurement must give."
+  },
+  {
+    "id": "pc4-orthogonal-conjugate-real",
+    "type": "multiple-choice",
+    "prompt": "An eigenvalue a is a real number. What is its complex conjugate, a^*?",
+    "choices": [
+      {
+        "text": "a",
+        "correct": true
+      },
+      {
+        "text": "−a",
+        "why": "Complex conjugation changes the sign of the imaginary part only. A real number has none, so a^* = a."
+      },
+      {
+        "text": "0",
+        "why": "A real number is unchanged by complex conjugation: a^* = a, not 0."
+      },
+      {
+        "text": "ia",
+        "why": "Complex conjugation replaces i by −i; it never adds an i. For a real number, a^* = a."
+      }
+    ],
+    "explanation": "Complex conjugation flips the sign of the imaginary part. A real number has no imaginary part, so a^* = a. The proofs in this section use this fact for the eigenvalues."
+  },
+  {
+    "id": "pc4-orthogonal-hermitian-definition",
+    "type": "multiple-choice",
+    "prompt": "For two functions ψ and φ, which equation defines a Hermitian operator Â?",
+    "choices": [
+      {
+        "text": "∫ψ^*Âφ dτ = ∫(Â^*ψ^*)φ dτ",
+        "correct": true
+      },
+      {
+        "text": "Âψ = aψ",
+        "why": "That is an eigenvalue equation. The Hermitian condition compares two integrals: ∫ψ^*Âφ dτ = ∫(Â^*ψ^*)φ dτ."
+      },
+      {
+        "text": "∫ψ^*φ dτ = 0",
+        "why": "That says ψ and φ are orthogonal. It does not involve the operator Â at all."
+      },
+      {
+        "text": "∫ψ^*Âφ dτ = −∫(Â^*ψ^*)φ dτ",
+        "why": "There is no minus sign: for a Hermitian operator the two integrals are equal, ∫ψ^*Âφ dτ = ∫(Â^*ψ^*)φ dτ."
+      }
+    ],
+    "explanation": "Â is Hermitian if ∫ψ^*Âφ dτ = ∫(Â^*ψ^*)φ dτ: letting Â^* act on ψ^* gives the same result after integration as letting Â act on φ. Quantum mechanical operators for observables are Hermitian."
+  },
+  {
+    "id": "pc4-orthogonal-dtau",
+    "type": "multiple-choice",
+    "prompt": "In this section, what does ∫dτ represent?",
+    "choices": [
+      {
+        "text": "Integration over all the coordinates",
+        "correct": true
+      },
+      {
+        "text": "Integration over time",
+        "why": "τ here is not time. ∫dτ means integrating over the full range of all the coordinates."
+      },
+      {
+        "text": "Integration over x only, from 0 to 1",
+        "why": "∫dτ covers the full range of all the coordinates, not a fixed interval in one coordinate."
+      },
+      {
+        "text": "A small change in the energy",
+        "why": "dτ is not an energy. ∫dτ stands for integration over all the coordinates."
+      }
+    ],
+    "explanation": "∫dτ represents integration over the full range of all the coordinates. For a particle in one dimension it becomes ∫_(−∞)^(∞) dx."
+  },
+  {
+    "id": "pc4-orthogonal-a-integral",
+    "type": "numeric",
+    "prompt": "ψ is a normalized eigenfunction of Â, with Âψ = 3ψ. What is the value of ∫ψ^*Âψ dτ?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "∫ψ^*Âψ dτ = 3∫ψ^*ψ dτ = 3 × 1 = 3, because ψ is normalized (∫ψ^*ψ dτ = 1). In general this integral equals the eigenvalue a."
+  },
+  {
+    "id": "pc4-orthogonal-overlap-different",
+    "type": "numeric",
+    "prompt": "ψ_1 and ψ_2 are eigenfunctions of a Hermitian operator with eigenvalues a_1 = 2 and a_2 = 5. What is the value of ∫_(−∞)^(∞) ψ_1^*ψ_2 dx?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "The proof gives (a_1 − a_2)∫ψ_1^*ψ_2 dx = 0. Here a_1 − a_2 = 2 − 5 = −3, which is not zero, so the integral must be 0: the two eigenfunctions are orthogonal."
+  },
+  {
+    "id": "pc4-orthogonal-proof-fails-degenerate",
+    "type": "multiple-choice",
+    "prompt": "The proof ends with (a − a')∫ψ_a^*ψ_a' dx = 0. Why does this not show that degenerate eigenstates are orthogonal?",
+    "choices": [
+      {
+        "text": "a − a' = 0, so the equation is true whatever the integral is",
+        "correct": true
+      },
+      {
+        "text": "Degenerate eigenstates can never be normalized, so the proof breaks",
+        "why": "Degenerate eigenstates can be normalized. The problem is that a − a' = 0, so the equation says nothing about the integral."
+      },
+      {
+        "text": "The operator for degenerate eigenstates is never Hermitian",
+        "why": "The operator can still be Hermitian. The proof fails because a − a' = 0, which makes the equation true whatever the integral is."
+      },
+      {
+        "text": "The overlap integral of degenerate eigenstates is always 1",
+        "why": "Their overlap can take various values; it is 1 only for the same normalized function. With a − a' = 0, the proof cannot pin it down."
+      }
+    ],
+    "explanation": "For degenerate eigenstates a = a', so a − a' = 0 and the equation 0 × ∫ψ_a^*ψ_a' dx = 0 holds for any value of the integral. The proof of orthogonality therefore fails for degenerate eigenstates."
+  },
+  {
+    "id": "pc4-orthogonal-degenerate-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean for two eigenstates of an operator Â to be degenerate?",
+    "choices": [
+      {
+        "text": "They have the same eigenvalue",
+        "correct": true
+      },
+      {
+        "text": "They have different eigenvalues",
+        "why": "Eigenstates with different eigenvalues are nondegenerate, and the orthogonality theorem makes them orthogonal."
+      },
+      {
+        "text": "They are orthogonal to each other",
+        "why": "Orthogonality is a separate property. Degenerate means sharing the same eigenvalue, and degenerate states need not be orthogonal."
+      },
+      {
+        "text": "They are not normalized",
+        "why": "Normalization has nothing to do with degeneracy. Degenerate eigenstates share the same eigenvalue."
+      }
+    ],
+    "explanation": "Two eigenstates of Â that correspond to the same eigenvalue a are termed degenerate. Eigenstates with different eigenvalues are nondegenerate."
+  },
+  {
+    "id": "pc4-orthogonal-degenerate-not-automatic",
+    "type": "multiple-choice",
+    "prompt": "Are degenerate eigenfunctions of a Hermitian operator automatically orthogonal?",
+    "choices": [
+      {
+        "text": "No, but combinations of them can be chosen that are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Yes, all eigenfunctions of a Hermitian operator are orthogonal",
+        "why": "The theorem covers only eigenfunctions with different eigenvalues. Degenerate ones are not automatically orthogonal, but they can be made so."
+      },
+      {
+        "text": "No, and they can never be made orthogonal",
+        "why": "Gram-Schmidt orthogonalization forms combinations of degenerate eigenfunctions that are orthogonal."
+      },
+      {
+        "text": "Only if their shared eigenvalue is zero",
+        "why": "The value of the eigenvalue does not matter. Degenerate eigenfunctions are not automatically orthogonal, but they can be made so."
+      }
+    ],
+    "explanation": "Degenerate eigenfunctions are not automatically orthogonal. Since any linear combination of them is still an eigenfunction with the same eigenvalue, we can always choose combinations that are orthogonal, for example by Gram-Schmidt orthogonalization."
+  },
+  {
+    "id": "pc4-orthogonal-combination-eigenvalue",
+    "type": "numeric",
+    "prompt": "ψ_a and ψ'_a are degenerate eigenfunctions of Â, with Âψ_a = 4ψ_a and Âψ'_a = 4ψ'_a. The combination ψ_a + 2ψ'_a is also an eigenfunction of Â. What is its eigenvalue?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Â(ψ_a + 2ψ'_a) = 4ψ_a + 2 × 4ψ'_a = 4(ψ_a + 2ψ'_a). Any linear combination of degenerate eigenstates is also an eigenstate with the same eigenvalue, here 4."
+  },
+  {
+    "id": "pc4-orthogonal-overlap-integral",
+    "type": "multiple-choice",
+    "prompt": "For normalized eigenstates ψ_a and ψ'_a, the overlap integral is S = ⟨ψ_a|ψ'_a⟩. Which integral does this stand for?",
+    "choices": [
+      {
+        "text": "∫ψ_a^*ψ'_a dx",
+        "correct": true
+      },
+      {
+        "text": "∫ψ_a^*ψ_a dx",
+        "why": "That is the overlap of ψ_a with itself, which is 1 for a normalized function. S compares ψ_a with ψ'_a."
+      },
+      {
+        "text": "∫ψ_a^*Âψ'_a dx",
+        "why": "No operator appears in the overlap integral. S = ∫ψ_a^*ψ'_a dx measures how much the two functions overlap."
+      },
+      {
+        "text": "ψ_a(0) × ψ'_a(0)",
+        "why": "S is an integral over all x, not the product of the values at one point: S = ∫ψ_a^*ψ'_a dx."
+      }
+    ],
+    "explanation": "The overlap integral is S = ⟨ψ_a|ψ'_a⟩ = ∫ψ_a^*ψ'_a dx. It is 0 if the two functions are orthogonal and 1 if they are the same normalized function."
+  },
+  {
+    "id": "pc4-orthogonal-s-zero",
+    "type": "multiple-choice",
+    "prompt": "Gram-Schmidt orthogonalization makes ψ''_a = ψ'_a − Sψ_a, where S is the overlap of ψ_a and ψ'_a. If S is already zero, what is ψ''_a?",
+    "choices": [
+      {
+        "text": "ψ'_a",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "With S = 0, ψ''_a = ψ'_a − 0 × ψ_a = ψ'_a, not zero."
+      },
+      {
+        "text": "ψ_a",
+        "why": "Subtracting Sψ_a with S = 0 removes nothing, so what is left is ψ'_a, not ψ_a."
+      },
+      {
+        "text": "ψ'_a − ψ_a",
+        "why": "The amount of ψ_a subtracted is S times ψ_a. With S = 0, nothing is subtracted."
+      }
+    ],
+    "explanation": "With S = 0, ψ''_a = ψ'_a − 0 × ψ_a = ψ'_a. An overlap of zero means ψ_a and ψ'_a are already orthogonal, so Gram-Schmidt has nothing to remove."
+  },
+  {
+    "id": "pc4-orthogonal-gram-schmidt-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does Gram-Schmidt orthogonalization do?",
+    "choices": [
+      {
+        "text": "Makes degenerate eigenfunctions orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Normalizes each wavefunction so that ⟨ψ|ψ⟩ = 1",
+        "why": "Normalizing makes ⟨ψ|ψ⟩ = 1. Gram-Schmidt instead combines degenerate eigenfunctions so that they become orthogonal."
+      },
+      {
+        "text": "Finds the eigenvalues of a Hermitian operator",
+        "why": "The eigenvalue is already known and shared. Gram-Schmidt builds orthogonal combinations of degenerate eigenfunctions."
+      },
+      {
+        "text": "Makes all the eigenvalues of an operator real",
+        "why": "Eigenvalues of a Hermitian operator are already real. Gram-Schmidt is about making degenerate eigenfunctions orthogonal."
+      }
+    ],
+    "explanation": "Degenerate eigenfunctions are not automatically orthogonal, but Gram-Schmidt orthogonalization forms linear combinations of them that are. The combinations are still eigenfunctions with the same eigenvalue."
+  },
+  {
+    "id": "pc4-orthogonal-gram-schmidt-form",
+    "type": "multiple-choice",
+    "prompt": "ψ_a and ψ'_a are normalized and degenerate but not orthogonal, with overlap S = ⟨ψ_a|ψ'_a⟩. Which combination is orthogonal to ψ_a?",
+    "choices": [
+      {
+        "text": "ψ'_a − Sψ_a",
+        "correct": true
+      },
+      {
+        "text": "ψ'_a + Sψ_a",
+        "why": "Adding gives ⟨ψ_a|ψ'_a + Sψ_a⟩ = S + S = 2S, not 0. The overlap must be subtracted."
+      },
+      {
+        "text": "ψ'_a − ψ_a",
+        "why": "This gives ⟨ψ_a|ψ'_a − ψ_a⟩ = S − 1, which is zero only if S = 1. The amount of ψ_a to subtract is S."
+      },
+      {
+        "text": "Sψ'_a",
+        "why": "Multiplying by S only rescales ψ'_a; its overlap with ψ_a becomes S^2, not 0."
+      }
+    ],
+    "explanation": "ψ''_a = ψ'_a − Sψ_a removes the part of ψ'_a that overlaps with ψ_a: ⟨ψ_a|ψ''_a⟩ = ⟨ψ_a|ψ'_a⟩ − S⟨ψ_a|ψ_a⟩ = S − S = 0."
+  },
+  {
+    "id": "pc4-orthogonal-normalize-purpose",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 4.5.2, why is the combination φ_1 − Sφ_2 multiplied by a constant N?",
+    "choices": [
+      {
+        "text": "To normalize it, so that ⟨ψ|ψ⟩ = 1",
+        "correct": true
+      },
+      {
+        "text": "To make it orthogonal to φ_2",
+        "why": "Multiplying by a constant cannot change whether a function is orthogonal; subtracting Sφ_2 already did that. N fixes the normalization."
+      },
+      {
+        "text": "To make the overlap integral S equal to 1",
+        "why": "N does not change S, which is fixed by φ_1 and φ_2. N is chosen so that ⟨ψ|ψ⟩ = 1."
+      },
+      {
+        "text": "To make all the values of ψ positive",
+        "why": "N is a constant scale factor and does not fix any signs. It is chosen so that ⟨ψ|ψ⟩ = 1."
+      }
+    ],
+    "explanation": "The combination φ_1 − Sφ_2 is not normalized: ⟨φ_1 − Sφ_2|φ_1 − Sφ_2⟩ = 1 − S^2. N is chosen so that ⟨ψ|ψ⟩ = N^2(1 − S^2) = 1, which gives N = 1/(√(1 − S^2))."
+  },
+  {
+    "id": "pc4-orthogonal-normalization-constant",
+    "type": "numeric",
+    "prompt": "In Exercise 4.5.2, ψ = N(φ_1 − Sφ_2) is normalized by N = 1/(√(1 − S^2)), where S is the overlap of the normalized functions φ_1 and φ_2. What is N when S = 0.60?",
+    "answer": 1.25,
+    "explanation": "N = 1/(√(1 − 0.60^2)) = 1/(√(1 − 0.36)) = 1/(√(0.64)) = 1/0.80 = 1.25."
+  },
+  {
+    "id": "pc4-orthogonal-normalized-braket",
+    "type": "multiple-choice",
+    "prompt": "In bracket notation, which equation says that ψ_a is normalized?",
+    "choices": [
+      {
+        "text": "⟨ψ_a|ψ_a⟩ = 1",
+        "correct": true
+      },
+      {
+        "text": "⟨ψ_a|ψ_a⟩ = 0",
+        "why": "The overlap of a function with itself, ∫ψ_a^*ψ_a dx, is positive. Normalized means it equals 1."
+      },
+      {
+        "text": "⟨ψ_a|ψ'_a⟩ = 1",
+        "why": "That compares two different functions. Normalization is about the overlap of ψ_a with itself."
+      },
+      {
+        "text": "⟨ψ_a|ψ_a⟩ = S",
+        "why": "S is the overlap between ψ_a and ψ'_a. For a normalized ψ_a, its overlap with itself is 1."
+      }
+    ],
+    "explanation": "⟨ψ_a|ψ_a⟩ stands for ∫ψ_a^*ψ_a dx, and ψ_a is normalized when this equals 1. The proofs use this when they replace ⟨ψ_a|ψ_a⟩ by 1."
+  },
+  {
+    "id": "pc4-orthogonal-example-parity",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.5.1, how do the particle-in-a-box wavefunctions ψ(n = 2) and ψ(n = 3) behave about the center of the box, x = L/2?",
+    "choices": [
+      {
+        "text": "ψ(n = 2) is odd and ψ(n = 3) is even",
+        "correct": true
+      },
+      {
+        "text": "ψ(n = 2) is even and ψ(n = 3) is odd",
+        "why": "It is the other way round: ψ(n = 2), which has a node at the center, is odd, and ψ(n = 3), which peaks there, is even."
+      },
+      {
+        "text": "Both are even",
+        "why": "Only ψ(n = 3) is even about x = L/2. ψ(n = 2) is odd, so their product is odd."
+      },
+      {
+        "text": "Both are odd",
+        "why": "Only ψ(n = 2) is odd about x = L/2. ψ(n = 3) is even, so their product is odd."
+      }
+    ],
+    "explanation": "About the center of the box, ψ(n = 2) is odd and ψ(n = 3) is even. Their product is odd, and the integral of an odd function over the box is zero, so the two are orthogonal."
+  },
+  {
+    "id": "pc4-orthogonal-why-integral-zero",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.5.1, why is ∫_0^(L) ψ(n = 2)ψ(n = 3) dx equal to zero?",
+    "choices": [
+      {
+        "text": "The integrand is odd about x = L/2, so the halves cancel",
+        "correct": true
+      },
+      {
+        "text": "Both wavefunctions are zero everywhere in the box",
+        "why": "They are zero only at the walls and at their nodes. The integral vanishes because the integrand is odd about the center, so the halves cancel."
+      },
+      {
+        "text": "The two wavefunctions have the same energy",
+        "why": "They have different energies (n = 2 and n = 3). The integral vanishes because the integrand is odd about the center."
+      },
+      {
+        "text": "Each of the two wavefunctions is normalized",
+        "why": "Normalization makes ∫ψ^*ψ dx = 1 for each function alone; it says nothing about their product. The integrand is odd, so the integral is zero."
+      }
+    ],
+    "explanation": "ψ(n = 2) is odd and ψ(n = 3) is even about x = L/2, so their product is odd. The integral of an odd function over a range symmetric about its center is zero, so the two wavefunctions are orthogonal without doing the integral."
+  },
+  {
+    "id": "pc4-orthogonal-two-over-l",
+    "type": "numeric",
+    "prompt": "In Example 4.5.1, each wavefunction carries the factor √(2/L), and the two factors multiply to give 2/L in front of the integral. What is 2/L for a box of length L = 0.50 nm, in nm^−1?",
+    "answer": 4.0,
+    "explanation": "√(2/L) × √(2/L) = 2/L = 2/(0.50 nm) = 4.0 nm^−1."
+  },
+  {
+    "id": "pc4-orthogonal-pib-set",
+    "type": "multiple-choice",
+    "prompt": "What does the orthogonality theorem guarantee about the whole set of particle-in-a-box wavefunctions?",
+    "choices": [
+      {
+        "text": "Any two of them with different n are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Only ψ(n = 2) and ψ(n = 3) are orthogonal",
+        "why": "Example 4.5.1 checks just that one pair, but the argument can be repeated for every pair: the whole set is mutually orthogonal."
+      },
+      {
+        "text": "Only wavefunctions with neighboring n are orthogonal",
+        "why": "Every pair with different n is orthogonal, not just neighbors, because each pair has different energies."
+      },
+      {
+        "text": "None are orthogonal, since they all share one Hamiltonian",
+        "why": "Sharing the operator Ĥ is exactly what the theorem needs: its eigenfunctions with different energies are orthogonal."
+      }
+    ],
+    "explanation": "The particle-in-a-box wavefunctions are eigenfunctions of the Hamiltonian with different energies, so the orthogonality theorem guarantees that the entire set is mutually orthogonal: any two with different n have zero overlap."
+  },
+  {
+    "id": "pc4-orthogonal-star-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the integral ∫ψ_1^*ψ_2 dx, what does the star in ψ_1^* mean?",
+    "choices": [
+      {
+        "text": "The complex conjugate of ψ_1",
+        "correct": true
+      },
+      {
+        "text": "The square of ψ_1",
+        "why": "ψ_1^* is not ψ_1 squared. The star marks the complex conjugate: every i in ψ_1 is replaced by −i."
+      },
+      {
+        "text": "The derivative of ψ_1",
+        "why": "A derivative would be written dψ_1/dx. The star means the complex conjugate."
+      },
+      {
+        "text": "The normalized form of ψ_1",
+        "why": "Normalization is a separate step. The star means the complex conjugate of ψ_1."
+      }
+    ],
+    "explanation": "ψ^* is the complex conjugate of ψ: every i is replaced by −i. For a real function, such as a particle-in-a-box wavefunction, ψ^* = ψ."
+  },
+  {
+    "id": "pc4-orthogonal-which-pair",
+    "type": "multiple-choice",
+    "prompt": "A Hermitian operator has eigenfunctions f, g and h with eigenvalues 2, 2 and 7. Which pair does the orthogonality theorem guarantee to be orthogonal?",
+    "choices": [
+      {
+        "text": "f and h",
+        "correct": true
+      },
+      {
+        "text": "f and g",
+        "why": "f and g share the eigenvalue 2, so they are degenerate and not automatically orthogonal."
+      },
+      {
+        "text": "All three pairs, including f and g",
+        "why": "f and g are degenerate (both have eigenvalue 2), so the theorem says nothing about them."
+      },
+      {
+        "text": "No pair, because one eigenvalue is repeated",
+        "why": "The repeat only affects f and g. f and h have different eigenvalues (2 and 7), so they are orthogonal."
+      }
+    ],
+    "explanation": "The theorem applies to eigenfunctions with different eigenvalues: f and h (2 and 7) are orthogonal, and so are g and h. f and g share the eigenvalue 2, so they are degenerate and need not be orthogonal."
+  },
+  {
+    "id": "pc4-orthogonal-hermitian-role",
+    "type": "multiple-choice",
+    "prompt": "In the proof of the orthogonality theorem, subtracting two equations leaves a difference of two integrals on the left. Why is that left-hand side zero?",
+    "choices": [
+      {
+        "text": "Because Â is Hermitian, the two integrals are equal",
+        "correct": true
+      },
+      {
+        "text": "Because the two eigenvalues are equal",
+        "why": "The proof assumes different eigenvalues. The left side is zero because the Hermitian property makes the two integrals equal."
+      },
+      {
+        "text": "Because both eigenfunctions are zero",
+        "why": "The eigenfunctions are not zero. The left side vanishes because Â is Hermitian, which makes the two integrals the same."
+      },
+      {
+        "text": "Because every integral over all space is zero",
+        "why": "Integrals over all space need not be zero; for example ∫ψ^*ψ dτ = 1. The left side vanishes because Â is Hermitian."
+      }
+    ],
+    "explanation": "The left-hand side is zero because Â is Hermitian, so the two integrals are equal. That leaves 0 = (a_1 − a_2) × (the overlap integral), and with a_1 ≠ a_2 the overlap must be zero."
+  }
+]

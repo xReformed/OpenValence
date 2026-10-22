@@ -15,7 +15,7 @@ export interface PathSection {
   ready: boolean;
   file: string;
   sourceUrl: string;
-  /** Set only in books whose author and license vary by section (Inorganic Chemistry). */
+  /** Set only in books whose author and license vary by section (Inorganic and Physical Chemistry). */
   author?: string;
   license?: string;
 }
@@ -40,6 +40,9 @@ export interface PathStage {
   label: string;
   title: string;
   note: string;
+  /** Only these chapters of the book (first and last, inclusive): a part of a
+      book that opens on its own, with no "Step N" before it (lib/stages.ts). */
+  chapters?: [first: number, last: number];
 }
 
 export interface Branch {
@@ -56,6 +59,8 @@ export interface Branch {
   }[];
   /** What the current books already teach at an introductory level, if anything. */
   alreadyCovered?: string;
+  /** What a student should know before starting the path, shown above it. */
+  prerequisites?: string[];
   scope: string[];
   steps: { label: string; done?: boolean }[];
   /** Chapters come from learningPaths.generated.ts; absent until a book exists. */

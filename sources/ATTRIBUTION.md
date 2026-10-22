@@ -33,10 +33,9 @@ recorded. 4.2, 9.3, 11.1 and 15.3 carry no license tag on LibreTexts, nor do
 11.2's sub-pages or 15.4.1, and these are marked `"Unverified"`; confirm them
 before ingesting.
 
-`openstax/physchem/` is in progress: one folder per chapter (1–31) and 277
-section files. Chapters 1–29 (257 sections) are transcribed from the LibreTexts
-pages with the scripts in `tools/transcribe/`; the other files hold front
-matter only. The end-of-chapter
+`openstax/physchem/` is complete: one folder per chapter (1–31) and one file per
+section, all 277 sections transcribed from the LibreTexts pages with the scripts
+in `tools/transcribe/` (but for the six noted below). The end-of-chapter
 exercise pages are left out, as are chapter 32 ("Math Chapters") and chapter 33
 (appendices). No section has text-bearing sub-pages. 9.13, 9.16, 12.9, 14.9 and 28.7 are
 empty on LibreTexts (their pages hold no text, or only "under development"), so their
@@ -46,14 +45,15 @@ browser; the downloaded page has no text of its own, so 19.1 is not transcribed.
 9.11, 14.2, 14.3, 25.8 and 26.13 hold a passage on the uncertainty principle from
 another book instead of the subject their titles name; it is transcribed, with a
 note saying so. The
-license and author are recorded per section, read from its page: 229 sections
+license and author are recorded per section, read from its page: 230 sections
 are CC BY-NC-SA 4.0 and the rest CC BY or CC BY-SA. 12.10–12.13 and 19.14 carry
 no license tag on LibreTexts and are marked `"Unverified"`; confirm them before
 ingesting. Most pages name no author (no tag and no contributors note), and
 those are recorded as `"Anonymous"`; the others carry LibreTexts usernames
-(Zielinskit, Flowlerm, Delmar, Mtuckerman, …) to be mapped to names in
-`AUTHORS` in `web/scripts/gen-learning-paths.mjs` when the book is added to the
-app.
+(Zielinskit, Flowlerm, Delmar, Mtuckerman, …), which `AUTHORS` in
+`web/scripts/gen-learning-paths.mjs` maps to the names the pages' contributor
+notes give (Theresa Julia Zielinski, Michael Fowler, Delmar Larsen, Mark
+Tuckerman, …).
 
 ## Layout
 

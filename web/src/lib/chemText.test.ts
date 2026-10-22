@@ -21,6 +21,9 @@ describe("parseChemText", () => {
     ["10^−5-M", "10^{−5}-M"],
     ["x^{n+1}", "x^{n+1}"],
     ["x^(n+1)", "x^{n+1}"],
+    ["ψ^*ψ", "ψ^{*}ψ"],
+    ["σ_1s^* orbital", "σ_{1s}^{*} orbital"],
+    ["A^** = A", "A^{**} = A"],
   ])("raises carets: %j", (input, expected) => {
     expect(render(input)).toBe(expected);
   });

@@ -1,0 +1,584 @@
+[
+  {
+    "id": "pc4-observable-eigenvalue-equation",
+    "type": "multiple-choice",
+    "prompt": "What is an eigenvalue equation?",
+    "choices": [
+      {
+        "text": "An equation where an operator acting on a function gives a constant times that same function",
+        "correct": true
+      },
+      {
+        "text": "An equation where an operator acting on a function always gives zero",
+        "why": "The result is not zero in general. In an eigenvalue equation it is a constant times the original function: Âψ = aψ."
+      },
+      {
+        "text": "An equation that gives the probability of finding a particle at a point",
+        "why": "That is the job of the probability density, |ψ|^2. An eigenvalue equation has the form Âψ = aψ."
+      },
+      {
+        "text": "Any equation that contains both an operator and the energy E",
+        "why": "The eigenvalue need not be an energy, and not every equation with an operator is an eigenvalue equation. What matters is the form Âψ = aψ."
+      }
+    ],
+    "explanation": "An eigenvalue equation has the form Âψ = aψ: the operator acting on the function gives back the same function times a constant. The function is called an eigenfunction and the constant an eigenvalue."
+  },
+  {
+    "id": "pc4-observable-schrodinger-e",
+    "type": "multiple-choice",
+    "prompt": "In the Schrödinger equation written as Ĥψ = Eψ, what is E?",
+    "choices": [
+      {
+        "text": "The energy: a number, which is the eigenvalue",
+        "correct": true
+      },
+      {
+        "text": "An operator that acts on the wavefunction ψ",
+        "why": "Ĥ is the operator. E is just a number (a quantity of joules) multiplying ψ."
+      },
+      {
+        "text": "A function of the coordinates x, y and z",
+        "why": "E is a constant, not a function of position. That is what makes Ĥψ = Eψ an eigenvalue equation."
+      },
+      {
+        "text": "The eigenfunction of the Hamiltonian",
+        "why": "ψ is the eigenfunction. E is the eigenvalue, the energy of the system."
+      }
+    ],
+    "explanation": "Ĥψ = Eψ says that the Hamiltonian acting on the wavefunction gives the energy E, a number in joules, times the same wavefunction. So ψ is an eigenfunction of Ĥ and E is its eigenvalue."
+  },
+  {
+    "id": "pc4-observable-recognize-eigen",
+    "type": "multiple-choice",
+    "prompt": "Which of these is an eigenvalue equation?",
+    "choices": [
+      {
+        "text": "d/dx e^(4x) = 4e^(4x)",
+        "correct": true
+      },
+      {
+        "text": "d/dx x^2 = 2x",
+        "why": "2x is not a constant times x^2, so x^2 is not an eigenfunction of d/dx."
+      },
+      {
+        "text": "d/dx sin(x) = cos(x)",
+        "why": "cos(x) is not a constant times sin(x); the function changed shape. So sin(x) is not an eigenfunction of d/dx."
+      },
+      {
+        "text": "x × e^(4x) = xe^(4x)",
+        "why": "Here the function is multiplied by x, which is a variable, not a constant. An eigenvalue must be a constant."
+      }
+    ],
+    "explanation": "Only d/dx e^(4x) = 4e^(4x) gives back the same function times a constant, 4. So e^(4x) is an eigenfunction of d/dx with eigenvalue 4. In the other cases the result is not a constant times the original function."
+  },
+  {
+    "id": "pc4-observable-postulate-iii",
+    "type": "multiple-choice",
+    "prompt": "A system is described by an eigenfunction Ψ of the operator Â, with ÂΨ = aΨ. What value will a measurement of the matching observable give?",
+    "choices": [
+      {
+        "text": "Always the eigenvalue a",
+        "correct": true
+      },
+      {
+        "text": "A different value each time, scattered around a",
+        "why": "Scatter happens only when Ψ is not an eigenfunction of Â. In an eigenstate every measurement gives exactly a."
+      },
+      {
+        "text": "The wavefunction Ψ itself",
+        "why": "A measurement gives a number, not a function. That number is the eigenvalue a."
+      },
+      {
+        "text": "The square of the eigenvalue, a^2",
+        "why": "Postulate III says the measured value is the eigenvalue a itself."
+      }
+    ],
+    "explanation": "Postulate III: if a system is described by an eigenfunction Ψ of Â, the value measured for the observable corresponding to Â is always the eigenvalue a in ÂΨ = aΨ."
+  },
+  {
+    "id": "pc4-observable-general-function",
+    "type": "multiple-choice",
+    "prompt": "What usually happens when an operator acts on a general wavefunction that is not one of its eigenfunctions?",
+    "choices": [
+      {
+        "text": "The result is a function with a completely different shape",
+        "correct": true
+      },
+      {
+        "text": "The result is always zero",
+        "why": "Zero is not the usual result. Typically the operator turns ψ into a function of a different shape."
+      },
+      {
+        "text": "The result is the same function times a constant",
+        "why": "That happens only for the special wavefunctions called eigenfunctions. In general the shape changes."
+      },
+      {
+        "text": "The result is a single number, the eigenvalue",
+        "why": "An operator acting on a function gives another function, not a number. Only for an eigenfunction is it a number times the original."
+      }
+    ],
+    "explanation": "When an operator acts on a general wavefunction, the result usually has a completely different shape. Only certain special wavefunctions, the eigenstates, come back as a multiple of themselves."
+  },
+  {
+    "id": "pc4-observable-zero-variance",
+    "type": "multiple-choice",
+    "prompt": "For an eigenstate ψ_a of Â, ⟨A⟩ = a and ⟨A^2⟩ = a^2. What is the variance σ_A^2 = ⟨A^2⟩ − ⟨A⟩^2, and what does it mean?",
+    "choices": [
+      {
+        "text": "It is zero, so every measurement of A gives the same result, a",
+        "correct": true
+      },
+      {
+        "text": "It is a^2, so measurements spread over a range about as wide as a",
+        "why": "σ_A^2 = a^2 − a^2 = 0, not a^2. Zero variance means there is no scatter at all."
+      },
+      {
+        "text": "It is 2a^2, so the results scatter widely",
+        "why": "The two terms subtract: a^2 − a^2 = 0. There is no scatter."
+      },
+      {
+        "text": "It is negative, so A cannot be measured",
+        "why": "A variance can't be negative. Here a^2 − a^2 = 0, so every measurement gives a."
+      }
+    ],
+    "explanation": "σ_A^2 = ⟨A^2⟩ − ⟨A⟩^2 = a^2 − a^2 = 0. Zero variance means no scatter: every measurement of A on the eigenstate ψ_a gives the same value, the eigenvalue a."
+  },
+  {
+    "id": "pc4-observable-probability-weight",
+    "type": "multiple-choice",
+    "prompt": "In ⟨x⟩ = ∫ x|ψ|^2 dx, what role does |ψ|^2 play?",
+    "choices": [
+      {
+        "text": "It is the probability density, weighting each position x",
+        "correct": true
+      },
+      {
+        "text": "It is the operator for position",
+        "why": "The position operator just multiplies by x. |ψ|^2 is the probability density that weights each value of x."
+      },
+      {
+        "text": "It is the energy of the particle at each position",
+        "why": "Energy comes from the Hamiltonian, Ĥψ = Eψ. |ψ|^2 is a probability density."
+      },
+      {
+        "text": "It is the exact position of the particle",
+        "why": "Quantum mechanics gives probabilities, not an exact position. |ψ|^2 tells how likely each value of x is."
+      }
+    ],
+    "explanation": "|ψ(x, t)|^2 is the probability density for a position measurement giving x. The expectation value ⟨x⟩ = ∫ x|ψ|^2 dx averages x with this probability as the weight."
+  },
+  {
+    "id": "pc4-observable-expectation-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the expectation value ⟨x⟩ mean?",
+    "choices": [
+      {
+        "text": "The mean of many position measurements made on identical systems",
+        "correct": true
+      },
+      {
+        "text": "The single most likely result of one measurement",
+        "why": "⟨x⟩ is an average, which need not be the most likely value. It is the mean of a large number of measurements."
+      },
+      {
+        "text": "The position the particle is guaranteed to be found at",
+        "why": "Measurements on identical systems generally give different results. ⟨x⟩ is their mean, not a guaranteed value."
+      },
+      {
+        "text": "The largest position the particle can have",
+        "why": "⟨x⟩ is an average, not a maximum. The results scatter on both sides of it."
+      }
+    ],
+    "explanation": "If you made a large number of independent position measurements on equally many identical systems, the results would generally differ. Their mean is the expectation value, ⟨x⟩ = ∫ x|ψ|^2 dx."
+  },
+  {
+    "id": "pc4-observable-postulate-iv",
+    "type": "multiple-choice",
+    "prompt": "Postulate IV: for a normalized wavefunction ψ, which expression gives the average value of the observable whose operator is Â?",
+    "choices": [
+      {
+        "text": "∫ψ^*Âψ dx",
+        "correct": true
+      },
+      {
+        "text": "∫ψ^*ψ dx",
+        "why": "That is the normalization integral, which equals 1 for a normalized ψ. The operator Â must go between ψ^* and ψ."
+      },
+      {
+        "text": "Âψ",
+        "why": "Âψ is a new function, not a number. To get the average, multiply by ψ^* and integrate: ∫ψ^*Âψ dx."
+      },
+      {
+        "text": "∫Âψ dx",
+        "why": "Leaving out ψ^* does not give the average. The operator is sandwiched between ψ^* and ψ: ∫ψ^*Âψ dx."
+      }
+    ],
+    "explanation": "Postulate IV gives the average value as ⟨a⟩ = ⟨ψ|Â|ψ⟩ = ∫ψ^*Âψ dx: the operator acts on ψ, the result is multiplied by ψ^*, and the product is integrated over all space."
+  },
+  {
+    "id": "pc4-observable-unnormalized",
+    "type": "multiple-choice",
+    "prompt": "If ψ is not normalized, what must be done to ⟨ψ|Â|ψ⟩ to get the average value ⟨a⟩?",
+    "choices": [
+      {
+        "text": "Divide it by ⟨ψ|ψ⟩ = ∫ψ^*ψ dx",
+        "correct": true
+      },
+      {
+        "text": "Multiply it by ⟨ψ|ψ⟩",
+        "why": "Multiplying makes the error worse. Dividing by ⟨ψ|ψ⟩ corrects for the missing normalization."
+      },
+      {
+        "text": "Nothing, because normalization never affects the average",
+        "why": "For an unnormalized ψ, ⟨ψ|Â|ψ⟩ is off by the factor ⟨ψ|ψ⟩, so you must divide by it."
+      },
+      {
+        "text": "Take its square root",
+        "why": "A square root does not fix the normalization. The correct formula is ⟨a⟩ = (⟨ψ|Â|ψ⟩)/(⟨ψ|ψ⟩)."
+      }
+    ],
+    "explanation": "For an unnormalized wavefunction, ⟨a⟩ = (⟨ψ|Â|ψ⟩)/(⟨ψ|ψ⟩). The denominator is the normalization integral, ∫ψ^*ψ dx, which equals 1 when ψ is normalized."
+  },
+  {
+    "id": "pc4-observable-variance-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the variance σ_x^2 = ⟨x^2⟩ − ⟨x⟩^2 describe?",
+    "choices": [
+      {
+        "text": "How widely the measured values of x scatter around ⟨x⟩",
+        "correct": true
+      },
+      {
+        "text": "The most likely value of x",
+        "why": "The variance measures spread, not a most likely value. A larger σ_x^2 means a wider scatter around ⟨x⟩."
+      },
+      {
+        "text": "The average value of x",
+        "why": "The average is ⟨x⟩. The variance measures how far the results typically scatter from that average."
+      },
+      {
+        "text": "The total probability of finding the particle",
+        "why": "The total probability is 1 for a normalized ψ. The variance measures the spread of results around ⟨x⟩."
+      }
+    ],
+    "explanation": "Measurements of x scatter around the expectation value ⟨x⟩, and σ_x^2 = ⟨x^2⟩ − ⟨x⟩^2 measures by how much. Its square root, σ_x, is the standard deviation; results usually lie within a few σ_x of ⟨x⟩."
+  },
+  {
+    "id": "pc4-observable-pib-momentum-zero",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.3.1, the expectation value of momentum for a particle in a box in its ground state is ⟨p⟩ = 0. Why?",
+    "choices": [
+      {
+        "text": "The particle is equally likely to be moving left or right",
+        "correct": true
+      },
+      {
+        "text": "The particle is not moving at all",
+        "why": "The particle has kinetic energy, so it does move. Its momentum averages to zero because left and right are equally likely."
+      },
+      {
+        "text": "Momentum cannot be measured inside a box",
+        "why": "Momentum can be measured. Its average is zero because the particle is as likely to move left as right."
+      },
+      {
+        "text": "The wavefunction is zero everywhere in the box",
+        "why": "The ground-state wavefunction √(2/L) sin(πx/L) is not zero inside the box. ⟨p⟩ = 0 because the two directions are equally likely."
+      }
+    ],
+    "explanation": "The particle has equal probability of traveling toward the left or the right, so its average momentum and average velocity are zero, even though its average kinetic energy is not."
+  },
+  {
+    "id": "pc4-observable-pib-total-energy",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.3.1, why does the average kinetic energy of the particle in a box equal its total energy?",
+    "choices": [
+      {
+        "text": "Inside the box V = 0, so nothing else adds to the energy",
+        "correct": true
+      },
+      {
+        "text": "Kinetic and potential energy are always equal",
+        "why": "They are not equal in general. Here V = 0, so all of the energy is kinetic."
+      },
+      {
+        "text": "The particle's average momentum is zero",
+        "why": "⟨p⟩ = 0 is an average over the two directions; it does not make all the energy kinetic. The reason is that V = 0."
+      },
+      {
+        "text": "Total energy is always defined as kinetic energy alone",
+        "why": "The total energy is kinetic plus potential, Ĥ = T̂ + V̂. Here they coincide only because V = 0."
+      }
+    ],
+    "explanation": "The Hamiltonian is Ĥ = T̂ + V̂. Inside the box V = 0, so the total energy has no potential part and ⟨E⟩ = ⟨T⟩ = (ħ^2π^2)/(2mL^2)."
+  },
+  {
+    "id": "pc4-observable-complete-set",
+    "type": "multiple-choice",
+    "prompt": "The eigenstates of an operator for an observable form a complete set. What does that mean?",
+    "choices": [
+      {
+        "text": "Any wavefunction can be built as a combination of them",
+        "correct": true
+      },
+      {
+        "text": "Each one is normalized so that ∫φ_i^*φ_i dx = 1",
+        "why": "Normalization is a separate property. Complete means any wavefunction can be built as a combination of the eigenstates."
+      },
+      {
+        "text": "Every one of them has exactly the same eigenvalue",
+        "why": "Different eigenstates generally have different eigenvalues a_i. Complete means any ψ can be expanded as Σ_i c_i φ_i."
+      },
+      {
+        "text": "Every possible wavefunction is itself one of them",
+        "why": "Most wavefunctions are not eigenstates. They are combinations of eigenstates: ψ = Σ_i c_i φ_i."
+      }
+    ],
+    "explanation": "Because the eigenstates φ_i form a complete set, any general wavefunction can be written ψ = Σ_i c_i φ_i, where the c_i are complex weights. The section notes that the proof is difficult and does not attempt it."
+  },
+  {
+    "id": "pc4-observable-kronecker-delta",
+    "type": "multiple-choice",
+    "prompt": "What values does the Kronecker delta δ_ij take?",
+    "choices": [
+      {
+        "text": "1 when i = j, and 0 when i ≠ j",
+        "correct": true
+      },
+      {
+        "text": "0 when i = j, and 1 when i ≠ j",
+        "why": "That is the reverse. δ_ij is 1 (unity) when its two indices are equal and 0 otherwise."
+      },
+      {
+        "text": "Always 1, whatever i and j are",
+        "why": "δ_ij is 1 only when i = j; it is 0 when the indices differ."
+      },
+      {
+        "text": "The product of i and j",
+        "why": "δ_ij is not a product. It is 1 when i = j and 0 when i ≠ j."
+      }
+    ],
+    "explanation": "The Kronecker delta δ_ij takes the value unity when its two indices are equal and zero otherwise. For example, δ_22 = 1 and δ_23 = 0."
+  },
+  {
+    "id": "pc4-observable-orthonormal",
+    "type": "multiple-choice",
+    "prompt": "The eigenstates of Â satisfy ∫φ_i^*φ_j dx = δ_ij. What does this say about them?",
+    "choices": [
+      {
+        "text": "Each is normalized, and different ones are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Every one of them has exactly the same eigenvalue",
+        "why": "The condition says nothing about eigenvalues. It says each φ_i is normalized (i = j gives 1) and different ones are orthogonal (i ≠ j gives 0)."
+      },
+      {
+        "text": "Each one is orthogonal to itself, so ∫φ_i^*φ_i dx = 0",
+        "why": "For i = j, δ_ij = 1, so ∫φ_i^*φ_i dx = 1: each eigenstate is normalized, not orthogonal to itself."
+      },
+      {
+        "text": "They are all the same function, with different labels",
+        "why": "If they were the same, ∫φ_i^*φ_j dx would be 1 for every pair, not 0 when i ≠ j. Different eigenstates are orthogonal."
+      }
+    ],
+    "explanation": "For i = j the integral is 1, so each φ_i is normalized; for i ≠ j it is 0, so different eigenstates are mutually orthogonal. The section calls them properly normalized and mutually orthogonal."
+  },
+  {
+    "id": "pc4-observable-coefficient-formula",
+    "type": "multiple-choice",
+    "prompt": "In the expansion ψ = Σ_i c_i φ_i, how is each coefficient c_i found?",
+    "choices": [
+      {
+        "text": "c_i = ∫φ_i^*ψ dx",
+        "correct": true
+      },
+      {
+        "text": "c_i = ∫ψ^*ψ dx",
+        "why": "That is the normalization integral of ψ, the same for every i. Each c_i needs its own eigenstate: c_i = ∫φ_i^*ψ dx."
+      },
+      {
+        "text": "c_i = a_i, the eigenvalue",
+        "why": "The eigenvalue belongs to the eigenstate; it doesn't say how much of that eigenstate is in ψ. The weight is c_i = ∫φ_i^*ψ dx."
+      },
+      {
+        "text": "c_i = ∫φ_i^*φ_i dx",
+        "why": "That integral is 1 for every normalized eigenstate and doesn't involve ψ at all. Use c_i = ∫φ_i^*ψ dx."
+      }
+    ],
+    "explanation": "Because the eigenstates are normalized and mutually orthogonal, multiplying ψ = Σ_j c_j φ_j by φ_i^* and integrating picks out one term: c_i = ∫φ_i^*ψ dx."
+  },
+  {
+    "id": "pc4-observable-collapse",
+    "type": "multiple-choice",
+    "prompt": "What is wavefunction collapse?",
+    "choices": [
+      {
+        "text": "On measurement, a superposition of eigenstates appears to reduce to a single eigenstate",
+        "correct": true
+      },
+      {
+        "text": "On measurement, the wavefunction becomes zero everywhere and the particle disappears",
+        "why": "The particle doesn't vanish. The wavefunction reduces to a single eigenstate of the measured operator."
+      },
+      {
+        "text": "Over time, the wavefunction spreads out over more and more eigenstates",
+        "why": "Collapse goes the other way: a superposition of several eigenstates reduces to just one, on observation."
+      },
+      {
+        "text": "On measurement, a normalized wavefunction loses its normalization",
+        "why": "Collapse is not about normalization. It is the apparent reduction of a superposition to a single eigenstate by observation."
+      }
+    ],
+    "explanation": "Wavefunction collapse is said to occur when a wavefunction that starts as a superposition of several eigenstates appears to reduce to a single eigenstate on \"observation\", that is, when a measurement is made."
+  },
+  {
+    "id": "pc4-observable-position-eigenstates",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what are the eigenstates of the position operator like?",
+    "choices": [
+      {
+        "text": "Delta functions, with continuous rather than quantized positions",
+        "correct": true
+      },
+      {
+        "text": "Sine waves, like the particle-in-a-box states",
+        "why": "Those are energy eigenstates for a box. The section says position eigenstates are delta functions."
+      },
+      {
+        "text": "Delta functions, with only certain quantized positions allowed",
+        "why": "Position eigenstates are continuous, not quantized: the particle can be found at any x."
+      },
+      {
+        "text": "Constant functions spread evenly over all space",
+        "why": "A spread-out function has no definite position. Position eigenstates are delta functions, each sharp at one x."
+      }
+    ],
+    "explanation": "The section describes the eigenstates of position as delta functions, each concentrated at one value of x. Since x can take any value, these eigenstates are continuous, not quantized."
+  },
+  {
+    "id": "pc4-observable-different-measurement",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction is already in an eigenstate of position. What can happen if you now measure a different property, such as kinetic energy?",
+    "choices": [
+      {
+        "text": "The wavefunction may collapse into a different eigenstate",
+        "correct": true
+      },
+      {
+        "text": "Nothing, because the wavefunction is already in an eigenstate",
+        "why": "It is an eigenstate of position, not necessarily of kinetic energy. Measuring kinetic energy may collapse it into a different eigenstate."
+      },
+      {
+        "text": "The kinetic energy must come out as zero",
+        "why": "Being in a position eigenstate doesn't make the kinetic energy zero. The new measurement may collapse ψ into a different eigenstate."
+      },
+      {
+        "text": "The wavefunction is destroyed and the particle disappears",
+        "why": "Measurement doesn't destroy the particle. A different measurement may collapse ψ into another eigenstate."
+      }
+    ],
+    "explanation": "Measuring position again would not collapse a wavefunction that is already in a position eigenstate. But a different measurement, such as kinetic energy, may \"collapse\" it into a different eigenstate."
+  },
+  {
+    "id": "pc4-observable-perturbed",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction is expanded in an operator's eigenfunctions with coefficients {c_n}. What changes if the system is perturbed?",
+    "choices": [
+      {
+        "text": "It gets a new set of coefficients, {c'_n}",
+        "correct": true
+      },
+      {
+        "text": "The operator's eigenfunctions change, but the coefficients stay the same",
+        "why": "The basis of eigenfunctions belongs to the operator and stays the same. It is the coefficients that change, to {c'_n}."
+      },
+      {
+        "text": "Nothing, because the coefficients never change",
+        "why": "The coefficients specify the wavefunction, so a perturbed system has a different set, {c'_n}."
+      },
+      {
+        "text": "The wavefunction can no longer be expanded at all",
+        "why": "The eigenfunctions form a complete set, so any ψ can still be expanded, just with new coefficients {c'_n}."
+      }
+    ],
+    "explanation": "Once a basis of eigenfunctions is chosen, the wavefunction is specified by its expansion coefficients {c_n}. If the system is perturbed, its wavefunction has another set of coefficients, {c'_n}."
+  },
+  {
+    "id": "pc4-observable-when-expectation",
+    "type": "multiple-choice",
+    "prompt": "When do you need an expectation value, rather than a single eigenvalue, to describe measurements of an observable?",
+    "choices": [
+      {
+        "text": "When the wavefunction is not an eigenstate of that observable's operator",
+        "correct": true
+      },
+      {
+        "text": "Only when the wavefunction is normalized",
+        "why": "Normalization decides which formula you use, not whether an average is needed. An average is needed when ψ is not an eigenstate."
+      },
+      {
+        "text": "Only when the operator is the Hamiltonian",
+        "why": "Expectation values apply to any observable, such as position or momentum. They are needed when ψ is not an eigenstate of the operator."
+      },
+      {
+        "text": "When the wavefunction is an eigenstate of that observable's operator",
+        "why": "In an eigenstate every measurement gives the eigenvalue, so there is nothing to average. Results scatter when ψ is not an eigenstate."
+      }
+    ],
+    "explanation": "If ψ is an eigenstate of Â, every measurement gives the eigenvalue a. If it is not, measurements on identical systems give different results, and the expectation value ⟨a⟩ = ∫ψ^*Âψ dx gives their average."
+  },
+  {
+    "id": "pc4-observable-eigenvalue-second-derivative",
+    "type": "numeric",
+    "prompt": "Use d/dx sin(ax) = a cos(ax) and d/dx cos(ax) = −a sin(ax). The function sin(2x) is an eigenfunction of the operator d^2/dx^2. What is its eigenvalue?",
+    "answer": -4,
+    "tolerance": 0,
+    "explanation": "d/dx sin(2x) = 2 cos(2x), and d/dx[2 cos(2x)] = −4 sin(2x). So d^2/dx^2 sin(2x) = −4 sin(2x): the same function times the constant −4, which is the eigenvalue."
+  },
+  {
+    "id": "pc4-observable-pib-normalization-constant",
+    "type": "numeric",
+    "prompt": "In Example 4.3.1, the ground-state wavefunction of a particle in a box is ψ = √(2/L) sin(πx/L). What is the value of √(2/L), in nm^(−1/2), for a box of length L = 8.0 nm? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "√(2/L) = √(2/(8.0 nm)) = √(0.25 nm^−1) = 0.50 nm^(−1/2). This constant makes ∫ψ^*ψ dx = 1 over the box, so the wavefunction is normalized."
+  },
+  {
+    "id": "pc4-observable-pib-average-position",
+    "type": "numeric",
+    "prompt": "In Example 4.3.1, a particle is in the ground state of a box from x = 0 to x = L, and its probability density is symmetric about the middle of the box. What is ⟨x⟩, in nm, for a box with L = 4.0 nm?",
+    "answer": 2.0,
+    "unit": "nm",
+    "explanation": "⟨x⟩ = L/2 = (4.0 nm)/2 = 2.0 nm. On average, the particle is found in the middle of the box."
+  },
+  {
+    "id": "pc4-observable-pib-average-kinetic",
+    "type": "numeric",
+    "prompt": "In Example 4.3.1, the average kinetic energy of a particle in the ground state of a box is ⟨T⟩ = (ħ^2π^2)/(2mL^2). Use ħ = 1.055 × 10^−34 J·s and π^2 = 9.87. What is ⟨T⟩, in J, for an electron (m = 9.11 × 10^−31 kg) in a box with L = 1.00 × 10^−9 m? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 6.03e-20,
+    "unit": "J",
+    "tolerance": 0.02,
+    "explanation": "The numerator is (1.055 × 10^−34 J·s)^2 × 9.87 = 1.099 × 10^−67 J^2·s^2, and the denominator is 2 × (9.11 × 10^−31 kg) × (1.00 × 10^−9 m)^2 = 1.822 × 10^−48 kg·m^2. So ⟨T⟩ = (1.099 × 10^−67)/(1.822 × 10^−48) J = 6.03 × 10^−20 J."
+  },
+  {
+    "id": "pc4-observable-variance-value",
+    "type": "numeric",
+    "prompt": "Use σ_x^2 = ⟨x^2⟩ − ⟨x⟩^2. For a particle with ⟨x^2⟩ = 13 nm^2 and ⟨x⟩ = 3 nm, what is the variance σ_x^2, in nm^2?",
+    "answer": 4,
+    "explanation": "σ_x^2 = ⟨x^2⟩ − ⟨x⟩^2 = 13 nm^2 − (3 nm)^2 = 13 nm^2 − 9 nm^2 = 4 nm^2."
+  },
+  {
+    "id": "pc4-observable-standard-deviation",
+    "type": "numeric",
+    "prompt": "The standard deviation σ_x is the square root of the variance σ_x^2. If σ_x^2 = 0.09 nm^2, what is σ_x, in nm?",
+    "answer": 0.3,
+    "unit": "nm",
+    "explanation": "σ_x = √(0.09 nm^2) = 0.3 nm. Measurements of x usually fall within a few standard deviations of ⟨x⟩."
+  },
+  {
+    "id": "pc4-observable-coefficient-sum",
+    "type": "numeric",
+    "prompt": "A normalized wavefunction is a combination of two eigenstates, ψ = c_1φ_1 + c_2φ_2. Using Σ_i |c_i|^2 = 1, what is |c_2|^2 if |c_1|^2 = 0.36?",
+    "answer": 0.64,
+    "explanation": "|c_1|^2 + |c_2|^2 = 1, so |c_2|^2 = 1 − 0.36 = 0.64."
+  }
+]

@@ -146,18 +146,63 @@ export const BRANCHES: Branch[] = [
     slug: "physical",
     icon: physicalIcon,
     title: "Physical chemistry",
-    status: "later",
+    status: "in-progress",
     summary:
       "The physics underneath chemistry: why reactions happen, how fast they go, and what electrons are really doing.",
-    sources: [],
+    sources: [
+      {
+        title: "Physical Chemistry (LibreTexts)",
+        license: "CC BY, BY-SA or BY-NC-SA, by section",
+        progress: "All 31 chapters",
+        complete: true,
+      },
+    ],
     alreadyCovered: "Beginning Chemistry chapters 7 and 13 introduce energy, enthalpy, and equilibrium.",
     scope: [
-      "Thermodynamics in depth",
-      "Chemical kinetics",
-      "Quantum chemistry",
-      "The theory behind spectroscopy",
+      "Quantum mechanics and atomic structure",
+      "Chemical bonding and computational chemistry",
+      "Symmetry and spectroscopy",
+      "Statistical mechanics and thermodynamics",
+      "Solutions and chemical equilibrium",
+      "Chemical kinetics and reaction dynamics",
     ],
-    steps: CHOOSE_AND_ANSWER,
+    steps: [
+      { label: "Choose an openly licensed textbook", done: true },
+      { label: "Transcribe it word for word", done: true },
+      { label: "Confirm the license of the sections LibreTexts leaves unmarked" },
+      { label: "Answer questions on quantum chemistry, thermodynamics, and kinetics, with citations" },
+    ],
+    prerequisites: [
+      "Calculus: derivatives, integrals and partial derivatives, and some differential equations",
+      "For the quantum part: complex numbers, vectors and matrices, and introductory physics (energy, momentum, waves)",
+      "General chemistry: the gas laws, enthalpy, equilibrium constants, and rate laws, a step beyond Beginning Chemistry",
+    ],
+    /* One LibreTexts book in three parts that each open on their own, so a
+       student can start at thermodynamics or kinetics (most courses begin
+       with thermodynamics) without first reading the 128 quantum sections. */
+    path: [
+      {
+        book: "physical-chemistry",
+        chapters: [1, 15],
+        label: "Part 1 · Start here",
+        title: "Quantum chemistry and spectroscopy",
+        note: "Chapters 1–15: the quantum theory, atoms and molecules, symmetry, and spectroscopy. The most mathematical part.",
+      },
+      {
+        book: "physical-chemistry",
+        chapters: [16, 26],
+        label: "Part 2 · Or start here",
+        title: "Thermodynamics and statistical mechanics",
+        note: "Chapters 16–26: gases, partition functions, entropy, free energy, phase and chemical equilibrium. Chapters 17 and 18 use energy levels from Part 1.",
+      },
+      {
+        book: "physical-chemistry",
+        chapters: [27, 31],
+        label: "Part 3 · Or start here",
+        title: "Kinetics and reaction dynamics",
+        note: "Chapters 27–31: the kinetic theory of gases, rate laws and mechanisms, reaction dynamics, and surfaces.",
+      },
+    ],
   },
   {
     slug: "analytical",

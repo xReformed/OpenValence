@@ -1,0 +1,595 @@
+[
+  {
+    "id": "pc3-box3d-potential-inside",
+    "type": "multiple-choice",
+    "prompt": "What is the potential energy V(r⃗) of a particle inside the 3D box?",
+    "choices": [
+      {
+        "text": "Zero: no force acts on the particle inside",
+        "correct": true
+      },
+      {
+        "text": "Infinite",
+        "why": "The potential is infinite outside the box, at the walls and beyond. Inside it is zero."
+      },
+      {
+        "text": "It grows with distance from the center of the box",
+        "why": "Nothing pulls the particle toward the center. The potential is the same, zero, everywhere inside."
+      },
+      {
+        "text": "It equals the particle's total energy E",
+        "why": "E is the total energy, which inside the box is all kinetic. The potential inside is zero."
+      }
+    ],
+    "explanation": "Inside the box, V(r⃗) = 0 for 0 ≤ x ≤ L_x, 0 ≤ y ≤ L_y and 0 ≤ z ≤ L_z, so no force acts on the particle. Outside the box the potential is infinite."
+  },
+  {
+    "id": "pc3-box3d-psi-outside",
+    "type": "multiple-choice",
+    "prompt": "What is the wavefunction of the particle outside the 3D box, where the potential energy is infinite?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "Infinite, like the potential",
+        "why": "Where the potential is infinite, the wavefunction is zero: the particle can't be there."
+      },
+      {
+        "text": "The constant √(8/V) everywhere",
+        "why": "√(8/V) is the normalization constant of the wavefunction inside the box. Outside, ψ is zero."
+      },
+      {
+        "text": "The same product of sines, continuing past the walls",
+        "why": "The sine functions apply only inside the box. Outside it, ψ is zero."
+      }
+    ],
+    "explanation": "When the potential energy is infinite, the wavefunction equals zero, so the particle is never found outside the box. Inside, where V = 0, ψ obeys the time-independent Schrödinger equation."
+  },
+  {
+    "id": "pc3-box3d-position-vector",
+    "type": "multiple-choice",
+    "prompt": "For the 3D box, what does r⃗ = x x̂ + y ŷ + z ẑ describe?",
+    "choices": [
+      {
+        "text": "A position inside the box",
+        "correct": true
+      },
+      {
+        "text": "The three side lengths of the box",
+        "why": "The side lengths are the fixed numbers L_x, L_y and L_z. r⃗ is built from the coordinates x, y and z, which can be anywhere in the box."
+      },
+      {
+        "text": "The momentum of the particle",
+        "why": "r⃗ is made of positions along the three axes, not momenta."
+      },
+      {
+        "text": "The force acting on the particle",
+        "why": "No force acts inside the box. r⃗ just points to a position."
+      }
+    ],
+    "explanation": "r⃗ is a vector with components along the three axes of the box, r⃗ = x x̂ + y ŷ + z ẑ, so it picks out a position. The box itself is fixed by its lengths L_x, L_y and L_z."
+  },
+  {
+    "id": "pc3-box3d-three-second-derivatives",
+    "type": "multiple-choice",
+    "prompt": "Why does the Schrödinger equation for a particle in a 3D box have three second-derivative terms, (d^2ψ)/dx^2 + (d^2ψ)/dy^2 + (d^2ψ)/dz^2?",
+    "choices": [
+      {
+        "text": "There is one term for each of the three directions the particle can move in",
+        "correct": true
+      },
+      {
+        "text": "There is one term for each of three particles in the box",
+        "why": "The box holds one particle. The three terms are for its motion along x, y and z."
+      },
+      {
+        "text": "The three terms stand for kinetic, potential and total energy",
+        "why": "All three are kinetic-energy terms, one per direction. The potential is zero inside the box."
+      },
+      {
+        "text": "A 3D box needs the third derivative, written as three terms",
+        "why": "Each term is a second derivative, taken along a different axis."
+      }
+    ],
+    "explanation": "In three dimensions, ∇^2 adds the second derivatives along x, y and z. Each one describes how the wavefunction curves along one axis, which goes with the particle's kinetic energy in that direction."
+  },
+  {
+    "id": "pc3-box3d-separation-product",
+    "type": "multiple-choice",
+    "prompt": "In the separation of variables method for the 3D box, how is ψ(x, y, z) written?",
+    "choices": [
+      {
+        "text": "As a product, X(x)Y(y)Z(z)",
+        "correct": true
+      },
+      {
+        "text": "As a sum, X(x) + Y(y) + Z(z)",
+        "why": "The wavefunction is written as a product. It is the energies ε_x, ε_y and ε_z that add up."
+      },
+      {
+        "text": "As X(x) alone, because y and z don't matter",
+        "why": "The particle moves in all three directions, so all three functions are needed."
+      },
+      {
+        "text": "As a product in which X, Y and Z each depend on x, y and z",
+        "why": "The point of the method is that X depends only on x, Y only on y, and Z only on z."
+      }
+    ],
+    "explanation": "Separation of variables writes ψ(x, y, z) = X(x)Y(y)Z(z), where each function depends on only one coordinate. This turns one hard equation into three simpler ones."
+  },
+  {
+    "id": "pc3-box3d-three-1d-boxes",
+    "type": "multiple-choice",
+    "prompt": "After separating variables, what problem does each of the three equations, for X(x), Y(y) and Z(z), describe?",
+    "choices": [
+      {
+        "text": "A particle in a 1D box, with the same boundary conditions",
+        "correct": true
+      },
+      {
+        "text": "A free particle with no walls",
+        "why": "The walls are still there: each function must be zero at both ends of its own side of the box."
+      },
+      {
+        "text": "A particle in a 2D box",
+        "why": "Each equation has only one variable, so each is a one-dimensional problem."
+      },
+      {
+        "text": "The whole 3D box problem again, just rewritten",
+        "why": "Each equation has only one variable in it, so it is a much simpler problem than the 3D one."
+      }
+    ],
+    "explanation": "The separation reduces the 3D box to three particle-in-a-1D-box problems. So each direction has the familiar 1D solution, for example X(x) = √(2/L_x) sin((n_x πx)/(L_x)) and ε_x = (n_x^2h^2)/(8mL_x^2)."
+  },
+  {
+    "id": "pc3-box3d-total-energy-sum",
+    "type": "multiple-choice",
+    "prompt": "How is the total energy E of a particle in a 3D box related to ε_x, ε_y and ε_z, the energies from the three 1D problems?",
+    "choices": [
+      {
+        "text": "E = ε_x + ε_y + ε_z",
+        "correct": true
+      },
+      {
+        "text": "E = ε_x × ε_y × ε_z",
+        "why": "The wavefunction is a product, but the energies add."
+      },
+      {
+        "text": "E is the average, (ε_x + ε_y + ε_z)/3",
+        "why": "The energies aren't averaged. Each direction adds its own share to the total."
+      },
+      {
+        "text": "E equals the largest of the three",
+        "why": "All three directions contribute. The total is the sum of all three."
+      }
+    ],
+    "explanation": "Each separated term equals its own constant, and the three add up to the total energy: E = ε_x + ε_y + ε_z. That gives E = (h^2/(8m))((n_x^2)/(L_x^2) + (n_y^2)/(L_y^2) + (n_z^2)/(L_z^2))."
+  },
+  {
+    "id": "pc3-box3d-quantum-number-count",
+    "type": "multiple-choice",
+    "prompt": "How many quantum numbers are needed to label a state of a particle in a 3D box?",
+    "choices": [
+      {
+        "text": "Three: n_x, n_y and n_z",
+        "correct": true
+      },
+      {
+        "text": "One, n, as for a 1D box",
+        "why": "A 1D box needs one. The 3D box has one for each direction."
+      },
+      {
+        "text": "Two, as for a 2D box",
+        "why": "A 2D box needs two. The 3D box adds a third, for z."
+      },
+      {
+        "text": "Six, one for each face of the box",
+        "why": "The quantum numbers go with directions, not faces: one each for x, y and z."
+      }
+    ],
+    "explanation": "The 3D box splits into three 1D boxes, and each brings its own quantum number. A state is written (n_x, n_y, n_z), for example (2, 1, 1)."
+  },
+  {
+    "id": "pc3-box3d-allowed-values",
+    "type": "multiple-choice",
+    "prompt": "Which values can the quantum number n_x take for a particle in a 3D box?",
+    "choices": [
+      {
+        "text": "1, 2, 3, … (any positive whole number)",
+        "correct": true
+      },
+      {
+        "text": "0, 1, 2, 3, … (zero is allowed)",
+        "why": "n_x = 0 would make sin((0 × πx)/(L_x)) = 0 everywhere, so ψ would be zero and there would be no particle."
+      },
+      {
+        "text": "Only 1, 2 and 3, one for each axis",
+        "why": "Each quantum number can be any positive whole number, up to infinity."
+      },
+      {
+        "text": "Only values equal to n_y and n_z",
+        "why": "The three quantum numbers are independent; states like (2, 1, 1) have different values."
+      }
+    ],
+    "explanation": "Each quantum number runs over 1, 2, 3, … to ∞, independently of the other two, just as in a 1D box. Zero is not allowed because it would make the wavefunction zero everywhere."
+  },
+  {
+    "id": "pc3-box3d-norm-constant-origin",
+    "type": "multiple-choice",
+    "prompt": "The normalized 3D box wavefunction has the constant √(8/V). Where does it come from?",
+    "choices": [
+      {
+        "text": "It is √(2/L_x) × √(2/L_y) × √(2/L_z)",
+        "correct": true
+      },
+      {
+        "text": "The 8 counts the corners of the box",
+        "why": "That is a coincidence. 8 = 2 × 2 × 2, from multiplying the three 1D constants together."
+      },
+      {
+        "text": "V is the potential energy inside the box",
+        "why": "Here V is the volume of the box, V = L_x × L_y × L_z. The potential inside is zero."
+      },
+      {
+        "text": "It is the 1D constant √(2/L) multiplied by 4",
+        "why": "The three 1D constants are multiplied together: √(2/L_x)√(2/L_y)√(2/L_z) = √(8/(L_x L_y L_z))."
+      }
+    ],
+    "explanation": "ψ = X(x)Y(y)Z(z), and each factor has its own 1D constant. Multiplying them gives √(2/L_x)√(2/L_y)√(2/L_z) = √(8/V), where V = L_x × L_y × L_z is the volume of the box."
+  },
+  {
+    "id": "pc3-box3d-stretch-x",
+    "type": "multiple-choice",
+    "prompt": "In a rectangular box, only the length L_x is made longer. What happens to ε_y and ε_z?",
+    "choices": [
+      {
+        "text": "They stay the same; only ε_x changes, getting smaller",
+        "correct": true
+      },
+      {
+        "text": "All three get smaller",
+        "why": "ε_y depends only on n_y and L_y, and ε_z only on n_z and L_z. Changing L_x doesn't touch them."
+      },
+      {
+        "text": "ε_y and ε_z get larger, so the total energy stays the same",
+        "why": "The total isn't held fixed. ε_x drops, so the total energy drops too."
+      },
+      {
+        "text": "All three get larger",
+        "why": "A longer side lowers the energy for that direction, and leaves the other directions alone."
+      }
+    ],
+    "explanation": "Each direction behaves like its own 1D box: ε_x = (n_x^2h^2)/(8mL_x^2) has L_x^2 in the denominator, so a longer L_x lowers ε_x. ε_y and ε_z don't involve L_x, so they don't change."
+  },
+  {
+    "id": "pc3-box3d-cube-ground-energy",
+    "type": "multiple-choice",
+    "prompt": "What is the ground-state energy of a particle in a cube with sides of length L?",
+    "choices": [
+      {
+        "text": "E_(1,1,1) = (3h^2)/(8mL^2)",
+        "correct": true
+      },
+      {
+        "text": "Zero, with n_x = n_y = n_z = 0",
+        "why": "Quantum numbers start at 1, not 0, so the lowest state is (1, 1, 1), whose energy is not zero."
+      },
+      {
+        "text": "(h^2)/(8mL^2), the same as a 1D box",
+        "why": "Each of the three directions adds (1^2h^2)/(8mL^2), so the total is three times that."
+      },
+      {
+        "text": "(9h^2)/(8mL^2)",
+        "why": "Square each quantum number, then add: 1^2 + 1^2 + 1^2 = 3. The sum (1 + 1 + 1) squared, 9, is not the rule."
+      }
+    ],
+    "explanation": "In a cube, L_x = L_y = L_z = L, and the ground state is (1, 1, 1). Its energy is (h^2/(8mL^2))(1^2 + 1^2 + 1^2) = (3h^2)/(8mL^2)."
+  },
+  {
+    "id": "pc3-box3d-energy-depends-on",
+    "type": "multiple-choice",
+    "prompt": "For a particle in a cube, what does the energy of a state (n_x, n_y, n_z) depend on?",
+    "choices": [
+      {
+        "text": "The sum of the squares, n_x^2 + n_y^2 + n_z^2",
+        "correct": true
+      },
+      {
+        "text": "The plain sum, n_x + n_y + n_z",
+        "why": "(3, 1, 1) and (2, 2, 1) both add to 5, but their squares add to 11 and 9, and their energies differ."
+      },
+      {
+        "text": "The product, n_x × n_y × n_z",
+        "why": "The energy terms are added, so it is the sum of the squares that counts."
+      },
+      {
+        "text": "Only the largest of the three quantum numbers",
+        "why": "All three contribute. (2, 1, 1) and (2, 2, 2) share the same largest number but have different energies."
+      }
+    ],
+    "explanation": "In a cube, E = (h^2/(8mL^2))(n_x^2 + n_y^2 + n_z^2). States with the same sum of squares, n^2 = n_x^2 + n_y^2 + n_z^2, have the same energy."
+  },
+  {
+    "id": "pc3-box3d-state-422-energy",
+    "type": "numeric",
+    "prompt": "In a cube, E = (n_x^2 + n_y^2 + n_z^2) × (h^2)/(8mL^2). In units of (h^2)/(8mL^2), what is the energy of the state (n_x, n_y, n_z) = (4, 2, 2)?",
+    "answer": 24,
+    "tolerance": 0,
+    "explanation": "Add the squares: 4^2 + 2^2 + 2^2 = 16 + 4 + 4 = 24, so E = (24h^2)/(8mL^2)."
+  },
+  {
+    "id": "pc3-box3d-first-excited-ratio",
+    "type": "numeric",
+    "prompt": "In a cube, E = (n_x^2 + n_y^2 + n_z^2) × (h^2)/(8mL^2). How many times larger is the first excited energy, E_(2,1,1), than the ground-state energy, E_(1,1,1)?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "E_(2,1,1)/E_(1,1,1) = (2^2 + 1^2 + 1^2)/(1^2 + 1^2 + 1^2) = 6/3 = 2. Only one of the three quantum numbers goes up, so the energy doubles rather than growing four times as in a 1D box."
+  },
+  {
+    "id": "pc3-box3d-ground-energy-electron",
+    "type": "numeric",
+    "prompt": "An electron is in a cube with sides L = 1.00 × 10^−9 m. Using E_(1,1,1) = (3h^2)/(8mL^2) with h = 6.626 × 10^−34 J·s and m = 9.109 × 10^−31 kg, what is its ground-state energy, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.81e-19,
+    "unit": "J",
+    "tolerance": 0.02,
+    "explanation": "E = (3 × (6.626 × 10^−34 J·s)^2)/(8 × 9.109 × 10^−31 kg × (1.00 × 10^−9 m)^2) = (1.317 × 10^−66)/(7.287 × 10^−48) J = 1.81 × 10^−19 J."
+  },
+  {
+    "id": "pc3-box3d-double-edge",
+    "type": "numeric",
+    "prompt": "The ground-state energy of a particle in a cube is E_(1,1,1) = (3h^2)/(8mL^2). If the edge length L is doubled, by what factor is E_(1,1,1) multiplied? (Give it as a decimal.)",
+    "answer": 0.25,
+    "tolerance": 0,
+    "explanation": "L appears squared in the denominator, so doubling L divides the energy by 2^2 = 4: the factor is 1/4 = 0.25. A bigger box gives lower energy levels."
+  },
+  {
+    "id": "pc3-box3d-norm-constant-value",
+    "type": "numeric",
+    "prompt": "The normalized 3D box wavefunction has the constant √(8/V), where V = L_x × L_y × L_z. For a box with L_x = 1 nm, L_y = 1 nm and L_z = 2 nm, what is √(8/V)? (Give the number; its unit is nm^(−3/2).)",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "V = 1 nm × 1 nm × 2 nm = 2 nm^3, so √(8/V) = √(8/2) = √4 = 2 nm^(−3/2)."
+  },
+  {
+    "id": "pc3-box3d-degenerate-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean to say that an energy level is degenerate?",
+    "choices": [
+      {
+        "text": "Two or more states share that energy",
+        "correct": true
+      },
+      {
+        "text": "The level has zero energy, like a particle at rest",
+        "why": "Degenerate levels in a cube have energies like (6h^2)/(8mL^2), not zero. The word is about how many states share an energy."
+      },
+      {
+        "text": "The particle is losing energy over time",
+        "why": "In quantum mechanics, degenerate doesn't mean running down. It means several states share one energy."
+      },
+      {
+        "text": "Only one state (wavefunction) has that energy",
+        "why": "That describes a non-degenerate level, like the ground state (1, 1, 1)."
+      }
+    ],
+    "explanation": "A level is degenerate when several different wavefunctions (stationary states) have the same energy. The number of such independent wavefunctions is the degree of degeneracy."
+  },
+  {
+    "id": "pc3-box3d-ground-nondegenerate",
+    "type": "multiple-choice",
+    "prompt": "Why is the ground state of a particle in a cube non-degenerate?",
+    "choices": [
+      {
+        "text": "Only (1, 1, 1) gives n_x^2 + n_y^2 + n_z^2 = 3",
+        "correct": true
+      },
+      {
+        "text": "Its energy is zero, so no other state can match it",
+        "why": "The ground-state energy is (3h^2)/(8mL^2), not zero. It is non-degenerate because no other state has that energy."
+      },
+      {
+        "text": "The equal sides of the cube rule out degeneracy",
+        "why": "Equal sides are what make many excited levels degenerate. The ground state is non-degenerate because only (1, 1, 1) gives a sum of squares of 3."
+      },
+      {
+        "text": "The ground state has no wavefunction at all",
+        "why": "The ground state has exactly one wavefunction, ψ_(1,1,1). Having just one is what non-degenerate means."
+      }
+    ],
+    "explanation": "Every quantum number is at least 1, so the smallest sum of squares is 1 + 1 + 1 = 3, and only (1, 1, 1) gives it. One wavefunction with that energy means the level is non-degenerate."
+  },
+  {
+    "id": "pc3-box3d-first-excited-states",
+    "type": "multiple-choice",
+    "prompt": "Which states make up the first excited energy level of a particle in a cube?",
+    "choices": [
+      {
+        "text": "(2, 1, 1), (1, 2, 1) and (1, 1, 2)",
+        "correct": true
+      },
+      {
+        "text": "(2, 2, 2) only",
+        "why": "(2, 2, 2) has n^2 = 12, a higher level. The first excited level has n^2 = 6."
+      },
+      {
+        "text": "(0, 1, 1), (1, 0, 1) and (1, 1, 0)",
+        "why": "Quantum numbers can't be 0; the smallest value is 1."
+      },
+      {
+        "text": "(2, 1, 1) only",
+        "why": "The 2 can be in any of the three places. All three states have n^2 = 6, so all share the energy."
+      }
+    ],
+    "explanation": "Raising any one quantum number to 2 gives n_x^2 + n_y^2 + n_z^2 = 6, and there are three ways to do it. So the first excited level, (6h^2)/(8mL^2), is three-fold (triply) degenerate."
+  },
+  {
+    "id": "pc3-box3d-degeneracy-26",
+    "type": "numeric",
+    "prompt": "The degree of degeneracy of a cube's energy level is the number of different ordered sets (n_x, n_y, n_z) that give its value of n_x^2 + n_y^2 + n_z^2. The only numbers that give 26 are 4, 3 and 1 (16 + 9 + 1), in any order. What is the degree of degeneracy of this level?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Three different numbers can be put in order in 3 × 2 × 1 = 6 ways: (4, 3, 1), (4, 1, 3), (3, 4, 1), (3, 1, 4), (1, 4, 3) and (1, 3, 4). So the level is six-fold degenerate, like the n^2 = 14 level, (3, 2, 1)."
+  },
+  {
+    "id": "pc3-box3d-degeneracy-22",
+    "type": "numeric",
+    "prompt": "The degree of degeneracy of a cube's energy level is the number of different ordered sets (n_x, n_y, n_z) that give its value of n_x^2 + n_y^2 + n_z^2. The only numbers that give 22 are 3, 3 and 2 (9 + 9 + 4), in any order. What is the degree of degeneracy of this level?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "With two numbers the same, only the place of the 2 matters: (3, 3, 2), (3, 2, 3) and (2, 3, 3). So the level is three-fold degenerate, like the n^2 = 9 level, (2, 2, 1)."
+  },
+  {
+    "id": "pc3-box3d-222-nondegenerate",
+    "type": "multiple-choice",
+    "prompt": "In Table 3.9.1, which excited level of a particle in a cube is non-degenerate?",
+    "choices": [
+      {
+        "text": "n_x^2 + n_y^2 + n_z^2 = 12",
+        "correct": true
+      },
+      {
+        "text": "n_x^2 + n_y^2 + n_z^2 = 6",
+        "why": "Three states, (2, 1, 1), (1, 2, 1) and (1, 1, 2), share this level, so it is three-fold degenerate."
+      },
+      {
+        "text": "n_x^2 + n_y^2 + n_z^2 = 9",
+        "why": "Three states, (2, 2, 1), (1, 2, 2) and (2, 1, 2), share this level."
+      },
+      {
+        "text": "n_x^2 + n_y^2 + n_z^2 = 14",
+        "why": "Six states, all the orderings of (3, 2, 1), share this level."
+      }
+    ],
+    "explanation": "With all three quantum numbers equal, swapping them changes nothing, so (2, 2, 2) is the only state with n^2 = 12. Its degeneracy is 1, like the ground state's."
+  },
+  {
+    "id": "pc3-box3d-311-vs-222",
+    "type": "multiple-choice",
+    "prompt": "In a cube, which state has the higher energy, (3, 1, 1) or (2, 2, 2)?",
+    "choices": [
+      {
+        "text": "(2, 2, 2), with n_x^2 + n_y^2 + n_z^2 = 12",
+        "correct": true
+      },
+      {
+        "text": "(3, 1, 1), because it has the largest quantum number",
+        "why": "You must add all three squares: 9 + 1 + 1 = 11 for (3, 1, 1), but 4 + 4 + 4 = 12 for (2, 2, 2)."
+      },
+      {
+        "text": "They have the same energy, so they are degenerate",
+        "why": "Degenerate states have the same sum of squares. Here the sums are 11 and 12, so the energies differ."
+      },
+      {
+        "text": "It depends on the size of the cube",
+        "why": "Both states are in the same cube, so E is proportional to n^2 for both. 12 beats 11 for any L."
+      }
+    ],
+    "explanation": "Energy in a cube goes with n_x^2 + n_y^2 + n_z^2: 11 for (3, 1, 1) and 12 for (2, 2, 2). So (2, 2, 2) is higher, even though its largest quantum number is smaller."
+  },
+  {
+    "id": "pc3-box3d-seventh-level",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 3.9.1, the 6th energy level of a particle in a cube, n_x^2 + n_y^2 + n_z^2 = 14, is 6-fold degenerate. What is the energy of the 7th level?",
+    "choices": [
+      {
+        "text": "(17h^2)/(8mL^2)",
+        "correct": true
+      },
+      {
+        "text": "(15h^2)/(8mL^2)",
+        "why": "No three positive whole numbers have squares that add up to 15, so there is no level there."
+      },
+      {
+        "text": "(16h^2)/(8mL^2)",
+        "why": "16 = 4^2 + 0^2 + 0^2 needs zeros, which aren't allowed, and no other three squares give 16."
+      },
+      {
+        "text": "(18h^2)/(8mL^2)",
+        "why": "18 = 16 + 1 + 1, from (4, 1, 1), is a real level, but it is the 8th. 17 comes first."
+      }
+    ],
+    "explanation": "The next sum of three squares above 14 is 17 = 9 + 4 + 4, from (3, 2, 2), (2, 3, 2) and (2, 2, 3). So the 7th level has energy (17h^2)/(8mL^2) and is three-fold degenerate."
+  },
+  {
+    "id": "pc3-box3d-square-base",
+    "type": "multiple-choice",
+    "prompt": "A box has L_x = L_y, but a different L_z. Which two states must have the same energy?",
+    "choices": [
+      {
+        "text": "(2, 1, 1) and (1, 2, 1)",
+        "correct": true
+      },
+      {
+        "text": "(2, 1, 1) and (1, 1, 2)",
+        "why": "This swaps x and z, but L_x ≠ L_z, so the term with the 2 is divided by a different length squared."
+      },
+      {
+        "text": "(1, 2, 1) and (1, 1, 2)",
+        "why": "This swaps y and z, but L_y ≠ L_z, so the energies differ."
+      },
+      {
+        "text": "(1, 1, 1) and (2, 2, 2)",
+        "why": "Raising every quantum number raises every energy term, so (2, 2, 2) is always higher."
+      }
+    ],
+    "explanation": "With L_x = L_y, swapping n_x and n_y leaves (n_x^2)/(L_x^2) + (n_y^2)/(L_y^2) unchanged. So (2, 1, 1) and (1, 2, 1) are degenerate: a degeneracy due to symmetry."
+  },
+  {
+    "id": "pc3-box3d-two-kinds-degeneracy",
+    "type": "multiple-choice",
+    "prompt": "What are the two general kinds of degeneracy named in Example 3.9.1?",
+    "choices": [
+      {
+        "text": "Degeneracy due to symmetry, and accidental degeneracy",
+        "correct": true
+      },
+      {
+        "text": "Ground-state degeneracy and excited-state degeneracy",
+        "why": "The cube's ground state is not degenerate at all. The two kinds differ in where the degeneracy comes from."
+      },
+      {
+        "text": "Degeneracy in energy and degeneracy in position",
+        "why": "Degeneracy is always about energy. The two kinds are degeneracy from symmetry and accidental degeneracy."
+      },
+      {
+        "text": "Positive and negative degeneracy",
+        "why": "Degeneracy has no sign. It is either due to symmetry or accidental."
+      }
+    ],
+    "explanation": "Equal side lengths make states with swapped quantum numbers share an energy: degeneracy due to symmetry. Accidental degeneracy happens when different terms just happen to add up to the same value."
+  },
+  {
+    "id": "pc3-box3d-accidental",
+    "type": "multiple-choice",
+    "prompt": "According to Example 3.9.1, how can a box with no two sides equal still have degenerate levels?",
+    "choices": [
+      {
+        "text": "Different sets of quantum numbers can happen to give the same total energy",
+        "correct": true
+      },
+      {
+        "text": "It can't: only a box with equal sides has degenerate levels",
+        "why": "Degeneracy needs equal energies, not equal sides. Unequal boxes can have accidental degeneracies."
+      },
+      {
+        "text": "Its ground state is always degenerate, and no other level is",
+        "why": "The ground state (1, 1, 1) is the only state with the lowest energy in any box."
+      },
+      {
+        "text": "Every level is degenerate, because the sides all differ",
+        "why": "Degeneracy happens only at particular combinations that give the same total, not for every level."
+      }
+    ],
+    "explanation": "The energy is (h^2/(8m))((n_x^2)/(L_x^2) + (n_y^2)/(L_y^2) + (n_z^2)/(L_z^2)). Even with unequal sides, two different sets of quantum numbers can give the same total; such degeneracies are called accidental."
+  },
+  {
+    "id": "pc3-box3d-accidental-sum",
+    "type": "numeric",
+    "prompt": "A box has L_y = 2L_x. In units of (h^2)/(8mL_x^2), the x and y parts of the energy add up to n_x^2 + (n_y^2)/4. What is this sum for n_x = 2 and n_y = 2?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "n_x^2 + (n_y^2)/4 = 4 + 4/4 = 5. The state with n_x = 1, n_y = 4 (and the same n_z) gives 1 + 16/4 = 5 too, so the two have the same energy: an accidental degeneracy."
+  }
+]

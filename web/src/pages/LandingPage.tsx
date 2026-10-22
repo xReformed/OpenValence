@@ -92,8 +92,8 @@ export default function LandingPage() {
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-neutral-500">
               Covers all 16 chapters of Beginning Chemistry, the introductory
               chemistry sequence, plus all of OpenStax Organic Chemistry and
-              LibreTexts Inorganic Chemistry, with more subjects and tools on
-              the way.
+              LibreTexts Inorganic and Physical Chemistry, with more subjects
+              and tools on the way.
             </p>
             <PrimaryButton className="mt-9" />
           </Reveal>

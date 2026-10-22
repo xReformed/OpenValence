@@ -1,0 +1,609 @@
+[
+  {
+    "id": "pc3-box-potential-energy",
+    "type": "multiple-choice",
+    "prompt": "In the particle-in-a-box model, what is the potential energy V(x) inside and outside the box?",
+    "choices": [
+      {
+        "text": "Zero inside the box and infinite outside it",
+        "correct": true
+      },
+      {
+        "text": "Infinite inside the box and zero outside it",
+        "why": "That is reversed. The particle moves freely inside, where V = 0; the infinite barriers are outside."
+      },
+      {
+        "text": "Zero everywhere, inside and outside",
+        "why": "With V = 0 everywhere nothing would hold the particle in; that is the free particle. The box has V = ∞ outside."
+      },
+      {
+        "text": "Zero inside and a large but finite value outside",
+        "why": "In this model the barriers are infinitely high: V = ∞ for x < 0 and x > L, so the particle can never get past them."
+      }
+    ],
+    "explanation": "V(x) = 0 for 0 ≤ x ≤ L and V = ∞ outside. A particle found outside would have infinite potential energy, which is impossible, so it is trapped between x = 0 and x = L and ψ(x) = 0 outside the box."
+  },
+  {
+    "id": "pc3-box-continuity-boundary",
+    "type": "multiple-choice",
+    "prompt": "The wavefunction is zero outside the box. Which requirement then gives the boundary conditions ψ(0) = 0 and ψ(L) = 0?",
+    "choices": [
+      {
+        "text": "The wavefunction must be continuous",
+        "correct": true
+      },
+      {
+        "text": "The wavefunction must be normalized",
+        "why": "Normalization fixes the constant A later. It is continuity, joining ψ = 0 outside to ψ inside, that makes ψ zero at the walls."
+      },
+      {
+        "text": "The energy must be positive",
+        "why": "The energy comes out of the boundary conditions; it doesn't set them. They come from ψ being continuous at the walls."
+      },
+      {
+        "text": "The particle must move at a constant speed",
+        "why": "The boundary conditions are about the wavefunction, not the particle's speed: ψ is zero outside and must be continuous."
+      }
+    ],
+    "explanation": "Since ψ(x) = 0 for x < 0 and x > L, and a wavefunction must be continuous, ψ must also be zero right at the walls. So ψ(0) = 0 and ψ(L) = 0."
+  },
+  {
+    "id": "pc3-box-cosine-term-vanishes",
+    "type": "multiple-choice",
+    "prompt": "Inside the box, the general solution is ψ(x) = A sin kx + B cos kx. What does the boundary condition ψ(0) = 0 tell you?",
+    "choices": [
+      {
+        "text": "B = 0",
+        "correct": true
+      },
+      {
+        "text": "A = 0",
+        "why": "At x = 0, sin 0 = 0, so the A term is already zero there and this condition can't fix A. It is B cos 0 = B that must vanish."
+      },
+      {
+        "text": "k = 0",
+        "why": "At x = 0, sin 0 = 0 and cos 0 = 1 whatever k is, so this condition says nothing about k."
+      },
+      {
+        "text": "E = 0",
+        "why": "ψ(0) = A sin 0 + B cos 0 = B, so the condition gives B = 0. The energy is fixed later, by the condition at x = L."
+      }
+    ],
+    "explanation": "ψ(0) = A sin 0 + B cos 0 = A(0) + B(1) = B. Setting this to zero gives B = 0, so only the sine term is left: ψ(x) = A sin kx."
+  },
+  {
+    "id": "pc3-box-kl-equals-n-pi",
+    "type": "multiple-choice",
+    "prompt": "At the far wall, ψ(L) = A sin kL = 0 with A ≠ 0. What must be true of k?",
+    "choices": [
+      {
+        "text": "kL = nπ, with n an integer",
+        "correct": true
+      },
+      {
+        "text": "kL = 0, so k = 0",
+        "why": "k = 0 would make ψ zero everywhere. sin kL is also zero whenever kL is a whole multiple of π."
+      },
+      {
+        "text": "kL = π/2, or an odd multiple of π/2",
+        "why": "sin(π/2) = 1 and sin(3π/2) = −1, not 0. The sine is zero only when its argument is a whole multiple of π."
+      },
+      {
+        "text": "k can take any value",
+        "why": "Only some values of k make sin kL = 0: kL must be a whole multiple of π. That restriction is what quantizes the energy."
+      }
+    ],
+    "explanation": "sin kL = 0 when kL = nπ, with n an integer. So k = nπ/L, and only these values of k, and so of the energy, are allowed."
+  },
+  {
+    "id": "pc3-box-why-not-n-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is n = 0 not allowed for a particle in a box?",
+    "choices": [
+      {
+        "text": "ψ(x) would then be zero everywhere in the box",
+        "correct": true
+      },
+      {
+        "text": "It would give the particle an infinite energy",
+        "why": "E_n is proportional to n^2, so n = 0 would give E = 0, not infinity. The problem is that ψ would vanish everywhere."
+      },
+      {
+        "text": "Quantum numbers must always be odd numbers",
+        "why": "n can be any positive integer, odd or even: 1, 2, 3, …. n = 0 is excluded because ψ would be zero everywhere."
+      },
+      {
+        "text": "It gives the same state as n = 1",
+        "why": "n = 0 doesn't repeat n = 1; it gives no state at all, since sin(0) = 0 makes ψ zero everywhere."
+      }
+    ],
+    "explanation": "If n = 0 then k = 0, and ψ(x) = A sin(0) = 0 for every x. A wavefunction that is zero everywhere means the particle has disappeared, so the lowest allowed state is n = 1."
+  },
+  {
+    "id": "pc3-box-negative-n",
+    "type": "multiple-choice",
+    "prompt": "kL = nπ also holds for negative integers n. Why don't negative values of n give new energy levels?",
+    "choices": [
+      {
+        "text": "The energy depends on n^2, so −n gives the same energy as n",
+        "correct": true
+      },
+      {
+        "text": "A negative n gives a negative energy, which is not allowed",
+        "why": "E_n depends on n^2, and (−n)^2 = n^2, so a negative n gives a positive energy, the same as +n."
+      },
+      {
+        "text": "A negative n puts the particle outside the box",
+        "why": "n labels the state, not the position. A negative n gives the same energy as the positive one, since E depends on n^2."
+      },
+      {
+        "text": "A negative n gives an infinite energy",
+        "why": "(−n)^2 = n^2, so the energy is finite and simply repeats E_n."
+      }
+    ],
+    "explanation": "E_n = (h^2/(8mL^2))n^2 depends only on n^2, and (−n)^2 = n^2. So negative values of n add nothing new, and the allowed levels are labeled n = 1, 2, 3, …."
+  },
+  {
+    "id": "pc3-box-energy-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the allowed energies of a particle of mass m in a one-dimensional box of length L?",
+    "choices": [
+      {
+        "text": "E_n = (n^2h^2)/(8mL^2)",
+        "correct": true
+      },
+      {
+        "text": "E_n = (nh^2)/(8mL^2)",
+        "why": "The energy grows with the square of n, not with n itself: E_n ∝ n^2."
+      },
+      {
+        "text": "E_n = (n^2h^2)/(8mL)",
+        "why": "The box length appears squared: E_n ∝ 1/L^2."
+      },
+      {
+        "text": "E_n = (8mL^2)/(n^2h^2)",
+        "why": "That is upside down. The energy grows with n^2 and falls as m and L grow."
+      }
+    ],
+    "explanation": "E_n = (h^2/(8mL^2))n^2, with n = 1, 2, 3, …. The energy grows as n^2 and falls as the mass and the square of the box length grow."
+  },
+  {
+    "id": "pc3-box-heavier-particle",
+    "type": "multiple-choice",
+    "prompt": "Two particles are in identical boxes, but one has a larger mass. Which one has the higher ground-state energy?",
+    "choices": [
+      {
+        "text": "The lighter particle",
+        "correct": true
+      },
+      {
+        "text": "The heavier particle",
+        "why": "E_1 = h^2/(8mL^2) has m in the denominator, so a larger mass gives a lower energy."
+      },
+      {
+        "text": "Neither: the boxes are the same, so the energies are equal",
+        "why": "The energy depends on the mass as well as on the box length: E_1 = h^2/(8mL^2)."
+      },
+      {
+        "text": "Neither: both have zero ground-state energy",
+        "why": "E_1 is never zero for a particle in a box. This leftover energy is the zero-point energy."
+      }
+    ],
+    "explanation": "E_1 = h^2/(8mL^2) is inversely proportional to the mass m. In the same box, the lighter particle has the higher ground-state energy."
+  },
+  {
+    "id": "pc3-box-bound-quantized",
+    "type": "multiple-choice",
+    "prompt": "Why are the energies of a particle in a box quantized, while a free particle can have any energy?",
+    "choices": [
+      {
+        "text": "The particle in a box is confined to a finite region of space",
+        "correct": true
+      },
+      {
+        "text": "The particle in a box has a larger mass",
+        "why": "Mass doesn't decide it. Discrete energy levels are characteristic of a bound system, one confined to a finite region."
+      },
+      {
+        "text": "A free particle has no wavefunction",
+        "why": "A free particle does have a wavefunction. It is not confined, so its energies form a continuum."
+      },
+      {
+        "text": "The particle in a box has only a few energy levels",
+        "why": "It has infinitely many levels, n = 1, 2, 3, …. They are discrete because the particle is confined."
+      }
+    ],
+    "explanation": "Discrete, quantized energy levels are characteristic of a bound system, one confined to a finite region in space. The free particle is not confined, so its energies form a continuum. Both have infinitely many levels."
+  },
+  {
+    "id": "pc3-box-second-excited-state",
+    "type": "multiple-choice",
+    "prompt": "Which quantum number labels the second excited state of a particle in a box?",
+    "choices": [
+      {
+        "text": "n = 3",
+        "correct": true
+      },
+      {
+        "text": "n = 2",
+        "why": "n = 2 is the first excited state, the first one above the ground state."
+      },
+      {
+        "text": "n = 1",
+        "why": "n = 1 is the ground state, the state of lowest energy."
+      },
+      {
+        "text": "n = 0",
+        "why": "n = 0 is not allowed, because ψ would be zero everywhere. The ground state is n = 1."
+      }
+    ],
+    "explanation": "The ground state is n = 1, the first excited state is n = 2, and the second excited state is n = 3, as in Example 3.5.1. Likewise, n = 20 is the nineteenth excited state."
+  },
+  {
+    "id": "pc3-box-zero-point-energy",
+    "type": "multiple-choice",
+    "prompt": "What is the zero-point energy of a particle in a box?",
+    "choices": [
+      {
+        "text": "The ground-state energy E_1, above the classical minimum of 0",
+        "correct": true
+      },
+      {
+        "text": "The energy of the particle in the n = 0 state",
+        "why": "n = 0 is not allowed. The zero-point energy is the energy of the lowest state, n = 1."
+      },
+      {
+        "text": "Zero, since the particle can rest at the bottom of the box",
+        "why": "That is the classical answer. Quantum mechanically, the lowest energy is E_1 = h^2/(8mL^2), which is greater than zero."
+      },
+      {
+        "text": "The energy needed to remove the particle from the box",
+        "why": "The walls are infinitely high, so that would take infinite energy. The zero-point energy is the energy left in the ground state."
+      }
+    ],
+    "explanation": "The lowest energy is E_1 = h^2/(8mL^2) > 0, while the classical minimum is zero. This residual energy of the ground state, the energy above the classical minimum, is called the zero-point energy."
+  },
+  {
+    "id": "pc3-box-never-at-rest",
+    "type": "multiple-choice",
+    "prompt": "What does E_1 > 0 tell you about a particle in a box?",
+    "choices": [
+      {
+        "text": "Its kinetic energy, and so its momentum, can never be zero",
+        "correct": true
+      },
+      {
+        "text": "It sits still at the center of the box in the ground state",
+        "why": "If it sat still its energy would be zero. Since E_1 > 0, a bound particle always has some kinetic energy."
+      },
+      {
+        "text": "Its potential energy inside the box is greater than zero",
+        "why": "Inside the box V = 0, so all of E_1 is kinetic energy."
+      },
+      {
+        "text": "It can slowly leak out through the walls",
+        "why": "The walls are infinitely high, so the particle never gets out. E_1 > 0 means its kinetic energy can't be zero."
+      }
+    ],
+    "explanation": "Inside the box V = 0, so all of the energy is kinetic. Because E_1 > 0, the kinetic energy, and hence the momentum, of a bound particle cannot be reduced to zero."
+  },
+  {
+    "id": "pc3-box-uncertainty-product",
+    "type": "multiple-choice",
+    "prompt": "For a particle in a box, the uncertainty in position is about the size of the box, Δx ≈ L, and the uncertainty in momentum is Δp ≈ h/L. What is ΔxΔp approximately?",
+    "choices": [
+      {
+        "text": "h",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "Multiply them: L × (h/L) = h. The product can't be zero, in line with the uncertainty principle."
+      },
+      {
+        "text": "h/L^2",
+        "why": "The L's cancel: L × (h/L) = h."
+      },
+      {
+        "text": "Exactly ħ/2",
+        "why": "ħ/2 is the smallest value the uncertainty principle allows. This rough estimate gives L × (h/L) = h, which is larger, as the principle requires."
+      }
+    ],
+    "explanation": "ΔxΔp ≈ L × (h/L) = h. A particle trapped in a box can't have zero momentum, and this estimate is in accord with the Heisenberg uncertainty principle."
+  },
+  {
+    "id": "pc3-box-a-same-for-all-n",
+    "type": "multiple-choice",
+    "prompt": "The particle-in-a-box wavefunctions are ψ_n(x) = A sin((nπx)/L). How does the normalization constant A depend on n?",
+    "choices": [
+      {
+        "text": "It doesn't: A = √(2/L) for every n",
+        "correct": true
+      },
+      {
+        "text": "A gets larger as n gets larger",
+        "why": "Normalizing gives A^2 L/2 = 1 for every n, so A = √(2/L) whatever n is."
+      },
+      {
+        "text": "A gets smaller as n gets larger",
+        "why": "n does not appear in A. The normalization gives A = √(2/L) for all values of n."
+      },
+      {
+        "text": "A = √(2/L) only for the ground state, n = 1",
+        "why": "The same A works for every n, since the average of sin^2 over a whole number of half wavelengths is always 1/2."
+      }
+    ],
+    "explanation": "Normalizing gives A^2 × (L/2) = 1, the same for every n, so A = √(2/L) for all n. The normalized wavefunctions are ψ_n(x) = √(2/L) sin((nπx)/L)."
+  },
+  {
+    "id": "pc3-box-violin-string",
+    "type": "multiple-choice",
+    "prompt": "Which classical system has standing waves identical in form to the particle-in-a-box wavefunctions?",
+    "choices": [
+      {
+        "text": "A vibrating violin string",
+        "correct": true
+      },
+      {
+        "text": "A planet orbiting the Sun",
+        "why": "An orbit is not a standing wave. A string held at both ends has the same sine-shaped patterns as ψ_n."
+      },
+      {
+        "text": "A ball rolling across a table",
+        "why": "A rolling ball has no wave pattern. A string held at both ends has standing waves just like ψ_n."
+      },
+      {
+        "text": "A swinging pendulum",
+        "why": "A pendulum swings as a whole and has no nodes along its length. A string held at both ends has the same patterns as ψ_n."
+      }
+    ],
+    "explanation": "A violin string is held at both ends, just as ψ is zero at both walls of the box. The patterns of its standing waves are identical in form to ψ_n(x) = √(2/L) sin((nπx)/L)."
+  },
+  {
+    "id": "pc3-box-node-definition",
+    "type": "multiple-choice",
+    "prompt": "What is a node of a particle-in-a-box wavefunction?",
+    "choices": [
+      {
+        "text": "A point inside the box, other than the ends, where ψ = 0",
+        "correct": true
+      },
+      {
+        "text": "A point where ψ has its largest value",
+        "why": "That is a peak, or antinode. At a node the wavefunction is zero."
+      },
+      {
+        "text": "Either end of the box, x = 0 or x = L",
+        "why": "The ends are fixed at zero by the boundary conditions and are not counted as nodes."
+      },
+      {
+        "text": "A point where the particle is most likely to be found",
+        "why": "At a node there is exactly zero probability of finding the particle."
+      }
+    ],
+    "explanation": "Nodes are points, other than the two end points, where the wavefunction vanishes. At a node there is exactly zero probability of finding the particle."
+  },
+  {
+    "id": "pc3-box-three-nodes",
+    "type": "multiple-choice",
+    "prompt": "A particle-in-a-box wavefunction has 3 nodes. What is its quantum number?",
+    "choices": [
+      {
+        "text": "n = 4",
+        "correct": true
+      },
+      {
+        "text": "n = 3",
+        "why": "The nth state has n − 1 nodes, so n = 3 has only 2 nodes."
+      },
+      {
+        "text": "n = 2",
+        "why": "n = 2 has n − 1 = 1 node, at the center of the box."
+      },
+      {
+        "text": "n = 1",
+        "why": "n = 1, the ground state, has no nodes: it is a single hump."
+      }
+    ],
+    "explanation": "The nth state has n − 1 nodes. Setting n − 1 = 3 gives n = 4."
+  },
+  {
+    "id": "pc3-box-n2-node-center",
+    "type": "multiple-choice",
+    "prompt": "Where is the node of ψ_2(x) = √(2/L) sin((2πx)/L)?",
+    "choices": [
+      {
+        "text": "At x = L/2",
+        "correct": true
+      },
+      {
+        "text": "At x = 0",
+        "why": "x = 0 is an end point, where every ψ_n is zero; the ends are not counted as nodes."
+      },
+      {
+        "text": "At x = L/4",
+        "why": "At x = L/4, sin(π/2) = 1, so ψ_2 has a maximum there, not a node."
+      },
+      {
+        "text": "Nowhere; ψ_2 has no node",
+        "why": "ψ_2 has n − 1 = 1 node. It is at x = L/2, where sin π = 0."
+      }
+    ],
+    "explanation": "Inside the box, ψ_2 is zero where (2πx)/L = π, that is at x = L/2. So a particle in the n = 2 state is never found exactly at the center of the box."
+  },
+  {
+    "id": "pc3-box-nodes-and-curvature",
+    "type": "multiple-choice",
+    "prompt": "Why does a particle-in-a-box wavefunction with more nodes have a higher energy?",
+    "choices": [
+      {
+        "text": "More nodes mean more curvature, and so more kinetic energy",
+        "correct": true
+      },
+      {
+        "text": "Each node adds potential energy",
+        "why": "Inside the box V = 0, so nodes add no potential energy. The extra energy is kinetic, from the greater curvature."
+      },
+      {
+        "text": "More nodes make the box longer",
+        "why": "The box length L is fixed. More nodes mean more wiggles packed into the same box, so more curvature."
+      },
+      {
+        "text": "It doesn't; the number of nodes is unrelated to energy",
+        "why": "The number of nodes increases with energy, because more wiggles mean more curvature and more kinetic energy."
+      }
+    ],
+    "explanation": "As the number of nodes grows, so do the number and steepness of the wiggles in ψ. The average curvature, given by the second derivative, increases, and the second derivative is proportional to the kinetic energy operator. So the more nodes, the higher the energy."
+  },
+  {
+    "id": "pc3-box-left-half-symmetry",
+    "type": "multiple-choice",
+    "prompt": "Example 3.5.1 and Exercise 3.5.1 both find that the probability of finding the particle in the left half of the box is 1/2, for n = 3 and for n = 1. Why?",
+    "choices": [
+      {
+        "text": "|ψ_n|^2 is symmetric about the center of the box",
+        "correct": true
+      },
+      {
+        "text": "The particle spends all its time at the center",
+        "why": "It doesn't; |ψ|^2 is spread over the whole box. The answer is 1/2 because |ψ_n|^2 is the same on both sides of the center."
+      },
+      {
+        "text": "Only the n = 1 and n = 3 states give 1/2",
+        "why": "It holds for every n, because |ψ_n|^2 is always symmetric about the center of the box."
+      },
+      {
+        "text": "The wavefunction is zero in the right half",
+        "why": "ψ_n is nonzero on both sides. The halves have equal probability because |ψ_n|^2 is symmetric."
+      }
+    ],
+    "explanation": "The probability density |ψ_n|^2 of a particle in a 1D box is always symmetric about the center of the box. So neither side is favored, and each half has a probability of 1/2, for every n."
+  },
+  {
+    "id": "pc3-box-real-imaginary-phase",
+    "type": "multiple-choice",
+    "prompt": "The time-dependent particle-in-a-box wavefunction is Ψ(x, t) = ψ_n(x)e^(−iEt/ħ), with E = E_n. How do its real and imaginary parts behave in time?",
+    "choices": [
+      {
+        "text": "They oscillate out of phase by π/2",
+        "correct": true
+      },
+      {
+        "text": "They oscillate exactly in step",
+        "why": "The real part goes as cos(Et/ħ) and the imaginary part as −sin(Et/ħ), which are out of phase by π/2."
+      },
+      {
+        "text": "The imaginary part is always zero",
+        "why": "e^(−iEt/ħ) = cos(Et/ħ) − i sin(Et/ħ) has an imaginary part, which is generally not zero."
+      },
+      {
+        "text": "Neither part changes in time",
+        "why": "Both parts oscillate, at a rate set by E/ħ, so faster for higher n."
+      }
+    ],
+    "explanation": "Since e^(−iEt/ħ) = cos(Et/ħ) − i sin(Et/ħ), the real part of Ψ goes as cos(Et/ħ) and the imaginary part as −sin(Et/ħ). They oscillate out of phase by π/2, and faster for higher n, since E_n is larger."
+  },
+  {
+    "id": "pc3-box-orthogonal-integral",
+    "type": "multiple-choice",
+    "prompt": "For the normalized particle-in-a-box wavefunctions, what is the value of ∫_0^(L) ψ_2(x)ψ_5(x) dx?",
+    "choices": [
+      {
+        "text": "0",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "why": "The integral equals 1 only when the two wavefunctions are the same (m = n). For two different states it is 0."
+      },
+      {
+        "text": "1/2",
+        "why": "1/2 is the average value of sin^2, which comes up in normalization. Two different eigenfunctions give 0."
+      },
+      {
+        "text": "L/2",
+        "why": "L/2 is the integral of sin^2((nπx)/L) before multiplying by A^2 = 2/L. Two different eigenfunctions give 0."
+      }
+    ],
+    "explanation": "Eigenfunctions with different quantum numbers are orthogonal: ∫_0^(L) ψ_m(x)ψ_n(x) dx = 0 if m ≠ n. The positive and negative areas of the product ψ_2ψ_5 cancel exactly."
+  },
+  {
+    "id": "pc3-box-orthonormal-meaning",
+    "type": "multiple-choice",
+    "prompt": "The particle-in-a-box wavefunctions obey ∫_0^(L) ψ_m(x)ψ_n(x) dx = δ_mn. What does it mean to call such a set of functions orthonormal?",
+    "choices": [
+      {
+        "text": "Each is normalized, and different ones are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Each function is zero everywhere outside the box",
+        "why": "That is true here, but it isn't what orthonormal means. Orthonormal means the integral is 1 for m = n and 0 for m ≠ n."
+      },
+      {
+        "text": "All the functions in the set have the same energy",
+        "why": "The energies differ: E_n ∝ n^2. Orthonormality is about the integrals, 1 for m = n and 0 for m ≠ n."
+      },
+      {
+        "text": "Any two functions in the set integrate to 1",
+        "why": "Only a function with itself gives 1. Two different functions give 0."
+      }
+    ],
+    "explanation": "The Kronecker delta δ_mn is 1 when m = n and 0 when m ≠ n. So each ψ_n is normalized (its integral with itself is 1) and any two different ones are orthogonal (their integral is 0). A set with both properties is called orthonormal."
+  },
+  {
+    "id": "pc3-box-energy-ratio",
+    "type": "numeric",
+    "prompt": "Use E_n = (n^2h^2)/(8mL^2). For the same particle in the same box, what is the ratio E_2/E_1?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "E_2/E_1 = 2^2/1^2 = 4. Everything except n^2 cancels, so the n = 2 level has four times the energy of the ground state."
+  },
+  {
+    "id": "pc3-box-energy-gap",
+    "type": "numeric",
+    "prompt": "For a particle in a box, E_n = n^2E_1. If E_1 = 0.40 eV, how far apart in energy are the n = 1 and n = 2 levels, in eV?",
+    "answer": 1.2,
+    "unit": "eV",
+    "explanation": "E_2 − E_1 = (2^2 − 1^2)E_1 = 3E_1 = 3 × 0.40 eV = 1.2 eV."
+  },
+  {
+    "id": "pc3-box-electron-ground-energy",
+    "type": "numeric",
+    "prompt": "Use E_1 = h^2/(8mL^2) with h = 6.626 × 10^−34 J·s and m = 9.109 × 10^−31 kg. What is the ground-state energy of an electron in a box of length L = 1.00 × 10^−9 m, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 6.02e-20,
+    "unit": "J",
+    "explanation": "E_1 = (6.626 × 10^−34 J·s)^2 ÷ [8 × (9.109 × 10^−31 kg) × (1.00 × 10^−9 m)^2] = (4.390 × 10^−67)/(7.287 × 10^−48) J = 6.02 × 10^−20 J."
+  },
+  {
+    "id": "pc3-box-double-length",
+    "type": "numeric",
+    "prompt": "Use E_n = (n^2h^2)/(8mL^2). If the length L of the box is doubled, by what factor is the ground-state energy multiplied? (Give it as a decimal.)",
+    "answer": 0.25,
+    "tolerance": 0,
+    "explanation": "E is proportional to 1/L^2. Doubling L multiplies E by 1/2^2 = 1/4 = 0.25, so the energy falls to a quarter."
+  },
+  {
+    "id": "pc3-box-nodes-n20",
+    "type": "numeric",
+    "prompt": "How many nodes does the n = 20 wavefunction of a particle in a box have?",
+    "answer": 19,
+    "tolerance": 0,
+    "explanation": "The nth state has n − 1 nodes (not counting the two ends), so ψ_20 has 20 − 1 = 19 nodes."
+  },
+  {
+    "id": "pc3-box-normalization-constant",
+    "type": "numeric",
+    "prompt": "The normalized wavefunctions are ψ_n(x) = √(2/L) sin((nπx)/L). For a box of length L = 8.0 nm, what is the normalization constant √(2/L), in nm^(−1/2)?",
+    "answer": 0.5,
+    "explanation": "√(2/L) = √(2/(8.0 nm)) = √(0.25 nm^−1) = 0.50 nm^(−1/2). The same constant works for every n."
+  },
+  {
+    "id": "pc3-box-minimum-momentum",
+    "type": "numeric",
+    "prompt": "The smallest momentum a particle in a box can have is p_min = h/(2L) (in magnitude). Using h = 6.626 × 10^−34 J·s, what is p_min for a box of length L = 5.0 × 10^−10 m, in kg·m/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 6.626e-25,
+    "unit": "kg·m/s",
+    "explanation": "p_min = h/(2L) = (6.626 × 10^−34 J·s)/(2 × 5.0 × 10^−10 m) = 6.6 × 10^−25 kg·m/s. It comes from setting E_1 = p^2/2m, so it is never zero."
+  }
+]

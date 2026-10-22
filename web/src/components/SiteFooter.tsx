@@ -22,7 +22,7 @@ export default function SiteFooter() {
       >
         Organic Chemistry by OpenStax
       </a>{" "}
-      (CC BY-NC-SA 4.0), and{" "}
+      (CC BY-NC-SA 4.0),{" "}
       <a
         href="https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)"
         className="underline underline-offset-4 hover:text-neutral-900"
@@ -30,6 +30,15 @@ export default function SiteFooter() {
         rel="noreferrer"
       >
         Inorganic Chemistry
+      </a>{" "}
+      and{" "}
+      <a
+        href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)"
+        className="underline underline-offset-4 hover:text-neutral-900"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Physical Chemistry
       </a>{" "}
       (Creative Commons licenses that vary by section), via LibreTexts. OpenValence is an educational tool; check anything
       safety-critical against a primary source.

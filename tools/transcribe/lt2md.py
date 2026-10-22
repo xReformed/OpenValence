@@ -705,7 +705,8 @@ def tex(s):
         # Nor is one with a factor right after it: \sqrt{K}x -> √(K)x, not √Kx (Physical Chemistry 2.2).
         # Several letters are a product too: \sqrt{mk} -> √(mk), not √mk (Physical Chemistry 13.7).
         single = (re.fullmatch(r"\w+", body) and not re.search(r"\d[^\W\d_]|_|[^\W\d_]{2}", body)
-                  and not re.match(r"\s*(?:\w|\\(?![,;: !]|left|right|[bB]ig))", s[end:]))
+                  # nor before a bracket: \sqrt{2}(361.6 pm) -> √(2)(361.6 pm), not √2(…) (Physical Chemistry 31.1)
+                  and not re.match(r"\s*(?:\w|\(|\\left\s*\(|\\(?![,;: !]|left|right|[bB]ig))", s[end:]))
         s = s[:k] + ("√" + body if single else "√(" + body + ")") + s[end:]
     # \overset{100\%}{\rightarrow}: a label printed above an arrow -> "→ (100%)".
     while (k := s.find("\\overset")) >= 0 and "{" in s[k:]:
@@ -1038,6 +1039,10 @@ def inline_math(s):
     # "Scheme \sf{\PageIndex{VII}}\)", or typed "/(", "180/(^{\circ}\)".
     s = re.sub(r"(?<!\\\()\\sf\{\\PageIndex\{(\w+)\}\}\\\)", r"\(\\sf{\\PageIndex{\1}}\)", s)
     s = s.replace("/(^{\\circ}\\)", "\\(^{\\circ}\\)")
+    # … and "figure \(PageIndex{4}\)" (Physical Chemistry 31.3), the backslash of \PageIndex left out;
+    # and of a Greek letter alone in math, "an angle \(theta\)", "r, θ and \(phi\)" (31.3, 30.10).
+    s = re.sub(r"(?<=\\\()\s*PageIndex\{", r"\\PageIndex{", s)
+    s = re.sub(r"\\\(\s*(theta|phi|alpha|beta|gamma|lambda|sigma|omega)\s*\\\)", r"\\(\\\1\\)", s)
     # Source typo: a stray "\[]\" after an image (Inorganic Chemistry 6.3.4).
     s = s.replace("\\[]\\", "")
     # Source typo: "\(\ce{H_2O}\)\)" (Inorganic Chemistry 3.3) — the math closed twice.
@@ -1068,6 +1073,7 @@ def inline_math(s):
     s = s.replace("our \\Gamma to", "our \\(\\Gamma\\) to")
     # A cross-reference in running text to an equation label; show the label. Alone in its
     # math it is text, not math: \(\ref{3-23}\) is (3-23), not (3 − 23) (Physical Chemistry 4.3).
+    s = re.sub(r"\\ref\s*(\w)(?!\w)", r"\\ref{\1}", s)  # \ref2, without braces (Physical Chemistry 31.5)
     s = re.sub(r"\\\(\s*\\ref\{([^{}]*)\}\s*\\\)", r"(\1)", s)
     s = re.sub(r"\\ref\{([^{}]*)\}", r"(\1)", s)
     # Source typo: "the second term in {\reference{3.24}}" (Physical Chemistry 18.2), typed outside math.
@@ -1097,7 +1103,8 @@ FILENAME = re.compile(  # "The Actions of Buffers.png", "2,4-dimethyl-3-heptene 
     # "undefined": an editor's empty alt (Inorganic Chemistry 10.3.2). "ROMtoM'Marcus.png" (12.8.1).
     # "=Coriolis_effect12.gif", "Dye_laser_alignment_intra-cavity_beam_@_589nm.jpg" (Physical Chemistry 13.4, 15.5).
     # "Image:CH431_Image67.gif" (Physical Chemistry 19.7).
-    r"=?\w[\w .,()+'@=:-]*\.(?:jpe?g|png|gif|svg|webp)|[0-9a-f]{32,}|[\w-]{60,}|Unknown(?:-\d+)?|undefined|(?:&quot;|\")+|<div\b.*", re.I)
+    # "hkl{100}.gif" (Physical Chemistry 31.2).
+    r"=?\w[\w .,()+'@=:{}-]*\.(?:jpe?g|png|gif|svg|webp)|[0-9a-f]{32,}|[\w-]{60,}|Unknown(?:-\d+)?|undefined|(?:&quot;|\")+|<div\b.*", re.I)
 # The letters of the Symbol typeface: <font face="Symbol">s</font> is σ.
 SYMBOL_FONT = str.maketrans("abgdezhqiklmnxprstufcywDGQLXPSUFYW­¯®¬",
                             "αβγδεζηθικλμνξπρστυφχψωΔΓΘΛΞΠΣΥΦΨΩ↑↓→←")  # and its arrows (Inorganic Chemistry 7.7.1)
@@ -1357,6 +1364,8 @@ class Page(HTMLParser):
             self.cell = self.cell.rstrip() + (" " if re.search(r"[.,;:!?]$", self.cell.rstrip()) else "; ")
         if tag in BLOCKS or (tag == "table" and self.cell is None):
             self.flush()  # text before a table comes before it: a list item's text (Physical Chemistry 11.2)
+        if tag == "figcaption":
+            self.figcaption_at = len(self.out)  # where a caption set in <p>s starts (see handle_endtag)
         if tag == "sup":
             where = "cell" if self.cell is not None else "buf"
             text = self.cell if where == "cell" else self.buf
@@ -1593,7 +1602,8 @@ class Page(HTMLParser):
                 else:
                     self.buf = text
                 # (see handle_data) "word": V<sub>bar</sub>dP -> V_bar dP, not V_bardP (Physical Chemistry 26.11)
-                self.after_sub = "word" if re.match(r"[A-Za-z]{2}", text[i + 1:]) else True
+                self.after_sub = ("word" if re.match(r"[A-Za-z]{2}", text[i + 1:])
+                                  else "label" if re.fullmatch(r"[A-Z]", text[i + 1:]) else True)
             elif (
                 text is not None and 0 < i <= len(text)
                 # also C<sub>P,ice</sub> (19.10); n<sub>A or B</sub>, V<sub>partial molar</sub> (26.1, 26.11)
@@ -1769,8 +1779,13 @@ class Page(HTMLParser):
             t = re.sub(r"^Figure\s*(\d+(?:\.\d+){2,}[a-zA-Z]?)[\s​﻿]*(?:[:\-–]\s*|\.\s+)?", r"Figure \1: ", t)
             if not t:
                 # A caption set in its own <p> went out as a paragraph; its figure's description
-                # follows it as usual (Physical Chemistry 24.4).
-                if (self.caption_at is None and self.alt and self.out and self.out[-1].startswith("Figure ")
+                # follows it as usual (Physical Chemistry 24.4); a caption in two <p>s, "Figure 31.3.3:
+                # (Top) …" and "Bottom) …", too (Physical Chemistry 31.3).
+                start = getattr(self, "figcaption_at", None)
+                if (self.caption_at is None and self.alt and self.out and start is not None
+                        and start < len(self.out) and self.out[start].startswith("Figure ")
+                        # (not an alt that only repeats the caption, Inorganic Chemistry 13.4.3)
+                        and self.alt.strip() not in " ".join(self.out[start:])
                         and not FILENAME.fullmatch(self.alt) and self.alt.lower() not in ("alt", "image", "img")):
                     self.out[-1] += "\n" + self.alt.replace("\x1c", "\n")
                     self.caption_at = len(self.out) - 1
@@ -1841,6 +1856,10 @@ class Page(HTMLParser):
             d = " " + d
         # … and any letter after a word subscript: V_bar dP (Physical Chemistry 26.11).
         elif getattr(self, "after_sub", False) == "word" and re.match(r"[A-Za-z]", d):
+            d = " " + d
+        # … and a capital after a capital-letter label, the next symbol: H_B H_C, not H_BH_C (Physical
+        # Chemistry 30.10); not in a formula with a variable subscript, La2-xSr_xCuO4.
+        elif getattr(self, "after_sub", False) == "label" and re.match(r"[A-Z]", d):
             d = " " + d
         self.after_sup = self.after_sub = False
         if self.cell is not None:

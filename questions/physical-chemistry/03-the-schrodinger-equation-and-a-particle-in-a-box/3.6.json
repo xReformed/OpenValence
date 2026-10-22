@@ -1,0 +1,597 @@
+[
+  {
+    "id": "pc3-normalized-physical-meaning",
+    "type": "multiple-choice",
+    "prompt": "Why is the physical meaning of a wavefunction found in ψ^*ψ rather than in ψ itself?",
+    "choices": [
+      {
+        "text": "ψ can be complex, and √(−1) has no physical meaning",
+        "correct": true
+      },
+      {
+        "text": "ψ is always negative, so it must be squared first",
+        "why": "ψ can be positive, negative or complex. The point is that a complex ψ can't be a physical quantity, while ψ^*ψ is real."
+      },
+      {
+        "text": "ψ^*ψ is simpler to differentiate and integrate than ψ",
+        "why": "Convenience isn't the reason. ψ can be complex, and only the real product ψ^*ψ = |ψ|^2 has a physical meaning."
+      },
+      {
+        "text": "ψ itself already gives the particle's energy",
+        "why": "ψ is not an energy. It can be complex, so the physical meaning lies in the real quantity |ψ|^2."
+      }
+    ],
+    "explanation": "Wavefunctions can be complex, and √(−1) is not a property of the physical world. The physical meaning is in the product of ψ and its complex conjugate, ψ^*ψ = |ψ|^2, the square of the modulus."
+  },
+  {
+    "id": "pc3-normalized-why-square",
+    "type": "multiple-choice",
+    "prompt": "The probability density uses the square of the wavefunction's modulus, |ψ|^2. Which wave property is this compared to?",
+    "choices": [
+      {
+        "text": "The intensity of a light wave depends on the square of its electric field",
+        "correct": true
+      },
+      {
+        "text": "The speed of a light wave depends on the square of its frequency",
+        "why": "The speed of light doesn't depend on its frequency like that. The comparison is with intensity, which goes as the square of the field."
+      },
+      {
+        "text": "The wavelength of a light wave is the square of its amplitude",
+        "why": "Wavelength is not set by amplitude. The comparison is that light intensity goes as the square of the electric field."
+      },
+      {
+        "text": "The energy of a photon depends on the square of its frequency",
+        "why": "A photon's energy is E = hν, proportional to ν, not ν^2. The comparison is with light intensity."
+      }
+    ],
+    "explanation": "The square is used, rather than the modulus itself, just as the intensity of a light wave depends on the square of its electric field."
+  },
+  {
+    "id": "pc3-normalized-probability-amplitude",
+    "type": "multiple-choice",
+    "prompt": "ψ is called a probability amplitude. Why isn't ψ itself a probability?",
+    "choices": [
+      {
+        "text": "It can be negative or even complex",
+        "correct": true
+      },
+      {
+        "text": "ψ is always larger than 1",
+        "why": "ψ can take many values, including small ones. The point is that ψ can be negative or complex, which no probability can be."
+      },
+      {
+        "text": "ψ is the same at every point",
+        "why": "ψ changes from point to point; that is what makes some places likelier than others. It is |ψ|^2 that gives the likelihood."
+      },
+      {
+        "text": "ψ only describes particles at rest",
+        "why": "ψ describes moving particles too. It isn't a probability because it can be negative or complex; |ψ|^2 is the probability density."
+      }
+    ],
+    "explanation": "ψ can be negative or even complex, so it can't be a probability. Like the amplitude of a light wave, whose square gives the intensity, ψ must be squared: |ψ|^2 is the probability density, and |ψ|^2 dτ the probability."
+  },
+  {
+    "id": "pc3-normalized-density-times-volume",
+    "type": "multiple-choice",
+    "prompt": "What does ψ^*(r)ψ(r) dτ represent?",
+    "choices": [
+      {
+        "text": "The probability of finding the particle in dτ at r",
+        "correct": true
+      },
+      {
+        "text": "The energy of the particle inside the volume dτ at r",
+        "why": "ψ^*ψ dτ is a probability, not an energy."
+      },
+      {
+        "text": "The probability density at the point r",
+        "why": "The density is ψ^*ψ alone. Multiplying it by a volume dτ gives a probability."
+      },
+      {
+        "text": "The probability amplitude at the point r",
+        "why": "The amplitude is ψ itself. ψ^*ψ dτ, a density times a volume, is a probability."
+      }
+    ],
+    "explanation": "In the Born interpretation, ψ^*(r)ψ(r) is the probability density, and multiplying it by a small volume dτ gives the probability of finding the particle in that volume."
+  },
+  {
+    "id": "pc3-normalized-area-under-curve",
+    "type": "multiple-choice",
+    "prompt": "On a graph of |ψ(x)|^2 against x, what does P = ∫_a^(b) |ψ(x)|^2 dx represent?",
+    "choices": [
+      {
+        "text": "The area under the |ψ|^2 curve between x = a and x = b",
+        "correct": true
+      },
+      {
+        "text": "The height of the |ψ|^2 curve at x = b",
+        "why": "A single height is a probability density, not a probability. The probability is the area under the curve from a to b."
+      },
+      {
+        "text": "The slope of the |ψ|^2 curve between a and b",
+        "why": "An integral gives an area under a curve, not a slope."
+      },
+      {
+        "text": "The number of nodes between a and b",
+        "why": "The integral of |ψ|^2 is the probability of finding the particle between a and b, which is an area, not a count of nodes."
+      }
+    ],
+    "explanation": "The probability of finding the particle between x = a and x = b is ∫_a^(b) |ψ(x)|^2 dx, which is just the area under the |ψ|^2 curve between those two points."
+  },
+  {
+    "id": "pc3-normalized-three-d",
+    "type": "multiple-choice",
+    "prompt": "How is a probability calculated from a three-dimensional wavefunction ψ(x, y, z)?",
+    "choices": [
+      {
+        "text": "With a triple integral of |ψ(x, y, z)|^2 over x, y and z",
+        "correct": true
+      },
+      {
+        "text": "With a single integral of |ψ|^2 over x only",
+        "why": "A single integral is for a one-dimensional wavefunction. In three dimensions you integrate over all three coordinates."
+      },
+      {
+        "text": "By adding the values of |ψ|^2 at three points",
+        "why": "A probability is an integral of the density over a region, not a sum of three values."
+      },
+      {
+        "text": "With a triple integral of ψ(x, y, z), not of |ψ|^2",
+        "why": "The probability density is |ψ|^2, not ψ itself, which can be complex."
+      }
+    ],
+    "explanation": "In one dimension the probability is ∫|ψ(x)|^2 dx, in two dimensions a double integral of |ψ(x, y)|^2 dx dy, and in three dimensions a triple integral of |ψ(x, y, z)|^2 dx dy dz."
+  },
+  {
+    "id": "pc3-normalized-rectangle-estimate",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.6.1, the probability of finding an n = 1 particle within L/200 of the center of the box is estimated as a rectangle: the height of |ψ_1|^2 at x = L/2 times the width L/100, giving 0.02. Why is the true probability slightly less?",
+    "choices": [
+      {
+        "text": "|ψ_1|^2 is highest at L/2 and lower elsewhere in the interval",
+        "correct": true
+      },
+      {
+        "text": "The particle can't be found in so small an interval",
+        "why": "It can; the probability is small but not zero. The rectangle overestimates because it uses the peak height across the whole interval."
+      },
+      {
+        "text": "The rectangle leaves out the imaginary part of ψ_1",
+        "why": "ψ_1 here is real. The rectangle overestimates because |ψ_1|^2 is largest at L/2 and smaller on either side."
+      },
+      {
+        "text": "The interval contains a node of ψ_1, where ψ_1 = 0",
+        "why": "ψ_1 has no nodes. The estimate is high because the height used, at L/2, is the largest value of |ψ_1|^2."
+      }
+    ],
+    "explanation": "The rectangle uses the height of |ψ_1|^2 at x = L/2, which is its maximum. Over the rest of the interval the curve is slightly lower, so the true area, the probability, is slightly less than 0.02."
+  },
+  {
+    "id": "pc3-normalized-n2-center",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.6.1, why is the probability of finding an n = 2 particle in a small interval around x = L/2 approximately zero?",
+    "choices": [
+      {
+        "text": "ψ_2 has a node at x = L/2",
+        "correct": true
+      },
+      {
+        "text": "The n = 2 particle has too much energy to be near the center",
+        "why": "Energy doesn't keep it away; the shape of ψ_2 does. sin((2πx)/L) is zero at x = L/2."
+      },
+      {
+        "text": "ψ_2 is not normalized",
+        "why": "ψ_2 = √(2/L) sin((2πx)/L) is normalized. The probability is tiny because ψ_2 = 0 at the center."
+      },
+      {
+        "text": "The n = 2 particle is always found at the walls",
+        "why": "|ψ_2|^2 is zero at the walls too. It is largest at L/4 and 3L/4, and zero at L/2."
+      }
+    ],
+    "explanation": "|ψ_2|^2 = (2/L) sin^2((2πx)/L), which at x = L/2 is (2/L) sin^2 π = 0. A small interval around a node has almost no area under the |ψ|^2 curve, so the probability is about zero."
+  },
+  {
+    "id": "pc3-normalized-complex-conjugate",
+    "type": "multiple-choice",
+    "prompt": "What is the complex conjugate of e^(−iωt), where ω and t are real?",
+    "choices": [
+      {
+        "text": "e^(+iωt)",
+        "correct": true
+      },
+      {
+        "text": "e^(−iωt)",
+        "why": "Taking the complex conjugate changes i to −i, so the sign of the exponent flips."
+      },
+      {
+        "text": "−e^(−iωt)",
+        "why": "Conjugating doesn't put a minus sign in front; it replaces i with −i in the exponent."
+      },
+      {
+        "text": "e^(−ωt)",
+        "why": "Conjugating doesn't remove the i; it changes i to −i, giving e^(+iωt)."
+      }
+    ],
+    "explanation": "Complex conjugation replaces i with −i (i^* = −i), so the conjugate of e^(−iωt) is e^(+iωt)."
+  },
+  {
+    "id": "pc3-normalized-stationary-density",
+    "type": "multiple-choice",
+    "prompt": "Exercise 3.6.1 looks at a wavefunction of the form Ψ(r, t) = ψ(r)e^(−iωt). What does it show about the probability density |Ψ(r, t)|^2?",
+    "choices": [
+      {
+        "text": "It does not change with time",
+        "correct": true
+      },
+      {
+        "text": "It oscillates with frequency ω",
+        "why": "The time factors cancel: e^(+iωt)e^(−iωt) = 1, so |Ψ|^2 = |ψ(r)|^2 has no time dependence."
+      },
+      {
+        "text": "It decays toward zero as time goes on",
+        "why": "There is no decay: the time factors multiply to 1, leaving |ψ(r)|^2."
+      },
+      {
+        "text": "It is zero at every point",
+        "why": "|Ψ|^2 = |ψ(r)|^2, which is nonzero wherever ψ(r) is."
+      }
+    ],
+    "explanation": "|Ψ|^2 = ψ^*(r)e^(+iωt) × ψ(r)e^(−iωt) = |ψ(r)|^2, with no time in it. So the probability density of such a stationary state is time-independent."
+  },
+  {
+    "id": "pc3-normalized-probability-range",
+    "type": "multiple-choice",
+    "prompt": "Which of these numbers could NOT be a probability?",
+    "choices": [
+      {
+        "text": "1.5",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "A probability of 0 is allowed; it means the outcome is impossible."
+      },
+      {
+        "text": "1",
+        "why": "A probability of 1 is allowed; it means the outcome is certain."
+      },
+      {
+        "text": "0.25",
+        "why": "0.25 lies between 0 and 1, so it is a valid probability."
+      }
+    ],
+    "explanation": "A probability is a real number between 0 and 1, inclusive. A probability of 0 means an impossible outcome and 1 a certain one, so 1.5 can't be a probability."
+  },
+  {
+    "id": "pc3-normalized-condition",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the normalization condition for a one-dimensional wavefunction ψ(x, t)?",
+    "choices": [
+      {
+        "text": "∫_(−∞)^(∞) |ψ(x, t)|^2 dx = 1",
+        "correct": true
+      },
+      {
+        "text": "∫_(−∞)^(∞) |ψ(x, t)|^2 dx = 0",
+        "why": "That would mean the particle is nowhere. Since it must be somewhere, the total probability is 1."
+      },
+      {
+        "text": "∫_(−∞)^(∞) ψ(x, t) dx = 1",
+        "why": "Normalization uses |ψ|^2, the probability density, not ψ itself."
+      },
+      {
+        "text": "|ψ(x, t)|^2 = 1 at every x",
+        "why": "Normalization fixes the total area under |ψ|^2, not its value at each point."
+      }
+    ],
+    "explanation": "The integral of |ψ|^2 from −∞ to +∞ is the probability of finding the particle anywhere at all. Setting it equal to 1 is the normalization condition."
+  },
+  {
+    "id": "pc3-normalized-why-one",
+    "type": "multiple-choice",
+    "prompt": "Why must the integral of |ψ|^2 over all x equal exactly 1?",
+    "choices": [
+      {
+        "text": "The particle is certain to be found somewhere",
+        "correct": true
+      },
+      {
+        "text": "ψ itself must equal 1 at every point",
+        "why": "ψ varies from place to place. It is the total area under |ψ|^2 that equals 1."
+      },
+      {
+        "text": "The energy of the particle is always 1",
+        "why": "The integral is a probability, not an energy."
+      },
+      {
+        "text": "Every wavefunction has exactly one node",
+        "why": "Nodes have nothing to do with it, and the ground state has none. The total is 1 because the particle must be found somewhere."
+      }
+    ],
+    "explanation": "A measurement of x must give some value between −∞ and +∞, since the particle has to be located somewhere. A certain outcome has probability 1, so the integral of |ψ|^2 over all x must be 1."
+  },
+  {
+    "id": "pc3-normalized-phase-factor",
+    "type": "multiple-choice",
+    "prompt": "The normalized Gaussian wavefunction in Example 3.6.2 contains a factor e^(iφ), where φ is any real angle. Why doesn't φ affect the normalization?",
+    "choices": [
+      {
+        "text": "|e^(iφ)|^2 = 1, so it drops out of |ψ|^2",
+        "correct": true
+      },
+      {
+        "text": "φ is always zero",
+        "why": "φ is arbitrary; it can be any real angle. It doesn't matter because |e^(iφ)|^2 = 1."
+      },
+      {
+        "text": "e^(iφ) is always a real number",
+        "why": "e^(iφ) is usually complex. Its modulus squared is 1, so it doesn't change |ψ|^2."
+      },
+      {
+        "text": "The phase changes the width σ instead",
+        "why": "The phase has no effect on σ or on |ψ|^2, since |e^(iφ)|^2 = 1."
+      }
+    ],
+    "explanation": "Multiplying ψ by e^(iφ) multiplies |ψ|^2 by e^(−iφ)e^(iφ) = 1. So normalization fixes only the size of the constant, |ψ_0|, and leaves its phase free."
+  },
+  {
+    "id": "pc3-normalized-gaussian-peak",
+    "type": "multiple-choice",
+    "prompt": "For the Gaussian wavepacket ψ(x) = ψ_0 exp(−(x − x_0)^2/(4σ^2)), where is the probability density largest?",
+    "choices": [
+      {
+        "text": "At x = x_0, the center of the packet",
+        "correct": true
+      },
+      {
+        "text": "At x = σ",
+        "why": "σ sets the width of the packet, not its position. The exponent is zero, and |ψ|^2 largest, at x = x_0."
+      },
+      {
+        "text": "At x = 0, whatever the value of x_0",
+        "why": "The packet is centered on x_0, not on 0. The exponential is largest where x − x_0 = 0."
+      },
+      {
+        "text": "Far from x_0, as |x| becomes very large",
+        "why": "The Gaussian falls toward zero far from x_0; that is why it can be normalized."
+      }
+    ],
+    "explanation": "The exponent −(x − x_0)^2/(4σ^2) is never positive and is zero only at x = x_0. So |ψ|^2 peaks at the center, x_0, and falls off on either side over a distance set by σ."
+  },
+  {
+    "id": "pc3-normalized-gaussian-width",
+    "type": "multiple-choice",
+    "prompt": "For the normalized Gaussian of Example 3.6.2, |ψ_0|^2 = 1/((2πσ^2)^(1/2)). If the packet is made wider (larger σ), what happens to |ψ_0|^2?",
+    "choices": [
+      {
+        "text": "It gets smaller",
+        "correct": true
+      },
+      {
+        "text": "It gets larger",
+        "why": "σ is in the denominator, so a larger σ gives a smaller |ψ_0|^2."
+      },
+      {
+        "text": "It stays the same",
+        "why": "|ψ_0|^2 depends on σ. A wider packet spreads the same total probability, 1, over more space, so its peak must be lower."
+      },
+      {
+        "text": "It becomes zero",
+        "why": "|ψ_0|^2 gets smaller, but it stays positive for any finite σ."
+      }
+    ],
+    "explanation": "|ψ_0|^2 = 1/((2πσ^2)^(1/2)) falls as σ grows. The total area under |ψ|^2 must stay 1, so a wider packet has to be lower."
+  },
+  {
+    "id": "pc3-normalized-how-to-normalize",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.6.2, how is the constant ψ_0 of the Gaussian wavepacket found?",
+    "choices": [
+      {
+        "text": "By setting ∫|ψ|^2 dx = 1 and solving for |ψ_0|",
+        "correct": true
+      },
+      {
+        "text": "By setting ψ = 1 at the center, x = x_0",
+        "why": "Normalization fixes the total area under |ψ|^2, not the value of ψ at one point."
+      },
+      {
+        "text": "By setting ψ_0 equal to the width σ",
+        "why": "ψ_0 is whatever makes the integral of |ψ|^2 equal 1; it comes out as |ψ_0|^2 = 1/((2πσ^2)^(1/2)), not σ."
+      },
+      {
+        "text": "By requiring ψ to be zero at x = x_0",
+        "why": "x_0 is the center, where ψ is largest. ψ_0 comes from the normalization condition."
+      }
+    ],
+    "explanation": "Substituting ψ into the normalization condition gives |ψ_0|^2 times an integral that can be looked up in a table. Setting the result equal to 1 and solving gives |ψ_0|^2 = 1/((2πσ^2)^(1/2))."
+  },
+  {
+    "id": "pc3-normalized-stays-normalized",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction obeys the time-dependent Schrödinger equation and is normalized at one instant. What happens to its normalization later?",
+    "choices": [
+      {
+        "text": "It stays normalized at all later times",
+        "correct": true
+      },
+      {
+        "text": "It must be normalized again at every instant",
+        "why": "There's no need: the Schrödinger equation keeps the integral of |ψ|^2 constant, so a normalized ψ stays normalized."
+      },
+      {
+        "text": "The total probability slowly drops below 1",
+        "why": "The section shows that the time derivative of the integral of |ψ|^2 is zero, so the total stays exactly 1."
+      },
+      {
+        "text": "It stays normalized only if the potential is zero",
+        "why": "The potential terms cancel in the proof, so the result holds for any V. It needs only ψ → 0 far away."
+      }
+    ],
+    "explanation": "For any square-integrable wavefunction obeying the time-dependent Schrödinger equation, (d/dt)∫|ψ|^2 dx = 0. So if the normalization condition holds at one instant, it holds at all later times, as the probability interpretation requires."
+  },
+  {
+    "id": "pc3-normalized-vanish-far-away",
+    "type": "multiple-choice",
+    "prompt": "What must a wavefunction do as |x| → ∞ for the integral of |ψ|^2 over all x to converge?",
+    "choices": [
+      {
+        "text": "Go to zero",
+        "correct": true
+      },
+      {
+        "text": "Approach a constant, nonzero value",
+        "why": "Then every stretch of x would add the same amount to the integral, and it would be infinite, as for a plane wave."
+      },
+      {
+        "text": "Grow without limit",
+        "why": "A growing ψ makes the integral even more infinite. ψ must die away to zero."
+      },
+      {
+        "text": "Keep oscillating with the same amplitude",
+        "why": "Then |ψ|^2 never dies away, as for a plane wave, and the integral is infinite."
+      }
+    ],
+    "explanation": "The condition lim_(|x| → ∞) |ψ| = 0 is necessary for the integral of |ψ|^2 over all x to converge. Wavefunctions with a finite integral are called square-integrable."
+  },
+  {
+    "id": "pc3-normalized-square-integrable",
+    "type": "multiple-choice",
+    "prompt": "What does it mean for a wavefunction to be square-integrable?",
+    "choices": [
+      {
+        "text": "The integral of |ψ|^2 over all x is finite",
+        "correct": true
+      },
+      {
+        "text": "ψ is the square of another function",
+        "why": "Square-integrable is about the integral of |ψ|^2, not about ψ being a square."
+      },
+      {
+        "text": "ψ is real everywhere",
+        "why": "Complex wavefunctions can be square-integrable too. What matters is that the integral of |ψ|^2 converges."
+      },
+      {
+        "text": "The integral of ψ over all x is zero",
+        "why": "The condition is on the integral of |ψ|^2 being finite, not on the integral of ψ."
+      }
+    ],
+    "explanation": "A square-integrable wavefunction is one for which ∫_(−∞)^(∞) |ψ|^2 dx converges to a finite number. Only such wavefunctions can be normalized, and once normalized they stay normalized."
+  },
+  {
+    "id": "pc3-normalized-plane-wave",
+    "type": "multiple-choice",
+    "prompt": "Why can't the free-particle plane wave Ψ(x, t) = ψ_0 e^{i(kx − ωt)} be normalized?",
+    "choices": [
+      {
+        "text": "|Ψ|^2 is the same everywhere, so its integral is infinite",
+        "correct": true
+      },
+      {
+        "text": "Ψ is complex, and complex functions can't be normalized",
+        "why": "Complex wavefunctions can be normalized, like the Gaussian with its phase e^(iφ). The problem is that |Ψ|^2 never dies away."
+      },
+      {
+        "text": "A free particle's energies are quantized",
+        "why": "A free particle's energy is not quantized. The plane wave can't be normalized because |Ψ|^2 is the same over all x."
+      },
+      {
+        "text": "|Ψ|^2 is zero everywhere, so there is nothing to integrate",
+        "why": "|Ψ|^2 = |ψ_0|^2, a nonzero constant. Over all x it adds up to infinity, not 1."
+      }
+    ],
+    "explanation": "The complex exponential has modulus 1, so |Ψ|^2 = |ψ_0|^2 at every x. Its integral over all x is infinite for any nonzero ψ_0, so the plane wave is not square-integrable."
+  },
+  {
+    "id": "pc3-normalized-relative-probability",
+    "type": "multiple-choice",
+    "prompt": "For a wavefunction that can't be normalized, such as a plane wave, what can still be said about the probability of finding the particle between a and b?",
+    "choices": [
+      {
+        "text": "It is proportional to ∫_a^(b) |Ψ|^2 dx",
+        "correct": true
+      },
+      {
+        "text": "Nothing at all",
+        "why": "You can still compare regions, because the probability is proportional to the integral of |Ψ|^2 over each one."
+      },
+      {
+        "text": "It is exactly equal to ∫_a^(b) |Ψ|^2 dx",
+        "why": "Without normalization the integral is only proportional to the probability, not equal to it."
+      },
+      {
+        "text": "It is 1 for every region",
+        "why": "Separate regions can't all have probability 1. Only relative probabilities are known."
+      }
+    ],
+    "explanation": "For such wavefunctions the best we can say is P ∝ ∫_a^(b) |Ψ|^2 dx. You can compare how likely different regions are, but not give absolute probabilities."
+  },
+  {
+    "id": "pc3-normalized-conjugate-of-product",
+    "type": "multiple-choice",
+    "prompt": "What is the complex conjugate of a product, (AB)^*?",
+    "choices": [
+      {
+        "text": "A^*B^*",
+        "correct": true
+      },
+      {
+        "text": "AB",
+        "why": "Conjugation changes every i to −i, so both factors change: (AB)^* = A^*B^*."
+      },
+      {
+        "text": "−AB",
+        "why": "Conjugation is not multiplying by −1; it conjugates each factor, giving A^*B^*."
+      },
+      {
+        "text": "A^*B",
+        "why": "Both factors must be conjugated, not just the first: (AB)^* = A^*B^*."
+      }
+    ],
+    "explanation": "(AB)^* = A^*B^*. Together with A^** = A and i^* = −i, this rule lets you take the conjugate of a wavefunction one factor at a time, as in the proof that normalization lasts."
+  },
+  {
+    "id": "pc3-normalized-density-psi2",
+    "type": "numeric",
+    "prompt": "For ψ_2(x) = √(2/L) sin((2πx)/L) in a box of length L = 5.0 nm, what is the probability density |ψ_2|^2 at x = L/4, in nm^−1? (Use sin(π/2) = 1.)",
+    "answer": 0.4,
+    "explanation": "At x = L/4, (2πx)/L = π/2, so |ψ_2|^2 = (2/L) sin^2(π/2) = (2/(5.0 nm)) × 1 = 0.40 nm^−1."
+  },
+  {
+    "id": "pc3-normalized-small-interval",
+    "type": "numeric",
+    "prompt": "As in Example 3.6.1, estimate the probability of finding an n = 1 particle in a box within a narrow interval of width L/50 centered on x = L/2. Use P ≈ |ψ_1(L/2)|^2 × Δx, where |ψ_1(L/2)|^2 = 2/L. (Give it as a decimal.)",
+    "answer": 0.04,
+    "explanation": "P ≈ (2/L) × (L/50) = 2/50 = 0.04. The L cancels. The true value is slightly less, because |ψ_1|^2 is at its peak at L/2."
+  },
+  {
+    "id": "pc3-normalized-find-constant",
+    "type": "numeric",
+    "prompt": "A wavefunction is ψ(x) = N f(x), where N is a positive constant and ∫_(−∞)^(∞) |f(x)|^2 dx = 4. Since ∫|ψ|^2 dx = N^2 × 4, what value of N normalizes ψ? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "Normalization needs N^2 × 4 = 1, so N^2 = 1/4 and N = 1/2 = 0.5."
+  },
+  {
+    "id": "pc3-normalized-scaled-integral",
+    "type": "numeric",
+    "prompt": "A wavefunction f(x) is normalized. A constant factor c comes out of ∫|cf|^2 dx as |c|^2. What is ∫_(−∞)^(∞) |g(x)|^2 dx for g(x) = 3f(x)?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "∫|3f|^2 dx = 3^2 ∫|f|^2 dx = 9 × 1 = 9. So g is not normalized; dividing it by 3 would normalize it again."
+  },
+  {
+    "id": "pc3-normalized-outside-region",
+    "type": "numeric",
+    "prompt": "A particle's wavefunction is normalized, and the probability of finding the particle in region A is 0.30. What is the probability of finding it somewhere outside region A? (Give it as a decimal.)",
+    "answer": 0.7,
+    "explanation": "The total probability over all space is 1, because the wavefunction is normalized. So P(outside A) = 1 − 0.30 = 0.70."
+  },
+  {
+    "id": "pc3-normalized-complex-modulus",
+    "type": "numeric",
+    "prompt": "At a certain point a wavefunction has the complex value ψ = (0.3 + 0.4i) nm^(−1/2). Using |a + bi|^2 = a^2 + b^2, what is the probability density |ψ|^2 = ψ^*ψ there, in nm^−1? (Give it as a decimal.)",
+    "answer": 0.25,
+    "explanation": "|ψ|^2 = ψ^*ψ = (0.3 − 0.4i)(0.3 + 0.4i) = 0.3^2 + 0.4^2 = 0.09 + 0.16 = 0.25 nm^−1. The result is real, as a probability density must be."
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pc2-membrane-two-terms",
+    "type": "multiple-choice",
+    "prompt": "The wave equation for a drumhead has two second-derivative terms on the left, ∂^2u/∂x^2 + ∂^2u/∂y^2. Why two?",
+    "choices": [
+      {
+        "text": "The sheet can curve in both the x- and y-directions, and each kind of curving pulls on it",
+        "correct": true
+      },
+      {
+        "text": "Because the drumhead moves in two directions at once, x and y",
+        "why": "The sheet moves up and down, in z. The two terms are for its curving along x and along y."
+      },
+      {
+        "text": "Because two waves always travel together on a drum",
+        "why": "The two terms describe curvature in two directions, not two waves."
+      },
+      {
+        "text": "Because time counts as a second space direction",
+        "why": "Time is on the right side of the equation. The two left terms are the x and y curvatures."
+      }
+    ],
+    "explanation": "A small patch of the sheet, like a patch on a balloon, can curve in two directions. Tension pulls unevenly when it curves along x and when it curves along y, so the equation has one term for each."
+  },
+  {
+    "id": "pc2-laplacian",
+    "type": "multiple-choice",
+    "prompt": "What is ∇^2, the shorthand used in the three-dimensional wave equation?",
+    "choices": [
+      {
+        "text": "The sum of the three second derivatives: ∂^2/∂x^2 + ∂^2/∂y^2 + ∂^2/∂z^2",
+        "correct": true
+      },
+      {
+        "text": "The product of the three second derivatives",
+        "why": "The terms are added, not multiplied."
+      },
+      {
+        "text": "The second derivative with respect to time",
+        "why": "The time derivative stays on the right side: (1/v^2)∂^2u/∂t^2."
+      },
+      {
+        "text": "Only the second derivative along x",
+        "why": "∇^2 includes y and z as well."
+      }
+    ],
+    "explanation": "∇^2 = ∂^2/∂x^2 + ∂^2/∂y^2 + ∂^2/∂z^2 adds the second derivatives in all three directions, so the 3D wave equation becomes ∇^2u = (1/v^2)∂^2u/∂t^2."
+  },
+  {
+    "id": "pc2-2d-superposition",
+    "type": "multiple-choice",
+    "prompt": "Two ripples meet on the surface of a pond. Does the Principle of Superposition still hold?",
+    "choices": [
+      {
+        "text": "Yes: the 2D wave equation is still linear, so the displacements just add",
+        "correct": true
+      },
+      {
+        "text": "No: superposition only works in one dimension",
+        "why": "The 2D and 3D wave equations are linear too, so superposition holds."
+      },
+      {
+        "text": "No: the two ripples bounce off each other",
+        "why": "Waves pass through each other. Where they overlap, the displacements add."
+      },
+      {
+        "text": "Only if the ripples have exactly the same size",
+        "why": "Superposition works for any two solutions, whatever their sizes."
+      }
+    ],
+    "explanation": "The 2D (and 3D) wave equation is linear, just like the 1D one. When two waves meet, the result at any point is the sum of the displacements from each wave."
+  },
+  {
+    "id": "pc2-wavevector-length",
+    "type": "numeric",
+    "prompt": "A wave in three dimensions has |k| = √(kx^2 + ky^2 + kz^2). If kx = 3 m^−1, ky = 4 m^−1 and kz = 0, what is |k|, in m^−1?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "|k| = √(3^2 + 4^2 + 0^2) m^−1 = √(9 + 16) m^−1 = √25 m^−1 = 5 m^−1."
+  },
+  {
+    "id": "pc2-rectangular-quantum-numbers",
+    "type": "multiple-choice",
+    "prompt": "How many quantum numbers label the vibrations of a rectangular membrane?",
+    "choices": [
+      {
+        "text": "Two, nx and ny, one for each direction",
+        "correct": true
+      },
+      {
+        "text": "One, n, as for a string",
+        "why": "A string is one-dimensional and needs one. A membrane is two-dimensional and needs one per direction."
+      },
+      {
+        "text": "Three, nx, ny and nz",
+        "why": "The membrane is flat, in x and y, so there are two."
+      },
+      {
+        "text": "None; any vibration is allowed",
+        "why": "The fixed edges allow only certain vibrations, labeled by nx and ny."
+      }
+    ],
+    "explanation": "The rectangular membrane's solutions are sin(nxπx/a) sin(nyπy/b) times a time part. Each direction has its own whole-number quantum number, nx and ny."
+  },
+  {
+    "id": "pc2-rect-11-nodes",
+    "type": "multiple-choice",
+    "prompt": "How many nodes (apart from the fixed edges) does the (nx = 1, ny = 1) mode of a rectangular membrane have?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "One",
+        "why": "The (2, 1) mode has one nodal line. In (1, 1) the whole membrane moves together."
+      },
+      {
+        "text": "Two",
+        "why": "The (2, 2) mode has two nodal lines. (1, 1) has none."
+      },
+      {
+        "text": "Four",
+        "why": "In (1, 1) every point except the edges moves."
+      }
+    ],
+    "explanation": "In the (1, 1) mode the whole membrane bulges up and down together, so no point inside the edges stays still. It has zero nodes, like the fundamental of a string."
+  },
+  {
+    "id": "pc2-rect-21-node",
+    "type": "multiple-choice",
+    "prompt": "What does the node of the (nx = 2, ny = 1) mode of a rectangular membrane look like?",
+    "choices": [
+      {
+        "text": "A straight line across the membrane at half its length in x",
+        "correct": true
+      },
+      {
+        "text": "A single point at the center",
+        "why": "In two dimensions, nodes are lines (or curves), not single points. Here it runs across the whole membrane."
+      },
+      {
+        "text": "A line at half its width in y",
+        "why": "The 2 is in the x quantum number, so the nodal line is at half the length in x. A line at half the width in y belongs to (1, 2)."
+      },
+      {
+        "text": "A circle around the center",
+        "why": "Circular nodes appear in a circular membrane. A rectangular membrane has straight nodal lines."
+      }
+    ],
+    "explanation": "nx = 2 means sin(2πx/a), which is zero at x = a/2. So there is one nodal line at half the length in x, running the full width in y."
+  },
+  {
+    "id": "pc2-rect-22-nodes",
+    "type": "numeric",
+    "prompt": "How many nodal lines (apart from the fixed edges) does the (nx = 2, ny = 2) mode of a rectangular membrane have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "nx = 2 gives a nodal line at half the length in x, and ny = 2 gives one at half the width in y: 2 lines in all, crossing at the center."
+  },
+  {
+    "id": "pc2-circular-nodes",
+    "type": "multiple-choice",
+    "prompt": "On a vibrating circular drum, what is the difference between a radial node and an angular node?",
+    "choices": [
+      {
+        "text": "A radial node is a circle at a fixed radius; an angular node is a straight line (a diameter) at a fixed angle",
+        "correct": true
+      },
+      {
+        "text": "A radial node is a straight line; an angular node is a circle",
+        "why": "It is the other way round: radial nodes sit at a fixed radius, so they are circles."
+      },
+      {
+        "text": "They are the same thing with different names",
+        "why": "They have different shapes: circles for radial nodes, straight lines for angular nodes."
+      },
+      {
+        "text": "A radial node moves around; an angular node stays still",
+        "why": "Both kinds of node stay still; that is what makes them nodes."
+      }
+    ],
+    "explanation": "A circular membrane is described in polar coordinates (r, θ). A radial node is at a fixed r, so it is a circle. An angular node is at a fixed θ, so it is a straight line through the center."
+  },
+  {
+    "id": "pc2-membrane-motion-direction",
+    "type": "multiple-choice",
+    "prompt": "A drumhead lies flat in the (x, y) plane when at rest. In which direction does it move when it vibrates?",
+    "choices": [
+      {
+        "text": "Up and down, in the z-direction",
+        "correct": true
+      },
+      {
+        "text": "Back and forth along the x-direction",
+        "why": "The sheet is stretched in the (x, y) plane; its vibration carries it out of that plane, up and down along z."
+      },
+      {
+        "text": "Around in circles within the (x, y) plane",
+        "why": "The displacement u(x, y, t) measures how far each point moves up or down in z, not motion within the plane."
+      },
+      {
+        "text": "It doesn't move; only the air above it vibrates",
+        "why": "The sheet itself moves: u(x, y, t) gives its displacement in z at each point and time."
+      }
+    ],
+    "explanation": "With the rest position in the (x, y) plane, the drumhead vibrates up and down in z. Its shape at any instant is the function u(x, y, t), the z-displacement at each point (x, y)."
+  },
+  {
+    "id": "pc2-membrane-newton-law",
+    "type": "multiple-choice",
+    "prompt": "To find the wave equation for a drumhead, which law is applied to a small square of the elastic sheet?",
+    "choices": [
+      {
+        "text": "Newton's second law, relating net force to acceleration",
+        "correct": true
+      },
+      {
+        "text": "Newton's third law, because tensions on opposite sides are equal and opposite",
+        "why": "On a curved patch the tensions are slightly out of line and do not cancel. Newton's second law turns that net force into an acceleration."
+      },
+      {
+        "text": "Coulomb's law, for the charges in the sheet",
+        "why": "The forces here are tension forces in the stretched sheet, not electric forces between charges."
+      },
+      {
+        "text": "Hooke's law alone, which gives how far the sheet stretches",
+        "why": "Finding the motion needs the net force on the patch set equal to mass times acceleration, which is Newton's second law."
+      }
+    ],
+    "explanation": "Just as for the string, you take one small piece, add up the tension forces pulling around its edge, and apply Newton's second law (F = ma). The net force comes from the sheet curving, so the curvature terms set the acceleration."
+  },
+  {
+    "id": "pc2-membrane-curvature-term",
+    "type": "multiple-choice",
+    "prompt": "In the wave equation, what does the term (∂^2 u)/(∂x^2) measure about the string or sheet?",
+    "choices": [
+      {
+        "text": "How sharply it curves along x, the rate of change of its slope",
+        "correct": true
+      },
+      {
+        "text": "Its slope along x",
+        "why": "The slope is the first derivative, ∂u/∂x. The second derivative is the rate of change of the slope: the curvature."
+      },
+      {
+        "text": "How fast its displacement changes in time",
+        "why": "That would be a time derivative, ∂u/∂t. The x-derivative describes the shape along x."
+      },
+      {
+        "text": "The speed v of the wave",
+        "why": "v appears on the right side, in 1/v^2. The left-side term measures the curvature of the string or sheet."
+      }
+    ],
+    "explanation": "(∂^2 u)/(∂x^2) is the rate of change of slope, which measures curvature. A curved bit of string or sheet feels tensions that don't cancel, so the curvature sets the net force and the acceleration."
+  },
+  {
+    "id": "pc2-membrane-one-dim-spread",
+    "type": "multiple-choice",
+    "prompt": "Why is the way a wave spreads simple in one dimension but far from obvious in two or three?",
+    "choices": [
+      {
+        "text": "On a line it can only go along the line; in more dimensions it can spread many ways",
+        "correct": true
+      },
+      {
+        "text": "Waves in one dimension don't satisfy any wave equation at all",
+        "why": "They do: the string obeys a one-dimensional wave equation. The difference is how many directions the wave can take."
+      },
+      {
+        "text": "Superposition fails as soon as there is more than one dimension",
+        "why": "The two- and three-dimensional wave equations are still linear, so superposition still holds."
+      },
+      {
+        "text": "In two or three dimensions a wave stays where it started",
+        "why": "Waves in higher dimensions do travel, as ripples on a pond show. What isn't fixed is which way they spread."
+      }
+    ],
+    "explanation": "A one-dimensional wave has no choice: it travels along the line (or is partly reflected back). In two or three dimensions a disturbance starting in one spot can spread out in many directions, as ripples from a pebble do."
+  },
+  {
+    "id": "pc2-membrane-pebble-ripples",
+    "type": "multiple-choice",
+    "prompt": "What does dropping a pebble into still water produce?",
+    "choices": [
+      {
+        "text": "A circle of ripples moving outward from where it fell",
+        "correct": true
+      },
+      {
+        "text": "A single straight wave moving off in one direction",
+        "why": "The pebble disturbs one spot, and the disturbance spreads out in every direction over the surface, making circles."
+      },
+      {
+        "text": "A standing wave that stays in one place",
+        "why": "The ripples travel: they move outward from the point where the pebble fell."
+      },
+      {
+        "text": "A rise of the whole surface at the same moment",
+        "why": "The disturbance starts at one spot and spreads; it doesn't reach the whole pond at once."
+      }
+    ],
+    "explanation": "This is a simple example of a wave in two dimensions: the disturbance at one spot spreads out as an outward-moving circle of ripples."
+  },
+  {
+    "id": "pc2-membrane-k-direction",
+    "type": "multiple-choice",
+    "prompt": "In the three-dimensional harmonic wave u = A sin(k_x x + k_y y + k_z z − ωt), what does the vector k⃗ = (k_x, k_y, k_z) tell you?",
+    "choices": [
+      {
+        "text": "The direction in which the wave is moving",
+        "correct": true
+      },
+      {
+        "text": "How large the wave's displacement is",
+        "why": "The size of the displacement is set by the amplitude A, not by k⃗."
+      },
+      {
+        "text": "How often the wave repeats in time",
+        "why": "That is set by ω. k⃗ describes the wave in space: it points the way the wave travels."
+      },
+      {
+        "text": "The speed of the wave",
+        "why": "The speed is v. k⃗ points in the direction of motion, and its length |k| is linked to ω by ω = v|k|."
+      }
+    ],
+    "explanation": "k⃗ is a vector pointing in the direction the wave travels. Its length |k| = √(k_x^2 + k_y^2 + k_z^2) is linked to the angular frequency by ω = v|k|."
+  },
+  {
+    "id": "pc2-membrane-light-plane-wave",
+    "type": "multiple-choice",
+    "prompt": "Which familiar waves have the three-dimensional harmonic form A sin(k_x x + k_y y + k_z z − ωt)?",
+    "choices": [
+      {
+        "text": "The electric and magnetic fields of light and radio waves",
+        "correct": true
+      },
+      {
+        "text": "Only the vibrations of a string held at both ends",
+        "why": "A string is one-dimensional, and its held ends give standing waves. The 3D traveling form fits light and radio waves."
+      },
+      {
+        "text": "The modes of a drumhead fixed at its edge",
+        "why": "A drumhead's fixed edge gives standing modes, sine factors in x and y times a time part, not a traveling plane wave."
+      },
+      {
+        "text": "No real waves; it is only a mathematical solution",
+        "why": "There is a real example: the electric and magnetic fields in a radio wave or a light wave have this form."
+      }
+    ],
+    "explanation": "The electric and magnetic fields in a radio wave or a light wave have just this plane-wave form. Close to the source, a very similar expression for outgoing spheres of waves is used instead."
+  },
+  {
+    "id": "pc2-membrane-near-source",
+    "type": "multiple-choice",
+    "prompt": "Light waves can be described as plane waves, A sin(k_x x + k_y y + k_z z − ωt). Close to the source, what shape do they take instead?",
+    "choices": [
+      {
+        "text": "Outgoing spheres of waves",
+        "correct": true
+      },
+      {
+        "text": "Flat planes, exactly as far away",
+        "why": "Near the source the waves are spreading out from it, so they are better described as outgoing spheres."
+      },
+      {
+        "text": "Straight lines along one axis only",
+        "why": "Light spreads out in three dimensions. Close to the source the waves are spheres moving outward."
+      },
+      {
+        "text": "Standing waves that do not move",
+        "why": "Light travels outward from its source; near the source it forms outgoing spherical waves."
+      }
+    ],
+    "explanation": "The electric and magnetic fields of light have the plane-wave form away from the source. Closer to the source, a very similar expression for outgoing spheres of waves describes them better."
+  },
+  {
+    "id": "pc2-membrane-rect-a-b",
+    "type": "multiple-choice",
+    "prompt": "A rectangular membrane vibrates as u(x, y, t) = A_nm cos(ω_nm t + φ_nm) sin(n_x πx/a) sin(n_y πy/b). What are a and b?",
+    "choices": [
+      {
+        "text": "The length and width of the membrane",
+        "correct": true
+      },
+      {
+        "text": "The amplitudes of the motion in x and y",
+        "why": "The size of the motion is set by A_nm. a and b are the membrane's dimensions."
+      },
+      {
+        "text": "The two quantum numbers of the mode",
+        "why": "The quantum numbers are n_x and n_y. a and b are the length and the width."
+      },
+      {
+        "text": "The wave speeds along x and along y",
+        "why": "No speed appears in the sine factors. a is the membrane's length and b is its width."
+      }
+    ],
+    "explanation": "In this solution, a is the length of the rectangle and b is its width. The factors sin(n_x πx/a) and sin(n_y πy/b) are zero at x = 0 and a and at y = 0 and b, so the edges stay fixed."
+  },
+  {
+    "id": "pc2-membrane-rect-method",
+    "type": "multiple-choice",
+    "prompt": "How is the motion u(x, y, t) of a vibrating rectangular membrane found?",
+    "choices": [
+      {
+        "text": "By separation of variables and boundary conditions, as for the string",
+        "correct": true
+      },
+      {
+        "text": "By using one traveling wave, A sin(kx − ωt), with no boundary conditions",
+        "why": "A membrane fixed at its edges needs boundary conditions; they give the sine factors and the quantum numbers n_x and n_y."
+      },
+      {
+        "text": "By solving only the time part, since the edges don't matter",
+        "why": "The fixed edges matter: they decide which spatial patterns, sin(n_x πx/a) sin(n_y πy/b), are allowed."
+      },
+      {
+        "text": "It can't be solved; only a circular membrane has solutions",
+        "why": "The rectangular membrane has a simple solution; it is the circular one whose mathematics is more complicated."
+      }
+    ],
+    "explanation": "The rectangular membrane is solved just like the string: separate the variables, then apply the boundary conditions at the fixed edges. The result is a time part times two sine factors, with one quantum number for each direction."
+  },
+  {
+    "id": "pc2-membrane-node-shape",
+    "type": "multiple-choice",
+    "prompt": "On a string, a node is a point that stays still. What can a node be on a vibrating two-dimensional membrane?",
+    "choices": [
+      {
+        "text": "A whole line or circle of points that stay still",
+        "correct": true
+      },
+      {
+        "text": "Only a single point, just as on a string",
+        "why": "On a membrane the still points join up: a rectangular membrane has nodal lines, and a circular one has nodal circles and diameters."
+      },
+      {
+        "text": "The part of the membrane that moves the most",
+        "why": "A node is where the membrane does not move at all, the opposite of the part that moves the most."
+      },
+      {
+        "text": "Nothing; membranes have no nodes",
+        "why": "Membranes do have nodes, for example the line at half the length in the (n_x = 2, n_y = 1) mode of a rectangle."
+      }
+    ],
+    "explanation": "A node is a point or line that does not move while the rest of the structure vibrates. On a membrane the nodes are lines: straight lines on a rectangle, and circles or diameters on a circular drum."
+  },
+  {
+    "id": "pc2-membrane-rect-12-node",
+    "type": "multiple-choice",
+    "prompt": "Where is the node of the (n_x = 1, n_y = 2) mode of a rectangular membrane?",
+    "choices": [
+      {
+        "text": "A line at half the width in y, running the full length in x",
+        "correct": true
+      },
+      {
+        "text": "A line at half the length in x, running the full width in y",
+        "why": "That is the node of the (n_x = 2, n_y = 1) mode. Here the 2 is in n_y, so the line sits at y = b/2."
+      },
+      {
+        "text": "A single point at the center of the membrane",
+        "why": "sin(2πy/b) is zero along the whole line y = b/2, not just at one point."
+      },
+      {
+        "text": "Two lines crossing at the center",
+        "why": "Crossing lines need both quantum numbers to be 2, as in (2, 2). The (1, 2) mode has only one nodal line."
+      }
+    ],
+    "explanation": "n_y = 2 gives sin(2πy/b), which is zero at y = b/2. With n_x = 1 there is no node across x, so the mode has one nodal line at half the width, running the full length in x."
+  },
+  {
+    "id": "pc2-membrane-rect-13-nodes",
+    "type": "multiple-choice",
+    "prompt": "Where are the nodal lines of the (n_x = 1, n_y = 3) mode of a rectangular membrane of length a and width b?",
+    "choices": [
+      {
+        "text": "At y = b/3 and y = 2b/3, each running the full length in x",
+        "correct": true
+      },
+      {
+        "text": "At x = a/3 and x = 2a/3, each running the full width in y",
+        "why": "Those belong to the (3, 1) mode. Here the 3 is in n_y, so the lines are at fixed values of y."
+      },
+      {
+        "text": "At y = b/4, y = b/2 and y = 3b/4",
+        "why": "Three lines at those places come from n_y = 4. sin(3πy/b) is zero inside the membrane only at y = b/3 and 2b/3."
+      },
+      {
+        "text": "At y = b/2 only",
+        "why": "One line at half the width belongs to n_y = 2. With n_y = 3 there are two lines, at b/3 and 2b/3."
+      }
+    ],
+    "explanation": "sin(3πy/b) is zero where 3πy/b is a whole multiple of π: y = 0, b/3, 2b/3 and b. Leaving out the fixed edges, there are two nodal lines, at b/3 and 2b/3, each crossing the full length of the membrane."
+  },
+  {
+    "id": "pc2-membrane-bessel",
+    "type": "multiple-choice",
+    "prompt": "The modes of a circular membrane are u(r, θ, t) = J_m(λ_mn r) cos(mθ) cos(cλ_mn t). What are the functions J_m?",
+    "choices": [
+      {
+        "text": "Bessel functions, which oscillate",
+        "correct": true
+      },
+      {
+        "text": "Plain sine functions, exactly as for a string",
+        "why": "The circular membrane's mathematics is more complicated: its radial part uses Bessel functions instead of plain sines."
+      },
+      {
+        "text": "Exponentials that only grow or decay",
+        "why": "J_m are Bessel functions, which are oscillatory functions, not growing or decaying exponentials."
+      },
+      {
+        "text": "The quantum numbers of the mode",
+        "why": "The quantum numbers are m and n. J_m is a function of the radius r: a Bessel function."
+      }
+    ],
+    "explanation": "J_m are Bessel functions, oscillatory functions of the radius r. For a circular drum they play the role that the sine factors play for a rectangle."
+  },
+  {
+    "id": "pc2-membrane-polar",
+    "type": "multiple-choice",
+    "prompt": "Which coordinates are best for writing the vibrations of a circular membrane?",
+    "choices": [
+      {
+        "text": "Polar coordinates, r and θ",
+        "correct": true
+      },
+      {
+        "text": "Rectangular coordinates, x and y",
+        "why": "x and y suit a rectangular membrane. A circular drum is best described by the distance r from the center and the angle θ."
+      },
+      {
+        "text": "Spherical coordinates, r, θ and φ",
+        "why": "Spherical coordinates are for three dimensions. A drumhead is a two-dimensional surface, so polar r and θ are enough."
+      },
+      {
+        "text": "Time t alone",
+        "why": "Position on the drum is needed too. The circular solutions are written u(r, θ, t), in polar coordinates."
+      }
+    ],
+    "explanation": "The circular membrane's solutions are written u(r, θ, t), in polar notation instead of the rectangular x and y used for a rectangle. A node at a fixed r is then a circle, and a node at a fixed θ is a straight line."
+  },
+  {
+    "id": "pc2-membrane-circular-quantum-numbers",
+    "type": "multiple-choice",
+    "prompt": "How many quantum numbers label the vibrations of a circular membrane?",
+    "choices": [
+      {
+        "text": "Two, m and n",
+        "correct": true
+      },
+      {
+        "text": "One, as for a string",
+        "why": "A membrane is two-dimensional, so it needs two quantum numbers, just as a rectangle has n_x and n_y."
+      },
+      {
+        "text": "Three, one each for r, θ and t",
+        "why": "Time doesn't add a quantum number. The circular membrane has two, m and n."
+      },
+      {
+        "text": "None, because a circle has no corners",
+        "why": "A circular drum still has a fixed edge, and its modes are labeled by two quantum numbers, m and n."
+      }
+    ],
+    "explanation": "A circular membrane has two quantum numbers, m and n. They serve the same function as n_x and n_y do for a rectangular membrane."
+  },
+  {
+    "id": "pc2-membrane-k-length-122",
+    "type": "numeric",
+    "prompt": "A wave in three dimensions has |k| = √(k_x^2 + k_y^2 + k_z^2). If k_x = 1 m^−1, k_y = 2 m^−1 and k_z = 2 m^−1, what is |k|, in m^−1?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "|k| = √(1^2 + 2^2 + 2^2) m^−1 = √(1 + 4 + 4) m^−1 = √(9) m^−1 = 3 m^−1."
+  },
+  {
+    "id": "pc2-membrane-omega-v-k",
+    "type": "numeric",
+    "prompt": "A three-dimensional harmonic wave has angular frequency ω = v|k|. A sound wave in air has v = 340 m/s and |k| = 2 m^−1. What is ω, in rad/s?",
+    "answer": 680,
+    "unit": "rad/s",
+    "explanation": "ω = v|k| = (340 m/s) × (2 m^−1) = 680 rad/s."
+  },
+  {
+    "id": "pc2-membrane-rect-32-lines",
+    "type": "numeric",
+    "prompt": "In a rectangular membrane, sin(n_x πx/a) is zero along n_x − 1 lines inside the membrane and sin(n_y πy/b) along n_y − 1 lines, so a mode has (n_x − 1) + (n_y − 1) nodal lines. How many nodal lines does the (n_x = 3, n_y = 2) mode have?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "(3 − 1) + (2 − 1) = 2 + 1 = 3 nodal lines: two at x = a/3 and 2a/3, and one at y = b/2."
+  },
+  {
+    "id": "pc2-membrane-rect-find-nx",
+    "type": "numeric",
+    "prompt": "In a rectangular membrane, the factor sin(n_x πx/a) gives n_x − 1 nodal lines at fixed x, each running the full width in y. A mode has three such lines, at x = a/4, a/2 and 3a/4. What is n_x?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "n_x − 1 = 3, so n_x = 4. Indeed sin(4πx/a) is zero inside the membrane at x = a/4, a/2 and 3a/4."
+  }
+]

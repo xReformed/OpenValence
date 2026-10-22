@@ -1,0 +1,571 @@
+[
+  {
+    "id": "pc1-gold-foil",
+    "type": "multiple-choice",
+    "prompt": "What did the α-particle scattering (gold-foil) experiments show about atoms?",
+    "choices": [
+      {
+        "text": "Most of an atom is empty space, with its mass in a small, heavy nucleus",
+        "correct": true
+      },
+      {
+        "text": "Atoms are solid spheres with no empty space",
+        "why": "Most α-particles passed straight through the foil, so most of the atom must be empty."
+      },
+      {
+        "text": "Electrons are heavier than the nucleus",
+        "why": "The few α-particles that bounced back must have hit something heavy: the nucleus. Electrons are very light."
+      },
+      {
+        "text": "Atoms have no electrons",
+        "why": "The experiments showed a small heavy nucleus, with very light electrons around it."
+      }
+    ],
+    "explanation": "Most α-particles passed through the gold foil unchanged, and a few bounced backward. So the heavy nuclei occupy a very small part of the atom, and most of the space is empty or occupied by very light electrons."
+  },
+  {
+    "id": "pc1-classical-collapse",
+    "type": "multiple-choice",
+    "prompt": "What goes wrong when classical physics is applied to an electron circling a nucleus?",
+    "choices": [
+      {
+        "text": "An accelerating charge gives off radiation, so the electron would lose energy and spiral into the nucleus",
+        "correct": true
+      },
+      {
+        "text": "The electron would fly away from the nucleus",
+        "why": "Opposite charges attract. The problem is that a circling electron radiates energy and spirals inward."
+      },
+      {
+        "text": "The electron would stop moving and float in place",
+        "why": "Classically, the electron would keep radiating and spiral into the nucleus in about 10^−11 seconds."
+      },
+      {
+        "text": "The nucleus would radiate all its energy",
+        "why": "It is the circling electron, which is constantly accelerated, that should radiate and collapse."
+      }
+    ],
+    "explanation": "An electron moving in a circle is constantly accelerating, and an accelerating charge emits radiation. So it would lose energy and spiral into the nucleus in about 10^−11 seconds, giving a continuous spectrum rather than lines."
+  },
+  {
+    "id": "pc1-bohr-angular-momentum",
+    "type": "multiple-choice",
+    "prompt": "What did Bohr assume about the electron's angular momentum, m_e vr?",
+    "choices": [
+      {
+        "text": "It can only be a whole-number multiple of ħ: m_e vr = nħ",
+        "correct": true
+      },
+      {
+        "text": "It can have any value",
+        "why": "That is the classical picture. Bohr allowed only certain values, m_e vr = nħ."
+      },
+      {
+        "text": "It is always zero",
+        "why": "The electron must be moving, so its angular momentum is not zero; it is nħ with n = 1, 2, 3, ..."
+      },
+      {
+        "text": "It equals the electron's energy",
+        "why": "Angular momentum and energy are different quantities. Bohr quantized the angular momentum, m_e vr = nħ."
+      }
+    ],
+    "explanation": "Following Planck's idea, Bohr posited that the orbital angular momentum of the electron could take only specific values, m_e vr = nħ, with n = 1, 2, 3, …."
+  },
+  {
+    "id": "pc1-bohr-n-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is n = 0 not allowed in the Bohr model?",
+    "choices": [
+      {
+        "text": "The electron must be in motion, so its angular momentum cannot be zero",
+        "correct": true
+      },
+      {
+        "text": "Because zero is not a whole number",
+        "why": "Zero is a whole number. It is excluded because m_e vr = 0 would mean the electron is not moving."
+      },
+      {
+        "text": "Because n = 0 is the ground state",
+        "why": "The ground state is n = 1. n = 0 is not allowed at all."
+      },
+      {
+        "text": "Because the atom would have no nucleus",
+        "why": "n refers to the electron's orbit. n = 0 would mean an electron at rest, which is not allowed."
+      }
+    ],
+    "explanation": "With m_e vr = nħ, n = 0 would mean zero angular momentum, an electron that is not moving. The electron must be in motion, so n starts at 1."
+  },
+  {
+    "id": "pc1-bohr-energy-n2",
+    "type": "numeric",
+    "prompt": "The Bohr energies are E_n = −(Z^2/n^2) Ry. What is the energy, in Ry, of the hydrogen atom (Z = 1) in the n = 2 state?",
+    "answer": -0.25,
+    "unit": "Ry",
+    "tolerance": 0,
+    "explanation": "E_2 = −(1^2/2^2) Ry = −(1/4) Ry = −0.25 Ry, which is −(2.18 × 10^−18 J)/4 = −5.45 × 10^−19 J."
+  },
+  {
+    "id": "pc1-bohr-radius-he-plus",
+    "type": "numeric",
+    "prompt": "Bohr's allowed radii are r_n = (a_0/Z) n^2, with a_0 = 52.9 pm. What is the radius of the n = 1 orbit in the He^+ ion (Z = 2), in pm?",
+    "answer": 26.45,
+    "unit": "pm",
+    "explanation": "r_1 = (52.9 pm/2)(1^2) = 26.45 pm, about 26.5 pm. A larger nuclear charge pulls the electron closer."
+  },
+  {
+    "id": "pc1-bohr-radius-ratio",
+    "type": "numeric",
+    "prompt": "In the Bohr model of hydrogen, r_n = a_0 n^2. How many times larger is the n = 3 orbit radius than the n = 1 radius?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "r_3/r_1 = 3^2/1^2 = 9. The radius grows with the square of n."
+  },
+  {
+    "id": "pc1-lyman-transitions",
+    "type": "multiple-choice",
+    "prompt": "Which electron transitions in hydrogen give the Lyman series of emission lines?",
+    "choices": [
+      {
+        "text": "Drops from higher levels down to n = 1",
+        "correct": true
+      },
+      {
+        "text": "Drops from higher levels down to n = 2",
+        "why": "Drops to n = 2 give the Balmer series. The Lyman series ends at n = 1."
+      },
+      {
+        "text": "Drops from higher levels down to n = 3",
+        "why": "Drops to n = 3 give the Paschen series. The Lyman series ends at n = 1."
+      },
+      {
+        "text": "Jumps up from n = 1 to higher levels",
+        "why": "Jumps up absorb light. Emission lines come from drops; the Lyman lines end at n = 1."
+      }
+    ],
+    "explanation": "The Lyman series comes from transitions from higher-energy orbits down to n = 1. These release a lot of energy, so the lines are in the ultraviolet. Drops to n = 2, 3, 4 and 5 give the Balmer, Paschen, Brackett and Pfund series."
+  },
+  {
+    "id": "pc1-bohr-limitation",
+    "type": "multiple-choice",
+    "prompt": "Where did Bohr's model fail?",
+    "choices": [
+      {
+        "text": "It could not explain the spectra of atoms other than hydrogen-like ones",
+        "correct": true
+      },
+      {
+        "text": "It could not explain the hydrogen spectrum",
+        "why": "Bohr's model explained the hydrogen spectrum and the Rydberg formula well."
+      },
+      {
+        "text": "It predicted that all atoms are the same size",
+        "why": "Its radii depend on n and Z. Its failure was with the spectra of atoms with more electrons."
+      },
+      {
+        "text": "It said energy is continuous",
+        "why": "Bohr's model quantizes energy, angular momentum and radius. Its failure was with other atoms."
+      }
+    ],
+    "explanation": "Bohr's ideas explained the hydrogen spectrum, the Rydberg formula and the Rydberg constant, but they failed when applied to the spectra of other atoms."
+  },
+  {
+    "id": "pc1-bohr-geiger-marsden",
+    "type": "multiple-choice",
+    "prompt": "Whose α-particle scattering experiments was Rutherford's model of the atom based on?",
+    "choices": [
+      {
+        "text": "Hans Geiger and Ernest Marsden",
+        "correct": true
+      },
+      {
+        "text": "Clinton Davisson and Lester Germer",
+        "why": "They did electron diffraction experiments in 1927. Rutherford's model came from the gold-foil experiments of Geiger and Marsden."
+      },
+      {
+        "text": "Niels Bohr",
+        "why": "Bohr proposed his own model in 1913, after Rutherford's. The scattering experiments were done by Geiger and Marsden."
+      },
+      {
+        "text": "Thomas Young",
+        "why": "Young's 1801 double-slit experiment was about light. The α-particle experiments were done by Geiger and Marsden."
+      }
+    ],
+    "explanation": "Ernest Rutherford based his model of the atom on the α-particle scattering experiments of Hans Geiger and Ernest Marsden, who shot helium nuclei (α-particles) at thin gold foils."
+  },
+  {
+    "id": "pc1-bohr-radio-transmitter",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does a radio transmitter send out electromagnetic radiation?",
+    "choices": [
+      {
+        "text": "Electrons driven up and down a wire are accelerated, so they radiate",
+        "correct": true
+      },
+      {
+        "text": "A wire is heated until it glows",
+        "why": "That is how an incandescent bulb makes light. A transmitter radiates because its electrons are accelerated back and forth."
+      },
+      {
+        "text": "Electrons jump between energy levels in the antenna's atoms",
+        "why": "Jumps between levels give atomic line spectra. A transmitter works because accelerated charges radiate."
+      },
+      {
+        "text": "Its antenna reflects radio waves that come from the Sun",
+        "why": "A transmitter makes its own radiation, by accelerating electrons in a wire."
+      }
+    ],
+    "explanation": "A charged particle that is accelerated emits radiation. In a radio transmitter, a power supply drives electrons up and down a wire, and they send out the radiation your radio picks up. By the same idea, an orbiting electron, which is always accelerating, should radiate."
+  },
+  {
+    "id": "pc1-bohr-conservative-force",
+    "type": "multiple-choice",
+    "prompt": "What is a conservative force?",
+    "choices": [
+      {
+        "text": "A force that depends only on the object's position",
+        "correct": true
+      },
+      {
+        "text": "A force that never changes in size",
+        "why": "A conservative force can vary from place to place, like the Coulomb force. What makes it conservative is that it depends only on position."
+      },
+      {
+        "text": "A force whose effect depends on the path taken",
+        "why": "It is the opposite: for a conservative force, the change in potential energy does not depend on the path."
+      },
+      {
+        "text": "A force that always pushes objects apart",
+        "why": "Conservative forces can attract or repel. Gravity attracts, while like charges repel."
+      }
+    ],
+    "explanation": "A conservative force depends only on the position of the object, so a potential energy can be assigned to every point. Moving between two points changes the potential energy by an amount that does not depend on the path. Gravity and the Coulomb force are the most familiar examples."
+  },
+  {
+    "id": "pc1-bohr-like-charges-potential",
+    "type": "multiple-choice",
+    "prompt": "For two charges of the same sign, what happens to their Coulomb potential energy as they are brought closer together?",
+    "choices": [
+      {
+        "text": "It increases, so like charges repel",
+        "correct": true
+      },
+      {
+        "text": "It decreases, so like charges attract",
+        "why": "That is what happens for opposite charges. For like charges the potential is purely repulsive: the energy rises as they come together."
+      },
+      {
+        "text": "It stays the same at every distance",
+        "why": "V(r) = (kQ_1Q_2)/r changes with r. For like charges it rises as r gets smaller."
+      },
+      {
+        "text": "It decreases at first and then increases",
+        "why": "For like charges the curve is purely repulsive: the energy rises steadily as the charges approach."
+      }
+    ],
+    "explanation": "With V(r) = (kQ_1Q_2)/r and both charges of the same sign, the energy increases steadily as the charges come together and decreases as they separate, so like charges repel. For opposite charges the energy falls as they approach, so they attract."
+  },
+  {
+    "id": "pc1-bohr-one-electron-ions",
+    "type": "multiple-choice",
+    "prompt": "Which of these can the Bohr model describe?",
+    "choices": [
+      {
+        "text": "The Li^2+ ion",
+        "correct": true
+      },
+      {
+        "text": "A neutral helium atom",
+        "why": "He has two electrons. The Bohr model is for one-electron atoms such as H, He^+ and Li^2+."
+      },
+      {
+        "text": "A neutral lithium atom",
+        "why": "Li has three electrons. Only after losing two, as Li^2+, does it have the single electron the Bohr model needs."
+      },
+      {
+        "text": "A hydrogen molecule, H_2",
+        "why": "H_2 has two electrons and two nuclei. The Bohr model treats one electron orbiting one nucleus."
+      }
+    ],
+    "explanation": "Bohr's model predicts the allowed energies of single-electron atoms such as H, He^+, Li^2+ and Be^3+: one electron orbiting a nucleus of charge +Ze. Li^2+ has Z = 3 and just one electron left."
+  },
+  {
+    "id": "pc1-bohr-centripetal-coulomb",
+    "type": "multiple-choice",
+    "prompt": "In the Bohr model, what force keeps the electron moving in a circular orbit?",
+    "choices": [
+      {
+        "text": "The Coulomb attraction between the electron and the nucleus",
+        "correct": true
+      },
+      {
+        "text": "Gravity between the electron and the nucleus",
+        "why": "Gravity has the same 1/r^2 form, but the force in the Bohr model is the Coulomb attraction between the charges."
+      },
+      {
+        "text": "A repulsion that pushes the electron away from the nucleus",
+        "why": "The negative electron and the positive nucleus attract. That attraction bends the electron's path into a circle."
+      },
+      {
+        "text": "No force: the electron circles on its own",
+        "why": "Without a force the electron would move in a straight line. The Coulomb attraction supplies the centripetal force."
+      }
+    ],
+    "explanation": "Bohr set the Coulomb force, Ze^2/(4πε_0 r^2), equal to m_e times the centripetal acceleration, v^2/r. The attraction to the nucleus keeps changing the direction of the electron's velocity, like a string pulling a ball around in a circle."
+  },
+  {
+    "id": "pc1-bohr-radius-name",
+    "type": "multiple-choice",
+    "prompt": "What is the quantity a_0 = (4πε_0ħ^2)/(e^2 m_e), equal to 52.9 pm, called?",
+    "choices": [
+      {
+        "text": "The Bohr radius",
+        "correct": true
+      },
+      {
+        "text": "The Rydberg constant",
+        "why": "R_H is also built from constants, but it sets the energies and frequencies of the lines. a_0 is a length, the Bohr radius."
+      },
+      {
+        "text": "The de Broglie wavelength",
+        "why": "That is λ = h/p for a moving particle. a_0 is the radius of hydrogen's n = 1 orbit, the Bohr radius."
+      },
+      {
+        "text": "The permittivity of free space",
+        "why": "That is ε_0, one of the constants inside a_0. a_0 itself is the Bohr radius."
+      }
+    ],
+    "explanation": "The collection of constants a_0 = (4πε_0ħ^2)/(e^2 m_e) is the Bohr radius, 52.9 pm, the radius of the n = 1 orbit in hydrogen. The allowed radii are r_n = (a_0/Z)n^2."
+  },
+  {
+    "id": "pc1-bohr-energy-vs-n",
+    "type": "multiple-choice",
+    "prompt": "In the Bohr model, E_n = −(Z^2/n^2) Ry. As n increases, what happens to the electron's energy?",
+    "choices": [
+      {
+        "text": "It rises toward zero",
+        "correct": true
+      },
+      {
+        "text": "It becomes more negative",
+        "why": "Dividing by a larger n^2 makes E_n smaller in size, so it becomes less negative, rising toward zero."
+      },
+      {
+        "text": "It stays the same for every n",
+        "why": "E_n depends on 1/n^2, so each level has a different energy."
+      },
+      {
+        "text": "It becomes positive for large n",
+        "why": "E_n is always negative. It gets closer to zero as n grows but never passes it."
+      }
+    ],
+    "explanation": "Because E_n = −(Z^2/n^2) Ry, the energies are negative and get closer to zero as n increases: for hydrogen, E_1 = −1 Ry, E_2 = −0.25 Ry and E_3 ≈ −0.11 Ry. The ground state, n = 1, is the lowest."
+  },
+  {
+    "id": "pc1-bohr-absorption-frequencies",
+    "type": "multiple-choice",
+    "prompt": "Why can a hydrogen atom absorb only light of certain frequencies?",
+    "choices": [
+      {
+        "text": "hν must equal the energy gap between two allowed levels",
+        "correct": true
+      },
+      {
+        "text": "The light must be bright enough to knock the electron out",
+        "why": "Brightness does not decide it. By conservation of energy, hν must match the gap between two allowed levels."
+      },
+      {
+        "text": "Only the frequencies at which the nucleus vibrates are absorbed",
+        "why": "Absorption moves the electron up to a higher allowed level, so hν must match the gap between two levels."
+      },
+      {
+        "text": "Every frequency above a threshold is absorbed",
+        "why": "A threshold frequency belongs to the photoelectric effect. An atom absorbs only frequencies whose hν matches a gap between its levels."
+      }
+    ],
+    "explanation": "When an atom absorbs light it moves to an excited state, with E_nf = E_ni + hν. Since only certain energies are allowed, only photons whose hν matches the gap between two levels can be absorbed."
+  },
+  {
+    "id": "pc1-bohr-whole-wavelengths",
+    "type": "multiple-choice",
+    "prompt": "In the wave picture of the Bohr atom, what must be true of the electron wave around an orbit?",
+    "choices": [
+      {
+        "text": "A whole number of wavelengths must fit around it",
+        "correct": true
+      },
+      {
+        "text": "Exactly half a wavelength must fit around it",
+        "why": "Half a wavelength would not join up with itself, and the wave would cancel out. It must be a whole number of wavelengths."
+      },
+      {
+        "text": "Any wavelength fits, because the orbit is a circle",
+        "why": "If the wavelength does not fit, the wave overlaps itself imperfectly and cancels out, so the electron cannot exist in that orbit."
+      },
+      {
+        "text": "The wavelength must be longer than the orbit",
+        "why": "The orbit must hold a whole number of wavelengths, so that the wave joins up with itself and interferes constructively."
+      }
+    ],
+    "explanation": "Because of the circular symmetry, the electron wave must fit a whole number of wavelengths around the orbit, so that it interferes constructively with itself. Otherwise the waves overlap imperfectly and cancel out, and the electron cannot exist in that orbit."
+  },
+  {
+    "id": "pc1-bohr-wavelength-vs-n",
+    "type": "multiple-choice",
+    "prompt": "In the Bohr atom, the electron's momentum gets smaller as n increases. What happens to its de Broglie wavelength, λ = h/p?",
+    "choices": [
+      {
+        "text": "It gets longer",
+        "correct": true
+      },
+      {
+        "text": "It gets shorter",
+        "why": "λ = h/p, so a smaller momentum gives a longer wavelength, not a shorter one."
+      },
+      {
+        "text": "It stays the same",
+        "why": "λ depends on p, and p changes with n, so the wavelength changes too: it gets longer."
+      },
+      {
+        "text": "It becomes zero",
+        "why": "A smaller p makes λ = h/p larger. λ would only approach zero for an enormous momentum."
+      }
+    ],
+    "explanation": "λ = h/p, so a smaller momentum means a longer wavelength. Since p_n = (ħZ)/(a_0 n) falls as n grows, the electron's wavelength increases with n, a common feature in quantum mechanics."
+  },
+  {
+    "id": "pc1-bohr-rydberg-integers-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the Bohr model, what do the two integers in the Rydberg formula stand for?",
+    "choices": [
+      {
+        "text": "The n values of the initial and final energy levels",
+        "correct": true
+      },
+      {
+        "text": "The numbers of protons and neutrons in the nucleus",
+        "why": "The integers come from quantization: they are the n values of the two levels the electron moves between."
+      },
+      {
+        "text": "The number of electrons in the atom",
+        "why": "Hydrogen has only one electron. The integers are the quantum numbers n of the two levels involved."
+      },
+      {
+        "text": "The order in which the lines were discovered",
+        "why": "They are not historical labels. Bohr showed they are the quantum numbers n of the two levels."
+      }
+    ],
+    "explanation": "From ν = (E_ni − E_nf)/h, Bohr derived the Rydberg formula and showed that its integers are the quantum numbers of the initial and final levels. The integers are a sign of quantization."
+  },
+  {
+    "id": "pc1-bohr-stable-orbits",
+    "type": "multiple-choice",
+    "prompt": "In Bohr's model, why doesn't the electron spiral into the nucleus?",
+    "choices": [
+      {
+        "text": "Only certain energies are allowed, so it can't lose energy gradually",
+        "correct": true
+      },
+      {
+        "text": "The positive nucleus repels the electron and keeps it away",
+        "why": "The nucleus and the electron attract each other. The orbits are stable because the energy is quantized."
+      },
+      {
+        "text": "The electron moves too fast for the nucleus to pull it in",
+        "why": "The Coulomb attraction is what holds the electron in its orbit. Quantization is what stops the collapse."
+      },
+      {
+        "text": "Bohr assumed that the electron has no electric charge",
+        "why": "The electron's charge is central to the model. The orbits are stable because only certain energies are allowed."
+      }
+    ],
+    "explanation": "Because the energy, angular momentum and radius are quantized, the electron cannot radiate energy continuously and spiral inward. It can only jump from one allowed orbit to another, so the orbits are stable despite the Coulomb attraction."
+  },
+  {
+    "id": "pc1-bohr-series-limit",
+    "type": "multiple-choice",
+    "prompt": "For an electron dropping to n_f = 1 in hydrogen, what happens to the photon's energy as the starting level n_i gets very large?",
+    "choices": [
+      {
+        "text": "It approaches a limit of 1 Ry, or 2.18 × 10^−18 J",
+        "correct": true
+      },
+      {
+        "text": "It grows without any limit",
+        "why": "As n_i grows, 1/n_i^2 shrinks toward zero, so the energy levels off at Ry(1/n_f^2) = 1 Ry."
+      },
+      {
+        "text": "It falls toward zero",
+        "why": "Higher starting levels give more energetic photons, not less. The energy approaches 1 Ry."
+      },
+      {
+        "text": "It becomes negative",
+        "why": "The photon carries away E_ni − E_nf, which is positive for a drop. It approaches 1 Ry."
+      }
+    ],
+    "explanation": "E_photon = (2.18 × 10^−18 J)(1/n_f^2 − 1/n_i^2). As n_i → ∞, 1/n_i^2 → 0, so for n_f = 1 the photon energy approaches 2.18 × 10^−18 J, which is 1 Ry."
+  },
+  {
+    "id": "pc1-bohr-orbital-meaning",
+    "type": "multiple-choice",
+    "prompt": "Why is an electron's state in the hydrogen atom called an orbital rather than an orbit?",
+    "choices": [
+      {
+        "text": "Its position is not as well defined as a classical orbit",
+        "correct": true
+      },
+      {
+        "text": "It moves in a perfect circle of fixed radius",
+        "why": "That is Bohr's orbit picture, which turned out to be too precise. An orbital gives only the probability of the electron's positions."
+      },
+      {
+        "text": "It sits still at one fixed point",
+        "why": "The electron is not fixed in place. An orbital gives the probability of finding it at different positions."
+      },
+      {
+        "text": "Orbital is an older word that means the same as orbit",
+        "why": "The words differ: an orbit is a definite path, while an orbital is a wavefunction that gives the probability of the electron's positions."
+      }
+    ],
+    "explanation": "The electron's position in the hydrogen atom is not as well defined as a classical orbit, like the moon's around the earth. So it is called an orbital: a wavefunction that gives the probability of the electron's positions around the nucleus."
+  },
+  {
+    "id": "pc1-bohr-coulomb-distance-factor",
+    "type": "numeric",
+    "prompt": "Coulomb's law says F ∝ (Q_1Q_2)/r^2. If the distance between two charges is doubled, by what factor does the force between them get smaller?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "F depends on 1/r^2, so doubling r multiplies F by 1/2^2 = 1/4: the force becomes 4 times smaller. Newton's law of gravity has the same inverse-square form."
+  },
+  {
+    "id": "pc1-bohr-he-plus-ground-energy",
+    "type": "numeric",
+    "prompt": "The Bohr energies are E_n = −(Z^2/n^2) Ry. What is the ground-state (n = 1) energy of the He^+ ion (Z = 2), in Ry?",
+    "answer": -4,
+    "unit": "Ry",
+    "tolerance": 0,
+    "explanation": "E_1 = −(2^2/1^2) Ry = −4 Ry, which is 4 × (−2.18 × 10^−18 J) = −8.72 × 10^−18 J. The larger nuclear charge makes this four times lower than hydrogen's ground state."
+  },
+  {
+    "id": "pc1-bohr-photon-2-to-1",
+    "type": "numeric",
+    "prompt": "Use E_photon = (2.18 × 10^−18 J)(1/n_f^2 − 1/n_i^2). What is the energy, in J, of the photon given off when hydrogen's electron drops from n = 2 to n = 1? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.635e-18,
+    "unit": "J",
+    "explanation": "E_photon = (2.18 × 10^−18 J)(1/1^2 − 1/2^2) = (2.18 × 10^−18 J)(0.75) = 1.64 × 10^−18 J. This is the first line of the Lyman series, in the ultraviolet."
+  },
+  {
+    "id": "pc1-bohr-rydberg-state-radius",
+    "type": "numeric",
+    "prompt": "Hydrogen atoms have been prepared in states with n = 200, called Rydberg states. Use r_n = a_0 n^2 with a_0 = 0.0529 nm. What is the orbit radius for n = 200, in nm?",
+    "answer": 2116,
+    "unit": "nm",
+    "explanation": "n^2 = 200^2 = 40,000, so r = (0.0529 nm)(40,000) = 2116 nm, about 2.1 μm. That is 40,000 times the n = 1 radius, so the atom is about 4.2 μm across."
+  },
+  {
+    "id": "pc1-bohr-angular-momentum-n3",
+    "type": "numeric",
+    "prompt": "Bohr's rule is m_e vr = nħ, with ħ = 1.055 × 10^−34 J·s. What is the electron's angular momentum, in J·s, in the n = 3 orbit? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 3.165e-34,
+    "explanation": "m_e vr = 3ħ = 3 × (1.055 × 10^−34 J·s) = 3.165 × 10^−34 J·s. The angular momentum can only be a whole-number multiple of ħ."
+  }
+]

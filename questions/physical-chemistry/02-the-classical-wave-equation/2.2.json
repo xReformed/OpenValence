@@ -1,0 +1,617 @@
+[
+  {
+    "id": "pc2-separation-assumption",
+    "type": "multiple-choice",
+    "prompt": "What does the method of separation of variables assume about the solution u(x, t) of the wave equation?",
+    "choices": [
+      {
+        "text": "That it can be written as a product X(x)T(t) of a function of x alone and a function of t alone",
+        "correct": true
+      },
+      {
+        "text": "That it can be written as a sum X(x) + T(t)",
+        "why": "The method assumes a product, u(x, t) = X(x)T(t), not a sum."
+      },
+      {
+        "text": "That it does not depend on time",
+        "why": "T(t) carries the time dependence; the method just keeps it in a separate function."
+      },
+      {
+        "text": "That x and t are always equal",
+        "why": "x and t are independent variables. The method splits the dependence on each into its own function."
+      }
+    ],
+    "explanation": "Separation of variables tries u(x, t) = X(x)T(t), where X depends only on x and T only on t. If the assumption were wrong, the math would break down in an obvious way."
+  },
+  {
+    "id": "pc2-pde-vs-ode",
+    "type": "multiple-choice",
+    "prompt": "How does a partial differential equation (PDE) differ from an ordinary differential equation (ODE)?",
+    "choices": [
+      {
+        "text": "A PDE involves a function of more than one variable; an ODE involves a function of only one",
+        "correct": true
+      },
+      {
+        "text": "A PDE has no derivatives in it",
+        "why": "Both kinds are differential equations, so both contain derivatives."
+      },
+      {
+        "text": "A PDE is always easier to solve",
+        "why": "PDEs are usually much harder; most can't be solved exactly, which is why we turn them into ODEs."
+      },
+      {
+        "text": "A PDE only ever has first derivatives",
+        "why": "The wave equation is a PDE with second derivatives."
+      }
+    ],
+    "explanation": "The wave equation is a PDE because u depends on two variables, x and t. An ODE has a function of one variable, like X(x) or T(t). The common way to solve a PDE is to turn it into ODEs."
+  },
+  {
+    "id": "pc2-separation-result",
+    "type": "multiple-choice",
+    "prompt": "After substituting u(x, t) = X(x)T(t) into the wave equation and setting both sides equal to a constant K, what do you get?",
+    "choices": [
+      {
+        "text": "Two ordinary differential equations, one for X(x) and one for T(t)",
+        "correct": true
+      },
+      {
+        "text": "One harder partial differential equation",
+        "why": "The point of the method is the opposite: the PDE is replaced by simpler ODEs."
+      },
+      {
+        "text": "The final answer u(x, t) directly",
+        "why": "You still have to solve the two ODEs and apply the boundary conditions."
+      },
+      {
+        "text": "An equation with no x or t in it at all",
+        "why": "Each new equation keeps one variable: one in x, one in t."
+      }
+    ],
+    "explanation": "Separation of variables turns the two-variable PDE into two ODEs, each with only one variable: d^2T/dt^2 − Kv^2T = 0 and d^2X/dx^2 − KX = 0."
+  },
+  {
+    "id": "pc2-why-constant",
+    "type": "multiple-choice",
+    "prompt": "After separating, the left side of the wave equation depends only on x and the right side only on t. Why must both sides equal the same constant K?",
+    "choices": [
+      {
+        "text": "It's the only way a function of x can equal a function of t for every x and t",
+        "correct": true
+      },
+      {
+        "text": "Because x and t are always the same number",
+        "why": "x and t are independent: you can change one and keep the other fixed."
+      },
+      {
+        "text": "Because K is the speed of the wave",
+        "why": "The speed is v. K is a separation constant, to be found later."
+      },
+      {
+        "text": "Because the wave equation has no solutions otherwise",
+        "why": "The reason is simpler: change x alone and the t side can't change, so neither side can change; both must be a constant."
+      }
+    ],
+    "explanation": "If you change x while keeping t fixed, the right side stays the same, so the left side can't change either. The same goes for t. So both sides must equal one fixed constant, K."
+  },
+  {
+    "id": "pc2-k-zero",
+    "type": "multiple-choice",
+    "prompt": "In separating the string's wave equation, what does the choice K = 0 give?",
+    "choices": [
+      {
+        "text": "Only the trivial solution u(x, t) = 0: no wave at all",
+        "correct": true
+      },
+      {
+        "text": "A traveling wave",
+        "why": "With K = 0 and the string fixed at both ends, the only solution is u = 0."
+      },
+      {
+        "text": "The standing waves of a guitar string",
+        "why": "The standing waves come from K < 0."
+      },
+      {
+        "text": "Infinitely many waves of any wavelength",
+        "why": "K = 0 gives just the trivial solution, u = 0."
+      }
+    ],
+    "explanation": "K = 0 gives the trivial solution u(x, t) = 0, meaning no wave exists. K > 0 can't meet the boundary conditions either; the oscillating solutions come from K < 0 (Section 2.3)."
+  },
+  {
+    "id": "pc2-second-order-solutions",
+    "type": "multiple-choice",
+    "prompt": "How many independent solutions does a second-order linear differential equation like d^2y/dx^2 − k^2y = 0 have?",
+    "choices": [
+      {
+        "text": "Two",
+        "correct": true
+      },
+      {
+        "text": "One",
+        "why": "A first-order equation has one. A second-order equation has two, here e^(kx) and e^(−kx)."
+      },
+      {
+        "text": "Three",
+        "why": "The number of independent solutions matches the order: a second-order equation has two."
+      },
+      {
+        "text": "None",
+        "why": "It has solutions: trying y = e^(αx) gives two of them."
+      }
+    ],
+    "explanation": "Trying y = e^(αx) gives α^2 − k^2 = 0, so α = +k or α = −k. That gives two solutions, e^(kx) and e^(−kx), as expected for a second-order equation."
+  },
+  {
+    "id": "pc2-alpha-value",
+    "type": "numeric",
+    "prompt": "Try y = e^(αx) in the equation d^2y/dx^2 − 4y = 0. This gives α^2 − 4 = 0. What is the positive value of α?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "α^2 = 4, so α = ±2. The positive value is 2, giving the solution e^(2x); the other solution is e^(−2x)."
+  },
+  {
+    "id": "pc2-characteristic-roots",
+    "type": "multiple-choice",
+    "prompt": "Trying y = e^(rt) in y'' − y' − 6y = 0 gives r^2 − r − 6 = 0, which factors as (r − 3)(r + 2) = 0. Which two functions solve the equation?",
+    "choices": [
+      {
+        "text": "e^(3t) and e^(−2t)",
+        "correct": true
+      },
+      {
+        "text": "e^(−3t) and e^(2t)",
+        "why": "The roots of (r − 3)(r + 2) = 0 are r = 3 and r = −2, not −3 and 2."
+      },
+      {
+        "text": "e^(3t) and e^(2t)",
+        "why": "r + 2 = 0 gives r = −2, so the second solution is e^(−2t)."
+      },
+      {
+        "text": "3t and −2t",
+        "why": "The trial solution is y = e^(rt), so the roots go into the exponent."
+      }
+    ],
+    "explanation": "(r − 3)(r + 2) = 0 gives r = 3 and r = −2, so the solutions are e^(3t) and e^(−2t). The general solution is y = c1 e^(3t) + c2 e^(−2t)."
+  },
+  {
+    "id": "pc2-superposition-ode",
+    "type": "multiple-choice",
+    "prompt": "If y1 and y2 both solve a linear homogeneous differential equation, which of these is also a solution, for any constants c1 and c2?",
+    "choices": [
+      {
+        "text": "c1y1 + c2y2",
+        "correct": true
+      },
+      {
+        "text": "y1 × y2",
+        "why": "A product of two solutions is not, in general, a solution. A sum of multiples is."
+      },
+      {
+        "text": "y1 / y2",
+        "why": "A ratio of solutions is not, in general, a solution."
+      },
+      {
+        "text": "Only y1 + y2 exactly, with no constants",
+        "why": "Any constants work: c1y1 + c2y2 is a solution for every choice of c1 and c2."
+      }
+    ],
+    "explanation": "For a linear homogeneous equation, any linear combination c1y1 + c2y2 of solutions is again a solution. The constants are then picked to fit the boundary or initial conditions."
+  },
+  {
+    "id": "pc2-separation-u-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the wave equation for a vibrating string, what does the function u(x, t) stand for?",
+    "choices": [
+      {
+        "text": "The wave's amplitude at position x and time t",
+        "correct": true
+      },
+      {
+        "text": "The speed at which the wave moves along the string",
+        "why": "The speed is the constant v in the equation. u(x, t) is how far the string is displaced at each place and time."
+      },
+      {
+        "text": "The total length of the vibrating string",
+        "why": "The length is L, a fixed number. u(x, t) changes from point to point and moment to moment."
+      },
+      {
+        "text": "The separation constant used to split the equation",
+        "why": "The separation constant is K, introduced later. u(x, t) is the wave's amplitude at position x and time t."
+      }
+    ],
+    "explanation": "Solving the wave equation means finding u(x, t), the amplitude of the wave at any position x and any time t. Because u depends on two variables, the wave equation is a partial differential equation."
+  },
+  {
+    "id": "pc2-separation-pde-analytic",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is true of partial differential equations (PDEs) in general?",
+    "choices": [
+      {
+        "text": "Most can't be solved exactly; solvable ones are split into ODEs",
+        "correct": true
+      },
+      {
+        "text": "All of them can be solved exactly if you do enough algebra",
+        "why": "The vast majority of PDEs cannot be solved analytically. The special ones that can are converted into ODEs."
+      },
+      {
+        "text": "None can be solved exactly, so only rough approximations exist",
+        "why": "Some special classes can, including the wave equation. They are solved by turning them into one or more ODEs."
+      },
+      {
+        "text": "They are solved by turning them into PDEs with more variables",
+        "why": "It goes the other way: a PDE is turned into ODEs with only one variable each, which are easier to solve."
+      }
+    ],
+    "explanation": "Most PDEs cannot be solved analytically. The special ones that can are solved by converting them into one or more ordinary differential equations, and separation of variables is one way to do that."
+  },
+  {
+    "id": "pc2-separation-second-order",
+    "type": "multiple-choice",
+    "prompt": "Why is the wave equation ∂^2u/∂x^2 = (1/v^2) ∂^2u/∂t^2 called a second-order equation?",
+    "choices": [
+      {
+        "text": "Its highest derivative is a second derivative",
+        "correct": true
+      },
+      {
+        "text": "The function u depends on two variables, x and t",
+        "why": "Having two variables is what makes it a partial differential equation. The order counts derivatives: here they are second derivatives."
+      },
+      {
+        "text": "The wave speed v appears in it squared, as v^2",
+        "why": "v^2 is just a constant factor. The order is set by the highest derivative, ∂^2/∂x^2 and ∂^2/∂t^2."
+      },
+      {
+        "text": "The function u appears squared in the equation",
+        "why": "u is not squared; it appears only to the first power. The 2 in ∂^2u/∂x^2 means a second derivative."
+      }
+    ],
+    "explanation": "The order of a differential equation is the order of its highest derivative. The wave equation has second derivatives in x and in t, so it is a second-order partial differential equation."
+  },
+  {
+    "id": "pc2-separation-boundary-vs-initial",
+    "type": "multiple-choice",
+    "prompt": "The section compares boundary conditions with the conditions of an initial value problem. What is the difference between them?",
+    "choices": [
+      {
+        "text": "Boundary conditions fix u at the ends; initial conditions fix it at one time",
+        "correct": true
+      },
+      {
+        "text": "Boundary conditions fix u at one time; initial conditions fix it at the ends",
+        "why": "That is reversed. Boundary conditions give u at the extremes (the boundaries) of the system, such as the ends of a string."
+      },
+      {
+        "text": "Boundary conditions give the speed v; initial conditions give the length L",
+        "why": "v and L are constants of the problem. Both kinds of condition give values of the solution itself, at the boundaries or at a starting time."
+      },
+      {
+        "text": "There is no difference; they are two names for the same thing",
+        "why": "They are similar kinds of constraint, but one is set at the boundaries in space and the other at a particular time."
+      }
+    ],
+    "explanation": "Boundary conditions specify u(x, t) at the extremes of the system, like u = 0 at both ends of a string. Initial conditions are similar, but they specify values at one particular time, as in an initial value problem."
+  },
+  {
+    "id": "pc2-separation-pull-out-t",
+    "type": "multiple-choice",
+    "prompt": "Putting u = X(x)T(t) into ∂^2u/∂x^2 gives T(t) × ∂^2X/∂x^2. Why can T(t) be moved outside the x-derivative?",
+    "choices": [
+      {
+        "text": "T doesn't depend on x, so it acts as a constant",
+        "correct": true
+      },
+      {
+        "text": "T(t) is always equal to 1, at every time",
+        "why": "T(t) can change with time. It can be moved out because it doesn't change when x changes."
+      },
+      {
+        "text": "T(t) is zero, so its position doesn't matter",
+        "why": "If T were zero, u would be zero everywhere and there would be no wave. T moves out because it doesn't depend on x."
+      },
+      {
+        "text": "x and t are really one and the same variable",
+        "why": "x and t are independent. That is exactly why T(t) stays fixed while x changes."
+      }
+    ],
+    "explanation": "A factor that doesn't depend on x behaves like a constant in an x-derivative. Since T depends only on t, ∂^2(X T)/∂x^2 = T × ∂^2X/∂x^2, and likewise X comes out of the t-derivative."
+  },
+  {
+    "id": "pc2-separation-divide-xt",
+    "type": "multiple-choice",
+    "prompt": "From T(t) × ∂^2X/∂x^2 = (1/v^2) X(x) × ∂^2T/∂t^2, the section gets (1/X) ∂^2X/∂x^2 = (1/v^2)(1/T) ∂^2T/∂t^2. What step was taken?",
+    "choices": [
+      {
+        "text": "Both sides were divided by X(x)T(t)",
+        "correct": true
+      },
+      {
+        "text": "Both sides were multiplied by X(x)T(t)",
+        "why": "Multiplying would give extra factors of X and T. Dividing by XT is what leaves 1/X and 1/T in front."
+      },
+      {
+        "text": "Both sides were differentiated again",
+        "why": "No new derivatives appear; the same second derivatives are there, now divided by X and T."
+      },
+      {
+        "text": "The speed v was set equal to 1",
+        "why": "The 1/v^2 is still on the right side. The only change is dividing both sides by X(x)T(t)."
+      }
+    ],
+    "explanation": "Dividing both sides by X(x)T(t) collects everything that depends on x on the left and everything that depends on t on the right. That is the separation step."
+  },
+  {
+    "id": "pc2-separation-time-ode",
+    "type": "multiple-choice",
+    "prompt": "After separating with the constant K, which ordinary differential equation does the time part T(t) satisfy?",
+    "choices": [
+      {
+        "text": "d^2T/dt^2 − Kv^2T = 0",
+        "correct": true
+      },
+      {
+        "text": "d^2T/dt^2 − KT = 0",
+        "why": "That has the form of the X equation. The 1/v^2 sits on the t side, so v^2 appears in the T equation."
+      },
+      {
+        "text": "d^2T/dx^2 − Kv^2T = 0",
+        "why": "T depends only on t, so its derivative is taken with respect to t, not x."
+      },
+      {
+        "text": "dT/dt − Kv^2T = 0",
+        "why": "The wave equation has second derivatives, so the T equation is second order too: d^2T/dt^2."
+      }
+    ],
+    "explanation": "Setting (1/v^2)(1/T) d^2T/dt^2 = K and multiplying by v^2T gives d^2T/dt^2 − Kv^2T = 0. The x side gives d^2X/dx^2 − KX = 0."
+  },
+  {
+    "id": "pc2-separation-kpos-exponentials",
+    "type": "multiple-choice",
+    "prompt": "For K > 0, what is the general solution of d^2X/dx^2 − KX = 0?",
+    "choices": [
+      {
+        "text": "X(x) = Ae^(√K x) + Be^(−√K x)",
+        "correct": true
+      },
+      {
+        "text": "X(x) = A cos(√K x) + B sin(√K x)",
+        "why": "Cosines and sines come from K < 0 (Section 2.3). For K > 0 the solutions are a growing and a decaying exponential."
+      },
+      {
+        "text": "X(x) = Ae^(Kx) + Be^(−Kx)",
+        "why": "Trying e^(αx) gives α^2 = K, so the exponent contains √K, not K."
+      },
+      {
+        "text": "X(x) = Ae^(√K x) alone",
+        "why": "A second-order equation has two independent solutions, so the decaying one, e^(−√K x), is needed too."
+      }
+    ],
+    "explanation": "With K > 0, the two solutions are e^(√K x) and e^(−√K x), and the general solution is any combination Ae^(√K x) + Be^(−√K x)."
+  },
+  {
+    "id": "pc2-separation-x0-a-plus-b",
+    "type": "multiple-choice",
+    "prompt": "For K > 0, X(x) = Ae^(√K x) + Be^(−√K x). What does the boundary condition X(0) = 0 give?",
+    "choices": [
+      {
+        "text": "A + B = 0",
+        "correct": true
+      },
+      {
+        "text": "A − B = 0",
+        "why": "At x = 0 both exponentials equal e^0 = 1 and both terms keep their plus signs, so X(0) = A + B."
+      },
+      {
+        "text": "A × B = 0",
+        "why": "The two terms are added, not multiplied: X(0) = A(1) + B(1) = A + B."
+      },
+      {
+        "text": "A + B = 1",
+        "why": "e^0 = 1 makes X(0) = A + B, and the condition sets X(0) equal to 0, not 1."
+      }
+    ],
+    "explanation": "At x = 0, e^(√K × 0) = e^0 = 1, and the same for the other term, so X(0) = A + B. Setting this to zero gives A + B = 0, that is, B = −A."
+  },
+  {
+    "id": "pc2-separation-x0-from-u",
+    "type": "multiple-choice",
+    "prompt": "The string's end condition is u(0, t) = X(0)T(t) = 0 for all times t. Why does this mean X(0) = 0?",
+    "choices": [
+      {
+        "text": "If there is a wave, T(t) isn't always zero, so X(0) = 0",
+        "correct": true
+      },
+      {
+        "text": "T(t) is always equal to 1, so it can be cancelled",
+        "why": "T(t) changes with time. The point is that T can't be zero at all times if there is a wave, so the zero must come from X(0)."
+      },
+      {
+        "text": "Every function of x is automatically zero at x = 0",
+        "why": "Many functions are not; for example, cos(0) = 1. X(0) = 0 is a condition we impose because the end is held fixed."
+      },
+      {
+        "text": "The time t is zero at both of the string's fixed ends",
+        "why": "t is time, not position. The end at x = 0 must stay still at every time t."
+      }
+    ],
+    "explanation": "A product is zero only if a factor is zero. If T(t) were zero for all t, the whole string would never move, so the condition has to be met by X(0) = 0. In the same way, u(L, t) = 0 gives X(L) = 0."
+  },
+  {
+    "id": "pc2-separation-no-quantization",
+    "type": "multiple-choice",
+    "prompt": "Before the boundary conditions are applied, what does the general solution X(x) = Ae^(√K x) + Be^(−√K x) allow?",
+    "choices": [
+      {
+        "text": "Any A and B: infinitely many solutions, nothing limiting them",
+        "correct": true
+      },
+      {
+        "text": "Only one solution, which the equation itself already fixes",
+        "why": "Without boundary conditions, A and B can be anything. The conditions are what narrow the choice."
+      },
+      {
+        "text": "Only whole-number values of A and B, such as 1, 2 and 3",
+        "why": "Nothing yet restricts A and B. Any values solve the equation until the boundary conditions are applied."
+      },
+      {
+        "text": "No solutions at all, until the boundary conditions are known",
+        "why": "Every choice of A and B solves the differential equation. There are too many solutions, not too few."
+      }
+    ],
+    "explanation": "On its own, the differential equation is solved by any A and B, so there are infinitely many solutions and no quantization. Taking the boundary conditions into account narrows the general solution down to specific ones."
+  },
+  {
+    "id": "pc2-separation-exponential-trial-why",
+    "type": "multiple-choice",
+    "prompt": "Why is y = e^(αx) a useful trial solution for d^2y/dx^2 − k^2y = 0?",
+    "choices": [
+      {
+        "text": "Each derivative just multiplies it by α",
+        "correct": true
+      },
+      {
+        "text": "e^(αx) is zero at x = 0, matching the boundary",
+        "why": "e^0 = 1, not 0. The exponential is useful because its derivatives are multiples of itself."
+      },
+      {
+        "text": "Its second derivative is zero, which removes y''",
+        "why": "Its second derivative is α^2 e^(αx), not zero. That is what lets it cancel against the k^2y term."
+      },
+      {
+        "text": "It forces the constant k to be equal to zero",
+        "why": "k is a given constant. The trial solution is used to find α, which comes out as α = ±k."
+      }
+    ],
+    "explanation": "The second derivative of e^(αx) is α^2 e^(αx), the same exponential times a number. Substituting gives (α^2 − k^2)e^(αx) = 0, which turns the differential equation into simple algebra for α."
+  },
+  {
+    "id": "pc2-separation-divide-exponential",
+    "type": "multiple-choice",
+    "prompt": "In Example 2.2.1, (α^2 + 3α − 4)e^(αt) = 0. Why can both sides be divided by e^(αt)?",
+    "choices": [
+      {
+        "text": "e^(αt) is never zero",
+        "correct": true
+      },
+      {
+        "text": "e^(αt) equals 1 for every t",
+        "why": "e^(αt) changes with t unless α = 0. What matters is that it is never zero."
+      },
+      {
+        "text": "e^(αt) is always negative",
+        "why": "An exponential of a real number is always positive. Being nonzero is what makes dividing by it safe."
+      },
+      {
+        "text": "α is zero in this example",
+        "why": "α is the unknown being solved for, and the answers turn out to be α = 1 and α = −4."
+      }
+    ],
+    "explanation": "A product is zero only if one factor is zero. Since e^(αt) is never zero, the bracket must be: α^2 + 3α − 4 = 0, which gives α = 1 and α = −4."
+  },
+  {
+    "id": "pc2-separation-char-equation",
+    "type": "multiple-choice",
+    "prompt": "Substituting y = e^(αt), y' = αe^(αt) and y'' = α^2 e^(αt) into y'' + 3y' − 4y = 0, then dividing by e^(αt), gives which equation?",
+    "choices": [
+      {
+        "text": "α^2 + 3α − 4 = 0",
+        "correct": true
+      },
+      {
+        "text": "α^2 − 3α − 4 = 0",
+        "why": "The 3y' term becomes +3α; it keeps its plus sign."
+      },
+      {
+        "text": "α + 3α − 4 = 0",
+        "why": "y'' brings a factor of α^2, not α."
+      },
+      {
+        "text": "α^2 + 3α + 4 = 0",
+        "why": "The −4y term becomes −4; it keeps its minus sign."
+      }
+    ],
+    "explanation": "After dividing by e^(αt), each y'' becomes α^2, each y' becomes α, and each y becomes 1: α^2 + 3α − 4 = 0. Its roots give the exponents of the solutions."
+  },
+  {
+    "id": "pc2-separation-initial-fix-constants",
+    "type": "multiple-choice",
+    "prompt": "In Example 2.2.2, the general solution is y = c1 e^(3t) + c2 e^(−2t). What are the conditions y(0) = 1 and y'(0) = 2 used for?",
+    "choices": [
+      {
+        "text": "To find the constants c1 and c2",
+        "correct": true
+      },
+      {
+        "text": "To find the roots r = 3 and r = −2",
+        "why": "The roots come from r^2 − r − 6 = 0 alone. The conditions come in afterward to fix c1 and c2."
+      },
+      {
+        "text": "To show that the equation is second order",
+        "why": "The order is seen from the y'' term. The conditions pick out one solution from the whole family."
+      },
+      {
+        "text": "To find the value of the time t",
+        "why": "t is the variable, not an unknown. The conditions pin down the constants c1 and c2."
+      }
+    ],
+    "explanation": "The general solution is a whole family of solutions. Two conditions give two equations, 1 = c1 + c2 and 2 = 3c1 − 2c2, which give c1 = 4/5 and c2 = 1/5."
+  },
+  {
+    "id": "pc2-separation-two-dim-family",
+    "type": "multiple-choice",
+    "prompt": "The section calls y = c1 e^(t) + c2 e^(−4t) a two-dimensional family of solutions. Why two-dimensional?",
+    "choices": [
+      {
+        "text": "It has two free constants, c1 and c2",
+        "correct": true
+      },
+      {
+        "text": "It depends on two variables, a position x and a time t",
+        "why": "It depends only on t. The two dimensions are the two free constants, c1 and c2."
+      },
+      {
+        "text": "It solves two different differential equations at once",
+        "why": "It solves one equation, y'' + 3y' − 4y = 0. Two-dimensional refers to the two free constants."
+      },
+      {
+        "text": "It is a solution only at two particular values of t",
+        "why": "It is a solution for every t. The two dimensions are the two constants that can be chosen."
+      }
+    ],
+    "explanation": "Each choice of c1 and c2 gives a solution, so the solutions form a family with two free numbers, like points on a plane. Initial or boundary conditions then pick one member of the family."
+  },
+  {
+    "id": "pc2-separation-root-minus-four",
+    "type": "numeric",
+    "prompt": "In Example 2.2.1, α^2 + 3α − 4 = 0 factors as (α − 1)(α + 4) = 0. What is the negative root α?",
+    "answer": -4,
+    "tolerance": 0,
+    "explanation": "α + 4 = 0 gives α = −4 (and α − 1 = 0 gives α = 1). Check: (−4)^2 + 3(−4) − 4 = 16 − 12 − 4 = 0. The solutions are e^(t) and e^(−4t)."
+  },
+  {
+    "id": "pc2-separation-root-larger",
+    "type": "numeric",
+    "prompt": "Trying y = e^(rt) in y'' − 5y' + 6y = 0 gives r^2 − 5r + 6 = 0, which factors as (r − 2)(r − 3) = 0. What is the larger root r?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "(r − 2)(r − 3) = 0 gives r = 2 or r = 3, and the larger is 3. Check: 3^2 − 5(3) + 6 = 9 − 15 + 6 = 0. The solutions are e^(2t) and e^(3t)."
+  },
+  {
+    "id": "pc2-separation-c2-initial",
+    "type": "numeric",
+    "prompt": "In Example 2.2.2, y = c1 e^(3t) + c2 e^(−2t). At t = 0 both exponentials equal 1, so the condition y(0) = 1 gives c1 + c2 = 1. If c1 = 0.8, what is c2?",
+    "answer": 0.2,
+    "explanation": "c2 = 1 − c1 = 1 − 0.8 = 0.2, the 1/5 found in the example. It also fits the second condition: 3(0.8) − 2(0.2) = 2.4 − 0.4 = 2."
+  },
+  {
+    "id": "pc2-separation-k-from-exponent",
+    "type": "numeric",
+    "prompt": "For K > 0, the equation d^2X/dx^2 − KX = 0 has the solutions e^(√K x) and e^(−√K x). If e^(3x) is one of the solutions, what is K?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "The exponent is √K x, so √K = 3 and K = 3^2 = 9. The other solution is e^(−3x)."
+  }
+]

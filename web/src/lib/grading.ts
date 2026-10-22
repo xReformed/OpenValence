@@ -5,8 +5,10 @@ import type { NumericQuestion, NumericResult } from "./types";
    question's unit. Returns null for anything else. */
 export function parseNumber(input: string, unit?: string): number | null {
   let text = input.trim().replace(/[−–]/g, "-").replace(/,/g, "");
-  if (unit && text.toLowerCase().endsWith(unit.toLowerCase())) {
-    text = text.slice(0, -unit.length);
+  /* The unit gets the same minus as the input, so "cm^-1" drops "cm^−1". */
+  const suffix = unit?.replace(/[−–]/g, "-").toLowerCase();
+  if (suffix && text.toLowerCase().endsWith(suffix)) {
+    text = text.slice(0, -suffix.length);
   }
   text = text.replace(/\s+/g, "");
 

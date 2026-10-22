@@ -1,0 +1,640 @@
+[
+  {
+    "id": "pc3-average-meaning",
+    "type": "multiple-choice",
+    "prompt": "What is the expectation value of a measurement?",
+    "choices": [
+      {
+        "text": "The average of the results of very many repeated measurements",
+        "correct": true
+      },
+      {
+        "text": "The single most probable result of one measurement",
+        "why": "The section stresses that the expectation value is not the most probable value. It is a weighted average of all possible values."
+      },
+      {
+        "text": "The result you are sure to get every time you measure",
+        "why": "Repeated measurements can give different results; the expectation value is their average, not a guaranteed outcome."
+      },
+      {
+        "text": "The largest result that the measurement could ever give",
+        "why": "It is an average over all the possible results, so it usually lies between the smallest and largest."
+      }
+    ],
+    "explanation": "The expectation value is a weighted average of all possible values: what you would \"expect\" on average after repeating the measurement infinitely many times. It need not be a possible result: the class average of 71.625 in Example 3.7.1 is not a score anyone got."
+  },
+  {
+    "id": "pc3-average-quiz-weight",
+    "type": "numeric",
+    "prompt": "Ten students' quiz scores are 70, 80, 80, 90, 80, 70, 100, 90, 60 and 70. As in Example 3.7.1, the probability weight P_s of a score is the number of times it occurs divided by the number of scores. What is P_s for a score of 80? (Give it as a decimal.)",
+    "answer": 0.3,
+    "explanation": "The score 80 occurs 3 times out of 10 scores, so P_s = 3/10 = 0.3."
+  },
+  {
+    "id": "pc3-average-weights-add-to-one",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.7.1 the probability weights add up to 1 (1/8 + 3/8 + 2/8 + 1/8 + 1/8 = 1). What is this check the discrete version of?",
+    "choices": [
+      {
+        "text": "Normalizing a wavefunction",
+        "correct": true
+      },
+      {
+        "text": "Finding the expectation value",
+        "why": "The weights are used to find the average, but checking that they add to 1 is a separate step: normalization."
+      },
+      {
+        "text": "Showing that two wavefunctions are orthogonal",
+        "why": "Orthogonality means the integral of the product of two different functions is 0, not that probabilities add to 1."
+      },
+      {
+        "text": "Finding the most probable score",
+        "why": "The most probable score is the one with the largest weight (67, at 3/8). Adding all the weights to get 1 is normalization."
+      }
+    ],
+    "explanation": "The probabilities of all possible results must add up to 1. For a wavefunction the same rule reads ∫ψ^*ψ dx = 1 over all space, which is why wavefunctions are normalized."
+  },
+  {
+    "id": "pc3-average-weighted-score",
+    "type": "numeric",
+    "prompt": "A quiz has only two possible scores: 2 points, with probability 1/4, and 4 points, with probability 3/4. Using ⟨s⟩ = Σ s(i)P_s(i), what is the expectation value ⟨s⟩?",
+    "answer": 3.5,
+    "explanation": "⟨s⟩ = (2)(1/4) + (4)(3/4) = 0.5 + 3 = 3.5. No one can score 3.5 on this quiz: like the 71.625 of Example 3.7.1, an expectation value need not be a possible result."
+  },
+  {
+    "id": "pc3-average-psi-squared-weights",
+    "type": "multiple-choice",
+    "prompt": "To go from the classical average ⟨s⟩ = Σ s(i)P_s(i) to a quantum expectation value, what takes the place of the probability weights P_s(i)?",
+    "choices": [
+      {
+        "text": "ψ^*ψ, the wavefunction squared",
+        "correct": true
+      },
+      {
+        "text": "The operator Ô",
+        "why": "The operator takes the place of the scalar s(i), the value being averaged. The weights are replaced by ψ^*ψ."
+      },
+      {
+        "text": "The wavefunction ψ itself",
+        "why": "ψ can be negative or complex, so it can't be a probability. The probability distribution is ψ^*ψ."
+      },
+      {
+        "text": "The energy eigenvalue E_n",
+        "why": "An energy is a value that might be averaged, not a probability weight. The weights become ψ^*ψ."
+      }
+    ],
+    "explanation": "The section lists three changes: the sum becomes an integral over a continuous variable, the probability weights become the wavefunction squared, ψ^*ψ, and the scalar becomes an operator."
+  },
+  {
+    "id": "pc3-average-integral",
+    "type": "multiple-choice",
+    "prompt": "Which integral (over all x) gives the expectation value ⟨o⟩ of an observable whose operator is Ô?",
+    "choices": [
+      {
+        "text": "∫ψ^*Ôψ dx",
+        "correct": true
+      },
+      {
+        "text": "∫ψ^*ψ dx",
+        "why": "With no operator this is the normalization integral, which equals 1 for any normalized wavefunction."
+      },
+      {
+        "text": "∫Ôψ dx",
+        "why": "The ψ^* is missing, so the result is not weighted by the probability ψ^*ψ."
+      },
+      {
+        "text": "∫ψ^*ψÔ dx",
+        "why": "An operator acts on the function to its right; here nothing is to its right. Ô must sit between ψ^* and ψ."
+      }
+    ],
+    "explanation": "⟨o⟩ = ∫ψ^*Ôψ dx: the operator acts on ψ first, then the result is multiplied by ψ^* and integrated over all space."
+  },
+  {
+    "id": "pc3-average-state-and-operator",
+    "type": "multiple-choice",
+    "prompt": "What decides the value of an expectation value ⟨o⟩ = ∫ψ^*Ôψ dx?",
+    "choices": [
+      {
+        "text": "Both the wavefunction and the operator",
+        "correct": true
+      },
+      {
+        "text": "Only the operator; every state gives the same average",
+        "why": "The section says that changing the wavefunction in general changes the expectation value."
+      },
+      {
+        "text": "Only the wavefunction; the operator just sets the units",
+        "why": "The operator decides which observable is averaged: x̂ gives the average position, p̂ the average momentum, Ĥ the average energy."
+      },
+      {
+        "text": "Only the limits of the integral over x",
+        "why": "The limits just cover all the space where the particle can be. The value depends on ψ and Ô."
+      }
+    ],
+    "explanation": "The expectation value changes as the wavefunction changes, and it changes with the operator used, which picks the observable being averaged."
+  },
+  {
+    "id": "pc3-average-energy-split",
+    "type": "multiple-choice",
+    "prompt": "The section splits the average energy ⟨H⟩ into two parts. What are they?",
+    "choices": [
+      {
+        "text": "The average kinetic energy and the average potential energy",
+        "correct": true
+      },
+      {
+        "text": "The average position and the average momentum",
+        "why": "Ĥ is the energy operator, so ⟨H⟩ splits into energies: kinetic plus potential."
+      },
+      {
+        "text": "The zero-point energy and the thermal energy",
+        "why": "The Hamiltonian has a kinetic energy term and a potential energy term, so ⟨H⟩ = ⟨KE⟩ + ⟨V⟩."
+      },
+      {
+        "text": "The energy in the left half and in the right half of the box",
+        "why": "The split is by kind of energy, not by region: ⟨H⟩ = ⟨KE⟩ + ⟨V⟩."
+      }
+    ],
+    "explanation": "The Hamiltonian is a kinetic energy operator plus a potential energy operator, so ⟨H⟩ = ⟨KE⟩ + ⟨V⟩."
+  },
+  {
+    "id": "pc3-average-potential-meaning",
+    "type": "multiple-choice",
+    "prompt": "In words, what does the integral ⟨V⟩ = ∫V(x)ψ^*(x)ψ(x)dx do?",
+    "choices": [
+      {
+        "text": "It adds up V(x) at each x, weighted by the chance of the particle being there",
+        "correct": true
+      },
+      {
+        "text": "It finds the potential energy at the single most probable position",
+        "why": "It averages over every position, not just one. Each x counts in proportion to ψ^*ψ dx."
+      },
+      {
+        "text": "It adds up V(x) over all x, giving every point exactly the same weight",
+        "why": "Each point is weighted by ψ^*(x)ψ(x)dx, the probability of finding the particle there."
+      },
+      {
+        "text": "It finds the largest potential energy the particle could ever have",
+        "why": "It gives an average, not a maximum."
+      }
+    ],
+    "explanation": "ψ^*(x)ψ(x)dx is the probability that the particle is in the interval dx at x. Multiplying by V(x) and integrating over all x gives the average potential energy ⟨V⟩."
+  },
+  {
+    "id": "pc3-average-box-potential-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is the average potential energy ⟨V⟩ zero for a particle in a box?",
+    "choices": [
+      {
+        "text": "V(x) = 0 everywhere inside the box, where the particle is",
+        "correct": true
+      },
+      {
+        "text": "The particle is at rest in the box, so it has no energy at all",
+        "why": "The particle is never at rest: its lowest energy, E_1, is not zero. ⟨V⟩ is zero because V(x) = 0 inside the box."
+      },
+      {
+        "text": "⟨p⟩ = 0, and the potential energy depends on momentum",
+        "why": "The potential energy depends on position, not momentum. It is zero because V(x) = 0 everywhere inside the box."
+      },
+      {
+        "text": "Only the ground state has ⟨V⟩ = 0; higher states have ⟨V⟩ > 0",
+        "why": "Since V(x) = 0 throughout the box, ⟨V⟩ = 0 whatever the wavefunction."
+      }
+    ],
+    "explanation": "In the integral for ⟨V⟩, V(x) = 0 at every x inside the box, so the integral is 0. The section notes this holds irrespective of the wavefunction."
+  },
+  {
+    "id": "pc3-average-energy-matches-e1",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 3.7.2, ⟨H⟩ for ψ = √(2/L) sin((πx)/L) is found from the expectation-value integrals. How does it compare with the energy E_1 found from the eigenvalue equation?",
+    "choices": [
+      {
+        "text": "It is the same: ⟨H⟩ = E_1",
+        "correct": true
+      },
+      {
+        "text": "It is half of E_1, because ⟨V⟩ = 0",
+        "why": "⟨V⟩ = 0 doesn't take anything away: all of E_1 is kinetic energy, so ⟨KE⟩ = E_1."
+      },
+      {
+        "text": "It is zero, because ⟨V⟩ = 0",
+        "why": "Only the potential energy is zero. The kinetic energy, (π^2ħ^2)/(2mL^2), is not."
+      },
+      {
+        "text": "It is larger than E_1, because averaging adds zero-point energy",
+        "why": "E_1 is itself the zero-point energy; nothing extra is added. ⟨H⟩ = E_1."
+      }
+    ],
+    "explanation": "The integrals give ⟨KE⟩ = (π^2ħ^2)/(2mL^2) and ⟨V⟩ = 0, so ⟨H⟩ = (π^2ħ^2)/(2mL^2), the same as E_1 from the eigenvalue equation. For an eigenstate, the expectation value equals the eigenvalue."
+  },
+  {
+    "id": "pc3-average-not-eigenstate",
+    "type": "multiple-choice",
+    "prompt": "When does the section say you must rely on expectation values, rather than the eigenvalue equation, to find the energy?",
+    "choices": [
+      {
+        "text": "When the wavefunction is not an eigenstate of energy",
+        "correct": true
+      },
+      {
+        "text": "When the wavefunction is an eigenstate of energy",
+        "why": "For an eigenstate, the eigenvalue equation gives the energy directly, and ⟨H⟩ gives the same value."
+      },
+      {
+        "text": "Only when the potential energy is zero",
+        "why": "The potential doesn't decide it. What matters is whether ψ is an eigenfunction of Ĥ."
+      },
+      {
+        "text": "Only for the ground state",
+        "why": "The ground state of a particle in a box is an eigenstate, so the eigenvalue equation works for it."
+      }
+    ],
+    "explanation": "If ψ is not an eigenfunction of Ĥ, there is no single energy eigenvalue to read off, so the energy has to be described by the average ⟨H⟩ = ∫ψ^*Ĥψ dx."
+  },
+  {
+    "id": "pc3-average-ke-ratio",
+    "type": "numeric",
+    "prompt": "Exercise 3.7.2 finds ⟨KE⟩ = (k^2ħ^2)/(2m) for a particle-in-a-box state with k = (nπ)/L. In the same box, how many times larger is ⟨KE⟩ for the n = 3 state than for the n = 1 state?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "⟨KE⟩ is proportional to k^2, and k = (nπ)/L is proportional to n, so ⟨KE⟩ is proportional to n^2. The ratio is 3^2/1^2 = 9."
+  },
+  {
+    "id": "pc3-average-zero-point-energy",
+    "type": "multiple-choice",
+    "prompt": "A particle in a box can never have zero energy: even in its lowest state it has the energy E_1. What is this lowest energy called?",
+    "choices": [
+      {
+        "text": "The zero-point energy",
+        "correct": true
+      },
+      {
+        "text": "The ionization energy",
+        "why": "Ionization energy is the energy to remove an electron from an atom. E_1, the lowest energy of a particle in a box, is the zero-point energy."
+      },
+      {
+        "text": "The activation energy",
+        "why": "Activation energy is the barrier a reaction must cross. The lowest energy a confined particle keeps is the zero-point energy."
+      },
+      {
+        "text": "The potential energy of the box",
+        "why": "V = 0 inside the box, so E_1 is all kinetic energy. It is called the zero-point energy."
+      }
+    ],
+    "explanation": "The lowest energy level is E_1, and it is not zero. This finite energy is the zero-point energy, and the motion that goes with it is the zero-point motion."
+  },
+  {
+    "id": "pc3-average-zero-point-origin",
+    "type": "multiple-choice",
+    "prompt": "According to the section, zero-point energy and zero-point motion are signs of what?",
+    "choices": [
+      {
+        "text": "Wave properties and the uncertainty principle",
+        "correct": true
+      },
+      {
+        "text": "Friction between the particle and the walls of the box",
+        "why": "The walls only confine the particle. Zero-point energy comes from confining a wave, which can't have zero energy."
+      },
+      {
+        "text": "Heat that the particle takes in from its surroundings",
+        "why": "Zero-point energy belongs to the lowest state of the particle itself; it comes from its wave nature."
+      },
+      {
+        "text": "A potential energy that is not zero inside the box",
+        "why": "V = 0 inside the box, so all of E_1 is kinetic energy."
+      }
+    ],
+    "explanation": "The zero-point energy and motion are manifestations of the wave properties and the Heisenberg uncertainty principle. They are general properties of bound systems, that is, systems restricted to some region of space."
+  },
+  {
+    "id": "pc3-average-classical-limit",
+    "type": "multiple-choice",
+    "prompt": "What happens to the spacing between particle-in-a-box energy levels when mL^2 becomes much larger than h^2, as for a baseball?",
+    "choices": [
+      {
+        "text": "It becomes very small, so the energy looks continuous",
+        "correct": true
+      },
+      {
+        "text": "It becomes very large, so quantization is easy to see",
+        "why": "Large mL^2 makes the spacing smaller, not larger, because m and L^2 are in the denominator of E_n."
+      },
+      {
+        "text": "It stays the same, since it depends only on n",
+        "why": "The spacing also depends on m and L. A large mL^2 makes it tiny."
+      },
+      {
+        "text": "It drops to exactly zero, so the energy is not quantized",
+        "why": "The levels are still there; they are just far too close together to notice."
+      }
+    ],
+    "explanation": "For everyday objects mL^2 is huge compared with h^2, so the energy levels are packed so closely that the energy appears continuous. That is why quantization doesn't matter for a baseball."
+  },
+  {
+    "id": "pc3-average-nodes-energy",
+    "type": "multiple-choice",
+    "prompt": "Of the particle-in-a-box wavefunctions ψ_1, ψ_2, ψ_3 and ψ_4, which one curves most sharply, and so has the highest energy?",
+    "choices": [
+      {
+        "text": "ψ_4, which has 3 nodes",
+        "correct": true
+      },
+      {
+        "text": "ψ_1, which has no nodes",
+        "why": "ψ_1 is the smoothest, a single hump, so it has the least curvature and the lowest energy."
+      },
+      {
+        "text": "ψ_2, which has 1 node",
+        "why": "ψ_2 curves more than ψ_1 but less than ψ_3 and ψ_4. More nodes in the same box means sharper curvature."
+      },
+      {
+        "text": "They all curve the same, since the box is the same",
+        "why": "The box is the same, but ψ_n has n − 1 nodes packed into it, so higher n curves more sharply."
+      }
+    ],
+    "explanation": "The second derivative measures curvature, and it appears in the kinetic energy part of the Hamiltonian. ψ_n has n − 1 nodes, so ψ_4 packs the most nodes into the box, curves most sharply, and has the highest energy."
+  },
+  {
+    "id": "pc3-average-position-symmetry",
+    "type": "multiple-choice",
+    "prompt": "Why is the average position ⟨x⟩ = L/2 for the ground state of a particle in a box?",
+    "choices": [
+      {
+        "text": "ψ^*ψ is symmetric about the center of the box",
+        "correct": true
+      },
+      {
+        "text": "The particle sits still at the center of the box",
+        "why": "The particle has zero-point motion; it is never at rest. ⟨x⟩ is an average over many measurements."
+      },
+      {
+        "text": "ψ^*ψ is largest at the two walls, which balance out",
+        "why": "ψ^*ψ is zero at the walls. ⟨x⟩ = L/2 because it is symmetric about the center."
+      },
+      {
+        "text": "⟨p⟩ = 0, so the particle can't move away from the middle",
+        "why": "⟨p⟩ = 0 because motion in +x and −x is equally likely, not because the particle stays put."
+      }
+    ],
+    "explanation": "ψ_1^*ψ_1 = (2/L) sin^2((πx)/L) has the same value at L/2 + Δx as at L/2 − Δx. With the left and right halves equally likely, the average position is the center: ⟨x⟩ = L/2."
+  },
+  {
+    "id": "pc3-average-position-value",
+    "type": "numeric",
+    "prompt": "An electron is in the n = 1 state of a box that runs from x = 0 to x = L, with L = 0.80 nm. Using the symmetry of ψ^*ψ about the center of the box, what is ⟨x⟩, in nm?",
+    "answer": 0.4,
+    "unit": "nm",
+    "explanation": "ψ^*ψ is symmetric about the center, so ⟨x⟩ = L/2 = (0.80 nm)/2 = 0.40 nm."
+  },
+  {
+    "id": "pc3-average-position-node",
+    "type": "multiple-choice",
+    "prompt": "In the n = 2 state of a particle in a box, ψ^*ψ is zero at the center, x = L/2, yet ⟨x⟩ = L/2. How can that be?",
+    "choices": [
+      {
+        "text": "⟨x⟩ is an average, and ψ^*ψ is symmetric about L/2",
+        "correct": true
+      },
+      {
+        "text": "It can't; ⟨x⟩ must be a place where the particle can be found",
+        "why": "An expectation value need not be a possible result, just as no student scored the 71.625 average in Example 3.7.1."
+      },
+      {
+        "text": "⟨x⟩ is the most probable position, and the center is most probable",
+        "why": "For n = 2 the center is a node, the least probable place. ⟨x⟩ is the average position, not the most probable one."
+      },
+      {
+        "text": "The particle sits at the node and does not move",
+        "why": "ψ^*ψ = 0 at the node, so the particle is never found there."
+      }
+    ],
+    "explanation": "The two halves of the n = 2 probability density are mirror images about L/2, so measurements to the left and right of center average out to L/2, even though the particle is never found exactly at L/2."
+  },
+  {
+    "id": "pc3-average-momentum-operator",
+    "type": "multiple-choice",
+    "prompt": "Which operator does the section use for momentum, p̂x?",
+    "choices": [
+      {
+        "text": "−iħ d/dx",
+        "correct": true
+      },
+      {
+        "text": "((−ħ^2)/(2m))(d^2/dx^2)",
+        "why": "That is the kinetic energy operator. The momentum operator has a single first derivative: −iħ d/dx."
+      },
+      {
+        "text": "Multiplication by x",
+        "why": "That is the position operator x̂. Momentum involves a derivative: −iħ d/dx."
+      },
+      {
+        "text": "−iħ d^2/dx^2",
+        "why": "The momentum operator has a first derivative, not a second."
+      }
+    ],
+    "explanation": "The momentum operator is p̂x = −iħ d/dx. It is used in ⟨p⟩ = ∫ψ^*(−iħ d/dx)ψ dx."
+  },
+  {
+    "id": "pc3-average-not-momentum-eigenfunction",
+    "type": "multiple-choice",
+    "prompt": "Why is ψ_n = √(2/L) sin((nπx)/L) not an eigenfunction of p̂ = −iħ d/dx?",
+    "choices": [
+      {
+        "text": "d/dx turns the sine into a cosine, not a multiple of ψ_n",
+        "correct": true
+      },
+      {
+        "text": "ψ_n is not normalized, so no eigenvalue can be read off",
+        "why": "ψ_n is normalized, and normalization doesn't decide it anyway. What matters is whether p̂ψ_n = pψ_n."
+      },
+      {
+        "text": "ψ_n has nodes, and eigenfunctions can't have nodes",
+        "why": "Eigenfunctions of Ĥ, like ψ_n itself, have nodes. The test is whether p̂ψ_n is a constant times ψ_n."
+      },
+      {
+        "text": "p̂ψ_n is a constant times ψ_n, but the constant is imaginary",
+        "why": "p̂ψ_n is not a constant times ψ_n at all: the sine has become a cosine."
+      }
+    ],
+    "explanation": "p̂ψ_n = −iħ√(2/L) cos((nπx)/L)((nπ)/L), which is a cosine, not a multiple of the original sine. So p̂ψ_n ≠ pψ_n and ψ_n is not a momentum eigenfunction. The average ⟨p⟩ can still be calculated."
+  },
+  {
+    "id": "pc3-average-momentum-zero-why",
+    "type": "multiple-choice",
+    "prompt": "Why is the average momentum ⟨p⟩ of a particle in a box zero?",
+    "choices": [
+      {
+        "text": "It moves in the +x and −x directions equally",
+        "correct": true
+      },
+      {
+        "text": "It is at rest in the box, so its momentum is zero",
+        "why": "Its energy is never zero, so it is always moving. The momenta in the two directions cancel on average."
+      },
+      {
+        "text": "Its lowest energy level has zero energy",
+        "why": "The lowest energy, E_1, is not zero. ⟨p⟩ = 0 because +p and −p are equally likely."
+      },
+      {
+        "text": "The potential energy inside the box is zero",
+        "why": "V = 0 means all the energy is kinetic; it doesn't make the momentum zero. Motion in the two directions averages out."
+      }
+    ],
+    "explanation": "Example 3.7.3 shows ⟨p⟩ = 0 in every state, whatever n is. This makes sense because the particle spends equal time traveling in the +x and −x directions, and +p and −p average to zero."
+  },
+  {
+    "id": "pc3-average-momentum-zero-energy",
+    "type": "multiple-choice",
+    "prompt": "⟨p⟩ = 0 for a particle in a box, yet its energy is never zero. How can both be true?",
+    "choices": [
+      {
+        "text": "Kinetic energy depends on p^2, positive for both +p and −p",
+        "correct": true
+      },
+      {
+        "text": "The energy is all potential energy, which needs no momentum",
+        "why": "V = 0 inside the box, so the energy is entirely kinetic."
+      },
+      {
+        "text": "They can't; the energy must really be zero too",
+        "why": "The lowest energy, E_1, is not zero. Only the average of p is zero, not the average of p^2."
+      },
+      {
+        "text": "The kinetic energy depends on ⟨x⟩ = L/2, which isn't zero",
+        "why": "Kinetic energy depends on momentum, KE = p^2/(2m), not on position."
+      }
+    ],
+    "explanation": "Kinetic energy is the momentum squared divided by twice the mass. The average of +p and −p is zero, but p^2 and its average are not, so the kinetic energy is finite."
+  },
+  {
+    "id": "pc3-average-ke-from-momentum",
+    "type": "numeric",
+    "prompt": "An electron (m = 9.11 × 10^−31 kg) in a box is equally likely to have momentum +3.0 × 10^−25 kg·m/s or −3.0 × 10^−25 kg·m/s, so ⟨p⟩ = 0. Using KE = p^2/(2m), what is its kinetic energy, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 4.94e-20,
+    "unit": "J",
+    "explanation": "Both directions give the same p^2 = (3.0 × 10^−25 kg·m/s)^2 = 9.0 × 10^−50 kg^2·m^2/s^2, so KE = (9.0 × 10^−50)/(2 × 9.11 × 10^−31 kg) = 4.94 × 10^−20 J. The average momentum is zero, but the kinetic energy is not."
+  },
+  {
+    "id": "pc3-average-two-directions",
+    "type": "multiple-choice",
+    "prompt": "The particle-in-a-box sine function can be written as a combination of e^(ikx) and e^(−ikx). What do these two terms represent?",
+    "choices": [
+      {
+        "text": "Motion to the right and motion to the left",
+        "correct": true
+      },
+      {
+        "text": "The particle at the left wall and at the right wall",
+        "why": "Each term spreads over the whole box. They stand for the two directions of motion."
+      },
+      {
+        "text": "The ground state and the first excited state",
+        "why": "Both terms have the same k, so they belong to the same state. They differ in the direction of motion."
+      },
+      {
+        "text": "The kinetic energy and the potential energy",
+        "why": "Both are momentum eigenfunctions, with momenta +ħk and −ħk: one for each direction."
+      }
+    ],
+    "explanation": "e^(ikx) and e^(−ikx) are momentum eigenfunctions for movement to the right and to the left. Two such waves of the same wavelength moving in opposite directions add up to the standing sine wave."
+  },
+  {
+    "id": "pc3-average-eikx-eigenvalue",
+    "type": "multiple-choice",
+    "prompt": "Apply p̂ = −iħ d/dx to e^(ikx). What is the momentum eigenvalue?",
+    "choices": [
+      {
+        "text": "ħk",
+        "correct": true
+      },
+      {
+        "text": "−ħk",
+        "why": "−ħk is the eigenvalue for e^(−ikx), motion in the other direction."
+      },
+      {
+        "text": "ik",
+        "why": "ik comes from d/dx alone. Multiply by −iħ as well: −iħ × ik = ħk."
+      },
+      {
+        "text": "−iħk",
+        "why": "This misses the i from the derivative: d/dx e^(ikx) = ik e^(ikx), and −iħ × ik = −i^2ħk = ħk."
+      }
+    ],
+    "explanation": "d/dx e^(ikx) = ik e^(ikx), so p̂e^(ikx) = −iħ(ik)e^(ikx) = ħk e^(ikx). The eigenvalue is p = +ħk; for e^(−ikx) it is −ħk."
+  },
+  {
+    "id": "pc3-average-uncertainty-not-violated",
+    "type": "multiple-choice",
+    "prompt": "For a particle in a box, ⟨x⟩ = L/2 and ⟨p⟩ = 0 are both known exactly. Does this break the Heisenberg uncertainty principle?",
+    "choices": [
+      {
+        "text": "No; the principle limits the uncertainties, not the averages",
+        "correct": true
+      },
+      {
+        "text": "Yes; knowing both x and p exactly is forbidden",
+        "why": "These are averages over many measurements, not exact values of x and p. Single measurements still spread out."
+      },
+      {
+        "text": "No, because the principle doesn't apply to bound particles",
+        "why": "It does apply: the zero-point energy of a bound particle is one of its effects."
+      },
+      {
+        "text": "Yes, but only in the ground state",
+        "why": "⟨x⟩ = L/2 and ⟨p⟩ = 0 in every state, and none of them breaks the principle."
+      }
+    ],
+    "explanation": "The Heisenberg uncertainty principle is about the uncertainties Δx and Δp, the spread of results, not about the average values. Section 3.8 shows how to calculate these uncertainties."
+  },
+  {
+    "id": "pc3-average-orthogonal-definition",
+    "type": "multiple-choice",
+    "prompt": "When are two functions ψ_A and ψ_B orthogonal?",
+    "choices": [
+      {
+        "text": "When ∫ψ_A^*ψ_B dτ over all space equals 0",
+        "correct": true
+      },
+      {
+        "text": "When ∫ψ_A^*ψ_B dτ over all space equals 1",
+        "why": "An integral of 1 is the normalization condition (for a function with itself). Orthogonal means the integral is 0."
+      },
+      {
+        "text": "When their graphs cross at a right angle",
+        "why": "Right angles describe orthogonal vectors. For functions the test is a zero integral of their product."
+      },
+      {
+        "text": "When ψ_A and ψ_B are the same function",
+        "why": "A normalized function with itself gives 1, not 0."
+      }
+    ],
+    "explanation": "Orthogonality extends from perpendicular vectors (zero dot product) to functions: ψ_A and ψ_B are orthogonal if ∫ψ_A^*ψ_B dτ = 0 over all space."
+  },
+  {
+    "id": "pc3-average-orthogonal-box",
+    "type": "multiple-choice",
+    "prompt": "Are the particle-in-a-box wavefunctions ψ_1 and ψ_3 orthogonal?",
+    "choices": [
+      {
+        "text": "Yes, because they are eigenfunctions of Ĥ with different energies",
+        "correct": true
+      },
+      {
+        "text": "No, because their product is not zero at the center of the box",
+        "why": "The integral adds up the product over the whole box, where positive and negative parts cancel. One point doesn't decide it."
+      },
+      {
+        "text": "Yes, but only if the box length is L = 1",
+        "why": "Orthogonality doesn't depend on the box length; it holds for any L."
+      },
+      {
+        "text": "No, because only functions with the same energy are orthogonal",
+        "why": "It is the other way round: eigenfunctions with different eigenvalues are orthogonal."
+      }
+    ],
+    "explanation": "In general, eigenfunctions of a quantum mechanical operator with different eigenvalues are orthogonal. ψ_1 and ψ_3 have energies E_1 and E_3, so ∫ψ_1^*ψ_3 dx = 0."
+  }
+]

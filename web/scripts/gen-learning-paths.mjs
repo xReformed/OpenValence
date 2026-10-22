@@ -15,14 +15,41 @@ const BOOKS = {
   "beginning-chemistry": "introductory",
   "organic-chemistry": "orgchem",
   "inorganic-chemistry": "inorgchem",
+  "physical-chemistry": "physchem",
 };
 
-/* LibreTexts usernames in the front matter -> the names shown in credits. */
+/* Books whose transcription is finished. An empty section file in one of these is a
+   page LibreTexts itself leaves empty (sources/ATTRIBUTION.md lists them: Physical
+   Chemistry 9.13, 9.16, 12.9, 14.9, 19.1, 28.7), not one still to be transcribed, so it
+   is left out of the path instead of showing as "being added". */
+const FINISHED = new Set(["introductory", "orgchem", "inorgchem", "physchem"]);
+
+/* LibreTexts usernames in the front matter -> the names shown in credits, as the
+   pages' own contributor notes give them. A page tagged only "Unknown" or
+   "Libretexts" names no author, like "Anonymous". */
 const AUTHORS = {
   Khaas: "Kathryn Haas",
   Cschaller: "Chris Schaller",
   Smcontakes: "Stephen Contakes",
   Mevans: "Michael Evans",
+  Zielinskit: "Theresa Julia Zielinski",
+  Flowlerm: "Michael Fowler",
+  Delmar: "Delmar Larsen",
+  Mtuckerman: "Mark Tuckerman",
+  Flemingp: "Patrick Fleming",
+  Vallancec: "Claire Vallance",
+  Smblinder: "S. M. Blinder",
+  Wreusch: "William Reusch",
+  Tgrubbs: "Tandy Grubbs",
+  Simonsj: "Jack Simons",
+  Nixr: "Roger Nix",
+  Lowers: "Stephen Lower",
+  Kcrabtree: "Kyle Crabtree",
+  Hdevoe: "Howard DeVoe",
+  Frioux: "Frank Rioux",
+  Wikipedia: "Wikipedia contributors",
+  Unknown: "Anonymous",
+  Libretexts: "Anonymous",
 };
 
 function parse(file, relative) {
@@ -71,6 +98,7 @@ function chaptersOf(folder) {
         join(root, dir.name, name),
         `${folder}/${dir.name}/${name}`,
       );
+      if (FINISHED.has(folder) && !section.ready) continue;
       const book = (bookMeta[folder] ??= { ...meta });
       if (book.author !== meta.author) book.author = MIXED.author;
       if (book.license !== meta.license) book.license = MIXED.license;

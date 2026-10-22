@@ -1,0 +1,625 @@
+[
+  {
+    "id": "pc3-eigen-eigenfunction-definition",
+    "type": "multiple-choice",
+    "prompt": "When is a function ψ called an eigenfunction of an operator Â?",
+    "choices": [
+      {
+        "text": "When Âψ gives back ψ multiplied by a constant",
+        "correct": true
+      },
+      {
+        "text": "When Âψ gives a completely different function",
+        "why": "That is what an operator usually does. An eigenfunction is the special case where the result is just a constant times the same function ψ."
+      },
+      {
+        "text": "When Âψ gives back ψ^2",
+        "why": "Squaring is not the test. ψ is an eigenfunction when Âψ = kψ, a constant times ψ."
+      },
+      {
+        "text": "Whenever ψ solves some differential equation",
+        "why": "Solving some equation is not enough. The test is Âψ = kψ: the operator must give back ψ times a constant."
+      }
+    ],
+    "explanation": "An operator acting on a function usually gives a different function. In the special case Âψ = kψ, where the result is proportional to the original function, ψ is an eigenfunction of Â and k is its eigenvalue. Not every function passes this test."
+  },
+  {
+    "id": "pc3-eigen-eigenvalue-name",
+    "type": "multiple-choice",
+    "prompt": "In the eigenvalue equation Âψ = kψ, what is the constant k called?",
+    "choices": [
+      {
+        "text": "The eigenvalue",
+        "correct": true
+      },
+      {
+        "text": "The eigenfunction",
+        "why": "The eigenfunction is ψ, the function that comes back multiplied by a constant. The constant k is the eigenvalue."
+      },
+      {
+        "text": "The operator",
+        "why": "The operator is Â, the thing that acts on ψ. The number k it produces is the eigenvalue."
+      },
+      {
+        "text": "The normalization constant",
+        "why": "A normalization constant, like A or N in Example 3.3.1, is part of the wavefunction itself. The number k produced by the operator is the eigenvalue."
+      }
+    ],
+    "explanation": "If Âψ = kψ, then ψ is an eigenfunction of Â and k is its eigenvalue. The section notes that these terms are hybrids with German; the purely English terms are \"characteristic function\" and \"characteristic value\"."
+  },
+  {
+    "id": "pc3-eigen-derivative-exponential",
+    "type": "numeric",
+    "prompt": "Apply the operator d/dx to ψ = e^(−5x), using (d/dx)e^(ax) = ae^(ax). The result is a constant times ψ, so ψ is an eigenfunction of d/dx. What is the eigenvalue?",
+    "answer": -5,
+    "tolerance": 0,
+    "explanation": "(d/dx)e^(−5x) = −5e^(−5x) = −5ψ. The function comes back multiplied by the constant −5, so the eigenvalue is −5. An eigenvalue can be negative."
+  },
+  {
+    "id": "pc3-eigen-eigenvalue-meaning",
+    "type": "multiple-choice",
+    "prompt": "In quantum mechanics, what do the eigenvalues a in Âψ = aψ represent?",
+    "choices": [
+      {
+        "text": "The possible measured values of that observable",
+        "correct": true
+      },
+      {
+        "text": "The probability of finding the particle at each point",
+        "why": "Probability comes from |ψ|^2, not from an eigenvalue. The eigenvalues are the values a measurement can give."
+      },
+      {
+        "text": "The shape of the wavefunction in space",
+        "why": "The shape is described by ψ itself. The eigenvalue a is a number: a value that a measurement can give."
+      },
+      {
+        "text": "The uncertainty in a measurement",
+        "why": "An eigenvalue is not an uncertainty. The eigenvalues are the values that a measurement of the observable can actually give."
+      }
+    ],
+    "explanation": "In quantum mechanics, every experimental measurable a is an eigenvalue of a specific operator Â. The eigenvalues are the possible results of measuring that observable."
+  },
+  {
+    "id": "pc3-eigen-allowed-values",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how do the possible values of a measurable quantity differ between classical and quantum mechanics?",
+    "choices": [
+      {
+        "text": "Classically they vary continuously; in quantum mechanics only a subset is usually allowed",
+        "correct": true
+      },
+      {
+        "text": "Classically only a subset is allowed; in quantum mechanics they vary continuously",
+        "why": "That is backwards. Restricting the values to a subset is the \"quantum\" part of quantum mechanics."
+      },
+      {
+        "text": "Both theories allow any value at all",
+        "why": "Quantum mechanics typically allows only certain values, such as a system's allowed energy levels."
+      },
+      {
+        "text": "In quantum mechanics every measurable has exactly one possible value",
+        "why": "There is usually more than one allowed value (for example, many energy levels), just not a continuous range."
+      }
+    ],
+    "explanation": "Classically, a measurable could vary continuously. In quantum mechanics it typically has only a subset of allowed values, which is where the \"quantum\" comes from. The allowed energy levels of a system are the best-known example."
+  },
+  {
+    "id": "pc3-eigen-tise-eigenvalues",
+    "type": "multiple-choice",
+    "prompt": "In the time-independent Schrödinger equation Ĥψ(x) = Eψ(x), what are the eigenvalues E?",
+    "choices": [
+      {
+        "text": "The allowed total energies of the system",
+        "correct": true
+      },
+      {
+        "text": "The allowed momenta of the particle",
+        "why": "Momenta are eigenvalues of the momentum operator −iħ(d/dx). The eigenvalues of the Hamiltonian Ĥ are energies."
+      },
+      {
+        "text": "The potential energy V(x) at each point",
+        "why": "V(x) is part of the operator Ĥ, not its eigenvalue. E is the total energy, kinetic plus potential."
+      },
+      {
+        "text": "The probability densities at each point",
+        "why": "Probability densities come from |ψ|^2. The eigenvalues of Ĥ are energies."
+      }
+    ],
+    "explanation": "Ĥψ = Eψ has the same form as the general eigenvalue equation Âψ = kψ. The operator is the Hamiltonian, and its eigenvalues E are the allowed total energies of the system."
+  },
+  {
+    "id": "pc3-eigen-hamiltonian-terms",
+    "type": "multiple-choice",
+    "prompt": "The Hamiltonian operator Ĥ is the sum of which two parts?",
+    "choices": [
+      {
+        "text": "The kinetic energy and the potential energy",
+        "correct": true
+      },
+      {
+        "text": "The momentum and the position",
+        "why": "Momentum and position have their own operators. Ĥ is the total energy: kinetic energy plus potential energy V(x)."
+      },
+      {
+        "text": "The kinetic energy and the angular momentum",
+        "why": "Angular momentum is a separate operator, L̂⃗. The second part of Ĥ is the potential energy V(x)."
+      },
+      {
+        "text": "The total energy and the time",
+        "why": "Ĥ as a whole is the total energy, and time is not one of its parts. It is kinetic energy plus potential energy."
+      }
+    ],
+    "explanation": "The Hamiltonian is the quantum version of the classical total energy H = T + V, from the formulation of classical mechanics named after the Irish mathematician Hamilton. In one dimension, Ĥ = −(ħ^2/(2m))(d^2/dx^2) + V(x): a kinetic energy term plus the potential energy."
+  },
+  {
+    "id": "pc3-eigen-energy-is-scalar",
+    "type": "multiple-choice",
+    "prompt": "In Ĥψ = Eψ, what kind of quantity is E?",
+    "choices": [
+      {
+        "text": "A number with energy units, like joules",
+        "correct": true
+      },
+      {
+        "text": "An operator that acts on ψ, like Ĥ",
+        "why": "Ĥ is the operator. E is just a number (a scalar) that multiplies ψ."
+      },
+      {
+        "text": "A function of x, like the potential V(x)",
+        "why": "E does not change from point to point. It is a single number, the total energy."
+      },
+      {
+        "text": "A second wavefunction, different from ψ",
+        "why": "E is not a function at all. It is a scalar, the energy, that multiplies ψ."
+      }
+    ],
+    "explanation": "The Hamiltonian operates on the wavefunction to give a scalar, the energy E (expressed, for example, in joules), times the same wavefunction."
+  },
+  {
+    "id": "pc3-eigen-momentum-replacement",
+    "type": "multiple-choice",
+    "prompt": "The Hamiltonian is obtained from the classical energy (p^2)/(2m) + V(x) by replacing the momentum p with what?",
+    "choices": [
+      {
+        "text": "−iħ(d/dx)",
+        "correct": true
+      },
+      {
+        "text": "−(ħ^2/(2m))(d^2/dx^2)",
+        "why": "That is the whole kinetic energy operator, which is what (p^2)/(2m) becomes. The momentum p itself is replaced by −iħ(d/dx)."
+      },
+      {
+        "text": "x",
+        "why": "Multiplying by x is the position operator. The momentum is replaced by −iħ(d/dx)."
+      },
+      {
+        "text": "iħ(∂/∂t)",
+        "why": "iħ(∂/∂t) appears in the time-dependent Schrödinger equation. In the Hamiltonian, p is replaced by −iħ(d/dx)."
+      }
+    ],
+    "explanation": "Replacing p → −iħ(d/dx) turns (p^2)/(2m) into −(ħ^2/(2m))(d^2/dx^2), so the classical energy becomes the Hamiltonian operator. The section gives this as an example of the Correspondence Principle."
+  },
+  {
+    "id": "pc3-eigen-correspondence-principle",
+    "type": "multiple-choice",
+    "prompt": "What does the Correspondence Principle, first proposed by Niels Bohr, state?",
+    "choices": [
+      {
+        "text": "Quantum theory reproduces classical physics in the limit of large quantum numbers",
+        "correct": true
+      },
+      {
+        "text": "Quantum theory reproduces classical physics in the limit of small quantum numbers",
+        "why": "It is the other limit: quantum behavior approaches classical behavior as the quantum numbers become large."
+      },
+      {
+        "text": "Every operator corresponds to exactly one wavefunction",
+        "why": "An operator can have many eigenfunctions. The principle is about quantum theory matching classical physics at large quantum numbers."
+      },
+      {
+        "text": "Classical physics correctly describes electrons in atoms",
+        "why": "Classical physics fails for electrons in atoms. The principle says quantum results approach classical ones when the quantum numbers are large."
+      }
+    ],
+    "explanation": "The Correspondence Principle states that the behavior of systems described by quantum theory reproduces classical physics in the limit of large quantum numbers."
+  },
+  {
+    "id": "pc3-eigen-operator-for-observable",
+    "type": "multiple-choice",
+    "prompt": "What general principle does the section state about physical observables (anything that can be measured)?",
+    "choices": [
+      {
+        "text": "There is an operator for every physical observable",
+        "correct": true
+      },
+      {
+        "text": "Only the energy has an operator",
+        "why": "Energy has the Hamiltonian, but momentum, position, kinetic energy and angular momentum have operators too: every observable has one."
+      },
+      {
+        "text": "Observables can never be found from the wavefunction",
+        "why": "They can: if ψ is an eigenfunction, operating on it with the right operator gives the value as the eigenvalue."
+      },
+      {
+        "text": "Each observable has exactly one possible value",
+        "why": "An observable can have many possible values, its eigenvalues. The principle is that every observable has an operator."
+      }
+    ],
+    "explanation": "It is a general principle of quantum mechanics that every physical observable, anything that can be measured, has an operator: energy goes with Ĥ, momentum with p̂_x, position with x̂, and so on."
+  },
+  {
+    "id": "pc3-eigen-eigenstate-measurement",
+    "type": "multiple-choice",
+    "prompt": "A system's wavefunction is an eigenfunction of Â with eigenvalue a. What does a measurement of the matching observable give?",
+    "choices": [
+      {
+        "text": "The value a, every time",
+        "correct": true
+      },
+      {
+        "text": "A different eigenvalue each time",
+        "why": "That can happen when ψ is not an eigenfunction of Â. In an eigenstate, the measurement gives the eigenvalue a."
+      },
+      {
+        "text": "The value a^2",
+        "why": "The eigenvalue itself is the measured value, not its square."
+      },
+      {
+        "text": "The average of all the eigenvalues of Â",
+        "why": "In an eigenstate there is no spread of results to average: the measurement gives the eigenvalue a."
+      }
+    ],
+    "explanation": "If ψ is an eigenfunction of Â, the system is said to be in an eigenstate, and the value of the observable is the eigenvalue a. Operating on ψ with Â is how that value is extracted."
+  },
+  {
+    "id": "pc3-eigen-non-eigenstate-measurement",
+    "type": "multiple-choice",
+    "prompt": "If the wavefunction is not an eigenfunction of an operator, what can a measurement of that observable give?",
+    "choices": [
+      {
+        "text": "An eigenvalue, but not always the same one",
+        "correct": true
+      },
+      {
+        "text": "A value that lies between two of the eigenvalues",
+        "why": "A measurement always gives an eigenvalue, by definition. What changes is that it need not be the same eigenvalue every time."
+      },
+      {
+        "text": "The same eigenvalue on every measurement",
+        "why": "That is true only in an eigenstate. Otherwise, repeated measurements can give different eigenvalues."
+      },
+      {
+        "text": "No result, because the observable can't be measured",
+        "why": "The observable can still be measured. The result is an eigenvalue, but it may differ from one measurement to the next."
+      }
+    ],
+    "explanation": "A measurement always gives an eigenvalue of the operator. If ψ is not an eigenfunction, the measurement still gives an eigenvalue, but not necessarily the same one for each measurement."
+  },
+  {
+    "id": "pc3-eigen-momentum-3d",
+    "type": "multiple-choice",
+    "prompt": "How is the linear momentum operator written in three dimensions?",
+    "choices": [
+      {
+        "text": "p̂⃗ = −iħ∇",
+        "correct": true
+      },
+      {
+        "text": "p̂⃗ = −(ħ^2/(2m))∇^2",
+        "why": "That is the three-dimensional kinetic energy operator. The momentum operator has a single ∇: −iħ∇."
+      },
+      {
+        "text": "p̂⃗ = r⃗",
+        "why": "Multiplying by r⃗ is the position operator. The momentum operator is −iħ∇."
+      },
+      {
+        "text": "p̂⃗ = −iħ(r⃗ × ∇)",
+        "why": "That is the angular momentum operator, L̂⃗. Linear momentum is −iħ∇."
+      }
+    ],
+    "explanation": "In one dimension, p̂_x = −iħ(∂/∂x). In three dimensions the derivative becomes the gradient: p̂⃗ = −iħ∇."
+  },
+  {
+    "id": "pc3-eigen-plane-wave-momentum",
+    "type": "numeric",
+    "prompt": "Apply p̂_x = −iħ(d/dx) to ψ = e^(ikx), using (d/dx)e^(ikx) = ik e^(ikx) and (−i)(i) = 1. The result is p_x ψ. What is the momentum eigenvalue p_x, in kg·m/s, for k = 2.00 × 10^10 m^−1 and ħ = 1.055 × 10^−34 J·s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 2.11e-24,
+    "explanation": "−iħ(d/dx)e^(ikx) = (−iħ)(ik)e^(ikx) = ħk e^(ikx), so p_x = ħk = (1.055 × 10^−34 J·s)(2.00 × 10^10 m^−1) = 2.11 × 10^−24 kg·m/s."
+  },
+  {
+    "id": "pc3-eigen-position-operator",
+    "type": "multiple-choice",
+    "prompt": "What does the position operator x̂ do to a wavefunction ψ(x)?",
+    "choices": [
+      {
+        "text": "It multiplies ψ(x) by x",
+        "correct": true
+      },
+      {
+        "text": "It takes the derivative of ψ(x) with respect to x",
+        "why": "A derivative is part of the momentum operator, −iħ(d/dx). The position operator is simply x̂ = x."
+      },
+      {
+        "text": "It squares ψ(x)",
+        "why": "Squaring is not what x̂ does. The position operator multiplies the function by x."
+      },
+      {
+        "text": "It sets x equal to zero",
+        "why": "x̂ does not change x. It multiplies the wavefunction by the position x."
+      }
+    ],
+    "explanation": "In one dimension the position operator is x̂ = x: it just multiplies the wavefunction by x. In three dimensions it is r̂⃗ = r⃗, with r⃗ = (x, y, z)."
+  },
+  {
+    "id": "pc3-eigen-kinetic-operator",
+    "type": "multiple-choice",
+    "prompt": "Which is the quantum mechanical kinetic energy operator for a particle moving in one dimension?",
+    "choices": [
+      {
+        "text": "−(ħ^2/(2m))(d^2/dx^2)",
+        "correct": true
+      },
+      {
+        "text": "−iħ(d/dx)",
+        "why": "That is the momentum operator. Kinetic energy has a second derivative: −(ħ^2/(2m))(d^2/dx^2)."
+      },
+      {
+        "text": "(p_x^2)/(2m), with p_x an ordinary number",
+        "why": "That is the classical kinetic energy. The quantum operator replaces p_x by −iħ(d/dx), which gives −(ħ^2/(2m))(d^2/dx^2)."
+      },
+      {
+        "text": "−(ħ^2/(2m))(d^2/dx^2) + V(x)",
+        "why": "Adding V(x) gives the Hamiltonian, the total energy. The kinetic energy operator is the second-derivative term alone."
+      }
+    ],
+    "explanation": "Classically, KE = (p_x^2)/(2m). Replacing p_x by −iħ(d/dx) gives the kinetic energy operator −(ħ^2/(2m))(d^2/dx^2). In three dimensions it is −(ħ^2/(2m))∇^2."
+  },
+  {
+    "id": "pc3-eigen-angular-momentum",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the angular momentum operator is the cross product of which two operators?",
+    "choices": [
+      {
+        "text": "Position and linear momentum",
+        "correct": true
+      },
+      {
+        "text": "Position and kinetic energy",
+        "why": "Kinetic energy is not part of it. L̂⃗ = −iħ(r⃗ × ∇) combines the position r⃗ with the momentum operator −iħ∇."
+      },
+      {
+        "text": "Linear momentum and the Hamiltonian",
+        "why": "The Hamiltonian is the energy operator. Angular momentum is the cross product of position and linear momentum."
+      },
+      {
+        "text": "Position and time",
+        "why": "There is no time in L̂⃗ = −iħ(r⃗ × ∇). It combines position and linear momentum."
+      }
+    ],
+    "explanation": "Angular momentum is the cross product of the position operator r̂⃗ and the momentum operator p̂⃗ = −iħ∇, giving L̂⃗ = −iħ(r⃗ × ∇)."
+  },
+  {
+    "id": "pc3-eigen-time-evolution",
+    "type": "multiple-choice",
+    "prompt": "Besides determining the energies of a system, what else does the Hamiltonian operator do, according to the section?",
+    "choices": [
+      {
+        "text": "It dictates how the wavefunction changes with time",
+        "correct": true
+      },
+      {
+        "text": "It fixes the particle's exact position",
+        "why": "Position goes with the position operator x̂. The Hamiltonian, through ĤΨ = iħ(∂Ψ/∂t), governs how Ψ evolves in time."
+      },
+      {
+        "text": "It gives the particle's angular momentum",
+        "why": "Angular momentum has its own operator, L̂⃗. The Hamiltonian dictates the time evolution of the wavefunction."
+      },
+      {
+        "text": "It turns a complex wavefunction into a real one",
+        "why": "The section says nothing of the kind. The Hamiltonian dictates how the wavefunction evolves in time."
+      }
+    ],
+    "explanation": "In the time-dependent Schrödinger equation, ĤΨ(x, t) = iħ(∂Ψ(x, t)/∂t), the Hamiltonian determines how the wavefunction changes with time, in addition to determining the system's energies."
+  },
+  {
+    "id": "pc3-eigen-state-of-system",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the wavefunction of a system contain?",
+    "choices": [
+      {
+        "text": "Everything the observer can know about the system",
+        "correct": true
+      },
+      {
+        "text": "Only the energy, since ψ comes from Ĥψ = Eψ",
+        "why": "Energy is one thing you can get from ψ. The wavefunction gives the whole \"state of the system\"."
+      },
+      {
+        "text": "Only where the particle is likely to be found",
+        "why": "Position is only one observable. The wavefunction stores all the information available about the system."
+      },
+      {
+        "text": "Only the eigenvalues of every operator",
+        "why": "Eigenvalues come from operating on the wavefunction. The wavefunction itself holds all the available information."
+      }
+    ],
+    "explanation": "The wavefunction gives the \"state of the system\": it stores all the information available to the observer about the system. For this reason, the terms eigenstate and wavefunction are often used interchangeably."
+  },
+  {
+    "id": "pc3-eigen-superposition",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction ψ is not an eigenstate of a particular operator. How can it usually be written?",
+    "choices": [
+      {
+        "text": "As a sum of that operator's eigenstates",
+        "correct": true
+      },
+      {
+        "text": "As a product of that operator's eigenvalues",
+        "why": "Eigenvalues are numbers, and multiplying them gives a number, not a function. ψ can be written as a superposition, ψ = Σ_i c_i φ_i."
+      },
+      {
+        "text": "As the square of a single eigenstate",
+        "why": "ψ is not one eigenstate squared. It is a sum of eigenstates with coefficients: ψ = Σ_i c_i φ_i."
+      },
+      {
+        "text": "It can't be written using eigenstates at all",
+        "why": "It usually can: ψ = Σ_i c_i φ_i, a superposition of the eigenstates φ_i."
+      }
+    ],
+    "explanation": "A wavefunction that is not an eigenstate of an operator can usually be written as a superposition of that operator's eigenstates φ_i: ψ = Σ_i c_i φ_i, where the c_i are coefficients."
+  },
+  {
+    "id": "pc3-eigen-after-measurement",
+    "type": "multiple-choice",
+    "prompt": "What is true of the wavefunction immediately after a measurement?",
+    "choices": [
+      {
+        "text": "It is an eigenstate of the measured observable",
+        "correct": true
+      },
+      {
+        "text": "It is the same as it was before the measurement",
+        "why": "A measurement affects the state: afterward, the wavefunction is an eigenstate of the measured observable."
+      },
+      {
+        "text": "It is an eigenstate of every operator at once",
+        "why": "It is an eigenstate of the operator for the quantity just measured, not of all operators; different operators usually have different eigenstates."
+      },
+      {
+        "text": "It becomes zero everywhere in space",
+        "why": "The particle does not vanish. The wavefunction becomes an eigenstate of the measured observable."
+      }
+    ],
+    "explanation": "The wavefunction immediately after a measurement is an eigenstate of the operator associated with that measurement, and the result is the matching eigenvalue. This is described as the wavefunction \"collapsing\" into an eigenstate. It is the measurement that does this; applying the operator on paper does not change the state."
+  },
+  {
+    "id": "pc3-eigen-two-operators",
+    "type": "multiple-choice",
+    "prompt": "If a wavefunction is an eigenstate of linear momentum, must it also be an eigenstate of energy?",
+    "choices": [
+      {
+        "text": "Not necessarily: it may or may not be",
+        "correct": true
+      },
+      {
+        "text": "Yes, always",
+        "why": "Different operators usually have different eigenstates, so being an eigenstate of one does not guarantee being an eigenstate of another."
+      },
+      {
+        "text": "No, never",
+        "why": "It can be both. In Example 3.3.1, Ne^(−ix/ħ) is an eigenstate of both momentum and kinetic energy, which for a free particle is its total energy."
+      },
+      {
+        "text": "Yes, because energy and momentum share one operator",
+        "why": "They have different operators: Ĥ for energy and −iħ(d/dx) for momentum. A state may or may not be an eigenstate of both."
+      }
+    ],
+    "explanation": "A state that is an eigenstate of one operator is not necessarily an eigenstate of a different operator, although it sometimes is. In Example 3.3.1, Ne^(−ix/ħ) is an eigenstate of both linear momentum and kinetic energy."
+  },
+  {
+    "id": "pc3-eigen-sine-not-momentum",
+    "type": "multiple-choice",
+    "prompt": "In Example 3.3.1, why is ψ = A sin(ax) not an eigenfunction of the momentum operator −iħ(d/dx)?",
+    "choices": [
+      {
+        "text": "Its derivative is a cosine, not a constant times sin(ax)",
+        "correct": true
+      },
+      {
+        "text": "Its derivative is zero everywhere in space",
+        "why": "(d/dx)A sin(ax) = Aa cos(ax), which is not zero. It fails because a cosine is not a constant times sin(ax)."
+      },
+      {
+        "text": "Real functions like sin(ax) are never eigenfunctions",
+        "why": "sin(ax) is real, and it is still an eigenfunction of kinetic energy. It fails for momentum because its derivative is a cosine."
+      },
+      {
+        "text": "Its constant A has not been normalized yet",
+        "why": "Normalization doesn't decide this. The test is whether −iħ(d/dx) gives back a constant times sin(ax), and it gives a cosine instead."
+      }
+    ],
+    "explanation": "−iħ(d/dx)A sin(ax) = −iħAa cos(ax). A cosine is not a constant times sin(ax), so A sin(ax) is not an eigenfunction of momentum. A second derivative brings back sin(ax), so it is an eigenfunction of kinetic energy."
+  },
+  {
+    "id": "pc3-eigen-second-derivative-sine",
+    "type": "numeric",
+    "prompt": "Apply d^2/dx^2 to ψ = sin(4x), using (d/dx)sin(4x) = 4cos(4x) and (d/dx)cos(4x) = −4sin(4x). The result is a constant times ψ. What is that constant, the eigenvalue?",
+    "answer": -16,
+    "tolerance": 0,
+    "explanation": "(d^2/dx^2)sin(4x) = (d/dx)[4cos(4x)] = 4 × (−4sin(4x)) = −16 sin(4x), so the eigenvalue is −16. This is why sin(ax) is an eigenfunction of the kinetic energy operator, which contains d^2/dx^2."
+  },
+  {
+    "id": "pc3-eigen-sine-kinetic-energy",
+    "type": "numeric",
+    "prompt": "In Example 3.3.1, ψ = A sin(ax) is an eigenfunction of kinetic energy with eigenvalue KE = (ħ^2a^2)/(2m). What is KE, in J, for an electron (m = 9.11 × 10^−31 kg) with a = 1.00 × 10^10 m^−1? Use ħ = 1.055 × 10^−34 J·s. (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 6.11e-19,
+    "unit": "J",
+    "explanation": "ħ^2 = 1.113 × 10^−68 J^2·s^2, a^2 = 1.00 × 10^20 m^−2 and 2m = 1.822 × 10^−30 kg, so KE = (1.113 × 10^−48)/(1.822 × 10^−30) J = 6.11 × 10^−19 J."
+  },
+  {
+    "id": "pc3-eigen-kinetic-energy-scaling",
+    "type": "numeric",
+    "prompt": "In Example 3.3.1, the kinetic energy of ψ = A sin(ax) is KE = (ħ^2a^2)/(2m). If a is doubled, by what factor does KE increase?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "KE is proportional to a^2, so doubling a multiplies KE by 2^2 = 4. A larger a means a sine wave that oscillates more quickly in space, and that carries more kinetic energy."
+  },
+  {
+    "id": "pc3-eigen-both-operators",
+    "type": "multiple-choice",
+    "prompt": "Which of these wavefunctions is an eigenstate of both linear momentum and kinetic energy?",
+    "choices": [
+      {
+        "text": "Ne^(−ix/ħ)",
+        "correct": true
+      },
+      {
+        "text": "A sin(ax)",
+        "why": "Example 3.3.1 shows A sin(ax) is an eigenstate of kinetic energy only: its first derivative is a cosine, so it fails for momentum."
+      },
+      {
+        "text": "A cos(ax)",
+        "why": "Like the sine, A cos(ax) passes the kinetic energy test (two derivatives bring back the cosine) but fails for momentum, since one derivative gives a sine."
+      },
+      {
+        "text": "Ax^2",
+        "why": "d/dx gives 2Ax and d^2/dx^2 gives 2A. Neither is a constant times x^2, so Ax^2 is an eigenstate of neither operator."
+      }
+    ],
+    "explanation": "Each derivative of an exponential gives back the same exponential times a constant, so Ne^(−ix/ħ) is an eigenstate of both −iħ(d/dx) and −(ħ^2/(2m))(d^2/dx^2). Example 3.3.1 shows this for momentum and kinetic energy."
+  },
+  {
+    "id": "pc3-eigen-kinetic-from-momentum",
+    "type": "numeric",
+    "prompt": "A free particle in a momentum eigenstate, like Ne^(−ix/ħ) in Example 3.3.1, is also an eigenstate of kinetic energy, with KE = (p_x^2)/(2m). What is KE, in J, for an electron (m = 9.11 × 10^−31 kg) with p_x = 2.00 × 10^−24 kg·m/s? (Type it in scientific notation, like 2.5e-18.)",
+    "answer": 2.2e-18,
+    "unit": "J",
+    "explanation": "p_x^2 = 4.00 × 10^−48 kg^2·m^2/s^2 and 2m = 1.822 × 10^−30 kg, so KE = (4.00 × 10^−48)/(1.822 × 10^−30) J = 2.20 × 10^−18 J."
+  },
+  {
+    "id": "pc3-eigen-exercise-momentum",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 3.3.1, ψ = Me^(−bx). Applying −iħ(d/dx) gives a constant times ψ. What is that momentum eigenvalue?",
+    "choices": [
+      {
+        "text": "biħ",
+        "correct": true
+      },
+      {
+        "text": "−biħ",
+        "why": "Check the signs: d/dx gives −bMe^(−bx), and (−iħ)(−b) = +biħ."
+      },
+      {
+        "text": "−b",
+        "why": "That is what d/dx alone gives. The operator also has the factor −iħ: (−iħ)(−b) = biħ."
+      },
+      {
+        "text": "−(ħ^2b^2)/(2m)",
+        "why": "That is the kinetic energy eigenvalue from the same exercise. The momentum eigenvalue is biħ."
+      }
+    ],
+    "explanation": "(d/dx)Me^(−bx) = −bMe^(−bx), so −iħ(d/dx)Me^(−bx) = (−iħ)(−b)Me^(−bx) = biħ Me^(−bx), and the eigenvalue is biħ. The same function is also an eigenfunction of kinetic energy, with eigenvalue −(ħ^2b^2)/(2m)."
+  }
+]

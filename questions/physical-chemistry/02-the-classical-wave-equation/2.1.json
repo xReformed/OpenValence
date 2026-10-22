@@ -1,0 +1,627 @@
+[
+  {
+    "id": "pc2-amplitude-symbol",
+    "type": "multiple-choice",
+    "prompt": "In the sine wave A(x, t) = Ao sin(kx − ωt + φ), what does Ao stand for?",
+    "choices": [
+      {
+        "text": "The maximum amplitude: the largest distance of the wave from its rest position",
+        "correct": true
+      },
+      {
+        "text": "The wavelength",
+        "why": "The wavelength is set by the wavenumber k, inside the sine. Ao sits outside the sine and scales its height."
+      },
+      {
+        "text": "The angular frequency",
+        "why": "The angular frequency is ω, which multiplies t inside the sine."
+      },
+      {
+        "text": "The phase constant",
+        "why": "The phase constant is φ, the number added inside the sine."
+      }
+    ],
+    "explanation": "A sine never goes above 1 or below −1, so Ao sin(…) swings between +Ao and −Ao. Ao is the maximum amplitude: the greatest distance from the rest line to a crest."
+  },
+  {
+    "id": "pc2-wavenumber-symbol",
+    "type": "multiple-choice",
+    "prompt": "In A(x, t) = Ao sin(kx − ωt + φ), which symbol is the wavenumber?",
+    "choices": [
+      {
+        "text": "k",
+        "correct": true
+      },
+      {
+        "text": "ω",
+        "why": "ω is the angular frequency; it multiplies the time t."
+      },
+      {
+        "text": "φ",
+        "why": "φ is the phase constant; it shifts the whole wave."
+      },
+      {
+        "text": "Ao",
+        "why": "Ao is the maximum amplitude, the height of the wave."
+      }
+    ],
+    "explanation": "In A(x, t) = Ao sin(kx − ωt + φ), k is the wavenumber (it multiplies the position x), ω the angular frequency (it multiplies the time t), φ the phase constant and Ao the maximum amplitude."
+  },
+  {
+    "id": "pc2-traveling-wave-example",
+    "type": "multiple-choice",
+    "prompt": "Which of these is a traveling wave?",
+    "choices": [
+      {
+        "text": "A sound wave moving across a room",
+        "correct": true
+      },
+      {
+        "text": "The vibration of a plucked guitar string",
+        "why": "A plucked string held at both ends vibrates as a standing wave: its crests, troughs and nodes stay in fixed places."
+      },
+      {
+        "text": "A string vibrating with nodes that stay in fixed places",
+        "why": "Fixed nodes are the mark of a standing wave, not a traveling one."
+      },
+      {
+        "text": "A violin string with a finger pressed on it",
+        "why": "The section uses guitar and violin strings as its examples of standing waves."
+      }
+    ],
+    "explanation": "Traveling waves move through space and carry energy from one place to another. Sound, light (electromagnetic radiation) and ocean waves are the section's examples. A plucked string makes a standing wave."
+  },
+  {
+    "id": "pc2-traveling-wave-shape",
+    "type": "multiple-choice",
+    "prompt": "A bump travels along a rope as y(x, t) = f(x − vt). What does this tell you about the bump?",
+    "choices": [
+      {
+        "text": "It keeps the same shape and moves along the rope at speed v",
+        "correct": true
+      },
+      {
+        "text": "It gets taller as it moves",
+        "why": "f(x − vt) is the same function f at every time, just shifted, so the shape and height don't change."
+      },
+      {
+        "text": "It stays in one place and only moves up and down",
+        "why": "That describes a standing wave. Here the whole shape shifts along by vt."
+      },
+      {
+        "text": "It moves backwards, toward smaller x",
+        "why": "As t grows, the same value of x − vt is found at a larger x, so the bump moves toward larger x."
+      }
+    ],
+    "explanation": "y(x, t) = f(x − vt) is the shape f(x) at time 0 slid along by a distance vt. So the wave keeps its shape and moves at a steady speed v (ignoring friction, which in a real rope slowly shrinks the bump)."
+  },
+  {
+    "id": "pc2-traveling-distance",
+    "type": "numeric",
+    "prompt": "A bump moves along a rope at v = 2 m/s and keeps its shape, so y(x, t) = f(x − vt). How far along the rope, in meters, has the bump moved after 3 s?",
+    "answer": 6,
+    "unit": "m",
+    "explanation": "The shape is shifted by vt = (2 m/s)(3 s) = 6 m."
+  },
+  {
+    "id": "pc2-node-definition",
+    "type": "multiple-choice",
+    "prompt": "On a standing wave, what is a node?",
+    "choices": [
+      {
+        "text": "A point that does not move at all",
+        "correct": true
+      },
+      {
+        "text": "A point that moves the most",
+        "why": "The points of greatest motion are antinodes. Nodes are the \"quiet\" points."
+      },
+      {
+        "text": "The crest of a traveling wave",
+        "why": "Nodes belong to standing waves, and they are points of no motion, not crests."
+      },
+      {
+        "text": "A point that moves along the string with the wave",
+        "why": "In a standing wave the nodes stay in fixed places; nothing travels along the string."
+      }
+    ],
+    "explanation": "A standing wave has points that never move, called nodes, and points that move the most, called antinodes. A string held at both ends always has nodes at its two ends."
+  },
+  {
+    "id": "pc2-energy-transport",
+    "type": "multiple-choice",
+    "prompt": "Which kind of wave carries energy from one place to another?",
+    "choices": [
+      {
+        "text": "A traveling wave",
+        "correct": true
+      },
+      {
+        "text": "A standing wave",
+        "why": "In a standing wave the crests, troughs and nodes stay put. It vibrates up and down, but no energy travels along it."
+      },
+      {
+        "text": "Both kinds carry energy along their length equally",
+        "why": "Only traveling waves move energy from place to place."
+      },
+      {
+        "text": "Neither kind",
+        "why": "Traveling waves do: that is what lets sound and light reach you."
+      }
+    ],
+    "explanation": "A traveling wave moves through space and transmits energy over a distance. A standing wave only vibrates up and down in fixed places, so no energy travels along its length."
+  },
+  {
+    "id": "pc2-bound-electron",
+    "type": "multiple-choice",
+    "prompt": "An electron held inside an atom (a \"bound\" electron) behaves most like which kind of wave?",
+    "choices": [
+      {
+        "text": "A standing wave",
+        "correct": true
+      },
+      {
+        "text": "A traveling wave",
+        "why": "Free particles, like the electron knocked out in the photoelectric effect, behave like traveling waves. A bound electron behaves like a standing wave."
+      },
+      {
+        "text": "A sound wave",
+        "why": "A sound wave is a traveling wave. A bound electron stays in one region, like a standing wave."
+      },
+      {
+        "text": "It does not behave like a wave at all",
+        "why": "Chapter 1 showed electrons have wave properties. A bound electron acts like a standing wave."
+      }
+    ],
+    "explanation": "A free particle moves through space like a traveling wave. A bound electron stays in one region, like a standing wave on a string held at both ends. This picture was used in the Bohr atom to quantize the electron's angular momentum."
+  },
+  {
+    "id": "pc2-boundary-conditions-string",
+    "type": "multiple-choice",
+    "prompt": "A string of length L is held tight at both ends. Which pair of boundary conditions describes it?",
+    "choices": [
+      {
+        "text": "u(0, t) = 0 and u(L, t) = 0 for all times t",
+        "correct": true
+      },
+      {
+        "text": "u(0, t) = 1 and u(L, t) = 1",
+        "why": "The ends are held still, so their displacement is zero, not one."
+      },
+      {
+        "text": "u(x, 0) = 0 for every x",
+        "why": "That is a condition on the whole string at one time (an initial condition), not on its ends."
+      },
+      {
+        "text": "There are no boundary conditions, because the string can move anywhere",
+        "why": "The fixed ends are exactly what the boundary conditions describe."
+      }
+    ],
+    "explanation": "Boundary conditions say what happens at the edges. A string held at x = 0 and x = L can't move there, so u(0, t) = 0 and u(L, t) = 0 at all times. Conditions like these let only certain waves exist, which is the mathematical origin of quantization."
+  },
+  {
+    "id": "pc2-more-nodes-energy",
+    "type": "multiple-choice",
+    "prompt": "Compare standing waves on the same string. How does a wave with more nodes compare with one that has fewer?",
+    "choices": [
+      {
+        "text": "It has a higher frequency and a higher energy",
+        "correct": true
+      },
+      {
+        "text": "It has a lower frequency and a lower energy",
+        "why": "It is the other way round: more nodes means more curvature, a higher frequency, and so a higher energy."
+      },
+      {
+        "text": "It has the same frequency, just a different shape",
+        "why": "The frequency depends on the number of nodes; it is not the same for all of them."
+      },
+      {
+        "text": "It has a higher frequency but a lower energy",
+        "why": "By Planck's E = hν, a higher frequency goes with a higher energy."
+      }
+    ],
+    "explanation": "More nodes means the string curves more sharply, which gives a greater acceleration and a higher frequency of oscillation. With E = hν from Chapter 1, higher-frequency waves are higher-energy solutions."
+  },
+  {
+    "id": "pc2-1d-wave-coordinates",
+    "type": "multiple-choice",
+    "prompt": "In the sine wave A(x, t) = Ao sin(kx − ωt + φ), which two symbols are the coordinates, the variables the wave depends on?",
+    "choices": [
+      {
+        "text": "x and t",
+        "correct": true
+      },
+      {
+        "text": "k and ω",
+        "why": "k (the wavenumber) and ω (the angular frequency) are constants of the wave. They multiply the coordinates x and t."
+      },
+      {
+        "text": "Ao and φ",
+        "why": "Ao (the maximum amplitude) and φ (the phase constant) are fixed numbers for a given wave."
+      },
+      {
+        "text": "x and k",
+        "why": "x is the space coordinate, but k is the wavenumber, a constant. The time coordinate is t."
+      }
+    ],
+    "explanation": "x is the space coordinate and t is the time coordinate. Ao, k, ω and φ are constants that fix the wave's height, wavelength, frequency and starting point."
+  },
+  {
+    "id": "pc2-1d-wave-crest",
+    "type": "multiple-choice",
+    "prompt": "What is the crest of a wave?",
+    "choices": [
+      {
+        "text": "The highest point of the disturbance",
+        "correct": true
+      },
+      {
+        "text": "The lowest point of the disturbance",
+        "why": "That is a trough. The crest is the highest point."
+      },
+      {
+        "text": "The equilibrium (rest) position",
+        "why": "The rest position is the baseline. The crest is the highest point above it, a distance Ao away."
+      },
+      {
+        "text": "A point on a standing wave that never moves",
+        "why": "That is a node. A crest is the highest point of the wave."
+      }
+    ],
+    "explanation": "Waves have crests (highest points) and troughs (lowest points). The maximum amplitude Ao is the distance from a crest to the equilibrium position."
+  },
+  {
+    "id": "pc2-1d-wave-two-groups",
+    "type": "multiple-choice",
+    "prompt": "Into which two groups does the section sort waves?",
+    "choices": [
+      {
+        "text": "Traveling waves and standing waves",
+        "correct": true
+      },
+      {
+        "text": "Sound waves and light waves",
+        "why": "Sound and light are both examples of traveling waves. The two groups are traveling and standing (stationary) waves."
+      },
+      {
+        "text": "Fast waves and slow waves",
+        "why": "The section doesn't group waves by speed. It separates waves that move through space from waves that stay in place."
+      },
+      {
+        "text": "Sine waves and cosine waves",
+        "why": "A sine and a cosine have the same shape, just shifted. The section's two groups are traveling and standing waves."
+      }
+    ],
+    "explanation": "Traveling waves move through space and carry energy, like sound or ocean waves. Standing (stationary) waves stay in place, with crests, troughs and nodes at fixed positions, like a plucked guitar string."
+  },
+  {
+    "id": "pc2-1d-rope-displacement",
+    "type": "multiple-choice",
+    "prompt": "A wave travels along a stretched rope. What does y(x, t) measure?",
+    "choices": [
+      {
+        "text": "How far the rope at point x is from its rest position at time t",
+        "correct": true
+      },
+      {
+        "text": "The distance along the rope from your hand to the point x",
+        "why": "That distance is x itself. y is the up-and-down displacement of the rope at x."
+      },
+      {
+        "text": "The speed at which the bump moves along the rope",
+        "why": "The speed is v. y is how far the rope is displaced from its rest position."
+      },
+      {
+        "text": "How far the bump has traveled along the rope by time t",
+        "why": "The bump moves a distance vt along the x-axis. y is the vertical displacement from the rest position."
+      }
+    ],
+    "explanation": "The rope's rest position is taken as the x-axis, and y is measured vertically upward. So y(x, t) is how far the rope at position x is from its rest position at time t."
+  },
+  {
+    "id": "pc2-1d-rope-friction",
+    "type": "multiple-choice",
+    "prompt": "y(x, t) = f(x − vt) neglects friction. What happens to a bump traveling along a real rope?",
+    "choices": [
+      {
+        "text": "It gradually gets smaller as it moves",
+        "correct": true
+      },
+      {
+        "text": "It gradually gets taller as it moves",
+        "why": "Friction takes energy away from the bump, so it shrinks, not grows."
+      },
+      {
+        "text": "It gradually speeds up as it moves",
+        "why": "Friction doesn't make the bump faster. What it does is make the bump gradually smaller."
+      },
+      {
+        "text": "It turns into a standing wave",
+        "why": "A single bump keeps traveling along the rope. Friction just makes it gradually smaller."
+      }
+    ],
+    "explanation": "f(x − vt) describes a wave that keeps exactly the same shape. That neglects friction: in a real rope, the bump gradually gets smaller as it moves along."
+  },
+  {
+    "id": "pc2-1d-wave-equation-type",
+    "type": "multiple-choice",
+    "prompt": "What kind of equation is the classical wave equation, ∂^2u/∂x^2 = (1/v^2) ∂^2u/∂t^2?",
+    "choices": [
+      {
+        "text": "A linear partial differential equation",
+        "correct": true
+      },
+      {
+        "text": "An algebraic equation with no derivatives",
+        "why": "It contains second derivatives of u, so it is a differential equation."
+      },
+      {
+        "text": "An ordinary differential equation in time only",
+        "why": "u depends on both x and t, and the equation has derivatives with respect to both, so it is a partial differential equation."
+      },
+      {
+        "text": "A formula that gives the energy of the wave",
+        "why": "The equation relates how u changes with position to how it changes with time. It does not give the energy."
+      }
+    ],
+    "explanation": "The classical wave equation in one dimension is a linear partial differential equation. It relates the second derivative of u with respect to position to its second derivative with respect to time."
+  },
+  {
+    "id": "pc2-1d-wave-equation-u",
+    "type": "multiple-choice",
+    "prompt": "In the wave equation ∂^2u/∂x^2 = (1/v^2) ∂^2u/∂t^2, what is u(x, t)?",
+    "choices": [
+      {
+        "text": "The wave's amplitude at position x and time t",
+        "correct": true
+      },
+      {
+        "text": "The speed at which the wave travels",
+        "why": "The speed of the wave is v. u is the wave's amplitude at position x and time t."
+      },
+      {
+        "text": "The energy the wave carries at time t",
+        "why": "u is not an energy. It is the amplitude (displacement) of the wave at x and t."
+      },
+      {
+        "text": "The wavenumber of the wave at position x",
+        "why": "The wavenumber is k in the sine wave. In the wave equation, u is the wave's amplitude at x and t."
+      }
+    ],
+    "explanation": "u(x, t) is the amplitude (displacement) of the wave at position x and time t, and v is the wave's velocity. The wave equation tells how u can change with position and with time."
+  },
+  {
+    "id": "pc2-1d-initial-conditions",
+    "type": "multiple-choice",
+    "prompt": "When the wave equation is solved for a string, what do the initial conditions describe?",
+    "choices": [
+      {
+        "text": "How the wave is produced",
+        "correct": true
+      },
+      {
+        "text": "What happens at the ends of the string",
+        "why": "That is what the boundary conditions describe. The initial conditions describe how the wave is produced."
+      },
+      {
+        "text": "The speed of the wave along the string",
+        "why": "The speed is v, which appears in the wave equation itself. Initial conditions describe how the wave is started."
+      },
+      {
+        "text": "The length of the string",
+        "why": "The length L appears in the boundary conditions, u(L, t) = 0. Initial conditions describe how the wave is produced."
+      }
+    ],
+    "explanation": "Not every solution of the wave equation fits a given string. The waves that do must satisfy the initial conditions, which say how the wave is produced, and the boundary conditions, which say what happens at the ends of the string."
+  },
+  {
+    "id": "pc2-1d-quantization-origin",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the mathematical origin of quantization?",
+    "choices": [
+      {
+        "text": "The initial and boundary conditions allow only certain waves to exist",
+        "correct": true
+      },
+      {
+        "text": "Friction in the medium removes some of the waves",
+        "why": "Friction makes waves die away. Quantization comes from the conditions on the solutions, which allow only certain waves."
+      },
+      {
+        "text": "The wave equation has no solutions at all",
+        "why": "It has many solutions. The initial and boundary conditions restrict which of them are allowed."
+      },
+      {
+        "text": "Every possible wave is allowed, so the energies are continuous",
+        "why": "That is the opposite of quantization. The conditions restrict the allowed waves, and that restriction is quantization."
+      }
+    ],
+    "explanation": "The initial and boundary conditions restrict which waves are allowed, in the same way that only certain solutions exist for the electron in the Bohr atom. On a string held at both ends, only standing waves with certain frequencies can exist."
+  },
+  {
+    "id": "pc2-1d-free-particle-wave",
+    "type": "multiple-choice",
+    "prompt": "A \"free\" particle, such as the electron knocked out of a metal in the photoelectric effect, behaves like which kind of wave?",
+    "choices": [
+      {
+        "text": "A traveling wave",
+        "correct": true
+      },
+      {
+        "text": "A standing wave",
+        "why": "Standing waves describe bound particles, like an electron held in an atom. A free particle moves through space like a traveling wave."
+      },
+      {
+        "text": "A wave with its nodes fixed in place",
+        "why": "Fixed nodes mark a standing wave, which goes with bound particles, not free ones."
+      },
+      {
+        "text": "It does not behave like a wave at all",
+        "why": "Free particles show wave properties too. They behave like traveling waves."
+      }
+    ],
+    "explanation": "Free particles, like the photoelectron, act like traveling waves that move through space. Bound electrons, held in an atom, act like standing waves."
+  },
+  {
+    "id": "pc2-1d-bohr-angular-momentum",
+    "type": "multiple-choice",
+    "prompt": "In the Bohr atom, what was the picture of a bound electron as a standing wave used to do?",
+    "choices": [
+      {
+        "text": "Quantize the electron's angular momentum",
+        "correct": true
+      },
+      {
+        "text": "Explain the photoelectric effect",
+        "why": "The photoelectron is a free particle, which acts like a traveling wave. The standing-wave picture was used for the bound electron in the Bohr atom."
+      },
+      {
+        "text": "Explain blackbody radiation",
+        "why": "Blackbody radiation was explained by Planck's quantum hypothesis. The standing-wave picture was used for the Bohr atom's angular momentum."
+      },
+      {
+        "text": "Measure the electron's charge",
+        "why": "The electron's charge doesn't come from this picture. It was used to quantize the electron's angular momentum."
+      }
+    ],
+    "explanation": "A bound electron behaves like a standing wave, and only certain standing waves fit. This idea was used in the Bohr atom to quantize the angular momentum of the electron bound in a hydrogen atom."
+  },
+  {
+    "id": "pc2-1d-equation-both-wave-types",
+    "type": "multiple-choice",
+    "prompt": "Which waves does the one-dimensional wave equation describe?",
+    "choices": [
+      {
+        "text": "Both traveling and standing waves",
+        "correct": true
+      },
+      {
+        "text": "Only traveling waves, like a bump on a rope",
+        "why": "The same equation also describes standing waves, such as those on a string held at both ends."
+      },
+      {
+        "text": "Only standing waves, like a plucked string",
+        "why": "It also describes traveling waves, such as a bump moving along a rope."
+      },
+      {
+        "text": "Only light waves traveling through space",
+        "why": "It describes one-dimensional waves in general, such as waves on a rope or a string."
+      }
+    ],
+    "explanation": "The classical wave equation describes one-dimensional waves of both kinds. Which solutions you get depends on the initial and boundary conditions: a string with both ends held gives standing waves."
+  },
+  {
+    "id": "pc2-1d-simplest-wave",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the simplest wave?",
+    "choices": [
+      {
+        "text": "A one-dimensional sine wave",
+        "correct": true
+      },
+      {
+        "text": "A wave spreading out in three dimensions",
+        "why": "Waves spreading out in three dimensions and reflecting off objects are hard to analyze. The simplest is a one-dimensional sine wave."
+      },
+      {
+        "text": "A circular ripple on a pond",
+        "why": "A ripple spreads out over a two-dimensional surface. The simplest wave is a sine wave along one dimension."
+      },
+      {
+        "text": "A sound wave filling a room",
+        "why": "Sound in a room spreads out in three dimensions. The simplest wave is a one-dimensional sine wave."
+      }
+    ],
+    "explanation": "The simplest wave is a one-dimensional sine wave, A(x, t) = Ao sin(kx − ωt + φ). Because waves in three dimensions are hard to analyze, the section starts with waves restricted to move along a line."
+  },
+  {
+    "id": "pc2-1d-antinode",
+    "type": "multiple-choice",
+    "prompt": "On a vibrating guitar string, what are the places where the string moves the most called?",
+    "choices": [
+      {
+        "text": "Antinodes",
+        "correct": true
+      },
+      {
+        "text": "Nodes",
+        "why": "Nodes are the \"quiet\" places, where the string doesn't vibrate at all."
+      },
+      {
+        "text": "Equilibrium points",
+        "why": "The equilibrium is the rest line the string vibrates about. The places of maximum oscillation are antinodes."
+      },
+      {
+        "text": "Wavenumbers",
+        "why": "The wavenumber k is a constant of the wave, not a place on the string."
+      }
+    ],
+    "explanation": "A standing wave on a string has nodes, where the string doesn't vibrate (including the two held ends), and antinodes, the places of maximum oscillation."
+  },
+  {
+    "id": "pc2-1d-different-boundary-conditions",
+    "type": "multiple-choice",
+    "prompt": "Different vibrating systems have different boundary conditions. What does that mean for their wave solutions?",
+    "choices": [
+      {
+        "text": "Their allowed solutions are different too",
+        "correct": true
+      },
+      {
+        "text": "They all still have exactly the same allowed waves",
+        "why": "The boundary conditions decide which waves are allowed, so different conditions give different solutions."
+      },
+      {
+        "text": "Only systems with both ends held still can have waves",
+        "why": "Other systems have waves too. They just have different boundary conditions, and so different solutions."
+      },
+      {
+        "text": "Their waves no longer obey the wave equation",
+        "why": "The waves still obey the wave equation. The boundary conditions pick out which of its solutions are allowed."
+      }
+    ],
+    "explanation": "A string held at both ends has the boundary conditions u(0, t) = 0 and u(L, t) = 0. Different systems have different boundary conditions, and hence different solutions."
+  },
+  {
+    "id": "pc2-1d-crest-to-trough",
+    "type": "numeric",
+    "prompt": "A wave is A(x, t) = Ao sin(kx − ωt + φ) with Ao = 0.04 m. A sine swings between +1 and −1. What is the vertical distance from a crest to a trough, in m?",
+    "answer": 0.08,
+    "unit": "m",
+    "explanation": "A crest is at +Ao = +0.04 m and a trough at −Ao = −0.04 m, so the distance between them is 2Ao = 2 × 0.04 m = 0.08 m."
+  },
+  {
+    "id": "pc2-1d-bump-speed",
+    "type": "numeric",
+    "prompt": "A bump keeps its shape as it travels along a rope, y(x, t) = f(x − vt). It moves 12 m along the rope in 4 s. What is the wave's speed v, in m/s?",
+    "answer": 3,
+    "unit": "m/s",
+    "explanation": "v = distance/time = (12 m)/(4 s) = 3 m/s."
+  },
+  {
+    "id": "pc2-1d-still-points",
+    "type": "numeric",
+    "prompt": "Standing waves on a string held at both ends have 0, 1, 2, 3, ... nodes between the ends. For the wave with 3 nodes between the ends, how many points on the string never move, counting the two held ends?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "The 3 nodes between the ends and the 2 held ends never move: 3 + 2 = 5 points."
+  },
+  {
+    "id": "pc2-1d-node-spacing",
+    "type": "numeric",
+    "prompt": "A string 1.2 m long vibrates as a standing wave with 2 equally spaced nodes between its two held ends, so the 4 nodes divide the string into 3 equal parts. How far apart are neighboring nodes, in m?",
+    "answer": 0.4,
+    "unit": "m",
+    "explanation": "The nodes are equally spaced, so each part is (1.2 m)/3 = 0.4 m long."
+  },
+  {
+    "id": "pc2-1d-phase-start",
+    "type": "numeric",
+    "prompt": "A wave is A(x, t) = Ao sin(kx − ωt + φ) with Ao = 5 cm and phase constant φ = π/2. What is A at x = 0 and t = 0, in cm? (Use sin(π/2) = 1.)",
+    "answer": 5,
+    "unit": "cm",
+    "tolerance": 0,
+    "explanation": "At x = 0 and t = 0, A = Ao sin φ = (5 cm) × sin(π/2) = 5 cm × 1 = 5 cm. The phase constant sets where the wave starts."
+  }
+]

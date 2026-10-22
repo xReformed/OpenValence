@@ -2,6 +2,7 @@ import { data, type LoaderFunctionArgs } from "react-router-dom";
 import { BOOK_CHAPTERS, BOOK_META } from "./lib/learningPaths.generated";
 import { getBranch } from "./lib/roadmap";
 import { loadSectionText } from "./lib/sectionText";
+import { stageOf } from "./lib/stages";
 import type { BookKey, Question } from "./lib/types";
 
 /* OpenValence's practice questions for one section, from the API, which reads
@@ -22,9 +23,11 @@ async function loadQuestions(book: BookKey, section: string, signal: AbortSignal
    Kept out of router.ts so the books' chapter lists load with the page. */
 export async function sectionLoader({ params, request }: LoaderFunctionArgs) {
   const branch = getBranch(params.slug);
-  const stage = branch?.path?.find((candidate) => candidate.book === params.book);
+  /* The stage holding the section: a book can be split into parts (lib/stages.ts). */
+  const stage = branch && stageOf(branch, params.book ?? "", params.section ?? "");
   if (!branch || !stage) throw data("Section not found", { status: 404 });
 
+  /* Previous and next run through the whole book, across its parts. */
   const sections = BOOK_CHAPTERS[stage.book].flatMap((chapter) =>
     chapter.sections.map((section) => ({ chapter, section })),
   );

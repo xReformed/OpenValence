@@ -1,0 +1,614 @@
+[
+  {
+    "id": "pc4-state-classical-state",
+    "type": "multiple-choice",
+    "prompt": "In classical mechanics, what specifies the state of a system?",
+    "choices": [
+      {
+        "text": "A point (x, p) of position and momentum",
+        "correct": true
+      },
+      {
+        "text": "A wavefunction ψ(x, t) of position and time",
+        "why": "That is how quantum mechanics specifies a state (Postulate I). Classical mechanics uses x and p."
+      },
+      {
+        "text": "Its total energy alone",
+        "why": "Many different positions and momenta can share one energy. The classical state is the point (x, p)."
+      },
+      {
+        "text": "A probability density P(x) for its position",
+        "why": "Probability densities come from quantum mechanics. Classically, x and p are known exactly."
+      }
+    ],
+    "explanation": "Classically, the state is a point (x, p) in the space of coordinates and momenta. It fixes everything else: any observable Q(x, p) can be worked out from it."
+  },
+  {
+    "id": "pc4-state-why-not-xp",
+    "type": "multiple-choice",
+    "prompt": "Why can't the state of a quantum system be specified by a point (x, p)?",
+    "choices": [
+      {
+        "text": "x and p can't both be known exactly at the same time",
+        "correct": true
+      },
+      {
+        "text": "Quantum particles have no position at all",
+        "why": "A particle can be found at a position; the trouble is knowing its position and momentum exactly at the same time."
+      },
+      {
+        "text": "Quantum particles always have zero momentum",
+        "why": "Quantum particles can have momentum. It just can't be known exactly together with the position."
+      },
+      {
+        "text": "The point (x, p) only works for particles at rest",
+        "why": "The reason is the uncertainty principle: x and p can't both be known exactly."
+      }
+    ],
+    "explanation": "The position-momentum uncertainty principle says x and p can't both be known exactly along a trajectory. So the classical (x, p) description fails, and quantum mechanics uses the wavefunction ψ instead."
+  },
+  {
+    "id": "pc4-state-electron-diffraction",
+    "type": "multiple-choice",
+    "prompt": "Which experiment does the section cite as showing that an electron's position and momentum can't both be known exactly along its path?",
+    "choices": [
+      {
+        "text": "The diffraction of electrons",
+        "correct": true
+      },
+      {
+        "text": "The photoelectric effect",
+        "why": "The photoelectric effect showed that light comes in quanta. The section points to electron diffraction."
+      },
+      {
+        "text": "Blackbody radiation",
+        "why": "Blackbody radiation led Planck to quantized energies. The section points to electron diffraction."
+      },
+      {
+        "text": "The line spectrum of hydrogen",
+        "why": "The hydrogen spectrum shows quantized energy levels. The section points to electron diffraction."
+      }
+    ],
+    "explanation": "The diffraction of electrons shows their wave nature: it is impossible to know both the position and momentum of the electron exactly at every point along its path. That is why a new way to specify the state is needed."
+  },
+  {
+    "id": "pc4-state-postulate-1",
+    "type": "multiple-choice",
+    "prompt": "What does Postulate I of quantum mechanics say?",
+    "choices": [
+      {
+        "text": "The state of a system is completely specified by its wavefunction ψ",
+        "correct": true
+      },
+      {
+        "text": "The state of a system is specified by its position x and momentum p",
+        "why": "That is the classical picture, which fails in quantum mechanics because of the uncertainty principle."
+      },
+      {
+        "text": "The wavefunction gives the exact position of the particle at all times",
+        "why": "ψ gives the probability of finding the particle at each position, not an exact position."
+      },
+      {
+        "text": "The energy alone specifies the state of a system",
+        "why": "Different states can share one energy. Postulate I says ψ holds all the information."
+      }
+    ],
+    "explanation": "Postulate I: the state of the system is completely specified by ψ, and all possible information about the system can be found in the wavefunction."
+  },
+  {
+    "id": "pc4-state-psi-variables",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction is written ψ(r, t). What are r and t?",
+    "choices": [
+      {
+        "text": "r is the set of the particles' spatial coordinates, and t is the time",
+        "correct": true
+      },
+      {
+        "text": "r is the radius of the orbit, and t is the temperature",
+        "why": "r stands for spatial coordinates such as (x, y, z), and t for time."
+      },
+      {
+        "text": "r is the rate of a reaction, and t is the time",
+        "why": "r is a set of positions, not a rate."
+      },
+      {
+        "text": "r is the position of the first particle only, and t is the time",
+        "why": "For more than one particle, r includes the coordinates of every particle."
+      }
+    ],
+    "explanation": "ψ(r, t) depends on the spatial coordinates and on time. For one particle r = (x_1, y_1, z_1); for n particles, r is the full set (x_1, y_1, z_1, …, x_n, y_n, z_n)."
+  },
+  {
+    "id": "pc4-state-coordinate-count",
+    "type": "numeric",
+    "prompt": "For a system of several particles, r in ψ(r, t) is the complete set of coordinates, (x_1, y_1, z_1, x_2, y_2, z_2, …). How many spatial coordinates are in r for a system of 3 particles?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "Each particle has three coordinates, x, y and z, so 3 particles × 3 coordinates = 9."
+  },
+  {
+    "id": "pc4-state-state-function",
+    "type": "multiple-choice",
+    "prompt": "Why is the wavefunction ψ sometimes called the state function?",
+    "choices": [
+      {
+        "text": "Because it specifies, or identifies, the state of the system",
+        "correct": true
+      },
+      {
+        "text": "Because it tells you whether the system is a solid, liquid or gas",
+        "why": "\"State\" here means the quantum state of the system, not its state of matter."
+      },
+      {
+        "text": "Because, like U or H in thermodynamics, it depends only on the start and end of a process",
+        "why": "The name has nothing to do with thermodynamic state functions. ψ is called this because it specifies the state."
+      },
+      {
+        "text": "Because it only applies to states that never change with time",
+        "why": "ψ(r, t) can depend on time. The name comes from ψ identifying the state."
+      }
+    ],
+    "explanation": "The state of a system is defined by its properties, and ψ determines all of them. So ψ specifies or identifies the state, and is sometimes called the state function."
+  },
+  {
+    "id": "pc4-state-born-density",
+    "type": "multiple-choice",
+    "prompt": "In the Born interpretation, what does P(x) = ψ^*(x)ψ(x) = |ψ(x)|^2 give?",
+    "choices": [
+      {
+        "text": "The probability density of finding the particle at position x",
+        "correct": true
+      },
+      {
+        "text": "The exact position of the particle",
+        "why": "Quantum mechanics gives probabilities, not an exact position. |ψ(x)|^2 says how likely each x is."
+      },
+      {
+        "text": "The energy of the particle at position x",
+        "why": "|ψ(x)|^2 is a probability density, not an energy."
+      },
+      {
+        "text": "The momentum of the particle at position x",
+        "why": "|ψ(x)|^2 tells you about where the particle is likely to be, not its momentum."
+      }
+    ],
+    "explanation": "The Born interpretation says ψ^*(x)ψ(x) = |ψ(x)|^2 is the probability density P(x) that a particle in the state ψ will be found at position x. Large |ψ|^2 means the particle is likely to be found there."
+  },
+  {
+    "id": "pc4-state-imaginary-density",
+    "type": "numeric",
+    "prompt": "At one point x_0, a wavefunction has the imaginary value ψ(x_0) = 0.6i, so its complex conjugate is ψ^*(x_0) = −0.6i. What is the probability density P(x_0) = ψ^*(x_0)ψ(x_0)?",
+    "answer": 0.36,
+    "explanation": "P = (−0.6i)(0.6i) = −0.36i^2 = −0.36 × (−1) = 0.36. Multiplying by the complex conjugate always gives a real number that is zero or positive, as a probability density must be."
+  },
+  {
+    "id": "pc4-state-psi-star-plane-wave",
+    "type": "multiple-choice",
+    "prompt": "For the wavefunction ψ(x) = Ne^(ikx), with N a real number, what is the complex conjugate ψ^*(x)?",
+    "choices": [
+      {
+        "text": "Ne^(−ikx)",
+        "correct": true
+      },
+      {
+        "text": "−Ne^(ikx)",
+        "why": "Taking the complex conjugate changes i to −i in the exponent; it doesn't change the sign in front."
+      },
+      {
+        "text": "Ne^(ikx), the same as ψ",
+        "why": "ψ is complex, so its conjugate is different: i becomes −i."
+      },
+      {
+        "text": "N^2e^(2ikx)",
+        "why": "That is ψ multiplied by itself, ψ^2, not the complex conjugate."
+      }
+    ],
+    "explanation": "The complex conjugate replaces i by −i: ψ^*(x) = Ne^(−ikx). Then ψ^*ψ = N^2e^(−ikx)e^(ikx) = N^2."
+  },
+  {
+    "id": "pc4-state-plane-wave-density",
+    "type": "numeric",
+    "prompt": "A particle has the wavefunction ψ(x) = Ne^(ikx) with N = 0.3. Using P(x) = ψ^*(x)ψ(x) and e^(−ikx)e^(ikx) = 1, what is its probability density at x = 2?",
+    "answer": 0.09,
+    "explanation": "P(x) = (Ne^(−ikx))(Ne^(ikx)) = N^2 = 0.3^2 = 0.09. The answer is the same at every x, and for every k."
+  },
+  {
+    "id": "pc4-state-plane-wave-localization",
+    "type": "multiple-choice",
+    "prompt": "For ψ(x) = Ne^(ikx), the probability density is P(x) = N^2, the same at every x. What does this say about the particle's position?",
+    "choices": [
+      {
+        "text": "It is not localized; its position is very uncertain",
+        "correct": true
+      },
+      {
+        "text": "It is certainly at x = 0",
+        "why": "P(x) is the same everywhere, so x = 0 is no more likely than any other place."
+      },
+      {
+        "text": "It is well localized at the crests of the wave",
+        "why": "The crests belong to the real part of ψ. The probability density N^2 has no peaks at all."
+      },
+      {
+        "text": "It is well localized, because N^2 is a single number",
+        "why": "A single constant value spread over all x means the particle could be anywhere, so it is not localized."
+      }
+    ],
+    "explanation": "A wavefunction like Ne^(ikx) gives the same chance of finding the particle everywhere, so its position is ill-defined and the uncertainty in position is large. This is the Heisenberg uncertainty principle in action."
+  },
+  {
+    "id": "pc4-state-normalization-meaning",
+    "type": "multiple-choice",
+    "prompt": "A normalized wavefunction obeys the condition that the integral of ψ^*(x)ψ(x) from −∞ to ∞ equals 1. What does this mean?",
+    "choices": [
+      {
+        "text": "The particle is certain to be found somewhere",
+        "correct": true
+      },
+      {
+        "text": "The particle is found at exactly x = 1",
+        "why": "The 1 is a total probability, not a position. It says the particle is somewhere."
+      },
+      {
+        "text": "The wavefunction ψ(x) equals 1 at every point",
+        "why": "It is the integral of |ψ|^2 over all space that equals 1, not ψ itself at each point."
+      },
+      {
+        "text": "There is a 1% chance of finding the particle",
+        "why": "A total probability of 1 means 100%, not 1%."
+      }
+    ],
+    "explanation": "Adding up the probability density over all space must give 1: the chance of finding the particle somewhere between −∞ and +∞ is 100%."
+  },
+  {
+    "id": "pc4-state-probability-elsewhere",
+    "type": "numeric",
+    "prompt": "A particle's wavefunction is normalized, so the total probability of finding it somewhere is 1. The probability of finding it inside a certain region is 0.85. What is the probability of finding it outside that region? (Give it as a decimal.)",
+    "answer": 0.15,
+    "explanation": "The probabilities over all space add up to 1, so the probability outside the region is 1 − 0.85 = 0.15."
+  },
+  {
+    "id": "pc4-state-square-integrable",
+    "type": "multiple-choice",
+    "prompt": "What makes a function f(x) square-integrable?",
+    "choices": [
+      {
+        "text": "The integral of f^*(x)f(x) over all x is finite",
+        "correct": true
+      },
+      {
+        "text": "f(x) is finite at every point",
+        "why": "That isn't enough: cos x over (0, ∞) is finite everywhere, but the integral of cos^2 x is infinite."
+      },
+      {
+        "text": "The integral of f(x) itself equals zero",
+        "why": "The definition is about the integral of |f(x)|^2, and it must be finite, not zero."
+      },
+      {
+        "text": "f(x) is the square of another function",
+        "why": "\"Square-integrable\" means you can integrate its square and get a finite answer."
+      }
+    ],
+    "explanation": "A function is square-integrable if the integral of f^*(x)f(x) = |f(x)|^2 over all x is finite. Only then can the wavefunction be normalized so that the Born interpretation applies."
+  },
+  {
+    "id": "pc4-state-peaked-localized",
+    "type": "multiple-choice",
+    "prompt": "A wavefunction is sharply peaked at one value of x. What does this say about the particle?",
+    "choices": [
+      {
+        "text": "It is well localized near the peak",
+        "correct": true
+      },
+      {
+        "text": "It is equally likely to be found anywhere",
+        "why": "The probability density is peaked too, so the particle is most likely near the peak."
+      },
+      {
+        "text": "It is moving very fast at the peak",
+        "why": "The peak describes where the particle is likely to be, not its speed."
+      },
+      {
+        "text": "Its position is completely unknown",
+        "why": "The opposite: a sharp peak means the position is known quite well."
+      }
+    ],
+    "explanation": "If ψ is sharply peaked, so is the probability density |ψ|^2. The particle is very likely near the center of the peak, and a narrow peak means a small uncertainty in its position."
+  },
+  {
+    "id": "pc4-state-wider-peak",
+    "type": "multiple-choice",
+    "prompt": "A peaked wavefunction is made wider, with its peak spread over a larger range of x. What happens to the uncertainty in the particle's position?",
+    "choices": [
+      {
+        "text": "It increases",
+        "correct": true
+      },
+      {
+        "text": "It decreases",
+        "why": "A wider peak spreads the probability over more positions, so the position is less certain."
+      },
+      {
+        "text": "It doesn't change, because only the height of the peak matters",
+        "why": "The width of the peak is exactly what sets the uncertainty in position."
+      },
+      {
+        "text": "It becomes zero",
+        "why": "Zero uncertainty would need an infinitely narrow peak. Widening goes the other way."
+      }
+    ],
+    "explanation": "The width of the peak in |ψ|^2 measures how spread out the possible positions are. A narrow peak means a small position uncertainty; a wider one means a larger uncertainty."
+  },
+  {
+    "id": "pc4-state-shifted-peak",
+    "type": "multiple-choice",
+    "prompt": "Wavefunction ψ_2 has exactly the same peak shape as ψ_1, but centered at a different x. How does the particle described by ψ_2 compare?",
+    "choices": [
+      {
+        "text": "It is just as well localized, but at the new position",
+        "correct": true
+      },
+      {
+        "text": "It is less well localized, because its peak has moved",
+        "why": "Moving the peak doesn't change its width, so the uncertainty in position is the same."
+      },
+      {
+        "text": "It is not a valid wavefunction",
+        "why": "Shifting a valid wavefunction along x gives another valid one."
+      },
+      {
+        "text": "It describes two particles, one at each peak",
+        "why": "ψ_2 has one peak, at a new place, and describes one particle."
+      }
+    ],
+    "explanation": "All the properties of ψ_1 carry over to ψ_2: the particle is well localized, with a small uncertainty. The only difference is where the particle is likely to be found."
+  },
+  {
+    "id": "pc4-state-three-requirements",
+    "type": "multiple-choice",
+    "prompt": "To satisfy the Born interpretation, which conditions must a wavefunction meet?",
+    "choices": [
+      {
+        "text": "It must be single-valued, continuous and finite",
+        "correct": true
+      },
+      {
+        "text": "It must be real and positive at every point",
+        "why": "Wavefunctions can be complex, like Ne^(ikx), or negative. Only |ψ|^2 must be zero or positive."
+      },
+      {
+        "text": "It must be periodic, like a sine wave",
+        "why": "e^(−x) on [0, ∞) is acceptable and is not periodic."
+      },
+      {
+        "text": "It must be zero at x = 0",
+        "why": "That holds for some systems, such as a box with a wall at x = 0, but it is not a general rule."
+      }
+    ],
+    "explanation": "A well-behaved wavefunction must be single-valued, continuous and finite. Many solutions of the Schrödinger equation fail these tests and so can't describe a physical system."
+  },
+  {
+    "id": "pc4-state-infinite-region",
+    "type": "multiple-choice",
+    "prompt": "Why can't a valid wavefunction be infinite over a finite region of space?",
+    "choices": [
+      {
+        "text": "Its normalization integral would be infinite",
+        "correct": true
+      },
+      {
+        "text": "Because the particle would then move infinitely fast",
+        "why": "The problem is with probabilities, not speed: the integral of |ψ|^2 would be infinite."
+      },
+      {
+        "text": "It can, as long as it is continuous",
+        "why": "Being continuous doesn't help. The integral of |ψ|^2 would still be infinite."
+      },
+      {
+        "text": "Because it would then not be single-valued",
+        "why": "It could still have one value at each point. The trouble is that the integral of |ψ|^2 becomes infinite."
+      }
+    ],
+    "explanation": "If ψ were infinite over some region, the integral of |ψ|^2 would be infinite and ψ couldn't be normalized. It would mean the particle is certain to be in the infinite region and has zero probability of being anywhere else."
+  },
+  {
+    "id": "pc4-state-single-valued-why",
+    "type": "multiple-choice",
+    "prompt": "Why must a wavefunction be single-valued?",
+    "choices": [
+      {
+        "text": "Otherwise there could be two probabilities at one point",
+        "correct": true
+      },
+      {
+        "text": "A particle can only ever be found at one place",
+        "why": "A particle can be found at many places, each with its own probability. The rule is one probability per point."
+      },
+      {
+        "text": "ψ must take each value only once (be one-to-one)",
+        "why": "Single-valued means one value at each x. sin x repeats its values but is fine."
+      },
+      {
+        "text": "So that it can be drawn as a smooth curve",
+        "why": "Smoothness is about continuity and derivatives. Single-valued means one value at each x, so one probability at each point."
+      }
+    ],
+    "explanation": "If |ψ(x)|^2 had more than one value at a point, there would be several different probabilities of finding the particle there, which is absurd. So |ψ|^2, and usually ψ itself, must be single-valued."
+  },
+  {
+    "id": "pc4-state-derivatives-exist",
+    "type": "multiple-choice",
+    "prompt": "Why must the first and second derivatives of a wavefunction exist?",
+    "choices": [
+      {
+        "text": "ψ must solve the Schrödinger equation, a second-order equation",
+        "correct": true
+      },
+      {
+        "text": "So that the integral of |ψ|^2 is finite and ψ can be normalized",
+        "why": "Normalization needs a finite integral of |ψ|^2. The derivatives are needed for the Schrödinger equation."
+      },
+      {
+        "text": "Because the probability density is the derivative of ψ",
+        "why": "The probability density is |ψ|^2, not a derivative."
+      },
+      {
+        "text": "So that ψ has only one value at each point x",
+        "why": "Single-valuedness is a separate requirement. The derivatives are needed because of the Schrödinger equation."
+      }
+    ],
+    "explanation": "The Schrödinger equation contains the second derivative of ψ, so it must exist. That in turn needs the first derivative to exist; otherwise ψ can't be a solution."
+  },
+  {
+    "id": "pc4-state-flexible-smoothness",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when may the requirement that a wavefunction's derivatives exist be somewhat flexible in practice?",
+    "choices": [
+      {
+        "text": "When the potential changes rapidly with distance",
+        "correct": true
+      },
+      {
+        "text": "When the particle is very heavy",
+        "why": "The section links the flexibility to the potential energy, not to the particle's mass."
+      },
+      {
+        "text": "When the wavefunction is complex",
+        "why": "Complex wavefunctions, like Ne^(ikx), are smooth. The flexibility is tied to rapid changes in the potential."
+      },
+      {
+        "text": "Never: it must hold exactly for every system",
+        "why": "The section says it may be somewhat flexible, particularly when the potential changes rapidly with distance."
+      }
+    ],
+    "explanation": "The smoothness rule comes from the Schrödinger equation. In practice it may be somewhat flexible, particularly where the potential energy of the system shows rapid changes with distance."
+  },
+  {
+    "id": "pc4-state-math-vs-physical",
+    "type": "multiple-choice",
+    "prompt": "Is every mathematical solution of the Schrödinger equation an acceptable wavefunction?",
+    "choices": [
+      {
+        "text": "No: many are rejected because they break the Born interpretation",
+        "correct": true
+      },
+      {
+        "text": "Yes: any solution is a valid wavefunction",
+        "why": "Solutions that are infinite, many-valued or not square-integrable can't be normalized or read as probabilities."
+      },
+      {
+        "text": "No: only solutions that are real numbers are allowed",
+        "why": "Complex wavefunctions, like Ne^(ikx), are allowed. The tests are being single-valued, continuous and finite."
+      },
+      {
+        "text": "Yes, as long as it is finite at x = 0",
+        "why": "Being finite at one point is not enough. It must be well-behaved everywhere."
+      }
+    ],
+    "explanation": "Many acceptable mathematical solutions of the Schrödinger equation are not acceptable physically. The Born interpretation needs ψ to be single-valued, continuous, finite and square-integrable."
+  },
+  {
+    "id": "pc4-state-cos-half-line",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 4.1.1, cos x over (0, ∞) is single-valued and continuous. Why is it still not an acceptable wavefunction?",
+    "choices": [
+      {
+        "text": "It is not square-integrable",
+        "correct": true
+      },
+      {
+        "text": "It goes to infinity as x grows",
+        "why": "cos x stays between −1 and 1 everywhere, so it is finite. The trouble is the integral of its square."
+      },
+      {
+        "text": "It takes negative values for some x",
+        "why": "Negative values are fine; the probability density uses |ψ|^2, which is never negative."
+      },
+      {
+        "text": "It is not continuous at x = π",
+        "why": "cos x is smooth and continuous everywhere."
+      }
+    ],
+    "explanation": "cos x keeps oscillating forever, so the area under cos^2 x keeps growing without limit. It can't be normalized, so it fails as a wavefunction over (0, ∞)."
+  },
+  {
+    "id": "pc4-state-exp-x",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 4.1.1, why is e^(x) over (−∞, ∞) not an acceptable wavefunction?",
+    "choices": [
+      {
+        "text": "It blows up as x → ∞",
+        "correct": true
+      },
+      {
+        "text": "It is negative when x is negative",
+        "why": "e^(x) is positive for every x; for negative x it just gets small."
+      },
+      {
+        "text": "It has two values at some x",
+        "why": "e^(x) has exactly one value at each x."
+      },
+      {
+        "text": "It is zero at x = 0",
+        "why": "e^0 = 1, not 0. The problem is the growth toward +∞."
+      }
+    ],
+    "explanation": "As x → ∞, e^(x) blows up, so the integral of |e^(x)|^2 over (−∞, ∞) is infinite. The function can't be normalized."
+  },
+  {
+    "id": "pc4-state-acceptable-example",
+    "type": "multiple-choice",
+    "prompt": "Which of these functions from Exercise 4.1.1 is an acceptable wavefunction over the range given?",
+    "choices": [
+      {
+        "text": "e^(−x) over [0, ∞)",
+        "correct": true
+      },
+      {
+        "text": "cos x over (0, ∞)",
+        "why": "It is finite and continuous, but the integral of cos^2 x over (0, ∞) is infinite."
+      },
+      {
+        "text": "e^(x) over (−∞, ∞)",
+        "why": "It grows without limit as x → ∞, so it is not square-integrable."
+      },
+      {
+        "text": "tan θ over [0, 2π]",
+        "why": "It is discontinuous, jumping to infinity within the range."
+      }
+    ],
+    "explanation": "e^(−x) on [0, ∞) is single-valued, continuous and finite, and it dies away fast enough that the integral of |e^(−x)|^2 is finite (1/2). So it is square-integrable and acceptable."
+  },
+  {
+    "id": "pc4-state-normalize-exp",
+    "type": "numeric",
+    "prompt": "Exercise 4.1.1 finds that the integral of |e^(−x)|^2 from 0 to ∞ is 1/2. To be normalized, the wavefunction Ne^(−x) needs N^2 × 1/2 = 1. What is N? (Give it as a decimal.)",
+    "answer": 1.414,
+    "explanation": "N^2 × 1/2 = 1 gives N^2 = 2, so N = √2 = 1.414. The normalized wavefunction is √2 e^(−x) on [0, ∞)."
+  },
+  {
+    "id": "pc4-state-tan",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 4.1.1, why is tan θ over [0, 2π] not an acceptable wavefunction?",
+    "choices": [
+      {
+        "text": "It is discontinuous at θ = π/2 and 3π/2",
+        "correct": true
+      },
+      {
+        "text": "It repeats itself every π",
+        "why": "Repeating itself is not a problem. The trouble is the breaks where tan θ goes to infinity."
+      },
+      {
+        "text": "It takes negative values for some θ",
+        "why": "Negative values are fine for a wavefunction. The trouble is that tan θ is discontinuous."
+      },
+      {
+        "text": "It has two values at every θ",
+        "why": "tan θ has one value wherever it is defined. It fails because it is discontinuous."
+      }
+    ],
+    "explanation": "tan θ = sin θ/cos θ goes to infinity where cos θ = 0, at θ = π/2 and 3π/2. So it is neither continuous nor finite over [0, 2π]."
+  }
+]

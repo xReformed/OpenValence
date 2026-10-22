@@ -1,0 +1,603 @@
+[
+  {
+    "id": "pc1-uncertainty-statement",
+    "type": "multiple-choice",
+    "prompt": "What does the Heisenberg uncertainty principle say?",
+    "choices": [
+      {
+        "text": "A particle's position and momentum cannot both be known exactly at the same time",
+        "correct": true
+      },
+      {
+        "text": "Every measurement has some experimental error",
+        "why": "That is true of all experiments. The uncertainty principle is a deeper limit that remains even with perfect instruments."
+      },
+      {
+        "text": "A particle's position can never be measured",
+        "why": "Position can be measured; the limit is on knowing position and momentum precisely at the same time."
+      },
+      {
+        "text": "Energy can never be measured",
+        "why": "The principle in this section is about position and momentum measured together."
+      }
+    ],
+    "explanation": "Heisenberg stated in 1927 that it is not possible to measure both the momentum and the position of a particle exactly at the same time. There is a lower limit on the precision, even in principle."
+  },
+  {
+    "id": "pc1-uncertainty-tradeoff",
+    "type": "multiple-choice",
+    "prompt": "If the uncertainty in a particle's position, Δx, is made smaller, what happens to the minimum uncertainty in its momentum, Δp?",
+    "choices": [
+      {
+        "text": "It gets larger",
+        "correct": true
+      },
+      {
+        "text": "It gets smaller too",
+        "why": "Δp_x Δx ≥ ħ/2: if Δx shrinks, Δp_x must grow to keep the product at least ħ/2."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The two are linked: Δp_x Δx ≥ ħ/2."
+      },
+      {
+        "text": "It becomes zero",
+        "why": "Knowing the position better makes the momentum less certain, not perfectly known."
+      }
+    ],
+    "explanation": "Δp_x Δx ≥ ħ/2: the more accurately the position is known (the smaller Δx), the less accurately the momentum is known (the larger Δp_x), and the other way round."
+  },
+  {
+    "id": "pc1-uncertainty-inequality",
+    "type": "multiple-choice",
+    "prompt": "Which is the uncertainty principle as the section writes it?",
+    "choices": [
+      {
+        "text": "Δp_x Δx ≥ ħ/2",
+        "correct": true
+      },
+      {
+        "text": "Δp_x Δx ≤ ħ/2",
+        "why": "The product has a lower limit, not an upper one: it is at least ħ/2."
+      },
+      {
+        "text": "Δp_x Δx = 0",
+        "why": "If the product could be zero, both could be known exactly. It is at least ħ/2."
+      },
+      {
+        "text": "Δp_x + Δx ≥ h",
+        "why": "It is the product of the uncertainties, not their sum, that is limited: Δp_x Δx ≥ ħ/2."
+      }
+    ],
+    "explanation": "The uncertainty principle is Δp_x Δx ≥ h/(4π) = ħ/2, with ħ = h/(2π)."
+  },
+  {
+    "id": "pc1-box-delta-x",
+    "type": "multiple-choice",
+    "prompt": "A particle is trapped in a box of length L. According to the section, what should you use for Δx?",
+    "choices": [
+      {
+        "text": "L/2",
+        "correct": true
+      },
+      {
+        "text": "L",
+        "why": "The position is uncertain by ±L/2, so the section uses Δx = L/2, not the full length."
+      },
+      {
+        "text": "2L",
+        "why": "The particle cannot be outside the box; its position is uncertain by ±L/2."
+      },
+      {
+        "text": "0",
+        "why": "The particle could be anywhere in the box, so its position is uncertain by ±L/2."
+      }
+    ],
+    "explanation": "If a particle is trapped in a box of length L, the uncertainty in its position is ±L/2, so the value of Δx used is L/2, not L."
+  },
+  {
+    "id": "pc1-maximum-uncertainty",
+    "type": "multiple-choice",
+    "prompt": "What does the uncertainty principle say about the largest possible uncertainty in a particle's velocity?",
+    "choices": [
+      {
+        "text": "Nothing: it sets only a minimum uncertainty, so there is no upper limit",
+        "correct": true
+      },
+      {
+        "text": "It must be less than the speed of light",
+        "why": "The principle sets a minimum uncertainty only. It says nothing about a maximum."
+      },
+      {
+        "text": "It equals ħ/2",
+        "why": "ħ/2 is the minimum for the product Δp_x Δx, not a maximum uncertainty."
+      },
+      {
+        "text": "It is always zero",
+        "why": "There is always some minimum uncertainty, and no upper limit."
+      }
+    ],
+    "explanation": "The uncertainty principle gives only the minimum uncertainty. As Exercise 1.9.1 says, there is no limit on the maximum uncertainty."
+  },
+  {
+    "id": "pc1-which-slit",
+    "type": "multiple-choice",
+    "prompt": "In the double-slit experiment with electrons, what happens if you detect which slit each electron goes through?",
+    "choices": [
+      {
+        "text": "The double-slit interference pattern disappears",
+        "correct": true
+      },
+      {
+        "text": "The pattern becomes sharper",
+        "why": "Knowing which slit the electron used destroys the double-slit pattern; you get single-slit interference."
+      },
+      {
+        "text": "Each electron splits and goes through both slits",
+        "why": "Electrons are always detected going through one slit or the other; they do not split."
+      },
+      {
+        "text": "Nothing changes",
+        "why": "Measurement affects the system: knowing the slit forces a single-slit pattern."
+      }
+    ],
+    "explanation": "If you determine which slit the electron went through, you no longer get a double-slit pattern, only single-slit interference. Measurement affects the system being observed."
+  },
+  {
+    "id": "pc1-macroscopic-objects",
+    "type": "multiple-choice",
+    "prompt": "Why does the uncertainty principle not matter in practice for a 1.0 g projectile?",
+    "choices": [
+      {
+        "text": "The minimum uncertainty in its position, about 10^−26 m, is far too small to notice",
+        "correct": true
+      },
+      {
+        "text": "The uncertainty principle applies only to electrons",
+        "why": "It applies to everything, but for heavy objects the uncertainty is negligibly small."
+      },
+      {
+        "text": "Large objects have no momentum",
+        "why": "A moving projectile has momentum. Its large mass just makes the minimum Δx tiny."
+      },
+      {
+        "text": "Large objects have no position",
+        "why": "Their position is very well defined: the minimum uncertainty is about 5 × 10^−26 m."
+      }
+    ],
+    "explanation": "For a 1.0 g projectile whose speed is known to within 10^−6 m/s, Δx = ħ/(2mΔv) ≈ 5.3 × 10^−26 m, negligible for any macroscopic object."
+  },
+  {
+    "id": "pc1-uncertainty-momentum",
+    "type": "numeric",
+    "prompt": "Use Δp Δx ≥ ħ/2 with ħ = 1.0 × 10^−34 J·s. What is the minimum uncertainty in momentum, in kg·m/s, for a particle whose position is known to within Δx = 1.0 × 10^−10 m? (Type it in scientific notation, like 2.0e-25.)",
+    "answer": 5e-25,
+    "unit": "kg·m/s",
+    "explanation": "Δp ≥ ħ/(2Δx) = (1.0 × 10^−34 J·s)/(2 × 1.0 × 10^−10 m) = 5.0 × 10^−25 kg·m/s."
+  },
+  {
+    "id": "pc1-bohr-orbits-obsolete",
+    "type": "multiple-choice",
+    "prompt": "How did the uncertainty principle affect Bohr's model of the atom?",
+    "choices": [
+      {
+        "text": "It showed that an electron cannot follow a circular orbit of exactly known radius",
+        "correct": true
+      },
+      {
+        "text": "It proved Bohr's circular orbits were exactly right",
+        "why": "Since position and momentum cannot both be known exactly, an exact circular orbit is impossible."
+      },
+      {
+        "text": "It made no difference to Bohr's model",
+        "why": "It showed a fundamental error in the model: exact orbits need exactly known position and momentum."
+      },
+      {
+        "text": "It showed the nucleus does not exist",
+        "why": "The nucleus is real. The principle undermined Bohr's exact electron orbits."
+      }
+    ],
+    "explanation": "Since the position and momentum of a particle cannot be known exactly at the same time, Bohr's picture of an electron travelling in a circular path of fixed radius became obsolete. That is why chemists speak of orbitals instead."
+  },
+  {
+    "id": "pc1-uncertainty-heisenberg-1927",
+    "type": "multiple-choice",
+    "prompt": "Which physicist described the uncertainty principle in 1927?",
+    "choices": [
+      {
+        "text": "Werner Heisenberg",
+        "correct": true
+      },
+      {
+        "text": "Louis de Broglie",
+        "why": "De Broglie proposed that matter has wave properties. Heisenberg was one of the physicists who then explored the consequences."
+      },
+      {
+        "text": "Albert Einstein",
+        "why": "Einstein designed a slit experiment to try to disprove the uncertainty principle. The principle is Heisenberg's."
+      },
+      {
+        "text": "Max Planck",
+        "why": "Planck introduced the quantum hypothesis to explain blackbody radiation. The uncertainty principle is Heisenberg's."
+      }
+    ],
+    "explanation": "In 1927 the German physicist Werner Heisenberg described the limit on measuring a particle's position and momentum at the same time. It is called the Heisenberg uncertainty principle."
+  },
+  {
+    "id": "pc1-uncertainty-newtonian-view",
+    "type": "multiple-choice",
+    "prompt": "Before quantum mechanics, what did Newtonian physics assume about measuring an object's properties?",
+    "choices": [
+      {
+        "text": "With enough care, all of them could be known exactly at the same time",
+        "correct": true
+      },
+      {
+        "text": "An object's position could never be measured exactly",
+        "why": "Newtonian physics put no limit on precision: better techniques could always reduce the uncertainty."
+      },
+      {
+        "text": "Only one property could be measured in each experiment",
+        "why": "Classically, many properties could be measured at once. The quantum limit applies to pairs like position and momentum."
+      },
+      {
+        "text": "Position and momentum had a fixed lower limit on their precision",
+        "why": "That was Heisenberg's bold new proposal, which broke with the Newtonian view."
+      }
+    ],
+    "explanation": "Until quantum mechanics, it was taken as fact that all of an object's variables could be known to exact precision at the same time, with better techniques always reducing the uncertainty. Heisenberg proposed that there is a lower limit to this precision."
+  },
+  {
+    "id": "pc1-uncertainty-repeat-measurement",
+    "type": "multiple-choice",
+    "prompt": "You set up exactly the same experiment twice and measure where an electron is found each time. What does the section say you will see?",
+    "choices": [
+      {
+        "text": "The electron is usually found at a different place the second time",
+        "correct": true
+      },
+      {
+        "text": "The electron is found at exactly the same place both times",
+        "why": "Identical setups do not give identical results: repeated measurements give a spread of locations."
+      },
+      {
+        "text": "The electron is never found at a definite place, since it is a wave",
+        "why": "Each measurement finds the electron at a definite location. It is the spread over many measurements that looks wavelike."
+      },
+      {
+        "text": "The electron is found at the center of its wave every time",
+        "why": "Its location can't be predicted like that: it varies from one measurement to the next, often far outside experimental error."
+      }
+    ],
+    "explanation": "Each measurement finds the electron at a definite spot, but repeating exactly the same setup finds it somewhere else, often far outside any experimental uncertainty. Many repeated measurements build up a wavelike distribution of locations."
+  },
+  {
+    "id": "pc1-uncertainty-probability-distribution",
+    "type": "multiple-choice",
+    "prompt": "Electrons are scattered from a crystal one at a time, and the spot where each one lands is recorded. What is the overall pattern built up by many electrons called?",
+    "choices": [
+      {
+        "text": "A probability distribution",
+        "correct": true
+      },
+      {
+        "text": "The electron's trajectory",
+        "why": "The path of each individual electron can't be predicted. The pattern shows where electrons are likely to be found."
+      },
+      {
+        "text": "An orbit",
+        "why": "An orbit is a path around a nucleus, as in Bohr's model. This pattern is a statistical record of landing spots."
+      },
+      {
+        "text": "A wave packet",
+        "why": "A wave packet is a combination of waves with different wavelengths. The pattern of many landing spots is a probability distribution."
+      }
+    ],
+    "explanation": "Each electron lands at a definite place that can't be predicted, but after enough data the spots form a pattern related to the electrons' wavelength and diffraction. It gives the probability of finding a particle at each location, and quantum mechanics predicts this distribution."
+  },
+  {
+    "id": "pc1-uncertainty-one-electron-at-a-time",
+    "type": "multiple-choice",
+    "prompt": "In the double-slit experiment, the electron beam is made so weak that there is never more than one electron between the slits and the screen. What happens?",
+    "choices": [
+      {
+        "text": "The same interference pattern still builds up",
+        "correct": true
+      },
+      {
+        "text": "The pattern disappears, since there are no other electrons to interfere with",
+        "why": "The pattern still forms. Each electron's probability distribution spans both slits, so it interferes with itself."
+      },
+      {
+        "text": "Only two bright stripes form, one behind each slit",
+        "why": "That is what classical particles would give. Electrons sent one at a time still build up an interference pattern."
+      },
+      {
+        "text": "A single-slit pattern forms",
+        "why": "A single-slit pattern appears only if you detect which slit each electron goes through."
+      }
+    ],
+    "explanation": "Lowering the intensity to one electron at a time still builds up the same interference pattern. So the electrons are not interfering with one another: each electron's probability distribution spans both slits, and it interferes with itself."
+  },
+  {
+    "id": "pc1-uncertainty-scattering-probe",
+    "type": "multiple-choice",
+    "prompt": "You can find the position of a moving electron by scattering light or other electrons from it. Why does this measurement lose information about the electron's momentum?",
+    "choices": [
+      {
+        "text": "The probe's own momentum changes the electron's momentum",
+        "correct": true
+      },
+      {
+        "text": "Light has no momentum, so it tells you nothing about momentum",
+        "why": "Light does carry momentum. That is exactly why scattering it from the electron changes the electron's momentum."
+      },
+      {
+        "text": "The scattering changes the electron's mass",
+        "why": "The electron's mass doesn't change. The probe's momentum changes the electron's momentum."
+      },
+      {
+        "text": "It doesn't: careful enough scattering can measure both exactly",
+        "why": "The section says there is a limit to absolute knowledge, even in principle."
+      }
+    ],
+    "explanation": "Measurement affects the system being observed. The light or electrons used as probes have momentum, and scattering from the electron changes its momentum in a way that loses information."
+  },
+  {
+    "id": "pc1-uncertainty-hbar-definition",
+    "type": "multiple-choice",
+    "prompt": "The uncertainty principle is written Δp_x Δx ≥ ħ/2. What is ħ (\"h-bar\")?",
+    "choices": [
+      {
+        "text": "h/(2π)",
+        "correct": true
+      },
+      {
+        "text": "h/2",
+        "why": "ħ divides Planck's constant by 2π, not by 2: ħ = h/(2π) ≈ 1.05 × 10^−34 J·s."
+      },
+      {
+        "text": "2πh",
+        "why": "ħ is smaller than h, not larger: it is h divided by 2π."
+      },
+      {
+        "text": "h/(4π)",
+        "why": "h/(4π) is ħ/2, the lower limit for Δp_x Δx, not ħ itself."
+      }
+    ],
+    "explanation": "ħ = h/(2π) = 1.0545718 × 10^−34 J·s. So the lower limit in the uncertainty principle can be written either as h/(4π) or as ħ/2."
+  },
+  {
+    "id": "pc1-uncertainty-standard-deviation",
+    "type": "multiple-choice",
+    "prompt": "What does Δx in the uncertainty principle measure?",
+    "choices": [
+      {
+        "text": "The spread of the x values (a standard deviation)",
+        "correct": true
+      },
+      {
+        "text": "The particle's average position, ⟨x⟩",
+        "why": "The average ⟨x⟩ is the center. Δx measures how spread out the x values are around it."
+      },
+      {
+        "text": "The exact position of the particle at one moment",
+        "why": "Δx is an uncertainty, the spread of x values, not a single exact position."
+      },
+      {
+        "text": "The distance the particle moves in one second",
+        "why": "That would be a speed. Δx is the spread (standard deviation) of the particle's position."
+      }
+    ],
+    "explanation": "Δx is the standard deviation, a statistical measure of the spread of x values. That is why, for a particle trapped in a box of length L, the section uses half the range, Δx = L/2."
+  },
+  {
+    "id": "pc1-uncertainty-early-form",
+    "type": "multiple-choice",
+    "prompt": "For a rough first estimate, the section takes a photon's Δp = h/λ and Δx = λ. What is the product Δp Δx?",
+    "choices": [
+      {
+        "text": "h",
+        "correct": true
+      },
+      {
+        "text": "h/λ^2",
+        "why": "The wavelength cancels: (h/λ) × λ = h."
+      },
+      {
+        "text": "0",
+        "why": "The product is not zero. It equals h, so position and momentum can't both be known exactly."
+      },
+      {
+        "text": "ħ/2",
+        "why": "ħ/2 is the lower limit in the later, refined form Δp_x Δx ≥ ħ/2. This first rough estimate gives h."
+      }
+    ],
+    "explanation": "Multiplying Δp = h/λ by Δx = λ cancels the wavelength: Δp Δx = (h/λ) × λ = h. This early form of the uncertainty principle was later refined to Δp_x Δx ≥ ħ/2."
+  },
+  {
+    "id": "pc1-uncertainty-hydrogen-vs-magnesium",
+    "type": "multiple-choice",
+    "prompt": "One electron is confined to a hydrogen atom and another to a larger magnesium atom. Which has the larger minimum uncertainty in velocity?",
+    "choices": [
+      {
+        "text": "The electron in the hydrogen atom",
+        "correct": true
+      },
+      {
+        "text": "The electron in the magnesium atom",
+        "why": "The bigger atom gives a larger Δx, and so a smaller minimum Δv, since Δv ≥ ħ/(2mΔx)."
+      },
+      {
+        "text": "Both are the same, since both are electrons",
+        "why": "They have the same mass but different Δx. The smaller region gives the larger minimum Δv."
+      },
+      {
+        "text": "Neither has any uncertainty in velocity",
+        "why": "Confining an electron to an atom gives it a large minimum velocity uncertainty, around 10^5 to 10^6 m/s."
+      }
+    ],
+    "explanation": "Δv ≥ ħ/(2mΔx), so a smaller Δx means a larger minimum Δv. The section finds about 3.9 × 10^5 m/s for the magnesium atom and 1.16 × 10^6 m/s for the smaller hydrogen atom."
+  },
+  {
+    "id": "pc1-uncertainty-wave-packet",
+    "type": "multiple-choice",
+    "prompt": "What is a \"wave packet\"?",
+    "choices": [
+      {
+        "text": "Many waves of different wavelengths added together",
+        "correct": true
+      },
+      {
+        "text": "A single wave with exactly one wavelength",
+        "why": "A wave packet combines many wavelengths. A single wavelength would give a precise momentum but a completely spread-out position."
+      },
+      {
+        "text": "A small group of particles that travel together",
+        "why": "A wave packet describes one particle, built from waves of different wavelengths."
+      },
+      {
+        "text": "A packet of light energy equal to hν",
+        "why": "That is a quantum of light energy, a photon. A wave packet is a mix of waves with different wavelengths."
+      }
+    ],
+    "explanation": "A wave packet is built by combining waves of varying wavelengths, which interfere to give a wave concentrated in one region. It shows why a particle's position and momentum can't both be precise."
+  },
+  {
+    "id": "pc1-uncertainty-wave-packet-more-waves",
+    "type": "multiple-choice",
+    "prompt": "More waves of different wavelengths are added to a wave packet. What happens to the particle's position and momentum?",
+    "choices": [
+      {
+        "text": "Its position becomes more precise and its momentum less certain",
+        "correct": true
+      },
+      {
+        "text": "Its momentum becomes more precise and its position less certain",
+        "why": "That is what happens when fewer wavelengths are used. Adding more wavelengths adds more different momenta."
+      },
+      {
+        "text": "Both become more precise",
+        "why": "They can't both improve: Δp_x Δx ≥ ħ/2. A sharper position comes with a less certain momentum."
+      },
+      {
+        "text": "Both become less certain",
+        "why": "Adding waves concentrates the packet in a smaller region, so the position becomes more precise."
+      }
+    ],
+    "explanation": "The more waves that are combined in a wave packet, the more precise the position becomes, and the more uncertain the momentum, because more wavelengths with different momenta are added. Using fewer waves does the reverse."
+  },
+  {
+    "id": "pc1-uncertainty-narrow-slit",
+    "type": "multiple-choice",
+    "prompt": "Light passes through a slit. As the slit is made narrower, what happens to the range of directions of the light coming out?",
+    "choices": [
+      {
+        "text": "It gets wider",
+        "correct": true
+      },
+      {
+        "text": "It gets narrower, giving a tighter beam",
+        "why": "A narrower slit pins down the position better, so the direction (momentum) becomes less certain and the light spreads more."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The spread depends on the slit: the narrower the slit, the wider the range of directions."
+      },
+      {
+        "text": "The light stops spreading and goes straight through",
+        "why": "A narrow slit makes light spread out more, not less, because its momentum becomes less certain."
+      }
+    ],
+    "explanation": "Narrowing the slit makes the position of each particle of light more precise, so its direction, and therefore its momentum, becomes less certain. That shows up as a wider spread of light."
+  },
+  {
+    "id": "pc1-uncertainty-mass-not-uncertain",
+    "type": "multiple-choice",
+    "prompt": "In Example 1.9.1, the uncertainty in an electron's momentum is written Δp = mΔv. Why is this allowed?",
+    "choices": [
+      {
+        "text": "The mass is known exactly, so only the velocity is uncertain",
+        "correct": true
+      },
+      {
+        "text": "The velocity is known exactly, so only the mass is uncertain",
+        "why": "It is the other way round: the electron's mass is known, and its velocity is uncertain."
+      },
+      {
+        "text": "Momentum does not depend on mass",
+        "why": "Momentum is mass times velocity, p = mv."
+      },
+      {
+        "text": "The electron is at rest, so its momentum is exactly zero",
+        "why": "If the momentum were known exactly, Δp would be zero, which the uncertainty principle forbids for a confined electron."
+      }
+    ],
+    "explanation": "Momentum is p = mv. The electron's mass is not uncertain, so all the uncertainty in p comes from v: Δp = mΔv. This gives Δv ≥ ħ/(2mΔx)."
+  },
+  {
+    "id": "pc1-uncertainty-police-joke",
+    "type": "multiple-choice",
+    "prompt": "In the section's joke, a police officer tells Heisenberg his exact speed, and Heisenberg cries, \"Now we're lost!\" Which idea is the joke based on?",
+    "choices": [
+      {
+        "text": "Exact momentum means a completely uncertain position",
+        "correct": true
+      },
+      {
+        "text": "Measuring a car's speed changes the car's mass",
+        "why": "The joke is not about mass. It is about the trade-off between knowing momentum and knowing position."
+      },
+      {
+        "text": "Position and speed can both be known exactly",
+        "why": "That is the classical view the joke pokes fun at. The more precisely one is known, the less precisely the other is."
+      },
+      {
+        "text": "Fast-moving objects have no position at all",
+        "why": "Every object has a position. The principle limits how precisely position and momentum can be known together."
+      }
+    ],
+    "explanation": "Δp_x Δx ≥ ħ/2: if the momentum (speed) were known exactly, the position would be completely uncertain. For a real car the effect is far too small to notice, which is what makes it a joke."
+  },
+  {
+    "id": "pc1-uncertainty-momentum-from-velocity",
+    "type": "numeric",
+    "prompt": "An electron's mass is m = 9.11 × 10^−31 kg and is not uncertain, so Δp = mΔv. If Δv = 1.0 × 10^6 m/s, what is Δp, in kg·m/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 9.11e-25,
+    "unit": "kg·m/s",
+    "explanation": "Δp = mΔv = (9.11 × 10^−31 kg)(1.0 × 10^6 m/s) = 9.11 × 10^−25 kg·m/s."
+  },
+  {
+    "id": "pc1-uncertainty-electron-velocity",
+    "type": "numeric",
+    "prompt": "Use Δv ≥ ħ/(2mΔx) with ħ = 1.05 × 10^−34 J·s and the electron mass m = 9.11 × 10^−31 kg. What is the minimum uncertainty in the velocity, in m/s, of an electron with Δx = 1.0 × 10^−10 m? (Type it in scientific notation, like 2.5e5.)",
+    "answer": 576000.0,
+    "unit": "m/s",
+    "tolerance": 0.02,
+    "explanation": "Δv ≥ ħ/(2mΔx) = (1.05 × 10^−34 J·s)/(2 × 9.11 × 10^−31 kg × 1.0 × 10^−10 m) = 5.76 × 10^5 m/s."
+  },
+  {
+    "id": "pc1-uncertainty-min-position",
+    "type": "numeric",
+    "prompt": "Use Δp Δx ≥ ħ/2 with ħ = 1.0 × 10^−34 J·s. A particle's momentum is known to within Δp = 1.0 × 10^−24 kg·m/s. What is the minimum uncertainty in its position, in m? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 5e-11,
+    "unit": "m",
+    "explanation": "Δx ≥ ħ/(2Δp) = (1.0 × 10^−34 J·s)/(2 × 1.0 × 10^−24 kg·m/s) = 5.0 × 10^−11 m."
+  },
+  {
+    "id": "pc1-uncertainty-position-tenfold",
+    "type": "numeric",
+    "prompt": "Use Δp_x Δx ≥ ħ/2. If the uncertainty in a particle's position, Δx, is made 10 times smaller, by what factor does the minimum uncertainty in its momentum, Δp_x, increase?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "The minimum Δp_x = ħ/(2Δx) is inversely proportional to Δx, so making Δx 10 times smaller makes the minimum Δp_x 10 times larger."
+  },
+  {
+    "id": "pc1-uncertainty-electron-vs-proton",
+    "type": "numeric",
+    "prompt": "Use Δv ≥ ħ/(2mΔx). Take a proton to be 1836 times heavier than an electron. If both are confined to the same Δx, how many times larger is the electron's minimum Δv than the proton's?",
+    "answer": 1836,
+    "tolerance": 0,
+    "explanation": "For the same Δx, the minimum Δv is inversely proportional to the mass m. The electron is 1836 times lighter, so its minimum Δv is 1836 times larger."
+  }
+]

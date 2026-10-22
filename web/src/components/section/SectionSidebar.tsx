@@ -7,12 +7,14 @@ import { getFinished, subscribeToProgress } from "../../lib/progress";
 import { askHref } from "../../lib/topics";
 import type { BookMeta, Branch, PathSection } from "../../lib/types";
 
-/* "CC BY-NC-SA 4.0" -> its deed on creativecommons.org; undefined for anything else
-   (Inorganic Chemistry marks sections whose pages carry no license "Unverified"). */
+/* "CC BY-NC-SA 4.0" -> its deed on creativecommons.org; a license LibreTexts gives
+   without a version ("CC BY", in Physical Chemistry) -> the unversioned deed, which
+   creativecommons.org sends to the current version; undefined for anything else
+   (sections whose pages carry no license are marked "Unverified"). */
 function licenseUrl(license: string) {
-  const match = license.match(/^CC (BY(?:-NC)?(?:-ND|-SA)?) (\d\.\d)$/);
+  const match = license.match(/^CC (BY(?:-NC)?(?:-ND|-SA)?)(?: (\d\.\d))?$/);
   return match
-    ? `https://creativecommons.org/licenses/${match[1].toLowerCase()}/${match[2]}/`
+    ? `https://creativecommons.org/licenses/${match[1].toLowerCase()}/${match[2] ? `${match[2]}/` : ""}`
     : undefined;
 }
 

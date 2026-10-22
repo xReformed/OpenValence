@@ -1,0 +1,643 @@
+[
+  {
+    "id": "pc4-commute-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean for two operators Â and B̂ to commute?",
+    "choices": [
+      {
+        "text": "Applying Â then B̂ gives the same result as B̂ then Â",
+        "correct": true
+      },
+      {
+        "text": "Applying Â and then B̂ to any function always gives zero",
+        "why": "It is the difference ÂB̂ − B̂Â that is zero, not the result of applying them. Commuting means both orders give the same result."
+      },
+      {
+        "text": "Each of the two operators leaves every function unchanged",
+        "why": "Commuting operators can change a function; they just change it the same way in either order."
+      },
+      {
+        "text": "Â and B̂ are really the same operator, written twice",
+        "why": "Different operators can commute: multiplying by 3x and multiplying by x^−1 do, for example. Commuting means the order doesn't matter."
+      }
+    ],
+    "explanation": "Two operators commute when the order in which they act doesn't matter: ÂB̂f(x) = B̂Âf(x) for any function f(x). Equivalently, their commutator [Â, B̂] = ÂB̂ − B̂Â is zero."
+  },
+  {
+    "id": "pc4-commute-commutator-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression is the commutator [Â, B̂]?",
+    "choices": [
+      {
+        "text": "ÂB̂ − B̂Â",
+        "correct": true
+      },
+      {
+        "text": "ÂB̂ + B̂Â",
+        "why": "The commutator subtracts the two orders, so that it is zero when they agree: [Â, B̂] = ÂB̂ − B̂Â."
+      },
+      {
+        "text": "Â − B̂",
+        "why": "The commutator compares the two orders of applying both operators, ÂB̂ and B̂Â, not the operators on their own."
+      },
+      {
+        "text": "ÂB̂",
+        "why": "ÂB̂ is just one order. The commutator is the difference between the two orders, ÂB̂ − B̂Â."
+      }
+    ],
+    "explanation": "The commutator is [Â, B̂] = ÂB̂ − B̂Â. If it equals zero, the two orders give the same result and the operators commute."
+  },
+  {
+    "id": "pc4-commute-test-result",
+    "type": "multiple-choice",
+    "prompt": "To test whether Â and B̂ commute, you apply ÂB̂ to a function f(x), apply B̂Â to the same f(x), and subtract. Which result shows that they commute?",
+    "choices": [
+      {
+        "text": "Zero, whatever f(x) is",
+        "correct": true
+      },
+      {
+        "text": "A constant times f(x)",
+        "why": "A nonzero result, even a constant times f(x), means the two orders differ, so the operators do not commute."
+      },
+      {
+        "text": "The function f(x) itself",
+        "why": "If the difference were f(x), the two orders would differ by f(x). They commute only when the difference is zero."
+      },
+      {
+        "text": "1, for any function f(x)",
+        "why": "A difference of 1 would mean the two orders give different results. They commute only if the difference is zero."
+      }
+    ],
+    "explanation": "If ÂB̂f(x) and B̂Âf(x) are the same, subtracting them gives zero, so [Â, B̂] = 0 and the operators commute. Any other result means the order matters."
+  },
+  {
+    "id": "pc4-commute-order-matters",
+    "type": "multiple-choice",
+    "prompt": "In general, does the order in which two operators act on a function matter?",
+    "choices": [
+      {
+        "text": "Yes, unless the two operators commute",
+        "correct": true
+      },
+      {
+        "text": "No, operators can always be swapped like numbers",
+        "why": "Operators are not just numbers. For example, d/dx and x^2 give different results in different orders."
+      },
+      {
+        "text": "Only if one of the operators contains ħ",
+        "why": "d/dx and x^2 contain no ħ, yet they do not commute. What matters is whether the two orders give the same result."
+      },
+      {
+        "text": "Only if one of the operators is a constant",
+        "why": "It's the other way round: multiplying by a constant, like Î = 5, commutes with the operators in this section. Order matters for pairs like d/dx and x^2."
+      }
+    ],
+    "explanation": "One important property of operators is that the order of operation matters: in general ÂB̂f(x) ≠ B̂Âf(x). The two orders give the same result only when the operators commute."
+  },
+  {
+    "id": "pc4-commute-which-acts-first",
+    "type": "multiple-choice",
+    "prompt": "In the expression Â{Êf(x)}, which operator acts on f(x) first?",
+    "choices": [
+      {
+        "text": "Ê, the operator written next to f(x)",
+        "correct": true
+      },
+      {
+        "text": "Â, the operator written on the left",
+        "why": "Â acts on whatever Ê produces, so it acts second. In Example 4.6.1a, Â{Êf(x)} = Â{x^2 f(x)}: Ê multiplies by x^2 first."
+      },
+      {
+        "text": "Both act on f(x) at the same moment",
+        "why": "Operators act one after the other. The one next to f(x), Ê, acts first, and Â acts on its result."
+      },
+      {
+        "text": "Whichever of the two operators is simpler",
+        "why": "The order is set by how the expression is written, not by which operator is simpler: the one next to f(x) acts first."
+      }
+    ],
+    "explanation": "The operator nearest the function acts first. In Example 4.6.1a, Â{Êf(x)} = Â{x^2 f(x)} = d/dx{x^2 f(x)}: Ê (multiply by x^2) acts first, and Â (d/dx) acts on the result."
+  },
+  {
+    "id": "pc4-commute-everyday-pair",
+    "type": "multiple-choice",
+    "prompt": "Which pair of everyday operations does the section use as an example of operations that commute?",
+    "choices": [
+      {
+        "text": "Brushing your teeth and combing your hair",
+        "correct": true
+      },
+      {
+        "text": "Getting dressed and taking a shower",
+        "why": "The section gives this as a pair that does not commute: showering and then dressing is not the same as dressing and then showering."
+      },
+      {
+        "text": "Putting on your socks and putting on your shoes",
+        "why": "Here the order matters: with your shoes on first, you can't put your socks on underneath. Commuting operations give the same result in either order."
+      },
+      {
+        "text": "Cracking an egg and frying it",
+        "why": "You can't fry an egg before cracking it, so the order matters. The section's commuting pair is brushing your teeth and combing your hair."
+      }
+    ],
+    "explanation": "Brushing your teeth and combing your hair commute: doing them in either order gives the same result. Getting dressed and taking a shower do not, because the outcome depends on which you do first."
+  },
+  {
+    "id": "pc4-commute-simultaneous-measurement",
+    "type": "multiple-choice",
+    "prompt": "If the operators for two physical quantities commute, what does that mean for measuring the quantities?",
+    "choices": [
+      {
+        "text": "Both can be measured at the same time with no limit on precision",
+        "correct": true
+      },
+      {
+        "text": "Only one of them can be measured at a time",
+        "why": "That is closer to what happens when operators do not commute. Commuting operators let both be measured together exactly."
+      },
+      {
+        "text": "Both can be measured together, but never more precisely than ħ/2",
+        "why": "ħ/2 is the limit for position and momentum, which do not commute. Commuting quantities have no such limit."
+      },
+      {
+        "text": "Neither of them can ever be measured exactly",
+        "why": "Commuting is the good case: both quantities can be measured exactly, at the same time."
+      }
+    ],
+    "explanation": "If two operators commute, the corresponding physical quantities can be measured simultaneously to any precision, with no limit on the uncertainty. That is what the section's title means by infinite precision."
+  },
+  {
+    "id": "pc4-commute-noncommuting-tradeoff",
+    "type": "multiple-choice",
+    "prompt": "If two operators do not commute, what happens when you try to measure both quantities at the same time?",
+    "choices": [
+      {
+        "text": "Measuring one more precisely makes the other less precise",
+        "correct": true
+      },
+      {
+        "text": "Both can still be measured exactly with good enough instruments",
+        "why": "This limit is not about instruments. Operators that do not commute force a tradeoff in precision between the two quantities."
+      },
+      {
+        "text": "The two quantities are forced to have the same value",
+        "why": "Non-commuting operators do not make the values equal; they limit how precisely both can be known together."
+      },
+      {
+        "text": "Neither quantity can be measured at all",
+        "why": "Each quantity can be measured. What's limited is how precisely both can be known at the same time."
+      }
+    ],
+    "explanation": "If two operators do not commute, there is a tradeoff: the more precisely one quantity is measured, the less precisely the other can be known. This is the Heisenberg uncertainty principle."
+  },
+  {
+    "id": "pc4-commute-heisenberg",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which principle do the commutation relations of operators represent mathematically?",
+    "choices": [
+      {
+        "text": "The Heisenberg uncertainty principle",
+        "correct": true
+      },
+      {
+        "text": "The Pauli exclusion principle",
+        "why": "The Pauli principle is about electrons sharing a state. Commutators tell you which quantities can be known precisely together: the uncertainty principle."
+      },
+      {
+        "text": "Planck's quantization of energy",
+        "why": "Planck's idea is that energy comes in quanta of hν. Commutators are linked to the uncertainty principle."
+      },
+      {
+        "text": "The conservation of energy",
+        "why": "Commutators say nothing about conserving energy. They express the uncertainty principle: whether two quantities can be known precisely at once."
+      }
+    ],
+    "explanation": "Whether two operators commute decides whether both quantities can be measured at once with infinite precision, or only with a tradeoff. This is the mathematical form of the Heisenberg uncertainty principle."
+  },
+  {
+    "id": "pc4-commute-shared-eigenfunctions",
+    "type": "multiple-choice",
+    "prompt": "What can two operators that commute have in common?",
+    "choices": [
+      {
+        "text": "The same set of eigenfunctions",
+        "correct": true
+      },
+      {
+        "text": "The same eigenvalue for every eigenfunction",
+        "why": "The eigenfunctions can be shared, but the eigenvalues can differ: Âψ = aψ and B̂ψ = bψ, with a and b different numbers."
+      },
+      {
+        "text": "A commutator equal to iħ",
+        "why": "A commutator of iħ means two operators do not commute, as for position and momentum. Commuting operators have a commutator of zero."
+      },
+      {
+        "text": "Neither of them can have any eigenfunctions",
+        "why": "Commuting operators do have eigenfunctions; in fact they can share the same set."
+      }
+    ],
+    "explanation": "If two operators commute, they can have the same set of eigenfunctions. Then a state can have exact values of both quantities at once, so both can be measured simultaneously."
+  },
+  {
+    "id": "pc4-commute-apsi-eigenfunction",
+    "type": "multiple-choice",
+    "prompt": "Â and B̂ commute, and ψ is an eigenfunction of B̂ with eigenvalue b. The section shows that B̂(Âψ) = b(Âψ). What does this tell you about Âψ?",
+    "choices": [
+      {
+        "text": "An eigenfunction of B̂ with the same eigenvalue b",
+        "correct": true
+      },
+      {
+        "text": "An eigenfunction of B̂ with eigenvalue −b instead",
+        "why": "The equation B̂(Âψ) = b(Âψ) has b, not −b, on the right: the eigenvalue is unchanged."
+      },
+      {
+        "text": "Zero, whatever the function ψ is",
+        "why": "The equation does not force Âψ to be zero. It shows Âψ is an eigenfunction of B̂ with eigenvalue b, so at most Â multiplies ψ by a constant."
+      },
+      {
+        "text": "A new function with nothing to do with ψ",
+        "why": "Since Âψ has the same eigenvalue b as ψ, Â cannot turn ψ into a different function; at most it multiplies ψ by a constant."
+      }
+    ],
+    "explanation": "B̂(Âψ) = b(Âψ) says Âψ is an eigenfunction of B̂ with eigenvalue b. So Â cannot change ψ: at most it multiplies ψ by a constant, Âψ = aψ, which makes ψ an eigenfunction of Â as well."
+  },
+  {
+    "id": "pc4-commute-ab-product",
+    "type": "numeric",
+    "prompt": "Â and B̂ commute, and ψ is an eigenfunction of both, with Âψ = 2ψ and B̂ψ = 3ψ. B̂(Âψ) equals some number times ψ. What is that number?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "B̂(Âψ) = B̂(2ψ) = 2B̂ψ = 2 × 3ψ = 6ψ, so the number is ab = 2 × 3 = 6. The other order, Â(B̂ψ) = Â(3ψ) = 3 × 2ψ = 6ψ, gives the same result, as it must for commuting operators."
+  },
+  {
+    "id": "pc4-commute-both-eigen-measure",
+    "type": "multiple-choice",
+    "prompt": "A system is in a state ψ that is an eigenfunction of two commuting operators, with Âψ = aψ and B̂ψ = bψ. What do measurements of the two quantities give?",
+    "choices": [
+      {
+        "text": "Exactly a for the first and exactly b for the second",
+        "correct": true
+      },
+      {
+        "text": "Exactly a for the first, but an uncertain value for the second",
+        "why": "ψ is an eigenfunction of B̂ too, so B also has the exact value b. Commuting quantities can both be known exactly."
+      },
+      {
+        "text": "The product ab for both quantities",
+        "why": "ab appears when you apply both operators, B̂(Âψ) = abψ, but each measurement gives its own operator's eigenvalue: a or b."
+      },
+      {
+        "text": "The average of a and b for both quantities",
+        "why": "Each operator has its own eigenvalue, and the measured values are the eigenvalues, so the results are a and b."
+      }
+    ],
+    "explanation": "The eigenvalues of an operator are the values that are measured. Because ψ is an eigenfunction of both commuting operators, A has the exact value a and B the exact value b at the same time."
+  },
+  {
+    "id": "pc4-commute-ex1a-commute",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.6.1a, do Â = d/dx and Ê = x^2 commute?",
+    "choices": [
+      {
+        "text": "No; [Â, Ê]f(x) = 2x f(x), which is not zero",
+        "correct": true
+      },
+      {
+        "text": "Yes; both orders give the same result, x^2 f'(x)",
+        "why": "Only d/dx first gives x^2 f'(x). Multiplying by x^2 first and then differentiating gives 2x f(x) + x^2 f'(x)."
+      },
+      {
+        "text": "Yes; the commutator [Â, Ê] is zero for every f(x)",
+        "why": "Subtracting the two orders leaves 2x f(x), which is not zero, so they do not commute."
+      },
+      {
+        "text": "No; [Â, Ê]f(x) = x^2 f'(x), which is not zero",
+        "why": "x^2 f'(x) is the term both orders share, and it cancels in the subtraction. What is left over is 2x f(x)."
+      }
+    ],
+    "explanation": "Â{Êf(x)} = d/dx{x^2 f(x)} = 2x f(x) + x^2 f'(x) by the product rule, while Ê{Âf(x)} = x^2 f'(x). The difference is 2x f(x) ≠ 0, so d/dx and x^2 do not commute."
+  },
+  {
+    "id": "pc4-commute-ex1a-derivative-first",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.6.1a, what do you get if you first take the derivative of f(x) and then multiply by x^2?",
+    "choices": [
+      {
+        "text": "x^2 f'(x)",
+        "correct": true
+      },
+      {
+        "text": "2x f(x) + x^2 f'(x)",
+        "why": "That is the other order: multiply by x^2 first, then take the derivative, which by the product rule adds 2x f(x)."
+      },
+      {
+        "text": "2x f(x)",
+        "why": "2x f(x) is the commutator, the difference between the two orders, not the result of one order."
+      },
+      {
+        "text": "x^2 f(x)",
+        "why": "That skips the derivative. Taking d/dx first gives f'(x), and multiplying by x^2 then gives x^2 f'(x)."
+      }
+    ],
+    "explanation": "Ê{Âf(x)} = Ê{f'(x)} = x^2 f'(x). The other order, d/dx{x^2 f(x)}, gives an extra 2x f(x) from the product rule, which is why the two operators do not commute."
+  },
+  {
+    "id": "pc4-commute-ex1b-reason",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.6.1b, B̂ multiplies a function by h/x and Ĉ adds 3 to it. Why don't they commute?",
+    "choices": [
+      {
+        "text": "Adding 3 first means the 3 is multiplied by h/x as well",
+        "correct": true
+      },
+      {
+        "text": "Because h is Planck's constant, and constants never commute",
+        "why": "Multiplying by a constant commutes with many operators, as Î = 5 does in Example 4.6.2B. The trouble is the order of multiplying and adding."
+      },
+      {
+        "text": "Because Ĉ takes a derivative of the function",
+        "why": "Ĉ only adds 3; there is no derivative. The order matters because the 3 gets multiplied by h/x only if it is added first."
+      },
+      {
+        "text": "Because Ĉ shifts the variable from x to x + 3",
+        "why": "Ĉ adds 3 to the value of the function, giving f(x) + 3; it doesn't shift x. The order matters because the 3 gets multiplied by h/x only if it is added first."
+      }
+    ],
+    "explanation": "B̂{Ĉf(x)} = (h/x)(f(x) + 3) = (hf(x))/x + (3h)/x, while Ĉ{B̂f(x)} = (hf(x))/x + 3. Adding 3 before multiplying lets the 3 be multiplied by h/x too, so the results differ and the operators do not commute."
+  },
+  {
+    "id": "pc4-commute-add-multiply",
+    "type": "numeric",
+    "prompt": "As in Example 4.6.1b, Ĉ adds 3 to a function: Ĉ{f(x)} = f(x) + 3. Let B̂ double a function: B̂{f(x)} = 2f(x). For f(x) = 1, what is B̂{Ĉf(x)} − Ĉ{B̂f(x)}?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Adding 3 first and then doubling gives B̂{Ĉf(x)} = 2 × (1 + 3) = 8. Doubling first and then adding 3 gives Ĉ{B̂f(x)} = 2 × 1 + 3 = 5. The difference is 8 − 5 = 3, not zero, so B̂ and Ĉ do not commute: the added 3 gets doubled only when it is added first."
+  },
+  {
+    "id": "pc4-commute-which-pair-commutes",
+    "type": "multiple-choice",
+    "prompt": "Which pair of operators commutes?",
+    "choices": [
+      {
+        "text": "Multiplying by 3x and multiplying by x^−1",
+        "correct": true
+      },
+      {
+        "text": "d/dx and multiplying by x^2",
+        "why": "Example 4.6.1a shows these do not commute: their commutator gives 2x f(x)."
+      },
+      {
+        "text": "Multiplying by h/x and adding 3",
+        "why": "Example 4.6.1b shows these do not commute: adding 3 first lets the 3 be multiplied by h/x too."
+      },
+      {
+        "text": "The position operator x̂ and the momentum operator p̂",
+        "why": "Their commutator is iħ, not zero, so position and momentum do not commute."
+      }
+    ],
+    "explanation": "In Example 4.6.1c, both orders just multiply f(x) by 3x and by x^−1, giving 3f(x) either way, so [Ĵ, Ô] = 0. Ordinary multiplication doesn't depend on order."
+  },
+  {
+    "id": "pc4-commute-ex1c-factor",
+    "type": "numeric",
+    "prompt": "In Example 4.6.1c, Ĵ multiplies a function by 3x and Ô multiplies it by x^−1. Applied one after the other, in either order, they multiply f(x) by what number?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Either way, f(x) is multiplied by 3x and by x^−1: 3x × x^−1 × f(x) = 3f(x). Both orders give 3f(x), so [Ĵ, Ô] = 3f(x) − 3f(x) = 0 and the operators commute."
+  },
+  {
+    "id": "pc4-commute-constant-derivative",
+    "type": "numeric",
+    "prompt": "Î multiplies a function by 5, and Â = d/dx. For f(x) = e^(2x), Â{Îf(x)} = d/dx(5e^(2x)) is some number times e^(2x). What is that number?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "d/dx(5e^(2x)) = 5 × 2e^(2x) = 10e^(2x). The other order gives the same: Î{Âf(x)} = 5 × 2e^(2x) = 10e^(2x). A constant factor comes straight out of a derivative, so multiplying by a constant commutes with d/dx."
+  },
+  {
+    "id": "pc4-commute-constant-integral",
+    "type": "multiple-choice",
+    "prompt": "In Example 4.6.2B, why does Î, which multiplies a function by 5, commute with L̂, an integral from 1 to ∞?",
+    "choices": [
+      {
+        "text": "A constant factor of 5 can be taken in or out of the integral",
+        "correct": true
+      },
+      {
+        "text": "Every integral from 1 to ∞ is equal to zero",
+        "why": "The integral isn't zero in general. The two terms of the commutator cancel because the 5 can be moved through the integral."
+      },
+      {
+        "text": "Î leaves every function unchanged",
+        "why": "Î = 5 multiplies a function by 5, so it does change it. It commutes because a constant comes out of an integral."
+      },
+      {
+        "text": "L̂ is a derivative, and derivatives commute with everything",
+        "why": "L̂ is an integral, and derivatives don't commute with everything: d/dx and x^2 do not commute."
+      }
+    ],
+    "explanation": "[Î, L̂]f(x) = 5∫_1^(∞) f(x) dx − ∫_1^(∞) 5f(x) dx = 0, because a constant can be taken outside an integral. Multiplying by 5 before or after integrating gives the same result."
+  },
+  {
+    "id": "pc4-commute-sigma-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the general uncertainty relation σ_A σ_B ≥ (1/2)|∫ψ^*[ÂB̂ − B̂Â]ψ dτ|, what are σ_A and σ_B?",
+    "choices": [
+      {
+        "text": "The uncertainties in the two quantities",
+        "correct": true
+      },
+      {
+        "text": "The eigenvalues a and b of the two operators",
+        "why": "Eigenvalues are the measured values themselves. σ_A and σ_B measure how uncertain those values are."
+      },
+      {
+        "text": "The two operators Â and B̂ themselves",
+        "why": "The operators appear inside the integral. σ_A and σ_B are numbers: the standard deviations of the measured values."
+      },
+      {
+        "text": "The probabilities of measuring a and b",
+        "why": "σ_A and σ_B are not probabilities; they are standard deviations, the spread in the measured values."
+      }
+    ],
+    "explanation": "σ_A and σ_B are the uncertainties, or standard deviations, in the physical quantities associated with Â and B̂. The relation says their product can't be smaller than the right-hand side."
+  },
+  {
+    "id": "pc4-commute-rhs-zero",
+    "type": "multiple-choice",
+    "prompt": "If Â and B̂ commute, what is the right-hand side of the general uncertainty relation, σ_A σ_B ≥ (1/2)|∫ψ^*[ÂB̂ − B̂Â]ψ dτ|?",
+    "choices": [
+      {
+        "text": "Zero, so there is no limit on the uncertainties",
+        "correct": true
+      },
+      {
+        "text": "ħ/2, just as for position and momentum",
+        "why": "ħ/2 comes from [x̂, p̂] = iħ. For commuting operators ÂB̂ − B̂Â = 0, so the right-hand side is zero."
+      },
+      {
+        "text": "Infinity, so neither quantity can be known",
+        "why": "Commuting makes the bracket ÂB̂ − B̂Â zero, so the right-hand side is zero, not infinite."
+      },
+      {
+        "text": "1, so the uncertainties multiply to at least 1",
+        "why": "The bracket is the commutator, which is zero for commuting operators, so the right-hand side is zero."
+      }
+    ],
+    "explanation": "If Â and B̂ commute, ÂB̂ − B̂Â = 0, so the right-hand side is zero. Either or both of σ_A and σ_B can then be zero: there is no restriction on measuring the eigenvalues a and b."
+  },
+  {
+    "id": "pc4-commute-sigma-infinite",
+    "type": "multiple-choice",
+    "prompt": "Â and B̂ do not commute, and the quantity A is known exactly, so σ_A = 0. What does the section say about σ_B?",
+    "choices": [
+      {
+        "text": "It must be infinite",
+        "correct": true
+      },
+      {
+        "text": "It must be zero too",
+        "why": "Both can be zero only for commuting operators. Here σ_A σ_B has a nonzero lower limit, so σ_B must be infinite."
+      },
+      {
+        "text": "It must equal exactly ħ/2",
+        "why": "ħ/2 is a limit on the product σ_x σ_px for position and momentum. With σ_A = 0, the product can't reach a nonzero limit unless σ_B is infinite."
+      },
+      {
+        "text": "It can take any value",
+        "why": "For non-commuting operators the product σ_A σ_B has a nonzero lower limit, so with σ_A = 0, σ_B can't be finite."
+      }
+    ],
+    "explanation": "If Â and B̂ do not commute, the right-hand side is not zero, so neither σ_A nor σ_B can be zero unless the other is infinite. Knowing A exactly means knowing nothing about B."
+  },
+  {
+    "id": "pc4-commute-x-p-commutator",
+    "type": "multiple-choice",
+    "prompt": "What does the commutator of position and momentum in one dimension, [x̂, p̂], equal?",
+    "choices": [
+      {
+        "text": "iħ",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "A zero commutator would let position and momentum be known exactly together. They do not commute: [x̂, p̂] = iħ."
+      },
+      {
+        "text": "ħ/2",
+        "why": "ħ/2 is the lower limit on σ_x σ_px that the commutator leads to, not the commutator itself."
+      },
+      {
+        "text": "ħ",
+        "why": "The commutator has a factor of i: [x̂, p̂] = iħ."
+      }
+    ],
+    "explanation": "Exercise 4.6.1 shows that [x̂, p̂] = x̂p̂ − p̂x̂ = iħ. Because this is not zero, position and momentum cannot both be measured to arbitrary precision at the same time."
+  },
+  {
+    "id": "pc4-commute-p-x-order",
+    "type": "multiple-choice",
+    "prompt": "Given that [x̂, p̂] = x̂p̂ − p̂x̂ = iħ, what is [p̂, x̂]?",
+    "choices": [
+      {
+        "text": "−iħ",
+        "correct": true
+      },
+      {
+        "text": "iħ",
+        "why": "Swapping the order swaps the two terms: [p̂, x̂] = p̂x̂ − x̂p̂, which is minus [x̂, p̂]."
+      },
+      {
+        "text": "0",
+        "why": "Reversing the order of the operators doesn't make them commute; it only changes the sign of the commutator."
+      },
+      {
+        "text": "1/(iħ)",
+        "why": "Swapping the order doesn't invert the commutator; it just changes its sign: [p̂, x̂] = −[x̂, p̂]."
+      }
+    ],
+    "explanation": "[p̂, x̂] = p̂x̂ − x̂p̂ = −(x̂p̂ − p̂x̂) = −iħ. The uncertainty relation uses the absolute value, so the bound is ħ/2 either way."
+  },
+  {
+    "id": "pc4-commute-x-p-bound",
+    "type": "multiple-choice",
+    "prompt": "Using [x̂, p̂] = iħ in the general uncertainty relation, what lower limit does the section find for σ_x σ_px?",
+    "choices": [
+      {
+        "text": "ħ/2",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "A lower limit of 0 would mean no restriction, which happens only for commuting operators. Here the limit is ħ/2."
+      },
+      {
+        "text": "iħ",
+        "why": "Uncertainties are real, positive numbers. The relation takes (1/2) times the absolute value of iħ, which gives ħ/2."
+      },
+      {
+        "text": "2ħ",
+        "why": "The relation has a factor of 1/2, not 2: (1/2)|iħ| = ħ/2."
+      }
+    ],
+    "explanation": "For position and momentum the right-hand side of σ_A σ_B ≥ (1/2)|∫ψ^*[ÂB̂ − B̂Â]ψ dτ| becomes (1/2)|iħ| = ħ/2, so σ_x σ_px ≥ ħ/2."
+  },
+  {
+    "id": "pc4-commute-momentum-uncertainty",
+    "type": "numeric",
+    "prompt": "Use σ_x σ_px ≥ ħ/2 with ħ = 1.055 × 10^−34 J·s. A particle's position has an uncertainty σ_x = 2.0 × 10^−10 m. What is the smallest possible uncertainty in its momentum, σ_px, in kg·m/s? (Type it in scientific notation, like 2.5e-25.)",
+    "answer": 2.6375e-25,
+    "unit": "kg·m/s",
+    "tolerance": 0.02,
+    "explanation": "σ_px ≥ ħ/(2σ_x) = (1.055 × 10^−34 J·s)/(2 × 2.0 × 10^−10 m) = 2.64 × 10^−25 kg·m/s. Because x̂ and p̂ do not commute, a smaller σ_x would force a larger σ_px."
+  },
+  {
+    "id": "pc4-commute-angular-known",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which angular momentum quantities can be known exactly at the same time?",
+    "choices": [
+      {
+        "text": "The magnitude and one component, usually z",
+        "correct": true
+      },
+      {
+        "text": "All three components, L_x, L_y and L_z",
+        "why": "The components do not commute with each other, for example [L̂_x, L̂_y] = iħL̂_z, so they can't all be known at once."
+      },
+      {
+        "text": "The magnitude and all three of its components",
+        "why": "L̂^2 commutes with each component, but the components don't commute with each other, so only one component can be known along with the magnitude."
+      },
+      {
+        "text": "Only one component, and never the magnitude",
+        "why": "L̂^2 commutes with each component, so the magnitude can be known together with one component."
+      }
+    ],
+    "explanation": "L̂^2 commutes with L̂_x, L̂_y and L̂_z, but the components do not commute with each other. So the magnitude and one component, usually z, can be known together, and nothing is known about the other two."
+  },
+  {
+    "id": "pc4-commute-lx-ly",
+    "type": "multiple-choice",
+    "prompt": "What does the section give for the commutator [L̂_x, L̂_y] of two angular momentum components?",
+    "choices": [
+      {
+        "text": "iħL̂_z",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "A zero commutator would mean L̂_x and L̂_y commute. The components of angular momentum do not commute with each other."
+      },
+      {
+        "text": "L̂^2",
+        "why": "L̂^2 is the square of the magnitude, which commutes with each component. The commutator of L̂_x and L̂_y is iħL̂_z."
+      },
+      {
+        "text": "iħ",
+        "why": "iħ is the commutator of position and momentum. For L̂_x and L̂_y it is iħL̂_z."
+      }
+    ],
+    "explanation": "The components of angular momentum do not commute: [L̂_x, L̂_y] = iħL̂_z, [L̂_y, L̂_z] = iħL̂_x and [L̂_z, L̂_x] = iħL̂_y. So no two components can be known exactly at the same time."
+  }
+]

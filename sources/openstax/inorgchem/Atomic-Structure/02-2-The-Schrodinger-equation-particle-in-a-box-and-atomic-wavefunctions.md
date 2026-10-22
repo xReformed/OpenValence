@@ -348,15 +348,15 @@ You can use any plotting program to do this. This is the function you should plo
 
 For n=1: Assign a value of n = 1, as stated in the problem. In the text above, it also states that it is convenient to assign a value of a = 1. Assigning these values results in the following function:
 
-ψ = √(2/1)(sin((1πx)/1)) and simplifying leads to ψ = √2(sin(πx))
+ψ = √(2/1)(sin((1πx)/1)) and simplifying leads to ψ = √(2)(sin(πx))
 
 For n=2,3,4 you would repeat the process above. You will get the following functions:
 
-For n=2: ψ = √2(sin(2πx))
+For n=2: ψ = √(2)(sin(2πx))
 
-For n=3: ψ = √2(sin(3πx))
+For n=3: ψ = √(2)(sin(3πx))
 
-For n=4: ψ = √2(sin(4πx))
+For n=4: ψ = √(2)(sin(4πx))
 
 In a program like Desmos, you need to input the function correctly. It's useful to know the code for at least one graphing program. For Desmos, and most others, you can find help online. For example, the correct input for Desmos for the n=4 case is sqrt(2)*(sin(4*pi*x)). But, you have to type it in because copy/paste doesn't work. You'll also want to display your graph only from x = 0 to x = 1 by hitting the settings button (a little wrench in the upper right corner) and changing the x scale. Go ahead and change the y scale too, to y = −2 to y = 2. If you do this, you should get something that looks like this:
 

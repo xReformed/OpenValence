@@ -1,0 +1,601 @@
+[
+  {
+    "id": "pc2-why-k-negative",
+    "type": "multiple-choice",
+    "prompt": "For a string held at both ends, why must the separation constant K be negative?",
+    "choices": [
+      {
+        "text": "With K > 0 the solutions are growing and decaying exponentials, which can't be zero at both ends (except the trivial u = 0)",
+        "correct": true
+      },
+      {
+        "text": "Because the wave equation has no solutions with K > 0",
+        "why": "It does have solutions with K > 0, sums of exponentials. They just can't meet the string's boundary conditions."
+      },
+      {
+        "text": "Because a negative K makes the string shorter",
+        "why": "K doesn't change the length L. It decides whether the solutions oscillate or grow and decay."
+      },
+      {
+        "text": "Because K is the square of the speed, and speeds are negative",
+        "why": "K is not the speed. A negative K is what gives oscillating sine and cosine solutions."
+      }
+    ],
+    "explanation": "With K > 0, X(x) is a sum of a growing and a decaying exponential, which can't be zero at both x = 0 and x = L unless it is zero everywhere. With K = −p^2 < 0, the solutions oscillate, and these can fit the boundary conditions."
+  },
+  {
+    "id": "pc2-euler-formula",
+    "type": "multiple-choice",
+    "prompt": "What does Euler's formula say e^(iθ) equals?",
+    "choices": [
+      {
+        "text": "cos θ + i sin θ",
+        "correct": true
+      },
+      {
+        "text": "cos θ − i sin θ",
+        "why": "That is e^(−iθ), the formula for the negative exponent."
+      },
+      {
+        "text": "sin θ + i cos θ",
+        "why": "The cosine is the real part and the sine the imaginary part: e^(iθ) = cos θ + i sin θ."
+      },
+      {
+        "text": "e^(θ) × i",
+        "why": "Euler's formula turns a complex exponential into cosine and sine."
+      }
+    ],
+    "explanation": "Euler's formula is e^(iθ) = cos θ + i sin θ. It turns the complex exponentials Ae^(ipx) + Be^(−ipx) into the oscillating form c1 cos(px) + c2 sin(px)."
+  },
+  {
+    "id": "pc2-first-boundary",
+    "type": "multiple-choice",
+    "prompt": "The string's spatial solution is X(x) = c1 cos(px) + c2 sin(px). What does the boundary condition X(0) = 0 tell you?",
+    "choices": [
+      {
+        "text": "c1 = 0",
+        "correct": true
+      },
+      {
+        "text": "c2 = 0",
+        "why": "At x = 0, sin(0) = 0, so the c2 term is already zero there; this condition can't fix c2."
+      },
+      {
+        "text": "p = 0",
+        "why": "At x = 0 both cos(0) and sin(0) are fixed numbers, whatever p is, so this condition says nothing about p."
+      },
+      {
+        "text": "X(x) = 0 everywhere",
+        "why": "It only removes the cosine term. The sine term can still be nonzero."
+      }
+    ],
+    "explanation": "X(0) = c1 cos(0) + c2 sin(0) = c1(1) + c2(0) = c1. Setting this equal to 0 gives c1 = 0, so only the sine term is left: X(x) = c2 sin(px)."
+  },
+  {
+    "id": "pc2-second-boundary",
+    "type": "multiple-choice",
+    "prompt": "With c1 = 0, the other end of the string needs c2 sin(pL) = 0. Ignoring the trivial c2 = 0, what must be true?",
+    "choices": [
+      {
+        "text": "pL = nπ, where n is a whole number",
+        "correct": true
+      },
+      {
+        "text": "pL = 0 only",
+        "why": "sin is zero at every whole-number multiple of π, not only at 0, so pL = nπ."
+      },
+      {
+        "text": "pL = π/2",
+        "why": "sin(π/2) = 1, not 0, so that would not satisfy the condition."
+      },
+      {
+        "text": "p can be any number at all",
+        "why": "Only the values that make sin(pL) = 0 are allowed. This is how quantization appears."
+      }
+    ],
+    "explanation": "sin is zero at 0, π, 2π, 3π, …, so sin(pL) = 0 needs pL = nπ, that is p = nπ/L. Only these values of p are allowed."
+  },
+  {
+    "id": "pc2-why-not-n-zero",
+    "type": "multiple-choice",
+    "prompt": "The allowed solutions are X(x) = c2 sin(nπx/L). Why is n = 0 left out?",
+    "choices": [
+      {
+        "text": "It gives X(x) = 0 everywhere, the trivial solution with no wave",
+        "correct": true
+      },
+      {
+        "text": "Because n can only be negative",
+        "why": "The allowed values used are n = 1, 2, 3, …"
+      },
+      {
+        "text": "Because n = 0 would make the string infinitely long",
+        "why": "n = 0 doesn't change L. It makes sin(0 · x) = 0 everywhere."
+      },
+      {
+        "text": "Because it gives a wave with infinitely many nodes",
+        "why": "n = 0 gives no wave at all, not one with many nodes."
+      }
+    ],
+    "explanation": "With n = 0, X(x) = c2 sin(0) = 0 at every x: the string doesn't move. That trivial solution is ignored, so n = 1, 2, 3, …"
+  },
+  {
+    "id": "pc2-mode-wavelength",
+    "type": "numeric",
+    "prompt": "The string's solutions are X(x) = sin(nπx/L), which have wavelength λ = 2L/n. What is the wavelength, in meters, of the n = 3 solution on a string 1.2 m long?",
+    "answer": 0.8,
+    "unit": "m",
+    "explanation": "λ = 2L/n = (2 × 1.2 m)/3 = 0.8 m."
+  },
+  {
+    "id": "pc2-node-n2",
+    "type": "multiple-choice",
+    "prompt": "Where is the node in the middle of the string for the n = 2 solution, X(x) = sin(2πx/L)?",
+    "choices": [
+      {
+        "text": "At x = L/2",
+        "correct": true
+      },
+      {
+        "text": "At x = L/4",
+        "why": "sin(2π(L/4)/L) = sin(π/2) = 1, which is a maximum, not a node."
+      },
+      {
+        "text": "At x = L/3",
+        "why": "sin(2π/3) is not zero, so x = L/3 is not a node."
+      },
+      {
+        "text": "There is no node between the ends for n = 2",
+        "why": "The n = 1 solution has no node between the ends; n = 2 has one."
+      }
+    ],
+    "explanation": "A node is where sin(2πx/L) = 0 between the ends, which means 2πx/L = π, so x = L/2. The middle of the string stays still while its two halves swing in opposite directions."
+  },
+  {
+    "id": "pc2-traveling-direction",
+    "type": "multiple-choice",
+    "prompt": "The wave ψ1 = sin(c1x + c2t) has velocity dx/dt = −c2/c1 (with c1 and c2 positive). Which way does it move?",
+    "choices": [
+      {
+        "text": "Toward smaller x (the negative x-direction)",
+        "correct": true
+      },
+      {
+        "text": "Toward larger x (the positive x-direction)",
+        "why": "The velocity −c2/c1 is negative. It is ψ2 = sin(c1x − c2t), with velocity +c2/c1, that moves toward larger x."
+      },
+      {
+        "text": "It does not move; it is a standing wave",
+        "why": "ψ1 has a nonzero velocity, so it travels. A standing wave comes from adding two traveling waves."
+      },
+      {
+        "text": "It moves up and down only",
+        "why": "Each point does move up and down, but the wave shape itself travels, with velocity −c2/c1."
+      }
+    ],
+    "explanation": "A negative velocity means the wave moves toward smaller x. ψ1 = sin(c1x + c2t) travels in the −x direction, and ψ2 = sin(c1x − c2t) in the +x direction, both at speed c2/c1."
+  },
+  {
+    "id": "pc2-sum-standing",
+    "type": "multiple-choice",
+    "prompt": "Adding the two traveling waves gives ψ+ = sin(c1x + c2t) + sin(c1x − c2t) = 2 sin(c1x) cos(c2t). What kind of wave is ψ+?",
+    "choices": [
+      {
+        "text": "A standing wave, with nodes fixed at x = nπ/c1",
+        "correct": true
+      },
+      {
+        "text": "A faster traveling wave",
+        "why": "Its shape sin(c1x) stays in place; only its size changes with time, through cos(c2t). Nothing travels."
+      },
+      {
+        "text": "No wave at all, because the two waves cancel",
+        "why": "They cancel only at the nodes. Elsewhere the string moves up and down."
+      },
+      {
+        "text": "A traveling wave with no nodes",
+        "why": "sin(c1x) is zero wherever c1x = nπ, at every time, so there are fixed nodes."
+      }
+    ],
+    "explanation": "2 sin(c1x) cos(c2t) is a fixed shape, sin(c1x), whose size rises and falls with cos(c2t). Its nodes, where sin(c1x) = 0, sit still at x = nπ/c1. Two equal waves traveling in opposite directions add up to a standing wave."
+  },
+  {
+    "id": "pc2-oscill-k-minus-p-squared",
+    "type": "multiple-choice",
+    "prompt": "Section 2.3 writes the negative separation constant as K = −p^2. What does d^2X/dx^2 − KX = 0 become?",
+    "choices": [
+      {
+        "text": "d^2X/dx^2 + p^2X = 0",
+        "correct": true
+      },
+      {
+        "text": "d^2X/dx^2 − p^2X = 0",
+        "why": "Replacing K with −p^2 turns −KX into +p^2X. The minus-sign version has exponential solutions, not oscillating ones."
+      },
+      {
+        "text": "d^2X/dx^2 + pX = 0",
+        "why": "K = −p^2, so p enters squared."
+      },
+      {
+        "text": "d^2X/dx^2 = 0",
+        "why": "p is not zero. Only the sign in front of the X term changes."
+      }
+    ],
+    "explanation": "−KX = −(−p^2)X = +p^2X, so the equation becomes d^2X/dx^2 + p^2X = 0. Writing K as −p^2, with p real, is a way of saying K is negative."
+  },
+  {
+    "id": "pc2-oscill-why-complex",
+    "type": "multiple-choice",
+    "prompt": "Why do complex numbers appear in the solutions when the separation constant K is negative?",
+    "choices": [
+      {
+        "text": "The solutions contain √K, which is imaginary when K < 0",
+        "correct": true
+      },
+      {
+        "text": "The string's displacement itself is an imaginary number",
+        "why": "The string's displacement is real. The i comes from √K with K < 0, and Euler's formula later turns it into real sines and cosines."
+      },
+      {
+        "text": "The position x becomes negative along the string",
+        "why": "x runs from 0 to L. The i comes from taking the square root of the negative constant K."
+      },
+      {
+        "text": "The wave speed v becomes an imaginary number",
+        "why": "v is an ordinary real speed. It is √K that is imaginary when K < 0."
+      }
+    ],
+    "explanation": "The K > 0 solutions have e^(±√K x). With K = −p^2, √K = √(−p^2) = ip, so the solutions become e^(ipx) and e^(−ipx)."
+  },
+  {
+    "id": "pc2-oscill-complex-exponentials",
+    "type": "multiple-choice",
+    "prompt": "Written with complex exponentials, what is the general solution of d^2X/dx^2 + p^2X = 0?",
+    "choices": [
+      {
+        "text": "X(x) = Ae^(ipx) + Be^(−ipx)",
+        "correct": true
+      },
+      {
+        "text": "X(x) = Ae^(px) + Be^(−px)",
+        "why": "Real exponentials solve d^2X/dx^2 − p^2X = 0, the K > 0 case. The plus sign needs an i in the exponent."
+      },
+      {
+        "text": "X(x) = Ae^(ipx) alone",
+        "why": "A second-order equation has two independent solutions, so e^(−ipx) is needed too."
+      },
+      {
+        "text": "X(x) = Ae^(ipx) × Be^(−ipx)",
+        "why": "Solutions are combined by adding, not multiplying. This product would just be the constant AB."
+      }
+    ],
+    "explanation": "The two solutions are e^(ipx) and e^(−ipx), and the general solution is any combination of them, Ae^(ipx) + Be^(−ipx). Euler's formula then rewrites it with cosines and sines."
+  },
+  {
+    "id": "pc2-oscill-new-constants",
+    "type": "multiple-choice",
+    "prompt": "After using Euler's formula, X(x) = (A + B) cos(px) + i(A − B) sin(px). Which new constants does the section define?",
+    "choices": [
+      {
+        "text": "c1 = A + B and c2 = i(A − B)",
+        "correct": true
+      },
+      {
+        "text": "c1 = A − B and c2 = A + B",
+        "why": "c1 multiplies cos(px), and the coefficient of cos(px) is A + B."
+      },
+      {
+        "text": "c1 = A + B and c2 = A − B",
+        "why": "The i belongs inside c2: c2 = i(A − B), so that X(x) = c1 cos(px) + c2 sin(px)."
+      },
+      {
+        "text": "c1 = AB and c2 = iAB",
+        "why": "The coefficients are a sum and a difference, A + B and i(A − B), not products."
+      }
+    ],
+    "explanation": "Renaming the coefficients c1 = A + B and c2 = i(A − B) gives X(x) = c1 cos(px) + c2 sin(px), the same solution written as oscillating functions."
+  },
+  {
+    "id": "pc2-oscill-sine-cosine-purpose",
+    "type": "multiple-choice",
+    "prompt": "Why does the section rewrite Ae^(ipx) + Be^(−ipx) as c1 cos(px) + c2 sin(px)?",
+    "choices": [
+      {
+        "text": "It shows the oscillation and makes the boundary conditions easy",
+        "correct": true
+      },
+      {
+        "text": "It gives a different solution, with different wavelengths",
+        "why": "It is the same function written another way, using Euler's formula. Only the names of the constants change."
+      },
+      {
+        "text": "It removes the constant p from the solution entirely",
+        "why": "p is still there, inside cos(px) and sin(px)."
+      },
+      {
+        "text": "It turns the solution into growing and decaying exponentials",
+        "why": "cos and sin oscillate between −1 and 1. Growing exponentials belong to the K > 0 case."
+      }
+    ],
+    "explanation": "Using Euler's formula is just a rewrite. In the cosine and sine form, the wave's oscillation is plain to see, and cos(0) = 1 and sin(0) = 0 make the condition X(0) = 0 easy to apply."
+  },
+  {
+    "id": "pc2-oscill-c1-drops-out",
+    "type": "multiple-choice",
+    "prompt": "The far end of the string needs X(L) = c1 cos(pL) + c2 sin(pL) = 0. Why does this become simply c2 sin(pL) = 0?",
+    "choices": [
+      {
+        "text": "c1 = 0 was already found from X(0) = 0",
+        "correct": true
+      },
+      {
+        "text": "cos(pL) is always zero, whatever p and L are",
+        "why": "cos(pL) is not zero in general. The cosine term drops out because its coefficient c1 is already 0."
+      },
+      {
+        "text": "sin(pL) is always equal to 1 at the far end",
+        "why": "If sin(pL) were 1, the condition would force c2 = 0. The cosine term vanishes because c1 = 0."
+      },
+      {
+        "text": "The string's length L is zero, so pL = 0",
+        "why": "L is the string's length, not zero. The first boundary condition, giving c1 = 0, removes the cosine term."
+      }
+    ],
+    "explanation": "The first boundary condition, X(0) = c1 = 0, already removed the cosine term. So at x = L only c2 sin(pL) = 0 is left, which leads to pL = nπ."
+  },
+  {
+    "id": "pc2-oscill-sine-zero-at-ends",
+    "type": "multiple-choice",
+    "prompt": "Why is X(x) = c2 sin(nπx/L) zero at both ends of the string for every n = 1, 2, 3, …?",
+    "choices": [
+      {
+        "text": "sin(0) = 0 at x = 0, and sin(nπ) = 0 at x = L",
+        "correct": true
+      },
+      {
+        "text": "c2 = 0 for every one of the allowed solutions",
+        "why": "c2 is not zero, or there would be no wave. The sine itself is zero at both ends."
+      },
+      {
+        "text": "cos(0) = 0 at x = 0, and cos(nπ) = 0 at x = L",
+        "why": "cos(0) = 1 and cos(nπ) is 1 or −1. The solution uses sine, and sin(0) = sin(nπ) = 0."
+      },
+      {
+        "text": "n = 0 makes the sine vanish at both of the ends",
+        "why": "n = 0 makes the sine zero everywhere, the trivial solution, so it is left out. For n = 1, 2, 3, …, sin(nπ) = 0 at x = L."
+      }
+    ],
+    "explanation": "At x = 0 the angle is 0, and at x = L it is nπ. Sine is zero at every whole-number multiple of π, so each allowed solution meets both boundary conditions."
+  },
+  {
+    "id": "pc2-oscill-quantization-cause",
+    "type": "multiple-choice",
+    "prompt": "On a string fixed at both ends, what restricts the waves to certain wavelengths only?",
+    "choices": [
+      {
+        "text": "The boundary conditions: the wave must be zero at both ends",
+        "correct": true
+      },
+      {
+        "text": "The wave equation alone, before any conditions are applied",
+        "why": "On its own the equation allows any p. Requiring zero at both ends is what demands pL = nπ."
+      },
+      {
+        "text": "Euler's formula",
+        "why": "Euler's formula only rewrites the solution with cosines and sines. It doesn't restrict p."
+      },
+      {
+        "text": "The size of the constants A and B",
+        "why": "A and B set how big the wave is. The allowed wavelengths come from needing zero at both ends."
+      }
+    ],
+    "explanation": "Requiring X(0) = 0 and X(L) = 0 forces pL = nπ, so only p = nπ/L is allowed. Satisfying the boundary conditions is what causes this quantization."
+  },
+  {
+    "id": "pc2-oscill-omega-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section writes X(x) = c2 sin(nπx/L) as c2 sin(ωx). What is ω here?",
+    "choices": [
+      {
+        "text": "nπ/L",
+        "correct": true
+      },
+      {
+        "text": "nπ",
+        "why": "x is multiplied by nπ/L, so ω includes the division by L."
+      },
+      {
+        "text": "L/(nπ)",
+        "why": "That is upside down. sin(nπx/L) means x is multiplied by nπ/L."
+      },
+      {
+        "text": "2L/n",
+        "why": "2L/n is the wavelength. ω is the number that multiplies x inside the sine, nπ/L."
+      }
+    ],
+    "explanation": "Comparing c2 sin(nπx/L) with c2 sin(ωx) shows ω = nπ/L, the same as the allowed value p = nπ/L."
+  },
+  {
+    "id": "pc2-oscill-wavelength-vs-n",
+    "type": "multiple-choice",
+    "prompt": "The string's solutions sin(nπx/L) have wavelength λ = 2L/n. What happens to the wavelength as n increases?",
+    "choices": [
+      {
+        "text": "It gets shorter",
+        "correct": true
+      },
+      {
+        "text": "It gets longer",
+        "why": "n is in the denominator of 2L/n, so a larger n gives a smaller λ."
+      },
+      {
+        "text": "It stays equal to L",
+        "why": "λ depends on n: 2L for n = 1, L for n = 2, 2L/3 for n = 3, and so on."
+      },
+      {
+        "text": "It doubles with each step in n",
+        "why": "λ = 2L/n falls as n rises. Going from n = 1 to n = 2 halves it."
+      }
+    ],
+    "explanation": "λ = 2L/n is inversely proportional to n. The n = 1 solution has the longest wavelength, 2L, and each higher n fits more, shorter waves onto the string."
+  },
+  {
+    "id": "pc2-oscill-n1-maximum",
+    "type": "multiple-choice",
+    "prompt": "Where along the string is the n = 1 solution, X(x) = sin(πx/L), largest?",
+    "choices": [
+      {
+        "text": "At the middle, x = L/2",
+        "correct": true
+      },
+      {
+        "text": "At the ends, x = 0 and x = L",
+        "why": "sin(0) = 0 and sin(π) = 0, so the ends are nodes, not maxima."
+      },
+      {
+        "text": "At x = L/4",
+        "why": "There the value is sin(π/4) ≈ 0.71, smaller than sin(π/2) = 1 at the middle."
+      },
+      {
+        "text": "It is the same size everywhere",
+        "why": "sin(πx/L) rises from 0 at one end to 1 at the middle and falls back to 0 at the other end."
+      }
+    ],
+    "explanation": "At x = L/2, πx/L = π/2, and sin(π/2) = 1, the largest a sine can be. The n = 1 wave is a single hump with its peak in the middle."
+  },
+  {
+    "id": "pc2-oscill-n3-nodes",
+    "type": "multiple-choice",
+    "prompt": "Where are the nodes between the ends for the n = 3 solution, X(x) = sin(3πx/L)?",
+    "choices": [
+      {
+        "text": "At x = L/3 and x = 2L/3",
+        "correct": true
+      },
+      {
+        "text": "At x = L/2 only",
+        "why": "At x = L/2 the angle is 3π/2 and sin(3π/2) = −1, a point of largest displacement. A single middle node belongs to n = 2."
+      },
+      {
+        "text": "At x = L/4, L/2 and 3L/4",
+        "why": "Those are the three nodes of n = 4. The n = 3 solution has n − 1 = 2 nodes."
+      },
+      {
+        "text": "There are no nodes between the ends",
+        "why": "That is the n = 1 solution. For n = 3, sin(3πx/L) = 0 where 3πx/L = π or 2π."
+      }
+    ],
+    "explanation": "Nodes between the ends are where 3πx/L = π or 2π, that is x = L/3 and x = 2L/3. That makes n − 1 = 2 nodes, splitting the string into three equal parts."
+  },
+  {
+    "id": "pc2-oscill-same-wavelength",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 2.3.1, how do the wavelengths of ψ1 = sin(c1x + c2t) and ψ2 = sin(c1x − c2t) compare?",
+    "choices": [
+      {
+        "text": "They are the same, λ = 2π/c1",
+        "correct": true
+      },
+      {
+        "text": "ψ1's wavelength is twice ψ2's",
+        "why": "Both have c1 multiplying x, so both have λ = 2π/c1."
+      },
+      {
+        "text": "ψ2's wavelength is negative",
+        "why": "A wavelength is a length, so it is positive. ψ2 moves the other way, but its λ is the same 2π/c1."
+      },
+      {
+        "text": "They differ, because they depend on c2",
+        "why": "The wavelength depends only on c1, the number multiplying x. c2 sets how fast the waves move."
+      }
+    ],
+    "explanation": "The wavelength is twice the distance between successive nodes, λ = 2π/c1, for both waves. The two waves differ only in direction: ψ1 moves toward −x and ψ2 toward +x, both at speed c2/c1."
+  },
+  {
+    "id": "pc2-oscill-psi-minus-nodes",
+    "type": "multiple-choice",
+    "prompt": "The difference of the two traveling waves is ψ_(−) = 2 cos(c1x) sin(c2t). Where are its nodes, the points that never move?",
+    "choices": [
+      {
+        "text": "Where cos(c1x) = 0, at c1x = π/2, 3π/2, …",
+        "correct": true
+      },
+      {
+        "text": "Where sin(c1x) = 0, at c1x = 0, π, 2π, …",
+        "why": "Those are the nodes of the sum, ψ_(+) = 2 sin(c1x) cos(c2t). For ψ_(−), cos(c1x) = ±1 there, the places of largest motion."
+      },
+      {
+        "text": "At every x, but only at the time t = 0",
+        "why": "At t = 0 the whole string is flat for an instant, but most points move later. A node stays at zero at all times."
+      },
+      {
+        "text": "Nowhere, because ψ_(−) is a traveling wave",
+        "why": "ψ_(−) is a fixed shape, cos(c1x), times sin(c2t), so it is a standing wave with fixed nodes."
+      }
+    ],
+    "explanation": "ψ_(−) is the shape cos(c1x) with a size that changes as sin(c2t). It is zero at all times wherever cos(c1x) = 0, at c1x = π/2, 3π/2, …, halfway between the nodes of ψ_(+)."
+  },
+  {
+    "id": "pc2-oscill-psi-minus-t-zero",
+    "type": "multiple-choice",
+    "prompt": "For the standing wave ψ_(−) = 2 cos(c1x) sin(c2t), what does the string look like at the instant t = 0?",
+    "choices": [
+      {
+        "text": "Flat: ψ_(−) = 0 at every x, because sin(0) = 0",
+        "correct": true
+      },
+      {
+        "text": "The shape 2 cos(c1x), at its very largest size",
+        "why": "That happens when sin(c2t) = 1. At t = 0, sin(0) = 0, so the whole wave is zero."
+      },
+      {
+        "text": "Zero only at its nodes, curved everywhere else",
+        "why": "At t = 0 the time factor sin(c2t) is zero, so every point, not only the nodes, is at zero for that instant."
+      },
+      {
+        "text": "The shape 2 sin(c1x), like the sum ψ_(+)",
+        "why": "The x part of ψ_(−) is cos(c1x), and at t = 0 it is multiplied by sin(0) = 0 anyway."
+      }
+    ],
+    "explanation": "sin(c2 × 0) = 0, so ψ_(−) = 0 everywhere at t = 0: the string passes through flat, then bulges into the cos(c1x) shape. Nodes are different: they stay at zero at all times."
+  },
+  {
+    "id": "pc2-oscill-euler-i-pi",
+    "type": "numeric",
+    "prompt": "Use Euler's formula, e^(iθ) = cos θ + i sin θ. What real number is e^(iπ) equal to?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "e^(iπ) = cos π + i sin π = −1 + i(0) = −1."
+  },
+  {
+    "id": "pc2-oscill-p-value",
+    "type": "numeric",
+    "prompt": "Use π = 3.14. The boundary conditions allow only p = nπ/L. What is p for n = 1 on a string 0.5 m long, in m^−1?",
+    "answer": 6.28,
+    "explanation": "p = nπ/L = (1 × 3.14)/(0.5 m) = 6.28 m^−1."
+  },
+  {
+    "id": "pc2-oscill-node-count",
+    "type": "numeric",
+    "prompt": "The solution X(x) = sin(nπx/L) has n − 1 nodes between the ends of the string. How many nodes between the ends does the n = 4 solution have?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "n − 1 = 4 − 1 = 3 nodes, at x = L/4, L/2 and 3L/4, where 4πx/L = π, 2π and 3π."
+  },
+  {
+    "id": "pc2-oscill-node-spacing",
+    "type": "numeric",
+    "prompt": "In Exercise 2.3.1, the wavelength is twice the distance between two successive nodes. If successive nodes of a wave are 0.3 m apart, what is its wavelength, in m?",
+    "answer": 0.6,
+    "unit": "m",
+    "explanation": "λ = 2 × (node spacing) = 2 × 0.3 m = 0.6 m. For ψ1 and ψ2 the nodes are π/c1 apart, so λ = 2π/c1."
+  },
+  {
+    "id": "pc2-oscill-traveling-speed",
+    "type": "numeric",
+    "prompt": "The traveling wave ψ2 = sin(c1x − c2t) moves with velocity c2/c1. What is its speed, in m/s, if c1 = 2 m^−1 and c2 = 10 s^−1?",
+    "answer": 5,
+    "unit": "m/s",
+    "explanation": "v = c2/c1 = (10 s^−1)/(2 m^−1) = 5 m/s, toward larger x."
+  }
+]

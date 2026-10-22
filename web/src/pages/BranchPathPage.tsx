@@ -6,9 +6,9 @@ import SiteFooter from "../components/SiteFooter";
 import StatusPill from "../components/StatusPill";
 import TopNavBar from "../components/TopNavBar";
 import { ArrowRightIcon, CheckIcon, ChevronRightIcon, LockIcon } from "../components/LandingIcons";
-import { BOOK_CHAPTERS } from "../lib/learningPaths.generated";
 import { branchMastery } from "../lib/mastery";
 import { getFinished, isFinished, sectionLocks, subscribeToProgress } from "../lib/progress";
+import { stageChapters } from "../lib/stages";
 import type { PathChapter } from "../lib/types";
 import type { branchLoader } from "../router";
 
@@ -173,9 +173,26 @@ export default function BranchPathPage() {
           </div>
         </header>
 
+        {branch.path && branch.prerequisites && (
+          <aside className="mt-12 rounded-2xl border border-neutral-200 bg-white p-6">
+            <h2 className="font-medium">Before you start</h2>
+            <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+              This path is written for students who already have:
+            </p>
+            <ul className="mt-4 flex flex-col gap-2 text-sm text-neutral-600">
+              {branch.prerequisites.map((item) => (
+                <li key={item} className="flex gap-2.5">
+                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-neutral-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
+
         {branch.path ? (
           branch.path.map((stage, i, stages) => {
-            const chapters = BOOK_CHAPTERS[stage.book];
+            const chapters = stageChapters(stage);
             const sections = chapters.flatMap((chapter) => chapter.sections);
             const ready = sections.filter((section) => section.ready);
             const { locked, blockedBy } = sectionLocks(stage.book, chapters, finished);
@@ -187,11 +204,12 @@ export default function BranchPathPage() {
             const current = ready.find((section) => section.number === blockedBy);
             const sectionHref = (number: string) => `/roadmap/${branch.slug}/${stage.book}/${number}`;
             return (
-              <section key={stage.book} className="mt-16">
+              <section key={`${stage.book}-${i}`} className="mt-16">
                 <div className="flex flex-wrap items-end justify-between gap-4">
                   <div>
                     <Eyebrow>
-                      {stages.length > 1 ? `Step ${i + 1} · ${stage.label}` : stage.label}
+                      {/* A part of one book opens on its own; separate books are steps in order. */}
+                      {stages.length > 1 && !stage.chapters ? `Step ${i + 1} · ${stage.label}` : stage.label}
                     </Eyebrow>
                     <h2 className="mt-3 text-2xl tracking-tight">{stage.title}</h2>
                     <p className="mt-2 text-neutral-500">{stage.note}</p>

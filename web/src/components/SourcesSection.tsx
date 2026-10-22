@@ -38,6 +38,15 @@ const SOURCES: {
     coverage: "15 chapters · 79 sections",
     inUse: false,
   },
+  {
+    title: "Physical Chemistry (LibreTexts)",
+    publisher: "Several authors, via LibreTexts",
+    url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)",
+    license: "CC licenses, by section",
+    licenseUrl: "https://creativecommons.org/licenses/",
+    coverage: "31 chapters · 271 sections",
+    inUse: false,
+  },
 ];
 
 const PREPARATION = [
