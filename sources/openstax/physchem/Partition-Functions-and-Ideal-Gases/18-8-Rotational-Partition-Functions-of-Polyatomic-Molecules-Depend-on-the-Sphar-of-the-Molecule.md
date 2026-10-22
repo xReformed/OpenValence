@@ -112,7 +112,7 @@ where
 
 The rotational partition function is given by:
 
-q_rot = (1/σ)Σ_(J=0)^∞(2J + 1)e^{−B̃J(J + 1)/kT}Σ_(K=−J)^J(2J + 1)e^{Ã − B̃)K^2/kT}
+q_rot = (1/σ)Σ_(J=0)^∞(2J + 1)e^{−B̃J(J + 1)/kT}Σ_(K=−J)^J (2J + 1)e^{Ã − B̃)K^2/kT}
 
 This can be converted to an integral and the result is:
 

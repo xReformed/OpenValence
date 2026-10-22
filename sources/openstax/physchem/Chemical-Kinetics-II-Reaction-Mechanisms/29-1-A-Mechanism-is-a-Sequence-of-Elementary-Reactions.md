@@ -6,3 +6,7 @@ source_url: "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Ch
 author: "Anonymous"
 license: "CC BY-NC-SA 4.0"
 ---
+
+The mechanism of a reaction is a series of steps leading from the starting materials to the products. After each step, an intermediate is formed. The intermediate is short-lived, because it quickly undergoes another step to form the next intermediate. These simple steps are called elementary reactions. Because an overall reaction is composed of a series of elementary reaction, the overall rate of the reaction is somehow dependent on the rates of those smaller reactions. But how are the two related? Let's look at two cases. We'll keep it simple and both cases will be two-step reactions.
+
+[Note: The page ends here: the two cases it announces are not on it. The text is left as printed.]

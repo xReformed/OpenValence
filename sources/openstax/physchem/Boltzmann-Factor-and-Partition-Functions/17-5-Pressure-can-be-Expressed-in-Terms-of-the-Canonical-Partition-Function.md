@@ -114,7 +114,7 @@ Recall that the mechanical energy for an ideal gas is:
 
 where all particles are identical and have mass m. Thus, the expression for the canonical partition function Q(N, V, T) is:
 
-Q(N, V, T) = (1/(N!h^(3N)))∫dx e^{−βΣ_(i=1)^Npi^2/2m}
+Q(N, V, T) = (1/(N!h^(3N)))∫dx e^{−βΣ_(i=1)^N pi^2/2m}
 
 Note that this can be expressed as:
 

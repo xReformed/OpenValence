@@ -65,9 +65,9 @@ The Fock operator is a one-electron operator and solving a Hartree-Fock equation
 
 The nature of the Fock operator reveals how the Hartree-Fock (HF) or Self-Consistent Field (SCF) Method accounts for the electron-electron interaction in atoms and molecules while preserving the idea of independent atomic orbitals. The wavefunction written as a Slater determinant of spin-orbitals is necessary to derive the form of the Fock operator, which is
 
-F̂ = Ĥ^0 + Σ_(j=1)^N(2Ĵj − K̂j)
+F̂ = Ĥ^0 + Σ_(j=1)^N (2Ĵj − K̂j)
 
-= −(ħ^2/(2 m))∇^2 − Ze^2/(4πε0 r) + Σ_(j=1)^N(2Ĵj − K̂j)
+= −(ħ^2/(2 m))∇^2 − Ze^2/(4πε0 r) + Σ_(j=1)^N (2Ĵj − K̂j)
 
 As shown by the expanded version on the far right, the first term in this equation, Ĥ^0, is the familiar hydrogen-like operator that accounts for the kinetic energy of an electron and the potential energy of this electron interacting with the nucleus. The next term accounts for the potential energy of one electron in an average field created by all the other electrons in the system. The Ĵ and K̂ operators result from the electron-electron repulsion terms in the full Hamiltonian for a multi-electron system. These operators involve the one-electron orbitals as well as the electron-electron interaction energy.
 
@@ -134,13 +134,13 @@ Let’s derive this result for the case in which an electron is added to the N +
 
 [Note: corrected; the source prints "φ1 through fN" where this reads "φ1 through φN". A typing error.]
 
-EN = Σ_(i=1)^N⟨φi|T + V|φi⟩ + Σ_(i<j)[J_(i, j) − K_(i, j)]
+EN = Σ_(i=1)^N ⟨φi|T + V|φi⟩ + Σ_(i<j)[J_(i, j) − K_(i, j)]
 
-[Note: corrected; the source prints "+ Σ_(i=1)^N[J_(i, j) − K_(i, j)]" where this reads "+ Σ_(i<j)[J_(i, j) − K_(i, j)]". The pair sum runs over i < j, the same as the (1/2)Σ over all i, j below.]
+[Note: corrected; the source prints "+ Σ_(i=1)^N [J_(i, j) − K_(i, j)]" where this reads "+ Σ_(i<j)[J_(i, j) − K_(i, j)]". The pair sum runs over i < j, the same as the (1/2)Σ over all i, j below.]
 
 which can also be written as
 
-EN = Σ_(i=1)^N⟨φi|T + V|φi⟩ + (1/2)Σ_(i, j=1)^N[J_(i, j) − K_(i, j)].
+EN = Σ_(i=1)^N ⟨φi|T + V|φi⟩ + (1/2)Σ_(i, j=1)^N [J_(i, j) − K_(i, j)].
 
 Likewise, the energy of the N + 1-electron determinant wavefunction is
 

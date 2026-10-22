@@ -131,13 +131,13 @@ Equation (EqHelm1) is the fundamental equation for A with natural variables of V
 
 The fundamental equations derived above were not dependent on changes in the amounts of species in the system. Below the n-dependent forms are presented^(1,4).
 
-dU = TdS − PdV + Σ_(i=1)^Nμi dni
+dU = TdS − PdV + Σ_(i=1)^N μi dni
 
-dH = TdS + VdP + Σ_(i=1)^Nμi dni
+dH = TdS + VdP + Σ_(i=1)^N μi dni
 
-dG = −SdT + Vdp + Σ_(i=1)^Nμi dni
+dG = −SdT + Vdp + Σ_(i=1)^N μi dni
 
-dA = −SdT − PdV + Σ_(i=1)^Nμi dni
+dA = −SdT − PdV + Σ_(i=1)^N μi dni
 
 where μi is the chemical potential of species i and dn_i is the change in number of moles of substance i.
 

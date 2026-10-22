@@ -362,8 +362,8 @@ In the case of an associatively-activated associative pathway (Aa) or an associa
 
 | | Aa Mechanism | |
 | --- | --- | --- |
-| Step 1 (Association): | MLnX + Y ⇌ (k1, k-1) MLnXY | ⟸RATE LIMITING ASSOCIATION |
-| Step 2 (Dissociation): | MLnXY ⇌ (k2, k-2) MLnY + X | |
+| Step 1 (Association): | MLnX + Y ⇌ (k1, k_−1) MLnXY | ⟸RATE LIMITING ASSOCIATION |
+| Step 2 (Dissociation): | MLnXY ⇌ (k2, k_−2) MLnY + X | |
 
 
 
@@ -377,10 +377,10 @@ In the case of an associatively-activated dissociative reaction (Da), the rate l
 
 | | Da Mechanism | |
 | --- | --- | --- |
-| Step 1 (Dissociation): | MLnX ⇌ (k1, k-1) MLn + X | |
-| Step 2 (Association): | MLn + Y ⇌ (k2, k-2) MLnY | ⟸RATE LIMITING ASSOCIATION |
+| Step 1 (Dissociation): | MLnX ⇌ (k1, k_−1) MLn + X | |
+| Step 2 (Association): | MLn + Y ⇌ (k2, k_−2) MLnY | ⟸RATE LIMITING ASSOCIATION |
 
-[Note: corrected; the source prints "| MLnX + Y ⇌ (k2, k-2) MLnY |" where this reads "| MLn + Y ⇌ (k2, k-2) MLnY |". In the Da and Dd mechanisms the second step is the entering group Y adding to the intermediate MLn, as in the D mechanism above.]
+[Note: corrected; the source prints "| MLnX + Y ⇌ (k2, k_−2) MLnY |" where this reads "| MLn + Y ⇌ (k2, k_−2) MLnY |". In the Da and Dd mechanisms the second step is the entering group Y adding to the intermediate MLn, as in the D mechanism above.]
 
 
 
@@ -422,8 +422,8 @@ In the case of a dissociatively-activated associative pathway (Ad), the rate-lim
 
 | | Ad Mechanism | |
 | --- | --- | --- |
-| Step 1 (Association): | MLnX + Y ⇌ (k1, k-1) MLnXY | |
-| Step 2 (Dissociation): | MLnXY ⇌ (k2, k-2) MLnY + X | ⟸RATE LIMITING DISSOCIATION |
+| Step 1 (Association): | MLnX + Y ⇌ (k1, k_−1) MLnXY | |
+| Step 2 (Dissociation): | MLnXY ⇌ (k2, k_−2) MLnY + X | ⟸RATE LIMITING DISSOCIATION |
 
 
 
@@ -439,10 +439,10 @@ In the case of a dissociatively-activated dissociative reaction (Dd), or a disso
 
 | | Dd Mechanism | |
 | --- | --- | --- |
-| Step 1 (Dissociation): | MLnX ⇌ (k1, k-1) MLn + X | ⟸RATE LIMITING DISSOCIATION |
-| Step 2 (Association): | MLn + Y ⇌ (k2, k-2) MLnY | |
+| Step 1 (Dissociation): | MLnX ⇌ (k1, k_−1) MLn + X | ⟸RATE LIMITING DISSOCIATION |
+| Step 2 (Association): | MLn + Y ⇌ (k2, k_−2) MLnY | |
 
-[Note: corrected; the source prints "| MLnX + Y ⇌ (k2, k-2) MLnY |" where this reads "| MLn + Y ⇌ (k2, k-2) MLnY |". In the Da and Dd mechanisms the second step is the entering group Y adding to the intermediate MLn, as in the D mechanism above.]
+[Note: corrected; the source prints "| MLnX + Y ⇌ (k2, k_−2) MLnY |" where this reads "| MLn + Y ⇌ (k2, k_−2) MLnY |". In the Da and Dd mechanisms the second step is the entering group Y adding to the intermediate MLn, as in the D mechanism above.]
 
 
 

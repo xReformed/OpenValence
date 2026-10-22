@@ -72,7 +72,7 @@ Illustration of water molecule representations: asymmetric stretch, symmetric st
 
 The Equation (3.81) represents f linearly independent harmonic oscillators and the total energy for such a system is
 
-ε_vib = Σ_(i=1)^f(vi + 1/2)hνi
+ε_vib = Σ_(i=1)^f (vi + 1/2)hνi
 
 The vibrational frequencies are given by
 
@@ -88,11 +88,11 @@ with
 
 As with the previous discussion regarding simple diatomics, Θ_(vib, i) is called the characteristic vibrational temperature. The molar energies and the heat capacities are given by
 
-⟨E_vib⟩ = NkΣ_(i=1)^f[(Θ_(vib, i))/2 + (Θ_(vib, i) e^(−Θ_(vib, i)/T))/(1 − e^(−Θ_(vib, i)/T))]
+⟨E_vib⟩ = NkΣ_(i=1)^f [(Θ_(vib, i))/2 + (Θ_(vib, i) e^(−Θ_(vib, i)/T))/(1 − e^(−Θ_(vib, i)/T))]
 
 and
 
-C̄V = NkB Σ_(i=1)^f((Θ_(vib, i))/T)^2 (e^(−Θ_(vib, i)/T))/((1 − e^(−Θ_(vib, i)/T))^2)
+C̄V = NkB Σ_(i=1)^f ((Θ_(vib, i))/T)^2 (e^(−Θ_(vib, i)/T))/((1 − e^(−Θ_(vib, i)/T))^2)
 
 ### Example NO2
 

@@ -33,9 +33,9 @@ A Dissociative (D) mechanism is two steps in which the first step is the dissoci
 
 
 
-| Step 1 (Dissociation): | MLnX ⇌ (k1, k-1) MLn + X |
+| Step 1 (Dissociation): | MLnX ⇌ (k1, k_−1) MLn + X |
 | --- | --- |
-| Step 2 (Association): | MLn + Y ⇌ (k2, k-2) MLnY |
+| Step 2 (Association): | MLn + Y ⇌ (k2, k_−2) MLnY |
 | Overall Reaction: | MLnX + Y ⇌ MLnY + X |
 
 
@@ -255,7 +255,7 @@ Interchange (I) Mechanisms take place in one concerted step where there is no in
 
 [Note: corrected; the source prints "The reactio nessentially occurs in once step" where this reads "The reaction essentially occurs in one step". Typing errors.]
 
-Step 1 (Concerted): MLnX + Y ⇌ [Y···MLn···X]^‡ ⇌ (k1, k-1) MLnY + X
+Step 1 (Concerted): MLnX + Y ⇌ [Y···MLn···X]^‡ ⇌ (k1, k_−1) MLnY + X
 
 [Note: corrected; the source prints "^‡+ ⇌" where this reads "^‡ ⇌". A stray + follows the transition state; there is no third species.]
 
@@ -289,9 +289,9 @@ Associative (A) mechanisms involve a first step where the incoming ligand bonds 
 
 
 
-| Step 1 (Association): | MLnX + Y ⇌ (k1, k-1) MLnXY |
+| Step 1 (Association): | MLnX + Y ⇌ (k1, k_−1) MLnXY |
 | --- | --- |
-| Step 2 (Dissociation): | MLnXY ⇌ (k2, k-2) MLnY + X |
+| Step 2 (Dissociation): | MLnXY ⇌ (k2, k_−2) MLnY + X |
 | Overall Reaction: | MLnX + Y ⇌ MLnY + X |
 
 
@@ -435,7 +435,7 @@ The Eigen-Wilkins mechanism is also a rate law, and it governs the reactions of 
 
 | | CHEMICAL EQUATION | EQUILIBRIUM EXPRESSION |
 | --- | --- | --- |
-| Formation of Encounter Complex | ML5X + Y ⇌ (k1, k-1) (ML5X*Y) | KE = ([(ML5X*Y)])/([ML5X][Y]) |
+| Formation of Encounter Complex | ML5X + Y ⇌ (k1, k_−1) (ML5X*Y) | KE = ([(ML5X*Y)])/([ML5X][Y]) |
 | Formation of Products: | (ML5X*Y) → (k2) ML5Y + X | K2 = ([ML5Y][X])/([(ML5X*Y)]) |
 | Overall Reaction: | ML5X + Y ⇌ ML5Y + X | K = ([ML5Y][X])/([ML5X][Y]) |
 

@@ -34,11 +34,11 @@ recorded. 4.2, 9.3, 11.1 and 15.3 carry no license tag on LibreTexts, nor do
 before ingesting.
 
 `openstax/physchem/` is in progress: one folder per chapter (1–31) and 277
-section files. Chapters 1–26 (233 sections) are transcribed from the LibreTexts
+section files. Chapters 1–29 (257 sections) are transcribed from the LibreTexts
 pages with the scripts in `tools/transcribe/`; the other files hold front
 matter only. The end-of-chapter
 exercise pages are left out, as are chapter 32 ("Math Chapters") and chapter 33
-(appendices). No section has text-bearing sub-pages. 9.13, 9.16, 12.9 and 14.9 are
+(appendices). No section has text-bearing sub-pages. 9.13, 9.16, 12.9, 14.9 and 28.7 are
 empty on LibreTexts (their pages hold no text, or only "under development"), so their
 files hold front matter only. 19.1's page shows a page of Fleming's Physical
 Chemistry ("3.1: Work and Heat") through a content-reuse widget that loads in the
