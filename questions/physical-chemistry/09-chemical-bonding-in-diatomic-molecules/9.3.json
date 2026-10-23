@@ -1,0 +1,554 @@
+[
+  {
+    "id": "pc9-overlap-charge-density",
+    "type": "multiple-choice",
+    "prompt": "The probability density for a molecular orbital ψ is ψ^2. How is the electronic charge density found from it?",
+    "choices": [
+      {
+        "text": "Multiply ψ^2 by the electron charge e",
+        "correct": true
+      },
+      {
+        "text": "Use ψ itself, without squaring it",
+        "why": "ψ can be negative and isn't a density. The charge density is e times the probability density ψ^2."
+      },
+      {
+        "text": "Multiply ψ^2 by the volume of the molecule",
+        "why": "That would give a charge, not a density, and a molecule has no sharp volume. The charge density at each point is eψ^2."
+      },
+      {
+        "text": "Divide ψ^2 by the overlap integral S",
+        "why": "S already enters ψ through its normalization constant. The charge density is simply e times ψ^2."
+      }
+    ],
+    "explanation": "The electronic charge density is |eψ^2|: the probability density ψ^2 times the electron's charge, e = 1.602 × 10^−19 C. Example 9.3.1 uses it to compare the bonding and antibonding orbitals."
+  },
+  {
+    "id": "pc9-overlap-integral-recipe",
+    "type": "multiple-choice",
+    "prompt": "What does the overlap integral ⟨1s_A|1s_B⟩ tell you to do?",
+    "choices": [
+      {
+        "text": "Multiply 1s_A by 1s_B at each point and sum over all space",
+        "correct": true
+      },
+      {
+        "text": "Add 1s_A and 1s_B at each point and sum over all space",
+        "why": "The integral takes the product of the two functions, not their sum. Adding them builds the orbital ψ_(+), not the overlap."
+      },
+      {
+        "text": "Multiply 1s_A by 1s_B, but only at the midpoint of the bond",
+        "why": "The product is summed (integrated) over all of space, not taken at one point."
+      },
+      {
+        "text": "Square 1s_A at each point and sum over all space",
+        "why": "That is the normalization integral ⟨1s_A|1s_A⟩, which equals 1. The overlap integral uses the product of 1s_A and 1s_B."
+      }
+    ],
+    "explanation": "The overlap integral takes the value of 1s_B at a point, multiplies it by the value of 1s_A there, and integrates that product over all space. It is large only where both functions are large."
+  },
+  {
+    "id": "pc9-overlap-where-contributes",
+    "type": "multiple-choice",
+    "prompt": "Which regions of space contribute most to the overlap integral ⟨1s_A|1s_B⟩?",
+    "choices": [
+      {
+        "text": "Regions where both 1s_A and 1s_B are sizable",
+        "correct": true
+      },
+      {
+        "text": "Regions far away from both of the protons",
+        "why": "Both 1s orbitals are tiny far from the protons, so their product is tiny too. The overlap comes from where both are sizable."
+      },
+      {
+        "text": "Regions where only one of the orbitals is large",
+        "why": "If one function is large but the other is nearly zero, their product is nearly zero. Only regions where both are sizable count."
+      },
+      {
+        "text": "Regions on the far side of each proton",
+        "why": "Behind a proton, the other atom's orbital has decayed further, so the product is small. The main contributions come from where both orbitals are sizable."
+      }
+    ],
+    "explanation": "The integrand is the product 1s_A × 1s_B, so a point adds much to S only if both functions are sizable there. For H_2^+ that is mainly the region between and around the two protons."
+  },
+  {
+    "id": "pc9-overlap-cancel",
+    "type": "multiple-choice",
+    "prompt": "How can an overlap integral be zero even when the two functions do overlap in space?",
+    "choices": [
+      {
+        "text": "Positive and negative parts of the product cancel",
+        "correct": true
+      },
+      {
+        "text": "Both functions are normalized",
+        "why": "Normalization makes each function's integral with itself equal to 1; it says nothing about their overlap. A zero overlap here comes from cancellation."
+      },
+      {
+        "text": "The two functions are centered on the same nucleus",
+        "why": "Sharing a center doesn't make the overlap zero: 1s_A with itself gives 1. Overlapping functions give zero only when positive and negative contributions cancel."
+      },
+      {
+        "text": "Both functions decrease exponentially with distance",
+        "why": "Exponential decay makes the overlap small when the functions are far apart, not zero when they overlap. That needs cancellation."
+      }
+    ],
+    "explanation": "The product of two functions can be positive in some regions and negative in others. If those contributions cancel when summed over all space, the overlap integral is zero even though the functions overlap."
+  },
+  {
+    "id": "pc9-overlap-orthogonal-far",
+    "type": "multiple-choice",
+    "prompt": "Protons A and B are so far apart that ⟨1s_A|1s_B⟩ is essentially zero. Which word describes 1s_A and 1s_B then?",
+    "choices": [
+      {
+        "text": "Orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Normalized",
+        "why": "Normalized means a function's integral with itself is 1, as ⟨1s_A|1s_A⟩ = 1. A zero overlap between two functions makes them orthogonal."
+      },
+      {
+        "text": "Degenerate",
+        "why": "Degenerate functions share the same energy, which isn't what the overlap measures. Functions with zero overlap are orthogonal."
+      },
+      {
+        "text": "Antibonding",
+        "why": "Antibonding describes a molecular orbital with a node between the nuclei, not a pair of atomic orbitals with zero overlap. Those are orthogonal."
+      }
+    ],
+    "explanation": "If the overlap integral is zero, for whatever reason, the functions are said to be orthogonal. Far-apart 1s_A and 1s_B are (nearly) orthogonal because they don't overlap."
+  },
+  {
+    "id": "pc9-overlap-range",
+    "type": "multiple-choice",
+    "prompt": "As the protons of H_2^+ are brought together from R = ∞ to R = 0, how does the overlap integral S change?",
+    "choices": [
+      {
+        "text": "It rises from 0 to 1",
+        "correct": true
+      },
+      {
+        "text": "It falls from 1 to 0",
+        "why": "That is the reverse. Far apart, the 1s orbitals don't overlap (S = 0); at R = 0 they coincide (S = 1)."
+      },
+      {
+        "text": "It rises from 0 to infinity",
+        "why": "S can't exceed 1 for two normalized functions. At R = 0, ⟨1s_A|1s_B⟩ becomes ⟨1s_A|1s_A⟩ = 1."
+      },
+      {
+        "text": "It rises from −1 to 1",
+        "why": "Two 1s orbitals never give a negative overlap. S starts from 0 when the protons are infinitely far apart."
+      }
+    ],
+    "explanation": "The overlap integral ranges from 0 to 1 as R goes from ∞ to 0: no overlap when the protons are infinitely far apart, complete overlap when both functions sit on one nucleus."
+  },
+  {
+    "id": "pc9-overlap-far-small",
+    "type": "multiple-choice",
+    "prompt": "Why is the overlap of 1s_A and 1s_B nearly zero when the two protons are far apart?",
+    "choices": [
+      {
+        "text": "Where one 1s orbital is large, the other is nearly zero",
+        "correct": true
+      },
+      {
+        "text": "The two 1s orbitals have opposite signs at large R",
+        "why": "Both 1s orbitals are positive everywhere. The overlap is small because each is tiny wherever the other is large."
+      },
+      {
+        "text": "Each 1s orbital loses its normalization at large R",
+        "why": "Each atomic orbital stays normalized at any R. The overlap is small because the two functions hardly occupy the same space."
+      },
+      {
+        "text": "The repulsion of the two protons pushes the orbitals apart",
+        "why": "S depends only on the two functions at a given R, not on forces. Far apart, each 1s orbital is nearly zero where the other is large."
+      }
+    ],
+    "explanation": "Atomic wavefunctions fall off exponentially with distance. When the protons are far apart, 1s_A is nearly zero wherever 1s_B is large and vice versa, so their product, and S, is close to zero."
+  },
+  {
+    "id": "pc9-overlap-r-zero",
+    "type": "multiple-choice",
+    "prompt": "Why does the overlap integral ⟨1s_A|1s_B⟩ equal 1 when R = 0?",
+    "choices": [
+      {
+        "text": "1s_A and 1s_B coincide, so it becomes ⟨1s_A|1s_A⟩",
+        "correct": true
+      },
+      {
+        "text": "The proton repulsion becomes infinite at R = 0",
+        "why": "The repulsion is an energy term and doesn't enter S. At R = 0 both functions sit on one nucleus, so S becomes the normalization integral, 1."
+      },
+      {
+        "text": "The positive and negative parts cancel at R = 0",
+        "why": "Cancellation would make S zero, not one. At R = 0, 1s_A = 1s_B and the integral is ⟨1s_A|1s_A⟩ = 1."
+      },
+      {
+        "text": "Overlap integrals of 1s orbitals equal 1 at any R",
+        "why": "S changes with R, from 0 far apart to 1 at R = 0. It reaches 1 only when the two functions coincide."
+      }
+    ],
+    "explanation": "At R = 0 both functions are centered on the same nucleus, so 1s_A = 1s_B and ⟨1s_A|1s_B⟩ becomes ⟨1s_A|1s_A⟩, which is 1 because the orbital is normalized."
+  },
+  {
+    "id": "pc9-overlap-formula-decay",
+    "type": "multiple-choice",
+    "prompt": "In S(R) = e^(−R/a₀)(1 + R/a₀ + R^2/(3a₀^2)), which part makes S die away at large R?",
+    "choices": [
+      {
+        "text": "The factor e^(−R/a₀)",
+        "correct": true
+      },
+      {
+        "text": "The term R^2/(3a₀^2)",
+        "why": "This term grows as R grows. The exponential e^(−R/a₀) falls faster than any power of R rises, so it wins."
+      },
+      {
+        "text": "The constant 1 in the bracket",
+        "why": "A constant doesn't change with R. The decrease comes from the exponential factor e^(−R/a₀)."
+      },
+      {
+        "text": "The term R/a₀",
+        "why": "R/a₀ grows with R. It is the exponential factor e^(−R/a₀) that sends S toward zero."
+      }
+    ],
+    "explanation": "The bracket 1 + R/a₀ + R^2/(3a₀^2) grows with R, but the exponential e^(−R/a₀) shrinks much faster, so S falls toward zero, just as the 1s wavefunctions decay exponentially with distance."
+  },
+  {
+    "id": "pc9-overlap-a0",
+    "type": "multiple-choice",
+    "prompt": "What is a₀ in the overlap formula S(R) = e^(−R/a₀)(1 + R/a₀ + R^2/(3a₀^2))?",
+    "choices": [
+      {
+        "text": "The Bohr radius, about 52.9 pm",
+        "correct": true
+      },
+      {
+        "text": "The bond length of H_2^+",
+        "why": "The bond length is a value of R. a₀ is the Bohr radius, the length unit of the hydrogen 1s orbital."
+      },
+      {
+        "text": "The radius of a proton",
+        "why": "A proton is far smaller than 52.9 pm. a₀ is the Bohr radius, which sets how fast a 1s orbital decays."
+      },
+      {
+        "text": "The separation at which S = 1/2",
+        "why": "a₀ is a constant length, the Bohr radius. S at R = a₀ is e^(−1)(1 + 1 + 1/3) = 0.86, not 1/2."
+      }
+    ],
+    "explanation": "a₀ is the Bohr radius, 52.9 pm, the natural length unit for hydrogen orbitals. Example 9.3.1 uses R = 2a₀, about 106 pm."
+  },
+  {
+    "id": "pc9-overlap-sign",
+    "type": "multiple-choice",
+    "prompt": "Why is the overlap integral of two hydrogen 1s orbitals never negative?",
+    "choices": [
+      {
+        "text": "Both 1s functions are positive, so their product is too",
+        "correct": true
+      },
+      {
+        "text": "Overlap integrals are always positive for any functions",
+        "why": "Not in general: a product can be negative where the functions have opposite signs. For two 1s orbitals, both functions are positive everywhere."
+      },
+      {
+        "text": "The normalization constants are chosen positive",
+        "why": "Normalization constants multiply ψ_(±), not 1s_A and 1s_B in S. S ≥ 0 because both 1s functions are positive everywhere."
+      },
+      {
+        "text": "The protons are both positively charged",
+        "why": "S involves only the two functions, not the nuclear charges. It is positive because the product of two positive 1s functions is positive."
+      }
+    ],
+    "explanation": "A hydrogen 1s orbital is a positive, exponentially decaying function. The product 1s_A × 1s_B is positive everywhere, so its integral S lies between 0 and 1."
+  },
+  {
+    "id": "pc9-overlap-normalization-used",
+    "type": "multiple-choice",
+    "prompt": "Which condition is used to find the values of C_(+) and C_(−)?",
+    "choices": [
+      {
+        "text": "Normalization, ⟨ψ_(±)|ψ_(±)⟩ = 1",
+        "correct": true
+      },
+      {
+        "text": "Orthogonality, ⟨ψ_(+)|ψ_(−)⟩ = 0",
+        "why": "The constants come from requiring each orbital to be normalized. Orthogonality doesn't fix the size of either orbital."
+      },
+      {
+        "text": "Minimum energy, from the variational method",
+        "why": "The section avoids the variational method here: symmetry set C_A = ±C_B and normalization sets the size."
+      },
+      {
+        "text": "Equal probability, |C_A|^2 = |C_B|^2",
+        "why": "That condition fixed the relative signs, C_A = ±C_B. The overall size C_(±) comes from normalization."
+      }
+    ],
+    "explanation": "Each orbital must satisfy ⟨ψ_(±)|ψ_(±)⟩ = 1, the standard normalization condition. Expanding it gives an equation in C_(±) and S that fixes the constant."
+  },
+  {
+    "id": "pc9-overlap-cross-terms",
+    "type": "multiple-choice",
+    "prompt": "Normalizing a single 1s orbital needs no overlap integral, but normalizing ψ_(±) = C_(±)(1s_A ± 1s_B) does. Why?",
+    "choices": [
+      {
+        "text": "It mixes two functions, giving cross terms",
+        "correct": true
+      },
+      {
+        "text": "ψ_(±) has a node between the protons",
+        "why": "Only ψ_(−) has that node, and both orbitals need S. The overlap appears because ⟨ψ_(±)|ψ_(±)⟩ contains the cross terms ⟨1s_A|1s_B⟩ and ⟨1s_B|1s_A⟩."
+      },
+      {
+        "text": "The 1s orbitals in ψ_(±) are not normalized",
+        "why": "They are normalized, which gives the two terms equal to 1. The overlap integrals are the extra cross terms between 1s_A and 1s_B."
+      },
+      {
+        "text": "ψ_(±) describes two electrons, not one",
+        "why": "ψ_(±) is a one-electron orbital of H_2^+. S appears because it combines two atomic orbitals, giving cross terms."
+      }
+    ],
+    "explanation": "Expanding ⟨C_(±)(1s_A ± 1s_B)|C_(±)(1s_A ± 1s_B)⟩ gives four integrals: ⟨1s_A|1s_A⟩ and ⟨1s_B|1s_B⟩, both 1, plus the cross terms ⟨1s_B|1s_A⟩ and ⟨1s_A|1s_B⟩, the overlap integrals."
+  },
+  {
+    "id": "pc9-overlap-psi-minus-normalized",
+    "type": "multiple-choice",
+    "prompt": "Which expression is the normalized antibonding orbital ψ_(−)?",
+    "choices": [
+      {
+        "text": "(1/√(2(1 − S)))(1s_A − 1s_B)",
+        "correct": true
+      },
+      {
+        "text": "(1/√(2(1 + S)))(1s_A − 1s_B)",
+        "why": "The sign under the square root must match the sign in the combination. For 1s_A − 1s_B, the overlap terms enter as −S, giving 1/√(2(1 − S))."
+      },
+      {
+        "text": "(1/√(2(1 − S)))(1s_A + 1s_B)",
+        "why": "1s_A + 1s_B is the bonding combination, and its normalization uses 1 + S. The antibonding orbital is the difference, 1s_A − 1s_B."
+      },
+      {
+        "text": "(1/√2)(1s_A − 1s_B)",
+        "why": "1/√2 would normalize it only if S = 0. Because 1s_A and 1s_B overlap, the constant is 1/√(2(1 − S))."
+      }
+    ],
+    "explanation": "ψ_(−) is the difference 1s_A − 1s_B, and normalizing it gives |C_(−)|^2(2 − 2S) = 1, so C_(−) = 1/√(2(1 − S)). The bonding orbital pairs 1s_A + 1s_B with 1/√(2(1 + S))."
+  },
+  {
+    "id": "pc9-overlap-same-s",
+    "type": "multiple-choice",
+    "prompt": "The constants C_(+) and C_(−) both contain the overlap S. At a given R, is it the same S for both orbitals?",
+    "choices": [
+      {
+        "text": "Yes, S = ⟨1s_A|1s_B⟩ depends only on R",
+        "correct": true
+      },
+      {
+        "text": "No, S is positive for ψ_(+) and negative for ψ_(−)",
+        "why": "S itself is the same positive number for both. The sign difference is in the formulas, 1 + S and 1 − S, not in S."
+      },
+      {
+        "text": "No, ψ_(−) has a node, so its S is zero",
+        "why": "The node belongs to ψ_(−), not to the atomic orbitals. S is the overlap of 1s_A and 1s_B, the same for both orbitals."
+      },
+      {
+        "text": "No, S for ψ_(−) equals 1 minus S for ψ_(+)",
+        "why": "There is only one overlap integral, ⟨1s_A|1s_B⟩. It appears as 1 + S in C_(+) and as 1 − S in C_(−)."
+      }
+    ],
+    "explanation": "S = ⟨1s_A|1s_B⟩ is the overlap of the two atomic orbitals, so it depends only on the separation R. Both orbitals use the same S: C_(+) = 1/√(2(1 + S)) and C_(−) = 1/√(2(1 − S))."
+  },
+  {
+    "id": "pc9-overlap-self-terms",
+    "type": "multiple-choice",
+    "prompt": "Normalizing ψ_(±) produces the integrals ⟨1s_A|1s_A⟩ and ⟨1s_B|1s_B⟩. Why is each of them equal to 1?",
+    "choices": [
+      {
+        "text": "Each atomic orbital is normalized",
+        "correct": true
+      },
+      {
+        "text": "The two atomic orbitals are orthogonal",
+        "why": "Orthogonality would make ⟨1s_A|1s_B⟩ zero; it says nothing about ⟨1s_A|1s_A⟩. Each is 1 because each atomic orbital is normalized."
+      },
+      {
+        "text": "The two protons are identical",
+        "why": "Identical protons make the two integrals equal to each other, but each equals 1 because each atomic orbital is normalized."
+      },
+      {
+        "text": "The overlap integral S equals 1",
+        "why": "S = ⟨1s_A|1s_B⟩ varies between 0 and 1 with R. ⟨1s_A|1s_A⟩ is a normalization integral, equal to 1 at every R."
+      }
+    ],
+    "explanation": "Each hydrogen 1s orbital is normalized, so ⟨1s_A|1s_A⟩ = ⟨1s_B|1s_B⟩ = 1. Only the two cross terms, the overlap integrals, depend on R."
+  },
+  {
+    "id": "pc9-overlap-s-star-real",
+    "type": "multiple-choice",
+    "prompt": "The normalization of ψ_(±) contains ⟨1s_B|1s_A⟩ = S and ⟨1s_A|1s_B⟩ = S^*. Why are these two equal for H_2^+?",
+    "choices": [
+      {
+        "text": "The 1s functions are real, so S^* = S",
+        "correct": true
+      },
+      {
+        "text": "The two protons are identical",
+        "why": "Identical protons are not the reason. One integral is the complex conjugate of the other, and the conjugate of a real number is itself."
+      },
+      {
+        "text": "Both integrals equal 1 by normalization",
+        "why": "Normalization gives ⟨1s_A|1s_A⟩ = 1. The overlap lies between 0 and 1; it equals its conjugate because the 1s functions are real."
+      },
+      {
+        "text": "Both overlap integrals are always zero",
+        "why": "The overlap is zero only at infinite R. The two integrals are equal at any R because the 1s functions are real."
+      }
+    ],
+    "explanation": "S^* is the complex conjugate of S, and the complex conjugate of a real number is the number itself. The 1s functions are real, so the two overlap integrals are equal and both are written S."
+  },
+  {
+    "id": "pc9-overlap-exercise-conjugate",
+    "type": "multiple-choice",
+    "prompt": "Exercise 9.3.1 compares ⟨φ_B|φ_A⟩ with ⟨φ_A|φ_B⟩ for two arbitrary, possibly complex, functions. How are they related?",
+    "choices": [
+      {
+        "text": "Each is the other's complex conjugate",
+        "correct": true
+      },
+      {
+        "text": "They are always exactly equal to each other",
+        "why": "They are equal only when the functions are real. In general one is the complex conjugate of the other."
+      },
+      {
+        "text": "Each is the negative of the other integral",
+        "why": "Swapping the functions takes the complex conjugate, not the negative. For real functions the two are equal, not opposite."
+      },
+      {
+        "text": "Each is the reciprocal of the other",
+        "why": "Swapping the order doesn't invert the integral. ⟨φ_B|φ_A⟩ is the complex conjugate of ⟨φ_A|φ_B⟩."
+      }
+    ],
+    "explanation": "Writing out the integrals, ⟨φ_B|φ_A⟩ = ∫φ_B^*φ_A dτ is the complex conjugate of ⟨φ_A|φ_B⟩ = ∫φ_A^*φ_B dτ. If the functions are real, the two integrals are equal."
+  },
+  {
+    "id": "pc9-overlap-norm-equation",
+    "type": "multiple-choice",
+    "prompt": "With ⟨1s_A|1s_A⟩ = ⟨1s_B|1s_B⟩ = 1 and both overlap integrals equal to S, which equation does normalizing ψ_(±) = C_(±)(1s_A ± 1s_B) give?",
+    "choices": [
+      {
+        "text": "|C_(±)|^2(2 ± 2S) = 1",
+        "correct": true
+      },
+      {
+        "text": "|C_(±)|^2 × 2 = 1",
+        "why": "That leaves out the two overlap terms. It would hold only if S = 0."
+      },
+      {
+        "text": "|C_(±)|^2(1 ± S) = 1",
+        "why": "All four integrals count: 1 + 1 ± S ± S = 2 ± 2S, not 1 ± S."
+      },
+      {
+        "text": "|C_(±)|^2(2 ± S^2) = 1",
+        "why": "The overlap enters linearly, as ±S twice, not as S^2. The bracket is 1 + 1 ± S ± S = 2 ± 2S."
+      }
+    ],
+    "explanation": "The four integrals are 1, 1, S and S, with the overlap terms carrying the ± sign: |C_(±)|^2(1 + 1 ± S ± S) = |C_(±)|^2(2 ± 2S) = 1. Solving gives C_(±) = 1/√(2(1 ± S))."
+  },
+  {
+    "id": "pc9-overlap-norm-without-s",
+    "type": "numeric",
+    "prompt": "Suppose you ignored the overlap and used C_(+) = 1/√2 for ψ_(+) = C_(+)(1s_A + 1s_B). Then ⟨ψ_(+)|ψ_(+)⟩ = (1/2)(2 + 2S). What would ⟨ψ_(+)|ψ_(+)⟩ be for S = 0.40? (Give it as a decimal.)",
+    "answer": 1.4,
+    "tolerance": 0.01,
+    "explanation": "(1/2)(2 + 2 × 0.40) = (1/2)(2.80) = 1.4, not 1, so ψ_(+) would not be normalized. That is why C_(+) must be 1/√(2(1 + S)) rather than 1/√2."
+  },
+  {
+    "id": "pc9-overlap-c-plus-trend",
+    "type": "multiple-choice",
+    "prompt": "As the protons move apart and S falls toward 0, how does C_(+) = 1/√(2(1 + S)) change?",
+    "choices": [
+      {
+        "text": "It rises toward 1/√2",
+        "correct": true
+      },
+      {
+        "text": "It falls toward 0",
+        "why": "A smaller S makes the denominator √(2(1 + S)) smaller, so C_(+) gets larger, not smaller."
+      },
+      {
+        "text": "It stays at 0.561 for every R",
+        "why": "0.561 is C_(+) only for S = 0.586, at R = 2a₀. C_(+) changes with S, and so with R."
+      },
+      {
+        "text": "It rises without any limit",
+        "why": "At S = 0 the constant is 1/√(2 × 1) = 1/√2 = 0.707, and S can't go below 0, so that is the limit."
+      }
+    ],
+    "explanation": "C_(+) = 1/√(2(1 + S)) grows as S shrinks. When the protons are far apart, S → 0 and C_(+) → 1/√2 = 0.707, the constant for two non-overlapping orbitals."
+  },
+  {
+    "id": "pc9-overlap-c-plus-value",
+    "type": "numeric",
+    "prompt": "The normalized bonding orbital is ψ_(+) = C_(+)(1s_A + 1s_B), with C_(+) = 1/√(2(1 + S)). At R = 2a₀ the overlap is S = 0.586. What is C_(+)? (Give it as a decimal.)",
+    "answer": 0.561,
+    "tolerance": 0.01,
+    "explanation": "C_(+) = 1/√(2 × 1.586) = 1/√3.172 = 1/1.781 = 0.561. This is the value Example 9.3.1 uses for the bonding orbital."
+  },
+  {
+    "id": "pc9-overlap-c-minus-value",
+    "type": "numeric",
+    "prompt": "The antibonding orbital ψ_(−) = C_(−)(1s_A − 1s_B) has the normalization constant C_(−) = 1/√(2(1 − S)). What is C_(−) when S = 0.68? (Give it as a decimal.)",
+    "answer": 1.25,
+    "tolerance": 0.01,
+    "explanation": "2(1 − 0.68) = 2 × 0.32 = 0.64, and √0.64 = 0.8, so C_(−) = 1/0.8 = 1.25. It is larger than 1/√2 because 1 − S is less than 1."
+  },
+  {
+    "id": "pc9-overlap-s-at-3a0",
+    "type": "numeric",
+    "prompt": "The overlap of two hydrogen 1s orbitals is S(R) = e^(−R/a₀)(1 + R/a₀ + R^2/(3a₀^2)). Using e^(−3) = 0.0498, what is S at R = 3a₀, where R/a₀ = 3? (Give it as a decimal.)",
+    "answer": 0.349,
+    "tolerance": 0.02,
+    "explanation": "The bracket is 1 + 3 + 3^2/3 = 1 + 3 + 3 = 7, so S = 7 × 0.0498 = 0.349. That is smaller than S = 0.586 at R = 2a₀, as the overlap falls with distance."
+  },
+  {
+    "id": "pc9-overlap-energy-tells",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what will calculating the energy of ψ_(+) tell us about H_2^+?",
+    "choices": [
+      {
+        "text": "Whether it is stable and its dissociation energy",
+        "correct": true
+      },
+      {
+        "text": "Its bond polarity and its dipole moment",
+        "why": "The two protons are identical, so H_2^+ has no polarity. The energy tells whether the molecule is stable and how much energy dissociates it."
+      },
+      {
+        "text": "The values of the coefficients C_A and C_B",
+        "why": "Those come from symmetry and normalization, before any energy is calculated. The energy tells whether H_2^+ is stable and how hard it is to break apart."
+      },
+      {
+        "text": "Where the node of the antibonding orbital ψ_(−) lies",
+        "why": "The node of ψ_(−), midway between the protons, follows from its shape. The energy tells whether H_2^+ is stable and its dissociation energy."
+      }
+    ],
+    "explanation": "The section says the energy calculation will show whether this simple theory predicts H_2^+ to be stable, and how much energy is needed to dissociate it."
+  },
+  {
+    "id": "pc9-overlap-midpoint-psi2",
+    "type": "numeric",
+    "prompt": "In Example 9.3.1 (R = 2a₀), ψ_(+)^2 = P × (exp(−r_A/a₀) + exp(−r_B/a₀))^2, with the prefactor P = 6.77 × 10^−7 pm^−3. At the midpoint r_A = r_B = a₀, so the bracket is (2e^(−1))^2 = 0.541. What is ψ_(+)^2 there, in pm^−3? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 3.66e-07,
+    "tolerance": 0.02,
+    "explanation": "ψ_(+)^2 = 6.77 × 10^−7 pm^−3 × 0.541 = 3.66 × 10^−7 pm^−3, the example's 3.7 × 10^−7 pm^−3. The two 1s functions add at the midpoint, so the bonding orbital has real density there."
+  },
+  {
+    "id": "pc9-overlap-charge-density-value",
+    "type": "numeric",
+    "prompt": "The electronic charge density is e × ψ^2, with e = 1.602 × 10^−19 C. If ψ_(+)^2 = 5.0 × 10^−7 pm^−3 at some point, what is the charge density there, in C/pm^3? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 8.01e-26,
+    "tolerance": 0.01,
+    "explanation": "Charge density = 1.602 × 10^−19 C × 5.0 × 10^−7 pm^−3 = 8.01 × 10^−26 C/pm^3. Multiplying the probability density by the electron's charge turns it into a charge per volume."
+  }
+]

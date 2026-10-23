@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pc6-angular-classical-lz",
+    "type": "multiple-choice",
+    "prompt": "Classically, angular momentum is L⃗ = r⃗ × p⃗. Which expression is its z-component, L_z?",
+    "choices": [
+      {
+        "text": "x p_y − y p_x",
+        "correct": true
+      },
+      {
+        "text": "y p_z − z p_y",
+        "why": "That is L_x. The z-component pairs the x and y coordinates and momenta: L_z = x p_y − y p_x."
+      },
+      {
+        "text": "z p_x − x p_z",
+        "why": "That is L_y. The z-component uses x and y only: L_z = x p_y − y p_x."
+      },
+      {
+        "text": "x p_x + y p_y",
+        "why": "Each term of L_z pairs a position with the momentum along a different axis, and the two terms are subtracted: L_z = x p_y − y p_x."
+      }
+    ],
+    "explanation": "Writing out the cross product gives L_x = y p_z − z p_y, L_y = z p_x − x p_z and L_z = x p_y − y p_x. The component along z involves only the x and y coordinates and momenta."
+  },
+  {
+    "id": "pc6-angular-py-replaced",
+    "type": "multiple-choice",
+    "prompt": "The quantum operator L̂_z = −iħ(x ∂/∂y − y ∂/∂x) comes from the classical L_z = x p_y − y p_x. What has replaced p_y?",
+    "choices": [
+      {
+        "text": "−iħ ∂/∂y, the y-momentum operator",
+        "correct": true
+      },
+      {
+        "text": "−iħ ∂/∂x, the x-momentum operator",
+        "why": "−iħ ∂/∂x replaces p_x, the momentum along x. The momentum along y, p_y, becomes −iħ ∂/∂y."
+      },
+      {
+        "text": "∂/∂y alone, with no constant",
+        "why": "The momentum operator carries the factor −iħ: p_y becomes −iħ ∂/∂y."
+      },
+      {
+        "text": "The position y, multiplied by −iħ",
+        "why": "Positions stay as multiplication by x or y. It is the momentum p_y that becomes the derivative −iħ ∂/∂y."
+      }
+    ],
+    "explanation": "The quantum operators are defined by analogy with the classical components: each coordinate stays as it is, and each momentum becomes −iħ times a derivative. So x p_y − y p_x becomes −iħ(x ∂/∂y − y ∂/∂x)."
+  },
+  {
+    "id": "pc6-angular-lz-phi",
+    "type": "multiple-choice",
+    "prompt": "In spherical polar coordinates, L̂_z = −iħ ∂/∂φ. Which coordinate does L̂_z act on?",
+    "choices": [
+      {
+        "text": "Only the angle φ around the z-axis",
+        "correct": true
+      },
+      {
+        "text": "Only the distance r from the origin",
+        "why": "L̂_z has no derivative with respect to r. Turning about the z-axis changes only φ, so L̂_z = −iħ ∂/∂φ."
+      },
+      {
+        "text": "Only the angle θ from the z-axis",
+        "why": "L̂_x and L̂_y contain ∂/∂θ, but L̂_z contains only ∂/∂φ."
+      },
+      {
+        "text": "All three of r, θ and φ",
+        "why": "L̂_z = −iħ ∂/∂φ has a derivative only with respect to φ, which makes it the simplest of the three components."
+      }
+    ],
+    "explanation": "In spherical polar coordinates L̂_z = −iħ ∂/∂φ, which involves only φ. That is why the functions e^(imφ) are its eigenfunctions, with eigenvalues mħ."
+  },
+  {
+    "id": "pc6-angular-l2-sum",
+    "type": "multiple-choice",
+    "prompt": "How is the operator L̂^2 built from the three components?",
+    "choices": [
+      {
+        "text": "L̂^2 = L̂_x^2 + L̂_y^2 + L̂_z^2",
+        "correct": true
+      },
+      {
+        "text": "L̂^2 = L̂_x L̂_y L̂_z",
+        "why": "L̂^2 is the square of the magnitude, so it adds the squares of the components, like x^2 + y^2 + z^2 for a length."
+      },
+      {
+        "text": "L̂^2 = (L̂_x + L̂_y + L̂_z)^2",
+        "why": "Squaring the sum would bring in cross terms such as L̂_x L̂_y. L̂^2 is the sum of the squares of the components."
+      },
+      {
+        "text": "L̂^2 = L̂_z^2, the z part only",
+        "why": "L̂^2 includes all three components. L̂_z^2 is only the part along z."
+      }
+    ],
+    "explanation": "L̂^2 = L̂_x^2 + L̂_y^2 + L̂_z^2 is the operator for the square of the magnitude of the angular momentum, just as a vector's squared length is the sum of the squares of its components."
+  },
+  {
+    "id": "pc6-angular-why-quantized",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why can the square of the angular momentum take only a discrete set of values?",
+    "choices": [
+      {
+        "text": "L^2 = l(l + 1)ħ^2, and l must be an integer",
+        "correct": true
+      },
+      {
+        "text": "Because ħ is an extremely small number",
+        "why": "Small or not, ħ is a constant. L^2 is discrete because the l in l(l + 1)ħ^2 can only be an integer."
+      },
+      {
+        "text": "Because L_x and L_y can't be measured with it",
+        "why": "That is a separate fact, about measuring components together. The values are discrete because l is an integer."
+      },
+      {
+        "text": "Because the electron's orbit has a fixed radius",
+        "why": "There are no fixed orbits here. L^2 = l(l + 1)ħ^2 is discrete because l can only be 0, 1, 2, …."
+      }
+    ],
+    "explanation": "The eigenvalues of L̂^2 are l(l + 1)ħ^2, with l = 0, 1, 2, …. Since l can only be an integer, L^2 can only be 0, 2ħ^2, 6ħ^2, 12ħ^2 and so on: the angular momentum is quantized."
+  },
+  {
+    "id": "pc6-angular-shorthand",
+    "type": "multiple-choice",
+    "prompt": "People often say a particle in a state with quantum number l \"has angular momentum l\". What is the actual magnitude of its angular momentum?",
+    "choices": [
+      {
+        "text": "√(l(l + 1))ħ",
+        "correct": true
+      },
+      {
+        "text": "lħ",
+        "why": "lħ is what the shorthand suggests, but the magnitude is a bit larger, √(l(l + 1))ħ: √2ħ, not ħ, for l = 1."
+      },
+      {
+        "text": "l, with no units at all",
+        "why": "Angular momentum has the units of ħ. The magnitude is √(l(l + 1))ħ."
+      },
+      {
+        "text": "l(l + 1)ħ^2",
+        "why": "That is L^2, the square of the magnitude. The magnitude is its square root, √(l(l + 1))ħ."
+      }
+    ],
+    "explanation": "Saying \"angular momentum l\" is just a quick way of speaking, because the full value is awkward to say. The magnitude is |L| = √(l(l + 1))ħ, the square root of the L̂^2 eigenvalue l(l + 1)ħ^2."
+  },
+  {
+    "id": "pc6-angular-lz-values-l1",
+    "type": "multiple-choice",
+    "prompt": "Using L_z = m_l ħ, which values can the z-component of angular momentum take when l = 1?",
+    "choices": [
+      {
+        "text": "−ħ, 0 and +ħ",
+        "correct": true
+      },
+      {
+        "text": "0, ħ and 2ħ",
+        "why": "m_l runs from −l to +l, so for l = 1 it is −1, 0 or +1, and L_z is −ħ, 0 or +ħ."
+      },
+      {
+        "text": "−√2ħ, 0 and +√2ħ",
+        "why": "√2ħ is the magnitude |L| for l = 1. L_z = m_l ħ, so it is −ħ, 0 or +ħ."
+      },
+      {
+        "text": "Any value from −ħ to +ħ",
+        "why": "L_z is quantized: only whole-number multiples m_l ħ are allowed, here −ħ, 0 and +ħ."
+      }
+    ],
+    "explanation": "For l = 1, m_l = −1, 0 or +1, so L_z = m_l ħ = −ħ, 0 or +ħ: three values. These are the three orientations drawn in the vector model for l = 1."
+  },
+  {
+    "id": "pc6-angular-negative-ml",
+    "type": "multiple-choice",
+    "prompt": "For l = 1, the state with m_l = −1 has L_z = −ħ. What does the minus sign mean?",
+    "choices": [
+      {
+        "text": "The z-component of L⃗ points along −z",
+        "correct": true
+      },
+      {
+        "text": "The magnitude of L⃗ is negative",
+        "why": "A magnitude can't be negative; here it is √2ħ. Only the z-component, a projection, can be negative."
+      },
+      {
+        "text": "The state is not actually allowed",
+        "why": "m_l = −1 is allowed, since m_l runs from −l to +l. The sign only says which way the z-component points."
+      },
+      {
+        "text": "L⃗ is shorter than for m_l = +1",
+        "why": "|L| = √2ħ for every m_l when l = 1. The sign only says which way the z-component points."
+      }
+    ],
+    "explanation": "L_z is the projection of L⃗ onto the z-axis, so it can be positive, zero or negative. m_l = −1 means the projection points along −z; the magnitude is still √(l(l + 1))ħ = √2ħ."
+  },
+  {
+    "id": "pc6-angular-l1-m0",
+    "type": "multiple-choice",
+    "prompt": "A state has l = 1 and m_l = 0, so L_z = 0. Is its angular momentum zero?",
+    "choices": [
+      {
+        "text": "No; |L| is √2ħ, with no part along z",
+        "correct": true
+      },
+      {
+        "text": "Yes; L_z = 0 means that L⃗ = 0",
+        "why": "L_z is only one component. With l = 1, |L| = √(1 × 2)ħ = √2ħ, and L⃗ lies perpendicular to z."
+      },
+      {
+        "text": "No; |L| is ħ, along the z-axis",
+        "why": "L_z = 0 means there is no part along z. The magnitude is √(l(l + 1))ħ = √2ħ, not ħ."
+      },
+      {
+        "text": "Nobody can know whether it is zero",
+        "why": "|L| is known exactly: L̂^2 has the definite value l(l + 1)ħ^2 = 2ħ^2, so |L| = √2ħ."
+      }
+    ],
+    "explanation": "The magnitude is fixed by l: |L| = √(l(l + 1))ħ = √2ħ for l = 1. m_l = 0 only says the projection on the z-axis is zero, so L⃗ lies somewhere in the xy-plane."
+  },
+  {
+    "id": "pc6-angular-which-nonzero",
+    "type": "multiple-choice",
+    "prompt": "The basic commutators are [x̂_i, x̂_j] = 0, [p̂_i, p̂_j] = 0 and [x̂_i, p̂_j] = iħδ_ij, where δ_ij is 1 if i = j and 0 otherwise. Which commutator is NOT zero?",
+    "choices": [
+      {
+        "text": "[x̂, p̂_x]",
+        "correct": true
+      },
+      {
+        "text": "[x̂, p̂_y]",
+        "why": "x and p_y refer to different directions, so δ_xy = 0 and this commutator is zero."
+      },
+      {
+        "text": "[p̂_x, p̂_y]",
+        "why": "Momentum components always commute with each other: [p̂_i, p̂_j] = 0."
+      },
+      {
+        "text": "[x̂, ŷ]",
+        "why": "Position coordinates always commute with each other: [x̂_i, x̂_j] = 0."
+      }
+    ],
+    "explanation": "Only a coordinate and the momentum along the same direction fail to commute: [x̂, p̂_x] = iħ. These few nonzero pieces are what make the angular momentum components fail to commute."
+  },
+  {
+    "id": "pc6-angular-derivation-lz",
+    "type": "multiple-choice",
+    "prompt": "Working out [L̂_x, L̂_y] gives iħ(x p̂_y − y p̂_x). Why is this equal to iħL̂_z?",
+    "choices": [
+      {
+        "text": "x p̂_y − y p̂_x is the definition of L̂_z",
+        "correct": true
+      },
+      {
+        "text": "x p̂_y − y p̂_x is always zero",
+        "why": "If it were zero, the commutator would be zero. It is L̂_z, so [L̂_x, L̂_y] = iħL̂_z."
+      },
+      {
+        "text": "L̂_z is defined to be the constant iħ",
+        "why": "L̂_z is an operator, x p̂_y − y p̂_x, not a constant."
+      },
+      {
+        "text": "x p̂_y − y p̂_x is the operator L̂^2",
+        "why": "L̂^2 is the sum of the squares of all three components. x p̂_y − y p̂_x is just L̂_z."
+      }
+    ],
+    "explanation": "From L_z = x p_y − y p_x, the combination x p̂_y − y p̂_x is L̂_z itself. So [L̂_x, L̂_y] = iħL̂_z: the commutator of two components is iħ times the third."
+  },
+  {
+    "id": "pc6-angular-z-pz-terms",
+    "type": "multiple-choice",
+    "prompt": "The section works out [L̂_x, L̂_y] = [(y p_z − z p_y), (z p_x − x p_z)]. Which pair of operators, found in both L̂_x and L̂_y, gives the nonzero terms?",
+    "choices": [
+      {
+        "text": "z and p̂_z",
+        "correct": true
+      },
+      {
+        "text": "x and p̂_x",
+        "why": "x and p̂_x each appear only in L̂_y, so they never meet in a commutator. The pair shared by both is z and p̂_z."
+      },
+      {
+        "text": "y and p̂_y",
+        "why": "y and p̂_y appear only in L̂_x. The pair shared by L̂_x and L̂_y is z and p̂_z."
+      },
+      {
+        "text": "x and y",
+        "why": "Positions always commute, [x̂_i, x̂_j] = 0. The nonzero terms come from z and p̂_z, which do not commute."
+      }
+    ],
+    "explanation": "Every other pair of factors commutes. Only z and p̂_z, which appear in both L̂_x and L̂_y, fail to commute, and their commutators give y[p̂_z, z]p̂_x + x p̂_y[z, p̂_z] = iħ(x p̂_y − y p̂_x) = iħL̂_z."
+  },
+  {
+    "id": "pc6-angular-cyclic",
+    "type": "multiple-choice",
+    "prompt": "The commutators of the angular momentum components follow a cyclic pattern, starting from [L̂_x, L̂_y] = iħL̂_z. What is [L̂_y, L̂_z]?",
+    "choices": [
+      {
+        "text": "iħL̂_x",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "No two components commute. Shifting x → y → z → x in [L̂_x, L̂_y] = iħL̂_z gives [L̂_y, L̂_z] = iħL̂_x."
+      },
+      {
+        "text": "iħL̂_z",
+        "why": "The result is iħ times the component that is not in the bracket. For [L̂_y, L̂_z] that is L̂_x."
+      },
+      {
+        "text": "−iħL̂_x",
+        "why": "The order y, z follows the cycle x → y → z → x, so the sign stays positive: [L̂_y, L̂_z] = iħL̂_x."
+      }
+    ],
+    "explanation": "Cycling x → y → z → x in [L̂_x, L̂_y] = iħL̂_z gives [L̂_y, L̂_z] = iħL̂_x and [L̂_z, L̂_x] = iħL̂_y. These three relations are the foundation of the whole theory of angular momentum."
+  },
+  {
+    "id": "pc6-angular-reversed-order",
+    "type": "multiple-choice",
+    "prompt": "Given [L̂_x, L̂_y] = iħL̂_z, what is [L̂_y, L̂_x], as used in Example 6.3.1?",
+    "choices": [
+      {
+        "text": "−iħL̂_z",
+        "correct": true
+      },
+      {
+        "text": "iħL̂_z",
+        "why": "Swapping the order swaps the two terms: [L̂_y, L̂_x] = L̂_y L̂_x − L̂_x L̂_y, which is minus [L̂_x, L̂_y]."
+      },
+      {
+        "text": "0",
+        "why": "Reversing the order doesn't make the operators commute; it only changes the sign of the commutator."
+      },
+      {
+        "text": "iħL̂_x",
+        "why": "Swapping x and y still leaves z as the third component, so the result is a multiple of L̂_z, with the sign changed."
+      }
+    ],
+    "explanation": "[L̂_y, L̂_x] = L̂_y L̂_x − L̂_x L̂_y = −(L̂_x L̂_y − L̂_y L̂_x) = −iħL̂_z. Example 6.3.1 uses this to turn [L̂_y, L̂_x]L̂_y into −iħL̂_z L̂_y."
+  },
+  {
+    "id": "pc6-angular-any-three",
+    "type": "multiple-choice",
+    "prompt": "The section calls the cyclic commutation relations the foundation of the theory of angular momentum. What does it conclude about any three operators that obey them?",
+    "choices": [
+      {
+        "text": "They represent some sort of angular momentum",
+        "correct": true
+      },
+      {
+        "text": "They must all commute with one another",
+        "why": "The relations say the opposite: each commutator is iħ times the third operator, not zero."
+      },
+      {
+        "text": "They must be the position operators x̂, ŷ and ẑ",
+        "why": "Position operators commute with each other, [x̂_i, x̂_j] = 0, so they don't obey these relations."
+      },
+      {
+        "text": "They can all be measured together exactly",
+        "why": "They don't commute, so they can't all be known at once with arbitrary precision."
+      }
+    ],
+    "explanation": "Whenever three operators satisfy [Â_x, Â_y] = iħÂ_z and its cyclic permutations, the quantities they represent behave just like the components of an angular momentum. The section takes any such three operators to be the components of some sort of angular momentum."
+  },
+  {
+    "id": "pc6-angular-lx2-lx",
+    "type": "multiple-choice",
+    "prompt": "In Example 6.3.1, the term [L̂_x^2, L̂_x] drops out right away. Why is it zero?",
+    "choices": [
+      {
+        "text": "Both orders give L̂_x L̂_x L̂_x, so they cancel",
+        "correct": true
+      },
+      {
+        "text": "L̂_x^2 is always equal to zero",
+        "why": "L̂_x^2 is not zero; it is part of L̂^2. The term vanishes because L̂_x^2 L̂_x and L̂_x L̂_x^2 are the same product."
+      },
+      {
+        "text": "Every commutator of angular momentum operators is zero",
+        "why": "[L̂_x, L̂_y] = iħL̂_z is not zero. This one vanishes because an operator commutes with its own powers."
+      },
+      {
+        "text": "L̂_x^2 and L̂_x act on different variables",
+        "why": "They act on the same variables. The term is zero because L̂_x^2 L̂_x and L̂_x L̂_x^2 are both L̂_x L̂_x L̂_x."
+      }
+    ],
+    "explanation": "[L̂_x^2, L̂_x] = L̂_x^2 L̂_x − L̂_x L̂_x^2 = L̂_x L̂_x L̂_x − L̂_x L̂_x L̂_x = 0. An operator always commutes with its own powers, so only the L̂_y^2 and L̂_z^2 terms need any work."
+  },
+  {
+    "id": "pc6-angular-title-why",
+    "type": "multiple-choice",
+    "prompt": "Why can't the three components of angular momentum all be measured simultaneously with arbitrary precision?",
+    "choices": [
+      {
+        "text": "Their operators do not commute with each other",
+        "correct": true
+      },
+      {
+        "text": "L̂^2 does not commute with any of them",
+        "why": "L̂^2 does commute with each component, as Example 6.3.1 shows for L̂_x. It is the components that fail to commute with one another."
+      },
+      {
+        "text": "Measuring devices are never precise enough",
+        "why": "The limit is not about instruments. It comes from the operators: [L̂_x, L̂_y] = iħL̂_z is not zero."
+      },
+      {
+        "text": "Their operators are not Hermitian",
+        "why": "They are Hermitian, and each component is an observable that can be measured. The trouble is that they don't commute with each other."
+      }
+    ],
+    "explanation": "Two quantities can be measured together with infinite precision only if their operators commute. [L̂_x, L̂_y] = iħL̂_z and its cyclic partners are not zero, so no two components can be known exactly at once."
+  },
+  {
+    "id": "pc6-angular-measurable-alone",
+    "type": "multiple-choice",
+    "prompt": "Can L_x, L_y and L_z each be measured on its own?",
+    "choices": [
+      {
+        "text": "Yes; the limit is on measuring them together",
+        "correct": true
+      },
+      {
+        "text": "No; only L_z can ever be measured",
+        "why": "Each component can, in principle, be measured. What fails is measuring two of them at once with arbitrary precision."
+      },
+      {
+        "text": "No; none of the components can be measured",
+        "why": "The observables for L̂_x, L̂_y and L̂_z can in principle be measured. The trouble is measuring them simultaneously."
+      },
+      {
+        "text": "Yes, and all three together, to any precision",
+        "why": "Each can be measured, but not together: the components don't commute, so they can't all be known at once."
+      }
+    ],
+    "explanation": "The observables for L̂_x, L̂_y and L̂_z can each, in principle, be measured. Whether two can be measured simultaneously with infinite precision depends on whether their operators commute, and these don't."
+  },
+  {
+    "id": "pc6-angular-ylm-uncertain",
+    "type": "multiple-choice",
+    "prompt": "An electron is in a state Y_l^(m) with definite l and m_l. Which of these quantities does NOT have a definite value?",
+    "choices": [
+      {
+        "text": "L_x",
+        "correct": true
+      },
+      {
+        "text": "L^2",
+        "why": "Y_l^(m) is an eigenfunction of L̂^2, so L^2 = l(l + 1)ħ^2 exactly."
+      },
+      {
+        "text": "L_z",
+        "why": "Y_l^(m) is an eigenfunction of L̂_z, so L_z = m_l ħ exactly."
+      },
+      {
+        "text": "|L|",
+        "why": "|L| = √(l(l + 1))ħ is fixed once l is known, since L^2 is definite."
+      }
+    ],
+    "explanation": "Y_l^(m) is an eigenfunction of both L̂^2 and L̂_z, so L^2 and L_z are known exactly. L̂_x does not commute with L̂_z, so L_x (and likewise L_y) has no definite value."
+  },
+  {
+    "id": "pc6-angular-cone",
+    "type": "multiple-choice",
+    "prompt": "In the vector model of angular momentum, why is L⃗ drawn as lying anywhere on a cone around the z-axis?",
+    "choices": [
+      {
+        "text": "Its length and L_z are fixed, but L_x and L_y are unknown",
+        "correct": true
+      },
+      {
+        "text": "The vector really spins around the cone at a fixed rate",
+        "why": "The cone shows what is unknown, not a motion: every vector with the right length and z-component fits, because L_x and L_y can't be known."
+      },
+      {
+        "text": "Its length is unknown, but its direction is fixed",
+        "why": "It's the other way round: the length √(l(l + 1))ħ and L_z are known, and the direction around the z-axis is not."
+      },
+      {
+        "text": "All three components are known, but keep changing",
+        "why": "Only L_z (with the length) is known. L_x and L_y can't be known along with it, so L⃗ could be anywhere on the cone."
+      }
+    ],
+    "explanation": "L_z can be known with certainty, but then L_x and L_y are unknown. Every vector with the right length and z-component could represent L⃗, and together these vectors form a cone."
+  },
+  {
+    "id": "pc6-angular-any-axis",
+    "type": "multiple-choice",
+    "prompt": "L̂^2 commutes with L̂_x as well as with L̂_z. Why, then, do chemists usually quote L_z?",
+    "choices": [
+      {
+        "text": "It is a convention; any one component would do",
+        "correct": true
+      },
+      {
+        "text": "The nucleus fixes the direction of the z-axis",
+        "why": "Nothing in a free atom picks out z. L̂^2 commutes with each component, so any one could be the known one; z is just the usual choice."
+      },
+      {
+        "text": "L_x and L_y are always zero in an atom",
+        "why": "They aren't zero; they just can't be known together with L_z. Any one component could be the known one, and chemists pick z."
+      },
+      {
+        "text": "L_z can then be known together with L_x",
+        "why": "L̂_z and L̂_x do not commute, so only one component can be known at a time. Which one is a choice, usually z."
+      }
+    ],
+    "explanation": "L̂^2 commutes with each of L̂_x, L̂_y and L̂_z, but the components don't commute with each other. So L^2 can be known together with any one component; chemists usually choose the z-component."
+  },
+  {
+    "id": "pc6-angular-shared-shortcut",
+    "type": "multiple-choice",
+    "prompt": "L̂^2 and L̂_x commute. According to the section, what does this save you from doing?",
+    "choices": [
+      {
+        "text": "Solving two separate eigenvalue problems",
+        "correct": true
+      },
+      {
+        "text": "Normalizing their eigenfunctions",
+        "why": "Commuting says nothing about normalization. It means the two operators share eigenfunctions, so solving one eigenvalue problem gives the other's eigenfunctions."
+      },
+      {
+        "text": "Measuring either of the two quantities",
+        "why": "The quantities still have to be measured to get values. Commuting means the operators share eigenfunctions, so one eigenvalue problem is enough."
+      },
+      {
+        "text": "Checking that the eigenvalues are real",
+        "why": "Real eigenvalues come from the operators being Hermitian, not from commuting. Commuting operators share eigenfunctions, so only one eigenvalue problem needs solving."
+      }
+    ],
+    "explanation": "Because L̂^2 and L̂_x commute, they share the same eigenstates. Once you solve one eigenvalue problem, you know the eigenfunctions of the other too, although the eigenvalues differ."
+  },
+  {
+    "id": "pc6-angular-hamiltonian-labels",
+    "type": "multiple-choice",
+    "prompt": "Why can the energy eigenstates of the hydrogen atom be labeled by the quantum numbers l and m?",
+    "choices": [
+      {
+        "text": "Ĥ commutes with the angular momentum operators",
+        "correct": true
+      },
+      {
+        "text": "The energy depends on l and m as well as n",
+        "why": "In hydrogen the energy depends only on n. The labels work because Ĥ commutes with the angular momentum operators, so they share eigenstates."
+      },
+      {
+        "text": "Every operator commutes with the Hamiltonian",
+        "why": "Many operators don't; position, for example, does not. Here it is because Ĥ commutes with the angular momentum operators."
+      },
+      {
+        "text": "The Hamiltonian contains no derivatives",
+        "why": "Ĥ contains the kinetic energy, which has derivatives. The labels work because Ĥ commutes with the angular momentum operators."
+      }
+    ],
+    "explanation": "When an observable commutes with Ĥ, there is a common set of eigenstates of both. The hydrogen Hamiltonian commutes with the angular momentum operators, including L̂_z, so its energy eigenstates can be classified by the angular momentum quantum number l and the magnetic quantum number m."
+  },
+  {
+    "id": "pc6-angular-lz-eigenvalue",
+    "type": "numeric",
+    "prompt": "In spherical coordinates L̂_z = −iħ ∂/∂φ. Apply it to the φ-function e^(3iφ), using (d/dφ)e^(3iφ) = 3ie^(3iφ) and (−i)(i) = 1. The result is a number times ħe^(3iφ). What is the number?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "L̂_z e^(3iφ) = −iħ × 3ie^(3iφ) = 3ħe^(3iφ), since (−i)(i) = 1. So e^(3iφ) is an eigenfunction of L̂_z with L_z = 3ħ: it belongs to m_l = 3, matching L_z = m_l ħ."
+  },
+  {
+    "id": "pc6-angular-cone-angle",
+    "type": "numeric",
+    "prompt": "In the vector model, the angle θ between L⃗ and the z-axis has cos θ = L_z/|L|. For l = 1 and m_l = 1, L_z = ħ and |L| = √2ħ, so cos θ = 1/√2 = 0.707. What is θ, in degrees?",
+    "answer": 45,
+    "unit": "°",
+    "explanation": "cos θ = 1/√2 = 0.707 gives θ = 45°. Even with m_l as large as it can be, L⃗ is tilted 45° away from the z-axis, so it lies on a cone around z and never points straight along it."
+  },
+  {
+    "id": "pc6-angular-orientations-l3",
+    "type": "numeric",
+    "prompt": "In the vector model, each allowed value of L_z = m_l ħ gives one possible orientation of L⃗. How many orientations are allowed for l = 3?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "m_l runs from −3 to +3 in steps of 1: −3, −2, −1, 0, 1, 2, 3. That is 2l + 1 = 7 values of L_z, so 7 orientations."
+  },
+  {
+    "id": "pc6-angular-lx-ly-left",
+    "type": "numeric",
+    "prompt": "Y_l^(m) is an eigenfunction of L̂^2 − L̂_z^2 = L̂_x^2 + L̂_y^2, with eigenvalue [l(l + 1) − m_l^2]ħ^2. For l = 2 and m_l = 2, this eigenvalue is a number times ħ^2. What is the number?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "l(l + 1) − m_l^2 = 2 × 3 − 2^2 = 6 − 4 = 2, so L_x^2 + L_y^2 = 2ħ^2. Even when L_z is as large as it can be, L_x and L_y can't both be zero, so L⃗ never points straight along the z-axis."
+  },
+  {
+    "id": "pc6-angular-z-coordinate",
+    "type": "numeric",
+    "prompt": "In spherical polar coordinates, z = r cos θ. A point has r = 100 pm and θ = 60°. Using cos 60° = 0.5, what is z, in pm?",
+    "answer": 50,
+    "unit": "pm",
+    "explanation": "z = r cos θ = 100 pm × 0.5 = 50 pm. The angle θ is measured from the z-axis, so a point with θ = 60° is closer to the xy-plane than to the axis."
+  },
+  {
+    "id": "pc6-angular-lz-joules",
+    "type": "numeric",
+    "prompt": "L_z = m_l ħ, with ħ = 1.055 × 10^−34 J·s. What is L_z for m_l = −2, including its sign, in J·s? (Type it in scientific notation, like 2.5e-34.)",
+    "answer": -2.11e-34,
+    "unit": "J·s",
+    "explanation": "L_z = m_l ħ = −2 × (1.055 × 10^−34 J·s) = −2.11 × 10^−34 J·s. The minus sign means the z-component points along −z."
+  }
+]

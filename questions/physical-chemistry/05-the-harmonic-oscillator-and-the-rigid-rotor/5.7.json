@@ -1,0 +1,578 @@
+[
+  {
+    "id": "pc5-parity-even-definition",
+    "type": "multiple-choice",
+    "prompt": "Which equation must hold for every x if f(x) is an even function?",
+    "choices": [
+      {
+        "text": "f(−x) = f(x)",
+        "correct": true
+      },
+      {
+        "text": "f(−x) = −f(x)",
+        "why": "That is the definition of an odd function, such as x^3 or sin x. An even function has f(−x) = f(x)."
+      },
+      {
+        "text": "f(0) = 0",
+        "why": "Being zero at x = 0 is true of odd functions, not a test for even ones: cos x is even, and cos 0 = 1."
+      },
+      {
+        "text": "f(x + 2π) = f(x)",
+        "why": "That says a function repeats every 2π, which is a different property. Even means f(−x) = f(x) for every x."
+      }
+    ],
+    "explanation": "f is even if f(−x) = f(x) for all x, so its graph is unchanged when reflected in the y-axis. Examples are x^2 and cos x."
+  },
+  {
+    "id": "pc5-parity-odd-graph",
+    "type": "multiple-choice",
+    "prompt": "Which symmetry does the graph of an odd function have?",
+    "choices": [
+      {
+        "text": "It is unchanged by a 180° turn about the origin",
+        "correct": true
+      },
+      {
+        "text": "It is unchanged by a reflection in the y-axis",
+        "why": "Reflection in the y-axis leaves an even function unchanged. An odd function is unchanged by a 180° rotation about the origin."
+      },
+      {
+        "text": "It is unchanged by a reflection in the x-axis",
+        "why": "Reflecting in the x-axis turns f(x) into −f(x), which changes every nonzero function. An odd function has f(−x) = −f(x), a 180° rotation."
+      },
+      {
+        "text": "It is unchanged by any shift along the x-axis",
+        "why": "Only a constant function is unchanged by every shift. An odd function has rotational symmetry of order two about the origin."
+      }
+    ],
+    "explanation": "An odd function has f(−x) = −f(x): rotating its graph 180° about the origin leaves it unchanged. Examples are x^3 and sin x."
+  },
+  {
+    "id": "pc5-parity-which-even",
+    "type": "multiple-choice",
+    "prompt": "Which of these functions is even?",
+    "choices": [
+      {
+        "text": "cos x",
+        "correct": true
+      },
+      {
+        "text": "sin x",
+        "why": "sin(−x) = −sin x, so sin x is odd. The section's examples of even functions are x^2 and cos x."
+      },
+      {
+        "text": "x^3",
+        "why": "(−x)^3 = −x^3, so x^3 is odd. An even function has f(−x) = f(x), like cos x."
+      },
+      {
+        "text": "x^3 + 1",
+        "why": "f(−x) = −x^3 + 1, which is neither f(x) nor −f(x), so x^3 + 1 is neither even nor odd."
+      }
+    ],
+    "explanation": "cos(−x) = cos x, so cos x is even. sin x and x^3 are odd, and x^3 + 1 is neither."
+  },
+  {
+    "id": "pc5-parity-neither",
+    "type": "multiple-choice",
+    "prompt": "Is f(x) = x^3 + 1 even, odd or neither?",
+    "choices": [
+      {
+        "text": "Neither even nor odd",
+        "correct": true
+      },
+      {
+        "text": "Odd, because x^3 is odd",
+        "why": "The added 1 spoils it: f(−x) = −x^3 + 1, but −f(x) = −x^3 − 1. These differ, so f is not odd."
+      },
+      {
+        "text": "Even, because the constant 1 is even",
+        "why": "f(−x) = −x^3 + 1 is not equal to f(x) = x^3 + 1, so f is not even."
+      },
+      {
+        "text": "Both even and odd at once",
+        "why": "f(−x) = −x^3 + 1 matches neither f(x) nor −f(x), so f has no symmetry at all."
+      }
+    ],
+    "explanation": "f(−x) = −x^3 + 1 is neither f(x) = x^3 + 1 nor −f(x) = −x^3 − 1. Not all functions are even or odd; the section gives x^3 + 1 as its example of neither."
+  },
+  {
+    "id": "pc5-parity-odd-times-odd",
+    "type": "multiple-choice",
+    "prompt": "x and sin x are both odd functions. What kind of function is their product, x sin x?",
+    "choices": [
+      {
+        "text": "Even",
+        "correct": true
+      },
+      {
+        "text": "Odd",
+        "why": "Two odd functions do not make an odd one: (−x)sin(−x) = (−x)(−sin x) = x sin x, so the signs cancel."
+      },
+      {
+        "text": "Neither even nor odd",
+        "why": "The product of two odd functions always has a definite symmetry: it is even."
+      },
+      {
+        "text": "Zero for every x",
+        "why": "x sin x is not zero, for example at x = π/2. Its integral vanishes only if it is odd, and it is even."
+      }
+    ],
+    "explanation": "The product of two odd functions is even: the two minus signs from f(−x) = −f(x) and g(−x) = −g(x) cancel. So (−x)sin(−x) = x sin x."
+  },
+  {
+    "id": "pc5-parity-who-knows",
+    "type": "multiple-choice",
+    "prompt": "Table 5.7.1 lists the product of an even function and a function with no symmetry as \"who knows\". What does that mean?",
+    "choices": [
+      {
+        "text": "The product's symmetry can't be predicted",
+        "correct": true
+      },
+      {
+        "text": "The product is zero for every x",
+        "why": "Nothing forces the product to be zero. \"Who knows\" means the table's rules don't tell you its symmetry."
+      },
+      {
+        "text": "The product is always an odd function",
+        "why": "Only even times odd is always odd. With a factor that has no symmetry, the product could be anything."
+      },
+      {
+        "text": "The product is always an even function",
+        "why": "Only even times even, or odd times odd, is always even. A factor with no symmetry gives no rule."
+      }
+    ],
+    "explanation": "The product rules work only when both factors are even or odd. If one factor has no symmetry, the product's symmetry can't be predicted, so the symmetry shortcuts for integrals don't apply."
+  },
+  {
+    "id": "pc5-parity-which-product-odd",
+    "type": "multiple-choice",
+    "prompt": "Using the fact that H_n(x) is even for even n and odd for odd n, which product of Hermite polynomials is an odd function?",
+    "choices": [
+      {
+        "text": "H_1(x)H_2(x)",
+        "correct": true
+      },
+      {
+        "text": "H_1(x)H_3(x)",
+        "why": "H_1 and H_3 are both odd, and odd times odd is even."
+      },
+      {
+        "text": "H_2(x)H_4(x)",
+        "why": "H_2 and H_4 are both even, and even times even is even."
+      },
+      {
+        "text": "H_0(x)H_2(x)",
+        "why": "H_0 = 1 and H_2 are both even, so their product is even."
+      }
+    ],
+    "explanation": "H_1 is odd and H_2 is even, and an odd function times an even one is odd. The product is odd only when one n is even and the other is odd."
+  },
+  {
+    "id": "pc5-parity-hn-even-rule",
+    "type": "multiple-choice",
+    "prompt": "Hermite polynomials obey H_n(−x) = (−1)^(n) H_n(x). When is H_n(x) an even function?",
+    "choices": [
+      {
+        "text": "When n is even",
+        "correct": true
+      },
+      {
+        "text": "When n is odd",
+        "why": "For odd n, (−1)^(n) = −1, so H_n(−x) = −H_n(x): the polynomial is odd."
+      },
+      {
+        "text": "For every value of n",
+        "why": "The factor (−1)^(n) alternates between +1 and −1, so the polynomials alternate between even and odd."
+      },
+      {
+        "text": "For no n; they are neither even nor odd",
+        "why": "Every Hermite polynomial has a definite symmetry: (−1)^(n) makes it even for even n and odd for odd n."
+      }
+    ],
+    "explanation": "For even n, (−1)^(n) = 1, so H_n(−x) = H_n(x) and H_n is even. For odd n it is odd, so the Hermite polynomials alternate: even, odd, even, odd, …."
+  },
+  {
+    "id": "pc5-parity-h4-why-even",
+    "type": "multiple-choice",
+    "prompt": "H_4(x) = 16x^4 − 48x^2 + 12. Why is it an even function?",
+    "choices": [
+      {
+        "text": "Every power of x in it is even",
+        "correct": true
+      },
+      {
+        "text": "All of its coefficients are even numbers",
+        "why": "The coefficients don't decide the symmetry: H_3(x) = 8x^3 − 12x also has even coefficients, yet it is odd. What matters is the powers of x."
+      },
+      {
+        "text": "Its constant term, 12, is positive",
+        "why": "A constant is even whatever its sign. H_4 is even because x^4, x^2 and the constant (x^0) are all even powers."
+      },
+      {
+        "text": "It is zero at x = 0",
+        "why": "H_4(0) = 12, not zero. It is odd functions that must be zero at x = 0."
+      }
+    ],
+    "explanation": "(−x)^4 = x^4 and (−x)^2 = x^2, so H_4(−x) = H_4(x). A polynomial with only even powers of x is even, and one with only odd powers, like H_3 = 8x^3 − 12x, is odd."
+  },
+  {
+    "id": "pc5-parity-h3-negative",
+    "type": "numeric",
+    "prompt": "H_3(x) = 8x^3 − 12x, and H_3(2) = 40. Using H_n(−x) = (−1)^(n) H_n(x), what is H_3(−2)?",
+    "answer": -40,
+    "tolerance": 0,
+    "explanation": "For n = 3, (−1)^3 = −1, so H_3(−2) = −H_3(2) = −40. Check: 8(−2)^3 − 12(−2) = −64 + 24 = −40."
+  },
+  {
+    "id": "pc5-parity-h5-at-zero",
+    "type": "numeric",
+    "prompt": "H_5(x) is an odd function, so H_5(−x) = −H_5(x) for every x. Setting x = 0, what must H_5(0) be?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "At x = 0 the rule says H_5(0) = −H_5(0), and the only number equal to its own negative is 0. Indeed H_5(x) = 120x − 160x^3 + 32x^5 has no constant term."
+  },
+  {
+    "id": "pc5-parity-degree",
+    "type": "multiple-choice",
+    "prompt": "What is the degree, the highest power of x, of the Hermite polynomial H_n(x)?",
+    "choices": [
+      {
+        "text": "n",
+        "correct": true
+      },
+      {
+        "text": "2n",
+        "why": "H_3(x) = 8x^3 − 12x has highest power 3, not 6. H_n(x) is an nth-degree polynomial."
+      },
+      {
+        "text": "n + 1",
+        "why": "H_1(x) = 2x has degree 1, not 2. H_n(x) has degree n."
+      },
+      {
+        "text": "n − 1",
+        "why": "H_2(x) = 4x^2 − 2 has degree 2, not 1. H_n(x) has degree n."
+      }
+    ],
+    "explanation": "H_n(x) is a polynomial of degree n: H_0 = 1, H_1 = 2x, H_2 = 4x^2 − 2, H_3 = 8x^3 − 12x. Its highest power is x^(n), and the other powers step down by 2, so they are all even or all odd, like n."
+  },
+  {
+    "id": "pc5-parity-recurrence-needs",
+    "type": "multiple-choice",
+    "prompt": "The recurrence relation H_(n+1)(x) = 2xH_n(x) − 2nH_(n−1)(x) builds a new Hermite polynomial. Which polynomials does it need to make H_(n+1)(x)?",
+    "choices": [
+      {
+        "text": "H_n(x) and H_(n−1)(x)",
+        "correct": true
+      },
+      {
+        "text": "Only H_n(x)",
+        "why": "The relation has two terms: 2xH_n(x) and −2nH_(n−1)(x). Both earlier polynomials are needed."
+      },
+      {
+        "text": "H_(n+2)(x) and H_n(x)",
+        "why": "H_(n+2) comes after H_(n+1), so it can't be used to make it. The relation uses the two before it."
+      },
+      {
+        "text": "Every polynomial from H_0(x) to H_n(x)",
+        "why": "Only the two previous polynomials appear in the relation: H_n(x) and H_(n−1)(x)."
+      }
+    ],
+    "explanation": "Each Hermite polynomial is generated from the two before it: H_(n+1)(x) = 2xH_n(x) − 2nH_(n−1)(x). Starting from H_0 = 1 and H_1 = 2x, you can build all the others."
+  },
+  {
+    "id": "pc5-parity-recurrence-h2",
+    "type": "numeric",
+    "prompt": "Use the recurrence relation H_(n+1)(x) = 2xH_n(x) − 2nH_(n−1)(x) with n = 1, H_0(x) = 1 and H_1(x) = 2x. What is the value of H_2(x) at x = 1?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "With n = 1, H_2(x) = 2x(2x) − 2(1)(1) = 4x^2 − 2. At x = 1, H_2(1) = 4 − 2 = 2."
+  },
+  {
+    "id": "pc5-parity-odd-integral-zero",
+    "type": "multiple-choice",
+    "prompt": "f(x) is an odd function. What is ∫_(−a)^(a) f(x) dx?",
+    "choices": [
+      {
+        "text": "0",
+        "correct": true
+      },
+      {
+        "text": "2∫_0^(a) f(x) dx",
+        "why": "Doubling the half from 0 to a is the rule for an even function. For an odd function the two halves cancel."
+      },
+      {
+        "text": "∫_0^(a) f(x) dx",
+        "why": "The half from −a to 0 is −∫_0^(a) f(x) dx for an odd function, so it cancels the half from 0 to a."
+      },
+      {
+        "text": "It can't be found without knowing f(x)",
+        "why": "Symmetry alone settles it: for any odd f, the parts from −a to 0 and from 0 to a cancel, giving 0."
+      }
+    ],
+    "explanation": "Splitting the integral at 0 and using f(−x) = −f(x) gives −∫_0^(a) f(x) dx + ∫_0^(a) f(x) dx = 0. You can see an odd integrand's integral vanishes without computing anything."
+  },
+  {
+    "id": "pc5-parity-symmetric-range",
+    "type": "multiple-choice",
+    "prompt": "An integrand is odd. Over which range can you be sure, without any calculation, that its integral is zero?",
+    "choices": [
+      {
+        "text": "From −a to a, symmetric about x = 0",
+        "correct": true
+      },
+      {
+        "text": "From 0 to a, starting at the origin",
+        "why": "Over 0 to a there is no negative half to cancel against, so the integral is usually not zero."
+      },
+      {
+        "text": "From 0 to ∞, over all positive x",
+        "why": "This range has no matching negative half. The cancellation needs a range symmetric about 0, such as −∞ to ∞."
+      },
+      {
+        "text": "Any range, as long as it includes x = 0",
+        "why": "A range like −1 to 3 includes 0 but is lopsided, so the halves don't cancel. The range must be symmetric about 0."
+      }
+    ],
+    "explanation": "The cancellation works because each x in the range is matched by −x, where f has the opposite sign. So the integral of an odd function is zero over any range from −a to a, including −∞ to ∞."
+  },
+  {
+    "id": "pc5-parity-even-integral",
+    "type": "numeric",
+    "prompt": "f(x) is an even function, and ∫_0^(2) f(x) dx = 5. What is ∫_(−2)^(2) f(x) dx?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "For an even function, ∫_(−a)^(a) f(x) dx = 2∫_0^(a) f(x) dx, because the part from −a to 0 equals the part from 0 to a. So the integral is 2 × 5 = 10."
+  },
+  {
+    "id": "pc5-parity-odd-half",
+    "type": "numeric",
+    "prompt": "f(x) is an odd function, and ∫_0^(3) f(x) dx = 4. What is ∫_(−3)^(0) f(x) dx?",
+    "answer": -4,
+    "tolerance": 0,
+    "explanation": "The section rewrites ∫_(−a)^(0) f(x) dx as ∫_0^(a) f(−x) dx. For an odd function f(−x) = −f(x), so this half is −4, and the whole integral from −3 to 3 is −4 + 4 = 0."
+  },
+  {
+    "id": "pc5-parity-even-part",
+    "type": "multiple-choice",
+    "prompt": "A function is split into an even part and an odd part, and integrated from −a to a. Which part can give a nonzero result?",
+    "choices": [
+      {
+        "text": "Only the even part",
+        "correct": true
+      },
+      {
+        "text": "Only the odd part",
+        "why": "The odd part's integral over a symmetric range is always zero. Only the even part is left."
+      },
+      {
+        "text": "Both parts",
+        "why": "The odd part always gives zero from −a to a, so only the even part can contribute."
+      },
+      {
+        "text": "Neither part; the result is always zero",
+        "why": "The even part gives 2∫_0^(a) of itself, which is usually not zero. Only the odd part drops out."
+      }
+    ],
+    "explanation": "Over a symmetric range the odd part integrates to zero, so you only have to consider the integral of the even part. This is one way symmetry simplifies integrals."
+  },
+  {
+    "id": "pc5-parity-weight-even",
+    "type": "multiple-choice",
+    "prompt": "In Example 5.7.1, is the weight function e^(−x²) even, odd or neither?",
+    "choices": [
+      {
+        "text": "Even, because (−x)^2 = x^2",
+        "correct": true
+      },
+      {
+        "text": "Odd, because of the minus sign in the exponent",
+        "why": "The minus sign is there for every x. Replacing x by −x leaves x^2, and so e^(−x²), unchanged, so it is even."
+      },
+      {
+        "text": "Neither, because it is not a polynomial",
+        "why": "Any function can be even or odd. e^(−x²) has the same value at x and −x, so it is even."
+      },
+      {
+        "text": "Odd, because it falls off on both sides",
+        "why": "Falling off the same way on both sides is a mirror symmetry in the y-axis, which makes it even."
+      }
+    ],
+    "explanation": "Replacing x by −x leaves x^2 unchanged, since (−x)^2 = x^2, so e^(−x²) has the same value at x and −x: the weight is even. So multiplying by it doesn't change the symmetry of H_m(x)H_n(x)."
+  },
+  {
+    "id": "pc5-parity-h2h3-zero",
+    "type": "multiple-choice",
+    "prompt": "In Example 5.7.1, why is ∫_(−∞)^(∞) H_2(x)H_3(x)e^(−x²) dx equal to zero?",
+    "choices": [
+      {
+        "text": "The integrand is odd, so the two halves cancel",
+        "correct": true
+      },
+      {
+        "text": "H_2(x) and H_3(x) are both zero at x = 0",
+        "why": "H_2(0) = −2, not 0. The integral vanishes because even H_2 times odd H_3 times even e^(−x²) is odd."
+      },
+      {
+        "text": "e^(−x²) is zero for every x",
+        "why": "e^(−x²) is positive everywhere, equal to 1 at x = 0. The integral vanishes because the whole integrand is odd."
+      },
+      {
+        "text": "The integrand is even, and even integrands vanish",
+        "why": "H_2 is even and H_3 is odd, so the integrand is odd. An even integrand gives twice the half integral, not zero."
+      }
+    ],
+    "explanation": "H_2 is even, H_3 is odd and e^(−x²) is even, so their product is odd. An odd integrand over −∞ to ∞ gives zero, so H_2 and H_3 are orthogonal."
+  },
+  {
+    "id": "pc5-parity-weight-function",
+    "type": "multiple-choice",
+    "prompt": "With which weight function are the Hermite polynomials orthogonal?",
+    "choices": [
+      {
+        "text": "e^(−x²)",
+        "correct": true
+      },
+      {
+        "text": "e^(−x²/2)",
+        "why": "e^(−x²/2) is the factor in each oscillator wavefunction. A product of two wavefunctions contains it twice, which gives the weight e^(−x²)."
+      },
+      {
+        "text": "e^(x²)",
+        "why": "e^(x²) grows without limit, so the integrals would not converge. The weight e^(−x²) dies away at large x."
+      },
+      {
+        "text": "1, with no weight at all",
+        "why": "Without a weight, the product of two polynomials grows at large x and the integral over all x does not converge."
+      }
+    ],
+    "explanation": "∫_(−∞)^(∞) H_m(x)H_n(x)e^(−x²) dx = 0 for m ≠ n: the Hermite polynomials are orthogonal with the weight e^(−x²). The weight dies away fast enough to make these integrals finite."
+  },
+  {
+    "id": "pc5-parity-different-n",
+    "type": "multiple-choice",
+    "prompt": "For m ≠ n, what is ∫_(−∞)^(∞) H_m(x)H_n(x)e^(−x²) dx?",
+    "choices": [
+      {
+        "text": "0",
+        "correct": true
+      },
+      {
+        "text": "2^(n) n!√(π)",
+        "why": "That is the value when m = n. For different m and n the integral is zero."
+      },
+      {
+        "text": "1",
+        "why": "The Hermite polynomials are not normalized to 1, and for m ≠ n the integral is zero, not 1."
+      },
+      {
+        "text": "√(π)",
+        "why": "√(π) is the m = n = 0 result. For m ≠ n the integral is zero."
+      }
+    ],
+    "explanation": "The Hermite polynomials form an orthogonal set for the weight e^(−x²): the integral is 0 whenever m ≠ n. For m = n it is 2^(n) n!√(π) instead."
+  },
+  {
+    "id": "pc5-parity-h1h3",
+    "type": "multiple-choice",
+    "prompt": "H_1(x) and H_3(x) are both odd, so H_1(x)H_3(x)e^(−x²) is even. Is ∫_(−∞)^(∞) H_1(x)H_3(x)e^(−x²) dx zero?",
+    "choices": [
+      {
+        "text": "Yes, because H_1 and H_3 are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "No, because an even integrand can't cancel",
+        "why": "An even integrand doesn't cancel by symmetry, but orthogonality still makes this integral zero, since 1 ≠ 3."
+      },
+      {
+        "text": "Yes, because odd times odd makes it odd",
+        "why": "Odd times odd is even, and e^(−x²) is even, so the integrand is even. The integral is zero because of orthogonality instead."
+      },
+      {
+        "text": "No, it equals 2^(n) n!√(π) with n = 3",
+        "why": "2^(n) n!√(π) is the result only when both polynomials are the same, m = n. Here m = 1 and n = 3."
+      }
+    ],
+    "explanation": "∫H_m(x)H_n(x)e^(−x²) dx = 0 for every m ≠ n, even when the integrand is even. Symmetry explains some of these zeros, like H_2 with H_3, but orthogonality covers them all."
+  },
+  {
+    "id": "pc5-parity-normalization-use",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the integral ∫_(−∞)^(∞) H_n(x)H_n(x)e^(−x²) dx = 2^(n) n!√(π) important for?",
+    "choices": [
+      {
+        "text": "Normalizing the harmonic oscillator wavefunctions",
+        "correct": true
+      },
+      {
+        "text": "Showing that H_m and H_n are orthogonal",
+        "why": "Orthogonality is about two different polynomials, where the integral is 0. This integral has the same polynomial twice."
+      },
+      {
+        "text": "Generating H_(n+1)(x) from H_n(x)",
+        "why": "New polynomials come from the recurrence relation, H_(n+1)(x) = 2xH_n(x) − 2nH_(n−1)(x), not from this integral."
+      },
+      {
+        "text": "Finding the energy levels of the harmonic oscillator",
+        "why": "The energies are (v + 1/2)hν and don't need this integral. It is used to normalize the wavefunctions."
+      }
+    ],
+    "explanation": "The integral of H_n squared times the weight is 2^(n) n!√(π), not 1. Dividing by its square root gives the normalization constant of the harmonic oscillator wavefunction."
+  },
+  {
+    "id": "pc5-parity-norm-n3",
+    "type": "numeric",
+    "prompt": "For m = n, ∫_(−∞)^(∞) H_n(x)H_n(x)e^(−x²) dx = 2^(n) n!√(π). For n = 3, this is a number times √(π). What is the number?",
+    "answer": 48,
+    "tolerance": 0,
+    "explanation": "2^3 × 3! = 8 × 6 = 48, so the integral is 48√(π). It is not 1, which is why the oscillator wavefunctions need a normalization constant."
+  },
+  {
+    "id": "pc5-parity-laplace",
+    "type": "multiple-choice",
+    "prompt": "According to the section, who first defined the Hermite polynomials, in 1810?",
+    "choices": [
+      {
+        "text": "Laplace",
+        "correct": true
+      },
+      {
+        "text": "Charles Hermite",
+        "why": "Hermite wrote about them in 1864, describing them as new, and they were named after him. Laplace had defined them in 1810."
+      },
+      {
+        "text": "Chebyshev",
+        "why": "Chebyshev studied them in detail in 1859, but Laplace had already defined them in 1810."
+      },
+      {
+        "text": "Schrödinger",
+        "why": "Schrödinger's equation came in the 20th century, long after the polynomials were defined by Laplace in 1810."
+      }
+    ],
+    "explanation": "Laplace defined the polynomials in 1810, in a scarcely recognizable form, and Chebyshev studied them in 1859. They are named after Charles Hermite, who wrote on them in 1864."
+  },
+  {
+    "id": "pc5-parity-role",
+    "type": "multiple-choice",
+    "prompt": "According to the section's conclusion, what do the Hermite polynomials decide about the harmonic oscillator wavefunctions?",
+    "choices": [
+      {
+        "text": "Whether each wavefunction is even or odd",
+        "correct": true
+      },
+      {
+        "text": "How fast each wavefunction falls to zero",
+        "why": "The fall-off at large x comes from the Gaussian factor e^(−x²/2). The Hermite polynomial sets the symmetry."
+      },
+      {
+        "text": "The spacing between the energy levels",
+        "why": "The spacing, hν, is set by the force constant and reduced mass. The Hermite polynomials set the symmetry of the wavefunctions."
+      },
+      {
+        "text": "The mass of the oscillating particle",
+        "why": "The mass is a property of the molecule, not of the polynomial. The Hermite polynomial sets whether ψ is even or odd."
+      }
+    ],
+    "explanation": "The Hermite polynomial is the part of the oscillator wavefunction that dictates its symmetry. The Gaussian factor is even, so each wavefunction is even or odd like its Hermite polynomial."
+  }
+]

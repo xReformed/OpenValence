@@ -1,0 +1,578 @@
+[
+  {
+    "id": "pc11-extended-minimal-definition",
+    "type": "multiple-choice",
+    "prompt": "What defines a minimum (minimal) basis set?",
+    "choices": [
+      {
+        "text": "One basis function for each atomic orbital",
+        "correct": true
+      },
+      {
+        "text": "Two basis functions for each atomic orbital",
+        "why": "Two functions per orbital is a double-ζ basis. A minimum basis uses a single function for each atomic orbital on each atom."
+      },
+      {
+        "text": "One basis function for each electron",
+        "why": "Functions go with orbitals, not electrons: a filled 1s orbital holds two electrons but gets just one function."
+      },
+      {
+        "text": "One basis function for each atom",
+        "why": "One per atom is far too few; each atom from Li to Ne gets five. A minimum basis has one function for each atomic orbital."
+      }
+    ],
+    "explanation": "In a minimum basis set, a single basis function is used for each atomic orbital on each atom in the system. It is the smallest kind of basis set."
+  },
+  {
+    "id": "pc11-extended-lithium-p",
+    "type": "multiple-choice",
+    "prompt": "A lithium atom has electrons only in its 1s and 2s orbitals. What does a minimum basis set for lithium add to the 1s and 2s functions?",
+    "choices": [
+      {
+        "text": "p-type basis functions",
+        "correct": true
+      },
+      {
+        "text": "d-type basis functions",
+        "why": "d functions are polarization functions, an extra beyond the minimum basis. For lithium the minimum basis adds p-type functions."
+      },
+      {
+        "text": "A second 2s function",
+        "why": "Two functions for one orbital belongs to a double-ζ basis. The minimum basis for lithium adds p-type functions instead."
+      },
+      {
+        "text": "Nothing; only 1s and 2s are used",
+        "why": "The section says p-type functions are added for atoms such as lithium, so every atom from Li to Ne gets the same five functions."
+      }
+    ],
+    "explanation": "For atoms such as lithium, p-type functions are added to the 1s and 2s functions. So each atom from Li to Ne has five functions in a minimum basis: two s and three p."
+  },
+  {
+    "id": "pc11-extended-sto-ng-core-valence",
+    "type": "multiple-choice",
+    "prompt": "In a minimal STO-nG basis set, to which orbitals does the integer n apply?",
+    "choices": [
+      {
+        "text": "Both core and valence orbitals",
+        "correct": true
+      },
+      {
+        "text": "Only the inner-shell (core) orbitals",
+        "why": "n isn't limited to the core. In STO-nG every STO, core or valence, is approximated by n Gaussians."
+      },
+      {
+        "text": "Only the valence orbitals",
+        "why": "The core orbitals are fitted with n Gaussians too. In STO-nG the same n is used for core and valence orbitals."
+      },
+      {
+        "text": "Only the hydrogen 1s orbitals",
+        "why": "n applies to every STO in the basis, on every atom, for both core and valence orbitals."
+      }
+    ],
+    "explanation": "In STO-nG, n is the number of Gaussians used to approximate each Slater-type orbital, for both core and valence orbitals. Split-valence names such as 6-31G instead use different numbers for the core and the valence shell."
+  },
+  {
+    "id": "pc11-extended-minimal-rough",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe the results of calculations with minimal basis sets?",
+    "choices": [
+      {
+        "text": "Rough; not research quality",
+        "correct": true
+      },
+      {
+        "text": "Exact for every molecule",
+        "why": "No finite basis is exact, and a minimal one is the least flexible. Its results are rough."
+      },
+      {
+        "text": "Research quality, but very slow",
+        "why": "It's the reverse: minimal basis sets are fast, but their rough results are insufficient for research-quality publication."
+      },
+      {
+        "text": "Accurate only for anions",
+        "why": "Anions need extra diffuse functions, which a minimal basis lacks. Minimal basis results are rough in general."
+      }
+    ],
+    "explanation": "Minimal basis sets typically give rough results that are insufficient for research-quality publication. Larger, extended basis sets are needed for accurate work."
+  },
+  {
+    "id": "pc11-extended-minimal-cheap",
+    "type": "multiple-choice",
+    "prompt": "What is the main advantage of a minimal basis set over larger basis sets?",
+    "choices": [
+      {
+        "text": "Much cheaper calculations",
+        "correct": true
+      },
+      {
+        "text": "Higher accuracy",
+        "why": "Minimal basis sets are the least accurate; their results are rough. Their advantage is cost."
+      },
+      {
+        "text": "A better description of anions",
+        "why": "Anions call for diffuse functions, added to larger basis sets. The minimal basis wins only on cost."
+      },
+      {
+        "text": "Orbitals that can change size",
+        "why": "Adjustable orbital sizes come from double-ζ and larger basis sets. A minimal basis is simply much cheaper."
+      }
+    ],
+    "explanation": "Minimal basis sets need far fewer calculations than larger basis sets, so they are much cheaper. The price is rough results."
+  },
+  {
+    "id": "pc11-extended-which-minimal",
+    "type": "multiple-choice",
+    "prompt": "Which of these basis sets is a minimal basis set?",
+    "choices": [
+      {
+        "text": "STO-6G",
+        "correct": true
+      },
+      {
+        "text": "6-31G",
+        "why": "The hyphen in 6-31G marks a split-valence set, in which each valence orbital gets two functions."
+      },
+      {
+        "text": "3-21G",
+        "why": "3-21G is a split-valence set, like 6-31G: its valence orbitals get two functions each."
+      },
+      {
+        "text": "6-311G",
+        "why": "6-311G splits each valence orbital into three functions, so it is far from minimal."
+      }
+    ],
+    "explanation": "The most common minimal basis sets are of the STO-nG type, such as STO-3G, STO-4G and STO-6G. Names of the form N-MPG, such as 6-31G and 3-21G, are split-valence sets."
+  },
+  {
+    "id": "pc11-extended-minimal-inflexible",
+    "type": "multiple-choice",
+    "prompt": "Why is a minimal basis set not flexible enough for accurate results?",
+    "choices": [
+      {
+        "text": "One fixed-size function per orbital",
+        "correct": true
+      },
+      {
+        "text": "It has far too many functions on each atom",
+        "why": "A minimal basis has the fewest functions possible. The problem is that each orbital has only one function."
+      },
+      {
+        "text": "It is built from Gaussians instead of STOs",
+        "why": "Larger basis sets such as 6-31G are built from Gaussians too. The problem is having only one function for each orbital."
+      },
+      {
+        "text": "It leaves out the core orbitals",
+        "why": "A minimal basis includes the core orbitals. Its weakness is one fixed function per orbital, where accuracy needs several."
+      }
+    ],
+    "explanation": "Accurate results need several functions to represent each atomic orbital. With only one function, of fixed size, an orbital can't adjust to its surroundings in the molecule."
+  },
+  {
+    "id": "pc11-extended-two-stos-differ",
+    "type": "multiple-choice",
+    "prompt": "A double-ζ basis writes the 2s orbital as φ = a_1φ_2s^(STO)(r, ζ_1) + a_2φ_2s^(STO)(r, ζ_2). How do the two STOs in this sum differ?",
+    "choices": [
+      {
+        "text": "Only in their ζ values",
+        "correct": true
+      },
+      {
+        "text": "In their shape, s versus p",
+        "why": "Both terms are 2s STOs, so both are spherical. They differ only in ζ."
+      },
+      {
+        "text": "In their quantum number n",
+        "why": "Both are 2s functions with the same n. The only difference is the value of ζ."
+      },
+      {
+        "text": "In which nucleus they sit on",
+        "why": "Both describe the 2s orbital of the same atom. They differ only in ζ, which sets how large each one is."
+      }
+    ],
+    "explanation": "The two terms are the same 2s STO except for ζ, which accounts for how large the orbital is. Using two different ζ values gives one smaller and one larger function."
+  },
+  {
+    "id": "pc11-extended-a-coefficients",
+    "type": "multiple-choice",
+    "prompt": "In the double-ζ orbital φ = a_1φ_2s^(STO)(r, ζ_1) + a_2φ_2s^(STO)(r, ζ_2), what do the constants a_1 and a_2 determine?",
+    "choices": [
+      {
+        "text": "How much each STO contributes",
+        "correct": true
+      },
+      {
+        "text": "How large each STO is",
+        "why": "The size of each STO is set by ζ_1 and ζ_2. The constants a_1 and a_2 weight the two STOs in the sum."
+      },
+      {
+        "text": "The number of nodes in each STO",
+        "why": "Both terms are 2s STOs, and the a values don't change their shape. They set how much each STO contributes."
+      },
+      {
+        "text": "The number of Gaussians in each STO",
+        "why": "Gaussians aren't part of this equation, which uses two STOs. a_1 and a_2 set each STO's share of the final orbital."
+      }
+    ],
+    "explanation": "a_1 and a_2 determine how much each STO contributes to the final atomic orbital. Mixing a smaller and a larger function in the right proportions gives an orbital of the right size."
+  },
+  {
+    "id": "pc11-extended-atom-dependent",
+    "type": "multiple-choice",
+    "prompt": "A double-ζ orbital is written φ = a_1φ^(STO)(r, ζ_1) + a_2φ^(STO)(r, ζ_2). Would a_1, a_2, ζ_1 and ζ_2 take the same values for hydrogen and for lithium?",
+    "choices": [
+      {
+        "text": "No; they vary with the type of atom",
+        "correct": true
+      },
+      {
+        "text": "Yes; they are universal constants",
+        "why": "They aren't universal. The section says hydrogen and lithium orbitals have different a_1, a_2, ζ_1 and ζ_2 values."
+      },
+      {
+        "text": "Yes; both have one valence electron",
+        "why": "Having one valence electron each doesn't make their orbitals alike: the nuclear charges and orbital sizes differ, and so do the values."
+      },
+      {
+        "text": "No; only a_1 changes between atoms",
+        "why": "All four values change from atom to atom, the ζ values as well as both a values."
+      }
+    ],
+    "explanation": "The values of a_1, a_2, ζ_1 and ζ_2 depend on the type of atom the orbital belongs to. Hydrogen and lithium orbitals have different values."
+  },
+  {
+    "id": "pc11-extended-adjustable-size",
+    "type": "multiple-choice",
+    "prompt": "A double-ζ basis represents each atomic orbital with two STOs of different size. What does this flexibility let the calculation do?",
+    "choices": [
+      {
+        "text": "Adjust the size of each orbital",
+        "correct": true
+      },
+      {
+        "text": "Add an extra node to each orbital",
+        "why": "Extra nodes come from polarization functions. Two STOs of different size let the orbital's size adjust."
+      },
+      {
+        "text": "Skip the Hartree–Fock step",
+        "why": "The calculation is still a Hartree–Fock calculation. The double-ζ basis just gives each orbital an adjustable size."
+      },
+      {
+        "text": "Use fewer functions than a minimal one",
+        "why": "A double-ζ basis has twice as many functions as a minimal one. In exchange, each orbital's size can adjust."
+      }
+    ],
+    "explanation": "Mixing a smaller and a larger STO lets the calculation generate atomic orbitals of adjustable size. The valence electron density is then better represented than with one fixed function."
+  },
+  {
+    "id": "pc11-extended-trade-off",
+    "type": "multiple-choice",
+    "prompt": "What trade-off comes with moving from a double-ζ basis to a triple- or quadruple-ζ basis?",
+    "choices": [
+      {
+        "text": "Better accuracy, higher cost",
+        "correct": true
+      },
+      {
+        "text": "Lower cost, less accuracy",
+        "why": "It's the reverse: more functions per orbital improve accuracy and make the calculations more expensive."
+      },
+      {
+        "text": "Better accuracy at no extra cost",
+        "why": "More basis functions always mean more calculations. Better accuracy is paid for with higher cost."
+      },
+      {
+        "text": "Less accuracy and higher cost",
+        "why": "Adding functions makes the basis more flexible, so accuracy improves. Only the cost goes up."
+      }
+    ],
+    "explanation": "Triple- and quadruple-ζ basis sets use three and four STOs for each orbital instead of two. The typical trade-off applies: better accuracy, but more expensive calculations."
+  },
+  {
+    "id": "pc11-extended-beyond-quadruple",
+    "type": "multiple-choice",
+    "prompt": "Have basis sets with more than four basis functions per atomic orbital been built?",
+    "choices": [
+      {
+        "text": "Yes, such as 5Z and 6Z sets",
+        "correct": true
+      },
+      {
+        "text": "No; four is the largest possible",
+        "why": "There's no limit at four. Higher-order sets such as 5Z and 6Z have been constructed."
+      },
+      {
+        "text": "No; quadruple-ζ is already exact",
+        "why": "No finite basis is exact, and higher-order sets such as 5Z and 6Z have been built."
+      },
+      {
+        "text": "Only for hydrogen and helium",
+        "why": "Higher-order sets such as 5Z and 6Z aren't limited to the lightest atoms."
+      }
+    ],
+    "explanation": "Beyond quadruple-ζ, higher-order basis sets have been constructed too, such as 5Z and 6Z. The largest basis sets contain dozens to hundreds of functions on each atom."
+  },
+  {
+    "id": "pc11-extended-order",
+    "type": "multiple-choice",
+    "prompt": "Which list orders these basis-set types from fewest to most basis functions per atomic orbital?",
+    "choices": [
+      {
+        "text": "Minimal, double-ζ, triple-ζ, quadruple-ζ",
+        "correct": true
+      },
+      {
+        "text": "Double-ζ, minimal, triple-ζ, quadruple-ζ",
+        "why": "A minimal basis has one function per orbital, fewer than the two of a double-ζ basis."
+      },
+      {
+        "text": "Minimal, triple-ζ, double-ζ, quadruple-ζ",
+        "why": "Triple-ζ has three functions per orbital, more than the two of double-ζ."
+      },
+      {
+        "text": "Quadruple-ζ, triple-ζ, double-ζ, minimal",
+        "why": "This list runs the wrong way, from most to fewest. A minimal basis has the fewest, one per orbital."
+      }
+    ],
+    "explanation": "A minimal basis has one function for each atomic orbital, a double-ζ basis two, a triple-ζ three and a quadruple-ζ four."
+  },
+  {
+    "id": "pc11-extended-types",
+    "type": "multiple-choice",
+    "prompt": "Which of these is one of the types of extended basis sets the section lists?",
+    "choices": [
+      {
+        "text": "Correlation consistent sets",
+        "correct": true
+      },
+      {
+        "text": "Single-ζ sets",
+        "why": "Single-ζ means one function per orbital, which is a minimal basis, not an extended one."
+      },
+      {
+        "text": "Hydrogen-like atomic orbital sets",
+        "why": "Hydrogenic orbitals aren't on the list. The extended Gaussian sets listed are split-valence, polarized, diffuse and correlation consistent sets."
+      },
+      {
+        "text": "Plane-wave sets",
+        "why": "Plane waves are used in materials calculations, but they aren't Gaussian sets and aren't among the extended types listed."
+      }
+    ],
+    "explanation": "The section lists several types of extended basis sets: split-valence, polarized, diffuse and correlation consistent sets. All of them go beyond one function per orbital."
+  },
+  {
+    "id": "pc11-extended-largest",
+    "type": "multiple-choice",
+    "prompt": "How many basis functions on each atom can the largest Gaussian basis sets contain?",
+    "choices": [
+      {
+        "text": "Dozens to hundreds",
+        "correct": true
+      },
+      {
+        "text": "Exactly five",
+        "why": "Five is the minimal basis for an atom from Li to Ne. The largest sets have dozens to hundreds of functions per atom."
+      },
+      {
+        "text": "One per atomic orbital",
+        "why": "One per orbital describes a minimal basis, the smallest kind. The largest sets go far beyond it."
+      },
+      {
+        "text": "No more than one per electron",
+        "why": "The number of functions isn't capped by the number of electrons. The largest sets have dozens to hundreds per atom."
+      }
+    ],
+    "explanation": "Today there are hundreds of Gaussian basis sets. The smallest are minimal sets, while the largest contain dozens to hundreds of basis functions on each atom."
+  },
+  {
+    "id": "pc11-extended-hyphen",
+    "type": "multiple-choice",
+    "prompt": "In a split-valence basis-set name of the form N-MPG, such as 6-31G, what does the hyphen indicate?",
+    "choices": [
+      {
+        "text": "That the valence shell is split",
+        "correct": true
+      },
+      {
+        "text": "A subtraction: N minus MPG",
+        "why": "The hyphen is part of the name, not a minus sign; 6-31G isn't 6 − 31. It marks a split-valence set."
+      },
+      {
+        "text": "That polarization functions are added",
+        "why": "Polarization functions are marked by an asterisk, as in 6-31G*. The hyphen marks a split-valence set."
+      },
+      {
+        "text": "That the core orbitals are left out",
+        "why": "The core orbitals are kept: the digit before the hyphen counts the Gaussians for each of them."
+      }
+    ],
+    "explanation": "In N-MPG, the hyphen denotes a split-valence set: each valence orbital is described by two functions. N before the hyphen counts the Gaussians for each inner-shell orbital."
+  },
+  {
+    "id": "pc11-extended-smaller-orbital",
+    "type": "multiple-choice",
+    "prompt": "In a split-valence name N-MPG, which letter gives the number of Gaussian functions used for the smaller of the two valence orbitals?",
+    "choices": [
+      {
+        "text": "M",
+        "correct": true
+      },
+      {
+        "text": "P",
+        "why": "P counts the Gaussians for the larger valence orbital, not the smaller one."
+      },
+      {
+        "text": "N",
+        "why": "N, before the hyphen, counts the Gaussians for each inner-shell orbital."
+      },
+      {
+        "text": "G",
+        "why": "G isn't a number. It shows that the basis is made of Gaussian functions."
+      }
+    ],
+    "explanation": "M counts the Gaussians used to describe the smaller valence orbital and P those for the larger one. In 6-31G, the smaller function uses 3 Gaussians and the larger uses 1."
+  },
+  {
+    "id": "pc11-extended-core-one-function",
+    "type": "multiple-choice",
+    "prompt": "In the split-valence basis 6-31G, how many basis functions describe each inner-shell (core) orbital?",
+    "choices": [
+      {
+        "text": "One, made of 6 Gaussians",
+        "correct": true
+      },
+      {
+        "text": "Two, like each valence orbital",
+        "why": "Only the valence orbitals are split into two functions. Each core orbital gets one function."
+      },
+      {
+        "text": "Six, one for each Gaussian",
+        "why": "The 6 Gaussians are combined into a single function. So each core orbital has one basis function."
+      },
+      {
+        "text": "None; core orbitals are left out",
+        "why": "Core orbitals are included: the 6 before the hyphen counts the Gaussians in each one's function."
+      }
+    ],
+    "explanation": "In N-MPG, each inner-shell orbital is one function built from N Gaussians, so in 6-31G it is one function of 6 Gaussians. Only the valence shell is split."
+  },
+  {
+    "id": "pc11-extended-valence-two-sizes",
+    "type": "multiple-choice",
+    "prompt": "In a split-valence basis set such as 3-21G, how is each valence orbital represented?",
+    "choices": [
+      {
+        "text": "By a smaller and a larger function",
+        "correct": true
+      },
+      {
+        "text": "By one function made of many Gaussians",
+        "why": "That describes a core orbital, or any orbital in a minimal basis. Split-valence sets give each valence orbital two functions."
+      },
+      {
+        "text": "By two functions of the same size",
+        "why": "Two identical functions would add no flexibility. One is smaller and one larger, so the orbital's size can adjust."
+      },
+      {
+        "text": "By a single d-type function",
+        "why": "d functions are polarization functions, not part of the split. Each valence orbital gets a smaller and a larger function."
+      }
+    ],
+    "explanation": "In a split-valence set, each valence orbital is described by two functions: a smaller one built from M Gaussians and a larger one built from P. In 3-21G these are 2 and 1 Gaussians."
+  },
+  {
+    "id": "pc11-extended-6311-triple",
+    "type": "multiple-choice",
+    "prompt": "In 6-311G, each digit after the hyphen stands for one function used for each valence orbital. What kind of valence description is this?",
+    "choices": [
+      {
+        "text": "Triple-ζ: three functions per orbital",
+        "correct": true
+      },
+      {
+        "text": "Double-ζ: two functions per orbital",
+        "why": "Double-ζ, as in 6-31G, has two digits after the hyphen. 6-311G has three."
+      },
+      {
+        "text": "Minimal: one function per orbital",
+        "why": "A minimal basis such as STO-3G has one function per orbital and no split. 6-311G has three digits after the hyphen."
+      },
+      {
+        "text": "Quadruple-ζ: four functions per orbital",
+        "why": "There are three digits after the hyphen, 3, 1 and 1, so three functions, not four."
+      }
+    ],
+    "explanation": "The three digits 3, 1 and 1 after the hyphen mean three functions for each valence orbital, a triple-ζ valence. As with triple-ζ sets in general, accuracy improves and cost rises."
+  },
+  {
+    "id": "pc11-extended-321g-vs-631g",
+    "type": "multiple-choice",
+    "prompt": "Both 3-21G and 6-31G split each valence orbital into two functions. How does 6-31G differ from 3-21G?",
+    "choices": [
+      {
+        "text": "More Gaussians in core and inner valence",
+        "correct": true
+      },
+      {
+        "text": "Three functions for each valence orbital",
+        "why": "6-31G has two digits after the hyphen, so two functions per valence orbital, just like 3-21G."
+      },
+      {
+        "text": "Polarization functions on every atom",
+        "why": "Neither name has an asterisk, so neither adds polarization functions."
+      },
+      {
+        "text": "Slater-type orbitals instead of Gaussians",
+        "why": "The G in both names shows that both are Gaussian basis sets."
+      }
+    ],
+    "explanation": "The core function uses 6 Gaussians in 6-31G but 3 in 3-21G, and the smaller valence function uses 3 instead of 2. The larger valence function uses 1 Gaussian in both."
+  },
+  {
+    "id": "pc11-extended-lih-minimal",
+    "type": "numeric",
+    "prompt": "In a minimum basis set, lithium gets five basis functions (1s, 2s and three added p functions) and hydrogen gets one (1s). How many basis functions does lithium hydride, LiH, have?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "5 + 1 = 6. Lithium has no p electrons, but the minimum basis still adds p-type functions to its 1s and 2s functions."
+  },
+  {
+    "id": "pc11-extended-sto6g-neon",
+    "type": "numeric",
+    "prompt": "In STO-nG, each basis function is a combination of n primitive Gaussians. A neon atom has five basis functions in a minimal basis. How many primitive Gaussians does STO-6G use for neon?",
+    "answer": 30,
+    "tolerance": 0,
+    "explanation": "5 functions × 6 Gaussians = 30 primitive Gaussians. Each of neon's five STOs, core and valence alike, is fitted with 6 Gaussians."
+  },
+  {
+    "id": "pc11-extended-quadruple-oxygen",
+    "type": "numeric",
+    "prompt": "A quadruple-ζ basis uses four basis functions for each atomic orbital. An oxygen atom has five atomic orbitals in a minimal basis (1s, 2s and three 2p). How many basis functions does a quadruple-ζ basis give oxygen?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "5 orbitals × 4 functions = 20 basis functions, four times the 5 of a minimal basis."
+  },
+  {
+    "id": "pc11-extended-6311-primitives",
+    "type": "numeric",
+    "prompt": "In 6-311G, each valence orbital is described by three functions built from 3, 1 and 1 primitive Gaussians. How many primitive Gaussians describe one valence orbital in all?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "3 + 1 + 1 = 5 primitive Gaussians, spread over three functions. The core orbitals each use one function of 6 Gaussians."
+  },
+  {
+    "id": "pc11-extended-methane-631g",
+    "type": "numeric",
+    "prompt": "In 6-31G, a carbon atom carries 9 basis functions (one core function plus two for each of four valence orbitals) and a hydrogen atom carries 2 (its 1s split in two). How many basis functions does methane, CH4, have in 6-31G?",
+    "answer": 17,
+    "tolerance": 0,
+    "explanation": "9 + 4 × 2 = 9 + 8 = 17 basis functions. In a minimal basis methane would have only 5 + 4 = 9."
+  },
+  {
+    "id": "pc11-extended-321g-core",
+    "type": "numeric",
+    "prompt": "In the basis-set name 3-21G, how many primitive Gaussians describe each inner-shell (core) orbital?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The digit before the hyphen, N = 3, is the number of Gaussians for each inner-shell orbital. The 2 and 1 after the hyphen count the Gaussians in the two valence functions."
+  }
+]

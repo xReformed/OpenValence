@@ -1,0 +1,434 @@
+[
+  {
+    "id": "pc13-irreps-wavefunctions",
+    "type": "multiple-choice",
+    "prompt": "The section opens with the fact that each normal coordinate of a molecule belongs to an irreducible representation of its point group. What else does it say shares this property?",
+    "choices": [
+      {
+        "text": "The vibrational wavefunctions",
+        "correct": true
+      },
+      {
+        "text": "The bond force constants",
+        "why": "A force constant is just a number that sets how stiff a bond is; it has no symmetry label. The section says the vibrational wavefunctions share the property."
+      },
+      {
+        "text": "The masses of the atoms",
+        "why": "Atomic masses are plain numbers, not functions that can transform under symmetry operations. It is the vibrational wavefunctions that belong to irreducible representations."
+      },
+      {
+        "text": "The equilibrium bond lengths",
+        "why": "Equilibrium bond lengths are fixed numbers, not motions or functions. The vibrational wavefunctions of the energy levels are what share the property."
+      }
+    ],
+    "explanation": "Vibrational wavefunctions associated with the vibrational energy levels share this property with the normal coordinates. So both can be sorted by the irreducible representations of the molecule's point group."
+  },
+  {
+    "id": "pc13-irreps-stretches-differ",
+    "type": "multiple-choice",
+    "prompt": "How do water's two stretching modes, the symmetric stretch and the asymmetric stretch, compare?",
+    "choices": [
+      {
+        "text": "They differ in both symmetry and energy",
+        "correct": true
+      },
+      {
+        "text": "They have the same symmetry and energy",
+        "why": "The section's table gives the symmetric stretch a_1 and the asymmetric stretch b_2, and their bands lie at 3657 and 3756 cm^−1. They differ in both."
+      },
+      {
+        "text": "Same symmetry, but different energies",
+        "why": "They don't share a symmetry: the symmetric stretch is a_1 and the asymmetric stretch is b_2. Their energies differ too."
+      },
+      {
+        "text": "Different symmetry, but the same energy",
+        "why": "Their energies differ: the symmetric stretch is at 3657 cm^−1 and the asymmetric stretch at 3756 cm^−1. Their symmetries differ as well, a_1 and b_2."
+      }
+    ],
+    "explanation": "The symmetric stretch has a_1 symmetry and the asymmetric stretch b_2, and they lie at 3657 and 3756 cm^−1. So the two stretches differ in symmetry and in energy."
+  },
+  {
+    "id": "pc13-irreps-nu3-water",
+    "type": "multiple-choice",
+    "prompt": "By the usual convention for a nonlinear molecule such as water, which normal mode is labeled ν_3?",
+    "choices": [
+      {
+        "text": "The asymmetric stretch",
+        "correct": true
+      },
+      {
+        "text": "The symmetric stretch",
+        "why": "That's ν_1. For a nonlinear molecule, ν_1 is the symmetric stretch, ν_2 the bend and ν_3 the asymmetric stretch."
+      },
+      {
+        "text": "The bend",
+        "why": "The bend is ν_2. In water, ν_3 is the asymmetric stretch."
+      },
+      {
+        "text": "The rotation about the C_2 axis",
+        "why": "Rotations aren't vibrations and get no ν label. For water, ν_3 is the asymmetric stretch."
+      }
+    ],
+    "explanation": "For nonlinear molecules the symmetric stretch is ν_1, the bend ν_2 and the asymmetric stretch ν_3. For H2O, ν_3 is the b_2 asymmetric stretch at 3756 cm^−1."
+  },
+  {
+    "id": "pc13-irreps-linear-nu2",
+    "type": "multiple-choice",
+    "prompt": "For a linear triatomic molecule such as CO2, which motion does the section's convention label ν_2?",
+    "choices": [
+      {
+        "text": "The bending motion",
+        "correct": true
+      },
+      {
+        "text": "The asymmetric stretch",
+        "why": "The asymmetric stretch of a linear molecule is ν_3. ν_2 is the bend."
+      },
+      {
+        "text": "The symmetric stretch",
+        "why": "The symmetric stretch is ν_1. For linear molecules, as for water, ν_2 is the bend."
+      },
+      {
+        "text": "A spin about the molecular axis",
+        "why": "Spinning a linear molecule about its own axis is not a vibration and gets no ν label. ν_2 is the bend."
+      }
+    ],
+    "explanation": "With linear molecules, the bending motion is ν_2 and the asymmetric stretch ν_3, the same numbering used for water."
+  },
+  {
+    "id": "pc13-irreps-assign-how",
+    "type": "multiple-choice",
+    "prompt": "How does the section assign a symmetry label such as a_1 or b_2 to each of water's normal modes?",
+    "choices": [
+      {
+        "text": "Apply the operations, then match the characters",
+        "correct": true
+      },
+      {
+        "text": "Measure each mode's frequency in the IR spectrum",
+        "why": "Frequencies don't give symmetry labels. The label comes from how the mode transforms under each symmetry operation, matched to a row of the C_2v character table."
+      },
+      {
+        "text": "Number the modes by energy, lowest first",
+        "why": "The ν numbers follow a naming convention, not the symmetry. The label comes from the characters the mode has under E, C_2, σ(xz) and σ(yz)."
+      },
+      {
+        "text": "Count the atoms that move in each mode",
+        "why": "All three atoms move in every water mode. The symmetry label comes from how the whole motion transforms under each operation of C_2v."
+      }
+    ],
+    "explanation": "Each mode is put through E, C_2, σ(xz) and σ(yz), noting whether it is unchanged (1) or reversed (−1). The resulting row of characters is matched to the C_2v character table: 1, 1, 1, 1 is a_1 and 1, −1, −1, 1 is b_2."
+  },
+  {
+    "id": "pc13-irreps-c2-reverses-nu3",
+    "type": "multiple-choice",
+    "prompt": "In the section's table, water's asymmetric stretch ν_3 has the character −1 under C_2. What does the C_2 rotation do to this vibration?",
+    "choices": [
+      {
+        "text": "It reverses the direction of the motion",
+        "correct": true
+      },
+      {
+        "text": "It leaves the motion exactly as it was",
+        "why": "That would give a character of 1, as for the symmetric stretch. A character of −1 means the rotation turns the motion into its reverse."
+      },
+      {
+        "text": "It turns the stretch into the bend",
+        "why": "Symmetry operations don't change one normal mode into another. C_2 swaps the two H atoms, so the bond that was lengthening is now shortening: the motion is reversed."
+      },
+      {
+        "text": "It stops the vibration altogether",
+        "why": "A symmetry operation can't stop a vibration. Under C_2 the asymmetric stretch is carried into its own reverse, which is what the character −1 records."
+      }
+    ],
+    "explanation": "In ν_3 one O–H bond lengthens while the other shortens. C_2 swaps the two H atoms, so every displacement now points the opposite way, giving −1 times the original motion."
+  },
+  {
+    "id": "pc13-irreps-nu2-like-nu1",
+    "type": "multiple-choice",
+    "prompt": "In the section's table, water's bend ν_2 has the same characters as its symmetric stretch ν_1: 1 under every operation. What does this tell you?",
+    "choices": [
+      {
+        "text": "Both modes have a_1 symmetry",
+        "correct": true
+      },
+      {
+        "text": "The two modes have the same energy",
+        "why": "Sharing a symmetry label says nothing about energy. The bend is at 1595 cm^−1 and the symmetric stretch at 3657 cm^−1, yet both are a_1."
+      },
+      {
+        "text": "The bend is really a second stretch",
+        "why": "A symmetry label describes how a motion transforms, not whether it is a stretch or a bend. The bend and the symmetric stretch are different motions that are both a_1."
+      },
+      {
+        "text": "One of the two must be IR inactive",
+        "why": "Sharing a label doesn't make a mode inactive. Both a_1 modes of water are IR active."
+      }
+    ],
+    "explanation": "Both rows read 1, 1, 1, 1, the a_1 row of C_2v, which is why Γ_vib contains 2a_1. A symmetry label tells how a mode transforms, so a stretch and a bend can share one."
+  },
+  {
+    "id": "pc13-irreps-label-plane",
+    "type": "multiple-choice",
+    "prompt": "This section labels water's asymmetric stretch b_2. Treatments that put water in the xz plane label the same stretch b_1. Why do the labels differ?",
+    "choices": [
+      {
+        "text": "Here water lies in the yz plane instead",
+        "correct": true
+      },
+      {
+        "text": "The two use different point groups",
+        "why": "Both use C_2v; water has only one point group. What changes is which mirror plane, xz or yz, holds the molecule, and that swaps the b_1 and b_2 labels."
+      },
+      {
+        "text": "One of the labels is simply a misprint",
+        "why": "Both labels are right for their own axes. Placing the molecule in the yz plane instead of the xz plane swaps the b_1 and b_2 labels."
+      },
+      {
+        "text": "The stretch changes symmetry as it vibrates",
+        "why": "A normal mode has one fixed symmetry. The label depends only on how the axes are set up: with water in the yz plane, the asymmetric stretch is b_2."
+      }
+    ],
+    "explanation": "b_1 and b_2 differ only in which mirror plane, σ(xz) or σ(yz), gives the character 1. In this section the molecule lies in the yz plane, so σ(yz) leaves its in-plane asymmetric stretch unchanged, and the stretch comes out b_2."
+  },
+  {
+    "id": "pc13-irreps-sigma-yz",
+    "type": "multiple-choice",
+    "prompt": "In the section's table, all three of water's normal modes have the character 1 under σ(yz), the mirror plane that contains the molecule. Why?",
+    "choices": [
+      {
+        "text": "Each motion stays in the molecular plane",
+        "correct": true
+      },
+      {
+        "text": "Every mode of water is totally symmetric",
+        "why": "Only ν_1 and ν_2 are a_1. ν_3 is b_2, with −1 under C_2 and σ(xz); it is unchanged only by σ(yz)."
+      },
+      {
+        "text": "Reflections always give a character of 1",
+        "why": "Not so: ν_3 has the character −1 under the other reflection, σ(xz). A reflection gives 1 only when it leaves the motion unchanged."
+      },
+      {
+        "text": "No atom moves during these vibrations",
+        "why": "All three atoms move in each mode. The character is 1 because every displacement lies in the yz plane, so reflecting through that plane changes nothing."
+      }
+    ],
+    "explanation": "Water's stretches and bend move the atoms only within the plane of the molecule. Reflecting through that same plane leaves each displacement where it was, so each mode has the character 1 under σ(yz)."
+  },
+  {
+    "id": "pc13-irreps-gamma-vib-reducible",
+    "type": "multiple-choice",
+    "prompt": "The section groups water's three normal modes together as Γ_vib = 2a_1 + b_2. What kind of representation is Γ_vib?",
+    "choices": [
+      {
+        "text": "A reducible representation",
+        "correct": true
+      },
+      {
+        "text": "A single irreducible representation",
+        "why": "Γ_vib is a sum of three irreducible representations, one per mode, so it is reducible. Each mode on its own is irreducible."
+      },
+      {
+        "text": "The totally symmetric representation",
+        "why": "Only a_1 is totally symmetric. Γ_vib also contains b_2, and as a sum of several pieces it is a reducible representation."
+      },
+      {
+        "text": "The full character table of C_2v",
+        "why": "A character table lists all the irreducible representations of a group. Γ_vib is one reducible representation, built from the modes' own symmetries."
+      }
+    ],
+    "explanation": "Γ_vib is a sum of irreducible representations, one for each normal mode, so it is reducible. For water it breaks down into two a_1 modes and one b_2 mode."
+  },
+  {
+    "id": "pc13-irreps-coefficient-two",
+    "type": "multiple-choice",
+    "prompt": "In water's Γ_vib = 2a_1 + b_2, what does the 2 in front of a_1 mean?",
+    "choices": [
+      {
+        "text": "Two different modes have a_1 symmetry",
+        "correct": true
+      },
+      {
+        "text": "The a_1 mode is doubly degenerate",
+        "why": "A doubly degenerate pair would carry an e label, which C_2v doesn't have. The 2 counts two separate a_1 modes: the symmetric stretch and the bend."
+      },
+      {
+        "text": "The a_1 band is twice as intense",
+        "why": "The coefficients in Γ_vib count modes, not intensities. Water has two a_1 modes, ν_1 and ν_2."
+      },
+      {
+        "text": "The a_1 mode has character 2 under E",
+        "why": "Every one-dimensional mode has the character 1 under E. The 2 means a_1 appears twice: water has two separate a_1 modes."
+      }
+    ],
+    "explanation": "The coefficient counts how many normal modes have that symmetry. Water's symmetric stretch ν_1 and bend ν_2 are both a_1, and the asymmetric stretch ν_3 is b_2."
+  },
+  {
+    "id": "pc13-irreps-computer",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how are normal modes found nowadays for molecules with many atoms, where the analysis gets complex?",
+    "choices": [
+      {
+        "text": "With computer simulations of the vibrations",
+        "correct": true
+      },
+      {
+        "text": "Only from measured IR spectra",
+        "why": "Spectra show where bands are, but not by themselves which motions they belong to. The section says computer programs that simulate molecular vibrations now do these calculations."
+      },
+      {
+        "text": "By treating each bond as a separate diatomic",
+        "why": "Bonds in a polyatomic molecule are coupled, so they can't be treated one at a time. Computer programs that simulate the vibrations handle the complexity."
+      },
+      {
+        "text": "By reusing the character table of water",
+        "why": "Each molecule needs the character table of its own point group; water's C_2v table doesn't fit other molecules. Large molecules are handled by computer programs."
+      }
+    ],
+    "explanation": "Determining normal modes becomes quite complex as the number of atoms increases. Nowadays computer programs that simulate molecular vibrations are used to perform these calculations."
+  },
+  {
+    "id": "pc13-irreps-ptcl4-point-group",
+    "type": "multiple-choice",
+    "prompt": "The section labels the nine normal modes of square-planar [PtCl4]^2− with symbols such as a_1g, b_2u and e_u. Which point group are these labels from?",
+    "choices": [
+      {
+        "text": "D_4h",
+        "correct": true
+      },
+      {
+        "text": "T_d",
+        "why": "T_d is the tetrahedral group. It has no inversion center, so its labels carry no g or u. Square-planar [PtCl4]^2− belongs to D_4h."
+      },
+      {
+        "text": "C_4v",
+        "why": "C_4v has no inversion center, so its labels carry no g or u. A flat, square ion with Pt at the center belongs to D_4h."
+      },
+      {
+        "text": "C_2v",
+        "why": "C_2v is water's group, with only the labels a_1, a_2, b_1 and b_2. [PtCl4]^2− is square planar and belongs to D_4h."
+      }
+    ],
+    "explanation": "The g and u subscripts show that the group has an inversion center, which square-planar [PtCl4]^2− has at the Pt atom. The section names its point group as D_4h."
+  },
+  {
+    "id": "pc13-irreps-eu-both-lists",
+    "type": "multiple-choice",
+    "prompt": "The section lists e_u among the stretching vibrations of [PtCl4]^2− and again among its bending vibrations. How can e_u appear in both lists?",
+    "choices": [
+      {
+        "text": "There are two separate e_u pairs",
+        "correct": true
+      },
+      {
+        "text": "The second e_u is a misprint",
+        "why": "It isn't a misprint. Γ_vib of [PtCl4]^2− contains 2e_u: one e_u pair stretches the Pt–Cl bonds and the other bends the ion."
+      },
+      {
+        "text": "Degenerate modes are always listed twice",
+        "why": "An e label already stands for a doubly degenerate pair; it isn't written twice for that. e_u appears twice because there are two different e_u pairs."
+      },
+      {
+        "text": "e_u labels a rotation, not a vibration",
+        "why": "All nine labels in the lists are vibrations. e_u appears twice because Γ_vib contains two different e_u pairs, one stretching and one bending."
+      }
+    ],
+    "explanation": "[PtCl4]^2− has two different pairs of e_u modes: one pair stretches the Pt–Cl bonds and the other bends the ion. Its Γ_vib = a_1g + b_1g + b_2g + a_2u + b_2u + 2e_u adds up to 9 modes."
+  },
+  {
+    "id": "pc13-irreps-ptcl4-stretch-vs-bend",
+    "type": "multiple-choice",
+    "prompt": "The section sorts the vibrations of [PtCl4]^2− into stretches and bends. What sets the stretching vibrations apart from the bending ones?",
+    "choices": [
+      {
+        "text": "They change the Pt–Cl bond lengths",
+        "correct": true
+      },
+      {
+        "text": "They change the Cl–Pt–Cl bond angles",
+        "why": "Changing the bond angles is what the bending vibrations do. Stretching vibrations change the Pt–Cl bond lengths."
+      },
+      {
+        "text": "They move only the central Pt atom",
+        "why": "In a stretch the Cl atoms move in and out along the bonds. What marks a stretch is that the Pt–Cl bond lengths change."
+      },
+      {
+        "text": "They have u labels rather than g labels",
+        "why": "The stretches a_1g, b_1g and e_u include both g and u labels. What sets them apart is that they change the Pt–Cl bond lengths."
+      }
+    ],
+    "explanation": "Stretching vibrations change bond lengths, here the four Pt–Cl bonds, while bending vibrations change the angles between bonds. The section lists a_1g, b_1g and e_u as stretches and b_2g, a_2u, b_2u and e_u as bends."
+  },
+  {
+    "id": "pc13-irreps-no-e-in-c2v",
+    "type": "multiple-choice",
+    "prompt": "A molecule has C_2v symmetry, whose character table lists only the irreducible representations a_1, a_2, b_1 and b_2. Which of these labels can none of its normal modes have?",
+    "choices": [
+      {
+        "text": "e",
+        "correct": true
+      },
+      {
+        "text": "a_2",
+        "why": "a_2 is in the C_2v character table, so a C_2v molecule can have an a_2 mode, even though water doesn't. Only a label missing from the table, like e, is impossible."
+      },
+      {
+        "text": "b_1",
+        "why": "b_1 is one of the four irreducible representations of C_2v, so a C_2v molecule can have b_1 modes. The label that can't occur is e, which isn't in the table."
+      },
+      {
+        "text": "b_2",
+        "why": "b_2 is in the C_2v table; water's own asymmetric stretch is b_2. The impossible label is e, which the C_2v table doesn't contain."
+      }
+    ],
+    "explanation": "From the character table, predictions can be made about which symmetries can exist. Every normal mode belongs to one of the group's irreducible representations, and C_2v has no e (doubly degenerate) representation."
+  },
+  {
+    "id": "pc13-irreps-ptcl4-a1g",
+    "type": "multiple-choice",
+    "prompt": "The a_1g stretch of [PtCl4]^2− is totally symmetric, like water's a_1 symmetric stretch. Which motion is it?",
+    "choices": [
+      {
+        "text": "All four Pt–Cl bonds stretch in step",
+        "correct": true
+      },
+      {
+        "text": "Two opposite bonds stretch as two shrink",
+        "why": "That pattern changes sign under a C_4 rotation, so it can't be totally symmetric. In the a_1g stretch all four Pt–Cl bonds lengthen and shorten together."
+      },
+      {
+        "text": "Only one Pt–Cl bond stretches",
+        "why": "One bond moving alone would be changed by every rotation that moves that bond, so it isn't totally symmetric. The a_1g stretch moves all four bonds together."
+      },
+      {
+        "text": "The Cl atoms move above and below the plane",
+        "why": "Motions out of the plane change the angles, so they are bends, not stretches. The totally symmetric stretch lengthens all four Pt–Cl bonds together."
+      }
+    ],
+    "explanation": "A totally symmetric mode is unchanged by every symmetry operation, so all four equivalent bonds must move the same way at the same time. In the a_1g stretch, all four Pt–Cl bonds lengthen and shorten together, like water's symmetric stretch."
+  },
+  {
+    "id": "pc13-irreps-ptcl4-vib-modes",
+    "type": "numeric",
+    "prompt": "The square-planar ion [PtCl4]^2− has five atoms. A nonlinear molecule has 3N − 6 vibrational degrees of freedom. How many vibrational degrees of freedom does [PtCl4]^2− have?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "N = 5, so 3N − 6 = 15 − 6 = 9. These are the nine normal modes the section labels in D_4h."
+  },
+  {
+    "id": "pc13-irreps-ptcl4-stretch-count",
+    "type": "numeric",
+    "prompt": "The section lists the stretching vibrations of [PtCl4]^2− as a_1g, b_1g and e_u. Each a or b label is one mode, and each e label is a doubly degenerate pair, or two modes. How many stretching modes does [PtCl4]^2− have?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "a_1g + b_1g + e_u = 1 + 1 + 2 = 4 stretching modes. That matches the four Pt–Cl bonds that can change length."
+  },
+  {
+    "id": "pc13-irreps-stretch-gap",
+    "type": "numeric",
+    "prompt": "Water's symmetric stretch (a_1) absorbs at 3657 cm^−1 and its asymmetric stretch (b_2) at 3756 cm^−1. By how many cm^−1 do the two stretches differ?",
+    "answer": 99,
+    "tolerance": 0,
+    "explanation": "3756 − 3657 = 99 cm^−1. The two stretches differ in energy as well as in symmetry, with the asymmetric stretch higher."
+  }
+]

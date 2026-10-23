@@ -1,0 +1,577 @@
+[
+  {
+    "id": "pc8-hund-aufbau-gap",
+    "type": "multiple-choice",
+    "prompt": "Filling orbitals in order of energy explains why 1s fills before 2s. What question does it leave open, which Hund's rules answer?",
+    "choices": [
+      {
+        "text": "In what order electrons fill the three 2p orbitals",
+        "correct": true
+      },
+      {
+        "text": "Why the 1s orbital is lower in energy than 2s",
+        "why": "That is already explained: 1s has the lower n and so the lower energy. The open question is how electrons go into the three 2p orbitals."
+      },
+      {
+        "text": "How many electrons one 2p orbital can hold",
+        "why": "Each orbital holds at most two electrons, which isn't what Hund's rules are about. They settle how electrons spread over the three 2p orbitals."
+      },
+      {
+        "text": "Why electrons fill the lowest-energy orbitals first",
+        "why": "That is the Aufbau idea itself. Hund's rules settle something it can't: the order of filling among orbitals of the same subshell, such as the three 2p orbitals."
+      }
+    ],
+    "explanation": "1s fills before 2s because it has lower n and lower energy. But the three 2p orbitals raise a new question: in what order should they be filled? Hund's rules, applied to term symbols, answer it."
+  },
+  {
+    "id": "pc8-hund-rule1",
+    "type": "multiple-choice",
+    "prompt": "What does Hund's first rule say about the states of an electron configuration?",
+    "choices": [
+      {
+        "text": "The state with the largest S is the most stable",
+        "correct": true
+      },
+      {
+        "text": "The state with the smallest S is the most stable",
+        "why": "It's the opposite: stability decreases as S decreases. The highest total spin is lowest in energy."
+      },
+      {
+        "text": "The state with the largest L is the most stable",
+        "why": "That is the second rule, used only to break ties between states with the same S."
+      },
+      {
+        "text": "The state with the smallest J is the most stable",
+        "why": "J decides only between states with the same S and L (the third rule), and even then the answer depends on how full the subshell is."
+      }
+    ],
+    "explanation": "Hund's first rule: the state with the largest total spin S, that is, the highest multiplicity 2S + 1, is the most stable, and stability decreases with decreasing S."
+  },
+  {
+    "id": "pc8-hund-rule2",
+    "type": "multiple-choice",
+    "prompt": "According to Hund's second rule, which state is the most stable among states with the same value of S?",
+    "choices": [
+      {
+        "text": "The one with the largest L",
+        "correct": true
+      },
+      {
+        "text": "The one with the smallest L",
+        "why": "Hund's second rule picks the largest L, not the smallest, among states with the same S."
+      },
+      {
+        "text": "The one with the largest J",
+        "why": "J is used only when S and L are both tied (the third rule). With S tied, the largest L wins."
+      },
+      {
+        "text": "The one with the largest 2S + 1",
+        "why": "With S the same, 2S + 1 is the same for all of them. The tie is broken by the largest L."
+      }
+    ],
+    "explanation": "When states have the same S, Hund's second rule says the one with the largest total orbital angular momentum L is the most stable. Among terms of one multiplicity, the letter furthest along S, P, D, F wins."
+  },
+  {
+    "id": "pc8-hund-rule3",
+    "type": "multiple-choice",
+    "prompt": "How does Hund's third rule choose among levels that have the same S and the same L?",
+    "choices": [
+      {
+        "text": "Smallest J if less than half filled, largest J if more",
+        "correct": true
+      },
+      {
+        "text": "Largest J if less than half filled, smallest J if more",
+        "why": "That is the reverse. A subshell less than half filled favors the smallest J; one more than half filled favors the largest."
+      },
+      {
+        "text": "Always the level with the smallest J",
+        "why": "Smallest J wins only for a subshell less than half filled. When it is more than half filled, the largest J is most stable."
+      },
+      {
+        "text": "Always the level with the largest J",
+        "why": "Largest J wins only for a subshell more than half filled. When it is less than half filled, the smallest J is most stable."
+      }
+    ],
+    "explanation": "If states have the same L and S, then for a subshell less than half filled the state with the smallest J is most stable, and for a subshell more than half filled the state with the largest J is most stable."
+  },
+  {
+    "id": "pc8-hund-rules-order",
+    "type": "multiple-choice",
+    "prompt": "Example 8.10.2 narrows a list of levels down to one ground level. In what order are Hund's rules applied?",
+    "choices": [
+      {
+        "text": "Largest S first, then largest L, then J",
+        "correct": true
+      },
+      {
+        "text": "Largest L first, then largest S, then J",
+        "why": "S is compared first. L only breaks ties among states with the same S, and J breaks ties of both."
+      },
+      {
+        "text": "Smallest J first, then largest S, then largest L",
+        "why": "J comes last; it decides only between levels with the same S and L."
+      },
+      {
+        "text": "All three at once, each weighted equally",
+        "why": "The rules are applied one after another, each one only breaking the ties left by the rule before."
+      }
+    ],
+    "explanation": "Rule 1 keeps the states with the largest S; among those, rule 2 keeps the largest L; among those, rule 3 picks J according to how full the subshell is."
+  },
+  {
+    "id": "pc8-hund-3s-vs-1d",
+    "type": "multiple-choice",
+    "prompt": "Using Hund's rules, which is lower in energy: a ^3S term or a ^1D term from the same configuration?",
+    "choices": [
+      {
+        "text": "^3S, because S is compared before L",
+        "correct": true
+      },
+      {
+        "text": "^1D, because it has the larger L",
+        "why": "L is compared only when S is tied. ^3S has S = 1 and ^1D has S = 0, so ^3S wins on the first rule."
+      },
+      {
+        "text": "They have equal energy, since the rules conflict",
+        "why": "The rules don't conflict; they are applied in order. The first rule (larger S) already settles it in favor of ^3S."
+      },
+      {
+        "text": "^1D, because singlets have paired electrons",
+        "why": "Pairing electrons costs Coulomb repulsion, so it raises the energy. The triplet ^3S, with the larger S, is lower."
+      }
+    ],
+    "explanation": "Hund's rules are applied in order. ^3S has S = 1 and ^1D has S = 0, so the first rule already puts ^3S lower; L would matter only if S were tied."
+  },
+  {
+    "id": "pc8-hund-example-lowest",
+    "type": "multiple-choice",
+    "prompt": "Example 8.10.1 asks for the energy ranking of ^3D, ^3P, ^3S, ^1D, ^1P and ^1S. Which of these terms is lowest in energy?",
+    "choices": [
+      {
+        "text": "^3D",
+        "correct": true
+      },
+      {
+        "text": "^3S",
+        "why": "^3S ties with ^3D on multiplicity, but has L = 0 against L = 2. The second rule favors the larger L."
+      },
+      {
+        "text": "^1D",
+        "why": "^1D has the largest L of the singlets, but S = 0. Every triplet is lower by the first rule."
+      },
+      {
+        "text": "^1S",
+        "why": "^1S has both the smallest S and the smallest L, so it is the highest of the six, not the lowest."
+      }
+    ],
+    "explanation": "First keep the highest multiplicity: the triplets ^3D, ^3P and ^3S. Then pick the largest L among them, D (L = 2). So ^3D is lowest."
+  },
+  {
+    "id": "pc8-hund-empty-before-pairing",
+    "type": "multiple-choice",
+    "prompt": "How does Hund's first rule show up when electrons go into a set of orbitals such as the three 2p orbitals?",
+    "choices": [
+      {
+        "text": "Electrons enter empty orbitals before they pair up",
+        "correct": true
+      },
+      {
+        "text": "Electrons pair up in one orbital before using another",
+        "why": "That would lower S. Electrons enter empty orbitals first, keeping their spins unpaired and S as large as possible."
+      },
+      {
+        "text": "Each new electron has the opposite spin to the last one",
+        "why": "Opposite spins lower S. In the most stable arrangement the electrons in separate orbitals have parallel spins."
+      },
+      {
+        "text": "Electrons fill the 2p orbitals only after 3s is full",
+        "why": "2p is lower in energy than 3s and fills first. Within 2p, Hund's first rule makes electrons occupy empty orbitals before pairing."
+      }
+    ],
+    "explanation": "Electrons always enter an empty orbital before they pair up, which keeps their spins unpaired and S at its largest. Electrons repel one another, and occupying separate orbitals lowers that repulsion."
+  },
+  {
+    "id": "pc8-hund-oxygen-unpaired",
+    "type": "numeric",
+    "prompt": "Oxygen has the configuration [He]2s^2 2p^4. By Hund's first rule, electrons enter empty 2p orbitals before they pair up. How many unpaired electrons does oxygen's ground state have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The first three 2p electrons go one into each of the three 2p orbitals. The fourth must pair with one of them, leaving 2 unpaired electrons (S = 1, a triplet)."
+  },
+  {
+    "id": "pc8-hund-parallel-most-stable",
+    "type": "multiple-choice",
+    "prompt": "Two electrons are placed in two orbitals of equal energy. According to Hund's first rule, which arrangement is the most stable?",
+    "choices": [
+      {
+        "text": "One in each orbital, with parallel spins",
+        "correct": true
+      },
+      {
+        "text": "Both in the same orbital, with opposite spins",
+        "why": "Sharing an orbital costs Coulomb repulsion, and paired spins give S = 0. This is the least stable arrangement."
+      },
+      {
+        "text": "One in each orbital, with opposite spins",
+        "why": "Moving to separate orbitals removes the Coulomb repulsion, but making the spins parallel lowers the energy further through exchange energy."
+      },
+      {
+        "text": "All arrangements have the same energy",
+        "why": "They differ. A state with unpaired, parallel spins has lower total energy than one with paired spins."
+      }
+    ],
+    "explanation": "Separate orbitals avoid the Coulomb repulsion of sharing one, and parallel spins gain the favorable exchange energy. So two electrons in separate orbitals with parallel spins, the state of largest S, is most stable."
+  },
+  {
+    "id": "pc8-hund-screening",
+    "type": "multiple-choice",
+    "prompt": "Besides lowering electron–electron repulsion, what have quantum-mechanical calculations shown about electrons in singly occupied orbitals?",
+    "choices": [
+      {
+        "text": "They are less effectively screened from the nucleus",
+        "correct": true
+      },
+      {
+        "text": "They are more effectively screened from the nucleus",
+        "why": "It's the reverse: they are less effectively shielded, so they feel more of the nucleus's attraction."
+      },
+      {
+        "text": "They have no orbital angular momentum at all",
+        "why": "Singly occupied p or d orbitals still have l = 1 or 2. The calculations show these electrons are less effectively screened from the nucleus."
+      },
+      {
+        "text": "They feel no attraction to the nucleus at all",
+        "why": "They are still attracted to the nucleus, in fact more strongly, because they are less effectively screened from it."
+      }
+    ],
+    "explanation": "Electrons in separate orbitals repel each other less, and calculations show they are also less effectively screened, or shielded, from the nucleus. Both effects favor unpaired spins, as Hund's first rule says."
+  },
+  {
+    "id": "pc8-hund-coulomb-step",
+    "type": "multiple-choice",
+    "prompt": "Two paired electrons move from sharing one orbital into two separate orbitals, still with opposite spins. What energy cost does this remove?",
+    "choices": [
+      {
+        "text": "The Coulomb repulsion of two electrons in one orbital",
+        "correct": true
+      },
+      {
+        "text": "The favorable exchange energy between the two electrons",
+        "why": "Exchange energy is favorable, and it is gained in a later step, when the spins become parallel. Leaving the shared orbital removes Coulomb repulsion."
+      },
+      {
+        "text": "The attraction of both electrons to the positive nucleus",
+        "why": "Attraction to the nucleus is not removed. What goes away is the Coulomb repulsion of two electrons in the same orbital, the spin pairing energy."
+      },
+      {
+        "text": "The energy needed to flip one electron's spin",
+        "why": "No spin is flipped in this step; the spins stay opposite. The gain comes from removing the Coulomb repulsion within one orbital."
+      }
+    ],
+    "explanation": "Putting two electrons in the same orbital costs Coulomb repulsion, the spin pairing energy. Moving them into separate orbitals removes it; making their spins parallel then gains exchange energy."
+  },
+  {
+    "id": "pc8-hund-exchange-energy",
+    "type": "multiple-choice",
+    "prompt": "What does the section say about the exchange energy behind Hund's first rule?",
+    "choices": [
+      {
+        "text": "It is favorable, and more same-spin exchanges give more of it",
+        "correct": true
+      },
+      {
+        "text": "It is unfavorable, so it raises the energy of high-spin states",
+        "why": "Exchange energy is favorable; it lowers the energy. It is one reason parallel spins in separate orbitals are most stable."
+      },
+      {
+        "text": "It acts only between electrons with opposite spins",
+        "why": "It increases with the number of possible exchanges between electrons with the same spin and energy, not opposite spins."
+      },
+      {
+        "text": "It is just another name for the Coulomb repulsion",
+        "why": "They differ: Coulomb repulsion is the cost of sharing an orbital, while exchange energy is a favorable quantum-mechanical effect of parallel spins."
+      }
+    ],
+    "explanation": "Exchange energy is a favorable quantum-mechanical effect. It increases with the number of possible exchanges between electrons with the same spin and energy, so making the spins parallel lowers the energy."
+  },
+  {
+    "id": "pc8-hund-fe3-multiplicity",
+    "type": "numeric",
+    "prompt": "Fe^3+ has the configuration [Ar]3d^5: five electrons in the five 3d orbitals. By Hund's first rule, what is the multiplicity 2S + 1 of its ground term?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Each of the five electrons takes its own 3d orbital with parallel spin, so S = 5 × 1/2 = 5/2 and 2S + 1 = 5 + 1 = 6. This matches the ground level ^6S_(5/2) given for Fe^3+."
+  },
+  {
+    "id": "pc8-hund-rule1-survivors",
+    "type": "numeric",
+    "prompt": "Example 8.10.2 lists twelve levels: ^1F_3, ^1D_2, ^1P_1, ^3F_4, ^3F_3, ^3F_2, ^3D_3, ^3D_2, ^3D_1, ^3P_2, ^3P_1 and ^3P_0. Hund's first rule keeps only those with the largest S. How many levels remain?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "The triplets (2S + 1 = 3, so S = 1) have the largest S. There are three ^3F, three ^3D and three ^3P levels, so 9 remain; the three singlets are dropped."
+  },
+  {
+    "id": "pc8-hund-ml-sign",
+    "type": "multiple-choice",
+    "prompt": "In discussing Hund's second rule, what does the section say the positive and negative signs of m_l refer to?",
+    "choices": [
+      {
+        "text": "Only the direction of the angular momentum",
+        "correct": true
+      },
+      {
+        "text": "The magnitude of the angular momentum",
+        "why": "The signs don't change the magnitude. What matters for the rule is the total (scalar) angular momentum, not its direction."
+      },
+      {
+        "text": "Whether the electron's spin is up or down",
+        "why": "Spin is given by m_s, not m_l. The sign of m_l tells only which way the orbital angular momentum points."
+      },
+      {
+        "text": "Whether the orbital is filled or empty",
+        "why": "The sign of m_l labels the direction of an orbital's angular momentum, not how many electrons it holds."
+      }
+    ],
+    "explanation": "The signs of m_l refer only to the direction of the angular momentum, not its magnitude. What matters for Hund's second rule is the total (scalar) angular momentum L."
+  },
+  {
+    "id": "pc8-hund-direction-arbitrary",
+    "type": "multiple-choice",
+    "prompt": "Why does it make no difference whether the first electron in each orbital is drawn spin up or spin down?",
+    "choices": [
+      {
+        "text": "With no outside field, both directions have equal energy",
+        "correct": true
+      },
+      {
+        "text": "Spin up is always lower in energy than spin down",
+        "why": "Neither is lower without a field. Drawing the first electron up is only a convention; drawing it down would give the same energy."
+      },
+      {
+        "text": "Only the orbital motion, not the spin, has a direction",
+        "why": "Spin also has a direction. Its direction is simply arbitrary when there is no external field."
+      },
+      {
+        "text": "Spins point up or down at random and keep changing",
+        "why": "Random flipping isn't the point. 'Up' and 'down' are labels; with no external field, either choice gives the same energy."
+      }
+    ],
+    "explanation": "By convention the first electron in each orbital is drawn up, but it could just as well be drawn down. Without an external electric or magnetic field the energy is the same; what matters is the relative directions of the electrons' momenta."
+  },
+  {
+    "id": "pc8-hund-p1d1-rule2",
+    "type": "multiple-choice",
+    "prompt": "Example 8.10.2 has one p electron and one d electron outside closed shells. After Hund's first rule leaves the triplet terms ^3F, ^3D and ^3P, which does the second rule pick?",
+    "choices": [
+      {
+        "text": "^3F",
+        "correct": true
+      },
+      {
+        "text": "^3P",
+        "why": "P is L = 1, the smallest of the three. The second rule picks the largest L, F (L = 3)."
+      },
+      {
+        "text": "^3D",
+        "why": "D is L = 2. F, with L = 3, is larger, so ^3F is favored."
+      },
+      {
+        "text": "^1F",
+        "why": "The first rule has already ruled out the singlets. Among the triplets the largest L is F, giving ^3F."
+      }
+    ],
+    "explanation": "Among states with the same S, Hund's second rule picks the largest L. Of ^3F (L = 3), ^3D (L = 2) and ^3P (L = 1), it picks ^3F."
+  },
+  {
+    "id": "pc8-hund-pauli-parallel",
+    "type": "multiple-choice",
+    "prompt": "In Example 8.10.3, Ti^2+ has two 3d electrons with parallel spins, and the highest L is 2 + 1 = 3. Why can't both take m_l = +2 to give L = 4?",
+    "choices": [
+      {
+        "text": "Two electrons with the same spin can't share an orbital",
+        "correct": true
+      },
+      {
+        "text": "An m_l value of +2 is not allowed for a 3d electron",
+        "why": "A d orbital (l = 2) has m_l = +2, +1, 0, −1 and −2. The limit comes from the two parallel spins, which can't share one orbital."
+      },
+      {
+        "text": "L can never be larger than the number of electrons",
+        "why": "There is no such rule; L comes from adding the electrons' l values as vectors. Here the parallel spins forbid sharing the m_l = +2 orbital."
+      },
+      {
+        "text": "Hund's second rule favors the smallest L that is possible",
+        "why": "The second rule favors the largest L. The largest possible here is 3, because parallel-spin electrons must be in different orbitals."
+      }
+    ],
+    "explanation": "Both electrons in the m_l = +2 orbital would need opposite spins. With parallel spins (rule 1) they must be in different orbitals, so the largest M_l is 2 + 1 = 3, giving L = 3, an F term."
+  },
+  {
+    "id": "pc8-hund-nitrogen-s",
+    "type": "multiple-choice",
+    "prompt": "Nitrogen ([He]2s^2 2p^3) has the ground level ^4S_(3/2). Why is its letter S, meaning L = 0?",
+    "choices": [
+      {
+        "text": "Its three parallel electrons have m_l = +1, 0 and −1",
+        "correct": true
+      },
+      {
+        "text": "Its three open-shell electrons are really in s orbitals",
+        "why": "The letter S is not an orbital label; it means total L = 0. The three 2p electrons' m_l values cancel."
+      },
+      {
+        "text": "All three of its 2p electrons have their spins paired",
+        "why": "Three electrons can't all be paired, and the superscript 4 shows S = 3/2: all three spins are parallel."
+      },
+      {
+        "text": "Hund's second rule always picks the smallest possible L",
+        "why": "The second rule picks the largest L allowed. With three parallel electrons in different 2p orbitals, M_l can only be 1 + 0 − 1 = 0."
+      }
+    ],
+    "explanation": "With parallel spins, the three 2p electrons must occupy the three different orbitals, m_l = +1, 0 and −1. Their m_l values add to 0, so L = 0, coded S."
+  },
+  {
+    "id": "pc8-hund-mn3-l",
+    "type": "numeric",
+    "prompt": "Mn^3+ ([Ar]3d^4) has four 3d electrons with parallel spins. To make L as large as possible they take m_l = +2, +1, 0 and −1. L equals this largest M_l, the sum of the m_l values. What is L?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "M_l = 2 + 1 + 0 + (−1) = 2, so L = 2, a D term. With S = 4 × 1/2 = 2 this gives the ^5D term of Mn^3+."
+  },
+  {
+    "id": "pc8-hund-holes",
+    "type": "multiple-choice",
+    "prompt": "Why does Hund's third rule reverse, favoring the largest J, when a subshell is more than half filled?",
+    "choices": [
+      {
+        "text": "It acts like a few holes, whose spin has the opposite sign",
+        "correct": true
+      },
+      {
+        "text": "The extra electrons have no spin angular momentum",
+        "why": "Every electron has spin. The reversal comes from treating the nearly full shell as holes, whose spin angular momentum is opposite in sign to an electron's."
+      },
+      {
+        "text": "A shell more than half filled has no orbital angular momentum",
+        "why": "A nearly full shell such as p^5 still has L = 1. The reversal comes from picturing it as holes, whose spin is opposite in sign."
+      },
+      {
+        "text": "The spin–orbit interaction vanishes past half filling",
+        "why": "It doesn't vanish; its effect is reversed in sign, because a nearly full shell behaves like holes whose spin is opposite to an electron's."
+      }
+    ],
+    "explanation": "When a shell is more than half full, it is easier to picture the interaction between the spin and orbital momenta of the holes rather than the electrons. A hole's spin angular momentum is opposite in sign to an electron's, so the stabilization is reversed."
+  },
+  {
+    "id": "pc8-hund-p1-p5",
+    "type": "multiple-choice",
+    "prompt": "In the hole picture of Hund's third rule, how do the p^1 and p^5 configurations compare?",
+    "choices": [
+      {
+        "text": "p^1 has one electron; p^5 has one hole",
+        "correct": true
+      },
+      {
+        "text": "p^1 has one hole; p^5 has one electron",
+        "why": "It's the other way round: p^5 is one electron short of the full p^6, so it has a single hole."
+      },
+      {
+        "text": "p^5 has five holes, so it is unlike p^1",
+        "why": "A p subshell holds six electrons, so p^5 has just one hole. That makes it functionally similar to p^1."
+      },
+      {
+        "text": "They follow the same J ordering",
+        "why": "The J ordering is reversed: smallest J is lowest for p^1 (less than half full), largest J for p^5 (more than half full)."
+      }
+    ],
+    "explanation": "p^5 is one electron short of a full p^6 shell, so it has a single hole. The two are functionally similar, except that the total spin angular momentum is opposite in sign, so the J ordering of Hund's third rule is switched."
+  },
+  {
+    "id": "pc8-hund-holes-d8",
+    "type": "numeric",
+    "prompt": "When a subshell is more than half full, the section suggests picturing its holes (missing electrons) rather than its electrons. A 3d subshell holds 10 electrons. How many holes does the configuration 3d^8 have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "3d^8 is 10 − 8 = 2 electrons short of a full 3d^10 subshell, so it has 2 holes. Being more than half filled, it follows the reversed third rule: the largest J is most stable."
+  },
+  {
+    "id": "pc8-hund-which-less-than-half",
+    "type": "multiple-choice",
+    "prompt": "Hund's third rule depends on whether a subshell is less or more than half filled. Which of these subshells is less than half filled?",
+    "choices": [
+      {
+        "text": "3d^4",
+        "correct": true
+      },
+      {
+        "text": "2p^4",
+        "why": "A p subshell holds 6 electrons, so 2p^4 (4 of 6) is more than half filled."
+      },
+      {
+        "text": "3d^6",
+        "why": "A d subshell holds 10 electrons, so 3d^6 (6 of 10) is more than half filled."
+      },
+      {
+        "text": "2p^5",
+        "why": "2p^5 holds 5 of a possible 6 electrons, more than half; it has a single hole."
+      }
+    ],
+    "explanation": "A d subshell holds 10 electrons, so 3d^4 (4 of 10) is less than half filled, and Hund's third rule picks its smallest J."
+  },
+  {
+    "id": "pc8-hund-c-vs-o",
+    "type": "multiple-choice",
+    "prompt": "Carbon (2p^2) and oxygen (2p^4) each have a P ground term with possible J = 2, 1 or 0. Why is carbon's ground level J = 0 but oxygen's J = 2?",
+    "choices": [
+      {
+        "text": "Carbon's 2p is less than half filled; oxygen's is more",
+        "correct": true
+      },
+      {
+        "text": "Carbon's 2p is more than half filled; oxygen's is less",
+        "why": "It's the reverse: 2p^2 holds 2 of 6 electrons (less than half), 2p^4 holds 4 of 6 (more than half)."
+      },
+      {
+        "text": "Oxygen has a larger total orbital angular momentum",
+        "why": "Both are P terms, L = 1. The J difference comes from the third rule and how full the 2p subshell is."
+      },
+      {
+        "text": "Oxygen is a heavier atom than carbon",
+        "why": "Mass isn't what matters. The third rule depends on how full the subshell is: 2 of 6 for carbon, 4 of 6 for oxygen."
+      }
+    ],
+    "explanation": "Carbon's 2p^2 (2 of 6) is less than half filled, so the smallest J, 0, is lowest: ^3P_0. Oxygen's 2p^4 (4 of 6) is more than half filled, so the largest J, 2, is lowest: ^3P_2."
+  },
+  {
+    "id": "pc8-hund-cr3-j",
+    "type": "numeric",
+    "prompt": "Cr^3+ ([Ar]3d^3) has a ^4F ground term, with L = 3 and S = 3/2. Its J values run from |L − S| to L + S, and 3d^3 is less than half filled. What is J for the ground level? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "Less than half filled means the smallest J is most stable: J = |L − S| = |3 − 3/2| = 3/2 = 1.5. The ground level is ^4F_(3/2)."
+  },
+  {
+    "id": "pc8-hund-ti2-ground",
+    "type": "multiple-choice",
+    "prompt": "Ti^2+ has the configuration [Ar]3d^2, whose terms are ^1G, ^3F, ^1D, ^3P and ^1S. Which is its ground level?",
+    "choices": [
+      {
+        "text": "^3F_2",
+        "correct": true
+      },
+      {
+        "text": "^3F_4",
+        "why": "^3F is the right term, but 3d^2 is less than half filled, so the third rule picks the smallest J, 2, not the largest."
+      },
+      {
+        "text": "^1G_4",
+        "why": "^1G has the largest L, but it is a singlet. The first rule, largest S, comes first and favors the triplets."
+      },
+      {
+        "text": "^3P_0",
+        "why": "^3P is a triplet, but the second rule prefers the triplet with the larger L, ^3F (L = 3)."
+      }
+    ],
+    "explanation": "Rule 1 keeps the triplets ^3F and ^3P; rule 2 picks ^3F (L = 3); and since 3d^2 is less than half filled, rule 3 picks the smallest J, |3 − 1| = 2. The ground level is ^3F_2."
+  }
+]

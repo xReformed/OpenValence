@@ -1,0 +1,559 @@
+[
+  {
+    "id": "pc8-slater-product-fails",
+    "type": "multiple-choice",
+    "prompt": "The product φ_1sα(r_1)φ_1sβ(r_2) puts helium's two electrons in different spin-orbitals. Why is it still not an acceptable wavefunction?",
+    "choices": [
+      {
+        "text": "Swapping gives a new function, not −1 times ψ",
+        "correct": true
+      },
+      {
+        "text": "Two electrons can't both have a 1s spatial part",
+        "why": "They can, if their spins differ, as in helium's 1s^2 ground state. The problem is that the product isn't antisymmetric."
+      },
+      {
+        "text": "It changes sign when the electrons are swapped",
+        "why": "If it did, it would be acceptable. In fact swapping gives φ_1sα(r_2)φ_1sβ(r_1), a different function, not −1 times the original."
+      },
+      {
+        "text": "It is not normalized, since it has no 1/√2",
+        "why": "A product of normalized spin-orbitals is already normalized. Its flaw is that it isn't antisymmetric when the electrons are swapped."
+      }
+    ],
+    "explanation": "Swapping the electrons turns φ_1sα(r_1)φ_1sβ(r_2) into φ_1sα(r_2)φ_1sβ(r_1). Since φ_1sα and φ_1sβ are different spin-orbitals, this is a different function, not the original times −1, so the product isn't antisymmetric."
+  },
+  {
+    "id": "pc8-slater-subtract",
+    "type": "multiple-choice",
+    "prompt": "How does the section build an antisymmetric helium ground-state function from the product φ_1sα(r_1)φ_1sβ(r_2)?",
+    "choices": [
+      {
+        "text": "It subtracts the electron-swapped product from it",
+        "correct": true
+      },
+      {
+        "text": "It adds the electron-swapped product to it",
+        "why": "Adding gives a symmetric combination, which is unchanged by a swap. Subtracting gives one that changes sign."
+      },
+      {
+        "text": "It multiplies it by the electron-swapped product",
+        "why": "Multiplying doesn't give a function that changes sign on exchange. The antisymmetric function is the difference of the two products, times 1/√2."
+      },
+      {
+        "text": "It multiplies the product by −1",
+        "why": "Multiplying by −1 just gives −ψ, which is no more antisymmetric than ψ. The swapped product must be subtracted from the original."
+      }
+    ],
+    "explanation": "ψ(r_1, r_2) = (1/√2)[φ_1sα(r_1)φ_1sβ(r_2) − φ_1sα(r_2)φ_1sβ(r_1)]: the swapped product is subtracted from the original. Swapping the electrons now just changes the overall sign."
+  },
+  {
+    "id": "pc8-slater-root-two",
+    "type": "multiple-choice",
+    "prompt": "What is the job of the constant 1/√2 in front of helium's antisymmetric ground-state function?",
+    "choices": [
+      {
+        "text": "It normalizes the wavefunction",
+        "correct": true
+      },
+      {
+        "text": "It makes the function antisymmetric",
+        "why": "The minus sign between the two terms makes it antisymmetric. The constant 1/√2 makes the total wavefunction normalized."
+      },
+      {
+        "text": "It sets the energy of the 1s orbital",
+        "why": "The constant has nothing to do with the energy. It makes the total probability equal 1, that is, it normalizes ψ."
+      },
+      {
+        "text": "It accounts for the two electrons' spins",
+        "why": "The spins appear as α and β in the spin-orbitals. The constant is there because the total wavefunction must be normalized."
+      }
+    ],
+    "explanation": "The constant accounts for the fact that the total wavefunction must be normalized. For a Slater determinant of N electrons it is 1/√(N!), which for helium's two electrons is 1/√2."
+  },
+  {
+    "id": "pc8-slater-spin-orbital-numbers",
+    "type": "multiple-choice",
+    "prompt": "In the orbital approximation, which quantum numbers set the orbital part and the spin part of a spin-orbital?",
+    "choices": [
+      {
+        "text": "n, l and m_l set the orbital; m_s sets the spin",
+        "correct": true
+      },
+      {
+        "text": "n sets the orbital; l, m_l and m_s set the spin",
+        "why": "l and m_l describe the shape and orientation of the orbital, not the spin. Only m_s belongs to the spin part."
+      },
+      {
+        "text": "m_s sets the orbital; n, l and m_l set the spin",
+        "why": "It's the other way round: n, l and m_l fix the orbital (such as 1s), and m_s fixes the spin."
+      },
+      {
+        "text": "n and m_s set the orbital; l and m_l set the spin",
+        "why": "m_s is the spin quantum number, and l and m_l belong to the orbital. The orbital is set by n, l and m_l, the spin by m_s."
+      }
+    ],
+    "explanation": "A single electron is held in a single spin-orbital. Its orbital component, such as 1s, is determined by n, l and m_l, and its spin component by m_s."
+  },
+  {
+    "id": "pc8-slater-which-part-antisymmetric",
+    "type": "multiple-choice",
+    "prompt": "Helium's ground state can be written as (1/√2)[φ_1s(1)φ_1s(2)][α(1)β(2) − α(2)β(1)]. Which part is antisymmetric to swapping the electrons?",
+    "choices": [
+      {
+        "text": "The spin part, α(1)β(2) − α(2)β(1)",
+        "correct": true
+      },
+      {
+        "text": "The spatial part, φ_1s(1)φ_1s(2)",
+        "why": "Swapping the electrons gives φ_1s(2)φ_1s(1), the same function, so the spatial part is symmetric. The sign change comes from the spin part."
+      },
+      {
+        "text": "Both parts, so the signs cancel",
+        "why": "If both parts changed sign, the whole function would be symmetric. Only the spin part changes sign, which makes the total antisymmetric."
+      },
+      {
+        "text": "Neither part; only the constant changes",
+        "why": "The constant 1/√2 doesn't change on a swap. The spin part, α(1)β(2) − α(2)β(1), becomes its own negative."
+      }
+    ],
+    "explanation": "Swapping 1 and 2 leaves φ_1s(1)φ_1s(2) unchanged but turns α(1)β(2) − α(2)β(1) into α(2)β(1) − α(1)β(2), its negative. So the total, symmetric space times antisymmetric spin, is antisymmetric."
+  },
+  {
+    "id": "pc8-slater-plus-combination",
+    "type": "multiple-choice",
+    "prompt": "Is the combination (1/√2)[φ_1sα(r_1)φ_1sβ(r_2) + φ_1sα(r_2)φ_1sβ(r_1)] symmetric or antisymmetric to swapping the two electrons?",
+    "choices": [
+      {
+        "text": "Symmetric, so it can't describe electrons",
+        "correct": true
+      },
+      {
+        "text": "Antisymmetric, so it can describe electrons",
+        "why": "Swapping r_1 and r_2 gives the same two terms in the other order, so the sum is unchanged: symmetric. Electrons need the minus sign."
+      },
+      {
+        "text": "Neither, because the two terms are different",
+        "why": "Swapping exchanges the two terms, and since they are added, the result is the original function. It is symmetric."
+      },
+      {
+        "text": "Symmetric, which is what electrons require",
+        "why": "Electrons are fermions and need antisymmetric functions. This plus combination is symmetric, so it's not acceptable for them."
+      }
+    ],
+    "explanation": "Swapping the electrons exchanges the two terms, and because they are added, the function is unchanged. It is symmetric, which suits bosons; an electron wavefunction needs the minus sign."
+  },
+  {
+    "id": "pc8-slater-excited-microstates",
+    "type": "numeric",
+    "prompt": "In helium's first excited configuration, 1s^1 2s^1, the 1s electron can have spin α or β, and so can the 2s electron. How many microstates (spin arrangements) does this give?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "2 choices for the 1s spin × 2 for the 2s spin = 4 microstates. The section builds four excited-state wavefunctions, ψ_1 to ψ_4, from them."
+  },
+  {
+    "id": "pc8-slater-psi2-spatial-sign",
+    "type": "multiple-choice",
+    "prompt": "In helium's excited state ψ_2 = (1/√2)[φ_1s(1)φ_2s(2) − φ_1s(2)φ_2s(1)][α(1)α(2)], the spin part α(1)α(2) is symmetric. Why does the spatial part need the minus sign?",
+    "choices": [
+      {
+        "text": "So that the whole wavefunction is antisymmetric",
+        "correct": true
+      },
+      {
+        "text": "So that the whole wavefunction is symmetric",
+        "why": "Electrons need antisymmetric functions. With a symmetric spin part, the spatial part must change sign so that the product does."
+      },
+      {
+        "text": "So that the wavefunction is normalized",
+        "why": "Normalization is the job of the constant 1/√2. The minus sign makes the spatial part antisymmetric."
+      },
+      {
+        "text": "Because the 2s orbital is higher in energy than 1s",
+        "why": "The orbital energies don't set the sign. The minus sign is there to make ψ_2 antisymmetric overall."
+      }
+    ],
+    "explanation": "A symmetric part times an antisymmetric part is antisymmetric. Since α(1)α(2) is unchanged by a swap, the spatial part φ_1s(1)φ_2s(2) − φ_1s(2)φ_2s(1) must change sign, making ψ_2 antisymmetric as electrons require."
+  },
+  {
+    "id": "pc8-slater-single-determinants",
+    "type": "numeric",
+    "prompt": "The section writes helium's four 1s^1 2s^1 wavefunctions with Slater determinants. Their spin parts are α(1)β(2) − α(2)β(1) for ψ_1, α(1)α(2) for ψ_2, α(1)β(2) + α(2)β(1) for ψ_3 and β(1)β(2) for ψ_4. How many of the four are equal to a single Slater determinant?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Two: ψ_2 (both spins α) and ψ_4 (both spins β) are each one determinant. ψ_1 and ψ_3 mix α(1)β(2) with α(2)β(1), so each is the difference or the sum of two determinants, one with the 1s electron α and the 2s electron β, and one the other way round."
+  },
+  {
+    "id": "pc8-slater-unpaired-combination",
+    "type": "multiple-choice",
+    "prompt": "According to the section, for which kind of system does a single Slater determinant sometimes fail to be a (space) × (spin) product, so that a combination of determinants is needed?",
+    "choices": [
+      {
+        "text": "Systems with unpaired electrons",
+        "correct": true
+      },
+      {
+        "text": "Systems in which every electron is paired",
+        "why": "Closed-shell systems such as ground-state helium are the easy case: one determinant works. The problem generally arises with unpaired electrons."
+      },
+      {
+        "text": "Only atoms with more than 50 electrons",
+        "why": "The number of electrons isn't the issue; it even happens for excited helium. It generally arises with unpaired electrons."
+      },
+      {
+        "text": "Only the hydrogen atom",
+        "why": "Hydrogen has one electron, so there is no antisymmetry problem at all. The issue arises for systems with unpaired electrons, like excited helium."
+      }
+    ],
+    "explanation": "A single Slater determinant corresponds to one configuration diagram. Sometimes it can't be written as a (space) × (spin) product, and then a combination of determinants must be used; this generally happens only for systems with unpaired electrons, like several excited states of helium."
+  },
+  {
+    "id": "pc8-slater-history",
+    "type": "multiple-choice",
+    "prompt": "Slater introduced determinantal wavefunctions in 1929. In whose papers had they first appeared, three years earlier?",
+    "choices": [
+      {
+        "text": "Heisenberg's and Dirac's",
+        "correct": true
+      },
+      {
+        "text": "Schrödinger's and Born's",
+        "why": "The section credits Heisenberg and Dirac, who used the determinantal form independently three years before Slater."
+      },
+      {
+        "text": "Hartree's and Fock's",
+        "why": "Hartree and Fock are known for the self-consistent field method. The determinantal wavefunction first appeared in Heisenberg's and Dirac's papers."
+      },
+      {
+        "text": "Pauli's and Bohr's",
+        "why": "Pauli stated the exclusion principle, but the section says the determinantal wavefunction first appeared in Heisenberg's and Dirac's papers."
+      }
+    ],
+    "explanation": "John C. Slater introduced the determinants in 1929 as a way of ensuring antisymmetry, but the determinantal wavefunction had appeared three years earlier, independently, in papers by Heisenberg and Dirac."
+  },
+  {
+    "id": "pc8-slater-why-useful",
+    "type": "multiple-choice",
+    "prompt": "Why is a Slater determinant better than building antisymmetric combinations by hand for an atom with many electrons?",
+    "choices": [
+      {
+        "text": "It gives an antisymmetric function by a simple recipe",
+        "correct": true
+      },
+      {
+        "text": "It avoids having to use spin-orbitals at all",
+        "why": "Its columns are spin-orbitals, so it still uses them. Its advantage is that it builds a correctly antisymmetric function automatically."
+      },
+      {
+        "text": "It gives the exact solution of the Schrödinger equation",
+        "why": "It is still built from one-electron functions, so it is an approximation. Its advantage is a simple recipe for an antisymmetric function."
+      },
+      {
+        "text": "It makes the wavefunction symmetric, as electrons need",
+        "why": "Electrons need antisymmetric functions, not symmetric ones, and an antisymmetric function is what the determinant gives."
+      }
+    ],
+    "explanation": "Building an antisymmetric function by hand quickly becomes unwieldy with many electrons; just think of uranium. Writing the wavefunction as a determinant of spin-orbitals is a relatively simple scheme that is always antisymmetric."
+  },
+  {
+    "id": "pc8-slater-rows-columns",
+    "type": "multiple-choice",
+    "prompt": "As the section writes a Slater determinant, what changes from one row to the next, and what changes from one column to the next?",
+    "choices": [
+      {
+        "text": "Rows: the electron; columns: the spin-orbital",
+        "correct": true
+      },
+      {
+        "text": "Rows: the spin-orbital; columns: the electron",
+        "why": "It's the other way round in the section's convention: the electron label changes down the rows, and the spin-orbital changes across the columns."
+      },
+      {
+        "text": "Rows: the spin α or β; columns: the spatial orbital",
+        "why": "Spin and space aren't split between rows and columns. Each entry is a whole spin-orbital: the electron changes down the rows, the spin-orbital across the columns."
+      },
+      {
+        "text": "Rows: the shell n; columns: the subshell l",
+        "why": "The determinant isn't a table of quantum numbers. Each row is one electron, and each column is one spin-orbital."
+      }
+    ],
+    "explanation": "The determinant is written so the electron coordinate changes from one row to the next, and the spin-orbital changes from one column to the next. So N electrons give N rows and N columns."
+  },
+  {
+    "id": "pc8-slater-helium-columns",
+    "type": "multiple-choice",
+    "prompt": "Which two spin-orbitals head the columns of the Slater determinant for ground-state helium?",
+    "choices": [
+      {
+        "text": "φ_1sα and φ_1sβ",
+        "correct": true
+      },
+      {
+        "text": "φ_1sα and φ_1sα",
+        "why": "A repeated column makes the determinant zero: two electrons can't share a spin-orbital. Helium's two 1s electrons have spins α and β."
+      },
+      {
+        "text": "φ_1sα and φ_2sα",
+        "why": "That's an excited configuration, 1s^1 2s^1. In the ground state both electrons are in 1s, with opposite spins."
+      },
+      {
+        "text": "φ_1s and φ_2s, with no spin",
+        "why": "Each column must be a full spin-orbital, with a spin part. Ground-state helium uses φ_1sα and φ_1sβ."
+      }
+    ],
+    "explanation": "Ground-state helium is 1s^2, so its two spin-orbitals are 1s with spin α and 1s with spin β. The determinant's rows are φ_1s(1)α(1), φ_1s(1)β(1) for electron 1 and φ_1s(2)α(2), φ_1s(2)β(2) for electron 2."
+  },
+  {
+    "id": "pc8-slater-uranium-rows",
+    "type": "numeric",
+    "prompt": "Uranium has 92 electrons. How many rows would the Slater determinant for a uranium atom have?",
+    "answer": 92,
+    "tolerance": 0,
+    "explanation": "A Slater determinant has one row per electron and one column per occupied spin-orbital, so uranium's would be 92 × 92. Building that antisymmetric function by hand would be hopeless; the determinant does it automatically."
+  },
+  {
+    "id": "pc8-slater-normalization",
+    "type": "multiple-choice",
+    "prompt": "What is the normalization constant in front of a Slater determinant for N electrons?",
+    "choices": [
+      {
+        "text": "1/√(N!)",
+        "correct": true
+      },
+      {
+        "text": "1/√N",
+        "why": "Dividing by √N isn't enough: an N × N determinant expands into N! terms. The constant is 1/√(N!)."
+      },
+      {
+        "text": "1/N!",
+        "why": "The constant is a square root: 1/√(N!). For helium, N = 2 gives 1/√2, not 1/2."
+      },
+      {
+        "text": "√(N!)",
+        "why": "The constant divides rather than multiplies: it is 1/√(N!), which is 1/√2 for helium."
+      }
+    ],
+    "explanation": "A Slater determinant is normalized by dividing by √(N!), where N is the number of occupied spin-orbitals, one per electron. For helium, N = 2 and the constant is 1/√2."
+  },
+  {
+    "id": "pc8-slater-lithium-constant",
+    "type": "numeric",
+    "prompt": "A Slater determinant for N electrons is normalized by the constant 1/√(N!). What is this constant for lithium, with N = 3? (Give it as a decimal.)",
+    "answer": 0.4082,
+    "explanation": "N! = 3! = 3 × 2 × 1 = 6, so the constant is 1/√6 = 1/2.449 = 0.408."
+  },
+  {
+    "id": "pc8-slater-beryllium-terms",
+    "type": "numeric",
+    "prompt": "Expanding an N × N determinant gives N! terms. How many terms are there in the expanded Slater determinant for a beryllium atom, which has 4 electrons?",
+    "answer": 24,
+    "tolerance": 0,
+    "explanation": "N! = 4! = 4 × 3 × 2 × 1 = 24 terms. For comparison, helium's determinant has 2! = 2 terms, and carbon's in Example 8.6.3 has 6! = 720."
+  },
+  {
+    "id": "pc8-slater-term-meaning",
+    "type": "multiple-choice",
+    "prompt": "The expanded Slater determinant for lithium has six terms. What does each term correspond to?",
+    "choices": [
+      {
+        "text": "One way to place the electrons in the spin-orbitals",
+        "correct": true
+      },
+      {
+        "text": "One possible electron configuration of the lithium atom",
+        "why": "All six terms use the same configuration, 1s^2 2s^1. They differ only in which electron is in which spin-orbital."
+      },
+      {
+        "text": "One of six different spin-orbitals in the lithium atom",
+        "why": "Lithium's ground-state determinant has only three spin-orbitals. The six terms are the 3! ways of permuting the three electrons among them."
+      },
+      {
+        "text": "One of six different energy levels of the atom",
+        "why": "The terms aren't energy levels. Each is one permutation of the three electrons among the three spin-orbitals."
+      }
+    ],
+    "explanation": "A 3 × 3 determinant has 3! = 6 terms, one for each way of permuting the three electrons among the spin-orbitals φ_1sα, φ_1sβ and φ_2sα. The signs of the terms make the sum antisymmetric."
+  },
+  {
+    "id": "pc8-slater-row-swap-sign",
+    "type": "multiple-choice",
+    "prompt": "Why is a Slater determinant automatically antisymmetric to swapping two electrons?",
+    "choices": [
+      {
+        "text": "Swapping two rows of a determinant changes its sign",
+        "correct": true
+      },
+      {
+        "text": "Swapping two rows of a determinant leaves it unchanged",
+        "why": "That would make it symmetric. Interchanging two rows of a determinant changes its sign, and that is what makes the wavefunction antisymmetric."
+      },
+      {
+        "text": "Its normalization constant is always negative",
+        "why": "1/√(N!) is positive. The sign change comes from the row swap: interchanging two rows of a determinant changes its sign."
+      },
+      {
+        "text": "Each spin-orbital is antisymmetric by itself",
+        "why": "A single spin-orbital describes one electron, so it has no exchange symmetry of its own. The antisymmetry comes from the determinant, whose sign flips when two rows swap."
+      }
+    ],
+    "explanation": "Swapping two electrons swaps two rows of the determinant, since each row belongs to one electron. Interchanging two rows of a determinant changes its sign, so ψ becomes −ψ, exactly as antisymmetry requires."
+  },
+  {
+    "id": "pc8-slater-any-two",
+    "type": "multiple-choice",
+    "prompt": "For a Slater determinant describing many electrons, which swaps of two electrons change the sign of the wavefunction?",
+    "choices": [
+      {
+        "text": "Swapping any two of the electrons",
+        "correct": true
+      },
+      {
+        "text": "Only swapping electrons 1 and 2",
+        "why": "Labels 1 and 2 aren't special. Every pair of electrons corresponds to a pair of rows, and swapping any two rows changes the sign."
+      },
+      {
+        "text": "Only swapping electrons with the same spin",
+        "why": "The sign change doesn't depend on the spins. A Slater determinant is antisymmetric to the exchange of any two electrons."
+      },
+      {
+        "text": "Only swapping electrons in the same subshell",
+        "why": "Subshells don't matter. Exchanging any two electrons swaps two rows, and the determinant changes sign."
+      }
+    ],
+    "explanation": "A Slater determinant is antisymmetric to the exchange of any two electrons, because each such swap interchanges two rows. That is why it works for any number of electrons."
+  },
+  {
+    "id": "pc8-slater-two-by-two-value",
+    "type": "numeric",
+    "prompt": "A 2 × 2 determinant with rows (a, b) and (c, d) equals ad − bc. At one pair of electron positions, a two-electron Slater determinant has rows (0.50, 0.30) and (0.20, 0.40). Leaving out the constant 1/√2, what is its value?",
+    "answer": 0.14,
+    "explanation": "ad − bc = (0.50)(0.40) − (0.30)(0.20) = 0.20 − 0.06 = 0.14."
+  },
+  {
+    "id": "pc8-slater-lithium-swap",
+    "type": "numeric",
+    "prompt": "At one set of positions, lithium's 3 × 3 Slater determinant (without its constant) has the value 0.012. Swapping electrons 2 and 3 interchanges two rows. What is the determinant's new value?",
+    "answer": -0.012,
+    "explanation": "Interchanging two rows of a determinant changes its sign, so the value becomes −0.012. This sign change is the antisymmetry that electrons require."
+  },
+  {
+    "id": "pc8-slater-identical-columns",
+    "type": "multiple-choice",
+    "prompt": "A determinant with two identical columns equals zero. What does this mean for a Slater determinant with the same spin-orbital in two columns?",
+    "choices": [
+      {
+        "text": "It is zero, so no such state exists",
+        "correct": true
+      },
+      {
+        "text": "It is valid but becomes symmetric",
+        "why": "A determinant is antisymmetric to swapping rows whatever its columns hold. With two identical columns it is simply zero: two electrons can't share a spin-orbital."
+      },
+      {
+        "text": "It is valid but needs a new constant",
+        "why": "No constant can rescue a function that is zero everywhere. Two electrons can't be put in the same spin-orbital: the Pauli principle."
+      },
+      {
+        "text": "It is valid only for excited states",
+        "why": "The rule holds for every state. A determinant with a repeated spin-orbital vanishes, so the Pauli principle forbids it in ground and excited states alike."
+      }
+    ],
+    "explanation": "If two columns hold the same spin-orbital, the determinant is zero everywhere and describes nothing. This is the Pauli exclusion principle: no two electrons can be described by the same spin-orbital."
+  },
+  {
+    "id": "pc8-slater-lithium-two",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 8.6.2, lithium's ground state can be written with the spin-orbitals φ_1sα, φ_1sβ, φ_2sα or with φ_1sα, φ_1sβ, φ_2sβ. What is the difference between the two?",
+    "choices": [
+      {
+        "text": "The spin of the 2s electron, α or β",
+        "correct": true
+      },
+      {
+        "text": "One puts the third electron in 2p instead of 2s",
+        "why": "Both use the 2s orbital for the third electron. They differ only in its spin: α in one, β in the other."
+      },
+      {
+        "text": "One breaks the Pauli exclusion principle",
+        "why": "Both are valid: in each, the three spin-orbitals are all different. They differ only in the 2s electron's spin."
+      },
+      {
+        "text": "The spins of the two 1s electrons",
+        "why": "Both determinants have φ_1sα and φ_1sβ. Only the 2s spin-orbital differs."
+      }
+    ],
+    "explanation": "Both determinants have the same 1s^2 2s^1 configuration and three different spin-orbitals, so both are valid ground-state wavefunctions. The only difference is whether the 2s electron has spin α or spin β."
+  },
+  {
+    "id": "pc8-slater-carbon-p-columns",
+    "type": "multiple-choice",
+    "prompt": "In Example 8.6.3, why do the two 2p columns of carbon's determinant use φ_2pxα and φ_2pyα rather than φ_2pxα and φ_2pxβ?",
+    "choices": [
+      {
+        "text": "The 2p electrons are in different p orbitals, both α",
+        "correct": true
+      },
+      {
+        "text": "A p orbital can never hold an electron with spin β",
+        "why": "p orbitals can hold β electrons; a filled 2p subshell has three of them. Carbon's two ground-state 2p electrons go into different p orbitals with parallel spins."
+      },
+      {
+        "text": "φ_2pxα and φ_2pxβ count as the same spin-orbital",
+        "why": "They differ in spin, so they are different spin-orbitals. The example's choice reflects carbon's ground state, with the 2p electrons in different p orbitals, both spin up."
+      },
+      {
+        "text": "Only 2px and 2py orbitals exist in a carbon atom",
+        "why": "All three 2p orbitals exist. The example uses two different p orbitals, both α, because that is the ground-state arrangement."
+      }
+    ],
+    "explanation": "Carbon has 6 electrons: 1s^2 2s^2 2p^2. In the ground state the two 2p electrons are in different p orbitals and both spin up, so the last two columns are φ_2pxα and φ_2pyα."
+  },
+  {
+    "id": "pc8-slater-one-configuration",
+    "type": "multiple-choice",
+    "prompt": "What does a single Slater determinant correspond to?",
+    "choices": [
+      {
+        "text": "A single electron configuration diagram",
+        "correct": true
+      },
+      {
+        "text": "A single electron in a single orbital",
+        "why": "One electron needs no determinant. A determinant builds an antisymmetric function for all N electrons of one configuration."
+      },
+      {
+        "text": "All possible configurations of the atom at once",
+        "why": "One determinant covers just one configuration diagram; states that mix configurations need combinations of determinants."
+      },
+      {
+        "text": "A single energy level of the hydrogen atom",
+        "why": "Hydrogen has one electron and needs no determinant. A Slater determinant matches one electron configuration diagram of a multi-electron atom."
+      }
+    ],
+    "explanation": "Each Slater determinant corresponds to one electron configuration diagram, with one column for each occupied spin-orbital. Wavefunctions that mix configurations, such as ψ_1 and ψ_3 for excited helium, are combinations of determinants."
+  },
+  {
+    "id": "pc8-slater-no-electron-own-orbital",
+    "type": "multiple-choice",
+    "prompt": "What does an antisymmetrized wavefunction such as a Slater determinant mean for the picture of electrons in spin-orbitals?",
+    "choices": [
+      {
+        "text": "No electron belongs to one particular spin-orbital",
+        "correct": true
+      },
+      {
+        "text": "Each electron stays in its own assigned spin-orbital",
+        "why": "That picture needs labels that can't be measured. Because electrons are indistinguishable, each electron's probability is spread across every spin-orbital."
+      },
+      {
+        "text": "Each spin-orbital holds two electrons' worth of charge",
+        "why": "The total charge described by one spin-orbital cannot exceed one electron's worth. Each electron contributes part of it."
+      },
+      {
+        "text": "Electrons with spin α never enter β spin-orbitals",
+        "why": "In a determinant every electron appears in every column, α and β alike. No electron can be assigned to particular spin-orbitals."
+      }
+    ],
+    "explanation": "Because electrons are indistinguishable, we cannot picture specific electrons assigned to specific spin-orbitals. Each electron's probability is spread across every spin-orbital; the total charge in one spin-orbital is still one electron's worth, with each electron contributing a portion."
+  }
+]

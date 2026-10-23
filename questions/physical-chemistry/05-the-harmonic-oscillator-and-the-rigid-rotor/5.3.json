@@ -1,0 +1,576 @@
+[
+  {
+    "id": "pc5-vibration-why-important",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is one reason the quantum harmonic oscillator is such an important model system?",
+    "choices": [
+      {
+        "text": "It is one of the few systems with an exact, analytical solution",
+        "correct": true
+      },
+      {
+        "text": "It predicts exactly when a chemical bond will break",
+        "why": "The harmonic oscillator can't describe bond breaking at all: its potential keeps rising however far the bond is stretched."
+      },
+      {
+        "text": "Its levels crowd together at high energy, as in real molecules",
+        "why": "Harmonic oscillator levels are equally spaced at every energy. Real levels crowd together because real potentials are anharmonic."
+      },
+      {
+        "text": "It is the only potential whose energies are quantized",
+        "why": "Other systems, such as the particle in a box and the Morse oscillator, also have quantized energies. The harmonic oscillator stands out because it can be solved exactly."
+      }
+    ],
+    "explanation": "The harmonic oscillator is one of the few quantum systems that can be solved exactly; most other potentials need approximations or numerical methods. It is also useful because almost any potential curve looks harmonic near a stable equilibrium point."
+  },
+  {
+    "id": "pc5-vibration-taylor-near-x0",
+    "type": "multiple-choice",
+    "prompt": "The section expands a molecule's potential energy V(x) as a Taylor series about x_0 and keeps only the first few terms. For which bond lengths is this approximation good?",
+    "choices": [
+      {
+        "text": "Only for x near x_0, the equilibrium bond length",
+        "correct": true
+      },
+      {
+        "text": "For every x, from 0 all the way out to ∞",
+        "why": "A few terms of a Taylor series only work close to the point they expand about. A potential that works for all x, like the Morse potential, needs a different form."
+      },
+      {
+        "text": "Only for x far from x_0, where the bond is nearly broken",
+        "why": "It's the other way round: the expansion is built around x_0, so it works best near x_0 and gets worse far from it."
+      },
+      {
+        "text": "Only for bond lengths shorter than x_0",
+        "why": "The expansion works on both sides of x_0, as long as x stays close to x_0."
+      }
+    ],
+    "explanation": "The section notes that the expansion is only good for x near x_0, the equilibrium bond distance. This is why the harmonic oscillator, which keeps just the (x − x_0)^2 term, describes vibrations well only for small displacements."
+  },
+  {
+    "id": "pc5-vibration-second-derivative-term",
+    "type": "multiple-choice",
+    "prompt": "In the Taylor series for V(x), which term gives the harmonic potential (1/2)k(x − x_0)^2?",
+    "choices": [
+      {
+        "text": "The term with the second derivative, d^2V/dx^2",
+        "correct": true
+      },
+      {
+        "text": "The term with the first derivative, dV/dx",
+        "why": "The first-derivative term is proportional to (x − x_0), not its square. The harmonic term is the one with (x − x_0)^2, which carries the second derivative."
+      },
+      {
+        "text": "The constant term, V(x_0)",
+        "why": "V(x_0) is just a constant, which the section sets to zero. The harmonic term is the one in (x − x_0)^2, with the second derivative."
+      },
+      {
+        "text": "The term with the third derivative, d^3V/dx^3",
+        "why": "The third-derivative term goes as (x − x_0)^3; it is the first anharmonic (cubic) term, with constant γ."
+      }
+    ],
+    "explanation": "The n = 2 term of the series is 1/(2!) × (d^2V/dx^2)(x − x_0)^2. The second derivative at x_0 is the force constant k, so this term is (1/2)k(x − x_0)^2, the harmonic potential."
+  },
+  {
+    "id": "pc5-vibration-zero-of-energy",
+    "type": "multiple-choice",
+    "prompt": "The first term of the Taylor series is V(x_0), the potential energy at the equilibrium bond length. What value does the section give it when it writes V(x) = (1/2)kx^2 + (1/6)γx^3?",
+    "choices": [
+      {
+        "text": "Zero, at the bottom of the well",
+        "correct": true
+      },
+      {
+        "text": "The dissociation energy D of the bond",
+        "why": "D is the energy far from x_0, where the bond is broken. At x_0, the bottom of the well, the section sets V(x_0) = 0."
+      },
+      {
+        "text": "The zero-point energy, (1/2)hν",
+        "why": "The zero-point energy is the energy of the lowest vibrational level, which lies above the bottom of the well. The potential itself at x_0 is set to zero."
+      },
+      {
+        "text": "The force constant k of the bond",
+        "why": "k is the second derivative of V at x_0, not the value of V there. The section sets V(x_0) = 0."
+      }
+    ],
+    "explanation": "The section sets V(x_0) = 0, so energies are measured from the bottom of the potential well. That is why the rewritten potential, V(x) = (1/2)kx^2 + (1/6)γx^3, has no constant term."
+  },
+  {
+    "id": "pc5-vibration-harmonic-term-energy",
+    "type": "numeric",
+    "prompt": "In the Taylor series, the harmonic term is (1/2)k(x − x_0)^2, where k is the second derivative of V at x_0. For k = 480 N/m and a stretch of x − x_0 = 1.0 × 10^−11 m, what is this term, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 2.4e-20,
+    "unit": "J",
+    "explanation": "(1/2)k(x − x_0)^2 = 0.5 × 480 N/m × (1.0 × 10^−11 m)^2 = 240 N/m × 1.0 × 10^−22 m^2 = 2.4 × 10^−20 J."
+  },
+  {
+    "id": "pc5-vibration-gamma",
+    "type": "multiple-choice",
+    "prompt": "The section shortens the potential to V(x) = (1/2)kx^2 + (1/6)γx^3. What is γ?",
+    "choices": [
+      {
+        "text": "The coefficient of the first anharmonic term",
+        "correct": true
+      },
+      {
+        "text": "The harmonic force constant of the bond",
+        "why": "That is k, the constant in the (1/2)kx^2 term. γ multiplies x^3, the first anharmonic term."
+      },
+      {
+        "text": "The vibrational frequency of the bond",
+        "why": "γ is not a frequency; it is the coefficient of the cubic term, which describes how the potential departs from a parabola."
+      },
+      {
+        "text": "The energy needed to break the bond",
+        "why": "The dissociation energy is D in the Morse potential. γ is the coefficient of the cubic, first anharmonic, term."
+      }
+    ],
+    "explanation": "In V(x) = (1/2)kx^2 + (1/6)γx^3, k is the harmonic force constant and γ is the first anharmonic (cubic) term. Setting γ = 0 gives back the pure harmonic oscillator."
+  },
+  {
+    "id": "pc5-vibration-anharmonic-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define anharmonic oscillation?",
+    "choices": [
+      {
+        "text": "A restoring force no longer proportional to displacement",
+        "correct": true
+      },
+      {
+        "text": "A restoring force that always equals exactly −kx",
+        "why": "A force of exactly −kx is Hooke's law, which gives harmonic motion. Anharmonic means the force is no longer proportional to the displacement."
+      },
+      {
+        "text": "A vibration with no restoring force of any kind",
+        "why": "An anharmonic oscillator still has a restoring force; it just isn't proportional to the displacement."
+      },
+      {
+        "text": "A vibration whose energy levels are exactly evenly spaced",
+        "why": "Equal spacing is the mark of the harmonic oscillator. Anharmonic levels get closer together at high energy."
+      }
+    ],
+    "explanation": "Anharmonic oscillation is any deviation from simple harmonic motion: the restoring force is no longer proportional to the displacement, as it is in Hooke's law, F = −kx. Real bonds are anharmonic, especially when stretched far."
+  },
+  {
+    "id": "pc5-vibration-cubic-helps",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when does adding the cubic term to the harmonic potential improve the description of a vibration the most?",
+    "choices": [
+      {
+        "text": "At larger displacements from equilibrium",
+        "correct": true
+      },
+      {
+        "text": "Exactly at the equilibrium bond length",
+        "why": "At x_0 the displacement is zero, so the cubic term (1/6)γx^3 is zero too and changes nothing. It matters most far from equilibrium."
+      },
+      {
+        "text": "Only for very small displacements",
+        "why": "For small x, x^3 is tiny compared with x^2, so the harmonic term already works well there. The cubic term helps most at larger displacements."
+      },
+      {
+        "text": "Only when the molecule is in its v = 0 level",
+        "why": "The v = 0 level stays close to equilibrium, where the harmonic potential is already good. The cubic term helps most where the bond is stretched far."
+      }
+    ],
+    "explanation": "Adding the cubic term improves the harmonic approximation especially at greater displacement from equilibrium, where the true potential bends away from a parabola. Near equilibrium the harmonic term alone is already a good fit."
+  },
+  {
+    "id": "pc5-vibration-cubic-doubling",
+    "type": "numeric",
+    "prompt": "In V(x) = (1/2)kx^2 + (1/6)γx^3, the cubic term grows as x^3. If the displacement x is doubled, by what factor does the cubic term grow?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "(1/6)γ(2x)^3 = 2^3 × (1/6)γx^3 = 8 × (1/6)γx^3, so the cubic term grows by a factor of 8, while the harmonic term grows only by 2^2 = 4. That is why the cubic correction matters most at large displacements."
+  },
+  {
+    "id": "pc5-vibration-higher-terms",
+    "type": "multiple-choice",
+    "prompt": "How can the Taylor-series description of a molecular potential be improved beyond the cubic term?",
+    "choices": [
+      {
+        "text": "By adding higher-order terms, such as quartic ones",
+        "correct": true
+      },
+      {
+        "text": "By dropping the cubic term and keeping (1/2)kx^2",
+        "why": "Dropping the cubic term takes you back to the harmonic oscillator, which is less accurate. Adding more terms improves the fit."
+      },
+      {
+        "text": "By making the force constant k larger",
+        "why": "Changing k only makes the parabola narrower; it is still a parabola. The fit improves by adding higher-order terms, like x^4."
+      },
+      {
+        "text": "By using the series only far from x_0",
+        "why": "The Taylor series works best near x_0, not far from it. The fit improves by adding more terms, such as quartic ones."
+      }
+    ],
+    "explanation": "Adding higher-order anharmonic terms, like quartic (x^4) terms, improves the approximation further. For diatomics such as H_2, N_2 and O_2, experimental potentials have been determined with terms up to n < 10."
+  },
+  {
+    "id": "pc5-vibration-anharmonicity-constants",
+    "type": "multiple-choice",
+    "prompt": "Real vibrational energies are E_v = (v + 1/2)ν̃_e − (v + 1/2)^2 ν̃_e x_e + (v + 1/2)^3 ν̃_e y_e + (higher terms). What are x_e and y_e?",
+    "choices": [
+      {
+        "text": "The first and second anharmonicity constants",
+        "correct": true
+      },
+      {
+        "text": "The positions of the two atoms at equilibrium",
+        "why": "x_e and y_e look like coordinates, but they are constants that correct the harmonic energies: the first and second anharmonicity constants."
+      },
+      {
+        "text": "The first and second force constants of the bond",
+        "why": "The force constant k sets the harmonic wavenumber ν̃_e. x_e and y_e are anharmonicity constants that come from the higher terms of the potential."
+      },
+      {
+        "text": "Two more vibrational quantum numbers",
+        "why": "The only quantum number in the formula is v. x_e and y_e are constants, the first and second anharmonicity constants."
+      }
+    ],
+    "explanation": "x_e and y_e are the first and second anharmonicity constants. They come from the anharmonic terms of the potential beyond the quadratic one; ν̃_e is the vibrational wavenumber."
+  },
+  {
+    "id": "pc5-vibration-harmonic-term-only",
+    "type": "multiple-choice",
+    "prompt": "Real vibrational energies are E_v = (v + 1/2)ν̃_e − (v + 1/2)^2 ν̃_e x_e + (higher terms). Which part of this does the pure harmonic oscillator give?",
+    "choices": [
+      {
+        "text": "Only the first term, (v + 1/2)ν̃_e",
+        "correct": true
+      },
+      {
+        "text": "Only the second term, −(v + 1/2)^2 ν̃_e x_e",
+        "why": "The second term contains the anharmonicity constant x_e, which comes from the anharmonic terms of the potential. The harmonic oscillator gives only (v + 1/2)ν̃_e."
+      },
+      {
+        "text": "All of the terms, including the higher ones",
+        "why": "The terms with x_e and y_e come from the potential's anharmonic terms beyond (1/2)kx^2, which the harmonic oscillator leaves out."
+      },
+      {
+        "text": "None of them, as it has no energy levels",
+        "why": "The harmonic oscillator has quantized levels, E_v = (v + 1/2)hν, which in wavenumbers is the first term, (v + 1/2)ν̃_e."
+      }
+    ],
+    "explanation": "The harmonic oscillator alone gives E_v = (v + 1/2)ν̃_e, a set of equally spaced levels. The terms with the anharmonicity constants x_e and y_e come from the anharmonic terms of the potential and correct these levels."
+  },
+  {
+    "id": "pc5-vibration-anharmonic-e1",
+    "type": "numeric",
+    "prompt": "Keeping two terms, the vibrational energies of a real molecule are E_v = (v + 1/2)ν̃_e − (v + 1/2)^2 ν̃_e x_e. For ν̃_e = 3000 cm^−1 and ν̃_e x_e = 50 cm^−1, what is E_1, the energy of the v = 1 level, in cm^−1?",
+    "answer": 4387.5,
+    "explanation": "For v = 1, v + 1/2 = 1.5, so E_1 = 1.5 × 3000 cm^−1 − 1.5^2 × 50 cm^−1 = 4500 cm^−1 − 2.25 × 50 cm^−1 = 4500 − 112.5 = 4387.5 cm^−1. The anharmonic term lowers the level below its harmonic value of 4500 cm^−1."
+  },
+  {
+    "id": "pc5-vibration-spacing-high-v",
+    "type": "multiple-choice",
+    "prompt": "For a real, anharmonic molecular potential, how does the spacing between vibrational levels change at high excitation?",
+    "choices": [
+      {
+        "text": "It gets smaller, as the potential is less confining than a parabola",
+        "correct": true
+      },
+      {
+        "text": "It stays the same, as for a harmonic oscillator",
+        "why": "Equal spacing holds only for the parabola of the harmonic oscillator. A real potential is wider at high energy, so the levels crowd together."
+      },
+      {
+        "text": "It gets larger, because the potential is steeper than a parabola",
+        "why": "At high energy a real potential flattens out toward dissociation, so it is less confining than a parabola, not steeper; the levels get closer."
+      },
+      {
+        "text": "It suddenly drops to zero just above the v = 1 level",
+        "why": "The spacing shrinks gradually as v increases, not all at once. The levels crowd together as the energy approaches dissociation."
+      }
+    ],
+    "explanation": "A real potential is less confining than the parabola used in the harmonic oscillator, so its energy levels become less widely spaced at high excitation. Near the top of the well the levels crowd together."
+  },
+  {
+    "id": "pc5-vibration-hcl-low-energy",
+    "type": "multiple-choice",
+    "prompt": "The vibration of an HCl molecule is really anharmonic. According to the section, when can it be approximated as a harmonic oscillator?",
+    "choices": [
+      {
+        "text": "At low energies, near the bottom of the well",
+        "correct": true
+      },
+      {
+        "text": "Only at energies close to dissociation",
+        "why": "Near dissociation the real potential flattens out and differs most from a parabola. The harmonic picture works at low energies."
+      },
+      {
+        "text": "At every energy, all the way up to dissociation",
+        "why": "The harmonic oscillator can't describe dissociation and misses the crowding of levels at high energy. It is good only at low energies."
+      },
+      {
+        "text": "Never, since HCl has no vibrational levels",
+        "why": "HCl does have vibrational levels, E_0, E_1, E_2 and so on. At low energies they are close to the evenly spaced harmonic levels."
+      }
+    ],
+    "explanation": "The section describes the HCl vibration as really an anharmonic oscillator that can be approximated as a harmonic oscillator at low energies. Near the bottom of the well, the real potential is close to a parabola."
+  },
+  {
+    "id": "pc5-vibration-harmonic-same-line",
+    "type": "numeric",
+    "prompt": "In the harmonic oscillator model the vibrational levels are equally spaced. If the model puts the v = 0 → 1 transition at 2900 cm^−1, at what wavenumber, in cm^−1, does it put the v = 3 → 4 transition?",
+    "answer": 2900.0,
+    "explanation": "Every pair of neighboring harmonic levels is separated by the same energy, so the v = 3 → 4 transition is also at 2900 cm^−1. This is why the harmonic model predicts a single-line spectrum, while real molecules show extra lines."
+  },
+  {
+    "id": "pc5-vibration-overtones",
+    "type": "multiple-choice",
+    "prompt": "The harmonic oscillator predicts a single line in a vibrational spectrum, but experiments often show many lines. What does the section call these extra lines?",
+    "choices": [
+      {
+        "text": "Overtones",
+        "correct": true
+      },
+      {
+        "text": "Nodes",
+        "why": "Nodes are points where a wavefunction is zero, not spectral lines. The extra lines are called overtones."
+      },
+      {
+        "text": "Zero-point lines",
+        "why": "Zero-point energy is the energy of the v = 0 level, not a kind of spectral line. The extra lines are called overtones."
+      },
+      {
+        "text": "Turning points",
+        "why": "Turning points are where a classical oscillator stops and turns around. The extra lines are called overtones."
+      }
+    ],
+    "explanation": "Because harmonic oscillator levels are equally spaced, every transition has the same frequency and the model predicts a single line. Real spectra show additional lines, called overtones, which the harmonic model can't explain."
+  },
+  {
+    "id": "pc5-vibration-no-dissociation",
+    "type": "multiple-choice",
+    "prompt": "Why can a harmonic oscillator bond never break, however much energy it is given?",
+    "choices": [
+      {
+        "text": "Its potential rises forever, so a restoring force always pulls back",
+        "correct": true
+      },
+      {
+        "text": "Its force constant k grows larger as the bond stretches",
+        "why": "k is a constant in the harmonic model. The bond can't break because the parabola (1/2)kx^2 rises forever, so there is always a restoring force."
+      },
+      {
+        "text": "Its energy levels stop at a top level just below dissociation",
+        "why": "Harmonic oscillator levels go on forever, v = 0, 1, 2 and so on, equally spaced. The bond can't break because the potential never levels off."
+      },
+      {
+        "text": "Its zero-point energy is too small to break the bond",
+        "why": "Even with any amount of extra energy the bond can't break, since the parabolic potential never levels off. The zero-point energy has nothing to do with it."
+      }
+    ],
+    "explanation": "The harmonic potential (1/2)kx^2 keeps rising as the bond stretches, so there is always a restoring force. The model does not predict bond dissociation: the bond can't break, no matter how much energy is put in."
+  },
+  {
+    "id": "pc5-vibration-patching-up",
+    "type": "multiple-choice",
+    "prompt": "What does the section describe as a more powerful approach than \"patching up\" the harmonic oscillator with anharmonic corrections?",
+    "choices": [
+      {
+        "text": "Using a different potential, such as the Morse potential",
+        "correct": true
+      },
+      {
+        "text": "Making the force constant k depend on the energy",
+        "why": "The section doesn't change k. Instead of patching the harmonic model, it adopts a different potential: the Morse potential."
+      },
+      {
+        "text": "Dropping the potential energy from the Hamiltonian",
+        "why": "Without a potential there would be no bond at all. The better approach is to use a potential with the right shape, like the Morse potential."
+      },
+      {
+        "text": "Treating the molecule with classical mechanics",
+        "why": "Classical mechanics can't give quantized vibrational levels. The section's better approach is to choose a different potential, the Morse potential."
+      }
+    ],
+    "explanation": "Rather than adding more and more anharmonic correction terms, one can start from a different potential V(x) with the right overall shape. The Morse potential is one such choice."
+  },
+  {
+    "id": "pc5-vibration-morse-better",
+    "type": "multiple-choice",
+    "prompt": "Why is the Morse potential a better description of molecular vibrations than the harmonic oscillator?",
+    "choices": [
+      {
+        "text": "It includes bond breaking and the anharmonicity of real bonds",
+        "correct": true
+      },
+      {
+        "text": "It keeps the vibrational levels exactly equally spaced",
+        "why": "Equal spacing is the harmonic oscillator's weakness. In the Morse potential the spacing shrinks as the energy approaches dissociation."
+      },
+      {
+        "text": "It removes the zero-point energy of the v = 0 level",
+        "why": "A Morse oscillator still has a zero-point energy; that is why D_e is larger than D_0. Its advantage is that it includes bond breaking and anharmonicity."
+      },
+      {
+        "text": "It uses a larger force constant than the harmonic model",
+        "why": "Morse's advantage is not a bigger force constant but a different shape: the potential levels off at D, so the bond can break."
+      }
+    ],
+    "explanation": "The Morse potential, named after Philip M. Morse, explicitly includes bond breaking and the anharmonicity of real bonds. That makes it a better model than the harmonic oscillator, especially at high energy."
+  },
+  {
+    "id": "pc5-vibration-morse-range",
+    "type": "multiple-choice",
+    "prompt": "For which range of bond lengths does the section say the Morse potential is a good approximation?",
+    "choices": [
+      {
+        "text": "For all x from 0 to ∞, not just near x_0",
+        "correct": true
+      },
+      {
+        "text": "Only in a small region around x_0",
+        "why": "That is the limit of the harmonic and Taylor-series potentials. The Morse potential is best when you want one formula for all x."
+      },
+      {
+        "text": "Only for bond lengths larger than x_0",
+        "why": "The Morse potential also describes compressed bonds, where its short-range repulsion rises steeply. It works for all x from 0 to ∞."
+      },
+      {
+        "text": "Only at very large x, after the bond has broken",
+        "why": "The Morse potential describes the whole curve, from compressed bonds through x_0 out to dissociation."
+      }
+    ],
+    "explanation": "The Morse potential is best when you want a general formula for all x from 0 to ∞, not just the local region around x_0. It describes the well near x_0 and the leveling off at large x, where the bond breaks."
+  },
+  {
+    "id": "pc5-vibration-morse-large-x",
+    "type": "multiple-choice",
+    "prompt": "For the Morse potential V(x) = D(1 − e^(−βΔx))^2, with Δx = x − x_0, what value does V approach as x becomes very large?",
+    "choices": [
+      {
+        "text": "D, the dissociation energy",
+        "correct": true
+      },
+      {
+        "text": "Zero, the same as at x_0",
+        "why": "V is zero at x = x_0, where e^(−βΔx) = 1. As x grows, e^(−βΔx) goes to 0 and V goes to D."
+      },
+      {
+        "text": "Infinity, like the harmonic potential",
+        "why": "The harmonic potential rises forever, but the Morse potential levels off. As x → ∞, e^(−βΔx) → 0 and V → D."
+      },
+      {
+        "text": "−D, the bottom of the well",
+        "why": "In this form V is never negative: it is D times a square. Its minimum, 0, is at x_0, and it rises to D at large x."
+      }
+    ],
+    "explanation": "As x grows, e^(−βΔx) goes to zero, so V → D(1 − 0)^2 = D. The potential levels off at the dissociation energy: once the atoms are far apart, the bond is broken and they no longer pull each other back."
+  },
+  {
+    "id": "pc5-vibration-morse-value",
+    "type": "numeric",
+    "prompt": "The Morse potential is V(x) = D(1 − e^(−βΔx))^2, where Δx = x − x_0. A bond has D = 4.0 eV and is stretched so far that e^(−βΔx) = 0.50. What is V there, in eV?",
+    "answer": 1.0,
+    "unit": "eV",
+    "explanation": "V = D(1 − e^(−βΔx))^2 = 4.0 eV × (1 − 0.50)^2 = 4.0 eV × 0.25 = 1.0 eV. Stretching further makes e^(−βΔx) smaller, and V rises toward D = 4.0 eV."
+  },
+  {
+    "id": "pc5-vibration-morse-two-parts",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the Morse potential combines which two parts?",
+    "choices": [
+      {
+        "text": "A short-range repulsion and a long-range attraction",
+        "correct": true
+      },
+      {
+        "text": "A short-range attraction and a long-range repulsion",
+        "why": "It is the other way round: atoms pushed close together repel, and atoms pulled apart attract until the bond breaks."
+      },
+      {
+        "text": "A harmonic term and a cubic term",
+        "why": "Those are the first two terms of the Taylor-series potential, (1/2)kx^2 + (1/6)γx^3. The Morse potential combines short-range repulsion with long-range attraction."
+      },
+      {
+        "text": "A kinetic energy term and a potential energy term",
+        "why": "Those are the two parts of the Hamiltonian, Ĥ = T̂ + V̂. The Morse potential is only the V̂ part; it combines repulsion at small r with attraction at large r."
+      }
+    ],
+    "explanation": "The Morse curve rises steeply at small r, where the atoms repel, and levels off at large r, where the attraction holding the atoms together fades. It is the combination of a short-range repulsion and a long-range attraction."
+  },
+  {
+    "id": "pc5-vibration-de-d0",
+    "type": "multiple-choice",
+    "prompt": "Why is the well depth D_e of a molecular potential larger than D_0, the energy actually needed to break the bond?",
+    "choices": [
+      {
+        "text": "Even at v = 0 the molecule has zero-point energy",
+        "correct": true
+      },
+      {
+        "text": "D_0 is measured from the top of the well, not the bottom",
+        "why": "Both are measured up to the dissociation limit. D_e starts at the bottom of the well and D_0 at the v = 0 level, which sits above the bottom by the zero-point energy."
+      },
+      {
+        "text": "Some energy is always lost as heat when a bond breaks",
+        "why": "The difference has nothing to do with heat. D_0 is smaller because the molecule already has zero-point energy in its v = 0 level."
+      },
+      {
+        "text": "The cubic term in the potential makes the well deeper",
+        "why": "The difference between D_e and D_0 is not about the shape of the well. It is the zero-point energy of the v = 0 level."
+      }
+    ],
+    "explanation": "D_e is measured from the bottom of the well, but a molecule can never sit there: its lowest level, v = 0, lies above the bottom by the zero-point energy. So the energy needed to break the bond is D_0 = D_e − (zero-point energy)."
+  },
+  {
+    "id": "pc5-vibration-d0-h2",
+    "type": "numeric",
+    "prompt": "For H_2, the well depth is D_e = 4.75 eV and the zero-point energy is 0.27 eV. Using D_0 = D_e − (zero-point energy), what is D_0, the energy needed to break the bond starting from the v = 0 level, in eV?",
+    "answer": 4.48,
+    "unit": "eV",
+    "explanation": "D_0 = D_e − (zero-point energy) = 4.75 eV − 0.27 eV = 4.48 eV. The bond takes less energy to break than the full well depth, because the molecule already sits 0.27 eV above the bottom of the well."
+  },
+  {
+    "id": "pc5-vibration-morse-hamiltonian",
+    "type": "multiple-choice",
+    "prompt": "In the Hamiltonian Ĥ = T̂ + V̂ for a Morse oscillator, which part is different from the harmonic oscillator's Hamiltonian?",
+    "choices": [
+      {
+        "text": "The potential energy V̂",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy T̂",
+        "why": "The kinetic energy operator is the same for any one-dimensional potential. Only the potential energy changes, from (1/2)kx^2 to the Morse form."
+      },
+      {
+        "text": "Both T̂ and V̂",
+        "why": "Only V̂ depends on the potential. The kinetic energy operator is the same for every one-dimensional problem."
+      },
+      {
+        "text": "Neither; only the atoms' masses",
+        "why": "Switching to a Morse oscillator changes the potential, not the masses. V̂ becomes the Morse potential instead of (1/2)kx^2."
+      }
+    ],
+    "explanation": "In Ĥ = T̂ + V̂, the kinetic energy operator T̂ is the same for any potential. Switching to a Morse oscillator only replaces the potential energy (1/2)kx^2 with D(1 − e^(−βΔx))^2, where Δx = x − x_0."
+  },
+  {
+    "id": "pc5-vibration-morse-solvable",
+    "type": "multiple-choice",
+    "prompt": "According to the section, can the Schrödinger equation with the Morse potential be solved analytically?",
+    "choices": [
+      {
+        "text": "Yes, although it is not trivial",
+        "correct": true
+      },
+      {
+        "text": "No, only the harmonic oscillator can be solved exactly",
+        "why": "The section says the Morse problem is not trivial but can be done analytically. The harmonic oscillator is one of the few such systems, not the only one."
+      },
+      {
+        "text": "No, because the Morse potential has no minimum",
+        "why": "The Morse potential does have a minimum, at x_0. And its Schrödinger equation can be solved analytically."
+      },
+      {
+        "text": "Yes, and its levels are equally spaced like harmonic ones",
+        "why": "It can be solved, but its levels are not equally spaced: the spacing shrinks as the energy approaches dissociation."
+      }
+    ],
+    "explanation": "Solving the Schrödinger equation with the Morse potential is not trivial, but it can be done analytically. The section does not use the Morse solutions further."
+  }
+]

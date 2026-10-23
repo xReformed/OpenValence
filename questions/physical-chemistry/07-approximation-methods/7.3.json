@@ -1,0 +1,600 @@
+[
+  {
+    "id": "pc7-trial-why-sum",
+    "type": "multiple-choice",
+    "prompt": "For helium and other multi-electron atoms, why does the section build each one-electron function from a sum of exponentials instead of one hydrogen-like exponential?",
+    "choices": [
+      {
+        "text": "Their radial density isn't a simple exponential",
+        "correct": true
+      },
+      {
+        "text": "A single exponential can't be normalized for them",
+        "why": "Any decaying exponential can be normalized. The trouble is the shape: in these atoms the radial density does not fall off as one simple exponential."
+      },
+      {
+        "text": "Hydrogen-like orbitals don't decay with distance",
+        "why": "Hydrogen's radial function does decay, exponentially. In multi-electron atoms the decay is not a simple exponential, so a sum of exponentials is used."
+      },
+      {
+        "text": "A sum makes every integral easier to evaluate",
+        "why": "More terms mean more integrals, not easier ones. The sum is used because one exponential has the wrong shape for a multi-electron atom."
+      }
+    ],
+    "explanation": "For hydrogen, the radial function decays as a simple exponential. In multi-electron atoms, electron–electron interactions change how the radial distribution falls off with distance, so more flexible one-electron functions, sums of exponentials, are needed."
+  },
+  {
+    "id": "pc7-trial-coefficients",
+    "type": "multiple-choice",
+    "prompt": "In the one-electron function φ_1s(r) = Σ_j c_j exp(−ζ_j r/a_0), what do the coefficients c_j do?",
+    "choices": [
+      {
+        "text": "They set how much each exponential term counts",
+        "correct": true
+      },
+      {
+        "text": "They set how fast each exponential term decays",
+        "why": "That is the job of the ζ_j in each exponent. The c_j weight the terms in the sum."
+      },
+      {
+        "text": "They count the electrons in the orbital",
+        "why": "φ_1s is a function for one electron. The c_j are adjustable weights for the exponential terms."
+      },
+      {
+        "text": "They are fixed constants that never change",
+        "why": "The c_j are adjustable: varying them to lower the energy is the linear variational method."
+      }
+    ],
+    "explanation": "The linear combination lets each exponential be weighted through its own adjustable coefficient c_j. Each term also has its own ζ_j, which sets how fast that term decays."
+  },
+  {
+    "id": "pc7-trial-zeta-decay",
+    "type": "multiple-choice",
+    "prompt": "In φ_1s(r) = Σ_j c_j exp(−ζ_j r/a_0), what does the parameter ζ_j of a term control?",
+    "choices": [
+      {
+        "text": "How quickly that term decays with distance",
+        "correct": true
+      },
+      {
+        "text": "How much that term counts in the sum",
+        "why": "Weighting the terms is the job of the coefficients c_j. ζ_j sets each term's rate of decay."
+      },
+      {
+        "text": "The number of radial nodes in that term",
+        "why": "A simple decaying exponential has no nodes at all. ζ_j sets how fast the term falls off with r."
+      },
+      {
+        "text": "The energy level n that the term belongs to",
+        "why": "All the terms build one orbital, φ_1s. ζ_j is a decay rate that differs from term to term."
+      }
+    ],
+    "explanation": "Each exponential term has a different rate of decay, set by its ζ_j. A term with a large ζ_j falls off quickly with distance from the nucleus; one with a small ζ_j falls off slowly."
+  },
+  {
+    "id": "pc7-trial-index-j",
+    "type": "multiple-choice",
+    "prompt": "In φ_1s(r) = Σ_j c_j exp(−ζ_j r/a_0), what does the index j count?",
+    "choices": [
+      {
+        "text": "The terms of the sum",
+        "correct": true
+      },
+      {
+        "text": "The electrons in the atom",
+        "why": "φ_1s is a single-electron function of one electron's distance r. j just labels the exponential terms being added."
+      },
+      {
+        "text": "The atoms in the molecule",
+        "why": "Nothing here refers to other atoms. j labels the exponential terms in the sum, each with its own c_j and ζ_j."
+      },
+      {
+        "text": "The energy levels of the atom",
+        "why": "The whole sum describes one orbital, the 1s. j labels the terms that are added to build it."
+      }
+    ],
+    "explanation": "j runs over the exponential terms of the linear combination. Each term has its own coefficient c_j and its own ζ_j, while r, the one electron's distance from the nucleus, is the same in every term."
+  },
+  {
+    "id": "pc7-trial-basis-name",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the exponential functions exp(−ζ_j r/a_0) that are added up to make φ_1s?",
+    "choices": [
+      {
+        "text": "Basis functions",
+        "correct": true
+      },
+      {
+        "text": "Spherical harmonics",
+        "why": "Spherical harmonics describe the angular part of orbitals. Functions combined in a sum to build an orbital are called basis functions."
+      },
+      {
+        "text": "Eigenfunctions of the atom's Ĥ",
+        "why": "They are not solutions of the multi-electron Schrödinger equation. They are building blocks, called basis functions, combined to approximate an orbital."
+      },
+      {
+        "text": "Multi-electron wavefunctions",
+        "why": "Each depends on one electron's distance only. They are basis functions, used to build single-electron orbitals."
+      }
+    ],
+    "explanation": "Basis functions are the functions used in linear combinations to produce single-electron orbitals. Those orbitals in turn are combined to create product multi-electron wavefunctions."
+  },
+  {
+    "id": "pc7-trial-build-order",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what are the single-electron orbitals built from basis functions then used for?",
+    "choices": [
+      {
+        "text": "They combine into product multi-electron wavefunctions",
+        "correct": true
+      },
+      {
+        "text": "They are used in turn to build new, better basis functions",
+        "why": "It runs the other way: basis functions build the orbitals. The orbitals then combine into multi-electron wavefunctions."
+      },
+      {
+        "text": "They give the exact energy of the atom directly",
+        "why": "They are approximate one-electron functions. They are combined into product multi-electron wavefunctions for variational calculations."
+      },
+      {
+        "text": "They are used only to describe the hydrogen atom",
+        "why": "They are meant for multi-electron atoms. Products of these orbitals make the multi-electron wavefunctions."
+      }
+    ],
+    "explanation": "The chain runs: basis functions → single-electron orbitals → product multi-electron wavefunctions. These are then used in variational calculations."
+  },
+  {
+    "id": "pc7-trial-sto-today",
+    "type": "multiple-choice",
+    "prompt": "What role do Slater-type orbitals (STOs) play in most quantum chemistry calculations today?",
+    "choices": [
+      {
+        "text": "Faster basis functions are often fitted to them",
+        "correct": true
+      },
+      {
+        "text": "They are the basis functions in nearly every calculation",
+        "why": "They were originally the most popular, but today STOs are not used in most calculations. More efficient basis functions are often fitted to them."
+      },
+      {
+        "text": "They are judged wrong and no longer used at all",
+        "why": "STOs still serve as targets: more computationally efficient basis functions are often fitted to them."
+      },
+      {
+        "text": "They are used only for hydrogen",
+        "why": "Table 7.3.1 gives STO exponents for atoms from H to Ne. Today STOs mainly serve as the functions that faster basis functions are fitted to."
+      }
+    ],
+    "explanation": "STOs were originally the most popular basis functions, but they are not used in most quantum chemistry calculations today. They are often the functions to which more computationally efficient basis functions are fitted."
+  },
+  {
+    "id": "pc7-trial-several-zetas",
+    "type": "multiple-choice",
+    "prompt": "Physically, each ζ_j plays the part of an effective nuclear charge. Why use several different ζ values in one orbital?",
+    "choices": [
+      {
+        "text": "So Z_eff can vary with the electron's distance",
+        "correct": true
+      },
+      {
+        "text": "So each electron in the atom can get its own ζ value",
+        "why": "The sum builds one orbital for one electron. Several ζ values let Z_eff change with that electron's distance from the nucleus."
+      },
+      {
+        "text": "So the nuclear charge itself can change",
+        "why": "The actual nuclear charge Z is fixed. What varies is the effective charge the electron feels, which depends on its distance from the nucleus."
+      },
+      {
+        "text": "So the orbital can have more nodes",
+        "why": "Adding decaying exponentials doesn't create nodes here. Different ζ values let Z_eff vary with r."
+      }
+    ],
+    "explanation": "The ζ_j parameters account for the effective nuclear charge, Z_eff. Using several of them in the linear combination lets Z_eff vary with the distance of the electron from the nucleus, which makes physical sense."
+  },
+  {
+    "id": "pc7-trial-zeff-direction",
+    "type": "multiple-choice",
+    "prompt": "How should the effective nuclear charge felt by an electron change as the electron moves farther from the nucleus?",
+    "choices": [
+      {
+        "text": "It falls from near Z to a much smaller value",
+        "correct": true
+      },
+      {
+        "text": "It rises from a small value up to Z",
+        "why": "It's the other way round. Close to the nucleus Z_eff is close to the actual charge Z; far away it is much smaller."
+      },
+      {
+        "text": "It stays equal to Z at every distance",
+        "why": "That would be true with no other electrons. Screening by the other electrons makes Z_eff much smaller far from the nucleus."
+      },
+      {
+        "text": "It falls to zero as soon as it leaves the nucleus",
+        "why": "Z_eff does get smaller with distance, but near the nucleus it stays close to Z. It doesn't vanish just outside the nucleus."
+      }
+    ],
+    "explanation": "When an electron is close to the nucleus, the effective nuclear charge should be close to the actual nuclear charge. When it is far from the nucleus, the effective nuclear charge should be much smaller."
+  },
+  {
+    "id": "pc7-trial-root-cause",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what ultimately makes a linear combination of exponentials necessary for multi-electron atoms?",
+    "choices": [
+      {
+        "text": "Electron–electron repulsion screening the nucleus",
+        "correct": true
+      },
+      {
+        "text": "The motion of the nucleus relative to the electrons",
+        "why": "The nucleus is treated as fixed. The need comes from electron–electron repulsion, which screens the nucleus from each electron."
+      },
+      {
+        "text": "The spin of the electrons",
+        "why": "Spin plays no part in this argument. The repulsion between electrons screens the nucleus, so Z_eff changes with distance."
+      },
+      {
+        "text": "The finite size of the nucleus",
+        "why": "The nucleus is treated as a point charge. The sum is needed because the other electrons screen the nucleus."
+      }
+    ],
+    "explanation": "The need for such a linear combination is a consequence of electron–electron repulsion and its effect of screening the nucleus for each electron, due to the presence of the other electrons."
+  },
+  {
+    "id": "pc7-trial-far-term",
+    "type": "multiple-choice",
+    "prompt": "Exercise 7.3.1 builds φ from three equally weighted terms with ζ = 1.0, 2.0 and 5.0. Which term mostly sets φ far from the nucleus?",
+    "choices": [
+      {
+        "text": "The ζ = 1.0 term",
+        "correct": true
+      },
+      {
+        "text": "The ζ = 5.0 term",
+        "why": "A large ζ means a rapid decay, so this term has died away at large r. The small-ζ term decays slowest and lasts longest."
+      },
+      {
+        "text": "The ζ = 2.0 term",
+        "why": "It decays faster than the ζ = 1.0 term. Far from the nucleus the slowest-decaying term, the one with the smallest ζ, is what is left."
+      },
+      {
+        "text": "All three count equally at every distance",
+        "why": "They have equal weights c_j but different decay rates. Far out, the terms with larger ζ have died away and the ζ = 1.0 term remains."
+      }
+    ],
+    "explanation": "A term with a small ζ decays slowly with distance; a term with a large ζ decays rapidly and does not contribute at large distances. So far from the nucleus the ζ = 1.0 term dominates."
+  },
+  {
+    "id": "pc7-trial-nonlinear-name",
+    "type": "multiple-choice",
+    "prompt": "Varying an exponent such as ζ is called the nonlinear variational method. Why nonlinear?",
+    "choices": [
+      {
+        "text": "The function and energy don't change linearly with ζ",
+        "correct": true
+      },
+      {
+        "text": "Its trial functions describe bent, not linear, molecules",
+        "why": "It has nothing to do with molecular shape. ζ sits inside the exponential, so changing it doesn't change φ or E linearly."
+      },
+      {
+        "text": "It uses no linear combinations of functions at all",
+        "why": "A function like φ_1s can be a linear combination and still contain ζ values to vary. \"Nonlinear\" refers to how φ and E depend on ζ."
+      },
+      {
+        "text": "It always gives a worse energy than the linear method",
+        "why": "The name says nothing about how good the energy is. ζ is part of the function, so φ and E don't change linearly with it."
+      }
+    ],
+    "explanation": "ζ is part of the wavefunction itself, inside the exponential, so the change in the function and in the energy caused by a change in ζ is not linear. That is why varying it is called the nonlinear variational method."
+  },
+  {
+    "id": "pc7-trial-linear-name",
+    "type": "multiple-choice",
+    "prompt": "In φ_1s(r) = Σ_j c_j exp(−ζ_j r/a_0), finding the best c_j by the variational method is called the linear variational method. Why linear?",
+    "choices": [
+      {
+        "text": "φ_1s depends linearly on the coefficients c_j",
+        "correct": true
+      },
+      {
+        "text": "The energy falls along a straight line as c_j changes",
+        "why": "The name is not about the shape of the energy curve. It is linear because φ_1s is a sum of fixed terms, each simply multiplied by its c_j."
+      },
+      {
+        "text": "Only one coefficient is varied at a time",
+        "why": "All the c_j can be varied together. \"Linear\" means φ_1s depends linearly on them."
+      },
+      {
+        "text": "The exponents ζ_j are varied along with the c_j",
+        "why": "Varying the ζ_j is the nonlinear method. In the linear method only the c_j change, and φ_1s depends linearly on them."
+      }
+    ],
+    "explanation": "φ_1s depends linearly on the coefficients c_j: each one just multiplies a fixed basis function. Varying them to minimize the energy is the linear variational method, which is usually much easier to carry out in practice."
+  },
+  {
+    "id": "pc7-trial-nonlinear-cost",
+    "type": "multiple-choice",
+    "prompt": "Why are nonlinear variational calculations so costly in computer time?",
+    "choices": [
+      {
+        "text": "Every change of a ζ means redoing all the integrals",
+        "correct": true
+      },
+      {
+        "text": "They must vary the coefficients c_j one at a time",
+        "why": "The coefficients belong to the linear method, where the integrals stay fixed. The cost comes from changing ζ, which forces all the integrals to be recalculated."
+      },
+      {
+        "text": "They need an exact solution of the Schrödinger equation first",
+        "why": "Variational calculations don't need an exact solution. They are costly because each new ζ changes the basis functions, so every integral must be recalculated."
+      },
+      {
+        "text": "Their energies can fall below the true ground-state energy",
+        "why": "No variational energy falls below the true ground-state energy. The cost comes from recalculating all the integrals each time ζ changes."
+      }
+    ],
+    "explanation": "Each time a zeta parameter is changed, all of the integrals need to be recalculated. In the linear method only the coefficients change, so the basis functions and the integrals stay the same; that is why it is usually much easier in practice."
+  },
+  {
+    "id": "pc7-trial-slater-rules",
+    "type": "multiple-choice",
+    "prompt": "Which rule-of-thumb does the section point to for estimating Z_eff values without a full variational calculation?",
+    "choices": [
+      {
+        "text": "Slater's rules",
+        "correct": true
+      },
+      {
+        "text": "Hund's rules",
+        "why": "Hund's rules pick out the lowest-energy arrangement of electrons in a configuration; they give no Z_eff values. The section points to Slater's rules."
+      },
+      {
+        "text": "The Pauli exclusion principle",
+        "why": "The Pauli principle limits how many electrons can share an orbital, but it gives no effective charges. Slater's rules are the rule-of-thumb for Z_eff."
+      },
+      {
+        "text": "The aufbau principle",
+        "why": "The aufbau principle gives the order in which orbitals are filled, not the effective charge each electron feels. Slater's rules estimate Z_eff."
+      }
+    ],
+    "explanation": "The section notes that Slater's rules give a rule-of-thumb approach to evaluating Z_eff values. A variational calculation finds the best ζ values instead, at a much greater cost in computer time."
+  },
+  {
+    "id": "pc7-trial-table-reuse",
+    "type": "multiple-choice",
+    "prompt": "Where do the orbital exponents in Table 7.3.1 come from, and how are they used?",
+    "choices": [
+      {
+        "text": "Optimized on small atoms, then reused for larger systems",
+        "correct": true
+      },
+      {
+        "text": "Measured from atomic spectra and used only for those atoms",
+        "why": "They are not measured. They were chosen from variational calculations on many small multi-electron systems and can generally be reused in STOs for larger systems."
+      },
+      {
+        "text": "Recalculated from scratch for every new molecule",
+        "why": "Recalculating ζ for every system is exactly the costly nonlinear step that the table avoids. The values from small systems are reused."
+      },
+      {
+        "text": "Set equal to each atom's nuclear charge Z",
+        "why": "The ζ_1s values are below Z from He to Ne, and the 2s and 2p values are much smaller. They come from variational calculations on small systems."
+      }
+    ],
+    "explanation": "Because nonlinear calculations are so costly, an optimum set of zeta parameters was chosen from variational calculations on many small multi-electron systems. These values, given in Table 7.3.1, generally can be used in the STOs for other and larger systems."
+  },
+  {
+    "id": "pc7-trial-1s-larger",
+    "type": "multiple-choice",
+    "prompt": "In Table 7.3.1, ζ_1s is larger than ζ_(2s, 2p) for every atom that has both. What does this say about the 1s orbital?",
+    "choices": [
+      {
+        "text": "It decays faster and stays closer to the nucleus",
+        "correct": true
+      },
+      {
+        "text": "It extends farther from the nucleus",
+        "why": "A larger ζ means a faster decay, so the 1s orbital is the more compact one. The 2s and 2p orbitals, with smaller ζ, reach farther out."
+      },
+      {
+        "text": "It holds more electrons than 2s and 2p",
+        "why": "ζ is a decay rate, not an electron count. A larger ζ_1s means the 1s function falls off faster with distance."
+      },
+      {
+        "text": "It feels a smaller effective nuclear charge than 2s",
+        "why": "It's the reverse: the 1s electrons are closest to the nucleus and barely screened, so they feel a larger effective charge, which shows as a larger ζ."
+      }
+    ],
+    "explanation": "ζ values represent the rate of decay of an orbital's radial function. The 1s orbital lies closest to the nucleus and is barely screened, so its function decays faster and its ζ is larger than for the 2s and 2p orbitals, which are shielded by the 1s electrons."
+  },
+  {
+    "id": "pc7-trial-1s-step",
+    "type": "multiple-choice",
+    "prompt": "From He to Ne in Table 7.3.1, ζ_1s rises by about one unit per element. What is the main reason?",
+    "choices": [
+      {
+        "text": "Z rises by one, and 1s electrons are barely screened",
+        "correct": true
+      },
+      {
+        "text": "Electronegativity rises by one unit per element",
+        "why": "Electronegativity is not the cause, and it doesn't rise in steps of one. The nuclear charge Z does, and the 1s electrons feel nearly all of it."
+      },
+      {
+        "text": "Each new element adds one more electron to the 1s shell",
+        "why": "The 1s shell holds at most two electrons and is full from He on. The step comes from the nuclear charge, which rises by one per element."
+      },
+      {
+        "text": "The 2s and 2p electrons pull the 1s inward",
+        "why": "The outer electrons don't pull the 1s electrons in; they repel them, slightly. The step tracks the nuclear charge, which rises by one each time."
+      }
+    ],
+    "explanation": "The nuclear charge rises by one from each element to the next, and the 1s electrons are barely screened (ζ_1s ≈ Z − 0.3). So ζ_1s rises by essentially one unit each time. Electronegativity is not the cause."
+  },
+  {
+    "id": "pc7-trial-2s-step",
+    "type": "multiple-choice",
+    "prompt": "From Li to Ne in Table 7.3.1, why does ζ_(2s, 2p) rise much less per element than ζ_1s does?",
+    "choices": [
+      {
+        "text": "Each added n = 2 electron screens the others",
+        "correct": true
+      },
+      {
+        "text": "The 2s and 2p orbitals feel no nuclear charge",
+        "why": "They do feel the nucleus, but partly screened by the 1s electrons and by each other. That screening is why ζ_(2s, 2p) rises slowly."
+      },
+      {
+        "text": "The nuclear charge rises less for these elements",
+        "why": "Z rises by exactly one from each element to the next. What differs is the screening: each added electron enters the n = 2 shell and partly screens the others."
+      },
+      {
+        "text": "The 2s and 2p orbitals are closer to the nucleus",
+        "why": "They are farther out than the 1s orbital, which is why their ζ is smaller. They rise slowly because each added n = 2 electron partly screens the others."
+      }
+    ],
+    "explanation": "Each added electron goes into the n = 2 shell, where it partly screens the other n = 2 electrons from the extra nuclear charge. The 2s and 2p electrons are also shielded by the 1s electrons, so ζ_(2s, 2p) rises only a little, for example from 2.55 for F to 2.88 for Ne."
+  },
+  {
+    "id": "pc7-trial-fastest-1s",
+    "type": "multiple-choice",
+    "prompt": "Using Table 7.3.1, which atom's 1s function decays fastest with distance from the nucleus?",
+    "choices": [
+      {
+        "text": "Ne, with ζ_1s = 9.64",
+        "correct": true
+      },
+      {
+        "text": "H, with ζ_1s = 1.24",
+        "why": "Hydrogen has the smallest ζ_1s, so its 1s function decays slowest. The fastest decay goes with the largest ζ_1s, neon's 9.64."
+      },
+      {
+        "text": "Li, with ζ_1s = 2.69",
+        "why": "Lithium's 2s value is the smallest in the table, but its ζ_1s is not the largest. Neon's ζ_1s = 9.64 is, so its 1s decays fastest."
+      },
+      {
+        "text": "He, with ζ_1s = 1.69",
+        "why": "A ζ_1s of 1.69 is small, so helium's 1s function decays relatively slowly. A larger ζ means a faster decay, and Ne has the largest."
+      }
+    ],
+    "explanation": "A term with a large ζ decays rapidly with distance. Neon has the largest nuclear charge in the table and the largest ζ_1s, 9.64, so its 1s function is the most compact."
+  },
+  {
+    "id": "pc7-trial-no-2s-value",
+    "type": "multiple-choice",
+    "prompt": "Why does Table 7.3.1 give no ζ_(2s, 2p) values for H and He?",
+    "choices": [
+      {
+        "text": "They have no electrons in the n = 2 shell",
+        "correct": true
+      },
+      {
+        "text": "Their 2s and 2p values are equal to zero",
+        "why": "A ζ of zero would describe a function that never decays. H and He simply have no n = 2 electrons in their ground states, so no exponent is needed."
+      },
+      {
+        "text": "Their 2s and 2p values are too large to list",
+        "why": "Nothing is too large to list. The entries are blank because H and He have only 1s electrons in their ground states."
+      },
+      {
+        "text": "Variational calculations do not work for them",
+        "why": "The variational method works for H and He; the table lists their ζ_1s values. They have no 2s or 2p electrons, so no exponent is needed."
+      }
+    ],
+    "explanation": "H (1s^1) and He (1s^2) have all their electrons in the 1s orbital, so only ζ_1s is needed. The ζ_(2s, 2p) column starts at lithium, the first atom with an electron in the n = 2 shell."
+  },
+  {
+    "id": "pc7-trial-useful",
+    "type": "multiple-choice",
+    "prompt": "The section calls one-electron functions built from basis functions both flexible and useful. What makes them useful?",
+    "choices": [
+      {
+        "text": "Their parameters still have clear physical meanings",
+        "correct": true
+      },
+      {
+        "text": "They have several adjustable parameters",
+        "why": "That is what makes them flexible. They are useful because those parameters still have clear physical interpretations, such as ζ standing for an effective nuclear charge."
+      },
+      {
+        "text": "They are exact solutions for every atom",
+        "why": "They are approximate functions for variational calculations. Their usefulness comes from parameters with clear physical meanings."
+      },
+      {
+        "text": "They contain no parameters that still need to be found",
+        "why": "They have several adjustable parameters. They are useful because those parameters keep clear physical interpretations."
+      }
+    ],
+    "explanation": "Single-electron functions built from basis functions are flexible because they have several adjustable parameters, and useful because those parameters still have clear physical interpretations, like ζ as an effective nuclear charge."
+  },
+  {
+    "id": "pc7-trial-hartree-fock",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which method discussed later will need these flexible single-electron functions?",
+    "choices": [
+      {
+        "text": "The Hartree-Fock method",
+        "correct": true
+      },
+      {
+        "text": "Perturbation theory, in Section 7.4",
+        "why": "Perturbation theory builds on the known solutions of a simpler problem, not on fitted one-electron functions. The section points ahead to the Hartree-Fock method."
+      },
+      {
+        "text": "The Bohr model of the atom",
+        "why": "The Bohr model uses fixed circular orbits, not variational functions. These functions will be needed in the Hartree-Fock method."
+      },
+      {
+        "text": "The particle-in-a-box model",
+        "why": "That model is solved exactly and needs no adjustable functions. These functions will be needed in the Hartree-Fock method."
+      }
+    ],
+    "explanation": "The section ends by noting that such flexible, physically meaningful single-electron functions will be needed in the Hartree-Fock method."
+  },
+  {
+    "id": "pc7-trial-1s-step-value",
+    "type": "numeric",
+    "prompt": "Table 7.3.1 lists ζ_1s = 4.68 for boron and ζ_1s = 5.67 for carbon. By how much does ζ_1s increase from boron to carbon?",
+    "answer": 0.99,
+    "explanation": "5.67 − 4.68 = 0.99, essentially one unit. This matches the step of one in nuclear charge from B (Z = 5) to C (Z = 6), since the 1s electrons are barely screened."
+  },
+  {
+    "id": "pc7-trial-2s-step-value",
+    "type": "numeric",
+    "prompt": "Table 7.3.1 lists ζ_(2s, 2p) = 1.95 for nitrogen and ζ_(2s, 2p) = 2.25 for oxygen. By how much does ζ_(2s, 2p) increase from nitrogen to oxygen?",
+    "answer": 0.3,
+    "explanation": "2.25 − 1.95 = 0.30. That is much less than the step of about one unit in ζ_1s over the same pair (6.67 → 7.66), because the added electron enters the n = 2 shell and partly screens the others."
+  },
+  {
+    "id": "pc7-trial-lithium-ratio",
+    "type": "numeric",
+    "prompt": "In a Slater-type orbital exp(−ζr/a_0), the exponent ζ sets how fast the function decays. For lithium, Table 7.3.1 gives ζ_1s = 2.69 and ζ_(2s, 2p) = 0.80. How many times larger is ζ_1s than ζ_(2s, 2p)?",
+    "answer": 3.3625,
+    "tolerance": 0.02,
+    "explanation": "2.69/0.80 = 3.36. Lithium's 1s function decays more than three times faster than its 2s function, so the 1s electrons stay much closer to the nucleus, while the 2s electron, screened by them, spreads far out."
+  },
+  {
+    "id": "pc7-trial-parameter-count",
+    "type": "numeric",
+    "prompt": "A one-electron function φ(r) = Σ_j c_j exp(−ζ_j r/a_0) has 4 terms, each with its own coefficient c_j and its own exponent ζ_j. If all of them are varied, how many adjustable parameters are there?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "4 coefficients + 4 exponents = 8 parameters. Varying the 4 c_j alone would be a linear variational calculation; varying the 4 ζ_j as well makes it a nonlinear one."
+  },
+  {
+    "id": "pc7-trial-value-at-nucleus",
+    "type": "numeric",
+    "prompt": "Exercise 7.3.1 builds φ(r) = Σ_j c_j exp(−ζ_j r/a_0) from three equally weighted terms, with ζ = 1.0, 2.0 and 5.0. Take every c_j = 1. Since exp(0) = 1, what is the value of φ at the nucleus, r = 0?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "At r = 0 each term is c_j exp(0) = 1 × 1 = 1, whatever its ζ, so φ(0) = 1 + 1 + 1 = 3. Moving out from the nucleus, the ζ = 5.0 term dies away first and the ζ = 1.0 term last."
+  },
+  {
+    "id": "pc7-trial-decay-distance",
+    "type": "numeric",
+    "prompt": "A term exp(−ζr/a_0) falls to 1/e of its value at the nucleus when ζr/a_0 = 1, that is, at r = a_0/ζ. For the ζ = 5.0 term of Exercise 7.3.1, what is this distance, in bohr (1 bohr = a_0)?",
+    "answer": 0.2,
+    "unit": "bohr",
+    "explanation": "r = a_0/ζ = a_0/5.0 = 0.2 a_0 = 0.2 bohr. The ζ = 1.0 term needs a full 1 bohr for the same drop: a large ζ means a rapid decay."
+  }
+]

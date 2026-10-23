@@ -1,0 +1,558 @@
+[
+  {
+    "id": "pc13-tdpt-dirac",
+    "type": "multiple-choice",
+    "prompt": "Who developed time-dependent perturbation theory?",
+    "choices": [
+      {
+        "text": "Paul Dirac",
+        "correct": true
+      },
+      {
+        "text": "Erwin Schrödinger",
+        "why": "Schrödinger presented time-independent perturbation theory, in a 1926 paper. The time-dependent version was developed by Paul Dirac."
+      },
+      {
+        "text": "Werner Heisenberg",
+        "why": "Heisenberg is known for matrix mechanics and the uncertainty principle. The section credits time-dependent perturbation theory to Paul Dirac."
+      },
+      {
+        "text": "Max Born",
+        "why": "Born gave the probability interpretation of the wavefunction. Time-dependent perturbation theory was developed by Paul Dirac."
+      }
+    ],
+    "explanation": "Schrödinger presented time-independent perturbation theory in 1926, shortly after his wave mechanics. Paul Dirac developed the time-dependent theory, which treats a perturbation V(t) that changes with time."
+  },
+  {
+    "id": "pc13-tdpt-static-or-not",
+    "type": "multiple-choice",
+    "prompt": "What is the key difference between time-independent and time-dependent perturbation theory?",
+    "choices": [
+      {
+        "text": "Whether the perturbation changes with time",
+        "correct": true
+      },
+      {
+        "text": "Whether the perturbation is small or large",
+        "why": "Both theories treat a small perturbation. In the time-independent theory it is static; in the time-dependent theory it is a function of time, V(t)."
+      },
+      {
+        "text": "Whether the unperturbed Hamiltonian is known",
+        "why": "Both start from a solved, time-independent Hamiltonian H_0. What differs is the perturbation: static in one theory, time dependent, V(t), in the other."
+      },
+      {
+        "text": "Whether the system has one or many electrons",
+        "why": "Neither theory is limited by the number of electrons. The difference is whether the perturbing Hamiltonian is static or depends on time."
+      }
+    ],
+    "explanation": "In time-independent perturbation theory, the perturbation Hamiltonian is static. Time-dependent perturbation theory studies a perturbation V(t) that changes with time, applied to a time-independent Hamiltonian H_0."
+  },
+  {
+    "id": "pc13-tdpt-no-perturbed-levels",
+    "type": "multiple-choice",
+    "prompt": "In time-dependent perturbation theory, why is it not useful to speak of the energy levels and eigenstates of the perturbed system?",
+    "choices": [
+      {
+        "text": "Its Hamiltonian, and so its levels, change in time",
+        "correct": true
+      },
+      {
+        "text": "The perturbed system has no energy at all",
+        "why": "The system still has energy. Because H = H_0 + H_1(t) depends on time, its levels and eigenstates would change from moment to moment, so the theory uses the fixed levels of H_0 instead."
+      },
+      {
+        "text": "The perturbation is too small to change anything at all",
+        "why": "A small perturbation can still cause transitions; that is the point of the theory. The problem is that the perturbed Hamiltonian depends on time, so its levels keep changing."
+      },
+      {
+        "text": "The unperturbed energy levels are not known in advance",
+        "why": "The unperturbed states |n⟩ are known and are used as the basis. It is the perturbed system's levels that change with time."
+      }
+    ],
+    "explanation": "Since the perturbed Hamiltonian depends on time, so do its energy levels and eigenstates. The theory therefore describes the state in the fixed energy basis |n⟩ of the unperturbed system and asks how the occupation of those states changes."
+  },
+  {
+    "id": "pc13-tdpt-two-goals",
+    "type": "multiple-choice",
+    "prompt": "Which quantity is one of the two main goals of time-dependent perturbation theory?",
+    "choices": [
+      {
+        "text": "How the unperturbed states' amplitudes change",
+        "correct": true
+      },
+      {
+        "text": "Corrected energy levels of the perturbed system",
+        "why": "Corrected energies are the goal of time-independent perturbation theory. Here the goals are the time-dependent expectation value of an observable and the amplitudes of the unperturbed eigenstates."
+      },
+      {
+        "text": "The lowest energy of a guessed trial function",
+        "why": "Minimizing a trial function's energy is the variational method. Time-dependent perturbation theory follows how the amplitudes of the unperturbed states change with time."
+      },
+      {
+        "text": "The force constant of the bond being perturbed",
+        "why": "No force constant is sought. The goals are the time-dependent expectation value of an observable and the time-dependent amplitudes of the unperturbed eigenstates."
+      }
+    ],
+    "explanation": "The section names two goals: the time-dependent expectation value of an observable A for a given initial state, and the time-dependent amplitudes of the states that are energy eigenstates of the unperturbed system."
+  },
+  {
+    "id": "pc13-tdpt-expectation-classical",
+    "type": "multiple-choice",
+    "prompt": "Why is the time-dependent expectation value of an observable an important quantity?",
+    "choices": [
+      {
+        "text": "It matches measuring many copies of the system",
+        "correct": true
+      },
+      {
+        "text": "It gives the exact result of one single measurement",
+        "why": "A single measurement gives one eigenvalue, not the expectation value. The expectation value matches a measurement on a macroscopic number of copies of the system: the classical result."
+      },
+      {
+        "text": "It always equals the system's ground-state energy",
+        "why": "An expectation value can be of any observable, and here it changes with time. It matters because it gives the classical result of measuring a macroscopic number of copies."
+      },
+      {
+        "text": "It stays constant, so it can label the state",
+        "why": "Under a time-dependent perturbation the expectation value changes with time. Its importance is that it matches a measurement on a macroscopic number of copies of the system."
+      }
+    ],
+    "explanation": "The expectation value gives rise to the classical result of a measurement performed on a macroscopic number of copies of the perturbed system, such as a whole sample of molecules."
+  },
+  {
+    "id": "pc13-tdpt-laser-populations",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why are the time-dependent occupation probabilities especially useful in laser physics?",
+    "choices": [
+      {
+        "text": "They track atomic-state populations in a field",
+        "correct": true
+      },
+      {
+        "text": "They give the wavelength of the laser beam directly",
+        "why": "The occupation probabilities describe states, not the beam's wavelength. In a laser one wants the populations of the atomic states in a gas when a time-dependent electric field is applied."
+      },
+      {
+        "text": "They show that atoms in a laser never change state",
+        "why": "Atoms do change state under the applied field; the occupation probabilities follow exactly those changes, giving the populations of the atomic states."
+      },
+      {
+        "text": "They give the temperature of the gas in the laser",
+        "why": "They don't give a temperature. They give the probability of occupation of each state, that is, the populations of the atomic states when a time-dependent field is applied."
+      }
+    ],
+    "explanation": "The amplitudes give the time-dependent probability of occupation of each eigenstate. In laser physics this tells you the populations of the different atomic states in a gas when a time-dependent electric field is applied."
+  },
+  {
+    "id": "pc13-tdpt-schrodinger-picture",
+    "type": "multiple-choice",
+    "prompt": "Without a perturbation, a system in eigenstate |j⟩ just picks up a phase as time passes. In the Schrödinger picture used here, what changes in time and what stays constant?",
+    "choices": [
+      {
+        "text": "State vectors change; operators stay constant",
+        "correct": true
+      },
+      {
+        "text": "Operators change; state vectors stay constant",
+        "why": "That is the reverse. In the Schrödinger picture the state vectors evolve in time, and the operators are constant."
+      },
+      {
+        "text": "Both state vectors and operators change",
+        "why": "In the Schrödinger picture only the state vectors evolve; the operators stay constant."
+      },
+      {
+        "text": "Neither changes, as the state is an eigenstate",
+        "why": "Even an eigenstate picks up a time-dependent phase, exp(−iE_j t/ħ). In the Schrödinger picture state vectors evolve and operators are constant."
+      }
+    ],
+    "explanation": "The section works in the Schrödinger picture, where state vectors evolve in time and operators are constant. An unperturbed eigenstate evolves only by a phase: |j(t)⟩ = exp(−iE_j t/ħ)|j⟩."
+  },
+  {
+    "id": "pc13-tdpt-amplitudes-unperturbed",
+    "type": "multiple-choice",
+    "prompt": "In |ψ(t)⟩ = Σ_n c_n(t) exp(−iE_n t/ħ)|n⟩, the phase factors are pulled out of the amplitudes. With no perturbation, and the system starting in |j⟩, what are the amplitudes at every time t?",
+    "choices": [
+      {
+        "text": "c_j(t) = 1, and c_n(t) = 0 for n ≠ j",
+        "correct": true
+      },
+      {
+        "text": "c_n(t) = 1 for every state n",
+        "why": "That would put the system in every state at once. Starting in |j⟩ with no perturbation, c_j stays 1 and every other amplitude stays 0."
+      },
+      {
+        "text": "c_j(t) = exp(−iE_j t/ħ); the rest are 0",
+        "why": "The phase factor exp(−iE_j t/ħ) has been pulled out of the amplitude and written separately. That is why c_j(t) is simply 1 for all t."
+      },
+      {
+        "text": "c_j(t) falls from 1 toward 0 as t grows",
+        "why": "Without a perturbation nothing drives the system out of |j⟩. Pulling out the phase factors makes the amplitudes constant: c_j(t) = 1 and c_n(t) = 0 for n ≠ j."
+      }
+    ],
+    "explanation": "Pulling out the phase factors is only a convention, made without loss of generality. Its payoff is that, with no perturbation, the amplitudes don't change: c_j(t) = 1 and c_n(t) = 0 for n ≠ j at all times. Any change in them is then caused by the perturbation."
+  },
+  {
+    "id": "pc13-tdpt-ode",
+    "type": "multiple-choice",
+    "prompt": "What kind of equations do the amplitudes c_n(t) obey?",
+    "choices": [
+      {
+        "text": "Coupled ordinary differential equations",
+        "correct": true
+      },
+      {
+        "text": "Partial differential equations in x and t",
+        "why": "The amplitudes c_n depend only on t, not on position, so their equations are ordinary differential equations, not partial ones."
+      },
+      {
+        "text": "Separate algebraic equations, one per state",
+        "why": "They are differential equations, and they are coupled: dc_n/dt involves the other amplitudes c_k."
+      },
+      {
+        "text": "A single eigenvalue equation, Ĥψ = Eψ",
+        "why": "Ĥψ = Eψ is the time-independent Schrödinger equation. Putting the expansion into the time-dependent equation gives a set of coupled ordinary differential equations for the amplitudes."
+      }
+    ],
+    "explanation": "Substituting the expansion into the time-dependent Schrödinger equation gives a set of coupled ordinary differential equations for the amplitudes. They are ordinary because the c_n depend only on t."
+  },
+  {
+    "id": "pc13-tdpt-coupled-meaning",
+    "type": "multiple-choice",
+    "prompt": "In dc_n/dt = (−i/ħ)Σ_k ⟨n|H_1(t)|k⟩ c_k(t) exp(−i(E_k − E_n)t/ħ), why are the equations for the amplitudes called coupled?",
+    "choices": [
+      {
+        "text": "Each dc_n/dt depends on the other amplitudes c_k",
+        "correct": true
+      },
+      {
+        "text": "Each amplitude changes on its own, independently",
+        "why": "The sum over k brings in the other amplitudes, so no c_n changes on its own. That link is what coupled means."
+      },
+      {
+        "text": "They all have the same solution, c_n(t) = 1",
+        "why": "With a perturbation the amplitudes change, and each one's rate of change depends on the others through the sum over k."
+      },
+      {
+        "text": "Each one contains two variables, x and t",
+        "why": "The amplitudes depend only on t. They are coupled because dc_n/dt contains the other amplitudes c_k(t)."
+      }
+    ],
+    "explanation": "The sum over k means that the rate of change of each amplitude depends on the amplitudes of the other states. The matrix elements ⟨n|H_1(t)|k⟩ of the perturbation are what link the states."
+  },
+  {
+    "id": "pc13-tdpt-matrix-element-role",
+    "type": "multiple-choice",
+    "prompt": "In the amplitude equations, what role do the matrix elements ⟨n|H_1(t)|k⟩ of the perturbation play?",
+    "choices": [
+      {
+        "text": "They set the rate of shifting between states",
+        "correct": true
+      },
+      {
+        "text": "They give the energy of each unperturbed state",
+        "why": "The unperturbed energies E_n appear in the phase factors. The matrix elements of H_1 are proportional to the rate at which amplitude is shifted between states."
+      },
+      {
+        "text": "They are the probabilities of finding each state",
+        "why": "The probabilities are |c_n(t)|^2. The matrix elements of H_1 are proportional to how fast amplitude moves from one state to another."
+      },
+      {
+        "text": "They are zero, because the states are orthogonal",
+        "why": "Orthogonality makes ⟨n|k⟩ zero, not ⟨n|H_1|k⟩. When the perturbation's matrix elements are not zero, amplitude flows between the states."
+      }
+    ],
+    "explanation": "The matrix elements of H_1 play a role like the one they play in time-independent perturbation theory: they are proportional to the rate at which amplitudes are shifted between states. If ⟨n|H_1|k⟩ = 0, the perturbation can't move amplitude directly between k and n."
+  },
+  {
+    "id": "pc13-tdpt-phase-direction",
+    "type": "multiple-choice",
+    "prompt": "In the amplitude equations, what modifies the direction in which amplitude is shifted between states?",
+    "choices": [
+      {
+        "text": "The phase factor exp(−i(E_k − E_n)t/ħ)",
+        "correct": true
+      },
+      {
+        "text": "The normalization constant of each state",
+        "why": "No normalization constant appears in the equation. The section says the direction of the shift is modified by the exponential phase factor exp(−i(E_k − E_n)t/ħ)."
+      },
+      {
+        "text": "The reduced mass of the whole system",
+        "why": "No mass appears in the amplitude equations. It is the phase factor, which depends on the energy difference E_k − E_n, that modifies the direction of the shift."
+      },
+      {
+        "text": "Planck's constant ħ alone, which is fixed",
+        "why": "ħ is a constant and can't change a direction over time. The exponential phase factor, which keeps winding around as t grows, modifies the direction of the shift."
+      }
+    ],
+    "explanation": "The matrix elements set how fast amplitude is shifted between states, but the direction of the shift is modified by the phase factor exp(−i(E_k − E_n)t/ħ), which keeps winding around as time goes on."
+  },
+  {
+    "id": "pc13-tdpt-slow-oscillate",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what may happen to the state amplitudes if the time dependence of H_1 is slow enough?",
+    "choices": [
+      {
+        "text": "They may oscillate",
+        "correct": true
+      },
+      {
+        "text": "They stay at their starting values",
+        "why": "A slowly varying perturbation still changes the amplitudes. The section says the winding phase factor may make them oscillate."
+      },
+      {
+        "text": "They all grow without limit",
+        "why": "Probabilities can't exceed 1, so the amplitudes can't grow without limit. The section says the amplitudes may oscillate."
+      },
+      {
+        "text": "They all drop to zero at once",
+        "why": "Nothing makes every amplitude vanish. The section says they may oscillate, which is useful for managing radiative transitions in a laser."
+      }
+    ],
+    "explanation": "Because the phase factor winds around as time passes, a slowly varying H_1 may cause the state amplitudes to oscillate. Such oscillations are useful for managing radiative transitions in a laser."
+  },
+  {
+    "id": "pc13-tdpt-two-level-assumptions",
+    "type": "multiple-choice",
+    "prompt": "In the section's two-level system, what is assumed about the starting state and the diagonal matrix elements H_11 and H_22?",
+    "choices": [
+      {
+        "text": "It starts in |1⟩, and H_11 = H_22 = 0",
+        "correct": true
+      },
+      {
+        "text": "It starts in |2⟩, and H_11 = H_22 = 0",
+        "why": "The section starts the system in state 1, |ψ(t = 0)⟩ = |1⟩, and then asks for the probability of reaching state 2."
+      },
+      {
+        "text": "It starts in |1⟩, and H_12 = H_21 = 0",
+        "why": "If the off-diagonal elements H_12 and H_21 were zero, the perturbation could not move the system from 1 to 2. It is the diagonal ones, H_11 and H_22, that are set to zero."
+      },
+      {
+        "text": "It starts in an equal mix of |1⟩ and |2⟩",
+        "why": "The system starts purely in state 1, |ψ(t = 0)⟩ = |1⟩, and H_11 = H_22 = 0."
+      }
+    ],
+    "explanation": "The section assumes |ψ(t = 0)⟩ = |1⟩ and H_11 = H_22 = 0. Then the only way into state 2 is through the off-diagonal element H_21, and c_2(t) = (−i/ħ)∫_0^(t) exp(iω_0 t′)H_21(t′)dt′."
+  },
+  {
+    "id": "pc13-tdpt-light-omega",
+    "type": "multiple-choice",
+    "prompt": "For incident light, the section uses the perturbation H_1(t) = cos(ωt)V(r). What does ω stand for?",
+    "choices": [
+      {
+        "text": "The frequency of the incident light",
+        "correct": true
+      },
+      {
+        "text": "The natural frequency of the transition",
+        "why": "That is ω_0, the natural frequency set by the two levels. ω belongs to the light, through cos(ωt)."
+      },
+      {
+        "text": "The frequency of the electron's orbit",
+        "why": "ω enters through cos(ωt), the oscillation of the light's field, not any orbit. It is the incident light's frequency."
+      },
+      {
+        "text": "The polarization vector of the light",
+        "why": "The section says V(r) is an amplitude of the polarization vector. ω is the frequency of the incident light."
+      }
+    ],
+    "explanation": "H_1(t) = cos(ωt)V(r) is an oscillating perturbation: ω is the frequency of the incident light, and V(r), an amplitude of the polarization vector, is set aside for now. ω_0 is the natural frequency of the transition between the two levels."
+  },
+  {
+    "id": "pc13-tdpt-near-resonance",
+    "type": "multiple-choice",
+    "prompt": "To simplify c_2(t), the section assumes ω ≈ ω_0. What does this assumption say?",
+    "choices": [
+      {
+        "text": "The light is nearly in tune with the transition",
+        "correct": true
+      },
+      {
+        "text": "The light's frequency is much higher than ω_0",
+        "why": "That would be far from resonance. ω ≈ ω_0 says the incident light's frequency is comparable to the natural frequency of the transition."
+      },
+      {
+        "text": "The light is switched off at t = 0",
+        "why": "The light is switched on at t = 0 and acts from then on. ω ≈ ω_0 is about frequencies: the light's frequency is close to the natural one."
+      },
+      {
+        "text": "The two energy levels have exactly equal energy",
+        "why": "Equal energies would make the natural frequency ω_0 zero. The assumption is that the light's frequency ω is close to the transition's natural frequency ω_0."
+      }
+    ],
+    "explanation": "ω ≈ ω_0 means the incident light's frequency is comparable to the natural frequency of the transition. Keeping only the near-resonant term then gives a simple c_2(t) and P_12(t)."
+  },
+  {
+    "id": "pc13-tdpt-probability-in-time",
+    "type": "multiple-choice",
+    "prompt": "For light slightly off resonance (ω ≠ ω_0), how does the transition probability P_12(t) behave as time passes?",
+    "choices": [
+      {
+        "text": "It oscillates, rising and falling again",
+        "correct": true
+      },
+      {
+        "text": "It grows steadily until it reaches 1",
+        "why": "P_12(t) contains sin^2((ω − ω_0)t/2), so it rises and then falls again. The section calls this oscillation strange, but it is what the result says."
+      },
+      {
+        "text": "It decays exponentially from 1 down to 0",
+        "why": "The system starts in state 1, so P_12 starts at 0, not 1. It then oscillates as sin^2((ω − ω_0)t/2)."
+      },
+      {
+        "text": "It stays constant once the light is on",
+        "why": "The factor sin^2((ω − ω_0)t/2) makes P_12 change with time: it oscillates between zero and a maximum."
+      }
+    ],
+    "explanation": "P_12(t) = (|H_21|^2/ħ^2) · (sin^2((ω − ω_0)t/2))/((ω − ω_0)^2). At a fixed light frequency the probability oscillates sinusoidally (squared) with time, rather than building up steadily."
+  },
+  {
+    "id": "pc13-tdpt-peak-where",
+    "type": "multiple-choice",
+    "prompt": "As a function of the light frequency ω, where is P_12(t) largest?",
+    "choices": [
+      {
+        "text": "At ω = ω_0, exactly on resonance",
+        "correct": true
+      },
+      {
+        "text": "At ω = 2ω_0, twice the natural frequency",
+        "why": "P_12 depends on ω − ω_0 and is peaked where that difference is zero, at ω = ω_0."
+      },
+      {
+        "text": "At ω = 0, with a static field",
+        "why": "A static field is far from resonance with the transition. P_12 is peaked at ω − ω_0 = 0."
+      },
+      {
+        "text": "It is the same for every value of ω",
+        "why": "P_12 has a single peak at ω − ω_0 = 0 and falls off on either side, so it depends strongly on ω."
+      }
+    ],
+    "explanation": "P_12(t) is peaked at ω − ω_0 = 0: light causes the transition most readily when its frequency matches the natural frequency of the transition. This resonance is why absorption happens at particular frequencies."
+  },
+  {
+    "id": "pc13-tdpt-peak-sharpens",
+    "type": "multiple-choice",
+    "prompt": "How does the peak in P_12, plotted against ω − ω_0, change as the light stays on longer?",
+    "choices": [
+      {
+        "text": "It gets higher and narrower",
+        "correct": true
+      },
+      {
+        "text": "It gets lower and broader",
+        "why": "The height, (|H_12|t/(2ħ))^2, grows as t^2 and the width, 4π/t, shrinks, so the peak gets higher and narrower."
+      },
+      {
+        "text": "It gets higher, but its width stays the same",
+        "why": "The width is 4π/t, which shrinks as t grows. The peak gets both higher and narrower."
+      },
+      {
+        "text": "It stays exactly the same at all times",
+        "why": "Both the height, (|H_12|t/(2ħ))^2, and the width, 4π/t, depend on t: the peak gets higher and narrower."
+      }
+    ],
+    "explanation": "The peak height is (|H_12|t/(2ħ))^2, which grows as t^2, and its width is 4π/t, which shrinks as 1/t. So the longer the light acts, the higher and narrower the resonance peak."
+  },
+  {
+    "id": "pc13-tdpt-breakdown",
+    "type": "multiple-choice",
+    "prompt": "Why must the perturbation-theory result for P_12 eventually break down as t grows?",
+    "choices": [
+      {
+        "text": "Its peak height would grow past 1",
+        "correct": true
+      },
+      {
+        "text": "The light's frequency drifts as time passes",
+        "why": "Nothing in the treatment makes ω drift. The trouble is that the peak height grows as t^2, while a probability can never be bigger than 1."
+      },
+      {
+        "text": "The energy levels of H_0 change with time",
+        "why": "H_0 is time independent, so its levels are fixed. The peak height grows as t^2 without limit, but P_12 can't exceed 1."
+      },
+      {
+        "text": "The phase factors become exactly zero",
+        "why": "A phase factor has magnitude 1 and is never zero. The breakdown comes from the peak height growing without limit while P_12 can't be bigger than 1."
+      }
+    ],
+    "explanation": "The peak height (|H_12|t/(2ħ))^2 keeps growing with t, but P_12 cannot get bigger than 1. This is a perturbative treatment, valid only while P_12 stays small, so it breaks down eventually."
+  },
+  {
+    "id": "pc13-tdpt-switch-off-odd",
+    "type": "multiple-choice",
+    "prompt": "To leave the system in the upper state with maximum probability, the section says to turn off the perturbation after a time π/|ω − ω_0|. Which other time would also work?",
+    "choices": [
+      {
+        "text": "3π/|ω − ω_0|",
+        "correct": true
+      },
+      {
+        "text": "2π/|ω − ω_0|",
+        "why": "At 2π/|ω − ω_0|, (ω − ω_0)t/2 is ±π, and sin^2 π = 0: the probability is back to zero. Only odd multiples of π/|ω − ω_0| give a maximum."
+      },
+      {
+        "text": "π/(2|ω − ω_0|)",
+        "why": "That is only halfway to the first maximum, where the probability is still rising. The maxima are at odd multiples of π/|ω − ω_0|."
+      },
+      {
+        "text": "4π/|ω − ω_0|",
+        "why": "4π is an even multiple of π, which makes sin^2((ω − ω_0)t/2) zero. The maxima come at odd multiples: π, 3π, 5π, … over |ω − ω_0|."
+      }
+    ],
+    "explanation": "P_12 depends on time through sin^2((ω − ω_0)t/2), which is largest when (ω − ω_0)t/2 is an odd multiple of π/2, that is, at t = π/|ω − ω_0| or any odd multiple of it, such as 3π/|ω − ω_0|."
+  },
+  {
+    "id": "pc13-tdpt-amplitude-probability",
+    "type": "numeric",
+    "prompt": "The probability that the system is in state n at time t is |c_n(t)|^2. At some time, the amplitude of state 2 is c_2 = 0.30i. What is the probability of finding the system in state 2? (Give it as a decimal.)",
+    "answer": 0.09,
+    "explanation": "|c_2|^2 = c_2^*c_2 = (−0.30i)(0.30i) = 0.09. Amplitudes are complex numbers, but their absolute squares are real probabilities."
+  },
+  {
+    "id": "pc13-tdpt-switch-off-time",
+    "type": "numeric",
+    "prompt": "The section says to turn off the perturbation after t = π/|ω − ω_0| to leave the system in the upper state with maximum probability. If |ω − ω_0| = 1.0 × 10^8 s^−1, and using 1 ns = 10^−9 s, what is this time, in ns? (Give it as a decimal.)",
+    "answer": 31.42,
+    "unit": "ns",
+    "explanation": "t = π/(1.0 × 10^8 s^−1) = 3.14 × 10^−8 s = 31.4 ns. The closer the light is to resonance, the longer this time."
+  },
+  {
+    "id": "pc13-tdpt-peak-height",
+    "type": "numeric",
+    "prompt": "On resonance (ω = ω_0), the peak height of P_12 is (|H_12|t/(2ħ))^2. At some time t, |H_12|t/ħ = 0.40. What is the peak transition probability? (Give it as a decimal.)",
+    "answer": 0.04,
+    "explanation": "|H_12|t/(2ħ) = 0.40/2 = 0.20, and 0.20^2 = 0.04. That is small, so the perturbative treatment still holds."
+  },
+  {
+    "id": "pc13-tdpt-height-tripled",
+    "type": "numeric",
+    "prompt": "The peak height of P_12 is (|H_12|t/(2ħ))^2. If the light stays on three times as long, by what factor does the peak height grow?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "The height goes as t^2, so tripling t multiplies it by 3^2 = 9, as long as it stays well below 1, where perturbation theory holds."
+  },
+  {
+    "id": "pc13-tdpt-peak-width",
+    "type": "numeric",
+    "prompt": "The peak in P_12, plotted against ω − ω_0, has a width of 4π/t. Using 1 μs = 10^−6 s, what is the width after the light has acted for t = 2.0 μs, in s^−1? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 6283000.0,
+    "explanation": "4π/(2.0 × 10^−6 s) = 12.57/(2.0 × 10^−6 s) = 6.3 × 10^6 s^−1. A longer time would give a narrower peak."
+  },
+  {
+    "id": "pc13-tdpt-natural-frequency",
+    "type": "numeric",
+    "prompt": "The natural frequency of a two-level transition is ω_0 = (E_2 − E_1)/ħ. If E_2 − E_1 = 2.0 eV and ħ = 6.582 × 10^−16 eV·s, what is ω_0, in s^−1? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 3039000000000000.0,
+    "explanation": "ω_0 = 2.0 eV/(6.582 × 10^−16 eV·s) = 3.0 × 10^15 s^−1. Light near this frequency is in resonance with the transition."
+  },
+  {
+    "id": "pc13-tdpt-equation-count",
+    "type": "numeric",
+    "prompt": "The two-level system has one amplitude equation for each state: one for c_1 and one for c_2. How many coupled amplitude equations would a system with four states have?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "There is one equation, for dc_n/dt, for each state n, and each contains a sum over all the states k. Four states give four coupled equations, one each for c_1 to c_4."
+  }
+]

@@ -1,0 +1,586 @@
+[
+  {
+    "id": "pc10-pes-what-measured",
+    "type": "multiple-choice",
+    "prompt": "In photoelectron spectroscopy, what is actually recorded to make the spectrum?",
+    "choices": [
+      {
+        "text": "Counts of ejected electrons versus kinetic energy",
+        "correct": true
+      },
+      {
+        "text": "How much light the sample absorbs at each wavelength",
+        "why": "That is an absorption spectrum. PES uses light of one fixed energy and records the number of ejected photoelectrons as a function of their kinetic energy."
+      },
+      {
+        "text": "The wavelengths of light the sample gives off",
+        "why": "That is an emission spectrum. In PES the sample gives off electrons, and their kinetic energies are measured."
+      },
+      {
+        "text": "The masses of the ions formed by the light",
+        "why": "That would be mass spectrometry. PES measures the kinetic energy distribution of the emitted photoelectrons."
+      }
+    ],
+    "explanation": "PES shines monochromatic light on a sample and measures the kinetic energy distribution of the emitted photoelectrons: the number of electrons as a function of their kinetic energy. Each kinetic energy corresponds to an ionization energy."
+  },
+  {
+    "id": "pc10-pes-ups-valence",
+    "type": "multiple-choice",
+    "prompt": "Why is ultraviolet photoelectron spectroscopy (UPS), rather than XPS, used to study the valence molecular orbitals of molecules?",
+    "choices": [
+      {
+        "text": "Its 10–45 eV photons probe valence electrons",
+        "correct": true
+      },
+      {
+        "text": "Its X-ray photons reach the core electrons",
+        "why": "That describes XPS, which uses 200–2000 eV photons to examine core levels. UPS uses vacuum UV light of 10–45 eV, suited to valence electrons."
+      },
+      {
+        "text": "UV light is absorbed without ejecting electrons",
+        "why": "UPS does eject electrons; that is what it measures. Its 10–45 eV photons have the right energy to ionize valence electrons."
+      },
+      {
+        "text": "Its photons have energies of several thousand eV",
+        "why": "Photons that energetic belong to X-ray methods. UPS uses vacuum UV light of 10–45 eV, matched to valence ionization energies."
+      }
+    ],
+    "explanation": "UPS uses vacuum UV radiation with photon energies of 10–45 eV, which ionizes electrons in valence levels. XPS uses soft X-rays (200–2000 eV) to examine electrons in core levels."
+  },
+  {
+    "id": "pc10-pes-monochromatic",
+    "type": "multiple-choice",
+    "prompt": "Why does photoelectron spectroscopy use monochromatic light (photons of one fixed energy)?",
+    "choices": [
+      {
+        "text": "So each kinetic energy gives one ionization energy",
+        "correct": true
+      },
+      {
+        "text": "So all electrons leave with the same kinetic energy",
+        "why": "Electrons from different orbitals leave with different kinetic energies; that's what makes the bands. Fixing hν lets each kinetic energy be turned into an ionization energy."
+      },
+      {
+        "text": "So that only one electron is ejected in total",
+        "why": "Many electrons are ejected and counted. A fixed photon energy means each kinetic energy points to one ionization energy."
+      },
+      {
+        "text": "Because mixed light would damage the analyzer",
+        "why": "The analyzer isn't the concern. With several photon energies, one kinetic energy could come from different orbitals, so hν must be fixed and known."
+      }
+    ],
+    "explanation": "With a fixed, known photon energy hν, each measured kinetic energy gives one ionization energy through IE = hν − KE. With a mixture of photon energies, a kinetic energy could not be traced back to one orbital."
+  },
+  {
+    "id": "pc10-pes-photon-energy",
+    "type": "numeric",
+    "prompt": "A UPS lamp emits light of frequency 5.13 × 10^15 Hz. Using E = hν with h = 4.136 × 10^−15 eV·s, what is the energy of one photon, in eV?",
+    "answer": 21.22,
+    "unit": "eV",
+    "explanation": "E = (4.136 × 10^−15 eV·s)(5.13 × 10^15 Hz) = 21.2 eV, inside the 10–45 eV range used for UPS."
+  },
+  {
+    "id": "pc10-pes-free-electron-ke",
+    "type": "multiple-choice",
+    "prompt": "In the energy balance E(A) + hν = E(A^+) + E(e^−), why is the ejected electron's energy E(e^−) just its kinetic energy?",
+    "choices": [
+      {
+        "text": "A free electron has no internal energy",
+        "correct": true
+      },
+      {
+        "text": "Its potential energy equals the photon energy",
+        "why": "The photon's energy is shared between ionizing A and the electron's motion. A free electron has no internal energy, so all its energy is kinetic."
+      },
+      {
+        "text": "The electron is still bound to A^+",
+        "why": "After ionization the electron is free, no longer bound. With no internal energy, its energy is all kinetic."
+      },
+      {
+        "text": "Its energy is stored in the A^+ ion instead",
+        "why": "The ion's energy is the separate term E(A^+). The free electron has no internal energy, so E(e^−) = KE."
+      }
+    ],
+    "explanation": "A free electron has no internal energy, so E(e^−) = KE. Rearranging the energy balance then gives KE = hν − [E(A^+) − E(A)] = hν − IE."
+  },
+  {
+    "id": "pc10-pes-einstein-link",
+    "type": "multiple-choice",
+    "prompt": "The PES equation KE = hν − IE has the same form as Einstein's photoelectric equation. What takes the place of the workfunction Φ?",
+    "choices": [
+      {
+        "text": "The vertical ionization energy",
+        "correct": true
+      },
+      {
+        "text": "The photon energy hν",
+        "why": "hν appears in both equations unchanged. The vertical ionization energy, IE, replaces the workfunction Φ."
+      },
+      {
+        "text": "The kinetic energy of the electron",
+        "why": "KE is on the left side of both equations. IE plays the part of Φ: both measure how tightly the electron is bound."
+      },
+      {
+        "text": "Planck's constant h",
+        "why": "h is part of the photon energy hν in both. It is the vertical ionization energy that replaces Φ."
+      }
+    ],
+    "explanation": "In KE = hν − IE the vertical ionization energy takes the place of the workfunction Φ in KE = hν − Φ. Both are measures of the binding energy of an electron: IE for a molecule, Φ for a bulk solid."
+  },
+  {
+    "id": "pc10-pes-ion-states",
+    "type": "multiple-choice",
+    "prompt": "Strictly speaking, what energies does a photoelectron spectrum measure?",
+    "choices": [
+      {
+        "text": "Energies of the positive ion's states",
+        "correct": true
+      },
+      {
+        "text": "Energies of the neutral's excited states",
+        "why": "PES doesn't excite the neutral molecule; it ionizes it. It measures the energies of the positive-ion states formed."
+      },
+      {
+        "text": "Energies of the empty orbitals",
+        "why": "Electrons are removed from occupied orbitals, so empty orbitals don't show up. PES measures the ion states formed by removing single electrons."
+      },
+      {
+        "text": "Energies of the molecule's bonds",
+        "why": "Ionization energies are related to bond energies but aren't the same thing. PES measures the energies of the positive-ion states."
+      }
+    ],
+    "explanation": "PES measures the relative energies of the ground and excited states of the positive ion, formed by removing single electrons from the neutral molecule. In an orbital picture these are read as the energies of the occupied orbitals."
+  },
+  {
+    "id": "pc10-pes-vertical-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the vertical ionization energy of a molecule?",
+    "choices": [
+      {
+        "text": "Energy to form the ion in the neutral's geometry",
+        "correct": true
+      },
+      {
+        "text": "Energy to form the ion in its own relaxed geometry",
+        "why": "That is the adiabatic ionization energy. The vertical one forms the ion with the same geometry as the ground-state neutral molecule."
+      },
+      {
+        "text": "Energy to remove an electron from a bulk solid",
+        "why": "That is the workfunction. The vertical ionization energy refers to an isolated molecule, ionized without its geometry changing."
+      },
+      {
+        "text": "Energy to remove every electron from the molecule",
+        "why": "PES removes a single electron per photon. The vertical ionization energy forms the ion in the neutral's equilibrium geometry."
+      }
+    ],
+    "explanation": "The vertical ionization energy, also called the binding energy, forms the ion in the same geometry as the equilibrium geometry of the ground-state neutral molecule. On a plot of energy against bond length it is a straight vertical arrow."
+  },
+  {
+    "id": "pc10-pes-adiabatic-peak",
+    "type": "multiple-choice",
+    "prompt": "A band in a photoelectron spectrum shows a series of vibrational peaks. Which peak gives the adiabatic ionization energy?",
+    "choices": [
+      {
+        "text": "The lowest-energy peak",
+        "correct": true
+      },
+      {
+        "text": "The tallest peak",
+        "why": "The tallest peak marks the most probable transition, which gives the vertical ionization energy. The adiabatic value is the lowest-energy peak."
+      },
+      {
+        "text": "The highest-energy peak",
+        "why": "That peak leaves the ion with the most vibrational energy. The adiabatic ionization energy is the minimum, reaching the ion's lowest vibrational level."
+      },
+      {
+        "text": "The middle of the band",
+        "why": "No averaging is involved. The adiabatic ionization energy is the minimum, the peak for the ion in its lowest vibrational level."
+      }
+    ],
+    "explanation": "The adiabatic ionization energy is the minimum energy needed: it takes the molecule in v = 0 to the ion in its lowest vibrational level (v = 0). On the spectrum that is the first, lowest-energy peak of the band."
+  },
+  {
+    "id": "pc10-pes-vertical-vs-adiabatic",
+    "type": "multiple-choice",
+    "prompt": "How does a molecule's vertical ionization energy compare with its adiabatic ionization energy?",
+    "choices": [
+      {
+        "text": "The vertical one is greater",
+        "correct": true
+      },
+      {
+        "text": "The adiabatic one is greater",
+        "why": "The adiabatic value is the minimum ionization energy, to the relaxed ion. The vertical value leaves the ion in an unrelaxed geometry and so is greater."
+      },
+      {
+        "text": "They are always exactly equal",
+        "why": "They would match only if the ion had the same geometry as the neutral. The vertical ionization energy is the greater one."
+      },
+      {
+        "text": "It depends on the photon energy used",
+        "why": "Both are properties of the molecule, not of the light. The vertical ionization energy is always greater than the adiabatic one."
+      }
+    ],
+    "explanation": "The adiabatic ionization energy leaves the ion in its relaxed, lowest-energy geometry, while the vertical one leaves it in the neutral's geometry, higher up its potential curve. So the vertical ionization energy is the greater."
+  },
+  {
+    "id": "pc10-pes-most-probable",
+    "type": "multiple-choice",
+    "prompt": "Why is the vertical ionization usually the most intense (tallest) peak in a band?",
+    "choices": [
+      {
+        "text": "Its ion vibrational level overlaps v = 0 the most",
+        "correct": true
+      },
+      {
+        "text": "It needs the least energy of all the peaks",
+        "why": "The lowest-energy peak is the adiabatic one. The vertical peak is tallest because its ion vibrational wavefunction overlaps most with the neutral's v = 0 wavefunction."
+      },
+      {
+        "text": "It comes from the ion's lowest vibrational level",
+        "why": "That is the adiabatic transition. The vertical one goes to whichever ion level overlaps most with the neutral's v = 0 wavefunction."
+      },
+      {
+        "text": "It ejects electrons from several orbitals at once",
+        "why": "Each photon ejects one electron from one orbital. The vertical transition is the most probable because of the best vibrational overlap."
+      }
+    ],
+    "explanation": "The vertical transition goes to the ion vibrational level whose wavefunction overlaps most with the neutral's v = 0 wavefunction. That makes it the most probable transition, where the ion's internuclear separation is similar to the neutral's."
+  },
+  {
+    "id": "pc10-pes-h2-peaks",
+    "type": "multiple-choice",
+    "prompt": "H2's photoelectron spectrum has a single band, from ionizing the 1σ_g electrons, but the band is split into many peaks. What causes the peaks?",
+    "choices": [
+      {
+        "text": "H_2^+ ions formed in different vibrational levels",
+        "correct": true
+      },
+      {
+        "text": "Electrons ejected from several different orbitals",
+        "why": "H2 has only one occupied orbital, 1σ_g, so there is a single band. The peaks come from H_2^+ being left in a range of vibrational levels."
+      },
+      {
+        "text": "Spin-up and spin-down electrons ejected separately",
+        "why": "Both 1σ_g electrons have the same energy, whatever their spin. The peaks come from H_2^+ formed in a range of vibrational levels."
+      },
+      {
+        "text": "Photons of several different energies",
+        "why": "PES uses monochromatic light of one energy. The peaks come from the H_2^+ ion being formed in different vibrational levels."
+      }
+    ],
+    "explanation": "Removing the 1σ_g electron can leave H_2^+ in any of several vibrational levels, each needing a slightly different energy, so the single band splits into a series of peaks. Their spacing gives the ion's vibrational energy spacing."
+  },
+  {
+    "id": "pc10-pes-vibrational-spacing",
+    "type": "numeric",
+    "prompt": "In H2's photoelectron band, the first two vibrational peaks lie at ionization energies of 15.43 eV and 15.70 eV. What is the spacing between these two vibrational levels of the H_2^+ ion, in eV?",
+    "answer": 0.27,
+    "unit": "eV",
+    "explanation": "15.70 eV − 15.43 eV = 0.27 eV. Each peak is the ion formed in a different vibrational level, so the peak spacing is the ion's vibrational energy spacing."
+  },
+  {
+    "id": "pc10-pes-diatomic-geometry",
+    "type": "multiple-choice",
+    "prompt": "The ion formed in a PES experiment can have a different geometry from the neutral molecule. For a diatomic molecule, what is the only geometry change possible?",
+    "choices": [
+      {
+        "text": "A change in bond length",
+        "correct": true
+      },
+      {
+        "text": "A change in bond angle",
+        "why": "A diatomic has a single bond and so no bond angle. Its only geometric variable is the bond length."
+      },
+      {
+        "text": "A change from linear to bent",
+        "why": "Two atoms always lie on a straight line, so a diatomic can't bend. Only its bond length can change."
+      },
+      {
+        "text": "A twist about the bond axis",
+        "why": "Turning two atoms about the line joining them leaves the geometry the same. The only change possible is in bond length."
+      }
+    ],
+    "explanation": "A diatomic's geometry is set by one number, its bond length. If the ion's bond is longer or shorter than the neutral's, the vertical and adiabatic ionization energies differ, and the band shows vibrational structure."
+  },
+  {
+    "id": "pc10-pes-n2-pi-band",
+    "type": "multiple-choice",
+    "prompt": "N2's UV photoelectron spectrum shows bands for the 3σ_g, 1π_u and 2σ_u orbitals. Which band has extensive vibrational structure, showing that removing its electron changes the bonding most?",
+    "choices": [
+      {
+        "text": "The 1π_u band",
+        "correct": true
+      },
+      {
+        "text": "The 3σ_g band",
+        "why": "3σ_g is only weakly bonding, so removing its electron changes the bond little. The 1π_u band shows the extensive vibrational structure."
+      },
+      {
+        "text": "The 2σ_u band",
+        "why": "2σ_u is only weakly antibonding, so its band shows little vibrational structure. The 1π_u band is the one with extensive structure."
+      },
+      {
+        "text": "None of them; N2's bands are single peaks",
+        "why": "The 1π_u band has a long series of vibrational peaks, because removing a π bonding electron changes N2's bonding significantly."
+      }
+    ],
+    "explanation": "The 1π_u band shows extensive vibrational structure, so removing a 1π_u electron changes N2's bonding significantly. The 3σ_g and 2σ_u orbitals are only weakly bonding and weakly antibonding."
+  },
+  {
+    "id": "pc10-pes-hcl-pi-band",
+    "type": "multiple-choice",
+    "prompt": "In HCl's photoelectron spectrum, the 1π band shows almost no vibrational structure, unlike the 3σ band. Why?",
+    "choices": [
+      {
+        "text": "The 1π orbitals are nonbonding Cl 3p orbitals",
+        "correct": true
+      },
+      {
+        "text": "The 1π orbitals are strongly bonding",
+        "why": "Removing a strongly bonding electron would change the bond and give a long vibrational series. The 1π orbitals are nonbonding, so the bond barely changes."
+      },
+      {
+        "text": "The 1π electrons are too tightly bound to eject",
+        "why": "The 1π band appears in the spectrum, so its electrons are ejected. It has little structure because the 1π orbitals are nonbonding."
+      },
+      {
+        "text": "The 1π orbitals are mostly H 1s in character",
+        "why": "H 1s contributes only to the σ orbitals. The 1π orbitals are Cl 3p orbitals perpendicular to the bond, and nonbonding."
+      }
+    ],
+    "explanation": "The 1π orbitals are the Cl 3p orbitals perpendicular to the bond axis, unaffected by bonding. Removing a 1π electron hardly changes the bond, so the band has negligible vibrational structure, while the bonding 3σ band does show structure."
+  },
+  {
+    "id": "pc10-pes-orbital-stability",
+    "type": "multiple-choice",
+    "prompt": "Treating each band as the removal of an electron from one orbital, what does a larger ionization energy tell you about that orbital?",
+    "choices": [
+      {
+        "text": "It is more stabilized (lower in energy)",
+        "correct": true
+      },
+      {
+        "text": "It is higher in energy and less stable",
+        "why": "A higher-energy orbital holds its electrons less tightly, so it has a smaller ionization energy. A larger ionization energy means a deeper, more stabilized orbital."
+      },
+      {
+        "text": "It must be an antibonding orbital",
+        "why": "Antibonding orbitals tend to be high in energy, with small ionization energies. A large ionization energy marks a deep, stabilized orbital such as water's 2a_1."
+      },
+      {
+        "text": "It holds more electrons than the others",
+        "why": "The ionization energy reflects how tightly an electron is held, not how many electrons share the orbital. A larger value means a more stabilized orbital."
+      }
+    ],
+    "explanation": "To a first approximation each ionization removes an electron from one orbital, so ionization energies measure orbital stabilities. The larger the ionization energy, the lower and more stabilized the orbital (by Koopmans' theorem, I_j = −ε_j)."
+  },
+  {
+    "id": "pc10-pes-ke-trend",
+    "type": "multiple-choice",
+    "prompt": "Water is irradiated with 21.2 eV photons and gives bands at ionization energies of 12.6, 14.7 and 18.5 eV. Electrons from which band leave with the most kinetic energy?",
+    "choices": [
+      {
+        "text": "The 12.6 eV band",
+        "correct": true
+      },
+      {
+        "text": "The 18.5 eV band",
+        "why": "Those electrons are the most tightly bound, so they keep the least kinetic energy. KE = hν − IE is largest for the smallest ionization energy."
+      },
+      {
+        "text": "The 14.7 eV band",
+        "why": "KE = hν − IE is largest when IE is smallest, and 12.6 eV is smaller than 14.7 eV."
+      },
+      {
+        "text": "All bands give the same kinetic energy",
+        "why": "The photon energy is the same, but the ionization energies differ, so the kinetic energies differ: KE = hν − IE."
+      }
+    ],
+    "explanation": "With a fixed hν, KE = hν − IE, so the least tightly bound electrons, from the 1b_1 HOMO at 12.6 eV, come out fastest."
+  },
+  {
+    "id": "pc10-pes-ie-from-ke",
+    "type": "numeric",
+    "prompt": "In a UPS experiment on water, photons of energy 21.2 eV eject a group of electrons with a kinetic energy of 6.5 eV. Using IE = hν − KE, what is the ionization energy of the orbital they came from, in eV?",
+    "answer": 14.7,
+    "unit": "eV",
+    "explanation": "IE = 21.2 eV − 6.5 eV = 14.7 eV. That matches water's 3a_1 orbital in the section's table of experimental ionization energies."
+  },
+  {
+    "id": "pc10-pes-ke-1b2",
+    "type": "numeric",
+    "prompt": "Water's 1b_2 electrons have an ionization energy of 18.5 eV. Using KE = hν − IE, what kinetic energy do they have when ejected by 21.2 eV photons, in eV?",
+    "answer": 2.7,
+    "unit": "eV",
+    "explanation": "KE = 21.2 eV − 18.5 eV = 2.7 eV. The more tightly bound an electron is, the less of the photon's energy it keeps as kinetic energy."
+  },
+  {
+    "id": "pc10-pes-band-spacing",
+    "type": "numeric",
+    "prompt": "In water's photoelectron spectrum, the first band (1b_1) lies at an ionization energy of 12.6 eV and the second (3a_1) at 14.7 eV. How far apart are the two bands, in eV?",
+    "answer": 2.1,
+    "unit": "eV",
+    "explanation": "14.7 eV − 12.6 eV = 2.1 eV. In the orbital picture, this is roughly the energy gap between the 1b_1 and 3a_1 orbitals."
+  },
+  {
+    "id": "pc10-pes-water-2a1-missing",
+    "type": "multiple-choice",
+    "prompt": "Water's 2a_1 electrons have an ionization energy of 32.2 eV. Why doesn't a spectrum recorded with 21.2 eV photons show a 2a_1 band?",
+    "choices": [
+      {
+        "text": "Each photon has too little energy",
+        "correct": true
+      },
+      {
+        "text": "The 2a_1 orbital is empty",
+        "why": "2a_1 holds two electrons in water's ground state. It is missing because 21.2 eV is less than its 32.2 eV ionization energy."
+      },
+      {
+        "text": "Its electrons leave too fast to be detected",
+        "why": "No electrons leave at all: KE = hν − IE would be negative. The photons simply can't ionize 2a_1."
+      },
+      {
+        "text": "2a_1 is nonbonding, so it gives no band",
+        "why": "Nonbonding orbitals do give bands, like water's 1b_1. 2a_1 is missing because the photons lack the 32.2 eV needed."
+      }
+    ],
+    "explanation": "A photon can eject an electron only if hν is at least the ionization energy. Since 21.2 eV < 32.2 eV, the deep 2a_1 orbital is out of reach, and more energetic photons would be needed to see it."
+  },
+  {
+    "id": "pc10-pes-bands-seen",
+    "type": "numeric",
+    "prompt": "Water's valence ionization energies are 12.6, 14.7, 18.5 and 32.2 eV. A photon can eject an electron only if its energy is at least the ionization energy. How many of these bands could appear in a spectrum recorded with 16.7 eV photons?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Only 12.6 eV (1b_1) and 14.7 eV (3a_1) are below 16.7 eV, so 2 bands appear. The 1b_2 (18.5 eV) and 2a_1 (32.2 eV) electrons are too tightly bound for these photons."
+  },
+  {
+    "id": "pc10-pes-3a1-excited-ion",
+    "type": "multiple-choice",
+    "prompt": "Removing an electron from water's 1b_1 HOMO gives H2O^+ in its ground state. What state of H2O^+ is formed when an electron is removed from 3a_1 instead?",
+    "choices": [
+      {
+        "text": "An excited state of the ion",
+        "correct": true
+      },
+      {
+        "text": "The same ground state of the ion",
+        "why": "The ground state of H2O^+ has the hole in 1b_1, the HOMO. A hole in the lower 3a_1 orbital gives an excited state."
+      },
+      {
+        "text": "An excited state of neutral water",
+        "why": "An electron has left, so the product is the H2O^+ ion. With the hole in 3a_1, the ion is in an excited state."
+      },
+      {
+        "text": "A doubly charged ion",
+        "why": "Only one electron is removed per photon, so the ion is singly charged. The hole in 3a_1 leaves it in an excited state."
+      }
+    ],
+    "explanation": "Removing an electron from 3a_1 gives (1a_1)^2(2a_1)^2(1b_2)^2(3a_1)^1(1b_1)^2, an excited state of H2O^+. Each band in the spectrum corresponds to a different state of the ion."
+  },
+  {
+    "id": "pc10-pes-hf-deviation-reason",
+    "type": "multiple-choice",
+    "prompt": "For water, the Hartree–Fock orbital energies (with sign changed) are all a little larger than the measured ionization energies. What does the section give as the cause?",
+    "choices": [
+      {
+        "text": "Orbital relaxation and electron correlation",
+        "correct": true
+      },
+      {
+        "text": "Errors in measuring the kinetic energies",
+        "why": "The gaps are systematic, not random measurement errors. They come from orbital relaxation in the ion and from differences in electron correlation."
+      },
+      {
+        "text": "The photon energy being too low to reach them",
+        "why": "Too low a photon energy hides a band entirely; it doesn't shift the others. The deviations come from orbital relaxation and electron correlation."
+      },
+      {
+        "text": "Vibrations of the water molecule",
+        "why": "Vibrations make fine structure within bands, not these gaps. The section credits orbital relaxation and differences in correlation energy."
+      }
+    ],
+    "explanation": "The small deviations between orbital energies and ionization energies come from orbital relaxation (the remaining electrons rearrange in the ion) and from differences in electron correlation energy between the molecule and the ions."
+  },
+  {
+    "id": "pc10-pes-hf-gap-2a1",
+    "type": "numeric",
+    "prompt": "For water's 2a_1 orbital, the Hartree–Fock orbital energy (sign changed) is 36.7 eV and the experimental ionization energy is 32.2 eV. By how much does the Hartree–Fock value exceed experiment, in eV?",
+    "answer": 4.5,
+    "unit": "eV",
+    "explanation": "36.7 eV − 32.2 eV = 4.5 eV. This is the largest gap in the table; for 1b_1 it is only 13.8 − 12.6 = 1.2 eV. The gaps come from orbital relaxation and electron correlation."
+  },
+  {
+    "id": "pc10-pes-water-three-peaks",
+    "type": "multiple-choice",
+    "prompt": "If water had two identical O–H bonds and two identical lone pairs, as the simple valence bond picture says, how many main peaks would its spectrum show, and how many does it really show?",
+    "choices": [
+      {
+        "text": "Two predicted; three observed",
+        "correct": true
+      },
+      {
+        "text": "Four predicted; four observed",
+        "why": "Identical bonds would share one peak and identical lone pairs another, so the valence bond prediction is two. The spectrum actually shows three."
+      },
+      {
+        "text": "Two predicted; two observed",
+        "why": "If that were so, the spectrum would support the valence bond picture. In fact it shows three peaks, as the MO picture predicts."
+      },
+      {
+        "text": "Three predicted; two observed",
+        "why": "It's the other way round. The valence bond picture predicts two peaks, and the spectrum shows three, in line with the molecular orbitals."
+      }
+    ],
+    "explanation": "Two identical bonds and two identical lone pairs would give two (degenerate) peaks. The spectrum shows three major peaks, in the positions expected for the molecular orbitals 1b_1, 3a_1 and 1b_2, so it supports the MO picture."
+  },
+  {
+    "id": "pc10-pes-three-centered",
+    "type": "multiple-choice",
+    "prompt": "Water's 2a_1, 1b_2 and 3a_1 orbitals are described as 3-centered molecular orbitals. What does that mean?",
+    "choices": [
+      {
+        "text": "All three atoms contribute to each",
+        "correct": true
+      },
+      {
+        "text": "Each one holds three electrons",
+        "why": "An orbital holds at most two electrons. 3-centered means O and both H atoms contribute to the orbital."
+      },
+      {
+        "text": "Each one is centered on the oxygen atom alone",
+        "why": "That describes 1b_1, the oxygen lone pair. 2a_1, 1b_2 and 3a_1 have contributions from O and both H atoms."
+      },
+      {
+        "text": "Each one has three nodal planes",
+        "why": "The name is about atoms, not nodes. These orbitals spread over all three atoms of water."
+      }
+    ],
+    "explanation": "The 2a_1, 1b_2 and 3a_1 orbitals each have contributions from O and both H atoms, so they are really 3-centered, delocalized orbitals, unlike the 2-center bonds of valence bond theory."
+  },
+  {
+    "id": "pc10-pes-keep-hybrids",
+    "type": "multiple-choice",
+    "prompt": "If PES shows that water's electrons are in delocalized molecular orbitals, why does the section say chemists still use hybridization and two-center bonds?",
+    "choices": [
+      {
+        "text": "They are useful, not because they are real",
+        "correct": true
+      },
+      {
+        "text": "PES proves they are the true orbitals",
+        "why": "PES supports the molecular orbital picture, with three peaks, not the hybrid one. Hybrids are kept for their usefulness."
+      },
+      {
+        "text": "Molecular orbitals can't be calculated",
+        "why": "Water's molecular orbitals are calculated (Section 10.3) and match the spectrum. Hybrids and two-center bonds are kept because they are useful."
+      },
+      {
+        "text": "They give more accurate ionization energies",
+        "why": "The hybrid picture predicts the wrong number of PES peaks. It is kept as a useful model, not for its accuracy."
+      }
+    ],
+    "explanation": "The section concludes that we keep hybridization and two-center bonds because they are useful, not because they represent reality. The bonds can be thought of as a build-up of the total electron density, the sum of all the orbital contributions."
+  }
+]

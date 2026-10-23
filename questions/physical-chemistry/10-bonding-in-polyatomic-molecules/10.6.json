@@ -1,0 +1,567 @@
+[
+  {
+    "id": "pc10-butadiene-vinyl",
+    "type": "multiple-choice",
+    "prompt": "How can 1,3-butadiene, C4H6, be viewed structurally?",
+    "choices": [
+      {
+        "text": "Two vinyl groups joined by a single bond",
+        "correct": true
+      },
+      {
+        "text": "Two vinyl groups joined by a double bond",
+        "why": "The two vinyl groups are joined by a single bond; each vinyl group carries its own C=C double bond."
+      },
+      {
+        "text": "A ring of four carbons with two double bonds",
+        "why": "That would be cyclobutadiene, C4H4. 1,3-Butadiene is an open chain: two vinyl groups joined by a single bond."
+      },
+      {
+        "text": "A four-carbon chain with one triple bond",
+        "why": "Butadiene, a diene, has two C=C double bonds, at positions 1 and 3, separated by a single bond."
+      }
+    ],
+    "explanation": "1,3-Butadiene, C4H6, is a simple conjugated diene: two vinyl groups, CH2=CH–, joined by a single bond. That single bond separates its two double bonds."
+  },
+  {
+    "id": "pc10-butadiene-trans",
+    "type": "multiple-choice",
+    "prompt": "At room temperature, which form does most 1,3-butadiene take?",
+    "choices": [
+      {
+        "text": "The trans conformer, about 96%",
+        "correct": true
+      },
+      {
+        "text": "The cis conformer, about 96%",
+        "why": "Cis is the minor form. The trans conformer is the more stable one and makes up 96%."
+      },
+      {
+        "text": "An even 50:50 mix of cis and trans",
+        "why": "The two conformers aren't equally stable; trans is lower in energy and makes up 96%."
+      },
+      {
+        "text": "A form with all four carbons in a ring",
+        "why": "Butadiene is an open chain, which can take a cis or a trans conformation. 96% of it is trans."
+      }
+    ],
+    "explanation": "About 96% of butadiene exists as the trans conformer at room temperature. Trans is 2.3 kcal/mol more stable than cis."
+  },
+  {
+    "id": "pc10-butadiene-cis-huckel",
+    "type": "multiple-choice",
+    "prompt": "Simple Hückel theory sets β only between bonded neighbors. What does it predict for the π energies of cis-butadiene compared with trans-butadiene?",
+    "choices": [
+      {
+        "text": "The same energies, as the same atoms are bonded",
+        "correct": true
+      },
+      {
+        "text": "Lower energies, as C_1 and C_4 are closer in cis",
+        "why": "C_1 and C_4 aren't bonded, so their resonance integral is 0 in both conformers. Hückel theory sees only which atoms are bonded."
+      },
+      {
+        "text": "Higher energies, as cis is less stable",
+        "why": "Hückel theory can't see the 2.3 kcal/mol conformer difference. Its determinant depends only on which atoms are bonded, the same in both."
+      },
+      {
+        "text": "Benzene-like energies, as cis forms a ring",
+        "why": "cis-Butadiene isn't a ring: C_1 and C_4 aren't bonded, so H_14 = 0 just as in trans."
+      }
+    ],
+    "explanation": "The Hückel determinant depends only on which atoms are neighbors, and the chain C_1–C_2–C_3–C_4 is the same in both conformers. So simple Hückel theory gives identical π levels and can't describe the energy of cis–trans isomerization (Exercise 10.6.1)."
+  },
+  {
+    "id": "pc10-butadiene-beta-pair",
+    "type": "multiple-choice",
+    "prompt": "In butadiene's Hückel secular equations (chain C_1–C_2–C_3–C_4), an entry is β when i = j ± 1 and 0 otherwise. Which pair of carbons is linked by β?",
+    "choices": [
+      {
+        "text": "C_2 and C_3",
+        "correct": true
+      },
+      {
+        "text": "C_1 and C_3",
+        "why": "C_1 and C_3 are two places apart, not neighbors, so their entry is 0."
+      },
+      {
+        "text": "C_1 and C_4",
+        "why": "The two ends of the chain aren't bonded to each other, so their entry is 0."
+      },
+      {
+        "text": "C_2 and C_4",
+        "why": "C_2 and C_4 are two places apart, not neighbors, so their entry is 0."
+      }
+    ],
+    "explanation": "Only neighboring atoms (i = j ± 1) are linked by β: C_1–C_2, C_2–C_3 and C_3–C_4. All other pairs get 0 under the Hückel assumptions."
+  },
+  {
+    "id": "pc10-butadiene-quadratic",
+    "type": "multiple-choice",
+    "prompt": "Butadiene's Hückel determinant expands to x^4 − 3x^2 + 1 = 0. How does the section solve this 4th-order equation without numerical methods?",
+    "choices": [
+      {
+        "text": "By treating it as a quadratic in x^2",
+        "correct": true
+      },
+      {
+        "text": "By dropping the small x^4 term",
+        "why": "Nothing is dropped. Writing y = x^2 turns it into y^2 − 3y + 1 = 0, a quadratic that is solved exactly."
+      },
+      {
+        "text": "By guessing the root x = 1",
+        "why": "x = 1 gives 1 − 3 + 1 = −1, not 0, so it isn't a root. The equation is solved as a quadratic in x^2."
+      },
+      {
+        "text": "By using the ethylene roots x = ±1",
+        "why": "Those solve x^2 − 1 = 0, not this equation. Here the roots come from treating it as a quadratic in x^2."
+      }
+    ],
+    "explanation": "Only even powers of x appear, so the equation is a quadratic in x^2. The quadratic formula gives x^2 = (3 ± √5)/2, so x = ±0.618 and ±1.618."
+  },
+  {
+    "id": "pc10-butadiene-lowest",
+    "type": "multiple-choice",
+    "prompt": "Butadiene's Hückel π energies are α ± 0.618β and α ± 1.618β. Since β is negative, which is the lowest?",
+    "choices": [
+      {
+        "text": "α + 1.618β",
+        "correct": true
+      },
+      {
+        "text": "α − 1.618β",
+        "why": "With β < 0, subtracting 1.618β raises the energy. This is the highest level, E_4."
+      },
+      {
+        "text": "α + 0.618β",
+        "why": "This is E_2. It is below α, but not as far below as α + 1.618β."
+      },
+      {
+        "text": "α − 0.618β",
+        "why": "This is E_3, which lies above α."
+      }
+    ],
+    "explanation": "Because β < 0, the more β is added, the lower the energy. So E_1 = α + 1.618β is lowest, followed by α + 0.618β, α − 0.618β and α − 1.618β."
+  },
+  {
+    "id": "pc10-butadiene-config",
+    "type": "multiple-choice",
+    "prompt": "Each carbon gives one electron to butadiene's π system. What is its ground-state π configuration?",
+    "choices": [
+      {
+        "text": "π_1^2π_2^2",
+        "correct": true
+      },
+      {
+        "text": "π_1^2π_2^1π_3^1",
+        "why": "π_2 and π_3 have different energies, so the fourth electron pairs in π_2 rather than going up to π_3."
+      },
+      {
+        "text": "π_1^4",
+        "why": "An orbital holds at most two electrons, so the second pair must go into π_2."
+      },
+      {
+        "text": "π_1^2",
+        "why": "That holds only 2 electrons. Butadiene has 4 π electrons, one from each carbon."
+      }
+    ],
+    "explanation": "Four π electrons fill the two lowest orbitals, two each: π_1^2π_2^2. The two antibonding orbitals, π_3 and π_4, stay empty."
+  },
+  {
+    "id": "pc10-butadiene-bonding-count",
+    "type": "multiple-choice",
+    "prompt": "Butadiene's π energies are α + 1.618β, α + 0.618β, α − 0.618β and α − 1.618β. How many of its π orbitals are bonding, lying below α?",
+    "choices": [
+      {
+        "text": "Two, ψ_1 and ψ_2",
+        "correct": true
+      },
+      {
+        "text": "One, ψ_1 only",
+        "why": "ψ_2 at α + 0.618β is also below α, since β < 0."
+      },
+      {
+        "text": "Three, ψ_1 to ψ_3",
+        "why": "ψ_3 at α − 0.618β lies above α, so it is antibonding."
+      },
+      {
+        "text": "All four",
+        "why": "ψ_3 and ψ_4 lie above α (β < 0), so they are antibonding."
+      }
+    ],
+    "explanation": "With β < 0, α + 1.618β and α + 0.618β lie below α and are bonding, while α − 0.618β and α − 1.618β lie above α and are antibonding. The four π electrons exactly fill the two bonding orbitals."
+  },
+  {
+    "id": "pc10-butadiene-reference",
+    "type": "multiple-choice",
+    "prompt": "To find butadiene's delocalization energy, its π energy is compared with what reference?",
+    "choices": [
+      {
+        "text": "Two localized double bonds",
+        "correct": true
+      },
+      {
+        "text": "Four isolated carbon p orbitals, 4α",
+        "why": "Comparing with 4α would give the total π bonding energy. The reference for delocalization is two localized double bonds, 2 × 2(α + β)."
+      },
+      {
+        "text": "The cis conformer of butadiene",
+        "why": "The cis–trans difference is ignored in this treatment. The comparison is with two localized, ethylene-like double bonds."
+      },
+      {
+        "text": "Benzene, with three double bonds",
+        "why": "Benzene isn't involved. The reference is butadiene's dominant structure: two localized double bonds, each like ethylene."
+      }
+    ],
+    "explanation": "If butadiene had only its two localized double bonds, its π energy would be twice ethylene's: 2 × 2(α + β) = 4α + 4β. The delocalization energy is how far the real π energy lies below this."
+  },
+  {
+    "id": "pc10-butadiene-deloc-definition",
+    "type": "multiple-choice",
+    "prompt": "What is meant by the delocalization energy of a molecule such as butadiene?",
+    "choices": [
+      {
+        "text": "Extra stability from π electrons spreading out",
+        "correct": true
+      },
+      {
+        "text": "The energy needed to remove one of its π electrons",
+        "why": "That is an ionization energy. Delocalization energy is the extra stabilization from π electrons extending over the whole molecule."
+      },
+      {
+        "text": "The energy gap between cis and trans forms",
+        "why": "That is the 2.3 kcal/mol conformer difference, which this treatment ignores."
+      },
+      {
+        "text": "The energy held in the σ-bond framework",
+        "why": "The σ bonds don't contribute. Delocalization energy is a π-electron effect: extra stability from delocalization."
+      }
+    ],
+    "explanation": "The delocalization energy is the extra stabilization resulting from the electrons extending over the whole molecule. For butadiene it is the amount by which the π energy lies below that of two localized double bonds."
+  },
+  {
+    "id": "pc10-butadiene-sigma-excluded",
+    "type": "multiple-choice",
+    "prompt": "When butadiene's π energy is compared with that of two localized double bonds, why isn't the central C–C σ bond counted?",
+    "choices": [
+      {
+        "text": "Hückel energies include only the π electrons",
+        "correct": true
+      },
+      {
+        "text": "The central C–C bond has no electrons in it",
+        "why": "It is a σ bond holding two electrons. It is left out because the comparison uses only π-electron energies."
+      },
+      {
+        "text": "Its energy is exactly β",
+        "why": "β is a resonance integral between p orbitals in the π system, not the energy of a σ bond."
+      },
+      {
+        "text": "It breaks when the π electrons delocalize",
+        "why": "The σ framework stays intact. It simply doesn't contribute to the π-electron energies being compared."
+      }
+    ],
+    "explanation": "Hückel theory treats only the π electrons, with the σ framework taken as fixed. So the σ bond does not contribute, and the delocalization energy compares π energies alone."
+  },
+  {
+    "id": "pc10-butadiene-vb-resonance",
+    "type": "multiple-choice",
+    "prompt": "In valence bond theory, what accounts for the stabilization that MO theory calls the delocalization energy?",
+    "choices": [
+      {
+        "text": "Resonance among several structures",
+        "correct": true
+      },
+      {
+        "text": "Hybridization of the carbon atoms",
+        "why": "Hybrids describe the σ bonds. In valence bond theory the delocalization energy appears as stabilization from resonance."
+      },
+      {
+        "text": "Repulsion between the π electrons",
+        "why": "Repulsion would raise the energy, not lower it. The stabilization comes from resonance among several structures."
+      },
+      {
+        "text": "Overlap of the hydrogen 1s orbitals",
+        "why": "The H 1s orbitals are part of the σ framework. Valence bond theory explains the stabilization by resonance."
+      }
+    ],
+    "explanation": "Valence bond theory uses two-center bonds, so it can't spread one bond over the molecule. Instead it writes several resonance structures, and mixing them gives a resonance stabilization akin to the delocalization energy."
+  },
+  {
+    "id": "pc10-butadiene-minor-structures",
+    "type": "multiple-choice",
+    "prompt": "Of butadiene's resonance structures, the one with two localized double bonds dominates. Do the others matter?",
+    "choices": [
+      {
+        "text": "Yes; they add a stabilization energy",
+        "correct": true
+      },
+      {
+        "text": "No; the dominant one describes it exactly",
+        "why": "If it did, there would be no delocalization energy, yet one is observed experimentally compared to two ethylene molecules."
+      },
+      {
+        "text": "No; minor structures always raise the energy",
+        "why": "Mixing in other structures lowers the energy. That resonance stabilization is akin to the delocalization energy."
+      },
+      {
+        "text": "Yes; they make butadiene less stable",
+        "why": "They make it more stable: the extra structures give a stabilization akin to the delocalization energy."
+      }
+    ],
+    "explanation": "The dominant structure doesn't describe butadiene exclusively. The other resonance structures also contribute and give a stabilization energy, which is why a delocalization energy is observed experimentally compared to two ethylene molecules."
+  },
+  {
+    "id": "pc10-butadiene-vb-amplitudes",
+    "type": "multiple-choice",
+    "prompt": "In valence bond theory, how are the amplitudes of the resonance structures in a molecule's wavefunction found?",
+    "choices": [
+      {
+        "text": "By variational optimization of the energy",
+        "correct": true
+      },
+      {
+        "text": "They are all simply set equal to each other",
+        "why": "Equal weights aren't assumed; in butadiene one structure dominates. The amplitudes come from minimizing the energy."
+      },
+      {
+        "text": "By counting the double bonds in each",
+        "why": "Counting bonds doesn't fix the amplitudes. They are found by a variational optimization that gives the lowest energy."
+      },
+      {
+        "text": "From the Hückel MO coefficients",
+        "why": "Coefficients such as 0.37 and 0.60 belong to MOs built from p orbitals, not to resonance structures. VB amplitudes come from a variational optimization."
+      }
+    ],
+    "explanation": "The true valence bond description is a superposition of resonance structures. Its amplitudes are determined by a variational optimization that finds the lowest possible energy."
+  },
+  {
+    "id": "pc10-butadiene-mo-intrinsic",
+    "type": "multiple-choice",
+    "prompt": "Why is delocalization energy described as intrinsic to molecular orbital theory?",
+    "choices": [
+      {
+        "text": "Its MOs spread over more than two atoms",
+        "correct": true
+      },
+      {
+        "text": "MO theory is built on two-center bonds",
+        "why": "It's the reverse: two-center bonds belong to valence bond theory. MO theory breaks that concept with orbitals over the whole molecule."
+      },
+      {
+        "text": "MO theory includes all electron repulsion",
+        "why": "Hückel MO theory doesn't even calculate electron–electron repulsion. Delocalization comes from MOs that spread beyond one pair of atoms."
+      },
+      {
+        "text": "MO theory uses resonance structures",
+        "why": "Resonance structures are the valence bond way of describing it. In MO theory delocalization is built into orbitals that span many atoms."
+      }
+    ],
+    "explanation": "Delocalization energy results from breaking the two-center bond concept: molecular orbitals spread over more than just one pair of atoms. Valence bond theory, a two-center theory, describes the same effect as resonance."
+  },
+  {
+    "id": "pc10-butadiene-psi1-largest",
+    "type": "multiple-choice",
+    "prompt": "Butadiene's lowest π orbital is ψ_1 = 0.37|p_1⟩ + 0.60|p_2⟩ + 0.60|p_3⟩ + 0.37|p_4⟩. Where are its largest coefficients?",
+    "choices": [
+      {
+        "text": "On the two middle carbons, C_2 and C_3",
+        "correct": true
+      },
+      {
+        "text": "On the two end carbons, C_1 and C_4",
+        "why": "The ends carry 0.37. The larger coefficient, 0.60, is on the middle carbons."
+      },
+      {
+        "text": "Equally on all four carbons",
+        "why": "The coefficients differ: 0.37 at the ends and 0.60 in the middle."
+      },
+      {
+        "text": "On C_1 and C_2, the first double bond",
+        "why": "ψ_1 is symmetric about the middle of the chain: C_1 and C_4 have 0.37, while C_2 and C_3 have 0.60."
+      }
+    ],
+    "explanation": "ψ_1 has 0.60 on C_2 and C_3 and 0.37 on C_1 and C_4. All four coefficients have the same sign, so ψ_1 has no sign change along the chain and is the lowest π orbital."
+  },
+  {
+    "id": "pc10-butadiene-nodes-energy",
+    "type": "multiple-choice",
+    "prompt": "How does the energy of butadiene's π orbitals relate to their number of nodes?",
+    "choices": [
+      {
+        "text": "The energy rises as the nodes increase",
+        "correct": true
+      },
+      {
+        "text": "The energy falls as the nodes increase",
+        "why": "It's the other way: ψ_1 has no sign change and is lowest, while ψ_4 changes sign at every bond and is highest."
+      },
+      {
+        "text": "The energy doesn't depend on the nodes",
+        "why": "There is a clear correlation: each higher orbital has one more node."
+      },
+      {
+        "text": "All four orbitals have the same nodes",
+        "why": "They differ: ψ_1 has no sign change along the chain, while ψ_4 changes sign between every pair of neighbors."
+      }
+    ],
+    "explanation": "Butadiene's π energies correlate with the number of nodes: more nodes, higher energy. This is the same trend seen for the particle in a box and for atomic orbitals."
+  },
+  {
+    "id": "pc10-butadiene-homo",
+    "type": "multiple-choice",
+    "prompt": "Which of butadiene's π orbitals is its HOMO?",
+    "choices": [
+      {
+        "text": "ψ_2, at α + 0.618β",
+        "correct": true
+      },
+      {
+        "text": "ψ_1, at α + 1.618β",
+        "why": "ψ_1 is filled, but it is the lowest orbital. The highest filled one is ψ_2."
+      },
+      {
+        "text": "ψ_3, at α − 0.618β",
+        "why": "ψ_3 is empty; it is the LUMO."
+      },
+      {
+        "text": "ψ_4, at α − 1.618β",
+        "why": "ψ_4 is the highest π orbital, and it is empty."
+      }
+    ],
+    "explanation": "The four π electrons fill ψ_1 and ψ_2, so ψ_2 (α + 0.618β) is the highest occupied orbital. ψ_3 (α − 0.618β) is the lowest unoccupied one."
+  },
+  {
+    "id": "pc10-butadiene-p-orbitals",
+    "type": "multiple-choice",
+    "prompt": "In Hückel theory, butadiene's π molecular orbitals are linear combinations of which atomic orbitals?",
+    "choices": [
+      {
+        "text": "The p orbitals on the four carbons",
+        "correct": true
+      },
+      {
+        "text": "The six hydrogen 1s orbitals",
+        "why": "The H 1s orbitals belong to the σ framework. The π MOs combine the p orbitals on the four carbons."
+      },
+      {
+        "text": "The sp^2 hybrids on the four carbons",
+        "why": "The sp^2 hybrids form the σ bonds. The π MOs use the p orbitals left out of the σ network."
+      },
+      {
+        "text": "Two ethylene π orbitals, kept separate",
+        "why": "Keeping two π bonds separate is the localized picture. Hückel theory mixes all four p orbitals: ψ_i = Σ_j c_ij|p_j⟩."
+      }
+    ],
+    "explanation": "Each π MO is ψ_i = c_i1|p_1⟩ + c_i2|p_2⟩ + c_i3|p_3⟩ + c_i4|p_4⟩, a combination of the four carbon p orbitals that are not part of the σ-bonding network."
+  },
+  {
+    "id": "pc10-butadiene-normalized",
+    "type": "multiple-choice",
+    "prompt": "For butadiene's ψ_1, the squared coefficients add up to 0.37^2 + 0.60^2 + 0.60^2 + 0.37^2 ≈ 1. With Hückel's S_ij = 0 for i ≠ j, what does this show?",
+    "choices": [
+      {
+        "text": "ψ_1 is normalized",
+        "correct": true
+      },
+      {
+        "text": "ψ_1 is orthogonal to itself",
+        "why": "An orbital can't be orthogonal to itself. ⟨ψ_1|ψ_1⟩ = 1 means it is normalized."
+      },
+      {
+        "text": "ψ_1 has no nodes",
+        "why": "Nodes come from sign changes in the coefficients, not from the sum of their squares. A sum of 1 means ψ_1 is normalized."
+      },
+      {
+        "text": "ψ_1 has energy α + β",
+        "why": "Squared coefficients don't give the energy; ψ_1 lies at α + 1.618β. A sum of 1 shows normalization."
+      }
+    ],
+    "explanation": "With S_ij = 0 (i ≠ j) and S_ii = 1, ⟨ψ_1|ψ_1⟩ is just the sum of the squared coefficients: 0.137 + 0.360 + 0.360 + 0.137 = 0.99, which is 1 within rounding. So ψ_1 is normalized."
+  },
+  {
+    "id": "pc10-butadiene-symmetric",
+    "type": "multiple-choice",
+    "prompt": "How are butadiene's four π energies, α ± 0.618β and α ± 1.618β, arranged around α?",
+    "choices": [
+      {
+        "text": "In pairs, equally far above and below α",
+        "correct": true
+      },
+      {
+        "text": "All four lie below α, as all are bonding",
+        "why": "Two lie below α (bonding) and two above it (antibonding), since β < 0."
+      },
+      {
+        "text": "All four lie above α, as β is negative",
+        "why": "With β < 0, α + 1.618β and α + 0.618β lie below α."
+      },
+      {
+        "text": "Equally spaced, one |β| apart from the next",
+        "why": "The spacings are 1.000|β|, 1.236|β| and 1.000|β|, so they are not all equal."
+      }
+    ],
+    "explanation": "Each energy α + kβ is matched by α − kβ: two bonding levels lie below α, and two antibonding levels mirror them above it."
+  },
+  {
+    "id": "pc10-butadiene-connection-ones",
+    "type": "numeric",
+    "prompt": "In butadiene's connection matrix, the diagonal holds x, each pair of bonded carbons is marked by 1 (once above and once below the diagonal), and every other pair by 0. For the chain C_1–C_2–C_3–C_4, how many 1s does the matrix contain?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The bonded pairs are C_1–C_2, C_2–C_3 and C_3–C_4. Each appears twice, once above and once below the diagonal, so there are 3 × 2 = 6 ones."
+  },
+  {
+    "id": "pc10-butadiene-x-squared",
+    "type": "numeric",
+    "prompt": "The roots of butadiene's equation x^4 − 3x^2 + 1 = 0 satisfy x^2 = (3 ± √5)/2. Using √5 = 2.236, what is the larger value of x^2? (Give it as a decimal.)",
+    "answer": 2.618,
+    "explanation": "x^2 = (3 + 2.236)/2 = 5.236/2 = 2.618. Its square root, x = ±1.618, gives the outermost energies α ± 1.618β."
+  },
+  {
+    "id": "pc10-butadiene-total-pi",
+    "type": "numeric",
+    "prompt": "Butadiene's four π electrons fill E_1 = α + 1.618β and E_2 = α + 0.618β, two electrons in each. The total π energy is 4α plus a number times β. What is the number? (Give it as a decimal.)",
+    "answer": 4.472,
+    "explanation": "E_(π) = 2(α + 1.618β) + 2(α + 0.618β) = 4α + (3.236 + 1.236)β = 4α + 4.472β."
+  },
+  {
+    "id": "pc10-butadiene-deloc-beta",
+    "type": "numeric",
+    "prompt": "Hückel theory gives butadiene a total π energy of 4α + 4.472β, while two localized double bonds would have 4α + 4β. The delocalization energy is the difference, a number times β. What is the number? (Give it as a decimal.)",
+    "answer": 0.472,
+    "explanation": "(4α + 4.472β) − (4α + 4β) = 0.472β, about 0.47β. Since β is negative, butadiene's π electrons are lower in energy than in two isolated double bonds."
+  },
+  {
+    "id": "pc10-butadiene-deloc-kj",
+    "type": "numeric",
+    "prompt": "Butadiene's delocalization energy is 0.472β. Using the typical estimate β = −75 kJ/mol, what is it, in kJ/mol?",
+    "answer": -35.4,
+    "unit": "kJ/mol",
+    "tolerance": 0.02,
+    "explanation": "0.472 × (−75 kJ/mol) = −35.4 kJ/mol, the section's −35 kJ/mol. The negative sign means delocalization stabilizes the molecule."
+  },
+  {
+    "id": "pc10-butadiene-conformer-kj",
+    "type": "numeric",
+    "prompt": "The cis and trans conformers of butadiene differ in energy by 2.3 kcal/mol. Using 1 kcal = 4.184 kJ, what is this difference, in kJ/mol?",
+    "answer": 9.62,
+    "unit": "kJ/mol",
+    "explanation": "2.3 × 4.184 = 9.6 kJ/mol. The trans conformer is the more stable one, making up 96% of butadiene at room temperature."
+  },
+  {
+    "id": "pc10-butadiene-sign-changes",
+    "type": "numeric",
+    "prompt": "Butadiene's third π orbital is ψ_3 = 0.60|p_1⟩ − 0.37|p_2⟩ − 0.37|p_3⟩ + 0.60|p_4⟩. How many times does the sign of the coefficient change going along the chain from C_1 to C_4?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The signs run +, −, −, +: one change between C_1 and C_2 and another between C_3 and C_4, so 2. That is more than ψ_1 (0) and ψ_2 (1), matching ψ_3's higher energy."
+  },
+  {
+    "id": "pc10-butadiene-gap",
+    "type": "numeric",
+    "prompt": "The gap between butadiene's π levels E_2 = α + 0.618β and E_3 = α − 0.618β is E_3 − E_2, a number times β. What is the number? (Give it as a decimal.)",
+    "answer": -1.236,
+    "explanation": "E_3 − E_2 = (α − 0.618β) − (α + 0.618β) = −1.236β. Because β is negative, the gap is positive, 1.236|β|; this is butadiene's HOMO–LUMO gap, smaller than ethylene's 2|β|."
+  }
+]

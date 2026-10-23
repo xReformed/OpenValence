@@ -1,6 +1,3 @@
-// Builds src/lib/learningPaths.generated.ts from the corpus front matter, so
-// the roadmap's chapter lists follow sources/ instead of being typed by hand.
-// Re-run after transcribing sections:  npm run gen:paths
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";

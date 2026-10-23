@@ -1,0 +1,441 @@
+[
+  {
+    "id": "pc13-ho-rule-complement",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how do selection rules complement the idea that atomic-level systems are quantized?",
+    "choices": [
+      {
+        "text": "They say how a system may move between states",
+        "correct": true
+      },
+      {
+        "text": "They set the energy of each quantized state",
+        "why": "Quantization gives the states and their energies. Selection rules add how, energetically speaking, a system may move between those states."
+      },
+      {
+        "text": "They show that energy is not quantized after all",
+        "why": "Selection rules work together with quantization, not against it. They tell which transitions between quantized states can happen."
+      },
+      {
+        "text": "They allow every possible jump between states",
+        "why": "Selection rules restrict jumps: only transitions with a non-zero transition moment happen. They tell how a system may move between quantized states."
+      }
+    ],
+    "explanation": "Quantization tells us which states a system can have. Selection rules tell us how, energetically speaking, it may move between them: which transitions light can actually cause."
+  },
+  {
+    "id": "pc13-ho-rule-n-real-systems",
+    "type": "multiple-choice",
+    "prompt": "For real systems, which kind of transition does the section say the quantum number n describes?",
+    "choices": [
+      {
+        "text": "Electronic transitions",
+        "correct": true
+      },
+      {
+        "text": "Rotational transitions",
+        "why": "Rotational transitions go with the rigid rotator and its spherical harmonics. The section ties n to electronic transitions, such as the excitation of an electron."
+      },
+      {
+        "text": "Vibrational transitions",
+        "why": "Vibrational transitions are labeled by v. The section says n describes electronic transitions."
+      },
+      {
+        "text": "Nuclear spin transitions",
+        "why": "Spin flips aren't discussed here. In real systems, n describes electronic transitions, such as the excitation of an electron."
+      }
+    ],
+    "explanation": "In the particle in a box, n labels the energy states. In real atoms and molecules, the quantum number n describes electronic transitions, such as the excitation of an electron; rotational and vibrational transitions have their own quantum numbers."
+  },
+  {
+    "id": "pc13-ho-rule-unknown-substance",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how do selection rules help in obtaining information about an unknown substance?",
+    "choices": [
+      {
+        "text": "They decide which wavelengths cause transitions",
+        "correct": true
+      },
+      {
+        "text": "They make every wavelength of light absorbed equally",
+        "why": "If every wavelength were absorbed equally, a spectrum would carry no information. Selection rules decide which wavelengths cause transitions, giving each substance its pattern."
+      },
+      {
+        "text": "They let you skip measuring a spectrum at all",
+        "why": "A spectrum is still needed. Selection rules tell you which wavelengths of light cause transitions, so the measured lines can be interpreted."
+      },
+      {
+        "text": "They decide the temperature of the sample",
+        "why": "Selection rules say nothing about temperature. Together with a substance's properties, they determine the wavelengths of light that cause transitions."
+      }
+    ],
+    "explanation": "A substance's properties, working within the selection rules, determine the wavelengths of light that cause transitions. By tracking these, chemists can use techniques like IR spectroscopy to work out a molecule's structure."
+  },
+  {
+    "id": "pc13-ho-rule-structure-technique",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which technique lets chemists track these transitions to determine the chemical structure of a molecule?",
+    "choices": [
+      {
+        "text": "IR spectroscopy",
+        "correct": true
+      },
+      {
+        "text": "Mass spectrometry",
+        "why": "Mass spectrometry sorts ions by mass and doesn't drive transitions between quantized states. The section names IR spectroscopy."
+      },
+      {
+        "text": "Gravimetric analysis",
+        "why": "Weighing a sample involves no transitions between states. The section's example is IR spectroscopy, which probes vibrational transitions."
+      },
+      {
+        "text": "Melting-point measurement",
+        "why": "A melting point is a bulk property, not a transition between quantized states. The section names IR spectroscopy."
+      }
+    ],
+    "explanation": "By tracking which wavelengths a substance absorbs, chemists can use techniques like IR spectroscopy to determine the chemical structure of a molecule. Vibrational selection rules are what make such spectra readable."
+  },
+  {
+    "id": "pc13-ho-rule-mass-bond-strength",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what can you find about a molecule if you know the selection rules and the energy of a transition?",
+    "choices": [
+      {
+        "text": "Properties like its mass or bond strength",
+        "correct": true
+      },
+      {
+        "text": "Only its color, and nothing about its bonds",
+        "why": "The section says the opposite: from the selection rule and the transition energy, you can determine properties such as the molecule's mass or bond strength."
+      },
+      {
+        "text": "The time at which the molecule was made",
+        "why": "Spectra say nothing about a molecule's age. The selection rules and the transition energy give properties like mass or bond strength."
+      },
+      {
+        "text": "Its exact position within the sample",
+        "why": "Spectra don't locate single molecules. Knowing the allowed change in quantum number and the transition energy lets you find properties like mass or bond strength."
+      }
+    ],
+    "explanation": "A selection rule says how a quantum number changes in a transition. That quantum number appears in the equation for the transition energy, which depends on the mass and other structural properties of the molecule. So from the rule and the measured energy, you can find properties such as the mass or the bond strength."
+  },
+  {
+    "id": "pc13-ho-rule-hermite-pair",
+    "type": "multiple-choice",
+    "prompt": "For the transition from v to v + 1, which two Hermite polynomials appear in the transition moment integrand?",
+    "choices": [
+      {
+        "text": "H_v and H_(v+1)",
+        "correct": true
+      },
+      {
+        "text": "H_(v+1) twice",
+        "why": "With the same polynomial twice, the integral would describe a single state, not a transition. The initial state contributes H_v and the final state H_(v+1)."
+      },
+      {
+        "text": "H_(v−1) and H_(v+1)",
+        "why": "Those two appear only after the recursion rewrites xH_v. The integrand starts with H_v for the initial state and H_(v+1) for the final state."
+      },
+      {
+        "text": "H_0 and H_1 only",
+        "why": "That is just the special case v = 0. In general, the integrand has H_v for the initial state and H_(v+1) for the final state."
+      }
+    ],
+    "explanation": "The transition moment joins two states: the initial state v, with H_v, and the final state v + 1, with H_(v+1). Each comes with its normalization constant and Gaussian factor e^(−αx²/2)."
+  },
+  {
+    "id": "pc13-ho-rule-x-origin",
+    "type": "multiple-choice",
+    "prompt": "After the dipole moment is expanded as μ(x) = μ_0 + (dμ/dx)_0 x + …, the transition integral contains an extra factor x. Where does it come from?",
+    "choices": [
+      {
+        "text": "The (dμ/dx)_0 x term of the dipole expansion",
+        "correct": true
+      },
+      {
+        "text": "The Gaussian factor e^(−αx²/2) of each state",
+        "why": "The Gaussians multiply to e^(−αx²) but don't supply a lone factor x. The x comes from the linear term (dμ/dx)_0 x of the dipole."
+      },
+      {
+        "text": "The normalization constants N_v and N_(v+1)",
+        "why": "These are constants with no x in them. The factor x comes from the term (dμ/dx)_0 x in the expansion of μ(x)."
+      },
+      {
+        "text": "The μ_0 term of the dipole expansion",
+        "why": "μ_0 is a constant, and its term gives zero by orthogonality. The surviving term is (dμ/dx)_0 x, which supplies the factor x."
+      }
+    ],
+    "explanation": "Of the expansion μ(x) = μ_0 + (dμ/dx)_0 x + …, the constant μ_0 term gives zero by orthogonality. What is left is (dμ/dx)_0 times the integral of ψ_(v+1) x ψ_v, so the integrand has a factor x."
+  },
+  {
+    "id": "pc13-ho-rule-derivative-outside",
+    "type": "multiple-choice",
+    "prompt": "Why can (dμ/dx)_0 be taken outside the transition moment integral?",
+    "choices": [
+      {
+        "text": "It is a constant, evaluated at x = 0",
+        "correct": true
+      },
+      {
+        "text": "It is always zero for every molecule",
+        "why": "If it were zero there would be no transition at all. It can move outside the integral because, evaluated at the equilibrium position x = 0, it is just a number."
+      },
+      {
+        "text": "It equals the force constant k of the bond",
+        "why": "(dμ/dx)_0 is about the dipole, not the bond's stiffness. It comes outside because it is evaluated at x = 0 and so doesn't vary with x."
+      },
+      {
+        "text": "The section drops it as too small to matter",
+        "why": "It is not dropped: the whole transition moment is proportional to it. It sits outside the integral because, evaluated at x = 0, it is a constant."
+      }
+    ],
+    "explanation": "The subscript 0 means the derivative is evaluated at x = 0, the equilibrium position. That makes it a constant, so it multiplies the integral from outside: the transition moment is proportional to (dμ/dx)_0."
+  },
+  {
+    "id": "pc13-ho-rule-factor-can-vanish",
+    "type": "multiple-choice",
+    "prompt": "In front of the final transition moment integral stand N_v, N_(v+1), 1/√(α) and (dμ/dx)_0. Which of these is zero for some molecules, making all their vibrational transitions forbidden?",
+    "choices": [
+      {
+        "text": "(dμ/dx)_0",
+        "correct": true
+      },
+      {
+        "text": "N_v",
+        "why": "A normalization constant is never zero, or the wavefunction would vanish. The factor that can be zero is (dμ/dx)_0, for a vibration that doesn't change the dipole."
+      },
+      {
+        "text": "N_(v+1)",
+        "why": "Like N_v, this normalization constant is never zero. Only (dμ/dx)_0 can vanish, when stretching the bond leaves the dipole unchanged."
+      },
+      {
+        "text": "1/√(α)",
+        "why": "α is a positive constant of the oscillator, so 1/√(α) is never zero. The factor that can vanish is (dμ/dx)_0."
+      }
+    ],
+    "explanation": "The normalization constants and 1/√(α) are never zero. But if the dipole doesn't change as the bond stretches, (dμ/dx)_0 = 0, and every vibrational transition moment of that molecule is zero."
+  },
+  {
+    "id": "pc13-ho-rule-hermite-decides",
+    "type": "multiple-choice",
+    "prompt": "Every harmonic oscillator state Ψ_v(x) = N_v H_v(√(α)x)e^(−αx²/2) has the same Gaussian factor. Which part of the wavefunctions decides the selection rule in the section's derivation?",
+    "choices": [
+      {
+        "text": "The Hermite polynomials H_v",
+        "correct": true
+      },
+      {
+        "text": "The normalization constant N_v",
+        "why": "N_v only sets the size of each wavefunction and is never zero. The rule comes from the Hermite polynomials: the relation for xH_v and the orthogonality of different H's."
+      },
+      {
+        "text": "The Gaussian factor e^(−αx²/2)",
+        "why": "Every state has the same Gaussian factor, so it can't tell one transition from another. The Hermite polynomials, which differ from state to state, decide the rule."
+      },
+      {
+        "text": "The constant α by itself",
+        "why": "α is the same for every level and only scales x. The Hermite polynomials decide which integrals vanish."
+      }
+    ],
+    "explanation": "The states differ only in N_v and H_v. The derivation turns on the Hermite polynomials: the relation for √(α)xH_v and the orthogonality of different H's decide which transition moments vanish, leaving Δv = ±1."
+  },
+  {
+    "id": "pc13-ho-rule-recursion-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does the Hermite relation √(α)xH_v(√(α)x) = vH_(v−1)(√(α)x) + (1/2)H_(v+1)(√(α)x) do in the derivation?",
+    "choices": [
+      {
+        "text": "It rewrites xH_v using H_(v−1) and H_(v+1)",
+        "correct": true
+      },
+      {
+        "text": "It gives the energy of vibrational level v",
+        "why": "The relation is about functions, not energies. It rewrites x times H_v as a sum of H_(v−1) and H_(v+1), so the integral can be judged by inspection."
+      },
+      {
+        "text": "It normalizes the wavefunction ψ_v(x)",
+        "why": "Normalization is handled by the constant N_v. The relation rewrites xH_v in terms of the neighboring polynomials H_(v−1) and H_(v+1)."
+      },
+      {
+        "text": "It proves that H_v is always an even function",
+        "why": "Whether H_v is even or odd depends on v. This relation replaces xH_v by a combination of H_(v−1) and H_(v+1)."
+      }
+    ],
+    "explanation": "The relation rewrites √(α)xH_v as vH_(v−1) + (1/2)H_(v+1). After this step, the integrand contains H_(v+1) times H_(v−1) or times H_(v+1), and orthogonality decides which pieces survive."
+  },
+  {
+    "id": "pc13-ho-rule-surviving-term",
+    "type": "multiple-choice",
+    "prompt": "After the Hermite relation is used, the v → v + 1 integral contains H_(v+1) times [vH_(v−1) + (1/2)H_(v+1)]e^(−αx²). Which part gives a non-zero result?",
+    "choices": [
+      {
+        "text": "The (1/2)H_(v+1) part, which matches H_(v+1)",
+        "correct": true
+      },
+      {
+        "text": "The vH_(v−1) part, which has the larger coefficient",
+        "why": "The size of the coefficient doesn't matter: H_(v+1) and H_(v−1) are different Hermite polynomials, so their integral with e^(−αx²) is zero."
+      },
+      {
+        "text": "Both parts, which simply add together",
+        "why": "The H_(v−1) part integrates to zero, because different Hermite polynomials are orthogonal with this weight. Only the (1/2)H_(v+1) part gives a non-zero result."
+      },
+      {
+        "text": "Neither part; the integral is always zero",
+        "why": "If both parts vanished, no vibrational transition would ever be allowed. The (1/2)H_(v+1) part matches H_(v+1) and gives a non-zero integral."
+      }
+    ],
+    "explanation": "Hermite polynomials with different indices are orthogonal with the weight e^(−αx²), so the H_(v+1)H_(v−1) piece integrates to zero. The H_(v+1)H_(v+1) piece doesn't, so the v → v + 1 transition has a non-zero transition moment."
+  },
+  {
+    "id": "pc13-ho-rule-x-times-h2",
+    "type": "multiple-choice",
+    "prompt": "Using the Hermite relation, xH_2 can be written with only two Hermite polynomials. Which two?",
+    "choices": [
+      {
+        "text": "H_1 and H_3",
+        "correct": true
+      },
+      {
+        "text": "H_2 and H_4",
+        "why": "The relation shifts the index by one in each direction: xH_v gives H_(v−1) and H_(v+1). For v = 2 that is H_1 and H_3."
+      },
+      {
+        "text": "H_0 and H_4",
+        "why": "The indices change by one, not two. xH_2 gives H_1 and H_3."
+      },
+      {
+        "text": "H_2 only",
+        "why": "Multiplying by x raises the polynomial's degree, so xH_2 can't be H_2 again. The relation gives H_1 and H_3."
+      }
+    ],
+    "explanation": "With v = 2, √(α)xH_2 = 2H_1 + (1/2)H_3. So a molecule in v = 2 can be connected only to v = 1 or v = 3: Δv = ±1."
+  },
+  {
+    "id": "pc13-ho-rule-jump-of-three",
+    "type": "multiple-choice",
+    "prompt": "Why is the transition moment zero for a jump from v to v + 3?",
+    "choices": [
+      {
+        "text": "xH_v holds no H_(v+3) term to match",
+        "correct": true
+      },
+      {
+        "text": "H_(v+3) is not a Hermite polynomial",
+        "why": "H_(v+3) is a perfectly good Hermite polynomial. The problem is that xH_v contains only H_(v−1) and H_(v+1), and both are orthogonal to H_(v+3)."
+      },
+      {
+        "text": "The photon would need too much energy",
+        "why": "A photon of the right energy exists; energy isn't what forbids the jump. The integral vanishes because xH_v has no H_(v+3) term to match."
+      },
+      {
+        "text": "(dμ/dx)_0 is zero for jumps of three levels",
+        "why": "(dμ/dx)_0 belongs to the molecule, not to the jump. The integral vanishes because nothing in xH_v matches H_(v+3)."
+      }
+    ],
+    "explanation": "By the Hermite relation, xH_v contains only H_(v−1) and H_(v+1). Both are orthogonal to H_(v+3), so the integral is zero. Only Δv = ±1 survives, which the section sees by inspection."
+  },
+  {
+    "id": "pc13-ho-rule-ground-state-up",
+    "type": "multiple-choice",
+    "prompt": "For v = 0, the term vH_(v−1) in the Hermite relation has coefficient 0. What does this mean for a molecule in v = 0?",
+    "choices": [
+      {
+        "text": "It can only go up, to v = 1",
+        "correct": true
+      },
+      {
+        "text": "It can go down to v = −1",
+        "why": "There is no v = −1 level, and the coefficient v = 0 removes that term anyway. Only (1/2)H_1 is left, so the only transition is up to v = 1."
+      },
+      {
+        "text": "It can't make any vibrational transition",
+        "why": "The (1/2)H_(v+1) term is still there, so v = 0 → v = 1 is allowed. That is the fundamental transition."
+      },
+      {
+        "text": "It can jump to any level v ≥ 1",
+        "why": "Only the H_1 term is left, so only v = 1 can be reached. Higher levels would need terms the relation doesn't give."
+      }
+    ],
+    "explanation": "With v = 0, √(α)xH_0 = (1/2)H_1: there is no H_(−1) term. A molecule in its ground vibrational state can therefore only absorb, going up to v = 1."
+  },
+  {
+    "id": "pc13-ho-rule-lower-term",
+    "type": "multiple-choice",
+    "prompt": "In the Hermite relation, xH_v gives both an H_(v−1) term and an H_(v+1) term. Which transition does the H_(v−1) term go with?",
+    "choices": [
+      {
+        "text": "v → v − 1, dropping one level",
+        "correct": true
+      },
+      {
+        "text": "v → v + 1, rising one level",
+        "why": "Rising one level goes with the H_(v+1) term. The H_(v−1) term connects v with the level below, v − 1."
+      },
+      {
+        "text": "v → v, with no change at all",
+        "why": "No H_v term appears in xH_v, so Δv = 0 is not allowed. The H_(v−1) term goes with v → v − 1."
+      },
+      {
+        "text": "v → v − 2, dropping two levels",
+        "why": "The relation shifts the index by one only. The H_(v−1) term connects v to v − 1."
+      }
+    ],
+    "explanation": "The H_(v+1) term connects v to the level above (absorption, Δv = +1) and the H_(v−1) term connects it to the level below (emission, Δv = −1). Together they give Δv = ±1."
+  },
+  {
+    "id": "pc13-ho-rule-root-alpha",
+    "type": "multiple-choice",
+    "prompt": "In the final form of the transition moment, a factor 1/√(α) appears in front. Where does it come from?",
+    "choices": [
+      {
+        "text": "The relation uses √(α)x rather than x",
+        "correct": true
+      },
+      {
+        "text": "Normalizing the Gaussian factor e^(−αx²)",
+        "why": "Normalization gives N_v and N_(v+1), which are already there. The 1/√(α) appears because the relation gives √(α)xH_v, so xH_v is that divided by √(α)."
+      },
+      {
+        "text": "The derivative (dμ/dx)_0 in front",
+        "why": "(dμ/dx)_0 is a separate factor in front. The 1/√(α) comes from writing x as √(α)x divided by √(α) to use the Hermite relation."
+      },
+      {
+        "text": "The limits of the integral, −∞ to ∞",
+        "why": "Integration limits don't put factors in front. The 1/√(α) is there because the Hermite relation has √(α)x, not x."
+      }
+    ],
+    "explanation": "The Hermite relation is written for √(α)xH_v(√(α)x). The integrand has just x, so xH_v = (1/√(α))[vH_(v−1) + (1/2)H_(v+1)], and the 1/√(α) moves out in front of the integral."
+  },
+  {
+    "id": "pc13-ho-rule-coefficient-v4",
+    "type": "numeric",
+    "prompt": "In the Hermite relation √(α)xH_v = vH_(v−1) + (1/2)H_(v+1), what is the coefficient of H_3 when v = 4?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "With v = 4, √(α)xH_4 = 4H_3 + (1/2)H_5. The coefficient of H_(v−1) is v = 4; the H_(v+1) term always has 1/2."
+  },
+  {
+    "id": "pc13-ho-rule-moment-ratio",
+    "type": "numeric",
+    "prompt": "The section's transition moment is proportional to (dμ/dx)_0. Bonds A and B have the same α and the same v, but (dμ/dx)_0 is 3 times larger for A. How many times larger is A's transition moment?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Everything else in front of the integral and the integral itself are the same, so the transition moment scales with (dμ/dx)_0: 3 times larger. A dipole that changes faster with stretching couples more strongly to light."
+  },
+  {
+    "id": "pc13-ho-rule-bond-strength",
+    "type": "numeric",
+    "prompt": "Knowing the selection rule and the transition energy gives a bond's vibrational frequency ω, and from it the bond strength through k = mω², where m is the reduced mass. For m = 1.5 × 10^−27 kg and ω = 4.0 × 10^14 s^−1, what is k, in N/m?",
+    "answer": 240,
+    "explanation": "k = (1.5 × 10^−27 kg)(4.0 × 10^14 s^−1)² = (1.5 × 10^−27)(1.6 × 10^29) = 240 N/m. This is the kind of property the section says can be found from the selection rules and the transition energy."
+  },
+  {
+    "id": "pc13-ho-rule-dipole-stretch",
+    "type": "numeric",
+    "prompt": "The dipole moment is expanded as μ(x) = μ_0 + (dμ/dx)_0 x + …. For a bond with μ_0 = 1.00 D and (dμ/dx)_0 = 2.0 D/Å, what is μ at a stretch of x = 0.050 Å, keeping only these two terms, in D? (Give it as a decimal.)",
+    "answer": 1.1,
+    "unit": "D",
+    "explanation": "μ = 1.00 D + (2.0 D/Å)(0.050 Å) = 1.00 D + 0.10 D = 1.10 D. It is the changing part, (dμ/dx)_0 x, that drives the vibrational transition."
+  }
+]

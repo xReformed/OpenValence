@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pc9-symmetry-greek-naming",
+    "type": "multiple-choice",
+    "prompt": "How does the naming of Λ values differ from the naming of the atomic L values?",
+    "choices": [
+      {
+        "text": "Greek capitals replace Latin capitals",
+        "correct": true
+      },
+      {
+        "text": "Lowercase letters replace capital letters",
+        "why": "Lowercase letters such as σ and π are used for single orbitals. Λ values use capital Greek letters: Σ, Π, Δ, Φ."
+      },
+      {
+        "text": "Λ values are written only as numbers",
+        "why": "Λ follows the same letter convention as L, but with capital Greek letters: Σ, Π, Δ, Φ for Λ = 0, 1, 2, 3."
+      },
+      {
+        "text": "The letters run in the reverse order",
+        "why": "The order is the same as S, P, D, F. Only the alphabet changes: Σ, Π, Δ, Φ."
+      }
+    ],
+    "explanation": "Λ follows the same naming convention as L, but with capital Greek letters instead of capital Latin ones: Σ, Π, Δ, Φ for Λ = 0, 1, 2, 3, matching S, P, D, F."
+  },
+  {
+    "id": "pc9-symmetry-no-formula",
+    "type": "multiple-choice",
+    "prompt": "How does finding the possible values of Λ differ from finding the possible values of L for an atom?",
+    "choices": [
+      {
+        "text": "There's no general formula; you examine the microstates",
+        "correct": true
+      },
+      {
+        "text": "Λ uses the same series as L, from l_1 + l_2 down to |l_1 − l_2|",
+        "why": "That series works for atoms but not for Λ. For two π electrons it would give 2, 1 and 0, yet only Λ = 2 and 0 occur."
+      },
+      {
+        "text": "Λ always equals the number of unpaired electrons",
+        "why": "Λ is orbital angular momentum about the bond axis, not a count of electrons. Its values are found by examining the microstates."
+      },
+      {
+        "text": "Λ is always 0 when two electrons are present",
+        "why": "O2's two π electrons give Λ = 2 as well as 0. The values must be found from the microstates."
+      }
+    ],
+    "explanation": "Unlike L, there is no general formula for the possible values of Λ. You list the individual microstates and read off the values, which the section says is easier than it sounds."
+  },
+  {
+    "id": "pc9-symmetry-ms-same",
+    "type": "multiple-choice",
+    "prompt": "How does the total spin magnetic quantum number M_S of a molecule compare with that of an atom?",
+    "choices": [
+      {
+        "text": "It works the same way; orbital type doesn't matter",
+        "correct": true
+      },
+      {
+        "text": "It has no meaning once electrons are in MOs",
+        "why": "Spin works exactly as in atoms: each electron points with or against the z-axis, and being in a molecular orbital doesn't change that."
+      },
+      {
+        "text": "It is measured along the bond, so it's always 0",
+        "why": "M_S can be +1, 0 or −1 for two electrons; it is not always zero. It works exactly like the atomic M_s."
+      },
+      {
+        "text": "It follows a different rule with no simple formula",
+        "why": "That is true of the combinations of M_L, not of M_S. M_S works exactly like the atomic one: M_S = m_s1 + m_s2."
+      }
+    ],
+    "explanation": "M_S works exactly like the atomic M_s. Each electron's spin points with or against the z-axis whether it is in an atomic or a molecular orbital, and M_S = m_s1 + m_s2."
+  },
+  {
+    "id": "pc9-symmetry-ms-both-down",
+    "type": "numeric",
+    "prompt": "For two electrons, M_S = m_s1 + m_s2, where each m_s is +1/2 or −1/2. What is M_S when both open-shell electrons have m_s = −1/2?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "M_S = (−1/2) + (−1/2) = −1. For two electrons M_S can be +1, 0 or −1, exactly as in atoms."
+  },
+  {
+    "id": "pc9-symmetry-two-new",
+    "type": "multiple-choice",
+    "prompt": "The section introduces two new symmetries needed to describe molecular orbitals and states. What are they?",
+    "choices": [
+      {
+        "text": "Parity (inversion) and reflection",
+        "correct": true
+      },
+      {
+        "text": "Spin and orbital angular momentum",
+        "why": "These are described by S and Λ. The two new symmetries are parity (g/u) and reflection (+/−)."
+      },
+      {
+        "text": "Bonding and antibonding character",
+        "why": "Bonding character is not a symmetry label, though it ties in with parity. The two symmetries are parity and reflection."
+      },
+      {
+        "text": "Rotation and vibration of the bond",
+        "why": "Molecular motions are not part of the electronic term symbol. The two symmetries are parity and reflection."
+      }
+    ],
+    "explanation": "Molecular orbitals need more labels than atomic ones. The section adds parity (inversion, labeled g or u) and reflection through a plane containing both nuclei (labeled + or −)."
+  },
+  {
+    "id": "pc9-symmetry-inversion-operation",
+    "type": "multiple-choice",
+    "prompt": "How is the inversion operation carried out when deciding whether an orbital is g or u?",
+    "choices": [
+      {
+        "text": "From a point, pass through the center to the same distance beyond",
+        "correct": true
+      },
+      {
+        "text": "Reflect the orbital through a plane that contains both of the nuclei",
+        "why": "That is the reflection operation, which gives + or −. Inversion goes through the center of the molecule."
+      },
+      {
+        "text": "Rotate the orbital by 180° about the internuclear axis",
+        "why": "A rotation about the axis is not inversion. Inversion takes each point straight through the center to the opposite side."
+      },
+      {
+        "text": "Reverse only the coordinate along the bond axis",
+        "why": "That is a reflection through the plane perpendicular to the bond. Inversion sends every point straight through the center, reversing all three coordinates."
+      }
+    ],
+    "explanation": "For inversion, start at an arbitrary point in the orbital, travel straight through the center, and continue the same distance out the other side. The orbital is g if its phase is the same at the two points and u if the sign changes."
+  },
+  {
+    "id": "pc9-symmetry-gerade-words",
+    "type": "multiple-choice",
+    "prompt": "The labels g and u come from the German words gerade and ungerade. What do these words mean?",
+    "choices": [
+      {
+        "text": "Even and uneven",
+        "correct": true
+      },
+      {
+        "text": "Bonding and antibonding",
+        "why": "g and u are not the same as bonding and antibonding: bonding π orbitals are u. The words mean even and uneven."
+      },
+      {
+        "text": "Paired and unpaired",
+        "why": "They describe symmetry under inversion, not electron pairing. Gerade means even and ungerade uneven."
+      },
+      {
+        "text": "Symmetric and antisymmetric to reflection",
+        "why": "Those are the + and − labels. Gerade (even) and ungerade (uneven) refer to inversion."
+      }
+    ],
+    "explanation": "Gerade means even and ungerade means uneven, describing whether an orbital keeps or changes its phase on inversion through the center."
+  },
+  {
+    "id": "pc9-symmetry-parity-open-shell",
+    "type": "multiple-choice",
+    "prompt": "To find whether a molecular state is g or u, whose parities do you combine?",
+    "choices": [
+      {
+        "text": "Those of the open-shell electrons",
+        "correct": true
+      },
+      {
+        "text": "Those of all the electrons in the molecule",
+        "why": "Filled orbitals always end up g, so they don't change the result. Only the open-shell electrons are combined."
+      },
+      {
+        "text": "Those of the electrons in bonding orbitals",
+        "why": "Bonding character doesn't decide this. The parities of the open-shell electrons are combined."
+      },
+      {
+        "text": "Those of the two nuclei",
+        "why": "Nuclei don't carry a g/u label. The parities of the open-shell electrons decide the state's parity."
+      }
+    ],
+    "explanation": "Find the parity of each open-shell electron and combine them with g + g → g, g + u → u, u + u → g. Electrons in filled orbitals come in pairs, which always give g, so they can be left out."
+  },
+  {
+    "id": "pc9-symmetry-example-uu",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.15.1, the state 1σ_g^2 1σ_u^2 2σ_g^2 2σ_u^2 1π_u^1 1π_u^1 has its two open-shell electrons in 1π_u orbitals. What is the parity of the state?",
+    "choices": [
+      {
+        "text": "g",
+        "correct": true
+      },
+      {
+        "text": "u",
+        "why": "Combining two u's gives g (u + u → g), just as multiplying two negative signs gives a positive one."
+      },
+      {
+        "text": "It depends on the filled σ orbitals",
+        "why": "Filled orbitals don't change the result. Only the two open-shell π_u electrons count, and u + u → g."
+      },
+      {
+        "text": "Both g and u, one for each electron",
+        "why": "A state has a single parity, found by combining the electrons' parities: u + u → g."
+      }
+    ],
+    "explanation": "Only the two open-shell electrons matter, and both are u. By the rule u + u → g, the overall parity is g."
+  },
+  {
+    "id": "pc9-symmetry-b2-electrons",
+    "type": "numeric",
+    "prompt": "How many electrons in total does the configuration 1σ_g^2 1σ_u^2 2σ_g^2 2σ_u^2 1π_u^1 1π_u^1 from Example 9.15.1 hold?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "Adding the superscripts: 2 + 2 + 2 + 2 + 1 + 1 = 10. That is the electron count of B2, with 5 electrons from each boron atom."
+  },
+  {
+    "id": "pc9-symmetry-which-gerade",
+    "type": "multiple-choice",
+    "prompt": "According to the hint in Example 9.15.1, which of these molecular orbitals is always gerade?",
+    "choices": [
+      {
+        "text": "An antibonding π orbital",
+        "correct": true
+      },
+      {
+        "text": "A bonding π orbital",
+        "why": "Bonding π orbitals are ungerade. It is the antibonding π orbitals that are gerade."
+      },
+      {
+        "text": "An antibonding σ orbital",
+        "why": "Antibonding σ orbitals are ungerade. Bonding σ and antibonding π orbitals are the gerade ones."
+      },
+      {
+        "text": "Every antibonding orbital",
+        "why": "Antibonding σ orbitals are u, so not every antibonding orbital is g. Among antibonding orbitals, only the π ones are g."
+      }
+    ],
+    "explanation": "Bonding σ and antibonding π orbitals are always gerade; antibonding σ and bonding π orbitals are always ungerade. So whether an orbital is g depends on its type as well as on whether it is bonding."
+  },
+  {
+    "id": "pc9-symmetry-bonding-sigma-pi",
+    "type": "multiple-choice",
+    "prompt": "An excited state has one open-shell electron in a bonding σ orbital and one in a bonding π orbital. Using the hint in Example 9.15.1 and the rule g + u → u, what is the parity of the state?",
+    "choices": [
+      {
+        "text": "u",
+        "correct": true
+      },
+      {
+        "text": "g",
+        "why": "Bonding σ is g but bonding π is u, and g + u → u. The state would be g only if both electrons had the same parity."
+      },
+      {
+        "text": "+",
+        "why": "+ is a reflection label, not a parity. Parity is g or u; here g + u → u."
+      },
+      {
+        "text": "Neither; parity is defined only for Σ states",
+        "why": "That restriction applies to the reflection label (+ or −), not to parity. Here g + u → u."
+      }
+    ],
+    "explanation": "By the hint, bonding σ orbitals are g and bonding π orbitals are u. Combining g with u gives u, so the state is u."
+  },
+  {
+    "id": "pc9-symmetry-reflection-plane",
+    "type": "multiple-choice",
+    "prompt": "To find an orbital's + or − label, it is reflected through a plane. Which plane?",
+    "choices": [
+      {
+        "text": "Any plane that contains both nuclei",
+        "correct": true
+      },
+      {
+        "text": "The plane perpendicular to the bond at its midpoint",
+        "why": "That plane swaps the two ends of the molecule. The + and − labels use a plane containing both nuclei."
+      },
+      {
+        "text": "A plane that contains only one of the nuclei",
+        "why": "The plane must contain both nuclei, and so the whole internuclear axis."
+      },
+      {
+        "text": "Only the plane in which the orbital has no node",
+        "why": "Any plane containing both nuclei works, as long as you keep using the same one."
+      }
+    ],
+    "explanation": "Reflection is through a plane containing both nuclei, and so the whole bond axis. The choice among such planes is arbitrary, as long as you stick with the one you pick."
+  },
+  {
+    "id": "pc9-symmetry-minus-minus",
+    "type": "multiple-choice",
+    "prompt": "In a Σ state, both open-shell electrons are in orbitals labeled −. What is the reflection label of the state?",
+    "choices": [
+      {
+        "text": "+",
+        "correct": true
+      },
+      {
+        "text": "−",
+        "why": "Two minus signs combine to give a plus: (−)(−) → +."
+      },
+      {
+        "text": "g",
+        "why": "g is a parity label, from inversion. Reflection labels combine as (−)(−) → +."
+      },
+      {
+        "text": "No label can be given",
+        "why": "Σ states always take a reflection label, and the rule (−)(−) → + gives +."
+      }
+    ],
+    "explanation": "Reflection labels combine like signs being multiplied: (+)(+) → +, (+)(−) → −, (−)(−) → +. Two − orbitals give a + state."
+  },
+  {
+    "id": "pc9-symmetry-example2-label",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.15.2, one open-shell electron is in the vertical π orbital, labeled +, and the other is in the horizontal π orbital, labeled −. What is the reflection label of the state?",
+    "choices": [
+      {
+        "text": "−",
+        "correct": true
+      },
+      {
+        "text": "+",
+        "why": "(+)(−) gives −, not +. A + state would need both labels to be the same."
+      },
+      {
+        "text": "None, because the electrons are in π orbitals",
+        "why": "The orbitals are π, but with one electron in each the state can be Σ, which does take a label. Here (+)(−) → −."
+      },
+      {
+        "text": "u, because both orbitals are π_u",
+        "why": "That mixes in parity, and u + u → g anyway. The reflection label comes from (+)(−) → −."
+      }
+    ],
+    "explanation": "One orbital is symmetric (+) and the other antisymmetric (−) under reflection, and (+)(−) → −. So the state is −."
+  },
+  {
+    "id": "pc9-symmetry-orthogonal-plane",
+    "type": "multiple-choice",
+    "prompt": "Example 9.15.2 uses the plane of the page as its reflection plane. What happens if the orthogonal plane, which also contains both nuclei, is used instead?",
+    "choices": [
+      {
+        "text": "The orbitals swap labels and the state is still −",
+        "correct": true
+      },
+      {
+        "text": "Both orbitals become +, so the state becomes +",
+        "why": "In the new plane the horizontal orbital is + and the vertical one −. One is still + and one −, so the state stays −."
+      },
+      {
+        "text": "The state changes from − to +",
+        "why": "The choice of plane is arbitrary and doesn't change the answer. The labels swap, and the state is still −."
+      },
+      {
+        "text": "The state loses its reflection label altogether",
+        "why": "Any plane containing both nuclei works. With the orthogonal plane the labels swap and the state is still −."
+      }
+    ],
+    "explanation": "The choice of plane is arbitrary, as long as you stick with it. In the orthogonal plane the vertical orbital becomes − and the horizontal one +, so one is still + and one −, and the state is still −."
+  },
+  {
+    "id": "pc9-symmetry-only-sigma",
+    "type": "multiple-choice",
+    "prompt": "Which states get a + or − reflection label in their term symbols?",
+    "choices": [
+      {
+        "text": "Only Σ states, with Λ = 0",
+        "correct": true
+      },
+      {
+        "text": "Only Π states, with Λ = 1",
+        "why": "Reflection labels are not given to states with Λ > 0. Only Σ states get + or −."
+      },
+      {
+        "text": "Every state, whatever its Λ",
+        "why": "For Λ > 0 there are no reflection labels. O2's ^1Δ_g state, for example, has none."
+      },
+      {
+        "text": "Only states of heteronuclear molecules",
+        "why": "Heteronuclear Σ states can carry + or −, like CO's ^1Σ^+, but so can homonuclear ones like O2's ^3Σ_g^−. What matters is Λ = 0."
+      }
+    ],
+    "explanation": "Reflection labels apply only to Σ states. For Λ > 0 there are no reflection labels, which is why O2's excited ^1Δ_g state has none."
+  },
+  {
+    "id": "pc9-symmetry-o2-two-electrons",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.15.3, why are only two of O2's electrons needed to find its term symbols?",
+    "choices": [
+      {
+        "text": "They are its only open-shell electrons",
+        "correct": true
+      },
+      {
+        "text": "They are its only antibonding electrons",
+        "why": "O2 also has filled antibonding σ orbitals, such as σ_2s^*. Those are closed shells and add nothing; the two open-shell π_g electrons are what count."
+      },
+      {
+        "text": "They are its only electrons with spin",
+        "why": "Every electron has spin. Electrons in filled orbitals are paired and add nothing, which leaves the two open-shell electrons."
+      },
+      {
+        "text": "The other electrons are all in bonding orbitals",
+        "why": "Several of O2's filled orbitals are antibonding. What matters is that they are filled; only the two open-shell π_g electrons count."
+      }
+    ],
+    "explanation": "O2's two open-shell electrons sit in the antibonding π_g orbitals; all the others are in filled orbitals, which add nothing. These two are the only electrons that matter for the term symbols."
+  },
+  {
+    "id": "pc9-symmetry-o2-lambda",
+    "type": "multiple-choice",
+    "prompt": "Example 9.15.3 lists the microstates of O2's two π_g electrons. Which values of Λ do they give?",
+    "choices": [
+      {
+        "text": "2 and 0",
+        "correct": true
+      },
+      {
+        "text": "2, 1 and 0",
+        "why": "That would follow the atomic series for two l = 1 electrons. For two π electrons M_L can only be 2, 0 or −2, so Λ = 2 or 0."
+      },
+      {
+        "text": "1 only",
+        "why": "Each π electron alone has Λ = 1, but two of them add to 2 or cancel to 0."
+      },
+      {
+        "text": "0 only",
+        "why": "The electrons can also be in the same π orbital, adding to M_L = ±2, which gives Λ = 2, a Δ state."
+      }
+    ],
+    "explanation": "Drawing the microstates gives M_L = 2, 0 and −2, so Λ = 2 (Δ) and Λ = 0 (Σ). There is no Λ = 1, which shows why the atomic formula for L can't be used."
+  },
+  {
+    "id": "pc9-symmetry-o2-microstate-total",
+    "type": "numeric",
+    "prompt": "In Example 9.15.3, O2's microstate table has rows for M_L = 2, 0 and −2 and columns for M_S = −1, 0 and +1. Its entries are 0, 1, 0 in the top row, 1, 2, 1 in the middle row and 0, 1, 0 in the bottom row. How many microstates are there in all?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Adding the entries: (0 + 1 + 0) + (1 + 2 + 1) + (0 + 1 + 0) = 6. These six microstates are shared among the ^1Δ_g, ^3Σ_g^− and ^1Σ_g^+ terms."
+  },
+  {
+    "id": "pc9-symmetry-o2-sigma-plus-left",
+    "type": "numeric",
+    "prompt": "O2's two π_g electrons have 6 microstates. The ^1Δ_g term claims 2 of them (M_L = +2 and −2, each with M_S = 0), and the ^3Σ_g^− term claims 3 (M_L = 0 with M_S = −1, 0 and +1). How many microstates are left for the last term, ^1Σ_g^+?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "6 − 2 − 3 = 1. A single microstate with M_L = 0 and M_S = 0 is exactly what a singlet Σ term needs."
+  },
+  {
+    "id": "pc9-symmetry-o2-delta-term",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.15.3, the M_L = 2 row of O2's microstate table holds one microstate, with M_S = 0 and both electrons in the same π_g orbital. Which term does it belong to?",
+    "choices": [
+      {
+        "text": "^1Δ_g",
+        "correct": true
+      },
+      {
+        "text": "^3Δ_g",
+        "why": "A triplet would also need M_S = ±1 in this row, but the row has only M_S = 0. The term is a singlet."
+      },
+      {
+        "text": "^1Δ_g^+",
+        "why": "Δ states (Λ = 2) get no reflection label; only Σ states do. The term is ^1Δ_g."
+      },
+      {
+        "text": "^1Σ_g^+",
+        "why": "M_L = 2 means Λ = 2, a Δ state, not Σ."
+      }
+    ],
+    "explanation": "Λ = 2 is Δ, and M_S = 0 alone means S = 0, a singlet. Both electrons are in a g orbital, and g + g → g. A Δ state gets no reflection label, so the term is ^1Δ_g."
+  },
+  {
+    "id": "pc9-symmetry-sigma-from-cancel",
+    "type": "multiple-choice",
+    "prompt": "In O2's ^3Σ microstates, one electron is in the π_g orbital with m_l = +1 and the other in the one with m_l = −1. Why is this a Σ state?",
+    "choices": [
+      {
+        "text": "The m_l values cancel, so M_L = 0 and Λ = 0",
+        "correct": true
+      },
+      {
+        "text": "The spins are parallel, which always gives Σ",
+        "why": "Spin decides the multiplicity, not the Greek letter. The letter comes from M_L: here +1 − 1 = 0, so Λ = 0."
+      },
+      {
+        "text": "Any two π electrons make a Σ state",
+        "why": "Two electrons in the same π orbital give M_L = ±2, a Δ state. Here they are in different orbitals, so M_L = 0."
+      },
+      {
+        "text": "π_g orbitals have no angular momentum about the axis",
+        "why": "Each π orbital has m_l = +1 or −1. It is the sum, +1 + (−1) = 0, that gives Λ = 0."
+      }
+    ],
+    "explanation": "M_L is the sum of the electrons' m_l values: +1 + (−1) = 0, so Λ = 0 and the state is Σ. Putting both electrons in the same π orbital instead gives M_L = ±2, the Δ state."
+  },
+  {
+    "id": "pc9-symmetry-o2-sigma-full",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.15.3, the ^3Σ term of O2 has its two electrons in different π_g orbitals, one labeled + and the other −. What is its full term symbol?",
+    "choices": [
+      {
+        "text": "^3Σ_g^−",
+        "correct": true
+      },
+      {
+        "text": "^3Σ_g^+",
+        "why": "(+)(−) → −, so the reflection label is −, not +."
+      },
+      {
+        "text": "^3Σ_u^−",
+        "why": "Both electrons are in g orbitals, and g + g → g."
+      },
+      {
+        "text": "^3Σ_u^+",
+        "why": "Both labels are off: g + g → g for parity, and (+)(−) → − for reflection."
+      }
+    ],
+    "explanation": "Both orbitals are g, so the parity is g; one is + and one −, so the reflection label is −. The term is ^3Σ_g^−, O2's ground state."
+  },
+  {
+    "id": "pc9-symmetry-o2-minus-term",
+    "type": "multiple-choice",
+    "prompt": "Exercise 9.15.1 asks for the term symbol of O_2^−, which has three electrons in its two π_g orbitals. What is it?",
+    "choices": [
+      {
+        "text": "^2Π_g",
+        "correct": true
+      },
+      {
+        "text": "^2Π_u",
+        "why": "All three electrons are in g orbitals, and combining g's always gives g."
+      },
+      {
+        "text": "^2Π_g^−",
+        "why": "Π states (Λ = 1) take no reflection label; only Σ states do."
+      },
+      {
+        "text": "^2Σ_g^+",
+        "why": "One π_g orbital is full and the other holds the single unpaired electron, so M_L = ±1 and Λ = 1: a Π state, not Σ."
+      }
+    ],
+    "explanation": "With three electrons in two π_g orbitals, one orbital is full and the other holds one unpaired electron. That gives S = 1/2 (a doublet), Λ = 1 (Π) and parity g, with no reflection label, so the term is ^2Π_g."
+  },
+  {
+    "id": "pc9-symmetry-o2-minus-ml",
+    "type": "numeric",
+    "prompt": "In one arrangement of O_2^−, the π_g orbital with m_l = +1 holds two electrons and the one with m_l = −1 holds one. M_L is the sum of all three electrons' m_l values. What is M_L?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "M_L = (+1) + (+1) + (−1) = 1. The other arrangement gives −1, so Λ = 1 and O_2^− is a Π state."
+  },
+  {
+    "id": "pc9-symmetry-o2-minus-multiplicity",
+    "type": "numeric",
+    "prompt": "O_2^− has three electrons in its two π_g orbitals: one orbital is full and the other holds a single unpaired electron, so S = 1/2. What is the spin multiplicity 2S + 1?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "2S + 1 = 2 × 1/2 + 1 = 2, a doublet. That is the superscript 2 in the term symbol of O_2^−, ^2Π_g."
+  },
+  {
+    "id": "pc9-symmetry-n2-closed",
+    "type": "multiple-choice",
+    "prompt": "N2 has no open-shell electrons: every occupied orbital is full. What is its ground-state term symbol?",
+    "choices": [
+      {
+        "text": "^1Σ_g^+",
+        "correct": true
+      },
+      {
+        "text": "^1Σ^+",
+        "why": "That form, without g/u, is for heteronuclear molecules like CO. N2 is homonuclear, so it needs a parity label."
+      },
+      {
+        "text": "^1Σ_u^+",
+        "why": "Filled orbitals hold pairs of electrons of the same parity, and g + g and u + u both give g. So a closed shell is g."
+      },
+      {
+        "text": "^3Σ_g^−",
+        "why": "A triplet needs unpaired electrons, as in O2. In N2 every spin is paired, so S = 0."
+      }
+    ],
+    "explanation": "With all electrons paired, S = 0 and Λ = 0, giving ^1Σ. Pairs of electrons in the same orbital always combine to g and +, so a closed-shell homonuclear molecule like N2 is ^1Σ_g^+."
+  },
+  {
+    "id": "pc9-symmetry-h2-plus-term",
+    "type": "multiple-choice",
+    "prompt": "H_2^+ has one electron, in the bonding σ orbital, which is unchanged by reflection in any plane containing both nuclei. What is its ground-state term symbol?",
+    "choices": [
+      {
+        "text": "^2Σ_g^+",
+        "correct": true
+      },
+      {
+        "text": "^2Σ_u^+",
+        "why": "By the hint in Example 9.15.1, bonding σ orbitals are g, so the state is g."
+      },
+      {
+        "text": "^1Σ_g^+",
+        "why": "One electron gives S = 1/2, so 2S + 1 = 2: a doublet, not a singlet."
+      },
+      {
+        "text": "^2Π_g",
+        "why": "A σ orbital has no orbital angular momentum about the bond axis, so Λ = 0, a Σ state."
+      }
+    ],
+    "explanation": "One electron gives S = 1/2 and a multiplicity of 2. A σ orbital gives Λ = 0 (Σ), a bonding σ orbital is g, and the orbital is symmetric (+) to reflection. The term is ^2Σ_g^+."
+  }
+]

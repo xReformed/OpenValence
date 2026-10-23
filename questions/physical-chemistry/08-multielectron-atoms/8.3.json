@@ -1,0 +1,585 @@
+[
+  {
+    "id": "pc8-scf-separable-goal",
+    "type": "multiple-choice",
+    "prompt": "To make the multi-electron Schrödinger equation separable while keeping some electron–electron repulsion, what does the Hartree approach do to the repulsion term?",
+    "choices": [
+      {
+        "text": "Averages it so it depends on one electron's position",
+        "correct": true
+      },
+      {
+        "text": "Drops it from the Hamiltonian entirely",
+        "why": "Dropping it does give separable equations, but all information about the repulsion is lost. Hartree keeps the repulsion, averaged so it depends on one electron's coordinates."
+      },
+      {
+        "text": "Treats it as a small first-order correction",
+        "why": "That is the perturbation approach. Hartree instead approximates the repulsion as an average that depends on the coordinates of only one electron."
+      },
+      {
+        "text": "Keeps it exactly, with every pair of electron coordinates",
+        "why": "Kept exactly, the repulsion terms couple the electrons, and the equation can't be separated. Hartree averages them so each term depends on one electron only."
+      }
+    ],
+    "explanation": "The variables separate only if each term depends on one electron's coordinates. Hartree approximates the electron–electron repulsion in that way, so the Hamiltonian still accounts for the repulsion, but only in an average way."
+  },
+  {
+    "id": "pc8-scf-smeared-charge",
+    "type": "multiple-choice",
+    "prompt": "When the Hartree approximation builds the field acting on one electron, how are the other N − 1 electrons represented?",
+    "choices": [
+      {
+        "text": "As a smooth cloud of negative charge, ρ(r′)",
+        "correct": true
+      },
+      {
+        "text": "As point charges frozen at definite positions",
+        "why": "The method does not track where each of the other electrons is at every instant. It smears them out into a smooth charge density ρ(r′)."
+      },
+      {
+        "text": "As extra positive charge added to the nucleus",
+        "why": "Electrons carry negative charge and don't add to the nuclear charge. They are smeared out into a smooth negative charge density ρ(r′)."
+      },
+      {
+        "text": "They are left out of that electron's equation",
+        "why": "Leaving them out would ignore their repulsion altogether. Hartree includes them, smeared out into a smooth negative charge density ρ(r′)."
+      }
+    ],
+    "explanation": "The other electrons are smeared out into a smooth negative charge density ρ(r′), built from the |ψ_i|^2 of the occupied orbitals. Each electron then moves in the field of the nucleus plus this averaged charge cloud."
+  },
+  {
+    "id": "pc8-scf-potential-parts",
+    "type": "multiple-choice",
+    "prompt": "In the one-electron Hartree equation, which contributions make up the potential V(r) in which an electron moves?",
+    "choices": [
+      {
+        "text": "The nucleus and the mean field of the other electrons",
+        "correct": true
+      },
+      {
+        "text": "Only the nucleus, exactly as in a hydrogen-like atom",
+        "why": "That would ignore the other electrons. V(r) also includes the mean field of the N − 1 other electrons."
+      },
+      {
+        "text": "Only the other electrons, with no nuclear attraction",
+        "why": "The attraction to the nucleus is the main part of V(r). The mean field of the other electrons is added to it."
+      },
+      {
+        "text": "The nucleus and the electron's own smeared-out charge",
+        "why": "An electron does not act on itself. The second part of V(r) is the mean field of the N − 1 other electrons."
+      }
+    ],
+    "explanation": "V(r) has two parts: the attraction to the nucleus, V_nucleus, and the mean field arising from the N − 1 other electrons, V_electron. Together they give the one-electron equation H_e(r)ψ_i(r) = ε_i ψ_i(r)."
+  },
+  {
+    "id": "pc8-scf-occupied-only",
+    "type": "multiple-choice",
+    "prompt": "The charge density in the Hartree method is a sum of |ψ_i(r)|^2 terms. Which orbitals are included in the sum?",
+    "choices": [
+      {
+        "text": "Only the occupied orbitals",
+        "correct": true
+      },
+      {
+        "text": "Every orbital, whether occupied or empty",
+        "why": "Empty orbitals hold no electrons, so they add no charge. The sum runs only over the occupied states."
+      },
+      {
+        "text": "Only the lowest-energy orbital",
+        "why": "Every electron contributes charge, not only the one in the lowest orbital. The sum runs over all occupied states."
+      },
+      {
+        "text": "Only the outer-shell orbitals",
+        "why": "Inner electrons carry charge too and are part of the mean field. The sum runs over all occupied states."
+      }
+    ],
+    "explanation": "ρ(r) = Σ|ψ_i(r)|^2 runs over all occupied states, that is, only the states of electrons that exist in the atom. Each electron adds its own probability density to the charge cloud."
+  },
+  {
+    "id": "pc8-scf-density-sum",
+    "type": "numeric",
+    "prompt": "In a Hartree calculation on lithium, the three electrons occupy orbitals ψ_1, ψ_2 and ψ_3. At one point, |ψ_1|^2 = |ψ_2|^2 = 0.20 bohr^−3 and |ψ_3|^2 = 0.05 bohr^−3. The electron density is the sum over the occupied orbitals, ρ(r) = Σ_i |ψ_i(r)|^2. What is ρ at that point, in bohr^−3? (Give it as a decimal.)",
+    "answer": 0.45,
+    "explanation": "ρ = |ψ_1|^2 + |ψ_2|^2 + |ψ_3|^2 = 0.20 + 0.20 + 0.05 = 0.45 bohr^−3. Each occupied orbital adds its electron's probability density to the charge cloud."
+  },
+  {
+    "id": "pc8-scf-oxygen-mean-field",
+    "type": "numeric",
+    "prompt": "In the Hartree approximation, each electron moves in the mean field of the N − 1 other electrons. For a neutral oxygen atom (Z = 8), how many electrons make up the mean field felt by any one electron?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "A neutral atom has N = Z electrons, so oxygen has 8. The mean field felt by one electron comes from the 8 − 1 = 7 others; an electron does not feel its own charge."
+  },
+  {
+    "id": "pc8-scf-three-energies",
+    "type": "multiple-choice",
+    "prompt": "In the Hartree approximation, the energy ε_j of an orbital φ_j is a sum of which three contributions?",
+    "choices": [
+      {
+        "text": "Kinetic energy, nuclear attraction, electron repulsion",
+        "correct": true
+      },
+      {
+        "text": "Kinetic energy, nuclear attraction, spin–orbit energy",
+        "why": "Spin–orbit coupling isn't part of the Hartree orbital energy. The third part is the Coulomb repulsion with the N − 1 other electrons."
+      },
+      {
+        "text": "Kinetic energy, nuclear repulsion, electron attraction",
+        "why": "The signs are reversed: the nucleus attracts the electron, and the other electrons repel it."
+      },
+      {
+        "text": "Kinetic energy, potential energy, magnetic energy",
+        "why": "There is no magnetic term in the Hartree orbital energy. The potential energy is split into the nuclear attraction and the electron–electron repulsion."
+      }
+    ],
+    "explanation": "ε_j = (average kinetic energy) + (Coulomb attraction to the nucleus of charge Z) + (Coulomb repulsion with each of the N − 1 other electrons). This treatment of electrons and orbitals is called the Hartree level of theory."
+  },
+  {
+    "id": "pc8-scf-orbital-energy-sum",
+    "type": "numeric",
+    "prompt": "In the Hartree approximation, the energy ε_j of an orbital is the sum of the electron's average kinetic energy, its Coulomb attraction to the nucleus, and its Coulomb repulsion with the other electrons. For one orbital these are +1.20, −3.50 and +1.60 hartree. What is ε_j, in hartree? (Give it as a decimal.)",
+    "answer": -0.7,
+    "unit": "hartree",
+    "explanation": "ε_j = 1.20 + (−3.50) + 1.60 = −0.70 hartree. The total is negative, so the electron is bound: its attraction to the nucleus outweighs its kinetic energy and its repulsion with the other electrons."
+  },
+  {
+    "id": "pc8-scf-self-interaction",
+    "type": "multiple-choice",
+    "prompt": "The repulsion part of ε_j sums Coulomb integrals J_(j, k) over the other orbitals k. Why is the term with k = j left out?",
+    "choices": [
+      {
+        "text": "An electron does not repel itself",
+        "correct": true
+      },
+      {
+        "text": "Its value is always exactly zero",
+        "why": "J_(j, j) would not be zero; it would be a large positive repulsion. It is left out because an electron doesn't interact with itself."
+      },
+      {
+        "text": "It is too hard to compute",
+        "why": "Difficulty is not the reason. Including it would count a self-interaction of the electron in φ_j with itself, which is not physical."
+      },
+      {
+        "text": "It is counted in the kinetic energy instead",
+        "why": "The kinetic energy contains no repulsion. The k = j term is left out to avoid counting the electron's interaction with itself."
+      }
+    ],
+    "explanation": "Each electron repels the other N − 1 electrons but not itself. Excluding k = j avoids counting a self-interaction of the electron in φ_j with its own charge density."
+  },
+  {
+    "id": "pc8-scf-coulomb-integral",
+    "type": "multiple-choice",
+    "prompt": "In the Hartree energy, what does the two-electron Coulomb integral J_(j, k) describe?",
+    "choices": [
+      {
+        "text": "Repulsion between the charge clouds of φ_j and φ_k",
+        "correct": true
+      },
+      {
+        "text": "Attraction of the electron in φ_j to the nucleus",
+        "why": "That is a separate term in ε_j. J_(j, k) is the repulsion between the charge densities |φ_j|^2 and |φ_k|^2."
+      },
+      {
+        "text": "The overlap of the two orbitals φ_j and φ_k in space",
+        "why": "An overlap integral has no 1/|r − r′| in it. J_(j, k) weighs the two charge densities by the Coulomb repulsion between them."
+      },
+      {
+        "text": "Kinetic energy of the electrons in φ_j and φ_k",
+        "why": "Kinetic energy comes from the ∇^2 operator acting on one electron. J_(j, k) is a two-electron repulsion between charge densities."
+      }
+    ],
+    "explanation": "J_(j, k) is a six-dimensional integral over both electrons' positions. It gives the Coulomb repulsion between the charge density |φ_j(r)|^2 of the electron in φ_j and the charge density |φ_k(r′)|^2 of the electron in φ_k."
+  },
+  {
+    "id": "pc8-scf-orbital-energy-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the one-electron Hartree equation H_e(r)ψ_i(r) = ε_i ψ_i(r), what is ε_i?",
+    "choices": [
+      {
+        "text": "The energy of an electron in orbital ψ_i",
+        "correct": true
+      },
+      {
+        "text": "The total energy of the whole many-electron atom",
+        "why": "ε_i belongs to a single orbital. It is the energy of one electron in ψ_i, not of the whole atom."
+      },
+      {
+        "text": "The charge density at the point r",
+        "why": "The charge density is ρ(r). ε_i is the energy eigenvalue of the one-electron Hamiltonian H_e."
+      },
+      {
+        "text": "The repulsion between two electrons",
+        "why": "Repulsion is only one part of ε_i. ε_i is the whole energy of an electron in ψ_i: kinetic energy, nuclear attraction and repulsion together."
+      }
+    ],
+    "explanation": "Each one-electron equation is an eigenvalue equation: H_e acting on ψ_i gives the orbital energy ε_i times ψ_i. ε_i is the energy of an electron in that orbital, moving in the field of the nucleus and the mean field of the other electrons."
+  },
+  {
+    "id": "pc8-scf-why-iterate",
+    "type": "multiple-choice",
+    "prompt": "Why must the Hartree equations be solved iteratively rather than in one step?",
+    "choices": [
+      {
+        "text": "The potential depends on the unknown orbitals",
+        "correct": true
+      },
+      {
+        "text": "Computers can only handle one electron at a time",
+        "why": "This is not a limit of computers. The potential each electron feels is built from the other orbitals, which are unknown until the equations are solved."
+      },
+      {
+        "text": "Each iteration adds one more electron to the atom",
+        "why": "All N electrons are present in every cycle. Iteration is needed because the potential depends on the orbitals being solved for."
+      },
+      {
+        "text": "Each cycle adds a smaller perturbation correction",
+        "why": "Hartree's method is not a perturbation series. It iterates because the potential depends on the unknown orbitals."
+      }
+    ],
+    "explanation": "Until we know where the electrons are, we cannot write down the Hamiltonian, but until we know the Hamiltonian, we cannot tell where the electrons are. So the nonlinear Hartree equations are solved by repeating a cycle."
+  },
+  {
+    "id": "pc8-scf-first-step",
+    "type": "multiple-choice",
+    "prompt": "What is the first step of a self-consistent field (SCF) calculation?",
+    "choices": [
+      {
+        "text": "Guess a trial electron charge density",
+        "correct": true
+      },
+      {
+        "text": "Solve the exact N-electron Schrödinger equation",
+        "why": "That can't be done: the repulsion terms prevent an exact solution. The cycle starts from a guess for the charge density."
+      },
+      {
+        "text": "Measure the atom's ionization energies",
+        "why": "The SCF method is a calculation and needs no measured input. It starts from a guessed trial charge density."
+      },
+      {
+        "text": "Remove all electron–electron repulsion",
+        "why": "Dropping the repulsion is the cruder approach the Hartree method improves on. SCF starts from a guessed charge density, which gives a first estimate of the repulsion."
+      }
+    ],
+    "explanation": "The SCF method starts with a guess for the trial electron charge density. From it a potential is built, the one-electron equations are solved, and the new orbitals give a better charge density for the next cycle."
+  },
+  {
+    "id": "pc8-scf-argon-equations",
+    "type": "numeric",
+    "prompt": "The SCF procedure solves N/2 one-particle Schrödinger equations to obtain the wavefunctions of N electrons. How many one-particle equations does it solve for an argon atom, which has 18 electrons?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "N/2 = 18/2 = 9 one-particle equations. Each solution describes two electrons, so the 9 solutions give the wavefunctions of all 18 electrons."
+  },
+  {
+    "id": "pc8-scf-next-step",
+    "type": "multiple-choice",
+    "prompt": "In the SCF cycle, the one-electron equations have just been solved with the current potential. What happens next?",
+    "choices": [
+      {
+        "text": "A new potential is built from the new orbitals",
+        "correct": true
+      },
+      {
+        "text": "The orbitals are accepted, since one pass is exact",
+        "why": "One pass is not exact, because its potential came from a guess. The new orbitals are used to build a new potential, and the equations are solved again."
+      },
+      {
+        "text": "The nuclear charge Z is adjusted to fit experiment",
+        "why": "Z is fixed by the element. What changes from cycle to cycle is the electron part of the potential, rebuilt from the new orbitals."
+      },
+      {
+        "text": "One electron is removed and the cycle restarts",
+        "why": "The number of electrons stays N. The new orbitals give a new charge density and potential, and the equations are solved again."
+      }
+    ],
+    "explanation": "From the new wavefunctions, the potential for each electron is constructed from that of the nucleus and that of all the other electrons, and the one-electron equations are solved again. The cycle then repeats."
+  },
+  {
+    "id": "pc8-scf-self-consistent",
+    "type": "multiple-choice",
+    "prompt": "When is the field in an SCF calculation called self-consistent, so that the cycle can stop?",
+    "choices": [
+      {
+        "text": "When the orbitals it gives reproduce the same field",
+        "correct": true
+      },
+      {
+        "text": "When the energy equals the exact experimental energy",
+        "why": "The Hartree method is an approximation and won't reproduce experiment exactly. The cycle stops when the field no longer changes from one cycle to the next."
+      },
+      {
+        "text": "After exactly one cycle, by definition",
+        "why": "One cycle starts from a guess and is not consistent in general. The cycle is repeated until the orbitals and the field stop changing."
+      },
+      {
+        "text": "When every orbital has the same energy",
+        "why": "Orbital energies differ (1s, 2s, 2p, …) even at the end. Self-consistent means the orbitals produce the same field that was used to find them."
+      }
+    ],
+    "explanation": "The field is self-consistent when the orbitals found in it give back, within a small tolerance, the same charge density and potential that went in. Nothing then changes from one cycle to the next, and the calculation stops."
+  },
+  {
+    "id": "pc8-scf-algorithm",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call the SCF method ideal for a computer?",
+    "choices": [
+      {
+        "text": "It is easily written as a repeated algorithm",
+        "correct": true
+      },
+      {
+        "text": "It gives the exact energy of any atom or molecule",
+        "why": "It is an approximation, not an exact method. It suits a computer because it is a simple loop, repeated until the field stops changing."
+      },
+      {
+        "text": "It needs no starting guess at all",
+        "why": "It does need a starting guess for the charge density. It suits a computer because the same steps are repeated in a loop."
+      },
+      {
+        "text": "It only works for atoms with one electron",
+        "why": "One-electron atoms need no SCF at all. The method suits a computer because its steps form a simple, repeated algorithm."
+      }
+    ],
+    "explanation": "Guess, build the potential, solve, rebuild the potential, and repeat: the steps form a loop that is easily written as an algorithm, so the SCF method is ideal for a computer."
+  },
+  {
+    "id": "pc8-scf-molecules",
+    "type": "multiple-choice",
+    "prompt": "Can the SCF method be used for systems other than atoms?",
+    "choices": [
+      {
+        "text": "Yes, for molecules and even solids too",
+        "correct": true
+      },
+      {
+        "text": "No, it works only for spherical atoms",
+        "why": "The same method is used for molecules and solids, with potentials of the right symmetry and suitable boundary conditions."
+      },
+      {
+        "text": "Only for hydrogen-like ions with one electron",
+        "why": "A one-electron ion needs no averaged field. The SCF method is for many electrons, in atoms, molecules and solids."
+      },
+      {
+        "text": "Only for the noble gases, with filled shells",
+        "why": "The method isn't limited to noble gases. It is used for atoms in general, and for molecules and solids too."
+      }
+    ],
+    "explanation": "Although the section deals with atoms, the same methodology is used for molecules or even solids, with appropriate potential symmetries and boundary conditions."
+  },
+  {
+    "id": "pc8-scf-basis-set",
+    "type": "multiple-choice",
+    "prompt": "The SCF approach is a variational method. In practice, how are its wavefunctions represented?",
+    "choices": [
+      {
+        "text": "Expanded in an appropriate basis set",
+        "correct": true
+      },
+      {
+        "text": "As exact hydrogen orbitals with Z unchanged",
+        "why": "Unchanged hydrogen orbitals would ignore the other electrons. The SCF wavefunctions are expanded in some appropriate basis set."
+      },
+      {
+        "text": "As a single exact function of all N electrons",
+        "why": "That is the exact wavefunction, which can't be found. The SCF method works with one-electron functions expanded in a basis set."
+      },
+      {
+        "text": "As tables of measured electron densities",
+        "why": "The method calculates rather than measures. Its wavefunctions are expanded in an appropriate basis set."
+      }
+    ],
+    "explanation": "Because the SCF approach is a variational method, wherever it refers to wavefunctions, they are assumed to be expanded in some appropriate basis set of functions."
+  },
+  {
+    "id": "pc8-scf-variational-derivation",
+    "type": "multiple-choice",
+    "prompt": "The Hartree method gives a set of N coupled equations for the N orbitals. Which method is invoked to derive them?",
+    "choices": [
+      {
+        "text": "The variational method",
+        "correct": true
+      },
+      {
+        "text": "Perturbation theory",
+        "why": "The Hartree equations are not built from a perturbation series. They come from invoking the variational method."
+      },
+      {
+        "text": "Exact separation of variables",
+        "why": "The exact Hamiltonian can't be separated because of the repulsion terms. The coupled Hartree equations come from the variational method."
+      },
+      {
+        "text": "The Bohr model of the atom",
+        "why": "The Bohr model has no way to treat several interacting electrons. The Hartree equations come from the variational method."
+      }
+    ],
+    "explanation": "By invoking the variational method, one derives N coupled equations for the N orbitals. Solving them gives the Hartree wavefunction and energy of the system."
+  },
+  {
+    "id": "pc8-scf-history",
+    "type": "multiple-choice",
+    "prompt": "Hartree published his method in 1928. Who improved it two years later, giving the Hartree-Fock method its name?",
+    "choices": [
+      {
+        "text": "Vladimir Fock",
+        "correct": true
+      },
+      {
+        "text": "Pieter Zeeman",
+        "why": "Zeeman studied the splitting of spectral lines in magnetic fields. The 1930 improvement to Hartree's method was by Vladimir Fock."
+      },
+      {
+        "text": "Niels Bohr",
+        "why": "Bohr's model of hydrogen came earlier and doesn't treat many-electron atoms this way. Fock improved Hartree's method in 1930."
+      },
+      {
+        "text": "Otto Stern",
+        "why": "Stern is known for the Stern-Gerlach experiment on atoms in magnetic fields. Fock improved Hartree's method."
+      }
+    ],
+    "explanation": "Douglas Hartree published the self-consistent field method in 1928, and Vladimir Fock improved it in 1930 by using properly antisymmetrized wavefunctions. The improved method is the Hartree-Fock method."
+  },
+  {
+    "id": "pc8-scf-what-is-lost",
+    "type": "multiple-choice",
+    "prompt": "In reality, the motions of all the electrons in an atom are coupled together. What does the independent-orbital (Hartree) picture leave out?",
+    "choices": [
+      {
+        "text": "Each electron's response to where the others are",
+        "correct": true
+      },
+      {
+        "text": "The attraction between electrons and the nucleus",
+        "why": "The nuclear attraction is fully kept in V(r). What is lost is the coupling of each electron's motion to the others' instantaneous positions."
+      },
+      {
+        "text": "All of the repulsion between electrons",
+        "why": "The repulsion is kept, but only as an average. What is lost is how each electron reacts to where the others actually are."
+      },
+      {
+        "text": "The kinetic energy of the electrons",
+        "why": "Kinetic energy is one of the three parts of ε_j. What is lost is the instantaneous coupling between the electrons' motions."
+      }
+    ],
+    "explanation": "The orbital approach treats the electrons as independent, each moving in the average field of the others. A real electron's motion is coupled to where the other electrons are at each instant, and the averaged field leaves that out."
+  },
+  {
+    "id": "pc8-scf-rank",
+    "type": "multiple-choice",
+    "prompt": "The section compares the Hartree method with ignoring electron repulsion and with modern methods. How does it rate the Hartree method?",
+    "choices": [
+      {
+        "text": "An improvement, but far from modern methods",
+        "correct": true
+      },
+      {
+        "text": "The most exact method, used for all modern work",
+        "why": "The Hartree method is approximate and still far from modern state-of-the-art methods."
+      },
+      {
+        "text": "Less accurate than ignoring electron repulsion",
+        "why": "It is one step better than ignoring the repulsion, because it includes the repulsion in an average way."
+      },
+      {
+        "text": "Useful only for atoms with a single electron",
+        "why": "A one-electron atom has no electron repulsion to average. The Hartree method is for many-electron systems, though it is far from state of the art."
+      }
+    ],
+    "explanation": "The Hartree method is one step better than the approach that simply ignores electron–electron repulsion, but it is still far from modern state-of-the-art methods."
+  },
+  {
+    "id": "pc8-scf-carbon-1s",
+    "type": "multiple-choice",
+    "prompt": "In the crudest screening model of carbon (Z = 6), the 1s electrons are given Z_eff = 6. Why?",
+    "choices": [
+      {
+        "text": "Nothing screens them from the nucleus",
+        "correct": true
+      },
+      {
+        "text": "They screen each other completely",
+        "why": "If they did, Z_eff would be lower, not 6. In this crude model nothing screens the 1s electrons, so they feel the full nuclear charge."
+      },
+      {
+        "text": "The 2s and 2p electrons screen them fully",
+        "why": "Screening by the outer electrons would lower Z_eff below 6. The model assumes the 1s electrons feel the full charge Z = 6."
+      },
+      {
+        "text": "Every electron of carbon has Z_eff = 6",
+        "why": "The 2s and 2p electrons are screened by the two 1s electrons, so they get Z_eff = 4. Only the 1s electrons feel the full Z = 6."
+      }
+    ],
+    "explanation": "In the crudest approximation, the two 1s electrons feel the full nuclear attraction, Z_eff = 6, while the 2s and 2p electrons are screened by the two 1s electrons, so Z_eff = 6 − 2 = 4 for them."
+  },
+  {
+    "id": "pc8-scf-nitrogen-zeff",
+    "type": "numeric",
+    "prompt": "In the crudest screening model, an atom's 2s and 2p electrons are screened by its two 1s electrons, as for carbon in the section. Using Z_eff = Z − S, with S the number of screening electrons, what is Z_eff for the 2s and 2p electrons of nitrogen (Z = 7)?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Z_eff = Z − S = 7 − 2 = 5. In this crude model, each of the two 1s electrons cancels one unit of nuclear charge for the outer electrons."
+  },
+  {
+    "id": "pc8-scf-carbon-2p-energy",
+    "type": "numeric",
+    "prompt": "Screening lets Z_eff replace Z in the hydrogen-like energy formula, which in atomic units is E = −(Z_eff^2)/(2n^2) hartree. In the crude model of carbon, the 2p electrons have Z_eff = 4 and n = 2. What is their energy, in hartree?",
+    "answer": -2.0,
+    "unit": "hartree",
+    "explanation": "E = −(4^2)/(2 × 2^2) = −16/8 = −2.0 hartree. Energies from such crude screened orbitals are not accurate enough for quantitative work, which is why a better treatment of the repulsion is needed."
+  },
+  {
+    "id": "pc8-scf-3d-4s",
+    "type": "multiple-choice",
+    "prompt": "Which trend does a simple screening model fail to describe adequately, according to the section?",
+    "choices": [
+      {
+        "text": "Relative energies of 3d and 4s orbitals",
+        "correct": true
+      },
+      {
+        "text": "The energy order of 1s and 2s orbitals",
+        "why": "Even crude screening puts 1s far below 2s. The section's example of failure is the relative energy of 3d and 4s."
+      },
+      {
+        "text": "Sizes of the orbitals of hydrogen atoms",
+        "why": "Hydrogen has one electron and needs no screening; its orbitals are exact. The failure concerns trends like 3d versus 4s in many-electron atoms."
+      },
+      {
+        "text": "The nuclear charge Z of each element",
+        "why": "Z is simply the atomic number. The screening model fails for trends such as the relative energies of 3d and 4s."
+      }
+    ],
+    "explanation": "Orbitals with a simple screening factor don't follow the trends in atomic orbital energies, for example the relative energies of 3d and 4s. Doing better means treating electron repulsion more reliably than a screening factor can."
+  },
+  {
+    "id": "pc8-scf-screened-ip",
+    "type": "multiple-choice",
+    "prompt": "When crude screened hydrogenic orbitals are used to compute orbital energies, how do the predicted ionization energies compare with measured ones?",
+    "choices": [
+      {
+        "text": "They agree poorly with experiment",
+        "correct": true
+      },
+      {
+        "text": "They agree exactly for every atom",
+        "why": "The section says the measured values do not agree well with these theoretical values. Crude screening is not accurate enough."
+      },
+      {
+        "text": "They agree well, except for hydrogen",
+        "why": "Hydrogen needs no screening at all. For many-electron atoms, the crude-screening values agree poorly with measurement."
+      },
+      {
+        "text": "Ionization energies can't be measured",
+        "why": "Ionization potentials can be measured. The problem is that the crude-screening predictions don't agree well with them."
+      }
+    ],
+    "explanation": "The negative of ε_j should approximate the energy needed to remove an electron from φ_j. With crude screened hydrogenic orbitals, the predicted values do not agree well with measured ionization potentials."
+  },
+  {
+    "id": "pc8-scf-orbital-energy-ev",
+    "type": "numeric",
+    "prompt": "An SCF calculation gives an orbital energy of ε = −0.43 hartree. Using 1 hartree = 27.211 eV, what is ε in eV?",
+    "answer": -11.7007,
+    "unit": "eV",
+    "explanation": "ε = −0.43 × 27.211 eV = −11.70 eV. SCF programs work in atomic units; converting to eV makes the result easy to compare with measured energies."
+  }
+]

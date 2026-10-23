@@ -1,0 +1,601 @@
+[
+  {
+    "id": "pc7-perturbation-idea",
+    "type": "multiple-choice",
+    "prompt": "What is the basic idea of perturbation theory?",
+    "choices": [
+      {
+        "text": "Start from a solved, simpler problem and add corrections",
+        "correct": true
+      },
+      {
+        "text": "Guess a trial function and minimize its energy",
+        "why": "That is the variational method. Perturbation theory starts from the exact solution of a related, simpler problem and adds a series of corrections."
+      },
+      {
+        "text": "Solve the full Schrödinger equation exactly at once",
+        "why": "Perturbation theory is used when the problem can't be solved exactly. It approximates the solution by correcting a solved problem step by step."
+      },
+      {
+        "text": "Measure the energies first, then fit a Hamiltonian to them",
+        "why": "Perturbation theory is a calculation, not a fit to data. It starts from a solved problem and adds successive corrections."
+      }
+    ],
+    "explanation": "Perturbation theory finds approximate solutions by starting from the exact solution of a related, simpler problem. The energies and wavefunctions are then improved by a scheme of successive corrections."
+  },
+  {
+    "id": "pc7-perturbation-when",
+    "type": "multiple-choice",
+    "prompt": "When can perturbation theory be applied to a problem?",
+    "choices": [
+      {
+        "text": "When it equals a solvable problem plus a small term",
+        "correct": true
+      },
+      {
+        "text": "Only when the problem can already be solved exactly",
+        "why": "If it could be solved exactly, no approximation would be needed. Perturbation theory is for problems that can't be, but are a solvable one plus a small term."
+      },
+      {
+        "text": "When the added term is much larger than Ĥ^(0)",
+        "why": "The method relies on the added term being small compared with Ĥ^(0), so that each correction is smaller than the one before."
+      },
+      {
+        "text": "Only when the system has a single particle",
+        "why": "Perturbation theory is used widely in atomic, condensed-matter and particle physics. What matters is that the problem is a solvable one plus a small term."
+      }
+    ],
+    "explanation": "Perturbation theory applies when a problem cannot be solved exactly but can be written as an exactly solvable problem with a \"small\" term added to its mathematical description."
+  },
+  {
+    "id": "pc7-perturbation-h0",
+    "type": "multiple-choice",
+    "prompt": "In Ĥ = Ĥ^(0) + Ĥ^(1), what is Ĥ^(0)?",
+    "choices": [
+      {
+        "text": "The Hamiltonian whose eigenstates are already known",
+        "correct": true
+      },
+      {
+        "text": "The small extra term, such as an external electric field",
+        "why": "That is Ĥ^(1), the perturbation. Ĥ^(0) is the solvable part, with known eigenstates and energies."
+      },
+      {
+        "text": "The Hamiltonian for the ground state only",
+        "why": "Ĥ^(0) is one operator for the whole system; its eigenstates include the ground and the excited states, all already known."
+      },
+      {
+        "text": "The exact Hamiltonian, including every term",
+        "why": "The full Hamiltonian is Ĥ^(0) + Ĥ^(1). Ĥ^(0) is only the part whose eigenstates and energies are known."
+      }
+    ],
+    "explanation": "Ĥ^(0) is the unperturbed Hamiltonian, with known eigenstates |n^(0)⟩ and eigenenergies E_n^(0). Ĥ^(1) is the small term, an external field for example, added to it."
+  },
+  {
+    "id": "pc7-perturbation-assumption",
+    "type": "multiple-choice",
+    "prompt": "What is the basic assumption about Ĥ^(1) in perturbation theory?",
+    "choices": [
+      {
+        "text": "It is small, so the corrections shrink order by order",
+        "correct": true
+      },
+      {
+        "text": "It is larger than Ĥ^(0), so it mainly sets the energies",
+        "why": "If Ĥ^(1) were the larger part, the corrections would not shrink. The method assumes Ĥ^(1) is small, so each correction is smaller than the one before."
+      },
+      {
+        "text": "It has the same eigenstates as Ĥ^(0)",
+        "why": "Then there would be nothing to correct in the wavefunctions. The assumption is only that Ĥ^(1) is small, so the corrections shrink order by order."
+      },
+      {
+        "text": "It must be zero at every point in space",
+        "why": "A zero Ĥ^(1) would change nothing. Ĥ^(1) is a small, nonzero term, so each correction is smaller than the previous one."
+      }
+    ],
+    "explanation": "The basic assumption is that Ĥ^(1) is small enough that the leading corrections are of the same order of magnitude as Ĥ^(1) itself. Each further correction is smaller than the one before by a factor of order Ĥ^(1)/Ĥ^(0)."
+  },
+  {
+    "id": "pc7-perturbation-lambda",
+    "type": "multiple-choice",
+    "prompt": "Why is a parameter λ put in front of Ĥ^(1) in perturbation theory?",
+    "choices": [
+      {
+        "text": "To keep track of the order of each term",
+        "correct": true
+      },
+      {
+        "text": "To measure the true strength of the field",
+        "why": "λ is a dimensionless bookkeeping device, set equal to 1 at the end. It only labels each term with its order."
+      },
+      {
+        "text": "To make the Hamiltonian dimensionless",
+        "why": "Ĥ keeps its energy units; λ itself is dimensionless. It is there to keep track of the order of magnitude of each term."
+      },
+      {
+        "text": "To be minimized, like a variational parameter",
+        "why": "λ is not varied to lower an energy; it is set equal to 1 when we are through. It just tags the terms by their order."
+      }
+    ],
+    "explanation": "λ is purely a bookkeeping device. Each term carries a power of λ that shows its order, so terms of the same order on the two sides of the equation are easy to match; then λ is set equal to 1."
+  },
+  {
+    "id": "pc7-perturbation-matching",
+    "type": "multiple-choice",
+    "prompt": "After the series for |n⟩ and E_n are put into the Schrödinger equation, how are the equations for each order obtained?",
+    "choices": [
+      {
+        "text": "By matching terms with the same power of λ",
+        "correct": true
+      },
+      {
+        "text": "By setting every power of λ equal to zero",
+        "why": "The terms are not set to zero. Terms with the same power of λ on the two sides are matched, giving one equation for each order."
+      },
+      {
+        "text": "By choosing λ to minimize the energy",
+        "why": "λ is not varied; it is a bookkeeping device set to 1 at the end. Terms with the same power of λ on the two sides are set equal."
+      },
+      {
+        "text": "By keeping only the terms with the highest power of λ",
+        "why": "Every order gives its own equation. Terms with the same power of λ on the two sides are set equal, and the equations are solved one by one."
+      }
+    ],
+    "explanation": "The expansions are fed into the Schrödinger equation, and terms of the same order, that is, with the same power of λ, on the two sides are set equal. The equations generated are solved one by one to give more and more accurate results."
+  },
+  {
+    "id": "pc7-perturbation-zero-order",
+    "type": "multiple-choice",
+    "prompt": "When the zero-order terms (those with no λ) are collected, what equation results?",
+    "choices": [
+      {
+        "text": "The unperturbed Schrödinger equation",
+        "correct": true
+      },
+      {
+        "text": "The equation for the first-order energy",
+        "why": "That comes from the terms linear in λ. The zero-order terms just give back Ĥ^(0)|n^(0)⟩ = E_n^(0)|n^(0)⟩."
+      },
+      {
+        "text": "The full equation including Ĥ^(1)",
+        "why": "Ĥ^(1) always comes with at least one power of λ, so it can't appear at zero order. The zero-order terms give the unperturbed equation."
+      },
+      {
+        "text": "An equation with no solutions",
+        "why": "The zero-order equation is the solved problem we started from, Ĥ^(0)|n^(0)⟩ = E_n^(0)|n^(0)⟩."
+      }
+    ],
+    "explanation": "Collecting the zero-order terms gives just Ĥ^(0)|n^(0)⟩ = E_n^(0)|n^(0)⟩, the Schrödinger equation for the unperturbed system, which is already solved."
+  },
+  {
+    "id": "pc7-perturbation-order-of-term",
+    "type": "multiple-choice",
+    "prompt": "In the expansion |n⟩ = Σ λ^(i)|n^(i)⟩, the ket |n^(2)⟩ is multiplied by λ^2. What does this tell you about it?",
+    "choices": [
+      {
+        "text": "It is the second-order correction to the state",
+        "correct": true
+      },
+      {
+        "text": "It is twice as large as |n^(1)⟩",
+        "why": "λ^2 is not a factor of 2. It marks |n^(2)⟩ as a second-order term, smaller than |n^(1)⟩ by about another factor of Ĥ^(1)/Ĥ^(0)."
+      },
+      {
+        "text": "It is the state with the quantum number n equal to 2",
+        "why": "The superscript 2 marks the order of the correction; it is neither a power nor a quantum number. |n^(2)⟩ is the second-order correction to state n."
+      },
+      {
+        "text": "It is the exact wavefunction of state n",
+        "why": "The exact |n⟩ is the whole sum. |n^(2)⟩ is only its second-order piece."
+      }
+    ],
+    "explanation": "The ket |n^(i)⟩ is multiplied by λ^(i), so it is the i-th order correction. |n^(2)⟩ is of order (Ĥ^(1)/Ĥ^(0))^2, smaller again than the first-order correction |n^(1)⟩."
+  },
+  {
+    "id": "pc7-perturbation-first-order-energy",
+    "type": "multiple-choice",
+    "prompt": "For any perturbation Ĥ^(1), which quantity gives the first-order energy correction E_n^(1) of state n?",
+    "choices": [
+      {
+        "text": "The expectation value of Ĥ^(1) in the unperturbed state",
+        "correct": true
+      },
+      {
+        "text": "The expectation value of Ĥ^(0) in the unperturbed state",
+        "why": "That just gives back E_n^(0), the unperturbed energy. The correction is the expectation value of the perturbation, ⟨n^(0)|Ĥ^(1)|n^(0)⟩."
+      },
+      {
+        "text": "The expectation value of Ĥ^(1) in the exact state",
+        "why": "The exact state is what we don't know. E_n^(1) uses the known unperturbed wavefunction: E_n^(1) = ⟨n^(0)|Ĥ^(1)|n^(0)⟩."
+      },
+      {
+        "text": "The difference E_n^(0) − E_m^(0) to another state",
+        "why": "Energy differences appear in the denominators of the wavefunction correction. E_n^(1) is the expectation value ⟨n^(0)|Ĥ^(1)|n^(0)⟩."
+      }
+    ],
+    "explanation": "E_n^(1) = ⟨n^(0)|Ĥ^(1)|n^(0)⟩: the first-order change in the energy of a state is just the expectation value of the perturbing term Ĥ^(1) in the unperturbed wavefunction."
+  },
+  {
+    "id": "pc7-perturbation-box-shift",
+    "type": "multiple-choice",
+    "prompt": "In Example 7.4.1A, the potential inside a particle-in-a-box is raised everywhere by a constant V_0. What is E_n^(1) for every state n?",
+    "choices": [
+      {
+        "text": "V_0",
+        "correct": true
+      },
+      {
+        "text": "V_0/2",
+        "why": "V_0/2 is the result of Example 7.4.1B, where V_0 covers only half the box. Here Ĥ^(1) = V_0 everywhere, so E_n^(1) = V_0⟨n^(0)|n^(0)⟩ = V_0."
+      },
+      {
+        "text": "0",
+        "why": "A constant comes out of the integral, but it doesn't vanish: E_n^(1) = V_0⟨n^(0)|n^(0)⟩ = V_0, since the wavefunctions are normalized."
+      },
+      {
+        "text": "n^2 V_0",
+        "why": "The shift doesn't depend on n. Because V_0 is a constant, E_n^(1) = V_0⟨n^(0)|n^(0)⟩ = V_0 for every level."
+      }
+    ],
+    "explanation": "Ĥ^(1) = V_0 is a constant, so E_n^(1) = ⟨n^(0)|V_0|n^(0)⟩ = V_0⟨n^(0)|n^(0)⟩ = V_0, since each wavefunction is normalized. Every level becomes E_n ≈ (h^2/(8mL^2))n^2 + V_0."
+  },
+  {
+    "id": "pc7-perturbation-box-exact",
+    "type": "multiple-choice",
+    "prompt": "How does the first-order energy in Example 7.4.1A, (h^2/(8mL^2))n^2 + V_0, compare with the exact energy?",
+    "choices": [
+      {
+        "text": "It is exact: every level just moves up by V_0",
+        "correct": true
+      },
+      {
+        "text": "It is too low; a second-order term must be added",
+        "why": "No further correction is needed here. A constant V_0 just moves every level up by V_0, so first order already gives the exact energy."
+      },
+      {
+        "text": "It is only roughly right, within about 10%",
+        "why": "There is no error at all here. A constant V_0 raises every level by exactly V_0, so the first-order result is the exact value."
+      },
+      {
+        "text": "It is exact only for the ground state, n = 1",
+        "why": "The shift is the same, V_0, for every state, and the result is exact for all of them."
+      }
+    ],
+    "explanation": "While this is the first-order perturbation result, it is also the exact value. Adding a constant to the potential leaves the wavefunctions unchanged and raises every energy level by V_0."
+  },
+  {
+    "id": "pc7-perturbation-wf-combination",
+    "type": "multiple-choice",
+    "prompt": "How does first-order perturbation theory express the correction |n^(1)⟩ to a wavefunction?",
+    "choices": [
+      {
+        "text": "As a combination of unperturbed wavefunctions",
+        "correct": true
+      },
+      {
+        "text": "As a single new function found by guessing",
+        "why": "Guessing a trial function is the variational method. Here |n^(1)⟩ is a linear combination of the known unperturbed wavefunctions |m^(0)⟩."
+      },
+      {
+        "text": "As the unperturbed wavefunction times a constant",
+        "why": "That would leave the shape of the state unchanged. |n^(1)⟩ mixes in other unperturbed wavefunctions, Σ c_(m, n)|m^(0)⟩."
+      },
+      {
+        "text": "As an exact solution of Ĥ^(1) alone",
+        "why": "Ĥ^(1) alone is never solved. The correction is built from the known solutions of Ĥ^(0): |n^(1)⟩ = Σ c_(m, n)|m^(0)⟩."
+      }
+    ],
+    "explanation": "|n^(1)⟩ = Σ_(m ≠ n) c_(m, n)|m^(0)⟩: the unknown correction is expanded as a linear combination of the known unperturbed wavefunctions, with coefficients c_(m, n) = (⟨m^(0)|Ĥ^(1)|n^(0)⟩)/(E_n^(0) − E_m^(0))."
+  },
+  {
+    "id": "pc7-perturbation-wf-excluded",
+    "type": "multiple-choice",
+    "prompt": "In the first-order correction to state n, |n^(1)⟩ = Σ c_(m, n)|m^(0)⟩, which unperturbed function is left out of the sum?",
+    "choices": [
+      {
+        "text": "|n^(0)⟩ itself, since the sum runs over m ≠ n",
+        "correct": true
+      },
+      {
+        "text": "The highest state, whose energy is far too large",
+        "why": "No state is left out for being high in energy; such states just contribute weakly. Only m = n is excluded."
+      },
+      {
+        "text": "Every state with odd symmetry",
+        "why": "A state drops out by symmetry only when its matrix element is zero, as the even states do in Example 7.4.2. In general only m = n is excluded."
+      },
+      {
+        "text": "The ground state |0^(0)⟩, in every case",
+        "why": "The ground state is left out only when it is the state being corrected, n = 0. In general the sum leaves out m = n."
+      }
+    ],
+    "explanation": "The sum runs over m ≠ n: every unperturbed state except |n^(0)⟩ itself can mix in. For the ground state, for example, the ground-state function is not part of the sum, but all the excited states are."
+  },
+  {
+    "id": "pc7-perturbation-complete-basis",
+    "type": "multiple-choice",
+    "prompt": "Why can any first-order correction |n^(1)⟩ be written as a combination of the unperturbed wavefunctions?",
+    "choices": [
+      {
+        "text": "They form a complete basis set",
+        "correct": true
+      },
+      {
+        "text": "They are all eigenfunctions of Ĥ^(1)",
+        "why": "They are eigenfunctions of Ĥ^(0), not Ĥ^(1). The expansion works because the set is complete and can describe any function."
+      },
+      {
+        "text": "They all have the same energy",
+        "why": "They have different energies E_m^(0), which appear in the denominators. They can describe any function because they form a complete set."
+      },
+      {
+        "text": "The correction is always very small",
+        "why": "Smallness justifies stopping at first order, not the expansion itself. Any function can be expanded because the unperturbed set is complete."
+      }
+    ],
+    "explanation": "The set of zero-order wavefunctions forms a complete basis set that can describe any function. So the unknown correction can always be expanded in them."
+  },
+  {
+    "id": "pc7-perturbation-denominator",
+    "type": "multiple-choice",
+    "prompt": "In c_(m, n) = (⟨m^(0)|Ĥ^(1)|n^(0)⟩)/(E_n^(0) − E_m^(0)), which unperturbed states tend to mix in most strongly?",
+    "choices": [
+      {
+        "text": "States close in energy to state n",
+        "correct": true
+      },
+      {
+        "text": "States far above state n in energy",
+        "why": "A large energy gap makes the denominator large and the coefficient small. States of comparable energy contribute most."
+      },
+      {
+        "text": "Every state equally, whatever its energy",
+        "why": "The energy difference in the denominator weights the states. Those close in energy to state n count most."
+      },
+      {
+        "text": "Only the lowest state, the ground state",
+        "why": "The ground state has no special role here. States whose energies are closest to E_n^(0) give the smallest denominators and contribute most."
+      }
+    ],
+    "explanation": "The denominator E_n^(0) − E_m^(0) is small for states of comparable energy, so they dominate the sum. States much higher or lower in energy than state n contribute only weakly, which is why the sum can often be cut off."
+  },
+  {
+    "id": "pc7-perturbation-symmetry-zero",
+    "type": "multiple-choice",
+    "prompt": "Besides the energy denominators, what often makes many terms in the first-order wavefunction sum drop out?",
+    "choices": [
+      {
+        "text": "Matrix elements that vanish by symmetry",
+        "correct": true
+      },
+      {
+        "text": "Unperturbed states that are not normalized",
+        "why": "The unperturbed states are orthonormal. Terms drop out when ⟨m^(0)|Ĥ^(1)|n^(0)⟩ is zero because its integrand is odd."
+      },
+      {
+        "text": "States with negative energies",
+        "why": "The sign of an energy doesn't remove a term. Terms vanish when the matrix element ⟨m^(0)|Ĥ^(1)|n^(0)⟩ is zero by symmetry."
+      },
+      {
+        "text": "Terms with m larger than n",
+        "why": "States above n do mix in; for the ground state all the excited states can. A term drops out when its matrix element is zero by symmetry."
+      }
+    ],
+    "explanation": "Many matrix elements ⟨m^(0)|Ĥ^(1)|n^(0)⟩ are zero because of the symmetry of the unperturbed states and of Ĥ^(1): if the integrand is an odd function, its integral is zero."
+  },
+  {
+    "id": "pc7-perturbation-cubic-split",
+    "type": "multiple-choice",
+    "prompt": "Example 7.4.2 adds a cubic term εx^3 to the harmonic oscillator Hamiltonian. How is the problem split for perturbation theory?",
+    "choices": [
+      {
+        "text": "Ĥ^(0) is the oscillator; Ĥ^(1) is εx^3",
+        "correct": true
+      },
+      {
+        "text": "Ĥ^(0) is εx^3; Ĥ^(1) is the oscillator",
+        "why": "It's the reverse: Ĥ^(0) must be the solved problem, the harmonic oscillator. The small cubic term εx^3 is the perturbation Ĥ^(1)."
+      },
+      {
+        "text": "Ĥ^(0) is kinetic energy; Ĥ^(1) is (1/2)kx^2 + εx^3",
+        "why": "The harmonic oscillator, kinetic energy plus (1/2)kx^2, is the solved reference, so all of it goes in Ĥ^(0). Only εx^3 is the perturbation."
+      },
+      {
+        "text": "Ĥ^(0) is a particle in a box; Ĥ^(1) is (1/2)kx^2",
+        "why": "The reference must contain the kinetic and (1/2)kx^2 terms, which make the harmonic oscillator. εx^3 is the perturbation."
+      }
+    ],
+    "explanation": "The first step is to identify the reference system with known eigenstates and energies, here the harmonic oscillator. Ĥ^(0) is the harmonic-oscillator Hamiltonian and Ĥ^(1) = εx^3 is the perturbation."
+  },
+  {
+    "id": "pc7-perturbation-cubic-zero",
+    "type": "multiple-choice",
+    "prompt": "In Example 7.4.2, why is the first-order correction ⟨0^(0)|εx^3|0^(0)⟩ to the ground-state energy zero?",
+    "choices": [
+      {
+        "text": "x^3 is odd and the ground state is even",
+        "correct": true
+      },
+      {
+        "text": "The ground-state wavefunction is zero everywhere",
+        "why": "The ground-state wavefunction is not zero; it is an even, bell-shaped function. The integral vanishes because x^3 is odd."
+      },
+      {
+        "text": "ε is too small to matter",
+        "why": "Its size doesn't matter: the integral of an odd integrand over all x is exactly zero for any ε."
+      },
+      {
+        "text": "x^3 is even and the ground state is odd",
+        "why": "It's the other way round: x^3 is odd, while the v = 0 wavefunction is even. That makes the whole integrand odd, so it integrates to zero."
+      }
+    ],
+    "explanation": "The perturbation εx^3 is odd, f(x) = −f(−x), while the ground-state harmonic-oscillator wavefunction is even. The integrand is therefore odd, and its integral over all x is zero, so E_0^(1) = 0."
+  },
+  {
+    "id": "pc7-perturbation-cubic-second-order",
+    "type": "multiple-choice",
+    "prompt": "In Example 7.4.2 the first-order correction to the ground-state energy is zero. Does the cubic term then leave that energy unchanged?",
+    "choices": [
+      {
+        "text": "No; second-order theory would give a change",
+        "correct": true
+      },
+      {
+        "text": "Yes; an odd perturbation never changes any energy",
+        "why": "Only the first-order term vanishes by symmetry. The section notes that second-order perturbation theory, which is more accurate, would change the energy."
+      },
+      {
+        "text": "Yes; a zero first-order term ends the series",
+        "why": "The series doesn't stop there. Higher orders, starting with the second, can still shift the energy."
+      },
+      {
+        "text": "No; the first-order term was only rounded to zero",
+        "why": "It is exactly zero, by symmetry. The energy still changes, but only at second order and above."
+      }
+    ],
+    "explanation": "To first order, the cubic term does not alter the ground-state energy. The section notes that this is not the case if second-order perturbation theory, which is more accurate, is used."
+  },
+  {
+    "id": "pc7-perturbation-cubic-odd-states",
+    "type": "multiple-choice",
+    "prompt": "In Example 7.4.2, which unperturbed oscillator states |m^(0)⟩ can mix into the first-order correction to the ground state?",
+    "choices": [
+      {
+        "text": "Only states with odd v, such as v = 1 and 3",
+        "correct": true
+      },
+      {
+        "text": "Only states with even v, such as v = 2 and 4",
+        "why": "With an even |m^(0)⟩, the integrand of ⟨m^(0)|εx^3|0^(0)⟩ is odd and integrates to zero. Only odd states can give a nonzero matrix element."
+      },
+      {
+        "text": "Every state, v = 1, 2, 3 and so on",
+        "why": "Symmetry removes half of them: for even v the matrix element ⟨m^(0)|εx^3|0^(0)⟩ is zero. Only odd v can mix in."
+      },
+      {
+        "text": "Only the ground state, v = 0, itself",
+        "why": "The sum for the correction leaves out m = n, here v = 0. The states that can mix in are the odd ones."
+      }
+    ],
+    "explanation": "The oscillator wavefunctions alternate between even (v even) and odd (v odd). With an odd perturbation and an even ground state, ⟨m^(0)|εx^3|0^(0)⟩ can be nonzero only when |m^(0)⟩ is odd; among the first five, only v = 1 and v = 3 actually contribute."
+  },
+  {
+    "id": "pc7-perturbation-quartic",
+    "type": "multiple-choice",
+    "prompt": "Exercise 7.4.3 adds γx^4 (with γ > 0) to the harmonic oscillator instead. Unlike εx^3, what does it do to the ground-state energy at first order?",
+    "choices": [
+      {
+        "text": "It raises it by 3γ/(4a^2)",
+        "correct": true
+      },
+      {
+        "text": "Nothing, since its integral is zero by symmetry",
+        "why": "x^4 is even, like the squared ground state, so the integrand is even and positive. The integral doesn't vanish: E^(1) = 3γ/(4a^2)."
+      },
+      {
+        "text": "It lowers it by 3γ/(4a^2)",
+        "why": "For γ > 0 the integrand, γx^4 times the squared ground state, is positive everywhere, so the correction is positive and raises the energy."
+      },
+      {
+        "text": "It doubles the zero-point energy (1/2)hν",
+        "why": "The first-order change is not a factor. It adds 3γ/(4a^2) to (1/2)hν."
+      }
+    ],
+    "explanation": "x^4 is an even function, so unlike x^3 its expectation value in the even ground state is not zero. For γ > 0 the integrand is positive, and E ≈ (1/2)hν + 3γ/(4a^2)."
+  },
+  {
+    "id": "pc7-perturbation-truncation",
+    "type": "multiple-choice",
+    "prompt": "Perturbation theory is in principle an infinite series of corrections. Where does the approximation come in?",
+    "choices": [
+      {
+        "text": "In cutting the series off after a few terms",
+        "correct": true
+      },
+      {
+        "text": "In replacing Ĥ^(0) with a guessed trial function",
+        "why": "No trial function is guessed; that is the variational method. The approximation is stopping the series of corrections after a finite number of steps."
+      },
+      {
+        "text": "In setting λ equal to 1 at the end",
+        "why": "λ = 1 just recovers the real Hamiltonian; it is a bookkeeping step. The approximation is stopping the series after a finite number of corrections."
+      },
+      {
+        "text": "In ignoring the zero-order energy E_n^(0)",
+        "why": "E_n^(0) is always kept; it's the starting point. The approximation is truncating the series of corrections."
+      }
+    ],
+    "explanation": "The whole perturbation process is an infinite series of corrections that ideally converges to the correct answer. Truncating this series after a finite number of steps is the approximation."
+  },
+  {
+    "id": "pc7-perturbation-fails",
+    "type": "multiple-choice",
+    "prompt": "For a free particle in one dimension, an arbitrarily weak attractive potential creates a bound state, but a repulsive one doesn't. Why can't perturbation theory handle this?",
+    "choices": [
+      {
+        "text": "The energy shift isn't a power series in λ",
+        "correct": true
+      },
+      {
+        "text": "The perturbation is too strong to count as small",
+        "why": "The section stresses that this fails even when the perturbation is very weak. The energy shift can't be written as a power series in the strength λ."
+      },
+      {
+        "text": "A free particle has no known unperturbed solution",
+        "why": "The free particle's plane-wave states are well known. The trouble is that the energy shift can't be expanded as a power series in λ."
+      },
+      {
+        "text": "Attractive potentials can never be perturbations",
+        "why": "Attractive terms can be perturbations in general. Here the shift behaves differently for the two signs of λ, so it can't be a power series in λ."
+      }
+    ],
+    "explanation": "Switching on a weak attraction gives a bound state with a binding energy of order λ^2, while a repulsion gives none. The energy shift therefore cannot be represented as a power series in λ, the strength of the perturbation. Such problems are the exception rather than the rule."
+  },
+  {
+    "id": "pc7-perturbation-first-order-total",
+    "type": "numeric",
+    "prompt": "To first order, E_n ≈ E_n^(0) + E_n^(1). A state has unperturbed energy E_n^(0) = 3.00 eV, and its first-order correction is E_n^(1) = −0.25 eV. What is the first-order estimate of E_n, in eV?",
+    "answer": 2.75,
+    "unit": "eV",
+    "explanation": "E_n ≈ E_n^(0) + E_n^(1) = 3.00 eV + (−0.25 eV) = 2.75 eV."
+  },
+  {
+    "id": "pc7-perturbation-half-box-value",
+    "type": "numeric",
+    "prompt": "In Example 7.4.1B, an extra potential V_0 acts only in the left half of the box, which gives E_n^(1) = V_0/2 for every state. If V_0 = 0.80 eV, what is E_n^(1), in eV?",
+    "answer": 0.4,
+    "unit": "eV",
+    "explanation": "E_n^(1) = V_0/2 = (0.80 eV)/2 = 0.40 eV. The perturbation acts on only half the box, so each level is raised by half as much as in Example 7.4.1A."
+  },
+  {
+    "id": "pc7-perturbation-quartic-value",
+    "type": "numeric",
+    "prompt": "In Exercise 7.4.3, the first-order correction from the term γx^4 is E^(1) = 3γ/(4a^2). If γ/a^2 = 0.020 eV, what is E^(1), in eV?",
+    "answer": 0.015,
+    "unit": "eV",
+    "explanation": "E^(1) = (3/4) × (γ/a^2) = 0.75 × 0.020 eV = 0.015 eV. This is added to the zero-point energy (1/2)hν."
+  },
+  {
+    "id": "pc7-perturbation-ho-denominator",
+    "type": "numeric",
+    "prompt": "The oscillator energies are E_v^(0) = (v + 1/2)hν. In Example 7.4.2, the v = 3 term of the ground-state correction has the denominator E_0^(0) − E_3^(0). This is a number times hν. What is the number?",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "E_0^(0) − E_3^(0) = (1/2)hν − (7/2)hν = −3hν, so the number is −3. The v = 1 term has only −1hν, so with similar matrix elements the v = 3 state mixes in less."
+  },
+  {
+    "id": "pc7-perturbation-coefficient",
+    "type": "numeric",
+    "prompt": "Use c_(m, n) = (⟨m^(0)|Ĥ^(1)|n^(0)⟩)/(E_n^(0) − E_m^(0)). For the ground state n = 0 and m = 1, suppose ⟨1^(0)|Ĥ^(1)|0^(0)⟩ = 0.020 eV and E_0^(0) − E_1^(0) = −0.40 eV. What is c_(1, 0)? (Give it as a decimal.)",
+    "answer": -0.05,
+    "explanation": "c_(1, 0) = (0.020 eV)/(−0.40 eV) = −0.05. The energy units cancel, so the coefficient is a pure number: |1^(0)⟩ mixes in with weight −0.05."
+  },
+  {
+    "id": "pc7-perturbation-size-estimate",
+    "type": "numeric",
+    "prompt": "Each correction in perturbation theory is smaller than the previous one by a factor of about Ĥ^(1)/Ĥ^(0). If that ratio is about 0.1 and E_n^(1) is about 0.50 eV, roughly how large is E_n^(2), in eV?",
+    "answer": 0.05,
+    "unit": "eV",
+    "explanation": "E_n^(2) ≈ 0.1 × 0.50 eV = 0.05 eV. Each order is about ten times smaller than the one before, which is why a few terms of the series are often enough."
+  }
+]

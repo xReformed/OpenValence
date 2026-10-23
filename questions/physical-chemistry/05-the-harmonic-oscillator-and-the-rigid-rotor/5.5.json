@@ -1,0 +1,599 @@
+[
+  {
+    "id": "pc5-infrared-main-use",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is IR spectroscopy mainly used for?",
+    "choices": [
+      {
+        "text": "Identifying compounds and their structures",
+        "correct": true
+      },
+      {
+        "text": "Measuring the masses of the atoms in a molecule",
+        "why": "IR spectra come from vibrations, not from weighing atoms. Each functional group absorbs its own IR frequencies, which is what makes IR good for identifying compounds."
+      },
+      {
+        "text": "Finding which orbitals the electrons occupy",
+        "why": "IR absorption comes from molecular vibrations, not from electrons changing orbitals. The vibrations reveal which functional groups a compound contains."
+      },
+      {
+        "text": "Measuring how much heat a reaction gives off",
+        "why": "That is a job for calorimetry. IR spectroscopy identifies compounds from the frequencies their functional groups absorb."
+      }
+    ],
+    "explanation": "Different functional groups absorb different IR frequencies, so an IR spectrum shows which groups a compound contains. This makes IR useful for identifying both organic and inorganic compounds and for analyzing their structures."
+  },
+  {
+    "id": "pc5-infrared-fingerprint",
+    "type": "multiple-choice",
+    "prompt": "The section says each molecule has a characteristic IR spectrum, often called its fingerprint. How can this be used?",
+    "choices": [
+      {
+        "text": "To identify a molecule by matching its spectrum to a data bank",
+        "correct": true
+      },
+      {
+        "text": "To find the molecule's mass from the heights of its peaks",
+        "why": "Peak heights depend on how strongly each vibration absorbs, not on the mass. The fingerprint identifies the molecule when compared with known spectra."
+      },
+      {
+        "text": "To count the atoms in the molecule from its number of peaks",
+        "why": "The number of peaks doesn't simply count atoms. The fingerprint is matched against a data bank of spectra to identify the molecule."
+      },
+      {
+        "text": "To measure the molecule's bond lengths directly",
+        "why": "The fingerprint is a pattern to compare, not a direct measure of bond lengths. A molecule is identified by matching it to a data bank of spectra."
+      }
+    ],
+    "explanation": "Because every molecule has its own characteristic spectrum, an unknown can be identified by comparing its absorption peaks with a data bank of spectra."
+  },
+  {
+    "id": "pc5-infrared-absorb-condition",
+    "type": "multiple-choice",
+    "prompt": "When can a molecule absorb a photon and jump from vibrational state v to state v′?",
+    "choices": [
+      {
+        "text": "When hν_photon exactly equals E_(v′) − E_v",
+        "correct": true
+      },
+      {
+        "text": "When hν_photon is anything larger than the zero-point energy",
+        "why": "Extra energy is not enough: the photon's energy must match the gap between the two states exactly."
+      },
+      {
+        "text": "Whenever the photon is infrared, whatever its exact energy",
+        "why": "Being in the infrared isn't enough. The photon's energy hν_photon must exactly match the energy difference E_(v′) − E_v."
+      },
+      {
+        "text": "When hν_photon equals E_(v′), the energy of the upper state",
+        "why": "The molecule already has the energy E_v, so the photon supplies only the difference, E_(v′) − E_v."
+      }
+    ],
+    "explanation": "Radiation can cause a vibrational transition only if the photon's energy exactly matches the difference in energy between the two states: hν_photon = ΔE = E_(v′) − E_v."
+  },
+  {
+    "id": "pc5-infrared-photon-matches-bond",
+    "type": "multiple-choice",
+    "prompt": "In an absorption with v′ − v = +1, how does the photon's frequency ν_photon compare with the bond's vibrational frequency ν_m?",
+    "choices": [
+      {
+        "text": "They are exactly equal",
+        "correct": true
+      },
+      {
+        "text": "ν_photon is twice ν_m",
+        "why": "hν_photon = (v′ − v)hν_m, and with v′ − v = 1 the two frequencies are the same. Twice ν_m would mean a jump of two levels."
+      },
+      {
+        "text": "ν_photon is half of ν_m",
+        "why": "Half of ν_m would carry only (1/2)hν_m, the zero-point energy, which is less than the gap between levels. With v′ − v = 1, ν_photon = ν_m."
+      },
+      {
+        "text": "ν_photon is (v + 1/2) times ν_m",
+        "why": "(v + 1/2)hν_m is the energy of a level, not of the jump between two levels. The jump of one level is hν_m."
+      }
+    ],
+    "explanation": "With v′ − v = 1, hν_photon = (v′ − v)hν_m becomes hν_photon = hν_m. So the frequency of the radiation that causes the transition is identical to the classical vibrational frequency of the bond."
+  },
+  {
+    "id": "pc5-infrared-emission-sign",
+    "type": "multiple-choice",
+    "prompt": "In hν_photon = (v′ − v)hν_m, the change v′ − v can be +1 or −1. What does a change of −1 mean?",
+    "choices": [
+      {
+        "text": "The molecule drops one level and emits a photon",
+        "correct": true
+      },
+      {
+        "text": "The molecule rises one level and absorbs a photon",
+        "why": "Absorbing a photon raises v by 1, so v′ − v = +1. A change of −1 is a step down, which emits a photon."
+      },
+      {
+        "text": "The transition is forbidden by the selection rule",
+        "why": "The selection rule allows Δv = ±1, so both +1 and −1 are allowed. The −1 case is emission."
+      },
+      {
+        "text": "The molecule loses all of its zero-point energy",
+        "why": "A step of −1 lowers the energy by just hν_m, which the emitted photon carries off. The (1/2)hν_m of the v = 0 level always remains."
+      }
+    ],
+    "explanation": "v′ − v is positive when an IR photon is absorbed and negative when one is emitted. A step down of one level, v′ = v − 1, emits a photon of energy hν_m."
+  },
+  {
+    "id": "pc5-infrared-photon-energy",
+    "type": "numeric",
+    "prompt": "A diatomic molecule has vibrational frequency ν_m = 8.0 × 10^13 Hz. Using hν_photon = (v′ − v)hν_m with h = 6.626 × 10^−34 J·s, what is the energy of the photon absorbed in the v = 1 → v = 2 transition, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 5.3008e-20,
+    "unit": "J",
+    "explanation": "v′ − v = 2 − 1 = 1, so hν_photon = hν_m = (6.626 × 10^−34 J·s)(8.0 × 10^13 Hz) = 5.30 × 10^−20 J. Because the levels are equally spaced, a v = 0 → v = 1 photon would carry the same energy."
+  },
+  {
+    "id": "pc5-infrared-stiffest-bond",
+    "type": "multiple-choice",
+    "prompt": "In Example 5.5.1, the force constants are HF 970, HCl 480, HBr 410, HI 320, CO 1860 and NO 1530 N·m^−1. Which molecule has the stiffest bond?",
+    "choices": [
+      {
+        "text": "CO",
+        "correct": true
+      },
+      {
+        "text": "HF",
+        "why": "HF has the largest force constant of the hydrogen halides, 970 N·m^−1, but CO's 1860 N·m^−1 is almost twice as large."
+      },
+      {
+        "text": "HI",
+        "why": "HI has the smallest force constant in the table, 320 N·m^−1, so its bond is the least stiff."
+      },
+      {
+        "text": "NO",
+        "why": "NO's 1530 N·m^−1 is large, but CO's 1860 N·m^−1 is larger."
+      }
+    ],
+    "explanation": "The force constant k measures how stiff a bond is: the larger k, the more strongly the bond resists being stretched. CO has the largest value in the table, 1860 N·m^−1."
+  },
+  {
+    "id": "pc5-infrared-period",
+    "type": "numeric",
+    "prompt": "A bond vibrates with natural frequency ν = 5.0 × 10^13 Hz. The period of one vibration is T = 1/ν. What is T, in s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 2e-14,
+    "unit": "s",
+    "explanation": "T = 1/ν = 1/(5.0 × 10^13 Hz) = 2.0 × 10^−14 s. A molecular vibration is extremely fast: the bond goes through 5 × 10^13 cycles every second."
+  },
+  {
+    "id": "pc5-infrared-wavenumber-hz",
+    "type": "numeric",
+    "prompt": "An IR absorption is at ν̃ = 1500 cm^−1. Using ν = cν̃ with c = 3.00 × 10^10 cm/s, what is its frequency, in Hz? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 45000000000000.0,
+    "unit": "Hz",
+    "explanation": "ν = cν̃ = (3.00 × 10^10 cm/s)(1500 cm^−1) = 4.5 × 10^13 Hz. The centimeters cancel, leaving s^−1, which is Hz."
+  },
+  {
+    "id": "pc5-infrared-wavelength-um",
+    "type": "numeric",
+    "prompt": "The section relates wavenumber and wavelength by ν̃(cm^−1) = 10^4/λ(μm). An IR absorption is at ν̃ = 2500 cm^−1. What is its wavelength, in μm?",
+    "answer": 4.0,
+    "explanation": "λ = 10^4/ν̃ = 10^4/2500 = 4.0 μm. That lies in the middle IR, 2.5 to 50 μm, inside the most-used range of 2.5 to 15 μm."
+  },
+  {
+    "id": "pc5-infrared-hcl-region",
+    "type": "multiple-choice",
+    "prompt": "In Example 5.5.1, HCl absorbs radiation of wavelength 3.46 × 10^−6 m, or 3.46 μm, in the v = 0 → v = 1 transition. Using Table 5.5.1, which part of the spectrum is this in?",
+    "choices": [
+      {
+        "text": "The middle IR, 2.5 to 50 μm",
+        "correct": true
+      },
+      {
+        "text": "The near IR, 0.78 to 2.5 μm",
+        "why": "3.46 μm is longer than 2.5 μm, the upper end of the near IR."
+      },
+      {
+        "text": "The far IR, 50 to 1000 μm",
+        "why": "3.46 μm is much shorter than 50 μm, where the far IR begins."
+      },
+      {
+        "text": "Visible light, below 0.78 μm",
+        "why": "The near IR begins at 0.78 μm, and 3.46 μm is far beyond that, well into the infrared."
+      }
+    ],
+    "explanation": "3.46 μm falls between 2.5 and 50 μm, the middle IR, and also inside the most-used range of 2.5 to 15 μm. The radiation absorbed by molecular vibrations is mainly infrared."
+  },
+  {
+    "id": "pc5-infrared-most-used",
+    "type": "multiple-choice",
+    "prompt": "According to Table 5.5.1, which part of the IR is used most?",
+    "choices": [
+      {
+        "text": "The middle IR, about 4000 to 670 cm^−1",
+        "correct": true
+      },
+      {
+        "text": "The near IR, 12800 to 4000 cm^−1",
+        "why": "The near IR lies at higher wavenumbers than the most-used range, which runs from 4000 to 670 cm^−1, inside the middle IR."
+      },
+      {
+        "text": "The far IR, 200 to 10 cm^−1",
+        "why": "The far IR lies at lower wavenumbers. Most IR work uses 4000 to 670 cm^−1, in the middle IR."
+      },
+      {
+        "text": "The whole IR range, 12800 to 10 cm^−1, equally",
+        "why": "The table singles out 4000 to 670 cm^−1, or 2.5 to 15 μm, as the most-used range, and that lies in the middle IR."
+      }
+    ],
+    "explanation": "Most of the IR used comes from the middle IR region. Table 5.5.1 gives the most-used range as 2.5 to 15 μm, which is 4000 to 670 cm^−1."
+  },
+  {
+    "id": "pc5-infrared-transition-moment",
+    "type": "multiple-choice",
+    "prompt": "What does the transition moment integral μ_T = ⟨ψ_(v′)|μ̂(x)|ψ_v⟩ express?",
+    "choices": [
+      {
+        "text": "The probability of a transition from state v to state v′",
+        "correct": true
+      },
+      {
+        "text": "The energy of the photon absorbed in the transition",
+        "why": "The photon energy is set by the energy gap, ΔE = hν. The transition moment decides how likely the transition is."
+      },
+      {
+        "text": "The dipole moment at the equilibrium bond length",
+        "why": "That is μ_(x=0), only one piece of the calculation. The full integral measures how probable the v → v′ transition is."
+      },
+      {
+        "text": "The time the molecule takes to make the transition",
+        "why": "The integral is not a time. It expresses the probability of the transition, and selection rules come from asking when it is zero."
+      }
+    ],
+    "explanation": "The transition moment integral expresses the probability of a transition from ψ_v to ψ_(v′). Selection rules come from finding when it is zero (forbidden), small (weakly allowed) or large (strongly allowed)."
+  },
+  {
+    "id": "pc5-infrared-mu-hat",
+    "type": "multiple-choice",
+    "prompt": "In the transition moment integral μ_T = ⟨ψ_(v′)|μ̂(x)|ψ_v⟩, what is μ̂(x)?",
+    "choices": [
+      {
+        "text": "The dipole moment operator",
+        "correct": true
+      },
+      {
+        "text": "The reduced mass of the molecule",
+        "why": "The letter μ is used for reduced mass elsewhere, but here μ̂ is the dipole moment operator: charges times positions."
+      },
+      {
+        "text": "The Hamiltonian, or energy, operator",
+        "why": "The Hamiltonian is Ĥ. The transition moment uses the dipole moment operator, because the dipole is what interacts with the radiation."
+      },
+      {
+        "text": "The linear momentum operator",
+        "why": "Momentum is p̂. Here μ̂ is the dipole moment operator, a sum of charges times position vectors."
+      }
+    ],
+    "explanation": "μ̂ = Σ_electrons (−e)r⃗ + Σ_nuclei qR⃗ is the dipole moment operator: each charge multiplied by its position. Written as a function of the displacement x, it shows how the dipole changes as the bond vibrates."
+  },
+  {
+    "id": "pc5-infrared-forbidden",
+    "type": "multiple-choice",
+    "prompt": "When is a vibrational transition called forbidden?",
+    "choices": [
+      {
+        "text": "When its transition moment integral is zero",
+        "correct": true
+      },
+      {
+        "text": "When its transition moment integral is large",
+        "why": "A large transition moment means a high probability: a strongly allowed transition with a big peak."
+      },
+      {
+        "text": "When the photon it needs lies in the far IR",
+        "why": "Where the photon lies doesn't make a transition forbidden. Forbidden means the transition moment integral is zero."
+      },
+      {
+        "text": "When the final state is higher in energy",
+        "why": "Every absorption ends in a higher state. A transition is forbidden when its transition moment integral is zero, so it has zero probability."
+      }
+    ],
+    "explanation": "If the transition moment integral is zero for two states, the transition has zero probability and is not observed: it is forbidden. Transitions with low probabilities are weakly allowed (small peaks), and those with high probabilities are strongly allowed (large peaks)."
+  },
+  {
+    "id": "pc5-infrared-first-term-zero",
+    "type": "multiple-choice",
+    "prompt": "The transition moment has a first term μ_(x=0)∫ψ_(v′)ψ_v dx. Why is this term zero when v′ ≠ v?",
+    "choices": [
+      {
+        "text": "Different harmonic oscillator wavefunctions are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "Every molecule has zero dipole moment at equilibrium",
+        "why": "Many molecules, such as HCl, do have a dipole at equilibrium. The term vanishes because the integral itself is zero."
+      },
+      {
+        "text": "The wavefunctions are normalized, so the integral is 1",
+        "why": "Normalization gives 1 only when the two states are the same. For two different states the integral is zero, because they are orthogonal."
+      },
+      {
+        "text": "The integral contains x, which is zero at equilibrium",
+        "why": "This integral has no x in it, and it runs over all x, not just x = 0. It is zero because the two wavefunctions are orthogonal."
+      }
+    ],
+    "explanation": "Any two different harmonic oscillator wavefunctions are orthogonal, so ∫ψ_(v′)ψ_v dx = 0 for v′ ≠ v. The constant dipole μ_(x=0) therefore can't cause a transition; only a change in the dipole can."
+  },
+  {
+    "id": "pc5-infrared-dmu-dx",
+    "type": "multiple-choice",
+    "prompt": "The dipole moment μ(x) is expanded about the equilibrium position. What does its derivative dμ/dx, evaluated at x = 0, measure?",
+    "choices": [
+      {
+        "text": "How quickly the dipole moment changes as the bond stretches",
+        "correct": true
+      },
+      {
+        "text": "The dipole moment at the equilibrium bond length",
+        "why": "That is μ_(x=0), the first term of the expansion. The derivative is how fast the dipole changes with the displacement x."
+      },
+      {
+        "text": "How quickly the potential energy changes as the bond stretches",
+        "why": "The potential energy is not in this expansion. It expands the dipole moment μ(x), so the derivative is the dipole's rate of change."
+      },
+      {
+        "text": "The stiffness, or force constant, of the bond",
+        "why": "The force constant k measures stiffness. dμ/dx is about the dipole moment, not the spring."
+      }
+    ],
+    "explanation": "dμ/dx at x = 0 is the linear change in the dipole moment as the nuclei are displaced. It multiplies the second term of the transition moment, so if it is zero the vibration cannot absorb IR."
+  },
+  {
+    "id": "pc5-infrared-dipole-change",
+    "type": "multiple-choice",
+    "prompt": "Why must a vibration change the molecule's dipole moment for IR radiation to be absorbed?",
+    "choices": [
+      {
+        "text": "An oscillating dipole can interact with the light's electric field",
+        "correct": true
+      },
+      {
+        "text": "A changing dipole makes the energy levels equally spaced",
+        "why": "The spacing of the levels is set by k and μ, not by the dipole. The dipole matters because it is what couples to the radiation."
+      },
+      {
+        "text": "A changing dipole raises the force constant of the bond",
+        "why": "The dipole doesn't change k. An oscillating dipole is needed because it interacts with the alternating electric field of the IR radiation."
+      },
+      {
+        "text": "A changing dipole removes the molecule's zero-point energy",
+        "why": "Nothing removes the zero-point energy. The dipole must oscillate so that it can interact with the light's alternating electric field."
+      }
+    ],
+    "explanation": "The change, or oscillation, of the dipole moment lets the molecule interact with the alternating electric field of the IR radiation. In the math, the transition moment is zero if dμ/dx = 0, so the transition is forbidden."
+  },
+  {
+    "id": "pc5-infrared-n2-o2",
+    "type": "multiple-choice",
+    "prompt": "Why don't N_2 and O_2 absorb infrared radiation through their vibrations?",
+    "choices": [
+      {
+        "text": "Stretching them never changes their dipole moment",
+        "correct": true
+      },
+      {
+        "text": "Their bonds are too stiff to be set vibrating",
+        "why": "N_2 and O_2 do vibrate. They don't absorb IR because the stretch keeps their dipole moment at zero, so dμ/dx = 0."
+      },
+      {
+        "text": "They vibrate at visible, not infrared, frequencies",
+        "why": "The problem isn't the frequency: their stretch causes no change in dipole moment, so it can't interact with IR radiation."
+      },
+      {
+        "text": "Their vibrational energy levels are unequally spaced",
+        "why": "Unequal spacing (anharmonicity) doesn't stop IR absorption. N_2 and O_2 don't absorb because their dipole never changes."
+      }
+    ],
+    "explanation": "N_2 and O_2 are symmetric, so their dipole moment is zero, and stretching the bond keeps that symmetry, so dμ/dx = 0. With no change in dipole, the transition moment is zero and no IR is absorbed."
+  },
+  {
+    "id": "pc5-infrared-co2",
+    "type": "multiple-choice",
+    "prompt": "CO_2 has no permanent dipole moment, yet it absorbs IR radiation. How can that be?",
+    "choices": [
+      {
+        "text": "Some of its vibrations make its dipole moment change",
+        "correct": true
+      },
+      {
+        "text": "Every molecule absorbs IR, whatever its dipole",
+        "why": "N_2 and O_2 don't absorb IR through their vibrations, because their dipole never changes. Absorption needs a changing dipole."
+      },
+      {
+        "text": "Its electrons absorb the IR, not its vibrations",
+        "why": "IR absorption here comes from vibrations. What matters is whether a vibration changes the dipole moment."
+      },
+      {
+        "text": "The selection rules don't apply to triatomic molecules",
+        "why": "The same rule holds for every molecule: a vibration absorbs IR only if it changes the dipole moment."
+      }
+    ],
+    "explanation": "IR absorption needs the dipole moment to change during the vibration, not a permanent dipole. CO_2 and CH_4 have no dipole moment yet absorb IR; only vibrations that leave the dipole unchanged, like the stretch of N_2, are IR inactive."
+  },
+  {
+    "id": "pc5-infrared-allowed",
+    "type": "multiple-choice",
+    "prompt": "In the harmonic oscillator model, which vibrational transition is allowed?",
+    "choices": [
+      {
+        "text": "v = 2 → v = 3",
+        "correct": true
+      },
+      {
+        "text": "v = 0 → v = 2",
+        "why": "Δv = 2 breaks the selection rule Δv = ±1. In real spectra it appears as an overtone only because of anharmonicity."
+      },
+      {
+        "text": "v = 1 → v = 4",
+        "why": "Δv = 3 breaks the selection rule Δv = ±1, so the transition moment is zero in the harmonic model."
+      },
+      {
+        "text": "v = 3 → v = 0",
+        "why": "Δv = −3 breaks the selection rule Δv = ±1. Only steps of one level are allowed."
+      }
+    ],
+    "explanation": "For a harmonic oscillator, the integral ∫xψ_(v′)^*ψ_v dx is zero unless v′ = v ± 1, so only Δv = ±1 is allowed. v = 2 → v = 3 is a step of +1."
+  },
+  {
+    "id": "pc5-infrared-single-line",
+    "type": "multiple-choice",
+    "prompt": "Why does the harmonic oscillator model predict that a diatomic molecule's vibrational absorption spectrum is a single line?",
+    "choices": [
+      {
+        "text": "Only Δv = ±1 is allowed, and the levels are equally spaced",
+        "correct": true
+      },
+      {
+        "text": "A diatomic molecule has only one vibrational level",
+        "why": "There are infinitely many levels, v = 0, 1, 2 and so on. The allowed steps between neighbors all have the same energy, so they make one line."
+      },
+      {
+        "text": "Only the v = 0 → v = 1 step obeys the selection rule",
+        "why": "v = 1 → 2, v = 2 → 3 and so on also obey Δv = ±1. They give the same line because the levels are equally spaced."
+      },
+      {
+        "text": "Every Δv is allowed, but all the lines overlap",
+        "why": "Only Δv = ±1 is allowed in the harmonic model; larger jumps are forbidden. The Δv = 1 steps all have the same energy, hν_m."
+      }
+    ],
+    "explanation": "Each allowed transition changes v by one level, and in the harmonic model every such step has the same energy, hν_m. So all allowed absorptions fall at one frequency, giving a single line."
+  },
+  {
+    "id": "pc5-infrared-anharmonic",
+    "type": "multiple-choice",
+    "prompt": "In a real, anharmonic molecule, how do the v = 0 → 1 and v = 1 → 2 transitions compare?",
+    "choices": [
+      {
+        "text": "They occur at different frequencies",
+        "correct": true
+      },
+      {
+        "text": "They occur at exactly the same frequency",
+        "why": "That is true only for a perfect harmonic oscillator, whose levels are equally spaced. Anharmonic levels are not."
+      },
+      {
+        "text": "The v = 1 → 2 transition becomes forbidden",
+        "why": "Both are Δv = +1 steps, so both stay allowed. Anharmonicity changes their frequencies, not whether they are allowed."
+      },
+      {
+        "text": "Both become forbidden by anharmonicity",
+        "why": "Anharmonicity doesn't forbid transitions; it even lets overtones appear. It makes the levels unequally spaced."
+      }
+    ],
+    "explanation": "Anharmonicity means the potential energy is not strictly harmonic, so the vibrational levels are not equally spaced. The v = 0 → 1 and v = 1 → 2 transitions then occur at different frequencies."
+  },
+  {
+    "id": "pc5-infrared-overtone",
+    "type": "multiple-choice",
+    "prompt": "What is an overtone transition?",
+    "choices": [
+      {
+        "text": "One with Δv = ±n, where n > 1, such as Δv = 2",
+        "correct": true
+      },
+      {
+        "text": "One with Δv = ±1, such as v = 0 → v = 1",
+        "why": "That is a fundamental transition. Overtones change v by more than one level."
+      },
+      {
+        "text": "One between two rotational states",
+        "why": "Rotational states give the fine structure of an IR spectrum. Overtones are vibrational transitions with Δv = ±2, ±3 and so on."
+      },
+      {
+        "text": "One in which v does not change at all",
+        "why": "With Δv = 0 the vibrational state stays the same. An overtone jumps more than one vibrational level."
+      }
+    ],
+    "explanation": "Overtones are transitions with Δv = ±n where n > 1. They are forbidden in the harmonic oscillator model and appear in real spectra only because molecular vibrations are anharmonic."
+  },
+  {
+    "id": "pc5-infrared-first-overtone",
+    "type": "multiple-choice",
+    "prompt": "A molecule's fundamental vibrational transition (Δv = 1) is at 2000 cm^−1. Where does its first overtone (Δv = 2) generally appear?",
+    "choices": [
+      {
+        "text": "Slightly below 4000 cm^−1",
+        "correct": true
+      },
+      {
+        "text": "Exactly at 4000 cm^−1",
+        "why": "Exactly twice the fundamental would need equally spaced levels, but the overtone appears only because the vibration is anharmonic, which puts it a little lower."
+      },
+      {
+        "text": "Slightly above 4000 cm^−1",
+        "why": "Anharmonicity puts the first overtone slightly below twice the fundamental, not above it."
+      },
+      {
+        "text": "At 1000 cm^−1, half the fundamental",
+        "why": "Jumping two levels takes more energy than jumping one, so the overtone is near twice the fundamental, not half."
+      }
+    ],
+    "explanation": "The first overtone generally appears at a frequency slightly less than twice that of the fundamental. Twice 2000 cm^−1 is 4000 cm^−1, so the overtone lies a little below that."
+  },
+  {
+    "id": "pc5-infrared-fine-structure",
+    "type": "multiple-choice",
+    "prompt": "At high resolution, a real IR spectrum shows fine structure. What causes it?",
+    "choices": [
+      {
+        "text": "The molecule's rotational states",
+        "correct": true
+      },
+      {
+        "text": "Electrons moving between orbitals",
+        "why": "IR spectra come from the motion of the nuclei, not from electrons changing orbitals. The fine structure comes from rotational states."
+      },
+      {
+        "text": "Overtone transitions with Δv = 2",
+        "why": "Overtones appear as separate lines near twice the fundamental frequency. The fine structure comes from the molecule's rotation."
+      },
+      {
+        "text": "The zero-point energy of the vibration",
+        "why": "The zero-point energy is a single fixed amount and does not split a line into many. The fine structure comes from rotational states."
+      }
+    ],
+    "explanation": "The actual IR spectrum is more complex than a single line: at high resolution there is fine structure due to the rotational states of the molecule, which Sections 5.8 and 5.9 discuss."
+  },
+  {
+    "id": "pc5-infrared-beer",
+    "type": "multiple-choice",
+    "prompt": "In Beer's law, A = εcl, why is the molar absorptivity ε larger for some vibrations than for others?",
+    "choices": [
+      {
+        "text": "Their transition moment integrals are larger",
+        "correct": true
+      },
+      {
+        "text": "Their samples have higher concentrations",
+        "why": "Concentration is the separate factor c in A = εcl. ε is a property of the transition itself."
+      },
+      {
+        "text": "Their photons have longer wavelengths",
+        "why": "Wavelength sets where a peak appears, not how strong it is. ε grows with the transition moment integral."
+      },
+      {
+        "text": "Their bonds have smaller force constants",
+        "why": "The force constant sets the frequency of the vibration, not the strength of its absorption. ε depends on the transition moment."
+      }
+    ],
+    "explanation": "A larger transition moment integral means a more probable transition, so the molar absorptivity ε, and the absorbance A, are larger. A forbidden transition has ε = 0 and gives no peak at all."
+  },
+  {
+    "id": "pc5-infrared-beer-absorbance",
+    "type": "numeric",
+    "prompt": "Beer's law is A = εcl. An IR band has molar absorptivity ε = 60 L·mol^−1·cm^−1, the sample concentration is c = 0.010 mol/L, and the path length is l = 0.50 cm. What is the absorbance A? (Give it as a decimal.)",
+    "answer": 0.3,
+    "explanation": "A = εcl = (60 L·mol^−1·cm^−1)(0.010 mol/L)(0.50 cm) = 0.30. The units cancel, so absorbance has no units. A vibration with a larger transition moment would have a larger ε and absorb more strongly."
+  },
+  {
+    "id": "pc5-infrared-percent-stretch",
+    "type": "numeric",
+    "prompt": "Example 5.5.2 compares the classical limit of a bond's stretch, Q_0, with its equilibrium length: percent = (Q_0)/(x_eq) × 100%. For a bond with x_eq = 0.100 nm and Q_0 = 0.0080 nm, what percent of the bond length is the stretch?",
+    "answer": 8.0,
+    "explanation": "Percent = (0.0080 nm)/(0.100 nm) × 100% = 0.080 × 100% = 8.0%. In Example 5.5.2 the same comparison for HCl gives about 8.6%: even in its lowest state, a bond stretches by a noticeable fraction of its length."
+  }
+]

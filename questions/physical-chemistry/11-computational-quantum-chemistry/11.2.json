@@ -1,0 +1,617 @@
+[
+  {
+    "id": "pc11-gaussian-basis-set",
+    "type": "multiple-choice",
+    "prompt": "In computational chemistry, what is a basis set?",
+    "choices": [
+      {
+        "text": "Functions combined linearly to make MOs",
+        "correct": true
+      },
+      {
+        "text": "The list of nuclear positions in a molecule",
+        "why": "Nuclear positions set the geometry. A basis set is a set of functions whose linear combinations create the molecular orbitals."
+      },
+      {
+        "text": "The set of occupied molecular orbitals",
+        "why": "The molecular orbitals are what gets built. The basis set is the set of functions they are built from."
+      },
+      {
+        "text": "A table of measured ionization energies",
+        "why": "A basis set holds no experimental data. It is a set of basis functions combined in linear combinations to create molecular orbitals."
+      }
+    ],
+    "explanation": "A basis set is a set of functions, called basis functions, which are combined in linear combinations to create molecular orbitals, ψ_i = Σ_j c_ij φ_j. The functions are usually atomic orbitals centered on the atoms."
+  },
+  {
+    "id": "pc11-gaussian-centered",
+    "type": "multiple-choice",
+    "prompt": "In molecular calculations, where are the atomic-orbital basis functions usually centered?",
+    "choices": [
+      {
+        "text": "On the atomic nuclei",
+        "correct": true
+      },
+      {
+        "text": "At the molecule's center of mass",
+        "why": "A single center would ignore the atoms. The basis functions are atomic orbitals centered on each nucleus, as in the LCAO approach."
+      },
+      {
+        "text": "Midway along each chemical bond",
+        "why": "Bond midpoints are not used as centers here. The functions are atomic orbitals centered at each atomic nucleus."
+      },
+      {
+        "text": "Spread evenly through all of space",
+        "why": "Functions spread through all of space, such as plane waves, suit materials calculations. For molecules, atomic orbitals centered on each nucleus are used."
+      }
+    ],
+    "explanation": "It is common to use a finite number of atomic orbitals centered at each atomic nucleus in the molecule, the linear combination of atomic orbitals (LCAO) ansatz. The MOs are then linear combinations of these functions."
+  },
+  {
+    "id": "pc11-gaussian-plane-waves",
+    "type": "multiple-choice",
+    "prompt": "Basis functions can in principle be any function. Which kind is frequently used in materials calculations?",
+    "choices": [
+      {
+        "text": "Plane waves",
+        "correct": true
+      },
+      {
+        "text": "Slater determinants",
+        "why": "A Slater determinant is a many-electron wavefunction built from orbitals, not a basis function. Materials calculations often use plane waves."
+      },
+      {
+        "text": "Spin functions α and β",
+        "why": "α and β describe spin, not spatial shape. Plane waves are the functions often used in materials calculations."
+      },
+      {
+        "text": "Hückel π orbitals",
+        "why": "Hückel orbitals are results of a simple π-electron model, not a basis. Materials calculations frequently use plane waves."
+      }
+    ],
+    "explanation": "For convenience basis functions are typically atomic orbitals centered on atoms, but they can be any function. Plane waves are frequently used in materials calculations."
+  },
+  {
+    "id": "pc11-gaussian-capital-psi",
+    "type": "multiple-choice",
+    "prompt": "In this chapter's notation, φ, ψ and Ψ stand for different things. What does the capital Ψ represent?",
+    "choices": [
+      {
+        "text": "The electronic state wavefunction",
+        "correct": true
+      },
+      {
+        "text": "A single basis function, such as an AO",
+        "why": "That is φ, which usually represents an atomic orbital. Ψ is the electronic state wavefunction, a Slater determinant or a combination of them."
+      },
+      {
+        "text": "One molecular orbital of the molecule",
+        "why": "That is the lowercase ψ. Ψ is the whole electronic state wavefunction."
+      },
+      {
+        "text": "A general spin function, α or β",
+        "why": "The chapter uses σ for a general spin function. Ψ is the electronic state wavefunction."
+      }
+    ],
+    "explanation": "φ is a basis function (usually an atomic orbital), ψ is a molecular orbital, σ is a spin function, and Ψ is the electronic state wavefunction. Ψ is a single Slater determinant or a linear combination of Slater determinants."
+  },
+  {
+    "id": "pc11-gaussian-span",
+    "type": "multiple-choice",
+    "prompt": "A set of basis functions must span the space. What does that require?",
+    "choices": [
+      {
+        "text": "They form a complete set for the same thing",
+        "correct": true
+      },
+      {
+        "text": "They must all be Gaussian functions",
+        "why": "Any suitable functions can span the space; hydrogenic orbitals and STOs are other choices. The functions must form a complete set describing the same thing."
+      },
+      {
+        "text": "There must be exactly three of them",
+        "why": "Three unit vectors happen to span ordinary space. The general requirement is that the functions form a complete set describing the same thing."
+      },
+      {
+        "text": "Each one must be equal to one molecular orbital",
+        "why": "The MOs are built from the basis functions. Spanning the space means the functions form a complete set and describe the same thing."
+      }
+    ],
+    "explanation": "Basis functions span the space when they form a complete set and describe the same thing. Then the function wanted can be written as a linear combination of them, just as any point in space is a combination of the unit vectors along x, y and z."
+  },
+  {
+    "id": "pc11-gaussian-basis-vectors",
+    "type": "multiple-choice",
+    "prompt": "Any position in space is a linear combination of the unit vectors along x, y and z. What does the section say these unit vectors could also be called?",
+    "choices": [
+      {
+        "text": "Basis vectors",
+        "correct": true
+      },
+      {
+        "text": "Eigenvalues",
+        "why": "Eigenvalues are numbers, not directions. Because the unit vectors along x, y and z span space, they could be called basis vectors."
+      },
+      {
+        "text": "Normal modes",
+        "why": "Normal modes describe the vibrations of a molecule. Unit vectors that span space are basis vectors."
+      },
+      {
+        "text": "Spin functions",
+        "why": "Spin functions such as α and β describe electron spin. The unit vectors along x, y and z could be called basis vectors."
+      }
+    ],
+    "explanation": "The unit vectors along x, y and z form a complete set, since any position is a linear combination of them, so they could also be called basis vectors. Basis functions play the same role for molecular orbitals."
+  },
+  {
+    "id": "pc11-gaussian-spherical-harmonics",
+    "type": "multiple-choice",
+    "prompt": "Why can't spherical harmonics be used to describe the radial function of a hydrogen atom?",
+    "choices": [
+      {
+        "text": "They don't involve the distance r",
+        "correct": true
+      },
+      {
+        "text": "They can't be normalized",
+        "why": "Spherical harmonics are normalizable. They fail for the radial function because they depend only on angles, not on r."
+      },
+      {
+        "text": "They describe only many-electron atoms",
+        "why": "Spherical harmonics describe the angular behavior of anything in three-dimensional space, including hydrogen. They simply contain no r."
+      },
+      {
+        "text": "They are complex, not real functions",
+        "why": "Complex functions can still serve as basis functions. The problem is that spherical harmonics depend only on θ and φ, not on r."
+      }
+    ],
+    "explanation": "Spherical harmonics depend only on the angles θ and φ. They can describe the angular properties of anything in three-dimensional space, but not a radial function, which depends on r."
+  },
+  {
+    "id": "pc11-gaussian-classroom",
+    "type": "multiple-choice",
+    "prompt": "Why don't the unit vectors along x and y alone form a complete set for describing positions in a three-dimensional classroom?",
+    "choices": [
+      {
+        "text": "They can't describe height, along z",
+        "correct": true
+      },
+      {
+        "text": "They aren't perpendicular to each other",
+        "why": "x and y are perpendicular. The problem is that every combination of them stays in one plane, so heights along z can't be reached."
+      },
+      {
+        "text": "Unit vectors are too short to span a room",
+        "why": "A unit vector can be multiplied by any coefficient, so length is no problem. What is missing is a third direction, z."
+      },
+      {
+        "text": "Positions need a curved set of vectors",
+        "why": "Straight unit vectors work fine; x, y and z together form a complete set. Two of them leave out the z direction."
+      }
+    ],
+    "explanation": "Any position in space is a linear combination of the three unit vectors along x, y and z, so these form a complete set. With x and y alone, every combination lies in a flat plane, and the height above the floor can't be specified."
+  },
+  {
+    "id": "pc11-gaussian-hydrogenic-appeal",
+    "type": "multiple-choice",
+    "prompt": "Why might one intuitively choose hydrogenic atomic orbitals as the basis set for molecular orbitals?",
+    "choices": [
+      {
+        "text": "Molecules are made of atoms",
+        "correct": true
+      },
+      {
+        "text": "They give exact energies for molecules",
+        "why": "Hydrogenic orbitals describe atoms exactly only if electron–electron interactions are neglected. Their appeal is that molecules are made of atoms."
+      },
+      {
+        "text": "Their integrals are the fastest to compute",
+        "why": "Calculations with hydrogenic functions were not very efficient, which is why STOs and then Gaussians replaced them."
+      },
+      {
+        "text": "They already include electron repulsion",
+        "why": "They neglect electron–electron interactions; the nuclear charge can be varied to account for shielding. The intuitive appeal is that molecules are made of atoms."
+      }
+    ],
+    "explanation": "Molecules are composed of atoms, and hydrogenic orbitals describe atoms exactly if electron–electron interactions are neglected. Atomic orbitals also let molecular properties be interpreted in terms of atomic ones."
+  },
+  {
+    "id": "pc11-gaussian-why-stos",
+    "type": "multiple-choice",
+    "prompt": "Why were Slater-type orbitals (STOs) invented as basis functions in place of hydrogenic functions?",
+    "choices": [
+      {
+        "text": "Hydrogenic functions weren't efficient",
+        "correct": true
+      },
+      {
+        "text": "Hydrogenic functions can't describe hydrogen",
+        "why": "They describe the hydrogen atom exactly. They were replaced because calculations with them were not very efficient."
+      },
+      {
+        "text": "STOs have more radial nodes",
+        "why": "STO radial parts, r^(n − 1)e^(−ζr), have no radial nodes at all. They were adopted because hydrogenic calculations were inefficient."
+      },
+      {
+        "text": "Hydrogenic functions have no angular part",
+        "why": "Hydrogenic orbitals have spherical-harmonic angular parts, as STOs do. STOs were invented because hydrogenic calculations were not very efficient."
+      }
+    ],
+    "explanation": "Calculations with hydrogenic functions were not very efficient, so Slater-type orbitals were invented. They keep the exponential radial decay and use spherical harmonics for the angular part."
+  },
+  {
+    "id": "pc11-gaussian-larger-basis",
+    "type": "multiple-choice",
+    "prompt": "Why does a larger basis set generally improve the accuracy of a variational calculation?",
+    "choices": [
+      {
+        "text": "It gives more parameters to vary",
+        "correct": true
+      },
+      {
+        "text": "It makes each integral quicker to compute",
+        "why": "A larger basis costs more computer time, not less. It helps because there are more variable parameters to improve the wavefunction."
+      },
+      {
+        "text": "It removes the need for the variational method",
+        "why": "The variational method is still used to optimize the coefficients. A larger basis just gives it more parameters to work with."
+      },
+      {
+        "text": "It lets the energy fall below the exact value",
+        "why": "The variational energy always stays above the exact energy. More parameters let it come closer from above."
+      }
+    ],
+    "explanation": "As with most variational calculations, a larger basis set provides more variable parameters, which produce a better approximate wavefunction. The price is increased computational time."
+  },
+  {
+    "id": "pc11-gaussian-radial-only",
+    "type": "multiple-choice",
+    "prompt": "Hydrogenic orbitals, STOs and Gaussian functions can all serve as basis functions. Which part of the orbital differs among them?",
+    "choices": [
+      {
+        "text": "Only the radial part",
+        "correct": true
+      },
+      {
+        "text": "Only the angular part",
+        "why": "The angular part is a spherical harmonic in all of them. Only the radial part changes."
+      },
+      {
+        "text": "Both the radial and angular parts",
+        "why": "The angular part stays the same: spherical harmonics are used in every case. Only the radial part changes."
+      },
+      {
+        "text": "Only the normalization constant",
+        "why": "The radial functions themselves differ, e^(−ζr) for an STO and e^(−αr²) for a Gaussian. The angular part is the same."
+      }
+    ],
+    "explanation": "In all these basis sets only the radial part of the orbital changes; spherical harmonic functions describe the angular part in every case. An STO's radial part decays as e^(−ζr), a Gaussian's as e^(−αr²)."
+  },
+  {
+    "id": "pc11-gaussian-flat-nucleus",
+    "type": "multiple-choice",
+    "prompt": "How does a Gaussian basis function differ in shape from an atomic orbital close to the nucleus, at r = 0?",
+    "choices": [
+      {
+        "text": "It is flat there instead of steep",
+        "correct": true
+      },
+      {
+        "text": "It is steeper than the atomic orbital",
+        "why": "It's the reverse: an atomic orbital is steep at the nucleus, and a Gaussian is flat there."
+      },
+      {
+        "text": "It is zero at the nucleus",
+        "why": "A Gaussian e^(−αr²) has its maximum value at r = 0, not zero. Its problem is that it is flat there rather than steep."
+      },
+      {
+        "text": "It has the same sharp cusp",
+        "why": "Gaussians have no cusp at the nucleus; they are flat at r = 0. That mismatch is why several are combined."
+      }
+    ],
+    "explanation": "Gaussian functions do not match the shape of an atomic orbital very well. In particular, they are flat rather than steep near the nucleus at r = 0."
+  },
+  {
+    "id": "pc11-gaussian-far-tail",
+    "type": "multiple-choice",
+    "prompt": "Compared with a Slater-type orbital, how does a Gaussian basis function behave at large distances r from the nucleus?",
+    "choices": [
+      {
+        "text": "It falls off more rapidly",
+        "correct": true
+      },
+      {
+        "text": "It falls off more slowly",
+        "why": "It's the reverse: e^(−αr²) dies away faster than e^(−ζr) at large r."
+      },
+      {
+        "text": "It levels off at a constant value",
+        "why": "Both functions approach zero at large r. The Gaussian, with r² in its exponent, gets there faster."
+      },
+      {
+        "text": "It becomes identical to the STO",
+        "why": "The two never match at large r: the Gaussian falls off more rapidly because its exponent contains r²."
+      }
+    ],
+    "explanation": "Gaussian functions fall off more rapidly than STOs at large r, because the exponent of e^(−αr²) grows with r² instead of r. Together with their flatness at r = 0, this makes one Gaussian a poor match for an atomic orbital."
+  },
+  {
+    "id": "pc11-gaussian-several",
+    "type": "multiple-choice",
+    "prompt": "A single Gaussian doesn't match the shape of an atomic orbital well. How do Gaussian basis sets compensate?",
+    "choices": [
+      {
+        "text": "Each STO is replaced by several Gaussians",
+        "correct": true
+      },
+      {
+        "text": "Gaussians are used only far from the nucleus",
+        "why": "Gaussians are used everywhere; they fit worst both near the nucleus and far away. Several of them with different exponents are combined to mimic each STO."
+      },
+      {
+        "text": "The Gaussian exponent is re-optimized each time",
+        "why": "The fitted combination is frozen, not re-optimized. Each STO is replaced by several Gaussians with different exponents."
+      },
+      {
+        "text": "Gaussians are mixed with STOs on each atom",
+        "why": "The STO is only the target to be fitted; the basis uses Gaussians alone. Several Gaussians with different exponents stand in for each STO."
+      }
+    ],
+    "explanation": "Each STO is replaced with a number of Gaussian functions with different values of the exponential parameter α. Linear combinations of these primitive Gaussians approximate the radial part of the STO."
+  },
+  {
+    "id": "pc11-gaussian-contracted",
+    "type": "multiple-choice",
+    "prompt": "What is a contracted Gaussian function?",
+    "choices": [
+      {
+        "text": "A linear combination of primitive Gaussians",
+        "correct": true
+      },
+      {
+        "text": "A single Gaussian with a reduced exponent",
+        "why": "Contracted doesn't mean a smaller α. It is a linear combination of primitive Gaussians that approximates an STO."
+      },
+      {
+        "text": "The product of one Gaussian and one STO",
+        "why": "No STO appears in the final function. A contracted Gaussian is a linear combination of primitive Gaussians fitted to an STO."
+      },
+      {
+        "text": "A single Gaussian squeezed toward the nucleus",
+        "why": "Contraction is not a squeezing. It is a linear combination of primitive Gaussians, frozen and treated as one function."
+      }
+    ],
+    "explanation": "Linear combinations of primitive Gaussian functions are formed to approximate the radial part of an STO. Such a linear combination is called a contracted Gaussian function."
+  },
+  {
+    "id": "pc11-gaussian-frozen",
+    "type": "multiple-choice",
+    "prompt": "During the energy variational calculation, what happens to the linear combination of primitives that makes up a contracted Gaussian?",
+    "choices": [
+      {
+        "text": "It is frozen and treated as one function",
+        "correct": true
+      },
+      {
+        "text": "Its coefficients are re-optimized each time",
+        "why": "The combination is not optimized further in the energy variational calculation. It is frozen and treated as a single function."
+      },
+      {
+        "text": "Each primitive gets its own MO coefficient",
+        "why": "Freezing the contraction means the primitives don't act separately. The whole combination counts as one basis function with one coefficient in each MO."
+      },
+      {
+        "text": "It is swapped back for the STO it fits",
+        "why": "The STO is never used in the calculation; fast Gaussian integrals are the whole point. The contraction is frozen and used as one function."
+      }
+    ],
+    "explanation": "The linear combination of primitive Gaussians is not optimized further in the energy variational calculation. It is frozen and treated as a single function, the contracted Gaussian."
+  },
+  {
+    "id": "pc11-gaussian-net-gain",
+    "type": "multiple-choice",
+    "prompt": "Replacing each STO with several Gaussians adds more functions and more integrals to a calculation. Why is there still a net gain in efficiency?",
+    "choices": [
+      {
+        "text": "Gaussian integrals are quicker to compute",
+        "correct": true
+      },
+      {
+        "text": "Gaussians match atomic orbitals more closely",
+        "why": "A single Gaussian matches an atomic orbital worse than an STO does. The gain comes from Gaussian integrals being quicker to compute than those with exponentials."
+      },
+      {
+        "text": "Gaussians need no coefficients at all",
+        "why": "Each contracted Gaussian still has coefficients. The gain comes from the speed of Gaussian integrals."
+      },
+      {
+        "text": "Fewer electrons need to be treated",
+        "why": "The number of electrons doesn't change. Integrals involving Gaussians are simply quicker to compute than those involving exponentials."
+      }
+    ],
+    "explanation": "Although more functions and more integrals become part of the calculation, the integrals involving Gaussian functions are quicker to compute than those involving the exponentials of STOs. So there is a net gain in efficiency."
+  },
+  {
+    "id": "pc11-gaussian-steepest-primitive",
+    "type": "multiple-choice",
+    "prompt": "In Example 11.2.2, a 1s STO is fitted by three primitive Gaussians e^(−αr²) with α = 0.1688, 0.6239 and 3.425. Which one falls off fastest and so describes the region closest to the nucleus?",
+    "choices": [
+      {
+        "text": "The one with α = 3.425",
+        "correct": true
+      },
+      {
+        "text": "The one with α = 0.1688",
+        "why": "The smallest α gives the widest Gaussian, which falls off slowly and describes the region far from the nucleus."
+      },
+      {
+        "text": "The one with α = 0.6239",
+        "why": "The middle value gives a Gaussian of middle width. The largest α, 3.425, falls off fastest."
+      },
+      {
+        "text": "All fall off at the same rate",
+        "why": "α sets the rate: the larger α, the faster e^(−αr²) dies away. The three differ, which is why they are combined."
+      }
+    ],
+    "explanation": "The larger α is, the faster e^(−αr²) falls off with distance. The α = 3.425 primitive is the narrowest and covers the region near the nucleus, while α = 0.1688 covers the outer region."
+  },
+  {
+    "id": "pc11-gaussian-boys",
+    "type": "multiple-choice",
+    "prompt": "Who realized that Slater-type orbitals could be approximated by linear combinations of Gaussian orbitals, leading to huge computational savings?",
+    "choices": [
+      {
+        "text": "Frank Boys",
+        "correct": true
+      },
+      {
+        "text": "John Slater",
+        "why": "Slater introduced the STOs (and Slater determinants). It was Frank Boys who realized they could be approximated by Gaussians."
+      },
+      {
+        "text": "Douglas Hartree",
+        "why": "Hartree developed the self-consistent field method for atoms. Frank Boys proposed approximating STOs with Gaussians."
+      },
+      {
+        "text": "Winifred Huo",
+        "why": "Huo carried out the 1965 calculation on carbon monoxide described in 11.1. Gaussian approximations to STOs came from Frank Boys."
+      }
+    ],
+    "explanation": "STOs are computationally difficult. Frank Boys realized they could be approximated as linear combinations of Gaussian orbitals, and because integrals with Gaussians are easier to calculate, this led to huge savings."
+  },
+  {
+    "id": "pc11-gaussian-sto-decay",
+    "type": "multiple-choice",
+    "prompt": "According to the section's summary, why do STOs describe the long-range overlap between atoms accurately?",
+    "choices": [
+      {
+        "text": "They decay exponentially with distance",
+        "correct": true
+      },
+      {
+        "text": "They are flat near the nucleus",
+        "why": "Flatness at r = 0 is a weakness of Gaussians, and it concerns the nucleus, not long range. STOs decay exponentially, as atomic orbitals do far out."
+      },
+      {
+        "text": "Their integrals are easy to compute",
+        "why": "STO integrals are computationally difficult; easy integrals are the Gaussians' advantage. The long-range tail is right because STOs decay exponentially."
+      },
+      {
+        "text": "They fall off just as fast as Gaussians",
+        "why": "Gaussians fall off too fast at large r. STOs decay exponentially with distance, which is why they describe long-range overlap well."
+      }
+    ],
+    "explanation": "STOs decay exponentially with distance from the nuclei, which accurately describes long-range overlap between atoms. They also reach a maximum at r = 0, which describes the charge and spin at the nucleus well."
+  },
+  {
+    "id": "pc11-gaussian-sto-nucleus",
+    "type": "multiple-choice",
+    "prompt": "According to the section's summary, which property of a 1s STO, e^(−ζr), lets it describe the charge and spin at the nucleus well?",
+    "choices": [
+      {
+        "text": "It reaches a maximum at r = 0",
+        "correct": true
+      },
+      {
+        "text": "It decays exponentially far out",
+        "why": "Exponential decay is what lets STOs describe the long-range overlap between atoms. At the nucleus, what matters is that a 1s STO peaks at r = 0."
+      },
+      {
+        "text": "It is flat near the nucleus",
+        "why": "Being flat at r = 0 is the Gaussians' weakness, not the STOs' strength. A 1s STO reaches a maximum at r = 0."
+      },
+      {
+        "text": "Its integrals are easy to compute",
+        "why": "STO integrals are computationally difficult. The 1s STO describes the nucleus well because it reaches a maximum at r = 0."
+      }
+    ],
+    "explanation": "A 1s STO, e^(−ζr), is largest at r = 0, which describes the charge and spin at the nucleus well, and it decays exponentially, which describes long-range overlap. (Higher STOs carry a factor r^(n−1), which is zero at the nucleus.) Their drawback is that STO integrals are computationally difficult."
+  },
+  {
+    "id": "pc11-gaussian-example-name",
+    "type": "multiple-choice",
+    "prompt": "Example 11.2.2 represents a 1s Slater-type orbital by a fixed sum of three primitive Gaussian functions. Which basis-set name describes this kind of fit?",
+    "choices": [
+      {
+        "text": "STO-3G",
+        "correct": true
+      },
+      {
+        "text": "3-21G",
+        "why": "3-21G is a split-valence name: 3 Gaussians for each inner-shell orbital and the valence orbitals split in two. One STO fitted by three Gaussians is the STO-3G pattern."
+      },
+      {
+        "text": "STO-6G",
+        "why": "STO-6G uses six Gaussians for each STO. Example 11.2.2 uses three, as in STO-3G."
+      },
+      {
+        "text": "6-31G",
+        "why": "6-31G uses 6 Gaussians for each inner-shell orbital and splits the valence orbitals. Three Gaussians per STO is STO-3G."
+      }
+    ],
+    "explanation": "In the earliest contracted Gaussian sets, called STO-NG, each STO is represented by a linear combination of N primitive Gaussians that best fit it. Example 11.2.2 uses three Gaussians for the 1s STO, the pattern of STO-3G."
+  },
+  {
+    "id": "pc11-gaussian-g-letter",
+    "type": "multiple-choice",
+    "prompt": "In basis-set names such as STO-3G and 6-31G, what does the final letter G stand for?",
+    "choices": [
+      {
+        "text": "Gaussian",
+        "correct": true
+      },
+      {
+        "text": "Ground state",
+        "why": "The name describes the basis functions, not the state being calculated. G identifies the set as being made of Gaussian functions."
+      },
+      {
+        "text": "Gradient",
+        "why": "No gradient is involved in the name. G identifies the set as Gaussian."
+      },
+      {
+        "text": "General",
+        "why": "G is not a general-purpose label. It identifies the basis set as being Gaussian."
+      }
+    ],
+    "explanation": "G identifies the set as being Gaussian: its basis functions are contractions of primitive Gaussian functions. In STO-3G, for example, each Slater-type orbital is fitted by 3 Gaussians."
+  },
+  {
+    "id": "pc11-gaussian-sto-power",
+    "type": "numeric",
+    "prompt": "STOs have the radial part R(r) = N r^(n − 1) e^(−ζr), where n plays the role of the principal quantum number. What power of r multiplies the exponential in a 3s STO?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "For a 3s STO, n = 3, so the power is n − 1 = 3 − 1 = 2: R(r) = N r² e^(−ζr). A 1s STO has r^0 = 1, a pure exponential."
+  },
+  {
+    "id": "pc11-gaussian-sum-at-nucleus",
+    "type": "numeric",
+    "prompt": "In Example 11.2.2, the contracted Gaussian SG(r) adds three terms of the form C e^(−αr²), each with its own α, using C_1 = 0.4, C_2 = 0.7 and C_3 = 1.3. Since e^(−αr²) = 1 at r = 0 for every term, what is SG(0)? (Give it as a decimal.)",
+    "answer": 2.4,
+    "explanation": "SG(0) = 0.4 + 0.7 + 1.3 = 2.4. The STO being fitted, 2(1.24)^(3/2)e^(−1.24r), is about 2.76 at r = 0, so the flat-topped Gaussians fall short right at the nucleus, where the STO is steepest."
+  },
+  {
+    "id": "pc11-gaussian-vector-length",
+    "type": "numeric",
+    "prompt": "With a finite basis set, a molecular orbital ψ_i = Σ_j c_ij φ_j is represented as a vector whose components are the coefficients c_ij. If the basis set has 7 functions, how many components does each orbital's vector have?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "There is one coefficient for each basis function, so the vector has 7 components. That is the sense in which wavefunctions become vectors in a finite basis."
+  },
+  {
+    "id": "pc11-gaussian-hcn-functions",
+    "type": "numeric",
+    "prompt": "In a minimal basis such as STO-3G, each C, N or O atom gets 5 functions (1s, 2s, 2p_x, 2p_y and 2p_z) and each H atom gets 1. How many basis functions does HCN have?",
+    "answer": 11,
+    "tolerance": 0,
+    "explanation": "H contributes 1, C 5 and N 5: 1 + 5 + 5 = 11 functions. Each is one contracted Gaussian standing in for one STO."
+  },
+  {
+    "id": "pc11-gaussian-nh3-contracted",
+    "type": "numeric",
+    "prompt": "An STO-3G calculation on NH3 involves 24 primitive Gaussians, frozen together in contractions of 3. Since each contraction is treated as a single function, how many basis functions does the variational calculation work with?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "24 ÷ 3 = 8 contracted functions: 5 on N and 1 on each of the three H atoms. Each contraction is frozen, so each MO has just one coefficient per contracted function to vary."
+  }
+]

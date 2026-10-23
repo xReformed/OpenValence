@@ -1,0 +1,601 @@
+[
+  {
+    "id": "pc8-term-symbol-vector-addition",
+    "type": "multiple-choice",
+    "prompt": "Why can't the total orbital angular momentum L of an atom be found simply by adding up the l values of its electrons?",
+    "choices": [
+      {
+        "text": "Their angular momenta are vectors with different directions",
+        "correct": true
+      },
+      {
+        "text": "Only the electron with the largest l value really counts",
+        "why": "Every open-shell electron contributes. The trouble is that their angular momenta are vectors, so they must be added as vectors over all possible orientations."
+      },
+      {
+        "text": "The l values have to be multiplied together, not added",
+        "why": "Angular momenta are not multiplied. They are added as vectors, and the result depends on how the vectors are oriented."
+      },
+      {
+        "text": "Electron spin cancels part of each electron's orbital motion",
+        "why": "Spin is combined separately, into S. L is not a simple sum because the orbital angular momenta can point in different directions."
+      }
+    ],
+    "explanation": "The magnitude of an angular momentum is a scalar, but angular momentum itself is a vector. Adding the electrons' angular momenta needs vector addition over all their possible orientations, which is why one configuration can give several values of L."
+  },
+  {
+    "id": "pc8-term-symbol-l-values-p-d",
+    "type": "multiple-choice",
+    "prompt": "For two electrons, L = l_1 + l_2, l_1 + l_2 − 1, …, |l_1 − l_2|. Which values of L are possible for one p electron (l = 1) and one d electron (l = 2)?",
+    "choices": [
+      {
+        "text": "3, 2 and 1",
+        "correct": true
+      },
+      {
+        "text": "3 only",
+        "why": "That is only the co-aligned case. The angular momenta can also oppose each other (L = |1 − 2| = 1) or lie at an angle (L = 2)."
+      },
+      {
+        "text": "3, 2, 1 and 0",
+        "why": "The list stops at |l_1 − l_2| = |1 − 2| = 1. L = 0 would need two equal l values."
+      },
+      {
+        "text": "1 only",
+        "why": "That is only the opposing case. Adding gives 3, and the value in between, 2, is also allowed."
+      }
+    ],
+    "explanation": "Add the l values for the co-aligned case (1 + 2 = 3), subtract them for the opposing case (|1 − 2| = 1), and fill in the values between. So L = 3, 2 or 1."
+  },
+  {
+    "id": "pc8-term-symbol-s-electrons-ignored",
+    "type": "multiple-choice",
+    "prompt": "When working out the possible values of L for an atom, why can electrons in s orbitals be ignored?",
+    "choices": [
+      {
+        "text": "An s electron has no orbital angular momentum",
+        "correct": true
+      },
+      {
+        "text": "Electrons in s orbitals are always spin-paired",
+        "why": "A lone s electron, as in 2s^1, is not paired, yet it still adds nothing to L. It has l = 0, so it has no orbital angular momentum."
+      },
+      {
+        "text": "Electrons in s orbitals have no spin of their own",
+        "why": "Every electron has spin, so s electrons do count toward S. They are ignored only when finding L, because l = 0."
+      },
+      {
+        "text": "s orbitals lie too far from the nucleus to count",
+        "why": "Distance isn't the reason; 1s is the orbital closest to the nucleus. An s electron has l = 0 and so adds no orbital angular momentum."
+      }
+    ],
+    "explanation": "s orbitals have l = 0, so an s electron has no orbital angular momentum and adds nothing to L. It does still count toward the total spin S."
+  },
+  {
+    "id": "pc8-term-symbol-filled-subshells",
+    "type": "multiple-choice",
+    "prompt": "Why do completely filled subshells, such as 2p^6, add nothing to an atom's total orbital angular momentum?",
+    "choices": [
+      {
+        "text": "Each electron's vector is canceled by another electron's",
+        "correct": true
+      },
+      {
+        "text": "Electrons in filled subshells always have l = 0",
+        "why": "A 2p electron has l = 1 however full the subshell is. In a full subshell the electrons' angular momentum vectors cancel one another."
+      },
+      {
+        "text": "Filled subshells are too low in energy to affect anything",
+        "why": "Energy isn't the reason. In a closed shell every electron's orbital angular momentum is countered by another electron's, so the total is zero."
+      },
+      {
+        "text": "Their angular momentum is turned into spin instead",
+        "why": "Orbital angular momentum does not turn into spin. In a filled subshell the orbital vectors simply cancel."
+      }
+    ],
+    "explanation": "In a completely filled block of orbitals, the orbital angular momentum of each electron is countered by another electron. These closed shells add nothing, so only the open-shell (partly filled) subshells decide the term symbols."
+  },
+  {
+    "id": "pc8-term-symbol-silicon-electrons",
+    "type": "numeric",
+    "prompt": "An atom's electronic state depends only on the electrons in its unfilled subshells. Silicon has the configuration 1s^2 2s^2 2p^6 3s^2 3p^2. How many of its electrons must you consider to find its term symbols?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "1s^2, 2s^2, 2p^6 and 3s^2 are all filled subshells, so their electrons' angular momenta cancel. Only the 3p subshell is unfilled, so just its 2 electrons matter."
+  },
+  {
+    "id": "pc8-term-symbol-ml-meaning",
+    "type": "multiple-choice",
+    "prompt": "How does the total magnetic quantum number M_l differ from L?",
+    "choices": [
+      {
+        "text": "L gives the amount; M_l gives the direction (z-component)",
+        "correct": true
+      },
+      {
+        "text": "M_l gives the amount; L gives the direction",
+        "why": "It's the other way round. L tells you how much total orbital angular momentum there is, and M_l, its z-component, tells you which way it points."
+      },
+      {
+        "text": "M_l is the total spin, while L is the total orbital motion",
+        "why": "Spin is described by S and M_s. M_l is the total z-component of the electrons' orbital angular momentum."
+      },
+      {
+        "text": "M_l and L are two names for one quantity",
+        "why": "They differ. L measures the size of the total orbital angular momentum, and M_l its z-component, which can be negative."
+      }
+    ],
+    "explanation": "M_l is the sum of the z-components of the relevant electrons' orbital angular momenta. Where L tells you how much total angular momentum there is, M_l tells you which direction it points, so unlike L it can be negative."
+  },
+  {
+    "id": "pc8-term-symbol-ml-count-pp",
+    "type": "numeric",
+    "prompt": "For two electrons, M_l runs in steps of 1 from m_l1 + m_l2 down to −m_l1 − m_l2, using the largest m_l of each electron. How many different values of M_l are possible for two p electrons (largest m_l = +1 each)?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "The largest total is 1 + 1 = 2 and the most negative is −1 − 1 = −2. Counting 2, 1, 0, −1 and −2 gives 5 values; unlike L, M_l can be negative."
+  },
+  {
+    "id": "pc8-term-symbol-s-versus-ms",
+    "type": "multiple-choice",
+    "prompt": "What is the difference between the total spin quantum number S and the total spin magnetic quantum number M_s?",
+    "choices": [
+      {
+        "text": "S is the size of the total spin; M_s is its z-component",
+        "correct": true
+      },
+      {
+        "text": "S is the z-component; M_s is the size of the total spin",
+        "why": "It's the reverse. M_s is the total z-component of the spins, and S measures the whole resultant spin vector."
+      },
+      {
+        "text": "S is for orbital motion, while M_s is for spin",
+        "why": "Both are spin quantities. The orbital ones are L and M_l."
+      },
+      {
+        "text": "There is none; both count the unpaired electrons",
+        "why": "They differ: S measures the entire resultant spin vector and can't be negative, while M_s is its z-component and can be."
+      }
+    ],
+    "explanation": "M_s is the sum of the z-components m_s of the electrons' spins, so it can be negative. S measures the whole resultant spin vector, so it is never negative."
+  },
+  {
+    "id": "pc8-term-symbol-same-s",
+    "type": "multiple-choice",
+    "prompt": "Carbon (1s^2 2s^2 2p^2) and excited beryllium (1s^2 2s^1 2p^1) both give S = 1 or 0. Why are their S values the same?",
+    "choices": [
+      {
+        "text": "S depends only on how many open-shell electrons there are",
+        "correct": true
+      },
+      {
+        "text": "Both atoms have their open-shell electrons in p orbitals",
+        "why": "Beryllium's are in 2s and 2p, carbon's both in 2p. S does not depend on which orbitals the electrons are in."
+      },
+      {
+        "text": "Both atoms have the same total number of electrons",
+        "why": "Carbon has 6 electrons and beryllium 4. Closed shells add nothing; what matters is the 2 open-shell electrons in each."
+      },
+      {
+        "text": "Both atoms have the same possible values of L",
+        "why": "Their L values differ: 2, 1 or 0 for carbon, only 1 for beryllium. S is set by the number of open-shell electrons, not by L."
+      }
+    ],
+    "explanation": "S measures an inherent property of the electrons themselves, their spin. It depends only on how many open-shell electrons there are, not on where they are, so any two open-shell electrons give S = 1 or 0."
+  },
+  {
+    "id": "pc8-term-symbol-three-electron-s",
+    "type": "multiple-choice",
+    "prompt": "Nitrogen (1s^2 2s^2 2p^3) has three open-shell electrons. Which values can its total spin S take?",
+    "choices": [
+      {
+        "text": "3/2 and 1/2",
+        "correct": true
+      },
+      {
+        "text": "3/2, 1 and 1/2",
+        "why": "Three electrons give only half-integer S. The third electron adds or subtracts 1/2 from the two-electron values S = 1 or 0, so S = 1 is impossible."
+      },
+      {
+        "text": "1 and 0",
+        "why": "Those are the values for two electrons. A third electron adds or subtracts 1/2, so S becomes 3/2 or 1/2."
+      },
+      {
+        "text": "3/2 only",
+        "why": "3/2 is the largest value, with all three spins aligned. The third electron can also subtract 1/2, so S = 1/2 is possible too."
+      }
+    ],
+    "explanation": "Find S for one pair first (1 or 0), then let the third electron add or subtract 1/2: 1 + 1/2 = 3/2, 1 − 1/2 = 1/2 and 0 + 1/2 = 1/2. So S = 3/2 or 1/2."
+  },
+  {
+    "id": "pc8-term-symbol-singlet-triplet-names",
+    "type": "multiple-choice",
+    "prompt": "Why is a state with S = 1 called a triplet and one with S = 0 a singlet?",
+    "choices": [
+      {
+        "text": "Two spins can give S = 1 three ways, but S = 0 only one",
+        "correct": true
+      },
+      {
+        "text": "A triplet has three unpaired electrons, a singlet one",
+        "why": "A triplet has two unpaired electrons, with S = 1. The name counts the ways the pair's spins can combine: three for S = 1, one for S = 0."
+      },
+      {
+        "text": "A triplet state is three times as stable as a singlet",
+        "why": "The name has nothing to do with stability. It counts the ways two electron spins can combine: three for S = 1 and one for S = 0."
+      },
+      {
+        "text": "A triplet has M_s = 3 and a singlet M_s = 1",
+        "why": "For two electrons M_s can only be 1, 0 or −1. A triplet (S = 1) has all three M_s values; a singlet (S = 0) has one."
+      }
+    ],
+    "explanation": "There are three ways to combine a pair of electron spins to get S = 1 (M_s = 1, 0, −1) but only one way to get S = 0. In general the multiplicity is 2S + 1."
+  },
+  {
+    "id": "pc8-term-symbol-spin-arrows",
+    "type": "multiple-choice",
+    "prompt": "Why is the simple picture of a spin as an arrow pointing straight up or down misleading?",
+    "choices": [
+      {
+        "text": "With S_z fixed, S_x and S_y are completely unknown",
+        "correct": true
+      },
+      {
+        "text": "Electron spin has no z-component of its own at all",
+        "why": "Spin does have a z-component, m_s = +1/2 or −1/2. The trouble is that once S_z is known, S_x and S_y can't be."
+      },
+      {
+        "text": "An electron's spin keeps flipping between up and down",
+        "why": "Flipping isn't the flaw. The spin components share an uncertainty principle, so fixing S_z leaves S_x and S_y completely unknown."
+      },
+      {
+        "text": "The spin really points along x, never along z",
+        "why": "No axis is special. Choosing S_z as the known component makes S_x and S_y unknown, smearing the spin around the z-axis."
+      }
+    ],
+    "explanation": "The three spin components share a Heisenberg uncertainty principle: the more you know about one, the less you can know about the others. With S_z fixed, S_x and S_y are completely unknown, so the spin is smeared out over all directions around the z-axis."
+  },
+  {
+    "id": "pc8-term-symbol-two-pieces",
+    "type": "multiple-choice",
+    "prompt": "Apart from the J subscript, what two pieces of information does an atomic term symbol such as ^3D give?",
+    "choices": [
+      {
+        "text": "The total orbital angular momentum and the multiplicity",
+        "correct": true
+      },
+      {
+        "text": "The principal quantum number and the number of electrons",
+        "why": "A term symbol says nothing about n or the electron count. The letter gives L and the superscript gives the multiplicity 2S + 1."
+      },
+      {
+        "text": "The type of orbital filled and the number of unpaired electrons",
+        "why": "The letter is not an orbital type; it gives the total L. The superscript is the multiplicity 2S + 1."
+      },
+      {
+        "text": "The energy of the state and its ionization energy",
+        "why": "A term symbol doesn't give energies. Its letter codes the total orbital angular momentum L, and its superscript the multiplicity."
+      }
+    ],
+    "explanation": "The letter codes the total orbital angular momentum L (S, P, D, F for L = 0, 1, 2, 3), and the number at the upper left is the multiplicity 2S + 1. ^3D, for example, has L = 2 and multiplicity 3."
+  },
+  {
+    "id": "pc8-term-symbol-build-3f",
+    "type": "multiple-choice",
+    "prompt": "A state has total orbital angular momentum L = 3 and total spin S = 1. Which term symbol (without J) describes it?",
+    "choices": [
+      {
+        "text": "^3F",
+        "correct": true
+      },
+      {
+        "text": "^1F",
+        "why": "The superscript is the multiplicity 2S + 1 = 3, not S itself."
+      },
+      {
+        "text": "^2F",
+        "why": "The superscript is 2S + 1, not 2S. With S = 1 it is 3."
+      },
+      {
+        "text": "^3D",
+        "why": "D stands for L = 2. L = 3 is coded F."
+      }
+    ],
+    "explanation": "L = 3 is coded F, and the multiplicity 2S + 1 = 2(1) + 1 = 3 goes at the upper left, giving ^3F."
+  },
+  {
+    "id": "pc8-term-symbol-s-from-quartet",
+    "type": "numeric",
+    "prompt": "The superscript of a term symbol is the multiplicity 2S + 1. What is the total spin S for a ^4F term? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "2S + 1 = 4, so 2S = 3 and S = 3/2 = 1.5. A multiplicity of 4 is a quartet, as for three unpaired electrons with parallel spins."
+  },
+  {
+    "id": "pc8-term-symbol-g-letter",
+    "type": "numeric",
+    "prompt": "The term letters follow the code S, P, D, F for L = 0, 1, 2, 3, and Example 8.8.12 continues it with G. What is the value of L for a ^1G term?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The letters go S, P, D, F, G for L = 0, 1, 2, 3, 4, so G means L = 4. In zirconium's 4d^2 configuration this is the largest L, 2 + 2 = 4."
+  },
+  {
+    "id": "pc8-term-symbol-p-not-p-orbital",
+    "type": "multiple-choice",
+    "prompt": "Zirconium's 4d^2 configuration gives, among others, a ^3P term. What does the letter P tell you?",
+    "choices": [
+      {
+        "text": "The total orbital angular momentum is L = 1",
+        "correct": true
+      },
+      {
+        "text": "One of the two electrons sits in a p orbital",
+        "why": "Both electrons are in 4d orbitals. The term letter gives the total L, not the kind of orbital the electrons occupy."
+      },
+      {
+        "text": "The two open-shell electrons have parallel spins",
+        "why": "Spin information is in the superscript (here 3, a triplet). The letter P codes L = 1."
+      },
+      {
+        "text": "The atom must have an open p subshell",
+        "why": "A P term does not need an open p shell; this one comes from two d electrons. P just means L = 1."
+      }
+    ],
+    "explanation": "The letter codes the total L: P means L = 1. The notation looks like orbital labels, but a P term does not say the electrons are in p orbitals; here two d electrons combine to give L = 1."
+  },
+  {
+    "id": "pc8-term-symbol-closed-shell",
+    "type": "multiple-choice",
+    "prompt": "What is the term symbol of an atom with only closed shells, such as neon (1s^2 2s^2 2p^6)?",
+    "choices": [
+      {
+        "text": "^1S",
+        "correct": true
+      },
+      {
+        "text": "^1P",
+        "why": "The 2p^6 subshell is full, so its electrons' orbital angular momenta cancel: L = 0, coded S, not P."
+      },
+      {
+        "text": "^3P",
+        "why": "In closed shells all spins are paired (S = 0, a singlet) and the orbital momenta cancel (L = 0). That gives ^1S."
+      },
+      {
+        "text": "^2S",
+        "why": "A doublet needs S = 1/2, one unpaired electron. With every electron paired, S = 0 and 2S + 1 = 1."
+      }
+    ],
+    "explanation": "In closed shells every electron's orbital and spin angular momentum is canceled by another's, so L = 0 (letter S) and S = 0 (multiplicity 1). An atom with only closed shells is always ^1S."
+  },
+  {
+    "id": "pc8-term-symbol-boron-term",
+    "type": "multiple-choice",
+    "prompt": "Boron has the configuration 1s^2 2s^2 2p^1. Which term symbol (without J) describes it?",
+    "choices": [
+      {
+        "text": "^2P",
+        "correct": true
+      },
+      {
+        "text": "^1P",
+        "why": "With one unpaired electron, S = 1/2 and the multiplicity is 2S + 1 = 2, not 1."
+      },
+      {
+        "text": "^2S",
+        "why": "The 1s^2 and 2s^2 subshells are full and add nothing. The open-shell electron is a 2p electron, l = 1, so L = 1, coded P."
+      },
+      {
+        "text": "^3P",
+        "why": "A triplet needs S = 1, two unpaired electrons. Boron's single open-shell electron gives S = 1/2, a doublet."
+      }
+    ],
+    "explanation": "Only the single 2p electron is in an open shell, so L = l = 1 (P) and S = 1/2, giving multiplicity 2S + 1 = 2. The term is ^2P."
+  },
+  {
+    "id": "pc8-term-symbol-beryllium-terms",
+    "type": "multiple-choice",
+    "prompt": "Which terms arise from the excited 1s^2 2s^1 2p^1 configuration of beryllium?",
+    "choices": [
+      {
+        "text": "^1P and ^3P",
+        "correct": true
+      },
+      {
+        "text": "^3P only",
+        "why": "The two spins can also combine to S = 0, so a singlet ^1P exists alongside ^3P."
+      },
+      {
+        "text": "^1S and ^3S",
+        "why": "With l_1 = 0 and l_2 = 1, the only possible L is 1, coded P; L = 0 isn't possible."
+      },
+      {
+        "text": "^1D and ^3D",
+        "why": "L = 2 would need l_1 + l_2 = 2. Here l_1 + l_2 = 0 + 1 = 1, so L can only be 1, coded P."
+      }
+    ],
+    "explanation": "Since l_1 = 0 and l_2 = 1, the only possible L is 1 (P). The two spins give S = 1 or 0, so multiplicities 3 and 1: the terms are ^1P and ^3P."
+  },
+  {
+    "id": "pc8-term-symbol-microstate-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the term-symbol method, what is a microstate?",
+    "choices": [
+      {
+        "text": "One arrangement of the electrons' m_l and m_s values",
+        "correct": true
+      },
+      {
+        "text": "A single term together with one particular value of J",
+        "why": "That is a level, which holds 2J + 1 microstates. A microstate is a single arrangement of the electrons' m_l and m_s values."
+      },
+      {
+        "text": "The full set of terms that come from one configuration",
+        "why": "That is the list of term symbols. Many microstates make up each term; a microstate is one arrangement of m_l and m_s values."
+      },
+      {
+        "text": "A whole electron configuration, such as zirconium's 4d^2",
+        "why": "A configuration contains many microstates (45 for zirconium's 4d^2). Each microstate is one arrangement of the electrons' m_l and m_s values."
+      }
+    ],
+    "explanation": "A microstate is one way of assigning m_l and m_s values to the open-shell electrons. Zirconium's 4d^2 configuration has 45 of them, which are sorted into terms."
+  },
+  {
+    "id": "pc8-term-symbol-zr-ml4-paired",
+    "type": "multiple-choice",
+    "prompt": "In the microstate chart for zirconium's 4d^2 configuration, the one microstate with M_l = 4 has M_s = 0. Why can't M_l = 4 occur with M_s = +1?",
+    "choices": [
+      {
+        "text": "It needs both electrons in m_l = +2, so the spins must pair",
+        "correct": true
+      },
+      {
+        "text": "M_s = +1 is never possible for two electrons in d orbitals",
+        "why": "M_s = +1 does occur, for example in the M_l = 3 row. It is ruled out only where both electrons share an orbital."
+      },
+      {
+        "text": "Large values of M_l always force the spins to cancel",
+        "why": "The M_l = 3 row has microstates at M_s = +1 and −1. Only M_l = 4 is special, because it puts both electrons in the same orbital."
+      },
+      {
+        "text": "Each 4d orbital can hold only one electron",
+        "why": "Each orbital can hold two electrons, but only with opposite spins. That is why M_l = 4 (both in m_l = +2) gives only M_s = 0."
+      }
+    ],
+    "explanation": "M_l = 4 needs m_l = +2 for both electrons, so both are in the same orbital. Two electrons in one orbital must have opposite spins, so M_s = +1/2 − 1/2 = 0."
+  },
+  {
+    "id": "pc8-term-symbol-zr-1g",
+    "type": "multiple-choice",
+    "prompt": "Why does the M_l = 4, M_s = 0 microstate in zirconium's 4d^2 chart belong to a ^1G term?",
+    "choices": [
+      {
+        "text": "M_l = 4 needs L = 4, and M_s = 0 alone means a singlet",
+        "correct": true
+      },
+      {
+        "text": "A G term is always the lowest in energy of all terms",
+        "why": "The assignment comes from counting microstates, not from energy. A term reaching M_l = 4 has L = 4, and with no M_s = ±1 partner it is a singlet."
+      },
+      {
+        "text": "Any microstate with M_s = 0 must belong to a singlet",
+        "why": "Triplets also have M_s = 0 microstates. This one is a singlet because no M_s = +1 or −1 microstate has M_l = 4."
+      },
+      {
+        "text": "M_l = 4 means the atom has four unpaired electrons",
+        "why": "There are only two electrons, and here they are paired. M_l is the z-component of the orbital angular momentum; its largest value equals L."
+      }
+    ],
+    "explanation": "A term with orbital quantum number L contains M_l values from L down to −L, so the largest M_l, 4, means L = 4 (G). Since M_l = 4 appears only with M_s = 0, the term has S = 0 and multiplicity 1: ^1G."
+  },
+  {
+    "id": "pc8-term-symbol-zr-3f",
+    "type": "multiple-choice",
+    "prompt": "After the ^1G microstates are removed from zirconium's chart, the top row is M_l = 3, with one microstate at each of M_s = −1, 0 and +1. Which term do these belong to?",
+    "choices": [
+      {
+        "text": "^3F",
+        "correct": true
+      },
+      {
+        "text": "^1F",
+        "why": "A singlet has only M_s = 0. Microstates at M_s = −1, 0 and +1 mean S = 1, a triplet."
+      },
+      {
+        "text": "^3D",
+        "why": "The largest remaining M_l is 3, so L = 3, coded F. D would be L = 2."
+      },
+      {
+        "text": "^3G",
+        "why": "The G term is used up. The top row now has M_l = 3, so L = 3, coded F."
+      }
+    ],
+    "explanation": "The largest remaining M_l = 3 gives L = 3 (F), and three M_s values (−1, 0, +1) mean S = 1, a triplet. So these microstates start the ^3F term."
+  },
+  {
+    "id": "pc8-term-symbol-3d-microstates",
+    "type": "numeric",
+    "prompt": "A term claims a box of microstates with 2L + 1 values of M_l and 2S + 1 values of M_s, so it holds (2S + 1)(2L + 1) microstates. How many microstates does a ^3D term hold?",
+    "answer": 15,
+    "tolerance": 0,
+    "explanation": "For ^3D, 2S + 1 = 3 and L = 2, so 2L + 1 = 5. The term holds 3 × 5 = 15 microstates."
+  },
+  {
+    "id": "pc8-term-symbol-zr-last",
+    "type": "numeric",
+    "prompt": "Zirconium's 4d^2 configuration has 45 microstates. The ^1G, ^3F, ^1D and ^3P terms take 9, 21, 5 and 9 of them. How many microstates are left for the last term, ^1S?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "9 + 21 + 5 + 9 = 44, and 45 − 44 = 1. A ^1S term has 2L + 1 = 1 and 2S + 1 = 1, so it holds exactly one microstate."
+  },
+  {
+    "id": "pc8-term-symbol-zr-terms",
+    "type": "multiple-choice",
+    "prompt": "Which list gives all the terms of zirconium's [Kr]5s^2 4d^2 configuration?",
+    "choices": [
+      {
+        "text": "^1G, ^3F, ^1D, ^3P, ^1S",
+        "correct": true
+      },
+      {
+        "text": "^3G, ^1F, ^3D, ^1P, ^3S",
+        "why": "The singlets and triplets are swapped. The M_l = 4 microstate has only M_s = 0, so the G term must be a singlet."
+      },
+      {
+        "text": "^1G, ^1F, ^1D, ^1P, ^1S",
+        "why": "The M_l = 3 row has microstates at M_s = ±1, which only a triplet can hold. So some of the terms are triplets."
+      },
+      {
+        "text": "^3G, ^3F, ^3D, ^3P, ^3S",
+        "why": "A ^3G term would need M_l = 4 with M_s = +1, which would put two same-spin electrons in the m_l = +2 orbital. Some terms must be singlets."
+      }
+    ],
+    "explanation": "Working down the microstate chart, the top remaining row each time gives the next term: ^1G, then ^3F, ^1D, ^3P and finally ^1S. Singlets and triplets alternate."
+  },
+  {
+    "id": "pc8-term-symbol-shortcut",
+    "type": "multiple-choice",
+    "prompt": "According to the section's shortcut, which configuration has the same term symbols as p^4?",
+    "choices": [
+      {
+        "text": "p^2",
+        "correct": true
+      },
+      {
+        "text": "p^5",
+        "why": "p^5 matches p^1: one hole in place of one electron. p^4 has two holes, so it matches p^2."
+      },
+      {
+        "text": "p^1",
+        "why": "p^1 matches p^5. p^4 is two electrons short of a full p shell, so it matches p^2."
+      },
+      {
+        "text": "p^6",
+        "why": "A full p^6 shell gives only ^1S. p^4 matches p^2."
+      }
+    ],
+    "explanation": "A deep symmetry connects configurations: p^1 has the same term symbols as p^5, and p^2 the same as p^4. p^4 is two electrons short of a full shell, just as p^2 has two electrons."
+  },
+  {
+    "id": "pc8-term-symbol-rules-reliability",
+    "type": "multiple-choice",
+    "prompt": "The section gives simple rules for ordering the terms by energy. How reliable are they?",
+    "choices": [
+      {
+        "text": "Reliable for the ground state, erratic for other levels",
+        "correct": true
+      },
+      {
+        "text": "Exact for all levels of every atom, light or heavy",
+        "why": "They are not exact. The rules reliably pick out the ground state, but agree only erratically with experiment for the other levels."
+      },
+      {
+        "text": "Useful for excited levels, but not the ground state",
+        "why": "It's the other way round: the rules reliably predict the ground state, while their ordering of the other levels is erratic."
+      },
+      {
+        "text": "Reliable only for one-electron atoms such as hydrogen",
+        "why": "The rules are meant for many-electron atoms with several terms. They reliably predict the ground state, but not the order of the other levels."
+      }
+    ],
+    "explanation": "The rules (high multiplicity first, then high L, then J according to how full the shell is) reliably predict the ground state. They have only erratic agreement with experiment when ordering the other levels."
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "pc5-reduced-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the reduced mass μ_AB of a diatomic molecule AB with atomic masses m_A and m_B?",
+    "choices": [
+      {
+        "text": "(m_A m_B)/(m_A + m_B)",
+        "correct": true
+      },
+      {
+        "text": "m_A + m_B",
+        "why": "That is the total mass. The reduced mass is the product of the two masses divided by their sum."
+      },
+      {
+        "text": "(m_A + m_B)/(m_A m_B)",
+        "why": "This is upside down; it doesn't even have units of mass. The reduced mass is the product divided by the sum."
+      },
+      {
+        "text": "(m_A + m_B)/2",
+        "why": "That is the average mass. The reduced mass is the product of the two masses divided by their sum."
+      }
+    ],
+    "explanation": "μ_AB = (m_A m_B)/(m_A + m_B): the product of the two masses divided by their sum. It has units of mass, and it is smaller than either mass."
+  },
+  {
+    "id": "pc5-reduced-h2",
+    "type": "numeric",
+    "prompt": "Use μ = (m_A m_B)/(m_A + m_B). Treating each hydrogen atom in H2 as having a mass of 1.0 amu, what is the reduced mass of H2, in amu? (Give it as a decimal.)",
+    "answer": 0.5,
+    "unit": "amu",
+    "explanation": "μ = (1.0 × 1.0)/(1.0 + 1.0) = 1.0/2.0 = 0.50 amu. For two equal masses the reduced mass is half of one of them."
+  },
+  {
+    "id": "pc5-reduced-hf",
+    "type": "numeric",
+    "prompt": "Use μ = (m_A m_B)/(m_A + m_B). For hydrogen fluoride, ^1H^19F, take the atomic masses as 1.0 amu and 19.0 amu. What is the reduced mass, in amu? (Give it as a decimal.)",
+    "answer": 0.95,
+    "unit": "amu",
+    "explanation": "μ = (1.0 × 19.0)/(1.0 + 19.0) = 19.0/20.0 = 0.95 amu. When one atom is much heavier than the other, μ comes out just under the lighter atom's mass."
+  },
+  {
+    "id": "pc5-reduced-smaller-than-lighter",
+    "type": "multiple-choice",
+    "prompt": "How does the reduced mass μ of two bodies compare with their two masses?",
+    "choices": [
+      {
+        "text": "It is smaller than even the lighter mass",
+        "correct": true
+      },
+      {
+        "text": "It lies between the lighter and the heavier mass",
+        "why": "μ = (m_A m_B)/(m_A + m_B) is always below the lighter mass. For a proton and an electron it is just under the electron's mass."
+      },
+      {
+        "text": "It is larger than the heavier mass",
+        "why": "That would be true of the total mass, m_A + m_B. The reduced mass is smaller than either mass."
+      },
+      {
+        "text": "It equals the average of the two masses",
+        "why": "The average is (m_A + m_B)/2. The reduced mass is the product divided by the sum, which is smaller than either mass."
+      }
+    ],
+    "explanation": "μ = (m_A m_B)/(m_A + m_B) is always less than the lighter mass, and close to it when the other is much heavier. In Example 5.2.1 the proton–electron μ is 9.105 × 10^−31 kg, just under the electron's 9.110 × 10^−31 kg."
+  },
+  {
+    "id": "pc5-reduced-symmetric",
+    "type": "multiple-choice",
+    "prompt": "In μ_AB = (m_A m_B)/(m_A + m_B), does it matter which atom you call A and which you call B?",
+    "choices": [
+      {
+        "text": "No; swapping A and B gives the same μ",
+        "correct": true
+      },
+      {
+        "text": "Yes; A must be the heavier atom",
+        "why": "The formula is symmetric: m_A m_B = m_B m_A and m_A + m_B = m_B + m_A, so the labels don't matter."
+      },
+      {
+        "text": "Yes; A must be the lighter atom",
+        "why": "Swapping the labels changes neither the product nor the sum of the masses, so μ is the same either way."
+      },
+      {
+        "text": "Only when the two masses are equal",
+        "why": "With equal masses the labels obviously don't matter, but the formula is symmetric for any two masses."
+      }
+    ],
+    "explanation": "Both the product m_A m_B and the sum m_A + m_B stay the same when A and B are swapped, so μ_AB = μ_BA. Only the two masses matter, not the order you list them in."
+  },
+  {
+    "id": "pc5-reduced-mu-units",
+    "type": "multiple-choice",
+    "prompt": "If m_A and m_B are both in amu, in what unit does μ = (m_A m_B)/(m_A + m_B) come out?",
+    "choices": [
+      {
+        "text": "amu",
+        "correct": true
+      },
+      {
+        "text": "amu^2",
+        "why": "The amu^2 in the numerator is divided by the amu in the denominator, leaving amu."
+      },
+      {
+        "text": "1/amu",
+        "why": "That would be the unit of the upside-down expression, (m_A + m_B)/(m_A m_B). μ is a mass."
+      },
+      {
+        "text": "No unit; μ is a pure number",
+        "why": "μ is a mass, not a ratio of masses: amu^2 divided by amu leaves amu."
+      }
+    ],
+    "explanation": "(amu × amu)/amu = amu, so the reduced mass has the same unit as the masses. That is why Example 5.2.2 first finds μ in amu, 0.9796 amu for ^1H^35Cl, before converting it to kg."
+  },
+  {
+    "id": "pc5-reduced-two-body-as-one",
+    "type": "multiple-choice",
+    "prompt": "What does the reduced mass let you do with a two-body system such as a diatomic molecule?",
+    "choices": [
+      {
+        "text": "Treat it as a single body",
+        "correct": true
+      },
+      {
+        "text": "Treat each atom separately, ignoring the bond",
+        "why": "It's the opposite: the reduced mass combines the two atoms, which move under their mutual interaction, into one body."
+      },
+      {
+        "text": "Find the total mass of the molecule",
+        "why": "The total mass is m_A + m_B. The reduced mass, (m_A m_B)/(m_A + m_B), describes the pair as one body for its internal motion."
+      },
+      {
+        "text": "Find the mass of the heavier atom",
+        "why": "The reduced mass is smaller than either atom's mass, so it isn't the heavier one's. It stands for the two-body system as one body."
+      }
+    ],
+    "explanation": "Reduced mass is the representation of a two-body system as a single-body one. Instead of following two atoms, you follow one particle of mass μ, which greatly simplifies many calculations."
+  },
+  {
+    "id": "pc5-reduced-mutual-interaction",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when can the motion of two bodies be simplified using a reduced mass?",
+    "choices": [
+      {
+        "text": "When they move only under their mutual interaction",
+        "correct": true
+      },
+      {
+        "text": "Only when the two bodies have equal masses",
+        "why": "The masses can be very different, as for the proton and electron in Example 5.2.1. What matters is that only the two bodies act on each other."
+      },
+      {
+        "text": "Only when one body is fixed and cannot move",
+        "why": "Both bodies can move; the reduced mass is what accounts for that. The condition is that they move only under their mutual interaction."
+      },
+      {
+        "text": "Only when the bodies are far apart",
+        "why": "Distance doesn't matter. The reduced mass applies when the two bodies interact only with each other, like the bonded atoms of a diatomic molecule."
+      }
+    ],
+    "explanation": "When two bodies move only under their mutual interaction, their motion relative to each other can be treated as that of a single body with the reduced mass. The bonded atoms of a diatomic molecule are an example."
+  },
+  {
+    "id": "pc5-reduced-center-of-mass",
+    "type": "multiple-choice",
+    "prompt": "Viewing a diatomic molecule as a single particle of reduced mass μ separates its vibration and rotation from which other motion?",
+    "choices": [
+      {
+        "text": "The motion of its center of mass",
+        "correct": true
+      },
+      {
+        "text": "The motion of its electrons",
+        "why": "Electrons are not the issue here. The single-particle view separates the internal motions, vibration and rotation, from the displacement of the center of mass."
+      },
+      {
+        "text": "The stretching of its bond",
+        "why": "Stretching of the bond is the vibration itself, one of the internal motions that the reduced particle describes."
+      },
+      {
+        "text": "The turning of its bond axis",
+        "why": "Turning of the bond axis is rotation, which the reduced particle describes. It is the center-of-mass motion that separates off."
+      }
+    ],
+    "explanation": "Viewing the two-body system as a single particle separates its internal motions, vibration and rotation, from the displacement of the center of mass, which is translation. This greatly simplifies many calculations."
+  },
+  {
+    "id": "pc5-reduced-rigid-rotor",
+    "type": "multiple-choice",
+    "prompt": "In the rigid rotor model of a rotating diatomic molecule, where does the reduced mass appear?",
+    "choices": [
+      {
+        "text": "In its moment of inertia",
+        "correct": true
+      },
+      {
+        "text": "In the bond's force constant",
+        "why": "The force constant belongs to vibration, and it depends on the bond, not the masses. For rotation, μ enters the moment of inertia."
+      },
+      {
+        "text": "In the potential energy (1/2)kx^2",
+        "why": "(1/2)kx^2 is the vibrational potential, and it has no mass in it. In the rigid rotor, μ enters the moment of inertia."
+      },
+      {
+        "text": "In the speed of the center of mass",
+        "why": "Center-of-mass motion is translation, which the reduced mass is used to separate off. μ enters rotation through the moment of inertia."
+      }
+    ],
+    "explanation": "The section lists uses of the reduced mass: the harmonic oscillator (vibrational displacement following Hooke's law), the rigid rotor (the moment of inertia about the center of mass of a two-body system) and spectroscopy."
+  },
+  {
+    "id": "pc5-reduced-quantum-needed",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which of these needs the quantum harmonic oscillator rather than the classical one?",
+    "choices": [
+      {
+        "text": "A vibrating diatomic molecule",
+        "correct": true
+      },
+      {
+        "text": "A mass on a laboratory spring",
+        "why": "A lab spring is described well by classical mechanics. The section says the classical model fails for diatomic molecules, where quantum effects are important."
+      },
+      {
+        "text": "A pendulum swinging back and forth",
+        "why": "A frictionless pendulum is one of the chapter's pictures of a classical oscillator. It is molecular vibrations where quantum effects matter."
+      },
+      {
+        "text": "A child on a playground swing",
+        "why": "A swing is an everyday, classical oscillator. Quantum effects become important for the vibrations of molecules."
+      }
+    ],
+    "explanation": "The classical oscillator is not general: it cannot describe the vibrations of diatomic molecules, where quantum effects are important. These need the Schrödinger equation, with the reduced mass μ and the potential (1/2)kx^2."
+  },
+  {
+    "id": "pc5-reduced-kinetic-term",
+    "type": "multiple-choice",
+    "prompt": "In the quantum oscillator's Hamiltonian, Ĥ = (−ħ^2)/(2μ) · d^2/dx^2 + (1/2)kx^2, what does the first term, the one containing μ, represent?",
+    "choices": [
+      {
+        "text": "The kinetic energy",
+        "correct": true
+      },
+      {
+        "text": "The potential energy",
+        "why": "The potential energy is the second term, (1/2)kx^2, the same quadratic potential as in the classical oscillator."
+      },
+      {
+        "text": "The total energy",
+        "why": "The total energy is the eigenvalue E in Ĥψ = Eψ. Ĥ is the sum of a kinetic term, with the second derivative, and the potential (1/2)kx^2."
+      },
+      {
+        "text": "The restoring force",
+        "why": "The force, −kx, is not a term in Ĥ. The term with the second derivative and μ is the kinetic energy."
+      }
+    ],
+    "explanation": "The first term, with the second derivative and the reduced mass μ, is the kinetic energy operator. The second term, (1/2)kx^2, is the harmonic potential energy. Their sum is the Hamiltonian."
+  },
+  {
+    "id": "pc5-reduced-harder-than-box",
+    "type": "multiple-choice",
+    "prompt": "The section says the quantum harmonic oscillator is appreciably harder to solve than the particle in a box. What makes its Schrödinger equation harder?",
+    "choices": [
+      {
+        "text": "Its potential energy, (1/2)kx^2, changes with x",
+        "correct": true
+      },
+      {
+        "text": "It has no kinetic energy term",
+        "why": "It does have one, (−ħ^2)/(2μ) · d^2/dx^2, just like the box. The difference is the potential, which is zero inside the box."
+      },
+      {
+        "text": "It uses the reduced mass μ instead of m",
+        "why": "μ is just a constant mass, so using it doesn't make the equation harder. The potential (1/2)kx^2, which varies with x, does."
+      },
+      {
+        "text": "Its energies are not quantized",
+        "why": "Its energies are quantized, as in most quantum models. What makes it harder is the potential, which varies with x."
+      }
+    ],
+    "explanation": "Inside the box V = 0, so only the kinetic energy term is left. The oscillator's Hamiltonian adds the potential (1/2)kx^2, which changes with position, and that makes the equation appreciably harder to solve. The section quotes the resulting energies instead of deriving them."
+  },
+  {
+    "id": "pc5-reduced-nu-vs-v",
+    "type": "multiple-choice",
+    "prompt": "In E_v = hν(v + 1/2), what is the difference between ν and v?",
+    "choices": [
+      {
+        "text": "ν is the vibrational frequency; v is the quantum number",
+        "correct": true
+      },
+      {
+        "text": "ν is the quantum number; v is the vibrational frequency",
+        "why": "That is swapped. The Greek nu, ν, is the frequency, and the Latin v is the quantum number."
+      },
+      {
+        "text": "They are the same symbol, just written differently",
+        "why": "The section warns that they are different: ν (Greek nu) is the natural frequency and v (Latin vee) is the quantum number."
+      },
+      {
+        "text": "ν is a velocity; v is the frequency",
+        "why": "Neither is a velocity here. ν is the frequency and v is the vibrational quantum number."
+      }
+    ],
+    "explanation": "The section warns you to distinguish ν, the Greek nu for the natural vibrational frequency, from v, the Latin letter for the oscillator's quantum number."
+  },
+  {
+    "id": "pc5-reduced-frequency-value",
+    "type": "numeric",
+    "prompt": "Use ν = (1/(2π))√(k/μ). A bond has force constant k = 500 N/m and reduced mass μ = 2.0 × 10^−27 kg. What is its vibrational frequency ν, in Hz? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 79580000000000.0,
+    "unit": "Hz",
+    "explanation": "k/μ = (500 N/m)/(2.0 × 10^−27 kg) = 2.5 × 10^29 s^−2, whose square root is 5.0 × 10^14 s^−1. Dividing by 2π gives ν = 7.96 × 10^13 Hz."
+  },
+  {
+    "id": "pc5-reduced-mass-units",
+    "type": "multiple-choice",
+    "prompt": "Example 5.2.2 converts the reduced mass from amu to kg before using ν = (1/(2π))√(k/μ). Why?",
+    "choices": [
+      {
+        "text": "k is in N/m, an SI unit, so μ must be in kg",
+        "correct": true
+      },
+      {
+        "text": "The reduced mass formula only works in kg",
+        "why": "μ = (m_A m_B)/(m_A + m_B) works in any mass unit; masses in amu give μ in amu. The kg are needed to match k in N/m."
+      },
+      {
+        "text": "Masses in amu are only averages",
+        "why": "The isotopic masses in amu are exact for each isotope. The conversion is about units: N/m and kg are both SI units."
+      },
+      {
+        "text": "Converting to kg makes μ larger",
+        "why": "It is the same mass in a different unit. kg are needed so that k/μ comes out in s^−2."
+      }
+    ],
+    "explanation": "With k in N/m = kg/s^2 and μ in kg, k/μ is in s^−2, so ν = (1/(2π))√(k/μ) comes out in s^−1. That is why Example 5.2.2 first turns 0.9796 amu into 1.627 × 10^−27 kg."
+  },
+  {
+    "id": "pc5-reduced-amu-to-kg",
+    "type": "numeric",
+    "prompt": "Using 1 amu = 1.661 × 10^−27 kg, what is a reduced mass of 6.00 amu, expressed in kg? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 9.966e-27,
+    "unit": "kg",
+    "explanation": "6.00 amu × (1.661 × 10^−27 kg/amu) = 9.97 × 10^−27 kg. Example 5.2.2 does the same step, turning 0.9796 amu into 1.627 × 10^−27 kg, so that μ can be used with k in N/m."
+  },
+  {
+    "id": "pc5-reduced-why-isotope-matters",
+    "type": "multiple-choice",
+    "prompt": "Why does replacing an atom in a molecule with another isotope change the molecule's vibrational frequency?",
+    "choices": [
+      {
+        "text": "It changes the atomic mass, and so the reduced mass",
+        "correct": true
+      },
+      {
+        "text": "It changes the number of electrons in the bond",
+        "why": "Isotopes of an element have the same number of electrons; they differ only in mass. The change in mass changes μ."
+      },
+      {
+        "text": "It makes the force constant much larger",
+        "why": "The force constant is only weakly sensitive to the isotopes. It is the reduced mass that changes."
+      },
+      {
+        "text": "It changes the quantum number v of the vibration",
+        "why": "v labels the energy levels; an isotope doesn't change it. ν changes because μ = (m_A m_B)/(m_A + m_B) changes."
+      }
+    ],
+    "explanation": "ν = (1/(2π))√(k/μ) depends on the atomic masses through the reduced mass. Substituting an isotope changes a mass, so it changes μ and therefore ν. This is the isotope effect."
+  },
+  {
+    "id": "pc5-reduced-same-k",
+    "type": "multiple-choice",
+    "prompt": "Example 5.2.2 uses the same force constant, 478 N/m, for both ^1H^35Cl and ^1H^37Cl. Why is that reasonable?",
+    "choices": [
+      {
+        "text": "k depends only weakly on which isotopes are present",
+        "correct": true
+      },
+      {
+        "text": "The two chlorine isotopes have the same mass",
+        "why": "They don't: ^37Cl is about 2 amu heavier than ^35Cl. It is k, not the mass, that barely changes."
+      },
+      {
+        "text": "k is a universal constant, the same for every bond",
+        "why": "k depends on the bond: a double bond has a larger k than a single bond. It is the choice of isotope that barely affects it."
+      },
+      {
+        "text": "k is proportional to the reduced mass",
+        "why": "k does not depend on the masses. That is why changing an isotope changes μ but leaves k almost unchanged."
+      }
+    ],
+    "explanation": "The force constant is only weakly sensitive to the isotopes in a molecule, and it is typically assumed to be isotope independent. Isotopes have the same electrons, which hold the nuclei together, so only the masses, and therefore μ, change."
+  },
+  {
+    "id": "pc5-reduced-isotope-mass",
+    "type": "multiple-choice",
+    "prompt": "To find the reduced mass of ^1H^35Cl, which mass should you use for the chlorine atom?",
+    "choices": [
+      {
+        "text": "34.969 amu, the mass of the ^35Cl isotope",
+        "correct": true
+      },
+      {
+        "text": "35.45 amu, the atomic weight from the periodic table",
+        "why": "35.45 amu is an average over the natural mix of ^35Cl and ^37Cl. The molecule contains one specific isotope, ^35Cl."
+      },
+      {
+        "text": "35.000 amu, from the label ^35Cl",
+        "why": "The 35 is the isotope's label, not its exact mass. Table 5.2.1 gives the mass of ^35Cl as 34.968852 amu."
+      },
+      {
+        "text": "36.966 amu, the mass of the ^37Cl isotope",
+        "why": "That is the heavier isotope, found in ^1H^37Cl. For ^1H^35Cl, use the ^35Cl mass, 34.969 amu."
+      }
+    ],
+    "explanation": "The periodic table gives atomic weights, which are averages over the isotopes normally found. Vibrational frequencies depend on the actual isotopes in the molecule, so use the isotopic mass: 34.969 amu for ^35Cl (Table 5.2.1)."
+  },
+  {
+    "id": "pc5-reduced-chlorine-abundance",
+    "type": "multiple-choice",
+    "prompt": "According to Table 5.2.1, roughly what fraction of chlorine atoms are ^35Cl?",
+    "choices": [
+      {
+        "text": "About three-quarters",
+        "correct": true
+      },
+      {
+        "text": "About half",
+        "why": "That is closer to bromine, whose two isotopes are near 50:50. Chlorine is 75.77% ^35Cl."
+      },
+      {
+        "text": "Nearly all of them",
+        "why": "That is true of hydrogen, which is 99.985% ^1H. Chlorine is 24.23% ^37Cl as well."
+      },
+      {
+        "text": "About one-quarter",
+        "why": "One-quarter is the share of ^37Cl, 24.23%. ^35Cl makes up 75.77%."
+      }
+    ],
+    "explanation": "Table 5.2.1 lists ^35Cl at 75.77% and ^37Cl at 24.23%. So ordinary HCl contains both ^1H^35Cl and ^1H^37Cl, about 3 to 1, and each has its own reduced mass."
+  },
+  {
+    "id": "pc5-reduced-chlorine-average",
+    "type": "numeric",
+    "prompt": "The periodic table's atomic weight of chlorine is an average over its isotopes. Using Table 5.2.1, atomic weight = (0.7577)(34.969 amu) + (0.2423)(36.966 amu). What is it, in amu?",
+    "answer": 35.45,
+    "unit": "amu",
+    "explanation": "(0.7577)(34.969 amu) + (0.2423)(36.966 amu) = 26.496 amu + 8.957 amu = 35.45 amu, the value in the periodic table. No single chlorine atom has this mass, which is why the section warns against using it for a reduced mass."
+  },
+  {
+    "id": "pc5-reduced-hcl-small-change",
+    "type": "multiple-choice",
+    "prompt": "^37Cl is about 6% heavier than ^35Cl, yet in Example 5.2.2 the reduced mass of ^1H^37Cl is only about 0.15% larger than that of ^1H^35Cl. Why?",
+    "choices": [
+      {
+        "text": "μ is close to the mass of the light H atom",
+        "correct": true
+      },
+      {
+        "text": "The two chlorine isotopes have nearly equal masses",
+        "why": "A 6% difference in the chlorine mass is not tiny. It hardly matters because μ is dominated by the much lighter H atom."
+      },
+      {
+        "text": "Only the heavier atom contributes to μ",
+        "why": "It's nearly the opposite: when one atom is much heavier, μ is close to the lighter atom's mass, about 1 amu here."
+      },
+      {
+        "text": "The force constant cancels out the change",
+        "why": "k does not enter the reduced mass at all; μ depends only on the two masses."
+      }
+    ],
+    "explanation": "μ = (m_H m_Cl)/(m_H + m_Cl) is close to m_H when m_Cl is much larger. Both reduced masses are about 0.98 amu, close to the 1.008 amu of ^1H, so changing the chlorine isotope changes μ very little: 0.9796 amu versus 0.9810 amu."
+  },
+  {
+    "id": "pc5-reduced-which-faster",
+    "type": "multiple-choice",
+    "prompt": "In Example 5.2.2, which molecule has the higher vibrational frequency, and why?",
+    "choices": [
+      {
+        "text": "^1H^35Cl, because its reduced mass is smaller",
+        "correct": true
+      },
+      {
+        "text": "^1H^37Cl, because its reduced mass is larger",
+        "why": "A larger μ gives a lower frequency, since μ is in the denominator of √(k/μ)."
+      },
+      {
+        "text": "^1H^37Cl, because its force constant is larger",
+        "why": "The example uses the same k, 478 N/m, for both molecules. Only μ differs."
+      },
+      {
+        "text": "Neither; their frequencies are exactly equal",
+        "why": "They are very close, but not equal: 8.628 × 10^13 s^−1 for ^1H^35Cl and 8.621 × 10^13 s^−1 for ^1H^37Cl."
+      }
+    ],
+    "explanation": "With the same k, the molecule with the smaller reduced mass vibrates faster. ^1H^35Cl has μ = 0.9796 amu and ^1H^37Cl has 0.9810 amu, so ^1H^35Cl has the slightly higher frequency."
+  },
+  {
+    "id": "pc5-reduced-ir-resolves",
+    "type": "multiple-choice",
+    "prompt": "Example 5.2.2 finds vibrational frequencies of 8.628 × 10^13 s^−1 for ^1H^35Cl and 8.621 × 10^13 s^−1 for ^1H^37Cl. What does the section say about telling them apart?",
+    "choices": [
+      {
+        "text": "High-resolution IR spectroscopy can easily distinguish them",
+        "correct": true
+      },
+      {
+        "text": "They are too close for any spectrum to separate",
+        "why": "The difference is small, but the section says high-resolution IR spectroscopy can easily tell the two vibrations apart."
+      },
+      {
+        "text": "Only the ^1H^37Cl vibration shows up in a spectrum",
+        "why": "Both molecules are present in ordinary HCl, and both vibrate. High-resolution IR spectroscopy sees each of them."
+      },
+      {
+        "text": "They differ by a factor of two, so they are easy to tell apart",
+        "why": "The frequencies differ by less than 0.1%, not by a factor of two. Even so, high-resolution IR spectroscopy can resolve them."
+      }
+    ],
+    "explanation": "The two frequencies differ only slightly, as the reduced masses do. Even so, high-resolution IR spectroscopy can easily distinguish the vibrations of the two molecules."
+  },
+  {
+    "id": "pc5-reduced-hbr-lines",
+    "type": "numeric",
+    "prompt": "Table 5.2.1 shows that hydrogen is almost all ^1H, while bromine is a near 50:50 mix of ^79Br and ^81Br. Each isotopic form of HBr has its own reduced mass. Ignoring the rare ^2H, how many different HBr vibrational frequencies would a high-resolution IR spectrum show?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "There are two isotopic forms, ^1H^79Br and ^1H^81Br, in nearly equal amounts. Each has its own reduced mass, so each has its own vibrational frequency: 2 in all, very close together, just as for ^1H^35Cl and ^1H^37Cl."
+  },
+  {
+    "id": "pc5-reduced-deuterium",
+    "type": "multiple-choice",
+    "prompt": "Which change to a ^1H^35Cl molecule would change its vibrational frequency the most?",
+    "choices": [
+      {
+        "text": "Replacing ^1H with ^2H",
+        "correct": true
+      },
+      {
+        "text": "Replacing ^35Cl with ^37Cl",
+        "why": "This barely changes μ, by about 0.15%, because μ is dominated by the light H atom. Doubling the H mass changes μ far more."
+      },
+      {
+        "text": "Making the molecule move faster through space",
+        "why": "That is translation, the motion of the center of mass, which doesn't affect the vibration. The vibrational frequency depends on k and μ."
+      },
+      {
+        "text": "Giving the vibration more energy",
+        "why": "More energy gives a larger amplitude, but the same frequency; ν depends only on k and μ."
+      }
+    ],
+    "explanation": "Since μ is close to the mass of the H atom, replacing ^1H (1.008 amu) with ^2H (2.014 amu) nearly doubles μ and lowers ν noticeably. As the section says, the isotope effect is not always small."
+  },
+  {
+    "id": "pc5-reduced-d2-h2",
+    "type": "numeric",
+    "prompt": "The vibrational frequency is ν = (1/(2π))√(k/μ). H2 has μ = 0.50 amu and D_2 has μ = 1.0 amu, and the force constant is the same for both. What is ν(D_2)/ν(H2)? (Give it as a decimal.)",
+    "answer": 0.7071,
+    "tolerance": 0.01,
+    "explanation": "ν is proportional to 1/√μ, so ν(D_2)/ν(H2) = √(0.50/1.0) = √0.50 = 0.707. Doubling the reduced mass lowers the frequency by a factor of √2."
+  }
+]

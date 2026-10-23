@@ -1,10 +1,3 @@
-// Builds src/lib/figureImages.generated.ts from figures.json, the list of
-// figure images uploaded to R2 by upload-figures.mjs, so the app knows which
-// figures have an image and where to load it from. The images themselves
-// aren't in the repo; see figure-files.mjs for how their files are named.
-//
-// This runs before `npm run dev` and `npm run build`, and after
-// `npm run upload:figures`; run it yourself with `npm run gen:figures`.
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { KEY, knownBooks, readManifest } from "./figure-files.mjs";
@@ -22,13 +15,16 @@ for (const [book, list] of Object.entries(images)) {
     continue;
   }
   entries[book] = Object.entries(list).map(([key, { file, width, height }]) => {
-    if (!KEY.test(key)) problems.push(`${book}/${key}: not a figure image name`);
+    if (!KEY.test(key))
+      problems.push(`${book}/${key}: not a figure image name`);
     return `    ${JSON.stringify(key)}: { src: ${JSON.stringify(`${baseUrl}/${file}`)}, width: ${width}, height: ${height} },`;
   });
 }
 
 if (problems.length > 0) {
-  console.error(`gen:figures: ${problems.length} problem(s) in figures.json:\n  ${problems.join("\n  ")}`);
+  console.error(
+    `gen:figures: ${problems.length} problem(s) in figures.json:\n  ${problems.join("\n  ")}`,
+  );
   process.exit(1);
 }
 
@@ -39,7 +35,10 @@ import type { BookKey, FigureImage } from "./types";
 
 export const FIGURE_IMAGES: Partial<Record<BookKey, Record<string, FigureImage>>> = {
 ${Object.entries(entries)
-  .map(([book, lines]) => `  ${JSON.stringify(book)}: {\n${lines.join("\n")}\n  },`)
+  .map(
+    ([book, lines]) =>
+      `  ${JSON.stringify(book)}: {\n${lines.join("\n")}\n  },`,
+  )
   .join("\n")}
 };
 `;
@@ -53,4 +52,5 @@ try {
 }
 if (current.replace(/\r\n/g, "\n") !== output) writeFileSync(OUT, output);
 
-for (const [book, lines] of Object.entries(entries)) console.log(`${book}: ${lines.length} images`);
+for (const [book, lines] of Object.entries(entries))
+  console.log(`${book}: ${lines.length} images`);

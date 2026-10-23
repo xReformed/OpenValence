@@ -1,0 +1,607 @@
+[
+  {
+    "id": "pc9-stability-expectation",
+    "type": "multiple-choice",
+    "prompt": "How is the energy E_(±) of each H_2^+ molecular orbital calculated in this section?",
+    "choices": [
+      {
+        "text": "As the expectation value ⟨ψ_(±)|Ĥ_elec|ψ_(±)⟩",
+        "correct": true
+      },
+      {
+        "text": "As the normalization integral ⟨ψ_(±)|ψ_(±)⟩",
+        "why": "That integral equals 1 for a normalized orbital and has no Hamiltonian in it. The energy is ⟨ψ_(±)|Ĥ_elec|ψ_(±)⟩."
+      },
+      {
+        "text": "As the square of the coefficient, |C_(±)|^2",
+        "why": "A coefficient is not an energy. The energy is the expectation value of the electronic Hamiltonian."
+      },
+      {
+        "text": "As twice the hydrogen-atom energy, 2E_H",
+        "why": "That ignores the proton repulsion and the electron's attraction to both protons. The energy is ⟨ψ_(±)|Ĥ_elec|ψ_(±)⟩."
+      }
+    ],
+    "explanation": "The energy of each orbital is the expectation value E_(±) = ⟨ψ_(±)|Ĥ_elec|ψ_(±)⟩. Expanding ψ_(±) into 1s_A and 1s_B splits it into the integrals H_AA, H_BB, H_AB and H_BA."
+  },
+  {
+    "id": "pc9-stability-haa-hbb",
+    "type": "multiple-choice",
+    "prompt": "Why is H_AA = ⟨1s_A|Ĥ_elec|1s_A⟩ equal to H_BB = ⟨1s_B|Ĥ_elec|1s_B⟩ for H_2^+?",
+    "choices": [
+      {
+        "text": "Protons A and B appear equivalently in Ĥ_elec",
+        "correct": true
+      },
+      {
+        "text": "The 1s orbitals on A and B are orthogonal",
+        "why": "They aren't orthogonal at bonding distances, and orthogonality concerns ⟨1s_A|1s_B⟩ anyway. H_AA = H_BB because A and B play identical roles."
+      },
+      {
+        "text": "The 1s wavefunctions are real functions",
+        "why": "Real functions are why H_AB = H_BA. H_AA = H_BB comes from the equivalence of protons A and B in the Hamiltonian."
+      },
+      {
+        "text": "The overlap integral S is equal to 1",
+        "why": "S is 1 only at R = 0. H_AA = H_BB holds at every R because A and B are equivalent in the Hamiltonian."
+      }
+    ],
+    "explanation": "A and B appear equivalently in the Hamiltonian for H_2^+, so any integral involving 1s_A equals the matching integral involving 1s_B. Together with H_AB = H_BA, this simplifies E_(±)."
+  },
+  {
+    "id": "pc9-stability-factor-two",
+    "type": "multiple-choice",
+    "prompt": "How does the factor 2 in 1/(2(1 ± S)) disappear when E_(±) is simplified to (H_AA ± H_AB)/(1 ± S)?",
+    "choices": [
+      {
+        "text": "The bracket is 2(H_AA ± H_AB), and the 2s cancel",
+        "correct": true
+      },
+      {
+        "text": "The overlap S is set equal to 1/2 at this step",
+        "why": "S is not fixed; it depends on R. With H_AA = H_BB and H_AB = H_BA, the bracket is 2H_AA ± 2H_AB, and the 2 cancels."
+      },
+      {
+        "text": "The 2 is simply dropped as an approximation",
+        "why": "Nothing is approximated at this step. H_AA + H_BB ± H_AB ± H_BA = 2(H_AA ± H_AB), so the 2 cancels exactly."
+      },
+      {
+        "text": "The orbitals are normalized for a second time",
+        "why": "No new normalization is done. The 2 cancels because the four integrals pair up into 2(H_AA ± H_AB)."
+      }
+    ],
+    "explanation": "With H_AA = H_BB and H_AB = H_BA, the bracket H_AA + H_BB ± H_AB ± H_BA becomes 2(H_AA ± H_AB). Dividing by 2(1 ± S) gives E_(±) = (H_AA ± H_AB)/(1 ± S)."
+  },
+  {
+    "id": "pc9-stability-e-plus",
+    "type": "numeric",
+    "prompt": "For H_2^+, E_(±) = (H_AA ± H_AB)/(1 ± S). Suppose that at some separation H_AA = −0.50 hartree, H_AB = −0.40 hartree and S = 0.50. What is the bonding energy E_(+), in hartree?",
+    "answer": -0.6,
+    "unit": "hartree",
+    "tolerance": 0.01,
+    "explanation": "E_(+) = (H_AA + H_AB)/(1 + S) = (−0.50 − 0.40)/1.50 = −0.90/1.50 = −0.60 hartree."
+  },
+  {
+    "id": "pc9-stability-haa-first",
+    "type": "multiple-choice",
+    "prompt": "In H_AA, the first integral has the hydrogen-atom Hamiltonian for an electron around proton A acting on 1s_A. What is its value?",
+    "choices": [
+      {
+        "text": "E_H, the energy of a hydrogen atom",
+        "correct": true
+      },
+      {
+        "text": "J, the Coulomb integral",
+        "why": "J is the last term of H_AA, the one with 1/r_B. The first term is just the hydrogen-atom energy E_H."
+      },
+      {
+        "text": "Zero, since 1s_A is orthogonal to itself",
+        "why": "A normalized function is never orthogonal to itself. 1s_A is an eigenfunction of the hydrogen-atom Hamiltonian, so the integral is E_H."
+      },
+      {
+        "text": "The repulsion of the two protons",
+        "why": "That is the second term of H_AA, e^2/(4πε_0 R). The first term is the hydrogen-atom energy E_H."
+      }
+    ],
+    "explanation": "1s_A is an eigenfunction of the hydrogen-atom Hamiltonian around proton A, so the first integral in H_AA is simply the energy of a hydrogen atom in its 1s state, E_H."
+  },
+  {
+    "id": "pc9-stability-haa-second",
+    "type": "multiple-choice",
+    "prompt": "The second term of H_AA is (e^2/(4πε_0 R))⟨1s_A|1s_A⟩. What does it reduce to?",
+    "choices": [
+      {
+        "text": "e^2/(4πε_0 R), since ⟨1s_A|1s_A⟩ = 1",
+        "correct": true
+      },
+      {
+        "text": "(e^2/(4πε_0 R))S, since ⟨1s_A|1s_A⟩ = S",
+        "why": "S is ⟨1s_A|1s_B⟩, the overlap of two different orbitals; that term belongs to H_AB. ⟨1s_A|1s_A⟩ is the normalization integral, 1."
+      },
+      {
+        "text": "Zero, since ⟨1s_A|1s_A⟩ = 0",
+        "why": "A function is never orthogonal to itself. 1s_A is normalized, so ⟨1s_A|1s_A⟩ = 1 and the term is e^2/(4πε_0 R)."
+      },
+      {
+        "text": "e^2/(8πε_0 R), shared between A and B",
+        "why": "Nothing is shared out. ⟨1s_A|1s_A⟩ = 1, so the term is the full proton–proton repulsion e^2/(4πε_0 R)."
+      }
+    ],
+    "explanation": "The integral ⟨1s_A|1s_A⟩ equals 1 by normalization, so the term is just its prefactor, e^2/(4πε_0 R): the Coulomb repulsion of the two protons."
+  },
+  {
+    "id": "pc9-stability-j-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the Coulomb integral J represent for H_2^+?",
+    "choices": [
+      {
+        "text": "Proton B's attraction to the electron density of 1s_A",
+        "correct": true
+      },
+      {
+        "text": "The repulsion between the two protons at distance R",
+        "why": "That is the separate term e^2/(4πε_0 R). J is the attraction between proton B and the electron density around proton A."
+      },
+      {
+        "text": "The repulsion between electrons in 1s_A and 1s_B",
+        "why": "H_2^+ has only one electron, so there is no electron–electron repulsion. J is the attraction of proton B to the 1s_A density."
+      },
+      {
+        "text": "The attraction of the overlap density to a proton",
+        "why": "That describes K, the exchange integral. J uses the 1s_A density alone, attracted to proton B."
+      }
+    ],
+    "explanation": "J is the potential energy of the electron density in 1s_A interacting with proton B, an average interaction energy. It is negative because the interaction is attractive."
+  },
+  {
+    "id": "pc9-stability-hab-first",
+    "type": "multiple-choice",
+    "prompt": "In H_AB, the first integral has the hydrogen-atom Hamiltonian for proton B acting on 1s_B, with 1s_A on the left. Why does it reduce to E_H S?",
+    "choices": [
+      {
+        "text": "1s_B is its eigenfunction, with eigenvalue E_H",
+        "correct": true
+      },
+      {
+        "text": "1s_A and 1s_B are orthogonal, leaving only E_H",
+        "why": "They are not orthogonal; their overlap S survives. E_H comes out as a constant because 1s_B is an eigenfunction, leaving ⟨1s_A|1s_B⟩ = S."
+      },
+      {
+        "text": "It is an approximation that holds only at large R",
+        "why": "No approximation is made; it holds at every R. The operator turns 1s_B into E_H 1s_B, and what remains is the overlap S."
+      },
+      {
+        "text": "The kinetic energy cancels the attraction to proton B",
+        "why": "Nothing cancels. The operator acting on 1s_B gives E_H 1s_B, so the integral is E_H⟨1s_A|1s_B⟩ = E_H S."
+      }
+    ],
+    "explanation": "The hydrogen-atom Hamiltonian for proton B turns 1s_B into E_H × 1s_B. E_H is a constant, so it comes out of the integral, which leaves E_H⟨1s_A|1s_B⟩ = E_H S."
+  },
+  {
+    "id": "pc9-stability-hab-sum",
+    "type": "multiple-choice",
+    "prompt": "After its three integrals are evaluated, what does H_AB become?",
+    "choices": [
+      {
+        "text": "(E_H + e^2/(4πε_0 R))S + K",
+        "correct": true
+      },
+      {
+        "text": "E_H + e^2/(4πε_0 R) + J",
+        "why": "That is H_AA, where ⟨1s_A|1s_A⟩ = 1 and the last integral is J. In H_AB the first two terms carry S and the last is K."
+      },
+      {
+        "text": "(E_H + e^2/(4πε_0 R))S + J",
+        "why": "The last integral of H_AB has 1s_A on one side and 1s_B on the other, so it is the exchange integral K, not J."
+      },
+      {
+        "text": "E_H S + K",
+        "why": "This leaves out the proton repulsion term, which in H_AB is multiplied by the overlap: (e^2/(4πε_0 R))S."
+      }
+    ],
+    "explanation": "H_AB = E_H S + (e^2/(4πε_0 R))S + K: the hydrogen-atom energy and the proton repulsion each times the overlap S, plus the exchange integral K."
+  },
+  {
+    "id": "pc9-stability-k-name",
+    "type": "multiple-choice",
+    "prompt": "Why is K called the exchange integral?",
+    "choices": [
+      {
+        "text": "The electron is in 1s_A on one side and 1s_B on the other",
+        "correct": true
+      },
+      {
+        "text": "It describes two electrons in H_2^+ trading their spins",
+        "why": "H_2^+ has only one electron. The name comes from that electron being described by 1s_A on one side of the operator and 1s_B on the other."
+      },
+      {
+        "text": "It is just J with the labels A and B swapped around",
+        "why": "Swapping A and B in J gives an equal Coulomb integral, by symmetry. K differs: it has different orbitals on the two sides of the operator."
+      },
+      {
+        "text": "The two protons trade places as the bond vibrates",
+        "why": "The nuclei are held fixed here. The electron is in 1s_A on one side of the operator and in 1s_B on the other, as if it changed position."
+      }
+    ],
+    "explanation": "In a Coulomb integral the electron is in the same orbital on both sides of the operator. In the exchange integral K it is in 1s_A on one side and 1s_B on the other: it exchanges position in the molecule."
+  },
+  {
+    "id": "pc9-stability-last-term",
+    "type": "multiple-choice",
+    "prompt": "In E_(±) = E_H + e^2/(4πε_0 R) + (J ± K)/(1 ± S), what does the last term, (J ± K)/(1 ± S), describe?",
+    "choices": [
+      {
+        "text": "Extra electron–proton electrostatic interactions",
+        "correct": true
+      },
+      {
+        "text": "The repulsion between the two protons at R",
+        "why": "That is the middle term, e^2/(4πε_0 R). The last term collects the electron's additional interactions with the protons."
+      },
+      {
+        "text": "The energy of an isolated hydrogen atom, E_H",
+        "why": "That is E_H, the first term. The last term holds the extra electron–proton interactions given by J and K."
+      },
+      {
+        "text": "The repulsion between two electrons in the bond",
+        "why": "H_2^+ has one electron, so there is no electron–electron repulsion. The last term holds the electron's extra interactions with the protons."
+      }
+    ],
+    "explanation": "The energy of H_2^+ is the hydrogen-atom energy, plus the repulsion of the two protons, plus additional electrostatic interactions of the electron with the protons: (J ± K)/(1 ± S)."
+  },
+  {
+    "id": "pc9-stability-delta-ref",
+    "type": "multiple-choice",
+    "prompt": "The section works with ΔE_(±) = E_(±) − E_H rather than E_(±). What does subtracting E_H accomplish?",
+    "choices": [
+      {
+        "text": "It makes the separated atom and proton the zero",
+        "correct": true
+      },
+      {
+        "text": "It removes the proton repulsion from the energy",
+        "why": "The proton repulsion e^2/(4πε_0 R) is still in ΔE_(±). Subtracting E_H only shifts the zero to the separated hydrogen atom and proton."
+      },
+      {
+        "text": "It removes the electron's kinetic energy",
+        "why": "The kinetic energy is still there, inside E_H and the integrals. Subtracting E_H sets the energy of the separated atom and proton to zero."
+      },
+      {
+        "text": "It converts the energy from hartrees to eV",
+        "why": "Subtracting an energy doesn't change units. It sets the energy of a hydrogen atom far from a proton to zero."
+      }
+    ],
+    "explanation": "When the protons are infinitely far apart, only E_H is left: a hydrogen atom plus a distant proton. Subtracting it sets that separated state to zero, so ΔE_(±) < 0 means H_2^+ is lower in energy than the separated atom and proton."
+  },
+  {
+    "id": "pc9-stability-bond-condition",
+    "type": "multiple-choice",
+    "prompt": "What must ΔE_(+) do for H_2^+ to have a stable chemical bond?",
+    "choices": [
+      {
+        "text": "Be negative, with a minimum at some R",
+        "correct": true
+      },
+      {
+        "text": "Be positive at every value of R",
+        "why": "A positive ΔE means the molecule is above the separated atom and proton, which is what the antibonding orbital does. No bond forms."
+      },
+      {
+        "text": "Be zero at every value of R",
+        "why": "Then forming the molecule would gain nothing, so there would be no bond. ΔE_(+) must dip below zero to a minimum."
+      },
+      {
+        "text": "Fall steadily all the way to R = 0",
+        "why": "It can't: the proton repulsion rises to infinity at small R. A bond needs ΔE_(+) negative with a minimum."
+      }
+    ],
+    "explanation": "A bond needs (J ± K)/(1 ± S) to be negative enough to beat the positive proton repulsion e^2/(4πε_0 R) at some R. Then ΔE_(+) is negative and has a minimum."
+  },
+  {
+    "id": "pc9-stability-large-r",
+    "type": "multiple-choice",
+    "prompt": "As R becomes very large, what happens to the proton repulsion, J and K terms in ΔE_(±)?",
+    "choices": [
+      {
+        "text": "They all go to zero",
+        "correct": true
+      },
+      {
+        "text": "They all grow without limit",
+        "why": "Each term shrinks as the protons separate. Only the repulsion grows, and only as R goes to zero."
+      },
+      {
+        "text": "J and K stay fixed while the repulsion vanishes",
+        "why": "J and K also vanish: J because 1/r_B becomes small everywhere, K because the overlap and 1/r both go to zero."
+      },
+      {
+        "text": "The repulsion stays constant while J and K vanish",
+        "why": "The repulsion e^2/(4πε_0 R) falls as 1/R, so it too goes to zero at large R."
+      }
+    ],
+    "explanation": "For large R these terms are all zero, so ΔE_(±) = 0: the energy of a separated hydrogen atom and proton. For small R the proton repulsion rises to infinity."
+  },
+  {
+    "id": "pc9-stability-jk-small-r",
+    "type": "multiple-choice",
+    "prompt": "How do J and K change as the protons come closer together, with R decreasing toward zero?",
+    "choices": [
+      {
+        "text": "Both become increasingly negative",
+        "correct": true
+      },
+      {
+        "text": "Both become increasingly positive",
+        "why": "That is how the proton repulsion behaves. J and K are attractions, and they grow more negative as R shrinks."
+      },
+      {
+        "text": "Both go to zero",
+        "why": "J and K go to zero as the protons separate, not as they approach. Close together, they become increasingly negative."
+      },
+      {
+        "text": "J becomes negative while K becomes positive",
+        "why": "Both are negative at every R. As R decreases, both become increasingly negative."
+      }
+    ],
+    "explanation": "As R approaches zero, the proton repulsion rises from near zero to a large positive number, S goes from 0 to 1, and J and K become increasingly negative."
+  },
+  {
+    "id": "pc9-stability-jk-negative",
+    "type": "multiple-choice",
+    "prompt": "Why are both J and K negative?",
+    "choices": [
+      {
+        "text": "Each integrand is positive, with a minus sign",
+        "correct": true
+      },
+      {
+        "text": "They describe the repulsion between like charges",
+        "why": "Repulsion would be positive. J and K are attractions between the electron and a proton, which is why they are negative."
+      },
+      {
+        "text": "The hydrogen 1s orbitals take negative values",
+        "why": "Hydrogen 1s orbitals are positive everywhere. The integrands are positive, and the minus sign makes J and K negative."
+      },
+      {
+        "text": "The overlap integral S is a negative number",
+        "why": "S lies between 0 and 1, and J doesn't contain S. The integrands are positive, and the minus sign makes J and K negative."
+      }
+    ],
+    "explanation": "Every quantity in the integrands of J and K is positive, and each carries the minus sign of the electron–proton attraction −e^2/(4πε_0 r). So both integrals are negative: they are attractive interactions."
+  },
+  {
+    "id": "pc9-stability-j-large-r",
+    "type": "multiple-choice",
+    "prompt": "Why does the Coulomb integral J go to zero as the protons move far apart?",
+    "choices": [
+      {
+        "text": "1/r_B becomes very small wherever 1s_A is large",
+        "correct": true
+      },
+      {
+        "text": "1s_A and 1s_B stop overlapping",
+        "why": "That is why K vanishes. J uses only 1s_A; it fades because the electron near A is far from proton B, so 1/r_B is tiny."
+      },
+      {
+        "text": "The proton repulsion cancels it",
+        "why": "J vanishes on its own; nothing cancels it. Far from proton B, every 1/r_B value in its integrand is very small."
+      },
+      {
+        "text": "The electron leaves the region near proton A",
+        "why": "The electron stays in 1s_A around proton A. It is proton B that is far away, making 1/r_B tiny."
+      }
+    ],
+    "explanation": "J is the 1s_A density interacting with proton B through 1/r_B. As the protons separate, all values of r_B become very large and all values of 1/r_B very small, so J goes to zero."
+  },
+  {
+    "id": "pc9-stability-overlap-density",
+    "type": "multiple-choice",
+    "prompt": "What is the product eφ_1sA^*(r)φ_1sB(r) called?",
+    "choices": [
+      {
+        "text": "The overlap charge density",
+        "correct": true
+      },
+      {
+        "text": "The Coulomb integral",
+        "why": "J is an integral, and it uses φ_1sA^*φ_1sA, the density of one orbital. The product of 1s_A and 1s_B is the overlap charge density."
+      },
+      {
+        "text": "The charge density of 1s_A alone",
+        "why": "That would be eφ_1sA^*φ_1sA, the same orbital twice. Mixing 1s_A with 1s_B gives the overlap charge density."
+      },
+      {
+        "text": "The exchange integral",
+        "why": "K is the integral of this product times the attraction to a proton. The product itself is the overlap charge density."
+      }
+    ],
+    "explanation": "eφ_1sA^*(r)φ_1sB(r) is the overlap charge density. It is significant between the two nuclei, so it makes an important contribution to the chemical bond."
+  },
+  {
+    "id": "pc9-stability-k-accounts",
+    "type": "multiple-choice",
+    "prompt": "What extra contribution to bonding does the exchange integral K account for?",
+    "choices": [
+      {
+        "text": "Attraction from charge built up between the protons",
+        "correct": true
+      },
+      {
+        "text": "The repulsion between the two protons",
+        "why": "That is the separate term e^2/(4πε_0 R), which is positive. K is negative: an added attraction."
+      },
+      {
+        "text": "Proton B's attraction to atom A's own density",
+        "why": "That is J, the Coulomb integral. K adds the attraction of a proton to the overlap charge density between the nuclei."
+      },
+      {
+        "text": "The kinetic energy of the electron",
+        "why": "The kinetic energy is inside E_H and E_H S. K is the interaction of the overlap charge density with a proton."
+      }
+    ],
+    "explanation": "K is the potential energy of the overlap charge density interacting with a proton. While J accounts for proton B's attraction to atom A's density, K accounts for the added attraction from the charge built up between the protons."
+  },
+  {
+    "id": "pc9-stability-balance",
+    "type": "multiple-choice",
+    "prompt": "For the bonding orbital, which balance mainly decides how E_(+) changes with R?",
+    "choices": [
+      {
+        "text": "Proton repulsion against the negative J and K",
+        "correct": true
+      },
+      {
+        "text": "J against K, since they have opposite signs",
+        "why": "J and K are both negative. Together they work against the positive proton repulsion."
+      },
+      {
+        "text": "The overlap S against the normalization integral",
+        "why": "The effect of S is small; it only changes the denominator from 1 to 2. The main balance is proton repulsion against J and K."
+      },
+      {
+        "text": "E_H against the electron's kinetic energy",
+        "why": "E_H is a constant and doesn't change with R. The R dependence comes from the proton repulsion against J and K."
+      }
+    ],
+    "explanation": "The big effect is the balance between the repulsion of the two protons, e^2/(4πε_0 R), and J and K, which are both negative. Where J and K win, the energy is below the separated atom and proton."
+  },
+  {
+    "id": "pc9-stability-compensation-limit",
+    "type": "multiple-choice",
+    "prompt": "Down to about what separation do J and K manage to compensate for the proton repulsion, keeping ΔE_(+) negative?",
+    "choices": [
+      {
+        "text": "About 80 pm",
+        "correct": true
+      },
+      {
+        "text": "About 132 pm",
+        "why": "132 pm is where ΔE_(+) is lowest, the bond's minimum. ΔE_(+) stays negative closer in than that, down to about 80 pm."
+      },
+      {
+        "text": "About 53 pm, one Bohr radius",
+        "why": "By 53 pm the proton repulsion has already won. J and K compensate for it only down to about 80 pm."
+      },
+      {
+        "text": "All the way down to R = 0",
+        "why": "The proton repulsion rises to infinity as R goes to zero, so J and K can't keep up. They compensate only down to about 80 pm."
+      }
+    ],
+    "explanation": "J and K, both negative, outweigh the proton repulsion e^2/(4πε_0 R) until the protons are closer than about 80 pm. Below that ΔE_(+) is positive; the minimum lies further out, at 132 pm."
+  },
+  {
+    "id": "pc9-stability-r-min-pm",
+    "type": "numeric",
+    "prompt": "The bonding energy ΔE_(+) of H_2^+ has its minimum at R = 2.49a₀. With a₀ = 52.92 pm, what is this separation in pm?",
+    "answer": 131.8,
+    "unit": "pm",
+    "tolerance": 0.01,
+    "explanation": "R = 2.49 × 52.92 pm = 131.8 pm, the 132 pm minimum quoted in the section."
+  },
+  {
+    "id": "pc9-stability-eh-s",
+    "type": "numeric",
+    "prompt": "In H_AB, the first integral reduces to E_H S. With E_H = −13.6 eV and an overlap S = 0.50, what is this term, in eV?",
+    "answer": -6.8,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "E_H S = −13.6 eV × 0.50 = −6.8 eV. The hydrogen-atom energy comes out of the integral as a constant, leaving it multiplied by the overlap ⟨1s_A|1s_B⟩ = S."
+  },
+  {
+    "id": "pc9-stability-delta-e-value",
+    "type": "numeric",
+    "prompt": "Suppose that near R = 2a₀ the proton repulsion is 0.50 hartree, J = −0.47 hartree, K = −0.41 hartree and S = 0.60. Using ΔE_(+) = e^2/(4πε_0 R) + (J + K)/(1 + S), what is ΔE_(+), in hartree? (Give it as a decimal.)",
+    "answer": -0.05,
+    "unit": "hartree",
+    "tolerance": 0.02,
+    "explanation": "(J + K)/(1 + S) = (−0.47 − 0.41)/1.60 = −0.88/1.60 = −0.55 hartree. Then ΔE_(+) = 0.50 − 0.55 = −0.05 hartree: negative, so the bonding orbital lies below the separated atom and proton."
+  },
+  {
+    "id": "pc9-stability-well-depth",
+    "type": "numeric",
+    "prompt": "At the minimum of the bonding curve, E_(+) = −15.36 eV, and a hydrogen atom has E_H = −13.6 eV. What is ΔE_(+) = E_(+) − E_H there, in eV?",
+    "answer": -1.76,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "explanation": "ΔE_(+) = −15.36 eV − (−13.6 eV) = −1.76 eV. The molecule lies 1.76 eV below a separated hydrogen atom and proton, the dissociation energy of this simple model."
+  },
+  {
+    "id": "pc9-stability-denominator",
+    "type": "numeric",
+    "prompt": "In the bonding energy, the overlap S appears only in the denominator 1 + S, which the section calls a small effect. As R goes from ∞ to 0, S rises from 0 to 1. What is the largest value this denominator reaches?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "At R = 0, S = 1, so 1 + S = 1 + 1 = 2. S only makes the denominator grow from 1 to 2 as R approaches 0."
+  },
+  {
+    "id": "pc9-stability-antibonding-curve",
+    "type": "multiple-choice",
+    "prompt": "How does ΔE_(−) for the antibonding orbital compare with the energy of a separated hydrogen atom and proton?",
+    "choices": [
+      {
+        "text": "It is higher at every R, so no bond forms",
+        "correct": true
+      },
+      {
+        "text": "It is lower at every R, so a strong bond forms",
+        "why": "That would be a bonding orbital with no repulsive wall. For ψ_(−), the energy is always above the separated atom and proton."
+      },
+      {
+        "text": "It has a minimum at 132 pm, like ΔE_(+)",
+        "why": "The 132 pm minimum belongs to the bonding orbital. ΔE_(−) is above zero at every R, with no minimum."
+      },
+      {
+        "text": "It is equal to ΔE_(+) at every R",
+        "why": "The two differ by the sign of K and S in (J ± K)/(1 ± S). ΔE_(−) stays above the separated atom and proton."
+      }
+    ],
+    "explanation": "For an electron in ψ_(−), the energy of the molecule is always greater than that of the separated hydrogen atom and proton, so the antibonding orbital gives no bond."
+  },
+  {
+    "id": "pc9-stability-antibonding-k",
+    "type": "multiple-choice",
+    "prompt": "In terms of the integrals J and K, why does the antibonding orbital not hold H_2^+ together?",
+    "choices": [
+      {
+        "text": "−K is positive and nearly cancels J",
+        "correct": true
+      },
+      {
+        "text": "J is positive for the antibonding orbital",
+        "why": "J is the same negative integral for both orbitals. In E_(−) the term −K is positive and nearly cancels J."
+      },
+      {
+        "text": "S is zero for the antibonding orbital",
+        "why": "S is the same overlap of 1s_A and 1s_B for both orbitals. The difference is the sign of K: −K nearly cancels J."
+      },
+      {
+        "text": "The proton repulsion is larger for ψ_(−)",
+        "why": "The repulsion e^2/(4πε_0 R) is the same for both orbitals. ψ_(−) fails because −K nearly cancels J, so nothing offsets it."
+      }
+    ],
+    "explanation": "In E_(−), −K is positive and essentially cancels J, so there isn't enough attraction to offset the proton repulsion. This reflects the missing overlap charge density between the protons in ψ_(−)."
+  },
+  {
+    "id": "pc9-stability-three-integrals",
+    "type": "multiple-choice",
+    "prompt": "Besides the proton repulsion, which three integrals set the energies of the H_2^+ molecular orbitals in this section?",
+    "choices": [
+      {
+        "text": "The Coulomb, exchange and overlap integrals",
+        "correct": true
+      },
+      {
+        "text": "The Coulomb, exchange and electron-repulsion integrals",
+        "why": "H_2^+ has only one electron, so there is no electron-repulsion integral. The third integral is the overlap, S."
+      },
+      {
+        "text": "The kinetic, potential and normalization integrals",
+        "why": "The kinetic and potential terms are bundled into E_H, J and K. The three integrals named are J, K and S."
+      },
+      {
+        "text": "The overlap, normalization and orthogonality integrals",
+        "why": "Normalization only fixes the coefficients, and orthogonality isn't used. The energy needs J, K and S."
+      }
+    ],
+    "explanation": "The energy ΔE_(±) = e^2/(4πε_0 R) + (J ± K)/(1 ± S) depends on three integrals: the Coulomb integral J, the exchange integral K and the overlap integral S."
+  }
+]

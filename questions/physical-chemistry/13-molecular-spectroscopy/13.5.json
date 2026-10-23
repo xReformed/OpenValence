@@ -1,0 +1,581 @@
+[
+  {
+    "id": "pc13-overtone-curves-differ",
+    "type": "multiple-choice",
+    "prompt": "When the harmonic parabola is laid over the real, anharmonic potential of a diatomic molecule, where do the two curves differ most?",
+    "choices": [
+      {
+        "text": "At large R, where the real curve flattens out",
+        "correct": true
+      },
+      {
+        "text": "Near R_e, at the bottom of the well",
+        "why": "Both curves have their minimum at R_e and match well near it. They part at large R, where the real curve levels off as the bond dissociates."
+      },
+      {
+        "text": "At large R, where the real curve rises more steeply",
+        "why": "It is the parabola that keeps rising. The real curve levels off at large R because the bond dissociates."
+      },
+      {
+        "text": "Nowhere, since the two curves are identical",
+        "why": "The parabola only roughly fits the real well. It misses dissociation at large R completely."
+      }
+    ],
+    "explanation": "The harmonic well fits the real one only roughly. At large R the real curve levels off because the atoms separate and the bond dissociates, while the parabola keeps rising forever."
+  },
+  {
+    "id": "pc13-overtone-larger-r-extension",
+    "type": "multiple-choice",
+    "prompt": "On a potential energy curve V(R) for a diatomic molecule, R is the distance between the centers of the two atoms. What does moving from R_e toward larger R mean for the bond?",
+    "choices": [
+      {
+        "text": "The bond is being stretched (extended)",
+        "correct": true
+      },
+      {
+        "text": "The bond is being compressed",
+        "why": "Compression is toward smaller R, to the left of R_e. Larger R means the atoms are farther apart: the bond is extended."
+      },
+      {
+        "text": "The molecule is rotating faster",
+        "why": "R is the distance between the atoms, not a rotation speed. Larger R means a longer, stretched bond."
+      },
+      {
+        "text": "The molecule moves to a higher electronic state",
+        "why": "The curve is for one electronic state. Moving along R changes only the bond length; larger R means extension."
+      }
+    ],
+    "explanation": "R is the distance between the centers of the two atoms. To the left of R_e the bond is compressed; to the right it is extended, and far to the right it dissociates."
+  },
+  {
+    "id": "pc13-overtone-no-linear-term",
+    "type": "multiple-choice",
+    "prompt": "The Taylor series for V(R) about R_e has no linear term in (R − R_e). Why?",
+    "choices": [
+      {
+        "text": "The slope dV/dR is zero at the bottom of the well",
+        "correct": true
+      },
+      {
+        "text": "V(R_e) is set equal to zero",
+        "why": "Setting V(R_e) = 0 removes the constant term, not the linear one. The linear term vanishes because dV/dR = 0 at the minimum."
+      },
+      {
+        "text": "The linear term is too small to measure",
+        "why": "It is not merely small; it is exactly zero, since the first derivative vanishes at the bottom of the well."
+      },
+      {
+        "text": "Odd powers of (R − R_e) never appear in the series",
+        "why": "The cubic term, with (R − R_e)^3, does appear. Only the linear term drops out, because dV/dR = 0 at R_e."
+      }
+    ],
+    "explanation": "At R_e the potential is at its minimum, so its first derivative is zero and the term (dV/dR)(R − R_e) vanishes. The series goes from the constant V(R_e) straight to the quadratic term."
+  },
+  {
+    "id": "pc13-overtone-r-displacement",
+    "type": "multiple-choice",
+    "prompt": "In V(r) = (1/2)kr^2 + (1/6)γr^3, what is r?",
+    "choices": [
+      {
+        "text": "The displacement from equilibrium, R − R_e",
+        "correct": true
+      },
+      {
+        "text": "The full distance between the two nuclei, R",
+        "why": "R itself is the internuclear distance. r = R − R_e measures how far the bond is stretched or compressed from equilibrium."
+      },
+      {
+        "text": "The equilibrium bond length, R_e",
+        "why": "R_e is fixed for a given molecule. r = R − R_e is the change from it, so r = 0 at equilibrium."
+      },
+      {
+        "text": "The radius of the heavier atom",
+        "why": "r has nothing to do with the size of an atom. It is the displacement from equilibrium, r = R − R_e."
+      }
+    ],
+    "explanation": "The section defines r = R − R_e, so r = 0 at the bottom of the well, r > 0 for extension and r < 0 for compression. The constant V(R_e) is set to zero."
+  },
+  {
+    "id": "pc13-overtone-gamma-third-derivative",
+    "type": "multiple-choice",
+    "prompt": "The cubic term of the Taylor series is (1/3!)(d^3V/dR^3)(R − R_e)^3. Comparing it with the term (1/6)γr^3 in V(r), what is γ?",
+    "choices": [
+      {
+        "text": "The third derivative of V at R_e",
+        "correct": true
+      },
+      {
+        "text": "The second derivative of V at R_e",
+        "why": "That is k, the harmonic force constant, which goes with r^2. γ goes with r^3 and is the third derivative."
+      },
+      {
+        "text": "The first derivative of V at R_e",
+        "why": "The first derivative is zero at R_e; that is why there is no linear term. γ is the third derivative."
+      },
+      {
+        "text": "The fourth derivative of V at R_e",
+        "why": "That would belong to a quartic term in r^4. γ multiplies r^3, so it is the third derivative."
+      }
+    ],
+    "explanation": "Since 3! = 6, the cubic Taylor term is (1/6)(d^3V/dR^3)r^3. Comparing it with (1/6)γr^3 shows that γ, the first anharmonic term, is the third derivative of V at R_e."
+  },
+  {
+    "id": "pc13-overtone-perturbation-origin",
+    "type": "multiple-choice",
+    "prompt": "How does the section get the anharmonic energies E_v = ν̃(v + 1/2) − χ̃_e ν̃(v + 1/2)^2?",
+    "choices": [
+      {
+        "text": "By adding the cubic term and using perturbation theory",
+        "correct": true
+      },
+      {
+        "text": "By solving the Schrödinger equation exactly for a parabola",
+        "why": "The parabola gives only the harmonic energies ν̃(v + 1/2). The extra term comes from treating the cubic term with perturbation theory."
+      },
+      {
+        "text": "By fitting a straight line to the HCl overtones",
+        "why": "The formula is derived, not fitted. The cubic term is added to the potential and treated with perturbation theory."
+      },
+      {
+        "text": "By treating the vibration with classical mechanics",
+        "why": "Classical mechanics gives no quantized levels. The section includes the cubic term and solves the Schrödinger equation using perturbation theory."
+      }
+    ],
+    "explanation": "Including the cubic term (1/6)γr^3 in the potential and solving the Schrödinger equation with perturbation theory adds the correction −χ̃_e ν̃(v + 1/2)^2 to the harmonic energies ν̃(v + 1/2)."
+  },
+  {
+    "id": "pc13-overtone-chi-small",
+    "type": "multiple-choice",
+    "prompt": "In E_v = ν̃(v + 1/2) − χ̃_e ν̃(v + 1/2)^2, how large is the anharmonicity constant χ̃_e?",
+    "choices": [
+      {
+        "text": "Much smaller than 1",
+        "correct": true
+      },
+      {
+        "text": "About 1",
+        "why": "If χ̃_e were about 1, the correction would be as large as the harmonic energy itself. χ̃_e is much smaller than 1."
+      },
+      {
+        "text": "Much larger than 1",
+        "why": "Then the second term would swamp the first and make the energies negative. χ̃_e is much smaller than 1."
+      },
+      {
+        "text": "Exactly zero for real molecules",
+        "why": "χ̃_e = 0 would make real molecules perfectly harmonic. Real molecules have a small but nonzero χ̃_e."
+      }
+    ],
+    "explanation": "χ̃_e is much smaller than 1, so the anharmonic term is only a small correction to the harmonic energy ν̃(v + 1/2)."
+  },
+  {
+    "id": "pc13-overtone-correction-lowers",
+    "type": "multiple-choice",
+    "prompt": "Compared with the harmonic energies ν̃(v + 1/2), what does the term −χ̃_e ν̃(v + 1/2)^2 do to the vibrational levels?",
+    "choices": [
+      {
+        "text": "Lowers them, more and more as v increases",
+        "correct": true
+      },
+      {
+        "text": "Raises them, more and more as v increases",
+        "why": "The term has a minus sign and χ̃_e is positive, so it lowers the levels, by an amount that grows as (v + 1/2)^2."
+      },
+      {
+        "text": "Lowers every level by the same amount",
+        "why": "The correction grows as (v + 1/2)^2, so high levels are lowered much more than low ones. That is why the spacing shrinks."
+      },
+      {
+        "text": "Leaves them unchanged, as χ̃_e is so small",
+        "why": "χ̃_e is small, but the term grows as (v + 1/2)^2, so it matters a lot at high v, as the HCl overtones show."
+      }
+    ],
+    "explanation": "The correction is subtracted and grows as (v + 1/2)^2. High levels are pulled down the most, so the levels crowd closer together as v increases."
+  },
+  {
+    "id": "pc13-overtone-zero-point",
+    "type": "multiple-choice",
+    "prompt": "Setting v = 0 in E_v = ν̃(v + 1/2) − χ̃_e ν̃(v + 1/2)^2 gives the zero-point energy. How does it compare with the harmonic value, ν̃/2?",
+    "choices": [
+      {
+        "text": "Slightly lower, by χ̃_e ν̃/4",
+        "correct": true
+      },
+      {
+        "text": "Exactly the same, since anharmonicity starts at v = 1",
+        "why": "At v = 0 the correction is −χ̃_e ν̃(1/2)^2 = −χ̃_e ν̃/4, which is not zero."
+      },
+      {
+        "text": "Slightly higher, by χ̃_e ν̃/4",
+        "why": "The term is subtracted, so it lowers the energy: E_0 = ν̃/2 − χ̃_e ν̃/4."
+      },
+      {
+        "text": "Zero, since the molecule does not vibrate at v = 0",
+        "why": "The molecule still has zero-point energy. With anharmonicity it is ν̃/2 − χ̃_e ν̃/4, slightly below the harmonic ν̃/2."
+      }
+    ],
+    "explanation": "At v = 0, (v + 1/2)^2 = 1/4, so E_0 = ν̃/2 − χ̃_e ν̃/4. The correction is small because χ̃_e is much smaller than 1, but it lowers even the ground level."
+  },
+  {
+    "id": "pc13-overtone-two-terms-enough",
+    "type": "multiple-choice",
+    "prompt": "The anharmonic energy could include more terms from the Taylor series. Why does the section keep only the first two?",
+    "choices": [
+      {
+        "text": "The later terms are too small to matter much",
+        "correct": true
+      },
+      {
+        "text": "The later terms are exactly zero",
+        "why": "They are not zero, only small. More terms can be included for a more accurate result, but they barely change the total."
+      },
+      {
+        "text": "Only two terms can ever be measured",
+        "why": "For H2, Li2, O2, N2 and F2, terms up to n < 10 have been determined. The later terms are left out because they are small."
+      },
+      {
+        "text": "The later terms make the energies rise without limit",
+        "why": "The issue is size, not runaway growth. The later terms add so little that they can usually be ignored."
+      }
+    ],
+    "explanation": "The terms of the series get smaller and smaller, so the third and later terms barely add to the total. They can be included for a more accurate result, but are usually ignored."
+  },
+  {
+    "id": "pc13-overtone-dominant-line",
+    "type": "multiple-choice",
+    "prompt": "A diatomic molecule's measured vibrational spectrum shows one dominant line and several weaker ones. Which transition gives the dominant line?",
+    "choices": [
+      {
+        "text": "The fundamental, v = 0 → 1",
+        "correct": true
+      },
+      {
+        "text": "The first overtone, v = 0 → 2",
+        "why": "Overtones are the weaker lines. The fundamental, 0 → 1, is the strongest, since Δv = ±1 transitions are by far the most probable."
+      },
+      {
+        "text": "The hot transition, v = 1 → 2",
+        "why": "Hot transitions start from an excited level, v = 1. The dominant line is the fundamental, 0 → 1."
+      },
+      {
+        "text": "The highest overtone, v = 0 → 5",
+        "why": "The probability falls rapidly as Δv grows, so 0 → 5 is among the weakest lines. The dominant line is the fundamental."
+      }
+    ],
+    "explanation": "The harmonic oscillator predicts only one line. Experiments show that line, the fundamental 0 → 1, as the dominant one, plus weaker lines from overtones."
+  },
+  {
+    "id": "pc13-overtone-hot-transition",
+    "type": "multiple-choice",
+    "prompt": "The section names vibrational transitions as fundamentals, overtones and hot transitions. What is a v = 1 → 2 transition called?",
+    "choices": [
+      {
+        "text": "A hot transition",
+        "correct": true
+      },
+      {
+        "text": "The fundamental",
+        "why": "The fundamental starts from v = 0: it is 0 → 1. Any transition 1 → n with n > 1 is a hot transition."
+      },
+      {
+        "text": "The first overtone",
+        "why": "The first overtone is 0 → 2, starting from v = 0. A transition that starts from v = 1 is a hot transition."
+      },
+      {
+        "text": "The second overtone",
+        "why": "The second overtone is 0 → 3. Transitions out of v = 1, such as 1 → 2, are hot transitions."
+      }
+    ],
+    "explanation": "In the section's scheme, 0 → 1 is the fundamental, 0 → n with n > 1 are overtones, and 1 → n with n > 1 are hot transitions, or hot bands."
+  },
+  {
+    "id": "pc13-overtone-second-overtone",
+    "type": "multiple-choice",
+    "prompt": "Table 13.5.1 lists HCl's fundamental and four overtones. Which transition is the second overtone?",
+    "choices": [
+      {
+        "text": "v = 0 → 3",
+        "correct": true
+      },
+      {
+        "text": "v = 0 → 2",
+        "why": "0 → 2 is the first overtone. The second overtone is 0 → 3."
+      },
+      {
+        "text": "v = 1 → 3",
+        "why": "This starts from v = 1, so it is a hot transition, not an overtone. The second overtone is 0 → 3."
+      },
+      {
+        "text": "v = 0 → 4",
+        "why": "0 → 4 is the third overtone in Table 13.5.1. The second overtone is 0 → 3."
+      }
+    ],
+    "explanation": "Counting up from the fundamental 0 → 1, the first overtone is 0 → 2 and the second overtone is 0 → 3. HCl's second overtone is observed at 8347.0 cm^−1."
+  },
+  {
+    "id": "pc13-overtone-selection-rule",
+    "type": "multiple-choice",
+    "prompt": "What is the vibrational selection rule for the anharmonic oscillator?",
+    "choices": [
+      {
+        "text": "Δv can be any number",
+        "correct": true
+      },
+      {
+        "text": "Δv = ±1 and nothing else",
+        "why": "That is the harmonic oscillator's rule. Anharmonicity lifts it, so Δv = ±2, ±3, … are possible too, though weaker."
+      },
+      {
+        "text": "Δv = ±2 and nothing else",
+        "why": "Δv = ±1 is still allowed, and it gives the strongest lines. For the anharmonic oscillator, Δv can be any number."
+      },
+      {
+        "text": "Δv = 0 and nothing else",
+        "why": "Then no vibrational transitions would happen at all. For the anharmonic oscillator, Δv can be any number."
+      }
+    ],
+    "explanation": "For the anharmonic oscillator there are no selection rules for state-to-state transitions: Δv can be any number. Δv = ±1 stays by far the strongest, and the overtones get weaker as Δv grows."
+  },
+  {
+    "id": "pc13-overtone-probability-trend",
+    "type": "multiple-choice",
+    "prompt": "Table 13.5.1 lists HCl's absorptions from v = 0 up to v = 5. How does the probability of these transitions change as Δv gets bigger?",
+    "choices": [
+      {
+        "text": "It decreases rapidly",
+        "correct": true
+      },
+      {
+        "text": "It increases, as more energy is absorbed",
+        "why": "Absorbing more energy does not make a transition more likely. The probability of an overtone falls rapidly as Δv grows."
+      },
+      {
+        "text": "It stays the same for every Δv",
+        "why": "The fundamental is by far the strongest, and each higher overtone is weaker than the one before."
+      },
+      {
+        "text": "It is zero for every Δv above 1",
+        "why": "That would be true for a harmonic oscillator. Anharmonicity makes the overtones possible, though weak."
+      }
+    ],
+    "explanation": "The fundamental transitions, Δv = ±1, are the most common, and the probability of an overtone decreases rapidly as Δv gets bigger. That is why the overtone lines are weak."
+  },
+  {
+    "id": "pc13-overtone-why-overtones-appear",
+    "type": "multiple-choice",
+    "prompt": "Why do Δv = ±2, ±3, … transitions show up at all in HCl's spectrum?",
+    "choices": [
+      {
+        "text": "Anharmonicity makes their transition moments nonzero",
+        "correct": true
+      },
+      {
+        "text": "Their upper levels are already occupied by many molecules",
+        "why": "Overtones are absorptions from v = 0; their upper levels hold hardly any molecules. They appear because anharmonicity makes their transition moments nonzero."
+      },
+      {
+        "text": "The harmonic oscillator allows every Δv",
+        "why": "The harmonic oscillator allows only Δv = ±1. It is anharmonicity that makes Δv = ±2, ±3, … possible."
+      },
+      {
+        "text": "Rotational transitions add extra vibrational quanta",
+        "why": "Rotation does not change v. Overtones appear because anharmonicity gives them nonzero transition moments."
+      }
+    ],
+    "explanation": "For a harmonic oscillator the transition moment of Δv = ±2, ±3, … is exactly zero. Anharmonicity makes it small but nonzero, so the overtones appear as weak lines."
+  },
+  {
+    "id": "pc13-overtone-overtone-below-multiple",
+    "type": "multiple-choice",
+    "prompt": "In Table 13.5.1, HCl's first overtone is observed at 5668.0 cm^−1, below twice the fundamental (5771.8 cm^−1). Why is it lower?",
+    "choices": [
+      {
+        "text": "The levels get closer together as v increases",
+        "correct": true
+      },
+      {
+        "text": "The levels get farther apart as v increases",
+        "why": "Levels getting farther apart would push the overtone above 5771.8 cm^−1. Anharmonic levels crowd together, so 0 → 2 is less than twice 0 → 1."
+      },
+      {
+        "text": "The overtone starts from v = 1, not v = 0",
+        "why": "Overtones start from v = 0; the first overtone is 0 → 2. It is low because v = 2 sits lower than the harmonic model puts it."
+      },
+      {
+        "text": "The measurement is less accurate at high wavenumber",
+        "why": "The gap is real and grows with each overtone. It comes from anharmonicity, which pulls the higher levels down."
+      }
+    ],
+    "explanation": "Anharmonic levels are not equally spaced: the gap from v = 1 to 2 is smaller than the gap from 0 to 1. So the 0 → 2 overtone comes out less than twice the fundamental, as overtones usually do."
+  },
+  {
+    "id": "pc13-overtone-anharmonic-column",
+    "type": "multiple-choice",
+    "prompt": "Table 13.5.1 compares HCl's observed lines with harmonic and anharmonic predictions. Which predictions match better, and where is the difference clearest?",
+    "choices": [
+      {
+        "text": "The anharmonic ones, most of all at high v",
+        "correct": true
+      },
+      {
+        "text": "The harmonic ones, most of all at high v",
+        "why": "The harmonic column drifts further from the observed values with each overtone, while the anharmonic one stays within a few tens of cm^−1."
+      },
+      {
+        "text": "The anharmonic ones, but only for the fundamental",
+        "why": "Both agree well for the fundamental. The anharmonic model's advantage grows with each overtone."
+      },
+      {
+        "text": "Both match equally well for every line",
+        "why": "The harmonic column falls further behind with each overtone; the anharmonic one stays close."
+      }
+    ],
+    "explanation": "The anharmonic frequencies correspond much better with the observed ones, especially as the vibrational level increases. The harmonic column, n times the fundamental, drifts further off with each overtone."
+  },
+  {
+    "id": "pc13-overtone-harmonic-column-fundamental",
+    "type": "multiple-choice",
+    "prompt": "In Table 13.5.1, the harmonic column gives HCl's 0 → 1 line as 2885.9 cm^−1, exactly the observed value. Why do they agree perfectly there?",
+    "choices": [
+      {
+        "text": "Each harmonic value is n times the observed fundamental",
+        "correct": true
+      },
+      {
+        "text": "HCl behaves as a perfect harmonic oscillator at all v",
+        "why": "If it did, the overtones would match too. The harmonic column is n times the observed fundamental, so its first row agrees by construction."
+      },
+      {
+        "text": "Anharmonicity changes only the energy of the v = 0 level",
+        "why": "Anharmonicity lowers the higher levels most. The 0 → 1 row agrees because the harmonic column is made by multiplying the observed fundamental by n."
+      },
+      {
+        "text": "The 0 → 1 line involves no change in vibrational energy",
+        "why": "It does: v goes from 0 to 1. The agreement comes from the harmonic column being n × 2885.9 cm^−1."
+      }
+    ],
+    "explanation": "Each harmonic entry is n times the observed fundamental: 2 × 2885.9 = 5771.8 cm^−1, and so on. So the first row matches by construction, and the real test of the model is the overtone rows."
+  },
+  {
+    "id": "pc13-overtone-wavenumber-energy",
+    "type": "multiple-choice",
+    "prompt": "The section compares the energies of the fundamental and its overtones by comparing their wavenumbers. Why is that allowed?",
+    "choices": [
+      {
+        "text": "Energy is directly proportional to wavenumber",
+        "correct": true
+      },
+      {
+        "text": "Wavenumber is proportional to wavelength",
+        "why": "Wavenumber is 1/λ, so it is inversely proportional to wavelength. It is proportional to energy, which is why wavenumbers can be compared."
+      },
+      {
+        "text": "Energy and wavenumber are inversely proportional",
+        "why": "A larger wavenumber means a larger energy: E = hcν̃. They are directly proportional."
+      },
+      {
+        "text": "All vibrational lines have the same energy",
+        "why": "Then there would be only one line. Energy is proportional to wavenumber, so twice the wavenumber means twice the energy."
+      }
+    ],
+    "explanation": "Energy is proportional to the frequency absorbed, which is proportional to the wavenumber (E = hν = hcν̃). So a line at twice the wavenumber has twice the energy."
+  },
+  {
+    "id": "pc13-overtone-two-lines-needed",
+    "type": "multiple-choice",
+    "prompt": "Exercise 13.5.1 finds ν̃ and χ̃_e for HCl from two lines, the fundamental and the first overtone. Why are two lines needed?",
+    "choices": [
+      {
+        "text": "There are two unknown constants to find",
+        "correct": true
+      },
+      {
+        "text": "The fundamental does not depend on χ̃_e",
+        "why": "It does: with anharmonicity the 0 → 1 line sits below ν̃. Two lines are needed simply because there are two unknowns, ν̃ and χ̃_e."
+      },
+      {
+        "text": "Each line gives only half of ν̃",
+        "why": "Each line gives one equation linking ν̃ and χ̃_e. With two unknowns, two equations are needed."
+      },
+      {
+        "text": "One line is always needed to check the other",
+        "why": "The second line is not a check; it supplies the second equation. Two unknowns, ν̃ and χ̃_e, need two equations."
+      }
+    ],
+    "explanation": "Each line position gives one equation in ν̃ and χ̃_e. With two unknowns, two equations are needed: one from the fundamental at 2885.9 cm^−1 and one from the overtone at 5668.0 cm^−1."
+  },
+  {
+    "id": "pc13-overtone-larger-molecules",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how often are vibrational overtones detected in larger molecules?",
+    "choices": [
+      {
+        "text": "They are generally not detected",
+        "correct": true
+      },
+      {
+        "text": "More often than in diatomics",
+        "why": "The section says the opposite: overtones are generally not detected in larger molecules."
+      },
+      {
+        "text": "Always, and stronger than the fundamentals",
+        "why": "Overtones are weaker than fundamentals in any molecule, and in larger molecules they are generally not detected."
+      },
+      {
+        "text": "Only in larger molecules, never in diatomics",
+        "why": "HCl, a diatomic, shows overtones up to 0 → 5 in Table 13.5.1. In larger molecules they are generally not detected."
+      }
+    ],
+    "explanation": "The section notes that overtones are generally not detected in larger molecules. Small molecules such as gas-phase HCl show them clearly, as Table 13.5.1 does."
+  },
+  {
+    "id": "pc13-overtone-harmonic-second-overtone",
+    "type": "numeric",
+    "prompt": "The harmonic column of Table 13.5.1 puts each 0 → n line at n times HCl's observed fundamental, 2885.9 cm^−1. What does it predict for the second overtone, 0 → 3, in cm^−1?",
+    "answer": 8657.7,
+    "explanation": "The second overtone is 0 → 3, so n = 3: 3 × 2885.9 = 8657.7 cm^−1, as in the table. The observed line, 8347.0 cm^−1, is about 310 cm^−1 lower because of anharmonicity."
+  },
+  {
+    "id": "pc13-overtone-harmonic-error-fourth",
+    "type": "numeric",
+    "prompt": "For HCl's fourth overtone (0 → 5), Table 13.5.1 gives the observed line at 13,396.5 cm^−1 and the harmonic prediction at 14,429.5 cm^−1. By how many cm^−1 does the harmonic model overshoot?",
+    "answer": 1033.0,
+    "explanation": "14,429.5 − 13,396.5 = 1033.0 cm^−1. The anharmonic prediction, 13,370 cm^−1, is off by only 26.5 cm^−1."
+  },
+  {
+    "id": "pc13-overtone-fourth-overtone-nm",
+    "type": "numeric",
+    "prompt": "HCl's fourth overtone is observed at 13,396.5 cm^−1. Using λ (nm) = 10^7/ν̃ (cm^−1), what is its wavelength, in nm?",
+    "answer": 746.5,
+    "unit": "nm",
+    "explanation": "λ = 10^7/13,396.5 = 746.5 nm. That is a far shorter wavelength than the fundamental's, about 3.47 μm, since the overtone carries much more energy."
+  },
+  {
+    "id": "pc13-overtone-first-overtone-formula",
+    "type": "numeric",
+    "prompt": "From E_v = ν̃(v + 1/2) − χ̃_e ν̃(v + 1/2)^2, the 0 → n line lies at nν̃ − n(n + 1)χ̃_e ν̃. For HCl, take ν̃ = 2989.7 cm^−1 and χ̃_e ν̃ = 51.9 cm^−1. Where is the first overtone (n = 2), in cm^−1?",
+    "answer": 5668.0,
+    "explanation": "2 × 2989.7 − (2 × 3) × 51.9 = 5979.4 − 311.4 = 5668.0 cm^−1, exactly the observed first overtone in Table 13.5.1."
+  },
+  {
+    "id": "pc13-overtone-chi-hcl",
+    "type": "numeric",
+    "prompt": "Working Exercise 13.5.1 gives, for HCl, ν̃ = 2989.7 cm^−1 and χ̃_e ν̃ = 51.9 cm^−1. What is the anharmonicity constant χ̃_e? (Give it as a decimal.)",
+    "answer": 0.01736,
+    "tolerance": 0.02,
+    "explanation": "χ̃_e = 51.9/2989.7 = 0.0174. It is much smaller than 1, as the section says."
+  },
+  {
+    "id": "pc13-overtone-gap-v1-v2",
+    "type": "numeric",
+    "prompt": "Table 13.5.1 gives HCl's observed 0 → 1 line at 2885.9 cm^−1 and 0 → 2 line at 5668.0 cm^−1. Their difference is the gap between the v = 1 and v = 2 levels. What is it, in cm^−1?",
+    "answer": 2782.1,
+    "explanation": "5668.0 − 2885.9 = 2782.1 cm^−1, which is 103.8 cm^−1 less than the 0 → 1 gap. The levels get closer together as v increases. A 1 → 2 hot transition would appear at this wavenumber."
+  },
+  {
+    "id": "pc13-overtone-xnu-from-lines",
+    "type": "numeric",
+    "prompt": "From E_v = ν̃(v + 1/2) − χ̃_e ν̃(v + 1/2)^2, twice the fundamental minus the first overtone equals 2χ̃_e ν̃, so χ̃_e ν̃ = (2 × fundamental − first overtone)/2. For HCl, the fundamental is at 2885.9 cm^−1 and the first overtone at 5668.0 cm^−1. What is χ̃_e ν̃, in cm^−1?",
+    "answer": 51.9,
+    "explanation": "χ̃_e ν̃ = (2 × 2885.9 − 5668.0)/2 = (5771.8 − 5668.0)/2 = 103.8/2 = 51.9 cm^−1. This is the first step of Exercise 13.5.1."
+  }
+]

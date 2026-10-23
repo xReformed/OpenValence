@@ -1,0 +1,587 @@
+[
+  {
+    "id": "pc5-rotor-rigid-meaning",
+    "type": "multiple-choice",
+    "prompt": "What is a rigid rotor?",
+    "choices": [
+      {
+        "text": "Masses that rotate at a fixed distance from each other",
+        "correct": true
+      },
+      {
+        "text": "Masses joined by a spring that stretches as they rotate",
+        "why": "A stretching bond is vibration, which the rigid rotor ignores. In a rigid rotor the distance between the masses never changes."
+      },
+      {
+        "text": "A single mass that moves along a straight line",
+        "why": "That describes a free particle, not a rotor. A rigid rotor is two masses at fixed distances from their center of mass."
+      },
+      {
+        "text": "Masses that can rotate at only one fixed speed",
+        "why": "\"Rigid\" refers to the fixed distance between the masses, not to the speed. A classical rigid rotor can spin at any rate."
+      }
+    ],
+    "explanation": "In a rigid rotor the distance between the particles does not change as they rotate; the masses and that fixed distance are its only characteristics. It models a rotating diatomic molecule if vibration is ignored."
+  },
+  {
+    "id": "pc5-rotor-potential-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is the potential energy V set to zero for a rigid rotor?",
+    "choices": [
+      {
+        "text": "The distance between the particles never changes",
+        "correct": true
+      },
+      {
+        "text": "A rotating molecule has no kinetic energy",
+        "why": "It is the other way round: with V = 0, all of the rotor's energy is kinetic, E_tot = T."
+      },
+      {
+        "text": "The two atoms are not bonded to each other",
+        "why": "The atoms are bonded; the bond just has a fixed length in this model. Because the distance never changes, V is set to 0."
+      },
+      {
+        "text": "The molecule is far away from all other molecules",
+        "why": "Isolation isn't the reason given. V is set to 0 because the distance between the particles is fixed."
+      }
+    ],
+    "explanation": "Within the rigid rotor approximation the particles stay a fixed distance apart, so V is set to 0 and the energy is all kinetic, E_tot = T. In a real molecule V ≠ 0, because the atoms still vibrate."
+  },
+  {
+    "id": "pc5-rotor-l-equals-i-omega",
+    "type": "multiple-choice",
+    "prompt": "Which equation relates the angular momentum L of a rotating rigid body to its angular velocity ω?",
+    "choices": [
+      {
+        "text": "L = Iω",
+        "correct": true
+      },
+      {
+        "text": "L = (1/2)Iω^2",
+        "why": "(1/2)Iω^2 is the rotational kinetic energy T, not the angular momentum."
+      },
+      {
+        "text": "L = ω/r",
+        "why": "The section's ω = v/r relates angular velocity to speed. Angular momentum is the moment of inertia times ω."
+      },
+      {
+        "text": "L = I/ω",
+        "why": "Angular momentum grows with ω, just as linear momentum mv grows with v: L = Iω."
+      }
+    ],
+    "explanation": "The angular momentum is L = Iω, where I is the moment of inertia. Putting it into T = ωL/2 gives the rotational kinetic energy T = (1/2)Iω^2."
+  },
+  {
+    "id": "pc5-rotor-double-omega",
+    "type": "numeric",
+    "prompt": "A classical rigid rotor has kinetic energy T = (1/2)Iω^2. If its angular velocity ω doubles while I stays the same, by what factor does T increase?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "T is proportional to ω^2, so doubling ω multiplies T by 2^2 = 4. The energy grows the faster the rotor spins."
+  },
+  {
+    "id": "pc5-rotor-classical-any-energy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which rotational energies can a classical rigid rotor have?",
+    "choices": [
+      {
+        "text": "Any value; it can spin at any rate",
+        "correct": true
+      },
+      {
+        "text": "Only the values J(J + 1)ħ^2/(2I)",
+        "why": "Those are the quantum energies. Classically the rotational energy is not quantized, since every rotational frequency is possible."
+      },
+      {
+        "text": "Only zero, because V = 0",
+        "why": "V = 0 leaves the kinetic energy T = (1/2)Iω^2, which is not zero for a spinning rotor."
+      },
+      {
+        "text": "Only whole-number multiples of hν",
+        "why": "That is Planck's idea of quantized energy. A classical rotor can have any energy at all."
+      }
+    ],
+    "explanation": "Classically T = (1/2)Iω^2, and ω can take any value, so the rotational energy is not quantized. Quantization appears only in the quantum rigid rotor."
+  },
+  {
+    "id": "pc5-rotor-only-angles",
+    "type": "multiple-choice",
+    "prompt": "Why does the rigid rotor wavefunction depend only on the angles θ and φ, and not on r?",
+    "choices": [
+      {
+        "text": "The bond length is fixed at r_0",
+        "correct": true
+      },
+      {
+        "text": "The molecule rotates only in the xy-plane",
+        "why": "Rotation confined to a plane would need only φ. The rotor moves over a whole sphere; only r is fixed."
+      },
+      {
+        "text": "θ and φ are always equal to each other",
+        "why": "θ and φ are independent angles. r drops out because it is held constant at r_0."
+      },
+      {
+        "text": "The atoms have no mass in this model",
+        "why": "The masses matter: they enter through I = μr_0^2. r drops out because the bond length is constant."
+      }
+    ],
+    "explanation": "In the rigid rotor the bond length is held at the constant r_0, so the derivatives with respect to r are zero. Only θ and φ remain, and the rotor moves on the surface of a sphere of radius r_0."
+  },
+  {
+    "id": "pc5-rotor-moment-of-inertia",
+    "type": "numeric",
+    "prompt": "The moment of inertia of a rigid rotor is I = μr_0^2. What is I, in kg·m^2, for μ = 1.0 × 10^−26 kg and r_0 = 1.2 × 10^−10 m? (Type it in scientific notation, like 2.5e-46.)",
+    "answer": 1.44e-46,
+    "tolerance": 0.01,
+    "explanation": "I = μr_0^2 = (1.0 × 10^−26 kg)(1.2 × 10^−10 m)^2 = (1.0 × 10^−26)(1.44 × 10^−20) = 1.44 × 10^−46 kg·m^2."
+  },
+  {
+    "id": "pc5-rotor-lambda",
+    "type": "multiple-choice",
+    "prompt": "The section defines λ = (2IE)/ħ^2. What is λ?",
+    "choices": [
+      {
+        "text": "Shorthand for a combination of constants",
+        "correct": true
+      },
+      {
+        "text": "The wavelength of the rotating molecule",
+        "why": "The section warns that this λ has no connection to a wavelength; it is just a symbol for (2IE)/ħ^2."
+      },
+      {
+        "text": "The angular velocity of the rotor",
+        "why": "Angular velocity is ω. λ is a symbol for (2IE)/ħ^2, which later turns out to equal J(J + 1)."
+      },
+      {
+        "text": "The fixed bond length of the molecule",
+        "why": "The bond length is r_0. λ is just a shorthand for (2IE)/ħ^2."
+      }
+    ],
+    "explanation": "λ = (2IE)/ħ^2 simply tidies up the equation; it is not a wavelength. Solving the θ-equation requires λ = J(J + 1), which makes the energy quantized."
+  },
+  {
+    "id": "pc5-rotor-phi-solution",
+    "type": "multiple-choice",
+    "prompt": "For m_J = 2, which function solves the φ-equation d^2Φ/dφ^2 + m_J^2Φ = 0?",
+    "choices": [
+      {
+        "text": "(1/√(2π))e^(2iφ)",
+        "correct": true
+      },
+      {
+        "text": "(1/√(2π))e^(2φ)",
+        "why": "The second derivative of e^(2φ) is +4e^(2φ), so the left side is 8Φ, not 0. The i is needed, because (2i)^2 = −4."
+      },
+      {
+        "text": "(1/√(2π))e^(iφ)",
+        "why": "This is the m_J = 1 function. Its second derivative is −Φ, which cancels m_J^2Φ only when m_J = 1."
+      },
+      {
+        "text": "(1/√(2π))φ^2",
+        "why": "The second derivative of φ^2 is 2, which can't cancel 4φ^2. The solutions are complex exponentials such as e^(2iφ)."
+      }
+    ],
+    "explanation": "The second derivative of e^(2iφ) is (2i)^2 e^(2iφ) = −4e^(2iφ), and adding m_J^2Φ = 4Φ gives 0. Table 5.8.1 lists (1/√(2π))e^(2iφ) as the Φ for m_J = 2."
+  },
+  {
+    "id": "pc5-rotor-phi-normalization",
+    "type": "numeric",
+    "prompt": "Normalizing the φ function Φ(φ) = Ne^(iφ) from φ = 0 to 2π gives N^2 × 2π = 1. What is N? (Give it as a decimal.)",
+    "answer": 0.3989,
+    "tolerance": 0.01,
+    "explanation": "N^2 = 1/(2π), so N = 1/√(2π) = 1/2.507 = 0.399. This is the factor 1/√(2π) in every Φ function in Table 5.8.1."
+  },
+  {
+    "id": "pc5-rotor-cyclic",
+    "type": "multiple-choice",
+    "prompt": "Why must the φ function satisfy Φ(φ) = Φ(φ + 2π)?",
+    "choices": [
+      {
+        "text": "φ and φ + 2π describe the same orientation",
+        "correct": true
+      },
+      {
+        "text": "Φ must be zero at φ = 0 and at φ = 2π",
+        "why": "That is a particle-in-a-box style condition. Here a full turn brings the molecule back to the same place, so Φ must simply repeat."
+      },
+      {
+        "text": "It keeps Φ(φ) normalized",
+        "why": "Normalization is a separate condition, which fixes N = 1/√(2π). The cyclic condition comes from φ + 2π being the same point as φ."
+      },
+      {
+        "text": "The energy must be zero after a full turn",
+        "why": "The condition is on the wavefunction, not the energy: adding 2π to φ gives the same point, so Φ must have the same value."
+      }
+    ],
+    "explanation": "Turning through 2π brings the internuclear axis back to the same position, so the wavefunction must have the same value: Φ(φ) = Φ(φ + 2π). This cyclic boundary condition is what makes m_J an integer."
+  },
+  {
+    "id": "pc5-rotor-mj-values",
+    "type": "multiple-choice",
+    "prompt": "According to the cyclic boundary condition, which values can m_J take?",
+    "choices": [
+      {
+        "text": "0, ±1, ±2, ±3, …",
+        "correct": true
+      },
+      {
+        "text": "1, 2, 3, … only",
+        "why": "m_J can be zero or negative too. The cyclic condition only requires m_J to be an integer."
+      },
+      {
+        "text": "Any real number",
+        "why": "Only integers make Φ repeat after a full turn, so non-integer values are not allowed."
+      },
+      {
+        "text": "±1/2, ±3/2, ±5/2, …",
+        "why": "With a half-integer, Φ would change sign after a full turn instead of repeating, so half-integers fail the cyclic condition."
+      }
+    ],
+    "explanation": "The cyclic condition needs the factor picked up in a full turn to equal 1, which is true only when m_J is zero or a positive or negative integer. So m_J = 0, ±1, ±2, …."
+  },
+  {
+    "id": "pc5-rotor-theta-solutions",
+    "type": "multiple-choice",
+    "prompt": "What kind of functions solve the θ-equation of the rigid rotor?",
+    "choices": [
+      {
+        "text": "Associated Legendre functions of sin θ and cos θ",
+        "correct": true
+      },
+      {
+        "text": "Hermite polynomials, as for the harmonic oscillator",
+        "why": "Hermite polynomials solve the harmonic oscillator. The θ-equation gives associated Legendre functions, built from sines and cosines of θ."
+      },
+      {
+        "text": "Sine waves sin(nπx/L), as in a box",
+        "why": "Those are the particle-in-a-box solutions. The θ-functions are associated Legendre functions, such as √(3/2) cos θ for J = 1, m_J = 0."
+      },
+      {
+        "text": "Real exponentials that decay as θ grows",
+        "why": "The θ-functions are trigonometric: products and powers of sin θ and cos θ."
+      }
+    ],
+    "explanation": "The solutions of the θ-equation are associated Legendre functions, power series of sine and cosine functions. Table 5.8.1 lists them, for example Θ = 1/√2 for J = 0 and √(3/2) cos θ for J = 1, m_J = 0."
+  },
+  {
+    "id": "pc5-rotor-mj-not-allowed",
+    "type": "multiple-choice",
+    "prompt": "For a rotational level with J = 2, which value of m_J is not allowed?",
+    "choices": [
+      {
+        "text": "3",
+        "correct": true
+      },
+      {
+        "text": "−2",
+        "why": "|−2| = 2 is not larger than J, so m_J = −2 is allowed. For J = 2, m_J runs from −2 to +2."
+      },
+      {
+        "text": "0",
+        "why": "m_J = 0 is allowed for every J. For J = 2 the allowed values are −2, −1, 0, 1 and 2."
+      },
+      {
+        "text": "1",
+        "why": "|1| ≤ 2, so m_J = 1 is allowed. Only values with |m_J| greater than J are ruled out."
+      }
+    ],
+    "explanation": "Solving the θ-equation requires J ≥ |m_J|, so for J = 2 the allowed values are m_J = −2, −1, 0, +1, +2. m_J = 3 would need J ≥ 3."
+  },
+  {
+    "id": "pc5-rotor-mj-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the quantum number m_J describe?",
+    "choices": [
+      {
+        "text": "The z-component of the angular momentum",
+        "correct": true
+      },
+      {
+        "text": "The length of the angular momentum vector",
+        "why": "The length is set by J. m_J gives the component along z, which tells you the direction the vector points."
+      },
+      {
+        "text": "How fast the molecule is rotating",
+        "why": "The rotational energy depends only on J. m_J describes the direction of the angular momentum, through its z-component."
+      },
+      {
+        "text": "The length of the molecule's bond",
+        "why": "The bond length is fixed at r_0 in this model. m_J describes the angular momentum's component along the z-axis."
+      }
+    ],
+    "explanation": "m_J reflects the component of the angular momentum along z: for large positive m_J it points mostly along +z, and for m_J = 0 it is perpendicular to z. J, the total angular momentum quantum number, measures the vector's length."
+  },
+  {
+    "id": "pc5-rotor-energy-depends-on",
+    "type": "multiple-choice",
+    "prompt": "The rigid rotor energy is E = J(J + 1)ħ^2/(2I). Which quantum number does it depend on?",
+    "choices": [
+      {
+        "text": "J only",
+        "correct": true
+      },
+      {
+        "text": "m_J only",
+        "why": "m_J doesn't appear in the formula. It sets the direction of the angular momentum, and the energy doesn't depend on direction."
+      },
+      {
+        "text": "Both J and m_J",
+        "why": "The formula contains J but not m_J, which is why states with different m_J have the same energy."
+      },
+      {
+        "text": "Neither; any energy is allowed",
+        "why": "The quantum rotor's energy is quantized: J(J + 1) fixes it for each J."
+      }
+    ],
+    "explanation": "The energy depends only on J, which measures the length of the angular momentum vector, not on m_J, which gives its direction. The energy of the rotor is not affected by its orientation in space."
+  },
+  {
+    "id": "pc5-rotor-ground-energy",
+    "type": "multiple-choice",
+    "prompt": "What is the energy of the lowest rotational state, J = 0?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "ħ^2/(2I)",
+        "why": "With J = 0, J(J + 1) = 0 × 1 = 0, so the energy is 0. The next level, J = 1, has 2ħ^2/(2I)."
+      },
+      {
+        "text": "(1/2)ħ^2/(2I), a zero-point energy",
+        "why": "A zero-point energy, (1/2)hν, belongs to the harmonic oscillator. For the rotor, J = 0 gives J(J + 1) = 0."
+      },
+      {
+        "text": "2ħ^2/(2I)",
+        "why": "That is the energy of the J = 1 level. For J = 0, J(J + 1) = 0."
+      }
+    ],
+    "explanation": "E = J(J + 1)ħ^2/(2I) is zero for J = 0, and only one state, m_J = 0, has this energy. Unlike the harmonic oscillator, the rigid rotor has no zero-point energy."
+  },
+  {
+    "id": "pc5-rotor-energy-j6",
+    "type": "numeric",
+    "prompt": "The rigid rotor energies are E = J(J + 1)ħ^2/(2I). In units of ħ^2/(2I), what is the energy of the J = 6 level?",
+    "answer": 42,
+    "tolerance": 0,
+    "explanation": "E = 6 × 7 × ħ^2/(2I) = 42ħ^2/(2I). The levels from J = 0 to 6 are 0, 2, 6, 12, 20, 30 and 42 in these units."
+  },
+  {
+    "id": "pc5-rotor-spacing",
+    "type": "multiple-choice",
+    "prompt": "As J increases, what happens to the spacing between neighbouring rotational energy levels?",
+    "choices": [
+      {
+        "text": "It gets larger",
+        "correct": true
+      },
+      {
+        "text": "It stays the same",
+        "why": "Equal spacing belongs to the harmonic oscillator. The rotor's levels, 0, 2, 6, 12, … in units of ħ^2/(2I), spread apart."
+      },
+      {
+        "text": "It gets smaller",
+        "why": "The gaps are 2, 4, 6, 8, … in units of ħ^2/(2I), so they grow with J."
+      },
+      {
+        "text": "It drops to zero at high J",
+        "why": "The gap between J and J + 1 is 2(J + 1)ħ^2/(2I), which keeps growing with J."
+      }
+    ],
+    "explanation": "In units of ħ^2/(2I) the energies are 0, 2, 6, 12, 20, 30, …, so the gaps are 2, 4, 6, 8, 10, …. The levels get farther apart as J increases."
+  },
+  {
+    "id": "pc5-rotor-gap-3-4",
+    "type": "numeric",
+    "prompt": "Using E = J(J + 1)ħ^2/(2I), what is the energy gap between the J = 3 and J = 4 levels, in units of ħ^2/(2I)?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "E_4 = 4 × 5 = 20 and E_3 = 3 × 4 = 12 in units of ħ^2/(2I), so the gap is 20 − 12 = 8. The gap from J = 2 to J = 3 is only 12 − 6 = 6, so the levels spread apart as J grows."
+  },
+  {
+    "id": "pc5-rotor-degeneracy-why",
+    "type": "multiple-choice",
+    "prompt": "Why is each rigid rotor level (2J + 1)-fold degenerate?",
+    "choices": [
+      {
+        "text": "m_J takes 2J + 1 values, all with the same energy",
+        "correct": true
+      },
+      {
+        "text": "J itself can take 2J + 1 different values",
+        "why": "J labels the level; it is m_J that runs from −J to +J. Counting those values gives 2J + 1."
+      },
+      {
+        "text": "The level splits into 2J + 1 different energies",
+        "why": "Degenerate states have the same energy. The 2J + 1 states differ in m_J, which doesn't change the energy."
+      },
+      {
+        "text": "The molecule can spin at 2J + 1 different speeds",
+        "why": "All 2J + 1 states have the same energy, so they don't differ in speed; they differ in the direction of the angular momentum."
+      }
+    ],
+    "explanation": "For a given J, m_J ranges from +J to −J in integer steps, including 0: that is 2J + 1 values. The energy doesn't depend on m_J, so all 2J + 1 states share the same energy."
+  },
+  {
+    "id": "pc5-rotor-degeneracy-j4",
+    "type": "numeric",
+    "prompt": "Each rigid rotor level is (2J + 1)-fold degenerate. How many states have the energy of the J = 4 level?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "2J + 1 = 2 × 4 + 1 = 9. These are the states m_J = −4, −3, −2, −1, 0, 1, 2, 3 and 4."
+  },
+  {
+    "id": "pc5-rotor-o2-transition",
+    "type": "numeric",
+    "prompt": "In Example 5.8.7, the energy of the J = 0 to J = 1 transition of O2 is E = ħ^2/(μr^2). Using ħ = 1.055 × 10^−34 J·s, μ = 1.33 × 10^−26 kg and r = 1.21 × 10^−10 m, what is E, in J? (Type it in scientific notation, like 2.5e-23.)",
+    "answer": 5.716e-23,
+    "unit": "J",
+    "tolerance": 0.02,
+    "explanation": "ħ^2 = 1.113 × 10^−68 and μr^2 = (1.33 × 10^−26)(1.464 × 10^−20) = 1.947 × 10^−46, so E = (1.113 × 10^−68)/(1.947 × 10^−46) = 5.72 × 10^−23 J. This is E_1 − E_0 = 2ħ^2/(2I) = ħ^2/I."
+  },
+  {
+    "id": "pc5-rotor-spherical-harmonic",
+    "type": "multiple-choice",
+    "prompt": "What is a spherical harmonic Y(θ, φ)?",
+    "choices": [
+      {
+        "text": "A rigid rotor wavefunction, Θ(θ) times Φ(φ)",
+        "correct": true
+      },
+      {
+        "text": "The rotor's energy at the angles θ and φ",
+        "why": "The energy depends only on J. A spherical harmonic is the wavefunction itself, the product Θ(θ)Φ(φ)."
+      },
+      {
+        "text": "The bond length at the angles θ and φ",
+        "why": "The bond length is fixed at r_0. Y(θ, φ) is the wavefunction, which depends on the two angles."
+      },
+      {
+        "text": "The sum Θ(θ) + Φ(φ) of the two angle functions",
+        "why": "Separation of variables writes the wavefunction as a product, not a sum: Y = Θ(θ)Φ(φ)."
+      }
+    ],
+    "explanation": "A solution of the rigid rotor Schrödinger equation can be written as a single function Y(θ, φ), the product of a θ-function and a φ-function. It is labeled with J and m_J because its form depends on both."
+  },
+  {
+    "id": "pc5-rotor-area-element",
+    "type": "multiple-choice",
+    "prompt": "In spherical coordinates, what is the area element ds used to integrate over θ and φ for a rigid rotor?",
+    "choices": [
+      {
+        "text": "sin θ dθ dφ",
+        "correct": true
+      },
+      {
+        "text": "dθ dφ",
+        "why": "On a sphere the area element includes sin θ, because circles of constant θ shrink toward the poles."
+      },
+      {
+        "text": "r^2 sin θ dr dθ dφ",
+        "why": "That is the volume element dτ for all of 3D space. The rotor's r is fixed, so only the angles are integrated."
+      },
+      {
+        "text": "cos θ dθ dφ",
+        "why": "The factor is sin θ, not cos θ: ds = sin θ dθ dφ."
+      }
+    ],
+    "explanation": "The rotor lives on the surface of a sphere, and the area element there is ds = sin θ dθ dφ. The probability of finding the internuclear axis in a small patch is Y^*Y ds."
+  },
+  {
+    "id": "pc5-rotor-y10-node",
+    "type": "multiple-choice",
+    "prompt": "The J = 1, m_J = 0 wavefunction is Y_1^(0) = √(3/(4π)) cos θ. Where is its node?",
+    "choices": [
+      {
+        "text": "At θ = 90°, the whole xy-plane",
+        "correct": true
+      },
+      {
+        "text": "At θ = 0°, along the z-axis",
+        "why": "cos 0° = 1, so Y_1^(0) is largest there, not zero. It is zero where cos θ = 0, at θ = 90°."
+      },
+      {
+        "text": "At φ = 0°, along the x-axis",
+        "why": "Y_1^(0) doesn't depend on φ at all, so it can't vanish at one value of φ. Its node is at θ = 90°."
+      },
+      {
+        "text": "It has no node anywhere",
+        "why": "cos θ = 0 at θ = 90°, so the function is zero in the whole xy-plane."
+      }
+    ],
+    "explanation": "cos 90° = 0, so Y_1^(0) is zero at θ = 90° for every φ: the whole xy-plane is a node. The internuclear axis is never found there, unlike the classical picture of a rotating molecule."
+  },
+  {
+    "id": "pc5-rotor-y10-most-probable",
+    "type": "multiple-choice",
+    "prompt": "For the J = 1, m_J = 0 state, |Y_1^(0)|^2 = (3/(4π)) cos^2θ. Along which direction is the internuclear axis most likely to be found?",
+    "choices": [
+      {
+        "text": "Along the z-axis",
+        "correct": true
+      },
+      {
+        "text": "In the xy-plane",
+        "why": "The xy-plane is a node, where the probability is zero. cos^2θ is largest at θ = 0° and 180°, along z."
+      },
+      {
+        "text": "Along the x-axis only",
+        "why": "The probability doesn't depend on φ, so the x-axis is not special. It is largest along z."
+      },
+      {
+        "text": "Equally in every direction",
+        "why": "That is true for J = 0, where Y is a constant. For J = 1, m_J = 0, the cos^2θ makes the z-axis most likely."
+      }
+    ],
+    "explanation": "cos^2θ is largest at θ = 0° and 180°, so the axis is most likely along z, though it can be found at other angles too. With no φ-dependence, every plane containing the z-axis is equally likely."
+  },
+  {
+    "id": "pc5-rotor-y00-uniform",
+    "type": "multiple-choice",
+    "prompt": "For J = 0, the wavefunction is Y_0^(0) = 1/√(4π), a constant. What does this say about the orientation of the internuclear axis?",
+    "choices": [
+      {
+        "text": "Every orientation is equally likely",
+        "correct": true
+      },
+      {
+        "text": "It always points along the z-axis",
+        "why": "A constant Y gives the same probability density at every θ and φ, so no direction is preferred."
+      },
+      {
+        "text": "It always lies in the xy-plane",
+        "why": "Y_0^(0) doesn't depend on θ, so the xy-plane is no more likely than any other direction."
+      },
+      {
+        "text": "It is never found in the xy-plane",
+        "why": "That describes the J = 1, m_J = 0 state, whose node is the xy-plane. A nonzero constant has no nodes."
+      }
+    ],
+    "explanation": "Y_0^(0) has the same value at every θ and φ, so |Y|^2 is the same in every direction. In the J = 0 state no orientation of the molecule is preferred."
+  },
+  {
+    "id": "pc5-rotor-orbital-shapes",
+    "type": "multiple-choice",
+    "prompt": "According to the section's summary, the probabilities |Y|^2 of the spherical harmonics have the shapes of what?",
+    "choices": [
+      {
+        "text": "The s, p and d orbitals",
+        "correct": true
+      },
+      {
+        "text": "The harmonic oscillator wavefunctions",
+        "why": "Those depend on a displacement x and contain Hermite polynomials. The spherical harmonics depend on θ and φ."
+      },
+      {
+        "text": "The particle-in-a-box standing waves",
+        "why": "Box wavefunctions are sine waves along a line. |Y|^2 has the angular shapes of the s, p and d orbitals."
+      },
+      {
+        "text": "The Lewis structures of molecules",
+        "why": "Lewis structures show bonding electron pairs, not wavefunctions. |Y|^2 gives the s, p and d orbital shapes."
+      }
+    ],
+    "explanation": "The summary notes that |Y|^2 for the spherical harmonics has the well-known shapes of the s, p and d orbitals from general chemistry. For example, Y_0^(0) is a constant, giving a spherical shape like an s orbital."
+  }
+]

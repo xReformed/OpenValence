@@ -1,0 +1,522 @@
+[
+  {
+    "id": "pc13-ir-activity-initial-state",
+    "type": "multiple-choice",
+    "prompt": "The section writes the transition moment for one normal mode as M(v → v') = ⟨φ(v' ≠ 0)|μ⃗|φ(v = 0)⟩. Which vibrational state does the molecule start in?",
+    "choices": [
+      {
+        "text": "v = 0, the ground vibrational state",
+        "correct": true
+      },
+      {
+        "text": "v', the excited state on the left",
+        "why": "φ(v' ≠ 0), on the left, is the final state. The section writes M as ⟨final|μ⃗|initial⟩, so the molecule starts in v = 0."
+      },
+      {
+        "text": "Any v, since M doesn't depend on it",
+        "why": "M depends on both states. Here the initial wavefunction, on the right, is φ(v = 0), so the transition starts from the ground state."
+      },
+      {
+        "text": "A virtual state, as in Raman scattering",
+        "why": "Virtual states belong to Raman scattering, not to this IR integral. The initial state, on the right of the bracket, is v = 0."
+      }
+    ],
+    "explanation": "The section writes M(v → v') = ⟨final wavefunction|μ⃗|initial wavefunction⟩. The initial wavefunction is φ(v = 0), the ground state, and the final one is φ(v' ≠ 0), an excited level."
+  },
+  {
+    "id": "pc13-ir-activity-phi-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the section's transition moment M(v → v') = ⟨φ(v' ≠ 0)|μ⃗|φ(v = 0)⟩, what does φ(v) stand for?",
+    "choices": [
+      {
+        "text": "A vibrational wavefunction of one normal mode",
+        "correct": true
+      },
+      {
+        "text": "An electronic wavefunction of the molecule",
+        "why": "The electronic state doesn't change in an IR transition. φ(v) is the vibrational wavefunction, with quantum number v, of the normal mode being excited."
+      },
+      {
+        "text": "A rotational spherical harmonic",
+        "why": "Spherical harmonics describe rotation. Here φ(v) is the vibrational wavefunction of a specific normal mode, labeled by v."
+      },
+      {
+        "text": "The angle between the two O–H bonds",
+        "why": "φ here is not an angle. φ(v) is the vibrational wavefunction of a normal mode in level v."
+      }
+    ],
+    "explanation": "The section writes the transition moment with the vibrational wavefunctions |φ(v)⟩ of one specific normal mode. The integral links the initial level v = 0 with a final level v' ≠ 0 of that mode."
+  },
+  {
+    "id": "pc13-ir-activity-alpha-matrix",
+    "type": "multiple-choice",
+    "prompt": "The section's Raman transition moment is ⟨φ(v' ≠ 0)|α|φ(v = 0)⟩. What is α, and how is it usually represented?",
+    "choices": [
+      {
+        "text": "The polarizability tensor, as a square matrix",
+        "correct": true
+      },
+      {
+        "text": "The dipole moment, as a single vector",
+        "why": "The dipole moment μ⃗ is in the IR integral. The Raman integral contains the polarizability tensor α, usually written as a square matrix."
+      },
+      {
+        "text": "The force constant, as a single number",
+        "why": "Force constants aren't in the transition moment. α is the polarizability tensor, usually represented by a square matrix."
+      },
+      {
+        "text": "The normal coordinate, as a list of numbers",
+        "why": "The normal coordinate describes the motion; it isn't the operator here. α is the polarizability tensor, usually represented by a square matrix."
+      }
+    ],
+    "explanation": "For Raman activity the operator in the transition moment is the polarizability tensor α, usually represented by a square matrix. As in the IR case, the integral must contain the totally symmetric irreducible representation for the transition to be allowed."
+  },
+  {
+    "id": "pc13-ir-activity-raman-dalpha",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what must be true of the polarizability α for a vibration to show Raman scattering?",
+    "choices": [
+      {
+        "text": "It must change during the vibration",
+        "correct": true
+      },
+      {
+        "text": "It just has to be nonzero",
+        "why": "Every molecule has a nonzero polarizability, so that can't be the test. The vibration must change α, that is ∂α/∂Q ≠ 0."
+      },
+      {
+        "text": "It must stay constant during the vibration",
+        "why": "A constant α comes out of the integral, and the orthogonal wavefunctions then give zero, just as for a constant μ⃗. α must change: ∂α/∂Q ≠ 0."
+      },
+      {
+        "text": "It must be exactly zero",
+        "why": "A zero polarizability would give no Raman scattering at all. The requirement is that α changes during the vibration, ∂α/∂Q ≠ 0."
+      }
+    ],
+    "explanation": "Following the same argument as for IR, α must change during the vibration, ∂α/∂Q ≠ 0 (Q is the normal coordinate), for the Raman transition to be allowed. Every molecule has some polarizability, so being nonzero is not enough."
+  },
+  {
+    "id": "pc13-ir-activity-ir-raman-pairing",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which property must change during a vibration for it to be IR active, and which for it to be Raman active?",
+    "choices": [
+      {
+        "text": "IR: dipole moment; Raman: polarizability",
+        "correct": true
+      },
+      {
+        "text": "IR: polarizability; Raman: dipole moment",
+        "why": "That is the wrong way round. IR activity needs a changing dipole moment; Raman activity needs a changing polarizability."
+      },
+      {
+        "text": "Both need the dipole moment to change",
+        "why": "Only IR activity depends on the dipole moment. Raman activity depends on a change in polarizability."
+      },
+      {
+        "text": "Both need the bond length to change",
+        "why": "Bends change no bond length but can still be active. The tests are a changing dipole moment for IR and a changing polarizability for Raman."
+      }
+    ],
+    "explanation": "For a vibration to be IR active the dipole moment has to change during the vibration; for it to be Raman active the polarizability has to change. That is why μ⃗ appears in the IR integral and α in the Raman integral."
+  },
+  {
+    "id": "pc13-ir-activity-uma-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section's table for water has a row labeled UMA. What does UMA stand for?",
+    "choices": [
+      {
+        "text": "The number of unmoved atoms",
+        "correct": true
+      },
+      {
+        "text": "A unit of molecular angular momentum",
+        "why": "UMA isn't an angular momentum. It counts the atoms each symmetry operation leaves in place: 3, 1, 1 and 3 for water."
+      },
+      {
+        "text": "The number of unpaired electrons",
+        "why": "Electrons don't enter this table. UMA is the number of unmoved atoms, which is multiplied by Γ_(x,y,z) to give Γ_tot."
+      },
+      {
+        "text": "The total mass of the molecule",
+        "why": "Mass doesn't appear in the symmetry analysis. UMA is the number of atoms left unmoved by each operation."
+      }
+    ],
+    "explanation": "UMA is the number of unmoved atoms under each symmetry operation. Multiplying it by the Γ_(x,y,z) character for the same operation gives Γ_tot, the representation of all 3N motions."
+  },
+  {
+    "id": "pc13-ir-activity-uma-c2",
+    "type": "multiple-choice",
+    "prompt": "In the section's table for water, the UMA row reads 3, 1, 1, 3 under E, C_2, σ(xz) and σ(yz). Why is UMA only 1 under C_2?",
+    "choices": [
+      {
+        "text": "Only the O atom lies on the C_2 axis",
+        "correct": true
+      },
+      {
+        "text": "C_2 moves every atom except one H",
+        "why": "The H atoms are equivalent, so C_2 can't keep one and move the other: it swaps them. The atom left in place is O, which sits on the axis."
+      },
+      {
+        "text": "Only one atom moves under C_2",
+        "why": "Two atoms move under C_2: the H atoms swap places. UMA counts the atoms that stay put, and only O, on the axis, does."
+      },
+      {
+        "text": "Each H atom counts as half an atom",
+        "why": "UMA counts whole atoms. Under C_2 the two H atoms trade places, so only the O atom on the axis is unmoved."
+      }
+    ],
+    "explanation": "The C_2 axis passes through the O atom and bisects the H–O–H angle. Rotating by 180° leaves O in place and swaps the two H atoms, so the number of unmoved atoms is 1."
+  },
+  {
+    "id": "pc13-ir-activity-rot-not-trans",
+    "type": "multiple-choice",
+    "prompt": "In the section, water's Γ_trans = a_1 + b_1 + b_2 and Γ_rot = a_2 + b_1 + b_2. Which irreducible representation appears among the rotations but not among the translations?",
+    "choices": [
+      {
+        "text": "a_2",
+        "correct": true
+      },
+      {
+        "text": "a_1",
+        "why": "a_1 is in Γ_trans, as the symmetry of z, but it isn't in Γ_rot."
+      },
+      {
+        "text": "b_1",
+        "why": "b_1 appears in both lists: x is b_1, and so is one of the rotations."
+      },
+      {
+        "text": "b_2",
+        "why": "b_2 appears in both lists: y is b_2, and so is one of the rotations."
+      }
+    ],
+    "explanation": "a_2 is the symmetry of R_z, the rotation about the C_2 axis, and none of x, y or z transforms as a_2. So the a_2 in Γ_tot is removed with the rotations, and no vibration of water is a_2."
+  },
+  {
+    "id": "pc13-ir-activity-three-bands",
+    "type": "multiple-choice",
+    "prompt": "Group theory predicts that all three of water's normal modes are IR active. What does the measured IR spectrum of water show?",
+    "choices": [
+      {
+        "text": "Three bands, as predicted",
+        "correct": true
+      },
+      {
+        "text": "Two bands, as the stretches coincide",
+        "why": "The two stretches give separate bands, at 3657 and 3756 cm^−1. With the bend at 1595 cm^−1, there are three bands, as predicted."
+      },
+      {
+        "text": "One band, from the bend only",
+        "why": "All three modes absorb. The spectrum has three bands: 3657, 3756 and 1595 cm^−1."
+      },
+      {
+        "text": "Nine bands, one per degree of freedom",
+        "why": "Only vibrations give IR bands, and water has 3N − 6 = 3 of them, not 9. The spectrum has three bands, as predicted."
+      }
+    ],
+    "explanation": "The IR spectrum of H2O does indeed have three bands: the symmetric stretch ν_1 at 3657 cm^−1, the asymmetric stretch ν_3 at 3756 cm^−1 and the bend ν_2 at 1595 cm^−1."
+  },
+  {
+    "id": "pc13-ir-activity-bend-band",
+    "type": "multiple-choice",
+    "prompt": "Water's IR bands lie at 3657, 3756 and 1595 cm^−1. Which normal mode gives the band at 1595 cm^−1?",
+    "choices": [
+      {
+        "text": "The bend, ν_2",
+        "correct": true
+      },
+      {
+        "text": "The symmetric stretch, ν_1",
+        "why": "The symmetric stretch is at 3657 cm^−1. The low-wavenumber band at 1595 cm^−1 is the bend."
+      },
+      {
+        "text": "The asymmetric stretch, ν_3",
+        "why": "The asymmetric stretch is the highest band, at 3756 cm^−1. The 1595 cm^−1 band is the bend."
+      },
+      {
+        "text": "A rotation about the C_2 axis",
+        "why": "Rotations aren't normal modes, and pure rotational lines lie much lower, in the microwave region. The 1595 cm^−1 band is the bend."
+      }
+    ],
+    "explanation": "The section gives ν_1 (symmetric stretch) at 3657 cm^−1, ν_3 (asymmetric stretch) at 3756 cm^−1 and ν_2 (bend) at 1595 cm^−1. Bending the H–O–H angle takes less energy than stretching the O–H bonds."
+  },
+  {
+    "id": "pc13-ir-activity-stretch-analysis-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does the section's stretching analysis let you find out about a molecule's normal modes?",
+    "choices": [
+      {
+        "text": "Which modes are stretches and which are bends",
+        "correct": true
+      },
+      {
+        "text": "Which modes are IR active and which are not",
+        "why": "IR activity comes from comparing Γ_vib with x, y and z. The stretching analysis sorts the modes into stretches and bends."
+      },
+      {
+        "text": "The exact wavenumber of each stretching mode",
+        "why": "Symmetry gives no wavenumbers. The stretching analysis tells which modes are stretches; the bends follow from Γ_bend = Γ_vib − Γ_stretch."
+      },
+      {
+        "text": "How many atoms each mode leaves unmoved",
+        "why": "Unmoved atoms are counted to build Γ_tot. The stretching analysis instead tracks the bonds, to tell stretches from bends."
+      }
+    ],
+    "explanation": "In a stretching analysis, double-headed arrows along the bonds give Γ_stretch. Subtracting it from Γ_vib gives Γ_bend, so you learn which modes are stretches and which are bends."
+  },
+  {
+    "id": "pc13-ir-activity-arrows",
+    "type": "multiple-choice",
+    "prompt": "In the stretching analysis of water, what do the double-headed arrows drawn on the molecule stand for?",
+    "choices": [
+      {
+        "text": "The O–H bonds, which can stretch",
+        "correct": true
+      },
+      {
+        "text": "The molecule's dipole moment",
+        "why": "The dipole moment is a single vector, not one arrow per bond. Each double-headed arrow stands for an O–H bond that can lengthen or shorten."
+      },
+      {
+        "text": "The two mirror planes of C_2v",
+        "why": "Mirror planes are symmetry elements, not arrows on bonds. The arrows stand for the O–H bonds, whose stretching is being tracked."
+      },
+      {
+        "text": "The x, y and z axes on each atom",
+        "why": "Those are the 3N Cartesian vectors behind Γ_tot. The stretching analysis uses one double-headed arrow per bond instead."
+      }
+    ],
+    "explanation": "A double-headed arrow is drawn along each bond, here the two O–H bonds. How these arrows transform under each C_2v operation gives Γ_stretch = a_1 + b_2."
+  },
+  {
+    "id": "pc13-ir-activity-stretch-c2-zero",
+    "type": "multiple-choice",
+    "prompt": "Water's Γ_stretch has the characters 2, 0, 0, 2 under E, C_2, σ(xz) and σ(yz). Why is its character 0 under C_2?",
+    "choices": [
+      {
+        "text": "C_2 swaps the two O–H bonds",
+        "correct": true
+      },
+      {
+        "text": "C_2 shrinks both bonds to zero length",
+        "why": "Symmetry operations don't change bond lengths. C_2 swaps the two O–H arrows, and an arrow moved to a new place adds 0."
+      },
+      {
+        "text": "C_2 reverses both arrows, each giving −1",
+        "why": "Reversing both arrows would give −2, not 0. In fact each arrow is moved onto the other bond, and an arrow that moves adds 0."
+      },
+      {
+        "text": "The O atom lies on the C_2 axis",
+        "why": "O does lie on the axis, but the arrows stand for bonds, not atoms. C_2 moves each O–H bond onto the other, so neither stays in place."
+      }
+    ],
+    "explanation": "Each arrow left in place adds 1 to the character, and each one moved onto another bond adds 0. C_2 carries each O–H bond onto the other, so the character is 0; the same happens under σ(xz)."
+  },
+  {
+    "id": "pc13-ir-activity-bend-water",
+    "type": "multiple-choice",
+    "prompt": "For water the section finds Γ_vib = 2a_1 + b_2 and Γ_stretch = a_1 + b_2. Using Γ_bend = Γ_vib − Γ_stretch, what is Γ_bend?",
+    "choices": [
+      {
+        "text": "a_1",
+        "correct": true
+      },
+      {
+        "text": "b_2",
+        "why": "b_2 is in both Γ_vib and Γ_stretch, so it cancels. The asymmetric stretch is b_2, and the one mode left over is a_1."
+      },
+      {
+        "text": "a_1 + b_2",
+        "why": "That is Γ_stretch itself. Subtracting it from 2a_1 + b_2 leaves just a_1."
+      },
+      {
+        "text": "2a_1",
+        "why": "Only one a_1 is left after subtracting Γ_stretch: 2a_1 − a_1 = a_1. Water has one bend."
+      }
+    ],
+    "explanation": "Γ_bend = (2a_1 + b_2) − (a_1 + b_2) = a_1. So water has two stretches, a_1 and b_2, and one bend of a_1 symmetry."
+  },
+  {
+    "id": "pc13-ir-activity-hot-bands",
+    "type": "multiple-choice",
+    "prompt": "What does the section call transitions that start from a thermally excited v = 1 level instead of from v = 0?",
+    "choices": [
+      {
+        "text": "Hot bands",
+        "correct": true
+      },
+      {
+        "text": "Overtones",
+        "why": "Overtones are transitions with Δv = 2, 3 and so on, usually from v = 0. Transitions that start from a thermally populated v = 1 level are hot bands."
+      },
+      {
+        "text": "Fundamentals",
+        "why": "A fundamental is the v = 0 → 1 transition. Transitions that start from a thermally excited level are hot bands."
+      },
+      {
+        "text": "Combination bands",
+        "why": "Combination bands excite two different modes at once. Transitions that begin in a thermally excited v = 1 level are called hot bands."
+      }
+    ],
+    "explanation": "Some molecules have a significant population of the v = 1 state at room temperature. Transitions that start from this thermally excited state are called hot bands."
+  },
+  {
+    "id": "pc13-ir-activity-bend-dipole",
+    "type": "multiple-choice",
+    "prompt": "Water's bend ν_2 leaves both O–H bond lengths unchanged, yet it is IR active. Why?",
+    "choices": [
+      {
+        "text": "Bending changes the dipole moment",
+        "correct": true
+      },
+      {
+        "text": "It changes the polarizability only",
+        "why": "A change in polarizability makes a mode Raman active, not IR active. The bend is IR active because it changes the dipole moment."
+      },
+      {
+        "text": "Water is polar, so any motion absorbs",
+        "why": "A permanent dipole isn't enough: a constant μ⃗ comes out of the integral and gives M = 0. The bend is IR active because it changes the dipole moment."
+      },
+      {
+        "text": "Bends need no change in dipole moment",
+        "why": "Every IR-active vibration must change the dipole moment, bends included. Opening and closing the H–O–H angle changes the size of water's dipole moment."
+      }
+    ],
+    "explanation": "For M to be nonzero, μ⃗ must change during the vibration; whether bond lengths change doesn't matter. Opening and closing the H–O–H angle changes the size of water's dipole moment, so the bend absorbs, at 1595 cm^−1."
+  },
+  {
+    "id": "pc13-ir-activity-y-axis",
+    "type": "multiple-choice",
+    "prompt": "In this section's axes for water, z transforms as a_1, x as b_1 and y as b_2. Along which axis does the b_2 asymmetric stretch change the dipole moment, making it IR active?",
+    "choices": [
+      {
+        "text": "y",
+        "correct": true
+      },
+      {
+        "text": "x",
+        "why": "x transforms as b_1, and in these axes none of water's vibrations is b_1. The b_2 asymmetric stretch matches y."
+      },
+      {
+        "text": "z",
+        "why": "z transforms as a_1, the symmetry of the symmetric stretch and the bend. The b_2 asymmetric stretch matches y."
+      },
+      {
+        "text": "None; b_2 modes are IR inactive",
+        "why": "A mode is IR active when its symmetry matches x, y or z. b_2 matches y, so the asymmetric stretch is IR active."
+      }
+    ],
+    "explanation": "A mode is IR active when Γ_vib and x, y or z share an irreducible representation. The asymmetric stretch is b_2, the same as y, so it changes the dipole moment along y, in the molecular plane and at right angles to the C_2 axis."
+  },
+  {
+    "id": "pc13-ir-activity-harmonic-origin",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the IR transition moment integral is derived from which model?",
+    "choices": [
+      {
+        "text": "The one-dimensional harmonic oscillator",
+        "correct": true
+      },
+      {
+        "text": "The three-dimensional rigid rotor",
+        "why": "The rigid rotor describes rotation. The vibrational transition moment comes from the one-dimensional harmonic oscillator."
+      },
+      {
+        "text": "The particle in a one-dimensional box",
+        "why": "The particle in a box has no vibrating bond. The section derives the integral from the one-dimensional harmonic oscillator."
+      },
+      {
+        "text": "The hydrogen atom's radial equation",
+        "why": "The hydrogen atom concerns an electron bound to a nucleus, not a vibration. The integral comes from the one-dimensional harmonic oscillator."
+      }
+    ],
+    "explanation": "The transition moment integral is derived from the one-dimensional harmonic oscillator, applied to each normal mode in turn with its wavefunctions φ(v)."
+  },
+  {
+    "id": "pc13-ir-activity-raman-functions",
+    "type": "multiple-choice",
+    "prompt": "To decide which of water's modes are Raman active, the section cross-checks Γ_vib with the irreducible representations of which functions?",
+    "choices": [
+      {
+        "text": "z^2, x^2 − y^2, xy, xz and yz",
+        "correct": true
+      },
+      {
+        "text": "x, y and z",
+        "why": "Those are used for IR activity, which follows the dipole moment. Raman activity follows the polarizability, which transforms like z^2, x^2 − y^2, xy, xz and yz."
+      },
+      {
+        "text": "R_x, R_y and R_z",
+        "why": "Those are rotations, used to find Γ_rot. Raman activity is checked with z^2, x^2 − y^2, xy, xz and yz."
+      },
+      {
+        "text": "Only the totally symmetric z^2",
+        "why": "All of these products are used, not just z^2. Water's b_2 asymmetric stretch is Raman active through yz."
+      }
+    ],
+    "explanation": "For H2O, z^2 and x^2 − y^2 transform as a_1, xy as a_2, xz as b_1 and yz as b_2. Since Γ_vib = 2a_1 + b_2 contains a_1 and b_2, all three modes are Raman active as well."
+  },
+  {
+    "id": "pc13-ir-activity-two-routes",
+    "type": "multiple-choice",
+    "prompt": "Section 13.10 found water's Γ_vib by applying each symmetry operation to the three normal modes themselves. What other route does this section take?",
+    "choices": [
+      {
+        "text": "Subtract Γ_trans and Γ_rot from Γ_tot",
+        "correct": true
+      },
+      {
+        "text": "Read Γ_vib straight from the IR spectrum",
+        "why": "The spectrum confirms the prediction but doesn't give symmetry labels. The section builds Γ_tot for all 3N motions and subtracts Γ_trans and Γ_rot."
+      },
+      {
+        "text": "Add Γ_trans and Γ_rot to Γ_tot",
+        "why": "Adding would give more than 3N motions. Γ_tot already contains the translations and rotations, which must be subtracted."
+      },
+      {
+        "text": "Square the characters of Γ_(x,y,z)",
+        "why": "Squaring characters isn't part of the method. Γ_tot comes from Γ_(x,y,z) × UMA, and then Γ_trans and Γ_rot are subtracted."
+      }
+    ],
+    "explanation": "Γ_tot covers all 3N = 9 degrees of freedom of H2O. Removing Γ_trans (a_1 + b_1 + b_2) and Γ_rot (a_2 + b_1 + b_2) leaves Γ_vib = 2a_1 + b_2, the same result as in Section 13.10."
+  },
+  {
+    "id": "pc13-ir-activity-b1-left",
+    "type": "numeric",
+    "prompt": "Water's Γ_tot = 3a_1 + a_2 + 2b_1 + 3b_2, its Γ_trans = a_1 + b_1 + b_2 and its Γ_rot = a_2 + b_1 + b_2. Using Γ_vib = Γ_tot − Γ_trans − Γ_rot, how many b_1 terms are left in Γ_vib?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "2 − 1 − 1 = 0. Both b_1 terms in Γ_tot belong to a translation (x) and a rotation (R_y), so none of water's vibrations is b_1 in these axes."
+  },
+  {
+    "id": "pc13-ir-activity-nine-dof",
+    "type": "numeric",
+    "prompt": "The section reduces water's Γ_tot to 3a_1 + a_2 + 2b_1 + 3b_2. Each of these irreducible representations is one-dimensional and stands for one degree of freedom. How many degrees of freedom does Γ_tot contain?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "3 + 1 + 2 + 3 = 9, which matches 3N = 3 × 3 = 9 for water's three atoms. The section notes this as a check on Γ_tot."
+  },
+  {
+    "id": "pc13-ir-activity-ptcl4-bends",
+    "type": "numeric",
+    "prompt": "For [PtCl4]^2−, the section draws four double-headed arrows, one along each Pt–Cl bond, so Γ_stretch holds 4 modes. The ion has 9 vibrational modes in all. Using Γ_bend = Γ_vib − Γ_stretch, how many bending modes does it have?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "9 − 4 = 5 bending modes. These are the b_2g, a_2u, b_2u and e_u modes of Section 13.10, with the e_u pair counted as two."
+  },
+  {
+    "id": "pc13-ir-activity-bend-wavelength",
+    "type": "numeric",
+    "prompt": "Water's bend absorbs at ν̃ = 1595 cm^−1. Using λ = 10^4/ν̃, with λ in μm and ν̃ in cm^−1, what is the wavelength of this band, in μm? (Give it as a decimal.)",
+    "answer": 6.27,
+    "unit": "μm",
+    "explanation": "λ = 10^4/1595 = 6.27 μm, in the middle infrared."
+  },
+  {
+    "id": "pc13-ir-activity-stretch-frequency",
+    "type": "numeric",
+    "prompt": "In the section's water spectrum, the symmetric stretch ν_1 lies at 3657 cm^−1. Multiplying a wavenumber by the speed of light, c = 3.00 × 10^10 cm/s, turns it into a frequency: ν = cν̃. What is the frequency of ν_1, in Hz? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 109710000000000.0,
+    "unit": "Hz",
+    "explanation": "ν = (3.00 × 10^10 cm/s)(3657 cm^−1) = 1.10 × 10^14 Hz."
+  }
+]

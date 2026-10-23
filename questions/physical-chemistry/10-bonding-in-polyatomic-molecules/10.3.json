@@ -1,0 +1,600 @@
+[
+  {
+    "id": "pc10-beh2-secular-determinant",
+    "type": "multiple-choice",
+    "prompt": "How are the coefficients a_1 to a_6 of the AH_2 molecular orbitals found?",
+    "choices": [
+      {
+        "text": "By solving the secular determinant",
+        "correct": true
+      },
+      {
+        "text": "By counting the valence electrons on A",
+        "why": "The electron count decides which orbitals are filled, not what they are made of. The coefficients come from solving the secular determinant."
+      },
+      {
+        "text": "By measuring them in a photoelectron spectrum",
+        "why": "PES measures ionization energies, which reflect orbital energies, not coefficients. The coefficients come from solving the secular determinant."
+      },
+      {
+        "text": "By setting all six equal, by symmetry",
+        "why": "Symmetry ties only the two H coefficients together; A's coefficients differ from them. All of them are found by solving the secular determinant."
+      }
+    ],
+    "explanation": "As in earlier molecular orbital problems, the coefficients of the LCAO expansion are found by solving the secular determinant. Symmetry simplifies the job: the two H coefficients must be equal in size, and in linear AH_2 the 2p_x and 2p_y orbitals drop out of the σ orbitals."
+  },
+  {
+    "id": "pc10-beh2-canonical",
+    "type": "multiple-choice",
+    "prompt": "In quantum chemistry, what are the delocalized molecular orbitals that spread over a whole molecule called?",
+    "choices": [
+      {
+        "text": "Canonical orbitals",
+        "correct": true
+      },
+      {
+        "text": "Hybrid orbitals",
+        "why": "Hybrids are mixtures of orbitals on one atom, used to build two-centered bonds. Orbitals delocalized over the whole molecule are called canonical orbitals."
+      },
+      {
+        "text": "Atomic orbitals",
+        "why": "Atomic orbitals belong to single atoms. The molecular orbitals made by combining them across the whole molecule are the canonical orbitals."
+      },
+      {
+        "text": "Localized bond orbitals",
+        "why": "Localized orbitals sit on one bond or atom, the opposite of delocalized. Orbitals spread over the whole molecule are called canonical orbitals."
+      }
+    ],
+    "explanation": "The molecular orbitals found by the LCAO method spread over the whole molecule, and in a quantum chemical interpretation they are called canonical orbitals. Walsh diagrams follow the energies of these orbitals."
+  },
+  {
+    "id": "pc10-beh2-lcao-basis",
+    "type": "multiple-choice",
+    "prompt": "For an AH_2 molecule whose central atom A uses n = 2 valence orbitals (as Be or O does), which atomic orbitals go into the LCAO?",
+    "choices": [
+      {
+        "text": "A's 2s and three 2p orbitals, and each H's 1s",
+        "correct": true
+      },
+      {
+        "text": "A's 2s orbital and each H's 1s, but no 2p",
+        "why": "A's 2p orbitals belong in the combination as well. The full set is the two H 1s orbitals plus A's 2s, 2p_x, 2p_y and 2p_z."
+      },
+      {
+        "text": "A's three 2p orbitals and each H's 1s, but no 2s",
+        "why": "A's 2s orbital is included too; it forms the lowest bonding orbital, 2σ_g. The full set is the two H 1s orbitals plus A's 2s and three 2p orbitals."
+      },
+      {
+        "text": "A's 2s and 2p orbitals, and each H's 1s and 2s",
+        "why": "Each hydrogen donates just its 1s orbital. With A's four n = 2 orbitals, that makes six atomic orbitals in all."
+      }
+    ],
+    "explanation": "Each H donates a 1s orbital and A donates its four n = 2 orbitals (2s, 2p_x, 2p_y and 2p_z). Each molecular orbital |χ⟩ is a combination of these six atomic orbitals, with coefficients found by solving the secular determinant."
+  },
+  {
+    "id": "pc10-beh2-px-py-nonbonding",
+    "type": "multiple-choice",
+    "prompt": "In a linear AH_2 molecule with its bonds along the z-axis, why are A's 2p_x and 2p_y orbitals nonbonding?",
+    "choices": [
+      {
+        "text": "They point perpendicular to the bonds",
+        "correct": true
+      },
+      {
+        "text": "They are always empty in AH_2 molecules",
+        "why": "Being filled or empty doesn't make an orbital bonding or not. 2p_x and 2p_y point at right angles to the A–H bonds, so they have no net overlap with the H 1s orbitals."
+      },
+      {
+        "text": "They are much lower in energy than H 1s",
+        "why": "Energy isn't the reason here. They point at right angles to the bonds, so their overlap with the H 1s orbitals cancels."
+      },
+      {
+        "text": "They are used up in forming sp hybrids",
+        "why": "This section uses molecular orbitals, not hybrids. 2p_x and 2p_y stay unchanged, as the nonbonding 1π_u pair, because they point perpendicular to the bonds."
+      }
+    ],
+    "explanation": "Only A's 2p_z points along the bond axis and overlaps the H 1s orbitals. The 2p_x and 2p_y orbitals point at right angles to the bonds, so they stay unchanged as the nonbonding 1π_u orbitals; this holds only for linear AH_2."
+  },
+  {
+    "id": "pc10-beh2-linear-model-useful",
+    "type": "multiple-choice",
+    "prompt": "The section works out the orbitals of AH_2 for a linear geometry, yet water is bent. Why is the linear case still a useful guide to water?",
+    "choices": [
+      {
+        "text": "Bending reorders the levels only somewhat",
+        "correct": true
+      },
+      {
+        "text": "Water is really linear in its ground state",
+        "why": "Water is bent, with an angle of about 104°. The linear case is useful because bending changes the orbital ordering only somewhat."
+      },
+      {
+        "text": "Bending has no effect on the orbital energies",
+        "why": "It does change them; that is exactly what a Walsh diagram plots. The changes are modest enough that the linear picture stays qualitatively right."
+      },
+      {
+        "text": "The linear orbitals are exact for every AH_2 molecule",
+        "why": "They are approximate LCAO orbitals, and their energies change with the bond angle. The linear case is kept because its qualitative picture carries over to bent molecules."
+      }
+    ],
+    "explanation": "Going from the linear to the bent geometry changes the ordering of the orbitals somewhat, but the qualitative picture from the linear case carries over, which makes it a useful construction for a bent molecule such as H2O."
+  },
+  {
+    "id": "pc10-beh2-mixing-amplitude",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which two things set how large A's 2s contribution is compared with the hydrogen 1s contributions?",
+    "choices": [
+      {
+        "text": "A's nuclear charge and the A–H electronegativity gap",
+        "correct": true
+      },
+      {
+        "text": "The bond angle and the number of lone pairs on A",
+        "why": "These affect shape, not the mixing amplitudes. The section names A's nuclear charge and the electronegativity difference between H and A."
+      },
+      {
+        "text": "A's atomic mass and the distance between the H atoms",
+        "why": "Mass plays no part in orbital mixing. It is A's nuclear charge, which sets how fast its 2s orbital decays, and the electronegativity difference."
+      },
+      {
+        "text": "The number of unpaired electrons on A and on H",
+        "why": "Unpaired electrons are a valence bond idea. The mixing amplitudes depend on A's nuclear charge and the A–H electronegativity difference."
+      }
+    ],
+    "explanation": "The nuclear charge of A sets how quickly its 2s orbital decays, and the electronegativity difference between H and A sets how large A's coefficients are compared with the H 1s coefficients."
+  },
+  {
+    "id": "pc10-beh2-two-sigma-g",
+    "type": "multiple-choice",
+    "prompt": "In linear AH_2, which description fits the 2σ_g orbital?",
+    "choices": [
+      {
+        "text": "A's 2s in phase with both H 1s: bonding",
+        "correct": true
+      },
+      {
+        "text": "A's 2p_z with the out-of-phase H 1s pair: bonding",
+        "why": "That is 1σ_u, which is ungerade. 2σ_g is the even orbital made from A's 2s and both H 1s orbitals in phase."
+      },
+      {
+        "text": "A's 2s out of phase with both H 1s: antibonding",
+        "why": "That is 3σ_g, the antibonding partner of 2σ_g. 2σ_g has A's 2s in phase with the two H 1s orbitals."
+      },
+      {
+        "text": "A's 2p_x alone: nonbonding",
+        "why": "That is one of the 1π_u orbitals. 2σ_g is the bonding orbital made from A's 2s and both H 1s orbitals."
+      }
+    ],
+    "explanation": "2σ_g combines A's 2s with the two H 1s orbitals, all in phase, so it is purely bonding. It is even (gerade) and is built from a 2s orbital, hence the label 2σ_g."
+  },
+  {
+    "id": "pc10-beh2-pz-out-of-phase",
+    "type": "multiple-choice",
+    "prompt": "Why does A's 2p_z orbital combine with the out-of-phase pair of H 1s orbitals rather than the in-phase pair?",
+    "choices": [
+      {
+        "text": "Its two lobes have opposite signs, like that pair",
+        "correct": true
+      },
+      {
+        "text": "2p_z is gerade, like the in-phase pair",
+        "why": "2p_z changes sign through the center, so it is ungerade. It matches the out-of-phase pair, giving the σ_u orbitals."
+      },
+      {
+        "text": "The in-phase pair is taken by 2p_x and 2p_y",
+        "why": "2p_x and 2p_y point away from the bonds and stay nonbonding. The in-phase pair goes with A's 2s; 2p_z matches the out-of-phase pair by symmetry."
+      },
+      {
+        "text": "Out-of-phase pairs always give the lowest energies",
+        "why": "Sign patterns, not a rule about energy, decide this. The 2p_z lobes on either side of A have opposite signs, just like the out-of-phase H pair."
+      }
+    ],
+    "explanation": "Orbitals combine only if they have the same symmetry. 2p_z is positive on one side of A and negative on the other (ungerade), so it pairs with the out-of-phase H combination, giving the bonding 1σ_u and the antibonding 2σ_u orbitals."
+  },
+  {
+    "id": "pc10-beh2-antibonding-count",
+    "type": "numeric",
+    "prompt": "Linear AH_2 has six molecular orbitals: 2σ_g, 1σ_u, two 1π_u, 2σ_u and 3σ_g. How many of them are antibonding?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "2σ_g and 1σ_u are bonding and the two 1π_u orbitals are nonbonding, which leaves 2 antibonding orbitals: 3σ_g (partner of 2σ_g) and 2σ_u (partner of 1σ_u)."
+  },
+  {
+    "id": "pc10-beh2-2a1-coefficient-ratio",
+    "type": "numeric",
+    "prompt": "In Table 10.3.1, water's 2a_1 orbital has an O 2s coefficient of 0.884 and a coefficient of 0.315 on each H 1s orbital. How many times larger is the O 2s coefficient than each H coefficient? (Give it as a decimal.)",
+    "answer": 2.81,
+    "explanation": "0.884 ÷ 0.315 = 2.81. Oxygen's orbital dominates 2a_1, one sign that oxygen takes more than its fair share of the electron density in water's low-lying bonding orbitals."
+  },
+  {
+    "id": "pc10-beh2-filled-mos",
+    "type": "multiple-choice",
+    "prompt": "BeH2 has four valence electrons. Which of its molecular orbitals do they fill?",
+    "choices": [
+      {
+        "text": "2σ_g and 1σ_u (both bonding)",
+        "correct": true
+      },
+      {
+        "text": "2σ_g and 1π_u (bonding and nonbonding)",
+        "why": "1π_u, the nonbonding pair from Be's 2p_x and 2p_y, lies above 1σ_u. Four electrons fill the two bonding orbitals, 2σ_g and 1σ_u."
+      },
+      {
+        "text": "1π_u only (the nonbonding pair)",
+        "why": "Nonbonding electrons would give no bond at all. The section's bond order of 2 comes from filling the bonding 2σ_g and 1σ_u orbitals."
+      },
+      {
+        "text": "2σ_g and 3σ_g (bonding and antibonding)",
+        "why": "3σ_g is antibonding, so filling it would cancel the bonding from 2σ_g. The four electrons go into the two bonding orbitals, 2σ_g and 1σ_u."
+      }
+    ],
+    "explanation": "Be brings 2 valence electrons and each H brings 1. They fill the two lowest orbitals, 2σ_g and 1σ_u, which are both bonding; the nonbonding 1π_u and the antibonding orbitals stay empty."
+  },
+  {
+    "id": "pc10-beh2-bond-order",
+    "type": "numeric",
+    "prompt": "BeH2's four valence electrons fill two bonding orbitals, (2σ_g)^2(1σ_u)^2, with none in antibonding orbitals. Using bond order = (n_b − n_a)/2, what is the bond order of BeH2?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "n_b = 4 and n_a = 0, so the bond order is (4 − 0)/2 = 2, as the section states: the equivalent of one bond for each Be–H link."
+  },
+  {
+    "id": "pc10-beh2-walsh-diagram",
+    "type": "multiple-choice",
+    "prompt": "What does a Walsh diagram plot?",
+    "choices": [
+      {
+        "text": "Orbital energies against a geometry change",
+        "correct": true
+      },
+      {
+        "text": "Photoelectron counts against kinetic energy",
+        "why": "That is a photoelectron spectrum (Section 10.4). A Walsh diagram plots orbital energies as a geometry coordinate, such as the bond angle, changes."
+      },
+      {
+        "text": "Total energy of a molecule against temperature",
+        "why": "Temperature doesn't appear. A Walsh diagram follows each orbital's energy as the molecule's geometry is distorted."
+      },
+      {
+        "text": "Bond order against the number of electrons",
+        "why": "Bond order is not plotted. A Walsh diagram plots orbital energies against a geometry coordinate, like the bond angle."
+      }
+    ],
+    "explanation": "A Walsh (angular correlation) diagram plots calculated orbital energies against a distortion coordinate, such as the bond angle of an AH_2 molecule from 90° to 180°. Following the occupied orbitals shows which geometry is most stable."
+  },
+  {
+    "id": "pc10-beh2-walsh-rule",
+    "type": "multiple-choice",
+    "prompt": "According to Walsh's rule, what decides the shape a molecule adopts?",
+    "choices": [
+      {
+        "text": "The shape that best stabilizes its HOMO",
+        "correct": true
+      },
+      {
+        "text": "The shape that best stabilizes its LUMO",
+        "why": "The LUMO is empty, so lowering it doesn't lower the molecule's energy. Walsh's rule looks at the HOMO, the highest occupied orbital."
+      },
+      {
+        "text": "The shape that keeps electron pairs farthest apart",
+        "why": "That is the VSEPR idea. Walsh's rule is an orbital argument: the molecule takes the structure that gives its HOMO the most stability."
+      },
+      {
+        "text": "The shape that leaves the most unpaired electrons",
+        "why": "Unpaired electrons don't decide shape in this rule. The molecule takes whatever structure best stabilizes its HOMO."
+      }
+    ],
+    "explanation": "Walsh's rule says a molecule adopts the structure that provides the most stability for its highest occupied molecular orbital (HOMO). The Walsh diagram shows how that orbital's energy changes with shape."
+  },
+  {
+    "id": "pc10-beh2-walsh-next-orbital",
+    "type": "multiple-choice",
+    "prompt": "Under Walsh's rule, what decides the preferred geometry if a structural change does not affect the HOMO?",
+    "choices": [
+      {
+        "text": "The closest occupied orbital below the HOMO",
+        "correct": true
+      },
+      {
+        "text": "The LUMO, the lowest empty orbital",
+        "why": "Empty orbitals hold no electrons, so they don't set the energy. The rule falls back on the closest occupied orbital."
+      },
+      {
+        "text": "The lowest occupied orbital of all",
+        "why": "The deepest orbital is not the one used. The rule turns to the occupied orbital closest to the HOMO."
+      },
+      {
+        "text": "Nothing; every geometry is then equally stable",
+        "why": "The other occupied orbitals still change with shape. The closest occupied orbital to the HOMO then governs the preferred geometry."
+      }
+    ],
+    "explanation": "If a particular structural change does not perturb the HOMO, the closest occupied molecular orbital governs the preference for one geometry over another."
+  },
+  {
+    "id": "pc10-beh2-h2o-h2s",
+    "type": "multiple-choice",
+    "prompt": "Walsh diagrams explain why H2O and H2S have similar shapes. What do the two molecules share that makes this work?",
+    "choices": [
+      {
+        "text": "The same number of valence electrons",
+        "correct": true
+      },
+      {
+        "text": "The same total number of electrons",
+        "why": "H2O has 10 electrons and H2S has 18. What matters is that both have 8 valence electrons, so they fill the same orbitals on the Walsh diagram."
+      },
+      {
+        "text": "Central atoms of the same size",
+        "why": "S is a larger atom than O. The shared feature is the same count of valence electrons, which fill the same orbitals."
+      },
+      {
+        "text": "Identical bond lengths to the hydrogens",
+        "why": "S–H bonds are longer than O–H bonds. The likeness comes from having the same number of valence electrons."
+      }
+    ],
+    "explanation": "Molecules with identical numbers of valence electrons fill the same orbitals on a Walsh diagram, so they share the same preference for shape. H2O and H2S both have 8 valence electrons: 6 from the group-16 atom and 1 from each H."
+  },
+  {
+    "id": "pc10-beh2-walsh-electron-count",
+    "type": "multiple-choice",
+    "prompt": "Besides comparing related molecules, what else can Walsh diagrams account for?",
+    "choices": [
+      {
+        "text": "Shape changes as electron count or spin changes",
+        "correct": true
+      },
+      {
+        "text": "Shape changes when hydrogen is swapped for deuterium",
+        "why": "Swapping isotopes changes nuclear mass, not the orbitals, so a Walsh diagram says nothing about it. It does follow how shape changes when electrons are added or removed or the spin state changes."
+      },
+      {
+        "text": "Exact bond lengths, to a hundredth of an ångström",
+        "why": "Walsh diagrams are qualitative; the section says they can at best tell bent from linear. They do show how shape responds to a change in electron count or spin state."
+      },
+      {
+        "text": "How fast a molecule reacts with others",
+        "why": "Reaction rates aren't part of a Walsh diagram. It accounts for shape changes as the number of electrons or the spin state changes."
+      }
+    ],
+    "explanation": "Walsh diagrams explain why related molecules with the same number of valence electrons have similar structures, and how a molecule's geometry changes when its number of electrons or its spin state changes."
+  },
+  {
+    "id": "pc10-beh2-walsh-accuracy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the most a Walsh-diagram argument can reliably tell you about water's shape?",
+    "choices": [
+      {
+        "text": "Whether it is bent or linear",
+        "correct": true
+      },
+      {
+        "text": "Its bond angle to within a degree",
+        "why": "The method typically predicts about 90° for water, far from the measured 104°. At best it can tell a bent molecule from a linear one."
+      },
+      {
+        "text": "The length of its O–H bonds",
+        "why": "A Walsh diagram follows orbital energies as the angle changes; it doesn't give bond lengths. At best it tells bent from linear."
+      },
+      {
+        "text": "Whether it is paramagnetic",
+        "why": "Magnetism depends on unpaired electrons, not on the Walsh angle argument. The method's real strength is telling bent molecules from linear ones."
+      }
+    ],
+    "explanation": "A typical Walsh prediction for water's bond angle is 90°, not close to the experimental value of 104°. At best, the method differentiates between a bent and a linear molecule."
+  },
+  {
+    "id": "pc10-beh2-oxygen-a1-label",
+    "type": "multiple-choice",
+    "prompt": "In water, oxygen's orbitals are labeled by symmetry, and the 2s orbital is a_1. Which oxygen 2p orbital also carries the a_1 label?",
+    "choices": [
+      {
+        "text": "2p_z",
+        "correct": true
+      },
+      {
+        "text": "2p_x",
+        "why": "2p_x, perpendicular to the molecular plane, is labeled b_1. The 2p_z orbital, which shares the symmetry of 2s, is the other a_1."
+      },
+      {
+        "text": "2p_y",
+        "why": "2p_y is labeled b_2. Besides 2s, only 2p_z carries the a_1 label."
+      },
+      {
+        "text": "None; only the 2s orbital is a_1",
+        "why": "Two oxygen orbitals are a_1: the 2s and the 2p_z. 2p_x is b_1 and 2p_y is b_2."
+      }
+    ],
+    "explanation": "The oxygen orbitals are labeled a_1 (2s), b_1 (2p_x), b_2 (2p_y) and a_1 (2p_z). Because 2s and 2p_z share a symmetry, they can mix, which is why water's a_1 orbitals contain both."
+  },
+  {
+    "id": "pc10-beh2-same-symmetry-mixing",
+    "type": "multiple-choice",
+    "prompt": "Which atomic orbitals mix to form water's molecular orbitals?",
+    "choices": [
+      {
+        "text": "Same-symmetry orbitals of similar energy",
+        "correct": true
+      },
+      {
+        "text": "Any orbitals at all, whatever their symmetry",
+        "why": "Orbitals of different symmetry have zero net overlap, so they can't mix. Mixing takes place between same-symmetry orbitals of comparable energy."
+      },
+      {
+        "text": "Only orbitals on the same atom",
+        "why": "Mixing orbitals on one atom would give hybrids. Water's molecular orbitals mix O orbitals with H combinations of the same symmetry."
+      },
+      {
+        "text": "Only orbitals of very different energy",
+        "why": "Orbitals far apart in energy mix very little. Mixing needs the same symmetry and comparable energies."
+      }
+    ],
+    "explanation": "Mixing takes place between orbitals of the same symmetry and comparable energy. For example, oxygen's 2s and 2p_z (both a_1) mix with the in-phase H combination, which is also a_1."
+  },
+  {
+    "id": "pc10-beh2-1b2-origin",
+    "type": "multiple-choice",
+    "prompt": "Water's 1b_2 molecular orbital comes from the out-of-phase combination of the two H 1s orbitals (the hydrogen σ^* MO) mixed with which oxygen orbital?",
+    "choices": [
+      {
+        "text": "2p_y",
+        "correct": true
+      },
+      {
+        "text": "2s",
+        "why": "2s has a_1 symmetry, so it can't mix with the b_2 hydrogen combination. 1b_2 comes from the O 2p_y orbital."
+      },
+      {
+        "text": "2p_x",
+        "why": "2p_x is b_1 and stays nonbonding as 1b_1. The b_2 hydrogen combination mixes with 2p_y."
+      },
+      {
+        "text": "2p_z",
+        "why": "2p_z is a_1 and mixes with the in-phase H combination, giving 3a_1. 1b_2 comes from 2p_y."
+      }
+    ],
+    "explanation": "1b_2 comes from mixing oxygen's 2p_y (b_2) with the out-of-phase H combination, which also has b_2 symmetry. Same-symmetry orbitals mix, and these two are the only b_2 orbitals available."
+  },
+  {
+    "id": "pc10-beh2-3a1-admixture",
+    "type": "multiple-choice",
+    "prompt": "Water's 3a_1 orbital comes mainly from oxygen's 2p_z and the in-phase H combination. What does its small admixture of O 2s do?",
+    "choices": [
+      {
+        "text": "It weakens the bonding and raises the energy",
+        "correct": true
+      },
+      {
+        "text": "It strengthens the bonding and lowers the energy",
+        "why": "That is what the small 2p_z admixture does for 2a_1. In 3a_1, the bit of 2s weakens the bonding and raises the energy."
+      },
+      {
+        "text": "It turns 3a_1 into an antibonding orbital",
+        "why": "3a_1 is occupied and is not antibonding; the antibonding orbitals are the empty 4a_1 and 2b_2. The small 2s admixture only weakens its bonding."
+      },
+      {
+        "text": "It changes the label from a_1 to b_1",
+        "why": "2s and 2p_z are both a_1, so mixing them keeps the a_1 label. The 2s admixture weakens the bonding and raises the energy."
+      }
+    ],
+    "explanation": "In 3a_1 a little O 2s mixes into the O 2p_z and hydrogen combination, which weakens the bonding and raises the orbital's energy. In 2a_1 the reverse happens: a little 2p_z strengthens the bonding and lowers the energy."
+  },
+  {
+    "id": "pc10-beh2-1b1-homo",
+    "type": "multiple-choice",
+    "prompt": "What kind of orbital is water's HOMO, 1b_1?",
+    "choices": [
+      {
+        "text": "A nonbonding O 2p_x orbital, out of the plane",
+        "correct": true
+      },
+      {
+        "text": "A bonding orbital spread over all three atoms",
+        "why": "1b_1 has no hydrogen contribution at all. It is oxygen's 2p_x, perpendicular to the molecular plane, and is nonbonding."
+      },
+      {
+        "text": "An antibonding O–H orbital",
+        "why": "The antibonding orbitals (4a_1 and 2b_2) are empty. The HOMO, 1b_1, is a nonbonding O 2p_x orbital."
+      },
+      {
+        "text": "An in-plane lone pair made from O 2s",
+        "why": "1b_1 has no 2s in it, and it isn't in the plane. It is O 2p_x, which sticks out perpendicular to the molecular plane."
+      }
+    ],
+    "explanation": "1b_1 is the nonbonding O 2p_x orbital, perpendicular to the molecular plane. It is highly localized on oxygen, much like the nonbonding orbitals of hydrogen fluoride."
+  },
+  {
+    "id": "pc10-beh2-3a1-lobe",
+    "type": "multiple-choice",
+    "prompt": "The section says water's 3a_1 orbital can be thought of as a nonbonding orbital, even though it mixes O and H orbitals. Why?",
+    "choices": [
+      {
+        "text": "A lobe of it points away from the H atoms",
+        "correct": true
+      },
+      {
+        "text": "It has no oxygen contribution in it at all",
+        "why": "3a_1 is mostly oxygen 2p_z (0.827 in Table 10.3.1). It counts as nearly nonbonding because a large lobe points away from the H atoms."
+      },
+      {
+        "text": "It is empty in the ground state",
+        "why": "3a_1 is occupied; it is the next orbital below the HOMO. It counts as nearly nonbonding because it has a lobe pointing away from the hydrogens."
+      },
+      {
+        "text": "It is oxygen's out-of-plane 2p_x orbital",
+        "why": "That is 1b_1, the HOMO. 3a_1 is built mainly from O 2p_z, with a lobe pointing away from the two H atoms."
+      }
+    ],
+    "explanation": "3a_1 lies just below the HOMO, 1b_1. It has a lobe pointing away from the two hydrogens, so its electrons do little to hold the H atoms and it can be thought of as a nonbonding orbital."
+  },
+  {
+    "id": "pc10-beh2-water-occupied",
+    "type": "numeric",
+    "prompt": "Water has 8 valence electrons (6 from O and 1 from each H), and each molecular orbital holds at most two electrons. How many of water's valence molecular orbitals are occupied in the ground state?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "8 electrons ÷ 2 per orbital = 4 filled orbitals: 2a_1, 1b_2, 3a_1 and 1b_1, giving (a_1)^2(b_2)^2(a_1)^2(b_1)^2. They are the four orbitals with negative energies in Table 10.3.1."
+  },
+  {
+    "id": "pc10-beh2-linear-water-pi",
+    "type": "numeric",
+    "prompt": "Suppose water were linear. Its 8 valence electrons would fill 2σ_g (2 electrons), then 1σ_u (2 electrons), then the pair of nonbonding 1π_u orbitals. How many electrons would sit in the 1π_u orbitals?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "8 − 2 − 2 = 4 electrons fill the two 1π_u orbitals, 2 in each. They would be nonbonding lone-pair electrons in oxygen's 2p_x and 2p_y."
+  },
+  {
+    "id": "pc10-beh2-table-single-orbital",
+    "type": "multiple-choice",
+    "prompt": "In Table 10.3.1, which water molecular orbital has a nonzero coefficient for only one atomic orbital?",
+    "choices": [
+      {
+        "text": "1b_1",
+        "correct": true
+      },
+      {
+        "text": "2a_1",
+        "why": "2a_1 mixes O 2s (0.884), O 2p_z (−0.143) and both H 1s (0.315). Only 1b_1 is a single atomic orbital, O 2p_x, with coefficient −1.000."
+      },
+      {
+        "text": "3a_1",
+        "why": "3a_1 mixes O 2s, O 2p_z and both H 1s orbitals. 1b_1 is the one made of O 2p_x alone."
+      },
+      {
+        "text": "1b_2",
+        "why": "1b_2 mixes O 2p_y with both H 1s orbitals. 1b_1, with only p_x(O) = −1.000, is the single-orbital MO."
+      }
+    ],
+    "explanation": "The 1b_1 row has −1.000 under p_x(O) and zeros everywhere else, so it is purely oxygen's 2p_x: the nonbonding, out-of-plane lone pair."
+  },
+  {
+    "id": "pc10-beh2-b-orbitals-no-2s",
+    "type": "multiple-choice",
+    "prompt": "In Table 10.3.1, every b orbital (1b_1, 1b_2 and 2b_2) has a coefficient of zero for s(O). Why?",
+    "choices": [
+      {
+        "text": "O 2s is a_1, so it can't mix into b orbitals",
+        "correct": true
+      },
+      {
+        "text": "O 2s is too low in energy to mix with anything",
+        "why": "O 2s does mix strongly; it is the main part of 2a_1 (0.884). It is missing from the b orbitals only because its symmetry is a_1."
+      },
+      {
+        "text": "The b orbitals are all antibonding",
+        "why": "1b_2 is bonding and 1b_1 nonbonding; only 2b_2 is antibonding. The zeros come from symmetry: O 2s is a_1."
+      },
+      {
+        "text": "The b orbitals are all empty",
+        "why": "1b_1 and 1b_2 are occupied; only 2b_2 is empty. The zeros come from symmetry, since O 2s is a_1."
+      }
+    ],
+    "explanation": "Only orbitals of the same symmetry mix. Oxygen's 2s is a_1, so it appears in the a_1 orbitals (2a_1, 3a_1 and 4a_1) and has a zero coefficient in every b orbital."
+  },
+  {
+    "id": "pc10-beh2-homo-lumo-gap",
+    "type": "numeric",
+    "prompt": "Table 10.3.1 gives water's HOMO (1b_1) an energy of −12.191 and its LUMO (4a_1) an energy of 5.440, in the same units. What is the HOMO–LUMO gap, in those units?",
+    "answer": 17.631,
+    "explanation": "Gap = E(LUMO) − E(HOMO) = 5.440 − (−12.191) = 17.631. The HOMO is the highest of the four occupied (negative-energy) orbitals, and the LUMO is the lower of the two empty ones."
+  }
+]

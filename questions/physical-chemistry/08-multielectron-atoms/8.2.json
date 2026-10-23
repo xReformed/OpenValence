@@ -1,0 +1,588 @@
+[
+  {
+    "id": "pc8-helium-perturbation-term",
+    "type": "multiple-choice",
+    "prompt": "In the perturbation treatment of helium, which part of the Hamiltonian is taken as the perturbation Ĥ^(1)?",
+    "choices": [
+      {
+        "text": "The electron–electron repulsion, 1/r_12",
+        "correct": true
+      },
+      {
+        "text": "The attraction of electron 2 to the nucleus, −2/r_2",
+        "why": "That attraction belongs to the hydrogen-like Hamiltonian for electron 2, which is part of Ĥ^(0). The perturbation is the repulsion 1/r_12."
+      },
+      {
+        "text": "The kinetic energy of both electrons",
+        "why": "The kinetic energy terms are in Ĥ^(0), the part that can be solved exactly. The perturbation is the repulsion 1/r_12."
+      },
+      {
+        "text": "The whole hydrogen-like part of Ĥ",
+        "why": "That part is Ĥ^(0), the zero-order Hamiltonian that can be solved exactly. The correction Ĥ^(1) is the repulsion 1/r_12."
+      }
+    ],
+    "explanation": "Ĥ = Ĥ^(0) + Ĥ^(1). Ĥ^(0) = [−(1/2)∇_1^2 − 2/r_1] + [−(1/2)∇_2^2 − 2/r_2] is a sum of two hydrogen-like Hamiltonians (Z = 2) that can be solved exactly. The repulsion Ĥ^(1) = 1/r_12 is what makes helium different, so it is treated as a correction."
+  },
+  {
+    "id": "pc8-helium-zero-order-wavefunction",
+    "type": "multiple-choice",
+    "prompt": "What is the zero-order wavefunction ψ^(0) for helium's ground state?",
+    "choices": [
+      {
+        "text": "φ_1s(r_1)φ_1s(r_2), using 1s orbitals for Z = 2",
+        "correct": true
+      },
+      {
+        "text": "φ_1s(r_1)φ_1s(r_2), using hydrogen's Z = 1 orbitals",
+        "why": "The 1s orbitals are scaled by helium's larger nuclear charge, because each electron in Ĥ^(0) feels Z = 2."
+      },
+      {
+        "text": "φ_1s(r_1) + φ_1s(r_2), a sum of two 1s orbitals",
+        "why": "Separating Ĥ^(0) gives a product of one-electron functions, not a sum. It is the energies that add."
+      },
+      {
+        "text": "φ_1s(r_1)φ_2s(r_2), with one electron in 2s",
+        "why": "In the ground state both electrons occupy the lowest orbital, 1s."
+      }
+    ],
+    "explanation": "Because Ĥ^(0) separates, its ground-state solution is a product of two one-electron 1s functions, ψ^(0) = φ_1s(r_1)φ_1s(r_2). Each is a hydrogen 1s function scaled by the increased nuclear charge, Z = 2."
+  },
+  {
+    "id": "pc8-helium-li-plus-e0",
+    "type": "numeric",
+    "prompt": "The same perturbation treatment works for the two-electron ion Li^+ (Z = 3). In Ĥ^(0) each electron is in a hydrogen-like 1s orbital (n = 1) with energy −Z^2/(2n^2) hartree. What is the zero-order energy E^(0), the sum for the two electrons, in hartrees?",
+    "answer": -9,
+    "unit": "hartree",
+    "tolerance": 0,
+    "explanation": "Each electron has −(3^2)/(2 × 1^2) = −4.5 hartree, so E^(0) = −4.5 + (−4.5) = −9 hartree. For helium (Z = 2) the same sum gives the section's E^(0) = −4 hartree = −108.8 eV."
+  },
+  {
+    "id": "pc8-helium-e1-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the first-order energy correction E^(1) for helium represent?",
+    "choices": [
+      {
+        "text": "The average repulsion of the electrons, using ψ^(0)",
+        "correct": true
+      },
+      {
+        "text": "The exact repulsion energy between the two electrons",
+        "why": "E^(1) is only an estimate: it averages 1/r_12 over ψ^(0), a wavefunction that assumes the electrons don't interact."
+      },
+      {
+        "text": "The attraction of both electrons to the helium nucleus",
+        "why": "The attraction is already in Ĥ^(0) and E^(0). E^(1) averages the repulsion 1/r_12 over ψ^(0)."
+      },
+      {
+        "text": "The energy needed to remove one electron",
+        "why": "That is an ionization energy. E^(1) is the average repulsion of the electrons, found with the zero-order wavefunction ψ^(0)."
+      }
+    ],
+    "explanation": "E^(1) = ⟨ψ^(0)|Ĥ^(1)|ψ^(0)⟩ is the repulsion 1/r_12 averaged over the zero-order wavefunction. So it is the average interaction energy of the two electrons, calculated with wavefunctions that assume there is no interaction."
+  },
+  {
+    "id": "pc8-helium-e1-sign",
+    "type": "multiple-choice",
+    "prompt": "First-order perturbation theory gives E^(1) = +34.0 eV for helium. Why is this correction positive?",
+    "choices": [
+      {
+        "text": "The electrons repel, which raises the energy",
+        "correct": true
+      },
+      {
+        "text": "Kinetic energy is always positive",
+        "why": "The kinetic energy is in Ĥ^(0) and E^(0). E^(1) comes from the repulsion 1/r_12, which is positive because like charges repel."
+      },
+      {
+        "text": "Every perturbation correction is positive",
+        "why": "Not so: helium's second-order correction E^(2) is negative and lowers the energy further. E^(1) is positive because it is a repulsion."
+      },
+      {
+        "text": "It is an ionization energy, which is positive",
+        "why": "E^(1) is not an ionization energy. It is the average electron–electron repulsion, which raises the energy."
+      }
+    ],
+    "explanation": "The two electrons have like charges, so their repulsion 1/r_12 is positive and E^(1) raises the energy above E^(0). Leaving this repulsion out is why E^(0) alone is far too low."
+  },
+  {
+    "id": "pc8-helium-first-order-total",
+    "type": "numeric",
+    "prompt": "For helium, the zero-order energy is E^(0) = −108.8 eV and the first-order correction is E^(1) = +34.0 eV. What is the first-order estimate E^(0) + E^(1), in eV?",
+    "answer": -74.8,
+    "unit": "eV",
+    "explanation": "E^(0) + E^(1) = −108.8 eV + 34.0 eV = −74.8 eV. This is a large improvement on E^(0), much closer to the experimental −79.01 eV, so the electrons' interaction is an important part of helium's energy."
+  },
+  {
+    "id": "pc8-helium-first-order-lesson",
+    "type": "multiple-choice",
+    "prompt": "Adding the first-order correction E^(1) to helium's zero-order energy is a substantial, roughly 30% improvement. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "Electron interaction is a big part of the energy",
+        "correct": true
+      },
+      {
+        "text": "First-order perturbation theory is exact for helium",
+        "why": "The first-order result is still several eV from experiment, and higher-order corrections keep improving it."
+      },
+      {
+        "text": "The zero-order energy was already accurate",
+        "why": "A 30% change means E^(0) was far off. Leaving out the electrons' repulsion made it much too low."
+      },
+      {
+        "text": "The electrons hardly interact with each other",
+        "why": "If they hardly interacted, E^(1) would be tiny. Its large size shows the interaction matters a great deal."
+      }
+    ],
+    "explanation": "E^(1) is large, so the interaction of the two electrons is an important part of the total energy of the helium atom, a part that E^(0) leaves out entirely."
+  },
+  {
+    "id": "pc8-helium-second-order-ev",
+    "type": "numeric",
+    "prompt": "The second-order correction for helium is E^(2) = −0.158 hartree. Using 1 hartree = 27.21 eV, what is E^(2) in eV?",
+    "answer": -4.299,
+    "unit": "eV",
+    "explanation": "E^(2) = −0.158 × 27.21 eV = −4.30 eV. The corrections shrink quickly: E^(2) is much smaller in size than E^(1) = +34.0 eV."
+  },
+  {
+    "id": "pc8-helium-second-order-total",
+    "type": "numeric",
+    "prompt": "Through first order, helium's energy is E^(0) + E^(1) = −2.75 hartree. The second-order correction is E^(2) = −0.158 hartree. What is E^(0) + E^(1) + E^(2), in hartrees?",
+    "answer": -2.908,
+    "unit": "hartree",
+    "explanation": "−2.75 hartree + (−0.158 hartree) = −2.908 hartree, which is −79.1 eV. That is within 0.3% of the experimental value."
+  },
+  {
+    "id": "pc8-helium-second-order-accuracy",
+    "type": "multiple-choice",
+    "prompt": "How close does helium's energy come to experiment when perturbation theory is taken to second order, E^(0) + E^(1) + E^(2)?",
+    "choices": [
+      {
+        "text": "Within 0.3%",
+        "correct": true
+      },
+      {
+        "text": "Exactly equal, with no error left",
+        "why": "A small error remains at second order. More corrections are needed to agree within the experimental uncertainty."
+      },
+      {
+        "text": "About 5% off, no better than first order",
+        "why": "Adding E^(2) does improve on first order: the result, −79.1 eV, is within 0.3% of the experimental −79.01 eV."
+      },
+      {
+        "text": "About 40% off, like the zero-order energy",
+        "why": "That is roughly the error in E^(0) alone, −108.8 eV against −79.01 eV. With two corrections, the result is within 0.3% of experiment."
+      }
+    ],
+    "explanation": "E^(0) + E^(1) + E^(2) = −79.1 eV, within 0.3% of the experimental −79.01 eV. Each correction brings the result closer."
+  },
+  {
+    "id": "pc8-helium-thirteenth-order",
+    "type": "multiple-choice",
+    "prompt": "How far must the perturbation series for helium be taken to agree with experiment within the experimental uncertainty?",
+    "choices": [
+      {
+        "text": "To thirteenth order, E^(1) through E^(13)",
+        "correct": true
+      },
+      {
+        "text": "To first order, E^(1) alone",
+        "why": "First order still misses by several eV. Agreement within the experimental uncertainty takes thirteenth order."
+      },
+      {
+        "text": "To second order, E^(1) and E^(2)",
+        "why": "Second order is close but still outside the experimental uncertainty; it takes corrections up to E^(13)."
+      },
+      {
+        "text": "It never agrees, however far the series is taken",
+        "why": "The series keeps improving here; with corrections through E^(13) it agrees with experiment within the uncertainty."
+      }
+    ],
+    "explanation": "It takes thirteenth-order perturbation theory, adding E^(1) through E^(13) to E^(0), to compute an energy for helium that agrees with experiment to within the experimental uncertainty."
+  },
+  {
+    "id": "pc8-helium-wavefunction-unchanged",
+    "type": "multiple-choice",
+    "prompt": "What does adding the first-order energy correction E^(1) teach us about the helium wavefunction?",
+    "choices": [
+      {
+        "text": "Nothing new; the wavefunction is still ψ^(0)",
+        "correct": true
+      },
+      {
+        "text": "It gives the exact helium wavefunction",
+        "why": "E^(1) corrects only the energy. Improving the wavefunction needs first-order corrections to the wavefunction itself, which take more effort."
+      },
+      {
+        "text": "It shows each electron in a different orbital",
+        "why": "E^(1) is calculated with ψ^(0), in which both electrons are in the same 1s orbital, and it doesn't change ψ^(0)."
+      },
+      {
+        "text": "It builds the electron repulsion into ψ",
+        "why": "E^(1) changes only the energy; ψ stays the zero-order product. Building electron interaction into ψ takes more work."
+      }
+    ],
+    "explanation": "First-order perturbation theory improves the energy a lot, but we learn nothing new about the wavefunction: it is still the zero-order product. Improving it would mean expanding the wavefunction to first order, so the section turns to the variational method instead."
+  },
+  {
+    "id": "pc8-helium-hartree-use",
+    "type": "multiple-choice",
+    "prompt": "According to the section, where is the hartree usually used as a unit of energy?",
+    "choices": [
+      {
+        "text": "In atomic physics and computational chemistry",
+        "correct": true
+      },
+      {
+        "text": "In IR and microwave spectroscopy experiments",
+        "why": "Spectroscopy experiments prefer the electronvolt or the wavenumber (cm^−1). The hartree is used in atomic physics and computational chemistry."
+      },
+      {
+        "text": "In measurements of hydrogen's atomic emission lines",
+        "why": "Experimental measurements such as hydrogen emission prefer eV or cm^−1. The hartree belongs to atomic physics and computational chemistry."
+      },
+      {
+        "text": "Only in the Bohr model of the hydrogen atom",
+        "why": "The hartree is used widely, in atomic physics and computational chemistry, not just for hydrogen."
+      }
+    ],
+    "explanation": "The hartree, named after the British physicist Douglas Hartree, is the atomic unit of energy, usually used in atomic physics and computational chemistry. Experimental measurements (hydrogen emission, IR and microwave spectroscopy) prefer the electronvolt or the wavenumber (cm^−1)."
+  },
+  {
+    "id": "pc8-helium-hartree-joules",
+    "type": "numeric",
+    "prompt": "The hartree is defined as E_h = 2R_H hc, where R_H hc = 2.180 × 10^−18 J. What is 1 hartree in joules? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 4.36e-18,
+    "unit": "J",
+    "explanation": "E_h = 2 × 2.180 × 10^−18 J = 4.36 × 10^−18 J, matching the section's 4.359 × 10^−18 J (27.21 eV). One hartree is twice R_H hc."
+  },
+  {
+    "id": "pc8-helium-trial1-orbitals",
+    "type": "multiple-choice",
+    "prompt": "Trial wavefunction #1 for helium is exp[−α(r_1 + r_2)]. Where does it place the two electrons?",
+    "choices": [
+      {
+        "text": "In two identical, scaled hydrogen 1s orbitals",
+        "correct": true
+      },
+      {
+        "text": "One in a 1s orbital and one in a 2s orbital",
+        "why": "Both factors are the same 1s-type exponential, exp(−αr), so both electrons are in the same scaled 1s orbital."
+      },
+      {
+        "text": "In two 1s orbitals with different scale factors",
+        "why": "There is only one parameter, α, shared by both electrons. Different scale factors α and β come in later trial functions."
+      },
+      {
+        "text": "In orbitals that depend on the distance r_12",
+        "why": "exp[−α(r_1 + r_2)] has no r_12 in it; it is a product of one-electron functions, φ(1)φ(2)."
+      }
+    ],
+    "explanation": "exp[−α(r_1 + r_2)] = exp(−αr_1)exp(−αr_2) = φ(1)φ(2): both electrons occupy the same 1s-type orbital, scaled by α. In this function the electrons are in the same orbital 100% of the time."
+  },
+  {
+    "id": "pc8-helium-trial1-error",
+    "type": "multiple-choice",
+    "prompt": "Trial wavefunction #1 gives a helium energy within 2% of experiment. What does the section blame for the remaining error?",
+    "choices": [
+      {
+        "text": "It gives the electrons too much independence",
+        "correct": true
+      },
+      {
+        "text": "The parameter α was never optimized",
+        "why": "α was varied to minimize E_trial. The error comes from the orbital approximation, which lets the electrons move too independently."
+      },
+      {
+        "text": "The experimental energy is inaccurate",
+        "why": "The experimental value, −2.90372 E_h, is the benchmark. The error lies in the trial function, which treats the electrons as too independent."
+      },
+      {
+        "text": "It leaves out the electrons' attraction to the nucleus",
+        "why": "The full Hamiltonian, attraction included, is used. The trouble is that a product of orbitals doesn't let like-charged electrons avoid each other."
+      }
+    ],
+    "explanation": "The trial function is based on the orbital approximation, so it doesn't take electron–electron interactions into account well. It gives the electrons too much independence, given that they have like charges and tend to avoid one another."
+  },
+  {
+    "id": "pc8-helium-pt-vs-variational",
+    "type": "multiple-choice",
+    "prompt": "For helium, first-order perturbation theory gives E^(0) + E^(1) = −2.75 E_h, and trial wavefunction #1 with α optimized gives −2.84766 E_h. The experimental energy is −2.90372 E_h. Which estimate is better?",
+    "choices": [
+      {
+        "text": "The variational one, which is lower and closer",
+        "correct": true
+      },
+      {
+        "text": "The perturbation one, because it is higher",
+        "why": "A higher energy here is further from the experimental −2.90372 E_h. The variational −2.84766 E_h is lower and closer."
+      },
+      {
+        "text": "Both equally, since both use 1s orbitals",
+        "why": "Their energies differ by about 0.1 E_h. Optimizing α lets the variational result come closer to experiment."
+      },
+      {
+        "text": "The perturbation one, since it includes 1/r_12",
+        "why": "Both include the repulsion: the variational energy is computed with the full Hamiltonian. The variational result is closer to experiment."
+      }
+    ],
+    "explanation": "−2.84766 E_h is lower than −2.75 E_h and much closer to the experimental −2.90372 E_h. ψ^(0) uses 1s orbitals fixed at Z = 2; letting the scale factor α vary lets the variational method find a lower, better energy."
+  },
+  {
+    "id": "pc8-helium-trial2-two-parameters",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does the variational calculation with trial wavefunction #2 differ from the one with trial #1?",
+    "choices": [
+      {
+        "text": "Its energy is minimized over α and β at once",
+        "correct": true
+      },
+      {
+        "text": "It uses a different Hamiltonian for helium",
+        "why": "The Hamiltonian is the same; only the trial function changes. The energy expression is more complex and is minimized over two parameters."
+      },
+      {
+        "text": "Its energy needs no minimization at all",
+        "why": "Trial #2's energy is still minimized, now with respect to α and β simultaneously, not α alone."
+      },
+      {
+        "text": "It is solved with perturbation theory instead",
+        "why": "Both are variational calculations. The difference is a more complex energy expression minimized over α and β together."
+      }
+    ],
+    "explanation": "The calculation is very similar to the one with trial #1, but the expression for the energy is much more complex, and it is minimized simultaneously with respect to two parameters (α and β) rather than just one (α)."
+  },
+  {
+    "id": "pc8-helium-trial2-fraction",
+    "type": "multiple-choice",
+    "prompt": "Trial wavefunction #2 expands into four terms: exp(−αr_1)exp(−αr_2) + exp(−αr_1)exp(−βr_2) + exp(−βr_1)exp(−αr_2) + exp(−βr_1)exp(−βr_2). For what share of the time does the section say the electrons are in different orbitals?",
+    "choices": [
+      {
+        "text": "50%",
+        "correct": true
+      },
+      {
+        "text": "0%",
+        "why": "Two of the four terms, exp(−αr_1)exp(−βr_2) and exp(−βr_1)exp(−αr_2), put the electrons in different orbitals."
+      },
+      {
+        "text": "100%",
+        "why": "Only two of the four terms put the electrons in different orbitals; the other two put both in the same one."
+      },
+      {
+        "text": "25%",
+        "why": "Two terms, not one, are mixed: exp(−αr_1)exp(−βr_2) and exp(−βr_1)exp(−αr_2). That is half of the four."
+      }
+    ],
+    "explanation": "Two of the four terms (αβ and βα) put the electrons in different orbitals, and two (αα and ββ) put them in the same one, so they are in different orbitals 50% of the time. In trial #1 they shared an orbital 100% of the time."
+  },
+  {
+    "id": "pc8-helium-trial3-construction",
+    "type": "multiple-choice",
+    "prompt": "How is trial wavefunction #3 made from trial wavefunction #2?",
+    "choices": [
+      {
+        "text": "By removing its first and last terms",
+        "correct": true
+      },
+      {
+        "text": "By keeping only its first and last terms",
+        "why": "Those are the terms with both electrons in the same orbital; trial #3 does the opposite and keeps the two mixed terms."
+      },
+      {
+        "text": "By setting α equal to β in every term",
+        "why": "With α = β it would turn back into trial #1, with both electrons in the same orbital. Trial #3 drops the first and last terms of #2."
+      },
+      {
+        "text": "By adding a 2s orbital for one electron",
+        "why": "No 2s orbital is used; both functions are scaled 1s-type exponentials. Trial #3 drops the two same-orbital terms of #2."
+      }
+    ],
+    "explanation": "Trial #3 removes the first and last terms of #2, the ones with both electrons in the same orbital, leaving exp(−αr_1)exp(−βr_2) + exp(−βr_1)exp(−αr_2). The electrons are now in different scaled 1s orbitals 100% of the time, and the energy improves to −2.87566 E_h."
+  },
+  {
+    "id": "pc8-helium-trial3-error",
+    "type": "numeric",
+    "prompt": "Trial wavefunction #3 gives E_trial = −2.87566 E_h, and the experimental energy is E_exp = −2.90372 E_h. The percent deviation is |(E_trial − E_exp)/E_exp| × 100%. What is it, in %?",
+    "answer": 0.966,
+    "unit": "%",
+    "tolerance": 0.02,
+    "explanation": "|(−2.87566 + 2.90372)/(−2.90372)| × 100% = (0.02806/2.90372) × 100% = 0.966%. Trial #3 is within 1% of experiment."
+  },
+  {
+    "id": "pc8-helium-trial3-limit",
+    "type": "multiple-choice",
+    "prompt": "Trial wavefunction #3 always keeps the two electrons in different orbitals. Why does the section say it still doesn't treat electron–electron interactions adequately?",
+    "choices": [
+      {
+        "text": "It still rests on the orbital approximation",
+        "correct": true
+      },
+      {
+        "text": "It has only one adjustable parameter",
+        "why": "Trial #3 has two parameters, α and β. Its weakness is that it is still built from products of orbitals."
+      },
+      {
+        "text": "It leaves the 1/r_12 term out of the Hamiltonian",
+        "why": "The full Hamiltonian, with the repulsion, is always used. The weakness is in the wavefunction, which is still built from orbital products."
+      },
+      {
+        "text": "Its parameters α and β are never optimized",
+        "why": "α and β are varied to minimize the energy, giving −2.87566 E_h. The weakness is the orbital approximation."
+      }
+    ],
+    "explanation": "Trial #3 is still a combination of orbital products, so it rests on the orbital approximation and has no term that depends on r_12. Hylleraas took the next step by adding a term involving the distance between the electrons."
+  },
+  {
+    "id": "pc8-helium-hylleraas-far-apart",
+    "type": "multiple-choice",
+    "prompt": "Hylleraas's trial function is exp[−α(r_1 + r_2)](1 + βr_12). What does the factor (1 + βr_12) do when the electrons are far apart?",
+    "choices": [
+      {
+        "text": "ψ grows, favoring electrons that are far apart",
+        "correct": true
+      },
+      {
+        "text": "ψ shrinks, pulling the electrons together",
+        "why": "A large r_12 makes 1 + βr_12 larger, not smaller, so ψ grows when the electrons are apart."
+      },
+      {
+        "text": "ψ goes to zero, so the electrons stay close together",
+        "why": "The factor 1 + βr_12 grows with r_12; it does not vanish. It makes ψ larger when the electrons are far apart."
+      },
+      {
+        "text": "Nothing; the factor stays equal to 1",
+        "why": "1 + βr_12 equals 1 only when r_12 = 0. For electrons far apart, r_12 is large and so is the factor."
+      }
+    ],
+    "explanation": "When the electrons are far apart, r_12 is large, so 1 + βr_12 is large and the wavefunction's magnitude increases. This builds electron–electron interaction directly into ψ, favoring arrangements in which the like-charged electrons avoid each other. It gives −2.89112 E_h."
+  },
+  {
+    "id": "pc8-helium-trial5",
+    "type": "multiple-choice",
+    "prompt": "How is trial wavefunction #5, with three parameters α, β and γ, built?",
+    "choices": [
+      {
+        "text": "Trial #3 times the factor (1 + γr_12)",
+        "correct": true
+      },
+      {
+        "text": "Trial #1 with three orbital exponents",
+        "why": "Trial #1 has one orbital and one parameter, α. Trial #5 combines trial #3's two orbitals (α and β) with an r_12 factor (γ)."
+      },
+      {
+        "text": "Trial #2 with a 2s orbital added",
+        "why": "No 2s orbital is used. Trial #5 is trial #3's two-orbital function multiplied by Hylleraas's factor, 1 + γr_12."
+      },
+      {
+        "text": "Trial #4 with its r_12 factor removed",
+        "why": "Removing the r_12 factor would undo Hylleraas's improvement. Trial #5 keeps it and attaches it to trial #3."
+      }
+    ],
+    "explanation": "Trial #5 adds Hylleraas's r_12 term to the third trial function: [exp(−αr_1)exp(−βr_2) + exp(−βr_1)exp(−αr_2)][1 + γr_12]. It gives −2.90143 E_h, within 0.08% of experiment."
+  },
+  {
+    "id": "pc8-helium-reason-improvement",
+    "type": "multiple-choice",
+    "prompt": "According to the section's summary, why do the later helium trial functions agree better with experiment?",
+    "choices": [
+      {
+        "text": "They reduce the electron–electron repulsion",
+        "correct": true
+      },
+      {
+        "text": "They raise the nuclear charge to more than 2",
+        "why": "Helium's nucleus always has Z = 2. The detailed calculations show the improvement comes from lower electron–electron repulsion."
+      },
+      {
+        "text": "They leave the 1/r_12 term out of Ĥ",
+        "why": "The full Hamiltonian, repulsion included, is used every time. The trial functions let the electrons avoid each other, lowering the repulsion."
+      },
+      {
+        "text": "They use fewer adjustable parameters than before",
+        "why": "The later functions use more parameters, up to three, not fewer. The improvement comes from reduced electron–electron repulsion."
+      }
+    ],
+    "explanation": "Each later trial function builds in more electron–electron interaction, letting the electrons keep apart. The detailed calculations show that the better agreement with experiment is due to a reduction in electron–electron repulsion."
+  },
+  {
+    "id": "pc8-helium-good-vs-poor",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what makes a helium trial wavefunction a \"good\" approximation rather than a \"poor\" one?",
+    "choices": [
+      {
+        "text": "How well its predictions match experiment",
+        "correct": true
+      },
+      {
+        "text": "How many adjustable parameters it has",
+        "why": "More parameters can help, but the section's test is accuracy: an approximation is only as good as its agreement with experiment."
+      },
+      {
+        "text": "How simple its mathematical form is",
+        "why": "A simple form is convenient, not a measure of quality. What counts is whether its predictions match experiment."
+      },
+      {
+        "text": "Whether it is built from hydrogen 1s orbitals",
+        "why": "All five trial functions use 1s-type exponentials. What separates good from poor is agreement with experimental results."
+      }
+    ],
+    "explanation": "The section calls all five trial wavefunctions equally \"valid\". What separates a poor approximation from a good one is whether it predicts experimental results: no matter how complicated, an approximation is only as good as the accuracy of its predictions."
+  },
+  {
+    "id": "pc8-helium-hydride",
+    "type": "multiple-choice",
+    "prompt": "For the hydride ion H^−, trial wavefunctions #1 and #2 do not predict a stable ion. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "Electron repulsion matters most when Z is small",
+        "correct": true
+      },
+      {
+        "text": "H^− can never exist as a stable ion",
+        "why": "The failure is in the approximations: the section calls these two functions poor approximations for H^−, not proof that the ion is unstable."
+      },
+      {
+        "text": "The variational method can't handle ions",
+        "why": "The method works for ions; the trouble is that these two trial functions underplay electron–electron interactions."
+      },
+      {
+        "text": "Electron repulsion matters most when Z is large",
+        "why": "It's the reverse: with a small nuclear charge (Z = 1 for H^−), electron–electron interactions are especially important."
+      }
+    ],
+    "explanation": "The first two trial functions fail for H^− (Z = 1) even though they work reasonably for helium (Z = 2). The section concludes that electron–electron interaction is an especially important issue for atoms and ions with small nuclear charge."
+  },
+  {
+    "id": "pc8-helium-two-electron-ions",
+    "type": "multiple-choice",
+    "prompt": "The section's five variational calculations for helium can be repeated for other two-electron species. Which of these is one?",
+    "choices": [
+      {
+        "text": "Li^+",
+        "correct": true
+      },
+      {
+        "text": "He^+",
+        "why": "He^+ has only one electron, so it is a hydrogen-like ion with no electron repulsion. Li^+ has two electrons."
+      },
+      {
+        "text": "Li",
+        "why": "A neutral lithium atom has three electrons. Removing one gives Li^+, a two-electron ion."
+      },
+      {
+        "text": "Be^+",
+        "why": "Be^+ has three electrons, since Be has four. The two-electron beryllium ion is Be^2+."
+      }
+    ],
+    "explanation": "Li^+ has 3 − 1 = 2 electrons, like helium. The section names H^−, Li^+ and Be^2+ as two-electron species for which the same calculations can be repeated."
+  },
+  {
+    "id": "pc8-helium-li-plus-e1",
+    "type": "numeric",
+    "prompt": "For a two-electron atom or ion with nuclear charge Z, first-order perturbation theory gives E^(1) = 5Z/8 hartree; for helium (Z = 2) this is the section's +34.0 eV. What is E^(1) for Li^+, with Z = 3, in hartrees? (Give it as a decimal.)",
+    "answer": 1.875,
+    "unit": "hartree",
+    "explanation": "E^(1) = 5 × 3/8 hartree = 1.875 hartree. The larger nuclear charge pulls the two electrons closer together, so their average repulsion is larger than helium's 1.25 hartree."
+  }
+]

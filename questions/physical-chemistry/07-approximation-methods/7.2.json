@@ -1,0 +1,586 @@
+[
+  {
+    "id": "pc7-secular-trial-form",
+    "type": "multiple-choice",
+    "prompt": "In a linear variational calculation, what form does the trial wavefunction take?",
+    "choices": [
+      {
+        "text": "A linear combination of chosen basis functions",
+        "correct": true
+      },
+      {
+        "text": "A product of one-electron functions, one per electron",
+        "why": "That is the orbital approximation. A linear variational trial function is a sum, Σ_j a_j|φ_j⟩, of basis functions with coefficients."
+      },
+      {
+        "text": "A single 1s function with a variable effective charge",
+        "why": "That was the helium trial function of Section 7.1. A linear variational trial function is a linear combination, Σ_j a_j|φ_j⟩."
+      },
+      {
+        "text": "An exact eigenfunction of the Hamiltonian",
+        "why": "The eigenfunctions are unknown; that's why an approximation is needed. The trial function is a linear combination of chosen basis functions."
+      }
+    ],
+    "explanation": "A linear variational trial function is a linear combination of N linearly independent functions: |ψ_trial⟩ = Σ_j a_j|φ_j⟩. The coefficients a_j are the parameters that are varied."
+  },
+  {
+    "id": "pc7-secular-parameters",
+    "type": "multiple-choice",
+    "prompt": "In the linear variational method, which quantities are varied to lower the energy?",
+    "choices": [
+      {
+        "text": "The coefficients a_j of the basis functions",
+        "correct": true
+      },
+      {
+        "text": "The shapes of the basis functions φ_j themselves",
+        "why": "The basis functions are fixed, chosen in advance. Only their coefficients a_j are varied."
+      },
+      {
+        "text": "The terms of the Hamiltonian operator",
+        "why": "The Hamiltonian is fixed and exact; it is never varied. The coefficients a_j are the variational parameters."
+      },
+      {
+        "text": "The number of electrons in the system",
+        "why": "The system is fixed. What changes is the weight a_j given to each basis function."
+      }
+    ],
+    "explanation": "The coefficients a_j play the part that ζ played in Section 7.1: they are varied to find the trial wavefunction with the lowest energy. The basis functions φ_j stay fixed."
+  },
+  {
+    "id": "pc7-secular-basis-conditions",
+    "type": "multiple-choice",
+    "prompt": "Which property are linear variational basis functions usually chosen to have?",
+    "choices": [
+      {
+        "text": "The same boundary conditions as the exact state",
+        "correct": true
+      },
+      {
+        "text": "A different symmetry from the exact state",
+        "why": "Basis functions are chosen to have the same symmetry as the exact state, as well as the same boundary conditions."
+      },
+      {
+        "text": "A dependence on different coordinates from ψ_trial",
+        "why": "They should be functions of the same coordinates as the exact state, and obey the same boundary conditions."
+      },
+      {
+        "text": "A Gaussian form, which every basis must have",
+        "why": "Gaussians are a popular choice, but not a requirement. The basis should obey the same boundary conditions as the exact state."
+      }
+    ],
+    "explanation": "Basis functions are chosen to obey the same boundary conditions as the exact state, to depend on the same coordinates, to have the same symmetry, and to make the matrix elements ⟨φ_i|Ĥ|φ_j⟩ convenient to evaluate."
+  },
+  {
+    "id": "pc7-secular-not-eigenfunctions",
+    "type": "multiple-choice",
+    "prompt": "Why aren't the basis functions in a linear variational calculation simply the eigenfunctions of the Hamiltonian?",
+    "choices": [
+      {
+        "text": "Those eigenfunctions are unknown",
+        "correct": true
+      },
+      {
+        "text": "Eigenfunctions can't be added together",
+        "why": "Eigenfunctions can be combined like any functions. They aren't used because they are unknown; finding them approximately is the goal."
+      },
+      {
+        "text": "Eigenfunctions always give too low an energy",
+        "why": "The exact eigenfunctions would give the exact energy. They aren't used simply because we don't know them."
+      },
+      {
+        "text": "Eigenfunctions have no boundary conditions",
+        "why": "Eigenfunctions obey the same boundary conditions as the exact state. The problem is that we don't know them for the system being studied."
+      }
+    ],
+    "explanation": "The linear variational method is used for systems, such as molecules, whose Schrödinger equation can't be solved exactly. The basis functions are convenient known functions, often atomic orbitals, that are not eigenfunctions of Ĥ."
+  },
+  {
+    "id": "pc7-secular-orthonormal-needed",
+    "type": "multiple-choice",
+    "prompt": "Must the basis functions φ_j in a linear variational calculation be orthonormal?",
+    "choices": [
+      {
+        "text": "No, though they are often chosen that way",
+        "correct": true
+      },
+      {
+        "text": "Yes, or E_trial can't be calculated",
+        "why": "E_trial can be calculated with any basis: the overlap integrals S_ij in the denominator handle functions that aren't orthonormal."
+      },
+      {
+        "text": "Yes, because the Hamiltonian is Hermitian",
+        "why": "Ĥ being Hermitian makes H_ij = H_ji^*, but it puts no condition on the basis. Orthonormality is a convenience, not a rule."
+      },
+      {
+        "text": "No, they must never be orthonormal",
+        "why": "Orthonormal basis functions are allowed and often chosen for convenience, since S_ij then becomes δ_ij."
+      }
+    ],
+    "explanation": "There is no rule that the φ_j must be orthogonal or normalized, although they are often chosen that way for convenience. So S_ij need not equal δ_ij."
+  },
+  {
+    "id": "pc7-secular-hij",
+    "type": "multiple-choice",
+    "prompt": "In the linear variational method, H_ij = ⟨φ_i|Ĥ|φ_j⟩. What is H_ij?",
+    "choices": [
+      {
+        "text": "A matrix element of Ĥ between φ_i and φ_j",
+        "correct": true
+      },
+      {
+        "text": "The total energy of the trial wavefunction",
+        "why": "E_trial is built from many H_ij, together with the coefficients and overlaps. Each H_ij involves just two basis functions."
+      },
+      {
+        "text": "The overlap integral of φ_i and φ_j",
+        "why": "That is S_ij = ⟨φ_i|φ_j⟩, which has no Ĥ in it. H_ij has the Hamiltonian between φ_i and φ_j."
+      },
+      {
+        "text": "The coefficient of basis function φ_j",
+        "why": "The coefficients are the a_j. H_ij is an integral of Ĥ between basis functions φ_i and φ_j."
+      }
+    ],
+    "explanation": "H_ij = ⟨φ_i|Ĥ|φ_j⟩ is a matrix element of the Hamiltonian, written in terms of the basis functions rather than the trial wavefunction. The numerator of E_trial becomes a sum of these terms, each weighted by the coefficients."
+  },
+  {
+    "id": "pc7-secular-count-hij",
+    "type": "numeric",
+    "prompt": "A trial function is built from 3 basis functions, φ_1, φ_2 and φ_3. How many matrix elements H_ij = ⟨φ_i|Ĥ|φ_j⟩ are there, if i and j each run from 1 to 3?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "There are 3 choices of i and 3 of j, so 3 × 3 = 9 matrix elements: H_11, H_12, H_13, H_21, … , H_33. They form a 3 × 3 matrix."
+  },
+  {
+    "id": "pc7-secular-h21",
+    "type": "numeric",
+    "prompt": "Because Ĥ is Hermitian, H_ij^* = H_ji; for real basis functions this means H_ij = H_ji. If H_12 = −0.35 hartree for two real basis functions, what is H_21, in hartree?",
+    "answer": -0.35,
+    "unit": "hartree",
+    "explanation": "For real functions H_21 = H_12 = −0.35 hartree. This symmetry, H_ij = H_ji (with S_ij = S_ji), is used to simplify the equations when E_trial is minimized."
+  },
+  {
+    "id": "pc7-secular-sij",
+    "type": "multiple-choice",
+    "prompt": "In the linear variational method, the denominator ⟨ψ_trial|ψ_trial⟩ is written using S_ij = ⟨φ_i|φ_j⟩. What are the S_ij?",
+    "choices": [
+      {
+        "text": "Overlap integrals between pairs of basis functions",
+        "correct": true
+      },
+      {
+        "text": "Energies of the individual basis functions",
+        "why": "Energies involve Ĥ, as in H_ij. S_ij = ⟨φ_i|φ_j⟩ has no Ĥ: it measures how much φ_i and φ_j overlap."
+      },
+      {
+        "text": "Spin quantum numbers of the electrons",
+        "why": "S_ij has nothing to do with spin here. It is the overlap integral ⟨φ_i|φ_j⟩ between two basis functions."
+      },
+      {
+        "text": "The variational coefficients of the trial function",
+        "why": "The coefficients are the a_j. S_ij is the overlap integral between basis functions φ_i and φ_j."
+      }
+    ],
+    "explanation": "S_ij = ⟨φ_i|φ_j⟩ are the overlap integrals between the basis functions. With them, the normalization integral of the trial function becomes a sum of the S_ij, each weighted by the coefficients."
+  },
+  {
+    "id": "pc7-secular-unit-matrix",
+    "type": "multiple-choice",
+    "prompt": "If the basis functions are orthonormal, what does the overlap matrix S become?",
+    "choices": [
+      {
+        "text": "The unit matrix: 1 on the diagonal, 0 elsewhere",
+        "correct": true
+      },
+      {
+        "text": "A matrix with 0 on the diagonal and 1 elsewhere",
+        "why": "Each normalized function overlaps itself fully, S_ii = 1, and orthogonal functions have zero overlap, S_ij = 0 for i ≠ j."
+      },
+      {
+        "text": "A matrix of all zeros",
+        "why": "The diagonal elements S_ii = ⟨φ_i|φ_i⟩ = 1 for normalized functions. Only the off-diagonal elements are zero."
+      },
+      {
+        "text": "The same matrix as H",
+        "why": "S contains no Hamiltonian. For an orthonormal basis S_ij = δ_ij, the unit matrix."
+      }
+    ],
+    "explanation": "For orthonormal functions, S_ij = δ_ij: S_ii = 1 because each function is normalized, and S_ij = 0 (i ≠ j) because different functions are orthogonal. So S becomes the unit matrix."
+  },
+  {
+    "id": "pc7-secular-minimum-condition",
+    "type": "multiple-choice",
+    "prompt": "The secular equations come from minimizing E_trial with respect to the coefficients. Which condition is applied?",
+    "choices": [
+      {
+        "text": "∂E_trial/∂a_k = 0 for every coefficient a_k",
+        "correct": true
+      },
+      {
+        "text": "E_trial = 0 for every coefficient a_k",
+        "why": "The energy itself isn't set to zero. At a minimum, its slope with respect to each coefficient is zero."
+      },
+      {
+        "text": "a_k = 0 for every coefficient",
+        "why": "That is the trivial solution, which gives no wavefunction at all. The condition is ∂E_trial/∂a_k = 0 for each k."
+      },
+      {
+        "text": "∂E_trial/∂a_k = 0 for just one coefficient",
+        "why": "The energy must be at a minimum with respect to all the coefficients at once, so the derivative is zero for every k."
+      }
+    ],
+    "explanation": "The minimum of E_trial in the landscape of coefficients requires ∂E_trial/∂a_k = 0 for all k. This gives one equation for each k, Σ_i a_i(H_ik − E_trial S_ik) = 0: the secular equations."
+  },
+  {
+    "id": "pc7-secular-eigenvalue-form",
+    "type": "multiple-choice",
+    "prompt": "What do the secular equations Σ_i a_i(H_ik − E_trial S_ik) = 0 reduce to when the basis is orthonormal?",
+    "choices": [
+      {
+        "text": "The eigenvalue form Σ_j H_ij a_j = E_trial a_i",
+        "correct": true
+      },
+      {
+        "text": "The single equation E_trial = H_11",
+        "why": "An orthonormal basis removes S, but all the coefficients still mix. The equations become an eigenvalue problem, Σ_j H_ij a_j = E_trial a_i."
+      },
+      {
+        "text": "Equations in which all the H_ij are zero",
+        "why": "Orthonormality sets the off-diagonal S_ij to zero, not the H_ij. The equations become Σ_j H_ij a_j = E_trial a_i."
+      },
+      {
+        "text": "Equations that no longer contain the energy E_trial",
+        "why": "The energy is still there, as the eigenvalue: Σ_j H_ij a_j = E_trial a_i."
+      }
+    ],
+    "explanation": "With an orthonormal basis the overlap matrix is the unit matrix, and the secular equations take the more familiar eigenvalue form Σ_j H_ij a_j = E_trial a_i."
+  },
+  {
+    "id": "pc7-secular-nontrivial",
+    "type": "multiple-choice",
+    "prompt": "Why must the secular determinant |H_ik − ES_ik| be set equal to zero?",
+    "choices": [
+      {
+        "text": "So the coefficients are not all zero",
+        "correct": true
+      },
+      {
+        "text": "So that the energy E comes out as zero",
+        "why": "The determinant is set to zero, not the energy. This condition is what allows a solution with nonzero coefficients."
+      },
+      {
+        "text": "Because every basis function has zero overlap",
+        "why": "The overlaps S_ik need not be zero; the basis needn't be orthonormal. The condition gives a non-trivial solution, with not all a_i = 0."
+      },
+      {
+        "text": "Because a determinant is always zero",
+        "why": "A determinant can be any number, including a negative one. It must be zero here for a non-trivial solution of the secular equations."
+      }
+    ],
+    "explanation": "The secular equations always have the trivial solution a_i = 0 for all i, which gives no wavefunction. A non-trivial solution, with not all a_i = 0, exists only if the determinant of the secular matrix is zero."
+  },
+  {
+    "id": "pc7-secular-det-number",
+    "type": "multiple-choice",
+    "prompt": "What kind of quantity is a determinant, such as the secular determinant?",
+    "choices": [
+      {
+        "text": "A single number",
+        "correct": true
+      },
+      {
+        "text": "A matrix of the same size",
+        "why": "A determinant is calculated from a square matrix, but it is a number, not a matrix."
+      },
+      {
+        "text": "Always a positive number",
+        "why": "A determinant can be negative. Despite the vertical lines, it is not an absolute value."
+      },
+      {
+        "text": "A vector with one entry per row",
+        "why": "A determinant is a single number found from a square matrix, not a vector."
+      }
+    ],
+    "explanation": "A determinant is a number, not a matrix. It can be negative, and despite the vertical lines it has nothing to do with absolute value."
+  },
+  {
+    "id": "pc7-secular-square-only",
+    "type": "multiple-choice",
+    "prompt": "For which matrices does a determinant exist?",
+    "choices": [
+      {
+        "text": "Only square matrices, such as 2 × 2 or 3 × 3",
+        "correct": true
+      },
+      {
+        "text": "Any matrix, whatever its shape",
+        "why": "A determinant exists only for square matrices, with as many rows as columns."
+      },
+      {
+        "text": "Only 2 × 2 matrices",
+        "why": "3 × 3 and larger square matrices have determinants too; the section gives the 3 × 3 formula. The matrix just has to be square."
+      },
+      {
+        "text": "Only matrices whose entries are all positive",
+        "why": "Entries can have any sign. What matters is that the matrix is square."
+      }
+    ],
+    "explanation": "A determinant exists only for square matrices (2 × 2, 3 × 3, …, n × n). The secular matrix is always square, with one row and one column for each basis function."
+  },
+  {
+    "id": "pc7-secular-det-2x2",
+    "type": "numeric",
+    "prompt": "A 2 × 2 determinant is |a, b; c, d| = ad − bc, where a, b is the first row and c, d the second. What is the value of |2, 3; 4, 5|?",
+    "answer": -2,
+    "tolerance": 0,
+    "explanation": "ad − bc = (2)(5) − (3)(4) = 10 − 12 = −2. A determinant can be negative: despite the vertical lines, it is not an absolute value."
+  },
+  {
+    "id": "pc7-secular-diagonal-element",
+    "type": "numeric",
+    "prompt": "A diagonal element of the secular determinant is H_11 − ES_11. If H_11 = −13.6 eV, S_11 = 1 and E = −10.0 eV, what is the value of this element, in eV?",
+    "answer": -3.6,
+    "unit": "eV",
+    "explanation": "H_11 − ES_11 = −13.6 eV − (−10.0 eV)(1) = −13.6 eV + 10.0 eV = −3.6 eV. Each element of the secular determinant has this form, H_ik − ES_ik."
+  },
+  {
+    "id": "pc7-secular-one-function",
+    "type": "numeric",
+    "prompt": "With a single basis function, the secular determinant is the 1 × 1 determinant H_11 − ES_11 = 0, so E = H_11/S_11. If H_11 = −0.90 hartree and S_11 = 2.0 (the function isn't normalized), what is E, in hartree?",
+    "answer": -0.45,
+    "unit": "hartree",
+    "explanation": "E = H_11/S_11 = (−0.90 hartree)/2.0 = −0.45 hartree. The overlap S_11 in the denominator takes care of the missing normalization, just as ⟨ψ_trial|ψ_trial⟩ does in E_trial."
+  },
+  {
+    "id": "pc7-secular-characteristic",
+    "type": "multiple-choice",
+    "prompt": "When the secular determinant is expanded and set equal to zero, what kind of equation results?",
+    "choices": [
+      {
+        "text": "A polynomial in E, the characteristic equation",
+        "correct": true
+      },
+      {
+        "text": "A set of linear equations for the coefficients a_i",
+        "why": "The secular equations themselves are linear in the a_i. Expanding the determinant gives a polynomial in E, the characteristic equation."
+      },
+      {
+        "text": "An equation that gives the overlaps S_ij",
+        "why": "The S_ij are integrals worked out beforehand. The determinant gives a polynomial whose roots are the energies E."
+      },
+      {
+        "text": "A differential equation in the coordinates",
+        "why": "Once the H_ij and S_ij are known numbers, no derivatives are left. The result is a polynomial, the characteristic equation, solved for E."
+      }
+    ],
+    "explanation": "Expanding |H_ik − ES_ik| = 0 gives a polynomial in E called the characteristic equation. Its roots, found with linear algebra or numerically, are the approximate energies."
+  },
+  {
+    "id": "pc7-secular-count-energies",
+    "type": "numeric",
+    "prompt": "A linear variational trial function uses 4 basis functions, so its secular determinant has 4 rows and 4 columns. How many energies E (roots) does the secular determinant give?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Expanding a 4 × 4 secular determinant gives a polynomial of degree 4 in E, which has 4 roots. In general, N basis functions give N approximate energies."
+  },
+  {
+    "id": "pc7-secular-lower-root",
+    "type": "numeric",
+    "prompt": "For two orthonormal basis functions with H_11 = H_22 = −1.0 hartree and H_12 = −0.4 hartree, the secular determinant gives E = H_11 + H_12 and E = H_11 − H_12. What is the lower of these two energies, the estimate of the ground-state energy, in hartree?",
+    "answer": -1.4,
+    "unit": "hartree",
+    "explanation": "E = −1.0 + (−0.4) = −1.4 hartree and E = −1.0 − (−0.4) = −0.6 hartree. The lower root, −1.4 hartree, approximates the ground state; the higher one approximates the next state up."
+  },
+  {
+    "id": "pc7-secular-energies-above",
+    "type": "multiple-choice",
+    "prompt": "The energies from the secular determinant, in increasing order, approximate the first few states. How does each compare with the true energy of its state?",
+    "choices": [
+      {
+        "text": "It is at or above the true energy",
+        "correct": true
+      },
+      {
+        "text": "It is lower than the true energy",
+        "why": "The variation theorem makes each approximate energy an upper bound: it lies above the true energy of its state."
+      },
+      {
+        "text": "It is exactly equal to the true energy",
+        "why": "Only an exact wavefunction would give the exact energy. With a limited basis, each energy is higher than the true one."
+      },
+      {
+        "text": "It may be higher or lower, at random",
+        "why": "It isn't random. By the variation theorem, each energy lies above the true energy of the state it approximates."
+      }
+    ],
+    "explanation": "Arranged in order of increasing energy, the roots approximate the energies of the first k states, each higher than the true energy of its state by virtue of the variation theorem."
+  },
+  {
+    "id": "pc7-secular-more-states",
+    "type": "multiple-choice",
+    "prompt": "How can a linear variational calculation give approximate energies for more states?",
+    "choices": [
+      {
+        "text": "Use more basis functions in the trial function",
+        "correct": true
+      },
+      {
+        "text": "Use fewer basis functions",
+        "why": "N basis functions give N energies, so fewer functions give fewer states. More basis functions are needed."
+      },
+      {
+        "text": "Set more of the coefficients to zero",
+        "why": "Setting coefficients to zero effectively removes basis functions, giving fewer states. To find more states, add more basis functions."
+      },
+      {
+        "text": "Keep the basis but add terms to the Hamiltonian",
+        "why": "The Hamiltonian is fixed by the system. The number of energies equals the number of basis functions, so add more of them."
+      }
+    ],
+    "explanation": "The secular determinant has one row and column per basis function, so N basis functions give N energies. To find the energies of more states, simply use more basis functions."
+  },
+  {
+    "id": "pc7-secular-get-coefficients",
+    "type": "multiple-choice",
+    "prompt": "Once an energy E has been found from the secular determinant, how are the coefficients a_i for that state found?",
+    "choices": [
+      {
+        "text": "Substitute E into the secular equations",
+        "correct": true
+      },
+      {
+        "text": "Set every coefficient equal to E",
+        "why": "The coefficients are not energies. Substitute E into the secular equations and solve them for the a_i."
+      },
+      {
+        "text": "Choose them at random, then normalize",
+        "why": "Random coefficients would not satisfy the secular equations. Substituting E into those equations fixes their ratios."
+      },
+      {
+        "text": "Read them off the diagonal elements H_ii",
+        "why": "The H_ii are energies, not coefficients. Put E back into the secular equations and solve for the a_i."
+      }
+    ],
+    "explanation": "Substituting the energy into the secular equations gives all the coefficients in terms of one of them. Normalizing the wavefunction then fixes their absolute values."
+  },
+  {
+    "id": "pc7-secular-what-needed",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what two things are needed to apply a variational method?",
+    "choices": [
+      {
+        "text": "The Hamiltonian and a flexible trial wavefunction",
+        "correct": true
+      },
+      {
+        "text": "The exact energies and exact wavefunctions of the system",
+        "why": "If those were known, no approximation would be needed. You need Ĥ and a trial function with some flexibility, such as variable coefficients."
+      },
+      {
+        "text": "An experimental spectrum and a perturbation",
+        "why": "A perturbation belongs to perturbation theory, not the variational method. You need Ĥ and a trial function that can be varied."
+      },
+      {
+        "text": "Only the overlap integrals S_ij",
+        "why": "The overlaps alone don't contain the energy. You need the Hamiltonian, whose levels are sought, and a trial function with flexibility."
+      }
+    ],
+    "explanation": "To implement a variational method you need the Hamiltonian whose energy levels are sought and a trial wavefunction with some flexibility, such as the coefficients a_j of the linear variational method. Variational methods are the most widely used approximation techniques in quantum chemistry."
+  },
+  {
+    "id": "pc7-secular-lcao",
+    "type": "multiple-choice",
+    "prompt": "How is the Linear Combination of Atomic Orbitals (LCAO) method related to the linear variational method?",
+    "choices": [
+      {
+        "text": "It uses atomic orbitals as the basis functions",
+        "correct": true
+      },
+      {
+        "text": "It ignores the variational principle entirely",
+        "why": "LCAO trial functions are linear combinations, Σ_i a_i|φ_i⟩, so LCAO is a specific application of the linear variational method."
+      },
+      {
+        "text": "It uses a single atomic orbital with no coefficients",
+        "why": "LCAO combines several atomic orbitals, each with a coefficient a_i that is varied. That is the linear variational method."
+      },
+      {
+        "text": "It replaces the Hamiltonian with a simpler one",
+        "why": "LCAO keeps the Hamiltonian and builds the trial function from atomic orbitals. It is the linear variational method with an atomic-orbital basis."
+      }
+    ],
+    "explanation": "LCAO trial functions, |ψ⟩ = Σ_i a_i|φ_i⟩, are linear combinations of atomic orbital functions, so LCAO is a specific application of the linear variational method. It was introduced by Lennard-Jones and others for atoms and molecules."
+  },
+  {
+    "id": "pc7-secular-gaussian-form",
+    "type": "multiple-choice",
+    "prompt": "Slater-type orbitals have the radial form e^(−αr). Which radial form do Gaussian-type orbitals have?",
+    "choices": [
+      {
+        "text": "e^(−αr²)",
+        "correct": true
+      },
+      {
+        "text": "e^(−α/r)",
+        "why": "A Gaussian has r squared in the exponent: e^(−αr²). That is what makes products of Gaussians Gaussian again."
+      },
+      {
+        "text": "e^(+αr²)",
+        "why": "This grows without limit as r increases, so it can't describe a bound orbital. A Gaussian decays as e^(−αr²)."
+      },
+      {
+        "text": "re^(−αr)",
+        "why": "That still decays as e^(−αr), like a Slater orbital. A Gaussian has r squared in the exponent: e^(−αr²)."
+      }
+    ],
+    "explanation": "Gaussian orbitals have a spherical harmonic times e^(−αr²): the exponent contains r², not r. Slater orbitals, with e^(−αr), resemble hydrogen-like wavefunctions."
+  },
+  {
+    "id": "pc7-secular-why-gaussians",
+    "type": "multiple-choice",
+    "prompt": "Why do many quantum chemistry computer codes use Gaussian orbitals as basis functions?",
+    "choices": [
+      {
+        "text": "Their products are Gaussian, so integrals are easy",
+        "correct": true
+      },
+      {
+        "text": "Gaussians give exact results for hydrogen",
+        "why": "It's Slater orbitals that give exact results for hydrogen. Gaussians are used because their products are Gaussian, so matrix elements are easy."
+      },
+      {
+        "text": "Gaussians are eigenfunctions of every Hamiltonian",
+        "why": "They aren't eigenfunctions; they are convenient basis functions. Their products are also Gaussian, which makes integrals easy."
+      },
+      {
+        "text": "Gaussians need no coefficients in the trial function",
+        "why": "Gaussian basis functions still get coefficients a_i in the linear combination. They are chosen because their integrals are easy."
+      }
+    ],
+    "explanation": "Because products of Gaussians are also Gaussian, the matrix elements H_ij and S_ij are easily computed. Gaussian orbitals form the basis of many quantum chemistry computer codes."
+  },
+  {
+    "id": "pc7-secular-slater-hydrogen",
+    "type": "multiple-choice",
+    "prompt": "Why does the section test the LCAO method on hydrogen with Gaussian orbitals rather than Slater orbitals?",
+    "choices": [
+      {
+        "text": "Slater orbitals are already exact for hydrogen",
+        "correct": true
+      },
+      {
+        "text": "Slater orbitals can't be used for hydrogen at all",
+        "why": "They can, and they give the exact answer, which is why they would make a poor test."
+      },
+      {
+        "text": "Gaussian orbitals give the exact hydrogen energy",
+        "why": "It is Slater orbitals, with the hydrogen-like e^(−αr) form, that are exact for hydrogen. Gaussians give an approximate answer worth testing."
+      },
+      {
+        "text": "Hydrogen has no electrons to be described",
+        "why": "Hydrogen has one electron. The reason is that Slater orbitals would give exact results, so there would be nothing to test."
+      }
+    ],
+    "explanation": "Slater orbitals have the hydrogen-like form e^(−αr), so they give exact results for hydrogen. Gaussian orbitals don't, which makes hydrogen a good test of how well a Gaussian basis works."
+  }
+]

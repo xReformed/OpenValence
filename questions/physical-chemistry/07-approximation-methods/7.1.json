@@ -1,0 +1,586 @@
+[
+  {
+    "id": "pc7-variational-first-ionization",
+    "type": "multiple-choice",
+    "prompt": "What is the first ionization energy, I_1, of helium?",
+    "choices": [
+      {
+        "text": "The least energy to remove one electron from He",
+        "correct": true
+      },
+      {
+        "text": "The energy needed to remove both electrons from He",
+        "why": "Removing both electrons takes I_1 + I_2 = 79.01 eV. I_1 is only the minimum energy to remove the first electron, 24.59 eV."
+      },
+      {
+        "text": "The energy needed to remove the electron from He^+",
+        "why": "That is the second ionization energy, I_2 = 54.42 eV. I_1 removes the first electron from neutral helium."
+      },
+      {
+        "text": "The energy of an electron in a hydrogen 1s orbital",
+        "why": "That is about hydrogen, not helium. I_1 is the minimum energy to remove the first electron from a helium atom, 24.59 eV."
+      }
+    ],
+    "explanation": "I_1 is the minimum energy required to remove the first electron from helium gas, He → He^+ + e^−. It is found by experiment to be 24.59 eV."
+  },
+  {
+    "id": "pc7-variational-i2-exact",
+    "type": "multiple-choice",
+    "prompt": "Why can helium's second ionization energy, I_2, be calculated exactly rather than only measured?",
+    "choices": [
+      {
+        "text": "He^+ has one electron, so it is a hydrogen-like ion",
+        "correct": true
+      },
+      {
+        "text": "The second electron feels no attraction to the nucleus",
+        "why": "It feels the full +2 charge. I_2 can be calculated because He^+ has only one electron, like hydrogen, so there is no electron–electron repulsion."
+      },
+      {
+        "text": "Both electrons are removed together in the same step",
+        "why": "I_2 removes only the second electron, from He^+. It can be calculated because a one-electron ion is solved exactly, like hydrogen."
+      },
+      {
+        "text": "The variational method gives exact energies for ions",
+        "why": "The variational method gives an upper bound, not exact energies. I_2 is exact because He^+ is a hydrogen-like ion with Z = 2."
+      }
+    ],
+    "explanation": "Once one electron is gone, He^+ is a one-electron, hydrogen-like ion with Z = 2. Its energy comes straight from the hydrogen atom solutions, giving I_2 = −E_1s(He^+) = 54.42 eV."
+  },
+  {
+    "id": "pc7-variational-i2-hartree",
+    "type": "numeric",
+    "prompt": "In atomic units, the energy needed to remove the electron from a hydrogen-like ion in level n is Z^2/(2n^2) hartree. What is helium's second ionization energy, I_2, for He^+ (Z = 2, n = 1), in hartree?",
+    "answer": 2,
+    "unit": "hartree",
+    "tolerance": 0,
+    "explanation": "I_2 = 2^2/(2 × 1^2) = 4/2 = 2 hartree. With 1 hartree = 27.211 eV, this is 54.42 eV, the value given in the section."
+  },
+  {
+    "id": "pc7-variational-energy-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is the ground-state energy of helium equal to −(I_1 + I_2)?",
+    "choices": [
+      {
+        "text": "The fully separated particles are defined as zero",
+        "correct": true
+      },
+      {
+        "text": "I_1 and I_2 are both negative numbers",
+        "why": "Ionization energies are positive: energy must be supplied. The minus sign appears because the separated nucleus and electrons are taken as the zero of energy."
+      },
+      {
+        "text": "The two ionization energies are always equal",
+        "why": "They are not: I_1 = 24.59 eV and I_2 = 54.42 eV. E = −(I_1 + I_2) because removing both electrons takes the atom up to the zero of energy."
+      },
+      {
+        "text": "Each electron has half of the atom's total energy",
+        "why": "The two ionization energies differ, so the electrons don't share the energy equally. The total is −(I_1 + I_2) because the separated particles define zero."
+      }
+    ],
+    "explanation": "The energy of the bare nucleus and two free electrons is zero by definition. Removing both electrons costs I_1 + I_2, so the atom starts that far below zero: E_true = −(I_1 + I_2)."
+  },
+  {
+    "id": "pc7-variational-true-energy",
+    "type": "numeric",
+    "prompt": "The ground-state energy of helium is E_true = −(I_1 + I_2). Experiment gives I_1 = 24.59 eV, and I_2 = 54.42 eV. What is E_true, in eV?",
+    "answer": -79.01,
+    "unit": "eV",
+    "explanation": "E_true = −(24.59 eV + 54.42 eV) = −79.01 eV. This is the true value that the approximation methods in this section try to reproduce."
+  },
+  {
+    "id": "pc7-variational-true-hartree",
+    "type": "numeric",
+    "prompt": "Helium's experimental ground-state energy is −79.01 eV. Using 1 hartree = 27.211 eV, what is this energy in hartree?",
+    "answer": -2.9036,
+    "unit": "hartree",
+    "explanation": "−79.01 eV ÷ 27.211 eV per hartree = −2.904 hartree. Energies of atoms are often quoted in hartree, the atomic unit of energy."
+  },
+  {
+    "id": "pc7-variational-drop-repulsion",
+    "type": "multiple-choice",
+    "prompt": "In the \"ignorance is bliss\" approximation, the e^2/(4πε_0 r_12) term is dropped from the helium Hamiltonian. What is left?",
+    "choices": [
+      {
+        "text": "A sum of two hydrogen-like one-electron Hamiltonians",
+        "correct": true
+      },
+      {
+        "text": "A single hydrogen Hamiltonian with Z = 1",
+        "why": "Both electrons are still there, each attracted to the +2 nucleus. What's left is h_1 + h_2, two hydrogen-like Hamiltonians."
+      },
+      {
+        "text": "The same Hamiltonian, since the dropped term is tiny",
+        "why": "The repulsion term is not small: dropping it changes the energy from −79.0 eV to −108.8 eV. What's left is h_1 + h_2."
+      },
+      {
+        "text": "Only the kinetic energies of the two electrons",
+        "why": "Only the repulsion term is dropped. Each electron's kinetic energy and attraction to the nucleus remain, giving h_1 + h_2."
+      }
+    ],
+    "explanation": "Without the repulsion term, Ĥ ≈ h_1(r_1) + h_2(r_2), where each h is a hydrogen-like Hamiltonian for one electron. The electrons become independent, so the wavefunction is a product and the two one-electron energies simply add."
+  },
+  {
+    "id": "pc7-variational-ignorance-too-low",
+    "type": "multiple-choice",
+    "prompt": "Ignoring the electron–electron repulsion gives helium an energy of −108.8 eV, compared with −79.0 eV from experiment. Why is the approximate energy so much lower?",
+    "choices": [
+      {
+        "text": "The left-out repulsion would have raised the energy",
+        "correct": true
+      },
+      {
+        "text": "The nuclear attraction was left out of the calculation",
+        "why": "The attraction was kept; leaving it out would raise the energy, not lower it. The missing term is the electron–electron repulsion, which is positive."
+      },
+      {
+        "text": "The variational principle makes every estimate too low",
+        "why": "The variational principle says trial energies are too high, never too low. This result is low because a positive term was dropped from Ĥ itself."
+      },
+      {
+        "text": "The experiment measured only one of the two electrons",
+        "why": "The experimental −79.0 eV is −(I_1 + I_2), which covers both electrons. The estimate is low because the repulsion was ignored."
+      }
+    ],
+    "explanation": "The repulsion between the electrons is a positive energy term. Dropping it removes energy that raises E, so the estimate (−8R_H = −108.8 eV) is far too negative. The section calls this a poor approximation."
+  },
+  {
+    "id": "pc7-variational-effective-charge-swap",
+    "type": "multiple-choice",
+    "prompt": "One way to allow for electron–electron repulsion in helium is to change the form of the wavefunction. What change does the section make?",
+    "choices": [
+      {
+        "text": "Replace Z = 2 with a smaller effective nuclear charge",
+        "correct": true
+      },
+      {
+        "text": "Replace Z = 2 with a larger effective nuclear charge",
+        "why": "Shielding reduces the charge each electron feels, so the effective charge is smaller than 2, not larger."
+      },
+      {
+        "text": "Put both electrons in a 2s orbital instead of the 1s",
+        "why": "The section keeps the 1s form and changes only the nuclear charge in it, from 2 to a smaller Z_eff."
+      },
+      {
+        "text": "Leave one of the two electrons out of the wavefunction",
+        "why": "Both electrons stay. Each one's wavefunction uses a reduced nuclear charge, Z_eff < 2, to allow for shielding by the other."
+      }
+    ],
+    "explanation": "A logical modification is to replace the nuclear charge Z = 2 in the wavefunctions with an effective nuclear charge Z_eff smaller than 2. The reason is that each electron partly shields the nucleus from the other."
+  },
+  {
+    "id": "pc7-variational-shielding-why",
+    "type": "multiple-choice",
+    "prompt": "Why does a region of negative charge between an electron and the helium nucleus reduce the nuclear charge the electron feels?",
+    "choices": [
+      {
+        "text": "It partly cancels the attraction to the nucleus",
+        "correct": true
+      },
+      {
+        "text": "It adds extra positive charge to the helium nucleus",
+        "why": "Negative charge can't add positive charge to the nucleus. It repels the outer electron, which partly cancels the nucleus's pull."
+      },
+      {
+        "text": "It pulls the electron closer to the nucleus",
+        "why": "Negative charge repels the electron, partly countering the attraction; it doesn't pull the electron inward."
+      },
+      {
+        "text": "It makes the electron's kinetic energy zero",
+        "why": "Shielding is about potential energy: the negative charge makes the electron–nucleus potential energy more positive, weakening the attraction."
+      }
+    ],
+    "explanation": "Negative charge density between an electron and the +2 nucleus repels the electron, partly countering the nucleus's pull. This makes the potential energy between them more positive, which acts like a smaller nuclear charge, ζ < 2."
+  },
+  {
+    "id": "pc7-variational-partial-shielding",
+    "type": "multiple-choice",
+    "prompt": "The variational treatment of helium gives an effective nuclear charge of ζ = 1.69. What does a value between 1 and 2 tell you?",
+    "choices": [
+      {
+        "text": "Each electron partly, but not fully, shields the nucleus",
+        "correct": true
+      },
+      {
+        "text": "Each electron completely shields the nucleus from the other",
+        "why": "Complete shielding would leave the other electron feeling a charge of 1, so ζ would be 1. A value above 1 means the shielding is only partial."
+      },
+      {
+        "text": "The electrons do not shield each other at all",
+        "why": "With no shielding, each electron would feel the full charge and ζ would be 2. A value below 2 shows some shielding."
+      },
+      {
+        "text": "The helium nucleus has lost part of its charge",
+        "why": "The nucleus still has charge +2. ζ is the effective charge an electron feels after shielding by the other electron."
+      }
+    ],
+    "explanation": "If the shielding were complete, Z_eff would equal 1; with no shielding, Z_eff = 2. The shielding is neither zero nor complete, so the effective nuclear charge lies between 1 and 2; the best value is ζ = 27/16 ≈ 1.69."
+  },
+  {
+    "id": "pc7-variational-shielding-constant",
+    "type": "numeric",
+    "prompt": "An effective nuclear charge can be written Z_eff = Z − S, where S is the shielding by the other electrons. The variational method gives Z_eff = 27/16 = 1.6875 for helium (Z = 2). What is S? (Give it as a decimal.)",
+    "answer": 0.3125,
+    "explanation": "S = Z − Z_eff = 2 − 1.6875 = 0.3125. Each electron screens about a third of a unit of nuclear charge from the other: partial shielding, between none (S = 0) and complete (S = 1)."
+  },
+  {
+    "id": "pc7-variational-predict",
+    "type": "multiple-choice",
+    "prompt": "Why does the section want a principle for choosing the best value of Z_eff, rather than adjusting it until it matches experiment?",
+    "choices": [
+      {
+        "text": "A theory should predict results before they are measured",
+        "correct": true
+      },
+      {
+        "text": "Z_eff can't be compared with experiment in any way",
+        "why": "The energy it gives can be compared with experiment, as Table 7.1.1 does. The point is that a good theory should make predictions in advance."
+      },
+      {
+        "text": "The experimental energy of helium is not known",
+        "why": "It is known: −79.0 eV. Even so, a theory should be able to predict a result before knowing the experimental value."
+      },
+      {
+        "text": "Experiments measure Z_eff directly, so no rule is needed",
+        "why": "Z_eff is a parameter in the wavefunction, not something measured directly. A theory needs its own rule for choosing it, so that it can predict results."
+      }
+    ],
+    "explanation": "In general, a theory should be able to make predictions in advance of knowing the experimental result. The variational principle gives such a rule: choose the value of the parameter that gives the lowest energy."
+  },
+  {
+    "id": "pc7-variational-best-parameter",
+    "type": "multiple-choice",
+    "prompt": "According to the variational principle, what is the best value for an adjustable parameter in an approximate wavefunction?",
+    "choices": [
+      {
+        "text": "The value that gives the lowest ground-state energy",
+        "correct": true
+      },
+      {
+        "text": "The value that gives the highest ground-state energy",
+        "why": "Trial energies lie above the true energy, so the lowest one is closest to it. The best parameter minimizes the energy."
+      },
+      {
+        "text": "The value used in the exact hydrogen atom solution",
+        "why": "For helium that would mean ζ = 2, which ignores shielding. The best value is the one that minimizes the energy."
+      },
+      {
+        "text": "Any value, since every value gives the same energy",
+        "why": "The energy changes with the parameter; for helium E_trial depends on ζ. The best value is the one that makes the energy lowest."
+      }
+    ],
+    "explanation": "The variational principle says the best value for any variable parameter in an approximate wavefunction is the value that gives the lowest energy for the ground state. The variational method is the procedure for finding it."
+  },
+  {
+    "id": "pc7-variational-inequality",
+    "type": "multiple-choice",
+    "prompt": "Which statement expresses the variational principle?",
+    "choices": [
+      {
+        "text": "E_trial ≥ E_true",
+        "correct": true
+      },
+      {
+        "text": "E_trial ≤ E_true",
+        "why": "It's the other way round. A trial wavefunction can never give an energy below the true ground-state energy."
+      },
+      {
+        "text": "E_trial = E_true for any trial function",
+        "why": "Equality holds only when the trial function is the true wavefunction. Otherwise E_trial is higher."
+      },
+      {
+        "text": "|E_trial| ≥ |E_true|",
+        "why": "For negative energies, that would put the trial energy below the true one. The principle is E_trial ≥ E_true: the trial energy is never lower."
+      }
+    ],
+    "explanation": "For a time-independent Hamiltonian, any trial wavefunction gives a variational energy greater than or equal to the true ground-state energy: E_trial ≥ E_true. So E_trial is an upper bound to the true energy."
+  },
+  {
+    "id": "pc7-variational-upper-bound-use",
+    "type": "multiple-choice",
+    "prompt": "A trial wavefunction for an atom gives E_trial = −2.80 hartree. What does the variational principle tell you about the true ground-state energy?",
+    "choices": [
+      {
+        "text": "It is −2.80 hartree or lower",
+        "correct": true
+      },
+      {
+        "text": "It is −2.80 hartree or higher",
+        "why": "The variational energy is an upper bound. The true energy can't be higher than E_trial, so it is −2.80 hartree or lower."
+      },
+      {
+        "text": "It is exactly −2.80 hartree",
+        "why": "E_trial equals E_true only when the trial function is the true wavefunction, which we don't know here. We only know E_true ≤ −2.80 hartree."
+      },
+      {
+        "text": "Nothing, until it is measured",
+        "why": "The principle does tell us something: E_trial is an upper bound, so E_true is no higher than −2.80 hartree."
+      }
+    ],
+    "explanation": "Because E_trial ≥ E_true, the variational energy is an upper bound to the true ground-state energy. The true energy is therefore at or below −2.80 hartree."
+  },
+  {
+    "id": "pc7-variational-below-true",
+    "type": "multiple-choice",
+    "prompt": "The true ground-state energy of helium is −2.90 hartree. A student reports a variational energy of −2.95 hartree. What should you conclude?",
+    "choices": [
+      {
+        "text": "The calculation has an error somewhere",
+        "correct": true
+      },
+      {
+        "text": "The student has found a better energy than experiment",
+        "why": "No trial wavefunction can give an energy below the true one when the exact Hamiltonian is used. A result below −2.90 hartree signals an error."
+      },
+      {
+        "text": "The trial function is the exact wavefunction",
+        "why": "The exact wavefunction would give exactly −2.90 hartree, not less. An energy below the true value points to a mistake."
+      },
+      {
+        "text": "The variational principle fails for helium",
+        "why": "The principle holds for any time-independent Hamiltonian, helium included. An energy below the true value means the calculation is wrong."
+      }
+    ],
+    "explanation": "E_trial ≥ E_true for any trial wavefunction used with the exact Hamiltonian. A variational energy below the true ground-state energy is impossible, so −2.95 hartree must come from a mistake."
+  },
+  {
+    "id": "pc7-variational-equality",
+    "type": "multiple-choice",
+    "prompt": "When is the variational energy E_trial exactly equal to the true energy E_true?",
+    "choices": [
+      {
+        "text": "Only when ψ_trial is the true wavefunction",
+        "correct": true
+      },
+      {
+        "text": "Whenever ψ_trial is normalized",
+        "why": "Normalizing a function doesn't make it correct. E_trial = E_true only when ψ_trial is the true wavefunction."
+      },
+      {
+        "text": "Whenever ψ_trial has an adjustable parameter",
+        "why": "Adding a parameter makes the trial function more flexible but rarely exact. Equality needs ψ_trial = ψ_true."
+      },
+      {
+        "text": "Never; E_trial is always strictly higher",
+        "why": "Equality is possible: if the trial function happens to be the true wavefunction, E_trial = E_true."
+      }
+    ],
+    "explanation": "The variational energy equals the true energy only when the trial wavefunction is the true wavefunction. For any other trial function, E_trial is higher."
+  },
+  {
+    "id": "pc7-variational-trial-function",
+    "type": "multiple-choice",
+    "prompt": "In the variational method, what is a trial wavefunction?",
+    "choices": [
+      {
+        "text": "A guessed wavefunction with adjustable parameters",
+        "correct": true
+      },
+      {
+        "text": "The exact solution of the Schrödinger equation",
+        "why": "If we had the exact solution, no approximation would be needed. A trial wavefunction is an approximate guess with parameters that can be varied."
+      },
+      {
+        "text": "A wavefunction found by trial and error in the laboratory",
+        "why": "It is a mathematical function, not a measurement. It contains one or more parameters that are varied to lower the energy."
+      },
+      {
+        "text": "The wavefunction of the separated electrons",
+        "why": "A trial wavefunction approximates the atom's bound ground state. It contains adjustable parameters such as the effective charge ζ."
+      }
+    ],
+    "explanation": "A trial wavefunction is an approximate wavefunction that depends on one or more adjustable parameters. The parameters are varied to make the expectation value of the energy as low as possible."
+  },
+  {
+    "id": "pc7-variational-what-is-approximate",
+    "type": "multiple-choice",
+    "prompt": "In the variational method, which part of the calculation is approximate?",
+    "choices": [
+      {
+        "text": "The wavefunction; the Hamiltonian is exact",
+        "correct": true
+      },
+      {
+        "text": "The Hamiltonian; the wavefunction is exact",
+        "why": "It's the other way round. The variational principle uses an approximate wavefunction with the exact Hamiltonian operator."
+      },
+      {
+        "text": "Both the Hamiltonian and the wavefunction",
+        "why": "The Hamiltonian is kept complete, including the repulsion term. Only the wavefunction is approximate."
+      },
+      {
+        "text": "Neither; the method gives exact answers",
+        "why": "The method gives an upper bound to the energy, which is exact only if the trial function is the true wavefunction."
+      }
+    ],
+    "explanation": "The variational principle says the energy obtained with an approximate wavefunction and the exact Hamiltonian operator is higher than or equal to the true energy. For helium, the full Hamiltonian, repulsion included, is kept."
+  },
+  {
+    "id": "pc7-variational-denominator",
+    "type": "multiple-choice",
+    "prompt": "The trial energy is E_trial = (⟨ψ_trial|Ĥ|ψ_trial⟩)/(⟨ψ_trial|ψ_trial⟩). What is the denominator?",
+    "choices": [
+      {
+        "text": "The normalization integral",
+        "correct": true
+      },
+      {
+        "text": "The electron–electron repulsion",
+        "why": "Repulsion is part of Ĥ, in the numerator. The denominator, with no Ĥ in it, is the normalization integral."
+      },
+      {
+        "text": "The probability of the trial state",
+        "why": "E_trial is an energy, not a probability. The denominator is the normalization integral, which lets the formula work for an unnormalized ψ_trial."
+      },
+      {
+        "text": "The kinetic energy of the electrons",
+        "why": "The kinetic energy is part of Ĥ, in the numerator. The denominator is the normalization integral ⟨ψ_trial|ψ_trial⟩."
+      }
+    ],
+    "explanation": "The numerator is the expectation value integral and the denominator is the normalization integral. Dividing by ⟨ψ_trial|ψ_trial⟩ gives the right energy even when the trial function is not normalized; for a normalized one it equals 1."
+  },
+  {
+    "id": "pc7-variational-which-states",
+    "type": "multiple-choice",
+    "prompt": "Which state's energy is the variational method mainly used to approximate?",
+    "choices": [
+      {
+        "text": "The ground state, the lowest-energy state",
+        "correct": true
+      },
+      {
+        "text": "The highest excited state of the atom",
+        "why": "The method minimizes the energy, so it homes in on the lowest state. It can also give some excited states, but its main target is the ground state."
+      },
+      {
+        "text": "The ionized state, with the electrons removed",
+        "why": "That state has zero energy by definition and needs no approximation. The variational method targets the lowest-energy, ground state."
+      },
+      {
+        "text": "Every state at once, with equal accuracy",
+        "why": "Minimizing the energy finds the lowest state. The method can reach some excited states, but not all states equally well."
+      }
+    ],
+    "explanation": "The variational method finds approximations to the lowest energy eigenstate, the ground state, and some excited states. Because it minimizes the energy, the ground state is its natural target."
+  },
+  {
+    "id": "pc7-variational-zeta",
+    "type": "multiple-choice",
+    "prompt": "In the variational treatment of the helium atom, what does ζ stand for?",
+    "choices": [
+      {
+        "text": "The adjustable effective nuclear charge",
+        "correct": true
+      },
+      {
+        "text": "The true charge of the helium nucleus",
+        "why": "The true charge is Z = 2. ζ is the adjustable effective charge in the trial wavefunction, smaller than 2 because of shielding."
+      },
+      {
+        "text": "The energy of the helium ground state",
+        "why": "The energy is E_trial, which depends on ζ. ζ itself is the effective nuclear charge used in the trial wavefunction."
+      },
+      {
+        "text": "The distance between the two electrons",
+        "why": "That distance is r_12. ζ is the effective nuclear charge, the adjustable parameter in the trial wavefunction."
+      }
+    ],
+    "explanation": "Quantum calculations usually write the effective nuclear charge as ζ rather than Z_eff. It is the adjustable parameter in the helium trial wavefunction, and E_trial is worked out as a function of it."
+  },
+  {
+    "id": "pc7-variational-energy-zeta-2",
+    "type": "numeric",
+    "prompt": "For helium, the trial energy is E_trial(ζ) = (ζ^2 − 27ζ/8) hartree. What is E_trial, in hartree, for ζ = 2, the full nuclear charge with no shielding?",
+    "answer": -2.75,
+    "unit": "hartree",
+    "explanation": "E_trial(2) = 2^2 − 27 × 2/8 = 4 − 6.75 = −2.75 hartree. This is higher than the minimum, about −2.85 hartree at ζ = 27/16, so ζ = 2 is not the best choice."
+  },
+  {
+    "id": "pc7-variational-minimize-calculus",
+    "type": "multiple-choice",
+    "prompt": "E_trial(ζ) for helium is a function of the parameter ζ. How is the best value of ζ found?",
+    "choices": [
+      {
+        "text": "Set dE_trial/dζ = 0 and solve for ζ",
+        "correct": true
+      },
+      {
+        "text": "Set E_trial(ζ) = 0 and solve for ζ",
+        "why": "Setting the energy itself to zero doesn't find a minimum. The minimum is where the slope, dE_trial/dζ, is zero."
+      },
+      {
+        "text": "Choose ζ = 2, the true nuclear charge",
+        "why": "ζ = 2 ignores shielding and doesn't give the lowest energy. The best ζ is where dE_trial/dζ = 0."
+      },
+      {
+        "text": "Choose the ζ that makes E_trial as high as possible",
+        "why": "The variational principle wants the lowest energy, not the highest. Find the minimum by setting the derivative to zero."
+      }
+    ],
+    "explanation": "The standard calculus method for a minimum is to take the derivative of the energy with respect to the parameter, set it equal to zero and solve for the parameter."
+  },
+  {
+    "id": "pc7-variational-best-zeta",
+    "type": "numeric",
+    "prompt": "For helium, dE_trial/dζ is proportional to 2ζ − 27/8. The best value of ζ makes this zero. What is the best value of ζ? (Give it as a decimal.)",
+    "answer": 1.6875,
+    "explanation": "2ζ − 27/8 = 0 gives ζ = 27/16 = 1.6875. This is less than the true nuclear charge, 2, because each electron partly shields the nucleus from the other."
+  },
+  {
+    "id": "pc7-variational-best-of-three",
+    "type": "multiple-choice",
+    "prompt": "Three different trial wavefunctions for the helium ground state give energies of −2.75, −2.85 and −2.80 hartree. Which is the best approximation?",
+    "choices": [
+      {
+        "text": "−2.85 hartree, the lowest",
+        "correct": true
+      },
+      {
+        "text": "−2.75 hartree, the highest",
+        "why": "Every trial energy lies at or above the true energy, so the highest is the furthest from it. The lowest, −2.85 hartree, is best."
+      },
+      {
+        "text": "−2.80 hartree, the middle value",
+        "why": "A middle value isn't preferred. The lowest trial energy is closest to the true energy, so −2.85 hartree is best."
+      },
+      {
+        "text": "All three are equally good",
+        "why": "They aren't: since every trial energy is an upper bound, the lowest one, −2.85 hartree, is the closest to the true energy."
+      }
+    ],
+    "explanation": "Each trial energy is an upper bound to the true energy (−2.90 hartree for helium). The lowest of them, −2.85 hartree, is the closest to the truth and the best approximation."
+  },
+  {
+    "id": "pc7-variational-percent-error",
+    "type": "numeric",
+    "prompt": "The variational method with a variable effective charge gives −77.483 eV for helium, while the true energy is −79.01 eV. Percent error = (|E_approx − E_true|/|E_true|) × 100. What is the percent error?",
+    "answer": 1.933,
+    "unit": "%",
+    "tolerance": 0.02,
+    "explanation": "|−77.483 − (−79.01)| = 1.527 eV, and 1.527/79.01 × 100 = 1.93%. Including shielding cuts the error to about 2%."
+  },
+  {
+    "id": "pc7-variational-shielding-lesson",
+    "type": "multiple-choice",
+    "prompt": "Table 7.1.1 shows the helium energy improve from −108.8 eV (no repulsion) to −77.483 eV (variable effective charge). What does this improvement show?",
+    "choices": [
+      {
+        "text": "Shielding captures much of the repulsion effect",
+        "correct": true
+      },
+      {
+        "text": "The electrons in helium do not repel each other",
+        "why": "They do repel; ignoring that gives the poor −108.8 eV. The improvement shows that treating the repulsion as shielding captures much of its effect."
+      },
+      {
+        "text": "The variational method gives the exact energy",
+        "why": "−77.483 eV is still about 2% above the experimental −79.0 eV. It is a much better approximation, not an exact result."
+      },
+      {
+        "text": "Helium's nuclear charge is really 1.69, not 2",
+        "why": "The nucleus still has charge +2. ζ = 1.69 is the effective charge each electron feels because the other electron shields part of it."
+      }
+    ],
+    "explanation": "Including shielding through a variable ζ cuts the error to about 2%. An important part of the electron–electron repulsion comes from each electron shielding the nuclear charge from the other."
+  }
+]

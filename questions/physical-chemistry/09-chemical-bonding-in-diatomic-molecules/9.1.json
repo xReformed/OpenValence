@@ -1,0 +1,601 @@
+[
+  {
+    "id": "pc9-born-oppenheimer-why-approximations",
+    "type": "multiple-choice",
+    "prompt": "Why do quantum chemistry software packages use a series of approximations to solve the Schrödinger equation?",
+    "choices": [
+      {
+        "text": "Exact solutions exist for only the simplest molecules",
+        "correct": true
+      },
+      {
+        "text": "The Schrödinger equation doesn't apply to molecules",
+        "why": "It does apply to molecules. It just can't be solved exactly except for the simplest ones, so approximations are needed."
+      },
+      {
+        "text": "Approximate answers are more accurate than exact ones",
+        "why": "An exact solution would be the best possible answer. Approximations are used because, for all but the simplest molecules, exact solutions aren't available."
+      },
+      {
+        "text": "Most molecules have too few electrons for exact methods",
+        "why": "More electrons make the problem harder, not easier. Exact solutions are available only for the simplest molecules."
+      }
+    ],
+    "explanation": "For all but the simplest of molecules, exact solutions of the Schrödinger equation are not available. Quantum chemistry packages therefore use a series of approximations."
+  },
+  {
+    "id": "pc9-born-oppenheimer-classical-nuclei",
+    "type": "multiple-choice",
+    "prompt": "The section describes a novel use of quantum chemistry: following the motion of the nuclei during a chemical reaction. How are the electrons and the nuclei treated?",
+    "choices": [
+      {
+        "text": "Electrons by quantum mechanics; nuclei as classical particles",
+        "correct": true
+      },
+      {
+        "text": "Nuclei by quantum mechanics; electrons as classical particles",
+        "why": "It's the reverse: the light electrons need quantum mechanics. The heavy nuclei are moved by Newton's second law, using forces from the quantum calculation."
+      },
+      {
+        "text": "Both by classical mechanics, with no quantum mechanics",
+        "why": "Quantum mechanics is used for the electrons, to calculate the forces between the nuclei. Only the nuclei are treated classically."
+      },
+      {
+        "text": "Both by quantum mechanics, with no classical mechanics",
+        "why": "The nuclei are treated as classical particles: the forces from the quantum calculation are put into Newton's second law to move them."
+      }
+    ],
+    "explanation": "The electrons are treated with quantum mechanics, which gives the forces between the nuclei. These forces are then used in Newton's second law to follow the motion of the nuclei during a reaction."
+  },
+  {
+    "id": "pc9-born-oppenheimer-separates",
+    "type": "multiple-choice",
+    "prompt": "What does the Born-Oppenheimer approximation make possible?",
+    "choices": [
+      {
+        "text": "Treating nuclear and electronic motion separately",
+        "correct": true
+      },
+      {
+        "text": "Treating each electron separately from all the other electrons",
+        "why": "That is the orbital approximation for many-electron atoms. The Born-Oppenheimer approximation separates the motion of the nuclei from the motion of the electrons."
+      },
+      {
+        "text": "Separating each electron's spin from its motion in space",
+        "why": "Spin isn't involved. The approximation separates nuclear motion from electronic motion, because the nuclei are so much heavier."
+      },
+      {
+        "text": "Solving the Schrödinger equation for any molecule exactly",
+        "why": "It is an approximation, so it doesn't give exact solutions. What it does is split the problem into an electronic part and a nuclear part."
+      }
+    ],
+    "explanation": "The Born-Oppenheimer approximation separates the motion of the nuclei from the motion of the electrons. The Schrödinger equation for a molecule then splits into an electronic equation and a nuclear equation."
+  },
+  {
+    "id": "pc9-born-oppenheimer-cyanine",
+    "type": "multiple-choice",
+    "prompt": "The section says the Born-Oppenheimer idea is not new to us. Where had it already been used?",
+    "choices": [
+      {
+        "text": "In particle-in-a-box models of cyanine dye spectra",
+        "correct": true
+      },
+      {
+        "text": "In the exact solution of the two-electron helium atom",
+        "why": "Helium has no exact solution, and it has only one nucleus. The idea was used when cyanine dye spectra were explained with a particle in a box, ignoring the nuclei's motion."
+      },
+      {
+        "text": "In Planck's explanation of blackbody radiation",
+        "why": "Blackbody radiation has nothing to do with separating nuclear and electronic motion. The idea was used for cyanine dye spectra, explained without any motion of the nuclei."
+      },
+      {
+        "text": "In Rutherford's gold-foil scattering experiment",
+        "why": "That experiment found the nucleus; it wasn't about molecules. The idea was used when cyanine dye spectra were explained without the motion of the nuclei."
+      }
+    ],
+    "explanation": "The particle-in-a-box model explained the electronic absorption spectra of cyanine dyes without considering the motion of the nuclei. Later, nuclear translation, rotation and vibration were treated without the electrons. Both rely on separating the two motions."
+  },
+  {
+    "id": "pc9-born-oppenheimer-mass-basis",
+    "type": "multiple-choice",
+    "prompt": "What is the physical basis of the Born-Oppenheimer approximation?",
+    "choices": [
+      {
+        "text": "Nuclei are far heavier than electrons, so they move more slowly",
+        "correct": true
+      },
+      {
+        "text": "Nuclei carry more charge than electrons, so they feel stronger forces",
+        "why": "The attraction between a nucleus and an electron acts on both of them equally. What differs is the mass: the nucleus is over 1000 times heavier, so it accelerates far less."
+      },
+      {
+        "text": "Electrons and nuclei don't exert any forces on each other",
+        "why": "They attract strongly, with a force Ze^2/r^2. The approximation works because the much heavier nuclei respond to this force far more slowly than the electrons."
+      },
+      {
+        "text": "Electrons are much heavier than nuclei, so they barely move",
+        "why": "It's the other way round: a nucleus is more than 1000 times heavier than an electron. The light electrons move quickly; the heavy nuclei move slowly."
+      }
+    ],
+    "explanation": "The mass of a nucleus is more than 1000 times the mass of an electron, so the nuclei move much more slowly than the electrons. The electrons can then be described as if the nuclei were standing still."
+  },
+  {
+    "id": "pc9-born-oppenheimer-deuteron-acceleration",
+    "type": "numeric",
+    "prompt": "An electron (mass 9.11 × 10^−31 kg) and a deuteron, the nucleus of deuterium (mass 3.34 × 10^−27 kg), attract each other with forces of the same size. Since a = F/m, how many times larger is the electron's acceleration than the deuteron's?",
+    "answer": 3666,
+    "explanation": "With the same force, a_e/a_D = m_D/m_e = (3.34 × 10^−27 kg)/(9.11 × 10^−31 kg) ≈ 3666. The electron responds to the force thousands of times faster, so it can follow the slow nucleus wherever it goes."
+  },
+  {
+    "id": "pc9-born-oppenheimer-coupled-oscillators",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.1.1, a light mass m_2 is attached by a spring to a heavy mass m_1, which is attached by another spring to a wall. How does the light mass move?",
+    "choices": [
+      {
+        "text": "It follows the heavy mass, oscillating fast around it",
+        "correct": true
+      },
+      {
+        "text": "It drags the heavy mass along wherever it goes",
+        "why": "The heavy mass dominates the motion. The light mass acts as a slave of the heavy one, following it wherever it goes."
+      },
+      {
+        "text": "It stays still while the heavy mass oscillates",
+        "why": "A light particle responds quickly to forces, so it doesn't stay still. It follows the heavy mass and makes rapid oscillations around it."
+      },
+      {
+        "text": "It oscillates slowly, independently of the heavy mass",
+        "why": "The light mass is tied to the heavy one and responds to it quickly. It follows the heavy mass and oscillates rapidly around it."
+      }
+    ],
+    "explanation": "When one particle is much heavier, the light one moves as a slave of the heavy one: it follows it wherever it goes and oscillates rapidly around it. Electrons follow the nuclei of a molecule in the same way."
+  },
+  {
+    "id": "pc9-born-oppenheimer-fixed-positions",
+    "type": "multiple-choice",
+    "prompt": "The Born-Oppenheimer approximation treats the nuclei as stationary. Why does the electronic wavefunction φ_e(r, R) still depend on the nuclear positions R?",
+    "choices": [
+      {
+        "text": "The nuclei can be held still at many different positions",
+        "correct": true
+      },
+      {
+        "text": "The nuclei are allowed to move while the electrons are solved for",
+        "why": "Nuclear motion is neglected when solving for the electrons. R enters because each new set of fixed nuclear positions gives a new electronic wavefunction."
+      },
+      {
+        "text": "R stands for the positions of the electrons, not the nuclei",
+        "why": "In the section, r specifies the electrons and R the nuclei. φ_e depends on R because the nuclei can be fixed at different positions."
+      },
+      {
+        "text": "The electrons push the nuclei to new positions as they move",
+        "why": "That would be nuclear motion, which the approximation neglects. The dependence on R arises because the nuclei can be stationary at different positions."
+      }
+    ],
+    "explanation": "Although the nuclei are treated as not moving, they can be stationary at different positions. The electronic equation is solved for each fixed arrangement, so φ_e(r, R) and its energy E_e(R) depend on R."
+  },
+  {
+    "id": "pc9-born-oppenheimer-repulsion-term",
+    "type": "multiple-choice",
+    "prompt": "For a diatomic molecule, Ĥ(r, R) = T̂_nuc(R) + e^2/(4πε_0) × (Z_A Z_B)/R + Ĥ_elec(r, R). What does the middle term represent?",
+    "choices": [
+      {
+        "text": "The Coulomb repulsion between the two nuclei",
+        "correct": true
+      },
+      {
+        "text": "The attraction between the electrons and the nuclei",
+        "why": "Those attractions are inside Ĥ_elec, as the −Z_A/r_Ai and −Z_B/r_Bi terms. The middle term depends only on R, the distance between the nuclei: it is their repulsion."
+      },
+      {
+        "text": "The kinetic energy of the two nuclei",
+        "why": "That is the first term, T̂_nuc(R). The middle term is the Coulomb repulsion of the two positively charged nuclei."
+      },
+      {
+        "text": "The repulsion between the electrons",
+        "why": "Electron–electron repulsion is part of Ĥ_elec, in the 1/r_ij terms. The middle term is the repulsion between nuclei A and B."
+      }
+    ],
+    "explanation": "The first term is the kinetic energy of the nuclei, the second is the Coulomb repulsion of nuclei with charges Z_A and Z_B a distance R apart, and the third, Ĥ_elec, holds everything that involves the electrons."
+  },
+  {
+    "id": "pc9-born-oppenheimer-n2-repulsion-ratio",
+    "type": "numeric",
+    "prompt": "The Coulomb repulsion of two nuclei is e^2/(4πε_0) × (Z_A Z_B)/R. At the same internuclear distance R, how many times larger is this repulsion in N2 (Z = 7 for each nucleus) than in H2 (Z = 1 for each nucleus)?",
+    "answer": 49,
+    "tolerance": 0,
+    "explanation": "Only Z_A Z_B changes, so the ratio is (7 × 7)/(1 × 1) = 49. The factor e^2/(4πε_0) and the distance R cancel."
+  },
+  {
+    "id": "pc9-born-oppenheimer-rij",
+    "type": "multiple-choice",
+    "prompt": "In Ĥ_elec, the electron–electron repulsion is written (1/2)Σ_i Σ_(j ≠ i) 1/r_ij. What is r_ij?",
+    "choices": [
+      {
+        "text": "The distance between electron i and electron j",
+        "correct": true
+      },
+      {
+        "text": "The distance between nucleus i and electron j",
+        "why": "Electron–nucleus distances are written r_Ai and r_Bi. r_ij is the distance between two electrons, i and j."
+      },
+      {
+        "text": "The distance between the two nuclei",
+        "why": "That distance is R. r_ij is the distance between electrons i and j, which repel each other."
+      },
+      {
+        "text": "The radius of the orbital that electron i occupies",
+        "why": "There are no orbitals in the exact Hamiltonian, only distances between particles. r_ij is the distance between electrons i and j."
+      }
+    ],
+    "explanation": "r_ij is the distance between electrons i and j, so 1/r_ij gives their repulsion. The distances r_Ai and r_Bi run from electron i to nuclei A and B, and R is the distance between the nuclei."
+  },
+  {
+    "id": "pc9-born-oppenheimer-half-factor",
+    "type": "multiple-choice",
+    "prompt": "Why does the electron–electron repulsion term in Ĥ_elec carry a factor of 1/2?",
+    "choices": [
+      {
+        "text": "The double sum counts each pair twice",
+        "correct": true
+      },
+      {
+        "text": "Each electron has a spin quantum number of 1/2",
+        "why": "Spin doesn't appear in this Hamiltonian. The 1/2 removes double counting: the sum includes both the 1–2 and the 2–1 terms, which are the same repulsion."
+      },
+      {
+        "text": "Repulsion is half as strong as attraction",
+        "why": "The repulsion between two electrons is a full Coulomb term. The 1/2 is there because the double sum counts each pair twice."
+      },
+      {
+        "text": "Only half of the electrons repel one another",
+        "why": "Every pair of electrons repels. The 1/2 corrects the double sum, which counts electron 1 with electron 2 and also 2 with 1."
+      }
+    ],
+    "explanation": "Summing over i and over all j ≠ i adds the repulsion of electron 1 with electron 2 and again that of electron 2 with electron 1. These are the same, so the factor 1/2 removes the double counting."
+  },
+  {
+    "id": "pc9-born-oppenheimer-lih-attractions",
+    "type": "numeric",
+    "prompt": "LiH has 4 electrons and 2 nuclei. In Ĥ_elec, each electron i has one attraction term for each nucleus, −Z_A/r_Ai and −Z_B/r_Bi. How many electron–nucleus attraction terms are there in all?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "4 electrons × 2 nuclei = 8 attraction terms. Taking A as Li and B as H, four are of the form −Z_A/r_Ai and four of the form −Z_B/r_Bi."
+  },
+  {
+    "id": "pc9-born-oppenheimer-neglected-term",
+    "type": "multiple-choice",
+    "prompt": "Which terms of the complete molecular Hamiltonian does the Born-Oppenheimer approximation neglect when solving for the electronic wavefunctions and energies?",
+    "choices": [
+      {
+        "text": "The kinetic energy terms of the nuclei",
+        "correct": true
+      },
+      {
+        "text": "The Coulomb repulsion between the nuclei",
+        "why": "The nuclear repulsion is kept; it is added to E_e(R) to give the potential energy V_e(R). Only the nuclear kinetic energy is neglected."
+      },
+      {
+        "text": "The kinetic energy terms of the electrons",
+        "why": "The electrons' kinetic energy is part of Ĥ_elec and is kept. It's the slowly moving nuclei whose kinetic energy is neglected."
+      },
+      {
+        "text": "The repulsion between pairs of electrons",
+        "why": "Electron–electron repulsion stays in Ĥ_elec. The Born-Oppenheimer approximation drops only the nuclear kinetic energy."
+      }
+    ],
+    "explanation": "The nuclear kinetic energy terms are neglected in solving for the electronic wavefunctions and energies. What remains is the electronic Schrödinger equation, Ĥ_elec φ_e(r, R) = E_e(R)φ_e(r, R)."
+  },
+  {
+    "id": "pc9-born-oppenheimer-product-wavefunction",
+    "type": "multiple-choice",
+    "prompt": "As a result of the Born-Oppenheimer approximation, how is the molecular wavefunction ψ_ne(r, R) written?",
+    "choices": [
+      {
+        "text": "As a product, X_ne(R)φ_e(r, R)",
+        "correct": true
+      },
+      {
+        "text": "As a sum, X_ne(R) + φ_e(r, R)",
+        "why": "The two parts multiply; they don't add. The Born-Oppenheimer wavefunction is the product X_ne(R)φ_e(r, R)."
+      },
+      {
+        "text": "As φ_e(r, R) alone, with no nuclear part",
+        "why": "The motion of the nuclei needs a wavefunction too. The molecular wavefunction is X_ne(R)φ_e(r, R)."
+      },
+      {
+        "text": "As a product of one orbital per nucleus",
+        "why": "Orbitals describe electrons, not nuclei. The wavefunction is a vibrational function X_ne(R) times an electronic function φ_e(r, R)."
+      }
+    ],
+    "explanation": "ψ_ne(r, R) = X_ne(R)φ_e(r, R) is called the Born-Oppenheimer wavefunction: a function of the nuclear coordinates times an electronic function."
+  },
+  {
+    "id": "pc9-born-oppenheimer-vibrational-function",
+    "type": "multiple-choice",
+    "prompt": "In the Born-Oppenheimer wavefunction ψ_ne(r, R) = X_ne(R)φ_e(r, R), what is X_ne(R)?",
+    "choices": [
+      {
+        "text": "The vibrational wavefunction of the nuclei",
+        "correct": true
+      },
+      {
+        "text": "The electronic wavefunction at fixed nuclei",
+        "why": "That is φ_e(r, R). X_ne(R) depends only on the nuclear coordinates R: it is the vibrational wavefunction."
+      },
+      {
+        "text": "The rotational wavefunction of the molecule",
+        "why": "Rotation isn't included in this product. X_ne(R) is the vibrational wavefunction, a function of the nuclear coordinates."
+      },
+      {
+        "text": "The translational wavefunction of the molecule",
+        "why": "Translational motion is left out of this product. X_ne(R) is the vibrational wavefunction."
+      }
+    ],
+    "explanation": "X_ne(R) is the vibrational wavefunction. It is a function of the nuclear coordinates R and depends on both the vibrational state n and the electronic state e."
+  },
+  {
+    "id": "pc9-born-oppenheimer-electronic-quantum-number",
+    "type": "multiple-choice",
+    "prompt": "The electronic function φ_e(r, R) is a function of both the electron and the nuclear coordinates. Which quantum numbers does it depend on?",
+    "choices": [
+      {
+        "text": "Only the electronic quantum number e",
+        "correct": true
+      },
+      {
+        "text": "Only the vibrational quantum number n",
+        "why": "n labels the vibrational function X_ne(R). φ_e depends only on the electronic state, e."
+      },
+      {
+        "text": "Both the vibrational n and the electronic e",
+        "why": "That is true of the vibrational function X_ne(R), not of φ_e. The electronic function depends only on e."
+      },
+      {
+        "text": "No quantum numbers, only on coordinates",
+        "why": "Different electronic states have different φ_e, so it depends on the electronic quantum number e, but not on n."
+      }
+    ],
+    "explanation": "X_ne(R) depends on both the vibrational state n and the electronic state e, but φ_e(r, R) depends only on the electronic state e. So the vibrational wavefunctions differ from one electronic state to another."
+  },
+  {
+    "id": "pc9-born-oppenheimer-translation-rotation",
+    "type": "multiple-choice",
+    "prompt": "The Born-Oppenheimer wavefunction X_ne(R)φ_e(r, R) leaves out translation and rotation. How are they included when they are not coupled to the vibrational and electronic motion?",
+    "choices": [
+      {
+        "text": "Their wavefunctions multiply X_ne(R)φ_e(r, R)",
+        "correct": true
+      },
+      {
+        "text": "Their wavefunctions are added to X_ne(R)φ_e(r, R)",
+        "why": "Independent motions combine as a product, not a sum. The translational and rotational wavefunctions multiply the vibrational and electronic functions."
+      },
+      {
+        "text": "They are already contained in φ_e(r, R)",
+        "why": "φ_e describes the electrons for fixed nuclei. Translation and rotation are separate factors that multiply X_ne(R)φ_e(r, R)."
+      },
+      {
+        "text": "They can't be included in any wavefunction",
+        "why": "They can: when uncoupled, their wavefunctions simply multiply the vibrational and electronic functions to give the complete molecular wavefunction."
+      }
+    ],
+    "explanation": "When translational and rotational motions are not coupled to the vibrational and electronic motion, their wavefunctions simply multiply X_ne(R)φ_e(r, R) to give the complete molecular wavefunction."
+  },
+  {
+    "id": "pc9-born-oppenheimer-crude",
+    "type": "multiple-choice",
+    "prompt": "What does the Crude Born-Oppenheimer approximation assume?",
+    "choices": [
+      {
+        "text": "The electronic wavefunction at R_0 is used for all R",
+        "correct": true
+      },
+      {
+        "text": "A new electronic wavefunction is found at each value of R",
+        "why": "That is the ordinary Born-Oppenheimer approximation. The Crude version takes φ_e at the equilibrium separation R_0 and uses it for all R."
+      },
+      {
+        "text": "The nuclear kinetic energy is kept in Ĥ_elec",
+        "why": "Both versions neglect the nuclear kinetic energy. The Crude one goes further and uses the wavefunction at R_0 for all positions of the nuclei."
+      },
+      {
+        "text": "The electrons are treated as classical particles",
+        "why": "The electrons are always treated by quantum mechanics. The Crude approximation fixes R at R_0 and uses that one electronic wavefunction for all R."
+      }
+    ],
+    "explanation": "In the Crude Born-Oppenheimer approximation, R is set equal to R_0, the equilibrium separation, and that electronic wavefunction is used for all positions of the nuclei. The ordinary approximation lets φ_e change with R."
+  },
+  {
+    "id": "pc9-born-oppenheimer-potential-for-nuclei",
+    "type": "multiple-choice",
+    "prompt": "What role does V_e(R) = E_e(R) + e^2/(4πε_0) × (Z_A Z_B)/R play for a diatomic molecule?",
+    "choices": [
+      {
+        "text": "It is the potential energy in which the nuclei move",
+        "correct": true
+      },
+      {
+        "text": "It is the kinetic energy of the electrons at each R",
+        "why": "E_e(R) is more than kinetic energy, and the nuclear repulsion is added to it. V_e(R) is the potential energy that the nuclei move in."
+      },
+      {
+        "text": "It is the energy of the two separated atoms",
+        "why": "V_e(R) depends on R and changes as the atoms approach. It is the potential energy function for the motion of the nuclei."
+      },
+      {
+        "text": "It is the total energy including nuclear vibration",
+        "why": "V_e(R) leaves out the nuclei's kinetic energy. It is the potential in which they vibrate; T̂_nuc is added in the nuclear Schrödinger equation."
+      }
+    ],
+    "explanation": "The electronic energy E_e(R) combines with the Coulomb repulsion of the two nuclei to give V_e(R). This is the potential energy function that controls the motion of the nuclei."
+  },
+  {
+    "id": "pc9-born-oppenheimer-h2-potential",
+    "type": "numeric",
+    "prompt": "For H2 at R = 74 pm, the electronic energy is E_e(R) = −51.4 eV and the Coulomb repulsion of the two nuclei is +19.5 eV. Using V_e(R) = E_e(R) + e^2/(4πε_0) × (Z_A Z_B)/R, what is V_e at this R, in eV?",
+    "answer": -31.9,
+    "unit": "eV",
+    "explanation": "V_e = −51.4 eV + 19.5 eV = −31.9 eV. The positive nuclear repulsion raises the electronic energy; the sum is the potential energy the nuclei move in."
+  },
+  {
+    "id": "pc9-born-oppenheimer-nuclear-equation",
+    "type": "multiple-choice",
+    "prompt": "What does solving the nuclear Schrödinger equation (T̂_nuc(R) + V(R))X_ne(R) = E_ne X_ne(R) give?",
+    "choices": [
+      {
+        "text": "The vibrational wavefunctions and energies",
+        "correct": true
+      },
+      {
+        "text": "The electronic wavefunctions and energies",
+        "why": "Those come from the electronic equation, Ĥ_elec φ_e = E_e(R)φ_e. The nuclear equation gives the vibrational wavefunctions and energies."
+      },
+      {
+        "text": "The rotational wavefunctions and energies",
+        "why": "Rotation is left out here. With V(R) depending only on the distance R, the nuclear equation describes vibration."
+      },
+      {
+        "text": "The ionization energies of the whole molecule",
+        "why": "Ionization removes an electron, which is an electronic matter. The nuclear equation gives the vibrational wavefunctions X_ne(R) and energies E_ne."
+      }
+    ],
+    "explanation": "The solution of the electronic equation provides the potential energy V(R). The nuclear Schrödinger equation with this potential gives the vibrational wavefunctions and energies."
+  },
+  {
+    "id": "pc9-born-oppenheimer-curve-short-r",
+    "type": "multiple-choice",
+    "prompt": "On the potential energy curve of a diatomic molecule, why is the energy large and positive at very small R?",
+    "choices": [
+      {
+        "text": "The nuclei repel each other very strongly",
+        "correct": true
+      },
+      {
+        "text": "The atoms stop interacting with each other",
+        "why": "That happens at very large R, where the curve levels off. At very small R the nuclei are pushed close together and repel strongly."
+      },
+      {
+        "text": "A strong chemical bond forms between the atoms",
+        "why": "Bonding makes the energy large and negative, near the minimum. At very small R the internuclear repulsion dominates."
+      },
+      {
+        "text": "The electrons are removed from the molecule",
+        "why": "The electrons stay. The energy rises at very small R because the positively charged nuclei repel each other strongly."
+      }
+    ],
+    "explanation": "At very small R the internuclear repulsion is very large, so the energy is large and positive. At large R the two atoms barely interact; in between, the energy becomes large and negative as a bond forms."
+  },
+  {
+    "id": "pc9-born-oppenheimer-curve-minimum",
+    "type": "multiple-choice",
+    "prompt": "What does the internuclear distance at the minimum of a diatomic molecule's potential energy curve correspond to?",
+    "choices": [
+      {
+        "text": "The equilibrium position of the nuclei, R_0",
+        "correct": true
+      },
+      {
+        "text": "The distance at which the molecule dissociates",
+        "why": "Dissociation is at large R, where the curve levels off. The minimum is at the equilibrium separation, R_0."
+      },
+      {
+        "text": "The distance of strongest nuclear repulsion",
+        "why": "Repulsion is strongest at very small R, where the energy is large and positive. The minimum is where the molecule is most stable: R_0."
+      },
+      {
+        "text": "The largest distance the nuclei can reach",
+        "why": "The curve goes on to much larger R. Its minimum marks the equilibrium separation of the nuclei, R_0."
+      }
+    ],
+    "explanation": "The equilibrium position of the nuclei is where V(R) is a minimum, R = R_0. This is the equilibrium bond length, around which the nuclei vibrate."
+  },
+  {
+    "id": "pc9-born-oppenheimer-surface-vs-curve",
+    "type": "multiple-choice",
+    "prompt": "Why is the potential energy of a diatomic molecule a one-dimensional curve, while that of a molecule with more atoms is a multi-dimensional surface?",
+    "choices": [
+      {
+        "text": "A diatomic has one internal coordinate, R; others have more",
+        "correct": true
+      },
+      {
+        "text": "Molecules with more atoms also have more electrons",
+        "why": "The number of electrons doesn't set the dimension. A diatomic's geometry is fixed by one distance R, while bigger molecules need several bond lengths and angles."
+      },
+      {
+        "text": "Only diatomic molecules obey the Born-Oppenheimer approximation",
+        "why": "The approximation applies to polyatomic molecules too. Their surfaces have 3N − 6 dimensions (3N − 5 if linear), one per internal degree of freedom."
+      },
+      {
+        "text": "Larger molecules have no equilibrium geometry at all",
+        "why": "They do: water's surface has a minimum at its equilibrium structure. They need more dimensions because their shape depends on several coordinates."
+      }
+    ],
+    "explanation": "A diatomic molecule's internal geometry is fixed by one number, the internuclear distance R. A molecule of N atoms has 3N − 6 internal degrees of freedom (3N − 5 if linear), so its potential energy surface has that many dimensions."
+  },
+  {
+    "id": "pc9-born-oppenheimer-ch4-dimensions",
+    "type": "numeric",
+    "prompt": "A nonlinear molecule of N atoms has a potential energy surface with 3N − 6 dimensions, one for each internal degree of freedom. How many dimensions does the potential energy surface of CH4 have?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "CH4 has N = 5 atoms, so 3N − 6 = 15 − 6 = 9. A full map of its energy would need nine coordinates, which is why such surfaces are usually shown as slices."
+  },
+  {
+    "id": "pc9-born-oppenheimer-co2-dimensions",
+    "type": "numeric",
+    "prompt": "Molecules with more than two atoms have potential energy surfaces with 3N − 6 dimensions, or 3N − 5 if the molecule is linear. CO2 is linear. How many dimensions does its potential energy surface have?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "CO2 is linear with N = 3 atoms, so 3N − 5 = 9 − 5 = 4. A linear molecule has one fewer internal degree of freedom than a bent one."
+  },
+  {
+    "id": "pc9-born-oppenheimer-water-minimum",
+    "type": "multiple-choice",
+    "prompt": "The lowest point on the potential energy surface of water is at an O–H bond length of 0.0958 nm and an H–O–H angle of 104.5°. What does this point correspond to?",
+    "choices": [
+      {
+        "text": "The optimized structure of water",
+        "correct": true
+      },
+      {
+        "text": "Water split into separate O and H atoms",
+        "why": "Separated atoms lie high on the surface, not at its lowest point. The minimum is the optimized structure of water."
+      },
+      {
+        "text": "The structure of water at its highest energy",
+        "why": "The lowest point has the lowest energy, not the highest. It is the minimum-energy, optimized structure."
+      },
+      {
+        "text": "The shape water takes as an O–H bond breaks",
+        "why": "Breaking a bond takes energy, so that lies higher on the surface. The lowest point is the most stable structure."
+      }
+    ],
+    "explanation": "The minimum of a potential energy surface is the minimum-energy shape of the molecule. For water it is at an O–H bond length of 0.0958 nm and an H–O–H bond angle of 104.5°."
+  },
+  {
+    "id": "pc9-born-oppenheimer-reaction-coordinate",
+    "type": "multiple-choice",
+    "prompt": "How is a reaction coordinate diagram related to a potential energy surface?",
+    "choices": [
+      {
+        "text": "It is a one-dimensional slice through the surface",
+        "correct": true
+      },
+      {
+        "text": "It is the full surface drawn in three dimensions",
+        "why": "A reaction coordinate diagram shows just one dimension. It is a 1-D slice through the potential energy surface."
+      },
+      {
+        "text": "It plots the energy against the electron positions",
+        "why": "The surface is a function of the positions of the nuclei. A reaction coordinate diagram is a 1-D slice through it."
+      },
+      {
+        "text": "It is a graph of reaction rate against temperature",
+        "why": "That is a kinetics plot, not a slice of a surface. A reaction coordinate diagram shows how potential energy changes along one coordinate."
+      }
+    ],
+    "explanation": "Reaction coordinate diagrams are one-dimensional slices through potential energy surfaces. Chemists use them to rationalize and illustrate kinetic and thermodynamic events."
+  }
+]

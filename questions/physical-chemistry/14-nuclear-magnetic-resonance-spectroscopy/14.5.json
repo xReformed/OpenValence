@@ -1,0 +1,370 @@
+[
+  {
+    "id": "pc14-chemical-shift-why-important",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why is the chemical shift so important in NMR?",
+    "choices": [
+      {
+        "text": "It reveals the local structure around a nucleus",
+        "correct": true
+      },
+      {
+        "text": "It gives the mass of the nucleus being studied",
+        "why": "The shift comes from the electrons around a nucleus, not from its mass. It tells us about the local structure surrounding the nucleus."
+      },
+      {
+        "text": "It measures the strength of the magnet used",
+        "why": "The chemical shift describes the nucleus's chemical environment, not the instrument. It gives information about the local structure around the nucleus."
+      },
+      {
+        "text": "It counts all the electrons in the molecule",
+        "why": "It isn't a count. It reflects the local environment of the nucleus, which is why it is used to determine structure."
+      }
+    ],
+    "explanation": "The chemical shift gives vital information about the local structure surrounding the nucleus of interest. Most scientists use it to determine structure, especially in organic systems."
+  },
+  {
+    "id": "pc14-chemical-shift-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the chemical shift?",
+    "choices": [
+      {
+        "text": "A nucleus's resonance frequency minus a standard's",
+        "correct": true
+      },
+      {
+        "text": "The applied field minus the local field at a nucleus",
+        "why": "That difference is the shielding, σB. The chemical shift compares resonance frequencies: the nucleus's against a standard's."
+      },
+      {
+        "text": "The resonance frequency of the standard on its own",
+        "why": "The standard's frequency is only the reference point. The chemical shift is the difference between the nucleus's frequency and the standard's."
+      },
+      {
+        "text": "The spacing between neighboring lines of a multiplet",
+        "why": "Line spacings within a multiplet come from spin–spin coupling. The chemical shift is a nucleus's resonance frequency measured relative to a standard."
+      }
+    ],
+    "explanation": "The chemical shift is the difference between the resonance frequency of a nucleus and that of a standard. On the δ scale this difference is divided by the standard's frequency and multiplied by 10^6."
+  },
+  {
+    "id": "pc14-chemical-shift-sigma-name",
+    "type": "multiple-choice",
+    "prompt": "In B_loc = (1 − σ)B, where B is the applied field, what is σ?",
+    "choices": [
+      {
+        "text": "The shielding constant",
+        "correct": true
+      },
+      {
+        "text": "The chemical shift on the δ scale",
+        "why": "δ is the chemical shift, found from resonance frequencies. σ is the shielding constant, which sets how much the local field is reduced."
+      },
+      {
+        "text": "The magnetic susceptibility χ of a group",
+        "why": "χ describes the currents induced in neighboring groups. σ is the shielding constant, which reduces the local field by the factor 1 − σ."
+      },
+      {
+        "text": "The Larmor frequency of the nucleus",
+        "why": "The Larmor frequency is ν_L = (γB_loc)/(2π). σ is the shielding constant in B_loc = (1 − σ)B."
+      }
+    ],
+    "explanation": "σ is the shielding constant. The applied field induces currents in the electrons around the nucleus, and these reduce the local field by the factor 1 − σ."
+  },
+  {
+    "id": "pc14-chemical-shift-delta-b-doubles",
+    "type": "multiple-choice",
+    "prompt": "The local field is B_loc = B + δB = (1 − σ)B, where δB is a small field from electron currents that the applied field B itself induces. If B is doubled, what happens to δB?",
+    "choices": [
+      {
+        "text": "It doubles as well",
+        "correct": true
+      },
+      {
+        "text": "It stays exactly the same",
+        "why": "δB = −σB, so it grows with B. A stronger applied field induces stronger electron currents, and so a larger shielding field."
+      },
+      {
+        "text": "It is cut in half",
+        "why": "δB = −σB is proportional to B, not inversely proportional. Doubling B doubles δB."
+      },
+      {
+        "text": "It drops to zero",
+        "why": "The induced currents don't vanish in a stronger field; they get stronger. δB = −σB doubles when B doubles."
+      }
+    ],
+    "explanation": "Comparing B + δB with (1 − σ)B gives δB = −σB. The shielding field is proportional to B because B itself induces the electron currents that cause it."
+  },
+  {
+    "id": "pc14-chemical-shift-field-lowered",
+    "type": "numeric",
+    "prompt": "The local field is B_loc = (1 − σ)B, so shielding lowers the field at the nucleus by σB. A nucleus has σ = 3.0 × 10^−5 in an applied field B = 9.40 T. By how much is its local field lowered, in T? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 0.000282,
+    "unit": "T",
+    "explanation": "σB = (3.0 × 10^−5)(9.40 T) = 2.82 × 10^−4 T. So B_loc = 9.40 T − 0.000282 T = 9.399718 T: shielding changes the field only slightly."
+  },
+  {
+    "id": "pc14-chemical-shift-more-shielded-lower",
+    "type": "multiple-choice",
+    "prompt": "Two protons in a molecule feel the same applied field B, but the first has the larger σ. Using B_loc = (1 − σ)B and ν_L = (γB_loc)/(2π), how does the first proton's Larmor frequency compare with the second's?",
+    "choices": [
+      {
+        "text": "Lower, since its B_loc is smaller",
+        "correct": true
+      },
+      {
+        "text": "Higher, since its σ is larger",
+        "why": "A larger σ makes 1 − σ smaller, so B_loc and ν_L are lower, not higher."
+      },
+      {
+        "text": "The same, since both feel the same B",
+        "why": "ν_L depends on the local field B_loc, not on the applied field B. The proton with the larger σ has the smaller B_loc."
+      },
+      {
+        "text": "Zero, since shielding stops resonance",
+        "why": "Shielding only lowers B_loc slightly. The nucleus still resonates, just at a slightly lower frequency."
+      }
+    ],
+    "explanation": "A larger σ gives a smaller factor 1 − σ, so a smaller B_loc. Since ν_L = (γB_loc)/(2π) is proportional to B_loc, the more shielded proton resonates at a lower frequency."
+  },
+  {
+    "id": "pc14-chemical-shift-larmor-proton",
+    "type": "numeric",
+    "prompt": "A proton has γ = 2.675 × 10^8 T^−1 s^−1 and feels a local field B_loc = 7.050 T. Using ν_L = (γB_loc)/(2π), what is its Larmor frequency, in MHz?",
+    "answer": 300.1,
+    "unit": "MHz",
+    "explanation": "ν_L = (2.675 × 10^8 × 7.050)/(2π) s^−1 = (1.886 × 10^9 s^−1)/6.283 = 3.001 × 10^8 Hz, or about 300.1 MHz. Proton Larmor frequencies like this lie in the radio-frequency range."
+  },
+  {
+    "id": "pc14-chemical-shift-nu0-meaning",
+    "type": "multiple-choice",
+    "prompt": "Chemical shifts are reported on the δ scale, δ = ((ν − ν_0)/ν_0) × 10^6. What is ν_0?",
+    "choices": [
+      {
+        "text": "The resonance frequency of the standard",
+        "correct": true
+      },
+      {
+        "text": "The resonance frequency of the nucleus studied",
+        "why": "That is ν. ν_0 is the resonance frequency of the standard that every shift is measured against."
+      },
+      {
+        "text": "The Larmor frequency of a bare nucleus",
+        "why": "The reference isn't a bare nucleus but a standard. ν_0 is the standard's resonance frequency."
+      },
+      {
+        "text": "The spacing between two lines in Hz",
+        "why": "A line spacing isn't the reference. ν_0 is the resonance frequency of the standard, and δ measures each nucleus against it."
+      }
+    ],
+    "explanation": "ν_0 is the resonance frequency of the standard, and ν that of the nucleus of interest. δ is their difference divided by ν_0, times 10^6."
+  },
+  {
+    "id": "pc14-chemical-shift-delta-value",
+    "type": "numeric",
+    "prompt": "Use δ = ((ν − ν_0)/ν_0) × 10^6, where the factor 10^6 puts δ in parts per million (ppm). A nucleus resonates 1450 Hz above the standard, so ν − ν_0 = 1450 Hz, and the standard resonates at ν_0 = 5.00 × 10^8 Hz. What is δ, in ppm? (Give it as a decimal.)",
+    "answer": 2.9,
+    "unit": "ppm",
+    "explanation": "δ = (1450 Hz)/(5.00 × 10^8 Hz) × 10^6 = (2.90 × 10^−6) × 10^6 = 2.9 ppm. The factor 10^6 turns a tiny fraction into a convenient number."
+  },
+  {
+    "id": "pc14-chemical-shift-offset-hz",
+    "type": "numeric",
+    "prompt": "Rearranging the δ formula gives ν − ν_0 = (δ × ν_0)/10^6. A signal has δ = 1.20 on an instrument where the standard resonates at ν_0 = 6.00 × 10^8 Hz. How far above the standard does the signal resonate, in Hz?",
+    "answer": 720,
+    "unit": "Hz",
+    "explanation": "ν − ν_0 = (1.20 × 6.00 × 10^8 Hz)/10^6 = 720 Hz. On this 600 MHz instrument, each ppm of δ corresponds to 600 Hz."
+  },
+  {
+    "id": "pc14-chemical-shift-three-contributions",
+    "type": "multiple-choice",
+    "prompt": "In B_loc = (1 − σ)B, σ is the sum of three contributions. Which three?",
+    "choices": [
+      {
+        "text": "Local, molecular and solvent",
+        "correct": true
+      },
+      {
+        "text": "Diamagnetic, paramagnetic and solvent",
+        "why": "Diamagnetic and paramagnetic are the two parts of the local contribution alone. The three contributions to σ are local, molecular and solvent."
+      },
+      {
+        "text": "Nuclear, electronic and magnetic",
+        "why": "These aren't the section's terms. The section writes σ = σ(local) + σ(molecule) + σ(solvent)."
+      },
+      {
+        "text": "Local, molecular and standard",
+        "why": "The standard sets the zero of the δ scale; it isn't part of σ. The third contribution comes from the solvent."
+      }
+    ],
+    "explanation": "σ = σ(local) + σ(molecule) + σ(solvent). These come from the electrons on the nucleus's own atom, from the rest of the molecule, and from the surrounding solvent molecules."
+  },
+  {
+    "id": "pc14-chemical-shift-local-electrons",
+    "type": "multiple-choice",
+    "prompt": "What is the local contribution to σ due to?",
+    "choices": [
+      {
+        "text": "Electrons on the nucleus's own atom",
+        "correct": true
+      },
+      {
+        "text": "Electrons on the rest of the molecule",
+        "why": "That is the molecular contribution. The local contribution comes from the electrons on the atom containing the nucleus."
+      },
+      {
+        "text": "Solvent molecules around the molecule",
+        "why": "That is the solvent contribution. The local contribution comes from electrons on the nucleus's own atom."
+      },
+      {
+        "text": "The protons and neutrons in the nucleus",
+        "why": "Shielding comes from electrons, not from the nucleus itself. The local contribution is due to the electrons on the atom containing the nucleus."
+      }
+    ],
+    "explanation": "The local contribution is due to the electrons on the atom that contains the nucleus. The molecular contribution comes from the rest of the molecule, and the solvent contribution from the surrounding solvent molecules."
+  },
+  {
+    "id": "pc14-chemical-shift-local-two-parts",
+    "type": "multiple-choice",
+    "prompt": "The local contribution to σ is itself a sum of two parts. What are they?",
+    "choices": [
+      {
+        "text": "Diamagnetic and paramagnetic parts",
+        "correct": true
+      },
+      {
+        "text": "The molecular and solvent parts",
+        "why": "Those are the other two contributions to σ, alongside the local one. The local contribution splits into diamagnetic and paramagnetic parts."
+      },
+      {
+        "text": "Electronic and nuclear parts",
+        "why": "Shielding comes from electrons only. The local contribution is a sum of a diamagnetic part σ_d and a paramagnetic part σ_p."
+      },
+      {
+        "text": "Spin-up and spin-down electron parts",
+        "why": "The split isn't by spin direction. The local contribution has a diamagnetic part σ_d and a paramagnetic part σ_p."
+      }
+    ],
+    "explanation": "The local contribution is a sum of a diamagnetic part σ_d and a paramagnetic part σ_p. The section gives the Lamb formula for the size of σ_d."
+  },
+  {
+    "id": "pc14-chemical-shift-diamagnetic-origin",
+    "type": "multiple-choice",
+    "prompt": "What gives rise to the diamagnetic part σ_d of the local shielding?",
+    "choices": [
+      {
+        "text": "Electrons circulating in response to B",
+        "correct": true
+      },
+      {
+        "text": "Currents induced in neighboring groups",
+        "why": "Currents in neighboring groups give the molecular contribution. σ_d arises from the circulation of the atom's own electrons in response to B."
+      },
+      {
+        "text": "Solvent molecules crowding the nucleus",
+        "why": "That would be the solvent contribution. σ_d comes from electrons on the atom circulating in response to the applied field."
+      },
+      {
+        "text": "The nucleus spinning in the applied field",
+        "why": "Shielding comes from the electrons, not the nucleus. σ_d arises from electrons circulating in response to B."
+      }
+    ],
+    "explanation": "The diamagnetic part arises from the circulation of the electrons in response to the applied field B. The circulating electrons set up a small field that opposes B at the nucleus."
+  },
+  {
+    "id": "pc14-chemical-shift-lamb-rho",
+    "type": "multiple-choice",
+    "prompt": "The Lamb formula gives the size of σ_d as ((e^2μ_0)/(3m_e)) × ∫ρ(r) r dr, with r running from 0 to ∞. What is ρ(r)?",
+    "choices": [
+      {
+        "text": "The electron probability density",
+        "correct": true
+      },
+      {
+        "text": "The density of nuclear charge",
+        "why": "The integral runs over the electrons, not the nucleus. ρ is the electron probability density, |Ψ|^2."
+      },
+      {
+        "text": "The mass density of the molecule",
+        "why": "Mass doesn't enter. ρ is the electron probability density, |Ψ|^2, since σ_d comes from the electrons."
+      },
+      {
+        "text": "The magnetic susceptibility χ",
+        "why": "χ belongs to neighboring groups in the molecular contribution. In the Lamb formula, ρ is the electron probability density."
+      }
+    ],
+    "explanation": "ρ is the electron probability density, |Ψ|^2. The Lamb formula adds up the electron density around the nucleus to give the diamagnetic shielding σ_d."
+  },
+  {
+    "id": "pc14-chemical-shift-bohr-radius",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does the diamagnetic shielding σ_d depend on the Bohr radius a_0?",
+    "choices": [
+      {
+        "text": "It is inversely proportional to a_0",
+        "correct": true
+      },
+      {
+        "text": "It is directly proportional to a_0",
+        "why": "A larger orbit gives less shielding, not more. σ_d is inversely proportional to a_0."
+      },
+      {
+        "text": "It is proportional to a_0^2",
+        "why": "a_0^2 is how the magnetic moment of the current loop grows. The field it makes at the nucleus goes as 1/a_0^3, so overall σ_d ∝ 1/a_0."
+      },
+      {
+        "text": "It is proportional to 1/a_0^3",
+        "why": "1/a_0^3 is how the field at the nucleus scales for a given moment. The loop's moment grows as a_0^2, so overall σ_d ∝ 1/a_0."
+      }
+    ],
+    "explanation": "The magnetic moment of a current loop is proportional to a_0^2, and the field it generates at the nucleus is proportional to 1/a_0^3. Together, σ_d ∝ a_0^2 × 1/a_0^3 = 1/a_0."
+  },
+  {
+    "id": "pc14-chemical-shift-susceptibility",
+    "type": "multiple-choice",
+    "prompt": "The applied field also generates currents in neighboring groups of the molecule. According to the section, what are those currents proportional to?",
+    "choices": [
+      {
+        "text": "The group's magnetic susceptibility χ",
+        "correct": true
+      },
+      {
+        "text": "The mass of the neighboring group",
+        "why": "Mass doesn't set the induced currents. They are proportional to the group's magnetic susceptibility χ."
+      },
+      {
+        "text": "The resonance frequency of the standard",
+        "why": "The standard only fixes the zero of the δ scale. The induced currents are proportional to the group's magnetic susceptibility χ."
+      },
+      {
+        "text": "The number of solvent molecules nearby",
+        "why": "Solvent molecules give the separate solvent contribution. Currents in neighboring groups are proportional to their magnetic susceptibility χ."
+      }
+    ],
+    "explanation": "The applied field generates currents in neighboring groups proportional to each group's magnetic susceptibility χ. These currents give the molecular contribution to σ."
+  },
+  {
+    "id": "pc14-chemical-shift-inverse-cube",
+    "type": "multiple-choice",
+    "prompt": "A neighboring group's induced magnetic moment produces a magnetic field at the nucleus. How does that field depend on the group's distance r from the nucleus?",
+    "choices": [
+      {
+        "text": "It falls off as 1/r^3",
+        "correct": true
+      },
+      {
+        "text": "It falls off as 1/r",
+        "why": "The field falls off much faster than 1/r. It is inversely proportional to the cube of the distance."
+      },
+      {
+        "text": "It falls off as 1/r^2",
+        "why": "1/r^2 isn't it. The section says the field is inversely proportional to the cube of the distance, 1/r^3."
+      },
+      {
+        "text": "It is the same at any distance",
+        "why": "The field weakens with distance: it is inversely proportional to r^3, so nearby groups matter most."
+      }
+    ],
+    "explanation": "The induced magnetic moment gives rise to a field inversely proportional to the cube of the distance from the nucleus. Doubling r cuts the field to 1/8, so nearby groups dominate the molecular contribution."
+  }
+]

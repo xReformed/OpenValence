@@ -1,13 +1,3 @@
-# One image for the whole site: the API (api/) serves the built web app (web/)
-# from wwwroot, so it runs as a single container on Azure Container Apps or App
-# Service. Build from the repo root:
-#
-#   docker build -t openvalence .
-#   docker run --rm -p 8080:8080 -e DATABASE_URL=... openvalence
-#
-# Settings come from environment variables (DATABASE_URL, ANTHROPIC_API_KEY);
-# .env files are kept out of the image (see .dockerignore).
-
 # --- Web app ------------------------------------------------------------------
 FROM node:24-alpine AS web
 WORKDIR /src/web

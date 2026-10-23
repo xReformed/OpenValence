@@ -1,0 +1,562 @@
+[
+  {
+    "id": "pc6-harmonics-normalized-integral",
+    "type": "multiple-choice",
+    "prompt": "Exercise 6.2.1 asks for ⟨ψ|ψ⟩, the integral of |ψ|^2 over all space, for a hydrogen atom wavefunction. Why can it be answered without knowing the form of ψ?",
+    "choices": [
+      {
+        "text": "For a normalized wavefunction the integral is always 1",
+        "correct": true
+      },
+      {
+        "text": "The integral of |ψ|^2 is always 0 for bound states",
+        "why": "|ψ|^2 is never negative, so its integral can't be 0 unless ψ is zero everywhere. For a normalized ψ it is 1."
+      },
+      {
+        "text": "It equals the energy of the state, E_n",
+        "why": "⟨ψ|ψ⟩ has no Hamiltonian in it, so it is not an energy. It is the total probability of finding the electron, which is 1."
+      },
+      {
+        "text": "It equals n^2, the number of orbitals in the shell",
+        "why": "n^2 counts orbitals with the same n and has nothing to do with this integral. The electron must be somewhere, so the total probability is 1."
+      }
+    ],
+    "explanation": "|ψ|^2 is a probability density, so its integral over all space is the total probability of finding the electron somewhere. If the wavefunction is normalized, as we normally like it, that integral is 1 for every orbital."
+  },
+  {
+    "id": "pc6-harmonics-theta-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the hydrogen wavefunctions ψ(r, θ, φ), what does the angle θ measure?",
+    "choices": [
+      {
+        "text": "The angle down from the z-axis",
+        "correct": true
+      },
+      {
+        "text": "The angle around the z-axis, in the xy-plane",
+        "why": "That is φ, which runs from 0 to 2π. θ is measured from the z-axis and runs from 0 to π."
+      },
+      {
+        "text": "The distance of the electron from the nucleus",
+        "why": "That is r, a distance, not an angle. θ is the angle between the z-axis and the line to the electron."
+      },
+      {
+        "text": "The angle between the electron and the proton's spin",
+        "why": "Spin plays no part in these wavefunctions. θ is the angle measured down from the z-axis."
+      }
+    ],
+    "explanation": "In spherical coordinates, r is the distance from the nucleus, θ is the angle down from the z-axis (0 to π), and φ is the angle around the z-axis (0 to 2π). So z = r cos θ: at θ = 0 the electron is on the +z axis."
+  },
+  {
+    "id": "pc6-harmonics-l-in-both",
+    "type": "multiple-choice",
+    "prompt": "In ψ = R_(n, l)(r)Y_l^(m)(θ, φ), which quantum number appears in both the radial part and the angular part?",
+    "choices": [
+      {
+        "text": "l, the angular momentum quantum number",
+        "correct": true
+      },
+      {
+        "text": "n, the principal quantum number",
+        "why": "n appears only in the radial function R_(n, l)(r). The spherical harmonic depends on l and m_l, not on n."
+      },
+      {
+        "text": "m_l, the magnetic quantum number",
+        "why": "m_l appears only in the spherical harmonic. The radial function depends on n and l, not on m_l."
+      },
+      {
+        "text": "None; the two parts share no quantum number",
+        "why": "The radial function carries n and l, and the spherical harmonic carries l and m_l, so l is in both."
+      }
+    ],
+    "explanation": "The radial function R_(n, l)(r) depends on n and l, and the spherical harmonic depends on l and m (m_l). So l is the quantum number the two parts share, while n is only radial and m_l only angular."
+  },
+  {
+    "id": "pc6-harmonics-l-name",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the quantum number l?",
+    "choices": [
+      {
+        "text": "The angular momentum quantum number",
+        "correct": true
+      },
+      {
+        "text": "The principal quantum number",
+        "why": "That name belongs to n. l is called the angular momentum quantum number, because it sets the size of the angular momentum."
+      },
+      {
+        "text": "The magnetic quantum number",
+        "why": "That name belongs to m_l, because the energy in a magnetic field depends on it. l is the angular momentum quantum number."
+      },
+      {
+        "text": "The spin angular momentum quantum number",
+        "why": "Spin is a separate kind of angular momentum and is not one of the three quantum numbers of these wavefunctions. l is the (orbital) angular momentum quantum number."
+      }
+    ],
+    "explanation": "The three quantum numbers are n, the principal quantum number; l, the angular momentum quantum number; and m_l, the magnetic quantum number. l fixes the magnitude of the angular momentum."
+  },
+  {
+    "id": "pc6-harmonics-degeneracy-name",
+    "type": "multiple-choice",
+    "prompt": "In hydrogen, all n^2 orbitals with the same n have the same energy. What does the section call this number, n^2?",
+    "choices": [
+      {
+        "text": "The degeneracy of the energy level",
+        "correct": true
+      },
+      {
+        "text": "The principal quantum number",
+        "why": "The principal quantum number is n itself. n^2 counts the orbitals that share the energy of level n: its degeneracy."
+      },
+      {
+        "text": "The number of nodes in each orbital",
+        "why": "Each orbital with a given n has n − 1 nodes, not n^2. n^2 is the number of orbitals with that energy."
+      },
+      {
+        "text": "The number of possible values of l",
+        "why": "For a given n, l takes n values, 0 to n − 1. n^2 counts all the orbitals, every l with each of its m_l values."
+      }
+    ],
+    "explanation": "The total number of orbitals with a particular value of n is n^2, and in hydrogen they all have the same energy. The number of states with the same energy is the degeneracy, so level n is n^2-fold degenerate."
+  },
+  {
+    "id": "pc6-harmonics-label-4f",
+    "type": "multiple-choice",
+    "prompt": "Which orbital label goes with n = 4 and l = 3?",
+    "choices": [
+      {
+        "text": "4f",
+        "correct": true
+      },
+      {
+        "text": "4d",
+        "why": "d means l = 2. For l = 3 the letter is f, so the label is 4f."
+      },
+      {
+        "text": "3f",
+        "why": "The number in the label is n, which is 4 here. A 3f orbital can't exist anyway, since l must be less than n."
+      },
+      {
+        "text": "4g",
+        "why": "g means l = 4, the letter after f. For l = 3 the letter is f."
+      }
+    ],
+    "explanation": "The number in a label is n and the letter codes l: s = 0, p = 1, d = 2, f = 3. So n = 4 and l = 3 make a 4f orbital."
+  },
+  {
+    "id": "pc6-harmonics-psi310",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.1 of solutions, the subscripts of ψ_310 give n, l and m_l in that order. Which kind of orbital is ψ_310?",
+    "choices": [
+      {
+        "text": "A 3p orbital",
+        "correct": true
+      },
+      {
+        "text": "A 3s orbital",
+        "why": "An s orbital has l = 0, but the middle subscript of ψ_310 is l = 1, which is p."
+      },
+      {
+        "text": "A 3d orbital",
+        "why": "A d orbital has l = 2. The middle subscript of ψ_310 is l = 1, a p orbital."
+      },
+      {
+        "text": "A 1p orbital",
+        "why": "The first subscript is n = 3, not 1. And a 1p orbital can't exist, since l must be less than n."
+      }
+    ],
+    "explanation": "ψ_310 has n = 3, l = 1 and m_l = 0. l = 1 is a p orbital, so ψ_310 is a 3p orbital: the one with m_l = 0, listed as 3p_z in Table 6.2.2."
+  },
+  {
+    "id": "pc6-harmonics-s-ml-zero",
+    "type": "multiple-choice",
+    "prompt": "Why does every s orbital have m_l = 0?",
+    "choices": [
+      {
+        "text": "With l = 0, m_l can only be 0",
+        "correct": true
+      },
+      {
+        "text": "Because s orbitals have zero energy",
+        "why": "s orbitals have negative energies, such as −13.6 eV for 1s. m_l = 0 because m_l runs from −l to +l, and l = 0."
+      },
+      {
+        "text": "Because n = 1 for every s orbital",
+        "why": "There are s orbitals for every n: 1s, 2s, 3s and so on. m_l = 0 because l = 0 allows only that value."
+      },
+      {
+        "text": "Because m_l is always 0 for hydrogen",
+        "why": "Hydrogen orbitals can have other values, such as m_l = ±1 for 2p. For s orbitals l = 0, so m_l can only be 0."
+      }
+    ],
+    "explanation": "m_l takes the 2l + 1 values from −l to +l. An s orbital has l = 0, so 2l + 1 = 1 and the only value is m_l = 0. That is why each shell has a single s orbital."
+  },
+  {
+    "id": "pc6-harmonics-complex-factor",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.1, Y_1^(1) = √(3/(8π)) sin θ e^(iφ). Which factor makes this spherical harmonic complex?",
+    "choices": [
+      {
+        "text": "The factor e^(iφ), which contains i",
+        "correct": true
+      },
+      {
+        "text": "The factor sin θ, a function of angle",
+        "why": "sin θ is a real function, so it can't make Y complex. The factor that contains i is e^(iφ)."
+      },
+      {
+        "text": "The constant √(3/(8π)), which contains π",
+        "why": "π is a real number, so this is just a real normalization constant. The complex factor is e^(iφ)."
+      },
+      {
+        "text": "The angle φ, which runs from 0 to 2π",
+        "why": "φ itself is a real angle. It is the i in the exponent of e^(iφ) that makes the function complex."
+      }
+    ],
+    "explanation": "Every spherical harmonic with m ≠ 0 contains Φ_m(φ) = A_m e^(imφ), and the i in the exponent makes it complex. Only the m = 0 functions, which have no φ in them, are real."
+  },
+  {
+    "id": "pc6-harmonics-plus-minus-density",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.1, Y_1^(1) and Y_1^(−1) differ only in e^(iφ) versus e^(−iφ). How do their probability densities |Y|^2 compare?",
+    "choices": [
+      {
+        "text": "They are the same, (3/(8π)) sin^2θ for both",
+        "correct": true
+      },
+      {
+        "text": "They are equal in size but opposite in sign",
+        "why": "A probability density |Y|^2 can't be negative. Since e^(iφ) × e^(−iφ) = 1, both densities are (3/(8π)) sin^2θ."
+      },
+      {
+        "text": "One of them is zero everywhere",
+        "why": "Neither is zero: both have the factor sin θ. Their densities are equal, (3/(8π)) sin^2θ."
+      },
+      {
+        "text": "They differ by a factor of e^(2iφ)",
+        "why": "The φ factor drops out of |Y|^2, because |e^(±iφ)|^2 = e^(±iφ) × e^(∓iφ) = 1. Both densities are (3/(8π)) sin^2θ."
+      }
+    ],
+    "explanation": "|Y|^2 = Y^*Y. For Y_1^(±1) = √(3/(8π)) sin θ e^(±iφ), the exponentials cancel, e^(iφ) × e^(−iφ) = 1, leaving (3/(8π)) sin^2θ for both. The two states have the same density; they differ only in the sign of m_l."
+  },
+  {
+    "id": "pc6-harmonics-y10-sign",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.1, Y_1^(0) = √(3/(4π)) cos θ. How does its value along the +z axis (θ = 0) compare with its value along the −z axis (θ = 180°)?",
+    "choices": [
+      {
+        "text": "Same size, opposite sign",
+        "correct": true
+      },
+      {
+        "text": "The same size and the same sign",
+        "why": "cos 0 = 1 but cos 180° = −1, so the function changes sign between the two directions."
+      },
+      {
+        "text": "Zero along both directions",
+        "why": "Y_1^(0) is zero only where cos θ = 0, in the xy-plane. Along ±z it has its largest size."
+      },
+      {
+        "text": "Twice as large along +z",
+        "why": "cos 0 = 1 and cos 180° = −1 have the same size, so the values differ only in sign."
+      }
+    ],
+    "explanation": "cos 0 = 1 and cos 180° = −1, so Y_1^(0) is +√(3/(4π)) along +z and −√(3/(4π)) along −z: the same size with opposite signs. Between them, in the xy-plane, it passes through zero."
+  },
+  {
+    "id": "pc6-harmonics-px-label",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.2, the real 2p function with the angular factor sin θ cos φ is labeled 2p_x. Why the label x?",
+    "choices": [
+      {
+        "text": "r sin θ cos φ is just the coordinate x",
+        "correct": true
+      },
+      {
+        "text": "It is zero everywhere along the x-axis",
+        "why": "It is the other way round: x = r sin θ cos φ is largest along the x-axis. The function is zero in the yz-plane, where x = 0."
+      },
+      {
+        "text": "It comes from the m_l = 0 function alone",
+        "why": "The m_l = 0 function is 2p_z, with cos θ. 2p_x combines the m_l = +1 and −1 functions."
+      },
+      {
+        "text": "It points along x only in a magnetic field",
+        "why": "No field is needed. The function is x times a function of r, so it points along the x-axis."
+      }
+    ],
+    "explanation": "Since x = r sin θ cos φ, the 2p_x function is x times a function of r. Likewise 2p_y contains r sin θ sin φ = y, and 2p_z contains r cos θ = z."
+  },
+  {
+    "id": "pc6-harmonics-d-from-m2",
+    "type": "multiple-choice",
+    "prompt": "In Table 6.2.2, combining the m_l = +2 and −2 functions, which contain e^(±2iφ), gives real functions with cos 2φ and sin 2φ. Which two 3d orbitals are made this way?",
+    "choices": [
+      {
+        "text": "3d_xy and 3d_(x²−y²)",
+        "correct": true
+      },
+      {
+        "text": "3d_xz and 3d_yz",
+        "why": "Those come from the m_l = ±1 functions, which contain sin θ cos θ e^(±iφ)."
+      },
+      {
+        "text": "3d_(z²) and 3d_xy",
+        "why": "3d_(z²) is the m_l = 0 function, with (3 cos^2θ − 1) and no φ. Its partner from m_l = ±2 is 3d_(x²−y²)."
+      },
+      {
+        "text": "3d_xz and 3d_(x²−y²)",
+        "why": "3d_xz comes from the m_l = ±1 functions. The pair from m_l = ±2 is 3d_xy and 3d_(x²−y²)."
+      }
+    ],
+    "explanation": "The m_l = ±2 functions contain sin^2θ e^(±2iφ). Their combinations contain sin^2θ cos 2φ and sin^2θ sin 2φ: the 3d_(x²−y²) and 3d_xy orbitals, which lie in the xy-plane."
+  },
+  {
+    "id": "pc6-harmonics-z-compact",
+    "type": "multiple-choice",
+    "prompt": "The 1s function in Table 6.2.1 contains the exponential factor e^(−Zr/a₀). How does the 1s function of He^+ (Z = 2) compare with that of hydrogen (Z = 1)?",
+    "choices": [
+      {
+        "text": "It falls off twice as fast, so it is smaller",
+        "correct": true
+      },
+      {
+        "text": "It falls off half as fast, so it is larger",
+        "why": "A larger Z makes the exponent −Zr/a_0 more negative at each r, so the function decays faster, not slower."
+      },
+      {
+        "text": "It is the same, since Z changes only the energy",
+        "why": "Z appears in the exponent of the wavefunction, so it changes the orbital's size as well as the energy."
+      },
+      {
+        "text": "It falls off four times as fast, as Z^2 = 4",
+        "why": "Z appears to the first power in the exponent, so the decay is twice as fast. Z^2 appears in the energy."
+      }
+    ],
+    "explanation": "In e^(−Zr/a₀), doubling Z doubles how fast the function decays with r. The larger nuclear charge pulls the He^+ electron in, so its 1s orbital is more compact than hydrogen's."
+  },
+  {
+    "id": "pc6-harmonics-2s-exponential",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 6.2.7, the 2s radial function R(r) is a constant times (2 − r/a_0) times e^(−r/2a₀). Why can't the exponential factor produce the radial node?",
+    "choices": [
+      {
+        "text": "An exponential is never zero at any finite r",
+        "correct": true
+      },
+      {
+        "text": "The exponential is zero only at r = a_0",
+        "why": "e^(−r/2a₀) is positive for every finite r; at r = a_0 it is about 0.61. The node comes from the factor (2 − r/a_0)."
+      },
+      {
+        "text": "The exponential turns negative at large r",
+        "why": "e raised to any real power is positive, so the exponential never changes sign. Only (2 − r/a_0) can become zero and change sign."
+      },
+      {
+        "text": "The exponential cancels the constant in front",
+        "why": "Nothing cancels; the exponential simply never reaches zero. The node is where 2 − r/a_0 = 0."
+      }
+    ],
+    "explanation": "A product is zero only if one of its factors is zero. The constant never is, and an exponential is never zero, so the node comes from 2 − r/a_0 = 0, which gives r = 2a_0."
+  },
+  {
+    "id": "pc6-harmonics-node-trade",
+    "type": "multiple-choice",
+    "prompt": "In the table of Exercise 6.2.8, going from 3s to 3p to 3d, how do the numbers of radial and angular nodes change?",
+    "choices": [
+      {
+        "text": "Each step trades a radial node for an angular one",
+        "correct": true
+      },
+      {
+        "text": "Both kinds of node go up by one at each step",
+        "why": "Then the total would grow, but 3s, 3p and 3d all have 2 nodes. Each step loses a radial node and gains an angular one."
+      },
+      {
+        "text": "Radial nodes go up while angular nodes go down",
+        "why": "It's the other way round: 3s has 2 radial nodes and 3d has none, while the angular nodes go from 0 to 2."
+      },
+      {
+        "text": "Nothing changes: each has 2 radial nodes",
+        "why": "Only 3s has 2 radial nodes. 3p has 1 radial and 1 angular node, and 3d has 2 angular nodes."
+      }
+    ],
+    "explanation": "With n − l − 1 radial nodes and l angular nodes, raising l by one removes a radial node and adds an angular one. 3s has (2, 0), 3p has (1, 1) and 3d has (0, 2) radial and angular nodes: always n − 1 = 2 in total."
+  },
+  {
+    "id": "pc6-harmonics-radial-density-name",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the quantity R(r)^*R(r)?",
+    "choices": [
+      {
+        "text": "The radial probability density",
+        "correct": true
+      },
+      {
+        "text": "The radial distribution function",
+        "why": "That is R(r)^*R(r) multiplied by the area of a sphere of radius r. R(r)^*R(r) on its own is the radial probability density."
+      },
+      {
+        "text": "The spherical harmonic",
+        "why": "Spherical harmonics are the angular functions Y(θ, φ). R(r)^*R(r) comes from the radial function and is the radial probability density."
+      },
+      {
+        "text": "The normalization constant",
+        "why": "R(r)^*R(r) changes with r, so it is not a constant. It is the radial probability density."
+      }
+    ],
+    "explanation": "R(r)^*R(r) is the radial probability density: the probability density for the electron to be at a point a distance r from the proton. Multiplying it by the area of a sphere of radius r gives the radial distribution function."
+  },
+  {
+    "id": "pc6-harmonics-2s-density-peak",
+    "type": "multiple-choice",
+    "prompt": "Exercise 6.2.9 compares the 2s radial probability density, R(r)^*R(r), with the radial distribution function. Where is R(r)^*R(r) largest?",
+    "choices": [
+      {
+        "text": "At the nucleus, r = 0",
+        "correct": true
+      },
+      {
+        "text": "At the radial node, r = 2a_0",
+        "why": "At a node R(r) = 0, so R(r)^*R(r) is zero there, not largest."
+      },
+      {
+        "text": "Far out, beyond the radial node",
+        "why": "Beyond the node the exponential has decayed, so the density there is small. R(r)^*R(r) is largest at r = 0."
+      },
+      {
+        "text": "At r = a_0, the Bohr radius",
+        "why": "R(r)^*R(r) falls from its value at the nucleus all the way to the node. It is the radial distribution function that peaks away from r = 0."
+      }
+    ],
+    "explanation": "For 2s, R(r) is largest at r = 0, so R(r)^*R(r) is largest at the nucleus. The radial distribution function is small there instead, because a small sphere has a small surface area."
+  },
+  {
+    "id": "pc6-harmonics-visualizing-hard",
+    "type": "multiple-choice",
+    "prompt": "Why is it challenging to visualize a hydrogen atom wavefunction?",
+    "choices": [
+      {
+        "text": "It is a function of three variables in 3D space",
+        "correct": true
+      },
+      {
+        "text": "The wavefunction has no physical meaning at all",
+        "why": "|ψ|^2 gives the electron density, which is central to chemistry. The difficulty is drawing a function of three variables."
+      },
+      {
+        "text": "It changes too quickly with time to be drawn",
+        "why": "These orbitals are stationary states. The difficulty is that ψ depends on three variables, r, θ and φ."
+      },
+      {
+        "text": "It can only be written down approximately",
+        "why": "Hydrogen's wavefunctions are known exactly, as Table 6.2.1 shows. The difficulty is picturing a function of three variables."
+      }
+    ],
+    "explanation": "Visualizing a wavefunction means showing how a function of three variables, r, θ and φ, behaves in three-dimensional space. Looking at the radial and angular parts separately makes this easier."
+  },
+  {
+    "id": "pc6-harmonics-separate-plots",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the drawback of plotting the radial and angular parts of an orbital separately?",
+    "choices": [
+      {
+        "text": "It doesn't reveal the shape of the orbital well",
+        "correct": true
+      },
+      {
+        "text": "It changes the energy of the orbital being drawn",
+        "why": "Plotting doesn't change the orbital. Separate plots just don't show its shape well; a probability density plot does better."
+      },
+      {
+        "text": "It works only for the spherical s orbitals",
+        "why": "Any orbital can be split into R(r) and Y(θ, φ). The drawback is that the separate plots don't reveal the shape well."
+      },
+      {
+        "text": "The two parts can't be separated mathematically",
+        "why": "They can: ψ = R(r)Y(θ, φ). Separate plots are easier to make but don't reveal the shape of the orbital well."
+      }
+    ],
+    "explanation": "Considering the radial and angular parts separately makes visualizing easier, but plotting them separately does not reveal the shape of an orbital very well. The shape is revealed better in a probability density plot."
+  },
+  {
+    "id": "pc6-harmonics-contour-lines",
+    "type": "multiple-choice",
+    "prompt": "On a contour map of an orbital's probability density, what does each contour line join?",
+    "choices": [
+      {
+        "text": "Points where the density has the same value",
+        "correct": true
+      },
+      {
+        "text": "The points an electron passes through, in order",
+        "why": "A contour is not a path; the electron does not follow it. It joins points where the density has the same value."
+      },
+      {
+        "text": "Only the points where the wavefunction is zero",
+        "why": "Those would be the nodes. A contour can be drawn at any value: it joins points of equal density."
+      },
+      {
+        "text": "Points at the same distance from the nucleus",
+        "why": "That is true only for a spherical density such as 1s. In general a contour joins points of equal density, which for a 2p_x orbital are not circles."
+      }
+    ],
+    "explanation": "Like the lines of equal height on a map, each contour joins points where the probability density has the same value. Contours crowd together where the density changes quickly."
+  },
+  {
+    "id": "pc6-harmonics-3d-energy",
+    "type": "numeric",
+    "prompt": "Use E_n = −13.6 eV/n^2 for hydrogen. As in Exercise 6.2.4, what is the energy of a 3d electron, in eV? (Include the minus sign.)",
+    "answer": -1.5111,
+    "unit": "eV",
+    "explanation": "A 3d electron has n = 3, and in hydrogen the energy depends only on n: E_3 = −13.6 eV/3^2 = −13.6 eV/9 = −1.51 eV. The 3s and 3p orbitals have this same energy."
+  },
+  {
+    "id": "pc6-harmonics-4f-angular-momentum",
+    "type": "numeric",
+    "prompt": "The magnitude of the angular momentum is √(l(l + 1))ħ, with ħ = 1.055 × 10^−34 J·s. Exercise 6.2.4 works this out for a 3d electron. What is it for a 4f electron (l = 3), in J·s? (Type it in scientific notation, like 2.5e-34.)",
+    "answer": 3.6546e-34,
+    "unit": "J·s",
+    "explanation": "A 4f electron has l = 3, so √(l(l + 1))ħ = √(3 × 4)ħ = √12 ħ = 3.464 × (1.055 × 10^−34 J·s) = 3.65 × 10^−34 J·s. It depends only on l, not on n."
+  },
+  {
+    "id": "pc6-harmonics-y00-product",
+    "type": "numeric",
+    "prompt": "In Table 6.2.1, the l = 0 spherical harmonic is the product of Θ = 1/√2 and Φ = 1/√(2π). That product equals 1/√(Nπ). What is N?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Y_0^(0) = (1/√2) × (1/√(2π)) = 1/√(2 × 2π) = 1/√(4π), so N = 4. Y_0^(0) contains no angle, so it has this same value in every direction."
+  },
+  {
+    "id": "pc6-harmonics-n7-max-ml",
+    "type": "numeric",
+    "prompt": "Exercise 6.2.3 builds a table of the allowed quantum numbers for n = 1 to 7. For n = 7, l can be at most n − 1, and m_l can be at most l. What is the largest value of m_l for n = 7?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "l runs from 0 to n − 1 = 6, and m_l runs from −l to +l. So the largest m_l, which comes with l = 6, is +6."
+  },
+  {
+    "id": "pc6-harmonics-li-energy",
+    "type": "numeric",
+    "prompt": "Exercise 6.2.8 gives the energy as E = −(Z^2E_h)/(2n^2), where E_h = 27.2 eV. What is the ground-state (n = 1) energy of the one-electron ion Li^2+ (Z = 3), in eV? (Include the minus sign.)",
+    "answer": -122.4,
+    "unit": "eV",
+    "explanation": "E = −(3^2 × 27.2 eV)/(2 × 1^2) = −(9 × 27.2 eV)/2 = −122.4 eV. That is 9 times hydrogen's −13.6 eV, because the energy grows as Z^2."
+  },
+  {
+    "id": "pc6-harmonics-area-factor",
+    "type": "numeric",
+    "prompt": "The radial distribution function includes the area of a sphere of radius r, which is 4πr^2. By what factor does that area grow when r is doubled?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The area is proportional to r^2, so doubling r multiplies it by 2^2 = 4. This growing area is why the radial distribution function rises at first, even though R(r)^*R(r) is falling."
+  },
+  {
+    "id": "pc6-harmonics-y10-ratio",
+    "type": "numeric",
+    "prompt": "In Table 6.2.1, Y_1^(0) = √(3/(4π)) cos θ, so |Y_1^(0)|^2 is proportional to cos^2θ. Using cos 60° = 0.5, how many times larger is |Y_1^(0)|^2 along the z-axis (θ = 0) than at θ = 60°?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "cos^2 0 = 1 and cos^2 60° = 0.5^2 = 0.25, so the ratio is 1/0.25 = 4. The density is largest along the z-axis and falls to zero in the xy-plane, at θ = 90°."
+  }
+]

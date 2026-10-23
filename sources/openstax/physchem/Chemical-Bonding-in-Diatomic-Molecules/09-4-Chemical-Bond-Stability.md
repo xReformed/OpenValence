@@ -168,7 +168,7 @@ Graph showing two curves: one red decreasing sharply, the other blue leveling of
 
 For the electron in the ψ_(+) orbital, you can see that the big effect for the energy of the bonding orbital, E_(+)(R), is the balance between the repulsion of the two protons e^2/(4πε0 R) and J and K, which are both negative. J and K manage to compensate for the repulsion of the two protons until their separation is less than about 80 pm (i.e the energy is negative up until this point), and a minimum in the energy is produced at 132 pm. This minimum represents the formation of a chemical bond. The effect of S is small. It only causes the denominator in Equation (9.4.9) to increase from 1 to 2 as R approaches 0.
 
-[Note: corrected; the source prints "less than 100 pm" where this reads "less than about 80 pm"; the source prints "produced at 134 pm" where this reads "produced at 132 pm". With the exact S, J and K, ΔE_(+) is negative below R = 1.52a0 (81 pm) and has its minimum at R = 2.49a0 (132 pm), with De = 1.76 eV.]
+[Note: corrected; the source prints "less than 100 pm" where this reads "less than about 80 pm"; the source prints "produced at 134 pm" where this reads "produced at 132 pm". With the exact S, J and K, ΔE_(+) is negative for R greater than 1.52a0 (81 pm) and has its minimum at R = 2.49a0 (132 pm), with De = 1.76 eV.]
 
 For the antibonding orbital, −K is a positive quantity and essentially cancels J so there is not sufficient compensation for the Coulomb repulsion of the protons. The effect of the -K in the expression, Equation (9.4.9), for E_(−) is to account for the absence of overlap charge density and the enhanced repulsion because the charge density between the protons for ψ_(−) is even lower than that given by the atomic orbitals.
 

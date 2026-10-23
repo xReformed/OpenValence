@@ -1,0 +1,611 @@
+[
+  {
+    "id": "pc14-coupling-what-is-it",
+    "type": "multiple-choice",
+    "prompt": "What does the term spin–spin coupling describe in NMR?",
+    "choices": [
+      {
+        "text": "Magnetic interactions between neighboring non-equivalent nuclei",
+        "correct": true
+      },
+      {
+        "text": "The pairing of two electron spins within a single covalent bond",
+        "why": "That's electron pairing, not an NMR effect. Spin–spin coupling is the magnetic interaction between nearby non-equivalent nuclei, such as neighboring protons."
+      },
+      {
+        "text": "The shielding of a nucleus by its own nearby valence electrons",
+        "why": "That's shielding, which sets the chemical shift. Spin–spin coupling comes from the small magnetic fields of neighboring nuclei and splits a signal into sub-peaks."
+      },
+      {
+        "text": "The absorption of the radiofrequency pulse by a single nucleus",
+        "why": "Absorbing radiofrequency energy produces every NMR signal. Spin–spin coupling is the interaction between neighboring non-equivalent nuclei that splits a signal."
+      }
+    ],
+    "explanation": "Spin–spin coupling is the magnetic interaction between neighboring, non-equivalent NMR-active nuclei. Each proton acts like a tiny magnet, so it slightly changes the field felt by its neighbors and splits their signals into sub-peaks."
+  },
+  {
+    "id": "pc14-coupling-doublet-shape",
+    "type": "multiple-choice",
+    "prompt": "In 1,1,2-trichloroethane, Cl2CH–CH2Cl, the signal of the two CH2Cl protons (H_a) at 3.96 ppm is a doublet. What does a doublet look like?",
+    "choices": [
+      {
+        "text": "Two sub-peaks of equal height and area",
+        "correct": true
+      },
+      {
+        "text": "Three sub-peaks, the middle one twice as large",
+        "why": "That's a triplet, which the single CHCl2 proton (H_b) gives. A doublet has two sub-peaks of equal height and area."
+      },
+      {
+        "text": "Two sub-peaks, one twice as tall as the other",
+        "why": "The two sub-peaks of a doublet come from two nearly equally populated spin states of the neighbor, so they have the same height and area."
+      },
+      {
+        "text": "A single sharp peak with no splitting at all",
+        "why": "That's a singlet, an unsplit signal. A doublet is split into two sub-peaks of equal height and area."
+      }
+    ],
+    "explanation": "A doublet is a signal split into two sub-peaks of equal height (and area). In 1,1,2-trichloroethane the H_a signal is a doublet because of the single H_b proton next door."
+  },
+  {
+    "id": "pc14-coupling-doublet-origin",
+    "type": "multiple-choice",
+    "prompt": "In 1,1,2-trichloroethane, why is the H_a signal split into two sub-peaks of nearly equal height by the neighboring proton H_b?",
+    "choices": [
+      {
+        "text": "H_b's moment is with B_0 in about half the molecules, against it in the rest",
+        "correct": true
+      },
+      {
+        "text": "H_b is shielded by the solvent in half the molecules and not in the others",
+        "why": "The solvent doesn't cause the splitting. H_b's own small magnetic field adds to B_0 at H_a in about half of the molecules and subtracts from it in the rest."
+      },
+      {
+        "text": "The two H_a protons split each other, one with B_0 and the other against it",
+        "why": "Equivalent protons such as the two H_a protons don't split each other. The H_a signal is split by its non-equivalent neighbor, H_b."
+      },
+      {
+        "text": "H_b absorbs half of the radio waves that would otherwise reach H_a",
+        "why": "Splitting isn't an energy-sharing effect. H_b's small magnetic field slightly strengthens the field at H_a in about half of the molecules and weakens it in the rest."
+      }
+    ],
+    "explanation": "Each proton is like a tiny magnet. In (slightly more than) half of the molecules H_b's moment is aligned with B_0 and slightly strengthens the field at H_a; in the rest it is opposed and slightly weakens it. These two groups of molecules give two sub-peaks of nearly equal height."
+  },
+  {
+    "id": "pc14-coupling-triplet-middle",
+    "type": "multiple-choice",
+    "prompt": "The single H_b proton of 1,1,2-trichloroethane has two H_a neighbors, H_a1 and H_a2. Why is the middle peak of its triplet twice as large as each outer peak?",
+    "choices": [
+      {
+        "text": "Two of the four equally likely spin combinations cancel out",
+        "correct": true
+      },
+      {
+        "text": "The middle peak also holds the signal of the H_a protons",
+        "why": "The H_a protons give their own doublet at 3.96 ppm, far from H_b at 5.76 ppm. The middle peak is larger because two of the four spin combinations of H_a1 and H_a2 cancel."
+      },
+      {
+        "text": "Both H_a moments are against B_0 twice as often as with it",
+        "why": "All four combinations of H_a1 and H_a2 are equally probable. The middle peak is larger because two of them, one with B_0 and one against, cancel each other."
+      },
+      {
+        "text": "H_b couples about twice as strongly to H_a1 as it does to H_a2",
+        "why": "H_a1 and H_a2 are equivalent and couple to H_b with the same J. The middle peak is larger because two of the four combinations leave H_b's shift unchanged."
+      }
+    ],
+    "explanation": "The four combinations of H_a1 and H_a2 are equally probable: both with B_0 (downfield), both against (upfield), and two mixed ones in which the effects cancel. Two ways to cancel make the middle peak twice as large, so the triplet is 1:2:1."
+  },
+  {
+    "id": "pc14-coupling-both-with-field",
+    "type": "multiple-choice",
+    "prompt": "In molecules of 1,1,2-trichloroethane where the moments of both H_a protons are aligned with B_0, which peak of the H_b triplet do they produce?",
+    "choices": [
+      {
+        "text": "The downfield outer peak",
+        "correct": true
+      },
+      {
+        "text": "The upfield outer peak",
+        "why": "Both moments aligned with B_0 add to the field at H_b and deshield it, which moves the signal downfield. Both opposed gives the upfield peak."
+      },
+      {
+        "text": "The middle peak",
+        "why": "The middle peak comes from the two mixed combinations, where one H_a's effect cancels the other's. Both aligned with B_0 deshield H_b and give the downfield peak."
+      },
+      {
+        "text": "No peak, since their fields cancel",
+        "why": "The fields cancel only when one H_a is with B_0 and the other against it. Two aligned moments add up, deshielding H_b and giving the downfield peak."
+      }
+    ],
+    "explanation": "When both H_a moments are aligned with B_0, they slightly strengthen the field felt by H_b. H_b is deshielded and its signal shifts slightly downfield, giving the downfield outer line of the triplet."
+  },
+  {
+    "id": "pc14-coupling-quartet-ratio",
+    "type": "multiple-choice",
+    "prompt": "In ethyl acetate, CH3COOCH2CH3, the CH2 signal is a quartet, split by the three protons of the neighboring CH3. Example 5.6 notes that a doublet integrates 1:1 and a triplet 1:2:1. What is the integration ratio of this quartet?",
+    "choices": [
+      {
+        "text": "1:3:3:1",
+        "correct": true
+      },
+      {
+        "text": "1:2:2:1",
+        "why": "Count the spin combinations of the three CH3 protons: 1 has all three with B_0, 3 have two with, 3 have one with, and 1 has none. That gives 1:3:3:1."
+      },
+      {
+        "text": "1:1:1:1",
+        "why": "The eight combinations aren't shared equally among the four lines. Three of them give each middle line, so the ratio is 1:3:3:1."
+      },
+      {
+        "text": "1:4:4:1",
+        "why": "Three spins have only 8 combinations, and 3 (not 4) of them give each middle line. The ratio is 1:3:3:1."
+      }
+    ],
+    "explanation": "The three CH3 spins have 8 equally likely combinations: all three with B_0 (1 way), two with (3 ways), one with (3 ways) and none with (1 way). So the quartet integrates 1:3:3:1, with the two middle peaks taller, as the section notes."
+  },
+  {
+    "id": "pc14-coupling-acetyl-singlet",
+    "type": "multiple-choice",
+    "prompt": "In ethyl acetate, CH3COOCH2CH3, why is the signal of the acetyl CH3 protons an unsplit singlet?",
+    "choices": [
+      {
+        "text": "Their nearest hydrogen neighbors are five bonds away",
+        "correct": true
+      },
+      {
+        "text": "They exchange rapidly with the solvent, like O–H protons",
+        "why": "The acetyl protons are bonded to carbon, not oxygen. They are unsplit because their nearest hydrogen neighbors, on the CH2, are five bonds away."
+      },
+      {
+        "text": "The CH2 splits them into a quartet too weak to be seen",
+        "why": "Splitting doesn't make a signal vanish. The CH2 protons are five bonds away, too far to split the acetyl signal at all."
+      },
+      {
+        "text": "Their three equivalent protons split each other and cancel",
+        "why": "Equivalent protons don't split each other in the first place. The singlet arises because no hydrogens are close enough, within about three bonds, to couple."
+      }
+    ],
+    "explanation": "Splitting occurs mainly between hydrogens three bonds apart. The acetyl protons have no adjacent hydrogens: their nearest hydrogen neighbors, on the OCH2 group, are five bonds away, so the signal is a singlet."
+  },
+  {
+    "id": "pc14-coupling-four-five-bond",
+    "type": "multiple-choice",
+    "prompt": "What does the section say about four-bond and five-bond coupling between hydrogens?",
+    "choices": [
+      {
+        "text": "Sometimes seen, but much weaker than three-bond coupling",
+        "correct": true
+      },
+      {
+        "text": "Never seen, because only three-bond coupling can occur",
+        "why": "Four-bond and even five-bond splitting are occasionally observed, for example between meta hydrogens on a benzene ring. They are just much more subtle than three-bond splitting."
+      },
+      {
+        "text": "Usually stronger than three-bond coupling, since it spans more bonds",
+        "why": "Coupling generally weakens as more bonds separate the hydrogens. Three-bond coupling is the main source of splitting; four- and five-bond effects are much more subtle."
+      },
+      {
+        "text": "Seen only between hydrogens bonded to oxygen or nitrogen",
+        "why": "Hydrogens on O or N couple weakly or not at all, because they exchange rapidly. Four-bond coupling, when seen, is between hydrogens on carbon, such as meta ring hydrogens."
+      }
+    ],
+    "explanation": "Splitting occurs mainly between hydrogens separated by three bonds. Four-bond and even five-bond splitting occasionally appear, but their effect is much more subtle; meta hydrogens on a benzene ring, for example, couple by up to 4 Hz."
+  },
+  {
+    "id": "pc14-coupling-oh-nh-exchange",
+    "type": "multiple-choice",
+    "prompt": "Why are hydrogens bonded to heteroatoms, such as alcohol O–H or amine N–H hydrogens, coupled only weakly or not at all to their neighbors?",
+    "choices": [
+      {
+        "text": "They exchange rapidly with solvent or other sample molecules",
+        "correct": true
+      },
+      {
+        "text": "Oxygen and nitrogen atoms block the neighbors' magnetic fields",
+        "why": "Bonds to O or N don't block magnetic interactions. The coupling is lost because these protons move rapidly between molecules by exchange."
+      },
+      {
+        "text": "They are always equivalent to the hydrogens on the next carbon",
+        "why": "An O–H proton is not equivalent to the C–H protons nearby. Its coupling is weak because it exchanges rapidly with solvent or other molecules."
+      },
+      {
+        "text": "They have no nuclear spin, so they are NMR-inactive",
+        "why": "Every ^1H nucleus has spin 1/2 and is NMR active. These protons couple weakly because they exchange rapidly with solvent or other molecules."
+      }
+    ],
+    "explanation": "Splitting is most noticeable for hydrogens bonded to carbon. Alcohol and amino hydrogens exchange rapidly with solvent or other sample molecules, so they couple weakly, or not at all, to their neighbors."
+  },
+  {
+    "id": "pc14-coupling-j-definition",
+    "type": "multiple-choice",
+    "prompt": "How is the coupling constant J measured from a split NMR signal?",
+    "choices": [
+      {
+        "text": "As the gap, in Hz, between two adjacent sub-peaks",
+        "correct": true
+      },
+      {
+        "text": "As the gap, in ppm, between two separate signals",
+        "why": "The gap between two different signals is a difference in chemical shift. J is the spacing, in Hz, between adjacent sub-peaks within one split signal."
+      },
+      {
+        "text": "As the ratio of the areas of the sub-peaks in the signal",
+        "why": "Area ratios such as 1:2:1 describe the intensities. J is the spacing, in Hz, between adjacent sub-peaks."
+      },
+      {
+        "text": "As the number of sub-peaks in the signal",
+        "why": "The number of sub-peaks reflects how many neighbors there are. J is the frequency gap, in Hz, between adjacent sub-peaks."
+      }
+    ],
+    "explanation": "The coupling constant J is the difference, in Hz, between two adjacent sub-peaks of a split signal. In 1,1,2-trichloroethane the doublet's sub-peaks are 6.1 Hz apart, so ^3J_ab = 6.1 Hz."
+  },
+  {
+    "id": "pc14-coupling-superscript-three",
+    "type": "multiple-choice",
+    "prompt": "For 1,1,2-trichloroethane the section writes ^3J_(a-b) = 6.1 Hz. What does the superscript 3 tell you?",
+    "choices": [
+      {
+        "text": "The coupled protons are three bonds apart",
+        "correct": true
+      },
+      {
+        "text": "The signal is split into three sub-peaks",
+        "why": "The number of sub-peaks isn't part of the symbol. The superscript counts the bonds between the coupled protons: H_a–C–C–H_b is three bonds."
+      },
+      {
+        "text": "The value is given to three significant figures",
+        "why": "The superscript has nothing to do with precision. It counts the bonds separating the coupled protons, here three."
+      },
+      {
+        "text": "The spectrum was recorded in a 3 T magnet",
+        "why": "J doesn't depend on the field, so no field is given in the symbol. The superscript counts the bonds between the coupled protons."
+      }
+    ],
+    "explanation": "The superscript gives the number of bonds through which the protons couple: H_a–C–C–H_b is a three-bond path. The subscript a-b says the coupling is between H_a and H_b."
+  },
+  {
+    "id": "pc14-coupling-field-independent-why",
+    "type": "multiple-choice",
+    "prompt": "Why is the coupling constant J, in Hz, the same no matter what the applied field strength of the NMR magnet is?",
+    "choices": [
+      {
+        "text": "A neighboring proton's magnetic moment doesn't depend on the applied field",
+        "correct": true
+      },
+      {
+        "text": "J is reported in ppm, which cancels out any dependence on the field",
+        "why": "J is expressed in Hz, not ppm. It stays fixed because its source, the neighbor's magnetic moment, does not depend on the applied field."
+      },
+      {
+        "text": "A stronger magnet removes the coupling, so only weak-field J values count",
+        "why": "A stronger magnet doesn't remove the coupling; J in Hz stays the same. That's because the neighbor's magnetic moment, which causes the coupling, doesn't depend on B_0."
+      },
+      {
+        "text": "Every spectrometer is calibrated so that J always matches a 100 MHz reading",
+        "why": "No such calibration is involved. J is the same at any field because the neighboring proton's magnetic moment, which causes the coupling, doesn't depend on B_0."
+      }
+    ],
+    "explanation": "The coupling comes from the small magnetic moment of a neighboring proton, and the strength of that moment does not depend on the applied field. So J, in Hz, is the same on any instrument, unlike the gap in Hz between signals with different chemical shifts, which grows with the field."
+  },
+  {
+    "id": "pc14-coupling-reciprocal",
+    "type": "multiple-choice",
+    "prompt": "In 1,1,2-trichloroethane, the gap between adjacent sub-peaks is 6.1 Hz in both the H_a doublet and the H_b triplet. What does this show?",
+    "choices": [
+      {
+        "text": "H_a affects H_b exactly as much as H_b affects H_a",
+        "correct": true
+      },
+      {
+        "text": "Protons in every molecule couple with J = 6.1 Hz",
+        "why": "Coupling constants vary widely, from 0 to 18 Hz for protons on sp^2 carbons. The equal gaps show that the H_a–H_b coupling is the same in both directions."
+      },
+      {
+        "text": "The doublet and the triplet come from the same protons",
+        "why": "The doublet comes from the two H_a protons and the triplet from H_b. They share a gap because the H_a–H_b interaction is the same in both directions."
+      },
+      {
+        "text": "The two signals overlap and must be measured together",
+        "why": "The signals lie far apart, at 3.96 and 5.76 ppm. Their gaps match because coupling is reciprocal: ^3J_ab is the same seen from either proton."
+      }
+    ],
+    "explanation": "The coupling constant ^3J_ab measures the interaction between H_a and H_b, and it has the same size in either direction. Matching J values help you work out which proton sets in a complex spectrum are coupled to each other."
+  },
+  {
+    "id": "pc14-coupling-sp3-range",
+    "type": "multiple-choice",
+    "prompt": "What is the typical coupling constant between protons on neighboring sp^3-hybridized carbons?",
+    "choices": [
+      {
+        "text": "About 6–8 Hz",
+        "correct": true
+      },
+      {
+        "text": "About 11–18 Hz",
+        "why": "That range is for trans vinylic hydrogens on a C=C double bond. Protons on neighboring sp^3 carbons typically couple at 6–8 Hz."
+      },
+      {
+        "text": "About 0.1–0.5 Hz",
+        "why": "That would be too small to split most signals. Neighboring sp^3 protons typically couple at 6–8 Hz, like the 6.1 Hz of 1,1,2-trichloroethane."
+      },
+      {
+        "text": "About 100–200 Hz",
+        "why": "Couplings between protons are small, at most about 18 Hz in the section. Neighboring sp^3 protons typically couple at 6–8 Hz."
+      }
+    ],
+    "explanation": "Coupling constants between proton sets on neighboring sp^3-hybridized carbons are typically 6–8 Hz. Protons on sp^2 carbons range much more widely, from 0 to 18 Hz, depending on the bonding arrangement."
+  },
+  {
+    "id": "pc14-coupling-sixteen-hz-trans",
+    "type": "multiple-choice",
+    "prompt": "A three-bond coupling of ^3J = 16 Hz is measured between two hydrogens. Using the section's typical ranges, which arrangement is most likely?",
+    "choices": [
+      {
+        "text": "Trans vinylic hydrogens across a C=C bond",
+        "correct": true
+      },
+      {
+        "text": "Cis vinylic hydrogens across a C=C bond",
+        "why": "Cis vinylic hydrogens couple at 6–15 Hz, just short of 16 Hz. Only the trans range, 11–18 Hz, includes 16 Hz."
+      },
+      {
+        "text": "Hydrogens on two neighboring sp^3 carbons",
+        "why": "Protons on neighboring sp^3 carbons typically couple at 6–8 Hz, far below 16 Hz. The trans vinylic range, 11–18 Hz, fits."
+      },
+      {
+        "text": "Ortho hydrogens on a benzene ring",
+        "why": "Ortho hydrogens on a benzene ring couple at 6–10 Hz. A 16 Hz coupling fits trans vinylic hydrogens, 11–18 Hz."
+      }
+    ],
+    "explanation": "Trans vinylic hydrogens couple with ^3J = 11–18 Hz, cis ones with 6–15 Hz, ortho benzene hydrogens with 6–10 Hz and neighboring sp^3 protons with 6–8 Hz. Only the trans range reaches 16 Hz."
+  },
+  {
+    "id": "pc14-coupling-meta-four-bond",
+    "type": "multiple-choice",
+    "prompt": "On a benzene ring, which hydrogens sometimes show a four-bond coupling of up to 4 Hz?",
+    "choices": [
+      {
+        "text": "Meta hydrogens",
+        "correct": true
+      },
+      {
+        "text": "Ortho hydrogens",
+        "why": "Ortho hydrogens are three bonds apart and couple more strongly, at 6–10 Hz. The weak four-bond coupling is between meta hydrogens."
+      },
+      {
+        "text": "Para hydrogens",
+        "why": "Para hydrogens are five bonds apart, even farther. The four-bond coupling of up to 4 Hz is between meta hydrogens."
+      },
+      {
+        "text": "Any pair of ring hydrogens",
+        "why": "Ring couplings depend on position: ortho hydrogens couple at 6–10 Hz, and only meta hydrogens show the four-bond coupling of up to 4 Hz."
+      }
+    ],
+    "explanation": "Ortho hydrogens on a benzene ring are three bonds apart and couple at 6–10 Hz. Meta hydrogens are four bonds apart, and a weak coupling of up to 4 Hz is sometimes seen between them."
+  },
+  {
+    "id": "pc14-coupling-complex-definition",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the splitting that results when one set of hydrogens is coupled to two or more sets of non-equivalent neighbors?",
+    "choices": [
+      {
+        "text": "Complex coupling",
+        "correct": true
+      },
+      {
+        "text": "Geminal coupling",
+        "why": "Geminal coupling is the two-bond coupling between hydrogens on the same carbon. Coupling to two or more non-equivalent neighbor sets is called complex coupling."
+      },
+      {
+        "text": "Reciprocal coupling",
+        "why": "Reciprocal describes how J is the same seen from either partner. Coupling to two or more non-equivalent neighbor sets is called complex coupling."
+      },
+      {
+        "text": "Long-range coupling",
+        "why": "That name fits four- or five-bond coupling, which is about distance. Coupling to two or more sets of non-equivalent neighbors is called complex coupling."
+      }
+    ],
+    "explanation": "When a set of hydrogens is coupled to two or more sets of non-equivalent neighbors, the section calls it complex coupling. An example is H_c of methyl acrylate, which is split by both H_a and H_b into a doublet of doublets."
+  },
+  {
+    "id": "pc14-coupling-acrylate-hc-four",
+    "type": "multiple-choice",
+    "prompt": "In methyl acrylate, H2C=CH–COOCH3, H_a is the proton on the CH carbon, H_c is the CH2 proton trans to H_a, and H_b is the other CH2 proton. Why is the H_c signal made of four sub-peaks?",
+    "choices": [
+      {
+        "text": "H_a and H_b each split it, with different J values",
+        "correct": true
+      },
+      {
+        "text": "H_c has three neighbors, so the n + 1 rule gives four",
+        "why": "H_c has only two neighbors, H_a and H_b, and they aren't equivalent. Each splits it into a doublet with its own J, giving a doublet of doublets."
+      },
+      {
+        "text": "The ester CH3 protons split it into a quartet",
+        "why": "The OCH3 protons are many bonds away, too far to couple. The four sub-peaks come from H_a (17.4 Hz) and H_b (1.5 Hz) splitting H_c in turn."
+      },
+      {
+        "text": "H_a splits it twice because their coupling is strong",
+        "why": "One proton splits a signal only once, into a doublet. The second doublet splitting comes from H_b, with a much smaller J of 1.5 Hz."
+      }
+    ],
+    "explanation": "H_a, trans to H_c, splits the H_c signal into a doublet with ^3J_ac = 17.4 Hz. H_b, on the same carbon, splits each of those lines again with ^2J_bc = 1.5 Hz. The result is a doublet of doublets (dd), with four sub-peaks."
+  },
+  {
+    "id": "pc14-coupling-acrylate-hb-js",
+    "type": "multiple-choice",
+    "prompt": "In methyl acrylate, H2C=CH–COOCH3, the CH2 proton H_b is cis to the CH proton H_a and geminal to the other CH2 proton, H_c. Given ^3J_ac = 17.4 Hz, ^3J_ab = 10.4 Hz and ^2J_bc = 1.5 Hz, which coupling constants appear in the H_b signal?",
+    "choices": [
+      {
+        "text": "10.4 Hz and 1.5 Hz",
+        "correct": true
+      },
+      {
+        "text": "17.4 Hz and 1.5 Hz",
+        "why": "Those belong to the H_c signal, which couples trans to H_a and geminally to H_b. H_b couples cis to H_a (10.4 Hz) and geminally to H_c (1.5 Hz)."
+      },
+      {
+        "text": "17.4 Hz and 10.4 Hz",
+        "why": "Those belong to the H_a signal, which is coupled to both CH2 protons. H_b couples to H_a (10.4 Hz) and to H_c (1.5 Hz)."
+      },
+      {
+        "text": "10.4 Hz only",
+        "why": "H_b also has a geminal partner, H_c, which splits each line again by 1.5 Hz. The H_b signal is a doublet of doublets with 10.4 and 1.5 Hz."
+      }
+    ],
+    "explanation": "A signal shows the coupling constant to each of its partners. H_b couples to H_a (cis, 10.4 Hz) and to H_c (geminal, 1.5 Hz), so its signal is a doublet of doublets, with sub-doublets closer together than in H_c's because 10.4 Hz is smaller than 17.4 Hz."
+  },
+  {
+    "id": "pc14-coupling-larger-first",
+    "type": "multiple-choice",
+    "prompt": "When you build a splitting diagram for a complex coupling pattern, which order does the section suggest?",
+    "choices": [
+      {
+        "text": "Draw the larger splitting first, then the finer one",
+        "correct": true
+      },
+      {
+        "text": "Draw the finer splitting first, since the order changes the result",
+        "why": "Either order gives the same final pattern. The section suggests drawing the larger splitting first only because it is usually easier."
+      },
+      {
+        "text": "Draw only the larger splitting; the finer one can be ignored",
+        "why": "Ignoring the finer splitting would lose half the lines, such as the 1.5 Hz splitting in methyl acrylate. Draw the larger one first, then the finer one."
+      },
+      {
+        "text": "Draw the splitting from the most distant proton first",
+        "why": "Distance isn't the guide. The section suggests the larger splitting first, then the finer one, though either order gives the same result."
+      }
+    ],
+    "explanation": "It is usually easier to show the larger splitting first, followed by the finer splitting, although the reverse gives the same end result. For H_c of methyl acrylate, draw the 17.4 Hz doublet first, then split each line by 1.5 Hz."
+  },
+  {
+    "id": "pc14-coupling-apparent-quartet",
+    "type": "multiple-choice",
+    "prompt": "In 1,1,3-trichloropropane, Cl2CHCH2CH2Cl, the central CH2 protons (H_b) are split by the two CH2Cl protons (H_a) and by the CHCl2 proton (H_c). Why does their signal look like a quartet instead of a triplet of doublets?",
+    "choices": [
+      {
+        "text": "^3J_ab and ^3J_bc are nearly equal, so sub-peaks overlap",
+        "correct": true
+      },
+      {
+        "text": "H_a and H_c are equivalent, so they count as one set",
+        "why": "H_a and H_c are not equivalent; their chemical shifts differ. The signal looks like a quartet because the two coupling constants are nearly equal and sub-peaks overlap."
+      },
+      {
+        "text": "H_c is too far from H_b, so it doesn't couple with it at all",
+        "why": "H_c is three bonds from H_b, so it does couple. The pattern looks simple because ^3J_bc is very close to ^3J_ab, so sub-peaks overlap."
+      },
+      {
+        "text": "The H_c doublet splitting is too small to resolve",
+        "why": "The splitting by H_c is a normal three-bond coupling, close in size to ^3J_ab. Because the two J values match, sub-peaks overlap and the pattern looks like a quartet."
+      }
+    ],
+    "explanation": "With different J values, H_b would be a triplet (from the two H_a) of doublets (from H_c). But ^3J_ab is very close to ^3J_bc, so sub-peaks overlap and the signal looks like a quartet, as if the n + 1 rule applied to all three neighbors."
+  },
+  {
+    "id": "pc14-coupling-pentanone-sextet",
+    "type": "multiple-choice",
+    "prompt": "The H_c signal of 2-pentanone, CH3COCH2CH2CH3, looks like a sextet but is technically a triplet of quartets. Here H_c is the CH2 next to the end CH3. Where do the triplet and the quartet splittings come from?",
+    "choices": [
+      {
+        "text": "Triplet from the CH2 next to C=O; quartet from the end CH3",
+        "correct": true
+      },
+      {
+        "text": "Triplet from the end CH3; quartet from the CH2 next to C=O",
+        "why": "That's backwards. Two neighbors give three lines and three neighbors give four, so the CH2's two protons give the triplet and the end CH3's three protons give the quartet."
+      },
+      {
+        "text": "Triplet from H_c's own protons; quartet from the acetyl CH3",
+        "why": "Equivalent H_c protons don't split each other, and the acetyl CH3 is too far away. The triplet comes from the neighboring CH2 and the quartet from the end CH3."
+      },
+      {
+        "text": "Both from the acetyl CH3, coupling through the C=O group",
+        "why": "The acetyl CH3 is more than three bonds from H_c and doesn't split it. H_c's five neighbors are the two protons of the other CH2 and the three of the end CH3."
+      }
+    ],
+    "explanation": "H_c has two H_b protons on one side (the CH2 next to C=O) and three H_d protons on the other (the end CH3). Two neighbors give a triplet and three give a quartet; because the two J values are nearly equal, the sub-peaks overlap into what looks like a sextet."
+  },
+  {
+    "id": "pc14-coupling-toluene-multiplet",
+    "type": "multiple-choice",
+    "prompt": "Considering only 3-bond coupling, the ring protons of toluene, C6H5CH3, should give a doublet and two triplets. Why does the section describe the aromatic region simply as a multiplet?",
+    "choices": [
+      {
+        "text": "Their three sets have similar shifts, so the signals overlap",
+        "correct": true
+      },
+      {
+        "text": "All five ring protons are equivalent, so they give a single peak",
+        "why": "There are three different sets of ring protons (ortho, meta and para), so they aren't all equivalent. Their signals have similar shifts and overlap, so the region is called a multiplet."
+      },
+      {
+        "text": "The ring protons exchange rapidly with the solvent molecules",
+        "why": "Rapid exchange affects O–H and N–H protons, not C–H protons on a ring. The aromatic signals overlap because their chemical shifts are so similar."
+      },
+      {
+        "text": "The CH3 protons split every ring proton's signal into a quartet",
+        "why": "The CH3 protons are at least four bonds from the ring hydrogens and don't give clear quartets. The problem is that the three aromatic sets have very similar chemical shifts and overlap."
+      }
+    ],
+    "explanation": "In practice the ortho, meta and para protons of toluene have very similar chemical shifts, so their signals overlap substantially and can't be analyzed in detail. Such an overlapping group of peaks is called a multiplet."
+  },
+  {
+    "id": "pc14-coupling-doublet-gap",
+    "type": "numeric",
+    "prompt": "The two sub-peaks of a doublet lie at 1236.8 Hz and 1229.6 Hz, measured from the TMS reference. The coupling constant J is the difference, in Hz, between adjacent sub-peaks. What is J, in Hz? (Give it as a decimal.)",
+    "answer": 7.2,
+    "unit": "Hz",
+    "explanation": "J = 1236.8 Hz − 1229.6 Hz = 7.2 Hz. That is in the typical 6–8 Hz range for protons on neighboring sp^3 carbons."
+  },
+  {
+    "id": "pc14-coupling-triplet-outer",
+    "type": "numeric",
+    "prompt": "In the H_b triplet of 1,1,2-trichloroethane, the two outer sub-peaks are 12.2 Hz apart, and the middle sub-peak lies halfway between them. What is the coupling constant J, the gap between adjacent sub-peaks, in Hz? (Give it as a decimal.)",
+    "answer": 6.1,
+    "unit": "Hz",
+    "explanation": "A triplet has two equal gaps between adjacent sub-peaks, so J = 12.2 Hz ÷ 2 = 6.1 Hz. That matches the 6.1 Hz gap of the H_a doublet, since coupling is reciprocal."
+  },
+  {
+    "id": "pc14-coupling-three-spin-combos",
+    "type": "numeric",
+    "prompt": "In Example 5.6, each of the three CH3 protons (H_c) of ethyl acetate can have its magnetic moment aligned with B_0 or opposed to it. How many different combinations of spin states are possible for the three protons together?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "Each proton has 2 choices, so there are 2 × 2 × 2 = 8 combinations. Grouped by how many moments point with B_0 (3, 2, 1 or 0), they shift the neighboring CH2 signal to four positions, giving its quartet."
+  },
+  {
+    "id": "pc14-coupling-acrylate-outer-spread",
+    "type": "numeric",
+    "prompt": "In methyl acrylate, the H_c signal is a doublet of doublets: H_a splits it with ^3J_ac = 17.4 Hz, and H_b splits each line again with ^2J_bc = 1.5 Hz. How far apart, in Hz, are the two outermost sub-peaks? (Give it as a decimal.)",
+    "answer": 18.9,
+    "unit": "Hz",
+    "explanation": "The 17.4 Hz splitting puts lines 8.7 Hz on each side of the center, and the 1.5 Hz splitting moves the outer ones another 0.75 Hz out, to 9.45 Hz. The outermost sub-peaks are 2 × 9.45 = 18.9 Hz apart, which is 17.4 + 1.5."
+  },
+  {
+    "id": "pc14-coupling-window-300",
+    "type": "numeric",
+    "prompt": "Proton signals appear in a window about 12 ppm wide. On a 100 MHz instrument, where 1 ppm is 100 Hz, this window is 1200 Hz wide. How wide is the same 12 ppm window, in Hz, on a 300 MHz instrument, where 1 ppm is 300 Hz?",
+    "answer": 3600,
+    "unit": "Hz",
+    "explanation": "12 ppm × 300 Hz per ppm = 3600 Hz, three times the 1200 Hz at 100 MHz. A stronger magnet spreads the signals over more Hz, which gives better resolution."
+  },
+  {
+    "id": "pc14-coupling-j-at-600",
+    "type": "numeric",
+    "prompt": "The trans coupling in methyl acrylate, ^3J_ac, is 17.4 Hz when measured on a 300 MHz instrument. What value, in Hz, would a 600 MHz instrument give for it? (Give it as a decimal.)",
+    "answer": 17.4,
+    "unit": "Hz",
+    "explanation": "J in Hz doesn't depend on the applied field, because the neighboring proton's magnetic moment doesn't. So the 600 MHz instrument also gives 17.4 Hz, not twice as much."
+  },
+  {
+    "id": "pc14-coupling-j-in-ppm",
+    "type": "numeric",
+    "prompt": "The 6.1 Hz coupling of 1,1,2-trichloroethane is measured on a 500 MHz instrument, where 1 ppm corresponds to 500 Hz. How wide is this 6.1 Hz gap on the ppm scale, in ppm? (Give it as a decimal.)",
+    "answer": 0.0122,
+    "unit": "ppm",
+    "tolerance": 0.02,
+    "explanation": "6.1 Hz ÷ 500 Hz per ppm = 0.0122 ppm, five times smaller than the 0.061 ppm it spans at 100 MHz. J stays 6.1 Hz while each ppm grows wider, so at higher field multiplets take up less of the ppm scale and overlap less."
+  }
+]

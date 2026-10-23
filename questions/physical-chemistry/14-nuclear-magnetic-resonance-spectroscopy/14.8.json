@@ -1,0 +1,322 @@
+[
+  {
+    "id": "pc14-n-plus-1-empirical",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe the n + 1 rule?",
+    "choices": [
+      {
+        "text": "As an empirical rule",
+        "correct": true
+      },
+      {
+        "text": "As an exact law derived from quantum mechanics",
+        "why": "The rule comes from observation, not an exact derivation, and the section's title says it holds only for first-order spectra."
+      },
+      {
+        "text": "As a selection rule for allowed transitions",
+        "why": "Selection rules, such as ΔM_I = ±1, decide which transitions can occur. The n + 1 rule is an empirical rule that predicts a peak's multiplicity."
+      },
+      {
+        "text": "As a symmetry rule from group theory",
+        "why": "Group theory isn't used here. The n + 1 rule is an empirical rule for predicting multiplicities."
+      }
+    ],
+    "explanation": "The n + 1 rule is an empirical rule. Together with Pascal's triangle, it predicts the multiplicity and splitting pattern of peaks in ^1H and ^13C NMR spectra."
+  },
+  {
+    "id": "pc14-n-plus-1-which-spectra",
+    "type": "multiple-choice",
+    "prompt": "According to the section, in which kinds of spectra is the n + 1 rule used to predict peak patterns?",
+    "choices": [
+      {
+        "text": "^1H and ^13C NMR spectra",
+        "correct": true
+      },
+      {
+        "text": "^1H NMR spectra only",
+        "why": "The section names ^13C NMR spectra as well as ^1H, so the rule isn't limited to protons."
+      },
+      {
+        "text": "^13C NMR spectra only",
+        "why": "The section names ^1H NMR spectra too, and all of its examples are proton spectra."
+      },
+      {
+        "text": "Infrared spectra of C–H bonds",
+        "why": "The n + 1 rule is about spin–spin coupling in NMR. The section names ^1H and ^13C NMR spectra."
+      }
+    ],
+    "explanation": "The section introduces the n + 1 rule for predicting the multiplicity and splitting pattern of peaks in ^1H and ^13C NMR spectra."
+  },
+  {
+    "id": "pc14-n-plus-1-what-n-counts",
+    "type": "multiple-choice",
+    "prompt": "A nucleus gives a peak in the NMR spectrum. In the n + 1 rule, what does n count?",
+    "choices": [
+      {
+        "text": "The equivalent nuclei it is coupled to",
+        "correct": true
+      },
+      {
+        "text": "The equivalent nuclei within its own set",
+        "why": "Nuclei in the same set don't split each other. In the section's first example, three equivalent protons with no other neighbors have n = 0 and give a singlet."
+      },
+      {
+        "text": "The lines in its peak",
+        "why": "The number of lines is n + 1, not n. n counts the equivalent nuclei that the nucleus is coupled to."
+      },
+      {
+        "text": "The carbon atoms bonded to it",
+        "why": "Carbons aren't counted. n is the number of equivalent nuclei coupled to the nucleus giving the peak."
+      }
+    ],
+    "explanation": "If a nucleus is coupled to n equivalent nuclei, its peak has a multiplicity of n + 1. Its own equivalent partners don't count, because equivalent nuclei don't split each other."
+  },
+  {
+    "id": "pc14-n-plus-1-pascal-role",
+    "type": "multiple-choice",
+    "prompt": "Used together with the n + 1 rule, what does Pascal's triangle predict for a peak?",
+    "choices": [
+      {
+        "text": "Its splitting pattern",
+        "correct": true
+      },
+      {
+        "text": "Its chemical shift",
+        "why": "Chemical shift depends on the nucleus's environment, not on Pascal's triangle. The triangle gives the splitting pattern: the relative heights of the lines."
+      },
+      {
+        "text": "Its coupling constant J",
+        "why": "Pascal's triangle has no J values in it. It gives the splitting pattern of a peak whose multiplicity the n + 1 rule predicts."
+      },
+      {
+        "text": "The number of sets of equivalent nuclei",
+        "why": "That decides how many peaks there are, not their pattern. Pascal's triangle gives the splitting pattern within each peak."
+      }
+    ],
+    "explanation": "The n + 1 rule gives a peak's multiplicity, the number of lines. Pascal's triangle then gives its splitting pattern: 1:1 for a doublet, 1:2:1 for a triplet, and so on."
+  },
+  {
+    "id": "pc14-n-plus-1-first-order-only",
+    "type": "multiple-choice",
+    "prompt": "The section's title puts a limit on the n + 1 rule. To which spectra does it say the rule applies?",
+    "choices": [
+      {
+        "text": "Only to first-order spectra",
+        "correct": true
+      },
+      {
+        "text": "Only to second-order spectra",
+        "why": "It's the other way round. The title says first-order; second-order spectra are calculated exactly with the variational method, as the next section's title says."
+      },
+      {
+        "text": "To every NMR spectrum, without limit",
+        "why": "The title does set a limit: the rule applies only to first-order spectra."
+      },
+      {
+        "text": "Only to spectra of equivalent nuclei",
+        "why": "Equivalent nuclei don't split each other at all. The title's limit is that the rule applies only to first-order spectra."
+      }
+    ],
+    "explanation": "The section's title says the n + 1 rule applies only to first-order spectra. Second-order spectra, the subject of the next section, can be calculated exactly using the variational method."
+  },
+  {
+    "id": "pc14-n-plus-1-no-neighbors",
+    "type": "multiple-choice",
+    "prompt": "In the section's first example, a molecule's only hydrogens are three equivalent protons, H_a, H_b and H_c, coupled to no other hydrogen nuclei. What does its ^1H NMR spectrum show?",
+    "choices": [
+      {
+        "text": "One peak, a singlet",
+        "correct": true
+      },
+      {
+        "text": "One peak, a quartet",
+        "why": "A quartet would need n = 3 neighbors, but the three protons are equivalent and don't split each other. With n = 0, n + 1 = 1: a singlet."
+      },
+      {
+        "text": "Three singlets, one per proton",
+        "why": "Equivalent protons give a single peak together. There is one peak, and with n = 0 it is a singlet."
+      },
+      {
+        "text": "One peak, a triplet",
+        "why": "A triplet needs two equivalent neighbors. These protons are coupled to none, so n = 0 and the peak is a singlet."
+      }
+    ],
+    "explanation": "H_a, H_b and H_c are equivalent, so there is one peak. They are coupled to no hydrogen nuclei, so n = 0 and n + 1 = 1: the peak has one line, a singlet."
+  },
+  {
+    "id": "pc14-n-plus-1-triplet-ha",
+    "type": "multiple-choice",
+    "prompt": "In the section's second example, H_a has two vicinal (neighboring) protons, H_b and H_c, which are equivalent to each other but not to H_a. What is the peak of H_a?",
+    "choices": [
+      {
+        "text": "A triplet",
+        "correct": true
+      },
+      {
+        "text": "A doublet",
+        "why": "A doublet means n = 1. H_a has two equivalent neighbors, so n = 2 and n + 1 = 3."
+      },
+      {
+        "text": "A doublet of doublets",
+        "why": "That pattern needs two non-equivalent neighbors with different couplings. H_b and H_c are equivalent, so they act as one set with n = 2: a triplet."
+      },
+      {
+        "text": "A quartet",
+        "why": "A quartet needs three equivalent neighbors. H_a has two, so n + 1 = 3: a triplet."
+      }
+    ],
+    "explanation": "H_b and H_c form one set of n = 2 equivalent neighbors, so H_a's peak has n + 1 = 3 lines. From Pascal's triangle it is a triplet."
+  },
+  {
+    "id": "pc14-n-plus-1-doublet-hb-hc",
+    "type": "multiple-choice",
+    "prompt": "In the section's second example, H_b and H_c are equivalent to each other, and each has just one vicinal (neighboring) proton, H_a, which is not equivalent to them. What is the peak of H_b and H_c?",
+    "choices": [
+      {
+        "text": "A doublet",
+        "correct": true
+      },
+      {
+        "text": "A triplet",
+        "why": "That would count H_b and H_c as neighbors of each other. They are equivalent, so they don't split each other; only H_a counts, giving n = 1."
+      },
+      {
+        "text": "A singlet",
+        "why": "H_a is not equivalent to H_b and H_c, so it does split their peak. With n = 1, the peak has two lines."
+      },
+      {
+        "text": "A quartet",
+        "why": "A quartet needs three equivalent neighbors. H_b and H_c have only H_a, so n + 1 = 2."
+      }
+    ],
+    "explanation": "For H_b and H_c, the only neighbor that counts is H_a, so n = 1 and n + 1 = 2. Their shared peak is a doublet."
+  },
+  {
+    "id": "pc14-n-plus-1-several-sets",
+    "type": "multiple-choice",
+    "prompt": "How does the section find the multiplicity of a peak whose nucleus is coupled to more than one set of equivalent nuclei?",
+    "choices": [
+      {
+        "text": "Apply n + 1 to each set and multiply",
+        "correct": true
+      },
+      {
+        "text": "Add all the neighbors into one n",
+        "why": "That treats non-equivalent neighbors as one set. The section applies the rule to each set separately, as in 2 × 2 = 4 for an alkenyl proton."
+      },
+      {
+        "text": "Use only the set with the most nuclei",
+        "why": "Every set that is coupled splits the peak. The rule is applied to each set independently and the results are multiplied."
+      },
+      {
+        "text": "Use only the nearest set of nuclei",
+        "why": "All the coupled sets count. The rule is applied to each set independently, and the multiplicities are multiplied."
+      }
+    ],
+    "explanation": "The section applies the n + 1 rule independently to each set of equivalent nuclei. In its third example each alkenyl proton is coupled to two single protons, so its multiplicity is 2 × 2 = 4."
+  },
+  {
+    "id": "pc14-n-plus-1-hc-pattern",
+    "type": "multiple-choice",
+    "prompt": "In the section's third example, the molecule's only hydrogens are three alkenyl protons. H_c is coupled to H_a (cis to it) and to H_b (trans to it), and no two of the three are equivalent. What is the peak of H_c?",
+    "choices": [
+      {
+        "text": "A doublet of doublets",
+        "correct": true
+      },
+      {
+        "text": "A triplet with 1:2:1 heights",
+        "why": "A triplet would need H_a and H_b to act as one set of two equivalent neighbors. They aren't equivalent and couple with different J, so each splits H_c separately."
+      },
+      {
+        "text": "A single doublet",
+        "why": "Both H_a and H_b split H_c, not just one. One doublet split again into doublets gives 2 × 2 = 4 lines."
+      },
+      {
+        "text": "A singlet",
+        "why": "H_a and H_b are not equivalent to H_c, so they do split its peak. Each splits it into a doublet: a doublet of doublets."
+      }
+    ],
+    "explanation": "H_b splits H_c into a doublet (the larger J_trans), and H_a splits each of those lines again (the smaller J_cis). The multiplicity is 2 × 2 = 4: a doublet of doublets."
+  },
+  {
+    "id": "pc14-n-plus-1-j-order",
+    "type": "multiple-choice",
+    "prompt": "For the alkenyl hydrogens in its third example, the section notes that J_cis > J_gem, J_trans > J_gem and J_trans > J_cis. Which ordering agrees with all three?",
+    "choices": [
+      {
+        "text": "J_trans > J_cis > J_gem",
+        "correct": true
+      },
+      {
+        "text": "J_cis > J_trans > J_gem",
+        "why": "This breaks J_trans > J_cis. The trans coupling is the largest of the three."
+      },
+      {
+        "text": "J_trans > J_gem > J_cis",
+        "why": "This breaks J_cis > J_gem. The geminal coupling is the smallest."
+      },
+      {
+        "text": "J_gem > J_cis > J_trans",
+        "why": "This reverses the order. The geminal coupling is the smallest and the trans coupling the largest."
+      }
+    ],
+    "explanation": "Trans beats both others and cis beats geminal, so J_trans > J_cis > J_gem. These orderings tell you which splitting to draw wider in each doublet of doublets."
+  },
+  {
+    "id": "pc14-n-plus-1-wider-split-ha",
+    "type": "multiple-choice",
+    "prompt": "In the section's third example, the alkenyl proton H_a is cis to H_c and geminal to H_b, and J_cis > J_gem. In H_a's doublet of doublets, which coupling gives the wider splitting?",
+    "choices": [
+      {
+        "text": "The cis coupling to H_c",
+        "correct": true
+      },
+      {
+        "text": "The geminal coupling to H_b",
+        "why": "J_gem is the smaller of the two, so it gives the narrower splitting within each half of the pattern."
+      },
+      {
+        "text": "Neither; both splittings are equal",
+        "why": "If they were equal, the middle lines would merge into a 1:2:1 triplet. Here J_cis > J_gem, so the cis splitting is wider."
+      },
+      {
+        "text": "The trans coupling to H_c",
+        "why": "H_a and H_c are cis, not trans. H_a's larger splitting comes from its cis coupling to H_c."
+      }
+    ],
+    "explanation": "Since J_cis > J_gem, H_a's peak is split widely by H_c (cis), and each line is split again, more narrowly, by H_b (geminal). The result is a doublet of doublets."
+  },
+  {
+    "id": "pc14-n-plus-1-example-2-peaks",
+    "type": "numeric",
+    "prompt": "In the section's second example, a molecule's only hydrogens are H_a, H_b and H_c, and H_b and H_c are equivalent to each other but not to H_a. How many peaks does its ^1H NMR spectrum have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "There are two sets of equivalent hydrogen nuclei: H_a alone, and H_b with H_c. Each set gives one peak, so there are 2: a triplet for H_a and a doublet for H_b and H_c."
+  },
+  {
+    "id": "pc14-n-plus-1-two-sets-product",
+    "type": "numeric",
+    "prompt": "A proton is coupled to a set of two equivalent protons and, with a different J, to one other proton. Applying the n + 1 rule independently to each set and multiplying, how many lines does its peak have?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "(2 + 1) × (1 + 1) = 3 × 2 = 6 lines. Because the J values differ, the three neighbors can't be lumped into one set with n = 3, which would give a quartet."
+  },
+  {
+    "id": "pc14-n-plus-1-pascal-septet",
+    "type": "numeric",
+    "prompt": "In Pascal's triangle, each entry is the sum of the two entries above it. The row for n = 5 equivalent neighbors is 1:5:10:10:5:1. For n = 6, what is the relative height of the center line?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "The next row is 1:6:15:20:15:6:1, and its center entry is 10 + 10 = 20. With n = 6 neighbors the peak has n + 1 = 7 lines, a septet."
+  },
+  {
+    "id": "pc14-n-plus-1-vinyl-total-lines",
+    "type": "numeric",
+    "prompt": "In the section's third example, the molecule's only hydrogens are three alkenyl protons, no two of them equivalent, and each one's peak is a doublet of doublets. If no lines overlap, how many lines does its whole ^1H NMR spectrum have?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "No two protons are equivalent, so there are 3 peaks. Each doublet of doublets has 2 × 2 = 4 lines, so the spectrum has 3 × 4 = 12 lines."
+  }
+]

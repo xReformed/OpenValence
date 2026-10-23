@@ -1,0 +1,577 @@
+[
+  {
+    "id": "pc6-quantum-numbers-how-many",
+    "type": "multiple-choice",
+    "prompt": "How many quantum numbers does a hydrogen atom wavefunction ψ(r, θ, φ) depend on?",
+    "choices": [
+      {
+        "text": "Three: n, l and m_l",
+        "correct": true
+      },
+      {
+        "text": "One: n, as in the Bohr model",
+        "why": "The energy depends only on n, but the wavefunction also depends on l and m_l, which set the angular momentum and its z component."
+      },
+      {
+        "text": "Two: n and l",
+        "why": "n and l label the radial function, but the spherical harmonic also depends on m_l. The full wavefunction needs all three."
+      },
+      {
+        "text": "Four: n, l, m_l and Z",
+        "why": "Z is the atomic number of the nucleus, not a quantum number; it is 1 for hydrogen. The quantum numbers are n, l and m_l."
+      }
+    ],
+    "explanation": "The wavefunctions depend on three variables, r, θ and φ, and on three quantum numbers, n, l and m_l. That is the point of the section's title: hydrogen atomic orbitals depend upon three quantum numbers."
+  },
+  {
+    "id": "pc6-quantum-numbers-n-name",
+    "type": "multiple-choice",
+    "prompt": "What is the quantum number n called?",
+    "choices": [
+      {
+        "text": "The principal quantum number",
+        "correct": true
+      },
+      {
+        "text": "The magnetic quantum number",
+        "why": "That is the name for m_l, because the energy in a magnetic field depends on m_l."
+      },
+      {
+        "text": "The angular momentum quantum number",
+        "why": "That is l, which fixes the magnitude of the angular momentum. n is the principal quantum number."
+      },
+      {
+        "text": "The azimuthal quantum number",
+        "why": "That is another name often used for l, not for n. n is the principal quantum number."
+      }
+    ],
+    "explanation": "n is the principal quantum number, l is the angular momentum quantum number (often called the azimuthal quantum number), and m_l is the magnetic quantum number. n fixes the energy of a hydrogen atom state."
+  },
+  {
+    "id": "pc6-quantum-numbers-l-other-name",
+    "type": "multiple-choice",
+    "prompt": "The angular momentum quantum number l is often called by another name. Which one?",
+    "choices": [
+      {
+        "text": "The azimuthal quantum number",
+        "correct": true
+      },
+      {
+        "text": "The principal quantum number",
+        "why": "That is n, which fixes the energy. l is the angular momentum, or azimuthal, quantum number."
+      },
+      {
+        "text": "The magnetic quantum number",
+        "why": "That is m_l, named because the energy in a magnetic field depends on it."
+      },
+      {
+        "text": "The radial quantum number",
+        "why": "The section uses no such name. l is called the angular momentum quantum number, or often the azimuthal quantum number."
+      }
+    ],
+    "explanation": "l is called the angular momentum quantum number, and often the azimuthal quantum number. n is the principal quantum number and m_l the magnetic quantum number."
+  },
+  {
+    "id": "pc6-quantum-numbers-allowed-n",
+    "type": "multiple-choice",
+    "prompt": "Which values can the principal quantum number n take?",
+    "choices": [
+      {
+        "text": "Any whole number greater than 0: 1, 2, 3, …",
+        "correct": true
+      },
+      {
+        "text": "Any whole number, including 0: 0, 1, 2, …",
+        "why": "n must be greater than 0. Since l can be 0 and n must be at least l + 1, the smallest n is 1."
+      },
+      {
+        "text": "Any positive number, including fractions",
+        "why": "n must be a whole number (an integer) greater than 0; the boundary conditions allow no fractions."
+      },
+      {
+        "text": "Whole numbers from −l to +l",
+        "why": "That is the range of m_l. n is an integer greater than 0, with no upper limit."
+      }
+    ],
+    "explanation": "The boundary conditions on the Schrödinger equation require n to be an integer greater than 0. Because n ≥ l + 1 and the smallest l is 0, the smallest n is 1."
+  },
+  {
+    "id": "pc6-quantum-numbers-allowed-l",
+    "type": "multiple-choice",
+    "prompt": "For a given value of n, which values can l take?",
+    "choices": [
+      {
+        "text": "0, 1, 2, … up to n − 1",
+        "correct": true
+      },
+      {
+        "text": "1, 2, 3, … up to n",
+        "why": "l starts at 0 (an s orbital), and its largest value is n − 1, not n."
+      },
+      {
+        "text": "0, 1, 2, … up to n",
+        "why": "l = n is not allowed: physically acceptable solutions need n ≥ l + 1, so l stops at n − 1."
+      },
+      {
+        "text": "−n, …, 0, …, +n in steps of 1",
+        "why": "l is never negative. It runs from 0 to n − 1; it is m_l that runs from −l to +l."
+      }
+    ],
+    "explanation": "l can have the values 0 to n − 1. For n = 3, for example, l = 0, 1 or 2, giving the 3s, 3p and 3d orbitals."
+  },
+  {
+    "id": "pc6-quantum-numbers-allowed-ml",
+    "type": "multiple-choice",
+    "prompt": "For a given value of l, which values can m_l take?",
+    "choices": [
+      {
+        "text": "Whole numbers from −l to +l",
+        "correct": true
+      },
+      {
+        "text": "Whole numbers from 0 to l",
+        "why": "m_l can also be negative. It runs from −l to +l in steps of 1."
+      },
+      {
+        "text": "Whole numbers from 0 to n − 1",
+        "why": "That is the range of l for a given n. m_l is limited by l and runs from −l to +l."
+      },
+      {
+        "text": "Whole numbers from −n to +n",
+        "why": "m_l is limited by l, not by n: it runs from −l to +l."
+      }
+    ],
+    "explanation": "m_l can have 2l + 1 values, ranging from −l to +l in integer steps. For l = 1, for example, m_l = −1, 0 or +1."
+  },
+  {
+    "id": "pc6-quantum-numbers-3d-label",
+    "type": "multiple-choice",
+    "prompt": "The notation 3d specifies an orbital of the hydrogen atom. What are its values of n and l?",
+    "choices": [
+      {
+        "text": "n = 3 and l = 2",
+        "correct": true
+      },
+      {
+        "text": "n = 3 and l = 3",
+        "why": "l = 3 is coded f, and it isn't allowed for n = 3 anyway, since l ≤ n − 1. The letter d means l = 2."
+      },
+      {
+        "text": "n = 2 and l = 3",
+        "why": "The number in the label is n, so n = 3. The letter d codes l = 2."
+      },
+      {
+        "text": "n = 3 and l = 1",
+        "why": "l = 1 is coded p. The letter d means l = 2."
+      }
+    ],
+    "explanation": "The number gives n and the letter gives l: s means 0, p means 1, d means 2 and f means 3. So 3d is n = 3, l = 2."
+  },
+  {
+    "id": "pc6-quantum-numbers-valid-set",
+    "type": "multiple-choice",
+    "prompt": "Which set of quantum numbers (n, l, m_l) is allowed for a hydrogen atom orbital?",
+    "choices": [
+      {
+        "text": "(3, 2, −2)",
+        "correct": true
+      },
+      {
+        "text": "(2, 2, 0)",
+        "why": "l can only go up to n − 1. For n = 2, l is 0 or 1, so l = 2 is not allowed."
+      },
+      {
+        "text": "(3, 1, 2)",
+        "why": "m_l runs from −l to +l. For l = 1, m_l can only be −1, 0 or +1."
+      },
+      {
+        "text": "(0, 0, 0)",
+        "why": "n must be an integer greater than 0, so n = 0 is not allowed."
+      }
+    ],
+    "explanation": "(3, 2, −2) obeys all three rules: n = 3 is greater than 0, l = 2 is at most n − 1 = 2, and m_l = −2 lies between −l and +l. It is one of the five 3d orbitals."
+  },
+  {
+    "id": "pc6-quantum-numbers-n-squared-origin",
+    "type": "multiple-choice",
+    "prompt": "The number of hydrogen orbitals with a given n is n^2. Where does this count come from?",
+    "choices": [
+      {
+        "text": "Each l from 0 to n − 1 has 2l + 1 orbitals, adding to n^2",
+        "correct": true
+      },
+      {
+        "text": "Each of the n values of l has n orbitals",
+        "why": "The number of orbitals for each l is 2l + 1, not n: for n = 2, l = 0 has 1 orbital and l = 1 has 3."
+      },
+      {
+        "text": "There are n values of l and n values of m_l, so n × n",
+        "why": "m_l runs from −l to +l, so the number of m_l values depends on l, not on n. The counts 2l + 1 add up to n^2."
+      },
+      {
+        "text": "Bohr's model puts n^2 orbits in each energy level",
+        "why": "Bohr's model has a single orbit for each n. The n^2 count comes from the allowed values of l and m_l."
+      }
+    ],
+    "explanation": "For a given n, l runs from 0 to n − 1, and each l has 2l + 1 values of m_l. The odd numbers 1 + 3 + 5 + … add up to n^2: for n = 3, 1 + 3 + 5 = 9."
+  },
+  {
+    "id": "pc6-quantum-numbers-same-n-energy",
+    "type": "multiple-choice",
+    "prompt": "In the hydrogen atom, how do the energies of the 3s, 3p and 3d orbitals compare?",
+    "choices": [
+      {
+        "text": "They are equal, since the energy depends only on n",
+        "correct": true
+      },
+      {
+        "text": "3s < 3p < 3d, since the energy rises with l",
+        "why": "In hydrogen the energy, E_n = −(μe^4)/(8ε_0^2h^2n^2), contains n but not l. All n = 3 orbitals have the same energy."
+      },
+      {
+        "text": "3d < 3p < 3s, since angular momentum lowers the energy",
+        "why": "l does not appear in the hydrogen energy expression. All orbitals with the same n have the same energy."
+      },
+      {
+        "text": "They differ, since each has a different set of m_l values",
+        "why": "m_l affects the energy only in a magnetic field. Without one, the hydrogen energy depends only on n."
+      }
+    ],
+    "explanation": "The discrete energies of hydrogen are given by n alone: E_n = −(μe^4)/(8ε_0^2h^2n^2). So all n^2 = 9 orbitals with n = 3 (one 3s, three 3p and five 3d) have the same energy."
+  },
+  {
+    "id": "pc6-quantum-numbers-radial-decay-infinity",
+    "type": "multiple-choice",
+    "prompt": "Far from the nucleus, the radial function behaves as R_asymptotic(r) ∼ exp(−r/(na_0)). What happens to it as r approaches infinity, and why is that expected?",
+    "choices": [
+      {
+        "text": "It goes to zero; the electron is unlikely to be very far away",
+        "correct": true
+      },
+      {
+        "text": "It grows without limit; the electron is likely to escape",
+        "why": "exp(−r/(na_0)) is a decaying exponential, so it shrinks as r grows. A bound electron is almost never found infinitely far away."
+      },
+      {
+        "text": "It levels off at a constant; the electron spreads out evenly",
+        "why": "A decaying exponential does not level off; it goes to zero. The chance of finding the electron at an infinite distance is almost zero."
+      },
+      {
+        "text": "It oscillates between + and −; the electron moves in and out",
+        "why": "exp(−r/(na_0)) is always positive and decreases steadily, with no oscillation. It goes to zero at large r."
+      }
+    ],
+    "explanation": "R_asymptotic(r) decays exponentially and goes to zero as r → ∞. That is expected: the likelihood of finding the electron an infinite distance from the proton is essentially zero."
+  },
+  {
+    "id": "pc6-quantum-numbers-decay-vs-n",
+    "type": "multiple-choice",
+    "prompt": "Far from the nucleus, R(r) ∼ exp(−r/(na_0)). How does a larger n change the way R(r) falls off with distance?",
+    "choices": [
+      {
+        "text": "It falls off more slowly, so the orbital reaches farther out",
+        "correct": true
+      },
+      {
+        "text": "It falls off faster, so the orbital stays closer in",
+        "why": "n is in the denominator of the exponent, so a larger n makes r/(na_0) smaller and the decay slower, not faster."
+      },
+      {
+        "text": "It makes no difference, since a_0 is a fixed constant",
+        "why": "a_0 is fixed, but n multiplies it in the exponent. A larger n makes the exponential decay more slowly."
+      },
+      {
+        "text": "It makes R(r) grow with distance instead of decaying",
+        "why": "The exponent stays negative for every n, so R(r) always decays at large r; a larger n only makes the decay slower."
+      }
+    ],
+    "explanation": "In exp(−r/(na_0)), the distance over which R(r) falls by a factor of e is na_0. A larger n makes that distance longer, so R(r) falls off more slowly and orbitals with higher n extend farther from the nucleus."
+  },
+  {
+    "id": "pc6-quantum-numbers-vs-oscillator",
+    "type": "multiple-choice",
+    "prompt": "The section compares R_asymptotic(r) ∼ exp(−r/(na_0)) with the decaying exponential in the harmonic oscillator wavefunctions. How do the two differ?",
+    "choices": [
+      {
+        "text": "Hydrogen's exponent goes as r; the oscillator's as distance squared",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen's exponent goes as r^2; the oscillator's goes as r",
+        "why": "That is reversed. The oscillator's exponent contains the distance squared; hydrogen's exponent is −r/(na_0)."
+      },
+      {
+        "text": "Hydrogen's exponential grows, while the oscillator's decays",
+        "why": "Both decay toward zero far away. They differ in how the exponent depends on distance: r for hydrogen, r^2 for the oscillator."
+      },
+      {
+        "text": "They are the same; both exponents go as the distance squared",
+        "why": "Hydrogen's exponent, −r/(na_0), is linear in r. Only the oscillator's goes as the square of the distance."
+      }
+    ],
+    "explanation": "Both functions decrease exponentially with distance, but with a different distance dependence: r in the hydrogen exponent and r^2 in the harmonic oscillator's."
+  },
+  {
+    "id": "pc6-quantum-numbers-exponential-wins",
+    "type": "multiple-choice",
+    "prompt": "The radial function R(r) is a polynomial in r, which grows as r increases, multiplied by exp(−r/(na_0)). Why does R(r) still approach zero at large r?",
+    "choices": [
+      {
+        "text": "The decreasing exponential overpowers the growing polynomial",
+        "correct": true
+      },
+      {
+        "text": "The polynomial's terms cancel one another at large r",
+        "why": "At large r the highest power of r dominates, so the polynomial keeps growing. It is the exponential factor that drives R(r) to zero."
+      },
+      {
+        "text": "The normalization factor N_(n, l) shrinks as r grows",
+        "why": "N_(n, l) is a constant; it doesn't depend on r. The decaying exponential overpowers the polynomial."
+      },
+      {
+        "text": "The spherical harmonic becomes zero at large r",
+        "why": "The spherical harmonic depends only on θ and φ, not on r. The decaying exponential is what makes R(r) go to zero."
+      }
+    ],
+    "explanation": "R(r) = N_(n, l)(r/a_0)^(l) L_(n, l)(r) exp(−r/(na_0)). The decreasing exponential term overpowers the increasing polynomial term, so the wavefunction approaches zero at large r, as it must."
+  },
+  {
+    "id": "pc6-quantum-numbers-laguerre",
+    "type": "multiple-choice",
+    "prompt": "The polynomials in the hydrogen radial functions come from truncating a power series. Which polynomials are they related to?",
+    "choices": [
+      {
+        "text": "Associated Laguerre polynomials",
+        "correct": true
+      },
+      {
+        "text": "Hermite polynomials",
+        "why": "Hermite polynomials appear in the harmonic oscillator wavefunctions. The hydrogen radial polynomials are related to the associated Laguerre polynomials."
+      },
+      {
+        "text": "Legendre polynomials",
+        "why": "Legendre polynomials belong to the angular part, not the radial part. The radial polynomials are related to the associated Laguerre polynomials."
+      },
+      {
+        "text": "Polynomials in the angle φ",
+        "why": "The radial polynomials depend on r only. They are related to the associated Laguerre polynomials, L_(n, l)(r)."
+      }
+    ],
+    "explanation": "Truncating the power series gives polynomials related to the associated Laguerre polynomials, L_(n, l)(r). They carry two indices, n and l, and multiply the decaying exponential in R(r)."
+  },
+  {
+    "id": "pc6-quantum-numbers-energy-constraint",
+    "type": "multiple-choice",
+    "prompt": "Physically acceptable radial solutions require n ≥ l + 1. What does this constraint also do to the energy of the hydrogen atom?",
+    "choices": [
+      {
+        "text": "It quantizes it into the Bohr model's levels",
+        "correct": true
+      },
+      {
+        "text": "It lets the energy take any negative value",
+        "why": "The constraint makes the energy discrete: E_n = −(μe^4)/(8ε_0^2h^2n^2) allows only certain values."
+      },
+      {
+        "text": "It makes the energy depend on l as well as n",
+        "why": "The resulting energy expression contains only n, as Bohr's did. States with the same n but different l have the same energy."
+      },
+      {
+        "text": "It makes the ground-state energy exactly zero",
+        "why": "The ground state, n = 1, has the lowest, most negative energy, not zero. The constraint quantizes the energy into Bohr's levels."
+      }
+    ],
+    "explanation": "The constraint n ≥ l + 1 quantizes the energy, producing E_n = −(μe^4)/(8ε_0^2h^2n^2), the same expression for the hydrogen energy levels that the Bohr model gave."
+  },
+  {
+    "id": "pc6-quantum-numbers-z-in-table",
+    "type": "multiple-choice",
+    "prompt": "Table 6.4.3 writes the radial functions with Z, the atomic number of the nucleus, even though Z = 1 for hydrogen. Why?",
+    "choices": [
+      {
+        "text": "So the same functions fit any one-electron atom or ion",
+        "correct": true
+      },
+      {
+        "text": "Because Z is a fourth quantum number of the hydrogen atom",
+        "why": "Z is the nuclear charge, not a quantum number. Including it lets the same functions describe He^+, Li^2+ and other one-electron systems."
+      },
+      {
+        "text": "To account for the extra electrons in heavier atoms",
+        "why": "These functions are for systems with one electron. Z lets them describe one-electron ions such as He^+, not many-electron atoms."
+      },
+      {
+        "text": "Because Z changes as the electron moves away from the nucleus",
+        "why": "Z is a fixed property of the nucleus. It is included so the functions work for every one-electron system."
+      }
+    ],
+    "explanation": "Other one-electron systems have states like those of hydrogen. Including the nuclear charge Z, through ρ = Zr/a_0, lets the same wavefunctions be used for all one-electron atoms and ions; for hydrogen, Z = 1."
+  },
+  {
+    "id": "pc6-quantum-numbers-orthogonal-states",
+    "type": "multiple-choice",
+    "prompt": "Exercise 6.4.1 shows that the hydrogen wavefunctions are normalized and orthogonal. What is ⟨ψ_(2, 1, 1)|ψ_(2, 1, −1)⟩, for two 2p states that differ only in m_l?",
+    "choices": [
+      {
+        "text": "0, since different states are orthogonal",
+        "correct": true
+      },
+      {
+        "text": "1, since both states are normalized",
+        "why": "Normalization gives 1 for a state with itself, ⟨ψ|ψ⟩ = 1. Two different states give 0."
+      },
+      {
+        "text": "1, since they have the same n and l",
+        "why": "Sharing n and l isn't enough: the m_l values differ, so the integral is 0."
+      },
+      {
+        "text": "−1, since their m_l values have opposite signs",
+        "why": "The overlap of two different eigenstates is 0, whatever the signs of m_l. Only a state with itself gives 1."
+      }
+    ],
+    "explanation": "The integral equals δ_nn' δ_ll' δ_mm': it is 1 when all three quantum numbers match and 0 otherwise. Here m_l = 1 and m_l = −1 differ, so the two states are orthogonal and the integral is 0."
+  },
+  {
+    "id": "pc6-quantum-numbers-no-orbits",
+    "type": "multiple-choice",
+    "prompt": "What is one way the Schrödinger model of the hydrogen atom differs from Bohr's model?",
+    "choices": [
+      {
+        "text": "It has no definite orbits, only probabilities",
+        "correct": true
+      },
+      {
+        "text": "It predicts different energy levels from Bohr's",
+        "why": "Both models give the same quantized energies. The difference is that the Schrödinger model has no well-defined orbits."
+      },
+      {
+        "text": "It quantizes angular momentum in whole-number units of ħ",
+        "why": "That was Bohr's proposal. The Schrödinger model gives |L| = ħ√(l(l + 1)) instead."
+      },
+      {
+        "text": "It still has to postulate quantized energy states",
+        "why": "Bohr had to postulate them; in the Schrödinger model the quantum numbers appear naturally while solving the equation."
+      }
+    ],
+    "explanation": "Most strikingly, the Schrödinger model does not produce well-defined orbits for the electron. Its wavefunctions only give the probability for the electron to be at various directions and distances from the proton."
+  },
+  {
+    "id": "pc6-quantum-numbers-arise-naturally",
+    "type": "multiple-choice",
+    "prompt": "How do the quantum numbers arise in the Schrödinger model of hydrogen, compared with Bohr's model?",
+    "choices": [
+      {
+        "text": "They come from solving the equation; Bohr postulated his",
+        "correct": true
+      },
+      {
+        "text": "Both models simply postulate quantized energy states",
+        "why": "Only Bohr had to postulate quantized states. In the Schrödinger model the quantum numbers appear naturally in the solution."
+      },
+      {
+        "text": "They are fitted to the measured hydrogen spectrum",
+        "why": "They are not fitted to data. They follow from the boundary conditions imposed on the Schrödinger equation."
+      },
+      {
+        "text": "They come from Bohr's rule m_e vr = nħ, added to the equation",
+        "why": "No extra rule is added. The quantum numbers appear naturally from the boundary conditions when the equation is solved."
+      }
+    ],
+    "explanation": "In the Schrödinger model the quantum numbers appear naturally during the solution, with their allowed values dictated by the boundary conditions. Bohr had to postulate the existence of quantized energy states."
+  },
+  {
+    "id": "pc6-quantum-numbers-better-agreement",
+    "type": "multiple-choice",
+    "prompt": "The Schrödinger model of hydrogen is more complex than Bohr's model. What does it gain in return?",
+    "choices": [
+      {
+        "text": "A better match with experiment",
+        "correct": true
+      },
+      {
+        "text": "Simpler formulas for the energy levels",
+        "why": "Both models give the same energy expression. The gain is a better match between theory and experiment over a wider range of uses."
+      },
+      {
+        "text": "Exact circular orbits for the electron",
+        "why": "The Schrödinger model gives no well-defined orbits, only probabilities. Its advantage is better agreement with experiment."
+      },
+      {
+        "text": "Energies that no longer depend on n",
+        "why": "The energies still depend on n, just as in Bohr's model. The gain is a better correspondence between theory and experiment."
+      }
+    ],
+    "explanation": "Although more complex, the Schrödinger model leads to a better correspondence between theory and experiment, over a range of applications that was not possible for the Bohr model."
+  },
+  {
+    "id": "pc6-quantum-numbers-s-state-vs-bohr",
+    "type": "multiple-choice",
+    "prompt": "The Schrödinger model allows states with zero angular momentum, those with l = 0. Why does this contradict Bohr's picture of the hydrogen atom?",
+    "choices": [
+      {
+        "text": "An electron circling the proton must have angular momentum",
+        "correct": true
+      },
+      {
+        "text": "Bohr's model says the energy would then be zero",
+        "why": "Bohr's energies are negative and set by n. The clash is about motion: an orbiting electron always has angular momentum, at least ħ in Bohr's model."
+      },
+      {
+        "text": "Zero angular momentum would mean an infinite energy",
+        "why": "Neither model links zero angular momentum with infinite energy. The clash is that an orbiting electron must have angular momentum."
+      },
+      {
+        "text": "In Bohr's model the electron has no angular momentum",
+        "why": "It's the other way round: Bohr's electron always has angular momentum nħ, at least ħ. A state with zero angular momentum can't be an orbit."
+      }
+    ],
+    "explanation": "|L| = ħ√(l(l + 1)) is zero for l = 0, so an s electron has no angular momentum. Bohr pictured the electron orbiting the proton, and an orbiting electron always has angular momentum: at least ħ in his model, since m_e vr = nħ with n ≥ 1."
+  },
+  {
+    "id": "pc6-quantum-numbers-degeneracy-e5",
+    "type": "numeric",
+    "prompt": "In hydrogen, the energy depends only on n, and n^2 orbitals share each energy level E_n. How many orbitals have the energy E_5?",
+    "answer": 25,
+    "tolerance": 0,
+    "explanation": "n^2 = 5^2 = 25. Counting them: l = 0, 1, 2, 3 and 4 give 1 + 3 + 5 + 7 + 9 = 25 orbitals (5s, 5p, 5d, 5f and 5g), all with the same energy."
+  },
+  {
+    "id": "pc6-quantum-numbers-3d-ml-count",
+    "type": "numeric",
+    "prompt": "m_l can have 2l + 1 values, from −l to +l. For an electron in a 3d orbital, how many values can m_l take?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "d means l = 2, so 2l + 1 = 2 × 2 + 1 = 5: m_l = −2, −1, 0, +1 or +2. Each value gives a different orientation of the angular momentum vector."
+  },
+  {
+    "id": "pc6-quantum-numbers-g-letter",
+    "type": "numeric",
+    "prompt": "Values of l are coded by letters: s means 0, p means 1, d means 2, f means 3, and the codes continue alphabetically after that. What value of l does the letter g stand for?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The codes run s = 0, p = 1, d = 2, f = 3 and then continue alphabetically. g is the next letter after f, so g means l = 4."
+  },
+  {
+    "id": "pc6-quantum-numbers-polynomial-power",
+    "type": "numeric",
+    "prompt": "The radial function contains a polynomial in r whose highest power is r^(n − l − 1). What is that highest power for n = 3 and l = 0?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "n − l − 1 = 3 − 0 − 1 = 2. You can see it in Table 6.4.3: R_(3, 0) contains the polynomial (27 − 18ρ + 2ρ^2), whose highest power is ρ^2."
+  },
+  {
+    "id": "pc6-quantum-numbers-3d-magnitude",
+    "type": "numeric",
+    "prompt": "Bohr proposed angular momentum in whole-number units of ħ, but the Schrödinger model gives |L| = ħ√(l(l + 1)). For a 3d electron, |L| is a number times ħ. What is the number? (Give it as a decimal.)",
+    "answer": 2.449,
+    "explanation": "A 3d electron has l = 2, so |L| = ħ√(2 × 3) = √6 ħ ≈ 2.45ħ. Unlike Bohr's angular momentum, that is not a whole-number multiple of ħ."
+  },
+  {
+    "id": "pc6-quantum-numbers-decay-length-n3",
+    "type": "numeric",
+    "prompt": "Far from the nucleus, R(r) ∼ exp(−r/(na_0)), so R(r) falls by a factor of e each time r increases by na_0. With a_0 = 52.9 pm, what is this distance na_0 for n = 3, in pm?",
+    "answer": 158.7,
+    "unit": "pm",
+    "explanation": "na_0 = 3 × 52.9 pm = 158.7 pm. For n = 1 it is only 52.9 pm, so the n = 3 function stretches three times as far from the nucleus before falling by the same factor."
+  }
+]

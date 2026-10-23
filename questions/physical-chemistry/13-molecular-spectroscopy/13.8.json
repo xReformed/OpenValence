@@ -1,0 +1,582 @@
+[
+  {
+    "id": "pc13-polyatomic-rot-inertia-distance",
+    "type": "multiple-choice",
+    "prompt": "In the moment of inertia I = Σ_i m_i R_i^2, what is R_i?",
+    "choices": [
+      {
+        "text": "The distance of atom i from the center of mass",
+        "correct": true
+      },
+      {
+        "text": "The length of the bond that atom i forms",
+        "why": "R_i is not a bond length. It is measured from the molecule's center of mass, so every atom's distance from that point counts."
+      },
+      {
+        "text": "The radius of atom i itself",
+        "why": "The size of the atom plays no part. R_i is how far atom i sits from the center of mass."
+      },
+      {
+        "text": "The distance of atom i from the molecule's heaviest atom",
+        "why": "The reference point is the center of mass, which in general is not at any one atom."
+      }
+    ],
+    "explanation": "The section writes I = Σ_i m_i R_i^2, where m_i is the mass of atom i and R_i its distance from the center of mass. For a diatomic molecule this sum is the μR^2 that appears in E_J."
+  },
+  {
+    "id": "pc13-polyatomic-rot-several-moments",
+    "type": "multiple-choice",
+    "prompt": "How does describing the rotation of a polyatomic molecule differ from describing that of a diatomic molecule?",
+    "choices": [
+      {
+        "text": "It needs several moments of inertia, in a 3 × 3 tensor",
+        "correct": true
+      },
+      {
+        "text": "It needs only one moment of inertia, μR^2, as a diatomic does",
+        "why": "μR^2 works for a diatomic. A polyatomic molecule rotating in three dimensions needs several moments of inertia, collected in a 3 × 3 inertia tensor."
+      },
+      {
+        "text": "It needs one moment of inertia for each atom",
+        "why": "Moments of inertia belong to axes, not atoms, and each one sums over all the atoms. A polyatomic molecule needs a 3 × 3 tensor of them."
+      },
+      {
+        "text": "It adds a potential energy for hindered rotation",
+        "why": "The molecule still rotates freely, with only kinetic energy. What changes is that several moments of inertia are needed, in a 3 × 3 tensor."
+      }
+    ],
+    "explanation": "A diatomic molecule needs a single moment of inertia. The rotations of a polyatomic molecule in three dimensions are characterized by several moments of inertia, typically collected in a 3 × 3 inertia tensor with components such as I_xx and I_xy."
+  },
+  {
+    "id": "pc13-polyatomic-rot-tensor-symmetric",
+    "type": "multiple-choice",
+    "prompt": "The off-diagonal components of the inertia tensor include I_xy = −Σ_k m_k x_k y_k. How is I_yx related to I_xy?",
+    "choices": [
+      {
+        "text": "They are equal",
+        "correct": true
+      },
+      {
+        "text": "I_yx = −I_xy",
+        "why": "Swapping x and y doesn't change the product x_k y_k, so the sum and its sign stay the same: I_yx = I_xy."
+      },
+      {
+        "text": "I_yx is always zero",
+        "why": "I_yx is the same sum as I_xy, so it is zero only when I_xy is. The section writes I_yx = I_xy."
+      },
+      {
+        "text": "I_yx equals I_xx",
+        "why": "I_xx = Σ_k m_k(y_k^2 + z_k^2) is a diagonal component and a different sum. I_yx equals I_xy, since x_k y_k = y_k x_k."
+      }
+    ],
+    "explanation": "The section writes I_yx = I_xy = −Σ_k m_k x_k y_k, and likewise I_zx = I_xz and I_zy = I_yz. The inertia tensor is symmetric because x_k y_k = y_k x_k."
+  },
+  {
+    "id": "pc13-polyatomic-rot-izz-sum",
+    "type": "multiple-choice",
+    "prompt": "Which sum gives the inertia tensor component I_zz?",
+    "choices": [
+      {
+        "text": "Σ_k m_k(x_k^2 + y_k^2)",
+        "correct": true
+      },
+      {
+        "text": "Σ_k m_k z_k^2",
+        "why": "I_zz is the moment about the z axis, so it uses each atom's distance from that axis, x_k^2 + y_k^2, not its z coordinate."
+      },
+      {
+        "text": "Σ_k m_k(x_k^2 + y_k^2 + z_k^2)",
+        "why": "That uses the squared distance from the origin. Turning about the z axis depends only on the distance from the axis, so z_k^2 is left out."
+      },
+      {
+        "text": "−Σ_k m_k x_k y_k",
+        "why": "That is the off-diagonal component I_xy. The diagonal component I_zz is Σ_k m_k(x_k^2 + y_k^2)."
+      }
+    ],
+    "explanation": "I_zz = Σ_k m_k(x_k^2 + y_k^2), where x_k^2 + y_k^2 is the squared distance of atom k from the z axis. I_xx and I_yy follow the same pattern with (y, z) and (x, z)."
+  },
+  {
+    "id": "pc13-polyatomic-rot-largest-moment",
+    "type": "multiple-choice",
+    "prompt": "The principal moments of inertia are labeled so that I_a < I_b < I_c. About which axis is the moment of inertia largest?",
+    "choices": [
+      {
+        "text": "The c axis",
+        "correct": true
+      },
+      {
+        "text": "The a axis",
+        "why": "I_a is the smallest of the three. The labels are assigned so that I_c is the largest."
+      },
+      {
+        "text": "The b axis",
+        "why": "I_b is the middle value. The labels are assigned so that I_c is the largest."
+      },
+      {
+        "text": "The lab-fixed Z axis",
+        "why": "a, b and c are axes fixed in the molecule, not in the lab. The largest principal moment is I_c, about the c axis."
+      }
+    ],
+    "explanation": "The molecule-fixed axes are labeled a, b and c in order of increasing moment of inertia, I_a < I_b < I_c, so I_c is always the largest principal moment."
+  },
+  {
+    "id": "pc13-polyatomic-rot-body-frame",
+    "type": "multiple-choice",
+    "prompt": "Measured in the molecule-fixed principal axes a, b and c, what form does the inertia matrix take?",
+    "choices": [
+      {
+        "text": "Diagonal: only I_a, I_b and I_c remain",
+        "correct": true
+      },
+      {
+        "text": "All nine of its entries become equal",
+        "why": "The entries don't become equal. In the principal axes the off-diagonal entries vanish, and only I_a, I_b and I_c remain on the diagonal."
+      },
+      {
+        "text": "It shrinks to a smaller 2 × 2 matrix",
+        "why": "It stays 3 × 3, since the molecule rotates in three dimensions. In the principal axes it is diagonal, with I_a, I_b and I_c."
+      },
+      {
+        "text": "Its three diagonal entries become zero",
+        "why": "It's the other way round: the off-diagonal entries become zero, leaving I_a, I_b and I_c on the diagonal."
+      }
+    ],
+    "explanation": "In the body frame the inertia matrix is a constant real symmetric matrix, which can be brought to diagonal form. Its diagonal entries are the principal moments I_a, I_b and I_c."
+  },
+  {
+    "id": "pc13-polyatomic-rot-euler-angles",
+    "type": "multiple-choice",
+    "prompt": "For a rotating rigid polyatomic molecule, what do the three Euler angles θ, φ and χ specify?",
+    "choices": [
+      {
+        "text": "The molecule's orientation relative to lab-fixed axes",
+        "correct": true
+      },
+      {
+        "text": "The bond angles inside the molecule",
+        "why": "The molecule is rigid, so its bond angles don't change. The Euler angles say how the whole molecule is turned relative to a laboratory-fixed coordinate system."
+      },
+      {
+        "text": "The angular speeds about the a, b and c axes",
+        "why": "They are angles, not speeds. Together they fix the orientation of the rigid molecule relative to the laboratory axes."
+      },
+      {
+        "text": "The positions of the atoms relative to the center of mass",
+        "why": "Those are fixed in a rigid molecule. The Euler angles fix the orientation of the molecule as a whole relative to the lab."
+      }
+    ],
+    "explanation": "θ, φ and χ are the Euler angles needed to specify the orientation of the rigid molecule relative to a laboratory-fixed coordinate system. The rotational wavefunctions |J, M, K⟩ are functions of these three angles."
+  },
+  {
+    "id": "pc13-polyatomic-rot-spherical-def",
+    "type": "multiple-choice",
+    "prompt": "What makes a molecule a spherical top?",
+    "choices": [
+      {
+        "text": "Its three principal moments of inertia are equal",
+        "correct": true
+      },
+      {
+        "text": "Two of its principal moments are equal and one differs",
+        "why": "That defines a symmetric top. In a spherical top all three principal moments of inertia are identical."
+      },
+      {
+        "text": "All three of its principal moments are different",
+        "why": "That defines an asymmetric top. In a spherical top all three principal moments of inertia are identical."
+      },
+      {
+        "text": "It has a single moment of inertia, μR^2",
+        "why": "That describes a diatomic molecule. A spherical top is a polyatomic molecule whose three principal moments of inertia are all the same."
+      }
+    ],
+    "explanation": "When I_a = I_b = I_c, the molecule is a spherical top. Because all three moments are the same, its rotational Hamiltonian simplifies to H_rot = J^2/(2I)."
+  },
+  {
+    "id": "pc13-polyatomic-rot-spherical-hrot",
+    "type": "multiple-choice",
+    "prompt": "Why can the rotational Hamiltonian of a spherical top be written H_rot = J^2/(2I)?",
+    "choices": [
+      {
+        "text": "Equal moments let J_a^2 + J_b^2 + J_c^2 become J^2",
+        "correct": true
+      },
+      {
+        "text": "Its J_a and J_b components are always equal to zero",
+        "why": "They aren't zero. With I_a = I_b = I_c = I, the three terms share one denominator, and J_a^2 + J_b^2 + J_c^2 = J^2."
+      },
+      {
+        "text": "A spherical top can only rotate about a single axis",
+        "why": "It can rotate about any axis. Because all three moments are equal, the three terms of H_rot add up to J^2/(2I)."
+      },
+      {
+        "text": "Its rotational kinetic energy is zero",
+        "why": "A spherical top does have rotational energy, J(J + 1)ħ^2/(2I). The simple form comes from the equal moments."
+      }
+    ],
+    "explanation": "In general H_rot = J_a^2/(2I_a) + J_b^2/(2I_b) + J_c^2/(2I_c). When I_a = I_b = I_c = I, the three terms share the denominator 2I, and J_a^2 + J_b^2 + J_c^2 = J^2, so H_rot = J^2/(2I)."
+  },
+  {
+    "id": "pc13-polyatomic-rot-spherical-k-m",
+    "type": "multiple-choice",
+    "prompt": "A spherical top's energy is E = J(J + 1)ħ^2/(2I). How does this energy depend on the quantum numbers K and M?",
+    "choices": [
+      {
+        "text": "It depends on neither",
+        "correct": true
+      },
+      {
+        "text": "It rises with K^2",
+        "why": "K doesn't appear in E = J(J + 1)ħ^2/(2I). A K^2 term appears only for symmetric tops, whose moments are not all equal."
+      },
+      {
+        "text": "It rises with M^2",
+        "why": "M doesn't appear in the formula either. Like a diatomic molecule's, a spherical top's energy depends on J alone."
+      },
+      {
+        "text": "It depends on K but not on M",
+        "why": "Neither K nor M appears in the formula. Every combination of K and M has the same energy for a given J."
+      }
+    ],
+    "explanation": "The spherical-top energy depends only on J. K runs from −J to J and so does M, giving 2J + 1 values of each, all with the same energy, so each level is (2J + 1)^2-fold degenerate."
+  },
+  {
+    "id": "pc13-polyatomic-rot-k-m-meaning",
+    "type": "multiple-choice",
+    "prompt": "The rotational states of a spherical top are written |J, M, K⟩. What do K and M measure?",
+    "choices": [
+      {
+        "text": "K: J along the molecule's a axis; M: J along the lab Z axis",
+        "correct": true
+      },
+      {
+        "text": "K: J along the lab Z axis; M: J along the molecule's a axis",
+        "why": "That swaps them. J_a|J, M, K⟩ = ħK|J, M, K⟩ uses the body-fixed a axis, and J_Z|J, M, K⟩ = ħM|J, M, K⟩ uses the lab-fixed Z axis."
+      },
+      {
+        "text": "K: the vibrational level; M: the rotational level",
+        "why": "Both are rotational quantum numbers. K gives the component of J along the molecule's a axis, and M its component along the lab Z axis."
+      },
+      {
+        "text": "K: the nuclear spin; M: the electron spin",
+        "why": "Neither is a spin. K and M give the components of the rotational angular momentum J along the body-fixed a axis and the lab-fixed Z axis."
+      }
+    ],
+    "explanation": "The states obey J_a|J, M, K⟩ = ħK|J, M, K⟩ and J_Z|J, M, K⟩ = ħM|J, M, K⟩. K is the projection of J on the molecule-fixed a axis, and M its projection on the lab-fixed Z axis; each runs from −J to J."
+  },
+  {
+    "id": "pc13-polyatomic-rot-classify-prolate",
+    "type": "multiple-choice",
+    "prompt": "A molecule's principal moments of inertia are I_a < I_b = I_c. Which kind of rotor is it?",
+    "choices": [
+      {
+        "text": "A prolate symmetric top",
+        "correct": true
+      },
+      {
+        "text": "An oblate symmetric top",
+        "why": "In an oblate top the unique axis has the larger moment (I_a = I_b < I_c). Here the unique axis, a, has the smaller moment, so the top is prolate."
+      },
+      {
+        "text": "A spherical top",
+        "why": "A spherical top has all three moments equal. Here I_a is smaller than the other two."
+      },
+      {
+        "text": "An asymmetric top",
+        "why": "An asymmetric top has three different moments. Here two are equal, so the molecule is a symmetric top."
+      }
+    ],
+    "explanation": "Two equal moments make a symmetric top. Here the unique axis, a, has the lower moment of inertia, so the molecule is a prolate (football-shaped) symmetric top."
+  },
+  {
+    "id": "pc13-polyatomic-rot-frisbee",
+    "type": "multiple-choice",
+    "prompt": "The section suggests picturing one kind of symmetric top as a frisbee. Which kind is it, and why?",
+    "choices": [
+      {
+        "text": "Oblate: its unique axis has the larger moment",
+        "correct": true
+      },
+      {
+        "text": "Prolate: its unique axis has the larger moment",
+        "why": "A larger moment on the unique axis defines an oblate top. Prolate tops, the footballs, have a smaller moment on the unique axis."
+      },
+      {
+        "text": "Oblate: its unique axis has the smaller moment",
+        "why": "A smaller moment on the unique axis makes a prolate top, the football. The frisbee is oblate because its unique axis has the larger moment."
+      },
+      {
+        "text": "Spherical: all three moments are equal",
+        "why": "A spherical top isn't a symmetric top, and a frisbee is clearly not the same in every direction. The frisbee is an oblate top."
+      }
+    ],
+    "explanation": "An oblate top's unique axis has a greater moment of inertia than the two equal ones; a prolate top's has a lower one. The section suggests thinking of frisbees for oblate tops and footballs for prolate tops."
+  },
+  {
+    "id": "pc13-polyatomic-rot-prolate-ja",
+    "type": "multiple-choice",
+    "prompt": "For a prolate top, H_rot = J^2/(2I) + J_a^2(1/(2I_a) − 1/(2I)). Why does J_a, not J_c, appear in the second term?",
+    "choices": [
+      {
+        "text": "The a axis is the unique axis of a prolate top",
+        "correct": true
+      },
+      {
+        "text": "The a axis has the largest moment of inertia",
+        "why": "The a axis has the smallest moment, since I_a < I_b < I_c. J_a appears because, for a prolate top, a is the unique axis."
+      },
+      {
+        "text": "J_c is always zero for a prolate top",
+        "why": "J_c isn't zero. With I_b = I_c = I, the b and c terms combine with the a term into J^2/(2I), leaving only a correction for the unique a axis."
+      },
+      {
+        "text": "J_a is the angular momentum along the lab Z axis",
+        "why": "J_a is measured along the molecule's a axis; the lab component is J_Z. J_a appears because a is the prolate top's unique axis."
+      }
+    ],
+    "explanation": "In a prolate top the unique axis is a, the one with the smallest moment, and I_b = I_c = I. Writing J_b^2 + J_c^2 = J^2 − J_a^2 turns H_rot into J^2/(2I) plus a correction for the a axis. For an oblate top the unique axis is c, and J_c^2 appears instead."
+  },
+  {
+    "id": "pc13-polyatomic-rot-prolate-k-rises",
+    "type": "multiple-choice",
+    "prompt": "For a prolate top, E = J(J + 1)ħ^2/(2I) + K^2ħ^2(1/(2I_a) − 1/(2I)), where I_a is smaller than I. At fixed J, what happens to the energy as |K| increases?",
+    "choices": [
+      {
+        "text": "It rises",
+        "correct": true
+      },
+      {
+        "text": "It falls",
+        "why": "Since I_a < I, 1/(2I_a) is larger than 1/(2I), so the K^2 term is positive. A larger |K| raises the energy."
+      },
+      {
+        "text": "It stays the same",
+        "why": "Unlike a spherical top's, a prolate top's energy has a K^2 term, so it does change with |K|. That term is positive here."
+      },
+      {
+        "text": "It rises for positive K and falls for negative K",
+        "why": "The energy depends on K^2, so K and −K give the same energy. Since I_a < I, it rises with |K| either way."
+      }
+    ],
+    "explanation": "Since I_a < I, the bracket 1/(2I_a) − 1/(2I) is positive, so the K^2 term adds energy. At fixed J, the levels climb as |K| grows."
+  },
+  {
+    "id": "pc13-polyatomic-rot-oblate-k-falls",
+    "type": "multiple-choice",
+    "prompt": "For an oblate top, E = J(J + 1)ħ^2/(2I) + K^2ħ^2(1/(2I_c) − 1/(2I)). At fixed J, the energy falls as |K| increases. Why?",
+    "choices": [
+      {
+        "text": "I_c is larger than I, so the bracket is negative",
+        "correct": true
+      },
+      {
+        "text": "I_c is smaller than I, so the bracket is negative",
+        "why": "If I_c were smaller than I, 1/(2I_c) would be the larger term and the bracket would be positive. For an oblate top I_c is the largest moment, which makes it negative."
+      },
+      {
+        "text": "K^2 is negative when K is negative",
+        "why": "K^2 is never negative. The sign comes from the bracket, which is negative because I_c > I."
+      },
+      {
+        "text": "J gets smaller as |K| increases",
+        "why": "J is fixed here; K only runs from −J to J. The energy falls because I_c > I makes 1/(2I_c) − 1/(2I) negative."
+      }
+    ],
+    "explanation": "In an oblate top the unique c axis has the greatest moment, so I_c > I and 1/(2I_c) < 1/(2I). The bracket is negative, so a larger K^2 lowers the energy."
+  },
+  {
+    "id": "pc13-polyatomic-rot-plus-minus-k",
+    "type": "multiple-choice",
+    "prompt": "Why do the symmetric-top levels with K and −K have the same energy?",
+    "choices": [
+      {
+        "text": "The energy depends on K only through K^2",
+        "correct": true
+      },
+      {
+        "text": "Only K = 0 is allowed for a symmetric top",
+        "why": "K runs from −J to J in unit steps. The energy contains K^2, so K and −K give the same value."
+      },
+      {
+        "text": "Negative values of K are not allowed",
+        "why": "Negative K values are allowed; K runs from −J to J. They match the positive values in energy because only K^2 appears."
+      },
+      {
+        "text": "The M quantum number cancels the sign of K",
+        "why": "M doesn't appear in the energy at all. K and −K match because the energy depends on K^2."
+      }
+    ],
+    "explanation": "The symmetric-top energy contains ħ^2K^2, so +K and −K give the same energy. Together with the 2J + 1 values of M, this makes each K ≠ 0 level 2(2J + 1)-fold degenerate."
+  },
+  {
+    "id": "pc13-polyatomic-rot-k-zero-degeneracy",
+    "type": "multiple-choice",
+    "prompt": "For a symmetric top, a K ≠ 0 level is 2(2J + 1)-fold degenerate, but a K = 0 level is only (2J + 1)-fold degenerate. Why?",
+    "choices": [
+      {
+        "text": "K = 0 has no separate partner −K",
+        "correct": true
+      },
+      {
+        "text": "K = 0 levels have no M values",
+        "why": "M still runs from −J to J for K = 0, which gives the 2J + 1 states. What's missing is a second K value, since −0 = 0."
+      },
+      {
+        "text": "K = 0 levels have twice as many M values",
+        "why": "Every level has the same 2J + 1 values of M. The K = 0 level is smaller because it has only one K value instead of the pair ±K."
+      },
+      {
+        "text": "K = 0 is not allowed for a symmetric top",
+        "why": "K = 0 is allowed, since K runs from −J to J. Its level is (2J + 1)-fold because K = 0 has no partner −K."
+      }
+    ],
+    "explanation": "A K ≠ 0 level holds both +K and −K, each with 2J + 1 values of M, giving 2(2J + 1) states. For K = 0 there is only one K value, so the level holds just the 2J + 1 states of M."
+  },
+  {
+    "id": "pc13-polyatomic-rot-asymmetric-no-formula",
+    "type": "multiple-choice",
+    "prompt": "Why can't the energies of an asymmetric top be written as a simple formula in J and K?",
+    "choices": [
+      {
+        "text": "The |J, M, K⟩ functions aren't its eigenfunctions",
+        "correct": true
+      },
+      {
+        "text": "An asymmetric top has no rotational energy at all",
+        "why": "It does rotate and has quantized levels. They just aren't given by a formula, because the |J, M, K⟩ functions aren't eigenfunctions of its H_rot."
+      },
+      {
+        "text": "Its angular momentum is not quantized",
+        "why": "J is still a good quantum number, since J^2 commutes with H_rot. The trouble is that the |J, M, K⟩ functions aren't eigenfunctions of H_rot."
+      },
+      {
+        "text": "It has only two rotational degrees of freedom",
+        "why": "Only a linear molecule has two. An asymmetric top has three different moments, and the |J, M, K⟩ functions aren't its eigenfunctions."
+      }
+    ],
+    "explanation": "With all three moments different, the |J, M, K⟩ functions are not eigenfunctions of H_rot. The energies have to be found by building the H_rot matrix in this basis and diagonalizing it."
+  },
+  {
+    "id": "pc13-polyatomic-rot-asymmetric-diagonalize",
+    "type": "multiple-choice",
+    "prompt": "How does the section find the rotational energies of an asymmetric top?",
+    "choices": [
+      {
+        "text": "By diagonalizing a matrix of H_rot",
+        "correct": true
+      },
+      {
+        "text": "From J(J + 1)ħ^2/(2I), with an average I",
+        "why": "No single I works when all three moments differ. The section builds a matrix of H_rot in the |J, M, K⟩ basis and diagonalizes it."
+      },
+      {
+        "text": "From the prolate-top formula with K = 0",
+        "why": "The prolate formula needs two equal moments. For an asymmetric top, the energies are the eigenvalues of the H_rot matrix."
+      },
+      {
+        "text": "Only by measurement, never by calculation",
+        "why": "They can be calculated: form the H_rot matrix in the |J, M, K⟩ basis, then diagonalize it. Its eigenvalues are the energies."
+      }
+    ],
+    "explanation": "Given I_a, I_b and I_c, the section forms the matrix of H_rot in the |J, M, K⟩ basis. Diagonalizing it gives the energies (its eigenvalues) and the wavefunctions (its eigenvectors)."
+  },
+  {
+    "id": "pc13-polyatomic-rot-asymmetric-one-j",
+    "type": "multiple-choice",
+    "prompt": "Each eigenstate of an asymmetric top contains only one value of J. Why?",
+    "choices": [
+      {
+        "text": "J^2 still commutes with H_rot",
+        "correct": true
+      },
+      {
+        "text": "J_c still commutes with H_rot",
+        "why": "With three different moments, K gets mixed, so J_c is not the conserved quantity. It is J^2 that still commutes with H_rot."
+      },
+      {
+        "text": "Its three moments of inertia are equal",
+        "why": "Equal moments would make a spherical top. The asymmetric top's three moments differ, but J^2 still commutes with H_rot."
+      },
+      {
+        "text": "The matrix elements connect different J values",
+        "why": "They don't: the nonzero elements join K to K ± 2 within one J. That is because J^2 commutes with H_rot."
+      }
+    ],
+    "explanation": "Because the total angular momentum J^2 still commutes with H_rot, each asymmetric-top eigenstate contains only one J value. It mixes different K values within that J, so it can be labeled ψ_(n, J)."
+  },
+  {
+    "id": "pc13-polyatomic-rot-k-plus-two",
+    "type": "multiple-choice",
+    "prompt": "In the |J, M, K⟩ basis, the asymmetric-top matrix of H_rot has off-diagonal elements from J_a^2 and J_b^2. Which states do they connect?",
+    "choices": [
+      {
+        "text": "States with K and K ± 2",
+        "correct": true
+      },
+      {
+        "text": "States with K and K ± 1",
+        "why": "The section's off-diagonal elements are ⟨J, M, K|J_a^2|J, M, K ± 2⟩. K changes by 2, not 1."
+      },
+      {
+        "text": "States with K and −K only",
+        "why": "The nonzero off-diagonal elements change K by 2, joining K to K ± 2 with the same J and M."
+      },
+      {
+        "text": "States with different J values",
+        "why": "J^2 commutes with H_rot, so no element joins different J. The off-diagonal elements join K to K ± 2."
+      }
+    ],
+    "explanation": "The nonzero off-diagonal elements are ⟨J, M, K|J_a^2|J, M, K ± 2⟩ = −⟨J, M, K|J_b^2|J, M, K ± 2⟩. They join K to K ± 2 with the same J and M; J_c^2 has no such elements."
+  },
+  {
+    "id": "pc13-polyatomic-rot-spherical-states-j2",
+    "type": "numeric",
+    "prompt": "Each spherical-top level is (2J + 1)^2-fold degenerate, because K and M each take 2J + 1 values. How many states share the energy of the J = 2 level?",
+    "answer": 25,
+    "tolerance": 0,
+    "explanation": "(2J + 1)^2 = (2 × 2 + 1)^2 = 5^2 = 25: five values of K (−2 to 2) times five values of M. A diatomic molecule's J = 2 level holds only 5."
+  },
+  {
+    "id": "pc13-polyatomic-rot-symmetric-states-k2",
+    "type": "numeric",
+    "prompt": "For a symmetric top, a level with K ≠ 0 is 2(2J + 1)-fold degenerate. How many states are in the level with J = 3 and K = 2?",
+    "answer": 14,
+    "tolerance": 0,
+    "explanation": "2(2J + 1) = 2 × (2 × 3 + 1) = 2 × 7 = 14: the two values K = +2 and K = −2, each with seven values of M."
+  },
+  {
+    "id": "pc13-polyatomic-rot-symmetric-levels-j4",
+    "type": "numeric",
+    "prompt": "A symmetric top's energy depends on J and on K^2, and K runs from −J to J. For J = 4, how many different energies are there?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "K = 0, ±1, ±2, ±3, ±4 gives only five values of K^2: 0, 1, 4, 9 and 16. So the J = 4 states fall into 5 levels, one for K = 0 and four ±K pairs."
+  },
+  {
+    "id": "pc13-polyatomic-rot-co2-inertia",
+    "type": "numeric",
+    "prompt": "In CO2 (O=C=O), the C atom sits at the center of mass and each O atom (16.0 amu) is 1.16 Å from it. Using I = Σ_i m_i R_i^2, what is the moment of inertia for rotation about an axis through C perpendicular to the molecule, in amu·Å^2? (Give it as a decimal.)",
+    "answer": 43.06,
+    "explanation": "The C atom has R = 0, so it adds nothing. I = 2 × 16.0 × (1.16)^2 = 2 × 16.0 × 1.3456 = 43.06 amu·Å^2."
+  },
+  {
+    "id": "pc13-polyatomic-rot-ja2-element",
+    "type": "numeric",
+    "prompt": "For the asymmetric top, ⟨J, M, K|J_a^2|J, M, K⟩ = (ħ^2/2)[J(J + 1) − K^2]. For J = 3 and K = 1, this matrix element is a number times ħ^2. What is the number? (Give it as a decimal.)",
+    "answer": 5.5,
+    "explanation": "(1/2)[3 × 4 − 1^2] = (1/2)(12 − 1) = 11/2 = 5.5. The J_b^2 element is the same, while the J_c^2 element is ħ^2K^2 = 1ħ^2."
+  },
+  {
+    "id": "pc13-polyatomic-rot-prolate-energy",
+    "type": "numeric",
+    "prompt": "A prolate top has ħ^2/(2I) = 0.50 cm^−1 and ħ^2/(2I_a) = 5.0 cm^−1, so its energy in wavenumbers is E = 0.50J(J + 1) + K^2(5.0 − 0.50). What is the energy of the level with J = 2 and K = 1, in cm^−1? (Give it as a decimal.)",
+    "answer": 7.5,
+    "explanation": "E = 0.50 × 2 × 3 + 1^2 × (5.0 − 0.50) = 3.0 + 4.5 = 7.5 cm^−1. The K^2 term is positive because I_a < I, so this level lies above the J = 2, K = 0 level at 3.0 cm^−1."
+  },
+  {
+    "id": "pc13-polyatomic-rot-methane-j2-energy",
+    "type": "numeric",
+    "prompt": "Methane is a spherical top with ħ^2/(2I) = 5.24 cm^−1, expressed as a wavenumber. Using E = J(J + 1)ħ^2/(2I), what is the energy of its J = 2 level, in cm^−1? (Give it as a decimal.)",
+    "answer": 31.44,
+    "explanation": "E = 2 × 3 × 5.24 = 6 × 5.24 = 31.44 cm^−1. The energy doesn't depend on K or M, so every state of the J = 2 level has this energy."
+  }
+]

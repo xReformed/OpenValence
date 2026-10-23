@@ -1,0 +1,514 @@
+[
+  {
+    "id": "pc11-polarization-asterisk",
+    "type": "multiple-choice",
+    "prompt": "In Pople basis-set names, what does a single asterisk, as in 6-31G*, indicate?",
+    "choices": [
+      {
+        "text": "Polarization functions are added",
+        "correct": true
+      },
+      {
+        "text": "Diffuse functions are added",
+        "why": "Diffuse functions are marked by a plus sign, as in 6-31+G. The asterisk marks polarization functions."
+      },
+      {
+        "text": "The valence shell is split three ways",
+        "why": "A three-way split is shown by the digits, as in 6-311G. The asterisk marks polarization functions."
+      },
+      {
+        "text": "An extra core function is added",
+        "why": "The core is described by the digit before the hyphen. The asterisk marks polarization functions."
+      }
+    ],
+    "explanation": "In Pople's basis sets, an asterisk, *, denotes polarization functions. A single asterisk adds them to the atoms heavier than helium."
+  },
+  {
+    "id": "pc11-polarization-double-asterisk",
+    "type": "multiple-choice",
+    "prompt": "What does a second asterisk add, as in 6-31G** compared with 6-31G*?",
+    "choices": [
+      {
+        "text": "Polarization on H and He too",
+        "correct": true
+      },
+      {
+        "text": "Diffuse functions on every atom",
+        "why": "Diffuse functions are marked by plus signs, not asterisks. ** extends polarization to the light atoms."
+      },
+      {
+        "text": "A second d set on heavy atoms",
+        "why": "The second asterisk doesn't double the heavy-atom functions. It adds polarization functions to hydrogen and helium."
+      },
+      {
+        "text": "Polarization on core orbitals only",
+        "why": "The asterisks aren't about core orbitals. The second one adds polarization functions to the light atoms, H and He."
+      }
+    ],
+    "explanation": "Two asterisks, **, indicate that polarization functions are also added to the light atoms, hydrogen and helium. With one asterisk only the heavier atoms get them."
+  },
+  {
+    "id": "pc11-polarization-node",
+    "type": "multiple-choice",
+    "prompt": "What does the section say about the nodes of polarization functions?",
+    "choices": [
+      {
+        "text": "They have one additional node",
+        "correct": true
+      },
+      {
+        "text": "They have one fewer node",
+        "why": "Polarization functions have more nodes, not fewer: one additional node."
+      },
+      {
+        "text": "They have no nodes at all",
+        "why": "A p function added to hydrogen has a node, which its 1s function lacks. Polarization functions have one additional node."
+      },
+      {
+        "text": "They have the same number of nodes",
+        "why": "Then they would add no new shape. Polarization functions are auxiliary functions with one additional node."
+      }
+    ],
+    "explanation": "Polarization functions are auxiliary functions with one additional node. A p function added to hydrogen's 1s and a d function added to a p orbital are examples."
+  },
+  {
+    "id": "pc11-polarization-hydrogen-p",
+    "type": "multiple-choice",
+    "prompt": "In a minimal basis, the only function on a hydrogen atom approximates its 1s orbital. What kind of function is added when polarization is included?",
+    "choices": [
+      {
+        "text": "A p function",
+        "correct": true
+      },
+      {
+        "text": "A second s function",
+        "why": "A second s function of a different size is what a split-valence or double-ζ basis adds. Polarization adds a p function."
+      },
+      {
+        "text": "A d function",
+        "why": "d functions polarize atoms whose valence orbitals are p orbitals. Hydrogen's 1s is polarized by a p function."
+      },
+      {
+        "text": "A diffuse s function",
+        "why": "Diffuse functions are a different addition, marked by + signs. Polarization adds a p function to hydrogen."
+      }
+    ],
+    "explanation": "When polarization is added, a p function joins hydrogen's 1s function. It has one more node than the 1s function and lets the electron density shift to one side of the nucleus."
+  },
+  {
+    "id": "pc11-polarization-dp-synonym",
+    "type": "multiple-choice",
+    "prompt": "Which basis-set name means the same as 6-31G**?",
+    "choices": [
+      {
+        "text": "6-31G(d,p)",
+        "correct": true
+      },
+      {
+        "text": "6-31++G**",
+        "why": "The ++ adds diffuse functions on top of the polarization functions, so this isn't the same as 6-31G**."
+      },
+      {
+        "text": "6-31G(d)",
+        "why": "(d) lists only d functions on the heavy atoms, which matches a single asterisk. ** also adds p functions on hydrogen."
+      },
+      {
+        "text": "6-311G(d,p)",
+        "why": "6-311G(d,p) has the same polarization functions, but it splits each valence orbital three ways instead of two."
+      }
+    ],
+    "explanation": "6-31G** is synonymous with 6-31G(d,p). The (d,p) notation names the polarization functions directly: d functions on the heavier atoms and p functions on hydrogen."
+  },
+  {
+    "id": "pc11-polarization-dp-meaning",
+    "type": "multiple-choice",
+    "prompt": "In 6-31G(d,p), what do the d and the p stand for?",
+    "choices": [
+      {
+        "text": "d functions on heavy atoms, p on hydrogens",
+        "correct": true
+      },
+      {
+        "text": "p functions on heavy atoms, d on hydrogens",
+        "why": "It's the other way round: hydrogen's 1s is polarized by p functions, and p valence orbitals by d functions."
+      },
+      {
+        "text": "d for diffuse and p for polarization",
+        "why": "Both letters name types of polarization functions. Diffuse functions are marked by + signs."
+      },
+      {
+        "text": "Split d and p core orbitals",
+        "why": "The letters name the polarization functions added, not core orbitals: d on heavy atoms, p on hydrogens."
+      }
+    ],
+    "explanation": "The polarization function has one more node than the valence orbital it polarizes: d functions for atoms with valence p orbitals, p functions for hydrogen's 1s. So (d,p) means d on the heavier atoms and p on hydrogen, the same as **."
+  },
+  {
+    "id": "pc11-polarization-name",
+    "type": "multiple-choice",
+    "prompt": "Why are polarization functions given that name?",
+    "choices": [
+      {
+        "text": "They let charge shift away from the atomic shape",
+        "correct": true
+      },
+      {
+        "text": "They describe how molecules absorb polarized light",
+        "why": "The name isn't about light. These functions let the electronic charge polarize away from its atomic distribution."
+      },
+      {
+        "text": "They set the spin direction of each electron",
+        "why": "Spin isn't involved. The functions let charge polarize away from the atomic distribution."
+      },
+      {
+        "text": "They are used only for polar molecules",
+        "why": "They help in any molecule, polar or not, because bonding itself distorts the atomic charge distribution."
+      }
+    ],
+    "explanation": "A minimal basis with fixed ζ values severely limits how much the charge can change from the atomic distribution. Polarization functions remove this limit by allowing charge polarization away from the atomic distribution."
+  },
+  {
+    "id": "pc11-polarization-larger-n",
+    "type": "multiple-choice",
+    "prompt": "Besides splitting orbitals into more functions, how else does the section say a minimal basis can be expanded for more accurate results?",
+    "choices": [
+      {
+        "text": "Add STOs with larger n and other Y_l^(m)",
+        "correct": true
+      },
+      {
+        "text": "Remove the core functions from each atom",
+        "why": "Removing functions makes a basis less flexible, not more. The section adds STOs with larger n and other spherical harmonics."
+      },
+      {
+        "text": "Fix every ζ at its value in the free atom",
+        "why": "Fixed ζ values are exactly what limits a minimal basis. Adding STOs with larger n and other spherical harmonics removes the limit."
+      },
+      {
+        "text": "Replace Gaussians with plane waves",
+        "why": "The section stays with atom-centered functions. It adds STOs with larger n and different spherical harmonics Y_l^(m)(θ, φ)."
+      }
+    ],
+    "explanation": "Including STOs with larger n values and different spherical harmonics Y_l^(m)(θ, φ) is another way to expand the basis set. These added functions are the polarization functions."
+  },
+  {
+    "id": "pc11-polarization-asymmetric",
+    "type": "multiple-choice",
+    "prompt": "Adding a p function to each hydrogen gives the basis more flexibility. What does it let molecular orbitals involving hydrogen do?",
+    "choices": [
+      {
+        "text": "Become asymmetric about the H nucleus",
+        "correct": true
+      },
+      {
+        "text": "Stay perfectly spherical around the H nucleus",
+        "why": "A 1s function alone already keeps the density spherical. The added p function lets it become lopsided."
+      },
+      {
+        "text": "Hold more than two electrons each",
+        "why": "No orbital holds more than two electrons. The p function changes the orbital's shape, not its capacity."
+      },
+      {
+        "text": "Ignore the hydrogen 1s function",
+        "why": "The 1s function stays; the p function is added to it, so the mix can be asymmetric about the nucleus."
+      }
+    ],
+    "explanation": "The extra p function lets molecular orbitals involving hydrogen be more asymmetric about the hydrogen nucleus. Mixing s with p shifts electron density to one side."
+  },
+  {
+    "id": "pc11-polarization-bonding",
+    "type": "multiple-choice",
+    "prompt": "Why does an accurate description of a chemical bond need a basis that lets the electron density around an atom become asymmetric?",
+    "choices": [
+      {
+        "text": "A neighbor makes the environment asymmetric",
+        "correct": true
+      },
+      {
+        "text": "Bonded atoms are always perfectly spherical",
+        "why": "It's the opposite: a bonded neighbor pulls the density out of its spherical atomic shape."
+      },
+      {
+        "text": "Bonds form only between ions",
+        "why": "Covalent bonds form between neutral atoms too. The point is that a neighbor makes the environment asymmetric."
+      },
+      {
+        "text": "Asymmetric density makes calculations cheaper",
+        "why": "Adding polarization functions makes calculations more expensive, not cheaper. They are added for accuracy."
+      }
+    ],
+    "explanation": "The very presence of the bonded atom makes the energetic environment of the electrons spherically asymmetric. Polarization functions give the basis the flexibility to follow this."
+  },
+  {
+    "id": "pc11-polarization-p-gets-d",
+    "type": "multiple-choice",
+    "prompt": "An atom's valence orbitals are p orbitals. Which type of polarization function is added to it?",
+    "choices": [
+      {
+        "text": "d-type",
+        "correct": true
+      },
+      {
+        "text": "s-type",
+        "why": "s functions have fewer nodes than p, not one more. Valence p orbitals are polarized by d-type functions."
+      },
+      {
+        "text": "p-type",
+        "why": "p functions are what polarize hydrogen's 1s orbital. An atom with valence p orbitals gets d-type functions."
+      },
+      {
+        "text": "f-type",
+        "why": "f functions are added to basis sets with d-type orbitals. Valence p orbitals get d-type functions."
+      }
+    ],
+    "explanation": "A polarization function has one more node than the orbital it polarizes. So p functions are added for s orbitals, d functions for p orbitals, and f functions for d orbitals."
+  },
+  {
+    "id": "pc11-polarization-most-common",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is probably the most common addition to minimal basis sets?",
+    "choices": [
+      {
+        "text": "Polarization functions",
+        "correct": true
+      },
+      {
+        "text": "Diffuse functions",
+        "why": "Diffuse functions are another common addition, but the section names polarization functions as probably the most common."
+      },
+      {
+        "text": "Extra inner-shell functions",
+        "why": "The section doesn't describe adding core functions. It names polarization functions as probably the most common addition."
+      },
+      {
+        "text": "Plane-wave functions",
+        "why": "Plane waves are used in materials calculations, not added to Gaussian sets. The most common addition is polarization functions."
+      }
+    ],
+    "explanation": "The most common addition to minimal basis sets is probably polarization functions, marked by an asterisk in Pople's names. Diffuse functions are another common addition."
+  },
+  {
+    "id": "pc11-polarization-precise-notation",
+    "type": "multiple-choice",
+    "prompt": "What does a notation such as (d,p) tell you that asterisks don't?",
+    "choices": [
+      {
+        "text": "Which functions, and how many, are added",
+        "correct": true
+      },
+      {
+        "text": "Whether diffuse functions are added",
+        "why": "Diffuse functions are shown by + signs in either notation. (d,p) names the polarization functions exactly."
+      },
+      {
+        "text": "How many Gaussians each core orbital uses",
+        "why": "That is given by the digit before the hyphen. (d,p) names the polarization functions added."
+      },
+      {
+        "text": "Whether the basis set is minimal",
+        "why": "The (d,p) part describes added polarization functions. It says exactly which and how many are added."
+      }
+    ],
+    "explanation": "The more precise notation, such as (d,p), indicates exactly which and how many functions are added to the basis set. Asterisks only say that polarization functions are present."
+  },
+  {
+    "id": "pc11-polarization-plus",
+    "type": "multiple-choice",
+    "prompt": "In Pople basis-set names, what does a plus sign, as in 6-31+G, indicate?",
+    "choices": [
+      {
+        "text": "Diffuse functions are added",
+        "correct": true
+      },
+      {
+        "text": "Polarization functions are added",
+        "why": "Polarization functions are marked by an asterisk, as in 6-31G*. A plus sign marks diffuse functions."
+      },
+      {
+        "text": "The basis is for cations only",
+        "why": "The plus isn't a charge. Diffuse functions are in fact most useful for anions."
+      },
+      {
+        "text": "An extra core Gaussian is added",
+        "why": "The core is described by the digit before the hyphen. The plus sign marks diffuse functions."
+      }
+    ],
+    "explanation": "In Pople-type basis sets, a plus sign, +, denotes diffuse functions. A single + adds them to the atoms heavier than helium."
+  },
+  {
+    "id": "pc11-polarization-aug",
+    "type": "multiple-choice",
+    "prompt": "How are diffuse functions marked in the names of Dunning-type basis sets?",
+    "choices": [
+      {
+        "text": "By the prefix aug",
+        "correct": true
+      },
+      {
+        "text": "By a plus sign",
+        "why": "The plus sign is the Pople notation. Dunning-type sets use the prefix aug, short for augmented."
+      },
+      {
+        "text": "By an asterisk",
+        "why": "An asterisk marks polarization functions in Pople's sets. Dunning-type sets mark diffuse functions with aug."
+      },
+      {
+        "text": "By the suffix (d,p)",
+        "why": "(d,p) lists polarization functions. Dunning-type sets mark diffuse functions with aug."
+      }
+    ],
+    "explanation": "Diffuse functions are denoted by a plus sign in Pople-type sets and by aug, from augmented, in Dunning-type sets."
+  },
+  {
+    "id": "pc11-polarization-double-plus",
+    "type": "multiple-choice",
+    "prompt": "Compared with 6-31+G, which atoms gain diffuse functions in 6-31++G?",
+    "choices": [
+      {
+        "text": "Hydrogen and helium",
+        "correct": true
+      },
+      {
+        "text": "Only the heaviest atoms",
+        "why": "The heavy atoms already have diffuse functions with a single +. The second + extends them to H and He."
+      },
+      {
+        "text": "Only atoms with a negative charge",
+        "why": "The + signs aren't charges. The second one adds diffuse functions to the light atoms, H and He."
+      },
+      {
+        "text": "The core orbitals of every atom",
+        "why": "Diffuse functions describe the outer tail of an orbital, not the core. The second + adds them to H and He."
+      }
+    ],
+    "explanation": "Two plus signs indicate that diffuse functions are also added to the light atoms, hydrogen and helium. It parallels the second asterisk for polarization functions."
+  },
+  {
+    "id": "pc11-polarization-shallow",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe the Gaussian functions used as diffuse functions?",
+    "choices": [
+      {
+        "text": "Very shallow Gaussians",
+        "correct": true
+      },
+      {
+        "text": "Very steep Gaussians",
+        "why": "Steep Gaussians are concentrated close to the nucleus. Diffuse functions are very shallow, so they spread far out."
+      },
+      {
+        "text": "Gaussians with one extra node",
+        "why": "One additional node is the mark of a polarization function. Diffuse functions are very shallow Gaussians."
+      },
+      {
+        "text": "Gaussians for the core only",
+        "why": "Core orbitals sit close to the nucleus. Diffuse functions are very shallow Gaussians that reach far out."
+      }
+    ],
+    "explanation": "Diffuse functions are very shallow Gaussian basis functions. Because they fall off slowly, they reach far from the nucleus."
+  },
+  {
+    "id": "pc11-polarization-tail",
+    "type": "multiple-choice",
+    "prompt": "Which part of an atomic orbital do diffuse functions represent more accurately?",
+    "choices": [
+      {
+        "text": "The tail, far from the nucleus",
+        "correct": true
+      },
+      {
+        "text": "The region right at the nucleus",
+        "why": "Shallow functions are spread out, not concentrated at the nucleus. They improve the tail far from it."
+      },
+      {
+        "text": "The nodes between the lobes",
+        "why": "Adding a node is what polarization functions do. Diffuse functions improve the tail far from the nucleus."
+      },
+      {
+        "text": "The core electrons",
+        "why": "Core electrons stay close to the nucleus. Diffuse functions describe the distant tail of the orbitals."
+      }
+    ],
+    "explanation": "Diffuse functions more accurately represent the tail portion of the atomic orbitals, the part distant from the atomic nuclei."
+  },
+  {
+    "id": "pc11-polarization-anions",
+    "type": "multiple-choice",
+    "prompt": "For which kinds of systems does the section say diffuse functions can be important?",
+    "choices": [
+      {
+        "text": "Anions and large, soft molecules",
+        "correct": true
+      },
+      {
+        "text": "Small cations that hold electrons tightly",
+        "why": "A cation holds its electrons tightly, close to the nuclei. Diffuse functions matter for anions and large, soft systems."
+      },
+      {
+        "text": "Isolated hydrogen atoms",
+        "why": "A single H atom is the simplest case. The section names anions and other large, soft systems."
+      },
+      {
+        "text": "Core electrons of heavy atoms",
+        "why": "Core electrons stay near the nucleus, where diffuse functions add little. They matter for anions and soft systems."
+      }
+    ],
+    "explanation": "Diffuse functions can be important for anions and other large, soft molecular systems, where electron density reaches far from the nuclei."
+  },
+  {
+    "id": "pc11-polarization-both",
+    "type": "multiple-choice",
+    "prompt": "Which basis-set name includes both diffuse and polarization functions?",
+    "choices": [
+      {
+        "text": "6-31+G*",
+        "correct": true
+      },
+      {
+        "text": "6-31G*",
+        "why": "The asterisk gives polarization functions, but there is no + for diffuse functions."
+      },
+      {
+        "text": "6-31+G",
+        "why": "The + gives diffuse functions, but there is no asterisk for polarization functions."
+      },
+      {
+        "text": "6-311G**",
+        "why": "6-311G** has polarization functions on every atom, but there is no + for diffuse functions."
+      }
+    ],
+    "explanation": "The + marks diffuse functions and the * marks polarization functions, so 6-31+G* has both. Each symbol adds its functions to the atoms heavier than helium."
+  },
+  {
+    "id": "pc11-polarization-h2o-p-functions",
+    "type": "numeric",
+    "prompt": "With 6-31G**, each hydrogen atom gets one set of p polarization functions, and a set of p functions has three members (p_x, p_y and p_z). How many p polarization functions are added to the two H atoms of a water molecule, H2O?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "2 H atoms × 3 p functions = 6. A single asterisk, 6-31G*, would add none to the hydrogens."
+  },
+  {
+    "id": "pc11-polarization-ethane-d",
+    "type": "numeric",
+    "prompt": "In 6-31G*, one set of six d-type polarization functions is added to each atom heavier than helium, and none to hydrogen. How many d functions does 6-31G* add to ethane, C2H6?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "Only the 2 carbon atoms get d functions: 2 × 6 = 12. The six hydrogens get none, because that needs a second asterisk."
+  },
+  {
+    "id": "pc11-polarization-3pd-sets",
+    "type": "numeric",
+    "prompt": "In 6-31G(3df,3pd), the part after the comma lists the polarization functions added to each hydrogen: 3p means three sets of p functions, and d means one set of d functions. How many sets of polarization functions are added to each hydrogen atom?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "3 sets of p + 1 set of d = 4 sets. This notation says exactly which and how many functions are added, which asterisks can't."
+  },
+  {
+    "id": "pc11-polarization-nh3-diffuse",
+    "type": "numeric",
+    "prompt": "6-31++G adds diffuse functions to every atom: four (one s and three p) on each atom heavier than helium, and one s function on each hydrogen. How many diffuse functions does 6-31++G add to ammonia, NH3?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "4 on N + 3 × 1 on the H atoms = 4 + 3 = 7. With a single +, 6-31+G, only the 4 on nitrogen would be added."
+  }
+]

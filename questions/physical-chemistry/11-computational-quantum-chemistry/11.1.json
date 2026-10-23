@@ -1,0 +1,626 @@
+[
+  {
+    "id": "pc11-overview-double-swap",
+    "type": "multiple-choice",
+    "prompt": "Exchanging two identical particles multiplies their wavefunction by a factor e^(iφ). Why must exchanging them twice give e^(iφ)e^(iφ) = e^(i2φ) = 1?",
+    "choices": [
+      {
+        "text": "Two swaps restore the original situation",
+        "correct": true
+      },
+      {
+        "text": "The wavefunction must always be real",
+        "why": "Complex wavefunctions are allowed; e^(iφ) is itself complex in general. The condition comes from the fact that swapping twice puts the particles back where they started."
+      },
+      {
+        "text": "Probabilities must add up to exactly 1",
+        "why": "Normalization is a separate requirement. e^(i2φ) = 1 because a double permutation returns the system to its original state."
+      },
+      {
+        "text": "Electrons and protons carry equal charges",
+        "why": "Charge plays no part in the argument. Swapping the same two particles twice gives back the starting state, so the overall factor must be 1."
+      }
+    ],
+    "explanation": "Permuting two identical particles twice brings them back to the original situation, so the combined factor e^(iφ)e^(iφ) must be 1. That holds only for φ = 0 or a multiple of π, so e^(iφ) is +1 or −1; electrons take −1."
+  },
+  {
+    "id": "pc11-overview-single-determinant",
+    "type": "multiple-choice",
+    "prompt": "In a modern ab initio calculation on a closed-shell molecule, what kind of wavefunction is used with the electronic Hamiltonian?",
+    "choices": [
+      {
+        "text": "A single Slater determinant",
+        "correct": true
+      },
+      {
+        "text": "A simple product of spin orbitals",
+        "why": "A simple product turns into a different function when two electrons are swapped, so it isn't antisymmetric. The determinant form builds the antisymmetry in."
+      },
+      {
+        "text": "One hydrogen-like orbital per molecule",
+        "why": "One orbital can't describe all the electrons of a molecule. The wavefunction is a single determinant built from molecular orbitals."
+      },
+      {
+        "text": "A sum of every possible determinant",
+        "why": "The calculation described uses just one determinant; the lowest energy it can reach is the Hartree–Fock limit."
+      }
+    ],
+    "explanation": "The section's modern ab initio calculation pairs the electronic Hamiltonian with a single-determinant wavefunction Ψ. Its molecular orbitals ψ are linear combinations of contracted Gaussian basis functions φ."
+  },
+  {
+    "id": "pc11-overview-contracted-basis",
+    "type": "multiple-choice",
+    "prompt": "In a modern ab initio calculation, what kind of functions serve as the basis functions from which the molecular orbitals are built?",
+    "choices": [
+      {
+        "text": "Contracted Gaussian functions",
+        "correct": true
+      },
+      {
+        "text": "Exact hydrogen atom eigenfunctions",
+        "why": "Hydrogenic functions are not what modern codes use. The φ_k are contracted Gaussians, built from primitive Gaussians to match Slater-type orbitals."
+      },
+      {
+        "text": "Other molecular orbitals of the molecule",
+        "why": "The ψ_j are the molecular orbitals; the φ_k are the functions they are built from, contracted Gaussian functions."
+      },
+      {
+        "text": "Slater determinants of all the electrons",
+        "why": "A Slater determinant is the many-electron wavefunction Ψ, built from the MOs. The φ_k are contracted Gaussian basis functions."
+      }
+    ],
+    "explanation": "The molecular orbitals ψ_j are linear combinations of contracted Gaussian basis functions φ_k. Each contracted Gaussian is composed of primitive Gaussian functions chosen to match a Slater-type orbital."
+  },
+  {
+    "id": "pc11-overview-sto-exponents",
+    "type": "multiple-choice",
+    "prompt": "The contracted Gaussians in a modern calculation are made to match Slater-type orbitals (STOs). How are the exponential parameters in those STOs chosen?",
+    "choices": [
+      {
+        "text": "Optimized on small molecules, then reused",
+        "correct": true
+      },
+      {
+        "text": "Re-optimized from scratch for every molecule",
+        "why": "That would be costly. The section says the STO exponents are optimized by calculations on small molecules, and those values are then used with other molecules."
+      },
+      {
+        "text": "Set equal to each atom's full nuclear charge",
+        "why": "The full charge ignores shielding. The exponents come from nonlinear variational calculations on small molecules and are then carried over."
+      },
+      {
+        "text": "Read from measured ionization energies",
+        "why": "They aren't taken from experiment. They are optimized by the nonlinear variational method on small molecules."
+      }
+    ],
+    "explanation": "The exponential parameters in the STOs are optimized by calculations on small molecules using the nonlinear variational method. Those values are then used with other molecules."
+  },
+  {
+    "id": "pc11-overview-coefficients",
+    "type": "multiple-choice",
+    "prompt": "Which methods does the section use to find the optimum coefficients c_jk of each molecular orbital?",
+    "choices": [
+      {
+        "text": "SCF and linear variational methods",
+        "correct": true
+      },
+      {
+        "text": "First-order perturbation theory alone",
+        "why": "Perturbation theory isn't used here. The coefficients come from the self-consistent field method together with the linear variational method, which minimize the energy."
+      },
+      {
+        "text": "The simple Hückel method",
+        "why": "Hückel theory treats only π electrons with fixed α and β. The section uses the SCF and linear variational methods to minimize the energy."
+      },
+      {
+        "text": "Fitting them to a measured spectrum",
+        "why": "An ab initio calculation doesn't fit experimental data. The coefficients are chosen by the SCF and linear variational methods to minimize the energy."
+      }
+    ],
+    "explanation": "The optimum coefficients c_jk are found with the self-consistent field (SCF) method and the linear variational method, which minimize the energy E = (⟨Ψ|Ĥ|Ψ⟩)/(⟨Ψ|Ψ⟩), as was done earlier for atoms."
+  },
+  {
+    "id": "pc11-overview-hf-limit",
+    "type": "multiple-choice",
+    "prompt": "What is the Hartree–Fock limit?",
+    "choices": [
+      {
+        "text": "The lowest energy one determinant can give",
+        "correct": true
+      },
+      {
+        "text": "The exact ground-state energy of the molecule",
+        "why": "A single determinant is still an approximation, so by the variational principle its energy stays above the exact one. The Hartree–Fock limit is the lowest energy a single determinant can give."
+      },
+      {
+        "text": "The energy at which an SCF cycle is started",
+        "why": "An SCF cycle starts from a guess. The Hartree–Fock limit is where improvements stop: the lowest energy a single determinant can give."
+      },
+      {
+        "text": "The largest basis set a computer can handle",
+        "why": "It isn't a size limit on the computer. It is the limiting energy of a single-determinant wavefunction as the calculation is improved."
+      }
+    ],
+    "explanation": "By the variational principle the lowest calculated energy is the most accurate, but at some point the improvements become very slight. That limiting energy, the lowest obtainable with a single determinant, is the Hartree–Fock limit; its orbitals are the Hartree–Fock orbitals."
+  },
+  {
+    "id": "pc11-overview-restricted",
+    "type": "multiple-choice",
+    "prompt": "In a restricted Hartree–Fock calculation, what is restricted?",
+    "choices": [
+      {
+        "text": "α and β electrons share the same spatial orbitals",
+        "correct": true
+      },
+      {
+        "text": "Each spatial orbital may hold only one electron",
+        "why": "In a restricted calculation each spatial orbital holds an α and a β electron. The constraint is that both spins must occupy the same spatial orbitals."
+      },
+      {
+        "text": "The basis set may contain only Gaussian functions",
+        "why": "The basis set is a separate choice. Restricted means α-spin electrons are constrained to the same spatial orbitals as β-spin electrons."
+      },
+      {
+        "text": "Only atoms, not molecules, may be treated",
+        "why": "Restricted calculations are routine for molecules. The word refers to α and β electrons being constrained to the same spatial orbitals."
+      }
+    ],
+    "explanation": "In a restricted HF calculation, electrons with α spin are constrained to occupy the same spatial orbitals as electrons with β spin. An unrestricted calculation removes this constraint."
+  },
+  {
+    "id": "pc11-overview-unrestricted-pair",
+    "type": "multiple-choice",
+    "prompt": "Two electrons in a molecule are each described by a spin orbital. Which pair of spin orbitals is unrestricted?",
+    "choices": [
+      {
+        "text": "ψ_A(r_1)α(1) and ψ_B(r_2)β(2)",
+        "correct": true
+      },
+      {
+        "text": "ψ_A(r_1)α(1) and ψ_A(r_2)β(2)",
+        "why": "Both electrons have the same spatial orbital ψ_A, so this pair is restricted. In an unrestricted pair the spatial orbitals differ as well as the spins."
+      },
+      {
+        "text": "ψ_B(r_1)α(1) and ψ_B(r_2)β(2)",
+        "why": "Both electrons share the spatial orbital ψ_B, which makes the pair restricted. Unrestricted spin orbitals have different spatial parts."
+      },
+      {
+        "text": "ψ_A(r_1)α(1) and ψ_A(r_2)α(2)",
+        "why": "This puts two electrons in the same spin orbital, which the Pauli principle forbids. An unrestricted pair has different spatial orbitals for the two electrons."
+      }
+    ],
+    "explanation": "If both electrons are constrained to the same spatial orbital, as in ψ_A(r_1)α(1) and ψ_A(r_2)β(2), the spin orbitals are restricted. In ψ_A(r_1)α(1) and ψ_B(r_2)β(2) both the spatial orbital and the spin differ, so they are unrestricted."
+  },
+  {
+    "id": "pc11-overview-unrestricted-cost",
+    "type": "multiple-choice",
+    "prompt": "Unrestricted spin orbitals can describe the electrons better than restricted ones. Why do they make a calculation more demanding?",
+    "choices": [
+      {
+        "text": "Twice as many spatial orbitals needed",
+        "correct": true
+      },
+      {
+        "text": "Twice as many electrons must be treated",
+        "why": "The number of electrons is fixed by the molecule. What doubles is the number of spatial orbitals, since α and β electrons no longer share them."
+      },
+      {
+        "text": "The variational method no longer applies",
+        "why": "The variational method still applies. The extra cost comes from needing twice as many spatial orbitals."
+      },
+      {
+        "text": "Hydrogenic basis functions must be used",
+        "why": "Any basis can be used. The cost rises because α and β electrons each need their own spatial orbitals, twice as many in all."
+      }
+    ],
+    "explanation": "Unrestricted orbitals let α and β electrons have different spatial orbitals. They can describe the electrons better, but twice as many spatial orbitals are needed, so the demands of the calculation are much higher."
+  },
+  {
+    "id": "pc11-overview-odd-electrons",
+    "type": "multiple-choice",
+    "prompt": "Unrestricted orbitals are particularly beneficial for a molecule with an odd number of electrons. Which of these molecules is such a case (C has 6 electrons, N 7, O 8 and H 1)?",
+    "choices": [
+      {
+        "text": "NO",
+        "correct": true
+      },
+      {
+        "text": "CO",
+        "why": "CO has 6 + 8 = 14 electrons, an even number. NO has 7 + 8 = 15."
+      },
+      {
+        "text": "N2",
+        "why": "N2 has 7 + 7 = 14 electrons, an even number. NO, with 7 + 8 = 15 electrons, has an odd number."
+      },
+      {
+        "text": "H2O",
+        "why": "H2O has 1 + 1 + 8 = 10 electrons, an even number. NO has 15, so one spin state has more electrons than the other."
+      }
+    ],
+    "explanation": "NO has 7 + 8 = 15 electrons, so there are more electrons in one spin state than in the other. Unrestricted orbitals, which let α and β electrons have different spatial orbitals, are particularly beneficial in such cases."
+  },
+  {
+    "id": "pc11-overview-co-end",
+    "type": "multiple-choice",
+    "prompt": "Carbon monoxide is poisonous because it binds to the iron in hemoglobin by donating electrons. Which end of CO binds to the iron?",
+    "choices": [
+      {
+        "text": "The carbon end",
+        "correct": true
+      },
+      {
+        "text": "The oxygen end",
+        "why": "That is the naive guess, since oxygen has more electrons and is more electronegative. Experimentally it is carbon that binds."
+      },
+      {
+        "text": "Both ends equally",
+        "why": "Only one end binds. Experiment shows it is carbon, and Huo's calculation explains why through the 5σ orbital."
+      },
+      {
+        "text": "It binds side-on through the C–O bond",
+        "why": "The section describes binding through carbon, which donates its 5σ nonbonding electrons to iron."
+      }
+    ],
+    "explanation": "One might expect oxygen to donate electrons, since it has more of them (8 vs 6) and is more electronegative, but experimentally carbon binds to iron. Huo's MO calculation shows the donated electrons sit in a nonbonding orbital on carbon."
+  },
+  {
+    "id": "pc11-overview-co-donor-orbital",
+    "type": "multiple-choice",
+    "prompt": "When CO binds to iron in hemoglobin, electrons from which of its molecular orbitals are donated to empty d orbitals on the iron?",
+    "choices": [
+      {
+        "text": "5σ",
+        "correct": true
+      },
+      {
+        "text": "1π",
+        "why": "The 1π orbitals are bonding orbitals spread over C and O. The donated electrons are the 5σ nonbonding electrons on carbon."
+      },
+      {
+        "text": "4σ",
+        "why": "4σ is the antibonding partner of 3σ, with density pushed to the side of oxygen away from carbon. Iron receives the 5σ electrons on carbon."
+      },
+      {
+        "text": "1σ",
+        "why": "1σ is essentially oxygen's 1s core orbital. The bond to iron uses the 5σ nonbonding electrons on carbon."
+      }
+    ],
+    "explanation": "The bond between CO and Fe involves donation of the 5σ nonbonding electrons on carbon into empty d orbitals on iron. That is why the carbon end, not the oxygen end, binds."
+  },
+  {
+    "id": "pc11-overview-5sigma-side",
+    "type": "multiple-choice",
+    "prompt": "CO's 5σ orbital, 0.38 (2s_C) − 0.38 (2p_zC) − 0.29 (2p_zO), is an sp hybrid of the carbon orbitals. Where is its amplitude largest?",
+    "choices": [
+      {
+        "text": "On the side of carbon away from oxygen",
+        "correct": true
+      },
+      {
+        "text": "Midway between the carbon and oxygen nuclei",
+        "why": "The hybridization lowers the electron density between the nuclei. The negative 2p_zC coefficient pushes the amplitude to the far side of carbon."
+      },
+      {
+        "text": "On the side of oxygen away from carbon",
+        "why": "That describes the 4σ orbital. 5σ is a carbon hybrid whose amplitude is largest on the side of carbon facing away from oxygen."
+      },
+      {
+        "text": "Spread evenly around both nuclei",
+        "why": "5σ is not evenly shared; it is mainly a carbon sp hybrid, largest on the side of carbon away from oxygen."
+      }
+    ],
+    "explanation": "The negative coefficient of 2p_zC puts the largest amplitude of 5σ on the side of carbon away from oxygen. These nonbonding electrons stick out from carbon, ready to be donated to iron."
+  },
+  {
+    "id": "pc11-overview-5sigma-nonbonding",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call CO's 5σ orbital nonbonding rather than bonding or antibonding?",
+    "choices": [
+      {
+        "text": "It lowers the bond density but has no node",
+        "correct": true
+      },
+      {
+        "text": "It has a node between the C and the O nuclei",
+        "why": "A node between the nuclei is what makes 4σ antibonding. 5σ has no node there, yet it doesn't build up density between the atoms either."
+      },
+      {
+        "text": "It is a 1s core orbital on a single atom",
+        "why": "That describes 1σ and 2σ. 5σ is an sp hybrid on carbon that lowers the density between the nuclei without having a node there."
+      },
+      {
+        "text": "It is empty in the ground state of CO",
+        "why": "5σ is occupied; its electrons are the ones donated to iron. It is nonbonding because it lowers the density between nuclei without a node."
+      }
+    ],
+    "explanation": "5σ is not bonding, because hybridization lowers the electron density between the nuclei. It is not antibonding either, because there is no node between the nuclei. So it holds nonbonding electrons on carbon."
+  },
+  {
+    "id": "pc11-overview-1s-energies",
+    "type": "multiple-choice",
+    "prompt": "In CO, 1σ is essentially the oxygen 1s orbital and 2σ the carbon 1s orbital. Why is the oxygen 1s lower in energy?",
+    "choices": [
+      {
+        "text": "Oxygen's nuclear charge is larger",
+        "correct": true
+      },
+      {
+        "text": "Oxygen's 1s takes part in the C–O bond",
+        "why": "Both 1σ and 2σ are nonbonding core orbitals. Oxygen's 1s lies lower because its nucleus carries a greater positive charge."
+      },
+      {
+        "text": "Oxygen has fewer electrons than carbon",
+        "why": "Oxygen has more electrons, 8 against 6. Its 1s is lower because the positive charge on its nucleus is greater."
+      },
+      {
+        "text": "Oxygen's 1s orbital is larger",
+        "why": "A greater nuclear charge pulls oxygen's 1s in, not out. The greater positive charge on the oxygen nucleus lowers its energy."
+      }
+    ],
+    "explanation": "The oxygen 1s orbital should have a lower energy than the carbon 1s because the positive charge on the oxygen nucleus (+8) is greater than on carbon (+6). That is why the oxygen 1σ comes first in order of energy."
+  },
+  {
+    "id": "pc11-overview-1sigma-coefficient",
+    "type": "multiple-choice",
+    "prompt": "Huo's calculation gives CO's lowest orbital as 1σ ≈ 0.94 (1s_O). What does the large coefficient 0.94 tell you?",
+    "choices": [
+      {
+        "text": "1σ is essentially oxygen's 1s orbital",
+        "correct": true
+      },
+      {
+        "text": "1σ holds only 0.94 of an electron",
+        "why": "Coefficients are not electron counts; 1σ holds two electrons. The large coefficient on 1s_O means the orbital is almost purely oxygen 1s."
+      },
+      {
+        "text": "1σ is shared equally by C and O atoms",
+        "why": "Only an oxygen orbital appears with a large coefficient, so 1σ is localized on oxygen, not shared."
+      },
+      {
+        "text": "1σ is a strongly bonding C–O orbital",
+        "why": "1σ is called nonbonding: it sits on oxygen and doesn't set the charge density between the atoms."
+      }
+    ],
+    "explanation": "Only the largest terms are kept in the listed orbitals. A coefficient of 0.94 on 1s_O, with nothing large elsewhere, means 1σ is essentially the 1s atomic orbital of oxygen."
+  },
+  {
+    "id": "pc11-overview-core-nonbonding",
+    "type": "multiple-choice",
+    "prompt": "Why are CO's 1σ and 2σ orbitals called nonbonding?",
+    "choices": [
+      {
+        "text": "Each is localized on a single atom",
+        "correct": true
+      },
+      {
+        "text": "Each has a node between the nuclei",
+        "why": "A node between the nuclei marks an antibonding orbital, like 4σ. 1σ and 2σ are nonbonding because each sits on one atom."
+      },
+      {
+        "text": "Both are empty in the ground state",
+        "why": "Both are occupied core orbitals. They are nonbonding because they are localized on a particular atom and don't set the density between atoms."
+      },
+      {
+        "text": "Both are π orbitals, not σ orbitals",
+        "why": "They are σ orbitals, as their names say. They are nonbonding because each is essentially the 1s orbital of one atom."
+      }
+    ],
+    "explanation": "1σ is essentially oxygen's 1s orbital and 2σ carbon's. Because each is localized on a particular atom, it does not directly determine the charge density between the atoms, so both are called nonbonding."
+  },
+  {
+    "id": "pc11-overview-3sigma-bonding",
+    "type": "multiple-choice",
+    "prompt": "Why is CO's 3σ orbital called a bonding molecular orbital?",
+    "choices": [
+      {
+        "text": "It enhances charge density between atoms",
+        "correct": true
+      },
+      {
+        "text": "It sits almost entirely on the oxygen atom",
+        "why": "3σ has sizable terms on both atoms. It is bonding because its electrons are delocalized in a way that enhances the density between C and O."
+      },
+      {
+        "text": "It has a node between the two nuclei",
+        "why": "A node between the nuclei makes an orbital antibonding, as for 4σ. 3σ enhances the charge density between the atoms."
+      },
+      {
+        "text": "It is the highest occupied orbital of CO",
+        "why": "The orbitals are listed in order of increasing energy, and the last occupied one is 5σ, a nonbonding orbital. 3σ is bonding because it enhances the density between the atoms."
+      }
+    ],
+    "explanation": "In 3σ ≈ [0.72 (2s_O) + 0.18 (2p_zO)] + [0.28 (2s_C) + 0.16 (2p_zC)], the electrons are delocalized over C and O in a way that enhances the charge density between the atoms. That is what makes it bonding."
+  },
+  {
+    "id": "pc11-overview-hybridization",
+    "type": "multiple-choice",
+    "prompt": "CO's 3σ orbital mixes 2s and 2p orbitals on each atom, a sign of hybridization. How did hybridization enter Huo's calculation?",
+    "choices": [
+      {
+        "text": "It fell out of the calculation on its own",
+        "correct": true
+      },
+      {
+        "text": "Hybrid orbitals were put into the basis first",
+        "why": "The basis was the plain 1s, 2s and 2p orbitals of C and O. The calculation found the mixtures directly, with no hybrids introduced in advance."
+      },
+      {
+        "text": "It was added by hand after the calculation",
+        "why": "Nothing was added afterward. Minimizing the energy produced the 2s–2p mixing directly."
+      },
+      {
+        "text": "It didn't; no CO orbital mixes 2s and 2p",
+        "why": "Several do: 3σ, 4σ and 5σ all combine 2s and 2p terms. The mixing came out of the calculation itself."
+      }
+    ],
+    "explanation": "The calculation just obtains the linear combination of the four orbitals directly, without introducing hybridization beforehand. In the section's words, hybridization just falls out of the calculation."
+  },
+  {
+    "id": "pc11-overview-4sigma",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call CO's 4σ orbital antibonding?",
+    "choices": [
+      {
+        "text": "A node lowers the density between nuclei",
+        "correct": true
+      },
+      {
+        "text": "It is made only from carbon's orbitals",
+        "why": "4σ has large oxygen terms too, 0.54 (2p_zO) − 0.43 (2s_O). It is antibonding because of a node that leaves little density between the nuclei."
+      },
+      {
+        "text": "It is localized on carbon's 1s orbital",
+        "why": "That describes 2σ, a nonbonding core orbital. 4σ is antibonding because it has a node and little density between the nuclei."
+      },
+      {
+        "text": "Its electrons are shared evenly by C and O",
+        "why": "Sharing alone doesn't make an orbital antibonding; the bonding 3σ is shared too. 4σ is antibonding because of its node."
+      }
+    ],
+    "explanation": "Along the axis 4σ is positive near carbon and negative or small near oxygen, so there is a node between the nuclei or at oxygen. With little density between the nuclei, its electrons don't shield the nuclei from each other; 4σ is the antibonding partner of 3σ."
+  },
+  {
+    "id": "pc11-overview-pi-degenerate",
+    "type": "multiple-choice",
+    "prompt": "Why are CO's 1π_x and 1π_y orbitals degenerate?",
+    "choices": [
+      {
+        "text": "The x and y directions are equivalent",
+        "correct": true
+      },
+      {
+        "text": "Both are built from oxygen orbitals only",
+        "why": "Each combines a carbon and an oxygen 2p orbital. They are degenerate because x and y are equivalent directions in CO."
+      },
+      {
+        "text": "Both are nonbonding core orbitals",
+        "why": "They are bonding orbitals made from 2p_x and 2p_y on each atom. Their equal energy comes from the equivalence of the x and y directions."
+      },
+      {
+        "text": "By chance, for this one basis set",
+        "why": "It is no accident. In CO the x and y directions, both perpendicular to the bond, are equivalent."
+      }
+    ],
+    "explanation": "1π_x ≈ 0.32 (2p_xC) + 0.44 (2p_xO) and 1π_y ≈ 0.32 (2p_yC) + 0.44 (2p_yO) are identical except for direction. Because x and y are equivalent in this molecule, the two bonding orbitals have the same energy."
+  },
+  {
+    "id": "pc11-overview-pi-oxygen",
+    "type": "multiple-choice",
+    "prompt": "In CO, 1π_x ≈ 0.32 (2p_xC) + 0.44 (2p_xO). Which atom's 2p_x orbital contributes more to this orbital?",
+    "choices": [
+      {
+        "text": "Oxygen's, with the larger coefficient",
+        "correct": true
+      },
+      {
+        "text": "Carbon's, since carbon binds to iron",
+        "why": "Carbon's binding to iron uses 5σ, not 1π. In 1π_x the oxygen coefficient, 0.44, is the larger one."
+      },
+      {
+        "text": "Both equally, as in any π bond",
+        "why": "The coefficients 0.32 and 0.44 are not equal. Oxygen's 2p_x contributes more."
+      },
+      {
+        "text": "Neither; 1π_x is built from 2s orbitals",
+        "why": "The listed terms are 2p_x orbitals on C and O, not 2s. Oxygen's has the larger coefficient, 0.44."
+      }
+    ],
+    "explanation": "The coefficient of 2p_xO, 0.44, is larger than that of 2p_xC, 0.32, so oxygen's orbital contributes more to this bonding π orbital. The 1π_y orbital has the same coefficients."
+  },
+  {
+    "id": "pc11-overview-sigma-number",
+    "type": "multiple-choice",
+    "prompt": "Huo's CO orbitals are labeled 1σ, 2σ, 3σ, 4σ and 5σ. What does the number in front of σ tell you?",
+    "choices": [
+      {
+        "text": "Its rank among σ orbitals, by energy",
+        "correct": true
+      },
+      {
+        "text": "How many electrons the orbital holds",
+        "why": "Each occupied orbital holds two electrons. The number counts the σ orbitals in order of increasing energy: 3σ is the third."
+      },
+      {
+        "text": "The principal quantum number of its AOs",
+        "why": "3σ is made from 2s and 2p orbitals, not n = 3 ones. The number just says it is the third σ orbital."
+      },
+      {
+        "text": "How many nodes the orbital has",
+        "why": "The label doesn't count nodes. 1σ is the first σ orbital and 3σ the third, counting up in energy."
+      }
+    ],
+    "explanation": "The orbitals are listed in order of increasing energy. The 1 in 1σ says it is the first σ orbital, and the 3 in 3σ says it is the third."
+  },
+  {
+    "id": "pc11-overview-ms-label",
+    "type": "multiple-choice",
+    "prompt": "The section writes a spin orbital in shorthand as φ_i α or φ_i β. Which quantum number decides which of the two it is?",
+    "choices": [
+      {
+        "text": "m_s",
+        "correct": true
+      },
+      {
+        "text": "n",
+        "why": "n is the principal quantum number of the spatial part. Whether the spin function is α or β is set by m_s."
+      },
+      {
+        "text": "l",
+        "why": "l sets the shape of the spatial orbital, not the spin. The spin function α or β is set by m_s."
+      },
+      {
+        "text": "m_l",
+        "why": "m_l labels the orientation of the spatial orbital. Whether the spin function is α or β is set by m_s."
+      }
+    ],
+    "explanation": "Each spin orbital is a spatial orbital φ_i times a spin function. The spin function is α or β as determined by the spin quantum number m_s."
+  },
+  {
+    "id": "pc11-overview-co-basis-count",
+    "type": "numeric",
+    "prompt": "Huo's 1965 calculation on CO used as its basis the 1s, 2s, 2p_x, 2p_y and 2p_z atomic orbitals of carbon and of oxygen. How many basis functions is that?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "Each atom contributes 5 functions (1s, 2s, 2p_x, 2p_y and 2p_z), so the basis has 5 × 2 = 10 functions. Ten molecular orbitals were defined as linear combinations of them."
+  },
+  {
+    "id": "pc11-overview-co-occupied",
+    "type": "numeric",
+    "prompt": "CO has 14 electrons, and each molecular orbital in Huo's ground-state Slater determinant holds two of them. How many molecular orbitals make up the determinant?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "14 ÷ 2 = 7. The ground state is the Slater determinant of the seven lowest-energy MOs: 1σ, 2σ, 3σ, 4σ, 1π_x, 1π_y and 5σ."
+  },
+  {
+    "id": "pc11-overview-co-empty",
+    "type": "numeric",
+    "prompt": "In Huo's calculation, 10 basis functions give 10 molecular orbitals, and CO's ground state fills the 7 lowest. How many of the molecular orbitals are left empty?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "10 − 7 = 3. Combining N basis functions gives N molecular orbitals, so three remain unoccupied in the ground state."
+  },
+  {
+    "id": "pc11-overview-co-sigma-electrons",
+    "type": "numeric",
+    "prompt": "CO's seven occupied orbitals are 1σ, 2σ, 3σ, 4σ, 1π_x, 1π_y and 5σ, each holding 2 electrons. How many of CO's electrons are in σ orbitals?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "Five of the seven are σ orbitals, so 5 × 2 = 10 electrons are in σ orbitals. The other 4 fill the degenerate pair 1π_x and 1π_y."
+  },
+  {
+    "id": "pc11-overview-unrestricted-ethylene",
+    "type": "numeric",
+    "prompt": "A restricted calculation on ethylene puts its 16 electrons, in pairs, into 8 spatial orbitals. An unrestricted calculation needs twice as many spatial orbitals. How many is that?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "8 × 2 = 16. With α and β electrons no longer sharing spatial orbitals, each of the 16 electrons gets its own, which is why unrestricted calculations are more demanding."
+  },
+  {
+    "id": "pc11-overview-hf-limit-step",
+    "type": "numeric",
+    "prompt": "A chemist repeats a single-determinant calculation with ever better basis sets and gets −112.70, −112.76 and −112.77 hartree. By how much did the last improvement lower the energy, in hartree? (Give it as a decimal.)",
+    "answer": 0.01,
+    "unit": "hartree",
+    "explanation": "−112.76 − (−112.77) = 0.01 hartree, much less than the 0.06 hartree of the step before. The improvements become very slight as the energy approaches the Hartree–Fock limit, the lowest a single determinant can give."
+  }
+]

@@ -1,0 +1,574 @@
+[
+  {
+    "id": "pc5-hermite-diatomic-one-mode",
+    "type": "multiple-choice",
+    "prompt": "How many sets of vibrational wavefunctions and energies does a diatomic molecule have?",
+    "choices": [
+      {
+        "text": "One, because it has only one vibrational mode",
+        "correct": true
+      },
+      {
+        "text": "Two, one for each of its atoms",
+        "why": "The atoms don't vibrate separately; the vibration is the stretch of the bond between them. A diatomic has one vibrational mode, so one set."
+      },
+      {
+        "text": "Three, one for each direction in space",
+        "why": "A diatomic molecule vibrates only by stretching along its bond, which is a single mode with a single set of wavefunctions."
+      },
+      {
+        "text": "One for each electron in the molecule",
+        "why": "These are vibrational wavefunctions, set by the motion of the nuclei, not by the electrons. A diatomic has one vibrational mode."
+      }
+    ],
+    "explanation": "A diatomic molecule has only one vibrational mode, so there is a single set of vibrational wavefunctions with their energies. A polyatomic molecule has a set for each of its vibrational modes."
+  },
+  {
+    "id": "pc5-hermite-mu-k-per-mode",
+    "type": "multiple-choice",
+    "prompt": "In the harmonic oscillator Hamiltonian, μ is an effective (reduced) mass and k an effective force constant. How do μ and k vary between the normal modes of a molecule?",
+    "choices": [
+      {
+        "text": "Each normal mode has its own values of μ and k",
+        "correct": true
+      },
+      {
+        "text": "They are the same for every mode of the molecule",
+        "why": "The section says μ and k will be different for each normal mode, or vibration."
+      },
+      {
+        "text": "μ changes from mode to mode, but k never does",
+        "why": "Both are effective values for one particular vibration, so both change from one normal mode to another."
+      },
+      {
+        "text": "Both are set by the two heaviest atoms",
+        "why": "μ and k are effective values for the motion in a given normal mode, and they differ from mode to mode."
+      }
+    ],
+    "explanation": "μ and k are effective values for a particular vibration, so they are different for each normal mode. That is why each mode of a polyatomic molecule has its own set of energies."
+  },
+  {
+    "id": "pc5-hermite-why-zero-far",
+    "type": "multiple-choice",
+    "prompt": "Why must the harmonic oscillator wavefunctions approach zero at large displacements?",
+    "choices": [
+      {
+        "text": "The potential energy grows without limit there",
+        "correct": true
+      },
+      {
+        "text": "The bond breaks once it is stretched far enough",
+        "why": "A harmonic potential never lets the bond break; it just keeps rising. The wavefunction must vanish because the potential energy goes to infinity."
+      },
+      {
+        "text": "The normalization constant N_v is zero there",
+        "why": "N_v is a single constant, the same at every x. The wavefunction vanishes because the potential energy becomes infinite."
+      },
+      {
+        "text": "The Hermite polynomials shrink to zero there",
+        "why": "Polynomials grow without limit at large x. The wavefunction still goes to zero because of its decaying exponential factor."
+      }
+    ],
+    "explanation": "Since the potential energy approaches infinity as the displacement grows, the wavefunctions must converge to zero as x → ∞."
+  },
+  {
+    "id": "pc5-hermite-solution-strategy",
+    "type": "multiple-choice",
+    "prompt": "What strategy does the section outline for solving the harmonic oscillator Schrödinger equation?",
+    "choices": [
+      {
+        "text": "Solve for large x, then multiply by a power series",
+        "correct": true
+      },
+      {
+        "text": "Guess sine waves, as for the particle in a box",
+        "why": "Sines fit a box with zero potential inside. Here the method is a large-x solution multiplied by a power series."
+      },
+      {
+        "text": "Set the potential energy to zero, then solve",
+        "why": "Dropping the potential would turn the problem into a free particle. The method keeps it and uses a large-x solution times a power series."
+      },
+      {
+        "text": "Solve it numerically, point by point, on a computer",
+        "why": "The section outlines an analytic method: find the solution for large x and multiply it by a power series."
+      }
+    ],
+    "explanation": "A common strategy is to find a solution valid for large values of the variable, here e^(−x²/2), and build the complete solution as that function times a power series. Truncating the series gives one polynomial for each v."
+  },
+  {
+    "id": "pc5-hermite-beta-purpose",
+    "type": "multiple-choice",
+    "prompt": "While solving the harmonic oscillator equation, why does the section define a parameter β by β^2 = ħ/√(μk)?",
+    "choices": [
+      {
+        "text": "To collect the constants and simplify the equation",
+        "correct": true
+      },
+      {
+        "text": "To make the energy levels equally spaced",
+        "why": "The levels are equally spaced whatever symbols are used. β just gathers the constants ħ, μ and k into one parameter."
+      },
+      {
+        "text": "To add the anharmonic part of the potential",
+        "why": "β contains only ħ, μ and k from the harmonic equation; it adds nothing to the potential."
+      },
+      {
+        "text": "To normalize the harmonic oscillator wavefunctions",
+        "why": "Normalization is the job of the constant N_v. β gathers the constants so that the equation is simpler to work with."
+      }
+    ],
+    "explanation": "The equation is simplified by collecting the constants ħ, μ and k into the parameter β and then changing the variable from q to x = q/β. This is a common strategy for solving differential equations."
+  },
+  {
+    "id": "pc5-hermite-x-units",
+    "type": "multiple-choice",
+    "prompt": "The section changes variable to x = q/β, where q is a displacement and β, defined by β^2 = ħ/√(μk), has units of length. What units does x have?",
+    "choices": [
+      {
+        "text": "None; x is a pure number",
+        "correct": true
+      },
+      {
+        "text": "Meters, the same as q",
+        "why": "Dividing a length by a length cancels the units, so x has none."
+      },
+      {
+        "text": "Square meters, like β^2",
+        "why": "x = q/β divides one length by another, which leaves no units; β^2 doesn't enter."
+      },
+      {
+        "text": "Joules, like the energy E_v",
+        "why": "x is a ratio of two lengths, so it has no units at all."
+      }
+    ],
+    "explanation": "Since q and β are both lengths, x = q/β is dimensionless. That is why a Hermite polynomial can add together terms in x, x^2, x^3 and so on."
+  },
+  {
+    "id": "pc5-hermite-truncation",
+    "type": "multiple-choice",
+    "prompt": "The section writes φ_v(x) as a power series, c_0 + c_1 x + c_2 x^2 + c_3 x^3 + …. How does it get a set of polynomials from this series?",
+    "choices": [
+      {
+        "text": "By cutting it off after a different term for each v",
+        "correct": true
+      },
+      {
+        "text": "By keeping every term of the series for every v",
+        "why": "An endless series is not a polynomial. Cutting the series off after a different term for each v gives one polynomial per v."
+      },
+      {
+        "text": "By keeping only the even powers of x",
+        "why": "That would leave out odd polynomials such as H_1 = 2x. The series is cut off after a different term for each v."
+      },
+      {
+        "text": "By setting every coefficient c_n equal to 1",
+        "why": "The coefficients are not all 1, as the Hermite polynomials show. The polynomials come from cutting the series off after different terms."
+      }
+    ],
+    "explanation": "Truncating the series after the first term, the second term, the third term and so on gives a set of polynomials, one for each v = 0, 1, 2, …. Each, multiplied by e^(−x²/2), gives a solution of the equation."
+  },
+  {
+    "id": "pc5-hermite-exponential-wins",
+    "type": "multiple-choice",
+    "prompt": "In ψ_v(x) = N_v H_v(x) e^(−x²/2), the Hermite polynomial H_v(x) grows without limit as x grows. Why does ψ_v still go to zero?",
+    "choices": [
+      {
+        "text": "e^(−x²/2) falls faster than the polynomial grows",
+        "correct": true
+      },
+      {
+        "text": "N_v gets smaller as x gets larger",
+        "why": "N_v is a constant; it doesn't depend on x. It's the decaying exponential that wins over the polynomial."
+      },
+      {
+        "text": "H_v(x) turns back down to zero for large x",
+        "why": "A polynomial keeps growing in size at large x. It's the decreasing exponential that pulls ψ_v to zero."
+      },
+      {
+        "text": "It doesn't; ψ_v grows without limit too",
+        "why": "That would make ψ_v impossible to normalize. The decreasing exponential overpowers the polynomial, so ψ_v goes to zero."
+      }
+    ],
+    "explanation": "Polynomials grow toward ±∞ as x grows, but the decreasing exponential e^(−x²/2) overpowers any polynomial, so the overall wavefunction approaches zero at large x and −x."
+  },
+  {
+    "id": "pc5-hermite-h4-at-1",
+    "type": "numeric",
+    "prompt": "The Hermite polynomial H_4(x) = 12 − 48x^2 + 16x^4. What is H_4(1)?",
+    "answer": -20,
+    "tolerance": 0,
+    "explanation": "H_4(1) = 12 − 48(1)^2 + 16(1)^4 = 12 − 48 + 16 = −20."
+  },
+  {
+    "id": "pc5-hermite-h2-zero",
+    "type": "numeric",
+    "prompt": "The Hermite polynomial H_2(x) = −2 + 4x^2, and ψ_2 has a node wherever H_2(x) = 0. At what positive value of x is H_2(x) zero? (Give it as a decimal.)",
+    "answer": 0.7071,
+    "explanation": "Setting −2 + 4x^2 = 0 gives x^2 = 2/4 = 0.5, so x = √(0.5) = 0.707. H_2 is zero at x = +0.707 and x = −0.707, so ψ_2 has two nodes, placed symmetrically about the center."
+  },
+  {
+    "id": "pc5-hermite-normalization",
+    "type": "multiple-choice",
+    "prompt": "Why does each harmonic oscillator wavefunction include a normalization constant N_v?",
+    "choices": [
+      {
+        "text": "To make the total probability equal 1",
+        "correct": true
+      },
+      {
+        "text": "To make the wavefunction go to zero at large x",
+        "why": "The exponential factor e^(−x²/2) does that. N_v only scales the whole function so that the total probability is 1."
+      },
+      {
+        "text": "To make the energy come out as (v + 1/2)ħω",
+        "why": "Multiplying ψ_v by a constant doesn't change its energy. N_v is there so that the probabilities add up to 1."
+      },
+      {
+        "text": "To give the wavefunction exactly v nodes",
+        "why": "A constant factor can't add or remove nodes; those come from H_v(x). N_v makes the total probability 1."
+      }
+    ],
+    "explanation": "Because ψ_v^*ψ_v is a probability density, the wavefunction must be normalized. The constant N_v scales ψ_v so that the probability of finding the oscillator somewhere is exactly 1."
+  },
+  {
+    "id": "pc5-hermite-n0",
+    "type": "numeric",
+    "prompt": "For v = 0, the normalization constant becomes N_0 = 1/π^(1/4). What is N_0? (Give it as a decimal.)",
+    "answer": 0.7511,
+    "explanation": "π^(1/4) = 3.1416^(0.25) = 1.331, so N_0 = 1/1.331 = 0.751. With this factor, ψ_0 = N_0 e^(−x²/2) has a total probability of exactly 1."
+  },
+  {
+    "id": "pc5-hermite-final-form",
+    "type": "multiple-choice",
+    "prompt": "Which expression is the final form of the harmonic oscillator wavefunctions given in the section?",
+    "choices": [
+      {
+        "text": "ψ_v(x) = N_v H_v(x) e^(−x²/2)",
+        "correct": true
+      },
+      {
+        "text": "ψ_v(x) = N_v H_v(x)",
+        "why": "Without the exponential, the polynomial would grow without limit and ψ_v couldn't be normalized."
+      },
+      {
+        "text": "ψ_v(x) = N_v sin(vπx) e^(−x²/2)",
+        "why": "Sine functions belong to the particle in a box. The harmonic oscillator uses the Hermite polynomials H_v(x)."
+      },
+      {
+        "text": "ψ_v(x) = N_v H_v(x) e^(x²/2)",
+        "why": "e^(x²/2) grows at large x. The exponent must be negative so that ψ_v goes to zero."
+      }
+    ],
+    "explanation": "Each wavefunction is a normalization constant N_v, times a Hermite polynomial H_v(x), times the Gaussian e^(−x²/2). The polynomial sets the shape and the nodes, and the exponential makes ψ_v vanish at large x."
+  },
+  {
+    "id": "pc5-hermite-alpha",
+    "type": "numeric",
+    "prompt": "In the alternative formulation of the wavefunctions, α = 1/β^2. If β^2 = 2.0 × 10^−22 m^2, what is α, in m^−2? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 5e+21,
+    "explanation": "α = 1/β^2 = 1/(2.0 × 10^−22 m^2) = 5.0 × 10^21 m^−2. Since β^2 = ħ/√(μk), α is also √(kμ/ħ^2)."
+  },
+  {
+    "id": "pc5-hermite-hbar-omega",
+    "type": "numeric",
+    "prompt": "Exercise 5.6.6 asks for ħω when a vibrational transition is seen at 3000 cm^−1. The photon energy equals ħω, so ħω = hcν̃. With h = 6.626 × 10^−34 J·s and c = 3.00 × 10^10 cm/s, what is ħω, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 5.9634e-20,
+    "unit": "J",
+    "explanation": "ħω = hcν̃ = (6.626 × 10^−34 J·s)(3.00 × 10^10 cm/s)(3000 cm^−1) = 5.96 × 10^−20 J. In wavenumber units, ħω is simply 3000 cm^−1."
+  },
+  {
+    "id": "pc5-hermite-plain-gaussian",
+    "type": "multiple-choice",
+    "prompt": "Which harmonic oscillator wavefunction is just a constant times the Gaussian e^(−x²/2), with no polynomial factor that depends on x?",
+    "choices": [
+      {
+        "text": "ψ_0, because H_0 = 1",
+        "correct": true
+      },
+      {
+        "text": "ψ_1, because H_1 = 2x",
+        "why": "H_1 = 2x depends on x, so ψ_1 = N_1(2x)e^(−x²/2) has an extra factor of x. Only H_0 = 1 is a constant."
+      },
+      {
+        "text": "ψ_2, because H_2 is even",
+        "why": "Being even doesn't make H_2 = −2 + 4x^2 a constant. Only H_0 = 1 is."
+      },
+      {
+        "text": "All of them, since H_v cancels out",
+        "why": "The Hermite polynomial never cancels; it gives each ψ_v its shape and nodes. Only H_0 = 1 leaves a plain Gaussian."
+      }
+    ],
+    "explanation": "Since H_0 = 1, ψ_0 = N_0 e^(−x²/2): a plain bell-shaped Gaussian with no nodes. Every higher ψ_v has a polynomial factor that changes with x and gives it nodes."
+  },
+  {
+    "id": "pc5-hermite-nodes",
+    "type": "multiple-choice",
+    "prompt": "How many nodes does the harmonic oscillator wavefunction ψ_v have?",
+    "choices": [
+      {
+        "text": "v",
+        "correct": true
+      },
+      {
+        "text": "v + 1",
+        "why": "ψ_0 = N_0 e^(−x²/2) is never zero, so it has 0 nodes, not 1. The count equals v."
+      },
+      {
+        "text": "v − 1",
+        "why": "For the particle in a box, n starts at 1 and ψ_n has n − 1 nodes. Here v starts at 0, and ψ_v has v nodes."
+      },
+      {
+        "text": "2v",
+        "why": "ψ_1 = N_1(2x)e^(−x²/2) is zero only at x = 0: one node, not two. The count equals v."
+      }
+    ],
+    "explanation": "The exponential is never zero, so the nodes are the zeros of H_v(x), and H_v has v of them. For example, H_1 = 2x is zero once, at x = 0, and H_2 = −2 + 4x^2 is zero twice, once on each side of the center."
+  },
+  {
+    "id": "pc5-hermite-gerade",
+    "type": "multiple-choice",
+    "prompt": "The section says ψ_v is gerade when v is even. What does gerade mean?",
+    "choices": [
+      {
+        "text": "Symmetric: ψ_v(−x) = ψ_v(x)",
+        "correct": true
+      },
+      {
+        "text": "Antisymmetric: ψ_v(−x) = −ψ_v(x)",
+        "why": "That is ungerade, which describes ψ_v for odd v."
+      },
+      {
+        "text": "Zero at the center, x = 0",
+        "why": "Odd functions are zero at the center. A gerade function such as ψ_0 is largest there."
+      },
+      {
+        "text": "Normalized so the total probability is 1",
+        "why": "All the ψ_v are normalized, for odd v as well as even. Gerade describes symmetry: ψ_v(−x) = ψ_v(x)."
+      }
+    ],
+    "explanation": "Gerade means even, or symmetric: the function is unchanged when x is replaced by −x. The symmetry alternates with v: ψ_0, ψ_2, ψ_4, … are gerade, and ψ_1, ψ_3, ψ_5, … are ungerade."
+  },
+  {
+    "id": "pc5-hermite-normal-coordinate",
+    "type": "multiple-choice",
+    "prompt": "According to the answer to Exercise 5.6.8, what is the normal coordinate?",
+    "choices": [
+      {
+        "text": "A linear combination of the atoms' Cartesian coordinates",
+        "correct": true
+      },
+      {
+        "text": "The distance of the molecule's center from the origin",
+        "why": "The normal coordinate follows a vibration, the atoms moving relative to each other, not where the molecule sits. It is a linear combination of the atomic Cartesian coordinates."
+      },
+      {
+        "text": "The angle through which the molecule has rotated",
+        "why": "Rotation is a separate motion. The normal coordinate is a linear combination of the atoms' Cartesian coordinates that describes a vibration."
+      },
+      {
+        "text": "The momentum of the heavier of the two atoms",
+        "why": "Momentum has its own operator, P̂_q. The normal coordinate is a combination of the atoms' positions."
+      }
+    ],
+    "explanation": "The normal coordinate is a linear combination of the atomic Cartesian coordinates that follows one vibration, or normal mode. In the Hamiltonian, q is the length of this coordinate and P̂_q is the momentum that goes with it."
+  },
+  {
+    "id": "pc5-hermite-classical-limit-x",
+    "type": "multiple-choice",
+    "prompt": "For the v = 0 state, the classical limit of the displacement, Q_0, corresponds to which value of the scaled coordinate x?",
+    "choices": [
+      {
+        "text": "x = 1",
+        "correct": true
+      },
+      {
+        "text": "x = 0",
+        "why": "x = 0 is the equilibrium position, the middle of the vibration, not its limit."
+      },
+      {
+        "text": "x = 1/2",
+        "why": "The section notes that for v = 0, Q = Q_0 corresponds to x = 1, not 1/2. That is why the error-function integral runs from 0 to 1."
+      },
+      {
+        "text": "x = √(2)",
+        "why": "For v = 0 the classical limit is at x = 1, which is why P[allowed] uses the integral from 0 to 1."
+      }
+    ],
+    "explanation": "For v = 0, Q = Q_0 corresponds to x = 1, so the classically allowed region runs from x = −1 to x = 1. That is why P[allowed] uses the integral from 0 to 1, which gives ERF(1)."
+  },
+  {
+    "id": "pc5-hermite-forbidden-region",
+    "type": "multiple-choice",
+    "prompt": "What is the classically forbidden region of a harmonic oscillator?",
+    "choices": [
+      {
+        "text": "Where its potential energy exceeds its total energy",
+        "correct": true
+      },
+      {
+        "text": "Where its kinetic energy is larger than its potential energy",
+        "why": "That happens near the center, inside the allowed region. The forbidden region is where V would be greater than the total energy."
+      },
+      {
+        "text": "Where its wavefunction has a node and is zero",
+        "why": "Nodes lie inside the allowed region. The forbidden region is beyond the classical limits, where V would be greater than E."
+      },
+      {
+        "text": "Where the stretched bond finally breaks apart",
+        "why": "A harmonic bond never breaks. The forbidden region is where the potential energy is greater than the total energy."
+      }
+    ],
+    "explanation": "Classically, when the potential energy equals the total energy, the kinetic energy and velocity are zero and the oscillator turns back. Beyond that point V > E, which is forbidden classically, but a quantum oscillator can be found there."
+  },
+  {
+    "id": "pc5-hermite-limits-grow",
+    "type": "multiple-choice",
+    "prompt": "How do the classical limits of the displacement for v = 1 compare with those for v = 0?",
+    "choices": [
+      {
+        "text": "They are farther out, because E_1 is larger than E_0",
+        "correct": true
+      },
+      {
+        "text": "They are the same for every value of v",
+        "why": "The classical limits are where the potential energy equals the total energy, and that depends on the level's energy."
+      },
+      {
+        "text": "They are closer in, because ψ_1 has a node",
+        "why": "Nodes don't set the classical limits; the total energy does. A higher energy reaches farther up the potential."
+      },
+      {
+        "text": "They are closer in, because E_1 is larger than E_0",
+        "why": "More energy means the oscillator can stretch farther before all its energy is potential energy, so the limits move out."
+      }
+    ],
+    "explanation": "The classical limit is where the potential energy equals the total energy. Higher states have higher total energies, so their classical limits on the displacement are larger."
+  },
+  {
+    "id": "pc5-hermite-tunneling",
+    "type": "multiple-choice",
+    "prompt": "A quantum oscillator has a finite probability of being where its potential energy is greater than its total energy. What phenomenon does this lead to?",
+    "choices": [
+      {
+        "text": "Quantum mechanical tunneling",
+        "correct": true
+      },
+      {
+        "text": "Zero-point motion",
+        "why": "Zero-point motion is the vibration that remains in the lowest state. Being found beyond the classical limit leads to tunneling."
+      },
+      {
+        "text": "The correspondence principle",
+        "why": "That principle says classical behavior returns at large quantum numbers. Entering the forbidden region is tunneling."
+      },
+      {
+        "text": "Anharmonicity",
+        "why": "Anharmonicity is a departure from the harmonic potential. Being found in the classically forbidden region leads to tunneling."
+      }
+    ],
+    "explanation": "The probability of finding the oscillator in the classically forbidden region is substantial, and it leads to the phenomenon called quantum mechanical tunneling."
+  },
+  {
+    "id": "pc5-hermite-tunneling-amplitude",
+    "type": "multiple-choice",
+    "prompt": "What does the oscillator's ability to enter the classically forbidden region mean for a molecular vibration?",
+    "choices": [
+      {
+        "text": "Its amplitude is larger than in the classical picture",
+        "correct": true
+      },
+      {
+        "text": "Its amplitude is smaller than in the classical picture",
+        "why": "It's the other way round: the oscillator can stretch beyond the classical limit, so the amplitude is larger."
+      },
+      {
+        "text": "Its vibrational frequency is doubled",
+        "why": "Entering the forbidden region doesn't change the frequency, which is set by k and μ. It makes the amplitude larger."
+      },
+      {
+        "text": "It stops vibrating in the ground state",
+        "why": "The oscillator never stops: even at v = 0 it has zero-point energy. Tunneling makes its amplitude larger than classically expected."
+      }
+    ],
+    "explanation": "Because the oscillator can have a displacement larger than is classically possible, the amplitude of a molecular vibration is larger than in a classical picture. In some situations this larger amplitude could enhance the chemical reactivity of a molecule."
+  },
+  {
+    "id": "pc5-hermite-factor-two",
+    "type": "multiple-choice",
+    "prompt": "To find P[allowed], the section replaces the integral of ψ_0^*ψ_0 from −Q_0 to +Q_0 with twice the integral from 0 to Q_0. Why is that allowed?",
+    "choices": [
+      {
+        "text": "ψ_0^*ψ_0 is an even function of Q",
+        "correct": true
+      },
+      {
+        "text": "ψ_0^*ψ_0 is an odd function of Q",
+        "why": "For an odd function the two halves would cancel, giving zero. Doubling one half works because the function is even."
+      },
+      {
+        "text": "ψ_0 is zero for negative values of Q",
+        "why": "ψ_0 is symmetric: as large at −Q as at +Q. That symmetry is why the two halves are equal."
+      },
+      {
+        "text": "The integral from −Q_0 to 0 is zero",
+        "why": "That half is not zero; it equals the half from 0 to Q_0, because the integrand is even."
+      }
+    ],
+    "explanation": "Because ψ_0^*ψ_0 is even, f(−Q) = f(Q), the area from −Q_0 to 0 equals the area from 0 to Q_0. So the whole integral is twice the integral from 0 to Q_0."
+  },
+  {
+    "id": "pc5-hermite-density-exponent",
+    "type": "multiple-choice",
+    "prompt": "ψ_0 contains the factor e^(−x²/2), but the integral for P[allowed] contains e^(−x²). Why does the exponent double?",
+    "choices": [
+      {
+        "text": "ψ_0^*ψ_0 multiplies two factors of e^(−x²/2)",
+        "correct": true
+      },
+      {
+        "text": "Normalizing ψ_0 doubles its exponent",
+        "why": "Normalization multiplies ψ_0 by a constant; it can't change the exponent. Squaring ψ_0 does: e^(−x²/2) × e^(−x²/2) = e^(−x²)."
+      },
+      {
+        "text": "The 2 in front of the integral was moved into it",
+        "why": "That factor 2 comes from the even integrand and stays in front. The exponent doubles because ψ_0^*ψ_0 has two exponential factors."
+      },
+      {
+        "text": "x is replaced by 2x at the classical limit",
+        "why": "The limits of the integral don't change the integrand. Multiplying ψ_0^* by ψ_0 gives e^(−x²/2) × e^(−x²/2) = e^(−x²)."
+      }
+    ],
+    "explanation": "The probability density is ψ_0^*ψ_0, and multiplying exponentials adds their exponents: e^(−x²/2) × e^(−x²/2) = e^(−x²). With N_0^2 = 1/√(π) in front, this gives P[allowed] = (2/√(π))∫ e^(−x²) dx from 0 to 1."
+  },
+  {
+    "id": "pc5-hermite-one-minus",
+    "type": "multiple-choice",
+    "prompt": "Why does the section compute P[forbidden] as 1 − P[allowed], instead of integrating over the forbidden region directly?",
+    "choices": [
+      {
+        "text": "The allowed-region integral can be found in tables",
+        "correct": true
+      },
+      {
+        "text": "The forbidden region has zero width",
+        "why": "The forbidden region stretches from Q_0 out to infinity. Its integral just isn't one that can be found in tables."
+      },
+      {
+        "text": "ψ_0 is not defined beyond the classical limit",
+        "why": "ψ_0 is defined everywhere and is nonzero beyond Q_0. The point is that the integral from 0 to Q_0 is in tables."
+      },
+      {
+        "text": "The forbidden-region integral would be negative",
+        "why": "A probability density is never negative, so no integral of it can be. The forbidden-region integral simply isn't in tables."
+      }
+    ],
+    "explanation": "The integral from 0 to Q_0 for the allowed region can be found in integral tables (it is an error function), but the integral from Q_0 to ∞ cannot. Since the total probability is 1, P[forbidden] = 1 − P[allowed]."
+  },
+  {
+    "id": "pc5-hermite-forbidden-p",
+    "type": "numeric",
+    "prompt": "For the v = 0 oscillator, the probability of being inside the classical limits is P[allowed] = ERF(1) = 0.843. Using P[forbidden] = 1 − P[allowed], what is the probability of finding it in the classically forbidden region? (Give it as a decimal.)",
+    "answer": 0.157,
+    "explanation": "P[forbidden] = 1 − 0.843 = 0.157. So the ground-state oscillator is found beyond its classical limits about 16% of the time, a substantial effect that leads to quantum mechanical tunneling."
+  }
+]

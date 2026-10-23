@@ -1,0 +1,576 @@
+[
+  {
+    "id": "pc8-antisymmetric-which-electron",
+    "type": "multiple-choice",
+    "prompt": "The wavefunctions of two electrons overlap, and an experiment detects one electron. According to quantum mechanics, can we tell which of the two electrons it was?",
+    "choices": [
+      {
+        "text": "No, and in principle we never can",
+        "correct": true
+      },
+      {
+        "text": "Yes, if the detector is precise enough",
+        "why": "Better equipment doesn't help. Identical electrons can't be told apart by any experimental means, so we cannot know which one was detected."
+      },
+      {
+        "text": "Yes, it is always the one labelled electron 1",
+        "why": "The labels 1 and 2 are only bookkeeping for the math. Nothing physical marks one electron as electron 1."
+      },
+      {
+        "text": "Yes, it is the one with the higher energy",
+        "why": "Identical electrons carry no tag, such as energy, that tells them apart. Quantum mechanics only gives the probability of finding an electron in a region."
+      }
+    ],
+    "explanation": "Electrons are indistinguishable. Asked which electron was detected, the answer is not only that we do not know, but that we cannot know, so the wavefunction must describe both particles."
+  },
+  {
+    "id": "pc8-antisymmetric-spin-orbitals-in-product",
+    "type": "multiple-choice",
+    "prompt": "In the product wavefunction |φ_a(r_1)⟩|φ_b(r_2)⟩ for two electrons, what kind of functions are φ_a and φ_b?",
+    "choices": [
+      {
+        "text": "One-electron spin-orbitals, with spatial and spin parts",
+        "correct": true
+      },
+      {
+        "text": "Spatial orbitals only, with no spin part",
+        "why": "The section calls them spin-orbitals: each has a spatial component and a spin component."
+      },
+      {
+        "text": "Two-electron wavefunctions, one for each electron pair",
+        "why": "Each factor describes a single electron. The product of the two one-electron spin-orbitals is the two-electron function."
+      },
+      {
+        "text": "Spin functions only, α or β, with no spatial part",
+        "why": "A spin-orbital has a spatial part too, such as 1s, combined with the spin function."
+      }
+    ],
+    "explanation": "In the orbital approximation each factor is a one-particle spin-orbital: a spatial orbital combined with a spin function. Electron 1 is put in φ_a and electron 2 in φ_b."
+  },
+  {
+    "id": "pc8-antisymmetric-separate-when",
+    "type": "multiple-choice",
+    "prompt": "When does the product |φ_a(r_1)⟩|φ_b(r_2)⟩ split the two-electron Schrödinger equation exactly into two one-electron equations?",
+    "choices": [
+      {
+        "text": "When the electrons don't interact, so V_12 = 0",
+        "correct": true
+      },
+      {
+        "text": "Whenever the two electrons are in the same orbital",
+        "why": "Sharing an orbital doesn't remove the electrons' repulsion. The split is exact only if the particles do not interact, V_12 = 0."
+      },
+      {
+        "text": "Always, for any atom with two electrons",
+        "why": "Real electrons repel each other. The equation separates exactly only when the interaction V_12 is set to zero."
+      },
+      {
+        "text": "Only when the nucleus has a charge of +1",
+        "why": "The nuclear charge doesn't decide it. What stops the split is the electron–electron interaction V_12; the product works exactly only when V_12 = 0."
+      }
+    ],
+    "explanation": "The product turns the equation into one equation for electron 1 and one for electron 2, provided the particles do not interact: ∇_1^2 does not act on φ_b(r_2), and V_12 = 0."
+  },
+  {
+    "id": "pc8-antisymmetric-density-labels",
+    "type": "multiple-choice",
+    "prompt": "Labels 1 and 2 are attached to the electrons when a two-electron wavefunction is built from one-electron functions. What must not depend on these labels?",
+    "choices": [
+      {
+        "text": "The probability density |ψ|^2",
+        "correct": true
+      },
+      {
+        "text": "The sign of the wavefunction ψ",
+        "why": "The sign of ψ can change when the labels are swapped, and for electrons it does. Only the measurable |ψ|^2 must stay the same."
+      },
+      {
+        "text": "The energy of each separate electron",
+        "why": "Separate electron energies aren't the point here. The measurable quantity |ψ|^2 must not change when the labels are swapped."
+      },
+      {
+        "text": "Which orbital electron 1 is in",
+        "why": "That depends entirely on the labels, and it can't be measured. What must be label-independent is the measurable probability density |ψ|^2."
+      }
+    ],
+    "explanation": "The labels are unphysical, because identical electrons can't be told apart. So the measurable quantity, the probability density |ψ|^2, must come out the same whichever electron is called 1 and whichever is called 2."
+  },
+  {
+    "id": "pc8-antisymmetric-one-electron-charge",
+    "type": "multiple-choice",
+    "prompt": "According to the section's guide statement, how much charge density does each atomic spin-orbital describe in a product wavefunction?",
+    "choices": [
+      {
+        "text": "Exactly one electron's worth",
+        "correct": true
+      },
+      {
+        "text": "Two electrons' worth, one α and one β",
+        "why": "Two electrons, α and β, can share a spatial orbital. A spin-orbital already includes the spin, so it describes exactly one electron's worth."
+      },
+      {
+        "text": "Half an electron's worth",
+        "why": "The total charge density described by one spin-orbital is exactly one electron's worth, not a fraction of one."
+      },
+      {
+        "text": "The whole atom's electron charge",
+        "why": "The atom's charge is shared among its spin-orbitals: each one describes exactly one electron's worth of charge density."
+      }
+    ],
+    "explanation": "The guide statement is: when a multi-electron wavefunction is built as a product of single-electron wavefunctions, exactly one electron's worth of charge density is described by each atomic spin-orbital."
+  },
+  {
+    "id": "pc8-antisymmetric-phase-factor-allowed",
+    "type": "multiple-choice",
+    "prompt": "When two identical particles are swapped, the wavefunction may change by a factor e^(iφ). Why doesn't this factor change anything measurable?",
+    "choices": [
+      {
+        "text": "It cancels in ψ^*ψ, since e^(−iφ)e^(iφ) = 1",
+        "correct": true
+      },
+      {
+        "text": "Because φ is always zero for real particles",
+        "why": "φ can be π, as it is for electrons, giving a factor of −1. The factor drops out of measurable quantities because it cancels in ψ^*ψ."
+      },
+      {
+        "text": "Because e^(iφ) is too small to measure",
+        "why": "e^(iφ) has modulus 1, so it isn't small. It drops out of ψ^*ψ because e^(−iφ)e^(iφ) = 1."
+      },
+      {
+        "text": "Because measurements use ψ itself, not ψ^*ψ",
+        "why": "It's the other way round: probabilities and expectation values involve ψ^*ψ, and in that product the factor cancels."
+      }
+    ],
+    "explanation": "The probability density is ψ^*ψ, and all expectation values involve ψ and ψ^* together. A factor e^(iφ) in ψ comes with e^(−iφ) in ψ^*, and e^(−iφ)e^(iφ) = 1, so it disappears from anything measurable."
+  },
+  {
+    "id": "pc8-antisymmetric-how-to-swap",
+    "type": "multiple-choice",
+    "prompt": "How is the exchanged wavefunction ψ(r_2, r_1) obtained from ψ(r_1, r_2)?",
+    "choices": [
+      {
+        "text": "Swap the coordinates r_1 and r_2",
+        "correct": true
+      },
+      {
+        "text": "Change the sign of each coordinate",
+        "why": "That is an inversion through the origin, r → −r. Exchange swaps r_1 and r_2 between the two particles."
+      },
+      {
+        "text": "Take the complex conjugate of ψ",
+        "why": "Conjugating gives ψ^*, which is a different operation. Exchange puts r_2 where r_1 was and r_1 where r_2 was."
+      },
+      {
+        "text": "Multiply the whole of ψ by −1",
+        "why": "That is what the swap does to an electron wavefunction, not how the swap is made. The swap itself substitutes r_2 for r_1 and r_1 for r_2."
+      }
+    ],
+    "explanation": "To exchange two particles, substitute the coordinates of particle 1 (r_1) for those of particle 2 (r_2) and vice versa. For electrons, the new function ψ(r_2, r_1) turns out to be −ψ(r_1, r_2)."
+  },
+  {
+    "id": "pc8-antisymmetric-double-swap",
+    "type": "multiple-choice",
+    "prompt": "Why must swapping the same two identical particles twice leave the wavefunction exactly as it was?",
+    "choices": [
+      {
+        "text": "Two swaps restore the original arrangement",
+        "correct": true
+      },
+      {
+        "text": "Each swap leaves ψ unchanged anyway",
+        "why": "For electrons a single swap changes the sign of ψ. It is the second swap that brings back the original situation, so the overall factor e^(i2φ) must be 1."
+      },
+      {
+        "text": "Normalization forces ψ back after any swap",
+        "why": "Normalization fixes the size of ψ, not its phase. The overall factor is 1 because two swaps put the particles back as they started."
+      },
+      {
+        "text": "Energy must be conserved in the swap",
+        "why": "Energy isn't the reason. Swapping twice returns, by definition, to the original situation, so e^(iφ)e^(iφ) must equal 1."
+      }
+    ],
+    "explanation": "If we exchange two identical particles twice, we are by definition back where we started. Each swap multiplies ψ by e^(iφ), so e^(iφ)e^(iφ) = e^(i2φ) must equal 1."
+  },
+  {
+    "id": "pc8-antisymmetric-phi-values",
+    "type": "multiple-choice",
+    "prompt": "The condition e^(i2φ) = 1 holds only for which values of φ?",
+    "choices": [
+      {
+        "text": "φ = 0 or an integer multiple of π",
+        "correct": true
+      },
+      {
+        "text": "Any real value of φ between 0 and 2π",
+        "why": "e^(i2φ) equals 1 only at special angles. At φ = π/2, for example, e^(i2φ) = e^(iπ) = −1."
+      },
+      {
+        "text": "Only φ = 0, with no other solutions",
+        "why": "φ = π works too: e^(i2π) = 1. So φ can be 0 or any integer multiple of π, which allows e^(iφ) = −1 as well as +1."
+      },
+      {
+        "text": "Only odd multiples of π/2, such as π/2",
+        "why": "At φ = π/2, e^(i2φ) = e^(iπ) = −1, not 1. The condition holds for φ = 0 or a multiple of π."
+      }
+    ],
+    "explanation": "e^(i2φ) = 1 is true only if φ = 0 or an integer multiple of π. So the exchange factor e^(iφ) is either +1 (φ = 0) or −1 (φ = π), and both are found in nature."
+  },
+  {
+    "id": "pc8-antisymmetric-euler-phase",
+    "type": "numeric",
+    "prompt": "For fermions, the exchange factor is e^(iφ) with φ = π. Use Euler's equality, e^(iπ) + 1 = 0. What is the value of e^(iπ)?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "From e^(iπ) + 1 = 0, e^(iπ) = −1. So swapping two fermions, such as two electrons, multiplies their wavefunction by −1: the wavefunction is antisymmetric."
+  },
+  {
+    "id": "pc8-antisymmetric-p12-does",
+    "type": "multiple-choice",
+    "prompt": "What does the exchange operator P̂_12 do to a two-particle wavefunction?",
+    "choices": [
+      {
+        "text": "It swaps the labels of the two particles",
+        "correct": true
+      },
+      {
+        "text": "It measures the energy of the two particles",
+        "why": "That's the job of the Hamiltonian Ĥ. P̂_12 permutes the labels of the particles in the wavefunction."
+      },
+      {
+        "text": "It flips the spin of both particles",
+        "why": "P̂_12 doesn't flip spins. It interchanges the labels 1 and 2, so ψ(r_1, r_2) becomes ψ(r_2, r_1)."
+      },
+      {
+        "text": "It removes the repulsion between them",
+        "why": "P̂_12 doesn't change the Hamiltonian. It just permutes the particle labels in the wavefunction."
+      }
+    ],
+    "explanation": "P̂_12 permutes the labels of the particles in a multi-particle wavefunction, turning ψ(r_1, r_2) into ψ(r_2, r_1). It is an odd operator, because it changes only the unphysical labels attached to make the math easier."
+  },
+  {
+    "id": "pc8-antisymmetric-commute",
+    "type": "multiple-choice",
+    "prompt": "Physical solutions must be eigenfunctions of both the Hamiltonian Ĥ and the exchange operator P̂_12. What must therefore be true of these two operators?",
+    "choices": [
+      {
+        "text": "They must commute",
+        "correct": true
+      },
+      {
+        "text": "They must be the same operator",
+        "why": "Ĥ gives energies and P̂_12 swaps labels, so they are different operators. They only need to commute to share eigenfunctions."
+      },
+      {
+        "text": "Their eigenvalues must be equal",
+        "why": "Their eigenvalues are different things: energies for Ĥ, ±1 for P̂_12. Sharing eigenfunctions requires the operators to commute."
+      },
+      {
+        "text": "Their product must be zero",
+        "why": "That isn't the condition. Two operators can have common eigenfunctions when they commute: ĤP̂_12 = P̂_12 Ĥ."
+      }
+    ],
+    "explanation": "Any physically meaningful Hamiltonian must commute with P̂_12. Otherwise Ĥ and P̂_12 could not have common eigenfunctions, and the system could not stay in an eigenstate of exchange."
+  },
+  {
+    "id": "pc8-antisymmetric-eigenvalues",
+    "type": "multiple-choice",
+    "prompt": "What are the eigenvalues of the exchange operator P̂_12 for bosons and for fermions?",
+    "choices": [
+      {
+        "text": "+1 for bosons and −1 for fermions",
+        "correct": true
+      },
+      {
+        "text": "−1 for bosons and +1 for fermions",
+        "why": "It's the other way round. Boson wavefunctions are symmetric (+1); fermion wavefunctions, such as those of electrons, are antisymmetric (−1)."
+      },
+      {
+        "text": "1 for bosons and 1/2 for fermions",
+        "why": "Those numbers look like spins, not exchange eigenvalues. Swapping labels multiplies ψ by +1 for bosons and −1 for fermions."
+      },
+      {
+        "text": "+1 for bosons and 0 for fermions",
+        "why": "An eigenvalue of 0 would make P̂_12ψ = 0. Swapping a fermion's labels changes the sign of ψ, so the eigenvalue is −1."
+      }
+    ],
+    "explanation": "Swapping twice must give back ψ, so the eigenvalues of P̂_12 can only be +1 or −1. Bosons have symmetric wavefunctions (+1); fermions have antisymmetric ones (−1)."
+  },
+  {
+    "id": "pc8-antisymmetric-equation",
+    "type": "multiple-choice",
+    "prompt": "Which equation says that a two-electron wavefunction is antisymmetric?",
+    "choices": [
+      {
+        "text": "ψ(r_2, r_1) = −ψ(r_1, r_2)",
+        "correct": true
+      },
+      {
+        "text": "ψ(r_2, r_1) = ψ(r_1, r_2)",
+        "why": "This is the symmetric case, which holds for bosons. An antisymmetric function changes sign when the coordinates are swapped."
+      },
+      {
+        "text": "ψ(−r_1, −r_2) = −ψ(r_1, r_2)",
+        "why": "This is about inverting the coordinates through the origin, not swapping the two electrons. Antisymmetry is ψ(r_2, r_1) = −ψ(r_1, r_2)."
+      },
+      {
+        "text": "ψ^*(r_1, r_2) = −ψ(r_1, r_2)",
+        "why": "This relates ψ to its complex conjugate, with no swap of electrons. Antisymmetry is about exchanging r_1 and r_2."
+      }
+    ],
+    "explanation": "A wavefunction that is antisymmetric to electron interchange changes sign when the electron coordinates are interchanged: ψ(r_2, r_1) = −ψ(r_1, r_2). Its exchange factor is e^(iφ) = −1."
+  },
+  {
+    "id": "pc8-antisymmetric-swapped-value",
+    "type": "numeric",
+    "prompt": "Electrons are fermions, so a two-electron wavefunction is antisymmetric. At a certain pair of positions, ψ(r_1, r_2) = 0.30. What is ψ(r_2, r_1), the value after the electrons' coordinates are swapped?",
+    "answer": -0.3,
+    "explanation": "For fermions the exchange factor is −1: ψ(r_2, r_1) = −ψ(r_1, r_2) = −0.30. The size is unchanged; only the sign flips."
+  },
+  {
+    "id": "pc8-antisymmetric-density-after-swap",
+    "type": "numeric",
+    "prompt": "A real, antisymmetric two-electron wavefunction has the value ψ(r_1, r_2) = −0.20 at a certain pair of positions. What is the probability density |ψ(r_2, r_1)|^2 after the electrons' coordinates are swapped?",
+    "answer": 0.04,
+    "explanation": "The swap gives ψ(r_2, r_1) = −(−0.20) = +0.20, so |ψ(r_2, r_1)|^2 = (0.20)^2 = 0.04. That equals |ψ(r_1, r_2)|^2 = (−0.20)^2 = 0.04: the sign of ψ changes, but the probability density doesn't."
+  },
+  {
+    "id": "pc8-antisymmetric-which-boson",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which of these particles is a boson?",
+    "choices": [
+      {
+        "text": "A photon",
+        "correct": true
+      },
+      {
+        "text": "An electron",
+        "why": "Electrons are fermions, with half-integer spin and antisymmetric wavefunctions. Photons, gluons and deuterium nuclei are the section's bosons."
+      },
+      {
+        "text": "A proton",
+        "why": "Protons are fermions, like electrons and neutrinos. The section's examples of bosons are photons, gluons and deuterium nuclei."
+      },
+      {
+        "text": "A neutrino",
+        "why": "Neutrinos are fermions. Bosons have integer spin; the section's examples are photons, gluons and deuterium nuclei."
+      }
+    ],
+    "explanation": "Bosons have symmetric wavefunctions and integer spin; the section's examples are deuterium nuclei, photons and gluons. Electrons, protons and neutrinos are fermions."
+  },
+  {
+    "id": "pc8-antisymmetric-boson-fermion-spin",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how do bosons and fermions differ in spin?",
+    "choices": [
+      {
+        "text": "Bosons have integer spin; fermions have half-integer spin",
+        "correct": true
+      },
+      {
+        "text": "Bosons have half-integer spin; fermions have integer spin",
+        "why": "It's the other way round. Electrons, with spin 1/2, are fermions; photons, with integer spin, are bosons."
+      },
+      {
+        "text": "Bosons have spin; fermions have no spin at all",
+        "why": "Fermions such as electrons do have spin: half-integer spin. Bosons have integer spin."
+      },
+      {
+        "text": "Both have spin 1/2; they differ only in mass",
+        "why": "Mass isn't what separates them: photons and deuterium nuclei are both bosons. Bosons have integer spin, fermions half-integer spin."
+      }
+    ],
+    "explanation": "Particles whose wavefunctions are symmetric to exchange are bosons and have integer spin (photons, gluons, deuterium nuclei). Those with antisymmetric wavefunctions are fermions and have half-integer spin (electrons, protons, neutrinos)."
+  },
+  {
+    "id": "pc8-antisymmetric-deuterium-product",
+    "type": "multiple-choice",
+    "prompt": "Why can the product function φ(r_1)φ(r_2) describe two deuterium nuclei but not two electrons?",
+    "choices": [
+      {
+        "text": "It is unchanged by a swap, which suits bosons only",
+        "correct": true
+      },
+      {
+        "text": "It changes sign on a swap, which suits bosons only",
+        "why": "Swapping gives φ(r_2)φ(r_1), the same as φ(r_1)φ(r_2), so the product doesn't change sign. Being symmetric, it suits bosons."
+      },
+      {
+        "text": "Deuterium nuclei are too heavy to have a wavefunction",
+        "why": "Heavy particles have wavefunctions too. The product is symmetric to exchange, which fits bosons like deuterium nuclei but not fermions like electrons."
+      },
+      {
+        "text": "Electrons can't be described by one-particle functions",
+        "why": "They can be: the section builds electron wavefunctions from one-electron spin-orbitals. The trouble is that this product is symmetric, and electrons need an antisymmetric function."
+      }
+    ],
+    "explanation": "Swapping r_1 and r_2 turns φ(r_1)φ(r_2) into φ(r_2)φ(r_1), which is the same function. That symmetric behavior fits bosons such as deuterium nuclei, but a fermion wavefunction must become −1 times the original."
+  },
+  {
+    "id": "pc8-antisymmetric-applies-to-all",
+    "type": "multiple-choice",
+    "prompt": "To which multi-electron wavefunctions does the requirement of antisymmetry apply?",
+    "choices": [
+      {
+        "text": "All, including approximate product functions",
+        "correct": true
+      },
+      {
+        "text": "Only exact solutions of the Schrödinger equation",
+        "why": "The requirement applies to all multi-electron functions, including approximate ones built as products of single-electron functions."
+      },
+      {
+        "text": "Only the wavefunction of the helium atom",
+        "why": "Helium is just the simplest example. Every wavefunction for more than one electron must be antisymmetric, because electrons are fermions."
+      },
+      {
+        "text": "Only wavefunctions of excited states",
+        "why": "Ground states must be antisymmetric too, as the helium ground state shows. The rule applies to every multi-electron wavefunction."
+      }
+    ],
+    "explanation": "Since electrons are fermions, any wavefunction for several electrons must be antisymmetric to their permutation. This applies to all multi-electron functions, including those approximated as products φ_a(r_1)φ_b(r_2)…φ_i(r_i)."
+  },
+  {
+    "id": "pc8-antisymmetric-linear-combination",
+    "type": "multiple-choice",
+    "prompt": "A simple product φ_a(r_1)φ_b(r_2) with φ_a ≠ φ_b is not an eigenfunction of the exchange operator. What is needed instead?",
+    "choices": [
+      {
+        "text": "A linear combination of all the permutations",
+        "correct": true
+      },
+      {
+        "text": "A product with more one-electron factors",
+        "why": "Adding factors doesn't fix the labelling problem. A combination of the product and its permuted versions is needed."
+      },
+      {
+        "text": "The product multiplied by a phase factor e^(iφ)",
+        "why": "A phase factor doesn't help: the swapped product is a different function, not a multiple of the original. A linear combination of all permutations is needed."
+      },
+      {
+        "text": "The same spin-orbital for both electrons",
+        "why": "With φ_a = φ_b the product is symmetric, which electrons can't use. The fix is a linear combination of all permutations of the product."
+      }
+    ],
+    "explanation": "A simple product is an eigenfunction of P̂_12 only if φ_a = φ_b. To satisfy indistinguishability, a linear combination of all permutations is needed, such as φ_a(r_1)φ_b(r_2) − φ_a(r_2)φ_b(r_1)."
+  },
+  {
+    "id": "pc8-antisymmetric-same-spin-orbital-zero",
+    "type": "numeric",
+    "prompt": "Suppose both electrons were put in the same spin-orbital φ_a. At a certain pair of positions, φ_a(r_1) = 0.50 and φ_a(r_2) = 0.40. What is the value there of the antisymmetric combination ψ^− = (1/√2)[φ_a(r_1)φ_a(r_2) − φ_a(r_2)φ_a(r_1)]?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "ψ^− = (1/√2)[(0.50)(0.40) − (0.40)(0.50)] = (1/√2)(0.20 − 0.20) = 0. The same happens at every pair of positions, so no antisymmetric function puts two electrons in one spin-orbital: this is the Pauli exclusion principle."
+  },
+  {
+    "id": "pc8-antisymmetric-count-antisymmetric",
+    "type": "numeric",
+    "prompt": "Two particles are each to be described by state φ_a or φ_b. For bosons there are three limiting symmetric combinations: one with the particles in different states, one with both in φ_a and one with both in φ_b. For two electrons, how many nonzero antisymmetric combinations can be built?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Only one: (1/√2)[φ_a(r_1)φ_b(r_2) − φ_a(r_2)φ_b(r_1)], with the electrons in different states. Antisymmetric combinations with both electrons in φ_a or both in φ_b are zero, so the Pauli principle rules them out."
+  },
+  {
+    "id": "pc8-antisymmetric-pauli-statement",
+    "type": "multiple-choice",
+    "prompt": "How does the section state the Pauli exclusion principle in terms of spin-orbitals?",
+    "choices": [
+      {
+        "text": "No two electrons can be in the same spin-orbital",
+        "correct": true
+      },
+      {
+        "text": "No two electrons can share a spatial orbital",
+        "why": "Two electrons can share a spatial orbital, such as 1s, if their spins are opposite. They then have different spin-orbitals."
+      },
+      {
+        "text": "No two electrons in an atom can have the same spin",
+        "why": "Many electrons in an atom have spin α, as long as they are in different spatial orbitals. What's forbidden is the same spin-orbital."
+      },
+      {
+        "text": "No two electrons can have the same energy",
+        "why": "Electrons in the same subshell share an energy, like the two 1s electrons of helium. The rule is about spin-orbitals, not energies."
+      }
+    ],
+    "explanation": "The Pauli exclusion principle says two electrons cannot be described by the same spin-orbital. A spin-orbital fixes both the spatial orbital and the spin, so two electrons in one spatial orbital must have opposite spins."
+  },
+  {
+    "id": "pc8-antisymmetric-pauli-is-antisymmetry",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the Pauli exclusion principle is simply which requirement?",
+    "choices": [
+      {
+        "text": "That electron wavefunctions be antisymmetric",
+        "correct": true
+      },
+      {
+        "text": "That electron wavefunctions be symmetric",
+        "why": "Symmetric wavefunctions belong to bosons, which can share a state. Electrons are fermions, so their wavefunctions must be antisymmetric, and that is the Pauli principle."
+      },
+      {
+        "text": "That each electron be in its own spatial orbital",
+        "why": "Two electrons can share a spatial orbital if their spins are opposite. The deeper requirement is that the wavefunction be antisymmetric for electrons."
+      },
+      {
+        "text": "That electrons fill the lowest orbitals first",
+        "why": "That's the aufbau idea of filling order. The Pauli principle is the requirement that electron wavefunctions be antisymmetric."
+      }
+    ],
+    "explanation": "The Pauli exclusion principle is simply the requirement that the wavefunction be antisymmetric for electrons, since they are fermions. An antisymmetric function vanishes if two electrons are given the same spin-orbital."
+  },
+  {
+    "id": "pc8-antisymmetric-beryllium-spins",
+    "type": "multiple-choice",
+    "prompt": "In beryllium, 1s^2 2s^2, why must the two 2s electrons have opposite spins?",
+    "choices": [
+      {
+        "text": "Otherwise they would share all four quantum numbers",
+        "correct": true
+      },
+      {
+        "text": "Opposite spins give the 2s orbital its spherical shape",
+        "why": "The shape of an s orbital comes from its spatial part. The spins must differ because two electrons with the same n, l, m_l and m_s would break the Pauli principle."
+      },
+      {
+        "text": "Spin α is allowed only in the 1s orbital",
+        "why": "Spin α and spin β are both allowed in any orbital. In one spatial orbital, though, the two electrons must take one each."
+      },
+      {
+        "text": "Opposite spins make the atom's total energy zero",
+        "why": "Spins don't make the energy zero. The two 2s electrons already share n, l and m_l, so they must differ in m_s to obey the Pauli principle."
+      }
+    ],
+    "explanation": "Each spatial orbital can hold one α and one β electron. The two 2s electrons already share n, l and m_l; if their spins were the same too, they would have the same four quantum numbers, which the Pauli exclusion principle forbids."
+  },
+  {
+    "id": "pc8-antisymmetric-3d-capacity",
+    "type": "numeric",
+    "prompt": "A 3d subshell has five spatial orbitals, and each can combine with spin α or spin β to make a spin-orbital. By the Pauli exclusion principle, each spin-orbital can describe at most one electron. What is the most electrons a 3d subshell can hold?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "5 spatial orbitals × 2 spin functions = 10 spin-orbitals. Each holds at most one electron, so a 3d subshell holds at most 10 electrons, two of opposite spin in each spatial orbital."
+  },
+  {
+    "id": "pc8-antisymmetric-permutation-symmetry",
+    "type": "multiple-choice",
+    "prompt": "What is meant by the permutation symmetry of a wavefunction?",
+    "choices": [
+      {
+        "text": "How it behaves when two identical particles swap",
+        "correct": true
+      },
+      {
+        "text": "How it behaves when it is rotated about the nucleus",
+        "why": "That would be rotational symmetry. Permutation symmetry is about interchanging two identical particles: does ψ stay the same (symmetric) or change sign (antisymmetric)?"
+      },
+      {
+        "text": "How it behaves when the coordinates change sign",
+        "why": "Changing r to −r is inversion, or parity. Permutation symmetry is about swapping the coordinates of two identical particles."
+      },
+      {
+        "text": "How its energy changes as electrons are added",
+        "why": "Adding electrons is a different question. Permutation symmetry describes what happens to ψ when two identical particles are interchanged."
+      }
+    ],
+    "explanation": "Permutation symmetry is how a wavefunction responds to interchanging (permuting) two identical particles. It is symmetric if ψ is unchanged, as for bosons, and antisymmetric if ψ changes sign, as for electrons and other fermions."
+  }
+]

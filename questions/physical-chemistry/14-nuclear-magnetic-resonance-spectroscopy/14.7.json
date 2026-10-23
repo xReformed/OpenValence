@@ -1,0 +1,563 @@
+[
+  {
+    "id": "pc14-equivalent-ethane-singlet",
+    "type": "multiple-choice",
+    "prompt": "All six protons of ethane, CH3CH3, are chemically equivalent. What does its ^1H NMR spectrum show?",
+    "choices": [
+      {
+        "text": "A single line, a singlet",
+        "correct": true
+      },
+      {
+        "text": "A quartet, from the three protons on the other carbon",
+        "why": "That would need the two CH3 groups to be non-equivalent. Every proton in ethane is equivalent, and equivalent protons don't split each other."
+      },
+      {
+        "text": "A dodecuplet, from coupling among all the protons",
+        "why": "Coupling among equivalent protons produces no splitting, so no many-line pattern appears. Ethane gives one unsplit line."
+      },
+      {
+        "text": "Two lines, one for each CH3 group",
+        "why": "The two CH3 groups are equivalent, so their protons absorb at the same frequency. Ethane gives a single line."
+      }
+    ],
+    "explanation": "It is an observed fact that equivalent hydrogens do not split one another. All of ethane's protons are equivalent, so its spectrum is a singlet, not a quartet or a dodecuplet."
+  },
+  {
+    "id": "pc14-equivalent-coupling-term",
+    "type": "multiple-choice",
+    "prompt": "In frequency units, the section writes the Hamiltonian for two coupled spins as Ĥ = ν_1 Î_1z + ν_2 Î_2z + J_12(Î_1·Î_2). What does the last term describe?",
+    "choices": [
+      {
+        "text": "The coupling between the two nuclear spins",
+        "correct": true
+      },
+      {
+        "text": "Each nucleus's interaction with the field B_0",
+        "why": "That's the job of the first two terms, with ν_1 and ν_2 the Larmor frequencies. The J_12 term couples the two spins to each other."
+      },
+      {
+        "text": "The radiofrequency field that drives transitions",
+        "why": "That field enters through a separate Hamiltonian, Ĥ' = ω'(Î_1x + Î_2x). The J_12 term is the spin–spin coupling."
+      },
+      {
+        "text": "The shielding of each nucleus by its electrons",
+        "why": "Shielding affects each nucleus's own frequency, ν_1 or ν_2. The J_12 term couples the two spins, with J_12 the coupling constant in Hz."
+      }
+    ],
+    "explanation": "ν_1 Î_1z and ν_2 Î_2z describe each nucleus in the field at its own Larmor frequency. J_12(Î_1·Î_2) is the spin–spin coupling, where J_12 is the coupling constant in Hz."
+  },
+  {
+    "id": "pc14-equivalent-same-frequency",
+    "type": "multiple-choice",
+    "prompt": "To treat two chemically equivalent nuclei, what does the section set equal in the Hamiltonian?",
+    "choices": [
+      {
+        "text": "Their frequencies: ν_1 = ν_2 = ν",
+        "correct": true
+      },
+      {
+        "text": "Their spin states: both α",
+        "why": "The spin states aren't fixed; all four combinations of α and β make up the basis. Equivalent nuclei share the same frequency, so ν_1 = ν_2 = ν."
+      },
+      {
+        "text": "Their z-projections: Î_1z = Î_2z = 0",
+        "why": "Î_1z and Î_2z are operators with eigenvalues ±1/2, not zero. Equivalence means the two nuclei have the same frequency ν."
+      },
+      {
+        "text": "Their frequencies, as opposites: ν_1 = −ν_2",
+        "why": "Equivalent nuclei sit in the same environment, so their frequencies are equal, not opposite: ν_1 = ν_2 = ν."
+      }
+    ],
+    "explanation": "Equivalent nuclei have the same Larmor frequency, so the section sets ν_1 = ν_2 = ν and drops the subscript on J. The Hamiltonian becomes Ĥ = ν(Î_1z + Î_2z) + J(Î_1·Î_2)."
+  },
+  {
+    "id": "pc14-equivalent-still-couple",
+    "type": "multiple-choice",
+    "prompt": "Equivalent protons show no splitting. Does that mean the coupling constant J between them is zero?",
+    "choices": [
+      {
+        "text": "No; they couple, but no splitting appears",
+        "correct": true
+      },
+      {
+        "text": "Yes; equivalent nuclei always have J = 0",
+        "why": "The section's note says magnetically equivalent nuclei do couple. J stays in the Hamiltonian; it just doesn't change the observed line."
+      },
+      {
+        "text": "Yes, unless they are attached to different atoms",
+        "why": "J isn't zero in either case. Equivalent nuclei couple, but the coupling produces no splitting in the spectrum."
+      },
+      {
+        "text": "No; their coupling splits the line into a doublet",
+        "why": "They do couple, but no doublet appears: the allowed transitions all have the same frequency, so a single line is seen."
+      }
+    ],
+    "explanation": "Magnetically equivalent nuclei do in fact couple to each other, but no splitting is observed. The coupling shifts the energy levels without changing the frequency of the allowed transitions."
+  },
+  {
+    "id": "pc14-equivalent-shift-operator",
+    "type": "multiple-choice",
+    "prompt": "The section uses shift operators to work out how Î_1·Î_2 acts on the basis states. What does the shift operator Î_(i+) do to the state |β_i⟩?",
+    "choices": [
+      {
+        "text": "It turns it into |α_i⟩",
+        "correct": true
+      },
+      {
+        "text": "It gives zero",
+        "why": "Î_(i+) gives zero only on |α_i⟩, which can't be raised further. On |β_i⟩ it gives |α_i⟩."
+      },
+      {
+        "text": "It turns it into −1/2|β_i⟩",
+        "why": "That's the action of Î_iz, which gives the z-projection. The shift operator Î_(i+) turns |β_i⟩ into |α_i⟩."
+      },
+      {
+        "text": "It leaves |β_i⟩ unchanged",
+        "why": "A shift operator changes the spin state. Î_(i+) raises |β_i⟩ to |α_i⟩, while Î_(i−) lowers |α_i⟩ to |β_i⟩."
+      }
+    ],
+    "explanation": "The shift operators move a spin up or down: Î_(i+)|β_i⟩ = |α_i⟩ and Î_(i+)|α_i⟩ = 0, while Î_(i−)|α_i⟩ = |β_i⟩ and Î_(i−)|β_i⟩ = 0."
+  },
+  {
+    "id": "pc14-equivalent-diagonal-states",
+    "type": "multiple-choice",
+    "prompt": "In the product basis, which two functions are already eigenfunctions of the Hamiltonian for two coupled equivalent spins?",
+    "choices": [
+      {
+        "text": "|α_1α_2⟩ and |β_1β_2⟩",
+        "correct": true
+      },
+      {
+        "text": "|α_1β_2⟩ and |β_1α_2⟩",
+        "why": "These two are mixed by the coupling, since the matrix element between them is J/2. The eigenstates they form are (1/√2)(|α_1β_2⟩ ± |β_1α_2⟩)."
+      },
+      {
+        "text": "All four product functions",
+        "why": "The coupling term links |α_1β_2⟩ and |β_1α_2⟩, so those two aren't eigenfunctions on their own. Only |α_1α_2⟩ and |β_1β_2⟩ are."
+      },
+      {
+        "text": "None of the four product functions",
+        "why": "Two of them are: |α_1α_2⟩ and |β_1β_2⟩ have no off-diagonal elements in the Hamiltonian matrix, so they are eigenfunctions as they stand."
+      }
+    ],
+    "explanation": "The Hamiltonian matrix has off-diagonal elements, J/2, only between |α_1β_2⟩ and |β_1α_2⟩. So |α_1α_2⟩ (energy ν + J/4) and |β_1β_2⟩ (energy −ν + J/4) are eigenfunctions as they stand."
+  },
+  {
+    "id": "pc14-equivalent-singlet-state",
+    "type": "multiple-choice",
+    "prompt": "For two coupled spin-1/2 nuclei, what is the total nuclear spin I of the eigenstate (1/√2)(|α_1β_2⟩ − |β_1α_2⟩)?",
+    "choices": [
+      {
+        "text": "I = 0, a singlet",
+        "correct": true
+      },
+      {
+        "text": "I = 1, with M_I = 0",
+        "why": "That's the plus combination, (1/√2)(|α_1β_2⟩ + |β_1α_2⟩). The minus combination is the singlet, with I = 0."
+      },
+      {
+        "text": "I = 1/2, like a single nucleus",
+        "why": "Two spin-1/2 nuclei combine to I = 1 or 0, never 1/2. The minus combination is the singlet, I = 0."
+      },
+      {
+        "text": "I = 2, the largest value",
+        "why": "The largest value for two spin-1/2 nuclei is I = 1/2 + 1/2 = 1. The minus combination has I = 0."
+      }
+    ],
+    "explanation": "The eigenstates of the pair are the triplet (I = 1) and singlet (I = 0) states of two spin-1/2 particles. The minus combination, state |3⟩ with energy −3J/4, is the singlet."
+  },
+  {
+    "id": "pc14-equivalent-clebsch-gordan",
+    "type": "multiple-choice",
+    "prompt": "The Clebsch–Gordan series gives I = I_1 + I_2, I_1 + I_2 − 1, …, |I_1 − I_2|. Which values can the total spin I take for two spin-1/2 nuclei?",
+    "choices": [
+      {
+        "text": "1 and 0",
+        "correct": true
+      },
+      {
+        "text": "1, 0 and −1",
+        "why": "Those are the M_I values of the I = 1 states. I itself runs from 1/2 + 1/2 = 1 down to |1/2 − 1/2| = 0."
+      },
+      {
+        "text": "1/2 only",
+        "why": "Each nucleus has spin 1/2, but the pair combines to a total of 1 or 0."
+      },
+      {
+        "text": "2, 1 and 0",
+        "why": "I = 2 would need I_1 + I_2 = 2. For two spin-1/2 nuclei the series runs from 1 down to 0."
+      }
+    ],
+    "explanation": "With I_1 = I_2 = 1/2, the series runs from I_1 + I_2 = 1 down to |I_1 − I_2| = 0. The three I = 1 states form a triplet and the I = 0 state is a singlet."
+  },
+  {
+    "id": "pc14-equivalent-intensity",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the intensity of an NMR transition is proportional to what?",
+    "choices": [
+      {
+        "text": "The square of ⟨ψ_f|Ĥ'|ψ_i⟩",
+        "correct": true
+      },
+      {
+        "text": "⟨ψ_f|Ĥ'|ψ_i⟩ itself, not squared",
+        "why": "The matrix element is squared. A transition has zero intensity, and is forbidden, when ⟨ψ_f|Ĥ'|ψ_i⟩ = 0."
+      },
+      {
+        "text": "The energy gap between the two states",
+        "why": "The gap sets the frequency of the line, not its intensity. Intensity goes as the square of ⟨ψ_f|Ĥ'|ψ_i⟩."
+      },
+      {
+        "text": "The coupling constant J between the nuclei",
+        "why": "J shifts the levels but doesn't set the intensity. The intensity goes as the square of ⟨ψ_f|Ĥ'|ψ_i⟩, the transition dipole moment."
+      }
+    ],
+    "explanation": "The intensity is proportional to the square of ⟨ψ_f|Ĥ'|ψ_i⟩, the transition dipole moment, where Ĥ' drives the transition. For the selection rules, all that matters is whether it is zero."
+  },
+  {
+    "id": "pc14-equivalent-x-field",
+    "type": "multiple-choice",
+    "prompt": "In the section's treatment, what drives an NMR transition between the spin states?",
+    "choices": [
+      {
+        "text": "A magnetic field along the x-axis",
+        "correct": true
+      },
+      {
+        "text": "The static field B_0 along z",
+        "why": "B_0 sets the energy levels through the Larmor frequency; it doesn't cause transitions. They come from a magnetic field along x, part of the radiofrequency pulse."
+      },
+      {
+        "text": "An electric field along z",
+        "why": "NMR transitions are magnetic. They are driven by a magnetic field along x, a component of the radiofrequency pulse in the xy-plane."
+      },
+      {
+        "text": "The spin–spin coupling term J(Î_1·Î_2)",
+        "why": "The coupling is part of the pair's own Hamiltonian; it shifts the levels. Transitions are driven by Ĥ' = ω'(Î_1x + Î_2x), from a magnetic field along x."
+      }
+    ],
+    "explanation": "NMR transitions arise from a magnetic field along the x-axis, a component of the radiofrequency pulse applied in the xy-plane. Its Hamiltonian is Ĥ' = ω'(Î_1x + Î_2x) = ω'Î_x."
+  },
+  {
+    "id": "pc14-equivalent-selection-rules",
+    "type": "multiple-choice",
+    "prompt": "What selection rules does the section find for transitions of two coupled spin-1/2 nuclei?",
+    "choices": [
+      {
+        "text": "ΔI = 0 and ΔM_I = ±1",
+        "correct": true
+      },
+      {
+        "text": "ΔI = ±1 and ΔM_I = 0",
+        "why": "That swaps the rules. The total spin I must stay the same, while its projection M_I changes by one."
+      },
+      {
+        "text": "ΔI = ±1 and ΔM_I = ±1",
+        "why": "I may not change: transitions between the triplet (I = 1) and the singlet (I = 0) are forbidden. Only ΔI = 0 with ΔM_I = ±1 is allowed."
+      },
+      {
+        "text": "ΔI = 0 and ΔM_I = 0",
+        "why": "If neither number changed, the system would stay in the same state. M_I must change by one unit, while I stays the same."
+      }
+    ],
+    "explanation": "The selection rules are ΔI = 0 and ΔM_I = ±1. So the allowed transitions are |4⟩ ↔ |2⟩ and |2⟩ ↔ |1⟩, both within the I = 1 triplet."
+  },
+  {
+    "id": "pc14-equivalent-singlet-forbidden",
+    "type": "multiple-choice",
+    "prompt": "Why are transitions to and from the singlet state |3⟩ forbidden?",
+    "choices": [
+      {
+        "text": "They would change I, breaking ΔI = 0",
+        "correct": true
+      },
+      {
+        "text": "|3⟩ has M_I = 0, which can't change",
+        "why": "M_I = 0 isn't the problem: |2⟩ also has M_I = 0 and takes part in both allowed transitions. The singlet has I = 0, and reaching it from a triplet state would change I."
+      },
+      {
+        "text": "|3⟩ is the highest-energy state",
+        "why": "Energy isn't what forbids it. Any transition between the singlet (I = 0) and a triplet state (I = 1) would change I, which ΔI = 0 forbids."
+      },
+      {
+        "text": "|3⟩ isn't an eigenstate of the Hamiltonian",
+        "why": "It is an eigenstate, with energy −3J/4. It is forbidden because it has I = 0 while the other three states have I = 1."
+      }
+    ],
+    "explanation": "The selection rule ΔI = 0 keeps transitions within the I = 1 triplet. The singlet |3⟩ has I = 0, so no allowed transition starts or ends there."
+  },
+  {
+    "id": "pc14-equivalent-no-double-jump",
+    "type": "multiple-choice",
+    "prompt": "States |4⟩ (M_I = −1) and |1⟩ (M_I = +1) both belong to the I = 1 triplet. Why is there no transition directly between them?",
+    "choices": [
+      {
+        "text": "M_I would change by 2, not by ±1",
+        "correct": true
+      },
+      {
+        "text": "I would change from 1 to 0",
+        "why": "Both states have I = 1, so ΔI = 0 is satisfied. The problem is that M_I would change by 2."
+      },
+      {
+        "text": "The two states have the same energy",
+        "why": "They are far apart: E_1 − E_4 = 2ν. The transition is forbidden because ΔM_I would be 2, not ±1."
+      },
+      {
+        "text": "Both states are singlets",
+        "why": "Both are triplet states, with I = 1. The direct jump is forbidden because M_I would change by 2."
+      }
+    ],
+    "explanation": "The selection rule ΔM_I = ±1 allows only one-step changes in M_I. Going from −1 to +1 is a change of 2, so the only allowed transitions are |4⟩ ↔ |2⟩ and |2⟩ ↔ |1⟩."
+  },
+  {
+    "id": "pc14-equivalent-one-line",
+    "type": "multiple-choice",
+    "prompt": "For two equivalent spins, the allowed transitions |4⟩ ↔ |2⟩ and |2⟩ ↔ |1⟩ both have frequency ν. What does the spectrum show?",
+    "choices": [
+      {
+        "text": "A single line at ν",
+        "correct": true
+      },
+      {
+        "text": "Two lines, J apart",
+        "why": "The two transitions have exactly the same frequency, ν, so they fall on top of each other. Only one line is observed."
+      },
+      {
+        "text": "A 1:2:1 triplet centered at ν",
+        "why": "A triplet would need three different transition frequencies. Here both allowed transitions are at ν, giving one line."
+      },
+      {
+        "text": "No line, as the two transitions cancel",
+        "why": "Degenerate transitions don't cancel; they add up at the same frequency. One line appears at ν."
+      }
+    ],
+    "explanation": "E_(4 ↔ 2) = J/4 − (−ν + J/4) = ν and E_(2 ↔ 1) = (ν + J/4) − J/4 = ν. The two transitions are degenerate, so only one line, at frequency ν, is observed."
+  },
+  {
+    "id": "pc14-equivalent-why-j-vanishes",
+    "type": "multiple-choice",
+    "prompt": "Equivalent nuclei do couple, yet J leaves no trace in the frequency of their allowed transitions. Why?",
+    "choices": [
+      {
+        "text": "Both levels of each allowed transition shift by J/4",
+        "correct": true
+      },
+      {
+        "text": "J only shifts the singlet state, which can't be reached",
+        "why": "The triplet levels shift too, each by +J/4. Because both ends of each allowed transition move by the same amount, the difference is unchanged."
+      },
+      {
+        "text": "J is so much smaller than ν that it is dropped",
+        "why": "Nothing is approximated: J cancels exactly, since E_(2 ↔ 1) = (ν + J/4) − J/4 = ν."
+      },
+      {
+        "text": "The radiofrequency pulse switches the coupling off",
+        "why": "The coupling stays on. It shifts the upper and lower level of each allowed transition by the same J/4, so the transition frequency is still ν."
+      }
+    ],
+    "explanation": "The triplet levels |1⟩, |2⟩ and |4⟩ are all raised by J/4. Each allowed transition connects two of them, so J cancels in the difference and the line stays at ν."
+  },
+  {
+    "id": "pc14-equivalent-magnetic-nonequivalent",
+    "type": "multiple-choice",
+    "prompt": "According to the section's note, what happens with nuclei that are chemically equivalent but magnetically non-equivalent?",
+    "choices": [
+      {
+        "text": "They couple, and it shows in the spectrum",
+        "correct": true
+      },
+      {
+        "text": "They don't couple to each other at all",
+        "why": "They do couple. Unlike magnetically equivalent nuclei, their coupling is observable in the NMR spectrum."
+      },
+      {
+        "text": "They couple, but no splitting is ever seen",
+        "why": "That describes magnetically equivalent nuclei. Chemically equivalent but magnetically non-equivalent nuclei show their coupling in the spectrum."
+      },
+      {
+        "text": "They give no NMR signal at all",
+        "why": "They do give signals. The note's point is that their coupling to each other is observable."
+      }
+    ],
+    "explanation": "The note makes two points: magnetically equivalent nuclei couple but show no splitting, while chemically equivalent but magnetically non-equivalent nuclei couple and the coupling is observable."
+  },
+  {
+    "id": "pc14-equivalent-through-electrons",
+    "type": "multiple-choice",
+    "prompt": "According to the section's note, how is the magnetic interaction between two nuclear spins transmitted?",
+    "choices": [
+      {
+        "text": "Through the bonding electrons",
+        "correct": true
+      },
+      {
+        "text": "Through the static field B_0",
+        "why": "B_0 acts on each nucleus separately; it doesn't connect them. Spin coupling passes between nuclei through the bonding electrons."
+      },
+      {
+        "text": "By the radiofrequency pulse",
+        "why": "The pulse drives transitions; it isn't the source of coupling. The interaction is transmitted through the bonding electrons."
+      },
+      {
+        "text": "By collisions between molecules",
+        "why": "Spin coupling acts within one molecule. It is a magnetic interaction transmitted through the bonding electrons."
+      }
+    ],
+    "explanation": "Spin coupling comes from a magnetic interaction between nuclear spins transmitted through the bonding electrons. It stabilizes or destabilizes the energy levels slightly, depending on how the nuclear moments are oriented."
+  },
+  {
+    "id": "pc14-equivalent-doublet-origin",
+    "type": "multiple-choice",
+    "prompt": "In the energy-level picture of the section's note, why does nucleus A of two non-equivalent coupled nuclei, A and X, give two lines?",
+    "choices": [
+      {
+        "text": "Coupling makes A's two transitions unequal",
+        "correct": true
+      },
+      {
+        "text": "A has two different chemical shifts",
+        "why": "A has one chemical shift. Its two lines come from the coupling, which shifts the levels so that A's two transitions differ by J."
+      },
+      {
+        "text": "The coupling shifts all of the levels equally",
+        "why": "An equal shift leaves the transitions unchanged and gives one line, as for equivalent nuclei. For non-equivalent A and X the transitions become unequal."
+      },
+      {
+        "text": "A absorbs two photons at the same time",
+        "why": "Each line is a single transition. The coupling makes A's two transitions unequal, at δ + J/2 and δ − J/2."
+      }
+    ],
+    "explanation": "Coupling raises or lowers the energy levels slightly, depending on how the nuclear moments are oriented. For non-equivalent nuclei, A's two transitions become δ + J/2 and δ − J/2, the two lines of a doublet."
+  },
+  {
+    "id": "pc14-equivalent-a2-label",
+    "type": "multiple-choice",
+    "prompt": "The section's note calls two distinct coupled nuclei the AX case. What does it call two equivalent nuclei?",
+    "choices": [
+      {
+        "text": "The A_2 case",
+        "correct": true
+      },
+      {
+        "text": "The AB case",
+        "why": "AB labels two different nuclei, not equivalent ones. The note calls two equivalent nuclei the A_2 case."
+      },
+      {
+        "text": "The AX_2 case",
+        "why": "AX_2 describes three nuclei: one A and two equivalent X. Two equivalent nuclei alone are the A_2 case."
+      },
+      {
+        "text": "The AMX case",
+        "why": "AMX describes three different nuclei. Two equivalent nuclei form the A_2 case."
+      }
+    ],
+    "explanation": "Different letters mark nuclei with different chemical shifts, so two distinct nuclei are AX. Two equivalent nuclei share one letter, giving A_2."
+  },
+  {
+    "id": "pc14-equivalent-photon-angular-momentum",
+    "type": "multiple-choice",
+    "prompt": "According to the section's note, why must the magnetic quantum number m_z change by +1 or −1 in an NMR transition?",
+    "choices": [
+      {
+        "text": "The photon has one unit of angular momentum",
+        "correct": true
+      },
+      {
+        "text": "The photon carries no angular momentum at all",
+        "why": "Even at radio frequency, a photon carries one unit of angular momentum. Since total angular momentum is conserved, m_z must change by ±1."
+      },
+      {
+        "text": "Nuclear spins can only flip in pairs",
+        "why": "A single spin flips in each allowed transition. The rule comes from the photon's one unit of angular momentum."
+      },
+      {
+        "text": "The field B_0 blocks any larger change",
+        "why": "B_0 sets the energy levels, not the selection rule. The photon carries one unit of angular momentum, and total angular momentum is conserved."
+      }
+    ],
+    "explanation": "The selection rule arises because the photon, even at radio frequency, has one unit of angular momentum, and total angular momentum is conserved. So only transitions in which one α changes to β, or one β to α, are allowed."
+  },
+  {
+    "id": "pc14-equivalent-liouville-commute",
+    "type": "multiple-choice",
+    "prompt": "In the section's Liouville–von Neumann treatment, why doesn't the coupling between two equivalent spins affect the signal after a 90° pulse?",
+    "choices": [
+      {
+        "text": "ρ̂ commutes with the coupling term",
+        "correct": true
+      },
+      {
+        "text": "The 90° pulse switches the coupling off",
+        "why": "The coupling is still there. After the pulse, ρ̂ = Î_1x + Î_2x commutes with J(Î_1·Î_2), so the coupling has no effect on how ρ̂ evolves."
+      },
+      {
+        "text": "ρ̂ is zero after the pulse",
+        "why": "After the pulse ρ̂ = Î_1x + Î_2x (or the y version), not zero. It commutes with the coupling term, so the coupling drops out."
+      },
+      {
+        "text": "The two spins have different shifts Ω",
+        "why": "The treatment gives both spins the same Ω: Ĥ = ΩÎ_1z + ΩÎ_2z + J(Î_1·Î_2). The coupling has no effect because [Ĥ_coupling, ρ̂] = 0."
+      }
+    ],
+    "explanation": "The density operator evolves as dρ̂/dt = −i[Ĥ, ρ̂]. After a 90° pulse ρ̂ = Î_1x + Î_2x, which commutes with J(Î_1·Î_2), so [Ĥ_coupling, ρ̂] = 0 and the coupling doesn't influence the signal."
+  },
+  {
+    "id": "pc14-equivalent-basis-count",
+    "type": "numeric",
+    "prompt": "Each spin-1/2 nucleus can be in state α or β. The section's basis for two such nuclei is made of product functions like |α_1β_2⟩. How many product functions are there?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Each nucleus has 2 states, so there are 2 × 2 = 4 product functions: |α_1α_2⟩, |α_1β_2⟩, |β_1α_2⟩ and |β_1β_2⟩."
+  },
+  {
+    "id": "pc14-equivalent-possible-transitions",
+    "type": "numeric",
+    "prompt": "The coupled pair has four eigenstates. The number of ways to pick 2 states out of n is n(n − 1)/2. Before any selection rule is applied, how many possible transitions are there between the four states?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "With n = 4, n(n − 1)/2 = 4 × 3/2 = 6. The selection rules then allow only two of these six."
+  },
+  {
+    "id": "pc14-equivalent-allowed-count",
+    "type": "numeric",
+    "prompt": "The four states are |1⟩ (I = 1, M_I = 1), |2⟩ (I = 1, M_I = 0), |3⟩ (I = 0, M_I = 0) and |4⟩ (I = 1, M_I = −1). With the selection rules ΔI = 0 and ΔM_I = ±1, how many of the six possible transitions are allowed?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "ΔI = 0 rules out every transition involving |3⟩, leaving |1⟩, |2⟩ and |4⟩. Of their pairs, |1⟩ ↔ |4⟩ has ΔM_I = 2, so only |4⟩ ↔ |2⟩ and |2⟩ ↔ |1⟩ are allowed: 2 transitions."
+  },
+  {
+    "id": "pc14-equivalent-singlet-energy",
+    "type": "numeric",
+    "prompt": "For two coupled equivalent spins, the singlet state has energy E_3 = −3J/4 in frequency units. What is E_3, in Hz, for J = 8.0 Hz?",
+    "answer": -6,
+    "unit": "Hz",
+    "explanation": "E_3 = −3 × 8.0/4 = −6.0 Hz. The three triplet states are each raised by J/4 = 2.0 Hz, while the singlet is lowered by 3J/4."
+  },
+  {
+    "id": "pc14-equivalent-mixing-element",
+    "type": "numeric",
+    "prompt": "In the section's Hamiltonian matrix for two equivalent spins, the off-diagonal elements equal J/2. What is that element, in Hz, for J = 7.0 Hz? (Give it as a decimal.)",
+    "answer": 3.5,
+    "unit": "Hz",
+    "explanation": "J/2 = 7.0/2 = 3.5 Hz. This element links |α_1β_2⟩ and |β_1α_2⟩; because it isn't zero, they mix into the combinations (1/√2)(|α_1β_2⟩ ± |β_1α_2⟩)."
+  },
+  {
+    "id": "pc14-equivalent-doublet-line",
+    "type": "numeric",
+    "prompt": "Without coupling, a proton A absorbs at δ = 1200 Hz from the reference. Coupling to a non-equivalent proton with J = 6.0 Hz moves its two transitions to δ + J/2 and δ − J/2. At what frequency, in Hz, is the higher of the two lines?",
+    "answer": 1203,
+    "unit": "Hz",
+    "tolerance": 0.001,
+    "explanation": "δ + J/2 = 1200 + 6.0/2 = 1203 Hz. The other line is at 1197 Hz, so the doublet is centered on δ with its lines J = 6.0 Hz apart."
+  },
+  {
+    "id": "pc14-equivalent-mi-beta-beta",
+    "type": "numeric",
+    "prompt": "M_I for a product state is the sum of the two z-projections: +1/2 for each α and −1/2 for each β. What is M_I for the state |β_1β_2⟩?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "M_I = −1/2 + (−1/2) = −1. That matches the section's table, where |4⟩ = |β_1β_2⟩ has I = 1 and M_I = −1."
+  }
+]

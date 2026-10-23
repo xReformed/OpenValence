@@ -1,0 +1,577 @@
+[
+  {
+    "id": "pc9-h2-mo-basis-aos",
+    "type": "multiple-choice",
+    "prompt": "In the simple MO treatment of H2, each molecular orbital is written ψ_i = Σ_j c_ij φ_j. What are the basis functions φ_j usually?",
+    "choices": [
+      {
+        "text": "Atomic orbitals, like 1s on each H atom",
+        "correct": true
+      },
+      {
+        "text": "Other molecular orbitals of H2",
+        "why": "The MOs are what is being built. The basis functions they are built from are usually atomic orbitals, like 1s_A and 1s_B."
+      },
+      {
+        "text": "The spin functions α and β",
+        "why": "Spin functions are attached afterward to make spin orbitals. The basis functions φ_j for a spatial MO are usually atomic orbitals."
+      },
+      {
+        "text": "Slater determinants of the two electrons",
+        "why": "A Slater determinant describes the whole two-electron state Ψ. The basis functions φ_j that build each MO are usually atomic orbitals."
+      }
+    ],
+    "explanation": "The φ_j are called basis functions because they provide the basis for representing the molecular orbital; usually they are atomic orbitals. In the simplest treatment of H2 they are the 1s orbitals of the two H atoms."
+  },
+  {
+    "id": "pc9-h2-mo-cij-meaning",
+    "type": "multiple-choice",
+    "prompt": "In ψ_i = Σ_j c_ij φ_j, what is c_ij?",
+    "choices": [
+      {
+        "text": "The weight of basis function j in molecular orbital i",
+        "correct": true
+      },
+      {
+        "text": "The weight of molecular orbital i in basis function j",
+        "why": "The indices go the other way: i labels the MO being built and j the basis function, so c_ij is how much of φ_j is in ψ_i."
+      },
+      {
+        "text": "The energy of molecular orbital i",
+        "why": "Orbital energies are written ε. c_ij is an expansion coefficient: how much of basis function φ_j goes into ψ_i."
+      },
+      {
+        "text": "The overlap of basis functions i and j",
+        "why": "Overlap integrals are written S_ij. c_ij is the expansion coefficient of the jth basis function in the ith MO."
+      }
+    ],
+    "explanation": "c_ij is the expansion coefficient of the jth basis function in the ith molecular orbital: the first index names the MO being built, and the second the basis function it draws on."
+  },
+  {
+    "id": "pc9-h2-mo-variational-criterion",
+    "type": "multiple-choice",
+    "prompt": "When the variational method optimizes the coefficients c_ij of H2's molecular orbitals, what does it count as the best result?",
+    "choices": [
+      {
+        "text": "The lowest possible ground-state energy",
+        "correct": true
+      },
+      {
+        "text": "The highest possible ground-state energy",
+        "why": "A variational energy never falls below the true energy, so lower is better. The criterion is the lowest ground-state energy."
+      },
+      {
+        "text": "The largest overlap between 1s_A and 1s_B",
+        "why": "The overlap is set by the bond length, not by the coefficients. The criterion is the lowest ground-state energy."
+      },
+      {
+        "text": "The most electron density on one of the atoms",
+        "why": "In H2 the two atoms are equivalent. The variational criterion is making the ground-state energy as low as possible."
+      }
+    ],
+    "explanation": "The criterion for quality in the variational method is making the ground-state energy of the molecule as low as possible. The coefficients that give the lowest energy give the best molecular orbitals."
+  },
+  {
+    "id": "pc9-h2-mo-coefficient-count",
+    "type": "numeric",
+    "prompt": "The simplest treatment of H2 uses two basis functions, 1s_A and 1s_B, which give two molecular orbitals. Each molecular orbital has one coefficient c_ij for each basis function. How many coefficients c_ij are there in all?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "2 molecular orbitals × 2 basis functions = 4 coefficients: c_11 and c_12 for ψ_1, and c_21 and c_22 for ψ_2."
+  },
+  {
+    "id": "pc9-h2-mo-sigma-spin",
+    "type": "multiple-choice",
+    "prompt": "In this chapter's notation, σ can stand for a spin function as well as for a type of orbital. As a spin function, what does σ mean?",
+    "choices": [
+      {
+        "text": "Either spin function, α or β",
+        "correct": true
+      },
+      {
+        "text": "Only the spin function α",
+        "why": "σ is a general spin function: it can be either α or β."
+      },
+      {
+        "text": "A spin of zero",
+        "why": "Every electron has spin. σ is a general spin function standing for α or β."
+      },
+      {
+        "text": "The total spin of both electrons",
+        "why": "σ belongs to one electron: it is a general one-electron spin function, α or β."
+      }
+    ],
+    "explanation": "The section uses σ for a general spin function, which can be either α or β, along with φ for a basis function, ψ for a molecular orbital and Ψ for the electronic state. Don't confuse it with σ as an orbital label, as in 1σ_g."
+  },
+  {
+    "id": "pc9-h2-mo-capital-psi",
+    "type": "multiple-choice",
+    "prompt": "In the section's notation, what does the capital Ψ stand for?",
+    "choices": [
+      {
+        "text": "The electronic state of the molecule",
+        "correct": true
+      },
+      {
+        "text": "One molecular orbital, such as 1σ_g",
+        "why": "A molecular orbital is a lowercase ψ. Capital Ψ is the electronic state wavefunction: one Slater determinant or a combination of them."
+      },
+      {
+        "text": "A basis function, such as 1s_A",
+        "why": "Basis functions are written φ. Capital Ψ is the electronic state wavefunction of all the electrons."
+      },
+      {
+        "text": "A spin function, either α or β",
+        "why": "A spin function is written σ. Capital Ψ is the electronic state wavefunction."
+      }
+    ],
+    "explanation": "Ψ is the electronic state wavefunction, which is a single Slater determinant or a linear combination of Slater determinants. Lowercase ψ is one molecular orbital, φ a basis function and σ a spin function."
+  },
+  {
+    "id": "pc9-h2-mo-spin-orbital-entry",
+    "type": "multiple-choice",
+    "prompt": "The section's two-electron Slater determinant has entries like ψ_A(r_1)α(1). What is such an entry?",
+    "choices": [
+      {
+        "text": "A molecular spin orbital for electron 1",
+        "correct": true
+      },
+      {
+        "text": "An atomic orbital for electron 1",
+        "why": "ψ_A is a molecular orbital, not an atomic one. Multiplied by the spin function α, it gives a molecular spin orbital."
+      },
+      {
+        "text": "The overlap of two orbitals",
+        "why": "No integral is involved. ψ_A(r_1)α(1) is a product: the MO ψ_A times the spin function α, both for electron 1."
+      },
+      {
+        "text": "The probability of finding electron 1",
+        "why": "It is a wavefunction, not a probability: the spatial MO ψ_A times the spin function α, both for electron 1."
+      }
+    ],
+    "explanation": "Each entry is a molecular spin orbital: a spatial molecular orbital (here ψ_A) times a spin function (here α), both for one electron. The determinant of these entries is antisymmetric, as electrons, being fermions, require."
+  },
+  {
+    "id": "pc9-h2-mo-same-orbital-columns",
+    "type": "multiple-choice",
+    "prompt": "For ground-state H2, both electrons are in the same spatial orbital, 1σ_g. In its two-electron Slater determinant, what makes the two columns different?",
+    "choices": [
+      {
+        "text": "Their spin functions: α in one, β in the other",
+        "correct": true
+      },
+      {
+        "text": "Their spatial orbitals: 1σ_g in one, 1σ_u in the other",
+        "why": "In the ground state both electrons are in 1σ_g. The columns differ only in spin, α versus β."
+      },
+      {
+        "text": "Their electron labels: 1 in one, 2 in the other",
+        "why": "In the section's determinant the electron label changes from row to row. The columns are spin orbitals, which here differ only in spin."
+      },
+      {
+        "text": "Nothing; the two columns are identical",
+        "why": "Identical columns would make the determinant zero. The columns are 1σ_gα and 1σ_gβ, which differ in spin."
+      }
+    ],
+    "explanation": "The columns are the two occupied spin orbitals, 1σ_gα and 1σ_gβ. They share the spatial orbital and differ only in spin, which is why two electrons can share 1σ_g only with opposite spins: their spins are paired."
+  },
+  {
+    "id": "pc9-h2-mo-spin-orbital-count",
+    "type": "numeric",
+    "prompt": "The simplest treatment of H2 gives two spatial molecular orbitals, 1σ_g and 1σ_u. Each can be combined with spin α or spin β to make a molecular spin orbital. How many molecular spin orbitals are there?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "2 spatial orbitals × 2 spin functions = 4 spin orbitals: 1σ_gα, 1σ_gβ, 1σ_uα and 1σ_uβ. Ground-state H2 fills the first two; its excited configurations use 1σ_u."
+  },
+  {
+    "id": "pc9-h2-mo-orbital-approx",
+    "type": "multiple-choice",
+    "prompt": "When the Schrödinger equation for a molecule such as H2 is solved in the orbital approximation, what does it produce?",
+    "choices": [
+      {
+        "text": "A set of spatial MOs, each with its own energy ε",
+        "correct": true
+      },
+      {
+        "text": "The exact total energy of the molecule",
+        "why": "The orbital approximation is an approximation. It gives a set of one-electron spatial orbitals, each with an energy ε."
+      },
+      {
+        "text": "One atomic orbital for each of the molecule's electrons",
+        "why": "It gives molecular orbitals spread over the molecule, not atomic orbitals, each with a specific energy ε."
+      },
+      {
+        "text": "The equilibrium positions of the nuclei",
+        "why": "The nuclei are held fixed. Solving gives a set of spatial molecular orbitals, each with an energy ε."
+      }
+    ],
+    "explanation": "In the orbital approximation, solving the Schrödinger equation gives a set of spatial molecular orbitals, each with a specific energy ε. Electrons are then assigned to them, two per orbital with spins α and β, in order of increasing energy."
+  },
+  {
+    "id": "pc9-h2-mo-ground-config",
+    "type": "multiple-choice",
+    "prompt": "In symmetry notation, which electron configuration describes ground-state H2?",
+    "choices": [
+      {
+        "text": "1σ_g^2",
+        "correct": true
+      },
+      {
+        "text": "1σ_g^1",
+        "why": "That is the configuration of H_2^+, with one electron. H2 has two electrons, and both go into 1σ_g."
+      },
+      {
+        "text": "1σ_u^2",
+        "why": "1σ_u lies above 1σ_g. Both ground-state electrons go into the lowest orbital, 1σ_g."
+      },
+      {
+        "text": "2σ_g^2",
+        "why": "The prefix 2 would mean the second σ_g orbital. H2's electrons fill the first, lowest one: 1σ_g."
+      }
+    ],
+    "explanation": "Both electrons go into the lowest spatial orbital: the first σ orbital with g symmetry. The superscript 2 counts the electrons: 1σ_g^2, which is (σ_1s)^2 in the other notation."
+  },
+  {
+    "id": "pc9-h2-mo-closed-shell",
+    "type": "multiple-choice",
+    "prompt": "Ground-state H2 has both electrons, with paired spins, in its lowest orbital. What kind of configuration is this?",
+    "choices": [
+      {
+        "text": "A closed-shell configuration",
+        "correct": true
+      },
+      {
+        "text": "An open-shell radical",
+        "why": "A radical has an unpaired electron in a partly filled orbital. H2's only occupied orbital is full, with the spins paired."
+      },
+      {
+        "text": "An excited singlet configuration",
+        "why": "An excited configuration has an electron promoted to a higher orbital. H2's ground state uses only the lowest orbital."
+      },
+      {
+        "text": "A triplet configuration",
+        "why": "A triplet needs two unpaired electrons with parallel spins. H2's two electrons are paired in one orbital."
+      }
+    ],
+    "explanation": "When every occupied orbital holds two electrons with paired spins, as in H2's 1σ_g^2, the configuration is closed-shell. It is the 2n-electron ground state ψ_1^2ψ_2^2…ψ_n^2 with n = 1."
+  },
+  {
+    "id": "pc9-h2-mo-open-shell-species",
+    "type": "multiple-choice",
+    "prompt": "Which of these species has an open-shell (radical) ground configuration?",
+    "choices": [
+      {
+        "text": "H_2^+, with one electron",
+        "correct": true
+      },
+      {
+        "text": "H2, with two electrons",
+        "why": "H2's two electrons pair up in the lowest orbital, which makes a closed shell."
+      },
+      {
+        "text": "He2, with four electrons",
+        "why": "Four electrons fill the two lowest orbitals, two in each with paired spins: a closed shell."
+      },
+      {
+        "text": "Li2, with six electrons",
+        "why": "Six electrons fill the three lowest orbitals, two in each, so every electron is paired."
+      }
+    ],
+    "explanation": "An odd number of electrons can't all be paired. H_2^+ has a single electron in its lowest orbital, so it is an open-shell radical; H2, He2 and Li2 have even numbers and fill their lowest orbitals two at a time."
+  },
+  {
+    "id": "pc9-h2-mo-excited-singlet",
+    "type": "multiple-choice",
+    "prompt": "One electron of H2 is promoted from 1σ_g to 1σ_u, and the two electrons keep opposite spins. What kind of configuration results?",
+    "choices": [
+      {
+        "text": "An excited singlet configuration",
+        "correct": true
+      },
+      {
+        "text": "An excited triplet configuration",
+        "why": "In a triplet the spins of the two unpaired electrons are parallel. With opposite spins this is an excited singlet."
+      },
+      {
+        "text": "A closed-shell configuration",
+        "why": "Closed-shell means every occupied orbital is full. Here 1σ_g and 1σ_u each hold one electron."
+      },
+      {
+        "text": "The ground-state configuration",
+        "why": "The ground state has both electrons in 1σ_g. Promoting one gives a higher-energy, excited configuration."
+      }
+    ],
+    "explanation": "Higher-energy configurations give excited states. With one electron in each of two orbitals and opposite spins, 1σ_g^1 1σ_u^1 is an excited singlet configuration; with parallel spins it would be an excited triplet."
+  },
+  {
+    "id": "pc9-h2-mo-triplet-unpaired",
+    "type": "numeric",
+    "prompt": "In an excited triplet configuration of H2, 1σ_g^1 1σ_u^1, the two electrons have parallel spins. How many unpaired electrons does this configuration have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Each orbital holds one electron and the spins are parallel, so both electrons are unpaired: 2. In the ground state, 1σ_g^2, both are paired in one orbital and there are 0."
+  },
+  {
+    "id": "pc9-h2-mo-prefix",
+    "type": "multiple-choice",
+    "prompt": "In the orbital symbol 2σ_g^2, what does the leading 2 mean?",
+    "choices": [
+      {
+        "text": "It is the second σ orbital with g symmetry",
+        "correct": true
+      },
+      {
+        "text": "The orbital holds two electrons",
+        "why": "That is the superscript 2. The prefix numbers orbitals of the same type: 2σ_g is the second σ_g orbital."
+      },
+      {
+        "text": "The orbital is built from n = 2 atomic orbitals",
+        "why": "The prefix counts orbitals of the same type; it isn't the atomic shell. 2σ_g is simply the second σ_g orbital."
+      },
+      {
+        "text": "The orbital has two nodal planes",
+        "why": "The prefix says nothing about nodes. It numbers the orbitals of the same symmetry: first, second, third, and so on."
+      }
+    ],
+    "explanation": "The prefix 1, 2, 3, … means the first, second, third, … orbital of that type, and the superscript gives the number of electrons in it. So 2σ_g^2 is the second σ orbital with gerade symmetry, holding two electrons. H2's occupied orbital is the first, 1σ_g."
+  },
+  {
+    "id": "pc9-h2-mo-sigma-meaning",
+    "type": "multiple-choice",
+    "prompt": "H2's occupied orbital is a σ orbital. What does the label σ say about its angular momentum?",
+    "choices": [
+      {
+        "text": "Its component along the internuclear axis is zero",
+        "correct": true
+      },
+      {
+        "text": "Its component along the axis is one unit",
+        "why": "A σ orbital has zero angular momentum along the axis, and so no node in any plane containing the axis."
+      },
+      {
+        "text": "Its total angular momentum is the same as for a 1s atomic orbital",
+        "why": "The label refers to the component along the internuclear axis, which a diatomic molecule keeps. For σ that component is zero."
+      },
+      {
+        "text": "It depends on the spins of the two electrons",
+        "why": "Spin isn't part of the orbital label. σ means the orbital's angular momentum component along the axis is zero."
+      }
+    ],
+    "explanation": "A diatomic molecule keeps a component of angular momentum along the internuclear axis. For a σ orbital it is 0, and the orbital has no node in any plane containing the axis, so it is symmetric to reflection in such a plane."
+  },
+  {
+    "id": "pc9-h2-mo-pi-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does it mean for a diatomic molecular orbital to be a π orbital?",
+    "choices": [
+      {
+        "text": "It has a node in a plane containing the internuclear axis",
+        "correct": true
+      },
+      {
+        "text": "It has a node in a plane perpendicular to the internuclear axis",
+        "why": "That node, between the nuclei, marks an antibonding orbital such as σ_1s^*. A π orbital's node lies in a plane that contains the axis."
+      },
+      {
+        "text": "It is symmetric to reflection in planes containing the axis",
+        "why": "That describes σ. A π orbital changes sign on reflection in a plane containing the axis, because it has a node there."
+      },
+      {
+        "text": "It is unchanged by inversion through the bond center",
+        "why": "That is gerade (g) symmetry, a separate label. π means a node in a plane containing the internuclear axis."
+      }
+    ],
+    "explanation": "A π orbital has a node in a plane containing the internuclear axis, and the wavefunction is antisymmetric to reflection in that plane. A σ orbital has no such node."
+  },
+  {
+    "id": "pc9-h2-mo-antibonding-u",
+    "type": "multiple-choice",
+    "prompt": "Inversion through the center of H2 swaps the positions of the two nuclei, turning 1s_A into 1s_B and 1s_B into 1s_A. Is the antibonding combination 1s_A − 1s_B then g or u?",
+    "choices": [
+      {
+        "text": "u, because it changes sign",
+        "correct": true
+      },
+      {
+        "text": "g, because it is unchanged",
+        "why": "Swapping 1s_A and 1s_B turns 1s_A − 1s_B into 1s_B − 1s_A, the negative of the original. A sign change means u."
+      },
+      {
+        "text": "g, because H2 is homonuclear",
+        "why": "Being homonuclear is what makes the g and u labels possible, but each orbital still has to be tested. The difference changes sign, so it is u."
+      },
+      {
+        "text": "Neither; only bonding orbitals are g or u",
+        "why": "Every orbital of a homonuclear diatomic is either g or u. The antibonding 1s_A − 1s_B changes sign under inversion, so it is u."
+      }
+    ],
+    "explanation": "Under inversion, 1s_A − 1s_B becomes 1s_B − 1s_A = −(1s_A − 1s_B), so H2's antibonding orbital is ungerade: 1σ_u. The bonding sum 1s_A + 1s_B is unchanged, so it is gerade: 1σ_g."
+  },
+  {
+    "id": "pc9-h2-mo-inversion-u-value",
+    "type": "numeric",
+    "prompt": "A u (ungerade) orbital satisfies ψ(−x, −y, −z) = −ψ(x, y, z). If such an orbital has the value 0.12 (in atomic units) at the point (x, y, z), what is its value at (−x, −y, −z)?",
+    "answer": -0.12,
+    "explanation": "A u orbital changes sign under inversion, so its value at (−x, −y, −z) is −0.12. A g orbital would have the same value, 0.12, at both points."
+  },
+  {
+    "id": "pc9-h2-mo-n2-gerade-electrons",
+    "type": "numeric",
+    "prompt": "The ground configuration of N2 is 1σ_g^2 1σ_u^2 2σ_g^2 2σ_u^2 1π_u^4 3σ_g^2. How many of its electrons are in orbitals with g symmetry?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The g orbitals are 1σ_g, 2σ_g and 3σ_g, with 2 electrons each: 2 + 2 + 2 = 6. The other 8 electrons are in the u orbitals 1σ_u, 2σ_u and 1π_u."
+  },
+  {
+    "id": "pc9-h2-mo-he2plus-vs-li",
+    "type": "multiple-choice",
+    "prompt": "He_2^+ and the Li atom both have three electrons. Why does a Hartree–Fock calculation give them different orbitals?",
+    "choices": [
+      {
+        "text": "Two +2e nuclei versus one +3e nucleus",
+        "correct": true
+      },
+      {
+        "text": "He_2^+ has fewer electrons than Li",
+        "why": "Both have three electrons. What differs is the electron–nucleus energy V_en: two +2e nuclei a distance R apart versus a single +3e nucleus."
+      },
+      {
+        "text": "Hartree–Fock can't be used for molecules",
+        "why": "Hartree–Fock works for molecules too. He_2^+'s orbitals differ because its two +2e nuclei give a different V_en."
+      },
+      {
+        "text": "The electrons repel each other only in Li",
+        "why": "Electron–electron repulsion is present in both. The difference is the nuclei: two +2e nuclei for He_2^+, one +3e nucleus for Li."
+      }
+    ],
+    "explanation": "With the same number of electrons, what differs is the electron–nucleus energy V_en. He_2^+ has two nuclei of charge +2e a distance R apart, while Li has a single nucleus of charge +3e, so the optimized orbitals come out different."
+  },
+  {
+    "id": "pc9-h2-mo-he2plus-nuclear-charge",
+    "type": "numeric",
+    "prompt": "Each of the two nuclei in He_2^+ has a charge of +2e. What is the total nuclear charge of He_2^+, in units of e?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "2 + 2 = 4, so He_2^+ has a total nuclear charge of +4e, split between two nuclei a distance R apart. Li, with the same three electrons, has a single nucleus of +3e."
+  },
+  {
+    "id": "pc9-h2-mo-he2plus-energies",
+    "type": "multiple-choice",
+    "prompt": "In a Hartree–Fock calculation on He_2^+, how do the three orbital energies ε_1, ε_2 and ε_3 compare?",
+    "choices": [
+      {
+        "text": "ε_1 ≈ ε_2, and ε_3 is noticeably higher",
+        "correct": true
+      },
+      {
+        "text": "ε_1 is lowest, and ε_2 ≈ ε_3 are higher",
+        "why": "Two electrons are in orbitals resembling 1σ_g, so ε_1 and ε_2 are nearly equal. Only the third, resembling 1σ_u^*, is higher."
+      },
+      {
+        "text": "All three are nearly equal",
+        "why": "The third orbital resembles the antibonding 1σ_u^*, which lies noticeably higher than the other two."
+      },
+      {
+        "text": "All three are very different",
+        "why": "Two of the orbitals resemble 1σ_g, so ε_1 and ε_2 are nearly equal; only ε_3 stands apart."
+      }
+    ],
+    "explanation": "Two of the optimized orbitals resemble the bonding 1σ_g and have nearly equal energies ε_1 and ε_2. The third resembles the antibonding 1σ_u^*, and its energy ε_3 is noticeably higher, so Hartree–Fock keeps the bonding/antibonding pattern of the simple MO picture."
+  },
+  {
+    "id": "pc9-h2-mo-lcao-vs-hf",
+    "type": "multiple-choice",
+    "prompt": "What does a Hartree–Fock calculation optimize that the simple LCAO treatment does not?",
+    "choices": [
+      {
+        "text": "The shapes of the orbitals themselves",
+        "correct": true
+      },
+      {
+        "text": "The mixing coefficients of the atomic orbitals",
+        "why": "LCAO does choose the mixing coefficients; that is all it does. Hartree–Fock also optimizes the orbital shapes, which LCAO fixes as 1s-shaped."
+      },
+      {
+        "text": "The number of electrons in the molecule",
+        "why": "Neither method changes the number of electrons. Hartree–Fock optimizes the orbital shapes; LCAO assumes them in advance."
+      },
+      {
+        "text": "The charges of the nuclei",
+        "why": "The nuclear charges are fixed in both methods. The difference is that Hartree–Fock optimizes the orbital shapes, while LCAO assumes 1s shapes."
+      }
+    ],
+    "explanation": "In LCAO the orbital shapes are assumed in advance (1s-shaped), and only the mixing coefficients are chosen to minimize the ground-state energy. Hartree–Fock optimizes the shapes of the one-electron orbitals as well."
+  },
+  {
+    "id": "pc9-h2-mo-accuracy-ranking",
+    "type": "multiple-choice",
+    "prompt": "How does the section rank LCAO, Hartree–Fock (HF) and density functional theory (DFT) for accuracy?",
+    "choices": [
+      {
+        "text": "HF and DFT beat LCAO; DFT often beats HF",
+        "correct": true
+      },
+      {
+        "text": "LCAO is more accurate than both HF and DFT",
+        "why": "LCAO is very approximate and gives only qualitative results. HF and DFT are both more accurate."
+      },
+      {
+        "text": "DFT always beats HF, and HF always beats LCAO",
+        "why": "DFT is often more accurate than HF, but it depends on the molecule, so not always."
+      },
+      {
+        "text": "All three are about equally accurate",
+        "why": "They differ: LCAO is only qualitative, while HF and DFT are both more accurate."
+      }
+    ],
+    "explanation": "The LCAO approach is very approximate, giving only qualitative results. Hartree–Fock and DFT are both more accurate than LCAO; DFT is often more accurate than HF, but that depends on the molecule."
+  },
+  {
+    "id": "pc9-h2-mo-post-hf",
+    "type": "multiple-choice",
+    "prompt": "What are post-Hartree–Fock methods?",
+    "choices": [
+      {
+        "text": "Wavefunction methods that refine HF step by step",
+        "correct": true
+      },
+      {
+        "text": "Density-based methods that replace the wavefunction",
+        "why": "Post-HF methods are based on the wavefunction rather than the electron density. They improve on HF systematically."
+      },
+      {
+        "text": "Cheaper methods that trade away accuracy for speed",
+        "why": "It's the other way round: the more accurate a post-HF calculation, the more it costs."
+      },
+      {
+        "text": "Simpler versions of LCAO meant for large molecules",
+        "why": "Post-HF methods go beyond HF, which already beats LCAO. They are wavefunction-based and improve on HF systematically."
+      }
+    ],
+    "explanation": "Post-Hartree–Fock methods form a hierarchy, all based on the wavefunction rather than the electron density, that improve on the HF approximation systematically. The more accuracy wanted, the more computationally costly they become."
+  },
+  {
+    "id": "pc9-h2-mo-tradeoff",
+    "type": "multiple-choice",
+    "prompt": "Why is quantum chemistry often a trade-off between accuracy and efficiency?",
+    "choices": [
+      {
+        "text": "More accurate methods cost more computer time",
+        "correct": true
+      },
+      {
+        "text": "More accurate methods work only for atoms",
+        "why": "HF, DFT and post-HF methods all apply to molecules. The trade-off is cost: more accuracy needs more computation."
+      },
+      {
+        "text": "Faster methods are always more accurate",
+        "why": "Faster methods are generally less accurate, which is exactly why a trade-off is needed."
+      },
+      {
+        "text": "Accuracy is limited by the Pauli principle",
+        "why": "The Pauli principle is built into every method. The trade-off comes from cost: higher accuracy needs more computation."
+      }
+    ],
+    "explanation": "The greater the accuracy wanted, the more computationally costly the methods become, so accuracy has to be balanced against efficiency. This matters most for calculations on large molecules."
+  }
+]

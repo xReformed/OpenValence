@@ -1,0 +1,603 @@
+[
+  {
+    "id": "pc8-hartree-fock-hartree-wrong",
+    "type": "multiple-choice",
+    "prompt": "The section says the Hartree method is not just approximate but fundamentally wrong. Why?",
+    "choices": [
+      {
+        "text": "Its product wavefunction isn't antisymmetric",
+        "correct": true
+      },
+      {
+        "text": "It leaves out electron–electron repulsion entirely",
+        "why": "The Hartree method does include repulsion, as the average field of the other electrons (the Hartree term). Its flaw is that a simple product of orbitals isn't antisymmetric."
+      },
+      {
+        "text": "Its equations can't be solved, even by computer",
+        "why": "The Hartree equations can be solved numerically by the self-consistent field method. The flaw is that the product wavefunction ignores the Pauli principle."
+      },
+      {
+        "text": "It works only for the hydrogen atom",
+        "why": "It is used for many-electron atoms. Its flaw is that its product wavefunction doesn't change sign when two electrons are swapped."
+      }
+    ],
+    "explanation": "The Pauli exclusion principle demands that a many-electron wavefunction be antisymmetric: Ψ(r_1, r_2, …) = −Ψ(r_2, r_1, …). The Hartree product ψ_1(r_1)ψ_2(r_2)…ψ_N(r_N) can't satisfy this. The Hartree–Fock method fixes it."
+  },
+  {
+    "id": "pc8-hartree-fock-hartree-still-useful",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the Hartree method still useful for, even though its importance is otherwise historical?",
+    "choices": [
+      {
+        "text": "Introducing self-consistency and the SCF idea",
+        "correct": true
+      },
+      {
+        "text": "Beating Hartree–Fock accuracy for heavy atoms",
+        "why": "It is less accurate: its wavefunction isn't even antisymmetric. Its value is as an introduction to self-consistency and SCF calculations."
+      },
+      {
+        "text": "Giving wavefunctions that obey the Pauli principle",
+        "why": "It doesn't: its product wavefunction isn't antisymmetric, which is why the section calls it fundamentally wrong."
+      },
+      {
+        "text": "Running modern calculations, unchanged",
+        "why": "Modern work has moved on to Hartree–Fock theory and beyond. The Hartree method survives as an introduction to SCF ideas."
+      }
+    ],
+    "explanation": "The Hartree method is useful as an introduction to solving many-particle problems and to the concepts of self-consistency and self-consistent-field calculations, but otherwise its importance is confined to history. The Hartree–Fock method, with an antisymmetric wavefunction, is the better approach."
+  },
+  {
+    "id": "pc8-hartree-fock-slater-form",
+    "type": "multiple-choice",
+    "prompt": "How does the Hartree–Fock method build a trial wavefunction that obeys the Pauli principle?",
+    "choices": [
+      {
+        "text": "As a Slater determinant of one-electron orbitals",
+        "correct": true
+      },
+      {
+        "text": "As a simple product of one-electron orbitals",
+        "why": "A simple product is the Hartree form, and it isn't antisymmetric. A Slater determinant changes sign when two electrons are swapped."
+      },
+      {
+        "text": "As a single hydrogen 1s orbital for all electrons",
+        "why": "Putting every electron in one orbital breaks the Pauli principle. Hartree–Fock uses a Slater determinant of different spin-orbitals."
+      },
+      {
+        "text": "As a sum of one-electron orbitals",
+        "why": "A sum is not antisymmetric either. Hartree–Fock writes Ψ as a Slater determinant, normalized by 1/√(N!)."
+      }
+    ],
+    "explanation": "Writing Ψ as a Slater determinant of single-particle orbitals, normalized by 1/√(N!), makes it change sign whenever two electrons are interchanged, as the Pauli principle requires. This is the key difference from the Hartree method."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-term-new",
+    "type": "multiple-choice",
+    "prompt": "The Hartree–Fock equations contain four terms. Which one is not in the Hartree equations?",
+    "choices": [
+      {
+        "text": "The exchange term",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy term",
+        "why": "The kinetic energy, −(ħ^2/(2m))∇^2ψ_i, is in both sets of equations. The new fourth term is the exchange term."
+      },
+      {
+        "text": "The electron–nucleus attraction term",
+        "why": "Both methods include the attraction to the nucleus, V_nucleus. The term Hartree–Fock adds is the exchange term."
+      },
+      {
+        "text": "The Hartree (average repulsion) term",
+        "why": "The Hartree term, the repulsion from the average charge of the other N − 1 electrons, is in both methods. The exchange term is new."
+      }
+    ],
+    "explanation": "The first three terms (kinetic energy, electron–nucleus attraction and the Hartree term) are identical to those in the Hartree equations. The fourth, the exchange term, comes from the Slater determinant form of the wavefunction."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-form",
+    "type": "multiple-choice",
+    "prompt": "How does the exchange term in the Hartree–Fock equations compare in form with the direct Coulomb term?",
+    "choices": [
+      {
+        "text": "It looks similar, but with the indices exchanged",
+        "correct": true
+      },
+      {
+        "text": "It is identical, and simply doubles the repulsion",
+        "why": "If it were identical it would add nothing new. It resembles the Coulomb term but with the orbital indices swapped, and it acts only on like spins."
+      },
+      {
+        "text": "It has the opposite sign and cancels it exactly",
+        "why": "It does enter with a minus sign, as J − K, but it doesn't cancel the Coulomb term in general: it acts only between electrons of the same spin."
+      },
+      {
+        "text": "It involves the nucleus instead of other electrons",
+        "why": "Like the Coulomb term, the exchange term involves the orbitals of the other electrons. It differs by having the indices of the two orbitals exchanged."
+      }
+    ],
+    "explanation": "The exchange term resembles the direct Coulomb term, but with the indices of the orbitals exchanged. It comes from the Slater determinant and acts only between electrons of the same spin."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-same-spin",
+    "type": "multiple-choice",
+    "prompt": "Between which electrons does the exchange term in the Hartree–Fock equations act?",
+    "choices": [
+      {
+        "text": "Only electrons with the same spin",
+        "correct": true
+      },
+      {
+        "text": "Only electrons with opposite spins",
+        "why": "It's the other way round. Exchange acts only between like-spin electrons; electrons of opposite spin are unaffected by it."
+      },
+      {
+        "text": "Every pair of electrons, whatever their spins",
+        "why": "The average Coulomb (Hartree) repulsion acts between all pairs. The exchange term acts only between electrons with the same spin."
+      },
+      {
+        "text": "Only the two electrons in the same orbital",
+        "why": "Two electrons in the same spatial orbital have opposite spins, so exchange doesn't act between them. It acts between like-spin electrons."
+      }
+    ],
+    "explanation": "The exchange term is a manifestation of the Pauli exclusion principle. It acts only on electrons with the same spin, and it comes from the Slater determinant form of the wavefunction."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-effect",
+    "type": "multiple-choice",
+    "prompt": "Physically, what is the effect of the exchange term on electrons of the same spin?",
+    "choices": [
+      {
+        "text": "It makes them avoid each other",
+        "correct": true
+      },
+      {
+        "text": "It draws them closer together",
+        "why": "Drawing identical particles together is the exchange effect for bosons. For electrons, which are fermions, exchange keeps like-spin electrons apart."
+      },
+      {
+        "text": "It binds them more tightly to the nucleus",
+        "why": "Exchange is about the electrons and each other, not the nucleus. Its effect is that like-spin electrons avoid each other."
+      },
+      {
+        "text": "Nothing; it only flips the sign of Ψ",
+        "why": "The antisymmetry has a real effect: like-spin electrons tend to avoid each other, as the exchange hole shows."
+      }
+    ],
+    "explanation": "Physically, the effect of exchange is for like-spin electrons to avoid each other. It acts to separate electrons of the same spin, as a consequence of the Pauli exclusion principle."
+  },
+  {
+    "id": "pc8-hartree-fock-fock-one-electron",
+    "type": "multiple-choice",
+    "prompt": "The Hartree–Fock equations can be written F̂|φ_i⟩ = ε_i|φ_i⟩, where F̂ is the Fock operator. What does solving one of these equations give?",
+    "choices": [
+      {
+        "text": "One electron's orbital and its energy",
+        "correct": true
+      },
+      {
+        "text": "The total energy of the whole atom at once",
+        "why": "F̂ is a one-electron operator. Each equation gives one Hartree–Fock orbital φ_i and its orbital energy ε_i."
+      },
+      {
+        "text": "The exact wavefunction of all the electrons",
+        "why": "The equations give one-electron orbitals, which are then combined in a Slater determinant. They are not the exact many-electron wavefunction."
+      },
+      {
+        "text": "The motion of the nucleus",
+        "why": "The nucleus enters only through the attraction term. Each equation gives the orbital and energy of one electron."
+      }
+    ],
+    "explanation": "The Fock operator is a one-electron operator. Solving a Hartree–Fock equation gives the Hartree–Fock orbital φ_i and its orbital energy ε_i, for one electron."
+  },
+  {
+    "id": "pc8-hartree-fock-h0-part",
+    "type": "multiple-choice",
+    "prompt": "The Fock operator is F̂ = Ĥ^0 + Σ_j(2Ĵ_j − K̂_j). What does the Ĥ^0 part account for?",
+    "choices": [
+      {
+        "text": "Kinetic energy and attraction to the nucleus",
+        "correct": true
+      },
+      {
+        "text": "The repulsion from all the other electrons",
+        "why": "That is the job of the Ĵ and K̂ operators in the sum. Ĥ^0 is the hydrogen-like part: kinetic energy plus attraction to the nucleus."
+      },
+      {
+        "text": "Only the exchange interaction between like spins",
+        "why": "Exchange is described by the K̂_j operators. Ĥ^0 contains the electron's kinetic energy and its attraction to the nucleus."
+      },
+      {
+        "text": "The total energy of every electron in the atom",
+        "why": "Ĥ^0 is a one-electron, hydrogen-like operator. It holds one electron's kinetic energy and its attraction to the nucleus of charge Z."
+      }
+    ],
+    "explanation": "Ĥ^0 = −(ħ^2/(2m))∇^2 − (Ze^2)/(4πε_0 r) is the familiar hydrogen-like operator for one electron. The sum Σ_j(2Ĵ_j − K̂_j), which comes from the electron–electron repulsion, adds the average field of all the other electrons."
+  },
+  {
+    "id": "pc8-hartree-fock-best-orbitals",
+    "type": "multiple-choice",
+    "prompt": "How are the Hartree–Fock wavefunctions defined?",
+    "choices": [
+      {
+        "text": "The one-electron functions giving the lowest total energy",
+        "correct": true
+      },
+      {
+        "text": "The exact solutions of the full Schrödinger equation",
+        "why": "The many-electron equation can't be solved exactly. Hartree–Fock wavefunctions are the best possible one-electron functions: those that give the lowest total energy."
+      },
+      {
+        "text": "Hydrogen orbitals with the nuclear charge Z = 1",
+        "why": "Plain hydrogen orbitals ignore the other electrons. Hartree–Fock orbitals are chosen to give the lowest possible total energy."
+      },
+      {
+        "text": "The one-electron functions giving the highest total energy",
+        "why": "Better trial functions give lower, not higher, energies. Hartree–Fock orbitals are those that make the total energy as low as possible."
+      }
+    ],
+    "explanation": "The best possible one-electron wavefunctions are, by definition, those that give the lowest possible total energy when used with the complete multi-electron Hamiltonian. These are the Hartree–Fock wavefunctions, and that energy is the Hartree–Fock energy."
+  },
+  {
+    "id": "pc8-hartree-fock-beryllium-exchange-pairs",
+    "type": "numeric",
+    "prompt": "Beryllium, 1s^2 2s^2, has four electrons: 1sα, 1sβ, 2sα and 2sβ. The exchange term acts only between two electrons with the same spin. How many pairs of electrons in beryllium have an exchange interaction?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The same-spin pairs are (1sα, 2sα) and (1sβ, 2sβ): 2 pairs. Pairs with opposite spins, such as the two 1s electrons, have no exchange interaction."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-not-force",
+    "type": "multiple-choice",
+    "prompt": "Why is the exchange interaction not a true force, even though it is sometimes called an exchange force?",
+    "choices": [
+      {
+        "text": "It lacks a force carrier; it's a symmetry effect",
+        "correct": true
+      },
+      {
+        "text": "It is far too weak ever to be measured",
+        "why": "Its effects are real; they shape how electrons are arranged. It isn't a true force because it has no force carrier."
+      },
+      {
+        "text": "It acts only between electrons and the nucleus",
+        "why": "Exchange acts between identical particles, not between electrons and the nucleus. It is not a true force because it has no force carrier."
+      },
+      {
+        "text": "It is just the Coulomb repulsion under another name",
+        "why": "Coulomb repulsion is a true electrostatic force. Exchange is a separate quantum effect that comes from the symmetry of the wavefunction when particles are exchanged."
+      }
+    ],
+    "explanation": "The exchange interaction is a quantum mechanical effect between identical particles. It lacks a force carrier, so it isn't a true force; it comes from the wavefunction staying the same or changing sign when two particles are exchanged."
+  },
+  {
+    "id": "pc8-hartree-fock-fermions-bosons",
+    "type": "multiple-choice",
+    "prompt": "How does the exchange interaction act for fermions, such as electrons, compared with bosons?",
+    "choices": [
+      {
+        "text": "Fermions repel; bosons effectively attract",
+        "correct": true
+      },
+      {
+        "text": "Fermions attract; bosons effectively repel",
+        "why": "It's the other way round. For fermions it is called Pauli repulsion; for bosons it is an effective attraction, as in Bose–Einstein condensation."
+      },
+      {
+        "text": "Only fermions feel it; bosons never do",
+        "why": "Both bosons and fermions experience the exchange interaction. For bosons it brings identical particles closer together."
+      },
+      {
+        "text": "Both kinds feel the same repulsion",
+        "why": "The effect differs: fermions are kept apart (Pauli repulsion), while bosons are drawn closer together."
+      }
+    ],
+    "explanation": "Both bosons and fermions experience the exchange interaction. For fermions it is sometimes called Pauli repulsion and is related to the Pauli exclusion principle. For bosons it is an effective attraction that brings identical particles closer together, as in Bose–Einstein condensation."
+  },
+  {
+    "id": "pc8-hartree-fock-virtual-n-plus-1",
+    "type": "multiple-choice",
+    "prompt": "The energy of an occupied orbital reflects interactions in a system of N electrons. What about the energy of a virtual (unoccupied) orbital?",
+    "choices": [
+      {
+        "text": "It reflects a system with N + 1 electrons",
+        "correct": true
+      },
+      {
+        "text": "It reflects a system with N − 1 electrons",
+        "why": "A virtual orbital's energy includes Coulomb minus exchange with all N occupied spin-orbitals, as if it held an extra electron: N + 1 in all."
+      },
+      {
+        "text": "It is always exactly zero",
+        "why": "Virtual orbitals have energies too. Theirs include interactions with all N occupied spin-orbitals, so they describe a system of N + 1 electrons."
+      },
+      {
+        "text": "It reflects the same N-electron system",
+        "why": "For a virtual orbital no j = i term cancels, so it interacts with all N occupied spin-orbitals, just as an extra electron would."
+      }
+    ],
+    "explanation": "For an occupied orbital the j = i term cancels, leaving interactions with the N − 1 other electrons. A virtual orbital interacts with all N occupied spin-orbitals, so its energy pertains to a system of N + 1 electrons. This is why virtual orbital energies relate to electron affinities."
+  },
+  {
+    "id": "pc8-hartree-fock-table-higher",
+    "type": "multiple-choice",
+    "prompt": "In Table 8.7.1, how does each atom's Hartree–Fock energy compare with the experimental energy?",
+    "choices": [
+      {
+        "text": "It is slightly higher (less negative)",
+        "correct": true
+      },
+      {
+        "text": "It is slightly lower (more negative)",
+        "why": "Every Hartree–Fock energy in the table is less negative than experiment: for He, −5.72 RH against −5.80 RH."
+      },
+      {
+        "text": "It is exactly equal to experiment",
+        "why": "The values are close but not equal: for Ar, the Hartree–Fock energy is −1053.64 RH against −1055.20 RH."
+      },
+      {
+        "text": "It is about half the experimental value",
+        "why": "The agreement is far better than that, about 99%: for Ne, −257.10 RH against −257.88 RH."
+      }
+    ],
+    "explanation": "For every atom in the table, the Hartree–Fock energy lies a little above the experimental energy. The gap is small, about 1% or less, and comes from the electron correlation that Hartree–Fock theory neglects."
+  },
+  {
+    "id": "pc8-hartree-fock-gap-grows",
+    "type": "multiple-choice",
+    "prompt": "In Table 8.7.1, how does the gap between the Hartree–Fock and experimental energies change from He to Ar?",
+    "choices": [
+      {
+        "text": "It grows as the atoms get more electrons",
+        "correct": true
+      },
+      {
+        "text": "It shrinks as the atoms get more electrons",
+        "why": "The gap grows: 0.08 RH for He, but 1.56 RH for Ar."
+      },
+      {
+        "text": "It stays the same, 0.08 RH, for every atom",
+        "why": "Only He has a gap of 0.08 RH. It rises to 1.56 RH for Ar."
+      },
+      {
+        "text": "It is largest for He, the smallest atom",
+        "why": "He has the smallest gap, 0.08 RH. Ar, with the most electrons, has the largest, 1.56 RH."
+      }
+    ],
+    "explanation": "The gap is 0.08 RH for He and climbs to 1.56 RH for Ar. The error grows with the number of electrons, although as a fraction of the total energy it stays small."
+  },
+  {
+    "id": "pc8-hartree-fock-neon-gap",
+    "type": "numeric",
+    "prompt": "Table 8.7.1 lists the Hartree–Fock energy of Ne as −257.10 RH and the experimental energy as −257.88 RH. By how much is the Hartree–Fock energy higher than experiment, in RH?",
+    "answer": 0.78,
+    "unit": "RH",
+    "explanation": "−257.10 RH − (−257.88 RH) = 0.78 RH. The Hartree–Fock energy is slightly higher (less negative) than the true energy, because Hartree–Fock theory neglects electron correlation."
+  },
+  {
+    "id": "pc8-hartree-fock-helium-percent",
+    "type": "numeric",
+    "prompt": "Table 8.7.1 gives the energy of He as −5.72 RH from Hartree–Fock theory and −5.80 RH from experiment. The Hartree–Fock energy is what percentage of the experimental energy? (Give it to one decimal place.)",
+    "answer": 98.62,
+    "unit": "%",
+    "tolerance": 0.002,
+    "explanation": "(−5.72)/(−5.80) × 100 = 98.6%. Even for helium, Hartree–Fock theory gets about 99% of the energy; the small rest is the correlation it leaves out."
+  },
+  {
+    "id": "pc8-hartree-fock-argon-gap-ev",
+    "type": "numeric",
+    "prompt": "In Table 8.7.1, the Hartree–Fock energy of Ar lies 1.56 RH above the experimental energy. Using 1 RH = 13.6 eV, how large is this gap, in eV?",
+    "answer": 21.216,
+    "unit": "eV",
+    "explanation": "1.56 × 13.6 eV = 21.2 eV. That is only about 0.15% of argon's total energy, but it is larger than the energy of a typical chemical bond (a few eV). This is why the last 1% missed by Hartree–Fock theory matters for quantitative chemistry."
+  },
+  {
+    "id": "pc8-hartree-fock-koopmans",
+    "type": "multiple-choice",
+    "prompt": "What does Koopmans' theorem say about the first ionization energy of an atom or molecule?",
+    "choices": [
+      {
+        "text": "It is minus the highest occupied orbital energy",
+        "correct": true
+      },
+      {
+        "text": "It equals the highest occupied orbital energy",
+        "why": "Occupied orbital energies are negative, while an ionization energy is positive. IE = −ε of the highest occupied orbital."
+      },
+      {
+        "text": "It is minus the lowest unoccupied orbital energy",
+        "why": "The lowest empty (virtual) orbital relates to the electron affinity. The ionization energy uses the highest occupied orbital."
+      },
+      {
+        "text": "It is minus the total Hartree–Fock energy",
+        "why": "The total energy is far larger than an ionization energy. Koopmans' theorem uses a single orbital energy: IE = −ε_HOMO."
+      }
+    ],
+    "explanation": "Koopmans' theorem states that the first ionization energy equals the negative of the orbital energy of the highest occupied orbital: IE = −ε_HOMO. Orbital energies are negative, so IE comes out positive."
+  },
+  {
+    "id": "pc8-hartree-fock-koopmans-helium",
+    "type": "numeric",
+    "prompt": "By Koopmans' theorem, the first ionization energy is IE = −ε_HOMO. A Hartree–Fock calculation on helium gives the energy of its highest occupied orbital as ε_1s = −0.918 hartree. Using 1 hartree = 27.211 eV, what is the Koopmans estimate of helium's ionization energy, in eV?",
+    "answer": 24.98,
+    "unit": "eV",
+    "explanation": "IE = −ε_1s = 0.918 hartree × 27.211 eV/hartree = 24.98 eV. The measured value is 24.6 eV, so the estimate is within the ±0.5 eV the section quotes for Koopmans' theorem."
+  },
+  {
+    "id": "pc8-hartree-fock-frozen-orbital",
+    "type": "multiple-choice",
+    "prompt": "Koopmans' theorem rests on the \"frozen orbital approximation\". What does that assume?",
+    "choices": [
+      {
+        "text": "The remaining orbitals stay unchanged",
+        "correct": true
+      },
+      {
+        "text": "The orbitals relax to suit the new ion",
+        "why": "That relaxation is exactly what the model neglects. It uses the parent's orbitals, unchanged, for the ion too."
+      },
+      {
+        "text": "The nucleus is held still as electrons move",
+        "why": "Fixing the nucleus is a different approximation. Frozen orbitals means the other electrons' orbitals are not re-optimized after an electron is removed."
+      },
+      {
+        "text": "The electrons stop moving when cooled",
+        "why": "Frozen here has nothing to do with temperature. It means the remaining orbitals are kept exactly as they were in the parent atom or molecule."
+      }
+    ],
+    "explanation": "In the frozen orbital approximation, an electron is removed without changing the wavefunctions of the other electrons: the parent's Hartree–Fock orbitals describe the ion too. This neglects orbital relaxation, the re-optimization of the orbitals for the new species."
+  },
+  {
+    "id": "pc8-hartree-fock-koopmans-ea",
+    "type": "multiple-choice",
+    "prompt": "Within the Koopmans model, how is an electron affinity estimated?",
+    "choices": [
+      {
+        "text": "As −ε of the virtual orbital the electron enters",
+        "correct": true
+      },
+      {
+        "text": "As −ε of the highest occupied orbital",
+        "why": "That gives the ionization energy. An added electron goes into a virtual orbital, and the electron affinity is −ε of that orbital."
+      },
+      {
+        "text": "As the total energy of the anion alone",
+        "why": "Koopmans' estimate uses one orbital energy: E_N − E_(N+1) = −ε_(N+1), for the virtual spin-orbital the electron enters."
+      },
+      {
+        "text": "As the ionization energy with the sign reversed",
+        "why": "Ionization energies and electron affinities involve different orbitals: occupied for one, virtual for the other."
+      }
+    ],
+    "explanation": "For electron attachment, E_N − E_(N+1) = −ε_(N+1): the electron affinity is minus the energy of the virtual spin-orbital that the added electron occupies. Ionization energies come from occupied orbitals, electron affinities from virtual ones."
+  },
+  {
+    "id": "pc8-hartree-fock-koopmans-affinity",
+    "type": "numeric",
+    "prompt": "In the Koopmans model, adding an electron to the virtual spin-orbital φ_(N+1) gives E_N − E_(N+1) = −ε_(N+1), the electron affinity. A Hartree–Fock calculation on an atom gives ε_(N+1) = −1.8 eV for that virtual spin-orbital. What is the Koopmans estimate of the electron affinity, in eV?",
+    "answer": 1.8,
+    "unit": "eV",
+    "explanation": "EA = E_N − E_(N+1) = −ε_(N+1) = −(−1.8 eV) = 1.8 eV. As for an ionization energy, the sign of the orbital energy is flipped, but the orbital used is the empty (virtual) one that receives the electron."
+  },
+  {
+    "id": "pc8-hartree-fock-koopmans-accuracy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how accurate are ionization energies estimated with Koopmans' theorem?",
+    "choices": [
+      {
+        "text": "Qualitatively right, to about ±0.5 eV",
+        "correct": true
+      },
+      {
+        "text": "Exact, because exchange is treated exactly",
+        "why": "Hartree–Fock treats exchange exactly, but Koopmans' estimates also neglect orbital relaxation and correlation. They are good to roughly ±0.5 eV."
+      },
+      {
+        "text": "Off by a factor of about two",
+        "why": "They are much better than that: qualitatively correct, often within about ±0.5 eV."
+      },
+      {
+        "text": "Useless; even the order of levels is wrong",
+        "why": "Koopmans' theorem is used widely because it gives qualitatively correct results, within about ±0.5 eV."
+      }
+    ],
+    "explanation": "Koopmans' theorem is used extensively in quantum chemistry to estimate ionization potentials and electron affinities. Within the Hartree–Fock frozen-orbital model, its results are often qualitatively correct, to about ±0.5 eV."
+  },
+  {
+    "id": "pc8-hartree-fock-correlation",
+    "type": "multiple-choice",
+    "prompt": "What do the Hartree–Fock equations treat exactly, and what do they neglect?",
+    "choices": [
+      {
+        "text": "They treat exchange exactly but neglect correlation",
+        "correct": true
+      },
+      {
+        "text": "They treat correlation exactly but neglect exchange",
+        "why": "It's the reverse. The exchange term is built in from the Slater determinant; the more detailed many-body correlations are left out."
+      },
+      {
+        "text": "They treat both exchange and correlation exactly",
+        "why": "If they did, Hartree–Fock energies would match experiment. They neglect correlation, which is why their energies lie slightly above the measured ones."
+      },
+      {
+        "text": "They neglect electron–electron repulsion entirely",
+        "why": "Hartree–Fock theory includes repulsion through the average field of the other electrons. What it misses is electron correlation."
+      }
+    ],
+    "explanation": "The Hartree–Fock equations deal with exchange exactly, but they neglect more detailed correlations due to many-body interactions. The effects of correlation are not negligible, and missing them is one of Hartree–Fock theory's best-known failures."
+  },
+  {
+    "id": "pc8-hartree-fock-exchange-hole",
+    "type": "multiple-choice",
+    "prompt": "In the Hartree–Fock picture, what is the \"exchange hole\" around an electron?",
+    "choices": [
+      {
+        "text": "A region where same-spin electron density is reduced",
+        "correct": true
+      },
+      {
+        "text": "A region from which every other electron is excluded",
+        "why": "Only electrons with the same spin are kept away. Electrons with opposite spin are unaffected by the exchange hole."
+      },
+      {
+        "text": "The vacancy left when an electron is ionized",
+        "why": "That vacancy is something else. The exchange hole is the dip in like-spin electron density close to any electron."
+      },
+      {
+        "text": "A hole in the nucleus that electrons pass through",
+        "why": "The exchange hole has nothing to do with the nucleus. It is the region near an electron where the density of like-spin electrons is reduced."
+      }
+    ],
+    "explanation": "In Hartree–Fock theory the N-electron wavefunction obeys the Pauli exclusion principle, so near any electron the density of electrons with the same spin is reduced: the exchange hole. Electrons of opposite spin are unaffected."
+  },
+  {
+    "id": "pc8-hartree-fock-hartree-no-hole",
+    "type": "multiple-choice",
+    "prompt": "Leaving aside Coulomb effects, how does the Hartree approximation describe the chance of finding other electrons close to a given electron?",
+    "choices": [
+      {
+        "text": "Flat: the electrons are treated as independent",
+        "correct": true
+      },
+      {
+        "text": "It drops near the electron, for same spins only",
+        "why": "That is the exchange hole of Hartree–Fock theory. The Hartree product wavefunction ignores the Pauli principle, so it shows no hole."
+      },
+      {
+        "text": "It drops to zero near the electron, for all spins",
+        "why": "The Hartree approximation treats the electrons as independent, so nothing is reduced near the electron; the distribution is structureless."
+      },
+      {
+        "text": "It rises to a peak right at the electron",
+        "why": "Nothing in the Hartree picture draws electrons together. Treated as independent, they give a structureless, flat distribution."
+      }
+    ],
+    "explanation": "Within the Hartree approximation all electrons are treated as independent, so the probability n(r) of finding the other electrons around a given one is structureless. Only Hartree–Fock theory, with its antisymmetric wavefunction, shows an exchange hole for same-spin electrons."
+  },
+  {
+    "id": "pc8-hartree-fock-99-percent",
+    "type": "multiple-choice",
+    "prompt": "How does the section sum up what Hartree–Fock theory achieves for multi-electron systems?",
+    "choices": [
+      {
+        "text": "About 99% right, but short of quantitative",
+        "correct": true
+      },
+      {
+        "text": "Exact, so no better methods are needed",
+        "why": "Hartree–Fock theory neglects correlation. Its remaining 1% error is too large for many quantitative questions, so more sophisticated methods are needed."
+      },
+      {
+        "text": "Good for helium, but useless for heavier atoms",
+        "why": "Table 8.7.1 shows good agreement all the way to argon. Hartree–Fock theory is a great first approximation for multi-electron systems in general."
+      },
+      {
+        "text": "Only a rough guess, within about 50%",
+        "why": "It does far better than that: about 99% of the way. It is the remaining 1% that limits it."
+      }
+    ],
+    "explanation": "Hartree–Fock theory gives a great first-order description (99%) of multi-electron systems, but the last 1% is still too large for describing many aspects of chemistry quantitatively. More sophisticated approaches are needed for that."
+  }
+]

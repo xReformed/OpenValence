@@ -1,0 +1,536 @@
+[
+  {
+    "id": "pc13-rotor-rule-gross",
+    "type": "multiple-choice",
+    "prompt": "What does a gross selection rule state?",
+    "choices": [
+      {
+        "text": "What a molecule needs to show a given kind of spectrum",
+        "correct": true
+      },
+      {
+        "text": "Which change in a quantum number a transition may have",
+        "why": "That is the specific selection rule, applied after the gross one. A gross rule states the requirements for showing a spectrum of a given kind, such as an IR or microwave spectrum."
+      },
+      {
+        "text": "How intense each line in a spectrum will be",
+        "why": "Neither kind of selection rule gives intensities. A gross rule states what a molecule must have to show a given kind of spectrum."
+      },
+      {
+        "text": "Which region of the spectrum a line falls in",
+        "why": "Where a line falls depends on the energy gap. A gross rule states the characteristic requirements for showing, say, an IR or a microwave spectrum."
+      }
+    ],
+    "explanation": "A selection rule has two parts. The gross selection rule states the characteristic requirements for an atom or molecule to show a spectrum of a given kind, such as an IR or microwave spectrum; the specific selection rule then says which changes in quantum number can happen."
+  },
+  {
+    "id": "pc13-rotor-rule-specific",
+    "type": "multiple-choice",
+    "prompt": "Once a molecule meets the gross selection rule, what does the specific selection rule decide?",
+    "choices": [
+      {
+        "text": "Whether a particular change in quantum number can occur",
+        "correct": true
+      },
+      {
+        "text": "Whether the molecule shows a spectrum of that kind at all",
+        "why": "That is settled by the gross rule, which is applied first. The specific rule then decides which changes in quantum number may happen."
+      },
+      {
+        "text": "How long the molecule stays in the excited state",
+        "why": "Selection rules say which transitions may happen, not how long states last. The specific rule decides whether a given change in quantum number can occur."
+      },
+      {
+        "text": "How many photons the molecule absorbs at once",
+        "why": "The specific rule is about quantum numbers, such as ΔJ, not the number of photons. It decides whether a certain change in quantum number may happen."
+      }
+    ],
+    "explanation": "The gross rule comes first: does the molecule have what it takes to show this kind of spectrum? Then the specific selection rule determines whether a certain change in quantum number may happen, as ΔJ = ±1 does for the rigid rotor."
+  },
+  {
+    "id": "pc13-rotor-rule-classify-gross",
+    "type": "multiple-choice",
+    "prompt": "Which of these is a gross selection rule rather than a specific one?",
+    "choices": [
+      {
+        "text": "A rotational spectrum needs a permanent dipole",
+        "correct": true
+      },
+      {
+        "text": "ΔJ = ±1 for absorption of a microwave photon",
+        "why": "ΔJ = ±1 says which change in J is allowed, so it is a specific selection rule. The gross rule is the requirement of a permanent dipole moment."
+      },
+      {
+        "text": "ΔM = 0 when the radiation's field lies along z",
+        "why": "ΔM = 0 limits the change in a quantum number, which makes it a specific rule. Needing a permanent dipole is the gross rule."
+      },
+      {
+        "text": "Δv = ±1 between harmonic oscillator levels",
+        "why": "Δv = ±1 names an allowed change in v, so it is a specific rule. A gross rule is a requirement for showing a kind of spectrum at all."
+      }
+    ],
+    "explanation": "Needing a permanent dipole moment is a requirement for showing a rotational (microwave) spectrum at all, so it is a gross selection rule. Rules like ΔJ = ±1, ΔM = 0 and Δv = ±1 say which changes in a quantum number are allowed: they are specific selection rules."
+  },
+  {
+    "id": "pc13-rotor-rule-field-partner",
+    "type": "multiple-choice",
+    "prompt": "Incident radiation presents an oscillating electric field, E_0 cos(ωt). According to the section, what in the molecule does this field interact with?",
+    "choices": [
+      {
+        "text": "A transition dipole",
+        "correct": true
+      },
+      {
+        "text": "The nuclear spins",
+        "why": "Interaction with nuclear spins is the business of NMR, through a magnetic field. Here the oscillating electric field interacts with a transition dipole."
+      },
+      {
+        "text": "The bond's force constant",
+        "why": "A force constant is not something a field can couple to directly. The field interacts with a transition dipole, which is why the transition moment decides the rules."
+      },
+      {
+        "text": "The molecule's total mass",
+        "why": "An electric field acts on charges, not on mass as such. It interacts with a transition dipole of the molecule."
+      }
+    ],
+    "explanation": "The oscillating electric field E_0 cos(ωt) of the radiation interacts with a transition dipole. That is why the transition dipole moment integral decides which transitions can happen."
+  },
+  {
+    "id": "pc13-rotor-rule-r-vector",
+    "type": "multiple-choice",
+    "prompt": "In the dipole operator μ = e·r, what is r?",
+    "choices": [
+      {
+        "text": "A vector pointing in a direction in space",
+        "correct": true
+      },
+      {
+        "text": "The radius of the molecule, a single number",
+        "why": "r is a vector, not a single size. The dipole operator is the charge e times the vector r, which points in a direction in space."
+      },
+      {
+        "text": "The rate at which the molecule rotates",
+        "why": "No rotation rate enters the dipole operator. r is a vector pointing in a direction in space, multiplied by the charge e."
+      },
+      {
+        "text": "The reduced mass of the two bonded atoms",
+        "why": "The dipole operator has no mass in it. It is a charge e times a vector r pointing in a direction in space."
+      }
+    ],
+    "explanation": "The dipole operator is μ = e·r, a charge times a vector r that points in a direction in space. Its component along the field direction, μ_z, is what enters the transition moment."
+  },
+  {
+    "id": "pc13-rotor-rule-state-vs-transition",
+    "type": "multiple-choice",
+    "prompt": "How does the transition dipole moment (μ_z)_12 = ∫Ψ_1^*μ_z Ψ_2 dτ differ from the dipole moment of a single state, ∫Ψ_1^*μ_z Ψ_1 dτ?",
+    "choices": [
+      {
+        "text": "It has two different states, not one state twice",
+        "correct": true
+      },
+      {
+        "text": "It uses the x component of μ instead of the z one",
+        "why": "Both integrals use μ_z. The difference is the wavefunctions: the transition moment has two different states, Ψ_1 and Ψ_2."
+      },
+      {
+        "text": "It is always larger than the state's own dipole",
+        "why": "Neither is always larger; the transition moment can even be zero. What differs is that it contains two different states, Ψ_1 and Ψ_2."
+      },
+      {
+        "text": "It leaves out the complex conjugate entirely",
+        "why": "Both integrals conjugate the first wavefunction, Ψ_1^*. The transition moment differs by having a different state, Ψ_2, on the right."
+      }
+    ],
+    "explanation": "The dipole moment of a state has the same wavefunction on both sides of μ_z. The transition dipole moment has the initial and final states, Ψ_1 and Ψ_2, so it measures how strongly light can connect the two."
+  },
+  {
+    "id": "pc13-rotor-rule-transient",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe a transition dipole moment?",
+    "choices": [
+      {
+        "text": "A transient polarization created by the light",
+        "correct": true
+      },
+      {
+        "text": "The permanent dipole of the molecule's ground state",
+        "why": "A permanent dipole belongs to one state. A transition dipole is a transient dipolar polarization created by the radiation's interaction with the molecule."
+      },
+      {
+        "text": "The magnetic moment of its spinning nuclei",
+        "why": "Magnetic moments of nuclei are an NMR topic. A transition dipole is an electric, transient polarization created by light interacting with the molecule."
+      },
+      {
+        "text": "The dipole of the final state alone",
+        "why": "The transition dipole involves both states, not just the final one. It is a transient dipolar polarization created by the radiation acting on the molecule."
+      }
+    ],
+    "explanation": "A transition dipole moment is a transient dipolar polarization created by the interaction of electromagnetic radiation with a molecule. Its integral, (μ_z)_12 = ∫Ψ_1^*μ_z Ψ_2 dτ, joins the two states of the transition."
+  },
+  {
+    "id": "pc13-rotor-rule-statement",
+    "type": "multiple-choice",
+    "prompt": "According to the section, a selection rule is a statement of what?",
+    "choices": [
+      {
+        "text": "When the transition moment μ_z is non-zero",
+        "correct": true
+      },
+      {
+        "text": "When the molecule's permanent dipole is zero",
+        "why": "A zero permanent dipole would forbid rotational transitions altogether. The selection rule states when the transition moment μ_z is non-zero."
+      },
+      {
+        "text": "When two states have exactly the same energy",
+        "why": "Equal energies leave no gap for a photon to bridge. The selection rule is a statement of when the transition moment μ_z is non-zero, so that the transition is allowed."
+      },
+      {
+        "text": "When the light's electric field is at its maximum",
+        "why": "The field's size changes how strongly light acts, not which transitions are allowed. The selection rule states when μ_z, the transition moment, is non-zero."
+      }
+    ],
+    "explanation": "If the transition moment μ_z is zero, the transition is forbidden. The section sums this up: the selection rule is a statement of when μ_z is non-zero."
+  },
+  {
+    "id": "pc13-rotor-rule-rotor-functions",
+    "type": "multiple-choice",
+    "prompt": "Which functions does the section use for the initial and final states in the rotational transition moment?",
+    "choices": [
+      {
+        "text": "Spherical harmonics, Y_J^(M)(θ, φ)",
+        "correct": true
+      },
+      {
+        "text": "Hermite polynomials times a Gaussian",
+        "why": "Those are the harmonic oscillator wavefunctions, used for vibrational transitions. Rotational states are spherical harmonics."
+      },
+      {
+        "text": "Particle-in-a-box sine functions",
+        "why": "Sine functions belong to the particle in a box. The rigid rotor's states are the spherical harmonics Y_J^(M)(θ, φ)."
+      },
+      {
+        "text": "Hydrogen-atom radial functions R(r)",
+        "why": "The rigid rotor has a fixed bond length, so no radial function appears. Its states are spherical harmonics, which depend only on θ and φ."
+      }
+    ],
+    "explanation": "The rigid rotor's wavefunctions are the spherical harmonics Y_J^(M)(θ, φ). The rotational transition moment puts one on each side of μ_z and integrates over θ from 0 to π and φ from 0 to 2π."
+  },
+  {
+    "id": "pc13-rotor-rule-dipole-factor",
+    "type": "multiple-choice",
+    "prompt": "For a molecule with no permanent dipole moment, which part of the rotational transition moment makes it zero for every pair of states?",
+    "choices": [
+      {
+        "text": "The factor μ in front of the integral",
+        "correct": true
+      },
+      {
+        "text": "The φ integral, which is zero for any M and M′",
+        "why": "The φ integral is zero only when M ≠ M′; for M = M′ it equals 2π. It is the factor μ in front that makes every transition moment zero when there is no dipole."
+      },
+      {
+        "text": "The factor x = cos θ inside the integral",
+        "why": "x = cos θ is present for every molecule and doesn't depend on its dipole. The factor μ in front of the integral is what is zero for a nonpolar molecule."
+      },
+      {
+        "text": "The normalization constants N_JM",
+        "why": "The normalization constants are never zero. The dipole μ multiplies the whole integral, so μ = 0 makes every rotational transition moment zero."
+      }
+    ],
+    "explanation": "The rotational transition moment is μ N_JM N_(J′M′) times the angular integrals. If μ = 0, it is zero for every pair of states, whatever the integrals give. This proves that a molecule needs a permanent dipole moment to have a rotational spectrum."
+  },
+  {
+    "id": "pc13-rotor-rule-phi-factor",
+    "type": "multiple-choice",
+    "prompt": "In Y_J^(M)(θ, φ) = N_JM P_J^(|M|)(cos θ)e^(iMφ), which factor contains all the dependence on φ?",
+    "choices": [
+      {
+        "text": "e^(iMφ)",
+        "correct": true
+      },
+      {
+        "text": "P_J^(|M|)(cos θ)",
+        "why": "P_J^(|M|)(cos θ) depends only on θ. All the φ dependence is in e^(iMφ)."
+      },
+      {
+        "text": "N_JM",
+        "why": "N_JM is a normalization constant; it depends on neither angle. The φ dependence is in e^(iMφ)."
+      },
+      {
+        "text": "cos θ",
+        "why": "cos θ is a function of θ only. The φ dependence sits in the factor e^(iMφ)."
+      }
+    ],
+    "explanation": "A spherical harmonic splits into a θ part, P_J^(|M|)(cos θ), and a φ part, e^(iMφ). Because of this split, the transition moment's φ integral can be done on its own, and it is what produces the rule on M."
+  },
+  {
+    "id": "pc13-rotor-rule-x-factor",
+    "type": "multiple-choice",
+    "prompt": "In the rotational transition moment, the integrand over x = cos θ contains an extra factor x. Where does it come from?",
+    "choices": [
+      {
+        "text": "The z component of the dipole, μ_z = μ cos θ",
+        "correct": true
+      },
+      {
+        "text": "The normalization of the spherical harmonics",
+        "why": "Normalization gives the constants N_JM in front, not a factor x. The x comes from μ_z = μ cos θ, since x = cos θ."
+      },
+      {
+        "text": "The sin θ in the angular volume element",
+        "why": "The sin θ goes into the change of variable to x = cos θ, not into an extra factor. The x itself comes from μ_z = μ cos θ."
+      },
+      {
+        "text": "The recursion relation for P_J^(|M|)(x)",
+        "why": "The recursion is used to deal with the factor x, not to create it. The x comes from the dipole's z component, μ_z = μ cos θ."
+      }
+    ],
+    "explanation": "With the field along z, the dipole enters through its z component, μ_z = μ cos θ. After the substitution x = cos θ this becomes μx, so the integral contains P_(J′)^(|M′|)(x) x P_J^(|M|)(x)."
+  },
+  {
+    "id": "pc13-rotor-rule-delta-m-source",
+    "type": "multiple-choice",
+    "prompt": "Which part of the rotational transition moment gives the rule ΔM = 0?",
+    "choices": [
+      {
+        "text": "The φ integral over exp(i(M − M′)φ)",
+        "correct": true
+      },
+      {
+        "text": "The x integral over the P_J^(|M|) functions",
+        "why": "The x integral, with the recursion, gives the rule on J, ΔJ = ±1. The rule on M comes from the φ integral."
+      },
+      {
+        "text": "The factor μ in front of the whole integral",
+        "why": "μ decides whether any rotational transition is possible at all. ΔM = 0 comes from the φ integral of exp(i(M − M′)φ)."
+      },
+      {
+        "text": "The normalization constants N_JM and N_(J′M′)",
+        "why": "Normalization constants are never zero, so they can't forbid a change in M. The φ integral, zero unless M = M′, gives ΔM = 0."
+      }
+    ],
+    "explanation": "The φ part of the integral is ∫_0^(2π) exp(i(M − M′)φ) dφ. It is zero unless M = M′, so ΔM = 0 is part of the rigid rotor's selection rule (for a field along z). When M = M′ the integral equals 2π."
+  },
+  {
+    "id": "pc13-rotor-rule-phi-integral-value",
+    "type": "multiple-choice",
+    "prompt": "When M = M′, what does the φ integral ∫_0^(2π) exp(i(M − M′)φ) dφ equal, according to the section?",
+    "choices": [
+      {
+        "text": "2π",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "The integral is zero only when M ≠ M′. When M = M′ the exponential is 1, and the integral equals 2π."
+      },
+      {
+        "text": "1",
+        "why": "The integrand is 1 when M = M′, but it is integrated over φ from 0 to 2π, which gives 2π."
+      },
+      {
+        "text": "π",
+        "why": "φ runs over a full turn, from 0 to 2π, so with an integrand of 1 the result is 2π, not π."
+      }
+    ],
+    "explanation": "For M = M′, exp(i(M − M′)φ) = 1, and integrating 1 over a full turn gives 2π. So the transition moment becomes 2πμ N_JM N_(J′M′) times the x integral."
+  },
+  {
+    "id": "pc13-rotor-rule-recursion-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does the identity (2J + 1)xP_J^(|M|)(x) = (J − |M| + 1)P_(J+1)^(|M|)(x) + (J + |M|)P_(J−1)^(|M|)(x) let you do?",
+    "choices": [
+      {
+        "text": "Rewrite xP_J as a sum of P_(J+1) and P_(J−1)",
+        "correct": true
+      },
+      {
+        "text": "Find the energy of the rotational level J",
+        "why": "The identity is about functions, not energies. It replaces x times P_J by a combination of P_(J+1) and P_(J−1), which makes the x integral easy to judge."
+      },
+      {
+        "text": "Show that the φ integral is zero unless M = M′",
+        "why": "The φ integral is handled separately, with exp(i(M − M′)φ). This identity deals with the factor x in the x integral."
+      },
+      {
+        "text": "Normalize the spherical harmonics Y_J^(M)",
+        "why": "Normalization is done by the constants N_JM. The identity rewrites xP_J as a combination of P_(J+1) and P_(J−1)."
+      }
+    ],
+    "explanation": "The identity turns x times P_J^(|M|) into a combination of P_(J+1)^(|M|) and P_(J−1)^(|M|). The x integral then has P_(J′) multiplied by only these two functions, and it vanishes unless J′ = J + 1 or J − 1."
+  },
+  {
+    "id": "pc13-rotor-rule-j2-to-j4",
+    "type": "multiple-choice",
+    "prompt": "Why can't radiation polarized along z take a rigid rotor from J = 2, M = 0 to J′ = 4, M′ = 0?",
+    "choices": [
+      {
+        "text": "xP_2 holds only P_3 and P_1 terms, not P_4",
+        "correct": true
+      },
+      {
+        "text": "The J = 4 level is too high in energy to reach",
+        "why": "Energy isn't the obstacle; a photon of the right energy exists. The x integral vanishes because xP_2 contains only P_3 and P_1, neither of which is P_4."
+      },
+      {
+        "text": "The φ integral is zero for every J′ above J",
+        "why": "The φ integral depends on M and M′ only, not on J. The J rule comes from the x integral, where xP_2 gives only P_3 and P_1."
+      },
+      {
+        "text": "A molecule in J = 2 has no dipole moment",
+        "why": "The dipole doesn't depend on J. The transition is forbidden because, by the recursion, xP_2 has only P_3 and P_1 terms, so the integral with P_4 is zero."
+      }
+    ],
+    "explanation": "By the recursion, xP_2 = (3/5)P_3 + (2/5)P_1 for M = 0. The x integral of P_4 times these is zero: only J′ = J + 1 = 3 or J′ = J − 1 = 1 can give a non-zero result."
+  },
+  {
+    "id": "pc13-rotor-rule-j0-only-up",
+    "type": "multiple-choice",
+    "prompt": "For J = 0 and M = 0, the coefficient (J + |M|) of the P_(J−1) term in the recursion is 0. Which transitions from J = 0 does this leave?",
+    "choices": [
+      {
+        "text": "Only J = 0 → J′ = 1",
+        "correct": true
+      },
+      {
+        "text": "Only J = 0 → J′ = −1",
+        "why": "J can't be negative, and the P_(J−1) term is gone anyway. The only term left is P_1, so J = 0 can go only to J′ = 1."
+      },
+      {
+        "text": "J = 0 → J′ = 1 or J′ = 2",
+        "why": "J′ = 2 would need a P_2 term, which xP_0 doesn't have. Only the P_1 term survives, so J′ = 1 is the only choice."
+      },
+      {
+        "text": "None; J = 0 can't change",
+        "why": "The P_(J+1) term survives, with coefficient J − |M| + 1 = 1. So the transition J = 0 → J′ = 1 is allowed."
+      }
+    ],
+    "explanation": "With J = 0 and M = 0, the recursion reads xP_0 = P_1: there is no P_(J−1) term. So the only allowed transition from the lowest level is up to J′ = 1, the first line of a rotational spectrum."
+  },
+  {
+    "id": "pc13-rotor-rule-z-assumption",
+    "type": "multiple-choice",
+    "prompt": "The derivation in the section finds ΔM = 0. What does it assume about the radiation?",
+    "choices": [
+      {
+        "text": "Its field lies along the z axis",
+        "correct": true
+      },
+      {
+        "text": "Its frequency is in the visible region",
+        "why": "The frequency doesn't enter the angular integrals. ΔM = 0 follows because the field, and so μ_z, is taken along z."
+      },
+      {
+        "text": "It is very intense, like a laser beam",
+        "why": "Intensity doesn't change which integrals vanish. The derivation assumes the radiation's field is along the z axis, which gives ΔM = 0."
+      },
+      {
+        "text": "It arrives from every direction at once",
+        "why": "The derivation picks one direction: the field along the laboratory z axis. That choice leads to ΔM = 0."
+      }
+    ],
+    "explanation": "The section presents the electric field along the z axis of the laboratory frame, so only μ_z enters the transition moment. With that choice, the φ integral forces M′ = M."
+  },
+  {
+    "id": "pc13-rotor-rule-allowed-pair",
+    "type": "multiple-choice",
+    "prompt": "For radiation polarized along z, which rotational transition (J, M) → (J′, M′) has a non-zero transition moment?",
+    "choices": [
+      {
+        "text": "(1, 1) → (2, 1)",
+        "correct": true
+      },
+      {
+        "text": "(1, 1) → (2, 2)",
+        "why": "J changes by 1, which is fine, but M changes too. With the field along z, the φ integral is zero unless M′ = M."
+      },
+      {
+        "text": "(1, 1) → (3, 1)",
+        "why": "M stays the same, but J changes by 2. The x integral vanishes unless J′ = J + 1 or J − 1."
+      },
+      {
+        "text": "(1, 0) → (1, 0)",
+        "why": "J doesn't change here. The x integral is non-zero only for J′ = J ± 1, so ΔJ = 0 is forbidden."
+      }
+    ],
+    "explanation": "Both parts of the integral must be non-zero: the φ integral needs M′ = M, and the x integral needs J′ = J ± 1. Only (1, 1) → (2, 1) meets both."
+  },
+  {
+    "id": "pc13-rotor-rule-delta-m-meaning",
+    "type": "multiple-choice",
+    "prompt": "M is the quantum number for the z component of the rotor's angular momentum. Physically, what does ΔM = 0 for radiation along z say?",
+    "choices": [
+      {
+        "text": "Its angular momentum along z stays the same",
+        "correct": true
+      },
+      {
+        "text": "The total angular momentum is unchanged",
+        "why": "The total angular momentum goes with J, and J must change by ±1. ΔM = 0 says the z component, given by M, stays the same."
+      },
+      {
+        "text": "The rotor stops rotating about the z axis",
+        "why": "ΔM = 0 says nothing about stopping. The z component of the angular momentum, labeled by M, keeps the same value."
+      },
+      {
+        "text": "The molecule's dipole stays pointed along z",
+        "why": "M describes angular momentum, not the direction of the dipole. ΔM = 0 means the z component of angular momentum doesn't change."
+      }
+    ],
+    "explanation": "The section reminds us that J and M are the quantum numbers of the total angular momentum and of its z component. With the field along z, J changes by ±1 while the z component, M, stays the same."
+  },
+  {
+    "id": "pc13-rotor-rule-orbital-analog",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the same selection rules also apply to which other kind of angular momentum?",
+    "choices": [
+      {
+        "text": "Orbital angular momentum: Δl = ±1, Δm = 0",
+        "correct": true
+      },
+      {
+        "text": "Nuclear spin angular momentum: ΔI = ±1, Δm = 0",
+        "why": "Nuclear spin isn't treated here. The section says the same rules apply to orbital angular momentum: Δl = ±1, Δm = 0."
+      },
+      {
+        "text": "Electron spin angular momentum: Δs = ±1, Δm = 0",
+        "why": "An electron's spin quantum number s is always 1/2, so it can't change by ±1. The section applies the rules to orbital angular momentum: Δl = ±1, Δm = 0."
+      },
+      {
+        "text": "Bond vibration of the molecule: Δv = ±1, Δm = 0",
+        "why": "Vibration is not an angular momentum; its rule Δv = ±1 comes from the Hermite polynomials. The rotor's rules carry over to orbital angular momentum."
+      }
+    ],
+    "explanation": "Since J and M describe angular momentum and its z component, the same reasoning applies to the orbital angular momentum of an electron in an atom, with Δl = ±1 and Δm = 0."
+  },
+  {
+    "id": "pc13-rotor-rule-dipole-size",
+    "type": "numeric",
+    "prompt": "The dipole operator is μ = e·r. For a charge e = 1.602 × 10^−19 C displaced by r = 1.0 × 10^−10 m, what is the size of the dipole moment, in C·m? (Type it in scientific notation, like 2.5e-29.)",
+    "answer": 1.602e-29,
+    "explanation": "μ = (1.602 × 10^−19 C)(1.0 × 10^−10 m) = 1.6 × 10^−29 C·m. Charge times separation gives the dipole moment."
+  },
+  {
+    "id": "pc13-rotor-rule-mu-z",
+    "type": "numeric",
+    "prompt": "With the field along z, the dipole enters the transition moment through its z component, μ_z = μ cos θ. For a molecule with μ = 3.0 D at θ = 60°, using cos 60° = 0.50, what is μ_z, in D? (Give it as a decimal.)",
+    "answer": 1.5,
+    "unit": "D",
+    "explanation": "μ_z = 3.0 D × 0.50 = 1.5 D. The z component shrinks as the molecule turns away from the field axis; at θ = 90° it is zero."
+  },
+  {
+    "id": "pc13-rotor-rule-x-lower-limit",
+    "type": "numeric",
+    "prompt": "In the rotational transition moment, θ runs from 0 to π and the section substitutes x = cos θ. What value of x goes with θ = π, the lower limit of the x integral?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "cos π = −1 and cos 0 = 1, so as θ runs from 0 to π, x runs from 1 to −1. That is why the x integral runs from −1 to 1."
+  },
+  {
+    "id": "pc13-rotor-rule-recursion-weight",
+    "type": "numeric",
+    "prompt": "In the recursion used for the rotor, the P_(J+1) term has the weight (J − |M| + 1)/(2J + 1). What is this weight for J = 2 and M = 0? (Give it as a decimal.)",
+    "answer": 0.6,
+    "explanation": "(2 − 0 + 1)/(2 × 2 + 1) = 3/5 = 0.6. This is the part of xP_2 that connects J = 2 to J′ = 3."
+  }
+]

@@ -1,0 +1,610 @@
+[
+  {
+    "id": "pc10-hybrid-vb-vs-mo",
+    "type": "multiple-choice",
+    "prompt": "How does valence bond (VB) theory differ from molecular orbital (MO) theory in the way it describes bonding?",
+    "choices": [
+      {
+        "text": "VB builds each bond from the atoms' own orbitals",
+        "correct": true
+      },
+      {
+        "text": "VB spreads each orbital over the entire molecule",
+        "why": "That describes MO theory, whose wavefunctions cover the whole molecule. VB looks at how the orbitals of the separate atoms combine into individual bonds."
+      },
+      {
+        "text": "VB uses only Lewis dots, with no quantum mechanics",
+        "why": "VB is a quantum-mechanical theory: it builds approximate wavefunctions for the bonding electrons, even though it mirrors Lewis structures."
+      },
+      {
+        "text": "VB applies to atoms, while MO theory is for molecules",
+        "why": "Both theories explain chemical bonds in molecules. They differ in that VB builds individual bonds from atomic orbitals, while MO wavefunctions span the molecule."
+      }
+    ],
+    "explanation": "VB and MO theory both use quantum mechanics to explain bonding. VB focuses on how the atomic orbitals of the dissociated atoms combine to give individual chemical bonds, while MO theory predicts wavefunctions that cover the entire molecule."
+  },
+  {
+    "id": "pc10-hybrid-h2-terms-vanish",
+    "type": "numeric",
+    "prompt": "The potential energy of H2 has six terms, proportional to 1/r_12, −1/r_1A, −1/r_1B, −1/r_2A, −1/r_2B and 1/R_AB. If the protons are pulled infinitely far apart (R_AB → ∞), with electron 1 on atom A and electron 2 on atom B, how many of these terms vanish?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The 1/r_12, 1/r_1B, 1/r_2A and 1/R_AB terms each involve particles that are now infinitely far apart, so 4 terms vanish. Only −1/r_1A and −1/r_2B survive: the energy of two separate H atoms, which is why the wavefunction becomes a simple product of two 1s orbitals."
+  },
+  {
+    "id": "pc10-hybrid-h2-sum-or-difference",
+    "type": "multiple-choice",
+    "prompt": "In the valence bond treatment of H2, the spatial wavefunction is either the sum (ψ_g) or the difference (ψ_u) of two products of 1s orbitals. Which one leads to a stable chemical bond?",
+    "choices": [
+      {
+        "text": "The sum, ψ_g, an even function",
+        "correct": true
+      },
+      {
+        "text": "The difference, ψ_u, an odd function",
+        "why": "ψ_u has a node midway between the atoms, so it is antibonding, like the minus combination in LCAO. The even sum ψ_g gives the bond."
+      },
+      {
+        "text": "Both, since they have the same energy",
+        "why": "They differ in energy: ψ_u has a node between the atoms and lies higher, while ψ_g gives a stable bond."
+      },
+      {
+        "text": "Neither; only a single product gives a bond",
+        "why": "Near the bond length the electrons mix and can't be assigned to one atom, so a single product won't do. The even sum ψ_g gives a stable bond."
+      }
+    ],
+    "explanation": "The sum of the two products, labeled g (gerade, even), leads to a stable bond; the difference, labeled u (odd), is antibonding. Once a suitable spin function is attached, ψ_g serves as an approximate two-electron wavefunction for H2."
+  },
+  {
+    "id": "pc10-hybrid-spin-function",
+    "type": "multiple-choice",
+    "prompt": "Why is the even spatial function ψ_g for H2 multiplied by the spin function [ψ↑(s_1)ψ↓(s_2) − ψ↑(s_2)ψ↓(s_1)]?",
+    "choices": [
+      {
+        "text": "So it changes sign when the electrons are swapped",
+        "correct": true
+      },
+      {
+        "text": "So that both electrons end up with the same spin state",
+        "why": "This spin function pairs one spin up with one spin down. Its minus sign is what matters: it makes the total wavefunction change sign on exchange."
+      },
+      {
+        "text": "So that the spatial part becomes an odd function",
+        "why": "Multiplying by a spin function leaves the spatial part even. The spin part's minus sign is what makes the whole wavefunction antisymmetric."
+      },
+      {
+        "text": "So that a node appears midway between the nuclei",
+        "why": "A node there would make the function antibonding. The spin factor is there to satisfy the Pauli principle, not to change the bonding."
+      }
+    ],
+    "explanation": "Electrons are identical, so exchanging both their coordinates and spins must change the sign of the wavefunction. ψ_g does not change sign when the electrons swap, so it is paired with a spin function that does; the odd ψ_u is paired with the symmetric spin function instead."
+  },
+  {
+    "id": "pc10-hybrid-f2-bond",
+    "type": "multiple-choice",
+    "prompt": "Each F atom has the configuration 1s^2 2s^2 2p_x^2 2p_y^2 2p_z^1. In the valence bond picture of F2, which orbitals form the F–F bond?",
+    "choices": [
+      {
+        "text": "The singly occupied 2p_z orbitals",
+        "correct": true
+      },
+      {
+        "text": "The filled 2s orbitals",
+        "why": "The 2s electrons are already paired and stay as a lone pair. The bond comes from the unpaired 2p_z electron on each F."
+      },
+      {
+        "text": "The filled 2p_x and 2p_y orbitals",
+        "why": "These hold lone pairs. Only the unpaired 2p_z electron on each F can pair up with the other atom's to form the bond."
+      },
+      {
+        "text": "The 1s core orbitals",
+        "why": "Core electrons don't take part in bonding. The bond is made from the unpaired 2p_z electrons."
+      }
+    ],
+    "explanation": "Most of the electrons in F2 are in lone pairs. The 2p_z electrons, unpaired in each F atom, come together to form the bond, so the bonding wavefunction is a two-electron function built from the two 2p_z orbitals."
+  },
+  {
+    "id": "pc10-hybrid-hf-lone-pairs",
+    "type": "multiple-choice",
+    "prompt": "In the valence bond picture of HF, the F 2p_z orbital and the H 1s orbital form the bond. Where are fluorine's three lone pairs?",
+    "choices": [
+      {
+        "text": "In the F 2s, 2p_x and 2p_y orbitals",
+        "correct": true
+      },
+      {
+        "text": "In the H 1s and F 2p_z orbitals",
+        "why": "Those two orbitals hold the bonding pair. The lone pairs go into the F orbitals not used for the bond."
+      },
+      {
+        "text": "Spread out over the whole HF molecule",
+        "why": "VB theory keeps each lone pair on its atom, in an orbital not used for bonding. Orbitals spread over the molecule belong to MO theory."
+      },
+      {
+        "text": "In three sp^3 hybrids on fluorine",
+        "why": "No hybrids are used for HF here. The three F orbitals left out of the bond, 2s, 2p_x and 2p_y, are enough to hold the three lone pairs."
+      }
+    ],
+    "explanation": "Valence bond theory uses only the orbitals needed for the bonds. In HF that is the F 2p_z, which leaves the 2s, 2p_x and 2p_y orbitals unused, and these three hold the three lone pairs as spin-up/spin-down pairs."
+  },
+  {
+    "id": "pc10-hybrid-lewis-quantum",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call valence bond theory a quantum version of the Lewis dot structure model?",
+    "choices": [
+      {
+        "text": "It writes wavefunctions for Lewis-structure bonds",
+        "correct": true
+      },
+      {
+        "text": "It counts valence electrons without wavefunctions",
+        "why": "VB does use wavefunctions: it builds approximate two-electron wavefunctions for the bonding pairs of a Lewis structure."
+      },
+      {
+        "text": "It spreads each electron pair over the whole molecule",
+        "why": "That is the MO picture. Like a Lewis structure, VB keeps each bond between two atoms and each lone pair on one atom."
+      },
+      {
+        "text": "It was devised by Lewis to explain his dot structures",
+        "why": "The phrase describes how the method works, not who devised it: VB constructs approximate wavefunctions for the bonding electrons of a Lewis structure."
+      }
+    ],
+    "explanation": "Valence bond theory constructs very approximate wavefunctions for the bonding electrons in a Lewis structure and leaves the unused orbitals to hold the lone pairs, just as the dot structure does."
+  },
+  {
+    "id": "pc10-hybrid-why-hybridize",
+    "type": "multiple-choice",
+    "prompt": "Why does valence bond theory using pure 2s and 2p orbitals become a poor approximation for polyatomic molecules?",
+    "choices": [
+      {
+        "text": "The fixed s and p directions don't fit their shapes",
+        "correct": true
+      },
+      {
+        "text": "Polyatomic molecules have no unpaired electrons",
+        "why": "Their atoms do supply unpaired electrons for bonds. The trouble is direction: pure s and p orbitals can't point along the bonds of most molecular shapes."
+      },
+      {
+        "text": "2s and 2p orbitals cannot overlap with H 1s orbitals",
+        "why": "They can overlap with H 1s. The problem is that their fixed directions are too restrictive for molecules with steric numbers from 2 to 4."
+      },
+      {
+        "text": "Polyatomic molecules need d orbitals on every atom",
+        "why": "The molecules discussed use only s and p orbitals. What fails is the directionality of pure 2s and 2p orbitals, which mixing them fixes."
+      }
+    ],
+    "explanation": "The directionalities of the 2s and 2p orbitals are too restrictive to describe molecules with steric numbers between 2 and 4, whose bonds are 180°, 120° or 109.5° apart. Water (Section 10.2) shows this dramatically; hybrid orbitals solve the problem."
+  },
+  {
+    "id": "pc10-hybrid-be-promotion",
+    "type": "multiple-choice",
+    "prompt": "Ground-state beryllium is 1s^2 2s^2. Why does the valence bond picture of BeH2 promote one 2s electron, giving 1s^2 2s 2p_z?",
+    "choices": [
+      {
+        "text": "To unpair them so each can bond to an H atom",
+        "correct": true
+      },
+      {
+        "text": "Because 2p_z is lower in energy than 2s in Be",
+        "why": "2p_z is higher in energy, so promotion costs energy. It is done because it leaves two unpaired electrons, each able to pair with an H electron."
+      },
+      {
+        "text": "To give Be a full octet of valence electrons",
+        "why": "Be has only two valence electrons either way. Promotion doesn't add electrons; it unpairs the two it has so each can form a bond."
+      },
+      {
+        "text": "To make Be's 1s core electrons available",
+        "why": "The 1s core is untouched: 1s^2 stays filled. A 2s electron moves to 2p_z, leaving unpaired electrons in 2s and 2p_z."
+      }
+    ],
+    "explanation": "In 1s^2 2s^2 both valence electrons are paired, so none is free to bond. Promoting one to 2p_z leaves unpaired electrons in 2s and 2p_z, and each can pair with the electron of an H atom to form a Be–H bond."
+  },
+  {
+    "id": "pc10-hybrid-promotion-repaid",
+    "type": "multiple-choice",
+    "prompt": "Promoting a 2s electron of Be to a 2p orbital costs energy. Why does the valence bond picture still use it?",
+    "choices": [
+      {
+        "text": "The bonds formed repay the promotion energy",
+        "correct": true
+      },
+      {
+        "text": "In Be, 2s and 2p have exactly equal energies",
+        "why": "They are similar in Be but exactly equal only for H, so promotion does cost energy. The energy released by forming the bonds pays it back."
+      },
+      {
+        "text": "The promoted electron leaves the atom entirely",
+        "why": "Promotion moves an electron to a higher orbital of the same atom; nothing is ionized. The cost is repaid when the bonds form."
+      },
+      {
+        "text": "It lowers the energy of the Be 1s electrons",
+        "why": "The 1s core is not involved. The energy needed for promotion is repaid by the energy gained in forming stable Be–H bonds."
+      }
+    ],
+    "explanation": "The energy needed to excite the electron in Be is repaid by the energy gained in forming stable bonds. The same idea explains why carbon, after promotion, forms four bonds rather than two."
+  },
+  {
+    "id": "pc10-hybrid-unequal-bonds",
+    "type": "multiple-choice",
+    "prompt": "If one Be–H bond in BeH2 were built from Be's 2s orbital and the other from its 2p_z orbital, what would be wrong?",
+    "choices": [
+      {
+        "text": "The two bonds would differ, though they should be equal",
+        "correct": true
+      },
+      {
+        "text": "There would be too few unpaired electrons to form two bonds",
+        "why": "Promotion gives two unpaired electrons, enough for two bonds. The trouble is that they sit in different kinds of orbitals, so the bonds would differ."
+      },
+      {
+        "text": "The 2s orbital could not overlap with an H 1s orbital",
+        "why": "A 2s orbital can overlap with H 1s; this scheme uses it for one bond. The flaw is that the two Be–H bonds would not be equivalent."
+      },
+      {
+        "text": "The molecule would come out bent at 90°",
+        "why": "A 2s orbital has no direction, so the scheme doesn't predict 90°. Its flaw is that two bonds made from different orbitals would be different."
+      }
+    ],
+    "explanation": "Bonds built from different combinations of orbitals would be different, yet by symmetry the two Be–H bonds should be equivalent. Linus Pauling's orbital hybridization, proposed in the 1930s, solves this."
+  },
+  {
+    "id": "pc10-hybrid-why-mixing-allowed",
+    "type": "multiple-choice",
+    "prompt": "Pauling combined 2s and 2p orbitals into χ = C_1ψ_2s + C_2ψ_2px + C_3ψ_2py + C_4ψ_2pz. Why is such a combination still a valid orbital?",
+    "choices": [
+      {
+        "text": "2s and 2p are close in energy, so it stays a solution",
+        "correct": true
+      },
+      {
+        "text": "2s and 2p have the same shape, so nothing changes",
+        "why": "2s is spherical and 2p has two lobes, so the shapes differ; that's why mixing changes the direction. The mix is allowed because their energies are similar."
+      },
+      {
+        "text": "Orbitals of any energies can always be freely combined",
+        "why": "The section relies on the energies being similar. A combination of solutions with the same energy is again a solution with that energy."
+      },
+      {
+        "text": "Combining orbitals lowers all of their energies",
+        "why": "Mixing doesn't lower the energy here. Because 2s and 2p are nearly equal in energy, the combination is still a solution with about the same energy."
+      }
+    ],
+    "explanation": "Pauling used the fact that 2s and 2p orbitals have similar energies in the first and second periods; for the H atom they are exactly equal. A combination of solutions with the same energy is also a solution with that energy, and in BeH2 the hydrogens make Be's 2s and 2p_z nearly degenerate."
+  },
+  {
+    "id": "pc10-hybrid-sp-orthogonality",
+    "type": "multiple-choice",
+    "prompt": "The sp hybrids are χ_i = a_1|2s⟩ + b_1|2p_z⟩ and χ_j = a_2|2s⟩ + b_2|2p_z⟩. Which equation says that they are orthogonal?",
+    "choices": [
+      {
+        "text": "a_1 a_2 + b_1 b_2 = 0",
+        "correct": true
+      },
+      {
+        "text": "a_1^2 + b_1^2 = 1",
+        "why": "That is the normalization of χ_i, ⟨χ_i|χ_i⟩ = 1. Orthogonality concerns the overlap of two different hybrids."
+      },
+      {
+        "text": "a_1 a_2 + b_1 b_2 = 1",
+        "why": "Orthogonal functions have zero overlap, not an overlap of 1."
+      },
+      {
+        "text": "a_1^2 + a_2^2 = 0",
+        "why": "A sum of squares is zero only if both coefficients are zero. Orthogonality multiplies matching coefficients of the two hybrids and adds them."
+      }
+    ],
+    "explanation": "⟨χ_i|χ_j⟩ = a_1 a_2⟨2s|2s⟩ + b_1 b_2⟨2p_z|2p_z⟩, because the cross terms ⟨2s|2p_z⟩ vanish, so ⟨χ_i|χ_j⟩ = a_1 a_2 + b_1 b_2. Orthogonality sets this to 0, while a_1^2 + b_1^2 = 1 is the normalization of χ_i."
+  },
+  {
+    "id": "pc10-hybrid-sp-extra-condition",
+    "type": "multiple-choice",
+    "prompt": "Normalization and orthogonality give only three equations for the four coefficients a_1, b_1, a_2 and b_2 of the two sp hybrids. What extra condition does the section assume?",
+    "choices": [
+      {
+        "text": "Both hybrids get the same 2s share, a_1 = a_2",
+        "correct": true
+      },
+      {
+        "text": "Neither hybrid contains any 2s, a_1 = a_2 = 0",
+        "why": "Then both would be pure 2p_z, not hybrids. The assumption is that the 2s contributes equally to both, a_1 = a_2."
+      },
+      {
+        "text": "The 2s and 2p_z parts cancel, a_1 + b_1 = 0",
+        "why": "The section assumes nothing like this. Its fourth condition is an equal 2s contribution to both hybrids, a_1 = a_2."
+      },
+      {
+        "text": "Both hybrids are pure 2p_z, b_1 = b_2 = 1",
+        "why": "Then there would be no 2s and no hybridization. The extra condition is a_1 = a_2: the same s contribution in each hybrid."
+      }
+    ],
+    "explanation": "Assuming the s orbital contributes equally to both hybrids, a_1 = a_2, supplies the fourth condition. The equations then give b_1 = −b_2 and a_1 = b_1 = 1/√2."
+  },
+  {
+    "id": "pc10-hybrid-sp-coefficient",
+    "type": "numeric",
+    "prompt": "For the sp hybrids, normalization requires a_1^2 + b_1^2 = 1, and the section finds a_1 = b_1. What is a_1? (Give it as a decimal.)",
+    "answer": 0.707,
+    "tolerance": 0.02,
+    "explanation": "With a_1 = b_1, normalization becomes 2a_1^2 = 1, so a_1^2 = 1/2 and a_1 = 1/√2 ≈ 0.707. The two hybrids are then (1/√2)[ψ_2s + ψ_2pz] and (1/√2)[ψ_2s − ψ_2pz]."
+  },
+  {
+    "id": "pc10-hybrid-sp-directions",
+    "type": "multiple-choice",
+    "prompt": "In BeH2, the sp hybrid χ_1, the sum of ψ_2s and ψ_2pz, points along +z. Which way does χ_2, their difference, point?",
+    "choices": [
+      {
+        "text": "Along −z, opposite to χ_1",
+        "correct": true
+      },
+      {
+        "text": "Along +x, at 90° to χ_1",
+        "why": "Neither hybrid contains 2p_x, so neither can point along x. Changing the sign of the 2p_z part sends χ_2 along −z."
+      },
+      {
+        "text": "Along +z, the same way as χ_1",
+        "why": "Flipping the sign of the 2p_z part moves the large lobe to the other side of the nucleus, so the two hybrids point in opposite directions."
+      },
+      {
+        "text": "Nowhere in particular; it is spherical",
+        "why": "Only a pure s orbital is spherical. The 2p_z part gives χ_2 a direction, −z."
+      }
+    ],
+    "explanation": "Subtracting ψ_2pz reverses the side on which the 2s and 2p_z parts reinforce each other, so χ_2 points along −z. The two sp hybrids are mirror images 180° apart, and each overlaps the 1s orbital of one H atom to give two equal Be–H bonds."
+  },
+  {
+    "id": "pc10-hybrid-boron-promotion",
+    "type": "multiple-choice",
+    "prompt": "Boron is 1s^2 2s^2 2p_x. Which configuration does the section give boron after promotion, ready to form the three B–H bonds of BH3?",
+    "choices": [
+      {
+        "text": "1s^2 2s 2p_x 2p_y",
+        "correct": true
+      },
+      {
+        "text": "1s^2 2s^2 2p_x 2p_y",
+        "why": "That has six electrons, one too many for boron. Promotion moves an electron; it doesn't add one."
+      },
+      {
+        "text": "1s^2 2p_x 2p_y 2p_z",
+        "why": "Only one 2s electron is promoted, so 2s keeps one electron. Here both have moved."
+      },
+      {
+        "text": "1s 2s^2 2p_x 2p_y",
+        "why": "The 1s core stays filled. It is a 2s electron that is promoted, to 2p_y."
+      }
+    ],
+    "explanation": "One 2s electron is promoted to 2p_y, giving 1s^2 2s 2p_x 2p_y with three unpaired electrons, one for each B–H bond. The 2s, 2p_x and 2p_y orbitals are then combined into sp^2 hybrids."
+  },
+  {
+    "id": "pc10-hybrid-sp2-count",
+    "type": "numeric",
+    "prompt": "In BH3, boron's 2s orbital is combined with its 2p_x and 2p_y orbitals. How many sp^2 hybrid orbitals does this give?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Combining orbitals keeps their number: one 2s plus two 2p orbitals give 3 sp^2 hybrids, χ_1, χ_2 and χ_3, one for each B–H bond."
+  },
+  {
+    "id": "pc10-hybrid-rotated-p",
+    "type": "multiple-choice",
+    "prompt": "When building boron's sp^2 hybrids for BH3, why does the section use rotated versions of the 2p_x and 2p_y orbitals?",
+    "choices": [
+      {
+        "text": "Unrotated mixes would not point at the H atoms",
+        "correct": true
+      },
+      {
+        "text": "Rotation makes the 2p orbitals spherical like 2s",
+        "why": "A rotated p orbital is still a p orbital with two lobes; only its direction changes, so the hybrids can point at the H atoms."
+      },
+      {
+        "text": "Rotation lowers the 2p energies to match the 2s",
+        "why": "Rotating an orbital changes its direction, not its energy. It is done so the hybrids point toward the three H atoms."
+      },
+      {
+        "text": "Unrotated 2p orbitals cannot be normalized",
+        "why": "2p_x and 2p_y are already normalized. Rotation is needed because simple mixes with them would point the wrong way."
+      }
+    ],
+    "explanation": "Simply combining 2s with 2p_x and 2p_y gives hybrids that do not point toward the three H atoms. Rotated p orbitals, which amount to new combinations of 2p_x and 2p_y, give hybrids aimed along the three B–H bonds."
+  },
+  {
+    "id": "pc10-hybrid-rotation-coefficient",
+    "type": "numeric",
+    "prompt": "Rotating 2p_y by −30° gives the φ dependence sin(φ + 30°) = sin φ cos 30° + cos φ sin 30°. Since cos φ goes with ψ_2px, what is the coefficient of ψ_2px in the rotated orbital? (Give it as a decimal.)",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "explanation": "The cos φ term has coefficient sin 30° = 1/2 = 0.5, and the sin φ term has cos 30° = √3/2 ≈ 0.866. So ψ_2py^(rot,1) ∼ (√3/2)ψ_2py + (1/2)ψ_2px."
+  },
+  {
+    "id": "pc10-hybrid-sp2-p-character",
+    "type": "numeric",
+    "prompt": "The sp^2 hybrid χ_1 = (1/√3)[ψ_2s − √2 ψ_2px] has a 2p_x coefficient of −√2/√3. The p character is the square of this coefficient. What percentage of χ_1 is p character, in %?",
+    "answer": 66.67,
+    "unit": "%",
+    "explanation": "(−√2/√3)^2 = 2/3 ≈ 0.667, so χ_1 is 66.7% p. The square of the 2s coefficient, (1/√3)^2 = 1/3, gives the remaining 33.3% s character."
+  },
+  {
+    "id": "pc10-hybrid-bh3-shape",
+    "type": "multiple-choice",
+    "prompt": "What geometry do boron's sp^2 hybrids give BH3?",
+    "choices": [
+      {
+        "text": "Trigonal planar, 120° apart",
+        "correct": true
+      },
+      {
+        "text": "Tetrahedral, 109.5° apart",
+        "why": "That is the geometry of four sp^3 hybrids, as in CH4. Three sp^2 hybrids lie in one plane at 120°."
+      },
+      {
+        "text": "Linear, 180° apart",
+        "why": "That is the geometry of two sp hybrids, as in BeH2. Three sp^2 hybrids point 120° apart in a plane."
+      },
+      {
+        "text": "Square planar, all 90° apart",
+        "why": "Three hybrids made from 2s, 2p_x and 2p_y lie in the xy plane, spread evenly at 120°, not 90°."
+      }
+    ],
+    "explanation": "The three sp^2 hybrids are built from 2s, 2p_x and 2p_y, so they lie in the xy plane. They point 120° apart, in a trigonal planar arrangement: one H on the +x axis and the other two at 120° and 240°."
+  },
+  {
+    "id": "pc10-hybrid-carbon-unpaired",
+    "type": "numeric",
+    "prompt": "Ground-state carbon is 1s^2 2s^2 2p_x 2p_y. After one 2s electron is promoted to 2p_z, giving 1s^2 2s 2p_x 2p_y 2p_z, how many unpaired electrons does carbon have?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "2s, 2p_x, 2p_y and 2p_z each hold one electron, so carbon has 4 unpaired electrons, up from 2 before promotion. Each can pair with an H electron, giving the four C–H bonds of CH4."
+  },
+  {
+    "id": "pc10-hybrid-sp3-orthogonal",
+    "type": "numeric",
+    "prompt": "Carbon's sp^3 hybrid χ_1 has the coefficients (1/2, 1/2, 1/2, 1/2) for 2s, 2p_x, 2p_y and 2p_z, and χ_2 has (1/2, −1/2, −1/2, 1/2). Their overlap is the sum of the products of matching coefficients. What is it?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "1/2 × 1/2 + 1/2 × (−1/2) + 1/2 × (−1/2) + 1/2 × 1/2 = 1/4 − 1/4 − 1/4 + 1/4 = 0. The two hybrids are orthogonal, as every pair in the set must be."
+  },
+  {
+    "id": "pc10-hybrid-sp3-shape",
+    "type": "multiple-choice",
+    "prompt": "Toward what do the large lobes of carbon's four sp^3 hybrids point?",
+    "choices": [
+      {
+        "text": "The corners of a tetrahedron",
+        "correct": true
+      },
+      {
+        "text": "The corners of a square, in one plane",
+        "why": "Four orbitals in a square would be 90° apart in a plane. The sp^3 hybrids spread in three dimensions, to the corners of a tetrahedron."
+      },
+      {
+        "text": "The ±x and ±y directions, like p orbitals",
+        "why": "Pointing along ±x and ±y would use only two p orbitals. Mixing 2s with all three 2p orbitals gives hybrids aimed at the corners of a tetrahedron."
+      },
+      {
+        "text": "One along +z and three in a flat ring at 120°",
+        "why": "That would make the hybrids unequal. All four sp^3 hybrids are equivalent and point to the corners of a tetrahedron."
+      }
+    ],
+    "explanation": "The large lobes of the four sp^3 hybrids point toward the vertices of a tetrahedron, with 109.5° between them. That matches the four equivalent C–H bonds of methane."
+  },
+  {
+    "id": "pc10-hybrid-sp3-energies",
+    "type": "multiple-choice",
+    "prompt": "How do the energies of carbon's four sp^3 hybrid orbitals compare?",
+    "choices": [
+      {
+        "text": "All four are predicted to be equal",
+        "correct": true
+      },
+      {
+        "text": "One is lower, since it holds most of the 2s",
+        "why": "Each sp^3 hybrid has a 2s coefficient of the same size, 1/2, so none holds more of the 2s than the others."
+      },
+      {
+        "text": "Each matches one of the 2s or 2p energies",
+        "why": "The hybrids are mixtures of all four orbitals, not copies of them. Being equivalent mixtures, they are equal in energy."
+      },
+      {
+        "text": "Two are lower in energy and two are higher",
+        "why": "All four have coefficients of the same size, differing only in sign, so they are equivalent and equal in energy."
+      }
+    ],
+    "explanation": "Each sp^3 hybrid has coefficients of size 1/2 for the 2s and each 2p orbital, differing only in sign. Like all the hybrids discussed, they are predicted to be equal in energy, which fits four equivalent C–H bonds."
+  },
+  {
+    "id": "pc10-hybrid-two-bond-carbon",
+    "type": "multiple-choice",
+    "prompt": "Carbon does form some compounds with only two covalent bonds, such as CH2 and CF2. How does the section describe them?",
+    "choices": [
+      {
+        "text": "Highly reactive, unstable intermediates",
+        "correct": true
+      },
+      {
+        "text": "The most stable kind of carbon compound",
+        "why": "Four-bond compounds are more stable, because much more energy is released when carbon forms four bonds than two."
+      },
+      {
+        "text": "Ordinary stable molecules, much like CH4",
+        "why": "Unlike CH4, these species are highly reactive and appear only as unstable intermediates in certain reactions."
+      },
+      {
+        "text": "Molecules that cannot exist at all",
+        "why": "They do exist, but only as short-lived intermediates that form in certain chemical reactions."
+      }
+    ],
+    "explanation": "The energy released increases with the number of bonds formed, so carbon compounds with four bonds tend to be more stable than those with two. CH2 and CF2 occur only as highly reactive, unstable intermediates."
+  },
+  {
+    "id": "pc10-hybrid-geometry-first",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how are a molecule's geometry and its hybridization related?",
+    "choices": [
+      {
+        "text": "The geometry comes first; hybridization interprets it",
+        "correct": true
+      },
+      {
+        "text": "The hybridization comes first and sets the geometry",
+        "why": "It is the other way round. The geometry results from steric and electronic interactions, and hybridization interprets the wavefunction for that geometry."
+      },
+      {
+        "text": "They are unrelated; hybrids say nothing about shape",
+        "why": "Hybrids are chosen to match the shape, such as sp for linear BeH2, so they do describe it. They just don't cause it."
+      },
+      {
+        "text": "Both are measured directly by X-ray scattering experiments",
+        "why": "X-ray scattering measures electron density, not hybrid orbitals. Hybridization is a mathematical interpretation."
+      }
+    ],
+    "explanation": "Hybridization is only a mathematical interpretation. A molecule is not shaped a certain way because it is hybridized; the hybridization is a result of the geometry, an interpretation of the wavefunction for the given arrangement of atoms."
+  },
+  {
+    "id": "pc10-hybrid-what-is-real",
+    "type": "multiple-choice",
+    "prompt": "The section asks whether hybrid orbitals are real. Which quantity does it say can be observed, and so is the only thing that is real in this sense?",
+    "choices": [
+      {
+        "text": "The electron density distribution",
+        "correct": true
+      },
+      {
+        "text": "The sp^3 hybrid orbitals themselves",
+        "why": "Hybrids are convenient mathematical functions, not observables. What can be observed is the electron density they describe."
+      },
+      {
+        "text": "The wavefunction ψ, including its sign",
+        "why": "ψ itself is a mathematical function. Its square, the electron density, is what can be observed, for example by X-ray scattering."
+      },
+      {
+        "text": "The separate 2s and 2p orbitals in the molecule",
+        "why": "As with colors mixed from primaries, the original orbitals need not be present in the result. Only the electron density can be observed."
+      }
+    ],
+    "explanation": "An orbital ψ is a mathematical function whose square gives the probability of finding the electron. The electron density can be observed, for example by X-ray scattering, so in this sense it is the only thing that is real."
+  },
+  {
+    "id": "pc10-hybrid-definition",
+    "type": "multiple-choice",
+    "prompt": "According to the section's summary, what is a hybrid orbital?",
+    "choices": [
+      {
+        "text": "A combination of orbitals from the same atom",
+        "correct": true
+      },
+      {
+        "text": "A combination of orbitals from different atoms",
+        "why": "That describes a molecular orbital built by LCAO. A hybrid mixes orbitals of one atom, such as its 2s and 2p."
+      },
+      {
+        "text": "An orbital shared by two electrons of opposite spin",
+        "why": "Any orbital can hold two electrons of opposite spin. A hybrid is defined by what it is made of: orbitals of a single atom."
+      },
+      {
+        "text": "An atomic orbital raised in energy by promotion",
+        "why": "Promotion moves an electron, not an orbital. A hybrid orbital is a linear combination of orbitals on the same atom."
+      }
+    ],
+    "explanation": "Orbitals that are similar in energy can be combined. When they come from different atoms the result is a molecular orbital; when more than one atomic orbital of the same atom is combined, such as 2s and 2p, the result is a hybrid orbital."
+  }
+]

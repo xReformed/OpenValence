@@ -1,0 +1,561 @@
+[
+  {
+    "id": "pc5-levels-classical-amplitude",
+    "type": "multiple-choice",
+    "prompt": "For a classical oscillator, what changes when its energy changes?",
+    "choices": [
+      {
+        "text": "The amplitude of the vibration",
+        "correct": true
+      },
+      {
+        "text": "The frequency of the vibration",
+        "why": "The frequency is set by the reduced mass μ and the force constant k, and doesn't change with energy. More energy means a larger amplitude."
+      },
+      {
+        "text": "The force constant of the spring",
+        "why": "k is a property of the spring or bond, not of how much energy it has. Changing the energy changes the amplitude."
+      },
+      {
+        "text": "The reduced mass of the oscillator",
+        "why": "The reduced mass depends only on the masses of the atoms. Changing the energy changes the amplitude of the vibration."
+      }
+    ],
+    "explanation": "A classical oscillator can have any energy. Its frequency is fixed by μ and k, so a change in energy shows up as a change in the amplitude of the vibration."
+  },
+  {
+    "id": "pc5-levels-quantized-equally-spaced",
+    "type": "multiple-choice",
+    "prompt": "How do the allowed energies of a quantum harmonic oscillator differ from those of a classical oscillator?",
+    "choices": [
+      {
+        "text": "Only certain values are allowed, and they are equally spaced",
+        "correct": true
+      },
+      {
+        "text": "Any energy is allowed, just as in the classical case",
+        "why": "That's the classical picture. The quantum oscillator's energy is limited to E_v = (v + 1/2)hν."
+      },
+      {
+        "text": "Only certain values are allowed, and they get closer at high v",
+        "why": "Crowding at high v happens for real, anharmonic molecules. Harmonic oscillator levels are equally spaced by hν."
+      },
+      {
+        "text": "Only certain values are allowed, and they grow as v^2",
+        "why": "Energies growing as n^2 belong to the particle in a box. The harmonic oscillator's E_v = (v + 1/2)hν grows in equal steps."
+      }
+    ],
+    "explanation": "For the quantum oscillator the energy is limited to certain values, E_v = (v + 1/2)hν, which are equally spaced. A classical oscillator has no such restriction."
+  },
+  {
+    "id": "pc5-levels-frequency-control",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what controls the oscillation frequency of a quantum harmonic oscillator?",
+    "choices": [
+      {
+        "text": "The reduced mass and the force constant",
+        "correct": true
+      },
+      {
+        "text": "The quantum number v of the level",
+        "why": "Every level has the same frequency; v only sets how many quanta hν the oscillator has above E_0. ω = √(k/μ) depends on k and μ."
+      },
+      {
+        "text": "The amplitude of the vibration",
+        "why": "Amplitude doesn't set the frequency, classically or quantum mechanically. ω = √(k/μ) depends only on k and μ."
+      },
+      {
+        "text": "The zero-point energy of the oscillator",
+        "why": "It's the other way round: the zero-point energy (ħω)/2 is set by the frequency, which is set by k and μ."
+      }
+    ],
+    "explanation": "As in the classical case, the frequency of the quantum oscillator is controlled by the reduced mass μ and the force constant k, through ω = √(k/μ). What quantum mechanics adds is that the energy is limited to E_v = (v + 1/2)ħω."
+  },
+  {
+    "id": "pc5-levels-omega-from-k",
+    "type": "numeric",
+    "prompt": "Use ω = √(k/μ). A bond has force constant k = 400 N/m and reduced mass μ = 1.0 × 10^−26 kg. What is ω, in s^−1? (Type it in scientific notation, like 2.5e13.)",
+    "answer": 200000000000000.0,
+    "explanation": "ω = √(k/μ) = √((400 N/m)/(1.0 × 10^−26 kg)) = √(4.0 × 10^28 s^−2) = 2.0 × 10^14 s^−1."
+  },
+  {
+    "id": "pc5-levels-hbar-omega-h-nu",
+    "type": "multiple-choice",
+    "prompt": "The section writes the energies both as (v + 1/2)ħω and as (v + 1/2)hν. Why are these the same?",
+    "choices": [
+      {
+        "text": "ħω = (h/2π)(2πν) = hν",
+        "correct": true
+      },
+      {
+        "text": "ħ = h and ω = ν, by definition",
+        "why": "ħ is h/2π and ω is 2πν, so neither pair is equal. The 2π factors cancel in the product: ħω = hν."
+      },
+      {
+        "text": "ħω = 2πhν, and the 2π is dropped",
+        "why": "Nothing is dropped. Since ħ = h/2π and ω = 2πν, the 2π factors cancel exactly: ħω = hν."
+      },
+      {
+        "text": "They are equal only for the v = 0 level",
+        "why": "ħω = hν holds for every level, because ħ = h/2π and ω = 2πν. So (v + 1/2)ħω = (v + 1/2)hν for all v."
+      }
+    ],
+    "explanation": "ħ = h/2π, and ω = 2πν is the angular frequency, so ħω = (h/2π)(2πν) = hν. Either form gives the same energies."
+  },
+  {
+    "id": "pc5-levels-allowed-v",
+    "type": "multiple-choice",
+    "prompt": "In E_v = (v + 1/2)hν, which values can the vibrational quantum number v take?",
+    "choices": [
+      {
+        "text": "0, 1, 2, 3 and so on",
+        "correct": true
+      },
+      {
+        "text": "1, 2, 3, 4 and so on",
+        "why": "Unlike the particle in a box, whose n starts at 1, the harmonic oscillator's v starts at 0. The v = 0 level has energy (1/2)hν."
+      },
+      {
+        "text": "1/2, 3/2, 5/2 and so on",
+        "why": "Those are the values of v + 1/2, the factor in front of hν. v itself is a whole number: 0, 1, 2 and so on."
+      },
+      {
+        "text": "Any positive real number",
+        "why": "v must be a whole number, which is why the energy is quantized: v = 0, 1, 2 and so on."
+      }
+    ],
+    "explanation": "The quantum number v can be 0, 1, 2, 3 and so on. The lowest level is v = 0, whose energy E_0 = (1/2)hν is not zero."
+  },
+  {
+    "id": "pc5-levels-lowest-energy",
+    "type": "multiple-choice",
+    "prompt": "What is the lowest energy a quantum harmonic oscillator can have?",
+    "choices": [
+      {
+        "text": "(1/2)hν, the zero-point energy",
+        "correct": true
+      },
+      {
+        "text": "Zero, when the oscillator is at rest",
+        "why": "That's the classical answer. Quantum mechanically the lowest level, v = 0, has E_0 = (1/2)hν, not zero."
+      },
+      {
+        "text": "hν, the energy of one quantum",
+        "why": "hν is the spacing between levels. The v = 0 level has half of that: E_0 = (1/2)hν."
+      },
+      {
+        "text": "(3/2)hν, the energy of the v = 1 level",
+        "why": "(3/2)hν is E_1. The lowest level is v = 0, with E_0 = (1/2)hν."
+      }
+    ],
+    "explanation": "Setting v = 0 in E_v = (v + 1/2)hν gives E_0 = (1/2)hν = (ħω)/2. This lowest possible energy, the energy of the ground state, is called the zero-point energy."
+  },
+  {
+    "id": "pc5-levels-zpe-joules",
+    "type": "numeric",
+    "prompt": "A molecular vibration has frequency ν = 6.0 × 10^13 Hz. Using E_0 = (1/2)hν with h = 6.626 × 10^−34 J·s, what is its zero-point energy, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.9878e-20,
+    "unit": "J",
+    "explanation": "E_0 = (1/2)hν = 0.5 × 6.626 × 10^−34 J·s × 6.0 × 10^13 s^−1 = 1.99 × 10^−20 J. Even in its lowest level, the vibration has this much energy."
+  },
+  {
+    "id": "pc5-levels-zero-point-motion",
+    "type": "multiple-choice",
+    "prompt": "Because E_0 is not zero, what must be true of the atoms in a molecule in its lowest vibrational state?",
+    "choices": [
+      {
+        "text": "They are still moving, even at v = 0",
+        "correct": true
+      },
+      {
+        "text": "They sit perfectly still at the equilibrium bond length",
+        "why": "That is the classical picture, where the lowest energy is zero and nothing moves. With E_0 = (ħω)/2, the atoms must keep moving."
+      },
+      {
+        "text": "They have separated, and the bond is broken",
+        "why": "The zero-point energy is small and the bond stays intact. The point is that the atoms keep vibrating even in the ground state."
+      },
+      {
+        "text": "They move only when light shines on them",
+        "why": "The motion is there even with no light: it is zero-point motion, a property of the ground state itself."
+      }
+    ],
+    "explanation": "Since the lowest energy is E_0 = (ħω)/2 and not 0, the atoms in a molecule keep moving even in the lowest vibrational state. This zero-point motion contrasts with the classical picture, where the lowest energy is zero and the oscillator is not moving."
+  },
+  {
+    "id": "pc5-levels-zpe-stiffer-bond",
+    "type": "numeric",
+    "prompt": "Two bonds have the same reduced mass μ, but bond B's force constant k is 4 times bond A's. Using E_0 = (ħω)/2 with ω = √(k/μ), how many times larger is bond B's zero-point energy?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "E_0 is proportional to ω, and ω = √(k/μ). Multiplying k by 4 multiplies ω, and so E_0, by √4 = 2."
+  },
+  {
+    "id": "pc5-levels-spacing-hnu",
+    "type": "multiple-choice",
+    "prompt": "What is the energy gap between any two neighboring harmonic oscillator levels, v and v + 1?",
+    "choices": [
+      {
+        "text": "hν, the same for every pair of levels",
+        "correct": true
+      },
+      {
+        "text": "(1/2)hν, the zero-point energy",
+        "why": "(1/2)hν is the energy of the v = 0 level. Neighboring levels differ by (v + 3/2)hν − (v + 1/2)hν = hν."
+      },
+      {
+        "text": "(v + 1/2)hν, so it grows with v",
+        "why": "That is the energy of level v, not the gap. The gap is hν whatever v is."
+      },
+      {
+        "text": "hν/v, so it shrinks as v increases",
+        "why": "Harmonic oscillator levels don't crowd together. The gap is hν for every pair of neighbors."
+      }
+    ],
+    "explanation": "E_(v+1) − E_v = (v + 3/2)hν − (v + 1/2)hν = hν, the same for every v. That is what it means for the levels to be equally spaced."
+  },
+  {
+    "id": "pc5-levels-gap-from-zpe",
+    "type": "numeric",
+    "prompt": "The zero-point energy of a vibration is E_0 = 0.15 eV. Using E_v = (v + 1/2)hν, what is the energy gap between neighboring levels, in eV? (Give it as a decimal.)",
+    "answer": 0.3,
+    "unit": "eV",
+    "explanation": "E_0 = (1/2)hν, so hν = 2E_0 = 2 × 0.15 eV = 0.30 eV. Every pair of neighboring levels is separated by this same hν."
+  },
+  {
+    "id": "pc5-levels-ratio-e2-e0",
+    "type": "numeric",
+    "prompt": "Using E_v = (v + 1/2)hν, what is the ratio E_2/E_0?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "E_2 = (2 + 1/2)hν = 2.5hν and E_0 = (0 + 1/2)hν = 0.5hν, so E_2/E_0 = 2.5/0.5 = 5. The hν cancels, so the ratio is the same for any oscillator."
+  },
+  {
+    "id": "pc5-levels-v-from-energy",
+    "type": "numeric",
+    "prompt": "A harmonic oscillator has energy 3.5hν. Using E_v = (v + 1/2)hν, what is its quantum number v?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "v + 1/2 = 3.5, so v = 3.5 − 0.5 = 3. Counting v = 0 as the first level, this is the fourth level."
+  },
+  {
+    "id": "pc5-levels-probability-not-path",
+    "type": "multiple-choice",
+    "prompt": "What can quantum mechanics tell us about the displacement of a harmonic oscillator from equilibrium?",
+    "choices": [
+      {
+        "text": "Only the probability of finding a given displacement",
+        "correct": true
+      },
+      {
+        "text": "The exact displacement at every moment in time",
+        "why": "That is what classical mechanics gives. In quantum mechanics we can't specify the displacement as a function of time, only its probability."
+      },
+      {
+        "text": "Nothing at all, not even a probability",
+        "why": "Quantum mechanics does give probabilities: ψ_v^*ψ_v dQ is the probability of a displacement between Q and Q + dQ."
+      },
+      {
+        "text": "Only its velocity, but not its position",
+        "why": "Quantum mechanics doesn't give the velocity as a function of time either. It gives the probability of each displacement."
+      }
+    ],
+    "explanation": "For a quantum oscillator we can't specify the displacement or the velocity as a function of time. We can only talk about the probability of the oscillator being displaced from equilibrium by a certain amount."
+  },
+  {
+    "id": "pc5-levels-probability-expression",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the probability that a harmonic oscillator in level v has a displacement between Q and Q + dQ?",
+    "choices": [
+      {
+        "text": "ψ_v^*(Q)ψ_v(Q)dQ",
+        "correct": true
+      },
+      {
+        "text": "ψ_v(Q)dQ",
+        "why": "ψ_v can be negative or complex, so it can't be a probability. The probability uses ψ_v^*ψ_v, the square of the wavefunction's magnitude."
+      },
+      {
+        "text": "E_v dQ",
+        "why": "E_v is the energy of the level, the same everywhere. The probability comes from the wavefunction: ψ_v^*(Q)ψ_v(Q)dQ."
+      },
+      {
+        "text": "Q dQ",
+        "why": "Q is the displacement itself. The probability of finding it in a small range comes from the wavefunction, ψ_v^*(Q)ψ_v(Q)dQ."
+      }
+    ],
+    "explanation": "The probability of finding the displacement between Q and Q + dQ is ψ_v^*(Q)ψ_v(Q)dQ: the probability density times the width dQ. Integrating it over a range of Q gives the probability for that range."
+  },
+  {
+    "id": "pc5-levels-average-displacement",
+    "type": "multiple-choice",
+    "prompt": "Why is the average displacement ⟨Q⟩ of a harmonic oscillator zero?",
+    "choices": [
+      {
+        "text": "+Q and −Q are equally likely, as the potential is symmetric",
+        "correct": true
+      },
+      {
+        "text": "The oscillator sits at Q = 0 and does not move",
+        "why": "The oscillator does move, even at v = 0. ⟨Q⟩ is zero because it is found equally often on both sides of Q = 0."
+      },
+      {
+        "text": "The wavefunction is zero everywhere except at Q = 0",
+        "why": "The wavefunction spreads over a range of Q. ⟨Q⟩ is zero because positive and negative displacements are equally likely."
+      },
+      {
+        "text": "Positive displacements are more likely than negative ones",
+        "why": "If they were, ⟨Q⟩ would be positive. The symmetric potential makes +Q and −Q equally likely, so they average to zero."
+      }
+    ],
+    "explanation": "The potential energy is symmetric around Q = 0, so displacements with Q > 0 are just as likely as those with Q < 0. They cancel in the average, giving ⟨Q⟩ = 0."
+  },
+  {
+    "id": "pc5-levels-zero-momentum-moving",
+    "type": "multiple-choice",
+    "prompt": "The average momentum ⟨P_Q⟩ of a harmonic oscillator is zero. Does this mean the oscillator is sitting still?",
+    "choices": [
+      {
+        "text": "No; it moves back and forth, so the momenta average to zero",
+        "correct": true
+      },
+      {
+        "text": "Yes; zero average momentum means there is no motion",
+        "why": "Momentum in one direction cancels momentum in the other. The oscillator moves back and forth, even at v = 0."
+      },
+      {
+        "text": "Yes, but only in the v = 0 level",
+        "why": "Even at v = 0 the oscillator has zero-point energy and keeps moving. ⟨P_Q⟩ = 0 just reflects motion that goes equally often in both directions."
+      },
+      {
+        "text": "No; it drifts steadily away from equilibrium",
+        "why": "A steady drift would give a nonzero average momentum. ⟨P_Q⟩ = 0 because the oscillator moves back and forth equally in both directions."
+      }
+    ],
+    "explanation": "As for the particle in a box, the oscillator moves back and forth, so momentum in one direction cancels momentum in the other and ⟨P_Q⟩ = 0. It is not sitting still: with E_0 = (ħω)/2, it moves even in the lowest level."
+  },
+  {
+    "id": "pc5-levels-rms-measures",
+    "type": "multiple-choice",
+    "prompt": "Since ⟨Q⟩ and ⟨P_Q⟩ are zero for every level, which quantities does the section use instead to compare normal modes and energy levels?",
+    "choices": [
+      {
+        "text": "The root-mean-square displacement and momentum",
+        "correct": true
+      },
+      {
+        "text": "The average displacement and momentum, ⟨Q⟩ and ⟨P_Q⟩",
+        "why": "These are zero for every level, so they can't tell the levels apart. The root-mean-square values, which measure the spread, can."
+      },
+      {
+        "text": "The displacement and momentum as functions of time",
+        "why": "Quantum mechanics can't give these. The section uses root-mean-square values, the standard deviations of displacement and momentum."
+      },
+      {
+        "text": "The highest and lowest possible displacements",
+        "why": "The quantum oscillator has no sharp edges: its wavefunctions extend past the classical limit. The section uses root-mean-square values instead."
+      }
+    ],
+    "explanation": "The root-mean-square displacement (the standard deviation of the displacement) and the root-mean-square momentum are not zero, so they can be compared among modes and levels. They measure the uncertainty in the oscillator's position and momentum."
+  },
+  {
+    "id": "pc5-levels-why-size-shape-matters",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why does it matter that vibrational excitation changes the size and shape of a molecule?",
+    "choices": [
+      {
+        "text": "It affects reactivity and the absorption of light",
+        "correct": true
+      },
+      {
+        "text": "It sets the total mass of the vibrating molecule",
+        "why": "Vibrations don't change the masses of the atoms. Changes in size and shape matter because they affect reactivity and how the molecule absorbs and emits light."
+      },
+      {
+        "text": "It decides whether the molecule has zero-point energy",
+        "why": "Every vibrating molecule has zero-point energy. Changes in size and shape matter because they affect reactivity and the absorption of light."
+      },
+      {
+        "text": "It fixes the force constant of the chemical bond",
+        "why": "k is a property of the bond and doesn't depend on the excitation. Changes in size and shape matter because they affect reactivity and absorption of light."
+      }
+    ],
+    "explanation": "Vibrational excitation changes the size and symmetry (shape) of molecules. These changes affect chemical reactivity, the absorption and emission of radiation, and how energy is dissipated in radiationless transitions."
+  },
+  {
+    "id": "pc5-levels-orthonormal-use",
+    "type": "multiple-choice",
+    "prompt": "The harmonic oscillator wavefunctions form an orthonormal set. According to the section, what will this property be used for?",
+    "choices": [
+      {
+        "text": "Finding the selection rules for vibrational transitions",
+        "correct": true
+      },
+      {
+        "text": "Showing that the energy levels are equally spaced",
+        "why": "Equal spacing comes from E_v = (v + 1/2)hν, not from orthonormality. Orthonormality simplifies the integrals behind the selection rules."
+      },
+      {
+        "text": "Proving that the bond can never break",
+        "why": "That follows from the shape of the harmonic potential. Orthonormality is used to work out selection rules and absorption coefficients."
+      },
+      {
+        "text": "Calculating the force constant of the bond",
+        "why": "k comes from the curvature of the potential. Orthonormality is used to simplify integrals, as when finding the selection rules for vibrational transitions."
+      }
+    ],
+    "explanation": "Orthonormality (each ψ_v normalized, and any two different ψ_v orthogonal) simplifies complicated integrals. The section will use it to find the selection rules for vibrational transitions and the absorption coefficients for infrared light."
+  },
+  {
+    "id": "pc5-levels-max-extension-energy",
+    "type": "multiple-choice",
+    "prompt": "Why is all of a classical oscillator's energy potential energy at its maximum extension?",
+    "choices": [
+      {
+        "text": "With any kinetic energy left, it would keep moving outward",
+        "correct": true
+      },
+      {
+        "text": "Kinetic energy is always zero for a harmonic oscillator",
+        "why": "The oscillator has kinetic energy as it moves through equilibrium. Only at the maximum extension, where it stops to turn around, is the kinetic energy zero."
+      },
+      {
+        "text": "The potential energy is smallest at the maximum extension",
+        "why": "V = (1/2)kQ^2 is largest at the maximum extension, not smallest. There the kinetic energy is zero, so all the energy is potential."
+      },
+      {
+        "text": "The total energy is zero at the maximum extension",
+        "why": "The total energy is constant and not zero. At the maximum extension it is all potential energy, because the kinetic energy is zero."
+      }
+    ],
+    "explanation": "If not all the energy were potential energy at the maximum extension, the oscillator would still have kinetic energy and momentum and could extend further. So the maximum extension is found by setting the total energy equal to the potential energy."
+  },
+  {
+    "id": "pc5-levels-q0-equation",
+    "type": "multiple-choice",
+    "prompt": "How does the section find the classical limit Q_0 of the displacement for an oscillator in its ground state?",
+    "choices": [
+      {
+        "text": "It sets the zero-point energy equal to (kQ_0^2)/2",
+        "correct": true
+      },
+      {
+        "text": "It sets the zero-point energy equal to zero",
+        "why": "The zero-point energy is (ħω)/2, not zero. Q_0 comes from equating it to the potential energy (kQ_0^2)/2."
+      },
+      {
+        "text": "It sets the kinetic energy at Q = 0 equal to (ħω)/2",
+        "why": "At Q = 0 all the energy is kinetic, but that tells you nothing about how far the oscillator goes. Q_0 comes from (ħω)/2 = (kQ_0^2)/2."
+      },
+      {
+        "text": "It sets Q_0 equal to the equilibrium bond length",
+        "why": "Q_0 is a displacement from equilibrium, not the bond length itself. It comes from (ħω)/2 = (kQ_0^2)/2."
+      }
+    ],
+    "explanation": "At the classical limit all the energy is potential energy, so the section equates the zero-point energy to the potential energy: (ħω)/2 = (kQ_0^2)/2. Solving gives the largest displacement a classical oscillator with this energy could reach."
+  },
+  {
+    "id": "pc5-levels-classical-limit-pm",
+    "type": "numeric",
+    "prompt": "Setting (ħω)/2 = (kQ_0^2)/2 gives the classical limit Q_0 = √(ħω/k). For ħω = 5.0 × 10^−20 J and k = 500 N/m, and using 1 pm = 10^−12 m, what is Q_0, in pm?",
+    "answer": 10.0,
+    "unit": "pm",
+    "explanation": "Q_0 = √(ħω/k) = √((5.0 × 10^−20 J)/(500 N/m)) = √(1.0 × 10^−22 m^2) = 1.0 × 10^−11 m = 10 pm. A classical oscillator with the zero-point energy could never be displaced farther than this."
+  },
+  {
+    "id": "pc5-levels-beyond-classical-limit",
+    "type": "multiple-choice",
+    "prompt": "How do the quantum oscillator's wavefunctions behave at the classical limit of the displacement?",
+    "choices": [
+      {
+        "text": "They extend beyond it, into the classically forbidden region",
+        "correct": true
+      },
+      {
+        "text": "They drop to exactly zero at the classical limit",
+        "why": "A classical oscillator stops at its limit, but the quantum wavefunctions don't: they extend beyond it, so there is some probability of finding the oscillator there."
+      },
+      {
+        "text": "They are largest at the classical limit and zero inside it",
+        "why": "The wavefunctions are spread over the region inside the limit, and they also leak beyond it, into the classically forbidden region."
+      },
+      {
+        "text": "They stop well inside the classical limit",
+        "why": "The quantum oscillator reaches the classical limit and goes beyond it. Its wavefunctions extend into the classically forbidden region."
+      }
+    ],
+    "explanation": "Classically, an oscillator can't go past the point where all its energy is potential energy. The quantum wavefunctions extend beyond this classical limit, so there is a nonzero probability of finding the oscillator in the classically forbidden region."
+  },
+  {
+    "id": "pc5-levels-classical-edges",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 5.4.1, where does a classical harmonic oscillator spend most of its time?",
+    "choices": [
+      {
+        "text": "Near its outer edges, where it moves slowest",
+        "correct": true
+      },
+      {
+        "text": "At the center, where it moves fastest",
+        "why": "It passes through the center quickly, at top speed. It spends most of its time near the turning points, where it slows down and stops."
+      },
+      {
+        "text": "Equally at every point of its path",
+        "why": "Its speed changes along the path, so it spends more time where it moves slowly: near the turning points."
+      },
+      {
+        "text": "Beyond its turning points",
+        "why": "A classical oscillator can never go past its turning points. It spends most of its time just inside them, where it moves slowest."
+      }
+    ],
+    "explanation": "At the outer edges the kinetic energy goes to zero and the potential energy is at a maximum, so the oscillator slows down, stops and turns around there. That is where a classical oscillator spends most of its time."
+  },
+  {
+    "id": "pc5-levels-center-v0",
+    "type": "multiple-choice",
+    "prompt": "For which level is a quantum harmonic oscillator most likely to be found at the center, Q = 0?",
+    "choices": [
+      {
+        "text": "v = 0, the ground state",
+        "correct": true
+      },
+      {
+        "text": "v = 1, the first excited state",
+        "why": "The v = 1 wavefunction has a node at the center, so the probability density there is zero. Only v = 0 peaks at the center."
+      },
+      {
+        "text": "v = 50, a highly excited state",
+        "why": "At high v the oscillator behaves much like a classical one and is most likely near the edges, not at the center."
+      },
+      {
+        "text": "Every level, equally",
+        "why": "Excited levels have their highest probability away from the center; v = 1 even has a node at Q = 0. Only v = 0 is most likely at the center."
+      }
+    ],
+    "explanation": "In the ground state the probability density peaks at Q = 0, the opposite of a classical oscillator. The v = 1 wavefunction has a node at the center, and at high v the most likely positions move out toward the edges."
+  },
+  {
+    "id": "pc5-levels-v50-classical",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 5.4.1, how does the quantum oscillator at v = 50 compare with a classical oscillator?",
+    "choices": [
+      {
+        "text": "It behaves much like it, being most likely near the edges",
+        "correct": true
+      },
+      {
+        "text": "It is most likely at the center, unlike the classical one",
+        "why": "Being most likely at the center is ground-state (v = 0) behavior. At v = 50 the quantum oscillator, like the classical one, is most likely near the edges."
+      },
+      {
+        "text": "It can never reach the classical turning points",
+        "why": "At high v the quantum oscillator is most likely found near the turning points, just like the classical one."
+      },
+      {
+        "text": "It has lost its quantized energy levels",
+        "why": "The levels are still quantized at v = 50; the spacing hν is just small compared with the total energy, 50.5hν. The probability distribution looks classical."
+      }
+    ],
+    "explanation": "At high quantum numbers such as v = 50, the quantum oscillator begins to match the classical one, with the highest probability near the edges. Quantum results approaching classical ones at large quantum numbers is the correspondence principle."
+  }
+]

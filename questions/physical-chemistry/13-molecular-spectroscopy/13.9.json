@@ -1,0 +1,576 @@
+[
+  {
+    "id": "pc13-normal-modes-independent-motion",
+    "type": "multiple-choice",
+    "prompt": "How does the section define a normal mode?",
+    "choices": [
+      {
+        "text": "An independent motion of atoms that moves no other mode",
+        "correct": true
+      },
+      {
+        "text": "The motion of one atom while all the others stay still",
+        "why": "In a normal mode many atoms usually move together. What defines it is independence: it happens without causing movement in any other mode."
+      },
+      {
+        "text": "A rotation of the whole molecule about its center of mass",
+        "why": "That is a rotational degree of freedom, not a vibration. A normal mode is an independent motion of the atoms that doesn't set the other modes moving."
+      },
+      {
+        "text": "A motion of the electrons that stretches one bond",
+        "why": "Normal modes are motions of the atoms. A normal mode is an independent motion that causes no movement in the other modes."
+      }
+    ],
+    "explanation": "A normal mode is an independent motion of the atoms in a molecule that occurs without causing movement in any of the other modes. Each mode has its own type of motion and its own symmetry."
+  },
+  {
+    "id": "pc13-normal-modes-orthogonal",
+    "type": "multiple-choice",
+    "prompt": "As their name implies, how are the different normal modes of a molecule related to each other?",
+    "choices": [
+      {
+        "text": "They are orthogonal to each other",
+        "correct": true
+      },
+      {
+        "text": "They all have exactly the same frequency",
+        "why": "Each mode has its own frequency ν_j. What the name normal implies is that the modes are orthogonal to each other."
+      },
+      {
+        "text": "Each is a sum of all the others",
+        "why": "Then they wouldn't be independent. Normal modes are orthogonal, so none of them can be built from the others."
+      },
+      {
+        "text": "They all have the same symmetry",
+        "why": "Each mode has its own symmetry, which group theory determines. The modes are orthogonal to each other."
+      }
+    ],
+    "explanation": "Normal modes, as implied by their name, are orthogonal to each other. That is why each one can be excited without moving the others."
+  },
+  {
+    "id": "pc13-normal-modes-no-cross-terms",
+    "type": "multiple-choice",
+    "prompt": "In normal coordinates the potential energy becomes ΔV = (1/2)Σ_j F_j Q_j^2. What is special about this form?",
+    "choices": [
+      {
+        "text": "It has no cross terms between different Q_j",
+        "correct": true
+      },
+      {
+        "text": "It includes every anharmonic term",
+        "why": "The anharmonic, higher-order terms were dropped earlier. What normal coordinates remove is the cross terms, leaving one F_j Q_j^2 term per mode."
+      },
+      {
+        "text": "It depends on the molecule's orientation",
+        "why": "With no external field, the energy doesn't depend on orientation at all. The special feature is that no term mixes two different Q_j."
+      },
+      {
+        "text": "It contains only the translational coordinates",
+        "why": "Translations don't change the potential energy. The Q_j are vibrational normal coordinates, and no term mixes two of them."
+      }
+    ],
+    "explanation": "In the original displacements q_i, ΔV contains cross terms f_ij q_i q_j. A theorem of classical mechanics says new coordinates Q_j can be found in which those terms vanish, leaving ΔV = (1/2)Σ_j F_j Q_j^2. These are the normal coordinates."
+  },
+  {
+    "id": "pc13-normal-modes-cross-term-meaning",
+    "type": "multiple-choice",
+    "prompt": "Before normal coordinates are introduced, ΔV = (1/2)Σ_i Σ_j f_ij q_i q_j. What are the terms with i ≠ j?",
+    "choices": [
+      {
+        "text": "Cross terms coupling two displacements",
+        "correct": true
+      },
+      {
+        "text": "Anharmonic terms of higher order",
+        "why": "Higher-order terms were neglected. Every term here is quadratic; those with i ≠ j are cross terms, each involving two different displacements."
+      },
+      {
+        "text": "The kinetic energy of each atom",
+        "why": "ΔV is a potential energy only. Terms with i ≠ j couple two different displacements, q_i and q_j."
+      },
+      {
+        "text": "The energy of the equilibrium structure",
+        "why": "That is V(0, 0, …, 0), which was subtracted to form ΔV. Terms with i ≠ j are cross terms coupling two displacements."
+      }
+    ],
+    "explanation": "When i ≠ j, f_ij q_i q_j involves two different displacements at once, so moving along one coordinate changes the force along another. Normal coordinates are chosen so that these cross terms disappear."
+  },
+  {
+    "id": "pc13-normal-modes-anharmonic-dropped",
+    "type": "multiple-choice",
+    "prompt": "Which terms are neglected when the section writes ΔV = (1/2)Σ_i Σ_j f_ij q_i q_j?",
+    "choices": [
+      {
+        "text": "Anharmonic, higher-order terms",
+        "correct": true
+      },
+      {
+        "text": "The cross terms with i ≠ j",
+        "why": "The cross terms are still in this sum; only the later change to normal coordinates removes them. What is neglected here is the higher-order, anharmonic terms."
+      },
+      {
+        "text": "The terms with i = j",
+        "why": "Those are kept; they are the simple squared terms. The section drops the higher-order, anharmonic terms."
+      },
+      {
+        "text": "All terms that involve hydrogen atoms",
+        "why": "No atoms are left out. The approximation drops the terms beyond second order, which are the anharmonic ones."
+      }
+    ],
+    "explanation": "The expansion stops at second order in the displacements; the anharmonic (higher-order) terms are ignored. This harmonic approximation is what lets each normal mode act as a harmonic oscillator."
+  },
+  {
+    "id": "pc13-normal-modes-potential-vib-only",
+    "type": "multiple-choice",
+    "prompt": "With no external field present, why does a molecule's potential energy depend only on its vibrational coordinates?",
+    "choices": [
+      {
+        "text": "Shifting or turning the molecule doesn't change it",
+        "correct": true
+      },
+      {
+        "text": "Translations and rotations have no kinetic energy",
+        "why": "They do have kinetic energy. The point is about potential energy: it doesn't depend on where the molecule is or how it is oriented."
+      },
+      {
+        "text": "Rotations and translations are not quantized",
+        "why": "Whether they are quantized doesn't matter here. The potential energy is unchanged by moving the center of mass or turning the molecule."
+      },
+      {
+        "text": "Each atom's potential depends only on its own bonds",
+        "why": "The reason concerns the molecule as a whole: shifting it or rotating it leaves its energy unchanged, so only the vibrational coordinates matter."
+      }
+    ],
+    "explanation": "Without an external field, the energy doesn't depend on the molecule's orientation (its rotational degrees of freedom) or on the position of its center of mass (its translational degrees of freedom). Only the 3N − 6 vibrational coordinates (3N − 5 if linear) remain."
+  },
+  {
+    "id": "pc13-normal-modes-product-wavefunction",
+    "type": "multiple-choice",
+    "prompt": "In normal coordinates the vibrational Hamiltonian is a sum of one term per mode. What form does the vibrational wavefunction take?",
+    "choices": [
+      {
+        "text": "A product of one function per normal mode",
+        "correct": true
+      },
+      {
+        "text": "A sum of one function per normal mode",
+        "why": "When a Hamiltonian is a sum of independent parts, the wavefunction is a product of their functions, and it is the energy that is a sum."
+      },
+      {
+        "text": "A product of one function per atom",
+        "why": "The factors belong to normal modes, not atoms: ψ_vib = ψ_(vib, 1)(Q_1) × ψ_(vib, 2)(Q_2) × …, one for each Q_j."
+      },
+      {
+        "text": "One function of all the bond lengths together",
+        "why": "That is what normal coordinates let us avoid. Since the modes are independent, ψ_vib factors into one function of each Q_j."
+      }
+    ],
+    "explanation": "Because Ĥ_vib = Σ_j Ĥ_(vib, j), with each term depending on one Q_j, the wavefunction is ψ_(vib, 1)(Q_1) × ψ_(vib, 2)(Q_2) × …, one factor per mode, and the energy is the sum of the mode energies."
+  },
+  {
+    "id": "pc13-normal-modes-energy-sum",
+    "type": "multiple-choice",
+    "prompt": "In the normal-mode picture, how is a molecule's total vibrational energy related to the energies of its normal modes?",
+    "choices": [
+      {
+        "text": "It is the sum of the mode energies",
+        "correct": true
+      },
+      {
+        "text": "It is the product of the mode energies",
+        "why": "A product describes the wavefunction, not the energy. The energy is a sum: E_vib = Σ_j hν_j(v_j + 1/2)."
+      },
+      {
+        "text": "It equals the energy of the highest mode alone",
+        "why": "Every mode contributes. E_vib = Σ_j hν_j(v_j + 1/2) adds up all N_vib of them."
+      },
+      {
+        "text": "It is the average of the mode energies",
+        "why": "The energies add rather than average: E_vib = Σ_j hν_j(v_j + 1/2)."
+      }
+    ],
+    "explanation": "The total vibrational energy is E_vib = Σ_j hν_j(v_j + 1/2), a sum over all N_vib modes, each with its own frequency ν_j and quantum number v_j = 0, 1, 2, …"
+  },
+  {
+    "id": "pc13-normal-modes-each-harmonic",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which model can each vibrational mode of a polyatomic molecule be treated with?",
+    "choices": [
+      {
+        "text": "A harmonic oscillator",
+        "correct": true
+      },
+      {
+        "text": "A rigid rotor",
+        "why": "A rigid rotor describes rotation. Each vibrational normal mode behaves as a harmonic oscillator, with its own F_j and μ_j."
+      },
+      {
+        "text": "A free particle in a box",
+        "why": "A box has a flat potential with hard walls. Each normal mode has the potential (1/2)F_j Q_j^2 of a harmonic oscillator."
+      },
+      {
+        "text": "A hydrogen atom",
+        "why": "The hydrogen atom is an electron in a Coulomb potential. Each normal mode moves in the potential (1/2)F_j Q_j^2 of a harmonic oscillator."
+      }
+    ],
+    "explanation": "Each term of Ĥ_vib has a kinetic part and a potential (1/2)F_j Q_j^2 in a single normal coordinate, which is a harmonic oscillator. A molecule has N_vib of these independent oscillators."
+  },
+  {
+    "id": "pc13-normal-modes-zero-point",
+    "type": "multiple-choice",
+    "prompt": "In the vibrational ground state of a polyatomic molecule every v_j = 0. Why is E_vib not zero?",
+    "choices": [
+      {
+        "text": "Each mode keeps hν_j/2 of zero-point energy",
+        "correct": true
+      },
+      {
+        "text": "In the ground state every v_j equals 1",
+        "why": "The ground state has every v_j = 0. Even so, each mode contributes hν_j(0 + 1/2) = hν_j/2."
+      },
+      {
+        "text": "E_vib also includes the molecule's rotational energy",
+        "why": "E_vib covers only the vibrations. It isn't zero because each mode keeps hν_j/2 when v_j = 0."
+      },
+      {
+        "text": "The cross terms add a fixed amount of energy",
+        "why": "In normal coordinates there are no cross terms. The leftover energy is the zero-point energy, hν_j/2 from each mode."
+      }
+    ],
+    "explanation": "With every v_j = 0, E_vib = Σ_j hν_j(0 + 1/2) = (1/2)Σ_j hν_j. Every mode contributes its zero-point energy, so the total is never zero."
+  },
+  {
+    "id": "pc13-normal-modes-raise-one-mode",
+    "type": "multiple-choice",
+    "prompt": "In the harmonic normal-mode picture, mode j goes from v_j = 0 to v_j = 1 while the other modes stay as they are. By how much does E_vib change?",
+    "choices": [
+      {
+        "text": "By hν_j",
+        "correct": true
+      },
+      {
+        "text": "By hν_j/2",
+        "why": "hν_j/2 is the mode's zero-point energy, which is already there at v_j = 0. Raising v_j by 1 adds a full hν_j."
+      },
+      {
+        "text": "By the sum of hν over all the modes",
+        "why": "The other modes are unchanged, so their energies are too. Only mode j's term changes, by hν_j."
+      },
+      {
+        "text": "By an amount that depends on the other modes",
+        "why": "The modes are independent: E_vib is a sum of separate terms, so raising v_j by 1 adds hν_j whatever the others are doing."
+      }
+    ],
+    "explanation": "E_vib = Σ_j hν_j(v_j + 1/2). Only mode j's term changes, from hν_j/2 to 3hν_j/2, so the energy rises by hν_j, whatever the other modes are doing."
+  },
+  {
+    "id": "pc13-normal-modes-translation-meaning",
+    "type": "multiple-choice",
+    "prompt": "What motion do a molecule's three translational degrees of freedom describe?",
+    "choices": [
+      {
+        "text": "Movement of the center of mass",
+        "correct": true
+      },
+      {
+        "text": "Rotation about the center of mass",
+        "why": "That's rotation. Translation moves the whole molecule's center of mass, and three orthogonal vectors describe it."
+      },
+      {
+        "text": "Stretching of the bonds",
+        "why": "Bond stretching is a vibration. Translation is movement of the molecule's center of mass."
+      },
+      {
+        "text": "Electrons moving between the atoms",
+        "why": "Degrees of freedom here count motions of the atoms. Translation moves the center of mass of the whole molecule."
+      }
+    ],
+    "explanation": "Translational degrees of freedom are movements of the entire molecule's center of mass. Three orthogonal vectors describe this, so every molecule has 3 of them, linear or not."
+  },
+  {
+    "id": "pc13-normal-modes-ethane-co2-rotations",
+    "type": "multiple-choice",
+    "prompt": "In Example 13.9.1, ethane (C2H6) and carbon dioxide (CO2) each have 3 translational degrees of freedom. How many rotational degrees of freedom does each have?",
+    "choices": [
+      {
+        "text": "Ethane 3, CO2 2",
+        "correct": true
+      },
+      {
+        "text": "Ethane 3, CO2 3",
+        "why": "CO2 is linear, and a linear molecule has only two rotational degrees of freedom. That is why its vibrations number 3N − 5 = 4."
+      },
+      {
+        "text": "Ethane 2, CO2 2",
+        "why": "Ethane is nonlinear, so it has three rotations. Only the linear CO2 has two."
+      },
+      {
+        "text": "Ethane 2, CO2 3",
+        "why": "That's reversed. Nonlinear ethane has three rotations; linear CO2 has two."
+      }
+    ],
+    "explanation": "Ethane is nonlinear: of its 3N = 24 degrees of freedom, 3 are translational, 3 rotational and 18 vibrational. CO2 is linear: of its 9, 3 are translational, 2 rotational and 4 vibrational."
+  },
+  {
+    "id": "pc13-normal-modes-linear-one-more",
+    "type": "multiple-choice",
+    "prompt": "A linear molecule and a nonlinear molecule have the same number of atoms. How do their numbers of vibrational degrees of freedom compare?",
+    "choices": [
+      {
+        "text": "The linear one has one more",
+        "correct": true
+      },
+      {
+        "text": "The nonlinear one has one more",
+        "why": "The nonlinear molecule has 3N − 6 and the linear one 3N − 5. The linear molecule, with one fewer rotation, has one more vibration."
+      },
+      {
+        "text": "They have the same number",
+        "why": "The total is 3N for both, but the linear molecule has one fewer rotation, so it has one more vibration: 3N − 5 against 3N − 6."
+      },
+      {
+        "text": "The linear one has two more",
+        "why": "Only one rotation is lost, so 3N − 5 is just one more than 3N − 6."
+      }
+    ],
+    "explanation": "Both have 3N degrees of freedom and 3 translations. A linear molecule has only 2 rotations, so it keeps 3N − 5 vibrations, one more than the 3N − 6 of a nonlinear molecule."
+  },
+  {
+    "id": "pc13-normal-modes-discrete-energy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which kinds of degrees of freedom can store energy only in discrete amounts?",
+    "choices": [
+      {
+        "text": "Rotational and vibrational",
+        "correct": true
+      },
+      {
+        "text": "Translational only",
+        "why": "The section singles out rotational and vibrational degrees of freedom as the ones whose energy comes in discrete amounts, from quantized energy levels."
+      },
+      {
+        "text": "Translational and rotational",
+        "why": "Translation isn't the one named. Rotational and vibrational energy are stored only in discrete amounts, because their energy levels are quantized."
+      },
+      {
+        "text": "Vibrational only",
+        "why": "Rotations are quantized too. The section names both rotational and vibrational degrees of freedom."
+      }
+    ],
+    "explanation": "Every degree of freedom can store energy, but rotational and vibrational energy come only in discrete amounts, because quantum mechanics breaks these motions into quantized energy levels."
+  },
+  {
+    "id": "pc13-normal-modes-rotation-energy-depends",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the energy stored in rotation depends on which two things?",
+    "choices": [
+      {
+        "text": "Its rotational inertia and quantum number",
+        "correct": true
+      },
+      {
+        "text": "The bond force constants and the quantum number v",
+        "why": "Force constants and v govern vibrational energy. Rotational energy depends on the rotational inertia and the quantum number of the level."
+      },
+      {
+        "text": "The speed of the center of mass and its mass",
+        "why": "That describes translational kinetic energy. Rotation stores energy according to the rotational inertia and the rotational quantum number."
+      },
+      {
+        "text": "The number of atoms and the number of modes",
+        "why": "Those set how many degrees of freedom there are, not the energy stored in rotation. That depends on the rotational inertia and the quantum number."
+      }
+    ],
+    "explanation": "The section says the energy stored in rotation depends on the rotational inertia together with the quantum number describing the energy level. For a diatomic molecule that is E = J(J + 1)ħ^2/(2I)."
+  },
+  {
+    "id": "pc13-normal-modes-not-a-mode-type",
+    "type": "multiple-choice",
+    "prompt": "The section lists six types of vibrational mode for polyatomic molecules. Which of these is not one of them?",
+    "choices": [
+      {
+        "text": "Translation",
+        "correct": true
+      },
+      {
+        "text": "Scissoring",
+        "why": "Scissoring is on the list: symmetric stretching, asymmetric stretching, wagging, twisting, scissoring and rocking."
+      },
+      {
+        "text": "Twisting",
+        "why": "Twisting is on the list, along with symmetric and asymmetric stretching, wagging, scissoring and rocking."
+      },
+      {
+        "text": "Wagging",
+        "why": "Wagging is on the list, along with symmetric and asymmetric stretching, twisting, scissoring and rocking."
+      }
+    ],
+    "explanation": "The six named types are symmetric stretching, asymmetric stretching, wagging, twisting, scissoring and rocking. Translation moves the whole molecule and is not a vibration at all."
+  },
+  {
+    "id": "pc13-normal-modes-symmetry-predicts",
+    "type": "multiple-choice",
+    "prompt": "Each normal mode has a certain symmetry. According to the section, what does group theory use these symmetries to predict?",
+    "choices": [
+      {
+        "text": "Which modes are IR or Raman active",
+        "correct": true
+      },
+      {
+        "text": "The exact frequency of each of the modes",
+        "why": "Symmetry alone can't give frequencies; those need the force constants and masses. Group theory predicts whether each mode is IR and/or Raman active."
+      },
+      {
+        "text": "The equilibrium bond lengths",
+        "why": "Bond lengths come from the structure, not from the symmetry of the modes. Group theory uses those symmetries to predict IR and Raman activity."
+      },
+      {
+        "text": "How many atoms the molecule has",
+        "why": "The number of atoms is known from the formula and sets the number of modes. Symmetry predicts which modes are IR and/or Raman active."
+      }
+    ],
+    "explanation": "Group theory determines what symmetries the normal modes have and so predicts whether each one is IR and/or Raman active. That is why IR and Raman spectroscopy are both used to record vibrational spectra."
+  },
+  {
+    "id": "pc13-normal-modes-co-same-frequency",
+    "type": "multiple-choice",
+    "prompt": "In the section's picture of the normal coordinate of CO, the C atom and the O atom are both displaced from their equilibrium positions. How do the two displacements compare?",
+    "choices": [
+      {
+        "text": "They occur at the same frequency",
+        "correct": true
+      },
+      {
+        "text": "The C atom moves at twice the frequency",
+        "why": "In a normal mode all the atoms move at one frequency. The C and O displacements occur at the same frequency."
+      },
+      {
+        "text": "Only the O atom moves; C stays fixed",
+        "why": "Both atoms move in this normal mode, and their displacements occur at the same frequency."
+      },
+      {
+        "text": "They occur at unrelated frequencies",
+        "why": "Then it wouldn't be a single normal mode. The C and O displacements share the same frequency."
+      }
+    ],
+    "explanation": "The displacement of the C atom, Δr_o(C), and that of the O atom, Δr_o(O), occur at the same frequency, as in every normal mode. Both are measured from the equilibrium distance r_o."
+  },
+  {
+    "id": "pc13-normal-modes-ro-meaning",
+    "type": "multiple-choice",
+    "prompt": "For CO, the bond length is written r = r_o + q, where q is the normal coordinate. What is r_o?",
+    "choices": [
+      {
+        "text": "The equilibrium distance",
+        "correct": true
+      },
+      {
+        "text": "The largest distance reached during a vibration",
+        "why": "That would be a turning point. r_o is the equilibrium distance in the ground vibrational state, from which q is measured."
+      },
+      {
+        "text": "The distance at which the bond breaks",
+        "why": "Bond breaking isn't involved. r_o is the equilibrium distance, and q measures the displacement from it."
+      },
+      {
+        "text": "The displacement of the C atom alone",
+        "why": "The atoms' displacements make up q. r_o is the fixed equilibrium distance they are measured from."
+      }
+    ],
+    "explanation": "The displacements of the atoms are measured from the equilibrium distance in the ground vibrational state, r_o. The normal coordinate q follows the change from it, so r = r_o + q."
+  },
+  {
+    "id": "pc13-normal-modes-nvib-meaning",
+    "type": "multiple-choice",
+    "prompt": "The sums in the vibrational Hamiltonian run from j = 1 to N_vib. What is N_vib?",
+    "choices": [
+      {
+        "text": "The number of vibrational modes",
+        "correct": true
+      },
+      {
+        "text": "The number of atoms in the molecule",
+        "why": "With N atoms there are 3N − 6 (or 3N − 5) vibrations, not N. N_vib counts the vibrational degrees of freedom, one per normal mode."
+      },
+      {
+        "text": "The number of chemical bonds",
+        "why": "Bonds and modes are counted differently; a bent triatomic molecule has 2 bonds but 3 modes. N_vib is the number of vibrational degrees of freedom."
+      },
+      {
+        "text": "The highest allowed value of v_j",
+        "why": "v_j has no upper limit; it can be 0, 1, 2, 3 and so on. N_vib is the number of vibrational degrees of freedom."
+      }
+    ],
+    "explanation": "N_vib is the number of vibrational degrees of freedom, 3N − 6 for a nonlinear molecule or 3N − 5 for a linear one. There is one normal coordinate Q_j, and one harmonic oscillator, for each."
+  },
+  {
+    "id": "pc13-normal-modes-fj-meaning",
+    "type": "multiple-choice",
+    "prompt": "In ΔV = (1/2)Σ_j F_j Q_j^2, what role does F_j play?",
+    "choices": [
+      {
+        "text": "The force constant of normal mode j",
+        "correct": true
+      },
+      {
+        "text": "The force on atom j",
+        "why": "F_j belongs to a normal mode, not an atom, and it multiplies Q_j^2 as k does in (1/2)kx^2. It is the mode's force constant."
+      },
+      {
+        "text": "The frequency of normal mode j",
+        "why": "F_j isn't a frequency, though together with μ_j it sets one. It plays the role of k in (1/2)kx^2: the mode's force constant."
+      },
+      {
+        "text": "The anharmonic correction for mode j",
+        "why": "Anharmonic terms were dropped. F_j is the coefficient of Q_j^2, the force constant of mode j's harmonic potential."
+      }
+    ],
+    "explanation": "Each term (1/2)F_j Q_j^2 has the form (1/2)kx^2 of a harmonic potential, so F_j is the force constant of normal mode j. Together with μ_j it sets that mode's frequency."
+  },
+  {
+    "id": "pc13-normal-modes-ethylene-oscillators",
+    "type": "numeric",
+    "prompt": "Each normal mode can be treated as its own harmonic oscillator, and a nonlinear molecule has 3N − 6 normal modes. How many harmonic oscillators describe the vibrations of ethylene, C2H4?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "C2H4 has N = 6 atoms (2 C + 4 H), so N_vib = 3N − 6 = 18 − 6 = 12 harmonic oscillators, one per normal mode."
+  },
+  {
+    "id": "pc13-normal-modes-diacetylene-coordinates",
+    "type": "numeric",
+    "prompt": "Diacetylene, H–C≡C–C≡C–H, is a linear molecule with 6 atoms. Using 3N − 5, how many normal coordinates Q_j does it have?",
+    "answer": 13,
+    "tolerance": 0,
+    "explanation": "N = 6, so 3N − 5 = 18 − 5 = 13. A linear molecule has only 2 rotations, so it keeps one more vibration than a nonlinear molecule with the same number of atoms."
+  },
+  {
+    "id": "pc13-normal-modes-so2-zero-point",
+    "type": "numeric",
+    "prompt": "SO2 has three normal modes, with wavenumbers of about 1150, 520 and 1360 cm^−1. In wavenumbers, E_vib = Σ_j ν̃_j(v_j + 1/2). What is its zero-point energy, with every v_j = 0, in cm^−1?",
+    "answer": 1515,
+    "explanation": "With all v_j = 0, E_vib = (1/2)(1150 + 520 + 1360) = (1/2)(3030) = 1515 cm^−1. Each mode contributes half its wavenumber."
+  },
+  {
+    "id": "pc13-normal-modes-ozone-combination-level",
+    "type": "numeric",
+    "prompt": "Ozone, O3, has normal modes with ν̃_1 = 1103 cm^−1, ν̃_2 = 701 cm^−1 and ν̃_3 = 1042 cm^−1. Treating each mode as harmonic, E_vib = Σ_j ν̃_j(v_j + 1/2). How far above the ground state is the level (v_1, v_2, v_3) = (1, 0, 1), in cm^−1?",
+    "answer": 2145,
+    "explanation": "Raising v_1 and v_3 from 0 to 1 adds ν̃_1 and ν̃_3: 1103 + 1042 = 2145 cm^−1. The zero-point terms are the same in both levels and cancel."
+  },
+  {
+    "id": "pc13-normal-modes-delta-v-one-mode",
+    "type": "numeric",
+    "prompt": "In normal coordinates, ΔV = (1/2)Σ_j F_j Q_j^2. Suppose only mode 1 is displaced, with F_1 = 400 N/m and Q_1 = 2.0 × 10^−12 m. What is ΔV, in J? (Type it in scientific notation, like 2.5e-22.)",
+    "answer": 8e-22,
+    "unit": "J",
+    "explanation": "Only one term survives: ΔV = (1/2) × 400 × (2.0 × 10^−12)^2 = 200 × 4.0 × 10^−24 = 8.0 × 10^−22 J."
+  },
+  {
+    "id": "pc13-normal-modes-cross-term-count",
+    "type": "numeric",
+    "prompt": "A bent triatomic molecule has N_vib = 3, so the double sum ΔV = (1/2)Σ_i Σ_j f_ij q_i q_j, with i and j each running from 1 to 3, has 3 × 3 = 9 terms. How many of them are cross terms, with i ≠ j?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Of the 9 terms, 3 have i = j (the q_1^2, q_2^2 and q_3^2 terms), so 9 − 3 = 6 are cross terms. In normal coordinates all 6 vanish, leaving one F_j Q_j^2 term per mode."
+  }
+]

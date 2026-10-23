@@ -1,0 +1,584 @@
+[
+  {
+    "id": "pc6-hydrogen-reduced-particle",
+    "type": "multiple-choice",
+    "prompt": "The hydrogen atom is a two-particle system, an electron and a proton. Their internal motion around the center of mass is equivalent to the motion of what?",
+    "choices": [
+      {
+        "text": "One particle with the reduced mass μ",
+        "correct": true
+      },
+      {
+        "text": "One particle with the mass of the proton",
+        "why": "The single particle carries the reduced mass, μ = (m_e m_p)/(m_e + m_p), which is close to the electron's mass, not the proton's."
+      },
+      {
+        "text": "Two particles moving independently",
+        "why": "The point of the reduced mass is to replace the two-particle motion with the motion of one particle at r."
+      },
+      {
+        "text": "One particle with the total mass m_e + m_p",
+        "why": "Adding the masses doesn't describe the internal motion. That uses the reduced mass μ, which is close to the electron mass."
+      }
+    ],
+    "explanation": "The internal motion of any two particles around their center of mass is equivalent to the motion of a single particle with the reduced mass μ. For hydrogen, this reduced particle sits at r, the position of the electron relative to the proton."
+  },
+  {
+    "id": "pc6-hydrogen-r-vector",
+    "type": "multiple-choice",
+    "prompt": "For the hydrogen atom, what does the vector r specify?",
+    "choices": [
+      {
+        "text": "The electron's position relative to the proton",
+        "correct": true
+      },
+      {
+        "text": "The proton's position relative to the electron",
+        "why": "r points from the proton to the electron, so it gives the electron's position measured from the proton."
+      },
+      {
+        "text": "The radius of the proton itself",
+        "why": "r is not the size of either particle; its length is the distance between the proton and the electron."
+      },
+      {
+        "text": "The electron's position measured from a point outside the atom",
+        "why": "r is measured from the proton, not from an outside point: it is the electron's position relative to the proton."
+      }
+    ],
+    "explanation": "r is the vector from the proton to the electron. Its length is the proton–electron distance, and its direction is that of the line pointing from the proton to the electron."
+  },
+  {
+    "id": "pc6-hydrogen-mu-equals-me",
+    "type": "multiple-choice",
+    "prompt": "Why does the chapter assume that the reduced mass of the hydrogen atom equals the electron mass?",
+    "choices": [
+      {
+        "text": "The proton is much more massive than the electron",
+        "correct": true
+      },
+      {
+        "text": "The electron and the proton have the same mass",
+        "why": "The proton is far heavier. If the two masses were equal, μ would be only half of either one."
+      },
+      {
+        "text": "The proton's mass cancels out of the Coulomb potential",
+        "why": "The Coulomb potential has no masses in it at all. μ ≈ m_e because the proton is so much heavier than the electron."
+      },
+      {
+        "text": "The electron is much more massive than the proton",
+        "why": "It's the other way round: the proton is far heavier, which is why μ comes out close to the electron mass."
+      }
+    ],
+    "explanation": "μ = (m_e m_p)/(m_e + m_p). When m_p is much larger than m_e, the denominator is almost m_p, so μ is almost exactly m_e."
+  },
+  {
+    "id": "pc6-hydrogen-mass-ratio",
+    "type": "numeric",
+    "prompt": "The electron mass is m_e = 9.109 × 10^−31 kg and the proton mass is m_p = 1.673 × 10^−27 kg. How many times more massive is the proton than the electron?",
+    "answer": 1836.6,
+    "explanation": "m_p/m_e = (1.673 × 10^−27 kg)/(9.109 × 10^−31 kg) = 1836.6, or about 1837. The proton is so much heavier that the chapter takes the reduced mass to equal the electron mass."
+  },
+  {
+    "id": "pc6-hydrogen-reduced-mass",
+    "type": "numeric",
+    "prompt": "Exercise 6.1.1b asks for the reduced mass of the electron–proton system. Use μ = (m_e m_p)/(m_e + m_p) with m_e = 9.109 × 10^−31 kg and m_p = 1.673 × 10^−27 kg. What is μ, in kg? (Type it in scientific notation, like 2.5e-31.)",
+    "answer": 9.104e-31,
+    "unit": "kg",
+    "explanation": "μ = (9.109 × 10^−31 kg × 1.673 × 10^−27 kg)/(9.109 × 10^−31 kg + 1.673 × 10^−27 kg) = (1.524 × 10^−57 kg^2)/(1.674 × 10^−27 kg) = 9.104 × 10^−31 kg. That is within about 0.05% of the electron mass, so taking μ = m_e is a very good approximation."
+  },
+  {
+    "id": "pc6-hydrogen-proton-position",
+    "type": "multiple-choice",
+    "prompt": "In this chapter's model of the hydrogen atom, where is the proton taken to be?",
+    "choices": [
+      {
+        "text": "At the center of mass of the atom",
+        "correct": true
+      },
+      {
+        "text": "Orbiting the electron at the Bohr radius",
+        "why": "The proton is so much heavier that it hardly moves; the model puts it at the center of mass."
+      },
+      {
+        "text": "Halfway between the center of mass and the electron",
+        "why": "The center of mass lies almost on top of the heavy proton, so the model puts the proton right at the center of mass."
+      },
+      {
+        "text": "At a random point given by |ψ|^2",
+        "why": "|ψ|^2 describes where the reduced particle, essentially the electron, is likely to be. The proton is placed at the center of mass."
+      }
+    ],
+    "explanation": "Because the proton is much more massive than the electron, the center of mass is almost at the proton. The chapter assumes the proton is at the center of mass and the reduced mass equals the electron mass."
+  },
+  {
+    "id": "pc6-hydrogen-proton-distance",
+    "type": "numeric",
+    "prompt": "Exercise 6.1.1a takes the proton–electron distance to be the Bohr radius, r = 52.9 pm. The proton's distance from the center of mass is r_p = (m_e r)/(m_e + m_p), with m_e = 9.109 × 10^−31 kg and m_p = 1.673 × 10^−27 kg. What is r_p, in pm? (Give it as a decimal.)",
+    "answer": 0.02879,
+    "unit": "pm",
+    "explanation": "r_p = (9.109 × 10^−31 kg × 52.9 pm)/(1.674 × 10^−27 kg) = 0.0288 pm. The proton is only about 0.03 pm from the center of mass, while the electron is about 52.87 pm from it, so putting the proton at the center of mass is a very good approximation."
+  },
+  {
+    "id": "pc6-hydrogen-coulomb-describes",
+    "type": "multiple-choice",
+    "prompt": "What does the potential energy term V̂(r) = −e^2/(4πε_0 r) in the hydrogen atom Hamiltonian describe?",
+    "choices": [
+      {
+        "text": "Attraction between the proton and electron",
+        "correct": true
+      },
+      {
+        "text": "The repulsion between two electrons",
+        "why": "Hydrogen has only one electron. The Coulomb term describes the attraction between the electron and the proton."
+      },
+      {
+        "text": "The kinetic energy of the electron",
+        "why": "Kinetic energy is the T̂ part of Ĥ, with the derivatives. V̂ is the Coulomb potential energy of the proton–electron attraction."
+      },
+      {
+        "text": "The energy of the spinning proton",
+        "why": "V̂ depends only on the proton–electron distance r: it is the Coulomb attraction between the two particles."
+      }
+    ],
+    "explanation": "V̂(r) = −e^2/(4πε_0 r) is the Coulomb potential energy between the proton and the electron. It is negative because the two opposite charges attract."
+  },
+  {
+    "id": "pc6-hydrogen-coulomb-closer",
+    "type": "multiple-choice",
+    "prompt": "As the electron gets closer to the proton, what happens to the Coulomb potential energy V(r) = −e^2/(4πε_0 r)?",
+    "choices": [
+      {
+        "text": "It becomes more negative",
+        "correct": true
+      },
+      {
+        "text": "It becomes more positive",
+        "why": "r is in the denominator, so a smaller r makes the size of V larger, and with the minus sign that means more negative."
+      },
+      {
+        "text": "It stays the same, since V is a constant",
+        "why": "V depends inversely on r, so it changes as the electron moves."
+      },
+      {
+        "text": "It falls to zero",
+        "why": "V goes toward zero as the electron moves far away, at large r. Close in, V becomes more negative."
+      }
+    ],
+    "explanation": "V depends inversely on r: halving r doubles the size of V. Because of the minus sign, an electron closer to the proton has a lower, more negative potential energy."
+  },
+  {
+    "id": "pc6-hydrogen-coulomb-value",
+    "type": "numeric",
+    "prompt": "V(r) = −e^2/(4πε_0 r). With e^2/(4πε_0) = 1.44 eV·nm, this is V(r) = −(1.44 eV·nm)/r. What is V, in eV, when the electron is r = 0.0529 nm from the proton? (V is negative; include the minus sign.)",
+    "answer": -27.22,
+    "unit": "eV",
+    "explanation": "V = −(1.44 eV·nm)/(0.0529 nm) = −27.2 eV. It is negative because the proton and the electron attract."
+  },
+  {
+    "id": "pc6-hydrogen-coulomb-double-r",
+    "type": "numeric",
+    "prompt": "V(r) = −e^2/(4πε_0 r). If the electron's distance from the proton doubles, by what factor is V multiplied? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "V depends inversely on r, so doubling r halves V: the factor is 1/2 = 0.5. For example, −27.2 eV at 0.0529 nm becomes −13.6 eV at 0.1058 nm."
+  },
+  {
+    "id": "pc6-hydrogen-central-potential",
+    "type": "multiple-choice",
+    "prompt": "The Coulomb potential in the hydrogen atom is called a central potential. What does that mean?",
+    "choices": [
+      {
+        "text": "It depends only on the distance r, not on any angles",
+        "correct": true
+      },
+      {
+        "text": "It is zero everywhere except at the nucleus",
+        "why": "V = −e^2/(4πε_0 r) is nonzero at every finite r. Central means it depends on r only, not on θ or φ."
+      },
+      {
+        "text": "It depends only on the angles θ and φ",
+        "why": "It's the reverse: the Coulomb potential depends on r and not on any angles."
+      },
+      {
+        "text": "It is the same at every proton–electron distance",
+        "why": "V changes with r, as 1/r. What doesn't change it is the direction, given by θ and φ."
+      }
+    ],
+    "explanation": "A central potential depends only on the distance from the center, not on direction. The Coulomb potential depends inversely on r and does not depend on θ or φ."
+  },
+  {
+    "id": "pc6-hydrogen-time-independent",
+    "type": "multiple-choice",
+    "prompt": "Which Schrödinger equation does the section write for the hydrogen atom?",
+    "choices": [
+      {
+        "text": "The time-independent one, Ĥψ = Eψ",
+        "correct": true
+      },
+      {
+        "text": "The time-dependent one, with ψ depending on t",
+        "why": "The section writes the time-independent equation, Ĥ(r, θ, φ)ψ(r, θ, φ) = Eψ(r, θ, φ), with no time variable."
+      },
+      {
+        "text": "The classical wave equation for a string",
+        "why": "That describes a vibrating string. For the atom, the section writes Ĥψ = Eψ."
+      },
+      {
+        "text": "Ĥψ = 0, with no energy term",
+        "why": "The energy E appears as the eigenvalue: Ĥψ = Eψ."
+      }
+    ],
+    "explanation": "The section solves the time-independent Schrödinger equation, Ĥ(r, θ, φ)ψ(r, θ, φ) = Eψ(r, θ, φ), with the Hamiltonian written in spherical coordinates."
+  },
+  {
+    "id": "pc6-hydrogen-spherical-coordinates",
+    "type": "multiple-choice",
+    "prompt": "In which coordinates does the section write the hydrogen atom Hamiltonian?",
+    "choices": [
+      {
+        "text": "Spherical coordinates, r, θ and φ",
+        "correct": true
+      },
+      {
+        "text": "Cartesian coordinates, x, y and z",
+        "why": "The section uses spherical coordinates, which suit a potential that depends only on r."
+      },
+      {
+        "text": "Cylindrical coordinates, ρ, φ and z",
+        "why": "The section uses spherical coordinates: the distance r and the two angles θ and φ."
+      },
+      {
+        "text": "The distance r only",
+        "why": "ψ also depends on the angles θ and φ, which give the direction of the electron from the proton."
+      }
+    ],
+    "explanation": "Ĥ(r, θ, φ) is written in spherical coordinates. The Coulomb potential depends only on r, and the angular part involves θ and φ."
+  },
+  {
+    "id": "pc6-hydrogen-r-varies",
+    "type": "multiple-choice",
+    "prompt": "How does the distance r in the hydrogen atom differ from the bond length in the rigid-rotor model of a diatomic molecule?",
+    "choices": [
+      {
+        "text": "In hydrogen r can vary; the rotor's was fixed",
+        "correct": true
+      },
+      {
+        "text": "In hydrogen r is fixed at the Bohr radius",
+        "why": "The electron–proton distance is not fixed; it is one of the variables, along with θ and φ, that ψ depends on."
+      },
+      {
+        "text": "Both are fixed, so r is never a variable",
+        "why": "Only the rigid rotor has a fixed distance. In hydrogen r varies, so ψ depends on r as well as on θ and φ."
+      },
+      {
+        "text": "The rotor's varied; in hydrogen r is fixed",
+        "why": "It's the other way round: the rigid rotor's bond length is fixed, while the hydrogen atom's r can vary."
+      }
+    ],
+    "explanation": "In the rigid rotor, the bond length was fixed, so only θ and φ varied. In the hydrogen atom the electron–proton distance r can vary, so the wavefunction is ψ(r, θ, φ)."
+  },
+  {
+    "id": "pc6-hydrogen-extra-potential-term",
+    "type": "multiple-choice",
+    "prompt": "The hydrogen atom Hamiltonian uses the same kinetic energy operator as the rotating diatomic molecule. What else does it contain?",
+    "choices": [
+      {
+        "text": "A Coulomb potential energy term",
+        "correct": true
+      },
+      {
+        "text": "A Hooke's law term, (1/2)kx^2",
+        "why": "(1/2)kx^2 is the harmonic oscillator's potential for a vibrating bond. The hydrogen atom has the Coulomb potential −e^2/(4πε_0 r)."
+      },
+      {
+        "text": "Nothing else; it has only kinetic energy",
+        "why": "The rigid rotor has V = 0, but the hydrogen atom adds V̂, the Coulomb attraction between the proton and the electron."
+      },
+      {
+        "text": "A term for repulsion between two protons",
+        "why": "Hydrogen has a single proton. The added term is the electron–proton Coulomb attraction."
+      }
+    ],
+    "explanation": "Ĥ = T̂ + V̂. T̂ is the same kinetic energy operator in spherical coordinates as for the diatomic molecule, and V̂(r) = −e^2/(4πε_0 r) describes the attraction between the proton and the electron."
+  },
+  {
+    "id": "pc6-hydrogen-multiply-2mur2",
+    "type": "multiple-choice",
+    "prompt": "To bring out the angular momentum operator, both sides of the hydrogen atom Schrödinger equation are multiplied by what?",
+    "choices": [
+      {
+        "text": "2μr^2",
+        "correct": true
+      },
+      {
+        "text": "ħ^2",
+        "why": "The equation is multiplied by 2μr^2, which clears the factor −ħ^2/(2μr^2) in front of the derivatives."
+      },
+      {
+        "text": "R(r)Y(θ, φ)",
+        "why": "The product function is substituted in, and later the equation is divided by R(r)Y(θ, φ). The first step is multiplying by 2μr^2."
+      },
+      {
+        "text": "4πε_0 r",
+        "why": "That would clear the Coulomb term's denominator, but the step multiplies by 2μr^2, to clear the factor in front of the kinetic energy."
+      }
+    ],
+    "explanation": "Multiplying by 2μr^2 and rearranging puts the radial terms on one side and the square of the angular momentum operator, acting on ψ, on the other."
+  },
+  {
+    "id": "pc6-hydrogen-why-separable",
+    "type": "multiple-choice",
+    "prompt": "Why can the radial and angular parts of the hydrogen atom Schrödinger equation be separated?",
+    "choices": [
+      {
+        "text": "The angular momentum operator does not involve r",
+        "correct": true
+      },
+      {
+        "text": "The electron's distance from the proton is fixed",
+        "why": "r varies in the hydrogen atom. Separation works because the angular part of the equation doesn't involve r."
+      },
+      {
+        "text": "The Coulomb potential depends on θ and φ",
+        "why": "The Coulomb potential depends only on r, not on any angles. That is what lets the angular part stand on its own."
+      },
+      {
+        "text": "The proton and electron have equal masses",
+        "why": "The masses are very different, and they don't decide whether the variables separate. What matters is that the angular momentum operator doesn't involve r."
+      }
+    ],
+    "explanation": "After multiplying by 2μr^2, everything that depends on r is on one side, and the square of the angular momentum operator, which involves only θ and φ, is on the other. So ψ can be written as R(r)Y(θ, φ)."
+  },
+  {
+    "id": "pc6-hydrogen-y-meaning",
+    "type": "multiple-choice",
+    "prompt": "In ψ(r, θ, φ) = R(r)Y(θ, φ), what information does the angular function Y(θ, φ) give about the electron?",
+    "choices": [
+      {
+        "text": "Where it is around the proton",
+        "correct": true
+      },
+      {
+        "text": "How far it is from the proton",
+        "why": "That is what the radial function R(r) describes. Y(θ, φ) depends only on the angles, so it describes direction."
+      },
+      {
+        "text": "How fast it is moving",
+        "why": "Y gives no speed. It describes where around the proton the electron is."
+      },
+      {
+        "text": "Its energy E",
+        "why": "The energy is a number, the eigenvalue E, not a function of the angles. Y(θ, φ) tells where around the proton the electron is."
+      }
+    ],
+    "explanation": "The spherical harmonic Y(θ, φ) tells where the electron is around the proton, while the radial function R(r) tells how far away from the proton it is."
+  },
+  {
+    "id": "pc6-hydrogen-two-equations",
+    "type": "multiple-choice",
+    "prompt": "After separating the variables, Equations (6.1.9) and (6.1.10) are which two equations?",
+    "choices": [
+      {
+        "text": "A radial equation and an angular equation",
+        "correct": true
+      },
+      {
+        "text": "A θ equation and a φ equation",
+        "why": "That split was made for the rigid rotor. Here the split is between r and the angles: a radial equation and an angular equation."
+      },
+      {
+        "text": "A time equation and a space equation",
+        "why": "No time is involved here; the time-independent equation is split into a radial part and an angular part."
+      },
+      {
+        "text": "A kinetic and a potential energy equation",
+        "why": "The split is by variable, not by kind of energy: r in one equation, θ and φ in the other."
+      }
+    ],
+    "explanation": "Equation (6.1.9) is the radial differential equation, for R(r), and (6.1.10) is the angular equation, for Y(θ, φ). Each side was set equal to the same constant λ, and the two are solved separately."
+  },
+  {
+    "id": "pc6-hydrogen-spherical-harmonics",
+    "type": "multiple-choice",
+    "prompt": "What are the angular functions Y(θ, φ) in the hydrogen atom wavefunction?",
+    "choices": [
+      {
+        "text": "Spherical harmonics, as for the rigid rotor",
+        "correct": true
+      },
+      {
+        "text": "Hermite polynomials, as for the harmonic oscillator",
+        "why": "Hermite polynomials belong to the harmonic oscillator's wavefunctions. The angular functions are the spherical harmonics."
+      },
+      {
+        "text": "Sine functions, as for the particle in a box",
+        "why": "Box wavefunctions are sines of x. The angular functions of hydrogen are the spherical harmonics, the eigenfunctions of angular momentum."
+      },
+      {
+        "text": "New functions unlike any found for the rigid rotor",
+        "why": "The angular equation is the same as for the rigid rotor, so its solutions are the same spherical harmonics."
+      }
+    ],
+    "explanation": "The eigenfunctions of the angular momentum operator are the spherical harmonics Y(θ, φ), already found for the rigid rotor. So the hydrogen atom's angular functions are the same."
+  },
+  {
+    "id": "pc6-hydrogen-l-notation",
+    "type": "multiple-choice",
+    "prompt": "For the rigid rotor, the angular momentum quantum numbers are J and m_J. Which symbols are used for the same quantum numbers for an electron in an atom?",
+    "choices": [
+      {
+        "text": "l and m_l",
+        "correct": true
+      },
+      {
+        "text": "J and m_J, unchanged",
+        "why": "The quantities are the same, but the custom for electronic states is to write l and m_l."
+      },
+      {
+        "text": "L and M",
+        "why": "L is the electronic angular momentum itself, with operator L̂. Its quantum numbers are l and m_l."
+      },
+      {
+        "text": "n and m_n",
+        "why": "For electronic angular momentum the custom is l and m_l, in place of J and m_J."
+      }
+    ],
+    "explanation": "It is customary to use J and m_J for rotational states and l and m_l for electronic states, for the same quantities. The electronic angular momentum is written L, with operator L̂."
+  },
+  {
+    "id": "pc6-hydrogen-l2-eigenfunction",
+    "type": "multiple-choice",
+    "prompt": "According to Equation (6.1.12), Y_l^(ml)(θ, φ) must be an eigenfunction of which operator?",
+    "choices": [
+      {
+        "text": "L̂^2, the square of the angular momentum",
+        "correct": true
+      },
+      {
+        "text": "V̂, the Coulomb potential energy",
+        "why": "V̂ depends only on r, while Y depends only on the angles. Y is an eigenfunction of L̂^2."
+      },
+      {
+        "text": "p̂_x, the linear momentum in x",
+        "why": "Y describes angular motion. It is an eigenfunction of L̂^2, the square of the angular momentum operator."
+      },
+      {
+        "text": "R(r), the radial function",
+        "why": "R(r) is a function, not an operator. Y is an eigenfunction of the operator L̂^2."
+      }
+    ],
+    "explanation": "L̂^2Y_l^(ml)(θ, φ) = λY_l^(ml)(θ, φ): the angular functions are eigenfunctions of L̂^2, the square of the angular momentum operator, with eigenvalue λ."
+  },
+  {
+    "id": "pc6-hydrogen-lambda-value",
+    "type": "multiple-choice",
+    "prompt": "In L̂^2Y = λY for the hydrogen atom, what is the eigenvalue λ?",
+    "choices": [
+      {
+        "text": "l(l + 1)ħ^2",
+        "correct": true
+      },
+      {
+        "text": "lħ",
+        "why": "lħ is not the eigenvalue of L̂^2. From the rigid rotor, λ = J(J + 1)ħ^2, which is l(l + 1)ħ^2 in electronic notation."
+      },
+      {
+        "text": "l^2ħ^2",
+        "why": "Close, but the eigenvalue is l(l + 1)ħ^2, not l^2ħ^2; for l = 1 that is 2ħ^2, not ħ^2."
+      },
+      {
+        "text": "l(l + 1)ħ",
+        "why": "λ is an eigenvalue of L̂^2, the angular momentum squared, so it carries ħ^2: λ = l(l + 1)ħ^2."
+      }
+    ],
+    "explanation": "From the rigid rotor, λ = J(J + 1)ħ^2; in electronic notation that is l(l + 1)ħ^2. So L̂^2Y_l^(ml) = l(l + 1)ħ^2Y_l^(ml)."
+  },
+  {
+    "id": "pc6-hydrogen-lambda-l4",
+    "type": "numeric",
+    "prompt": "The eigenvalue of L̂^2 is λ = l(l + 1)ħ^2. For l = 4, λ is a number times ħ^2. What is the number?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "λ = 4(4 + 1)ħ^2 = 4 × 5ħ^2 = 20ħ^2, so the number is 20."
+  },
+  {
+    "id": "pc6-hydrogen-radial-l-origin",
+    "type": "multiple-choice",
+    "prompt": "The radial equation (6.1.14) contains the term (l(l + 1)ħ^2)/(2μr^2). Where does the l(l + 1)ħ^2 in it come from?",
+    "choices": [
+      {
+        "text": "The eigenvalue λ of L̂^2 from the angular equation",
+        "correct": true
+      },
+      {
+        "text": "The Coulomb attraction between proton and electron",
+        "why": "The Coulomb term is V(r) = −e^2/(4πε_0 r), a separate term with no l in it. l(l + 1)ħ^2 is the eigenvalue λ from the angular equation."
+      },
+      {
+        "text": "The normalization constant of R(r)",
+        "why": "Normalization is not part of the radial equation. l(l + 1)ħ^2 is the separation constant λ, the eigenvalue of L̂^2."
+      },
+      {
+        "text": "The zero-point energy of the electron",
+        "why": "No zero-point energy appears here. The term carries the separation constant λ = l(l + 1)ħ^2 from the angular equation into the radial one."
+      }
+    ],
+    "explanation": "Both sides of the separated equation equal the same constant λ. The angular equation shows that λ = l(l + 1)ħ^2, the eigenvalue of L̂^2, and putting this value into the radial equation gives the term (l(l + 1)ħ^2)/(2μr^2). So the radial functions depend on l too."
+  },
+  {
+    "id": "pc6-hydrogen-l-term-ratio",
+    "type": "numeric",
+    "prompt": "The radial equation contains the term (l(l + 1)ħ^2)/(2μr^2). At the same r, how many times larger is this term for l = 2 than for l = 1?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "l(l + 1) is 2 × 3 = 6 for l = 2 and 1 × 2 = 2 for l = 1. Everything else in the term is the same, so the ratio is 6/2 = 3."
+  },
+  {
+    "id": "pc6-hydrogen-radial-method",
+    "type": "multiple-choice",
+    "prompt": "The section says that solving the radial equation is similar to a case solved earlier. Which one?",
+    "choices": [
+      {
+        "text": "The harmonic oscillator",
+        "correct": true
+      },
+      {
+        "text": "The particle in a box",
+        "why": "The box gives simple sine functions. The section compares the radial equation with the harmonic oscillator: an asymptotic solution times polynomials."
+      },
+      {
+        "text": "The φ equation of the rigid rotor",
+        "why": "The φ equation has simple exponential solutions. The radial equation is solved like the harmonic oscillator, with an asymptotic solution times polynomials."
+      },
+      {
+        "text": "The vibrating string",
+        "why": "The string's equation gives sines and cosines. The radial equation is handled like the harmonic oscillator."
+      }
+    ],
+    "explanation": "As for the harmonic oscillator, an asymptotic solution is found first. The complete solutions are that asymptotic solution times polynomials that come from truncating a power series."
+  },
+  {
+    "id": "pc6-hydrogen-asymptotic",
+    "type": "multiple-choice",
+    "prompt": "In solving the radial equation, where is the asymptotic solution valid?",
+    "choices": [
+      {
+        "text": "At large r, far from the proton",
+        "correct": true
+      },
+      {
+        "text": "Only at r = 0, at the proton",
+        "why": "Asymptotic here means the limit of large r. The full solution multiplies this large-r form by polynomials."
+      },
+      {
+        "text": "Only at the Bohr radius",
+        "why": "The asymptotic solution describes the behavior at large r, not at one particular distance."
+      },
+      {
+        "text": "Everywhere, so no polynomials are needed",
+        "why": "It holds only at large r; that's why it is multiplied by polynomials to give the complete solutions."
+      }
+    ],
+    "explanation": "The asymptotic solution is valid at large r. The complete radial functions are products of this asymptotic solution and polynomials from a truncated power series."
+  }
+]

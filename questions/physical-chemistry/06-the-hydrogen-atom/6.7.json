@@ -1,0 +1,585 @@
+[
+  {
+    "id": "pc6-helium-first-unsolvable",
+    "type": "multiple-choice",
+    "prompt": "Which is the first element in the periodic table whose Schrödinger equation cannot be solved exactly?",
+    "choices": [
+      {
+        "text": "Helium",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen",
+        "why": "Hydrogen, with one electron, can be solved exactly. Helium, the second element, is the first that cannot."
+      },
+      {
+        "text": "Lithium",
+        "why": "Lithium can't be solved exactly either, but helium, with only two electrons, is already the first that can't."
+      },
+      {
+        "text": "Boron",
+        "why": "Boron's five electrons make it harder still, but the problem already starts with helium's two electrons."
+      }
+    ],
+    "explanation": "Helium, the second element, gives the first quantum-mechanical problem in the periodic table that cannot be solved exactly. Its second electron brings an electron–electron repulsion term that hydrogen doesn't have."
+  },
+  {
+    "id": "pc6-helium-why-unsolvable",
+    "type": "multiple-choice",
+    "prompt": "Which term in the helium atom's Hamiltonian makes its Schrödinger equation impossible to solve exactly?",
+    "choices": [
+      {
+        "text": "The electron–electron repulsion, V_12(r_12)",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy of the two electrons",
+        "why": "Each kinetic energy term involves only one electron's coordinates. The trouble is V_12, which depends on the distance between the electrons."
+      },
+      {
+        "text": "The attraction of each electron to the nucleus",
+        "why": "Each attraction term depends on one electron's distance from the nucleus, just as in hydrogen. The repulsion term V_12 links the two electrons."
+      },
+      {
+        "text": "The charge of +2 on the helium nucleus",
+        "why": "A larger nuclear charge is no problem on its own; a one-electron ion with any Z can be solved. The electron–electron repulsion is what prevents it."
+      }
+    ],
+    "explanation": "V_12(r_12) = e^2/(4πε_0 r_12) depends on the distance between the two electrons, so it ties their motions together. Because of these Coulomb repulsion terms, the Schrödinger equation can't be solved exactly even for a two-electron atom."
+  },
+  {
+    "id": "pc6-helium-not-separable",
+    "type": "multiple-choice",
+    "prompt": "The section says multi-electron Hamiltonians are not separable. What does this mean?",
+    "choices": [
+      {
+        "text": "It can't be split into one-electron pieces",
+        "correct": true
+      },
+      {
+        "text": "It can't be split into kinetic and potential energy terms",
+        "why": "Ĥ = T̂ + V̂ still holds. Not separable means it can't be broken into one-electron pieces, because the repulsion terms involve two electrons each."
+      },
+      {
+        "text": "Its electrons can never be removed from the nucleus",
+        "why": "This is about the mathematics, not ionization: the Hamiltonian can't be written as a sum of parts that each depend on one electron's coordinates."
+      },
+      {
+        "text": "Its two electrons must be treated as one particle",
+        "why": "Each electron keeps its own coordinates. The problem is that the repulsion term links them, so Ĥ can't be split into one-electron pieces."
+      }
+    ],
+    "explanation": "Each V_ij term depends on the coordinates of two electrons at once, through r_ij. So the multi-electron Hamiltonian can't be separated into parts that each involve the coordinates of a single electron, and the equation can't be solved exactly."
+  },
+  {
+    "id": "pc6-helium-solutions-exist",
+    "type": "multiple-choice",
+    "prompt": "What does it mean that the Schrödinger equation for helium \"cannot be solved exactly\"?",
+    "choices": [
+      {
+        "text": "Solutions exist but have no analytical form",
+        "correct": true
+      },
+      {
+        "text": "Helium has no stable states at all",
+        "why": "Helium has a ground state and excited states. The solutions exist; we just can't write them down in closed form."
+      },
+      {
+        "text": "Quantum mechanics does not apply to helium",
+        "why": "Approximation methods for helium agree with experiment, which shows that quantum mechanics is correct for atoms beyond hydrogen."
+      },
+      {
+        "text": "Its energies can't be found even approximately",
+        "why": "Approximation methods give accurate results for helium. Only an exact, analytical solution is out of reach."
+      }
+    ],
+    "explanation": "Exact solutions to multi-electron Schrödinger equations exist, but we don't have analytical forms for them. Approximation methods are used instead, and for helium they agree with experiment."
+  },
+  {
+    "id": "pc6-helium-vs-bohr",
+    "type": "multiple-choice",
+    "prompt": "What does the success of approximation methods for helium show, according to the section?",
+    "choices": [
+      {
+        "text": "Quantum mechanics works beyond hydrogen",
+        "correct": true
+      },
+      {
+        "text": "The Bohr theory works for helium as well",
+        "why": "The Bohr theory failed badly beyond hydrogen. It is quantum mechanics, with approximations, that agrees with experiment for helium."
+      },
+      {
+        "text": "Helium's equation can be solved exactly after all",
+        "why": "It can't be solved exactly. The approximate solutions are accurate enough to agree with experiment, which supports quantum mechanics."
+      },
+      {
+        "text": "Helium behaves exactly like a hydrogen atom",
+        "why": "Helium differs from hydrogen by its second electron and the repulsion that comes with it. The point is that approximate quantum mechanics still matches experiment."
+      }
+    ],
+    "explanation": "Although helium can't be solved exactly, approximation methods give accurate solutions in perfect agreement with experiment, so quantum mechanics is correct for atoms more complicated than hydrogen. The Bohr theory, by contrast, failed beyond hydrogen."
+  },
+  {
+    "id": "pc6-helium-r12",
+    "type": "multiple-choice",
+    "prompt": "In the helium Hamiltonian, what is r_12 = |r_1 − r_2|?",
+    "choices": [
+      {
+        "text": "The distance between the two electrons",
+        "correct": true
+      },
+      {
+        "text": "The distance of electron 1 from the nucleus",
+        "why": "That distance is r_1. r_12 is the separation of the two electrons, from electron 1 to electron 2."
+      },
+      {
+        "text": "The sum of the electrons' distances from the nucleus",
+        "why": "r_12 is the length of r_1 − r_2, the difference of the two position vectors: the distance from one electron to the other."
+      },
+      {
+        "text": "The radius of the helium nucleus",
+        "why": "The nucleus is treated as a point at the origin. r_12 is the distance between the two electrons."
+      }
+    ],
+    "explanation": "r_1 and r_2 are the position vectors of the two electrons, measured from the nucleus. r_12 = |r_1 − r_2| is the distance between the electrons, which appears in their repulsion energy e^2/(4πε_0 r_12)."
+  },
+  {
+    "id": "pc6-helium-r12-value",
+    "type": "numeric",
+    "prompt": "In a helium atom, electron 1 is 30 pm from the nucleus along the x axis, and electron 2 is 40 pm from the nucleus along the y axis, so the nucleus and the two electrons form a right-angled triangle. What is the distance r_12 between the two electrons, in pm?",
+    "answer": 50.0,
+    "unit": "pm",
+    "explanation": "The two distances from the nucleus are the short sides of a right-angled triangle, and r_12 is the long side: r_12 = √(30^2 + 40^2) pm = √(2500) pm = 50 pm."
+  },
+  {
+    "id": "pc6-helium-origin-nucleus",
+    "type": "multiple-choice",
+    "prompt": "Why is the origin of the coordinate system for helium placed at the nucleus?",
+    "choices": [
+      {
+        "text": "It is so heavy that it is almost the center of mass",
+        "correct": true
+      },
+      {
+        "text": "It is where the electrons are most likely to be found",
+        "why": "The choice is about mass, not electron density. The heavy nucleus sits almost at the center of mass, so it makes a natural origin."
+      },
+      {
+        "text": "It is the only charged particle in the atom",
+        "why": "The electrons are charged too. The nucleus is chosen because it is much heavier than an electron and so lies almost at the center of mass."
+      },
+      {
+        "text": "The electrons always stay the same distance from it",
+        "why": "The electrons move, and r_1 and r_2 change. The origin is at the nucleus because the nucleus is nearly at the center of mass."
+      }
+    ],
+    "explanation": "The nucleus is so much heavier than an electron that it is taken to be the center of mass. Fixing the origin there lets the translational motion of the center of mass be left out of the treatment."
+  },
+  {
+    "id": "pc6-helium-translational",
+    "type": "multiple-choice",
+    "prompt": "Fixing the origin of the coordinates at the helium nucleus lets which motion be left out of the quantum-mechanical treatment?",
+    "choices": [
+      {
+        "text": "The translational motion of the center of mass",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy of the two electrons",
+        "why": "The electrons' kinetic energy stays in the Hamiltonian, as the ∇_1^2 and ∇_2^2 terms. What is left out is the motion of the atom as a whole."
+      },
+      {
+        "text": "The repulsion between the two electrons",
+        "why": "V_12 stays in the Hamiltonian; it is why helium can't be solved exactly. Only the motion of the center of mass is removed."
+      },
+      {
+        "text": "The attraction of the electrons to the nucleus",
+        "why": "The attraction terms V_1 and V_2 stay in the Hamiltonian. Fixing the origin removes the translation of the whole atom."
+      }
+    ],
+    "explanation": "With the origin fixed at the nucleus, which is almost the center of mass, the translational motion of the atom as a whole drops out. Only the motion of the electrons relative to the nucleus is left to treat."
+  },
+  {
+    "id": "pc6-helium-reduced-mass",
+    "type": "numeric",
+    "prompt": "An electron's reduced mass with a nucleus of mass M is μ = (m_e M)/(m_e + M). A helium nucleus is about 7300 times heavier than an electron (M = 7300 m_e). μ is a number times m_e. What is the number? (Give it as a decimal.)",
+    "answer": 0.99986,
+    "explanation": "μ = (m_e × 7300 m_e)/(m_e + 7300 m_e) = (7300/7301) m_e = 0.99986 m_e. The reduced masses μ_1 and μ_2 are almost exactly m_e, because the nucleus is so heavy that it sits practically at the center of mass."
+  },
+  {
+    "id": "pc6-helium-three-kinds",
+    "type": "multiple-choice",
+    "prompt": "Which three kinds of terms make up the helium atom's Hamiltonian?",
+    "choices": [
+      {
+        "text": "Kinetic energies, nuclear attractions and electron–electron repulsion",
+        "correct": true
+      },
+      {
+        "text": "Kinetic energies, nuclear attractions and the nucleus's kinetic energy",
+        "why": "The nucleus is fixed at the origin, so it has no kinetic energy term. The third kind of term is the repulsion between the electrons."
+      },
+      {
+        "text": "Kinetic energies, electron–electron repulsion and spin energies",
+        "why": "The Hamiltonian in this section has no spin terms. The missing kind is each electron's attraction to the nucleus."
+      },
+      {
+        "text": "Only potential energies: attractions and repulsions",
+        "why": "Each electron also has a kinetic energy term, −(ħ^2/(2m_e))∇^2. The Hamiltonian is Ĥ = T̂ + V̂."
+      }
+    ],
+    "explanation": "The He Hamiltonian has a kinetic energy term for each electron, a potential energy term for each electron's attraction to the nucleus, and a potential energy term for the repulsion between the two electrons."
+  },
+  {
+    "id": "pc6-helium-two-laplacians",
+    "type": "multiple-choice",
+    "prompt": "Why does the helium Hamiltonian contain both ∇_1^2 and ∇_2^2?",
+    "choices": [
+      {
+        "text": "Each electron has its own kinetic energy term",
+        "correct": true
+      },
+      {
+        "text": "One is for the electrons, one for the nucleus",
+        "why": "The nucleus is fixed at the origin, so it has no kinetic energy term. ∇_1^2 and ∇_2^2 belong to electrons 1 and 2."
+      },
+      {
+        "text": "One gives kinetic energy, the other potential energy",
+        "why": "Both are kinetic energy terms, one for each electron. The potential energy is in V_1, V_2 and V_12."
+      },
+      {
+        "text": "They describe the electron–electron repulsion",
+        "why": "The repulsion is V_12(r_12). ∇_1^2 and ∇_2^2 are the kinetic energy operators of electrons 1 and 2."
+      }
+    ],
+    "explanation": "The kinetic energy part, −(ħ^2/(2m_e))(∇_1^2 + ∇_2^2), has one Laplacian for each electron: ∇_1^2 acts on electron 1's coordinates and ∇_2^2 on electron 2's."
+  },
+  {
+    "id": "pc6-helium-sign-repulsion",
+    "type": "multiple-choice",
+    "prompt": "In the helium Hamiltonian, V_1(r_1) = −(2e^2)/(4πε_0 r_1) but V_12(r_12) = e^2/(4πε_0 r_12). Why is V_12 positive?",
+    "choices": [
+      {
+        "text": "The two electrons have like charges and repel",
+        "correct": true
+      },
+      {
+        "text": "Electron 1 is farther from the nucleus than electron 2",
+        "why": "The sign doesn't depend on distances. V_12 is positive because two negative charges repel, which raises the energy."
+      },
+      {
+        "text": "It describes the electrons' attraction to each other",
+        "why": "Two negative charges repel; they don't attract. A repulsion raises the energy, so V_12 is positive."
+      },
+      {
+        "text": "The positive nucleus sits between the electrons",
+        "why": "V_12 depends only on the electrons' charges and their separation. It is positive because like charges repel."
+      }
+    ],
+    "explanation": "An attraction between opposite charges lowers the energy, so the electron–nucleus terms V_1 and V_2 are negative. The two electrons are both negative and repel each other, so V_12 = e^2/(4πε_0 r_12) is positive."
+  },
+  {
+    "id": "pc6-helium-factor-two",
+    "type": "multiple-choice",
+    "prompt": "Where does the 2 in the helium attraction term V_1(r_1) = −(2e^2)/(4πε_0 r_1) come from?",
+    "choices": [
+      {
+        "text": "The +2 charge of the helium nucleus",
+        "correct": true
+      },
+      {
+        "text": "The number of electrons in a helium atom",
+        "why": "Helium does have two electrons, but each attraction term is for one electron. The 2 is the nuclear charge, which becomes Z for other atoms."
+      },
+      {
+        "text": "Counting the attraction twice, once per electron",
+        "why": "Each electron has its own attraction term, V_1 and V_2, so nothing is counted twice. The 2 is the nuclear charge, +2."
+      },
+      {
+        "text": "Helium's second energy level, n = 2",
+        "why": "The potential energy doesn't depend on n. The 2 is the nuclear charge; for a general atom it is replaced by Z."
+      }
+    ],
+    "explanation": "The attraction term contains the nuclear charge. Helium's nucleus has a charge of +2, so V_1 = −(2e^2)/(4πε_0 r_1). For any other atom or ion, the 2 is replaced by Z."
+  },
+  {
+    "id": "pc6-helium-repulsion-energy",
+    "type": "numeric",
+    "prompt": "The repulsion between helium's two electrons is V_12 = e^2/(4πε_0 r_12). Use e^2/(4πε_0) = 1.44 eV·nm. What is V_12, in eV, when the electrons are r_12 = 0.10 nm apart?",
+    "answer": 14.4,
+    "unit": "eV",
+    "explanation": "V_12 = (1.44 eV·nm)/(0.10 nm) = 14.4 eV. It is positive because the two electrons repel each other, which raises the energy."
+  },
+  {
+    "id": "pc6-helium-attraction-energy",
+    "type": "numeric",
+    "prompt": "The attraction of electron 1 to the helium nucleus is V_1 = −(2e^2)/(4πε_0 r_1). Use e^2/(4πε_0) = 1.44 eV·nm. What is V_1, in eV, when electron 1 is r_1 = 0.072 nm from the nucleus?",
+    "answer": -40.0,
+    "unit": "eV",
+    "explanation": "V_1 = −(2 × 1.44 eV·nm)/(0.072 nm) = −40 eV. It is negative because the electron and the +2 nucleus attract, which lowers the energy."
+  },
+  {
+    "id": "pc6-helium-other-atoms",
+    "type": "multiple-choice",
+    "prompt": "How can the helium Hamiltonian be extended to any other atom or ion?",
+    "choices": [
+      {
+        "text": "Use Z for the charge and add terms for extra electrons",
+        "correct": true
+      },
+      {
+        "text": "Multiply the whole helium Hamiltonian by Z/2",
+        "why": "Only the attraction terms contain the nuclear charge, and each extra electron needs its own kinetic, attraction and repulsion terms."
+      },
+      {
+        "text": "Add a kinetic energy term for every extra proton and neutron",
+        "why": "Kinetic terms are for electrons; the nucleus is fixed and has none. Use Z for the charge and add terms for each extra electron."
+      },
+      {
+        "text": "Change the 2 to Z, keeping just two electrons",
+        "why": "Changing 2 to Z is right, but an atom with more electrons also needs kinetic, attraction and repulsion terms for its extra electrons."
+      }
+    ],
+    "explanation": "Replace helium's nuclear charge of +2 with a general charge Z, as in V_1(r_1) = −(Ze^2)/(4πε_0 r_1), and include kinetic, attraction and repulsion terms for the additional electrons."
+  },
+  {
+    "id": "pc6-helium-index-i",
+    "type": "multiple-choice",
+    "prompt": "In the multi-electron Hamiltonian, the sums run over an index i. What does i count?",
+    "choices": [
+      {
+        "text": "The electrons in the atom",
+        "correct": true
+      },
+      {
+        "text": "The protons in the nucleus",
+        "why": "The nucleus enters only through its charge Z. Each sum has one term per electron, or per pair of electrons for the repulsions."
+      },
+      {
+        "text": "The energy levels of the atom",
+        "why": "The index labels electrons, not energy levels: there is a kinetic term and an attraction term for each electron i."
+      },
+      {
+        "text": "The coordinates x, y and z",
+        "why": "Each electron's x, y and z are handled inside ∇_i^2 and r_i. The index i labels the electrons."
+      }
+    ],
+    "explanation": "The index i labels the electrons: there is a kinetic energy term and a nuclear attraction term for each electron i, and a repulsion term V_ij for each pair of electrons i and j."
+  },
+  {
+    "id": "pc6-helium-carbon-pairs",
+    "type": "numeric",
+    "prompt": "A multi-electron Hamiltonian has one repulsion term for each pair of electrons, and n electrons form n(n − 1)/2 pairs. How many electron–electron repulsion terms are in the Hamiltonian of a carbon atom, which has 6 electrons?",
+    "answer": 15,
+    "tolerance": 0,
+    "explanation": "6 × 5/2 = 15 pairs, so 15 repulsion terms. For comparison, boron's 5 electrons give 5 × 4/2 = 10, as in the section's expanded boron Hamiltonian, and helium's 2 electrons give just 1, V_12."
+  },
+  {
+    "id": "pc6-helium-isotope",
+    "type": "multiple-choice",
+    "prompt": "At the level of this section, how does the Hamiltonian of a ^10B atom compare with that of a ^11B atom?",
+    "choices": [
+      {
+        "text": "They are identical",
+        "correct": true
+      },
+      {
+        "text": "^11B has an extra kinetic energy term for its neutron",
+        "why": "The nucleus is fixed and has no kinetic energy term. A neutron has no charge, so it doesn't change the electrons' kinetic or potential energies."
+      },
+      {
+        "text": "^11B has a larger nuclear charge Z",
+        "why": "Both are boron, with Z = 5. The extra neutron adds mass, not charge."
+      },
+      {
+        "text": "^11B has one more electron to include",
+        "why": "Both are neutral boron atoms with 5 electrons. Only the number of neutrons differs."
+      }
+    ],
+    "explanation": "^10B and ^11B differ only in the number of neutrons. Neutrons don't affect the electrons' kinetic or potential energies, so the Hamiltonian is the same. (Hyperfine structure, met later, is an exception.)"
+  },
+  {
+    "id": "pc6-helium-boron-ion",
+    "type": "multiple-choice",
+    "prompt": "How does the Hamiltonian of a ^11B^+ ion differ from that of a neutral ^11B atom?",
+    "choices": [
+      {
+        "text": "It has terms for 4 electrons, not 5; Z is still 5",
+        "correct": true
+      },
+      {
+        "text": "It is the same, since the nucleus is unchanged",
+        "why": "The nucleus is the same, but B^+ has one fewer electron, so the terms for that electron drop out."
+      },
+      {
+        "text": "The nuclear charge becomes 4, but the terms stay the same",
+        "why": "Removing an electron doesn't change the nucleus, so Z stays 5. What goes are the terms for the missing electron."
+      },
+      {
+        "text": "Only the repulsion terms change; the rest stay",
+        "why": "Losing an electron also removes its kinetic energy term and its attraction to the nucleus, not just its repulsion terms."
+      }
+    ],
+    "explanation": "^11B^+ has 4 electrons instead of 5, so its Hamiltonian has 4 kinetic, 4 attraction and 6 repulsion terms, 14 in all instead of 20. The nuclear charge is still +5."
+  },
+  {
+    "id": "pc6-helium-exact-family",
+    "type": "multiple-choice",
+    "prompt": "If the multi-electron Schrödinger equation could be solved exactly, what would its solutions be expected to look like?",
+    "choices": [
+      {
+        "text": "Many wavefunctions, each with its own energy",
+        "correct": true
+      },
+      {
+        "text": "A single wavefunction with a single energy",
+        "why": "As for hydrogen, there would be a family of wavefunctions, describing the ground state and the excited states."
+      },
+      {
+        "text": "A separate wavefunction for each electron",
+        "why": "The exact wavefunction is one function of all the electrons' coordinates. Separate one-electron functions belong to the orbital approximation."
+      },
+      {
+        "text": "Wavefunctions that need no quantum numbers at all",
+        "why": "The section predicts that quantum numbers would be involved, as they are for hydrogen."
+      }
+    ],
+    "explanation": "By analogy with hydrogen, exact solutions would form a family of multi-electron wavefunctions, each with its own energy eigenvalue, describing the ground and excited states and labelled by quantum numbers."
+  },
+  {
+    "id": "pc6-helium-depends-all",
+    "type": "multiple-choice",
+    "prompt": "Why must an exact wavefunction for a multi-electron atom be a single function of all the electrons' coordinates at once?",
+    "choices": [
+      {
+        "text": "The electrons repel one another",
+        "correct": true
+      },
+      {
+        "text": "All the electrons occupy the same orbital",
+        "why": "That isn't the reason. Because the electrons repel each other, where one electron is depends on where the others are."
+      },
+      {
+        "text": "The nucleus moves along with the electrons",
+        "why": "The nucleus is fixed at the origin. The wavefunction ties the electrons together because they repel each other."
+      },
+      {
+        "text": "Each electron moves independently of the others",
+        "why": "That is the opposite: if the electrons were independent, a product of one-electron functions would be exact. Their repulsion couples them."
+      }
+    ],
+    "explanation": "Because the electrons interact through their Coulomb repulsion, an exact wavefunction is a single function ψ(r_1, r_2, …, r_n) that depends on all the electrons' coordinates simultaneously."
+  },
+  {
+    "id": "pc6-helium-coordinates",
+    "type": "numeric",
+    "prompt": "Each electron's position is a vector with three coordinates (x, y and z). An exact wavefunction for helium depends on the positions of both electrons at once. How many coordinates does it depend on?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Two electrons × 3 coordinates each = 6 coordinates: ψ(r_1, r_2) = ψ(x_1, y_1, z_1, x_2, y_2, z_2). A hydrogen wavefunction, with one electron, depends on only 3."
+  },
+  {
+    "id": "pc6-helium-psi-squared",
+    "type": "multiple-choice",
+    "prompt": "What does |ψ(r_1, r_2, …, r_n)|^2 describe for a multi-electron atom?",
+    "choices": [
+      {
+        "text": "Where the electrons are likely to be found",
+        "correct": true
+      },
+      {
+        "text": "The total energy of the electrons",
+        "why": "Energies are eigenvalues of Ĥ. The square of the modulus of ψ gives the probability of finding the electrons."
+      },
+      {
+        "text": "Where one particular electron, electron 1, is found",
+        "why": "|ψ|^2 describes the probability of finding the electrons, though not specific ones, in a given volume."
+      },
+      {
+        "text": "The repulsion energy between each pair of electrons",
+        "why": "Repulsion energies are the V_ij terms of Ĥ. |ψ|^2 gives the probability of finding the electrons in a region."
+      }
+    ],
+    "explanation": "The modulus squared of a multi-electron wavefunction describes the probability of finding the electrons (though not specific ones) in a designated volume of the atom."
+  },
+  {
+    "id": "pc6-helium-orbital-approx",
+    "type": "multiple-choice",
+    "prompt": "In the orbital approximation, how is a multi-electron wavefunction written?",
+    "choices": [
+      {
+        "text": "As a product of one-electron wavefunctions",
+        "correct": true
+      },
+      {
+        "text": "As a sum of one-electron wavefunctions",
+        "why": "The orbital approximation multiplies the one-electron functions: ψ ≈ φ_1(r_1)φ_2(r_2)…φ_n(r_n). It is the energies that are added."
+      },
+      {
+        "text": "As one hydrogen 1s orbital shared by all electrons",
+        "why": "Each electron gets its own one-electron function φ_i(r_i), and ψ is their product."
+      },
+      {
+        "text": "As an exact solution that includes all repulsions",
+        "why": "It is an approximation, not an exact solution. It writes ψ as a product of one-electron functions."
+      }
+    ],
+    "explanation": "The orbital approximation writes ψ(r_1, r_2, …, r_n) ≈ φ_1(r_1)φ_2(r_2)…φ_n(r_n), a product of single-electron wavefunctions. The energy is then approximately the sum of the one-electron energies, E ≈ Σε_i."
+  },
+  {
+    "id": "pc6-helium-orbital-energy",
+    "type": "numeric",
+    "prompt": "In the orbital approximation, the energy of an atom is the sum of its one-electron energies: E ≈ Σε_i. Suppose each of helium's two electrons is given the energy of a one-electron 1s orbital with Z = 2, ε = −54.4 eV. What is E, in eV?",
+    "answer": -108.8,
+    "unit": "eV",
+    "explanation": "E ≈ ε_1 + ε_2 = (−54.4 eV) + (−54.4 eV) = −108.8 eV. This is only an estimate: treating each electron separately is the orbital approximation, not an exact solution."
+  },
+  {
+    "id": "pc6-helium-orbital-names",
+    "type": "multiple-choice",
+    "prompt": "In the orbital approximation, what are the one-electron wavefunctions called for atoms and for molecules?",
+    "choices": [
+      {
+        "text": "Atomic orbitals for atoms, molecular orbitals for molecules",
+        "correct": true
+      },
+      {
+        "text": "Molecular orbitals for atoms, atomic orbitals for molecules",
+        "why": "It's the other way round: atoms have atomic orbitals, and molecules have molecular orbitals."
+      },
+      {
+        "text": "Multi-electron wavefunctions in both cases",
+        "why": "The multi-electron wavefunction is the product they approximate. Each single-electron factor is an orbital: atomic or molecular."
+      },
+      {
+        "text": "Spherical harmonics in both cases",
+        "why": "Spherical harmonics are only the angular part of hydrogen-like orbitals. The one-electron functions are atomic or molecular orbitals."
+      }
+    ],
+    "explanation": "For atoms, the single-electron functions are called atomic orbitals, and they resemble the hydrogen-like wavefunctions. For molecules they are called molecular orbitals."
+  },
+  {
+    "id": "pc6-helium-picture-approx",
+    "type": "multiple-choice",
+    "prompt": "How should the picture of each electron in its own orbital, with its own energy, be regarded?",
+    "choices": [
+      {
+        "text": "As a powerful approximation, not an exact picture",
+        "correct": true
+      },
+      {
+        "text": "As the exact solution of the Schrödinger equation",
+        "why": "The multi-electron Schrödinger equation has no exact analytical solution. The orbital picture comes from an approximation."
+      },
+      {
+        "text": "As a picture that works only for hydrogen",
+        "why": "Hydrogen has only one electron, so it needs no orbital approximation. The picture is used for multi-electron atoms and molecules."
+      },
+      {
+        "text": "As a picture with no real use in chemistry",
+        "why": "The orbital approximation is central to basic chemistry concepts. It is powerful, but still an approximation."
+      }
+    ],
+    "explanation": "Writing ψ as a product of one-electron functions turns an atom into a collection of electrons in individual orbitals whose shapes and energies can be identified separately. This compartmentalized picture is very useful, but it is an approximation."
+  }
+]

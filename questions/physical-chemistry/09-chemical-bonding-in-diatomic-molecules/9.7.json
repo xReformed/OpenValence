@@ -1,0 +1,601 @@
+[
+  {
+    "id": "pc9-mo-order-inner-shells",
+    "type": "multiple-choice",
+    "prompt": "When MOs are built for a diatomic molecule, why are the filled inner electron shells usually left out?",
+    "choices": [
+      {
+        "text": "They are largely unperturbed by bonding",
+        "correct": true
+      },
+      {
+        "text": "They hold no electrons, so they add nothing",
+        "why": "Inner shells are full, not empty. They are left out because the bonding barely changes them."
+      },
+      {
+        "text": "Their electrons are shared by both atoms equally",
+        "why": "Inner-shell electrons stay on their own atoms. They are largely unperturbed, which is why they can be left out."
+      },
+      {
+        "text": "They form the strongest bonds in the molecule",
+        "why": "The bonding comes from the overlapping valence orbitals; the filled inner shells are hardly affected."
+      }
+    ],
+    "explanation": "When two atoms are close enough for their valence orbitals to overlap significantly, the filled inner shells are largely unperturbed. So MO diagrams usually show only the MOs built from valence atomic orbitals."
+  },
+  {
+    "id": "pc9-mo-order-alkali-bond-order",
+    "type": "multiple-choice",
+    "prompt": "Why does MO theory predict a bond order of 1 for every alkali metal diatomic, from Li2 to Cs2?",
+    "choices": [
+      {
+        "text": "Each atom gives one ns electron, and both fill σ_ns",
+        "correct": true
+      },
+      {
+        "text": "Each atom gives two ns electrons, filling σ_ns and σ_ns^*",
+        "why": "That is the alkaline earth case (ns^2), which gives a bond order of 0. Alkali metals are ns^1."
+      },
+      {
+        "text": "Only one of the two atoms gives an electron to the bond",
+        "why": "Both atoms give their ns^1 electron, so σ_ns holds two electrons: (2 − 0)/2 = 1."
+      },
+      {
+        "text": "Both valence electrons go into σ_ns^*",
+        "why": "Electrons fill the lowest orbital first, so both go into the bonding σ_ns; σ_ns^* stays empty."
+      }
+    ],
+    "explanation": "Each alkali metal has an ns^1 valence configuration, so M2 has two valence electrons, which fill σ_ns. The bond order is (2 − 0)/2 = 1, and all these molecules are indeed found to be stable in the gas phase."
+  },
+  {
+    "id": "pc9-mo-order-mg2-bond-order",
+    "type": "numeric",
+    "prompt": "Mg has a 3s^2 valence configuration, so Mg2 has the valence MO configuration (σ_3s)^2(σ_3s^*)^2. Using bond order = (n_b − n_a)/2, where n_b and n_a are the numbers of bonding and antibonding electrons, what is the bond order of Mg2?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "Bond order = (2 − 2)/2 = 0: the two antibonding electrons cancel the two bonding ones. Like the other alkaline earth diatomics, Mg2 is expected to be unstable, in agreement with experiment."
+  },
+  {
+    "id": "pc9-mo-order-na2-anion-bond-order",
+    "type": "numeric",
+    "prompt": "In Example 9.7.1, Na_2^− has three valence electrons (one from each Na and one for the charge), giving (σ_3s)^2(σ_3s^*)^1. Using bond order = (n_b − n_a)/2, what is its bond order? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "Bond order = (2 − 1)/2 = 1/2 = 0.5. Since it is above zero, Na_2^− is predicted to exist, though as a highly reactive ion."
+  },
+  {
+    "id": "pc9-mo-order-ca2-cation-config",
+    "type": "multiple-choice",
+    "prompt": "In Exercise 9.7.1, each Ca atom has a 4s^2 valence configuration. Which valence MO configuration does Ca_2^+ have?",
+    "choices": [
+      {
+        "text": "(σ_4s)^2(σ_4s^*)^1",
+        "correct": true
+      },
+      {
+        "text": "(σ_4s)^2(σ_4s^*)^2",
+        "why": "That is neutral Ca2, with 4 valence electrons. The + charge removes one, leaving 3."
+      },
+      {
+        "text": "(σ_4s)^1(σ_4s^*)^2",
+        "why": "Electrons fill the lowest orbital first, so σ_4s takes 2 before σ_4s^* gets any."
+      },
+      {
+        "text": "(σ_4s)^3",
+        "why": "By the Pauli principle an orbital holds at most two electrons, so the third goes into σ_4s^*."
+      }
+    ],
+    "explanation": "Ca2 would have 2 + 2 = 4 valence electrons, so Ca_2^+ has 3. Two fill σ_4s and one goes into σ_4s^*. With more bonding than antibonding electrons, Ca_2^+ should exist."
+  },
+  {
+    "id": "pc9-mo-order-p-coordinate-system",
+    "type": "multiple-choice",
+    "prompt": "Why must a coordinate system be chosen before p orbitals on two atoms are combined into MOs, when none is needed for s orbitals?",
+    "choices": [
+      {
+        "text": "p orbitals aren't spherical, unlike s orbitals",
+        "correct": true
+      },
+      {
+        "text": "p orbitals are higher in energy than s orbitals",
+        "why": "Energy isn't the reason. p orbitals point in particular directions, so axes are needed to tell which lobes overlap."
+      },
+      {
+        "text": "An atom's three p orbitals have different energies",
+        "why": "np_x, np_y and np_z are degenerate. They differ only in orientation, which is why axes are needed."
+      },
+      {
+        "text": "s orbitals can't form molecular orbitals at all",
+        "why": "s orbitals do form MOs (σ_ns and σ_ns^*); being spherical, they need no axes."
+      }
+    ],
+    "explanation": "An s orbital looks the same in every direction, but p, d and f orbitals don't. A coordinate system tells us which lobes interact; by convention the z-axis is the internuclear axis."
+  },
+  {
+    "id": "pc9-mo-order-pz-sigma",
+    "type": "multiple-choice",
+    "prompt": "By convention the z-axis is the internuclear axis of a diatomic molecule. Which pair of p orbitals overlaps head-to-head to form σ MOs?",
+    "choices": [
+      {
+        "text": "The two np_z orbitals",
+        "correct": true
+      },
+      {
+        "text": "The two np_x orbitals",
+        "why": "np_x orbitals are perpendicular to the internuclear axis. They overlap side-to-side and form π orbitals."
+      },
+      {
+        "text": "The two np_y orbitals",
+        "why": "np_y orbitals are perpendicular to the internuclear axis, like np_x. They overlap side-to-side and form π orbitals."
+      },
+      {
+        "text": "All six np orbitals together",
+        "why": "Only the two np_z orbitals point at each other along z. The np_x and np_y pairs form π orbitals."
+      }
+    ],
+    "explanation": "The np_z orbitals point along the internuclear axis, so they overlap head-to-head and form σ_npz and σ_npz^*, both symmetric about the axis."
+  },
+  {
+    "id": "pc9-mo-order-sigma-difference",
+    "type": "multiple-choice",
+    "prompt": "With +z pointing to the right, the section writes the bonding orbital as σ_npz = npz(A) − npz(B), a difference rather than a sum. Why?",
+    "choices": [
+      {
+        "text": "Facing lobes have opposite signs; subtracting makes them match",
+        "correct": true
+      },
+      {
+        "text": "Subtracting removes electron density between the nuclei",
+        "why": "That would make an antibonding orbital. Here the difference adds density between the nuclei, because it brings like-signed lobes together."
+      },
+      {
+        "text": "The sum and the difference of two p orbitals have the same energy",
+        "why": "They don't: one is bonding (lower) and one antibonding (higher). Which is which depends on the signs of the facing lobes."
+      },
+      {
+        "text": "Two p orbitals can only ever be combined by subtraction",
+        "why": "The sum is formed too. For np_z it is the antibonding σ_npz^*, with a node between the nuclei."
+      }
+    ],
+    "explanation": "With +z to the right, each np_z orbital has its − lobe on the left and its + lobe on the right, so the lobes that face each other have opposite signs. The difference flips one set of signs, giving constructive interference and more density between the nuclei."
+  },
+  {
+    "id": "pc9-mo-order-pi-side-to-side",
+    "type": "multiple-choice",
+    "prompt": "How do the np_x orbitals on two atoms overlap to form a π bonding orbital?",
+    "choices": [
+      {
+        "text": "Side-to-side, adding density above and below the axis",
+        "correct": true
+      },
+      {
+        "text": "Head-to-head, pointing straight along the internuclear axis",
+        "why": "That is how the np_z orbitals form σ orbitals. np_x orbitals are perpendicular to the axis and overlap side-to-side."
+      },
+      {
+        "text": "Side-to-side, piling density right on the internuclear axis",
+        "why": "The π bonding orbital builds up density above and below the line joining the nuclei, not on it."
+      },
+      {
+        "text": "Side-to-side, leaving a node between the two nuclei",
+        "why": "That describes π^*, the difference. The sum, π, adds density above and below the line joining the nuclei."
+      }
+    ],
+    "explanation": "The np_x orbitals are parallel and overlap side-to-side. Their sum increases the electron probability above and below the line connecting the nuclei, giving a bonding π orbital."
+  },
+  {
+    "id": "pc9-mo-order-px-partner",
+    "type": "multiple-choice",
+    "prompt": "Which orbital on atom B can the np_x orbital on atom A combine with to form π orbitals?",
+    "choices": [
+      {
+        "text": "Only the np_x orbital",
+        "correct": true
+      },
+      {
+        "text": "Only the np_y orbital",
+        "why": "np_y on B is perpendicular to np_x on A, so they don't interact. np_x pairs only with np_x."
+      },
+      {
+        "text": "Either np_x or np_y, since they have the same energy",
+        "why": "Equal energy isn't enough; the orbitals must also be parallel. np_x on one atom interacts only with np_x on the other."
+      },
+      {
+        "text": "Any of the three np orbitals",
+        "why": "np_z forms σ orbitals along the axis, and np_y is perpendicular to np_x. Only np_x matches np_x."
+      }
+    ],
+    "explanation": "The two np_x orbitals are parallel and overlap side-to-side. So np_x on one atom interacts only with np_x on the other, and np_y only with np_y."
+  },
+  {
+    "id": "pc9-mo-order-pi-degenerate",
+    "type": "multiple-choice",
+    "prompt": "Why do the π_npx and π_npy molecular orbitals have the same energy?",
+    "choices": [
+      {
+        "text": "Their p orbitals match in energy and in overlap",
+        "correct": true
+      },
+      {
+        "text": "They are one orbital written in two different ways",
+        "why": "They are different orbitals, at right angles to each other. They have equal energy because np_x and np_y interact the same way."
+      },
+      {
+        "text": "Both of them lie along the internuclear axis",
+        "why": "Neither lies along the axis. Both come from side-to-side overlap of p orbitals perpendicular to it."
+      },
+      {
+        "text": "π orbitals have the same energy as the p orbitals",
+        "why": "π lies below the p orbitals and π^* above. π_npx and π_npy match each other because np_x and np_y match in energy and overlap."
+      }
+    ],
+    "explanation": "np_x and np_y have the same energy and both interact side-to-side, so π_npx and π_npy are a degenerate pair, as are π_npx^* and π_npy^*."
+  },
+  {
+    "id": "pc9-mo-order-bonding-from-2p",
+    "type": "multiple-choice",
+    "prompt": "Six 2p orbitals, three on each of two identical atoms, form three bonding MOs. Which are they?",
+    "choices": [
+      {
+        "text": "σ_2pz, π_2px and π_2py",
+        "correct": true
+      },
+      {
+        "text": "σ_2pz, σ_2pz^* and π_2px",
+        "why": "σ_2pz^* is antibonding. The bonding set is σ_2pz with the degenerate π_2px and π_2py."
+      },
+      {
+        "text": "π_2px, π_2py and π_2pz",
+        "why": "z is the internuclear axis, so the 2p_z orbitals overlap head-to-head and form σ_2pz, not a π orbital."
+      },
+      {
+        "text": "σ_2s, σ_2pz and π_2px",
+        "why": "σ_2s comes from the 2s orbitals. The three bonding MOs from 2p are σ_2pz, π_2px and π_2py."
+      }
+    ],
+    "explanation": "The six 2p orbitals form six MOs, three bonding (σ_2pz, π_2px, π_2py) and three antibonding (σ_2pz^*, π_2px^*, π_2py^*)."
+  },
+  {
+    "id": "pc9-mo-order-2p-levels",
+    "type": "numeric",
+    "prompt": "The six MOs formed from the 2p orbitals of two identical atoms include two degenerate pairs: π_2px with π_2py, and π_2px^* with π_2py^*. How many different energy levels do the six MOs occupy?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Each degenerate pair shares one level, so the six MOs sit on 6 − 2 = 4 levels: one each for σ_2pz and σ_2pz^*, one for the π_2p pair and one for the π_2p^* pair."
+  },
+  {
+    "id": "pc9-mo-order-overlap-splitting",
+    "type": "multiple-choice",
+    "prompt": "As the overlap between two atomic orbitals increases, what happens to the energy difference between the bonding and antibonding MOs they form?",
+    "choices": [
+      {
+        "text": "It increases",
+        "correct": true
+      },
+      {
+        "text": "It decreases",
+        "why": "It's the opposite: more overlap means a stronger interaction, which pushes the two MOs further apart."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The splitting depends on the overlap: the more the orbitals overlap, the larger the gap."
+      },
+      {
+        "text": "It drops to zero",
+        "why": "A zero gap would mean no interaction at all. Overlap is what splits the bonding and antibonding MOs apart."
+      }
+    ],
+    "explanation": "Key point 2: as the overlap between two atomic orbitals increases, the bonding MO drops further and the antibonding MO rises further, so the energy difference between them increases."
+  },
+  {
+    "id": "pc9-mo-order-sigma-pi-gap",
+    "type": "multiple-choice",
+    "prompt": "For MOs formed from np orbitals on identical atoms, why is the gap between σ and σ^* larger than the gap between π and π^*?",
+    "choices": [
+      {
+        "text": "Head-to-head np_z orbitals overlap more",
+        "correct": true
+      },
+      {
+        "text": "There are two π pairs but only one σ pair",
+        "why": "The number of pairs doesn't set the gap. The gap is larger for σ because head-to-head overlap is greater."
+      },
+      {
+        "text": "np_z lies higher in energy than np_x and np_y",
+        "why": "All three np orbitals are degenerate. What differs is how much they overlap."
+      },
+      {
+        "text": "Side-to-side overlap is greater than head-to-head",
+        "why": "It's the other way round: head-to-head (σ) overlap is greater, so the σ–σ^* splitting is larger."
+      }
+    ],
+    "explanation": "The np_z orbitals point directly at each other, so their overlap and interaction are greater than the side-to-side overlap of np_x or np_y. That pushes σ lower and σ^* higher than the π pair."
+  },
+  {
+    "id": "pc9-mo-order-same-energy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when is the interaction between two atomic orbitals greatest?",
+    "choices": [
+      {
+        "text": "When the two orbitals have the same energy",
+        "correct": true
+      },
+      {
+        "text": "When their energies are as far apart as possible",
+        "why": "It's the opposite: the interaction is greatest for equal energies and weakens as the energies move apart."
+      },
+      {
+        "text": "When one is an s orbital and the other is p",
+        "why": "The orbital types don't decide it; their energies do. An s and a p orbital interact strongly only when close in energy."
+      },
+      {
+        "text": "When both are filled inner-shell orbitals",
+        "why": "Inner shells are largely unperturbed by bonding. Valence orbitals of matching energy interact most."
+      }
+    ],
+    "explanation": "Key point 4: the interaction between atomic orbitals is greatest when they have the same energy, and it weakens as their energies move apart."
+  },
+  {
+    "id": "pc9-mo-order-rule3-gap",
+    "type": "numeric",
+    "prompt": "Key point 3 says the bonding MO is stabilized about as much as the antibonding MO is destabilized. If a bonding MO lies 2.0 eV below the atomic orbitals it came from, about how large is the energy gap between the bonding and antibonding MOs, in eV?",
+    "answer": 4.0,
+    "unit": "eV",
+    "explanation": "The antibonding MO lies about 2.0 eV above the atomic orbitals, so the gap is 2.0 + 2.0 = 4.0 eV."
+  },
+  {
+    "id": "pc9-mo-order-f2-2s-low",
+    "type": "multiple-choice",
+    "prompt": "In F2, why do σ_2s and σ_2s^* lie far below all the MOs formed from the 2p orbitals?",
+    "choices": [
+      {
+        "text": "Fluorine's 2s lies far below its 2p",
+        "correct": true
+      },
+      {
+        "text": "σ_2s and σ_2s^* are both bonding orbitals",
+        "why": "σ_2s^* is antibonding. Both lie low because they come from the low-energy 2s orbitals."
+      },
+      {
+        "text": "2s orbitals overlap more than 2p orbitals do",
+        "why": "Overlap sets the splitting within a pair, not where the pair sits. Both lie low because fluorine's 2s is far below its 2p."
+      },
+      {
+        "text": "They hold fewer electrons than the 2p MOs",
+        "why": "Electron count doesn't set orbital energies. The large 2s–2p gap in fluorine does."
+      }
+    ],
+    "explanation": "There is a large energy difference between fluorine's 2s and 2p atomic orbitals, so the MOs built from 2s lie well below those built from 2p."
+  },
+  {
+    "id": "pc9-mo-order-f2-order",
+    "type": "multiple-choice",
+    "prompt": "Which order, from lowest to highest energy, does the section give for the MOs that F2 forms from its 2p orbitals?",
+    "choices": [
+      {
+        "text": "σ_2pz, π_2p, π_2p^*, σ_2pz^*",
+        "correct": true
+      },
+      {
+        "text": "π_2p, σ_2pz, π_2p^*, σ_2pz^*",
+        "why": "That is the order for Li2 through N2, where σ_2pz is pushed above π_2p. In F2, σ_2pz is the lowest MO from 2p."
+      },
+      {
+        "text": "π_2p, π_2p^*, σ_2pz, σ_2pz^*",
+        "why": "Bonding MOs lie below the atomic orbitals and antibonding ones above, so σ_2pz can't lie above π_2p^*."
+      },
+      {
+        "text": "σ_2pz, π_2p^*, π_2p, σ_2pz^*",
+        "why": "π_2p^* is antibonding and lies above its bonding partner π_2p, not below it."
+      }
+    ],
+    "explanation": "In F2, σ_2pz is the lowest MO from 2p, then the degenerate π_2px and π_2py, then π_2px^* and π_2py^*, and σ_2pz^* is the highest."
+  },
+  {
+    "id": "pc9-mo-order-f2-sigma-star-top",
+    "type": "multiple-choice",
+    "prompt": "In F2, why is σ_2pz^* higher in energy than the π_2p^* orbitals?",
+    "choices": [
+      {
+        "text": "σ_2pz is lowered most, so σ_2pz^* is raised most",
+        "correct": true
+      },
+      {
+        "text": "σ_2pz^* holds more electrons than π_2p^*",
+        "why": "σ_2pz^* is empty in F2. Its high energy comes from the strong head-to-head interaction, not from electrons."
+      },
+      {
+        "text": "The π_2p^* orbitals are actually bonding orbitals",
+        "why": "The π_2p^* orbitals are antibonding. They lie below σ_2pz^* because the side-to-side interaction is weaker."
+      },
+      {
+        "text": "σ_2pz^* is formed from the 2s orbitals",
+        "why": "σ_2pz^* comes from the two 2p_z orbitals. It is highest because their head-to-head interaction is the strongest."
+      }
+    ],
+    "explanation": "Each antibonding MO is destabilized about as much as its bonding partner is stabilized. The head-to-head σ_2pz is stabilized the most, so σ_2pz^* is destabilized the most and lies above π_2p^*."
+  },
+  {
+    "id": "pc9-mo-order-f2-bond-order",
+    "type": "numeric",
+    "prompt": "F2 has 14 valence electrons. The antibonding σ_2s^* holds 2 of them and the antibonding π_2p^* pair holds 4; all the rest are in bonding MOs. Using bond order = (n_b − n_a)/2, what is the bond order of F2?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "n_a = 2 + 4 = 6 and n_b = 14 − 6 = 8, so the bond order is (8 − 6)/2 = 1, a single F–F bond."
+  },
+  {
+    "id": "pc9-mo-order-switch",
+    "type": "multiple-choice",
+    "prompt": "Across period 2, between which two neighboring diatomics does σ_2pz move from above the π_2p pair to below it?",
+    "choices": [
+      {
+        "text": "Between N2 and O2",
+        "correct": true
+      },
+      {
+        "text": "Between C2 and N2",
+        "why": "N2 still has σ_2pz above π_2p. The switch comes after N2, between N2 and O2."
+      },
+      {
+        "text": "Between O2 and F2",
+        "why": "O2 already has σ_2pz below π_2p, just like F2."
+      },
+      {
+        "text": "Between B2 and C2",
+        "why": "C2 still has σ_2pz above π_2p, as all of Li2 through N2 do."
+      }
+    ],
+    "explanation": "For Li2, Be2, B2, C2 and N2, σ_2pz is slightly higher in energy than π_2px and π_2py. For O2 and F2 it lies lower."
+  },
+  {
+    "id": "pc9-mo-order-sp-interaction",
+    "type": "multiple-choice",
+    "prompt": "In the lighter period 2 diatomics, the 2s orbital on one atom interacts with the 2p_z orbital on the other. What does this do to the σ_2s and σ_2pz MOs?",
+    "choices": [
+      {
+        "text": "Lowers σ_2s and raises σ_2pz",
+        "correct": true
+      },
+      {
+        "text": "Raises σ_2s and lowers σ_2pz",
+        "why": "It's the reverse: σ_2s is pushed down and σ_2pz up, which can put σ_2pz above π_2p."
+      },
+      {
+        "text": "Lowers both σ_2s and σ_2pz",
+        "why": "One is pushed down and the other up: σ_2s goes lower and σ_2pz higher."
+      },
+      {
+        "text": "Leaves σ_2s and σ_2pz unchanged",
+        "why": "The interaction does shift them, which is why σ_2pz ends up above π_2p for Li2 through N2."
+      }
+    ],
+    "explanation": "The 2s–2p_z interaction lowers σ_2s and raises σ_2pz. For Li2 through N2 it raises σ_2pz above the π_2px and π_2py pair."
+  },
+  {
+    "id": "pc9-mo-order-what-decides",
+    "type": "multiple-choice",
+    "prompt": "What decides whether σ_2pz lies above or below the π_2p pair in a period 2 diatomic?",
+    "choices": [
+      {
+        "text": "The size of the 2s–2p energy gap",
+        "correct": true
+      },
+      {
+        "text": "The number of valence electrons",
+        "why": "The order is set by the orbitals before any electrons go in. It depends on the 2s–2p gap, which controls the 2s–2p_z interaction."
+      },
+      {
+        "text": "Whether the molecule has unpaired electrons",
+        "why": "Unpaired electrons result from filling the orbitals; they don't set the order. The 2s–2p gap does."
+      },
+      {
+        "text": "Whether the 2p_z orbitals overlap at all",
+        "why": "The 2p_z orbitals always overlap head-on. What changes is how strongly 2s on one atom interacts with 2p_z on the other."
+      }
+    ],
+    "explanation": "A small 2s–2p gap lets the 2s on one atom interact strongly with the 2p_z on the other, pushing σ_2pz above π_2p (Li2 to N2). A large gap weakens this, so σ_2pz stays below π_2p (O2 and F2)."
+  },
+  {
+    "id": "pc9-mo-order-gap-grows",
+    "type": "multiple-choice",
+    "prompt": "Why does the energy gap between the 2s and 2p atomic orbitals grow from Li to F?",
+    "choices": [
+      {
+        "text": "Rising nuclear charge and poor screening of 2s",
+        "correct": true
+      },
+      {
+        "text": "Falling nuclear charge from Li to F",
+        "why": "The nuclear charge rises, from 3 for Li to 9 for F. That rise, with poor screening, widens the gap."
+      },
+      {
+        "text": "More and more inner-shell electrons from Li to F",
+        "why": "Li through F all have the same inner shell, 1s^2. What grows is the nuclear charge."
+      },
+      {
+        "text": "More and more 2s electrons from Li to F",
+        "why": "Li has one 2s electron and Be through F have two, so the 2s count barely changes. The nuclear charge rises steadily."
+      }
+    ],
+    "explanation": "From Li to F the nuclear charge increases, and the 2p electrons screen the 2s electrons poorly, so the 2s orbital drops further below 2p. The 2s–2p gap therefore grows across the period."
+  },
+  {
+    "id": "pc9-mo-order-c2-highest",
+    "type": "multiple-choice",
+    "prompt": "C2 has 8 valence electrons, and in C2 the σ_2pz orbital lies above the π_2p pair. Which orbitals hold its highest-energy electrons?",
+    "choices": [
+      {
+        "text": "The π_2p pair",
+        "correct": true
+      },
+      {
+        "text": "The σ_2pz orbital",
+        "why": "σ_2pz lies above π_2p in C2. After σ_2s (2), σ_2s^* (2) and π_2p (4), no electrons are left for it."
+      },
+      {
+        "text": "The π_2p^* pair",
+        "why": "The 8 electrons fill σ_2s, σ_2s^* and the π_2p pair exactly; none reach π_2p^*."
+      },
+      {
+        "text": "The σ_2s^* orbital",
+        "why": "σ_2s^* is filled, but the π_2p pair above it holds the last 4 electrons."
+      }
+    ],
+    "explanation": "Filling from the bottom: σ_2s (2), σ_2s^* (2), then the π_2px and π_2py pair (4) uses all 8. σ_2pz stays empty, giving 6 bonding and 2 antibonding electrons and a bond order of 2."
+  },
+  {
+    "id": "pc9-mo-order-b2-unpaired",
+    "type": "numeric",
+    "prompt": "B2 has 6 valence electrons. Its valence MOs, from lowest energy, are σ_2s, σ_2s^*, the degenerate pair π_2px and π_2py, then σ_2pz. Each MO holds 2 electrons, and by Hund's rule electrons enter degenerate orbitals singly, with parallel spins, before pairing. How many unpaired electrons does B2 have?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "σ_2s and σ_2s^* take 2 + 2 = 4 electrons. The last 2 go into π_2px and π_2py, one in each with parallel spins, so B2 has 2 unpaired electrons. If σ_2pz lay below π_2p, both would pair up in σ_2pz instead."
+  },
+  {
+    "id": "pc9-mo-order-s2-sigma-low",
+    "type": "multiple-choice",
+    "prompt": "In Example 9.7.2, sulfur's 3s–3p energy gap is large, as it is for O and F. Where does σ_3pz lie in S2?",
+    "choices": [
+      {
+        "text": "Below the π_3px and π_3py pair",
+        "correct": true
+      },
+      {
+        "text": "Above the π_3px and π_3py pair",
+        "why": "That happens when the s–p gap is small, as for Li2 to N2. A large gap keeps σ_3pz below the π pair."
+      },
+      {
+        "text": "Level with the π_3px and π_3py pair",
+        "why": "σ_3pz is not degenerate with the π pair; with a large 3s–3p gap it lies below them."
+      },
+      {
+        "text": "Above the π_3p^* pair",
+        "why": "σ_3pz is a bonding orbital, so it lies below the antibonding π_3p^* pair, and here below the bonding π pair too."
+      }
+    ],
+    "explanation": "The ns–np gap increases as the nuclear charge increases, so sulfur's s–p_z interaction is weak and σ_3pz lies below π_3px and π_3py, as in O2 and F2. Filling 12 valence electrons then leaves 2 unpaired electrons in π_3p^* and a bond order of 2."
+  },
+  {
+    "id": "pc9-mo-order-s-pz",
+    "type": "multiple-choice",
+    "prompt": "An ns orbital on one atom combines with the np_z orbital on the neighboring atom. What does their sum, ns + np_z, give?",
+    "choices": [
+      {
+        "text": "A σ bonding MO",
+        "correct": true
+      },
+      {
+        "text": "A π bonding MO",
+        "why": "ns and np_z overlap along the internuclear axis, so the result is a σ orbital, not a π orbital."
+      },
+      {
+        "text": "A σ^* antibonding MO",
+        "why": "The difference, ns − np_z, gives σ^*, with a nodal plane between the nuclei. The sum is bonding."
+      },
+      {
+        "text": "No MO, since s and p can't combine",
+        "why": "They can: the sum ns + np_z gives σ, and the difference ns − np_z gives σ^*."
+      }
+    ],
+    "explanation": "The sum ns + np_z increases the probability density between the nuclei and is a σ bonding MO. The difference ns − np_z is a σ^* antibonding MO, with a nodal plane perpendicular to the internuclear axis."
+  }
+]

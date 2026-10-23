@@ -1,0 +1,607 @@
+[
+  {
+    "id": "pc8-spin-microwave-surprise",
+    "type": "multiple-choice",
+    "prompt": "Hydrogen atoms in their 1s ground state absorbed microwaves in a magnetic field. Why was this surprising?",
+    "choices": [
+      {
+        "text": "The lowest predicted transition was in the vacuum UV",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen atoms were thought to absorb no light at all",
+        "why": "Hydrogen does absorb light, in the Lyman lines for example. The surprise was that the lowest predicted transition, 1s → 2p at 121 nm, lies far above microwave energies."
+      },
+      {
+        "text": "Microwaves were expected to ionize the atoms",
+        "why": "Microwave photons carry far too little energy to ionize hydrogen. The surprise was that existing theory predicted no transition at such a low energy."
+      },
+      {
+        "text": "The atoms were expected to emit, not absorb, microwaves",
+        "why": "Existing theory predicted no microwave transition of either kind: the lowest electronic transition, 1s → 2p, is in the vacuum ultraviolet."
+      }
+    ],
+    "explanation": "From the hydrogen-atom theory so far, the lowest-energy transition from the ground state is ψ_100 → ψ_(21m), the Lyman line at 121 nm in the vacuum ultraviolet. Absorption at microwave frequencies, far lower in energy, was unexpected."
+  },
+  {
+    "id": "pc8-spin-frequency-vs-field",
+    "type": "multiple-choice",
+    "prompt": "In the hypothetical microwave experiment, how does the absorption frequency change as the magnetic field is varied?",
+    "choices": [
+      {
+        "text": "It changes in proportion to the field",
+        "correct": true
+      },
+      {
+        "text": "It stays the same, whatever the field",
+        "why": "The frequency does change: it varies in proportion to the magnetic field, because the energy gap between the two states grows with the field."
+      },
+      {
+        "text": "It is inversely proportional to the field",
+        "why": "A stronger field gives a larger, not smaller, energy gap. The absorption frequency is proportional to the field."
+      },
+      {
+        "text": "It appears only at one particular field value",
+        "why": "Absorption occurs at any field strength; the frequency at which it occurs simply scales in proportion to the field."
+      }
+    ],
+    "explanation": "When the field is varied, the absorption frequency varies in proportion to it. This shows that the energy gap comes from a magnetic interaction, E = −μ⃗·B⃗, which grows with B."
+  },
+  {
+    "id": "pc8-spin-photon-energy",
+    "type": "numeric",
+    "prompt": "In the hypothetical experiment, hydrogen atoms absorb microwaves of frequency ν = 28.025 × 10^9 Hz. Using E = hν with h = 6.626 × 10^−34 J·s, what is the photon energy, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.857e-23,
+    "unit": "J",
+    "explanation": "E = hν = (6.626 × 10^−34 J·s)(28.025 × 10^9 s^−1) = 1.857 × 10^−23 J. This tiny energy is the gap between the two spin states in a field of 10^4 gauss."
+  },
+  {
+    "id": "pc8-spin-frequency-half-field",
+    "type": "numeric",
+    "prompt": "The absorption frequency in the hypothetical experiment is proportional to the magnetic field. It is 28.025 GHz at B = 10^4 gauss. At what frequency, in GHz, would the absorption occur at B = 5000 gauss?",
+    "answer": 14.0125,
+    "unit": "GHz",
+    "explanation": "ν is proportional to B, so halving B from 10^4 to 5000 gauss halves ν: 28.025 GHz × 0.5 = 14.01 GHz."
+  },
+  {
+    "id": "pc8-spin-degenerate",
+    "type": "multiple-choice",
+    "prompt": "With no magnetic field, how do the energies of the two spin states of a hydrogen 1s electron compare?",
+    "choices": [
+      {
+        "text": "They are equal; the states are degenerate",
+        "correct": true
+      },
+      {
+        "text": "α lies higher, by a fixed microwave energy",
+        "why": "Without a field there is no magnetic interaction to separate them. The gap appears only when a field is applied, and it grows with the field."
+      },
+      {
+        "text": "β is higher, since its spin points down",
+        "why": "The spin direction alone gives no energy difference without a field. The two states are degenerate until a field is applied."
+      },
+      {
+        "text": "They differ by the 1s → 2p energy",
+        "why": "That gap is in the vacuum ultraviolet and lies between orbitals, not spin states. The two spin states of a 1s electron have the same energy without a field."
+      }
+    ],
+    "explanation": "The experiment showed that an electron in the 1s orbital has two states with the same energy. A magnetic field removes this degeneracy, and microwaves can then cause transitions between the two states."
+  },
+  {
+    "id": "pc8-spin-esr",
+    "type": "multiple-choice",
+    "prompt": "With what kind of instrument available today could the section's hypothetical microwave experiment actually be done?",
+    "choices": [
+      {
+        "text": "An electron spin resonance spectrometer",
+        "correct": true
+      },
+      {
+        "text": "A vacuum ultraviolet absorption spectrometer",
+        "why": "Vacuum UV would probe the 1s → 2p transition. The spin transition is in the microwave region, measured with electron spin resonance (ESR) spectrometers."
+      },
+      {
+        "text": "An infrared vibrational spectrometer",
+        "why": "Infrared probes molecular vibrations. Microwave absorption by electron spins in a magnetic field is measured with an ESR spectrometer."
+      },
+      {
+        "text": "A mass spectrometer",
+        "why": "A mass spectrometer sorts ions by mass-to-charge ratio. Microwave absorption by electron spins in a field is electron spin resonance."
+      }
+    ],
+    "explanation": "The experiment, microwave absorption by electrons in a variable magnetic field, could be done with the electron spin resonance (ESR) spectrometers available today."
+  },
+  {
+    "id": "pc8-spin-magnetism-source",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what gives rise to magnetism?",
+    "choices": [
+      {
+        "text": "The circular motion of charged particles",
+        "correct": true
+      },
+      {
+        "text": "The mass of the atomic nucleus",
+        "why": "Mass alone produces no magnetic field. Magnetism results from the circular motion of charges, as in a coil of wire."
+      },
+      {
+        "text": "Static charges that stay at rest",
+        "why": "Charges at rest produce only an electric field. A magnetic dipole needs charge moving in a circle."
+      },
+      {
+        "text": "The gravitational pull between neighboring atoms",
+        "why": "Gravity plays no part. Magnetism comes from charges moving in circles, like the electrons in an electromagnet's coil or in atoms."
+      }
+    ],
+    "explanation": "Magnetism results from the circular motion of charged particles, as in an electromagnet made from a coil of wire and a battery. Electrons in atoms are moving charges with angular momentum, so they too produce a magnetic dipole."
+  },
+  {
+    "id": "pc8-spin-zeeman",
+    "type": "multiple-choice",
+    "prompt": "What is the Zeeman effect?",
+    "choices": [
+      {
+        "text": "The splitting of spectral lines in a magnetic field",
+        "correct": true
+      },
+      {
+        "text": "The splitting of spectral lines in an electric field",
+        "why": "The effect named for Zeeman needs a magnetic field, which interacts with the atom's magnetic dipole."
+      },
+      {
+        "text": "The deflection of a silver atom beam into two parts",
+        "why": "That is the Stern-Gerlach experiment. The Zeeman effect is the splitting of spectral lines in a magnetic field."
+      },
+      {
+        "text": "The emission of light by a heated solid object",
+        "why": "That is blackbody (thermal) radiation. The Zeeman effect is the splitting of spectral lines in a magnetic field."
+      }
+    ],
+    "explanation": "Pieter Zeeman was one of the first to observe spectral lines splitting in a magnetic field. The field interacts with the atom's magnetic dipole and removes the degeneracy of states with different m_l."
+  },
+  {
+    "id": "pc8-spin-bohr-magneton",
+    "type": "multiple-choice",
+    "prompt": "What is the Bohr magneton, μ_B = eħ/(2m_e)?",
+    "choices": [
+      {
+        "text": "A fundamental unit of magnetic moment",
+        "correct": true
+      },
+      {
+        "text": "The radius of the hydrogen ground state",
+        "why": "That is the Bohr radius, a length. The Bohr magneton is a magnetic moment, 9.2740 × 10^−24 J/T."
+      },
+      {
+        "text": "The energy of the hydrogen 1s state",
+        "why": "μ_B is a magnetic moment, in J/T, not an energy. Multiplied by a field strength, it gives an energy."
+      },
+      {
+        "text": "The strength of the field inside an atom",
+        "why": "μ_B is a magnetic moment, not a field. Multiplied by a field B, it gives the Zeeman energy."
+      }
+    ],
+    "explanation": "μ_B = eħ/(2m_e) = 9.2740 × 10^−24 J/T is taken to be the fundamental magnetic moment. Multiplying it by a field in tesla gives an energy in joules, as in the Zeeman energy μ_B B_z m_l."
+  },
+  {
+    "id": "pc8-spin-zeeman-shift",
+    "type": "numeric",
+    "prompt": "In a magnetic field B_z, a hydrogen state's energy shifts by μ_B B_z m_l, with μ_B = 9.274 × 10^−24 J/T. By how much is the energy of a 2p state with m_l = +1 raised in a field of 1.5 T, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.391e-23,
+    "unit": "J",
+    "explanation": "ΔE = μ_B B_z m_l = (9.274 × 10^−24 J/T)(1.5 T)(+1) = 1.391 × 10^−23 J. The m_l = −1 state is lowered by the same amount, and m_l = 0 does not move."
+  },
+  {
+    "id": "pc8-spin-ml-zero",
+    "type": "multiple-choice",
+    "prompt": "In a magnetic field along z, what happens to the energy of the hydrogen 2p state with m_l = 0?",
+    "choices": [
+      {
+        "text": "It is unchanged",
+        "correct": true
+      },
+      {
+        "text": "It is raised by μ_B B_z",
+        "why": "That is the shift for m_l = +1. With m_l = 0, the Zeeman energy μ_B B_z m_l is zero."
+      },
+      {
+        "text": "It is lowered by μ_B B_z",
+        "why": "That is the shift for m_l = −1. With m_l = 0, the Zeeman energy μ_B B_z m_l is zero."
+      },
+      {
+        "text": "It splits into two separate levels",
+        "why": "A single m_l state doesn't split. The m_l = 0 state has no magnetic moment along the field, so its energy stays the same."
+      }
+    ],
+    "explanation": "The Zeeman energy is μ_B B_z m_l. For m_l = 0, the angular momentum, and so the magnetic moment, along the field direction is zero, so the state does not interact with the field."
+  },
+  {
+    "id": "pc8-spin-ml-plus-one",
+    "type": "multiple-choice",
+    "prompt": "In a magnetic field, why is the energy of the hydrogen 2p state with m_l = +1 raised?",
+    "choices": [
+      {
+        "text": "Its magnetic moment points against the field",
+        "correct": true
+      },
+      {
+        "text": "Its magnetic moment points along the field",
+        "why": "Alignment with the field lowers the energy. For m_l = +1 the moment is opposite to L_z, against the field, which costs energy."
+      },
+      {
+        "text": "It has more kinetic energy than m_l = 0",
+        "why": "Without a field the three 2p states have the same energy. The shift comes from the magnetic moment's interaction with the field."
+      },
+      {
+        "text": "Its electron sits farther from the nucleus on average",
+        "why": "All three 2p states have the same radial distribution. The rise comes from the moment pointing against the field."
+      }
+    ],
+    "explanation": "For m_l = +1, L_z = +ħ, and because the electron is negatively charged, its magnetic moment points the opposite way, against the field. Like a small bar magnet held against a large one, this is the higher-energy arrangement."
+  },
+  {
+    "id": "pc8-spin-2p-1s-lines",
+    "type": "numeric",
+    "prompt": "In a magnetic field, the 2p states of hydrogen with different m_l (l = 1) get different energies, while the 1s state (m_l = 0 only) does not split. At how many different energies does the 2p → 1s emission then occur?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The 2p level splits into three, m_l = +1, 0 and −1, shifted by +μ_B B_z, 0 and −μ_B B_z, while 1s stays single. So the one 2p → 1s line seen with no field becomes three lines."
+  },
+  {
+    "id": "pc8-spin-stern-gerlach",
+    "type": "multiple-choice",
+    "prompt": "In the Stern-Gerlach experiment, what happened to a beam of silver atoms passing through an inhomogeneous magnetic field?",
+    "choices": [
+      {
+        "text": "It split into two separate beams",
+        "correct": true
+      },
+      {
+        "text": "It spread into a continuous smear",
+        "why": "A continuous range of orientations would give a smear, but the beam split into just two, one for each spin orientation."
+      },
+      {
+        "text": "It passed through without deflection",
+        "why": "The atoms were deflected up or down, depending on their spin, so the beam split into two."
+      },
+      {
+        "text": "It split into three beams, one per m_l",
+        "why": "Three beams would match l = 1, with m_l = −1, 0 and +1. The silver beam split into two, one for each spin state."
+      }
+    ],
+    "explanation": "The silver atoms were deflected up or down depending on their spin, so the beam split into two. Two beams means two possible spin orientations."
+  },
+  {
+    "id": "pc8-spin-silver",
+    "type": "multiple-choice",
+    "prompt": "A silver atom has 47 electrons. Why does it behave in the Stern-Gerlach experiment as if it had the spin of a single electron?",
+    "choices": [
+      {
+        "text": "46 electrons pair up, and their spins cancel",
+        "correct": true
+      },
+      {
+        "text": "Only one of its electrons has any spin",
+        "why": "Every electron has spin. 46 of them pair up with opposite spins and cancel, leaving one unpaired electron."
+      },
+      {
+        "text": "All 47 spins point the same way and add together",
+        "why": "Then the atom would have a very large spin. In fact 23 point one way and 24 the other, leaving one unpaired."
+      },
+      {
+        "text": "Its nucleus cancels all but one spin",
+        "why": "The cancellation is among the electrons themselves: opposite spins cancel in pairs, leaving one unpaired electron."
+      }
+    ],
+    "explanation": "Silver has 23 electrons of one spin and 24 of the other. Opposite spins cancel in pairs, so the one unpaired electron determines the atom's spin and its deflection."
+  },
+  {
+    "id": "pc8-spin-goudsmit",
+    "type": "multiple-choice",
+    "prompt": "Who proposed in 1925 that features of the hydrogen spectrum could be explained if the electron had spin?",
+    "choices": [
+      {
+        "text": "Goudsmit and Uhlenbeck",
+        "correct": true
+      },
+      {
+        "text": "Stern and Gerlach",
+        "why": "Stern and Gerlach did the silver-atom beam experiment. The spin proposal for hydrogen's spectrum came from Goudsmit and Uhlenbeck in 1925."
+      },
+      {
+        "text": "Hartree and Fock",
+        "why": "Hartree and Fock developed the self-consistent field method for many-electron atoms. Spin was proposed by Goudsmit and Uhlenbeck."
+      },
+      {
+        "text": "Niels Bohr and Ernest Rutherford",
+        "why": "Their work was on the structure of the atom and the Bohr model. Goudsmit and Uhlenbeck proposed electron spin in 1925."
+      }
+    ],
+    "explanation": "In 1925, Samuel Goudsmit and George Uhlenbeck proposed that the electron acts as if it has a spin, pointing up (+1/2) or down (−1/2), to explain unexamined features of the hydrogen spectrum."
+  },
+  {
+    "id": "pc8-spin-not-spinning",
+    "type": "multiple-choice",
+    "prompt": "Why is an electron not thought to be a tiny ball literally spinning on its axis?",
+    "choices": [
+      {
+        "text": "Its surface would outrun the speed of light",
+        "correct": true
+      },
+      {
+        "text": "An electron has no electric charge at all",
+        "why": "An electron is charged. The problem is that a spinning ball would need a surface moving faster than light to give the observed angular momentum."
+      },
+      {
+        "text": "Spin is not affected by any outside magnetic field",
+        "why": "Spin does interact with magnetic fields; that is how it was found. The problem is that a real spinning ball would need a surface faster than light."
+      },
+      {
+        "text": "Its spin angular momentum is zero",
+        "why": "The electron does have spin angular momentum; that is what the experiments detect. A spinning ball would need a surface faster than light to produce it."
+      }
+    ],
+    "explanation": "To give the observed angular momentum, an electron's hypothetical surface would have to move faster than the speed of light. So spin is an intrinsic angular momentum of the particle, not the rotation of a charged ball, though the name persists."
+  },
+  {
+    "id": "pc8-spin-operator-analogy",
+    "type": "multiple-choice",
+    "prompt": "Why can the spin operators Ŝ^2 and Ŝ_z be given the same eigenvalue rules as L̂^2 and L̂_z?",
+    "choices": [
+      {
+        "text": "Spin is also a form of angular momentum",
+        "correct": true
+      },
+      {
+        "text": "Spin is the electron orbiting faster",
+        "why": "Spin is not extra orbital motion. The rules carry over because angular momentum is angular momentum, whether orbital or spin."
+      },
+      {
+        "text": "The spin wavefunctions are spherical harmonics",
+        "why": "The functional form of the spin wavefunctions isn't known, and they are not spherical harmonics. The rules carry over because spin is angular momentum too."
+      },
+      {
+        "text": "Spin was derived from the hydrogen Hamiltonian",
+        "why": "The hydrogen Hamiltonian used so far has no spin in it. The spin rules are set up by analogy, since angular momentum is angular momentum."
+      }
+    ],
+    "explanation": "The spin operators are defined with the same properties as the orbital ones: angular momentum is angular momentum, orbital or spin. So Ŝ^2 has eigenvalues s(s + 1)ħ^2 and Ŝ_z has m_s ħ, just as L̂^2 and L̂_z have l(l + 1)ħ^2 and m_l ħ."
+  },
+  {
+    "id": "pc8-spin-why-half",
+    "type": "multiple-choice",
+    "prompt": "The hypothetical experiment shows one absorption line, so the 1s electron has two spin states, m_s = +s and −s, one integer step apart. What does this give for s?",
+    "choices": [
+      {
+        "text": "s = 1/2, since (+s) − (−s) = 1",
+        "correct": true
+      },
+      {
+        "text": "s = 1, since there are two states",
+        "why": "s = 1 would give three states, m_s = −1, 0 and +1. Two states one integer step apart need 2s = 1."
+      },
+      {
+        "text": "s = 2, the number of spin states",
+        "why": "The number of states is 2s + 1, not s. Two states one step apart give 2s = 1, so s = 1/2."
+      },
+      {
+        "text": "s = 0, since the states are degenerate",
+        "why": "s = 0 gives only one state, m_s = 0, with nothing to absorb between. Two states need 2s = 1."
+      }
+    ],
+    "explanation": "The two states have m_s = +s and −s, and they must differ by the smallest integer step: (+s) − (−s) = 2s = 1. So s = 1/2, and m_s is +1/2 or −1/2."
+  },
+  {
+    "id": "pc8-spin-ms-values",
+    "type": "multiple-choice",
+    "prompt": "What values can the electron spin quantum number m_s take?",
+    "choices": [
+      {
+        "text": "+1/2 and −1/2",
+        "correct": true
+      },
+      {
+        "text": "0 and 1",
+        "why": "m_s runs from −s to +s in integer steps, and s = 1/2 for an electron, giving +1/2 and −1/2."
+      },
+      {
+        "text": "−1, 0 and +1",
+        "why": "Those are the m_l values for l = 1. With s = 1/2, m_s can only be +1/2 or −1/2."
+      },
+      {
+        "text": "Any value from −1/2 to +1/2",
+        "why": "m_s is quantized; it takes only the two values +1/2 and −1/2, one integer step apart."
+      }
+    ],
+    "explanation": "With s = 1/2, m_s ranges from −s to +s in integer steps, so m_s = +1/2 (spin up) or −1/2 (spin down)."
+  },
+  {
+    "id": "pc8-spin-alpha-label",
+    "type": "multiple-choice",
+    "prompt": "Which spin state is labeled α?",
+    "choices": [
+      {
+        "text": "The state with m_s = +1/2",
+        "correct": true
+      },
+      {
+        "text": "The state with m_s = −1/2",
+        "why": "That one is β. α is the state with a positive projection, m_s = +1/2."
+      },
+      {
+        "text": "The state with m_s = 0",
+        "why": "An electron has no m_s = 0 state; m_s is +1/2 or −1/2. α is the +1/2 state."
+      },
+      {
+        "text": "Any state with paired spins",
+        "why": "α and β label the two spin states of a single electron. α has m_s = +1/2."
+      }
+    ],
+    "explanation": "The state with a positive projection of spin on the z-axis, m_s = +1/2, is called α; the m_s = −1/2 state is called β. The labels are arbitrary."
+  },
+  {
+    "id": "pc8-spin-sz-beta",
+    "type": "numeric",
+    "prompt": "The z-component of spin angular momentum is S_z = m_s ħ. For an electron in spin state β, S_z is a number times ħ. What is the number? (Give it as a decimal.)",
+    "answer": -0.5,
+    "explanation": "β has m_s = −1/2, so S_z = (−1/2)ħ = −0.5ħ. For α it is +0.5ħ."
+  },
+  {
+    "id": "pc8-spin-s-magnitude",
+    "type": "numeric",
+    "prompt": "Every electron has spin quantum number s = 1/2, and its spin angular momentum has magnitude |S| = ħ√(s(s + 1)). |S| is a number times ħ. What is the number? (Give it as a decimal.)",
+    "answer": 0.866,
+    "explanation": "For an electron s = 1/2, so s(s + 1) = (1/2)(3/2) = 3/4 and |S| = ħ√(3/4) = 0.866ħ. This is larger than the largest z-component, ħ/2."
+  },
+  {
+    "id": "pc8-spin-orthonormal",
+    "type": "multiple-choice",
+    "prompt": "The spin functions α and β are taken to be normalized and orthogonal. What are ⟨α|α⟩ and ⟨α|β⟩?",
+    "choices": [
+      {
+        "text": "⟨α|α⟩ = 1 and ⟨α|β⟩ = 0",
+        "correct": true
+      },
+      {
+        "text": "⟨α|α⟩ = 0 and ⟨α|β⟩ = 1",
+        "why": "That swaps the two. Normalized means ⟨α|α⟩ = 1; orthogonal means ⟨α|β⟩ = 0."
+      },
+      {
+        "text": "⟨α|α⟩ = 1 and ⟨α|β⟩ = 1",
+        "why": "⟨α|α⟩ = 1 is right, but orthogonal functions have ⟨α|β⟩ = 0."
+      },
+      {
+        "text": "⟨α|α⟩ = 1/2 and ⟨α|β⟩ = −1/2",
+        "why": "Those look like m_s values, not integrals. Normalization gives ⟨α|α⟩ = 1 and orthogonality gives ⟨α|β⟩ = 0."
+      }
+    ],
+    "explanation": "Even though their functional forms are unknown, the spin wavefunctions are taken to be normalized, ⟨α|α⟩ = ⟨β|β⟩ = 1, and orthogonal, ⟨α|β⟩ = ⟨β|α⟩ = 0, with the integral taken over the spin variable."
+  },
+  {
+    "id": "pc8-spin-higher-state",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which spin state of the electron has the higher energy in a magnetic field?",
+    "choices": [
+      {
+        "text": "α, whose magnetic moment is against the field",
+        "correct": true
+      },
+      {
+        "text": "β, whose magnetic moment is against the field",
+        "why": "For β, S_z = −ħ/2, and its moment points along the field, the lower-energy arrangement. The section concludes that α is higher."
+      },
+      {
+        "text": "Neither; spin states stay degenerate in a field",
+        "why": "The field removes the degeneracy; that is what lets microwaves cause transitions. α lies higher."
+      },
+      {
+        "text": "Both rise by the same amount in the field",
+        "why": "If both rose equally there would be no gap and no absorption. α is raised relative to β."
+      }
+    ],
+    "explanation": "For α, S_z = +ħ/2. Because the electron is negatively charged, its magnetic moment then points against the field, the higher-energy arrangement. The microwave photon drives the transition from β up to α."
+  },
+  {
+    "id": "pc8-spin-e1s-cancels",
+    "type": "multiple-choice",
+    "prompt": "In the experiment, hν = E_(α) − E_(β), and both E_(α) and E_(β) contain the 1s orbital energy E_1s. Why does the absorption frequency not depend on E_1s?",
+    "choices": [
+      {
+        "text": "E_1s is the same in both states and cancels",
+        "correct": true
+      },
+      {
+        "text": "E_1s is zero for a hydrogen atom",
+        "why": "E_1s is not zero; it is −13.6 eV. It drops out because both spin states have the same orbital energy."
+      },
+      {
+        "text": "E_1s is too small to matter here",
+        "why": "E_1s (−13.6 eV) is far larger than the spin energies. It drops out because it appears in both E_(α) and E_(β)."
+      },
+      {
+        "text": "The magnetic field removes E_1s from both states",
+        "why": "The field doesn't remove the orbital energy; it adds a small magnetic term. E_1s is common to both states and cancels in the difference."
+      }
+    ],
+    "explanation": "E_(α) = E_1s − μ_(s, α)·B and E_(β) = E_1s − μ_(s, β)·B. Subtracting, E_1s cancels, leaving hν = (μ_(s, β) − μ_(s, α))·B: the photon energy depends only on the spin magnetic moments and the field."
+  },
+  {
+    "id": "pc8-spin-g-factor",
+    "type": "numeric",
+    "prompt": "In the hypothetical experiment, hν/B = 18.5696 × 10^−21 erg/gauss. The Bohr magneton is μ_B = 9.2740 × 10^−21 erg/gauss. The g-factor is their ratio, g = (hν/B)/μ_B. What is g?",
+    "answer": 2.0023,
+    "explanation": "g = (18.5696 × 10^−21)/(9.2740 × 10^−21) = 2.0023. The spin transition shows about twice the magnetic moment per unit angular momentum that orbital motion would give."
+  },
+  {
+    "id": "pc8-spin-g-meaning",
+    "type": "multiple-choice",
+    "prompt": "The spin gyromagnetic ratio is γ_s = 2.0023γ_e, where γ_e is the ratio for orbital motion. What does the g-factor of 2.0023 tell us?",
+    "choices": [
+      {
+        "text": "Spin's moment per unit angular momentum is about double",
+        "correct": true
+      },
+      {
+        "text": "Spin's moment per unit angular momentum is only about half",
+        "why": "It's the other way round: γ_s is about twice γ_e, so spin gives about twice the moment per unit angular momentum."
+      },
+      {
+        "text": "Spin's moment per unit angular momentum is the same",
+        "why": "Then g would be 1. With g ≈ 2, spin produces about twice the magnetic moment per unit angular momentum."
+      },
+      {
+        "text": "The electron's spin quantum number s is 2.0023",
+        "why": "s is 1/2. g is a ratio of gyromagnetic ratios, not a spin quantum number."
+      }
+    ],
+    "explanation": "A gyromagnetic ratio is a magnetic moment divided by an angular momentum. γ_s = 2.0023γ_e means spin produces about twice the magnetic moment that orbital motion would for the same angular momentum; the g-factor measures this deviation."
+  },
+  {
+    "id": "pc8-spin-g-varies",
+    "type": "multiple-choice",
+    "prompt": "Does every electron have g = 2.0023?",
+    "choices": [
+      {
+        "text": "No; coupling to orbital motion can change it",
+        "correct": true
+      },
+      {
+        "text": "Yes; it is a universal constant for all electrons",
+        "why": "2.0023 applies to a free electron. When spin couples with orbital motion, g can take other values."
+      },
+      {
+        "text": "No; it is exactly 2 for every bound electron",
+        "why": "There is no rule that bound electrons have g = 2 exactly. Coupling of spin and orbital motion can give various values."
+      },
+      {
+        "text": "Yes, but only in fields above 10^4 gauss",
+        "why": "g doesn't depend on the field strength. It is 2.0023 for a free electron and can differ when spin and orbital motion couple."
+      }
+    ],
+    "explanation": "The value 2.0023 applies to a freely spinning electron. When an electron's spin and orbital motion are coupled, other values of g can result."
+  },
+  {
+    "id": "pc8-spin-dirac",
+    "type": "multiple-choice",
+    "prompt": "From which theory do electron spin and the value g = 2 follow logically?",
+    "choices": [
+      {
+        "text": "Dirac's relativistic quantum theory",
+        "correct": true
+      },
+      {
+        "text": "The Bohr model of the hydrogen atom",
+        "why": "The Bohr model has no spin. Spin and g = 2 follow from Dirac's relativistic quantum theory."
+      },
+      {
+        "text": "Schrödinger's nonrelativistic hydrogen atom",
+        "why": "That theory gives n, l and m_l but no spin, which is why spin had to be added as a postulate here. Spin comes out of Dirac's relativistic theory."
+      },
+      {
+        "text": "Classical theory of a spinning charged ball",
+        "why": "A spinning ball would need a surface moving faster than light. Spin and g = 2 follow from Dirac's relativistic quantum theory."
+      }
+    ],
+    "explanation": "Electron spin and g = 2 come out naturally from Dirac's relativistic quantum theory. This section instead introduces spin as a postulate to explain experiments; the extra 0.0023 in g comes from quantum electrodynamics."
+  }
+]
