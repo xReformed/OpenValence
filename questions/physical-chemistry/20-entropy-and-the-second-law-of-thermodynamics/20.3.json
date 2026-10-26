@@ -1,0 +1,168 @@
+[
+  {
+    "id": "pc20-entropy-state-cycle-integral",
+    "type": "multiple-choice",
+    "prompt": "A gas is taken around a closed path that returns it to its initial state. Which of these always integrates to zero around such a path?",
+    "choices": [
+      {
+        "text": "dS",
+        "correct": true
+      },
+      {
+        "text": "δq_rev",
+        "why": "Heat is a path function, so the reversible heat around a cycle need not be zero. dS, like dU and dH, always gives zero."
+      },
+      {
+        "text": "δw_rev",
+        "why": "Work is a path function; net work can be done around a cycle, as in an engine. Only state functions such as S integrate to zero."
+      },
+      {
+        "text": "P dV",
+        "why": "Around a cycle, P dV adds up to the area enclosed on a P–V diagram, which isn't zero. Only a state-function differential like dS integrates to zero."
+      }
+    ],
+    "explanation": "Because S is a state function, ∮dS = 0 around any closed path, just as ∮dU = 0 and ∮dH = 0. Heat and work are path functions, so their cycle integrals need not vanish."
+  },
+  {
+    "id": "pc20-entropy-state-same-endpoints",
+    "type": "multiple-choice",
+    "prompt": "The section compares path A (an isotherm) with path B + C (an adiabat, then an isochore). What do the two paths have in common that makes this a test of whether S is a state function?",
+    "choices": [
+      {
+        "text": "They start and end at the same states",
+        "correct": true
+      },
+      {
+        "text": "They take in the same amount of heat",
+        "why": "The heats differ: path A takes in q_(rev, A), while path B + C takes in only q_(rev, C). What they share is the same start and end states."
+      },
+      {
+        "text": "They do the same amount of work",
+        "why": "The work differs between the paths, as does the heat. They share only the same start and end states."
+      },
+      {
+        "text": "They keep the same temperature all the way",
+        "why": "Only the isotherm A keeps T constant; along B the gas cools to T_2. What they share is the same start and end states."
+      }
+    ],
+    "explanation": "A state function changes by the same amount along any path between the same two states. Since A and B + C join the same states, comparing ΔS along both tests whether S is a state function."
+  },
+  {
+    "id": "pc20-entropy-state-heat-path",
+    "type": "multiple-choice",
+    "prompt": "Path A and path B + C start and end at the same states, yet the reversible heats taken in along them differ. What does this show?",
+    "choices": [
+      {
+        "text": "Heat is a path function",
+        "correct": true
+      },
+      {
+        "text": "Heat is a state function",
+        "why": "A state function would change by the same amount along both paths. Different heats for the same end states mean heat is a path function."
+      },
+      {
+        "text": "One of the paths must be irreversible",
+        "why": "All three steps, A, B and C, are reversible. The heat still differs between the paths, because heat depends on the path."
+      },
+      {
+        "text": "Energy is not conserved on one path",
+        "why": "Energy is conserved on both, and ΔU is the same. The heats differ because heat depends on the path, with the work making up the difference."
+      }
+    ],
+    "explanation": "Along A the gas takes in q_(rev, A) = nRT ln(V_2/V_1), while along B + C it takes in only q_(rev, C) = C_V ΔT, since q_(rev, B) = 0. The same end states with different heats show that heat is a path function."
+  },
+  {
+    "id": "pc20-entropy-state-isochore-heat-value",
+    "type": "numeric",
+    "prompt": "Along the isochore C, the gas cooled by the adiabat B is warmed back up, and q_(rev, C) = C_V ΔT. A gas with heat capacity C_V = 12.5 J/K is warmed at constant volume from T_2 = 240 K back to T_1 = 300 K. What is q_(rev, C), in J?",
+    "answer": 750,
+    "unit": "J",
+    "explanation": "q_(rev, C) = 12.5 J/K × (300 K − 240 K) = 12.5 × 60 = 750 J. It is positive because heat flows in to bring the gas back to T_1; along the adiabat B no heat flows at all."
+  },
+  {
+    "id": "pc20-entropy-state-isotherm-ds",
+    "type": "multiple-choice",
+    "prompt": "Along the isotherm A, q_(rev, A) = nRT ln(V_2/V_1). What is the entropy change ΔS_A along this path?",
+    "choices": [
+      {
+        "text": "nR ln(V_2/V_1)",
+        "correct": true
+      },
+      {
+        "text": "nRT ln(V_2/V_1)",
+        "why": "That is the heat q_(rev, A) itself. Since T is constant along the isotherm, dividing by T gives ΔS_A = nR ln(V_2/V_1)."
+      },
+      {
+        "text": "nR ln(V_1/V_2)",
+        "why": "The ratio is upside down, which would make ΔS_A negative for an expansion. Heat flows in, so ΔS_A = nR ln(V_2/V_1) > 0."
+      },
+      {
+        "text": "Zero, since T doesn't change",
+        "why": "Constant T keeps U of an ideal gas unchanged, but heat still flows in. Dividing that heat by T gives ΔS_A = nR ln(V_2/V_1)."
+      }
+    ],
+    "explanation": "T is constant along an isotherm, so ΔS_A is just q_(rev, A) divided by T: ΔS_A = nR ln(V_2/V_1). The section finds the same value along path B + C."
+  },
+  {
+    "id": "pc20-entropy-state-bc-from-a",
+    "type": "numeric",
+    "prompt": "Along the isotherm A at 400 K, a gas takes in q_(rev, A) = 1500 J, so ΔS_A = q_(rev, A)/T. Path B + C joins the same two states but takes in a different amount of heat. What is ΔS_(B+C), in J/K? (Give it as a decimal.)",
+    "answer": 3.75,
+    "explanation": "ΔS_A = 1500 J ÷ 400 K = 3.75 J/K. Because S is a state function, path B + C between the same two states gives the same ΔS_(B+C) = 3.75 J/K, even though its heat is different."
+  },
+  {
+    "id": "pc20-entropy-state-bc-source",
+    "type": "multiple-choice",
+    "prompt": "No heat flows along the adiabat B. Where, then, does the entropy change ΔS_(B+C) along path B + C come from?",
+    "choices": [
+      {
+        "text": "From the heat taken in along the isochore C",
+        "correct": true
+      },
+      {
+        "text": "From the work done by the gas along the adiabat B",
+        "why": "Entropy changes come from reversible heat, dS = (δq_rev)/T, not from work. Along B, δq_rev = 0, so all of ΔS_(B+C) comes from C."
+      },
+      {
+        "text": "Nowhere, since ΔS_(B+C) is zero",
+        "why": "ΔS_(B+C) isn't zero; it equals nR ln(V_2/V_1), the same as along A. It comes from the heat taken in along C."
+      },
+      {
+        "text": "From the fall in temperature along B",
+        "why": "Along a reversible adiabat no heat flows, so dS = 0 there despite the cooling. All of ΔS_(B+C) comes from the heat along C."
+      }
+    ],
+    "explanation": "With q_(rev, B) = 0, the adiabat adds no entropy, and ΔS_(B+C) is the integral of (C_V/T) dT along C, from T_2 back up to T_1. This works out to nR ln(V_2/V_1)."
+  },
+  {
+    "id": "pc20-entropy-state-conclusion",
+    "type": "multiple-choice",
+    "prompt": "Path A and path B + C take in different amounts of heat, yet both give the same entropy change, nR ln(V_2/V_1). What does this show about S?",
+    "choices": [
+      {
+        "text": "S is a state function",
+        "correct": true
+      },
+      {
+        "text": "S is a path function",
+        "why": "A path function generally changes by different amounts along different paths. S changes by the same amount along both, so it is a state function."
+      },
+      {
+        "text": "S equals the heat taken in along each path",
+        "why": "The heats differ while ΔS doesn't, so S can't simply equal the heat. Dividing reversible heat by T, dS = (δq_rev)/T, gives the state function S."
+      },
+      {
+        "text": "S changes only along isothermal paths",
+        "why": "S also changes along path B + C, through the heat taken in along the isochore C. Both paths give the same ΔS, so S is a state function."
+      }
+    ],
+    "explanation": "Two different reversible paths between the same states give the same ΔS, while their heats differ. So S is a state function and q_rev is not."
+  },
+  {
+    "id": "pc20-entropy-state-return-trip",
+    "type": "numeric",
+    "prompt": "A gas goes from state 1 to state 2 along the isotherm A, and its entropy rises by ΔS_A = 11.5 J/K. It then returns from state 2 to state 1 along the reverse of path B + C. Since ∮dS = 0, what is ΔS for the return trip, in J/K? (Give it as a decimal.)",
+    "answer": -11.5,
+    "explanation": "Around the full cycle, ΔS_A + ΔS_return = 0, so the return trip has ΔS = −11.5 J/K. The entropy falls by exactly as much as it rose, because S comes back to its starting value."
+  }
+]

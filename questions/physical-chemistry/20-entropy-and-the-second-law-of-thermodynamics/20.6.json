@@ -1,0 +1,422 @@
+[
+  {
+    "id": "pc20-reversible-path-universe",
+    "type": "multiple-choice",
+    "prompt": "Why have people long concluded that the entropy of the universe must be steadily increasing?",
+    "choices": [
+      {
+        "text": "They treat the universe as an isolated system",
+        "correct": true
+      },
+      {
+        "text": "The universe is steadily losing energy",
+        "why": "The argument does not rest on any loss of energy. It treats the whole universe as an isolated system, whose entropy tends to increase."
+      },
+      {
+        "text": "The universe is cooling toward absolute zero",
+        "why": "The argument is not about temperature. It applies the second law, which says the entropy of an isolated system tends to increase, to the universe as a whole."
+      },
+      {
+        "text": "Every process in the universe is reversible",
+        "why": "A reversible process produces no entropy, so it would not make the entropy rise. The argument is that the universe is an isolated system."
+      }
+    ],
+    "explanation": "The second law says the entropy of an isolated system tends to increase over time. Taking the whole universe as an isolated system leads to the conclusion that its entropy keeps rising until δS_universe becomes zero."
+  },
+  {
+    "id": "pc20-reversible-path-hawking",
+    "type": "multiple-choice",
+    "prompt": "Cosmologists such as Stephen Hawking have questioned whether the entropy of the universe is steadily increasing. What does the section name as the key problem?",
+    "choices": [
+      {
+        "text": "The role of gravity and relativity in forming black holes",
+        "correct": true
+      },
+      {
+        "text": "Heat leaks out of the universe, so it is not isolated",
+        "why": "There is nothing outside the universe for heat to leak into. The section points to gravity and relativity, which create black holes."
+      },
+      {
+        "text": "The first law of thermodynamics fails for the whole universe",
+        "why": "The section does not question energy conservation. The open problem is the role gravity and relativity play in creating black holes."
+      },
+      {
+        "text": "Entropy is not a state function for very large systems",
+        "why": "Entropy is a state function at any scale. The difficulty the section names is the role of gravity and relativity in creating black holes."
+      }
+    ],
+    "explanation": "The section names the role that gravity and relativity play in creating black holes as the key problem. It is the reason the steady rise of the universe's entropy has been called into question."
+  },
+  {
+    "id": "pc20-reversible-path-vacuum-work",
+    "type": "multiple-choice",
+    "prompt": "An ideal gas expands from V_1 to V_2 by pushing a piston into a vacuum. Why does it do no work?",
+    "choices": [
+      {
+        "text": "The external pressure is zero",
+        "correct": true
+      },
+      {
+        "text": "The temperature stays the same",
+        "why": "Constant temperature makes ΔU = 0, but it doesn't make the work zero; a reversible isothermal expansion does work. Here the work is zero because P_ext = 0."
+      },
+      {
+        "text": "The volume does not change",
+        "why": "The volume grows from V_1 to V_2. The work is zero because the piston has nothing to push against, so −P_ext dV = 0."
+      },
+      {
+        "text": "The gas takes in heat as it expands",
+        "why": "No heat enters during the expansion into vacuum. The work is zero because the external pressure is zero."
+      }
+    ],
+    "explanation": "The work is −∫P_ext dV, and against a vacuum P_ext = 0, so the integral is zero. When the piston finally hits the wall, V = V_2 and dV becomes zero."
+  },
+  {
+    "id": "pc20-reversible-path-vacuum-heat",
+    "type": "multiple-choice",
+    "prompt": "For the isothermal expansion of an ideal gas into a vacuum, ΔU = 0 and w = 0. What does the first law then give for the heat q?",
+    "choices": [
+      {
+        "text": "q = 0",
+        "correct": true
+      },
+      {
+        "text": "q = nRT ln(V_2/V_1)",
+        "why": "That is the heat of the reversible isothermal expansion between the same volumes. For the vacuum expansion, q = ΔU − w = 0 − 0 = 0."
+      },
+      {
+        "text": "q = −nRT ln(V_2/V_1)",
+        "why": "That is the work done on the gas in the reversible isothermal expansion. For the vacuum expansion both ΔU and w are zero, so q = 0."
+      },
+      {
+        "text": "q = TΔS",
+        "why": "q = TΔS holds only for reversible heat at constant T. The actual heat of the vacuum expansion is q = ΔU − w = 0."
+      }
+    ],
+    "explanation": "With ΔU = q + w, ΔU = 0 and w = 0 give q = 0: no energy and no work means no heat. This zero is irreversible heat, q_irr, so it can't be used to find ΔS."
+  },
+  {
+    "id": "pc20-reversible-path-not-qirr",
+    "type": "multiple-choice",
+    "prompt": "The heat of the expansion into vacuum is q_irr = 0. Why can't ΔS be found as q_irr/T?",
+    "choices": [
+      {
+        "text": "Only reversible heat gives ΔS as q/T",
+        "correct": true
+      },
+      {
+        "text": "It can: ΔS really is zero for this expansion",
+        "why": "ΔS for the expansion is nR ln(V_2/V_1), which is positive. ΔS = q/T holds only for reversible heat, so q_irr = 0 says nothing about ΔS."
+      },
+      {
+        "text": "The gas does work, so q/T must also include w",
+        "why": "The gas does no work when it expands into a vacuum. The issue is that ΔS = q/T needs reversible heat, and q_irr is not reversible heat."
+      },
+      {
+        "text": "Entropy cannot change when no heat flows",
+        "why": "The vacuum expansion has no heat but a positive ΔS, nR ln(V_2/V_1). ΔS is found from q_rev along a reversible path, not from the actual heat."
+      }
+    ],
+    "explanation": "The Clausius definition is ΔS = q_rev/T, so the heat of an irreversible process does not give ΔS. The section therefore always calculates ΔS along a reversible path between the same two states."
+  },
+  {
+    "id": "pc20-reversible-path-which-path",
+    "type": "multiple-choice",
+    "prompt": "To find ΔS for the expansion of an ideal gas into a vacuum from V_1 to V_2 at temperature T, which process does the section calculate along instead?",
+    "choices": [
+      {
+        "text": "A reversible isothermal expansion from V_1 to V_2",
+        "correct": true
+      },
+      {
+        "text": "A reversible adiabatic expansion from V_1 to V_2",
+        "why": "A reversible adiabatic expansion cools the gas, so it does not end in the same final state. The reversible isothermal expansion does."
+      },
+      {
+        "text": "The same expansion into vacuum, done slowly",
+        "why": "However it is done, an expansion against zero pressure takes in no heat, so it gives no q_rev. The section uses a reversible isothermal expansion between the same states."
+      },
+      {
+        "text": "A heating of the gas at constant volume V_1",
+        "why": "The volume must go from V_1 to V_2 while the temperature stays at T. Only the reversible isothermal expansion links the same two states."
+      }
+    ],
+    "explanation": "The reversible isothermal expansion starts and ends in the same states as the vacuum expansion, and its heat is reversible: q_rev = nRT ln(V_2/V_1). Dividing by T gives ΔS = nR ln(V_2/V_1)."
+  },
+  {
+    "id": "pc20-reversible-path-state-function",
+    "type": "multiple-choice",
+    "prompt": "Why does ΔS = nR ln(V_2/V_1), found along a reversible path, also hold for the irreversible expansion into vacuum?",
+    "choices": [
+      {
+        "text": "S is a state function, and the end states match",
+        "correct": true
+      },
+      {
+        "text": "The expansion into vacuum is really reversible",
+        "why": "It is irreversible: the gas rushes into the vacuum with no heat and no work. The result carries over because S depends only on the initial and final states."
+      },
+      {
+        "text": "Both processes take in the same heat",
+        "why": "The vacuum expansion takes in no heat, while the reversible one takes in nRT ln(V_2/V_1). The entropy changes match because S is a state function."
+      },
+      {
+        "text": "Both processes do the same work",
+        "why": "The vacuum expansion does no work, but the reversible one does. ΔS is the same because S depends only on the end states."
+      }
+    ],
+    "explanation": "Entropy is a state function, so ΔS depends only on the initial and final states, not on how the gas got there. Any reversible path between the same states gives the ΔS of the irreversible process too."
+  },
+  {
+    "id": "pc20-reversible-path-vacuum-surr",
+    "type": "multiple-choice",
+    "prompt": "When an ideal gas expands isothermally into a vacuum, what is the entropy change of the surroundings?",
+    "choices": [
+      {
+        "text": "Zero, since no heat is exchanged with them",
+        "correct": true
+      },
+      {
+        "text": "−nR ln(V_2/V_1), the opposite of the gas's change",
+        "why": "That is the surroundings' change for the reversible expansion, which takes heat from them. In the vacuum expansion no heat flows, so ΔS_surr = 0."
+      },
+      {
+        "text": "+nR ln(V_2/V_1), the same as the gas's change",
+        "why": "The surroundings take part in nothing during the vacuum expansion: no heat and no work. So ΔS_surr = 0."
+      },
+      {
+        "text": "Negative, since the gas does work on them",
+        "why": "The gas does no work when it expands into a vacuum, and no heat flows either. The surroundings are untouched, so ΔS_surr = 0."
+      }
+    ],
+    "explanation": "No heat leaves the surroundings, so ΔS_surr = 0. ΔS_total is then just the gas's ΔS, nR ln(V_2/V_1), which is positive."
+  },
+  {
+    "id": "pc20-reversible-path-reversible-total",
+    "type": "multiple-choice",
+    "prompt": "For the reversible isothermal expansion of an ideal gas, what is ΔS_total = ΔS_sys + ΔS_surr?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "nR ln(V_2/V_1)",
+        "why": "That is the total for the expansion into vacuum, where ΔS_surr = 0. In the reversible case, ΔS_surr = −nR ln(V_2/V_1) cancels ΔS_sys."
+      },
+      {
+        "text": "2nR ln(V_2/V_1)",
+        "why": "The two changes don't add up; they cancel. The surroundings lose exactly the entropy the gas gains."
+      },
+      {
+        "text": "−nR ln(V_2/V_1)",
+        "why": "That is the surroundings' change alone. Adding the gas's +nR ln(V_2/V_1) gives zero."
+      }
+    ],
+    "explanation": "The gas gains nR ln(V_2/V_1) and the surroundings lose the same amount, so ΔS_total = 0. A reversible process produces no entropy; only the irreversible expansion into vacuum raises ΔS_total."
+  },
+  {
+    "id": "pc20-reversible-path-surr-opposite",
+    "type": "multiple-choice",
+    "prompt": "In the reversible isothermal expansion, why is the surroundings' entropy change exactly the opposite of the gas's?",
+    "choices": [
+      {
+        "text": "Equal heat leaves them at the same temperature",
+        "correct": true
+      },
+      {
+        "text": "The surroundings do exactly the same work as the gas",
+        "why": "These entropy changes come from heat, not work. The heat the gas takes in leaves the surroundings, and both are at the same T."
+      },
+      {
+        "text": "Entropy is conserved in every process",
+        "why": "Total entropy stays constant only in reversible processes; the vacuum expansion creates entropy. Here the same q at the same T gives equal and opposite q/T."
+      },
+      {
+        "text": "The surroundings are colder than the gas",
+        "why": "In a reversible process the system and surroundings are at the same temperature. Equal heat at equal T gives equal and opposite entropy changes."
+      }
+    ],
+    "explanation": "The heat the gas absorbs comes from the surroundings, and in a reversible process both are at the same temperature. So ΔS_surr = −q_rev/T = −nR ln(V_2/V_1), the exact opposite of ΔS_sys."
+  },
+  {
+    "id": "pc20-reversible-path-vacuum-spontaneous",
+    "type": "multiple-choice",
+    "prompt": "For the expansion of an ideal gas into a vacuum, ΔS_total = nR ln(V_2/V_1). What does the sign of this result tell you?",
+    "choices": [
+      {
+        "text": "It is positive, so the expansion is spontaneous",
+        "correct": true
+      },
+      {
+        "text": "It is negative, so the expansion can't happen",
+        "why": "Since V_2 > V_1, ln(V_2/V_1) > 0 and ΔS_total is positive. The gas does rush into the vacuum on its own."
+      },
+      {
+        "text": "It is zero, so the expansion is reversible",
+        "why": "Only the reversible expansion has ΔS_total = 0. Here ΔS_surr = 0, so ΔS_total = nR ln(V_2/V_1), which is positive."
+      },
+      {
+        "text": "It is positive, so heat must flow into the gas",
+        "why": "No heat flows in the expansion into vacuum; q = 0. The positive ΔS_total is entropy produced by a spontaneous, irreversible process."
+      }
+    ],
+    "explanation": "In an expansion V_2 > V_1, so ln(V_2/V_1) > 0 and the total entropy rises. Entropy is produced, which marks the expansion into vacuum as spontaneous and irreversible."
+  },
+  {
+    "id": "pc20-reversible-path-mixing-picture",
+    "type": "multiple-choice",
+    "prompt": "Two ideal gases at the same pressure are separated by a thin wall, which is then punctured. How does the section treat each gas as they mix?",
+    "choices": [
+      {
+        "text": "As if it expands alone into the total volume",
+        "correct": true
+      },
+      {
+        "text": "As if it is compressed by the other gas",
+        "why": "Each gas behaves as if the other were not there, so neither squeezes the other. Each simply expands from its own volume to V_tot."
+      },
+      {
+        "text": "As if it reacts with the other gas",
+        "why": "Nothing reacts. Each gas behaves as though the other is absent and expands into the whole volume, V_tot."
+      },
+      {
+        "text": "As if it stays behind in its original volume",
+        "why": "Once the wall is punctured, each gas spreads through the whole container. Its entropy change is that of an expansion from its own volume to V_tot."
+      }
+    ],
+    "explanation": "Each ideal gas behaves as if the other one is not there, so mixing is two expansions: gas A from V_A to V_tot and gas B from V_B to V_tot. This gives ΔS_A = n_A R ln(V_tot/V_A), and likewise for B."
+  },
+  {
+    "id": "pc20-reversible-path-volume-to-moles",
+    "type": "multiple-choice",
+    "prompt": "In the mixing formula, the section replaces V_tot/V_A by n_tot/n_A. Why is that allowed?",
+    "choices": [
+      {
+        "text": "At equal P and T, moles are proportional to volume",
+        "correct": true
+      },
+      {
+        "text": "The two gases have the same molar mass",
+        "why": "Molar mass doesn't enter. At the same pressure and temperature, the ideal gas law makes n proportional to V."
+      },
+      {
+        "text": "The two gases always start in equal volumes",
+        "why": "V_A and V_B can differ. What matters is that, at one pressure and temperature, the moles of each gas are proportional to its volume."
+      },
+      {
+        "text": "Mixing does not change the volume of either gas",
+        "why": "Each gas does expand, from V_A or V_B to V_tot. The swap works because n is proportional to V at fixed P and T."
+      }
+    ],
+    "explanation": "At the same pressure and temperature, n = PV/(RT), so the moles of each gas are proportional to its starting volume. Then V_tot/V_A = n_tot/n_A, and ΔS_A = n_A R ln(n_tot/n_A)."
+  },
+  {
+    "id": "pc20-reversible-path-mixing-positive",
+    "type": "multiple-choice",
+    "prompt": "Why is the molar entropy of mixing, ΔS̄ = −R[χ_A ln χ_A + χ_B ln χ_B], always positive?",
+    "choices": [
+      {
+        "text": "Each mole fraction is below 1, so each ln χ is negative",
+        "correct": true
+      },
+      {
+        "text": "Each mole fraction is above 1, so each ln χ is positive",
+        "why": "Mole fractions are parts of a whole, between 0 and 1. Their logarithms are negative, and the minus sign in front makes ΔS̄ positive."
+      },
+      {
+        "text": "R is negative, which cancels the minus sign",
+        "why": "R = 8.314 J/(mol·K) is positive. ΔS̄ is positive because each ln χ is negative for χ < 1."
+      },
+      {
+        "text": "The mole fractions add up to more than 1",
+        "why": "Mole fractions add up to exactly 1. Each one is less than 1, so each ln χ < 0, and the minus sign in front makes ΔS̄ positive."
+      }
+    ],
+    "explanation": "Each χ lies between 0 and 1, so each ln χ is negative and the bracket is negative. The minus sign in front then makes ΔS̄ positive, so mixing always raises the entropy."
+  },
+  {
+    "id": "pc20-reversible-path-many-gases",
+    "type": "multiple-choice",
+    "prompt": "Which expression does the section give for the molar entropy of mixing of several ideal gases with mole fractions χ_i?",
+    "choices": [
+      {
+        "text": "ΔS̄ = −R Σ χ_i ln χ_i",
+        "correct": true
+      },
+      {
+        "text": "ΔS̄ = R Σ χ_i ln χ_i",
+        "why": "Without the minus sign the result would be negative, since every ln χ_i < 0. Mixing raises the entropy, so ΔS̄ = −R Σ χ_i ln χ_i."
+      },
+      {
+        "text": "ΔS̄ = −R Σ ln χ_i",
+        "why": "Each term must be weighted by its mole fraction χ_i, as in the two-gas formula. The correct form is ΔS̄ = −R Σ χ_i ln χ_i."
+      },
+      {
+        "text": "ΔS̄ = −R Σ χ_i",
+        "why": "The mole fractions add up to 1, so this would always give −R, a negative value. The logarithms are needed: ΔS̄ = −R Σ χ_i ln χ_i."
+      }
+    ],
+    "explanation": "The two-gas result, ΔS̄ = −R[χ_A ln χ_A + χ_B ln χ_B], extends to any number of gases as ΔS̄ = −R Σ χ_i ln χ_i. Every term is positive after the minus sign, so each gas adds to the entropy of mixing."
+  },
+  {
+    "id": "pc20-reversible-path-mixing-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the existence of the entropy of mixing explain?",
+    "choices": [
+      {
+        "text": "Why gases and solutions mix and diffuse",
+        "correct": true
+      },
+      {
+        "text": "Why mixing two gases always releases heat",
+        "why": "Ideal gases mix with no heat at all. The entropy increase is what drives the mixing and diffusion."
+      },
+      {
+        "text": "Why gases at different pressures cannot mix",
+        "why": "The section treats gases at the same pressure, and they do mix. The entropy of mixing is the main reason diffusion and mixing happen at all."
+      },
+      {
+        "text": "Why mixed gases separate again over time",
+        "why": "Mixed gases don't unmix on their own, since that would lower the entropy. The entropy of mixing is why substances mix and diffuse."
+      }
+    ],
+    "explanation": "The entropy of mixing is the major reason for diffusion and mixing when gases, and also solutions (even solid ones), are brought into contact. Mixing raises the entropy without any need for heat."
+  },
+  {
+    "id": "pc20-reversible-path-vacuum-ds",
+    "type": "numeric",
+    "prompt": "An ideal gas sample of 0.500 mol expands into a vacuum from 4.00 L to 20.0 L at constant temperature. Using ΔS = nR ln(V_2/V_1), R = 8.314 J/(mol·K) and ln 5 = 1.609, what is ΔS of the gas, in J/K? (Give it as a decimal.)",
+    "answer": 6.69,
+    "explanation": "V_2/V_1 = 20.0 L/4.00 L = 5, so ΔS = (0.500 mol)(8.314 J/(mol·K))(1.609) = 6.69 J/K. No heat flows in the expansion into vacuum, but ΔS is found along the reversible isothermal path between the same two states."
+  },
+  {
+    "id": "pc20-reversible-path-from-qrev",
+    "type": "numeric",
+    "prompt": "A gas expands into a vacuum at 300 K. A reversible isothermal expansion between the same two states would take in q_rev = 2.40 kJ. Using ΔS = q_rev/T, what is ΔS for the expansion into vacuum, in J/K?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "ΔS = 2400 J/300 K = 8.00 J/K. The actual heat of the vacuum expansion is zero, but S is a state function, so the reversible path gives its ΔS."
+  },
+  {
+    "id": "pc20-reversible-path-surr-reversible",
+    "type": "numeric",
+    "prompt": "In a reversible isothermal expansion, 3.00 mol of an ideal gas doubles its volume. Using ΔS_surr = −nR ln(V_2/V_1), R = 8.314 J/(mol·K) and ln 2 = 0.693, what is the entropy change of the surroundings, in J/K? (Give it as a decimal.)",
+    "answer": -17.28,
+    "explanation": "ΔS_surr = −(3.00 mol)(8.314 J/(mol·K))(0.693) = −17.28 J/K. The gas gains the same 17.28 J/K, so ΔS_total = 0 for this reversible process."
+  },
+  {
+    "id": "pc20-reversible-path-gas-a",
+    "type": "numeric",
+    "prompt": "At the same pressure and temperature, 2.00 mol of ideal gas A and 6.00 mol of ideal gas B are allowed to mix. Using ΔS_A = n_A R ln(n_tot/n_A), R = 8.314 J/(mol·K) and ln 4 = 1.386, what is the entropy change of gas A, in J/K? (Give it as a decimal.)",
+    "answer": 23.05,
+    "explanation": "n_tot/n_A = 8.00 mol/2.00 mol = 4, so ΔS_A = (2.00 mol)(8.314 J/(mol·K))(1.386) = 23.05 J/K. Gas A behaves as if it expanded alone into four times its starting volume."
+  },
+  {
+    "id": "pc20-reversible-path-equal-mixing",
+    "type": "numeric",
+    "prompt": "Equal amounts of two ideal gases mix, so χ_A = χ_B = 0.500. Using ΔS̄ = −R[χ_A ln χ_A + χ_B ln χ_B], R = 8.314 J/(mol·K) and ln 0.500 = −0.693, what is the molar entropy of mixing, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 5.76,
+    "explanation": "ΔS̄ = −8.314 J/(mol·K) × [0.500 × (−0.693) + 0.500 × (−0.693)] = −8.314 J/(mol·K) × (−0.693) = 5.76 J/(mol·K). It is positive, as the entropy of mixing always is."
+  }
+]

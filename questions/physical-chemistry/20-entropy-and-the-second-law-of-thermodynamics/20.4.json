@@ -1,0 +1,423 @@
+[
+  {
+    "id": "pc20-second-law-isolated-vs-adiabatic",
+    "type": "multiple-choice",
+    "prompt": "How does an isolated system differ from a system that is only adiabatic?",
+    "choices": [
+      {
+        "text": "No heat, matter or radiation can cross its boundary",
+        "correct": true
+      },
+      {
+        "text": "Heat can cross its boundary, but matter cannot",
+        "why": "That describes a closed system, not an isolated one. An isolated system is cut off from heat, matter and even light."
+      },
+      {
+        "text": "Its temperature is held fixed by an outside heat bath",
+        "why": "A heat bath exchanges heat with the system, which an isolated system never does. Nothing at all gets in or out of an isolated system."
+      },
+      {
+        "text": "It can exchange work with the outside, but not heat",
+        "why": "Blocking heat but not work is what an adiabatic boundary does. An isolated system goes further: nothing gets in or out."
+      }
+    ],
+    "explanation": "An adiabatic wall stops only heat. An isolated system lets nothing in or out, neither heat nor matter nor radiation such as light, so it is like a little universe of its own."
+  },
+  {
+    "id": "pc20-second-law-clausius-statement",
+    "type": "multiple-choice",
+    "prompt": "Two aluminum blocks at different temperatures are put in contact and isolated from everything else. Which law states that heat will flow from the hotter block to the colder one?",
+    "choices": [
+      {
+        "text": "The second law (Clausius statement)",
+        "correct": true
+      },
+      {
+        "text": "The zeroth law of thermodynamics",
+        "why": "The zeroth law says thermal equilibrium is transitive: two bodies in equilibrium with a third are in equilibrium with each other. The direction of heat flow comes from the second law."
+      },
+      {
+        "text": "The first law of thermodynamics",
+        "why": "The first law says the total energy of the two blocks stays the same. It does not say which way the heat goes; the second law does."
+      },
+      {
+        "text": "The third law of thermodynamics",
+        "why": "The third law concerns entropy near absolute zero, not the direction of heat flow. Heat flowing from hot to cold is the Clausius statement of the second law."
+      }
+    ],
+    "explanation": "The Clausius statement of the second law fixes the direction: heat flows on its own from hot to cold. The first law adds only that the energy one block loses, the other gains."
+  },
+  {
+    "id": "pc20-second-law-energy-balance",
+    "type": "multiple-choice",
+    "prompt": "For two blocks exchanging heat in isolation, the section writes dU_A = −dU_B. Why?",
+    "choices": [
+      {
+        "text": "The total energy of the pair cannot change",
+        "correct": true
+      },
+      {
+        "text": "The two blocks always have the same temperature",
+        "why": "They start at different temperatures, which is why heat flows. dU_A = −dU_B holds because the first law keeps the total energy of the isolated pair fixed."
+      },
+      {
+        "text": "Each block does work on the other",
+        "why": "No work is done in this process, only heat flows. The energy one block gains is the energy the other loses, because the total is fixed."
+      },
+      {
+        "text": "Internal energy falls in every spontaneous process",
+        "why": "Here one block's energy rises while the other's falls. The minus sign only says that the total, dU_A + dU_B, is zero."
+      }
+    ],
+    "explanation": "The pair is isolated, so by the first law its total energy is constant: dU_A + dU_B = 0. Whatever energy the cold block gains, the hot block loses."
+  },
+  {
+    "id": "pc20-second-law-heat-equals-du",
+    "type": "multiple-choice",
+    "prompt": "In the two-block experiment, the section sets δq_A = dU_A for block A. What makes this allowed?",
+    "choices": [
+      {
+        "text": "No work is done, so all of dU_A comes in as heat",
+        "correct": true
+      },
+      {
+        "text": "Heat is a state function, just like U",
+        "why": "Heat is never a state function; its value depends on the path. Here δq_A equals dU_A only because the work is zero."
+      },
+      {
+        "text": "The process is reversible, so q = 0",
+        "why": "If q were 0, block A's energy could not change at all. The equality holds because no work is done, so dU_A = δq_A + 0."
+      },
+      {
+        "text": "Block A is adiabatic, so its energy stays inside",
+        "why": "An adiabatic block could not take in heat, yet heat flows into A here. With no work, the first law gives dU_A = δq_A."
+      }
+    ],
+    "explanation": "The first law gives dU_A = δq_A + δw_A, and the blocks do no work, so dU_A = δq_A. With only heat changing the energy, the section can use dS = dU/T for each block."
+  },
+  {
+    "id": "pc20-second-law-block-entropies",
+    "type": "multiple-choice",
+    "prompt": "Heat δq flows from a hot block B into a cold block A. How do the entropies of the two blocks change?",
+    "choices": [
+      {
+        "text": "A gains more entropy than B loses",
+        "correct": true
+      },
+      {
+        "text": "A gains exactly as much entropy as B loses",
+        "why": "That would be true only if the blocks had the same temperature. A gains δq/T_A and B loses δq/T_B, and since T_A < T_B, A's gain is larger."
+      },
+      {
+        "text": "Both blocks gain entropy",
+        "why": "Block B gives up heat, so its entropy falls by δq/T_B. The total still rises because the cold block's gain, δq/T_A, is larger."
+      },
+      {
+        "text": "B gains entropy and A loses entropy",
+        "why": "Entropy follows the heat: block A takes in heat, so A gains entropy. B loses the smaller amount δq/T_B."
+      }
+    ],
+    "explanation": "Block A gains δq/T_A and block B loses δq/T_B. The same heat divided by a lower temperature gives a larger number, so the total, dS = δq(1/T_A − 1/T_B), is positive."
+  },
+  {
+    "id": "pc20-second-law-maximum",
+    "type": "multiple-choice",
+    "prompt": "As two isolated blocks exchange heat, their total entropy rises. When does it stop rising?",
+    "choices": [
+      {
+        "text": "When the two temperatures have become equal",
+        "correct": true
+      },
+      {
+        "text": "When all the heat has left the hotter block",
+        "why": "The hot block never gives up all its energy; it cools only until the temperatures match. Then 1/T_A − 1/T_B = 0, so dS = 0."
+      },
+      {
+        "text": "When both blocks reach absolute zero",
+        "why": "The pair is isolated, so its total energy is fixed and the blocks cannot both cool down. The entropy peaks when they reach a common temperature between the two starting ones."
+      },
+      {
+        "text": "It never stops while the blocks touch",
+        "why": "Once T_A = T_B, heat stops flowing and dS = dU_A(1/T_A − 1/T_B) = 0. The entropy has reached its maximum."
+      }
+    ],
+    "explanation": "dS = dU_A(1/T_A − 1/T_B) is positive only while the temperatures differ. When they become equal (the average of the starting temperatures, for identical blocks), the entropy is at its maximum."
+  },
+  {
+    "id": "pc20-second-law-isolated-criterion",
+    "type": "multiple-choice",
+    "prompt": "For an isolated system, which result shows that a process is spontaneous?",
+    "choices": [
+      {
+        "text": "dS > 0",
+        "correct": true
+      },
+      {
+        "text": "dS < 0",
+        "why": "The entropy of an isolated system can never decrease. A spontaneous process produces entropy, so dS > 0."
+      },
+      {
+        "text": "dU < 0",
+        "why": "The energy of an isolated system cannot change, so dU = 0 in every process. The criterion is entropy: dS > 0."
+      },
+      {
+        "text": "dS = 0",
+        "why": "dS = 0 means no entropy is produced, as at equilibrium. A spontaneous process in an isolated system has dS > 0."
+      }
+    ],
+    "explanation": "For an isolated system, dS ≥ 0. A spontaneous process produces entropy, dS > 0, which gives a criterion for spontaneity, while a decrease is impossible."
+  },
+  {
+    "id": "pc20-second-law-dsprod-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section splits the entropy change of a system as dS = dS_prod + dS_exchange. What is dS_prod?",
+    "choices": [
+      {
+        "text": "Entropy created inside the system by the process",
+        "correct": true
+      },
+      {
+        "text": "Entropy carried in with heat from the surroundings",
+        "why": "That is dS_exchange, the part that comes with the heat exchanged. dS_prod is the entropy the process itself creates."
+      },
+      {
+        "text": "Entropy of the products of a chemical reaction",
+        "why": "Here prod means produced, not products. dS_prod is the entropy created inside the system, which is zero for a reversible process."
+      },
+      {
+        "text": "Entropy lost by the surroundings",
+        "why": "The surroundings are linked to the heat exchanged, the dS_exchange term. dS_prod is the entropy the process itself produces."
+      }
+    ],
+    "explanation": "dS_prod is entropy produced by the process, and dS_exchange comes with the heat that crosses the boundary. A spontaneous, irreversible process has dS_prod > 0; a reversible one has dS_prod = 0."
+  },
+  {
+    "id": "pc20-second-law-isolated-exchange-zero",
+    "type": "multiple-choice",
+    "prompt": "Using dS = dS_prod + dS_exchange, what is the entropy change of an isolated system?",
+    "choices": [
+      {
+        "text": "dS = dS_prod, since no heat is exchanged",
+        "correct": true
+      },
+      {
+        "text": "dS = dS_exchange, since no entropy is produced",
+        "why": "Entropy is produced in any spontaneous process. What vanishes in an isolated system is dS_exchange, because no heat can cross its boundary."
+      },
+      {
+        "text": "dS = 0, since nothing crosses its boundary",
+        "why": "Nothing crossing the boundary removes only the exchange term. The process can still produce entropy, so dS = dS_prod ≥ 0."
+      },
+      {
+        "text": "dS = δq/T, since the process is reversible",
+        "why": "An isolated system takes in no heat at all, so δq = 0. Its entropy change is all production: dS = dS_prod."
+      }
+    ],
+    "explanation": "An isolated system exchanges no heat, so dS_exchange = 0 and dS = dS_prod. That is why, for an isolated system only, dS > 0 marks a spontaneous process."
+  },
+  {
+    "id": "pc20-second-law-reversible-no-production",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say a reversible process produces no entropy?",
+    "choices": [
+      {
+        "text": "Its δq_rev/T already makes up the whole of dS",
+        "correct": true
+      },
+      {
+        "text": "No heat is exchanged in a reversible process",
+        "why": "A reversible process can take in heat, so dS_exchange = δq_rev/T is not zero. It is the production term that is zero."
+      },
+      {
+        "text": "A system must be isolated to change reversibly",
+        "why": "The reversible case in the section is one that exchanges heat, δq_rev, with its surroundings. There is no production because dS = δq_rev/T exactly."
+      },
+      {
+        "text": "Entropy is not a state function on a reversible path",
+        "why": "Entropy is a state function on every path. In a reversible process the exchange term δq_rev/T equals dS by definition, leaving nothing for dS_prod."
+      }
+    ],
+    "explanation": "For a reversible process dS_exchange = δq_rev/T, which is also the definition of dS. So dS = 0 + δq_rev/T, and dS_prod = 0."
+  },
+  {
+    "id": "pc20-second-law-open-not-criterion",
+    "type": "multiple-choice",
+    "prompt": "Why is the entropy change of a system that exchanges heat with its surroundings not a good test of spontaneity?",
+    "choices": [
+      {
+        "text": "Part of it comes with the heat exchanged",
+        "correct": true
+      },
+      {
+        "text": "The entropy of such a system cannot change",
+        "why": "It can change, both by production and through the heat it exchanges. The trouble is that dS alone doesn't show how much entropy was produced."
+      },
+      {
+        "text": "Its entropy always increases, whatever happens",
+        "why": "Its entropy can fall if heat flows out. Because dS includes the exchanged heat, its sign alone doesn't reveal whether the process is spontaneous."
+      },
+      {
+        "text": "Its entropy change depends on the path taken",
+        "why": "Entropy is a state function, so its change doesn't depend on the path. The problem is that dS mixes produced entropy with entropy that came in with heat."
+      }
+    ],
+    "explanation": "For such a system dS = dS_prod + dS_exchange, and only dS_prod says anything about spontaneity. The exchange term, δq/T, can be large and of either sign, so dS by itself is not a criterion."
+  },
+  {
+    "id": "pc20-second-law-isolated-restrictive",
+    "type": "multiple-choice",
+    "prompt": "The rule dS > 0 for a spontaneous process holds for isolated systems. Why does the section call this criterion nearly useless in practice?",
+    "choices": [
+      {
+        "text": "Few real systems are isolated from their surroundings",
+        "correct": true
+      },
+      {
+        "text": "dS is always zero for an isolated system",
+        "why": "In an isolated system a spontaneous process has dS > 0, so the criterion works. The trouble is that most systems exchange heat with their surroundings."
+      },
+      {
+        "text": "Spontaneous processes never occur in isolated systems",
+        "why": "The two blocks form an isolated system with a spontaneous process, heat flow. The limit is that most systems of interest are not isolated."
+      },
+      {
+        "text": "It gives the wrong direction for heat flow",
+        "why": "For the two blocks, dS > 0 correctly predicts heat flowing from hot to cold. The problem is only that isolation is a very restrictive condition."
+      }
+    ],
+    "explanation": "Requiring the system to be isolated is very restrictive, since most systems exchange heat with the rest of the universe. That is why the section goes on to such systems, where dS = dS_prod + dS_exchange."
+  },
+  {
+    "id": "pc20-second-law-irreversible",
+    "type": "multiple-choice",
+    "prompt": "In an irreversible process, a system takes in heat δq_irrev at temperature T. How does dS compare with δq_irrev/T?",
+    "choices": [
+      {
+        "text": "dS is larger than δq_irrev/T",
+        "correct": true
+      },
+      {
+        "text": "dS equals δq_irrev/T",
+        "why": "Equality holds only for a reversible process. An irreversible process also produces entropy, so dS = dS_prod + δq_irrev/T is larger."
+      },
+      {
+        "text": "dS is smaller than δq_irrev/T",
+        "why": "That would need negative entropy production, which the second law forbids. dS_prod > 0, so dS > δq_irrev/T."
+      },
+      {
+        "text": "dS is zero for any irreversible process",
+        "why": "An irreversible process produces entropy, and the heat taken in adds more. dS = dS_prod + δq_irrev/T, which is more than δq_irrev/T."
+      }
+    ],
+    "explanation": "In an irreversible process, dS = dS_prod + δq_irrev/T with dS_prod > 0. So dS > δq_irrev/T: the entropy rises by more than the heat alone accounts for."
+  },
+  {
+    "id": "pc20-second-law-clausius-inequality-name",
+    "type": "multiple-choice",
+    "prompt": "What name does the section give to the statement dS ≥ δq/T?",
+    "choices": [
+      {
+        "text": "The Clausius inequality",
+        "correct": true
+      },
+      {
+        "text": "The first law of thermodynamics",
+        "why": "The first law is energy conservation, dU = δq + δw. dS ≥ δq/T, which brings together the isolated, reversible and irreversible cases, is the Clausius inequality."
+      },
+      {
+        "text": "Hess's law",
+        "why": "Hess's law is about adding up reaction enthalpies. dS ≥ δq/T is the Clausius inequality."
+      },
+      {
+        "text": "Kirchhoff's law",
+        "why": "Kirchhoff's law gives how a reaction enthalpy changes with temperature. dS ≥ δq/T is the Clausius inequality."
+      }
+    ],
+    "explanation": "The Clausius inequality, dS ≥ δq/T, sums up three cases: an isolated system (δq = 0, so dS ≥ 0), a reversible process (dS = δq_rev/T) and an irreversible one (dS > δq_irrev/T)."
+  },
+  {
+    "id": "pc20-second-law-equality-case",
+    "type": "multiple-choice",
+    "prompt": "In the Clausius inequality, dS ≥ δq/T, when does the equals sign apply?",
+    "choices": [
+      {
+        "text": "When the process is reversible",
+        "correct": true
+      },
+      {
+        "text": "When the process is spontaneous",
+        "why": "A spontaneous process is irreversible and produces entropy, so dS > δq/T. The equals sign is for a reversible process, with no production."
+      },
+      {
+        "text": "Whenever heat flows into the system",
+        "why": "Heat can flow in reversibly or irreversibly. Only in the reversible case is no entropy produced, so that dS = δq/T."
+      },
+      {
+        "text": "When the system is at a high temperature",
+        "why": "Temperature does not decide it. dS = δq/T holds for a reversible process, where dS_prod = 0."
+      }
+    ],
+    "explanation": "dS = dS_prod + δq/T, and dS_prod is zero only for a reversible process. Then dS = δq_rev/T; any irreversible process gives dS > δq/T."
+  },
+  {
+    "id": "pc20-second-law-same-start",
+    "type": "multiple-choice",
+    "prompt": "For two identical blocks brought into contact, the section gives ΔS = C_V ln[((T_A + T_B)^2)/(4T_A T_B)]. What does this give if both blocks start at the same temperature?",
+    "choices": [
+      {
+        "text": "Zero, since no heat flows",
+        "correct": true
+      },
+      {
+        "text": "Exactly C_V, the heat capacity of one block",
+        "why": "C_V multiplies ln of the ratio, and here the ratio is 1, so ln 1 = 0. Blocks at one temperature exchange no heat and produce no entropy."
+      },
+      {
+        "text": "A small negative value",
+        "why": "The formula is never negative, and here the ratio is exactly 1. ln 1 = 0, so ΔS = 0."
+      },
+      {
+        "text": "A large positive value",
+        "why": "With equal temperatures, nothing happens when the blocks touch. The ratio is (2T)^2/(4T^2) = 1 and ln 1 = 0."
+      }
+    ],
+    "explanation": "With T_A = T_B = T, the ratio is (2T)^2/(4T^2) = 1, and ln 1 = 0. Blocks at the same temperature are already in equilibrium, so no heat flows and no entropy is produced."
+  },
+  {
+    "id": "pc20-second-law-final-temperature",
+    "type": "numeric",
+    "prompt": "Two identical aluminum blocks, one at 300 K and one at 500 K, are put in contact and isolated from everything else. At what temperature do they both end up, in K?",
+    "answer": 400,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "For identical blocks the final temperature is the average: (300 K + 500 K)/2 = 400 K. The hot block loses as much energy as the cold one gains, so each changes by 100 K."
+  },
+  {
+    "id": "pc20-second-law-small-transfer",
+    "type": "numeric",
+    "prompt": "Two large blocks, A at 300 K and B at 600 K, are isolated together, and 300 J of heat flows from B into A, too little to change either temperature noticeably. Using ΔS = q(1/T_A − 1/T_B), what is the total entropy change, in J/K? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "ΔS = 300 J × (1/300 K − 1/600 K) = 1.0 J/K − 0.5 J/K = 0.5 J/K. Block A gains 1.0 J/K and block B loses only 0.5 J/K, so the total rises."
+  },
+  {
+    "id": "pc20-second-law-blocks-total",
+    "type": "numeric",
+    "prompt": "Two identical blocks, each with C_V = 10.0 J/K, start at T_A = 200 K and T_B = 800 K and reach a common temperature in isolation. Using ΔS = C_V ln[((T_A + T_B)^2)/(4T_A T_B)] and ln 1.5625 = 0.446, what is ΔS, in J/K? (Give it as a decimal.)",
+    "answer": 4.46,
+    "explanation": "The ratio is (1000 K)^2/(4 × 200 K × 800 K) = 1.5625, so ΔS = 10.0 J/K × 0.446 = 4.46 J/K. It is positive, as it must be for a spontaneous process in an isolated system."
+  },
+  {
+    "id": "pc20-second-law-produced",
+    "type": "numeric",
+    "prompt": "A system takes in 600 J of heat irreversibly at 300 K, and its entropy rises by 3.5 J/K. Using ΔS = ΔS_prod + q/T, how much entropy was produced inside the system, in J/K? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "The exchange part is q/T = 600 J/300 K = 2.0 J/K, so the entropy produced is 3.5 J/K − 2.0 J/K = 1.5 J/K. It is positive, as it must be for an irreversible process."
+  },
+  {
+    "id": "pc20-second-law-minimum",
+    "type": "numeric",
+    "prompt": "A system takes in 750 J of heat at a constant 300 K. By the Clausius inequality, ΔS ≥ q/T, what is the smallest entropy change the system can have, in J/K? (Give it as a decimal.)",
+    "answer": 2.5,
+    "explanation": "q/T = 750 J/300 K = 2.5 J/K. The entropy rises by exactly this much if the heat is taken in reversibly, and by more if the process is irreversible."
+  }
+]

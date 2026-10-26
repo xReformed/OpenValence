@@ -1,0 +1,498 @@
+[
+  {
+    "id": "pc22-natural-variables-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the term natural variable mean for a function such as U, H, G or A?",
+    "choices": [
+      {
+        "text": "One of the convenient variables for describing it",
+        "correct": true
+      },
+      {
+        "text": "A variable that the function does not depend on",
+        "why": "The opposite is true: each function changes directly with its natural variables. dU = T dS − P dV, for example, shows U changing with S and V."
+      },
+      {
+        "text": "A variable that must stay constant in any process",
+        "why": "Nothing requires natural variables to stay fixed; U(S, V) changes whenever S or V does. They are simply the convenient variables the function is written in."
+      },
+      {
+        "text": "Any variable that is itself a state function",
+        "why": "P and T are state functions too, yet neither is a natural variable of U. Each function has its own convenient pair, such as S and V for U."
+      }
+    ],
+    "explanation": "The section says a natural variable is simply one of the convenient variables to describe U, H, G or A. Each fundamental equation shows its function changing with two of them, such as U with S and V."
+  },
+  {
+    "id": "pc22-natural-variables-why-useful",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call the four fundamental equations essentially equations of state?",
+    "choices": [
+      {
+        "text": "They tie U, H, G and A to measurable variables",
+        "correct": true
+      },
+      {
+        "text": "They hold only for ideal gases, which are easy to model",
+        "why": "The derivation never uses PV = nRT, so the equations are not limited to ideal gases. Their value is that they tie the functions to measurable variables."
+      },
+      {
+        "text": "They let U, H, G and A be read directly from a meter",
+        "why": "No instrument reads G or H directly. The equations let experimental data on variables such as P, V and T be used to find quantities like G or H."
+      },
+      {
+        "text": "They show that heat and work are state functions",
+        "why": "Heat and work remain path functions, written with đ. The equations matter because they link the state functions to variables we can control and measure."
+      }
+    ],
+    "explanation": "The fundamental equations show how U, H, G and A depend on variables that can be controlled and measured experimentally. That is why experimental data can be used to find sought-after quantities like G or H."
+  },
+  {
+    "id": "pc22-natural-variables-dbar-delta",
+    "type": "multiple-choice",
+    "prompt": "The section writes the first law as dU = đq + đw, and the principle of Clausius as dS = (δq_rev)/T. How do the symbols đ and δ compare here?",
+    "choices": [
+      {
+        "text": "Both mark an inexact differential, as for q and w",
+        "correct": true
+      },
+      {
+        "text": "đ marks a small change and δ marks a large one",
+        "why": "Both stand for small changes. They are two ways of writing the same thing: an inexact differential, used for path functions such as q and w."
+      },
+      {
+        "text": "đ is used for work and heat, δ for state functions",
+        "why": "δq_rev is still a heat, which is a path function. đ and δ mean the same thing here: an inexact differential."
+      },
+      {
+        "text": "δ marks an exact differential and đ an inexact one",
+        "why": "Exact differentials, such as dU and dS, take a plain d. Both đ and δ mark inexact differentials of path functions."
+      }
+    ],
+    "explanation": "The section uses đ and δ in the same way, to mark inexact differentials. They show that q and w are path functions, while the state functions U and S get a plain d."
+  },
+  {
+    "id": "pc22-natural-variables-clausius-step",
+    "type": "multiple-choice",
+    "prompt": "In deriving dU = T dS − P dV from dU = đq + đw, what does the principle of Clausius, dS = (δq_rev)/T, let the section replace?",
+    "choices": [
+      {
+        "text": "The heat term đq, with T dS",
+        "correct": true
+      },
+      {
+        "text": "The work term đw, with T dS",
+        "why": "T dS comes from the heat, not the work: rearranging dS = (δq_rev)/T gives δq_rev = T dS. The work term becomes −P dV."
+      },
+      {
+        "text": "The work term đw, with −P dV",
+        "why": "That replacement comes from assuming only P–V work, not from the principle of Clausius. Clausius turns the heat term into T dS."
+      },
+      {
+        "text": "The change dU, with T dS",
+        "why": "dU stays on the left side of the equation. The principle of Clausius replaces the heat, using δq_rev = T dS."
+      }
+    ],
+    "explanation": "Rearranging dS = (δq_rev)/T gives δq_rev = T dS, so dU = đq + đw becomes dU = T dS + δw. With only P–V work, δw = −P dV, which gives dU = T dS − P dV."
+  },
+  {
+    "id": "pc22-natural-variables-dh-cancel",
+    "type": "multiple-choice",
+    "prompt": "To find dH, the section puts dU = T dS − P dV into dH = dU + P dV + V dP. Which two terms cancel?",
+    "choices": [
+      {
+        "text": "−P dV and +P dV",
+        "correct": true
+      },
+      {
+        "text": "T dS and V dP",
+        "why": "These contain different differentials, so they cannot cancel; both survive in dH = T dS + V dP. The two P dV terms cancel."
+      },
+      {
+        "text": "+P dV and +V dP",
+        "why": "These have the same sign and different differentials, so they cannot cancel. The −P dV from dU cancels the +P dV from d(PV)."
+      },
+      {
+        "text": "T dS and −P dV",
+        "why": "Both of these come from dU and do not cancel each other. The −P dV from dU cancels the +P dV from d(PV), leaving T dS."
+      }
+    ],
+    "explanation": "dH = (T dS − P dV) + P dV + V dP. The −P dV and +P dV cancel, leaving dH = T dS + V dP, so the natural variables of H are S and P."
+  },
+  {
+    "id": "pc22-natural-variables-dg-result",
+    "type": "multiple-choice",
+    "prompt": "The section starts from dG = dH − T dS − S dT and substitutes dH = T dS + V dP. What is left?",
+    "choices": [
+      {
+        "text": "dG = V dP − S dT",
+        "correct": true
+      },
+      {
+        "text": "dG = V dP + S dT",
+        "why": "The −S dT comes from −d(TS) and keeps its minus sign. Only the two T dS terms cancel, leaving dG = V dP − S dT."
+      },
+      {
+        "text": "dG = T dS + V dP",
+        "why": "That is dH itself. Subtracting d(TS) = T dS + S dT removes the T dS and adds −S dT, giving dG = V dP − S dT."
+      },
+      {
+        "text": "dG = 2T dS + V dP − S dT",
+        "why": "The +T dS from dH and the −T dS from −d(TS) have opposite signs, so they cancel rather than add. That leaves dG = V dP − S dT."
+      }
+    ],
+    "explanation": "dG = (T dS + V dP) − T dS − S dT, and the two T dS terms cancel. That leaves dG = V dP − S dT, so the natural variables of G are P and T."
+  },
+  {
+    "id": "pc22-natural-variables-da-from-du",
+    "type": "multiple-choice",
+    "prompt": "Why does the section derive dA from the fundamental equation for U rather than the one for H?",
+    "choices": [
+      {
+        "text": "A is defined as U − TS",
+        "correct": true
+      },
+      {
+        "text": "A is defined as H − TS",
+        "why": "H − TS is the Gibbs energy G. The Helmholtz energy is A = U − TS, so dA = dU − d(TS) starts from dU."
+      },
+      {
+        "text": "dH is not an exact differential",
+        "why": "dH is exact, since H is a state function. The choice simply follows the definition: A = U − TS contains U, not H."
+      },
+      {
+        "text": "U has T and V as natural variables",
+        "why": "The natural variables of U are S and V. dA starts from dU because A is defined as U − TS."
+      }
+    ],
+    "explanation": "A = U − TS, so dA = dU − T dS − S dT. Putting in dU = T dS − P dV cancels the T dS terms and leaves dA = −P dV − S dT."
+  },
+  {
+    "id": "pc22-natural-variables-product-rule",
+    "type": "multiple-choice",
+    "prompt": "In the step dA = dU − d(TS), why does d(TS) become T dS + S dT?",
+    "choices": [
+      {
+        "text": "By the product rule, since both T and S can change",
+        "correct": true
+      },
+      {
+        "text": "Heat and work each contribute one of the two terms",
+        "why": "d(TS) is a purely mathematical step, not a split into heat and work. The product rule gives one term for the change in S and one for the change in T."
+      },
+      {
+        "text": "T and S are path functions, so d(TS) is inexact",
+        "why": "T and S are both state functions, so d(TS) is exact. It splits into two terms because it is the change in a product of two variables."
+      },
+      {
+        "text": "The process is reversible, which adds the S dT term",
+        "why": "The product rule holds for any change, reversible or not. d(TS) = T dS + S dT simply because both factors can change."
+      }
+    ],
+    "explanation": "For a product of two variables, d(TS) = T dS + S dT: one term for the change in S and one for the change in T. The same rule gives d(PV) = P dV + V dP in the step for dH."
+  },
+  {
+    "id": "pc22-natural-variables-which-tv",
+    "type": "multiple-choice",
+    "prompt": "Which of the four fundamental equations has T and V as its natural variables?",
+    "choices": [
+      {
+        "text": "dA = −P dV − S dT",
+        "correct": true
+      },
+      {
+        "text": "dG = V dP − S dT",
+        "why": "This equation contains dP and dT, so the natural variables of G are P and T. The one with dV and dT is dA = −P dV − S dT."
+      },
+      {
+        "text": "dU = T dS − P dV",
+        "why": "This equation contains dS and dV, so the natural variables of U are S and V. T and V go with the Helmholtz energy A."
+      },
+      {
+        "text": "dH = T dS + V dP",
+        "why": "This equation contains dS and dP, so the natural variables of H are S and P. The equation with dV and dT is the one for A."
+      }
+    ],
+    "explanation": "The natural variables are the ones whose differentials appear on the right side. dA = −P dV − S dT contains dV and dT, so A is naturally a function of V and T."
+  },
+  {
+    "id": "pc22-natural-variables-entropy-pair",
+    "type": "multiple-choice",
+    "prompt": "Which two of the functions U, H, A and G have entropy S as one of their natural variables?",
+    "choices": [
+      {
+        "text": "U and H",
+        "correct": true
+      },
+      {
+        "text": "A and G",
+        "why": "In dA and dG, S appears only as the coefficient in −S dT, so their natural variables include T instead. dS appears in dU and dH."
+      },
+      {
+        "text": "U and A",
+        "why": "U and A share the natural variable V, not S. The natural variables of A are T and V; S goes with U and H."
+      },
+      {
+        "text": "H and G",
+        "why": "H and G share the natural variable P, not S. The natural variables of G are T and P; S goes with U and H."
+      }
+    ],
+    "explanation": "dU = T dS − P dV and dH = T dS + V dP both contain dS, so S is a natural variable of U and of H. In dA and dG, S appears only as the coefficient of dT."
+  },
+  {
+    "id": "pc22-natural-variables-symbol-f",
+    "type": "multiple-choice",
+    "prompt": "The section notes that the Helmholtz energy A is often written with another symbol. Which one?",
+    "choices": [
+      {
+        "text": "F",
+        "correct": true
+      },
+      {
+        "text": "G",
+        "why": "G is the Gibbs energy, G = H − TS, a different function. The Helmholtz energy A = U − TS is often written F."
+      },
+      {
+        "text": "E",
+        "why": "E is sometimes used for energy in general, such as the internal energy. The Helmholtz energy is often written F."
+      },
+      {
+        "text": "H",
+        "why": "H is the enthalpy, H = U + PV. The Helmholtz energy A = U − TS is often written F."
+      }
+    ],
+    "explanation": "The Helmholtz energy, A = U − TS, is often written with the symbol F. G is kept for the Gibbs energy, G = H − TS."
+  },
+  {
+    "id": "pc22-natural-variables-five-definitions",
+    "type": "multiple-choice",
+    "prompt": "The section says the fundamental equations follow from five primary definitions. Besides the first law and the principle of Clausius, what are the other three?",
+    "choices": [
+      {
+        "text": "The definitions of H, G and A",
+        "correct": true
+      },
+      {
+        "text": "The zeroth law, the third law and Hess's law",
+        "why": "None of these is used in the derivation. The other three starting points are the definitions H = U + PV, G = H − TS and A = U − TS."
+      },
+      {
+        "text": "The ideal gas law and the heat capacities C_V and C_P",
+        "why": "The derivation never uses PV = nRT or heat capacities, which is why the equations are not limited to ideal gases. The other three are the definitions of H, G and A."
+      },
+      {
+        "text": "The definitions of work, pressure and temperature",
+        "why": "Work enters through the first law, and P and T are variables, not definitions the section starts from. The other three are the definitions of H, G and A."
+      }
+    ],
+    "explanation": "The five starting points are the first law, dU = đq + đw, the principle of Clausius, dS = (δq_rev)/T, and the definitions H = U + PV, G = H − TS and A = U − TS. Each fundamental equation follows from these."
+  },
+  {
+    "id": "pc22-natural-variables-assumptions",
+    "type": "multiple-choice",
+    "prompt": "For the fundamental equations to hold, which two assumptions does the section make?",
+    "choices": [
+      {
+        "text": "Only P–V work, and only reversible processes",
+        "correct": true
+      },
+      {
+        "text": "The system is an ideal gas at constant temperature",
+        "why": "The equations are not limited to ideal gases or constant temperature. They need only P–V work and reversible changes, so that the first law and the principle of Clausius apply as used."
+      },
+      {
+        "text": "The volume and the pressure both stay constant",
+        "why": "If both stayed constant, the P dV and V dP terms would vanish. The assumptions are only P–V work and reversible processes."
+      },
+      {
+        "text": "No heat flows, and every process is spontaneous",
+        "why": "Heat does flow; it appears as the T dS term. The section assumes only P–V work and reversible processes."
+      }
+    ],
+    "explanation": "The section assumes that only P–V work is done and that only reversible processes are used. These keep the first law, with δw = −P dV, and the principle of Clausius, dS = (δq_rev)/T, valid in the derivation."
+  },
+  {
+    "id": "pc22-natural-variables-irreversible-example",
+    "type": "multiple-choice",
+    "prompt": "The section says the principle of Clausius, dS = (δq_rev)/T, could not be used for some processes in this derivation. Which of these is one of them?",
+    "choices": [
+      {
+        "text": "A block sliding to a stop by friction",
+        "correct": true
+      },
+      {
+        "text": "A gas expanding slowly against a balanced piston",
+        "why": "A slow expansion against a piston kept in balance is reversible, so dS = (δq_rev)/T applies. Friction is irreversible, and the principle cannot be used for it."
+      },
+      {
+        "text": "Ice melting at its melting point as heat is added slowly",
+        "why": "Melting at the melting point with slow heating is a reversible process. The principle fails for irreversible processes such as friction or burning a fuel."
+      },
+      {
+        "text": "A gas compressed infinitely slowly at constant temperature",
+        "why": "An infinitely slow compression is reversible, so its heat can be written as T dS. The principle cannot be used for irreversible processes like friction."
+      }
+    ],
+    "explanation": "The principle of Clausius gives dS from the heat only for a reversible process. The section names friction and the combustion of hydrocarbons as irreversible processes for which it could not be used."
+  },
+  {
+    "id": "pc22-natural-variables-electrical-work",
+    "type": "multiple-choice",
+    "prompt": "Suppose a process also does electrical work, such as moving charged particles. What would have to change in the derivation of the fundamental equations?",
+    "choices": [
+      {
+        "text": "The work term would need extra terms for that work",
+        "correct": true
+      },
+      {
+        "text": "Nothing, since electrical work is a form of P–V work",
+        "why": "Electrical work does not come from a change in volume, so it is not P–V work. The work term in the first law would need extra terms for it."
+      },
+      {
+        "text": "The heat term would drop out of the first law",
+        "why": "Heat still flows; the change is in the work. Besides −P dV, the work term would need terms for the electrical work."
+      },
+      {
+        "text": "The principle of Clausius would gain a work term",
+        "why": "The principle of Clausius relates heat to entropy and does not involve work. The extra terms go into the work term of the first law."
+      }
+    ],
+    "explanation": "The section assumes only P–V work, δw = −P dV. If other work, such as electrical work, is done, the work term in the first law, dU = đq + đw, must include extra terms for it."
+  },
+  {
+    "id": "pc22-natural-variables-closed-system",
+    "type": "multiple-choice",
+    "prompt": "The fundamental equations dU = T dS − P dV and the rest leave out n, the number of moles. For which system can they be used as written?",
+    "choices": [
+      {
+        "text": "A sealed gas that is expanded or compressed",
+        "correct": true
+      },
+      {
+        "text": "A reaction mixture in which reactants turn into products",
+        "why": "In a reaction the amounts of the species change, so terms for those changes are needed. The n-free equations fit a closed system of non-reacting components."
+      },
+      {
+        "text": "An open beaker of water that slowly evaporates",
+        "why": "Water leaving the beaker changes the amount in the system. The n-free equations fit a closed system whose amounts stay fixed, such as a sealed gas."
+      },
+      {
+        "text": "A gas that is slowly leaking out through a small hole",
+        "why": "A leak changes the number of moles in the system. The section's example is a gas sealed in its container, so the amount cannot change."
+      }
+    ],
+    "explanation": "The n-free equations hold when the number of moles does not change, as in a closed system of non-reacting components. The section's example is a gas sealed in a container so that it cannot leak, then expanded or compressed."
+  },
+  {
+    "id": "pc22-natural-variables-chemical-potential",
+    "type": "multiple-choice",
+    "prompt": "When the amounts of species in the system can change, what does the section add to each fundamental equation?",
+    "choices": [
+      {
+        "text": "A sum of μ_i dn_i over the species i",
+        "correct": true
+      },
+      {
+        "text": "A sum of n_i dμ_i over the species i",
+        "why": "The added term is the chemical potential times the change in amount, μ_i dn_i, not the amount times the change in μ_i. Each equation gains Σ μ_i dn_i."
+      },
+      {
+        "text": "A term −n dT for each of the species",
+        "why": "No such term appears. Each equation gains Σ μ_i dn_i, where μ_i is the chemical potential of species i."
+      },
+      {
+        "text": "Nothing, since the equations hold for any amounts",
+        "why": "When species are added, removed or react, the functions change with the amounts too. The section adds Σ μ_i dn_i to each equation."
+      }
+    ],
+    "explanation": "Each fundamental equation gains Σ μ_i dn_i, where μ_i is the chemical potential of species i and dn_i is the change in its number of moles. For example, dG = V dP − S dT + Σ μ_i dn_i."
+  },
+  {
+    "id": "pc22-natural-variables-a-expansion",
+    "type": "multiple-choice",
+    "prompt": "According to dA = −P dV − S dT, how does the Helmholtz energy of a gas change when it expands at constant temperature?",
+    "choices": [
+      {
+        "text": "It decreases, because P is positive",
+        "correct": true
+      },
+      {
+        "text": "It increases, because V increases",
+        "why": "The dV term carries a minus sign, −P dV. With P > 0 and dV > 0, A goes down."
+      },
+      {
+        "text": "It stays the same, because T is constant",
+        "why": "Constant T removes only the −S dT term. The −P dV term remains, and it is negative for an expansion."
+      },
+      {
+        "text": "It decreases, because S is positive",
+        "why": "S multiplies dT, which is zero at constant temperature. The decrease comes from −P dV, with P positive."
+      }
+    ],
+    "explanation": "At constant T, dT = 0, so dA = −P dV. In an expansion dV > 0 and P > 0, so dA < 0 and A decreases."
+  },
+  {
+    "id": "pc22-natural-variables-da-dt",
+    "type": "multiple-choice",
+    "prompt": "The section writes dA = ((∂A)/(∂V))_T dV + ((∂A)/(∂T))_V dT and compares it with dA = −P dV − S dT. What does this give for ((∂A)/(∂T))_V?",
+    "choices": [
+      {
+        "text": "−S",
+        "correct": true
+      },
+      {
+        "text": "S",
+        "why": "The dT term in dA is −S dT, so the minus sign carries over: ((∂A)/(∂T))_V = −S. A falls as T rises at constant V."
+      },
+      {
+        "text": "−P",
+        "why": "−P is the coefficient of dV, so it equals ((∂A)/(∂V))_T. The coefficient of dT is −S."
+      },
+      {
+        "text": "−V",
+        "why": "V is held constant in this derivative and is not a coefficient in dA. Matching the dT terms gives −S."
+      }
+    ],
+    "explanation": "Matching the coefficients of dT in the two expressions gives ((∂A)/(∂T))_V = −S, and matching those of dV gives ((∂A)/(∂V))_T = −P. So entropy is one of the first derivatives of A."
+  },
+  {
+    "id": "pc22-natural-variables-da-calc",
+    "type": "numeric",
+    "prompt": "A gas at P = 1.5 × 10^5 Pa expands by dV = 4.0 × 10^−6 m^3 at constant temperature. Using dA = −P dV − S dT, what is dA, in J? (Give it as a decimal.)",
+    "answer": -0.6,
+    "unit": "J",
+    "explanation": "At constant T, dT = 0, so dA = −P dV = −(1.5 × 10^5 Pa)(4.0 × 10^−6 m^3) = −0.60 J. The Helmholtz energy falls as the gas expands."
+  },
+  {
+    "id": "pc22-natural-variables-dg-calc",
+    "type": "numeric",
+    "prompt": "For a gas sample, V = 2.5 × 10^−2 m^3 and S = 200 J/K. Its pressure rises by dP = 100 Pa while its temperature rises by dT = 0.050 K. Using dG = V dP − S dT, what is dG, in J? (Give it as a decimal.)",
+    "answer": -7.5,
+    "unit": "J",
+    "explanation": "dG = (2.5 × 10^−2 m^3)(100 Pa) − (200 J/K)(0.050 K) = 2.5 J − 10 J = −7.5 J. The temperature term outweighs the pressure term, so G falls."
+  },
+  {
+    "id": "pc22-natural-variables-dh-calc",
+    "type": "numeric",
+    "prompt": "A sample at T = 250 K with volume V = 2.0 × 10^−2 m^3 undergoes a small change with dS = 0.010 J/K and dP = 300 Pa. Using dH = T dS + V dP, what is dH, in J? (Give it as a decimal.)",
+    "answer": 8.5,
+    "unit": "J",
+    "explanation": "dH = (250 K)(0.010 J/K) + (2.0 × 10^−2 m^3)(300 Pa) = 2.5 J + 6.0 J = 8.5 J. Both terms are positive here, so H rises."
+  },
+  {
+    "id": "pc22-natural-variables-term-count",
+    "type": "numeric",
+    "prompt": "A system holds three species whose amounts can change, so dG = V dP − S dT + Σ μ_i dn_i, with one μ_i dn_i term for each species. How many terms are on the right side when the sum is written out in full?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "Written out, dG = V dP − S dT + μ_1 dn_1 + μ_2 dn_2 + μ_3 dn_3. That is two terms for the natural variables P and T plus one per species: 2 + 3 = 5."
+  },
+  {
+    "id": "pc22-natural-variables-entropy-from-a",
+    "type": "numeric",
+    "prompt": "At constant volume, the Helmholtz energy of a sample falls by 1.2 J when its temperature rises by 0.010 K. Using ((∂A)/(∂T))_V = −S, what is the entropy S of the sample, in J/K?",
+    "answer": 120,
+    "tolerance": 0,
+    "explanation": "The slope is ((∂A)/(∂T))_V = −1.2 J/0.010 K = −120 J/K. Since this slope equals −S, S = 120 J/K."
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "pc21-entropy-temperature-du-combined",
+    "type": "multiple-choice",
+    "prompt": "Combining the first and second laws for a reversible process with only P–V work, which expression does the section obtain for dU?",
+    "choices": [
+      {
+        "text": "dU = T dS − P dV",
+        "correct": true
+      },
+      {
+        "text": "dU = T dS + P dV",
+        "why": "The reversible work done on the system is δw_rev = −P dV, so the P dV term enters with a minus sign."
+      },
+      {
+        "text": "dU = S dT − P dV",
+        "why": "The heat term is δq_rev = T dS: temperature times the change in entropy, not entropy times a change in temperature."
+      },
+      {
+        "text": "dU = T dS + V dP",
+        "why": "T dS + V dP is what the section later finds for dH. For U the work term is −P dV, giving dU = T dS − P dV."
+      }
+    ],
+    "explanation": "The first law gives dU = δq_rev + δw_rev. With δq_rev = T dS and δw_rev = −P dV, this becomes dU = T dS − P dV."
+  },
+  {
+    "id": "pc21-entropy-temperature-exact",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say that dU = T dS − P dV must be an exact differential?",
+    "choices": [
+      {
+        "text": "U, S and V are all state functions",
+        "correct": true
+      },
+      {
+        "text": "The change is made at constant volume",
+        "why": "The expression holds for any reversible change, not only at constant volume. It is exact because no path functions such as q or w are left in it."
+      },
+      {
+        "text": "Heat and work are exact differentials too",
+        "why": "Heat and work are path functions, so δq and δw are not exact. Once they are replaced by T dS and −P dV, only state functions remain."
+      },
+      {
+        "text": "Temperature and pressure are held constant",
+        "why": "Nothing needs to be held constant. The expression is exact because U, S and V are state functions, with no path functions left in it."
+      }
+    ],
+    "explanation": "Replacing δq_rev by T dS and δw_rev by −P dV removes every path function from the first law. What is left relates only state functions, so dU = T dS − P dV is an exact differential."
+  },
+  {
+    "id": "pc21-entropy-temperature-natural-u",
+    "type": "multiple-choice",
+    "prompt": "From dU = T dS − P dV, what are the natural variables of the internal energy U?",
+    "choices": [
+      {
+        "text": "S and V",
+        "correct": true
+      },
+      {
+        "text": "T and V",
+        "why": "U can be written as a function of T and V, as Example 21.1.1 does, but these are not its natural variables. The differentials in dU = T dS − P dV are dS and dV."
+      },
+      {
+        "text": "T and P",
+        "why": "T and P appear as coefficients in dU = T dS − P dV, not as the variables that change. The natural variables are the ones with differentials: S and V."
+      },
+      {
+        "text": "S and P",
+        "why": "S and P are the natural variables of the enthalpy, from dH = T dS + V dP. For U they are S and V."
+      }
+    ],
+    "explanation": "The natural variables are the ones whose differentials appear, dS and dV. So U is naturally a function U(S, V), with T and −P as the coefficients."
+  },
+  {
+    "id": "pc21-entropy-temperature-natural-h",
+    "type": "multiple-choice",
+    "prompt": "The section finds dH = T dS + V dP for a reversible process. What are the natural variables of the enthalpy H?",
+    "choices": [
+      {
+        "text": "S and P",
+        "correct": true
+      },
+      {
+        "text": "S and V",
+        "why": "S and V are the natural variables of U. Going from U to H = U + PV swaps dV for dP, so the natural variables of H are S and P."
+      },
+      {
+        "text": "T and P",
+        "why": "T is a coefficient in dH = T dS + V dP, not a variable that changes. The differentials are dS and dP, so the natural variables are S and P."
+      },
+      {
+        "text": "T and V",
+        "why": "Neither T nor V appears as a differential in dH = T dS + V dP. The natural variables of H are S and P."
+      }
+    ],
+    "explanation": "The differentials in dH = T dS + V dP are dS and dP, so H is naturally a function H(S, P). The section stresses that V is not one of them: it appears only as the coefficient of dP."
+  },
+  {
+    "id": "pc21-entropy-temperature-ds-cv",
+    "type": "multiple-choice",
+    "prompt": "At constant volume, dU = T dS and C_V = ((∂U)/(∂T))_V. Combining these, how does the entropy change with temperature?",
+    "choices": [
+      {
+        "text": "dS = ((C_V)/T) dT",
+        "correct": true
+      },
+      {
+        "text": "dS = C_V dT",
+        "why": "C_V dT is dU at constant volume. Since dU = T dS, the entropy change is dU divided by T: dS = ((C_V)/T) dT."
+      },
+      {
+        "text": "dS = (T/C_V) dT",
+        "why": "The fraction is upside down. From T dS = C_V dT, dividing both sides by T gives dS = ((C_V)/T) dT."
+      },
+      {
+        "text": "dS = −((C_V)/T) dT",
+        "why": "There is no minus sign. C_V and T are both positive, so dS has the same sign as dT."
+      }
+    ],
+    "explanation": "At constant volume, dU = C_V dT and also dU = T dS. Setting T dS = C_V dT and dividing by T gives dS = ((C_V)/T) dT."
+  },
+  {
+    "id": "pc21-entropy-temperature-why-rises",
+    "type": "multiple-choice",
+    "prompt": "Why does the section conclude that the entropy of a substance must increase as its temperature increases?",
+    "choices": [
+      {
+        "text": "Heat capacity is always positive",
+        "correct": true
+      },
+      {
+        "text": "Heating always makes a substance expand",
+        "why": "No expansion is needed: dS = ((C_V)/T) dT shows that S rises even at constant volume. The reason is that C_V and T are positive."
+      },
+      {
+        "text": "Heating is always an irreversible process",
+        "why": "dS = ((C_P)/T) dT describes reversible heating. S rises with T because the heat capacity is positive, not because entropy is produced."
+      },
+      {
+        "text": "Internal energy falls as temperature rises",
+        "why": "U rises with T, since C_V = ((∂U)/(∂T))_V is positive. That same positive heat capacity makes dS positive whenever dT is."
+      }
+    ],
+    "explanation": "In dS = ((C_V)/T) dT, or ((C_P)/T) dT at constant pressure, both the heat capacity and T are positive. So dS has the same sign as dT: entropy goes up when temperature goes up."
+  },
+  {
+    "id": "pc21-entropy-temperature-other-variables",
+    "type": "multiple-choice",
+    "prompt": "Example 21.1.1 writes U as a function of T and V, rather than of its natural variables S and V. What does the section say about doing this?",
+    "choices": [
+      {
+        "text": "It is allowed and gives useful relationships",
+        "correct": true
+      },
+      {
+        "text": "It is not allowed, since U depends only on S and V",
+        "why": "Nothing stops us from writing U in other variables. The section says that doing so gives some interesting relationships."
+      },
+      {
+        "text": "It works only for an ideal gas",
+        "why": "The section puts no such limit on it. U can be written as U(T, V) for any substance, and this brings in C_V = ((∂U)/(∂T))_V."
+      },
+      {
+        "text": "It turns U into a path function",
+        "why": "U is a state function whatever variables it is written in. Choosing T and V only changes how it is expressed."
+      }
+    ],
+    "explanation": "There is nothing to stop us from expressing U in variables other than S and V. Writing it as U(T, V), as in Example 21.1.1, brings in C_V and gives S as a function of T and V."
+  },
+  {
+    "id": "pc21-entropy-temperature-switch-to-h",
+    "type": "multiple-choice",
+    "prompt": "To relate entropy to the constant-pressure heat capacity C_P, which function does the section switch to from U?",
+    "choices": [
+      {
+        "text": "The enthalpy, H = U + PV",
+        "correct": true
+      },
+      {
+        "text": "The Helmholtz energy, A = U − TS",
+        "why": "The section does not use A here. Since C_P = ((∂H)/(∂T))_P, it switches to the enthalpy, H = U + PV."
+      },
+      {
+        "text": "The Gibbs energy, G = H − TS",
+        "why": "G is not needed for this step. C_P is defined through the enthalpy, so the section works with H = U + PV."
+      },
+      {
+        "text": "The product PV on its own",
+        "why": "PV is only part of the enthalpy. The section uses the whole of H = U + PV, whose temperature derivative at constant pressure is C_P."
+      }
+    ],
+    "explanation": "C_P is the temperature derivative of the enthalpy at constant pressure, so the section changes from U to H = U + PV. For a reversible process this gives dH = T dS + V dP."
+  },
+  {
+    "id": "pc21-entropy-temperature-constant-pressure",
+    "type": "multiple-choice",
+    "prompt": "Under which condition does dH = T dS + V dP reduce to dH = T dS?",
+    "choices": [
+      {
+        "text": "Constant pressure",
+        "correct": true
+      },
+      {
+        "text": "Constant volume",
+        "why": "At constant volume dV = 0, but the V dP term need not vanish. It drops out when dP = 0, at constant pressure."
+      },
+      {
+        "text": "Constant temperature",
+        "why": "Holding T constant leaves both terms in place. dH = T dS needs dP = 0, that is, constant pressure."
+      },
+      {
+        "text": "Constant entropy",
+        "why": "At constant entropy dS = 0, which would remove the T dS term instead. It is constant pressure that removes V dP."
+      }
+    ],
+    "explanation": "At constant pressure dP = 0, so the V dP term vanishes and dH = T dS. Together with C_P = ((∂H)/(∂T))_P, this leads to dS = ((C_P)/T) dT."
+  },
+  {
+    "id": "pc21-entropy-temperature-cp-ingredients",
+    "type": "multiple-choice",
+    "prompt": "The section finds dS = ((C_P)/T) dT. Which two relations does it combine to get this?",
+    "choices": [
+      {
+        "text": "dH = T dS and C_P = ((∂H)/(∂T))_P",
+        "correct": true
+      },
+      {
+        "text": "dU = T dS and C_V = ((∂U)/(∂T))_V",
+        "why": "Those two give dS = ((C_V)/T) dT, the constant-volume result. The C_P version comes from the enthalpy instead."
+      },
+      {
+        "text": "dH = T dS and C_P = C_V + nR",
+        "why": "C_P = C_V + nR holds only for an ideal gas and is not used here. The section uses the definition C_P = ((∂H)/(∂T))_P."
+      },
+      {
+        "text": "dU = T dS − P dV and PV = nRT",
+        "why": "No ideal gas law is needed, since the result holds for any substance. The section combines dH = T dS at constant pressure with C_P = ((∂H)/(∂T))_P."
+      }
+    ],
+    "explanation": "At constant pressure, dH = T dS, and C_P = ((∂H)/(∂T))_P means dH = C_P dT. Setting T dS = C_P dT and dividing by T gives dS = ((C_P)/T) dT."
+  },
+  {
+    "id": "pc21-entropy-temperature-cp-route-common",
+    "type": "multiple-choice",
+    "prompt": "The section gives one route to entropy changes through C_V and another through C_P. Why is the C_P route the more common one?",
+    "choices": [
+      {
+        "text": "Data at constant pressure are easier to get",
+        "correct": true
+      },
+      {
+        "text": "C_P is always smaller than C_V",
+        "why": "C_P is in fact at least as large as C_V. The C_P route is preferred because measurements at constant pressure are usually easier to make."
+      },
+      {
+        "text": "Only C_P is positive at all temperatures",
+        "why": "Both heat capacities are positive, which is why entropy rises with T on either route. The C_P route wins because constant-pressure data are easier to get."
+      },
+      {
+        "text": "The C_V route gives the wrong entropy change",
+        "why": "Each route gives the correct entropy change under its own conditions. The C_P route is just more practical, since constant-pressure data are easier to obtain."
+      }
+    ],
+    "explanation": "It is usually easier to obtain data under constant pressure than at constant volume, so C_P values are what we mostly have. That makes ΔS = ∫ ((C_P)/T) dT the more common route."
+  },
+  {
+    "id": "pc21-entropy-temperature-need-cp-t",
+    "type": "multiple-choice",
+    "prompt": "To calculate how the entropy of a substance changes between T_1 and T_2 at constant pressure, what does the section say you need to know?",
+    "choices": [
+      {
+        "text": "C_P as a function of T over that range",
+        "correct": true
+      },
+      {
+        "text": "Only the two temperatures, T_1 and T_2",
+        "why": "The temperatures set the limits, but ΔS = ∫ ((C_P)/T) dT also needs the heat capacity at each temperature in between."
+      },
+      {
+        "text": "The volume of the sample at T_1 and T_2",
+        "why": "At constant pressure the entropy change comes from ∫ ((C_P)/T) dT. What you need is the heat capacity as a function of temperature."
+      },
+      {
+        "text": "The enthalpy of the substance at 0 K",
+        "why": "No absolute enthalpy is needed, which is just as well, since H(0) can't be pinned down. ΔS = ∫ ((C_P)/T) dT needs only C_P as a function of T."
+      }
+    ],
+    "explanation": "ΔS = ∫ ((C_P)/T) dT, taken from T_1 to T_2. If we know how the heat capacity changes with temperature over that range, we can calculate the entropy change."
+  },
+  {
+    "id": "pc21-entropy-temperature-same-ratio",
+    "type": "multiple-choice",
+    "prompt": "For a constant C_P, ΔS = C_P ln(T_2/T_1). How does ΔS for heating a sample from 100 K to 200 K compare with ΔS for heating it from 200 K to 400 K?",
+    "choices": [
+      {
+        "text": "They are the same",
+        "correct": true
+      },
+      {
+        "text": "The second is twice as large",
+        "why": "The second step covers twice as many kelvins, but ΔS depends on the ratio T_2/T_1, which is 2 for both steps. So each gives C_P ln 2."
+      },
+      {
+        "text": "The first is twice as large",
+        "why": "A kelvin of warming adds more entropy at low T, but the first step covers only half as many kelvins. Both have T_2/T_1 = 2, so both give C_P ln 2."
+      },
+      {
+        "text": "The second is smaller, as S is already larger",
+        "why": "How much entropy the sample already has doesn't matter. ΔS depends only on the ratio T_2/T_1, which is 2 for both steps."
+      }
+    ],
+    "explanation": "Both steps double the temperature, so ΔS = C_P ln 2 for each. Because dS = ((C_P)/T) dT, a kelvin of warming adds more entropy at low T, which makes up for the smaller range."
+  },
+  {
+    "id": "pc21-entropy-temperature-copper-block",
+    "type": "numeric",
+    "prompt": "A copper block with a constant heat capacity C_P = 40.0 J/K is heated at constant pressure from 300 K to 450 K. Using ΔS = C_P ln(T_2/T_1) and ln 1.5 = 0.405, what is ΔS of the block, in J/K? (Give it as a decimal.)",
+    "answer": 16.2,
+    "explanation": "T_2/T_1 = 450 K/300 K = 1.5, so ΔS = 40.0 J/K × 0.405 = 16.2 J/K. It is positive, as it must be when a substance is heated."
+  },
+  {
+    "id": "pc21-entropy-temperature-cooling",
+    "type": "numeric",
+    "prompt": "A gas sample with a constant C_V = 25.0 J/K is cooled at constant volume from 400 K to 300 K. Using ΔS = C_V ln(T_2/T_1) and ln 0.75 = −0.288, what is ΔS of the gas, in J/K, including its sign? (Give it as a decimal.)",
+    "answer": -7.2,
+    "explanation": "T_2/T_1 = 300 K/400 K = 0.75, so ΔS = 25.0 J/K × (−0.288) = −7.20 J/K. Cooling lowers the entropy, because dS = ((C_V)/T) dT is negative when dT is."
+  },
+  {
+    "id": "pc21-entropy-temperature-small-step",
+    "type": "numeric",
+    "prompt": "A sample with C_P = 30.0 J/K is warmed at constant pressure from 300.0 K to 300.5 K. For such a small step, dS = ((C_P)/T) dT with T = 300 K. By how much does its entropy rise, in J/K? (Give it as a decimal.)",
+    "answer": 0.05,
+    "explanation": "dS = (30.0 J/K × 0.5 K)/(300 K) = 0.050 J/K. The step is so small that T hardly changes, so C_P/T can be taken as constant."
+  },
+  {
+    "id": "pc21-entropy-temperature-low-t-factor",
+    "type": "numeric",
+    "prompt": "Suppose a substance has the same C_P at 100 K as at 400 K. Using dS = ((C_P)/T) dT, how many times more entropy does warming it by 1 K add at 100 K than at 400 K?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "With the same C_P and dT, dS is proportional to 1/T. So the ratio is (1/100)/(1/400) = 400/100 = 4: a kelvin of warming adds four times as much entropy at 100 K."
+  }
+]

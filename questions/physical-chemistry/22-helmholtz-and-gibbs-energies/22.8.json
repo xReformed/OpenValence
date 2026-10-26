@@ -1,0 +1,360 @@
+[
+  {
+    "id": "pc22-fugacity-dlnp",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature, the section turns dḠ = (RT/P) dP into dḠ = RT d ln P. What makes the two the same?",
+    "choices": [
+      {
+        "text": "d ln P = dP/P",
+        "correct": true
+      },
+      {
+        "text": "d ln P = P dP",
+        "why": "The derivative of ln P is 1/P, so d ln P = dP/P, not P dP."
+      },
+      {
+        "text": "ln P = P for an ideal gas",
+        "why": "ln P and P are different numbers for any gas. The step is calculus: the differential of ln P is dP/P."
+      },
+      {
+        "text": "P stays constant at fixed T",
+        "why": "P changes in this process; only T is fixed. The step uses d ln P = dP/P, so (RT/P) dP = RT d ln P."
+      }
+    ],
+    "explanation": "Since d ln P = dP/P, the term (RT/P) dP is the same as RT d ln P. This is the form Lewis later used as the model for defining fugacity."
+  },
+  {
+    "id": "pc22-fugacity-ideal-only",
+    "type": "multiple-choice",
+    "prompt": "Putting the ideal-gas molar volume V̄ = RT/P into dḠ = V̄ dP at constant temperature gives dḠ = RT d ln P. For what is this result strictly valid?",
+    "choices": [
+      {
+        "text": "Ideal gases only",
+        "correct": true
+      },
+      {
+        "text": "All gases at any pressure",
+        "why": "The step V̄ = RT/P uses the ideal gas law, so the result is strictly true only for ideal gases. Fugacity was introduced to extend it."
+      },
+      {
+        "text": "Liquids and solids, but not gases",
+        "why": "Liquids and solids don't follow V̄ = RT/P at all. The result rests on the ideal gas law, so it holds strictly for ideal gases."
+      },
+      {
+        "text": "Real gases at high pressure",
+        "why": "Real gases are least ideal at high pressure, where V̄ = RT/P fails. dḠ = RT d ln P is strictly for ideal gases."
+      }
+    ],
+    "explanation": "The result depends on V̄ = RT/P, which is the ideal gas law. For real gases it holds only approximately, which is why Lewis introduced fugacity."
+  },
+  {
+    "id": "pc22-fugacity-lewis-purpose",
+    "type": "multiple-choice",
+    "prompt": "Why did Lewis, in 1901, define a new property called fugacity?",
+    "choices": [
+      {
+        "text": "To extend dḠ = RT d ln P to all substances",
+        "correct": true
+      },
+      {
+        "text": "To measure how fast a gas escapes its container",
+        "why": "Despite its name, fugacity is not a rate. It is defined so that dḠ = RT d ln f, which keeps the ideal-gas form for any substance."
+      },
+      {
+        "text": "To replace the Gibbs energy in equilibrium problems",
+        "why": "Fugacity works alongside the Gibbs energy, not instead of it. It lets the simple form dḠ = RT d ln P be extended to all substances."
+      },
+      {
+        "text": "To show that real gases obey PV = nRT exactly",
+        "why": "Real gases don't obey PV = nRT exactly; that is the problem fugacity handles. It keeps the form dḠ = RT d ln f for every substance."
+      }
+    ],
+    "explanation": "dḠ = RT d ln P is strictly true only for ideal gases. Lewis defined the fugacity f by dḠ = RT d ln f, so the same simple form applies to every substance."
+  },
+  {
+    "id": "pc22-fugacity-definition",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature, which equation defines the fugacity f of a substance?",
+    "choices": [
+      {
+        "text": "dḠ = RT d ln f",
+        "correct": true
+      },
+      {
+        "text": "dḠ = RT d ln P",
+        "why": "That is the ideal-gas result, written with P. Fugacity is defined by putting f in place of P: dḠ = RT d ln f."
+      },
+      {
+        "text": "dḠ = f dP",
+        "why": "In dḠ = V̄ dP, the factor in front of dP is the molar volume, not f. Fugacity is defined by dḠ = RT d ln f."
+      },
+      {
+        "text": "f = RT ln P",
+        "why": "That would give f units of energy, not pressure, and it is not the definition. f is defined through dḠ = RT d ln f."
+      }
+    ],
+    "explanation": "Lewis defined f so that, at constant temperature, dḠ = RT d ln f for any substance. For an ideal gas this matches dḠ = RT d ln P, so there f = P."
+  },
+  {
+    "id": "pc22-fugacity-ideal-equals-p",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, how is the fugacity f related to the pressure P?",
+    "choices": [
+      {
+        "text": "f = P",
+        "correct": true
+      },
+      {
+        "text": "f = 0",
+        "why": "An ideal gas has a fugacity equal to its pressure, not zero. Comparing dḠ = RT d ln f with dḠ = RT d ln P gives f = P."
+      },
+      {
+        "text": "f = RT/P",
+        "why": "RT/P is the molar volume of an ideal gas, not its fugacity. Comparing dḠ = RT d ln f with dḠ = RT d ln P gives f = P."
+      },
+      {
+        "text": "f = 1 bar at any pressure",
+        "why": "The fugacity of an ideal gas follows its pressure; it isn't fixed at 1 bar. Since dḠ = RT d ln P holds for an ideal gas, f = P."
+      }
+    ],
+    "explanation": "For an ideal gas, both dḠ = RT d ln f and dḠ = RT d ln P hold, so f must equal P. For a non-ideal gas, f differs from P."
+  },
+  {
+    "id": "pc22-fugacity-coefficient-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the fugacity coefficient φ?",
+    "choices": [
+      {
+        "text": "The ratio of fugacity to pressure, f/P",
+        "correct": true
+      },
+      {
+        "text": "The ratio of pressure to fugacity, P/f",
+        "why": "The ratio is the other way up: φ = f/P. Both ratios equal 1 for an ideal gas, but for a real gas they differ."
+      },
+      {
+        "text": "The difference between fugacity and pressure",
+        "why": "φ is a ratio, not a difference: φ = f/P. A difference would be 0, not 1, for an ideal gas."
+      },
+      {
+        "text": "The fugacity of the gas at 1 bar",
+        "why": "φ is not itself a fugacity but the ratio of fugacity to pressure, φ = f/P. It has no units."
+      }
+    ],
+    "explanation": "The fugacity coefficient is φ = f/P. It equals 1 for an ideal gas, since then f = P, and differs from 1 for a non-ideal gas."
+  },
+  {
+    "id": "pc22-fugacity-compare-gases",
+    "type": "multiple-choice",
+    "prompt": "Two gases are at the same temperature and pressure. Gas A has φ = 0.98 and gas B has φ = 0.80. Which statement is correct?",
+    "choices": [
+      {
+        "text": "Gas A behaves more nearly like an ideal gas",
+        "correct": true
+      },
+      {
+        "text": "Gas B behaves more nearly like an ideal gas",
+        "why": "The closer φ is to 1, the closer a gas is to ideal. 0.98 is much closer to 1 than 0.80 is, so gas A is more nearly ideal."
+      },
+      {
+        "text": "Both gases are ideal, since φ is below 1",
+        "why": "An ideal gas has φ exactly equal to 1. Both gases deviate, and gas B, with φ = 0.80, deviates more."
+      },
+      {
+        "text": "The fugacity of each gas equals its pressure",
+        "why": "That is true only when φ = 1. Here f = 0.98P for gas A and f = 0.80P for gas B."
+      }
+    ],
+    "explanation": "The fugacity coefficient measures non-ideality: the closer φ is to 1, the closer the gas is to ideal. Gas A, with φ = 0.98, is nearly ideal; gas B, with φ = 0.80, is not."
+  },
+  {
+    "id": "pc22-fugacity-zero-pressure",
+    "type": "multiple-choice",
+    "prompt": "What happens to the fugacity coefficient φ of a real gas as its pressure approaches zero?",
+    "choices": [
+      {
+        "text": "It approaches 1",
+        "correct": true
+      },
+      {
+        "text": "It approaches 0",
+        "why": "Both f and P go to zero, but their ratio does not. As P → 0 every gas behaves ideally, so f → P and φ → 1."
+      },
+      {
+        "text": "It grows without limit",
+        "why": "At very low pressure a real gas behaves like an ideal gas, so f/P tends to 1, not to infinity."
+      },
+      {
+        "text": "It stays at its high-pressure value",
+        "why": "φ depends on pressure. In the zero-pressure limit dḠ = RT d ln P holds, so f → P and φ → 1."
+      }
+    ],
+    "explanation": "In the zero-pressure limit, every gas behaves ideally and dḠ = RT d ln P holds. Then f approaches P, so φ = f/P approaches 1."
+  },
+  {
+    "id": "pc22-fugacity-units",
+    "type": "multiple-choice",
+    "prompt": "Since f = P for an ideal gas, in what units is fugacity expressed?",
+    "choices": [
+      {
+        "text": "Units of pressure, such as bar",
+        "correct": true
+      },
+      {
+        "text": "Units of energy per mole, such as J/mol",
+        "why": "That is the unit of Ḡ, not of f. Since f equals P for an ideal gas, f has the units of pressure."
+      },
+      {
+        "text": "It has no units, like φ",
+        "why": "φ = f/P has no units, but only because f and P share the same units. f is a pressure-like quantity, given in bar."
+      },
+      {
+        "text": "Units of volume, such as m^3",
+        "why": "Volume enters dḠ = V̄ dP, but f is compared with P, not V. Fugacity is given in units of pressure."
+      }
+    ],
+    "explanation": "Because f equals P for an ideal gas and φ = f/P is a pure number, fugacity has the units of pressure, such as bar or Pa."
+  },
+  {
+    "id": "pc22-fugacity-mixture-gi",
+    "type": "multiple-choice",
+    "prompt": "For a component i of a mixture, the section writes dḠ_i = RT d ln f_i. What is Ḡ_i?",
+    "choices": [
+      {
+        "text": "The partial molar Gibbs energy of component i",
+        "correct": true
+      },
+      {
+        "text": "The total Gibbs energy of the whole mixture",
+        "why": "The subscript i picks out one component. Ḡ_i is the partial molar Gibbs energy of component i, and f_i is its fugacity."
+      },
+      {
+        "text": "The standard molar Gibbs energy of component i",
+        "why": "A standard value would carry the ° sign. Ḡ_i is the partial molar Gibbs energy of i in the mixture as it actually is."
+      },
+      {
+        "text": "The Gibbs energy of mixing per mole",
+        "why": "The Gibbs energy of mixing is a change for the whole mixture. Ḡ_i is the partial molar Gibbs energy of component i."
+      }
+    ],
+    "explanation": "In a mixture, Ḡ_i is the partial molar Gibbs energy of component i and f_i is its fugacity. The definition dḠ_i = RT d ln f_i has the same form as for a pure gas."
+  },
+  {
+    "id": "pc22-fugacity-chemical-potential-link",
+    "type": "multiple-choice",
+    "prompt": "Why can the section rewrite the definition of fugacity as dμ̄_i = RT d ln f_i, using the chemical potential?",
+    "choices": [
+      {
+        "text": "Ḡ_i and μ̄_i are related one to one",
+        "correct": true
+      },
+      {
+        "text": "Chemical potential is the same as fugacity",
+        "why": "μ̄_i and f_i are different quantities, linked through a logarithm. The rewrite works because Gibbs energy and chemical potential correspond one to one."
+      },
+      {
+        "text": "Chemical potential doesn't depend on pressure",
+        "why": "Chemical potential does change with pressure, through f. The rewrite works because the partial molar Gibbs energy and the chemical potential correspond one to one."
+      },
+      {
+        "text": "Fugacity is defined only for pure substances",
+        "why": "The section defines f_i for each component of a mixture too. The rewrite works because Gibbs energy and chemical potential correspond one to one."
+      }
+    ],
+    "explanation": "There is a one-to-one relationship between the partial molar Gibbs energy and the chemical potential. So dḠ_i = RT d ln f_i can be written just as well as dμ̄_i = RT d ln f_i."
+  },
+  {
+    "id": "pc22-fugacity-mu-standard",
+    "type": "multiple-choice",
+    "prompt": "In μ̄ = μ̄° + RT ln(f/P°), at what fugacity does μ̄ equal μ̄°?",
+    "choices": [
+      {
+        "text": "When f = P° = 1 bar",
+        "correct": true
+      },
+      {
+        "text": "When f = 0",
+        "why": "As f → 0 the log term heads to minus infinity, not zero. μ̄ = μ̄° when f/P° = 1, that is, when f = P° = 1 bar."
+      },
+      {
+        "text": "When f = P, the actual pressure",
+        "why": "f = P makes the gas ideal, but μ̄ still differs from μ̄° unless that pressure is 1 bar. The log term vanishes only when f = P°."
+      },
+      {
+        "text": "When f = RT",
+        "why": "RT is an energy per mole, not a pressure. The log term is zero when f/P° = 1, so when f = P° = 1 bar."
+      }
+    ],
+    "explanation": "ln(f/P°) = 0 when f/P° = 1, so μ̄ = μ̄° when the fugacity equals the standard pressure, P° = 1 bar. μ̄° is the chemical potential in the standard state."
+  },
+  {
+    "id": "pc22-fugacity-equilibrium-zero",
+    "type": "multiple-choice",
+    "prompt": "For a chemical reaction at equilibrium, which quantity is zero?",
+    "choices": [
+      {
+        "text": "Δμ̄ for the reaction",
+        "correct": true
+      },
+      {
+        "text": "μ̄ of each species",
+        "why": "The chemical potentials of the species are not zero at equilibrium. What vanishes is the reaction's change, Δμ̄."
+      },
+      {
+        "text": "Δμ̄° for the reaction",
+        "why": "Δμ̄° is fixed by the standard states and is generally not zero. It is Δμ̄, at the actual fugacities, that is zero at equilibrium."
+      },
+      {
+        "text": "f of each product",
+        "why": "Products are present at equilibrium, with fugacities above zero. The condition is Δμ̄ = 0 for the reaction."
+      }
+    ],
+    "explanation": "At equilibrium the chemical potential change for the reaction is zero: Δμ̄ = 0. Writing each μ̄ as μ̄° + RT ln(f/P°) turns this into Δμ̄° = −RT ln K_f, where K_f is built from the ratios f/P° of the species."
+  },
+  {
+    "id": "pc22-fugacity-equilibrium-restate",
+    "type": "multiple-choice",
+    "prompt": "Equilibrium is usually stated in terms of chemical potentials. What does fugacity let you do with that condition?",
+    "choices": [
+      {
+        "text": "Restate it in terms of fugacities",
+        "correct": true
+      },
+      {
+        "text": "Replace it with the condition f = P",
+        "why": "f = P only says that a gas is ideal; it is not an equilibrium condition. Fugacity lets the chemical-potential condition be rewritten with fugacities."
+      },
+      {
+        "text": "Ignore non-ideality for real gases",
+        "why": "Fugacity does the opposite: it builds non-ideality into the condition. Using f in place of P lets equilibrium be stated in terms of fugacities."
+      },
+      {
+        "text": "Apply it only at zero pressure",
+        "why": "The fugacity form holds at any pressure, not only as P → 0. Fugacity simply lets equilibrium be restated in terms of fugacities."
+      }
+    ],
+    "explanation": "Integrating dμ̄ = RT d ln f gives μ̄ = μ̄° + RT ln(f/P°), so every chemical potential can be written with a fugacity. The equilibrium condition, Δμ̄ = 0, then becomes a condition on the fugacities of the species."
+  },
+  {
+    "id": "pc22-fugacity-phi-from-f",
+    "type": "numeric",
+    "prompt": "At 300 K and a pressure of 50.0 bar, a gas has a fugacity of 45.0 bar. Using φ = f/P, what is its fugacity coefficient? (Give it as a decimal.)",
+    "answer": 0.9,
+    "explanation": "φ = 45.0 bar/50.0 bar = 0.900. Because φ is below 1, the gas is not ideal at this pressure: its fugacity is 10% lower than its pressure."
+  },
+  {
+    "id": "pc22-fugacity-f-from-phi",
+    "type": "numeric",
+    "prompt": "At 400 K and a pressure of 250 bar, a gas has a fugacity coefficient φ = 1.05. Using f = φP, what is its fugacity, in bar? (Give it as a decimal.)",
+    "answer": 262.5,
+    "unit": "bar",
+    "explanation": "f = 1.05 × 250 bar = 262.5 bar. Here φ is above 1, so the fugacity is higher than the pressure."
+  },
+  {
+    "id": "pc22-fugacity-mu-shift",
+    "type": "numeric",
+    "prompt": "A gas at 298 K has a fugacity of 2.00 bar. Using μ̄ − μ̄° = RT ln(f/P°), with P° = 1 bar, R = 8.314 J/(mol·K) and ln 2.00 = 0.693, what is μ̄ − μ̄°, in kJ/mol? (Give it as a decimal.)",
+    "answer": 1.72,
+    "explanation": "μ̄ − μ̄° = (8.314 J/(mol·K))(298 K)(0.693) = 1717 J/mol = 1.72 kJ/mol. The chemical potential is above its standard value because f is above P° = 1 bar."
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "pc20-statistical-s-two-views",
+    "type": "multiple-choice",
+    "prompt": "According to the section, in which two ways can the laws of thermodynamics be understood?",
+    "choices": [
+      {
+        "text": "From bulk properties or from the motions of atoms",
+        "correct": true
+      },
+      {
+        "text": "From the first law alone or from the second law alone",
+        "why": "The two ways are two viewpoints, not two laws. One looks at large-scale properties like T and P; the other at how countless atoms move and interact."
+      },
+      {
+        "text": "From experiments on gases or from experiments on solids",
+        "why": "The split is not by the kind of matter. It is between the large-scale (macroscopic) view and the atomic (microscopic) view."
+      },
+      {
+        "text": "From quantum mechanics or from relativity",
+        "why": "Neither is the section's split. It contrasts large-scale properties like temperature and pressure with the motions and interactions of countless atoms."
+      }
+    ],
+    "explanation": "The laws can be reached by looking at large-scale properties like temperature and pressure, or by examining how countless tiny atoms move and interact. Both perspectives lead to the same laws, though the reasoning behind them is quite different."
+  },
+  {
+    "id": "pc20-statistical-s-a-ln-a-cancel",
+    "type": "multiple-choice",
+    "prompt": "In the derivation, the ensemble entropy contains the terms k_B A ln A and −k_B Σ_j p_j A ln A, and these cancel. Which facts make them cancel?",
+    "choices": [
+      {
+        "text": "A is constant and the p_j add up to 1",
+        "correct": true
+      },
+      {
+        "text": "ln A is zero for a large ensemble",
+        "why": "ln A grows as A grows; it is not zero. The terms cancel because A can be taken out of the sum and Σ_j p_j = 1."
+      },
+      {
+        "text": "Each p_j is equal to 1",
+        "why": "Each p_j is a probability between 0 and 1. It is their sum, Σ_j p_j, that equals 1, so k_B Σ_j p_j A ln A = k_B A ln A."
+      },
+      {
+        "text": "Stirling's approximation removes them",
+        "why": "Stirling's approximation was used earlier, on ln(A!). These terms cancel because A is constant and Σ_j p_j = 1."
+      }
+    ],
+    "explanation": "Because A is the same for every state, k_B Σ_j p_j A ln A = k_B A ln A × Σ_j p_j, and Σ_j p_j = 1 turns this into k_B A ln A. It cancels the first term, leaving S_ensemble = −k_B AΣ_j p_j ln p_j."
+  },
+  {
+    "id": "pc20-statistical-s-system-from-ensemble",
+    "type": "multiple-choice",
+    "prompt": "An ensemble contains A systems. How does the section get the entropy of one system from the entropy of the whole ensemble?",
+    "choices": [
+      {
+        "text": "S_system = S_ensemble/A",
+        "correct": true
+      },
+      {
+        "text": "S_system = A × S_ensemble",
+        "why": "One system has a share of the ensemble's entropy, not A times it. The section divides: S_system = S_ensemble/A."
+      },
+      {
+        "text": "S_system = S_ensemble",
+        "why": "The whole ensemble has more entropy than any one of its systems. The section divides by the number of systems: S_system = S_ensemble/A."
+      },
+      {
+        "text": "S_system = S_ensemble − A",
+        "why": "Subtracting a number of systems from an entropy mixes quantities of different kinds. The ensemble entropy is shared over A systems: S_system = S_ensemble/A."
+      }
+    ],
+    "explanation": "One system's entropy is the ensemble's entropy divided by the number of systems, A. Dividing S_ensemble = −k_B AΣ_j p_j ln p_j by A gives S_system = −k_B Σ_j p_j ln p_j."
+  },
+  {
+    "id": "pc20-statistical-s-dp-term-vanishes",
+    "type": "multiple-choice",
+    "prompt": "Differentiating S = −k_B Σ_j p_j ln p_j gives dS = −k_B Σ_j(dp_j + ln p_j dp_j). Why does the Σ_j dp_j part vanish?",
+    "choices": [
+      {
+        "text": "The p_j always add up to 1, so their changes add up to 0",
+        "correct": true
+      },
+      {
+        "text": "Each dp_j is zero, since the probabilities never change",
+        "why": "The probabilities do change, for example when the system is heated. Only their total stays fixed at 1, so the changes add up to Σ_j dp_j = 0."
+      },
+      {
+        "text": "The dp_j are too small to matter",
+        "why": "Small changes are exactly what a differential keeps. The part vanishes because the p_j always add up to 1, so Σ_j dp_j = 0."
+      },
+      {
+        "text": "k_B is zero for a single system",
+        "why": "k_B is Boltzmann's constant, the same for any system. The part vanishes because Σ_j p_j = 1, so a rise in one p_j is balanced by falls in others."
+      }
+    ],
+    "explanation": "Since Σ_j p_j = 1 at all times, any change in the probabilities must leave the total at 1, so Σ_j dp_j = 0. What remains is dS = −k_B Σ_j ln p_j dp_j."
+  },
+  {
+    "id": "pc20-statistical-s-sum-to-heat",
+    "type": "multiple-choice",
+    "prompt": "In the derivation, what does the sum Σ_j ln p_j dp_j turn out to equal?",
+    "choices": [
+      {
+        "text": "−(δq_rev)/(k_B T)",
+        "correct": true
+      },
+      {
+        "text": "(δq_rev)/T",
+        "why": "That is dS itself. The sum is −(δq_rev)/(k_B T), and multiplying it by −k_B gives dS = (δq_rev)/T."
+      },
+      {
+        "text": "−k_B T δq_rev",
+        "why": "The heat must be divided by k_B T, which makes the sum a pure number. Σ_j ln p_j dp_j = −(δq_rev)/(k_B T)."
+      },
+      {
+        "text": "0, since Σ_j dp_j = 0",
+        "why": "Σ_j dp_j = 0, but here each dp_j is weighted by a different ln p_j, so the sum need not vanish. It equals −(δq_rev)/(k_B T)."
+      }
+    ],
+    "explanation": "The section uses Σ_j ln p_j dp_j = −(δq_rev)/(k_B T). Then dS = −k_B Σ_j ln p_j dp_j = (δq_rev)/T."
+  },
+  {
+    "id": "pc20-statistical-s-reaches-clausius",
+    "type": "multiple-choice",
+    "prompt": "Where does the statistical derivation of entropy in this section end up?",
+    "choices": [
+      {
+        "text": "At dS = (δq_rev)/T, the thermodynamic definition",
+        "correct": true
+      },
+      {
+        "text": "At dS = δq/T for any path, reversible or irreversible",
+        "why": "The heat in the result is the reversible heat, δq_rev. The derivation ends at dS = (δq_rev)/T, the thermodynamic definition of entropy."
+      },
+      {
+        "text": "At dU = δq + δw, the first law",
+        "why": "The derivation is about entropy, not energy conservation. It ends at dS = (δq_rev)/T, the thermodynamic definition of entropy."
+      },
+      {
+        "text": "At S = 0 for every system",
+        "why": "S = 0 holds only for a perfectly ordered system. The derivation ends at dS = (δq_rev)/T, showing that the two definitions agree."
+      }
+    ],
+    "explanation": "Starting from S = k_B ln W, the section reaches dS = −k_B Σ_j ln p_j dp_j = (δq_rev)/T. The statistical definition thus reproduces the thermodynamic one."
+  },
+  {
+    "id": "pc20-statistical-s-heating-sign",
+    "type": "multiple-choice",
+    "prompt": "A system is heated reversibly, so δq_rev > 0. Using Σ_j ln p_j dp_j = −(δq_rev)/(k_B T), what is the sign of Σ_j ln p_j dp_j, and what happens to S?",
+    "choices": [
+      {
+        "text": "Negative, and S increases",
+        "correct": true
+      },
+      {
+        "text": "Positive, and S increases",
+        "why": "With δq_rev > 0, the minus sign makes the sum negative. Then dS = −k_B Σ_j ln p_j dp_j is positive, so S increases."
+      },
+      {
+        "text": "Negative, and S decreases",
+        "why": "The sum is negative, but dS is −k_B times the sum, which is positive. Heating a system reversibly raises its entropy."
+      },
+      {
+        "text": "Zero, and S stays the same",
+        "why": "The sum is zero only when no heat flows. With δq_rev > 0 it is negative, and dS = (δq_rev)/T > 0."
+      }
+    ],
+    "explanation": "The sum is −(δq_rev)/(k_B T) < 0, so dS = −k_B Σ_j ln p_j dp_j = (δq_rev)/T > 0. The statistical and thermodynamic pictures agree that reversible heating raises the entropy."
+  },
+  {
+    "id": "pc20-statistical-s-stat-view",
+    "type": "multiple-choice",
+    "prompt": "In the section's comparison, the thermodynamic view says entropy measures the spread of energy in terms of heat and temperature. What does the statistical view say it measures?",
+    "choices": [
+      {
+        "text": "The spread of possible microstates the energy can occupy",
+        "correct": true
+      },
+      {
+        "text": "The spread of temperatures inside the system",
+        "why": "A system at equilibrium has one temperature. The statistical view measures how many microstates, ways of arranging the energy, fit the same macrostate."
+      },
+      {
+        "text": "The spread of the molecules' speeds about their average",
+        "why": "The section doesn't define entropy by speeds. The statistical view counts the possible microstates, S = k_B ln W."
+      },
+      {
+        "text": "The spread of the heat taken in over the system's surface",
+        "why": "Heat belongs to the thermodynamic view. The statistical view measures the spread of possible microstates that the energy can occupy."
+      }
+    ],
+    "explanation": "The thermodynamic view speaks of energy spread through heat and temperature; the statistical view, S = k_B ln W, of the number of microstates consistent with the same macrostate. Both describe the same underlying entropy."
+  },
+  {
+    "id": "pc20-statistical-s-thermo-limit",
+    "type": "multiple-choice",
+    "prompt": "The thermodynamic definition of entropy comes from macroscopic observations. According to the section, what does it not tell us?",
+    "choices": [
+      {
+        "text": "Why entropy behaves the way it does",
+        "correct": true
+      },
+      {
+        "text": "How to calculate an entropy change from heat",
+        "why": "That is exactly what dS = (δq_rev)/T does. What it leaves out is why entropy behaves this way, which the statistical view explains."
+      },
+      {
+        "text": "Whether entropy depends on the temperature",
+        "why": "The definition contains T directly, in dS = (δq_rev)/T. What it lacks is an explanation of why entropy behaves this way."
+      },
+      {
+        "text": "How entropy applies to bulk samples",
+        "why": "Bulk samples are where the thermodynamic definition works best. It is practical but doesn't say why entropy behaves as it does."
+      }
+    ],
+    "explanation": "The thermodynamic definition is practical and works well at the bulk level, but it does not say why entropy behaves this way. The statistical definition supplies the reason."
+  },
+  {
+    "id": "pc20-statistical-s-why-thermo-works",
+    "type": "multiple-choice",
+    "prompt": "According to the section, why does the thermodynamic definition of entropy work?",
+    "choices": [
+      {
+        "text": "Energy dispersal comes from the vast number of microstates",
+        "correct": true
+      },
+      {
+        "text": "Energy is conserved in every process the system undergoes",
+        "why": "Energy conservation is the first law, and it says nothing about dispersal. The definition works because energy dispersal arises from the vast number of microscopic arrangements."
+      },
+      {
+        "text": "Macroscopic laws do not depend on atoms at all",
+        "why": "The section says the opposite: the atomic picture explains the macroscopic one. Energy dispersal arises from the overwhelming number of ways energy can be arranged."
+      },
+      {
+        "text": "Every molecule always holds the same, fixed amount of energy",
+        "why": "Molecules share the energy in many different ways, and that is the point. The overwhelming number of such arrangements produces the dispersal that the thermodynamic definition measures."
+      }
+    ],
+    "explanation": "The statistical definition explains the thermodynamic one: macroscopic energy dispersal arises from the overwhelming number of microscopic ways the energy can be arranged. Both definitions describe the same entropy."
+  },
+  {
+    "id": "pc20-statistical-s-system-numeric",
+    "type": "numeric",
+    "prompt": "An ensemble of A = 1000 systems has an entropy of S_ensemble = 4.8 × 10^−19 J/K. Using S_system = S_ensemble/A, what is the entropy of one system, in J/K? (Type it in scientific notation, like 2.5e-22.)",
+    "answer": 4.8e-22,
+    "explanation": "S_system = (4.8 × 10^−19 J/K)/1000 = 4.8 × 10^−22 J/K. Dividing by A turns the entropy of the ensemble into the entropy per system."
+  },
+  {
+    "id": "pc20-statistical-s-dp3",
+    "type": "numeric",
+    "prompt": "A system has three states. During a small change, p_1 rises by 0.05 and p_2 falls by 0.02. Since Σ_j dp_j = 0, what is dp_3, including its sign? (Give it as a decimal.)",
+    "answer": -0.03,
+    "explanation": "dp_1 + dp_2 + dp_3 = 0, so dp_3 = −(0.05 − 0.02) = −0.03. The probabilities still add up to 1 after the change."
+  },
+  {
+    "id": "pc20-statistical-s-ds-two-state",
+    "type": "numeric",
+    "prompt": "A two-state system has p_1 = 0.90 and p_2 = 0.10, with ln 0.90 = −0.105 and ln 0.10 = −2.303. A small change gives dp_1 = −0.010 and dp_2 = +0.010. Using dS/k_B = −Σ_j ln p_j dp_j, what is dS/k_B? (Give it as a decimal.)",
+    "answer": 0.022,
+    "explanation": "dS/k_B = −[(−0.105)(−0.010) + (−2.303)(+0.010)] = −[0.00105 − 0.02303] = +0.0220. Moving probability toward the less likely state evens out the p_j and raises the entropy."
+  }
+]

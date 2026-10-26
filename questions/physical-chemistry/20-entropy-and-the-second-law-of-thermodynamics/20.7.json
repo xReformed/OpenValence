@@ -1,0 +1,549 @@
+[
+  {
+    "id": "pc20-heat-engines-dissipation",
+    "type": "multiple-choice",
+    "prompt": "The section calls one energy conversion dissipation and says there is no limitation on it at all. What is dissipation?",
+    "choices": [
+      {
+        "text": "Turning work into heat, as by friction",
+        "correct": true
+      },
+      {
+        "text": "Turning heat into work, as in an engine",
+        "why": "That is the conversion the second law limits. Dissipation goes the other way: work turned into heat, for example by friction."
+      },
+      {
+        "text": "Heat flowing from a cold body to a hot one",
+        "why": "That needs a heat pump and work put in. Dissipation is the free conversion of work into heat, for example by friction."
+      },
+      {
+        "text": "Energy being destroyed as a process runs",
+        "why": "Energy is never destroyed; the first law conserves it. Dissipation turns work into heat, which is how friction showed that heat and work are both forms of energy."
+      }
+    ],
+    "explanation": "Dissipation is the conversion of work into heat, for example by friction, and nothing limits it. It was through dissipation by friction that heat and work were recognized as both forms of energy."
+  },
+  {
+    "id": "pc20-heat-engines-engine-definition",
+    "type": "multiple-choice",
+    "prompt": "What does a heat engine do?",
+    "choices": [
+      {
+        "text": "It converts heat energy into work",
+        "correct": true
+      },
+      {
+        "text": "It converts work entirely into heat",
+        "why": "That is dissipation, which needs no engine. A heat engine runs the other way, taking in heat and turning part of it into work."
+      },
+      {
+        "text": "It makes heat flow from a cold body to a hot one",
+        "why": "That is what a heat pump or a refrigerator does, and it needs work put in. A heat engine takes in heat and gives out work."
+      },
+      {
+        "text": "It creates energy from a hot source",
+        "why": "No device creates energy; the first law forbids it. A heat engine converts part of the heat it takes in into work."
+      }
+    ],
+    "explanation": "A heat engine takes in heat at a high temperature, turns part of it into work and gives out the rest at a low temperature. The Carnot cycle is the section's model of such an engine."
+  },
+  {
+    "id": "pc20-heat-engines-carnot-steps",
+    "type": "multiple-choice",
+    "prompt": "Which sequence of four steps makes up the Carnot cycle, starting at the hot temperature T_h?",
+    "choices": [
+      {
+        "text": "Isothermal expansion, adiabatic cooling, isothermal compression, adiabatic heating",
+        "correct": true
+      },
+      {
+        "text": "Isothermal expansion, constant-volume cooling, isothermal compression, constant-volume heating",
+        "why": "Constant-volume steps belong to the Stirling cycle. The Carnot cycle joins its two isotherms with two adiabats."
+      },
+      {
+        "text": "Adiabatic expansion, isothermal cooling, adiabatic compression, isothermal heating",
+        "why": "An isothermal step keeps T fixed, so it can't cool or heat the gas. In the Carnot cycle the temperature changes only in the adiabatic steps."
+      },
+      {
+        "text": "Isobaric expansion, adiabatic cooling, isobaric compression, adiabatic heating",
+        "why": "The Carnot cycle has no constant-pressure steps. Heat is taken in and given out along the isotherms at T_h and T_c."
+      }
+    ],
+    "explanation": "The gas expands isothermally at T_h, taking in q_h; it cools adiabatically to T_c; it is compressed isothermally at T_c, giving out heat; and it is heated adiabatically back to T_h. All four steps are reversible."
+  },
+  {
+    "id": "pc20-heat-engines-net-work-area",
+    "type": "multiple-choice",
+    "prompt": "On the P–V diagram of a Carnot cycle, what does the net work of one cycle correspond to?",
+    "choices": [
+      {
+        "text": "The area enclosed by the cycle's four curves",
+        "correct": true
+      },
+      {
+        "text": "The area under the upper isotherm only",
+        "why": "That area is the work of the expansion at T_h alone. The compression at T_c takes some of it back, so the net work is the area between the curves."
+      },
+      {
+        "text": "The area under the lower isotherm only",
+        "why": "That area is the work done on the gas during the compression at T_c. The net work is the area between the upper and lower paths, which the cycle encloses."
+      },
+      {
+        "text": "The heat given out at the cold temperature",
+        "why": "Heat given out at T_c is energy lost to the cold side, not work. On the P–V diagram the net work is the area the cycle encloses."
+      }
+    ],
+    "explanation": "The work of each step is the area under its curve on the P–V diagram. Around the cycle, the work done by the gas along the upper path minus the work done on it along the lower path leaves the area enclosed between them."
+  },
+  {
+    "id": "pc20-heat-engines-adiabats-cancel",
+    "type": "multiple-choice",
+    "prompt": "For 1 mol of ideal gas in a Carnot cycle, the two adiabatic steps have w_2 = C̄_V(T_c − T_h) and w_4 = C̄_V(T_h − T_c). What do these two steps add to the net work of the cycle?",
+    "choices": [
+      {
+        "text": "Nothing, since w_2 and w_4 cancel",
+        "correct": true
+      },
+      {
+        "text": "Twice C̄_V(T_h − T_c)",
+        "why": "The two works have opposite signs: one step cools the gas and the other heats it by the same amount. Their sum is zero."
+      },
+      {
+        "text": "All of the net work of the cycle",
+        "why": "The adiabatic works cancel each other. The net work comes from the two isotherms: w_cycle = −R(T_h − T_c) ln(V_B/V_A)."
+      },
+      {
+        "text": "C̄_V T_h, the energy held at the hot temperature",
+        "why": "The adiabatic steps change the temperature by T_h − T_c in opposite directions. Their works are equal and opposite, so together they add nothing."
+      }
+    ],
+    "explanation": "w_2 + w_4 = C̄_V(T_c − T_h) + C̄_V(T_h − T_c) = 0. This is why the net work comes only from the two isothermal steps."
+  },
+  {
+    "id": "pc20-heat-engines-efficiency-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section defines the efficiency of a heat engine as η = |w_cycle|/q_h. What does η compare?",
+    "choices": [
+      {
+        "text": "The work out with the heat taken in at T_h",
+        "correct": true
+      },
+      {
+        "text": "The heat taken in with the heat given out",
+        "why": "q_h and q_c both appear in η = 1 + q_c/q_h, but η is defined as the work out per unit of heat taken in, |w_cycle|/q_h."
+      },
+      {
+        "text": "The work out with the heat given out at T_c",
+        "why": "The heat given out at T_c is wasted, but η divides the work by the heat taken in at T_h, the heat that was paid for with fuel."
+      },
+      {
+        "text": "The hot temperature with the cold temperature",
+        "why": "For a Carnot engine η can be written with temperatures, 1 − T_c/T_h, but its definition is |w_cycle|/q_h: the work you get for the heat you put in."
+      }
+    ],
+    "explanation": "η = |w_cycle|/q_h tells how much work you get for the heat you put in, the heat that costs fuel. Since some heat must always be given out at T_c, η is less than 1."
+  },
+  {
+    "id": "pc20-heat-engines-temperatures-only",
+    "type": "multiple-choice",
+    "prompt": "The section finds η = (R(T_h − T_c) ln(V_B/V_A))/(RT_h ln(V_B/V_A)) for a Carnot engine running on 1 mol of ideal gas. What does this show about the efficiency?",
+    "choices": [
+      {
+        "text": "It depends only on the two temperatures",
+        "correct": true
+      },
+      {
+        "text": "It is larger for a larger volume ratio V_B/V_A",
+        "why": "ln(V_B/V_A) appears above and below the fraction and cancels. Expanding further gives more work per cycle but the same efficiency, 1 − T_c/T_h."
+      },
+      {
+        "text": "It depends on which ideal gas is used",
+        "why": "R is the same for every ideal gas and cancels anyway, and the adiabatic C̄_V terms dropped out earlier. η = 1 − T_c/T_h for any working gas."
+      },
+      {
+        "text": "It grows as the gas pressure is raised",
+        "why": "No pressure appears in the result. Once R and ln(V_B/V_A) cancel, η = 1 − T_c/T_h depends only on the temperatures."
+      }
+    ],
+    "explanation": "R and ln(V_B/V_A) appear in both the top and the bottom, so they cancel and η = (T_h − T_c)/T_h = 1 − T_c/T_h. Neither the gas nor how far it expands changes the efficiency."
+  },
+  {
+    "id": "pc20-heat-engines-carnot-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the efficiency η of a Carnot engine working between a hot temperature T_h and a cold temperature T_c?",
+    "choices": [
+      {
+        "text": "η = 1 − T_c/T_h",
+        "correct": true
+      },
+      {
+        "text": "η = T_c/T_h",
+        "why": "T_c/T_h is the fraction of the heat that must be given out at T_c. The efficiency is what is left: η = 1 − T_c/T_h."
+      },
+      {
+        "text": "η = 1 − T_h/T_c",
+        "why": "Since T_h > T_c, this would make η negative. The efficiency is η = 1 − T_c/T_h, which lies between 0 and 1."
+      },
+      {
+        "text": "η = (T_h − T_c)/T_c",
+        "why": "Dividing by T_c can give values above 1, which is impossible. The temperature difference is divided by T_h: η = (T_h − T_c)/T_h = 1 − T_c/T_h."
+      }
+    ],
+    "explanation": "η = (T_h − T_c)/T_h = 1 − T_c/T_h, with both temperatures in kelvin. It depends only on the two temperatures, not on the gas."
+  },
+  {
+    "id": "pc20-heat-engines-qc-negative",
+    "type": "multiple-choice",
+    "prompt": "The section writes the efficiency of a heat engine as η = 1 + q_c/q_h. Why is η less than 1?",
+    "choices": [
+      {
+        "text": "q_c is heat leaving the gas, so it is negative",
+        "correct": true
+      },
+      {
+        "text": "q_h is negative because heat leaves the hot side",
+        "why": "q_h is heat entering the gas from the hot side, so it is positive. It is q_c, the heat the gas gives out at T_c, that is negative."
+      },
+      {
+        "text": "q_c is larger than q_h",
+        "why": "If q_c were larger than q_h, η would be greater than 1. q_c is the heat given out at T_c, so it is negative and makes η less than 1."
+      },
+      {
+        "text": "Some heat is lost from the cycle by friction",
+        "why": "The Carnot cycle is reversible and has no friction. η is below 1 even so, because heat q_c (a negative quantity) must be given out at T_c."
+      }
+    ],
+    "explanation": "Heat entering the gas is positive and heat leaving it is negative. The gas takes in q_h > 0 at T_h and gives out q_c < 0 at T_c, so η = 1 + q_c/q_h = (q_h + q_c)/q_h is less than 1."
+  },
+  {
+    "id": "pc20-heat-engines-full-efficiency",
+    "type": "multiple-choice",
+    "prompt": "According to the Carnot efficiency, η = 1 − T_c/T_h, what would it take for a heat engine to turn all the heat it takes in into work?",
+    "choices": [
+      {
+        "text": "A cold side at 0 K",
+        "correct": true
+      },
+      {
+        "text": "A hot side at 0 K",
+        "why": "The hot side must be hotter than the cold one. η = 1 needs T_c/T_h = 0, which means T_c = 0 K, a temperature that is never reached."
+      },
+      {
+        "text": "Hot and cold sides at the same temperature",
+        "why": "Equal temperatures give η = 1 − 1 = 0: no work at all. Full efficiency would need T_c = 0 K."
+      },
+      {
+        "text": "A gas with a very large heat capacity",
+        "why": "The heat capacity cancels out of the Carnot efficiency. Only the temperatures matter, and η = 1 needs T_c = 0 K."
+      }
+    ],
+    "explanation": "η reaches 1 only if T_c/T_h = 0, that is, T_c = 0 K. Since that never happens, every heat engine must waste some of the heat it takes in."
+  },
+  {
+    "id": "pc20-heat-engines-equal-temperatures",
+    "type": "multiple-choice",
+    "prompt": "A heat engine's hot and cold sides are at the same temperature, T_c = T_h. How much work can it get from heat in each cycle?",
+    "choices": [
+      {
+        "text": "None, however much heat is available",
+        "correct": true
+      },
+      {
+        "text": "All of the heat taken in",
+        "why": "With T_c = T_h, η = 1 − 1 = 0. No work can be obtained, no matter how much heat is available."
+      },
+      {
+        "text": "Half of the heat taken in",
+        "why": "η = 1 − T_c/T_h = 0 when the temperatures are equal. A temperature difference is needed to get any work from heat."
+      },
+      {
+        "text": "An amount set by the heat capacity of the gas",
+        "why": "The Carnot efficiency depends only on the temperatures. When they are equal, η = 0 and no work is obtained."
+      }
+    ],
+    "explanation": "With T_c = T_h, η = 1 − T_c/T_h = 0, and the area enclosed by the cycle shrinks to nothing. So work that is dissipated into heat isothermally can never be retrieved."
+  },
+  {
+    "id": "pc20-heat-engines-entropy-two-terms",
+    "type": "multiple-choice",
+    "prompt": "For the Carnot cycle the section writes ∮dS = q_h/T_h + q_c/T_c = 0. Why do only the two isothermal steps appear in this sum?",
+    "choices": [
+      {
+        "text": "The adiabatic steps exchange no heat",
+        "correct": true
+      },
+      {
+        "text": "The adiabatic steps do no work",
+        "why": "The adiabatic steps do work, w = C̄_V ΔT for 1 mol. They drop out of ∮dS because no heat flows in them."
+      },
+      {
+        "text": "Entropy is not a state function in the adiabatic steps",
+        "why": "Entropy is a state function everywhere. The adiabatic steps add nothing to ∮dS because they are reversible and exchange no heat."
+      },
+      {
+        "text": "The temperature is zero in the adiabatic steps",
+        "why": "The temperature runs between T_h and T_c in these steps. They drop out because their heat is zero, not their temperature."
+      }
+    ],
+    "explanation": "Entropy changes by (δq_rev)/T, and the reversible adiabats have q = 0. Only the isotherms contribute, and setting the sum to zero gives q_c/q_h = −T_c/T_h."
+  },
+  {
+    "id": "pc20-heat-engines-carnot-cold-side",
+    "type": "multiple-choice",
+    "prompt": "What did Sadi Carnot show about the cold side of a heat engine?",
+    "choices": [
+      {
+        "text": "Its temperature matters as much as the hot source",
+        "correct": true
+      },
+      {
+        "text": "It plays no part in setting the engine's efficiency",
+        "why": "Carnot showed the opposite: η = 1 − T_c/T_h depends on T_c just as much as on T_h."
+      },
+      {
+        "text": "It must be colder than 0 K to get any work",
+        "why": "No temperature is below 0 K, and work is obtained whenever T_c < T_h. The cold temperature matters as much as the hot one in setting η."
+      },
+      {
+        "text": "It only matters for engines that run on steam",
+        "why": "The Carnot efficiency holds for any reversible engine between two temperatures. The cold temperature is as important as the hot source."
+      }
+    ],
+    "explanation": "Carnot, a French engineer of the early 19th century, showed that the cold temperature is as important as the heat source in setting a heat engine's possible efficiency. η = 1 − T_c/T_h makes this plain: lowering T_c raises η."
+  },
+  {
+    "id": "pc20-heat-engines-geyser-dumped",
+    "type": "multiple-choice",
+    "prompt": "The section's example engine takes heat from a geyser at 400 K and dumps heat into a river at 300 K. Its best efficiency is 25%. At best, what fraction of the heat taken in is dumped into the river?",
+    "choices": [
+      {
+        "text": "Three quarters",
+        "correct": true
+      },
+      {
+        "text": "One quarter",
+        "why": "One quarter is the fraction turned into work. The rest, 1 − 0.25 = 0.75, must be dumped into the river."
+      },
+      {
+        "text": "None of the heat",
+        "why": "Only an engine with T_c = 0 K would dump nothing. Here three quarters of the heat goes into the river even in the best case."
+      },
+      {
+        "text": "Half",
+        "why": "Half would match an efficiency of 50%. With η = 25%, the share dumped is 1 − 0.25 = 0.75."
+      }
+    ],
+    "explanation": "η = 1 − 300/400 = 0.25, so a quarter of the heat becomes work and three quarters, |q_c|/q_h = T_c/T_h = 0.75, flows into the river. Real engines lose even more, for example to friction."
+  },
+  {
+    "id": "pc20-heat-engines-pump-reverse",
+    "type": "multiple-choice",
+    "prompt": "What happens when a Carnot heat engine is run backwards as a heat pump?",
+    "choices": [
+      {
+        "text": "Work is put in, and heat flows from cold to hot",
+        "correct": true
+      },
+      {
+        "text": "Work comes out, and heat flows from cold to hot",
+        "why": "Heat does not flow from cold to hot by itself. Running the cycle backwards takes work in to pump heat from the cold side to the hot side."
+      },
+      {
+        "text": "No work is needed, and heat flows from hot to cold",
+        "why": "That is ordinary heat flow, which needs no pump. Reversing the engine means putting work in to move heat from cold to hot."
+      },
+      {
+        "text": "Work is put in, and heat flows from hot to cold",
+        "why": "Heat already flows from hot to cold without any work. A heat pump uses the work put in to move heat the other way, from cold to hot."
+      }
+    ],
+    "explanation": "Reversing all the flows of the engine means putting work in to move heat from the cold side, such as a garden, to the hot side, such as a warm apartment."
+  },
+  {
+    "id": "pc20-heat-engines-pump-better-deal",
+    "type": "multiple-choice",
+    "prompt": "To heat an apartment, why is running a heat pump on 100 J of work a better deal than dissipating the same 100 J of work in the apartment?",
+    "choices": [
+      {
+        "text": "The pump also delivers heat taken from outside",
+        "correct": true
+      },
+      {
+        "text": "The pump turns more than 100 J of work into heat",
+        "why": "Energy is conserved: 100 J of work gives at most 100 J of heat. The pump adds the heat it pumps out of the cold garden."
+      },
+      {
+        "text": "Dissipating work produces no heat at all",
+        "why": "Dissipating 100 J of work gives 100 J of heat. The pump gives more because it also moves heat in from outside."
+      },
+      {
+        "text": "A heat pump needs no work to run",
+        "why": "A heat pump needs work to move heat from cold to hot. It is a better deal because the heat delivered is the work plus the heat pumped in."
+      }
+    ],
+    "explanation": "The heat delivered is the work dissipated plus the heat pumped out of the garden: in the section's example, 100 J + 300 J = 400 J. Dissipating the work directly gives only 100 J."
+  },
+  {
+    "id": "pc20-heat-engines-electric-heating",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call heating an apartment with electrical heaters even worse than burning oil in the apartment?",
+    "choices": [
+      {
+        "text": "Making electricity from heat first wastes much of it",
+        "correct": true
+      },
+      {
+        "text": "Electrical work cannot be dissipated into heat",
+        "why": "Electrical work dissipates into heat freely. The waste happens earlier: making the electricity from burned fuel dumps much heat at the cold side, such as a river."
+      },
+      {
+        "text": "Electrical heaters pump heat out of the apartment",
+        "why": "Plain electrical heaters pump no heat at all. The problem is that generating the electricity from heat first wastes a large part of it."
+      },
+      {
+        "text": "Electrical heat is at a lower temperature than oil heat",
+        "why": "The temperature of the heater is not the issue. Generating the electricity from heat dumps much of that heat at the cold side before any work reaches the apartment."
+      }
+    ],
+    "explanation": "More oil must be burned to make heat, that heat is turned into electrical work by a heat engine that dumps much of it at the cold side, and the work is then just dissipated in the apartment. None of the work is used to pump heat in from outside."
+  },
+  {
+    "id": "pc20-heat-engines-fridge-door",
+    "type": "multiple-choice",
+    "prompt": "A refrigerator is a heat pump that moves heat from its inside to the kitchen. What happens if its door is left open?",
+    "choices": [
+      {
+        "text": "It just dissipates electrical work as heat",
+        "correct": true
+      },
+      {
+        "text": "It cools the whole kitchen down instead",
+        "why": "The heat it pumps out flows straight back in through the open door, and the work it uses ends up as heat. The kitchen is not cooled."
+      },
+      {
+        "text": "It stops drawing any electrical work at all",
+        "why": "The motor keeps running and using work. With the door open the pumped heat flows back in, so the work is just dissipated."
+      },
+      {
+        "text": "It turns the kitchen's heat into work",
+        "why": "A refrigerator takes work in; it does not produce work. With the door open, the work it uses is just dissipated as heat."
+      }
+    ],
+    "explanation": "With the door open, the heat pumped out flows straight back into the refrigerator's inside. All it achieves is to dissipate electrical work, which warms the kitchen, and the milk spoils."
+  },
+  {
+    "id": "pc20-heat-engines-stirling-steps",
+    "type": "multiple-choice",
+    "prompt": "How does the ideal Stirling cycle differ from the Carnot cycle?",
+    "choices": [
+      {
+        "text": "Its isotherms are joined by constant-volume steps",
+        "correct": true
+      },
+      {
+        "text": "It has no isothermal steps",
+        "why": "The Stirling cycle keeps an isothermal expansion at T_h and an isothermal compression at T_c. It is the Carnot cycle's adiabats that become constant-volume steps."
+      },
+      {
+        "text": "Its isotherms are joined by constant-pressure steps",
+        "why": "The steps between the isotherms keep the volume fixed, not the pressure. They heat and cool the gas at constant V."
+      },
+      {
+        "text": "It needs only one temperature",
+        "why": "Like any heat engine it works between a hot T_h and a cold T_c. If T_h = T_c, the area enclosed by the cycle vanishes and no work is done."
+      }
+    ],
+    "explanation": "The Stirling cycle has an isothermal expansion at T_h and an isothermal compression at T_c, like the Carnot cycle. It joins them with isochoric (constant-volume) heating and cooling instead of adiabats."
+  },
+  {
+    "id": "pc20-heat-engines-stirling-isochoric-cancel",
+    "type": "multiple-choice",
+    "prompt": "In the Stirling cycle, the gas takes in heat C_V ΔT in its constant-volume heating step and gives out C_V ΔT in its constant-volume cooling step. What do these two heats do to the net work?",
+    "choices": [
+      {
+        "text": "Nothing, because they cancel each other",
+        "correct": true
+      },
+      {
+        "text": "They double the net work of the cycle",
+        "why": "One heat is taken in and the other given out, with the same size C_V ΔT. They cancel, so the net work is set by q_h and q_c."
+      },
+      {
+        "text": "They supply all of the net work of the cycle",
+        "why": "The isochoric heats cancel each other. The net work equals the difference between the heat taken in at T_h and the heat given out at T_c."
+      },
+      {
+        "text": "They make the efficiency exactly 100%",
+        "why": "Some heat must still be given out at T_c, since q_c is zero only at T_c = 0 K. The isochoric heats simply cancel."
+      }
+    ],
+    "explanation": "q_2 = C_V ΔT and q_4 = −C_V ΔT add up to zero. The net work is then the difference between the heat q_h picked up at T_h and the heat dumped at T_c, as in the Carnot cycle."
+  },
+  {
+    "id": "pc20-heat-engines-eta-500-300",
+    "type": "numeric",
+    "prompt": "A Carnot engine takes in heat at T_h = 500 K and gives out heat at T_c = 300 K. Using η = 1 − T_c/T_h, what is its efficiency, as a fraction between 0 and 1? (Give it as a decimal.)",
+    "answer": 0.4,
+    "explanation": "η = 1 − 300/500 = 1 − 0.60 = 0.40. At best, 40% of the heat taken in at 500 K becomes work, and the other 60% must be given out at 300 K."
+  },
+  {
+    "id": "pc20-heat-engines-eta-from-heats",
+    "type": "numeric",
+    "prompt": "In one cycle, a heat engine takes in q_h = 1000 J at its hot side and gives out q_c = −700 J at its cold side. Using η = 1 + q_c/q_h, what is its efficiency, as a fraction between 0 and 1? (Give it as a decimal.)",
+    "answer": 0.3,
+    "explanation": "η = 1 + (−700 J)/(1000 J) = 1 − 0.70 = 0.30. The work out, q_h + q_c = 300 J, is 30% of the heat taken in."
+  },
+  {
+    "id": "pc20-heat-engines-wcycle-from-heats",
+    "type": "numeric",
+    "prompt": "Around a closed cycle ΔU = 0, so q_h + q_c = −w_cycle. In one cycle an engine takes in q_h = 1200 J and gives out q_c = −900 J. What is w_cycle, in J, including its sign?",
+    "answer": -300,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "w_cycle = −(q_h + q_c) = −(1200 J − 900 J) = −300 J. The negative sign means the gas does 300 J of work on the surroundings in each cycle."
+  },
+  {
+    "id": "pc20-heat-engines-qc-from-entropy",
+    "type": "numeric",
+    "prompt": "For a Carnot cycle, ∮dS = 0 gives q_c/q_h = −T_c/T_h. An engine working between T_h = 600 K and T_c = 400 K takes in q_h = 900 J. What is q_c, in J, including its sign?",
+    "answer": -600,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "q_c = −q_h × T_c/T_h = −900 J × 400/600 = −600 J. The gas gives out 600 J at 400 K, so only 300 J of the 900 J becomes work."
+  },
+  {
+    "id": "pc20-heat-engines-pump-total-heat",
+    "type": "numeric",
+    "prompt": "A heat pump uses 120 J of work to pump 360 J of heat out of a cold garden, and all of this energy ends up as heat in a warm apartment. How much heat, in J, does the apartment receive?",
+    "answer": 480,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "Heat delivered = work dissipated + heat pumped = 120 J + 360 J = 480 J. Dissipating the 120 J of work directly in the apartment would give only 120 J."
+  },
+  {
+    "id": "pc20-heat-engines-wcycle-carnot-ideal",
+    "type": "numeric",
+    "prompt": "For 1 mol of ideal gas in a Carnot cycle, the net work is w_cycle = −R(T_h − T_c) ln(V_B/V_A). Take R = 8.314 J/(mol·K), T_h = 450 K, T_c = 350 K and ln(V_B/V_A) = 1.099. What is w_cycle, in J, including its sign?",
+    "answer": -914,
+    "unit": "J",
+    "explanation": "w_cycle = −8.314 × (450 − 350) × 1.099 J = −8.314 × 100 × 1.099 J ≈ −914 J. The adiabatic steps cancel, so only the temperature difference between the two isotherms matters."
+  },
+  {
+    "id": "pc20-heat-engines-th-needed",
+    "type": "numeric",
+    "prompt": "A Carnot engine gives out heat at T_c = 280 K. Rearranging η = 1 − T_c/T_h gives T_h = T_c/(1 − η). What hot temperature T_h, in K, would give an efficiency of η = 0.60?",
+    "answer": 700,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "T_h = (280 K)/(1 − 0.60) = (280 K)/0.40 = 700 K. Check: 1 − 280/700 = 1 − 0.40 = 0.60."
+  },
+  {
+    "id": "pc20-heat-engines-max-work",
+    "type": "numeric",
+    "prompt": "A Carnot engine works between T_h = 800 K and T_c = 200 K and takes in q_h = 2000 J in each cycle. Using |w_cycle| = q_h(1 − T_c/T_h), how much work, in J, does it do per cycle?",
+    "answer": 1500,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "|w_cycle| = 2000 J × (1 − 200/800) = 2000 J × 0.75 = 1500 J. The other 500 J must be given out at 200 K."
+  }
+]

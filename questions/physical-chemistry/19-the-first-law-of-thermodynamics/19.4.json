@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pc19-state-function-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section says that internal energy, U, is a state function. What does that mean?",
+    "choices": [
+      {
+        "text": "ΔU depends only on the initial and final states",
+        "correct": true
+      },
+      {
+        "text": "ΔU depends on the path taken between the states",
+        "why": "That describes a path function, such as q or w. For U, ΔU = U_2 − U_1 whatever path is followed."
+      },
+      {
+        "text": "U can be produced or destroyed during a process",
+        "why": "The section says the opposite: energy is conserved. Being a state function means that ΔU is fixed by the end states alone."
+      },
+      {
+        "text": "U has the same value in every state of the system",
+        "why": "U differs from state to state; what is fixed is the change between two given states. ΔU = U_2 − U_1 depends only on those end points."
+      }
+    ],
+    "explanation": "A state function has a value fixed by the state of the system. So going from state 1 to state 2 always gives ΔU = U_2 − U_1, no matter which path is taken."
+  },
+  {
+    "id": "pc19-state-function-d-and-delta",
+    "type": "multiple-choice",
+    "prompt": "In dU = δw + δq, the section writes a straight d for U but a crooked δ for work and heat. Why?",
+    "choices": [
+      {
+        "text": "U is a state function; w and q depend on the path",
+        "correct": true
+      },
+      {
+        "text": "δ marks finite changes, and d marks small ones",
+        "why": "dU, δw and δq are all infinitesimal changes. The δ marks that work and heat depend on the path, unlike U."
+      },
+      {
+        "text": "δ marks quantities that are always negative",
+        "why": "δq and δw can be positive or negative. The δ marks a path-dependent quantity, while the straight d marks the change of a state function."
+      },
+      {
+        "text": "d is used for energy, and δ for other quantities",
+        "why": "Work and heat are energy transfers too, measured in the same units as U. The difference is that U is a state function and w and q are not."
+      }
+    ],
+    "explanation": "A straight d marks the change in a state function, which depends only on the end points. The crooked δ marks small amounts of work and heat, whose totals depend on the path taken."
+  },
+  {
+    "id": "pc19-state-function-infinitesimal",
+    "type": "multiple-choice",
+    "prompt": "When the section writes dU or δq, what kind of change does it mean?",
+    "choices": [
+      {
+        "text": "An infinitesimally small change",
+        "correct": true
+      },
+      {
+        "text": "A finite change, such as a whole ΔU",
+        "why": "A finite change like ΔU or q is found by integrating the small changes. dU and δq themselves are infinitesimal."
+      },
+      {
+        "text": "The change over one complete cycle",
+        "why": "A cycle is shown by the ∮ sign. dU and δq are infinitesimally small changes along a path."
+      },
+      {
+        "text": "A change at constant temperature only",
+        "why": "Nothing in the notation fixes the temperature. dU and δq mean infinitesimal changes, taken in the limit of the change going to zero."
+      }
+    ],
+    "explanation": "dU and δq mean infinitesimally small changes, in the limit of the change approaching zero. To get a finite ΔU, q or w, the small changes must be integrated."
+  },
+  {
+    "id": "pc19-state-function-cycle",
+    "type": "multiple-choice",
+    "prompt": "The section gives ∮dU = 0 as one way to state the first law. What does it say about a system taken around a cycle?",
+    "choices": [
+      {
+        "text": "U ends at the value it started with",
+        "correct": true
+      },
+      {
+        "text": "No heat flows at any point of the cycle",
+        "why": "Heat can flow during a cycle, since q depends on the path. Only the state function U must return to its starting value."
+      },
+      {
+        "text": "No work is done at any point of the cycle",
+        "why": "Work can be done during a cycle, since w depends on the path. Only U is sure to come back to its starting value."
+      },
+      {
+        "text": "U stays constant at every step of the cycle",
+        "why": "U can rise and fall along the way. The integral around the whole cycle is zero because U is back at its starting value at the end."
+      }
+    ],
+    "explanation": "The circle on ∮ means the path ends where it began. Since U is a state function, its total change around any cycle is zero, even though the heat and work need not be."
+  },
+  {
+    "id": "pc19-state-function-conserved",
+    "type": "multiple-choice",
+    "prompt": "The section says that heat and work can be produced, destroyed and transformed into each other. What is conserved all the same?",
+    "choices": [
+      {
+        "text": "The total energy",
+        "correct": true
+      },
+      {
+        "text": "The total heat",
+        "why": "Heat can be produced or destroyed, for instance by turning it into work. What is conserved is energy, which is why U is a state function."
+      },
+      {
+        "text": "The total work",
+        "why": "Work can be turned into heat and back, so it isn't conserved. Energy is, and U keeps track of it."
+      },
+      {
+        "text": "The ratio of heat to work",
+        "why": "The split between heat and work depends on the path. Only energy is conserved, which makes U a state function."
+      }
+    ],
+    "explanation": "Heat and work are two ways of transferring energy, and one can be turned into the other. Energy itself is conserved, so the section can do its bookkeeping with ΔU = w + q."
+  },
+  {
+    "id": "pc19-state-function-two-paths",
+    "type": "multiple-choice",
+    "prompt": "A gas is taken from the same state 1 to the same state 2 along two different paths. Which statement must be true?",
+    "choices": [
+      {
+        "text": "ΔU is the same for both, but q and w may differ",
+        "correct": true
+      },
+      {
+        "text": "q is the same for both, but w and ΔU may differ",
+        "why": "Heat depends on the path, so q can differ. It is ΔU = q + w that is fixed by the two end states."
+      },
+      {
+        "text": "w is the same for both, but q and ΔU may differ",
+        "why": "Work depends on the path, so w can differ. ΔU is the same because U is a state function."
+      },
+      {
+        "text": "ΔU, q and w may all differ between the two paths",
+        "why": "ΔU can't differ: U is a state function, so ΔU = U_2 − U_1 for any path. Only q and w may change."
+      }
+    ],
+    "explanation": "U is a state function, so ΔU = U_2 − U_1 for every path between the same two states. The heat and work are path functions, so the way ΔU splits into q and w can change from path to path."
+  },
+  {
+    "id": "pc19-state-function-cycle-work",
+    "type": "numeric",
+    "prompt": "A gas is taken around a cycle and ends in its starting state. Over the whole cycle it absorbs q = +450 J of heat. Using ΔU = q + w, what is the total work w done on the gas, in J?",
+    "answer": -450,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "U is a state function, so ΔU = 0 around a cycle. Then w = ΔU − q = 0 − 450 J = −450 J: the gas does 450 J of work on its surroundings."
+  },
+  {
+    "id": "pc19-state-function-second-path",
+    "type": "numeric",
+    "prompt": "A system goes from state 1 to state 2 along path 1 with q = +600 J and w = −250 J. Along a different path 2 between the same two states, w = −400 J. Using ΔU = q + w, what is q along path 2, in J?",
+    "answer": 750,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "Along path 1, ΔU = 600 J + (−250 J) = 350 J. U is a state function, so ΔU is also 350 J along path 2, and q = ΔU − w = 350 J − (−400 J) = 750 J."
+  },
+  {
+    "id": "pc19-state-function-signs",
+    "type": "numeric",
+    "prompt": "A system gives off 200 J of heat to its surroundings and does 300 J of work on them. Using ΔU = q + w, where q and w are positive when energy enters the system, what is ΔU, in J?",
+    "answer": -500,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "Heat leaving gives q = −200 J, and work done by the system gives w = −300 J. So ΔU = −200 J + (−300 J) = −500 J."
+  }
+]

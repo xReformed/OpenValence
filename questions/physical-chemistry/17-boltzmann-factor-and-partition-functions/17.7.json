@@ -1,0 +1,407 @@
+[
+  {
+    "id": "pc17-indistinguishable-single-q",
+    "type": "multiple-choice",
+    "prompt": "A single particle has two levels, E_1 = 0 and E_2 = ε. With β = 1/(kT), what is its molecular partition function q?",
+    "choices": [
+      {
+        "text": "1 + e^(−βε)",
+        "correct": true
+      },
+      {
+        "text": "e^(−βε)",
+        "why": "That is only the upper level's term. The lower level adds e^0 = 1, so q = 1 + e^(−βε)."
+      },
+      {
+        "text": "1 + 2e^(−βε)",
+        "why": "The factor 2 belongs to two distinguishable particles, where either one can be the excited one. A single particle has just one upper state."
+      },
+      {
+        "text": "1 − e^(−βε)",
+        "why": "q is a sum of Boltzmann factors, one for each state, so the terms add: q = 1 + e^(−βε)."
+      }
+    ],
+    "explanation": "q sums e^(−βE) over the particle's states: e^0 = 1 for the lower level and e^(−βε) for the upper one. Two such particles are the section's example."
+  },
+  {
+    "id": "pc17-indistinguishable-term-appears-twice",
+    "type": "multiple-choice",
+    "prompt": "Two distinguishable particles, one red and one blue, can each sit in a level at E_1 = 0 or E_2 = ε. Their partition function is Q = e^0 + e^(−βε) + e^(−βε) + e^(−2βε). Why does e^(−βε) appear twice?",
+    "choices": [
+      {
+        "text": "Either particle can be the excited one",
+        "correct": true
+      },
+      {
+        "text": "The upper level holds two states of the same energy",
+        "why": "Each level here is a single state. The two e^(−βε) terms come from two different states of the pair: red up with blue down, and blue up with red down."
+      },
+      {
+        "text": "Every term in Q is written once for each particle",
+        "why": "Then e^0 and e^(−2βε) would appear twice as well. Only the total energy ε can be reached in two different ways, red up or blue up."
+      },
+      {
+        "text": "It is a counting mistake that should be removed",
+        "why": "For distinguishable particles the two states really are different, so both terms belong. Only for indistinguishable particles do they merge into one."
+      }
+    ],
+    "explanation": "With distinguishable particles, red up with blue down and blue up with red down are two different states, both of total energy ε. Each contributes e^(−βε), so the sum has four terms, one for each state."
+  },
+  {
+    "id": "pc17-indistinguishable-q-squared",
+    "type": "multiple-choice",
+    "prompt": "For two distinguishable particles, each with levels at 0 and ε, Q = 1 + 2e^(−βε) + e^(−2βε). How is this related to the single-particle partition function q = 1 + e^(−βε)?",
+    "choices": [
+      {
+        "text": "Q = q^2",
+        "correct": true
+      },
+      {
+        "text": "Q = 2q",
+        "why": "2q = 2 + 2e^(−βε), which has no e^(−2βε) term. Squaring q gives (1 + e^(−βε))^2 = 1 + 2e^(−βε) + e^(−2βε), which is Q."
+      },
+      {
+        "text": "Q = q^2/2",
+        "why": "Dividing by 2! is the correction for indistinguishable particles. Distinguishable particles need no correction, so Q = q^2."
+      },
+      {
+        "text": "Q = q",
+        "why": "q describes one particle. For two independent, distinguishable particles the partition function is the product q × q = q^2."
+      }
+    ],
+    "explanation": "Expanding q^2 = (1 + e^(−βε))^2 gives 1 + 2e^(−βε) + e^(−2βε), the four-term sum. For distinguishable, independent particles the system's partition function is the product of the molecular ones."
+  },
+  {
+    "id": "pc17-indistinguishable-merged-states",
+    "type": "multiple-choice",
+    "prompt": "Two particles can each be in a lower level (energy 0) or an upper level (energy ε). If the particles are indistinguishable, which of the four distinguishable-particle states merge into one?",
+    "choices": [
+      {
+        "text": "The two with one particle in each level",
+        "correct": true
+      },
+      {
+        "text": "The two with both particles in the same level",
+        "why": "Both in the lower level (total energy 0) and both in the upper level (total energy 2ε) have different energies, so they stay separate. It is the one-up, one-down pair that can't be told apart."
+      },
+      {
+        "text": "All four, leaving a single state",
+        "why": "States with different total energies, 0, ε and 2ε, can always be told apart. Only the two states of energy ε merge, leaving three."
+      },
+      {
+        "text": "None, since swapping the particles makes a new state",
+        "why": "Swapping identical particles gives nothing new to observe. So one up and one down counts once, leaving three states."
+      }
+    ],
+    "explanation": "With identical particles there is no way to tell which one is excited, so the two middle states become a single state. The pair then has three states: both down, one in each level, and both up."
+  },
+  {
+    "id": "pc17-indistinguishable-term-both-up",
+    "type": "multiple-choice",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, Q = e^0 + e^(−βε) + e^(−2βε). Which state does the term e^(−2βε) describe?",
+    "choices": [
+      {
+        "text": "Both particles in the upper level",
+        "correct": true
+      },
+      {
+        "text": "One particle in each level",
+        "why": "That state has total energy ε and gives the middle term, e^(−βε). A total of 2ε needs both particles in the upper level."
+      },
+      {
+        "text": "Both particles in the lower level",
+        "why": "That state has total energy 0 and gives e^0 = 1. The e^(−2βε) term belongs to the state of energy 2ε."
+      },
+      {
+        "text": "One particle in a level at energy 2ε",
+        "why": "Each particle has only the levels 0 and ε. A total of 2ε means both particles are in the upper level."
+      }
+    ],
+    "explanation": "Each term is e^(−βE) for one state of the pair, where E is its total energy. Both particles in the upper level give E = ε + ε = 2ε, hence e^(−2βε)."
+  },
+  {
+    "id": "pc17-indistinguishable-overcounts",
+    "type": "multiple-choice",
+    "prompt": "If Q = q^2 were used for two indistinguishable particles in a two-level system, what would go wrong?",
+    "choices": [
+      {
+        "text": "It would count more states than can be observed",
+        "correct": true
+      },
+      {
+        "text": "It would count fewer states than can be observed",
+        "why": "q^2 has four terms, but identical particles have only three observable states. It overcounts rather than undercounts."
+      },
+      {
+        "text": "It would use the wrong energy levels",
+        "why": "The levels, 0 and ε, are the same either way. The problem is counting: q^2 counts the one-in-each-level state twice."
+      },
+      {
+        "text": "Nothing, since q^2 is exact for identical particles",
+        "why": "q^2 = 1 + 2e^(−βε) + e^(−2βε), while the exact sum for identical particles is 1 + e^(−βε) + e^(−2βε). The extra e^(−βε) is a double count."
+      }
+    ],
+    "explanation": "q^2 counts one particle up and the other down as two states, but for identical particles it is only one. So q^2 overestimates the number of observable states."
+  },
+  {
+    "id": "pc17-indistinguishable-overcounting-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section sets out to avoid over counting states. What does over counting mean here?",
+    "choices": [
+      {
+        "text": "Counting the same state of the system more than once",
+        "correct": true
+      },
+      {
+        "text": "Counting each state of a degenerate level separately",
+        "why": "Degenerate states are genuinely different states, and each one should be counted. Over counting means counting one state several times under different labels."
+      },
+      {
+        "text": "Including high-energy states that are hardly populated",
+        "why": "Those states belong in the sum; their tiny Boltzmann factors keep them from mattering. Over counting is counting one state more than once."
+      },
+      {
+        "text": "Counting the molecules twice when finding N",
+        "why": "N is simply the number of molecules. Over counting refers to the states in the sum for Q, where relabelled copies of one state were counted separately."
+      }
+    ],
+    "explanation": "For identical molecules, relabelling them gives back the same state, but q^(N) counts each relabelling separately. Avoiding over counting means making sure each state is counted only once."
+  },
+  {
+    "id": "pc17-indistinguishable-overcount-factor",
+    "type": "multiple-choice",
+    "prompt": "For a large system of N indistinguishable particles, by what factor does q^(N) overestimate the number of states?",
+    "choices": [
+      {
+        "text": "N!",
+        "correct": true
+      },
+      {
+        "text": "N",
+        "why": "The overcount comes from relabelling the particles, and N particles can be relabelled in N! ways, not N."
+      },
+      {
+        "text": "2",
+        "why": "2 is the number of ways to swap two particles, 2! = 2. For N particles the number of permutations is N!."
+      },
+      {
+        "text": "N^2",
+        "why": "The number of relabellings of N particles is N! = N × (N − 1) × … × 1, which grows much faster than N^2."
+      }
+    ],
+    "explanation": "From combinatorics, N particles can be permuted in N! ways that all describe the same observable state. So q^(N) overcounts by a factor of N!, and the section divides by it."
+  },
+  {
+    "id": "pc17-indistinguishable-why-divide",
+    "type": "multiple-choice",
+    "prompt": "Why does the section divide q^(N) by N! for N indistinguishable molecules?",
+    "choices": [
+      {
+        "text": "Permuting the molecules doesn't produce a new state",
+        "correct": true
+      },
+      {
+        "text": "The molecules interact, which removes some states",
+        "why": "The molecules are taken to be independent. The N! corrects the counting: the N! permutations of identical molecules all describe one state."
+      },
+      {
+        "text": "It turns Q from a per-molecule into a per-mole quantity",
+        "why": "Converting to moles would involve Avogadro's number, not N!. The N! removes repeated counts of the same state."
+      },
+      {
+        "text": "Each molecule has N! possible energy levels",
+        "why": "A molecule's levels don't depend on N. N! counts the permutations of the N molecules, which leave the state unchanged."
+      }
+    ],
+    "explanation": "With N molecules there are N! permutations that should not affect the outcome. q^(N) counts each of them as a separate state, so Q = q^(N)/N! counts each state once."
+  },
+  {
+    "id": "pc17-indistinguishable-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the partition function Q of N indistinguishable, independent molecules in terms of the molecular partition function q?",
+    "choices": [
+      {
+        "text": "q^(N)/N!",
+        "correct": true
+      },
+      {
+        "text": "q^(N)",
+        "why": "q^(N) is the result for distinguishable molecules. For indistinguishable ones it overcounts the states by N!, so it is divided by N!."
+      },
+      {
+        "text": "N! × q^(N)",
+        "why": "Multiplying by N! would make the overcounting worse. The N! permutations of identical molecules are removed by dividing."
+      },
+      {
+        "text": "q^(N)/N",
+        "why": "N molecules can be permuted in N! ways, not N, so the factor to divide by is N!."
+      }
+    ],
+    "explanation": "Q(N, V, β) = q(V, β)^(N)/N!. Dividing by N! removes the permutations of identical molecules, so each state is counted once."
+  },
+  {
+    "id": "pc17-indistinguishable-state-specifies",
+    "type": "multiple-choice",
+    "prompt": "For a system of indistinguishable particles, what does one state of the whole system specify?",
+    "choices": [
+      {
+        "text": "How many particles are in each level",
+        "correct": true
+      },
+      {
+        "text": "Which particle is in which level",
+        "why": "That would need labels the particles don't have. A state of identical particles only says how many of them are in each level."
+      },
+      {
+        "text": "Only the total energy of the system",
+        "why": "A state says more than the total energy: it gives the number of particles in every level. Different arrangements can share one total energy."
+      },
+      {
+        "text": "Only whether any particle is excited",
+        "why": "That would lump together one and two particles excited, which are different states. A state gives the number of particles in each level."
+      }
+    ],
+    "explanation": "Identical particles carry no labels, so swapping them changes nothing; a state is fixed by how many particles occupy each level. That is why two particles in two levels have just three states: two, one or none in the lower level."
+  },
+  {
+    "id": "pc17-indistinguishable-which-pair-distinguishable",
+    "type": "multiple-choice",
+    "prompt": "The section pictures distinguishable particles as a red and a blue ball, and indistinguishable ones as two identical black balls. Which pair of real particles is like the red and blue balls?",
+    "choices": [
+      {
+        "text": "A helium atom and an argon atom",
+        "correct": true
+      },
+      {
+        "text": "Two argon atoms in different energy levels",
+        "why": "Being in different levels doesn't label the atoms; swapping them gives the same state. Atoms of two different elements can be told apart."
+      },
+      {
+        "text": "Two helium atoms moving in opposite directions",
+        "why": "Identical atoms stay indistinguishable however they move. A helium atom and an argon atom can always be told apart."
+      },
+      {
+        "text": "Two CO2 molecules in a gas",
+        "why": "Two molecules of the same substance are identical, like the two black balls. Particles of different kinds are like the red and blue balls."
+      }
+    ],
+    "explanation": "Particles are distinguishable when something tells them apart, like the color of the balls. Atoms of different elements are; identical atoms are not, whatever states they are in."
+  },
+  {
+    "id": "pc17-indistinguishable-two-particle-not-exact",
+    "type": "multiple-choice",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, q^2/2 is not equal to the exact Q = 1 + e^(−βε) + e^(−2βε). Why not?",
+    "choices": [
+      {
+        "text": "It assumes no two particles share a state",
+        "correct": true
+      },
+      {
+        "text": "The N! correction works only when N is large",
+        "why": "The size of N isn't the problem: q^2/2 gets the one-in-each-level state exactly right. It fails on the states where both particles sit in the same level."
+      },
+      {
+        "text": "q = 1 + e^(−βε) is the wrong single-particle sum",
+        "why": "q is correct for one particle with levels 0 and ε. The error comes from dividing every term of q^2 by 2, even for states that were never double-counted."
+      },
+      {
+        "text": "Indistinguishable particles can't share one level",
+        "why": "They can, as the both-down and both-up states of the example show. The trouble is that q^2/2 halves those states, which q^2 had counted only once."
+      }
+    ],
+    "explanation": "In q^2 a state with the two particles in different levels appears twice, but a state with both in the same level appears only once. Dividing by 2! fixes the first kind and wrongly halves the second."
+  },
+  {
+    "id": "pc17-indistinguishable-q-half-matching-term",
+    "type": "multiple-choice",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, q^2/2 = 1/2 + e^(−βε) + (1/2)e^(−2βε), while the exact Q = 1 + e^(−βε) + e^(−2βε). Which state does q^2/2 weight correctly?",
+    "choices": [
+      {
+        "text": "One particle in each level",
+        "correct": true
+      },
+      {
+        "text": "Both particles in the lower level",
+        "why": "q^2/2 gives this state 1/2, but its exact weight is e^0 = 1. q^2 counted it only once, so halving it is wrong."
+      },
+      {
+        "text": "Both particles in the upper level",
+        "why": "q^2/2 gives this state (1/2)e^(−2βε) instead of e^(−2βε). Like the both-down state, it was counted only once in q^2."
+      },
+      {
+        "text": "All three states",
+        "why": "Only the middle term matches. The two states with both particles in one level get half their true weight."
+      }
+    ],
+    "explanation": "q^2 counts the one-in-each-level state twice, so dividing by 2 gives it the right weight, e^(−βε). The states with both particles in the same level were counted once, and halving them is the error."
+  },
+  {
+    "id": "pc17-indistinguishable-valid-when",
+    "type": "multiple-choice",
+    "prompt": "When is Q = q^(N)/N! a good approximation for N indistinguishable molecules?",
+    "choices": [
+      {
+        "text": "When accessible states far outnumber the molecules",
+        "correct": true
+      },
+      {
+        "text": "When there are fewer accessible states than molecules",
+        "why": "Then many molecules must share states, which is exactly where dividing by N! goes wrong. It works when states far outnumber molecules."
+      },
+      {
+        "text": "When nearly all molecules are in the ground state",
+        "why": "Then the molecules all share one state, the case the N! correction handles worst. It needs many more accessible states than molecules."
+      },
+      {
+        "text": "Only when the molecules are distinguishable",
+        "why": "Distinguishable molecules need no correction at all: Q = q^(N). The 1/N! is for identical molecules spread over many states."
+      }
+    ],
+    "explanation": "The N! correction assumes no two molecules occupy the same state. That holds when the number of accessible molecular states greatly exceeds N, so shared states are rare."
+  },
+  {
+    "id": "pc17-indistinguishable-high-t-limit",
+    "type": "numeric",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, Q = e^0 + e^(−βε) + e^(−2βε). At a very high temperature, e^(−βε) and e^(−2βε) both approach 1. What value does Q approach?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Q → 1 + 1 + 1 = 3. At high temperature every state has a Boltzmann factor near 1, so Q counts the states: three for identical particles, against four (q^2 → 2^2) for distinguishable ones."
+  },
+  {
+    "id": "pc17-indistinguishable-three-term-sum",
+    "type": "numeric",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, Q = 1 + e^(−βε) + e^(−2βε). At a temperature where e^(−βε) = 0.20 (so e^(−2βε) = 0.040), what is Q? (Give it as a decimal.)",
+    "answer": 1.24,
+    "explanation": "Q = 1 + 0.20 + 0.040 = 1.24. Using q^2 = (1.20)^2 = 1.44 instead would count the one-in-each-level state twice."
+  },
+  {
+    "id": "pc17-indistinguishable-four-labels",
+    "type": "numeric",
+    "prompt": "Four identical molecules are each in a different molecular state. If the molecules carried labels, in how many ways could the labels be arranged, all describing this one observable state?",
+    "answer": 24,
+    "tolerance": 0,
+    "explanation": "The number of permutations of 4 molecules is 4! = 4 × 3 × 2 × 1 = 24. q^(N) counts all 24 as separate states, which is why it is divided by N!."
+  },
+  {
+    "id": "pc17-indistinguishable-q-30-n-3",
+    "type": "numeric",
+    "prompt": "Three indistinguishable, independent molecules each have the molecular partition function q = 30. Using Q = q^(N)/N!, what is Q?",
+    "answer": 4500,
+    "explanation": "Q = 30^3/3! = 27000/6 = 4500. Without the N!, the result, 27000, would count each state six times."
+  },
+  {
+    "id": "pc17-indistinguishable-low-t-half",
+    "type": "numeric",
+    "prompt": "For two indistinguishable particles with levels at 0 and ε, q = 1 + e^(−βε). As the temperature approaches 0, e^(−βε) approaches 0. What value does q^2/2 approach? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "q → 1, so q^2/2 → 1/2 = 0.5. The exact Q approaches 1, the single state with both particles in the lower level; dividing by 2! fails because the two particles share a state."
+  },
+  {
+    "id": "pc17-indistinguishable-three-levels",
+    "type": "numeric",
+    "prompt": "Two indistinguishable particles can each be in any of three levels. How many different states can the pair be in?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Three states have both particles in one level, and three have them in two different levels (1 and 2, 1 and 3, 2 and 3), giving 6. Distinguishable particles would have 3 × 3 = 9."
+  }
+]

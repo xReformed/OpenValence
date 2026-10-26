@@ -1,0 +1,583 @@
+[
+  {
+    "id": "pc16-vdw-rk-two-corrections",
+    "type": "multiple-choice",
+    "prompt": "Which two features of real gas molecules does the van der Waals equation add to the ideal gas law?",
+    "choices": [
+      {
+        "text": "Their own volume and their attraction to each other",
+        "correct": true
+      },
+      {
+        "text": "Their mass and their overall electric charge",
+        "why": "Gas molecules are neutral overall, and mass already enters the kinetic picture behind the ideal gas law. The corrections account for the molecules' own volume and the attraction between them."
+      },
+      {
+        "text": "Their internal vibration and rotation",
+        "why": "The van der Waals equation says nothing about internal motions. It corrects for the non-zero volume of the molecules and the attraction between them."
+      },
+      {
+        "text": "Their speeds and their collisions with the walls",
+        "why": "The ideal gas law already includes wall collisions, through the kinetic picture of pressure. The van der Waals corrections are for molecular volume and attraction."
+      }
+    ],
+    "explanation": "The van der Waals equation adjusts the ideal gas law with two correction terms: b for the non-zero volume of the gas molecules and a for the attraction between them."
+  },
+  {
+    "id": "pc16-vdw-rk-when-needed",
+    "type": "multiple-choice",
+    "prompt": "According to the section, under which conditions do the corrections in the van der Waals and Redlich–Kwong equations become necessary?",
+    "choices": [
+      {
+        "text": "At higher pressures",
+        "correct": true
+      },
+      {
+        "text": "At very low pressures",
+        "why": "At low pressures the molecules' own volume and their attractions have little impact, so the ideal gas law works. The corrections matter at higher pressures."
+      },
+      {
+        "text": "Only for gases made of single atoms",
+        "why": "Any real gas, atomic or molecular, needs the corrections once the pressure is high enough. At low pressures all of them behave ideally."
+      },
+      {
+        "text": "Only when the gas is very hot",
+        "why": "High temperature isn't the trigger. The corrections are needed at higher pressures, where the molecules' volume and attractions have a large impact."
+      }
+    ],
+    "explanation": "The ideal gas law is valid at low pressures, where the finite volume of the particles and their attractions don't have a large impact. At higher pressures these effects must be accounted for."
+  },
+  {
+    "id": "pc16-vdw-rk-substance-specific",
+    "type": "multiple-choice",
+    "prompt": "Which statement about the van der Waals constants a and b is correct?",
+    "choices": [
+      {
+        "text": "Their values depend on the substance",
+        "correct": true
+      },
+      {
+        "text": "They are universal constants, like R",
+        "why": "Unlike R, a and b differ from gas to gas; the section's table lists different values for H2O, N2, CH4 and C2H6."
+      },
+      {
+        "text": "They are the same for all gases at one T",
+        "why": "a and b are properties of each substance. N2, for example, has a = 1.370 L^2·bar/mol^2, while C2H6 has 5.562."
+      },
+      {
+        "text": "They depend on the size of the container",
+        "why": "The container's volume is V, a separate variable. a and b are constants of the substance itself."
+      }
+    ],
+    "explanation": "The constants a and b depend on the substance. For example, the section's table gives b = 0.0387 L/mol for N2 but 0.0638 L/mol for C2H6."
+  },
+  {
+    "id": "pc16-vdw-rk-b-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the van der Waals equation, what does the constant b account for?",
+    "choices": [
+      {
+        "text": "The molecules' own volume",
+        "correct": true
+      },
+      {
+        "text": "The attraction between the gas molecules",
+        "why": "That is the job of a. The constant b corrects for the volume that the molecules themselves take up."
+      },
+      {
+        "text": "The volume of the container holding the gas",
+        "why": "The container's volume is V. b is the volume excluded per mole by the molecules themselves, so nb is subtracted from V."
+      },
+      {
+        "text": "The average speed of the gas molecules",
+        "why": "Speeds enter through the temperature. b is the volume per mole excluded by the molecules themselves."
+      }
+    ],
+    "explanation": "b represents the volume of the particles: molecules can't overlap, so each mole of them excludes a volume b. With n moles, the volume left for the molecules to move in is V − nb."
+  },
+  {
+    "id": "pc16-vdw-rk-a-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the van der Waals equation, what does the constant a account for?",
+    "choices": [
+      {
+        "text": "The attraction between the molecules",
+        "correct": true
+      },
+      {
+        "text": "The volume taken up by the molecules",
+        "why": "That is b. The constant a measures the attraction between molecules, which lowers the pressure."
+      },
+      {
+        "text": "The force of the molecules hitting the wall",
+        "why": "The impacts produce the pressure in the first place. a corrects for the attraction between molecules, which reduces the net force on the wall."
+      },
+      {
+        "text": "How the molecules' volume changes with heating",
+        "why": "Neither constant describes that. a measures the attraction between molecules; b, their own volume, isn't expected to change with temperature."
+      }
+    ],
+    "explanation": "a represents the intermolecular attractions. They reduce the pressure a real gas exerts, so the van der Waals equation subtracts an^2/V^2 from nRT/(V − nb)."
+  },
+  {
+    "id": "pc16-vdw-rk-ideal-limit",
+    "type": "multiple-choice",
+    "prompt": "What does the van der Waals equation, (P + an^2/V^2)(V − nb) = nRT, become if both a and b go to zero?",
+    "choices": [
+      {
+        "text": "PV = nRT",
+        "correct": true
+      },
+      {
+        "text": "P = 0",
+        "why": "Setting a = 0 and b = 0 removes only the correction terms. What is left is P × V = nRT, the ideal gas law."
+      },
+      {
+        "text": "V = nb",
+        "why": "That would describe molecules packed with no free space. With a = b = 0 the equation reduces to PV = nRT."
+      },
+      {
+        "text": "P = an^2/V^2",
+        "why": "That term vanishes when a = 0. With both corrections gone, the equation reduces to the ideal gas law, PV = nRT."
+      }
+    ],
+    "explanation": "With a = 0 the attraction term disappears, and with b = 0 the full volume V is available, leaving PV = nRT. The van der Waals equation is the ideal gas law with two corrections."
+  },
+  {
+    "id": "pc16-vdw-rk-lower-pressure",
+    "type": "multiple-choice",
+    "prompt": "At low pressures, how do the attractions between molecules change the pressure a real gas exerts, compared with the ideal gas law's prediction?",
+    "choices": [
+      {
+        "text": "They make it lower",
+        "correct": true
+      },
+      {
+        "text": "They make it higher",
+        "why": "Attraction holds molecules back, so they push less on the wall. That reduces the pressure."
+      },
+      {
+        "text": "They have no effect on it",
+        "why": "Attractions reduce the net force of the molecules on the wall, so the pressure is lower than the ideal value."
+      },
+      {
+        "text": "They make it fall to zero",
+        "why": "They reduce the pressure, but not to zero: molecules still hit the wall. The net force is the impact force minus the attraction."
+      }
+    ],
+    "explanation": "Molecular attractions make the pressure exerted by the gas less than the ideal gas law predicts. The van der Waals equation accounts for this with the term −an^2/V^2."
+  },
+  {
+    "id": "pc16-vdw-rk-attract-direction",
+    "type": "multiple-choice",
+    "prompt": "The net force of the gas on a wall is F_net = F_impact − F_attract. Which way does the attraction F_attract pull a molecule that is about to hit the wall?",
+    "choices": [
+      {
+        "text": "Back into the gas, away from the wall",
+        "correct": true
+      },
+      {
+        "text": "Toward the wall, adding to the impact",
+        "why": "Then attraction would raise the pressure. The other molecules are all on the gas side, so they pull the molecule back, away from the wall."
+      },
+      {
+        "text": "Along the wall, parallel to its surface",
+        "why": "Near the wall the other molecules lie on one side only, the gas side, so their net pull points back into the gas."
+      },
+      {
+        "text": "Nowhere, because pulls from all sides cancel",
+        "why": "They cancel only deep inside the gas. Near the wall all the other molecules are on one side, so the net pull is back into the gas."
+      }
+    ],
+    "explanation": "A molecule near the wall has other gas molecules on one side only, so their attraction pulls it back into the gas. That is why the attraction is subtracted, F_net = F_impact − F_attract, and the pressure is less than for an ideal gas."
+  },
+  {
+    "id": "pc16-vdw-rk-corrected-pressure",
+    "type": "multiple-choice",
+    "prompt": "In (P + an^2/V^2)(V − nb) = nRT, P is the pressure the real gas actually exerts. What does the sum P + an^2/V^2 represent?",
+    "choices": [
+      {
+        "text": "What the pressure would be without attractions",
+        "correct": true
+      },
+      {
+        "text": "The pressure added by the molecules' own volume",
+        "why": "The volume correction is in the other bracket, V − nb. Adding an^2/V^2 restores the pressure lost to attractions."
+      },
+      {
+        "text": "The pressure on the wall from attractions alone",
+        "why": "an^2/V^2 by itself is the attraction correction. Adding it to the measured P gives the pressure the gas would exert if its molecules didn't attract."
+      },
+      {
+        "text": "The total pressure of a mixture of gases",
+        "why": "This is the equation for a single gas. P + an^2/V^2 is the measured pressure plus the amount lost to attractions."
+      }
+    ],
+    "explanation": "Attractions lower the measured pressure by an^2/V^2, so P + an^2/V^2 is the pressure the gas would exert if its molecules didn't attract. That pressure times the free volume V − nb equals nRT."
+  },
+  {
+    "id": "pc16-vdw-rk-a-units",
+    "type": "multiple-choice",
+    "prompt": "The section's table gives a in L^2·bar/mol^2. With n in mol and V in L, what are the units of the van der Waals correction an^2/V^2?",
+    "choices": [
+      {
+        "text": "bar",
+        "correct": true
+      },
+      {
+        "text": "L^2·bar",
+        "why": "The mol^2 cancels against n^2 and the L^2 against V^2. What remains is bar, a pressure, which is why an^2/V^2 can be added to P."
+      },
+      {
+        "text": "L/mol",
+        "why": "Those are the units of b, a volume per mole. an^2/V^2 must be a pressure, in bar, to be added to P."
+      },
+      {
+        "text": "mol^2/L^2",
+        "why": "That is the unit of n^2/V^2 alone. Multiplying by a, in L^2·bar/mol^2, leaves bar."
+      }
+    ],
+    "explanation": "L^2·bar/mol^2 × mol^2/L^2 = bar. The attraction correction is a pressure, so it can be added to P in (P + an^2/V^2)(V − nb) = nRT, just as nb is a volume that can be subtracted from V."
+  },
+  {
+    "id": "pc16-vdw-rk-attraction-ethane",
+    "type": "numeric",
+    "prompt": "The section's table gives a = 5.562 L^2·bar/mol^2 for C2H6. What is the van der Waals attraction correction an^2/V^2, in bar, for 1.00 mol of C2H6 in a 2.00 L container? (Give it as a decimal.)",
+    "answer": 1.3905,
+    "unit": "bar",
+    "explanation": "an^2/V^2 = 5.562 × 1.00^2/2.00^2 bar = 5.562/4.00 bar = 1.39 bar. The attraction lowers the pressure by this much compared with a gas whose molecules don't attract."
+  },
+  {
+    "id": "pc16-vdw-rk-attraction-compress",
+    "type": "numeric",
+    "prompt": "The van der Waals attraction correction is an^2/V^2. If a fixed amount of gas is compressed from 2.00 L to 1.00 L, by what factor does this correction grow?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The correction goes as 1/V^2, so halving V multiplies it by 2^2 = 4. Attractions matter more and more as a gas is compressed."
+  },
+  {
+    "id": "pc16-vdw-rk-hard-sphere",
+    "type": "multiple-choice",
+    "prompt": "To explain the constant b, how does the section model the gas molecules?",
+    "choices": [
+      {
+        "text": "As hard spheres of diameter σ",
+        "correct": true
+      },
+      {
+        "text": "As point masses with no size at all",
+        "why": "Point masses would exclude no volume, so b would be zero. The section models the molecules as hard spheres of diameter σ."
+      },
+      {
+        "text": "As soft balls that can overlap a little",
+        "why": "Hard spheres can't overlap at all: with a hard-wall potential, their centers can come no closer than σ."
+      },
+      {
+        "text": "As balls joined to each other by springs",
+        "why": "There are no springs in this model. The molecules are hard billiard balls of diameter σ that collide and separate at contact."
+      }
+    ],
+    "explanation": "b represents the volumes of the particles and assumes a hard-wall potential: the molecules are hard-sphere billiard balls of diameter σ. When two touch, they collide and separate, so their centers can never be closer than σ."
+  },
+  {
+    "id": "pc16-vdw-rk-excluded-radius",
+    "type": "multiple-choice",
+    "prompt": "For two hard spheres of diameter σ, the section finds the excluded volume of the pair from a sphere that just contains the pair at closest approach. What is that sphere's radius?",
+    "choices": [
+      {
+        "text": "σ",
+        "correct": true
+      },
+      {
+        "text": "σ/2",
+        "why": "σ/2 is the radius of one particle. At contact the two centers are σ apart, so the center of the other particle is shut out of a whole sphere of radius σ."
+      },
+      {
+        "text": "2σ",
+        "why": "Centers can get as close as σ, so the excluded region stops at radius σ, not 2σ."
+      },
+      {
+        "text": "3σ/2",
+        "why": "Centers can come as close as σ but no closer, so the excluded sphere has radius σ."
+      }
+    ],
+    "explanation": "Touching spheres of diameter σ have their centers σ apart, the distance of closest approach. So a sphere of radius σ is closed to the second center, and its volume, 4πσ^3/3, is the excluded volume for the pair."
+  },
+  {
+    "id": "pc16-vdw-rk-half-per-particle",
+    "type": "multiple-choice",
+    "prompt": "The excluded volume of a pair of hard spheres is 4πσ^3/3. Why is the excluded volume for one particle only half of this, (2/3)πσ^3?",
+    "choices": [
+      {
+        "text": "The pair's excluded volume is shared by two particles",
+        "correct": true
+      },
+      {
+        "text": "Only half of each particle lies inside the container",
+        "why": "The particles are inside the container. The pair's excluded volume belongs to two particles, so each one gets half."
+      },
+      {
+        "text": "A particle's radius is half its diameter",
+        "why": "Halving a radius would divide a volume by 8, not 2. The factor of 1/2 comes from sharing the pair's excluded volume between two particles."
+      },
+      {
+        "text": "Particles collide only half of the time",
+        "why": "The excluded volume is geometric and doesn't depend on how often collisions happen. It is halved because one pair contains two particles."
+      }
+    ],
+    "explanation": "The sphere of volume 4πσ^3/3 is excluded for a pair of particles, so each particle accounts for half of it, (2/3)πσ^3. Multiplying by Avogadro's number gives b = (2/3)πσ^3 N_0 per mole."
+  },
+  {
+    "id": "pc16-vdw-rk-excluded-per-molecule",
+    "type": "numeric",
+    "prompt": "Since b = (2/3)πσ^3 N_0 is the excluded volume for a mole of molecules, the excluded volume per molecule is b/N_0. For N2, the section's table gives b = 0.0387 L/mol. Using N_0 = 6.022 × 10^23 mol^−1, what is the excluded volume per N2 molecule, in L? (Type it in scientific notation, like 2.5e-26.)",
+    "answer": 6.43e-26,
+    "unit": "L",
+    "explanation": "b/N_0 = 0.0387 L/mol ÷ 6.022 × 10^23 mol^−1 = 6.43 × 10^−26 L. Since 1 L = 10^24 nm^3, that is about 0.064 nm^3 for each N2 molecule, the (2/3)πσ^3 of one hard sphere."
+  },
+  {
+    "id": "pc16-vdw-rk-b-diameter-double",
+    "type": "multiple-choice",
+    "prompt": "From b = (2/3)πσ^3 N_0, how would b change for a molecule with twice the diameter σ?",
+    "choices": [
+      {
+        "text": "It would be 8 times larger",
+        "correct": true
+      },
+      {
+        "text": "It would be 2 times larger",
+        "why": "b depends on σ^3, not σ. Doubling σ multiplies b by 2^3 = 8."
+      },
+      {
+        "text": "It would be 4 times larger",
+        "why": "That would be true if b went as σ^2. b goes as σ^3, so doubling σ multiplies it by 8."
+      },
+      {
+        "text": "It would stay the same, since N_0 is fixed",
+        "why": "N_0 is fixed, but σ^3 is not. Doubling σ multiplies b by 2^3 = 8."
+      }
+    ],
+    "explanation": "b is proportional to σ^3, so doubling the diameter multiplies b by 2^3 = 8. An excluded volume grows with the cube of the molecular size."
+  },
+  {
+    "id": "pc16-vdw-rk-free-volume",
+    "type": "numeric",
+    "prompt": "For N2, the section's table gives b = 0.0387 L/mol. In the van der Waals picture, how much volume, in L, is available for 2.00 mol of N2 to move in inside a 1.00 L container, where the available volume is V − nb? (Give it as a decimal.)",
+    "answer": 0.9226,
+    "unit": "L",
+    "explanation": "nb = 2.00 mol × 0.0387 L/mol = 0.0774 L, so V − nb = 1.00 L − 0.0774 L = 0.923 L. At this high density, about 8% of the container is excluded by the molecules themselves."
+  },
+  {
+    "id": "pc16-vdw-rk-largest-b",
+    "type": "multiple-choice",
+    "prompt": "The section's table gives these van der Waals b values, in L/mol: H2O 0.03049, N2 0.0387, CH4 0.04278 and C2H6 0.0638. Which molecule excludes the most volume per mole?",
+    "choices": [
+      {
+        "text": "C2H6",
+        "correct": true
+      },
+      {
+        "text": "H2O",
+        "why": "H2O has the smallest b of the four, 0.03049 L/mol. The largest b, 0.0638 L/mol, belongs to C2H6, the biggest molecule."
+      },
+      {
+        "text": "N2",
+        "why": "The b of N2 is 0.0387 L/mol, well below the 0.0638 L/mol of C2H6. b measures excluded volume, which is largest for the biggest molecule, C2H6."
+      },
+      {
+        "text": "CH4",
+        "why": "The b of CH4, 0.04278 L/mol, is only the second largest. With two carbons, C2H6 is bigger and has the largest b, 0.0638 L/mol."
+      }
+    ],
+    "explanation": "b is the volume excluded per mole of molecules, so the largest b, 0.0638 L/mol, goes with the biggest molecules. C2H6, with eight atoms, has the largest b in the table."
+  },
+  {
+    "id": "pc16-vdw-rk-water-vs-nitrogen",
+    "type": "multiple-choice",
+    "prompt": "The section's table gives a = 5.536 L^2·bar/mol^2 and b = 0.03049 L/mol for H2O, and a = 1.370 L^2·bar/mol^2 and b = 0.0387 L/mol for N2. What do these values say about water molecules compared with N2 molecules?",
+    "choices": [
+      {
+        "text": "They exclude less volume but attract each other more strongly",
+        "correct": true
+      },
+      {
+        "text": "They exclude more volume and attract each other more weakly",
+        "why": "Both are reversed. The smaller b of water means less excluded volume, and its four-times-larger a means stronger attraction."
+      },
+      {
+        "text": "They exclude more volume and attract each other more strongly",
+        "why": "The b of water, 0.03049 L/mol, is smaller than the 0.0387 L/mol of N2, so it excludes less volume. Its larger a does mean stronger attraction."
+      },
+      {
+        "text": "They exclude less volume and attract each other more weakly",
+        "why": "The a of water, 5.536, is about four times the 1.370 of N2, so water molecules attract each other more strongly, not more weakly."
+      }
+    ],
+    "explanation": "a measures the attraction between molecules and b their excluded volume. The a of water is about four times that of N2 while its b is smaller, so water molecules attract each other much more strongly even though they exclude less volume."
+  },
+  {
+    "id": "pc16-vdw-rk-rk-change",
+    "type": "multiple-choice",
+    "prompt": "What was the essential change that Redlich and Kwong made to the van der Waals equation in 1949?",
+    "choices": [
+      {
+        "text": "They made the attraction term depend on temperature",
+        "correct": true
+      },
+      {
+        "text": "They made the co-volume b depend on temperature",
+        "why": "Very little attention went to b, which represents the molecules' own volume. Redlich and Kwong made the attraction term depend on temperature."
+      },
+      {
+        "text": "They added a third adjustable parameter",
+        "why": "The Redlich–Kwong equation still has two parameters, a and b. Its key change is an attraction term that depends on temperature."
+      },
+      {
+        "text": "They removed the attraction term altogether",
+        "why": "Attraction is still there, in a new form: a/(√(T) V̄(V̄ + b)). The key change is that it depends on temperature."
+      }
+    ],
+    "explanation": "Redlich and Kwong changed the functional form of the attraction term, making it depend on temperature through 1/√(T) and putting b in its denominator. The co-volume b was left independent of temperature."
+  },
+  {
+    "id": "pc16-vdw-rk-b-no-t",
+    "type": "multiple-choice",
+    "prompt": "Why did the Redlich–Kwong equation leave the co-volume b independent of temperature?",
+    "choices": [
+      {
+        "text": "It is the molecules' own volume, unaffected by heating",
+        "correct": true
+      },
+      {
+        "text": "It is so small that any change in it wouldn't matter",
+        "why": "Size isn't the reason. b represents the volume of the molecules, which shouldn't be affected by their kinetic energy, so there is no reason for it to change with T."
+      },
+      {
+        "text": "It depends only on the pressure of the gas, not on T",
+        "why": "b is a constant for each substance. It represents the molecules' own volume, which their kinetic energy shouldn't affect."
+      },
+      {
+        "text": "It drops out of the equation at high temperatures",
+        "why": "b stays in the equation, in V̄ − b and in the attraction term. It isn't made temperature dependent because it represents the molecules' own volume."
+      }
+    ],
+    "explanation": "b represents the volume of the molecules, which should not be affected by their kinetic energy, measured by the temperature. So the improvements focused on the attraction parameter a, and b was left alone."
+  },
+  {
+    "id": "pc16-vdw-rk-sqrt-t-ratio",
+    "type": "numeric",
+    "prompt": "In the Redlich–Kwong equation the attraction term is a/(√(T) V̄(V̄ + b)). At the same molar volume V̄, what is this term at 400 K as a fraction of its value at 100 K? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "The term is proportional to 1/√(T), so the ratio is √(100/400) = √(0.25) = 0.5. In the Redlich–Kwong equation, attraction lowers the pressure less at higher temperatures."
+  },
+  {
+    "id": "pc16-vdw-rk-first-success",
+    "type": "multiple-choice",
+    "prompt": "Clausius (1880) and Berthelot (1899) had already proposed attraction terms that depend on temperature. What, then, was new about the Redlich–Kwong equation of 1949?",
+    "choices": [
+      {
+        "text": "It was the first such equation to be widely successful",
+        "correct": true
+      },
+      {
+        "text": "It was the first to make attraction depend on temperature",
+        "why": "Clausius and Berthelot had already done that. Redlich–Kwong was the first temperature-dependent modification to be widely successful."
+      },
+      {
+        "text": "It was the first equation of state to include b",
+        "why": "The van der Waals equation already had b in 1873. What made Redlich–Kwong stand out was the success of its temperature-dependent attraction term."
+      },
+      {
+        "text": "It was the first equation of state for liquids",
+        "why": "The van der Waals equation already related the density of gases and liquids to P, V and T. Redlich–Kwong was the first widely successful temperature-dependent attraction term."
+      }
+    ],
+    "explanation": "Temperature-dependent attraction terms had been proposed before, but the Redlich–Kwong equation was the first such modification of the van der Waals equation to be widely successful. It came 76 years after van der Waals's equation of 1873."
+  },
+  {
+    "id": "pc16-vdw-rk-rk-range",
+    "type": "multiple-choice",
+    "prompt": "Under which conditions is the Redlich–Kwong equation generally more accurate than the van der Waals and ideal gas equations?",
+    "choices": [
+      {
+        "text": "Above the critical temperature",
+        "correct": true
+      },
+      {
+        "text": "Only at very low pressures",
+        "why": "At very low pressures every gas is close to ideal, so all three equations agree. The Redlich–Kwong equation is generally better above the critical temperature."
+      },
+      {
+        "text": "For liquids at low temperatures",
+        "why": "The section credits the Redlich–Kwong equation with better accuracy at temperatures above the critical temperature, not for cold liquids."
+      },
+      {
+        "text": "Only for mixtures, never for pure gases",
+        "why": "The equation is written for pure substances; mixtures need mixing rules. It is generally more accurate above the critical temperature."
+      }
+    ],
+    "explanation": "The Redlich–Kwong equation is an empirical equation of state that is generally more accurate than the van der Waals and ideal gas equations at temperatures above the critical temperature."
+  },
+  {
+    "id": "pc16-vdw-rk-from-critical",
+    "type": "multiple-choice",
+    "prompt": "In the Redlich–Kwong equation, the parameters a and b of a substance are calculated from which of its properties?",
+    "choices": [
+      {
+        "text": "Its critical temperature and pressure",
+        "correct": true
+      },
+      {
+        "text": "Its molar mass and its liquid density",
+        "why": "Neither appears in the Redlich–Kwong formulas. Both a and b are built from the critical temperature T_c and the critical pressure P_c."
+      },
+      {
+        "text": "Its normal boiling and melting points",
+        "why": "These aren't used. Applying the criticality conditions ties a and b to the critical properties, T_c and P_c."
+      },
+      {
+        "text": "Its bond lengths and its dipole moment",
+        "why": "The formulas contain no molecular data. a and b come from the critical temperature T_c and the critical pressure P_c."
+      }
+    ],
+    "explanation": "Applying the criticality conditions to the Redlich–Kwong equation relates a and b to the critical properties: a = 0.42748 R^2 T_c^(2.5)/P_c and b = 0.08664 R T_c/P_c."
+  },
+  {
+    "id": "pc16-vdw-rk-rk-b-methane",
+    "type": "numeric",
+    "prompt": "The Redlich–Kwong co-volume is b = 0.08664 R T_c/P_c. For CH4, T_c = 190.6 K and P_c = 46.0 bar. Using R = 0.08314 L·bar/(mol·K), what is b, in L/mol? (Give it as a decimal.)",
+    "answer": 0.0298,
+    "explanation": "b = 0.08664 × 0.08314 × 190.6/46.0 L/mol = 0.0298 L/mol. It differs from the van der Waals b of CH4 in the section's table, 0.04278 L/mol, because each equation of state has its own a and b."
+  },
+  {
+    "id": "pc16-vdw-rk-mixture-rule",
+    "type": "multiple-choice",
+    "prompt": "How are the van der Waals and Redlich–Kwong equations, written for pure substances, applied to a gas mixture?",
+    "choices": [
+      {
+        "text": "Mixing rules give a and b for a pseudo pure substance",
+        "correct": true
+      },
+      {
+        "text": "Each gas is treated alone and the pressures are added",
+        "why": "The section doesn't add separate pressures. Mixing rules combine the components' a and b into a_m and b_m for one pseudo pure substance."
+      },
+      {
+        "text": "They can't be used for mixtures at all",
+        "why": "They can, with mixing rules that turn the mixture into a pseudo pure substance with average properties."
+      },
+      {
+        "text": "The a and b of the main component are used",
+        "why": "Every component counts. The mixing rules average the a and b values of all the components, weighted by their mole fractions."
+      }
+    ],
+    "explanation": "For mixtures, mixing rules obtain a and b from the properties of the pure components, creating a pseudo pure substance with the average properties of the mixture. Redlich and Kwong kept the mixing rules that van der Waals proposed."
+  },
+  {
+    "id": "pc16-vdw-rk-mixture-b",
+    "type": "numeric",
+    "prompt": "For a mixture, the mixing rule for the co-volume is b_m = Σ y_i b_i, where y_i is the mole fraction of component i. What is b_m, in L/mol, for a mixture of 80% N2 (b = 0.0387 L/mol) and 20% CH4 (b = 0.04278 L/mol) by moles? (Give it as a decimal.)",
+    "answer": 0.0395,
+    "explanation": "b_m = 0.80 × 0.0387 + 0.20 × 0.04278 = 0.03096 + 0.00856 = 0.0395 L/mol. The mixture behaves like a pseudo pure substance with this b, which lies closer to the b of N2 because N2 is the main component."
+  }
+]

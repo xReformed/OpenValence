@@ -1,0 +1,556 @@
+[
+  {
+    "id": "pc18-polyatomic-rot-three-temperatures",
+    "type": "multiple-choice",
+    "prompt": "For a nonlinear polyatomic molecule, how many characteristic rotational temperatures appear in its rotational partition function?",
+    "choices": [
+      {
+        "text": "Three, one for each principal axis",
+        "correct": true
+      },
+      {
+        "text": "One, as for a diatomic molecule",
+        "why": "A diatomic needs only one Θ_rot because it has a single moment of inertia. A nonlinear molecule has three principal moments, I_A, I_B and I_C, each with its own temperature."
+      },
+      {
+        "text": "Two, one for each rotational degree of freedom",
+        "why": "Two rotational degrees of freedom is the linear case. A nonlinear molecule has three, so q_rot contains Θ_A, Θ_B and Θ_C."
+      },
+      {
+        "text": "3N − 6, one for each normal mode",
+        "why": "3N − 6 counts the vibrational degrees of freedom, which have vibrational temperatures. Rotation of a nonlinear molecule gives three rotational temperatures."
+      }
+    ],
+    "explanation": "A nonlinear molecule has three rotational degrees of freedom and three principal moments of inertia. Each gives a characteristic rotational temperature, Θ_(rot,i) = ħ^2/(2I_i k), so q_rot = (√π/σ)√(T^3/(Θ_A Θ_B Θ_C))."
+  },
+  {
+    "id": "pc18-polyatomic-rot-linear-axis",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say that rotation about the axis of a linear molecule is not counted as a rotational degree of freedom?",
+    "choices": [
+      {
+        "text": "The rotated molecule looks exactly like the original",
+        "correct": true
+      },
+      {
+        "text": "Its moment of inertia about that axis is infinite",
+        "why": "The atoms lie on that axis, so the moment of inertia about it is essentially zero, not infinite. The section's reason is that the rotated configuration can't be told apart from the original."
+      },
+      {
+        "text": "Linear molecules can't rotate at all",
+        "why": "Linear molecules do rotate, end over end, about two axes perpendicular to the molecule. Only the turn about the molecular axis itself is not counted."
+      },
+      {
+        "text": "The symmetry number forbids that rotation",
+        "why": "σ corrects q_rot for indistinguishable orientations; it doesn't remove degrees of freedom. The turn about the axis is dropped because it leaves the molecule indistinguishable from the start."
+      }
+    ],
+    "explanation": "Turning a linear molecule about its own axis gives a configuration indistinguishable from the original, so the section says this rotation is not quantum mechanically meaningful. Linear molecules therefore have two rotational and 3N − 5 vibrational degrees of freedom."
+  },
+  {
+    "id": "pc18-polyatomic-rot-no2-top",
+    "type": "multiple-choice",
+    "prompt": "The three characteristic rotational temperatures of NO2 are 11.5 K, 0.624 K and 0.590 K. What kind of top is NO2?",
+    "choices": [
+      {
+        "text": "An asymmetric top",
+        "correct": true
+      },
+      {
+        "text": "A symmetric top",
+        "why": "A symmetric top has two exactly equal temperatures, Θ_A = Θ_B ≠ Θ_C. NO2's 0.624 K and 0.590 K are close but not equal, so all three differ."
+      },
+      {
+        "text": "A spherical top",
+        "why": "A spherical top has three equal rotational temperatures. NO2's 11.5 K is far from the other two."
+      },
+      {
+        "text": "A linear rotor",
+        "why": "A linear molecule has only two rotational degrees of freedom and a single rotational temperature. NO2 has three different ones, so it is nonlinear."
+      }
+    ],
+    "explanation": "Tops are classified by their characteristic rotational temperatures: all equal for a spherical top, two equal for a symmetric top and all different for an asymmetric top. NO2's three values all differ, so it is an asymmetric top."
+  },
+  {
+    "id": "pc18-polyatomic-rot-symmetric-top-example",
+    "type": "multiple-choice",
+    "prompt": "Which of these molecules does the section give as an example of a symmetric top?",
+    "choices": [
+      {
+        "text": "Chloromethane, CH3Cl",
+        "correct": true
+      },
+      {
+        "text": "Nitrogen dioxide, NO2",
+        "why": "NO2's three rotational temperatures all differ, so it is an asymmetric top. The section's symmetric tops are ammonia and chloromethane."
+      },
+      {
+        "text": "Water, H2O",
+        "why": "Bent water has three different moments of inertia, so it is an asymmetric top. A symmetric top such as chloromethane has two equal moments."
+      },
+      {
+        "text": "Carbon dioxide, CO2",
+        "why": "CO2 is linear, with two rotational degrees of freedom and a single moment of inertia. Chloromethane, with two equal moments, is a symmetric top."
+      }
+    ],
+    "explanation": "In a symmetric top two principal moments of inertia are equal, I_B = I_C, and the third is different. The section's examples are ammonia and chloromethane."
+  },
+  {
+    "id": "pc18-polyatomic-rot-spherical-from-general",
+    "type": "multiple-choice",
+    "prompt": "The general result is q_rot = (√π/σ)√(T^3/(Θ_A Θ_B Θ_C)). What does it become for a spherical top, where all three characteristic temperatures equal Θ_rot?",
+    "choices": [
+      {
+        "text": "(√π/σ)(T/Θ_rot)^(3/2)",
+        "correct": true
+      },
+      {
+        "text": "T/(σΘ_rot)",
+        "why": "That is the linear-molecule result. Setting all three temperatures equal gives √(T^3/Θ_rot^3) = (T/Θ_rot)^(3/2)."
+      },
+      {
+        "text": "(√π/σ)(T/Θ_rot)^3",
+        "why": "The cube sits inside a square root, so √(T^3/Θ_rot^3) = (T/Θ_rot)^(3/2), not (T/Θ_rot)^3."
+      },
+      {
+        "text": "(√π/σ)(T/Θ_rot)^(1/2)",
+        "why": "Each of the three equal factors contributes (T/Θ_rot)^(1/2), so together they give (T/Θ_rot)^(3/2)."
+      }
+    ],
+    "explanation": "With Θ_A = Θ_B = Θ_C = Θ_rot, the product of the three temperatures is Θ_rot^3, so √(T^3/Θ_rot^3) = (T/Θ_rot)^(3/2). This is the same spherical-top result the section gets by turning the sum into an integral."
+  },
+  {
+    "id": "pc18-polyatomic-rot-three-halves-why",
+    "type": "multiple-choice",
+    "prompt": "A linear molecule's q_rot grows in proportion to T, but a nonlinear molecule's grows as T^(3/2). Why the larger power?",
+    "choices": [
+      {
+        "text": "Each of its three rotations adds a factor √T",
+        "correct": true
+      },
+      {
+        "text": "Its moments of inertia are larger",
+        "why": "Larger moments make q_rot bigger at every temperature but don't change the power of T. The power comes from counting rotations: three, each giving a factor of √T."
+      },
+      {
+        "text": "Its symmetry number is larger",
+        "why": "σ is a constant divisor, so it doesn't change how q_rot depends on T. The extra power comes from the third rotational degree of freedom."
+      },
+      {
+        "text": "Only its rotational levels are degenerate",
+        "why": "Linear-molecule levels are degenerate too, (2J + 1)-fold. The T^(3/2) comes from three rotational degrees of freedom, each adding √T."
+      }
+    ],
+    "explanation": "In the classical integral each rotational degree of freedom contributes a factor √(2πIkT), proportional to √T. A linear molecule has two, giving T; a nonlinear molecule has three, giving T^(3/2)."
+  },
+  {
+    "id": "pc18-polyatomic-rot-asymmetric-computer",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how can the rotational partition function of an asymmetric top be found exactly from its energy levels?",
+    "choices": [
+      {
+        "text": "By summing the terms numerically on a computer",
+        "correct": true
+      },
+      {
+        "text": "With the formula ε = B̃J(J + 1) for each level",
+        "why": "That simple formula is for a linear rotor; asymmetric-top energy expressions are much more complex. The section says the sum can be calculated on a computer."
+      },
+      {
+        "text": "By turning the sum into an easy integral over J",
+        "why": "For asymmetric tops the conversion to an integral is not easy, the section says. The exact sum is calculated term by term on a computer."
+      },
+      {
+        "text": "It cannot be found at all",
+        "why": "The sum is hard to do by hand, not impossible. The section says it can be calculated with a computer, and the classical integral gives a good approximation."
+      }
+    ],
+    "explanation": "Asymmetric-top energy expressions are complex, so turning the sum into an integral is not easy. The exact sum can be calculated on a computer, while integrating classically over L_A, L_B and L_C gives an intuitive approximate result."
+  },
+  {
+    "id": "pc18-polyatomic-rot-symmetric-double-sum",
+    "type": "multiple-choice",
+    "prompt": "The rotational partition function of a symmetric top such as ammonia is a double sum. Over which two quantum numbers does it run?",
+    "choices": [
+      {
+        "text": "J and K",
+        "correct": true
+      },
+      {
+        "text": "J and M",
+        "why": "M only describes the orientation in space and doesn't change the energy. The section's two sums run over J and K, the component of J along the unique molecular axis."
+      },
+      {
+        "text": "v and J",
+        "why": "v would be a vibrational quantum number, which belongs in q_vib. The symmetric-top levels depend on J and K."
+      },
+      {
+        "text": "J only, as for a diatomic",
+        "why": "A symmetric top's energy, B̃J(J + 1) + (Ã − B̃)K^2, also depends on K, so q_rot sums over both J and K."
+      }
+    ],
+    "explanation": "Symmetric-top levels, ε_(J,K) = B̃J(J + 1) + (Ã − B̃)K^2, depend on J, which sets the total angular momentum, and K, its component along the unique axis. So q_rot sums over J = 0, 1, 2, … and, for each J, over K = −J to J."
+  },
+  {
+    "id": "pc18-polyatomic-rot-symmetric-ib-power",
+    "type": "multiple-choice",
+    "prompt": "For a symmetric top with I_B = I_C, q_rot = (√π/σ)(8π^2 I_B kT/h^2)(8π^2 I_A kT/h^2)^(1/2). Why does the I_B factor appear without a square root?",
+    "choices": [
+      {
+        "text": "The two equal axes B and C each give a square root",
+        "correct": true
+      },
+      {
+        "text": "I_B is much larger than I_A",
+        "why": "The size of I_B doesn't change the power. The equal axes B and C each contribute a square-root factor, and the two roots multiply to the first power."
+      },
+      {
+        "text": "Rotation about the B axis is classical but not about A",
+        "why": "All three axes are treated classically here, with the sums turned into integrals. The B factor appears twice, once for each of the equal axes B and C."
+      },
+      {
+        "text": "The A axis does not rotate in a symmetric top",
+        "why": "All three axes rotate; the A factor is still there, as its own square root. The B factor has no root because axes B and C are equal and their two roots combine."
+      }
+    ],
+    "explanation": "In the general result each axis contributes a factor √(8π^2 I_i kT/h^2). For a symmetric top I_B = I_C, so the B and C roots multiply to (8π^2 I_B kT/h^2), while the unique axis A keeps its square root."
+  },
+  {
+    "id": "pc18-polyatomic-rot-sigma-methane",
+    "type": "multiple-choice",
+    "prompt": "What symmetry number σ does the section give for methane, CH4?",
+    "choices": [
+      {
+        "text": "12",
+        "correct": true
+      },
+      {
+        "text": "4",
+        "why": "4 is the number of H atoms, but σ counts rotations, not atoms. Methane has 12 rotations that give indistinguishable orientations."
+      },
+      {
+        "text": "3",
+        "why": "σ = 3 is ammonia's value, from its single threefold axis. Methane's many symmetry axes give σ = 12."
+      },
+      {
+        "text": "1",
+        "why": "σ = 1 is for molecules with no symmetry rotations, such as HCN. Methane's high symmetry gives σ = 12."
+      }
+    ],
+    "explanation": "Methane is highly symmetric: 12 different rotations bring it to orientations indistinguishable from the original. So σ = 12, and its q_rot is divided by 12."
+  },
+  {
+    "id": "pc18-polyatomic-rot-sigma-three",
+    "type": "multiple-choice",
+    "prompt": "Which of these molecules has a symmetry number σ = 3?",
+    "choices": [
+      {
+        "text": "NH3",
+        "correct": true
+      },
+      {
+        "text": "H2O",
+        "why": "Water has σ = 2: only a 180° turn, which swaps its two H atoms, gives an indistinguishable orientation."
+      },
+      {
+        "text": "CH4",
+        "why": "Methane is far more symmetric, with σ = 12. The molecule with σ = 3 is ammonia."
+      },
+      {
+        "text": "HCN",
+        "why": "HCN is linear with different atoms at its two ends, so it has no center of symmetry and σ = 1."
+      }
+    ],
+    "explanation": "Ammonia can be turned by 120° or 240° about its threefold axis and look unchanged. Counting the identity, three rotations give indistinguishable orientations, so σ = 3."
+  },
+  {
+    "id": "pc18-polyatomic-rot-linear-sigma-two",
+    "type": "multiple-choice",
+    "prompt": "For a linear molecule, σ = 2 if it has a center of symmetry and σ = 1 if it doesn't. Which of these linear molecules has σ = 2?",
+    "choices": [
+      {
+        "text": "CO2 (O=C=O)",
+        "correct": true
+      },
+      {
+        "text": "HCN (H–C≡N)",
+        "why": "HCN has different atoms at its two ends, so it has no center of symmetry and σ = 1."
+      },
+      {
+        "text": "OCS (O=C=S)",
+        "why": "The two ends are O and S, which differ, so there is no center of symmetry and σ = 1."
+      },
+      {
+        "text": "N2O (N=N=O)",
+        "why": "Its ends are N and O, which differ, so it has no center of symmetry and σ = 1."
+      }
+    ],
+    "explanation": "CO2 has identical O atoms at both ends with C at the center of symmetry, so turning it end over end gives an indistinguishable orientation and σ = 2. HCN, OCS and N2O have different end atoms, so σ = 1."
+  },
+  {
+    "id": "pc18-polyatomic-rot-no2-sigma",
+    "type": "multiple-choice",
+    "prompt": "NO2 has no center of symmetry, yet the section uses σ = 2 for it. Why?",
+    "choices": [
+      {
+        "text": "A 180° turn swaps its two identical O atoms",
+        "correct": true
+      },
+      {
+        "text": "NO2 has two rotational degrees of freedom",
+        "why": "NO2 is nonlinear, with three rotational degrees of freedom. σ = 2 because a 180° rotation exchanges the two O atoms and gives an indistinguishable orientation."
+      },
+      {
+        "text": "Every nonlinear molecule has σ = 2",
+        "why": "σ varies from molecule to molecule: NH3 has 3 and CH4 has 12. NO2's value comes from the 180° rotation that swaps its O atoms."
+      },
+      {
+        "text": "The molecule contains two oxygen atoms",
+        "why": "Counting identical atoms doesn't give σ; CH4 has four H atoms but σ = 12. NO2 has σ = 2 because a 180° rotation swaps the O atoms."
+      }
+    ],
+    "explanation": "The center-of-symmetry rule holds only for linear molecules. In general σ is the number of rotations giving indistinguishable orientations; for bent NO2 these are the identity and a 180° turn that exchanges the O atoms, so σ = 2."
+  },
+  {
+    "id": "pc18-polyatomic-rot-center-of-mass",
+    "type": "multiple-choice",
+    "prompt": "To study rotation, the section puts the center of mass at the origin. Which condition defines that point?",
+    "choices": [
+      {
+        "text": "Σ_i m_i x_i = Σ_i m_i y_i = Σ_i m_i z_i = 0",
+        "correct": true
+      },
+      {
+        "text": "Σ_i x_i = Σ_i y_i = Σ_i z_i = 0",
+        "why": "Without the masses this is just the geometric center. The center of mass weights each atom's coordinates by its mass m_i."
+      },
+      {
+        "text": "Σ_i m_i x_i^2 = Σ_i m_i y_i^2 = Σ_i m_i z_i^2 = 0",
+        "why": "Mass-weighted squares of coordinates build moments of inertia, and they can't all be zero for a real molecule. The center of mass uses the coordinates to the first power."
+      },
+      {
+        "text": "Σ_i m_i x_i y_i = Σ_i m_i y_i z_i = 0",
+        "why": "Sums like Σ_i m_i x_i y_i are products of inertia, which vanish when x, y and z are principal axes. The center of mass is where Σ_i m_i x_i, Σ_i m_i y_i and Σ_i m_i z_i all vanish."
+      }
+    ],
+    "explanation": "The center of mass is the point for which Σ_i m_i x_i = Σ_i m_i y_i = Σ_i m_i z_i = 0, with every coordinate weighted by the atom's mass. The principal moments of inertia I_A, I_B and I_C are then found about this point."
+  },
+  {
+    "id": "pc18-polyatomic-rot-angular-momenta",
+    "type": "multiple-choice",
+    "prompt": "For an asymmetric top, the section gets an intuitive q_rot by integrating the Boltzmann factor over which variables?",
+    "choices": [
+      {
+        "text": "The three angular momenta L_A, L_B and L_C",
+        "correct": true
+      },
+      {
+        "text": "The quantum numbers J and K",
+        "why": "J and K label symmetric-top levels, and asymmetric-top energies have no simple formula in them. The section integrates over the angular momenta L_A, L_B and L_C instead."
+      },
+      {
+        "text": "The three Cartesian coordinates x, y and z",
+        "why": "Positions describe translation of the molecule as a whole. The rotational integral runs over the angular momenta L_A, L_B and L_C."
+      },
+      {
+        "text": "The vibrational normal coordinates",
+        "why": "Normal coordinates describe vibrations, which are handled by q_vib. q_rot comes from integrating over the angular momenta L_A, L_B and L_C."
+      }
+    ],
+    "explanation": "Integrating exp(−H/(kT)) over L_A, L_B and L_C gives √(2πI_A kT)√(2πI_B kT)√(2πI_C kT). Multiplying by 8π^2/(σh^3) then gives the rotational partition function."
+  },
+  {
+    "id": "pc18-polyatomic-rot-eight-pi-squared",
+    "type": "multiple-choice",
+    "prompt": "In the asymmetric-top q_rot, the classical integral is multiplied by 8π^2/(σh^3). Where does the factor 8π^2 come from?",
+    "choices": [
+      {
+        "text": "A full turn (2π) times all axis directions (4π)",
+        "correct": true
+      },
+      {
+        "text": "Three principal axes, each adding a factor of 2π",
+        "why": "Three factors of 2π would give 8π^3, not 8π^2. The 8π^2 is 2π for a complete rotation about an axis times 4π for all directions the axis can point."
+      },
+      {
+        "text": "Converting from classical to quantum phase space",
+        "why": "That conversion is the job of the h^3. The 8π^2 comes from the angular integration: 2π × 4π."
+      },
+      {
+        "text": "Correcting for indistinguishable orientations",
+        "why": "That correction is the symmetry number σ, a separate factor. 8π^2 comes from integrating over all orientations: 2π times 4π."
+      }
+    ],
+    "explanation": "The 8π^2 comes from the angular integration: a complete rotation about any axis in the molecule gives 2π, and integrating over all possible orientations of that axis gives another 4π. The h^3 converts classical phase space to quantum phase space."
+  },
+  {
+    "id": "pc18-polyatomic-rot-h-cubed",
+    "type": "multiple-choice",
+    "prompt": "Why is the classical rotational integral for an asymmetric top divided by h^3?",
+    "choices": [
+      {
+        "text": "To convert classical to quantum phase space",
+        "correct": true
+      },
+      {
+        "text": "To correct for indistinguishable orientations",
+        "why": "That is done by the symmetry number σ. The h^3 converts the classical phase-space integral into the quantum one."
+      },
+      {
+        "text": "To turn the sum over J into an integral",
+        "why": "Turning a sum into an integral needs T ≫ Θ_rot, not a factor of h^3. The h^3 converts classical phase space to quantum phase space."
+      },
+      {
+        "text": "To make q_rot grow as T^(3/2)",
+        "why": "The T^(3/2) comes from the three angular-momentum integrals, each of which grows as the square root of T. The h^3 converts classical phase space to quantum phase space."
+      }
+    ],
+    "explanation": "The classical integral over angles and angular momenta measures a volume of classical phase space. Dividing by h^3 converts it to the quantum mechanical phase space, so that q_rot counts quantum states."
+  },
+  {
+    "id": "pc18-polyatomic-rot-larger-moments",
+    "type": "multiple-choice",
+    "prompt": "Molecule Y has larger moments of inertia than molecule X, and both have the same σ. At the same temperature, which has the larger q_rot?",
+    "choices": [
+      {
+        "text": "Y, because its Θ values are smaller",
+        "correct": true
+      },
+      {
+        "text": "X, because its Θ values are smaller",
+        "why": "Θ_(rot,i) = ħ^2/(2I_i k), so smaller moments give larger Θ values. X has the larger Θ values and the smaller q_rot."
+      },
+      {
+        "text": "They are equal, because σ is the same",
+        "why": "σ is only one factor. q_rot also depends on Θ_A Θ_B Θ_C, which is smaller for Y's larger moments, so Y's q_rot is larger."
+      },
+      {
+        "text": "X, because smaller moments let it spin faster",
+        "why": "q_rot counts accessible states, not how fast molecules spin. Larger moments mean smaller Θ values and more closely spaced levels, so Y's q_rot is larger."
+      }
+    ],
+    "explanation": "Each Θ is inversely proportional to its moment of inertia, and q_rot = (√π/σ)√(T^3/(Θ_A Θ_B Θ_C)). Larger moments give smaller Θ values, so more rotational levels are accessible and q_rot is larger."
+  },
+  {
+    "id": "pc18-polyatomic-rot-improved-correction",
+    "type": "multiple-choice",
+    "prompt": "An improved q_rot multiplies the classical result by 1 + (h^2/(96π^2 kT))(…), where the bracket depends only on the moments of inertia. What happens to this correction factor as T rises?",
+    "choices": [
+      {
+        "text": "It gets closer to 1",
+        "correct": true
+      },
+      {
+        "text": "It grows in proportion to T",
+        "why": "T is in the denominator of the correction term, so the term shrinks as T rises. The factor approaches 1, and the classical q_rot becomes accurate."
+      },
+      {
+        "text": "It stays the same at every T",
+        "why": "The correction term has kT in its denominator, so it changes with temperature. It shrinks toward zero, and the factor approaches 1."
+      },
+      {
+        "text": "It approaches zero",
+        "why": "Only the added term approaches zero. The factor is 1 plus that term, so it approaches 1 and q_rot approaches the classical result."
+      }
+    ],
+    "explanation": "The correction term is proportional to 1/T, so it shrinks as T rises and the factor approaches 1. At high temperature the classical q_rot is accurate; for a spherical top the factor is 1 + Θ_rot/(4T)."
+  },
+  {
+    "id": "pc18-polyatomic-rot-heat-capacity",
+    "type": "multiple-choice",
+    "prompt": "From the classical q_rot, what is the rotational contribution to the molar heat capacity C̄_V of a nonlinear polyatomic gas?",
+    "choices": [
+      {
+        "text": "(3/2)R",
+        "correct": true
+      },
+      {
+        "text": "R",
+        "why": "R is the rotational contribution of a linear molecule, which has two rotational degrees of freedom. A nonlinear molecule has three, giving (3/2)R."
+      },
+      {
+        "text": "3R",
+        "why": "3R is far too large for rotation alone. The section finds E_rot = (3/2)RT, so the rotational C̄_V is (3/2)R."
+      },
+      {
+        "text": "0, since rotations are frozen out",
+        "why": "At ordinary temperatures T ≫ Θ_rot, so rotations are fully active. They contribute (3/2)R."
+      }
+    ],
+    "explanation": "The classical q_rot goes as T^(3/2), which gives a molar rotational energy E_rot = (3/2)RT. Its temperature derivative is the rotational heat capacity, C̄_V = (3/2)R."
+  },
+  {
+    "id": "pc18-polyatomic-rot-rot-vs-vib",
+    "type": "multiple-choice",
+    "prompt": "At 300 K, NO2 has q_rot ≈ 2238 but q_vib ≈ 1.030. What does this comparison show?",
+    "choices": [
+      {
+        "text": "Many rotational states are populated, few vibrational",
+        "correct": true
+      },
+      {
+        "text": "Most molecules are in their ground rotational state",
+        "why": "A q_rot in the thousands means the population is spread over thousands of rotational states. It is q_vib ≈ 1 that shows the molecules sit in the ground vibrational state."
+      },
+      {
+        "text": "Vibrations hold more energy than rotations at 300 K",
+        "why": "q_vib ≈ 1.03 means almost no vibrational excitation, so little vibrational energy. Rotations, with q_rot ≈ 2238, are far more excited."
+      },
+      {
+        "text": "The two motions are equally excited at 300 K",
+        "why": "The partition functions differ by a factor of over 2000. Many rotational states are populated, but nearly all molecules are in the ground vibrational state."
+      }
+    ],
+    "explanation": "A partition function is roughly the number of thermally accessible states. With q_rot ≈ 2238, many rotational states are populated at 300 K, while q_vib ≈ 1.030 means nearly all NO2 molecules are in the ground vibrational state."
+  },
+  {
+    "id": "pc18-polyatomic-rot-spherical-q",
+    "type": "numeric",
+    "prompt": "For a spherical top at high temperature, q_rot = (√π/σ)(T/Θ_rot)^(3/2), with √π = 1.772. What is q_rot for a spherical top with σ = 12 at a temperature where T/Θ_rot = 100? (Give it as a decimal.)",
+    "answer": 147.7,
+    "explanation": "q_rot = (1.772/12) × 100^(3/2) = (1.772/12) × 1000 = 147.7. Without the symmetry number the answer would be 12 times too large."
+  },
+  {
+    "id": "pc18-polyatomic-rot-temperature-factor",
+    "type": "numeric",
+    "prompt": "For a nonlinear molecule, q_rot = (√π/σ)√(T^3/(Θ_A Θ_B Θ_C)). By what factor does q_rot increase when the temperature is raised from 200 K to 1800 K?",
+    "answer": 27,
+    "tolerance": 0,
+    "explanation": "q_rot is proportional to √(T^3) = T^(3/2). Raising T by a factor of 9 multiplies q_rot by 9^(3/2) = 3^3 = 27; a linear molecule's q_rot, proportional to T, would grow only 9 times."
+  },
+  {
+    "id": "pc18-polyatomic-rot-asymmetric-q",
+    "type": "numeric",
+    "prompt": "Using q_rot = (√π/σ)√(T^3/(Θ_A Θ_B Θ_C)) with √π = 1.772, what is q_rot at T = 100 K for a molecule with σ = 2 whose characteristic rotational temperatures multiply to Θ_A Θ_B Θ_C = 1.00 K^3?",
+    "answer": 886,
+    "explanation": "√(T^3/(Θ_A Θ_B Θ_C)) = √(100^3/1.00) = √(1,000,000) = 1000, so q_rot = (1.772/2) × 1000 = 886. Hundreds of rotational states are accessible."
+  },
+  {
+    "id": "pc18-polyatomic-rot-three-terms",
+    "type": "numeric",
+    "prompt": "At a low temperature, a spherical top's q_rot = Σ(2J + 1)^2 exp(−J(J + 1)Θ_rot/T) has to be summed term by term. If exp(−2Θ_rot/T) = 0.10 and exp(−6Θ_rot/T) = 0.0010, what is the sum of the J = 0, 1 and 2 terms? (Give it as a decimal.)",
+    "answer": 1.925,
+    "explanation": "The terms are 1 × 1 for J = 0, 9 × 0.10 = 0.90 for J = 1 and 25 × 0.0010 = 0.025 for J = 2, so q_rot ≈ 1 + 0.90 + 0.025 = 1.925. Higher terms are negligible here, and the weights (2J + 1)^2 = 1, 9, 25 are the spherical-top degeneracies."
+  },
+  {
+    "id": "pc18-polyatomic-rot-ammonia-sigma",
+    "type": "numeric",
+    "prompt": "For NH3 at 300 K, the factor (√π)√(T^3/(Θ_A Θ_B Θ_C)) works out to 227. Ammonia's symmetry number is σ = 3. What is its rotational partition function, q_rot? (Give it as a decimal.)",
+    "answer": 75.7,
+    "explanation": "q_rot = 227/σ = 227/3 = 75.7. The three rotations about ammonia's threefold axis give indistinguishable orientations, so dividing by 3 removes the overcounting."
+  },
+  {
+    "id": "pc18-polyatomic-rot-energy",
+    "type": "numeric",
+    "prompt": "The section gives the molar rotational energy of a nonlinear polyatomic gas as E_rot = (3/2)RT. Using R = 8.314 J/(K·mol), what is E_rot for ammonia gas at 500 K, in J/mol?",
+    "answer": 6236,
+    "explanation": "E_rot = (3/2) × 8.314 × 500 = 6236 J/mol, about 6.2 kJ/mol. The factor 3/2 reflects the three rotational degrees of freedom of a nonlinear molecule; a linear one would have only RT."
+  },
+  {
+    "id": "pc18-polyatomic-rot-inertia-ratio",
+    "type": "numeric",
+    "prompt": "Since Θ_i = h^2/(8π^2 I_i k), each characteristic rotational temperature is inversely proportional to its moment of inertia. NO2 has Θ_A = 11.5 K and Θ_C = 0.590 K. What is the ratio I_C/I_A? (Give it as a decimal.)",
+    "answer": 19.5,
+    "explanation": "I_C/I_A = Θ_A/Θ_C = 11.5/0.590 = 19.5. The axis with the smallest moment of inertia has the highest rotational temperature."
+  }
+]

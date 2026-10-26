@@ -1,0 +1,248 @@
+[
+  {
+    "id": "pc17-decomposed-single-particle-average",
+    "type": "multiple-choice",
+    "prompt": "For N independent molecules, the section shows that ⟨E⟩ = N⟨ε⟩. What is ⟨ε⟩?",
+    "choices": [
+      {
+        "text": "The average energy of a single molecule",
+        "correct": true
+      },
+      {
+        "text": "The energy of a molecule's lowest state",
+        "why": "The ground-state energy is only one term. ⟨ε⟩ averages over all the states, each weighted by its probability."
+      },
+      {
+        "text": "The average energy of the whole system",
+        "why": "That is ⟨E⟩. ⟨ε⟩ is the average for one molecule, and the system's average is N times it."
+      },
+      {
+        "text": "The spacing between neighboring energy levels",
+        "why": "⟨ε⟩ is an average energy, not a gap between levels. It is the mean energy of one molecule, so ⟨E⟩ = N⟨ε⟩."
+      }
+    ],
+    "explanation": "⟨ε⟩ = Σ_i ε_i exp(−ε_i/(kT))/q is the average energy of one molecule. Since the molecules are independent, the system's average energy is N times it."
+  },
+  {
+    "id": "pc17-decomposed-n-factorial-energy",
+    "type": "multiple-choice",
+    "prompt": "N distinguishable molecules have Q = q^(N), and N indistinguishable ones have Q = q^(N)/N!, with the same q at the same T and V. Using ⟨E⟩ = kT^2 ((∂ln Q)/(∂T))_(N, V), how do their average energies compare?",
+    "choices": [
+      {
+        "text": "They are equal",
+        "correct": true
+      },
+      {
+        "text": "Smaller for the indistinguishable ones, by a factor of N!",
+        "why": "Dividing Q by N! only subtracts the constant ln N! from ln Q. Its T-derivative is 0, so ⟨E⟩ is unchanged."
+      },
+      {
+        "text": "Smaller for the indistinguishable ones, by ln N!",
+        "why": "ln N! is subtracted from ln Q, not from ⟨E⟩. ⟨E⟩ comes from the T-derivative of ln Q, and the derivative of a constant is 0."
+      },
+      {
+        "text": "Larger for the indistinguishable ones, by a factor of N!",
+        "why": "The N! changes how states are counted, not the energy. ln N! doesn't depend on T, so it drops out of ⟨E⟩."
+      }
+    ],
+    "explanation": "ln Q = N ln q − ln N! differs from N ln q only by a constant, which vanishes when differentiated with respect to T. Both give ⟨E⟩ = NkT^2 ((∂ln q)/(∂T))_V = N⟨ε⟩."
+  },
+  {
+    "id": "pc17-decomposed-double-n",
+    "type": "multiple-choice",
+    "prompt": "A sample of N independent molecules is doubled to 2N at the same T and V. According to ⟨E⟩ = N⟨ε⟩, what happens to the average energy ⟨E⟩?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It stays the same",
+        "why": "⟨ε⟩, the average for one molecule, stays the same at fixed T and V. But there are twice as many molecules, so ⟨E⟩ = N⟨ε⟩ doubles."
+      },
+      {
+        "text": "It quadruples",
+        "why": "⟨E⟩ is proportional to N, not N^2. Doubling N doubles ⟨E⟩."
+      },
+      {
+        "text": "It halves, as the energy is shared among more molecules",
+        "why": "Each molecule's average energy ⟨ε⟩ is set by T, not shared out. More molecules at the same T carry more energy in total, so ⟨E⟩ doubles."
+      }
+    ],
+    "explanation": "At fixed T and V each molecule's average energy ⟨ε⟩ is unchanged. With twice as many independent molecules, ⟨E⟩ = 2N⟨ε⟩, twice as much."
+  },
+  {
+    "id": "pc17-decomposed-independent",
+    "type": "multiple-choice",
+    "prompt": "The result ⟨E⟩ = N⟨ε⟩ relies on which property of the N molecules?",
+    "choices": [
+      {
+        "text": "They are independent, so their energies add",
+        "correct": true
+      },
+      {
+        "text": "They attract one another strongly",
+        "why": "Attractions would add energy shared between pairs of molecules, so ⟨E⟩ would not be just N⟨ε⟩. The result needs molecules that don't interact."
+      },
+      {
+        "text": "They are all in their ground states",
+        "why": "⟨ε⟩ is averaged over all of a molecule's states, weighted by their probabilities. The result needs only that the molecules are independent."
+      },
+      {
+        "text": "They all have the same energy at every moment",
+        "why": "At any moment different molecules have different energies; only their average is ⟨ε⟩. Because they are independent, the averages simply add up to N⟨ε⟩."
+      }
+    ],
+    "explanation": "For independent molecules the system's energy is the sum of the molecules' energies, so its average is N times the average for one molecule. The section derives ⟨E⟩ = N⟨ε⟩ for N independent molecules."
+  },
+  {
+    "id": "pc17-decomposed-pi-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section defines π_i = exp(−ε_i/(kT))/q. What does π_i stand for?",
+    "choices": [
+      {
+        "text": "The probability of state i",
+        "correct": true
+      },
+      {
+        "text": "The number of molecules in state i",
+        "why": "π_i is a probability, a number between 0 and 1. The number of molecules in state i would be Nπ_i."
+      },
+      {
+        "text": "The energy of state i",
+        "why": "The energy is ε_i. π_i uses ε_i to give how likely state i is."
+      },
+      {
+        "text": "The Boltzmann factor of state i",
+        "why": "The Boltzmann factor is exp(−ε_i/(kT)) alone. Dividing it by q turns it into the probability π_i."
+      }
+    ],
+    "explanation": "π_i is the probability that a particle is in state i: its Boltzmann factor divided by the sum of all the Boltzmann factors, q."
+  },
+  {
+    "id": "pc17-decomposed-largest-probability",
+    "type": "multiple-choice",
+    "prompt": "A molecule's states each have a different energy and no degeneracy. At any temperature, which state has the largest probability π_i = exp(−ε_i/(kT))/q?",
+    "choices": [
+      {
+        "text": "The lowest-energy state",
+        "correct": true
+      },
+      {
+        "text": "The highest-energy state, once T is high enough",
+        "why": "exp(−ε_i/(kT)) is always smaller for a larger ε_i at any finite T. At high T the probabilities even out, but a higher state never overtakes a lower one."
+      },
+      {
+        "text": "The state whose energy is closest to kT",
+        "why": "π_i falls steadily as ε_i rises, with no peak at kT. The lowest-energy state is always the most likely."
+      },
+      {
+        "text": "All states are equally likely at every T",
+        "why": "That would need every Boltzmann factor to be the same. States with lower ε_i have larger exp(−ε_i/(kT)) and so larger π_i."
+      }
+    ],
+    "explanation": "All states share the denominator q, so π_i follows exp(−ε_i/(kT)), which is largest for the smallest ε_i. With no degeneracy, the lowest state is always the most probable."
+  },
+  {
+    "id": "pc17-decomposed-q-vib-sum",
+    "type": "multiple-choice",
+    "prompt": "The vibrational partition function is q_vib = Σ_i exp(−ε_i/(kT)). What does this sum run over?",
+    "choices": [
+      {
+        "text": "The vibrational states of one molecule",
+        "correct": true
+      },
+      {
+        "text": "All the molecules in the sample",
+        "why": "A partition function q sums over the states of one molecule. The number of molecules enters separately, as in ⟨E⟩ = N⟨ε⟩."
+      },
+      {
+        "text": "Every state of the molecule, of all kinds of motion",
+        "why": "That would give the full q. q_vib keeps only the vibrational states, and the full q is the product of the separate factors."
+      },
+      {
+        "text": "Only the thermally populated vibrational states",
+        "why": "The sum runs over all the vibrational states. Those that are hardly populated simply have Boltzmann factors close to 0."
+      }
+    ],
+    "explanation": "q_vib is built like q, but over the vibrational states only, with ε_i the vibrational energies. Each degree of freedom has its own partition function of this form."
+  },
+  {
+    "id": "pc17-decomposed-vib-energy-from-qvib",
+    "type": "multiple-choice",
+    "prompt": "To find the average vibrational energy ⟨ε_vib⟩ of a molecule, which partition function does the section differentiate?",
+    "choices": [
+      {
+        "text": "q_vib alone",
+        "correct": true
+      },
+      {
+        "text": "Q for the whole system, including the N!",
+        "why": "That gives the whole system's ⟨E⟩, all kinds of motion together. ⟨ε_vib⟩ = kT^2 (∂ln q_vib)/(∂T) uses only q_vib."
+      },
+      {
+        "text": "q_vib q_rot, since vibration and rotation go together",
+        "why": "The section treats each degree of freedom separately, with its own partition function. ⟨ε_vib⟩ comes from q_vib alone."
+      },
+      {
+        "text": "q_trans, since the whole molecule moves",
+        "why": "q_trans gives the translational energy. The vibrational energy comes from q_vib: ⟨ε_vib⟩ = kT^2 (∂ln q_vib)/(∂T)."
+      }
+    ],
+    "explanation": "The average energy of each degree of freedom follows the same pattern as ⟨ε⟩ from q: ⟨ε_vib⟩ = kT^2 (∂ln q_vib)/(∂T). Only q_vib is needed."
+  },
+  {
+    "id": "pc17-decomposed-average-energies-add",
+    "type": "multiple-choice",
+    "prompt": "Since q = q_trans q_rot q_vib q_elec, ln q = ln q_trans + ln q_rot + ln q_vib + ln q_elec. How is a molecule's average energy ⟨ε⟩ related to the average energies of each degree of freedom?",
+    "choices": [
+      {
+        "text": "⟨ε⟩ = ⟨ε_trans⟩ + ⟨ε_rot⟩ + ⟨ε_vib⟩ + ⟨ε_elec⟩",
+        "correct": true
+      },
+      {
+        "text": "⟨ε⟩ = ⟨ε_trans⟩ × ⟨ε_rot⟩ × ⟨ε_vib⟩ × ⟨ε_elec⟩",
+        "why": "Partition functions multiply, but energies add. Each average comes from the derivative of a ln, and the ln of a product is a sum."
+      },
+      {
+        "text": "⟨ε⟩ equals the largest of the four averages",
+        "why": "Every degree of freedom holds some energy, and all of it counts. Differentiating the sum of logs gives the sum of the four averages."
+      },
+      {
+        "text": "⟨ε⟩ is the mean of the four averages",
+        "why": "There is no division by 4. The derivative of ln q_trans + ln q_rot + ln q_vib + ln q_elec is a plain sum, so the averages add."
+      }
+    ],
+    "explanation": "⟨ε⟩ = kT^2 (∂ln q)/(∂T), and the derivative of a sum of logs is the sum of their derivatives. Each one is the average energy of one degree of freedom, so the averages add, just as the energies do."
+  },
+  {
+    "id": "pc17-decomposed-total-energy",
+    "type": "numeric",
+    "prompt": "A gas sample contains N = 2.0 × 10^22 independent molecules, and the average energy of one molecule is ⟨ε⟩ = 6.0 × 10^−21 J. Using ⟨E⟩ = N⟨ε⟩, what is the average energy ⟨E⟩ of the sample, in J?",
+    "answer": 120,
+    "unit": "J",
+    "explanation": "⟨E⟩ = N⟨ε⟩ = (2.0 × 10^22)(6.0 × 10^−21 J) = 120 J. Each molecule holds a tiny energy, but there are very many of them."
+  },
+  {
+    "id": "pc17-decomposed-state-probability",
+    "type": "numeric",
+    "prompt": "A molecule has three states whose Boltzmann factors, exp(−ε_i/(kT)), are 1, 0.60 and 0.40. What is the probability π_i that it is in the state with the factor 0.60? (Give it as a decimal.)",
+    "answer": 0.3,
+    "explanation": "q = 1 + 0.60 + 0.40 = 2.0, so π_i = 0.60/2.0 = 0.30. A state's probability is its Boltzmann factor divided by q."
+  },
+  {
+    "id": "pc17-decomposed-two-state-average",
+    "type": "numeric",
+    "prompt": "A molecule has two states, at energies 0 and 0.050 eV. At some temperature the upper state's Boltzmann factor is 0.25. Using ⟨ε⟩ = Σ_i ε_i exp(−ε_i/(kT))/q, what is ⟨ε⟩, in eV? (Give it as a decimal.)",
+    "answer": 0.01,
+    "unit": "eV",
+    "explanation": "q = 1 + 0.25 = 1.25, so ⟨ε⟩ = (0 × 1 + 0.050 eV × 0.25)/1.25 = 0.0125/1.25 = 0.010 eV. Forgetting to divide by q would give 0.0125 eV."
+  },
+  {
+    "id": "pc17-decomposed-high-t-upper",
+    "type": "numeric",
+    "prompt": "A molecule has just two states, at energies 0 and ε, neither of them degenerate. As the temperature becomes very high, exp(−ε/(kT)) approaches 1. What value does the probability π_1 of the upper state approach? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "π_1 = exp(−ε/(kT))/q with q = 1 + exp(−ε/(kT)), so π_1 → 1/(1 + 1) = 0.5. At very high T the two states become equally likely, but the upper one never becomes more likely than the lower."
+  }
+]

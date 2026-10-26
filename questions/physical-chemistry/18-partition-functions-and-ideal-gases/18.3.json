@@ -1,0 +1,265 @@
+[
+  {
+    "id": "pc18-separate-terms-extra-motions",
+    "type": "multiple-choice",
+    "prompt": "Besides moving through space, which two kinds of motion can a polyatomic molecule store energy in that a monatomic gas atom cannot?",
+    "choices": [
+      {
+        "text": "Rotation and vibration",
+        "correct": true
+      },
+      {
+        "text": "Translation along y and z",
+        "why": "A monatomic atom already moves along x, y and z; those are its three translational degrees of freedom. What polyatomic molecules add is rotation and vibration."
+      },
+      {
+        "text": "Electron spin and nuclear spin",
+        "why": "Spin isn't one of the extra motions the section lists. Polyatomic molecules, including diatomics, can also rotate and vibrate."
+      },
+      {
+        "text": "Rotation only, since bonds are rigid",
+        "why": "Bonds are not rigid: polyatomic molecules, including diatomics, can vibrate as well as rotate."
+      }
+    ],
+    "explanation": "A monatomic gas has three degrees of freedom per molecule, all translational. Polyatomic molecules, including diatomics, can also rotate and vibrate, and with enough energy their bonding electrons can be excited."
+  },
+  {
+    "id": "pc18-separate-terms-electron-excitation",
+    "type": "multiple-choice",
+    "prompt": "According to the section, if enough energy is available, what else can be excited in a polyatomic molecule besides its rotation and vibration?",
+    "choices": [
+      {
+        "text": "The electrons in its σ and π bonds",
+        "correct": true
+      },
+      {
+        "text": "The spins of its nuclei",
+        "why": "Nuclear spins aren't what the section adds here. With enough energy, the electrons in the σ and π bonds can be excited, giving the electronic term."
+      },
+      {
+        "text": "Its inner-shell (core) electrons only",
+        "why": "Core electrons need far more energy than bonding electrons. The section names the electrons in the σ and π bonds."
+      },
+      {
+        "text": "The translation of its center of mass",
+        "why": "Translation is already present in every gas, monatomic or not. The new possibility is exciting the electrons in the σ and π bonds."
+      }
+    ],
+    "explanation": "Polyatomic molecules can rotate and vibrate, and if enough energy is available the electrons in their σ and π bonds can also be excited. This gives the electronic contribution, E_elec and q_elec."
+  },
+  {
+    "id": "pc18-separate-terms-q-product",
+    "type": "multiple-choice",
+    "prompt": "How does the section approximate the partition function of one diatomic or polyatomic molecule?",
+    "choices": [
+      {
+        "text": "q_tot = q_trans q_vib q_rot q_elec",
+        "correct": true
+      },
+      {
+        "text": "q_tot = q_trans + q_vib + q_rot + q_elec",
+        "why": "Adding is what the energies do. Because the energy is a sum of separate terms, the partition function is a product of separate factors."
+      },
+      {
+        "text": "q_tot = q_trans, since translation dominates",
+        "why": "Rotation, vibration and electronic states contribute too. Each gets its own factor, and q_tot is their product."
+      },
+      {
+        "text": "q_tot = q_trans q_rot, since molecules rarely vibrate",
+        "why": "Vibration and electronic states still have factors, even when they are close to 1. q_tot is the product of all four."
+      }
+    ],
+    "explanation": "The section approximates q_tot(V, T) = q_trans q_vib q_rot q_elec, one factor for each kind of motion. Its partner is the energy, which is a sum: E_tot = E_trans + E_vib + E_rot + E_elec."
+  },
+  {
+    "id": "pc18-separate-terms-energy-sum",
+    "type": "multiple-choice",
+    "prompt": "In this section, how is the total energy E_tot of a molecule written?",
+    "choices": [
+      {
+        "text": "E_tot = E_trans + E_vib + E_rot + E_elec",
+        "correct": true
+      },
+      {
+        "text": "E_tot = E_trans × E_vib × E_rot × E_elec",
+        "why": "Multiplying is what happens to the partition functions. The energies of the separate motions add up to the total energy."
+      },
+      {
+        "text": "E_tot = E_trans, since the other terms are zero",
+        "why": "Rotation and vibration hold energy too, and the electronic term can be nonzero. The total energy is the sum of all four separate terms."
+      },
+      {
+        "text": "E_tot = E_elec, since electrons hold most of the energy",
+        "why": "The electronic energy is just one of four terms, and it is usually zero for a molecule in its ground state. E_tot is the sum E_trans + E_vib + E_rot + E_elec."
+      }
+    ],
+    "explanation": "The total energy is approximated as a sum of separate translational, vibrational, rotational and electronic terms. Because the energy adds, the partition function factors into q_tot = q_trans q_vib q_rot q_elec."
+  },
+  {
+    "id": "pc18-separate-terms-molecule-vs-gas",
+    "type": "multiple-choice",
+    "prompt": "In the section's procedure, q and Q are both partition functions. How do they differ?",
+    "choices": [
+      {
+        "text": "q is for one molecule; Q is for the whole gas",
+        "correct": true
+      },
+      {
+        "text": "q is for the whole gas; Q is for one molecule",
+        "why": "It is the other way round: the molecule's q is built first, and the gas's Q = (q^(N))/(N!) is made from it."
+      },
+      {
+        "text": "q is for translation only; Q includes all motions",
+        "why": "q itself can include all motions, q = q_trans q_vib q_rot q_elec. The difference is that q describes one molecule and Q the whole gas of N molecules."
+      },
+      {
+        "text": "q is used at low T and Q at high T",
+        "why": "Both apply at any temperature. q is the partition function of one molecule and Q that of the gas of N molecules."
+      }
+    ],
+    "explanation": "Step 2 of the section's procedure is to compose the partition function q for the molecule and Q for the gas. For a molecular ideal gas, Q(N, V, T) = ((q_trans q_vib q_rot q_elec)^(N))/(N!)."
+  },
+  {
+    "id": "pc18-separate-terms-monatomic-factors",
+    "type": "multiple-choice",
+    "prompt": "A monatomic gas atom has only translational degrees of freedom, but it still has electronic states. Which factors of q_tot = q_trans q_vib q_rot q_elec does it need?",
+    "choices": [
+      {
+        "text": "q_trans and q_elec",
+        "correct": true
+      },
+      {
+        "text": "q_trans only",
+        "why": "An atom still has electronic states, with a ground-state degeneracy g_1, so q_elec stays. Only rotation and vibration drop out."
+      },
+      {
+        "text": "q_rot and q_vib",
+        "why": "A single atom can't rotate or vibrate the way a molecule does. It needs q_trans for moving along x, y and z, plus q_elec."
+      },
+      {
+        "text": "All four factors",
+        "why": "A single atom has no bond to vibrate and no rotational levels of the kind a molecule has. Only q_trans and q_elec remain."
+      }
+    ],
+    "explanation": "An atom moves along x, y and z, giving q_trans, and has electronic levels, giving q_elec (about g_1 at ordinary temperatures). Rotation and vibration need a molecule of two or more atoms."
+  },
+  {
+    "id": "pc18-separate-terms-qelec-factor",
+    "type": "multiple-choice",
+    "prompt": "At room temperature, q_elec = 1 for a molecule with a nondegenerate ground electronic state. What does this factor do to q_tot = q_trans q_vib q_rot q_elec?",
+    "choices": [
+      {
+        "text": "It leaves q_tot unchanged",
+        "correct": true
+      },
+      {
+        "text": "It makes q_tot equal to zero",
+        "why": "Multiplying by 1 changes nothing; only a factor of 0 would make the product zero. The electronic factor can simply be left out."
+      },
+      {
+        "text": "It adds 1 to the value of q_tot",
+        "why": "The factors are multiplied, not added. A factor of 1 leaves q_tot unchanged."
+      },
+      {
+        "text": "It makes q_tot equal to 1",
+        "why": "Only the electronic factor is 1; q_trans, q_rot and q_vib keep their values. Multiplying by 1 leaves q_tot unchanged."
+      }
+    ],
+    "explanation": "Since q_tot is a product, a factor of 1 has no effect, and the electronic part can be ignored. That is why, as the section says, we usually don't have to worry about the electronic degrees of freedom."
+  },
+  {
+    "id": "pc18-separate-terms-degeneracy",
+    "type": "multiple-choice",
+    "prompt": "When a level holds more than one state at the same energy (degeneracy g), how does the section say that level enters the partition function?",
+    "choices": [
+      {
+        "text": "Its Boltzmann factor is multiplied by g",
+        "correct": true
+      },
+      {
+        "text": "Its Boltzmann factor is divided by g",
+        "why": "Each of the g states contributes its own Boltzmann factor, so the level counts g times: multiply by g."
+      },
+      {
+        "text": "It is counted once, like any other level",
+        "why": "Counting it once would miss g − 1 of its states. Its Boltzmann factor is multiplied by g."
+      },
+      {
+        "text": "Its energy is multiplied by g",
+        "why": "Degeneracy doesn't change the energy of the level. It multiplies the Boltzmann factor, since g states share that energy."
+      }
+    ],
+    "explanation": "A level with g states at the same energy contributes g times its Boltzmann factor, g exp(−ε/(kT)). For example, a level with g = 2 counts twice."
+  },
+  {
+    "id": "pc18-separate-terms-first-step",
+    "type": "multiple-choice",
+    "prompt": "The section gives a procedure for handling a degree of freedom with more than one accessible state. What is its first step?",
+    "choices": [
+      {
+        "text": "Define the energy states and their degeneracies",
+        "correct": true
+      },
+      {
+        "text": "Take the T derivative of the internal energy",
+        "why": "That is the last step, which gives the heat capacity. You first need the energy states and their degeneracies."
+      },
+      {
+        "text": "Take the derivative of ln Q to find ⟨E⟩",
+        "why": "That is step 3. Before you can build Q, you must define the energy states and their degeneracies."
+      },
+      {
+        "text": "Divide the partition function by N!",
+        "why": "Building Q for the gas is part of step 2. Step 1 is to define the energy states and their degeneracies."
+      }
+    ],
+    "explanation": "The steps are: (1) define the energy states and their degeneracies; (2) compose q for the molecule and Q for the gas; (3) use the β or T derivative of ln Q to find ⟨E⟩; (4) use the T derivative of U ≈ ⟨E⟩ to find the contribution to the heat capacity. It is the same procedure the section followed for the translational states."
+  },
+  {
+    "id": "pc18-separate-terms-q-purpose",
+    "type": "multiple-choice",
+    "prompt": "In the section's four-step procedure, what is the gas's partition function Q used for once it has been built?",
+    "choices": [
+      {
+        "text": "Finding ⟨E⟩, and from it the heat capacity",
+        "correct": true
+      },
+      {
+        "text": "Counting how many molecules the gas contains",
+        "why": "N is an input to Q, not something Q is used to find. A derivative of ln Q gives ⟨E⟩, and the T derivative of U ≈ ⟨E⟩ gives the heat capacity."
+      },
+      {
+        "text": "Finding the degeneracies of the energy levels",
+        "why": "The degeneracies are defined in step 1, before Q is built. Q is then used to find ⟨E⟩ and, from it, the heat capacity."
+      },
+      {
+        "text": "Setting the zero of energy for the molecule",
+        "why": "The zero of energy is chosen when the states are defined. Q is used afterwards, through a derivative of ln Q, to find ⟨E⟩ and then the heat capacity."
+      }
+    ],
+    "explanation": "Step 3 takes the β or T derivative of ln Q to find ⟨E⟩, and step 4 takes the T derivative of U ≈ ⟨E⟩ to find the contribution to the heat capacity. So once Q is known, the energy and heat capacity you would observe follow from it."
+  },
+  {
+    "id": "pc18-separate-terms-qtot-product",
+    "type": "numeric",
+    "prompt": "A diatomic gas in a 1 L flask at 300 K has roughly q_trans = 2.0 × 10^29, q_rot = 50, q_vib = 1.0 and q_elec = 1.0. Using q_tot = q_trans q_vib q_rot q_elec, what is q_tot? (Type it in scientific notation, like 2.5e31.)",
+    "answer": 1e+31,
+    "explanation": "q_tot = 2.0 × 10^29 × 1.0 × 50 × 1.0 = 1.0 × 10^31. The vibrational and electronic factors of 1 change nothing, so here only translation and rotation matter."
+  },
+  {
+    "id": "pc18-separate-terms-etot-sum",
+    "type": "numeric",
+    "prompt": "Using E_tot = E_trans + E_vib + E_rot + E_elec, a molecule has E_trans = 6.0 × 10^−21 J, E_vib = 2.0 × 10^−20 J, E_rot = 4.0 × 10^−21 J and E_elec = 0 (its ground electronic state taken as zero). What is E_tot, in J? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 3e-20,
+    "unit": "J",
+    "explanation": "E_tot = 6.0 × 10^−21 J + 2.0 × 10^−20 J + 4.0 × 10^−21 J + 0 = 3.0 × 10^−20 J. The energies of the separate motions simply add, while their partition functions multiply."
+  },
+  {
+    "id": "pc18-separate-terms-o2-qelec",
+    "type": "numeric",
+    "prompt": "The ground electronic state of O2 is triply degenerate (g_1 = 3), and its excited electronic states lie far above kT. Taking the ground state as zero, q_elec = g_1 + g_2 exp(−E_2/(kT)) + …. What is q_elec for O2 at room temperature?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "With E_1 = 0 the first term is g_1 = 3, and the excited-state terms are essentially zero, so q_elec ≈ 3. q_elec = 1 only when the ground state is nondegenerate."
+  }
+]

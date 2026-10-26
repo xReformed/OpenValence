@@ -1,0 +1,422 @@
+[
+  {
+    "id": "pc22-gibbs-helmholtz-gas-integral",
+    "type": "multiple-choice",
+    "prompt": "For one mole of an ideal gas at constant temperature, the section finds ΔḠ = RT ln(P_2/P_1). What is integrated over pressure to get this?",
+    "choices": [
+      {
+        "text": "The molar volume, V̄ = RT/P",
+        "correct": true
+      },
+      {
+        "text": "The heat capacity over temperature, C_P/T",
+        "why": "Integrating C_P/T over temperature gives an entropy change. Here the molar volume from the gas law, V̄ = RT/P, is integrated over pressure."
+      },
+      {
+        "text": "The negative of the molar entropy, −S̄",
+        "why": "−S̄ is the slope of Ḡ against temperature, not pressure. The pressure change comes from integrating V̄ = RT/P over P."
+      },
+      {
+        "text": "The product PV̄, which equals RT",
+        "why": "PV̄ = RT is a constant at fixed temperature, so integrating it would not give a logarithm. The ln comes from integrating V̄ = RT/P over P."
+      }
+    ],
+    "explanation": "At constant temperature, dḠ = V̄ dP, and the ideal gas law gives V̄ = RT/P. Integrating RT/P from P_1 to P_2 gives ΔḠ = RT ln(P_2/P_1)."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-gas-compression",
+    "type": "multiple-choice",
+    "prompt": "An ideal gas is compressed at constant temperature from 1 bar to 5 bar. According to ΔḠ = RT ln(P_2/P_1), what happens to its molar Gibbs energy?",
+    "choices": [
+      {
+        "text": "It rises by RT ln 5",
+        "correct": true
+      },
+      {
+        "text": "It falls by RT ln 5",
+        "why": "Compression raises Ḡ: P_2/P_1 = 5 is greater than 1, so ln 5 is positive and so is ΔḠ."
+      },
+      {
+        "text": "It stays the same, since T is constant",
+        "why": "Constant temperature does not make ΔḠ zero; the pressure ratio sets it. ln 5 is positive, so Ḡ rises."
+      },
+      {
+        "text": "It rises by 5RT",
+        "why": "The pressure ratio enters through its logarithm, not directly. ΔḠ = RT ln 5, which is about 1.61RT."
+      }
+    ],
+    "explanation": "With P_1 = 1 bar and P_2 = 5 bar, ΔḠ = RT ln 5 ≈ 1.61RT, which is positive. Compressing an ideal gas raises its Gibbs energy, and letting it expand lowers it."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-at-one-bar",
+    "type": "multiple-choice",
+    "prompt": "The section writes the molar Gibbs energy of an ideal gas as Ḡ(P) = G° + RT ln(P/1 bar). What is Ḡ when the gas is at exactly 1 bar?",
+    "choices": [
+      {
+        "text": "G°",
+        "correct": true
+      },
+      {
+        "text": "Zero",
+        "why": "At 1 bar only the log term is zero, not Ḡ itself. Since ln 1 = 0, Ḡ = G°."
+      },
+      {
+        "text": "G° + RT",
+        "why": "RT is multiplied by ln(P/1 bar), which is ln 1 = 0 at 1 bar. So the RT term drops out and Ḡ = G°."
+      },
+      {
+        "text": "RT",
+        "why": "At 1 bar the whole RT ln term vanishes, since ln 1 = 0. What remains is G°, not RT."
+      }
+    ],
+    "explanation": "At P = 1 bar, ln(P/1 bar) = ln 1 = 0, so Ḡ = G°. That is why the section takes the starting pressure P_1 to be the standard state, 1 bar: G° is the molar Gibbs energy there."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-bar-meaning",
+    "type": "multiple-choice",
+    "prompt": "In symbols such as Ḡ, what does the bar over the G show?",
+    "choices": [
+      {
+        "text": "The quantity is given per mole",
+        "correct": true
+      },
+      {
+        "text": "The quantity is averaged over time",
+        "why": "The bar here doesn't mean a time average. It shows a molar quantity, which makes the function intensive."
+      },
+      {
+        "text": "The gas is at the standard pressure",
+        "why": "The standard state is marked with the ° sign, as in G°. The bar shows that G is given per mole."
+      },
+      {
+        "text": "The value applies to ideal gases only",
+        "why": "A bar can go on the molar G of any substance. It means the quantity is per mole, an intensive property."
+      }
+    ],
+    "explanation": "Dividing G by the amount of substance makes it intensive, and the bar marks this: Ḡ is the molar Gibbs energy. The bar is often left off, especially on G°."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-solid-constant-v",
+    "type": "multiple-choice",
+    "prompt": "To find how the Gibbs energy of a solid changes with pressure, the section treats its volume V as constant. Why is that reasonable?",
+    "choices": [
+      {
+        "text": "A solid's volume barely changes under pressure",
+        "correct": true
+      },
+      {
+        "text": "A solid's volume is fixed by the third law",
+        "why": "The third law concerns entropy near 0 K, not volume. A solid's volume is nearly constant because its isothermal compressibility κ is small."
+      },
+      {
+        "text": "Pressure has no effect at all on a solid's G",
+        "why": "Pressure does raise the G of a solid, by about VΔP. It is only the volume that changes very little, because the compressibility κ is small."
+      },
+      {
+        "text": "Solids obey the ideal gas law at high pressure",
+        "why": "Solids don't follow PV = nRT; that law makes a gas's volume change a lot with pressure. A solid's small compressibility κ keeps V nearly constant."
+      }
+    ],
+    "explanation": "Solids have a small isothermal compressibility κ, so V hardly changes as P rises. V can then come out of ∫V dP, which gives G(P_final) ≈ G(P_initial) + VΔP."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-solid-vs-gas",
+    "type": "multiple-choice",
+    "prompt": "Why is G(P_final) ≈ G(P_initial) + VΔP not used for an ideal gas?",
+    "choices": [
+      {
+        "text": "A gas's volume changes greatly with pressure",
+        "correct": true
+      },
+      {
+        "text": "An ideal gas has no Gibbs energy",
+        "why": "An ideal gas does have a Gibbs energy, Ḡ = G° + RT ln(P/1 bar). The VΔP shortcut fails because the gas's volume, V̄ = RT/P, changes with P."
+      },
+      {
+        "text": "The Gibbs energy of a gas doesn't depend on pressure",
+        "why": "That is true of the enthalpy of an ideal gas, not of G: ΔḠ = RT ln(P_2/P_1). The VΔP shortcut fails because V changes with P."
+      },
+      {
+        "text": "A gas's volume is too small for VΔP to matter",
+        "why": "A gas has a much larger volume than a solid, not a smaller one. The trouble is that V̄ = RT/P changes as P changes, so it can't be held constant."
+      }
+    ],
+    "explanation": "The shortcut assumes V stays constant, which holds for a solid. For an ideal gas V̄ = RT/P falls as P rises, so V must stay inside the integral, and the result is ΔḠ = RT ln(P_2/P_1)."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-h-derivative",
+    "type": "multiple-choice",
+    "prompt": "The section notes that S is a first derivative of G. Which quantity does the Gibbs–Helmholtz equation show to be a first derivative of G/T?",
+    "choices": [
+      {
+        "text": "The enthalpy, H",
+        "correct": true
+      },
+      {
+        "text": "The entropy, S",
+        "why": "S is the first derivative of G itself: ((∂G)/(∂T))_P = −S. The derivative of G/T gives the enthalpy, as −H/T^2."
+      },
+      {
+        "text": "The heat capacity, C_P",
+        "why": "C_P is a second derivative: it comes from differentiating H or S once more. The first derivative of G/T gives H."
+      },
+      {
+        "text": "The internal energy, U",
+        "why": "U does not appear in the Gibbs–Helmholtz equation. At constant pressure the derivative of G/T is −H/T^2."
+      }
+    ],
+    "explanation": "The Gibbs–Helmholtz equation, ((∂(G/T))/(∂T))_P = −H/T^2, shows that H, like S, is a first derivative, but of G/T rather than of G itself. Knowing how G/T changes with temperature at constant pressure gives H."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-start-relation",
+    "type": "multiple-choice",
+    "prompt": "The section derives the Gibbs–Helmholtz equation by differentiating one relation with respect to T at constant pressure. Which relation?",
+    "choices": [
+      {
+        "text": "G/T = H/T − S",
+        "correct": true
+      },
+      {
+        "text": "A = U − TS",
+        "why": "That defines the Helmholtz energy A, not G. The section divides G = H − TS by T to get G/T = H/T − S."
+      },
+      {
+        "text": "dG = V dP − S dT",
+        "why": "This gives the derivatives of G itself. The section starts from G = H − TS divided by T: G/T = H/T − S."
+      },
+      {
+        "text": "H = U + PV",
+        "why": "This defines H but contains no G. The derivation differentiates G/T = H/T − S, which is G = H − TS divided by T."
+      }
+    ],
+    "explanation": "Dividing G = H − TS by T gives G/T = H/T − S. Differentiating each term at constant pressure, two C_P/T terms cancel and leave ((∂(G/T))/(∂T))_P = −H/T^2."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-cancel",
+    "type": "multiple-choice",
+    "prompt": "In the derivation of the Gibbs–Helmholtz equation, the terms (1/T)((∂H)/(∂T))_P and ((∂S)/(∂T))_P cancel. Why?",
+    "choices": [
+      {
+        "text": "Both are equal to C_P/T",
+        "correct": true
+      },
+      {
+        "text": "Both are zero at constant pressure",
+        "why": "Neither is zero: heating at constant pressure raises both H and S. They cancel because each equals C_P/T."
+      },
+      {
+        "text": "H and S do not depend on temperature",
+        "why": "Both H and S rise with temperature, at rates set by C_P. The two terms cancel because each equals C_P/T."
+      },
+      {
+        "text": "The enthalpy term is much smaller",
+        "why": "The two terms are exactly equal, not just similar in size. Each equals C_P/T, so their difference is zero."
+      }
+    ],
+    "explanation": "Because ((∂H)/(∂T))_P = C_P, the first term is C_P/T, and ((∂S)/(∂T))_P is also C_P/T. They cancel, leaving only −H/T^2."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-delta-form",
+    "type": "multiple-choice",
+    "prompt": "The section also writes the Gibbs–Helmholtz equation as ((∂(ΔG/T))/(∂T))_P = −ΔH/T^2. How is this form obtained?",
+    "choices": [
+      {
+        "text": "By subtracting it for the final and initial states",
+        "correct": true
+      },
+      {
+        "text": "By assuming ΔH stays the same at every temperature",
+        "why": "No assumption about ΔH is needed. The equation is written for the initial and final states, and one is subtracted from the other."
+      },
+      {
+        "text": "By integrating C_P over the temperature range",
+        "why": "Integrating C_P gives a change in H, not this equation. The Δ form comes from subtracting the equation for the initial state from the one for the final state."
+      },
+      {
+        "text": "By setting T to the standard temperature of 298 K",
+        "why": "No particular temperature is used. Writing the equation for the initial and final states and subtracting gives the Δ form, which holds for any process."
+      }
+    ],
+    "explanation": "The equation holds for G and H in the initial state and in the final state of a process. Subtracting the two identical equations gives the Δ form, which can be applied to any process."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-exothermic-sign",
+    "type": "multiple-choice",
+    "prompt": "For an exothermic process (ΔH < 0), what does ((∂(ΔG/T))/(∂T))_P = −ΔH/T^2 say about ΔG/T as the temperature rises at constant pressure?",
+    "choices": [
+      {
+        "text": "It increases",
+        "correct": true
+      },
+      {
+        "text": "It decreases",
+        "why": "With ΔH < 0, −ΔH/T^2 is positive, so the slope of ΔG/T against T is positive. ΔG/T increases."
+      },
+      {
+        "text": "It stays constant",
+        "why": "The slope would be zero only if ΔH were zero. For an exothermic process −ΔH/T^2 > 0, so ΔG/T increases."
+      },
+      {
+        "text": "It depends on the sign of ΔS",
+        "why": "The Gibbs–Helmholtz equation contains only ΔH, not ΔS. Its sign alone fixes the slope: −ΔH/T^2 > 0 here, so ΔG/T increases."
+      }
+    ],
+    "explanation": "T^2 is always positive, so the sign of the slope is the sign of −ΔH. For an exothermic process −ΔH > 0, so ΔG/T rises with temperature."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-build-g-curve",
+    "type": "multiple-choice",
+    "prompt": "Given curves of H(T) and S(T) found from heat capacity data, how does the section build a curve of G against temperature?",
+    "choices": [
+      {
+        "text": "G(T) = H(T) − TS(T)",
+        "correct": true
+      },
+      {
+        "text": "G(T) = H(T) + TS(T)",
+        "why": "The entropy term enters with a minus sign, since G = H − TS. So G(T) = H(T) − TS(T)."
+      },
+      {
+        "text": "G(T) = H(T) − S(T)",
+        "why": "The entropy must be multiplied by the temperature before it is subtracted. G(T) = H(T) − TS(T)."
+      },
+      {
+        "text": "G(T) = H(T)/T − S(T)",
+        "why": "H/T − S is G/T, not G. The section uses G(T) = H(T) − TS(T)."
+      }
+    ],
+    "explanation": "Because G = H − TS, the H and S curves combine point by point: G(T) = H(T) − TS(T). Both come from heat capacities measured up from 0 K, with jumps added at the phase transitions."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-no-jump",
+    "type": "multiple-choice",
+    "prompt": "At the melting point, H jumps up by ΔH_fus and S jumps up by ΔS_fus. Why does G = H − TS not jump there?",
+    "choices": [
+      {
+        "text": "ΔH_fus = T_fus ΔS_fus, so the two jumps cancel",
+        "correct": true
+      },
+      {
+        "text": "H and S do not really jump at a phase transition",
+        "why": "They do: H jumps by ΔH_fus and S by ΔS_fus. The jumps in H and in TS are equal, ΔH_fus = T_fus ΔS_fus, so G stays continuous."
+      },
+      {
+        "text": "The jump in S is too small to matter",
+        "why": "The jump in TS is not small; it equals ΔH_fus exactly. That is why the two jumps cancel in G = H − TS."
+      },
+      {
+        "text": "G is only defined away from transitions",
+        "why": "G is defined at a transition and is continuous there. ΔH_fus = T_fus ΔS_fus makes the jumps in H and TS cancel."
+      }
+    ],
+    "explanation": "At a phase transition, ΔH_trs = T_trs ΔS_trs, so H and TS jump by the same amount. In G = H − TS the two jumps cancel, so G is always continuous."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-kinks",
+    "type": "multiple-choice",
+    "prompt": "On a plot of G(T) − H(0) for benzene, what happens at the melting point and at the boiling point?",
+    "choices": [
+      {
+        "text": "The curve is unbroken but has a kink",
+        "correct": true
+      },
+      {
+        "text": "The curve jumps straight down",
+        "why": "G doesn't jump, because ΔH_trs = T_trs ΔS_trs makes the jumps in H and TS cancel. Only the slope changes, giving a kink."
+      },
+      {
+        "text": "The curve goes flat for a while",
+        "why": "The slope of G is −S, which is never zero above 0 K. At a transition the slope just changes suddenly, making a kink."
+      },
+      {
+        "text": "The curve stays smooth, with no change",
+        "why": "The value of G is continuous, but its slope −S jumps because S jumps at the transition. That shows up as a kink."
+      }
+    ],
+    "explanation": "G itself is continuous at a phase transition, but its slope, −S, jumps because S jumps by ΔS_trs. So the curve has a kink at the melting point and another at the boiling point."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-steeper-liquid",
+    "type": "multiple-choice",
+    "prompt": "Just above the melting point, the G curve falls more steeply than just below it. Why?",
+    "choices": [
+      {
+        "text": "The liquid has more entropy than the solid",
+        "correct": true
+      },
+      {
+        "text": "The liquid has a smaller heat capacity",
+        "why": "The slope of G is −S, not −C_P. It gets steeper because S jumps up by ΔS_fus on melting."
+      },
+      {
+        "text": "G jumps down at the melting point",
+        "why": "G is continuous at the melting point. Only its slope changes, because the liquid's entropy is larger."
+      },
+      {
+        "text": "The liquid has less enthalpy than the solid",
+        "why": "The liquid has more enthalpy, by ΔH_fus. The slope of G is −S, and S rises on melting, so the curve steepens."
+      }
+    ],
+    "explanation": "The slope of the G curve is −S. Melting raises S by ΔS_fus = ΔH_fus/T_fus, so −S becomes more negative and G falls faster above the melting point."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-plot-offset",
+    "type": "multiple-choice",
+    "prompt": "Why does the section plot G(T) − H(0) instead of G(T)?",
+    "choices": [
+      {
+        "text": "H(0) is undefined, so G has an arbitrary offset",
+        "correct": true
+      },
+      {
+        "text": "S(0) is undefined, so G must be shifted by it",
+        "why": "The third law lets S(0) be set to zero. It is H(0) that can't be fixed, and it carries over into G = H − TS."
+      },
+      {
+        "text": "Subtracting H(0) removes the jumps at transitions",
+        "why": "G has no jumps to remove; it is continuous at transitions. H(0) is subtracted because its value is undefined, which leaves G with an arbitrary offset."
+      },
+      {
+        "text": "G(0) is infinite, so G must be shifted by it",
+        "why": "Nothing is infinite here: at T = 0, G = H(0). The problem is that H(0) has no defined value, so only G(T) − H(0) can be plotted."
+      }
+    ],
+    "explanation": "The third law lets S(0) be set to zero, but nothing fixes H(0). Since G = H − TS, the unknown H(0) shifts the whole G curve up or down, so the section plots G(T) − H(0)."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-expansion-dg",
+    "type": "numeric",
+    "prompt": "An ideal gas sample of 1.50 mol expands at 298 K from 5.00 bar to 1.00 bar. Using ΔG = nRT ln(P_2/P_1), R = 8.314 J/(mol·K) and ln 0.200 = −1.609, what is ΔG, in kJ, including its sign? (Give it as a decimal.)",
+    "answer": -5.98,
+    "unit": "kJ",
+    "explanation": "ΔG = (1.50 mol)(8.314 J/(mol·K))(298 K)(−1.609) = −5980 J = −5.98 kJ. The pressure falls, so P_2/P_1 < 1, the log is negative, and the gas's Gibbs energy drops."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-below-standard",
+    "type": "numeric",
+    "prompt": "An ideal gas is at 0.250 bar and 300 K. Using Ḡ = G° + RT ln(P/1 bar), R = 8.314 J/(mol·K) and ln 0.250 = −1.386, what is Ḡ − G°, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -3.46,
+    "explanation": "Ḡ − G° = (8.314 J/(mol·K))(300 K)(−1.386) = −3457 J/mol = −3.46 kJ/mol. Below the standard pressure of 1 bar, the molar Gibbs energy is lower than G°."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-solid-vdp",
+    "type": "numeric",
+    "prompt": "Copper has a molar volume of 7.09 cm^3/mol, which barely changes with pressure. At constant temperature, the pressure on a block of copper is raised by 200 bar. Using ΔḠ ≈ V̄ΔP, 1 cm^3 = 10^−6 m^3 and 1 bar = 10^5 Pa (with 1 Pa·m^3 = 1 J), by how much does its molar Gibbs energy rise, in J/mol? (Give it as a decimal.)",
+    "answer": 141.8,
+    "explanation": "V̄ = 7.09 × 10^−6 m^3/mol and ΔP = 200 bar = 2.00 × 10^7 Pa, so ΔḠ ≈ (7.09 × 10^−6 m^3/mol)(2.00 × 10^7 Pa) = 141.8 J/mol. A solid's molar volume is so small that even a large pressure change shifts its G only a little."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-slope-value",
+    "type": "numeric",
+    "prompt": "A reaction has ΔH = +40.0 kJ/mol at 400 K. Using the Gibbs–Helmholtz equation, ((∂(ΔG/T))/(∂T))_P = −ΔH/T^2, what is the slope of ΔG/T against T at 400 K, in J/(mol·K^2), including its sign? (Give it as a decimal.)",
+    "answer": -0.25,
+    "explanation": "T^2 = (400 K)^2 = 160 000 K^2, so −ΔH/T^2 = −(40 000 J/mol)/(160 000 K^2) = −0.250 J/(mol·K^2). For this endothermic reaction, ΔG/T falls as the temperature rises."
+  },
+  {
+    "id": "pc22-gibbs-helmholtz-warming-estimate",
+    "type": "numeric",
+    "prompt": "At 298 K, hydrogen gas has a molar entropy S̄ = 130.7 J/(mol·K), and the slope of its Ḡ against T at constant pressure is −S̄. Using ΔḠ ≈ −S̄ΔT, about how much does Ḡ change when the gas is warmed by 3.00 K at constant pressure, in J/mol, including its sign? (Give it as a decimal.)",
+    "answer": -392.1,
+    "explanation": "ΔḠ ≈ −130.7 J/(mol·K) × 3.00 K = −392.1 J/mol. The answer is negative because G always falls as the temperature rises: its slope is −S, and S is positive."
+  }
+]

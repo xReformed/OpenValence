@@ -1,0 +1,576 @@
+[
+  {
+    "id": "pc17-heat-capacity-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the heat capacity at constant volume, C_V?",
+    "choices": [
+      {
+        "text": "The change in internal energy with temperature",
+        "correct": true
+      },
+      {
+        "text": "The change in internal energy with volume",
+        "why": "The volume is held fixed in C_V. C_V is how the internal energy U changes with temperature: C_V = ((∂U)/(∂T))_(N, V)."
+      },
+      {
+        "text": "The change in temperature with internal energy",
+        "why": "That is the inverse, (∂T)/(∂U) = 1/C_V. C_V itself is (∂U)/(∂T), the change in U per kelvin."
+      },
+      {
+        "text": "The internal energy divided by the temperature",
+        "why": "U/T is not a derivative. C_V is the slope of U against T, (∂U)/(∂T), at constant N and V."
+      }
+    ],
+    "explanation": "C_V = ((∂U)/(∂T))_(N, V): the heat capacity at constant volume is the rate at which the internal energy rises with temperature. A large C_V means a lot of energy is needed for each kelvin of warming."
+  },
+  {
+    "id": "pc17-heat-capacity-held-fixed",
+    "type": "multiple-choice",
+    "prompt": "In C_V = ((∂U)/(∂T))_(N, V), which quantities are held constant while U is differentiated?",
+    "choices": [
+      {
+        "text": "The number of particles and the volume",
+        "correct": true
+      },
+      {
+        "text": "The temperature and the volume",
+        "why": "T can't be held fixed: it is the variable U is differentiated against. The subscript (N, V) means the particle number and the volume are fixed."
+      },
+      {
+        "text": "The number of particles and the pressure",
+        "why": "Fixed pressure would give the heat capacity at constant pressure instead. The subscript (N, V) means the volume is fixed."
+      },
+      {
+        "text": "The internal energy and the volume",
+        "why": "U is the quantity being differentiated, so it changes. The fixed quantities are N and V."
+      }
+    ],
+    "explanation": "The subscript (N, V) means the number of particles and the volume are held fixed while T, and with it U, changes. These are the variables of the canonical partition function Q(N, V, β), which is how C_V can be found from Q."
+  },
+  {
+    "id": "pc17-heat-capacity-chain-rule",
+    "type": "multiple-choice",
+    "prompt": "To find C_V from the partition function, the section writes (∂U)/(∂T) = (∂U)/(∂β) · (∂β)/(∂T). Why does it go through β?",
+    "choices": [
+      {
+        "text": "U is written in terms of β, not T",
+        "correct": true
+      },
+      {
+        "text": "T is held fixed when finding C_V",
+        "why": "T is not fixed in C_V; it is the variable U changes with. The step through β is needed because U = −(∂ln Q)/(∂β) is a function of β."
+      },
+      {
+        "text": "Q does not depend on the temperature",
+        "why": "Q depends on the temperature through β = 1/(kT). The section goes through β because U = −(∂ln Q)/(∂β) is written in terms of β."
+      },
+      {
+        "text": "β can be measured more easily than T",
+        "why": "β is worked out from T, not measured. The chain rule is needed because U is given as a derivative with respect to β."
+      }
+    ],
+    "explanation": "The energy is U = −(∂ln Q)/(∂β), a function of β. The chain rule turns its derivative with respect to β into one with respect to T, using (∂β)/(∂T) from β = 1/(kT)."
+  },
+  {
+    "id": "pc17-heat-capacity-second-derivative",
+    "type": "multiple-choice",
+    "prompt": "The section finds C_V = kβ^2 (∂^2 ln Q)/(∂β^2). Which derivative of ln Q does C_V need?",
+    "choices": [
+      {
+        "text": "The second derivative with respect to β",
+        "correct": true
+      },
+      {
+        "text": "The first derivative with respect to β",
+        "why": "The first derivative, −(∂ln Q)/(∂β), is the energy U. C_V is the change of U with T, so it needs one more derivative: the second derivative with respect to β."
+      },
+      {
+        "text": "The first derivative with respect to V",
+        "why": "The volume is held fixed in C_V; derivatives of ln Q with respect to V lead to the pressure instead. C_V uses the second derivative with respect to β."
+      },
+      {
+        "text": "No derivative at all, just the value of ln Q",
+        "why": "C_V describes how U changes with T, so it needs derivatives. It is kβ^2 times the second derivative of ln Q with respect to β."
+      }
+    ],
+    "explanation": "U is minus the first derivative of ln Q with respect to β, and C_V is the derivative of U. So C_V = kβ^2 (∂^2 ln Q)/(∂β^2) contains the second derivative of ln Q with respect to β."
+  },
+  {
+    "id": "pc17-heat-capacity-storing-energy",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how is energy stored in a material or a gas?",
+    "choices": [
+      {
+        "text": "By populating the sample's degrees of freedom",
+        "correct": true
+      },
+      {
+        "text": "Only as the speed of the sample as a whole",
+        "why": "Moving the whole sample is not heating it. Energy is stored by populating the degrees of freedom of the sample, such as the vibrations of its atoms."
+      },
+      {
+        "text": "Only by breaking chemical bonds",
+        "why": "Heating need not break any bonds. Energy is stored by populating the sample's degrees of freedom, such as its vibrations."
+      },
+      {
+        "text": "In the walls of the container, not the sample",
+        "why": "The section is about energy stored in the sample itself, by populating the degrees of freedom that exist in it."
+      }
+    ],
+    "explanation": "Energy can be stored in materials and gases by populating the specific degrees of freedom that exist in the sample. Understanding how this happens, and how easily, requires quantum mechanics."
+  },
+  {
+    "id": "pc17-heat-capacity-dulong-petit-finding",
+    "type": "multiple-choice",
+    "prompt": "What did Dulong and Petit find in 1819 when they measured the heat capacities of a variety of solid crystals near room temperature?",
+    "choices": [
+      {
+        "text": "They were all close to the same value",
+        "correct": true
+      },
+      {
+        "text": "They grew in proportion to the molar mass",
+        "why": "Per mole, the heat capacities did not depend on the solid. All were close to the same value, about 2.49 × 10^4 J per kilomole per kelvin."
+      },
+      {
+        "text": "They were all close to zero",
+        "why": "Heat capacities near zero appear only close to absolute zero. At room temperature all the solids had about the same, sizeable value."
+      },
+      {
+        "text": "They varied widely, with no pattern",
+        "why": "There was a clear pattern: all the solids investigated had nearly the same heat capacity, about 2.49 × 10^4 J per kilomole per kelvin."
+      }
+    ],
+    "explanation": "Dulong and Petit found that all the solids they investigated had a heat capacity of about 2.49 × 10^4 J kilomole^−1 K^−1 at around 298 K. Every solid gave nearly the same value per mole of atoms."
+  },
+  {
+    "id": "pc17-heat-capacity-six-dof",
+    "type": "multiple-choice",
+    "prompt": "In the explanation of the Dulong-Petit law, each atom in a solid has six degrees of freedom. Where do the six come from?",
+    "choices": [
+      {
+        "text": "x, y and z, each with kinetic and potential energy",
+        "correct": true
+      },
+      {
+        "text": "Three translations and three rotations of each atom",
+        "why": "An atom held in the lattice doesn't rotate in this model. It vibrates along x, y and z, and each direction has a kinetic and a potential energy term."
+      },
+      {
+        "text": "Six electrons per atom that can take up heat",
+        "why": "The model treats each atom as an oscillator; electrons don't enter it. The six are x, y and z, each with kinetic and potential energy."
+      },
+      {
+        "text": "Six neighboring atoms that share its energy",
+        "why": "The count is of the ways one atom stores energy, not of its neighbors. It vibrates along x, y and z, each with kinetic and potential energy."
+      }
+    ],
+    "explanation": "Each atom vibrates as if on springs along x, y and z. Each of the three motions has two degrees of freedom, one for kinetic energy and one for potential energy, giving six."
+  },
+  {
+    "id": "pc17-heat-capacity-three-r",
+    "type": "multiple-choice",
+    "prompt": "In the Dulong-Petit explanation, each degree of freedom has an average energy of (1/2)kT. What molar heat capacity does this give for a solid whose atoms have six degrees of freedom?",
+    "choices": [
+      {
+        "text": "3R",
+        "correct": true
+      },
+      {
+        "text": "(3/2)R",
+        "why": "(3/2)R would come from only three degrees of freedom, each giving R/2. Six degrees of freedom give C_V = (6R)/2 = 3R."
+      },
+      {
+        "text": "6R",
+        "why": "Each degree of freedom adds R/2 per mole, not R. Six of them give (6R)/2 = 3R."
+      },
+      {
+        "text": "(1/2)R",
+        "why": "R/2 is the contribution of a single degree of freedom. All six together give 3R."
+      }
+    ],
+    "explanation": "Each degree of freedom holds (1/2)kT per atom, so it adds (1/2)k per atom, or (1/2)R per mole, to C_V. Six degrees of freedom give C_V = (6R)/2 = 3R, the Dulong-Petit law."
+  },
+  {
+    "id": "pc17-heat-capacity-low-t-failure",
+    "type": "multiple-choice",
+    "prompt": "What later observation showed that the Dulong-Petit explanation was not enough?",
+    "choices": [
+      {
+        "text": "C_V drops as T approaches absolute zero",
+        "correct": true
+      },
+      {
+        "text": "C_V keeps rising without limit at high temperature",
+        "why": "At high temperature the Dulong-Petit value works well. The failure was at low temperature, where C_V drops toward zero."
+      },
+      {
+        "text": "Different solids had very different C_V at 298 K",
+        "why": "At room temperature the solids did agree with Dulong and Petit. The problem was the drop in heat capacity near absolute zero."
+      },
+      {
+        "text": "The molar C_V depends on the size of the crystal",
+        "why": "Heat capacity per mole doesn't depend on the size of the crystal. The problem was that C_V falls toward zero as T approaches absolute zero."
+      }
+    ],
+    "explanation": "The Dulong-Petit model predicts the same 3R at every temperature. Experiments showed that the heat capacity decreases as T approaches absolute zero, which led to new models by Einstein and by Debye."
+  },
+  {
+    "id": "pc17-heat-capacity-einstein-debye",
+    "type": "multiple-choice",
+    "prompt": "Which two scientists developed the main theories to explain why the heat capacity of solids falls at low temperature?",
+    "choices": [
+      {
+        "text": "Einstein and Debye",
+        "correct": true
+      },
+      {
+        "text": "Dulong and Petit",
+        "why": "Dulong and Petit found the room-temperature value, 3R, whose failure at low T needed explaining. The two later theories were Einstein's and Debye's."
+      },
+      {
+        "text": "Planck and Bohr",
+        "why": "Planck and Bohr are known for the quantization of radiation and of the atom. The section names Einstein and Debye as the authors of the two theories of solids."
+      },
+      {
+        "text": "Maxwell and Boltzmann",
+        "why": "They developed the statistics of gas molecules. The section names Einstein and Debye as the authors of the two theories of solids."
+      }
+    ],
+    "explanation": "Two main theories were developed to explain the drop in heat capacity at low temperature: the first by Einstein and the second by Debye. The section works through Einstein's model."
+  },
+  {
+    "id": "pc17-heat-capacity-einstein-three-dimensions",
+    "type": "multiple-choice",
+    "prompt": "Which of these is one of Einstein's three assumptions about a solid?",
+    "choices": [
+      {
+        "text": "Each atom moves independently in three dimensions",
+        "correct": true
+      },
+      {
+        "text": "The atoms interact strongly with their neighbors",
+        "why": "Einstein assumed the opposite: that the atoms don't interact with each other. The section points out that this assumption is not accurate."
+      },
+      {
+        "text": "Each atom vibrates at its own, different frequency",
+        "why": "Einstein assumed that all the atoms vibrate at the same frequency. That is the point on which his model differs most from Debye's."
+      },
+      {
+        "text": "Each atom can move along one direction only",
+        "why": "Einstein let each atom move in all three dimensions, which gives 3N motions for N atoms."
+      }
+    ],
+    "explanation": "Einstein assumed a lattice of N atoms, each moving independently in three dimensions; no interactions between the atoms; and a single vibration frequency for all of them. The N atoms then have 3N vibrational motions."
+  },
+  {
+    "id": "pc17-heat-capacity-no-interaction-flaw",
+    "type": "multiple-choice",
+    "prompt": "Which of Einstein's assumptions does the section say is not accurate?",
+    "choices": [
+      {
+        "text": "That the atoms do not interact with each other",
+        "correct": true
+      },
+      {
+        "text": "That the solid is built as a lattice of N atoms",
+        "why": "The section keeps the lattice picture. The flawed assumption is that the atoms don't interact; if that were true, sound could not travel through a solid."
+      },
+      {
+        "text": "That each atom moves in all three dimensions",
+        "why": "The section says this first point is accurate, because experiments support it. The flawed one is that the atoms don't interact."
+      },
+      {
+        "text": "That C_V approaches 3Nk at high temperature",
+        "why": "That is a result of the model, and it agrees with experiment. The inaccurate assumption is that the atoms don't interact with each other."
+      }
+    ],
+    "explanation": "If the atoms of a solid could not interact, sound could not travel through it, as it does from a struck tuning fork. Heat spreading through a frying pan heated on one side shows the same thing: the atoms pass energy to each other."
+  },
+  {
+    "id": "pc17-heat-capacity-debye-difference",
+    "type": "multiple-choice",
+    "prompt": "The section says one of Einstein's three assumptions marks the main difference between his model and Debye's. Which one?",
+    "choices": [
+      {
+        "text": "All the atoms vibrate at the same frequency",
+        "correct": true
+      },
+      {
+        "text": "The solid is a lattice of N atoms",
+        "why": "Both models picture the solid as a lattice of atoms. The section names the single-frequency assumption as the main difference."
+      },
+      {
+        "text": "Each atom moves independently in three dimensions",
+        "why": "The section calls this point accurate, and it is not where the models part ways. The main difference is the single vibration frequency."
+      },
+      {
+        "text": "The atoms do not interact with each other",
+        "why": "The section says this assumption is not accurate, but it names the third point, a single frequency for all atoms, as the main difference from Debye's model."
+      }
+    ],
+    "explanation": "Einstein's third assumption, that every atom in the solid vibrates at the same frequency, highlights the main difference between his model and Debye's. Debye's model does not use a single frequency."
+  },
+  {
+    "id": "pc17-heat-capacity-einstein-nu",
+    "type": "multiple-choice",
+    "prompt": "In the Einstein model, the Einstein temperature is θ_E = hν/k. What is ν?",
+    "choices": [
+      {
+        "text": "The vibration frequency of the atoms in the solid",
+        "correct": true
+      },
+      {
+        "text": "The speed of sound in the solid",
+        "why": "A speed is not a frequency. ν is the oscillator frequency of the atoms in the solid, so hν is the spacing of their vibrational levels."
+      },
+      {
+        "text": "The number of moles of atoms in the solid",
+        "why": "ν here is the Greek letter nu, a frequency, not the number of moles n. It is the oscillator frequency of the atoms."
+      },
+      {
+        "text": "The frequency of the light the solid gives off when hot",
+        "why": "θ_E is about the vibrations of the atoms, not the light the solid gives off. ν is the frequency at which the atoms oscillate."
+      }
+    ],
+    "explanation": "θ_E = hν/k turns the atoms' oscillator frequency ν into a temperature. Comparing T with θ_E tells you how easily the vibrations can be excited."
+  },
+  {
+    "id": "pc17-heat-capacity-theta-excitation",
+    "type": "multiple-choice",
+    "prompt": "As a solid's Einstein temperature θ_E increases, how does the probability that an oscillator is excited to its next vibrational state change?",
+    "choices": [
+      {
+        "text": "It decreases",
+        "correct": true
+      },
+      {
+        "text": "It increases",
+        "why": "A higher θ_E means a higher frequency and a bigger step between vibrational levels. Excitation goes as exp(−θ_E/T), so it becomes less likely."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The chance of excitation depends on θ_E through exp(−θ_E/T). A higher θ_E makes excitation less likely."
+      },
+      {
+        "text": "It becomes exactly zero",
+        "why": "A higher θ_E makes excitation less likely, not impossible. At a high enough temperature the oscillators can still be excited."
+      }
+    ],
+    "explanation": "A higher θ_E means a higher vibration frequency and so a bigger energy step to the next level. Excitation goes as exp(−θ_E/T), so the probability falls as θ_E rises, as it does for diamond."
+  },
+  {
+    "id": "pc17-heat-capacity-accessibility",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does the accessibility of a solid's vibrational energy affect its heat capacity?",
+    "choices": [
+      {
+        "text": "More accessible energy gives a larger heat capacity",
+        "correct": true
+      },
+      {
+        "text": "More accessible energy gives a smaller heat capacity",
+        "why": "It is the other way round. When vibrational levels are easy to reach, collisions excite them more often and the solid stores more energy per kelvin."
+      },
+      {
+        "text": "Accessibility has no effect on the heat capacity",
+        "why": "The section says accessibility determines the heat capacity. The easier the vibrational energy is to reach, the larger C_V."
+      },
+      {
+        "text": "It matters only above the melting point",
+        "why": "The section applies it to solids, below their melting points. The easier the vibrational energy is to reach, the larger C_V."
+      }
+    ],
+    "explanation": "If the vibrational energy is easily accessible, collisions are more likely to excite atoms into upper vibrational levels, so more energy is stored. The greater the accessibility, the greater the heat capacity."
+  },
+  {
+    "id": "pc17-heat-capacity-high-t-limit",
+    "type": "multiple-choice",
+    "prompt": "In the Einstein model, what does C_V approach in the high-temperature limit, θ_E/T ≪ 1?",
+    "choices": [
+      {
+        "text": "3Nk, the Dulong-Petit value",
+        "correct": true
+      },
+      {
+        "text": "(3/2)Nk, as for a monatomic gas",
+        "why": "(3/2)Nk counts only kinetic energy in three directions. Each atom in the solid also has potential energy in each direction, giving 3Nk."
+      },
+      {
+        "text": "Zero, as all vibrations freeze out",
+        "why": "Vibrations freeze out at low temperature, not high. When T is much larger than θ_E, C_V approaches 3Nk."
+      },
+      {
+        "text": "It keeps rising without limit",
+        "why": "C_V levels off at high temperature. In the limit θ_E/T ≪ 1 it approaches 3Nk = 3nR."
+      }
+    ],
+    "explanation": "When T is much larger than the Einstein temperature, C_V ≈ 3Nk = 3nR. Einstein's model thus reproduces the Dulong-Petit law at high temperatures."
+  },
+  {
+    "id": "pc17-heat-capacity-which-temperature",
+    "type": "multiple-choice",
+    "prompt": "A solid has an Einstein temperature θ_E = 200 K. At which of these temperatures is the high-temperature result C_V ≈ 3Nk most accurate?",
+    "choices": [
+      {
+        "text": "2000 K",
+        "correct": true
+      },
+      {
+        "text": "200 K",
+        "why": "At 200 K, θ_E/T = 1, which is not much less than 1. The high-temperature result needs θ_E/T ≪ 1."
+      },
+      {
+        "text": "20 K",
+        "why": "At 20 K, θ_E/T = 10, which is the low-temperature limit. There C_V is far below 3Nk."
+      },
+      {
+        "text": "2 K",
+        "why": "At 2 K, θ_E/T = 100, so the vibrations are almost frozen out and C_V is nearly zero."
+      }
+    ],
+    "explanation": "The high-temperature limit needs θ_E/T ≪ 1. At 2000 K, θ_E/T = 0.1, so C_V is close to 3Nk; at lower temperatures C_V falls below it."
+  },
+  {
+    "id": "pc17-heat-capacity-low-t-factor",
+    "type": "multiple-choice",
+    "prompt": "At low temperature the Einstein model gives C_V ≈ 3Nk(θ_E/T)^2 exp(−θ_E/T). Which factor makes C_V go to zero as T approaches zero?",
+    "choices": [
+      {
+        "text": "The exponential, exp(−θ_E/T)",
+        "correct": true
+      },
+      {
+        "text": "The squared ratio, (θ_E/T)^2",
+        "why": "(θ_E/T)^2 actually grows as T falls. The exponential falls much faster, so the product still goes to zero."
+      },
+      {
+        "text": "The constant 3Nk",
+        "why": "3Nk doesn't depend on T at all; it is the high-temperature value. The exponential, exp(−θ_E/T), drives C_V to zero."
+      },
+      {
+        "text": "The number of atoms, N",
+        "why": "N is fixed for a given solid and doesn't change with T. The exponential, exp(−θ_E/T), is what vanishes as T approaches zero."
+      }
+    ],
+    "explanation": "As T approaches zero, θ_E/T grows without limit and exp(−θ_E/T) falls to zero faster than (θ_E/T)^2 grows. So C_V approaches zero, as experiments on solids show."
+  },
+  {
+    "id": "pc17-heat-capacity-diamond",
+    "type": "multiple-choice",
+    "prompt": "Diamond has a low heat capacity even at fairly high temperatures. How does the Einstein model explain this?",
+    "choices": [
+      {
+        "text": "Its high θ_E makes its vibrations hard to excite",
+        "correct": true
+      },
+      {
+        "text": "Its atoms are locked in place and cannot vibrate",
+        "why": "Diamond's atoms do vibrate; at very high temperature its C_V approaches 3Nk like other solids. Its high θ_E just makes the vibrations hard to excite."
+      },
+      {
+        "text": "Its low θ_E keeps its vibrations from being excited",
+        "why": "A low θ_E would make the vibrations easy to excite and give the full 3Nk. Diamond's θ_E is high, which is what makes excitation hard."
+      },
+      {
+        "text": "Its atoms have fewer than three directions of motion",
+        "why": "Its atoms move in three dimensions like any other, and C_V does reach 3Nk at very high temperature. The low C_V comes from its high θ_E."
+      }
+    ],
+    "explanation": "Diamond has a high Einstein temperature, so at ordinary temperatures θ_E/T is large and few oscillators are excited. Its heat capacity approaches 3Nk only when the temperature is raised greatly."
+  },
+  {
+    "id": "pc17-heat-capacity-stiff-light",
+    "type": "multiple-choice",
+    "prompt": "With θ_E = hν/k and ν = (1/(2π))√(κ/μ), where κ is the force constant and μ the reduced mass, which kind of solid has the highest Einstein temperature?",
+    "choices": [
+      {
+        "text": "Stiff bonds (large κ) and light atoms (small μ)",
+        "correct": true
+      },
+      {
+        "text": "Weak bonds (small κ) and heavy atoms (large μ)",
+        "why": "Both of these lower ν, so this solid has the lowest θ_E. A high θ_E needs a large κ and a small μ."
+      },
+      {
+        "text": "Weak bonds (small κ) and light atoms (small μ)",
+        "why": "Light atoms raise ν, but weak bonds lower it. Stiff bonds and light atoms together give the highest ν and so the highest θ_E."
+      },
+      {
+        "text": "Stiff bonds (large κ) and heavy atoms (large μ)",
+        "why": "Stiff bonds raise ν, but heavy atoms lower it. Stiff bonds with light atoms give the highest θ_E."
+      }
+    ],
+    "explanation": "ν grows with the force constant κ and falls with the reduced mass μ, and θ_E is proportional to ν. So solids with high force constants or low reduced masses have high Einstein temperatures."
+  },
+  {
+    "id": "pc17-heat-capacity-lead",
+    "type": "multiple-choice",
+    "prompt": "The section compares Einstein's model with the measured heat capacity of lead. What does it conclude?",
+    "choices": [
+      {
+        "text": "It deviates below about 15 K, so a term is missing",
+        "correct": true
+      },
+      {
+        "text": "It matches lead exactly at every temperature",
+        "why": "The section points out deviations, most clearly below about 15 K. It concludes that a term or correction is still missing from the model."
+      },
+      {
+        "text": "It fails only at high temperatures, not low ones",
+        "why": "At high temperatures the model works well, reaching the Dulong-Petit value. Its deviations for lead are at low temperatures, below about 15 K."
+      },
+      {
+        "text": "Lead keeps the Dulong-Petit value 3R even near 0 K",
+        "why": "Lead's heat capacity, like that of other solids, falls toward zero at low temperature. The model's problem is that it deviates from the data below about 15 K."
+      }
+    ],
+    "explanation": "Einstein's model works well at high temperatures and fairly well at low ones, but for lead it deviates from experiment below about 15 K. The section concludes that a term or correction is still missing from the model."
+  },
+  {
+    "id": "pc17-heat-capacity-slope",
+    "type": "numeric",
+    "prompt": "A sample is warmed at constant volume, and its internal energy rises by 125 J while its temperature rises by 10.0 K. Taking C_V ≈ ΔU/ΔT, what is C_V, in J/K? (Give it as a decimal.)",
+    "answer": 12.5,
+    "explanation": "C_V ≈ 125 J/10.0 K = 12.5 J/K. Over a small temperature step, the slope ΔU/ΔT approximates the derivative (∂U)/(∂T)."
+  },
+  {
+    "id": "pc17-heat-capacity-energy-per-atom",
+    "type": "numeric",
+    "prompt": "In the Dulong-Petit picture, each atom of a solid has six degrees of freedom, each with an average energy of (1/2)kT. Using k = 1.381 × 10^−23 J/K, what is the average energy of one atom at T = 400 K, in J? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 1.66e-20,
+    "unit": "J",
+    "explanation": "Energy per atom = 6 × (1/2)kT = 3kT = 3 × (1.381 × 10^−23 J/K)(400 K) = 1.66 × 10^−20 J. Since this is 3kT, each kelvin of warming adds 3k per atom, which is 3R per mole."
+  },
+  {
+    "id": "pc17-heat-capacity-motions",
+    "type": "numeric",
+    "prompt": "In Einstein's model, a lattice of N atoms, each moving in three dimensions, has 3N vibrational motions. How many vibrational motions does a tiny crystal of 500 atoms have?",
+    "answer": 1500,
+    "tolerance": 0,
+    "explanation": "3N = 3 × 500 = 1500 motions: one along each of x, y and z for every atom. Each motion is an oscillator with kinetic and potential energy, which is why the Dulong-Petit count is six degrees of freedom per atom."
+  },
+  {
+    "id": "pc17-heat-capacity-einstein-temperature",
+    "type": "numeric",
+    "prompt": "The Einstein temperature is θ_E = hν/k. Using h = 6.626 × 10^−34 J·s and k = 1.381 × 10^−23 J/K, what is θ_E for a solid whose atoms vibrate at ν = 5.0 × 10^12 Hz, in K?",
+    "answer": 240,
+    "unit": "K",
+    "explanation": "θ_E = (6.626 × 10^−34 × 5.0 × 10^12)/(1.381 × 10^−23) K = 240 K. Well above 240 K, this solid's C_V is close to 3Nk; well below it, C_V falls toward zero."
+  },
+  {
+    "id": "pc17-heat-capacity-low-t-fraction",
+    "type": "numeric",
+    "prompt": "At low temperature the Einstein model gives C_V ≈ 3Nk(θ_E/T)^2 exp(−θ_E/T). For a solid at T = θ_E/10, so that θ_E/T = 10, and using exp(−10) = 4.54 × 10^−5, what is C_V/(3Nk)? (Type it in scientific notation, like 2.5e-3.)",
+    "answer": 0.00454,
+    "explanation": "C_V/(3Nk) = (10)^2 × 4.54 × 10^−5 = 4.54 × 10^−3. At a tenth of its Einstein temperature, the solid has less than 0.5% of its high-temperature heat capacity."
+  },
+  {
+    "id": "pc17-heat-capacity-force-constant",
+    "type": "numeric",
+    "prompt": "Two solids have atoms of the same reduced mass μ, but solid B's force constant κ is 9 times solid A's. Using θ_E = hν/k with ν = (1/(2π))√(κ/μ), how many times larger is θ_E for solid B?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "θ_E is proportional to ν, which goes as √κ, so θ_E grows by √9 = 3. Solid B's vibrations are harder to excite, so it reaches the Dulong-Petit value only at a higher temperature."
+  }
+]

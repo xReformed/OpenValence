@@ -1,0 +1,451 @@
+[
+  {
+    "id": "pc22-maxwell-du-ds-coefficient",
+    "type": "multiple-choice",
+    "prompt": "Writing U as a function of S and V gives dU = ((∂U)/(∂S))_V dS + ((∂U)/(∂V))_S dV. Comparing this with dU = T dS − P dV, what is ((∂U)/(∂S))_V?",
+    "choices": [
+      {
+        "text": "T",
+        "correct": true
+      },
+      {
+        "text": "−P",
+        "why": "−P multiplies dV, so it equals ((∂U)/(∂V))_S. The coefficient of dS is T."
+      },
+      {
+        "text": "V",
+        "why": "V does not appear as a coefficient in dU = T dS − P dV. Matching the dS terms of the two expressions gives T."
+      },
+      {
+        "text": "S",
+        "why": "S is the variable being changed, not the coefficient in front of dS. Matching the dS terms gives ((∂U)/(∂S))_V = T."
+      }
+    ],
+    "explanation": "Both expressions describe the same dU, so the coefficients of dS must match: ((∂U)/(∂S))_V = T. Adding entropy at constant volume raises U at a rate equal to the temperature."
+  },
+  {
+    "id": "pc22-maxwell-du-tds-number",
+    "type": "numeric",
+    "prompt": "At constant volume, ((∂U)/(∂S))_V = T. A sample in a rigid container at 350 K takes in heat reversibly, and its entropy rises by 0.040 J/K. Treating T as constant, what is ΔU ≈ T ΔS, in J?",
+    "answer": 14,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "ΔU ≈ ((∂U)/(∂S))_V ΔS = T ΔS = 350 K × 0.040 J/K = 14 J. At constant volume no work is done, so adding entropy raises the internal energy at a rate equal to the temperature."
+  },
+  {
+    "id": "pc22-maxwell-du-dv-coefficient",
+    "type": "multiple-choice",
+    "prompt": "From dU = T dS − P dV, what is ((∂U)/(∂V))_S, the rate at which U changes with volume when the entropy is held constant?",
+    "choices": [
+      {
+        "text": "−P",
+        "correct": true
+      },
+      {
+        "text": "P",
+        "why": "The dV term in dU = T dS − P dV carries a minus sign. Expanding at constant entropy makes the system do work, so U falls."
+      },
+      {
+        "text": "T",
+        "why": "T multiplies dS, so it equals ((∂U)/(∂S))_V. The coefficient of dV is −P."
+      },
+      {
+        "text": "0",
+        "why": "U does change with V at constant S, because the expanding system does work on its surroundings. The coefficient of dV in dU is −P."
+      }
+    ],
+    "explanation": "Matching the dV terms of dU = ((∂U)/(∂S))_V dS + ((∂U)/(∂V))_S dV and dU = T dS − P dV gives ((∂U)/(∂V))_S = −P. A reversible expansion at constant entropy lowers U by the work done, P dV."
+  },
+  {
+    "id": "pc22-maxwell-dh-dp-coefficient",
+    "type": "multiple-choice",
+    "prompt": "The section shows that dH = T dS + V dP. What is ((∂H)/(∂P))_S?",
+    "choices": [
+      {
+        "text": "V",
+        "correct": true
+      },
+      {
+        "text": "−V",
+        "why": "The V dP term in dH = T dS + V dP is positive, so raising the pressure at constant entropy raises H. ((∂H)/(∂P))_S = V."
+      },
+      {
+        "text": "T",
+        "why": "T multiplies dS, so it equals ((∂H)/(∂S))_P. The coefficient of dP is V."
+      },
+      {
+        "text": "−P",
+        "why": "−P is ((∂U)/(∂V))_S, a derivative of U. For H, the coefficient of dP is V."
+      }
+    ],
+    "explanation": "Writing H as a function of S and P gives dH = ((∂H)/(∂S))_P dS + ((∂H)/(∂P))_S dP. Matching the dP terms with dH = T dS + V dP gives ((∂H)/(∂P))_S = V."
+  },
+  {
+    "id": "pc22-maxwell-dh-vdp-number",
+    "type": "numeric",
+    "prompt": "At constant entropy, ((∂H)/(∂P))_S = V. The pressure on a liquid sample of volume 2.50 × 10^−5 m^3 is raised by 4.00 × 10^6 Pa at constant entropy. Treating V as constant, what is ΔH ≈ V ΔP, in J?",
+    "answer": 100,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "ΔH ≈ ((∂H)/(∂P))_S ΔP = V ΔP = (2.50 × 10^−5 m^3)(4.00 × 10^6 Pa) = 100 J, since 1 Pa·m^3 = 1 J. A liquid hardly changes volume under pressure, so treating V as constant is a good approximation."
+  },
+  {
+    "id": "pc22-maxwell-u-and-h-both-t",
+    "type": "multiple-choice",
+    "prompt": "The section points out that ((∂U)/(∂S))_V is equal to one particular derivative of H. Which one?",
+    "choices": [
+      {
+        "text": "((∂H)/(∂S))_P",
+        "correct": true
+      },
+      {
+        "text": "((∂H)/(∂P))_S",
+        "why": "This derivative equals V, not T. The derivative of H that equals T, just as ((∂U)/(∂S))_V does, is ((∂H)/(∂S))_P."
+      },
+      {
+        "text": "((∂H)/(∂T))_P",
+        "why": "((∂H)/(∂T))_P is the heat capacity C_P, not T. Both ((∂U)/(∂S))_V and ((∂H)/(∂S))_P equal T, so they equal each other."
+      },
+      {
+        "text": "((∂H)/(∂P))_T",
+        "why": "This describes how H changes with pressure at constant temperature, and it is not equal to T. The derivative of H that equals T is ((∂H)/(∂S))_P."
+      }
+    ],
+    "explanation": "From dU = T dS − P dV, ((∂U)/(∂S))_V = T, and from dH = T dS + V dP, ((∂H)/(∂S))_P = T. Since both equal T, ((∂U)/(∂S))_V = ((∂H)/(∂S))_P."
+  },
+  {
+    "id": "pc22-maxwell-why-state-functions",
+    "type": "multiple-choice",
+    "prompt": "Maxwell relations come from the differentials of U, H, A and G, but not from δq or δw. Why?",
+    "choices": [
+      {
+        "text": "They are state functions, so their differentials are exact",
+        "correct": true
+      },
+      {
+        "text": "δq and δw are zero in every reversible process",
+        "why": "A reversible process can exchange both heat and work. The point is that q and w depend on the path, so δq and δw are not exact."
+      },
+      {
+        "text": "Heat and work cannot be written in terms of T, S, P and V",
+        "why": "They can: δq_rev = T dS and δw = −P dV. But q and w are path functions, so these differentials are not exact, and only exact differentials give Maxwell relations."
+      },
+      {
+        "text": "U, H, A and G stay constant in every reversible process",
+        "why": "These functions do change in reversible processes. What matters is that they are state functions, so their mixed second derivatives are equal."
+      }
+    ],
+    "explanation": "A Maxwell relation says that the two mixed second derivatives of a function are equal, which is true only for an exact differential. U, H, A and G are state functions, so dU, dH, dA and dG are exact; heat and work depend on the path, so δq and δw are not."
+  },
+  {
+    "id": "pc22-maxwell-euler-relation",
+    "type": "multiple-choice",
+    "prompt": "The section applies the Euler relation to dU. What does the Euler relation say about an exact differential?",
+    "choices": [
+      {
+        "text": "Mixed second derivatives are the same in either order",
+        "correct": true
+      },
+      {
+        "text": "Each of its first partial derivatives must be zero",
+        "why": "The first derivatives of U are T and −P, which are not zero. The Euler relation is about second derivatives taken in two different orders."
+      },
+      {
+        "text": "The function must depend on only one variable, not two",
+        "why": "U depends on two variables, S and V; with only one there would be no mixed derivatives at all. The Euler relation says the order of differentiating by S and by V doesn't matter."
+      },
+      {
+        "text": "Its two coefficients must be equal to each other",
+        "why": "The coefficients in dU are T and −P, which are not equal. What is equal is the derivative of each coefficient with respect to the other variable."
+      }
+    ],
+    "explanation": "For an exact differential such as dU, differentiating first with respect to S and then V gives the same result as differentiating first with respect to V and then S. Applied to U, whose first derivatives are T and −P, this gives a Maxwell relation."
+  },
+  {
+    "id": "pc22-maxwell-from-u",
+    "type": "multiple-choice",
+    "prompt": "Applying the Euler relation to dU = T dS − P dV gives which Maxwell relation?",
+    "choices": [
+      {
+        "text": "((∂T)/(∂V))_S = −((∂P)/(∂S))_V",
+        "correct": true
+      },
+      {
+        "text": "((∂T)/(∂V))_S = ((∂P)/(∂S))_V",
+        "why": "The minus sign is missing. It comes from the −P dV term, since ((∂U)/(∂V))_S = −P."
+      },
+      {
+        "text": "((∂T)/(∂P))_S = ((∂V)/(∂S))_P",
+        "why": "This is the Maxwell relation from H, which holds S and P constant. U's relation differentiates T with respect to V and −P with respect to S."
+      },
+      {
+        "text": "((∂P)/(∂T))_V = ((∂S)/(∂V))_T",
+        "why": "This is the Maxwell relation from A, which holds V and T constant. U's relation holds S and V constant."
+      }
+    ],
+    "explanation": "Differentiating T = ((∂U)/(∂S))_V with respect to V, and −P = ((∂U)/(∂V))_S with respect to S, must give the same result. So ((∂T)/(∂V))_S = −((∂P)/(∂S))_V, the Maxwell relation from U."
+  },
+  {
+    "id": "pc22-maxwell-from-h",
+    "type": "multiple-choice",
+    "prompt": "Which function's differential gives the Maxwell relation ((∂T)/(∂P))_S = ((∂V)/(∂S))_P?",
+    "choices": [
+      {
+        "text": "Enthalpy, H",
+        "correct": true
+      },
+      {
+        "text": "Internal energy, U",
+        "why": "U's relation holds S and V constant and carries a minus sign: ((∂T)/(∂V))_S = −((∂P)/(∂S))_V. Holding S and P constant points to H."
+      },
+      {
+        "text": "Helmholtz energy, A",
+        "why": "A's relation holds V and T constant: ((∂P)/(∂T))_V = ((∂S)/(∂V))_T. Holding S and P constant points to H."
+      },
+      {
+        "text": "Gibbs energy, G",
+        "why": "G's relation holds P and T constant: ((∂V)/(∂T))_P = −((∂S)/(∂P))_T. Holding S and P constant points to H."
+      }
+    ],
+    "explanation": "In dH = T dS + V dP, T = ((∂H)/(∂S))_P and V = ((∂H)/(∂P))_S. Taking the mixed second derivatives gives ((∂T)/(∂P))_S = ((∂V)/(∂S))_P, the Maxwell relation from H."
+  },
+  {
+    "id": "pc22-maxwell-from-a",
+    "type": "multiple-choice",
+    "prompt": "Table 22.3.1 lists the Maxwell relation ((∂P)/(∂T))_V = ((∂S)/(∂V))_T. Which function is it derived from?",
+    "choices": [
+      {
+        "text": "Helmholtz energy, A",
+        "correct": true
+      },
+      {
+        "text": "Gibbs energy, G",
+        "why": "G's relation holds P and T constant and has a minus sign: ((∂V)/(∂T))_P = −((∂S)/(∂P))_T. Holding V and T constant points to A."
+      },
+      {
+        "text": "Internal energy, U",
+        "why": "U's relation holds S and V constant: ((∂T)/(∂V))_S = −((∂P)/(∂S))_V. The relation with V and T held constant comes from A."
+      },
+      {
+        "text": "Enthalpy, H",
+        "why": "H's relation holds S and P constant: ((∂T)/(∂P))_S = ((∂V)/(∂S))_P. This one, with V and T held constant, comes from A."
+      }
+    ],
+    "explanation": "A has the natural variables V and T, and dA = −P dV − S dT. Its mixed second derivatives give −((∂P)/(∂T))_V = −((∂S)/(∂V))_T, and the minus signs cancel."
+  },
+  {
+    "id": "pc22-maxwell-from-g",
+    "type": "multiple-choice",
+    "prompt": "Which Maxwell relation in Table 22.3.1 comes from the Gibbs energy, G, whose differential is dG = V dP − S dT?",
+    "choices": [
+      {
+        "text": "((∂V)/(∂T))_P = −((∂S)/(∂P))_T",
+        "correct": true
+      },
+      {
+        "text": "((∂V)/(∂T))_P = ((∂S)/(∂P))_T",
+        "why": "The minus sign is missing. It comes from the −S dT term in dG, since ((∂G)/(∂T))_P = −S."
+      },
+      {
+        "text": "((∂P)/(∂T))_V = ((∂S)/(∂V))_T",
+        "why": "This relation holds V and T constant, so it comes from A. G's relation holds P and T constant."
+      },
+      {
+        "text": "((∂T)/(∂P))_S = ((∂V)/(∂S))_P",
+        "why": "This relation holds S and P constant, so it comes from H. G's relation holds P and T constant."
+      }
+    ],
+    "explanation": "In dG = V dP − S dT, V = ((∂G)/(∂P))_T and −S = ((∂G)/(∂T))_P. The mixed second derivatives must be equal, so ((∂V)/(∂T))_P = −((∂S)/(∂P))_T."
+  },
+  {
+    "id": "pc22-maxwell-minus-signs",
+    "type": "multiple-choice",
+    "prompt": "Two of the four Maxwell relations in Table 22.3.1 carry a minus sign. Which functions do those two come from?",
+    "choices": [
+      {
+        "text": "U and G",
+        "correct": true
+      },
+      {
+        "text": "H and A",
+        "why": "These are the two without a minus sign. Both terms of dH = T dS + V dP are positive, and in dA = −P dV − S dT the two minus signs cancel."
+      },
+      {
+        "text": "U and H",
+        "why": "H's relation, ((∂T)/(∂P))_S = ((∂V)/(∂S))_P, has no minus sign. The two with a minus sign come from U and G."
+      },
+      {
+        "text": "A and G",
+        "why": "A's relation, ((∂P)/(∂T))_V = ((∂S)/(∂V))_T, has no minus sign, because both terms of dA are negative and the signs cancel. The minus signs are in the relations from U and G."
+      }
+    ],
+    "explanation": "A minus sign appears when exactly one term of the differential is negative, as in dU = T dS − P dV and dG = V dP − S dT. Both terms of dH are positive and both terms of dA are negative, so those two relations have no minus sign."
+  },
+  {
+    "id": "pc22-maxwell-subscripts-clue",
+    "type": "multiple-choice",
+    "prompt": "Looking at a Maxwell relation such as ((∂P)/(∂T))_V = ((∂S)/(∂V))_T, how can you tell which function it came from?",
+    "choices": [
+      {
+        "text": "Its subscripts are that function's natural variables",
+        "correct": true
+      },
+      {
+        "text": "Its numerators are that function's natural variables",
+        "why": "The numerators, here P and S, are first derivatives of the function, not its variables. The held-constant variables, V and T, are the natural variables of A."
+      },
+      {
+        "text": "The function's symbol appears on its left-hand side",
+        "why": "No Maxwell relation contains U, H, A or G itself; only T, S, P and V appear. The variables held constant, here V and T, identify A."
+      },
+      {
+        "text": "A minus sign shows that it came from the Gibbs energy",
+        "why": "Both U and G give a minus sign, so a sign can't single out G, and this relation has none. Its subscripts, V and T, are the natural variables of A."
+      }
+    ],
+    "explanation": "Each Maxwell relation comes from a function of two natural variables, and those two are the variables held constant. In ((∂P)/(∂T))_V = ((∂S)/(∂V))_T, V and T are held constant, so it comes from A(V, T)."
+  },
+  {
+    "id": "pc22-maxwell-four-variables",
+    "type": "multiple-choice",
+    "prompt": "Which four variables are the only ones that appear in the Maxwell relations of Table 22.3.1?",
+    "choices": [
+      {
+        "text": "T, S, P and V",
+        "correct": true
+      },
+      {
+        "text": "U, H, A and G",
+        "why": "These are the functions the relations come from, but none of them appears in the relations themselves. Every Maxwell relation links derivatives of T, S, P and V."
+      },
+      {
+        "text": "T, P, V and n",
+        "why": "The amount n is fixed and does not appear in Table 22.3.1. The fourth variable is the entropy S."
+      },
+      {
+        "text": "C_P, C_V, T and P",
+        "why": "Heat capacities don't appear in the Maxwell relations. Each one links derivatives of T, S, P and V."
+      }
+    ],
+    "explanation": "The relations come from U, H, A and G, but they contain only T, S, P and V. That is what makes them useful: they link derivatives of S, which is hard to measure, to derivatives of P, V and T."
+  },
+  {
+    "id": "pc22-maxwell-what-for",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what makes the Maxwell relations so useful?",
+    "choices": [
+      {
+        "text": "They swap a hard-to-find derivative for an easier one",
+        "correct": true
+      },
+      {
+        "text": "They give the absolute value of a substance's entropy",
+        "why": "Maxwell relations relate rates of change, not absolute values. Their use is to replace one partial derivative with a more convenient one."
+      },
+      {
+        "text": "They show that heat and work are state functions",
+        "why": "Heat and work are path functions, and the Maxwell relations don't change that. They let you replace an awkward partial derivative with a convenient one."
+      },
+      {
+        "text": "They prove that every gas obeys the ideal gas law",
+        "why": "Maxwell relations hold for any substance, ideal or not. Their value is in swapping a derivative that is hard to find for one that is easy to measure."
+      }
+    ],
+    "explanation": "A Maxwell relation equates two partial derivatives, so when one is hard to measure, such as a change in entropy, you can use the other, built from P, V and T. The section uses them to work out how thermodynamic quantities depend on P, T and V."
+  },
+  {
+    "id": "pc22-maxwell-measure-ds-dv",
+    "type": "multiple-choice",
+    "prompt": "Entropy can't be read off a gauge, so ((∂S)/(∂V))_T is hard to measure directly. Which measurable derivative is equal to it?",
+    "choices": [
+      {
+        "text": "((∂P)/(∂T))_V",
+        "correct": true
+      },
+      {
+        "text": "((∂V)/(∂T))_P",
+        "why": "That derivative is linked to S through G's relation, ((∂V)/(∂T))_P = −((∂S)/(∂P))_T. The relation from A gives ((∂S)/(∂V))_T = ((∂P)/(∂T))_V."
+      },
+      {
+        "text": "−((∂P)/(∂T))_V",
+        "why": "The relation from A has no minus sign, because both terms of dA = −P dV − S dT are negative. So ((∂S)/(∂V))_T = ((∂P)/(∂T))_V."
+      },
+      {
+        "text": "((∂T)/(∂V))_S",
+        "why": "This derivative belongs to U's relation, ((∂T)/(∂V))_S = −((∂P)/(∂S))_V. The relation from A gives ((∂S)/(∂V))_T = ((∂P)/(∂T))_V."
+      }
+    ],
+    "explanation": "The Maxwell relation from A says ((∂P)/(∂T))_V = ((∂S)/(∂V))_T. Measuring how the pressure rises with temperature in a sealed, rigid container tells you how the entropy changes with volume at constant temperature."
+  },
+  {
+    "id": "pc22-maxwell-ds-from-dpdt",
+    "type": "numeric",
+    "prompt": "For a gas in a rigid container, ((∂P)/(∂T))_V is measured as 1.20 × 10^3 Pa/K. Using the Maxwell relation ((∂S)/(∂V))_T = ((∂P)/(∂T))_V, by how much does the gas's entropy rise when its volume grows by 1.0 × 10^−4 m^3 at constant temperature, ΔS ≈ ((∂P)/(∂T))_V ΔV, in J/K? (Give it as a decimal.)",
+    "answer": 0.12,
+    "explanation": "ΔS ≈ ((∂S)/(∂V))_T ΔV = ((∂P)/(∂T))_V ΔV = (1.20 × 10^3 Pa/K)(1.0 × 10^−4 m^3) = 0.12 J/K, since 1 Pa·m^3 = 1 J. A pressure measurement has given an entropy change without measuring entropy at all."
+  },
+  {
+    "id": "pc22-maxwell-compress-entropy",
+    "type": "multiple-choice",
+    "prompt": "For a substance that expands when heated, ((∂V)/(∂T))_P is positive. Using ((∂V)/(∂T))_P = −((∂S)/(∂P))_T, what happens to its entropy when it is compressed at constant temperature?",
+    "choices": [
+      {
+        "text": "It decreases",
+        "correct": true
+      },
+      {
+        "text": "It increases",
+        "why": "The minus sign in the relation makes ((∂S)/(∂P))_T negative when ((∂V)/(∂T))_P is positive. So raising the pressure lowers the entropy."
+      },
+      {
+        "text": "It stays the same",
+        "why": "((∂S)/(∂P))_T = −((∂V)/(∂T))_P is not zero for a substance that expands on heating. Its entropy falls as the pressure rises."
+      },
+      {
+        "text": "It can't be predicted without measuring S",
+        "why": "That is exactly what the Maxwell relation avoids: the sign of ((∂V)/(∂T))_P, which is easy to measure, gives the sign of ((∂S)/(∂P))_T. Here it is negative, so S falls."
+      }
+    ],
+    "explanation": "Since ((∂V)/(∂T))_P > 0, the relation gives ((∂S)/(∂P))_T < 0: raising the pressure at constant temperature lowers the entropy. A measurement of thermal expansion has told you the sign of an entropy change."
+  },
+  {
+    "id": "pc22-maxwell-ds-from-dvdt",
+    "type": "numeric",
+    "prompt": "A liquid sample has ((∂V)/(∂T))_P = 3.0 × 10^−7 m^3/K. Using the Maxwell relation ((∂S)/(∂P))_T = −((∂V)/(∂T))_P, what is its entropy change when the pressure on it is raised by 2.0 × 10^6 Pa at constant temperature, ΔS ≈ −((∂V)/(∂T))_P ΔP, in J/K, including its sign? (Give it as a decimal.)",
+    "answer": -0.6,
+    "explanation": "ΔS ≈ ((∂S)/(∂P))_T ΔP = −((∂V)/(∂T))_P ΔP = −(3.0 × 10^−7 m^3/K)(2.0 × 10^6 Pa) = −0.60 J/K, since 1 Pa·m^3 = 1 J. The entropy falls on compression, and the number came from a thermal-expansion measurement, not from measuring entropy."
+  },
+  {
+    "id": "pc22-maxwell-ideal-gas-du-dv",
+    "type": "multiple-choice",
+    "prompt": "Example 22.3.1 shows that ((∂U)/(∂V))_T = T((∂P)/(∂T))_V − P. For an ideal gas, P = nRT/V, so ((∂P)/(∂T))_V = nR/V. What is ((∂U)/(∂V))_T for an ideal gas?",
+    "choices": [
+      {
+        "text": "0",
+        "correct": true
+      },
+      {
+        "text": "P",
+        "why": "T((∂P)/(∂T))_V = T(nR/V) is itself equal to P, so subtracting P leaves nothing. For an ideal gas ((∂U)/(∂V))_T = 0."
+      },
+      {
+        "text": "−P",
+        "why": "−P is ((∂U)/(∂V))_S, at constant entropy. At constant temperature the terms T(nR/V) and −P cancel for an ideal gas."
+      },
+      {
+        "text": "nR/V",
+        "why": "nR/V is ((∂P)/(∂T))_V for an ideal gas. Multiplying by T gives P, and P − P = 0."
+      }
+    ],
+    "explanation": "For an ideal gas, T((∂P)/(∂T))_V = nRT/V = P, so ((∂U)/(∂V))_T = P − P = 0. At constant temperature, the internal energy of an ideal gas does not depend on its volume."
+  },
+  {
+    "id": "pc22-maxwell-internal-pressure",
+    "type": "numeric",
+    "prompt": "Example 22.3.1 shows that ((∂U)/(∂V))_T = T((∂P)/(∂T))_V − P. For a real gas at T = 300 K and P = 1.20 × 10^5 Pa, ((∂P)/(∂T))_V = 420 Pa/K. What is ((∂U)/(∂V))_T, in Pa (the same as J/m^3)?",
+    "answer": 6000,
+    "unit": "Pa",
+    "tolerance": 0,
+    "explanation": "((∂U)/(∂V))_T = (300 K)(420 Pa/K) − 1.20 × 10^5 Pa = 1.26 × 10^5 Pa − 1.20 × 10^5 Pa = 6.0 × 10^3 Pa, or 6.0 × 10^3 J/m^3. A positive value means this gas's internal energy rises as it expands at constant temperature, found from P, V and T measurements alone."
+  }
+]

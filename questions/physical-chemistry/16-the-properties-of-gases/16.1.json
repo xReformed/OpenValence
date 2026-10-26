@@ -1,0 +1,583 @@
+[
+  {
+    "id": "pc16-ideal-no-forces",
+    "type": "multiple-choice",
+    "prompt": "In the model this section uses to derive the ideal gas law, what forces do the gas particles exert on each other?",
+    "choices": [
+      {
+        "text": "None; they feel a force only when they hit a wall",
+        "correct": true
+      },
+      {
+        "text": "A weak attraction that acts at all distances",
+        "why": "That describes a real gas. In an ideal gas the particles don't interact at all; the only forces come from collisions with the walls."
+      },
+      {
+        "text": "A strong repulsion whenever two of them touch",
+        "why": "The model gives the particles no interactions, so they don't repel each other either. The only forces arise when a particle hits a wall."
+      },
+      {
+        "text": "A force that keeps them all moving at one speed",
+        "why": "No force is needed to keep a particle moving. With no forces between particles, each one simply keeps its own speed until it hits a wall."
+      }
+    ],
+    "explanation": "Ideal gases have no interactions between the particles, so the particles exert no forces on each other. A particle feels a force only when it collides with a wall of the container, and those collisions produce the pressure."
+  },
+  {
+    "id": "pc16-ideal-delta-vx",
+    "type": "multiple-choice",
+    "prompt": "A particle moving with velocity v_x along x collides elastically with a wall perpendicular to x. What is the change in its velocity, Δv_x?",
+    "choices": [
+      {
+        "text": "−2v_x",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "The speed is unchanged, but the velocity reverses from v_x to −v_x, so it changes by −v_x − v_x = −2v_x."
+      },
+      {
+        "text": "−v_x",
+        "why": "That change would leave the particle at rest. In an elastic collision the velocity reverses to −v_x, a change of −2v_x."
+      },
+      {
+        "text": "+v_x",
+        "why": "The change is the final velocity minus the initial one: −v_x − v_x = −2v_x."
+      }
+    ],
+    "explanation": "In an elastic collision the velocity just changes sign: v_x before, −v_x after. So Δv_x = −v_x − v_x = −2v_x, while the speed stays the same."
+  },
+  {
+    "id": "pc16-ideal-constant-speed",
+    "type": "multiple-choice",
+    "prompt": "Between collisions with the walls, how does a particle of an ideal gas move?",
+    "choices": [
+      {
+        "text": "In a straight line at constant speed",
+        "correct": true
+      },
+      {
+        "text": "Faster and faster as it nears a wall",
+        "why": "Nothing pulls it toward the wall. With no forces acting between collisions, its speed stays constant."
+      },
+      {
+        "text": "More and more slowly, losing energy to other particles",
+        "why": "Ideal-gas particles don't interact, so nothing slows them down. Each one keeps a constant speed until it hits a wall."
+      },
+      {
+        "text": "Along a path bent by its neighbors' attraction",
+        "why": "Ideal-gas particles don't attract each other. With no forces on it, a particle moves in a straight line at constant speed."
+      }
+    ],
+    "explanation": "Since no forces act on a particle except when it hits a wall, it moves at constant speed. A wall collision only reverses the velocity component perpendicular to that wall."
+  },
+  {
+    "id": "pc16-ideal-pressure-def",
+    "type": "multiple-choice",
+    "prompt": "What is the mechanical definition of pressure used in this section's derivation?",
+    "choices": [
+      {
+        "text": "The average force on a wall divided by its area",
+        "correct": true
+      },
+      {
+        "text": "The average force on a wall times its area",
+        "why": "Multiplying by the area gives the wrong units. Pressure is force per unit area: P = ⟨F⟩/A."
+      },
+      {
+        "text": "The number of times per second particles hit a wall",
+        "why": "The collision rate affects the pressure, but pressure itself is the average force divided by the wall's area, P = ⟨F⟩/A."
+      },
+      {
+        "text": "The average kinetic energy of one particle",
+        "why": "Kinetic energy is linked to temperature; it isn't the definition of pressure. Pressure is the average force on a wall divided by the wall's area."
+      }
+    ],
+    "explanation": "The mechanical definition is P = ⟨F⟩/A, the average force over area. For a cubic box of side a, the wall's area is A = a^2."
+  },
+  {
+    "id": "pc16-ideal-maxwell-input",
+    "type": "multiple-choice",
+    "prompt": "The derivation of the ideal gas law combines Newton's laws with one result taken from the Maxwell–Boltzmann distribution. Which result is that?",
+    "choices": [
+      {
+        "text": "⟨v_x^2⟩ = (k_B T)/m",
+        "correct": true
+      },
+      {
+        "text": "F_x = (m v_x^2)/a",
+        "why": "This force comes from Newton's second law and the time between wall collisions. The Maxwell–Boltzmann result is ⟨v_x^2⟩ = (k_B T)/m."
+      },
+      {
+        "text": "Δt = (2a)/(v_x)",
+        "why": "This comes from the geometry of the box: the particle travels 2a between hits on the same wall. The Maxwell–Boltzmann result is ⟨v_x^2⟩ = (k_B T)/m."
+      },
+      {
+        "text": "P = (nRT)/V",
+        "why": "That is the final result, the ideal gas law itself. The input from the Maxwell–Boltzmann distribution is ⟨v_x^2⟩ = (k_B T)/m."
+      }
+    ],
+    "explanation": "Newton's laws give P = (N m⟨v_x^2⟩)/(a^3). The Maxwell–Boltzmann result ⟨v_x^2⟩ = (k_B T)/m then turns this into P = (N k_B T)/V, since a^3 = V."
+  },
+  {
+    "id": "pc16-ideal-mass-cancels",
+    "type": "multiple-choice",
+    "prompt": "According to P = (N m⟨v_x^2⟩)/V, a heavier particle pushes harder on the wall at a given speed. At the same N, V and T, how does the pressure of a gas of heavy molecules compare with that of a gas of light molecules?",
+    "choices": [
+      {
+        "text": "It is the same",
+        "correct": true
+      },
+      {
+        "text": "It is higher, in proportion to the mass",
+        "why": "Heavier molecules move more slowly: ⟨v_x^2⟩ = (k_B T)/m, so m⟨v_x^2⟩ = k_B T for any mass, and P = (N k_B T)/V."
+      },
+      {
+        "text": "It is lower, because heavy molecules move slowly",
+        "why": "They do move more slowly, but each hit carries more momentum. The two effects cancel exactly, since m⟨v_x^2⟩ = k_B T."
+      },
+      {
+        "text": "It depends on how strongly the molecules attract",
+        "why": "Ideal-gas molecules don't attract each other at all. Since m⟨v_x^2⟩ = k_B T for any mass, the pressure is the same."
+      }
+    ],
+    "explanation": "With ⟨v_x^2⟩ = (k_B T)/m, the product m⟨v_x^2⟩ equals k_B T whatever the mass, so P = (N k_B T)/V. The pressure of an ideal gas depends only on N, V and T, not on what the molecules are."
+  },
+  {
+    "id": "pc16-ideal-r-and-kb",
+    "type": "multiple-choice",
+    "prompt": "The derivation ends with P = (N k_B T)/V and then writes this as nRT/V, where n = N/N_0 is the number of moles and N_0 is Avogadro's number. For the two forms to agree, how must R be related to k_B?",
+    "choices": [
+      {
+        "text": "R = N_0 k_B",
+        "correct": true
+      },
+      {
+        "text": "R = k_B/N_0",
+        "why": "Then nRT would equal N k_B T divided by N_0^2. Since N = nN_0, matching N k_B to nR requires R = N_0 k_B."
+      },
+      {
+        "text": "R = k_B",
+        "why": "R and k_B differ by Avogadro's number: R is the constant per mole and k_B the constant per molecule, so R = N_0 k_B."
+      },
+      {
+        "text": "R = N k_B",
+        "why": "R is a constant; it can't depend on how many particles the sample holds. Since N = nN_0, N k_B = nR gives R = N_0 k_B."
+      }
+    ],
+    "explanation": "With N = nN_0, N k_B T = n(N_0 k_B)T, so the two forms agree when R = N_0 k_B. R is the gas constant per mole; k_B is the same constant per molecule."
+  },
+  {
+    "id": "pc16-ideal-time-between-hits",
+    "type": "numeric",
+    "prompt": "A particle in a cubic box of side a = 0.10 m moves along x with v_x = 500 m/s, bouncing elastically between the walls at x = 0 and x = a. To hit the wall at x = 0 again it must travel 2a, so the time between these hits is Δt = (2a)/(v_x). What is Δt, in seconds? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0004,
+    "unit": "s",
+    "explanation": "Δt = (2 × 0.10 m)/(500 m/s) = 0.20/500 s = 4.0 × 10^−4 s. The particle goes to the far wall and back before it strikes the wall at x = 0 again."
+  },
+  {
+    "id": "pc16-ideal-force-one-particle",
+    "type": "numeric",
+    "prompt": "In the derivation, one particle bouncing between two walls a distance a apart exerts an average force F_x = (m v_x^2)/a on each wall. What is F_x, in newtons, for m = 5.0 × 10^−26 kg, v_x = 400 m/s and a = 0.20 m? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 4e-20,
+    "explanation": "v_x^2 = 400^2 m^2/s^2 = 1.6 × 10^5 m^2/s^2, so F_x = 5.0 × 10^−26 × 1.6 × 10^5/0.20 N = 4.0 × 10^−20 N. One molecule pushes very weakly; the pressure comes from the enormous number of them."
+  },
+  {
+    "id": "pc16-ideal-mean-vx2",
+    "type": "numeric",
+    "prompt": "The derivation uses ⟨v_x^2⟩ = (k_B T)/m from the Maxwell–Boltzmann distribution. Using k_B = 1.38 × 10^−23 J/K, what is ⟨v_x^2⟩, in m^2/s^2, for N2 molecules (m = 4.60 × 10^−26 kg) at T = 300 K? (Type it in scientific notation, like 2.5e4.)",
+    "answer": 90000.0,
+    "explanation": "k_B T = 1.38 × 10^−23 J/K × 300 K = 4.14 × 10^−21 J, so ⟨v_x^2⟩ = 4.14 × 10^−21/4.60 × 10^−26 m^2/s^2 = 9.00 × 10^4 m^2/s^2. Its square root, 300 m/s, is a typical speed along one direction."
+  },
+  {
+    "id": "pc16-ideal-pressure-from-count",
+    "type": "numeric",
+    "prompt": "A 1.00 L box (V = 1.00 × 10^−3 m^3) holds N = 2.50 × 10^22 gas molecules at T = 300 K. Using P = (N k_B T)/V with k_B = 1.38 × 10^−23 J/K, what is the pressure, in Pa? (Type it in scientific notation, like 2.5e5.)",
+    "answer": 103500.0,
+    "unit": "Pa",
+    "explanation": "N k_B T = 2.50 × 10^22 × 1.38 × 10^−23 J/K × 300 K = 103.5 J, so P = (103.5 J)/(1.00 × 10^−3 m^3) = 1.04 × 10^5 Pa, about 1 atm."
+  },
+  {
+    "id": "pc16-ideal-eos-def",
+    "type": "multiple-choice",
+    "prompt": "What is an equation of state?",
+    "choices": [
+      {
+        "text": "A relation among P, V and T that describes a substance's state",
+        "correct": true
+      },
+      {
+        "text": "An equation that gives how fast a gas changes from one state to another",
+        "why": "An equation of state has no time or rate in it. It relates variables such as P, V and T under given conditions."
+      },
+      {
+        "text": "An equation that is valid only for gases with no interactions",
+        "why": "PV = nRT is one equation of state, but real gases have others, such as the van der Waals equation. Any relation among P, V and T that describes the state counts."
+      },
+      {
+        "text": "A rule that lists which phases a substance has at each temperature",
+        "why": "That would be a phase diagram, not an equation of state. An equation of state relates variables such as P, V and T under a given set of conditions."
+      }
+    ],
+    "explanation": "An equation of state is a relation between variables, such as P, V and T, that describes the state of matter under a set of given physical conditions. The ideal gas law is one example."
+  },
+  {
+    "id": "pc16-ideal-wall-pushes-back",
+    "type": "multiple-choice",
+    "prompt": "When a gas particle strikes a wall, it exerts a force F_x on the wall. What force does the wall exert on the particle?",
+    "choices": [
+      {
+        "text": "−F_x, equal in size and opposite in direction",
+        "correct": true
+      },
+      {
+        "text": "Zero, because the wall doesn't move",
+        "why": "A wall can push without moving. By Newton's third law it pushes back on the particle with −F_x, and that force is what reverses the particle's velocity."
+      },
+      {
+        "text": "+F_x, in the same direction as the particle's push",
+        "why": "Action and reaction point in opposite directions. The wall pushes back with −F_x, which is what turns the particle around."
+      },
+      {
+        "text": "−2F_x, twice as large as the particle's push",
+        "why": "The two forces are exactly equal in size. By Newton's third law the wall exerts −F_x, equal and opposite to the particle's push."
+      }
+    ],
+    "explanation": "Since every action has an equal and opposite reaction, the wall exerts a force −F_x on the particle. Through Newton's second law, this force reverses the particle's velocity component v_x."
+  },
+  {
+    "id": "pc16-ideal-isotherm-higher-t",
+    "type": "multiple-choice",
+    "prompt": "Isotherms are curves of P against V at a fixed temperature. On a P–V graph of ideal-gas isotherms for the same amount of gas, how does the isotherm for a higher temperature compare with one for a lower temperature?",
+    "choices": [
+      {
+        "text": "It lies above it, with a higher P at every V",
+        "correct": true
+      },
+      {
+        "text": "It lies below it, with a lower P at every V",
+        "why": "From P = nRT/V, raising T raises P at any fixed V, so the hotter isotherm lies above."
+      },
+      {
+        "text": "The two curves cross at one particular volume",
+        "why": "Ideal-gas isotherms never cross: at any V the pressure is proportional to T, so the hotter one is always higher."
+      },
+      {
+        "text": "It is a straight line instead of a curve",
+        "why": "Every ideal-gas isotherm has the same shape, P ∝ 1/V. A higher T just raises the curve to a higher P at every V."
+      }
+    ],
+    "explanation": "For an ideal gas, P = nRT/V. At a given V the pressure is proportional to T, so isotherms for higher temperatures lie above those for lower ones and never cross them."
+  },
+  {
+    "id": "pc16-ideal-isochore-steepest",
+    "type": "multiple-choice",
+    "prompt": "Ideal-gas isochores are straight lines of P against T, each at a fixed molar density ρ. Since P = ρRT, which isochore is the steepest?",
+    "choices": [
+      {
+        "text": "The one with the highest density",
+        "correct": true
+      },
+      {
+        "text": "The one with the lowest density",
+        "why": "The slope of P against T is ρR, so a lower density gives a shallower line."
+      },
+      {
+        "text": "None; they all have the same slope",
+        "why": "The slope of P = ρRT plotted against T is ρR, so lines for different densities have different slopes."
+      },
+      {
+        "text": "The one at the highest temperature",
+        "why": "Each isochore covers a range of temperatures; it is labeled by its density. Its slope, ρR, is largest for the highest density."
+      }
+    ],
+    "explanation": "Along an isochore ρ is fixed, so P = ρRT is a straight line through the origin with slope ρR. The higher the density, the steeper the line."
+  },
+  {
+    "id": "pc16-ideal-isochore-heating",
+    "type": "numeric",
+    "prompt": "A sealed sample of an ideal gas is heated at fixed volume, so it moves along an isochore, P = ρRT with ρ constant. If its pressure is 2.00 bar at 300 K, what is its pressure at 450 K, in bar?",
+    "answer": 3,
+    "unit": "bar",
+    "tolerance": 0,
+    "explanation": "With ρ and R fixed, P is proportional to T: P = 2.00 bar × 450/300 = 3.00 bar. Plotted against T, each isochore is a straight line through the origin."
+  },
+  {
+    "id": "pc16-ideal-no-liquid",
+    "type": "multiple-choice",
+    "prompt": "Why can't an ideal gas condense into a liquid, however much it is cooled or compressed?",
+    "choices": [
+      {
+        "text": "Its particles have no interactions at all",
+        "correct": true
+      },
+      {
+        "text": "Its collisions with the walls are elastic",
+        "why": "Elastic wall collisions don't prevent condensation. A gas-to-liquid transition can be modeled only if the particles interact, and ideal-gas particles don't."
+      },
+      {
+        "text": "It is always above its boiling point",
+        "why": "An ideal gas can be at any temperature. It can't condense because its particles have no interactions to hold a liquid together."
+      },
+      {
+        "text": "Its particles take up no volume",
+        "why": "Particle size isn't what stops condensation. A gas-to-liquid transition can be modeled only if the particles interact, and ideal-gas particles don't."
+      }
+    ],
+    "explanation": "An ideal gas can exist only as a gas; there is no ideal liquid. A phase transition from gas to liquid can be modeled only if the interactions between particles are properly accounted for."
+  },
+  {
+    "id": "pc16-ideal-z-formula",
+    "type": "multiple-choice",
+    "prompt": "What is the compressibility factor Z of a gas?",
+    "choices": [
+      {
+        "text": "Z = (PV)/(nRT)",
+        "correct": true
+      },
+      {
+        "text": "Z = −(1/V)(∂V/∂P)_T",
+        "why": "That is the compressibility, a different quantity. The compressibility factor is the ratio Z = (PV)/(nRT)."
+      },
+      {
+        "text": "Z = (nRT)/(PV)",
+        "why": "That is the reciprocal. The compressibility factor is Z = (PV)/(nRT), which equals 1 for an ideal gas."
+      },
+      {
+        "text": "Z = PV − nRT",
+        "why": "A difference would have units of energy. Z is the ratio (PV)/(nRT), a pure number equal to 1 for an ideal gas."
+      }
+    ],
+    "explanation": "Rearranging PV = nRT gives (PV)/(nRT) = 1. This ratio is the compressibility factor Z; for a real gas, how far Z is from 1 measures how far the gas deviates from ideal behavior."
+  },
+  {
+    "id": "pc16-ideal-z-compress",
+    "type": "multiple-choice",
+    "prompt": "An ideal gas at a fixed temperature is compressed by raising its pressure. What happens to its compressibility factor Z?",
+    "choices": [
+      {
+        "text": "It stays exactly 1",
+        "correct": true
+      },
+      {
+        "text": "It rises above 1",
+        "why": "As P rises, V falls in proportion, so PV stays equal to nRT and Z stays 1."
+      },
+      {
+        "text": "It falls below 1",
+        "why": "Real gases can show Z below 1, but in an ideal gas V falls in proportion to the rise in P, so Z stays 1."
+      },
+      {
+        "text": "It rises in proportion to P",
+        "why": "Z contains PV, not P alone. For an ideal gas, V shrinks as P grows, keeping PV = nRT and Z = 1."
+      }
+    ],
+    "explanation": "In an ideal gas, compressing by increasing P makes the volume decrease just enough to keep Z = (PV)/(nRT) = 1. Only real gases show Z different from 1."
+  },
+  {
+    "id": "pc16-ideal-z-low-pressure",
+    "type": "multiple-choice",
+    "prompt": "Measured Z values of real gases such as N2, CH4, H2 and CO2 differ from 1 at high pressures. What happens to Z for each of them as the pressure is lowered toward zero?",
+    "choices": [
+      {
+        "text": "It approaches 1",
+        "correct": true
+      },
+      {
+        "text": "It approaches 0",
+        "why": "Z isn't proportional to P: as P falls, V grows. At low pressure each gas approaches ideal behavior, Z = 1."
+      },
+      {
+        "text": "It keeps a different value for each gas",
+        "why": "At low enough pressures, and so low densities, every gas approaches ideal behavior, so all of them reach Z = 1."
+      },
+      {
+        "text": "It grows without limit",
+        "why": "Z doesn't run away at low pressure. At sufficiently low pressures every gas approaches ideal-gas behavior, where Z = 1."
+      }
+    ],
+    "explanation": "For sufficiently low pressures, and hence low densities, each gas approaches ideal-gas behavior, so its Z approaches 1. That is the sense of this section's title: all dilute gases behave ideally."
+  },
+  {
+    "id": "pc16-ideal-z-below-one",
+    "type": "multiple-choice",
+    "prompt": "A real gas has Z = 0.80 at some pressure and temperature. Since Z = (PV̄)/(RT), how does its molar volume compare with that of an ideal gas at the same P and T?",
+    "choices": [
+      {
+        "text": "It is smaller, 0.80 times the ideal value",
+        "correct": true
+      },
+      {
+        "text": "It is larger, 1.25 times the ideal value",
+        "why": "V̄ = (ZRT)/P, and the ideal gas has Z = 1. With Z = 0.80 the molar volume is 0.80 times the ideal value, so it is smaller."
+      },
+      {
+        "text": "It is the same, since P and T are the same",
+        "why": "At the same P and T, V̄ is proportional to Z. With Z = 0.80, V̄ is 0.80 times the ideal value."
+      },
+      {
+        "text": "It is smaller, 0.64 times the ideal value",
+        "why": "V̄ is proportional to Z itself, not to Z^2. With Z = 0.80 the molar volume is 0.80 times the ideal value."
+      }
+    ],
+    "explanation": "At fixed P and T, V̄ = (ZRT)/P, and an ideal gas has Z = 1. So Z = 0.80 means the gas takes up 0.80 times the ideal molar volume; how far Z is from 1 measures the deviation from ideal behavior."
+  },
+  {
+    "id": "pc16-ideal-z-from-data",
+    "type": "numeric",
+    "prompt": "A gas at T = 300 K and P = 40.0 bar has a molar density ρ = 2.00 mol/L. Using the intensive form Z = P/(ρRT) with R = 0.08314 L·bar/(mol·K), what is its compressibility factor? (Give it as a decimal.)",
+    "answer": 0.802,
+    "explanation": "ρRT = 2.00 × 0.08314 × 300 bar = 49.88 bar, so Z = 40.0/49.88 = 0.802. An ideal gas at this density and temperature would exert 49.88 bar; a Z this far below 1 shows a noticeable deviation from ideal behavior."
+  },
+  {
+    "id": "pc16-ideal-universe",
+    "type": "multiple-choice",
+    "prompt": "In thermodynamics, what makes up the thermodynamic universe?",
+    "choices": [
+      {
+        "text": "The system, its surroundings and the boundary",
+        "correct": true
+      },
+      {
+        "text": "The system and its boundary, but not the surroundings",
+        "why": "The surroundings belong to it too. The thermodynamic universe is the system, its surroundings and the boundary between them."
+      },
+      {
+        "text": "Only the surroundings outside the system",
+        "why": "The system belongs to it as well. Together, the system, its surroundings and the boundary make up the thermodynamic universe."
+      },
+      {
+        "text": "The system alone, once it is sealed",
+        "why": "A sealed system is still only one part. The thermodynamic universe is the system plus its surroundings plus the boundary between them."
+      }
+    ],
+    "explanation": "Thermodynamics divides the universe into a system and its surroundings, with a boundary between them. The unity of all three is the thermodynamic universe."
+  },
+  {
+    "id": "pc16-ideal-extensive-def",
+    "type": "multiple-choice",
+    "prompt": "A system is made larger so that both N and V grow while the ratio N/V stays constant. What is an extensive property?",
+    "choices": [
+      {
+        "text": "One that increases as the system grows",
+        "correct": true
+      },
+      {
+        "text": "One that stays the same as the system grows",
+        "why": "That is an intensive property, such as temperature or pressure. An extensive property, such as volume, increases as the system grows."
+      },
+      {
+        "text": "One that depends only on the temperature",
+        "why": "The test is how a property scales with the size of the system. An extensive property increases as the system grows; an intensive one stays the same."
+      },
+      {
+        "text": "One that can be measured only at the boundary",
+        "why": "Where it is measured doesn't matter. An extensive property is one that increases as the system grows with N/V held constant."
+      }
+    ],
+    "explanation": "When a system grows with N/V held constant, an extensive property (such as N, n, V, mass or energy) increases, and an intensive property (such as P, T or density) stays the same."
+  },
+  {
+    "id": "pc16-ideal-which-extensive",
+    "type": "multiple-choice",
+    "prompt": "Which of these properties is extensive?",
+    "choices": [
+      {
+        "text": "Free energy",
+        "correct": true
+      },
+      {
+        "text": "Temperature",
+        "why": "Temperature stays the same when the system grows with N/V fixed, so it is intensive. Free energy grows with the system."
+      },
+      {
+        "text": "Pressure",
+        "why": "Pressure doesn't change when the system grows with N/V fixed, so it is intensive. Free energy grows with the system."
+      },
+      {
+        "text": "Molar heat capacity",
+        "why": "A molar quantity is per mole, so it doesn't change as the system grows; the section lists it as intensive. Free energy grows with the system."
+      }
+    ],
+    "explanation": "The section lists N, n, V, mass, energy and free energy as extensive, and pressure, density, molar heat capacity and temperature as intensive."
+  },
+  {
+    "id": "pc16-ideal-combine-temperature",
+    "type": "multiple-choice",
+    "prompt": "Two identical samples of a gas, each at 300 K and 1 bar, are combined into one system with twice the amount of gas and twice the volume. What is the temperature of the combined system?",
+    "choices": [
+      {
+        "text": "300 K",
+        "correct": true
+      },
+      {
+        "text": "600 K",
+        "why": "Temperatures don't add. T is intensive: it stays the same when the system grows with N/V fixed."
+      },
+      {
+        "text": "150 K",
+        "why": "The temperature isn't shared out between the two halves. T is intensive, so the combined system stays at 300 K."
+      },
+      {
+        "text": "It can't be known without the amount of gas",
+        "why": "T is intensive: it doesn't depend on the size of the system, so the combined system is still at 300 K."
+      }
+    ],
+    "explanation": "Doubling both n and V keeps N/V fixed, which is exactly the growth that separates extensive from intensive properties. Temperature, like pressure, is intensive and stays at 300 K, while V, n and the energy double."
+  },
+  {
+    "id": "pc16-ideal-rho-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the intensive form of the ideal gas law, P = ρRT, what does ρ stand for?",
+    "choices": [
+      {
+        "text": "The molar density, n/V",
+        "correct": true
+      },
+      {
+        "text": "The number density, N/V",
+        "why": "With the number of particles per volume, the law would read P = ρk_B T. With R in it, ρ must be the moles per volume, n/V."
+      },
+      {
+        "text": "The mass density, m/V",
+        "why": "With mass per volume, ρRT wouldn't have units of pressure. With R in it, ρ is the molar density, n/V."
+      },
+      {
+        "text": "The molar volume, V/n",
+        "why": "That is V̄, the reciprocal of ρ; the law in terms of it is PV̄ = RT. ρ is the molar density, n/V."
+      }
+    ],
+    "explanation": "ρ = n/V is the molar density and V̄ = V/n is the molar volume. Both are intensive, so P = ρRT and PV̄ = RT are intensive forms of PV = nRT."
+  },
+  {
+    "id": "pc16-ideal-intensive-form",
+    "type": "multiple-choice",
+    "prompt": "Why is PV̄ = RT called an intensive form of the ideal gas law, while PV = nRT is not?",
+    "choices": [
+      {
+        "text": "None of P, V̄ and T grows with the system",
+        "correct": true
+      },
+      {
+        "text": "It holds only for exactly one mole of gas",
+        "why": "V̄ = V/n is a molar quantity, so the form holds for any amount. It is intensive because P, V̄ and T don't depend on the system's size."
+      },
+      {
+        "text": "It applies only to small samples of gas",
+        "why": "Size doesn't matter. Each quantity in it (P, V̄ and T) stays the same as the system grows, which is what makes it intensive."
+      },
+      {
+        "text": "It leaves out the volume, which is extensive",
+        "why": "It doesn't leave the volume out; it uses the volume per mole, V/n. Since V̄, P and T all stay the same as the system grows, the form is intensive."
+      }
+    ],
+    "explanation": "PV = nRT contains V and n, which grow with the system. PV̄ = RT uses only P, T and the molar volume V̄ = V/n, which all stay the same when the system grows, so it is written in intensive form."
+  },
+  {
+    "id": "pc16-ideal-molar-volume-0c",
+    "type": "numeric",
+    "prompt": "Using the intensive form PV̄ = RT with R = 0.08314 L·bar/(mol·K), what is the molar volume V̄ of an ideal gas at T = 273.15 K and P = 1.000 bar, in L/mol? (Give it as a decimal.)",
+    "answer": 22.71,
+    "explanation": "V̄ = RT/P = 0.08314 × 273.15/1.000 L/mol = 22.71 L/mol. Like P and T, V̄ is intensive: it is the same for any amount of the gas."
+  }
+]

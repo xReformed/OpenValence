@@ -1,0 +1,417 @@
+[
+  {
+    "id": "pc19-h-temperature-why-needed",
+    "type": "multiple-choice",
+    "prompt": "What problem does the section's method for converting ΔH to other temperatures solve?",
+    "choices": [
+      {
+        "text": "Tables give enthalpies at only a few temperatures",
+        "correct": true
+      },
+      {
+        "text": "Enthalpy is a path function that varies with the route",
+        "why": "Enthalpy is a state function. The issue is simply that tables list values at only a few temperatures, often 25 °C."
+      },
+      {
+        "text": "Enthalpies of formation are defined only at 0 K",
+        "why": "Enthalpies of formation are commonly tabulated at 25 °C. The problem is that reactions are often run at other temperatures."
+      },
+      {
+        "text": "Reaction enthalpies are the same at every temperature",
+        "why": "If they were, no conversion would be needed. ΔH changes with temperature because the heat capacities of reactants and products differ."
+      }
+    ],
+    "explanation": "Thermodynamic data are usually tabulated at only a few temperatures, but reactions are run at many others. Heat capacities let ΔH be converted from one temperature to another."
+  },
+  {
+    "id": "pc19-h-temperature-condition",
+    "type": "multiple-choice",
+    "prompt": "Kirchhoff's law starts from dH = C_P dT. Under which condition does dH = C_P dT hold?",
+    "choices": [
+      {
+        "text": "Constant pressure",
+        "correct": true
+      },
+      {
+        "text": "Constant volume",
+        "why": "At constant volume the heat capacity C_V gives the change in U, not H. dH = C_P dT is for constant pressure."
+      },
+      {
+        "text": "Constant temperature",
+        "why": "At constant temperature dT = 0, so the equation would say nothing. It describes heating at constant pressure."
+      },
+      {
+        "text": "No heat transferred",
+        "why": "That describes an adiabatic process. dH = C_P dT is the enthalpy change when a substance is heated at constant pressure."
+      }
+    ],
+    "explanation": "At constant pressure, warming a substance by dT raises its enthalpy by C_P dT. Adding these steps from T_1 to T_2 gives ΔH = ∫ C_P dT."
+  },
+  {
+    "id": "pc19-h-temperature-kirchhoff-name",
+    "type": "multiple-choice",
+    "prompt": "The section writes ΔH = ∫ C_P dT, taken from T_1 to T_2. What is this equation often called?",
+    "choices": [
+      {
+        "text": "Kirchhoff's law",
+        "correct": true
+      },
+      {
+        "text": "Hess's law",
+        "why": "Hess's law adds the enthalpies of reactions that sum to a target reaction. The temperature conversion ΔH = ∫ C_P dT is Kirchhoff's law."
+      },
+      {
+        "text": "The first law of thermodynamics",
+        "why": "The first law is ΔU = q + w. The integral of C_P over temperature is called Kirchhoff's law."
+      },
+      {
+        "text": "The Dulong-Petit law",
+        "why": "The Dulong-Petit law gives the heat capacity of solids; it does not convert ΔH between temperatures. ΔH = ∫ C_P dT is Kirchhoff's law."
+      }
+    ],
+    "explanation": "ΔH = ∫ C_P dT, from T_1 to T_2, is often referred to as Kirchhoff's law. It adds up dH = C_P dT over the temperature change."
+  },
+  {
+    "id": "pc19-h-temperature-constant-cp",
+    "type": "multiple-choice",
+    "prompt": "If C_P does not depend on temperature, what does ΔH = ∫ C_P dT (from T_1 to T_2) become?",
+    "choices": [
+      {
+        "text": "ΔH = C_P ΔT",
+        "correct": true
+      },
+      {
+        "text": "ΔH = C_P T_2",
+        "why": "Only the change in temperature matters, not T_2 itself. With a constant C_P the integral gives C_P (T_2 − T_1) = C_P ΔT."
+      },
+      {
+        "text": "ΔH = C_P/ΔT",
+        "why": "Dividing by ΔT would give the wrong units. A constant C_P comes out of the integral, leaving C_P ΔT."
+      },
+      {
+        "text": "ΔH = 0",
+        "why": "A constant heat capacity doesn't make ΔH vanish; the substance still takes in heat as it warms. The result is ΔH = C_P ΔT."
+      }
+    ],
+    "explanation": "A constant C_P can be taken outside the integral, and ∫ dT from T_1 to T_2 is just T_2 − T_1. So ΔH = C_P ΔT."
+  },
+  {
+    "id": "pc19-h-temperature-model",
+    "type": "multiple-choice",
+    "prompt": "Which empirical model does the section use to fit heat capacities over broad temperature ranges?",
+    "choices": [
+      {
+        "text": "C_P(T) = a + bT + c/T^2",
+        "correct": true
+      },
+      {
+        "text": "C_P(T) = aT^3",
+        "why": "A single power of T is not the section's model. It uses a constant plus terms in T and 1/T^2: C_P(T) = a + bT + c/T^2."
+      },
+      {
+        "text": "C_P(T) = a exp(−b/T)",
+        "why": "There is no exponential in the section's model. It is a simple sum, C_P(T) = a + bT + c/T^2, which is easy to integrate."
+      },
+      {
+        "text": "C_P(T) = a + b ln T",
+        "why": "There is no logarithm in the section's model. It uses C_P(T) = a + bT + c/T^2, with a, b and c fitted to data."
+      }
+    ],
+    "explanation": "The section fits C_P with three empirical parameters: C_P(T) = a + bT + c/T^2. Values of a, b and c for several substances are listed in Table 19.13.1."
+  },
+  {
+    "id": "pc19-h-temperature-water-constant",
+    "type": "multiple-choice",
+    "prompt": "In Table 19.13.1, H2O(ℓ) has a = 75.29 J/(mol·K) and b = c = 0. What does this mean for its C_P?",
+    "choices": [
+      {
+        "text": "It is constant at 75.29 J/(mol·K)",
+        "correct": true
+      },
+      {
+        "text": "It is zero, because b and c are zero",
+        "why": "With b = c = 0, only the constant a is left: C_P = a = 75.29 J/(mol·K), not zero."
+      },
+      {
+        "text": "It grows in proportion to T",
+        "why": "Growth with T would need a nonzero b. With b = c = 0, C_P = a, a constant."
+      },
+      {
+        "text": "It falls off as 1/T^2",
+        "why": "A 1/T^2 dependence comes from the c term, and c = 0 here. C_P is simply the constant a."
+      }
+    ],
+    "explanation": "With b = c = 0, C_P(T) = a + bT + c/T^2 reduces to C_P = a = 75.29 J/(mol·K), with no temperature dependence over the range of the fit. Then ΔH = C_P ΔT can be used directly."
+  },
+  {
+    "id": "pc19-h-temperature-high-t-term",
+    "type": "multiple-choice",
+    "prompt": "In C_P(T) = a + bT + c/T^2, what happens to the term c/T^2 as the temperature becomes very high?",
+    "choices": [
+      {
+        "text": "It shrinks toward zero",
+        "correct": true
+      },
+      {
+        "text": "It grows in proportion to T^2",
+        "why": "T^2 is in the denominator, not the numerator. As T rises, c/T^2 gets smaller and smaller."
+      },
+      {
+        "text": "It grows in proportion to T",
+        "why": "That describes the bT term. The c/T^2 term shrinks toward zero, since T^2 in the denominator becomes huge."
+      },
+      {
+        "text": "It stays constant",
+        "why": "That describes the a term. The c/T^2 term changes with T and fades toward zero at high temperature."
+      }
+    ],
+    "explanation": "As T grows, the T^2 in the denominator makes c/T^2 shrink toward zero, while bT grows. At high temperature C_P is therefore close to a + bT."
+  },
+  {
+    "id": "pc19-h-temperature-c-units",
+    "type": "multiple-choice",
+    "prompt": "In Table 19.13.1, a has units of J/(mol·K), but c has units of J·K/mol. Why are the units of c different?",
+    "choices": [
+      {
+        "text": "c/T^2 must have the same units as C_P",
+        "correct": true
+      },
+      {
+        "text": "c is multiplied by T in the model",
+        "why": "It is b that is multiplied by T, which is why b is in J/(mol·K^2). c is divided by T^2, so it needs two extra factors of K."
+      },
+      {
+        "text": "c is an enthalpy, not a heat capacity",
+        "why": "c is a fitting parameter, not an enthalpy. Its units are fixed by requiring c/T^2 to come out in J/(mol·K), like C_P."
+      },
+      {
+        "text": "c is measured at a different temperature than a",
+        "why": "All three parameters come from one fit of C_P over a range of temperatures. The units of c just make c/T^2 match the units of C_P."
+      }
+    ],
+    "explanation": "Every term of C_P(T) = a + bT + c/T^2 must be in J/(mol·K). Dividing c by T^2 removes K^2, so c is in J·K/mol; likewise b is in J/(mol·K^2) so that bT is in J/(mol·K)."
+  },
+  {
+    "id": "pc19-h-temperature-reaction-rule",
+    "type": "multiple-choice",
+    "prompt": "How does the section find a reaction enthalpy at a new temperature T_2 from its value at T_1?",
+    "choices": [
+      {
+        "text": "Add ∫ ΔC_P dT, from T_1 to T_2, to ΔH_rxn(T_1)",
+        "correct": true
+      },
+      {
+        "text": "Multiply ΔH_rxn(T_1) by the ratio T_2/T_1",
+        "why": "ΔH_rxn does not scale in proportion to temperature. It changes by the integral of ΔC_P, the heat-capacity difference between products and reactants."
+      },
+      {
+        "text": "Use ΔH_rxn(T_1) unchanged, since H is a state function",
+        "why": "Being a state function means H depends on the state, and temperature is part of the state. ΔH_rxn shifts by ∫ ΔC_P dT."
+      },
+      {
+        "text": "Add the products' C_P times ΔT to ΔH_rxn(T_1)",
+        "why": "The reactants' heat capacities count too. It is ΔC_P, products minus reactants, that is integrated over temperature."
+      }
+    ],
+    "explanation": "ΔH_rxn(T_2) = ΔH_rxn(T_1) + ∫ ΔC_P dT, from T_1 to T_2. If ΔC_P is constant, the correction is just ΔC_P (T_2 − T_1)."
+  },
+  {
+    "id": "pc19-h-temperature-delta-cp",
+    "type": "multiple-choice",
+    "prompt": "In ΔH_rxn(T_2) = ΔH_rxn(T_1) + ∫ ΔC_P dT, what is ΔC_P?",
+    "choices": [
+      {
+        "text": "Products' C_P minus reactants' C_P, each times its coefficient",
+        "correct": true
+      },
+      {
+        "text": "The change in one substance's C_P between T_1 and T_2",
+        "why": "ΔC_P here is a difference between products and reactants at the same temperature, not a change with temperature."
+      },
+      {
+        "text": "Products' C_P alone, each times its coefficient",
+        "why": "The reactants' heat capacities must be subtracted. ΔC_P is the products' total minus the reactants' total."
+      },
+      {
+        "text": "Reactants' C_P minus products' C_P, each times its coefficient",
+        "why": "This has the sign reversed. Like ΔH_rxn itself, ΔC_P is products minus reactants."
+      }
+    ],
+    "explanation": "ΔC_P is the heat capacity of the products minus that of the reactants, each weighted by its coefficient. For ½N2(g) + 3/2 H2(g) → NH3(g), ΔC_P = C_P(NH3) − ½C_P(N2) − 3/2 C_P(H2)."
+  },
+  {
+    "id": "pc19-h-temperature-zero-delta-cp",
+    "type": "multiple-choice",
+    "prompt": "If ΔC_P = 0 for a reaction, how does ΔH_rxn change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It stays the same",
+        "correct": true
+      },
+      {
+        "text": "It rises in proportion to T",
+        "why": "With ΔC_P = 0 the correction ∫ ΔC_P dT is zero, so nothing makes ΔH_rxn grow."
+      },
+      {
+        "text": "It drops to zero",
+        "why": "ΔC_P = 0 makes the correction zero, not ΔH_rxn itself. ΔH_rxn keeps its value at T_1."
+      },
+      {
+        "text": "It changes sign",
+        "why": "A sign change would need a large correction. With ΔC_P = 0 the correction is zero and ΔH_rxn is unchanged."
+      }
+    ],
+    "explanation": "The correction to ΔH_rxn is ∫ ΔC_P dT. If the products and reactants have the same total heat capacity, ΔC_P = 0 and ΔH_rxn is the same at every temperature."
+  },
+  {
+    "id": "pc19-h-temperature-nh3-direction",
+    "type": "multiple-choice",
+    "prompt": "In Example 19.13.2, ΔC_P for ½N2(g) + 3/2 H2(g) → NH3(g) is negative. What happens to ΔH°_f of NH3 when the temperature rises from 25 °C to 100 °C?",
+    "choices": [
+      {
+        "text": "It becomes more negative",
+        "correct": true
+      },
+      {
+        "text": "It becomes less negative",
+        "why": "A negative ΔC_P times a positive ΔT gives a negative correction, which makes ΔH more negative: from −46.11 to −47.8 kJ/mol."
+      },
+      {
+        "text": "It stays at −46.11 kJ/mol",
+        "why": "It would stay the same only if ΔC_P were zero. Here ΔC_P < 0, so ΔH becomes more negative."
+      },
+      {
+        "text": "It becomes positive",
+        "why": "The correction is only about −1.7 kJ/mol, and it is negative anyway. ΔH goes from −46.11 to −47.8 kJ/mol."
+      }
+    ],
+    "explanation": "ΔH(373 K) = ΔH(298 K) + ΔC_P ΔT, with ΔC_P = −22.73 J/(mol·K) and ΔT = 75 K. The correction is negative, so ΔH°_f goes from −46.11 to −47.8 kJ/mol."
+  },
+  {
+    "id": "pc19-h-temperature-nh3-fractions",
+    "type": "multiple-choice",
+    "prompt": "Example 19.13.2 writes the formation of ammonia as ½N2(g) + 3/2 H2(g) → NH3(g). Why does it use fractional coefficients?",
+    "choices": [
+      {
+        "text": "ΔH°_f refers to forming exactly 1 mol of NH3",
+        "correct": true
+      },
+      {
+        "text": "Fractional coefficients make ΔC_P come out to zero",
+        "why": "ΔC_P for this reaction is −22.73 J/(mol·K), not zero. The fractions are there so the equation forms 1 mol of NH3."
+      },
+      {
+        "text": "N2 and H2 react as single N and H atoms",
+        "why": "N2(g) and H2(g) are the standard states of the elements. The fractions just give 1 mol of NH3, matching ΔH°_f per mole."
+      },
+      {
+        "text": "Whole numbers would make ΔH positive",
+        "why": "Doubling the equation doubles ΔH, but it does not change its sign. The fractions make the equation form 1 mol of NH3."
+      }
+    ],
+    "explanation": "A standard enthalpy of formation is per mole of product, so the equation must form exactly 1 mol of NH3. Then ΔC_P is also per mole of NH3: ΔC_P = 35.06 − ½(29.12) − 3/2(28.82) = −22.73 J/(mol·K)."
+  },
+  {
+    "id": "pc19-h-temperature-units",
+    "type": "multiple-choice",
+    "prompt": "In Example 19.13.2, ΔC_P ΔT comes out in J/mol, while ΔH(298 K) = −46.11 kJ/mol. What must be done before adding them?",
+    "choices": [
+      {
+        "text": "Put both in the same unit, such as J/mol",
+        "correct": true
+      },
+      {
+        "text": "Nothing; J/mol and kJ/mol can be added directly",
+        "why": "1 kJ = 1000 J, so adding the numbers directly would make the correction 1000 times too large. Convert first, for example to −46110 J/mol."
+      },
+      {
+        "text": "Divide ΔC_P ΔT by the temperature",
+        "why": "ΔC_P ΔT already has units of energy per mole. Only the J versus kJ mismatch needs fixing."
+      },
+      {
+        "text": "Multiply ΔC_P ΔT by the gas constant R",
+        "why": "Multiplying by R would give the wrong units. The only fix needed is to convert kJ to J, or J to kJ."
+      }
+    ],
+    "explanation": "ΔC_P ΔT = (−22.73 J/(mol·K))(75 K) = −1705 J/mol = −1.705 kJ/mol. Added to −46.11 kJ/mol, it gives −47.8 kJ/mol; the example writes ΔH(298 K) as −46110 J/mol so the units match."
+  },
+  {
+    "id": "pc19-h-temperature-lead-why-model",
+    "type": "multiple-choice",
+    "prompt": "In Example 19.13.1, ΔH for heating Pb(s) from 273 K to 353 K is found from C_P(T) = a + bT + c/T^2 rather than from one C_P value. Why?",
+    "choices": [
+      {
+        "text": "Lead's C_P varies with temperature",
+        "correct": true
+      },
+      {
+        "text": "Lead's C_P is zero at 273 K",
+        "why": "Lead's C_P at 273 K is not zero; a alone is 22.13 J/(mol·K). The model is used because C_P varies with temperature."
+      },
+      {
+        "text": "Lead melts between 273 K and 353 K",
+        "why": "Lead stays solid over this range; the table and the example are for Pb(s). The model is needed because its C_P varies with temperature."
+      },
+      {
+        "text": "The heating is done at constant volume",
+        "why": "Kirchhoff's law with C_P applies at constant pressure. The model is used because lead's C_P depends on temperature."
+      }
+    ],
+    "explanation": "For lead, b and c are not zero, so C_P varies with T. ΔH is then the integral of a + bT + c/T^2 from 273 K to 353 K, which comes to 2143.6 J/mol."
+  },
+  {
+    "id": "pc19-h-temperature-lead-largest-term",
+    "type": "multiple-choice",
+    "prompt": "Example 19.13.1 finds ΔH for heating Pb(s) from 273 K to 353 K as 1770.4 J/mol + 293.5 J/mol + 79.7 J/mol. Which term of C_P = a + bT + c/T^2 gives the largest part?",
+    "choices": [
+      {
+        "text": "The constant term, a",
+        "correct": true
+      },
+      {
+        "text": "The term in T, bT",
+        "why": "bT gives 293.5 J/mol, less than a fifth of the a term's 1770.4 J/mol."
+      },
+      {
+        "text": "The term in 1/T^2, c/T^2",
+        "why": "c/T^2 gives only 79.7 J/mol. The constant a gives 1770.4 J/mol, by far the largest share."
+      },
+      {
+        "text": "All three terms contribute equally",
+        "why": "The three parts are 1770.4, 293.5 and 79.7 J/mol, so they are far from equal. The a term dominates."
+      }
+    ],
+    "explanation": "The a term gives a(T_2 − T_1) = 22.13 × 80 = 1770.4 J/mol, most of the 2143.6 J/mol total. The bT and c/T^2 terms are smaller corrections for the change of C_P with temperature."
+  },
+  {
+    "id": "pc19-h-temperature-co2-cp-1000",
+    "type": "numeric",
+    "prompt": "Table 19.13.1 gives CO2(g) a = 44.22 J/(mol·K), b = 8.79 × 10^−3 J/(mol·K^2) and c = −8.62 × 10^5 J·K/mol. Using C_P(T) = a + bT + c/T^2, what is C_P of CO2 at 1000 K, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 52.15,
+    "explanation": "bT = 8.79 × 10^−3 × 1000 = 8.79 and c/T^2 = −8.62 × 10^5/10^6 = −0.862, both in J/(mol·K). So C_P = 44.22 + 8.79 − 0.862 = 52.15 J/(mol·K)."
+  },
+  {
+    "id": "pc19-h-temperature-nh3-398",
+    "type": "numeric",
+    "prompt": "Example 19.13.2 gives ΔH°_f(NH3) = −46.11 kJ/mol at 298 K and ΔC_P = −22.73 J/(mol·K) for ½N2(g) + 3/2 H2(g) → NH3(g). Taking ΔC_P as constant, ΔH(T_2) = ΔH(T_1) + ΔC_P (T_2 − T_1). What is ΔH°_f(NH3) at 398 K, in kJ/mol? (Give it as a decimal.)",
+    "answer": -48.38,
+    "tolerance": 0.005,
+    "explanation": "ΔC_P (T_2 − T_1) = (−22.73 J/(mol·K))(100 K) = −2273 J/mol = −2.273 kJ/mol. So ΔH°_f(398 K) = −46.11 − 2.273 = −48.38 kJ/mol; the J must be changed to kJ before adding."
+  },
+  {
+    "id": "pc19-h-temperature-water-delta-cp",
+    "type": "numeric",
+    "prompt": "For H2(g) + ½O2(g) → H2O(ℓ), use C_P = 28.82 J/(mol·K) for H2(g), 29.36 J/(mol·K) for O2(g) and 75.29 J/(mol·K) for H2O(ℓ). What is ΔC_P for this reaction, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 31.79,
+    "explanation": "ΔC_P = C_P(H2O) − C_P(H2) − ½C_P(O2) = 75.29 − 28.82 − 14.68 = 31.79 J/(mol·K). Since ΔC_P > 0, ΔH°_f of liquid water becomes less negative as the temperature rises."
+  },
+  {
+    "id": "pc19-h-temperature-delta-t",
+    "type": "numeric",
+    "prompt": "Example 19.13.2 converts ΔH°_f of NH3 from 25 °C to 100 °C. What temperature change ΔT goes into ΔC_P ΔT, in K?",
+    "answer": 75,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "ΔT = 373 K − 298 K = 75 K, the same as 100 °C − 25 °C, since a kelvin and a Celsius degree are the same size. Putting 373 K itself in place of ΔT is a common slip."
+  }
+]

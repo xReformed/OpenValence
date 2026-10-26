@@ -1,0 +1,539 @@
+[
+  {
+    "id": "pc18-vibrational-geometric-series",
+    "type": "multiple-choice",
+    "prompt": "The vibrational partition function of a diatomic is the sum q_vib = Σ exp(−(v + 1/2)hν/(kT)) over v = 0, 1, 2, …. Why can this sum be done exactly?",
+    "choices": [
+      {
+        "text": "Each term is the previous one times a fixed factor",
+        "correct": true
+      },
+      {
+        "text": "Only the v = 0 term of the sum is different from zero",
+        "why": "Every term is positive; the higher ones are just smaller. The sum can be done exactly because each term is the previous one times exp(−hν/(kT)), a geometric series."
+      },
+      {
+        "text": "All the vibrational levels are degenerate with each other",
+        "why": "The vibrational levels of a diatomic each hold a single state. The sum works out because the evenly spaced levels make it a geometric series."
+      },
+      {
+        "text": "The sum can be replaced by an integral over v",
+        "why": "An integral is the approach for translation and rotation. For vibration, the evenly spaced levels give a geometric series that can be summed exactly."
+      }
+    ],
+    "explanation": "The levels E_v = (v + 1/2)hν are evenly spaced, so each Boltzmann factor is the one before it times x = exp(−hν/(kT)). The sum is a geometric series, and 1 + x + x^2 + … = 1/(1 − x)."
+  },
+  {
+    "id": "pc18-vibrational-x-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section writes q_vib = exp(−hν/(2kT)) × (1 + x + x^2 + x^3 + …). What is x?",
+    "choices": [
+      {
+        "text": "exp(−hν/(kT)), the Boltzmann factor for one quantum hν",
+        "correct": true
+      },
+      {
+        "text": "hν/(kT), the size of one quantum compared with kT",
+        "why": "hν/(kT) is the exponent, not the factor. x is the exponential, exp(−hν/(kT)), which lies between 0 and 1."
+      },
+      {
+        "text": "exp(−hν/(2kT)), the factor for the zero-point energy",
+        "why": "That factor sits in front of the series. x is the factor for one extra quantum, exp(−hν/(kT))."
+      },
+      {
+        "text": "kT/(hν), the thermal energy in units of hν",
+        "why": "kT/(hν) is not an exponential and can be larger than 1, which would make the series grow without limit. x is exp(−hν/(kT))."
+      }
+    ],
+    "explanation": "Each step up the ladder adds one quantum hν, which multiplies the Boltzmann factor by x = exp(−hν/(kT)). That is why the terms form the series 1 + x + x^2 + …."
+  },
+  {
+    "id": "pc18-vibrational-series-converges",
+    "type": "multiple-choice",
+    "prompt": "The section sums 1 + x + x^2 + … as 1/(1 − x), with x = exp(−hν/(kT)). Why does this series add up to a finite number at any temperature above 0 K?",
+    "choices": [
+      {
+        "text": "x always lies between 0 and 1",
+        "correct": true
+      },
+      {
+        "text": "x is always larger than 1",
+        "why": "If x were larger than 1, the terms would grow and the sum would be infinite. Because hν/(kT) > 0, x = exp(−hν/(kT)) is less than 1."
+      },
+      {
+        "text": "x is exactly 1/2 for every molecule",
+        "why": "x depends on ν and T, so it differs from molecule to molecule. It is always between 0 and 1, which is all the series needs."
+      },
+      {
+        "text": "Only the first two terms are kept",
+        "why": "The section keeps every term. The infinite series still has a finite sum because each term is a fraction x < 1 of the one before."
+      }
+    ],
+    "explanation": "Since hν and kT are both positive, x = exp(−hν/(kT)) is between 0 and 1. The terms then shrink steadily, and the series 1 + x + x^2 + … adds up to 1/(1 − x)."
+  },
+  {
+    "id": "pc18-vibrational-zero-point-factor",
+    "type": "multiple-choice",
+    "prompt": "With energies measured from the bottom of the potential well, q_vib = (exp(−hν/(2kT)))/(1 − exp(−hν/(kT))). Where does the factor exp(−hν/(2kT)) come from?",
+    "choices": [
+      {
+        "text": "The zero-point energy hν/2 in every level",
+        "correct": true
+      },
+      {
+        "text": "The degeneracy of the ground vibrational level",
+        "why": "The v = 0 level of a diatomic holds a single state. The factor is the Boltzmann factor of the zero-point energy hν/2, which every level E_v = (v + 1/2)hν contains."
+      },
+      {
+        "text": "The dissociation energy needed to break the bond",
+        "why": "Bond breaking isn't part of the harmonic oscillator model. The factor comes from the hν/2 in E_v = (v + 1/2)hν."
+      },
+      {
+        "text": "The rotational energy that the molecule also has",
+        "why": "q_vib contains only vibrational energies. The factor comes from the zero-point energy hν/2 shared by all the levels."
+      }
+    ],
+    "explanation": "Every level E_v = (v + 1/2)hν contains the zero-point energy hν/2, so its Boltzmann factor, exp(−hν/(2kT)), can be taken out of the whole sum. What is left is the geometric series, 1/(1 − exp(−hν/(kT)))."
+  },
+  {
+    "id": "pc18-vibrational-zero-at-ground",
+    "type": "multiple-choice",
+    "prompt": "If the zero of energy is placed at the v = 0 level, hν/2, instead of at the bottom of the well, which expression gives q_vib?",
+    "choices": [
+      {
+        "text": "q_vib = 1/(1 − exp(−hν/(kT)))",
+        "correct": true
+      },
+      {
+        "text": "q_vib = (exp(−hν/(2kT)))/(1 − exp(−hν/(kT)))",
+        "why": "That is q_vib with energies measured from the bottom of the well. Moving the zero to hν/2 removes the factor exp(−hν/(2kT))."
+      },
+      {
+        "text": "q_vib = 1 − exp(−hν/(kT))",
+        "why": "That is the fraction of molecules in v = 0, f_0. q_vib is its reciprocal, 1/(1 − exp(−hν/(kT)))."
+      },
+      {
+        "text": "q_vib = 1/(1 + exp(−hν/(kT)))",
+        "why": "The geometric series 1 + x + x^2 + … sums to 1/(1 − x), not 1/(1 + x). This form would make q_vib smaller than 1."
+      }
+    ],
+    "explanation": "Measured from the v = 0 level, the energies are vhν, so the zero-point factor drops out and q_vib = 1/(1 − exp(−hν/(kT))). The ground level then adds exactly 1 to the sum."
+  },
+  {
+    "id": "pc18-vibrational-theta-definition",
+    "type": "multiple-choice",
+    "prompt": "Which expression defines the vibrational temperature, Θ_vib, of a diatomic with vibrational wavenumber ν̃ (in cm^−1)?",
+    "choices": [
+      {
+        "text": "Θ_vib = hcν̃/k",
+        "correct": true
+      },
+      {
+        "text": "Θ_vib = hcB̃/k",
+        "why": "B̃ is the rotational constant, and hcB̃/k is the rotational temperature, Θ_rot. Θ_vib uses the vibrational wavenumber ν̃."
+      },
+      {
+        "text": "Θ_vib = k/(hcν̃)",
+        "why": "This is upside down and has units of 1/K. Θ_vib = hcν̃/k is the vibrational quantum expressed as a temperature."
+      },
+      {
+        "text": "Θ_vib = (hcν̃)/(kT)",
+        "why": "(hcν̃)/(kT) has no unit; it is the ratio Θ_vib/T. Θ_vib itself is hcν̃/k, in kelvin."
+      }
+    ],
+    "explanation": "Θ_vib = hcν̃/k turns the vibrational quantum hcν̃ into a temperature. With hc/k = 1.4388 cm·K, Θ_vib in kelvin is 1.4388 times ν̃ in cm^−1."
+  },
+  {
+    "id": "pc18-vibrational-theta-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does a molecule's Θ_vib express?",
+    "choices": [
+      {
+        "text": "The stiffness of its bond, written as a temperature",
+        "correct": true
+      },
+      {
+        "text": "The temperature at which its bond breaks",
+        "why": "Θ_vib is set by the vibrational frequency, not by the dissociation energy. It expresses the bond's stiffness in units of the Boltzmann constant."
+      },
+      {
+        "text": "The temperature at which all its molecules reach v = 1",
+        "why": "Molecules never all move to v = 1; v = 0 always holds the largest share. Θ_vib expresses the bond's stiffness as a temperature."
+      },
+      {
+        "text": "The boiling point of the substance",
+        "why": "Boiling depends on forces between molecules. Θ_vib comes from the vibration inside one molecule and expresses its bond's stiffness."
+      }
+    ],
+    "explanation": "Θ_vib = hcν̃/k expresses the stiffness of the vibrating bond in units of the Boltzmann constant. Comparing it with T shows at a glance whether the vibration is excited."
+  },
+  {
+    "id": "pc18-vibrational-n2-co-stiffness",
+    "type": "multiple-choice",
+    "prompt": "N2 and CO have nearly the same reduced mass. In Table 18.4.1, N2 has a force constant of 22.94 mdyn/Å and Θ_vib = 3393 K, while CO has 19.03 mdyn/Å and Θ_vib = 3122 K. Why is Θ_vib higher for N2?",
+    "choices": [
+      {
+        "text": "Its bond is stiffer",
+        "correct": true
+      },
+      {
+        "text": "Its molecules are much lighter",
+        "why": "Both molecules have a mass of 28 amu and nearly the same reduced mass. The difference comes from the larger force constant of N2."
+      },
+      {
+        "text": "Its bond is longer",
+        "why": "The N2 bond (1.097 Å) is actually shorter than the CO bond (1.128 Å), and bond length doesn't set Θ_vib. The stiffer bond, with the larger force constant, does."
+      },
+      {
+        "text": "It is made of two identical atoms",
+        "why": "Identical atoms matter for rotation (the symmetry number), not for Θ_vib. The higher Θ_vib of N2 comes from its stiffer bond."
+      }
+    ],
+    "explanation": "Θ_vib rises with the strength (stiffness) of the bond and falls with the effective mass. With the masses nearly equal, the larger force constant of N2 gives it the higher Θ_vib."
+  },
+  {
+    "id": "pc18-vibrational-h2-d2-mass",
+    "type": "multiple-choice",
+    "prompt": "In Table 18.4.1, H2 and D_2 have almost the same force constant (5.749 and 5.77 mdyn/Å), but Θ_vib is 6332 K for H2 and 4487 K for D_2. Why is it lower for D_2?",
+    "choices": [
+      {
+        "text": "Its molecules are heavier",
+        "correct": true
+      },
+      {
+        "text": "Its bond is weaker",
+        "why": "The force constants are almost equal, so the two bonds are equally stiff. The lower Θ_vib of D_2 comes from its larger mass."
+      },
+      {
+        "text": "Its bond is longer",
+        "why": "The bond lengths are essentially equal, 0.7414 and 0.7415 Å. The larger mass of D_2 is what lowers Θ_vib."
+      },
+      {
+        "text": "Its atoms have more electrons",
+        "why": "H2 and D_2 both have two electrons; a deuterium atom differs from a hydrogen atom only by a neutron. That extra mass is what lowers Θ_vib."
+      }
+    ],
+    "explanation": "The lighter the molecule, the higher Θ_vib. With the same bond stiffness, the heavier D_2 vibrates more slowly, so its Θ_vib is lower."
+  },
+  {
+    "id": "pc18-vibrational-k2-most-excited",
+    "type": "multiple-choice",
+    "prompt": "Table 18.4.1 gives Θ_vib = 6332 K for H2, 3393 K for N2, 805 K for Cl2 and 133 K for K2. Which of these gases has the largest fraction of its molecules in excited vibrational states at 300 K?",
+    "choices": [
+      {
+        "text": "K2",
+        "correct": true
+      },
+      {
+        "text": "H2",
+        "why": "H2 has the highest Θ_vib of the four, so it is the hardest to excite. The lowest Θ_vib, that of K2, gives the most excited molecules."
+      },
+      {
+        "text": "N2",
+        "why": "The Θ_vib of N2, 3393 K, is far above 300 K, so nearly all N2 is in v = 0. K2, with the lowest Θ_vib, is the most excited."
+      },
+      {
+        "text": "Cl2",
+        "why": "Cl2 has a fairly low Θ_vib, but that of K2 is six times lower still. The lower Θ_vib is, the more molecules are vibrationally excited."
+      }
+    ],
+    "explanation": "The fraction outside v = 0 is exp(−Θ_vib/T), which is largest when Θ_vib is smallest. K2, with a very weak bond and a low Θ_vib, has the largest excited population."
+  },
+  {
+    "id": "pc18-vibrational-n2-ground-why",
+    "type": "multiple-choice",
+    "prompt": "At 300 K, nearly all N2 molecules are in the v = 0 vibrational level. Why?",
+    "choices": [
+      {
+        "text": "Θ_vib (3393 K) is far above 300 K, so one quantum is much larger than kT",
+        "correct": true
+      },
+      {
+        "text": "N2 doesn't absorb infrared light, so it can't be vibrationally excited",
+        "why": "Infrared activity affects spectra, not thermal populations; collisions can excite vibrations too. The reason is that Θ_vib is far above 300 K."
+      },
+      {
+        "text": "The v = 0 level is degenerate, so it holds more states than the others",
+        "why": "Each vibrational level of a diatomic holds a single state. v = 0 dominates because a vibrational quantum is much larger than kT at 300 K."
+      },
+      {
+        "text": "The bond of N2 is so weak that excited molecules quickly fall apart",
+        "why": "N2 has a very strong, stiff bond with a high Θ_vib. Its molecules stay in v = 0 because one quantum is much larger than kT."
+      }
+    ],
+    "explanation": "At 300 K, Θ_vib/T ≈ 11.3 for N2, so the Boltzmann factor for v = 1 is exp(−11.3), about 1 × 10^−5. Practically every N2 molecule stays in the ground vibrational state."
+  },
+  {
+    "id": "pc18-vibrational-iodine-meaning",
+    "type": "multiple-choice",
+    "prompt": "Example 18.4.1 finds q_vib = 1.556 for I2 at 300 K, with the zero of energy at v = 0. What does this value tell you?",
+    "choices": [
+      {
+        "text": "Only a few vibrational levels are noticeably populated",
+        "correct": true
+      },
+      {
+        "text": "I2 has exactly 1.556 vibrational levels in all",
+        "why": "The model has an endless ladder of levels; q is a weighted count of the ones that are reachable. A value near 1 means only a few are populated."
+      },
+      {
+        "text": "Most I2 molecules are in the v = 1 level at 300 K",
+        "why": "v = 0 always holds the largest share. Here f_0 = 1/q_vib ≈ 0.64, so most I2 molecules are in v = 0."
+      },
+      {
+        "text": "Many thousands of vibrational levels are thermally populated",
+        "why": "Thousands of levels would give a q in the thousands. q_vib = 1.556 means only a few levels are populated."
+      }
+    ],
+    "explanation": "The partition function roughly counts the thermally accessible levels, so q_vib = 1.556 means mainly v = 0 and v = 1 matter, with a little in v = 2. The fraction in v = 0 is 1/q_vib ≈ 0.64."
+  },
+  {
+    "id": "pc18-vibrational-fewer-states",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does the number of thermally accessible vibrational states compare with the numbers of rotational and translational states?",
+    "choices": [
+      {
+        "text": "Far fewer than rotational; many orders fewer than translational",
+        "correct": true
+      },
+      {
+        "text": "More than rotational, but still far fewer than translational",
+        "why": "Vibrational quanta are much larger than rotational ones, so fewer vibrational states are reachable. Rotational states outnumber them, and translational states far more so."
+      },
+      {
+        "text": "About the same number as both rotational and translational",
+        "why": "The level spacings differ hugely, translational ≪ rotational ≪ vibrational. So the vibrational count is much smaller than the other two."
+      },
+      {
+        "text": "More than both of them, since vibrations store the most energy",
+        "why": "Large quanta mean fewer accessible states, not more. Vibrational states are far fewer than rotational and translational ones."
+      }
+    ],
+    "explanation": "The bigger the energy spacing compared with kT, the fewer levels a molecule can reach. Vibrational quanta are the largest of the three, so very few vibrational states are accessible, far fewer than rotational and many orders fewer than translational."
+  },
+  {
+    "id": "pc18-vibrational-cv-high-limit",
+    "type": "multiple-choice",
+    "prompt": "At temperatures far above Θ_vib, what does the vibrational contribution to the molar heat capacity C_V of a diatomic gas approach?",
+    "choices": [
+      {
+        "text": "R",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "The vibrational heat capacity goes to 0 at low temperature, T ≪ Θ_vib. At high temperature it rises toward R per mole."
+      },
+      {
+        "text": "(3/2)R",
+        "why": "(3/2)R is the translational heat capacity of a gas. The single vibration of a diatomic gives at most R per mole."
+      },
+      {
+        "text": "(5/2)R",
+        "why": "(5/2)R is the molar C_V of a diatomic gas from translation and rotation together. The vibration alone adds up to R."
+      }
+    ],
+    "explanation": "As T rises far above Θ_vib, the section's vibrational heat capacity approaches k per molecule. Per mole that is N_A k = R."
+  },
+  {
+    "id": "pc18-vibrational-cv-low-limit",
+    "type": "multiple-choice",
+    "prompt": "As a diatomic gas is cooled to temperatures far below Θ_vib, what happens to the vibrational contribution to its heat capacity?",
+    "choices": [
+      {
+        "text": "It falls toward zero",
+        "correct": true
+      },
+      {
+        "text": "It rises toward R per mole",
+        "why": "R per mole is the high-temperature limit. Far below Θ_vib almost no molecule can take up a vibrational quantum, so the contribution goes to zero."
+      },
+      {
+        "text": "It grows without limit",
+        "why": "The vibrational heat capacity of a diatomic never exceeds R per mole. Far below Θ_vib it goes to zero."
+      },
+      {
+        "text": "It stays the same at every temperature",
+        "why": "The vibrational heat capacity depends strongly on temperature. It approaches R at high T and goes to zero at low T."
+      }
+    ],
+    "explanation": "When T ≪ Θ_vib, nearly every molecule stays in v = 0, and warming the gas a little excites almost none of them. The vibrational energy then barely changes with T, so its heat capacity goes to zero."
+  },
+  {
+    "id": "pc18-vibrational-reduced-temperature",
+    "type": "multiple-choice",
+    "prompt": "Why does the section plot the vibrational heat capacity against the reduced temperature T/Θ_vib rather than against T?",
+    "choices": [
+      {
+        "text": "One curve then fits every diatomic gas",
+        "correct": true
+      },
+      {
+        "text": "T/Θ_vib is always smaller than 1",
+        "why": "T/Θ_vib can take any positive value; it is large for weak bonds at high T. The point is that, plotted against T/Θ_vib, all diatomics fall on one curve."
+      },
+      {
+        "text": "The heat capacity doesn't depend on T",
+        "why": "The vibrational heat capacity depends strongly on temperature. Using T/Θ_vib just puts all diatomics on the same scale."
+      },
+      {
+        "text": "It removes the need for q_vib",
+        "why": "The curve still comes from q_vib. Dividing T by Θ_vib makes it valid for every diatomic gas at once."
+      }
+    ],
+    "explanation": "The vibrational heat capacity depends on T only through Θ_vib/T. Plotting it against T/Θ_vib gives one general curve, and each gas's Θ_vib in Table 18.4.1 sets its own temperature scale."
+  },
+  {
+    "id": "pc18-vibrational-low-theta-dissociate",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what often happens to molecules with a low Θ_vib, such as Na2 and K2, at relatively low temperatures?",
+    "choices": [
+      {
+        "text": "They dissociate",
+        "correct": true
+      },
+      {
+        "text": "They condense to a liquid",
+        "why": "Condensing depends on forces between molecules. The section notes that molecules with a low Θ_vib, which have weak bonds, often dissociate at lower temperatures."
+      },
+      {
+        "text": "They all collect in v = 0",
+        "why": "A low Θ_vib means the vibration is easily excited, so many molecules leave v = 0. Their weak bonds also mean they often dissociate."
+      },
+      {
+        "text": "They stop rotating",
+        "why": "Rotational levels are even more closely spaced and stay populated. The section's point is that weakly bound molecules often dissociate."
+      }
+    ],
+    "explanation": "A low Θ_vib goes with a weak bond, and such molecules often dissociate at lower temperatures. The harmonic oscillator model is not enough to describe the dissociation itself."
+  },
+  {
+    "id": "pc18-vibrational-na2-most-populated",
+    "type": "multiple-choice",
+    "prompt": "Na2 has Θ_vib = 229 K, below room temperature. At 300 K, which vibrational level of Na2 holds the most molecules?",
+    "choices": [
+      {
+        "text": "v = 0",
+        "correct": true
+      },
+      {
+        "text": "v = 1, since T is above Θ_vib",
+        "why": "T > Θ_vib spreads the molecules over more levels, but each level still holds less than the one below it. f_0 = 1 − exp(−229/300) ≈ 0.53 is the largest share."
+      },
+      {
+        "text": "The highest level, since the bond is weak",
+        "why": "Populations fall steadily up the ladder, by a factor exp(−Θ_vib/T) per step. The ground level, v = 0, holds the most."
+      },
+      {
+        "text": "All levels hold the same share",
+        "why": "Equal shares would need exp(−Θ_vib/T) = 1, which never happens at a finite T. Each level holds less than the one below it, so v = 0 holds the most."
+      }
+    ],
+    "explanation": "From f_v = (1 − exp(−Θ_vib/T))exp(−vΘ_vib/T), each level holds exp(−Θ_vib/T) < 1 times as many molecules as the one below it. So v = 0 always has the largest share, here f_0 ≈ 0.53, even though Na2 has a noticeable population in excited levels."
+  },
+  {
+    "id": "pc18-vibrational-fraction-step",
+    "type": "multiple-choice",
+    "prompt": "The fraction of molecules in level v is f_v = (1 − exp(−Θ_vib/T))exp(−vΘ_vib/T). What happens to f_v each time v goes up by one?",
+    "choices": [
+      {
+        "text": "It is multiplied by exp(−Θ_vib/T), so it gets smaller",
+        "correct": true
+      },
+      {
+        "text": "It goes up by Θ_vib/T",
+        "why": "v appears in an exponent, so each step multiplies f_v by a factor, exp(−Θ_vib/T). Since that factor is below 1, f_v drops."
+      },
+      {
+        "text": "It is cut in half at every temperature",
+        "why": "The factor is exp(−Θ_vib/T), which depends on T and equals 1/2 only when Θ_vib/T = ln 2. It is always below 1."
+      },
+      {
+        "text": "It stays the same, since the levels are evenly spaced",
+        "why": "Even spacing gives the same factor for every step, not the same population. Each step multiplies f_v by exp(−Θ_vib/T) < 1."
+      }
+    ],
+    "explanation": "f_(v+1)/f_v = exp(−Θ_vib/T), which is less than 1 at any temperature. So the populations fall off steadily up the vibrational ladder."
+  },
+  {
+    "id": "pc18-vibrational-f0-temperature",
+    "type": "multiple-choice",
+    "prompt": "The fraction of molecules in v = 0 is f_0 = 1 − exp(−Θ_vib/T). How does f_0 change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It decreases, as molecules move to excited levels",
+        "correct": true
+      },
+      {
+        "text": "It increases, as the molecules gain more energy",
+        "why": "Gaining energy moves molecules up the ladder, out of v = 0. As T rises, exp(−Θ_vib/T) grows, so f_0 falls."
+      },
+      {
+        "text": "It stays equal to 1 at every temperature",
+        "why": "f_0 is close to 1 only when T ≪ Θ_vib. As T rises, exp(−Θ_vib/T) grows and f_0 drops below 1."
+      },
+      {
+        "text": "It drops suddenly to zero once T passes Θ_vib",
+        "why": "At T = Θ_vib, f_0 = 1 − exp(−1) ≈ 0.63, still the largest share. f_0 falls gradually as T rises, not suddenly."
+      }
+    ],
+    "explanation": "As T rises, Θ_vib/T gets smaller, so exp(−Θ_vib/T) gets larger and f_0 = 1 − exp(−Θ_vib/T) gets smaller. The molecules that leave v = 0 spread into the excited levels."
+  },
+  {
+    "id": "pc18-vibrational-br2-theta",
+    "type": "numeric",
+    "prompt": "The vibrational temperature is Θ_vib = hcν̃/k, with hc/k = 1.4388 cm·K. Br2 has a vibrational wavenumber ν̃ = 325 cm^−1. What is its Θ_vib, in K?",
+    "answer": 468,
+    "unit": "K",
+    "explanation": "Θ_vib = 1.4388 cm·K × 325 cm^−1 = 468 K. That is not far above room temperature, so a noticeable share of Br2 molecules is vibrationally excited at 300 K."
+  },
+  {
+    "id": "pc18-vibrational-kt-wavenumber-1000k",
+    "type": "numeric",
+    "prompt": "Example 18.4.1 uses kT/hc = 0.69504 × 300 = 208.5 cm^−1 at 300 K. Using kT/hc = (0.6950 cm^−1/K) × T, what is kT/hc at 1000 K, in cm^−1?",
+    "answer": 695,
+    "explanation": "kT/hc = 0.6950 × 1000 = 695 cm^−1. That is larger than the 560 cm^−1 vibrational quantum of Cl2, so at 1000 K a large share of Cl2 molecules is vibrationally excited."
+  },
+  {
+    "id": "pc18-vibrational-cl2-q-at-theta",
+    "type": "numeric",
+    "prompt": "With the zero of energy at v = 0, q_vib = 1/(1 − exp(−Θ_vib/T)). For Cl2 (Θ_vib = 805 K) at T = 805 K, Θ_vib/T = 1 and exp(−1) = 0.368. What is q_vib? (Give it as a decimal.)",
+    "answer": 1.58,
+    "explanation": "q_vib = 1/(1 − 0.368) = 1/0.632 = 1.58. Even at T = Θ_vib, only a few vibrational levels are populated."
+  },
+  {
+    "id": "pc18-vibrational-hcl-theta-over-t",
+    "type": "numeric",
+    "prompt": "Table 18.4.1 gives Θ_vib = 4227 K for HCl. What is Θ_vib/T for HCl at 300 K? (Give it as a decimal.)",
+    "answer": 14.09,
+    "explanation": "Θ_vib/T = 4227 K/300 K = 14.09. With a ratio this large, exp(−14.09) ≈ 8 × 10^−7, so essentially every HCl molecule is in v = 0 at room temperature."
+  },
+  {
+    "id": "pc18-vibrational-cl2-ground-fraction",
+    "type": "numeric",
+    "prompt": "The fraction of molecules in v = 0 is f_0 = 1 − exp(−Θ_vib/T). For Cl2 at 300 K, exp(−Θ_vib/T) = 0.068. What fraction of the Cl2 molecules is in v = 0? (Give it as a decimal.)",
+    "answer": 0.932,
+    "explanation": "f_0 = 1 − 0.068 = 0.932, so about 93% of Cl2 molecules are in the ground vibrational state at 300 K. Cl2 has a fairly low Θ_vib (805 K); molecules with stiffer bonds have even more in v = 0."
+  },
+  {
+    "id": "pc18-vibrational-k2-v1-fraction",
+    "type": "numeric",
+    "prompt": "The fraction of molecules in level v is f_v = (1 − exp(−Θ_vib/T))exp(−vΘ_vib/T). For K2 (Θ_vib = 133 K) at 600 K, exp(−Θ_vib/T) = 0.80. What fraction of the K2 molecules is in v = 1? (Give it as a decimal.)",
+    "answer": 0.16,
+    "explanation": "f_1 = (1 − 0.80) × 0.80 = 0.20 × 0.80 = 0.16. With Θ_vib far below T, the K2 molecules are spread over many levels: only 20% are in v = 0."
+  },
+  {
+    "id": "pc18-vibrational-f2-hnu-over-kt",
+    "type": "numeric",
+    "prompt": "F2 has a vibrational wavenumber of 917 cm^−1, and at 300 K, kT/hc = 208.5 cm^−1. What is hν/(kT) for F2 at 300 K? (Give it as a decimal.)",
+    "answer": 4.4,
+    "explanation": "hν/(kT) = (917 cm^−1)/(208.5 cm^−1) = 4.40, the same number as Θ_vib/T. Then exp(−4.40) ≈ 0.012, so only about 1% of F2 molecules are vibrationally excited at 300 K."
+  },
+  {
+    "id": "pc18-vibrational-o2-f2-over-f0",
+    "type": "numeric",
+    "prompt": "For O2 (Θ_vib = 2274 K) at 1137 K, exp(−Θ_vib/T) = exp(−2.00) = 0.135. Using f_v ∝ exp(−vΘ_vib/T), what is the population ratio f_2/f_0? (Give it as a decimal.)",
+    "answer": 0.0182,
+    "explanation": "f_2/f_0 = exp(−2Θ_vib/T) = (0.135)^2 = 0.0182. Each step up the ladder multiplies the population by 0.135, so v = 2 holds under 2% as many molecules as v = 0."
+  }
+]

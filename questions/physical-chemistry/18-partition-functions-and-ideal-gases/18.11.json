@@ -1,0 +1,574 @@
+[
+  {
+    "id": "pc18-equipartition-statement",
+    "type": "multiple-choice",
+    "prompt": "According to the equipartition principle, how much does each quadratic term in a molecule's classical energy contribute to its average energy?",
+    "choices": [
+      {
+        "text": "½k_B T",
+        "correct": true
+      },
+      {
+        "text": "k_B T",
+        "why": "k_B T is what a vibrational mode gets, because it has two quadratic terms. Each single quadratic term gets ½k_B T."
+      },
+      {
+        "text": "(3/2)k_B T",
+        "why": "That is an atom's whole translational energy, from three quadratic terms. Each single term gets ½k_B T."
+      },
+      {
+        "text": "½k_B",
+        "why": "½k_B is a term's contribution to the heat capacity. Its contribution to the average energy is ½k_B T."
+      }
+    ],
+    "explanation": "Every degree of freedom that appears only quadratically in the classical energy has an average energy of ½k_B T in thermal equilibrium. Here k_B is the Boltzmann constant and T is the temperature in kelvin."
+  },
+  {
+    "id": "pc18-equipartition-equal-share",
+    "type": "multiple-choice",
+    "prompt": "At room temperature, how does the average energy in one translational quadratic term of a molecule compare with that in one rotational quadratic term?",
+    "choices": [
+      {
+        "text": "They are equal, ½k_B T each",
+        "correct": true
+      },
+      {
+        "text": "The translational term holds more, since molecules move faster than they turn",
+        "why": "Equipartition gives the same share to every active quadratic term, whatever the motion. Each holds ½k_B T."
+      },
+      {
+        "text": "The rotational term holds more, since it involves the moment of inertia",
+        "why": "The moment of inertia appears in the energy expression, but the average of each quadratic term is still ½k_B T."
+      },
+      {
+        "text": "It depends on the mass of the molecule",
+        "why": "Mass sets how fast the molecule moves, not its share of energy. Each active quadratic term has ½k_B T on average."
+      }
+    ],
+    "explanation": "That is what equipartition means: energy is shared equally, ½k_B T to each quadratic term, whether it comes from translation or rotation. Rotation's levels are closely spaced, so it is fully active at room temperature."
+  },
+  {
+    "id": "pc18-equipartition-which-term",
+    "type": "multiple-choice",
+    "prompt": "Which of these energy terms has the form that the equipartition principle covers?",
+    "choices": [
+      {
+        "text": "½mv_x^2, the kinetic energy of motion along x",
+        "correct": true
+      },
+      {
+        "text": "mgz, the potential energy at height z in gravity",
+        "why": "mgz grows in proportion to z, not to its square. Equipartition's ½k_B T applies to terms that are quadratic."
+      },
+      {
+        "text": "−C/r^6, an attraction between two molecules",
+        "why": "This depends on 1/r^6, not on the square of a coordinate or momentum. Equipartition covers quadratic terms such as ½mv_x^2."
+      },
+      {
+        "text": "E_0, a fixed energy that never changes",
+        "why": "A constant has no coordinate or velocity to square, so it can't store thermal energy. Equipartition covers quadratic terms such as ½mv_x^2."
+      }
+    ],
+    "explanation": "Equipartition applies to each degree of freedom that appears only quadratically in the energy. Kinetic energy, ½mv_x^2, is quadratic in the velocity, so it averages ½k_B T."
+  },
+  {
+    "id": "pc18-equipartition-atom-three-halves",
+    "type": "multiple-choice",
+    "prompt": "Why is the average kinetic energy of an atom in a gas (3/2)k_B T?",
+    "choices": [
+      {
+        "text": "Its x, y and z momenta each add ½k_B T",
+        "correct": true
+      },
+      {
+        "text": "It has three vibrational modes, each worth ½k_B T",
+        "why": "A free atom has no bonds to vibrate. Its three quadratic terms are its momentum components along x, y and z."
+      },
+      {
+        "text": "Its kinetic energy is a single term worth (3/2)k_B T",
+        "why": "Each quadratic term gets ½k_B T. The kinetic energy has three such terms, one for each momentum component."
+      },
+      {
+        "text": "It rotates about three axes, each worth ½k_B T",
+        "why": "An atom's (3/2)k_B T is all translation. It comes from the x, y and z components of its momentum."
+      }
+    ],
+    "explanation": "An atom has three degrees of freedom, the x, y and z components of its momentum. Each appears squared in the kinetic energy, so each adds ½k_B T, for (3/2)k_B T in all."
+  },
+  {
+    "id": "pc18-equipartition-closest-vibration",
+    "type": "multiple-choice",
+    "prompt": "At 300 K, which of these diatomic molecules has a vibration that comes closest to its full equipartition energy, k_B T?",
+    "choices": [
+      {
+        "text": "K2, with T_vib ≈ 133 K",
+        "correct": true
+      },
+      {
+        "text": "Cl2, with T_vib ≈ 805 K",
+        "why": "805 K is well above 300 K, so Cl2's vibration is only partly active. K2's T_vib is below 300 K, so its vibration is nearly fully active."
+      },
+      {
+        "text": "N2, with T_vib ≈ 3393 K",
+        "why": "N2's T_vib is more than ten times 300 K, so its vibration is frozen out. K2, with T_vib below 300 K, comes closest."
+      },
+      {
+        "text": "HCl, with T_vib ≈ 4227 K",
+        "why": "HCl's T_vib is far above 300 K, so its vibration is frozen out. K2, with T_vib below 300 K, comes closest."
+      }
+    ],
+    "explanation": "Equipartition holds when k_B T is much larger than the level spacing, that is, when T is well above T_vib. Only K2, with its large, weakly bound atoms, has T_vib below 300 K."
+  },
+  {
+    "id": "pc18-equipartition-vibration-two-terms",
+    "type": "multiple-choice",
+    "prompt": "In the classical vibrational energy E_vib = ½kx^2 + ½μv_x^2, why does each fully active vibrational mode get k_B T, not ½k_B T?",
+    "choices": [
+      {
+        "text": "It has a kinetic and a potential quadratic term",
+        "correct": true
+      },
+      {
+        "text": "It vibrates along two axes at once",
+        "why": "A mode is one motion along one coordinate. The two quadratic terms are its potential energy, ½kx^2, and kinetic energy, ½μv_x^2."
+      },
+      {
+        "text": "Its levels are farther apart than rotational levels",
+        "why": "Level spacing decides whether a mode is active, not the size of its share. When active, it gets ½k_B T for each of its two quadratic terms."
+      },
+      {
+        "text": "Each mode is shared between two atoms",
+        "why": "Equipartition counts quadratic terms, not atoms. A vibration has two, kinetic and potential, so it gets 2 × ½k_B T."
+      }
+    ],
+    "explanation": "An oscillator stores energy as kinetic energy, ½μv_x^2, and potential energy, ½kx^2. Both are quadratic, so a fully active vibrational mode gets 2 × ½k_B T = k_B T and adds R to the molar C_V."
+  },
+  {
+    "id": "pc18-equipartition-frozen-out",
+    "type": "multiple-choice",
+    "prompt": "What does it mean when a degree of freedom is said to be frozen out?",
+    "choices": [
+      {
+        "text": "k_B T is too small to excite it, so it adds little to C_V",
+        "correct": true
+      },
+      {
+        "text": "The gas has been cooled below its freezing point",
+        "why": "The term is about one kind of motion, not the whole gas turning solid. When k_B T is far below the level spacing, that motion adds almost nothing to C_V."
+      },
+      {
+        "text": "Its levels are so close together that it behaves classically",
+        "why": "That is the condition for equipartition to work. A frozen-out motion has levels far apart compared with k_B T."
+      },
+      {
+        "text": "It contributes its full ½k_B to the heat capacity",
+        "why": "That is what an active degree of freedom does. A frozen-out one contributes almost nothing, because k_B T is too small to excite it."
+      }
+    ],
+    "explanation": "Equipartition needs k_B T to be much greater than the spacing between the quantum energy levels. If it isn't, that degree of freedom's heat capacity drops toward zero, and it is said to be frozen out."
+  },
+  {
+    "id": "pc18-equipartition-vib-low-t",
+    "type": "multiple-choice",
+    "prompt": "At low temperature, how does the average vibrational energy ⟨E_vib⟩ = hcν̃/(exp(hcν̃/(k_B T)) − 1) compare with the equipartition value, k_B T?",
+    "choices": [
+      {
+        "text": "It is much smaller than k_B T",
+        "correct": true
+      },
+      {
+        "text": "It equals k_B T at every temperature",
+        "why": "⟨E_vib⟩ approaches k_B T only when hcν̃ ≪ k_B T, at high temperature. At low temperature it falls far below."
+      },
+      {
+        "text": "It is much larger than k_B T",
+        "why": "Widely spaced vibrational levels are hard to excite at low temperature. That makes ⟨E_vib⟩ smaller than k_B T, not larger."
+      },
+      {
+        "text": "It equals exactly ½k_B T",
+        "why": "There is no fixed fraction at low temperature. ⟨E_vib⟩ keeps dropping toward zero as fewer excited states are occupied."
+      }
+    ],
+    "explanation": "When hcν̃ ≪ k_B T the exponential can be expanded and ⟨E_vib⟩ ≈ k_B T. At low temperature that expansion fails: only a few vibrational states are occupied, and equipartition doesn't apply."
+  },
+  {
+    "id": "pc18-equipartition-vib-room-t",
+    "type": "multiple-choice",
+    "prompt": "Why is the vibrational contribution to the heat capacity of most gases usually left out at room temperature?",
+    "choices": [
+      {
+        "text": "T_vib is usually far above room temperature",
+        "correct": true
+      },
+      {
+        "text": "A vibration's energy has no quadratic terms",
+        "why": "It has two, kinetic and potential. Vibrations are left out because T_vib is far above room temperature, so they are frozen out."
+      },
+      {
+        "text": "Vibrational levels are too close together to matter",
+        "why": "It is the opposite: the levels are far apart compared with k_B T at room temperature, so the vibrations are frozen out."
+      },
+      {
+        "text": "Gas molecules collide too often to vibrate",
+        "why": "Collisions don't stop vibration. Vibrations are frozen out because T_vib is much higher than room temperature."
+      }
+    ],
+    "explanation": "For most molecules T_vib is ten times room temperature or more, so k_B T is far smaller than the vibrational spacing. The vibrations are frozen out and are usually assumed not to contribute."
+  },
+  {
+    "id": "pc18-equipartition-freeze-order",
+    "type": "multiple-choice",
+    "prompt": "A diatomic gas is cooled from a very high temperature. Which motion stops contributing to its heat capacity first?",
+    "choices": [
+      {
+        "text": "Vibration",
+        "correct": true
+      },
+      {
+        "text": "Rotation",
+        "why": "T_rot is far below T_vib, so rotation stays active to much lower temperatures. It freezes out second."
+      },
+      {
+        "text": "Translation",
+        "why": "Translation stays active. It provides the (3/2)R left at the lowest temperatures."
+      },
+      {
+        "text": "All three at the same temperature",
+        "why": "They freeze out at different temperatures, set by T_vib and T_rot. That is why the C_V curve has separate steps."
+      }
+    ],
+    "explanation": "In the idealized curve, vibration freezes out first as the gas cools, because T_vib is high. Rotation freezes out only at much lower temperatures, near T_rot."
+  },
+  {
+    "id": "pc18-equipartition-lowest-plateau",
+    "type": "multiple-choice",
+    "prompt": "At low temperature the idealized C_V of a diatomic gas levels off at (3/2)R. Which motion still contributes there?",
+    "choices": [
+      {
+        "text": "Translation only",
+        "correct": true
+      },
+      {
+        "text": "Rotation only",
+        "why": "Rotation is frozen out at the lowest plateau. The (3/2)R is ½R from each of the three translational terms."
+      },
+      {
+        "text": "Vibration only",
+        "why": "Vibration freezes out first, at a much higher temperature. The (3/2)R comes from translation."
+      },
+      {
+        "text": "Translation and rotation",
+        "why": "Together they give (5/2)R, the middle plateau. At (3/2)R rotation has frozen out too, leaving translation."
+      }
+    ],
+    "explanation": "Each translational degree of freedom contributes ½R, so translation alone gives (3/2)R. Rotation adds R on the middle plateau, and vibration adds another R at high temperature."
+  },
+  {
+    "id": "pc18-equipartition-diatomic-high-t",
+    "type": "multiple-choice",
+    "prompt": "What molar heat capacity C_V does equipartition predict for a diatomic gas at high temperature, where translation, rotation and vibration are all active?",
+    "choices": [
+      {
+        "text": "(7/2)R",
+        "correct": true
+      },
+      {
+        "text": "(5/2)R",
+        "why": "That leaves out the vibration. A fully active vibration adds R, raising (5/2)R to (7/2)R."
+      },
+      {
+        "text": "3R",
+        "why": "That counts the vibration as one quadratic term. It has two, kinetic and potential, so it adds R, for (7/2)R in all."
+      },
+      {
+        "text": "(3/2)R",
+        "why": "That is translation alone. Rotation adds R and vibration adds another R, for (7/2)R."
+      }
+    ],
+    "explanation": "Translation gives (3/2)R, rotation of a linear molecule R, and the vibration R: (3/2)R + R + R = (7/2)R. The idealized curve reaches this value only at high temperature."
+  },
+  {
+    "id": "pc18-equipartition-paradox",
+    "type": "multiple-choice",
+    "prompt": "The failure of equipartition to explain measured heat capacities led to a paradox. What resolved it?",
+    "choices": [
+      {
+        "text": "Quantum mechanics, with its discrete energy levels",
+        "correct": true
+      },
+      {
+        "text": "Including the forces between gas molecules",
+        "why": "Intermolecular forces don't explain why rotation and vibration stop contributing. Discrete quantum energy levels do."
+      },
+      {
+        "text": "More accurate heat capacity measurements",
+        "why": "Better measurements only confirmed the drop in C_V at low temperature. Quantum mechanics explained it."
+      },
+      {
+        "text": "Adding the electronic energy to the classical count",
+        "why": "Extra classical terms would raise C_V, not lower it. Quantum mechanics explains why motions freeze out."
+      }
+    ],
+    "explanation": "Equipartition is classical. Quantum mechanics showed that energy levels are discrete, so a motion contributes fully only when k_B T is much larger than its level spacing."
+  },
+  {
+    "id": "pc18-equipartition-co-rotation",
+    "type": "multiple-choice",
+    "prompt": "For CO, T_rot ≈ 2.8 K. Why does equipartition correctly predict its rotational contribution to C_V at room temperature?",
+    "choices": [
+      {
+        "text": "Room temperature is far above T_rot",
+        "correct": true
+      },
+      {
+        "text": "CO's rotation is frozen out at room temperature",
+        "why": "That is true of CO's vibration, with T_vib ≈ 3103 K, not its rotation. Room temperature is far above T_rot, so rotation is fully active."
+      },
+      {
+        "text": "CO has no rotational energy levels",
+        "why": "CO has rotational levels, but at room temperature they are closely spaced compared with k_B T, so rotation behaves classically."
+      },
+      {
+        "text": "CO's rotational energy is not quantized",
+        "why": "It is quantized. The spacing is tiny compared with k_B T at room temperature, since T is far above T_rot."
+      }
+    ],
+    "explanation": "With room temperature about 100 times T_rot, k_B T is much larger than the rotational level spacing. Rotation then behaves classically and contributes its full equipartition value, R for a linear molecule."
+  },
+  {
+    "id": "pc18-equipartition-iodine",
+    "type": "multiple-choice",
+    "prompt": "Why is T_vib for I2, about 308 K, so much lower than for CO, about 3103 K?",
+    "choices": [
+      {
+        "text": "Its atoms are very large and weakly bound",
+        "correct": true
+      },
+      {
+        "text": "Its bond is much stiffer than CO's",
+        "why": "A stiffer bond would raise T_vib. I2's low T_vib comes from its large, weakly bound atoms."
+      },
+      {
+        "text": "Its atoms are small and strongly bound",
+        "why": "That describes molecules with high T_vib. I2 has very large atoms held by a weak bond."
+      },
+      {
+        "text": "It has no vibrational levels at all",
+        "why": "I2 does vibrate. Its large, weakly bound atoms make its vibrational levels closely spaced, so T_vib is low."
+      }
+    ],
+    "explanation": "For molecules with very large or weakly bound atoms, T_vib can be close to room temperature. So I2's vibration is partly active at 300 K, while CO's is frozen out."
+  },
+  {
+    "id": "pc18-equipartition-co2-no2",
+    "type": "multiple-choice",
+    "prompt": "With vibrations frozen out, equipartition predicts a larger C_V for nitrogen dioxide than for carbon dioxide. Why?",
+    "choices": [
+      {
+        "text": "Bent NO2 rotates about three axes, CO2 about two",
+        "correct": true
+      },
+      {
+        "text": "NO2 has more atoms than CO2, so more terms",
+        "why": "Both have three atoms. The difference is shape: bent NO2 rotates about three axes and linear CO2 about two."
+      },
+      {
+        "text": "NO2 is heavier, so each term holds more energy",
+        "why": "NO2 (46 g/mol) is only a little heavier, and mass doesn't change the ½k_B T per term. The extra rotational term of bent NO2 does."
+      },
+      {
+        "text": "NO2 has an unpaired electron that adds a term",
+        "why": "Electronic structure isn't counted here. Bent NO2 has three rotational degrees of freedom, linear CO2 two."
+      }
+    ],
+    "explanation": "Both have three translational terms, giving (3/2)R. Rotation adds R for linear CO2 but (3/2)R for bent NO2, so the predictions are (5/2)R and 3R."
+  },
+  {
+    "id": "pc18-equipartition-co2-bending",
+    "type": "multiple-choice",
+    "prompt": "The measured C_V of CO2 at room temperature is well above the equipartition value calculated with the vibrations left out. What does the section blame?",
+    "choices": [
+      {
+        "text": "Its low-frequency bending vibration",
+        "correct": true
+      },
+      {
+        "text": "Its rotation about the molecular axis",
+        "why": "Rotation about the axis of a linear molecule isn't counted. The extra C_V comes from the low-frequency bending vibration."
+      },
+      {
+        "text": "Translational energy above (3/2)k_B T",
+        "why": "Translation always gives (3/2)k_B T. The extra C_V comes from a vibration that isn't fully frozen out."
+      },
+      {
+        "text": "Attractions between CO2 molecules",
+        "why": "The section blames a vibration, not the forces between molecules: CO2's low-frequency bending mode is partly active."
+      }
+    ],
+    "explanation": "CO2's measured C_V is 30.1 J/(mol·K), against a prediction of (5/2)R = 20.8 J/(mol·K). Its bending vibration has a low frequency, so it is not fully frozen out at room temperature."
+  },
+  {
+    "id": "pc18-equipartition-classical",
+    "type": "multiple-choice",
+    "prompt": "The equipartition principle counts quadratic terms in which kind of expression for a molecule's energy?",
+    "choices": [
+      {
+        "text": "The classical expression",
+        "correct": true
+      },
+      {
+        "text": "The quantum energy-level formula",
+        "why": "Equipartition uses classical energies, such as ½I(ω_x^2 + ω_y^2). Quantum effects are why it fails at low temperature."
+      },
+      {
+        "text": "The electronic energy only",
+        "why": "Equipartition counts the terms of translation, rotation and vibration in the classical energy, not electronic energy."
+      },
+      {
+        "text": "The potential energy only",
+        "why": "Kinetic terms count too: an atom's (3/2)k_B T is all kinetic energy. Equipartition uses the full classical expression."
+      }
+    ],
+    "explanation": "Each quadratic term in the classical expression for the energy contributes ½k_B T. Because the result is classical, it holds only when the quantum level spacing is small compared with k_B T."
+  },
+  {
+    "id": "pc18-equipartition-omega-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the classical rotational energy of a diatomic molecule, ½I(ω_x^2 + ω_y^2), what are ω_x and ω_y?",
+    "choices": [
+      {
+        "text": "Angular velocities about the x and y axes",
+        "correct": true
+      },
+      {
+        "text": "Vibrational frequencies along x and y",
+        "why": "A diatomic molecule has one vibration, along its bond. ω_x and ω_y are angular velocities of rotation."
+      },
+      {
+        "text": "Moments of inertia about the x and y axes",
+        "why": "The moment of inertia is I. ω_x and ω_y are the angular velocities of rotation about x and y."
+      },
+      {
+        "text": "Linear velocities along x and y",
+        "why": "Linear velocities belong to translation, with mass m. Here ω_x and ω_y are angular velocities, paired with I."
+      }
+    ],
+    "explanation": "ω_x and ω_y are the angular velocities about the two axes perpendicular to the bond. Each appears squared, so each rotational term gets ½k_B T."
+  },
+  {
+    "id": "pc18-equipartition-double-t",
+    "type": "multiple-choice",
+    "prompt": "The temperature of a monatomic gas is doubled. What happens to the average kinetic energy of its atoms?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It quadruples",
+        "why": "The average kinetic energy is (3/2)k_B T, proportional to T itself, not T^2. Doubling T doubles it."
+      },
+      {
+        "text": "It rises by a factor of √2",
+        "why": "√2 would be the change in a typical speed. The energy, (3/2)k_B T, is proportional to T, so it doubles."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The average kinetic energy is (3/2)k_B T, so it rises with temperature. Doubling T doubles it."
+      }
+    ],
+    "explanation": "The average kinetic energy of an atom is (3/2)k_B T, directly proportional to the temperature. Doubling T doubles it."
+  },
+  {
+    "id": "pc18-equipartition-helium-xenon",
+    "type": "multiple-choice",
+    "prompt": "Helium and xenon are at the same temperature. How do the average kinetic energies of their atoms compare?",
+    "choices": [
+      {
+        "text": "They are the same",
+        "correct": true
+      },
+      {
+        "text": "Xenon's is larger, since its atoms are heavier",
+        "why": "Heavier atoms move more slowly, and the average kinetic energy is (3/2)k_B T for any atom. They are the same."
+      },
+      {
+        "text": "Helium's is larger, since its atoms move faster",
+        "why": "Helium atoms are faster but much lighter. Each atom's average kinetic energy is (3/2)k_B T, whatever its mass."
+      },
+      {
+        "text": "Xenon's is larger, since it has more electrons",
+        "why": "Electrons don't enter the translational energy. Every atom has (3/2)k_B T on average at a given temperature."
+      }
+    ],
+    "explanation": "Each of an atom's three momentum terms gets ½k_B T, whatever the atom's mass. So helium and xenon atoms have the same average kinetic energy, (3/2)k_B T, at the same temperature."
+  },
+  {
+    "id": "pc18-equipartition-heat-capacity-term",
+    "type": "multiple-choice",
+    "prompt": "How much does each fully active quadratic term contribute to the heat capacity, per molecule?",
+    "choices": [
+      {
+        "text": "½k_B",
+        "correct": true
+      },
+      {
+        "text": "½k_B T",
+        "why": "½k_B T is the term's average energy. The heat capacity is how fast that energy rises with T, which is ½k_B."
+      },
+      {
+        "text": "k_B",
+        "why": "k_B is what a vibrational mode contributes, from its two quadratic terms. A single term contributes ½k_B."
+      },
+      {
+        "text": "(3/2)k_B",
+        "why": "(3/2)k_B is the contribution of all three translational terms together. Each single term contributes ½k_B."
+      }
+    ],
+    "explanation": "Each quadratic term adds ½k_B T to the average energy, so it adds ½k_B to the heat capacity. Per mole, that is ½R."
+  },
+  {
+    "id": "pc18-equipartition-half-kt",
+    "type": "numeric",
+    "prompt": "Each quadratic term contributes ½k_B T to the average energy. Using k_B = 1.381 × 10^−23 J/K, what is ½k_B T at 300 K, in J? (Type it in scientific notation, like 2.5e-21.)",
+    "answer": 2.07e-21,
+    "explanation": "½k_B T = 0.5 × 1.381 × 10^−23 J/K × 300 K = 2.07 × 10^−21 J. A molecule gets this much on average for every active quadratic term in its energy."
+  },
+  {
+    "id": "pc18-equipartition-co2-terms",
+    "type": "numeric",
+    "prompt": "CO2 is linear and has 4 vibrational modes. If its translation, rotation and all 4 vibrational modes were fully active, how many quadratic terms would its classical energy contain?",
+    "answer": 13,
+    "tolerance": 0,
+    "explanation": "Translation gives 3 terms, rotation of a linear molecule 2, and each vibrational mode 2 (kinetic and potential): 3 + 2 + 4 × 2 = 13. The average energy would then be 13 × ½k_B T."
+  },
+  {
+    "id": "pc18-equipartition-iodine-fraction",
+    "type": "numeric",
+    "prompt": "The average vibrational energy relative to the equipartition value is ⟨E_vib⟩/(k_B T) = x/(exp(x) − 1), where x = T_vib/T. For I2, T_vib ≈ 308 K. What is ⟨E_vib⟩/(k_B T) at 308 K? (Give it as a decimal.)",
+    "answer": 0.582,
+    "explanation": "x = 308/308 = 1, so ⟨E_vib⟩/(k_B T) = 1/(e − 1) = 1/1.718 = 0.582. Near room temperature I2's vibration has only about 58% of its equipartition energy: it is partly active."
+  },
+  {
+    "id": "pc18-equipartition-n2-cv",
+    "type": "numeric",
+    "prompt": "With vibrations frozen out, equipartition gives C_V = (5/2)R for a linear molecule such as N2 at room temperature. Using R = 8.314 J/(mol·K), what is this C_V, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 20.8,
+    "explanation": "C_V = (5/2) × 8.314 = 20.8 J/(mol·K). The (5/2)R is (3/2)R from translation plus R from the two rotational terms."
+  },
+  {
+    "id": "pc18-equipartition-nh3-energy",
+    "type": "numeric",
+    "prompt": "With vibrations frozen out, a nonlinear molecule such as NH3 has three translational and three rotational quadratic terms. What is its average energy, in units of k_B T?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "Six quadratic terms × ½k_B T = 3k_B T. A nonlinear molecule rotates about three axes, so it gets (3/2)k_B T from rotation as well as (3/2)k_B T from translation."
+  },
+  {
+    "id": "pc18-equipartition-co-tvib-ratio",
+    "type": "numeric",
+    "prompt": "For CO, T_vib ≈ 3103 K. How many times larger is this than room temperature, taken as 300 K? (Give it as a decimal.)",
+    "answer": 10.3,
+    "explanation": "3103 K/300 K = 10.3. With T_vib ten times room temperature, k_B T is far smaller than the vibrational spacing, so CO's vibration is frozen out."
+  }
+]

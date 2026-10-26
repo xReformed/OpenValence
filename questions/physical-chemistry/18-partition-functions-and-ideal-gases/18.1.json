@@ -1,0 +1,416 @@
+[
+  {
+    "id": "pc18-translational-box-model",
+    "type": "multiple-choice",
+    "prompt": "To find the translational partition function of a monatomic gas, what quantum model does the section use for each gas particle?",
+    "choices": [
+      {
+        "text": "A particle confined to a cubic box",
+        "correct": true
+      },
+      {
+        "text": "A rigid rotor turning in three dimensions",
+        "why": "A rigid rotor describes rotation, which a single atom doesn't have. Translation is modeled as a particle in a cubic box of length L."
+      },
+      {
+        "text": "A harmonic oscillator on a spring",
+        "why": "The harmonic oscillator models vibration. The free motion of a gas atom is treated as a particle in a box, with levels set by n_x, n_y and n_z."
+      },
+      {
+        "text": "An electron bound to a hydrogen-like nucleus",
+        "why": "That model gives electronic levels. Translational levels come from a particle confined to a cubic box of length L."
+      }
+    ],
+    "explanation": "The particle is confined to a cubic box of length L, with energy levels E_trans = (h^2(n_x^2 + n_y^2 + n_z^2))/(8mL^2). The quantum numbers n_x, n_y and n_z describe its motion in the three directions."
+  },
+  {
+    "id": "pc18-translational-boltzmann-terms",
+    "type": "multiple-choice",
+    "prompt": "The translational partition function is q_trans = Σ_i exp(−ε_i/(kT)). What does each term of the sum stand for?",
+    "choices": [
+      {
+        "text": "The Boltzmann factor of one state",
+        "correct": true
+      },
+      {
+        "text": "The energy of one translational state",
+        "why": "ε_i is the energy. Each term is exp(−ε_i/(kT)), the Boltzmann factor, which measures how likely that state is to be occupied."
+      },
+      {
+        "text": "The number of molecules in one state",
+        "why": "The terms don't count molecules. Each one is the Boltzmann factor exp(−ε_i/(kT)) of state i, and adding them up gives q_trans."
+      },
+      {
+        "text": "The degeneracy of one energy level",
+        "why": "The sum runs over individual states, so no degeneracy factor appears. Each term is just the Boltzmann factor exp(−ε_i/(kT)) of one state."
+      }
+    ],
+    "explanation": "Each term is the Boltzmann factor exp(−ε_i/(kT)) of state i, a number between 0 and 1. States with energies well below kT contribute nearly 1 each, so q_trans roughly counts the thermally accessible states."
+  },
+  {
+    "id": "pc18-translational-product-xyz",
+    "type": "multiple-choice",
+    "prompt": "Why can the translational partition function be written as a product, q_trans = q_x q_y q_z?",
+    "choices": [
+      {
+        "text": "The energy is a sum of separate x, y and z terms",
+        "correct": true
+      },
+      {
+        "text": "The box has the same length along x, y and z",
+        "why": "Equal lengths only make the three factors equal. The product form comes from the energy being a sum, ε_x + ε_y + ε_z, so each Boltzmann factor splits into three."
+      },
+      {
+        "text": "The particle moves in only one direction at a time",
+        "why": "The particle moves in all three directions at once. The product form comes from its energy being a sum, ε_x + ε_y + ε_z."
+      },
+      {
+        "text": "The three quantum numbers must all be equal",
+        "why": "n_x, n_y and n_z vary independently, which is why each has its own sum. The product form comes from the energy being a sum of x, y and z terms."
+      }
+    ],
+    "explanation": "The energy is ε_x + ε_y + ε_z, so each Boltzmann factor splits into exp(−ε_x/(kT)) × exp(−ε_y/(kT)) × exp(−ε_z/(kT)). Since n_x, n_y and n_z run independently, the triple sum becomes a product of three separate sums."
+  },
+  {
+    "id": "pc18-translational-sum-to-integral",
+    "type": "multiple-choice",
+    "prompt": "Why does the section replace each sum in q_trans with an integral?",
+    "choices": [
+      {
+        "text": "The levels are very closely spaced, almost continuous",
+        "correct": true
+      },
+      {
+        "text": "Only the lowest translational level is ever occupied",
+        "why": "If only one level were occupied, q would be about 1 and no integral would be needed. Instead, a huge number of very closely spaced levels contribute."
+      },
+      {
+        "text": "The levels are widely spaced compared with kT",
+        "why": "Widely spaced levels would make the sum short and easy to add up. The levels are so close together that they behave like a continuum, which is why an integral works."
+      },
+      {
+        "text": "Translational energy is not quantized at all",
+        "why": "The levels are quantized, with quantum numbers n_x, n_y and n_z. They are just so close together that the sum can be treated as continuous."
+      }
+    ],
+    "explanation": "For a gas in a box of everyday size the levels are very closely spaced, so n_x behaves like a continuous variable. Replacing the sum with an integral, and using a standard Gaussian integral, gives q_x = L/Λ."
+  },
+  {
+    "id": "pc18-translational-bigger-box",
+    "type": "multiple-choice",
+    "prompt": "A particle in a cubic box has levels ε_x = (h^2 n_x^2)/(8mL^2) along x. If the box is made larger, what happens to the spacing between these levels?",
+    "choices": [
+      {
+        "text": "The levels move closer together",
+        "correct": true
+      },
+      {
+        "text": "The levels move farther apart",
+        "why": "L is in the denominator, so a larger L makes every ε_x smaller and the gaps between levels shrink."
+      },
+      {
+        "text": "The spacing stays the same",
+        "why": "The spacing depends on L through the factor 1/L^2. A bigger box gives smaller, more closely spaced levels."
+      },
+      {
+        "text": "All levels except the lowest one disappear",
+        "why": "Making the box larger doesn't remove levels. It crowds them closer together, since ε_x is proportional to 1/L^2."
+      }
+    ],
+    "explanation": "Because ε_x is proportional to 1/L^2, a larger box gives more closely spaced levels. In a container of everyday size they are so close together that the section treats them as continuous."
+  },
+  {
+    "id": "pc18-translational-lambda-name",
+    "type": "multiple-choice",
+    "prompt": "In q_x = L/Λ, what is Λ?",
+    "choices": [
+      {
+        "text": "A de Broglie wavelength",
+        "correct": true
+      },
+      {
+        "text": "The length of the box",
+        "why": "L is the box length. Λ = h/√(2πmkT) is a de Broglie wavelength, set by the particle's mass and the temperature."
+      },
+      {
+        "text": "The wavelength of light the gas absorbs",
+        "why": "Λ has nothing to do with absorbed light. It is a de Broglie wavelength, Λ = h/√(2πmkT), set by the particle's mass and the temperature."
+      },
+      {
+        "text": "The spacing between translational levels",
+        "why": "The level spacing is an energy, while Λ is a length: the de Broglie wavelength h/√(2πmkT)."
+      }
+    ],
+    "explanation": "Λ = h/√(2πmkT) is the de Broglie wavelength of the particle, which depends on its mass and on the temperature. It appears in both q_x = L/Λ and q_trans = V/Λ^3."
+  },
+  {
+    "id": "pc18-translational-qx-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section finds q_x = L/Λ for motion along one edge of the box. What does this ratio measure?",
+    "choices": [
+      {
+        "text": "The length of the box measured in units of Λ",
+        "correct": true
+      },
+      {
+        "text": "The number of molecules lined up along the box",
+        "why": "Λ is a de Broglie wavelength, not a molecular diameter. q_x = L/Λ is the box length measured in units of Λ."
+      },
+      {
+        "text": "The energy of the lowest level along x",
+        "why": "q_x is a pure number, a ratio of two lengths, not an energy. It says how many lengths Λ fit into the length L."
+      },
+      {
+        "text": "The chance that the particle moves along x",
+        "why": "q_x can be enormous, so it isn't a probability. It is the length L divided by the de Broglie wavelength Λ."
+      }
+    ],
+    "explanation": "q_x = L/Λ is the length of the box in units of the de Broglie wavelength Λ. Because L is macroscopic and Λ is tiny, q_x is a huge number, roughly the number of thermally accessible levels along x."
+  },
+  {
+    "id": "pc18-translational-lambda-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the de Broglie wavelength Λ that appears in q_trans?",
+    "choices": [
+      {
+        "text": "Λ = h/√(2πmkT)",
+        "correct": true
+      },
+      {
+        "text": "Λ = √(2πmkT)/h",
+        "why": "This is upside down: it would grow with mass and temperature. Λ = h/√(2πmkT) shrinks as m and T increase."
+      },
+      {
+        "text": "Λ = h/(2πmkT)",
+        "why": "The square root is missing, and without it Λ would not be a length. The correct form is Λ = h/√(2πmkT)."
+      },
+      {
+        "text": "Λ = (2πmkT)/h^2",
+        "why": "This is the quantity raised to the power 3/2 in q_trans, and it has units of 1/m^2. Λ itself is h/√(2πmkT)."
+      }
+    ],
+    "explanation": "Λ = h/√(2πmkT), so q_x = L/Λ and q_trans = V/Λ^3 = ((2πmkT)/h^2)^(3/2)V. Both a heavier particle and a higher temperature give a shorter Λ."
+  },
+  {
+    "id": "pc18-translational-lambda-temperature",
+    "type": "multiple-choice",
+    "prompt": "The de Broglie wavelength in q_trans is Λ = h/√(2πmkT). As the temperature of the gas rises, what happens to Λ?",
+    "choices": [
+      {
+        "text": "It gets shorter",
+        "correct": true
+      },
+      {
+        "text": "It gets longer",
+        "why": "T sits under the square root in the denominator, so raising T makes Λ smaller, not larger."
+      },
+      {
+        "text": "It stays the same",
+        "why": "Λ depends on T: it goes as 1/√T, so it shrinks as the gas is heated."
+      },
+      {
+        "text": "It first grows and then shrinks",
+        "why": "Λ = h/√(2πmkT) changes steadily with T. It only ever shrinks as T rises."
+      }
+    ],
+    "explanation": "Λ is proportional to 1/√T, so heating the gas shortens it. A shorter Λ makes q_trans = V/Λ^3 larger: more translational states become accessible at higher temperature."
+  },
+  {
+    "id": "pc18-translational-qtrans-formula",
+    "type": "multiple-choice",
+    "prompt": "For a gas in a cubic box of volume V = L^3, which expression gives q_trans?",
+    "choices": [
+      {
+        "text": "V/Λ^3",
+        "correct": true
+      },
+      {
+        "text": "L/Λ",
+        "why": "L/Λ is q_x, the partition function for one direction only. Multiplying q_x, q_y and q_z gives (L/Λ)^3 = V/Λ^3."
+      },
+      {
+        "text": "V/Λ",
+        "why": "Each of the three directions contributes a factor L/Λ, so Λ appears cubed: q_trans = V/Λ^3."
+      },
+      {
+        "text": "Λ^3/V",
+        "why": "This is upside down and would shrink as the box gets bigger. A larger box has more accessible states, and q_trans = V/Λ^3."
+      }
+    ],
+    "explanation": "q_trans = q_x q_y q_z = (L/Λ)^3 = V/Λ^3. Written out in full, q_trans = ((2πmkT)/h^2)^(3/2)V."
+  },
+  {
+    "id": "pc18-translational-dimensionless",
+    "type": "multiple-choice",
+    "prompt": "Since q_trans = V/Λ^3, what units does the translational partition function have?",
+    "choices": [
+      {
+        "text": "None; it is a pure number",
+        "correct": true
+      },
+      {
+        "text": "m^3, the units of volume",
+        "why": "V has units of m^3, but so does Λ^3, so the units cancel. q_trans is dimensionless."
+      },
+      {
+        "text": "m^−3, the units of a number density",
+        "why": "That would be 1/Λ^3 alone. Multiplying by V cancels the units, so q_trans is a pure number."
+      },
+      {
+        "text": "J, the units of energy",
+        "why": "q_trans is a sum of Boltzmann factors, each a pure number. V/Λ^3 is a ratio of two volumes, so it has no units."
+      }
+    ],
+    "explanation": "V and Λ^3 are both volumes, so their ratio has no units. Like every partition function, q_trans is a sum of Boltzmann factors and is dimensionless."
+  },
+  {
+    "id": "pc18-translational-heavier-molecule",
+    "type": "multiple-choice",
+    "prompt": "At the same temperature and in the same volume, which has the larger translational partition function: an I2 molecule or a He atom?",
+    "choices": [
+      {
+        "text": "The I2 molecule, because it is heavier",
+        "correct": true
+      },
+      {
+        "text": "The He atom, because it is lighter",
+        "why": "A lighter particle has a longer Λ = h/√(2πmkT), so q_trans = V/Λ^3 is smaller. The heavier I2 has more accessible translational states."
+      },
+      {
+        "text": "Both are equal, since V and T are equal",
+        "why": "q_trans = ((2πmkT)/h^2)^(3/2)V also depends on the mass m. The heavier I2 gives the larger value."
+      },
+      {
+        "text": "The He atom, because atoms have no rotations",
+        "why": "Rotation doesn't enter q_trans. Translation depends on mass through Λ = h/√(2πmkT), and the heavier I2 has the shorter Λ and the larger q_trans."
+      }
+    ],
+    "explanation": "q_trans grows as m^(3/2): a heavier particle has a shorter de Broglie wavelength, so more of its translational states are accessible. I2 (254 u) is far heavier than He (4 u)."
+  },
+  {
+    "id": "pc18-translational-typical-size",
+    "type": "multiple-choice",
+    "prompt": "For a gas of small molecules in 1 cm^3 near room temperature, roughly how large is q_trans?",
+    "choices": [
+      {
+        "text": "About 10^24 to 10^26",
+        "correct": true
+      },
+      {
+        "text": "About 1",
+        "why": "q_trans ≈ 1 would mean only the lowest translational state is accessible. In fact the levels are so close together that about 10^24 to 10^26 states are accessible."
+      },
+      {
+        "text": "About 10 to 100",
+        "why": "That is far too small. With V = 10^−6 m^3 and Λ only about 10^−10 to 10^−11 m, V/Λ^3 comes to about 10^24 to 10^26."
+      },
+      {
+        "text": "About 10^6 to 10^8",
+        "why": "That is still far too small. With V = 10^−6 m^3 and Λ only about 10^−10 to 10^−11 m, V/Λ^3 comes to about 10^24 to 10^26."
+      }
+    ],
+    "explanation": "q_trans = V/Λ^3 is usually a very large number, about 10^24 to 10^26 for 1 cm^3 of a gas of small molecules. Such a huge number of translational states is accessible and available for the molecules to occupy."
+  },
+  {
+    "id": "pc18-translational-iodine-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the section's example, q_trans for I2 in 1 L at 300 K comes out as 3.95 × 10^30. What does this number tell you?",
+    "choices": [
+      {
+        "text": "About 4 × 10^30 states are thermally accessible",
+        "correct": true
+      },
+      {
+        "text": "About 4 × 10^30 I2 molecules are in the box",
+        "why": "The partition function doesn't count molecules. It counts the translational quantum states that are thermally accessible to one molecule."
+      },
+      {
+        "text": "The translational energy of one molecule, in joules",
+        "why": "q_trans is a dimensionless sum of Boltzmann factors, not an energy. It counts the thermally accessible translational states."
+      },
+      {
+        "text": "The fraction of molecules in the ground state",
+        "why": "A fraction can't exceed 1. The large value means that about 3.95 × 10^30 translational states are thermally accessible."
+      }
+    ],
+    "explanation": "The section reads q_trans = 3.95 × 10^30 as the number of quantum states thermally accessible to the I2 molecule. A partition function roughly counts the states whose energies are no more than about kT."
+  },
+  {
+    "id": "pc18-translational-classical",
+    "type": "multiple-choice",
+    "prompt": "The section compares its result for q_trans with a result of classical kinetic gas theory. Which result?",
+    "choices": [
+      {
+        "text": "U = (3/2)nRT for an ideal gas",
+        "correct": true
+      },
+      {
+        "text": "PV = nRT for an ideal gas",
+        "why": "The comparison is with the energy, not the equation of state. Kinetic theory gives the energy of an ideal gas as U = (3/2)nRT."
+      },
+      {
+        "text": "U = 3nRT for an ideal gas",
+        "why": "That is twice too large. Kinetic theory gives U = (3/2)nRT for an ideal gas."
+      },
+      {
+        "text": "U = (1/2)nRT for an ideal gas",
+        "why": "That would be the energy of motion along only one direction. With three directions, kinetic theory gives U = (3/2)nRT."
+      }
+    ],
+    "explanation": "Classical kinetic gas theory says the energy of an ideal gas is U = (3/2)nRT. The section postulates that the energy found statistically from the partition function should match this observed energy."
+  },
+  {
+    "id": "pc18-translational-postulate",
+    "type": "multiple-choice",
+    "prompt": "What does the section postulate about the observed energy of a macroscopic system?",
+    "choices": [
+      {
+        "text": "It equals the statistical average over the states",
+        "correct": true
+      },
+      {
+        "text": "It equals the energy of the lowest quantum state",
+        "why": "Only at absolute zero would all the molecules sit in the lowest state. The observed energy is the statistical average over all the accessible states."
+      },
+      {
+        "text": "It equals the energy of the most energetic molecule",
+        "why": "One molecule doesn't set the energy of the whole system. The observed energy is the statistical average, found from the partition function."
+      },
+      {
+        "text": "It cannot be predicted from the molecular energy levels",
+        "why": "The postulate says the opposite: if you know the particles and their energy states, statistics lets you calculate what you should observe."
+      }
+    ],
+    "explanation": "The observed energy of a macroscopic system should equal the statistical average over the partition function. So if you know the particles and their energy states, you can calculate what you will observe for the whole ensemble."
+  },
+  {
+    "id": "pc18-translational-qx-iodine",
+    "type": "numeric",
+    "prompt": "In the section's example, I2 at 300 K has Λ = 6.326 × 10^−12 m. Its 1 L box is a cube with edge L = 0.100 m. Using q_x = L/Λ, what is q_x? (Type it in scientific notation, like 2.5e10.)",
+    "answer": 15800000000.0,
+    "explanation": "q_x = L/Λ = (0.100 m)/(6.326 × 10^−12 m) = 1.58 × 10^10. Cubing it gives q_trans = (1.58 × 10^10)^3 = 3.95 × 10^30, the value found in the example."
+  },
+  {
+    "id": "pc18-translational-qtrans-cm3",
+    "type": "numeric",
+    "prompt": "A gas at 300 K has Λ = 2.00 × 10^−11 m. Using q_trans = V/Λ^3, what is q_trans in a volume of 1 cm^3 (V = 1.00 × 10^−6 m^3)? (Type it in scientific notation, like 2.5e26.)",
+    "answer": 1.25e+26,
+    "explanation": "Λ^3 = (2.00 × 10^−11 m)^3 = 8.00 × 10^−33 m^3, so q_trans = (1.00 × 10^−6 m^3)/(8.00 × 10^−33 m^3) = 1.25 × 10^26. This is in the 10^24 to 10^26 range typical of 1 cm^3 of a gas of small molecules."
+  },
+  {
+    "id": "pc18-translational-temperature-factor",
+    "type": "numeric",
+    "prompt": "Since q_trans = ((2πmkT)/h^2)^(3/2)V, q_trans is proportional to T^(3/2) at fixed V. If a gas is heated from 200 K to 800 K in a closed container, by what factor does q_trans increase?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "The temperature rises by a factor of 800/200 = 4, so q_trans rises by 4^(3/2) = (√4)^3 = 2^3 = 8. A higher temperature shortens Λ and makes more translational states accessible."
+  },
+  {
+    "id": "pc18-translational-edge-tripled",
+    "type": "numeric",
+    "prompt": "For a gas in a cubic box of edge L, q_trans = V/Λ^3 with V = L^3. If the edge L is tripled at constant temperature, by what factor does q_trans increase?",
+    "answer": 27,
+    "tolerance": 0,
+    "explanation": "Tripling L multiplies V = L^3 by 3^3 = 27, while Λ depends only on m and T and stays the same. So q_trans = V/Λ^3 grows by a factor of 27."
+  }
+]

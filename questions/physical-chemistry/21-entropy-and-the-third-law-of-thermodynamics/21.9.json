@@ -1,0 +1,215 @@
+[
+  {
+    "id": "pc21-reaction-entropy-state-function",
+    "type": "multiple-choice",
+    "prompt": "Why can the entropy change of a chemical reaction be calculated from tabulated standard entropies of the reactants and products, whatever path the reaction actually takes?",
+    "choices": [
+      {
+        "text": "Entropy is a state function",
+        "correct": true
+      },
+      {
+        "text": "Entropy is conserved in every reaction",
+        "why": "Entropy is not conserved; Δ_rxn S° is usually nonzero. The method works because S depends only on the state, not on the path."
+      },
+      {
+        "text": "Every chemical reaction is reversible",
+        "why": "Most real reactions are irreversible. The calculation still works because S is a state function, so any path between the same states gives the same ΔS."
+      },
+      {
+        "text": "The reaction is assumed to take place at 0 K",
+        "why": "Standard entropies are tabulated at a fixed temperature such as 298 K, not 0 K. The method works because S is a state function."
+      }
+    ],
+    "explanation": "Because S is a state function, ΔS depends only on the initial and final states. So the difference between the products' and reactants' standard entropies gives Δ_rxn S°, however the reaction is actually carried out."
+  },
+  {
+    "id": "pc21-reaction-entropy-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression gives the standard entropy change of a reaction, Δ_rxn S°, from standard molar entropies S° and stoichiometric coefficients ν?",
+    "choices": [
+      {
+        "text": "Σν S°(products) − Σν S°(reactants)",
+        "correct": true
+      },
+      {
+        "text": "Σν S°(reactants) − Σν S°(products)",
+        "why": "That is the reverse, which gives the entropy change for the reaction run backwards. The section takes products minus reactants."
+      },
+      {
+        "text": "Σ S°(products) − Σ S°(reactants), ignoring the ν",
+        "why": "Each S° is per mole, so it must be multiplied by the number of moles in the balanced equation. Leaving out ν gives the wrong answer whenever a coefficient isn't 1."
+      },
+      {
+        "text": "Σν S°(products) + Σν S°(reactants)",
+        "why": "A change is a difference, final minus initial, not a sum. Subtract the reactants' sum from the products' sum."
+      }
+    ],
+    "explanation": "Δ_rxn S° = Σν S°(products) − Σν S°(reactants), where each ν is the species' coefficient in the balanced equation. It is the entropy of the final state minus that of the initial state."
+  },
+  {
+    "id": "pc21-reaction-entropy-element-o2",
+    "type": "multiple-choice",
+    "prompt": "In the methane combustion, O2 is an element in its standard state, yet its S° of 205.15 J/(mol·K) still counts twice in the reactants' sum. Why isn't it taken as zero?",
+    "choices": [
+      {
+        "text": "S° is an absolute entropy, and O2's is above zero",
+        "correct": true
+      },
+      {
+        "text": "Its standard enthalpy of formation is also nonzero",
+        "why": "ΔH°_f of O2 is zero by convention, yet its S° is not. Entropies sit on an absolute scale set by the third law, so elements have positive S°."
+      },
+      {
+        "text": "Gases are never set to zero, only solid elements",
+        "why": "Solid elements have positive S° at 298 K too. S° values are absolute entropies, zero only for a perfect crystal at 0 K."
+      },
+      {
+        "text": "Its entry corrects for the heat the reaction releases",
+        "why": "S° values are entropies, not heats, and the heat of reaction does not enter Δ_rxn S°. O2 counts because its absolute entropy at 298 K is above zero."
+      }
+    ],
+    "explanation": "Unlike enthalpies, entropies have a natural zero: a perfect crystal at 0 K. Every substance at 298 K, element or compound, has a positive S°, so O2 contributes 2 × 205.15 = 410.30 J/(mol·K) to the reactants' sum."
+  },
+  {
+    "id": "pc21-reaction-entropy-methane",
+    "type": "numeric",
+    "prompt": "For CH4(g) + 2O2(g) → 2H2O(g) + CO2(g), the standard entropies are 186.25 J/(mol·K) for CH4, 205.15 J/(mol·K) for O2, 188.84 J/(mol·K) for H2O(g) and 213.79 J/(mol·K) for CO2. What is Δ_rxn S°, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": -5.08,
+    "explanation": "Products: 2(188.84) + 213.79 = 591.47. Reactants: 186.25 + 2(205.15) = 596.55. Δ_rxn S° = 591.47 − 596.55 = −5.08 J/(mol·K)."
+  },
+  {
+    "id": "pc21-reaction-entropy-negative-meaning",
+    "type": "multiple-choice",
+    "prompt": "A reaction has a negative Δ_rxn S°. What does the sign tell you?",
+    "choices": [
+      {
+        "text": "Products hold less entropy than reactants",
+        "correct": true
+      },
+      {
+        "text": "The reaction cannot happen on its own",
+        "why": "The sign of the system's ΔS alone does not decide spontaneity; heat given to the surroundings also raises their entropy. The minus sign only says the products' entropy is lower."
+      },
+      {
+        "text": "The reaction must absorb heat",
+        "why": "Δ_rxn S° says nothing directly about heat flow; many reactions with negative Δ_rxn S° release heat. The minus sign means the products have less entropy."
+      },
+      {
+        "text": "Entropy is destroyed, which breaks the second law",
+        "why": "The second law limits the entropy of an isolated system, not of the reacting system alone. The surroundings can gain more entropy than the system loses."
+      }
+    ],
+    "explanation": "Δ_rxn S° = Σν S°(products) − Σν S°(reactants), so a negative value means the products, in their standard states, have less entropy than the reactants. Whether the reaction runs on its own also depends on the surroundings."
+  },
+  {
+    "id": "pc21-reaction-entropy-near-zero",
+    "type": "multiple-choice",
+    "prompt": "In methane combustion, 3 mol of gas, 1 mol of CH4 and 2 mol of O2, turns into 3 mol of gas, 2 mol of H2O and 1 mol of CO2. All four standard entropies lie between about 186 and 214 J/(mol·K). What does this suggest about Δ_rxn S°?",
+    "choices": [
+      {
+        "text": "It is small, since the two sums nearly cancel",
+        "correct": true
+      },
+      {
+        "text": "It is large and positive, since a flame is disordered",
+        "why": "Δ_rxn S° compares the standard entropies of products and reactants, not the look of a flame. The two sums are both near 590 J/(mol·K), so they nearly cancel."
+      },
+      {
+        "text": "It is exactly zero, since the moles of gas match",
+        "why": "Equal moles of gas make Δ_rxn S° small, not exactly zero, because the S° values still differ a little. The two sums nearly cancel."
+      },
+      {
+        "text": "It is large and negative, since O2 is used up",
+        "why": "Using up O2 lowers the entropy only as far as the products fail to replace it. The two sums are nearly equal, so Δ_rxn S° is small."
+      }
+    ],
+    "explanation": "Three moles of gas with S° near 200 J/(mol·K) on each side give two sums of almost the same size, both close to 590 J/(mol·K). Their difference, Δ_rxn S°, is therefore only a few J/(mol·K)."
+  },
+  {
+    "id": "pc21-reaction-entropy-water-twice",
+    "type": "multiple-choice",
+    "prompt": "In the methane combustion, CH4(g) + 2O2(g) → 2H2O(g) + CO2(g), why is the standard entropy of H2O(g) counted twice in the products' sum?",
+    "choices": [
+      {
+        "text": "The balanced equation forms 2 mol of H2O",
+        "correct": true
+      },
+      {
+        "text": "Water has two hydrogen atoms",
+        "why": "The coefficient comes from the balanced equation, not from the formula. CH4 has four H atoms but is counted once, because 1 mol of it reacts."
+      },
+      {
+        "text": "Water counts once as gas and once as liquid",
+        "why": "The section uses only H2O(g), with S° = 188.84 J/(mol·K). It is doubled because the balanced equation forms 2 mol of water."
+      },
+      {
+        "text": "Every product is counted twice",
+        "why": "CO2 is a product too, but it is counted once. Each S° is multiplied by its own coefficient ν in the balanced equation."
+      }
+    ],
+    "explanation": "Each S° is a molar entropy, so it is multiplied by the number of moles in the balanced equation, its coefficient ν. The combustion forms 2 mol of H2O and 1 mol of CO2."
+  },
+  {
+    "id": "pc21-reaction-entropy-water-phase",
+    "type": "multiple-choice",
+    "prompt": "The section's methane combustion makes water vapour, H2O(g), with S° = 188.84 J/(mol·K). Liquid water, H2O(ℓ), has S° = 69.95 J/(mol·K). If the products were CO2(g) and liquid water instead, how would Δ_rxn S° change?",
+    "choices": [
+      {
+        "text": "It would become much more negative",
+        "correct": true
+      },
+      {
+        "text": "It would not change, since water is water",
+        "why": "The phase matters: liquid water has far less entropy than water vapour. With two moles of it among the products, Δ_rxn S° falls a lot."
+      },
+      {
+        "text": "It would become positive",
+        "why": "Swapping in the lower S° of liquid water shrinks the products' sum, pushing Δ_rxn S° further below zero, not above it."
+      },
+      {
+        "text": "It would become slightly less negative",
+        "why": "Liquid water has less entropy than vapour, so the products' sum drops. Δ_rxn S° becomes much more negative, not less."
+      }
+    ],
+    "explanation": "Each mole of water as liquid has 188.84 − 69.95 = 118.89 J/(mol·K) less entropy than as vapour. With 2 mol of water, the products' sum falls by about 238 J/(mol·K), so Δ_rxn S° becomes strongly negative."
+  },
+  {
+    "id": "pc21-reaction-entropy-reverse",
+    "type": "multiple-choice",
+    "prompt": "For 2NO2(g) → N2O4(g), Δ_rxn S° = −175.8 J/(mol·K). What is Δ_rxn S° for the reverse reaction, N2O4(g) → 2NO2(g)?",
+    "choices": [
+      {
+        "text": "+175.8 J/(mol·K)",
+        "correct": true
+      },
+      {
+        "text": "−175.8 J/(mol·K)",
+        "why": "Reversing a reaction swaps products and reactants, so the sign of Δ_rxn S° flips. The reverse reaction has +175.8 J/(mol·K)."
+      },
+      {
+        "text": "Zero, since S is a state function",
+        "why": "Because S is a state function, the forward and reverse changes cancel only over the round trip, so each is the negative of the other. The reverse is +175.8 J/(mol·K)."
+      },
+      {
+        "text": "+351.6 J/(mol·K)",
+        "why": "Reversing a reaction does not double its entropy change; only the sign changes. The reverse reaction has +175.8 J/(mol·K)."
+      }
+    ],
+    "explanation": "Reversing the reaction swaps the products' and reactants' sums in Δ_rxn S°, so only the sign changes: +175.8 J/(mol·K). Splitting each N2O4 molecule into two NO2 molecules raises the entropy."
+  },
+  {
+    "id": "pc21-reaction-entropy-ammonia",
+    "type": "numeric",
+    "prompt": "For N2(g) + 3H2(g) → 2NH3(g), the standard entropies are 191.61 J/(mol·K) for N2, 130.68 J/(mol·K) for H2 and 192.77 J/(mol·K) for NH3. What is Δ_rxn S°, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": -198.11,
+    "explanation": "Products: 2(192.77) = 385.54. Reactants: 191.61 + 3(130.68) = 583.65. Δ_rxn S° = 385.54 − 583.65 = −198.11 J/(mol·K); 4 mol of gas become 2 mol, so the entropy falls."
+  },
+  {
+    "id": "pc21-reaction-entropy-limestone",
+    "type": "numeric",
+    "prompt": "For CaCO3(s) → CaO(s) + CO2(g), the standard entropies are 91.7 J/(mol·K) for CaCO3(s), 38.1 J/(mol·K) for CaO(s) and 213.8 J/(mol·K) for CO2(g). What is Δ_rxn S°, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 160.2,
+    "explanation": "Δ_rxn S° = (38.1 + 213.8) − 91.7 = 251.9 − 91.7 = 160.2 J/(mol·K). It is large and positive because the reaction releases a gas, CO2, whose S° is far above that of either solid."
+  }
+]

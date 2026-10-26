@@ -1,0 +1,112 @@
+[
+  {
+    "id": "pc21-partition-entropy-combined-form",
+    "type": "multiple-choice",
+    "prompt": "Substituting U = k_B T^2((∂ln Q)/(∂T)) into S = U/T + k_B ln Q gives the entropy in terms of the partition function Q alone. Which expression results?",
+    "choices": [
+      {
+        "text": "S = k_B ln Q + k_B T((∂ln Q)/(∂T))",
+        "correct": true
+      },
+      {
+        "text": "S = k_B ln Q + k_B T^2((∂ln Q)/(∂T))",
+        "why": "This keeps the T^2 of U, but U is divided by T in U/T. One power of T cancels, leaving k_B T((∂ln Q)/(∂T))."
+      },
+      {
+        "text": "S = k_B ln Q − k_B T((∂ln Q)/(∂T))",
+        "why": "U/T is added to k_B ln Q, not subtracted. The derivative term enters with a plus sign."
+      },
+      {
+        "text": "S = k_B T ln Q + k_B((∂ln Q)/(∂T))",
+        "why": "The T belongs with the derivative, not with ln Q. Dividing U by T turns k_B T^2((∂ln Q)/(∂T)) into k_B T((∂ln Q)/(∂T)), and k_B ln Q is unchanged."
+      }
+    ],
+    "explanation": "Dividing U = k_B T^2((∂ln Q)/(∂T)) by T leaves k_B T((∂ln Q)/(∂T)). Adding k_B ln Q gives S = k_B ln Q + k_B T((∂ln Q)/(∂T)), so the entropy follows from Q and from how Q changes with temperature."
+  },
+  {
+    "id": "pc21-partition-entropy-what-q-needs",
+    "type": "multiple-choice",
+    "prompt": "According to the section, S can be calculated once the partition function Q = Σ_j exp(−E_j/(k_B T)) is known. What information does Q need?",
+    "choices": [
+      {
+        "text": "Only the energy levels E_j and the temperature",
+        "correct": true
+      },
+      {
+        "text": "Heat capacities measured from 0 K up to T",
+        "why": "That is the calorimetric route to entropy. Q is built from the energy levels E_j alone, at the temperature T, so no heat measurements are needed."
+      },
+      {
+        "text": "The gas's enthalpy of formation at 298 K",
+        "why": "Enthalpies of formation do not appear in Q. Q sums the Boltzmann factors exp(−E_j/(k_B T)), so it needs only the energy levels and T."
+      },
+      {
+        "text": "The entropy of the gas itself at 298 K",
+        "why": "That would be circular, since S is what Q is used to find. Q needs only the energy levels E_j and the temperature."
+      }
+    ],
+    "explanation": "Q = Σ_j exp(−E_j/(k_B T)) depends only on the allowed energies E_j and on T. Once the energy levels are known, for example from spectroscopy, S follows from S = k_B ln Q + k_B T((∂ln Q)/(∂T)) without any calorimetry."
+  },
+  {
+    "id": "pc21-partition-entropy-slope-vanishes",
+    "type": "multiple-choice",
+    "prompt": "Taking the ground-level energy as E_1 = 0, the partition function approaches Q = n as T → 0. Why does the term k_B T((∂ln Q)/(∂T)) in the entropy then go to zero?",
+    "choices": [
+      {
+        "text": "ln Q levels off at ln n and stops changing with T",
+        "correct": true
+      },
+      {
+        "text": "ln n is always zero, whatever the value of n",
+        "why": "ln n is zero only when n = 1. The term vanishes for any n because ln Q levels off at the constant ln n, so its slope with T goes to zero."
+      },
+      {
+        "text": "k_B itself becomes zero at absolute zero",
+        "why": "k_B is a constant, 1.381 × 10^−23 J/K, at every temperature. The term vanishes because ln Q becomes the constant ln n."
+      },
+      {
+        "text": "Q grows without limit, so the term cancels out",
+        "why": "Q does the opposite: the excited-level terms die away and Q settles at n. A constant ln Q has zero slope, so the term vanishes."
+      }
+    ],
+    "explanation": "As T → 0 the excited-level terms in Q die away and Q settles at n, so ln Q becomes the constant ln n and its temperature derivative goes to zero. What is left is S = k_B ln Q → k_B ln n."
+  },
+  {
+    "id": "pc21-partition-entropy-third-law-check",
+    "type": "multiple-choice",
+    "prompt": "As T → 0, the section's partition-function entropy approaches S = k_B ln n, where n is the degeneracy of the ground level. When does this give S = 0, as the third law requires of a perfect crystal?",
+    "choices": [
+      {
+        "text": "When the ground level is non-degenerate, so n = 1",
+        "correct": true
+      },
+      {
+        "text": "Whenever the ground level is degenerate, n > 1",
+        "why": "For n > 1, ln n is positive, so S stays above zero at T → 0. Only n = 1 gives k_B ln 1 = 0."
+      },
+      {
+        "text": "For any value of n, since T itself is zero",
+        "why": "S = k_B ln n has no T in it, so setting T = 0 does not remove it. S is zero only when ln n = 0, that is n = 1."
+      },
+      {
+        "text": "Only when n is very large, so states spread out",
+        "why": "A larger n gives a larger k_B ln n, not zero. S = 0 needs n = 1, a single ground state."
+      }
+    ],
+    "explanation": "ln 1 = 0, so a system with a single, non-degenerate ground state has S → 0 as T → 0, just as the third law says. A degenerate ground level, n > 1, would leave S = k_B ln n behind."
+  },
+  {
+    "id": "pc21-partition-entropy-s-over-kb",
+    "type": "numeric",
+    "prompt": "For a system at T = 300 K, ln Q = 42.6 and (∂ln Q)/(∂T) = 0.0150 K^−1. Using S = k_B ln Q + k_B T((∂ln Q)/(∂T)), what is S/k_B? (Give it as a decimal.)",
+    "answer": 47.1,
+    "explanation": "S/k_B = ln Q + T((∂ln Q)/(∂T)) = 42.6 + 300 K × 0.0150 K^−1 = 42.6 + 4.5 = 47.1. Multiplying by k_B = 1.381 × 10^−23 J/K would give S in J/K."
+  },
+  {
+    "id": "pc21-partition-entropy-fourfold-ground",
+    "type": "numeric",
+    "prompt": "A small model system has a fourfold-degenerate ground level, n = 4. As T → 0, its entropy approaches S = k_B ln n. Using k_B = 1.381 × 10^−23 J/K and ln 4 = 1.386, what is this limiting entropy, in J/K? (Type it in scientific notation, like 2.5e-23.)",
+    "answer": 1.914e-23,
+    "explanation": "S = k_B ln 4 = 1.381 × 10^−23 J/K × 1.386 = 1.914 × 10^−23 J/K. It is not zero, because even at T → 0 the system still has four states to choose from."
+  }
+]

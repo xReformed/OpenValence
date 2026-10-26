@@ -1,0 +1,378 @@
+[
+  {
+    "id": "pc19-pv-work-general-definition",
+    "type": "multiple-choice",
+    "prompt": "The section opens with a general definition of work, w = ∫F·ds. What does this say work is?",
+    "choices": [
+      {
+        "text": "A force acting along a path, added up over the path",
+        "correct": true
+      },
+      {
+        "text": "A force divided by the area that it acts on",
+        "why": "Force per area is pressure, P = F/A. Work combines a force with the distance it acts through, w = ∫F·ds."
+      },
+      {
+        "text": "The energy that flows because of a temperature difference",
+        "why": "That describes heat, not work. Work is a force acting along a path, w = ∫F·ds."
+      },
+      {
+        "text": "The mass of an object times the speed it moves at",
+        "why": "Mass times velocity is momentum. Work is a force times a path element, added up along the path."
+      }
+    ],
+    "explanation": "Work is the inner product of a force F and a path element ds, integrated along the path. Pushing against friction, moving a charge in an electric field and compressing a gas are all examples."
+  },
+  {
+    "id": "pc19-pv-work-inner-product",
+    "type": "multiple-choice",
+    "prompt": "Work is the integral of the inner (dot) product F·ds. How much work does a force do if it always acts at right angles to the direction of motion?",
+    "choices": [
+      {
+        "text": "None, since F·ds is zero",
+        "correct": true
+      },
+      {
+        "text": "The full force times the distance moved",
+        "why": "That holds only when the force points along the motion. At right angles, the inner product F·ds is zero."
+      },
+      {
+        "text": "Half the force times the distance moved",
+        "why": "The inner product doesn't take half of the force. At right angles, F·ds = 0, so no work is done."
+      },
+      {
+        "text": "The force times the distance, but negative",
+        "why": "A negative F·ds needs a force pointing against the motion. At right angles, F·ds = 0."
+      }
+    ],
+    "explanation": "The inner product F·ds keeps only the part of the force that lies along the motion. A force at right angles to the motion has no such part, so it does no work."
+  },
+  {
+    "id": "pc19-pv-work-electrical",
+    "type": "multiple-choice",
+    "prompt": "The section writes electrical work as w = ∫eE·ds. What is being moved, and against what?",
+    "choices": [
+      {
+        "text": "A charge e, against an electric field E",
+        "correct": true
+      },
+      {
+        "text": "A piston, against the external pressure",
+        "why": "That is P–V work. In ∫eE·ds, e is a charge and E is the electric field it is moved against."
+      },
+      {
+        "text": "An object, against the force of friction",
+        "why": "Work against friction is written with the friction force. Electrical work moves a charge e against an electric field E."
+      },
+      {
+        "text": "A magnet, against a magnetic field",
+        "why": "The section names that as yet another kind of work. In ∫eE·ds, a charge e is moved against an electric field E."
+      }
+    ],
+    "explanation": "Electrical work moves a charge e, such as an electron, against an electric field E. The force on the charge is eE, so the work has the same force-along-a-path form, ∫eE·ds."
+  },
+  {
+    "id": "pc19-pv-work-one-direction",
+    "type": "multiple-choice",
+    "prompt": "Force and path element are both vectors, yet for a gas in a cylinder the section treats the work as a simple product. Why can it do this?",
+    "choices": [
+      {
+        "text": "The piston moves only one way, along the forces",
+        "correct": true
+      },
+      {
+        "text": "Force and distance are parallel for every kind of work",
+        "why": "In general they need not be, which is why work is an inner product. In a cylinder, the piston is held to move along the line of the pressure forces."
+      },
+      {
+        "text": "The piston is massless, so its direction doesn't matter",
+        "why": "The piston's mass is not the point. The forces act along the piston's only direction of motion, so the inner product becomes a plain product."
+      },
+      {
+        "text": "Pressure is a vector that points the same way as dV",
+        "why": "Pressure and volume are not vectors here. The work becomes a plain product because the piston moves in one direction, along the forces."
+      }
+    ],
+    "explanation": "The piston can only move up or down, and the pressure forces act along that same line. The inner product F·ds then reduces to a plain product of force and distance."
+  },
+  {
+    "id": "pc19-pv-work-force-to-volume",
+    "type": "multiple-choice",
+    "prompt": "The section turns the work on a piston of area A, ∫F ds, into ∫P dV. Which two facts does it use?",
+    "choices": [
+      {
+        "text": "F = PA, and the piston sweeps out a volume dV = A ds",
+        "correct": true
+      },
+      {
+        "text": "F = P/A, and the piston sweeps out a volume dV = ds/A",
+        "why": "Pressure is force per area, so F = PA, not P/A. A piston of area A moving through ds sweeps out a volume A ds."
+      },
+      {
+        "text": "F = PV, and the piston sweeps out a volume dV = A ds",
+        "why": "PV is an energy, not a force. The force on the piston is pressure times area, F = PA."
+      },
+      {
+        "text": "F = PA, and the piston sweeps out a volume dV = A/ds",
+        "why": "Area divided by a length is a length, not a volume. The volume swept out is the area times the distance, A ds."
+      }
+    ],
+    "explanation": "Since P = F/A, the force on the piston is PA, and moving a piston of area A through ds changes the volume by A ds. So F ds = (F/A)(A ds) = P dV."
+  },
+  {
+    "id": "pc19-pv-work-sign-convention",
+    "type": "multiple-choice",
+    "prompt": "Under the section's sign convention, when is the work w positive?",
+    "choices": [
+      {
+        "text": "When energy is put into the system as work",
+        "correct": true
+      },
+      {
+        "text": "When the system does work on its surroundings",
+        "why": "Work the system does takes energy out of it, so it gets a minus sign. Work is positive when energy goes into the system."
+      },
+      {
+        "text": "Whenever the gas in the system expands",
+        "why": "An expanding gas does work on its surroundings, so its w is negative. Work is positive when energy is put in, as in a compression."
+      },
+      {
+        "text": "Whenever the pressure of the system is positive",
+        "why": "Gas pressure is always positive, so this would make all P–V work positive. The sign of w depends on whether energy goes into or out of the system."
+      }
+    ],
+    "explanation": "Positive heat and positive work are always energy put into the system; energy the system gives off as heat or work gets a minus sign. The section sums this up as “you pay the bill”."
+  },
+  {
+    "id": "pc19-pv-work-heat-out-sign",
+    "type": "multiple-choice",
+    "prompt": "Under the same sign convention, what sign does q have when a system gives off heat to its surroundings?",
+    "choices": [
+      {
+        "text": "Negative, since energy leaves the system",
+        "correct": true
+      },
+      {
+        "text": "Positive, since heat is flowing",
+        "why": "Heat can flow in either direction, so flow alone doesn't fix the sign. Heat leaving the system is negative."
+      },
+      {
+        "text": "Positive, since the surroundings gain energy",
+        "why": "The sign is taken from the system's point of view. The system loses energy, so q is negative."
+      },
+      {
+        "text": "It depends on the work the system does",
+        "why": "The sign of q is set by the direction of the heat flow alone. Heat leaving the system is negative, whatever the work is."
+      }
+    ],
+    "explanation": "The convention looks at energy from the system's side: what goes in is positive and what comes out is negative. Heat given off by the system therefore has q < 0."
+  },
+  {
+    "id": "pc19-pv-work-minus-sign",
+    "type": "multiple-choice",
+    "prompt": "The section first writes volume work as ∫P dV, then rewrites it as w = −∫P dV. Why add the minus sign?",
+    "choices": [
+      {
+        "text": "So that a compression, putting energy in, gives w > 0",
+        "correct": true
+      },
+      {
+        "text": "Because the pressure of a gas is a negative number",
+        "why": "Gas pressure is positive. The minus sign makes w positive when the volume shrinks, that is, when work is put into the gas."
+      },
+      {
+        "text": "So that an expanding gas, which does work, gives w > 0",
+        "why": "That was the sign before the minus was added. With it, an expanding gas has w < 0, because it gives off energy as work."
+      },
+      {
+        "text": "Because work always takes energy out of a system",
+        "why": "Work can go into or out of a system. The minus sign makes a compression, where work goes in, come out positive."
+      }
+    ],
+    "explanation": "With w = −∫P dV, a compression (dV negative) gives positive work, energy put into the gas. An expansion gives negative work, energy the gas gives off."
+  },
+  {
+    "id": "pc19-pv-work-compression-condition",
+    "type": "multiple-choice",
+    "prompt": "A gas at pressure P sits in a cylinder under a piston, with an external pressure P_ext on the other side. When is the gas compressed?",
+    "choices": [
+      {
+        "text": "When P_ext is greater than P",
+        "correct": true
+      },
+      {
+        "text": "When P is greater than P_ext",
+        "why": "Then the gas pushes harder than the outside and the piston moves out, an expansion. Compression needs P_ext > P."
+      },
+      {
+        "text": "When P_ext is equal to P",
+        "why": "With the pressures equal, the forces balance and the piston stays put. The gas is compressed only when P_ext is greater than P."
+      },
+      {
+        "text": "Whenever P_ext is above 1 bar",
+        "why": "What matters is how P_ext compares with the gas pressure P, not a fixed value. If P_ext > P, the piston moves in."
+      }
+    ],
+    "explanation": "The piston moves toward the side with the lower pressure. If P_ext > P it moves in and compresses the gas; if P_ext < P the gas expands."
+  },
+  {
+    "id": "pc19-pv-work-constant-pext",
+    "type": "multiple-choice",
+    "prompt": "If the external pressure stays constant, what does the work w = −∫P_ext dV become?",
+    "choices": [
+      {
+        "text": "w = −P_ext ΔV",
+        "correct": true
+      },
+      {
+        "text": "w = P_ext ΔV",
+        "why": "This drops the minus sign of the convention. With it, w = −P_ext ΔV, which is positive for a compression."
+      },
+      {
+        "text": "w = −V ΔP_ext",
+        "why": "P_ext doesn't change here, so this would always give zero. A constant P_ext comes out of the integral, leaving −P_ext ΔV."
+      },
+      {
+        "text": "w = −P_ext/ΔV",
+        "why": "Pressure divided by volume is not an energy. Taking the constant P_ext out of the integral leaves −P_ext times ΔV."
+      }
+    ],
+    "explanation": "A constant P_ext can be taken out of the integral, and the integral of dV from V_1 to V_2 is just ΔV = V_2 − V_1. So w = −P_ext ΔV."
+  },
+  {
+    "id": "pc19-pv-work-varying-pext",
+    "type": "multiple-choice",
+    "prompt": "If the external pressure changes during a compression, how does the section say the work must be found?",
+    "choices": [
+      {
+        "text": "By integrating P_ext(V) over the volume range",
+        "correct": true
+      },
+      {
+        "text": "As −P_ext ΔV, using the starting value of P_ext",
+        "why": "That works only when P_ext stays constant. When it changes, w = −∫P_ext(V) dV over the whole range."
+      },
+      {
+        "text": "As −P_ext ΔV, using the final value of P_ext",
+        "why": "One value of P_ext can't stand for a pressure that changes. The work is w = −∫P_ext(V) dV over the whole range."
+      },
+      {
+        "text": "As −V ΔP_ext, from the change in P_ext",
+        "why": "P–V work comes from the volume change, not the pressure change. With a changing P_ext, w = −∫P_ext(V) dV."
+      }
+    ],
+    "explanation": "−P_ext ΔV holds only for a constant external pressure. If P_ext changes as V changes, w = −∫P_ext(V) dV must be taken over the whole range from V_1 to V_2."
+  },
+  {
+    "id": "pc19-pv-work-irreversible-why",
+    "type": "multiple-choice",
+    "prompt": "A gas is compressed by a constant external pressure that is higher than its own pressure. Why does the section call this process irreversible?",
+    "choices": [
+      {
+        "text": "Its pressure differs from the pressure on it",
+        "correct": true
+      },
+      {
+        "text": "No heat can flow into or out of the gas during it",
+        "why": "That describes an adiabatic process. This one is irreversible because the inside and outside pressures differ, so the gas is out of equilibrium."
+      },
+      {
+        "text": "The volume of the gas can't change at all",
+        "why": "The volume does change; the gas is compressed. It is irreversible because the gas pressure differs from the pressure on it."
+      },
+      {
+        "text": "The gas always ends up hotter than it started",
+        "why": "In the section's example the gas starts and ends at the same temperature. It is irreversible because the pressures are unbalanced along the way."
+      }
+    ],
+    "explanation": "Because the system pressure is not the pressure exerted on it, the system is not in a state of equilibrium during the change. Such a process is called irreversible."
+  },
+  {
+    "id": "pc19-pv-work-diagram",
+    "type": "multiple-choice",
+    "prompt": "For a compression at constant external pressure, what can a P–V diagram show?",
+    "choices": [
+      {
+        "text": "The work as an area, but not the path itself",
+        "correct": true
+      },
+      {
+        "text": "The path of the gas, but not the work done",
+        "why": "It is the other way round. The gas is out of equilibrium during the change, so its path can't be drawn, but the work −P_ext ΔV can be shown as an area."
+      },
+      {
+        "text": "Both the path and the work, as for any change",
+        "why": "Only states in equilibrium can be drawn on a P–V diagram. The path of this irreversible change can't be shown, though the work can."
+      },
+      {
+        "text": "Neither the path nor the work",
+        "why": "The work at constant P_ext can still be shown, as the area under the line at P_ext. Only the path itself can't be drawn."
+      }
+    ],
+    "explanation": "A P–V diagram shows equilibrium states, and an irreversible change passes through states that are not in equilibrium. The work, −P_ext ΔV, can still be shown as the area under the line at constant P_ext."
+  },
+  {
+    "id": "pc19-pv-work-isotherm",
+    "type": "multiple-choice",
+    "prompt": "A P–V diagram of a compression at constant external pressure also shows the isotherm, a curve of constant temperature, through the starting state 1. The final state 2 lies on the same isotherm. What does this tell you?",
+    "choices": [
+      {
+        "text": "The gas ends at the same temperature it started at",
+        "correct": true
+      },
+      {
+        "text": "The gas followed the isotherm during the compression",
+        "why": "The irreversible path can't be drawn at all. The isotherm only shows that states 1 and 2 have the same temperature."
+      },
+      {
+        "text": "The gas pressure stayed constant during the compression",
+        "why": "The gas pressure rises from state 1 to state 2; only P_ext is constant. Sharing an isotherm means the two states have the same temperature."
+      },
+      {
+        "text": "No work was done on the gas in the compression",
+        "why": "Work was done; it is the area under the line at P_ext. Being on one isotherm only means the temperatures at 1 and 2 are equal."
+      }
+    ],
+    "explanation": "An isotherm connects states with the same temperature. With states 1 and 2 on it, the irreversible compression starts and ends at the same temperature, even though its path in between can't be drawn."
+  },
+  {
+    "id": "pc19-pv-work-friction",
+    "type": "numeric",
+    "prompt": "Moving an object against friction is one kind of work. For a constant force along the path, w = ∫F·ds becomes force × distance. How much work, in J, does it take to push a box 3.0 m across a floor against a friction force of 40 N?",
+    "answer": 120,
+    "unit": "J",
+    "explanation": "w = F × distance = 40 N × 3.0 m = 120 J. One joule is one newton-metre."
+  },
+  {
+    "id": "pc19-pv-work-piston-push-out",
+    "type": "numeric",
+    "prompt": "A gas pushes a piston of area 0.0200 m^2 outward by 0.100 m against a constant external pressure of 1.00 × 10^5 Pa, so its volume grows by ΔV = area × distance. Using w = −P_ext ΔV, what is w, in J?",
+    "answer": -200,
+    "unit": "J",
+    "explanation": "ΔV = 0.0200 m^2 × 0.100 m = 0.00200 m^3, so w = −(1.00 × 10^5 Pa)(0.00200 m^3) = −200 J. It is negative because the gas gives off energy as work."
+  },
+  {
+    "id": "pc19-pv-work-compress-l-bar",
+    "type": "numeric",
+    "prompt": "A gas is compressed from 4.0 L to 1.0 L by a constant external pressure of 3.0 bar. Using w = −P_ext ΔV and 1 L·bar = 100 J, what is w, in J?",
+    "answer": 900,
+    "unit": "J",
+    "explanation": "ΔV = 1.0 L − 4.0 L = −3.0 L, so w = −(3.0 bar)(−3.0 L) = 9.0 L·bar = 900 J. It is positive because work is put into the gas."
+  },
+  {
+    "id": "pc19-pv-work-two-step",
+    "type": "numeric",
+    "prompt": "A gas is compressed in two steps: first from 5.0 L to 3.0 L at a constant P_ext of 2.0 bar, then from 3.0 L to 2.0 L at a constant P_ext of 4.0 bar. Adding w = −P_ext ΔV for the two steps, and using 1 L·bar = 100 J, what is the total work done on the gas, in J?",
+    "answer": 800,
+    "unit": "J",
+    "explanation": "Step 1 gives −(2.0 bar)(−2.0 L) = 4.0 L·bar, and step 2 gives −(4.0 bar)(−1.0 L) = 4.0 L·bar. The total is 8.0 L·bar = 800 J, which shows why a changing P_ext has to be followed over the whole volume range."
+  },
+  {
+    "id": "pc19-pv-work-volume-from-work",
+    "type": "numeric",
+    "prompt": "A gas expands against a constant external pressure of 1.00 bar and does 250 J of work on its surroundings, so w = −250 J. Using w = −P_ext ΔV and 1 L·bar = 100 J, by how many liters did its volume increase? (Give it as a decimal.)",
+    "answer": 2.5,
+    "unit": "L",
+    "explanation": "w = −250 J = −2.50 L·bar, so ΔV = −w/P_ext = 2.50 L·bar ÷ 1.00 bar = 2.50 L. The volume grows, as it must when a gas does work on its surroundings."
+  }
+]

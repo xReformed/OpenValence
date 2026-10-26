@@ -1,0 +1,464 @@
+[
+  {
+    "id": "pc19-relative-enthalpy-plot-difference",
+    "type": "multiple-choice",
+    "prompt": "When the enthalpy of a substance is plotted against temperature, the section plots H(T) − H(0) rather than H(T). Why?",
+    "choices": [
+      {
+        "text": "Absolute values of H are not defined",
+        "correct": true
+      },
+      {
+        "text": "H(0) is defined to be exactly zero",
+        "why": "Nothing sets H(0) to zero here; only enthalpy differences are defined. Plotting H(T) − H(0) avoids having to say what H itself is."
+      },
+      {
+        "text": "It removes the jump in H at melting",
+        "why": "Subtracting the constant H(0) shifts the whole curve but keeps the jump. The difference is plotted because absolute enthalpies are not defined."
+      },
+      {
+        "text": "H(0) equals the heat of fusion of the solid",
+        "why": "H(0) is the enthalpy at 0 K, not the jump at the melting point. The difference is plotted because only enthalpy differences are defined."
+      }
+    ],
+    "explanation": "There are no absolute enthalpies: only differences in H, for a defined process, are properly defined. Measuring H relative to its value at 0 K gives a curve without ever needing H itself."
+  },
+  {
+    "id": "pc19-relative-enthalpy-define-process",
+    "type": "multiple-choice",
+    "prompt": "According to the section, enthalpy differences, ΔH, are only defined for what?",
+    "choices": [
+      {
+        "text": "A process, from one state to another",
+        "correct": true
+      },
+      {
+        "text": "A single substance at a single temperature",
+        "why": "That would be an absolute enthalpy, which is not defined. ΔH is defined only for a process taking a system from one state to another."
+      },
+      {
+        "text": "Reactions that give out heat",
+        "why": "ΔH is defined for any process, whether it gives out or takes in heat. What it always needs is a defined start and end."
+      },
+      {
+        "text": "Processes that take place at 0 K",
+        "why": "The section's own example runs from 253 K to 293 K. ΔH is defined for any process with a defined start and end state."
+      }
+    ],
+    "explanation": "Only enthalpy differences mean anything, and they belong to a process, such as warming ice from 253 K to 273 K. That is why the section's first instruction is to define the process."
+  },
+  {
+    "id": "pc19-relative-enthalpy-three-steps",
+    "type": "multiple-choice",
+    "prompt": "To find ΔH for taking ice at −20 °C to liquid water at +20 °C, which series of steps does the section add up?",
+    "choices": [
+      {
+        "text": "Warm the ice to 0 °C, melt it, warm the water",
+        "correct": true
+      },
+      {
+        "text": "Melt the ice at −20 °C, then warm the water by 40 K",
+        "why": "Ice melts at 0 °C (273 K), and the heat of fusion is defined there. The ice must first be warmed to 0 °C."
+      },
+      {
+        "text": "Warm the ice all the way to +20 °C, then melt it",
+        "why": "Ice can't be warmed past its melting point without melting. It melts at 0 °C, and only then is the liquid warmed to +20 °C."
+      },
+      {
+        "text": "Warm the ice to 0 °C, then warm the water to +20 °C",
+        "why": "This skips the melting step. Melting at 0 °C adds the heat of fusion, which is the largest part of the total."
+      }
+    ],
+    "explanation": "Process 1 warms the ice from 253 K to 273 K, process 2 melts it at 273 K, and process 3 warms the liquid from 273 K to 293 K. The total is ΔH_1 + ΔH_fus + ΔH_3."
+  },
+  {
+    "id": "pc19-relative-enthalpy-fusion-temperature",
+    "type": "multiple-choice",
+    "prompt": "The section writes the heat of fusion as ΔH_fus = H_liquid − H_solid. At what temperature are the two enthalpies taken?",
+    "choices": [
+      {
+        "text": "Both at the melting point, 273 K",
+        "correct": true
+      },
+      {
+        "text": "H_solid at 253 K and H_liquid at 293 K",
+        "why": "Those are the start and end of the whole process. ΔH_fus compares liquid and solid at the same temperature, the melting point, 273 K."
+      },
+      {
+        "text": "Both at room temperature, 298 K",
+        "why": "Ice is not stable at 298 K. The section stresses that both enthalpies are taken at the melting point, 273 K."
+      },
+      {
+        "text": "H_solid at 273 K and H_liquid at 293 K",
+        "why": "Going on to 293 K adds the warming of the liquid, which is process 3. ΔH_fus itself has both enthalpies at 273 K."
+      }
+    ],
+    "explanation": "Melting happens at a fixed temperature, so ΔH_fus = H_liquid − H_solid compares the liquid and the solid both at 273 K. The warming steps before and after are counted separately."
+  },
+  {
+    "id": "pc19-relative-enthalpy-integral-meaning",
+    "type": "multiple-choice",
+    "prompt": "For process 1, the section writes ΔH_1 = ∫ C_P dT from T = 253 K to T = 273 K, using the heat capacity of ice. What does this integral equal?",
+    "choices": [
+      {
+        "text": "H(273 K) − H(253 K) for the ice",
+        "correct": true
+      },
+      {
+        "text": "H(253 K) − H(273 K) for the ice",
+        "why": "That has the wrong sign, since warming ice raises its enthalpy. The integral from 253 K up to 273 K gives the final minus the initial enthalpy."
+      },
+      {
+        "text": "The absolute enthalpy of ice at 273 K",
+        "why": "Integrating C_P gives only a change in H between two temperatures. Absolute enthalpies are not defined."
+      },
+      {
+        "text": "The heat of fusion of ice at 273 K",
+        "why": "The heat of fusion is a separate step, process 2. This integral covers only the warming of the solid from 253 K to 273 K."
+      }
+    ],
+    "explanation": "Integrating C_P = ((∂H)/(∂T))_P over a temperature range gives the change in H across it: here H(273 K) − H(253 K) for ice. It is positive, since warming at constant pressure raises H."
+  },
+  {
+    "id": "pc19-relative-enthalpy-plot-shape",
+    "type": "multiple-choice",
+    "prompt": "Enthalpy, H(T) − H(0), is plotted against temperature for water from −20 °C to +20 °C. What does the plot look like?",
+    "choices": [
+      {
+        "text": "A rising line, a vertical jump at 0 °C, then a steeper line",
+        "correct": true
+      },
+      {
+        "text": "A rising line, a flat stretch at 0 °C, then a steeper line",
+        "why": "A flat stretch is what a plot of temperature against heat added shows. With H on the vertical axis, melting at a fixed T is a vertical jump."
+      },
+      {
+        "text": "One straight rising line with no break at 0 °C",
+        "why": "Melting adds ΔH_fus with no change in temperature. That shows up as a vertical jump in H at 0 °C."
+      },
+      {
+        "text": "A rising line, a vertical drop at 0 °C, then a steeper line",
+        "why": "Melting takes in energy, so H goes up, not down. The jump at 0 °C is upward, by ΔH_fus."
+      }
+    ],
+    "explanation": "H rises along a line for ice, jumps straight up by ΔH_fus at the melting point, and then rises along a steeper line for the liquid. The jump is vertical because melting adds enthalpy at constant temperature."
+  },
+  {
+    "id": "pc19-relative-enthalpy-liquid-steeper",
+    "type": "multiple-choice",
+    "prompt": "Why is the H line for liquid water steeper than the line for ice?",
+    "choices": [
+      {
+        "text": "The liquid has more degrees of freedom, so a higher C_P",
+        "correct": true
+      },
+      {
+        "text": "The liquid already holds the heat of fusion",
+        "why": "The heat of fusion raises the height of the liquid line, not its slope. The slope is C_P, which is higher for the liquid."
+      },
+      {
+        "text": "Liquid water is denser than ice, so it stores more energy",
+        "why": "Density doesn't set the slope of H against T. The slope is C_P, which is higher for the liquid because it has more degrees of freedom."
+      },
+      {
+        "text": "The liquid is hotter, and every H line steepens with T",
+        "why": "C_P changes only weakly with temperature, so each line is nearly straight. The step up in slope at melting comes from the liquid's larger C_P."
+      }
+    ],
+    "explanation": "The slope of H against T is C_P. The liquid has more degrees of freedom than the solid, so its heat capacity tends to be higher and its H line rises more steeply."
+  },
+  {
+    "id": "pc19-relative-enthalpy-straight-lines",
+    "type": "multiple-choice",
+    "prompt": "A schematic plot draws the enthalpy of ice and of liquid water as straight lines on either side of the melting point. What does drawing straight lines assume?",
+    "choices": [
+      {
+        "text": "C_P stays constant over each temperature range",
+        "correct": true
+      },
+      {
+        "text": "C_P is the same for ice and for liquid water",
+        "why": "Equal C_P values would give equal slopes, but the two lines have different slopes. Straight lines only need each C_P to be constant over its own range."
+      },
+      {
+        "text": "Melting the ice takes no enthalpy at all",
+        "why": "The plot still has a jump of ΔH_fus at the melting point. Whether the lines are straight depends on C_P, not on melting."
+      },
+      {
+        "text": "C_P is zero on both sides of the melting point",
+        "why": "A zero C_P would make the lines flat, with H not changing. A straight, rising line means C_P is constant but not zero."
+      }
+    ],
+    "explanation": "The slope of H against T is C_P, so a straight line means C_P doesn't change with temperature. In reality C_P is a slow, weak function of T, so the lines are gently curved but nearly straight."
+  },
+  {
+    "id": "pc19-relative-enthalpy-infinite-reason",
+    "type": "multiple-choice",
+    "prompt": "The section argues that C_P = ((∂H)/(∂T))_P becomes infinitely large at the melting point. What is the reason it gives?",
+    "choices": [
+      {
+        "text": "ΔH is finite while ΔT is zero",
+        "correct": true
+      },
+      {
+        "text": "ΔH is zero while ΔT is finite",
+        "why": "That would make ΔH/ΔT zero, not infinite. During melting H rises by ΔH_fus while T stays fixed, so it is ΔT that is zero."
+      },
+      {
+        "text": "The heat of fusion is infinitely large",
+        "why": "ΔH_fus is a finite amount, such as 6.01 kJ/mol for ice. The slope is infinite because that finite ΔH comes with no change in T."
+      },
+      {
+        "text": "The liquid has more degrees of freedom",
+        "why": "That explains why the liquid's C_P is a bit higher than the solid's. The singularity comes from a finite ΔH at ΔT = 0."
+      }
+    ],
+    "explanation": "During melting H rises by ΔH_fus while T stays at the melting point. ΔH/ΔT with a finite ΔH and ΔT going to zero grows without limit, so C_P has a singularity and the H curve goes straight up."
+  },
+  {
+    "id": "pc19-relative-enthalpy-more-transitions",
+    "type": "multiple-choice",
+    "prompt": "A substance also has a solid-to-solid phase transition below its melting point. What extra features does this add to its plots of H and C_P against T?",
+    "choices": [
+      {
+        "text": "A jump in H and a singularity in C_P",
+        "correct": true
+      },
+      {
+        "text": "A jump in C_P, with H staying smooth",
+        "why": "A phase transition adds enthalpy at constant T, so H jumps. Where H jumps, its slope C_P becomes infinite."
+      },
+      {
+        "text": "A bend in H, with no jump and no spike",
+        "why": "A transition takes in enthalpy at a fixed temperature, which is a jump in H, not a gentle bend. The jump gives a singularity in C_P."
+      },
+      {
+        "text": "Nothing, since only melting gives a jump",
+        "why": "Every phase transition takes in enthalpy at a fixed temperature. Each one adds its own jump in H and singularity in C_P."
+      }
+    ],
+    "explanation": "The section notes that more phase transitions give more discontinuities in H and more singularities in C_P. Each transition adds enthalpy at constant temperature, just as melting does."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-measures",
+    "type": "multiple-choice",
+    "prompt": "What does differential scanning calorimetry (DSC) measure fairly directly?",
+    "choices": [
+      {
+        "text": "The heat capacity as a function of temperature",
+        "correct": true
+      },
+      {
+        "text": "The absolute enthalpy of the sample at each T",
+        "why": "No method measures absolute enthalpies, since only differences are defined. DSC measures heat capacity against temperature, from which enthalpy changes follow."
+      },
+      {
+        "text": "The internal energy of the sample at fixed volume",
+        "why": "DSC records heat flows into a sample as it is heated, which give its heat capacity against temperature. It doesn't measure U at fixed volume."
+      },
+      {
+        "text": "The mass the sample loses as it is heated",
+        "why": "DSC doesn't weigh the sample. It compares the heat flows into a sample pan and an empty pan to get the heat capacity."
+      }
+    ],
+    "explanation": "In DSC a sample pan and an empty reference pan are heated at the same constant rate. The difference in heat flow between them gives the sample's heat capacity as a function of temperature."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-more-heat",
+    "type": "multiple-choice",
+    "prompt": "In DSC, a sample pan and an empty reference pan are heated at the same constant rate. Why must more heat flow into the sample pan?",
+    "choices": [
+      {
+        "text": "The filled pan has the larger heat capacity",
+        "correct": true
+      },
+      {
+        "text": "The empty pan has the larger heat capacity",
+        "why": "Adding a sample adds heat capacity, so the empty pan has the smaller one. The filled pan needs more heat for each kelvin."
+      },
+      {
+        "text": "The sample pan is kept at a higher temperature",
+        "why": "Both pans follow the same heating program, and only a tiny ΔT develops between them. The extra heat goes into the sample's heat capacity."
+      },
+      {
+        "text": "Heat leaks from the sample pan into the empty pan",
+        "why": "Both pans are heated by conduction from the instrument, not from each other. The sample pan needs more heat because its heat capacity is larger."
+      }
+    ],
+    "explanation": "To warm at the same rate, a pan with a larger heat capacity needs more heat per second. The filled pan has the sample's heat capacity added, so the heat flow into it is a bit bigger."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-signal",
+    "type": "multiple-choice",
+    "prompt": "What does a DSC instrument measure to detect the difference in heat flow into its two pans?",
+    "choices": [
+      {
+        "text": "A tiny temperature difference between the pans",
+        "correct": true
+      },
+      {
+        "text": "The difference in mass between the pans",
+        "why": "Mass doesn't change with heat flow. The differential heat flow makes a tiny temperature difference ΔT between the pans, and that is what is measured."
+      },
+      {
+        "text": "The pressure that builds up in the sample pan",
+        "why": "Pressure isn't the DSC signal. The extra heat flow into the sample pan shows up as a tiny temperature difference ΔT."
+      },
+      {
+        "text": "The light given off by the sample as it warms",
+        "why": "DSC does not detect light. It measures the small temperature difference ΔT that the differential heat flow creates between the two pans."
+      }
+    ],
+    "explanation": "The extra heat flow into the sample pan induces a tiny temperature difference ΔT between the pans. ΔT is proportional to the heat flow difference, which is proportional to the sample's heat capacity."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-pans-cancel",
+    "type": "multiple-choice",
+    "prompt": "In DSC, the heat capacity difference between the two pans is taken to be C_P of the sample. What must be true for this to hold?",
+    "choices": [
+      {
+        "text": "The two pans themselves must cancel out",
+        "correct": true
+      },
+      {
+        "text": "The sample pan must be heated faster than the other",
+        "why": "Both pans are heated at the same constant rate. The difference equals the sample's C_P only if the pans' own heat capacities cancel."
+      },
+      {
+        "text": "The sample must have a very small heat capacity",
+        "why": "The sample's C_P is what DSC measures, large or small. What is needed is that the two pans' own heat capacities cancel."
+      },
+      {
+        "text": "The sample must be melting during the scan",
+        "why": "Melting gives a peak, but DSC measures C_P away from transitions too. What is needed is that the two pans cancel."
+      }
+    ],
+    "explanation": "The filled pan has the pan's heat capacity plus the sample's, and the reference has the pan's alone. If the pans cancel, the difference is just C_P of the sample."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-broadening",
+    "type": "multiple-choice",
+    "prompt": "When a sample melts during a DSC run, why is no infinite spike in C_P seen?",
+    "choices": [
+      {
+        "text": "Broadening spreads the singularity into a finite peak",
+        "correct": true
+      },
+      {
+        "text": "The heat capacity doesn't change during melting",
+        "why": "Ideally C_P has a singularity at the melting point. The technique's broadening turns it into a finite peak."
+      },
+      {
+        "text": "The empty reference pan melts along with the sample",
+        "why": "The empty pan holds nothing to melt. The spike is missing because broadening in the technique spreads it into a peak."
+      },
+      {
+        "text": "The heat of fusion is too small for DSC to detect",
+        "why": "The melting peak is easy to see, and its area gives the heat of fusion. The infinite spike is lost only because of broadening."
+      }
+    ],
+    "explanation": "The ideal C_P has an infinite singularity at the melting point, but serious broadening in DSC spreads it into a finite peak. The peak's area still gives the heat of fusion."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-peak-area",
+    "type": "multiple-choice",
+    "prompt": "What do you get by integrating the melting peak in a DSC trace, that is, by finding its area?",
+    "choices": [
+      {
+        "text": "The heat of fusion, ΔH_fus",
+        "correct": true
+      },
+      {
+        "text": "The melting point of the sample",
+        "why": "The melting point comes from the onset of the peak, after calibration. The area of the peak gives ΔH_fus."
+      },
+      {
+        "text": "The heat capacity of the liquid",
+        "why": "The signal away from the peak reflects C_P. The area under the melting peak is the heat of fusion."
+      },
+      {
+        "text": "The absolute enthalpy of the solid",
+        "why": "Absolute enthalpies are not defined. The peak area is the enthalpy change on melting, ΔH_fus."
+      }
+    ],
+    "explanation": "The area under the broadened C_P peak adds up the enthalpy taken in during melting, which is ΔH_fus. The onset of the peak, after calibration, gives the melting point."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-onset",
+    "type": "multiple-choice",
+    "prompt": "Which feature of a DSC melting peak is calibrated to give the melting point?",
+    "choices": [
+      {
+        "text": "The onset of the peak",
+        "correct": true
+      },
+      {
+        "text": "The area under the peak",
+        "why": "The area gives the heat of fusion, an enthalpy. The melting point comes from the calibrated onset of the peak."
+      },
+      {
+        "text": "The height of the peak",
+        "why": "The height is a size of signal, not a temperature. The section uses the calibrated onset of the peak for the melting point."
+      },
+      {
+        "text": "The far end of the peak",
+        "why": "By the end of the peak the sample has finished melting. The melting point is taken from the calibrated onset."
+      }
+    ],
+    "explanation": "The section says that integrating the peak gives ΔH_fus and that its onset is calibrated to give the melting point. So one DSC peak gives both an enthalpy and a temperature."
+  },
+  {
+    "id": "pc19-relative-enthalpy-modulated-dsc",
+    "type": "multiple-choice",
+    "prompt": "In Modulated DSC, the heating rate fluctuates with a little sine wave. What extra information can this give?",
+    "choices": [
+      {
+        "text": "The small difference in C_P before and after melting",
+        "correct": true
+      },
+      {
+        "text": "The absolute enthalpy of the sample at its melting point",
+        "why": "No method gives absolute enthalpies. Modulated DSC can resolve the small difference in C_P before and after melting."
+      },
+      {
+        "text": "The true infinite spike in C_P at melting",
+        "why": "Broadening still hides the singularity. What the modulation adds is the small change in C_P between solid and liquid."
+      },
+      {
+        "text": "The melting point without any calibration",
+        "why": "The section doesn't claim this. What Modulated DSC adds is the small difference in C_P before and after the melting event."
+      }
+    ],
+    "explanation": "Heating with a small sine-wave fluctuation lets Modulated DSC pick out the small difference between C_P of the solid and of the liquid. On a plot of H against T, that is the change in slope across the jump."
+  },
+  {
+    "id": "pc19-relative-enthalpy-jump-height",
+    "type": "numeric",
+    "prompt": "On a plot of H(T) − H(0) for one mole of a substance, the curve jumps straight up at the melting point, from 4.25 kJ to 12.85 kJ. Since ΔH_fus = H_liquid − H_solid at the melting point, what is ΔH_fus, in kJ/mol? (Give it as a decimal.)",
+    "answer": 8.6,
+    "explanation": "ΔH_fus = 12.85 kJ − 4.25 kJ = 8.60 kJ for the one mole, so 8.60 kJ/mol. The unknown H(0) cancels in the difference, which is why the plot never needs an absolute enthalpy."
+  },
+  {
+    "id": "pc19-relative-enthalpy-total",
+    "type": "numeric",
+    "prompt": "For 1.00 mol of ice taken from −20 °C to liquid water at +20 °C, the three steps are ΔH_1 = 0.75 kJ (warming the ice), ΔH_fus = 6.01 kJ (melting) and ΔH_3 = 1.51 kJ (warming the water). What is the total ΔH, in kJ? (Give it as a decimal.)",
+    "answer": 8.27,
+    "unit": "kJ",
+    "explanation": "ΔH_total = ΔH_1 + ΔH_fus + ΔH_3 = 0.75 kJ + 6.01 kJ + 1.51 kJ = 8.27 kJ. Melting is by far the largest of the three steps."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-ratio",
+    "type": "numeric",
+    "prompt": "In DSC, ΔT ∝ ΔΦ ∝ C_P(sample), where ΔT is the temperature difference and ΔΦ the heat flow difference between the pans. Under the same conditions, a sample with C_P = 0.40 J/K gives ΔT = 0.050 K. What ΔT does a sample with C_P = 0.60 J/K give, in K? (Give it as a decimal.)",
+    "answer": 0.075,
+    "unit": "K",
+    "explanation": "ΔT scales with C_P, so ΔT = 0.050 K × 0.60/0.40 = 0.050 K × 1.5 = 0.075 K. A larger heat capacity draws more extra heat flow, which gives a larger ΔT."
+  },
+  {
+    "id": "pc19-relative-enthalpy-dsc-molar",
+    "type": "numeric",
+    "prompt": "A DSC melting peak for a 0.00500 mol sample has an area of 0.0950 kJ. Since the area is the enthalpy taken in on melting, what is the molar heat of fusion, in kJ/mol?",
+    "answer": 19,
+    "explanation": "ΔH_fus = (0.0950 kJ)/(0.00500 mol) = 19.0 kJ/mol. Dividing by the amount of sample turns the peak area into a molar heat of fusion."
+  }
+]

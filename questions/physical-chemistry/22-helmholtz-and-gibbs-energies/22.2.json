@@ -1,0 +1,581 @@
+[
+  {
+    "id": "pc22-gibbs-why-constant-p",
+    "type": "multiple-choice",
+    "prompt": "Why does the section introduce the Gibbs energy after the Helmholtz energy?",
+    "choices": [
+      {
+        "text": "Most processes run at constant P, not constant V",
+        "correct": true
+      },
+      {
+        "text": "The Helmholtz energy fails for open systems",
+        "why": "A works for systems that exchange heat, as long as T and V are constant. G is needed because constant pressure is much easier to work at than constant volume."
+      },
+      {
+        "text": "The Helmholtz energy cannot be defined for gases",
+        "why": "A ≡ U − TS applies to gases too. The Gibbs energy is introduced because isobaric changes are much easier to deal with than isochoric ones."
+      },
+      {
+        "text": "Constant temperature is hard to keep in a lab",
+        "why": "G also needs constant T, just as A does. What changes is constant V to constant P, the condition most processes run under."
+      }
+    ],
+    "explanation": "A suits isochoric (constant-volume) changes, but it is much easier to work at constant pressure. G ≡ H − TS plays the role of A when P and T are held constant."
+  },
+  {
+    "id": "pc22-gibbs-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the Gibbs energy G?",
+    "choices": [
+      {
+        "text": "G ≡ H − TS",
+        "correct": true
+      },
+      {
+        "text": "G ≡ U − TS",
+        "why": "U − TS is the Helmholtz energy A. The Gibbs energy uses the enthalpy: G ≡ H − TS."
+      },
+      {
+        "text": "G ≡ H + TS",
+        "why": "The TS term is subtracted: G ≡ H − TS. So a larger entropy lowers G."
+      },
+      {
+        "text": "G ≡ U + PV",
+        "why": "U + PV is the enthalpy H. G subtracts TS from it: G ≡ H − TS."
+      }
+    ],
+    "explanation": "G ≡ H − TS, which can also be written U + PV − TS. It is the constant-pressure partner of the Helmholtz energy, A ≡ U − TS."
+  },
+  {
+    "id": "pc22-gibbs-from-a",
+    "type": "multiple-choice",
+    "prompt": "How is the Gibbs energy G related to the Helmholtz energy A?",
+    "choices": [
+      {
+        "text": "G = A + PV",
+        "correct": true
+      },
+      {
+        "text": "G = A − PV",
+        "why": "Since H = U + PV, G = H − TS = U − TS + PV = A + PV. The PV term is added, not subtracted."
+      },
+      {
+        "text": "G = A + TS",
+        "why": "A + TS is U, the internal energy, not G. Since H = U + PV, G = A + PV."
+      },
+      {
+        "text": "G = A − TS",
+        "why": "A already contains the −TS term. G = U + PV − TS = A + PV."
+      }
+    ],
+    "explanation": "G = H − TS = U + PV − TS. Grouping U − TS as A gives G = A + PV."
+  },
+  {
+    "id": "pc22-gibbs-criterion",
+    "type": "multiple-choice",
+    "prompt": "Which inequality tests whether a process is spontaneous when T and P are held constant?",
+    "choices": [
+      {
+        "text": "dG ≤ 0",
+        "correct": true
+      },
+      {
+        "text": "dA ≤ 0",
+        "why": "dA ≤ 0 is the test at constant T and V. At constant T and P, the test uses the Gibbs energy: dG ≤ 0."
+      },
+      {
+        "text": "dS ≥ 0",
+        "why": "The system's entropy alone decides spontaneity only for an isolated system. At constant T and P, the test is dG ≤ 0."
+      },
+      {
+        "text": "dH ≤ 0",
+        "why": "Giving off heat is not enough, since entropy matters too. At constant T and P, the test is dG ≤ 0, with G ≡ H − TS."
+      }
+    ],
+    "explanation": "At constant T and P, dU − T dS + P dV ≤ 0, which is dG ≤ 0. G decreases in a spontaneous process and is constant at equilibrium."
+  },
+  {
+    "id": "pc22-gibbs-equilibrium",
+    "type": "multiple-choice",
+    "prompt": "A process at constant T and P has ΔG = 0. What does the section conclude?",
+    "choices": [
+      {
+        "text": "The system is at equilibrium",
+        "correct": true
+      },
+      {
+        "text": "The process is spontaneous",
+        "why": "A spontaneous process has ΔG < 0. ΔG = 0 means G has stopped changing, so the system is at equilibrium."
+      },
+      {
+        "text": "The reverse process is spontaneous",
+        "why": "The reverse process is favored when ΔG > 0. When ΔG = 0, neither direction is favored."
+      },
+      {
+        "text": "ΔH and ΔS are both zero",
+        "why": "ΔG = ΔH − TΔS is zero whenever ΔH = TΔS, even if both are large. ΔG = 0 is the condition for equilibrium."
+      }
+    ],
+    "explanation": "At constant T and P, G decreases in a spontaneous process and is constant at equilibrium. So ΔG = 0 marks equilibrium, where neither direction is favored."
+  },
+  {
+    "id": "pc22-gibbs-positive-coupled",
+    "type": "multiple-choice",
+    "prompt": "A process at constant T and P has ΔG > 0. According to the section, how can it still be made to occur?",
+    "choices": [
+      {
+        "text": "By coupling it to a process with negative ΔG",
+        "correct": true
+      },
+      {
+        "text": "By waiting long enough for it to go on its own",
+        "why": "A process with ΔG > 0 never goes on its own, however long you wait. It has to be pumped by coupling it to a process with ΔG < 0."
+      },
+      {
+        "text": "It already occurs, since ΔG > 0 means spontaneous",
+        "why": "The sign is the other way round: a spontaneous process has ΔG < 0. A process with ΔG > 0 must be coupled to one with ΔG < 0."
+      },
+      {
+        "text": "It cannot be made to occur by any means",
+        "why": "The section says it can be pumped, by coupling it to another process with a negative ΔG. It just won't occur on its own."
+      }
+    ],
+    "explanation": "A process with positive ΔG is not spontaneous. It can be driven, or pumped, by coupling it to a process with negative ΔG, which is spontaneous."
+  },
+  {
+    "id": "pc22-gibbs-formula",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature and pressure, which expression does the section give for ΔG between two states?",
+    "choices": [
+      {
+        "text": "ΔG = ΔH − TΔS",
+        "correct": true
+      },
+      {
+        "text": "ΔG = ΔH + TΔS",
+        "why": "The entropy term enters with a minus sign, as in G ≡ H − TS. So ΔG = ΔH − TΔS, and a positive ΔS lowers ΔG."
+      },
+      {
+        "text": "ΔG = ΔU − TΔS",
+        "why": "ΔU − TΔS is ΔA, the change in the Helmholtz energy. With the enthalpy in place of U, ΔG = ΔH − TΔS."
+      },
+      {
+        "text": "ΔG = ΔH − SΔT",
+        "why": "At constant temperature ΔT = 0, so this would just give ΔH. With T fixed, G ≡ H − TS gives ΔG = ΔH − TΔS."
+      }
+    ],
+    "explanation": "From G ≡ H − TS at constant T, ΔG = ΔH − TΔS. A spontaneous process has ΔG < 0, and equilibrium has ΔG = 0."
+  },
+  {
+    "id": "pc22-gibbs-exothermic-not-enough",
+    "type": "multiple-choice",
+    "prompt": "An exothermic reaction at constant T and P has ΔH = −50 kJ and TΔS = −60 kJ. Is it spontaneous?",
+    "choices": [
+      {
+        "text": "No, since ΔG = +10 kJ",
+        "correct": true
+      },
+      {
+        "text": "Yes, since ΔH is negative",
+        "why": "A negative ΔH alone does not decide spontaneity at constant T and P. ΔG = ΔH − TΔS = −50 kJ − (−60 kJ) = +10 kJ, which is positive."
+      },
+      {
+        "text": "Yes, since ΔG = −110 kJ",
+        "why": "That adds TΔS instead of subtracting it. ΔG = ΔH − TΔS = −50 kJ + 60 kJ = +10 kJ, so the reaction is not spontaneous."
+      },
+      {
+        "text": "It is at equilibrium, since both terms are negative",
+        "why": "Equilibrium needs ΔG = 0, which would require ΔH = TΔS. Here ΔG = −50 kJ − (−60 kJ) = +10 kJ, so the reaction is not spontaneous."
+      }
+    ],
+    "explanation": "ΔG = ΔH − TΔS = −50 kJ − (−60 kJ) = +10 kJ. The entropy loss outweighs the heat given off, so the reaction is not spontaneous at this temperature, even though it is exothermic."
+  },
+  {
+    "id": "pc22-gibbs-temperature-flip",
+    "type": "multiple-choice",
+    "prompt": "Why can the spontaneous direction of a reaction at constant pressure change with temperature?",
+    "choices": [
+      {
+        "text": "T multiplies ΔS in ΔG = ΔH − TΔS",
+        "correct": true
+      },
+      {
+        "text": "ΔH always changes sign at high temperature",
+        "why": "The section treats ΔH as nearly constant. The direction can flip because the entropy term, −TΔS, grows with T."
+      },
+      {
+        "text": "G is not a state function at high temperature",
+        "why": "G is a state function at every temperature. The direction can change because T multiplies ΔS, so −TΔS grows as T rises."
+      },
+      {
+        "text": "The pressure rises whenever T rises",
+        "why": "Here the pressure is held constant. The flip comes from the T in −TΔS, which can make that term outweigh ΔH."
+      }
+    ],
+    "explanation": "In ΔG = ΔH − TΔS, the entropy term is multiplied by T. At low T, ΔH dominates; at high T, −TΔS can win, so the sign of ΔG, and the direction, can change."
+  },
+  {
+    "id": "pc22-gibbs-signs-always",
+    "type": "multiple-choice",
+    "prompt": "A reaction at constant pressure has ΔH < 0 and ΔS > 0. At which temperatures is it spontaneous?",
+    "choices": [
+      {
+        "text": "At all temperatures",
+        "correct": true
+      },
+      {
+        "text": "Only at low temperatures",
+        "why": "Both ΔH and −TΔS are negative here. Raising T only makes ΔG more negative, so the reaction is spontaneous at all temperatures."
+      },
+      {
+        "text": "Only at high temperatures",
+        "why": "ΔH is already negative, so ΔG < 0 even at low T. With ΔS > 0, ΔG stays negative as T rises."
+      },
+      {
+        "text": "At no temperature",
+        "why": "Giving off heat and gaining entropy both lower ΔG. With ΔH < 0 and −TΔS < 0, ΔG is negative at every temperature."
+      }
+    ],
+    "explanation": "ΔH < 0 and −TΔS < 0, so ΔG = ΔH − TΔS is negative whatever the temperature. Such a reaction is spontaneous at all temperatures."
+  },
+  {
+    "id": "pc22-gibbs-signs-never",
+    "type": "multiple-choice",
+    "prompt": "A process takes in heat (ΔH > 0) and lowers the entropy (ΔS < 0). At constant T and P, when is it spontaneous?",
+    "choices": [
+      {
+        "text": "At no temperature",
+        "correct": true
+      },
+      {
+        "text": "At all temperatures",
+        "why": "Both ΔH and −TΔS are positive here, so ΔG > 0 at every T. The process is never spontaneous as written."
+      },
+      {
+        "text": "Only at high temperatures",
+        "why": "Raising T makes −TΔS more positive, since ΔS < 0. ΔG only grows, so the process is never spontaneous."
+      },
+      {
+        "text": "Only at low temperatures",
+        "why": "Even at low T, ΔG ≈ ΔH > 0. Both terms are positive, so ΔG > 0 at every temperature."
+      }
+    ],
+    "explanation": "ΔH > 0 and −TΔS > 0, so ΔG > 0 at every temperature. The process never goes forward on its own; its reverse is spontaneous instead."
+  },
+  {
+    "id": "pc22-gibbs-signs-low-t",
+    "type": "multiple-choice",
+    "prompt": "For a reaction with ΔH < 0 and ΔS < 0 at constant pressure, how does temperature affect whether it is spontaneous?",
+    "choices": [
+      {
+        "text": "It is spontaneous only below T = ΔH/ΔS",
+        "correct": true
+      },
+      {
+        "text": "It is spontaneous only above T = ΔH/ΔS",
+        "why": "Above that temperature, −TΔS (positive, since ΔS < 0) outweighs ΔH, so ΔG > 0. The reaction is favored at low T, where ΔH dominates."
+      },
+      {
+        "text": "It is spontaneous at all temperatures",
+        "why": "Because ΔS < 0, the term −TΔS is positive and grows with T. Eventually it outweighs ΔH, so the reaction stops being spontaneous."
+      },
+      {
+        "text": "It is never spontaneous",
+        "why": "At low T, ΔG ≈ ΔH < 0, so the reaction is spontaneous there. It stops being spontaneous only above T = ΔH/ΔS."
+      }
+    ],
+    "explanation": "ΔH < 0 favors the reaction, but −TΔS > 0 opposes it and grows with T. ΔG < 0 below T = ΔH/ΔS and ΔG > 0 above it, as for NH3(g) + HCl(g) → NH4Cl(s)."
+  },
+  {
+    "id": "pc22-gibbs-ice-melts",
+    "type": "multiple-choice",
+    "prompt": "Below 0 °C water freezes, and above 0 °C ice melts. Melting has ΔH > 0 and ΔS > 0. Why does ice melt only above 0 °C?",
+    "choices": [
+      {
+        "text": "Only then does TΔS exceed ΔH",
+        "correct": true
+      },
+      {
+        "text": "Only then does ΔH become negative",
+        "why": "Melting always takes in heat, so ΔH > 0 at every temperature. Above 0 °C the term TΔS becomes larger than ΔH, making ΔG < 0."
+      },
+      {
+        "text": "Only then does ΔS become positive",
+        "why": "Liquid water has more entropy than ice at the same temperature, so ΔS > 0 throughout. What changes is the size of TΔS compared with ΔH."
+      },
+      {
+        "text": "Only then does ΔG become positive",
+        "why": "A positive ΔG would mean melting is not spontaneous. Above 0 °C, TΔS > ΔH, so ΔG = ΔH − TΔS < 0."
+      }
+    ],
+    "explanation": "With ΔH > 0 and ΔS > 0, ΔG = ΔH − TΔS is positive at low T and negative at high T. At 0 °C the two terms balance, ΔG = 0, and ice and water are at equilibrium."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-entropy",
+    "type": "multiple-choice",
+    "prompt": "For NH3(g) + HCl(g) → NH4Cl(s), the section gives ΔS = −0.285 kJ/K. Why is the entropy change negative?",
+    "choices": [
+      {
+        "text": "Two gases combine into one solid",
+        "correct": true
+      },
+      {
+        "text": "The reaction gives off heat",
+        "why": "Heat given off shows up in ΔH = −176.2 kJ, not in the sign of the system's ΔS. ΔS < 0 because two moles of gas become one mole of solid."
+      },
+      {
+        "text": "The reaction runs at constant pressure",
+        "why": "Constant pressure does not fix the sign of ΔS. ΔS < 0 because two moles of gas turn into one mole of an ordered solid."
+      },
+      {
+        "text": "The product has more moles than the reactants",
+        "why": "It is the other way round: 2 mol of gas give 1 mol of solid. Fewer, more ordered particles mean lower entropy."
+      }
+    ],
+    "explanation": "Two moles of gas, whose molecules move freely, become one mole of an ordered solid. That large loss of freedom makes ΔS = −0.285 kJ/K."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-298",
+    "type": "multiple-choice",
+    "prompt": "At 298 K, ΔG for NH3(g) + HCl(g) → NH4Cl(s) is strongly negative. What does the section conclude?",
+    "choices": [
+      {
+        "text": "It runs until the limiting reagent is used up",
+        "correct": true
+      },
+      {
+        "text": "It does not occur until it is heated above 618 K",
+        "why": "Above about 618 K, ΔG turns positive and the reaction runs backward. At 298 K, ΔG < 0, so it proceeds forward."
+      },
+      {
+        "text": "It is already at equilibrium at 298 K",
+        "why": "Equilibrium would need ΔG = 0. With ΔG = −91.3 kJ, the reaction proceeds strongly forward."
+      },
+      {
+        "text": "NH4Cl decomposes into NH3 and HCl",
+        "why": "That is what happens above about 618 K, where ΔG > 0. At 298 K, ΔG < 0, so NH4Cl forms from the gases."
+      }
+    ],
+    "explanation": "ΔG = −91.3 kJ at 298 K, so the reaction proceeds toward NH4Cl(s). The section says it runs until whichever gas is the limiting reagent is used up."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-hot",
+    "type": "multiple-choice",
+    "prompt": "Heated well above room temperature, ΔG for NH3(g) + HCl(g) ⇌ NH4Cl(s) becomes positive. What happens to solid NH4Cl then?",
+    "choices": [
+      {
+        "text": "It decomposes into NH3 and HCl gases",
+        "correct": true
+      },
+      {
+        "text": "It melts but stays as NH4Cl",
+        "why": "Melting is not what ΔG > 0 describes here. The reverse reaction becomes spontaneous, so the salt splits into the base NH3 and the acid HCl."
+      },
+      {
+        "text": "It goes on forming from the gases",
+        "why": "Forming NH4Cl needs ΔG < 0, which holds only below about 618 K. Above it, the reverse reaction is spontaneous."
+      },
+      {
+        "text": "Nothing changes, since ΔG > 0 means no reaction",
+        "why": "ΔG > 0 means the forward reaction is not spontaneous, but then the reverse one is. NH4Cl decomposes into NH3 and HCl."
+      }
+    ],
+    "explanation": "Above about 618 K, ΔG for forming NH4Cl is positive, so the reverse reaction, NH4Cl(s) → NH3(g) + HCl(g), has ΔG < 0. The salt decomposes into the two gases, the base and the acid."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-assumption",
+    "type": "multiple-choice",
+    "prompt": "The section estimates the temperature at which ΔG for forming NH4Cl(s) turns positive. Which assumption does this estimate rest on?",
+    "choices": [
+      {
+        "text": "ΔH and ΔS do not change with temperature",
+        "correct": true
+      },
+      {
+        "text": "The pressure rises as the temperature rises",
+        "why": "The pressure is held at 1 bar, which is what makes ΔG the right test. The estimate assumes ΔH and ΔS keep their 298 K values."
+      },
+      {
+        "text": "ΔG keeps its 298 K value of −91.3 kJ",
+        "why": "If ΔG stayed at −91.3 kJ, it would never change sign. ΔG changes with T through −TΔS; the assumption is that ΔH and ΔS stay fixed."
+      },
+      {
+        "text": "NH3 and HCl react fully at any temperature",
+        "why": "The point of the estimate is that the reaction reverses at high temperature. It assumes only that ΔH and ΔS keep their 298 K values."
+      }
+    ],
+    "explanation": "Setting ΔG = ΔH − TΔS = 0 with the 298 K values gives T = ΔH/ΔS ≈ 618 K. The section notes this assumes ΔH and ΔS stay the same, which is almost but not completely true."
+  },
+  {
+    "id": "pc22-gibbs-max-work",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does ΔG stand for in a process at constant T and P?",
+    "choices": [
+      {
+        "text": "The maximum non-P–V work it can perform",
+        "correct": true
+      },
+      {
+        "text": "The maximum P–V work it can perform",
+        "why": "Volume work is exactly what ΔG leaves out, or corrects for. ΔG is the maximum work other than P–V work, such as electrical work."
+      },
+      {
+        "text": "The heat it gives off to the surroundings",
+        "why": "The heat given off at constant pressure is −ΔH, not ΔG. ΔG is the maximal non-P–V work the process can perform."
+      },
+      {
+        "text": "The total work, including P–V work",
+        "why": "At constant P the system may do volume work, but ΔG corrects for it. What remains is the maximal non-P–V work."
+      }
+    ],
+    "explanation": "ΔG is the maximal reversible, isobaric, isothermal non-P–V work that a spontaneous change can perform. Any volume work done at constant P is subtracted out, or corrected for."
+  },
+  {
+    "id": "pc22-gibbs-electrical-example",
+    "type": "multiple-choice",
+    "prompt": "Which is an example of the non-P–V work that ΔG measures?",
+    "choices": [
+      {
+        "text": "Electrical work done by a cell",
+        "correct": true
+      },
+      {
+        "text": "A gas pushing back the atmosphere",
+        "why": "That is volume work, which ΔG leaves out. Electrical work, such as driving a current, is non-P–V work."
+      },
+      {
+        "text": "Heat flowing to the surroundings",
+        "why": "Heat is not work. Non-P–V work means work other than expansion or compression, such as electrical work."
+      },
+      {
+        "text": "A piston compressing a gas",
+        "why": "Compressing a gas is P–V work. ΔG measures other work, such as electrical work."
+      }
+    ],
+    "explanation": "Non-P–V work is any work other than expansion or compression, for example electrical or elastic work. ΔG gives the most of such work a process can do at constant T and P."
+  },
+  {
+    "id": "pc22-gibbs-terms-drop",
+    "type": "multiple-choice",
+    "prompt": "The section writes dG = δw_rev − S dT + V dP + P dV. Which two terms drop out at constant T and P?",
+    "choices": [
+      {
+        "text": "−S dT and V dP",
+        "correct": true
+      },
+      {
+        "text": "δw_rev and P dV",
+        "why": "These two remain; together they give the useful work. −S dT and V dP vanish because dT = 0 and dP = 0."
+      },
+      {
+        "text": "V dP and P dV",
+        "why": "P dV is not zero, since the volume can change at constant P. The terms that vanish are −S dT and V dP."
+      },
+      {
+        "text": "−S dT and P dV",
+        "why": "P dV survives; it is minus the volume work, which the section subtracts. V dP vanishes along with −S dT, since dP = 0."
+      }
+    ],
+    "explanation": "At constant T, dT = 0, so −S dT vanishes; at constant P, dP = 0, so V dP vanishes. What remains, δw_rev + P dV, is the reversible work minus the volume work: the other useful work."
+  },
+  {
+    "id": "pc22-gibbs-natural-variables",
+    "type": "multiple-choice",
+    "prompt": "Which two variables are the natural variables of the Gibbs energy G?",
+    "choices": [
+      {
+        "text": "Pressure P and temperature T",
+        "correct": true
+      },
+      {
+        "text": "Volume V and temperature T",
+        "why": "In dG = V dP − S dT, V is a coefficient; the changes are dP and dT. So G's natural variables are P and T."
+      },
+      {
+        "text": "Entropy S and pressure P",
+        "why": "S is the coefficient of dT in dG = V dP − S dT, not a variable that changes. The natural variables are P and T."
+      },
+      {
+        "text": "Entropy S and volume V",
+        "why": "S and V are the coefficients in dG = V dP − S dT. The differentials are dP and dT, so G depends naturally on P and T."
+      }
+    ],
+    "explanation": "Since dG = V dP − S dT, G changes naturally with P and T. These are the variables most laboratory experiments control."
+  },
+  {
+    "id": "pc22-gibbs-most-useful",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call G the most useful of the four functions U, H, A and G?",
+    "choices": [
+      {
+        "text": "Its natural variables, P and T, are what labs control",
+        "correct": true
+      },
+      {
+        "text": "It is the only one of the four that is a state function",
+        "why": "U, H, A and G are all state functions. G stands out because its natural variables, P and T, are those of most lab experiments."
+      },
+      {
+        "text": "Its natural variables are V and T, as in sealed vessels",
+        "why": "V and T are the natural variables of A. G's natural variables are P and T, which most lab experiments control."
+      },
+      {
+        "text": "It does not depend on the temperature",
+        "why": "G does depend on T: dG = V dP − S dT. What makes G useful is that P and T, its natural variables, are what experiments control."
+      }
+    ],
+    "explanation": "The natural variables of G are P and T, the conditions of most laboratory experiments. So dG ≤ 0 at constant T and P is the spontaneity test chemists use most."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-dg-298",
+    "type": "numeric",
+    "prompt": "For NH3(g) + HCl(g) → NH4Cl(s) at 298 K and 1 bar, ΔH = −176.2 kJ and ΔS = −285 J/K. Using ΔG = ΔH − TΔS, what is ΔG, in kJ, including its sign? (Give it as a decimal.)",
+    "answer": -91.3,
+    "unit": "kJ",
+    "explanation": "TΔS = (298 K)(−0.285 kJ/K) = −84.9 kJ, so ΔG = −176.2 kJ − (−84.9 kJ) = −91.3 kJ. Converting ΔS to kJ/K first keeps the units consistent, and ΔG < 0 means the salt forms."
+  },
+  {
+    "id": "pc22-gibbs-nh4cl-crossover",
+    "type": "numeric",
+    "prompt": "For NH3(g) + HCl(g) → NH4Cl(s), ΔH = −176.2 kJ and ΔS = −0.285 kJ/K. Taking both as constant, ΔG = 0 at T = ΔH/ΔS. Above what temperature does ΔG become positive, in K? (Give it as a decimal.)",
+    "answer": 618.2,
+    "unit": "K",
+    "explanation": "T = (−176.2 kJ)/(−0.285 kJ/K) = 618.2 K. Below this temperature ΔG < 0 and NH4Cl forms; above it ΔG > 0 and the salt decomposes into NH3 and HCl."
+  },
+  {
+    "id": "pc22-gibbs-ice-283",
+    "type": "numeric",
+    "prompt": "For melting 1 mol of ice, take ΔH = +6.01 kJ and ΔS = +22.0 J/K, both constant. Using ΔG = ΔH − TΔS, what is ΔG for melting at 283 K, in J, including its sign?",
+    "answer": -216,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "TΔS = (283 K)(22.0 J/K) = 6226 J, so ΔG = 6010 J − 6226 J = −216 J. ΔG < 0, so at 10 °C ice melts, just as the section says it does above 0 °C."
+  },
+  {
+    "id": "pc22-gibbs-fuel-cell-work",
+    "type": "numeric",
+    "prompt": "A fuel cell runs H2(g) + ½O2(g) → H2O(ℓ) at 298 K and 1 bar, with ΔH = −285.8 kJ and ΔS = −163.3 J/K. Using ΔG = ΔH − TΔS, what is the most electrical (non-P–V) work the reaction can do, in kJ? (Give it as a decimal.)",
+    "answer": 237.1,
+    "unit": "kJ",
+    "explanation": "TΔS = (298 K)(−0.1633 kJ/K) = −48.7 kJ, so ΔG = −285.8 kJ + 48.7 kJ = −237.1 kJ. At most 237.1 kJ can be drawn as electrical work, less than the 285.8 kJ of heat that burning the hydrogen would give."
+  },
+  {
+    "id": "pc22-gibbs-from-delta-a",
+    "type": "numeric",
+    "prompt": "A process at constant T and a constant pressure of 1.00 × 10^5 Pa has ΔA = −50.0 kJ, and its volume grows by ΔV = 0.0200 m^3. Since G = A + PV, at constant P, ΔG = ΔA + PΔV. What is ΔG, in kJ, including its sign?",
+    "answer": -48,
+    "unit": "kJ",
+    "tolerance": 0,
+    "explanation": "PΔV = (1.00 × 10^5 Pa)(0.0200 m^3) = 2000 J = 2.00 kJ, so ΔG = −50.0 kJ + 2.00 kJ = −48.0 kJ. The two differ by PΔV, the volume work of the expansion, which ΔG leaves out."
+  },
+  {
+    "id": "pc22-gibbs-never-spontaneous",
+    "type": "numeric",
+    "prompt": "A process has ΔH = +20.0 kJ and ΔS = −50.0 J/K. Using ΔG = ΔH − TΔS, what is ΔG at 400 K, in kJ, including its sign?",
+    "answer": 40,
+    "unit": "kJ",
+    "tolerance": 0,
+    "explanation": "TΔS = (400 K)(−0.0500 kJ/K) = −20.0 kJ, so ΔG = 20.0 kJ − (−20.0 kJ) = +40.0 kJ. With ΔH > 0 and ΔS < 0, both terms are positive, so ΔG > 0 at every temperature."
+  }
+]

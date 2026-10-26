@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pc19-enthalpy-state-qp-meaning",
+    "type": "multiple-choice",
+    "prompt": "At constant pressure, the section rearranges ΔU = q_P − PΔV into q_P = ΔU + PΔV. What does this say about the heat q_P?",
+    "choices": [
+      {
+        "text": "It covers both ΔU and the work PΔV",
+        "correct": true
+      },
+      {
+        "text": "It all goes into raising U",
+        "why": "Only part of q_P goes into ΔU. The rest, PΔV, pays for the work of expanding against the constant pressure."
+      },
+      {
+        "text": "It equals the P–V work alone",
+        "why": "q_P also includes ΔU. The heat covers both the change in internal energy and the work PΔV."
+      },
+      {
+        "text": "It is less than ΔU when the gas expands",
+        "why": "When the system expands, PΔV > 0, so q_P = ΔU + PΔV is larger than ΔU, not smaller."
+      }
+    ],
+    "explanation": "At constant pressure the heat taken in supplies the change in internal energy plus the work PΔV done on the surroundings. Grouping the terms then shows q_P is the change in U + PV."
+  },
+  {
+    "id": "pc19-enthalpy-state-grouping",
+    "type": "multiple-choice",
+    "prompt": "The section rewrites q_P = U_2 − U_1 + P(V_2 − V_1) as q_P = (U_2 + PV_2) − (U_1 + PV_1). Why is this step allowed?",
+    "choices": [
+      {
+        "text": "The pressure stays constant",
+        "correct": true
+      },
+      {
+        "text": "U_2 and U_1 are always equal",
+        "why": "If they were, q_P would be just PΔV. The step works because a constant P lets P(V_2 − V_1) split into PV_2 − PV_1."
+      },
+      {
+        "text": "The volume does not change",
+        "why": "If V were fixed, the P(V_2 − V_1) term would vanish. The volume does change; what stays fixed is P."
+      },
+      {
+        "text": "No heat flows at constant pressure",
+        "why": "Heat does flow; q_P is that heat. The step only uses the fixed pressure to write P(V_2 − V_1) as PV_2 − PV_1."
+      }
+    ],
+    "explanation": "Because the pressure is constant, P(V_2 − V_1) = PV_2 − PV_1, and each term can be grouped with its own U. That collects everything into U + PV at the end minus U + PV at the start."
+  },
+  {
+    "id": "pc19-enthalpy-state-end-states",
+    "type": "multiple-choice",
+    "prompt": "Written as q_P = (U_2 + PV_2) − (U_1 + PV_1), what does the heat absorbed at constant pressure depend on?",
+    "choices": [
+      {
+        "text": "Only the initial and final states",
+        "correct": true
+      },
+      {
+        "text": "The path taken between the states",
+        "why": "Heat usually depends on the path, but at constant pressure q_P is a difference of U + PV between the two end states. Only those states matter."
+      },
+      {
+        "text": "Only the final state",
+        "why": "q_P is a difference, U + PV at the end minus U + PV at the start, so both states count."
+      },
+      {
+        "text": "Only the change in volume",
+        "why": "ΔV enters through PΔV, but ΔU counts too. q_P is the change in U + PV, set by the initial and final states."
+      }
+    ],
+    "explanation": "U, P and V each have a definite value in a given state, so (U_2 + PV_2) − (U_1 + PV_1) is fixed by the two end states alone. That is why the combination U + PV, the enthalpy, is a new state function."
+  },
+  {
+    "id": "pc19-enthalpy-state-qp-value",
+    "type": "numeric",
+    "prompt": "At a constant pressure of 1.00 × 10^5 Pa, a gas expands by ΔV = 2.00 × 10^−3 m^3 while its internal energy rises by ΔU = 500 J. Using q_P = ΔU + PΔV, how much heat q_P does the gas absorb, in J?",
+    "answer": 700,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "PΔV = 1.00 × 10^5 Pa × 2.00 × 10^−3 m^3 = 200 J, so q_P = 500 J + 200 J = 700 J. This heat is the change in U + PV, the enthalpy change ΔH."
+  }
+]

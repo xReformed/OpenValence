@@ -1,0 +1,225 @@
+[
+  {
+    "id": "pc17-distinguishable-energy-adds",
+    "type": "multiple-choice",
+    "prompt": "A system is made of independent molecules a, b, c, …, each in one of its own energy states. How is the energy of the whole system related to the energies of the molecules?",
+    "choices": [
+      {
+        "text": "It is the sum of the molecular energies",
+        "correct": true
+      },
+      {
+        "text": "It is the product of the molecular energies",
+        "why": "Energy is additive: E = ε_a + ε_b + ε_c + …. It is the partition functions, not the energies, that multiply."
+      },
+      {
+        "text": "It equals the energy of the highest-energy molecule",
+        "why": "Every molecule contributes its own energy. For independent molecules the total is the sum, ε_a + ε_b + ε_c + …."
+      },
+      {
+        "text": "It is the average of the molecular energies",
+        "why": "An average would not grow with the number of molecules, but the total energy does. The total is the sum of the molecular energies."
+      }
+    ],
+    "explanation": "Energy is additive, so E = ε_a + ε_b + ε_c + …, with each molecule in its own state. This additivity is what lets Q be split into a product of molecular partition functions."
+  },
+  {
+    "id": "pc17-distinguishable-by-location",
+    "type": "multiple-choice",
+    "prompt": "The molecules in a molecular crystal are chemically identical. According to the section, how can they still be told apart?",
+    "choices": [
+      {
+        "text": "By where each one sits in the crystal",
+        "correct": true
+      },
+      {
+        "text": "By their different masses",
+        "why": "Identical molecules have the same mass. They are told apart by their positions, since each one stays near its own site."
+      },
+      {
+        "text": "By the energy state each one is in",
+        "why": "Two molecules can be in the same state, so states can't label them. Their fixed sites can, such as the distance from a corner of the crystal."
+      },
+      {
+        "text": "By the order in which they were added",
+        "why": "The crystal keeps no record of that. Each molecule is identified by its site, such as its distance from a given corner."
+      }
+    ],
+    "explanation": "Each molecule only moves around a fixed site, so it can be identified by its location, for example by how far it is from a given corner of the crystal. Identical molecules in a gas move everywhere and have no such label."
+  },
+  {
+    "id": "pc17-distinguishable-q-product",
+    "type": "multiple-choice",
+    "prompt": "For a system of distinguishable, independent molecules a, b, c, …, how is the system partition function Q built from the molecular partition functions?",
+    "choices": [
+      {
+        "text": "Q = q_a q_b q_c …, their product",
+        "correct": true
+      },
+      {
+        "text": "Q = q_a + q_b + q_c + …, their sum",
+        "why": "The energies add, so their Boltzmann factors multiply. The sums over each molecule's states then factor into a product, Q = q_a q_b q_c …."
+      },
+      {
+        "text": "Q = (q_a q_b q_c …)/(N!)",
+        "why": "Dividing by N! corrects for molecules that can't be told apart. Distinguishable molecules need no such correction: Q = q_a q_b q_c …."
+      },
+      {
+        "text": "Q = q_a, the partition function of one molecule",
+        "why": "One molecule's q describes only that molecule. The system's Q includes every molecule's states: Q = q_a q_b q_c …."
+      }
+    ],
+    "explanation": "Because the molecules are distinguishable and independent, the sum over system states factors into separate sums, one for each molecule. So Q = q_a q_b q_c …, the product of the molecular partition functions."
+  },
+  {
+    "id": "pc17-distinguishable-why-factor",
+    "type": "multiple-choice",
+    "prompt": "Why can the partition function of a system of independent molecules be split into a product of molecular partition functions?",
+    "choices": [
+      {
+        "text": "Their energies add, so Boltzmann factors multiply",
+        "correct": true
+      },
+      {
+        "text": "All the molecules are always in the same state",
+        "why": "The molecules can be in different states, and Q sums over every combination. The product works because exp(−β(ε_a + ε_b)) = exp(−βε_a) × exp(−βε_b)."
+      },
+      {
+        "text": "Partition functions always multiply, for any system",
+        "why": "They multiply only when the energies add, which needs independent molecules. Molecules that interact have energies that don't split up this way."
+      },
+      {
+        "text": "At low T only the ground state of each is filled",
+        "why": "The product holds at every temperature, with all states included. It follows from the energies adding, so that their Boltzmann factors multiply."
+      }
+    ],
+    "explanation": "For independent molecules E = ε_a + ε_b + …, and exp(−β(ε_a + ε_b + …)) = exp(−βε_a) × exp(−βε_b) × …. Summing over each molecule's states separately then gives Q = q_a q_b …."
+  },
+  {
+    "id": "pc17-distinguishable-same-states",
+    "type": "multiple-choice",
+    "prompt": "When does Q = q_a q_b q_c … for distinguishable molecules simplify to Q = q^(N)?",
+    "choices": [
+      {
+        "text": "When all N molecules have the same energy states",
+        "correct": true
+      },
+      {
+        "text": "When the molecules cannot be told apart",
+        "why": "Molecules that can't be told apart, such as those in a gas, need a different result. Q = q^(N) is for distinguishable molecules with identical sets of states."
+      },
+      {
+        "text": "When there are only a few molecules",
+        "why": "The number of molecules sets the power N; it doesn't decide whether the form applies. The q's are all equal when the molecules have the same energy states."
+      },
+      {
+        "text": "When all the molecules are in their ground state",
+        "why": "q sums over all of a molecule's states, not just the ground state. The q's are equal when every molecule has the same set of energy states."
+      }
+    ],
+    "explanation": "If every molecule has the same set of energy states, then q_a = q_b = q_c = … = q. The product of N equal factors is q^(N)."
+  },
+  {
+    "id": "pc17-distinguishable-conditions",
+    "type": "multiple-choice",
+    "prompt": "The product Q = q_a q_b q_c … holds for molecules that have which two properties?",
+    "choices": [
+      {
+        "text": "Distinguishable and independent",
+        "correct": true
+      },
+      {
+        "text": "Indistinguishable and independent",
+        "why": "Molecules that can't be told apart, as in a gas, need a different expression. The product form is for molecules that can be told apart."
+      },
+      {
+        "text": "Distinguishable and strongly interacting",
+        "why": "Interacting molecules have energies that don't simply add, so Q doesn't split into a product. The molecules must be independent."
+      },
+      {
+        "text": "Identical and free to move through a gas",
+        "why": "Identical gas molecules can't be told apart, so this form doesn't apply to them. It needs distinguishable molecules, such as those fixed in a crystal."
+      }
+    ],
+    "explanation": "The molecules must be distinguishable, so each can be labeled, and independent, so that their energies add. Then Q is the product of the molecular partition functions."
+  },
+  {
+    "id": "pc17-distinguishable-sum-combinations",
+    "type": "multiple-choice",
+    "prompt": "For distinguishable molecules a, b, c, …, the system partition function sums exp(−βE) over the system's states. Each system state has molecule a in some state i, b in some state j, c in some state k, and so on. Which system states are included in the sum?",
+    "choices": [
+      {
+        "text": "Every combination of states i, j, k, … of the molecules",
+        "correct": true
+      },
+      {
+        "text": "Only those where all the molecules are in the same state",
+        "why": "Each molecule can be in any of its own states, independently of the others. The sum includes every combination of i, j, k, …."
+      },
+      {
+        "text": "Only the ground state of the whole system",
+        "why": "A partition function sums over all the states, not just the lowest one. Every combination of molecular states is a system state."
+      },
+      {
+        "text": "Only the states of one representative molecule",
+        "why": "That would give a single molecule's q, not the system's Q. Q sums over every combination of the molecules' states."
+      }
+    ],
+    "explanation": "Each system state is one choice of state for every molecule, and its energy is the sum of their energies. Summing exp(−βE) over all these combinations is what factors into q_a q_b q_c …."
+  },
+  {
+    "id": "pc17-distinguishable-gas-different",
+    "type": "multiple-choice",
+    "prompt": "According to the section, does Q = q^(N) also describe a gas of identical molecules moving freely through their container?",
+    "choices": [
+      {
+        "text": "No; identical gas molecules can't be told apart",
+        "correct": true
+      },
+      {
+        "text": "Yes; it holds for any collection of N identical molecules",
+        "why": "Q = q^(N) assumes each molecule can be identified, as at a crystal site. Identical molecules in a gas can't be, so a different expression is needed."
+      },
+      {
+        "text": "Yes, but only at high temperature",
+        "why": "Temperature isn't the issue. Gas molecules are indistinguishable, so Q = q^(N) isn't their partition function at any temperature."
+      },
+      {
+        "text": "No; gas molecules have no partition function",
+        "why": "Each gas molecule has its own molecular partition function q. The problem is that the molecules can't be told apart, so Q isn't simply q^(N)."
+      }
+    ],
+    "explanation": "Q = q^(N) relies on being able to tell the molecules apart, as for molecules at fixed sites in a crystal. Identical molecules moving through a gas are indistinguishable, and their Q takes a different form."
+  },
+  {
+    "id": "pc17-distinguishable-product-two",
+    "type": "numeric",
+    "prompt": "A crystal holds two distinguishable, independent molecules of different kinds, with molecular partition functions q_a = 2.0 and q_b = 3.0 at some temperature. Using Q = q_a q_b, what is the system partition function Q?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Q = q_a q_b = 2.0 × 3.0 = 6.0. Adding them (5.0) would be wrong: for independent molecules the partition functions multiply."
+  },
+  {
+    "id": "pc17-distinguishable-q-to-the-n",
+    "type": "numeric",
+    "prompt": "A tiny crystal holds N = 4 chemically identical molecules at fixed sites, so they are distinguishable. Each has the same energy states, with q = 2.0. Using Q = q^(N), what is Q?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "Q = q^(N) = 2.0^4 = 2.0 × 2.0 × 2.0 × 2.0 = 16. Multiplying q by N instead (8.0) would be wrong: the partition functions multiply."
+  },
+  {
+    "id": "pc17-distinguishable-count-states",
+    "type": "numeric",
+    "prompt": "Two distinguishable molecules, a and b, each have 3 possible energy states. A system state is one choice of state for a together with one choice for b. How many system states are there?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "Molecule a has 3 choices and, for each of them, b has 3 choices, so there are 3 × 3 = 9 system states. Q sums exp(−βE) over all 9, which is the same as the product q_a q_b."
+  },
+  {
+    "id": "pc17-distinguishable-boltzmann-product",
+    "type": "numeric",
+    "prompt": "Molecule a is in a state with exp(−βε_a) = 0.20, and an independent molecule b is in a state with exp(−βε_b) = 0.50. The system's energy is ε_a + ε_b. What is the system's Boltzmann factor, exp(−β(ε_a + ε_b))? (Give it as a decimal.)",
+    "answer": 0.1,
+    "explanation": "exp(−β(ε_a + ε_b)) = exp(−βε_a) × exp(−βε_b) = 0.20 × 0.50 = 0.10. Because energies add, Boltzmann factors multiply, which is why Q factors into q_a q_b."
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "id": "pc16-vdw-molecular-binomial-x",
+    "type": "multiple-choice",
+    "prompt": "The section rewrites RT/(V̄ − b) as (RT/V̄) × 1/(1 − x) and uses the binomial expansion 1/(1 − x) = 1 + x + x^2 + …. What plays the role of x?",
+    "choices": [
+      {
+        "text": "b/V̄",
+        "correct": true
+      },
+      {
+        "text": "a/(RT)",
+        "why": "a/(RT) appears later, when the terms are collected. The quantity being expanded is 1/(1 − b/V̄), so x = b/V̄."
+      },
+      {
+        "text": "V̄/b",
+        "why": "That is the inverse. RT/(V̄ − b) = (RT/V̄) × 1/(1 − b/V̄), so x = b/V̄, which is small for a dilute gas."
+      },
+      {
+        "text": "a/(V̄^2)",
+        "why": "a/(V̄^2) is the separate attraction term of the van der Waals equation and isn't expanded. Here x = b/V̄."
+      }
+    ],
+    "explanation": "Factoring V̄ out of V̄ − b gives RT/(V̄ − b) = (RT/V̄) × 1/(1 − b/V̄), so x = b/V̄. For a dilute gas b is much smaller than V̄, so the series 1 + b/V̄ + b^2/(V̄^2) + … converges quickly."
+  },
+  {
+    "id": "pc16-vdw-molecular-second-coefficient",
+    "type": "multiple-choice",
+    "prompt": "When the expanded van der Waals equation is written as Z = 1 + (…)(1/V̄) + …, what is the coefficient of 1/V̄, which is the second virial coefficient B_2V?",
+    "choices": [
+      {
+        "text": "b − a/(RT)",
+        "correct": true
+      },
+      {
+        "text": "b + a/(RT)",
+        "why": "The attraction term a/(V̄^2) is subtracted in the van der Waals equation, so it lowers the coefficient: B_2V = b − a/(RT)."
+      },
+      {
+        "text": "a/(RT) − b",
+        "why": "The signs are reversed. The excluded volume b adds to Z and the attraction a subtracts: B_2V = b − a/(RT)."
+      },
+      {
+        "text": "b^2",
+        "why": "b^2 is the coefficient of the next term, 1/(V̄^2). The coefficient of 1/V̄ is b − a/(RT)."
+      }
+    ],
+    "explanation": "Collecting terms gives P = RT/V̄ + (RTb − a)(1/V̄^2) + …, so Z = (PV̄)/(RT) = 1 + (b − a/(RT))(1/V̄) + …. Comparing with the virial equation, B_2V(T) = b − a/(RT)."
+  },
+  {
+    "id": "pc16-vdw-molecular-third-coefficient",
+    "type": "multiple-choice",
+    "prompt": "The expanded van der Waals equation gives Z = 1 + (b − a/(RT))(1/V̄) + b^2/(V̄^2) + …. What does this predict about the third virial coefficient, the coefficient of 1/V̄^2?",
+    "choices": [
+      {
+        "text": "It is b^2, which doesn't depend on temperature",
+        "correct": true
+      },
+      {
+        "text": "It is b^2 − a/(RT), which depends on temperature",
+        "why": "The attraction term only adds to the 1/V̄ coefficient. The 1/V̄^2 coefficient is simply b^2, with no T in it."
+      },
+      {
+        "text": "It is zero, since only pairs of molecules interact",
+        "why": "The expansion gives a nonzero 1/V̄^2 term, b^2. Only the 1/V̄ coefficient comes from pairs."
+      },
+      {
+        "text": "It is a^2/(RT)^2, which falls as T rises",
+        "why": "No a appears in the 1/V̄^2 term. Its coefficient is b^2, independent of temperature."
+      }
+    ],
+    "explanation": "In the expansion, the binomial series of 1/(1 − b/V̄) supplies b^2/(V̄^2), and nothing else contributes to that power. So the van der Waals equation predicts a third virial coefficient of b^2, independent of temperature."
+  },
+  {
+    "id": "pc16-vdw-molecular-model-potential",
+    "type": "multiple-choice",
+    "prompt": "To relate a and b to molecular properties, the section uses u(r) = ∞ for r ≤ σ and u(r) = −C_6/r^6 for r > σ. What does this model potential combine?",
+    "choices": [
+      {
+        "text": "A hard-sphere core with an r^−6 attractive tail",
+        "correct": true
+      },
+      {
+        "text": "An r^−12 repulsion with no attraction at all",
+        "why": "The model has no r^−12 term: the repulsion is an infinite hard wall at σ, and beyond it there is an r^−6 attraction."
+      },
+      {
+        "text": "Two hard spheres that don't interact at all beyond σ",
+        "why": "That is the pure hard-sphere model. This one adds the attraction −C_6/r^6 beyond σ."
+      },
+      {
+        "text": "A Coulomb attraction with a soft repulsion",
+        "why": "There are no charges here. The model is an infinite hard-sphere wall at σ plus a −C_6/r^6 attraction beyond it."
+      }
+    ],
+    "explanation": "The model combines the hard-sphere model with the attractive r^−6 part of the Lennard-Jones potential: an infinite wall for r ≤ σ and an attraction −C_6/r^6 for r > σ."
+  },
+  {
+    "id": "pc16-vdw-molecular-c6-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the model potential u(r) = −C_6/r^6 for r > σ, what does C_6 measure?",
+    "choices": [
+      {
+        "text": "How strong the r^−6 attraction is",
+        "correct": true
+      },
+      {
+        "text": "The diameter of the hard-sphere core",
+        "why": "The core diameter is σ. C_6 sets how strong the attraction −C_6/r^6 is outside the core."
+      },
+      {
+        "text": "The volume excluded by a mole of molecules",
+        "why": "That is b, which depends on σ. C_6 measures the strength of the r^−6 attraction."
+      },
+      {
+        "text": "The sixth virial coefficient of the gas",
+        "why": "The 6 refers to the power of r, not a virial coefficient. C_6 is the strength of the attraction that goes as r^−6."
+      }
+    ],
+    "explanation": "C_6 is the coefficient of the attractive potential, which is proportional to r^−6. A larger C_6 means a stronger attraction between the molecules at a given distance."
+  },
+  {
+    "id": "pc16-vdw-molecular-a-not-b",
+    "type": "multiple-choice",
+    "prompt": "In the section's molecular formulas, b = (2/3)πN_0σ^3 and a = (2πN_0^2 C_6)/(3σ^3). Which molecular parameter appears in a but not in b?",
+    "choices": [
+      {
+        "text": "C_6, the attraction strength",
+        "correct": true
+      },
+      {
+        "text": "σ, the diameter of the hard sphere",
+        "why": "σ appears in both: b goes as σ^3, and a as 1/σ^3. Only a contains C_6."
+      },
+      {
+        "text": "N_0, the Avogadro constant",
+        "why": "N_0 appears in both formulas, because a and b are molar constants. The parameter only in a is C_6."
+      },
+      {
+        "text": "T, the temperature of the gas",
+        "why": "Neither a nor b depends on temperature; T enters B_2V only through a/(RT). The parameter only in a is C_6."
+      }
+    ],
+    "explanation": "b depends only on the molecular size σ, while a is directly proportional to C_6, the attraction between particles whose potential energy goes as r^−6. So b reflects molecular size and a reflects molecular attraction."
+  },
+  {
+    "id": "pc16-vdw-molecular-four-times",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how does b = (2/3)πN_0σ^3 compare with the actual volume of a mole of the molecules themselves?",
+    "choices": [
+      {
+        "text": "It is four times as large",
+        "correct": true
+      },
+      {
+        "text": "It is exactly the same",
+        "why": "A molecule of diameter σ has volume (4/3)π(σ/2)^3 = πσ^3/6, so (2/3)πσ^3 per molecule is four times that."
+      },
+      {
+        "text": "It is half as large",
+        "why": "b is bigger, not smaller: two molecules can't approach closer than σ, centre to centre, so b is four times the molecular volume."
+      },
+      {
+        "text": "It is eight times as large",
+        "why": "Eight comes from using σ as a radius. With σ the diameter, (2/3)πσ^3 is four times the molecular volume πσ^3/6."
+      }
+    ],
+    "explanation": "b is four times the volume of the particles. Each molecule of diameter σ has volume (4/3)π(σ/2)^3 = πσ^3/6, and (2/3)πσ^3 = 4 × πσ^3/6."
+  },
+  {
+    "id": "pc16-vdw-molecular-force-power",
+    "type": "multiple-choice",
+    "prompt": "In the model, the attractive potential energy is u(r) = −C_6/r^6. How does the attractive force, −du/dr, depend on r?",
+    "choices": [
+      {
+        "text": "As r^−7",
+        "correct": true
+      },
+      {
+        "text": "As r^−6",
+        "why": "r^−6 is how the potential energy depends on r. The force is its derivative, which goes as r^−7."
+      },
+      {
+        "text": "As r^−5",
+        "why": "Differentiating r^−6 lowers the power by one, to r^−7, not raises it to r^−5."
+      },
+      {
+        "text": "As r^−12",
+        "why": "r^−12 is the Lennard-Jones repulsion, which this model replaces with a hard wall. The attractive force goes as r^−7."
+      }
+    ],
+    "explanation": "The potential energy goes as r^−6; the force, −du/dr = −6C_6/r^7, goes as r^−7. It is the potential energy, not the force, that is proportional to r^−6."
+  },
+  {
+    "id": "pc16-vdw-molecular-picture",
+    "type": "multiple-choice",
+    "prompt": "What picture of intermolecular forces does the section conclude the van der Waals equation assumes?",
+    "choices": [
+      {
+        "text": "Hard spheres up close, weak attractions farther apart",
+        "correct": true
+      },
+      {
+        "text": "Point particles that attract strongly at all distances",
+        "why": "The b term means the molecules have a size, and their attractions are weak. Up close they act as hard spheres."
+      },
+      {
+        "text": "Soft repulsion at all distances, with no attraction",
+        "why": "The a term is an attraction, and the repulsion is a hard wall, not soft. The picture is hard spheres plus weak attraction."
+      },
+      {
+        "text": "Strong attraction up close, repulsion farther apart",
+        "why": "It is the other way round: hard-sphere repulsion at small distances and weak attraction at larger distances."
+      }
+    ],
+    "explanation": "The van der Waals equation assumes the hard sphere model at small distances (giving b) and weak attractive forces at larger distances (giving a)."
+  },
+  {
+    "id": "pc16-vdw-molecular-argon-volume",
+    "type": "numeric",
+    "prompt": "The section shows that b is four times the volume of the particles. For argon, b = 0.0320 L/mol. What is the actual volume of one mole of argon atoms, in L/mol? (Give it as a decimal.)",
+    "answer": 0.008,
+    "explanation": "Volume of the atoms = b/4 = 0.0320/4 = 0.00800 L/mol, only 8 mL for a whole mole. b is four times larger because two atoms can't approach closer than one diameter, centre to centre."
+  },
+  {
+    "id": "pc16-vdw-molecular-sigma-doubled",
+    "type": "numeric",
+    "prompt": "In the section's model, a = (2πN_0^2 C_6)/(3σ^3). Gas Y has the same C_6 as gas X, but its molecules have twice the diameter σ. What is a_Y/a_X? (Give it as a decimal.)",
+    "answer": 0.125,
+    "explanation": "a is proportional to 1/σ^3, so a_Y/a_X = 1/2^3 = 1/8 = 0.125. With the same C_6, the attraction starts at a larger r, where −C_6/r^6 is much weaker."
+  },
+  {
+    "id": "pc16-vdw-molecular-zero-temperature",
+    "type": "numeric",
+    "prompt": "In the section's model, B_2(T) = (2/3)πN_0σ^3[1 − C_6/(k_B Tσ^6)], so B_2 = 0 when k_B T = C_6/σ^6. A gas has C_6/σ^6 = 5.5 × 10^−21 J. Using k_B = 1.381 × 10^−23 J/K, at what temperature is B_2 = 0?",
+    "answer": 398,
+    "unit": "K",
+    "explanation": "T = (C_6/σ^6)/k_B = (5.5 × 10^−21 J)/(1.381 × 10^−23 J/K) = 398 K. C_6/σ^6 is the depth of the attraction at contact, so B_2 vanishes when k_B T matches it."
+  },
+  {
+    "id": "pc16-vdw-molecular-b2-negative",
+    "type": "numeric",
+    "prompt": "In the section's model, B_2 = b[1 − C_6/(k_B Tσ^6)]. For a gas with b = 0.050 L/mol, at a temperature where C_6/(k_B Tσ^6) = 1.6, what is B_2, in L/mol? (Give it as a decimal.)",
+    "answer": -0.03,
+    "explanation": "B_2 = 0.050 × (1 − 1.6) = 0.050 × (−0.6) = −0.030 L/mol. The attraction at contact is larger than k_B T, so attractions win and B_2 is negative."
+  }
+]

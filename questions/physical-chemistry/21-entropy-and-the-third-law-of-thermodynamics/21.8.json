@@ -1,0 +1,129 @@
+[
+  {
+    "id": "pc21-residual-usual-agreement",
+    "type": "multiple-choice",
+    "prompt": "The entropy of a gas can be measured by calorimetry or calculated from spectroscopic data. According to the section, how do the two values compare for most molecules?",
+    "choices": [
+      {
+        "text": "They agree well",
+        "correct": true
+      },
+      {
+        "text": "The spectroscopic value is always about twice as large",
+        "why": "For most molecules the two methods agree closely. A gap appears only for a few substances, and it is called residual entropy."
+      },
+      {
+        "text": "They never agree, since the methods are unrelated",
+        "why": "They usually agree, which is a strong check on both methods. The few exceptions reveal residual entropy."
+      },
+      {
+        "text": "The calorimetric value is always larger",
+        "why": "For most molecules there is no real gap at all. Where a gap does appear, it is called residual entropy."
+      }
+    ],
+    "explanation": "For most molecules the calorimetric value, S°_exp, and the spectroscopic value, S°_calc, are in good agreement. The exceptions are the substances with residual entropy."
+  },
+  {
+    "id": "pc21-residual-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the residual entropy of a substance?",
+    "choices": [
+      {
+        "text": "S̄_calc − S̄_exp, spectroscopic minus calorimetric",
+        "correct": true
+      },
+      {
+        "text": "S̄_exp − S̄_calc, calorimetric minus spectroscopic",
+        "why": "The section takes the difference the other way round, S̄_calc − S̄_exp. The calculated value counts the disorder that calorimetry misses, so this difference is positive."
+      },
+      {
+        "text": "The entropy a gas has at 298 K and 1 bar",
+        "why": "That is the standard molar entropy S°, the quantity both methods aim at. Residual entropy is the gap between them, S̄_calc − S̄_exp."
+      },
+      {
+        "text": "The entropy gained when the crystal melts",
+        "why": "That is the entropy of fusion, ΔH_fus/T_m. Residual entropy is the gap S̄_calc − S̄_exp between the spectroscopic and calorimetric values."
+      }
+    ],
+    "explanation": "Residual entropy is S̄_calc − S̄_exp: what the spectroscopic calculation gives minus what calorimetry measures. It is the entropy a crystal keeps at 0 K, which calorimetry cannot see."
+  },
+  {
+    "id": "pc21-residual-which-materials",
+    "type": "multiple-choice",
+    "prompt": "Which substances does the section name as examples of materials with residual entropy?",
+    "choices": [
+      {
+        "text": "Glass, ice and carbon monoxide",
+        "correct": true
+      },
+      {
+        "text": "Solid neon, argon and krypton",
+        "why": "These freeze into orderly crystals and have no residual entropy. The section's examples are glass, ice and carbon monoxide, which freeze in disorder."
+      },
+      {
+        "text": "Diamond, sodium chloride and copper",
+        "why": "These form well-ordered crystals, close to the third law's ideal. The section's examples are glass, ice and carbon monoxide."
+      },
+      {
+        "text": "Liquid water, mercury and benzene",
+        "why": "Residual entropy belongs to solids at 0 K, not to liquids. The section's examples are glass, ice and carbon monoxide."
+      }
+    ],
+    "explanation": "Glass, ice and solid carbon monoxide can each be frozen into many different configurations instead of one perfect arrangement. That frozen-in disorder is their residual entropy."
+  },
+  {
+    "id": "pc21-residual-why-not-zero",
+    "type": "multiple-choice",
+    "prompt": "A solid keeps some entropy even at 0 K. According to the section, what is the reason?",
+    "choices": [
+      {
+        "text": "It is frozen in one of many configurations",
+        "correct": true
+      },
+      {
+        "text": "Its atoms still vibrate with thermal energy",
+        "why": "Thermal motion dies away at 0 K. What survives is the frozen-in choice among many configurations, because the solid is not a perfect crystal."
+      },
+      {
+        "text": "The third law applies only to gases",
+        "why": "The third law is about solids: a perfect crystal has S = 0 at 0 K. A solid that is not a perfect crystal keeps a residual entropy."
+      },
+      {
+        "text": "Its heat capacity stays large near 0 K",
+        "why": "Heat capacities go to zero as T → 0. The leftover entropy comes from the many configurations a disordered solid is frozen in."
+      }
+    ],
+    "explanation": "The third law's zero applies only to a perfect crystal, which has a single arrangement. A solid frozen into one of many possible configurations is not a perfect crystal, so it keeps a residual entropy at 0 K."
+  },
+  {
+    "id": "pc21-residual-calorimetry-misses",
+    "type": "multiple-choice",
+    "prompt": "Why does a calorimetric entropy come out too low for a substance with residual entropy?",
+    "choices": [
+      {
+        "text": "It assumes S = 0 at 0 K, but the solid starts above zero",
+        "correct": true
+      },
+      {
+        "text": "Calorimeters cannot measure heat below room temperature",
+        "why": "Calorimetric entropies are built from heat capacities measured down to very low temperatures. The error is in the starting point: calorimetry assumes S = 0 at 0 K."
+      },
+      {
+        "text": "The spectroscopic value counts each molecule twice",
+        "why": "The spectroscopic value is the right one here, since it counts all the microstates. The calorimetric value misses the entropy the disordered solid already has at 0 K."
+      },
+      {
+        "text": "Heat lost to the surroundings is never measured",
+        "why": "Careful calorimetry accounts for its heat losses, and most substances agree well. The gap comes from assuming S = 0 at 0 K for a solid that is not a perfect crystal."
+      }
+    ],
+    "explanation": "Calorimetry adds up entropy from 0 K upward, taking S = 0 at 0 K as the third law gives for a perfect crystal. A disordered solid already has some entropy at 0 K, so the calorimetric S̄_exp falls short of S̄_calc by the residual entropy."
+  },
+  {
+    "id": "pc21-residual-water-value",
+    "type": "numeric",
+    "prompt": "For water, the spectroscopic entropy is S̄_calc = 188.8 J/(mol·K) and the calorimetric entropy is S̄_exp = 185.4 J/(mol·K). What is the residual entropy, S̄_calc − S̄_exp, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 3.4,
+    "explanation": "S̄_calc − S̄_exp = 188.8 − 185.4 = 3.4 J/(mol·K). The calorimetric route starts from ice near 0 K, and ice is not a perfect crystal, so it keeps some disorder that calorimetry never counts."
+  }
+]

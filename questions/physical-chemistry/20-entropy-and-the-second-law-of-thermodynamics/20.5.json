@@ -1,0 +1,240 @@
+[
+  {
+    "id": "pc20-boltzmann-s-w-meaning",
+    "type": "multiple-choice",
+    "prompt": "In Boltzmann's equation S = k_B ln W, what does W count?",
+    "choices": [
+      {
+        "text": "The microstates available to the macrostate",
+        "correct": true
+      },
+      {
+        "text": "The number of molecules in the system",
+        "why": "The number of molecules affects how large W can get, but W itself counts arrangements: the microstates that make up the same macrostate."
+      },
+      {
+        "text": "The total energy of the system, in joules",
+        "why": "W is a pure number, not an energy. It counts the energetically equivalent ways of building the same macrostate."
+      },
+      {
+        "text": "The work done on the system",
+        "why": "Here W is not work. It is the number of microstates available in a macrostate."
+      }
+    ],
+    "explanation": "W is the number of microstates, the energetically equivalent ways a system can be built, that belong to one macrostate. More ways means a larger W and a larger entropy."
+  },
+  {
+    "id": "pc20-boltzmann-s-chaos",
+    "type": "multiple-choice",
+    "prompt": "Entropy is often called a measure of chaos or randomness. How does the section link this idea to energy?",
+    "choices": [
+      {
+        "text": "A more chaotic system disperses its energy more",
+        "correct": true
+      },
+      {
+        "text": "A more chaotic system has more total energy",
+        "why": "Chaos is about how energy is spread out, not how much there is. A more chaotic system has greater energy dispersal, and so greater entropy."
+      },
+      {
+        "text": "A more chaotic system is at a lower temperature",
+        "why": "The section ties chaos to the dispersal of energy, not to temperature. More dispersal means more entropy."
+      },
+      {
+        "text": "A more chaotic system keeps its energy in fewer states",
+        "why": "Energy held in a few states is the orderly case. Chaos goes with energy spread over many states, and so with greater entropy."
+      }
+    ],
+    "explanation": "Entropy is a measure of the dispersal of energy in a system. The more chaotic a system is, the more its energy is dispersed, and the greater its entropy."
+  },
+  {
+    "id": "pc20-boltzmann-s-units",
+    "type": "multiple-choice",
+    "prompt": "Why does S = k_B ln W come out in J/K?",
+    "choices": [
+      {
+        "text": "ln W is a pure number, and k_B is in J/K",
+        "correct": true
+      },
+      {
+        "text": "W carries the units, joules per kelvin",
+        "why": "W counts microstates, so it has no units, and neither does ln W. The units come from Boltzmann's constant."
+      },
+      {
+        "text": "ln W is measured in joules",
+        "why": "The logarithm of a count has no units. S takes the units of k_B, which are J/K."
+      },
+      {
+        "text": "k_B is in joules and W is in kelvin",
+        "why": "W is a count with no units, and k_B is in J/K, not J. So S = k_B ln W is in J/K."
+      }
+    ],
+    "explanation": "W counts microstates, so ln W is a pure number. Boltzmann's constant, k_B = 1.38 × 10^−23 J/K, carries the units, so S is in J/K."
+  },
+  {
+    "id": "pc20-boltzmann-s-two-moles",
+    "type": "multiple-choice",
+    "prompt": "Example 20.5.1 finds S = 5.76 J/K for 1.00 mol of randomly oriented CO. What would S be for 2.00 mol of CO, also randomly oriented?",
+    "choices": [
+      {
+        "text": "11.5 J/K, twice as much",
+        "correct": true
+      },
+      {
+        "text": "5.76 J/K, the same as for 1.00 mol",
+        "why": "Each molecule still has two orientations, but there are twice as many molecules. S = Nk_B ln 2 doubles when N doubles."
+      },
+      {
+        "text": "23.0 J/K, four times as much",
+        "why": "W goes from 2^(N) to 2^(2N), which is W squared, but squaring W only doubles ln W. So S doubles, to 11.5 J/K."
+      },
+      {
+        "text": "Only slightly more, since S grows as ln W",
+        "why": "Here ln W is itself proportional to N: ln 2^(N) = N ln 2. Doubling N doubles S, to 11.5 J/K."
+      }
+    ],
+    "explanation": "S = Nk_B ln 2 is proportional to the number of molecules, so doubling N doubles S: 2 × 5.76 J/K = 11.5 J/K. W itself is squared, from 2^(N) to 2^(2N), but its logarithm only doubles."
+  },
+  {
+    "id": "pc20-boltzmann-s-a-sum",
+    "type": "multiple-choice",
+    "prompt": "In W = (A!)/(Π a_j!), how is A related to the numbers a_j?",
+    "choices": [
+      {
+        "text": "A is the sum of all the a_j",
+        "correct": true
+      },
+      {
+        "text": "A is the product of all the a_j",
+        "why": "The denominator of W multiplies the factorials of the a_j. A is their sum, A = Σ a_j, the total number of systems."
+      },
+      {
+        "text": "A is the largest of the a_j",
+        "why": "A counts every system in the ensemble, not just those in the most popular state. A = Σ a_j."
+      },
+      {
+        "text": "A is the number of different states j",
+        "why": "That would count states, not systems. A = Σ a_j counts all the systems in the ensemble."
+      }
+    ],
+    "explanation": "a_j is the number of systems in state j, so adding the a_j over all states gives the total number of systems: A = Σ a_j."
+  },
+  {
+    "id": "pc20-boltzmann-s-most-even",
+    "type": "multiple-choice",
+    "prompt": "Four systems are shared between two states. Using W = (A!)/(a_1! a_2!) and S = k_B ln W, which distribution has the highest entropy?",
+    "choices": [
+      {
+        "text": "2 systems in each state",
+        "correct": true
+      },
+      {
+        "text": "All 4 systems in state 1",
+        "why": "With every system in one state, W = (4!)/(4!·0!) = 1 and S = 0, the lowest possible. Splitting them 2 and 2 gives W = 6."
+      },
+      {
+        "text": "3 systems in state 1 and 1 in state 2",
+        "why": "This gives W = (4!)/(3!·1!) = 4. The even split gives more, W = (4!)/(2!·2!) = 6, and so a higher S."
+      },
+      {
+        "text": "Every distribution has the same entropy",
+        "why": "W depends on how the systems are spread: 1 way for 4 and 0, 4 ways for 3 and 1, and 6 ways for 2 and 2. The largest W gives the largest S."
+      }
+    ],
+    "explanation": "W = (4!)/(2!·2!) = 6 for the even split, against 4 for a 3 and 1 split and 1 when all four are in one state. The largest W gives the largest S = k_B ln W."
+  },
+  {
+    "id": "pc20-boltzmann-s-co-two-to-n",
+    "type": "multiple-choice",
+    "prompt": "In Example 20.5.1, each of the N molecules in a CO crystal can point in either of two equivalent directions. Why is the number of microstates W = 2^(N)?",
+    "choices": [
+      {
+        "text": "Each molecule independently doubles the count",
+        "correct": true
+      },
+      {
+        "text": "Each molecule has two atoms, C and O",
+        "why": "The two atoms give a molecule its two ends, but W counts ways to orient all N molecules. Each independent two-way choice doubles the count, giving 2^(N)."
+      },
+      {
+        "text": "The crystal holds two moles of CO",
+        "why": "The example has 1.00 mol of CO. W = 2^(N) because each of the N molecules has two orientations and the choices multiply."
+      },
+      {
+        "text": "Only two of the molecules are free to turn around",
+        "why": "Every molecule can take either orientation, not just two of them. The N independent two-way choices multiply to 2^(N)."
+      }
+    ],
+    "explanation": "Each molecule's orientation is chosen independently, so the counts multiply: 2 × 2 × … × 2 = 2^(N). Then S = k_B ln 2^(N) = Nk_B ln 2."
+  },
+  {
+    "id": "pc20-boltzmann-s-co-microstate",
+    "type": "multiple-choice",
+    "prompt": "For the randomly oriented CO crystal of Example 20.5.1, what is one microstate?",
+    "choices": [
+      {
+        "text": "A choice of orientation for every molecule",
+        "correct": true
+      },
+      {
+        "text": "The orientation of one single molecule",
+        "why": "One molecule's direction is only part of the picture. A microstate fixes the orientations of all N molecules at once, and there are 2^(N) of them."
+      },
+      {
+        "text": "The crystal's total energy and temperature",
+        "why": "Those describe the macrostate, which all 2^(N) arrangements share. A microstate is one specific set of orientations for every molecule."
+      },
+      {
+        "text": "The entropy of 5.76 J/K found in the example",
+        "why": "That entropy belongs to the whole macrostate. A microstate is one full assignment of orientations, and counting all 2^(N) of them gives S."
+      }
+    ],
+    "explanation": "A microstate fixes the orientation of every molecule, such as CO, OC, OC, CO, …. All 2^(N) of them belong to the same macrostate, and counting them gives S = k_B ln 2^(N)."
+  },
+  {
+    "id": "pc20-boltzmann-s-n-meaning",
+    "type": "multiple-choice",
+    "prompt": "In Example 20.5.1, the entropy of 1.00 mol of randomly oriented CO is S = Nk_B ln 2. What is N?",
+    "choices": [
+      {
+        "text": "The number of molecules, 6.022 × 10^23",
+        "correct": true
+      },
+      {
+        "text": "The number of moles, 1.00",
+        "why": "Using moles would give S = 1.00 × k_B ln 2, far too small. N counts molecules: 1.00 mol × 6.022 × 10^23 mol^−1."
+      },
+      {
+        "text": "The number of orientations, 2",
+        "why": "The two orientations are already in the ln 2. N is the number of molecules, each with its own two-way choice."
+      },
+      {
+        "text": "The number of atoms in a molecule, 2",
+        "why": "N counts molecules, each of which can point two ways. For 1.00 mol, N = 6.022 × 10^23."
+      }
+    ],
+    "explanation": "Each molecule contributes k_B ln 2, so N must count molecules: N = 1.00 mol × 6.022 × 10^23 mol^−1. Then S = (6.022 × 10^23)(1.38 × 10^−23 J/K) ln 2 = 5.76 J/K."
+  },
+  {
+    "id": "pc20-boltzmann-s-four-molecules",
+    "type": "numeric",
+    "prompt": "A tiny model crystal holds 4 CO molecules, and each can point in either of two equivalent directions. How many microstates W does the crystal have?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "Each molecule's choice doubles the count, so W = 2 × 2 × 2 × 2 = 2^4 = 16. For N molecules the same reasoning gives W = 2^(N), as in Example 20.5.1."
+  },
+  {
+    "id": "pc20-boltzmann-s-tiny-system",
+    "type": "numeric",
+    "prompt": "A small model system has W = 1.0 × 10^6 microstates. Using S = k_B ln W, k_B = 1.38 × 10^−23 J/K and ln(1.0 × 10^6) = 13.8, what is its entropy, in J/K? (Type it in scientific notation, like 2.5e-22.)",
+    "answer": 1.9e-22,
+    "explanation": "S = (1.38 × 10^−23 J/K)(13.8) = 1.90 × 10^−22 J/K. A million microstates still give a tiny entropy, because k_B is small and ln W grows slowly."
+  },
+  {
+    "id": "pc20-boltzmann-s-three-orientations",
+    "type": "numeric",
+    "prompt": "In a crystal of 1.00 mol of molecules, each molecule can sit in any one of three equivalent orientations, so W = 3^(N). Using S = Nk_B ln 3, N = 6.022 × 10^23, k_B = 1.38 × 10^−23 J/K and ln 3 = 1.099, what is S, in J/K? (Give it as a decimal.)",
+    "answer": 9.13,
+    "explanation": "S = (6.022 × 10^23)(1.38 × 10^−23 J/K)(1.099) = 8.31 J/K × 1.099 = 9.13 J/K. That is more than the 5.76 J/K of the CO crystal in Example 20.5.1, because each molecule has three choices instead of two."
+  }
+]

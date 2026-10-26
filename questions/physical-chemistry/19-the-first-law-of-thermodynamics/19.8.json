@@ -1,0 +1,337 @@
+[
+  {
+    "id": "pc19-enthalpy-def-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the enthalpy, H?",
+    "choices": [
+      {
+        "text": "H ≡ U + PV",
+        "correct": true
+      },
+      {
+        "text": "H ≡ U − PV",
+        "why": "The PV term is added to U, not subtracted from it. Enthalpy is the internal energy plus the product of pressure and volume."
+      },
+      {
+        "text": "H ≡ q + w",
+        "why": "q + w is the change ΔU given by the first law, not a definition of H. Enthalpy is defined as H ≡ U + PV."
+      },
+      {
+        "text": "H ≡ U + P/V",
+        "why": "Pressure and volume are multiplied, not divided; PV has units of energy, just like U. The definition is H ≡ U + PV."
+      }
+    ],
+    "explanation": "Enthalpy is the internal energy plus the product of pressure and volume, H ≡ U + PV. The section introduces it as a new state function."
+  },
+  {
+    "id": "pc19-enthalpy-def-equiv-symbol",
+    "type": "multiple-choice",
+    "prompt": "The section writes H ≡ U + PV with the symbol ≡ rather than =. What does ≡ signal?",
+    "choices": [
+      {
+        "text": "The equality is a definition",
+        "correct": true
+      },
+      {
+        "text": "The two sides are only roughly equal",
+        "why": "Approximate equality is written ≈ or ∼. The ≡ sign marks the equation as the definition of H, so it holds exactly."
+      },
+      {
+        "text": "The equality holds only at constant pressure",
+        "why": "H ≡ U + PV holds in every state; constant pressure matters only for ΔH = q_P. The ≡ sign says the equation defines H."
+      },
+      {
+        "text": "The equality holds only for an ideal gas",
+        "why": "The definition applies to any system, solids and liquids included. The ≡ sign means the equation is a definition."
+      }
+    ],
+    "explanation": "The ≡ symbol shows that an equality is a definition, not a result derived from something else. Here it introduces enthalpy, built from U, P and V."
+  },
+  {
+    "id": "pc19-enthalpy-def-other-work",
+    "type": "multiple-choice",
+    "prompt": "The section points out that pressure–volume work, −P dV, is only one kind of work. Which other kind does it give as an example?",
+    "choices": [
+      {
+        "text": "Electrical work in a battery",
+        "correct": true
+      },
+      {
+        "text": "Expansion work done by a gas",
+        "why": "A gas expanding against a pressure does P–V work, the kind already named. The section's example of a different kind is electrical work in a battery."
+      },
+      {
+        "text": "Heat flowing into the system",
+        "why": "Heat is a transfer of energy, but it is not work. The section's example of another kind of work is electrical work in a battery."
+      },
+      {
+        "text": "A gas pushing back a piston",
+        "why": "Pushing a piston is P–V work itself. The section names electrical work in a battery as a different kind."
+      }
+    ],
+    "explanation": "P–V work is the important kind for gases, but many systems do other kinds of work, such as the electrical work of a battery. The enthalpy results in this section assume all such other work is zero."
+  },
+  {
+    "id": "pc19-enthalpy-def-no-work-du",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say a good way to measure ΔU is to make sure no work is done at all?",
+    "choices": [
+      {
+        "text": "Then ΔU equals the heat q",
+        "correct": true
+      },
+      {
+        "text": "Then ΔU equals zero",
+        "why": "With w = 0 the first law gives ΔU = q + 0 = q, which is usually not zero. The heat absorbed then measures ΔU."
+      },
+      {
+        "text": "Then the heat q equals zero",
+        "why": "Stopping the work does not stop heat from flowing. With no work, all of ΔU comes from heat: ΔU = q."
+      },
+      {
+        "text": "Then ΔU equals the work w",
+        "why": "If no work is done, w = 0, so ΔU can't show up as work. The first law leaves ΔU = q."
+      }
+    ],
+    "explanation": "With no work terms, the first law ΔU = q + w becomes ΔU = q + 0 = q. Measuring the heat then gives the energy change directly."
+  },
+  {
+    "id": "pc19-enthalpy-def-fixed-volume",
+    "type": "multiple-choice",
+    "prompt": "To make the P–V work term −P dV equal to zero, what must be kept constant?",
+    "choices": [
+      {
+        "text": "The volume",
+        "correct": true
+      },
+      {
+        "text": "The pressure",
+        "why": "At constant pressure −P dV is not zero if the volume changes. Only dV = 0, a fixed volume, removes P–V work."
+      },
+      {
+        "text": "The temperature",
+        "why": "A gas held at constant temperature can still expand and do work. P–V work vanishes only when dV = 0."
+      },
+      {
+        "text": "The internal energy",
+        "why": "Keeping U fixed does not stop the volume from changing. −P dV is zero only when the volume stays the same."
+      }
+    ],
+    "explanation": "−P dV vanishes when dV = 0, so the volume must be held fixed. The section notes that this can be hard to do in practice, which is why it introduces enthalpy."
+  },
+  {
+    "id": "pc19-enthalpy-def-why-define",
+    "type": "multiple-choice",
+    "prompt": "Why does the section introduce the enthalpy H instead of working only with the internal energy U?",
+    "choices": [
+      {
+        "text": "Constant P is easier to keep than constant V",
+        "correct": true
+      },
+      {
+        "text": "U cannot be changed by adding heat to a system",
+        "why": "Heat does change U; at constant volume ΔU = q_V. Enthalpy is introduced because constant volume is hard to keep, while constant pressure is easy."
+      },
+      {
+        "text": "U is not a state function, while H is one",
+        "why": "U is a state function too. H is useful because its change equals the heat at constant pressure, which is easy to arrange."
+      },
+      {
+        "text": "H is always much larger than U for any substance",
+        "why": "For solids and liquids H and U are nearly the same. H is useful because ΔH equals the heat measured at constant pressure, which is easy to keep."
+      }
+    ],
+    "explanation": "Measuring ΔU as heat needs a fixed volume, which is hard to keep, but a fixed pressure is easy. At constant pressure the heat measures ΔH instead, so enthalpy is the easier state function to deal with."
+  },
+  {
+    "id": "pc19-enthalpy-def-qp-conditions",
+    "type": "multiple-choice",
+    "prompt": "Under which conditions does the section find ΔH = q_P?",
+    "choices": [
+      {
+        "text": "Constant pressure, and only P–V work",
+        "correct": true
+      },
+      {
+        "text": "Constant volume, and only P–V work",
+        "why": "At constant volume the heat gives ΔU = q_V, not ΔH. ΔH = q_P needs constant pressure."
+      },
+      {
+        "text": "Constant pressure, plus electrical work",
+        "why": "Other work terms must be zero, or they would enter the energy balance. ΔH = q_P holds at constant pressure with no work other than P–V work."
+      },
+      {
+        "text": "Constant temperature, at any pressure",
+        "why": "A fixed temperature is not what is needed. ΔH = q_P requires constant pressure, so that the V dP term in dH drops out."
+      }
+    ],
+    "explanation": "From dH = δq + V dP, setting dP = 0 leaves dH = δq, so ΔH = q_P. This assumes there is no other work, such as electrical work."
+  },
+  {
+    "id": "pc19-enthalpy-def-product-rule",
+    "type": "multiple-choice",
+    "prompt": "Differentiating H = U + PV gives dH = dU + d(PV). How does the section write d(PV)?",
+    "choices": [
+      {
+        "text": "P dV + V dP",
+        "correct": true
+      },
+      {
+        "text": "P dV",
+        "why": "Both P and V can change, so d(PV) has two terms by the product rule: P dV + V dP."
+      },
+      {
+        "text": "V dP",
+        "why": "This misses the change in V. By the product rule, d(PV) = P dV + V dP."
+      },
+      {
+        "text": "P dV − V dP",
+        "why": "Both terms of the product rule come in with a plus sign. It gives d(PV) = P dV + V dP."
+      }
+    ],
+    "explanation": "By the product rule, d(PV) = P dV + V dP, so dH = dU + P dV + V dP. The P dV term later cancels the −P dV inside dU."
+  },
+  {
+    "id": "pc19-enthalpy-def-dh-result",
+    "type": "multiple-choice",
+    "prompt": "With only reversible P–V work, dU = −P dV + δq. Putting this into dH = dU + d(PV), which expression for dH results?",
+    "choices": [
+      {
+        "text": "dH = δq + V dP",
+        "correct": true
+      },
+      {
+        "text": "dH = δq − P dV",
+        "why": "The −P dV from dU is cancelled by the +P dV from d(PV). What is left is dH = δq + V dP."
+      },
+      {
+        "text": "dH = δq + P dV + V dP",
+        "why": "The two P dV terms have opposite signs and cancel. The result is dH = δq + V dP."
+      },
+      {
+        "text": "dH = δq",
+        "why": "That is true only when dP = 0, at constant pressure. In general a V dP term remains: dH = δq + V dP."
+      }
+    ],
+    "explanation": "Substituting gives dH = −P dV + δq + P dV + V dP, and the P dV terms cancel to leave dH = δq + V dP. At constant pressure dP = 0, so dH = δq."
+  },
+  {
+    "id": "pc19-enthalpy-def-melting-ice",
+    "type": "multiple-choice",
+    "prompt": "When a mole of ice melts at constant pressure, which quantity does the heat it absorbs measure?",
+    "choices": [
+      {
+        "text": "The molar heat of fusion, ΔH_fus",
+        "correct": true
+      },
+      {
+        "text": "The molar energy change, ΔU_fus",
+        "why": "At constant pressure, heat measures the enthalpy change, not ΔU. The volume changes as ice melts, so ΔU = q_V does not apply."
+      },
+      {
+        "text": "The work done by the melting ice",
+        "why": "The heat absorbed is not work. At constant pressure the heat equals ΔH, here the molar heat of fusion."
+      },
+      {
+        "text": "The heat capacity of liquid water",
+        "why": "A heat capacity links heat to a temperature change, but ice melts at a fixed temperature. The heat absorbed at constant pressure is ΔH_fus."
+      }
+    ],
+    "explanation": "The volume changes as ice melts, but the pressure stays constant as long as the weather does not change much. So the heat absorbed per mole is the enthalpy change ΔH_fus, and such enthalpies are measured and tabulated."
+  },
+  {
+    "id": "pc19-enthalpy-def-condensed",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say U ∼ H for condensed matter such as ice and liquid water, while U and H differ for gases?",
+    "choices": [
+      {
+        "text": "Their volume changes are small",
+        "correct": true
+      },
+      {
+        "text": "Their pressure is always zero",
+        "why": "Solids and liquids are under pressure too, usually about 1 atm. U ∼ H holds because their volume barely changes, so the PV term changes little."
+      },
+      {
+        "text": "They cannot absorb any heat",
+        "why": "Ice does absorb heat when it melts. U ∼ H because the small volume change keeps the P–V term small."
+      },
+      {
+        "text": "They have no internal energy",
+        "why": "Solids and liquids do have internal energy. The point is that their volume changes little, so ΔH and ΔU are nearly equal."
+      }
+    ],
+    "explanation": "H and U differ by PV, and for solids and liquids the volume changes very little, so ΔH and ΔU are almost the same. Only for gases, whose volumes change a lot, is the difference really important."
+  },
+  {
+    "id": "pc19-enthalpy-def-cp-cv-ideal",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas the section gives C_P = C_V + nR. What does this say about the two heat capacities?",
+    "choices": [
+      {
+        "text": "C_P is larger than C_V by nR",
+        "correct": true
+      },
+      {
+        "text": "C_V is larger than C_P by nR",
+        "why": "nR is added to C_V to give C_P, so C_P is the larger one. The difference is C_P − C_V = nR."
+      },
+      {
+        "text": "C_P and C_V are equal for an ideal gas",
+        "why": "They are nearly equal for most solids and liquids, but not for a gas. For an ideal gas C_P is larger than C_V by nR."
+      },
+      {
+        "text": "C_P is nR times larger than C_V",
+        "why": "nR is added to C_V, not multiplied by it. The difference is C_P − C_V = nR."
+      }
+    ],
+    "explanation": "C_P = C_V + nR means C_P − C_V = nR for an ideal gas. For most other materials the two heat capacities differ very little."
+  },
+  {
+    "id": "pc19-enthalpy-def-path-function",
+    "type": "multiple-choice",
+    "prompt": "The section ends by calling the heat capacity a path function. What does it mean by this?",
+    "choices": [
+      {
+        "text": "Its value depends on what is kept constant",
+        "correct": true
+      },
+      {
+        "text": "It is the same whatever is kept constant",
+        "why": "C_P and C_V differ, by nR for an ideal gas. The heat capacity depends on the path, that is, on what is held constant."
+      },
+      {
+        "text": "It depends only on the temperature",
+        "why": "Temperature matters, but so does the path: heating at constant P and at constant V give different heat capacities."
+      },
+      {
+        "text": "It depends only on the initial and final states",
+        "why": "That describes a state function, like U or H. A path function such as the heat capacity depends on how the change is made."
+      }
+    ],
+    "explanation": "Heating at constant pressure and at constant volume gives different heat capacities, C_P and C_V. Because the value depends on the path taken, the heat capacity is a path function."
+  },
+  {
+    "id": "pc19-enthalpy-def-argon-cp",
+    "type": "numeric",
+    "prompt": "Argon behaves as an ideal gas, for which the section gives C_P = C_V + nR. A 3.00 mol sample of argon has C_V = 37.4 J/K. Using R = 8.314 J/(mol·K), what is C_P of the sample, in J/K? (Give it as a decimal.)",
+    "answer": 62.3,
+    "explanation": "C_P = C_V + nR = 37.4 J/K + 3.00 mol × 8.314 J/(mol·K) = 37.4 + 24.9 = 62.3 J/K. For a gas, the constant-pressure heat capacity is clearly larger than the constant-volume one."
+  },
+  {
+    "id": "pc19-enthalpy-def-ice-pv",
+    "type": "numeric",
+    "prompt": "When 1 mol of ice melts at a pressure of 1.0 × 10^5 Pa, its volume shrinks by 1.6 × 10^−6 m^3. Ignoring the sign, how large is the term PΔV, in J? (Give it as a decimal.)",
+    "answer": 0.16,
+    "unit": "J",
+    "explanation": "PΔV = 1.0 × 10^5 Pa × 1.6 × 10^−6 m^3 = 0.16 J. That is tiny next to the heat of fusion of ice, about 6.01 kJ/mol, so for melting ice ΔH and ΔU are nearly equal."
+  },
+  {
+    "id": "pc19-enthalpy-def-gas-h-minus-u",
+    "type": "numeric",
+    "prompt": "From H ≡ U + PV, the difference H − U is PV, and for an ideal gas PV = nRT. Using R = 8.314 J/(mol·K), how much larger is H than U for 1.00 mol of an ideal gas at 500 K, in J?",
+    "answer": 4157,
+    "unit": "J",
+    "explanation": "H − U = PV = nRT = 1.00 mol × 8.314 J/(mol·K) × 500 K = 4157 J, about 4.2 kJ. For a gas the PV term is large, which is why U and H differ for gases."
+  }
+]

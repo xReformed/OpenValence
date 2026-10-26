@@ -1,0 +1,577 @@
+[
+  {
+    "id": "pc16-lennard-jones-what-it-describes",
+    "type": "multiple-choice",
+    "prompt": "What does the Lennard-Jones potential describe?",
+    "choices": [
+      {
+        "text": "The energy of two non-bonded particles versus distance",
+        "correct": true
+      },
+      {
+        "text": "The pressure of a gas as a function of its volume",
+        "why": "That is an equation of state, such as PV = nRT. The Lennard-Jones potential gives the interaction energy of one pair of particles at distance r."
+      },
+      {
+        "text": "The kinetic energy of a molecule versus temperature",
+        "why": "Kinetic energy doesn't appear in it. The Lennard-Jones potential is a potential energy that depends on the distance between two particles."
+      },
+      {
+        "text": "The energy of an electron versus its distance from a nucleus",
+        "why": "That is the Coulomb attraction inside an atom. The Lennard-Jones potential describes two neutral, non-bonding atoms or molecules."
+      }
+    ],
+    "explanation": "The Lennard-Jones potential describes the potential energy of interaction between two non-bonding atoms or molecules as a function of the distance between them. It includes both their attraction and their repulsion."
+  },
+  {
+    "id": "pc16-lennard-jones-which-pair",
+    "type": "multiple-choice",
+    "prompt": "For which of these pairs of particles is the Lennard-Jones potential meant?",
+    "choices": [
+      {
+        "text": "Two neutral argon atoms",
+        "correct": true
+      },
+      {
+        "text": "A Na+ ion and a Cl− ion",
+        "why": "Ions of opposite charge attract through the much stronger Coulomb force. The Lennard-Jones potential is for neutral, non-ionic particles."
+      },
+      {
+        "text": "The two atoms in an H2 molecule",
+        "why": "Those atoms are joined by a covalent bond. The Lennard-Jones potential describes non-bonding particles."
+      },
+      {
+        "text": "An electron and a proton in an atom",
+        "why": "That is a Coulomb attraction between charges. The Lennard-Jones potential describes neutral, non-bonding atoms or molecules, such as two argon atoms."
+      }
+    ],
+    "explanation": "The Lennard-Jones potential describes the attraction and repulsion between nonionic, non-bonding particles, such as two noble-gas atoms. The section's examples use argon and xenon."
+  },
+  {
+    "id": "pc16-lennard-jones-two-parameters",
+    "type": "multiple-choice",
+    "prompt": "Which two parameters fix the shape of the Lennard-Jones potential, V(r) = 4ε[(σ/r)^12 − (σ/r)^6], for a given pair of particles?",
+    "choices": [
+      {
+        "text": "ε and σ",
+        "correct": true
+      },
+      {
+        "text": "a and b",
+        "why": "Those are the van der Waals constants of a gas. The Lennard-Jones potential of a pair is fixed by ε (the well depth) and σ (where V = 0)."
+      },
+      {
+        "text": "T and P",
+        "why": "Temperature and pressure describe the gas, not the pair potential. V(r) depends only on r and the two parameters ε and σ."
+      },
+      {
+        "text": "r and V",
+        "why": "r is the variable and V is the result. The parameters that set the curve for a given pair are ε and σ."
+      }
+    ],
+    "explanation": "For a given pair of particles, the Lennard-Jones potential is set by two parameters: ε, the well depth, and σ, the separation at which the potential is zero. The distance r is the variable."
+  },
+  {
+    "id": "pc16-lennard-jones-repulsive-term",
+    "type": "multiple-choice",
+    "prompt": "In V(r) = 4ε[(σ/r)^12 − (σ/r)^6], which term describes the repulsion between the two particles?",
+    "choices": [
+      {
+        "text": "The (σ/r)^12 term",
+        "correct": true
+      },
+      {
+        "text": "The (σ/r)^6 term",
+        "why": "The (σ/r)^6 term, with its minus sign, is the attraction. The repulsion is the steep, short-ranged (σ/r)^12 term."
+      },
+      {
+        "text": "The factor 4ε in front",
+        "why": "4ε only scales the whole curve. The repulsion is the (σ/r)^12 term."
+      },
+      {
+        "text": "Neither; repulsion is left out",
+        "why": "The model does include repulsion: it is the (σ/r)^12 term, which rises steeply at short distances."
+      }
+    ],
+    "explanation": "The short-ranged (σ/r)^12 term describes the repulsive forces between the particles. The longer-ranged (σ/r)^6 term, which is subtracted, describes the attraction."
+  },
+  {
+    "id": "pc16-lennard-jones-attractive-forces",
+    "type": "multiple-choice",
+    "prompt": "Which interactions does the section list as the attractive forces that the Lennard-Jones potential accounts for?",
+    "choices": [
+      {
+        "text": "Dipole–dipole, dipole–induced dipole and London forces",
+        "correct": true
+      },
+      {
+        "text": "Ionic, covalent and metallic bonds between the two atoms",
+        "why": "Those are chemical bonds. The Lennard-Jones potential is for non-bonding particles; its attraction covers dipole–dipole, dipole–induced dipole and London forces."
+      },
+      {
+        "text": "Electron overlap, nuclear repulsion and gravity",
+        "why": "Electron overlap and nuclear repulsion push particles apart, and gravity is far too weak to matter. The attractions are dipole–dipole, dipole–induced dipole and London forces."
+      },
+      {
+        "text": "Only hydrogen bonds between polar molecules",
+        "why": "The model is not limited to hydrogen bonding. Its attraction covers dipole–dipole, dipole–induced dipole and London forces, which even nonpolar atoms feel."
+      }
+    ],
+    "explanation": "The Lennard-Jones potential accounts for attractive forces (dipole–dipole, dipole–induced dipole and London interactions) and for repulsive forces. Its smoother attractive term mainly represents the London dispersion forces."
+  },
+  {
+    "id": "pc16-lennard-jones-large-r-term",
+    "type": "multiple-choice",
+    "prompt": "At large separations, which term of the Lennard-Jones potential dominates?",
+    "choices": [
+      {
+        "text": "The attractive (σ/r)^6 term, which falls off more slowly",
+        "correct": true
+      },
+      {
+        "text": "The repulsive (σ/r)^12 term, which falls off more slowly",
+        "why": "(σ/r)^12 falls off much faster than (σ/r)^6. At large r the repulsion is negligible and the attraction dominates."
+      },
+      {
+        "text": "Neither: both terms are exactly zero beyond σ",
+        "why": "Both terms only approach zero as r grows; they are not zero beyond σ. The slower-falling (σ/r)^6 attraction dominates there, which is why V is negative."
+      },
+      {
+        "text": "Both terms are equal at every large separation",
+        "why": "The two terms are equal only at r = σ, where V = 0. Farther out the (σ/r)^6 attraction is larger."
+      }
+    ],
+    "explanation": "The (σ/r)^12 term is short-ranged and the (σ/r)^6 term is longer-ranged. At large r the attraction wins, so V is negative and approaches zero from below; at small r the steep repulsion wins."
+  },
+  {
+    "id": "pc16-lennard-jones-coefficient-a",
+    "type": "multiple-choice",
+    "prompt": "The Lennard-Jones potential is sometimes written V(r) = A/r^12 − B/r^6. What is A in terms of ε and σ?",
+    "choices": [
+      {
+        "text": "4εσ^12",
+        "correct": true
+      },
+      {
+        "text": "4εσ^6",
+        "why": "That is B, the coefficient of the attractive r^−6 term. The repulsive coefficient is A = 4εσ^12."
+      },
+      {
+        "text": "εσ^12",
+        "why": "The factor 4 is missing. Multiplying out 4ε(σ/r)^12 gives A/r^12 with A = 4εσ^12."
+      },
+      {
+        "text": "4ε/σ^12",
+        "why": "σ belongs in the numerator: 4ε(σ/r)^12 = 4εσ^12/r^12, so A = 4εσ^12."
+      }
+    ],
+    "explanation": "Multiplying out 4ε[(σ/r)^12 − (σ/r)^6] gives 4εσ^12/r^12 − 4εσ^6/r^6, so A = 4εσ^12 and B = 4εσ^6."
+  },
+  {
+    "id": "pc16-lennard-jones-epsilon",
+    "type": "multiple-choice",
+    "prompt": "What does ε represent in the Lennard-Jones potential?",
+    "choices": [
+      {
+        "text": "The depth of the well, or how strongly they attract",
+        "correct": true
+      },
+      {
+        "text": "The separation at which the potential energy is zero",
+        "why": "That separation is σ. ε is an energy: the depth of the potential well, which measures how strongly the particles attract."
+      },
+      {
+        "text": "The separation at which the potential energy is lowest",
+        "why": "That separation is r_min, slightly greater than σ. ε is the depth of the well at that point."
+      },
+      {
+        "text": "The energy needed to push the two particles to r = 0",
+        "why": "Pushing the particles together costs an ever-larger energy because of the steep repulsion. ε is the depth of the attractive well."
+      }
+    ],
+    "explanation": "ε is the well depth: the potential energy at the minimum is −ε. A larger ε means the two particles attract each other more strongly."
+  },
+  {
+    "id": "pc16-lennard-jones-sigma",
+    "type": "multiple-choice",
+    "prompt": "What is σ in the Lennard-Jones potential?",
+    "choices": [
+      {
+        "text": "The separation at which the potential energy is zero",
+        "correct": true
+      },
+      {
+        "text": "The separation at which the potential energy is lowest",
+        "why": "The minimum lies slightly beyond σ. At r = σ itself the two terms cancel and V = 0."
+      },
+      {
+        "text": "The depth of the potential well",
+        "why": "The well depth is ε, an energy. σ is a distance: the separation at which V = 0."
+      },
+      {
+        "text": "The radius of a single particle",
+        "why": "σ is the separation of two centres, a collision diameter. The van der Waals radius of one particle is half of it, σ/2."
+      }
+    ],
+    "explanation": "σ is the distance at which the intermolecular potential between the two particles is zero. It measures how close two non-bonding particles can get."
+  },
+  {
+    "id": "pc16-lennard-jones-collision-diameter",
+    "type": "multiple-choice",
+    "prompt": "Because σ measures how close two non-bonding particles can get, what is it also called?",
+    "choices": [
+      {
+        "text": "The collision (van der Waals) diameter",
+        "correct": true
+      },
+      {
+        "text": "The van der Waals radius of one particle",
+        "why": "σ is a centre-to-centre distance, so it is a diameter. The van der Waals radius is half of it, σ/2."
+      },
+      {
+        "text": "The equilibrium bond length of the pair",
+        "why": "The particles are not bonded. σ is their collision diameter, the separation at which V = 0."
+      },
+      {
+        "text": "The mean free path between collisions",
+        "why": "The mean free path is the distance traveled between collisions. σ is the collision diameter, a contact distance."
+      }
+    ],
+    "explanation": "σ gives a measure of how close two non-bonding particles can get, so it is called the collision (van der Waals) diameter. The van der Waals radius of one particle is σ/2."
+  },
+  {
+    "id": "pc16-lennard-jones-r-measured",
+    "type": "multiple-choice",
+    "prompt": "In the Lennard-Jones potential, how is the separation r measured?",
+    "choices": [
+      {
+        "text": "From the centre of one particle to the centre of the other",
+        "correct": true
+      },
+      {
+        "text": "From the surface of one particle to the surface of the other",
+        "why": "With surfaces, touching particles would have r = 0. The Lennard-Jones r runs from centre to centre."
+      },
+      {
+        "text": "From one particle to the nearest container wall",
+        "why": "The potential describes two particles, not a particle and a wall. r is their centre-to-centre distance."
+      },
+      {
+        "text": "From the centre of the pair to the nearest third particle",
+        "why": "The potential involves only two particles. r is the distance between their centres."
+      }
+    ],
+    "explanation": "r is the distance of separation between the two particles, measured from the centre of one particle to the centre of the other."
+  },
+  {
+    "id": "pc16-lennard-jones-larger-epsilon",
+    "type": "multiple-choice",
+    "prompt": "Krypton has a larger Lennard-Jones ε than argon. What does this tell you?",
+    "choices": [
+      {
+        "text": "Two Kr atoms attract each other more strongly",
+        "correct": true
+      },
+      {
+        "text": "Two Kr atoms can come closer together",
+        "why": "How close the atoms can get is set by σ, not ε. A larger ε means a deeper well: stronger attraction."
+      },
+      {
+        "text": "The Kr potential crosses zero at a larger distance",
+        "why": "Where V = 0 is set by σ. ε is the well depth, so a larger ε means stronger attraction."
+      },
+      {
+        "text": "The Kr potential well is shallower",
+        "why": "It is the other way round: ε is the well depth, so a larger ε means a deeper well."
+      }
+    ],
+    "explanation": "ε is the well depth and a measure of how strongly the two particles attract each other. A larger ε for Kr means a deeper well and a stronger attraction between two Kr atoms."
+  },
+  {
+    "id": "pc16-lennard-jones-approach",
+    "type": "multiple-choice",
+    "prompt": "As two non-bonded particles approach each other from very far apart, how does their Lennard-Jones potential energy first change?",
+    "choices": [
+      {
+        "text": "It falls from zero to negative values",
+        "correct": true
+      },
+      {
+        "text": "It rises from zero to positive values",
+        "why": "At large separations the attraction dominates, so the energy goes down, not up. It rises only when the particles are pushed very close."
+      },
+      {
+        "text": "It stays exactly zero until they touch",
+        "why": "The attraction reaches out to large distances, so the energy dips below zero well before the particles meet."
+      },
+      {
+        "text": "It jumps straight to −ε",
+        "why": "The energy changes smoothly. It falls gradually from zero and reaches −ε only at the minimum."
+      }
+    ],
+    "explanation": "At infinite separation the potential energy is taken as zero. As the particles come closer they become bound and the energy drops below zero, reaching its lowest value, −ε, at the equilibrium separation."
+  },
+  {
+    "id": "pc16-lennard-jones-minimum-location",
+    "type": "multiple-choice",
+    "prompt": "Where is the minimum of the Lennard-Jones potential compared with σ?",
+    "choices": [
+      {
+        "text": "At a distance slightly greater than σ",
+        "correct": true
+      },
+      {
+        "text": "Exactly at σ",
+        "why": "At r = σ the potential is zero, not at its minimum. The minimum lies slightly farther out."
+      },
+      {
+        "text": "At σ/2",
+        "why": "At σ/2 the particles overlap and the repulsion is huge. The minimum lies slightly beyond σ."
+      },
+      {
+        "text": "At a distance many times greater than σ",
+        "why": "Far out the potential is almost zero. The minimum is only slightly beyond σ."
+      }
+    ],
+    "explanation": "The potential energy reaches its minimum at a separation slightly greater than σ (at r_min = 2^(1/6)σ ≈ 1.12σ). There the force is zero and the pair is most stable."
+  },
+  {
+    "id": "pc16-lennard-jones-force-at-minimum",
+    "type": "multiple-choice",
+    "prompt": "What is the force between two particles at the minimum of the Lennard-Jones potential?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "Strongly repulsive",
+        "why": "The force is repulsive only closer in, where the curve rises steeply as r shrinks. At the minimum it is zero."
+      },
+      {
+        "text": "Weakly attractive",
+        "why": "The force is attractive only farther out, where the energy rises toward zero. At the minimum it is zero."
+      },
+      {
+        "text": "Equal to ε",
+        "why": "ε is an energy, the well depth, not a force. At the minimum the curve is flat, so the force is zero."
+      }
+    ],
+    "explanation": "At the minimum the potential is flat, so there is no force. The pair is most stable there and stays at that separation until an external force acts on it."
+  },
+  {
+    "id": "pc16-lennard-jones-force-beyond-eq",
+    "type": "multiple-choice",
+    "prompt": "Two particles are farther apart than their equilibrium (minimum-energy) separation. What kind of force acts between them?",
+    "choices": [
+      {
+        "text": "Attractive",
+        "correct": true
+      },
+      {
+        "text": "Repulsive",
+        "why": "Repulsion acts when the particles are closer than the equilibrium separation. Farther out, the force pulls them together."
+      },
+      {
+        "text": "No force at all",
+        "why": "There is no force only exactly at the equilibrium separation. Beyond it, the force is attractive."
+      },
+      {
+        "text": "Repulsive, but only beyond σ",
+        "why": "Beyond σ the energy is negative and the attraction dominates. Any separation larger than the equilibrium one gives an attractive force."
+      }
+    ],
+    "explanation": "When r is greater than the equilibrium distance the force is attractive; when r is less, it is repulsive; and at the equilibrium distance there is no force."
+  },
+  {
+    "id": "pc16-lennard-jones-repulsion-cause",
+    "type": "multiple-choice",
+    "prompt": "Why do two non-bonded particles repel each other so strongly when pushed closer than their equilibrium separation?",
+    "choices": [
+      {
+        "text": "Their electrons are forced into each other's orbitals",
+        "correct": true
+      },
+      {
+        "text": "Their nuclei begin to form a covalent bond with each other",
+        "why": "Bond formation would lower the energy, not raise it. The repulsion comes from the electrons being forced to occupy each other's orbitals."
+      },
+      {
+        "text": "Their London attraction switches off completely",
+        "why": "Losing an attraction alone wouldn't produce a steep repulsion. The repulsion comes from overlapping electron orbitals."
+      },
+      {
+        "text": "They run out of kinetic energy",
+        "why": "The Lennard-Jones potential is a potential energy; it doesn't depend on motion. The repulsion comes from overlapping electron orbitals."
+      }
+    ],
+    "explanation": "When the particles are pressed past their equilibrium distance, their electrons are forced to occupy each other's orbitals. Each particle tries to keep its own orbital space, so the energy rises rapidly."
+  },
+  {
+    "id": "pc16-lennard-jones-rubber-balls",
+    "type": "multiple-choice",
+    "prompt": "In the section's picture of two rubber balls, why does it become very hard to push the balls any closer once they touch?",
+    "choices": [
+      {
+        "text": "Repulsion becomes far greater than attraction",
+        "correct": true
+      },
+      {
+        "text": "Attraction becomes far greater than repulsion",
+        "why": "Stronger attraction would pull the balls together. Once they touch, the repulsion is far greater than the attraction."
+      },
+      {
+        "text": "The balls stop interacting once they touch",
+        "why": "Touching is where the interaction is strongest. The balls invade each other's space and repel."
+      },
+      {
+        "text": "Gravity between the balls becomes too strong",
+        "why": "Gravity between the balls is negligible. Pushing them closer is hard because the repulsion is far greater than the attraction."
+      }
+    ],
+    "explanation": "As the balls begin to invade each other's space they repel, and the force of repulsion is far greater than the force of attraction. Increasing amounts of energy must be added to push them closer, as with the steep r^−12 wall."
+  },
+  {
+    "id": "pc16-lennard-jones-argon-inside-sigma",
+    "type": "multiple-choice",
+    "prompt": "Two argon atoms (σ = 3.40 Å) are 3.0 Å apart. If they are pushed to 2.8 Å, what should happen to their potential energy according to the Lennard-Jones potential?",
+    "choices": [
+      {
+        "text": "It becomes more positive",
+        "correct": true
+      },
+      {
+        "text": "It becomes more negative",
+        "why": "Inside σ the potential is already positive and rises steeply as r shrinks. A more negative energy would mean the atoms don't follow the Lennard-Jones potential."
+      },
+      {
+        "text": "It stays at zero",
+        "why": "V is zero only at r = σ = 3.40 Å. At 3.0 Å and 2.8 Å the atoms are inside σ, where V is positive and rising."
+      },
+      {
+        "text": "It reaches its minimum, −ε",
+        "why": "The minimum lies slightly beyond σ, not inside it. Moving inward from 3.0 Å climbs the repulsive wall."
+      }
+    ],
+    "explanation": "Any r smaller than σ gives a positive Lennard-Jones energy, and it rises steeply as r decreases. Both 3.0 Å and 2.8 Å are inside σ = 3.40 Å, so pushing the atoms closer makes V more positive."
+  },
+  {
+    "id": "pc16-lennard-jones-argon-negative",
+    "type": "multiple-choice",
+    "prompt": "The section finds V = −0.94 kJ/mol for two argon atoms 4.0 Å apart (σ = 3.40 Å). Why is V negative there?",
+    "choices": [
+      {
+        "text": "r is larger than σ, so the attraction outweighs the repulsion",
+        "correct": true
+      },
+      {
+        "text": "r is smaller than σ, so the repulsion outweighs the attraction",
+        "why": "4.0 Å is larger than σ = 3.40 Å. Beyond σ the attraction wins, which makes V negative."
+      },
+      {
+        "text": "Argon has a negative ε",
+        "why": "ε is a positive well depth (0.997 kJ/mol for argon). V is negative because r = 4.0 Å is beyond σ, where the attraction wins."
+      },
+      {
+        "text": "All Lennard-Jones energies are negative",
+        "why": "Inside σ the energy is positive, and it rises steeply. Only beyond σ, as here, is it negative."
+      }
+    ],
+    "explanation": "For r > σ, (σ/r)^6 is larger than (σ/r)^12, so V = 4ε[(σ/r)^12 − (σ/r)^6] is negative: 4(0.997)(0.142 − 0.377) = −0.94 kJ/mol. For r < σ it would be positive."
+  },
+  {
+    "id": "pc16-lennard-jones-why-used",
+    "type": "multiple-choice",
+    "prompt": "The 12-6 Lennard-Jones model is not the most faithful description of the real intermolecular potential. Why is it used so widely?",
+    "choices": [
+      {
+        "text": "It is quick and convenient to compute",
+        "correct": true
+      },
+      {
+        "text": "It is exact for every noble gas",
+        "why": "The section says the 12-6 model is not the most faithful representation, so it is not exact. It is used because it is computationally expedient."
+      },
+      {
+        "text": "It is the only potential with a well",
+        "why": "Many potentials have a well. The 12-6 model is popular because it is computationally expedient."
+      },
+      {
+        "text": "It was derived exactly from quantum mechanics",
+        "why": "It is a model, not an exact quantum result. Its wide use is due to its computational expediency."
+      }
+    ],
+    "explanation": "The 12-6 Lennard-Jones model is not the most faithful representation of the potential energy surface; its use is widespread because of its computational expediency."
+  },
+  {
+    "id": "pc16-lennard-jones-force-fields",
+    "type": "multiple-choice",
+    "prompt": "Apart from being an important model in itself, what does the section say the Lennard-Jones potential often forms part of?",
+    "choices": [
+      {
+        "text": "Many force fields used for modeling",
+        "correct": true
+      },
+      {
+        "text": "The ideal gas law",
+        "why": "The ideal gas law ignores intermolecular forces entirely. The Lennard-Jones potential is a building block of many force fields."
+      },
+      {
+        "text": "The Schrödinger equation for the hydrogen atom",
+        "why": "The hydrogen atom has only Coulomb forces between its proton and electron. The Lennard-Jones potential is a building block of many force fields."
+      },
+      {
+        "text": "Methods for measuring bond lengths in crystals",
+        "why": "It is not a measuring method. The Lennard-Jones potential frequently forms one of the building blocks of many force fields."
+      }
+    ],
+    "explanation": "Apart from being an important model in itself, the Lennard-Jones potential frequently forms one of the building blocks of many force fields used to model atoms and molecules."
+  },
+  {
+    "id": "pc16-lennard-jones-krypton-radius",
+    "type": "numeric",
+    "prompt": "For krypton, the Lennard-Jones σ is 0.360 nm. The van der Waals radius is half of the collision diameter σ. What is the van der Waals radius of a krypton atom, in nm? (Give it as a decimal.)",
+    "answer": 0.18,
+    "unit": "nm",
+    "explanation": "r = σ/2 = 0.360 nm/2 = 0.180 nm. σ is the closest centre-to-centre approach of two atoms, so one atom's radius is half of it."
+  },
+  {
+    "id": "pc16-lennard-jones-neon-at-sigma",
+    "type": "numeric",
+    "prompt": "For two neon atoms, ε = 0.296 kJ/mol and σ = 2.75 Å. Using V(r) = 4ε[(σ/r)^12 − (σ/r)^6], what is V at r = 2.75 Å, in kJ/mol?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "At r = σ, σ/r = 1, so V = 4(0.296)(1 − 1) = 0 kJ/mol. That is the definition of σ: the separation at which the potential energy is zero."
+  },
+  {
+    "id": "pc16-lennard-jones-methane-minimum",
+    "type": "numeric",
+    "prompt": "At the minimum of the Lennard-Jones potential, (σ/r)^6 = 1/2, so (σ/r)^12 = 1/4. For two methane molecules, ε = 1.23 kJ/mol. Using V = 4ε[(σ/r)^12 − (σ/r)^6], what is V at the minimum, in kJ/mol? (Give it as a decimal.)",
+    "answer": -1.23,
+    "explanation": "V = 4(1.23)(1/4 − 1/2) = 4(1.23)(−1/4) = −1.23 kJ/mol. The energy at the minimum is always −ε, which is why ε is called the well depth."
+  },
+  {
+    "id": "pc16-lennard-jones-xenon-rmin",
+    "type": "numeric",
+    "prompt": "The minimum of the Lennard-Jones potential lies at r_min = 2^(1/6)σ ≈ 1.122σ. For xenon, σ = 0.410 nm. What is r_min for two xenon atoms, in nm? (Give it as a decimal.)",
+    "answer": 0.46,
+    "unit": "nm",
+    "explanation": "r_min = 1.122 × 0.410 nm = 0.460 nm. As the section says, the minimum lies at a separation slightly greater than σ."
+  },
+  {
+    "id": "pc16-lennard-jones-krypton-energy",
+    "type": "numeric",
+    "prompt": "For two krypton atoms, ε = 1.42 kJ/mol and σ = 3.60 Å. At r = 4.50 Å, σ/r = 0.800, so (σ/r)^6 = 0.262 and (σ/r)^12 = 0.0687. Using V = 4ε[(σ/r)^12 − (σ/r)^6], what is V, in kJ/mol? (Give it as a decimal.)",
+    "answer": -1.1,
+    "tolerance": 0.02,
+    "explanation": "V = 4(1.42)(0.0687 − 0.262) = 5.68 × (−0.193) = −1.10 kJ/mol. At 4.50 Å the atoms are beyond σ, so the attraction wins; they are also past the minimum (about 4.04 Å), so V is less negative than −ε."
+  },
+  {
+    "id": "pc16-lennard-jones-halve-r",
+    "type": "numeric",
+    "prompt": "If the separation r between two particles is halved, by what factor does the repulsive term (σ/r)^12 increase?",
+    "answer": 4096,
+    "tolerance": 0,
+    "explanation": "Halving r doubles σ/r, so (σ/r)^12 grows by 2^12 = 4096. The attractive term (σ/r)^6 grows by only 2^6 = 64, which is why the repulsion is so steep and dominates at short range."
+  }
+]

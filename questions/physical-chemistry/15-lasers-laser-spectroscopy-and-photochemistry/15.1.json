@@ -1,0 +1,607 @@
+[
+  {
+    "id": "pc15-relaxation-radiative-pair",
+    "type": "multiple-choice",
+    "prompt": "Which two relaxation processes does the section name as the radiative decay pathways of an excited molecule, the ones that give off light?",
+    "choices": [
+      {
+        "text": "Fluorescence and phosphorescence",
+        "correct": true
+      },
+      {
+        "text": "Internal conversion and intersystem crossing",
+        "why": "Both are radiationless: they move the molecule between electronic states without giving off a photon. The radiative pathways are fluorescence and phosphorescence."
+      },
+      {
+        "text": "Vibrational relaxation and external conversion",
+        "why": "These lose energy as heat, within the molecule or to colliding molecules, not as light. The radiative pathways are fluorescence and phosphorescence."
+      },
+      {
+        "text": "Fluorescence and internal conversion",
+        "why": "Fluorescence gives off light, but internal conversion is radiationless. The second radiative pathway is phosphorescence."
+      }
+    ],
+    "explanation": "An excited molecule can give off its energy as light in two ways: fluorescence and phosphorescence. The other routes, such as vibrational relaxation, internal conversion and intersystem crossing, are radiationless."
+  },
+  {
+    "id": "pc15-relaxation-fluor-vs-phos",
+    "type": "multiple-choice",
+    "prompt": "What is the key difference between the transition responsible for fluorescence and the one responsible for phosphorescence?",
+    "choices": [
+      {
+        "text": "Only phosphorescence changes the spin multiplicity",
+        "correct": true
+      },
+      {
+        "text": "Only fluorescence changes the spin multiplicity",
+        "why": "It's the other way around. Fluorescence connects states of the same multiplicity (S_1 → S_0); phosphorescence goes from a triplet to a singlet (T_1 → S_0)."
+      },
+      {
+        "text": "Only phosphorescence gives off a photon",
+        "why": "Both give off a photon; they are the two radiative pathways. They differ in whether the spin multiplicity changes."
+      },
+      {
+        "text": "Only fluorescence starts from an excited electronic state",
+        "why": "Both start from excited states: fluorescence from S_1 and phosphorescence from T_1. The difference is that phosphorescence changes the spin multiplicity."
+      }
+    ],
+    "explanation": "Fluorescence is emission between states of the same spin multiplicity, usually S_1 → S_0. Phosphorescence, T_1 → S_0, changes the multiplicity, which makes it much less likely and so much slower."
+  },
+  {
+    "id": "pc15-relaxation-fluorescence-lifetime",
+    "type": "multiple-choice",
+    "prompt": "According to the section, about how long do fluorescence lifetimes last?",
+    "choices": [
+      {
+        "text": "10^−9 to 10^−6 s",
+        "correct": true
+      },
+      {
+        "text": "About 10^−15 s",
+        "why": "That is the timescale of light absorption, which is almost instantaneous. Fluorescence takes longer, 10^−9 to 10^−6 s."
+      },
+      {
+        "text": "10^−3 to 100 s",
+        "why": "That is the range for phosphorescence, which changes the spin multiplicity. Fluorescence is much faster, 10^−9 to 10^−6 s."
+      },
+      {
+        "text": "From hours to days",
+        "why": "Even molecular phosphorescence lasts at most minutes. Fluorescence, with no change in multiplicity, lasts only 10^−9 to 10^−6 s."
+      }
+    ],
+    "explanation": "Fluorescence involves no change in spin multiplicity, so it is fast: its lifetimes are about 10^−9 to 10^−6 s, from nanoseconds to microseconds. Phosphorescence lasts from milliseconds to minutes."
+  },
+  {
+    "id": "pc15-relaxation-triplet-lifetime",
+    "type": "numeric",
+    "prompt": "The section says the lifetime of the triplet state is longer than that of the singlet state by a factor of roughly 10^4. If a molecule's excited singlet state lives 3 × 10^−9 s, about how long would its triplet state live, in s? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 3e-05,
+    "unit": "s",
+    "explanation": "(3 × 10^−9 s) × 10^4 = 3 × 10^−5 s, or 30 μs. The triplet lives longer because returning to the singlet ground state needs a change in spin, which makes the transition unlikely."
+  },
+  {
+    "id": "pc15-relaxation-excited-singlet-spin",
+    "type": "multiple-choice",
+    "prompt": "When one electron of a molecule with a singlet ground state is promoted to make an excited singlet state, how is its spin related to that of the electron it was paired with?",
+    "choices": [
+      {
+        "text": "Still opposite, as in the ground state",
+        "correct": true
+      },
+      {
+        "text": "Parallel, because its spin flips",
+        "why": "A spin flip gives the excited triplet state. In the excited singlet, the promoted electron keeps its spin, so the two spins stay opposite (paired)."
+      },
+      {
+        "text": "Unrelated, since they are now in different orbitals",
+        "why": "Being in different orbitals doesn't make the spins unrelated. In the excited singlet, the promoted electron keeps its original spin, opposite to its partner's."
+      },
+      {
+        "text": "Zero, because an excited electron has no spin",
+        "why": "Every electron keeps its spin of 1/2. In the excited singlet, the promoted electron's spin stays opposite to its former partner's."
+      }
+    ],
+    "explanation": "In an excited singlet state, the promoted electron keeps the spin orientation it had in the ground state, so the two spins are still paired and S = 0. If its spin flips, so that the two spins are parallel, the state is a triplet."
+  },
+  {
+    "id": "pc15-relaxation-triplet-magnetic",
+    "type": "multiple-choice",
+    "prompt": "How does the magnetic behavior of a typical molecule in its excited triplet state differ from its behavior in its singlet ground state?",
+    "choices": [
+      {
+        "text": "Paramagnetic in the triplet, diamagnetic in the ground state",
+        "correct": true
+      },
+      {
+        "text": "Diamagnetic in the triplet, paramagnetic in the ground state",
+        "why": "That is reversed. The ground state has all its spins paired, so it is diamagnetic; the triplet has two unpaired, parallel spins, so it is paramagnetic."
+      },
+      {
+        "text": "Diamagnetic in both, as the electron count is unchanged",
+        "why": "The number of electrons is the same, but in the triplet two of them are unpaired with parallel spins. That makes the triplet paramagnetic."
+      },
+      {
+        "text": "Paramagnetic in both, as every electron has spin 1/2",
+        "why": "In the ground state the spins are all paired and cancel, so it is diamagnetic. Only the triplet, with two unpaired parallel spins, is paramagnetic."
+      }
+    ],
+    "explanation": "With all its spins paired, the ground state is diamagnetic and weakly repelled by a magnetic field. In the triplet state two unpaired electrons have parallel spins, so the molecule is paramagnetic and drawn into a field."
+  },
+  {
+    "id": "pc15-relaxation-triplet-below-singlet",
+    "type": "multiple-choice",
+    "prompt": "In many molecules the lowest triplet state, T_1, lies below the excited singlet state S_1. Which rule does the section use to explain why?",
+    "choices": [
+      {
+        "text": "Hund's rule: maximizing spin lowers the energy",
+        "correct": true
+      },
+      {
+        "text": "The Pauli exclusion principle: pairing spins lowers it",
+        "why": "The Pauli principle only forbids two electrons from having the same four quantum numbers. Hund's rule says the arrangement with parallel spins is the lower one."
+      },
+      {
+        "text": "The Franck–Condon principle: nuclei stay put",
+        "why": "That principle explains the intensities of vibronic bands, not which spin state is lower. Hund's rule says the state with more parallel spins lies lower."
+      },
+      {
+        "text": "The selection rule ΔS = 0",
+        "why": "That rule says which transitions are likely, not which state is lower. Hund's rule puts the triplet, with parallel spins, below the singlet."
+      }
+    ],
+    "explanation": "By Hund's rule, when electrons singly occupy orbitals, the arrangement with the most parallel spins is lowest in energy, as in nitrogen's quartet ground state. The same argument puts T_1, with two parallel spins, below S_1."
+  },
+  {
+    "id": "pc15-relaxation-weak-triplet-absorption",
+    "type": "multiple-choice",
+    "prompt": "Why are absorption bands from the ground state directly to an excited triplet state much weaker than singlet–singlet absorption bands?",
+    "choices": [
+      {
+        "text": "A change in spin makes the transition unlikely",
+        "correct": true
+      },
+      {
+        "text": "Triplet states lie too high to reach with light",
+        "why": "T_1 lies below S_1, so its energy is within reach. The problem is the change in spin, which makes the transition improbable."
+      },
+      {
+        "text": "Triplet states have no vibrational levels",
+        "why": "Triplet states have vibrational levels just as singlets do. The bands are weak because the singlet-to-triplet transition changes the spin."
+      },
+      {
+        "text": "Triplet states can be reached only by heating",
+        "why": "Heat doesn't flip spins. A triplet is usually reached from an excited singlet by intersystem crossing; direct absorption is weak because the spin must change."
+      }
+    ],
+    "explanation": "Absorption from S_0 straight into a triplet would change the spin multiplicity, breaking the selection rule ΔS = 0. Such transitions have a low probability, so their bands are weak; triplets are usually populated from an excited singlet by intersystem crossing instead."
+  },
+  {
+    "id": "pc15-relaxation-jablonski-layout",
+    "type": "multiple-choice",
+    "prompt": "How is a Jablonski diagram arranged?",
+    "choices": [
+      {
+        "text": "Energy runs up; columns sort states by multiplicity",
+        "correct": true
+      },
+      {
+        "text": "Time runs across; line thickness shows energy",
+        "why": "Time is not plotted. Energy runs up the vertical axis, and each column usually holds the states of one spin multiplicity."
+      },
+      {
+        "text": "Bond length runs across, as on a potential energy curve",
+        "why": "That describes potential energy curves, like those used for the Franck–Condon principle. A Jablonski diagram has energy vertical and groups states into columns by spin multiplicity."
+      },
+      {
+        "text": "Wavelength runs across, as in an absorption spectrum",
+        "why": "A spectrum plots intensity against wavelength. A Jablonski diagram is an energy diagram: energy runs up, and each column usually holds one spin multiplicity."
+      }
+    ],
+    "explanation": "A Jablonski diagram is an energy diagram with energy on the vertical axis. It is divided into columns, each usually for one spin multiplicity, such as singlets on the left and triplets on the right."
+  },
+  {
+    "id": "pc15-relaxation-jablonski-wavy",
+    "type": "multiple-choice",
+    "prompt": "In a Jablonski diagram, what does a wavy arrow represent?",
+    "choices": [
+      {
+        "text": "A nonradiative transition, with no photon",
+        "correct": true
+      },
+      {
+        "text": "The absorption of a photon by the molecule",
+        "why": "Absorption is drawn as a straight arrow, since a photon's energy goes to an electron. Wavy arrows show transitions without radiation."
+      },
+      {
+        "text": "The emission of a photon by fluorescence",
+        "why": "Fluorescence and phosphorescence are drawn as straight arrows, because they give off photons. Wavy arrows show nonradiative transitions."
+      },
+      {
+        "text": "A rotational transition within one level",
+        "why": "Typical Jablonski diagrams leave out rotational levels. Wavy arrows show nonradiative transitions, such as internal conversion and vibrational relaxation."
+      }
+    ],
+    "explanation": "Straight arrows show a photon being absorbed or emitted; wavy arrows show nonradiative transitions, such as vibrational relaxation, internal conversion and intersystem crossing."
+  },
+  {
+    "id": "pc15-relaxation-jablonski-thin-lines",
+    "type": "multiple-choice",
+    "prompt": "In a Jablonski diagram, each electronic state is marked by a bold horizontal line. What do the thinner horizontal lines drawn within each electronic state represent?",
+    "choices": [
+      {
+        "text": "Vibrational energy levels",
+        "correct": true
+      },
+      {
+        "text": "Rotational energy levels",
+        "why": "Rotational levels are even more closely spaced, and typical Jablonski diagrams leave them out. The thinner lines are vibrational levels."
+      },
+      {
+        "text": "Other molecules in the sample",
+        "why": "The diagram shows the states of one molecule. The thinner lines within each electronic state are its vibrational levels."
+      },
+      {
+        "text": "Excited states of the solvent",
+        "why": "The diagram shows only the molecule's own states. The thinner lines within each electronic state are its vibrational levels."
+      }
+    ],
+    "explanation": "Bold lines mark the electronic states. Within each are many vibrational levels, of which only a few are drawn; the rotational levels within them are usually left out."
+  },
+  {
+    "id": "pc15-relaxation-labels",
+    "type": "multiple-choice",
+    "prompt": "On a Jablonski diagram, a molecule's states are labeled S_0, S_1, S_2 and so on, and T_1, T_2 and so on. What do S_0 and T_1 stand for?",
+    "choices": [
+      {
+        "text": "The singlet ground state and the lowest triplet state",
+        "correct": true
+      },
+      {
+        "text": "The first excited singlet and the first excited triplet",
+        "why": "The first excited singlet is S_1; the subscript 0 marks the ground state. So S_0 is the singlet ground state, and T_1 is the lowest triplet state."
+      },
+      {
+        "text": "The ground vibrational level and the first rotational level",
+        "why": "S and T label spin multiplicity: S for singlet, T for triplet. S_0 is the singlet ground state, and T_1 is the lowest triplet state."
+      },
+      {
+        "text": "The start and the end of the excited-state lifetime",
+        "why": "The labels are states, not times. S_0 is the singlet ground state, and T_1 is the lowest excited triplet state."
+      }
+    ],
+    "explanation": "S labels singlet states and T triplet states. S_0 is the singlet ground state, where most molecules are at room temperature; S_1, S_2 and S_3 are excited singlets, and T_1, T_2 and T_3 are excited triplets."
+  },
+  {
+    "id": "pc15-relaxation-favored-route",
+    "type": "multiple-choice",
+    "prompt": "An excited molecule can return to the ground state by several routes. According to the section, which route is favored?",
+    "choices": [
+      {
+        "text": "The fastest one, with the least time excited",
+        "correct": true
+      },
+      {
+        "text": "The one that gives off the most light as it relaxes",
+        "why": "Light isn't favored for its own sake: if a radiationless route is faster, fluorescence is weak or absent. The most rapid route wins."
+      },
+      {
+        "text": "The one with the fewest steps",
+        "why": "The section judges routes by their speed, not by their number of steps. The most rapid route, with the least time in the excited state, is favored."
+      },
+      {
+        "text": "The one that changes the spin multiplicity",
+        "why": "Spin changes are slow, so routes that need one are usually not favored. The fastest route is the one taken."
+      }
+    ],
+    "explanation": "The favored deactivation process is the most rapid one, which spends the least time in the excited state. If a radiationless route has the more favorable rate constant, fluorescence is weak or absent."
+  },
+  {
+    "id": "pc15-relaxation-quantum-yield",
+    "type": "numeric",
+    "prompt": "The fluorescence quantum yield φ is the fraction of excited molecules that fluoresce. When fluorescence (rate constant k_F) competes with radiationless decay (rate constant k_nr), φ = (k_F)/(k_F + k_nr). What is φ for k_F = 1.0 × 10^8 s^−1 and k_nr = 3.0 × 10^8 s^−1? (Give it as a decimal.)",
+    "answer": 0.25,
+    "explanation": "φ = (1.0 × 10^8)/(1.0 × 10^8 + 3.0 × 10^8) = 1.0/4.0 = 0.25. Only a quarter of the excited molecules fluoresce: when the radiationless route has the more favorable rate constant, the fluorescence is weak."
+  },
+  {
+    "id": "pc15-relaxation-lifetime-from-k",
+    "type": "numeric",
+    "prompt": "An excited singlet state that decays only by fluorescence, with rate constant k = 2.0 × 10^8 s^−1, has a lifetime τ = 1/k. What is τ, in ns?",
+    "answer": 5,
+    "unit": "ns",
+    "explanation": "τ = 1/(2.0 × 10^8 s^−1) = 5.0 × 10^−9 s = 5.0 ns. That is inside the section's range for fluorescence lifetimes, 10^−9 to 10^−6 s."
+  },
+  {
+    "id": "pc15-relaxation-red-shift-why",
+    "type": "multiple-choice",
+    "prompt": "Fluorescence photons usually have a longer wavelength than the photons that excited the molecule. What usually happens in between to cause this?",
+    "choices": [
+      {
+        "text": "Vibrational relaxation in the excited state",
+        "correct": true
+      },
+      {
+        "text": "Intersystem crossing to a triplet state",
+        "why": "That route leads to phosphorescence, not fluorescence. Fluorescence is red-shifted because the molecule first loses vibrational energy within the excited state."
+      },
+      {
+        "text": "Absorption of a second, weaker photon",
+        "why": "No second photon is needed. The molecule loses some vibrational energy as heat before it emits, so the photon it gives off has less energy."
+      },
+      {
+        "text": "An upward shift of the ground state's energy",
+        "why": "The ground state doesn't move. The excited molecule first relaxes to the lowest vibrational level of the excited state, so the gap it emits across is smaller."
+      }
+    ],
+    "explanation": "Excitation often lands the molecule in a high vibrational level of the excited state. It is much more likely to lose that vibrational energy as heat, relaxing to the lowest vibrational level, than to emit at once; the gap it then emits across is smaller, so the photon has less energy and a longer wavelength."
+  },
+  {
+    "id": "pc15-relaxation-heat-lost",
+    "type": "numeric",
+    "prompt": "A molecule absorbs a 3.10 eV photon, relaxes to the lowest vibrational level of its excited state, and then fluoresces a 2.70 eV photon, ending back in the lowest level of the ground state. How much energy, in eV, did it lose as heat in all? (Give it as a decimal.)",
+    "answer": 0.4,
+    "unit": "eV",
+    "explanation": "Energy is conserved, so the heat is the difference between the two photons: 3.10 eV − 2.70 eV = 0.40 eV. That energy was lost by vibrational relaxation, which is why the fluorescence photon has less energy than the absorbed one."
+  },
+  {
+    "id": "pc15-relaxation-blue-photon",
+    "type": "numeric",
+    "prompt": "A molecule fluoresces blue light at 450 nm. Using E = hc/λ with h = 6.626 × 10^−34 J·s, c = 3.00 × 10^8 m/s and 450 nm = 4.50 × 10^−7 m, what is the energy of one fluorescence photon, in J? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 4.417e-19,
+    "unit": "J",
+    "explanation": "E = (6.626 × 10^−34 J·s × 3.00 × 10^8 m/s)/(4.50 × 10^−7 m) = (1.988 × 10^−25 J·m)/(4.50 × 10^−7 m) = 4.42 × 10^−19 J. The photon that excited the molecule carried more energy than this, since fluorescence is usually red-shifted."
+  },
+  {
+    "id": "pc15-relaxation-fluorescence-start",
+    "type": "multiple-choice",
+    "prompt": "Vibrational relaxation is faster than fluorescence. For a diatomic molecule, from which vibrational level do the fluorescence lines therefore start?",
+    "choices": [
+      {
+        "text": "v′ = 0, the lowest level of the excited state",
+        "correct": true
+      },
+      {
+        "text": "The level reached by the absorbed photon",
+        "why": "That level relaxes before the molecule has time to fluoresce. Emission starts from v′ = 0 of the excited state."
+      },
+      {
+        "text": "v″ = 0, the lowest level of the ground state",
+        "why": "v″ = 0 of the ground state is where absorption starts. Fluorescence starts from v′ = 0 of the excited state and ends on various ground-state levels."
+      },
+      {
+        "text": "The highest vibrational level of the excited state",
+        "why": "The molecule loses vibrational energy quickly, so it reaches the bottom, v′ = 0, before it fluoresces."
+      }
+    ],
+    "explanation": "Because vibrational relaxation is faster than fluorescence, the excited molecule reaches v′ = 0 before it emits. The fluorescence spectrum is made of lines from v′ = 0 to the various vibrational levels v″ of the ground state."
+  },
+  {
+    "id": "pc15-relaxation-collisions",
+    "type": "multiple-choice",
+    "prompt": "How does a small molecule usually get rid of its extra vibrational energy during vibrational relaxation?",
+    "choices": [
+      {
+        "text": "By passing it to other molecules in collisions",
+        "correct": true
+      },
+      {
+        "text": "By emitting an infrared photon at each downward step",
+        "why": "Vibrational energy isn't exchanged only through photons. A small molecule mostly hands it to other molecules when they collide."
+      },
+      {
+        "text": "By spreading it into distant bonds of its own",
+        "why": "That works for a big molecule, with many bonds and angles to take up the energy. A small molecule has few, so it passes the energy on in collisions."
+      },
+      {
+        "text": "By breaking one of its bonds",
+        "why": "Vibrational relaxation removes energy a little at a time without breaking bonds. A small molecule passes the energy on in collisions with other molecules."
+      }
+    ],
+    "explanation": "A large molecule can move vibrational energy into bonds and angles away from the electronic transition, but a small molecule usually transfers it in collisions: as one molecule drops to a lower vibrational level, the other moves up. The energy ends up as heat."
+  },
+  {
+    "id": "pc15-relaxation-energy-scale",
+    "type": "multiple-choice",
+    "prompt": "Exercises 15.1.1 and 15.1.2 compare the energies of electronic and vibrational transitions. How do they compare?",
+    "choices": [
+      {
+        "text": "Vibrational gaps are about ten times smaller",
+        "correct": true
+      },
+      {
+        "text": "Vibrational gaps are about ten times larger",
+        "why": "Electronic absorptions are hundreds of kJ/mol, vibrational ones only tens. The vibrational gaps are the smaller ones, by about an order of magnitude."
+      },
+      {
+        "text": "They are about the same size",
+        "why": "The exercises give 186 to 665 kJ/mol for electronic absorptions but only 11.5 to 37 kJ/mol for vibrational ones: about ten times smaller."
+      },
+      {
+        "text": "Vibrational gaps are a million times smaller",
+        "why": "The difference is about one order of magnitude, not six: tens of kJ/mol for vibrations against hundreds for electronic transitions."
+      }
+    ],
+    "explanation": "The exercises give 186 to 665 kJ/mol for electronic absorptions and 11.5 to 37 kJ/mol for vibrational ones. Vibrational energy gaps are about an order of magnitude smaller, so an excited molecule can shed its energy in many small vibrational steps."
+  },
+  {
+    "id": "pc15-relaxation-kjmol-violet",
+    "type": "numeric",
+    "prompt": "Exercise 15.1.1 finds the energy of an electronic absorption per mole of photons, E = hcN_A/λ. With hcN_A = 1.197 × 10^5 kJ·nm/mol, what is the energy of an absorption at 400 nm (violet light), in kJ/mol? (Give it as a decimal.)",
+    "answer": 299.25,
+    "explanation": "E = (1.197 × 10^5 kJ·nm/mol)/(400 nm) = 299.25 kJ/mol, about 299 kJ/mol. That lies between the exercise's values for 180 nm (665.0 kJ/mol) and 476 nm (251.5 kJ/mol)."
+  },
+  {
+    "id": "pc15-relaxation-kjmol-wavenumber",
+    "type": "numeric",
+    "prompt": "Exercise 15.1.2 does the same for vibrational absorptions given in wavenumbers. Combining the constants, E (in kJ/mol) = 0.01197 × ν̃ (in cm^−1). What is the energy of a vibrational absorption at 2000 cm^−1, in kJ/mol? (Give it as a decimal.)",
+    "answer": 23.94,
+    "explanation": "E = 0.01197 × 2000 = 23.94 kJ/mol. That is roughly ten times less than a typical electronic absorption, such as 299 kJ/mol at 400 nm."
+  },
+  {
+    "id": "pc15-relaxation-ic-definition",
+    "type": "multiple-choice",
+    "prompt": "What is internal conversion?",
+    "choices": [
+      {
+        "text": "A radiationless crossing between states of the same multiplicity",
+        "correct": true
+      },
+      {
+        "text": "A radiationless crossing between states of different multiplicity",
+        "why": "A crossing that changes multiplicity, such as S_1 → T_1, is intersystem crossing. Internal conversion keeps the multiplicity, as in S_1 → S_0."
+      },
+      {
+        "text": "Emission of a photon between two singlet states",
+        "why": "Emission between singlets is fluorescence. Internal conversion gives off no photon."
+      },
+      {
+        "text": "Energy transfer from the excited molecule to the solvent",
+        "why": "That is external conversion. Internal conversion happens within the molecule, as it crosses to a lower electronic state of the same multiplicity."
+      }
+    ],
+    "explanation": "Internal conversion is the radiationless crossover between electronic states of the same spin multiplicity, such as S_1 → S_0. The electron slides from a low vibrational level of the upper state into a high vibrational level of the lower one, then keeps dropping by vibrational relaxation."
+  },
+  {
+    "id": "pc15-relaxation-ic-overlap",
+    "type": "multiple-choice",
+    "prompt": "What condition lets an excited molecule return to its ground electronic state by internal conversion, without giving off a photon?",
+    "choices": [
+      {
+        "text": "Low excited-state levels overlap high ground-state ones",
+        "correct": true
+      },
+      {
+        "text": "The excited state must lie very far above the ground state",
+        "why": "It's the reverse: the excited state must be low enough that its lower vibrational levels overlap the higher vibrational levels of the ground state."
+      },
+      {
+        "text": "The excited state must be a triplet",
+        "why": "A triplet returning to the singlet ground state changes multiplicity, which is intersystem crossing. Internal conversion needs overlapping vibrational levels of states with the same multiplicity."
+      },
+      {
+        "text": "The sample must be cooled to near 0 K",
+        "why": "No cooling is needed; internal conversion turns energy into heat. It needs the excited state's low vibrational levels to overlap the ground state's high ones."
+      }
+    ],
+    "explanation": "Internal conversion back to the ground state can happen when the excited state is low enough in energy that some of its lower vibrational levels overlap the higher vibrational levels of the ground state. The electron slides across and relaxes the rest of the way vibrationally, turning the absorbed energy into heat."
+  },
+  {
+    "id": "pc15-relaxation-isc-definition",
+    "type": "multiple-choice",
+    "prompt": "Which change does intersystem crossing typically bring about in an organic molecule?",
+    "choices": [
+      {
+        "text": "S_1 → T_1, a change of spin multiplicity",
+        "correct": true
+      },
+      {
+        "text": "S_1 → S_0, with no change of multiplicity",
+        "why": "A radiationless S_1 → S_0 step keeps the multiplicity, so it is internal conversion. Intersystem crossing changes the multiplicity, as in S_1 → T_1."
+      },
+      {
+        "text": "S_0 → T_1, by absorbing a photon",
+        "why": "Direct absorption into a triplet is spin-forbidden and weak. Intersystem crossing is radiationless and takes the molecule from an excited singlet to a triplet."
+      },
+      {
+        "text": "T_1 → S_0, by emitting a photon",
+        "why": "Emission from T_1 to S_0 is phosphorescence. Intersystem crossing is a radiationless change of multiplicity, such as S_1 → T_1."
+      }
+    ],
+    "explanation": "Intersystem crossing is a radiationless transition between states of different spin multiplicity. The common case is S_1 → T_1, which leaves the molecule caught in a triplet state between the excited singlet and the ground state."
+  },
+  {
+    "id": "pc15-relaxation-isc-spin-orbit",
+    "type": "multiple-choice",
+    "prompt": "Intersystem crossing from S_1 to T_1 is spin-forbidden and slower than internal conversion. What lets it happen at all?",
+    "choices": [
+      {
+        "text": "Spin–orbit coupling",
+        "correct": true
+      },
+      {
+        "text": "Collisions with solvent molecules",
+        "why": "Collisions remove vibrational energy but don't flip spins. The spin change in intersystem crossing is made possible by spin–orbit coupling."
+      },
+      {
+        "text": "Absorption of a second photon",
+        "why": "Intersystem crossing is radiationless; no photon is involved. Spin–orbit coupling allows the spin change, slowly."
+      },
+      {
+        "text": "The Pauli exclusion principle",
+        "why": "The Pauli principle doesn't flip spins. The step from S_1 to T_1 can still happen, slowly, through spin–orbit coupling."
+      }
+    ],
+    "explanation": "Moving from S_1 to T_1 changes the spin, so it is spin-forbidden, but spin–orbit coupling lets it happen anyway, more slowly than internal conversion: 10^−11 to 10^−6 s, against 10^−14 to 10^−11 s in Table 15.1.1."
+  },
+  {
+    "id": "pc15-relaxation-isc-radicals",
+    "type": "multiple-choice",
+    "prompt": "Why can intersystem crossing open up new kinds of chemical reactions for a molecule?",
+    "choices": [
+      {
+        "text": "Triplets have unpaired electrons, like radicals",
+        "correct": true
+      },
+      {
+        "text": "Triplets have more energy than any singlet state",
+        "why": "T_1 lies below S_1, though above S_0. What makes triplets special is their unpaired electrons, which make them react like radicals."
+      },
+      {
+        "text": "Triplets give off light that breaks bonds",
+        "why": "Triplet chemistry comes from the molecule itself: its unpaired electrons make it react like a radical."
+      },
+      {
+        "text": "Triplets have all of their electrons paired",
+        "why": "That describes singlets. A triplet has two unpaired electrons, which make its reactions resemble radical processes."
+      }
+    ],
+    "explanation": "Intersystem crossing gives access to triplet states that are not normally available. Because triplets have unpaired electrons, their reactivity is often typical of radical processes, adding a whole set of possible reactions."
+  },
+  {
+    "id": "pc15-relaxation-t1-s0-nonradiative",
+    "type": "multiple-choice",
+    "prompt": "Table 15.1.1 lists a nonradiative decay from T_1 to S_0. Which kind of process is this?",
+    "choices": [
+      {
+        "text": "Intersystem crossing, as the spin changes",
+        "correct": true
+      },
+      {
+        "text": "Internal conversion, as no photon is emitted",
+        "why": "Internal conversion is radiationless too, but it keeps the multiplicity. T_1 → S_0 goes from a triplet to a singlet, so it is intersystem crossing."
+      },
+      {
+        "text": "Phosphorescence, as it starts from T_1",
+        "why": "Phosphorescence is T_1 → S_0 with a photon given off. A nonradiative T_1 → S_0 step is intersystem crossing."
+      },
+      {
+        "text": "Vibrational relaxation within the triplet",
+        "why": "Vibrational relaxation stays within one electronic state. T_1 → S_0 changes both the electronic state and the multiplicity, so it is intersystem crossing."
+      }
+    ],
+    "explanation": "Any radiationless step that changes the spin multiplicity is intersystem crossing, whether S_1 → T_1 or T_1 → S_0. Like phosphorescence from T_1, the nonradiative T_1 → S_0 decay is slow, taking 10^−3 to 100 s."
+  },
+  {
+    "id": "pc15-relaxation-external-conversion",
+    "type": "multiple-choice",
+    "prompt": "Fluorescence is often stronger at low temperature and in viscous solvents. Why?",
+    "choices": [
+      {
+        "text": "Fewer collisions slow down external conversion",
+        "correct": true
+      },
+      {
+        "text": "Cold solvents absorb more of the exciting light",
+        "why": "How much light the solvent absorbs isn't the point. Low temperature and high viscosity reduce collisions, so less energy is lost to the solvent by external conversion."
+      },
+      {
+        "text": "Viscous solvents speed up intersystem crossing",
+        "why": "Faster intersystem crossing would take molecules away from fluorescence. The real effect is fewer collisions, which slows external conversion."
+      },
+      {
+        "text": "Low temperature raises the energy of S_1",
+        "why": "Temperature doesn't move the electronic levels. Fewer collisions at low temperature and high viscosity slow external conversion, leaving more molecules to fluoresce."
+      }
+    ],
+    "explanation": "In external conversion, the excited molecule hands its energy to solvent or solute molecules. Low temperature and high viscosity reduce the number of collisions, slowing this radiationless loss, so more molecules fluoresce."
+  }
+]

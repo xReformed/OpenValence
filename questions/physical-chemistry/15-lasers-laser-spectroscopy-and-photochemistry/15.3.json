@@ -1,0 +1,463 @@
+[
+  {
+    "id": "pc15-two-level-allowed-transitions",
+    "type": "multiple-choice",
+    "prompt": "An idealized two-level atom has only a ground state and one excited state. Which transitions are possible in it?",
+    "choices": [
+      {
+        "text": "Up from the ground state and back down to it",
+        "correct": true
+      },
+      {
+        "text": "Excitation only; it can never return to the ground state",
+        "why": "An excited two-level atom can return to the ground state, by spontaneous or stimulated emission. The two possible transitions are excitation and de-excitation."
+      },
+      {
+        "text": "Transitions to a third, metastable level as well",
+        "why": "A two-level atom has no third level. Adding one gives the three-level system that the section turns to for continuous lasing."
+      },
+      {
+        "text": "Only radiationless decay between the two states",
+        "why": "The two levels are linked by absorbing and emitting photons; that is how both pumping and lasing would have to work."
+      }
+    ],
+    "explanation": "In the idealized two-level atom, the only possible transitions are excitation from the ground state to the excited state and de-excitation from the excited state back to the ground state. Pumping and lasing would both have to use this one transition."
+  },
+  {
+    "id": "pc15-two-level-not-crucial",
+    "type": "multiple-choice",
+    "prompt": "Of the conditions the section lists for a laser, which does it explicitly call not crucial, though clearly desirable?",
+    "choices": [
+      {
+        "text": "A collimated, pencil-like beam",
+        "correct": true
+      },
+      {
+        "text": "Coherent light, with photons in phase",
+        "why": "Coherence is the first condition, and the section builds its whole argument on it. The one called not crucial is a collimated beam."
+      },
+      {
+        "text": "Monochromatic light, with one frequency",
+        "why": "Monochromatic light is one of the conditions the laser must meet. The one called not crucial is a collimated, pencil-like beam."
+      },
+      {
+        "text": "Lasing through stimulated emission",
+        "why": "Stimulated emission is essential: it is the only way to get coherent light. The condition called not crucial is a collimated beam."
+      }
+    ],
+    "explanation": "The section requires coherent and monochromatic light. A collimated, sharply defined pencil-like beam is not crucial but clearly desirable, and high efficiency is also desirable."
+  },
+  {
+    "id": "pc15-two-level-efficiency",
+    "type": "numeric",
+    "prompt": "The section judges a laser's efficiency by the ratio of output energy to input energy: the higher, the better. If a laser gives out 0.30 J of light for every 12 J of energy put in, what is this ratio? (Give it as a decimal.)",
+    "answer": 0.025,
+    "explanation": "Output/input = 0.30 J ÷ 12 J = 0.025, so only 2.5% of the input energy comes out as laser light. The energy units cancel, so the ratio is a pure number."
+  },
+  {
+    "id": "pc15-two-level-coherence-needs-stimulated",
+    "type": "multiple-choice",
+    "prompt": "Which process must the lasing transition use for the laser's light to be coherent?",
+    "choices": [
+      {
+        "text": "Stimulated emission",
+        "correct": true
+      },
+      {
+        "text": "Spontaneous emission",
+        "why": "Spontaneous photons are emitted independently, not as copies of a passing photon, so they aren't in phase. Only stimulated emission produces identical photons."
+      },
+      {
+        "text": "Absorption",
+        "why": "Absorption removes photons rather than producing light. Coherent output needs stimulated emission, which copies a passing photon."
+      },
+      {
+        "text": "Radiationless decay",
+        "why": "Radiationless decay gives off no photon at all. Coherent light comes from stimulated emission."
+      }
+    ],
+    "explanation": "Coherence is satisfied only when the lasing transition occurs through stimulated emission, which produces identical photons of equal energy and phase that travel in the same direction."
+  },
+  {
+    "id": "pc15-two-level-passer-by-energy",
+    "type": "multiple-choice",
+    "prompt": "What energy must a passer-by photon have to stimulate emission from an excited two-level atom?",
+    "choices": [
+      {
+        "text": "Exactly the de-excitation energy, E_2 − E_1",
+        "correct": true
+      },
+      {
+        "text": "At least twice the de-excitation energy",
+        "why": "A photon of twice the energy doesn't match the transition. Stimulated emission needs a photon whose energy just equals E_2 − E_1."
+      },
+      {
+        "text": "Any energy, as long as it is in the visible",
+        "why": "Only a photon matching the gap E_2 − E_1 can stimulate the emission; being visible is neither needed nor enough."
+      },
+      {
+        "text": "Less than half the de-excitation energy",
+        "why": "A photon below the gap doesn't match the transition. The passer-by photon's energy must just equal E_2 − E_1."
+      }
+    ],
+    "explanation": "The passer-by photon's energy must just equal the de-excitation energy, E_2 − E_1. The emitted photon then has this same energy, so the two photons are identical."
+  },
+  {
+    "id": "pc15-two-level-passer-by-timing",
+    "type": "multiple-choice",
+    "prompt": "For stimulated emission to occur, when must the passer-by photon reach the excited atom?",
+    "choices": [
+      {
+        "text": "Before the atom de-excites by spontaneous emission",
+        "correct": true
+      },
+      {
+        "text": "Only after the atom has returned to the ground state",
+        "why": "A ground-state atom can only absorb the photon. The photon must arrive while the atom is still excited, before it decays on its own."
+      },
+      {
+        "text": "At the same moment that a pump photon arrives",
+        "why": "No pump photon is needed at that moment. What matters is that the passer-by photon arrives before the excited atom decays on its own."
+      },
+      {
+        "text": "Exactly one lifetime after the atom was excited",
+        "why": "There is no special delay. The photon must simply arrive before spontaneous emission has emptied the excited state."
+      }
+    ],
+    "explanation": "A passer-by photon whose energy equals the de-excitation energy must approach the excited atom before it de-excites via spontaneous emission. That is why the upper lasing state needs a long lifetime."
+  },
+  {
+    "id": "pc15-two-level-seed",
+    "type": "multiple-choice",
+    "prompt": "What typically supplies the first photon, the seed, that triggers a collection of stimulated emissions?",
+    "choices": [
+      {
+        "text": "A photon from spontaneous emission",
+        "correct": true
+      },
+      {
+        "text": "A photon absorbed by a ground-state atom",
+        "why": "An absorbed photon is gone. The seed is typically a photon given off by spontaneous emission from an excited atom."
+      },
+      {
+        "text": "A pump photon of a different frequency",
+        "why": "A photon of another frequency can't stimulate the lasing transition. The seed is a spontaneously emitted photon at the lasing frequency."
+      },
+      {
+        "text": "Heat radiated by the walls of the laser",
+        "why": "The seed has to match the transition's energy. Typically it is a photon from spontaneous emission in the lasing atoms themselves."
+      }
+    ],
+    "explanation": "Typically a photon emitted spontaneously serves as the seed. It passes other excited atoms and triggers stimulated emissions, each of which adds an identical photon."
+  },
+  {
+    "id": "pc15-two-level-short-lifetime-problem",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what goes wrong if the excited state of the lasing atoms has too short a lifetime?",
+    "choices": [
+      {
+        "text": "Too few atoms stay excited for stimulated emission",
+        "correct": true
+      },
+      {
+        "text": "The emitted photons come out at a higher frequency",
+        "why": "The photon's frequency is set by the energy gap, not the lifetime. A short lifetime means atoms decay on their own before passer-by photons can stimulate them."
+      },
+      {
+        "text": "The atoms can no longer absorb the pump light",
+        "why": "Ground-state atoms can still absorb. The trouble is that excited atoms decay on their own too soon, leaving too few for stimulated emission."
+      },
+      {
+        "text": "Stimulated emission becomes faster than absorption",
+        "why": "That would help lasing, not hurt it. A short lifetime leaves too few excited atoms around for stimulated emission."
+      }
+    ],
+    "explanation": "If the excited state's lifetime is too short, the atoms decay spontaneously before passer-by photons arrive, and there will not be enough excited atoms around to undergo stimulated emission. So the upper lasing state must be long-lived."
+  },
+  {
+    "id": "pc15-two-level-metastable",
+    "type": "multiple-choice",
+    "prompt": "What is a metastable state, as the term is used for the upper lasing state?",
+    "choices": [
+      {
+        "text": "An excited state with a relatively long lifetime",
+        "correct": true
+      },
+      {
+        "text": "The ground state of the lasing atoms",
+        "why": "The ground state isn't excited at all. A metastable state is an excited state that lives relatively long."
+      },
+      {
+        "text": "An excited state that decays within femtoseconds",
+        "why": "That would be a very short-lived state. A metastable state is an excited state with a relatively long lifetime."
+      },
+      {
+        "text": "A state equally populated with the ground state",
+        "why": "Equal populations describe the limit of strong pumping, not a kind of state. A metastable state is an excited state with a relatively long lifetime."
+      }
+    ],
+    "explanation": "A metastable state is an excited state with a relatively long lifetime. Atoms collect in it and stay there long enough to be stimulated to emit."
+  },
+  {
+    "id": "pc15-two-level-metastable-lifetime",
+    "type": "multiple-choice",
+    "prompt": "In what range are the typical lifetimes of the metastable states used as upper lasing states?",
+    "choices": [
+      {
+        "text": "Milliseconds",
+        "correct": true
+      },
+      {
+        "text": "Femtoseconds",
+        "why": "Femtoseconds are far too short: the atoms would decay before passer-by photons could stimulate them. Metastable states typically live milliseconds."
+      },
+      {
+        "text": "Nanoseconds",
+        "why": "A nanosecond lifetime is short, not metastable. The section gives typical metastable lifetimes in the milliseconds range."
+      },
+      {
+        "text": "Hours",
+        "why": "Hours would be far longer than any lasing state lives. The section gives typical metastable lifetimes in the milliseconds range."
+      }
+    ],
+    "explanation": "The upper lasing state must be metastable, with typical lifetimes in the milliseconds range: long enough that many atoms are still excited when passer-by photons arrive."
+  },
+  {
+    "id": "pc15-two-level-ratio-smaller",
+    "type": "multiple-choice",
+    "prompt": "The chance that a passer-by photon is absorbed depends on the ratio of ground-state atoms to excited-state atoms. As this ratio gets smaller, what is the photon more likely to do?",
+    "choices": [
+      {
+        "text": "Cause stimulated emission rather than be absorbed",
+        "correct": true
+      },
+      {
+        "text": "Be absorbed rather than cause stimulated emission",
+        "why": "That happens when the ratio is large, with most atoms in the ground state. A smaller ratio leaves fewer atoms to absorb, so stimulated emission becomes more likely."
+      },
+      {
+        "text": "Pass through without meeting any atoms",
+        "why": "The total number of atoms doesn't change, only how they are split between the states. Fewer ground-state atoms make stimulated emission more likely."
+      },
+      {
+        "text": "Be scattered into a new direction",
+        "why": "Scattering isn't part of this picture. With fewer ground-state atoms, the photon is more likely to cause stimulated emission than to be absorbed."
+      }
+    ],
+    "explanation": "The smaller the ratio of ground-state to excited-state atoms, the more likely the passer-by photon is to cause stimulated emission rather than be absorbed. Pushing the ratio below 1 is a population inversion."
+  },
+  {
+    "id": "pc15-two-level-inversion-meaning",
+    "type": "multiple-choice",
+    "prompt": "In a two-level system, what is a population inversion?",
+    "choices": [
+      {
+        "text": "More atoms in the excited state than in the ground state",
+        "correct": true
+      },
+      {
+        "text": "More atoms in the ground state than in the excited state",
+        "why": "That is the normal situation at thermal equilibrium. An inversion reverses it: N_2 > N_1."
+      },
+      {
+        "text": "Equal numbers of atoms in the two states",
+        "why": "Equal populations are the limit that strong pumping approaches in a two-level atom, but an inversion needs N_2 to be larger than N_1."
+      },
+      {
+        "text": "Ground and excited states that have swapped energies",
+        "why": "The energies of the levels don't change. An inversion is about populations: more atoms in the upper level than in the lower one."
+      }
+    ],
+    "explanation": "A population inversion means more atoms in the excited state than in the ground state, N_2 > N_1. This reverses the thermal-equilibrium situation, in which N_1 is far larger."
+  },
+  {
+    "id": "pc15-two-level-rate-condition",
+    "type": "multiple-choice",
+    "prompt": "The section restates its conditions for lasing as a comparison between the rates of two processes. Which rate must be the larger one?",
+    "choices": [
+      {
+        "text": "Stimulated emission must outpace absorption",
+        "correct": true
+      },
+      {
+        "text": "Absorption must outpace stimulated emission",
+        "why": "That is the normal state of affairs, and it weakens the light. For lasing, B_21 ρ_(ν)(ν_21) N_2 must be larger than B_12 ρ_(ν)(ν_12) N_1."
+      },
+      {
+        "text": "Spontaneous emission must outpace stimulated emission",
+        "why": "Spontaneous photons aren't copies of a passing photon, so that would spoil coherence. The comparison is between stimulated emission and absorption."
+      },
+      {
+        "text": "Spontaneous emission must outpace absorption",
+        "why": "Spontaneous emission isn't part of the section's condition. It compares stimulated emission, which adds photons, with absorption, which removes them."
+      }
+    ],
+    "explanation": "The rate of stimulated emission, B_21 ρ_(ν)(ν_21) N_2, must be larger than the rate of absorption, B_12 ρ_(ν)(ν_12) N_1. Then passing light gains more photons than it loses."
+  },
+  {
+    "id": "pc15-two-level-reduce-condition",
+    "type": "multiple-choice",
+    "prompt": "For levels of equal degeneracy, the section reduces the lasing condition B_21 ρ_(ν)(ν_21) N_2 > B_12 ρ_(ν)(ν_12) N_1 to just N_2 > N_1. What allows this?",
+    "choices": [
+      {
+        "text": "B_21 = B_12, and both use the same ρ_(ν)",
+        "correct": true
+      },
+      {
+        "text": "B_21 is always much larger than B_12 in lasers",
+        "why": "If B_21 were larger, a smaller N_2 would do. For equal degeneracies B_21 = B_12, and with the same ρ_(ν) only the populations are left."
+      },
+      {
+        "text": "ρ_(ν) is zero for absorption",
+        "why": "Absorption needs light, so its ρ_(ν) isn't zero; it is the same ρ_(ν) as for stimulated emission, since ν_12 = ν_21."
+      },
+      {
+        "text": "A_21 cancels out of both rates",
+        "why": "A_21 isn't in either rate; it describes spontaneous emission. The condition reduces because B_21 = B_12 and the ρ_(ν) values are equal."
+      }
+    ],
+    "explanation": "Einstein's relation g_1 B_12 = g_2 B_21 gives B_21 = B_12 for equal degeneracies, and ρ_(ν)(ν_12) = ρ_(ν)(ν_21), since it is the same transition. Cancelling these leaves N_2 > N_1, a population inversion."
+  },
+  {
+    "id": "pc15-two-level-absorption-vs-stimulated",
+    "type": "numeric",
+    "prompt": "In a two-level sample with B_12 = B_21 and the same ρ_(ν) for both processes, there are 4 times as many atoms in the ground state as in the excited state. How many times faster is absorption than stimulated emission?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The rates are B_12 ρ_(ν) N_1 and B_21 ρ_(ν) N_2, and everything but the populations cancels, so the ratio is N_1/N_2 = 4. Light passing through is absorbed overall."
+  },
+  {
+    "id": "pc15-two-level-pump-why",
+    "type": "multiple-choice",
+    "prompt": "Why can't even a very strong pump produce a population inversion in a two-level atom?",
+    "choices": [
+      {
+        "text": "Absorption and stimulated emission have the same B",
+        "correct": true
+      },
+      {
+        "text": "The pump light can't be absorbed by ground-state atoms",
+        "why": "Ground-state atoms do absorb the pump light; that is how the pump works. But the same light stimulates excited atoms to emit just as readily."
+      },
+      {
+        "text": "Spontaneous emission stops once the pump is switched on",
+        "why": "Spontaneous emission continues, and it only empties the upper level further. The real obstacle is that absorption and stimulated emission have the same B."
+      },
+      {
+        "text": "Excited atoms are destroyed by absorbing a second photon",
+        "why": "A two-level atom has no higher level, so an excited atom can't absorb. The pump light instead stimulates it to emit, at the same rate per atom as absorption."
+      }
+    ],
+    "explanation": "The pump drives absorption, but the same light drives stimulated emission with the same B coefficient. As N_2 approaches N_1, upward and downward transitions balance, so even an arbitrarily strong pump only brings the populations toward equality."
+  },
+  {
+    "id": "pc15-two-level-strong-pump-fraction",
+    "type": "numeric",
+    "prompt": "Even an arbitrarily strong pump only brings the two populations of a two-level atom toward equality. In that limit, what fraction of all the atoms is in the excited state? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "Equal populations mean N_2 = N_1, so the excited state holds N_2/(N_1 + N_2) = 1/2 = 0.5 of the atoms. Getting more than half, a population inversion, is out of reach."
+  },
+  {
+    "id": "pc15-two-level-steady-below-one",
+    "type": "multiple-choice",
+    "prompt": "For a steadily pumped two-level atom with equal degeneracies, N_2/N_1 = (Bρ)/(Bρ + A_21), where Bρ is the absorption rate per ground-state atom and A_21 > 0. Why is this ratio always less than 1?",
+    "choices": [
+      {
+        "text": "Bρ + A_21 is always larger than Bρ",
+        "correct": true
+      },
+      {
+        "text": "Bρ is always smaller than A_21",
+        "why": "Bρ can be made as large as you like with a strong pump. Even then, the denominator is larger by A_21, so the ratio stays below 1."
+      },
+      {
+        "text": "The pump makes A_21 negative",
+        "why": "A_21 is a positive probability per unit time and doesn't depend on the pump. Because it is positive, Bρ + A_21 > Bρ."
+      },
+      {
+        "text": "The ratio is set by the Boltzmann factor",
+        "why": "A pumped sample isn't at thermal equilibrium; this ratio comes from balancing the rates. It stays below 1 because Bρ + A_21 > Bρ."
+      }
+    ],
+    "explanation": "Because A_21 > 0, the denominator Bρ + A_21 is always bigger than the numerator Bρ, so N_2/N_1 < 1 for any pump strength. As Bρ grows, the ratio only creeps toward 1."
+  },
+  {
+    "id": "pc15-two-level-steady-ratio",
+    "type": "numeric",
+    "prompt": "For a steadily pumped two-level atom, N_2/N_1 = (Bρ)/(Bρ + A_21). If the pump makes Bρ three times as large as A_21, what is N_2/N_1? (Give it as a decimal.)",
+    "answer": 0.75,
+    "explanation": "With Bρ = 3A_21, N_2/N_1 = 3A_21/(3A_21 + A_21) = 3/4 = 0.75. Even this strong pump leaves fewer atoms in the upper level than in the lower one."
+  },
+  {
+    "id": "pc15-two-level-pump-must-do",
+    "type": "multiple-choice",
+    "prompt": "To invert a two-level atom by pumping, what would the pumping transition have to do?",
+    "choices": [
+      {
+        "text": "Send every decaying atom straight back up",
+        "correct": true
+      },
+      {
+        "text": "Remove atoms from the excited state",
+        "why": "That would lower N_2, the opposite of an inversion. The pump would have to send every decaying atom back into its excited state."
+      },
+      {
+        "text": "Excite atoms to a third, higher level",
+        "why": "A two-level atom has no third level; adding one is the three-level solution. In two levels, the pump would have to return every decaying atom to the excited state."
+      },
+      {
+        "text": "Lower the energy of the excited state itself",
+        "why": "Pumping doesn't move the levels. It would have to send each decaying atom back to the excited state, which the section likens to reversing a waterfall."
+      }
+    ],
+    "explanation": "Inverting a two-level atom would need a pumping transition so strong that it sends any decaying atom back into its excited state, which the section likens to reversing the flow of water in a waterfall. The pump would be working against the lasing transition."
+  },
+  {
+    "id": "pc15-two-level-pump-is-laser",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say that, in a two-level atom, the pump is in a way the laser itself?",
+    "choices": [
+      {
+        "text": "Pumping and lasing use the same transition",
+        "correct": true
+      },
+      {
+        "text": "The pump light leaves the laser as its output beam",
+        "why": "The output comes from stimulated emission in the atoms. The point is that pumping and lasing both use the one transition between the two levels."
+      },
+      {
+        "text": "The pump is built from the same material as the atoms",
+        "why": "The section's point isn't about materials. With only two levels, the pumping transition and the lasing transition are the same one."
+      },
+      {
+        "text": "The pump only works while the laser is switched off",
+        "why": "Pumping and lasing happen in the same atoms at once. Because they share one transition, the pump works against the lasing."
+      }
+    ],
+    "explanation": "With only two levels, the pumping transition and the lasing transition are the same transition. The pump light therefore also stimulates emission, and the pump works against the lasing."
+  },
+  {
+    "id": "pc15-two-level-continuous-next",
+    "type": "multiple-choice",
+    "prompt": "For continuous lasing action, what does the section say must be considered instead of a two-level atom?",
+    "choices": [
+      {
+        "text": "A three-level atom",
+        "correct": true
+      },
+      {
+        "text": "A one-level atom",
+        "why": "One level allows no transitions at all, so there is nothing to lase. The section turns to a three-level atom."
+      },
+      {
+        "text": "A two-level atom with a stronger pump",
+        "why": "No pump strength inverts a two-level atom; it only brings the populations toward equality. Continuous lasing needs a three-level atom."
+      },
+      {
+        "text": "A two-level atom kept at a higher temperature",
+        "why": "At thermal equilibrium N_2 stays below N_1 at any temperature. The section turns to a three-level atom."
+      }
+    ],
+    "explanation": "A two-level atom can't be pumped into a lasting population inversion. For continuous lasing, the section turns to other possibilities, such as a three-level atom."
+  }
+]

@@ -1,0 +1,576 @@
+[
+  {
+    "id": "pc16-virial-b2-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the second virial coefficient, B_2(T), describe?",
+    "choices": [
+      {
+        "text": "How interactions between pairs of molecules change the pressure",
+        "correct": true
+      },
+      {
+        "text": "How interactions among three molecules at once change the pressure",
+        "why": "That is the third virial coefficient, B_3(T). B_2 comes from the interaction of two molecules at a time, through their pair potential."
+      },
+      {
+        "text": "The pressure the gas would have if it behaved ideally",
+        "why": "The ideal pressure comes from the first term of the series, ρkT. B_2 describes the correction that pair interactions make to it."
+      },
+      {
+        "text": "How the speeds of the molecules are spread out at a given T",
+        "why": "Virial coefficients don't describe speeds; they come from the intermolecular potential. B_2 is the contribution of pair-wise interactions to the pressure."
+      }
+    ],
+    "explanation": "The second virial coefficient describes the contribution of the pair-wise potential to the pressure of the gas. The third virial coefficient depends on interactions among three molecules, and so on."
+  },
+  {
+    "id": "pc16-virial-third-coefficient",
+    "type": "multiple-choice",
+    "prompt": "The third virial coefficient, B_3(T), depends on interactions among how many molecules at a time?",
+    "choices": [
+      {
+        "text": "Three",
+        "correct": true
+      },
+      {
+        "text": "Two",
+        "why": "Pairs of molecules give the second virial coefficient, B_2(T). The third coefficient comes from interactions among three molecules."
+      },
+      {
+        "text": "Four",
+        "why": "Four molecules at a time would give the fourth virial coefficient. In general, the j-th coefficient comes from interactions of j molecules."
+      },
+      {
+        "text": "Every molecule in the gas",
+        "why": "Each virial coefficient involves a fixed, small number of molecules. The j-th coefficient comes from j molecules, so B_3 involves three."
+      }
+    ],
+    "explanation": "The j-th virial coefficient can be calculated from the interaction of j molecules in a volume V. So B_2 comes from pairs, and B_3 from groups of three molecules."
+  },
+  {
+    "id": "pc16-virial-power-series",
+    "type": "multiple-choice",
+    "prompt": "The virial equation of state writes a real gas's deviation from ideality as a power series. Powers of which quantity appear in the series?",
+    "choices": [
+      {
+        "text": "The density",
+        "correct": true
+      },
+      {
+        "text": "The temperature",
+        "why": "The coefficients B_2(T), B_3(T), … depend on temperature, but the series itself is in powers of the density: ρ, ρ^2, ρ^3, …"
+      },
+      {
+        "text": "The molar mass",
+        "why": "Molar mass doesn't appear in the virial equation. The series is P/(kT) = ρ + B_2(T)ρ^2 + B_3(T)ρ^3 + …, in powers of the density ρ."
+      },
+      {
+        "text": "The pair potential",
+        "why": "The pair potential sets the values of the coefficients, but the terms of the series are powers of the density ρ."
+      }
+    ],
+    "explanation": "The virial equation of state, P/(kT) = ρ + B_2(T)ρ^2 + B_3(T)ρ^3 + …, expresses the deviation from ideality as a power series in the density. The coefficients depend only on temperature."
+  },
+  {
+    "id": "pc16-virial-rho-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the virial equation P/(kT) = ρ + B_2(T)ρ^2 + B_3(T)ρ^3 + …, what does ρ stand for?",
+    "choices": [
+      {
+        "text": "The number density, molecules per unit volume",
+        "correct": true
+      },
+      {
+        "text": "The mass density, in kilograms per cubic metre",
+        "why": "With Boltzmann's constant k in P/(kT), ρ counts molecules per unit volume, not mass per unit volume."
+      },
+      {
+        "text": "The molar volume, V̄, of the gas",
+        "why": "The molar volume is volume per mole, the inverse of a density. Here ρ is the number of molecules per unit volume."
+      },
+      {
+        "text": "The molar density, moles per unit volume",
+        "why": "That is ρ in P = ρRT, written with the gas constant R. With Boltzmann's constant k, as here, ρ counts molecules per unit volume."
+      }
+    ],
+    "explanation": "Here ρ is the number density, the number of molecules per unit volume, which is why Boltzmann's constant k appears in P/(kT). For an ideal gas the series stops after the first term, P = ρkT."
+  },
+  {
+    "id": "pc16-virial-density-matters",
+    "type": "multiple-choice",
+    "prompt": "As a gas is compressed to higher density, why do the B_2(T)ρ^2 and B_3(T)ρ^3 terms of the virial equation matter more and more compared with the first term, ρ?",
+    "choices": [
+      {
+        "text": "They contain higher powers of ρ than the first term",
+        "correct": true
+      },
+      {
+        "text": "B_2 and B_3 themselves grow larger as the density rises",
+        "why": "B_2(T) and B_3(T) depend only on temperature. It is the higher powers of ρ in these terms that make them grow faster than the first term."
+      },
+      {
+        "text": "The first term, ρ, shrinks as the gas is compressed",
+        "why": "ρ is the density, so it rises as the gas is compressed. The ρ^2 and ρ^3 terms simply rise faster."
+      },
+      {
+        "text": "Compressing a gas always raises its temperature a lot",
+        "why": "The coefficients depend on T, but compression need not change T. The correction terms grow because they go as ρ^2 and ρ^3."
+      }
+    ],
+    "explanation": "As the density increases, interactions between gas molecules stop being negligible. In the series, ρ^2 and ρ^3 grow faster than ρ, so the B_2 and B_3 correction terms become a bigger share of the pressure."
+  },
+  {
+    "id": "pc16-virial-100-atm",
+    "type": "multiple-choice",
+    "prompt": "According to the section, up to roughly what pressure do the second and third virial coefficients account for most of a gas's deviation from ideality?",
+    "choices": [
+      {
+        "text": "About 100 atm",
+        "correct": true
+      },
+      {
+        "text": "About 1 atm",
+        "why": "Deviations at 1 atm are small, and two coefficients handle far more than that: most of the deviation up to about 100 atm, even hundreds of atmospheres."
+      },
+      {
+        "text": "About 0.01 atm",
+        "why": "At 0.01 atm a gas is almost perfectly ideal. The second and third coefficients cover most of the deviation up to about 100 atm."
+      },
+      {
+        "text": "About 100,000 atm",
+        "why": "At such huge pressures the gas is as dense as a liquid and many more terms would be needed. The section's figure is about 100 atm."
+      }
+    ],
+    "explanation": "The second and third virial coefficients give most of the deviation from ideal behavior (P/(ρkT)) up to about 100 atm; the section also says they can account for the properties of gases up to hundreds of atmospheres."
+  },
+  {
+    "id": "pc16-virial-initial-departure",
+    "type": "multiple-choice",
+    "prompt": "As a dilute gas is slowly compressed, which virial coefficient describes the first, initial departure from ideal-gas behavior?",
+    "choices": [
+      {
+        "text": "B_2, the second virial coefficient",
+        "correct": true
+      },
+      {
+        "text": "B_3, the third virial coefficient",
+        "why": "The B_3 term goes as ρ^3, so it only matters at higher densities. The first departure from ideality comes from B_2."
+      },
+      {
+        "text": "B_4, the fourth virial coefficient",
+        "why": "Its term goes as ρ^4, so it is the last of these to matter. The initial departure from ideality is described by B_2."
+      },
+      {
+        "text": "The leading coefficient of 1, in front of ρ",
+        "why": "The first term, ρ, on its own is just the ideal gas law, P = ρkT. The first correction to it is the B_2 term."
+      }
+    ],
+    "explanation": "The second virial coefficient represents the initial departure from ideal-gas behavior: its term, B_2ρ^2, is the first correction to P/(kT) = ρ and the one that matters first as the density rises."
+  },
+  {
+    "id": "pc16-virial-pair-potential",
+    "type": "multiple-choice",
+    "prompt": "In B_2(T) = −(1/2)∫(exp(−Φ_12(r)/(k_B T)) − 1)4πr^2 dr, what does Φ_12(r) stand for?",
+    "choices": [
+      {
+        "text": "The potential energy of two molecules a distance r apart",
+        "correct": true
+      },
+      {
+        "text": "The pressure exerted by a pair of molecules at a distance r",
+        "why": "Pressure is what the virial equation gives in the end. Φ_12(r) is the intermolecular pair potential, the interaction energy of two molecules."
+      },
+      {
+        "text": "The number of molecules found within a distance r",
+        "why": "Counts of molecules don't appear in this integral. Φ_12(r) is the potential energy of interaction of a pair of molecules."
+      },
+      {
+        "text": "The kinetic energy of two molecules colliding at a distance r",
+        "why": "Kinetic energy enters only through k_B T. Φ_12(r) is the potential energy of the pair, which depends on their separation r."
+      }
+    ],
+    "explanation": "Φ_12(r) is the intermolecular pair potential: the potential energy of two molecules a distance r apart. Comparing it with k_B T inside the integral gives B_2 at that temperature."
+  },
+  {
+    "id": "pc16-virial-mayer-f",
+    "type": "multiple-choice",
+    "prompt": "In B_2(T) = −2π∫[exp(−βu(r)) − 1]r^2 dr, with β = 1/(k_B T), what is the bracketed function exp(−βu(r)) − 1 called?",
+    "choices": [
+      {
+        "text": "The Mayer f-function",
+        "correct": true
+      },
+      {
+        "text": "The Lennard-Jones potential",
+        "why": "The Lennard-Jones potential is one model for u(r) itself. The bracket built from u(r), exp(−βu(r)) − 1, is the Mayer f-function."
+      },
+      {
+        "text": "The compressibility factor",
+        "why": "The compressibility factor Z = (PV̄)/(RT) describes the whole gas, not a pair at distance r. The bracket is the Mayer f-function."
+      },
+      {
+        "text": "The configuration integral",
+        "why": "Configuration integrals such as Z_2 are integrals over the positions of the molecules. The bracket inside the B_2 integral is the Mayer f-function."
+      }
+    ],
+    "explanation": "The expression exp(−βu(r)) − 1 inside the integral is the Mayer f-function. It is zero where the pair potential is zero, so only separations where the molecules interact add to B_2."
+  },
+  {
+    "id": "pc16-virial-lj-numerical",
+    "type": "multiple-choice",
+    "prompt": "How does the section say the second virial coefficient of a Lennard-Jones gas is found?",
+    "choices": [
+      {
+        "text": "By evaluating the integral numerically",
+        "correct": true
+      },
+      {
+        "text": "From the exact formula B_2 = 2πσ^3/3",
+        "why": "That formula is for hard spheres only. The Lennard-Jones integral can't be done analytically, so it is computed numerically."
+      },
+      {
+        "text": "It can only be estimated by guessing",
+        "why": "No guessing is needed. The integral has no analytic answer for the Lennard-Jones potential, but it can be computed numerically."
+      },
+      {
+        "text": "From the ideal gas law, since B_2 is zero",
+        "why": "B_2 is not zero for a real gas. For the Lennard-Jones potential it is found by evaluating the integral numerically."
+      }
+    ],
+    "explanation": "The B_2 integral is very hard to do analytically for anything other than simple models such as hard spheres. For the Lennard-Jones potential it is computed numerically, for example with Conroy's integration scheme."
+  },
+  {
+    "id": "pc16-virial-lj-parameters",
+    "type": "multiple-choice",
+    "prompt": "Second virial coefficients have been measured and tabulated for many gases. What has this data been a useful starting point for?",
+    "choices": [
+      {
+        "text": "Getting Lennard-Jones parameters for simulations",
+        "correct": true
+      },
+      {
+        "text": "Finding the molar masses of the gases",
+        "why": "Molar masses come from the formula, not from B_2. Measured B_2 values have been used to obtain parameters of the pair potential, such as Lennard-Jones parameters."
+      },
+      {
+        "text": "Measuring the bond lengths inside the gas molecules",
+        "why": "B_2 depends on how two molecules interact with each other, not on bonds within a molecule. It has been used to get Lennard-Jones parameters."
+      },
+      {
+        "text": "Predicting the colors the gases absorb and emit",
+        "why": "Colors come from electronic transitions. B_2 reflects the intermolecular pair potential, so it has been used to obtain Lennard-Jones parameters."
+      }
+    ],
+    "explanation": "Because B_2 depends on the pair potential, measured values can be used to obtain potential parameters from experiment. The second virial coefficient was a useful starting point for obtaining the Lennard-Jones parameters used in simulations."
+  },
+  {
+    "id": "pc16-virial-hard-sphere-shape",
+    "type": "multiple-choice",
+    "prompt": "What does the hard-sphere pair potential look like?",
+    "choices": [
+      {
+        "text": "An infinite wall at r = σ and no attraction",
+        "correct": true
+      },
+      {
+        "text": "A deep attractive well at r = σ, with no repulsion",
+        "why": "Hard spheres don't attract at all. Their potential is an infinite wall at r = σ and zero everywhere beyond it."
+      },
+      {
+        "text": "A smooth r^−6 attraction at every separation",
+        "why": "That would be a purely attractive potential. The hard-sphere model has only an infinite repulsive wall at r = σ."
+      },
+      {
+        "text": "A soft repulsion that rises only gently as r shrinks",
+        "why": "A hard sphere's repulsion is not gentle: it jumps straight to infinity at r = σ. Beyond that there is no interaction."
+      }
+    ],
+    "explanation": "For a hard-sphere potential there is an infinite repulsive wall at a centre-to-centre distance σ, and there is no attractive part. The particles behave like billiard balls that can't overlap."
+  },
+  {
+    "id": "pc16-virial-hard-sphere-sigma",
+    "type": "multiple-choice",
+    "prompt": "In the hard-sphere potential, the infinite wall sits at a centre-to-centre distance r = σ. What is σ for the particles?",
+    "choices": [
+      {
+        "text": "Their diameter",
+        "correct": true
+      },
+      {
+        "text": "Their radius",
+        "why": "When two spheres touch, their centres are one radius plus one radius apart, which is a diameter. So σ, the closest centre-to-centre distance, is the diameter."
+      },
+      {
+        "text": "Their volume",
+        "why": "σ is a distance, not a volume. It is the separation of the centres at contact, which equals the particle diameter."
+      },
+      {
+        "text": "Their mean free path",
+        "why": "The mean free path is the average distance traveled between collisions, which is much longer. σ is the centre-to-centre distance at contact, the diameter."
+      }
+    ],
+    "explanation": "Two hard spheres touch when their centres are one diameter apart, so the wall at r = σ means σ is the particle diameter. That is why the hard-sphere result is written B_2 = 2πσ^3/3 with σ the contact distance."
+  },
+  {
+    "id": "pc16-virial-hard-sphere-temperature",
+    "type": "multiple-choice",
+    "prompt": "How does the hard-sphere second virial coefficient, B_2 = 2πσ^3/3, change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It stays the same",
+        "correct": true
+      },
+      {
+        "text": "It increases in proportion to T",
+        "why": "Nothing in 2πσ^3/3 depends on T. With only an infinite wall and no attraction, B_2 for hard spheres is independent of temperature."
+      },
+      {
+        "text": "It decreases toward zero",
+        "why": "B_2 for hard spheres doesn't shrink with T. The factor exp(−u/(k_B T)) is 0 inside σ and 1 outside at every temperature, so B_2 stays the same."
+      },
+      {
+        "text": "It changes sign from negative to positive",
+        "why": "A sign change needs an attractive part, which hard spheres lack. Their B_2 is the positive constant 2πσ^3/3."
+      }
+    ],
+    "explanation": "B_2 for hard spheres is independent of temperature. Inside σ the potential is infinite and outside it is zero, so exp(−u/(k_B T)) is 0 or 1 at any temperature and the integral always gives 2πσ^3/3."
+  },
+  {
+    "id": "pc16-virial-isihara-bodies",
+    "type": "multiple-choice",
+    "prompt": "The Isihara–Hadwiger formula, B_2 = RS + V, is an exact relation for the second virial coefficient of which kind of particle?",
+    "choices": [
+      {
+        "text": "Any hard convex body",
+        "correct": true
+      },
+      {
+        "text": "Only perfect hard spheres",
+        "why": "Spheres are one case, but the formula applies to any hard convex body, such as rods or ellipsoids."
+      },
+      {
+        "text": "Particles with a Lennard-Jones potential",
+        "why": "Lennard-Jones particles are soft and attract each other. The Isihara–Hadwiger formula is for hard convex bodies."
+      },
+      {
+        "text": "Point particles with no size",
+        "why": "Point particles have no volume or surface, so RS + V would be zero. The formula is for hard convex bodies of finite size."
+      }
+    ],
+    "explanation": "The Isihara–Hadwiger formula, found independently by Isihara and Hadwiger in 1950, gives B_2 exactly for any hard convex body from its volume V, surface area S and mean radius of curvature R."
+  },
+  {
+    "id": "pc16-virial-isihara-symbols",
+    "type": "multiple-choice",
+    "prompt": "In the Isihara–Hadwiger formula, B_2 = RS + V, what do S and R stand for?",
+    "choices": [
+      {
+        "text": "The surface area and the mean radius of curvature",
+        "correct": true
+      },
+      {
+        "text": "The entropy and the gas constant",
+        "why": "Those are the usual meanings of S and R in thermodynamics, but not here. In this formula S is the body's surface area and R its mean radius of curvature."
+      },
+      {
+        "text": "The number of sides and the length of each side",
+        "why": "The formula works for curved bodies too. S is the surface area and R the mean radius of curvature of the hard convex body."
+      },
+      {
+        "text": "The surface area and the radius of the whole container",
+        "why": "S is the particle's surface area, but R belongs to the particle too: it is its mean radius of curvature, not a property of the container."
+      }
+    ],
+    "explanation": "In B_2 = RS + V, V is the particle's volume, S its surface area and R its mean radius of curvature. The same relation can be written B_2/V = 1 + 3α, with α = RS/(3V)."
+  },
+  {
+    "id": "pc16-virial-vdw-attraction-term",
+    "type": "multiple-choice",
+    "prompt": "For a van der Waals gas, B_2V(T) = b − a/(RT). Which part of this expression comes from attractions between the molecules?",
+    "choices": [
+      {
+        "text": "The −a/(RT) term",
+        "correct": true
+      },
+      {
+        "text": "The b term",
+        "why": "b is the excluded volume, which comes from the size of the molecules (repulsion). The attractions enter through −a/(RT)."
+      },
+      {
+        "text": "The gas constant R",
+        "why": "R is a universal constant, the same for every gas. The attractions are carried by a, in the term −a/(RT)."
+      },
+      {
+        "text": "The temperature T",
+        "why": "T is a condition of the gas, not a molecular property. Attractions enter through a, in the term −a/(RT)."
+      }
+    ],
+    "explanation": "In B_2V(T) = b − a/(RT), b accounts for the volume of the molecules and pushes B_2V up, while the attraction constant a enters through −a/(RT) and pulls it down."
+  },
+  {
+    "id": "pc16-virial-negative-meaning",
+    "type": "multiple-choice",
+    "prompt": "At a low temperature, a gas has a negative B_2V. Using P/(kT) = ρ + B_2(T)ρ^2 + …, what does that tell you?",
+    "choices": [
+      {
+        "text": "Attractions dominate, so P is below the ideal value",
+        "correct": true
+      },
+      {
+        "text": "Repulsions dominate, so P is above the ideal-gas value",
+        "why": "A positive B_2 would mean that. A negative B_2 makes the ρ^2 term subtract, so attractions are winning and P is below ρkT."
+      },
+      {
+        "text": "The gas behaves exactly ideally at every density",
+        "why": "Only B_2 = 0 removes the first correction, and even then B_3 and higher terms remain. A negative B_2 lowers the pressure below the ideal value."
+      },
+      {
+        "text": "The molecules have no size, so b must be zero",
+        "why": "B_2V = b − a/(RT) is negative whenever a/(RT) is larger than b, even with b > 0. It means attractions outweigh the excluded volume."
+      }
+    ],
+    "explanation": "A negative B_2 makes the B_2ρ^2 term subtract from ρ, so P is below the ideal value ρkT: attractions outweigh the excluded volume. For a van der Waals gas this happens when a/(RT) > b, at low temperature."
+  },
+  {
+    "id": "pc16-virial-high-t-limit",
+    "type": "multiple-choice",
+    "prompt": "According to B_2V(T) = b − a/(RT), what value does B_2V approach at very high temperature?",
+    "choices": [
+      {
+        "text": "b, a positive value",
+        "correct": true
+      },
+      {
+        "text": "Zero",
+        "why": "Only the −a/(RT) term shrinks toward zero as T grows. The b term stays, so B_2V approaches b."
+      },
+      {
+        "text": "−a/R",
+        "why": "As T grows, a/(RT) gets smaller, not fixed at a/R. B_2V approaches b."
+      },
+      {
+        "text": "It grows without limit",
+        "why": "B_2V can't exceed b: it rises toward b as the −a/(RT) term fades away."
+      }
+    ],
+    "explanation": "As T increases, a/(RT) becomes smaller and smaller, so B_2V rises toward b. At high temperature the molecules' kinetic energy makes their attractions unimportant, and only their size (excluded volume) still matters."
+  },
+  {
+    "id": "pc16-virial-boyle-ideal",
+    "type": "multiple-choice",
+    "prompt": "The Boyle temperature is the temperature at which B_2V = 0. How does a dilute gas behave at this temperature?",
+    "choices": [
+      {
+        "text": "Very nearly like an ideal gas",
+        "correct": true
+      },
+      {
+        "text": "It condenses into a liquid at any pressure",
+        "why": "B_2V = 0 says nothing about condensing. It means the first correction to the ideal gas law is zero, so a dilute gas behaves almost ideally."
+      },
+      {
+        "text": "Its molecules stop attracting each other",
+        "why": "The attractions are still there. At the Boyle temperature they just balance the excluded volume, b = a/(RT), so B_2V is zero."
+      },
+      {
+        "text": "Its pressure is twice the ideal-gas value",
+        "why": "With B_2V = 0 the leading correction disappears, so the pressure is close to the ideal value, not double it."
+      }
+    ],
+    "explanation": "At the Boyle temperature the effects of attraction and molecular size cancel in B_2V, so the first correction to the ideal gas law is zero. A dilute gas then behaves almost ideally; only the much smaller B_3 and higher terms remain."
+  },
+  {
+    "id": "pc16-virial-boyle-above",
+    "type": "multiple-choice",
+    "prompt": "Above its Boyle temperature (where B_2V = 0), what is the sign of a van der Waals gas's B_2V = b − a/(RT)?",
+    "choices": [
+      {
+        "text": "Positive, since b outweighs a/(RT)",
+        "correct": true
+      },
+      {
+        "text": "Negative, since a/(RT) outweighs b",
+        "why": "That is the situation below the Boyle temperature. Above it, a/(RT) is smaller than b, so B_2V is positive."
+      },
+      {
+        "text": "Zero at every temperature above it",
+        "why": "B_2V is zero only at the Boyle temperature itself. Above it, a/(RT) keeps shrinking, so B_2V is positive."
+      },
+      {
+        "text": "Either sign, depending on the pressure",
+        "why": "B_2V depends only on temperature, not on pressure. Above the Boyle temperature it is positive."
+      }
+    ],
+    "explanation": "As T rises past the Boyle temperature, a/(RT) falls below b, so B_2V = b − a/(RT) becomes positive. The excluded volume (repulsion) then dominates, and the pressure is a little above the ideal value."
+  },
+  {
+    "id": "pc16-virial-boyle-larger-a",
+    "type": "multiple-choice",
+    "prompt": "Two van der Waals gases have the same b, but gas X has a larger a than gas W. Which has the higher Boyle temperature, the temperature at which B_2V = b − a/(RT) reaches zero?",
+    "choices": [
+      {
+        "text": "Gas X, the one with the larger a",
+        "correct": true
+      },
+      {
+        "text": "Gas W, the one with the smaller a",
+        "why": "A larger a needs a higher T before a/(RT) shrinks down to b. So the more strongly attracting gas, X, has the higher Boyle temperature."
+      },
+      {
+        "text": "Neither: equal b means equal Boyle temperatures",
+        "why": "B_2V = 0 needs a/(RT) = b, so the temperature depends on a as well as b. The gas with the larger a reaches it at a higher T."
+      },
+      {
+        "text": "Neither gas has a Boyle temperature",
+        "why": "Any van der Waals gas with a > 0 and b > 0 has one: B_2V goes from negative at low T to positive at high T, passing through zero."
+      }
+    ],
+    "explanation": "B_2V = 0 when a/(RT) = b. A gas with stronger attractions (larger a) needs a higher temperature before its attractions are weak enough to be balanced by b, so its Boyle temperature is higher."
+  },
+  {
+    "id": "pc16-virial-b2v-methane",
+    "type": "numeric",
+    "prompt": "For methane, the van der Waals constants are a = 2.283 L^2·bar/mol^2 and b = 0.04278 L/mol. At 300 K, RT = 24.94 L·bar/mol. Using B_2V = b − a/(RT), what is B_2V of methane at 300 K, in L/mol? (Give it as a decimal.)",
+    "answer": -0.0488,
+    "tolerance": 0.02,
+    "explanation": "a/(RT) = 2.283/24.94 = 0.0915 L/mol, so B_2V = 0.04278 − 0.0915 = −0.0488 L/mol. It is negative, so at 300 K the attractions in methane outweigh the excluded volume."
+  },
+  {
+    "id": "pc16-virial-boyle-nitrogen",
+    "type": "numeric",
+    "prompt": "The Boyle temperature is the temperature at which B_2V = b − a/(RT) equals zero, which gives T_B = a/(Rb). For N2, a = 1.370 L^2·bar/mol^2 and b = 0.0387 L/mol. With R = 0.08314 L·bar/(K·mol), what is the van der Waals Boyle temperature of N2, in K?",
+    "answer": 426,
+    "unit": "K",
+    "explanation": "T_B = a/(Rb) = 1.370/(0.08314 × 0.0387) = 1.370/0.003218 = 426 K. Below this temperature B_2V is negative; above it, positive."
+  },
+  {
+    "id": "pc16-virial-molar-b2",
+    "type": "numeric",
+    "prompt": "The section's B_2 is per molecule; the molar coefficient is B_2V = N_0 B_2, with N_0 = 6.022 × 10^23 mol^−1. For methane at 300 K, B_2 is about −7.0 × 10^−29 m^3. What is B_2V, in m^3/mol? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": -4.22e-05,
+    "explanation": "B_2V = (6.022 × 10^23 mol^−1)(−7.0 × 10^−29 m^3) = −4.22 × 10^−5 m^3/mol, or −0.0422 L/mol. Molar values like this are what the van der Waals result B_2V = b − a/(RT) gives, since a and b are molar constants."
+  },
+  {
+    "id": "pc16-virial-z-from-b2",
+    "type": "numeric",
+    "prompt": "Dividing the virial equation by ρ and keeping only the B_2 term gives Z = P/(ρkT) = 1 + B_2ρ. For a gas with B_2 = −4.0 × 10^−29 m^3 at a number density ρ = 1.25 × 10^27 m^−3 (about 50 atm), what is Z? (Give it as a decimal.)",
+    "answer": 0.95,
+    "tolerance": 0.005,
+    "explanation": "B_2ρ = (−4.0 × 10^−29)(1.25 × 10^27) = −0.050, so Z = 1 − 0.050 = 0.95. A negative B_2 makes Z less than 1: attractions lower the pressure below the ideal value."
+  },
+  {
+    "id": "pc16-virial-isihara-ratio",
+    "type": "numeric",
+    "prompt": "The Isihara–Hadwiger formula can be written B_2/V = 1 + 3α, where α = RS/(3V). For a hard, rod-like convex particle with α = 1.25, what is B_2/V? (Give it as a decimal.)",
+    "answer": 4.75,
+    "explanation": "B_2/V = 1 + 3 × 1.25 = 1 + 3.75 = 4.75. For a sphere α = 1, which gives B_2 = 4V; a more elongated body has a larger α and a larger B_2 compared with its own volume."
+  },
+  {
+    "id": "pc16-virial-mayer-f-wall",
+    "type": "numeric",
+    "prompt": "For two hard spheres closer together than σ, the potential u(r) is infinite, so exp(−u(r)/(k_B T)) = 0. What is the Mayer f-function, f = exp(−u(r)/(k_B T)) − 1, at such a separation?",
+    "answer": -1,
+    "tolerance": 0,
+    "explanation": "f = 0 − 1 = −1. With f = −1 inside σ and f = 0 outside, the integral becomes B_2 = −2π∫(−1)r^2 dr from 0 to σ, which gives 2πσ^3/3."
+  }
+]

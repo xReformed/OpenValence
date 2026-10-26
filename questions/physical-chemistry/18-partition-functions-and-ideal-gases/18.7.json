@@ -1,0 +1,527 @@
+[
+  {
+    "id": "pc18-polyatomic-vib-q-product",
+    "type": "multiple-choice",
+    "prompt": "How is the vibrational partition function q_vib of a polyatomic molecule built from its normal modes?",
+    "choices": [
+      {
+        "text": "It is the product of one factor for each normal mode",
+        "correct": true
+      },
+      {
+        "text": "It is the sum of one factor for each normal mode",
+        "why": "The energies of the modes add, so their partition functions multiply. q_vib is a product over the modes, not a sum."
+      },
+      {
+        "text": "It uses only the mode with the highest frequency",
+        "why": "Every normal mode contributes its own factor. The low-frequency modes matter most, since they are the easiest to excite."
+      },
+      {
+        "text": "It is the average of the factors of all the modes",
+        "why": "The factors are multiplied, not averaged. Because the modes are independent, q_vib is a product over all of them."
+      }
+    ],
+    "explanation": "Because the normal modes are independent, q_vib is a product with one factor per mode. A nonlinear molecule of N atoms has 3N − 6 factors, and a linear one 3N − 5."
+  },
+  {
+    "id": "pc18-polyatomic-vib-why-product",
+    "type": "multiple-choice",
+    "prompt": "Why can the vibrational partition function of a polyatomic molecule be written as a product over its normal modes?",
+    "choices": [
+      {
+        "text": "The modes are independent, and their energies add",
+        "correct": true
+      },
+      {
+        "text": "All the normal modes have the same frequency",
+        "why": "Each mode has its own frequency ν_i; water's range from 1595 to 3756 cm^−1. The product works because the modes are independent."
+      },
+      {
+        "text": "Only the ground vibrational state is ever populated",
+        "why": "Excited states can be populated, especially at high T. The product form comes from the independence of the modes, whose energies simply add."
+      },
+      {
+        "text": "Each normal mode belongs to just one atom of the molecule",
+        "why": "A normal mode moves several atoms at once. The product form holds because the modes are independent of each other."
+      }
+    ],
+    "explanation": "The vibrational energy is a sum of one term per normal mode, E_vib = Σ(v_i + 1/2)hν_i. When independent energies add, the partition function factors into a product over the modes."
+  },
+  {
+    "id": "pc18-polyatomic-vib-vi-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the vibrational energy E_vib = Σ(v_i + 1/2)hν_i, summed over the normal modes, what does v_i stand for?",
+    "choices": [
+      {
+        "text": "The vibrational quantum number of mode i",
+        "correct": true
+      },
+      {
+        "text": "The vibrational frequency of mode i",
+        "why": "The frequency of mode i is ν_i, the Greek letter nu. v_i is the quantum number, 0, 1, 2, …, that says how excited mode i is."
+      },
+      {
+        "text": "The speed of the atoms moving in mode i",
+        "why": "v_i is not a speed; it is a whole number, 0, 1, 2, …, the vibrational quantum number of mode i."
+      },
+      {
+        "text": "The number of normal modes of the molecule",
+        "why": "The number of modes, 3N − 5 or 3N − 6, is the number of terms in the sum. v_i is the quantum number of one mode, i."
+      }
+    ],
+    "explanation": "Each normal mode is a harmonic oscillator with its own quantum number v_i = 0, 1, 2, … and its own frequency ν_i. The total vibrational energy is the sum of the mode energies (v_i + 1/2)hν_i."
+  },
+  {
+    "id": "pc18-polyatomic-vib-factor-form",
+    "type": "multiple-choice",
+    "prompt": "Each normal mode of a polyatomic molecule contributes one factor to q_vib. What form does each factor have?",
+    "choices": [
+      {
+        "text": "The same form as the q_vib of a diatomic molecule",
+        "correct": true
+      },
+      {
+        "text": "The same form as the q_rot of a diatomic molecule",
+        "why": "Normal modes are vibrations, treated as harmonic oscillators. Each factor is the diatomic harmonic-oscillator q_vib, with that mode's own Θ_i."
+      },
+      {
+        "text": "The translational form, proportional to T^(3/2)",
+        "why": "That is q_trans, for the motion of the whole molecule. A vibrational mode is a harmonic oscillator, with the diatomic q_vib form."
+      },
+      {
+        "text": "A single Boltzmann factor, exp(−Θ_i/T)",
+        "why": "One Boltzmann factor would count just one excited state. Each mode has a whole ladder of levels, which sums to the diatomic q_vib form."
+      }
+    ],
+    "explanation": "Each normal mode is an independent harmonic oscillator, so its factor is exp(−Θ_i/(2T)) × 1/(1 − exp(−Θ_i/T)), just like the q_vib of a diatomic but with that mode's own Θ_i. The polyatomic q_vib is the product of these factors."
+  },
+  {
+    "id": "pc18-polyatomic-vib-rr-ho",
+    "type": "multiple-choice",
+    "prompt": "Which two approximations let the section separate the rotational motion of a molecule from its vibrational motion?",
+    "choices": [
+      {
+        "text": "The rigid rotor and the harmonic oscillator",
+        "correct": true
+      },
+      {
+        "text": "The Born–Oppenheimer and the ideal gas approximations",
+        "why": "These are not the ones the section names. It treats rotation with the rigid rotor and vibration with the harmonic oscillator, which lets the two be separated."
+      },
+      {
+        "text": "The particle in a box and the hydrogen atom",
+        "why": "The particle in a box describes translation, and the hydrogen atom is an electronic problem. Rotation and vibration are separated with the rigid rotor and harmonic oscillator."
+      },
+      {
+        "text": "The high-temperature limit and the symmetry number",
+        "why": "These simplify q_rot but don't separate rotation from vibration. That comes from the rigid rotor and harmonic oscillator models."
+      }
+    ],
+    "explanation": "Treating rotation with the rigid rotor and vibration with the harmonic oscillator separates the two motions, so that q = q_trans q_rot q_vib q_elec. The section keeps these approximations for polyatomic molecules."
+  },
+  {
+    "id": "pc18-polyatomic-vib-hamiltonian-kinetic",
+    "type": "multiple-choice",
+    "prompt": "In normal coordinates q_i, the section writes the vibrational Hamiltonian as H = −Σ ħ^2/(2μ_i) × ∂^2/∂q_i^2 + Σ (k_i/2)q_i^2. What does the first sum, the one containing ħ^2/(2μ_i), describe?",
+    "choices": [
+      {
+        "text": "The kinetic energy of the normal modes",
+        "correct": true
+      },
+      {
+        "text": "The potential energy of the normal modes",
+        "why": "The potential energy is the second sum, Σ (k_i/2)q_i^2, which contains the force constants. The first sum, with the second derivatives, is the kinetic energy."
+      },
+      {
+        "text": "The coupling between different normal modes",
+        "why": "Neither sum couples modes: each has just one term per mode, with no cross terms. The first sum is the kinetic energy."
+      },
+      {
+        "text": "The rotational energy of the whole molecule",
+        "why": "Rotation is handled separately, by q_rot. The first sum here is the kinetic energy of the vibrations."
+      }
+    ],
+    "explanation": "The first sum is the kinetic-energy operator, with the reduced mass μ_i of each mode, and the second is the harmonic potential energy, with force constant k_i. With one term per mode in each sum, H describes independent harmonic oscillators."
+  },
+  {
+    "id": "pc18-polyatomic-vib-water-oxygen-moves",
+    "type": "multiple-choice",
+    "prompt": "Water's three normal modes are the symmetric stretch, the asymmetric stretch and the bend. According to the section, what does the oxygen atom do in these modes?",
+    "choices": [
+      {
+        "text": "It moves in each of the three modes",
+        "correct": true
+      },
+      {
+        "text": "It stays fixed while only the H atoms move",
+        "why": "Drawings of water's modes often show only the H atoms moving, but the section notes that the O atom also moves in each normal mode."
+      },
+      {
+        "text": "It moves only in the bending mode",
+        "why": "The O atom moves in all three modes, the two stretches as well as the bend."
+      },
+      {
+        "text": "It moves only in the asymmetric stretch",
+        "why": "The O atom moves in every one of water's normal modes, not just the asymmetric stretch."
+      }
+    ],
+    "explanation": "Although drawings of water's normal modes often show only the hydrogen atoms moving, the section notes that the oxygen atom also moves with each of them. A normal mode is a motion of the whole molecule."
+  },
+  {
+    "id": "pc18-polyatomic-vib-theta-frequency",
+    "type": "multiple-choice",
+    "prompt": "The characteristic vibrational temperature of normal mode i is Θ_i = hν_i/k. How does Θ_i depend on the mode's frequency ν_i?",
+    "choices": [
+      {
+        "text": "It is proportional to ν_i",
+        "correct": true
+      },
+      {
+        "text": "It is inversely proportional to ν_i",
+        "why": "ν_i is in the numerator of hν_i/k, so a higher frequency gives a higher Θ_i."
+      },
+      {
+        "text": "It doesn't depend on ν_i, only on T",
+        "why": "Θ_i contains no T at all; it is a property of the mode. It is hν_i/k, so it is proportional to the frequency."
+      },
+      {
+        "text": "It is proportional to the square root of ν_i",
+        "why": "Θ_i = hν_i/k is simply linear in ν_i: doubling the frequency doubles Θ_i."
+      }
+    ],
+    "explanation": "Θ_i = hν_i/k, so Θ_i is proportional to ν_i. Water's bend, at 1594.8 cm^−1, has Θ = 2290 K, while its two stretches, near 3700 cm^−1, have Θ above 5000 K."
+  },
+  {
+    "id": "pc18-polyatomic-vib-theta-units",
+    "type": "multiple-choice",
+    "prompt": "In what unit is the characteristic vibrational temperature Θ_i = hν_i/k of a normal mode expressed?",
+    "choices": [
+      {
+        "text": "kelvin",
+        "correct": true
+      },
+      {
+        "text": "hertz",
+        "why": "Hertz is the unit of the frequency ν_i itself. Multiplying by h gives an energy, and dividing by k leaves a temperature."
+      },
+      {
+        "text": "joules",
+        "why": "hν_i is an energy in joules, but dividing by Boltzmann's constant, in J/K, leaves kelvin."
+      },
+      {
+        "text": "cm^−1",
+        "why": "cm^−1 is the unit of the wavenumber ν̃. The section turns a wavenumber into Θ with Θ = (1.4388 cm·K) × ν̃, giving kelvin."
+      }
+    ],
+    "explanation": "hν_i is an energy in J, and Boltzmann's constant k is in J/K, so Θ_i is in kelvin. Θ_i is the temperature at which kT equals the energy quantum hν_i of the mode."
+  },
+  {
+    "id": "pc18-polyatomic-vib-no2-three-thetas",
+    "type": "multiple-choice",
+    "prompt": "NO2 is a bent molecule, and the section's example gives it three characteristic vibrational temperatures. What does each of them belong to?",
+    "choices": [
+      {
+        "text": "One of its normal modes",
+        "correct": true
+      },
+      {
+        "text": "One of its three atoms",
+        "why": "A normal mode moves several atoms together, so Θ values aren't assigned to atoms. Bent NO2 has 3N − 6 = 3 normal modes, each with its own Θ."
+      },
+      {
+        "text": "One of its rotational axes",
+        "why": "Rotations are described by Θ_rot values, which are far smaller. Each Θ_vib belongs to one of the 3N − 6 = 3 normal modes."
+      },
+      {
+        "text": "One of its electronic states",
+        "why": "Electronic states are far apart and enter q_elec. Each Θ_vib = hν_i/k belongs to one normal mode."
+      }
+    ],
+    "explanation": "Each normal mode i has its own frequency ν_i and so its own Θ_i = hν_i/k. Bent NO2 has 3N − 6 = 3 normal modes, so its q_vib needs three Θ values."
+  },
+  {
+    "id": "pc18-polyatomic-vib-no2-bend",
+    "type": "multiple-choice",
+    "prompt": "NO2's three normal modes have Θ_vib = 1900 K, 1080 K and 2330 K. At 300 K, which mode's factor raises q_vib above 1 the most?",
+    "choices": [
+      {
+        "text": "The mode with Θ_vib = 1080 K",
+        "correct": true
+      },
+      {
+        "text": "The mode with Θ_vib = 2330 K",
+        "why": "A higher Θ_vib makes a mode harder to excite, so its factor is the closest to 1 (1.0004)."
+      },
+      {
+        "text": "The mode with Θ_vib = 1900 K",
+        "why": "Its factor is 1.0018. The 1080 K mode has the smallest Θ_vib/T, so it is the easiest to excite and gives 1.0281."
+      },
+      {
+        "text": "All three raise it by the same amount",
+        "why": "Each factor depends on that mode's own Θ_vib/T. The factors are 1.0018, 1.0281 and 1.0004, so the 1080 K mode matters most."
+      }
+    ],
+    "explanation": "Each factor is 1/(1 − exp(−Θ_i/T)), which is largest when Θ_i/T is smallest. At 300 K the 1080 K mode, the bend, gives 1.0281, against 1.0018 and 1.0004 for the other two."
+  },
+  {
+    "id": "pc18-polyatomic-vib-no2-typical",
+    "type": "multiple-choice",
+    "prompt": "The section finds that, at 300 K, very few vibrational states of NO2 other than the ground state are accessible. How typical is this?",
+    "choices": [
+      {
+        "text": "It is standard for the vibrations of most molecules",
+        "correct": true
+      },
+      {
+        "text": "It is unusual, because NO2 has an unpaired electron",
+        "why": "An unpaired electron affects q_elec, not the vibrations. Most molecules, like NO2, have vibrational temperatures far above 300 K."
+      },
+      {
+        "text": "It is unusual; most molecules are highly excited at 300 K",
+        "why": "Most molecules have Θ_vib values well above room temperature, so they too sit mainly in the ground vibrational state. The section calls NO2's behavior standard."
+      },
+      {
+        "text": "It happens only for molecules without bending modes",
+        "why": "NO2 has a bend, its lowest mode at 1080 K, and still has q_vib ≈ 1.03 at 300 K. Most molecules behave like this at room temperature."
+      }
+    ],
+    "explanation": "NO2's three Θ_vib values, 1080 to 2330 K, are all well above 300 K, so q_vib = 1.030. The section notes that this is standard: at room temperature most molecules are almost all in their ground vibrational state."
+  },
+  {
+    "id": "pc18-polyatomic-vib-water-vs-no2",
+    "type": "multiple-choice",
+    "prompt": "NO2's normal modes have Θ_vib = 1900, 1080 and 2330 K, and water's have 5261, 5404 and 2290 K. At 300 K, which molecule has a q_vib closer to 1?",
+    "choices": [
+      {
+        "text": "Water, whose lowest Θ_vib is far higher",
+        "correct": true
+      },
+      {
+        "text": "NO2, because its lowest Θ_vib is the smaller one",
+        "why": "The lowest-Θ mode is the easiest to excite, so a small Θ_vib pushes q_vib above 1. NO2's 1080 K bend puts its q_vib (1.030) further from 1."
+      },
+      {
+        "text": "Neither; both have three modes, so q_vib is equal",
+        "why": "The number of factors is the same, but each factor depends on its own Θ_vib/T. Water's lowest mode has a much higher Θ_vib than NO2's, so its q_vib is closer to 1."
+      },
+      {
+        "text": "NO2, because NO2 is the heavier molecule",
+        "why": "Mass matters only through the frequencies, which are already in the Θ_vib values. Water's lowest Θ_vib is much higher, so its q_vib is closer to 1."
+      }
+    ],
+    "explanation": "The mode with the lowest Θ_vib is the easiest to excite and sets how far q_vib rises above 1. Water's lowest mode, the bend at 2290 K, lies far above NO2's bend at 1080 K, so water's q_vib at 300 K is within about 0.0005 of 1, against 1.030 for NO2."
+  },
+  {
+    "id": "pc18-polyatomic-vib-temperature-rise",
+    "type": "multiple-choice",
+    "prompt": "With energies measured from the zero-point level, how does q_vib of a polyatomic molecule change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It increases",
+        "correct": true
+      },
+      {
+        "text": "It decreases toward 0",
+        "why": "Each factor 1/(1 − exp(−Θ_i/T)) grows as T rises, since exp(−Θ_i/T) increases. q_vib starts at 1 and goes up."
+      },
+      {
+        "text": "It stays 1 at all temperatures",
+        "why": "q_vib is close to 1 at low T, but excited levels become accessible as T rises. Then each factor, and q_vib, grows above 1."
+      },
+      {
+        "text": "It increases only for linear molecules",
+        "why": "Linear and nonlinear molecules alike have modes whose factors grow with T. Only the number of modes differs, 3N − 5 or 3N − 6."
+      }
+    ],
+    "explanation": "As T rises, exp(−Θ_i/T) grows, so every factor 1/(1 − exp(−Θ_i/T)) rises above 1. More molecules then reach excited vibrational levels."
+  },
+  {
+    "id": "pc18-polyatomic-vib-cv-sum",
+    "type": "multiple-choice",
+    "prompt": "How is the vibrational heat capacity C_V of a polyatomic gas related to its normal modes?",
+    "choices": [
+      {
+        "text": "It is a sum of one term per mode, each with its own Θ_i",
+        "correct": true
+      },
+      {
+        "text": "It is a product of one factor per normal mode",
+        "why": "Partition functions of independent modes multiply, but energies and heat capacities add. The vibrational C_V is a sum over the modes."
+      },
+      {
+        "text": "It comes only from the mode with the lowest Θ_i",
+        "why": "Every mode adds its own term. The low-Θ modes are excited first, so their terms are the largest at ordinary temperatures, but all of them count."
+      },
+      {
+        "text": "It is the diatomic term multiplied by the number of atoms",
+        "why": "The terms are counted by normal modes, not atoms, and each uses its own Θ_i. The vibrational C_V is a sum of one term per mode."
+      }
+    ],
+    "explanation": "The section's formula is a sum over the normal modes, each term having the same form as the diatomic vibrational heat capacity, with that mode's Θ_i. Energies and heat capacities of independent modes add, while their partition functions multiply."
+  },
+  {
+    "id": "pc18-polyatomic-vib-energy-zero-point",
+    "type": "multiple-choice",
+    "prompt": "In the section's formula for ⟨E_vib⟩, each normal mode contributes NkΘ_i/2 plus a term that grows with temperature. What does the NkΘ_i/2 part represent?",
+    "choices": [
+      {
+        "text": "The zero-point energy of mode i for N molecules",
+        "correct": true
+      },
+      {
+        "text": "The heat capacity of mode i",
+        "why": "NkΘ_i/2 doesn't depend on T, so it adds nothing to the heat capacity. It is the zero-point energy, N × hν_i/2."
+      },
+      {
+        "text": "The energy of the molecules excited to v_i = 1",
+        "why": "Excitation energy is in the temperature-dependent term. NkΘ_i/2 = N × hν_i/2 is the zero-point energy, present even at T = 0."
+      },
+      {
+        "text": "The rotational energy of the N molecules",
+        "why": "Rotation has its own partition function and energy. NkΘ_i/2 is N times the zero-point energy hν_i/2 of vibrational mode i."
+      }
+    ],
+    "explanation": "Since kΘ_i = hν_i, NkΘ_i/2 = N × hν_i/2, the zero-point energy of mode i summed over N molecules. It is present even at T = 0, while the other term grows as excited levels fill."
+  },
+  {
+    "id": "pc18-polyatomic-vib-trans-mass",
+    "type": "multiple-choice",
+    "prompt": "For a polyatomic molecule, q_trans = [(2πMkT)/h^2]^(3/2)V. What is M?",
+    "choices": [
+      {
+        "text": "The mass of the whole molecule",
+        "correct": true
+      },
+      {
+        "text": "The reduced mass of one normal mode",
+        "why": "Reduced masses μ_i belong to the vibrations. Translation moves the whole molecule, so M is its total mass."
+      },
+      {
+        "text": "The mass of the molecule's heaviest atom",
+        "why": "All the atoms move together when the molecule translates. M is the mass of the whole molecule."
+      },
+      {
+        "text": "The molar mass of the gas, in g/mol",
+        "why": "M is the mass of one particle, the molecule, in kg. The formula contains Boltzmann's constant k, a per-molecule quantity, rather than R."
+      }
+    ],
+    "explanation": "Translation is the motion of the molecule as a whole, so q_trans uses the mass M of the entire molecule. The number of translational states is far greater than the number of molecules."
+  },
+  {
+    "id": "pc18-polyatomic-vib-de",
+    "type": "multiple-choice",
+    "prompt": "Keeping only the ground electronic state, the section writes q_elec = g_1 exp(D_e/(kT)). What does −D_e stand for?",
+    "choices": [
+      {
+        "text": "The energy of the ground electronic state",
+        "correct": true
+      },
+      {
+        "text": "The energy of the first excited electronic state",
+        "why": "Excited states are left out of q_elec because they lie far above the ground state. −D_e is the energy of the ground electronic state itself."
+      },
+      {
+        "text": "The degeneracy of the ground electronic state",
+        "why": "The degeneracy is g_1, the factor in front. −D_e is the energy of the ground electronic state."
+      },
+      {
+        "text": "The zero-point energy of the vibrations",
+        "why": "Zero-point energy belongs to q_vib. In q_elec, −D_e is the energy of the ground electronic state."
+      }
+    ],
+    "explanation": "Electronic states are usually far apart, so q_elec keeps only the ground state, with degeneracy g_1 and energy −D_e. Its Boltzmann factor is exp(−(−D_e)/(kT)) = exp(D_e/(kT))."
+  },
+  {
+    "id": "pc18-polyatomic-vib-entropy-conformations",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what can the vibrational entropy of each conformation of a macromolecule tell you?",
+    "choices": [
+      {
+        "text": "Whether entropy makes some conformations favored",
+        "correct": true
+      },
+      {
+        "text": "The exact three-dimensional structure of each conformation",
+        "why": "Structures come straight from the conformational search. The vibrational entropy adds whether entropic differences favor some conformations."
+      },
+      {
+        "text": "How fast one conformation turns into another",
+        "why": "Rates are not part of this. The section uses vibrational entropy to judge whether entropic differences make some conformations favored."
+      },
+      {
+        "text": "The electronic energy of each conformation",
+        "why": "The conformational search already gives the energies. The vibrational entropy tells whether significant entropic differences favor certain conformations."
+      }
+    ],
+    "explanation": "A conformational search gives energies and structures. The vibrational entropy of each structure shows whether there are significant entropic differences, and so whether certain conformations will be favored."
+  },
+  {
+    "id": "pc18-polyatomic-vib-pes-shape",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the vibrational energy and entropy of a molecule depend on which feature of its potential energy surface?",
+    "choices": [
+      {
+        "text": "The shape of the surface",
+        "correct": true
+      },
+      {
+        "text": "Only the energy at its lowest point",
+        "why": "The lowest energy is what a conformational search gives. The vibrational energy and entropy depend on the shape of the surface around that point."
+      },
+      {
+        "text": "Its height at the dissociation limit",
+        "why": "Harmonic vibrations sample the surface near the minimum, not at dissociation. It is the shape of the surface that sets the vibrational frequencies."
+      },
+      {
+        "text": "None; they depend only on the temperature",
+        "why": "Temperature matters, but so does the surface: its shape sets the frequencies ν_i, and so the Θ_i."
+      }
+    ],
+    "explanation": "The shape of the multidimensional potential energy surface sets the force constants, and so the frequencies of the normal modes. That is why vibrational energies and entropies carry information that energies and structures alone do not."
+  },
+  {
+    "id": "pc18-polyatomic-vib-no2-stretch-theta",
+    "type": "numeric",
+    "prompt": "A mode's characteristic vibrational temperature can be found from its wavenumber with Θ = (1.4388 cm·K) × ν̃. NO2's symmetric stretch is at about 1320 cm^−1. What is its Θ_vib, in K?",
+    "answer": 1899,
+    "unit": "K",
+    "explanation": "Θ = 1.4388 cm·K × 1320 cm^−1 = 1899 K. This matches the 1900 K used for this mode in the section's NO2 example."
+  },
+  {
+    "id": "pc18-polyatomic-vib-n2o-factors",
+    "type": "numeric",
+    "prompt": "Nitrous oxide, N2O (N≡N–O), is a linear molecule with 3 atoms, and a linear molecule has 3N − 5 vibrational degrees of freedom. How many factors, one per normal mode, does its q_vib contain?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "3N − 5 = 3 × 3 − 5 = 4, so q_vib of N2O is a product of four factors. A bent triatomic such as NO2 has only 3N − 6 = 3."
+  },
+  {
+    "id": "pc18-polyatomic-vib-h2o2-factors",
+    "type": "numeric",
+    "prompt": "Hydrogen peroxide, H2O2, is a nonlinear molecule with 4 atoms, and a nonlinear molecule has 3N − 6 vibrational degrees of freedom. How many characteristic vibrational temperatures Θ_i are needed for its q_vib?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "3N − 6 = 3 × 4 − 6 = 6 normal modes, each with its own Θ_i = hν_i/k. So q_vib of H2O2 is a product of six factors."
+  },
+  {
+    "id": "pc18-polyatomic-vib-water-2000k",
+    "type": "numeric",
+    "prompt": "At 2000 K, the factors 1/(1 − exp(−Θ_i/T)) for water's three normal modes are 1.078 (symmetric stretch), 1.072 (asymmetric stretch) and 1.467 (bend). With energies measured from the zero-point level, what is water's q_vib at 2000 K? (Give it as a decimal.)",
+    "answer": 1.695,
+    "explanation": "q_vib is the product of the three factors: 1.078 × 1.072 × 1.467 = 1.695. Even at 2000 K, the bend, with the lowest Θ_vib, gives most of the excess over 1."
+  },
+  {
+    "id": "pc18-polyatomic-vib-ocs-cv-high-t",
+    "type": "numeric",
+    "prompt": "Carbonyl sulfide, OCS, is a linear molecule with 4 normal modes. The vibrational heat capacity is a sum of one term per mode, and in the high-temperature limit each mode's term approaches R = 8.314 J/(mol·K). What is the vibrational molar C_V of OCS in this limit, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 33.3,
+    "explanation": "Adding one R per normal mode, C_V = 4R = 4 × 8.314 = 33.3 J/(mol·K). At ordinary temperatures it is much smaller, because modes with Θ_vib well above T contribute almost nothing."
+  },
+  {
+    "id": "pc18-polyatomic-vib-bend-zero-point-molar",
+    "type": "numeric",
+    "prompt": "In the vibrational energy ⟨E_vib⟩, each normal mode contributes a zero-point term NkΘ_i/2. For one mole, Nk = R = 8.314 J/(mol·K). Water's bend has Θ_vib = 2290 K. What is this mode's zero-point energy for one mole of water, in J/mol?",
+    "answer": 9520,
+    "explanation": "NkΘ_i/2 = RΘ_i/2 = 8.314 × 2290/2 = 9520 J/mol, about 9.5 kJ/mol. Every mole of water holds this energy in its bend even at 0 K."
+  }
+]

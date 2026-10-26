@@ -1,0 +1,339 @@
+[
+  {
+    "id": "pc22-helmholtz-beyond-isolated",
+    "type": "multiple-choice",
+    "prompt": "The test dS > 0 for a spontaneous process works only for an isolated system. To get a criterion for other systems, which two quantities does the section hold constant?",
+    "choices": [
+      {
+        "text": "Volume and temperature",
+        "correct": true
+      },
+      {
+        "text": "Pressure and temperature",
+        "why": "Holding P and T fixed leads to a different function, the Gibbs energy. The Helmholtz energy A is built for constant V and T."
+      },
+      {
+        "text": "Internal energy and volume",
+        "why": "Fixed U and V is the isolated case that dS > 0 already handles. The section fixes V and T instead, which lets heat flow in or out."
+      },
+      {
+        "text": "Entropy and volume",
+        "why": "Entropy is what the criterion has to keep track of, so it is not held fixed. The section holds V and T constant and defines A ≡ U − TS."
+      }
+    ],
+    "explanation": "With V constant the −P dV work term drops out, and with T constant the S dT term drops out. Under these conditions the Helmholtz energy, A ≡ U − TS, gives the spontaneity test dA ≤ 0."
+  },
+  {
+    "id": "pc22-helmholtz-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the Helmholtz energy A?",
+    "choices": [
+      {
+        "text": "A ≡ U − TS",
+        "correct": true
+      },
+      {
+        "text": "A ≡ H − TS",
+        "why": "H − TS defines the Gibbs energy G. The Helmholtz energy is built on the internal energy: A ≡ U − TS."
+      },
+      {
+        "text": "A ≡ U + TS",
+        "why": "The entropy term is subtracted, not added. With A ≡ U − TS, a larger entropy lowers A."
+      },
+      {
+        "text": "A ≡ U + PV",
+        "why": "U + PV is the enthalpy H. The Helmholtz energy subtracts TS from U: A ≡ U − TS."
+      }
+    ],
+    "explanation": "The Helmholtz energy is A ≡ U − TS. It is a state function, since U, T and S are all state functions."
+  },
+  {
+    "id": "pc22-helmholtz-inequality",
+    "type": "multiple-choice",
+    "prompt": "The section notes that dU = T dS − P dV is valid only for reversible changes. What does it become for a spontaneous change at constant volume?",
+    "choices": [
+      {
+        "text": "dU ≤ T dS",
+        "correct": true
+      },
+      {
+        "text": "dU = T dS",
+        "why": "The equality holds only for a reversible change. For a spontaneous change the Clausius inequality, dS > δq/T, makes dU smaller than T dS."
+      },
+      {
+        "text": "dU ≥ T dS",
+        "why": "The inequality points the other way. At constant V, dU = δq, and the Clausius inequality says T dS > δq, so dU ≤ T dS."
+      },
+      {
+        "text": "dU = −P dV",
+        "why": "At constant volume dV = 0, so it is −P dV that vanishes, not T dS. The Clausius inequality then gives dU ≤ T dS."
+      }
+    ],
+    "explanation": "At constant volume no P–V work is done, so dU = δq. The Clausius inequality, dS ≥ δq/T, then gives dU ≤ T dS, or dU − T dS ≤ 0."
+  },
+  {
+    "id": "pc22-helmholtz-pdv-drops",
+    "type": "multiple-choice",
+    "prompt": "On the way to the Helmholtz energy, why does the −P dV term drop out of dU = T dS − P dV?",
+    "choices": [
+      {
+        "text": "The volume is held constant, so dV = 0",
+        "correct": true
+      },
+      {
+        "text": "The pressure of the system is zero",
+        "why": "The system can have any pressure. The term vanishes because dV = 0 at constant volume, so P dV = 0 whatever P is."
+      },
+      {
+        "text": "The temperature is held constant",
+        "why": "Constant temperature removes the S dT term of dA, not −P dV. The −P dV term goes because the volume is fixed."
+      },
+      {
+        "text": "The change is assumed to be reversible",
+        "why": "A reversible change can still do P–V work. The term is zero here because the volume does not change."
+      }
+    ],
+    "explanation": "The section treats changes at constant volume, so dV = 0 and no P–V work is done. That leaves dU ≤ T dS for a spontaneous change."
+  },
+  {
+    "id": "pc22-helmholtz-criterion",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature and volume, what is true of dA for a spontaneous process?",
+    "choices": [
+      {
+        "text": "dA < 0",
+        "correct": true
+      },
+      {
+        "text": "dA > 0",
+        "why": "A rises only in a process that cannot happen on its own. At constant T and V, A falls in a spontaneous process: dA < 0."
+      },
+      {
+        "text": "dA = 0",
+        "why": "dA = 0 describes equilibrium, where A has stopped changing. While a spontaneous process runs, A decreases."
+      },
+      {
+        "text": "dA has the same sign as dS",
+        "why": "The sign of dS alone decides spontaneity only for an isolated system. At constant T and V the test is dA < 0, whatever the sign of dS."
+      }
+    ],
+    "explanation": "At constant T and V, dA = dU − T dS ≤ 0. The Helmholtz energy decreases in a spontaneous process, even though the system need not be isolated."
+  },
+  {
+    "id": "pc22-helmholtz-equilibrium",
+    "type": "multiple-choice",
+    "prompt": "A system is held at constant temperature and volume. What happens to its Helmholtz energy once equilibrium is reached?",
+    "choices": [
+      {
+        "text": "It stays constant",
+        "correct": true
+      },
+      {
+        "text": "It drops to zero",
+        "why": "A is not forced to zero at equilibrium. It has reached its lowest value and simply stops changing, so dA = 0."
+      },
+      {
+        "text": "It starts to rise again",
+        "why": "A rise in A at constant T and V cannot happen on its own. At equilibrium, A stays constant."
+      },
+      {
+        "text": "It becomes equal to U",
+        "why": "A = U only if TS = 0, which equilibrium does not require. At equilibrium, A just stops changing."
+      }
+    ],
+    "explanation": "A falls during a spontaneous process at constant T and V and becomes constant once equilibrium is reached. So at equilibrium A has reached its lowest value, and dA = 0."
+  },
+  {
+    "id": "pc22-helmholtz-not-isolated",
+    "type": "multiple-choice",
+    "prompt": "The section says A decreases in a spontaneous process at constant T and V regardless of isolation. What does this mean?",
+    "choices": [
+      {
+        "text": "The system may exchange heat with the outside",
+        "correct": true
+      },
+      {
+        "text": "The system must be sealed off from all heat flow",
+        "why": "That would be an isolated system, which dS > 0 already covers. The point of A is that the test works even when heat flows in or out."
+      },
+      {
+        "text": "The test works only if no entropy is produced",
+        "why": "A spontaneous process does produce entropy, and A still decreases. The phrase means only that the system need not be isolated."
+      },
+      {
+        "text": "A decreases at any temperature and volume",
+        "why": "The test needs T and V held constant. Regardless of isolation means that the system may exchange heat with its surroundings."
+      }
+    ],
+    "explanation": "Holding T constant usually means heat flows to or from the surroundings, so the system is not isolated. The test dA ≤ 0 still works, which makes A far more useful than dS > 0."
+  },
+  {
+    "id": "pc22-helmholtz-mixing-why-negative",
+    "type": "multiple-choice",
+    "prompt": "In the section's example, two ideal gases mix at constant temperature and constant total volume, so ΔU = 0. Why is ΔA negative?",
+    "choices": [
+      {
+        "text": "ΔA = −TΔS, and mixing raises the entropy",
+        "correct": true
+      },
+      {
+        "text": "Mixing releases heat, so U falls",
+        "why": "ΔU = 0 here, because the gases are ideal and T is constant. ΔA is negative because ΔA = −TΔS and ΔS > 0."
+      },
+      {
+        "text": "The temperature drops as the gases mix",
+        "why": "The mixing is isothermal, so T does not change. ΔA < 0 comes from the rise in entropy: ΔA = −TΔS."
+      },
+      {
+        "text": "The gases are squeezed into a smaller volume",
+        "why": "The total volume stays the same, and each gas spreads through all of it. ΔA = −TΔS is negative because the entropy rises."
+      }
+    ],
+    "explanation": "With ΔU = 0, ΔA = ΔU − TΔS = −TΔS. Mixing raises the entropy, so ΔA is negative; per mole, ΔĀ = RT(y_1 ln y_1 + y_2 ln y_2), which is below zero because each mole fraction is less than 1."
+  },
+  {
+    "id": "pc22-helmholtz-tds-qrev",
+    "type": "multiple-choice",
+    "prompt": "For a process at constant temperature, the section identifies the term TΔS in ΔA = ΔU − TΔS with which quantity?",
+    "choices": [
+      {
+        "text": "The reversible heat, q_rev",
+        "correct": true
+      },
+      {
+        "text": "The reversible work, w_rev",
+        "why": "Work enters only at the next step, ΔU − q_rev = w_rev. Since ΔS = q_rev/T at constant T, TΔS is the reversible heat."
+      },
+      {
+        "text": "The heat of the actual, irreversible process",
+        "why": "Entropy changes are found from reversible heat, ΔS = q_rev/T. So TΔS equals q_rev, not the heat of the actual process."
+      },
+      {
+        "text": "The internal energy change, ΔU",
+        "why": "ΔU is the other term in ΔA = ΔU − TΔS. At constant T, ΔS = q_rev/T, so TΔS = q_rev."
+      }
+    ],
+    "explanation": "At constant T, ΔS = q_rev/T, so TΔS = q_rev. Then ΔA = ΔU − q_rev, which the first law, ΔU = q + w, turns into w_rev."
+  },
+  {
+    "id": "pc22-helmholtz-free-energy",
+    "type": "multiple-choice",
+    "prompt": "Why is the Helmholtz energy often called the Helmholtz free energy?",
+    "choices": [
+      {
+        "text": "It measures the most work a system can do",
+        "correct": true
+      },
+      {
+        "text": "It is the energy a system gives off as heat",
+        "why": "Heat is the TΔS part, q_rev, not ΔA. ΔA = w_rev, the most work that can be obtained, so A measures energy free to do work."
+      },
+      {
+        "text": "It is the energy of a fully isolated system",
+        "why": "A is useful precisely because the system need not be isolated. The name comes from ΔA = w_rev, the maximum work a system can produce."
+      },
+      {
+        "text": "It stays constant in every process",
+        "why": "A changes; it falls in a spontaneous process at constant T and V. It is called free energy because ΔA gives the most work the system can produce."
+      }
+    ],
+    "explanation": "The section shows ΔA = ΔU − q_rev = w_rev, the maximal work a system can produce. Because A measures how much work one can get out of a system, it is called the Helmholtz free energy."
+  },
+  {
+    "id": "pc22-helmholtz-other-work",
+    "type": "multiple-choice",
+    "prompt": "At constant volume, ΔA gives the most work a system can do. What kind of work must this be?",
+    "choices": [
+      {
+        "text": "Non-P–V work, such as electrical work",
+        "correct": true
+      },
+      {
+        "text": "Expansion work pushing back the surroundings",
+        "why": "At constant volume the system cannot expand, so it does no P–V work. The work counted by ΔA is other work, such as electrical work."
+      },
+      {
+        "text": "Compression work done on the gas by a piston",
+        "why": "Compression would change the volume, which is held fixed. ΔA counts other work, such as electrical work."
+      },
+      {
+        "text": "Heat flowing out of the system to a bath",
+        "why": "Heat is not work at all. With the volume fixed, ΔA counts only other work, such as electrical work."
+      }
+    ],
+    "explanation": "With V fixed, no volume work can be done, so the work in ΔA = w_rev is other work, such as electrical work. The section notes this is the maximal other work under the unlikely condition that the volume is constant."
+  },
+  {
+    "id": "pc22-helmholtz-natural-variables",
+    "type": "multiple-choice",
+    "prompt": "What are the natural variables of the Helmholtz energy A?",
+    "choices": [
+      {
+        "text": "Volume V and temperature T",
+        "correct": true
+      },
+      {
+        "text": "Pressure P and temperature T",
+        "why": "In dA = −P dV − S dT, P is a coefficient, not a variable that changes. The changes are dV and dT, so A's natural variables are V and T."
+      },
+      {
+        "text": "Entropy S and volume V",
+        "why": "S appears only as the coefficient of dT. The changes in dA = −P dV − S dT are dV and dT, so the natural variables are V and T."
+      },
+      {
+        "text": "Entropy S and pressure P",
+        "why": "S and P are the coefficients in dA = −P dV − S dT, not its variables. The differentials are dV and dT, so A depends naturally on V and T."
+      }
+    ],
+    "explanation": "From dA = −P dV − S dT, A changes naturally with V and T. That is why A is the function to use when the volume and temperature are held fixed."
+  },
+  {
+    "id": "pc22-helmholtz-differential",
+    "type": "multiple-choice",
+    "prompt": "Substituting dU = T dS − P dV into dA = dU − T dS − S dT, which expression does the section get for dA?",
+    "choices": [
+      {
+        "text": "dA = −P dV − S dT",
+        "correct": true
+      },
+      {
+        "text": "dA = −P dV + S dT",
+        "why": "The S dT term keeps its minus sign from dA = dU − T dS − S dT. Only the two T dS terms cancel."
+      },
+      {
+        "text": "dA = T dS − P dV",
+        "why": "That is dU. Its +T dS cancels the −T dS in dA = dU − T dS − S dT, which leaves −P dV − S dT."
+      },
+      {
+        "text": "dA = V dP − S dT",
+        "why": "No V dP term appears, since A is built from U, not from H. Substituting gives T dS − P dV − T dS − S dT = −P dV − S dT."
+      }
+    ],
+    "explanation": "dA = (T dS − P dV) − T dS − S dT. The T dS terms cancel, leaving dA = −P dV − S dT."
+  },
+  {
+    "id": "pc22-helmholtz-mixing-quarter",
+    "type": "numeric",
+    "prompt": "Two ideal gases mix at 300 K at constant total volume, with mole fractions y_1 = 0.250 and y_2 = 0.750. Using the molar Helmholtz energy of mixing, ΔĀ = RT(y_1 ln y_1 + y_2 ln y_2), with R = 8.314 J/(mol·K), ln 0.250 = −1.386 and ln 0.750 = −0.288, what is ΔĀ, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -1.403,
+    "explanation": "y_1 ln y_1 + y_2 ln y_2 = 0.250(−1.386) + 0.750(−0.288) = −0.3465 − 0.216 = −0.5625, so ΔĀ = (8.314 J/(mol·K))(300 K)(−0.5625) = −1403 J/mol = −1.403 kJ/mol. It is negative, as it must be for mixing that happens on its own at constant T and V."
+  },
+  {
+    "id": "pc22-helmholtz-from-du-ds",
+    "type": "numeric",
+    "prompt": "A process at a constant 300 K and constant volume has ΔU = −50.0 kJ and ΔS = −40.0 J/K. Using ΔA = ΔU − TΔS, what is ΔA, in kJ, including its sign?",
+    "answer": -38,
+    "unit": "kJ",
+    "tolerance": 0,
+    "explanation": "TΔS = (300 K)(−0.0400 kJ/K) = −12.0 kJ, so ΔA = −50.0 kJ − (−12.0 kJ) = −38.0 kJ. ΔA < 0, so the process is spontaneous at constant T and V even though the system's entropy falls."
+  },
+  {
+    "id": "pc22-helmholtz-battery-max-work",
+    "type": "numeric",
+    "prompt": "A sealed battery at constant temperature and volume runs a reaction with ΔA = −150 kJ. Since ΔA = w_rev, the maximal work, how much work can the battery do on its surroundings, at most, in kJ?",
+    "answer": 150,
+    "unit": "kJ",
+    "tolerance": 0,
+    "explanation": "w_rev = ΔA = −150 kJ is the work done on the system, so the battery can do at most 150 kJ of work on its surroundings. With the volume fixed, none of it is P–V work; here it is electrical work."
+  }
+]

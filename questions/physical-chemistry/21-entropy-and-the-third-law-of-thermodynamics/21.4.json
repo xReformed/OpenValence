@@ -1,0 +1,168 @@
+[
+  {
+    "id": "pc21-debye-t-cubed",
+    "type": "multiple-choice",
+    "prompt": "According to the Debye model, how does the heat capacity of a nonmetallic crystal depend on temperature at very low T?",
+    "choices": [
+      {
+        "text": "C_P = aT^3",
+        "correct": true
+      },
+      {
+        "text": "C_P = aT",
+        "why": "A term linear in T comes from the conduction electrons of a metal. For the lattice vibrations, Debye's result is C_P = aT^3."
+      },
+      {
+        "text": "C_P stays constant",
+        "why": "A constant heat capacity is the classical Dulong–Petit picture, which fails at low T. Debye's model gives C_P = aT^3, which falls sharply toward zero."
+      },
+      {
+        "text": "C_P = a/T^3",
+        "why": "That would make C_P grow without limit as the crystal cools. In the Debye model C_P = aT^3 falls toward zero as T approaches 0 K."
+      }
+    ],
+    "explanation": "Debye showed that at low temperatures the heat capacity of a crystal lattice follows C_P = aT^3, where a is a constant for the substance. C_P falls sharply toward zero as T approaches 0 K."
+  },
+  {
+    "id": "pc21-debye-phonons",
+    "type": "multiple-choice",
+    "prompt": "What does the Debye model treat as quantized phonons?",
+    "choices": [
+      {
+        "text": "The lattice's normal modes of vibration",
+        "correct": true
+      },
+      {
+        "text": "The free conduction electrons in a metal",
+        "why": "Conduction electrons give the extra aT term in metals. Phonons are the quantized vibrational modes of the lattice."
+      },
+      {
+        "text": "Light given off by the warm crystal",
+        "why": "Quanta of light are photons, not phonons. Phonons are the quantized normal modes in which the crystal lattice vibrates."
+      },
+      {
+        "text": "The spins of the nuclei in the crystal",
+        "why": "Nuclear spins play no part in the Debye model. It treats the lattice's normal modes of vibration as quantized phonons."
+      }
+    ],
+    "explanation": "Debye modeled the vibrational energy of a crystal lattice as a collection of quantized normal modes, or phonons. Treating them with quantum mechanics gives a heat capacity that depends on temperature, unlike the classical Dulong–Petit law."
+  },
+  {
+    "id": "pc21-debye-low-frequency",
+    "type": "multiple-choice",
+    "prompt": "In the Debye model, why does a crystal's heat capacity fall sharply at low temperature?",
+    "choices": [
+      {
+        "text": "Only low-frequency modes can still be excited",
+        "correct": true
+      },
+      {
+        "text": "The atoms stop vibrating below a fixed temperature",
+        "why": "Vibrations don't switch off at a set temperature. As T falls, fewer modes are thermally accessible, until only the low-frequency ones remain."
+      },
+      {
+        "text": "Each atom adds a fixed amount to the heat capacity",
+        "why": "That is the classical Dulong–Petit assumption, which predicts a constant heat capacity. In Debye's model only low-frequency modes are accessible at low T, so C_P falls."
+      },
+      {
+        "text": "Only high-frequency modes can still be excited",
+        "why": "High-frequency modes need the most energy, so they are the first to freeze out. At low T only the low-frequency modes remain accessible."
+      }
+    ],
+    "explanation": "At low temperatures only the low-frequency vibrational modes are thermally accessible. With fewer modes able to take up energy, the heat capacity decreases sharply instead of staying constant."
+  },
+  {
+    "id": "pc21-debye-vs-classical",
+    "type": "multiple-choice",
+    "prompt": "How does the Debye heat capacity compare with the classical Dulong–Petit law?",
+    "choices": [
+      {
+        "text": "It falls at low T but nears the classical value at high T",
+        "correct": true
+      },
+      {
+        "text": "It agrees with the classical value at every temperature",
+        "why": "If it did, Debye's model would add nothing. It falls sharply at low T and approaches the classical limit only at higher temperatures."
+      },
+      {
+        "text": "It matches the classical value at low T but not at high T",
+        "why": "It is the other way round. The classical law fails at low T, where Debye's C_P falls; at higher T the two agree."
+      },
+      {
+        "text": "It is larger than the classical value at every temperature",
+        "why": "The Debye heat capacity rises toward the classical limit from below. It is far smaller at low T, where only a few modes are accessible."
+      }
+    ],
+    "explanation": "The Dulong–Petit law assumes each atom contributes a constant amount of heat capacity at every temperature. The Debye function falls sharply at low temperatures and approaches this classical limit at higher temperatures."
+  },
+  {
+    "id": "pc21-debye-metal-electrons",
+    "type": "multiple-choice",
+    "prompt": "For a metal at low temperature, C_P = aT + bT^3. What gives rise to the aT term?",
+    "choices": [
+      {
+        "text": "The conduction electrons",
+        "correct": true
+      },
+      {
+        "text": "The lattice vibrations, or phonons",
+        "why": "The lattice vibrations give the bT^3 term, the Debye part. The linear aT term comes from the conduction electrons."
+      },
+      {
+        "text": "The expansion of the metal on heating",
+        "why": "C_P = aT + bT^3 has no term for expansion. The aT term is the contribution of the conduction electrons."
+      },
+      {
+        "text": "Impurities in the metal crystal",
+        "why": "The equation describes a pure metal crystal. Its linear aT term comes from the conduction electrons, which a nonmetal lacks."
+      }
+    ],
+    "explanation": "In a metal, the conduction electrons contribute to the heat capacity as well as the lattice. The aT term is the electrons' linear contribution, and bT^3 is the Debye lattice term."
+  },
+  {
+    "id": "pc21-debye-metal-lowest-t",
+    "type": "multiple-choice",
+    "prompt": "For a metal, C_P = aT + bT^3 at low temperature. As T gets very close to 0 K, which term makes up most of C_P?",
+    "choices": [
+      {
+        "text": "aT, since T^3 shrinks faster than T",
+        "correct": true
+      },
+      {
+        "text": "bT^3, since the lattice term always dominates",
+        "why": "As T falls, T^3 shrinks much faster than T: at 0.1 K, T is 0.1 but T^3 is only 0.001. So near 0 K the electrons' aT term wins."
+      },
+      {
+        "text": "Both terms stay equal all the way down",
+        "why": "The two terms change with T in different ways, so they cannot stay equal. Because T^3 falls faster than T, the aT term is the larger near 0 K."
+      },
+      {
+        "text": "Neither; C_P levels off at a constant value",
+        "why": "Both terms go to zero as T approaches 0 K, so C_P does not level off. Of the two, aT falls more slowly, so it dominates."
+      }
+    ],
+    "explanation": "T^3 falls much faster than T as the temperature drops: at 0.1 K, T is 0.1 but T^3 is only 0.001. So at the lowest temperatures the electrons' aT term makes up most of the heat capacity of a metal."
+  },
+  {
+    "id": "pc21-debye-doubling",
+    "type": "numeric",
+    "prompt": "A nonmetallic crystal follows C_P = aT^3 at low temperature. By what factor does C_P increase when the temperature is raised from 4.0 K to 8.0 K?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "C_P(8.0 K)/C_P(4.0 K) = (8.0/4.0)^3 = 2^3 = 8. Doubling the temperature makes the heat capacity eight times larger."
+  },
+  {
+    "id": "pc21-debye-value",
+    "type": "numeric",
+    "prompt": "A crystal follows C_P = aT^3 at low temperature, with a = 6.0 × 10^−5 J/(mol·K^4). What is C_P at 20.0 K, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 0.48,
+    "explanation": "T^3 = (20.0)^3 = 8000, so C_P = 6.0 × 10^−5 × 8000 = 0.48 J/(mol·K). Cubing the temperature is the key step."
+  },
+  {
+    "id": "pc21-debye-metal-value",
+    "type": "numeric",
+    "prompt": "For a metal at low temperature, C_P = aT + bT^3, with a = 0.70 mJ/(mol·K^2) and b = 0.050 mJ/(mol·K^4). What is C_P at 2.0 K, in mJ/(mol·K)? (Give it as a decimal.)",
+    "answer": 1.8,
+    "explanation": "aT = 0.70 × 2.0 = 1.40 mJ/(mol·K) and bT^3 = 0.050 × 8.0 = 0.40 mJ/(mol·K), so C_P = 1.40 + 0.40 = 1.80 mJ/(mol·K). Even at 2.0 K the electrons' aT term is the larger part."
+  }
+]

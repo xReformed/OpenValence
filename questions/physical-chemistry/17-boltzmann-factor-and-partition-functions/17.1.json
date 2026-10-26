@@ -1,0 +1,609 @@
+[
+  {
+    "id": "pc17-boltzmann-factor-stat-mech-link",
+    "type": "multiple-choice",
+    "prompt": "Statistical mechanics provides a connection between which two things?",
+    "choices": [
+      {
+        "text": "Atomic motion and observable bulk properties",
+        "correct": true
+      },
+      {
+        "text": "The heat and the work exchanged by a system",
+        "why": "Relating heat and work is the job of the first law of thermodynamics. Statistical mechanics links the microscopic motion of atoms to macroscopic observables such as temperature and pressure."
+      },
+      {
+        "text": "Electron density and the shape of a molecule",
+        "why": "That link belongs to quantum chemistry. Statistical mechanics connects the motion of individual atoms with bulk properties such as pressure, entropy and heat capacity."
+      },
+      {
+        "text": "Reaction rates and equilibrium constants",
+        "why": "Reaction rates are among the bulk properties it explains, so they are only one side of the link. The other side is the microscopic motion of the individual atoms."
+      }
+    ],
+    "explanation": "Statistical mechanics connects the microscopic motion of individual atoms with macroscopically observable properties such as temperature, pressure, entropy, free energy, heat capacity, viscosity, spectra and reaction rates."
+  },
+  {
+    "id": "pc17-boltzmann-factor-six-numbers",
+    "type": "multiple-choice",
+    "prompt": "In classical mechanics, how many numbers specify the state of one particle at a given instant?",
+    "choices": [
+      {
+        "text": "Six: three for position, three for velocity",
+        "correct": true
+      },
+      {
+        "text": "Three: the x, y and z position coordinates",
+        "why": "The position says where the particle is, but not where it is going. The three velocity components are needed too, for six numbers in all."
+      },
+      {
+        "text": "Two: the particle's mass and its overall speed",
+        "why": "Mass is a fixed property, not part of the state, and a speed has no direction. The state is three position coordinates plus three velocity components."
+      },
+      {
+        "text": "Nine: position, velocity and acceleration",
+        "why": "The acceleration follows from the forces, which depend on the positions, so it adds nothing new. Position and velocity, six numbers, are the whole state."
+      }
+    ],
+    "explanation": "The state of particle i is its position, r_i = (x_i, y_i, z_i), and its velocity, with one component along each of x, y and z. Knowing these six numbers at an instant tells everything there is to know about the particle's state."
+  },
+  {
+    "id": "pc17-boltzmann-factor-r-double-dot",
+    "type": "multiple-choice",
+    "prompt": "Newton's second law for particle i is written m_i r̈_i = F_i. What does r̈_i stand for?",
+    "choices": [
+      {
+        "text": "The acceleration, d^2 r_i/dt^2",
+        "correct": true
+      },
+      {
+        "text": "The velocity, dr_i/dt",
+        "why": "The velocity is the first time derivative, written with one dot, ṙ_i. Two dots mean the second derivative, the acceleration."
+      },
+      {
+        "text": "The position vector of particle i",
+        "why": "The position is r_i itself. Each dot over r is a time derivative, so r̈_i is the second derivative of the position, the acceleration."
+      },
+      {
+        "text": "The total distance particle i has moved",
+        "why": "Two dots mark the second time derivative of the position. That is the acceleration, not a distance."
+      }
+    ],
+    "explanation": "Each dot over r_i stands for one time derivative: ṙ_i = dr_i/dt is the velocity and r̈_i = d^2 r_i/dt^2 is the acceleration. So m_i r̈_i = F_i says that mass times acceleration equals force."
+  },
+  {
+    "id": "pc17-boltzmann-factor-initial-conditions",
+    "type": "multiple-choice",
+    "prompt": "To solve Newton's equations of motion for N particles, which initial conditions must be specified?",
+    "choices": [
+      {
+        "text": "Every particle's starting position and velocity",
+        "correct": true
+      },
+      {
+        "text": "Every particle's starting position only",
+        "why": "Second-order equations need the coordinates and their first time derivatives at t = 0. The starting velocities are needed too."
+      },
+      {
+        "text": "The total energy and volume of the system",
+        "why": "Many microscopic states share the same energy and volume, so these don't pin down a trajectory. Each particle's initial position and velocity are needed."
+      },
+      {
+        "text": "The positions the particles must reach at the end",
+        "why": "The equations are solved forward from a starting point, not toward an end point. They need every initial position and initial velocity."
+      }
+    ],
+    "explanation": "Newton's equations are second order, so they need the initial coordinates and their first time derivatives, {r_1(0), …, r_N(0), ṙ_1(0), …, ṙ_N(0)}. With these, the solution gives the coordinates and velocities for all time t."
+  },
+  {
+    "id": "pc17-boltzmann-factor-trajectory-hopeless",
+    "type": "multiple-choice",
+    "prompt": "Why is it hopeless, in practice, to specify the exact trajectory of every particle in a macroscopic system?",
+    "choices": [
+      {
+        "text": "It would need essentially infinite precision",
+        "correct": true
+      },
+      {
+        "text": "Newton's laws stop working for very many particles",
+        "why": "Newton's laws apply to every particle, however many there are. The trouble is that errors in the starting values grow exponentially, so essentially infinite precision is needed."
+      },
+      {
+        "text": "The particles stop moving at equilibrium",
+        "why": "Particles with finite kinetic energy are in constant motion, even at equilibrium. The trouble is the essentially infinite precision needed to follow them."
+      },
+      {
+        "text": "The forces on the particles are all zero",
+        "why": "The particles move under the forces they exert on each other. The obstacle is that errors in the starting values grow exponentially."
+      }
+    ],
+    "explanation": "A macroscopic system has N ∼ 10^23 particles, and errors in the initial conditions grow exponentially, so specifying a trajectory takes essentially infinite information. Even at quadruple precision, one classical state would need about 10^25 bytes."
+  },
+  {
+    "id": "pc17-boltzmann-factor-orders-of-magnitude",
+    "type": "numeric",
+    "prompt": "Storing a single classical state of 10^23 particles at quadruple precision would take about 10^16 gigabytes. The largest computers have perhaps 10^6 gigabytes of memory. By how many orders of magnitude does the requirement exceed the memory?",
+    "answer": 10,
+    "tolerance": 0,
+    "explanation": "10^16 GB ÷ 10^6 GB = 10^10, so the requirement is 10 orders of magnitude too large, just to specify one classical state. This is why statistical mechanics averages instead of tracking every particle."
+  },
+  {
+    "id": "pc17-boltzmann-factor-same-macrostate",
+    "type": "multiple-choice",
+    "prompt": "Why don't we need every microscopic detail of a system to predict its macroscopic properties?",
+    "choices": [
+      {
+        "text": "Huge numbers of microstates give the same observable",
+        "correct": true
+      },
+      {
+        "text": "Each temperature allows only one microscopic state",
+        "why": "The opposite is true: enormous numbers of microscopic states give rise to the same macroscopic observable. That is why the details can be averaged out."
+      },
+      {
+        "text": "All the particles move with exactly the same speed",
+        "why": "Particle speeds differ. Temperature depends only on their average kinetic energy, which many different sets of speeds can give."
+      },
+      {
+        "text": "Macroscopic properties don't depend on the particles",
+        "why": "They do depend on the particles, but only through averages. Enormous numbers of microscopic states give the same macroscopic value."
+      }
+    ],
+    "explanation": "There are enormous numbers of microscopic states that give rise to the same macroscopic observable. Temperature, for example, depends only on the average kinetic energy, which countless different sets of particle velocities can produce."
+  },
+  {
+    "id": "pc17-boltzmann-factor-temperature-kinetic",
+    "type": "multiple-choice",
+    "prompt": "Temperature and kinetic energy are linked by (3/2)NkT = Σ (1/2)m_i v_i^2, summed over all N particles. What does the temperature reflect?",
+    "choices": [
+      {
+        "text": "The average kinetic energy per particle",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy of the fastest particle",
+        "why": "The sum runs over all N particles and is divided by N, so T reflects the average kinetic energy, not one particle's."
+      },
+      {
+        "text": "The total potential energy of the particles",
+        "why": "Only kinetic energies, (1/2)m_i v_i^2, appear in the sum. T is set by their average over all the particles."
+      },
+      {
+        "text": "The number of particles in the system",
+        "why": "Adding particles with the same average kinetic energy adds terms to both sides and leaves T unchanged. T is set by the average kinetic energy per particle."
+      }
+    ],
+    "explanation": "Solving for T gives T = (2/(3k)) × (1/N)Σ (1/2)m_i v_i^2, so the temperature is proportional to the average kinetic energy per particle. Many different sets of velocities give the same average, and so the same T."
+  },
+  {
+    "id": "pc17-boltzmann-factor-double-speeds",
+    "type": "numeric",
+    "prompt": "Temperature obeys (3/2)NkT = Σ (1/2)m_i v_i^2, summed over all N particles. If every particle's speed were doubled, by what factor would T change?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Each kinetic energy (1/2)m_i v_i^2 goes as the square of the speed, so doubling every speed multiplies the sum by 2^2 = 4. With N and k unchanged, T becomes 4 times larger."
+  },
+  {
+    "id": "pc17-boltzmann-factor-kinetic-per-particle",
+    "type": "numeric",
+    "prompt": "Dividing (3/2)NkT = Σ (1/2)m_i v_i^2 by N shows that the average kinetic energy per particle is (3/2)kT. At a temperature where kT = 5.0 × 10^−21 J, what is the average kinetic energy per particle, in J? (Type it in scientific notation, like 2.5e-21.)",
+    "answer": 7.5e-21,
+    "unit": "J",
+    "explanation": "Average kinetic energy = (3/2) × 5.0 × 10^−21 J = 7.5 × 10^−21 J. Individual particles have more or less than this; it is the average over all of them."
+  },
+  {
+    "id": "pc17-boltzmann-factor-velocity-assignments",
+    "type": "numeric",
+    "prompt": "A set of N different velocities can be handed out to N particles in N! ways, and every way gives the same average kinetic energy, so the same temperature. In how many ways can 5 different velocities be assigned to 5 particles?",
+    "answer": 120,
+    "tolerance": 0,
+    "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120. All 120 assignments are different microscopic states with one and the same temperature."
+  },
+  {
+    "id": "pc17-boltzmann-factor-ensemble-meaning",
+    "type": "multiple-choice",
+    "prompt": "In statistical mechanics, what is an ensemble?",
+    "choices": [
+      {
+        "text": "Many systems sharing the same macroscopic variables",
+        "correct": true
+      },
+      {
+        "text": "A single system followed for a very long time",
+        "why": "An ensemble is many systems considered at once. Each starts from a different initial condition, and all share the same macroscopic variables."
+      },
+      {
+        "text": "All the particles inside one container",
+        "why": "The particles in one container make up a single system. An ensemble is a large collection of such systems, alike in their macroscopic variables."
+      },
+      {
+        "text": "A collection of systems that each have a different volume",
+        "why": "The systems of an ensemble share a common set of macroscopic variables, such as the volume. What differs is their microscopic state."
+      }
+    ],
+    "explanation": "An ensemble is a large collection of systems governed by the same microscopic forces and sharing the same macroscopic variables, such as total energy, number of moles and volume. The systems differ in their microscopic details, which averaging washes out."
+  },
+  {
+    "id": "pc17-boltzmann-factor-ensemble-differ",
+    "type": "multiple-choice",
+    "prompt": "The systems in an ensemble share the same forces and the same macroscopic variables. What makes them differ from one another?",
+    "choices": [
+      {
+        "text": "Each starts from a different initial condition",
+        "correct": true
+      },
+      {
+        "text": "Each contains a different number of particles",
+        "why": "The number of moles is one of the shared macroscopic variables. The systems differ because each starts from a different initial condition."
+      },
+      {
+        "text": "Each obeys its own different laws of motion",
+        "why": "Every system obeys the same microscopic laws of motion and the same forces. Only the starting positions and velocities differ."
+      },
+      {
+        "text": "Each has a different value of the total energy",
+        "why": "In the section's example, the total energy is one of the shared macroscopic variables. The systems differ in their initial conditions."
+      }
+    ],
+    "explanation": "Each system evolves under the same laws of motion but from a different initial condition, so the time evolution of each is different from all the others. Their macroscopic variables, such as energy, number of moles and volume, are the same."
+  },
+  {
+    "id": "pc17-boltzmann-factor-ensemble-average",
+    "type": "multiple-choice",
+    "prompt": "According to the ensemble concept, how are macroscopic observables calculated?",
+    "choices": [
+      {
+        "text": "By averaging over the systems in the ensemble",
+        "correct": true
+      },
+      {
+        "text": "By following one system's exact trajectory",
+        "why": "That would need essentially infinite information. The ensemble concept replaces it with an average over many systems."
+      },
+      {
+        "text": "By picking the one system with the lowest energy",
+        "why": "No single system is singled out. The observable is an average over all the systems in the ensemble."
+      },
+      {
+        "text": "By adding up the values from every system",
+        "why": "A plain sum would grow with the number of systems chosen. The observable is the average over them, which washes out the microscopic details."
+      }
+    ],
+    "explanation": "The ensemble concept states that macroscopic observables can be calculated by performing averages over the systems in the ensemble. Averaging washes out the microscopic details that don't matter for bulk properties."
+  },
+  {
+    "id": "pc17-boltzmann-factor-instant-average",
+    "type": "multiple-choice",
+    "prompt": "The systems of an ensemble are all evolving in time. Why can temperature and pressure still be averaged at a single instant?",
+    "choices": [
+      {
+        "text": "They are time-independent properties",
+        "correct": true
+      },
+      {
+        "text": "Every system has stopped moving by then",
+        "why": "The systems keep evolving. Because temperature and pressure don't change with time, the moment of the average doesn't matter."
+      },
+      {
+        "text": "All the systems are in the same microstate",
+        "why": "The systems are in different microstates, since each began from a different initial condition. One instant is enough because these properties are time-independent."
+      },
+      {
+        "text": "Their values change too fast to follow",
+        "why": "If they changed with time, the moment chosen would matter. Temperature and pressure are time-independent, so the systems' evolution doesn't affect them."
+      }
+    ],
+    "explanation": "For properties such as temperature and pressure, which are time-independent, the fact that the systems are evolving in time does not affect their values. So the average over the ensemble can be taken at one particular instant."
+  },
+  {
+    "id": "pc17-boltzmann-factor-box-lowest-energy",
+    "type": "multiple-choice",
+    "prompt": "A monatomic gas is confined in a box, and each atom is in a particle-in-a-box state with quantum numbers (n_1, n_2, n_3). What is the lowest-energy arrangement of the gas?",
+    "choices": [
+      {
+        "text": "Every atom has quantum numbers (1, 1, 1)",
+        "correct": true
+      },
+      {
+        "text": "Every atom has quantum numbers (0, 0, 0)",
+        "why": "For a particle in a box each quantum number starts at 1, so n = 0 is not allowed. The lowest energy has every atom in (1, 1, 1)."
+      },
+      {
+        "text": "The atoms are spread evenly over all states",
+        "why": "Spreading atoms into higher states raises the energy. The lowest energy puts every atom in the lowest state, (1, 1, 1)."
+      },
+      {
+        "text": "Half the atoms in (1, 1, 1), half in (2, 2, 2)",
+        "why": "The atoms in (2, 2, 2) carry extra energy. In the lowest-energy arrangement, all atoms have quantum numbers (1, 1, 1)."
+      }
+    ],
+    "explanation": "The lowest energy is when all atoms have 1, 1, 1 as quantum numbers. Adding energy, for example by heating at constant volume, moves atoms into states with higher quantum numbers."
+  },
+  {
+    "id": "pc17-boltzmann-factor-heating-higher-n",
+    "type": "multiple-choice",
+    "prompt": "A box of gas is heated without changing its volume, so its temperature rises. What happens to the quantum states the atoms occupy?",
+    "choices": [
+      {
+        "text": "Higher quantum numbers become more common",
+        "correct": true
+      },
+      {
+        "text": "All atoms drop into the (1, 1, 1) state",
+        "why": "That is the lowest-energy arrangement, approached at low temperature. Adding energy raises T, and atoms move into states with higher quantum numbers."
+      },
+      {
+        "text": "The energy levels of the box spread farther apart",
+        "why": "The levels depend on the size of the box, which stays fixed at constant volume. What changes is how the atoms are spread over the levels."
+      },
+      {
+        "text": "Nothing, since the volume stays fixed",
+        "why": "Fixed volume keeps the levels the same, but the added energy shifts atoms into higher states. At higher temperatures, higher quantum numbers are expected."
+      }
+    ],
+    "explanation": "At higher temperatures we expect higher quantum numbers, and at lower temperatures lower ones. Boltzmann's question was exactly how the atoms are distributed over the states, as a probability P_i(T) that depends on temperature."
+  },
+  {
+    "id": "pc17-boltzmann-factor-thermal-energy-kt",
+    "type": "multiple-choice",
+    "prompt": "Boltzmann wrote the thermal energy of a system as E_thermal = kT. What does this say about the thermal energy?",
+    "choices": [
+      {
+        "text": "It is directly proportional to absolute T",
+        "correct": true
+      },
+      {
+        "text": "It does not depend on the temperature",
+        "why": "E_thermal = kT changes directly with T. Boltzmann looked at temperature as a form of energy, with k as the proportionality constant."
+      },
+      {
+        "text": "It is inversely proportional to absolute T",
+        "why": "Inverse proportionality would be k/T. In E_thermal = kT, doubling the absolute temperature doubles the thermal energy."
+      },
+      {
+        "text": "It grows as the square of the temperature",
+        "why": "T appears to the first power in E_thermal = kT, so the thermal energy is directly proportional to T, not to T^2."
+      }
+    ],
+    "explanation": "Boltzmann postulated that temperature can be looked at as a form of energy: the thermal energy is directly proportional to the absolute temperature. The proportionality constant k (or k_B) is the Boltzmann constant."
+  },
+  {
+    "id": "pc17-boltzmann-factor-k-units",
+    "type": "multiple-choice",
+    "prompt": "Since E_thermal = kT, what are the SI units of the Boltzmann constant k?",
+    "choices": [
+      {
+        "text": "J/K",
+        "correct": true
+      },
+      {
+        "text": "J·K",
+        "why": "J·K multiplied by a temperature in kelvin gives J·K^2, not an energy. k must be energy per kelvin, J/K."
+      },
+      {
+        "text": "K/J",
+        "why": "K/J multiplied by a temperature in kelvin gives K^2/J, not an energy. For kT to be in joules, k must be in J/K."
+      },
+      {
+        "text": "J/mol",
+        "why": "J/mol has no temperature in it, so kT would not come out as an energy. k is energy per kelvin, J/K."
+      }
+    ],
+    "explanation": "For kT to be an energy in joules, k must have units of energy per kelvin, J/K. Its value is about 1.381 × 10^−23 J/K."
+  },
+  {
+    "id": "pc17-boltzmann-factor-kt-500k",
+    "type": "numeric",
+    "prompt": "The thermal energy kT sets the energy scale for the Boltzmann factor. Using k = 1.381 × 10^−23 J/K, what is kT at 500 K, in J? (Type it in scientific notation, like 2.5e-21.)",
+    "answer": 6.905e-21,
+    "unit": "J",
+    "explanation": "kT = (1.381 × 10^−23 J/K)(500 K) = 6.905 × 10^−21 J. A state whose energy is many times this value has a very small Boltzmann factor."
+  },
+  {
+    "id": "pc17-boltzmann-factor-beta-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the Boltzmann factor exp(−βE_i), what does β stand for?",
+    "choices": [
+      {
+        "text": "1/(kT)",
+        "correct": true
+      },
+      {
+        "text": "kT",
+        "why": "kT is the thermal energy itself. β is its reciprocal, so that βE_i measures the energy of the state in units of kT."
+      },
+      {
+        "text": "k/T",
+        "why": "Both k and T belong in the denominator: β = 1/(kT). k/T would not even have units of 1/energy."
+      },
+      {
+        "text": "T/k",
+        "why": "T/k has units of K^2/J, not 1/energy. β = 1/(kT), so that βE_i has no units."
+      }
+    ],
+    "explanation": "β = 1/(kT), so βE_i = E_i/(kT) compares the energy of state i with the thermal energy kT. The larger this ratio, the smaller the Boltzmann factor."
+  },
+  {
+    "id": "pc17-boltzmann-factor-dimensionless",
+    "type": "multiple-choice",
+    "prompt": "Why can the product βE_i, with β = 1/(kT), appear as an exponent in the Boltzmann factor?",
+    "choices": [
+      {
+        "text": "It has no units",
+        "correct": true
+      },
+      {
+        "text": "It is always a whole number",
+        "why": "βE_i can take any positive value, such as 0.5 or 2.7. What matters is that its units cancel."
+      },
+      {
+        "text": "It is always less than 1",
+        "why": "βE_i can be much larger than 1, for a state far above kT. It can sit in an exponent because it is a pure number."
+      },
+      {
+        "text": "It is measured in joules",
+        "why": "β has units of 1/energy, so the joules of E_i cancel. An exponent must be a pure number, not an energy."
+      }
+    ],
+    "explanation": "β = 1/(kT) has units of 1/energy, so in βE_i = E_i/(kT) the energy units cancel. An exponent must be a pure number, and βE_i is the energy of the state in units of kT."
+  },
+  {
+    "id": "pc17-boltzmann-factor-barrier-in-kt",
+    "type": "numeric",
+    "prompt": "The energy barrier of an activation process is E_a = 2.0 × 10^−20 J. At a temperature where kT = 4.0 × 10^−21 J, how many times kT is the barrier, that is, what is E_a/(kT)?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "E_a/(kT) = (2.0 × 10^−20 J)/(4.0 × 10^−21 J) = 5, so the barrier is 5kT high. Its Boltzmann factor, e^(−5) = 0.0067, approximates the small fraction of particles with enough energy to cross it."
+  },
+  {
+    "id": "pc17-boltzmann-factor-two-kt",
+    "type": "numeric",
+    "prompt": "A state lies at an energy E_i = 2kT. What is its Boltzmann factor, exp(−βE_i), with β = 1/(kT)? (Give it as a decimal.)",
+    "answer": 0.1353,
+    "explanation": "βE_i = (2kT)/(kT) = 2, so exp(−βE_i) = e^(−2) = 0.135. A state only 2kT up has a Boltzmann factor about one-seventh of the value 1 for a state at zero energy."
+  },
+  {
+    "id": "pc17-boltzmann-factor-higher-energy",
+    "type": "multiple-choice",
+    "prompt": "At a fixed temperature, how does the Boltzmann factor of a state change as the energy of the state increases?",
+    "choices": [
+      {
+        "text": "It decreases exponentially",
+        "correct": true
+      },
+      {
+        "text": "It increases exponentially",
+        "why": "The exponent −βE_i becomes more negative as E_i rises, so the factor shrinks rather than grows."
+      },
+      {
+        "text": "It decreases linearly",
+        "why": "The energy sits in an exponent, so the factor falls off exponentially, not along a straight line."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The factor exp(−βE_i) depends on E_i: the higher the energy, the smaller the factor."
+      }
+    ],
+    "explanation": "In exp(−βE_i), a larger E_i makes the exponent more negative, so the factor falls off exponentially. States far above kT hold only a tiny fraction of the particles."
+  },
+  {
+    "id": "pc17-boltzmann-factor-higher-temperature",
+    "type": "multiple-choice",
+    "prompt": "For a state with a fixed energy E_i above zero, how does its Boltzmann factor exp(−E_i/(kT)) change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It increases toward 1",
+        "correct": true
+      },
+      {
+        "text": "It decreases toward 0",
+        "why": "A higher T makes E_i/(kT) smaller, so the exponent is less negative and the factor grows."
+      },
+      {
+        "text": "It increases without limit",
+        "why": "For E_i > 0 the exponent stays negative, so the factor stays below 1. It only approaches 1 at very high T."
+      },
+      {
+        "text": "It does not depend on T",
+        "why": "T appears in the exponent, E_i/(kT), so the factor changes with temperature."
+      }
+    ],
+    "explanation": "Raising T makes β = 1/(kT) smaller and shrinks E_i/(kT), so exp(−E_i/(kT)) grows toward 1. This is why heating moves particles into higher-energy states."
+  },
+  {
+    "id": "pc17-boltzmann-factor-what-it-approximates",
+    "type": "multiple-choice",
+    "prompt": "What is the Boltzmann factor used to approximate?",
+    "choices": [
+      {
+        "text": "The fraction of particles in a state",
+        "correct": true
+      },
+      {
+        "text": "The total energy of a large system",
+        "why": "The Boltzmann factor belongs to a single state. It approximates the fraction of particles in that state, not the energy of the system."
+      },
+      {
+        "text": "The temperature of a large system",
+        "why": "Temperature goes into the factor through β = 1/(kT). The factor itself approximates the fraction of particles in a state."
+      },
+      {
+        "text": "The average speed of the gas particles",
+        "why": "The factor doesn't give speeds. It approximates the fraction of the particles that are in a state of energy E_i."
+      }
+    ],
+    "explanation": "The Boltzmann factor, exp(−βE_i), is used to approximate the fraction of particles of a large system that are in state i. Lower-energy states have larger factors and hold more particles."
+  },
+  {
+    "id": "pc17-boltzmann-factor-factor-ratio",
+    "type": "multiple-choice",
+    "prompt": "At one temperature, state A has a Boltzmann factor of 0.20 and state B has 0.050. How does the fraction of particles in A compare with the fraction in B?",
+    "choices": [
+      {
+        "text": "About 4 times as large",
+        "correct": true
+      },
+      {
+        "text": "Only about one-fourth as large",
+        "why": "That has the ratio upside down. A has the larger Boltzmann factor, so it holds more particles: 0.20/0.050 = 4."
+      },
+      {
+        "text": "About the same",
+        "why": "The fractions are roughly proportional to the Boltzmann factors, and these differ by a factor of 4."
+      },
+      {
+        "text": "Larger by only 0.15",
+        "why": "Fractions compare through the ratio of the factors, 0.20/0.050 = 4, not through their difference."
+      }
+    ],
+    "explanation": "Since the Boltzmann factor approximates the fraction of particles in a state, the ratio of the fractions is about the ratio of the factors: 0.20/0.050 = 4. State A, with the larger factor, is the lower in energy."
+  },
+  {
+    "id": "pc17-boltzmann-factor-activation-energy",
+    "type": "multiple-choice",
+    "prompt": "In an activation process, what is the activation energy?",
+    "choices": [
+      {
+        "text": "The energy a particle needs to cross the barrier",
+        "correct": true
+      },
+      {
+        "text": "The thermal energy kT of an average particle",
+        "why": "kT sets the typical thermal energy. The activation energy is the energy a particle must carry to get over the barrier."
+      },
+      {
+        "text": "The energy given out once the barrier has been crossed",
+        "why": "Energy released afterward isn't the activation energy. It is the energy a particle must carry to cross the barrier in the first place."
+      },
+      {
+        "text": "The total energy of all the particles together",
+        "why": "Activation energy is a requirement for each particle: the energy one particle must carry to cross the barrier."
+      }
+    ],
+    "explanation": "Particles need to carry sufficient energy to cross the energy barrier of an activation process, and this energy is called the activation energy. Only the fraction of particles with at least this much energy can take part."
+  },
+  {
+    "id": "pc17-boltzmann-factor-activation-temperature",
+    "type": "multiple-choice",
+    "prompt": "Why does raising the temperature speed up an activation process, such as molecules escaping from a material's surface?",
+    "choices": [
+      {
+        "text": "More particles carry enough energy to cross",
+        "correct": true
+      },
+      {
+        "text": "The activation energy barrier gets lower",
+        "why": "The barrier stays the same height. Raising T increases the Boltzmann factor, so a larger fraction of particles has enough energy to cross it."
+      },
+      {
+        "text": "Each particle's mass decreases when heated",
+        "why": "Heating doesn't change a particle's mass. It raises the fraction of particles with enough energy to cross the barrier."
+      },
+      {
+        "text": "Particles no longer need extra energy to cross",
+        "why": "They still need the activation energy. At higher T more of them have it, because the Boltzmann factor is larger."
+      }
+    ],
+    "explanation": "An increase in temperature results in more particles crossing the energy barrier of an activation process. The fraction of molecules with enough energy, for example to escape a material's surface, is approximately proportional to the Boltzmann factor, which grows as T rises."
+  }
+]

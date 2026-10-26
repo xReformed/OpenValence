@@ -1,0 +1,487 @@
+[
+  {
+    "id": "pc16-corresponding-reduced-definition",
+    "type": "multiple-choice",
+    "prompt": "How is a reduced variable, such as the reduced temperature T_R, defined?",
+    "choices": [
+      {
+        "text": "The actual value divided by the critical value",
+        "correct": true
+      },
+      {
+        "text": "The actual value minus the critical value",
+        "why": "Reduced variables are ratios, not differences: T_R = T/T_c."
+      },
+      {
+        "text": "The critical value divided by the actual value",
+        "why": "That's upside down. T_R = T/T_c, so T_R grows as the temperature rises."
+      },
+      {
+        "text": "The actual value divided by the ideal-gas value",
+        "why": "Reduced variables compare a substance with its own critical point, not with an ideal gas: T_R = T/T_c."
+      }
+    ],
+    "explanation": "Reduced variables are ratios of a substance's conditions to its own critical values: P_R = P/P_c, V̄_R = V̄/V̄_c and T_R = T/T_c. They have no units."
+  },
+  {
+    "id": "pc16-corresponding-tr-nitrogen",
+    "type": "numeric",
+    "prompt": "Nitrogen has T_c = 126.2 K. What is its reduced temperature, T_R = T/T_c, at 315.5 K? (Give it as a decimal.)",
+    "answer": 2.5,
+    "explanation": "T_R = (315.5 K)/(126.2 K) = 2.5. Reduced variables have no units, since the kelvins cancel."
+  },
+  {
+    "id": "pc16-corresponding-pr-methane",
+    "type": "numeric",
+    "prompt": "Methane has P_c = 46.0 bar. What is its reduced pressure, P_R = P/P_c, at 69.0 bar? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "P_R = (69.0 bar)/(46.0 bar) = 1.5. The methane is at one and a half times its critical pressure."
+  },
+  {
+    "id": "pc16-corresponding-vr",
+    "type": "numeric",
+    "prompt": "A gas has V̄_c = 0.120 L·mol^−1. What is its reduced volume, V̄_R = V̄/V̄_c, at a molar volume of 0.600 L·mol^−1?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "V̄_R = (0.600 L·mol^−1)/(0.120 L·mol^−1) = 5. The gas takes up five times its critical molar volume."
+  },
+  {
+    "id": "pc16-corresponding-critical-ones",
+    "type": "multiple-choice",
+    "prompt": "What are the values of T_R, P_R and V̄_R for a gas exactly at its critical point?",
+    "choices": [
+      {
+        "text": "All three equal 1",
+        "correct": true
+      },
+      {
+        "text": "All three equal 0",
+        "why": "Zero would mean zero temperature, pressure and volume. At the critical point each actual value equals its critical value, so each ratio is 1."
+      },
+      {
+        "text": "All three equal 3/8",
+        "why": "3/8 is the van der Waals value of Z at the critical point. The reduced variables there are all 1."
+      },
+      {
+        "text": "They equal T_c, P_c and V̄_c",
+        "why": "Those are the actual critical values. Dividing each by itself gives a reduced value of 1."
+      }
+    ],
+    "explanation": "At the critical point T = T_c, P = P_c and V̄ = V̄_c, so each ratio is 1. Putting P_R = V̄_R = T_R = 1 into the reduced van der Waals equation gives (1 + 3)(2/3) = 8/3 on both sides."
+  },
+  {
+    "id": "pc16-corresponding-read-reduced",
+    "type": "multiple-choice",
+    "prompt": "A gas is at T_R = 1.2 and P_R = 0.5. Where is it relative to its critical point?",
+    "choices": [
+      {
+        "text": "Above T_c and below P_c",
+        "correct": true
+      },
+      {
+        "text": "Below T_c and above P_c",
+        "why": "T_R = 1.2 is greater than 1, so T is above T_c; P_R = 0.5 is less than 1, so P is below P_c."
+      },
+      {
+        "text": "Above both T_c and P_c",
+        "why": "P_R = 0.5 means the pressure is half of P_c, so it is below the critical pressure."
+      },
+      {
+        "text": "Below both T_c and P_c",
+        "why": "T_R = 1.2 means the temperature is 1.2 times T_c, so it is above the critical temperature."
+      }
+    ],
+    "explanation": "A reduced variable above 1 means the actual value is above the critical value, and one below 1 means it is below. Here T = 1.2 T_c and P = 0.5 P_c."
+  },
+  {
+    "id": "pc16-corresponding-universal-equation",
+    "type": "multiple-choice",
+    "prompt": "In reduced variables, the van der Waals equation becomes (P_R + 3/(V̄_R^2))(V̄_R − 1/3) = (8/3)T_R. Why does this one equation apply to every van der Waals gas?",
+    "choices": [
+      {
+        "text": "It contains no a or b, only pure numbers",
+        "correct": true
+      },
+      {
+        "text": "Every gas has the same a and b",
+        "why": "a and b differ from gas to gas. They drop out when P, V̄ and T are scaled by the critical constants."
+      },
+      {
+        "text": "It holds only at the critical point",
+        "why": "It holds at any state; the critical point is just where all three reduced variables equal 1."
+      },
+      {
+        "text": "It is just the ideal gas law in new symbols",
+        "why": "The 3/(V̄_R^2) and 1/3 terms carry the attraction and size corrections, which the ideal gas law lacks."
+      }
+    ],
+    "explanation": "Writing P, V̄ and T as multiples of their critical values cancels a and b, leaving only pure numbers. So the equation takes the same universal form for all gases, whatever their chemical identity."
+  },
+  {
+    "id": "pc16-corresponding-pr-from-reduced-eq",
+    "type": "numeric",
+    "prompt": "Solved for P_R, the reduced van der Waals equation reads P_R = (8T_R)/(3V̄_R − 1) − 3/(V̄_R^2). What is P_R at V̄_R = 1 and T_R = 1.5?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "P_R = (8 × 1.5)/(3 × 1 − 1) − 3/1 = 12/2 − 3 = 6 − 3 = 3. Because a and b don't appear, every van der Waals gas at V̄_R = 1 and T_R = 1.5 has P_R = 3."
+  },
+  {
+    "id": "pc16-corresponding-law-statement",
+    "type": "multiple-choice",
+    "prompt": "What does the law of corresponding states say?",
+    "choices": [
+      {
+        "text": "Gases at the same T_R and P_R behave alike",
+        "correct": true
+      },
+      {
+        "text": "Gases at the same T and P behave alike",
+        "why": "At the same actual T and P, two gases can be in very different states. The law compares gases at the same reduced conditions."
+      },
+      {
+        "text": "All gases share the same critical point",
+        "why": "Critical points differ from gas to gas; the law scales each gas by its own."
+      },
+      {
+        "text": "Every gas has Z = 1 exactly at its critical point",
+        "why": "Z = 1 is ideal-gas behavior. The law says that gases at the same reduced temperature and pressure behave similarly, whatever their critical values."
+      }
+    ],
+    "explanation": "Different gases at the same reduced temperature and reduced pressure show similar thermodynamic behavior. Their actual pressures and volumes may differ a lot; what matches is the scaled behavior."
+  },
+  {
+    "id": "pc16-corresponding-not-corresponding",
+    "type": "multiple-choice",
+    "prompt": "Gas A is at T_R = 1.5 and P_R = 2.0, and gas B is at T_R = 1.5 and P_R = 0.5. Are the two gases in corresponding states?",
+    "choices": [
+      {
+        "text": "No, their reduced pressures differ",
+        "correct": true
+      },
+      {
+        "text": "Yes, an equal T_R is enough",
+        "why": "Matching one reduced variable isn't enough; the reduced pressures must match too."
+      },
+      {
+        "text": "Yes, if their actual temperatures are equal",
+        "why": "Actual temperatures don't decide it; reduced ones do, and here P_R differs."
+      },
+      {
+        "text": "No, unless their critical temperatures are equal",
+        "why": "Gases with different T_c can be in corresponding states; that's the point of reduced variables. These two are not, because P_R differs."
+      }
+    ],
+    "explanation": "Two gases are in corresponding states when their reduced pressure, volume and temperature are all the same. With equal T_R but P_R = 2.0 against 0.5, gases A and B are not."
+  },
+  {
+    "id": "pc16-corresponding-argon-ethane",
+    "type": "multiple-choice",
+    "prompt": "The section says argon behaves much the same at 300 K as ethane does at 600 K. Why?",
+    "choices": [
+      {
+        "text": "Each is at about twice its own critical temperature",
+        "correct": true
+      },
+      {
+        "text": "Both have about the same molar mass",
+        "why": "The match comes from the temperatures, not the masses: each gas is at about twice its T_c."
+      },
+      {
+        "text": "600 K is hot enough to make any gas ideal",
+        "why": "The comparison isn't about ideal behavior. Both gases are at about twice their critical temperatures, so T_R ≈ 2 for each."
+      },
+      {
+        "text": "Ethane's critical temperature is only half of argon's",
+        "why": "It's the other way round: ethane's T_c (305.4 K) is about twice argon's (150.72 K)."
+      }
+    ],
+    "explanation": "Argon's T_c is 150.72 K and ethane's is 305.4 K, so 300 K and 600 K both give T_R ≈ 2.0. At the same reduced conditions, different gases behave alike."
+  },
+  {
+    "id": "pc16-corresponding-ethane-temp",
+    "type": "numeric",
+    "prompt": "Argon at 226 K has a reduced temperature T_R = 1.5. Ethane has T_c = 305.4 K. At what temperature, in K, does ethane have the same reduced temperature? (Give it as a decimal.)",
+    "answer": 458.1,
+    "unit": "K",
+    "explanation": "T = T_R × T_c = 1.5 × 305.4 K = 458.1 K. At 226 K and 458 K, argon and ethane are at corresponding temperatures."
+  },
+  {
+    "id": "pc16-corresponding-same-z",
+    "type": "multiple-choice",
+    "prompt": "Nitrogen and methane are both at T_R = 1.2 and P_R = 1.5. If methane's compressibility factor there is 0.80, what does the law of corresponding states predict for nitrogen's?",
+    "choices": [
+      {
+        "text": "About 0.80, the same as methane's",
+        "correct": true
+      },
+      {
+        "text": "Exactly 1, since nitrogen is nearly ideal",
+        "why": "At P_R = 1.5 neither gas is close to ideal. At the same reduced conditions, the law predicts the same Z."
+      },
+      {
+        "text": "It can't be found without nitrogen's a and b",
+        "why": "The point of the law is that a and b aren't needed: matching T_R and P_R gives about the same Z."
+      },
+      {
+        "text": "Higher, because nitrogen's T_c is lower",
+        "why": "Differences in T_c are already taken care of by using reduced variables. At the same T_R and P_R, Z is about the same."
+      }
+    ],
+    "explanation": "Gases at the same T_R and P_R behave alike, so they have about the same compressibility factor, here 0.80. That is why one generalized chart can serve many gases."
+  },
+  {
+    "id": "pc16-corresponding-liquids-too",
+    "type": "multiple-choice",
+    "prompt": "According to the section, to which fluids does the corresponding-states picture apply?",
+    "choices": [
+      {
+        "text": "Gases and liquids alike",
+        "correct": true
+      },
+      {
+        "text": "Only ideal gases",
+        "why": "Ideal gases all have Z = 1 and need no such law. It describes real gases, and liquids too."
+      },
+      {
+        "text": "Only gases above their T_c",
+        "why": "It applies below T_c too, and to liquids: their behavior is much the same once scaled by the critical point."
+      },
+      {
+        "text": "Only gases, never liquids",
+        "why": "The section stresses that liquids follow it as well, once scaled by their critical points."
+      }
+    ],
+    "explanation": "The section stresses that the behavior of all gases, and liquids, is pretty much the same apart from a scaling factor set by the critical point. Compressibility charts show the fit for both."
+  },
+  {
+    "id": "pc16-corresponding-vc-depends-b",
+    "type": "multiple-choice",
+    "prompt": "For a van der Waals gas, V̄_c = 3b, P_c = a/(27b^2) and T_c = (8a)/(27bR). Which critical constant depends on b alone?",
+    "choices": [
+      {
+        "text": "V̄_c",
+        "correct": true
+      },
+      {
+        "text": "P_c",
+        "why": "P_c = a/(27b^2) contains a as well as b."
+      },
+      {
+        "text": "T_c",
+        "why": "T_c = (8a)/(27bR) is proportional to a, so it depends on both constants."
+      },
+      {
+        "text": "Z_c",
+        "why": "Z_c = 3/8 for every van der Waals gas; it depends on neither a nor b."
+      }
+    ],
+    "explanation": "V̄_c = 3b depends only on the excluded volume b. P_c and T_c both contain a, so a gas's attractions help set its critical pressure and temperature."
+  },
+  {
+    "id": "pc16-corresponding-why-critical-point",
+    "type": "multiple-choice",
+    "prompt": "Why did van der Waals choose each gas's critical point as its reference state for comparing different gases?",
+    "choices": [
+      {
+        "text": "There the liquid–gas distinction vanishes",
+        "correct": true
+      },
+      {
+        "text": "All gases share the same critical temperature",
+        "why": "Critical temperatures differ widely, from 150.72 K for argon to 305.4 K for ethane. Each gas is scaled by its own critical point."
+      },
+      {
+        "text": "Every gas is ideal at its critical point",
+        "why": "Gases are far from ideal there; the van der Waals equation predicts Z = 3/8. The critical point is chosen because it is a unique state that every gas has."
+      },
+      {
+        "text": "It is where a gas has its largest volume",
+        "why": "The critical point is not where the volume is largest. It is the unique state at which liquid and gas can no longer be told apart."
+      }
+    ],
+    "explanation": "The critical point is the unique temperature, pressure and volume at which the distinction between liquid and gas disappears, and every gas has one. Ratios to these critical values, the reduced variables, put all gases on a common scale."
+  },
+  {
+    "id": "pc16-corresponding-pc-larger-b",
+    "type": "multiple-choice",
+    "prompt": "Suppose a gas's b were doubled while its a stayed the same. How would its critical pressure, P_c = a/(27b^2), change?",
+    "choices": [
+      {
+        "text": "It would fall to one quarter",
+        "correct": true
+      },
+      {
+        "text": "It would fall to half its old value",
+        "why": "P_c depends on b squared, so doubling b divides P_c by 2^2 = 4, not by 2."
+      },
+      {
+        "text": "It would double",
+        "why": "b is in the denominator, so a larger b lowers P_c. Because it is squared, doubling b cuts P_c to a quarter."
+      },
+      {
+        "text": "It would stay the same",
+        "why": "P_c = a/(27b^2) depends on b. Doubling b cuts P_c to one quarter."
+      }
+    ],
+    "explanation": "P_c ∝ 1/b^2, so doubling b multiplies P_c by 1/2^2 = 1/4."
+  },
+  {
+    "id": "pc16-corresponding-zc-vdw",
+    "type": "multiple-choice",
+    "prompt": "What value of the compressibility factor at the critical point, Z_c, does the van der Waals equation predict?",
+    "choices": [
+      {
+        "text": "3/8",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "why": "Z = 1 is the ideal-gas value. A van der Waals gas at its critical point has Z_c = 3/8."
+      },
+      {
+        "text": "8/3",
+        "why": "8/3 appears in the reduced van der Waals equation, as the factor in front of T_R. Z_c is 3/8."
+      },
+      {
+        "text": "1/3",
+        "why": "1/3 is the term subtracted from V̄_R in the reduced equation. Z_c is 3/8."
+      }
+    ],
+    "explanation": "The van der Waals equation gives Z_c = (P_c V̄_c)/(RT_c) = 3/8 = 0.375 for every gas. This value is not in good agreement with measurement."
+  },
+  {
+    "id": "pc16-corresponding-z-reduced",
+    "type": "numeric",
+    "prompt": "In corresponding-states form, the van der Waals compressibility factor is Z = (V̄_R)/(V̄_R − 1/3) − 9/(8V̄_R T_R). What is Z at V̄_R = 1 and T_R = 3? (Give it as a decimal.)",
+    "answer": 1.125,
+    "explanation": "Z = 1/(1 − 1/3) − 9/(8 × 1 × 3) = 1.5 − 0.375 = 1.125. No a or b appears, so every van der Waals gas at these reduced conditions has this Z."
+  },
+  {
+    "id": "pc16-corresponding-argon-zc",
+    "type": "numeric",
+    "prompt": "Argon's measured critical constants are P_c = 48.6 bar, V̄_c = 0.0746 L·mol^−1 and T_c = 150.7 K. Using Z = (PV̄)/(RT) with R = 0.08314 L·bar·K^−1·mol^−1, what is argon's compressibility factor at its critical point? (Give it as a decimal.)",
+    "answer": 0.289,
+    "tolerance": 0.02,
+    "explanation": "Z_c = (48.6 × 0.0746)/(0.08314 × 150.7) = 3.63/12.53 = 0.289. That is well below the van der Waals value of 3/8 = 0.375, the disagreement with measurement the section mentions."
+  },
+  {
+    "id": "pc16-corresponding-rk-pr-better",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call the more complicated Redlich–Kwong and Peng–Robinson equations better than the van der Waals equation?",
+    "choices": [
+      {
+        "text": "They agree better with measurements",
+        "correct": true
+      },
+      {
+        "text": "They are simpler to use",
+        "why": "The section calls them more complicated. They are better because their predictions, such as Z at the critical point, match measurements more closely."
+      },
+      {
+        "text": "They need no critical constants at all",
+        "why": "The idea is the same: they too describe a fluid through its critical point. They are better because they match measurements more closely."
+      },
+      {
+        "text": "They apply only to ideal gases",
+        "why": "An equation for ideal gases alone would be no improvement. These equations describe real fluids and match measurements better than van der Waals does."
+      }
+    ],
+    "explanation": "The van der Waals value Z_c = 3/8 is not in good agreement with measurement. The Redlich–Kwong and Peng–Robinson equations rest on the same corresponding-states idea but match real fluids better."
+  },
+  {
+    "id": "pc16-corresponding-compressibility-chart",
+    "type": "multiple-choice",
+    "prompt": "Measured compressibility factors for many different fluids are plotted against reduced pressure, at the same reduced temperature. What does the plot show?",
+    "choices": [
+      {
+        "text": "The fluids' points nearly fall on one curve",
+        "correct": true
+      },
+      {
+        "text": "Each fluid gives its own, widely separated curve",
+        "why": "That's what plotting against actual pressure would give. In reduced variables the data superimpose."
+      },
+      {
+        "text": "Every point lies at Z = 1",
+        "why": "Z = 1 is ideal behavior. Real fluids depart from it, but in reduced variables they depart in the same way."
+      },
+      {
+        "text": "Only the heaviest fluids share a curve",
+        "why": "Most normal fluids share the curves, whatever their mass. The main exceptions are strongly polar or hydrogen-bonded fluids."
+      }
+    ],
+    "explanation": "Expressed in reduced variables, the measurements for different fluids can be superimposed on the same compressibility chart. Most normal fluids, despite different molecular structures, follow one common pattern."
+  },
+  {
+    "id": "pc16-corresponding-chart-needs",
+    "type": "multiple-choice",
+    "prompt": "To read a gas's compressibility factor from a generalized chart drawn in reduced variables, what must you know about the gas besides its T and P?",
+    "choices": [
+      {
+        "text": "Its T_c and P_c",
+        "correct": true
+      },
+      {
+        "text": "Its molar mass",
+        "why": "The chart's axes use T_R and P_R, which need the critical constants, not the mass."
+      },
+      {
+        "text": "Its normal boiling point",
+        "why": "The boiling point doesn't scale the chart. You need T_c and P_c to compute T_R = T/T_c and P_R = P/P_c."
+      },
+      {
+        "text": "Its liquid density",
+        "why": "No density is needed. The reduced variables come from the critical temperature and pressure."
+      }
+    ],
+    "explanation": "You need T_R = T/T_c and P_R = P/P_c to find the right point, so the critical constants are what matter. As the section puts it, all one needs to know to describe a fluid's behavior is its critical point."
+  },
+  {
+    "id": "pc16-corresponding-conforming-fluids",
+    "type": "multiple-choice",
+    "prompt": "Which fluids does the section say conform closely to the law of corresponding states?",
+    "choices": [
+      {
+        "text": "Noble gases, simple hydrocarbons and diatomics",
+        "correct": true
+      },
+      {
+        "text": "Water, ammonia and hydrogen fluoride",
+        "why": "These strongly polar, hydrogen-bonded fluids are the main exceptions."
+      },
+      {
+        "text": "Only fluids that share one critical temperature",
+        "why": "The law compares fluids with different critical points by scaling each with its own."
+      },
+      {
+        "text": "Only gases at very low pressures",
+        "why": "Low-pressure gases are nearly ideal, but the law also covers high pressures, and liquids."
+      }
+    ],
+    "explanation": "Most normal fluids, such as simple hydrocarbons, noble gases and diatomic molecules, follow the law closely. Deviations occur mainly in complex or strongly associating fluids such as water, ammonia and hydrogen fluoride."
+  },
+  {
+    "id": "pc16-corresponding-deviation-cause",
+    "type": "multiple-choice",
+    "prompt": "Fluids such as water, ammonia and hydrogen fluoride deviate from the law of corresponding states. What causes this, according to the section?",
+    "choices": [
+      {
+        "text": "Strong polarity or hydrogen bonding",
+        "correct": true
+      },
+      {
+        "text": "Their molecules have very low molar masses",
+        "why": "Methane and nitrogen are light too and conform well. The cause is the extra interactions from polarity and hydrogen bonding."
+      },
+      {
+        "text": "They have no critical point",
+        "why": "They do have critical points. They deviate because strong polarity or hydrogen bonding adds interactions the simple model leaves out."
+      },
+      {
+        "text": "Their molecules are too large",
+        "why": "These molecules are small. They deviate because of strong polarity or hydrogen bonding."
+      }
+    ],
+    "explanation": "In these strongly associating fluids, polarity or hydrogen bonding brings in extra interactions that van der Waals' simple model doesn't account for. So scaling by the critical constants alone can't capture their behavior."
+  }
+]

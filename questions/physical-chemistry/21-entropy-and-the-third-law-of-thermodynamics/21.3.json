@@ -1,0 +1,193 @@
+[
+  {
+    "id": "pc21-transition-entropy-equilibrium-zero",
+    "type": "multiple-choice",
+    "prompt": "At the normal melting point, solid and liquid are in equilibrium at constant temperature and pressure. What is ΔG_trs for melting at that point?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "Equal to ΔH_trs",
+        "why": "ΔG_trs = ΔH_trs − T_trs ΔS_trs, and the T_trs ΔS_trs term is not zero. At equilibrium the two terms cancel, so ΔG_trs = 0."
+      },
+      {
+        "text": "Negative, since melting happens on its own",
+        "why": "At the melting point solid and liquid coexist, and neither turns into the other on its own. That equilibrium means ΔG_trs = 0."
+      },
+      {
+        "text": "Positive, since heat must be added to melt",
+        "why": "Heat must be added, so ΔH_trs is positive, but the entropy term T_trs ΔS_trs balances it exactly. At equilibrium ΔG_trs = 0."
+      }
+    ],
+    "explanation": "For a transition at equilibrium at constant T and P, ΔG_trs = ΔH_trs − T_trs ΔS_trs = 0. The enthalpy term and the entropy term exactly balance, which is what lets the section find ΔS_trs from ΔH_trs."
+  },
+  {
+    "id": "pc21-transition-entropy-formula",
+    "type": "multiple-choice",
+    "prompt": "Which equation gives the entropy change of a phase transition from its enthalpy change?",
+    "choices": [
+      {
+        "text": "ΔS_trs = (ΔH_trs)/(T_trs)",
+        "correct": true
+      },
+      {
+        "text": "ΔS_trs = T_trs ΔH_trs",
+        "why": "Rearranging ΔH_trs = T_trs ΔS_trs means dividing by T_trs, not multiplying. So ΔS_trs = ΔH_trs/T_trs."
+      },
+      {
+        "text": "ΔS_trs = (T_trs)/(ΔH_trs)",
+        "why": "This is upside down, and its units, K·mol/J, are not those of an entropy. ΔS_trs = ΔH_trs/T_trs."
+      },
+      {
+        "text": "ΔS_trs = ΔH_trs − T_trs",
+        "why": "An enthalpy and a temperature have different units and cannot be subtracted. Since ΔH_trs = T_trs ΔS_trs at equilibrium, ΔS_trs = ΔH_trs/T_trs."
+      }
+    ],
+    "explanation": "At equilibrium ΔG_trs = ΔH_trs − T_trs ΔS_trs = 0, so ΔH_trs = T_trs ΔS_trs. Dividing by T_trs gives ΔS_trs = ΔH_trs/T_trs."
+  },
+  {
+    "id": "pc21-transition-entropy-melting-order",
+    "type": "multiple-choice",
+    "prompt": "Why does melting a crystalline solid come with a finite, positive entropy change?",
+    "choices": [
+      {
+        "text": "The solid is far more ordered than the liquid",
+        "correct": true
+      },
+      {
+        "text": "The liquid is more ordered than the solid",
+        "why": "It is the other way round: the crystal's regular structure is lost on melting. Losing order raises the entropy."
+      },
+      {
+        "text": "The temperature rises sharply during the melting",
+        "why": "The temperature stays at the melting point throughout melting. The entropy rises because the ordered crystal becomes a less ordered liquid."
+      },
+      {
+        "text": "The solid gives out heat as it melts",
+        "why": "A melting solid takes in heat, ΔH_fus > 0. The entropy rises because the ordered crystal becomes a less ordered liquid."
+      }
+    ],
+    "explanation": "A crystalline solid has a much more ordered structure than the liquid. Melting destroys that order, so the entropy rises by a finite amount, ΔS_fus = ΔH_fus/T_m, at a single temperature."
+  },
+  {
+    "id": "pc21-transition-entropy-first-order-name",
+    "type": "multiple-choice",
+    "prompt": "Why is a transition such as melting called a first-order transition?",
+    "choices": [
+      {
+        "text": "S, a first derivative of G, jumps at T_trs",
+        "correct": true
+      },
+      {
+        "text": "It is the first transition met on warming from 0 K",
+        "why": "Melting is not always the first transition; some solids change from one solid form to another first. The name comes from the jump in S, a first derivative of G."
+      },
+      {
+        "text": "Its rate is first order in the amount of solid",
+        "why": "The name has nothing to do with reaction rates. It says that S, a first derivative of G, is discontinuous at the transition."
+      },
+      {
+        "text": "Only one phase can exist at T_trs",
+        "why": "At T_trs the two phases coexist in equilibrium. The name refers to the jump in S, a first derivative of G."
+      }
+    ],
+    "explanation": "The discontinuity is in a function like S, which is a first derivative of G: ((∂Ḡ)/(∂T))_P = −S̄. That is why melting, boiling and the other transitions in the section are called first-order transitions."
+  },
+  {
+    "id": "pc21-transition-entropy-second-derivative",
+    "type": "multiple-choice",
+    "prompt": "At a first-order phase transition, what does a second derivative of the Gibbs energy, such as the heat capacity, do at the transition point?",
+    "choices": [
+      {
+        "text": "It goes to +∞, a singularity",
+        "correct": true
+      },
+      {
+        "text": "It jumps by a finite step, like S",
+        "why": "A finite jump is what S, a first derivative of G, shows. A second derivative such as C_P shows a singularity (+∞) at the transition."
+      },
+      {
+        "text": "It stays smooth and finite",
+        "why": "Second derivatives are the ones that misbehave most: the section says they display a singularity (+∞) at the transition point."
+      },
+      {
+        "text": "It drops to zero",
+        "why": "Heat goes in with no rise in temperature at the transition, so C_P becomes infinite, not zero. Second derivatives of G show a singularity (+∞)."
+      }
+    ],
+    "explanation": "First derivatives of G, such as S, jump by a finite amount at a first-order transition. Second derivatives, such as the heat capacity, display a singularity: they go to +∞ at the transition point."
+  },
+  {
+    "id": "pc21-transition-entropy-deposition-name",
+    "type": "multiple-choice",
+    "prompt": "On a cold night, water vapor turns straight into frost on a window, g → s. What is this phase transition called?",
+    "choices": [
+      {
+        "text": "Deposition",
+        "correct": true
+      },
+      {
+        "text": "Sublimation",
+        "why": "Sublimation is the reverse, s → g, as when solid CO2 turns straight into gas. Gas to solid is deposition."
+      },
+      {
+        "text": "Condensation",
+        "why": "Condensation is g → l, a gas becoming a liquid. A gas turning straight into a solid is deposition."
+      },
+      {
+        "text": "Freezing",
+        "why": "Freezing is l → s, a liquid becoming a solid. Here no liquid forms, so the transition is deposition."
+      }
+    ],
+    "explanation": "In the section's table, g → s is deposition and its reverse, s → g, is sublimation. Condensation (g → l) and freezing (l → s) both involve the liquid instead."
+  },
+  {
+    "id": "pc21-transition-entropy-negative",
+    "type": "multiple-choice",
+    "prompt": "Which of these phase transitions has a negative ΔS_trs?",
+    "choices": [
+      {
+        "text": "Condensation, g → l",
+        "correct": true
+      },
+      {
+        "text": "Vaporization, l → g",
+        "why": "A liquid becoming a gas takes in heat and loses order, so ΔS_vap is positive. Condensation, the reverse, has the negative sign."
+      },
+      {
+        "text": "Fusion, s → l",
+        "why": "Melting takes in heat and turns an ordered solid into a less ordered liquid, so ΔS_fus > 0. A transition toward a more ordered phase, such as condensation, has ΔS_trs < 0."
+      },
+      {
+        "text": "Sublimation, s → g",
+        "why": "Sublimation takes in heat and goes from the most ordered phase to the least, so its ΔS_trs is large and positive. Condensation gives out heat and has ΔS_trs < 0."
+      }
+    ],
+    "explanation": "Condensation gives out heat, so ΔH_trs < 0 and ΔS_trs = ΔH_trs/T_trs < 0: the gas becomes a more ordered liquid. Each transition in the table and its reverse have entropy changes of the same size and opposite sign."
+  },
+  {
+    "id": "pc21-transition-entropy-ethanol-vaporization",
+    "type": "numeric",
+    "prompt": "Ethanol boils at 351.4 K, where its enthalpy of vaporization is ΔH_vap = 38.6 kJ/mol. Using ΔS_trs = (ΔH_trs)/(T_trs), what is its molar entropy of vaporization, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 109.8,
+    "explanation": "ΔS_vap = 38 600 J/mol ÷ 351.4 K = 109.8 J/(mol·K). Convert kJ to J first, or the answer comes out 1000 times too small."
+  },
+  {
+    "id": "pc21-transition-entropy-acetic-freezing",
+    "type": "numeric",
+    "prompt": "Acetic acid melts at 289.8 K with ΔH_fus = 11.7 kJ/mol. Using ΔS_trs = (ΔH_trs)/(T_trs), what is the entropy change when 1.00 mol of liquid acetic acid freezes at 289.8 K, in J/K, including its sign? (Give it as a decimal.)",
+    "answer": -40.4,
+    "explanation": "Freezing is the reverse of melting, so ΔH_trs = −11.7 kJ/mol. For 1.00 mol, ΔS = −11 700 J ÷ 289.8 K = −40.4 J/K: the liquid becomes a more ordered solid."
+  },
+  {
+    "id": "pc21-transition-entropy-melting-point",
+    "type": "numeric",
+    "prompt": "A solid has ΔH_fus = 8.00 kJ/mol and ΔS_fus = 25.0 J/(mol·K). Since T_trs = (ΔH_trs)/(ΔS_trs) at equilibrium, what is its melting point, in K?",
+    "answer": 320,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "T_m = 8000 J/mol ÷ 25.0 J/(mol·K) = 320 K. Put both in joules before dividing: 8.00 ÷ 25.0 = 0.32 would mix kJ with J."
+  }
+]

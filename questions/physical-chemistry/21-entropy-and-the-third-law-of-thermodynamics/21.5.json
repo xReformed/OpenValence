@@ -1,0 +1,192 @@
+[
+  {
+    "id": "pc21-calorimetric-no-s0-term",
+    "type": "multiple-choice",
+    "prompt": "The calorimetric absolute entropy is S(T) = ∫ ((C_P)/T) dT + Σ (ΔH_trs)/(T_trs), with the integral taken from 0 K to T. Why is there no separate S(0) term?",
+    "choices": [
+      {
+        "text": "By the third law, S(0) = 0 for a perfect crystal",
+        "correct": true
+      },
+      {
+        "text": "S(0) is not known, so it is simply left out of S(T)",
+        "why": "Leaving out an unknown would make the result relative, not absolute. The third law fixes S(0) = 0 for a perfect crystal, so nothing is left out."
+      },
+      {
+        "text": "The integral starting at 0 K already contains S(0)",
+        "why": "The integral adds only the entropy gained on warming; it says nothing about the starting value. That value is S(0) = 0, from the third law."
+      },
+      {
+        "text": "S(0) cancels out against the transition terms",
+        "why": "The transition terms are positive entropy jumps and cancel nothing. S(0) drops out because the third law sets it to zero for a perfect crystal."
+      }
+    ],
+    "explanation": "The third law says a perfect crystal has zero entropy at 0 K, so S(0) = 0 and the integral can start at 0 K. Everything added from there gives the absolute entropy at T."
+  },
+  {
+    "id": "pc21-calorimetric-measured",
+    "type": "multiple-choice",
+    "prompt": "Which quantities does calorimetry supply for a practical absolute entropy?",
+    "choices": [
+      {
+        "text": "C_P, plus each ΔH_trs and T_trs",
+        "correct": true
+      },
+      {
+        "text": "Only ΔH°_f of the substance at 298 K",
+        "why": "An enthalpy of formation is a single value measured relative to the elements. The entropy needs C_P from 0 K up to T, plus the enthalpy and temperature of each transition."
+      },
+      {
+        "text": "Bond lengths and vibrational frequencies",
+        "why": "Those come from spectroscopy and feed the partition function, a different route to the entropy. Calorimetry gives C_P, ΔH_trs and T_trs."
+      },
+      {
+        "text": "The sample's volume at each temperature",
+        "why": "No volume appears in S(T) = ∫ ((C_P)/T) dT + Σ (ΔH_trs)/(T_trs). The measured inputs are C_P, each ΔH_trs and each T_trs."
+      }
+    ],
+    "explanation": "Calorimetry measures the heat capacity C_P as the substance is warmed from 0 K, and the enthalpy ΔH_trs and temperature T_trs of each phase transition. These are all that S(T) = ∫ ((C_P)/T) dT + Σ (ΔH_trs)/(T_trs) needs."
+  },
+  {
+    "id": "pc21-calorimetric-sum-term",
+    "type": "multiple-choice",
+    "prompt": "In the calorimetric formula S(T) = ∫ ((C_P)/T) dT + Σ (ΔH_trs)/(T_trs), what does the summation term add?",
+    "choices": [
+      {
+        "text": "The entropy jump at each phase transition",
+        "correct": true
+      },
+      {
+        "text": "The residual entropy the crystal keeps at 0 K",
+        "why": "The formula starts from S(0) = 0 and has no term for residual entropy. The sum adds the entropy jump at each phase transition."
+      },
+      {
+        "text": "The entropy of mixing with impurities",
+        "why": "The formula is for a pure substance and has no mixing term. Each term in the sum is the entropy jump ΔH_trs/T_trs at a phase transition."
+      },
+      {
+        "text": "A correction for heat lost by the calorimeter",
+        "why": "Heat losses are dealt with in the measurement, not by this sum. Each term is the entropy of a phase transition, ΔH_trs/T_trs."
+      }
+    ],
+    "explanation": "The integral covers the smooth rise in entropy as each phase warms. At each phase transition the entropy also jumps abruptly, by ΔH_trs/T_trs, because of the latent heat, and the sum adds these jumps."
+  },
+  {
+    "id": "pc21-calorimetric-integral-misses",
+    "type": "multiple-choice",
+    "prompt": "The integral of C_P/T gives the entropy gained as a substance warms. Why doesn't it capture the entropy of a phase transition?",
+    "choices": [
+      {
+        "text": "Its heat is taken in at one fixed temperature",
+        "correct": true
+      },
+      {
+        "text": "A phase transition takes in no heat at all",
+        "why": "A transition takes in its latent heat, ΔH_trs, which can be large. It does so at one fixed temperature, so it adds a separate jump of ΔH_trs/T_trs."
+      },
+      {
+        "text": "Transition entropies are too small to matter",
+        "why": "Transition entropies are far from small; melting a crystal, for example, destroys its order. They must be added as separate ΔH_trs/T_trs terms."
+      },
+      {
+        "text": "C_P drops to zero while the phase changes",
+        "why": "Heat goes in with no rise in temperature, so C_P is infinite at a transition, not zero. The entropy of the transition is added separately as ΔH_trs/T_trs."
+      }
+    ],
+    "explanation": "The integral accounts for the continuous rise in entropy with temperature. A transition takes in its latent heat at the single temperature T_trs, so its entropy appears as an abrupt jump, ΔH_trs/T_trs, which is added separately."
+  },
+  {
+    "id": "pc21-calorimetric-co2-pieces",
+    "type": "multiple-choice",
+    "prompt": "In Example 21.5.1, the absolute entropy of CO2 gas at 300 K is built from heat capacities and one phase transition at 194.7 K. Which pieces add up to it?",
+    "choices": [
+      {
+        "text": "Solid to 194.7 K, sublimation, then gas to 300 K",
+        "correct": true
+      },
+      {
+        "text": "Solid to 194.7 K, melting, then liquid to 300 K",
+        "why": "CO2 is a gas at 300 K, and in the example the solid turns straight into gas at 194.7 K. The pieces are the solid's integral, ΔH_sub/T_sub, and the gas's integral."
+      },
+      {
+        "text": "Solid to 194.7 K, then boiling, then gas to 300 K",
+        "why": "Boiling is l → g, but no liquid forms here: the solid sublimes at 194.7 K. The middle piece is ΔH_sub/T_sub."
+      },
+      {
+        "text": "Gas from 0 K to 300 K, with no transition term",
+        "why": "CO2 is a solid below 194.7 K, and the jump at the transition must be included. The pieces are the solid's integral, ΔH_sub/T_sub, and the gas's integral."
+      }
+    ],
+    "explanation": "S(300 K) is the integral of C_P/T for the solid from 0 K to 194.7 K, plus ΔH_sub/T_sub, plus the integral of C_P/T for the gas from 194.7 K to 300 K. Solid CO2 sublimes straight to gas, so sublimation is the only transition term."
+  },
+  {
+    "id": "pc21-calorimetric-own-temperature",
+    "type": "multiple-choice",
+    "prompt": "In the sum Σ (ΔH_trs)/(T_trs), which temperature divides each transition's enthalpy?",
+    "choices": [
+      {
+        "text": "The temperature at which that transition occurs",
+        "correct": true
+      },
+      {
+        "text": "The final temperature T for every term",
+        "why": "Each transition takes in its heat at its own temperature, so that is the T_trs to use. Dividing by the higher final T would undercount the entropy."
+      },
+      {
+        "text": "298 K, the standard temperature, for every term",
+        "why": "Standard entropies are often quoted at 298 K, but each transition happens at its own T_trs. Its heat is taken in at that temperature."
+      },
+      {
+        "text": "The temperature of the highest transition",
+        "why": "Each term has its own temperature. Melting is divided by the melting point and boiling by the boiling point, for example."
+      }
+    ],
+    "explanation": "Each term is ΔS_trs = ΔH_trs/T_trs for one transition, with T_trs the temperature at which that transition takes place. Melting is divided by the melting point and vaporization by the boiling point."
+  },
+  {
+    "id": "pc21-calorimetric-always-positive",
+    "type": "multiple-choice",
+    "prompt": "An absolute entropy found from S(T) = ∫ ((C_P)/T) dT + Σ (ΔH_trs)/(T_trs), starting at 0 K, is always positive. Why?",
+    "choices": [
+      {
+        "text": "Each piece added on warming from 0 K is positive",
+        "correct": true
+      },
+      {
+        "text": "Entropy is positive by definition, whatever the data",
+        "why": "The sign is not fixed by definition; it follows from the pieces. C_P/T is positive, and each transition met on warming takes in heat, so every term is positive."
+      },
+      {
+        "text": "The integral is negative, but the transitions outweigh it",
+        "why": "C_P and T are both positive, so the integral of C_P/T is positive too. Every piece adds entropy."
+      },
+      {
+        "text": "The third law makes S(0) a large positive number",
+        "why": "The third law sets S(0) = 0 for a perfect crystal. The positive total comes from adding positive pieces on top of that zero."
+      }
+    ],
+    "explanation": "Starting from S(0) = 0, the integral of C_P/T is positive because C_P and T are positive. Each transition met on warming takes in heat, so each ΔH_trs/T_trs is positive too, and a sum of positive pieces is positive."
+  },
+  {
+    "id": "pc21-calorimetric-co2-sublimation",
+    "type": "numeric",
+    "prompt": "In Example 21.5.1, solid CO2 sublimes at T_sub = 194.7 K. Taking ΔH_sub = 25.2 kJ/mol, what does the sublimation term, (ΔH_sub)/(T_sub), add to the molar entropy of CO2, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 129.4,
+    "explanation": "(ΔH_sub)/(T_sub) = 25 200 J/mol ÷ 194.7 K = 129.4 J/(mol·K). This one jump is the largest single piece of the entropy of CO2 gas at 300 K."
+  },
+  {
+    "id": "pc21-calorimetric-benzene-sum",
+    "type": "numeric",
+    "prompt": "For liquid benzene at 298 K, the calorimetric pieces are: warming the solid from 0 K to its melting point, 278.7 K, adds 128.7 J/(mol·K); melting adds 35.4 J/(mol·K); and warming the liquid from 278.7 K to 298 K adds 9.2 J/(mol·K). What is the absolute molar entropy of liquid benzene at 298 K, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 173.3,
+    "explanation": "S(298 K) = 128.7 + 35.4 + 9.2 = 173.3 J/(mol·K). The two integrals and the one transition term are simply added, starting from S(0) = 0."
+  },
+  {
+    "id": "pc21-calorimetric-count-terms",
+    "type": "numeric",
+    "prompt": "A substance warmed from 0 K changes from one solid form to another at 120 K, melts at 180 K and boils at 260 K. How many (ΔH_trs)/(T_trs) terms go into the sum for its absolute entropy as a liquid at 220 K?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Only transitions below 220 K count: the solid–solid change at 120 K and melting at 180 K. Solid–solid transitions count like any other, but boiling at 260 K has not happened yet."
+  }
+]

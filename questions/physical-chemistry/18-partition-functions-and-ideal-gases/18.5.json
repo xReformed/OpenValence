@@ -1,0 +1,311 @@
+[
+  {
+    "id": "pc18-rotational-degeneracy-pattern",
+    "type": "multiple-choice",
+    "prompt": "How many rotational states share the energy of each of the levels J = 0, 1, 2 and 3 of a diatomic molecule?",
+    "choices": [
+      {
+        "text": "1, 3, 5 and 7",
+        "correct": true
+      },
+      {
+        "text": "1, 2, 3 and 4",
+        "why": "That would be J + 1 states per level. Each level holds 2J + 1 states, so the counts are 1, 3, 5 and 7."
+      },
+      {
+        "text": "1, 1, 1 and 1",
+        "why": "Only J = 0 has a single state; the higher levels are degenerate. Level J holds 2J + 1 states."
+      },
+      {
+        "text": "2, 4, 6 and 8",
+        "why": "That is 2J + 2. The J = 0 level has a single state, and level J has 2J + 1 states."
+      }
+    ],
+    "explanation": "Apart from J = 0, each rotational level contains several states of the same energy. Level J holds g(J) = 2J + 1 of them, so the counts go 1, 3, 5, 7, 9, …."
+  },
+  {
+    "id": "pc18-rotational-less-justified",
+    "type": "multiple-choice",
+    "prompt": "The section says replacing a sum with an integral is less justified for rotation than for translation. Why?",
+    "choices": [
+      {
+        "text": "Far fewer rotational levels are populated",
+        "correct": true
+      },
+      {
+        "text": "Rotational levels are nondegenerate",
+        "why": "Rotational levels are (2J + 1)-fold degenerate. The issue is that rotational levels are spaced more widely, so fewer of them are populated."
+      },
+      {
+        "text": "Rotational energies don't depend on a quantum number",
+        "why": "They do: E(J) = B̃J(J + 1). The integral is rougher because far fewer rotational levels are populated than translational ones."
+      },
+      {
+        "text": "Rotation has no characteristic temperature",
+        "why": "Rotation has one, Θ_rot = hcB̃/k. The integral is less justified because rotational levels are fewer and farther apart than translational ones."
+      }
+    ],
+    "explanation": "An integral works best when an enormous number of closely spaced levels are populated, as for translation. With far fewer rotational levels involved, how well it works depends on the gas and the temperature."
+  },
+  {
+    "id": "pc18-rotational-which-gases-sum",
+    "type": "multiple-choice",
+    "prompt": "According to Exercise 18.5.1, for which gases do we need to work out the discrete rotational sum instead of the integral?",
+    "choices": [
+      {
+        "text": "The lightest, such as H2, D_2 and HD, at low temperatures",
+        "correct": true
+      },
+      {
+        "text": "The heaviest, such as Cl2 and K2, at room temperature",
+        "why": "Heavy molecules have tiny Θ_rot values (0.351 K for Cl2), so the integral works very well for them. Only the lightest gases, at low temperatures, need the sum."
+      },
+      {
+        "text": "Every diatomic gas at room temperature",
+        "why": "For most diatomics Θ_rot is a few kelvin or less, far below 300 K, so the integral is fine. Only the lightest gases, at low temperatures, need the sum."
+      },
+      {
+        "text": "Very hot gases, such as those at the surface of the sun",
+        "why": "High temperature makes T ≫ Θ_rot even more true, so the integral works better still. The sum is needed for the lightest gases at low temperatures."
+      }
+    ],
+    "explanation": "Light molecules have small moments of inertia and so the largest Θ_rot values, 87.6 K for H2 and 43.8 K for D_2. Only for these, at cryogenic temperatures, does the condition T ≫ Θ_rot fail."
+  },
+  {
+    "id": "pc18-rotational-vibration-discrete",
+    "type": "multiple-choice",
+    "prompt": "Exercise 18.5.1 notes that vibrational Θ values are much larger than rotational ones. What does this mean for vibration at 300 K?",
+    "choices": [
+      {
+        "text": "Usually only one vibrational level is occupied",
+        "correct": true
+      },
+      {
+        "text": "Vibrational levels can be treated as a continuous set",
+        "why": "That needs T ≫ Θ, which holds for rotation, not vibration. With Θ_vib in the thousands of kelvin, vibration is in the discrete limit."
+      },
+      {
+        "text": "Most molecules are in high vibrational levels",
+        "why": "A large Θ_vib means vibrational quanta are much larger than kT at 300 K. Nearly all molecules stay in v = 0."
+      },
+      {
+        "text": "Vibration adds R to the molar heat capacity",
+        "why": "That happens only when T ≫ Θ_vib. At 300 K the vibrational contribution to C_V is typically negligible."
+      }
+    ],
+    "explanation": "With Θ_vib in the thousands of kelvin for most diatomics, usually only the lowest vibrational level is occupied at 300 K: the discrete limit. At much higher temperatures, such as at the surface of the sun, that would be a different matter."
+  },
+  {
+    "id": "pc18-rotational-cl2-small-theta",
+    "type": "multiple-choice",
+    "prompt": "In Table 18.4.1, Θ_rot is 87.6 K for H2 but only 0.351 K for Cl2. Which two features of Cl2 make its value so much smaller?",
+    "choices": [
+      {
+        "text": "A larger reduced mass and a longer bond",
+        "correct": true
+      },
+      {
+        "text": "A stiffer bond and more electrons",
+        "why": "Stiffness sets the vibration, not the rotational levels, and electrons add almost nothing to the moment of inertia. Θ_rot depends on I = μr^2."
+      },
+      {
+        "text": "A weaker bond and a lower Θ_vib",
+        "why": "These describe the vibration, not the rotation. Θ_rot depends only on I = μr^2, which is larger for Cl2 because of its heavier atoms and longer bond."
+      },
+      {
+        "text": "A larger symmetry number and a shorter bond",
+        "why": "H2 and Cl2 are both homonuclear, with the same symmetry number, and the Cl2 bond is longer, not shorter. A larger μ and a longer r raise I = μr^2."
+      }
+    ],
+    "explanation": "Θ_rot = hcB̃/k with B̃ = h/(8π^2 Ic) and I = μr^2. Cl2 has a reduced mass about 35 times that of H2 and a bond about 2.7 times longer, so its I is about 250 times larger and its Θ_rot about 250 times smaller."
+  },
+  {
+    "id": "pc18-rotational-hi-reduced-mass",
+    "type": "multiple-choice",
+    "prompt": "In Table 18.4.1, HI has Θ_rot = 9.29 K, far above the 0.351 K of Cl2, even though an HI molecule (128 amu) is heavier than a Cl2 molecule (71 amu). Why?",
+    "choices": [
+      {
+        "text": "Its reduced mass is close to an H atom's mass",
+        "correct": true
+      },
+      {
+        "text": "Its bond is much stiffer than the Cl2 bond",
+        "why": "Bond stiffness sets Θ_vib, not Θ_rot; the HI bond is in fact a little less stiff (3.0 against 3.2 mdyn/Å). Θ_rot depends on I = μr^2, and the reduced mass of HI is tiny."
+      },
+      {
+        "text": "It has a dipole moment, which raises Θ_rot",
+        "why": "A dipole moment lets HI absorb microwaves but doesn't change its rotational levels. Θ_rot is large because the reduced mass of HI, about 1 amu, gives a small I."
+      },
+      {
+        "text": "Its bond is much shorter than the Cl2 bond",
+        "why": "The HI bond (1.609 Å) is a little shorter than the Cl2 bond (1.987 Å), but that accounts for only a factor of about 1.5. The main reason is the tiny reduced mass of HI."
+      }
+    ],
+    "explanation": "With 1/μ = 1/m_1 + 1/m_2, a light atom paired with a heavy one gives a μ close to the light atom's mass: about 1.0 amu for HI against 17.5 amu for Cl2. The small μ makes I = μr^2 small and Θ_rot large."
+  },
+  {
+    "id": "pc18-rotational-diatomic-extra",
+    "type": "multiple-choice",
+    "prompt": "At room temperature, a monatomic gas has C_V = (3/2)nR, while a diatomic gas has C_V = (5/2)nR. Where does the extra nR come from?",
+    "choices": [
+      {
+        "text": "Rotation of the molecules",
+        "correct": true
+      },
+      {
+        "text": "Vibration of the bond",
+        "why": "Vibrational contributions are typically negligible at room temperature, because Θ_vib ≫ 300 K. The extra nR is the rotational contribution."
+      },
+      {
+        "text": "Electronic excitation",
+        "why": "Electronic contributions are negligible at room temperature too. The extra nR comes from rotation."
+      },
+      {
+        "text": "Faster translation of the molecules",
+        "why": "Translation gives (3/2)nR for any gas, whatever the mass of its particles. The extra nR comes from rotation."
+      }
+    ],
+    "explanation": "A diatomic gas adds a rotational contribution of nR to the translational (3/2)nR, giving (5/2)nR. Vibrational and electronic contributions are typically negligible at room temperature."
+  },
+  {
+    "id": "pc18-rotational-energy-order",
+    "type": "multiple-choice",
+    "prompt": "How do the sizes of a diatomic molecule's rotational, vibrational and electronic energy spacings usually compare?",
+    "choices": [
+      {
+        "text": "Rotational < vibrational < electronic",
+        "correct": true
+      },
+      {
+        "text": "Vibrational < rotational < electronic",
+        "why": "Θ_vib is in the thousands of kelvin while Θ_rot is a few kelvin, so rotational spacings are the smaller. The order is rotational < vibrational < electronic."
+      },
+      {
+        "text": "Electronic < vibrational < rotational",
+        "why": "This is backwards. Electronic excitations need the most energy, so the order is rotational < vibrational < electronic."
+      },
+      {
+        "text": "All three are about the same size",
+        "why": "They differ by orders of magnitude. That is why many rotational levels are populated at room temperature, but usually only one vibrational level."
+      }
+    ],
+    "explanation": "Rotational energies are smaller than vibrational and electronic energies. So at room temperature many rotational states are populated, while most molecules stay in the ground vibrational and electronic states."
+  },
+  {
+    "id": "pc18-rotational-n2-both-thetas",
+    "type": "multiple-choice",
+    "prompt": "For N2, Θ_rot = 2.88 K and Θ_vib = 3393 K. What does this suggest about N2 gas at 300 K?",
+    "choices": [
+      {
+        "text": "Many rotational levels are populated, but nearly all molecules are in v = 0",
+        "correct": true
+      },
+      {
+        "text": "Many vibrational levels are populated, but nearly all molecules are in J = 0",
+        "why": "This swaps the two. T is far above Θ_rot, so many J levels are populated, and far below Θ_vib, so vibration stays in v = 0."
+      },
+      {
+        "text": "Nearly all molecules are in J = 0 and in v = 0",
+        "why": "T = 300 K is about 100 times Θ_rot, so many rotational levels are populated. Only the vibration is frozen in v = 0."
+      },
+      {
+        "text": "Many rotational and many vibrational levels are populated",
+        "why": "T = 300 K is far below Θ_vib, so a vibrational quantum is much larger than kT. Only the rotational levels are widely populated."
+      }
+    ],
+    "explanation": "T/Θ_rot ≈ 104, so a great many J levels are thermally accessible, while T/Θ_vib ≈ 0.09, so vibration is frozen out. N2 at room temperature is rotationally excited but in its ground vibrational state."
+  },
+  {
+    "id": "pc18-rotational-higher-temperature",
+    "type": "multiple-choice",
+    "prompt": "As the temperature of a diatomic gas rises, how does the spread of its molecules over rotational levels change?",
+    "choices": [
+      {
+        "text": "They spread over more levels, reaching higher J",
+        "correct": true
+      },
+      {
+        "text": "They collect in J = 0",
+        "why": "Cooling, not heating, pushes molecules toward J = 0. Heating spreads them into higher J levels."
+      },
+      {
+        "text": "The spread stays the same, since the levels are fixed",
+        "why": "The energy levels are fixed, but their Boltzmann factors grow with T. More levels then become populated."
+      },
+      {
+        "text": "They all move together into one high level",
+        "why": "Molecules spread out over many levels rather than gathering in one. A larger kT makes more levels accessible."
+      }
+    ],
+    "explanation": "Each level's Boltzmann factor, exp(−E(J)/(kT)), grows as T rises, so the higher J levels fill. The population spreads over more levels, and the rotational partition function grows."
+  },
+  {
+    "id": "pc18-rotational-c-units",
+    "type": "multiple-choice",
+    "prompt": "In B̃ = h/(8π^2 Ic), the speed of light c is taken in cm s^−1. Why?",
+    "choices": [
+      {
+        "text": "So that B̃ comes out in cm^−1",
+        "correct": true
+      },
+      {
+        "text": "So that B̃ comes out in joules",
+        "why": "Dividing by c turns a frequency into a wavenumber, not an energy. With c in cm s^−1, B̃ comes out in cm^−1."
+      },
+      {
+        "text": "So that B̃ comes out in kelvin",
+        "why": "Kelvin comes in only when hcB̃ is divided by k, giving Θ_rot. B̃ itself is in cm^−1."
+      },
+      {
+        "text": "So that B̃ comes out in hertz",
+        "why": "h/(8π^2 I) alone is in hertz. Dividing it by c in cm s^−1 converts it to cm^−1."
+      }
+    ],
+    "explanation": "h/(8π^2 I) has units of s^−1, and dividing by c in cm s^−1 leaves cm^−1. That is why Table 18.4.1 lists B̃ in cm^−1."
+  },
+  {
+    "id": "pc18-rotational-co-j2-energy",
+    "type": "numeric",
+    "prompt": "The rotational energy of a diatomic, in cm^−1, is E(J) = B̃J(J + 1). For CO, B̃ = 1.931 cm^−1. What is the energy of the J = 2 level, in cm^−1? (Give it as a decimal.)",
+    "answer": 11.59,
+    "explanation": "E(2) = 1.931 × 2 × 3 = 6 × 1.931 = 11.59 cm^−1. The J = 2 level holds 2J + 1 = 5 states with this energy."
+  },
+  {
+    "id": "pc18-rotational-states-up-to-j3",
+    "type": "numeric",
+    "prompt": "Each rotational level J of a diatomic holds 2J + 1 states. How many states in total belong to the levels J = 0 through J = 3?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "1 + 3 + 5 + 7 = 16 states. The count grows quickly with J, which is one reason many rotational states are within reach at room temperature."
+  },
+  {
+    "id": "pc18-rotational-hbr-theta",
+    "type": "numeric",
+    "prompt": "The rotational temperature is Θ_rot = hcB̃/k, with hc/k = 1.4388 cm·K. HBr has B̃ = 8.46 cm^−1. What is its Θ_rot, in K? (Give it as a decimal.)",
+    "answer": 12.17,
+    "unit": "K",
+    "explanation": "Θ_rot = 1.4388 cm·K × 8.46 cm^−1 = 12.2 K. That is far below room temperature, so many rotational levels of HBr are populated at 300 K."
+  },
+  {
+    "id": "pc18-rotational-h2-20k",
+    "type": "numeric",
+    "prompt": "Table 18.4.1 gives Θ_rot = 87.6 K for H2. Liquid hydrogen boils at about 20 K. What is T/Θ_rot for H2 gas at 20 K? (Give it as a decimal.)",
+    "answer": 0.228,
+    "explanation": "T/Θ_rot = 20 K/87.6 K = 0.228. Far from T ≫ Θ_rot, cold H2 needs the discrete sum over J, not the integral."
+  },
+  {
+    "id": "pc18-rotational-hcl-j1-ratio",
+    "type": "numeric",
+    "prompt": "For a diatomic, E(J)/(kT) = J(J + 1)Θ_rot/T, and level J holds 2J + 1 states. For HCl at 300 K, E(1)/(kT) = 0.100, and exp(−0.100) = 0.905. What is the population ratio N_1/N_0? (Give it as a decimal.)",
+    "answer": 2.715,
+    "explanation": "N_1/N_0 = (2J + 1)exp(−E(1)/(kT)) = 3 × 0.905 = 2.72. More HCl molecules are in J = 1 than in J = 0, because its three states outweigh the small energy cost."
+  },
+  {
+    "id": "pc18-rotational-molar-energy",
+    "type": "numeric",
+    "prompt": "Well above Θ_rot, the section gives the rotational energy of N diatomic molecules as NkT. For one mole, Nk = R = 8.314 J/(mol·K). What is the rotational energy of one mole of a diatomic gas at 300 K, in J?",
+    "answer": 2494,
+    "unit": "J",
+    "explanation": "E_rot = RT = 8.314 × 300 = 2494 J, about 2.5 kJ per mole. Its temperature derivative, R, is the rotational part of the molar heat capacity."
+  }
+]

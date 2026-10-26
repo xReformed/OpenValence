@@ -1,0 +1,312 @@
+[
+  {
+    "id": "pc20-dispersal-competition",
+    "type": "multiple-choice",
+    "prompt": "For a system that can exchange energy with its surroundings, which two tendencies compete in a spontaneous process?",
+    "choices": [
+      {
+        "text": "Lowering its energy and spreading its energy out",
+        "correct": true
+      },
+      {
+        "text": "Raising its energy and raising its temperature",
+        "why": "Systems don't tend to raise their own energy. The competition is between minimizing the energy and increasing its dispersal."
+      },
+      {
+        "text": "Keeping its volume fixed and keeping its pressure fixed",
+        "why": "Those are conditions an experimenter can impose, not tendencies of the system. The competition is between minimizing energy and dispersing it."
+      },
+      {
+        "text": "Taking in heat and doing work on its surroundings",
+        "why": "Heat and work are ways energy is exchanged, not competing tendencies. The system balances lowering its energy against dispersing it."
+      }
+    ],
+    "explanation": "A system that can exchange energy tends both to lower its energy and to disperse its energy more widely, and the two can pull in opposite directions. Which one wins decides the direction of the spontaneous change."
+  },
+  {
+    "id": "pc20-dispersal-constant-energy",
+    "type": "multiple-choice",
+    "prompt": "If the energy of a system stays constant, as in an isolated system, how does the system evolve?",
+    "choices": [
+      {
+        "text": "Toward the greatest dispersal of its energy",
+        "correct": true
+      },
+      {
+        "text": "Toward the lowest possible energy",
+        "why": "Its energy can't change if it is constant. With the energy fixed, the system evolves to maximize energy dispersal."
+      },
+      {
+        "text": "It can't change at all, since its energy is fixed",
+        "why": "A system can still change while its energy stays fixed, as a gas expanding into vacuum does. It evolves toward maximum energy dispersal."
+      },
+      {
+        "text": "Toward the highest possible temperature",
+        "why": "Temperature isn't what is maximized. With constant energy, the system evolves to maximize the dispersal of its energy."
+      }
+    ],
+    "explanation": "With the energy fixed, lowering it is no longer possible, so only dispersal decides. A nonequilibrium isolated system evolves in the direction that increases its energy dispersal."
+  },
+  {
+    "id": "pc20-dispersal-du-cv",
+    "type": "multiple-choice",
+    "prompt": "Why can the section write the energy change of an ideal gas simply as dU = C_V dT?",
+    "choices": [
+      {
+        "text": "U of an ideal gas depends only on temperature",
+        "correct": true
+      },
+      {
+        "text": "The volume of an ideal gas never changes",
+        "why": "The volume can change; the section also includes P dV work. dU = C_V dT holds because U of an ideal gas depends only on T."
+      },
+      {
+        "text": "No heat flows when an ideal gas changes",
+        "why": "Heat can flow: δq_rev = C_V dT + P dV. dU = C_V dT holds because U depends only on T."
+      },
+      {
+        "text": "C_V of an ideal gas is zero at all temperatures",
+        "why": "C_V is positive; if it were zero, U would not change with T at all. dU = C_V dT holds because U depends only on temperature."
+      }
+    ],
+    "explanation": "The energy of an ideal gas depends only on T, not on V, so any change in U comes from a change in temperature. With C_V = (∂U)/(∂T) at constant V, this gives dU = C_V dT."
+  },
+  {
+    "id": "pc20-dispersal-work-pdv",
+    "type": "multiple-choice",
+    "prompt": "In the section's derivation, why is the reversible work done on the ideal gas written as δw_rev = −P dV?",
+    "choices": [
+      {
+        "text": "Any reversible work done here is volume work",
+        "correct": true
+      },
+      {
+        "text": "No work can be done by an ideal gas",
+        "why": "An ideal gas can do work when it expands. Here all reversible work is volume work, δw_rev = −P dV."
+      },
+      {
+        "text": "The work equals the heat capacity times dT",
+        "why": "C_V dT is the energy change dU, not the work. The reversible work is volume work, −P dV."
+      },
+      {
+        "text": "Only electrical work is possible for a gas",
+        "why": "A gas does work by pushing back its surroundings as it expands, not electrically. That volume work is δw_rev = −P dV."
+      }
+    ],
+    "explanation": "The only reversible work here is the gas pushing against its surroundings as its volume changes. For a small reversible change, that volume work is δw_rev = −P dV."
+  },
+  {
+    "id": "pc20-dispersal-dq-expression",
+    "type": "multiple-choice",
+    "prompt": "With dU = C_V dT and δw_rev = −P dV, the first law gives δq_rev = dU − δw_rev. What is δq_rev for an ideal gas?",
+    "choices": [
+      {
+        "text": "C_V dT + P dV",
+        "correct": true
+      },
+      {
+        "text": "C_V dT − P dV",
+        "why": "Subtracting δw_rev = −P dV adds P dV. So δq_rev = C_V dT + P dV."
+      },
+      {
+        "text": "C_V dT only",
+        "why": "That is dU. The heat must also supply the work the gas does, giving δq_rev = C_V dT + P dV."
+      },
+      {
+        "text": "P dV only",
+        "why": "That leaves out the change in energy, C_V dT. δq_rev = C_V dT + P dV."
+      }
+    ],
+    "explanation": "δq_rev = dU − δw_rev = C_V dT − (−P dV) = C_V dT + P dV. The heat raises the energy of the gas and pays for the work it does in expanding."
+  },
+  {
+    "id": "pc20-dispersal-small-heat",
+    "type": "numeric",
+    "prompt": "For a small reversible change in an ideal gas, δq_rev = C_V dT + P dV. A gas with C_V = 12.5 J/K is warmed by dT = 0.30 K while it expands by dV = 2.0 × 10^−5 m^3 at P = 1.0 × 10^5 Pa. What is δq_rev, in J? (Give it as a decimal.)",
+    "answer": 5.75,
+    "unit": "J",
+    "explanation": "C_V dT = 12.5 × 0.30 = 3.75 J and P dV = 1.0 × 10^5 × 2.0 × 10^−5 = 2.0 J, so δq_rev = 3.75 + 2.0 = 5.75 J. Part of the heat warms the gas and part pays for the expansion work."
+  },
+  {
+    "id": "pc20-dispersal-mixed-derivatives",
+    "type": "multiple-choice",
+    "prompt": "How does the section test whether δq_rev is an exact differential?",
+    "choices": [
+      {
+        "text": "It compares the two mixed second derivatives",
+        "correct": true
+      },
+      {
+        "text": "It checks whether δq_rev is always positive",
+        "why": "The sign of δq_rev says whether heat flows in or out, not whether it is exact. The test is whether the mixed second derivatives are equal."
+      },
+      {
+        "text": "It measures δq_rev along a single path",
+        "why": "One path can't show that a result is path-independent. The section checks whether (∂C_V)/(∂V) equals (∂P)/(∂T), the mixed-derivative test."
+      },
+      {
+        "text": "It checks whether C_V depends on temperature",
+        "why": "That isn't the test. For an exact differential, the V derivative of C_V must equal the T derivative of P."
+      }
+    ],
+    "explanation": "If δq_rev were exact, the order of differentiation wouldn't matter: (∂^2 q_rev)/(∂T∂V) = (∂^2 q_rev)/(∂V∂T). With δq_rev = C_V dT + P dV, this means (∂C_V)/(∂V) would have to equal (∂P)/(∂T)."
+  },
+  {
+    "id": "pc20-dispersal-cv-volume",
+    "type": "multiple-choice",
+    "prompt": "Why is (∂C_V)/(∂V) = 0 for an ideal gas?",
+    "choices": [
+      {
+        "text": "C_V depends only on T, just like U",
+        "correct": true
+      },
+      {
+        "text": "C_V is zero for an ideal gas",
+        "why": "C_V isn't zero; an ideal gas does need heat to warm up. Its derivative with respect to V is zero because C_V depends only on T."
+      },
+      {
+        "text": "The volume of the gas can't change",
+        "why": "V can change; that's what dV describes. C_V simply doesn't depend on V, since it depends only on T."
+      },
+      {
+        "text": "C_V grows in proportion to V",
+        "why": "If C_V grew with V, the derivative would not be zero. C_V depends only on T, like U, whose derivative it is."
+      }
+    ],
+    "explanation": "C_V is the temperature derivative of U, and U of an ideal gas depends only on T. So C_V depends only on T as well, and changing V leaves it unchanged."
+  },
+  {
+    "id": "pc20-dispersal-dp-dt",
+    "type": "numeric",
+    "prompt": "For an ideal gas, P = nRT/V, so at constant V, (∂P)/(∂T) = nR/V. With R = 8.314 J/(mol·K), what is (∂P)/(∂T) for 2.00 mol of gas in 0.0400 m^3, in Pa/K? (Give it as a decimal.)",
+    "answer": 415.7,
+    "explanation": "(∂P)/(∂T) = nR/V = (2.00 × 8.314)/0.0400 = 415.7 Pa/K, so the pressure rises by about 416 Pa for each kelvin. Because this is not zero while (∂C_V)/(∂V) = 0, δq_rev is not an exact differential."
+  },
+  {
+    "id": "pc20-dispersal-not-exact",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, (∂C_V)/(∂V) = 0 but (∂P)/(∂T) = nR/V. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "Heat is not a state function",
+        "correct": true
+      },
+      {
+        "text": "Heat is a state function after all",
+        "why": "The two derivatives would have to be equal for δq_rev to be exact. Since 0 ≠ nR/V, it is not, and heat is a path function."
+      },
+      {
+        "text": "The ideal gas law must be wrong",
+        "why": "The ideal gas law is fine; it gives (∂P)/(∂T) = nR/V. The unequal derivatives show that δq_rev isn't exact."
+      },
+      {
+        "text": "C_V must depend on volume after all",
+        "why": "C_V of an ideal gas depends only on T. The mismatch shows that δq_rev is not exact, so heat is not a state function."
+      }
+    ],
+    "explanation": "For an exact differential the two mixed derivatives must be equal, but 0 ≠ nR/V. So δq_rev is not exact, and q_rev depends on the path, not just on the end states."
+  },
+  {
+    "id": "pc20-dispersal-integrating-factor",
+    "type": "multiple-choice",
+    "prompt": "By what does the section multiply δq_rev to turn it into an exact differential?",
+    "choices": [
+      {
+        "text": "1/T",
+        "correct": true
+      },
+      {
+        "text": "T",
+        "why": "Multiplying by T doesn't make the mixed derivatives match. The integrating factor is 1/T, which gives dS = (δq_rev)/T."
+      },
+      {
+        "text": "1/P",
+        "why": "Dividing by P leaves the mixed derivatives unequal. The integrating factor that works is 1/T."
+      },
+      {
+        "text": "C_V",
+        "why": "Multiplying by C_V, which is constant for the ideal gas here, can't make the mixed derivatives match. The factor that works is 1/T."
+      }
+    ],
+    "explanation": "(δq_rev)/T = (C_V/T) dT + (P/T) dV, and now both mixed derivatives are zero. So 1/T is an integrating factor, and dS = (δq_rev)/T is exact."
+  },
+  {
+    "id": "pc20-dispersal-p-over-t",
+    "type": "multiple-choice",
+    "prompt": "After dividing by T, the section needs (∂(P/T))/(∂T) at constant V. Why is this zero for an ideal gas?",
+    "choices": [
+      {
+        "text": "P/T = nR/V, which doesn't depend on T",
+        "correct": true
+      },
+      {
+        "text": "P is zero when the volume is held fixed",
+        "why": "P isn't zero; it rises with T at constant V. But P/T = nR/V has no T in it, so its T derivative is zero."
+      },
+      {
+        "text": "P/T rises in proportion to the temperature",
+        "why": "P/T = nR/V contains no T at all. That is why its derivative with respect to T is zero."
+      },
+      {
+        "text": "P itself does not change with temperature",
+        "why": "P does change with T: (∂P)/(∂T) = nR/V. It is P/T = nR/V that is independent of T."
+      }
+    ],
+    "explanation": "From PV = nRT, P/T = nR/V, which at constant V contains no T, so its T derivative is zero. The V derivative of C_V/T is zero too, so the mixed derivatives now agree."
+  },
+  {
+    "id": "pc20-dispersal-entropy-name",
+    "type": "multiple-choice",
+    "prompt": "The section shows that dS = (δq_rev)/T is an exact differential. What is the state function S called?",
+    "choices": [
+      {
+        "text": "Entropy",
+        "correct": true
+      },
+      {
+        "text": "Enthalpy",
+        "why": "Enthalpy is H = U + PV. The state function with dS = (δq_rev)/T is entropy."
+      },
+      {
+        "text": "Internal energy",
+        "why": "Internal energy is U, with dU = δq + δw. S, with dS = (δq_rev)/T, is entropy."
+      },
+      {
+        "text": "Heat capacity",
+        "why": "Heat capacity, such as C_V, tells how the energy changes with temperature. S is entropy."
+      }
+    ],
+    "explanation": "Because (δq_rev)/T is exact, it is the differential of a state function, S, called entropy. Its change between two states doesn't depend on the path taken."
+  },
+  {
+    "id": "pc20-dispersal-ds-small",
+    "type": "numeric",
+    "prompt": "For a small reversible change, dS = (δq_rev)/T. A gas at 300 K takes in δq_rev = 4.5 J of heat reversibly. What is dS, in J/K? (Give it as a decimal.)",
+    "answer": 0.015,
+    "explanation": "dS = 4.5 J ÷ 300 K = 0.015 J/K. Dividing the reversible heat by T is what turns it into the exact differential of the state function S."
+  },
+  {
+    "id": "pc20-dispersal-entropy-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does entropy measure?",
+    "choices": [
+      {
+        "text": "How widely a system's energy is dispersed",
+        "correct": true
+      },
+      {
+        "text": "The total energy stored in the system",
+        "why": "That is the internal energy, U. Entropy measures how the energy is dispersed, or the number of possible microstates."
+      },
+      {
+        "text": "The heat it gives off in a process",
+        "why": "Heat is a path function, while entropy is a state function. Entropy measures energy dispersal, or the number of microstates."
+      },
+      {
+        "text": "The work it can do on its surroundings",
+        "why": "Work is a path function. Entropy is the dispersal of energy, equivalently a measure of the number of possible microstates."
+      }
+    ],
+    "explanation": "The section describes entropy as the dispersal of energy, or equivalently as a measure of the number of possible microstates of a system. The more ways the energy can be spread, the larger S."
+  }
+]

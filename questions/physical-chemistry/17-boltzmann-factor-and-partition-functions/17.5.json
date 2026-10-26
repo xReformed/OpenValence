@@ -1,0 +1,434 @@
+[
+  {
+    "id": "pc17-pressure-average-of-states",
+    "type": "multiple-choice",
+    "prompt": "In the canonical ensemble, how is the average pressure ⟨P⟩ found from the pressures P_i of the individual energy states i?",
+    "choices": [
+      {
+        "text": "A sum of each P_i times the probability of state i",
+        "correct": true
+      },
+      {
+        "text": "A plain sum of the P_i, all with equal weight",
+        "why": "The states are not equally likely. Each P_i is weighted by the probability of state i, exp(−E_i/(kT))/Q, so more probable states count for more."
+      },
+      {
+        "text": "Just the P_i of the lowest-energy state, on its own",
+        "why": "The lowest state is the most probable, but the other states contribute too. ⟨P⟩ is a probability-weighted sum over all the states."
+      },
+      {
+        "text": "The largest P_i of any of the states",
+        "why": "An ensemble average is not a maximum. Every state's pressure counts, weighted by how probable that state is."
+      }
+    ],
+    "explanation": "The average pressure is the sum over states of each state's pressure times its probability: ⟨P⟩ = Σ_i P_i exp(−E_i/(kT))/Q. More probable states contribute more to the average."
+  },
+  {
+    "id": "pc17-pressure-state-pressure-meaning",
+    "type": "multiple-choice",
+    "prompt": "The pressure of a system in energy state i is P_i = −((∂E_i)/(∂V))_N. What does this equation say?",
+    "choices": [
+      {
+        "text": "P_i is minus the rate of change of E_i with volume",
+        "correct": true
+      },
+      {
+        "text": "P_i is the energy E_i divided by the volume V",
+        "why": "Pressure doesn't come from E_i/V. It comes from how E_i changes as the volume changes, at fixed N."
+      },
+      {
+        "text": "P_i is the rate of change of V with temperature",
+        "why": "Temperature doesn't appear in P_i. The equation is minus the derivative of the state's energy with respect to volume."
+      },
+      {
+        "text": "P_i is the energy E_i times the probability of state i",
+        "why": "That product belongs in an average energy, not a pressure. P_i is minus the slope of E_i plotted against V."
+      }
+    ],
+    "explanation": "The energy of each state depends on the volume of the container. The state's pressure is minus the derivative of that energy with respect to V, at fixed N."
+  },
+  {
+    "id": "pc17-pressure-state-sign",
+    "type": "multiple-choice",
+    "prompt": "The energy E_i of a certain state rises when the volume is made smaller, so (∂E_i)/(∂V) is negative. According to P_i = −((∂E_i)/(∂V))_N, what is the sign of that state's pressure?",
+    "choices": [
+      {
+        "text": "Positive",
+        "correct": true
+      },
+      {
+        "text": "Negative",
+        "why": "The minus sign in P_i = −(∂E_i)/(∂V) flips the sign of the negative slope. The pressure is positive: the state pushes outward."
+      },
+      {
+        "text": "Zero",
+        "why": "P_i would be zero only if E_i didn't change with V. Here it does, and minus a negative slope is positive."
+      },
+      {
+        "text": "It depends on whether E_i is positive or negative",
+        "why": "The sign of P_i comes from the slope of E_i against V, not from the sign of E_i itself. A negative slope gives a positive pressure."
+      }
+    ],
+    "explanation": "P_i = −(a negative number), which is positive. A state whose energy goes up when the system is squeezed pushes outward on the walls, as a gas does."
+  },
+  {
+    "id": "pc17-pressure-main-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression for the average pressure does this section derive from the canonical partition function Q(N, V, β)?",
+    "choices": [
+      {
+        "text": "⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β)",
+        "correct": true
+      },
+      {
+        "text": "⟨P⟩ = −((∂ln Q)/(∂β))_(N, V)",
+        "why": "A derivative of ln Q with respect to β gives the energy, E = −(∂ln Q)/(∂β). The pressure needs the derivative with respect to volume."
+      },
+      {
+        "text": "⟨P⟩ = (kT ln Q)/V",
+        "why": "The pressure doesn't come from ln Q divided by V. It comes from the derivative of ln Q with respect to V, times kT."
+      },
+      {
+        "text": "⟨P⟩ = −kT((∂ln Q)/(∂V))_(N, β)",
+        "why": "The final result has no minus sign. The −β from differentiating each exp(−βE_i) cancels the minus sign in P_i = −(∂E_i)/(∂V)."
+      }
+    ],
+    "explanation": "⟨P⟩ = kT(∂ln Q/∂V), taken at fixed N and β, that is, at fixed N and T. Once Q is known as a function of the volume, the pressure follows from it."
+  },
+  {
+    "id": "pc17-pressure-held-fixed",
+    "type": "multiple-choice",
+    "prompt": "In ⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β), which quantities are held fixed while ln Q is differentiated with respect to the volume?",
+    "choices": [
+      {
+        "text": "The number of particles and the temperature",
+        "correct": true
+      },
+      {
+        "text": "The number of particles and the pressure",
+        "why": "The pressure is what the formula gives, so it isn't held fixed. The subscripts are N and β, and fixing β = 1/(kT) fixes T."
+      },
+      {
+        "text": "The energy of each state and the temperature",
+        "why": "The state energies change with V, and that change is where the pressure comes from. The fixed quantities are N and β."
+      },
+      {
+        "text": "The volume and the number of particles",
+        "why": "V can't be held fixed while differentiating with respect to V. The subscripts N and β mean that N and T are constant."
+      }
+    ],
+    "explanation": "The subscripts N and β show what is held constant. Since β = 1/(kT), fixing β is the same as fixing the temperature, as in the canonical ensemble."
+  },
+  {
+    "id": "pc17-pressure-q-or-lnq",
+    "type": "multiple-choice",
+    "prompt": "The section writes the pressure both as ⟨P⟩ = (kT)/Q × ((∂Q)/(∂V)) and as ⟨P⟩ = kT((∂ln Q)/(∂V)). Why are these the same?",
+    "choices": [
+      {
+        "text": "Because (1/Q)((∂Q)/(∂V)) equals (∂ln Q)/(∂V)",
+        "correct": true
+      },
+      {
+        "text": "Because ln Q and Q are equal for a large system",
+        "why": "ln Q and Q are very different numbers. The two forms agree because the derivative of ln Q is 1/Q times the derivative of Q."
+      },
+      {
+        "text": "Because Q does not depend on the volume",
+        "why": "If Q didn't depend on V, both forms would give zero pressure. They agree because d(ln Q) = dQ/Q."
+      },
+      {
+        "text": "Because kT and Q cancel each other out",
+        "why": "kT and Q are not equal and don't cancel. The forms agree because (∂ln Q)/(∂V) = (1/Q)((∂Q)/(∂V))."
+      }
+    ],
+    "explanation": "The derivative of ln Q is 1/Q times the derivative of Q, so (kT)/Q × ((∂Q)/(∂V)) = kT((∂ln Q)/(∂V)). The logarithmic form is usually the easier one to use."
+  },
+  {
+    "id": "pc17-pressure-solely-from-q",
+    "type": "multiple-choice",
+    "prompt": "What does ⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β) show about the pressure of a system?",
+    "choices": [
+      {
+        "text": "It follows from how Q depends on V",
+        "correct": true
+      },
+      {
+        "text": "It does not depend on the temperature of the system",
+        "why": "kT appears right in the formula, and Q depends on T as well. The point is that P follows from Q once Q is known as a function of V."
+      },
+      {
+        "text": "It is the same for every system at a given V and T",
+        "why": "Different systems have different partition functions, so they can have different pressures. Each system's P follows from its own Q."
+      },
+      {
+        "text": "It can be found only for a single isolated molecule",
+        "why": "The formula uses Q, the partition function of the whole N-particle system. It gives the pressure of the system, not of one molecule."
+      }
+    ],
+    "explanation": "The pressure can be expressed solely in terms of the partition function: how ln Q changes with V, at fixed N and T, gives ⟨P⟩. The section uses this to derive the ideal gas law."
+  },
+  {
+    "id": "pc17-pressure-q-proportional-v",
+    "type": "multiple-choice",
+    "prompt": "For one molecule of an ideal gas, the translational partition function is q = ((2πm)/(h^2β))^(3/2)V. How does q depend on the volume V of the container?",
+    "choices": [
+      {
+        "text": "It is directly proportional to V",
+        "correct": true
+      },
+      {
+        "text": "It is proportional to V^(3/2)",
+        "why": "The power 3/2 belongs to the bracket containing m and β. V itself appears to the first power, so q ∝ V."
+      },
+      {
+        "text": "It is inversely proportional to V",
+        "why": "V multiplies the bracket rather than dividing it, so a bigger box gives a bigger q, not a smaller one."
+      },
+      {
+        "text": "It does not depend on V at all",
+        "why": "q contains V as a factor. That dependence on V is what gives the gas its pressure."
+      }
+    ],
+    "explanation": "q = ((2πm)/(h^2β))^(3/2) × V, so q is directly proportional to V. This factor V is the only part of q that matters for the pressure."
+  },
+  {
+    "id": "pc17-pressure-mass-drops-out",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, ln Q = ((3N)/2) ln((2πm)/(h^2β)) + N ln V − ln(N!). The molecular mass m appears in ln Q, so why is there no m in the pressure, P = NkT/V?",
+    "choices": [
+      {
+        "text": "The term containing m does not depend on V",
+        "correct": true
+      },
+      {
+        "text": "m cancels against Planck's constant h",
+        "why": "m and h both stay in that term; nothing cancels. The term simply has no V in it, so its derivative with respect to V is zero."
+      },
+      {
+        "text": "A gas molecule's mass is too small to matter",
+        "why": "Small or not, m drops out exactly. It sits in a term of ln Q that doesn't change with V."
+      },
+      {
+        "text": "The −ln(N!) term cancels the term containing m",
+        "why": "ln(N!) has no m in it, and nothing cancels. The m term simply has no V in it, so differentiating it with respect to V gives zero."
+      }
+    ],
+    "explanation": "P = kT(∂ln Q/∂V), so only the terms of ln Q that depend on V contribute. The first term contains m and β but not V, so its derivative is zero and the pressure doesn't depend on the mass."
+  },
+  {
+    "id": "pc17-pressure-n-factorial",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, Q = (q^(N))/(N!), so ln Q contains the term −ln(N!). How does this term affect the pressure from ⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β)?",
+    "choices": [
+      {
+        "text": "None, since ln(N!) has no V in it",
+        "correct": true
+      },
+      {
+        "text": "It lowers the pressure by a factor of N!",
+        "why": "At fixed N, ln(N!) is a constant, so its derivative with respect to V is zero. The pressure is just NkT/V."
+      },
+      {
+        "text": "It adds kT ln(N!)/V to the pressure",
+        "why": "Differentiating a constant gives zero, not ln(N!)/V. Only the N ln V term of ln Q contributes to the pressure."
+      },
+      {
+        "text": "It cancels the N in P = NkT/V",
+        "why": "The N in NkT/V comes from the N ln V term, which ln(N!) doesn't touch. ln(N!) has no V in it and drops out."
+      }
+    ],
+    "explanation": "At fixed N, ln(N!) is a constant, so its derivative with respect to V is zero. Only the N ln V term of ln Q gives the pressure."
+  },
+  {
+    "id": "pc17-pressure-why-logarithm",
+    "type": "multiple-choice",
+    "prompt": "When finding the pressure of an ideal gas, why is it handy to work with ln Q rather than with Q itself?",
+    "choices": [
+      {
+        "text": "The logarithm splits Q into a sum of separate terms",
+        "correct": true
+      },
+      {
+        "text": "ln Q is always a small number between 0 and 1",
+        "why": "ln Q is a very large number for a macroscopic system. The benefit is that ln turns products and powers into sums, so the term with V can be picked out."
+      },
+      {
+        "text": "Q itself does not depend on the volume",
+        "why": "Q does depend on V, through q ∝ V. Taking the logarithm just separates that dependence into its own term, N ln V."
+      },
+      {
+        "text": "ln Q has the units of pressure, so no constants are needed",
+        "why": "ln Q has no units, and kT still multiplies its derivative. The logarithm helps because it turns the product (q^(N))/(N!) into a sum."
+      }
+    ],
+    "explanation": "Using ln(AB) = ln A + ln B and ln(X^(Y)) = Y ln X, ln Q becomes ((3N)/2) ln((2πm)/(h^2β)) + N ln V − ln(N!). Only one term, N ln V, depends on V, so the derivative is easy."
+  },
+  {
+    "id": "pc17-pressure-ideal-gas-law",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, (∂ln Q)/(∂V) = N/V at fixed N and T. Substituting this into ⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β) gives which result?",
+    "choices": [
+      {
+        "text": "P = NkT/V, the ideal gas law",
+        "correct": true
+      },
+      {
+        "text": "P = (3/2)NkT/V",
+        "why": "The 3/2 belongs to the energy, E = (3/2)NkT, not to the pressure. kT times N/V gives P = NkT/V."
+      },
+      {
+        "text": "P = kT/V, the pressure of one molecule",
+        "why": "The derivative is N/V, not 1/V, so the factor N stays. kT × N/V = NkT/V."
+      },
+      {
+        "text": "P = NkT, whatever the volume",
+        "why": "The V comes from the derivative N/V, so P does depend on the volume. kT × N/V = NkT/V, the ideal gas law."
+      }
+    ],
+    "explanation": "kT × N/V = NkT/V, which is the ideal gas law. Since Nk = nR, it is the same as PV = nRT."
+  },
+  {
+    "id": "pc17-pressure-v-to-the-n",
+    "type": "multiple-choice",
+    "prompt": "The ideal-gas energy ℰ depends only on the particles' momenta, not on their positions. In the section's ideal-gas Q, the integrals over the particles' positions give a factor V^(N). Why?",
+    "choices": [
+      {
+        "text": "Each particle's position integral just gives V",
+        "correct": true
+      },
+      {
+        "text": "Each particle takes up a volume of V/N",
+        "why": "Ideal-gas particles take up no volume of their own. With no position-dependent energy, each particle ranges over the whole box, giving V per particle."
+      },
+      {
+        "text": "All N particles sit together at one point",
+        "why": "Nothing holds the particles together. Each one can be anywhere in the box, so each position integral gives V."
+      },
+      {
+        "text": "The pressure is the same everywhere in the box",
+        "why": "The factor comes from integrating over positions, not from the pressure. Since ℰ doesn't depend on position, each particle's integral over the box is just V."
+      }
+    ],
+    "explanation": "Because ℰ has no position-dependent term, integrating over one particle's position just gives the volume V. N such factors give V^(N), which is why ln Q contains N ln V."
+  },
+  {
+    "id": "pc17-pressure-3n-integrals",
+    "type": "multiple-choice",
+    "prompt": "In the section's ideal-gas Q, the momentum integral ∫dp exp(−(βp^2)/(2m)) appears raised to the power 3N. Why 3N?",
+    "choices": [
+      {
+        "text": "Each particle has three momentum components",
+        "correct": true
+      },
+      {
+        "text": "Each particle has three energy levels to occupy",
+        "why": "A free particle in a box has many translational states, not three. The 3 counts the momentum components p_x, p_y and p_z of each particle."
+      },
+      {
+        "text": "Each molecule moves, rotates and vibrates",
+        "why": "This Q is for structureless particles that only move from place to place. The 3 comes from the x, y and z components of each momentum."
+      },
+      {
+        "text": "The gas has three state variables, N, V and T",
+        "why": "The power doesn't count state variables. It counts momentum components: three (x, y and z) for each of the N particles."
+      }
+    ],
+    "explanation": "Each particle's momentum has x, y and z components, and each component gives one identical integral. N particles therefore give 3N of them."
+  },
+  {
+    "id": "pc17-pressure-ideal-energy-kinetic",
+    "type": "multiple-choice",
+    "prompt": "The section writes the mechanical energy of an ideal gas as ℰ = Σ_i (p_i^2)/(2m), summed over the N particles, where p_i is a particle's momentum. What kind of energy does this include?",
+    "choices": [
+      {
+        "text": "Only the kinetic energy of the particles",
+        "correct": true
+      },
+      {
+        "text": "Kinetic plus potential energy of attraction",
+        "why": "There is no potential-energy term in ℰ, because ideal-gas particles don't interact. Each term (p_i^2)/(2m) is a kinetic energy."
+      },
+      {
+        "text": "Only the potential energy of the particles",
+        "why": "(p^2)/(2m) is a kinetic energy, written with the momentum p = mv. No potential energy appears in ℰ."
+      },
+      {
+        "text": "The vibrational energy of the molecules",
+        "why": "The particles here are structureless; only their momenta appear. Each term is the kinetic energy of a particle's motion."
+      }
+    ],
+    "explanation": "Each term (p_i^2)/(2m) = (1/2)mv^2 is a particle's kinetic energy. An ideal gas has no interaction energy, so kinetic energy is all of ℰ."
+  },
+  {
+    "id": "pc17-pressure-piston-volume-sign",
+    "type": "multiple-choice",
+    "prompt": "In the piston thought experiment, a piston of area A moves a distance dz into the gas. Why does the section write A dz = −dV?",
+    "choices": [
+      {
+        "text": "Pushing the piston in shrinks the volume",
+        "correct": true
+      },
+      {
+        "text": "The area of the piston shrinks as it moves in",
+        "why": "A stays the same; the piston just moves. A dz is the volume it sweeps out, and the gas loses that volume, so dV = −A dz."
+      },
+      {
+        "text": "The gas loses energy as it is compressed",
+        "why": "Compressing the gas raises its energy, if anything. The minus sign is about volume: moving the piston in by dz removes A dz from V."
+      },
+      {
+        "text": "dz is measured outward, away from the gas",
+        "why": "The piston pushes in the positive z direction, into the gas. A positive dz therefore decreases the volume, so A dz = −dV."
+      }
+    ],
+    "explanation": "Moving the piston in by dz sweeps out a volume A dz, which the gas loses, so dV = −A dz. Combined with P = F/A and F = dE/dz, this gives P = −dE/dV."
+  },
+  {
+    "id": "pc17-pressure-from-dlnq",
+    "type": "numeric",
+    "prompt": "For a gas at T = 300 K, ((∂ln Q)/(∂V))_(N, β) = 2.4 × 10^25 m^−3. Using ⟨P⟩ = kT((∂ln Q)/(∂V))_(N, β) with k = 1.381 × 10^−23 J/K, what is ⟨P⟩, in Pa? (Type it in scientific notation, like 2.5e4.)",
+    "answer": 99400.0,
+    "unit": "Pa",
+    "explanation": "⟨P⟩ = (1.381 × 10^−23 J/K)(300 K)(2.4 × 10^25 m^−3) = 9.94 × 10^4 J/m^3 = 9.94 × 10^4 Pa. That is close to 1 bar, which is 10^5 Pa."
+  },
+  {
+    "id": "pc17-pressure-two-state-average",
+    "type": "numeric",
+    "prompt": "Suppose a system has only two states. State 1 has probability 0.60 and pressure 2.0 bar; state 2 has probability 0.40 and pressure 3.0 bar. Using ⟨P⟩ = Σ_i (probability of state i) × P_i, what is ⟨P⟩, in bar? (Give it as a decimal.)",
+    "answer": 2.4,
+    "unit": "bar",
+    "explanation": "⟨P⟩ = 0.60 × 2.0 bar + 0.40 × 3.0 bar = 1.2 bar + 1.2 bar = 2.4 bar. It lies closer to 2.0 bar than the plain mean (2.5 bar) does, because state 1 is more probable."
+  },
+  {
+    "id": "pc17-pressure-energy-volume-slope",
+    "type": "numeric",
+    "prompt": "Pushing a piston into a gas changes its volume by ΔV = −2.0 × 10^−6 m^3 and raises its energy by ΔE = 0.30 J. Using P = −dE/dV ≈ −ΔE/ΔV, what is the pressure, in Pa? (Type it in scientific notation, like 2.5e5.)",
+    "answer": 150000.0,
+    "unit": "Pa",
+    "explanation": "P = −(0.30 J)/(−2.0 × 10^−6 m^3) = 1.5 × 10^5 J/m^3 = 1.5 × 10^5 Pa. The two minus signs cancel: compressing a gas raises its energy, so its pressure is positive."
+  },
+  {
+    "id": "pc17-pressure-piston-force-area",
+    "type": "numeric",
+    "prompt": "In the piston thought experiment, the gas pushes on a piston of area A = 0.010 m^2 with a force F = 50 N. Using P = F/A, what is the pressure, in Pa?",
+    "answer": 5000,
+    "unit": "Pa",
+    "tolerance": 0,
+    "explanation": "P = F/A = 50 N ÷ 0.010 m^2 = 5000 N/m^2 = 5000 Pa. One pascal is one newton per square metre."
+  },
+  {
+    "id": "pc17-pressure-r-from-k",
+    "type": "numeric",
+    "prompt": "The section notes that the gas constant is just k multiplied by Avogadro's number, R = N_A k, which turns a per-molecule constant into a per-mole one. Using k = 1.381 × 10^−23 J/K and N_A = 6.022 × 10^23 mol^−1, what is R, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 8.316,
+    "explanation": "R = (6.022 × 10^23 mol^−1)(1.381 × 10^−23 J/K) = 8.316 J/(mol·K); the powers of ten cancel, leaving 6.022 × 1.381. This matches the usual R = 8.314 J/(mol·K) to rounding, and it is why Nk = nR."
+  },
+  {
+    "id": "pc17-pressure-ideal-energy-value",
+    "type": "numeric",
+    "prompt": "From its partition function, the section finds the energy of an ideal gas to be E = (3/2)nRT. Using R = 8.314 J/(mol·K), what is E, in J, for n = 2.00 mol at T = 400 K? (Give it as a decimal.)",
+    "answer": 9976.8,
+    "unit": "J",
+    "explanation": "E = (3/2)(2.00 mol)(8.314 J/(mol·K))(400 K) = 9976.8 J, about 10.0 kJ. This is the same as (3/2)NkT, since Nk = nR."
+  }
+]

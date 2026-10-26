@@ -1,0 +1,578 @@
+[
+  {
+    "id": "pc16-cubic-ideal-hyperbola",
+    "type": "multiple-choice",
+    "prompt": "For an ideal gas, P = RT/V̄. What shape do its isotherms have on a plot of P against V̄?",
+    "choices": [
+      {
+        "text": "Hyperbolas",
+        "correct": true
+      },
+      {
+        "text": "Straight lines through the origin",
+        "why": "That would need P to grow in proportion to V̄. Here P is proportional to 1/V̄, which gives a hyperbola."
+      },
+      {
+        "text": "S-shaped curves with a loop",
+        "why": "Loops appear on van der Waals isotherms below T_c. The ideal-gas isotherm P = RT/V̄ is a smooth hyperbola."
+      },
+      {
+        "text": "Horizontal lines",
+        "why": "A horizontal line would mean P doesn't change with V̄. For an ideal gas, P falls steadily as V̄ grows, along a hyperbola."
+      }
+    ],
+    "explanation": "With T fixed, P = RT/V̄ makes P inversely proportional to V̄, so each isotherm is a hyperbola. Halving the molar volume doubles the pressure."
+  },
+  {
+    "id": "pc16-cubic-condensation-signature",
+    "type": "multiple-choice",
+    "prompt": "A real gas compressed at a low enough temperature eventually condenses. What is the signature of this gas-to-liquid transition on an isotherm?",
+    "choices": [
+      {
+        "text": "A sudden, discontinuous drop in volume",
+        "correct": true
+      },
+      {
+        "text": "A sudden jump in the temperature",
+        "why": "An isotherm is at constant temperature. Condensation shows up as a jump to a much smaller volume as the liquid forms."
+      },
+      {
+        "text": "A smooth rise in pressure with no jump",
+        "why": "That is how a fluid behaves above T_c, where there is no transition. Condensation shows up as a discontinuous drop in volume."
+      },
+      {
+        "text": "A sudden increase in volume",
+        "why": "The liquid takes up much less room than the gas, so the volume drops, not rises."
+      }
+    ],
+    "explanation": "The signature of condensation is a discontinuous change in volume: the gas turns into a liquid that occupies a much smaller volume."
+  },
+  {
+    "id": "pc16-cubic-high-t-ideal",
+    "type": "multiple-choice",
+    "prompt": "How do the isotherms of the van der Waals equation behave at sufficiently high temperatures?",
+    "choices": [
+      {
+        "text": "They approach the ideal-gas isotherms",
+        "correct": true
+      },
+      {
+        "text": "Their S-shaped loops grow deeper and wider",
+        "why": "Loops appear only below the critical temperature. At high temperatures the isotherms are smooth and close to ideal."
+      },
+      {
+        "text": "They turn into flat tie lines",
+        "why": "Tie lines mark where gas and liquid coexist, below T_c. At high temperatures there is no transition, and the isotherms look ideal."
+      },
+      {
+        "text": "They show a jump in volume",
+        "why": "A volume jump signals condensation, which can't happen above T_c. At high temperatures the isotherms approach those of an ideal gas."
+      }
+    ],
+    "explanation": "At high enough temperatures the van der Waals isotherms approach those of an ideal gas. Even at lower temperatures, the fluid roughly obeys PV = nRT at large volumes, where the pressure is low."
+  },
+  {
+    "id": "pc16-cubic-large-volume-ideal",
+    "type": "numeric",
+    "prompt": "Far out at large volumes on CO2's 10 °C isotherm, the gas roughly obeys the ideal gas law, P = RT/V̄. At 10 °C, RT = 23.5 L·bar·mol^−1. What is the pressure, in bar, at V̄ = 4.70 L·mol^−1?",
+    "answer": 5,
+    "unit": "bar",
+    "tolerance": 0,
+    "explanation": "P = (23.5 L·bar·mol^−1)/(4.70 L·mol^−1) = 5.0 bar. At such large volumes and low pressures the van der Waals isotherm lies close to the ideal-gas hyperbola; it departs from it as the gas is compressed toward condensation."
+  },
+  {
+    "id": "pc16-cubic-unphysical-region",
+    "type": "multiple-choice",
+    "prompt": "Below T_c, part of a van der Waals isotherm is said to be unphysical. What happens along that part of the curve?",
+    "choices": [
+      {
+        "text": "P and V increase together",
+        "correct": true
+      },
+      {
+        "text": "P falls as V increases",
+        "why": "That is normal behavior for a gas or a liquid. The unphysical stretch is where P rises as V rises."
+      },
+      {
+        "text": "P stays constant as V changes",
+        "why": "Constant pressure is what really happens, along the tie line. The van der Waals curve instead has a stretch where P and V increase together."
+      },
+      {
+        "text": "T changes as V changes",
+        "why": "Along an isotherm T is fixed. The unphysical part is where pressure and volume rise together."
+      }
+    ],
+    "explanation": "Inside the loop of a subcritical van der Waals isotherm there is a stretch where P and V increase together, which a stable fluid can't do. It comes from the approximations built into the equation."
+  },
+  {
+    "id": "pc16-cubic-tie-line-pressure",
+    "type": "multiple-choice",
+    "prompt": "In reality, how does the pressure behave while a gas below T_c is compressed through the region where gas and liquid coexist?",
+    "choices": [
+      {
+        "text": "It stays at the vapor pressure of the liquid",
+        "correct": true
+      },
+      {
+        "text": "It rises and falls along the van der Waals loop",
+        "why": "The loop is an artifact of the model. The real pressure stays constant along the horizontal tie line."
+      },
+      {
+        "text": "It rises steeply, as for a liquid",
+        "why": "A steep rise comes only after all the gas has condensed. While gas and liquid coexist, the pressure stays at the vapor pressure."
+      },
+      {
+        "text": "It falls steadily toward zero",
+        "why": "Compressing a gas doesn't lower its pressure. While the two phases coexist, P stays at the vapor pressure of the liquid."
+      }
+    ],
+    "explanation": "The real behavior is the horizontal tie line: while gas and liquid coexist, the pressure stays constant, equal to the vapor pressure of the liquid. Compressing further only turns more gas into liquid."
+  },
+  {
+    "id": "pc16-cubic-maxwell-equal-area",
+    "type": "multiple-choice",
+    "prompt": "Maxwell's construction draws a horizontal tie line across the loop of a van der Waals isotherm. How is the height of the line chosen?",
+    "choices": [
+      {
+        "text": "The areas above and below it are equal",
+        "correct": true
+      },
+      {
+        "text": "It passes through the loop's highest point",
+        "why": "A line through the maximum would leave the whole loop below it. The line goes where the area above it and the area below it, between line and curve, are equal."
+      },
+      {
+        "text": "It passes through the loop's lowest point",
+        "why": "That would leave the whole loop above the line. Maxwell's rule makes the areas above and below the line equal."
+      },
+      {
+        "text": "It is drawn at the critical pressure",
+        "why": "Each subcritical isotherm has its own tie line, below P_c. Its height is set so that the areas above and below the line are equal."
+      }
+    ],
+    "explanation": "The tie line is placed so that the area between the line and the isotherm above the line equals the area below it. This equal-area rule is Maxwell's construction, and it removes the unphysical rise of P with V."
+  },
+  {
+    "id": "pc16-cubic-along-tie-line",
+    "type": "multiple-choice",
+    "prompt": "Along a tie line, point A is the liquid end and point B the gas end. As the volume increases from A to B, how does the system change?",
+    "choices": [
+      {
+        "text": "Liquid turns to gas until only gas is left",
+        "correct": true
+      },
+      {
+        "text": "Gas turns to liquid until only liquid is left",
+        "why": "That is the change for decreasing volume, from B to A. Going from A to B, liquid evaporates until the system is all gas at B."
+      },
+      {
+        "text": "It stays all liquid until it jumps to gas at B",
+        "why": "Along the tie line both phases are present, with less liquid and more gas as you move toward B."
+      },
+      {
+        "text": "The pressure rises until it reaches P_c at B",
+        "why": "The pressure is constant along the tie line. What changes is the amount of each phase: less liquid and more gas toward B."
+      }
+    ],
+    "explanation": "Between A and B, gas and liquid coexist at constant pressure. Moving toward B there is less liquid and more gas, and at B the system is completely gas."
+  },
+  {
+    "id": "pc16-cubic-liquid-steep",
+    "type": "multiple-choice",
+    "prompt": "To the left of point A on a subcritical isotherm, where the system is all liquid, a small change in volume causes a large change in pressure. Why?",
+    "choices": [
+      {
+        "text": "A liquid is much less compressible than a gas",
+        "correct": true
+      },
+      {
+        "text": "A liquid is much more compressible than a gas",
+        "why": "It's the other way round: a liquid barely compresses, so squeezing it even slightly takes a big rise in pressure."
+      },
+      {
+        "text": "Gas and liquid coexist there",
+        "why": "Coexistence happens between A and B, where the pressure is constant. Left of A there is only liquid, which is hard to compress."
+      },
+      {
+        "text": "The temperature rises sharply there",
+        "why": "The temperature is fixed along an isotherm. The steep curve comes from the liquid's low compressibility."
+      }
+    ],
+    "explanation": "Increasing the volume of the liquid up to point A makes the pressure drop rapidly, because a liquid's compressibility is much smaller than a gas's. That is why the liquid part of the isotherm is so steep."
+  },
+  {
+    "id": "pc16-cubic-critical-tie-shrinks",
+    "type": "multiple-choice",
+    "prompt": "Tie lines cross the isotherms below the critical temperature. What has become of the tie line on the critical isotherm itself?",
+    "choices": [
+      {
+        "text": "It has shrunk to a single point",
+        "correct": true
+      },
+      {
+        "text": "It is longer than on any colder isotherm",
+        "why": "Tie lines get shorter as the temperature rises toward T_c. On the critical isotherm the volume jump shrinks to one point."
+      },
+      {
+        "text": "It has tilted so that P rises with V",
+        "why": "The critical isotherm has no stretch where P rises with V. Its tie line has shrunk to the single critical point."
+      },
+      {
+        "text": "It has split into two separate tie lines",
+        "why": "An isotherm never has more than one tie line. At T_c it shrinks to a single point, the critical point."
+      }
+    ],
+    "explanation": "On the critical isotherm (31 °C for CO2), the volume jump captured by the tie line shrinks to a single point, the critical point. So there is no stretch where P increases with V."
+  },
+  {
+    "id": "pc16-cubic-tc-meaning",
+    "type": "multiple-choice",
+    "prompt": "What is the critical temperature, T_c, of a substance?",
+    "choices": [
+      {
+        "text": "The highest temperature at which a gas–liquid transition can occur",
+        "correct": true
+      },
+      {
+        "text": "The lowest temperature at which the substance can exist as a gas",
+        "why": "A gas can exist below T_c too. T_c is an upper limit: above it, compression never produces a separate liquid."
+      },
+      {
+        "text": "The temperature at which the gas behaves exactly like an ideal gas",
+        "why": "Near-ideal behavior is a matter of high temperature and low pressure, not of T_c. T_c is the highest temperature at which gas and liquid can separate."
+      },
+      {
+        "text": "The temperature at which the liquid boils at a pressure of 1 atm",
+        "why": "That is the normal boiling point, which lies below T_c. T_c is the highest temperature at which a gas–liquid transition can occur at any pressure."
+      }
+    ],
+    "explanation": "The critical isotherm marks the highest temperature at which a gas–liquid transition can occur. Isotherms above T_c have no liquid–gas transition at all."
+  },
+  {
+    "id": "pc16-cubic-supercritical-fluid",
+    "type": "multiple-choice",
+    "prompt": "Above the critical temperature, a fluid compressed to high pressure is called a supercritical fluid. What does it resemble?",
+    "choices": [
+      {
+        "text": "A liquid",
+        "correct": true
+      },
+      {
+        "text": "An ideal gas",
+        "why": "The fluid above T_c is more gas-like at lower pressures. At high pressure it resembles a liquid."
+      },
+      {
+        "text": "A solid",
+        "why": "The section describes the high-pressure fluid above T_c as liquid-like, not solid."
+      },
+      {
+        "text": "Separate liquid and gas layers",
+        "why": "Above T_c there is no gas–liquid transition, so the fluid never splits into two phases."
+      }
+    ],
+    "explanation": "Above T_c there is no gas–liquid transition. Along such an isotherm the high-pressure fluid, the supercritical fluid, resembles a liquid, while at lower pressures the fluid is more gas-like."
+  },
+  {
+    "id": "pc16-cubic-inflection-conditions",
+    "type": "multiple-choice",
+    "prompt": "The critical point is an inflection point on the critical isotherm. Which conditions on the derivatives of P with respect to V hold there?",
+    "choices": [
+      {
+        "text": "The first and second derivatives are both zero",
+        "correct": true
+      },
+      {
+        "text": "The first is zero, but the second is positive",
+        "why": "Zero slope with upward curvature marks a minimum. At the critical point the curvature is zero as well."
+      },
+      {
+        "text": "The second is zero, but the first is negative",
+        "why": "Most points of an isotherm have a negative slope. At the critical point the slope is zero too, so both derivatives vanish."
+      },
+      {
+        "text": "Both derivatives are large and negative",
+        "why": "At the critical point the isotherm flattens out: (∂P/∂V)_T = 0 and (∂^2 P/∂V^2)_T = 0."
+      }
+    ],
+    "explanation": "At T = T_c the critical point satisfies (∂P/∂V)_T = 0 and (∂^2 P/∂V^2)_T = 0. Putting the van der Waals equation into these two conditions gives V_c = 3nb and RT_c = (8a)/(27b)."
+  },
+  {
+    "id": "pc16-cubic-pc-from-equation",
+    "type": "multiple-choice",
+    "prompt": "The two critical-point conditions give the critical volume and critical temperature of a van der Waals gas. How is the critical pressure then found?",
+    "choices": [
+      {
+        "text": "From the van der Waals equation itself",
+        "correct": true
+      },
+      {
+        "text": "From the ideal gas law, P_c = nRT_c/V_c",
+        "why": "A gas at its critical point is far from ideal. P_c comes from putting V_c and T_c into the van der Waals equation itself."
+      },
+      {
+        "text": "From a condition on the third derivative",
+        "why": "Only two conditions are used, and they fix V_c and T_c. P_c then follows from the van der Waals equation itself."
+      },
+      {
+        "text": "From Maxwell's equal-area construction",
+        "why": "Maxwell's construction places the tie lines below T_c. P_c comes from putting V_c and T_c into the van der Waals equation."
+      }
+    ],
+    "explanation": "The two conditions are two equations in two unknowns, giving V_c = 3nb and RT_c = (8a)/(27b). Putting these into the van der Waals equation itself then gives P_c = a/(27b^2)."
+  },
+  {
+    "id": "pc16-cubic-vc-two-moles",
+    "type": "numeric",
+    "prompt": "For a van der Waals gas, the critical volume is V_c = 3nb. What is V_c, in L, for 2.0 mol of a gas with b = 0.040 L·mol^−1? (Give it as a decimal.)",
+    "answer": 0.24,
+    "unit": "L",
+    "explanation": "V_c = 3 × 2.0 mol × 0.040 L·mol^−1 = 0.24 L. The critical volume is three times the volume nb excluded by the molecules themselves."
+  },
+  {
+    "id": "pc16-cubic-tc-co2",
+    "type": "numeric",
+    "prompt": "For CO2, the van der Waals constants are a = 3.66 L^2·bar·mol^−2 and b = 0.0429 L·mol^−1. Using T_c = (8a)/(27Rb) with R = 0.08314 L·bar·K^−1·mol^−1, what is the critical temperature of CO2, in K?",
+    "answer": 304,
+    "unit": "K",
+    "explanation": "T_c = (8 × 3.66)/(27 × 0.08314 × 0.0429) = 29.28/0.0963 = 304 K, which is 31 °C. It matches the measured 304.1 K because these a and b were computed from CO2's critical constants."
+  },
+  {
+    "id": "pc16-cubic-pc-co2",
+    "type": "numeric",
+    "prompt": "With a = 3.66 L^2·bar·mol^−2 and b = 0.0429 L·mol^−1 for CO2, what critical pressure, in bar, does P_c = a/(27b^2) give? (Give it as a decimal.)",
+    "answer": 73.7,
+    "unit": "bar",
+    "explanation": "27b^2 = 27 × (0.0429)^2 = 0.0497, so P_c = 3.66/0.0497 = 73.7 bar. That is 7.37 MPa, the critical pressure the section gives for CO2."
+  },
+  {
+    "id": "pc16-cubic-three-roots-why",
+    "type": "multiple-choice",
+    "prompt": "Why does a cubic equation of state, such as the van der Waals equation, give three roots for the molar volume?",
+    "choices": [
+      {
+        "text": "Any third-order algebraic equation has three roots",
+        "correct": true
+      },
+      {
+        "text": "Solid, liquid and gas each give one root",
+        "why": "The roots come from the algebra, not from three phases; the equation doesn't describe solids at all."
+      },
+      {
+        "text": "The equation contains three constants, R, a and b",
+        "why": "The number of constants doesn't set the number of roots. The equation is third order in V̄, so it has three roots."
+      },
+      {
+        "text": "Pressure, volume and temperature give one root each",
+        "why": "At a given P and T, all three roots are values of V̄. There are three because the equation is cubic in V̄."
+      }
+    ],
+    "explanation": "Cubic equations of state are third-order algebraic equations in V̄ (or in Z), and any nth-order algebraic equation has n roots. The roots need not be distinct, and they need not all be real."
+  },
+  {
+    "id": "pc16-cubic-one-or-three-real",
+    "type": "multiple-choice",
+    "prompt": "A cubic equation always has either one or three real roots, never exactly two. Why?",
+    "choices": [
+      {
+        "text": "Complex roots always come in conjugate pairs",
+        "correct": true
+      },
+      {
+        "text": "Real roots always come in pairs of opposite sign",
+        "why": "If real roots came in pairs, a cubic would have zero or two of them. It's the complex roots that pair up, leaving one or three real roots."
+      },
+      {
+        "text": "A cubic equation can never have complex roots",
+        "why": "It can: on a supercritical isotherm the cubic gives one real root and two complex conjugate roots."
+      },
+      {
+        "text": "The middle real root is always thrown away",
+        "why": "Discarding a root is a physical choice, not algebra. The one-or-three rule comes from complex roots pairing up."
+      }
+    ],
+    "explanation": "If a complex number is a root, so is its complex conjugate, so complex roots always show up in pairs. Of a cubic's three roots, then, either one is real and two are complex, or all three are real."
+  },
+  {
+    "id": "pc16-cubic-reject-root-below-b",
+    "type": "multiple-choice",
+    "prompt": "A cubic equation of state for a gas with b = 0.043 L·mol^−1 gives a real, positive root V̄ = 0.030 L·mol^−1. Why is this root rejected?",
+    "choices": [
+      {
+        "text": "A molar volume must be larger than b",
+        "correct": true
+      },
+      {
+        "text": "Only complex roots can be physical",
+        "why": "It's the opposite: only real roots are of interest. Among them, a physical molar volume must also be larger than b."
+      },
+      {
+        "text": "Cubic equations of state describe only gases",
+        "why": "They describe liquids too: the smallest acceptable root is the liquid's molar volume. This root fails because it is smaller than b."
+      },
+      {
+        "text": "The smallest root is always the vapor volume",
+        "why": "The smallest acceptable root belongs to the liquid. This root is rejected because V̄ must be larger than b."
+      }
+    ],
+    "explanation": "Only real, positive roots with V̄ > b are physical, since b is the volume excluded by the molecules themselves. For the compressibility factor, the same condition reads Z > Pb/(RT)."
+  },
+  {
+    "id": "pc16-cubic-z-lower-bound",
+    "type": "numeric",
+    "prompt": "A root is physical only if V̄ > b, which for the compressibility factor means Z > Pb/(RT). For a gas with b = 0.040 L·mol^−1 at P = 50 bar and a temperature where RT = 25 L·bar·mol^−1, what is this lower limit on Z? (Give it as a decimal.)",
+    "answer": 0.08,
+    "explanation": "Pb/(RT) = (50 bar × 0.040 L·mol^−1)/(25 L·bar·mol^−1) = 2.0/25 = 0.08. Any root of the cubic in Z below 0.08 would put V̄ below b, so it is rejected."
+  },
+  {
+    "id": "pc16-cubic-supercritical-root-count",
+    "type": "numeric",
+    "prompt": "On a supercritical isotherm (T > T_c), how many real roots does a cubic equation of state give for V̄ at any one pressure?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Just one: the other two roots are complex conjugates. Any horizontal isobar cuts a supercritical isotherm only once, so there is no doubt about which root to use."
+  },
+  {
+    "id": "pc16-cubic-critical-equal-roots",
+    "type": "multiple-choice",
+    "prompt": "At the critical point itself, where T = T_c and P = P_c, what roots does a cubic equation of state give for V̄?",
+    "choices": [
+      {
+        "text": "Three real roots, all equal",
+        "correct": true
+      },
+      {
+        "text": "One real root and two complex ones",
+        "why": "That is what the critical isotherm gives at any pressure other than P_c. At P_c the three roots are real and equal."
+      },
+      {
+        "text": "Three real roots, all different",
+        "why": "Three different real roots come from subcritical isotherms. At the critical point the liquid and vapor are the same, so the roots merge."
+      },
+      {
+        "text": "Two real roots, liquid and vapor",
+        "why": "A cubic never has exactly two real roots. At the critical point all three are real and equal."
+      }
+    ],
+    "explanation": "At the critical point the vapor and liquid properties are the same, so the three roots merge into one value, V̄_c. Elsewhere on the critical isotherm the cubic gives one real root and two complex conjugates."
+  },
+  {
+    "id": "pc16-cubic-three-cuts-subcritical",
+    "type": "multiple-choice",
+    "prompt": "When can a horizontal isobar cut the same isotherm at three different volumes, giving three different real roots?",
+    "choices": [
+      {
+        "text": "Below T_c, at pressures inside the S-shaped loop",
+        "correct": true
+      },
+      {
+        "text": "Above T_c, at any high enough pressure",
+        "why": "Any isobar cuts a supercritical isotherm only once, whatever the pressure."
+      },
+      {
+        "text": "At T_c, at any pressure other than P_c",
+        "why": "Away from P_c, the critical isotherm gives one real root. Three different roots need the S-shaped loop below T_c."
+      },
+      {
+        "text": "At any temperature, if the pressure is low enough",
+        "why": "Above T_c an isotherm is cut only once at any pressure. Three different real roots need a subcritical isotherm with its S-shaped loop."
+      }
+    ],
+    "explanation": "Only below T_c does an isotherm have the S-shaped loop that stands for the vapor–liquid transition. At pressures within that loop, including the saturation pressure, an isobar cuts it three times, giving three different real roots."
+  },
+  {
+    "id": "pc16-cubic-gas-largest-root",
+    "type": "multiple-choice",
+    "prompt": "A subcritical isotherm gives three different real roots for V̄ at some pressure. Which root is the molar volume of the vapor?",
+    "choices": [
+      {
+        "text": "The largest root",
+        "correct": true
+      },
+      {
+        "text": "The smallest root",
+        "why": "The smallest root is the molar volume of the liquid, which is far denser than the vapor."
+      },
+      {
+        "text": "The middle root",
+        "why": "The intermediate root is physically meaningless, so it isn't used for either phase."
+      },
+      {
+        "text": "The average of the three roots",
+        "why": "The average isn't a root at all. The vapor's molar volume is the largest root."
+      }
+    ],
+    "explanation": "The smallest root is taken as the liquid's molar volume and the largest as the vapor's; the intermediate root is physically meaningless. For the gas phase of a pure substance, the largest root is always the correct choice."
+  },
+  {
+    "id": "pc16-cubic-above-max-one-liquid",
+    "type": "multiple-choice",
+    "prompt": "On a subcritical isotherm, the pressure is set above the maximum of the S-shaped loop. How many roots with V̄ > b does the cubic give, and for which phase?",
+    "choices": [
+      {
+        "text": "One, for the liquid",
+        "correct": true
+      },
+      {
+        "text": "One, for the vapor",
+        "why": "A single vapor root comes at low pressures, below the loop's minimum. Above the loop's maximum, the only acceptable root is a liquid one."
+      },
+      {
+        "text": "Three: liquid, vapor and a meaningless one",
+        "why": "Three real roots come only at pressures within the loop. Above its maximum, just one liquid root satisfies V̄ > b."
+      },
+      {
+        "text": "None, so the equation fails there",
+        "why": "The equation still works there: it gives one acceptable root, for the liquid."
+      }
+    ],
+    "explanation": "Subcritical isotherms don't always give three acceptable roots. Above the maximum of the S-shaped loop only one real root, a liquid one, satisfies V̄ > b; between zero and the loop's minimum, only one vapor root does."
+  },
+  {
+    "id": "pc16-cubic-coexistence-region",
+    "type": "multiple-choice",
+    "prompt": "A curve is drawn through the ends of the tie lines on all the subcritical isotherms, and it peaks at the critical point. What does the region inside this curve represent?",
+    "choices": [
+      {
+        "text": "Gas and liquid together",
+        "correct": true
+      },
+      {
+        "text": "Only supercritical fluid",
+        "why": "Supercritical fluid lies above T_c, outside this curve. Inside it, gas and liquid coexist."
+      },
+      {
+        "text": "Only liquid",
+        "why": "Pure liquid lies to the left of the curve, at small volumes. Inside it the two phases coexist."
+      },
+      {
+        "text": "Only gas",
+        "why": "Pure gas lies to the right of the curve, at large volumes. Inside it gas and liquid are both present."
+      }
+    ],
+    "explanation": "The region inside this curve is where the gas and liquid phases coexist, along the tie lines. The curve reaches its maximum at the critical point, above which no liquid separates."
+  },
+  {
+    "id": "pc16-cubic-standing-katz",
+    "type": "multiple-choice",
+    "prompt": "The Standing and Katz chart, published in 1942, was long popular in the natural gas industry. What does it plot?",
+    "choices": [
+      {
+        "text": "The compressibility factor Z against pressure",
+        "correct": true
+      },
+      {
+        "text": "Pressure against molar volume at fixed T",
+        "why": "Those are isotherms, like the van der Waals curves. The Standing and Katz chart plots Z against pressure."
+      },
+      {
+        "text": "Vapor pressure against temperature",
+        "why": "A vapor-pressure curve is a different kind of chart. Standing and Katz plotted the compressibility factor Z against pressure."
+      },
+      {
+        "text": "The number of real volume roots against temperature",
+        "why": "Root counts come from the algebra of the cubic. The chart plots measured values of Z against pressure."
+      }
+    ],
+    "explanation": "The Standing and Katz chart plots the compressibility factor Z of sweet natural gases against pressure. It was based on experimental data and is usually given for temperatures above T_c."
+  }
+]

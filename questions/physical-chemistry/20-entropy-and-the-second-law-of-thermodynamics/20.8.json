@@ -1,0 +1,241 @@
+[
+  {
+    "id": "pc20-partition-s-starting-definition",
+    "type": "multiple-choice",
+    "prompt": "To write the entropy in terms of the partition function Q, which definition of entropy does the section start from?",
+    "choices": [
+      {
+        "text": "Boltzmann's statistical definition, S = k ln W",
+        "correct": true
+      },
+      {
+        "text": "The thermodynamic definition, dS = (δq_rev)/T",
+        "why": "That definition is built on heat, not on states. To bring in Q, the section starts from Boltzmann's S = k ln W, which counts microstates."
+      },
+      {
+        "text": "The first law, ΔU = q + w",
+        "why": "The first law is about energy, not entropy. The section starts from Boltzmann's S = k ln W and rewrites it with probabilities and then Q."
+      },
+      {
+        "text": "The ideal gas law, PV = nRT",
+        "why": "The ideal gas law says nothing about entropy. The section starts from Boltzmann's S = k ln W."
+      }
+    ],
+    "explanation": "The section combines S = k ln W with W = (A!)/(Π_j a_j!) for an ensemble of A systems, then uses Stirling's approximation and the Boltzmann probabilities to reach an expression in Q. Here k is Boltzmann's constant."
+  },
+  {
+    "id": "pc20-partition-s-stirling-cancel",
+    "type": "multiple-choice",
+    "prompt": "After Stirling's approximation, the section's ensemble entropy contains the terms −kA and +kΣ_j a_j. Why do these two terms cancel?",
+    "choices": [
+      {
+        "text": "The a_j add up to A, the number of systems",
+        "correct": true
+      },
+      {
+        "text": "Each a_j is equal to A",
+        "why": "Each a_j counts the systems in one state j, so it is only part of A. Added over all the states, Σ_j a_j = A, which makes the terms cancel."
+      },
+      {
+        "text": "k is zero in the limit of a large ensemble",
+        "why": "k is Boltzmann's constant, a fixed number. The terms cancel because the populations a_j add up to the total number of systems, A."
+      },
+      {
+        "text": "The a_j are all very small numbers",
+        "why": "In a large ensemble many a_j are large. The terms cancel because Σ_j a_j = A: every system is in some state j."
+      }
+    ],
+    "explanation": "Every system of the ensemble is in some state j, so Σ_j a_j = A and −kA + kΣ_j a_j = 0. This leaves S_ensemble = kA ln A − kΣ_j a_j ln a_j."
+  },
+  {
+    "id": "pc20-partition-s-probability-form",
+    "type": "multiple-choice",
+    "prompt": "Before bringing in Q, the section writes the entropy of one system in terms of the probabilities p_j of its states. Which expression does it reach?",
+    "choices": [
+      {
+        "text": "S = −kΣ_j p_j ln p_j",
+        "correct": true
+      },
+      {
+        "text": "S = kΣ_j p_j ln p_j",
+        "why": "Each ln p_j is negative or zero, so this would give a negative entropy. The minus sign makes S = −kΣ_j p_j ln p_j positive or zero."
+      },
+      {
+        "text": "S = kΣ_j p_j",
+        "why": "Since Σ_j p_j = 1, this would make every system's entropy equal to k. The section's result is S = −kΣ_j p_j ln p_j."
+      },
+      {
+        "text": "S = −kΣ_j ln p_j",
+        "why": "Each ln p_j must be weighted by its probability p_j. The section's result is S = −kΣ_j p_j ln p_j."
+      }
+    ],
+    "explanation": "Substituting a_j = p_j A into the ensemble entropy and dividing by the number of systems A gives S = −kΣ_j p_j ln p_j. Since every p_j lies between 0 and 1, each −p_j ln p_j is zero or positive."
+  },
+  {
+    "id": "pc20-partition-s-perfect-order",
+    "type": "multiple-choice",
+    "prompt": "The section says S = −kΣ_j p_j ln p_j is zero for a perfectly ordered system, where one p_j is 1 and all the others are 0. Why does the sum come out to zero?",
+    "choices": [
+      {
+        "text": "ln 1 = 0, and the empty states add nothing",
+        "correct": true
+      },
+      {
+        "text": "The minus sign cancels the one occupied state",
+        "why": "There is nothing to cancel: the occupied state gives 1 × ln 1 = 0 by itself. The empty states, with p_j = 0, add nothing either."
+      },
+      {
+        "text": "k is zero for a perfectly ordered system",
+        "why": "k is Boltzmann's constant and is never zero. The sum vanishes term by term: ln 1 = 0 for the occupied state, and p_j = 0 for the rest."
+      },
+      {
+        "text": "Each empty state adds ln 0, which is zero",
+        "why": "ln 0 is not zero; it goes to minus infinity. But each term is p_j ln p_j, which counts as zero when p_j = 0."
+      }
+    ],
+    "explanation": "The occupied state gives 1 × ln 1 = 0, and each empty state has p_j = 0, so its term p_j ln p_j counts as zero. With every term zero, S = 0: one certain state means perfect order."
+  },
+  {
+    "id": "pc20-partition-s-pj-substituted",
+    "type": "multiple-choice",
+    "prompt": "To bring the partition function into S = −kΣ_j p_j ln p_j, which expression does the section substitute for the probability p_j of state j?",
+    "choices": [
+      {
+        "text": "p_j = (exp(−βE_j))/Q",
+        "correct": true
+      },
+      {
+        "text": "p_j = Q × exp(−βE_j)",
+        "why": "Multiplying by Q would make the probabilities add up to Q^2, not 1. The Boltzmann probability divides by Q: p_j = (exp(−βE_j))/Q."
+      },
+      {
+        "text": "p_j = (exp(βE_j))/Q",
+        "why": "With +βE_j, higher-energy states would be more likely, which is backwards. The Boltzmann probability is p_j = (exp(−βE_j))/Q."
+      },
+      {
+        "text": "p_j = (E_j)/Q",
+        "why": "A probability must fall off exponentially with energy. The section uses p_j = (exp(−βE_j))/Q, with β = 1/(kT)."
+      }
+    ],
+    "explanation": "In the canonical ensemble, the probability of state j is its Boltzmann factor divided by the partition function: p_j = (exp(−βE_j))/Q, with β = 1/(kT). Dividing by Q = Σ_j exp(−βE_j) makes the probabilities add up to 1."
+  },
+  {
+    "id": "pc20-partition-s-ln-pj",
+    "type": "multiple-choice",
+    "prompt": "With p_j = (exp(−βE_j))/Q, what is ln p_j?",
+    "choices": [
+      {
+        "text": "−βE_j − ln Q",
+        "correct": true
+      },
+      {
+        "text": "−βE_j + ln Q",
+        "why": "Dividing by Q subtracts ln Q, since ln(x/Q) = ln x − ln Q. So ln p_j = −βE_j − ln Q."
+      },
+      {
+        "text": "(−βE_j)/(ln Q)",
+        "why": "The log of a quotient is a difference of logs, not a quotient of logs. So ln p_j = −βE_j − ln Q."
+      },
+      {
+        "text": "ln(βE_j) − ln Q",
+        "why": "The log of an exponential gives back its exponent: ln(exp(−βE_j)) = −βE_j. So ln p_j = −βE_j − ln Q."
+      }
+    ],
+    "explanation": "ln p_j = ln(exp(−βE_j)) − ln Q = −βE_j − ln Q. Multiplied by −k, this gives βkE_j + k ln Q, the two pieces that become U/T and k ln Q."
+  },
+  {
+    "id": "pc20-partition-s-beta-k",
+    "type": "multiple-choice",
+    "prompt": "Near the end of the derivation, the section replaces the product βk, where β = 1/(kT). What is βk equal to?",
+    "choices": [
+      {
+        "text": "1/T",
+        "correct": true
+      },
+      {
+        "text": "T",
+        "why": "β = 1/(kT), so βk = k/(kT) = 1/T, not T."
+      },
+      {
+        "text": "1/(kT)",
+        "why": "1/(kT) is β itself. Multiplying it by k gives βk = 1/T."
+      },
+      {
+        "text": "kT",
+        "why": "kT is 1/β. The product βk is k/(kT) = 1/T."
+      }
+    ],
+    "explanation": "Since β = 1/(kT), βk = k/(kT) = 1/T. This turns βkΣ_j E_j p_j into U/T."
+  },
+  {
+    "id": "pc20-partition-s-final-result",
+    "type": "multiple-choice",
+    "prompt": "Which expression for the entropy in terms of the partition function Q does the section finally obtain?",
+    "choices": [
+      {
+        "text": "S = U/T + k ln Q",
+        "correct": true
+      },
+      {
+        "text": "S = U/T − k ln Q",
+        "why": "The k ln Q term comes from −k ln p_j = βkE_j + k ln Q, so it enters with a plus sign. S = U/T + k ln Q."
+      },
+      {
+        "text": "S = k ln Q",
+        "why": "That leaves out the energy term. The average energy contributes U/T, so S = U/T + k ln Q."
+      },
+      {
+        "text": "S = U/T × k ln Q",
+        "why": "The two contributions add; they are not multiplied. S = U/T + k ln Q."
+      }
+    ],
+    "explanation": "Substituting p_j = (exp(−βE_j))/Q into S = −kΣ_j p_j ln p_j gives one term with the average energy, U/T, and one with the partition function, k ln Q. So S = U/T + k ln Q."
+  },
+  {
+    "id": "pc20-partition-s-u-term",
+    "type": "multiple-choice",
+    "prompt": "In S = U/T + k ln Q, the U/T term comes from βkΣ_j E_j p_j. Why does Σ_j E_j p_j equal U?",
+    "choices": [
+      {
+        "text": "It is the probability-weighted average energy",
+        "correct": true
+      },
+      {
+        "text": "It is the energy of the lowest state alone",
+        "why": "The sum runs over every state, each weighted by its probability. That weighted sum is the average energy U."
+      },
+      {
+        "text": "It is the plain sum of all the energy levels",
+        "why": "Each energy is weighted by p_j, which is less than 1. A probability-weighted sum is an average, and here it is the average energy U."
+      },
+      {
+        "text": "It is the heat taken in by the system",
+        "why": "No heat appears in this sum, only the state energies and their probabilities. Averaging E_j over the p_j gives the internal energy U."
+      }
+    ],
+    "explanation": "Σ_j E_j p_j adds each state's energy times the probability of that state, which is the average energy of the system, U. With βk = 1/T, βkΣ_j E_j p_j becomes U/T."
+  },
+  {
+    "id": "pc20-partition-s-aj-from-pj",
+    "type": "numeric",
+    "prompt": "In an ensemble of A = 2000 systems, the probability of finding a system in state j is p_j = 0.15. Using a_j = p_j A, how many systems a_j are in state j?",
+    "answer": 300,
+    "tolerance": 0,
+    "explanation": "a_j = p_j A = 0.15 × 2000 = 300. The section uses this substitution, a_j = p_j A, to turn the ensemble entropy into a sum over probabilities."
+  },
+  {
+    "id": "pc20-partition-s-two-state-value",
+    "type": "numeric",
+    "prompt": "A system has two states, with probabilities p_1 = 0.80 and p_2 = 0.20. Using S/k = −Σ_j p_j ln p_j with ln 0.80 = −0.223 and ln 0.20 = −1.609, what is S/k? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "S/k = −[0.80 × (−0.223) + 0.20 × (−1.609)] = 0.178 + 0.322 = 0.500. An even 50:50 split would give the larger value ln 2 = 0.693."
+  },
+  {
+    "id": "pc20-partition-s-from-u-and-lnq",
+    "type": "numeric",
+    "prompt": "A system at T = 300 K has internal energy U = 3600 J, and its partition function gives k ln Q = 8.0 J/K. Using S = U/T + k ln Q, what is its entropy, in J/K?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "S = (3600 J)/(300 K) + 8.0 J/K = 12.0 J/K + 8.0 J/K = 20.0 J/K. Forgetting to divide U by T would give 3608, far too large."
+  }
+]

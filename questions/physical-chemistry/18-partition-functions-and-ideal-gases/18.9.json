@@ -1,0 +1,508 @@
+[
+  {
+    "id": "pc18-heat-capacity-definition",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the heat capacity, C, of a substance measure?",
+    "choices": [
+      {
+        "text": "The heat needed to raise its temperature by one kelvin",
+        "correct": true
+      },
+      {
+        "text": "The temperature rise produced by one joule of heat",
+        "why": "That is the inverse idea. Heat capacity is the heat required to raise the temperature by one kelvin, so a larger C means a smaller rise per joule."
+      },
+      {
+        "text": "The total heat stored in the substance at a given temperature",
+        "why": "That would be an energy, not a heat capacity. C measures how much heat it takes to raise the temperature by one kelvin."
+      },
+      {
+        "text": "The heat needed to melt the substance",
+        "why": "Melting takes a heat of fusion, at a fixed temperature. Heat capacity is the heat needed to raise the temperature by one kelvin."
+      }
+    ],
+    "explanation": "The heat capacity measures how much heat is required to raise the temperature of a substance by one kelvin. Per mole it is the molar heat capacity, and per gram it is the specific heat capacity, C_s."
+  },
+  {
+    "id": "pc18-heat-capacity-specific",
+    "type": "multiple-choice",
+    "prompt": "In the Dulong-Petit law, C_s is the specific heat capacity. What does C_s measure?",
+    "choices": [
+      {
+        "text": "The heat to warm one gram of the substance by 1 K",
+        "correct": true
+      },
+      {
+        "text": "The heat to warm one mole of the substance by 1 K",
+        "why": "That is the molar heat capacity, C_(V,m). C_s is per gram, which is why it is multiplied by the molar mass M to give C_(V,m)."
+      },
+      {
+        "text": "The heat to warm one atom of the substance by 1 K",
+        "why": "C_s isn't a per-atom quantity. It is the heat needed to raise the temperature of one gram by one kelvin."
+      },
+      {
+        "text": "Its heat capacity measured at constant pressure",
+        "why": "C_s is defined per gram, not by a pressure or volume condition. Handbooks do list constant-pressure values, but for simple solids these are essentially equal to C_V."
+      }
+    ],
+    "explanation": "C_s is the heat required to raise the temperature of one gram of a substance by one kelvin. Multiplying by the molar mass M, in grams per mole, turns it into a molar heat capacity: C_s M = C_(V,m)."
+  },
+  {
+    "id": "pc18-heat-capacity-vm-label",
+    "type": "multiple-choice",
+    "prompt": "In the symbol C_(V,m), what do the subscripts V and m mean?",
+    "choices": [
+      {
+        "text": "Constant volume, per mole",
+        "correct": true
+      },
+      {
+        "text": "Vibrational, per metal atom",
+        "why": "V stands for constant volume, not vibration, and m means molar, per mole of substance."
+      },
+      {
+        "text": "Constant volume, per gram of metal",
+        "why": "Per gram is the specific heat capacity, C_s. The m in C_(V,m) means molar, per mole."
+      },
+      {
+        "text": "Variable volume, per molecule",
+        "why": "V means the volume is held constant, and m means per mole, not per molecule."
+      }
+    ],
+    "explanation": "C_(V,m) is the constant-volume molar heat capacity: the heat needed to raise the temperature of one mole by 1 K with the volume held fixed."
+  },
+  {
+    "id": "pc18-heat-capacity-gas-contributions",
+    "type": "multiple-choice",
+    "prompt": "For a simple molecular gas, into which contributions does the section break the heat capacity?",
+    "choices": [
+      {
+        "text": "Translational, vibrational and rotational",
+        "correct": true
+      },
+      {
+        "text": "Translational only",
+        "why": "Molecules can also store energy as vibration and rotation. The section writes C = C_trans + C_vib + C_rot."
+      },
+      {
+        "text": "Vibrational only, as in the Einstein solid",
+        "why": "Only the atoms of the Einstein solid are limited to vibration. Gas molecules also move through space and rotate, so C = C_trans + C_vib + C_rot."
+      },
+      {
+        "text": "Electronic and nuclear-spin contributions",
+        "why": "The section doesn't list these. A molecular gas stores energy in translation, vibration and rotation, giving C = C_trans + C_vib + C_rot."
+      }
+    ],
+    "explanation": "Molecules in a gas can store kinetic energy in translation, vibration and rotation at the same time. So the section writes the heat capacity as C = C_trans + C_vib + C_rot."
+  },
+  {
+    "id": "pc18-heat-capacity-solid-simpler",
+    "type": "multiple-choice",
+    "prompt": "Why does the section call a monoatomic crystalline solid a much simpler case than a molecular gas?",
+    "choices": [
+      {
+        "text": "Its atoms have only vibrational energy",
+        "correct": true
+      },
+      {
+        "text": "Its atoms have only translational energy",
+        "why": "Atoms in a crystal are held at lattice positions and don't move freely through it. In Einstein's model they only vibrate about those positions."
+      },
+      {
+        "text": "Its atoms do not store any energy",
+        "why": "Solids do take up heat, about 25 J/(K·mol) for most metals at room temperature. Their atoms store it as vibration about their lattice positions."
+      },
+      {
+        "text": "Its atoms rotate but do not vibrate",
+        "why": "Single atoms have no rotational energy in this model. They vibrate about their lattice positions in three perpendicular directions."
+      }
+    ],
+    "explanation": "In Einstein's model the atoms of a monoatomic crystal have only vibrational energy, vibrating in three perpendicular directions around their lattice positions. A molecular gas adds translational and rotational contributions."
+  },
+  {
+    "id": "pc18-heat-capacity-times-three",
+    "type": "multiple-choice",
+    "prompt": "Why is the heat capacity of a three-dimensional Einstein solid found by multiplying the one-dimensional oscillator result by three?",
+    "choices": [
+      {
+        "text": "Each atom vibrates independently in x, y and z",
+        "correct": true
+      },
+      {
+        "text": "Each crystal unit cell holds three atoms",
+        "why": "The factor has nothing to do with unit cells. Each atom vibrates in three perpendicular directions, independently, so their heat capacities add."
+      },
+      {
+        "text": "The energy rises as the cube of the temperature",
+        "why": "The factor of 3 is a count, not a power of T. It counts the three independent perpendicular directions in which each atom vibrates."
+      },
+      {
+        "text": "Each atom also translates and rotates",
+        "why": "In the Einstein model the atoms only vibrate. The three comes from independent vibrations in three perpendicular directions."
+      }
+    ],
+    "explanation": "Einstein's model treats each atom as a three-dimensional harmonic oscillator whose motions along the three perpendicular directions are entirely independent. Their heat capacities simply add, so the 3-D result is three times the 1-D one."
+  },
+  {
+    "id": "pc18-heat-capacity-theta-v",
+    "type": "multiple-choice",
+    "prompt": "In the Einstein heat capacity formula, what is Θ_v?",
+    "choices": [
+      {
+        "text": "The characteristic vibrational temperature, hν/k",
+        "correct": true
+      },
+      {
+        "text": "The temperature at which the solid melts",
+        "why": "Θ_v has nothing to do with melting. It is hν/k, the vibrational frequency expressed as a temperature."
+      },
+      {
+        "text": "Room temperature, 298 K",
+        "why": "298 K is the temperature that Θ_v is compared with. Θ_v itself is hν/k, set by the vibrational frequency of the solid."
+      },
+      {
+        "text": "The temperature at which C_(V,m) is exactly 3R",
+        "why": "C_(V,m) only approaches 3R as T grows very large. Θ_v = hν/k is the characteristic vibrational temperature."
+      }
+    ],
+    "explanation": "Θ_v = hν/k is the characteristic vibrational temperature of the oscillator, where ν is its vibrational frequency, h is Planck's constant and k is Boltzmann's constant. It sets the temperature scale on which C_(V,m) rises toward its limit."
+  },
+  {
+    "id": "pc18-heat-capacity-same-limit",
+    "type": "multiple-choice",
+    "prompt": "Plots of the Einstein heat capacity for metals with widely varying vibrational frequencies are compared. What do they show at high temperatures?",
+    "choices": [
+      {
+        "text": "All approach the same limit, 3R",
+        "correct": true
+      },
+      {
+        "text": "Each approaches a limit set by its own ν",
+        "why": "The frequency affects how soon C_(V,m) levels off, but the high-temperature limit is 3R for every metal, regardless of its identity."
+      },
+      {
+        "text": "All fall toward zero",
+        "why": "At high temperature the Einstein formula approaches 3R for every metal, not zero."
+      },
+      {
+        "text": "All approach (3/2)R",
+        "why": "(3/2)R is the translational heat capacity of a monatomic gas. Atoms vibrating in three directions in a solid approach 3R."
+      }
+    ],
+    "explanation": "However different their vibrational frequencies, all the metals' Einstein heat capacities approach the same asymptotic limit of 3R, about 24.9 J/(K·mol), at high temperature. The limit doesn't depend on the identity of the metal."
+  },
+  {
+    "id": "pc18-heat-capacity-room-temperature",
+    "type": "multiple-choice",
+    "prompt": "Why do most metals already have C_(V,m) close to 3R at room temperature?",
+    "choices": [
+      {
+        "text": "Their Θ_v lies well below 298 K",
+        "correct": true
+      },
+      {
+        "text": "Their Θ_v lies well above 298 K",
+        "why": "If Θ_v were well above room temperature, C_(V,m) would still be well short of 3R. Most metals have low frequencies, so Θ_v ≪ 298 K."
+      },
+      {
+        "text": "Their atoms are too heavy to vibrate",
+        "why": "If the atoms didn't vibrate, the Einstein solid would have no heat capacity at all. Metals reach 3R because their low vibrational frequencies put Θ_v well below 298 K."
+      },
+      {
+        "text": "Room temperature is the only T where 3R holds",
+        "why": "3R is the high-temperature limit, so it holds even better above room temperature. Metals already reach it at 298 K because Θ_v ≪ 298 K."
+      }
+    ],
+    "explanation": "The vibrational frequencies of most metals are small enough that Θ_v ≪ 298 K. Room temperature is then already a high temperature for these solids, so C_(V,m) ≈ 24.9 J/(K·mol)."
+  },
+  {
+    "id": "pc18-heat-capacity-verify-limit",
+    "type": "multiple-choice",
+    "prompt": "How does the section suggest verifying that the Einstein heat capacity approaches 3R at high temperature?",
+    "choices": [
+      {
+        "text": "Expand the exponentials as power series",
+        "correct": true
+      },
+      {
+        "text": "Set T = 0 and simplify the formula",
+        "why": "T = 0 is the low-temperature end, not the high one. For T ≫ Θ_v, expand each exponential in a power series and drop the higher-order terms."
+      },
+      {
+        "text": "Set Θ_v equal to T in the formula",
+        "why": "At T = Θ_v the formula gives only about 0.92 × 3R. The limit appears when T ≫ Θ_v, using a power-series expansion of the exponentials."
+      },
+      {
+        "text": "Measure C_P for several metals and average",
+        "why": "Measurements test the law but don't prove the limit. The section's hint is to expand each exponential in a power series, keeping the leading terms for T ≫ Θ_v."
+      }
+    ],
+    "explanation": "For T ≫ Θ_v the exponents are small, so each exponential can be expanded in a power series and the higher-order terms dropped. The temperature-dependent factor then goes to 1, and C_(V,m) goes to 3R."
+  },
+  {
+    "id": "pc18-heat-capacity-dulong-petit-form",
+    "type": "multiple-choice",
+    "prompt": "How is the Dulong-Petit law normally written?",
+    "choices": [
+      {
+        "text": "C_s M = C_(V,m) ≈ 25 J/(K·mol)",
+        "correct": true
+      },
+      {
+        "text": "C_s ≈ 25 J/(g·K) for every metal",
+        "why": "Specific heats differ a lot from metal to metal. It is the product C_s M, the molar heat capacity, that is about 25 J/(K·mol)."
+      },
+      {
+        "text": "C_s/M ≈ 25 J/(K·mol)",
+        "why": "Dividing by M doesn't give a molar quantity. Multiplying the per-gram C_s by the grams per mole M gives C_(V,m) ≈ 25 J/(K·mol)."
+      },
+      {
+        "text": "C_s M = C_(V,m) ≈ 8.3 J/(K·mol)",
+        "why": "8.3 J/(K·mol) is R, the high-temperature limit for vibration in one direction. Atoms vibrate in three directions, so the law gives 3R ≈ 25 J/(K·mol)."
+      }
+    ],
+    "explanation": "The Dulong-Petit law says that the product of a metal's specific heat capacity and its molar mass is about 25 J/(K·mol). That product is the molar heat capacity, whose high-temperature value is 3R."
+  },
+  {
+    "id": "pc18-heat-capacity-empirical",
+    "type": "multiple-choice",
+    "prompt": "How did Dulong and Petit arrive at their law?",
+    "choices": [
+      {
+        "text": "Empirically, from measurements in the early 1800s",
+        "correct": true
+      },
+      {
+        "text": "By deriving it from the Einstein solid model",
+        "why": "Einstein's model came much later. Dulong and Petit found the result empirically in the early 1800s, and Einstein's model later explained it."
+      },
+      {
+        "text": "From the equipartition principle and quantum theory",
+        "why": "Dulong and Petit worked in the early 1800s, long before quantum theory. They discovered the law empirically."
+      },
+      {
+        "text": "By measuring atomic weights by gravimetric methods",
+        "why": "Gravimetric methods were the disputed alternative. The law came from heat-capacity measurements and was then used to find atomic weights."
+      }
+    ],
+    "explanation": "Pierre Louis Dulong and Alexis Therese Petit discovered the result empirically in the early 1800s. Statistical mechanics later explained it as the high-temperature limit, 3R, of Einstein's model."
+  },
+  {
+    "id": "pc18-heat-capacity-atomic-weights",
+    "type": "multiple-choice",
+    "prompt": "What did scientists of Dulong and Petit's time use the Dulong-Petit law for?",
+    "choices": [
+      {
+        "text": "Finding more accurate atomic weights of metals",
+        "correct": true
+      },
+      {
+        "text": "Measuring the vibrational frequencies of metals",
+        "why": "Vibrational frequencies entered only with Einstein's model, much later. The law was used to get atomic weights: measure C_s, then M ≈ 25/C_s."
+      },
+      {
+        "text": "Determining the value of the gas constant R",
+        "why": "Finding R from heat capacities is a modern exercise in the section. Historically, the law was used to establish atomic weights of metals."
+      },
+      {
+        "text": "Testing Einstein's model of solids",
+        "why": "Einstein's model came long afterward. In their time, the law gave a simple way to establish atomic weights from measured specific heats."
+      }
+    ],
+    "explanation": "Measuring a metal's specific heat and using C_s M ≈ 25 J/(K·mol) gave its molar mass. This was simpler than the disputed gravimetric methods then used to establish equivalent weights."
+  },
+  {
+    "id": "pc18-heat-capacity-cp-cv",
+    "type": "multiple-choice",
+    "prompt": "Handbooks list heat capacities measured at constant pressure, C_P, rather than C_V. Why is it fine to use them to test the Dulong-Petit law?",
+    "choices": [
+      {
+        "text": "C_P ≈ C_V for simple solids",
+        "correct": true
+      },
+      {
+        "text": "C_P is always exactly 3R for solids",
+        "why": "C_P isn't fixed at 3R; diamond and beryllium fall well below it. The point is that C_P ≈ C_V for simple solids, within the precision needed."
+      },
+      {
+        "text": "The law is really about C_P, not C_V",
+        "why": "The law is written for C_(V,m), the quantity Einstein's model gives. Handbook C_P values can be used because C_P ≈ C_V for simple solids."
+      },
+      {
+        "text": "C_V cannot be defined for a solid",
+        "why": "C_V is well defined for a solid; it is just harder to measure. For simple solids C_P and C_V are essentially equal, so handbook values can be used."
+      }
+    ],
+    "explanation": "Literature heat capacities are usually constant-pressure values. For simple solids C_P and C_V are essentially equal within the precision of the exercise, so the handbook values can stand in for C_V."
+  },
+  {
+    "id": "pc18-heat-capacity-plot-slope",
+    "type": "multiple-choice",
+    "prompt": "If the elements obey the Dulong-Petit law, a plot of C_s against 1/M is a straight line. What is its slope?",
+    "choices": [
+      {
+        "text": "3R",
+        "correct": true
+      },
+      {
+        "text": "R",
+        "why": "R is the high-temperature limit for vibration in one direction only. Atoms vibrate in three directions, so C_s = 3R/M and the slope is 3R."
+      },
+      {
+        "text": "1/(3R)",
+        "why": "Rearranging C_s M = 3R gives C_s = 3R × (1/M), so the slope is 3R itself, not its inverse."
+      },
+      {
+        "text": "3R/M",
+        "why": "3R/M is C_s itself, the y value. Plotted against 1/M, C_s = 3R × (1/M) has a constant slope of 3R."
+      }
+    ],
+    "explanation": "Dividing C_s M = 3R by M gives C_s = 3R × (1/M), a straight line through the origin with slope 3R ≈ 24.9 J/(K·mol). Elements that fall far off the line deviate from the law."
+  },
+  {
+    "id": "pc18-heat-capacity-monoatomic-only",
+    "type": "multiple-choice",
+    "prompt": "The section's exercise uses only elements that exist as monoatomic solids at room temperature. Why?",
+    "choices": [
+      {
+        "text": "The model treats each atom as a 3-D oscillator",
+        "correct": true
+      },
+      {
+        "text": "Molecular solids have no heat capacity at all",
+        "why": "Every solid takes up heat. The exercise sticks to monoatomic solids because Einstein's model treats each atom as an independent oscillator at a lattice site."
+      },
+      {
+        "text": "Only these are listed in the CRC Handbook",
+        "why": "The handbook lists many kinds of substance. The restriction matches Einstein's model, in which single atoms vibrate about lattice positions."
+      },
+      {
+        "text": "Monoatomic solids have the largest molar masses",
+        "why": "They range from light lithium to heavy gold, so molar mass isn't the reason. The Dulong-Petit argument is about single atoms vibrating in a lattice."
+      }
+    ],
+    "explanation": "Einstein's model, which explains the Dulong-Petit law, describes a monoatomic crystal whose atoms each vibrate as a three-dimensional harmonic oscillator about a lattice position. Solids built from molecules would add motions within each molecule, which the model leaves out."
+  },
+  {
+    "id": "pc18-heat-capacity-deviation-direction",
+    "type": "multiple-choice",
+    "prompt": "An element's Θ_v is not well below 298 K, so it deviates from the Dulong-Petit law at room temperature. How does its C_(V,m) compare with 3R?",
+    "choices": [
+      {
+        "text": "It is smaller than 3R",
+        "correct": true
+      },
+      {
+        "text": "It is larger than 3R",
+        "why": "3R is the limit that C_(V,m) approaches as the temperature rises. An element that hasn't reached its high-temperature limit falls short of 3R."
+      },
+      {
+        "text": "It is exactly 3R anyway",
+        "why": "C_(V,m) equals 3R only in the limit T ≫ Θ_v. When Θ_v is not well below 298 K, room temperature is too low to reach it."
+      },
+      {
+        "text": "It is zero",
+        "why": "The solid still absorbs heat; its atoms still vibrate. Its C_(V,m) is simply below the 3R limit."
+      }
+    ],
+    "explanation": "C_(V,m) rises toward 3R as T increases, reaching it only when T ≫ Θ_v. An element whose Θ_v isn't well below room temperature is still on the way up, so its molar heat capacity is below 3R, as for beryllium."
+  },
+  {
+    "id": "pc18-heat-capacity-light-vs-heavy",
+    "type": "multiple-choice",
+    "prompt": "Lithium (M = 6.94 g/mol) and gold (M = 197 g/mol) both obey the Dulong-Petit law. Which has the larger specific heat capacity, C_s?",
+    "choices": [
+      {
+        "text": "Lithium, by a factor of about 28",
+        "correct": true
+      },
+      {
+        "text": "Gold, by a factor of about 28",
+        "why": "Under Dulong-Petit, C_s M is the same for both, so C_s ≈ 25/M. The metal with the smaller molar mass, lithium, has the larger specific heat."
+      },
+      {
+        "text": "Neither, since C_s M is the same for both",
+        "why": "It is the molar heat capacity C_s M that is the same. Since M differs by a factor of about 28, so does C_s, with lithium's larger."
+      },
+      {
+        "text": "Neither, since both are metals",
+        "why": "Specific heats of metals vary widely. With C_s ≈ 25/M, light lithium has a C_s about 28 times gold's."
+      }
+    ],
+    "explanation": "If C_s M ≈ 25 J/(K·mol) for both, then C_s ≈ 25/M. Lithium's molar mass is about 197/6.94 ≈ 28 times smaller, so its specific heat is about 28 times larger: roughly 3.6 against 0.13 J/(g·K)."
+  },
+  {
+    "id": "pc18-heat-capacity-discard-data",
+    "type": "multiple-choice",
+    "prompt": "In the section's exercise, R is found from the slope of a C_s versus 1/M plot. Which elements' data should be thrown out first?",
+    "choices": [
+      {
+        "text": "Those whose Θ_v may not be well below 298 K",
+        "correct": true
+      },
+      {
+        "text": "The heaviest metals, such as gold and platinum",
+        "why": "Heavy metals have low vibrational frequencies, so Θ_v ≪ 298 K and they follow the law well. Leave out elements like diamond, whose Θ_v may be near or above room temperature."
+      },
+      {
+        "text": "Those whose C_s M is closest to 3R",
+        "why": "Those are the elements that fit the law best. It's the ones whose Θ_v isn't well below 298 K that should be left out."
+      },
+      {
+        "text": "Those with the largest specific heats",
+        "why": "A large C_s often just means a small M; lithium has a large C_s and still follows the law. Leave out elements whose Θ_v may not be well below 298 K."
+      }
+    ],
+    "explanation": "The method relies on the high-temperature limit, which room temperature reaches only when Θ_v ≪ 298 K. Elements that may not meet that condition, such as diamond, boron, silicon and beryllium, would pull the slope below 3R."
+  },
+  {
+    "id": "pc18-heat-capacity-copper-product",
+    "type": "numeric",
+    "prompt": "Copper has a specific heat capacity C_s = 0.385 J/(g·K) and a molar mass M = 63.55 g/mol. What is its molar heat capacity, C_s M, in J/(K·mol)? (Give it as a decimal.)",
+    "answer": 24.5,
+    "explanation": "C_s M = 0.385 × 63.55 = 24.5 J/(K·mol). That is within about 2% of 3R = 24.9 J/(K·mol), so copper obeys the Dulong-Petit law well."
+  },
+  {
+    "id": "pc18-heat-capacity-molar-mass",
+    "type": "numeric",
+    "prompt": "A metal has a specific heat capacity C_s = 0.125 J/(g·K). Using the Dulong-Petit law, C_s M ≈ 25 J/(K·mol), what is its estimated molar mass, in g/mol?",
+    "answer": 200,
+    "explanation": "M ≈ 25/C_s = 25/0.125 = 200 g/mol. This is how Dulong-Petit was used in the 1800s to establish atomic weights of metals."
+  },
+  {
+    "id": "pc18-heat-capacity-beryllium-percent",
+    "type": "numeric",
+    "prompt": "Beryllium has C_s M = 16.4 J/(K·mol) at room temperature. By what percentage does this fall below the Dulong-Petit value, 3R = 24.9 J/(K·mol)? (Give it as a decimal.)",
+    "answer": 34.1,
+    "explanation": "Percent difference = (24.9 − 16.4)/24.9 × 100 = 8.5/24.9 × 100 = 34.1%. Beryllium's very high characteristic temperature keeps it far below the 3R limit at room temperature."
+  },
+  {
+    "id": "pc18-heat-capacity-einstein-value",
+    "type": "numeric",
+    "prompt": "The Einstein solid has C_(V,m) = 3R × F, where the temperature-dependent factor F equals 0.921 at T = Θ_v. Using R = 8.314 J/(K·mol), what is C_(V,m) at T = Θ_v, in J/(K·mol)? (Give it as a decimal.)",
+    "answer": 22.97,
+    "explanation": "C_(V,m) = 3 × 8.314 × 0.921 = 22.97 J/(K·mol). Even at T = Θ_v the solid is about 92% of the way to its high-temperature limit of 3R = 24.94 J/(K·mol)."
+  },
+  {
+    "id": "pc18-heat-capacity-frequency-from-theta",
+    "type": "numeric",
+    "prompt": "A metal has Θ_v = 150 K. Rearranging Θ_v = hν/k gives ν = kΘ_v/h. With k = 1.381 × 10^−23 J/K and h = 6.626 × 10^−34 J·s, what is the vibrational frequency ν of its atoms, in s^−1? (Type it in scientific notation, like 2.5e12.)",
+    "answer": 3130000000000.0,
+    "explanation": "ν = (1.381 × 10^−23 × 150)/(6.626 × 10^−34) = (2.072 × 10^−21)/(6.626 × 10^−34) = 3.13 × 10^12 s^−1. Θ_v = 150 K is well below 298 K, so this metal is close to the Dulong-Petit value at room temperature."
+  },
+  {
+    "id": "pc18-heat-capacity-heat-needed",
+    "type": "numeric",
+    "prompt": "A 3.00 mol block of a metal obeys the Dulong-Petit law, with C_(V,m) = 25 J/(K·mol). Using q = nC_(V,m)ΔT, how much heat raises its temperature by 4.00 K, in J?",
+    "answer": 300,
+    "unit": "J",
+    "explanation": "q = 3.00 mol × 25 J/(K·mol) × 4.00 K = 300 J. Each mole needs about 25 J for every kelvin of temperature rise."
+  },
+  {
+    "id": "pc18-heat-capacity-r-from-slope",
+    "type": "numeric",
+    "prompt": "A plot of C_s against 1/M for metals that obey the Dulong-Petit law has a best-fit slope of 24.6 J/(K·mol). Since the slope should equal 3R, what value of R does this give, in J/(K·mol)? (Give it as a decimal.)",
+    "answer": 8.2,
+    "explanation": "R = slope/3 = 24.6/3 = 8.2 J/(K·mol). That is about 1.4% below the accepted 8.314 J/(K·mol)."
+  }
+]

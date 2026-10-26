@@ -1,0 +1,185 @@
+[
+  {
+    "id": "pc19-heat-capacity-path-cp-derivative",
+    "type": "multiple-choice",
+    "prompt": "How does the section relate the enthalpy H to the constant-pressure heat capacity C_P?",
+    "choices": [
+      {
+        "text": "C_P = ((∂H)/(∂T))_P",
+        "correct": true
+      },
+      {
+        "text": "C_P = ((∂U)/(∂T))_V",
+        "why": "The temperature derivative of U at constant volume is C_V. C_P is the temperature derivative of H at constant pressure."
+      },
+      {
+        "text": "C_P = ((∂H)/(∂P))_T",
+        "why": "That is how H changes with pressure. C_P is how H changes with temperature, at constant pressure."
+      },
+      {
+        "text": "C_P = ((∂T)/(∂H))_P",
+        "why": "That is the inverse, 1/C_P. C_P is the slope of H against T at constant pressure."
+      }
+    ],
+    "explanation": "C_P is the rate at which the enthalpy rises with temperature at constant pressure, ((∂H)/(∂T))_P. So H and C_P are related by differentiation, and H can be found from C_P by integration."
+  },
+  {
+    "id": "pc19-heat-capacity-path-find-h",
+    "type": "multiple-choice",
+    "prompt": "The section outlines a way to find the enthalpy H(T) from heat capacity data. What are its two steps?",
+    "choices": [
+      {
+        "text": "Measure C_P against T, then integrate it",
+        "correct": true
+      },
+      {
+        "text": "Measure H against T, then differentiate it",
+        "why": "Differentiating H gives C_P, not H. The section measures C_P as a function of T and integrates it to get H(T)."
+      },
+      {
+        "text": "Measure C_P at one T, then multiply by T",
+        "why": "C_P changes with temperature, so one value is not enough. C_P must be measured over a range of T and integrated."
+      },
+      {
+        "text": "Measure C_V against T, then integrate it",
+        "why": "H is linked to the constant-pressure heat capacity, C_P = ((∂H)/(∂T))_P. So it is C_P that is measured and integrated."
+      }
+    ],
+    "explanation": "Because C_P = ((∂H)/(∂T))_P, measuring C_P as a function of temperature and integrating it gives H(T). The section then lists the problems with doing this."
+  },
+  {
+    "id": "pc19-heat-capacity-path-reference-point",
+    "type": "multiple-choice",
+    "prompt": "The first problem the section lists with finding H by integrating C_P is the reference point. What is that problem about?",
+    "choices": [
+      {
+        "text": "Choosing the lower limit of the integral",
+        "correct": true
+      },
+      {
+        "text": "Measuring C_P accurately enough",
+        "why": "The reference-point problem is not about precision. It is about where the integration starts, so that one compound can be compared with another."
+      },
+      {
+        "text": "Choosing the units of the enthalpy",
+        "why": "Units are not the issue. The problem is the lower limit of integration, a starting point that lets compounds be compared."
+      },
+      {
+        "text": "Choosing the upper limit of the integral",
+        "why": "The upper limit is just the temperature of interest. The trouble is the lower limit, the reference point where the integration starts."
+      }
+    ],
+    "explanation": "Integrating C_P gives only the change in H from some starting temperature. Ideally the start would be zero kelvin, but it cannot be reached, so the question is how to compare one compound with another."
+  },
+  {
+    "id": "pc19-heat-capacity-path-melting-temperature",
+    "type": "multiple-choice",
+    "prompt": "Ice at its melting point is heated slowly at constant pressure. According to the section, what happens to its temperature while it melts?",
+    "choices": [
+      {
+        "text": "It holds steady until the ice is gone",
+        "correct": true
+      },
+      {
+        "text": "It rises steadily as heat is added",
+        "why": "While ice melts, the added heat goes into the heat of fusion, not into warming. The temperature rises only once all the ice is gone."
+      },
+      {
+        "text": "It drops until all the ice is gone",
+        "why": "Adding heat does not cool the ice. The temperature stays at the melting point while the heat of fusion is absorbed."
+      },
+      {
+        "text": "It rises, but more slowly than in water",
+        "why": "During melting the temperature does not rise at all. All the added heat goes into the heat of fusion until the ice is gone."
+      }
+    ],
+    "explanation": "The heat of fusion must be added until all the ice has melted before the temperature can go up again. During that time heat flows in at a fixed temperature."
+  },
+  {
+    "id": "pc19-heat-capacity-path-jump",
+    "type": "multiple-choice",
+    "prompt": "What happens to the enthalpy H of a substance at a phase transition, such as the melting of ice?",
+    "choices": [
+      {
+        "text": "It jumps suddenly",
+        "correct": true
+      },
+      {
+        "text": "It drops to zero",
+        "why": "H does not vanish when a solid melts. It jumps up by the heat of the transition, here the heat of fusion."
+      },
+      {
+        "text": "It stays the same",
+        "why": "Heat is absorbed at constant pressure during melting, so H rises. It jumps by the heat of fusion while T stays fixed."
+      },
+      {
+        "text": "It rises smoothly with T",
+        "why": "During melting T does not change, yet H rises by the heat of fusion. That is a sudden jump, not a smooth rise."
+      }
+    ],
+    "explanation": "At a phase transition the heat of transition is taken in with no change in temperature, so H jumps suddenly. These jumps are one of the problems with finding H by integrating C_P."
+  },
+  {
+    "id": "pc19-heat-capacity-path-infinite-cp",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is C_P at a jump in H, such as at the melting point of ice?",
+    "choices": [
+      {
+        "text": "It is infinite",
+        "correct": true
+      },
+      {
+        "text": "It is zero",
+        "why": "Heat goes in with no rise in temperature, so the slope (∂H)/(∂T) is not zero but infinite."
+      },
+      {
+        "text": "It equals the heat of fusion",
+        "why": "The heat of fusion is the size of the jump in H, not C_P. Because H rises with no change in T, C_P is infinite there."
+      },
+      {
+        "text": "It equals C_V",
+        "why": "The constant-volume heat capacity is not the point here. At the jump H rises with no change in T, so C_P = ((∂H)/(∂T))_P is infinite."
+      }
+    ],
+    "explanation": "C_P = ((∂H)/(∂T))_P is the slope of H against T. At a phase transition H rises while T stays fixed, so the slope, and with it C_P, is infinite."
+  },
+  {
+    "id": "pc19-heat-capacity-path-absolute",
+    "type": "multiple-choice",
+    "prompt": "What does the section stress about absolute enthalpies?",
+    "choices": [
+      {
+        "text": "There are no absolute enthalpies",
+        "correct": true
+      },
+      {
+        "text": "They come from integrating C_P from 0 K",
+        "why": "Zero kelvin cannot be reached, and integrating C_P gives only changes in H. The section stresses that there are no absolute enthalpies."
+      },
+      {
+        "text": "They are tabulated for each compound",
+        "why": "What can be measured and tabulated are enthalpy changes, such as heats of fusion. There are no absolute enthalpies."
+      },
+      {
+        "text": "They are always positive",
+        "why": "With no natural zero, H has no fixed sign. The section stresses that there are no absolute enthalpies, only changes in H."
+      }
+    ],
+    "explanation": "Integrating C_P gives only the change in H from a starting point, and there is no natural zero for H. So there are no absolute enthalpies, which is why a reference point is needed to compare compounds."
+  },
+  {
+    "id": "pc19-heat-capacity-path-slope",
+    "type": "numeric",
+    "prompt": "At constant pressure, a sample's enthalpy rises by 750 J when it is warmed by 20.0 K. Taking C_P as constant over this range, C_P = ((∂H)/(∂T))_P ≈ ΔH/ΔT. What is C_P, in J/K? (Give it as a decimal.)",
+    "answer": 37.5,
+    "explanation": "C_P ≈ ΔH/ΔT = 750 J/20.0 K = 37.5 J/K. C_P is the slope of H against T at constant pressure."
+  },
+  {
+    "id": "pc19-heat-capacity-path-melt-first",
+    "type": "numeric",
+    "prompt": "Ice at its melting point is heated at constant pressure, and all of it must melt before the temperature can rise. The heat of fusion of ice is 6.01 kJ/mol. How much heat must be added to melt 3.00 mol of ice, in kJ? (Give it as a decimal.)",
+    "answer": 18.03,
+    "unit": "kJ",
+    "explanation": "q = 3.00 mol × 6.01 kJ/mol = 18.03 kJ. All of this goes in at the melting point with no rise in temperature, which is the jump in H."
+  }
+]

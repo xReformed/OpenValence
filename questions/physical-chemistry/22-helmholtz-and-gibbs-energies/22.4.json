@@ -1,0 +1,137 @@
+[
+  {
+    "id": "pc22-h-pressure-dg-dp",
+    "type": "multiple-choice",
+    "prompt": "The section starts from relations for G. What is ((∂G)/(∂P))_T, the rate at which G changes with pressure at constant temperature?",
+    "choices": [
+      {
+        "text": "V",
+        "correct": true
+      },
+      {
+        "text": "−V",
+        "why": "From dG = V dP − S dT, the coefficient of dP is +V. G rises, not falls, as the pressure rises at constant temperature."
+      },
+      {
+        "text": "−S",
+        "why": "−S is ((∂G)/(∂T))_P, the change of G with temperature. With pressure, at constant T, the rate is V."
+      },
+      {
+        "text": "0",
+        "why": "It is the enthalpy of an ideal gas that doesn't depend on pressure, not G. G rises with pressure at the rate ((∂G)/(∂P))_T = V."
+      }
+    ],
+    "explanation": "From dG = V dP − S dT, ((∂G)/(∂P))_T = V. Since V is always positive, G rises when the pressure is raised at constant temperature."
+  },
+  {
+    "id": "pc22-h-pressure-t-factor",
+    "type": "multiple-choice",
+    "prompt": "Differentiating G = H − TS with respect to P at constant T gives ((∂G)/(∂P))_T = ((∂H)/(∂P))_T − T((∂S)/(∂P))_T. Why does T stay outside the derivative as a plain factor?",
+    "choices": [
+      {
+        "text": "T is held constant, so it acts like a number",
+        "correct": true
+      },
+      {
+        "text": "Temperature never changes in any real process",
+        "why": "Temperature can change; here it is simply held fixed. Because the derivative is taken at constant T, T comes out like a constant."
+      },
+      {
+        "text": "The product TS is itself a constant",
+        "why": "TS changes when S changes. Only T is fixed, so the derivative of TS is T times the derivative of S."
+      },
+      {
+        "text": "S does not depend on pressure",
+        "why": "S does depend on pressure, which is why the term T((∂S)/(∂P))_T is kept. It is T, held constant, that comes out as a plain factor."
+      }
+    ],
+    "explanation": "The subscript T means the temperature is held fixed while P changes. A constant factor comes straight out of a derivative, so the derivative of TS is just T((∂S)/(∂P))_T."
+  },
+  {
+    "id": "pc22-h-pressure-general-result",
+    "type": "multiple-choice",
+    "prompt": "Combining ((∂G)/(∂P))_T = V with the Maxwell relation from G, the section finds how H depends on pressure at constant temperature. What is ((∂H)/(∂P))_T for any substance?",
+    "choices": [
+      {
+        "text": "V − T((∂V)/(∂T))_P",
+        "correct": true
+      },
+      {
+        "text": "V + T((∂V)/(∂T))_P",
+        "why": "The sign is wrong. ((∂H)/(∂P))_T = V + T((∂S)/(∂P))_T, and ((∂S)/(∂P))_T = −((∂V)/(∂T))_P, which gives V − T((∂V)/(∂T))_P."
+      },
+      {
+        "text": "V",
+        "why": "V is ((∂G)/(∂P))_T, or ((∂H)/(∂P))_S at constant entropy. At constant temperature, H picks up an extra term, −T((∂V)/(∂T))_P."
+      },
+      {
+        "text": "0",
+        "why": "Zero is the result for an ideal gas only. For a substance in general, ((∂H)/(∂P))_T = V − T((∂V)/(∂T))_P, which need not vanish."
+      }
+    ],
+    "explanation": "Differentiating G = H − TS with respect to P at constant T gives V = ((∂H)/(∂P))_T − T((∂S)/(∂P))_T. Replacing ((∂S)/(∂P))_T with −((∂V)/(∂T))_P gives ((∂H)/(∂P))_T = V − T((∂V)/(∂T))_P, which contains only measurable quantities."
+  },
+  {
+    "id": "pc22-h-pressure-dvdt-number",
+    "type": "numeric",
+    "prompt": "Differentiating V = nRT/P at constant pressure gives ((∂V)/(∂T))_P = nR/P for an ideal gas. With R = 8.314 J/(mol·K), what is ((∂V)/(∂T))_P for 1.50 mol of ideal gas at P = 1.00 × 10^5 Pa, in m^3/K? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.000125,
+    "explanation": "nR = 1.50 mol × 8.314 J/(mol·K) = 12.47 J/K, and dividing by P = 1.00 × 10^5 Pa gives ((∂V)/(∂T))_P = 1.25 × 10^−4 m^3/K, since 1 J/Pa = 1 m^3. At this pressure the gas's volume grows by 0.125 L for each kelvin it is warmed."
+  },
+  {
+    "id": "pc22-h-pressure-zero-check",
+    "type": "numeric",
+    "prompt": "For an ideal gas, ((∂H)/(∂P))_T = V − T(nR/P). Take 0.500 mol at T = 400 K and P = 2.00 × 10^5 Pa, with V = nRT/P and R = 8.314 J/(mol·K). What is V − T(nR/P), in m^3?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "V = (0.500 × 8.314 × 400)/(2.00 × 10^5) m^3 = 8.31 × 10^−3 m^3, and T(nR/P) = 400 × (0.500 × 8.314)/(2.00 × 10^5) m^3 = 8.31 × 10^−3 m^3 as well. The difference is exactly 0, so this gas's enthalpy doesn't change with pressure at constant temperature."
+  },
+  {
+    "id": "pc22-h-pressure-ideal-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does ((∂H)/(∂P))_T = 0 tell you about an ideal gas?",
+    "choices": [
+      {
+        "text": "At fixed T, its enthalpy doesn't depend on pressure",
+        "correct": true
+      },
+      {
+        "text": "Its enthalpy is zero at every pressure",
+        "why": "A zero derivative means H doesn't change with P, not that H itself is zero. An ideal gas has the same enthalpy at any pressure, at a given temperature."
+      },
+      {
+        "text": "Its pressure cannot change at constant temperature",
+        "why": "The pressure of an ideal gas can change at constant T, for example when it is compressed. The result says that H stays the same when it does."
+      },
+      {
+        "text": "Its enthalpy does not change with temperature",
+        "why": "The enthalpy of an ideal gas does change with temperature, through C_P. It is pressure that has no effect on H when T is held constant."
+      }
+    ],
+    "explanation": "A zero partial derivative means that changing P at constant T leaves H unchanged. So at a given temperature, an ideal gas has the same enthalpy whatever its pressure."
+  },
+  {
+    "id": "pc22-h-pressure-why-ideal",
+    "type": "multiple-choice",
+    "prompt": "For a real gas, ((∂H)/(∂P))_T = V − T((∂V)/(∂T))_P is generally not zero. What makes the two terms cancel for an ideal gas?",
+    "choices": [
+      {
+        "text": "Its T((∂V)/(∂T))_P equals nRT/P, which is just V",
+        "correct": true
+      },
+      {
+        "text": "Only an ideal gas expands when it is heated",
+        "why": "Real gases expand on heating too. The cancellation needs ((∂V)/(∂T))_P = nR/P exactly, so that T((∂V)/(∂T))_P equals V = nRT/P."
+      },
+      {
+        "text": "For an ideal gas, ((∂G)/(∂P))_T is zero",
+        "why": "((∂G)/(∂P))_T = V holds for every substance and is not zero. The cancellation comes from T((∂V)/(∂T))_P = nRT/P = V."
+      },
+      {
+        "text": "An ideal gas's entropy doesn't change with pressure",
+        "why": "By the Maxwell relation from G, ((∂S)/(∂P))_T = −nR/P for an ideal gas, which is not zero. The two terms cancel because T((∂V)/(∂T))_P = T(nR/P) = V."
+      }
+    ],
+    "explanation": "For an ideal gas, ((∂V)/(∂T))_P = nR/P, so T((∂V)/(∂T))_P = nRT/P = V and the two terms cancel. A real gas's ((∂V)/(∂T))_P differs from nR/P, so its enthalpy generally does depend on pressure."
+  }
+]

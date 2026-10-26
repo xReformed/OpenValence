@@ -1,0 +1,442 @@
+[
+  {
+    "id": "pc18-symmetry-number-why-divide",
+    "type": "multiple-choice",
+    "prompt": "Why is the rotational partition function of a homonuclear diatomic molecule, such as N2, divided by a symmetry number σ?",
+    "choices": [
+      {
+        "text": "A 180° turn gives an indistinguishable configuration, so states are overcounted",
+        "correct": true
+      },
+      {
+        "text": "Its two identical atoms make every rotational level twice as degenerate",
+        "why": "Degeneracy is handled by the factor 2J + 1 inside the sum, not by σ. σ corrects for counting orientations that a 180° turn makes indistinguishable."
+      },
+      {
+        "text": "Its rotational levels lie twice as far apart as those of a heteronuclear molecule",
+        "why": "The level spacing is set by B̃, through the moment of inertia, not by whether the atoms are alike. σ corrects for overcounting identical configurations."
+      },
+      {
+        "text": "Only half of its molecules are rotating at any given moment",
+        "why": "All the molecules rotate; σ is not a fraction of molecules. It corrects the count of states for orientations that are indistinguishable."
+      }
+    ],
+    "explanation": "Rotating a homonuclear diatomic molecule by 180° brings it into a configuration indistinguishable from the original, which overcounts the accessible states. Dividing by σ = 2 corrects for this, giving q_rot = T/(σΘ_rot)."
+  },
+  {
+    "id": "pc18-symmetry-number-definition",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the symmetry number σ?",
+    "choices": [
+      {
+        "text": "The number of distinct rotations giving identical configurations",
+        "correct": true
+      },
+      {
+        "text": "The number of identical atoms that the molecule contains",
+        "why": "σ counts rotations, not atoms. It is the number of distinct ways rotations can bring the molecule into configurations identical to the original."
+      },
+      {
+        "text": "The number of axes about which the molecule can rotate",
+        "why": "A diatomic can rotate about two axes, yet σ = 1 for HCl. σ counts the distinct rotations that give identical configurations."
+      },
+      {
+        "text": "The number of states that share the energy of a rotational level",
+        "why": "That is the degeneracy, 2J + 1, which multiplies each Boltzmann factor. σ instead counts the rotations that give identical configurations."
+      }
+    ],
+    "explanation": "σ equals the distinct number of ways by which a molecule can be brought into identical configurations by rotations. For a homonuclear diatomic this is 2 (no turn, or a 180° turn); for a heteronuclear diatomic it is 1."
+  },
+  {
+    "id": "pc18-symmetry-number-rotation-angle",
+    "type": "multiple-choice",
+    "prompt": "Which rotation brings a homonuclear diatomic molecule such as O2 into a configuration indistinguishable from the original?",
+    "choices": [
+      {
+        "text": "A 180° turn about an axis perpendicular to the bond",
+        "correct": true
+      },
+      {
+        "text": "A 120° turn about an axis perpendicular to the bond",
+        "why": "After a 120° turn the bond no longer lies along its original line. A 180° turn is needed to put the two identical atoms back on that line."
+      },
+      {
+        "text": "A 90° turn about an axis perpendicular to the bond",
+        "why": "After a 90° turn the bond points in a new direction, so the configuration is different. Only a 180° turn swaps the identical atoms back onto the original line."
+      },
+      {
+        "text": "Only a complete 360° turn about any axis at all",
+        "why": "A full turn returns any molecule to its start, homonuclear or not. For O2 a 180° turn already gives an indistinguishable configuration, because it just swaps the identical atoms."
+      }
+    ],
+    "explanation": "Turning a homonuclear diatomic molecule by 180° about an axis through its center, perpendicular to the bond, swaps the two identical atoms. The result can't be told apart from the original, which is why σ = 2."
+  },
+  {
+    "id": "pc18-symmetry-number-which-sigma-two",
+    "type": "multiple-choice",
+    "prompt": "For which of these diatomic molecules does a 180° turn give an indistinguishable configuration, so that σ = 2?",
+    "choices": [
+      {
+        "text": "F2",
+        "correct": true
+      },
+      {
+        "text": "HF",
+        "why": "HF is heteronuclear: a 180° turn puts F where H was, which is a different configuration. So its σ is 1."
+      },
+      {
+        "text": "HBr",
+        "why": "HBr is heteronuclear, so a 180° turn gives a distinguishable configuration and σ = 1. Only a molecule with two identical atoms has σ = 2."
+      },
+      {
+        "text": "CO",
+        "why": "CO is made of two different atoms, so turning it by 180° swaps C and O and gives a new configuration. Its σ is 1."
+      }
+    ],
+    "explanation": "σ = 2 for a homonuclear diatomic, whose 180° rotation swaps two identical atoms. HF, HBr and CO are heteronuclear, so for them σ = 1."
+  },
+  {
+    "id": "pc18-symmetry-number-hcl-one",
+    "type": "multiple-choice",
+    "prompt": "Why is the symmetry number of HCl equal to 1?",
+    "choices": [
+      {
+        "text": "A 180° turn swaps H and Cl, which differ",
+        "correct": true
+      },
+      {
+        "text": "HCl's moment of inertia is far too small for σ to matter",
+        "why": "σ doesn't depend on the moment of inertia; it counts rotations that give identical configurations. For HCl only the trivial one, no turn at all, does."
+      },
+      {
+        "text": "HCl has only one rotational degree of freedom",
+        "why": "Like every diatomic, HCl can rotate about two axes perpendicular to its bond. σ = 1 because no turn short of a full one leaves it looking the same."
+      },
+      {
+        "text": "HCl contains only one hydrogen atom",
+        "why": "σ is not a count of hydrogen atoms; it counts rotations. A 180° turn swaps H and Cl, which differ, so only the trivial rotation gives an identical configuration."
+      }
+    ],
+    "explanation": "In HCl the two atoms differ, so a 180° rotation gives a distinguishable configuration, with H and Cl swapped. No states are overcounted, and q_rot = T/Θ_rot with σ = 1."
+  },
+  {
+    "id": "pc18-symmetry-number-hd",
+    "type": "multiple-choice",
+    "prompt": "The molecule HD is made of a hydrogen atom and a deuterium atom, two isotopes of the same element. What is its symmetry number?",
+    "choices": [
+      {
+        "text": "1, because a 180° turn swaps two different nuclei",
+        "correct": true
+      },
+      {
+        "text": "2, because both of its atoms are hydrogen",
+        "why": "H and D are the same element but have different masses, so swapping them gives a distinguishable configuration. HD therefore has σ = 1."
+      },
+      {
+        "text": "1/2, because its two atoms have different masses",
+        "why": "σ counts rotations that give identical configurations, so it is a whole number, at least 1. For HD only the trivial rotation does, so σ = 1."
+      },
+      {
+        "text": "2, because it is a diatomic molecule",
+        "why": "Being diatomic isn't enough: HCl is diatomic and has σ = 1. σ = 2 only when the two atoms are identical, which H and D are not."
+      }
+    ],
+    "explanation": "A 180° turn of HD puts the D nucleus where the H nucleus was. The two nuclei differ in mass, so the new configuration is distinguishable from the old one, and σ = 1, as for any heteronuclear diatomic."
+  },
+  {
+    "id": "pc18-symmetry-number-left-out",
+    "type": "multiple-choice",
+    "prompt": "A student computes q_rot for N2 from q_rot = T/Θ_rot, forgetting the symmetry number. How does the result compare with the correct value?",
+    "choices": [
+      {
+        "text": "It is twice the correct value",
+        "correct": true
+      },
+      {
+        "text": "It is half the correct value",
+        "why": "The correct formula divides by σ = 2, so leaving σ out makes the result larger, not smaller."
+      },
+      {
+        "text": "It is the same, since σ = 1 for N2",
+        "why": "N2 is homonuclear, so a 180° turn gives an identical configuration and σ = 2. Leaving σ out doubles q_rot."
+      },
+      {
+        "text": "It is too large by a factor of 2J + 1",
+        "why": "The 2J + 1 degeneracy is already inside the sum that gives T/Θ_rot. Leaving out σ = 2 makes q_rot twice too large."
+      }
+    ],
+    "explanation": "For N2, σ = 2, so the correct result is q_rot = T/(2Θ_rot). Forgetting σ counts each pair of indistinguishable configurations twice and gives twice the correct value."
+  },
+  {
+    "id": "pc18-symmetry-number-n2-vs-co",
+    "type": "multiple-choice",
+    "prompt": "N2 and CO have nearly the same rotational temperature: Θ_rot = 2.88 K and 2.78 K. At 300 K, how do their rotational partition functions compare?",
+    "choices": [
+      {
+        "text": "N2's is about half of CO's, because σ = 2 for N2",
+        "correct": true
+      },
+      {
+        "text": "They are nearly equal, because Θ_rot is nearly equal",
+        "why": "Θ_rot alone isn't enough: q_rot = T/(σΘ_rot), and N2 has σ = 2 while CO has σ = 1. So N2's q_rot is about half of CO's."
+      },
+      {
+        "text": "N2's is about twice CO's, because σ = 2 for N2",
+        "why": "σ divides q_rot, so the larger σ of N2 makes its q_rot smaller, about half of CO's."
+      },
+      {
+        "text": "They can't be compared without the bond lengths",
+        "why": "Θ_rot already contains the moment of inertia, and with it the bond length. With q_rot = T/(σΘ_rot), the given values and σ are all you need."
+      }
+    ],
+    "explanation": "q_rot = T/(σΘ_rot). With nearly equal Θ_rot, the difference comes from σ: 2 for homonuclear N2 and 1 for CO. At 300 K, q_rot is about 300/(2 × 2.88) ≈ 52 for N2 and 300/2.78 ≈ 108 for CO."
+  },
+  {
+    "id": "pc18-symmetry-number-sigma-temperature",
+    "type": "multiple-choice",
+    "prompt": "N2 gas is heated from 300 K to 600 K. What happens to its symmetry number σ?",
+    "choices": [
+      {
+        "text": "It stays 2, set by the molecule's symmetry",
+        "correct": true
+      },
+      {
+        "text": "It doubles, just as q_rot does",
+        "why": "q_rot doubles because it is proportional to T, but σ is fixed by the molecule's symmetry and stays 2."
+      },
+      {
+        "text": "It falls to 1 once many levels are populated",
+        "why": "σ doesn't depend on how many levels are populated. A 180° turn of N2 always gives an indistinguishable configuration, so σ = 2 at any temperature."
+      },
+      {
+        "text": "It becomes 4, because more orientations are occupied",
+        "why": "σ counts the rotations that give identical configurations, which is a property of the molecule's shape. For N2 it is 2 at every temperature."
+      }
+    ],
+    "explanation": "σ counts the distinct rotations that bring the molecule into identical configurations, so it depends only on the molecule's symmetry. Heating N2 changes q_rot = T/(σΘ_rot) only through T."
+  },
+  {
+    "id": "pc18-symmetry-number-degeneracy-vs-sigma",
+    "type": "multiple-choice",
+    "prompt": "For a homonuclear diatomic, the sum Σ(2J + 1)exp(−E_J/(kT)) is divided by σ. What do the factor 2J + 1 and the divisor σ each correct for?",
+    "choices": [
+      {
+        "text": "2J + 1 counts the states in each level; σ removes doubly counted orientations",
+        "correct": true
+      },
+      {
+        "text": "2J + 1 removes doubly counted orientations; σ counts the states in each level",
+        "why": "It's the other way round: 2J + 1 is the degeneracy of level J, and σ removes the overcounting of indistinguishable orientations."
+      },
+      {
+        "text": "Both of them count the states that share each rotational level",
+        "why": "Only 2J + 1 does that. σ corrects for orientations that a 180° turn makes indistinguishable."
+      },
+      {
+        "text": "Both of them correct for the vibrations of the molecule",
+        "why": "Neither concerns vibration, which has its own q_vib. 2J + 1 is the rotational degeneracy and σ the symmetry number."
+      }
+    ],
+    "explanation": "Each level J holds 2J + 1 eigenstates, so its Boltzmann factor is multiplied by 2J + 1. Dividing by σ = 2 then removes the overcounting caused by the 180° rotation that leaves a homonuclear molecule looking the same."
+  },
+  {
+    "id": "pc18-symmetry-number-theta-rot-meaning",
+    "type": "multiple-choice",
+    "prompt": "How does the section interpret the rotational temperature Θ_rot?",
+    "choices": [
+      {
+        "text": "The temperature where kT is about the rotational level spacing",
+        "correct": true
+      },
+      {
+        "text": "The temperature below which the molecule stops rotating entirely",
+        "why": "Molecules still rotate below Θ_rot, mostly in their lowest levels. Θ_rot estimates where kT becomes comparable to the rotational level spacing."
+      },
+      {
+        "text": "The temperature at which its bond first starts to vibrate",
+        "why": "That is closer to the role of Θ_vib, which is far higher. Θ_rot marks where kT becomes comparable to the spacing of rotational levels."
+      },
+      {
+        "text": "The temperature at which the molecule breaks into atoms",
+        "why": "Dissociation depends on the bond energy, not on Θ_rot. Θ_rot estimates where kT matches the spacing between rotational levels."
+      }
+    ],
+    "explanation": "Θ_rot = h^2/(8π^2 Ik) estimates the temperature at which thermal energy, about kT, is comparable to the spacing between rotational levels. At about this temperature the population of excited rotational levels becomes important."
+  },
+  {
+    "id": "pc18-symmetry-number-isotope",
+    "type": "multiple-choice",
+    "prompt": "The section's table of rotational temperatures says each value refers to the most common isotopic species. Why does the isotope matter?",
+    "choices": [
+      {
+        "text": "Isotopes change the masses, and so the moment of inertia",
+        "correct": true
+      },
+      {
+        "text": "Isotopes change the number of electrons in the molecule",
+        "why": "Isotopes of an element have the same number of protons and electrons and differ only in neutrons. The extra mass changes μ, and so I and Θ_rot."
+      },
+      {
+        "text": "Some isotopes are radioactive and decay during the measurement",
+        "why": "Radioactivity has nothing to do with Θ_rot. Θ_rot = h^2/(8π^2 Ik) depends on I = μr^2, and isotopes change the reduced mass μ."
+      },
+      {
+        "text": "Isotopes change the bond length by a large amount",
+        "why": "Isotopes have the same electrons and form nearly the same bonds. What they change is the mass, and so I = μr^2."
+      }
+    ],
+    "explanation": "Θ_rot = h^2/(8π^2 Ik) depends on the moment of inertia, I = μr^2. Different isotopes change the reduced mass μ, so, for example, deuterium, D_2, has a different Θ_rot from H2."
+  },
+  {
+    "id": "pc18-symmetry-number-rigid-rotor",
+    "type": "multiple-choice",
+    "prompt": "The section writes the moment of inertia of a diatomic as I = μr^2, assuming the rigid rotor approximation. What does this approximation assume?",
+    "choices": [
+      {
+        "text": "The bond length r does not change",
+        "correct": true
+      },
+      {
+        "text": "The two atoms have equal masses",
+        "why": "The masses enter through the reduced mass μ and may differ, as in HCl. The rigid rotor assumes only that r stays fixed as the molecule turns."
+      },
+      {
+        "text": "It rotates about one of its two atoms",
+        "why": "A diatomic rotates about its center of mass, which the reduced mass μ takes care of. The rigid-rotor assumption is a fixed bond length."
+      },
+      {
+        "text": "Its rotational levels are equally spaced",
+        "why": "Rigid-rotor levels, B̃J(J + 1), are not equally spaced; the gaps grow with J. The approximation assumes a fixed bond length r."
+      }
+    ],
+    "explanation": "A rigid rotor keeps its bond length r fixed, so I = μr^2 is a constant, where μ is the reduced mass. Its energy levels are then E_J = J(J + 1)h^2/(8π^2 I)."
+  },
+  {
+    "id": "pc18-symmetry-number-o2-vs-no",
+    "type": "multiple-choice",
+    "prompt": "O2 has Θ_rot = 2.08 K and NO has Θ_rot = 2.45 K. Using q_rot = T/(σΘ_rot), which has the larger rotational partition function at the same temperature?",
+    "choices": [
+      {
+        "text": "NO, since O2's σ = 2 outweighs its smaller Θ_rot",
+        "correct": true
+      },
+      {
+        "text": "O2, because its Θ_rot is smaller",
+        "why": "A smaller Θ_rot does raise q_rot, but O2 is homonuclear, so σ = 2 halves it. σΘ_rot is 4.16 K for O2 and 2.45 K for NO, so NO's q_rot is larger."
+      },
+      {
+        "text": "They are equal, since both molecules are diatomic",
+        "why": "Being diatomic doesn't fix q_rot: it depends on σ and Θ_rot. σΘ_rot is 4.16 K for O2 and 2.45 K for NO, so NO's q_rot is larger."
+      },
+      {
+        "text": "O2, because σ = 2 doubles its q_rot",
+        "why": "σ divides q_rot, so σ = 2 halves O2's value. With σΘ_rot = 4.16 K against 2.45 K for NO, NO has the larger q_rot."
+      }
+    ],
+    "explanation": "Compare the denominators σΘ_rot: 2 × 2.08 K = 4.16 K for O2 and 1 × 2.45 K = 2.45 K for NO. The smaller denominator gives the larger q_rot, so NO's is about 1.7 times O2's."
+  },
+  {
+    "id": "pc18-symmetry-number-hc-factor",
+    "type": "multiple-choice",
+    "prompt": "In q_rot = kT/(hcB̃σ), the rotational constant B̃ is in cm^−1. Why does the denominator contain hc?",
+    "choices": [
+      {
+        "text": "hcB̃ turns the wavenumber B̃ into an energy, like kT",
+        "correct": true
+      },
+      {
+        "text": "hc is the symmetry number of a homonuclear molecule",
+        "why": "The symmetry number is σ, which is 1 or 2 for a diatomic. hc multiplies B̃ to turn a wavenumber into an energy."
+      },
+      {
+        "text": "It corrects for the degeneracy of each rotational level",
+        "why": "The degeneracy 2J + 1 was used up in doing the integral. hc is there so that hcB̃ is an energy that can be compared with kT."
+      },
+      {
+        "text": "It gives q_rot the units of an energy",
+        "why": "q_rot is a pure number, with no units. hcB̃ is an energy, so it cancels the units of kT."
+      }
+    ],
+    "explanation": "B̃ is a wavenumber, so hcB̃ is the corresponding energy, and kT/(hcB̃σ) is a pure number. Equivalently, kT/(hc) is kT in cm^−1: 208.5 cm^−1 at 300 K."
+  },
+  {
+    "id": "pc18-symmetry-number-double-t",
+    "type": "multiple-choice",
+    "prompt": "According to q_rot = T/(σΘ_rot), what happens to the rotational partition function of a diatomic gas when its temperature doubles?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It is halved",
+        "why": "T is in the numerator, so q_rot grows with temperature."
+      },
+      {
+        "text": "It stays the same, since Θ_rot is fixed",
+        "why": "Θ_rot and σ are fixed for the molecule, but T is not. q_rot is proportional to T, so it doubles."
+      },
+      {
+        "text": "It grows four times",
+        "why": "q_rot is proportional to T, not T^2."
+      }
+    ],
+    "explanation": "q_rot = T/(σΘ_rot) is proportional to T. At a higher temperature more rotational levels become accessible, so the partition function grows in step with T."
+  },
+  {
+    "id": "pc18-symmetry-number-h2-rough",
+    "type": "multiple-choice",
+    "prompt": "From q_rot = T/(σΘ_rot), H2 (Θ_rot = 87.6 K) has q_rot ≈ 1.7 at 300 K. Why is this formula only a rough estimate for H2 at this temperature?",
+    "choices": [
+      {
+        "text": "T is only about 3.4 times Θ_rot, not much larger",
+        "correct": true
+      },
+      {
+        "text": "H2 is homonuclear, so σ can't be used for it",
+        "why": "σ = 2 is right for H2. The problem is that the formula assumes T ≫ Θ_rot, and at 300 K, T is only about 3.4Θ_rot."
+      },
+      {
+        "text": "Many H2 molecules are vibrationally excited at 300 K",
+        "why": "H2's vibrations are hardly excited at 300 K. The issue is that the integral needs T ≫ Θ_rot, but T/Θ_rot is only about 3.4."
+      },
+      {
+        "text": "Its rotational levels lie too close together",
+        "why": "It's the opposite: H2 has the largest Θ_rot in the table, so its levels are widely spaced. Few terms contribute, and the integral is a poor stand-in for the sum."
+      }
+    ],
+    "explanation": "The integral replaces a sum over many closely spaced levels, which needs T ≫ Θ_rot. For H2 at 300 K only the first few rotational states are accessible, so the formula is rough; a direct sum gives about 1.89."
+  },
+  {
+    "id": "pc18-symmetry-number-hbr-qrot",
+    "type": "numeric",
+    "prompt": "For a diatomic gas at high temperature, q_rot = T/(σΘ_rot). HBr has Θ_rot = 12.2 K. What is q_rot for HBr at 244 K?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "HBr is heteronuclear, so σ = 1. Then q_rot = 244/(1 × 12.2) = 20; the kelvins cancel, so q_rot is a pure number."
+  },
+  {
+    "id": "pc18-symmetry-number-o2-wavenumber",
+    "type": "numeric",
+    "prompt": "The rotational partition function is q_rot = kT/(hcB̃σ). For O2, B̃ = 1.446 cm^−1, and at 300 K, kT/(hc) = 208.5 cm^−1. What is q_rot for O2 at 300 K? (Give it as a decimal.)",
+    "answer": 72.1,
+    "explanation": "O2 is homonuclear, so σ = 2: q_rot = (208.5 cm^−1)/(2 × 1.446 cm^−1) = 208.5/2.892 = 72.1. The units cancel, so q_rot is a pure number."
+  },
+  {
+    "id": "pc18-symmetry-number-n2-temperature",
+    "type": "numeric",
+    "prompt": "For N2, Θ_rot = 2.88 K, and q_rot = T/(σΘ_rot). At what temperature, in K, is q_rot of N2 equal to 100?",
+    "answer": 576,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "Rearranging, T = q_rot × σ × Θ_rot = 100 × 2 × 2.88 K = 576 K. N2 is homonuclear, so σ = 2."
+  },
+  {
+    "id": "pc18-symmetry-number-j0-term",
+    "type": "numeric",
+    "prompt": "In q_rot = Σ(2J + 1)exp(−E_J/(kT)), the rotational energy E_J is proportional to J(J + 1). What is the J = 0 term of the sum?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "For J = 0, 2J + 1 = 1 and E_0 = 0, so the term is 1 × exp(0) = 1. The ground rotational level always contributes exactly 1 to the sum."
+  }
+]

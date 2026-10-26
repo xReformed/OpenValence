@@ -1,0 +1,582 @@
+[
+  {
+    "id": "pc17-distribution-wn-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section writes the probability of an N-particle system as p_N = W_N p_i. What is W_N?",
+    "choices": [
+      {
+        "text": "The number of ways to arrange the N particles",
+        "correct": true
+      },
+      {
+        "text": "The probability of each of the separate arrangements",
+        "why": "That is p_i. W_N counts the arrangements, and multiplying by p_i gives the total probability."
+      },
+      {
+        "text": "The total work done on the N particles",
+        "why": "W here is not work. W_N is the total number of different possible arrangements of the N particles."
+      },
+      {
+        "text": "The energy of each separate arrangement",
+        "why": "No energy appears in p_N = W_N p_i. W_N is a count: the number of different possible arrangements of the particles."
+      }
+    ],
+    "explanation": "W_N is the total number of different possible arrangements of the N particles, and p_i is the probability of each separate arrangement. All these arrangements give the same thermodynamic state, so its probability is W_N p_i."
+  },
+  {
+    "id": "pc17-distribution-one-arrangement",
+    "type": "multiple-choice",
+    "prompt": "Why is the probability of a system's state the sum of the probabilities of its separate arrangements?",
+    "choices": [
+      {
+        "text": "Only one arrangement can occur at a time",
+        "correct": true
+      },
+      {
+        "text": "All the arrangements occur at once",
+        "why": "The arrangements are alternatives: only one can occur at a time. That is why their probabilities add."
+      },
+      {
+        "text": "Each arrangement has a probability equal to 1",
+        "why": "Each arrangement has a small probability p_i. Because only one can occur at a time, the state's probability is their sum, W_N p_i."
+      },
+      {
+        "text": "The particles never change arrangement",
+        "why": "The particles keep moving from one arrangement to another. At any one time, though, only one arrangement occurs, so the probabilities add."
+      }
+    ],
+    "explanation": "Many arrangements of the particles give the same thermodynamic state, but only one arrangement can occur at a time. So the probability of the state is the sum of the probabilities of its arrangements, W_N p_i when each has probability p_i."
+  },
+  {
+    "id": "pc17-distribution-system-probability",
+    "type": "numeric",
+    "prompt": "A thermodynamic state of a small system can be realized by W_N = 6 different arrangements, each with probability p_i = 0.040. Using p_N = W_N p_i, what is the probability p_N of the state? (Give it as a decimal.)",
+    "answer": 0.24,
+    "explanation": "p_N = W_N p_i = 6 × 0.040 = 0.24. The state is six times as likely as any one of its arrangements, because any of the six produces it."
+  },
+  {
+    "id": "pc17-distribution-canonical-fixed",
+    "type": "multiple-choice",
+    "prompt": "Which three quantities are held fixed in the canonical ensemble?",
+    "choices": [
+      {
+        "text": "N, V and T",
+        "correct": true
+      },
+      {
+        "text": "N, V and E",
+        "why": "Holding the energy fixed describes a different ensemble. The canonical ensemble fixes the temperature, by keeping the whole collection in thermal equilibrium."
+      },
+      {
+        "text": "P, V and T",
+        "why": "The pressure is not one of the fixed variables; the number of particles is. The canonical ensemble fixes N, V and T."
+      },
+      {
+        "text": "N, P and T",
+        "why": "The volume, not the pressure, is fixed in the canonical ensemble. It fixes N, V and T."
+      }
+    ],
+    "explanation": "The canonical ensemble, the most practical one, has N, V and T fixed. It can be pictured as a collection of boxes with equal volumes and numbers of particles, the whole collection kept in thermal equilibrium."
+  },
+  {
+    "id": "pc17-distribution-pj-falls-off",
+    "type": "multiple-choice",
+    "prompt": "In the canonical ensemble, how does the probability p_j that the system is in state j depend on the energy E_j of that state?",
+    "choices": [
+      {
+        "text": "It falls off as exp(−E_j/(kT))",
+        "correct": true
+      },
+      {
+        "text": "It rises as exp(+E_j/(kT))",
+        "why": "A rising probability would favor the highest-energy states. The probability falls off exponentially as the energy increases."
+      },
+      {
+        "text": "It falls off as 1/E_j",
+        "why": "The fall-off is exponential, not an inverse power: p_j is proportional to exp(−E_j/(kT))."
+      },
+      {
+        "text": "It is the same for every state",
+        "why": "Equal probabilities would ignore the energies. Based on the Boltzmann factor, p_j falls off exponentially with E_j."
+      }
+    ],
+    "explanation": "Based on the Boltzmann factor, the probability p_j falls off exponentially with the energy of state j, as exp(−E_j/(kT)). Higher-energy states are less likely, and kT sets how quickly the probability drops."
+  },
+  {
+    "id": "pc17-distribution-partition-uses",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what can the partition function be used to calculate?",
+    "choices": [
+      {
+        "text": "Probabilities, energy, heat capacity, pressure",
+        "correct": true
+      },
+      {
+        "text": "Only the energy of a molecule's lowest state",
+        "why": "The partition function sums over all the states, not just the lowest. From it come probabilities and properties such as energy, heat capacity and pressure."
+      },
+      {
+        "text": "The bond lengths and bond angles of each molecule",
+        "why": "Molecular geometry comes from quantum chemistry. The partition function gives probabilities and thermodynamic properties such as energy, heat capacity and pressure."
+      },
+      {
+        "text": "The exact trajectory of every particle",
+        "why": "The partition function is built from Boltzmann factors, not trajectories. It gives probabilities and averages such as energy, heat capacity and pressure."
+      }
+    ],
+    "explanation": "The partition function plays a very important role in calculating the properties of a system: the probability of each state, as well as the energy, heat capacity and pressure. Later sections derive each of these from it."
+  },
+  {
+    "id": "pc17-distribution-aj-meaning",
+    "type": "multiple-choice",
+    "prompt": "In an ensemble of A systems, what does a_j stand for?",
+    "choices": [
+      {
+        "text": "The number of systems in quantum state j",
+        "correct": true
+      },
+      {
+        "text": "The energy of quantum state j",
+        "why": "The energy of state j is written ε_j. a_j counts how many of the A systems are in state j."
+      },
+      {
+        "text": "The probability of quantum state j",
+        "why": "The probability is P_j = ⟨a_j⟩/A. a_j itself is a number of systems, not a fraction."
+      },
+      {
+        "text": "The number of particles in each of the systems",
+        "why": "That is N, the same for every system. a_j counts the systems in the ensemble that are in quantum state j."
+      }
+    ],
+    "explanation": "a_j is the number of systems in the ensemble that are in quantum state j; for example, a_1 is the number in state 1. Together the a_j add up to A, the total number of systems."
+  },
+  {
+    "id": "pc17-distribution-w-meaning",
+    "type": "multiple-choice",
+    "prompt": "For an ensemble of A systems, the section writes W(a_1, a_2, …) = (A!)/(a_1! a_2! …). What does W count?",
+    "choices": [
+      {
+        "text": "The microstates that give this distribution",
+        "correct": true
+      },
+      {
+        "text": "The total energy of the ensemble",
+        "why": "Energy enters through the constraint E_total = Σ_j a_j ε_j. W counts the ways of arranging the systems to give the numbers a_1, a_2 and so on."
+      },
+      {
+        "text": "The quantum states of a single system",
+        "why": "W counts arrangements of the A systems over the states, not the states themselves."
+      },
+      {
+        "text": "The probability that quantum state j is occupied",
+        "why": "W is a count, often a huge number, not a probability. The probability P_j comes from averaging a_j/A."
+      }
+    ],
+    "explanation": "W(a_1, a_2, …) is the number of microstates: the number of ways of assigning the A systems to quantum states so that a_1 are in state 1, a_2 in state 2, and so on. Distributions with larger W are more likely."
+  },
+  {
+    "id": "pc17-distribution-w-count",
+    "type": "numeric",
+    "prompt": "An ensemble of A = 4 systems has 2 systems in state 1, 1 in state 2 and 1 in state 3. Using W = (A!)/(a_1! a_2! a_3!), how many microstates give this distribution?",
+    "answer": 12,
+    "tolerance": 0,
+    "explanation": "W = (4!)/(2! × 1! × 1!) = 24/2 = 12. Swapping the two systems in state 1 doesn't make a new microstate, which is why 2! divides 4!."
+  },
+  {
+    "id": "pc17-distribution-angle-brackets",
+    "type": "multiple-choice",
+    "prompt": "The probability that a system is in quantum state j is P_j = ⟨a_j⟩/A. What do the angle brackets around a_j mean?",
+    "choices": [
+      {
+        "text": "An average over the ensemble",
+        "correct": true
+      },
+      {
+        "text": "The largest possible value",
+        "why": "⟨a_j⟩ is not a maximum. It is a_j averaged over all the allowed distributions."
+      },
+      {
+        "text": "A quantum-mechanical integral",
+        "why": "Angle brackets often mean an integral in quantum mechanics, but here they mark an ensemble average of a_j."
+      },
+      {
+        "text": "The absolute value",
+        "why": "Absolute value is written with vertical bars. The angle brackets indicate an ensemble average."
+      }
+    ],
+    "explanation": "The angle brackets indicate an ensemble average: ⟨a_j⟩ is a_j averaged over all the allowed distributions, each weighted by its W. Dividing by A turns this average count into a probability."
+  },
+  {
+    "id": "pc17-distribution-most-probable",
+    "type": "multiple-choice",
+    "prompt": "Why can the average distribution be replaced by the most probable distribution?",
+    "choices": [
+      {
+        "text": "With so many particles, fluctuations are tiny",
+        "correct": true
+      },
+      {
+        "text": "Only the most probable distribution can occur",
+        "why": "Other distributions can occur, but they have far fewer microstates. With so many particles, fluctuations from the mean are immeasurably small."
+      },
+      {
+        "text": "Every distribution has the same probability",
+        "why": "Distributions differ hugely in their numbers of microstates W. The most probable one dominates so strongly that it matches the average."
+      },
+      {
+        "text": "The average is zero for any large system",
+        "why": "The average occupation ⟨a_j⟩ isn't zero. It equals the most probable a_j because fluctuations about the mean are extremely small."
+      }
+    ],
+    "explanation": "A typical system has so many particles that the fluctuations from the mean are extremely, immeasurably small. So P_j = ⟨a_j⟩/A can be taken as a_j/A for the most probable distribution."
+  },
+  {
+    "id": "pc17-distribution-energy-constraint",
+    "type": "multiple-choice",
+    "prompt": "While finding the most probable distribution, the section imposes E_total = Σ_j a_j ε_j, where ε_j is the energy of state j. What does this constraint express?",
+    "choices": [
+      {
+        "text": "Conservation of energy",
+        "correct": true
+      },
+      {
+        "text": "Conservation of mass",
+        "why": "That is the other constraint, A = Σ_j a_j, which fixes the total number of systems. The sum of a_j ε_j is the total energy."
+      },
+      {
+        "text": "Conservation of momentum",
+        "why": "Momentum doesn't appear in the derivation. The sum of a_j ε_j over the states is the total energy, which is held fixed."
+      },
+      {
+        "text": "The definition of temperature",
+        "why": "Temperature enters later, through β = 1/(kT). This constraint keeps the total energy of the ensemble fixed."
+      }
+    ],
+    "explanation": "Conservation of energy requires the energies of all the systems to add up to a fixed total, E_total = Σ_j a_j ε_j. The second constraint, A = Σ_j a_j, keeps the number of systems fixed."
+  },
+  {
+    "id": "pc17-distribution-maximize-w",
+    "type": "multiple-choice",
+    "prompt": "Out of all the distributions of the a_j that obey the constraints, which one does the system tend toward?",
+    "choices": [
+      {
+        "text": "The one with the most microstates, W",
+        "correct": true
+      },
+      {
+        "text": "The one with every system in the lowest state",
+        "why": "That arrangement has only one microstate, and it generally breaks the fixed total energy. The system tends toward the distribution with the largest W."
+      },
+      {
+        "text": "The one with the highest total energy",
+        "why": "The total energy is fixed by a constraint, so it is the same for every allowed distribution. Among them, the system tends toward the one with the largest W."
+      },
+      {
+        "text": "The one with the same a_j for every state",
+        "why": "Equal a_j would usually break the fixed total energy. The system tends toward the allowed distribution with the largest W."
+      }
+    ],
+    "explanation": "The system tends toward the distribution of a_j that maximizes the total number of microstates W, subject to a fixed energy and a fixed number of systems. Finding this maximum leads to the Boltzmann distribution."
+  },
+  {
+    "id": "pc17-distribution-lagrange",
+    "type": "multiple-choice",
+    "prompt": "What is the method of Lagrange multipliers used for in the derivation of the Boltzmann distribution?",
+    "choices": [
+      {
+        "text": "Maximizing ln W while obeying the constraints",
+        "correct": true
+      },
+      {
+        "text": "Evaluating the factorials in W exactly",
+        "why": "The factorials are handled with Stirling's approximation. Lagrange multipliers deal with finding a maximum under equality constraints."
+      },
+      {
+        "text": "Integrating Newton's equations of motion",
+        "why": "No equations of motion are solved here. Lagrange multipliers find the maximum of ln W with the energy and number of systems held fixed."
+      },
+      {
+        "text": "Counting all of the quantum states of a molecule",
+        "why": "The states are given. Lagrange multipliers are a strategy for finding the maximum of a function subject to equality constraints."
+      }
+    ],
+    "explanation": "The method of Lagrange multipliers is a strategy for finding the maxima and minima of a function subject to equality constraints. Here it maximizes ln W while the total energy and the number of systems stay fixed."
+  },
+  {
+    "id": "pc17-distribution-stirling-why",
+    "type": "multiple-choice",
+    "prompt": "Why does the derivation use Stirling's approximation, ln x! ≈ x ln x − x?",
+    "choices": [
+      {
+        "text": "It makes ln x! easy to handle for large x",
+        "correct": true
+      },
+      {
+        "text": "It gives ln x! exactly for small x",
+        "why": "Stirling's formula is an approximation that works for large x. Its job here is to turn ln a_j! into terms that are easy to differentiate."
+      },
+      {
+        "text": "It removes the energy constraint",
+        "why": "The constraints are handled with Lagrange multipliers. Stirling's approximation replaces the factorials in ln W with x ln x − x."
+      },
+      {
+        "text": "It converts all the probabilities into energies",
+        "why": "No such conversion happens. Stirling's approximation turns ln A! and ln a_j! into x ln x − x, which is simple to differentiate."
+      }
+    ],
+    "explanation": "ln W = ln A! − Σ_j ln a_j! contains factorials of huge numbers. Stirling's approximation, ln x! ≈ x ln x − x, turns them into simple functions whose derivatives with respect to a_j are easy to take."
+  },
+  {
+    "id": "pc17-distribution-stirling-100",
+    "type": "numeric",
+    "prompt": "Stirling's approximation is ln x! ≈ x ln x − x. Using ln 100 = 4.605, what does it give for ln(100!)? (Give it as a decimal.)",
+    "answer": 360.5,
+    "tolerance": 0.005,
+    "explanation": "ln(100!) ≈ 100 × 4.605 − 100 = 460.5 − 100 = 360.5. The exact value is 363.7, so the approximation is already within 1% at x = 100, and it improves as x grows."
+  },
+  {
+    "id": "pc17-distribution-alpha",
+    "type": "multiple-choice",
+    "prompt": "The most probable distribution comes out as a_j/A = e^(α) exp(−βε_j). How is the multiplier α then fixed?",
+    "choices": [
+      {
+        "text": "By making the fractions a_j/A add up to 1",
+        "correct": true
+      },
+      {
+        "text": "By setting α equal to 1/(kT)",
+        "why": "That identification belongs to β, the multiplier for the energy constraint. α is fixed by requiring the fractions a_j/A to sum to 1."
+      },
+      {
+        "text": "By measuring the heat capacity of the system",
+        "why": "No measurement is needed. Since the fractions a_j/A must sum to 1, e^(α) is fixed by the sum of the Boltzmann factors."
+      },
+      {
+        "text": "By setting α equal to zero",
+        "why": "α is not zero in general. It is chosen so that the fractions a_j/A add up to 1."
+      }
+    ],
+    "explanation": "Summed over all states, the fractions a_j/A must equal 1, so e^(α) Σ_j exp(−βε_j) = 1. This fixes α and gives the Boltzmann distribution, P_j = (exp(−βε_j))/(Σ_j exp(−βε_j))."
+  },
+  {
+    "id": "pc17-distribution-beta-role",
+    "type": "multiple-choice",
+    "prompt": "In the derivation of the Boltzmann distribution, what is β?",
+    "choices": [
+      {
+        "text": "A Lagrange multiplier, later shown to be 1/(kT)",
+        "correct": true
+      },
+      {
+        "text": "The constant that makes the probabilities sum to 1",
+        "why": "That is the job of α. β multiplies the energies ε_j and is identified as 1/(kT)."
+      },
+      {
+        "text": "The number of systems in the ensemble",
+        "why": "That is A. β is the multiplier attached to the energy constraint, identified as 1/(kT)."
+      },
+      {
+        "text": "The Boltzmann constant k itself",
+        "why": "β contains k but is not k: β = 1/(kT), which has units of 1/energy."
+      }
+    ],
+    "explanation": "β enters as the undetermined multiplier for the energy constraint, and α for the constraint on the number of systems. Normalization fixes α, and β is identified as 1/(kT), which is how temperature enters the Boltzmann distribution."
+  },
+  {
+    "id": "pc17-distribution-what-it-represents",
+    "type": "multiple-choice",
+    "prompt": "What does the Boltzmann distribution represent?",
+    "choices": [
+      {
+        "text": "The most probable distribution at thermal equilibrium",
+        "correct": true
+      },
+      {
+        "text": "A distribution with every state equally populated",
+        "why": "In the Boltzmann distribution, lower-energy states are more populated than higher ones. It is the most probable distribution of a thermally equilibrated system."
+      },
+      {
+        "text": "A distribution with all molecules in the ground state",
+        "why": "Above absolute zero, higher states always have some population. The Boltzmann distribution spreads the molecules over all levels, weighted by their Boltzmann factors."
+      },
+      {
+        "text": "The distribution just after a system is heated",
+        "why": "Right after heating, a system may not yet have equilibrated. The Boltzmann distribution is the most probable distribution once thermal equilibrium is reached."
+      }
+    ],
+    "explanation": "The Boltzmann distribution represents a thermally equilibrated, most probable distribution over all energy levels. In it, the population of each state is proportional to its Boltzmann factor, exp(−βε_j)."
+  },
+  {
+    "id": "pc17-distribution-raise-temperature",
+    "type": "multiple-choice",
+    "prompt": "How does the Boltzmann distribution over a molecule's energy levels change as the temperature is raised?",
+    "choices": [
+      {
+        "text": "More of the higher levels become populated",
+        "correct": true
+      },
+      {
+        "text": "All molecules move into the highest level",
+        "why": "Even at high T, a higher level holds fewer molecules than a lower one. The population just spreads over more of the higher levels."
+      },
+      {
+        "text": "Molecules collect in the lowest level",
+        "why": "That happens as T is lowered. Raising T spreads the molecules into higher levels."
+      },
+      {
+        "text": "The levels themselves move to higher energy",
+        "why": "Temperature doesn't move the energy levels. It changes how the molecules are distributed over them."
+      }
+    ],
+    "explanation": "At lower temperatures the lower energy states are more greatly populated. At higher temperatures more of the higher energy states are populated, but each holds a smaller share, so the distribution spreads out."
+  },
+  {
+    "id": "pc17-distribution-zero-kelvin",
+    "type": "multiple-choice",
+    "prompt": "In the limit of absolute zero, how would the molecules of a system be distributed over their energy states?",
+    "choices": [
+      {
+        "text": "All of them in the lowest state",
+        "correct": true
+      },
+      {
+        "text": "Spread evenly over all the states",
+        "why": "Spreading into higher states happens as the temperature rises. As T approaches 0 K, the Boltzmann factor of every state above the lowest goes to zero."
+      },
+      {
+        "text": "All of them in the highest state",
+        "why": "The highest state is the least populated at any temperature. At absolute zero every molecule is in the lowest state."
+      },
+      {
+        "text": "Half in the lowest, half in the next",
+        "why": "As T approaches 0 K, the Boltzmann factor of the next state up goes to zero, so that state ends up empty."
+      }
+    ],
+    "explanation": "At absolute zero only the lowest energy state would be populated, because the Boltzmann factor of every higher state goes to zero. Absolute zero can be approached but not reached, so in practice every level has some population."
+  },
+  {
+    "id": "pc17-distribution-nonzero-upper",
+    "type": "multiple-choice",
+    "prompt": "A level lies 100 times kT above the ground state. At thermal equilibrium, at any temperature above absolute zero, what is its population?",
+    "choices": [
+      {
+        "text": "Extremely small, but not zero",
+        "correct": true
+      },
+      {
+        "text": "Exactly zero",
+        "why": "However large the spacing, an upper level has a non-zero probability of being populated above absolute zero. exp(−100) is tiny but not zero."
+      },
+      {
+        "text": "Equal to the ground-state population",
+        "why": "A level 100 times kT up has a Boltzmann factor of exp(−100) relative to the ground state, so it holds a vanishingly small share."
+      },
+      {
+        "text": "Larger than the ground-state population",
+        "why": "A state of lower energy always has the higher population. This level holds only a tiny fraction of the molecules."
+      }
+    ],
+    "explanation": "No matter how large the energy spacing, there is always a non-zero probability of the upper level being populated; here it is about exp(−100) relative to the ground state. The only exception would be a system at absolute zero, which can be approached but not reached."
+  },
+  {
+    "id": "pc17-distribution-molar-ratio",
+    "type": "numeric",
+    "prompt": "At 300 K, k_B T is about 2.5 kJ/mol. A molecule has a nondegenerate excited state 7.5 kJ/mol above its nondegenerate ground state. Using P_j ∝ exp(−ε_j/(k_B T)), what is the ratio of the excited-state population to the ground-state population at 300 K? (Give it as a decimal.)",
+    "answer": 0.0498,
+    "explanation": "ε/(k_B T) = (7.5 kJ/mol)/(2.5 kJ/mol) = 3, so the ratio is e^(−3) = 0.050. For every 20 molecules in the ground state, only about 1 is in the excited state."
+  },
+  {
+    "id": "pc17-distribution-kt-600k",
+    "type": "numeric",
+    "prompt": "The section quotes k_B T ≈ 2.5 kJ/mol at 300 K, an energy per mole of molecules. Since k_B T is proportional to T, about what is it at 600 K, in kJ/mol?",
+    "answer": 5,
+    "tolerance": 0.02,
+    "explanation": "Doubling T from 300 K to 600 K doubles k_B T: 2 × 2.5 kJ/mol = 5.0 kJ/mol. Per mole, k_B T is RT, and 8.314 J/(mol·K) × 600 K = 4.99 kJ/mol agrees."
+  },
+  {
+    "id": "pc17-distribution-q-definition",
+    "type": "multiple-choice",
+    "prompt": "How is the molecular partition function q defined?",
+    "choices": [
+      {
+        "text": "The sum of exp(−βε_j) over a molecule's states",
+        "correct": true
+      },
+      {
+        "text": "The product of exp(−βε_j) over a molecule's states",
+        "why": "The Boltzmann factors are added, not multiplied: q = Σ_j exp(−βε_j). Products appear only when molecules are combined into Q."
+      },
+      {
+        "text": "The number of energy levels the molecule has",
+        "why": "A plain count would ignore the temperature. Each state is weighted by its Boltzmann factor, so q = Σ_j exp(−βε_j)."
+      },
+      {
+        "text": "The sum of the energies ε_j of the states",
+        "why": "The energies appear only in exponents. q adds up the Boltzmann factors exp(−βε_j), one for each state."
+      }
+    ],
+    "explanation": "The sum of the Boltzmann factors over all states is called the molecular partition function, q = Σ_j exp(−βε_j). It is the denominator that turns each Boltzmann factor into a probability."
+  },
+  {
+    "id": "pc17-distribution-q-meaning",
+    "type": "multiple-choice",
+    "prompt": "What does the value of the molecular partition function q indicate?",
+    "choices": [
+      {
+        "text": "About how many states are thermally accessible",
+        "correct": true
+      },
+      {
+        "text": "The average energy of one molecule",
+        "why": "q is a pure number, not an energy. It indicates the average number of states thermally accessible to a molecule."
+      },
+      {
+        "text": "The total number of molecules in the whole system",
+        "why": "q belongs to a single molecule and doesn't count molecules. It indicates how many states a molecule can reach at the temperature."
+      },
+      {
+        "text": "The temperature of the system in kelvin",
+        "why": "Temperature enters q through β = 1/(kT), but q is not a temperature. It indicates the number of thermally accessible states."
+      }
+    ],
+    "explanation": "q gives an indication of the average number of states that are thermally accessible to a molecule at the temperature of the system. The larger q is, the more states the molecule can occupy."
+  },
+  {
+    "id": "pc17-distribution-q-three-states",
+    "type": "numeric",
+    "prompt": "The molecular partition function is q = Σ_j exp(−βε_j). A molecule has three states whose Boltzmann factors exp(−βε_j) at some temperature are 1, 0.50 and 0.30. What is q? (Give it as a decimal.)",
+    "answer": 1.8,
+    "explanation": "q = 1 + 0.50 + 0.30 = 1.80. The ground state, at zero energy, contributes 1 and each higher state adds its Boltzmann factor, so on average fewer than two states are thermally accessible."
+  },
+  {
+    "id": "pc17-distribution-ground-fraction",
+    "type": "numeric",
+    "prompt": "Take the ground state of a molecule as the zero of energy, so its Boltzmann factor is exp(0) = 1 and its probability is P_0 = 1/q. At some temperature the molecular partition function is q = 1.25. What fraction of the molecules is in the ground state? (Give it as a decimal.)",
+    "answer": 0.8,
+    "explanation": "P_0 = 1/q = 1/1.25 = 0.80, so 80% of the molecules are in the ground state and the other 20% are spread over the higher states. A q close to 1 means that few states besides the ground state are thermally accessible."
+  },
+  {
+    "id": "pc17-distribution-q-indices",
+    "type": "multiple-choice",
+    "prompt": "The section writes the system partition function as Q(N, V, T) = Σ exp(−β(ε_i + ε_j + ε_k + …)). What do the indices i, j, k label?",
+    "choices": [
+      {
+        "text": "The energy levels of different particles",
+        "correct": true
+      },
+      {
+        "text": "Three different systems within the ensemble",
+        "why": "Q belongs to one system. The indices run over the energy levels of the different particles within it."
+      },
+      {
+        "text": "The x, y and z directions of motion",
+        "why": "They are not directions. Each index runs over the energy levels of one particle of the system."
+      },
+      {
+        "text": "Three temperatures at which Q is found",
+        "why": "Q is evaluated at one temperature, through β = 1/(kT). The indices label the energy levels of different particles."
+      }
+    ],
+    "explanation": "In Q(N, V, T), the indices i, j, k, … run over the energy levels of the different particles, so Q sums over all the states accessible to the system. Because the exponential of a sum is a product of exponentials, this sum becomes the product q_i q_j q_k … of molecular partition functions."
+  }
+]
