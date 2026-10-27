@@ -1,0 +1,400 @@
+[
+  {
+    "id": "pc25-electrolyte-long-range",
+    "type": "multiple-choice",
+    "prompt": "Why does a solution of a strong electrolyte such as NaCl deviate seriously from ideal behavior even at very low concentrations?",
+    "choices": [
+      {
+        "text": "The ions' charges interact over long distances",
+        "correct": true
+      },
+      {
+        "text": "The ions react with the water to form new molecules",
+        "why": "The ions are hydrated, but no new compound forms. The problem is the electrostatic force between charges, which falls off only as r^−1."
+      },
+      {
+        "text": "The salt only partly dissociates when dilute",
+        "why": "A strong electrolyte such as NaCl dissociates fully into Na^+ and Cl^−. The deviation comes from the electrostatic forces between those ions, which reach far."
+      },
+      {
+        "text": "The ions are too large to mix ideally with water",
+        "why": "Ion size is not the issue the section raises. Charges interact through a force that falls off as r^−1, so even distant ions still feel each other."
+      }
+    ],
+    "explanation": "Charged solutes interact through a force that falls off as r^−1, compared with roughly r^−6 for neutral species. Because this interaction is so long-ranged, ions still feel each other when far apart, so the solution is far from ideal even when very dilute."
+  },
+  {
+    "id": "pc25-electrolyte-r6-factor",
+    "type": "numeric",
+    "prompt": "The section says the interaction between charges falls off with distance r as r^−1, while that between neutral species falls off roughly as r^−6. If the distance between two neutral molecules doubles, how many times weaker does an r^−6 interaction become?",
+    "answer": 64,
+    "tolerance": 0,
+    "explanation": "Doubling r multiplies r^−6 by 2^−6 = 1/64, so the interaction becomes 64 times weaker. An r^−1 interaction between ions only halves, which is why ions still feel each other far apart, even in dilute solution."
+  },
+  {
+    "id": "pc25-electrolyte-two-solutes",
+    "type": "multiple-choice",
+    "prompt": "Besides the electrostatic forces, what else makes a strong electrolyte such as NaCl harder to describe than a nonelectrolyte such as sucrose?",
+    "choices": [
+      {
+        "text": "It puts two solute species into solution",
+        "correct": true
+      },
+      {
+        "text": "It has a large vapor pressure of its own",
+        "why": "A salt's vapor pressure is negligible, as sucrose's is. The extra difficulty is that it dissociates into two species, Na^+ and Cl^−, so the stoichiometry of dissociation must be tracked."
+      },
+      {
+        "text": "It does not dissolve completely in water",
+        "why": "NaCl dissolves and dissociates fully in dilute solution. The difficulty is that it gives two charged solutes, whose amounts are set by the dissociation stoichiometry."
+      },
+      {
+        "text": "Its molar mass cannot be measured",
+        "why": "NaCl's molar mass is well known. The difficulty is that one formula unit gives two solute species, so dissociation and stoichiometry must be considered."
+      }
+    ],
+    "explanation": "NaCl produces two charged solutes, Na^+ and Cl^−, both in hydrated form. So the dissociation process and its stoichiometry must be considered, on top of the electrostatic interactions between the ions."
+  },
+  {
+    "id": "pc25-electrolyte-nu-meaning",
+    "type": "multiple-choice",
+    "prompt": "The section writes the dissolving of a salt as C_(ν+) A_(ν−) → ν_(+) C^(z+) + ν_(−) A^(z−). What do ν_(+) and ν_(−) stand for?",
+    "choices": [
+      {
+        "text": "How many of each ion one formula unit gives",
+        "correct": true
+      },
+      {
+        "text": "The formal charges of the two ions",
+        "why": "The charges are z_(+) and z_(−), written as superscripts. ν_(+) and ν_(−) are stoichiometric coefficients: how many of each ion one formula unit gives."
+      },
+      {
+        "text": "The molalities of the two ions",
+        "why": "The ion molalities are m_(+) = ν_(+) m and m_(−) = ν_(−) m, so they involve ν but are not ν. ν_(+) and ν_(−) count the ions per formula unit."
+      },
+      {
+        "text": "The activity coefficients of the two ions",
+        "why": "Those are γ_(+) and γ_(−). ν_(+) and ν_(−) are the stoichiometric coefficients of the dissociation."
+      }
+    ],
+    "explanation": "ν_(+) and ν_(−) are the stoichiometric coefficients of the dissociation, while z_(+) and z_(−) are the ions' formal charges. For Al2(SO4)3, for example, ν_(+) = 2 and ν_(−) = 3."
+  },
+  {
+    "id": "pc25-electrolyte-neutrality",
+    "type": "multiple-choice",
+    "prompt": "A dissolved salt gives ν_(+) cations of charge z_(+) and ν_(−) anions of charge z_(−), where z_(−) is negative. Which equation expresses that the solution is electrically neutral?",
+    "choices": [
+      {
+        "text": "ν_(+) z_(+) + ν_(−) z_(−) = 0",
+        "correct": true
+      },
+      {
+        "text": "ν_(+) z_(−) + ν_(−) z_(+) = 0",
+        "why": "This pairs each ion count with the other ion's charge. For Al2(SO4)3 it gives 2(−2) + 3(+3) = 5, not 0; each count goes with its own ion's charge."
+      },
+      {
+        "text": "ν_(+) z_(+) − ν_(−) z_(−) = 0",
+        "why": "With z_(−) negative, subtracting ν_(−) z_(−) adds the anions' charge to the cations' instead of cancelling it. For Al2(SO4)3 it gives 6 + 6 = 12, not 0."
+      },
+      {
+        "text": "z_(+) + z_(−) = 0",
+        "why": "That holds only when the two charges are equal and opposite, as in NaCl. For Al2(SO4)3, z_(+) = +3 and z_(−) = −2, and neutrality needs 2(+3) + 3(−2) = 0."
+      }
+    ],
+    "explanation": "The total positive charge, ν_(+) z_(+), must cancel the total negative charge, ν_(−) z_(−). For Al2(SO4)3, 2 × (+3) + 3 × (−2) = 0."
+  },
+  {
+    "id": "pc25-electrolyte-iron-charge",
+    "type": "numeric",
+    "prompt": "Fe2(SO4)3 dissolves to ν_(+) = 2 iron ions and ν_(−) = 3 sulfate ions, each sulfate with charge z_(−) = −2. Using the charge-neutrality condition ν_(+) z_(+) + ν_(−) z_(−) = 0, what is the charge number z_(+) of each iron ion?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "2z_(+) + 3(−2) = 0 gives 2z_(+) = 6, so z_(+) = +3: the iron is present as Fe^(3+). The six positive charges of two Fe^(3+) ions balance the six negative charges of three SO4^(2−) ions."
+  },
+  {
+    "id": "pc25-electrolyte-mu-salt",
+    "type": "multiple-choice",
+    "prompt": "To account for dissociation, how does the section write the chemical potential μ_2 of a dissolved salt in terms of the ions' chemical potentials μ_(+) and μ_(−)?",
+    "choices": [
+      {
+        "text": "μ_2 = ν_(+) μ_(+) + ν_(−) μ_(−)",
+        "correct": true
+      },
+      {
+        "text": "μ_2 = μ_(+) + μ_(−)",
+        "why": "This leaves out how many ions each formula unit gives. For Al2(SO4)3, two cations and three anions contribute, so each μ is weighted by its ν."
+      },
+      {
+        "text": "μ_2 = (μ_(+) + μ_(−))/2",
+        "why": "μ_2 is not an average of the two. One mole of salt brings ν_(+) moles of cations and ν_(−) moles of anions, so μ_2 = ν_(+) μ_(+) + ν_(−) μ_(−)."
+      },
+      {
+        "text": "μ_2 = ν_(+) μ_(+) − ν_(−) μ_(−)",
+        "why": "Both ions add Gibbs energy to the solution; the anion's negative charge does not make its term negative. The salt's μ_2 is the sum ν_(+) μ_(+) + ν_(−) μ_(−)."
+      }
+    ],
+    "explanation": "One mole of salt supplies ν_(+) moles of cations and ν_(−) moles of anions, so μ_2 = ν_(+) μ_(+) + ν_(−) μ_(−). The same weighting holds for the standard values: μ_2° = ν_(+) μ_(+)° + ν_(−) μ_(−)°."
+  },
+  {
+    "id": "pc25-electrolyte-no-single-ion",
+    "type": "multiple-choice",
+    "prompt": "Why can't the activities a_(+) and a_(−) of the individual ions of a salt be measured separately?",
+    "choices": [
+      {
+        "text": "One kind of ion can't be added without the other",
+        "correct": true
+      },
+      {
+        "text": "The ions have no chemical potential of their own",
+        "why": "Each ion does have one, μ_(+) or μ_(−), as the section writes. The obstacle is experimental: adding cations always means adding anions too."
+      },
+      {
+        "text": "Ions in solution always have activity 1",
+        "why": "An activity of 1 belongs to a pure solid or liquid, not a dissolved ion. The ions' activities just can't be measured one at a time, because cations and anions always come together."
+      },
+      {
+        "text": "Their activities are too small to detect",
+        "why": "Size is not the problem: the salt's activity a_2 can be measured. The ions can't be studied separately because each cation must come with its counter-ions."
+      }
+    ],
+    "explanation": "A solution can't be given only cations or only anions, so the two kinds of ion always come together. That is why only combinations, such as the salt's activity a_2 and the mean coefficient γ_(±), can be determined."
+  },
+  {
+    "id": "pc25-electrolyte-henry-standard",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which standard state is usually taken for both kinds of ions in an electrolyte solution?",
+    "choices": [
+      {
+        "text": "One based on Henry's law",
+        "correct": true
+      },
+      {
+        "text": "The pure ion, as with Raoult's law",
+        "why": "A pure liquid of only cations or only anions cannot exist. The ions, like other solutes, are referred to Henry's law."
+      },
+      {
+        "text": "The solid salt at 1 bar",
+        "why": "The pure solid is the reference for the undissolved salt, not for the ions in solution. For both ions, Henry's law is usually used."
+      },
+      {
+        "text": "The ions in the gas phase",
+        "why": "Gas-phase ions are not the reference for a solution. Each dissolved ion is usually given a Henry's-law standard state."
+      }
+    ],
+    "explanation": "Usually Henry's law is taken as the standard state for both types of ions, as for other solutes. The ions' chemical potentials are then μ_(+) = μ_(+)° + RT ln a_(+) and μ_(−) = μ_(−)° + RT ln a_(−)."
+  },
+  {
+    "id": "pc25-electrolyte-exponents",
+    "type": "multiple-choice",
+    "prompt": "Writing the salt's chemical potential from the ions' gives ν_(+) ln a_(+) + ν_(−) ln a_(−) = ln a_2, where a_2 is the salt's activity. What does this become after taking the exponential of both sides?",
+    "choices": [
+      {
+        "text": "a_2 = a_(+)^(ν+) a_(−)^(ν−)",
+        "correct": true
+      },
+      {
+        "text": "a_2 = ν_(+) a_(+) + ν_(−) a_(−)",
+        "why": "Exponentiating turns a sum of logarithms into a product, and the coefficients in front become powers. So a_2 = a_(+)^(ν+) a_(−)^(ν−)."
+      },
+      {
+        "text": "a_2 = ν_(+) a_(+) × ν_(−) a_(−)",
+        "why": "The coefficients in front of each logarithm become exponents, not factors, since ν ln a = ln(a^(ν)). So a_2 = a_(+)^(ν+) a_(−)^(ν−)."
+      },
+      {
+        "text": "a_2 = a_(+) + a_(−)",
+        "why": "Logarithms that add mean activities that multiply, each raised to its ν. The result is the product a_2 = a_(+)^(ν+) a_(−)^(ν−)."
+      }
+    ],
+    "explanation": "Since ν ln a = ln(a^(ν)), the left side is the logarithm of a_(+)^(ν+) a_(−)^(ν−), and exponentiating gives a_2 = a_(+)^(ν+) a_(−)^(ν−). The stoichiometric coefficients have become exponents."
+  },
+  {
+    "id": "pc25-electrolyte-al2so43-mean-activity",
+    "type": "multiple-choice",
+    "prompt": "The mean ionic activity a_(±) is defined by a_(±)^(ν) = a_2, where ν = ν_(+) + ν_(−) and a_2 is the salt's activity. For Al2(SO4)3, with ν_(+) = 2 and ν_(−) = 3, which relation holds?",
+    "choices": [
+      {
+        "text": "a_(±)^5 = a_2",
+        "correct": true
+      },
+      {
+        "text": "a_(±)^2 = a_2",
+        "why": "The power 2 is for a salt like NaCl, which gives two ions. Al2(SO4)3 gives 2 + 3 = 5 ions, so ν = 5."
+      },
+      {
+        "text": "a_(±)^6 = a_2",
+        "why": "ν is the sum of the coefficients, not their product. For Al2(SO4)3, ν = 2 + 3 = 5."
+      },
+      {
+        "text": "a_(±) = 5a_2",
+        "why": "ν appears as an exponent, not as a factor. With ν = 2 + 3 = 5, the relation is a_(±)^5 = a_2."
+      }
+    ],
+    "explanation": "For Al2(SO4)3, ν = 2 + 3 = 5, so a_(±)^5 = a_2. For NaCl, by comparison, ν = 1 + 1 = 2 and a_(±)^2 = a_2."
+  },
+  {
+    "id": "pc25-electrolyte-molality-why",
+    "type": "multiple-choice",
+    "prompt": "Why does the section prefer molality to molarity when relating a salt's activity to its concentration?",
+    "choices": [
+      {
+        "text": "It does not involve the solution's volume",
+        "correct": true
+      },
+      {
+        "text": "Molality is always larger than molarity",
+        "why": "The two are close in dilute water solutions, and size is not the point. Molality avoids volume, which may not be additive when deviations from ideality are strong."
+      },
+      {
+        "text": "Molarity cannot be used for ionic solutes",
+        "why": "Molarity can be defined for any solute. Molality is preferred because it does not depend on volume, which may not be additive here."
+      },
+      {
+        "text": "Molality makes every γ equal to 1",
+        "why": "Choosing a concentration measure does not make a solution ideal. Molality is chosen because it uses the mass of solvent, not the volume."
+      }
+    ],
+    "explanation": "Electrolyte solutions deviate strongly from ideal behavior, so volumes may not be additive. Molality, moles of solute per kilogram of solvent, involves no volume, which makes it a convenient measure here."
+  },
+  {
+    "id": "pc25-electrolyte-mgcl2-chloride",
+    "type": "numeric",
+    "prompt": "MgCl2 dissolves to ν_(+) = 1 Mg^(2+) ion and ν_(−) = 2 Cl^− ions. For a solution with salt molality m = 0.0250 mol/kg, what is the chloride molality m_(−) = ν_(−) m, in mol/kg? (Give it as a decimal.)",
+    "answer": 0.05,
+    "explanation": "m_(−) = 2 × 0.0250 mol/kg = 0.0500 mol/kg, while m_(+) = 1 × 0.0250 mol/kg = 0.0250 mol/kg. Stoichiometry fixes each ion's molality from the salt's molality m."
+  },
+  {
+    "id": "pc25-electrolyte-mean-molality-1-1",
+    "type": "multiple-choice",
+    "prompt": "For a 1:1 salt such as KNO3 at molality m, m_(+) = m_(−) = m. Using m_(±)^2 = m_(+) m_(−), what is the mean ionic molality m_(±)?",
+    "choices": [
+      {
+        "text": "m",
+        "correct": true
+      },
+      {
+        "text": "2m",
+        "why": "2m is the total molality of ions. The mean ionic molality is a geometric mean: m_(±) = √(m × m) = m."
+      },
+      {
+        "text": "m^2",
+        "why": "m^2 is m_(±)^2, not m_(±). Taking the square root gives m_(±) = m."
+      },
+      {
+        "text": "m/2",
+        "why": "Nothing is split between the ions: each has molality m, so their geometric mean is m."
+      }
+    ],
+    "explanation": "m_(±)^2 = m × m = m^2, so m_(±) = m. For a 1:1 salt the mean ionic molality is just the salt's molality; for other salts numerical factors appear, such as the 108 for Al2(SO4)3."
+  },
+  {
+    "id": "pc25-electrolyte-mean-geometric",
+    "type": "multiple-choice",
+    "prompt": "The mean ionic molality is defined by m_(±)^(ν) = m_(+)^(ν+) m_(−)^(ν−). What kind of average of the ion molalities is m_(±)?",
+    "choices": [
+      {
+        "text": "A geometric mean",
+        "correct": true
+      },
+      {
+        "text": "An arithmetic mean",
+        "why": "An arithmetic mean would add the molalities. Here they are multiplied, each raised to its ν, and the νth root is taken, which is a geometric mean."
+      },
+      {
+        "text": "The total of the ion molalities",
+        "why": "Nothing is added: the molalities are multiplied and a νth root is taken. The result is a geometric mean, which lies between m_(+) and m_(−)."
+      },
+      {
+        "text": "The larger of m_(+) and m_(−)",
+        "why": "m_(±) mixes both molalities, weighted by ν_(+) and ν_(−). It is the νth root of their product, a geometric mean."
+      }
+    ],
+    "explanation": "m_(±) is the νth root of m_(+)^(ν+) m_(−)^(ν−), a geometric mean weighted by the stoichiometric coefficients. The mean activity a_(±) and the mean coefficient γ_(±) are defined the same way."
+  },
+  {
+    "id": "pc25-electrolyte-k2so4-factor",
+    "type": "numeric",
+    "prompt": "K2SO4 dissolves to ν_(+) = 2 K^+ ions and ν_(−) = 1 SO4^(2−) ion, so at salt molality m the ion molalities are m_(+) = 2m and m_(−) = m. The mean ionic molality then obeys m_(±)^3 = m_(+)^2 m_(−) = c m^3. What is the number c?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "m_(±)^3 = (2m)^2 × m = 4m^3, so c = 4. It plays the role of the factor 108 = 2^2 × 3^3 in the Al2(SO4)3 example, where m_(±)^5 = (2m)^2 (3m)^3."
+  },
+  {
+    "id": "pc25-electrolyte-al2so43-two-places",
+    "type": "multiple-choice",
+    "prompt": "For Al2(SO4)3 at molality m, the section finds a_2 = 108 m^5 γ_(±)^5. Where does the salt's stoichiometry enter this result?",
+    "choices": [
+      {
+        "text": "In the exponents and in the ion molalities",
+        "correct": true
+      },
+      {
+        "text": "Only in the exponent 5, as ν = 2 + 3",
+        "why": "The 5 does come from ν = 2 + 3, but the stoichiometry also sets m_(+) = 2m and m_(−) = 3m. Those give the factor 2^2 × 3^3 = 108."
+      },
+      {
+        "text": "Only in the factor 108 = 2^2 × 3^3",
+        "why": "108 comes from the ion molalities 2m and 3m, but the coefficients also appear as powers, giving m^5 and γ_(±)^5."
+      },
+      {
+        "text": "Only through the ions' charges +3 and −2",
+        "why": "The charges do not appear in a_2 = 108 m^5 γ_(±)^5. The coefficients 2 and 3 enter twice: as exponents and through m_(+) = 2m and m_(−) = 3m."
+      }
+    ],
+    "explanation": "The ion molalities are m_(+) = 2m and m_(−) = 3m, and the coefficients 2 and 3 are also exponents: m_(±)^5 = (2m)^2 (3m)^3 = 108 m^5. So the salt's activity goes as the fifth power of its molality."
+  },
+  {
+    "id": "pc25-electrolyte-mean-activity",
+    "type": "numeric",
+    "prompt": "A NaNO3 solution has mean ionic molality m_(±) = 0.0200 mol/kg and mean ionic activity coefficient γ_(±) = 0.870. Using a_(±) = γ_(±) m_(±), with the molality taken as a pure number, what is the mean ionic activity a_(±)? (Give it as a decimal.)",
+    "answer": 0.0174,
+    "explanation": "a_(±) = 0.870 × 0.0200 = 0.0174. Since γ_(±) < 1, the ions act as if they were less concentrated than they are; the salt's own activity is a_2 = a_(±)^2 ≈ 3.03 × 10^−4."
+  },
+  {
+    "id": "pc25-electrolyte-measure-vapor",
+    "type": "multiple-choice",
+    "prompt": "A salt such as NaCl has a negligible vapor pressure. What does the section measure to determine the mean ionic activity coefficient γ_(±) of the dissolved salt?",
+    "choices": [
+      {
+        "text": "The water's vapor pressure above the solution",
+        "correct": true
+      },
+      {
+        "text": "The salt's own vapor pressure, very precisely",
+        "why": "The salt's vapor pressure is negligible, and that does not matter. The water's vapor pressure is measured, and the Gibbs–Duhem equation converts it into γ_(±)."
+      },
+      {
+        "text": "Each ion's activity, one ion at a time",
+        "why": "One kind of ion can't be added without the other, so single-ion activities can't be measured. The water's vapor pressure gives γ_(±) through Gibbs–Duhem."
+      },
+      {
+        "text": "The volume change when the salt dissolves",
+        "why": "Volume is not used here. The section measures the water vapor pressure above the solution and applies the same Gibbs–Duhem trick as for sucrose."
+      }
+    ],
+    "explanation": "Unlike the single-ion coefficients, γ_(±) can be determined. The solvent's vapor pressure is measured, and the Gibbs–Duhem equation turns it into the solute's γ_(±); the salt's negligible vapor pressure does not matter."
+  },
+  {
+    "id": "pc25-electrolyte-electrochemical",
+    "type": "multiple-choice",
+    "prompt": "Besides vapor-pressure measurements, what other kind of procedure does the section mention for finding mean ionic activity coefficients?",
+    "choices": [
+      {
+        "text": "Procedures based on electrochemical potentials",
+        "correct": true
+      },
+      {
+        "text": "Measuring each ion's activity coefficient directly",
+        "why": "Single-ion coefficients can't be determined, since one ion can't be added without the other. The section mentions electrochemical procedures instead."
+      },
+      {
+        "text": "Reading them off the salt's crystal structure",
+        "why": "The solid's structure does not give activities in solution. The section names procedures based on electrochemical potentials as the alternative."
+      },
+      {
+        "text": "Computing them from the salt's molar mass",
+        "why": "Molar mass alone says nothing about nonideality. The other route the section names uses electrochemical potentials."
+      }
+    ],
+    "explanation": "The section notes that vapor-pressure measurements are tedious and that procedures involving electrochemical potentials exist, though they are tedious too. This is one reason a theory that predicts γ_(±) is valuable."
+  }
+]

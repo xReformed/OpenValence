@@ -1,0 +1,405 @@
+[
+  {
+    "id": "pc26-formation-k-definition",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the standard molar Gibbs energy of formation, Δ_f G°, of a substance?",
+    "choices": [
+      {
+        "text": "Δ_r G° for forming it from its elements",
+        "correct": true
+      },
+      {
+        "text": "The Gibbs energy of one mole of it at 1 bar",
+        "why": "Only changes in Gibbs energy are tabulated, not absolute values. Δ_f G° is the standard reaction Gibbs energy of the substance's formation reaction."
+      },
+      {
+        "text": "Δ_r G° for breaking it into gaseous atoms",
+        "why": "That reaction runs the other way and ends in free atoms, not in elements in their usual forms. Δ_f G° belongs to forming the substance from its elements."
+      },
+      {
+        "text": "Δ_r G° for burning it completely in O2",
+        "why": "That would be a Gibbs energy of combustion. Δ_f G° belongs to the formation reaction, which makes the substance from its elements."
+      }
+    ],
+    "explanation": "The section calls Δ_f G° the standard molar reaction Gibbs energy of the substance's formation reaction. For liquid water, for example, it is Δ_r G° for H2(g) + (1/2)O2(g) → H2O(ℓ)."
+  },
+  {
+    "id": "pc26-formation-k-element-zero",
+    "type": "multiple-choice",
+    "prompt": "The section uses the fact that Δ_f G° is zero for an element in its reference state, such as O2(g) or Hg(ℓ). Why is it zero?",
+    "choices": [
+      {
+        "text": "Its formation reaction changes nothing",
+        "correct": true
+      },
+      {
+        "text": "Elements have no Gibbs energy",
+        "why": "Elements do have Gibbs energies, but only changes are measured. Δ_f G° is zero because forming an element from itself is no change at all."
+      },
+      {
+        "text": "Elements have zero entropy",
+        "why": "An element's standard molar entropy is not zero; O2(g) has about 205 J/(mol·K). Δ_f G° is zero because the element's formation reaction leaves it unchanged."
+      },
+      {
+        "text": "Elements do not take part in reactions",
+        "why": "Elements react all the time, as O2 does in combustion. Δ_f G° is zero because forming an element in its reference state from itself is no change."
+      }
+    ],
+    "explanation": "The formation reaction of O2(g) would be O2(g) → O2(g), with Δ_r G° = 0. So Δ_f G° and Δ_f H° are zero for elements in their reference states, and they drop out of the sum Σ ν_i Δ_f G°(i)."
+  },
+  {
+    "id": "pc26-formation-k-hess-analogy",
+    "type": "multiple-choice",
+    "prompt": "The section says the expression Δ_r G° = Σ ν_i Δ_f G°(i) is analogous to which law?",
+    "choices": [
+      {
+        "text": "Hess's law",
+        "correct": true
+      },
+      {
+        "text": "Raoult's law",
+        "why": "Raoult's law links a solvent's vapor pressure to its mole fraction. Building a reaction value from formation values is the idea behind Hess's law."
+      },
+      {
+        "text": "Henry's law",
+        "why": "Henry's law links a dissolved gas's pressure to its amount in solution. Adding up formation values, each times its ν_i, works like Hess's law for enthalpies."
+      },
+      {
+        "text": "The third law of thermodynamics",
+        "why": "The third law sets the entropy of a perfect crystal at 0 K to zero. Getting a reaction value from a sum of formation values is the pattern of Hess's law."
+      }
+    ],
+    "explanation": "Hess's law gives Δ_r H° as Σ ν_i Δ_f H°(i), because enthalpy is a state function. Gibbs energy is a state function too, so the same sum works with Δ_f G° values, and the sum runs over the reactants and products of the reaction."
+  },
+  {
+    "id": "pc26-formation-k-mu-substitution",
+    "type": "multiple-choice",
+    "prompt": "The section substitutes μ_i = H_i − TS_i into Δ_r G = Σ ν_i μ_i. Which relation results?",
+    "choices": [
+      {
+        "text": "Δ_r G = Δ_r H − TΔ_r S",
+        "correct": true
+      },
+      {
+        "text": "Δ_r G = Δ_r H + TΔ_r S",
+        "why": "The minus sign in μ_i = H_i − TS_i carries through the sum. So Δ_r G = Σ ν_i H_i − TΣ ν_i S_i = Δ_r H − TΔ_r S."
+      },
+      {
+        "text": "Δ_r G = Δ_r H − Δ_r S",
+        "why": "The entropy term keeps its factor of T from μ_i = H_i − TS_i. Without T the two terms wouldn't even have the same units."
+      },
+      {
+        "text": "Δ_r G = TΔ_r S − Δ_r H",
+        "why": "Both signs are flipped. Summing ν_i(H_i − TS_i) gives Δ_r H − TΔ_r S."
+      }
+    ],
+    "explanation": "The sum Σ ν_i(H_i − TS_i) splits into Σ ν_i H_i − TΣ ν_i S_i, which is Δ_r H − TΔ_r S. With every reactant and product in its standard state, it becomes Δ_r G° = Δ_r H° − TΔ_r S°."
+  },
+  {
+    "id": "pc26-formation-k-calorimetry-only",
+    "type": "multiple-choice",
+    "prompt": "The section says an equilibrium constant can be evaluated using nothing but calorimetry. How is that possible?",
+    "choices": [
+      {
+        "text": "Δ_f H° and S° both come from heat measurements",
+        "correct": true
+      },
+      {
+        "text": "A calorimeter measures K directly",
+        "why": "A calorimeter measures heat, not the amounts present at equilibrium. K follows from Δ_f H° and S° values, and both come from heat measurements."
+      },
+      {
+        "text": "The heat released at equilibrium equals Δ_r G°",
+        "why": "Heat measured at constant pressure gives enthalpies, not Gibbs energies. Δ_r G° is built from Δ_f H° and S° values through Δ_r G° = Δ_r H° − TΔ_r S°."
+      },
+      {
+        "text": "K depends on Δ_r H° alone, which calorimetry gives",
+        "why": "K = exp(−(Δ_r G°)/(RT)) depends on Δ_r S° as well as Δ_r H°. The entropies come from heat capacity data, which is calorimetry too."
+      }
+    ],
+    "explanation": "Standard enthalpies of formation are found by calorimetric methods, and absolute entropies S° come from heat capacity data. Together they give Δ_f G° = Δ_f H° − TΣ ν_i S_i°, then Δ_r G°, and then K = exp(−(Δ_r G°)/(RT))."
+  },
+  {
+    "id": "pc26-formation-k-galvanic-cell",
+    "type": "multiple-choice",
+    "prompt": "Besides calorimetry, which other way of evaluating K does the section mention for some reactions?",
+    "choices": [
+      {
+        "text": "Measuring a galvanic cell that runs it reversibly",
+        "correct": true
+      },
+      {
+        "text": "Measuring how fast the reaction goes",
+        "why": "Rates belong to kinetics and don't give K by themselves. The section's other route uses a galvanic cell in which the reaction runs reversibly."
+      },
+      {
+        "text": "Measuring the boiling point of the reaction mixture",
+        "why": "A boiling point says nothing directly about Δ_r G° for a reaction. The section's other route is a galvanic cell that carries out the reaction reversibly."
+      },
+      {
+        "text": "Weighing the products after one hour",
+        "why": "After a fixed time the mixture need not be at equilibrium, and a mass alone gives no Δ_r G°. The section points instead to a reversible galvanic cell."
+      }
+    ],
+    "explanation": "The section notes, without details, that a reaction which can be carried out reversibly in a galvanic cell offers another route to Δ_r G° and so to K. Its main route is through tabulated Δ_f G° values."
+  },
+  {
+    "id": "pc26-formation-k-large-negative",
+    "type": "multiple-choice",
+    "prompt": "A reaction has a large negative Δ_r G°, say −100 kJ/mol at 298 K. What does K = exp(−(Δ_r G°)/(RT)) say about its equilibrium constant?",
+    "choices": [
+      {
+        "text": "K is much larger than 1, so products are favored",
+        "correct": true
+      },
+      {
+        "text": "K is much smaller than 1, so reactants are favored",
+        "why": "With Δ_r G° negative, the exponent −(Δ_r G°)/(RT) is large and positive, so K is huge. A small K goes with a positive Δ_r G°."
+      },
+      {
+        "text": "K is negative, so the reaction runs backward",
+        "why": "An exponential is always positive, so K > 0 whatever the sign of Δ_r G°. A negative Δ_r G° makes K greater than 1."
+      },
+      {
+        "text": "K is close to 1, so neither side is favored",
+        "why": "K is near 1 only when Δ_r G° is near zero. At −100 kJ/mol the exponent −(Δ_r G°)/(RT) is about 40, so K is around 10^17."
+      }
+    ],
+    "explanation": "Here −(Δ_r G°)/(RT) = 100 000 J/mol ÷ (8.314 J/(mol·K) × 298 K) ≈ 40, and exp(40) is around 10^17. The more negative Δ_r G° is, the larger K is and the further the reaction goes toward products."
+  },
+  {
+    "id": "pc26-formation-k-opposite-signs",
+    "type": "multiple-choice",
+    "prompt": "At the same temperature, reaction A has Δ_r G° = −20 kJ/mol and reaction B has Δ_r G° = +20 kJ/mol. How are their equilibrium constants related?",
+    "choices": [
+      {
+        "text": "K_B = 1/K_A, with K_A > 1 and K_B < 1",
+        "correct": true
+      },
+      {
+        "text": "K_B = 1/K_A, with K_A < 1 and K_B > 1",
+        "why": "It is the negative Δ_r G° that gives a positive exponent, so A has K > 1. B, with a positive Δ_r G°, has K < 1."
+      },
+      {
+        "text": "K_B = −K_A, so K_B is negative",
+        "why": "K = exp(−(Δ_r G°)/(RT)) is always positive. Flipping the sign of Δ_r G° flips the sign of the exponent, which turns K into 1/K."
+      },
+      {
+        "text": "K_A = K_B, since only the size of Δ_r G° matters",
+        "why": "The sign matters: −20 kJ/mol gives K > 1 and +20 kJ/mol gives K < 1. The two values are reciprocals."
+      }
+    ],
+    "explanation": "Since exp(−x) = 1/exp(x), changing the sign of Δ_r G° turns K into 1/K. At 298 K the exponents are about ±8, so K_A ≈ 3 × 10^3 and K_B ≈ 3 × 10^−4: a positive Δ_r G° gives a small K, but never zero."
+  },
+  {
+    "id": "pc26-formation-k-table-temperature",
+    "type": "multiple-choice",
+    "prompt": "A table lists Δ_f G° values at 298.15 K only. For which temperature does a K computed from them hold?",
+    "choices": [
+      {
+        "text": "298.15 K only",
+        "correct": true
+      },
+      {
+        "text": "Any temperature, since Δ_f G° values are constants",
+        "why": "Δ_f G° = Δ_f H° − TΣ ν_i S_i° changes with T. A K built from 298.15 K values holds at 298.15 K."
+      },
+      {
+        "text": "0 K, where the entropy terms vanish",
+        "why": "The tabulated values are for 298.15 K, and the T in K = exp(−(Δ_r G°)/(RT)) must be the same temperature. So the K holds at 298.15 K."
+      },
+      {
+        "text": "The temperature at which K = 1",
+        "why": "Nothing in the table picks out the temperature where K = 1. Δ_r G° from 298.15 K data gives K at 298.15 K."
+      }
+    ],
+    "explanation": "K = exp(−(Δ_r G°)/(RT)) gives K at the temperature for which Δ_r G° is known. Since Δ_r G° = Δ_r H° − TΔ_r S° depends on T, data at 298.15 K give K at 298.15 K."
+  },
+  {
+    "id": "pc26-formation-k-ion-reference",
+    "type": "multiple-choice",
+    "prompt": "Tabulated values of Δ_f G° and S_m° for aqueous ions rest on a reference convention. Which one?",
+    "choices": [
+      {
+        "text": "Both are zero for H^+(aq)",
+        "correct": true
+      },
+      {
+        "text": "Both are zero for OH^−(aq)",
+        "why": "The reference ion is H^+(aq), not OH^−(aq). It is given Δ_f G° = 0 and S_m° = 0 at all temperatures."
+      },
+      {
+        "text": "Both are zero for H2O(ℓ)",
+        "why": "Water is a compound with its own nonzero Δ_f G°. The convention sets Δ_f G° = 0 and S_m° = 0 for the ion H^+(aq)."
+      },
+      {
+        "text": "Both are zero for every ion at infinite dilution",
+        "why": "If every ion had zero values, the tables couldn't tell ions apart. Only H^+(aq) is given zeros, and every other ion is measured against it."
+      }
+    ],
+    "explanation": "The convention sets Δ_f G° = 0 and S_m° = 0 for H^+(aq) at all temperatures, like the convention for Δ_f H°. Values for other ions are relative to H^+(aq), and they still give correct Δ_r G° and Δ_r S° for reactions with ions."
+  },
+  {
+    "id": "pc26-formation-k-negative-ion-entropy",
+    "type": "multiple-choice",
+    "prompt": "Some aqueous ions are listed with negative standard molar entropies, S_m° < 0. What does that mean, according to the section?",
+    "choices": [
+      {
+        "text": "Their S_m° is lower than that of H^+(aq)",
+        "correct": true
+      },
+      {
+        "text": "They break the third law of thermodynamics",
+        "why": "The listed values are relative to H^+(aq), which is set to zero. A negative entry means less entropy than H^+(aq), not a negative absolute entropy."
+      },
+      {
+        "text": "Their values are misprints in the tables",
+        "why": "The negative values are real entries on a relative scale. They mean the ion's entropy is lower than that of H^+(aq), the zero of the scale."
+      },
+      {
+        "text": "They release heat when they dissolve",
+        "why": "S_m° is an entropy, not a heat of solution. A negative value means less entropy than H^+(aq), whose S_m° is set to zero."
+      }
+    ],
+    "explanation": "Ion entropies are measured against H^+(aq), whose S_m° is set to zero. A negative entry simply means the ion's standard molar entropy is less than that of H^+(aq), unlike the always-positive values for substances."
+  },
+  {
+    "id": "pc26-formation-k-no-single-ion",
+    "type": "multiple-choice",
+    "prompt": "Why can't Δ_f G° = Δ_f H° − TΣ ν_i S_i° be applied directly to an aqueous ion?",
+    "choices": [
+      {
+        "text": "A lone ion has no formation reaction",
+        "correct": true
+      },
+      {
+        "text": "Ions have no standard enthalpy of formation",
+        "why": "Ions do have tabulated Δ_f H° values, on the H^+(aq) scale. The trouble is that no formation reaction can be written for a single ion."
+      },
+      {
+        "text": "Ions have no standard molar entropy",
+        "why": "Ions have S_m° values, some even negative, on the H^+(aq) scale. The trouble is that a single ion has no formation reaction."
+      },
+      {
+        "text": "Ions exist only in very dilute solutions",
+        "why": "Ions exist in solutions of any concentration. The equation fails because no formation reaction can be written for one ion by itself."
+      }
+    ],
+    "explanation": "Elements are neutral, so a reaction that makes only one ion from them can't balance charge. The section instead uses hypothetical reactions that also involve H^+(aq) and H2(g)."
+  },
+  {
+    "id": "pc26-formation-k-cation-equals",
+    "type": "multiple-choice",
+    "prompt": "For a cation, the section uses z_(+)H^+(aq) + elements → (z_(+)/2)H2(g) + M^(z+)(aq). Why does Δ_r G° for this reaction equal Δ_f G°(M^(z+))?",
+    "choices": [
+      {
+        "text": "H^+(aq), H2 and the elements all have Δ_f G° = 0",
+        "correct": true
+      },
+      {
+        "text": "The reaction is at equilibrium, so its Δ_r G° is zero",
+        "why": "Δ_r G° is a standard value and is not zero in general. It equals Δ_f G°(M^(z+)) because every other species has Δ_f G° = 0."
+      },
+      {
+        "text": "H2 escapes as a gas and is not counted",
+        "why": "H2 is counted, with ν = z_(+)/2, but its Δ_f G° is zero because it is an element. H^+(aq) adds nothing either, by convention."
+      },
+      {
+        "text": "The charges on the two sides cancel",
+        "why": "Balanced charge lets the reaction be written, but it doesn't remove any terms. They vanish because H^+(aq), H2 and the elements have Δ_f G° = 0."
+      }
+    ],
+    "explanation": "In Δ_r G° = Σ ν_i Δ_f G°(i), every term but the cation's is zero: H^+(aq) by convention, and H2 and the other elements because they are elements. So Δ_r G° = Δ_f G°(M^(z+)), and in the same way Δ_r H° = Δ_f H°(M^(z+))."
+  },
+  {
+    "id": "pc26-formation-k-h2-entropy",
+    "type": "multiple-choice",
+    "prompt": "In the cation's reaction, (z_(+)/2)H2(g) adds nothing to Δ_r G°, yet the term (z_(+)/2)S_m°(H2) appears in Δ_r S°. Why?",
+    "choices": [
+      {
+        "text": "H2 has Δ_f G° = 0 but a nonzero entropy",
+        "correct": true
+      },
+      {
+        "text": "The convention sets S_m° = 0 for H2(g)",
+        "why": "The zero-entropy convention is for H^+(aq), not H2(g). H2 has a real, positive standard molar entropy, so it counts in Δ_r S°."
+      },
+      {
+        "text": "Only products are counted in Δ_r S°",
+        "why": "Reactants count too, which is why the elements' entropies are subtracted. H2 counts because its entropy, unlike its Δ_f G°, is not zero."
+      },
+      {
+        "text": "The term corrects for the charge on the ion",
+        "why": "S_m°(H2) is simply the entropy of the H2 formed. It appears because an element's entropy, unlike its Δ_f G°, is not zero."
+      }
+    ],
+    "explanation": "Δ_f G° and Δ_f H° of an element are zero by definition, but its absolute entropy is not. So S_m°(H2), like the entropies of the other elements, stays in Δ_r S° and in the section's formula for Δ_f G°(M^(z+))."
+  },
+  {
+    "id": "pc26-formation-k-nitrate-reaction",
+    "type": "multiple-choice",
+    "prompt": "For an anion, the section's hypothetical reaction runs the opposite way to the cation's. Which reaction does it use for the nitrate ion, NO3^−?",
+    "choices": [
+      {
+        "text": "(1/2)H2(g) + (1/2)N2(g) + (3/2)O2(g) → H^+(aq) + NO3^−(aq)",
+        "correct": true
+      },
+      {
+        "text": "(1/2)N2(g) + (3/2)O2(g) → NO3^−(aq)",
+        "why": "Here a charge appears from nothing, since neutral elements can't form a lone anion. Adding (1/2)H2(g) on the left and H^+(aq) on the right balances it."
+      },
+      {
+        "text": "H^+(aq) + (1/2)N2(g) + (3/2)O2(g) → (1/2)H2(g) + NO3^−(aq)",
+        "why": "That is the cation pattern, and the charge doesn't balance: +1 on the left and −1 on the right. For an anion, H2 is used up and H^+(aq) is formed."
+      },
+      {
+        "text": "(1/2)H2(g) + (1/2)N2(g) + 3O2(g) → H^+(aq) + NO3^−(aq)",
+        "why": "That puts six O atoms on the left but only three in NO3^−. Three O atoms need (3/2)O2."
+      }
+    ],
+    "explanation": "With |z_(−)| = 1, the reaction uses |z_(−)/2| = 1/2 mol of H2 and forms 1 mol of H^+(aq), so the charge is zero on both sides. Because H2 is a reactant here, its entropy enters the nitrate formula as +(1/2)TS_m°(H2)."
+  },
+  {
+    "id": "pc26-formation-k-so3-sum",
+    "type": "numeric",
+    "prompt": "At 298.15 K, Δ_f G° is −300.2 kJ/mol for SO2(g) and −371.1 kJ/mol for SO3(g), and O2(g) is an element in its reference state. Using Δ_r G° = Σ ν_i Δ_f G°(i), with ν_i positive for products and negative for reactants, what is Δ_r G° for 2SO2(g) + O2(g) → 2SO3(g), in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -141.8,
+    "explanation": "Δ_r G° = 2(−371.1) − 2(−300.2) − 0 = −742.2 + 600.4 = −141.8 kJ/mol. O2 adds nothing, since Δ_f G° = 0 for an element in its reference state, and the negative result means K is large."
+  },
+  {
+    "id": "pc26-formation-k-agcl-sum",
+    "type": "numeric",
+    "prompt": "At 298.15 K, Δ_f G° is −109.8 kJ/mol for AgCl(s), +77.1 kJ/mol for Ag^+(aq) and −131.2 kJ/mol for Cl^−(aq), where the ion values are on the scale with Δ_f G° = 0 for H^+(aq). Using Δ_r G° = Σ ν_i Δ_f G°(i), what is Δ_r G° for AgCl(s) → Ag^+(aq) + Cl^−(aq), in kJ/mol? (Give it as a decimal.)",
+    "answer": 55.7,
+    "explanation": "Δ_r G° = 77.1 + (−131.2) − (−109.8) = +55.7 kJ/mol. The ion values work in the sum because both sides of the reaction carry the same total charge, and the large positive Δ_r G° shows that very little AgCl dissolves."
+  },
+  {
+    "id": "pc26-formation-k-shift-k",
+    "type": "numeric",
+    "prompt": "For the water-gas shift, CO(g) + H2O(g) → CO2(g) + H2(g), Δ_r G° = −28.6 kJ/mol at 298.15 K, where RT = 2.479 kJ/mol. Using K = exp(−(Δ_r G°)/(RT)) and exp(11.54) = 1.03 × 10^5, what is K? (Type it in scientific notation, like 2.5e5.)",
+    "answer": 103000.0,
+    "tolerance": 0.02,
+    "explanation": "−(Δ_r G°)/(RT) = 28.6 ÷ 2.479 = 11.54, so K = exp(11.54) = 1.03 × 10^5. A Δ_r G° of only −28.6 kJ/mol already makes K very large, because K depends exponentially on Δ_r G°."
+  },
+  {
+    "id": "pc26-formation-k-no-2000k",
+    "type": "numeric",
+    "prompt": "For N2(g) + O2(g) → 2NO(g), K = 4.0 × 10^−4 at 2000 K, and ln(4.0 × 10^−4) = −7.824. Using Δ_r G° = −RT ln K with R = 8.314 J/(mol·K), what is Δ_r G° at 2000 K, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": 130.1,
+    "explanation": "Δ_r G° = −(8.314 J/(mol·K))(2000 K)(−7.824) = 1.301 × 10^5 J/mol = +130.1 kJ/mol. The positive value fits the small K: even at 2000 K, little NO forms from N2 and O2."
+  },
+  {
+    "id": "pc26-formation-k-water-dfg",
+    "type": "numeric",
+    "prompt": "For the formation reaction H2(g) + (1/2)O2(g) → H2O(ℓ) at 298.15 K, Δ_f H° = −285.8 kJ/mol and the entropy sum is Σ ν_i S_i° = −163.4 J/(mol·K). Using Δ_f G° = Δ_f H° − TΣ ν_i S_i°, what is Δ_f G° of liquid water, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -237.1,
+    "explanation": "TΣ ν_i S_i° = 298.15 K × (−0.1634 kJ/(mol·K)) = −48.72 kJ/mol, so Δ_f G° = −285.8 − (−48.72) = −237.1 kJ/mol. The entropy sum must be turned from J into kJ before it is combined with Δ_f H°."
+  },
+  {
+    "id": "pc26-formation-k-al-hydrogen",
+    "type": "numeric",
+    "prompt": "For a cation with charge number z_(+), the section's hypothetical reaction is z_(+)H^+(aq) + elements → (z_(+)/2)H2(g) + M^(z+)(aq). For the aluminum ion Al^(3+), how many moles of H2(g) does this reaction form per mole of Al^(3+)? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "With z_(+) = 3, the reaction is 3H^+(aq) + Al(s) → (3/2)H2(g) + Al^(3+)(aq), forming 1.5 mol of H2. The three H^+ ions each pass their charge to the aluminum, and their hydrogen leaves as 3/2 molecules of H2."
+  }
+]

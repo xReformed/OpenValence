@@ -1,0 +1,424 @@
+[
+  {
+    "id": "pc27-velocity-component-mean-square-pressure",
+    "type": "multiple-choice",
+    "prompt": "The pressure of an ideal gas is P = ((N_tot m)/V)⟨v_x^2⟩. Why must it contain ⟨v_x^2⟩, the average of the square, and not ⟨v_x⟩^2, the square of the average?",
+    "choices": [
+      {
+        "text": "⟨v_x⟩ = 0, so ⟨v_x⟩^2 would give zero pressure",
+        "correct": true
+      },
+      {
+        "text": "The two are always equal, so either form works",
+        "why": "They differ: ⟨v_x⟩ = 0 because the positive and negative values cancel, while ⟨v_x^2⟩ is positive. Only ⟨v_x^2⟩ gives a nonzero pressure."
+      },
+      {
+        "text": "⟨v_x⟩^2 has the wrong units for a pressure",
+        "why": "Both have units of m^2/s^2. The problem is that ⟨v_x⟩ = 0, so ⟨v_x⟩^2 would predict no pressure at all."
+      },
+      {
+        "text": "⟨v_x⟩^2 is much larger than ⟨v_x^2⟩",
+        "why": "It is the other way round. ⟨v_x⟩^2 is zero, since ⟨v_x⟩ = 0, while ⟨v_x^2⟩ = (k_B T)/m is positive."
+      }
+    ],
+    "explanation": "Molecules move toward +x and −x equally often, so the values of v_x cancel and ⟨v_x⟩ = 0. Squaring first makes every term positive, so ⟨v_x^2⟩ = (k_B T)/m is not zero, and it is this average that sets the pressure."
+  },
+  {
+    "id": "pc27-velocity-component-range",
+    "type": "multiple-choice",
+    "prompt": "Why does one velocity component, v_x, range from −∞ to ∞ rather than from 0 to ∞?",
+    "choices": [
+      {
+        "text": "A molecule can move in the +x or the −x direction",
+        "correct": true
+      },
+      {
+        "text": "Negative values stand for molecules that lose energy",
+        "why": "The kinetic energy (1/2)m v_x^2 is never negative. The sign of v_x gives only the direction of motion along x."
+      },
+      {
+        "text": "Negative values describe molecules at rest",
+        "why": "A molecule at rest has v_x = 0. A negative v_x means the molecule is moving toward −x."
+      },
+      {
+        "text": "The range is only a trick to make the integral easier",
+        "why": "Negative values of v_x are real: half the molecules move toward −x. The range follows from the two directions of motion."
+      }
+    ],
+    "explanation": "v_x is a component of the velocity, so its sign tells the direction along x. A speed can't be negative, but v_x can, so f(v_x) covers every value from −∞ to ∞."
+  },
+  {
+    "id": "pc27-velocity-component-two-parts",
+    "type": "multiple-choice",
+    "prompt": "The section splits f(v_x) = √(m/(2πk_B T)) exp(−(m v_x^2)/(2k_B T)) into two parts. What are they?",
+    "choices": [
+      {
+        "text": "A normalization constant and an exponential term",
+        "correct": true
+      },
+      {
+        "text": "A kinetic energy term and a potential energy term",
+        "why": "There is no potential energy in this model of the gas. The square root is a normalization constant, and the exp(…) factor is the exponential term."
+      },
+      {
+        "text": "A speed part and a direction part",
+        "why": "v_x carries both its size and its sign in one variable. The two parts are the normalization constant in front and the exponential term."
+      },
+      {
+        "text": "A term for +v_x and a term for −v_x",
+        "why": "One expression covers both signs, since v_x^2 is the same for +v_x and −v_x. The parts are a normalization constant and an exponential term."
+      }
+    ],
+    "explanation": "The square root, √(m/(2πk_B T)), is the normalization constant, and exp(−(m v_x^2)/(2k_B T)) is the exponential term. The exponential gives the bell shape, and the constant scales it so that the total probability is 1."
+  },
+  {
+    "id": "pc27-velocity-component-exponent-energy",
+    "type": "multiple-choice",
+    "prompt": "The exponent in f(v_x) is −(m v_x^2)/(2k_B T), which has the form −E/(k_B T) of a Boltzmann factor. What is the energy E?",
+    "choices": [
+      {
+        "text": "(1/2)m v_x^2, the kinetic energy along x",
+        "correct": true
+      },
+      {
+        "text": "(3/2)k_B T, the average kinetic energy",
+        "why": "That is an average over all molecules and contains no v_x. Here E = (1/2)m v_x^2, the energy of one molecule's motion along x."
+      },
+      {
+        "text": "(1/2)m v^2, the kinetic energy in all directions",
+        "why": "f(v_x) concerns one component only, and its exponent contains v_x alone. So E = (1/2)m v_x^2."
+      },
+      {
+        "text": "m v_x, the momentum along x",
+        "why": "Momentum is not an energy, and the exponent has v_x squared. With the 2 in the denominator, E = (1/2)m v_x^2."
+      }
+    ],
+    "explanation": "(m v_x^2)/(2k_B T) = ((1/2)m v_x^2)/(k_B T), so f(v_x) is a Boltzmann factor in the kinetic energy of motion along x. A large |v_x| means a large energy, which is why fast motion along x is rare."
+  },
+  {
+    "id": "pc27-velocity-component-shape",
+    "type": "multiple-choice",
+    "prompt": "What does a plot of f(v_x) against v_x look like?",
+    "choices": [
+      {
+        "text": "A bell curve, symmetric about v_x = 0",
+        "correct": true
+      },
+      {
+        "text": "A curve rising from zero to a peak at positive v_x",
+        "why": "That shape belongs to the distribution of speeds, which can't be negative. f(v_x) is a Gaussian with its peak at v_x = 0 and equal halves on each side."
+      },
+      {
+        "text": "A curve that falls steadily from −∞ to ∞",
+        "why": "f(v_x) depends on v_x^2, so it has the same value at +v_x and −v_x. It rises to a peak at v_x = 0 and then falls."
+      },
+      {
+        "text": "A flat line, since every v_x is equally likely",
+        "why": "The exponential term makes a large |v_x| much less likely than a small one. The curve is a bell, highest at v_x = 0."
+      }
+    ],
+    "explanation": "f(v_x) depends on v_x only through v_x^2, so f(−v_x) = f(v_x) and the curve is symmetric. The exponential is largest at v_x = 0, so the curve is a Gaussian bell centered there."
+  },
+  {
+    "id": "pc27-velocity-component-higher-t",
+    "type": "multiple-choice",
+    "prompt": "The section compares f(v_x) for N2 at 300 K and at 1000 K. How does the curve at 1000 K differ from the one at 300 K?",
+    "choices": [
+      {
+        "text": "It is wider and lower, still centered at v_x = 0",
+        "correct": true
+      },
+      {
+        "text": "It is narrower and taller, still centered at v_x = 0",
+        "why": "Heating gives more molecules a large |v_x|, so the curve spreads out rather than narrowing. Its peak falls as it widens."
+      },
+      {
+        "text": "Its peak moves to a positive value of v_x",
+        "why": "Heating favors neither direction, so the curve stays symmetric about v_x = 0. It only becomes wider and lower."
+      },
+      {
+        "text": "It is wider, but its peak height is unchanged",
+        "why": "The peak height is the constant √(m/(2πk_B T)), which falls as T rises. So the wider curve is also lower."
+      }
+    ],
+    "explanation": "A higher T makes the exponent (m v_x^2)/(2k_B T) smaller, so a large |v_x| becomes more likely and the curve spreads out. The peak value, √(m/(2πk_B T)), drops, and the curve stays centered on v_x = 0."
+  },
+  {
+    "id": "pc27-velocity-component-peak-lower-why",
+    "type": "multiple-choice",
+    "prompt": "Raising the temperature spreads f(v_x) over a wider range of v_x. Why must the peak of the curve get lower at the same time?",
+    "choices": [
+      {
+        "text": "The total area under the curve must stay 1",
+        "correct": true
+      },
+      {
+        "text": "Fewer molecules are in the gas at high T",
+        "why": "Heating doesn't change the number of molecules. The peak falls because the area under f(v_x) must remain 1 while the curve widens."
+      },
+      {
+        "text": "The exponential term falls at v_x = 0 as T rises",
+        "why": "At v_x = 0 the exponential is exp(0) = 1 at any T. The peak falls because the constant in front, √(m/(2πk_B T)), falls to keep the area 1."
+      },
+      {
+        "text": "The average ⟨v_x⟩ grows with temperature",
+        "why": "⟨v_x⟩ stays 0 at every temperature, because the curve stays symmetric. The peak falls because the area must stay 1."
+      }
+    ],
+    "explanation": "f(v_x) is normalized: the area under it, the total probability, is 1 at every temperature. A curve that spreads out must get lower to keep the same area, which is why √(m/(2πk_B T)) falls as T rises."
+  },
+  {
+    "id": "pc27-velocity-component-heavier",
+    "type": "multiple-choice",
+    "prompt": "At the same temperature, how does f(v_x) for a heavy atom such as Xe compare with f(v_x) for a light one such as He?",
+    "choices": [
+      {
+        "text": "It is narrower and taller",
+        "correct": true
+      },
+      {
+        "text": "It is wider and lower",
+        "why": "In the exponent −(m v_x^2)/(2k_B T), a larger m makes f fall off faster as |v_x| grows. Heavy atoms have a narrower spread of v_x."
+      },
+      {
+        "text": "It is the same, since T is the same",
+        "why": "f(v_x) depends on the mass as well as on T. At the same T a heavier atom has a narrower, taller curve."
+      },
+      {
+        "text": "It peaks at a smaller positive v_x",
+        "why": "Both curves peak at v_x = 0, since the + and − directions are equally likely. The heavy atom's curve is just narrower and taller."
+      }
+    ],
+    "explanation": "m and T enter f(v_x) only as m/(k_B T), so a larger m acts like a lower T. The curve narrows around v_x = 0, and the constant √(m/(2πk_B T)) makes the peak taller."
+  },
+  {
+    "id": "pc27-velocity-component-fixes-constant",
+    "type": "multiple-choice",
+    "prompt": "The section writes f(v_x) = N exp(−(m v_x^2)/(2k_B T)) and then finds the constant N. Which condition fixes N?",
+    "choices": [
+      {
+        "text": "The area under f(v_x) over all v_x equals 1",
+        "correct": true
+      },
+      {
+        "text": "The value of f(v_x) at v_x = 0 equals 1",
+        "why": "The peak value of a probability distribution like f(v_x) need not be 1. It is the total probability, the integral over all v_x, that must be 1."
+      },
+      {
+        "text": "The average velocity ⟨v_x⟩ must come out as zero",
+        "why": "⟨v_x⟩ = 0 holds for any N, because the curve is symmetric. N is set by requiring the total probability to be 1."
+      },
+      {
+        "text": "The exponent must come out with no units at all",
+        "why": "(m v_x^2)/(2k_B T) has no units whatever N is. N is fixed by making the integral of f(v_x) over all v_x equal to 1."
+      }
+    ],
+    "explanation": "f(v_x) is a continuous probability distribution, and every molecule has some v_x between −∞ and ∞, so the probabilities for all v_x add up to 1. Requiring the integral of f(v_x) over that range to be 1 gives N = √(m/(2πk_B T))."
+  },
+  {
+    "id": "pc27-velocity-component-weighted-sum",
+    "type": "multiple-choice",
+    "prompt": "For a finite set of N values, the average is x̄ = (1/N)Σ x_i. Which formula does the section use when what is known is the probability P_i of each value x_i?",
+    "choices": [
+      {
+        "text": "x̄ = Σ x_i P_i",
+        "correct": true
+      },
+      {
+        "text": "x̄ = Σ P_i",
+        "why": "The probabilities alone add up to 1, whatever the values are. Each value x_i must be weighted by its probability: x̄ = Σ x_i P_i."
+      },
+      {
+        "text": "x̄ = Σ x_i/P_i",
+        "why": "Dividing by P_i would make the rarest values count the most. Each x_i is multiplied by its probability instead."
+      },
+      {
+        "text": "x̄ = Σ x_i^2 P_i",
+        "why": "That is the average of x^2, not of x. The average of x itself is Σ x_i P_i."
+      }
+    ],
+    "explanation": "Each value is weighted by its probability, x̄ = Σ x_i P_i. If all N values are equally likely, each P_i = 1/N and this becomes the familiar (1/N)Σ x_i."
+  },
+  {
+    "id": "pc27-velocity-component-continuous-average",
+    "type": "multiple-choice",
+    "prompt": "A variable x can take any value in a continuous range, with probability distribution P(x). How is its average x̄ found?",
+    "choices": [
+      {
+        "text": "x̄ = ∫ x P(x) dx over all possible x",
+        "correct": true
+      },
+      {
+        "text": "x̄ = ∫ P(x) dx over all possible x",
+        "why": "For a normalized P(x) this integral is just 1. To get an average, each x must be weighted by P(x): x̄ = ∫ x P(x) dx."
+      },
+      {
+        "text": "x̄ is the x at which P(x) is largest",
+        "why": "That is the most probable value, which in general differs from the average. The average weights every x by P(x): x̄ = ∫ x P(x) dx."
+      },
+      {
+        "text": "x̄ = P(x) at the middle of the range",
+        "why": "P(x) is a probability density, not a value of x. The average weights every x by P(x) and integrates: x̄ = ∫ x P(x) dx."
+      }
+    ],
+    "explanation": "When x can take any value in a range, the sum Σ x_i P_i becomes an integral. Each x is weighted by P(x), and the integration runs over every value x can take, which for v_x is −∞ to ∞."
+  },
+  {
+    "id": "pc27-velocity-component-mean-zero",
+    "type": "multiple-choice",
+    "prompt": "Why is the average x component of the velocity, ⟨v_x⟩ = ∫ v_x f(v_x) dv_x over all v_x, equal to zero?",
+    "choices": [
+      {
+        "text": "Half move toward +x, half toward −x",
+        "correct": true
+      },
+      {
+        "text": "Most molecules in a gas are at rest",
+        "why": "The molecules are moving, many of them fast. ⟨v_x⟩ = 0 because positive and negative values of v_x are equally likely and cancel."
+      },
+      {
+        "text": "f(v_x) is zero for negative v_x",
+        "why": "f(v_x) is symmetric, so negative values of v_x are just as likely as positive ones. Their contributions cancel, which is why ⟨v_x⟩ = 0."
+      },
+      {
+        "text": "The walls stop the molecules when they hit",
+        "why": "Collisions with the walls are elastic, so molecules bounce back rather than stop. ⟨v_x⟩ = 0 because motion toward +x and −x cancels."
+      }
+    ],
+    "explanation": "f(v_x) is symmetric about v_x = 0, so a molecule with +v_x is just as likely as one with −v_x. Their contributions to the average cancel, giving ⟨v_x⟩ = 0 even though the molecules are moving fast."
+  },
+  {
+    "id": "pc27-velocity-component-mean-square-positive",
+    "type": "multiple-choice",
+    "prompt": "⟨v_x⟩ is zero, yet ⟨v_x^2⟩ = (k_B T)/m is not. Why don't the values of v_x^2 cancel as well?",
+    "choices": [
+      {
+        "text": "v_x^2 is never negative for either sign",
+        "correct": true
+      },
+      {
+        "text": "Only molecules moving toward +x are included",
+        "why": "Both directions are included. Squaring makes the contributions from −v_x positive too, so nothing cancels."
+      },
+      {
+        "text": "v_x^2 also includes the y and z motion",
+        "why": "v_x^2 involves only the x component. It is nonzero on average because squaring turns every v_x, positive or negative, into a positive number."
+      },
+      {
+        "text": "⟨v_x^2⟩ is just ⟨v_x⟩ squared",
+        "why": "⟨v_x⟩^2 = 0^2 = 0, so the two can't be the same. ⟨v_x^2⟩ averages the squares, which are all positive."
+      }
+    ],
+    "explanation": "A molecule with v_x = −300 m/s and one with +300 m/s cancel in ⟨v_x⟩, but each adds 9 × 10^4 m^2/s^2 to the sum for ⟨v_x^2⟩. So ⟨v_x^2⟩ = (k_B T)/m is positive and grows with T."
+  },
+  {
+    "id": "pc27-velocity-component-abs-meaning",
+    "type": "multiple-choice",
+    "prompt": "Because ⟨v_x⟩ = 0, the section also works out ⟨|v_x|⟩ = √((2k_B T)/(πm)). What does ⟨|v_x|⟩ describe?",
+    "choices": [
+      {
+        "text": "The average speed of motion along one direction",
+        "correct": true
+      },
+      {
+        "text": "The average speed counting all three directions",
+        "why": "⟨|v_x|⟩ uses only the x component of the velocity. It is the average speed for motion along one direction."
+      },
+      {
+        "text": "The most probable value of v_x in the gas",
+        "why": "The most probable v_x is 0, at the peak of f(v_x). ⟨|v_x|⟩ is the average size of v_x, ignoring its sign."
+      },
+      {
+        "text": "The average velocity of the gas as a whole",
+        "why": "The gas as a whole doesn't move: ⟨v_x⟩ = 0. Taking |v_x| drops the sign and gives the average speed along x."
+      }
+    ],
+    "explanation": "Taking the absolute value drops the direction, so +v_x and −v_x no longer cancel. The section finds ⟨|v_x|⟩ by doubling the integral over positive v_x only, which the symmetry of f(v_x) allows."
+  },
+  {
+    "id": "pc27-velocity-component-speed-not-gaussian",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which of these distributions is a Gaussian centered on zero?",
+    "choices": [
+      {
+        "text": "The distribution of one velocity component, v_x",
+        "correct": true
+      },
+      {
+        "text": "The distribution of molecular speeds",
+        "why": "The section notes that the speed distribution, found in section 27.3, is not a Gaussian. Speeds can't be negative, while v_x runs from −∞ to ∞."
+      },
+      {
+        "text": "The distribution of molecules' positions in the box",
+        "why": "In an ideal gas the molecules are spread evenly through the box. It is the velocity component v_x that has a Gaussian distribution."
+      },
+      {
+        "text": "The distribution of the magnitude |v_x|",
+        "why": "|v_x| can't be negative, so its distribution can't be centered on zero. The full Gaussian belongs to v_x itself."
+      }
+    ],
+    "explanation": "f(v_x) is proportional to exp(−(m v_x^2)/(2k_B T)), a Gaussian in v_x that is symmetric about zero, because v_x can be positive or negative. The section notes that the distribution of speeds, which can't be negative, is not a Gaussian."
+  },
+  {
+    "id": "pc27-velocity-component-units",
+    "type": "multiple-choice",
+    "prompt": "f(v_x) dv_x is the probability that a molecule's v_x lies in a small range dv_x, so it is a pure number. What units does f(v_x) itself have?",
+    "choices": [
+      {
+        "text": "s/m, the inverse of a velocity",
+        "correct": true
+      },
+      {
+        "text": "m/s, the units of a velocity",
+        "why": "Multiplying f(v_x) by dv_x, in m/s, must cancel the units. So f(v_x) has units of s/m."
+      },
+      {
+        "text": "None; it is a pure probability",
+        "why": "f(v_x) is a probability per unit of v_x. Only f(v_x) dv_x is a pure number, so f(v_x) has units of s/m."
+      },
+      {
+        "text": "m^2/s^2, like ⟨v_x^2⟩",
+        "why": "Those are the units of v_x^2. Since f(v_x) dv_x has no units and dv_x is in m/s, f(v_x) is in s/m."
+      }
+    ],
+    "explanation": "dv_x is in m/s, so f(v_x) must be in s/m for the product to be a pure number. The constant √(m/(2πk_B T)) has these units: m/(k_B T) is in kg/J = s^2/m^2, whose square root is s/m."
+  },
+  {
+    "id": "pc27-velocity-component-spread-helium",
+    "type": "numeric",
+    "prompt": "The spread of f(v_x) is set by √((k_B T)/m), the square root of ⟨v_x^2⟩ = (k_B T)/m. For He atoms at 400 K, k_B T = 5.52 × 10^−21 J and m = 6.65 × 10^−27 kg. What is √((k_B T)/m), in m/s? (Give it as a decimal.)",
+    "answer": 911.1,
+    "explanation": "(k_B T)/m = (5.52 × 10^−21 J)/(6.65 × 10^−27 kg) = 8.30 × 10^5 m^2/s^2, and its square root is 911.1 m/s. Light He atoms have a wide spread of v_x, even though ⟨v_x⟩ is still 0."
+  },
+  {
+    "id": "pc27-velocity-component-abs-argon",
+    "type": "numeric",
+    "prompt": "For Ar at 300 K, (k_B T)/m = 6.24 × 10^4 m^2/s^2. Using ⟨|v_x|⟩ = √((2k_B T)/(πm)), what is the average speed along one direction, ⟨|v_x|⟩, in m/s? (Give it as a decimal.)",
+    "answer": 199.3,
+    "explanation": "(2k_B T)/(πm) = (2 × 6.24 × 10^4)/π m^2/s^2 = 3.97 × 10^4 m^2/s^2, and its square root is 199.3 m/s. This is the average size of v_x, whatever its sign; ⟨v_x⟩ itself is 0."
+  },
+  {
+    "id": "pc27-velocity-component-spread-ratio-t",
+    "type": "numeric",
+    "prompt": "The spread of f(v_x) is proportional to √((k_B T)/m). For N2, by what factor does the spread grow when the temperature rises from 100 K to 900 K?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "The spread scales as √T, and √(900/100) = √9 = 3. The curve becomes three times as wide and its peak one third as high, so the area under it stays 1."
+  },
+  {
+    "id": "pc27-velocity-component-peak-ratio-mass",
+    "type": "numeric",
+    "prompt": "The height of f(v_x) at its peak, v_x = 0, is the normalization constant √(m/(2πk_B T)). At the same temperature, how many times higher is the peak for O2 (M = 32.0 g/mol) than for H2 (M = 2.0 g/mol)?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "The molecular mass m is proportional to M, so the ratio is √(32.0/2.0) = √16 = 4. The O2 curve is 4 times as tall as the H2 curve and, to keep the area 1, 4 times as narrow."
+  },
+  {
+    "id": "pc27-velocity-component-table-mean-square",
+    "type": "numeric",
+    "prompt": "A model gas has only five possible values of v_x: −400, −200, 0, +200 and +400 m/s, with probabilities 0.10, 0.20, 0.40, 0.20 and 0.10. Using ⟨v_x^2⟩ = Σ v_i^2 P_i, where v_i is each value and P_i its probability, what is ⟨v_x^2⟩, in m^2/s^2?",
+    "answer": 48000,
+    "tolerance": 0,
+    "explanation": "⟨v_x^2⟩ = 0.10 × (−400)^2 + 0.20 × (−200)^2 + 0.40 × 0 + 0.20 × 200^2 + 0.10 × 400^2 = 16000 + 8000 + 0 + 8000 + 16000 = 48000 m^2/s^2. The same table gives ⟨v_x⟩ = 0, since its positive and negative terms cancel, but the squares all add."
+  }
+]

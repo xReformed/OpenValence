@@ -1,0 +1,187 @@
+[
+  {
+    "id": "pc24-henry-limits-nonideal-curve",
+    "type": "multiple-choice",
+    "prompt": "For an ideal solution, a plot of P_1 against x_1 is a straight line with slope P_1^*. What does the plot look like above a non-ideal solution?",
+    "choices": [
+      {
+        "text": "A curve, nearly straight only toward the two ends",
+        "correct": true
+      },
+      {
+        "text": "A straight line with a slope other than P_1^*",
+        "why": "A non-ideal solution gives a curve, not one straight line. It is nearly straight only near the ends, with slope P_1^* toward x_1 = 1 and a different slope toward x_1 = 0."
+      },
+      {
+        "text": "A horizontal line at P_1^* for every x_1",
+        "why": "P_1 still falls toward zero as x_1 → 0, since little of component 1 is left. The graph is a curve that is roughly straight near each end."
+      },
+      {
+        "text": "A curve, straight in the middle but bent at the ends",
+        "why": "It is the other way round: the ends are nearly straight, while the middle is described by neither limiting law."
+      }
+    ],
+    "explanation": "Above a non-ideal solution P_1 against x_1 is a curve. Toward x_1 = 1 it approaches the Raoult line, and toward x_1 = 0 there is often a more or less linear region with a different slope."
+  },
+  {
+    "id": "pc24-henry-limits-raoult-end",
+    "type": "multiple-choice",
+    "prompt": "Toward which end does the vapor-pressure curve of component 1 above a non-ideal solution approach the Raoult line, P_1 = P_1^* x_1?",
+    "choices": [
+      {
+        "text": "x_1 → 1, where component 1 is the solvent",
+        "correct": true
+      },
+      {
+        "text": "x_1 → 0, where component 1 is the solute",
+        "why": "Near x_1 = 0 the curve follows a straight line of a different slope, K_H: that is Henry's law. The curve approaches the Raoult line as x_1 → 1."
+      },
+      {
+        "text": "Near the middle, at x_1 = 0.5",
+        "why": "Neither limiting law describes the middle of the range. The curve approaches the Raoult line as x_1 → 1, where 1 is the majority component."
+      },
+      {
+        "text": "At both ends, x_1 → 0 and x_1 → 1",
+        "why": "At x_1 → 0 the curve approaches a different straight line, the Henry line with slope K_H. Only toward x_1 = 1 does it approach the Raoult line."
+      }
+    ],
+    "explanation": "When component 1 is nearly pure, as x_1 → 1, it is the solvent and its vapor pressure obeys Raoult's law, P_1 = P_1^* x_1. Raoult's law is the limiting law for the solvent."
+  },
+  {
+    "id": "pc24-henry-limits-dilute-role",
+    "type": "multiple-choice",
+    "prompt": "In the limit x_1 → 0, what role does component 1 play, and which law does its vapor pressure follow?",
+    "choices": [
+      {
+        "text": "It is the solute, and it follows Henry's law",
+        "correct": true
+      },
+      {
+        "text": "It is the solvent, and it follows Henry's law",
+        "why": "At x_1 → 0, component 1 is the minority component, so it is the solute. Henry's law, P_1 = K_H x_1, is the right law for it."
+      },
+      {
+        "text": "It is the solute, and it follows Raoult's law",
+        "why": "It is the solute, but Raoult's law is the limit for the solvent, as x_1 → 1. A dilute solute follows Henry's law, P_1 = K_H x_1."
+      },
+      {
+        "text": "It is the solvent, and it follows Raoult's law",
+        "why": "That describes the other end, x_1 → 1, where component 1 is the majority. As x_1 → 0 it is the solute and follows Henry's law."
+      }
+    ],
+    "explanation": "At low concentration component 1 is the minority component, the solute. Its partial pressure follows Henry's law, P_1 = K_H x_1: a straight line whose slope K_H differs from P_1^*."
+  },
+  {
+    "id": "pc24-henry-limits-intercept",
+    "type": "multiple-choice",
+    "prompt": "If the straight Henry line, P_1 = K_H x_1, is extended all the way to x_1 = 1, at what pressure does it meet that edge of the plot?",
+    "choices": [
+      {
+        "text": "At K_H, which differs from P_1^*",
+        "correct": true
+      },
+      {
+        "text": "At P_1^*, the vapor pressure of pure 1",
+        "why": "That is where the Raoult line ends. The Henry line has slope K_H, so at x_1 = 1 it reaches K_H, a different point."
+      },
+      {
+        "text": "At zero pressure",
+        "why": "The Henry line starts at zero at x_1 = 0 and rises with slope K_H. At x_1 = 1 it reaches K_H."
+      },
+      {
+        "text": "At K_H + P_1^*",
+        "why": "Nothing is added; at x_1 = 1, P_1 = K_H × 1 = K_H. That point differs from P_1^*, the pure vapor pressure."
+      }
+    ],
+    "explanation": "Setting x_1 = 1 in P_1 = K_H x_1 gives K_H. Because K_H is not P_1^*, the extended Henry line meets the pure-component edge at a different point from the Raoult line."
+  },
+  {
+    "id": "pc24-henry-limits-kh-pair",
+    "type": "multiple-choice",
+    "prompt": "Why does K_H have to be measured for each solute–solvent combination, while P^* does not?",
+    "choices": [
+      {
+        "text": "K_H belongs to the pair; P^* to one pure liquid",
+        "correct": true
+      },
+      {
+        "text": "K_H changes with x, but P^* stays fixed",
+        "why": "In the dilute region K_H is a constant, the slope of the Henry line. It must be measured for each pair because it depends on both components."
+      },
+      {
+        "text": "P^* also depends on the solvent, like K_H",
+        "why": "P^* is the vapor pressure of one pure component, so no solvent is involved. Only K_H depends on the combination of two components."
+      },
+      {
+        "text": "K_H is the same for every solute in a solvent",
+        "why": "If that were so, one value per solvent would do. K_H depends on both the solute and the solvent, so each combination needs its own measurement."
+      }
+    ],
+    "explanation": "P^* is a property of one pure component, so one value serves in every mixture. K_H describes a solute in a particular solvent, so it must be found, by measuring vapor pressures, for each solute–solvent combination."
+  },
+  {
+    "id": "pc24-henry-limits-range",
+    "type": "multiple-choice",
+    "prompt": "How does the range of compositions over which Raoult's and Henry's laws hold depend on how far a solution deviates from ideality?",
+    "choices": [
+      {
+        "text": "The smaller the deviations, the wider the range",
+        "correct": true
+      },
+      {
+        "text": "The larger the deviations, the wider the range",
+        "why": "Large deviations bend the curve away from both straight lines quickly. The section says the more modest the deviations, the larger the range of validity."
+      },
+      {
+        "text": "The range is the same for every solution",
+        "why": "The range depends on the solution. The more modest the deviations from ideality, the farther the two limiting laws reach."
+      },
+      {
+        "text": "Only Henry's range grows; Raoult's shrinks",
+        "why": "The two limiting laws do not trade range. Both reach farther when the deviations from ideality are more modest."
+      }
+    ],
+    "explanation": "In general, the more modest the deviations from ideality, the larger the range of validity of the two limiting laws. For an ideal solution Raoult's law holds over the whole range."
+  },
+  {
+    "id": "pc24-henry-limits-middle",
+    "type": "multiple-choice",
+    "prompt": "What do Raoult's and Henry's limiting laws tell us about the vapor pressure of a non-ideal solution at compositions far from both ends?",
+    "choices": [
+      {
+        "text": "Nothing; neither law covers the middle",
+        "correct": true
+      },
+      {
+        "text": "Henry's law holds there, with slope K_H",
+        "why": "Henry's law is a limit for x → 0, where the component is a dilute solute. The middle of the range is described by neither law."
+      },
+      {
+        "text": "Raoult's law holds there, with slope P^*",
+        "why": "Raoult's law is a limit for x → 1, where the component is the solvent. Away from both ends neither law applies."
+      },
+      {
+        "text": "The average of the two laws gives it",
+        "why": "The section offers no such averaging rule. The two limiting laws describe the high and low ends, but not the middle."
+      }
+    ],
+    "explanation": "The section notes that the limiting laws describe both the high and the low end, but not the middle. Between the two ends the curve departs from both straight lines."
+  },
+  {
+    "id": "pc24-henry-limits-p-from-kh",
+    "type": "numeric",
+    "prompt": "A volatile solute B, dissolved at low concentration in a solvent, obeys Henry's law, P_B = K_H x_B, with K_H = 620 torr. What is the partial pressure of B above a solution with x_B = 0.0150, in torr? (Give it as a decimal.)",
+    "answer": 9.3,
+    "unit": "torr",
+    "explanation": "P_B = K_H x_B = (620 torr)(0.0150) = 9.30 torr. Henry's law applies because B is the dilute solute, in the limit x_B → 0."
+  },
+  {
+    "id": "pc24-henry-limits-kh-from-data",
+    "type": "numeric",
+    "prompt": "In a dilute solution of solute B, the measured partial pressure of B is 4.90 torr at x_B = 0.0200, in the range where Henry's law, P_B = K_H x_B, holds. What is K_H, in torr?",
+    "answer": 245,
+    "unit": "torr",
+    "tolerance": 0,
+    "explanation": "K_H = P_B/x_B = (4.90 torr)/0.0200 = 245 torr. K_H belongs to this solute–solvent pair, so it has to be found from measurements like this one; it generally differs from the vapor pressure of pure B."
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "id": "pc24-gibbs-duhem-statement",
+    "type": "multiple-choice",
+    "prompt": "For a mixture held at constant temperature and pressure, what does the Gibbs–Duhem equation state?",
+    "choices": [
+      {
+        "text": "Σ n_i dμ_i = 0",
+        "correct": true
+      },
+      {
+        "text": "Σ μ_i dn_i = 0",
+        "why": "Σ μ_i dn_i is the part of dG that comes from changing the amounts, and it need not be zero. Gibbs–Duhem weights each change in chemical potential by the amount: Σ n_i dμ_i = 0."
+      },
+      {
+        "text": "Σ n_i μ_i = 0",
+        "why": "Σ n_i μ_i is the total Gibbs energy G itself, which is not zero. The Gibbs–Duhem equation is about the changes dμ_i, each weighted by its amount n_i."
+      },
+      {
+        "text": "Σ dμ_i = 0",
+        "why": "The changes are not simply added: each dμ_i is weighted by the amount n_i of that component. The equation is Σ n_i dμ_i = 0."
+      }
+    ],
+    "explanation": "At constant T and P, the changes in the chemical potentials of a mixture's components are tied together by Σ n_i dμ_i = 0. The section calls this a compositional constraint on how the chemical potentials can change."
+  },
+  {
+    "id": "pc24-gibbs-duhem-constant-tp",
+    "type": "multiple-choice",
+    "prompt": "Before reaching the Gibbs–Duhem equation, the section finds Σ n_i dμ_i = V dP − S dT. What makes the right side zero?",
+    "choices": [
+      {
+        "text": "Holding temperature and pressure constant",
+        "correct": true
+      },
+      {
+        "text": "Holding the composition of the mixture constant",
+        "why": "The equation is about how the chemical potentials change as the composition changes, so the composition is not held fixed. The right side vanishes because dP = 0 and dT = 0."
+      },
+      {
+        "text": "Assuming the solution is ideal",
+        "why": "No ideal-solution assumption is needed; the result holds for any mixture. The right side is zero because dP = 0 and dT = 0."
+      },
+      {
+        "text": "Holding the volume and the entropy constant",
+        "why": "V and S are only coefficients on the right side; the changes there are dP and dT. Holding P and T constant makes V dP − S dT zero."
+      }
+    ],
+    "explanation": "With dP = 0 and dT = 0, V dP − S dT = 0, which leaves Σ n_i dμ_i = 0. So the Gibbs–Duhem equation in this form applies at constant temperature and pressure."
+  },
+  {
+    "id": "pc24-gibbs-duhem-cancel",
+    "type": "multiple-choice",
+    "prompt": "Differentiating G = Σ n_i μ_i gives dG = Σ n_i dμ_i + Σ μ_i dn_i. Setting this equal to dG = V dP − S dT + Σ μ_i dn_i, which term cancels from both sides?",
+    "choices": [
+      {
+        "text": "Σ μ_i dn_i",
+        "correct": true
+      },
+      {
+        "text": "Σ n_i dμ_i",
+        "why": "Σ n_i dμ_i appears on only one side, so it cannot cancel. It survives and becomes the left side of Σ n_i dμ_i = V dP − S dT."
+      },
+      {
+        "text": "V dP − S dT",
+        "why": "V dP − S dT appears only in the second expression for dG. It is what is left on the right after Σ μ_i dn_i cancels."
+      },
+      {
+        "text": "Every term, so dG = 0",
+        "why": "Only the shared sum Σ μ_i dn_i cancels. What remains is Σ n_i dμ_i = V dP − S dT, not dG = 0."
+      }
+    ],
+    "explanation": "Both expressions contain Σ μ_i dn_i, so it cancels. The extra terms from differentiating the products n_i μ_i must then satisfy Σ n_i dμ_i = V dP − S dT, which is zero at constant T and P."
+  },
+  {
+    "id": "pc24-gibbs-duhem-linked",
+    "type": "multiple-choice",
+    "prompt": "What does the binary Gibbs–Duhem equation, dμ_A = −((x_B)/(x_A)) dμ_B, tell you about the chemical potentials of A and B?",
+    "choices": [
+      {
+        "text": "They cannot change independently of each other",
+        "correct": true
+      },
+      {
+        "text": "They are always equal to each other",
+        "why": "The equation links the changes dμ_A and dμ_B, not the values of μ_A and μ_B. Fixing one change fixes the other."
+      },
+      {
+        "text": "They always change by the same amount",
+        "why": "The changes are equal in size only when x_A = x_B, and even then they have opposite signs. In general the ratio is −x_B/x_A."
+      },
+      {
+        "text": "Either one can change while the other stays fixed",
+        "why": "If μ_B changes, dμ_A = −(x_B/x_A) dμ_B is not zero as long as B is present. So μ_A must change too."
+      }
+    ],
+    "explanation": "The Gibbs–Duhem equation relates the change in one chemical potential to the change in the other. In a binary mixture at constant T and P, choosing dμ_B fixes dμ_A."
+  },
+  {
+    "id": "pc24-gibbs-duhem-opposite",
+    "type": "multiple-choice",
+    "prompt": "In a binary mixture at constant temperature and pressure, a change in composition raises the chemical potential of B. According to dμ_A = −((x_B)/(x_A)) dμ_B, what happens to the chemical potential of A?",
+    "choices": [
+      {
+        "text": "It decreases",
+        "correct": true
+      },
+      {
+        "text": "It increases",
+        "why": "Mole fractions are positive, so −x_B/x_A is negative. A rise in μ_B (dμ_B > 0) gives dμ_A < 0."
+      },
+      {
+        "text": "It stays the same",
+        "why": "dμ_A = 0 would need x_B = 0, but B is present in the mixture. With x_B > 0, μ_A must fall when μ_B rises."
+      },
+      {
+        "text": "It increases if A is the major component",
+        "why": "The factor −x_B/x_A is negative for any composition. Which component is in excess changes only the size of dμ_A, not its sign."
+      }
+    ],
+    "explanation": "Because x_B/x_A is positive, the minus sign makes dμ_A and dμ_B opposite in sign. When one chemical potential rises, the other must fall."
+  },
+  {
+    "id": "pc24-gibbs-duhem-dilute",
+    "type": "multiple-choice",
+    "prompt": "In a dilute solution of B in A, x_A = 0.99 and x_B = 0.01. According to dμ_A = −((x_B)/(x_A)) dμ_B, how does the size of dμ_A compare with the size of dμ_B?",
+    "choices": [
+      {
+        "text": "dμ_A is about 1/99 as large",
+        "correct": true
+      },
+      {
+        "text": "dμ_A is about 99 times as large",
+        "why": "This turns the ratio upside down. The factor is x_B/x_A = 0.01/0.99 ≈ 1/99, so the chemical potential of the solvent A changes far less."
+      },
+      {
+        "text": "They are the same size",
+        "why": "Equal sizes would need x_A = x_B. Here x_B/x_A ≈ 1/99, so dμ_A is much smaller."
+      },
+      {
+        "text": "dμ_A is exactly zero",
+        "why": "dμ_A is small but not zero, since x_B is not zero. It is about 1/99 the size of dμ_B."
+      }
+    ],
+    "explanation": "The size ratio is x_B/x_A = 0.01/0.99 ≈ 1/99. In a dilute solution, a change in the solute's chemical potential barely changes the solvent's."
+  },
+  {
+    "id": "pc24-gibbs-duhem-ideal-dmu",
+    "type": "multiple-choice",
+    "prompt": "In the ideal case, μ_B = μ_B^* + RT ln x_B, where μ_B^* is fixed at a given temperature. At constant temperature, what is dμ_B?",
+    "choices": [
+      {
+        "text": "((RT)/(x_B)) dx_B",
+        "correct": true
+      },
+      {
+        "text": "RT dx_B",
+        "why": "This forgets that the derivative of ln x_B is 1/x_B. The change is d(RT ln x_B) = (RT/x_B) dx_B."
+      },
+      {
+        "text": "RT x_B dx_B",
+        "why": "The derivative of ln x_B is 1/x_B, not x_B. So dμ_B = (RT/x_B) dx_B."
+      },
+      {
+        "text": "−((RT)/(x_B)) dx_B",
+        "why": "There is no minus sign: ln x_B rises as x_B rises, so dμ_B has the same sign as dx_B."
+      }
+    ],
+    "explanation": "μ_B^* does not change at fixed T, so its differential is 0. Since d ln x_B = dx_B/x_B, dμ_B = 0 + (RT/x_B) dx_B."
+  },
+  {
+    "id": "pc24-gibbs-duhem-ideal-result",
+    "type": "multiple-choice",
+    "prompt": "Component B of a binary solution obeys μ_B = μ_B^* + RT ln x_B over the whole composition range. What does the Gibbs–Duhem equation then give for component A?",
+    "choices": [
+      {
+        "text": "μ_A = μ_A^* + RT ln x_A",
+        "correct": true
+      },
+      {
+        "text": "μ_A = μ_A^* − RT ln x_A",
+        "why": "The sign is positive. Gibbs–Duhem gives dμ_A = (RT/x_A) dx_A, which integrates to +RT ln x_A."
+      },
+      {
+        "text": "μ_A = μ_A^* + RT ln x_B",
+        "why": "The chemical potential of A depends on its own mole fraction. Integrating dμ_A = (RT/x_A) dx_A gives RT ln x_A."
+      },
+      {
+        "text": "μ_A = μ_A^*, whatever the composition",
+        "why": "μ_A cannot stay fixed while μ_B changes, since Gibbs–Duhem forces dμ_A = −(x_B/x_A) dμ_B. The result is μ_A = μ_A^* + RT ln x_A."
+      }
+    ],
+    "explanation": "Putting dμ_B = (RT/x_B) dx_B into dμ_A = −(x_B/x_A) dμ_B gives dμ_A = (RT/x_A) dx_A. Integrating from pure A, where μ_A = μ_A^*, gives μ_A = μ_A^* + RT ln x_A."
+  },
+  {
+    "id": "pc24-gibbs-duhem-raoult-both",
+    "type": "multiple-choice",
+    "prompt": "What does the ideal case of the Gibbs–Duhem equation show about Raoult's law in a binary solution?",
+    "choices": [
+      {
+        "text": "If one component obeys it at all x, so does the other",
+        "correct": true
+      },
+      {
+        "text": "It can hold for only one of the two components at once",
+        "why": "Gibbs–Duhem shows the opposite: the ideal form μ_B = μ_B^* + RT ln x_B for one component forces the same form for the other."
+      },
+      {
+        "text": "It holds for every binary solution, ideal or not",
+        "why": "Gibbs–Duhem does not make every solution ideal. It only says that if one component follows Raoult's law over the whole range, so does the other."
+      },
+      {
+        "text": "It holds only for whichever component is in excess",
+        "why": "The argument covers the whole range of composition, not just the component in excess. If one component obeys the law throughout, the other must too."
+      }
+    ],
+    "explanation": "If μ_B = μ_B^* + RT ln x_B over the whole composition range, Gibbs–Duhem gives μ_A = μ_A^* + RT ln x_A. So Raoult's law can hold over the whole range for one component only if it also holds for the other."
+  },
+  {
+    "id": "pc24-gibbs-duhem-pure-start",
+    "type": "multiple-choice",
+    "prompt": "To find μ_A, the section integrates dμ_A = ((RT)/(x_A)) dx_A starting from pure A. What are x_A and μ_A at that starting point?",
+    "choices": [
+      {
+        "text": "x_A = 1 and μ_A = μ_A^*",
+        "correct": true
+      },
+      {
+        "text": "x_A = 0 and μ_A = μ_A^*",
+        "why": "Pure A contains no B, so its mole fraction is x_A = 1, not 0. There μ_A has its pure-component value μ_A^*."
+      },
+      {
+        "text": "x_A = 1 and μ_A = 0",
+        "why": "x_A = 1 is right, but μ_A of pure A is μ_A^*, not zero. This matches μ_A^* + RT ln 1 = μ_A^*."
+      },
+      {
+        "text": "x_A = 1 and μ_A = μ_B^*",
+        "why": "μ_B^* is the chemical potential of pure B. Pure A has μ_A = μ_A^*."
+      }
+    ],
+    "explanation": "Pure A has x_A = 1, and its chemical potential there is μ_A^*. Integrating from that point gives μ_A = μ_A^* + RT ln x_A, which returns μ_A^* at x_A = 1 because ln 1 = 0."
+  },
+  {
+    "id": "pc24-gibbs-duhem-from-mole-fractions",
+    "type": "numeric",
+    "prompt": "In a binary mixture at constant temperature and pressure, x_A = 0.250 and x_B = 0.750. A small change in composition raises μ_B by 12.0 J/mol. Using the Gibbs–Duhem equation dμ_A = −((x_B)/(x_A)) dμ_B, what is dμ_A, in J/mol, including its sign?",
+    "answer": -36,
+    "tolerance": 0,
+    "explanation": "x_B/x_A = 0.750/0.250 = 3.00, so dμ_A = −(3.00)(12.0 J/mol) = −36.0 J/mol. The minus sign shows that μ_A falls as μ_B rises."
+  },
+  {
+    "id": "pc24-gibbs-duhem-from-moles",
+    "type": "numeric",
+    "prompt": "A mixture at constant temperature and pressure holds n_A = 4.00 mol and n_B = 1.00 mol. A small change in composition lowers μ_A by 5.00 J/mol, so dμ_A = −5.00 J/mol. Using n_A dμ_A + n_B dμ_B = 0, what is dμ_B, in J/mol?",
+    "answer": 20,
+    "tolerance": 0,
+    "explanation": "dμ_B = −(n_A/n_B) dμ_A = −(4.00/1.00)(−5.00 J/mol) = +20.0 J/mol. The minor component's chemical potential changes four times as much as the major component's, in the opposite direction."
+  },
+  {
+    "id": "pc24-gibbs-duhem-ideal-step",
+    "type": "numeric",
+    "prompt": "For an ideal binary solution, the section finds dμ_A = ((RT)/(x_A)) dx_A. At 300 K, x_A = 0.400 increases by dx_A = 0.0100. With R = 8.314 J/(mol·K), what is dμ_A, in J/mol? (Give it as a decimal.)",
+    "answer": 62.4,
+    "explanation": "RT/x_A = (8.314 × 300)/0.400 = 6236 J/mol, so dμ_A = (6236 J/mol)(0.0100) = 62.4 J/mol. A rise in x_A raises μ_A."
+  }
+]

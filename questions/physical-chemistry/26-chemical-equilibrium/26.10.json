@@ -1,0 +1,216 @@
+[
+  {
+    "id": "pc26-fugacity-k-fudge",
+    "type": "multiple-choice",
+    "prompt": "The section calls fugacity a “fudge” factor. In μ = μ° + RT ln(f/f°) for a real gas, which quantity carries all of the gas's deviations from ideal behavior?",
+    "choices": [
+      {
+        "text": "The fugacity f",
+        "correct": true
+      },
+      {
+        "text": "The standard value μ°",
+        "why": "μ° is the same reference value used for an ideal gas. The deviations from ideality are all placed in the fugacity f."
+      },
+      {
+        "text": "The factor RT in front",
+        "why": "RT is unchanged from the ideal-gas expression. The fugacity f, which stands where p stood, holds the deviations."
+      },
+      {
+        "text": "The reference fugacity f°",
+        "why": "f° is a fixed standard value that only makes the ratio unitless. The deviations are contained in f itself."
+      }
+    ],
+    "explanation": "The expression μ = μ° + RT ln(p/p°) holds only for ideal gases. Putting the fugacity f in place of p keeps the same simple form for any gas, because f is related to the pressure but contains all of the deviations from ideality."
+  },
+  {
+    "id": "pc26-fugacity-k-compression-factor",
+    "type": "multiple-choice",
+    "prompt": "Differentiating μ = μ° + RT ln(f/f°) with respect to p at constant T gives RT((∂ln f)/(∂p))_T = V. Multiplying both sides by p/(RT) gives p((∂ln f)/(∂p))_T = pV/(RT). What is pV/(RT)?",
+    "choices": [
+      {
+        "text": "The compression factor Z",
+        "correct": true
+      },
+      {
+        "text": "The fugacity coefficient γ",
+        "why": "γ = f/p is found later, by integrating. The ratio pV/(RT) is the compression factor Z, which is 1 for an ideal gas."
+      },
+      {
+        "text": "The fugacity f itself",
+        "why": "f has units of pressure, while pV/(RT) is a pure number. It is the compression factor Z."
+      },
+      {
+        "text": "The chemical potential μ",
+        "why": "μ has units of energy per mole, but pV/(RT) has no units. It is the compression factor Z."
+      }
+    ],
+    "explanation": "pV/(RT) is the compression factor Z, which equals 1 for an ideal gas. This step ties the fugacity to how far the gas is from ideal."
+  },
+  {
+    "id": "pc26-fugacity-k-ideal-gamma",
+    "type": "multiple-choice",
+    "prompt": "The section finds ln γ = the integral from 0 to p of ((Z − 1)/p) dp, where γ = f/p is the fugacity coefficient (often written φ). For a gas that behaves ideally, Z = 1 at every pressure. What is γ?",
+    "choices": [
+      {
+        "text": "Exactly 1, so f = p",
+        "correct": true
+      },
+      {
+        "text": "Exactly 0, so f = 0",
+        "why": "With Z = 1 the integral is 0, so ln γ = 0. That makes γ = 1, not 0, and the fugacity equals the pressure."
+      },
+      {
+        "text": "Undefined, since the integral starts at p = 0",
+        "why": "The integrand (Z − 1)/p is zero at every pressure, so the integral is simply 0. Then ln γ = 0 and γ = 1."
+      },
+      {
+        "text": "Slightly below 1, as no gas is truly ideal",
+        "why": "This gas has Z = 1, so the integral gives ln γ = 0 and γ = 1 exactly. Only a Z that differs from 1 moves γ away from 1."
+      }
+    ],
+    "explanation": "With Z = 1 the integrand (Z − 1)/p is zero, so ln γ = 0 and γ = 1. The fugacity of an ideal gas is just its pressure."
+  },
+  {
+    "id": "pc26-fugacity-k-z-below-one",
+    "type": "multiple-choice",
+    "prompt": "A gas has a compression factor Z below 1 at every pressure from 0 up to p. What does ln γ = the integral from 0 to p of ((Z − 1)/p) dp say about its fugacity f = γp?",
+    "choices": [
+      {
+        "text": "γ < 1, so f is less than p",
+        "correct": true
+      },
+      {
+        "text": "γ > 1, so f is greater than p",
+        "why": "Z − 1 is negative throughout, so the integral and ln γ are negative. That makes γ < 1 and f < p."
+      },
+      {
+        "text": "γ = 1, so f equals p",
+        "why": "γ = 1 needs Z = 1 all the way. With Z < 1 the integrand is negative, so ln γ < 0 and γ < 1."
+      },
+      {
+        "text": "γ is negative, so f is negative",
+        "why": "A negative ln γ means γ lies between 0 and 1, not below 0. The fugacity stays positive but is smaller than p."
+      }
+    ],
+    "explanation": "With Z < 1 the integrand (Z − 1)/p is negative, so ln γ < 0 and γ < 1. The gas's fugacity, f = γp, is then smaller than its pressure."
+  },
+  {
+    "id": "pc26-fugacity-k-partial-f",
+    "type": "numeric",
+    "prompt": "In an equilibrium mixture for methanol synthesis, CO(g) + 2H2(g) ⇌ CH3OH(g), the methanol has a partial pressure P_i = 24.0 bar and a fugacity coefficient γ_i = 0.850. Using f_i = γ_i P_i, what is the methanol's partial fugacity, in bar? (Give it as a decimal.)",
+    "answer": 20.4,
+    "unit": "bar",
+    "explanation": "f_i = 0.850 × 24.0 bar = 20.4 bar. Since γ_i < 1, the methanol's fugacity is below its partial pressure, and it is f_i, not P_i, that belongs in the equilibrium constant."
+  },
+  {
+    "id": "pc26-fugacity-k-in-k",
+    "type": "multiple-choice",
+    "prompt": "For a reaction of real gases at high pressure, the thermodynamic equilibrium constant K is built like K_P, but with something else in place of each partial pressure P_i. What replaces P_i?",
+    "choices": [
+      {
+        "text": "Its partial fugacity, f_i",
+        "correct": true
+      },
+      {
+        "text": "Its mole fraction, y_i",
+        "why": "Mole fractions do not carry a real gas's deviations from ideal behavior. Each P_i is replaced by the partial fugacity f_i, which does."
+      },
+      {
+        "text": "Its compression factor, Z_i",
+        "why": "Z measures how far a gas is from ideal, but it is not what sits inside the logarithm of μ. Each P_i becomes the partial fugacity f_i."
+      },
+      {
+        "text": "Its molar concentration, c_i",
+        "why": "Switching to concentrations does not remove the deviations from ideality. For real gases each P_i is replaced by its partial fugacity f_i."
+      }
+    ],
+    "explanation": "Since μ_i = μ_i° + RT ln(f_i/f°) holds for real gases, K is built from the partial fugacities f_i = γ_i P_i, each divided by f° = 1 bar. Written this way, K depends only on temperature even where the gases are far from ideal."
+  },
+  {
+    "id": "pc26-fugacity-k-methanol-k",
+    "type": "numeric",
+    "prompt": "For CO(g) + 2H2(g) ⇌ CH3OH(g), the thermodynamic equilibrium constant is K = (f_(CH3OH))/(f_(CO) f_(H2)^2), with each partial fugacity in bar (that is, divided by f° = 1 bar). At equilibrium, f_(CH3OH) = 20.0 bar, f_(CO) = 40.0 bar and f_(H2) = 50.0 bar. What is K? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0002,
+    "explanation": "K = 20.0/(40.0 × 50.0^2) = 20.0/(1.00 × 10^5) = 2.00 × 10^−4. The fugacity of H2 is squared because its stoichiometric coefficient is 2."
+  },
+  {
+    "id": "pc26-fugacity-k-kp-drift",
+    "type": "multiple-choice",
+    "prompt": "At a fixed temperature, K_P for a real-gas reaction, built from the equilibrium partial pressures, is found to change when the total pressure is raised a lot. Why?",
+    "choices": [
+      {
+        "text": "The fugacity coefficients γ_i change with pressure",
+        "correct": true
+      },
+      {
+        "text": "The standard pressure P° rises with the total pressure",
+        "why": "P° is fixed at 1 bar, whatever the pressure of the mixture. K_P drifts because the γ_i that link pressures to fugacities change with pressure."
+      },
+      {
+        "text": "Le Chatelier's principle changes the value of K",
+        "why": "A pressure change shifts the equilibrium composition, not K. The drift in K_P comes from the fugacity coefficients γ_i changing with pressure."
+      },
+      {
+        "text": "Partial pressures cannot be measured at high pressure",
+        "why": "They can be measured; they are just not the right variables for real gases. The fugacities f_i = γ_i P_i are, and the γ_i change with pressure."
+      }
+    ],
+    "explanation": "The constant that depends only on temperature is K written with fugacities, f_i = γ_i P_i. Because each γ_i changes with pressure, a ratio of partial pressures alone, K_P, is not truly constant."
+  },
+  {
+    "id": "pc26-fugacity-k-low-pressure",
+    "type": "multiple-choice",
+    "prompt": "Writing f_i = γ_i P_i splits the fugacity constant into K = K_(γ) K_P, where K_(γ) is built from the fugacity coefficients γ_i the same way K_P is built from the partial pressures. As the total pressure approaches zero, what happens to K_P?",
+    "choices": [
+      {
+        "text": "It approaches K",
+        "correct": true
+      },
+      {
+        "text": "It approaches zero",
+        "why": "The partial pressures shrink, but their ratio stays finite. Every γ_i → 1, so K_(γ) → 1 and K_P → K."
+      },
+      {
+        "text": "It approaches 1",
+        "why": "It is K_(γ) that approaches 1, not K_P. With K_(γ) = 1, K_P equals K."
+      },
+      {
+        "text": "It grows without limit",
+        "why": "Nothing in the ratio blows up as the pressure falls. All gases become ideal, so K_(γ) → 1 and K_P → K."
+      }
+    ],
+    "explanation": "All gases behave ideally as p → 0, so every γ_i → 1 and K_(γ) → 1. K_P then equals the true K, which is why K_P measured at low pressure is a good value of K."
+  },
+  {
+    "id": "pc26-fugacity-k-compress-direction",
+    "type": "multiple-choice",
+    "prompt": "For a real-gas reaction, K = K_(γ) K_P stays fixed at constant temperature. If compressing the mixture at that temperature makes K_(γ) fall below 1, how does K_P at equilibrium compare with K?",
+    "choices": [
+      {
+        "text": "It is larger than K",
+        "correct": true
+      },
+      {
+        "text": "It is smaller than K",
+        "why": "K_P = K/K_(γ), and dividing by a number below 1 gives a larger result. So K_P rises above K."
+      },
+      {
+        "text": "It equals K, since K depends only on T",
+        "why": "K is fixed, but K_P is a different quantity. With K_P = K/K_(γ) and K_(γ) < 1, K_P is larger than K."
+      },
+      {
+        "text": "It equals K_(γ)",
+        "why": "K_P and K_(γ) are separate factors whose product is K. With K_(γ) < 1, K_P = K/K_(γ) is larger than K."
+      }
+    ],
+    "explanation": "Since K_(γ) K_P = K, K_P = K/K_(γ). A K_(γ) below 1 makes K_P larger than K, so a value of K_P measured at high pressure is not the true constant."
+  },
+  {
+    "id": "pc26-fugacity-k-kp-from-k",
+    "type": "numeric",
+    "prompt": "For a real-gas reaction at high pressure, the fugacity constant K = K_(γ) K_P is 4.50 × 10^−5 at the temperature used, and the fugacity coefficients give K_(γ) = 0.750. What is K_P, the value built from the equilibrium partial pressures? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 6e-05,
+    "explanation": "K_P = K/K_(γ) = (4.50 × 10^−5)/0.750 = 6.00 × 10^−5. Because K_(γ) < 1, K_P is larger than K; at low pressure, where K_(γ) → 1, the two would agree."
+  }
+]

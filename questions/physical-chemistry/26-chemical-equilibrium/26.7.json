@@ -1,0 +1,277 @@
+[
+  {
+    "id": "pc26-vant-hoff-gibbs-helmholtz-step",
+    "type": "multiple-choice",
+    "prompt": "The section starts from the Gibbs–Helmholtz equation, ((∂(Δ_r G°/T))/(∂T))_P = −(Δ_r H°)/T^2. Why does this lead straight to how K depends on temperature?",
+    "choices": [
+      {
+        "text": "Δ_r G°/T equals −R ln K",
+        "correct": true
+      },
+      {
+        "text": "Δ_r H°/T equals −R ln K",
+        "why": "It is Δ_r G°, not Δ_r H°, that is tied to K, through Δ_r G° = −RT ln K. Dividing that by T gives Δ_r G°/T = −R ln K."
+      },
+      {
+        "text": "Δ_r G° is zero at equilibrium",
+        "why": "It is Δ_r G that is zero at equilibrium; Δ_r G° is a fixed standard value. It is tied to K by Δ_r G° = −RT ln K, so Δ_r G°/T = −R ln K."
+      },
+      {
+        "text": "Δ_r G°/T equals −R ln Q",
+        "why": "Q describes any mixture, through Δ_r G = Δ_r G° + RT ln Q. Only at equilibrium, where Q = K, does this tie Δ_r G° to a constant."
+      }
+    ],
+    "explanation": "Since Δ_r G° = −RT ln K, the quantity Δ_r G°/T is just −R ln K. Putting that into Gibbs–Helmholtz and dividing by −R gives the van 't Hoff equation, ((∂ ln K)/(∂T))_P = (Δ_r H°)/(RT^2)."
+  },
+  {
+    "id": "pc26-vant-hoff-differential",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the van 't Hoff equation in its differential form?",
+    "choices": [
+      {
+        "text": "((∂ ln K)/(∂T))_P = (Δ_r H°)/(RT^2)",
+        "correct": true
+      },
+      {
+        "text": "((∂ ln K)/(∂T))_P = (Δ_r G°)/(RT^2)",
+        "why": "Gibbs–Helmholtz trades Δ_r G° for Δ_r H°. The slope of ln K against T is set by the reaction enthalpy."
+      },
+      {
+        "text": "((∂ ln K)/(∂T))_P = −(Δ_r H°)/(RT^2)",
+        "why": "The minus sign of Gibbs–Helmholtz cancels the one in Δ_r G° = −RT ln K. So an endothermic reaction, with Δ_r H° > 0, has K rising with T."
+      },
+      {
+        "text": "((∂ ln K)/(∂T))_P = (Δ_r S°)/R",
+        "why": "Δ_r S°/R is the intercept of a plot of ln K against 1/T, not the derivative of ln K with T. The derivative is (Δ_r H°)/(RT^2)."
+      }
+    ],
+    "explanation": "The minus sign of Gibbs–Helmholtz and the one in Δ_r G° = −RT ln K cancel, leaving ((∂ ln K)/(∂T))_P = (Δ_r H°)/(RT^2). Since R and T^2 are positive, the sign of Δ_r H° decides whether K rises or falls with temperature."
+  },
+  {
+    "id": "pc26-vant-hoff-endothermic",
+    "type": "multiple-choice",
+    "prompt": "For an endothermic reaction, with Δ_r H° > 0, what does ((∂ ln K)/(∂T))_P = (Δ_r H°)/(RT^2) say happens to K as the temperature rises?",
+    "choices": [
+      {
+        "text": "K increases",
+        "correct": true
+      },
+      {
+        "text": "K decreases",
+        "why": "With Δ_r H° > 0 the right side is positive, so ln K, and K with it, goes up with T. K falls on heating only for an exothermic reaction."
+      },
+      {
+        "text": "K stays the same, since Δ_r H° is constant",
+        "why": "A constant Δ_r H° still gives a positive slope, (Δ_r H°)/(RT^2), not a zero one. ln K keeps rising with T."
+      },
+      {
+        "text": "It depends on the sign of Δ_r G°",
+        "why": "The equation holds Δ_r H°, not Δ_r G°, and its sign alone sets the direction. Here it is positive, so K rises."
+      }
+    ],
+    "explanation": "For Δ_r H° > 0, the slope of ln K against T is positive at every temperature. An endothermic reaction therefore has a larger K, and more products at equilibrium, when heated."
+  },
+  {
+    "id": "pc26-vant-hoff-exothermic-plot",
+    "type": "multiple-choice",
+    "prompt": "On a plot of ln K against 1/T, which way does the line run for an exothermic reaction?",
+    "choices": [
+      {
+        "text": "Up to the right, since its slope is positive",
+        "correct": true
+      },
+      {
+        "text": "Down to the right, since its slope is negative",
+        "why": "That is the plot for an endothermic reaction. With Δ_r H° < 0, the slope −Δ_r H°/R is positive."
+      },
+      {
+        "text": "Flat, since Δ_r H° does not change with T",
+        "why": "A constant Δ_r H° makes the line straight, not flat. Its slope is −Δ_r H°/R, which is positive here."
+      },
+      {
+        "text": "Curved, since K changes with T",
+        "why": "With Δ_r H° and Δ_r S° nearly constant, ln K is linear in 1/T even though K changes. The line rises to the right because −Δ_r H°/R > 0."
+      }
+    ],
+    "explanation": "The slope is −Δ_r H°/R, which is positive when Δ_r H° < 0. Moving right means a larger 1/T and so a lower T, so K grows as an exothermic reaction is cooled; the endothermic plot falls to the right instead."
+  },
+  {
+    "id": "pc26-vant-hoff-zero-enthalpy",
+    "type": "multiple-choice",
+    "prompt": "A reaction has Δ_r H° = 0. According to ln K = −((Δ_r H°)/R)(1/T) + (Δ_r S°)/R, how does its K change with temperature?",
+    "choices": [
+      {
+        "text": "It stays the same, at K = exp(Δ_r S°/R)",
+        "correct": true
+      },
+      {
+        "text": "It rises with T, as for an endothermic reaction",
+        "why": "K rises with T only when Δ_r H° > 0. With Δ_r H° = 0 the 1/T term drops out, and ln K = Δ_r S°/R at every temperature."
+      },
+      {
+        "text": "It falls with T, as for an exothermic reaction",
+        "why": "K falls with T only when Δ_r H° < 0. Here the slope −Δ_r H°/R is zero, so K does not change with T."
+      },
+      {
+        "text": "It is exactly 1 at every temperature",
+        "why": "K = exp(Δ_r S°/R), which is 1 only if Δ_r S° is also zero. K is constant, but its value is set by Δ_r S°."
+      }
+    ],
+    "explanation": "With Δ_r H° = 0 the slope of ln K against 1/T is zero, so the van 't Hoff plot is a flat line at ln K = Δ_r S°/R. Temperature then has no effect on K; only the entropy change sets it."
+  },
+  {
+    "id": "pc26-vant-hoff-slope-intercept",
+    "type": "multiple-choice",
+    "prompt": "The section writes ln K = −((Δ_r H°)/R)(1/T) + (Δ_r S°)/R. On a plot of ln K against 1/T, what are the slope and the intercept?",
+    "choices": [
+      {
+        "text": "Slope −Δ_r H°/R, intercept Δ_r S°/R",
+        "correct": true
+      },
+      {
+        "text": "Slope −Δ_r S°/R, intercept Δ_r H°/R",
+        "why": "The roles are swapped. The term multiplying 1/T is −Δ_r H°/R, so that is the slope, and the constant term Δ_r S°/R is the intercept."
+      },
+      {
+        "text": "Slope Δ_r H°/R, intercept −Δ_r S°/R",
+        "why": "Both signs are flipped. The slope carries the minus sign, −Δ_r H°/R, and the intercept is +Δ_r S°/R."
+      },
+      {
+        "text": "Slope −Δ_r G°/R, intercept Δ_r H°/R",
+        "why": "Δ_r G° changes with T, so it can't be a constant slope. Splitting Δ_r G° = Δ_r H° − TΔ_r S° gives slope −Δ_r H°/R and intercept Δ_r S°/R."
+      }
+    ],
+    "explanation": "The equation has the form y = mx + b with y = ln K and x = 1/T. So m = −Δ_r H°/R and b = Δ_r S°/R, and both can be read off one straight line."
+  },
+  {
+    "id": "pc26-vant-hoff-no-calorimetry",
+    "type": "multiple-choice",
+    "prompt": "What advantage of plotting ln K against 1/T does the section point out?",
+    "choices": [
+      {
+        "text": "It gives Δ_r H° and Δ_r S° without calorimetry",
+        "correct": true
+      },
+      {
+        "text": "K is found at any T without measuring it at all",
+        "why": "The plot needs measured K values to begin with. From them it yields Δ_r H° and Δ_r S° with no heat measurements."
+      },
+      {
+        "text": "It still works when Δ_r H° changes strongly with T",
+        "why": "The straight line assumes Δ_r H° and Δ_r S° depend only weakly on T. Its advantage is that it gives them from K data, without calorimetry."
+      },
+      {
+        "text": "It gives the rate constant of the reaction",
+        "why": "K is an equilibrium constant, and the plot says nothing about rates. It gives Δ_r H° and Δ_r S° from equilibrium data."
+      }
+    ],
+    "explanation": "The slope gives Δ_r H° and the intercept gives Δ_r S°, so measuring K at a few temperatures is enough. No calorimetry is needed, which is the reverse of finding K from calorimetric data."
+  },
+  {
+    "id": "pc26-vant-hoff-assumption",
+    "type": "multiple-choice",
+    "prompt": "For ln K against 1/T to be a straight line, what does the section assume?",
+    "choices": [
+      {
+        "text": "Δ_r H° and Δ_r S° barely change with T",
+        "correct": true
+      },
+      {
+        "text": "Δ_r G° stays the same at every temperature",
+        "why": "Δ_r G° = Δ_r H° − TΔ_r S° changes with T even when Δ_r H° and Δ_r S° are fixed. The straight line needs Δ_r H° and Δ_r S° to be nearly constant."
+      },
+      {
+        "text": "K has the same value at every temperature",
+        "why": "K does change with T, and that change is what the plot shows. It is Δ_r H° and Δ_r S° that are taken as nearly constant."
+      },
+      {
+        "text": "All the K values are measured at 298.15 K",
+        "why": "A plot needs K at several temperatures, not one. The assumption is that Δ_r H° and Δ_r S° stay nearly constant over that range."
+      }
+    ],
+    "explanation": "With Δ_r H° and Δ_r S° constant, ln K = −(Δ_r H°/R)(1/T) + Δ_r S°/R is linear in 1/T. The section notes that this weak dependence on T is usually a valid assumption."
+  },
+  {
+    "id": "pc26-vant-hoff-heat-capacity",
+    "type": "multiple-choice",
+    "prompt": "The two-point form of the van 't Hoff equation treats Δ_r H° as a constant. If more precision is needed, what does the section suggest?",
+    "choices": [
+      {
+        "text": "Let Δ_r H° vary, using heat capacity data",
+        "correct": true
+      },
+      {
+        "text": "Use Δ_r G° in place of Δ_r H° in the equation",
+        "why": "Δ_r G° isn't the quantity in the van 't Hoff equation. The weak spot is treating Δ_r H° as constant, which heat capacity data can fix."
+      },
+      {
+        "text": "Measure K at temperatures farther apart",
+        "why": "A wider range makes a constant Δ_r H° a worse approximation, not a better one. The section suggests correcting Δ_r H° with heat capacity data."
+      },
+      {
+        "text": "Plot K itself instead of ln K",
+        "why": "A plot of K against 1/T curves, which makes things harder, not more precise. The fix is to let Δ_r H° change with T, using heat capacity data."
+      }
+    ],
+    "explanation": "The two-point form holds when the temperature change is small enough for Δ_r H° to be taken as constant. Heat capacity data show how Δ_r H° changes with T, so the estimate can be refined."
+  },
+  {
+    "id": "pc26-vant-hoff-split-k",
+    "type": "multiple-choice",
+    "prompt": "Putting Δ_r G° = Δ_r H° − TΔ_r S° into K = exp(−(Δ_r G°)/(RT)) splits K into two factors. Which?",
+    "choices": [
+      {
+        "text": "K = exp(−(Δ_r H°)/(RT)) × exp(Δ_r S°/R)",
+        "correct": true
+      },
+      {
+        "text": "K = exp(−(Δ_r H°)/(RT)) × exp(−Δ_r S°/R)",
+        "why": "The −TΔ_r S° in Δ_r G° picks up a second minus sign from the exponent. So the entropy factor is exp(+Δ_r S°/R)."
+      },
+      {
+        "text": "K = exp(−Δ_r H°/R) × exp((Δ_r S°)/(RT))",
+        "why": "The 1/T goes with the enthalpy, not the entropy: −(Δ_r H° − TΔ_r S°)/(RT) = −(Δ_r H°)/(RT) + Δ_r S°/R."
+      },
+      {
+        "text": "K = exp(−(Δ_r H°)/(RT)) + exp(Δ_r S°/R)",
+        "why": "The exponent is a sum, and the exponential of a sum is a product, not a sum. So the two factors multiply."
+      }
+    ],
+    "explanation": "−(Δ_r G°)/(RT) = −(Δ_r H°)/(RT) + Δ_r S°/R, and the exponential of a sum is the product of the exponentials. Taking ln of both sides gives the straight line ln K = −(Δ_r H°/R)(1/T) + Δ_r S°/R."
+  },
+  {
+    "id": "pc26-vant-hoff-dh-from-slope",
+    "type": "numeric",
+    "prompt": "Equilibrium data for a gas-phase reaction fall on a straight line when ln K is plotted against 1/T, with slope +5.50 × 10^3 K. Since the slope equals −Δ_r H°/R, with R = 8.314 J/(mol·K), what is Δ_r H°, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -45.7,
+    "explanation": "Δ_r H° = −R × slope = −(8.314 J/(mol·K))(5.50 × 10^3 K) = −4.57 × 10^4 J/mol = −45.7 kJ/mol. A line rising to the right means an exothermic reaction, whose K falls as T rises."
+  },
+  {
+    "id": "pc26-vant-hoff-ds-from-intercept",
+    "type": "numeric",
+    "prompt": "A plot of ln K against 1/T for a reaction is a straight line whose intercept, the value of ln K extrapolated to 1/T = 0, is 4.10. Since the intercept equals Δ_r S°/R, with R = 8.314 J/(mol·K), what is Δ_r S°, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 34.1,
+    "explanation": "Δ_r S° = R × intercept = 8.314 J/(mol·K) × 4.10 = 34.1 J/(mol·K). The same plot gives Δ_r H° from its slope, so both come from equilibrium data alone."
+  },
+  {
+    "id": "pc26-vant-hoff-k-at-320k",
+    "type": "numeric",
+    "prompt": "A reaction has Δ_r H° = +50.0 kJ/mol and K = 2.50 at 300 K. The two-point form, ln(K_2/K_1) = −((Δ_r H°)/R)(1/T_2 − 1/T_1), gives ln(K_2/K_1) = 1.253 for T_2 = 320 K. Using exp(1.253) = 3.50, what is K at 320 K? (Give it as a decimal.)",
+    "answer": 8.75,
+    "explanation": "K_2 = K_1 × exp(1.253) = 2.50 × 3.50 = 8.75. The reaction is endothermic, so warming it by 20 K raises K, here by a factor of 3.5."
+  },
+  {
+    "id": "pc26-vant-hoff-dh-two-k",
+    "type": "numeric",
+    "prompt": "A reaction has K_1 = 12.0 at T_1 = 350 K and K_2 = 4.00 at T_2 = 400 K, so ln(K_2/K_1) = ln(1/3) = −1.099. Using Δ_r H° = (R ln(K_2/K_1))/(1/T_1 − 1/T_2), with 1/T_1 − 1/T_2 = 3.571 × 10^−4 K^−1 and R = 8.314 J/(mol·K), what is Δ_r H°, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -25.6,
+    "explanation": "Δ_r H° = (8.314 × (−1.099)) ÷ (3.571 × 10^−4 K^−1) = −2.56 × 10^4 J/mol = −25.6 kJ/mol. K falls as T rises, so the reaction must be exothermic, as the negative sign shows."
+  },
+  {
+    "id": "pc26-vant-hoff-dlnk-dt",
+    "type": "numeric",
+    "prompt": "A reaction has Δ_r H° = +60.0 kJ/mol. Using ((∂ ln K)/(∂T))_P = (Δ_r H°)/(RT^2) with R = 8.314 J/(mol·K), how fast does ln K change with temperature at 500 K, in K^−1? (Give it as a decimal.)",
+    "answer": 0.0289,
+    "explanation": "((∂ ln K)/(∂T))_P = 60 000 J/mol ÷ (8.314 J/(mol·K) × (500 K)^2) = 60 000 ÷ 2.079 × 10^6 = 0.0289 K^−1. So K grows by about 3% for each kelvin of heating."
+  }
+]

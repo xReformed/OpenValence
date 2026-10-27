@@ -1,0 +1,270 @@
+[
+  {
+    "id": "pc28-first-order-rate-law",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the first-order rate law for the loss of a reactant A, as the section writes it?",
+    "choices": [
+      {
+        "text": "d[A]/dt = −k[A]",
+        "correct": true
+      },
+      {
+        "text": "d[A]/dt = k[A]",
+        "why": "With +k[A], [A] would grow with time. A is used up, so d[A]/dt must be negative: −k[A]."
+      },
+      {
+        "text": "d[A]/dt = −k",
+        "why": "Here the rate would not depend on [A] at all, which is zero order. First order means the rate is proportional to [A]."
+      },
+      {
+        "text": "d[A]/dt = −k[A]^2",
+        "why": "Squaring [A] makes the rate law second order. In a first-order law [A] appears to the first power."
+      }
+    ],
+    "explanation": "In a first-order rate law the rate is proportional to [A] to the first power: d[A]/dt = −k[A]. The minus sign shows that A is consumed."
+  },
+  {
+    "id": "pc28-first-order-why-log",
+    "type": "multiple-choice",
+    "prompt": "Separating the variables in the first-order rate law gives d[A]/[A] = −k dt. Why does the integrated law then contain ln[A]?",
+    "choices": [
+      {
+        "text": "Because dx/x = d(ln x)",
+        "correct": true
+      },
+      {
+        "text": "Because k is defined as a logarithm",
+        "why": "k is an ordinary rate constant, in s^−1. The logarithm comes from integrating d[A]/[A], since dx/x = d(ln x)."
+      },
+      {
+        "text": "Because [A] is measured on a log scale",
+        "why": "Concentrations are measured in M as usual. The logarithm appears because dx/x = d(ln x), so d[A]/[A] integrates to ln[A]."
+      },
+      {
+        "text": "Because the rate stays constant in time",
+        "why": "The rate falls as [A] falls. The logarithm comes from integrating d[A]/[A], since dx/x = d(ln x)."
+      }
+    ],
+    "explanation": "Since dx/x = d(ln x), integrating d[A]/[A] from [A]_0 to [A] gives ln[A] − ln[A]_0 = −kt. This is the integrated first-order rate law."
+  },
+  {
+    "id": "pc28-first-order-example-plot",
+    "type": "multiple-choice",
+    "prompt": "Example 28.3.1 gives [A] at times from 0 to 300 s. How does the section show that these data are consistent with first-order kinetics?",
+    "choices": [
+      {
+        "text": "ln[A] against t is a straight line",
+        "correct": true
+      },
+      {
+        "text": "[A] against t is a straight line",
+        "why": "For first-order data [A] falls exponentially, so [A] against t curves. It is ln[A] that falls linearly with time."
+      },
+      {
+        "text": "1/[A] against t is a straight line",
+        "why": "A straight 1/[A] plot is the test for second-order kinetics. For first order the linear form is ln[A] = ln[A]_0 − kt."
+      },
+      {
+        "text": "[A] has fallen to zero by 300 s",
+        "why": "[A] is still 0.010 M at 300 s. The first-order test is that ln[A] against t gives a straight line."
+      }
+    ],
+    "explanation": "The integrated law ln[A] = ln[A]_0 − kt says that ln[A] falls linearly with t. A plot of ln[A] against t for the example's data is a straight line, so the data are first order."
+  },
+  {
+    "id": "pc28-first-order-slope",
+    "type": "multiple-choice",
+    "prompt": "For a first-order reaction, a plot of ln[A] against t is a straight line. What is its slope?",
+    "choices": [
+      {
+        "text": "−k",
+        "correct": true
+      },
+      {
+        "text": "k",
+        "why": "ln[A] decreases with time, so the slope is negative. From ln[A] = ln[A]_0 − kt, the slope is −k."
+      },
+      {
+        "text": "ln[A]_0",
+        "why": "ln[A]_0 is the intercept, the value at t = 0. The slope is the coefficient of t, which is −k."
+      },
+      {
+        "text": "−1/k",
+        "why": "The slope is the coefficient of t in ln[A] = ln[A]_0 − kt, which is −k itself, not its reciprocal."
+      }
+    ],
+    "explanation": "Comparing ln[A] = ln[A]_0 − kt with a straight line y = b + mt gives the slope m = −k. So k is minus the slope of the plot."
+  },
+  {
+    "id": "pc28-first-order-intercept",
+    "type": "multiple-choice",
+    "prompt": "What is the intercept of the straight-line plot of ln[A] against t for a first-order reaction?",
+    "choices": [
+      {
+        "text": "ln[A]_0",
+        "correct": true
+      },
+      {
+        "text": "[A]_0",
+        "why": "The plot is of ln[A], so its intercept is ln[A]_0. [A]_0 itself is found as exp of the intercept."
+      },
+      {
+        "text": "−k",
+        "why": "−k is the slope of the line, not its intercept. At t = 0 the line passes through ln[A]_0."
+      },
+      {
+        "text": "0",
+        "why": "ln[A] would be zero only if [A] were 1 M. At t = 0, [A] = [A]_0, so the intercept is ln[A]_0."
+      }
+    ],
+    "explanation": "Setting t = 0 in ln[A] = ln[A]_0 − kt gives ln[A]_0. In Example 28.3.1 the starting concentration can be inferred from the intercept in this way."
+  },
+  {
+    "id": "pc28-first-order-exp-form",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the exponential form of the integrated first-order law, ln[A] = ln[A]_0 − kt?",
+    "choices": [
+      {
+        "text": "[A] = [A]_0 exp(−kt)",
+        "correct": true
+      },
+      {
+        "text": "[A] = [A]_0 exp(kt)",
+        "why": "With exp(kt), [A] would grow with time. A first-order reactant decays, so the exponent is −kt."
+      },
+      {
+        "text": "[A] = [A]_0 − kt",
+        "why": "That straight-line law is zero order. Taking exp of both sides of ln[A] = ln[A]_0 − kt gives [A] = [A]_0 exp(−kt)."
+      },
+      {
+        "text": "[A] = exp(−kt)",
+        "why": "This leaves out [A]_0 and would give [A] = 1 M at t = 0. Taking exp of both sides gives [A] = [A]_0 exp(−kt)."
+      }
+    ],
+    "explanation": "Taking exp of both sides of ln[A] = ln[A]_0 − kt gives [A] = [A]_0 exp(−kt). Because of this form, first-order kinetics are sometimes called exponential decay kinetics; the radioactive decay of nuclides is an example."
+  },
+  {
+    "id": "pc28-first-order-example-k",
+    "type": "numeric",
+    "prompt": "In Example 28.3.1, [A] = 0.873 M at t = 0 and [A] = 0.010 M at t = 300 s, and a plot of ln[A] against t is a straight line with slope −k. Using ln(0.873) = −0.136 and ln(0.010) = −4.605, what is k, in s^−1? (Give it as a decimal.)",
+    "answer": 0.0149,
+    "explanation": "slope = (−4.605 − (−0.136))/(300 s) = −4.469/(300 s) = −0.0149 s^−1, so k = 0.0149 s^−1. This matches the value the section reads from its plot."
+  },
+  {
+    "id": "pc28-first-order-same-fraction",
+    "type": "multiple-choice",
+    "prompt": "In Example 28.3.1, [A] falls from 0.873 M to 0.414 M in the first 50 s and from 0.414 M to 0.196 M in the next 50 s. What does this show?",
+    "choices": [
+      {
+        "text": "Equal times use up the same fraction of A",
+        "correct": true
+      },
+      {
+        "text": "Equal times use up the same amount of A",
+        "why": "The amounts differ: 0.459 M in the first 50 s and 0.218 M in the next. What stays the same is the fraction left, about 0.47."
+      },
+      {
+        "text": "The reaction speeds up as it goes on",
+        "why": "Less A is used up in the second 50 s, so the reaction slows down. For first order the rate falls along with [A]."
+      },
+      {
+        "text": "The reaction stops soon after 100 s",
+        "why": "The table shows [A] still falling after 100 s, down to 0.010 M at 300 s. Each 50 s leaves about 0.47 of the A present."
+      }
+    ],
+    "explanation": "0.414/0.873 = 0.474 and 0.196/0.414 = 0.473, so each 50 s leaves the same fraction of A. That is what [A] = [A]_0 exp(−kt) predicts, since exp(−k × 50 s) is the same for every 50 s interval."
+  },
+  {
+    "id": "pc28-first-order-rate-halves",
+    "type": "multiple-choice",
+    "prompt": "For a first-order reaction, −d[A]/dt = k[A]. Once [A] has fallen to half its starting value, how does the rate compare with the starting rate?",
+    "choices": [
+      {
+        "text": "It is half the starting rate",
+        "correct": true
+      },
+      {
+        "text": "It equals the starting rate",
+        "why": "The rate is proportional to [A], so it falls as A is used up. With [A] halved, the rate is halved too."
+      },
+      {
+        "text": "It is a quarter of the starting rate",
+        "why": "A quarter would follow if the rate went as [A]^2. For first order the rate is proportional to [A], so it halves."
+      },
+      {
+        "text": "It is twice the starting rate",
+        "why": "The rate drops as [A] drops; it never rises as A is used up. Here it falls to half the starting rate."
+      }
+    ],
+    "explanation": "The rate is proportional to [A], so when [A] has halved, so has the rate. This steady slowing as A is used up is why [A] decays exponentially instead of falling in a straight line."
+  },
+  {
+    "id": "pc28-first-order-larger-k",
+    "type": "multiple-choice",
+    "prompt": "Two first-order reactions are followed by plotting ln[A] against t. Reaction 1 has the larger rate constant k. How do the two plots compare?",
+    "choices": [
+      {
+        "text": "Reaction 1's line falls more steeply",
+        "correct": true
+      },
+      {
+        "text": "Reaction 2's line falls more steeply",
+        "why": "The slope is −k, so the larger k gives the steeper fall. That is reaction 1."
+      },
+      {
+        "text": "Both lines fall with the same slope",
+        "why": "The slope is −k, which differs between the reactions. The one with the larger k, reaction 1, falls more steeply."
+      },
+      {
+        "text": "Reaction 1's line curves upward",
+        "why": "For any first-order reaction, ln[A] against t is a straight line. Reaction 1's line is straight but steeper, with slope −k."
+      }
+    ],
+    "explanation": "Each plot is a straight line with slope −k. The larger k of reaction 1 gives a steeper downward slope: its [A] decays faster."
+  },
+  {
+    "id": "pc28-first-order-half-life-a0",
+    "type": "multiple-choice",
+    "prompt": "For a first-order reaction, the half-life is t_(1/2) = (ln 2)/k. If the starting concentration [A]_0 is doubled, what happens to t_(1/2)?",
+    "choices": [
+      {
+        "text": "It stays the same",
+        "correct": true
+      },
+      {
+        "text": "It doubles",
+        "why": "t_(1/2) = (ln 2)/k contains no [A]_0. With twice as much A the rate is twice as large, so halving it takes the same time."
+      },
+      {
+        "text": "It halves",
+        "why": "A larger [A]_0 does make the reaction faster at first, but there is also more A to use up. The two cancel, and t_(1/2) = (ln 2)/k does not change."
+      },
+      {
+        "text": "It depends on the value of k",
+        "why": "k sets how long t_(1/2) is, but k doesn't change when [A]_0 changes. So t_(1/2) stays the same."
+      }
+    ],
+    "explanation": "t_(1/2) = (ln 2)/k depends only on the rate constant, not on [A]_0. Twice as much A also reacts twice as fast, so halving it takes the same time."
+  },
+  {
+    "id": "pc28-first-order-k-from-half-life",
+    "type": "numeric",
+    "prompt": "A first-order reaction has a half-life of 10.0 min. Using t_(1/2) = (ln 2)/k with ln 2 = 0.693, what is k, in min^−1? (Give it as a decimal.)",
+    "answer": 0.0693,
+    "explanation": "k = (ln 2)/t_(1/2) = 0.693/(10.0 min) = 0.0693 min^−1. The half-life and the rate constant carry the same information: a shorter half-life means a larger k."
+  },
+  {
+    "id": "pc28-first-order-fraction-left",
+    "type": "numeric",
+    "prompt": "A first-order reaction has a half-life of 12 min, the same whatever the starting concentration. What fraction of the starting amount of A remains after 36 min? (Give it as a decimal.)",
+    "answer": 0.125,
+    "explanation": "36 min is 36/12 = 3 half-lives, and each one halves the amount of A. So (1/2)^3 = 1/8 = 0.125 of the A remains, and 0.875 has reacted."
+  },
+  {
+    "id": "pc28-first-order-conc-at-t",
+    "type": "numeric",
+    "prompt": "For a first-order reaction with [A]_0 = 0.500 M and k = 0.0200 s^−1, [A] = [A]_0 exp(−kt). Using exp(−1.00) = 0.368, what is [A] after 50.0 s, in M? (Give it as a decimal.)",
+    "answer": 0.184,
+    "explanation": "kt = 0.0200 s^−1 × 50.0 s = 1.00, so [A] = 0.500 M × exp(−1.00) = 0.500 M × 0.368 = 0.184 M. About 37% of the A is left at this time."
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "pc26-gibbs-minimum-kinetics-vs-thermo",
+    "type": "multiple-choice",
+    "prompt": "The section separates two questions about a reaction: how fast it goes, and where it ends up. Which branch of physical chemistry deals with how fast it goes?",
+    "choices": [
+      {
+        "text": "Kinetics",
+        "correct": true
+      },
+      {
+        "text": "Classical thermodynamics",
+        "why": "Classical thermodynamics is concerned with the endpoint, the equilibrium state. The time course of a reaction is the domain of kinetics."
+      },
+      {
+        "text": "Statistical mechanics",
+        "why": "Statistical mechanics links molecular energy levels to bulk properties, not to how fast a reaction runs. The section names kinetics as the branch for the time course."
+      },
+      {
+        "text": "Spectroscopy",
+        "why": "Spectroscopy can supply a signal for following a reaction, but it is not the branch that studies its time course. That is kinetics."
+      }
+    ],
+    "explanation": "The temporal aspects of a reaction belong to kinetics. Classical thermodynamics is more concerned with the endpoint, where the reaction ends up."
+  },
+  {
+    "id": "pc26-gibbs-minimum-endpoint-kinds",
+    "type": "multiple-choice",
+    "prompt": "Thermodynamically, the endpoint of a reaction is a stable equilibrium. According to the section, what can that endpoint be in chemical terms?",
+    "choices": [
+      {
+        "text": "A completed reaction or a chemical equilibrium",
+        "correct": true
+      },
+      {
+        "text": "Only a completed reaction, with no reactant left",
+        "why": "Many reactions stop short of completion. The endpoint can also be a chemical equilibrium, at ξ = ξ_eq."
+      },
+      {
+        "text": "Only a mixture with equal amounts of each species",
+        "why": "Equilibrium does not require equal amounts of reactants and products. The endpoint is either a completed reaction or a chemical equilibrium."
+      },
+      {
+        "text": "The point at which the reaction runs fastest",
+        "why": "Rates belong to kinetics, which the section sets aside. Thermodynamically the endpoint is a completed reaction or a chemical equilibrium."
+      }
+    ],
+    "explanation": "Classical thermodynamics looks only at where a reaction ends up. Chemically, that endpoint is either a completed reaction, with the limiting reactant used up, or a chemical equilibrium at ξ = ξ_eq."
+  },
+  {
+    "id": "pc26-gibbs-minimum-product-amount",
+    "type": "multiple-choice",
+    "prompt": "For the reaction ν_A A + ν_B B ⇌ ν_Y Y + ν_Z Z, which expression gives the amount of product Y at extent of reaction ξ?",
+    "choices": [
+      {
+        "text": "n_Y = n_(Y, 0) + ν_Y ξ",
+        "correct": true
+      },
+      {
+        "text": "n_Y = n_(Y, 0) − ν_Y ξ",
+        "why": "The minus sign belongs to reactants, whose amounts fall as ξ grows. A product's amount rises, so ν_Y ξ is added."
+      },
+      {
+        "text": "n_Y = n_(Y, 0) + ξ/ν_Y",
+        "why": "ξ is multiplied by the stoichiometric coefficient, not divided by it. Each mole of ξ makes ν_Y moles of Y."
+      },
+      {
+        "text": "n_Y = ν_Y ξ − n_(Y, 0)",
+        "why": "At ξ = 0 the amount must be n_(Y, 0), but this gives −n_(Y, 0). The amount formed, ν_Y ξ, is added to the initial amount."
+      }
+    ],
+    "explanation": "Each mole of ξ forms ν_Y moles of Y, so n_Y = n_(Y, 0) + ν_Y ξ. Reactants have the opposite sign: n_A = n_(A, 0) − ν_A ξ."
+  },
+  {
+    "id": "pc26-gibbs-minimum-dn-b",
+    "type": "multiple-choice",
+    "prompt": "For the reactant B, n_B = n_(B, 0) − ν_B ξ. Differentiating gives dn_B in terms of dξ. What is dn_B?",
+    "choices": [
+      {
+        "text": "−ν_B dξ",
+        "correct": true
+      },
+      {
+        "text": "−ν_A dξ",
+        "why": "Each species changes in step with its own stoichiometric coefficient. For B that is ν_B, so dn_B = −ν_B dξ."
+      },
+      {
+        "text": "+ν_B dξ",
+        "why": "B is a reactant, so its amount falls as ξ increases. The sign is negative: dn_B = −ν_B dξ."
+      },
+      {
+        "text": "−n_(B, 0) dξ",
+        "why": "The initial amount n_(B, 0) is a constant, so its derivative is zero. Only −ν_B ξ changes, which gives dn_B = −ν_B dξ."
+      }
+    ],
+    "explanation": "n_(B, 0) is fixed, so dn_B = −ν_B dξ. In the same way dn_A = −ν_A dξ for the other reactant, while dn_Y = ν_Y dξ and dn_Z = ν_Z dξ for the products."
+  },
+  {
+    "id": "pc26-gibbs-minimum-units",
+    "type": "multiple-choice",
+    "prompt": "What are the units of the extent of reaction ξ, and why?",
+    "choices": [
+      {
+        "text": "mol, since each ν_i is a pure number",
+        "correct": true
+      },
+      {
+        "text": "None, since ξ is a fraction from 0 to 1",
+        "why": "ξ runs from 0 to 1 only in the special case of a limiting reactant that starts with ν moles. Since the ν_i are pure numbers, ξ carries the units of the amounts, mol."
+      },
+      {
+        "text": "mol/L, since it tracks concentrations",
+        "why": "ξ is defined from amounts, n_i = n_(i, 0) ± ν_i ξ, not from concentrations. Since ν_i is dimensionless, ξ is in mol."
+      },
+      {
+        "text": "J/mol, the units of Δ_r G",
+        "why": "J/mol belongs to Δ_r G, the change in G per mole of ξ. ξ itself is in mol."
+      }
+    ],
+    "explanation": "In n_i = n_(i, 0) ± ν_i ξ the stoichiometric coefficients are dimensionless integers, so ξ must have the same units as n_i: mol."
+  },
+  {
+    "id": "pc26-gibbs-minimum-stops-at-xi-eq",
+    "type": "multiple-choice",
+    "prompt": "A reaction approaches chemical equilibrium instead of running to completion. What happens to its extent of reaction ξ?",
+    "choices": [
+      {
+        "text": "It rises to ξ_eq and goes no further",
+        "correct": true
+      },
+      {
+        "text": "It reaches completion, then falls back to ξ_eq",
+        "why": "ξ does not overshoot. As the reaction approaches equilibrium, ξ rises toward ξ_eq and does not go beyond it."
+      },
+      {
+        "text": "It stays at zero, since equilibrium means no net reaction",
+        "why": "No net reaction occurs once equilibrium is reached, but products form on the way there. ξ grows from 0 up to ξ_eq."
+      },
+      {
+        "text": "It keeps growing slowly until all reactant is used",
+        "why": "That describes a reaction that runs to completion. At equilibrium the limiting reactant is not used up, and ξ stays at ξ_eq."
+      }
+    ],
+    "explanation": "When approaching an equilibrium, ξ will not go beyond ξ_eq. Thermodynamics then cares only about this endpoint, not about how fast it is reached."
+  },
+  {
+    "id": "pc26-gibbs-minimum-linear-q",
+    "type": "multiple-choice",
+    "prompt": "To follow ξ during a reaction, the section measures some other quantity q. What must be true of q?",
+    "choices": [
+      {
+        "text": "It is linear in ξ: q = aξ + b",
+        "correct": true
+      },
+      {
+        "text": "It must be proportional to time",
+        "why": "q is recorded as a function of time, but what matters is its link to ξ. It must depend linearly on ξ, q = aξ + b."
+      },
+      {
+        "text": "It must be a concentration",
+        "why": "q can be many kinds of measurement, not only a concentration. What it needs is a linear dependence on ξ, q = aξ + b."
+      },
+      {
+        "text": "It must equal ξ itself",
+        "why": "q need not equal ξ, only be linear in it. ξ is then found from q and its values at the start and at completion."
+      }
+    ],
+    "explanation": "If q(ξ) = aξ + b, then q_0 = b at ξ = 0 and q_1 = a + b at completion. So ξ can be found from (q(t) − q_0)/(q_1 − q_0)."
+  },
+  {
+    "id": "pc26-gibbs-minimum-q-example",
+    "type": "multiple-choice",
+    "prompt": "Which of these could serve as the measured quantity q used to follow ξ during a reaction in solution?",
+    "choices": [
+      {
+        "text": "The solution's electrical conductivity",
+        "correct": true
+      },
+      {
+        "text": "The reaction's stoichiometric coefficients",
+        "why": "The coefficients are fixed numbers and do not change as the reaction runs. q must change linearly with ξ, as conductivity or absorbance can."
+      },
+      {
+        "text": "The standard pressure P°",
+        "why": "P° is a fixed reference value, not something that changes during the reaction. A quantity like conductivity, which changes with ξ, is needed."
+      },
+      {
+        "text": "The temperature of the thermostat bath",
+        "why": "A thermostat holds its temperature constant, so it carries no information about ξ. Caloric data such as the heat released can serve, as can conductivity."
+      }
+    ],
+    "explanation": "The section lists UV/Vis absorption, conductivity, gravimetric and caloric data as possible kinds of q. Each changes as the reaction proceeds, in step with ξ."
+  },
+  {
+    "id": "pc26-gibbs-minimum-q0-hard",
+    "type": "multiple-choice",
+    "prompt": "Why is q_0, the value of q at ξ = 0, often hard to observe, especially for reactions in solution?",
+    "choices": [
+      {
+        "text": "Mixing the reactants takes time",
+        "correct": true
+      },
+      {
+        "text": "q is zero at ξ = 0 and can't be read",
+        "why": "q_0 = b need not be zero. The trouble is that the reaction starts while the reactants are still being mixed."
+      },
+      {
+        "text": "The reaction reaches equilibrium first",
+        "why": "Reaching equilibrium is what can hide q_1, the value at completion. q_0 is hard to catch because mixing the reactants takes time."
+      },
+      {
+        "text": "No product has formed yet to measure",
+        "why": "q can be read before any product forms; q_0 is simply its starting value. The problem is that the reaction has begun before mixing is done."
+      }
+    ],
+    "explanation": "The reaction starts as soon as the reactants meet, so by the time they are mixed, ξ is no longer 0. When q_0 or q_1 can't be observed, a and b can often be found by fitting the data."
+  },
+  {
+    "id": "pc26-gibbs-minimum-why-solution",
+    "type": "multiple-choice",
+    "prompt": "The section notes that many important reactions are performed in solution rather than between solids or gases. Which reason does it give?",
+    "choices": [
+      {
+        "text": "Solids react slowly; many species decompose if vaporized",
+        "correct": true
+      },
+      {
+        "text": "Solutions behave ideally, which simplifies the thermodynamics",
+        "why": "The section says the opposite: the structure of liquids is the least understood of the three states. The reasons are practical ones about solids and vapors."
+      },
+      {
+        "text": "Gases cannot reach a state of chemical equilibrium",
+        "why": "Gas reactions do reach equilibrium, and the section treats them in detail. Solutions are used because solid-state reactions are slow and many species decompose before they evaporate."
+      },
+      {
+        "text": "Water's structure is the best understood of all liquids",
+        "why": "The section calls water one of the most complex liquids, with a structure that is poorly understood. Solutions are used because solids react slowly and many species can't be vaporized intact."
+      }
+    ],
+    "explanation": "Solid-state reactions are often very slow, and not all species can be put in the vapor phase because they decompose before evaporating. Yet liquids are the least understood of the three states, and water, one of the most used, is among the most complex."
+  },
+  {
+    "id": "pc26-gibbs-minimum-one-variable",
+    "type": "multiple-choice",
+    "prompt": "Why does the section rewrite each dn_i in dG = Σ μ_i dn_i as ±ν_i dξ?",
+    "choices": [
+      {
+        "text": "To describe all the changes with one variable, ξ",
+        "correct": true
+      },
+      {
+        "text": "To make dG independent of the chemical potentials",
+        "why": "The μ_i stay in the result, now multiplied by ±ν_i. The point is that one variable, ξ, describes every species' change."
+      },
+      {
+        "text": "Because ξ is easier to measure than T and P",
+        "why": "T and P are held constant here. Using ξ lets the separate changes dn_i be expressed through a single variable."
+      },
+      {
+        "text": "Because the amounts n_i change independently",
+        "why": "In a reaction the amounts do not change independently: stoichiometry ties them together. That is exactly why one variable, ξ, can describe them all."
+      }
+    ],
+    "explanation": "Stoichiometry ties every dn_i to dξ: dn_A = −ν_A dξ, dn_Y = ν_Y dξ, and so on. So dG becomes a single sum times dξ, and G can be studied as a function of ξ alone."
+  },
+  {
+    "id": "pc26-gibbs-minimum-reactant-minus",
+    "type": "multiple-choice",
+    "prompt": "In Δ_r G = ν_Y μ_Y + ν_Z μ_Z − ν_A μ_A − ν_B μ_B, why do the reactant terms carry a minus sign?",
+    "choices": [
+      {
+        "text": "Reactant amounts fall as ξ increases",
+        "correct": true
+      },
+      {
+        "text": "Reactants have negative chemical potentials",
+        "why": "The sign has nothing to do with the sign of μ. It comes from dn_A = −ν_A dξ: reactants are used up as ξ grows."
+      },
+      {
+        "text": "Products are always more stable than reactants",
+        "why": "The signs are the same for every reaction, whatever the stabilities. They come from stoichiometry: reactants are consumed, so dn = −ν dξ."
+      },
+      {
+        "text": "Reactants are given G = 0 by convention",
+        "why": "No such convention is used; the reactants' μ values appear in full. The minus sign records that their amounts decrease, dn = −ν dξ."
+      }
+    ],
+    "explanation": "With dn_A = −ν_A dξ and dn_B = −ν_B dξ, the reactant terms of Σ μ_i dn_i come in with a minus sign, while the products, with dn = +ν dξ, come in with a plus sign. Dividing by dξ gives Δ_r G."
+  },
+  {
+    "id": "pc26-gibbs-minimum-delta-r-g-is",
+    "type": "multiple-choice",
+    "prompt": "Which expression does the section use to define the reaction Gibbs energy Δ_r G?",
+    "choices": [
+      {
+        "text": "((∂G)/(∂ξ))_(T,P)",
+        "correct": true
+      },
+      {
+        "text": "G/ξ at constant T and P",
+        "why": "Δ_r G is a derivative, not a ratio. It is ((∂G)/(∂ξ))_(T,P), the change in G per unit change in ξ at the present composition."
+      },
+      {
+        "text": "((∂G)/(∂T))_P",
+        "why": "That derivative is −S, not a reaction quantity. Δ_r G is the derivative with respect to ξ, at constant T and P."
+      },
+      {
+        "text": "G of pure products minus G of pure reactants",
+        "why": "That would compare the unmixed end states. Δ_r G is the derivative ((∂G)/(∂ξ))_(T,P), which changes as the composition changes."
+      }
+    ],
+    "explanation": "Δ_r G = ((∂G)/(∂ξ))_(T,P) = ν_Y μ_Y + ν_Z μ_Z − ν_A μ_A − ν_B μ_B. It gives the change in G per mole of reaction at the present composition."
+  },
+  {
+    "id": "pc26-gibbs-minimum-units-j-mol",
+    "type": "multiple-choice",
+    "prompt": "Why does the section give Δ_r G the units J/mol?",
+    "choices": [
+      {
+        "text": "It is the change in G per mole of ξ",
+        "correct": true
+      },
+      {
+        "text": "It is G for one mole of each product",
+        "why": "Δ_r G is not the Gibbs energy of a set of products. It is the change in G when ξ changes by one mole, so J per mol of ξ."
+      },
+      {
+        "text": "It is the change in G per mole of solvent",
+        "why": "No solvent enters the definition. The per-mole refers to ξ: Δ_r G = ((∂G)/(∂ξ))_(T,P)."
+      },
+      {
+        "text": "Because G itself is always in J/mol",
+        "why": "G of a whole system is in J; it is extensive. Dividing a change in G, in J, by a change in ξ, in mol, gives J/mol."
+      }
+    ],
+    "explanation": "Δ_r G = ((∂G)/(∂ξ))_(T,P) divides a change in G, in J, by a change in ξ, in mol. It is the change in G for Δξ = 1 mol at fixed composition, for the reaction as written."
+  },
+  {
+    "id": "pc26-gibbs-minimum-as-written",
+    "type": "multiple-choice",
+    "prompt": "The section stresses that Δ_r G refers to the reaction as written. If every stoichiometric coefficient in the equation is doubled, what happens to Δ_r G at the same composition?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It stays the same",
+        "why": "Δ_r G is a sum of ν_i μ_i terms with each μ_i unchanged, so doubling every ν_i doubles the sum. One mole of ξ now means twice as much chemical change."
+      },
+      {
+        "text": "It is halved",
+        "why": "The coefficients multiply the chemical potentials in the sum, so doubling them doubles Δ_r G. Halving would need the coefficients to be halved."
+      },
+      {
+        "text": "It is squared",
+        "why": "The coefficients appear as multipliers of the μ_i, not as powers. Doubling them doubles Δ_r G."
+      }
+    ],
+    "explanation": "At a fixed composition the μ_i are unchanged, and Δ_r G = Σ ν_i μ_i (with minus signs for the reactants) is linear in the coefficients. So doubling every ν_i doubles Δ_r G, because one mole of ξ then converts twice as much."
+  },
+  {
+    "id": "pc26-gibbs-minimum-minimized-in",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature and pressure, equilibrium results when G is at a minimum with respect to which variable?",
+    "choices": [
+      {
+        "text": "The extent of reaction ξ",
+        "correct": true
+      },
+      {
+        "text": "The temperature T",
+        "why": "T is held constant here, along with P. At fixed T and P, G is minimized with respect to how far the reaction has gone, ξ."
+      },
+      {
+        "text": "The time since mixing",
+        "why": "Time is a kinetic variable, and thermodynamics looks only at the endpoint. The minimum is with respect to ξ."
+      },
+      {
+        "text": "The standard pressure P°",
+        "why": "P° is a fixed reference choice, not a variable the system moves along. G is minimized with respect to ξ."
+      }
+    ],
+    "explanation": "Along the reaction path G depends on ξ. At the minimum, ((∂G)/(∂ξ))_(T,P) = Δ_r G = 0, and that composition is the equilibrium."
+  },
+  {
+    "id": "pc26-gibbs-minimum-ideal-gas-mu",
+    "type": "multiple-choice",
+    "prompt": "For a gas reaction, the section writes μ_i = μ_i° + RT ln(P_i/P_i°) for each species. What does this assume about the gas?",
+    "choices": [
+      {
+        "text": "It is dilute enough to be ideal",
+        "correct": true
+      },
+      {
+        "text": "It is at its standard pressure of 1 bar",
+        "why": "If P_i equaled P_i°, the log term would vanish and μ_i = μ_i°. The formula holds at any pressure, as long as the gas behaves ideally."
+      },
+      {
+        "text": "It is a pure gas, not part of a mixture",
+        "why": "The formula is applied to each species in the reacting mixture, through its partial pressure P_i. It needs only ideal behavior."
+      },
+      {
+        "text": "It is held at a very high pressure",
+        "why": "High pressure is where real gases deviate most from ideal behavior. The formula needs a gas dilute enough for the ideal gas law."
+      }
+    ],
+    "explanation": "The section assumes the reaction is entirely between gases dilute enough for the ideal gas law. Then each μ_i depends on its partial pressure through RT ln(P_i/P_i°)."
+  },
+  {
+    "id": "pc26-gibbs-minimum-standard-sum",
+    "type": "multiple-choice",
+    "prompt": "In the gas-phase result Δ_r G = Δ_r G° + RT ln Q, how is Δ_r G° built?",
+    "choices": [
+      {
+        "text": "From the standard potentials μ_i°",
+        "correct": true
+      },
+      {
+        "text": "From the partial pressures at equilibrium",
+        "why": "Pressures enter only through RT ln Q. Δ_r G° is the same signed sum as Δ_r G, but over the standard potentials μ_i°."
+      },
+      {
+        "text": "From the actual chemical potentials μ_i",
+        "why": "The actual μ_i give Δ_r G itself. Δ_r G° uses the standard potentials: ν_Y μ_Y° + ν_Z μ_Z° − ν_A μ_A° − ν_B μ_B°."
+      },
+      {
+        "text": "It is zero by definition",
+        "why": "Δ_r G° is generally not zero; it is the sum of ν_i μ_i° with minus signs for the reactants. Its value depends on the reaction."
+      }
+    ],
+    "explanation": "Splitting each μ_i into μ_i° + RT ln(P_i/P_i°) separates Δ_r G into two parts. The standard part is Δ_r G° = ν_Y μ_Y° + ν_Z μ_Z° − ν_A μ_A° − ν_B μ_B°, and the log terms combine into RT ln Q."
+  },
+  {
+    "id": "pc26-gibbs-minimum-q-reforming",
+    "type": "multiple-choice",
+    "prompt": "Combining the log terms turns the coefficients into exponents and puts the reactants in the denominator. With P° = 1 bar left out, what is Q for CH4(g) + H2O(g) ⇌ CO(g) + 3H2(g)?",
+    "choices": [
+      {
+        "text": "(P_(CO) P_(H2)^3)/(P_(CH4) P_(H2O))",
+        "correct": true
+      },
+      {
+        "text": "(P_(CH4) P_(H2O))/(P_(CO) P_(H2)^3)",
+        "why": "This is upside down. Product terms come in with a plus sign, so their pressures go on top; reactant terms, with a minus sign, go on the bottom."
+      },
+      {
+        "text": "(3P_(H2) P_(CO))/(P_(CH4) P_(H2O))",
+        "why": "Since 3 ln x = ln x^3, the coefficient becomes an exponent, not a multiplier. So P_(H2) is cubed."
+      },
+      {
+        "text": "(P_(CO) + P_(H2)^3)/(P_(CH4) + P_(H2O))",
+        "why": "The log terms add, and a sum of logarithms is the logarithm of a product. So the pressures are multiplied, not added."
+      }
+    ],
+    "explanation": "With pressures in bar, RT ln Q = RT ln P_(CO) + 3RT ln P_(H2) − RT ln P_(CH4) − RT ln P_(H2O). Using 3 ln x = ln x^3 and −ln x = ln(1/x), this combines into Q = (P_(CO) P_(H2)^3)/(P_(CH4) P_(H2O))."
+  },
+  {
+    "id": "pc26-gibbs-minimum-standard-choice",
+    "type": "multiple-choice",
+    "prompt": "The section notes that one could, in principle, choose 1 bar as the standard pressure for A, 1 torr for B and 1 psi for the products. What would such a choice change?",
+    "choices": [
+      {
+        "text": "The value of Δ_r G°",
+        "correct": true
+      },
+      {
+        "text": "Nothing, since P° is only a label",
+        "why": "The standard pressures set the reference values μ_i°. A different choice gives a valid but different Δ_r G°."
+      },
+      {
+        "text": "Whether the reaction can reach equilibrium",
+        "why": "The physical system is unchanged by how we choose reference pressures. Only the bookkeeping changes, in particular the value of Δ_r G°."
+      },
+      {
+        "text": "The units of the extent of reaction",
+        "why": "ξ is in mol whatever the reference pressures. The choice changes the standard potentials and so Δ_r G°."
+      }
+    ],
+    "explanation": "Such a choice is valid, though ridiculous; the standard pressures are usually all 1 bar. But since each μ_i° refers to its P_i°, the value of Δ_r G° depends on the choice."
+  },
+  {
+    "id": "pc26-gibbs-minimum-fixed-composition",
+    "type": "multiple-choice",
+    "prompt": "The section describes Δ_r G as the change in G when ξ changes by one mole with a fixed composition. Why must the composition be held fixed?",
+    "choices": [
+      {
+        "text": "Each μ_i changes as the composition changes",
+        "correct": true
+      },
+      {
+        "text": "Otherwise the temperature would change",
+        "why": "T is held constant separately, along with P. The composition is fixed because each μ_i, and so Σ ν_i μ_i, depends on it."
+      },
+      {
+        "text": "Because Δ_r G is the same at every composition",
+        "why": "It is not: Δ_r G changes as the reaction proceeds, which is why a composition must be named. For a gas, each μ_i depends on its P_i."
+      },
+      {
+        "text": "So that G stays constant during the step",
+        "why": "G does change, by Δ_r G per mole of ξ. What is held fixed is the composition, because each μ_i depends on it."
+      }
+    ],
+    "explanation": "Δ_r G = Σ ν_i μ_i, and for a gas each μ_i = μ_i° + RT ln(P_i/P_i°) depends on the partial pressures. So Δ_r G belongs to one composition: it is the slope of G against ξ at that point."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-xi-no2",
+    "type": "numeric",
+    "prompt": "In the reaction N2O4(g) ⇌ 2NO2(g), the amount of NO2 rises by 0.250 mol. Using Δn_i = ν_i Δξ, with ν = 2 for NO2, what is the change in the extent of reaction, Δξ, in mol? (Give it as a decimal.)",
+    "answer": 0.125,
+    "unit": "mol",
+    "explanation": "Δξ = Δn/ν = 0.250 mol ÷ 2 = 0.125 mol. In the same step 0.125 mol of N2O4 is used up, since its coefficient is 1."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-xi-h2",
+    "type": "numeric",
+    "prompt": "In N2(g) + 3H2(g) ⇌ 2NH3(g), the amount of H2 falls by 0.900 mol. For a reactant, Δn = −ν Δξ, with ν = 3 for H2. What is Δξ, in mol? (Give it as a decimal.)",
+    "answer": 0.3,
+    "unit": "mol",
+    "explanation": "Δξ = −Δn/ν = −(−0.900 mol)/3 = 0.300 mol. The minus sign for reactants makes Δξ positive, as it must be when the reaction goes forward."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-o2-left",
+    "type": "numeric",
+    "prompt": "Methane burns as CH4(g) + 2O2(g) → CO2(g) + 2H2O(g). A mixture starts with 5.00 mol of O2. Using n = n_0 − νξ for a reactant, with ν = 2 for O2, how many moles of O2 remain when ξ = 1.20 mol? (Give it as a decimal.)",
+    "answer": 2.6,
+    "unit": "mol",
+    "explanation": "n = 5.00 mol − 2 × 1.20 mol = 2.60 mol. Each mole of ξ uses 2 mol of O2."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-xi-complete",
+    "type": "numeric",
+    "prompt": "Hydrogen burns as 2H2(g) + O2(g) → 2H2O(g). Starting from 5.00 mol of H2 and excess O2, the reaction runs until the H2 is used up. Setting the amount of H2, 5.00 mol − 2ξ, equal to zero, what is ξ at completion, in mol? (Give it as a decimal.)",
+    "answer": 2.5,
+    "unit": "mol",
+    "explanation": "5.00 mol − 2ξ = 0 gives ξ = 5.00 mol ÷ 2 = 2.50 mol. In the section's special case, a limiting reactant that starts with exactly ν moles, ξ would end at 1 mol."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-sum-nu-mu",
+    "type": "numeric",
+    "prompt": "For H2(g) + I2(g) ⇌ 2HI(g) at one composition, the chemical potentials are μ(H2) = 2.4 kJ/mol, μ(I2) = 20.1 kJ/mol and μ(HI) = 9.8 kJ/mol. Using Δ_r G = Σ ν_i μ_i, with a minus sign for the reactants, what is Δ_r G, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -2.9,
+    "explanation": "Δ_r G = 2(9.8) − 2.4 − 20.1 = 19.6 − 22.5 = −2.9 kJ/mol. This is the slope of G against ξ at this composition, per mole of reaction as written."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-dg-step",
+    "type": "numeric",
+    "prompt": "At a certain composition a reaction has Δ_r G = −12.0 kJ/mol. Since dG = Δ_r G dξ at constant T and P, by how much does G change when the reaction advances by dξ = 0.0100 mol, in J, including its sign?",
+    "answer": -120,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "dG = (−12 000 J/mol)(0.0100 mol) = −120 J. A step this small barely changes the composition, so Δ_r G stays essentially constant over it."
+  },
+  {
+    "id": "pc26-gibbs-minimum-calc-xi-from-q",
+    "type": "numeric",
+    "prompt": "A reaction is set up so that ξ runs from 0 at the start to 1 mol at completion, and it is followed by its conductivity, which depends linearly on ξ. The conductivity is 2.0 mS/cm at the start, 12.0 mS/cm at completion and 5.0 mS/cm at time t. Using the fraction (q(t) − q_0)/(q_1 − q_0), what is ξ at time t, in mol? (Give it as a decimal.)",
+    "answer": 0.3,
+    "unit": "mol",
+    "explanation": "(q(t) − q_0)/(q_1 − q_0) = (5.0 − 2.0)/(12.0 − 2.0) = 3.0/10.0 = 0.30, so ξ = 0.30 mol. The reaction is 30% of the way from start to completion."
+  }
+]

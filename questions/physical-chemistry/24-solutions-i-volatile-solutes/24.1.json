@@ -1,0 +1,624 @@
+[
+  {
+    "id": "pc24-mixtures-gibbs-sum",
+    "type": "multiple-choice",
+    "prompt": "The section shrinks a two-component system step by step at constant T and P, and integrates dG = μ_1 dn_1 + μ_2 dn_2 over its size. Which expression for G does this give?",
+    "choices": [
+      {
+        "text": "G = μ_1 n_1 + μ_2 n_2",
+        "correct": true
+      },
+      {
+        "text": "G = μ_1 + μ_2",
+        "why": "Each chemical potential is a per-mole quantity, so it must be multiplied by the amount of its own component. Integrating over the size gives G = μ_1 n_1 + μ_2 n_2."
+      },
+      {
+        "text": "G = μ_1 n_1 − μ_2 n_2",
+        "why": "Both dn terms enter dG with a plus sign, so both components add to G. The result is G = μ_1 n_1 + μ_2 n_2."
+      },
+      {
+        "text": "G = (μ_1 + μ_2)(n_1 + n_2)",
+        "why": "That would weight each μ by the total amount instead of its own component's amount. Each term pairs μ_i with its own n_i: G = μ_1 n_1 + μ_2 n_2."
+      }
+    ],
+    "explanation": "As the system shrinks, n_1, n_2 and G all scale with its size, while μ_1 and μ_2 stay fixed. Integrating from size 0 to 1 then gives G = μ_1 n_1 + μ_2 n_2."
+  },
+  {
+    "id": "pc24-mixtures-volumes-dilute",
+    "type": "multiple-choice",
+    "prompt": "The volumes of two liquids are generally not strictly additive when they are mixed. When, according to the section, can this usually be ignored?",
+    "choices": [
+      {
+        "text": "In dilute solutions",
+        "correct": true
+      },
+      {
+        "text": "In concentrated solutions",
+        "why": "The section singles out dilute solutions, where the deviations are often negligible. That is why volumetric work with molarities can usually ignore them."
+      },
+      {
+        "text": "Whenever the two liquids are fully miscible",
+        "why": "Fully miscible liquids can still give a volume different from the sum of the two. Additivity is a fair approximation mainly in dilute solutions."
+      },
+      {
+        "text": "Only at very high temperatures",
+        "why": "The section ties the approximation to concentration, not to temperature. The deviations are often negligible in dilute solutions."
+      }
+    ],
+    "explanation": "The real volume is V = V̄_1 n_1 + V̄_2 n_2, where the partial molar volumes depend on composition (and on P and T). Volumetric analysis with molarities ignores this, which is usually fine because the deviations are often negligible in dilute solutions."
+  },
+  {
+    "id": "pc24-mixtures-molarity",
+    "type": "multiple-choice",
+    "prompt": "Why does the section prefer mole fractions or molalities to molarity as the concentration measure for phase diagrams?",
+    "choices": [
+      {
+        "text": "Molarity depends on the volume; they do not",
+        "correct": true
+      },
+      {
+        "text": "Molarity cannot be used for liquids",
+        "why": "Molarity is widely used for liquid solutions in volumetric analysis. Its drawback for phase diagrams is that, as moles per liter, it depends on the volume."
+      },
+      {
+        "text": "Molarity is defined only for dilute solutions",
+        "why": "Molarity can be used at any concentration. The trouble is that it is moles per liter, so it depends on the volume, which mole fractions and molalities do not."
+      },
+      {
+        "text": "Molarity is harder to measure in the lab",
+        "why": "Molarity is in fact easy to use in volumetric work. Its drawback for phase diagrams is its dependence on volume, which mole fractions and molalities avoid."
+      }
+    ],
+    "explanation": "Molarity is moles per liter, so it changes whenever the volume does, and volumes of mixtures are not strictly additive. Mole fractions and molalities (moles per kilogram) have no volume dependence."
+  },
+  {
+    "id": "pc24-mixtures-total-volume",
+    "type": "numeric",
+    "prompt": "A water–methanol mixture holds 3.00 mol of water and 1.00 mol of methanol. At this composition, take the partial molar volumes as V̄_1 = 17.8 mL/mol for water and V̄_2 = 38.5 mL/mol for methanol. Using V = V̄_1 n_1 + V̄_2 n_2, what is the volume of the mixture, in mL? (Give it as a decimal.)",
+    "answer": 91.9,
+    "explanation": "V = (17.8 mL/mol)(3.00 mol) + (38.5 mL/mol)(1.00 mol) = 53.4 mL + 38.5 mL = 91.9 mL. Partial molar volumes depend on composition, so these values hold only for a mixture of this composition."
+  },
+  {
+    "id": "pc24-mixtures-gas-nonideal",
+    "type": "multiple-choice",
+    "prompt": "Gas mixtures usually behave close to ideal. Under which conditions does the section say they stop doing so?",
+    "choices": [
+      {
+        "text": "When heavily compressed or at low temperatures",
+        "correct": true
+      },
+      {
+        "text": "When the two gases have different molar masses",
+        "why": "Different gases mix in any ratio and still act nearly ideal, since their molecules barely interact. Ideality fails when the gas is heavily compressed or brought to low temperatures."
+      },
+      {
+        "text": "When heated to high temperatures at low pressure",
+        "why": "High temperature and low pressure are where gases act most ideally. Deviations appear when the gas is heavily compressed or cold."
+      },
+      {
+        "text": "When one gas is present in only a small amount",
+        "why": "A small mole fraction does not make a gas mixture nonideal. The molecules start to interact noticeably only when the gas is heavily compressed or cold."
+      }
+    ],
+    "explanation": "Gas molecules interact little, so it hardly matters whether a neighbor is the same kind of molecule or a different one. Compressing the gas hard or cooling it brings the molecules close enough for their interactions to matter."
+  },
+  {
+    "id": "pc24-mixtures-gas-react",
+    "type": "multiple-choice",
+    "prompt": "Gases can mix in any ratio. Which exception does the section mention?",
+    "choices": [
+      {
+        "text": "Gases that react, such as HCl and NH3",
+        "correct": true
+      },
+      {
+        "text": "Gases of very different density, such as H2 and CO2",
+        "why": "Gases mix completely whatever their densities, and such mixtures act close to ideal. The exception is a pair that reacts, such as HCl and NH3."
+      },
+      {
+        "text": "Noble gases, such as He and Ar",
+        "why": "Noble gases mix readily and act almost ideally. The exception is gases that react with each other, such as HCl and NH3."
+      },
+      {
+        "text": "Any two gases at very low pressure",
+        "why": "At low pressure gases act most ideally and mix freely. Only gases that react, such as HCl and NH3, are an exception."
+      }
+    ],
+    "explanation": "Gas molecules barely interact, so any two gases mix in every proportion and the mixture is close to ideal. The exception is a pair that react with each other, like HCl and NH3."
+  },
+  {
+    "id": "pc24-mixtures-dalton-vapor",
+    "type": "multiple-choice",
+    "prompt": "For the vapor above a liquid mixture, the section uses Dalton's law: P_total = Σ P_i and y_i = P_i/P_total. What justifies treating the vapor this way?",
+    "choices": [
+      {
+        "text": "Ideal gas molecules do not interact",
+        "correct": true
+      },
+      {
+        "text": "The liquid obeys Raoult's law",
+        "why": "Raoult's law describes the liquid side, P_i = x_i P_i^*. Dalton's law holds in the vapor because ideal gas molecules do not interact."
+      },
+      {
+        "text": "The two components have equal vapor pressures",
+        "why": "Dalton's law holds whatever the vapor pressures are. It follows from ideal gas molecules not interacting, so the partial pressures simply add."
+      },
+      {
+        "text": "The liquid and vapor are at the same temperature",
+        "why": "Equal temperatures are needed for equilibrium, but they are not what makes the pressures add. Dalton's law follows from the gas molecules not interacting."
+      }
+    ],
+    "explanation": "Because ideal gas molecules do not interact, each component contributes its own partial pressure, and its mole fraction in the vapor is y_i = P_i/P_total. Raoult's law then supplies the P_i for an ideal liquid."
+  },
+  {
+    "id": "pc24-mixtures-liquids-often-nonideal",
+    "type": "multiple-choice",
+    "prompt": "Gas mixtures are usually close to ideal, but liquid binary mixtures often are not. What reason does the section give?",
+    "choices": [
+      {
+        "text": "Their strong interactions change with unlike neighbors",
+        "correct": true
+      },
+      {
+        "text": "Liquid molecules do not interact with each other at all",
+        "why": "It is gas molecules that barely interact; liquid molecules interact strongly. An ideal liquid mixture needs those strong interactions to stay the same with unlike neighbors, which is seldom so."
+      },
+      {
+        "text": "Liquids cannot be mixed in every ratio",
+        "why": "Many liquid pairs mix completely, and ideal liquid mixtures are fully miscible. The trouble is that strong interactions usually differ between unlike molecules."
+      },
+      {
+        "text": "Liquid mixtures cannot be in equilibrium with a vapor",
+        "why": "Liquid mixtures do reach equilibrium with their vapor; that is what Raoult's law describes. Ideality fails because strong interactions usually change with unlike neighbors."
+      }
+    ],
+    "explanation": "Gas molecules barely interact, so it hardly matters whether a neighbor is like or unlike. Liquid molecules interact strongly, and an ideal liquid mixture needs those interactions to stay equally strong with unlike neighbors; that requires chemically similar components."
+  },
+  {
+    "id": "pc24-mixtures-regular-liquid",
+    "type": "multiple-choice",
+    "prompt": "Table 24.1.1 compares ideal gas, ideal liquid, regular liquid and real liquid mixtures. How does it describe a regular liquid mixture?",
+    "choices": [
+      {
+        "text": "Strong, modestly dissimilar interactions; not always miscible",
+        "correct": true
+      },
+      {
+        "text": "No interactions; complete miscibility",
+        "why": "That row is the ideal gas mixture, whose molecules hardly feel each other. A regular liquid has strong interactions that are modestly dissimilar, and it does not always mix completely."
+      },
+      {
+        "text": "Strong but similar interactions; complete miscibility",
+        "why": "That row is the ideal liquid. In a regular liquid the interactions are modestly dissimilar, and miscibility is not always complete."
+      },
+      {
+        "text": "Often strongly dissimilar interactions; partial or no miscibility",
+        "why": "That row is the real liquid, which strays even further from ideality. A regular liquid sits between: modestly dissimilar interactions, and miscibility that is not always complete."
+      }
+    ],
+    "explanation": "Regular solutions are the next nearest thing to ideal liquids. Their interactions are strong but modestly dissimilar, so they do not always mix completely."
+  },
+  {
+    "id": "pc24-mixtures-regular-low-t",
+    "type": "multiple-choice",
+    "prompt": "Regular solutions are the next nearest thing to ideal liquid mixtures. What does the section say even these can show at low temperatures?",
+    "choices": [
+      {
+        "text": "Phase segregation and limited mutual solubility",
+        "correct": true
+      },
+      {
+        "text": "Complete miscibility in every ratio",
+        "why": "Complete miscibility in every ratio belongs to ideal liquid mixtures. Even regular solutions can separate into phases with limited mutual solubility when cooled."
+      },
+      {
+        "text": "Perfectly ideal behavior, as molecular motion slows",
+        "why": "Cooling does not make the modestly dissimilar interactions alike. At low temperatures regular solutions can segregate into phases with limited mutual solubility."
+      },
+      {
+        "text": "A homogeneous solid solution of both components",
+        "why": "Solid solutions are rare; immiscibility is the rule for solids. What the section describes is the liquid separating into phases with limited mutual solubility."
+      }
+    ],
+    "explanation": "In a regular solution the interactions are modestly dissimilar, so mixing is not always complete. At low temperatures even these systems can display phase segregation and limited mutual solubilities; many real liquid binaries mix even less, some hardly at all."
+  },
+  {
+    "id": "pc24-mixtures-solid-rule",
+    "type": "multiple-choice",
+    "prompt": "How common is it, according to the section, for two solids to form a homogeneous solid mixture?",
+    "choices": [
+      {
+        "text": "Rare: immiscibility is the rule for solids",
+        "correct": true
+      },
+      {
+        "text": "Common: solids mix more easily than liquids",
+        "why": "It is the other way round: solid binaries tend to be even less miscible than liquid ones. Immiscibility is the rule and miscibility the exception."
+      },
+      {
+        "text": "Universal: all solids mix in any ratio",
+        "why": "Only gases mix in any ratio. For solids, immiscibility is the rule and miscibility the exception."
+      },
+      {
+        "text": "Common, as long as both are crystalline",
+        "why": "Being crystalline does not make two solids mix. For solid binaries, immiscibility is the rule and miscibility the exception."
+      }
+    ],
+    "explanation": "Solid binaries are even less miscible than liquid binaries: immiscibility is the rule and miscibility the exception. The solid solutions that do form are relatively infrequent and never ideal."
+  },
+  {
+    "id": "pc24-mixtures-electrum",
+    "type": "multiple-choice",
+    "prompt": "The section mentions electrum, the alloys of silver and gold. What point does this example make?",
+    "choices": [
+      {
+        "text": "Even fully miscible solids are far from ideal",
+        "correct": true
+      },
+      {
+        "text": "Silver and gold do not mix in the solid state",
+        "why": "Silver and gold are totally miscible, so electrum can have any composition. The point is that even such a system is far from ideal."
+      },
+      {
+        "text": "Metal alloys are ideal solid solutions",
+        "why": "The section says solid solutions are never ideal. Electrum is far from ideal even though silver and gold are fully miscible."
+      },
+      {
+        "text": "Solid mixtures behave like ideal gas mixtures",
+        "why": "Ideal gas molecules do not interact, while the atoms in electrum interact strongly. Even this totally miscible system is far from ideal."
+      }
+    ],
+    "explanation": "Silver and gold are totally miscible, so electrum forms at any composition. Yet even this system is far from ideal; the section notes that solid solutions are never ideal."
+  },
+  {
+    "id": "pc24-mixtures-solid-diffusion",
+    "type": "multiple-choice",
+    "prompt": "Two solids are able to form a homogeneous solid solution. Why does mixing them still usually take prolonged heating?",
+    "choices": [
+      {
+        "text": "Diffusion in solids is very slow",
+        "correct": true
+      },
+      {
+        "text": "Heat is needed to melt both solids first",
+        "why": "The solids don't have to melt; atoms can move through a solid, but only slowly. Heating for a long time speeds up that slow solid diffusion."
+      },
+      {
+        "text": "The mixed solid is thermodynamically unstable",
+        "why": "If the two can form a homogeneous solution, the mixed state is the stable one. The obstacle is kinetic: diffusion in solids is very slow."
+      },
+      {
+        "text": "Heating makes the two solids chemically similar",
+        "why": "Heating does not change what the atoms or molecules are. It speeds up solid diffusion, which is typically very slow."
+      }
+    ],
+    "explanation": "This is a kinetic issue rather than a thermodynamic one. Even when a homogeneous solid solution is possible, atoms move through a solid so slowly that mixing takes prolonged heating."
+  },
+  {
+    "id": "pc24-mixtures-recrystallization",
+    "type": "multiple-choice",
+    "prompt": "Organic molecular solids that differ in shape, size, polarity or hydrogen bonding have negligible mutual solid solubility. Which lab technique exploits this?",
+    "choices": [
+      {
+        "text": "Purifying a compound by recrystallization",
+        "correct": true
+      },
+      {
+        "text": "Separating two liquids by distillation",
+        "why": "Distillation exploits the different compositions of a liquid and its vapor, not solid solubility. Recrystallization relies on the impurity not dissolving in the growing crystals."
+      },
+      {
+        "text": "Making alloys by melting metals together",
+        "why": "Alloy making relies on solids that do mix, the opposite case. Recrystallization uses the fact that unlike molecular solids hardly dissolve in each other."
+      },
+      {
+        "text": "Grinding two powders into a uniform blend",
+        "why": "A powder blend is just a mixture of separate grains, not a solid solution. The negligible solid solubility is what recrystallization uses to purify compounds."
+      }
+    ],
+    "explanation": "Because unlike molecular solids hardly dissolve in each other, the crystals of a compound grow nearly free of impurities. Organic chemists exploit this to purify compounds by recrystallization."
+  },
+  {
+    "id": "pc24-mixtures-raoult-surface",
+    "type": "multiple-choice",
+    "prompt": "The section explains Raoult's law with a molecular picture. If the two components interact in similar ways, what decides which kind of molecule sits at the liquid's surface?",
+    "choices": [
+      {
+        "text": "Random chance, in proportion to the mole fractions",
+        "correct": true
+      },
+      {
+        "text": "Volatility: the more volatile molecules crowd the surface",
+        "why": "Volatility sets how easily a surface molecule escapes, not which molecule is at the surface. With similar interactions, that is a matter of random chance."
+      },
+      {
+        "text": "Size: the smaller molecules always end up on top",
+        "why": "The section's picture has no sorting by size. With similar interactions, which molecule sits at the surface is random, so each kind's share matches its mole fraction."
+      },
+      {
+        "text": "Density: the less dense component floats to the top",
+        "why": "The components form one mixed liquid, so one does not float on the other. With similar interactions, which molecule is at the surface is random."
+      }
+    ],
+    "explanation": "With similar interactions, it is random chance which component sits at the interface, so each covers the surface in proportion to its mole fraction. The vapor pressure of i is then its pure vapor pressure (its volatility) times its mole fraction (its number on the surface): P_i = x_i P_i^*."
+  },
+  {
+    "id": "pc24-mixtures-raoult-isomers",
+    "type": "multiple-choice",
+    "prompt": "Raoult's law seldom holds completely. For which pair does the section expect it to work well?",
+    "choices": [
+      {
+        "text": "1-propanol and 2-propanol",
+        "correct": true
+      },
+      {
+        "text": "Water and hexane",
+        "why": "Water and hexane are very different molecules and hardly mix at all. Raoult's law works best for nearly identical components, such as the isomers 1-propanol and 2-propanol."
+      },
+      {
+        "text": "Water and 1-propanol",
+        "why": "Water is much smaller than 1-propanol and hydrogen-bonds differently, so the two are quite unlike. Raoult's law suits almost chemically identical components, such as two isomers."
+      },
+      {
+        "text": "Silver and gold, as in electrum",
+        "why": "That is a solid solution, and the section says even electrum is far from ideal. Raoult's law works best for nearly identical liquids, such as two isomers."
+      }
+    ],
+    "explanation": "Raoult's law needs the interactions to be the same whatever the neighbor, so it applies best when the components are almost chemically identical. The isomers 1-propanol and 2-propanol are the section's example."
+  },
+  {
+    "id": "pc24-mixtures-isomer-composition",
+    "type": "numeric",
+    "prompt": "Take the vapor pressures of pure 2-propanol and pure 1-propanol at 25 °C as 45.0 torr and 21.0 torr. The two isomers obey Raoult's law, so P_total = 21.0 torr + x(45.0 torr − 21.0 torr), where x is the mole fraction of 2-propanol in the liquid. Which x gives a total vapor pressure of 27.0 torr? (Give it as a decimal.)",
+    "answer": 0.25,
+    "explanation": "27.0 torr − 21.0 torr = 6.0 torr = x(24.0 torr), so x = 6.0/24.0 = 0.25. The liquid line runs straight from 21.0 torr for pure 1-propanol (x = 0) to 45.0 torr for pure 2-propanol (x = 1)."
+  },
+  {
+    "id": "pc24-mixtures-liquid-line",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature, an ideal binary solution has total vapor pressure P_total = x_1 P_1^* + (1 − x_1)P_2^*, where P_1^* and P_2^* are the vapor pressures of the pure liquids. What does a plot of P_total against x_1 look like?",
+    "choices": [
+      {
+        "text": "A straight line from P_2^* at x_1 = 0 to P_1^* at x_1 = 1",
+        "correct": true
+      },
+      {
+        "text": "A straight line from P_1^* at x_1 = 0 to P_2^* at x_1 = 1",
+        "why": "At x_1 = 0 the liquid is pure component 2, so P_total = P_2^*. The line ends at P_1^* when x_1 = 1."
+      },
+      {
+        "text": "A curve that sags below both pure vapor pressures",
+        "why": "P_total is linear in x_1, so it is not a curve. It runs straight between P_2^* and P_1^*."
+      },
+      {
+        "text": "A horizontal line at P_1^* + P_2^*",
+        "why": "The pure vapor pressures are weighted by mole fractions, not simply added. The result runs straight from P_2^* at x_1 = 0 to P_1^* at x_1 = 1."
+      }
+    ],
+    "explanation": "Rewriting gives P_total = P_2^* − x_1(P_2^* − P_1^*), a straight line in x_1. It gives P_2^* at x_1 = 0 and P_1^* at x_1 = 1; this is the liquid line of the pressure–composition diagram."
+  },
+  {
+    "id": "pc24-mixtures-benzene-toluene",
+    "type": "numeric",
+    "prompt": "At one temperature, pure toluene (A) has a vapor pressure of P_A^* = 0.24 bar and pure benzene (B) has P_B^* = 0.66 bar. Treating the mixture as ideal, P_total = x_A P_A^* + x_B P_B^*. What is the total vapor pressure above a liquid with x_B = 0.25, in bar? (Give it as a decimal.)",
+    "answer": 0.345,
+    "unit": "bar",
+    "tolerance": 0.02,
+    "explanation": "x_A = 1 − 0.25 = 0.75, so P_total = (0.75)(0.24 bar) + (0.25)(0.66 bar) = 0.180 bar + 0.165 bar = 0.345 bar. The point lies on the straight liquid line, between 0.24 bar for pure toluene and 0.66 bar for pure benzene."
+  },
+  {
+    "id": "pc24-mixtures-vapor-line",
+    "type": "multiple-choice",
+    "prompt": "On the isothermal pressure–composition diagram of an ideal solution, how does the vapor line (P_total plotted against the vapor mole fraction y_1) compare with the liquid line?",
+    "choices": [
+      {
+        "text": "It is curved and lies below the liquid line",
+        "correct": true
+      },
+      {
+        "text": "It is a straight line on top of the liquid line",
+        "why": "If it were, the vapor and liquid would always have the same composition. Because y ≠ x, the vapor line is a separate curve below the liquid line."
+      },
+      {
+        "text": "It is curved and lies above the liquid line",
+        "why": "Above the liquid line only liquid exists. The vapor line lies below it, with the two-phase region between the two."
+      },
+      {
+        "text": "It is a straight line parallel to the liquid line",
+        "why": "A parallel line could never meet the liquid line at the pure end points, where both must give P_1^* or P_2^*. The vapor line is a curve that sags below the liquid line between them."
+      }
+    ],
+    "explanation": "In terms of y_1 the total pressure is (P_1^* P_2^*)/(P_1^* + (P_2^* − P_1^*)y_1), which is not a straight line. It meets the liquid line at the two pure end points and sags below it in between."
+  },
+  {
+    "id": "pc24-mixtures-vapor-line-pressure",
+    "type": "numeric",
+    "prompt": "An ideal solution has pure vapor pressures P_1^* = 50 torr and P_2^* = 25 torr. Its vapor line is P_total = (P_1^* P_2^*)/(P_1^* + (P_2^* − P_1^*)y_1). What is P_total on the vapor line at y_1 = 0.50, in torr? (Give it as a decimal.)",
+    "answer": 33.3,
+    "unit": "torr",
+    "explanation": "P_1^* P_2^* = (50 torr)(25 torr) = 1250 torr², and the denominator is 50 torr + (25 torr − 50 torr)(0.50) = 37.5 torr, so P_total = 1250/37.5 = 33.3 torr. The liquid line at x_1 = 0.50 is higher, at 37.5 torr, so the vapor line lies below it."
+  },
+  {
+    "id": "pc24-mixtures-tie-line",
+    "type": "multiple-choice",
+    "prompt": "A point on the pressure–composition diagram falls between the liquid line and the vapor line. What does the horizontal tie line through that point show?",
+    "choices": [
+      {
+        "text": "The coexisting liquid and gas compositions",
+        "correct": true
+      },
+      {
+        "text": "The composition of one homogeneous phase",
+        "why": "Points between the two lines cannot be reached as one homogeneous phase. The tie line's ends give the compositions of the liquid and the gas that coexist."
+      },
+      {
+        "text": "The vapor pressures of the pure components",
+        "why": "The pure vapor pressures are the end points of the diagram, at x = 0 and x = 1. A tie line joins the coexisting liquid and gas compositions at one pressure."
+      },
+      {
+        "text": "The path the system follows as it is heated",
+        "why": "This diagram is at constant temperature, and the tie line is at constant pressure. Its ends mark the compositions of the coexisting liquid and gas."
+      }
+    ],
+    "explanation": "Between the two lines lies a two-phase region that the system cannot reach homogeneously. It splits into a liquid and a gas, whose compositions are where the horizontal tie line meets the liquid and vapor lines."
+  },
+  {
+    "id": "pc24-mixtures-liquid-poorer",
+    "type": "multiple-choice",
+    "prompt": "A mixture is held at a pressure inside the two-phase region of its pressure–composition diagram, so it splits into a gas and a liquid. Compared with the overall composition, what is the liquid like?",
+    "choices": [
+      {
+        "text": "Poorer in the more volatile component",
+        "correct": true
+      },
+      {
+        "text": "Richer in the more volatile component",
+        "why": "That describes the gas, which takes a larger share of the more volatile component. The liquid left behind is poorer in it than the overall composition."
+      },
+      {
+        "text": "The same as the overall composition",
+        "why": "If it were, the gas would have the overall composition too, and the mixture would have no reason to split. The liquid is poorer in the more volatile component."
+      },
+      {
+        "text": "Made of the less volatile component alone",
+        "why": "The liquid is depleted, not pure; it still holds some of the more volatile component. That is why distillation needs many steps."
+      }
+    ],
+    "explanation": "Each partial pressure is a mole fraction times a pure vapor pressure, so the more volatile component makes up a larger share of the vapor than of the liquid. The gas ends up richer, and the liquid poorer, in the more volatile component than the overall composition would indicate."
+  },
+  {
+    "id": "pc24-mixtures-vapor-composition",
+    "type": "numeric",
+    "prompt": "Two liquids form an ideal solution, with pure vapor pressures P_1^* = 50 torr and P_2^* = 25 torr. The liquid has x_1 = 0.60. Using y_1 = (x_1 P_1^*)/(P_2^* − x_1(P_2^* − P_1^*)), what is the mole fraction of component 1 in the vapor? (Give it as a decimal.)",
+    "answer": 0.75,
+    "explanation": "The numerator is x_1 P_1^* = (0.60)(50 torr) = 30 torr, and the denominator, the total pressure, is 25 torr − 0.60(25 torr − 50 torr) = 40 torr. So y_1 = 30/40 = 0.75: the vapor is richer than the liquid (0.60) in component 1, the more volatile one."
+  },
+  {
+    "id": "pc24-mixtures-cross-section",
+    "type": "multiple-choice",
+    "prompt": "Which phases a binary mixture forms depends on P, T and composition together. Why does the section usually work with 2D diagrams, such as a temperature–composition diagram at fixed pressure?",
+    "choices": [
+      {
+        "text": "A 3D diagram is hard to draw and to read",
+        "correct": true
+      },
+      {
+        "text": "Pressure has no effect on which phases form",
+        "why": "Pressure does matter; that is why one diagram is drawn at fixed T and the other at fixed P. 2D cross sections are used because a 3D picture is hard to draw and to comprehend."
+      },
+      {
+        "text": "Composition can be varied only at fixed pressure",
+        "why": "Composition can be varied at any pressure or temperature. The full picture in P, T and composition is three-dimensional, which is why 2D cross sections are used."
+      },
+      {
+        "text": "Temperature and pressure always change together",
+        "why": "P and T can be set independently, which is why the full picture needs three dimensions. Since a 3D diagram is hard to draw and to read, one takes 2D cross sections."
+      }
+    ],
+    "explanation": "A complete picture would be three-dimensional, which is hard to draw and to comprehend, so one looks at 2D cross sections. Holding the pressure at, say, 1 bar and heating isobarically is the most usual and easiest choice."
+  },
+  {
+    "id": "pc24-mixtures-lens",
+    "type": "multiple-choice",
+    "prompt": "On a temperature–composition diagram at constant pressure, boiling temperatures are plotted against the liquid composition x and the vapor composition y. What shape is the two-phase region between the two curves?",
+    "choices": [
+      {
+        "text": "A lens, bounded by two curves",
+        "correct": true
+      },
+      {
+        "text": "A triangle bounded by two straight lines",
+        "why": "Neither curve is a straight line in the temperature diagram. The two curves enclose a lens-shaped two-phase region."
+      },
+      {
+        "text": "A single line, since x and y are equal",
+        "why": "In general y ≠ x, so there are two different curves. The region between them is lens-shaped."
+      },
+      {
+        "text": "A rectangle spanning all compositions",
+        "why": "The two curves meet at the boiling points of the pure components, one at each end. Between those points they enclose a lens."
+      }
+    ],
+    "explanation": "Because y is generally not equal to x, the liquid and vapor compositions give two different boiling curves. Neither is straight in this diagram, and together they enclose a lens-shaped two-phase region."
+  },
+  {
+    "id": "pc24-mixtures-lever-near-liquid",
+    "type": "multiple-choice",
+    "prompt": "A mixture boils inside the two-phase lens of a temperature–composition diagram. Its overall composition lies very close to the liquid composition and far from the vapor composition. What does the lever rule say?",
+    "choices": [
+      {
+        "text": "Nearly all of the material is liquid",
+        "correct": true
+      },
+      {
+        "text": "Nearly all of the material is vapor",
+        "why": "The lever rule works crosswise: the amount of liquid goes with the arm from the overall composition to the vapor side. That arm is long here, so the system is mostly liquid."
+      },
+      {
+        "text": "Liquid and vapor are present in equal amounts",
+        "why": "Equal amounts need the overall composition halfway between the two ends of the tie line. Here it sits next to the liquid end, so the system is mostly liquid."
+      },
+      {
+        "text": "The liquid has the same composition as the vapor",
+        "why": "In the two-phase region the liquid and vapor compositions differ. The lever rule tells how much of each phase there is, and here it is mostly liquid."
+      }
+    ],
+    "explanation": "From n_liq/n_gas = (y_2 − x_all)/(x_all − x_2), a small x_all − x_2 and a large y_2 − x_all make the ratio large. Each phase's amount goes with the opposite arm of the tie line, so here nearly everything is liquid."
+  },
+  {
+    "id": "pc24-mixtures-lever-ratio",
+    "type": "numeric",
+    "prompt": "A boiling binary mixture has an overall mole fraction of component 2 of x_all = 0.40. The tie line meets the liquid curve at x_2 = 0.30 and the vapor curve at y_2 = 0.60. Using the lever rule, n_liq/n_gas = (y_2 − x_all)/(x_all − x_2), what is the ratio of moles of liquid to moles of gas?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "n_liq/n_gas = (0.60 − 0.40)/(0.40 − 0.30) = 0.20/0.10 = 2. There are twice as many moles of liquid as of gas, because the overall composition lies closer to the liquid end of the tie line."
+  },
+  {
+    "id": "pc24-mixtures-distillation",
+    "type": "multiple-choice",
+    "prompt": "What feature of a boiling mixture does distillation exploit?",
+    "choices": [
+      {
+        "text": "Vapor and liquid differ in composition",
+        "correct": true
+      },
+      {
+        "text": "The vapor has the same composition as the liquid",
+        "why": "If it did, condensing the vapor would separate nothing. Distillation works because the vapor is richer in the more volatile component."
+      },
+      {
+        "text": "The volumes of the liquids are not additive",
+        "why": "Non-additive volumes play no part in distillation. It works because a liquid and the vapor in equilibrium with it have different compositions."
+      },
+      {
+        "text": "Both components have the same boiling point",
+        "why": "Distillation relies on the components differing in volatility. Then the vapor is richer in the more volatile one, and condensing it gives a liquid of new composition."
+      }
+    ],
+    "explanation": "The vapor is trapped and cooled to a liquid with a different composition, which is then boiled again. Each round enriches the vapor in the more volatile component, while the residual liquid is enriched in the less volatile one."
+  },
+  {
+    "id": "pc24-mixtures-purity-limit",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how pure can the more volatile component become through repeated distillation steps?",
+    "choices": [
+      {
+        "text": "Very pure, but never quite 100%",
+        "correct": true
+      },
+      {
+        "text": "100% pure after a single step",
+        "why": "One step only enriches the vapor, which still holds both components. Each further step brings it closer to pure, but 100% would take infinitely many."
+      },
+      {
+        "text": "100% pure after a few steps on a column",
+        "why": "A fractionation column runs many vapor–liquid equilibria at once and gives good purity, but never 100%. That would take an infinite number of steps."
+      },
+      {
+        "text": "No purer than the starting liquid",
+        "why": "Each step does enrich the vapor in the more volatile component. A good degree of purity can be reached, though not 100%."
+      }
+    ],
+    "explanation": "Each cycle of boiling and condensing enriches the vapor further, so a good degree of purity can be reached. A fractionation column runs a series of vapor–liquid equilibria at once, but 100% purity would take an infinite number of steps."
+  }
+]

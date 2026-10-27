@@ -1,0 +1,294 @@
+[
+  {
+    "id": "pc26-ionic-k-why-activities",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say activities, not concentrations, are needed for equilibria involving ions, even in dilute solution?",
+    "choices": [
+      {
+        "text": "Ions are nonideal even at tiny concentrations",
+        "correct": true
+      },
+      {
+        "text": "Ion concentrations cannot be measured directly",
+        "why": "Ion concentrations can be measured; the problem is that ions don't behave ideally. Even at tiny concentrations their γ_(±) differs from 1."
+      },
+      {
+        "text": "Ions in water always pair up completely",
+        "why": "Strong electrolytes are largely free ions in dilute solution. The point is that free ions are nonideal, with γ_(±) below 1, even when dilute."
+      },
+      {
+        "text": "The activity of a dissolved ion is always 1",
+        "why": "An activity of 1 belongs to a pure solid or liquid. A dissolved ion's activity is γ times its concentration, and γ_(±) is below 1."
+      }
+    ],
+    "explanation": "Strong electrolytes are nonideal even at tiny concentrations, and Debye–Hückel theory works only for very dilute solutions. So K written in activities carries factors of γ_(±) that change the equilibrium concentrations."
+  },
+  {
+    "id": "pc26-ionic-k-neutral-hac",
+    "type": "multiple-choice",
+    "prompt": "For 0.1 mol/L acetic acid, HAc + H2O ⇌ Ac^− + H3O^+, the section takes the activity coefficient of undissociated HAc to be essentially 1. Why?",
+    "choices": [
+      {
+        "text": "HAc is a neutral species",
+        "correct": true
+      },
+      {
+        "text": "HAc is the solvent",
+        "why": "Water is the solvent here. HAc is a solute, and its γ is about 1 because it carries no charge."
+      },
+      {
+        "text": "Almost no HAc is left at equilibrium",
+        "why": "Most of the acid stays undissociated: x is only about 1.3 × 10^−3 mol/L out of 0.1 mol/L. Its γ is about 1 because it is neutral."
+      },
+      {
+        "text": "HAc is a pure liquid",
+        "why": "In the solution HAc is dissolved, not pure. Its γ is about 1 because, unlike the ions, it carries no charge."
+      }
+    ],
+    "explanation": "The large deviations from ideal behavior come from the ions' charges. Neutral HAc has γ ≈ 1, so only the ions need the factor γ_(±)^2."
+  },
+  {
+    "id": "pc26-ionic-k-gamma-squared",
+    "type": "multiple-choice",
+    "prompt": "The section writes a(Ac^−) a(H3O^+) = [Ac^−][H3O^+]γ_(±)^2 for the ions from acetic acid. Why is γ_(±) squared?",
+    "choices": [
+      {
+        "text": "There is one factor for each of the two ions",
+        "correct": true
+      },
+      {
+        "text": "Each ion carries a charge of 2",
+        "why": "Ac^− and H3O^+ are singly charged. The square comes from two ions, each contributing one activity coefficient."
+      },
+      {
+        "text": "The equilibrium constant K is squared",
+        "why": "K appears to the first power. The square comes from the two ions on the product side, each with a factor γ_(±)."
+      },
+      {
+        "text": "Activities are always squared concentrations",
+        "why": "An activity is γ times a concentration, not its square. The square here comes from multiplying two ion activities, each with one γ_(±)."
+      }
+    ],
+    "explanation": "Each ion's activity is its concentration times an activity coefficient. Multiplying the two activities gives two such factors, which the mean activity coefficient writes as γ_(±)^2."
+  },
+  {
+    "id": "pc26-ionic-k-dissociation-up",
+    "type": "multiple-choice",
+    "prompt": "For 0.1 mol/L acetic acid, the ideal calculation gives x = [H3O^+] = 1.31 × 10^−3 mol/L. When γ_(±) < 1 is taken into account, how does x change?",
+    "choices": [
+      {
+        "text": "It rises slightly, to about 1.37 × 10^−3 mol/L",
+        "correct": true
+      },
+      {
+        "text": "It falls slightly, to about 1.25 × 10^−3 mol/L",
+        "why": "With K fixed, [Ac^−][H3O^+]/[HAc] = K/γ_(±)^2, which is larger than K when γ_(±) < 1. So more acid dissociates, not less."
+      },
+      {
+        "text": "It is unchanged, because K is fixed",
+        "why": "K is fixed, but it is written in activities. Since γ_(±) < 1, the concentrations must rise to keep the activities at K."
+      },
+      {
+        "text": "It doubles, to about 2.6 × 10^−3 mol/L",
+        "why": "The change is small: γ_(±)^2 is about 0.92 here. x rises only to about 1.37 × 10^−3 mol/L."
+      }
+    ],
+    "explanation": "With K = ([Ac^−][H3O^+]γ_(±)^2)/([HAc]) fixed, a γ_(±) below 1 means the concentrations must be larger to compensate. Iterating gives x ≈ 1.37 × 10^−3 mol/L, a real but modest change."
+  },
+  {
+    "id": "pc26-ionic-k-iteration",
+    "type": "multiple-choice",
+    "prompt": "Why does the section find the acetic acid equilibrium with γ_(±) by iteration rather than in one step?",
+    "choices": [
+      {
+        "text": "γ_(±) depends on I, and I depends on x itself",
+        "correct": true
+      },
+      {
+        "text": "K changes with every step of the calculation",
+        "why": "K depends only on temperature and stays 1.74 × 10^−5. What changes is γ_(±), which depends on the ionic strength and so on x."
+      },
+      {
+        "text": "HAc's activity coefficient is unknown",
+        "why": "HAc is neutral, so its γ is taken as 1. The unknown is γ_(±) for the ions, which depends on x through the ionic strength."
+      },
+      {
+        "text": "The ionic strength is set by the HAc molecules",
+        "why": "Neutral HAc adds nothing to I. The ions do, so I = x, and γ_(±) can only be found once x is known."
+      }
+    ],
+    "explanation": "The ionic strength is I = x, so γ_(±) depends on the unknown x. Start from the ideal x, compute γ_(±), divide K by γ_(±)^2, recompute x, and repeat until x stops changing."
+  },
+  {
+    "id": "pc26-ionic-k-ionic-strength-x",
+    "type": "multiple-choice",
+    "prompt": "Acetic acid dissociates to [Ac^−] = [H3O^+] = x, and both ions are singly charged. What is the ionic strength, I = 1/2 Σ c_i z_i^2?",
+    "choices": [
+      {
+        "text": "x",
+        "correct": true
+      },
+      {
+        "text": "x/2",
+        "why": "Both ions count: 1/2 (x × 1^2 + x × 1^2) = x. Taking only one ion gives x/2."
+      },
+      {
+        "text": "2x",
+        "why": "The factor 1/2 must be kept: 1/2 (x + x) = x, not 2x."
+      },
+      {
+        "text": "x^2",
+        "why": "I is a sum over the ions, linear in concentration, not a product. 1/2 (x + x) = x."
+      }
+    ],
+    "explanation": "I = 1/2 (x × 1^2 + x × 1^2) = x. Undissociated HAc is neutral and adds nothing."
+  },
+  {
+    "id": "pc26-ionic-k-acid-quotient",
+    "type": "numeric",
+    "prompt": "Benzoic acid, HA, has K = 6.3 × 10^−5 for HA + H2O ⇌ A^− + H3O^+, written in activities. At the solution's ionic strength γ_(±)^2 = 0.90, and neutral HA has γ = 1. What is the concentration quotient ([A^−][H3O^+])/([HA]) = K/γ_(±)^2? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 7e-05,
+    "explanation": "([A^−][H3O^+])/([HA]) = (6.3 × 10^−5)/0.90 = 7.0 × 10^−5. Because γ_(±)^2 < 1, the concentration quotient is larger than K, so the acid is a little more dissociated than the ideal calculation suggests."
+  },
+  {
+    "id": "pc26-ionic-k-baf2-cubed",
+    "type": "multiple-choice",
+    "prompt": "For barium fluoride, BaF2(s) ⇌ Ba^(2+) + 2F^−, the section writes K = γ_(±)^3[Ba^(2+)][F^−]^2. Why is γ_(±) cubed?",
+    "choices": [
+      {
+        "text": "Each BaF2 releases three ions",
+        "correct": true
+      },
+      {
+        "text": "Ba^(2+) has charge 2 and F^− has charge 1",
+        "why": "The charges add to 3 only by coincidence. The power counts ions: one Ba^(2+) and two F^− make three, each with its own activity coefficient."
+      },
+      {
+        "text": "The solid BaF2 has an activity of γ_(±)",
+        "why": "A pure solid has activity 1 and contributes no γ. The three factors belong to the three dissolved ions."
+      },
+      {
+        "text": "K_sp always contains γ_(±)^3",
+        "why": "A 1:1 salt such as AgCl has only γ_(±)^2. The power equals the number of ions released, three for BaF2."
+      }
+    ],
+    "explanation": "One Ba^(2+) and two F^− ions each contribute an activity coefficient, and the mean coefficient combines them as γ_(±)^3. A 1:1 salt would have γ_(±)^2."
+  },
+  {
+    "id": "pc26-ionic-k-baf2-bigger",
+    "type": "multiple-choice",
+    "prompt": "Allowing for nonideality raised the calculated solubility of BaF2 by about 45%, but the dissociation of acetic acid by only about 5%. What makes the BaF2 effect larger?",
+    "choices": [
+      {
+        "text": "Ba^(2+) is doubly charged and I is higher",
+        "correct": true
+      },
+      {
+        "text": "BaF2 has the larger equilibrium constant",
+        "why": "BaF2's K = 1.7 × 10^−6 is actually smaller than acetic acid's 1.74 × 10^−5. The larger effect comes from the charge of Ba^(2+) and the higher ionic strength."
+      },
+      {
+        "text": "Solid BaF2 has an activity below 1",
+        "why": "A pure solid's activity is taken as 1. The effect is larger because Ba^(2+) is doubly charged and the solution's ionic strength is higher."
+      },
+      {
+        "text": "Fluoride ions are larger than acetate ions",
+        "why": "Ion size is not the point here. The double charge of Ba^(2+) and the higher ionic strength make γ_(±) much smaller."
+      }
+    ],
+    "explanation": "For BaF2, |z_(+) z_(−)| = 2 and I = 3x ≈ 0.023, against I ≈ 0.0013 for the acetic acid, so γ_(±) drops to about 0.74. The solubility rises from 7.52 × 10^−3 to about 0.011 mol/L."
+  },
+  {
+    "id": "pc26-ionic-k-ksp-ideal",
+    "type": "numeric",
+    "prompt": "A sparingly soluble 1:1 salt MX has a solubility s = 3.0 × 10^−5 mol/L in pure water, so [M^+] = [X^−] = s. Treating the ions as ideal (γ_(±) = 1), K_sp = [M^+][X^−] = s^2. What is K_sp? (Type it in scientific notation, like 2.5e-10.)",
+    "answer": 9e-10,
+    "explanation": "K_sp = s^2 = (3.0 × 10^−5)^2 = 9.0 × 10^−10. This ignores γ_(±); since γ_(±) < 1, the true K_sp in activities is a little smaller."
+  },
+  {
+    "id": "pc26-ionic-k-ksp-gamma",
+    "type": "numeric",
+    "prompt": "A 1:1 salt has a measured solubility s = 2.0 × 10^−3 mol/L, and at this ionic strength γ_(±) = 0.95. Using K_sp = γ_(±)^2 s^2, what is K_sp in activities? (Type it in scientific notation, like 2.5e-6.)",
+    "answer": 3.61e-06,
+    "explanation": "K_sp = (0.95)^2 × (2.0 × 10^−3)^2 = 0.9025 × 4.0 × 10^−6 = 3.61 × 10^−6. Leaving out γ_(±) would give 4.0 × 10^−6, about 11% too high."
+  },
+  {
+    "id": "pc26-ionic-k-s-from-ksp",
+    "type": "numeric",
+    "prompt": "A 1:1 salt has K_sp = 1.6 × 10^−9 in activities. In a solution containing an inert salt, γ_(±) = 0.80, and the solubility is s = √(K_sp)/γ_(±). What is s, in mol/L? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 5e-05,
+    "explanation": "s = √(1.6 × 10^−9)/0.80 = (4.0 × 10^−5)/0.80 = 5.0 × 10^−5 mol/L. Ignoring γ_(±) would give 4.0 × 10^−5 mol/L, so the inert salt raises the solubility by 25%."
+  },
+  {
+    "id": "pc26-ionic-k-salt-effect",
+    "type": "multiple-choice",
+    "prompt": "KNO3 shares no ion with AgCl. If KNO3 is dissolved in a saturated AgCl solution, what happens to the solubility of AgCl?",
+    "choices": [
+      {
+        "text": "It rises, because γ_(±) falls as I increases",
+        "correct": true
+      },
+      {
+        "text": "It falls, by the common ion effect",
+        "why": "There is no common ion: K^+ and NO3^− are not in AgCl. Higher ionic strength lowers γ_(±), so more AgCl must dissolve to keep the activity product at K_sp."
+      },
+      {
+        "text": "It does not change, since nothing reacts with AgCl",
+        "why": "No reaction is needed: the added ions raise I and lower γ_(±). With K_sp fixed in activities, the concentrations of Ag^+ and Cl^− must rise."
+      },
+      {
+        "text": "It falls, because K_sp gets smaller",
+        "why": "K_sp depends only on temperature. It is γ_(±) that falls, so the ion concentrations, and the solubility, go up."
+      }
+    ],
+    "explanation": "K_sp = γ_(±)^2[Ag^+][Cl^−] is fixed at a given temperature. An inert salt raises the ionic strength and lowers γ_(±), so [Ag^+][Cl^−] must grow and more AgCl dissolves."
+  },
+  {
+    "id": "pc26-ionic-k-what-constant",
+    "type": "multiple-choice",
+    "prompt": "The section asks whether the acetic acid equilibrium changes if 0.5 mol/L NaCl is added. When it is added, which of these stays the same?",
+    "choices": [
+      {
+        "text": "K, written in activities",
+        "correct": true
+      },
+      {
+        "text": "The ratio [Ac^−][H3O^+]/[HAc]",
+        "why": "This ratio equals K/γ_(±)^2. NaCl raises the ionic strength and lowers γ_(±), so the ratio grows and more acid dissociates."
+      },
+      {
+        "text": "The mean activity coefficient γ_(±)",
+        "why": "γ_(±) depends on the ionic strength, which 0.5 mol/L NaCl raises a lot. Only the thermodynamic K stays the same."
+      },
+      {
+        "text": "The ionic strength of the solution",
+        "why": "NaCl adds 0.5 mol/L to the ionic strength, far more than the acid's own ions. K, in activities, is what stays fixed."
+      }
+    ],
+    "explanation": "K depends only on temperature, so it is unchanged. NaCl raises I and lowers γ_(±), so [Ac^−][H3O^+]/[HAc] = K/γ_(±)^2 increases and the acid dissociates further."
+  },
+  {
+    "id": "pc26-ionic-k-water-neutral",
+    "type": "multiple-choice",
+    "prompt": "In pure water, 2H2O ⇌ H3O^+ + OH^− with K = 10^−14. If 0.5 mol/L of an inert strong electrolyte M^(2+)X^(2−) is added, what happens to [H3O^+] and [OH^−]?",
+    "choices": [
+      {
+        "text": "Both rise by the same factor",
+        "correct": true
+      },
+      {
+        "text": "Both fall by the same factor",
+        "why": "The added ions lower γ_(±), and with K = γ_(±)^2[H3O^+][OH^−] fixed, the concentrations must go up, not down."
+      },
+      {
+        "text": "[H3O^+] rises while [OH^−] falls",
+        "why": "Nothing favors one ion over the other: both come from water in equal amounts. They rise together, and the water stays neutral."
+      },
+      {
+        "text": "Neither changes, since the salt doesn't react",
+        "why": "The salt need not react: its ions raise I and lower γ_(±). With K fixed, [H3O^+][OH^−] = K/γ_(±)^2 grows."
+      }
+    ],
+    "explanation": "K = γ_(±)^2[H3O^+][OH^−] stays at 10^−14, but the 2:2 salt raises the ionic strength a lot and lowers γ_(±). So [H3O^+][OH^−] = K/γ_(±)^2 grows while [H3O^+] = [OH^−]: the water stays neutral, though a pH computed as −log[H3O^+] drops below 7."
+  }
+]

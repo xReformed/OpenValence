@@ -1,0 +1,256 @@
+[
+  {
+    "id": "pc26-q-vs-k-subtract",
+    "type": "multiple-choice",
+    "prompt": "The section subtracts the equilibrium relation 0 = Δ_r G° + RT ln K from Δ_r G = Δ_r G° + RT ln Q. What does it get?",
+    "choices": [
+      {
+        "text": "Δ_r G = RT ln(Q/K)",
+        "correct": true
+      },
+      {
+        "text": "Δ_r G = RT ln(K/Q)",
+        "why": "The ratio is upside down: RT ln Q − RT ln K = RT ln(Q/K). With K/Q, a mixture short of products would get a positive Δ_r G."
+      },
+      {
+        "text": "Δ_r G = Δ_r G° + RT ln(Q/K)",
+        "why": "Subtracting removes Δ_r G°, since it appears in both relations. What remains is Δ_r G = RT ln(Q/K)."
+      },
+      {
+        "text": "Δ_r G = RT ln(Q × K)",
+        "why": "Subtracting logarithms divides their arguments: ln Q − ln K = ln(Q/K). So Δ_r G = RT ln(Q/K)."
+      }
+    ],
+    "explanation": "Δ_r G − 0 = (Δ_r G° − Δ_r G°) + RT ln Q − RT ln K, so Δ_r G = RT ln(Q/K). The sign of Δ_r G now depends only on whether Q is smaller or larger than K."
+  },
+  {
+    "id": "pc26-q-vs-k-difference",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the main difference between the equilibrium constant K and the reaction quotient Q?",
+    "choices": [
+      {
+        "text": "K is at equilibrium; Q is at any moment",
+        "correct": true
+      },
+      {
+        "text": "K uses pressures; Q uses concentrations",
+        "why": "Either can be written with pressures or concentrations. The difference is that K uses the equilibrium values and Q the values present now."
+      },
+      {
+        "text": "Q is always the inverse of K",
+        "why": "Q has the same form as K, products over reactants, not the inverse. It uses the current amounts instead of the equilibrium ones."
+      },
+      {
+        "text": "K changes during the reaction; Q does not",
+        "why": "It is the other way round: Q changes as the reaction proceeds until it reaches K, which is fixed at a given temperature."
+      }
+    ],
+    "explanation": "Q has the same form as K, products over reactants with coefficients as powers, but it uses the concentrations or pressures actually present. Only at equilibrium does Q equal K."
+  },
+  {
+    "id": "pc26-q-vs-k-write-q",
+    "type": "multiple-choice",
+    "prompt": "For 2NO(g) + O2(g) ⇌ 2NO2(g), which expression is the reaction quotient Q, written with concentrations?",
+    "choices": [
+      {
+        "text": "([NO2]^2)/([NO]^2 [O2])",
+        "correct": true
+      },
+      {
+        "text": "([NO]^2 [O2])/([NO2]^2)",
+        "why": "This is upside down. Q puts the products in the numerator and the reactants in the denominator."
+      },
+      {
+        "text": "([NO2])/([NO] [O2])",
+        "why": "The coefficients are missing. Each concentration is raised to the power of its coefficient, so [NO2] and [NO] are squared."
+      },
+      {
+        "text": "(2[NO2])/(2[NO] + [O2])",
+        "why": "Coefficients become powers, not factors, and the reactant terms multiply rather than add."
+      }
+    ],
+    "explanation": "Q multiplies the product terms and divides by the reactant terms, each raised to the power of its coefficient. Here that gives Q = ([NO2]^2)/([NO]^2 [O2])."
+  },
+  {
+    "id": "pc26-q-vs-k-q-greater",
+    "type": "multiple-choice",
+    "prompt": "A reaction mixture has Q > K. According to the section, which way does the reaction shift?",
+    "choices": [
+      {
+        "text": "To the left, making more reactants",
+        "correct": true
+      },
+      {
+        "text": "To the right, making more products",
+        "why": "Q > K means the product-to-reactant ratio is already above its equilibrium value. Making more products would push Q further from K."
+      },
+      {
+        "text": "It does not shift; it is already at equilibrium",
+        "why": "Equilibrium needs Q = K. With Q > K, the reaction runs in reverse until Q falls to K."
+      },
+      {
+        "text": "To the left, until no products remain",
+        "why": "The reaction shifts left only until Q = K, not until the products are gone. At that point equilibrium is reached."
+      }
+    ],
+    "explanation": "Q > K means there are more products relative to reactants than at equilibrium. The excess products turn back into reactants, so the reaction shifts left until Q = K."
+  },
+  {
+    "id": "pc26-q-vs-k-phosgene",
+    "type": "multiple-choice",
+    "prompt": "For CO(g) + Cl2(g) ⇌ COCl2(g), K = 10 at some temperature. A mixture has P_(COCl2) = 0.200 bar, P_(CO) = 0.400 bar and P_(Cl2) = 0.100 bar, and Q = (P_(COCl2))/(P_(CO) P_(Cl2)), with pressures in bar. Which way does the reaction go?",
+    "choices": [
+      {
+        "text": "Forward, making more COCl2",
+        "correct": true
+      },
+      {
+        "text": "In reverse, making more CO and Cl2",
+        "why": "Q = 0.200/(0.400 × 0.100) = 5.0, which is below K = 10. The reaction makes more product until Q = K."
+      },
+      {
+        "text": "Neither way; it is at equilibrium",
+        "why": "Equilibrium needs Q = K, but Q = 5.0 here, below K = 10. The reaction still runs forward."
+      },
+      {
+        "text": "Forward, until all the CO is used up",
+        "why": "The reaction runs forward, but only until Q reaches K = 10. Some CO and Cl2 remain at equilibrium."
+      }
+    ],
+    "explanation": "Q = 0.200/(0.400 × 0.100) = 5.0, which is less than K = 10. There are too few products relative to reactants, so the reaction shifts right, forming COCl2 until Q = K."
+  },
+  {
+    "id": "pc26-q-vs-k-ester",
+    "type": "multiple-choice",
+    "prompt": "For CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O in a liquid mixture, K = 4.0. A mixture has [CH3COOC2H5] = [H2O] = 0.600 M and [CH3COOH] = [C2H5OH] = 0.300 M. What will happen?",
+    "choices": [
+      {
+        "text": "No net change; the mixture is at equilibrium",
+        "correct": true
+      },
+      {
+        "text": "It reacts forward, since products exceed reactants",
+        "why": "Having more products than reactants does not by itself cause a shift. Q = (0.600 × 0.600)/(0.300 × 0.300) = 4.0 = K."
+      },
+      {
+        "text": "It reacts in reverse, since products exceed reactants",
+        "why": "A shift to the left needs Q > K. Here Q = 4.0, exactly K, so there is no tendency to change."
+      },
+      {
+        "text": "It reacts forward until the acid is used up",
+        "why": "Q already equals K = 4.0, so there is no drive forward. The mixture is at equilibrium."
+      }
+    ],
+    "explanation": "Q = (0.600 × 0.600)/(0.300 × 0.300) = 0.360/0.0900 = 4.0, equal to K. With Q = K, Δ_r G = RT ln 1 = 0, so neither more reactants nor more products form."
+  },
+  {
+    "id": "pc26-q-vs-k-ratio-not-amount",
+    "type": "multiple-choice",
+    "prompt": "For a reaction with K = 100, a mixture has Q = 10. Which statement is correct?",
+    "choices": [
+      {
+        "text": "It shifts right, though products may outnumber reactants",
+        "correct": true
+      },
+      {
+        "text": "It shifts right, because there are more reactants than products",
+        "why": "Q = 10 means the product-to-reactant ratio is 10, so products can outnumber reactants. Q < K says only that this ratio is below its equilibrium value."
+      },
+      {
+        "text": "It shifts left, because Q is smaller than K",
+        "why": "Q < K means too few products relative to equilibrium. The reaction shifts right, making more products."
+      },
+      {
+        "text": "It is at equilibrium, since both Q and K exceed 1",
+        "why": "Equilibrium needs Q = K, not just both above 1. Here Q = 10 is below K = 100, so the reaction shifts right."
+      }
+    ],
+    "explanation": "Q < K, so the reaction shifts right to make more products. But Q = 10 already means a product-to-reactant ratio of 10: Q < K says only that the ratio is below its equilibrium value, not that reactants are in excess."
+  },
+  {
+    "id": "pc26-q-vs-k-q-falls",
+    "type": "multiple-choice",
+    "prompt": "A reaction mixture starts with Q > K. As the reaction proceeds, what happens to Q?",
+    "choices": [
+      {
+        "text": "Q falls until it equals K",
+        "correct": true
+      },
+      {
+        "text": "Q rises until it equals K",
+        "why": "With Q > K the reaction runs in reverse, using up products, so Q falls. It stops changing once Q = K."
+      },
+      {
+        "text": "Q stays fixed while K falls to meet it",
+        "why": "K is fixed at a given temperature. It is Q, built from the changing amounts, that moves toward K."
+      },
+      {
+        "text": "Q falls until it reaches zero",
+        "why": "Q stops falling once it equals K, because equilibrium has then been reached. Q = 0 would mean no products at all."
+      }
+    ],
+    "explanation": "Running in reverse turns products into reactants, which lowers the ratio Q. The section notes that Q changes until Q = K, when equilibrium is reached."
+  },
+  {
+    "id": "pc26-q-vs-k-sign-q-less",
+    "type": "multiple-choice",
+    "prompt": "Using Δ_r G = RT ln(Q/K), what is the sign of Δ_r G for a mixture with Q < K, and which way does it react?",
+    "choices": [
+      {
+        "text": "Negative; it proceeds left to right",
+        "correct": true
+      },
+      {
+        "text": "Positive; it proceeds left to right",
+        "why": "Q/K < 1 makes ln(Q/K) negative, so Δ_r G < 0. A negative Δ_r G is what drives the forward reaction."
+      },
+      {
+        "text": "Negative; it runs in reverse",
+        "why": "The sign is right, but a negative Δ_r G means the forward reaction, left to right, is spontaneous."
+      },
+      {
+        "text": "Zero; it is at equilibrium",
+        "why": "Δ_r G = 0 needs Q/K = 1. With Q < K, ln(Q/K) < 0, so Δ_r G is negative and the reaction goes forward."
+      }
+    ],
+    "explanation": "For Q < K, Q/K < 1 and ln(Q/K) < 0, so Δ_r G < 0. The section says a negative Δ_r G means the reaction proceeds spontaneously from left to right as written."
+  },
+  {
+    "id": "pc26-q-vs-k-farther",
+    "type": "multiple-choice",
+    "prompt": "Two mixtures of the same reaction at the same temperature have Q = K/10 and Q = K/1000. Using Δ_r G = RT ln(Q/K), how do their values of Δ_r G compare?",
+    "choices": [
+      {
+        "text": "Both are negative, more so for Q = K/1000",
+        "correct": true
+      },
+      {
+        "text": "Both are negative, more so for Q = K/10",
+        "why": "ln(1/1000) = −6.91 is more negative than ln(1/10) = −2.30. The mixture farther from equilibrium has the more negative Δ_r G."
+      },
+      {
+        "text": "They are equal, since K is the same",
+        "why": "Δ_r G depends on Q/K, which differs by a factor of 100 between the mixtures. The one with Q = K/1000 has the more negative Δ_r G."
+      },
+      {
+        "text": "Both are positive, more so for Q = K/1000",
+        "why": "Q/K < 1 makes ln(Q/K) negative, so both values are negative. The farther mixture, Q = K/1000, has the more negative one."
+      }
+    ],
+    "explanation": "Δ_r G is RT ln(1/10) = −2.30 RT for one and RT ln(1/1000) = −6.91 RT for the other. Both mixtures react forward, and the one farther from equilibrium has the larger driving force."
+  },
+  {
+    "id": "pc26-q-vs-k-q-nocl",
+    "type": "numeric",
+    "prompt": "For 2NOCl(g) ⇌ 2NO(g) + Cl2(g), a mixture has P_(NOCl) = 0.500 bar, P_(NO) = 0.250 bar and P_(Cl2) = 0.400 bar. Using Q = (P_(NO)^2 P_(Cl2))/(P_(NOCl)^2), with the pressures in bar (P° = 1 bar), what is Q? (Give it as a decimal.)",
+    "answer": 0.1,
+    "explanation": "Q = (0.250^2 × 0.400)/(0.500^2) = 0.0250/0.250 = 0.100. Comparing this Q with K at the same temperature tells which way the mixture will react."
+  },
+  {
+    "id": "pc26-q-vs-k-dg-from-ratio",
+    "type": "numeric",
+    "prompt": "A reaction at 300 K has K = 50, and a mixture of it has Q = 0.50. Using Δ_r G = RT ln(Q/K), with R = 8.314 J/(mol·K) and ln(0.0100) = −4.605, what is Δ_r G, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -11.5,
+    "explanation": "Q/K = 0.50/50 = 0.0100, so Δ_r G = 8.314 × 300 × (−4.605) J/mol = 2494 × (−4.605) J/mol = −11486 J/mol, or −11.5 kJ/mol. The negative sign means the mixture reacts forward, as Q < K requires."
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "id": "pc27-wall-collisions-what-zw-is",
+    "type": "multiple-choice",
+    "prompt": "In kinetic theory, what does the wall collision frequency z_w measure?",
+    "choices": [
+      {
+        "text": "Collisions with the wall per unit area per unit time",
+        "correct": true
+      },
+      {
+        "text": "Collisions one molecule makes with other molecules per second",
+        "why": "Collisions between molecules are a different quantity. z_w counts hits on the wall, per unit area and per unit time."
+      },
+      {
+        "text": "The force per unit area that the gas exerts on the wall",
+        "why": "Force per unit area is the pressure. z_w counts how many molecules strike the wall per unit area and time, not how hard they push."
+      },
+      {
+        "text": "The number of molecules per unit volume of the gas",
+        "why": "That is the number density N/V, one of the factors in z_w. z_w itself counts collisions with the wall per unit area per unit time."
+      }
+    ],
+    "explanation": "The section writes z_w = (1/A)(dN_w/dt): the number of molecules dN_w striking an area A in a time dt, divided by A and by dt. It is a flux, with units such as m^−2 s^−1."
+  },
+  {
+    "id": "pc27-wall-collisions-collision-volume",
+    "type": "multiple-choice",
+    "prompt": "The section's first derivation uses a collision volume V_col = v_x Δt A next to a wall of area A. Which molecules does this volume hold?",
+    "choices": [
+      {
+        "text": "Those near enough to hit the wall within Δt",
+        "correct": true
+      },
+      {
+        "text": "Every molecule anywhere in the whole container",
+        "why": "The volume is only a thin slab of depth v_x Δt next to the wall. Molecules farther away cannot reach the wall in the time Δt."
+      },
+      {
+        "text": "Those that have just bounced off the wall",
+        "why": "Molecules that have just bounced are moving away and will not hit again within Δt. The slab holds the molecules within v_x Δt of the wall, which can reach it in that time."
+      },
+      {
+        "text": "Those swept up by the wall as it moves inward",
+        "why": "The wall does not move. The slab has depth v_x Δt because a molecule moving at v_x covers that distance in the time Δt."
+      }
+    ],
+    "explanation": "A molecule moving toward the wall at v_x covers a distance v_x Δt in the time Δt. So only molecules within that distance of the wall, in a slab of volume v_x Δt A, can strike the area A during Δt."
+  },
+  {
+    "id": "pc27-wall-collisions-half-toward",
+    "type": "multiple-choice",
+    "prompt": "The number of molecules that strike the wall in a time Δt is N_col = (1/2)(N/V)⟨v_x⟩Δt A. Why is there a factor of 1/2?",
+    "choices": [
+      {
+        "text": "Only half of the molecules move toward the wall",
+        "correct": true
+      },
+      {
+        "text": "Each molecule is counted twice as it bounces back",
+        "why": "Each hit is counted once. The 1/2 is there because only the half of the molecules with positive v_x are heading toward the wall."
+      },
+      {
+        "text": "Only half of the wall area is struck by molecules",
+        "why": "Molecules strike the whole area A evenly. The 1/2 leaves out the half of the molecules that are moving away from the wall."
+      },
+      {
+        "text": "The kinetic energy of a molecule is (1/2)mv^2",
+        "why": "Energy plays no part in counting collisions. The 1/2 is there because half the molecules have v_x pointing away from the wall."
+      }
+    ],
+    "explanation": "At any moment, half of the molecules have a positive x component of velocity, toward the wall, and half a negative one, away from it. Only the first half can strike the wall, so the count is halved."
+  },
+  {
+    "id": "pc27-wall-collisions-substitute-mean-speed",
+    "type": "multiple-choice",
+    "prompt": "The simple derivation gives z_w = (1/2)(N/V)⟨v_x⟩, where ⟨v_x⟩ is the mean of |v_x|. Using ⟨v⟩ = 2⟨v_x⟩, what does z_w become in terms of the mean speed ⟨v⟩?",
+    "choices": [
+      {
+        "text": "z_w = (1/4)(N/V)⟨v⟩",
+        "correct": true
+      },
+      {
+        "text": "z_w = (1/2)(N/V)⟨v⟩",
+        "why": "That simply swaps ⟨v_x⟩ for ⟨v⟩. Since ⟨v_x⟩ is only (1/2)⟨v⟩, z_w = (1/2)(N/V) × (1/2)⟨v⟩ = (1/4)(N/V)⟨v⟩."
+      },
+      {
+        "text": "z_w = (N/V)⟨v⟩",
+        "why": "That uses ⟨v_x⟩ = 2⟨v⟩, the wrong way round. A component is smaller than the speed: ⟨v_x⟩ = (1/2)⟨v⟩, which turns the 1/2 into 1/4."
+      },
+      {
+        "text": "z_w = (1/8)(N/V)⟨v⟩",
+        "why": "That would need ⟨v_x⟩ = (1/4)⟨v⟩. With ⟨v_x⟩ = (1/2)⟨v⟩, the two factors of 1/2 give 1/4."
+      }
+    ],
+    "explanation": "Substituting ⟨v_x⟩ = (1/2)⟨v⟩ gives z_w = (1/2)(N/V) × (1/2)⟨v⟩ = (1/4)(N/V)⟨v⟩. The collision-cylinder derivation that follows in the section reaches the same result."
+  },
+  {
+    "id": "pc27-wall-collisions-cylinder-height",
+    "type": "multiple-choice",
+    "prompt": "In the collision cylinder, a molecule with speed v moves at an angle θ to the normal (the perpendicular to the wall). Why is the cylinder's height v cosθ dt rather than v dt?",
+    "choices": [
+      {
+        "text": "Only the part v cosθ carries it toward the wall",
+        "correct": true
+      },
+      {
+        "text": "The molecule slows down as it nears the wall",
+        "why": "In an ideal gas a molecule keeps its speed until it hits. Its distance from the wall shrinks at v cosθ because only that component is perpendicular to the wall."
+      },
+      {
+        "text": "cosθ is the fraction of molecules moving at angle θ",
+        "why": "The fraction moving in each direction is the separate factor (sinθ dθ dφ)/(4π). The cosθ in the height comes from the perpendicular component of the velocity, v cosθ."
+      },
+      {
+        "text": "Slanted molecules bounce off sideways and miss",
+        "why": "Molecules moving at an angle still hit the wall if they start close enough. In dt they get v cosθ dt closer, which sets the height."
+      }
+    ],
+    "explanation": "A molecule moving at angle θ to the normal travels v dt along a slanted path but gets only v cosθ dt closer to the wall. The slanted cylinder of base A and height v cosθ dt holds every molecule with that velocity that will hit A in dt."
+  },
+  {
+    "id": "pc27-wall-collisions-front-side",
+    "type": "multiple-choice",
+    "prompt": "When dz_w is summed over all directions to find z_w, the angle θ from the normal runs only from 0 to π/2 rather than to π. Why?",
+    "choices": [
+      {
+        "text": "Only molecules heading toward the wall hit it",
+        "correct": true
+      },
+      {
+        "text": "Directions beyond π/2 cover zero solid angle",
+        "why": "Those directions cover as much solid angle as the others. They are left out because a molecule with θ > π/2 is moving away from the wall."
+      },
+      {
+        "text": "Directions beyond π/2 are already counted through φ",
+        "why": "φ runs around the normal from 0 to 2π and never covers θ > π/2. Those directions are left out because the molecules move away from the wall."
+      },
+      {
+        "text": "cosθ is zero for every θ beyond π/2",
+        "why": "cosθ is negative there, not zero. A negative v cosθ means the molecule is moving away from the wall, so those directions are left out."
+      }
+    ],
+    "explanation": "With θ measured from the normal, θ < π/2 means the molecule is heading toward the wall and θ > π/2 means it is heading away. The section integrates over the front side only, and that angular integral gives the 1/4 in z_w = (1/4)(N/V)⟨v⟩."
+  },
+  {
+    "id": "pc27-wall-collisions-solid-angle",
+    "type": "multiple-choice",
+    "prompt": "In the collision-cylinder derivation, the fraction of molecules moving in directions between θ and θ + dθ and between φ and φ + dφ is (sinθ dθ dφ)/(4π). Why does 4π appear in the denominator?",
+    "choices": [
+      {
+        "text": "The full sphere of directions spans 4π",
+        "correct": true
+      },
+      {
+        "text": "It is the surface area of a molecule of radius 1",
+        "why": "The size of the molecules does not enter. 4π is the total solid angle of all directions, each of which is equally likely in a gas."
+      },
+      {
+        "text": "It comes from the 1/4 in z_w = (1/4)(N/V)⟨v⟩",
+        "why": "It is the other way round: the 1/4 comes out at the end, after integrating over directions. 4π is the total solid angle, which makes the fractions add up to 1."
+      },
+      {
+        "text": "It converts the angle θ from degrees to radians",
+        "why": "Converting degrees to radians uses π/180. Dividing by 4π, the total solid angle, makes the fractions over all directions add up to 1."
+      }
+    ],
+    "explanation": "In a gas, molecules move in all directions equally. The fraction heading into a small solid angle sinθ dθ dφ is that solid angle divided by the total, 4π, so the fractions add up to 1."
+  },
+  {
+    "id": "pc27-wall-collisions-fast-weighted",
+    "type": "multiple-choice",
+    "prompt": "The integrand for z_w contains vF(v), not just F(v), where F(v)dv is the fraction of molecules with speeds between v and v + dv. Why are faster molecules weighted by their speed?",
+    "choices": [
+      {
+        "text": "They can reach the wall from farther away",
+        "correct": true
+      },
+      {
+        "text": "They are more common than slow molecules",
+        "why": "How common each speed is, is already given by F(v). The extra v appears because a faster molecule can reach the wall from a taller cylinder in the same dt."
+      },
+      {
+        "text": "They push harder on the wall when they hit",
+        "why": "How hard a molecule pushes matters for the pressure, not for counting hits. The extra v appears because a faster molecule can reach the wall from farther away in dt."
+      },
+      {
+        "text": "Each of them hits the wall twice in dt",
+        "why": "Each molecule that hits is counted once. The cylinder for speed v has height v cosθ dt, so more fast molecules lie within reach of the wall."
+      }
+    ],
+    "explanation": "The collision cylinder for speed v has height v cosθ dt, so the number of molecules in it is proportional to v. A molecule twice as fast can strike the wall from twice as far away in the same time."
+  },
+  {
+    "id": "pc27-wall-collisions-number-density-name",
+    "type": "multiple-choice",
+    "prompt": "In z_w = (1/4)(N/V)⟨v⟩, what is the factor N/V called?",
+    "choices": [
+      {
+        "text": "The number density",
+        "correct": true
+      },
+      {
+        "text": "The molar concentration",
+        "why": "Molar concentration counts moles per volume, n/V. N/V counts molecules per unit volume and is called the number density."
+      },
+      {
+        "text": "The molar volume",
+        "why": "The molar volume is V/n, the volume per mole. N/V, the number of molecules per unit volume, is the number density."
+      },
+      {
+        "text": "The collision frequency",
+        "why": "The collision frequency with the wall is z_w itself. N/V, the number of molecules per unit volume, is the number density."
+      }
+    ],
+    "explanation": "N/V gives the number of molecules per unit volume and is called the number density, often written ρ. For an ideal gas at 1 bar and 298 K it is about 2.43 × 10^25 m^−3, or 2.43 × 10^19 cm^−3."
+  },
+  {
+    "id": "pc27-wall-collisions-same-density",
+    "type": "multiple-choice",
+    "prompt": "Example 27.4.1 finds N/V = 2.43 × 10^25 m^−3 for O2 at 25.0 °C and 1.00 bar. Why does H2 under the same conditions, in Exercise 27.4.1, have the same number density?",
+    "choices": [
+      {
+        "text": "N/V = P/(k_B T) depends only on P and T",
+        "correct": true
+      },
+      {
+        "text": "O2 and H2 molecules are the same size",
+        "why": "They are not the same size, and for an ideal gas the size does not matter. N/V = P/(k_B T) depends only on the pressure and temperature."
+      },
+      {
+        "text": "Both gases have two atoms in each molecule",
+        "why": "A monatomic gas such as argon would have the same number density too. For any ideal gas, N/V = P/(k_B T)."
+      },
+      {
+        "text": "Their molar masses are nearly equal",
+        "why": "The molar mass of O2 is about 16 times that of H2. The molar mass does not enter N/V = P/(k_B T) at all."
+      }
+    ],
+    "explanation": "From the ideal gas law, N/V = (N_A P)/(RT) = P/(k_B T), which contains no property of the molecules. Any ideal gas at 25.0 °C and 1.00 bar has 2.43 × 10^25 molecules per m^3."
+  },
+  {
+    "id": "pc27-wall-collisions-h2-vs-o2",
+    "type": "multiple-choice",
+    "prompt": "At 25.0 °C and 1.00 bar, z_w is 2.70 × 10^23 s^−1 cm^−2 for O2 (Example 27.4.1) but 1.08 × 10^24 s^−1 cm^−2 for H2 (Exercise 27.4.1), four times as large. Why?",
+    "choices": [
+      {
+        "text": "H2 molecules move about four times as fast",
+        "correct": true
+      },
+      {
+        "text": "There are four times as many H2 molecules per volume",
+        "why": "At the same T and P both gases have the same number density, 2.43 × 10^25 m^−3. The difference is in ⟨v⟩: 1770 m/s for H2 against 444 m/s for O2."
+      },
+      {
+        "text": "H2 molecules are smaller, so more fit at the wall",
+        "why": "Molecular size does not enter z_w = (1/4)(N/V)⟨v⟩. H2 hits the wall more often because its mean speed is about four times higher."
+      },
+      {
+        "text": "H2 molecules are pulled harder toward the wall",
+        "why": "Attractions play no part in z_w = (1/4)(N/V)⟨v⟩. More H2 molecules arrive because their mean speed, 1770 m/s, is four times that of O2, 444 m/s."
+      }
+    ],
+    "explanation": "N/V is the same for both gases, so z_w is proportional to ⟨v⟩. Since ⟨v⟩ ∝ 1/√M and the molar mass of O2 is about 16 times that of H2, ⟨v⟩ is about √16 = 4 times larger for H2 (1770 against 444 m/s)."
+  },
+  {
+    "id": "pc27-wall-collisions-rigid-heated",
+    "type": "multiple-choice",
+    "prompt": "A gas is sealed in a rigid container, so N/V stays fixed, and is then heated. Given z_w = (1/4)(N/V)⟨v⟩ and ⟨v⟩ ∝ √T, how does z_w change?",
+    "choices": [
+      {
+        "text": "It grows in proportion to √T",
+        "correct": true
+      },
+      {
+        "text": "It stays the same, since N/V is fixed",
+        "why": "N/V is fixed, but the molecules move faster. Since ⟨v⟩ ∝ √T, z_w grows as √T."
+      },
+      {
+        "text": "It grows in proportion to T",
+        "why": "Only ⟨v⟩ changes, and ⟨v⟩ ∝ √T, not T. Quadrupling T only doubles z_w."
+      },
+      {
+        "text": "It falls, since the heated gas expands",
+        "why": "A rigid container keeps V fixed, so the gas cannot expand. With N/V fixed and ⟨v⟩ ∝ √T, z_w grows as √T."
+      }
+    ],
+    "explanation": "At fixed N/V, z_w is proportional to ⟨v⟩, which grows as √T. Hotter molecules move faster and so reach the wall more often."
+  },
+  {
+    "id": "pc27-wall-collisions-interstellar",
+    "type": "multiple-choice",
+    "prompt": "The section notes that an ideal gas at 1 bar and 298 K has about 2.43 × 10^19 molecules per cm^3. About how many atoms per cm^3 does it give for interstellar space in our galaxy?",
+    "choices": [
+      {
+        "text": "About 1 atom per cm^3",
+        "correct": true
+      },
+      {
+        "text": "About 2.43 × 10^19 atoms per cm^3",
+        "why": "That is the value for a gas at 1 bar and 298 K. Interstellar space is nearly empty, with about 1 atom per cm^3."
+      },
+      {
+        "text": "About 10^12 atoms per cm^3",
+        "why": "That is closer to a modest laboratory vacuum. The section gives about 1 atom per cm^3 for the space between the stars."
+      },
+      {
+        "text": "Exactly zero; space is a perfect vacuum",
+        "why": "Space is not perfectly empty. The section gives about 1 atom per cm^3 between the stars of our galaxy."
+      }
+    ],
+    "explanation": "Interstellar space in our galaxy holds about 1 atom per cm^3, roughly 10^19 times fewer than a gas at 1 bar and 298 K. Number densities, and with them wall collision frequencies, span an enormous range."
+  },
+  {
+    "id": "pc27-wall-collisions-density-calc",
+    "type": "numeric",
+    "prompt": "The number density of an ideal gas is ρ = N/V = P/(k_B T). What is ρ for a gas at P = 2.00 × 10^5 Pa and T = 400 K, with k_B = 1.381 × 10^−23 J/K, in molecules per m^3? (Type it in scientific notation, like 2.5e25.)",
+    "answer": 3.62e+25,
+    "explanation": "k_B T = (1.381 × 10^−23 J/K)(400 K) = 5.524 × 10^−21 J, so ρ = (2.00 × 10^5 Pa)/(5.524 × 10^−21 J) = 3.62 × 10^25 m^−3. Since 1 Pa = 1 J/m^3, the units come out as molecules per m^3."
+  },
+  {
+    "id": "pc27-wall-collisions-argon-flux",
+    "type": "numeric",
+    "prompt": "Argon at about 300 K has a number density ρ = 2.40 × 10^25 m^−3 and a mean speed ⟨v⟩ = 400 m/s. Using z_w = (1/4)ρ⟨v⟩, how many collisions with the wall are there per m^2 per second? (Type it in scientific notation, like 2.5e27.)",
+    "answer": 2.4e+27,
+    "explanation": "z_w = (1/4)(2.40 × 10^25 m^−3)(400 m/s) = (1/4)(9.60 × 10^27) = 2.40 × 10^27 m^−2 s^−1. Leaving out the 1/4 would give four times too many collisions."
+  },
+  {
+    "id": "pc27-wall-collisions-patch-count",
+    "type": "numeric",
+    "prompt": "For O2 at 25.0 °C and 1.00 bar, Example 27.4.1 finds z_w = 2.70 × 10^23 collisions per cm^2 per second. How many molecules strike a 3.00 cm^2 patch of the container wall each second? (Type it in scientific notation, like 2.5e23.)",
+    "answer": 8.1e+23,
+    "explanation": "Since z_w = (1/A)(dN_w/dt), the number of hits per second on an area A is z_w A = (2.70 × 10^23 cm^−2 s^−1)(3.00 cm^2) = 8.10 × 10^23. That is more than a mole of collisions every second."
+  },
+  {
+    "id": "pc27-wall-collisions-low-pressure",
+    "type": "numeric",
+    "prompt": "For H2 at 25.0 °C and 1.00 bar, Exercise 27.4.1 gives z_w = 1.08 × 10^24 s^−1 cm^−2. In z_w = (1/4)(N/V)⟨v⟩, N/V = P/(k_B T), while ⟨v⟩ depends only on T and the molar mass. If the pressure is lowered to 1.00 × 10^−6 bar at the same temperature, what is z_w, in s^−1 cm^−2? (Type it in scientific notation, like 2.5e18.)",
+    "answer": 1.08e+18,
+    "explanation": "At fixed T, ⟨v⟩ stays the same while N/V is proportional to P, so z_w is proportional to P. z_w = (1.08 × 10^24) × (1.00 × 10^−6) = 1.08 × 10^18 s^−1 cm^−2."
+  },
+  {
+    "id": "pc27-wall-collisions-constant-p-heating",
+    "type": "numeric",
+    "prompt": "A gas is heated at constant pressure from 300 K to 1200 K. Its number density N/V = P/(k_B T) changes in proportion to 1/T, and its mean speed ⟨v⟩ in proportion to √T. Using z_w = (1/4)(N/V)⟨v⟩, by what factor is z_w multiplied? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "N/V falls by a factor of 300/1200 = 1/4, while ⟨v⟩ rises by a factor of √4 = 2. So z_w is multiplied by (1/4) × 2 = 0.5: at constant pressure, z_w ∝ 1/√T, and a hotter gas hits the wall less often."
+  }
+]

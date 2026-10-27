@@ -1,0 +1,513 @@
+[
+  {
+    "id": "pc23-gibbs-phase-ehrenfest-basis",
+    "type": "multiple-choice",
+    "prompt": "The classification of phase transitions by order goes back to Ehrenfest. What decides the order of a transition?",
+    "choices": [
+      {
+        "text": "The lowest derivative of G that is discontinuous",
+        "correct": true
+      },
+      {
+        "text": "The amount of latent heat the transition takes in",
+        "why": "Heat alone does not set the order; a second-order transition takes in no latent heat at all. The order is that of the first derivative of G to go discontinuous."
+      },
+      {
+        "text": "The number of phases that coexist at the transition",
+        "why": "The count of coexisting phases plays no part in Ehrenfest's scheme. The order is set by the first derivative of G that is discontinuous."
+      },
+      {
+        "text": "Whether G itself jumps in value at the transition",
+        "why": "G never jumps; it stays continuous in both kinds of transition. The order is set by the first of its derivatives to become discontinuous."
+      }
+    ],
+    "explanation": "Ehrenfest's scheme asks which order of derivative of G is the first to go discontinuous. If first derivatives such as S, H and V jump, the transition is first order; if only second derivatives such as C_P do, it is second order."
+  },
+  {
+    "id": "pc23-gibbs-phase-second-order-g",
+    "type": "multiple-choice",
+    "prompt": "At a second-order phase transition, how does the Gibbs energy G behave?",
+    "choices": [
+      {
+        "text": "It is continuous and has no kink",
+        "correct": true
+      },
+      {
+        "text": "It is continuous but has a kink",
+        "why": "That is G at a first-order transition, where its first derivatives jump. At a second-order transition the first derivatives are continuous, so G has no kink."
+      },
+      {
+        "text": "It jumps by a finite step",
+        "why": "G does not jump at either kind of transition. At a second-order transition it is even smooth, with no kink."
+      },
+      {
+        "text": "It becomes infinite at the transition",
+        "why": "Nothing becomes infinite at a second-order transition; the second derivatives only jump. G itself is smooth there."
+      }
+    ],
+    "explanation": "Table 23.2.1 lists G as smooth at a second-order transition. Its first derivatives, such as H and S, are continuous there too, so the slope of G never changes suddenly and the curve has no kink."
+  },
+  {
+    "id": "pc23-gibbs-phase-second-order-first-derivs",
+    "type": "multiple-choice",
+    "prompt": "At a second-order phase transition, how do the first derivatives of G, such as H, S and V, behave?",
+    "choices": [
+      {
+        "text": "They are continuous but have a kink",
+        "correct": true
+      },
+      {
+        "text": "They jump to new values at the transition",
+        "why": "A jump in H, S and V marks a first-order transition, such as melting. At a second-order transition they stay continuous and only show a kink."
+      },
+      {
+        "text": "They go to infinity at the transition",
+        "why": "Going to infinity is what second derivatives such as C_P do at a first-order transition. At a second-order transition, H, S and V are continuous with a kink."
+      },
+      {
+        "text": "They are smooth, with no kink at all",
+        "why": "Smooth behavior belongs to G itself at a second-order transition. One derivative order higher, H, S and V show a kink."
+      }
+    ],
+    "explanation": "In a second-order transition, G and its first derivatives H, S and V are all continuous. The first derivatives do change slope suddenly, a kink, and only the second derivatives, such as C_P, are discontinuous."
+  },
+  {
+    "id": "pc23-gibbs-phase-second-order-cp",
+    "type": "multiple-choice",
+    "prompt": "At a second-order phase transition, what does the heat capacity C_P, a second derivative of G, do?",
+    "choices": [
+      {
+        "text": "It jumps by a finite amount",
+        "correct": true
+      },
+      {
+        "text": "It goes to infinity, a singularity",
+        "why": "A singularity in C_P marks a first-order transition. At a second-order transition C_P jumps by a finite amount instead."
+      },
+      {
+        "text": "It stays smooth, with no change",
+        "why": "Something must be discontinuous at a transition, and at a second-order one that is C_P and the other second derivatives. C_P jumps by a finite amount."
+      },
+      {
+        "text": "It shows a kink but no jump",
+        "why": "A kink is what H and S, the first derivatives, show at a second-order transition. C_P, a second derivative, jumps."
+      }
+    ],
+    "explanation": "C_P is among the first quantities to be discontinuous at a second-order transition, so it jumps by a finite amount. The same holds for the other second derivatives in Table 23.2.1: C_V, α and κ."
+  },
+  {
+    "id": "pc23-gibbs-phase-table-rows",
+    "type": "multiple-choice",
+    "prompt": "Table 23.2.1 puts H, S and V in one row and C_P, C_V, α and κ in the next. Why are they grouped this way?",
+    "choices": [
+      {
+        "text": "They are first and second derivatives of G",
+        "correct": true
+      },
+      {
+        "text": "They are extensive and intensive properties",
+        "why": "The second row mixes the two kinds: C_P of a sample is extensive, while α and κ are intensive. The rows sort quantities by how many times G is differentiated."
+      },
+      {
+        "text": "They are measured at constant P and at constant V",
+        "why": "C_P and C_V share a row, so the split is not about what is held constant. The rows give the order of the derivative of G."
+      },
+      {
+        "text": "They always jump and always kink, in that order",
+        "why": "What each row does depends on the order of the transition: H, S and V jump at a first-order transition but only kink at a second-order one. The grouping is by derivative order."
+      }
+    ],
+    "explanation": "The rows give the order of the derivative of G. S = −((∂G)/(∂T))_P and V = ((∂G)/(∂P))_T are first derivatives, while C_P, the expansion coefficient α and the compressibility κ come from differentiating once more."
+  },
+  {
+    "id": "pc23-gibbs-phase-no-latent-heat",
+    "type": "multiple-choice",
+    "prompt": "At a second-order transition, the enthalpy H is continuous. What does this mean for the enthalpy of transition, ΔH_trs?",
+    "choices": [
+      {
+        "text": "It is zero; no latent heat is taken in",
+        "correct": true
+      },
+      {
+        "text": "It is positive, as it is for melting",
+        "why": "Melting is first order, so H jumps by ΔH_fus. At a second-order transition H has no jump, so ΔH_trs = 0."
+      },
+      {
+        "text": "It is negative, since heat is given off",
+        "why": "Giving off heat would need H to jump down. H is continuous at a second-order transition, so ΔH_trs = 0."
+      },
+      {
+        "text": "It is infinite at the transition point",
+        "why": "Nothing becomes infinite at a second-order transition. H is continuous, so there is no jump: ΔH_trs = 0."
+      }
+    ],
+    "explanation": "ΔH_trs is the jump in H at the transition. At a second-order transition H is continuous, with only a kink where its slope C_P jumps, so there is no latent heat."
+  },
+  {
+    "id": "pc23-gibbs-phase-curie-example",
+    "type": "multiple-choice",
+    "prompt": "Which of these does the section give as an example of a second-order phase transition?",
+    "choices": [
+      {
+        "text": "A ferromagnet turning paramagnetic at the Curie point",
+        "correct": true
+      },
+      {
+        "text": "Benzene melting into a liquid at its melting point",
+        "why": "Melting is first order: H, S and V jump. In a ferromagnet turning paramagnetic at the Curie temperature, only second derivatives are discontinuous."
+      },
+      {
+        "text": "Liquid water boiling at 100 °C under 1 atm of pressure",
+        "why": "Boiling is first order, with jumps in volume and entropy. The section's second-order example is the ferromagnetic-to-paramagnetic transition."
+      },
+      {
+        "text": "Solid CO2 subliming to a gas at atmospheric pressure",
+        "why": "Sublimation is first order, like melting and boiling. The section's second-order example is a ferromagnet becoming paramagnetic at its Curie temperature."
+      }
+    ],
+    "explanation": "The solid–liquid–gas transitions of most substances are first order. At the Curie temperature, where a ferromagnet becomes paramagnetic, G and its first derivatives stay continuous and only second derivatives are discontinuous."
+  },
+  {
+    "id": "pc23-gibbs-phase-third-order",
+    "type": "multiple-choice",
+    "prompt": "Extending Ehrenfest's scheme, one could define third-order transitions. What does the section say about them?",
+    "choices": [
+      {
+        "text": "There are reasons to doubt that they exist",
+        "correct": true
+      },
+      {
+        "text": "They are the most common kind of transition",
+        "why": "Most solid–liquid–gas transitions are first order. The section doubts that third-order transitions exist at all."
+      },
+      {
+        "text": "They are the way that most liquids boil",
+        "why": "Boiling is first order: volume and entropy jump. The section says there are reasons to doubt that third-order transitions exist."
+      },
+      {
+        "text": "They cannot be defined in Ehrenfest's scheme",
+        "why": "The section says the principle could be extended to define them. What it doubts is that such transitions actually exist."
+      }
+    ],
+    "explanation": "The scheme could be extended to a third order, with the first discontinuity in a third derivative of G, but the section doubts such transitions exist. It also notes that the scheme assumes whole-number orders, though fractional derivatives do exist in mathematics."
+  },
+  {
+    "id": "pc23-gibbs-phase-ice-polymorphs",
+    "type": "multiple-choice",
+    "prompt": "The section shows some of the polymorphs of ice. What is an ice polymorph?",
+    "choices": [
+      {
+        "text": "One of several crystal structures of solid water",
+        "correct": true
+      },
+      {
+        "text": "A mixture of solid ice and liquid water at 0 °C",
+        "why": "Ice and water together are two phases in equilibrium, not a polymorph. Polymorphs are different crystalline forms of the same solid."
+      },
+      {
+        "text": "Ice made from heavy water instead of ordinary water",
+        "why": "Heavy-water ice is made of a different substance, so it is not a polymorph. Ice polymorphs are different crystal structures of ordinary solid water."
+      },
+      {
+        "text": "Frost that forms directly from water vapor",
+        "why": "Frost is ordinary ice formed by deposition. A polymorph is a distinct crystal structure of solid water."
+      }
+    ],
+    "explanation": "Solid water can crystallize in several different structures, called polymorphs, each a separate solid phase. Each has its own Gibbs energy, so which one forms depends on T and P, just as for solid, liquid and gas."
+  },
+  {
+    "id": "pc23-gibbs-phase-curves-cross",
+    "type": "multiple-choice",
+    "prompt": "Plotted against temperature at constant pressure, the Ḡ curves of a solid and its liquid cross at one temperature. What is true at that crossing?",
+    "choices": [
+      {
+        "text": "Both phases have the same Ḡ and can coexist",
+        "correct": true
+      },
+      {
+        "text": "The solid's Ḡ jumps up to meet the liquid's",
+        "why": "Ḡ is continuous; it does not jump at a transition. At the crossing the two values are simply equal, so solid and liquid coexist."
+      },
+      {
+        "text": "The two phases have the same molar entropy",
+        "why": "The slopes, −S̄, differ at the crossing, which is why there is a kink. What is equal there is Ḡ itself, so the phases coexist."
+      },
+      {
+        "text": "Only the gas phase can exist at that point",
+        "why": "The crossing of the solid and liquid curves marks melting, not boiling. There the two phases have equal Ḡ and coexist."
+      }
+    ],
+    "explanation": "Where the two curves cross, Ḡ_solid = Ḡ_liquid, so neither phase is favored and both coexist: that temperature is the melting point. On either side of it, one curve lies below the other."
+  },
+  {
+    "id": "pc23-gibbs-phase-lowest-wins",
+    "type": "multiple-choice",
+    "prompt": "Below its melting point, a substance's solid Ḡ curve lies below its liquid Ḡ curve. At constant T and P, why is the solid the phase you find there?",
+    "choices": [
+      {
+        "text": "Freezing lowers G, so it happens on its own",
+        "correct": true
+      },
+      {
+        "text": "The solid has the higher molar entropy",
+        "why": "The liquid has the higher entropy; its curve is the steeper one. The solid wins below the melting point because its Ḡ is lower."
+      },
+      {
+        "text": "The solid has the higher Gibbs energy there",
+        "why": "A phase with the higher G would turn into the other spontaneously. The stable phase is the one with the lowest G."
+      },
+      {
+        "text": "Both phases have equal G below the melting point",
+        "why": "Equal G holds only at the crossing, the melting point itself. Below it the solid's G is lower, so the liquid freezes."
+      }
+    ],
+    "explanation": "At constant T and P, a change happens on its own if it lowers G. Below the melting point Ḡ_solid < Ḡ_liquid, so any liquid freezes, and the stable phase is always the one with the lowest Ḡ."
+  },
+  {
+    "id": "pc23-gibbs-phase-slopes-negative",
+    "type": "multiple-choice",
+    "prompt": "On a plot of Ḡ against T at constant pressure, the solid, liquid and gas branches all slope downward. Why?",
+    "choices": [
+      {
+        "text": "Each slope is −S̄, and S̄ is always positive",
+        "correct": true
+      },
+      {
+        "text": "Each slope is −H̄, and H̄ is always positive",
+        "why": "The slope of Ḡ against T is −S̄, not −H̄. Since every phase has S̄ > 0, every branch falls with temperature."
+      },
+      {
+        "text": "Each slope is V̄, and V̄ is always positive",
+        "why": "V̄ is the slope of Ḡ against P, and a positive slope would make the curves rise. Against T the slope is −S̄, which is negative."
+      },
+      {
+        "text": "Heating always lowers a phase's enthalpy",
+        "why": "Heating raises H, not lowers it. Ḡ falls because its slope is −S̄ and S̄ is positive."
+      }
+    ],
+    "explanation": "Since ((∂Ḡ)/(∂T))_P = −S̄ and every phase has a positive molar entropy, each branch slopes down. The gas, with the most entropy, slopes down most steeply."
+  },
+  {
+    "id": "pc23-gibbs-phase-gp-slope-jump",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature, Ḡ is plotted against P across a first-order transition. The curve is continuous, but its slope changes suddenly at the transition pressure. What does that sudden change in slope measure?",
+    "choices": [
+      {
+        "text": "The change in molar volume, ΔV̄",
+        "correct": true
+      },
+      {
+        "text": "The change in molar entropy, ΔS̄",
+        "why": "ΔS̄ is the change in slope of Ḡ against T. Against P the slope is V̄, so the change measures ΔV̄."
+      },
+      {
+        "text": "The change in heat capacity, ΔC_P",
+        "why": "C_P is a second derivative of G; it does not set the slope of Ḡ. The slope of Ḡ against P is V̄, so it changes by ΔV̄."
+      },
+      {
+        "text": "The change in molar Gibbs energy, ΔḠ",
+        "why": "Ḡ itself is continuous, so ΔḠ = 0 at the transition. What changes suddenly is the slope, V̄."
+      }
+    ],
+    "explanation": "Since V̄ = ((∂Ḡ)/(∂P))_T, each phase's branch has its own molar volume as its slope. At a first-order transition V̄ jumps, so Ḡ(P) has a kink whose size is ΔV̄."
+  },
+  {
+    "id": "pc23-gibbs-phase-gas-steepest",
+    "type": "multiple-choice",
+    "prompt": "For benzene at a fixed temperature, which branch of the plot of Ḡ against P has by far the steepest slope?",
+    "choices": [
+      {
+        "text": "The gas, since V̄_gas ≫ V̄_liquid",
+        "correct": true
+      },
+      {
+        "text": "The solid, since it is the densest phase",
+        "why": "The densest phase has the smallest V̄, so the flattest slope. The gas, with the largest V̄, is the steepest."
+      },
+      {
+        "text": "The liquid, since V̄_liquid > V̄_solid",
+        "why": "V̄_liquid is larger than V̄_solid, but both are tiny next to V̄_gas. The gas branch is by far the steepest."
+      },
+      {
+        "text": "All three; their V̄ values are equal",
+        "why": "The phases have very different molar volumes. The slope is V̄, and V̄_gas ≫ V̄_liquid > V̄_solid."
+      }
+    ],
+    "explanation": "The slope of each branch is V̄ = ((∂Ḡ)/(∂P))_T. For benzene V̄_gas ≫ V̄_liquid > V̄_solid, so the gas branch rises far more steeply than the nearly flat solid and liquid branches."
+  },
+  {
+    "id": "pc23-gibbs-phase-benzene-order",
+    "type": "multiple-choice",
+    "prompt": "Benzene is held at a temperature above its triple point (but below its critical point), and the pressure is slowly raised from very low. In what order does the stable phase change?",
+    "choices": [
+      {
+        "text": "Gas, then liquid, then solid",
+        "correct": true
+      },
+      {
+        "text": "Solid, then liquid, then gas",
+        "why": "Raising the pressure favors the phase with the smaller V̄, since Ḡ rises by about V̄ΔP. So benzene goes from gas to liquid to solid."
+      },
+      {
+        "text": "Gas, then solid, then liquid",
+        "why": "That order would need V̄_solid > V̄_liquid, as for water. For benzene V̄_liquid > V̄_solid, so the liquid comes before the solid."
+      },
+      {
+        "text": "Gas, then straight to the solid",
+        "why": "Going straight from gas to solid happens below the triple point. Above it, the liquid has the lowest Ḡ over a middle range of pressure."
+      }
+    ],
+    "explanation": "Each branch's slope is V̄, and V̄_gas ≫ V̄_liquid > V̄_solid. As P rises, the phase with the smaller V̄ wins at each crossing, so the stable phase goes gas → liquid → solid."
+  },
+  {
+    "id": "pc23-gibbs-phase-water-volumes",
+    "type": "multiple-choice",
+    "prompt": "For water, the slopes of the branches of Ḡ against P show V̄_gas ≫ V̄_solid > V̄_liquid. What does V̄_solid > V̄_liquid tell you?",
+    "choices": [
+      {
+        "text": "Ice is less dense than liquid water",
+        "correct": true
+      },
+      {
+        "text": "Liquid water is less dense than ice",
+        "why": "A larger molar volume means a lower density, since the molar mass is the same. So V̄_solid > V̄_liquid means ice is less dense."
+      },
+      {
+        "text": "Water has no stable liquid phase",
+        "why": "Liquid water is stable over a wide range; this ordering is about densities. A larger V̄ for ice means ice is less dense than the liquid."
+      },
+      {
+        "text": "Ice has more entropy than liquid water",
+        "why": "Entropy sets the slope against T, not against P. The slopes against P are molar volumes, so ice is less dense than liquid water."
+      }
+    ],
+    "explanation": "The same mass of ice takes up more room than liquid water, so V̄_solid > V̄_liquid. This is water's unusual property, the reason ice floats; for benzene it is the other way round, V̄_liquid > V̄_solid."
+  },
+  {
+    "id": "pc23-gibbs-phase-pressure-raises-tm",
+    "type": "multiple-choice",
+    "prompt": "Raising the pressure by ΔP raises each phase's Ḡ by about V̄ΔP. For a normal substance such as benzene, where V̄_liquid > V̄_solid, how does raising the pressure shift the melting temperature?",
+    "choices": [
+      {
+        "text": "It raises it, since the liquid's Ḡ rises more",
+        "correct": true
+      },
+      {
+        "text": "It lowers it, since the liquid's Ḡ rises less",
+        "why": "With V̄_liquid > V̄_solid, the liquid's Ḡ rises more, not less. A higher temperature is then needed before the liquid's curve drops below the solid's."
+      },
+      {
+        "text": "It leaves it unchanged, since both Ḡ rise equally",
+        "why": "The two Ḡ values rise by different amounts, V̄_liquid ΔP and V̄_solid ΔP. The liquid's rises more, so the melting point goes up."
+      },
+      {
+        "text": "It lowers it, just as pressure does for water",
+        "why": "Water is the exception, because its ice has the larger V̄. For benzene the liquid has the larger V̄, so pressure raises the melting point."
+      }
+    ],
+    "explanation": "Pressure lifts the liquid's Ḡ curve more than the solid's, so the two curves now cross at a higher temperature. Benzene's melting point therefore rises with pressure; for water, whose ice has the larger V̄, it falls."
+  },
+  {
+    "id": "pc23-gibbs-phase-supercritical-smooth",
+    "type": "multiple-choice",
+    "prompt": "Above its critical temperature, what does benzene's curve of Ḡ against P look like?",
+    "choices": [
+      {
+        "text": "One smooth curve, with no kink anywhere",
+        "correct": true
+      },
+      {
+        "text": "A kink where the liquid and gas branches meet",
+        "why": "Above the critical temperature liquid and gas no longer differ, so there is no transition between them. The curve, for a supercritical fluid, has no kink."
+      },
+      {
+        "text": "Two separate liquid and gas curves",
+        "why": "Above the critical temperature there is one fluid phase, a supercritical fluid. Its Ḡ curve is a single line with no derivative discontinuity."
+      },
+      {
+        "text": "A sudden jump in Ḡ at one pressure",
+        "why": "Ḡ never jumps; even a first-order transition gives only a kink. Above the critical temperature there is not even a kink."
+      }
+    ],
+    "explanation": "Above the critical temperature there is no liquid–gas transition; the substance is a supercritical fluid. Its Ḡ(P) curve has no derivative discontinuity, so no kink appears."
+  },
+  {
+    "id": "pc23-gibbs-phase-below-triple-liquid",
+    "type": "multiple-choice",
+    "prompt": "Below benzene's triple-point temperature, the liquid's curve of Ḡ against P is disconnected from the solid–gas curve and lies above it. What does the section conclude about the liquid at such a temperature?",
+    "choices": [
+      {
+        "text": "It can exist only metastably, if at all",
+        "correct": true
+      },
+      {
+        "text": "It is the most stable phase at high pressure",
+        "why": "Its Ḡ lies above the solid's and the gas's, so it is never the lowest. At these temperatures the substance goes from solid straight to gas."
+      },
+      {
+        "text": "It coexists with the solid and the gas",
+        "why": "All three phases coexist only at the triple point itself. Below it, the liquid's Ḡ is never the lowest, so it is at best metastable."
+      },
+      {
+        "text": "It forms whenever the gas is compressed",
+        "why": "Compressing the gas below the triple point gives the solid directly, since that curve lies lower. The liquid could appear only metastably."
+      }
+    ],
+    "explanation": "A phase is stable only where its Ḡ is the lowest. Below the triple point the liquid's curve never dips below the solid–gas curve, so the substance passes straight between solid and gas, and the liquid could appear only metastably."
+  },
+  {
+    "id": "pc23-gibbs-phase-surface-pair",
+    "type": "multiple-choice",
+    "prompt": "In dG = −SdT + VdP + ℰde + MdH + FdL + γdA, the terms come in pairs of conjugate variables. Which variable is the conjugate partner of the surface tension γ?",
+    "choices": [
+      {
+        "text": "The surface area A",
+        "correct": true
+      },
+      {
+        "text": "The stretched length L",
+        "why": "L pairs with the elastic force F, as in stretching a rubber band. Surface tension γ pairs with the surface area A, in γdA."
+      },
+      {
+        "text": "The transported charge e",
+        "why": "The charge e pairs with the electromotive force ℰ. Surface tension pairs with surface area, in the term γdA."
+      },
+      {
+        "text": "The magnetic field H",
+        "why": "H pairs with the magnetization M. The term for a surface is γdA, so γ pairs with the area A."
+      }
+    ],
+    "explanation": "Each extra work term is built from a conjugate pair: ℰ with e, M with H, F with L and γ with A. Making new surface, as in blowing up a soap bubble, changes G by γdA."
+  },
+  {
+    "id": "pc23-gibbs-phase-ice-under-pressure",
+    "type": "numeric",
+    "prompt": "Near 0 °C, ice has V̄ = 19.6 cm^3/mol and liquid water has V̄ = 18.0 cm^3/mol. Since the slope of Ḡ against P is V̄, raising the pressure by ΔP raises each phase's Ḡ by about V̄ΔP. Use 1 cm^3 = 10^−6 m^3, 1 bar = 10^5 Pa and 1 Pa·m^3 = 1 J. If the pressure on coexisting ice and water is raised by 100 bar at constant temperature, by how much does Ḡ_ice − Ḡ_water increase, in J/mol?",
+    "answer": 16,
+    "tolerance": 0,
+    "explanation": "(V̄_ice − V̄_water)ΔP = (1.6 × 10^−6 m^3/mol)(1.00 × 10^7 Pa) = 16 J/mol. Ice's Ḡ now lies above the liquid's, so the ice melts: pressure favors the denser liquid, which is why water's melting point falls under pressure."
+  },
+  {
+    "id": "pc23-gibbs-phase-benzene-gap",
+    "type": "numeric",
+    "prompt": "Benzene melts at T_m = 278.7 K with ΔS̄_fus = 35.4 J/(mol·K). The solid and liquid Ḡ curves cross at T_m, and just below it Ḡ_liquid − Ḡ_solid ≈ ΔS̄_fus × (T_m − T). At 273.7 K, 5.0 K below the melting point, how far does the liquid's Ḡ lie above the solid's, in J/mol?",
+    "answer": 177,
+    "tolerance": 0,
+    "explanation": "Ḡ_liquid − Ḡ_solid ≈ (35.4 J/(mol·K))(5.0 K) = 177 J/mol. The curves separate because their slopes, −S̄, differ by ΔS̄_fus, and since the liquid's Ḡ is higher, supercooled liquid benzene at this temperature freezes on its own."
+  },
+  {
+    "id": "pc23-gibbs-phase-gas-liquid-slopes",
+    "type": "numeric",
+    "prompt": "Near its boiling point at 1 atm, benzene vapor has V̄ ≈ 29.0 L/mol and liquid benzene has V̄ ≈ 0.0960 L/mol. Since the slope of Ḡ against P at constant T is V̄, how many times steeper is the gas branch than the liquid branch? (Give it as a decimal.)",
+    "answer": 302.1,
+    "explanation": "The ratio of slopes is V̄_gas/V̄_liquid = (29.0 L/mol)/(0.0960 L/mol) = 302.1. This is what V̄_gas ≫ V̄_liquid means: next to the gas branch, the liquid and solid branches of Ḡ(P) are almost flat."
+  },
+  {
+    "id": "pc23-gibbs-phase-surface-work",
+    "type": "numeric",
+    "prompt": "In dG = −SdT + VdP + … + γdA, the term γdA is the change in G from making new surface. Water has a surface tension γ = 0.0720 J/m^2. At constant T and P, by how much does G rise when the surface area of some water grows by 5.00 × 10^−3 m^2, in J? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.00036,
+    "unit": "J",
+    "explanation": "ΔG = γΔA = (0.0720 J/m^2)(5.00 × 10^−3 m^2) = 3.60 × 10^−4 J. The surface tension γ and the area A are a conjugate pair, just as P and V are."
+  }
+]

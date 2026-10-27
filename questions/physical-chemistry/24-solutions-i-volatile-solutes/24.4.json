@@ -1,0 +1,408 @@
+[
+  {
+    "id": "pc24-raoult-volatile-meaning",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what makes a liquid volatile?",
+    "choices": [
+      {
+        "text": "It has a sizable vapor pressure at that temperature",
+        "correct": true
+      },
+      {
+        "text": "It decomposes when it is heated, before it can boil",
+        "why": "Decomposing first is what the section says must not happen. A volatile liquid is one with an appreciable vapor pressure at the specified temperature."
+      },
+      {
+        "text": "It boils below room temperature at a pressure of 1 bar",
+        "why": "A volatile liquid need not boil below room temperature. It only needs an appreciable vapor pressure at the temperature in question."
+      },
+      {
+        "text": "It mixes with any other liquid in all proportions",
+        "why": "Mixing in all proportions is miscibility, a different property. Volatility is about having an appreciable vapor pressure at the specified temperature."
+      }
+    ],
+    "explanation": "A volatile liquid is one that has an appreciable vapor pressure at the specified temperature, so it readily enters the vapor phase. Raoult's law then says how much of that vapor pressure each liquid keeps in an ideal mixture."
+  },
+  {
+    "id": "pc24-raoult-x-is-liquid",
+    "type": "multiple-choice",
+    "prompt": "Raoult's law, P_j = x_j P_j^*, contains a mole fraction x_j. Which mole fraction is it?",
+    "choices": [
+      {
+        "text": "The mole fraction of j in the liquid solution",
+        "correct": true
+      },
+      {
+        "text": "The mole fraction of j in the vapor above it",
+        "why": "The vapor mole fraction is a different quantity, y_j = P_j/P_tot. Raoult's law uses the composition of the liquid."
+      },
+      {
+        "text": "The mole fraction of j in pure liquid j, which is 1",
+        "why": "If x_j were 1, the law would just give P_j = P_j^*. In a solution x_j is the mole fraction of j in the liquid, which is less than 1."
+      },
+      {
+        "text": "The mole fraction of j in liquid and vapor together",
+        "why": "Raoult's law ties the partial pressure to the liquid alone. x_j is the mole fraction of j in the liquid solution."
+      }
+    ],
+    "explanation": "x_j describes the liquid; the vapor in equilibrium with it generally has a different composition, y_j = P_j/P_tot. Keeping x (liquid) and y (vapor) apart is what shows that the vapor is richer in the more volatile liquid."
+  },
+  {
+    "id": "pc24-raoult-total-expression",
+    "type": "multiple-choice",
+    "prompt": "Two volatile liquids, A and B, form an ideal solution. Which expression gives the total vapor pressure above it?",
+    "choices": [
+      {
+        "text": "P_tot = x_A P_A^* + x_B P_B^*",
+        "correct": true
+      },
+      {
+        "text": "P_tot = P_A^* + P_B^*",
+        "why": "This would hold only if each liquid were pure. In the solution each pure vapor pressure is scaled by that liquid's mole fraction."
+      },
+      {
+        "text": "P_tot = x_A P_B^* + x_B P_A^*",
+        "why": "This pairs each mole fraction with the other liquid's vapor pressure. By Raoult's law P_A = x_A P_A^*, so each liquid keeps its own P^*."
+      },
+      {
+        "text": "P_tot = x_A P_A^* × x_B P_B^*",
+        "why": "Partial pressures add; they are not multiplied. P_tot = P_A + P_B, with each term from Raoult's law."
+      }
+    ],
+    "explanation": "Each liquid obeys Raoult's law, P_A = x_A P_A^* and P_B = x_B P_B^*. The total vapor pressure is the sum of the two partial pressures."
+  },
+  {
+    "id": "pc24-raoult-vapor-richer",
+    "type": "multiple-choice",
+    "prompt": "Above an ideal solution of two volatile liquids, the vapor is richer than the liquid in the more volatile one. Which reason follows from Raoult's law and y_A = P_A/P_tot?",
+    "choices": [
+      {
+        "text": "Its larger P^* gives it an outsized share of P_tot",
+        "correct": true
+      },
+      {
+        "text": "Its molecules are lighter, so they rise more easily",
+        "why": "Raoult's law does not involve molar mass. The more volatile liquid has the larger P^*, so its partial pressure is a larger share of P_tot than its mole fraction is of the liquid."
+      },
+      {
+        "text": "The other liquid does not evaporate at all",
+        "why": "Both liquids are volatile, so both contribute a partial pressure. The enrichment comes from the more volatile liquid's larger P^*."
+      },
+      {
+        "text": "Raoult's law fails for the more volatile liquid",
+        "why": "In an ideal solution Raoult's law holds for both liquids. The enrichment follows from it: a larger P^* gives a larger share of the vapor."
+      }
+    ],
+    "explanation": "If A is the more volatile liquid, P_A^* > P_B^*, and P_tot = x_A P_A^* + x_B P_B^* is a weighted average that lies below P_A^*. So y_A = x_A P_A^*/P_tot is larger than x_A; if the two P^* values were equal, y_A would equal x_A."
+  },
+  {
+    "id": "pc24-raoult-tx-vapor-top",
+    "type": "multiple-choice",
+    "prompt": "In a temperature–composition diagram of two volatile liquids, the vapor region is at the top and the liquid region at the bottom. Why?",
+    "choices": [
+      {
+        "text": "The vapor is the phase stable at higher temperatures",
+        "correct": true
+      },
+      {
+        "text": "The vapor is less dense, so it rises above the liquid",
+        "why": "The diagram plots temperature, not height in a vessel. The vapor is at the top because it is the phase found at higher temperatures."
+      },
+      {
+        "text": "The vapor has the higher pressure of the two phases",
+        "why": "The diagram is drawn at a single pressure, so the phases do not differ in pressure there. The vapor is at the top because it exists at higher temperatures."
+      },
+      {
+        "text": "The top edge stands for the more volatile liquid",
+        "why": "The two liquids are placed along the composition axis, not along the top edge. The vertical axis is temperature, and the vapor exists at higher temperatures."
+      }
+    ],
+    "explanation": "The vertical axis of the diagram is temperature. Heating turns the liquid into vapor, so the vapor region lies above the liquid region."
+  },
+  {
+    "id": "pc24-raoult-tx-end-temps",
+    "type": "multiple-choice",
+    "prompt": "In a temperature–composition diagram of liquids A and B, what are the temperatures T_A and T_B at the two edges?",
+    "choices": [
+      {
+        "text": "The boiling points of pure A and pure B",
+        "correct": true
+      },
+      {
+        "text": "The melting points of pure A and pure B",
+        "why": "The diagram covers only liquid and vapor. At its edges, where the system is pure A or pure B, the temperatures are boiling points."
+      },
+      {
+        "text": "The critical temperatures of A and B",
+        "why": "Critical points do not appear on this diagram. At the pure-component edges, the temperatures marked are the boiling points."
+      },
+      {
+        "text": "The temperatures at which A and B start to mix",
+        "why": "Each edge is a single pure liquid, so nothing mixes there. T_A and T_B are the temperatures at which pure A and pure B boil."
+      }
+    ],
+    "explanation": "At each edge of the diagram the system is one pure liquid, which boils at a single temperature: T_A for pure A and T_B for pure B, at the pressure of the diagram."
+  },
+  {
+    "id": "pc24-raoult-tx-more-volatile",
+    "type": "multiple-choice",
+    "prompt": "On a temperature–composition diagram, how can you tell which of two liquids is the more volatile?",
+    "choices": [
+      {
+        "text": "It has the lower boiling temperature",
+        "correct": true
+      },
+      {
+        "text": "It has the higher boiling temperature",
+        "why": "A higher boiling point means a lower vapor pressure at a given temperature. The more volatile liquid boils at the lower temperature."
+      },
+      {
+        "text": "It is the one plotted on the right-hand side",
+        "why": "Which liquid goes on which side is just a choice of drawing. Volatility shows in the boiling temperatures: the more volatile liquid boils lower."
+      },
+      {
+        "text": "It has the larger mole fraction in the liquid",
+        "why": "The composition of a particular mixture says nothing about volatility. The more volatile liquid is the one with the lower boiling temperature."
+      }
+    ],
+    "explanation": "The section calls the more volatile liquid the one with the lower boiling temperature. Its vapor pressure reaches the fixed pressure of the diagram at a lower temperature, so it boils first."
+  },
+  {
+    "id": "pc24-raoult-gmix-start",
+    "type": "multiple-choice",
+    "prompt": "The section writes the Gibbs energy of mixing as ΔG_mix = n_1 μ_1^(sln) + n_2 μ_2^(sln) − (n_1 μ_1^* + n_2 μ_2^*). What does the subtracted term in brackets stand for?",
+    "choices": [
+      {
+        "text": "The Gibbs energy of the pure liquids before mixing",
+        "correct": true
+      },
+      {
+        "text": "The Gibbs energy of the solution after mixing",
+        "why": "The solution's Gibbs energy is the first part, built from μ^(sln). The bracket uses μ^*, the chemical potentials of the pure liquids."
+      },
+      {
+        "text": "The Gibbs energy of the vapor above the solution",
+        "why": "No vapor term enters ΔG_mix. The starred chemical potentials, μ^*, belong to the pure liquids before they are mixed."
+      },
+      {
+        "text": "The entropy of mixing multiplied by the temperature",
+        "why": "TΔS_mix appears only when the result is compared with the entropy of mixing. The bracket is the Gibbs energy of the separate pure liquids, written with μ^*."
+      }
+    ],
+    "explanation": "ΔG_mix is the Gibbs energy after mixing minus the Gibbs energy before. Before mixing each liquid is pure, with chemical potential μ_i^*, so the bracket is the Gibbs energy of the separate pure liquids."
+  },
+  {
+    "id": "pc24-raoult-gmix-expression",
+    "type": "multiple-choice",
+    "prompt": "Using μ_i^(sln) = μ_i^* + RT ln x_i, what does the section find for ΔG_mix of an ideal solution of two liquids, with n moles in all?",
+    "choices": [
+      {
+        "text": "nRT(x_A ln x_A + x_B ln x_B)",
+        "correct": true
+      },
+      {
+        "text": "−nR(x_A ln x_A + x_B ln x_B)",
+        "why": "This is the entropy of mixing, ΔS_mix. ΔG_mix has the factor RT and no minus sign."
+      },
+      {
+        "text": "nRT(ln x_A + ln x_B)",
+        "why": "Each logarithm must be weighted by its mole fraction, since n_i = n x_i. The result is nRT(x_A ln x_A + x_B ln x_B)."
+      },
+      {
+        "text": "nRT(x_A ln x_B + x_B ln x_A)",
+        "why": "Each component contributes n_i RT ln x_i, with its own mole fraction in the logarithm. Swapping them gives the wrong weights."
+      }
+    ],
+    "explanation": "Each component contributes n_i(μ_i^(sln) − μ_i^*) = n_i RT ln x_i, and n_i = n x_i, so ΔG_mix = nRT(x_A ln x_A + x_B ln x_B). For more components the sum runs over all of them: ΔG_mix = nRT Σ x_i ln x_i."
+  },
+  {
+    "id": "pc24-raoult-gmix-negative",
+    "type": "multiple-choice",
+    "prompt": "Why is ΔG_mix = nRT(x_A ln x_A + x_B ln x_B) negative for every ideal solution?",
+    "choices": [
+      {
+        "text": "Each x_i is below 1, so each ln x_i is negative",
+        "correct": true
+      },
+      {
+        "text": "Mixing always gives off heat to the surroundings",
+        "why": "An ideal solution has ΔH_mix = 0, so no heat is given off. ΔG_mix < 0 because every mole fraction is below 1, which makes every ln x_i negative."
+      },
+      {
+        "text": "The liquids shrink in volume when they mix",
+        "why": "Ideal volumes are additive, so ΔV_mix = 0. ΔG_mix is negative because each ln x_i < 0 when x_i < 1."
+      },
+      {
+        "text": "The temperature rises as the liquids mix",
+        "why": "ΔG_mix is taken at constant T, so no temperature change enters it. The sign comes from the logarithms: x_i < 1 gives ln x_i < 0."
+      }
+    ],
+    "explanation": "In a mixture every mole fraction is less than 1, so every ln x_i is negative, while n, R and T are positive. ΔG_mix is therefore always negative, and forming an ideal solution is always spontaneous."
+  },
+  {
+    "id": "pc24-raoult-gmix-vs-smix",
+    "type": "multiple-choice",
+    "prompt": "The section notes that ΔG_mix = nRT Σ x_i ln x_i looks much like ΔS_mix = −nR Σ x_i ln x_i. How are the two related?",
+    "choices": [
+      {
+        "text": "ΔG_mix = −TΔS_mix",
+        "correct": true
+      },
+      {
+        "text": "ΔG_mix = TΔS_mix",
+        "why": "The minus sign matters: ΔS_mix is positive while ΔG_mix is negative. Comparing the formulas gives ΔG_mix = −TΔS_mix."
+      },
+      {
+        "text": "ΔG_mix = −RΔS_mix",
+        "why": "Both formulas already contain R. They differ by a factor of −T, so ΔG_mix = −TΔS_mix."
+      },
+      {
+        "text": "ΔG_mix = ΔS_mix/T",
+        "why": "Dividing by T does not turn one into the other. Multiplying ΔS_mix = −nR Σ x_i ln x_i by −T gives ΔG_mix."
+      }
+    ],
+    "explanation": "Multiplying ΔS_mix = −nR Σ x_i ln x_i by −T gives nRT Σ x_i ln x_i, which is ΔG_mix. So the whole Gibbs energy of mixing of an ideal solution comes from its entropy of mixing."
+  },
+  {
+    "id": "pc24-raoult-hmix-zero",
+    "type": "multiple-choice",
+    "prompt": "Since ΔG_mix = −TΔS_mix for an ideal solution, what does ΔG_mix = ΔH_mix − TΔS_mix leave for the enthalpy of mixing?",
+    "choices": [
+      {
+        "text": "ΔH_mix = 0",
+        "correct": true
+      },
+      {
+        "text": "ΔH_mix < 0, since mixing is spontaneous",
+        "why": "Spontaneity here comes from the entropy term alone. With ΔG_mix = −TΔS_mix, there is no room left for an enthalpy term."
+      },
+      {
+        "text": "ΔH_mix > 0, outweighed by TΔS_mix",
+        "why": "A positive ΔH_mix would make ΔG_mix less negative than −TΔS_mix. For an ideal solution the two are equal, so ΔH_mix = 0."
+      },
+      {
+        "text": "ΔH_mix = ΔG_mix",
+        "why": "That would need ΔS_mix = 0, but mixing raises the entropy. Since ΔG_mix = −TΔS_mix, the enthalpy of mixing must be zero."
+      }
+    ],
+    "explanation": "Putting ΔG_mix = −TΔS_mix into ΔG_mix = ΔH_mix − TΔS_mix leaves ΔH_mix = 0. Forming an ideal solution neither absorbs nor releases heat."
+  },
+  {
+    "id": "pc24-raoult-hmix-pair-dependent",
+    "type": "multiple-choice",
+    "prompt": "An ideal solution has ΔH_mix = 0 because the average interaction energy U_ij is taken to be the same for every pair of molecules i and j. According to the section, what follows when U_ij does depend on the pair, as it usually does?",
+    "choices": [
+      {
+        "text": "ΔH_mix ≠ 0, and the vapor pressures are affected",
+        "correct": true
+      },
+      {
+        "text": "ΔH_mix stays zero; only ΔV_mix changes",
+        "why": "If the interaction energies differ, swapping neighbors changes the energy, so ΔH_mix is no longer zero. The section adds that this also affects the vapor pressures."
+      },
+      {
+        "text": "Raoult's law still holds exactly for both liquids",
+        "why": "A nonzero enthalpy of mixing changes the thermodynamics of the solution. The section says this should also affect the vapor pressures, so Raoult's law no longer holds exactly."
+      },
+      {
+        "text": "The two liquids can no longer mix at all",
+        "why": "Unequal interactions make the mixture non-ideal, not impossible to form. The section's point is that ΔH_mix is then not zero and the vapor pressures are affected."
+      }
+    ],
+    "explanation": "If it matters which molecule is a neighbor, swapping neighbors on mixing changes the energy, so ΔH_mix ≠ 0. Since this changes the thermodynamics of the liquid, the section notes it should also show up in the vapor pressures, which then depart from Raoult's law."
+  },
+  {
+    "id": "pc24-raoult-gmix-temperature",
+    "type": "multiple-choice",
+    "prompt": "For an ideal solution of fixed composition, what happens to ΔG_mix = nRT(x_A ln x_A + x_B ln x_B) if the temperature is raised?",
+    "choices": [
+      {
+        "text": "It becomes more negative, in proportion to T",
+        "correct": true
+      },
+      {
+        "text": "It becomes less negative, heading toward zero",
+        "why": "At fixed composition the bracket is a fixed negative number, multiplied by T. A higher T makes ΔG_mix more negative, not less."
+      },
+      {
+        "text": "It stays the same, since ΔH_mix = 0",
+        "why": "ΔH_mix = 0 removes the enthalpy term, but −TΔS_mix still scales with T. So ΔG_mix grows more negative as T rises."
+      },
+      {
+        "text": "It turns positive above some temperature",
+        "why": "Every factor except the negative bracket is positive, so ΔG_mix stays negative at any T. Raising T only makes it more negative."
+      }
+    ],
+    "explanation": "At fixed composition, x_A ln x_A + x_B ln x_B is a fixed negative number, and ΔG_mix is that number times nRT. Doubling the absolute temperature doubles the size of ΔG_mix."
+  },
+  {
+    "id": "pc24-raoult-dvmix-route",
+    "type": "multiple-choice",
+    "prompt": "How does the section show that ΔV_mix = 0 for an ideal solution?",
+    "choices": [
+      {
+        "text": "ΔG_mix holds no P, and ((∂ΔG)/(∂P))_T = ΔV_mix",
+        "correct": true
+      },
+      {
+        "text": "ΔH_mix = 0, and ΔV_mix = ΔH_mix/P",
+        "why": "There is no such relation between ΔV and ΔH. The section uses ((∂G)/(∂P))_T = V: since ΔG_mix contains no P, ΔV_mix = 0."
+      },
+      {
+        "text": "The molecules of an ideal liquid take up no volume",
+        "why": "Liquid molecules do take up space; the volumes of the pure liquids simply add. ΔV_mix = 0 because ΔG_mix = nRT Σ x_i ln x_i contains no pressure."
+      },
+      {
+        "text": "ΔG_mix is negative, so the volume cannot change",
+        "why": "The sign of ΔG_mix says nothing about volume. What matters is its pressure derivative, which is zero because ΔG_mix contains no P."
+      }
+    ],
+    "explanation": "Since ((∂G)/(∂P))_T = V, the pressure derivative of ΔG_mix is ΔV_mix. The ideal ΔG_mix = RT(n_1 ln x_1 + n_2 ln x_2) contains no pressure, so ΔV_mix = 0 and volumes are additive."
+  },
+  {
+    "id": "pc24-raoult-benzene-partial",
+    "type": "numeric",
+    "prompt": "Benzene and toluene form a nearly ideal solution. At 25 °C, pure benzene has a vapor pressure of 12.7 kPa. Using Raoult's law, P_A = x_A P_A^*, with benzene as A, what is the partial vapor pressure of benzene above a solution in which its mole fraction is 0.300, in kPa? (Give it as a decimal.)",
+    "answer": 3.81,
+    "unit": "kPa",
+    "explanation": "P_A = (0.300)(12.7 kPa) = 3.81 kPa. Only benzene's own mole fraction and pure vapor pressure enter; toluene adds its own partial pressure on top."
+  },
+  {
+    "id": "pc24-raoult-hexane-heptane-total",
+    "type": "numeric",
+    "prompt": "Hexane and heptane form a nearly ideal solution. At 25 °C the pure vapor pressures are 151 torr for hexane and 45.8 torr for heptane. For a liquid with mole fractions 0.400 hexane (A) and 0.600 heptane (B), what is the total vapor pressure, P_tot = x_A P_A^* + x_B P_B^*, in torr? (Give it as a decimal.)",
+    "answer": 87.9,
+    "unit": "torr",
+    "explanation": "Hexane contributes (0.400)(151 torr) = 60.4 torr and heptane (0.600)(45.8 torr) = 27.5 torr, so P_tot = 60.4 + 27.5 = 87.9 torr. The total lies between the two pure vapor pressures, as a mole-fraction-weighted sum must."
+  },
+  {
+    "id": "pc24-raoult-methanol-vapor",
+    "type": "numeric",
+    "prompt": "Methanol (A) and ethanol (B) form a nearly ideal solution. At 40 °C, above a liquid with x_A = 0.400, the partial vapor pressures are P_A = 105 torr and P_B = 80.4 torr. What is the mole fraction of methanol in the vapor, y_A = P_A/P_tot? (Give it as a decimal.)",
+    "answer": 0.566,
+    "explanation": "P_tot = 105 + 80.4 = 185.4 torr, so y_A = 105/185.4 = 0.566. The vapor (0.566 methanol) is richer in methanol than the liquid (0.400), because methanol is the more volatile of the two."
+  },
+  {
+    "id": "pc24-raoult-gmix-value",
+    "type": "numeric",
+    "prompt": "An ideal solution holding 3.00 mol in all, with x_A = 0.200 and x_B = 0.800, is formed from the pure liquids at 298 K. Using ΔG_mix = nRT(x_A ln x_A + x_B ln x_B), R = 8.314 J/(mol·K), ln 0.200 = −1.609 and ln 0.800 = −0.223, what is ΔG_mix, in kJ, including its sign? (Give it as a decimal.)",
+    "answer": -3.72,
+    "unit": "kJ",
+    "explanation": "The bracket is (0.200)(−1.609) + (0.800)(−0.223) = −0.3218 − 0.1784 = −0.5002. Then ΔG_mix = (3.00 mol)(8.314 J/(mol·K))(298 K)(−0.5002) = −3718 J, or −3.72 kJ: negative, as it is for every ideal solution."
+  },
+  {
+    "id": "pc24-raoult-smix-from-gmix",
+    "type": "numeric",
+    "prompt": "Forming an ideal solution at 300 K gives ΔG_mix = −3.45 kJ. Since ΔH_mix = 0 for an ideal solution, ΔG_mix = −TΔS_mix. What is ΔS_mix, in J/K? (Give it as a decimal.)",
+    "answer": 11.5,
+    "explanation": "ΔS_mix = −ΔG_mix/T = −(−3450 J)/(300 K) = +11.5 J/K. Because ΔH_mix = 0, the whole of the negative ΔG_mix comes from this positive entropy of mixing."
+  },
+  {
+    "id": "pc24-raoult-additive-volume",
+    "type": "numeric",
+    "prompt": "Benzene and toluene form a nearly ideal solution, so their volumes are additive (ΔV_mix = 0). The molar volumes of the pure liquids are 89.4 mL/mol for benzene and 106.9 mL/mol for toluene. What volume, in mL, does a solution made from 1.00 mol of benzene and 2.00 mol of toluene occupy? (Give it as a decimal.)",
+    "answer": 303.2,
+    "unit": "mL",
+    "explanation": "With ΔV_mix = 0 the solution's volume is just the sum of the pure liquids' volumes: (1.00 mol)(89.4 mL/mol) + (2.00 mol)(106.9 mL/mol) = 89.4 + 213.8 = 303.2 mL. In a real, non-ideal solution the volume would differ somewhat from this sum."
+  }
+]

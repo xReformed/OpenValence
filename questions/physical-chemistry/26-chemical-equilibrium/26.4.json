@@ -1,0 +1,417 @@
+[
+  {
+    "id": "pc26-extent-minimum-xi-a-to-b",
+    "type": "multiple-choice",
+    "prompt": "For a simple reaction A ⇌ B, what does the extent of reaction ξ measure?",
+    "choices": [
+      {
+        "text": "The moles of A that have turned into B",
+        "correct": true
+      },
+      {
+        "text": "The mole fraction of B in the mixture",
+        "why": "ξ is an amount in mol, not a fraction. For A ⇌ B it is simply the number of moles of A converted to B."
+      },
+      {
+        "text": "The moles of A still left",
+        "why": "The amount of A left is n_(A, 0) − ξ, not ξ itself. ξ counts the moles of A already converted to B."
+      },
+      {
+        "text": "The rate at which B is forming",
+        "why": "Rates belong to kinetics. ξ says how far the reaction has gone: the moles of A converted to B."
+      }
+    ],
+    "explanation": "For A ⇌ B, each mole of reaction turns one mole of A into one mole of B, so dξ = dn_B = −dn_A. ξ is then the number of moles of A converted to B."
+  },
+  {
+    "id": "pc26-extent-minimum-slope-a-to-b",
+    "type": "multiple-choice",
+    "prompt": "For A ⇌ B, dG = −μ_A dξ + μ_B dξ. What is the slope ((∂G)/(∂ξ))_(P,T) of G against ξ?",
+    "choices": [
+      {
+        "text": "μ_B − μ_A",
+        "correct": true
+      },
+      {
+        "text": "μ_A − μ_B",
+        "why": "This has the signs reversed. A is used up (dn_A = −dξ) and B forms (dn_B = +dξ), so the slope is μ_B − μ_A."
+      },
+      {
+        "text": "μ_A + μ_B",
+        "why": "The two terms have opposite signs, because A is consumed while B is formed. The slope is μ_B − μ_A."
+      },
+      {
+        "text": "μ_B/μ_A",
+        "why": "Dividing dG by dξ leaves a difference, not a ratio. Ratios of pressures appear only inside the logarithm of μ."
+      }
+    ],
+    "explanation": "Dividing dG = (μ_B − μ_A) dξ by dξ gives ((∂G)/(∂ξ))_(P,T) = μ_B − μ_A. This difference is the reaction Gibbs energy Δ_r G for A ⇌ B."
+  },
+  {
+    "id": "pc26-extent-minimum-mu-equal",
+    "type": "multiple-choice",
+    "prompt": "For A ⇌ B, the slope of G against ξ is zero at the minimum. How do the chemical potentials of A and B compare there?",
+    "choices": [
+      {
+        "text": "μ_A = μ_B",
+        "correct": true
+      },
+      {
+        "text": "μ_A = 0 and μ_B = 0",
+        "why": "The chemical potentials need not vanish. A zero slope, μ_B − μ_A = 0, only requires them to be equal."
+      },
+      {
+        "text": "μ_B is lower than μ_A",
+        "why": "If μ_B were lower, the slope μ_B − μ_A would be negative and G would still fall as more B formed. At the minimum the two are equal."
+      },
+      {
+        "text": "μ_A = μ_A° and μ_B = μ_B°",
+        "why": "That would put each gas at its standard pressure, which equilibrium does not require. The condition is μ_A = μ_B."
+      }
+    ],
+    "explanation": "The slope is μ_B − μ_A, so a zero slope means μ_A = μ_B. Then converting A to B neither raises nor lowers G, and the reaction goes neither forward nor backward."
+  },
+  {
+    "id": "pc26-extent-minimum-both-sides",
+    "type": "multiple-choice",
+    "prompt": "G against ξ has a minimum, with a negative slope on one side and a positive slope on the other. Why does the section say every reaction spontaneously moves toward equilibrium?",
+    "choices": [
+      {
+        "text": "Moving toward the minimum lowers G",
+        "correct": true
+      },
+      {
+        "text": "G always falls as ξ increases",
+        "why": "Past the minimum the slope is positive, so G rises as ξ increases. There, going backward lowers G, which is still a move toward the minimum."
+      },
+      {
+        "text": "The slope is negative on both sides",
+        "why": "The slope changes sign at the minimum: negative before it, positive after it. In both regions, moving toward the minimum makes dG < 0."
+      },
+      {
+        "text": "G is highest at equilibrium",
+        "why": "Equilibrium is at the lowest point of G, not the highest. Moving toward it from either side gives dG < 0."
+      }
+    ],
+    "explanation": "On the negative-slope side the forward reaction lowers G; on the positive-slope side the reverse reaction does. Either way dG < 0 as the system evolves toward the minimum, the equilibrium position."
+  },
+  {
+    "id": "pc26-extent-minimum-endergonic",
+    "type": "multiple-choice",
+    "prompt": "What is a reaction with Δ_r G > 0 called?",
+    "choices": [
+      {
+        "text": "Endergonic",
+        "correct": true
+      },
+      {
+        "text": "Exergonic",
+        "why": "Exergonic means Δ_r G < 0. A positive Δ_r G makes a reaction endergonic."
+      },
+      {
+        "text": "Endothermic",
+        "why": "Endothermic refers to the enthalpy, Δ_r H > 0, not to the Gibbs energy. A reaction with Δ_r G > 0 is endergonic."
+      },
+      {
+        "text": "Exothermic",
+        "why": "Exothermic describes Δ_r H < 0, a release of heat. The Gibbs energy term for Δ_r G > 0 is endergonic."
+      }
+    ],
+    "explanation": "A reaction with Δ_r G > 0 is endergonic, and one with Δ_r G < 0 is exergonic. Exergonic and endergonic describe the Gibbs energy; exothermic and endothermic describe heat."
+  },
+  {
+    "id": "pc26-extent-minimum-positive-reverse",
+    "type": "multiple-choice",
+    "prompt": "At the present value of ξ, a reaction mixture has Δ_r G > 0. Which way does the reaction go spontaneously?",
+    "choices": [
+      {
+        "text": "In reverse, toward smaller ξ",
+        "correct": true
+      },
+      {
+        "text": "Forward, toward larger ξ",
+        "why": "With a positive slope, increasing ξ would raise G. The reverse reaction lowers G, so it is the spontaneous one."
+      },
+      {
+        "text": "Neither way; it is at equilibrium",
+        "why": "Equilibrium needs Δ_r G = 0, the bottom of the curve. With Δ_r G > 0 the mixture is past the minimum and runs in reverse."
+      },
+      {
+        "text": "It cannot react at all",
+        "why": "A positive Δ_r G does not stop the reaction; it decides the direction. Here the reverse reaction lowers G and is spontaneous."
+      }
+    ],
+    "explanation": "Δ_r G is the slope of G against ξ. If it is positive, G falls as ξ decreases, so the reverse reaction is spontaneous and runs until Δ_r G = 0."
+  },
+  {
+    "id": "pc26-extent-minimum-bracket",
+    "type": "multiple-choice",
+    "prompt": "For a reaction, Δ_r G = −4.0 kJ/mol at ξ = 0.20 mol and Δ_r G = +2.0 kJ/mol at ξ = 0.60 mol. Where does the equilibrium extent ξ_eq lie?",
+    "choices": [
+      {
+        "text": "Between 0.20 mol and 0.60 mol",
+        "correct": true
+      },
+      {
+        "text": "Below 0.20 mol",
+        "why": "At 0.20 mol the slope is still negative, so G keeps falling as ξ grows. The minimum lies further on, before the slope turns positive."
+      },
+      {
+        "text": "Above 0.60 mol",
+        "why": "At 0.60 mol the slope is already positive, so G rises from there on. The minimum lies before it, above 0.20 mol."
+      },
+      {
+        "text": "At exactly 0.40 mol, halfway",
+        "why": "The slope changes sign somewhere between the two points, but nothing puts that point midway. Where exactly depends on how Δ_r G varies with ξ."
+      }
+    ],
+    "explanation": "Δ_r G goes from negative to positive between the two points, so it passes through zero, the minimum of G, somewhere between 0.20 and 0.60 mol. That point is ξ_eq."
+  },
+  {
+    "id": "pc26-extent-minimum-probability",
+    "type": "multiple-choice",
+    "prompt": "In A ⇌ B, suppose A can form B and B can form A, and no enthalpy favors either. According to the section's think-about-it argument, which state has the lowest Gibbs energy?",
+    "choices": [
+      {
+        "text": "Equal amounts of A and B",
+        "correct": true
+      },
+      {
+        "text": "Pure B, since it is the product",
+        "why": "With no enthalpy or inherent-entropy difference, nothing favors B. Probability alone gives statistically equal amounts of A and B."
+      },
+      {
+        "text": "Pure A, the reactant",
+        "why": "Nothing favors A either. Since each can form the other freely, probability leads to equal amounts of both."
+      },
+      {
+        "text": "Twice as much B as A",
+        "why": "A 2:1 ratio would need some term favoring B. With none, the mixture settles at a 1:1 ratio."
+      }
+    ],
+    "explanation": "With no enthalpy term, only the entropy of mixing decides the ratio, and it is most favorable for a half-and-half mixture. Statistically there will be the same amount of A and B, the lowest free energy state."
+  },
+  {
+    "id": "pc26-extent-minimum-not-half",
+    "type": "multiple-choice",
+    "prompt": "For A ⇌ B, the section expects equal amounts of A and B at equilibrium in a special case. When would this 50:50 result not hold?",
+    "choices": [
+      {
+        "text": "If the reaction enthalpy is not zero",
+        "correct": true
+      },
+      {
+        "text": "If the temperature is raised",
+        "why": "Temperature alone does not break the symmetry when nothing favors A or B. A nonzero reaction enthalpy, or different inherent entropies, would."
+      },
+      {
+        "text": "If more A is added at the start",
+        "why": "Adding A changes how much reacts, not the final ratio when nothing favors either species. The 50:50 result fails if the reaction enthalpy is not zero."
+      },
+      {
+        "text": "If it is run in a larger container",
+        "why": "Both partial pressures fall together, so their ratio stays 1. What breaks the 50:50 result is a nonzero reaction enthalpy or different inherent entropies."
+      }
+    ],
+    "explanation": "The 50:50 result assumes that only the mixing entropy matters. A nonzero reaction enthalpy, or different inherent entropies of A and B, adds a term that favors one side, and usually there is such a term."
+  },
+  {
+    "id": "pc26-extent-minimum-mix-not-molar",
+    "type": "multiple-choice",
+    "prompt": "The section writes ΔG_mix = nRT(χ_A ln χ_A + χ_B ln χ_B). How does ΔG_mix differ from the reaction Gibbs energy Δ_r G?",
+    "choices": [
+      {
+        "text": "ΔG_mix depends on n; Δ_r G is per mole",
+        "correct": true
+      },
+      {
+        "text": "ΔG_mix is always positive",
+        "why": "Mole fractions are below 1, so each ln χ is negative and ΔG_mix is negative. The real difference is that ΔG_mix scales with n."
+      },
+      {
+        "text": "ΔG_mix depends on the reaction enthalpy",
+        "why": "The formula has no enthalpy in it; it is pure mixing. What sets it apart is that it scales with n, while Δ_r G is per mole of reaction."
+      },
+      {
+        "text": "ΔG_mix is zero for a 50:50 mixture",
+        "why": "At χ_A = χ_B = 0.5, ΔG_mix is at its most negative, not zero. The key difference is that it scales with n, while Δ_r G is per mole."
+      }
+    ],
+    "explanation": "ΔG_mix is not a molar quantity: it is proportional to the total amount n. Δ_r G, in J/mol, is the change in G per mole of reaction."
+  },
+  {
+    "id": "pc26-extent-minimum-mix-reference",
+    "type": "multiple-choice",
+    "prompt": "The Gibbs energy of mixing for A ⇌ B is defined relative to which state?",
+    "choices": [
+      {
+        "text": "Pure, unmixed A and B",
+        "correct": true
+      },
+      {
+        "text": "The equilibrium mixture",
+        "why": "ΔG_mix measures what mixing does, starting from the separate substances. It is defined relative to pure A and pure B."
+      },
+      {
+        "text": "A and B, each at 0 K",
+        "why": "The temperature is fixed during mixing; a 0 K reference belongs to third-law entropies. ΔG_mix is relative to pure, unmixed A and B."
+      },
+      {
+        "text": "An ideal gas at 1 bar and 298 K",
+        "why": "That describes a standard state, not the reference for mixing. ΔG_mix compares the mixture with pure, unmixed A and B."
+      }
+    ],
+    "explanation": "ΔG_mix compares the mixture with the same amounts of A and B kept apart. It is zero for pure A or pure B, and negative for any mixture."
+  },
+  {
+    "id": "pc26-extent-minimum-not-pure-products",
+    "type": "multiple-choice",
+    "prompt": "Even when pure products have a lower Gibbs energy than pure reactants, G against ξ usually reaches its lowest point before the reaction is complete. Why?",
+    "choices": [
+      {
+        "text": "Mixing reactants with products lowers G",
+        "correct": true
+      },
+      {
+        "text": "The reaction gets too slow near completion",
+        "why": "Speed is a kinetic matter and does not set the minimum of G. The minimum comes before completion because mixing reactants and products lowers G."
+      },
+      {
+        "text": "Products always have a higher μ° than reactants",
+        "why": "Here the products are lower in Gibbs energy, yet the minimum still falls short of completion. The Gibbs energy of mixing pulls it to a mixture."
+      },
+      {
+        "text": "The enthalpy of mixing is negative",
+        "why": "For ideal gases the enthalpy of mixing is zero. The lowering comes from the entropy of mixing, through ΔG_mix = nRT Σ χ_i ln χ_i."
+      }
+    ],
+    "explanation": "The mixing term, ΔG_mix, is negative for every mixture of reactants and products, so G dips below the values for the unmixed substances. Its minimum then lies at an intermediate ξ, not at pure products."
+  },
+  {
+    "id": "pc26-extent-minimum-no-mixing-line",
+    "type": "multiple-choice",
+    "prompt": "Suppose A and B could be kept unmixed during A ⇌ B, so that each mole converted changes G by the same amount, Δ_r G°. How would G vary with ξ?",
+    "choices": [
+      {
+        "text": "A straight line from pure A to pure B",
+        "correct": true
+      },
+      {
+        "text": "A curve with a minimum at ξ_eq",
+        "why": "The dip toward a minimum comes from mixing. With a constant change of Δ_r G° per mole, G is a straight line."
+      },
+      {
+        "text": "It would stay constant",
+        "why": "G stays constant only if Δ_r G° = 0. Otherwise each mole converted changes G by Δ_r G°, which gives a sloping straight line."
+      },
+      {
+        "text": "A curve with a maximum in the middle",
+        "why": "A constant step of Δ_r G° per mole cannot produce a maximum. G changes in a straight line from pure A to pure B."
+      }
+    ],
+    "explanation": "A constant slope, Δ_r G°, gives a straight line from pure A to pure B, so the lowest point would be at one end. Including the Gibbs energy of mixing bends this line into a curve with a minimum in between."
+  },
+  {
+    "id": "pc26-extent-minimum-mixing-term-zero",
+    "type": "multiple-choice",
+    "prompt": "For A ⇌ B, Δ_r G = Δ_r G° + RT ln(P_B/P_A), and the second term is the slope of the Gibbs energy of mixing. For which mixture is this second term zero?",
+    "choices": [
+      {
+        "text": "One with P_A = P_B",
+        "correct": true
+      },
+      {
+        "text": "Pure A, before any B forms",
+        "why": "With no B, P_B/P_A goes to 0 and the logarithm heads to minus infinity. The term is zero only when P_B/P_A = 1."
+      },
+      {
+        "text": "Any mixture at equilibrium",
+        "why": "At equilibrium the whole of Δ_r G is zero, so the log term equals −Δ_r G°, which is generally not zero. The log term itself vanishes when P_A = P_B."
+      },
+      {
+        "text": "One with P_B = 2P_A",
+        "why": "Then the term is RT ln 2, which is positive. It is zero only when the ratio is 1, that is, P_A = P_B."
+      }
+    ],
+    "explanation": "RT ln(P_B/P_A) = RT ln 1 = 0 when P_A = P_B, the half-and-half mixture where ΔG_mix has its minimum, so there Δ_r G = Δ_r G°. The term is negative with less B than A and positive with more."
+  },
+  {
+    "id": "pc26-extent-minimum-term-sources",
+    "type": "multiple-choice",
+    "prompt": "To evaluate Δ_r G = Δ_r G° + RT ln(P_B/P_A) for a particular mixture of A and B, where does each term come from?",
+    "choices": [
+      {
+        "text": "Δ_r G° from tables, the log term from P_A and P_B",
+        "correct": true
+      },
+      {
+        "text": "Both terms from the mixture's partial pressures",
+        "why": "Δ_r G° = μ_B° − μ_A° refers to standard conditions, so it does not depend on the mixture. It is looked up in a reference book."
+      },
+      {
+        "text": "Both terms from tables of standard values",
+        "why": "Tables give only Δ_r G°, which is specific to the reaction. The log term must be calculated from the partial pressures in the mixture at hand."
+      },
+      {
+        "text": "Δ_r G° from P_A and P_B, the log term from tables",
+        "why": "This has the two swapped. Δ_r G° is a tabulated standard value, while RT ln(P_B/P_A) is calculated from the actual partial pressures."
+      }
+    ],
+    "explanation": "Δ_r G° = μ_B° − μ_A° is the Gibbs energy for converting one mole of A to B with both at 1 bar, and it is looked up in a reference book. The second term is calculated from the partial pressures of A and B in the gas."
+  },
+  {
+    "id": "pc26-extent-minimum-k-ratio",
+    "type": "multiple-choice",
+    "prompt": "For the ideal-gas reaction A ⇌ B, the ratio of partial pressures that makes Δ_r G = 0 is called the equilibrium constant. Which expression is it?",
+    "choices": [
+      {
+        "text": "K_eq = P_B/P_A at equilibrium",
+        "correct": true
+      },
+      {
+        "text": "K_eq = P_A/P_B at equilibrium",
+        "why": "The product B goes on top, as in the term RT ln(P_B/P_A). So K_eq = P_B/P_A."
+      },
+      {
+        "text": "K_eq = P_B − P_A at equilibrium",
+        "why": "The pressures enter through the logarithm of their ratio, not a difference. So K_eq = P_B/P_A."
+      },
+      {
+        "text": "K_eq = P_B/P_A at the start",
+        "why": "The starting ratio can be anything. K_eq is the ratio at equilibrium, which is characteristic of the reaction."
+      }
+    ],
+    "explanation": "Setting Δ_r G = 0 in Δ_r G = Δ_r G° + RT ln(P_B/P_A) fixes one value of P_B/P_A, characteristic of the reaction. That ratio is K_eq, and it gives Δ_r G° = −RT ln K_eq."
+  },
+  {
+    "id": "pc26-extent-minimum-calc-xi-eq",
+    "type": "numeric",
+    "prompt": "An ideal-gas reaction A ⇌ B has no enthalpy change and no difference in inherent entropy, so at equilibrium there are equal amounts of A and B. Starting from 3.00 mol of pure A, what is the extent of reaction at equilibrium, ξ_eq, in mol? (Give it as a decimal.)",
+    "answer": 1.5,
+    "unit": "mol",
+    "explanation": "At equilibrium n_A = n_B = 3.00 mol ÷ 2 = 1.50 mol. Since ξ counts the moles of A converted to B, ξ_eq = 1.50 mol."
+  },
+  {
+    "id": "pc26-extent-minimum-calc-k",
+    "type": "numeric",
+    "prompt": "An ideal-gas mixture reacting as A ⇌ B reaches equilibrium with P_A = 0.300 bar and P_B = 1.20 bar. Using K_eq = P_B/P_A, what is K_eq?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "K_eq = 1.20 bar ÷ 0.300 bar = 4.00. The ratio is above 1, so B is favored, unlike the 50:50 case with no enthalpy term."
+  },
+  {
+    "id": "pc26-extent-minimum-calc-mixing-term",
+    "type": "numeric",
+    "prompt": "For A ⇌ B at 350 K, a mixture has P_B/P_A = 3.00. Using RT ln(P_B/P_A), with R = 8.314 J/(mol·K) and ln 3.00 = 1.099, what is this mixing term of Δ_r G, in kJ/mol? (Give it as a decimal.)",
+    "answer": 3.2,
+    "explanation": "RT ln(P_B/P_A) = (8.314 J/(mol·K))(350 K)(1.099) = 3.20 × 10^3 J/mol = 3.20 kJ/mol. It is positive because B is in excess, and it adds to Δ_r G° to give Δ_r G."
+  },
+  {
+    "id": "pc26-extent-minimum-calc-gmix-early",
+    "type": "numeric",
+    "prompt": "A ⇌ B starts from 1.00 mol of pure A at 300 K. At ξ = 0.100 mol, χ_A = 0.900 and χ_B = 0.100. Using ΔG_mix = nRT(χ_A ln χ_A + χ_B ln χ_B), R = 8.314 J/(mol·K), ln 0.900 = −0.1054 and ln 0.100 = −2.303, what is ΔG_mix, in kJ, including its sign? (Give it as a decimal.)",
+    "answer": -0.811,
+    "unit": "kJ",
+    "explanation": "ΔG_mix = (1.00 mol)(8.314 J/(mol·K))(300 K)[(0.900)(−0.1054) + (0.100)(−2.303)] = (2494 J)(−0.3252) = −811 J = −0.811 kJ. Even a little product lowers G noticeably, which is why the minimum is never at pure A."
+  }
+]

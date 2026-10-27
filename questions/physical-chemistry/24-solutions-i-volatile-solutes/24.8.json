@@ -1,0 +1,112 @@
+[
+  {
+    "id": "pc24-activity-standard-effective",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the thermodynamic activity a of a species?",
+    "choices": [
+      {
+        "text": "Its effective concentration in a mixture",
+        "correct": true
+      },
+      {
+        "text": "Its concentration in mol/L, uncorrected",
+        "why": "That is the molarity. Activity is the effective concentration, which allows for non-ideal behavior and has no units."
+      },
+      {
+        "text": "The rate at which it reacts with others",
+        "why": "Activity is not a rate. It is the effective concentration of the species in the mixture."
+      },
+      {
+        "text": "The fraction of its molecules in the vapor",
+        "why": "Activity is defined for gases, solutes, solids and liquids alike. It is the effective concentration of the species."
+      }
+    ],
+    "explanation": "The activity a is the effective concentration of a species in a mixture. It is a dimensionless number, calculated with respect to a standard state."
+  },
+  {
+    "id": "pc24-activity-standard-reference",
+    "type": "multiple-choice",
+    "prompt": "To get activities, the section divides a gas's fugacity by P° and a solute's concentration by 1 M. What do P° and 1 M represent?",
+    "choices": [
+      {
+        "text": "Standard states that the activity is relative to",
+        "correct": true
+      },
+      {
+        "text": "The total pressure and concentration of the mixture",
+        "why": "Those change from one mixture to the next. P° and 1 M are fixed standard states, and dividing by them makes the activity dimensionless."
+      },
+      {
+        "text": "The values at which the species becomes ideal",
+        "why": "Ideal behavior is set by φ_i = 1 or γ_i = 1, not by the pressure or concentration chosen. P° and 1 M are the standard states."
+      },
+      {
+        "text": "The pressure and concentration at equilibrium",
+        "why": "Equilibrium values depend on the system. P° and 1 M are fixed reference values, the standard states."
+      }
+    ],
+    "explanation": "Activities are calculated with respect to standard states: P° for a gas and 1 M for a solute. Dividing by them cancels the units, so the activity is a pure number."
+  },
+  {
+    "id": "pc24-activity-standard-real-gas",
+    "type": "numeric",
+    "prompt": "A real gas has mole fraction y_i = 0.400 in a mixture at total pressure P = 5.00 bar, and its fugacity coefficient is φ_i = 0.950. Using a_i = φ_i y_i P/P°, with P° = 1 bar, what is the gas's activity? (Give it as a decimal.)",
+    "answer": 1.9,
+    "explanation": "a_i = 0.950 × 0.400 × (5.00 bar)/(1 bar) = 1.90. For an ideal gas φ_i = 1, and the activity would be y_i P/P° = 2.00, its partial pressure without the units."
+  },
+  {
+    "id": "pc24-activity-standard-solution",
+    "type": "numeric",
+    "prompt": "A solute is present at [A] = 0.250 M, and its activity coefficient is γ_i = 0.800. Using a_i = γ_i ([A])/(1 M), what is its activity? (Give it as a decimal.)",
+    "answer": 0.2,
+    "explanation": "a_i = 0.800 × (0.250 M)/(1 M) = 0.200. The M units cancel, and γ_i < 1 makes the solute act as if it were less concentrated than 0.250 M."
+  },
+  {
+    "id": "pc24-activity-standard-ideal-solute",
+    "type": "multiple-choice",
+    "prompt": "General and organic chemistry usually write a solute's activity as a_i = ([A])/(1 M). What does this assume?",
+    "choices": [
+      {
+        "text": "The solute is ideal, with γ_i = 1",
+        "correct": true
+      },
+      {
+        "text": "The solution is exactly 1 M",
+        "why": "The 1 M is the standard state in the denominator; [A] can have any value. The assumption is that γ_i = 1."
+      },
+      {
+        "text": "The solute's activity is always 1",
+        "why": "An activity of 1 is for a pure solid or liquid. A solute's activity changes with [A]; the assumption is only that γ_i = 1."
+      },
+      {
+        "text": "The solute is fully non-volatile",
+        "why": "Volatility does not enter this expression. Leaving out γ_i means treating the solute as ideal, with γ_i = 1."
+      }
+    ],
+    "explanation": "The full expression is a_i = γ_i ([A])/(1 M). General and organic chemistry treat reactants as ideal, γ_i = 1, so the activity is just the molarity without its units."
+  },
+  {
+    "id": "pc24-activity-standard-pure",
+    "type": "multiple-choice",
+    "prompt": "What activity does the section assign to a pure solid or a pure liquid?",
+    "choices": [
+      {
+        "text": "Exactly 1",
+        "correct": true
+      },
+      {
+        "text": "Zero, since it is not dissolved",
+        "why": "A pure solid or liquid is not absent from the system. The section gives it an activity of exactly 1."
+      },
+      {
+        "text": "Its molar concentration in mol/L",
+        "why": "Concentration sets the activity of a solute, not of a pure solid or liquid. The section gives a pure solid or liquid an activity of 1."
+      },
+      {
+        "text": "Its vapor pressure divided by P°",
+        "why": "Pressure sets the activity of a gas. For a pure solid or liquid the section simply sets a_i = 1."
+      }
+    ],
+    "explanation": "The section sets a_i = 1 for a solid or a liquid. Gases and solutes, by contrast, have activities that depend on their pressure or concentration."
+  }
+]

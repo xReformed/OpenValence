@@ -1,0 +1,595 @@
+[
+  {
+    "id": "pc27-kinetic-energy-per-molecule",
+    "type": "multiple-choice",
+    "prompt": "According to the kinetic theory, what is the average translational kinetic energy ε of one gas molecule at temperature T?",
+    "choices": [
+      {
+        "text": "(3/2)k_B T",
+        "correct": true
+      },
+      {
+        "text": "(1/2)k_B T",
+        "why": "That is the share of one direction of motion. The x, y and z directions each contribute ½k_B T, giving (3/2)k_B T."
+      },
+      {
+        "text": "(3/2)RT",
+        "why": "This is the energy per mole, not per molecule. For one molecule, the gas constant R is replaced by k_B = R/N_A."
+      },
+      {
+        "text": "3k_B T",
+        "why": "This is twice too large. Three directions of motion at ½k_B T each give (3/2)k_B T."
+      }
+    ],
+    "explanation": "The section finds ε = (3/2)k_B T, where k_B is the Boltzmann constant. The energy is directly proportional to the absolute temperature, and nothing else about the gas enters."
+  },
+  {
+    "id": "pc27-kinetic-energy-temperature-from-energy",
+    "type": "numeric",
+    "prompt": "The molecules of a gas have an average translational kinetic energy ε = 8.286 × 10^−21 J. Using ε = (3/2)k_B T with k_B = 1.381 × 10^−23 J/K, what is the temperature of the gas, in K?",
+    "answer": 400,
+    "unit": "K",
+    "tolerance": 0.01,
+    "explanation": "Rearranging gives T = 2ε/(3k_B) = (1.657 × 10^−20 J)/(4.143 × 10^−23 J/K) = 400 K. Because ε depends only on T, measuring one fixes the other."
+  },
+  {
+    "id": "pc27-kinetic-energy-molar-energy",
+    "type": "numeric",
+    "prompt": "Multiplying ε = (3/2)k_B T by Avogadro's number gives the average translational kinetic energy per mole of gas, (3/2)RT. Using R = 8.314 J/(mol·K), what is this energy for a gas at 250 K, in kJ/mol? (Give it as a decimal.)",
+    "answer": 3.12,
+    "explanation": "(3/2)RT = 1.5 × 8.314 J/(mol·K) × 250 K = 3118 J/mol = 3.12 kJ/mol. Since N_A k_B = R, the per-mole and per-molecule forms say the same thing."
+  },
+  {
+    "id": "pc27-kinetic-energy-same-for-all-gases",
+    "type": "multiple-choice",
+    "prompt": "Samples of H2, N2 and CO2 are all at the same temperature. Which of these is the same for the molecules of all three gases?",
+    "choices": [
+      {
+        "text": "The average translational kinetic energy",
+        "correct": true
+      },
+      {
+        "text": "The root-mean-square speed of the molecules",
+        "why": "v_rms = √(3RT/M) depends on the molar mass. At the same temperature, the light H2 molecules move fastest."
+      },
+      {
+        "text": "The average speed of the molecules",
+        "why": "The average speed also depends on the molecular mass. Light molecules travel faster on average than heavy ones at the same temperature."
+      },
+      {
+        "text": "The mean-square speed ⟨v^2⟩ of the molecules",
+        "why": "⟨v^2⟩ = 3RT/M is larger for lighter molecules. It is the product m⟨v^2⟩, twice the average kinetic energy, that is the same for all three."
+      }
+    ],
+    "explanation": "The average translational kinetic energy is (3/2)k_B T for any gas, so it depends only on T. The speeds do depend on mass: heavier molecules move more slowly, so that ½m⟨v^2⟩ comes out the same."
+  },
+  {
+    "id": "pc27-kinetic-energy-rms-definition",
+    "type": "multiple-choice",
+    "prompt": "For N molecules with speeds v_1, v_2, …, v_N, which expression is the root-mean-square speed v_rms?",
+    "choices": [
+      {
+        "text": "√((v_1^2 + v_2^2 + … + v_N^2)/N)",
+        "correct": true
+      },
+      {
+        "text": "(v_1 + v_2 + … + v_N)/N",
+        "why": "This is the average speed, v_avg. The rms speed averages the squares of the speeds and then takes the square root."
+      },
+      {
+        "text": "(v_1^2 + v_2^2 + … + v_N^2)/N",
+        "why": "This is the mean-square speed, ⟨v^2⟩, with units of m^2/s^2. Its square root is v_rms."
+      },
+      {
+        "text": "√(v_1^2 + v_2^2 + … + v_N^2)",
+        "why": "The division by N is missing, so this would grow with the number of molecules. The squares must be averaged before taking the root."
+      }
+    ],
+    "explanation": "Root-mean-square names the steps in reverse order: square each speed, take the mean of the squares, then take the square root. So v_rms = √(⟨v^2⟩)."
+  },
+  {
+    "id": "pc27-kinetic-energy-few-average-speed",
+    "type": "numeric",
+    "prompt": "Five gas molecules have speeds of 2.0, 6.0, 6.0, 9.0 and 12.0 m/s. What is their average speed, v_avg, in m/s?",
+    "answer": 7,
+    "tolerance": 0,
+    "explanation": "The speeds add up to 35.0 m/s, and 35.0 m/s ÷ 5 = 7.0 m/s. The average speed is the sum of the speeds divided by the number of molecules."
+  },
+  {
+    "id": "pc27-kinetic-energy-few-rms-speed",
+    "type": "numeric",
+    "prompt": "Four gas molecules have speeds of 2.0, 2.0, 6.0 and 10.0 m/s. What is their root-mean-square speed, v_rms, in m/s?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The squared speeds are 4.0, 4.0, 36 and 100 m^2/s^2, which add up to 144 m^2/s^2. Their mean is 144/4 = 36 m^2/s^2, so v_rms = √36 m/s = 6.0 m/s. The average speed, 5.0 m/s, is smaller because squaring gives the fastest molecule more weight."
+  },
+  {
+    "id": "pc27-kinetic-energy-few-most-probable",
+    "type": "multiple-choice",
+    "prompt": "Six gas molecules have speeds of 2.0, 3.0, 3.0, 3.0, 7.0 and 12.0 m/s. What is their most probable speed, v_mp?",
+    "choices": [
+      {
+        "text": "3.0 m/s",
+        "correct": true
+      },
+      {
+        "text": "5.0 m/s",
+        "why": "This is the average speed, 30.0 m/s ÷ 6. The most probable speed is the speed that the most molecules have."
+      },
+      {
+        "text": "6.1 m/s",
+        "why": "This is the rms speed, √(224/6) m/s. The most probable speed is the speed that the most molecules have, here 3.0 m/s."
+      },
+      {
+        "text": "12.0 m/s",
+        "why": "This is the fastest molecule, which only one molecule has. Three molecules move at 3.0 m/s, more than at any other speed."
+      }
+    ],
+    "explanation": "The most probable speed is the speed at which the greatest number of molecules is moving. Three of the six move at 3.0 m/s, so v_mp = 3.0 m/s, even though v_avg = 5.0 m/s and v_rms = 6.1 m/s are larger."
+  },
+  {
+    "id": "pc27-kinetic-energy-few-change-fastest",
+    "type": "multiple-choice",
+    "prompt": "In Example 27.1.1, the eight speeds are 1.0, 4.0, 4.0, 6.0, 6.0, 6.0, 8.0 and 10.0 m/s. If the fastest molecule sped up from 10.0 to 12.0 m/s, which of the collective speeds would stay the same?",
+    "choices": [
+      {
+        "text": "The most probable speed, v_mp",
+        "correct": true
+      },
+      {
+        "text": "The average speed, v_avg",
+        "why": "The sum of the speeds grows by 2.0 m/s, so v_avg rises from 5.6 to 5.9 m/s. Only v_mp, set by the three molecules at 6.0 m/s, stays put."
+      },
+      {
+        "text": "The root-mean-square speed, v_rms",
+        "why": "The sum of the squares grows from 305 to 349 m^2/s^2, so v_rms rises from 6.2 to 6.6 m/s. Only v_mp, set by the three molecules at 6.0 m/s, stays put."
+      },
+      {
+        "text": "All three of them would rise",
+        "why": "v_avg and v_rms do rise, but v_mp is the speed that the most molecules have. Three molecules still move at 6.0 m/s, so v_mp stays 6.0 m/s."
+      }
+    ],
+    "explanation": "v_mp depends only on which speed is most common, and three molecules still move at 6.0 m/s. v_avg rises to 47.0/8 = 5.9 m/s and v_rms to √(349/8) = 6.6 m/s, the bigger jump, because squaring gives the fast molecule more weight."
+  },
+  {
+    "id": "pc27-kinetic-energy-table-average-energy",
+    "type": "multiple-choice",
+    "prompt": "Table 27.1.1 lists the kinetic energies k_B T, (4k_B T)/π and (3/2)k_B T beside the most probable, average and root-mean-square speeds. Which of them is the average kinetic energy of the molecules?",
+    "choices": [
+      {
+        "text": "(3/2)k_B T",
+        "correct": true
+      },
+      {
+        "text": "(4k_B T)/π",
+        "why": "This is ½m times the square of the average speed. The average of ½mv^2 uses the mean-square speed, which gives ½m v_rms^2 = (3/2)k_B T."
+      },
+      {
+        "text": "k_B T",
+        "why": "This is ½m times the square of the most probable speed, not an average of the energy. The average kinetic energy is (3/2)k_B T."
+      },
+      {
+        "text": "3k_B T",
+        "why": "This is m v_rms^2, without the factor ½. Half of it, (3/2)k_B T, is the average kinetic energy."
+      }
+    ],
+    "explanation": "Each entry in the column is ½m times the square of the speed beside it. Only ½m v_rms^2 = ½m⟨v^2⟩ is the average kinetic energy, which equals (3/2)k_B T."
+  },
+  {
+    "id": "pc27-kinetic-energy-rms-two-forms",
+    "type": "multiple-choice",
+    "prompt": "Table 27.1.1 gives v_rms = √((3k_B T)/m) for molecules of mass m, while the section also writes v_rms = √(3RT/M). Why do both give the same speed?",
+    "choices": [
+      {
+        "text": "R = N_A k_B and M = N_A m, so N_A cancels",
+        "correct": true
+      },
+      {
+        "text": "R and k_B are the same constant",
+        "why": "They differ by Avogadro's number: R = N_A k_B. The ratio is the same because M = N_A m also carries a factor of N_A."
+      },
+      {
+        "text": "m and M are both molar masses in g/mol",
+        "why": "m is the mass of one molecule in kg, and M is the molar mass in kg/mol. M = N_A m, and the N_A cancels the one in R."
+      },
+      {
+        "text": "They don't; the molar form is N_A times larger",
+        "why": "A speed does not grow with the amount of gas. Both R and M carry a factor N_A, which cancels in RT/M."
+      }
+    ],
+    "explanation": "Multiplying the top and bottom of (3k_B T)/m by N_A turns k_B into R and m into M. So the per-molecule and per-mole forms give the same v_rms."
+  },
+  {
+    "id": "pc27-kinetic-energy-rms-dependence",
+    "type": "multiple-choice",
+    "prompt": "According to v_rms = √(3RT/M), how does the root-mean-square speed of a gas depend on T and M?",
+    "choices": [
+      {
+        "text": "It grows as √T and falls as 1/√M",
+        "correct": true
+      },
+      {
+        "text": "It grows as T and falls as 1/M",
+        "why": "The square root applies to both. v_rms is proportional to √T and to 1/√M, so doubling T raises it by only √2."
+      },
+      {
+        "text": "It grows as √T but doesn't depend on M",
+        "why": "The average kinetic energy doesn't depend on mass, but the speed does. At a given T, heavier molecules move more slowly."
+      },
+      {
+        "text": "It grows as √M and falls as 1/√T",
+        "why": "This is upside down. The rms speed rises with temperature and falls with molar mass."
+      }
+    ],
+    "explanation": "v_rms is proportional to the square root of the Kelvin temperature and inversely proportional to the square root of the molar mass. A gas speeds up when heated, and at a given T heavier molecules are slower."
+  },
+  {
+    "id": "pc27-kinetic-energy-rms-argon",
+    "type": "numeric",
+    "prompt": "Using v_rms = √(3RT/M) with R = 8.3145 J/(K·mol), what is the root-mean-square speed of argon atoms (M = 39.95 g/mol) at 400 K, in m/s?",
+    "answer": 500,
+    "explanation": "With M = 0.03995 kg/mol, v_rms = √((3 × 8.3145 × 400)/0.03995) m/s = √(2.497 × 10^5) m/s = 500 m/s. M must be in kg/mol for the answer to come out in m/s."
+  },
+  {
+    "id": "pc27-kinetic-energy-temperature-for-double-speed",
+    "type": "numeric",
+    "prompt": "A gas has v_rms = 400 m/s at 300 K. Using v_rms = √(3RT/M), at what temperature would its root-mean-square speed be 800 m/s, in K?",
+    "answer": 1200,
+    "unit": "K",
+    "tolerance": 0,
+    "explanation": "v_rms is proportional to √T, so doubling the speed takes 2^2 = 4 times the temperature: 4 × 300 K = 1200 K. Doubling T would raise the speed only by √2, to 566 m/s."
+  },
+  {
+    "id": "pc27-kinetic-energy-ch4-so2-ratio",
+    "type": "numeric",
+    "prompt": "Methane (M = 16.0 g/mol) and sulfur dioxide (M = 64.0 g/mol) are at the same temperature. Using v_rms = √(3RT/M), how many times larger is the root-mean-square speed of CH4 than that of SO2?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "At the same T, v_rms is proportional to 1/√M, so the ratio is √(64.0/16.0) = √4 = 2. The CH4 molecules are 4 times lighter but only twice as fast."
+  },
+  {
+    "id": "pc27-kinetic-energy-grams-mistake",
+    "type": "multiple-choice",
+    "prompt": "Example 27.1.2 finds v_rms = 482 m/s for O2 at 25 °C, using v_rms = √(3RT/M) with M = 0.03200 kg/mol. What would the formula give if M were entered as 32.00, the molar mass in g/mol?",
+    "choices": [
+      {
+        "text": "About 15.2 m/s, too small by √1000",
+        "correct": true
+      },
+      {
+        "text": "About 0.482 m/s, too small by 1000",
+        "why": "M sits under the square root, so an M 1000 times too large makes v_rms only √1000 ≈ 31.6 times too small. That gives 482/31.6 = 15.2 m/s."
+      },
+      {
+        "text": "Still 482 m/s, since the units cancel",
+        "why": "The units don't cancel: R is in J/(K·mol), and 1 J = 1 kg·m^2/s^2, so M must be in kg/mol. Entering g/mol makes M 1000 times too large."
+      },
+      {
+        "text": "About 15,200 m/s, too large by √1000",
+        "why": "M is in the denominator, so a larger M gives a smaller speed. The result is 482/√1000 = 15.2 m/s."
+      }
+    ],
+    "explanation": "Since 1 J = 1 kg·m^2/s^2, v_rms comes out in m/s only if M is in kg/mol. Entering 32.00 makes M 1000 times too large, and because M is under the square root, v_rms comes out √1000 ≈ 31.6 times too small, 15.2 m/s."
+  },
+  {
+    "id": "pc27-kinetic-energy-kelvin-not-celsius",
+    "type": "multiple-choice",
+    "prompt": "Why must the temperature in v_rms = √(3RT/M) be in kelvins rather than degrees Celsius?",
+    "choices": [
+      {
+        "text": "Kinetic energy is proportional to T in kelvins",
+        "correct": true
+      },
+      {
+        "text": "It makes no difference which temperature scale is used",
+        "why": "The two scales give very different results: 25 °C and 298 K are not the same number. At 0 °C, a Celsius value would even give v_rms = 0."
+      },
+      {
+        "text": "Kelvins are needed to put M in kg/mol",
+        "why": "The units of M are a separate matter. T must be absolute because ε = (3/2)k_B T is proportional to the Kelvin temperature."
+      },
+      {
+        "text": "The Celsius scale gives speeds in km/s",
+        "why": "Using Celsius doesn't change the units; it gives wrong numbers. The kinetic energy, and with it v_rms^2, is proportional to the Kelvin temperature."
+      }
+    ],
+    "explanation": "The kinetic theory ties the average kinetic energy to the absolute temperature, ε = (3/2)k_B T, so v_rms^2 is proportional to T in kelvins. That is why Example 27.1.2 first converts 25 °C to 298 K."
+  },
+  {
+    "id": "pc27-kinetic-energy-chlorine-slower",
+    "type": "multiple-choice",
+    "prompt": "Exercise 27.1.2 gives v_rms = 324 m/s for Cl2 at 25 °C, while Example 27.1.2 gives 482 m/s for O2 at the same temperature. Why are the Cl2 molecules slower?",
+    "choices": [
+      {
+        "text": "Cl2 has the larger molar mass",
+        "correct": true
+      },
+      {
+        "text": "Cl2 has a lower average kinetic energy",
+        "why": "At the same temperature both gases have the same average kinetic energy, (3/2)k_B T. Cl2 is slower because its molecules are heavier."
+      },
+      {
+        "text": "Cl2 molecules attract each other more",
+        "why": "The kinetic theory treats both as ideal gases with no attractions. The difference comes from the molar mass in √(3RT/M)."
+      },
+      {
+        "text": "Cl2 has more atoms in each molecule",
+        "why": "Both are diatomic molecules. What matters is the molar mass, 70.90 g/mol for Cl2 against 32.00 g/mol for O2."
+      }
+    ],
+    "explanation": "At the same T, v_rms is proportional to 1/√M, so the ratio of the two speeds is √(70.90/32.00) = 1.49, which matches 482/324. Heavier molecules move more slowly while carrying the same average kinetic energy."
+  },
+  {
+    "id": "pc27-kinetic-energy-elastic-collisions",
+    "type": "multiple-choice",
+    "prompt": "Postulate 4 of the kinetic theory says that collisions of gas molecules are perfectly elastic. What does this mean?",
+    "choices": [
+      {
+        "text": "They don't change the average kinetic energy",
+        "correct": true
+      },
+      {
+        "text": "Every molecule keeps the same speed forever",
+        "why": "In a collision one molecule can speed up while the other slows down. What stays the same is the average kinetic energy."
+      },
+      {
+        "text": "The molecules stick together for a moment",
+        "why": "Molecules that stuck together would lose kinetic energy. In an elastic collision they rebound with no loss of kinetic energy."
+      },
+      {
+        "text": "The molecules never collide with one another",
+        "why": "The postulate says they do collide, both with one another and with the walls. The collisions simply don't change the average kinetic energy."
+      }
+    ],
+    "explanation": "Elastic collisions transfer energy between molecules but do not lose any. So the average kinetic energy of the molecules, and with it the temperature, stays constant."
+  },
+  {
+    "id": "pc27-kinetic-energy-easy-to-compress",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which postulate of the kinetic theory explains why a gas is relatively easy to compress?",
+    "choices": [
+      {
+        "text": "The molecules are far apart compared with their size",
+        "correct": true
+      },
+      {
+        "text": "Collisions between molecules are perfectly elastic",
+        "why": "Elastic collisions keep the average kinetic energy constant. Compression is easy because the molecules are far apart, leaving room to push them closer."
+      },
+      {
+        "text": "The molecules are in constant random motion",
+        "why": "Constant motion explains why a gas fills its container. Compression is easy because there is so much empty space between the molecules."
+      },
+      {
+        "text": "The average kinetic energy depends only on T",
+        "why": "This postulate explains temperature. Compression is easy because the distances between molecules are much greater than their size."
+      }
+    ],
+    "explanation": "Postulate 2 says the distance between gas molecules is much greater than their size, so their own volume is negligible. Compressing the gas simply decreases the distance between the molecules."
+  },
+  {
+    "id": "pc27-kinetic-energy-all-gases-alike",
+    "type": "multiple-choice",
+    "prompt": "Postulates 2 and 3 say that the volumes of gas molecules and the forces between them are negligible. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "All gases behave alike, differing only in mass",
+        "correct": true
+      },
+      {
+        "text": "Gases cannot be compressed at all",
+        "why": "Postulate 2 explains the opposite: a gas is easy to compress, because the molecules are far apart."
+      },
+      {
+        "text": "All gas molecules move at the same speed",
+        "why": "Speeds differ from molecule to molecule, and light molecules move faster on average. What the postulates make alike is the behavior of different gases."
+      },
+      {
+        "text": "Gas molecules never collide with one another",
+        "why": "Postulate 4 says the molecules do collide, elastically. Postulates 2 and 3 only make their volumes and attractions negligible."
+      }
+    ],
+    "explanation": "With volumes and interactions negligible, the chemical nature of the molecules drops out. This is the essence of the ideal gas law, which treats all gases as particles identical in every respect except mass."
+  },
+  {
+    "id": "pc27-kinetic-energy-momentum-to-wall",
+    "type": "multiple-choice",
+    "prompt": "A molecule of mass m with velocity component v_x hits a wall perpendicular to the x axis and bounces straight back elastically. How much momentum does it transfer to the wall?",
+    "choices": [
+      {
+        "text": "2mv_x",
+        "correct": true
+      },
+      {
+        "text": "mv_x",
+        "why": "The molecule doesn't just stop; it leaves with −v_x. Its momentum changes from mv_x to −mv_x, a change of 2mv_x."
+      },
+      {
+        "text": "0",
+        "why": "The speed is the same before and after, but the direction is reversed. Reversing the momentum gives the wall 2mv_x."
+      },
+      {
+        "text": "(1/2)mv_x^2",
+        "why": "This is a kinetic energy, not a momentum, and an elastic bounce doesn't change it. The momentum given to the wall is 2mv_x."
+      }
+    ],
+    "explanation": "The x velocity changes from v_x to −v_x, so Δv_x = −2v_x. The momentum transferred to the wall is −mΔv_x = 2mv_x."
+  },
+  {
+    "id": "pc27-kinetic-energy-collision-frequency-factors",
+    "type": "multiple-choice",
+    "prompt": "The section builds the pressure as P ∝ (2mv_x) × (v_x) × (N/V), where 2mv_x is the momentum each collision gives the wall. What does the rest, v_x × (N/V), describe?",
+    "choices": [
+      {
+        "text": "How often molecules hit the wall",
+        "correct": true
+      },
+      {
+        "text": "The kinetic energy of one molecule",
+        "why": "Kinetic energy is ½mv^2, and the mass is already in the first factor. v_x × (N/V) is the collision frequency with the wall."
+      },
+      {
+        "text": "The force of a single collision",
+        "why": "The force comes from the momentum per collision times how often collisions happen. v_x × (N/V) is how often they happen."
+      },
+      {
+        "text": "The volume taken up by the molecules",
+        "why": "The molecules' own volume is neglected in the kinetic theory. v_x × (N/V) counts how often molecules strike the wall."
+      }
+    ],
+    "explanation": "The collision frequency per unit area of wall grows with the molecular speed and with the number of molecules per unit volume, f ∝ v_x × (N/V). Momentum per collision times collision frequency gives the pressure, P ∝ (N/V)mv_x^2."
+  },
+  {
+    "id": "pc27-kinetic-energy-one-third",
+    "type": "multiple-choice",
+    "prompt": "To go from P = (N/V)m⟨v_x^2⟩ to P = (1/3)(N/V)m⟨v^2⟩, the section sets ⟨v_x^2⟩ = (1/3)⟨v^2⟩. Why one third?",
+    "choices": [
+      {
+        "text": "Motion is shared equally by x, y and z",
+        "correct": true
+      },
+      {
+        "text": "Only one molecule in three moves along x",
+        "why": "Every molecule has some x component of velocity. One third comes from splitting ⟨v^2⟩ equally among the x, y and z directions."
+      },
+      {
+        "text": "Each molecule's v_x is one third of its speed",
+        "why": "The one third applies to averages of squares, not to v_x itself. Since no direction is special, ⟨v_x^2⟩ = ⟨v_y^2⟩ = ⟨v_z^2⟩ = (1/3)⟨v^2⟩."
+      },
+      {
+        "text": "Only one wall in three is struck per second",
+        "why": "Molecules strike all the walls. The one third arises because ⟨v^2⟩ is shared equally among the three directions."
+      }
+    ],
+    "explanation": "Since v^2 = v_x^2 + v_y^2 + v_z^2 for each molecule, ⟨v^2⟩ = ⟨v_x^2⟩ + ⟨v_y^2⟩ + ⟨v_z^2⟩. Nothing makes x special, so each term is one third of ⟨v^2⟩."
+  },
+  {
+    "id": "pc27-kinetic-energy-pv-nkt",
+    "type": "multiple-choice",
+    "prompt": "The section writes PV = (1/3)Nm⟨v^2⟩ = (2/3)Nε and finds ε = (3/2)k_B T. Combining these, what does it get?",
+    "choices": [
+      {
+        "text": "PV = Nk_B T",
+        "correct": true
+      },
+      {
+        "text": "PV = (2/3)Nk_B T",
+        "why": "Substituting ε = (3/2)k_B T gives (2/3)N × (3/2)k_B T. The 2/3 and 3/2 cancel, leaving PV = Nk_B T."
+      },
+      {
+        "text": "PV = (3/2)Nk_B T",
+        "why": "The factor 2/3 in front of Nε must be kept. Then (2/3) × (3/2) = 1, so PV = Nk_B T."
+      },
+      {
+        "text": "PV = Nε",
+        "why": "The factor 2/3 cannot be dropped: PV = (2/3)Nε. With ε = (3/2)k_B T, this becomes PV = Nk_B T."
+      }
+    ],
+    "explanation": "PV = (2/3)N × (3/2)k_B T = Nk_B T. Writing N = nN_A and N_A k_B = R turns this into the ideal gas law, PV = nRT, derived from molecular motion."
+  },
+  {
+    "id": "pc27-kinetic-energy-pv-total-energy",
+    "type": "numeric",
+    "prompt": "The section shows that PV = (2/3)Nε, where Nε is the total translational kinetic energy of the N molecules. A gas has P = 1.00 × 10^5 Pa and V = 2.00 × 10^−3 m^3. What is its total translational kinetic energy, in J?",
+    "answer": 300,
+    "unit": "J",
+    "tolerance": 0,
+    "explanation": "PV = (1.00 × 10^5 Pa)(2.00 × 10^−3 m^3) = 200 J. Rearranging PV = (2/3)Nε gives Nε = (3/2)PV = (3/2) × 200 J = 300 J."
+  },
+  {
+    "id": "pc27-kinetic-energy-why-average-squares",
+    "type": "multiple-choice",
+    "prompt": "Why does the section average the squares of the molecular velocities instead of the velocities themselves?",
+    "choices": [
+      {
+        "text": "Velocities in opposite directions cancel to zero",
+        "correct": true
+      },
+      {
+        "text": "Squaring makes the slow molecules count more",
+        "why": "Squaring makes the fast molecules count more, not the slow ones. The reason for squaring is that signed velocities cancel."
+      },
+      {
+        "text": "Velocities can't be negative, so squares are needed",
+        "why": "Velocities can be negative: molecules move both ways along each axis. That is exactly why their plain average comes out zero."
+      },
+      {
+        "text": "Squared velocities don't change in collisions",
+        "why": "A molecule's speed, and so its squared velocity, changes in collisions. Squares are used because signed velocities would average to zero."
+      }
+    ],
+    "explanation": "In random thermal motion about as many molecules move one way as the opposite way, so the velocities average to zero. Averaging the squares, which are never negative, and taking the root gives the useful v_rms."
+  },
+  {
+    "id": "pc27-kinetic-energy-what-rms-misses",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the root-mean-square speed v_rms not tell us about a gas sample?",
+    "choices": [
+      {
+        "text": "The range and spread of the speeds",
+        "correct": true
+      },
+      {
+        "text": "How fast the molecules move on the whole",
+        "why": "This is what v_rms does tell us: it describes the sample as a whole. It leaves out the range and distribution of the speeds."
+      },
+      {
+        "text": "How the speed depends on temperature",
+        "why": "v_rms = √(3RT/M) shows this directly: it rises as √T. What v_rms can't give is the distribution of speeds."
+      },
+      {
+        "text": "How the speed depends on molar mass",
+        "why": "v_rms = √(3RT/M) shows this too: it falls as 1/√M. The missing information is how many molecules have each speed."
+      }
+    ],
+    "explanation": "A single number such as v_rms describes the sample as a whole but not the range of speeds or how many molecules have each one. For that, the section turns to the Maxwell–Boltzmann distribution."
+  },
+  {
+    "id": "pc27-kinetic-energy-many-molecules",
+    "type": "multiple-choice",
+    "prompt": "We can never predict the velocity of one particular gas molecule. Why can we still describe the speeds in a gas sample?",
+    "choices": [
+      {
+        "text": "With so many molecules, the fractions are predictable",
+        "correct": true
+      },
+      {
+        "text": "All the molecules in a sample move at one speed",
+        "why": "The speeds cover a wide range, from nearly zero to very high. A huge number of molecules makes the fraction in each range predictable."
+      },
+      {
+        "text": "Each molecule keeps one velocity between the walls",
+        "why": "Molecules collide with one another and keep changing velocity. Only the statistics of very many molecules are predictable."
+      },
+      {
+        "text": "The ideal gas law gives each molecule's speed",
+        "why": "PV = nRT says nothing about single molecules. The large number of molecules is what lets us know what fraction have speeds in a given range."
+      }
+    ],
+    "explanation": "Individual molecules are unpredictable, but a sample contains a huge number of them. That lets us know what fraction have kinetic energies, and hence speeds, in any given range."
+  },
+  {
+    "id": "pc27-kinetic-energy-head-on-rebound",
+    "type": "multiple-choice",
+    "prompt": "Two molecules with identical masses, moving in opposite directions at the same speed, collide head-on. According to the section, what happens?",
+    "choices": [
+      {
+        "text": "They stop for an instant, then rebound reversed",
+        "correct": true
+      },
+      {
+        "text": "They stay at rest after the collision",
+        "why": "The collision is elastic, so the kinetic energy is regained. The molecules rebound with their velocities reversed."
+      },
+      {
+        "text": "They stick together and move off as one",
+        "why": "Sticking together would be an inelastic collision. Gas collisions are elastic, so the molecules bounce apart."
+      },
+      {
+        "text": "One stops while the other takes all the energy",
+        "why": "The two molecules are identical and meet symmetrically, so neither is favored. Each rebounds at its original speed in the reverse direction."
+      }
+    ],
+    "explanation": "At the instant of collision both molecules are momentarily motionless. Because the collision is elastic (postulate 4), they then rebound with their velocities reversed, keeping their kinetic energy."
+  }
+]

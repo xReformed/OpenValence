@@ -1,0 +1,599 @@
+[
+  {
+    "id": "pc23-phase-diagram-metastable",
+    "type": "multiple-choice",
+    "prompt": "On a plot of G against some variable X, a system rests in a local minimum of G that is higher than the lowest minimum. What kind of equilibrium is this?",
+    "choices": [
+      {
+        "text": "Metastable equilibrium",
+        "correct": true
+      },
+      {
+        "text": "Stable equilibrium",
+        "why": "A stable equilibrium is the absolute, lowest minimum of G. A minimum that is not the lowest one is metastable."
+      },
+      {
+        "text": "Labile equilibrium",
+        "why": "A labile equilibrium sits on a maximum of G, where any small push sends the system downhill. In a minimum, small pushes are undone."
+      },
+      {
+        "text": "Indifferent equilibrium",
+        "why": "In an indifferent equilibrium G is flat over a range of X. A dip with walls on both sides that is not the lowest is metastable."
+      }
+    ],
+    "explanation": "In a metastable state, as in a stable one, dG = 0 and small fluctuations are pushed back, so the system just wobbles in its G-well. But a lower minimum of G exists elsewhere, so it is not the most stable state."
+  },
+  {
+    "id": "pc23-phase-diagram-labile",
+    "type": "multiple-choice",
+    "prompt": "Why is a labile equilibrium, like a ball balanced on top of a hill of G, seldom or never observed?",
+    "choices": [
+      {
+        "text": "Any small deviation sends it downhill",
+        "correct": true
+      },
+      {
+        "text": "Its G is lower than any nearby state",
+        "why": "That describes a minimum. In a labile equilibrium G is at a maximum, so every nearby state has a lower G and the system rolls away."
+      },
+      {
+        "text": "Its dG is not zero, so it changes at once",
+        "why": "dG = 0 at a labile point, just as at a minimum. The trouble is that G curves downward, so the smallest fluctuation grows instead of dying out."
+      },
+      {
+        "text": "Fluctuations cannot happen at a maximum of G",
+        "why": "Fluctuations happen everywhere, since less likely distributions occur from time to time. At a maximum they push the system downhill instead of being undone."
+      }
+    ],
+    "explanation": "At a labile point dG = 0, but the second derivative of G has the opposite sign to that at a minimum. Like a circus act balancing objects, it needs constant small corrections; left alone, a fluctuation makes it roll down to a more favorable state."
+  },
+  {
+    "id": "pc23-phase-diagram-indifferent",
+    "type": "multiple-choice",
+    "prompt": "What sets an indifferent equilibrium apart from a stable or a metastable one?",
+    "choices": [
+      {
+        "text": "G is flat over a whole range",
+        "correct": true
+      },
+      {
+        "text": "G is at its absolute minimum",
+        "why": "That is the stable equilibrium. In an indifferent one, both the first and the second derivative of G are zero over a range, so G is flat."
+      },
+      {
+        "text": "G is at a maximum",
+        "why": "A maximum of G is a labile equilibrium. An indifferent equilibrium has a flat G, so there is little penalty for large deviations."
+      },
+      {
+        "text": "The first derivative of G is not zero",
+        "why": "The first derivative is zero in every equilibrium, indifferent ones included. What is special is that the second derivative is zero too."
+      }
+    ],
+    "explanation": "In an indifferent equilibrium both dG and the second derivative of G are zero over a range of neighboring values. Large deviations then cost almost no G, so the variable can fluctuate wildly."
+  },
+  {
+    "id": "pc23-phase-diagram-equilibria-share",
+    "type": "multiple-choice",
+    "prompt": "Stable, metastable and indifferent equilibria differ in several ways. What do all three have in common?",
+    "choices": [
+      {
+        "text": "The local slope of G is zero",
+        "correct": true
+      },
+      {
+        "text": "G has its lowest possible value",
+        "why": "Only a stable equilibrium has the absolute minimum of G. Metastable and indifferent states have dG = 0 without being the lowest."
+      },
+      {
+        "text": "The second derivative of G is zero",
+        "why": "That is true only of the indifferent case; stable and metastable minima curve upward. What all three share is a zero first derivative."
+      },
+      {
+        "text": "A spontaneous process is under way",
+        "why": "A spontaneous process runs only where dG is not zero, as at an unstable point. At these equilibria dG = 0, so changes are not spontaneous."
+      }
+    ],
+    "explanation": "In all three, the local derivatives of G with respect to its variables are zero, so changes in those variables are not spontaneous. At any other point on the G curve dG ≠ 0, and a spontaneous process can take place."
+  },
+  {
+    "id": "pc23-phase-diagram-fluctuation-origin",
+    "type": "multiple-choice",
+    "prompt": "Even at equilibrium, the value of G fluctuates a little over time. Why, according to the section?",
+    "choices": [
+      {
+        "text": "Less likely distributions occur by chance",
+        "correct": true
+      },
+      {
+        "text": "Energy leaks in from the surroundings",
+        "why": "The less likely distributions that turn up have the same ⟨E⟩. G fluctuates because the Boltzmann distribution is only the most likely one, not the only one."
+      },
+      {
+        "text": "The Boltzmann distribution is the only one possible",
+        "why": "If it were the only one, there would be nothing to fluctuate. It is just the most likely distribution, and slightly less likely ones occur now and then."
+      },
+      {
+        "text": "The system always sits on a maximum of G",
+        "why": "A system at equilibrium sits in a minimum or a flat stretch of G, not on a maximum. G fluctuates because less likely distributions occur by chance."
+      }
+    ],
+    "explanation": "The Boltzmann distribution has the most realizations W, and so the highest entropy, but it is not the only one possible. A slightly less likely distribution has a little less entropy and the same ⟨E⟩, so G = H − TS is briefly a bit higher."
+  },
+  {
+    "id": "pc23-phase-diagram-nanoparticle",
+    "type": "multiple-choice",
+    "prompt": "For which of these systems are fluctuations in G of the greatest relative importance?",
+    "choices": [
+      {
+        "text": "A nanoparticle",
+        "correct": true
+      },
+      {
+        "text": "A liter of liquid water",
+        "why": "A liter of water is a huge ensemble, so its fluctuations are tiny relative to the whole. Statistical averaging works best on large ensembles."
+      },
+      {
+        "text": "A mole of an ideal gas",
+        "why": "A mole holds about 6 × 10^23 molecules, a large ensemble where averaging smooths fluctuations out. They matter most for small systems."
+      },
+      {
+        "text": "A large crystal of ice",
+        "why": "A large crystal is a large ensemble, where fluctuations are very small compared with the whole. A small system, such as a nanoparticle, feels them much more."
+      }
+    ],
+    "explanation": "Fluctuations are very small for large systems but of greater relative importance for small ones, like a nanoparticle. Statistical averaging works best on large ensembles."
+  },
+  {
+    "id": "pc23-phase-diagram-critical-opalescence",
+    "type": "multiple-choice",
+    "prompt": "Near its critical point, a clear fluid turns milky and scatters light strongly. What causes this critical opalescence?",
+    "choices": [
+      {
+        "text": "Large fluctuations in density",
+        "correct": true
+      },
+      {
+        "text": "Tiny crystals of solid forming",
+        "why": "No solid is involved; at the critical point liquid and vapor become alike. The equilibrium turns indifferent with respect to density, so the density fluctuates strongly."
+      },
+      {
+        "text": "A reaction that makes a colored product",
+        "why": "Nothing reacts; the milkiness is scattered light. The density, and with it the refractive index, fluctuates strongly near the critical point."
+      },
+      {
+        "text": "Air bubbles trapped in the liquid",
+        "why": "The sample need hold only the one substance. The scattering comes from strong density fluctuations, which make the refractive index fluctuate too."
+      }
+    ],
+    "explanation": "Near the critical point the liquid–vapor equilibrium becomes indifferent with respect to density, so large density fluctuations cost little G. The refractive index depends on the density, so it fluctuates too, and the fluid scatters light strongly."
+  },
+  {
+    "id": "pc23-phase-diagram-dashed-metastable",
+    "type": "multiple-choice",
+    "prompt": "A unary phase diagram usually maps only stable equilibria. When metastable equilibria are included, how are they often drawn?",
+    "choices": [
+      {
+        "text": "As dashed lines",
+        "correct": true
+      },
+      {
+        "text": "As solid lines, like the stable ones",
+        "why": "Drawing them like stable ones would hide the difference. Metastable equilibria, when given, are usually set apart as dashed lines."
+      },
+      {
+        "text": "They cannot be shown on a phase diagram",
+        "why": "The section says metastable equilibria are occasionally given. They are then usually drawn as dashed lines."
+      },
+      {
+        "text": "As lines beyond the critical point",
+        "why": "Being metastable has nothing to do with the critical point. Metastable equilibria, when given, are shown with dashed lines."
+      }
+    ],
+    "explanation": "A phase diagram normally shows only the stable equilibria of the substance. Occasionally metastable ones are added too, usually as dashed lines so they are not mistaken for stable ones."
+  },
+  {
+    "id": "pc23-phase-diagram-g-crossing",
+    "type": "multiple-choice",
+    "prompt": "For one substance at a fixed temperature, G of the gas changes strongly (logarithmically) with pressure, while G of the liquid changes only slightly, so the two curves cross at one pressure. What does that pressure represent?",
+    "choices": [
+      {
+        "text": "The liquid's equilibrium vapor pressure",
+        "correct": true
+      },
+      {
+        "text": "The critical pressure of the substance",
+        "why": "The critical point is a single T and P, where liquid and vapor merge. At any temperature below it, the crossing gives the vapor pressure at that temperature."
+      },
+      {
+        "text": "The triple-point pressure",
+        "why": "Solid, liquid and vapor coexist at the triple point, at one temperature only. The gas and liquid curves cross at whatever temperature is chosen, giving its vapor pressure."
+      },
+      {
+        "text": "The pressure at which the liquid freezes",
+        "why": "Freezing is set by where the liquid and solid G lines cross. The gas and liquid curves cross at the equilibrium vapor pressure."
+      }
+    ],
+    "explanation": "At the crossing the liquid and vapor have equal G and coexist, so this is the equilibrium vapor pressure; below it the vapor is stable, above it the liquid. Plotting this pressure against temperature gives the liquid–vapor curve of the phase diagram."
+  },
+  {
+    "id": "pc23-phase-diagram-cylinder-1-bar",
+    "type": "multiple-choice",
+    "prompt": "Only water is put into an evacuated cylinder at 25 °C, where its equilibrium vapor pressure is 23.8 Torr. A piston then presses on it with 1 bar (about 750 Torr). What does the cylinder hold?",
+    "choices": [
+      {
+        "text": "Only liquid water",
+        "correct": true
+      },
+      {
+        "text": "Only water vapor",
+        "why": "Vapor alone is stable only below the equilibrium vapor pressure, here 23.8 Torr. At 1 bar, far above it, the liquid has the lower G."
+      },
+      {
+        "text": "Liquid with 23.8 Torr of vapor above it",
+        "why": "Liquid and vapor coexist only when P = P_eq. With no other gas present and 1 bar on the water, P > P_eq, so all of it is liquid."
+      },
+      {
+        "text": "Ice, since the pressure is high",
+        "why": "A pressure of 1 bar barely affects the melting point, which stays near 0 °C. At 25 °C and P > P_eq, the water is all liquid."
+      }
+    ],
+    "explanation": "With only water present, P > P_eq puts the state in the liquid region of the phase diagram, so only liquid is seen. This is why liquid water, not vapor, is what we see under the 1 bar of our atmosphere."
+  },
+  {
+    "id": "pc23-phase-diagram-air-partial-pressure",
+    "type": "multiple-choice",
+    "prompt": "Liquid water sits under 1 bar of air in a cylinder at 25 °C, where water's equilibrium vapor pressure is 23.8 Torr. What is the pressure of the water vapor in the gas above the liquid?",
+    "choices": [
+      {
+        "text": "23.8 Torr, as a partial pressure",
+        "correct": true
+      },
+      {
+        "text": "1 bar, the total pressure",
+        "why": "1 bar is the total pressure of the air and vapor together. Just enough water evaporates to give its equilibrium vapor pressure, 23.8 Torr, as its partial pressure."
+      },
+      {
+        "text": "Zero, since the air stops evaporation",
+        "why": "Air does not stop evaporation; just enough water evaporates to reach equilibrium. Its partial pressure is then 23.8 Torr."
+      },
+      {
+        "text": "1 bar minus 23.8 Torr",
+        "why": "That would be the partial pressure of the air, not of the water. The water's own partial pressure is its equilibrium vapor pressure, 23.8 Torr."
+      }
+    ],
+    "explanation": "With other gases present, the total pressure (1 bar) must be told apart from the equilibrium vapor pressure, which is now a partial pressure. Evaporation stays at the gas–liquid interface; only if the partial pressure reached the total pressure would the liquid boil."
+  },
+  {
+    "id": "pc23-phase-diagram-cylinder-on-curve",
+    "type": "multiple-choice",
+    "prompt": "Only water is sealed in a cylinder with a piston. Part of it evaporates, so the liquid sits under its own equilibrium vapor pressure, P = P_eq. Where does this state lie on water's P–T phase diagram?",
+    "choices": [
+      {
+        "text": "On the liquid–vapor curve",
+        "correct": true
+      },
+      {
+        "text": "Inside the region of liquid",
+        "why": "The liquid region holds states with P > P_eq, as when the piston squeezes the water until only liquid is left. With P = P_eq, liquid and vapor coexist, which puts the state on the curve."
+      },
+      {
+        "text": "Inside the region of vapor",
+        "why": "The vapor region holds states with P < P_eq, as when the piston is pulled out until all the water has vaporized. Coexisting liquid and vapor lie on the curve."
+      },
+      {
+        "text": "At the triple point",
+        "why": "All three phases coexist only at the triple point. Here only liquid and vapor are present, so the state lies on the liquid–vapor curve."
+      }
+    ],
+    "explanation": "The liquid–vapor curve is the set of equilibrium vapor pressures plotted against T, so any state with liquid and vapor coexisting lies on it. Compressing the cylinder to P > P_eq moves the state into the liquid region; expanding it to P < P_eq moves it into the vapor region."
+  },
+  {
+    "id": "pc23-phase-diagram-melting-line-steep",
+    "type": "multiple-choice",
+    "prompt": "On a unary phase diagram of P against T, the solid–liquid curve is almost vertical. What does this tell you about the substance?",
+    "choices": [
+      {
+        "text": "Its melting point barely changes with pressure",
+        "correct": true
+      },
+      {
+        "text": "Its melting point changes strongly with pressure",
+        "why": "A strong change would give a strongly tilted line. A nearly vertical line means the melting temperature stays almost the same as P changes."
+      },
+      {
+        "text": "Its solid has no vapor pressure at all",
+        "why": "Vapor pressures above solids are small but not negligible, and they belong to the solid–vapor curve anyway. The steep melting line says pressure barely shifts the melting point."
+      },
+      {
+        "text": "It can melt only at a pressure of 1 bar",
+        "why": "The line shows melting over a whole range of pressures. Being nearly vertical, it says the melting temperature barely changes along it."
+      }
+    ],
+    "explanation": "Along an almost vertical line, P can change a lot while T hardly moves, so the melting temperature depends little on pressure. Most substances' lines lean slightly forward and water's slightly back; the Clapeyron equation of a later section explains why."
+  },
+  {
+    "id": "pc23-phase-diagram-triple-point",
+    "type": "multiple-choice",
+    "prompt": "What is special about the triple point of a pure substance?",
+    "choices": [
+      {
+        "text": "All three phases coexist only there",
+        "correct": true
+      },
+      {
+        "text": "The liquid–vapor curve ends there",
+        "why": "The liquid–vapor curve ends at the critical point, where liquid and vapor merge. The triple point is where the three curves meet."
+      },
+      {
+        "text": "It is the melting point at 1 atm",
+        "why": "That is the normal melting point. Water's triple point lies close to it in temperature but at a far lower pressure, 4.58 Torr."
+      },
+      {
+        "text": "It is the sublimation point at 1 bar",
+        "why": "The sublimation point is where the solid–vapor curve crosses the 1 bar line. The triple point is where all three curves meet."
+      }
+    ],
+    "explanation": "The solid–vapor, liquid–vapor and solid–liquid curves meet at the triple point, the only point where all three phases are in equilibrium with each other. For water it lies at 273.16 K and 4.58 Torr."
+  },
+  {
+    "id": "pc23-phase-diagram-co2-sublimes",
+    "type": "multiple-choice",
+    "prompt": "The triple point of CO2 lies above atmospheric pressure. What happens when solid CO2 is warmed in the open air at 1 bar?",
+    "choices": [
+      {
+        "text": "It turns straight into gas",
+        "correct": true
+      },
+      {
+        "text": "It melts, then boils",
+        "why": "Liquid CO2 is stable only above the triple-point pressure, which is above 1 bar. At 1 bar the warming crosses the solid–vapor curve instead."
+      },
+      {
+        "text": "It melts and stays liquid",
+        "why": "A liquid is never observed at 1 bar when the triple point lies above that pressure. Warming takes the solid straight to gas."
+      },
+      {
+        "text": "It stays solid at any temperature",
+        "why": "Warming eventually crosses the solid–vapor curve, at the sublimation point. There the solid turns into gas."
+      }
+    ],
+    "explanation": "If the triple point lies above the 1 bar line, that line meets only the solid–vapor curve, so a liquid is never seen. The crossing is the sublimation point, where the solid 'boils', evaporating from the inside out. Water on Mars, where the pressure is much lower, behaves the same way."
+  },
+  {
+    "id": "pc23-phase-diagram-standard-vs-normal",
+    "type": "multiple-choice",
+    "prompt": "How does the section tell a substance's standard melting point from its normal melting point?",
+    "choices": [
+      {
+        "text": "Standard is at 1 bar; normal is at 1 atm",
+        "correct": true
+      },
+      {
+        "text": "Standard is at 1 atm; normal is at 1 bar",
+        "why": "It is the other way round. The standard melting point is at P = 1 bar, and the normal one at 760 Torr = 1 atm."
+      },
+      {
+        "text": "Standard is at 298 K; normal is at 273 K",
+        "why": "A melting point is itself a temperature, so it is not fixed at 298 K or 273 K. The two differ in pressure: 1 bar for standard, 1 atm for normal."
+      },
+      {
+        "text": "Standard is the triple point; normal is at 1 atm",
+        "why": "The triple point has its own pressure, 4.58 Torr for water. The standard melting point is at 1 bar, only slightly different from the normal one at 1 atm."
+      }
+    ],
+    "explanation": "The standard melting point is the one at P = 1 bar, and the normal melting point the one at 760 Torr = 1 atm, only slightly different. The same naming goes for boiling and sublimation points."
+  },
+  {
+    "id": "pc23-phase-diagram-sealed-ampoule",
+    "type": "multiple-choice",
+    "prompt": "A sample is heated in a hermetically sealed glass ampoule. It melts at almost its usual melting point, but it never shows boiling. Why?",
+    "choices": [
+      {
+        "text": "Its own vapor raises the pressure as T rises",
+        "correct": true
+      },
+      {
+        "text": "Liquids cannot evaporate inside a closed vessel",
+        "why": "Liquid does evaporate in the ampoule, but its vapor has nowhere to go. That pressure rises with temperature, so boiling conditions may never be reached."
+      },
+      {
+        "text": "The glass keeps heat from reaching it",
+        "why": "Heat does get in, since the sample melts. Boiling is missing because the pressure inside is not held at a constant 1 bar but rises with the vapor."
+      },
+      {
+        "text": "Boiling needs a pressure above 1 bar",
+        "why": "Boiling needs the vapor pressure to reach a constant outside pressure, such as the 1 bar of the atmosphere. In the ampoule the pressure is not constant; it grows with T."
+      }
+    ],
+    "explanation": "To see boiling, the sample must be open to the constant 1 bar of the atmosphere. A sealed ampoule builds up its own (autogenous) pressure, which rises with temperature, so boiling conditions may never be reached; melting barely notices, since the melting line is almost vertical."
+  },
+  {
+    "id": "pc23-phase-diagram-dsc-pinhole",
+    "type": "multiple-choice",
+    "prompt": "To see a boiling point in a DSC experiment, the sample pan is perforated with a small hole of known size. Why must the hole not be too big?",
+    "choices": [
+      {
+        "text": "The sample would lose mass too early",
+        "correct": true
+      },
+      {
+        "text": "The pressure would build up above 1 atm",
+        "why": "That is the danger of a hole that is too small, or of no hole. A big hole keeps the pressure at atmospheric but lets the sample escape before boiling."
+      },
+      {
+        "text": "Air would stop the sample from melting",
+        "why": "Air does not stop melting, which barely depends on pressure. A big hole lets the sample evaporate away early, which spoils the measured heat."
+      },
+      {
+        "text": "The melting point would shift a lot",
+        "why": "The melting line is almost vertical, so pressure hardly moves the melting point. The concern is losing sample before it boils."
+      }
+    ],
+    "explanation": "The hole must be big enough to keep the pressure inside from rising above atmospheric, but small enough to avoid premature loss of mass. Losing sample spoils the intensive value, per mole or per gram, of the heat of vaporization."
+  },
+  {
+    "id": "pc23-phase-diagram-critical-point",
+    "type": "multiple-choice",
+    "prompt": "Liquid and vapor are kept in equilibrium while the temperature is raised toward the critical point, where the liquid–vapor curve ends. What happens to the two phases?",
+    "choices": [
+      {
+        "text": "They grow more alike and finally merge",
+        "correct": true
+      },
+      {
+        "text": "The liquid freezes into a solid",
+        "why": "Freezing belongs to the solid–liquid curve, far from the critical point. Along the liquid–vapor curve the two fluid phases resemble each other more and more."
+      },
+      {
+        "text": "They grow more and more different in density",
+        "why": "Their densities get closer, not further apart. At T_c the liquid and vapor coalesce into one phase."
+      },
+      {
+        "text": "A third phase appears beside them",
+        "why": "Three phases coexist only at the triple point. At the critical point the two fluid phases become one, so the curve ends."
+      }
+    ],
+    "explanation": "As T rises along the liquid–vapor curve, the two phases become more and more alike, and at T_c they coalesce, so the curve ends there. Right at that point the equilibrium is indifferent with respect to density."
+  },
+  {
+    "id": "pc23-phase-diagram-molar-proportional",
+    "type": "multiple-choice",
+    "prompt": "Writing the molar volume as V̄ = V/n assumes something about how the volume V depends on the amount n. What?",
+    "choices": [
+      {
+        "text": "V is proportional to n",
+        "correct": true
+      },
+      {
+        "text": "V is independent of n",
+        "why": "Then V/n would fall as n grows and would not be a fixed molar property. Dividing by n works when V is a straight line in n through the origin."
+      },
+      {
+        "text": "V grows faster than n",
+        "why": "If V grew faster than n, V/n would change with the amount. The division assumes V is proportional to n."
+      },
+      {
+        "text": "V levels off at large n",
+        "why": "Then V/n would fall at large n and not be a fixed property. Dividing by n assumes V is a straight line in n through the origin."
+      }
+    ],
+    "explanation": "Dividing an extensive function by n gives a fixed intensive value only if the function is proportional to n, a straight line through the origin. That holds for a pure substance, but in a mixture whose components interact it need not."
+  },
+  {
+    "id": "pc23-phase-diagram-partial-molar-volume",
+    "type": "multiple-choice",
+    "prompt": "Partial molar volumes, such as V̄_1 = (∂V)/(∂n_1) at constant n_2, have been measured for many binary mixtures. According to the section, what do they depend on?",
+    "choices": [
+      {
+        "text": "Composition and T, and a little on P",
+        "correct": true
+      },
+      {
+        "text": "Only the total amount of the mixture",
+        "why": "V̄_1 is a volume per mole, an intensive quantity, so doubling the mixture at the same composition leaves it unchanged. It depends on the composition and the temperature."
+      },
+      {
+        "text": "Nothing; each substance has one value",
+        "why": "A single fixed value would mean the volumes simply add. When the components interact, V̄_1 changes with the mole fraction and with T."
+      },
+      {
+        "text": "Mainly the pressure",
+        "why": "Pressure matters least, since liquids are hard to compress. Partial molar volumes depend mainly on the composition and the temperature."
+      }
+    ],
+    "explanation": "Partial molar volumes are functions of the composition (the mole fraction) and of the temperature, and to a lesser extent of the pressure. They change with composition because, when the components interact, the volume of the mixture need not grow linearly with n_1 or n_2."
+  },
+  {
+    "id": "pc23-phase-diagram-chemical-potential-name",
+    "type": "multiple-choice",
+    "prompt": "What is the partial molar Gibbs energy, ((∂G)/(∂n_i))_(T,P) with all other amounts held fixed, called?",
+    "choices": [
+      {
+        "text": "The chemical potential",
+        "correct": true
+      },
+      {
+        "text": "The partial molar enthalpy",
+        "why": "That would be ((∂H)/(∂n_i))_(T,P), a derivative of H. The partial molar Gibbs energy is called the chemical potential, μ_i."
+      },
+      {
+        "text": "The fugacity coefficient",
+        "why": "The fugacity coefficient φ = f/P measures how far a gas is from ideal. The partial molar Gibbs energy is the chemical potential, μ_i."
+      },
+      {
+        "text": "The Helmholtz free energy",
+        "why": "The Helmholtz energy is A ≡ U − TS, a whole function, not a derivative of G. The partial molar Gibbs energy is the chemical potential."
+      }
+    ],
+    "explanation": "The partial molar Gibbs energy is written μ_i and called the chemical potential. For a pure substance it is simply the molar Gibbs energy, μ = G/n; in a mixture it is a true derivative."
+  },
+  {
+    "id": "pc23-phase-diagram-doubling-sample",
+    "type": "multiple-choice",
+    "prompt": "At fixed T and P, the amount of a pure liquid is doubled. What happens to its Gibbs energy G and its chemical potential μ?",
+    "choices": [
+      {
+        "text": "G doubles; μ stays the same",
+        "correct": true
+      },
+      {
+        "text": "G stays the same; μ doubles",
+        "why": "It is the other way round. G is extensive and grows with the amount, while μ = G/n for a pure phase is intensive."
+      },
+      {
+        "text": "Both G and μ double",
+        "why": "μ = G/n for a pure phase, so doubling both G and n leaves μ unchanged. Only the extensive G doubles."
+      },
+      {
+        "text": "Both G and μ stay the same",
+        "why": "G is extensive: twice the liquid has twice the Gibbs energy. μ = G/n, an intensive quantity, stays the same."
+      }
+    ],
+    "explanation": "G is extensive, so it scales with the amount of substance. For a pure phase μ = G/n, the molar Gibbs energy, which is intensive and does not change when the sample is doubled at the same T and P."
+  },
+  {
+    "id": "pc23-phase-diagram-ice-water-moles",
+    "type": "numeric",
+    "prompt": "A sealed container holds only water: 1.50 mol of ice and 0.50 mol of liquid water. Some ice melts, until there are 1.10 mol of liquid water. Since n_ice + n_water = n_total stays fixed, how many moles of ice remain, in mol? (Give it as a decimal.)",
+    "answer": 0.9,
+    "explanation": "n_total = 1.50 mol + 0.50 mol = 2.00 mol, so n_ice = 2.00 mol − 1.10 mol = 0.90 mol. Put another way, dn_water = +0.60 mol, so dn_ice = −0.60 mol, and 1.50 mol − 0.60 mol = 0.90 mol."
+  },
+  {
+    "id": "pc23-phase-diagram-ice-molar-volume",
+    "type": "numeric",
+    "prompt": "A 2.50 mol block of ice at 0 °C occupies 49.1 cm^3. Using V̄ = V/n, what is the molar volume of ice, in cm^3/mol? (Give it as a decimal.)",
+    "answer": 19.64,
+    "explanation": "V̄ = (49.1 cm^3)/(2.50 mol) = 19.64 cm^3/mol. This intensive value is the same for any amount of ice at the same T and P, because V is proportional to n."
+  },
+  {
+    "id": "pc23-phase-diagram-ethanol-mu",
+    "type": "numeric",
+    "prompt": "For a pure substance in one phase, the chemical potential is μ = G/n. Counting G from the elements as zero, 2.00 mol of pure liquid ethanol at 298 K and 1 bar has G = −349.6 kJ. What is its chemical potential μ, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -174.8,
+    "explanation": "μ = G/n = (−349.6 kJ)/(2.00 mol) = −174.8 kJ/mol. Because μ is intensive, 1 mol or 10 mol of the same liquid at the same T and P has this same μ."
+  },
+  {
+    "id": "pc23-phase-diagram-fluctuation-dg",
+    "type": "numeric",
+    "prompt": "In a sample at 300 K, a chance fluctuation gives a slightly less likely distribution with the same enthalpy but an entropy lower by 2.0 × 10^−22 J/K. Using G = H − TS, by how much does G rise, in J? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 6e-20,
+    "unit": "J",
+    "explanation": "With H unchanged, ΔG = −TΔS = −(300 K)(−2.0 × 10^−22 J/K) = +6.0 × 10^−20 J. G is a little higher than at the minimum, so the system is driven back toward the most likely distribution."
+  },
+  {
+    "id": "pc23-phase-diagram-triple-point-pa",
+    "type": "numeric",
+    "prompt": "Water's triple point lies at a pressure of 4.58 Torr. Using 1 Torr = 133.3 Pa, what is this pressure in Pa? (Give it as a decimal.)",
+    "answer": 610.5,
+    "unit": "Pa",
+    "explanation": "(4.58 Torr)(133.3 Pa/Torr) = 610.5 Pa, well under 1% of 1 bar (10^5 Pa). The triple point lies only 0.01 K above the normal melting point, 273.15 K, but the 1 bar line of our atmosphere passes far above it, so liquid water can be seen on Earth."
+  },
+  {
+    "id": "pc23-phase-diagram-region-phases",
+    "type": "numeric",
+    "prompt": "On a unary phase diagram, the dimension of an object plus the number of phases present there always adds up to 3. How many phases are present at a point inside a two-dimensional region of the diagram?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "2 + 1 = 3, so a region holds just one phase. A one-dimensional curve holds two phases in equilibrium, and the zero-dimensional triple point holds all three."
+  }
+]

@@ -1,0 +1,557 @@
+[
+  {
+    "id": "pc27-speed-distribution-boltzmann-role",
+    "type": "multiple-choice",
+    "prompt": "Maxwell first worked out the distribution of molecular speeds around 1860. According to the section, what did Ludwig Boltzmann add later?",
+    "choices": [
+      {
+        "text": "A sounder theory and simpler mathematics",
+        "correct": true
+      },
+      {
+        "text": "The first measurement of molecular speeds",
+        "why": "The section credits Boltzmann with theory, not measurement. He put Maxwell's relation on a sounder theoretical basis and simplified the mathematics."
+      },
+      {
+        "text": "The laws of electromagnetic radiation",
+        "why": "Those were Maxwell's discovery, the work he is best known for. Boltzmann put the speed distribution on a sounder theoretical basis."
+      },
+      {
+        "text": "Its extension from gases to liquids",
+        "why": "The section says nothing about liquids. Boltzmann gave the gas distribution a sounder theoretical basis and simpler mathematics."
+      }
+    ],
+    "explanation": "Maxwell derived the distribution around 1860, and Boltzmann later put it on a sounder theoretical basis and simplified the mathematics. Boltzmann pioneered the use of statistics in the physics of matter and backed the atomic theory when many still rejected it."
+  },
+  {
+    "id": "pc27-speed-distribution-maxwell-viscosity",
+    "type": "multiple-choice",
+    "prompt": "According to the section, the distribution of speeds that Maxwell proposed in 1860 proved consistent with observed properties of gases. Which property does it name as an example?",
+    "choices": [
+      {
+        "text": "Their viscosities",
+        "correct": true
+      },
+      {
+        "text": "Their critical temperatures",
+        "why": "The section does not mention critical temperatures here. Its example of an observed property that agreed with Maxwell's distribution is the viscosity of gases."
+      },
+      {
+        "text": "Their spectral lines",
+        "why": "Spectral lines come from quantized energy levels, not from molecular speeds. The section names the viscosities of gases."
+      },
+      {
+        "text": "Their boiling points",
+        "why": "Boiling points belong to liquids, not to the motion of gas molecules. The section's example is the viscosity of gases."
+      }
+    ],
+    "explanation": "Maxwell derived his distribution in 1860 by changing from Cartesian to spherical polar coordinates in velocity space. The section notes that it proved consistent with observed properties of gases, such as their viscosities."
+  },
+  {
+    "id": "pc27-speed-distribution-exponential-tail",
+    "type": "multiple-choice",
+    "prompt": "The section splits f(v) = 4πv^2(m/(2πk_B T))^(3/2) exp(−(mv^2)/(2k_B T)) into a normalization constant, a v^2 term and an exponential term. Which part makes f(v) fall toward zero at high speeds?",
+    "choices": [
+      {
+        "text": "The exponential term",
+        "correct": true
+      },
+      {
+        "text": "The v^2 term",
+        "why": "v^2 grows with speed; it is what makes f(v) rise from zero. The exponential falls faster than v^2 grows, so f(v) drops at high speeds."
+      },
+      {
+        "text": "The normalization constant",
+        "why": "The normalization constant doesn't depend on v; it only fixes the area under the curve. The drop at high speeds comes from the exponential."
+      },
+      {
+        "text": "The 4π from summing over directions",
+        "why": "4π is a constant, the same at every speed. The drop at high speeds comes from the exponential, which holds the kinetic energy (1/2)mv^2."
+      }
+    ],
+    "explanation": "The exponential exp(−(mv^2)/(2k_B T)) is a Boltzmann factor: it contains the kinetic energy (1/2)mv^2 divided by k_B T. At high speeds it falls faster than v^2 rises, so f(v) goes to zero."
+  },
+  {
+    "id": "pc27-speed-distribution-speed-from-components",
+    "type": "numeric",
+    "prompt": "A gas molecule has the velocity components v_x = −100 m/s, v_y = 400 m/s and v_z = 800 m/s. Using v = √(v_x^2 + v_y^2 + v_z^2), what is its speed, in m/s?",
+    "answer": 900,
+    "tolerance": 0,
+    "explanation": "v = √(10,000 + 160,000 + 640,000) m/s = √(810,000) m/s = 900 m/s. The negative component counts like a positive one, since only its square enters the speed."
+  },
+  {
+    "id": "pc27-speed-distribution-multiply-components",
+    "type": "multiple-choice",
+    "prompt": "To get the distribution f(v_x, v_y, v_z) of the full velocity, what does the section do with the one-dimensional distributions f(v_x), f(v_y) and f(v_z)?",
+    "choices": [
+      {
+        "text": "Multiplies them together",
+        "correct": true
+      },
+      {
+        "text": "Adds them together",
+        "why": "The three components are independent, and their probabilities multiply. The product of the exponentials gives exp(−(mv^2)/(2k_B T))."
+      },
+      {
+        "text": "Takes their average",
+        "why": "An average would again be a function of one component. The three distributions are multiplied to give f(v_x, v_y, v_z)."
+      },
+      {
+        "text": "Squares each one and adds them",
+        "why": "Squaring and adding is what happens to the components themselves, v^2 = v_x^2 + v_y^2 + v_z^2. The distributions are multiplied."
+      }
+    ],
+    "explanation": "Multiplying the three Gaussians gives f(v_x, v_y, v_z) = (m/(2πk_B T))^(3/2) exp(−(mv^2)/(2k_B T)), because the exponents add to v_x^2 + v_y^2 + v_z^2 = v^2. The result depends only on the speed, not on the direction."
+  },
+  {
+    "id": "pc27-speed-distribution-all-directions",
+    "type": "multiple-choice",
+    "prompt": "The product of the three component distributions, f(v_x, v_y, v_z) = (m/(2πk_B T))^(3/2) exp(−(mv^2)/(2k_B T)), depends on the components only through v^2 = v_x^2 + v_y^2 + v_z^2. What does this say about the directions in which the molecules move?",
+    "choices": [
+      {
+        "text": "All directions are equally likely",
+        "correct": true
+      },
+      {
+        "text": "Most molecules move along the x axis",
+        "why": "No axis is special: f depends only on v^2, which is the same for every direction at a given speed. So all directions are equally likely."
+      },
+      {
+        "text": "Faster molecules favor one direction",
+        "why": "At any given speed, f has the same value in every direction, so even fast molecules show no preferred direction."
+      },
+      {
+        "text": "The favored direction depends on T",
+        "why": "T changes the spread of speeds, not the directions. At any T, f depends only on v^2, so all directions are equally likely."
+      }
+    ],
+    "explanation": "Two velocities with the same speed but different directions have the same v^2, and so the same value of f. Gas molecules move in random directions, which is why the section can sum over all directions with the angles θ and φ."
+  },
+  {
+    "id": "pc27-speed-distribution-polar-coordinates",
+    "type": "multiple-choice",
+    "prompt": "Maxwell changed from the Cartesian coordinates (v_x, v_y, v_z) to spherical polar coordinates (v, θ, φ) in velocity space. What do the new coordinates carry?",
+    "choices": [
+      {
+        "text": "v is the speed; θ and φ give the direction",
+        "correct": true
+      },
+      {
+        "text": "v is v_x; θ and φ are v_y and v_z",
+        "why": "v is the magnitude of the whole velocity, the speed, not one component. The angles θ and φ carry all the directional information."
+      },
+      {
+        "text": "v is a position; θ and φ give the speed",
+        "why": "These coordinates are in velocity space, not ordinary space. v is the speed, and the angles θ and φ give the direction of motion."
+      },
+      {
+        "text": "θ and φ give the speed; v gives the direction",
+        "why": "It is the other way round: v is the magnitude of the velocity, and the angles carry its direction."
+      }
+    ],
+    "explanation": "In velocity space, v = √(v_x^2 + v_y^2 + v_z^2) is the speed and the angles θ and φ carry the direction. Summing over all directions then means integrating over θ and φ, which leaves a distribution of the speed alone."
+  },
+  {
+    "id": "pc27-speed-distribution-four-pi-v2",
+    "type": "multiple-choice",
+    "prompt": "Maxwell's speed distribution is f(v) = 4πv^2(m/(2πk_B T))^(3/2) exp(−(mv^2)/(2k_B T)). Where does the factor 4πv^2 come from?",
+    "choices": [
+      {
+        "text": "Summing over all directions of the velocity",
+        "correct": true
+      },
+      {
+        "text": "Normalizing the one-dimensional distribution",
+        "why": "Normalization gives the constant (m/(2πk_B T))^(3/2). The 4πv^2 comes from integrating v^2 sin θ over θ and φ, that is, over all directions."
+      },
+      {
+        "text": "The kinetic energy (1/2)mv^2 of the molecule",
+        "why": "The kinetic energy sits in the exponential. The 4πv^2 comes from summing over all directions in velocity space."
+      },
+      {
+        "text": "The three components, each adding a v^2",
+        "why": "Three v^2 terms would give 3v^2, not 4πv^2. The factor comes from integrating v^2 sin θ over all the angles θ and φ."
+      }
+    ],
+    "explanation": "The volume element in velocity space is v^2 sin θ dv dθ dφ, and integrating over θ from 0 to π and φ from 0 to 2π gives 4πv^2 dv. This counts all the velocity vectors with speeds between v and v + dv, a number that grows with v."
+  },
+  {
+    "id": "pc27-speed-distribution-peak-fraction",
+    "type": "numeric",
+    "prompt": "For N2 at 300 K, the speed distribution peaks at v_mp = 422 m/s, where f(v) = 1.97 × 10^−3 s/m. Using f(v)Δv, what fraction of the molecules have speeds in the 20 m/s range from 412 m/s to 432 m/s? (Give it as a decimal.)",
+    "answer": 0.0394,
+    "explanation": "f(v)Δv = 1.97 × 10^−3 s/m × 20 m/s = 0.0394, so about 3.9% of the molecules. Near the peak f(v) hardly changes over 20 m/s, so treating it as constant there is a good approximation."
+  },
+  {
+    "id": "pc27-speed-distribution-zero-at-rest",
+    "type": "multiple-choice",
+    "prompt": "What is the value of the Maxwell–Boltzmann speed distribution f(v) at v = 0?",
+    "choices": [
+      {
+        "text": "Zero, because f(v) is proportional to v^2",
+        "correct": true
+      },
+      {
+        "text": "Its maximum, since slow molecules are most common",
+        "why": "The maximum lies at v_mp, well above zero. The v^2 factor makes f(v) zero at v = 0, so almost no molecules are at rest."
+      },
+      {
+        "text": "Small, since a few molecules are always at rest",
+        "why": "f(v) contains the factor v^2, so it is exactly zero at v = 0. Almost no molecules are at rest."
+      },
+      {
+        "text": "Equal to the normalization constant",
+        "why": "The exponential equals 1 at v = 0, but it is multiplied by v^2 = 0. So f(0) = 0, unlike the one-component f(v_x), which peaks at v_x = 0."
+      }
+    ],
+    "explanation": "f(v) = 4πv^2(m/(2πk_B T))^(3/2) exp(−(mv^2)/(2k_B T)) contains the factor v^2, so every speed distribution starts at zero at v = 0. Almost no molecules are at rest, even though v_x = 0 is the most likely value of a single component."
+  },
+  {
+    "id": "pc27-speed-distribution-shape",
+    "type": "multiple-choice",
+    "prompt": "How does the shape of the speed distribution f(v) differ from the Gaussian distribution f(v_x) of one velocity component?",
+    "choices": [
+      {
+        "text": "Zero at v = 0, with a long high-speed tail",
+        "correct": true
+      },
+      {
+        "text": "A symmetric bell centered on v = 0",
+        "why": "That describes f(v_x), which runs from −∞ to ∞. f(v) starts at zero, rises to a peak and trails off slowly toward high speeds."
+      },
+      {
+        "text": "Largest at v = 0, then falling steadily",
+        "why": "The v^2 factor makes f(v) zero at v = 0. It rises to a peak at v_mp before it falls."
+      },
+      {
+        "text": "Peaked, with a long tail toward low speeds",
+        "why": "The steep side is at low speeds, where f(v) rises from zero. The long tail is on the high-speed side."
+      }
+    ],
+    "explanation": "f(v) is zero at v = 0, rises with v^2 to a peak, and then falls off slowly at high speeds, so the curve is slightly asymmetric. f(v_x), by contrast, is a symmetric Gaussian centered on v_x = 0."
+  },
+  {
+    "id": "pc27-speed-distribution-f-dv-meaning",
+    "type": "multiple-choice",
+    "prompt": "For the speed distribution f(v), what does the product f(v)dv give?",
+    "choices": [
+      {
+        "text": "The fraction with speeds between v and v + dv",
+        "correct": true
+      },
+      {
+        "text": "The number of molecules moving at exactly speed v",
+        "why": "f(v)dv is a fraction, and it covers a narrow range of speeds, dv wide. Multiplying it by the total number of molecules gives a number."
+      },
+      {
+        "text": "The average speed of all the molecules",
+        "why": "The average speed is ⟨v⟩ = ∫_0^(∞) v f(v)dv, a sum over all speeds. f(v)dv is the fraction in one narrow range."
+      },
+      {
+        "text": "The kinetic energy of a molecule at speed v",
+        "why": "The kinetic energy is (1/2)mv^2. f(v)dv is the fraction of molecules whose speeds fall between v and v + dv."
+      }
+    ],
+    "explanation": "f(v)dv is the fraction of molecules with speeds in the narrow range from v to v + dv. Adding these fractions over all speeds gives the normalization condition, ∫_0^(∞) f(v)dv = 1."
+  },
+  {
+    "id": "pc27-speed-distribution-heating-shape",
+    "type": "multiple-choice",
+    "prompt": "A gas is heated. How does its Maxwell–Boltzmann distribution of molecular speeds change?",
+    "choices": [
+      {
+        "text": "It shifts to higher speeds and spreads out",
+        "correct": true
+      },
+      {
+        "text": "It shifts to higher speeds and becomes narrower",
+        "why": "At higher T more high-speed states become accessible, so the curve broadens, not narrows, as its peak moves up."
+      },
+      {
+        "text": "Its peak stays put but grows taller",
+        "why": "The peak moves to higher speeds and gets lower, since the area under the curve stays the same while the curve spreads out."
+      },
+      {
+        "text": "It shifts to lower speeds and spreads out",
+        "why": "Molecules have more energy at higher T, so they move faster. The curve shifts to higher speeds as it spreads."
+      }
+    ],
+    "explanation": "At higher temperatures a larger fraction of molecules have high kinetic energies, so the distribution moves to higher speeds, spreads out and flattens. At low temperatures the speeds are lower and their range is narrower."
+  },
+  {
+    "id": "pc27-speed-distribution-hydrogen-25k",
+    "type": "multiple-choice",
+    "prompt": "The section compares the speed distributions of H2 at 25 K, 50 K and 100 K. Which temperature gives the curve with the tallest, narrowest peak?",
+    "choices": [
+      {
+        "text": "25 K",
+        "correct": true
+      },
+      {
+        "text": "100 K",
+        "why": "At 100 K the molecules have the most energy, so the curve is the broadest and flattest. The coldest gas, at 25 K, has the narrowest peak."
+      },
+      {
+        "text": "50 K",
+        "why": "50 K is in between: its curve is broader than at 25 K and narrower than at 100 K."
+      },
+      {
+        "text": "All three have the same peak height",
+        "why": "It is the area under each curve that is the same, not the peak height. A narrower curve must be taller, and the narrowest is at 25 K."
+      }
+    ],
+    "explanation": "At 25 K the H2 molecules have the least energy, so their speeds cluster in the narrowest range. Since the area under each curve is the same, the narrowest curve also has the tallest peak."
+  },
+  {
+    "id": "pc27-speed-distribution-xenon-narrow",
+    "type": "multiple-choice",
+    "prompt": "The section shows speed distributions at 800 K for He, Ar and Xe. Which gas has the narrowest distribution, peaked at the lowest speed?",
+    "choices": [
+      {
+        "text": "Xe",
+        "correct": true
+      },
+      {
+        "text": "He",
+        "why": "Helium is the lightest, so its distribution is the most spread out and reaches the highest speeds. The heaviest gas, Xe, has the narrowest curve."
+      },
+      {
+        "text": "Ar",
+        "why": "Argon lies between He and Xe in mass, so its curve is in between too. Xe, the heaviest, has the narrowest."
+      },
+      {
+        "text": "All three are the same at 800 K",
+        "why": "The same T gives the same average kinetic energy, not the same speeds. Heavier atoms move more slowly, so Xe's curve is the narrowest."
+      }
+    ],
+    "explanation": "All three gases have the same average kinetic energy at 800 K, so the heaviest atoms move the slowest. Xe has the narrowest curve, at the lowest speeds, and He, the lightest, has the most spread-out one."
+  },
+  {
+    "id": "pc27-speed-distribution-helium-vs-argon",
+    "type": "multiple-choice",
+    "prompt": "Which has the more spread-out speed distribution: helium (M = 4.0 g/mol) at 300 K or argon (M = 40 g/mol) at 500 K?",
+    "choices": [
+      {
+        "text": "Helium at 300 K",
+        "correct": true
+      },
+      {
+        "text": "Argon at 500 K",
+        "why": "The higher temperature helps argon, but its atoms are ten times heavier. T/M is 75 for helium and only 12.5 for argon."
+      },
+      {
+        "text": "They are equally spread out",
+        "why": "The spread depends on T/M, which is 300/4.0 = 75 for helium and 500/40 = 12.5 for argon. Helium's distribution is wider."
+      },
+      {
+        "text": "Argon, since spread depends only on T",
+        "why": "Mass matters too: every characteristic speed goes as √(T/M). T/M is 75 for helium and only 12.5 for argon."
+      }
+    ],
+    "explanation": "Every characteristic speed goes as √(T/M), and T/M is 300/4.0 = 75 for helium against 500/40 = 12.5 for argon. Helium at 300 K therefore has the higher speeds and the broader distribution, as the answer to the section's Problem 5 says."
+  },
+  {
+    "id": "pc27-speed-distribution-helium-xenon-ratio",
+    "type": "numeric",
+    "prompt": "The section compares the speed distributions of He (M = 4.00 g/mol) and Xe (M = 131.3 g/mol) at 800 K. Using v_mp = √(2RT/M), what is the ratio of the most probable speed of He to that of Xe? (Give it as a decimal.)",
+    "answer": 5.73,
+    "explanation": "At the same T, v_mp is proportional to 1/√M, so the ratio is √(131.3/4.00) = √32.8 = 5.73. That is why the He curve at 800 K spreads to far higher speeds than the narrow Xe curve."
+  },
+  {
+    "id": "pc27-speed-distribution-average-integral",
+    "type": "multiple-choice",
+    "prompt": "How does the section get the average speed ⟨v⟩ from the speed distribution f(v)?",
+    "choices": [
+      {
+        "text": "⟨v⟩ = ∫_0^(∞) v f(v)dv",
+        "correct": true
+      },
+      {
+        "text": "⟨v⟩ = ∫_0^(∞) f(v)dv",
+        "why": "This integral is the total fraction of molecules, which is 1. Each speed must be weighted by its fraction: ⟨v⟩ = ∫_0^(∞) v f(v)dv."
+      },
+      {
+        "text": "⟨v⟩ is the speed at the peak of f(v)",
+        "why": "The peak is the most probable speed, v_mp, which is smaller than ⟨v⟩. The average weights every speed by its fraction, ∫_0^(∞) v f(v)dv."
+      },
+      {
+        "text": "⟨v⟩ = √(∫_0^(∞) v^2 f(v)dv)",
+        "why": "That is the root-mean-square speed, v_rms, the square root of ⟨v^2⟩. The average speed is ∫_0^(∞) v f(v)dv."
+      }
+    ],
+    "explanation": "The average weights each speed by the fraction of molecules that have it and sums over all speeds: ⟨v⟩ = ∫_0^(∞) v f(v)dv. A table integral then gives ⟨v⟩ = ((8k_B T)/(πm))^(1/2), or √((8RT)/(πM)) with molar quantities."
+  },
+  {
+    "id": "pc27-speed-distribution-mean-formula",
+    "type": "multiple-choice",
+    "prompt": "Which expression does the section derive for the average speed ⟨v⟩ of a gas with molar mass M?",
+    "choices": [
+      {
+        "text": "√((8RT)/(πM))",
+        "correct": true
+      },
+      {
+        "text": "√(3RT/M)",
+        "why": "That is the root-mean-square speed, √(⟨v^2⟩). The average speed has the smaller factor 8/π ≈ 2.55 in place of 3."
+      },
+      {
+        "text": "√(2RT/M)",
+        "why": "That is the most probable speed, at the peak of f(v). The average speed is larger: √((8RT)/(πM))."
+      },
+      {
+        "text": "√((πRT)/(8M))",
+        "why": "The factor is upside down: π/8 ≈ 0.39 would put ⟨v⟩ far below v_mp. The average speed is √((8RT)/(πM))."
+      }
+    ],
+    "explanation": "Averaging v over the Maxwell distribution gives ⟨v⟩ = ((8k_B T)/(πm))^(1/2), or √((8RT)/(πM)) with molar quantities. Its factor 8/π ≈ 2.55 lies between the 2 of v_mp and the 3 of v_rms."
+  },
+  {
+    "id": "pc27-speed-distribution-methane-mean",
+    "type": "numeric",
+    "prompt": "Using ⟨v⟩ = √((8RT)/(πM)), with R = 8.314 J/(mol·K), what is the average speed of CH4 molecules (M = 0.0160 kg/mol) at 400 K, in m/s? (Give it as a decimal.)",
+    "answer": 727.5,
+    "explanation": "⟨v⟩ = √((8 × 8.314 × 400)/(π × 0.0160)) m/s = √(26,605/0.05027) m/s = √(529,300) m/s = 727.5 m/s. M must be in kg/mol so that J/kg works out to m^2/s^2."
+  },
+  {
+    "id": "pc27-speed-distribution-mean-square",
+    "type": "multiple-choice",
+    "prompt": "Example 27.3.1 averages the squared speed over the Maxwell distribution, ⟨v^2⟩ = ∫_0^(∞) v^2 f(v)dv. What result does it find?",
+    "choices": [
+      {
+        "text": "⟨v^2⟩ = (3k_B T)/m",
+        "correct": true
+      },
+      {
+        "text": "⟨v^2⟩ = (8k_B T)/(πm)",
+        "why": "(8k_B T)/(πm) is ⟨v⟩^2, the square of the average speed. The average of the squared speed is larger: (3k_B T)/m."
+      },
+      {
+        "text": "⟨v^2⟩ = (k_B T)/m",
+        "why": "(k_B T)/m is ⟨v_x^2⟩, for one component only. All three components together give ⟨v^2⟩ = (3k_B T)/m."
+      },
+      {
+        "text": "⟨v^2⟩ = (2k_B T)/m",
+        "why": "(2k_B T)/m is v_mp^2, the square of the most probable speed. The example finds ⟨v^2⟩ = (3k_B T)/m."
+      }
+    ],
+    "explanation": "Using a table integral, the example finds ⟨v^2⟩ = (3k_B T)/m. Its square root is the root-mean-square speed, v_rms = ((3k_B T)/m)^(1/2), or √(3RT/M) with molar quantities."
+  },
+  {
+    "id": "pc27-speed-distribution-mp-derivative",
+    "type": "multiple-choice",
+    "prompt": "How does the section find the most probable speed v_mp from f(v)?",
+    "choices": [
+      {
+        "text": "It sets df(v)/dv = 0 to find the peak",
+        "correct": true
+      },
+      {
+        "text": "It sets f(v) = 0 and solves for v",
+        "why": "f(v) = 0 at v = 0 and far out in the tail, not at the peak. The peak is where the slope is zero, df(v)/dv = 0."
+      },
+      {
+        "text": "It averages v over the distribution",
+        "why": "Averaging gives ⟨v⟩ = ∫_0^(∞) v f(v)dv, the mean speed. v_mp is the top of the curve, where df(v)/dv = 0."
+      },
+      {
+        "text": "It finds where half the molecules move faster",
+        "why": "That would be a median speed, which the section doesn't use. v_mp is the peak of f(v), where df(v)/dv = 0."
+      }
+    ],
+    "explanation": "v_mp is the speed at the top of the distribution curve: more molecules have speeds near it than near any other speed. Setting the slope df(v)/dv = 0 locates this maximum and gives v_mp = √(2RT/M)."
+  },
+  {
+    "id": "pc27-speed-distribution-xenon-mp",
+    "type": "numeric",
+    "prompt": "The section's Problem 3 asks for the speeds of xenon at 298 K. Using v_mp = √(2RT/M), with R = 8.314 J/(mol·K) and M = 0.1313 kg/mol, what is the most probable speed of xenon atoms, in m/s? (Give it as a decimal.)",
+    "answer": 194.3,
+    "explanation": "v_mp = √(2 × 8.314 × 298/0.1313) m/s = √(37,740) m/s = 194.3 m/s, matching the book's 194.27 m/s. The book's other two answers, ⟨v⟩ = 219.2 m/s and v_rms = 237.9 m/s, are larger, as v_mp < ⟨v⟩ < v_rms requires."
+  },
+  {
+    "id": "pc27-speed-distribution-order",
+    "type": "multiple-choice",
+    "prompt": "For a gas that follows the Maxwell–Boltzmann distribution, how do the most probable speed v_mp, the average speed ⟨v⟩ and the root-mean-square speed v_rms compare?",
+    "choices": [
+      {
+        "text": "v_mp < ⟨v⟩ < v_rms",
+        "correct": true
+      },
+      {
+        "text": "⟨v⟩ < v_mp < v_rms",
+        "why": "The most probable speed sits at the peak, and the high-speed tail pulls the average above it. The order is v_mp < ⟨v⟩ < v_rms."
+      },
+      {
+        "text": "v_rms < ⟨v⟩ < v_mp",
+        "why": "This is reversed. The factors 2, 8/π ≈ 2.55 and 3 under the square roots give v_mp < ⟨v⟩ < v_rms."
+      },
+      {
+        "text": "v_mp = ⟨v⟩ = v_rms",
+        "why": "They would be equal only if every molecule had the same speed. With a spread of speeds, v_mp < ⟨v⟩ < v_rms."
+      }
+    ],
+    "explanation": "Under the square roots, v_mp = √(2RT/M), ⟨v⟩ = √((8RT)/(πM)) and v_rms = √(3RT/M) carry the factors 2, 8/π ≈ 2.55 and 3. On the f(v) curve the peak comes first, then the average speed, then the root-mean-square speed."
+  },
+  {
+    "id": "pc27-speed-distribution-mean-above-peak",
+    "type": "multiple-choice",
+    "prompt": "Why is the average speed ⟨v⟩ higher than the most probable speed v_mp?",
+    "choices": [
+      {
+        "text": "The fast tail pulls the average up",
+        "correct": true
+      },
+      {
+        "text": "Most molecules move at ⟨v⟩, not v_mp",
+        "why": "More molecules have speeds near v_mp, the peak, than near any other speed. ⟨v⟩ is pulled above it by the few very fast molecules in the tail."
+      },
+      {
+        "text": "⟨v⟩ refers to a higher temperature",
+        "why": "Both speeds describe the same gas at the same T. ⟨v⟩ is higher because the long high-speed tail pulls the average up."
+      },
+      {
+        "text": "v_mp counts only motion along x",
+        "why": "v_mp is the peak of the full speed distribution, not of one component. ⟨v⟩ lies above it because the curve has a long tail toward high speeds."
+      }
+    ],
+    "explanation": "f(v) is asymmetric: it rises steeply from zero and falls off slowly at high speeds. The few very fast molecules in this tail pull the average above the peak, so ⟨v⟩ > v_mp."
+  },
+  {
+    "id": "pc27-speed-distribution-rms-above-mean",
+    "type": "multiple-choice",
+    "prompt": "Why is the root-mean-square speed v_rms = √(⟨v^2⟩) larger than the average speed ⟨v⟩?",
+    "choices": [
+      {
+        "text": "Squaring gives fast molecules more weight",
+        "correct": true
+      },
+      {
+        "text": "v_rms uses three components, ⟨v⟩ only one",
+        "why": "Both are averages over the full speed v. v_rms is larger because squaring weights the fast molecules more heavily before the root is taken."
+      },
+      {
+        "text": "v_rms is the speed at the peak of f(v)",
+        "why": "The peak is v_mp, the smallest of the three speeds. v_rms is larger than ⟨v⟩ because squaring favors the fast molecules."
+      },
+      {
+        "text": "⟨v⟩ leaves out the slowest molecules",
+        "why": "⟨v⟩ averages over every speed from 0 to ∞. v_rms is larger because squaring before averaging weights the fast molecules more."
+      }
+    ],
+    "explanation": "Averaging v^2 counts a molecule at twice the speed four times as heavily, so fast molecules raise ⟨v^2⟩ more than they raise ⟨v⟩. That is why ⟨v^2⟩ = (3k_B T)/m exceeds ⟨v⟩^2 = (8k_B T)/(πm) ≈ (2.55k_B T)/m, and v_rms > ⟨v⟩."
+  },
+  {
+    "id": "pc27-speed-distribution-rms-mp-ratio",
+    "type": "numeric",
+    "prompt": "Using v_mp = √(2RT/M) and v_rms = √(3RT/M), what is the ratio v_rms/v_mp, which is the same for every gas at every temperature? (Give it as a decimal.)",
+    "answer": 1.225,
+    "explanation": "v_rms/v_mp = √(3RT/M)/√(2RT/M) = √(3/2) = 1.225, since R, T and M cancel. So v_rms is about 22% above v_mp for any gas that follows the Maxwell–Boltzmann distribution."
+  },
+  {
+    "id": "pc27-speed-distribution-argon-count",
+    "type": "numeric",
+    "prompt": "For argon at 500 K, the section's Problem 1 finds f(v) = 1.41 × 10^−3 s/m at v = 305 m/s, so a fraction 1.41 × 10^−3 of the molecules have speeds in a 1 m/s range at 305 m/s. With N_A = 6.022 × 10^23 mol^−1, how many molecules is that in 0.46 mol of argon? (Type it in scientific notation, like 2.5e20.)",
+    "answer": 3.91e+20,
+    "tolerance": 0.01,
+    "explanation": "The sample holds 0.46 × 6.022 × 10^23 = 2.770 × 10^23 molecules, and 1.41 × 10^−3 of them is 3.91 × 10^20 molecules. The book's answer to Problem 2, 3.92 × 10^20, comes from the unrounded fraction."
+  }
+]

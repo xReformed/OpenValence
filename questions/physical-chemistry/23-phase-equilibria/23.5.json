@@ -1,0 +1,162 @@
+[
+  {
+    "id": "pc23-partition-mu-helmholtz-lnq",
+    "type": "multiple-choice",
+    "prompt": "Using U and S written in terms of the partition function Q, the section evaluates A = U − TS. Which expression for the Helmholtz energy does it get?",
+    "choices": [
+      {
+        "text": "A = −k_B T ln Q",
+        "correct": true
+      },
+      {
+        "text": "A = k_B T ln Q",
+        "why": "The sign is negative: more accessible states, a larger Q, lower the Helmholtz energy. A = −k_B T ln Q."
+      },
+      {
+        "text": "A = −k_B ln Q",
+        "why": "−k_B ln Q has the units of entropy, J/K, but A is an energy. The factor T is needed: A = −k_B T ln Q."
+      },
+      {
+        "text": "A = −k_B T^2((∂ln Q)/(∂T))",
+        "why": "That is −U, but the derivative terms of U and TS cancel in U − TS. Only −k_B T ln Q is left."
+      }
+    ],
+    "explanation": "Subtracting TS from U removes the derivative terms and leaves A = −k_B T ln Q. So the Helmholtz energy follows directly from the partition function."
+  },
+  {
+    "id": "pc23-partition-mu-terms-cancel",
+    "type": "multiple-choice",
+    "prompt": "With U = k_B T^2((∂ln Q)/(∂T))_(n,V) and S = k_B T((∂ln Q)/(∂T))_(n,V) + k_B ln Q, the section forms A = U − TS. What happens to the terms containing (∂ln Q)/(∂T)?",
+    "choices": [
+      {
+        "text": "They cancel, so A depends only on ln Q",
+        "correct": true
+      },
+      {
+        "text": "They add, so A = 2k_B T^2((∂ln Q)/(∂T)) − k_B T ln Q",
+        "why": "TS contains +k_B T^2((∂ln Q)/(∂T)), and it is subtracted from U, which has the same term. They cancel, leaving A = −k_B T ln Q."
+      },
+      {
+        "text": "They cancel, and so does ln Q, giving A = 0",
+        "why": "Only the derivative terms match. The k_B T ln Q from TS has nothing to cancel against, so A = −k_B T ln Q."
+      },
+      {
+        "text": "The ln Q terms cancel, leaving only the derivative",
+        "why": "U contains no ln Q term, so nothing cancels the k_B T ln Q in TS. It is the derivative terms that cancel."
+      }
+    ],
+    "explanation": "TS = k_B T^2((∂ln Q)/(∂T))_(n,V) + k_B T ln Q, and its first part is exactly U. So U − TS = −k_B T ln Q."
+  },
+  {
+    "id": "pc23-partition-mu-dn-term",
+    "type": "multiple-choice",
+    "prompt": "The section writes the total differential dA = ((∂A)/(∂T))_(n,V) dT + ((∂A)/(∂V))_(n,T) dV + ((∂A)/(∂n))_(V,T) dn. What does the last term account for?",
+    "choices": [
+      {
+        "text": "A change in the amount n",
+        "correct": true
+      },
+      {
+        "text": "A change in the pressure",
+        "why": "Pressure is not one of the variables of A here; it shows up as −P, the coefficient of dV. The dn term accounts for a change in the amount n."
+      },
+      {
+        "text": "A change in volume at fixed n",
+        "why": "That is the middle term, ((∂A)/(∂V))_(n,T) dV. The last term covers adding or removing substance, dn."
+      },
+      {
+        "text": "Work done by the system",
+        "why": "P–V work enters through the dV term. The dn term covers a change in the amount of substance at fixed V and T."
+      }
+    ],
+    "explanation": "A depends on T, V and n, so dA has one term for each. When material can enter or leave, ((∂A)/(∂n))_(V,T) dn adds the change in A per mole times the moles added."
+  },
+  {
+    "id": "pc23-partition-mu-dn-carries-over",
+    "type": "multiple-choice",
+    "prompt": "The section turns dA = −S dT − P dV + ((∂A)/(∂n))_(V,T) dn into dG using G = A + PV, so dG = dA + d(PV). What happens to the dn term on the way?",
+    "choices": [
+      {
+        "text": "It carries over unchanged",
+        "correct": true
+      },
+      {
+        "text": "It cancels against P dV",
+        "why": "−P dV cancels against the +P dV in d(PV) = P dV + V dP. The dn term is untouched."
+      },
+      {
+        "text": "It becomes ((∂A)/(∂n))_(T,P) dn",
+        "why": "Adding d(PV) doesn't change the coefficient of dn. It stays ((∂A)/(∂n))_(V,T), which is why that derivative turns out to equal μ."
+      },
+      {
+        "text": "It is multiplied by PV",
+        "why": "d(PV) = P dV + V dP is added, not multiplied in. The dn term passes through unchanged."
+      }
+    ],
+    "explanation": "Since d(PV) = P dV + V dP has no dn in it, dG = −S dT + V dP + ((∂A)/(∂n))_(V,T) dn. Matching this with dG = −S dT + V dP + μ dn shows μ = ((∂A)/(∂n))_(V,T)."
+  },
+  {
+    "id": "pc23-partition-mu-which-a-derivative",
+    "type": "multiple-choice",
+    "prompt": "Which derivative of the Helmholtz energy A equals the chemical potential μ?",
+    "choices": [
+      {
+        "text": "((∂A)/(∂n))_(V,T)",
+        "correct": true
+      },
+      {
+        "text": "((∂A)/(∂n))_(T,P)",
+        "why": "The natural variables of A are V and T, so those are held fixed. Holding T and P fixed is the rule for G: μ = ((∂G)/(∂n))_(T,P)."
+      },
+      {
+        "text": "((∂A)/(∂V))_(n,T)",
+        "why": "This derivative is −P, the coefficient of dV in dA. μ is the coefficient of dn: ((∂A)/(∂n))_(V,T)."
+      },
+      {
+        "text": "((∂A)/(∂T))_(n,V)",
+        "why": "This derivative is −S, the coefficient of dT in dA. μ multiplies dn, so it is ((∂A)/(∂n))_(V,T)."
+      }
+    ],
+    "explanation": "Comparing the two forms of dG shows μ = ((∂G)/(∂n))_(T,P) = ((∂A)/(∂n))_(V,T). Each derivative holds its own function's natural variables fixed: T and P for G, V and T for A."
+  },
+  {
+    "id": "pc23-partition-mu-from-lnq",
+    "type": "multiple-choice",
+    "prompt": "Putting A = −k_B T ln Q into μ = ((∂A)/(∂n))_(V,T), what does the section get?",
+    "choices": [
+      {
+        "text": "μ = −k_B T((∂ln Q)/(∂n))_(V,T)",
+        "correct": true
+      },
+      {
+        "text": "μ = k_B T((∂ln Q)/(∂n))_(V,T)",
+        "why": "The minus sign of A = −k_B T ln Q carries through. μ = −k_B T((∂ln Q)/(∂n))_(V,T)."
+      },
+      {
+        "text": "μ = −k_B T^2((∂ln Q)/(∂n))_(V,T)",
+        "why": "T^2 belongs to the energy, U = k_B T^2((∂ln Q)/(∂T)). With T held fixed, differentiating −k_B T ln Q with respect to n just keeps the factor −k_B T."
+      },
+      {
+        "text": "μ = −k_B T((∂ln Q)/(∂T))_(n,V)",
+        "why": "μ is a derivative with respect to the amount n, not the temperature. At fixed V and T, μ = −k_B T((∂ln Q)/(∂n))_(V,T)."
+      }
+    ],
+    "explanation": "T is held constant, so −k_B T comes outside the derivative: μ = −k_B T((∂ln Q)/(∂n))_(V,T). The chemical potential can then be found from the partition function."
+  },
+  {
+    "id": "pc23-partition-mu-helmholtz-value",
+    "type": "numeric",
+    "prompt": "A gas sample at T = 300 K has ln Q = 1.20 × 10^25. Using A = −k_B T ln Q with k_B = 1.381 × 10^−23 J/K, what is its Helmholtz energy A, in kJ, including its sign? (Give it as a decimal.)",
+    "answer": -49.7,
+    "unit": "kJ",
+    "explanation": "A = −(1.381 × 10^−23 J/K)(300 K)(1.20 × 10^25) = −4.97 × 10^4 J = −49.7 kJ. A larger ln Q, meaning more accessible states, gives a lower Helmholtz energy."
+  },
+  {
+    "id": "pc23-partition-mu-from-delta-a",
+    "type": "numeric",
+    "prompt": "Adding 0.0100 mol of a substance to a system at constant V and T lowers its Helmholtz energy by 0.450 kJ. Using μ = ((∂A)/(∂n))_(V,T) ≈ ΔA/Δn, what is μ, in kJ/mol, including its sign?",
+    "answer": -45,
+    "tolerance": 0,
+    "explanation": "μ ≈ ΔA/Δn = (−0.450 kJ)/(0.0100 mol) = −45.0 kJ/mol. Because V and T were held fixed, this ratio estimates ((∂A)/(∂n))_(V,T), which is the chemical potential."
+  }
+]

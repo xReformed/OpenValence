@@ -1,0 +1,470 @@
+[
+  {
+    "id": "pc25-debye-huckel-why-theory",
+    "type": "multiple-choice",
+    "prompt": "Why is it so desirable to calculate mean ionic activity coefficients γ_(±) from theory, as Debye and Hückel did?",
+    "choices": [
+      {
+        "text": "Measuring every system is very tedious",
+        "correct": true
+      },
+      {
+        "text": "They cannot be measured at all",
+        "why": "γ_(±) can be measured, and many values have been tabulated; it is single-ion coefficients that can't. Measuring γ_(±) for every solute–solvent pair is just a daunting task."
+      },
+      {
+        "text": "Measured values are always exactly 1",
+        "why": "Electrolyte solutions are nonideal, so γ_(±) differs from 1 even when dilute. The trouble is that measuring it for every combination is a huge task."
+      },
+      {
+        "text": "Theory works best at high concentrations",
+        "why": "Debye–Hückel theory is the opposite: it works only for sufficiently dilute solutions. It is valuable because measuring every γ_(±) is so tedious."
+      }
+    ],
+    "explanation": "Measuring γ_(±) for every possible solute–solvent combination is a daunting task, even though much has been tabulated. Debye and Hückel derived an expression that predicts γ_(±) for sufficiently dilute solutions."
+  },
+  {
+    "id": "pc25-debye-huckel-atmosphere",
+    "type": "multiple-choice",
+    "prompt": "How does Debye–Hückel theory picture the surroundings of each ion in a salt solution?",
+    "choices": [
+      {
+        "text": "A cloud of oppositely charged ions",
+        "correct": true
+      },
+      {
+        "text": "A cloud of ions of the same charge",
+        "why": "Like charges repel, so the cloud around an ion has the opposite sign. It cancels the central ion's charge, so from a distance it looks neutral."
+      },
+      {
+        "text": "Only water molecules, no other ions",
+        "why": "The theory is about the other ions: each ion is surrounded by an atmosphere of opposite charge built from them."
+      },
+      {
+        "text": "A rigid lattice, as in the solid salt",
+        "why": "In solution the ions are not fixed in a lattice. Each one has a diffuse, atmosphere-like cloud of opposite charge."
+      }
+    ],
+    "explanation": "Each ion is surrounded by an atmosphere-like cloud of opposite charge that cancels its own charge. From a distance the ion and its cloud look neutral."
+  },
+  {
+    "id": "pc25-debye-huckel-length",
+    "type": "multiple-choice",
+    "prompt": "In Debye–Hückel theory, which quantity measures the size of the ionic atmosphere around an ion?",
+    "choices": [
+      {
+        "text": "1/κ, the Debye length",
+        "correct": true
+      },
+      {
+        "text": "κ, the inverse Debye length",
+        "why": "κ is the inverse: a larger κ means a smaller cloud. The cloud's size is 1/κ, called the Debye length."
+      },
+      {
+        "text": "I, the ionic strength",
+        "why": "I sets the size, since κ^2 is proportional to I, but it is not a length. The size of the cloud is the Debye length, 1/κ."
+      },
+      {
+        "text": "The radius of the central ion",
+        "why": "The cloud extends well beyond the ion itself. Its size is measured by the Debye length, 1/κ."
+      }
+    ],
+    "explanation": "The quantity 1/κ measures the size of the cloud and is called the Debye length. Its size depends on the concentration of all the other ions."
+  },
+  {
+    "id": "pc25-debye-huckel-strength-formula",
+    "type": "multiple-choice",
+    "prompt": "How does the section define the ionic strength I of a solution, where m_i is the molality of ion i and z_i is its charge?",
+    "choices": [
+      {
+        "text": "I = (1/2) Σ m_i z_i^2",
+        "correct": true
+      },
+      {
+        "text": "I = (1/2) Σ m_i z_i",
+        "why": "Without squaring, positive and negative charges would cancel, and a neutral solution would give I = 0. Squaring makes every ion count, and highly charged ions count most."
+      },
+      {
+        "text": "I = Σ m_i",
+        "why": "That would treat every ion alike. The charge enters squared, so a highly charged ion counts much more than a singly charged one at the same molality."
+      },
+      {
+        "text": "I = (1/2) Σ m_i^2 z_i",
+        "why": "The square belongs on the charge, not on the molality: I is linear in molality. It is I = (1/2) Σ m_i z_i^2."
+      }
+    ],
+    "explanation": "Each ion contributes its molality times the square of its charge, and the sum is halved: I = (1/2) Σ m_i z_i^2. The sum runs over all the ions present, from every dissolved salt."
+  },
+  {
+    "id": "pc25-debye-huckel-z3-weight",
+    "type": "numeric",
+    "prompt": "In I = (1/2) Σ m_i z_i^2, how many times as much does an ion with z = +3 contribute to the ionic strength as an ion with z = +1 at the same molality?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "The charge enters squared: 3^2 = 9 against 1^2 = 1. So a 3+ ion counts nine times as much as a 1+ ion, while I stays linear in molality."
+  },
+  {
+    "id": "pc25-debye-huckel-linear-molality",
+    "type": "multiple-choice",
+    "prompt": "A solution contains a single dissolved salt. If the salt's molality is doubled, what happens to the ionic strength I?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It quadruples",
+        "why": "The square in I = (1/2) Σ m_i z_i^2 is on the charge, not the molality. I is linear in molality, so doubling every m_i doubles I."
+      },
+      {
+        "text": "It rises by a factor of √2",
+        "why": "It is κ, not I, that goes as a square root. I itself is linear in molality, so it doubles."
+      },
+      {
+        "text": "It stays the same",
+        "why": "I depends on the ion molalities, which all double. Since I is linear in molality, it doubles too."
+      }
+    ],
+    "explanation": "The section notes that I is linear in the molality even though the charges are squared. Doubling the salt's molality doubles every m_i, and so doubles I."
+  },
+  {
+    "id": "pc25-debye-huckel-lacl3-strength",
+    "type": "numeric",
+    "prompt": "A 0.00200 mol/kg solution of LaCl3 contains 0.00200 mol/kg of La^(3+) and 0.00600 mol/kg of Cl^−. Using I = (1/2) Σ m_i z_i^2, with molalities in mol/kg, what is the ionic strength I? (Give it as a decimal.)",
+    "answer": 0.012,
+    "explanation": "I = (1/2)[(0.00200)(3)^2 + (0.00600)(−1)^2] = (1/2)(0.0180 + 0.00600) = 0.0120. The La^(3+) ions, with z^2 = 9, supply three quarters of the total."
+  },
+  {
+    "id": "pc25-debye-huckel-mixture-strength",
+    "type": "numeric",
+    "prompt": "A solution contains 0.00300 mol/kg NaCl and 0.00500 mol/kg KNO3, both fully dissociated. The ionic strength sums over all the ions present: I = (1/2) Σ m_i z_i^2. What is I, with molalities in mol/kg? (Give it as a decimal.)",
+    "answer": 0.008,
+    "explanation": "All four ions have |z| = 1, so I = (1/2)(0.00300 + 0.00300 + 0.00500 + 0.00500) = 0.00800. Each salt adds to the ionic strength felt by the other's ions."
+  },
+  {
+    "id": "pc25-debye-huckel-length-factor",
+    "type": "numeric",
+    "prompt": "The inverse Debye length κ obeys κ^2 = constant × I. If a solution's ionic strength is made 4 times as large, the Debye length 1/κ is multiplied by what factor? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "κ ∝ √I, so quadrupling I doubles κ, and the Debye length 1/κ falls to half its value, a factor of 0.5. The ionic atmosphere shrinks as the solution gets more concentrated."
+  },
+  {
+    "id": "pc25-debye-huckel-permittivity",
+    "type": "multiple-choice",
+    "prompt": "In κ^2 = constant × I, the constant has ε_r ε_0 kT in its denominator, where ε_r is the solvent's relative permittivity. At the same ionic strength and temperature, how does the Debye length 1/κ in a solvent with a smaller ε_r than water compare with that in water?",
+    "choices": [
+      {
+        "text": "It is shorter",
+        "correct": true
+      },
+      {
+        "text": "It is longer",
+        "why": "A smaller ε_r makes the constant, and so κ^2, larger. A larger κ means a shorter Debye length 1/κ."
+      },
+      {
+        "text": "It is the same as in water",
+        "why": "I is the same, but the constant is not: it has ε_r in its denominator. A smaller ε_r gives a larger κ and a shorter 1/κ."
+      },
+      {
+        "text": "It depends on the salt, not the solvent",
+        "why": "The salt enters only through I, which is held fixed here. The solvent enters through ε_r, and a smaller ε_r gives a shorter Debye length."
+      }
+    ],
+    "explanation": "Since ε_r is in the denominator of the constant, a smaller ε_r makes κ^2 larger at the same I. A larger κ means a shorter Debye length 1/κ, so the ionic atmosphere is more compact."
+  },
+  {
+    "id": "pc25-debye-huckel-ln-gamma-kappa",
+    "type": "multiple-choice",
+    "prompt": "According to the section, ln γ_(±) is proportional to which quantity?",
+    "choices": [
+      {
+        "text": "κ, the inverse Debye length",
+        "correct": true
+      },
+      {
+        "text": "1/κ, the Debye length",
+        "why": "The section writes ln γ_(±) ∝ κ, not 1/κ. So a smaller ionic atmosphere, with a larger κ, goes with a larger deviation from ideality."
+      },
+      {
+        "text": "κ^2, the square of the inverse Debye length",
+        "why": "κ^2 is proportional to I. ln γ_(±) is proportional to κ itself, so it goes as √I."
+      },
+      {
+        "text": "The salt's molality m",
+        "why": "ln γ_(±) goes as κ, and κ goes as √I. For a single salt that makes it proportional to √m, not to m."
+      }
+    ],
+    "explanation": "The section writes ln γ_(±) = −(|q_(+) q_(−)|κ)/(8π ε_r ε_0 kT), so ln γ_(±) ∝ κ. Since κ^2 ∝ I, ln γ_(±) goes as √I."
+  },
+  {
+    "id": "pc25-debye-huckel-sqrt-m",
+    "type": "multiple-choice",
+    "prompt": "If only one salt is dissolved, how does ln γ_(±) depend on the salt's molality m, according to the section?",
+    "choices": [
+      {
+        "text": "It is proportional to √m",
+        "correct": true
+      },
+      {
+        "text": "It is proportional to m",
+        "why": "I is proportional to m, but κ, and with it ln γ_(±), goes as √I. So ln γ_(±) ∝ √m."
+      },
+      {
+        "text": "It is proportional to m^2",
+        "why": "Nothing is squared in m: I is linear in m, and ln γ_(±) ∝ κ ∝ √I. So ln γ_(±) ∝ √m."
+      },
+      {
+        "text": "It is proportional to 1/m",
+        "why": "The deviation from ideality grows with concentration, not the reverse. With I ∝ m and ln γ_(±) ∝ √I, ln γ_(±) goes as √m."
+      }
+    ],
+    "explanation": "For a single salt, I is linear in m, and the inverse Debye length κ goes as √I. Since ln γ_(±) ∝ κ, it goes as √m."
+  },
+  {
+    "id": "pc25-debye-huckel-zinc-swap",
+    "type": "multiple-choice",
+    "prompt": "You want to lower the Cu^(2+) concentration in a redox reaction while keeping the activity coefficients as constant as possible. What does the section suggest?",
+    "choices": [
+      {
+        "text": "Dilute with a Zn^(2+) solution of the same concentration",
+        "correct": true
+      },
+      {
+        "text": "Dilute with pure water",
+        "why": "Water lowers the concentration of every ion, so the ionic strength and the activity coefficients change. Diluting with a Zn^(2+) solution of the same concentration keeps I nearly constant."
+      },
+      {
+        "text": "Dilute with a Na^+ solution of the same concentration",
+        "why": "Na^+ has a different charge, and charge enters I squared, so I would change. Zn^(2+) has the same charge as Cu^(2+) and does not take part in the reaction."
+      },
+      {
+        "text": "Add more Cu^(2+) to fix the ionic strength",
+        "why": "That raises the Cu^(2+) concentration, the opposite of the goal. Replacing Cu^(2+) by Zn^(2+), an ion of the same charge, keeps I nearly the same."
+      }
+    ],
+    "explanation": "Since γ_(±) depends on the ionic strength, replacing Cu^(2+) by an ion of the same charge keeps I, and so the activity coefficients, nearly constant. Zn^(2+) works because it does not take part in the reaction."
+  },
+  {
+    "id": "pc25-debye-huckel-key-prediction",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what is the most significant prediction of the Debye–Hückel equation?",
+    "choices": [
+      {
+        "text": "γ_(±) depends on I, not on the salt's concentration",
+        "correct": true
+      },
+      {
+        "text": "γ_(±) is exactly 1 in all dilute solutions",
+        "why": "Electrolyte solutions are nonideal even when dilute, so γ_(±) differs from 1. The key prediction is that γ_(±) depends on the ionic strength from all the ions."
+      },
+      {
+        "text": "γ_(±) is the same for all salts at equal molality",
+        "why": "Salts with different charges give different I at the same molality. The key prediction is that γ_(±) depends on I, not on the salt's concentration as such."
+      },
+      {
+        "text": "γ_(±) depends only on the solvent, not the ions",
+        "why": "The ions matter through I and their charges. The key prediction is that γ_(±) depends on the ionic strength rather than on the electrolyte's own concentration."
+      }
+    ],
+    "explanation": "The Debye–Hückel equation makes γ_(±) a function of the ionic strength I, which counts all the ions present, rather than of the electrolyte's own concentration. So other salts in the solution change γ_(±) too."
+  },
+  {
+    "id": "pc25-debye-huckel-cuso4-log",
+    "type": "numeric",
+    "prompt": "A dilute CuSO4 solution in water at 25 °C has ionic strength I = 0.00250, so √I = 0.0500. Using the limiting law log_10 γ_(±) = −A|z_(+) z_(−)|√I with A = 0.51, what is log_10 γ_(±), including its sign? (Give it as a decimal.)",
+    "answer": -0.102,
+    "explanation": "For CuSO4, |z_(+) z_(−)| = |(+2)(−2)| = 4, so log_10 γ_(±) = −0.51 × 4 × 0.0500 = −0.102. That gives γ_(±) = 10^(−0.102) ≈ 0.79, well below 1 even at this low ionic strength."
+  },
+  {
+    "id": "pc25-debye-huckel-kbr-limiting",
+    "type": "multiple-choice",
+    "prompt": "The section compares experimental log γ_(±) values for KBr at 25 °C with the Debye–Hückel limiting law. What does it conclude about the theory?",
+    "choices": [
+      {
+        "text": "It works only at very low concentrations",
+        "correct": true
+      },
+      {
+        "text": "It works equally well at all concentrations",
+        "why": "The theory holds only for very dilute solutions, which is why it is called the Debye limiting law. Refinements are needed at higher concentrations."
+      },
+      {
+        "text": "It works only at high concentrations",
+        "why": "It is the other way round: the theory is valid only in the very dilute limit, hence the name limiting law."
+      },
+      {
+        "text": "It applies only to 2:2 salts, not KBr",
+        "why": "KBr is a 1:1 salt, and the law applies to it in the dilute limit. Its limitation is concentration: it works only when the solution is very dilute."
+      }
+    ],
+    "explanation": "The theory only works at very low concentrations, so it is also known as the Debye limiting law. Refinements extend it to somewhat higher concentrations."
+  },
+  {
+    "id": "pc25-debye-huckel-cgs",
+    "type": "multiple-choice",
+    "prompt": "The section notes that the factor 8π ε_r ε_0 in ln γ_(±) = −(|q_(+) q_(−)|κ)/(8π ε_r ε_0 kT) is specific to SI units. Why would the expression look different in cgs units?",
+    "choices": [
+      {
+        "text": "Permittivities are defined differently",
+        "correct": true
+      },
+      {
+        "text": "The cgs system has no unit of charge",
+        "why": "The cgs system does have a unit of charge. The difference is in how permittivities are defined, which changes factors such as 8π ε_r ε_0."
+      },
+      {
+        "text": "Temperatures are not in kelvin in cgs",
+        "why": "Temperature is in kelvin in both systems. The expression changes because permittivities are defined differently in cgs."
+      },
+      {
+        "text": "ln γ_(±) has different units in cgs",
+        "why": "ln γ_(±) is a pure number in any unit system. What differs is how permittivities are defined, so the factor 8π ε_r ε_0 changes."
+      }
+    ],
+    "explanation": "ε_r is the relative permittivity of the medium and ε_0 the permittivity of vacuum. Because cgs units define permittivities differently, the factor 8π ε_r ε_0 belongs to SI, and the cgs expression looks different."
+  },
+  {
+    "id": "pc25-debye-huckel-2303",
+    "type": "multiple-choice",
+    "prompt": "The constant A in the base-10 law for log_10 γ_(±) has a factor 2.303 in its denominator, which the natural-log expression for ln γ_(±) lacks. What does the 2.303 do?",
+    "choices": [
+      {
+        "text": "It converts ln into log_10",
+        "correct": true
+      },
+      {
+        "text": "It converts molality into molarity",
+        "why": "No change of concentration scale is involved. Since ln x = 2.303 log_10 x, dividing by 2.303 turns a result for ln γ_(±) into one for log_10 γ_(±)."
+      },
+      {
+        "text": "It counts the two ions of a 1:1 salt",
+        "why": "The ion count enters through the charges and I, not through 2.303. The factor is the conversion ln x = 2.303 log_10 x."
+      },
+      {
+        "text": "It converts kelvin into degrees Celsius",
+        "why": "T stays in kelvin throughout. The 2.303 is the conversion between natural and base-10 logarithms, ln x = 2.303 log_10 x."
+      }
+    ],
+    "explanation": "Since ln x = 2.303 log_10 x, dividing an expression for ln γ_(±) by 2.303 gives one for log_10 γ_(±). For aqueous solutions at 25 °C the section gives A = 0.51."
+  },
+  {
+    "id": "pc25-debye-huckel-colloid-stable",
+    "type": "multiple-choice",
+    "prompt": "Gold nanoparticles made by reducing AuCl4^− with citrate do not all precipitate. Why, according to the section?",
+    "choices": [
+      {
+        "text": "They are charged and repel each other",
+        "correct": true
+      },
+      {
+        "text": "Gold does not feel van der Waals forces",
+        "why": "The section says the van der Waals attraction is strong once particles touch. What keeps them apart is electrostatic repulsion between their charged clouds."
+      },
+      {
+        "text": "The particles are too heavy to settle",
+        "why": "Settling is not what the section discusses. Ions attach to each particle's surface, and the charged atmosphere around it keeps other particles away."
+      },
+      {
+        "text": "Citrate dissolves the gold as it forms",
+        "why": "Citrate reduces AuCl4^− to metallic gold rather than dissolving it. The particles stay apart because they are charged and surrounded by an ionic atmosphere."
+      }
+    ],
+    "explanation": "Some ions in solution attach to each nanoparticle's surface, charging it, and an atmosphere with a certain Debye length forms around it. This charged cloud stops the particles from coalescing, by electrostatic repulsion."
+  },
+  {
+    "id": "pc25-debye-huckel-colloid-clear",
+    "type": "multiple-choice",
+    "prompt": "Why do liquids containing colloidal gold particles remain clear, though often colored?",
+    "choices": [
+      {
+        "text": "The particles are smaller than visible wavelengths",
+        "correct": true
+      },
+      {
+        "text": "Gold dissolves completely as single atoms",
+        "why": "The gold forms solid particles of nanometer size, not dissolved atoms. The liquid stays clear because they are smaller than the wavelength of visible light."
+      },
+      {
+        "text": "The particles are larger than visible wavelengths",
+        "why": "Colloidal particles are typically nanometers across, far smaller than visible wavelengths. That small size is what keeps the liquid clear."
+      },
+      {
+        "text": "The citrate absorbs all the scattered light",
+        "why": "Citrate is the reducing agent, not a light absorber. The particles, nanometers across, are simply smaller than the wavelength of visible light."
+      }
+    ],
+    "explanation": "Colloidal particles are typically nanometers across, smaller than the wavelength of visible light, so the liquid stays clear. Gold colloids made with citrate are a clear wine red, even at tiny gold concentrations."
+  },
+  {
+    "id": "pc25-debye-huckel-nanometer",
+    "type": "multiple-choice",
+    "prompt": "Colloidal particles have been known since the mid-nineteenth century. Why has it become fashionable to call them nanoparticles?",
+    "choices": [
+      {
+        "text": "Their sizes are typically in nanometers",
+        "correct": true
+      },
+      {
+        "text": "They were discovered only recently",
+        "why": "They have been known as colloidal particles since the mid-nineteenth century. The newer name reflects their size, typically nanometers."
+      },
+      {
+        "text": "They form only in nanomolar solutions",
+        "why": "The name refers to size, not concentration. The particles are typically nanometers across."
+      },
+      {
+        "text": "Each carries a charge of about 10^−9 C",
+        "why": "The name has nothing to do with charge. It reflects their size, which typically lies in the nanometer range."
+      }
+    ],
+    "explanation": "A solid formed by a reaction in solution can stay dispersed as very small particles, typically nanometers in size, hence the name nanoparticles. Some gold colloids Faraday prepared in the 1850s are still stable today."
+  },
+  {
+    "id": "pc25-debye-huckel-colloid-salt",
+    "type": "multiple-choice",
+    "prompt": "Why can adding a salt, especially one with highly charged ions such as 3+ or 3− ions, destabilize a gold colloid?",
+    "choices": [
+      {
+        "text": "It raises I sharply, shrinking the Debye length",
+        "correct": true
+      },
+      {
+        "text": "It lowers the ionic strength around each particle",
+        "why": "Adding ions raises the ionic strength, and highly charged ones raise it most, since z enters squared. A higher I shrinks the protective Debye length."
+      },
+      {
+        "text": "Its ions react with the gold to dissolve it",
+        "why": "The section's concern is not a reaction with the gold. The added ions change the ionic strength drastically, which changes the Debye length of each particle's charged cloud."
+      },
+      {
+        "text": "It removes the van der Waals attraction",
+        "why": "Van der Waals attraction is what makes particles stick once they touch, and salt does not remove it. Salt destabilizes the colloid by raising I and shrinking the protective cloud."
+      }
+    ],
+    "explanation": "Highly charged ions contribute strongly to I = (1/2) Σ m_i z_i^2, so the ionic strength changes drastically. Since κ^2 ∝ I, the Debye length 1/κ shrinks, and the charged clouds that keep the particles apart become thinner."
+  },
+  {
+    "id": "pc25-debye-huckel-colloid-metastable",
+    "type": "multiple-choice",
+    "prompt": "Gold colloids are metastable. What makes the particles crash out as a real precipitate once two of them get into close contact?",
+    "choices": [
+      {
+        "text": "Strong van der Waals attraction",
+        "correct": true
+      },
+      {
+        "text": "Electrostatic repulsion between them",
+        "why": "Repulsion between the charged clouds is what keeps particles apart. Once they touch, strong van der Waals attraction takes over and they stick."
+      },
+      {
+        "text": "Gravity acting on the heavy gold",
+        "why": "The section points to van der Waals interactions, which are strong at close contact, not to gravity."
+      },
+      {
+        "text": "Covalent bonds formed with citrate",
+        "why": "Citrate is the reducing agent used to make the gold. Particles in close contact stick through strong van der Waals interactions."
+      }
+    ],
+    "explanation": "Colloids are metastable: once particles manage to get into close contact, strong van der Waals interactions make them stick and precipitate. Under the right conditions, though, colloids can survive for a long time."
+  }
+]

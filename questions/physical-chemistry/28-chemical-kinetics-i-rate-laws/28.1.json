@@ -1,0 +1,374 @@
+[
+  {
+    "id": "pc28-rate-law-why-coefficients",
+    "type": "multiple-choice",
+    "prompt": "For aA + bB → cC + dD, the section defines the rate as −(1/a) d[A]/dt = −(1/b) d[B]/dt = +(1/c) d[C]/dt = +(1/d) d[D]/dt. Why is each term divided by that species' stoichiometric coefficient?",
+    "choices": [
+      {
+        "text": "So every species gives the same rate",
+        "correct": true
+      },
+      {
+        "text": "So that the rate comes out in M/s",
+        "why": "Dividing by a pure number doesn't change the units; d[A]/dt is already in M/s. The coefficients are there so that every species gives the same rate."
+      },
+      {
+        "text": "Because all species change at the same speed",
+        "why": "They don't: in N2 + 3H2 → 2NH3, [H2] falls three times as fast as [N2]. Dividing by the coefficients removes this difference."
+      },
+      {
+        "text": "So that the reactant terms come out negative",
+        "why": "The minus signs, not the coefficients, deal with the falling reactant concentrations. The coefficients make the rate the same whichever species is used."
+      }
+    ],
+    "explanation": "Species change at different speeds, in proportion to their coefficients: in N2 + 3H2 → 2NH3, H2 is used three times as fast as N2. Dividing each d[X]/dt by its coefficient gives one rate for the reaction, whichever species is measured."
+  },
+  {
+    "id": "pc28-rate-law-minus-sign",
+    "type": "multiple-choice",
+    "prompt": "In the section's definition of the reaction rate, why do the reactant terms, such as −(1/a) d[A]/dt, carry a minus sign?",
+    "choices": [
+      {
+        "text": "d[A]/dt is negative, as A is used up",
+        "correct": true
+      },
+      {
+        "text": "The rate of a reaction is negative",
+        "why": "The rate is a positive number. The minus sign cancels the negative d[A]/dt of a reactant, whose concentration falls."
+      },
+      {
+        "text": "Reactants are at lower concentrations",
+        "why": "The sign has nothing to do with how large [A] is. It is there because [A] falls, so d[A]/dt is negative."
+      },
+      {
+        "text": "Reactants have negative coefficients",
+        "why": "The coefficients a and b are positive numbers. The minus sign is needed because d[A]/dt is negative while A is used up."
+      }
+    ],
+    "explanation": "A reactant's concentration falls, so d[A]/dt < 0, and the minus sign makes its term positive. A product's concentration rises, so its term carries a plus sign, and all the terms give the same positive rate."
+  },
+  {
+    "id": "pc28-rate-law-write-h2o",
+    "type": "multiple-choice",
+    "prompt": "For 2H2 + O2 → 2H2O, which expression equals the reaction rate as the section defines it?",
+    "choices": [
+      {
+        "text": "+(1/2) d[H2O]/dt",
+        "correct": true
+      },
+      {
+        "text": "+2 d[H2O]/dt",
+        "why": "The rate divides by the coefficient instead of multiplying by it. H2O forms twice as fast as the reaction rate, so rate = (1/2) d[H2O]/dt."
+      },
+      {
+        "text": "−(1/2) d[H2O]/dt",
+        "why": "H2O is a product, so [H2O] rises and its term has a plus sign. With a minus sign the rate would come out negative."
+      },
+      {
+        "text": "+d[O2]/dt",
+        "why": "O2 is a reactant, so [O2] falls and its term needs a minus sign, −d[O2]/dt. With a plus sign the rate would be negative."
+      }
+    ],
+    "explanation": "rate = −(1/2) d[H2]/dt = −d[O2]/dt = +(1/2) d[H2O]/dt. Each term is divided by its coefficient, with a minus sign for the reactants and a plus sign for the product."
+  },
+  {
+    "id": "pc28-rate-law-example-h2",
+    "type": "multiple-choice",
+    "prompt": "In Example 28.1.1, the reaction N2 + 3H2 → 2NH3 runs at a rate of 6.0 × 10^−4 M/s, where rate = −d[N2]/dt = −(1/3) d[H2]/dt = +(1/2) d[NH3]/dt. What is d[H2]/dt?",
+    "choices": [
+      {
+        "text": "−1.8 × 10^−3 M/s",
+        "correct": true
+      },
+      {
+        "text": "−2.0 × 10^−4 M/s",
+        "why": "This divides the rate by 3. Since rate = −(1/3) d[H2]/dt, d[H2]/dt = −3 × 6.0 × 10^−4 M/s."
+      },
+      {
+        "text": "+1.8 × 10^−3 M/s",
+        "why": "The size is right, but H2 is a reactant being used up. Its concentration falls, so d[H2]/dt is negative."
+      },
+      {
+        "text": "−6.0 × 10^−4 M/s",
+        "why": "That is d[N2]/dt, for a coefficient of 1. H2 has a coefficient of 3, so it is used up three times as fast."
+      }
+    ],
+    "explanation": "From rate = −(1/3) d[H2]/dt, d[H2]/dt = −3 × 6.0 × 10^−4 M/s = −1.8 × 10^−3 M/s. In the same way, d[N2]/dt = −6.0 × 10^−4 M/s and d[NH3]/dt = +2 × 6.0 × 10^−4 M/s = +1.2 × 10^−3 M/s."
+  },
+  {
+    "id": "pc28-rate-law-no2-average-rate",
+    "type": "numeric",
+    "prompt": "For 2NO2(g) → 2NO(g) + O2(g), [NO2] falls from 0.0500 M to 0.0400 M in 100 s. Using rate = −(1/2) Δ[NO2]/Δt, what is the reaction rate, in M/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 5e-05,
+    "explanation": "Δ[NO2] = 0.0400 M − 0.0500 M = −0.0100 M, so rate = −(1/2) × (−0.0100 M)/(100 s) = 5.0 × 10^−5 M/s. NO2 itself is used up at twice this rate, 1.0 × 10^−4 M/s."
+  },
+  {
+    "id": "pc28-rate-law-h2-from-ph3",
+    "type": "numeric",
+    "prompt": "For 4PH3(g) → P4(g) + 6H2(g), d[PH3]/dt = −2.0 × 10^−3 M/s. Using rate = −(1/4) d[PH3]/dt = +(1/6) d[H2]/dt, what is d[H2]/dt, in M/s? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 0.003,
+    "explanation": "rate = −(1/4) × (−2.0 × 10^−3 M/s) = 5.0 × 10^−4 M/s, so d[H2]/dt = 6 × 5.0 × 10^−4 M/s = 3.0 × 10^−3 M/s. Six H2 form for every four PH3 used, so H2 appears 1.5 times as fast as PH3 disappears."
+  },
+  {
+    "id": "pc28-rate-law-delta-vs-d",
+    "type": "multiple-choice",
+    "prompt": "The section writes the rate both as −(1/a) Δ[A]/Δt and as −(1/a) d[A]/dt. How do the two forms differ?",
+    "choices": [
+      {
+        "text": "Δt is a finite interval; dt is infinitesimal",
+        "correct": true
+      },
+      {
+        "text": "One is for reactants, the other for products",
+        "why": "Both forms can be written for any species, reactant or product. They differ in the time interval: a finite Δt or an infinitesimal dt."
+      },
+      {
+        "text": "One gives M/s, the other M/min",
+        "why": "Both are a concentration change per unit time, in any units. The difference is a finite interval Δt versus an infinitesimal dt."
+      },
+      {
+        "text": "Only the d form uses the coefficients",
+        "why": "Both forms divide by the coefficient a. They differ only in whether the time interval is finite, Δt, or infinitesimal, dt."
+      }
+    ],
+    "explanation": "Δ[A]/Δt is the change in [A] over a finite time interval Δt. Letting the interval shrink toward zero gives the derivative d[A]/dt, the rate at a single instant."
+  },
+  {
+    "id": "pc28-rate-law-what-it-shows",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what does the rate law of a reaction express?",
+    "choices": [
+      {
+        "text": "How the rate depends on the concentrations",
+        "correct": true
+      },
+      {
+        "text": "The balanced equation for the reaction",
+        "why": "The balanced equation gives the stoichiometry. The rate law relates the rate to the concentrations, and it must be found by experiment."
+      },
+      {
+        "text": "How far the reaction goes before it stops",
+        "why": "That is the job of the equilibrium constant. The rate law relates how fast the reaction runs to the concentrations present."
+      },
+      {
+        "text": "How much heat the reaction gives off",
+        "why": "That is the enthalpy of reaction. The rate law is an equation linking the rate to the concentrations of the species present."
+      }
+    ],
+    "explanation": "The rate of a reaction is often related to the concentrations of some or all of the species present. The rate law, such as rate = k[Cl2]^(3/2)[CO], is the equation that shows this relationship."
+  },
+  {
+    "id": "pc28-rate-law-not-from-equation",
+    "type": "multiple-choice",
+    "prompt": "For Cl2(g) + CO(g) → Cl2CO(g), a student reads the orders from the balanced equation and writes a rate law that is first order in Cl2 and first order in CO. What is wrong with this?",
+    "choices": [
+      {
+        "text": "Rate laws must be found by experiment",
+        "correct": true
+      },
+      {
+        "text": "The product must appear in it too",
+        "why": "The product is not the problem here. Experiment gives rate = k[Cl2]^(3/2)[CO], which is not first order in Cl2, because orders can't be read from the equation."
+      },
+      {
+        "text": "Nothing; each order equals its coefficient",
+        "why": "Orders need not equal the coefficients. Experiment gives rate = k[Cl2]^(3/2)[CO], three-halves order in Cl2 though its coefficient is 1."
+      },
+      {
+        "text": "It should use pressures, not concentrations",
+        "why": "The section's rate law uses molar concentrations. The error is reading the orders from the equation; experiment gives k[Cl2]^(3/2)[CO]."
+      }
+    ],
+    "explanation": "The rate law cannot be predicted from the balanced equation; it must be determined by experiment. For this reaction, experiment gives rate = k[Cl2]^(3/2)[CO]."
+  },
+  {
+    "id": "pc28-rate-law-order-cl2",
+    "type": "multiple-choice",
+    "prompt": "Experiment gives rate = k[Cl2]^(3/2)[CO] for Cl2(g) + CO(g) → Cl2CO(g). What is the order of the reaction with respect to Cl2?",
+    "choices": [
+      {
+        "text": "3/2",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "why": "1 is the coefficient of Cl2 in the balanced equation, but orders come from the rate law. The exponent on [Cl2] is 3/2."
+      },
+      {
+        "text": "5/2",
+        "why": "5/2 is the overall order, the sum 3/2 + 1. The order in Cl2 alone is the exponent on [Cl2], 3/2."
+      },
+      {
+        "text": "2",
+        "why": "The exponent on [Cl2] is 3/2, not 2. The order of each species is its exponent in the rate law."
+      }
+    ],
+    "explanation": "Each exponent in the rate law is the order of that species. So the reaction is three-halves order in Cl2 and first order in CO."
+  },
+  {
+    "id": "pc28-rate-law-overall-order",
+    "type": "numeric",
+    "prompt": "The rate law for forming Cl2CO from Cl2 and CO was found by experiment to be rate = k[Cl2]^(3/2)[CO]. What is the reaction order, the sum of the individual reactant orders? (Give it as a decimal.)",
+    "answer": 2.5,
+    "explanation": "The orders are 3/2 for Cl2 and 1 for CO, so the reaction order is 3/2 + 1 = 5/2 = 2.5, two and a half. The balanced equation, with coefficients of 1 and 1, would wrongly suggest 2."
+  },
+  {
+    "id": "pc28-rate-law-double-co",
+    "type": "multiple-choice",
+    "prompt": "For Cl2(g) + CO(g) → Cl2CO(g), rate = k[Cl2]^(3/2)[CO]. If [CO] is doubled while [Cl2] is kept the same, what happens to the rate?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It quadruples",
+        "why": "Quadrupling would need [CO] squared in the rate law. The reaction is first order in CO, so doubling [CO] doubles the rate."
+      },
+      {
+        "text": "It rises by a factor of 2^(3/2)",
+        "why": "That factor applies to doubling [Cl2], whose order is 3/2. CO is first order, so the rate doubles."
+      },
+      {
+        "text": "It stays the same",
+        "why": "The rate is unchanged only for a species of zero order. [CO] appears to the first power, so the rate doubles."
+      }
+    ],
+    "explanation": "The rate is proportional to [CO]^1, so doubling [CO] doubles the rate. Doubling [Cl2] instead would multiply the rate by 2^(3/2) ≈ 2.8."
+  },
+  {
+    "id": "pc28-rate-law-order-from-doubling",
+    "type": "numeric",
+    "prompt": "When the concentration of reactant A is doubled, with all other concentrations unchanged, the rate of a reaction increases by a factor of 4. If the rate is proportional to [A]^(m), what is the order m with respect to A?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "Doubling [A] multiplies the rate by 2^(m). Since 2^2 = 4, m = 2: the reaction is second order in A, whatever A's coefficient in the equation."
+  },
+  {
+    "id": "pc28-rate-law-which-law-fits",
+    "type": "multiple-choice",
+    "prompt": "In experiments on A + B → products, doubling [A] at fixed [B] doubles the rate, while doubling [B] at fixed [A] leaves the rate unchanged. Which rate law fits these results?",
+    "choices": [
+      {
+        "text": "rate = k[A]",
+        "correct": true
+      },
+      {
+        "text": "rate = k[A][B]",
+        "why": "Then doubling [B] would double the rate too. Since it leaves the rate unchanged, the order in B is zero and [B] drops out."
+      },
+      {
+        "text": "rate = k[A]^2",
+        "why": "Then doubling [A] would make the rate 2^2 = 4 times larger. A doubling of the rate means first order in A."
+      },
+      {
+        "text": "rate = k[B]",
+        "why": "This swaps the roles of A and B. The rate follows [A], doubling with it, and ignores [B]."
+      }
+    ],
+    "explanation": "Doubling [A] doubles the rate, so the order in A is 1; doubling [B] changes nothing, so the order in B is 0. Then rate = k[A]^1[B]^0 = k[A]."
+  },
+  {
+    "id": "pc28-rate-law-rate-from-law",
+    "type": "numeric",
+    "prompt": "A reaction has the rate law rate = k[A]^2[B], with k = 2.0 M^−2 s^−1. What is the rate, in M/s, when [A] = 0.10 M and [B] = 0.50 M? (Give it as a decimal.)",
+    "answer": 0.01,
+    "explanation": "rate = 2.0 × (0.10)^2 × 0.50 M/s = 2.0 × 0.010 × 0.50 M/s = 0.010 M/s. Forgetting to square [A] would give 0.10 M/s, ten times too large."
+  },
+  {
+    "id": "pc28-rate-law-k-constant",
+    "type": "multiple-choice",
+    "prompt": "As a reaction with rate = k[Cl2]^(3/2)[CO] runs at constant temperature, Cl2 and CO are used up. What happens to the rate and to k?",
+    "choices": [
+      {
+        "text": "The rate falls; k stays the same",
+        "correct": true
+      },
+      {
+        "text": "Both the rate and k fall",
+        "why": "k is a constant and doesn't depend on the concentrations. Only the rate falls, as [Cl2] and [CO] fall."
+      },
+      {
+        "text": "The rate stays the same; k rises",
+        "why": "The rate follows the concentrations, so it falls as they do. k, the rate constant, keeps its value."
+      },
+      {
+        "text": "The rate falls; k rises to make up",
+        "why": "Nothing makes up for the loss: k is a constant. The rate falls as [Cl2] and [CO] fall."
+      }
+    ],
+    "explanation": "k is the rate constant; it does not change as the concentrations change. As Cl2 and CO are used up, [Cl2]^(3/2)[CO] shrinks, so the rate falls while k keeps its value."
+  },
+  {
+    "id": "pc28-rate-law-units-first",
+    "type": "multiple-choice",
+    "prompt": "For a first-order rate law, rate = k[A], the rate is measured in M/s and [A] in M. What are the units of the rate constant k?",
+    "choices": [
+      {
+        "text": "s^−1",
+        "correct": true
+      },
+      {
+        "text": "M s^−1",
+        "why": "M s^−1, or M/s, is the unit of the rate itself. Dividing it by [A], in M, leaves s^−1."
+      },
+      {
+        "text": "M^−1 s^−1",
+        "why": "Those are the units of k for a second-order rate law. For first order, k = rate/[A] has units (M s^−1) ÷ M = s^−1."
+      },
+      {
+        "text": "s",
+        "why": "k is not a time but a reciprocal time. k = rate/[A] has units (M s^−1) ÷ M = s^−1."
+      }
+    ],
+    "explanation": "k = rate/[A], so its units are (M s^−1) ÷ M = s^−1. A first-order rate constant is a reciprocal time."
+  },
+  {
+    "id": "pc28-rate-law-units-second",
+    "type": "multiple-choice",
+    "prompt": "Experiment gives rate = k[A][B] for a reaction. If the rate is in M/s and each concentration in M, what units must k have?",
+    "choices": [
+      {
+        "text": "M^−1 s^−1",
+        "correct": true
+      },
+      {
+        "text": "s^−1",
+        "why": "s^−1 is the unit of a first-order k. Here two concentrations divide the rate, so k has units (M s^−1) ÷ M^2 = M^−1 s^−1."
+      },
+      {
+        "text": "M s^−1",
+        "why": "M s^−1 is the unit of the rate itself. Dividing it by [A][B], in M^2, leaves M^−1 s^−1."
+      },
+      {
+        "text": "M^−2 s^−1",
+        "why": "That would go with an overall order of 3. With two concentration factors, (M s^−1) ÷ M^2 = M^−1 s^−1."
+      }
+    ],
+    "explanation": "k = rate ÷ ([A][B]), so its units are (M s^−1) ÷ M^2 = M^−1 s^−1. The overall order is 1 + 1 = 2."
+  },
+  {
+    "id": "pc28-rate-law-units-zero",
+    "type": "multiple-choice",
+    "prompt": "A rate constant k has the units M s^−1, the same as the rate itself. What is the overall order of the reaction?",
+    "choices": [
+      {
+        "text": "Zero",
+        "correct": true
+      },
+      {
+        "text": "First",
+        "why": "A first-order k has units s^−1, since one factor of M is divided out. Here nothing is divided out, so no concentration appears: zero order."
+      },
+      {
+        "text": "Second",
+        "why": "A second-order k has units M^−1 s^−1, two factors of M being divided out. Units equal to the rate's mean order zero."
+      },
+      {
+        "text": "Third",
+        "why": "A third-order k has units M^−2 s^−1. If k has the units of the rate, the concentrations contribute nothing, which means order zero."
+      }
+    ],
+    "explanation": "If k has the same units as the rate, the concentration factor in the rate law carries no units: rate = k[A]^0 = k. So the overall order is zero."
+  }
+]

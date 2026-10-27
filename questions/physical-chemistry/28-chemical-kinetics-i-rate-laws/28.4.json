@@ -1,0 +1,418 @@
+[
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-integrated",
+    "type": "multiple-choice",
+    "prompt": "A zero-order reaction has the rate law −d[A]/dt = k. Which integrated rate law does the section obtain from it?",
+    "choices": [
+      {
+        "text": "[A] = [A]_0 − kt",
+        "correct": true
+      },
+      {
+        "text": "[A] = [A]_0 + kt",
+        "why": "The sign is wrong: A is a reactant, so [A] falls. Separating gives d[A] = −k dt, so [A] = [A]_0 − kt."
+      },
+      {
+        "text": "ln[A] = ln[A]_0 − kt",
+        "why": "That is the first-order law, from −d[A]/dt = k[A]. With a rate that doesn't depend on [A], the concentration itself falls linearly."
+      },
+      {
+        "text": "1/[A] = 1/[A]_0 + kt",
+        "why": "That is the second-order law, from −d[A]/dt = k[A]^2. The zero-order law is [A] = [A]_0 − kt."
+      }
+    ],
+    "explanation": "Separating the variables gives d[A] = −k dt. Integrating from [A]_0 at t = 0 gives [A] − [A]_0 = −kt, so [A] = [A]_0 − kt."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-plot",
+    "type": "multiple-choice",
+    "prompt": "For a zero-order reaction, which plot of the data gives a straight line, and what is its slope?",
+    "choices": [
+      {
+        "text": "[A] against t, with slope −k",
+        "correct": true
+      },
+      {
+        "text": "[A] against t, with slope +k",
+        "why": "The plot is right, but the line falls as A is used up. From [A] = [A]_0 − kt, the slope is −k."
+      },
+      {
+        "text": "ln[A] against t, with slope −k",
+        "why": "A straight ln[A] plot marks first-order kinetics. For zero order, [A] itself falls linearly with t."
+      },
+      {
+        "text": "1/[A] against t, with slope +k",
+        "why": "A straight 1/[A] plot marks second-order kinetics. For zero order, [A] itself is linear in t."
+      }
+    ],
+    "explanation": "[A] = [A]_0 − kt has the form of a straight line, with slope −k and intercept [A]_0. The section adds that if such a plot is not linear, the data are not zero order and other orders must be tried."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-constant-rate",
+    "type": "multiple-choice",
+    "prompt": "For a zero-order reaction, −d[A]/dt = k. How does the rate change as A is used up?",
+    "choices": [
+      {
+        "text": "It stays the same until A runs out",
+        "correct": true
+      },
+      {
+        "text": "It falls in proportion to [A]",
+        "why": "That describes a first-order reaction, rate = k[A]. A zero-order rate contains no [A], so it doesn't change."
+      },
+      {
+        "text": "It falls with the square of [A]",
+        "why": "That describes a second-order reaction, rate = k[A]^2. A zero-order rate is just k."
+      },
+      {
+        "text": "It rises as [A] gets smaller",
+        "why": "Nothing in −d[A]/dt = k depends on [A], so the rate can't rise either. It stays at k."
+      }
+    ],
+    "explanation": "The rate equals k, with no concentration term, so it doesn't depend on how much A is left. [A] falls by the same amount every second until A is gone, which is why [A] against t is a straight line."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-saturated-surface",
+    "type": "multiple-choice",
+    "prompt": "A gas decomposes on a hot metal surface that is fully covered with adsorbed gas, so the rate is the same however much gas is above the surface. What is the order of the reaction in the gas?",
+    "choices": [
+      {
+        "text": "Zero order",
+        "correct": true
+      },
+      {
+        "text": "First order",
+        "why": "A first-order rate would double when the gas concentration doubles. Here the rate doesn't change with concentration, so it is zero order."
+      },
+      {
+        "text": "Second order",
+        "why": "A second-order rate would grow with the square of the concentration. A rate that doesn't depend on concentration is zero order."
+      },
+      {
+        "text": "No order can be assigned",
+        "why": "A rate that doesn't depend on concentration has a definite order: rate = k[A]^0 = k, zero order."
+      }
+    ],
+    "explanation": "A zero-order rate law, −d[A]/dt = k, says the rate doesn't depend on [A]. A fully covered surface reacts as fast as it can whatever the amount of gas, so the gas follows zero-order kinetics."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-half-life-why",
+    "type": "multiple-choice",
+    "prompt": "For a zero-order reaction, t_(1/2) = ([A]_0)/(2k), so a larger starting concentration gives a longer half-life. Why?",
+    "choices": [
+      {
+        "text": "The rate is fixed, so using up more A takes longer",
+        "correct": true
+      },
+      {
+        "text": "The rate constant is smaller at higher [A]_0",
+        "why": "k is a constant and doesn't depend on [A]_0. The half-life grows because a fixed rate needs more time to use up a larger amount."
+      },
+      {
+        "text": "The rate is slower when more A is present",
+        "why": "A zero-order rate is k whatever [A] is. It is the larger amount to be used up, at the same rate, that takes longer."
+      },
+      {
+        "text": "Every half-life grows with the starting concentration",
+        "why": "Not so: for second order, t_(1/2) = 1/(k[A]_0) shrinks as [A]_0 grows. For zero order it grows because the rate is fixed."
+      }
+    ],
+    "explanation": "Half of [A]_0 must be used up, and A is used at the steady rate k. Doubling [A]_0 doubles the amount to remove, so the time doubles too: t_(1/2) = ([A]_0)/(2k)."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-runs-out",
+    "type": "multiple-choice",
+    "prompt": "Using [A] = [A]_0 − kt for a zero-order reaction, at what time does [A] reach zero?",
+    "choices": [
+      {
+        "text": "At t = ([A]_0)/k",
+        "correct": true
+      },
+      {
+        "text": "Never; it only approaches zero",
+        "why": "That is exponential, first-order behavior. A straight line falling with slope −k reaches zero at a finite time."
+      },
+      {
+        "text": "At t = k/([A]_0)",
+        "why": "The ratio is upside down. Setting [A] = 0 gives kt = [A]_0, so t = ([A]_0)/k."
+      },
+      {
+        "text": "At t = ([A]_0)/(2k)",
+        "why": "That is the half-life, when half of A is left. A runs out at twice that time, t = ([A]_0)/k."
+      }
+    ],
+    "explanation": "Setting [A] = 0 gives 0 = [A]_0 − kt, so t = ([A]_0)/k. Unlike an exponential decay, a zero-order reaction uses up all of A in a finite time, after which the rate law no longer applies."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-concentration",
+    "type": "numeric",
+    "prompt": "A zero-order reaction has k = 0.010 M s^−1 and starts at [A]_0 = 0.80 M. Using [A] = [A]_0 − kt, what is [A] after 30 s, in M? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "[A] = 0.80 M − (0.010 M s^−1 × 30 s) = 0.80 M − 0.30 M = 0.50 M. The same 0.30 M is used up in each further 30 s, so A runs out at 80 s."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-zero-order-half-life",
+    "type": "numeric",
+    "prompt": "For a zero-order reaction, t_(1/2) = ([A]_0)/(2k). What is the half-life, in s, when [A]_0 = 0.50 M and k = 0.025 M s^−1?",
+    "answer": 10,
+    "unit": "s",
+    "tolerance": 0,
+    "explanation": "t_(1/2) = (0.50 M)/(2 × 0.025 M s^−1) = 0.50/0.050 s = 10 s. Starting at 1.00 M would give 20 s, since a zero-order half-life is proportional to [A]_0."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-second-order-integrated",
+    "type": "multiple-choice",
+    "prompt": "For a second-order reaction with −d[A]/dt = k[A]^2, which integrated rate law does the section derive?",
+    "choices": [
+      {
+        "text": "1/[A] = 1/[A]_0 + kt",
+        "correct": true
+      },
+      {
+        "text": "1/[A] = 1/[A]_0 − kt",
+        "why": "The sign is wrong. As A is used up, [A] falls and 1/[A] rises, so kt is added."
+      },
+      {
+        "text": "ln[A] = ln[A]_0 − kt",
+        "why": "That is the first-order law, from −d[A]/dt = k[A]. Integrating −d[A]/[A]^2 = k dt gives reciprocals instead of logarithms."
+      },
+      {
+        "text": "[A] = [A]_0 − kt^2",
+        "why": "Squaring [A] in the rate law doesn't square t. Integrating −d[A]/[A]^2 = k dt gives 1/[A] − 1/[A]_0 = kt."
+      }
+    ],
+    "explanation": "Separating the variables gives −d[A]/[A]^2 = k dt, and since −dx/x^2 = d(1/x), integration gives 1/[A] − 1/[A]_0 = kt. Rearranged, 1/[A] = 1/[A]_0 + kt."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-straight-reciprocal-plot",
+    "type": "multiple-choice",
+    "prompt": "Kinetic data for a reactant A are plotted three ways against t: [A], ln[A] and 1/[A]. Only the plot of 1/[A] is a straight line. What is the order of the reaction in A?",
+    "choices": [
+      {
+        "text": "Second order",
+        "correct": true
+      },
+      {
+        "text": "Zero order",
+        "why": "A zero-order reaction would make the plot of [A] itself straight. A straight 1/[A] plot fits 1/[A] = 1/[A]_0 + kt."
+      },
+      {
+        "text": "First order",
+        "why": "A first-order reaction would make the ln[A] plot straight. A straight 1/[A] plot points to rate = k[A]^2."
+      },
+      {
+        "text": "Minus first order",
+        "why": "The reciprocal comes from integrating k[A]^2; it doesn't mean the rate rises as A falls. The reaction is second order."
+      }
+    ],
+    "explanation": "Second-order kinetics gives 1/[A] = 1/[A]_0 + kt, a straight line in 1/[A] against t. This is how the section checks the data of Example 28.4.2, where the slope gives k."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-reciprocal-line-rises",
+    "type": "multiple-choice",
+    "prompt": "A zero-order plot of [A] against t slopes downward, but a second-order plot of 1/[A] against t slopes upward. Why does the second-order line rise?",
+    "choices": [
+      {
+        "text": "1/[A] grows as [A] falls",
+        "correct": true
+      },
+      {
+        "text": "Its rate constant is negative",
+        "why": "k is positive. The line rises with slope +k because the reciprocal of a shrinking [A] gets larger."
+      },
+      {
+        "text": "A is formed rather than used up",
+        "why": "A is still a reactant being used up. It is 1/[A], not [A], that grows."
+      },
+      {
+        "text": "The rate rises as A is used up",
+        "why": "The rate k[A]^2 falls as A is used up. The line rises only because 1/[A] gets larger as [A] gets smaller."
+      }
+    ],
+    "explanation": "As the reaction goes on, [A] gets smaller, so 1/[A] gets larger. The line 1/[A] = 1/[A]_0 + kt has the positive slope k and the intercept 1/[A]_0."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-order-from-half-life",
+    "type": "multiple-choice",
+    "prompt": "The half-life is t_(1/2) = ([A]_0)/(2k) for a zero-order reaction, (ln 2)/k for a first-order one and 1/(k[A]_0) for a second-order one. A reaction's half-life halves each time [A]_0 is doubled. What order is it?",
+    "choices": [
+      {
+        "text": "Second order",
+        "correct": true
+      },
+      {
+        "text": "Zero order",
+        "why": "A zero-order half-life is proportional to [A]_0, so it would double, not halve, when [A]_0 doubles."
+      },
+      {
+        "text": "First order",
+        "why": "A first-order half-life, (ln 2)/k, doesn't depend on [A]_0 at all. A halving half-life fits 1/(k[A]_0)."
+      },
+      {
+        "text": "Third order",
+        "why": "No third-order formula is needed: t_(1/2) = 1/(k[A]_0) already halves when [A]_0 doubles. That is the second-order half-life."
+      }
+    ],
+    "explanation": "Only t_(1/2) = 1/(k[A]_0) is inversely proportional to [A]_0, so doubling [A]_0 halves it. The half-life is a quick test of order: it grows with [A]_0 for zero order, stays fixed for first order and shrinks for second order."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-successive-half-lives",
+    "type": "multiple-choice",
+    "prompt": "For a second-order reaction, t_(1/2) = 1/(k[A]_0), where [A]_0 is the concentration at the start of the interval. How does each half-life compare with the one before it?",
+    "choices": [
+      {
+        "text": "Each is twice as long as the one before",
+        "correct": true
+      },
+      {
+        "text": "They are all the same length",
+        "why": "Equal half-lives belong to first-order kinetics. Here each half-life starts from half the concentration, so it is twice as long."
+      },
+      {
+        "text": "Each is half as long as the one before",
+        "why": "It is the other way round: t_(1/2) is inversely proportional to the starting concentration, which halves, so the half-life doubles."
+      },
+      {
+        "text": "Each is four times as long as the one before",
+        "why": "t_(1/2) depends on 1/[A]_0, not on 1 over the square of [A]_0. Halving the concentration doubles the half-life."
+      }
+    ],
+    "explanation": "After one half-life the concentration is [A]_0/2, so the next half-life is 1/(k[A]_0/2) = 2/(k[A]_0), twice the first. A second-order reaction slows down more and more as A is used up."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-second-order-concentration",
+    "type": "numeric",
+    "prompt": "A second-order reaction of A starts at 0.50 M, with k = 0.10 M^−1 s^−1. Using 1/[A] = 1/[A]_0 + kt, what concentration of A is left after 60 s, in M? (Give it as a decimal.)",
+    "answer": 0.125,
+    "explanation": "1/[A] = 1/(0.50 M) + 0.10 M^−1 s^−1 × 60 s = 2.0 M^−1 + 6.0 M^−1 = 8.0 M^−1, so [A] = 1/(8.0 M^−1) = 0.125 M. Remember the last step: 8.0 M^−1 is 1/[A], not [A]."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-second-order-half-life",
+    "type": "numeric",
+    "prompt": "For a second-order reaction, t_(1/2) = 1/(k[A]_0). What is the half-life, in s, when k = 0.25 M^−1 s^−1 and [A]_0 = 0.80 M?",
+    "answer": 5,
+    "unit": "s",
+    "tolerance": 0,
+    "explanation": "k[A]_0 = 0.25 M^−1 s^−1 × 0.80 M = 0.20 s^−1, so t_(1/2) = 1/(0.20 s^−1) = 5.0 s. Unlike a first-order half-life, this one depends on the starting concentration."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-second-order-half-life-scaling",
+    "type": "numeric",
+    "prompt": "A second-order reaction has t_(1/2) = 40 s when [A]_0 = 0.10 M. Using t_(1/2) = 1/(k[A]_0), what is the half-life, in s, when the reaction starts at [A]_0 = 0.40 M instead?",
+    "answer": 10,
+    "unit": "s",
+    "tolerance": 0,
+    "explanation": "t_(1/2) is inversely proportional to [A]_0, so four times the concentration gives a quarter of the half-life: 40 s ÷ 4 = 10 s. Equivalently, k = 1/(40 s × 0.10 M) = 0.25 M^−1 s^−1, and t_(1/2) = 1/(0.25 × 0.40) s = 10 s."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-a-plus-b-plot",
+    "type": "multiple-choice",
+    "prompt": "For A + B → P with rate k[A][B] and unequal starting concentrations, [A]_0 ≠ [B]_0, which plot does the section say is a straight line?",
+    "choices": [
+      {
+        "text": "ln([B]/[A]) against t",
+        "correct": true
+      },
+      {
+        "text": "1/[A] against t",
+        "why": "That works only when [A]_0 = [B]_0, so that [A] = [B] at all times. With unequal starts, ln([B]/[A]) is linear in t."
+      },
+      {
+        "text": "ln[A] against t",
+        "why": "A straight ln[A] plot would mean first order in A alone. Here the rate depends on both [A] and [B]."
+      },
+      {
+        "text": "[A][B] against t",
+        "why": "The product of the concentrations is not linear in t. The integrated law makes ln([B]/[A]) linear, with slope ([B]_0 − [A]_0)k."
+      }
+    ],
+    "explanation": "Integrating with [A] = [A]_0 − [P] and [B] = [B]_0 − [P] makes ln([B]/[A]) a linear function of t. The slope of that line is ([B]_0 − [A]_0)k, so k follows from it."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-a-plus-b-equal-start",
+    "type": "multiple-choice",
+    "prompt": "For A + B → P with rate k[A][B], why does the integrated law become 1/[A] = 1/[A]_0 + kt when [A]_0 = [B]_0?",
+    "choices": [
+      {
+        "text": "[A] = [B] throughout, so rate = k[A]^2",
+        "correct": true
+      },
+      {
+        "text": "B is in large excess, so [B] stays constant",
+        "why": "With equal starting amounts B is not in excess. Each P uses one A and one B, so [B] falls exactly as [A] does."
+      },
+      {
+        "text": "The reaction becomes first order in A",
+        "why": "The rate k[A][B] becomes k[A]^2, which is second order. That is why the reciprocal law appears."
+      },
+      {
+        "text": "The reverse reaction keeps [B] fixed",
+        "why": "There is no reverse reaction here. [A] and [B] start equal and fall together, so the rate is k[A]^2."
+      }
+    ],
+    "explanation": "Each P formed uses up one A and one B, so [A] = [A]_0 − [P] and [B] = [B]_0 − [P]. With equal starting values [A] = [B] at every moment, the rate is k[A]^2, and it integrates to the usual second-order law."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-example-second-order-slope",
+    "type": "numeric",
+    "prompt": "In Example 28.4.2, the data give 1/[A] = 4.20 M^−1 at t = 0 and 1/[A] = 43.5 M^−1 at t = 200 s, and a plot of 1/[A] against t is a straight line. Using these two points, what is the slope k, in M^−1 s^−1? (Give it as a decimal.)",
+    "answer": 0.1965,
+    "tolerance": 0.02,
+    "explanation": "k = (43.5 M^−1 − 4.20 M^−1)/(200 s) = (39.3 M^−1)/(200 s) = 0.1965 M^−1 s^−1. A least-squares fit to all the points in the table gives 0.198 M^−1 s^−1, so the two end points already give a good estimate."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-n2o5-rate-law",
+    "type": "multiple-choice",
+    "prompt": "In Example 28.4.3, N2O5 decomposes in CCl4 solution at 45°C, and [N2O5], ln[N2O5] and 1/[N2O5] are each plotted against t. Only the ln[N2O5] plot is a straight line. Which rate law follows?",
+    "choices": [
+      {
+        "text": "rate = k[N2O5]",
+        "correct": true
+      },
+      {
+        "text": "rate = k[N2O5]^2",
+        "why": "A second-order rate law would make the 1/[N2O5] plot straight. A straight ln plot means first order."
+      },
+      {
+        "text": "rate = k",
+        "why": "A zero-order rate law would make the [N2O5] plot itself straight. The straight ln plot points to first order."
+      },
+      {
+        "text": "rate = −k ln[N2O5]",
+        "why": "The rate law has no logarithm in it. The ln plot is straight because ln[A] = ln[A]_0 − kt is the integrated form of rate = k[A]."
+      }
+    ],
+    "explanation": "ln[A] = ln[A]_0 − kt is the integrated first-order law, so a straight ln[N2O5] plot shows that the decomposition is first order in N2O5. The example then takes k as minus the slope of that line."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-example-intercept",
+    "type": "multiple-choice",
+    "prompt": "In Example 28.4.2, a straight line through 1/[A] against t gives the rate constant from its slope. What does the section say can also be found from the intercept?",
+    "choices": [
+      {
+        "text": "The concentration at t = 0, as 1/[A]_0",
+        "correct": true
+      },
+      {
+        "text": "The half-life of the reaction at t = 0",
+        "why": "The intercept is the value of 1/[A] at t = 0, so it gives the starting concentration. A half-life would need k and [A]_0 together."
+      },
+      {
+        "text": "The order of the reaction in A",
+        "why": "The order comes from which plot is straight, not from the intercept. The intercept gives 1/[A]_0."
+      },
+      {
+        "text": "A second estimate of the rate constant",
+        "why": "k comes from the slope only. The intercept is 1/[A] at t = 0, which gives [A]_0."
+      }
+    ],
+    "explanation": "Setting t = 0 in 1/[A] = 1/[A]_0 + kt leaves 1/[A]_0, so the intercept gives the starting concentration. For the example's data the best-fit intercept is 4.30 M^−1, close to the 1/(0.238 M) = 4.20 M^−1 of the first point."
+  },
+  {
+    "id": "pc28-rate-law-kinetics-example-n2o5-rate-constant",
+    "type": "numeric",
+    "prompt": "In Example 28.4.3, ln[N2O5] falls in a straight line from −3.310 at t = 0 to −4.154 at t = 1800 s. The rate constant k is minus the slope of this line. What is k, in s^−1? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.000469,
+    "explanation": "Slope = (−4.154 − (−3.310))/(1800 s) = (−0.844)/(1800 s) = −4.69 × 10^−4 s^−1, so k = 4.69 × 10^−4 s^−1. The example's own points, t = 0 and 3000 s, give a similar 4.82 × 10^−4 s^−1."
+  }
+]

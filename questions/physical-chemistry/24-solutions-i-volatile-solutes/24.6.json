@@ -1,0 +1,529 @@
+[
+  {
+    "id": "pc24-volatile-binary-double-pressure",
+    "type": "multiple-choice",
+    "prompt": "At constant temperature, the partial pressure of CO2 above water is doubled. According to Henry's law, P_B = k_H x_B, what happens to the mole fraction of dissolved CO2?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It halves",
+        "why": "From P_B = k_H x_B, x_B = P_B/k_H, so x_B rises in step with P_B. More gas pressure pushes more CO2 into solution."
+      },
+      {
+        "text": "It stays the same, since k_H is fixed",
+        "why": "Because k_H is fixed, x_B = P_B/k_H must change with P_B. Doubling P_B doubles x_B."
+      },
+      {
+        "text": "It rises fourfold",
+        "why": "Henry's law is linear in x_B, not quadratic. Doubling P_B doubles x_B."
+      }
+    ],
+    "explanation": "Henry's law makes the partial pressure of a dissolved gas proportional to its mole fraction, so x_B = P_B/k_H. That is why the law is used for the solubility of gases in liquids: the amount dissolved grows in step with the gas pressure."
+  },
+  {
+    "id": "pc24-volatile-binary-large-kh",
+    "type": "multiple-choice",
+    "prompt": "Two gases are held over the same solvent at the same partial pressure. Gas X has a much larger Henry's law constant k_H than gas Y. Which gas is more soluble?",
+    "choices": [
+      {
+        "text": "Gas Y, the one with the smaller k_H",
+        "correct": true
+      },
+      {
+        "text": "Gas X, the one with the larger k_H",
+        "why": "From P_B = k_H x_B, x_B = P_B/k_H. At the same P_B, a larger k_H gives a smaller mole fraction in solution."
+      },
+      {
+        "text": "Both equally, since the pressures are equal",
+        "why": "Equal pressures give equal solubility only if k_H is the same. With x_B = P_B/k_H, the gas with the smaller k_H dissolves more."
+      },
+      {
+        "text": "It cannot be told without the pure-gas P^* values",
+        "why": "Henry's law uses k_H, not a pure-component vapor pressure. At equal P_B, x_B = P_B/k_H is larger for the smaller k_H."
+      }
+    ],
+    "explanation": "Rearranging Henry's law gives x_B = P_B/k_H. At a given pressure, the gas with the smaller k_H reaches the larger mole fraction, so it is the more soluble one."
+  },
+  {
+    "id": "pc24-volatile-binary-kh-units",
+    "type": "multiple-choice",
+    "prompt": "In Example 24.6.1, the Henry's law constant of CO2 in water comes out as 1.67 × 10^8 Pa. Why does k_H have units of pressure?",
+    "choices": [
+      {
+        "text": "The mole fraction x_B has no units",
+        "correct": true
+      },
+      {
+        "text": "k_H is the vapor pressure of pure CO2",
+        "why": "k_H is not the vapor pressure of pure CO2; it is the slope of P_B against x_B. It is in Pa because x_B is a pure number."
+      },
+      {
+        "text": "The solubility was given in mol/L",
+        "why": "The molarity was first turned into a mole fraction, which has no units. So k_H = P_B/x_B carries the units of P_B."
+      },
+      {
+        "text": "k_H is a pressure divided by a molarity",
+        "why": "In P_B = k_H x_B the concentration is a mole fraction, not a molarity. Dividing a pressure by a unitless number leaves a pressure."
+      }
+    ],
+    "explanation": "In P_B = k_H x_B the mole fraction is a ratio of moles, so it has no units. k_H = P_B/x_B therefore has the units of pressure: (10^5 Pa)/(5.98 × 10^−4) = 1.67 × 10^8 Pa."
+  },
+  {
+    "id": "pc24-volatile-binary-density-assumption",
+    "type": "multiple-choice",
+    "prompt": "Example 24.6.1 assumes the saturated CO2 solution has a density of 1 kg/L. What does this assumption let it find?",
+    "choices": [
+      {
+        "text": "The mass of water in 1 L, 1000 g",
+        "correct": true
+      },
+      {
+        "text": "The mass of CO2 dissolved in 1 L",
+        "why": "The amount of CO2 comes from the solubility, 3.32 × 10^−2 mol/L. The density gives the mass of 1 L of solution, taken as 1000 g of water."
+      },
+      {
+        "text": "The partial pressure of CO2 above it",
+        "why": "The partial pressure is given, 1 bar. The density is needed to turn 1 L of solution into 1000 g, or 55.5 mol, of water."
+      },
+      {
+        "text": "The value of k_H without further steps",
+        "why": "k_H still needs the mole fraction and the pressure. The density only supplies the 1000 g of water in 1 L."
+      }
+    ],
+    "explanation": "At 1 kg/L, 1 L of solution weighs 1000 g, nearly all of it water. That gives (1000 g)/(18.02 g/mol) = 55.5 mol H2O, the denominator of the mole fraction."
+  },
+  {
+    "id": "pc24-volatile-binary-negligible-co2",
+    "type": "multiple-choice",
+    "prompt": "In Example 24.6.1 the mole fraction of CO2 is taken as (3.32 × 10^−2 mol)/(55.5 mol), with only the water in the denominator. Why is that acceptable?",
+    "choices": [
+      {
+        "text": "The CO2 is tiny next to 55.5 mol of water",
+        "correct": true
+      },
+      {
+        "text": "A dissolved gas never counts in a mole fraction",
+        "why": "A dissolved gas is part of the solution and does count in principle. It is left out only because 0.0332 mol is negligible next to 55.5 mol."
+      },
+      {
+        "text": "Henry's law puts only the solvent below the line",
+        "why": "Henry's law uses the true mole fraction. Leaving out the CO2 is an approximation that works because there is so little of it."
+      },
+      {
+        "text": "The CO2 reacts completely with the water",
+        "why": "The example treats the CO2 as dissolved, not used up. Its 0.0332 mol barely changes the 55.5 mol total, so it can be dropped."
+      }
+    ],
+    "explanation": "The true denominator is 55.5 mol + 0.0332 mol, which differs from 55.5 mol by less than 0.1%. So x_B ≈ (3.32 × 10^−2)/55.5 = 5.98 × 10^−4."
+  },
+  {
+    "id": "pc24-volatile-binary-kh-nitrogen",
+    "type": "numeric",
+    "prompt": "At 25 °C, water under an N2 partial pressure of 1.00 × 10^5 Pa dissolves N2 to a mole fraction x_B = 1.16 × 10^−5. Using Henry's law, P_B = k_H x_B, what is k_H for N2 in water, in Pa? (Type it in scientific notation, like 2.5e9.)",
+    "answer": 8620000000.0,
+    "unit": "Pa",
+    "explanation": "k_H = P_B/x_B = (1.00 × 10^5 Pa)/(1.16 × 10^−5) = 8.62 × 10^9 Pa. That is about 50 times CO2's 1.67 × 10^8 Pa from Example 24.6.1, so N2 is far less soluble in water."
+  },
+  {
+    "id": "pc24-volatile-binary-oxygen-mole-fraction",
+    "type": "numeric",
+    "prompt": "As in Example 24.6.1, take 1 L of water as 55.5 mol H2O. If it dissolves 1.20 × 10^−3 mol O2, what is the mole fraction of O2, with only the water in the denominator? (Type it in scientific notation, like 2.5e-5.)",
+    "answer": 2.16e-05,
+    "explanation": "x_B ≈ (1.20 × 10^−3 mol)/(55.5 mol) = 2.16 × 10^−5. So little O2 dissolves that adding it to the denominator would not change this value."
+  },
+  {
+    "id": "pc24-volatile-binary-co2-pressure",
+    "type": "numeric",
+    "prompt": "Example 24.6.1 finds k_H = 1.67 × 10^8 Pa for CO2 in water at 25 °C. What partial pressure of CO2, in kPa, gives a dissolved mole fraction x_B = 3.00 × 10^−4? (Give it as a decimal.)",
+    "answer": 50.1,
+    "unit": "kPa",
+    "explanation": "P_B = k_H x_B = (1.67 × 10^8 Pa)(3.00 × 10^−4) = 5.01 × 10^4 Pa = 50.1 kPa. That is about half of 1 bar, and the mole fraction is about half the example's 5.98 × 10^−4, as Henry's law requires."
+  },
+  {
+    "id": "pc24-volatile-binary-distillation-limit",
+    "type": "multiple-choice",
+    "prompt": "Why can distillation not purify a mixture past its azeotrope?",
+    "choices": [
+      {
+        "text": "Vapor and liquid have the same composition",
+        "correct": true
+      },
+      {
+        "text": "The mixture stops boiling at the azeotrope",
+        "why": "The azeotrope boils like any liquid. The trouble is that its vapor has the same composition as the liquid, so boiling separates nothing."
+      },
+      {
+        "text": "Only one component is left in the vapor",
+        "why": "If the vapor held only one component, distillation would purify well. At the azeotrope the vapor and liquid have the same composition."
+      },
+      {
+        "text": "The two liquids react with each other there",
+        "why": "No reaction is involved. Distillation needs a vapor richer in one component than the liquid, which fails when the two compositions are equal."
+      }
+    ],
+    "explanation": "Distillation works because the vapor differs in composition from the liquid it boils off. At the azeotrope the two are the same, so boiling and condensing again cannot shift the composition any further."
+  },
+  {
+    "id": "pc24-volatile-binary-max-boiling-deviation",
+    "type": "multiple-choice",
+    "prompt": "A liquid boils when its vapor pressure reaches the outside pressure. Which deviation from Raoult's law goes with a maximum-boiling azeotrope?",
+    "choices": [
+      {
+        "text": "Negative: vapor pressure below the Raoult line",
+        "correct": true
+      },
+      {
+        "text": "Positive: vapor pressure above the Raoult line",
+        "why": "A higher vapor pressure makes a mixture boil more easily, at a lower temperature. That gives a minimum-boiling azeotrope."
+      },
+      {
+        "text": "None: Raoult's law holds at every composition",
+        "why": "An ideal solution always boils between the boiling points of its pure liquids, so it has no maximum. A maximum needs a vapor pressure below the Raoult line."
+      },
+      {
+        "text": "Either kind, since deviations do not affect boiling",
+        "why": "A deviation changes the vapor pressure, and so the temperature at which the mixture boils. A lower vapor pressure raises the boiling point."
+      }
+    ],
+    "explanation": "With a negative deviation the mixture's vapor pressure is lower than Raoult's law predicts, so it must be heated more before it boils. Near the azeotrope the boiling point rises above those of both pure liquids, giving a maximum."
+  },
+  {
+    "id": "pc24-volatile-binary-min-boiling-pressure",
+    "type": "multiple-choice",
+    "prompt": "A minimum-boiling azeotrope boils at a lower temperature than either pure liquid. At a fixed temperature, how does its total vapor pressure compare with those of the two pure liquids?",
+    "choices": [
+      {
+        "text": "It is higher than either pure liquid's",
+        "correct": true
+      },
+      {
+        "text": "It is lower than either pure liquid's",
+        "why": "A lower vapor pressure would need more heating to boil, giving a maximum-boiling azeotrope. Boiling early means a higher vapor pressure."
+      },
+      {
+        "text": "It lies between the two, as in the ideal case",
+        "why": "A value between the two is the ideal case, with no azeotrope. Boiling below both pure liquids needs a vapor pressure above both."
+      },
+      {
+        "text": "It equals that of the more volatile liquid",
+        "why": "Then the mixture would boil at the same temperature as that liquid, not below it. A lower boiling point needs a higher vapor pressure."
+      }
+    ],
+    "explanation": "A liquid boils when its vapor pressure reaches the outside pressure. The azeotrope reaches it at a lower temperature than either pure liquid, so at any given temperature its vapor pressure is higher, which goes with a positive deviation from Raoult's law."
+  },
+  {
+    "id": "pc24-volatile-binary-two-liquid-azeotrope",
+    "type": "multiple-choice",
+    "prompt": "Two partly miscible liquids form a minimum-boiling azeotrope. In the case of Example 24.6.2, how does the azeotrope's boiling temperature compare with the temperature at which the two liquid phases would become miscible?",
+    "choices": [
+      {
+        "text": "It is lower than that temperature",
+        "correct": true
+      },
+      {
+        "text": "It is higher than that temperature",
+        "why": "That is the other case the section describes, where the liquids are already one phase when the azeotrope boils. In Example 24.6.2 the azeotrope boils first."
+      },
+      {
+        "text": "It is exactly equal to that temperature",
+        "why": "Nothing ties the two temperatures together. In Example 24.6.2 the azeotrope boils below the temperature at which the liquids would mix."
+      },
+      {
+        "text": "It is a maximum, above both boiling points",
+        "why": "This azeotrope is minimum-boiling, below both pure liquids' boiling points. It also lies below the temperature at which the liquids would mix."
+      }
+    ],
+    "explanation": "The section describes two cases for partly miscible liquids with a minimum-boiling azeotrope. In one, the azeotrope boils above the temperature at which the liquids become one phase; in Example 24.6.2 it boils below it, so two liquid phases are still present at the boiling point."
+  },
+  {
+    "id": "pc24-volatile-binary-vapor-one-phase",
+    "type": "multiple-choice",
+    "prompt": "Example 24.6.2 labels region V of its diagram as vapor. Why is the vapor a single phase at every composition, even though the liquids are not?",
+    "choices": [
+      {
+        "text": "Gases mix in all proportions",
+        "correct": true
+      },
+      {
+        "text": "Only one of the two liquids evaporates",
+        "why": "Both liquids are volatile, so the vapor contains both. It is a single phase because gases are miscible at all mole fractions."
+      },
+      {
+        "text": "The vapor always has the azeotrope composition",
+        "why": "Only at point e do vapor and liquid share the azeotrope composition. Region V spans all compositions and is one phase because gases always mix."
+      },
+      {
+        "text": "The vapor is colder than the liquids",
+        "why": "Region V lies at the highest temperatures, above the boiling curves. The vapor is one phase because gases are miscible at all mole fractions."
+      }
+    ],
+    "explanation": "Two gases mix at any mole fraction, so the vapor is never split into two phases. Two liquid phases can coexist below the boiling curves, but above them region V is a single vapor phase."
+  },
+  {
+    "id": "pc24-volatile-binary-lever-regions",
+    "type": "multiple-choice",
+    "prompt": "Example 24.6.2 lists the regions of its diagram: I and II, one liquid (mostly A or mostly B); III and IV, a liquid plus vapor; V, vapor; and a two-phase liquid region. In which regions does the lever rule apply?",
+    "choices": [
+      {
+        "text": "In III, IV and the two-liquid region",
+        "correct": true
+      },
+      {
+        "text": "In regions I, II and V",
+        "why": "Those regions hold a single phase, so there is nothing to split between phases. The lever rule applies where two phases coexist."
+      },
+      {
+        "text": "Only in region V, the vapor region",
+        "why": "Region V is a single vapor phase. The lever rule gives the amounts of two coexisting phases, as in III, IV and the two-liquid region."
+      },
+      {
+        "text": "In every region of the diagram, I to V",
+        "why": "In a one-phase region the whole system has one composition, so no lever rule is needed. It applies only in the two-phase regions."
+      }
+    ],
+    "explanation": "The lever rule splits a system between two coexisting phases, using the tie line through the system's point. Regions III and IV (liquid plus vapor) and the two-phase liquid region qualify; I, II and V hold one phase."
+  },
+  {
+    "id": "pc24-volatile-binary-lever-ratio",
+    "type": "numeric",
+    "prompt": "In region III of Example 24.6.2, a system at point b splits into liquid with the composition at point a and vapor with the composition at point c. The tie line from b to a is 1.5 cm long, and from b to c it is 4.5 cm. Using the lever rule, (moles of liquid)/(moles of vapor) = (length bc)/(length ab), what is this ratio?",
+    "answer": 3,
+    "tolerance": 0,
+    "explanation": "(moles of liquid)/(moles of vapor) = 4.5 cm/1.5 cm = 3. Point b lies closer to the liquid end of the tie line, so most of the material is liquid."
+  },
+  {
+    "id": "pc24-volatile-binary-drop-p-standard",
+    "type": "multiple-choice",
+    "prompt": "The section writes μ_j = μ_j° + RT ln(P_j/P°) and then drops P° = 1 bar to get μ_j = μ_j° + RT ln P_j. Why does this not change any numbers?",
+    "choices": [
+      {
+        "text": "Dividing P_j by 1 bar leaves its value in bar",
+        "correct": true
+      },
+      {
+        "text": "RT ln P° is too small to matter",
+        "why": "RT ln P° is exactly zero when P° = 1 bar and P is in bar, since ln 1 = 0; nothing is approximated. P_j/P° simply has the same value as P_j in bar."
+      },
+      {
+        "text": "The pressure of the gas is always 1 bar",
+        "why": "P_j can be any pressure. Only the reference P° is 1 bar, and dividing by it leaves the number unchanged when P_j is in bar."
+      },
+      {
+        "text": "Chemical potentials do not depend on pressure",
+        "why": "μ_j does depend on P_j, through RT ln P_j. Dropping P° works only because dividing by 1 bar leaves the number unchanged."
+      }
+    ],
+    "explanation": "With P in bar, P_j/P° = P_j/(1 bar) has the same numerical value as P_j. So P_j can be treated as a dimensionless number, as the section notes."
+  },
+  {
+    "id": "pc24-volatile-binary-dx-sign",
+    "type": "multiple-choice",
+    "prompt": "On the way to its form of the Gibbs–Duhem equation, the section uses dx_1 = −dx_2 for a binary solution. Why does this hold?",
+    "choices": [
+      {
+        "text": "Because x_1 + x_2 = 1 at all times",
+        "correct": true
+      },
+      {
+        "text": "The two components have equal vapor pressures",
+        "why": "Vapor pressures do not enter this step. Since x_1 + x_2 = 1, a change in x_1 is matched by an opposite change in x_2."
+      },
+      {
+        "text": "Component 2 evaporates as component 1 condenses",
+        "why": "The relation is about the liquid's composition, not phase changes. It holds because the mole fractions always add up to 1."
+      },
+      {
+        "text": "It holds only when Raoult's law holds",
+        "why": "The step needs no law of vapor pressure. It follows from x_1 + x_2 = 1, which is true for any binary mixture."
+      }
+    ],
+    "explanation": "The mole fractions of a binary mixture always add up to 1, so if x_1 rises by dx_1, x_2 falls by the same amount. This lets the section cancel the dx terms and write x_1 (∂ln P_1)/(∂x_1) = x_2 (∂ln P_2)/(∂x_2)."
+  },
+  {
+    "id": "pc24-volatile-binary-raoult-slope",
+    "type": "multiple-choice",
+    "prompt": "If component 1 obeys Raoult's law, P_1 = x_1 P_1^*, what is (∂ln P_1)/(∂x_1)?",
+    "choices": [
+      {
+        "text": "1/x_1",
+        "correct": true
+      },
+      {
+        "text": "P_1^*",
+        "why": "P_1^* is the slope of P_1 against x_1, not of ln P_1. Since ln P_1 = ln x_1 + ln P_1^*, the slope is 1/x_1."
+      },
+      {
+        "text": "x_1",
+        "why": "The derivative of ln x_1 is 1/x_1, not x_1. The constant ln P_1^* drops out."
+      },
+      {
+        "text": "1/P_1^*",
+        "why": "ln P_1^* is a constant, so it adds nothing to the slope. Only ln x_1 changes, giving 1/x_1."
+      }
+    ],
+    "explanation": "ln P_1 = ln x_1 + ln P_1^*, and P_1^* is a constant. So (∂ln P_1)/(∂x_1) = 1/x_1, which the section puts into the Gibbs–Duhem equation to find the law for component 2."
+  },
+  {
+    "id": "pc24-volatile-binary-raoult-implies-henry",
+    "type": "multiple-choice",
+    "prompt": "Using the Gibbs–Duhem equation, the section asks what follows if component 1 obeys Raoult's law as x_1 → 1. What must component 2 then obey as x_2 → 0?",
+    "choices": [
+      {
+        "text": "Henry's law, P_2 = K x_2",
+        "correct": true
+      },
+      {
+        "text": "Raoult's law, P_2 = x_2 P_2^*",
+        "why": "That is only the ideal special case, where K = P_2^*. In general Gibbs–Duhem gives P_2 = K x_2, with K not necessarily equal to P_2^*."
+      },
+      {
+        "text": "Dalton's law, P_2 = y_2 P_tot",
+        "why": "Dalton's law describes the vapor, whatever the liquid does. Gibbs–Duhem links the two components of the solution and gives Henry's law, P_2 = K x_2."
+      },
+      {
+        "text": "No law; component 2 is left free",
+        "why": "Gibbs–Duhem ties the two components together, so component 2 is not free. Its pressure must follow P_2 = K x_2, Henry's law."
+      }
+    ],
+    "explanation": "With P_1 = x_1 P_1^*, the Gibbs–Duhem form gives 1/x_2 = (∂ln P_2)/(∂x_2), which integrates to ln P_2 = ln(K x_2). So when one component follows Raoult's law, the other follows Henry's law, and vice versa."
+  },
+  {
+    "id": "pc24-volatile-binary-ideal-k",
+    "type": "multiple-choice",
+    "prompt": "The section finds P_2 = K x_2 for x_2 → 0, with K a constant. What is special about K in an ideal solution?",
+    "choices": [
+      {
+        "text": "K = P_2^*, and the line holds at all x_2",
+        "correct": true
+      },
+      {
+        "text": "K = 0, since there is no deviation",
+        "why": "K = 0 would mean component 2 has no vapor pressure at all. In the ideal case K equals P_2^*, and the straight line runs over the whole range."
+      },
+      {
+        "text": "K = 1 bar, the standard pressure",
+        "why": "K belongs to the component in this mixture, not to a reference pressure. In the ideal case it becomes the pure vapor pressure P_2^*."
+      },
+      {
+        "text": "K is larger than P_2^* for every ideal pair",
+        "why": "If K differed from P_2^*, Henry's and Raoult's lines would differ, which is not ideal. In the ideal case K = P_2^*."
+      }
+    ],
+    "explanation": "In an ideal solution Henry's law and Raoult's law coincide: K becomes P_2^*, and P_2 = x_2 P_2^* holds from x_2 = 0 to 1. The ideal case is a special case of the general result."
+  },
+  {
+    "id": "pc24-volatile-binary-gd-slope",
+    "type": "numeric",
+    "prompt": "The section's form of the Gibbs–Duhem equation is x_1 (∂ln P_1)/(∂x_1) = x_2 (∂ln P_2)/(∂x_2). At x_1 = 0.800 and x_2 = 0.200, (∂ln P_1)/(∂x_1) = 1.25. What is (∂ln P_2)/(∂x_2)?",
+    "answer": 5,
+    "tolerance": 0,
+    "explanation": "(∂ln P_2)/(∂x_2) = (0.800 × 1.25)/0.200 = 1.00/0.200 = 5.00. Here 1.25 = 1/x_1, Raoult's law for component 1, and 5.00 = 1/x_2, just as Henry's law for component 2 requires."
+  },
+  {
+    "id": "pc24-volatile-binary-margules-other-x",
+    "type": "multiple-choice",
+    "prompt": "For component 1, the Margules function is f_Mar = exp[α x_2^2 + β x_2^3 + δ x_2^4 + …]. Whose mole fraction does it use?",
+    "choices": [
+      {
+        "text": "That of the other component, x_2",
+        "correct": true
+      },
+      {
+        "text": "That of component 1 itself, x_1",
+        "why": "The series is written in x_2, the mole fraction of the opposite component. It measures how far component 1 is from being pure."
+      },
+      {
+        "text": "That of component 1 in the vapor, y_1",
+        "why": "f_Mar uses a liquid mole fraction, and specifically x_2. It corrects P_1 = x_1 P_1^* according to how much of the other component is present."
+      },
+      {
+        "text": "None; f_Mar is one fixed number",
+        "why": "f_Mar changes with composition through x_2. Only its parameters α, β and δ are constants."
+      }
+    ],
+    "explanation": "The Margules function for P_1 is a series in x_2, the mole fraction of the opposite component. The more of component 2 is present, the more P_1 can differ from Raoult's law."
+  },
+  {
+    "id": "pc24-volatile-binary-margules-pure-limit",
+    "type": "multiple-choice",
+    "prompt": "For component 1, P_1 = x_1 P_1^* f_Mar with f_Mar = exp[α x_2^2 + β x_2^3 + …]. What happens as x_2 → 0?",
+    "choices": [
+      {
+        "text": "f_Mar → 1, so P_1 → x_1 P_1^*",
+        "correct": true
+      },
+      {
+        "text": "f_Mar → 0, so P_1 → 0",
+        "why": "exp(0) = 1, not 0. The exponent goes to 0 with x_2, so f_Mar → 1 and Raoult's law is recovered."
+      },
+      {
+        "text": "f_Mar → exp(α), a constant above 1",
+        "why": "The exponent is α x_2^2 + …, which goes to 0 with x_2. So f_Mar → exp(0) = 1, not exp(α)."
+      },
+      {
+        "text": "P_1 switches to Henry's law, P_1 = K x_1",
+        "why": "Henry's law describes a component at low mole fraction. As x_2 → 0, component 1 is nearly pure and follows Raoult's law, since f_Mar → 1."
+      }
+    ],
+    "explanation": "Every term in the exponent contains a power of x_2, and the series has no constant term, so the exponent goes to 0 and f_Mar → 1. P_1 then follows Raoult's law near pure component 1, as it should."
+  },
+  {
+    "id": "pc24-volatile-binary-margules-parameters",
+    "type": "multiple-choice",
+    "prompt": "What does the section say decides how many Margules parameters (α, β, δ, …) a system needs?",
+    "choices": [
+      {
+        "text": "How far the system is from ideal",
+        "correct": true
+      },
+      {
+        "text": "Every system needs exactly three",
+        "why": "The series goes on past α, β and δ. A system close to ideal needs few parameters; one far from ideal needs more."
+      },
+      {
+        "text": "The two pure vapor pressures alone",
+        "why": "The parameters are found by experiment, not from P^* values. How many are needed depends on how far the system is from ideal."
+      },
+      {
+        "text": "Ideal solutions need the most",
+        "why": "An ideal solution needs none, since Raoult's law alone describes it. The further a system is from ideal, the more parameters it needs."
+      }
+    ],
+    "explanation": "Unlike Henry's law, which covers only the extremes, a Margules function can describe the whole composition range of a moderately non-ideal system. Its parameters α, β, δ, … are found by experiment, and the more a system diverges from ideality, the more of them are needed."
+  },
+  {
+    "id": "pc24-volatile-binary-margules-p2",
+    "type": "multiple-choice",
+    "prompt": "Once the Margules function for P_1 has been found, how does the section say the expression for P_2 is obtained?",
+    "choices": [
+      {
+        "text": "From it, using the Gibbs–Duhem equation",
+        "correct": true
+      },
+      {
+        "text": "Only by a separate fit to measured P_2",
+        "why": "P_2 could be measured, but it does not have to be. Gibbs–Duhem turns the expression for P_1 into the one for P_2."
+      },
+      {
+        "text": "By assuming Raoult's law for P_2 everywhere",
+        "why": "Component 2 is just as non-ideal as component 1. Gibbs–Duhem gives its pressure from the expression for P_1."
+      },
+      {
+        "text": "From Henry's law over the whole range",
+        "why": "Henry's law holds only near x_2 → 0. Gibbs–Duhem turns the expression for P_1 into a full expression for P_2."
+      }
+    ],
+    "explanation": "The Gibbs–Duhem equation ties the two components' chemical potentials, and so their vapor pressures, together. Once the Margules function for P_1 is known, it fixes the expression for P_2."
+  },
+  {
+    "id": "pc24-volatile-binary-margules-pressure",
+    "type": "numeric",
+    "prompt": "Liquid 1 has a pure vapor pressure P_1^* = 40.0 kPa. In a mixture with x_1 = 0.600, its Margules function is f_Mar = 1.15. Using P_1 = x_1 P_1^* f_Mar, what is P_1, in kPa? (Give it as a decimal.)",
+    "answer": 27.6,
+    "unit": "kPa",
+    "explanation": "P_1 = (0.600)(40.0 kPa)(1.15) = 24.0 kPa × 1.15 = 27.6 kPa. Raoult's law alone would give 24.0 kPa; f_Mar > 1 lifts P_1 above it, a positive deviation."
+  }
+]

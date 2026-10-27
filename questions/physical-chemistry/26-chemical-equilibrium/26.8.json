@@ -1,0 +1,501 @@
+[
+  {
+    "id": "pc26-partition-k-general-form",
+    "type": "multiple-choice",
+    "prompt": "For a gas reaction ν_A A + ν_B B ⇌ ν_C C + ν_D D, the section writes K_c in terms of molecular partition functions. How does each species' partition function q enter K_c?",
+    "choices": [
+      {
+        "text": "As q/V raised to its coefficient, products over reactants",
+        "correct": true
+      },
+      {
+        "text": "As q alone, raised to its coefficient, reactants over products",
+        "why": "Products go on top, as in any K_c. Each q is also divided by V, so that it matches a concentration."
+      },
+      {
+        "text": "As a sum of q/V values, products minus reactants",
+        "why": "The condition Σ_j ν_j(ln q_j − ln N_j) = 0 is a sum of logarithms, which becomes a product of powers. So the q/V values are multiplied, not added."
+      },
+      {
+        "text": "As q/V, with every species to the first power",
+        "why": "The coefficients matter: 2HCl in the equation gives (q_HCl/V)^2. Each q/V is raised to its stoichiometric coefficient."
+      }
+    ],
+    "explanation": "Each q is divided by V and raised to the power of its stoichiometric coefficient, products on top and reactants below, just like the concentrations in K_c. For H2 + Cl2 ⇌ 2HCl this gives K_c = ((q_HCl/V)^2)/((q_H2/V)(q_Cl2/V))."
+  },
+  {
+    "id": "pc26-partition-k-divide-by-v",
+    "type": "multiple-choice",
+    "prompt": "At equilibrium the section first finds that a ratio of the q's, each raised to its coefficient, equals the same ratio of the molecule numbers N_j. Why does it then divide every q and every N_j by the volume V?",
+    "choices": [
+      {
+        "text": "N_j/V is a concentration, so the ratio becomes K_c",
+        "correct": true
+      },
+      {
+        "text": "It makes every q/V equal to 1",
+        "why": "q/V is a large number per unit volume, not 1. Dividing by V turns each N_j into a number density, which is a concentration."
+      },
+      {
+        "text": "It removes the temperature from the result",
+        "why": "q/V still depends on T, which is why the example writes K_c(T). Dividing by V turns each N_j into a concentration, N_j/V."
+      },
+      {
+        "text": "It corrects for each gas having its own separate volume",
+        "why": "All the gases share the same container volume V. Dividing by it turns each N_j into a number density, which is a concentration."
+      }
+    ],
+    "explanation": "N_j/V is the number of molecules per unit volume, the number density, which is the concentration of species j. Dividing through by V turns the ratio of molecule numbers into K_c, and each q becomes q/V."
+  },
+  {
+    "id": "pc26-partition-k-so3-expression",
+    "type": "multiple-choice",
+    "prompt": "For the gas reaction 2SO2 + O2 ⇌ 2SO3, which expression gives K_c in terms of the molecular partition functions?",
+    "choices": [
+      {
+        "text": "((q_SO3/V)^2)/((q_SO2/V)^2(q_O2/V))",
+        "correct": true
+      },
+      {
+        "text": "((q_SO2/V)^2(q_O2/V))/((q_SO3/V)^2)",
+        "why": "This puts the reactants on top. As in any K_c, the products go in the numerator."
+      },
+      {
+        "text": "(2q_SO3/V)/(2q_SO2/V + q_O2/V)",
+        "why": "Coefficients become powers, not multipliers, and the reactant terms are multiplied, not added."
+      },
+      {
+        "text": "(q_SO3/V)/((q_SO2/V)(q_O2/V))",
+        "why": "The coefficients of 2 must appear as powers: (q_SO3/V)^2 on top and (q_SO2/V)^2 below."
+      }
+    ],
+    "explanation": "Products go in the numerator and reactants in the denominator, each q/V raised to its stoichiometric coefficient. SO3 and SO2 have coefficients of 2 and O2 has 1, so K_c = ((q_SO3/V)^2)/((q_SO2/V)^2(q_O2/V))."
+  },
+  {
+    "id": "pc26-partition-k-what-is-needed",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what must be known to calculate an equilibrium constant from statistical mechanics?",
+    "choices": [
+      {
+        "text": "The molecular partition function of every species",
+        "correct": true
+      },
+      {
+        "text": "Only the partition functions of the products",
+        "why": "The reactants' q/V values form the denominator of K_c, so they are needed too."
+      },
+      {
+        "text": "The rates of the forward and reverse reactions",
+        "why": "Equal rates describe equilibrium, but the section's K_c needs no kinetics. It is built from the molecular partition functions of all the species."
+      },
+      {
+        "text": "The measured equilibrium concentrations of all species",
+        "why": "Measured concentrations give K_c by experiment. The section's point is that K_c can be calculated from molecular partition functions instead."
+      }
+    ],
+    "explanation": "Since K_c is a ratio of the q/V values of the products and reactants, knowing the molecular partition function of every species is enough to calculate it. Those partition functions in turn come from molecular data such as masses, Θ_r, Θ_v and D_0."
+  },
+  {
+    "id": "pc26-partition-k-lambda-sign",
+    "type": "multiple-choice",
+    "prompt": "The section follows the reaction with a variable λ, defined by dN_j = ν_j dλ for each species j. What sign does it give ν_j?",
+    "choices": [
+      {
+        "text": "Positive for products, negative for reactants",
+        "correct": true
+      },
+      {
+        "text": "Positive for reactants, negative for products",
+        "why": "As λ increases the reaction moves forward: products are made and reactants are used up. So ν_j is positive for products and negative for reactants."
+      },
+      {
+        "text": "Positive for every species",
+        "why": "Then every N_j would grow as λ increases. Reactants are used up, so their ν_j is negative."
+      },
+      {
+        "text": "Zero for any species present in excess",
+        "why": "ν_j is the stoichiometric coefficient, fixed by the equation. It is positive for products and negative for reactants, whatever the amounts."
+      }
+    ],
+    "explanation": "With this sign convention, an increase dλ raises the number of each product molecule and lowers the number of each reactant molecule, in the ratio of the coefficients. λ plays the role of an extent of reaction."
+  },
+  {
+    "id": "pc26-partition-k-helmholtz-minimum",
+    "type": "multiple-choice",
+    "prompt": "In the section's derivation the temperature and volume are held fixed. Which quantity is at a minimum at equilibrium, so that its derivative with respect to λ is zero?",
+    "choices": [
+      {
+        "text": "The Helmholtz energy A",
+        "correct": true
+      },
+      {
+        "text": "The total partition function Q",
+        "why": "Since A = −k_B T ln Q, a minimum of A is a maximum of Q, not a minimum. At fixed T and V it is A that is minimized."
+      },
+      {
+        "text": "The internal energy U",
+        "why": "At fixed T and V, energy alone does not decide equilibrium; entropy matters too. The quantity minimized is A = U − TS."
+      },
+      {
+        "text": "The number of product molecules",
+        "why": "Products are not at a minimum at equilibrium. It is the Helmholtz energy A that is at a minimum, with (∂A/∂λ)_(T,V) = 0."
+      }
+    ],
+    "explanation": "At constant T and V, as in the canonical ensemble, a reaction proceeds until A reaches its minimum, where (∂A/∂λ)_(T,V) = 0. The section uses A because it links to the partition function through A = −k_B T ln Q."
+  },
+  {
+    "id": "pc26-partition-k-only-t",
+    "type": "multiple-choice",
+    "prompt": "The translational part of q is proportional to V, so each q/V depends on the temperature but not on the volume. What does this mean for the K_c built from them?",
+    "choices": [
+      {
+        "text": "K_c depends only on the temperature",
+        "correct": true
+      },
+      {
+        "text": "K_c depends only on the volume",
+        "why": "The V's have already been divided out. Each q/V, and hence K_c, depends on T alone; the example writes it as K_c(T)."
+      },
+      {
+        "text": "K_c rises as the gas is compressed",
+        "why": "Compressing the gas changes the concentrations, not K_c. Since each q/V is independent of V, K_c depends only on T."
+      },
+      {
+        "text": "K_c is the same at every temperature",
+        "why": "Each q/V changes with T, through T^(3/2), T/(σΘ_r) and the Boltzmann factors. K_c is a function of T, not a constant."
+      }
+    ],
+    "explanation": "Dividing q by V leaves a quantity that depends on T alone, so K_c is a function of temperature only. That is why Example 26.8.1 writes K_c(T)."
+  },
+  {
+    "id": "pc26-partition-k-units-n2o4",
+    "type": "multiple-choice",
+    "prompt": "For N2O4 ⇌ 2NO2, K_c = ((q_NO2/V)^2)/(q_N2O4/V), and each q/V is in m^−3. What units does this K_c have?",
+    "choices": [
+      {
+        "text": "m^−3",
+        "correct": true
+      },
+      {
+        "text": "None; K_c is always unitless",
+        "why": "K_c is unitless only when both sides have the same number of molecules, as in H2 + Cl2 ⇌ 2HCl. Here the top has (m^−3)^2 and the bottom m^−3, leaving m^−3."
+      },
+      {
+        "text": "m^−6",
+        "why": "That counts only the numerator's (m^−3)^2. Dividing by the m^−3 of N2O4 leaves m^−3."
+      },
+      {
+        "text": "m^3",
+        "why": "The extra molecule is on the product side, in the numerator, so the leftover unit is m^−3, not m^3."
+      }
+    ],
+    "explanation": "(m^−3)^2/(m^−3) = m^−3: one more molecule on the product side leaves one per-volume unit. K_c built from q/V values is unitless only when both sides have the same number of gas molecules."
+  },
+  {
+    "id": "pc26-partition-k-translational-cancel",
+    "type": "multiple-choice",
+    "prompt": "Each translational factor per volume is ((2πmk_B T)/h^2)^(3/2). In K_c for H2 + Cl2 ⇌ 2HCl, why do the powers of T from these factors cancel, along with their units of m^−3?",
+    "choices": [
+      {
+        "text": "Each side has two molecules",
+        "correct": true
+      },
+      {
+        "text": "Total mass is the same on both sides",
+        "why": "Mass is conserved, but that does not make the translational ratio 1: it is 28.36. The T^(3/2) parts cancel because two factors are on top and two below."
+      },
+      {
+        "text": "The translational factors are all equal",
+        "why": "They differ, because the masses differ. Only their T^(3/2) parts and units cancel, since two molecules appear on each side."
+      },
+      {
+        "text": "Translation is frozen out at 650 K",
+        "why": "Translation is never frozen out; its factors are huge numbers. Their T^(3/2) parts and units cancel because there are two factors on top and two below."
+      }
+    ],
+    "explanation": "The numerator has (q_HCl/V)^2 and the denominator (q_H2/V)(q_Cl2/V), two factors each. So the T^(3/2) parts and the m^−3 units cancel, K_c has no units, and only the mass ratio (m_HCl^2/(m_H2 m_Cl2))^(3/2) = 28.36 is left."
+  },
+  {
+    "id": "pc26-partition-k-translational-ratio",
+    "type": "numeric",
+    "prompt": "In Example 26.8.1, each translational factor per volume is ((2πmk_B T)/h^2)^(3/2), so at a fixed temperature the translational ratio in K_c for H2 + Cl2 ⇌ 2HCl is (m_HCl^2/(m_H2 m_Cl2))^(3/2). The mass ratio inside the brackets is 9.30. What is the translational ratio? (Give it as a decimal.)",
+    "answer": 28.4,
+    "explanation": "The translational ratio is 9.30^(3/2) = 9.30 × √9.30 = 9.30 × 3.05 = 28.4. It is above 1 because squaring the mass of HCl gives more than the product of the H2 and Cl2 masses, and heavier molecules have more translational states per volume."
+  },
+  {
+    "id": "pc26-partition-k-rotational-ratio",
+    "type": "numeric",
+    "prompt": "In Example 26.8.1 at 650 K, the rotational factors T/(σΘ_r) are 42.76 for HCl, 3.71 for H2 and 925.9 for Cl2. In K_c for H2 + Cl2 ⇌ 2HCl they combine as the HCl factor squared, divided by the product of the H2 and Cl2 factors. What is this rotational ratio? (Give it as a decimal.)",
+    "answer": 0.532,
+    "explanation": "((42.76)^2)/((3.71)(925.9)) = 1828/3435 = 0.532. It is below 1 mainly because Cl2, with its tiny Θ_r = 0.351 K, has a very large rotational factor, and Cl2 is a reactant."
+  },
+  {
+    "id": "pc26-partition-k-symmetry-factor",
+    "type": "numeric",
+    "prompt": "In Example 26.8.1, each rotational factor is T/(σΘ_r), with symmetry number σ = 1 for HCl and σ = 2 for H2 and for Cl2. Compared with a calculation that wrongly sets every σ = 1, by what factor do the correct symmetry numbers multiply K_c for H2 + Cl2 ⇌ 2HCl?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Each σ divides its own q. H2 and Cl2 are in the denominator of K_c, so halving each of their q's multiplies K_c by 2 × 2 = 4; HCl's σ = 1 changes nothing."
+  },
+  {
+    "id": "pc26-partition-k-vibration-ratio",
+    "type": "multiple-choice",
+    "prompt": "In Example 26.8.1 at 650 K, the vibrational factors are 1.00 for H2 (Θ_v = 6125 K), 1.41 for Cl2 (Θ_v = 808 K) and 1.0013 for HCl (Θ_v = 4303 K). Why is the vibrational ratio in K_c, 0.711, below 1?",
+    "choices": [
+      {
+        "text": "Cl2, a reactant, has the largest factor",
+        "correct": true
+      },
+      {
+        "text": "HCl's vibration is fully excited at 650 K",
+        "why": "HCl has Θ_v = 4303 K, far above 650 K, so its factor is only 1.0013. The ratio is below 1 because the reactant Cl2 has the largest factor."
+      },
+      {
+        "text": "Every vibrational factor is below 1",
+        "why": "1/(1 − exp(−Θ_v/T)) is always at least 1. The ratio is below 1 because a reactant, Cl2, has the largest factor."
+      },
+      {
+        "text": "H2, a reactant, has the largest factor",
+        "why": "H2's Θ_v = 6125 K is far above 650 K, so its factor is 1.00. Cl2's low Θ_v gives it the largest factor, 1.41, and it sits in the denominator."
+      }
+    ],
+    "explanation": "The ratio is (1.0013)^2/((1.00)(1.41)) = 0.711. Cl2's low Θ_v = 808 K puts excited vibrational levels within reach at 650 K, which gives the reactant side more states and slightly lowers K_c."
+  },
+  {
+    "id": "pc26-partition-k-energy-zero",
+    "type": "multiple-choice",
+    "prompt": "In Example 26.8.1 each electronic factor is g_1 exp(D_0/(k_B T)), with a plus sign in the exponent, where D_0 is the molecule's dissociation energy. Where does this put the zero of energy?",
+    "choices": [
+      {
+        "text": "At the separated atoms",
+        "correct": true
+      },
+      {
+        "text": "At the molecule's own ground state",
+        "why": "Then the electronic factor would be just g_1. The factor exp(D_0/(k_B T)) means the ground state lies D_0 below the zero, at the separated atoms."
+      },
+      {
+        "text": "At the bottom of each molecule's potential well",
+        "why": "The ground state lies above the bottom of the well, which would give a minus sign. The plus sign means the ground state lies D_0 below the zero, the separated atoms."
+      },
+      {
+        "text": "At the molecule's first excited electronic state",
+        "why": "Excited electronic states play no part here. The plus sign means the ground state lies D_0 below the zero of energy, which is the separated atoms."
+      }
+    ],
+    "explanation": "A ground state at energy −D_0 has the Boltzmann factor exp(−(−D_0)/(k_B T)) = exp(D_0/(k_B T)). So every molecule's energy is measured from its separated atoms, and a stronger bond (larger D_0) gives a larger factor."
+  },
+  {
+    "id": "pc26-partition-k-common-zero",
+    "type": "multiple-choice",
+    "prompt": "Why must the partition functions of all the reactants and products in K_c be measured from one common zero of energy?",
+    "choices": [
+      {
+        "text": "So the reaction's energy change appears in K_c",
+        "correct": true
+      },
+      {
+        "text": "So that every q comes out equal to 1",
+        "why": "A shared zero does not make the q's equal. It makes the difference in ground-state energies, ΔE_0, appear in K_c through the electronic factors."
+      },
+      {
+        "text": "Because partition functions have units of energy",
+        "why": "q is a unitless sum of Boltzmann factors. A shared zero is needed so that the energy released or absorbed by the reaction shows up in K_c."
+      },
+      {
+        "text": "So that the symmetry numbers cancel out",
+        "why": "Symmetry numbers belong to the rotational factors and have nothing to do with the energy zero. A shared zero lets the reaction's energy change appear in K_c."
+      }
+    ],
+    "explanation": "With one zero for every species (in the example, the separated atoms), the electronic factors combine to exp(−ΔE_0/(k_B T)), where ΔE_0 is the change in ground-state energy. If each molecule used its own ground state as zero, the energy released by forming stronger bonds would drop out of K_c."
+  },
+  {
+    "id": "pc26-partition-k-d0-level",
+    "type": "multiple-choice",
+    "prompt": "In Example 26.8.1 the vibrational factor is 1/(1 − exp(−Θ_v/T)), which counts vibrational energy from the v = 0 level. The electronic factor uses D_0, the energy needed to break the bond. From which level is D_0 measured?",
+    "choices": [
+      {
+        "text": "From the v = 0 level",
+        "correct": true
+      },
+      {
+        "text": "From the bottom of the potential well",
+        "why": "The energy from the bottom of the well is D_e, which is larger by the zero-point energy. Since vibrational energy is counted from v = 0, the matching dissociation energy is D_0."
+      },
+      {
+        "text": "From the v = 1 level",
+        "why": "The vibrational factor counts energy from v = 0, the lowest level, not from v = 1. D_0 is measured from v = 0 too."
+      },
+      {
+        "text": "From the separated atoms",
+        "why": "The separated atoms are where D_0 ends, not where it starts. It is the energy needed to go from the v = 0 level up to them."
+      }
+    ],
+    "explanation": "Both factors must use the same reference. Counting vibrational energy from v = 0 places each molecule's ground state D_0 below its separated atoms, where D_0 is the well depth D_e minus the zero-point energy."
+  },
+  {
+    "id": "pc26-partition-k-delta-e0",
+    "type": "numeric",
+    "prompt": "In Example 26.8.1 (H2 + Cl2 ⇌ 2HCl), each molecule's ground state lies D_0 below its separated atoms. The table gives D_0 = 431.9 kJ/mol for H2, 239.0 kJ/mol for Cl2 and 427.7 kJ/mol for HCl. Using ΔE_0 = D_0(H2) + D_0(Cl2) − 2D_0(HCl), what is ΔE_0, the change in ground-state energy for the reaction, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -184.5,
+    "explanation": "ΔE_0 = 431.9 + 239.0 − 2(427.7) = 670.9 − 855.4 = −184.5 kJ/mol. The products lie lower than the reactants, so the electronic ratio in K_c, exp(−ΔE_0/(RT)), is far above 1."
+  },
+  {
+    "id": "pc26-partition-k-d0-over-rt",
+    "type": "numeric",
+    "prompt": "In Example 26.8.1, the electronic factor of Cl2 at 650 K is exp(D_0/(RT)), with D_0 = 239.0 kJ/mol. Because D_0 is given per mole, it is divided by RT rather than k_B T. Using R = 8.3145 J/(mol·K), what is D_0/(RT)? (Give it as a decimal.)",
+    "answer": 44.2,
+    "explanation": "D_0/(RT) = (239,000)/(8.3145 × 650) = 239,000/5404 = 44.2, with D_0 turned into J/mol first. The electronic factor is then exp(44.2) = 1.6 × 10^19, a huge number because the bond holds the ground state far below the separated atoms."
+  },
+  {
+    "id": "pc26-partition-k-temperature-electronic",
+    "type": "multiple-choice",
+    "prompt": "For H2 + Cl2 ⇌ 2HCl the products lie lower in energy than the reactants (ΔE_0 < 0), so the electronic ratio in K_c, exp(−ΔE_0/(RT)), is far above 1. How does this ratio change as the temperature rises?",
+    "choices": [
+      {
+        "text": "It decreases, so K_c tends to fall",
+        "correct": true
+      },
+      {
+        "text": "It increases, so K_c tends to rise",
+        "why": "−ΔE_0/(RT) is positive and shrinks as T grows, so the exponential falls. Higher T favors the reactants of this exothermic reaction."
+      },
+      {
+        "text": "It stays the same; only q_trans depends on T",
+        "why": "The exponent has T in its denominator, so the electronic ratio does depend on T. It falls as T rises."
+      },
+      {
+        "text": "It becomes negative above some temperature",
+        "why": "An exponential is always positive. It shrinks toward 1 as T rises, but never turns negative."
+      }
+    ],
+    "explanation": "With ΔE_0 < 0, the exponent −ΔE_0/(RT) is positive and gets smaller as T rises, so the electronic ratio falls toward 1. This matches Le Chatelier's principle for an exothermic reaction: heating shifts the equilibrium toward the reactants."
+  },
+  {
+    "id": "pc26-partition-k-degeneracy",
+    "type": "multiple-choice",
+    "prompt": "In Example 26.8.1 every electronic factor is g_1 exp(D_0/(k_B T)) with g_1 = 1. If one reactant with a coefficient of 1 instead had a triply degenerate ground state, g_1 = 3, with nothing else changed, how would K_c change?",
+    "choices": [
+      {
+        "text": "It would be divided by 3",
+        "correct": true
+      },
+      {
+        "text": "It would be multiplied by 3",
+        "why": "A reactant's q sits in the denominator of K_c, so tripling it divides K_c by 3. A product with g_1 = 3 would multiply K_c by 3."
+      },
+      {
+        "text": "It would not change; only D_0 matters",
+        "why": "g_1 multiplies the reactant's q directly, and that q is in the denominator. K_c is divided by 3."
+      },
+      {
+        "text": "It would be divided by 9",
+        "why": "Only one q is tripled, and its coefficient is 1, so K_c is divided by 3, not by 3^2."
+      }
+    ],
+    "explanation": "g_1 multiplies that reactant's partition function, and reactants sit in the denominator of K_c. More states on the reactant side shift the equilibrium toward the reactants, dividing K_c by 3."
+  },
+  {
+    "id": "pc26-partition-k-product-of-ratios",
+    "type": "numeric",
+    "prompt": "Example 26.8.1 splits K_c for H2 + Cl2 ⇌ 2HCl at 650 K into four ratios: translational 28.36, rotational 0.5323, vibrational 0.711 and electronic 6.704 × 10^14. Since each q is a product of these four kinds of factor, K_c is the product of the four ratios. What is K_c? (Type it in scientific notation, like 2.5e15.)",
+    "answer": 7200000000000000.0,
+    "explanation": "K_c = 28.36 × 0.5323 × 0.711 × (6.704 × 10^14) = 10.73 × (6.704 × 10^14) = 7.20 × 10^15. Such a large K_c means HCl is overwhelmingly favored at equilibrium."
+  },
+  {
+    "id": "pc26-partition-k-dominant-factor",
+    "type": "multiple-choice",
+    "prompt": "Example 26.8.1 finds K_c ≈ 7.2 × 10^15 for H2 + Cl2 ⇌ 2HCl at 650 K as a product of four ratios. Which ratio is responsible for most of this large value?",
+    "choices": [
+      {
+        "text": "The electronic ratio",
+        "correct": true
+      },
+      {
+        "text": "The translational ratio",
+        "why": "It is 28.36, which raises K_c only modestly. The electronic ratio, 6.70 × 10^14, accounts for most of the value."
+      },
+      {
+        "text": "The rotational ratio",
+        "why": "It is 0.5323, below 1, so it slightly lowers K_c. The electronic ratio, 6.70 × 10^14, dominates."
+      },
+      {
+        "text": "The vibrational ratio",
+        "why": "It is 0.711, so it slightly lowers K_c. The electronic ratio, 6.70 × 10^14, dominates."
+      }
+    ],
+    "explanation": "The four ratios are 28.36 (translational), 0.5323 (rotational), 0.711 (vibrational) and 6.70 × 10^14 (electronic). The electronic ratio, which carries the dissociation energies, is what makes K_c so large."
+  },
+  {
+    "id": "pc26-partition-k-bond-reason",
+    "type": "multiple-choice",
+    "prompt": "The section says the large K_c for H2 + Cl2 ⇌ 2HCl comes mainly from the electronic partition functions. What chemical fact lies behind this?",
+    "choices": [
+      {
+        "text": "Two H–Cl bonds are stronger than H–H plus Cl–Cl",
+        "correct": true
+      },
+      {
+        "text": "HCl molecules are heavier than H2 molecules",
+        "why": "Mass enters the translational ratio, 28.36, which is modest. The large electronic ratio comes from bond strengths."
+      },
+      {
+        "text": "Cl2 has many low-lying vibrational levels",
+        "why": "That favors the reactant Cl2 and gives a vibrational ratio below 1. The large factor comes from the bonds: two H–Cl bonds outweigh one H–H and one Cl–Cl bond."
+      },
+      {
+        "text": "HCl has a more degenerate ground electronic state",
+        "why": "The example uses g_1 = 1 for every species. The large electronic ratio comes from bond energies, not degeneracies."
+      }
+    ],
+    "explanation": "Two very strong H–Cl bonds (D_0 = 427.7 kJ/mol each) are formed at the expense of a very strong H–H bond (431.9 kJ/mol) and a relatively weak Cl–Cl bond (239.0 kJ/mol). The electronic factors, exp(D_0/(RT)) for each molecule, turn this energy advantage into a huge ratio."
+  },
+  {
+    "id": "pc26-partition-k-states-view",
+    "type": "multiple-choice",
+    "prompt": "Example 26.8.1 finds K_c ≈ 7.2 × 10^15 for H2 + Cl2 ⇌ 2HCl at 650 K. How does the section explain this from a statistical mechanics point of view?",
+    "choices": [
+      {
+        "text": "HCl has more accessible states",
+        "correct": true
+      },
+      {
+        "text": "HCl molecules move faster than H2",
+        "why": "Heavier molecules move more slowly, and speed does not set K_c. The section's point is that the product HCl has more accessible states than the reactants."
+      },
+      {
+        "text": "The reaction is fast at 650 K",
+        "why": "K_c says where equilibrium lies, not how fast it is reached. The section explains it by HCl having more accessible states than the reactants."
+      },
+      {
+        "text": "H2 and Cl2 have no excited states",
+        "why": "Cl2 has many rotational and some vibrational states within reach at 650 K. The point is that HCl has even more accessible states, mostly because of its strong bonds."
+      }
+    ],
+    "explanation": "A large K_c means products dominate at equilibrium, so the reaction proceeds spontaneously toward HCl. In statistical terms, the product HCl has more states accessible to it than the reactants, largely because its strong bonds put its ground state lower."
+  },
+  {
+    "id": "pc26-partition-k-reverse",
+    "type": "multiple-choice",
+    "prompt": "Example 26.8.1 gives K_c = ((q_HCl/V)^2)/((q_H2/V)(q_Cl2/V)) ≈ 7.2 × 10^15 for H2 + Cl2 ⇌ 2HCl at 650 K. What is K_c for the reverse reaction, 2HCl ⇌ H2 + Cl2, at the same temperature?",
+    "choices": [
+      {
+        "text": "About 1.4 × 10^−16",
+        "correct": true
+      },
+      {
+        "text": "About 7.2 × 10^15, the same",
+        "why": "Reversing the reaction swaps the numerator and denominator. The new K_c is 1/(7.2 × 10^15) ≈ 1.4 × 10^−16."
+      },
+      {
+        "text": "About 8.5 × 10^7, its square root",
+        "why": "A square root would go with halving every coefficient. Reversing the reaction flips the ratio: 1/(7.2 × 10^15) ≈ 1.4 × 10^−16."
+      },
+      {
+        "text": "About 3.6 × 10^15, half as large",
+        "why": "Reversing the reaction does not halve K_c; it flips the ratio of partition functions. The result is 1/(7.2 × 10^15) ≈ 1.4 × 10^−16."
+      }
+    ],
+    "explanation": "For the reverse reaction H2 and Cl2 are the products, so their q/V values move to the numerator: ((q_H2/V)(q_Cl2/V))/((q_HCl/V)^2) = 1/(7.2 × 10^15) ≈ 1.4 × 10^−16. HCl barely decomposes at 650 K."
+  }
+]

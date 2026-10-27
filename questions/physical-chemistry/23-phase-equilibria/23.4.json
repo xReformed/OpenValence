@@ -1,0 +1,556 @@
+[
+  {
+    "id": "pc23-clausius-clapeyron-drop-liquid-volume",
+    "type": "multiple-choice",
+    "prompt": "For liquid–vapor equilibrium, ΔV̄ = V̄_g − V̄_l, and the section replaces ΔV̄ with V̄_g alone. Why is that allowed?",
+    "choices": [
+      {
+        "text": "V̄_g is much larger than V̄_l",
+        "correct": true
+      },
+      {
+        "text": "V̄_l is zero at the boiling point",
+        "why": "A liquid always takes up some volume. V̄_l is dropped because it is tiny next to V̄_g, not because it vanishes."
+      },
+      {
+        "text": "V̄_g and V̄_l are equal at equilibrium",
+        "why": "If they were equal, ΔV̄ would be zero, not V̄_g. A mole of vapor takes up far more room than a mole of liquid."
+      },
+      {
+        "text": "The liquid cannot be compressed",
+        "why": "Being hard to compress doesn't make a volume small. V̄_l is dropped because it is tiny compared with V̄_g."
+      }
+    ],
+    "explanation": "A mole of vapor near 1 atm takes up roughly a thousand times more room than a mole of liquid, so V̄_g ≫ V̄_l and V̄_g − V̄_l ≈ V̄_g. The error is small unless the vapor is very dense."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ideal-vapor",
+    "type": "multiple-choice",
+    "prompt": "After dropping V̄_l, the section writes the vapor's molar volume as V̄_g = RT/P. Which assumption is this?",
+    "choices": [
+      {
+        "text": "The vapor behaves as an ideal gas",
+        "correct": true
+      },
+      {
+        "text": "ΔH_vap does not depend on T",
+        "why": "That assumption comes later, when the equation is integrated. Writing V̄_g = RT/P is the ideal-gas law, PV̄ = RT, applied to the vapor."
+      },
+      {
+        "text": "The liquid behaves as an ideal gas",
+        "why": "The liquid's volume has already been dropped as negligible. RT/P is the ideal-gas molar volume of the vapor."
+      },
+      {
+        "text": "The pressure is held at 1 atm",
+        "why": "P is the vapor pressure, which changes along the curve. V̄_g = RT/P comes from treating the vapor as an ideal gas, PV̄ = RT."
+      }
+    ],
+    "explanation": "For an ideal gas PV̄ = RT, so V̄_g = RT/P. Putting this into dP/dT ≈ (ΔH_vap)/(TV̄_g) gives dP/dT = (ΔH_vap P)/(RT^2)."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-differential-form",
+    "type": "multiple-choice",
+    "prompt": "Which equation is the differential form of the Clausius–Clapeyron equation?",
+    "choices": [
+      {
+        "text": "(d ln P)/(dT) = (ΔH_vap)/(RT^2)",
+        "correct": true
+      },
+      {
+        "text": "(d ln P)/(dT) = (ΔH_vap)/(RT)",
+        "why": "The ideal-gas step brings in another factor of T: dP/dT = (ΔH_vap P)/(RT^2). So T is squared in the denominator."
+      },
+      {
+        "text": "(d ln P)/(dT) = −(ΔH_vap)/(RT^2)",
+        "why": "With ΔH_vap > 0 this would make the vapor pressure fall on heating. The right side is positive, because vapor pressure rises with temperature."
+      },
+      {
+        "text": "(dP)/(dT) = (ΔH̄)/(TΔV̄)",
+        "why": "That is the general Clapeyron equation, before any approximations. The Clausius–Clapeyron equation follows from it by taking ΔV̄ ≈ V̄_g = RT/P."
+      }
+    ],
+    "explanation": "Taking ΔV̄ ≈ V̄_g = RT/P gives (1/P)(dP/dT) = (ΔH_vap)/(RT^2). Since dP/P = d ln P, this is (d ln P)/(dT) = (ΔH_vap)/(RT^2)."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-constant-enthalpy",
+    "type": "multiple-choice",
+    "prompt": "To integrate (d ln P)/(dT) = (ΔH_vap)/(RT^2) from T_1 to T_2, what does the section assume about ΔH_vap?",
+    "choices": [
+      {
+        "text": "It does not change with temperature",
+        "correct": true
+      },
+      {
+        "text": "It is proportional to T",
+        "why": "If ΔH_vap grew with T, it could not be taken outside the integral as a constant. The section treats it as independent of T."
+      },
+      {
+        "text": "It is zero at the boiling point",
+        "why": "ΔH_vap is the large heat needed to vaporize the liquid, and it is not zero. The section takes it as a constant over the temperature range."
+      },
+      {
+        "text": "It changes in step with the vapor pressure",
+        "why": "ΔH_vap is treated as a fixed number, whatever the vapor pressure. Only then can it come outside the integral."
+      }
+    ],
+    "explanation": "With ΔH_vap constant it comes outside the integral, giving ln(P_2/P_1) = −((ΔH_vap)/R)(1/T_2 − 1/T_1). In reality ΔH_vap varies slightly with T, which is why the section's estimates differ a little from experiment."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-where-it-fails",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when are the approximations behind the Clausius–Clapeyron equation likely to cause errors?",
+    "choices": [
+      {
+        "text": "Near the critical point, where the vapor is dense",
+        "correct": true
+      },
+      {
+        "text": "When the vapor pressure is very low",
+        "why": "A thin, low-pressure vapor is close to ideal, which is where the equation works best. Trouble comes when the vapor is dense, near the critical point."
+      },
+      {
+        "text": "When the two temperatures are only a few kelvin apart",
+        "why": "Close temperatures are no problem, since ΔH_vap barely changes between them. Errors arise when the vapor is dense or far from ideal."
+      },
+      {
+        "text": "Whenever the substance studied is water",
+        "why": "The section applies the equation to water in its own examples. It fails when the vapor is not ideal or very dense, as near the critical point."
+      }
+    ],
+    "explanation": "The equation treats the vapor as an ideal gas and neglects the liquid's volume. Both steps break down when the vapor is dense or far from ideal, as when approaching the critical point."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-straight-line-plot",
+    "type": "multiple-choice",
+    "prompt": "Integrating without limits gives ln P = −(ΔH_vap)/(RT) + C. If ΔH_vap is constant, which plot of vapor-pressure data is a straight line?",
+    "choices": [
+      {
+        "text": "ln P against 1/T",
+        "correct": true
+      },
+      {
+        "text": "P against T",
+        "why": "P grows exponentially with T, so this plot curves upward. Taking ln P and 1/T straightens it."
+      },
+      {
+        "text": "ln P against T",
+        "why": "ln P is linear in 1/T, not in T. Plot ln P against 1/T to get a line."
+      },
+      {
+        "text": "P against 1/T",
+        "why": "P itself is an exponential in 1/T, so this plot curves. The logarithm turns the exponential into a line: ln P against 1/T."
+      }
+    ],
+    "explanation": "ln P = −(ΔH_vap/R)(1/T) + C has the form y = mx + b, with y = ln P and x = 1/T. So vapor-pressure data plotted as ln P against 1/T fall on a straight line."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-slope",
+    "type": "multiple-choice",
+    "prompt": "On a plot of ln P against 1/T for a liquid, what is the slope of the line?",
+    "choices": [
+      {
+        "text": "−(ΔH_vap)/R, so the line falls to the right",
+        "correct": true
+      },
+      {
+        "text": "+(ΔH_vap)/R, so the line rises to the right",
+        "why": "Moving right means 1/T increases, so T falls and so does the vapor pressure. The slope is −ΔH_vap/R, which is negative."
+      },
+      {
+        "text": "−(ΔH_vap)/(RT^2), so the line curves",
+        "why": "That T dependence belongs to (d ln P)/(dT). Against 1/T, the slope is the constant −ΔH_vap/R, so the plot is straight."
+      },
+      {
+        "text": "−R/(ΔH_vap), so the line falls to the right",
+        "why": "The ratio is upside down. From ln P = −(ΔH_vap)/(RT) + C, the coefficient of 1/T is −ΔH_vap/R."
+      }
+    ],
+    "explanation": "From ln P = −(ΔH_vap/R)(1/T) + C, the slope is −ΔH_vap/R. Since ΔH_vap > 0, the line slopes down: a larger 1/T means a lower T and a lower vapor pressure."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-units-match",
+    "type": "multiple-choice",
+    "prompt": "The section's first worked example multiplies ΔH_vap = 40.65 kJ/mol by 1000 J/kJ before dividing by R = 8.3145 J/(mol·K). Why?",
+    "choices": [
+      {
+        "text": "So the units cancel and (ΔH_vap)/R comes out in kelvin",
+        "correct": true
+      },
+      {
+        "text": "Because ΔH_vap must be given per molecule, not per mole",
+        "why": "Both ΔH_vap and R are per mole, so the mol cancels. The 1000 J/kJ only turns kJ into J to match R."
+      },
+      {
+        "text": "Because the temperatures are in kelvin rather than °C",
+        "why": "Kelvin temperatures go into the 1/T terms and need no factor of 1000. The factor converts kJ to J, so that (ΔH_vap)/R is in K."
+      },
+      {
+        "text": "Because the pressures are in bar rather than Pa",
+        "why": "Pressures enter only as a ratio, P_2/P_1, so their unit cancels. The 1000 J/kJ converts ΔH_vap to J to match R."
+      }
+    ],
+    "explanation": "With ΔH_vap in J/mol and R in J/(mol·K), (ΔH_vap)/R is in K, and multiplying by 1/T_2 − 1/T_1, in K^−1, gives a pure number for ln(P_2/P_1). Leaving ΔH_vap in kJ/mol would make ln(P_2/P_1) 1000 times too small."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-sign-of-ln",
+    "type": "multiple-choice",
+    "prompt": "In ln(P_2/P_1) = −((ΔH_vap)/R)(1/T_2 − 1/T_1), suppose T_2 is higher than T_1. What is the sign of ln(P_2/P_1)?",
+    "choices": [
+      {
+        "text": "Positive, so P_2 is larger than P_1",
+        "correct": true
+      },
+      {
+        "text": "Negative, so P_2 is smaller than P_1",
+        "why": "With T_2 > T_1, the bracket 1/T_2 − 1/T_1 is negative, and the leading minus sign makes the right side positive. Heating raises the vapor pressure."
+      },
+      {
+        "text": "Zero, so P_2 equals P_1",
+        "why": "The right side is zero only when T_2 = T_1. At a higher temperature the vapor pressure is higher."
+      },
+      {
+        "text": "It depends on the sign of ΔH_vap, which varies",
+        "why": "ΔH_vap is always positive, since vaporizing a liquid absorbs heat. So a higher T always gives a higher vapor pressure."
+      }
+    ],
+    "explanation": "With T_2 > T_1, 1/T_2 < 1/T_1, so the bracket is negative, and multiplying by −(ΔH_vap)/R makes the right side positive. So P_2 > P_1: vapor pressure rises with temperature."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-not-linear-in-t",
+    "type": "multiple-choice",
+    "prompt": "In Example 23.4.1, Vapor Pressure of Water, the vapor pressure rises by 0.303 atm from 363 K to 373 K but by 0.409 atm from 373 K to 383 K. What does this show?",
+    "choices": [
+      {
+        "text": "Vapor pressure does not rise linearly with temperature",
+        "correct": true
+      },
+      {
+        "text": "ΔH_vap is larger above 373 K than below it",
+        "why": "The example uses the same ΔH_vap = 40.7 kJ/mol for both steps. The bigger second step comes from the exponential form of P(T)."
+      },
+      {
+        "text": "Water boils at 373 K, so the equation fails above it",
+        "why": "The example applies the same equation on both sides of 373 K. Equal 10 K steps give growing rises because P depends exponentially on 1/T."
+      },
+      {
+        "text": "Vapor pressure rises by a fixed amount per kelvin",
+        "why": "A fixed rise per kelvin would give the same change for each 10 K step. Here the steps give 0.303 atm and then 0.409 atm."
+      }
+    ],
+    "explanation": "Since P ∝ exp(−(ΔH_vap)/(RT)), each 10 K step multiplies P by a factor rather than adding a fixed amount. So the rise gets bigger as the temperature goes up."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-wrong-curvature",
+    "type": "multiple-choice",
+    "prompt": "The section says P(T) = C′ exp(−(ΔH_vap)/(RT)) has the wrong curvature at large T. Why is the approximation still not that bad?",
+    "choices": [
+      {
+        "text": "The liquid–vapor line stops at the critical point",
+        "correct": true
+      },
+      {
+        "text": "ΔH_vap grows at high T and cancels the error",
+        "why": "The formula treats ΔH_vap as a constant, so nothing cancels. What saves it is that the liquid–vapor line stops at the critical point, before T gets very large."
+      },
+      {
+        "text": "Vapors become more ideal as they get denser",
+        "why": "Dense vapors are less ideal, not more. The approximation holds up because the liquid–vapor line ends at the critical point."
+      },
+      {
+        "text": "Vapor pressures above 1 atm are never needed",
+        "why": "The section itself finds pressures well above 1 atm, such as 16 bar for water at 473 K. The real reason is that the liquid–vapor line ends at the critical point."
+      }
+    ],
+    "explanation": "The coexistence line between liquid and vapor terminates at the critical point, so T never becomes very large along it. As long as T stays well below the critical point, the exponential form is a fair approximation."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-p1-p2-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the two-point form, ln(P_2/P_1) = −((ΔH_vap)/R)(1/T_2 − 1/T_1), what are P_1 and P_2?",
+    "choices": [
+      {
+        "text": "The equilibrium vapor pressures at T_1 and T_2",
+        "correct": true
+      },
+      {
+        "text": "The pressures of the liquid and of the vapor at one temperature",
+        "why": "At equilibrium the liquid and its vapor are at the same pressure. P_1 and P_2 are the vapor pressures at the two temperatures T_1 and T_2."
+      },
+      {
+        "text": "The pressures of the surrounding air at T_1 and T_2",
+        "why": "The air pressure doesn't enter the equation. P_1 and P_2 are the liquid's equilibrium vapor pressures at T_1 and T_2."
+      },
+      {
+        "text": "The pressures at the triple point and the critical point",
+        "why": "Any two points on the vapor-pressure curve will do, not just these special ones. P_1 and P_2 are the vapor pressures at the chosen T_1 and T_2."
+      }
+    ],
+    "explanation": "Each (P, T) pair is a point on the liquid–vapor coexistence curve, where both phases share one pressure. Knowing one point and ΔH_vap, the equation gives the vapor pressure at any other temperature."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-two-orderings",
+    "type": "multiple-choice",
+    "prompt": "The section writes the two-point form both as ln(P_1/P_2) = ((ΔH_vap)/R)(1/T_2 − 1/T_1) and as ln(P_1/P_2) = −((ΔH_vap)/R)(1/T_1 − 1/T_2). How are the two related?",
+    "choices": [
+      {
+        "text": "They are the same equation written two ways",
+        "correct": true
+      },
+      {
+        "text": "One is for vaporization and the other for sublimation",
+        "why": "Both are written with ΔH_vap for the same process. Reversing the order in the bracket flips its sign, and the extra minus sign undoes that."
+      },
+      {
+        "text": "They differ by a sign, so only one can be right",
+        "why": "The minus sign is balanced by the reversed bracket, since 1/T_1 − 1/T_2 = −(1/T_2 − 1/T_1). Both give the same answer."
+      },
+      {
+        "text": "The second assumes ΔH_vap depends on T",
+        "why": "Both treat ΔH_vap as a constant. They differ only in the order of the temperatures, and the minus sign makes up for it."
+      }
+    ],
+    "explanation": "Since 1/T_1 − 1/T_2 = −(1/T_2 − 1/T_1), the two forms are identical. What matters is keeping each P paired with its own T."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-what-you-need",
+    "type": "multiple-choice",
+    "prompt": "To predict a liquid's vapor pressure at a new temperature with the two-point Clausius–Clapeyron equation, what must you know?",
+    "choices": [
+      {
+        "text": "Its vapor pressure at one temperature and its ΔH_vap",
+        "correct": true
+      },
+      {
+        "text": "Its critical point and its triple point",
+        "why": "Neither appears in the equation. You need one known (P, T) point on the vapor-pressure curve and ΔH_vap."
+      },
+      {
+        "text": "Its ΔH_vap and the molar volume of the liquid",
+        "why": "The liquid's volume was dropped as negligible. Besides ΔH_vap, you need the vapor pressure at one known temperature to anchor the curve."
+      },
+      {
+        "text": "Its vapor pressure at one temperature and its ΔH_fus",
+        "why": "Melting doesn't enter the liquid–vapor equation. The enthalpy needed is ΔH_vap, together with one known vapor pressure."
+      }
+    ],
+    "explanation": "If the vapor pressure is known at one temperature and ΔH_vap is known, the equation gives the vapor pressure at any other temperature. That way the whole vaporization curve can be built."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ethanol-data-points",
+    "type": "multiple-choice",
+    "prompt": "Example 23.4.3 gives ethanol's vapor pressure as 150 torr at 40 °C, and its normal boiling point as 78 °C. Which two (P, T) points go into the Clausius–Clapeyron equation?",
+    "choices": [
+      {
+        "text": "(150 torr, 313 K) and (760 torr, 351 K)",
+        "correct": true
+      },
+      {
+        "text": "(150 torr, 40 K) and (760 torr, 78 K)",
+        "why": "Temperatures must be in kelvin, because the equation uses 1/T. Add 273: 40 °C is 313 K and 78 °C is 351 K."
+      },
+      {
+        "text": "(150 torr, 313 K) and (1 torr, 351 K)",
+        "why": "At the normal boiling point the vapor pressure is 1 atm, which is 760 torr, not 1 torr. Both pressures must be in the same unit."
+      },
+      {
+        "text": "(150 torr, 313 K) and (150 torr, 351 K)",
+        "why": "The vapor pressure rises with temperature, so it can't stay at 150 torr. At the normal boiling point, 351 K, it is 760 torr."
+      }
+    ],
+    "explanation": "At the normal boiling point the vapor pressure is 1 atm = 760 torr, and both temperatures go in kelvin. Putting the two points into the equation gives ΔH_vap = 39.0 kJ/mol for ethanol."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-normal-boiling-point",
+    "type": "multiple-choice",
+    "prompt": "What is the normal boiling point of a liquid?",
+    "choices": [
+      {
+        "text": "The temperature at which its vapor pressure is 1 atm",
+        "correct": true
+      },
+      {
+        "text": "The temperature at which it first has a vapor pressure",
+        "why": "A liquid has some vapor pressure at every temperature. The normal boiling point is where its vapor-pressure curve crosses P = 1 atm."
+      },
+      {
+        "text": "The temperature of its critical point",
+        "why": "The critical point is where the liquid–vapor line ends, well above the normal boiling point. Boiling at 1 atm happens where the vapor pressure equals 1 atm."
+      },
+      {
+        "text": "The temperature where solid, liquid and vapor coexist",
+        "why": "That is the triple point. The normal boiling point is where the vapor pressure reaches 1 atm."
+      }
+    ],
+    "explanation": "On a plot of vapor pressure against temperature, the normal boiling point is where the curve crosses the P = 1 atm line. For water this is 373 K, and for ethanol 351 K."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-compare-boiling-points",
+    "type": "multiple-choice",
+    "prompt": "Two liquids have vapor-pressure curves that rise in a similar way and do not cross. At 300 K, liquid A has a higher vapor pressure than liquid B. Which has the lower normal boiling point?",
+    "choices": [
+      {
+        "text": "Liquid A, since its curve reaches 1 atm at a lower temperature",
+        "correct": true
+      },
+      {
+        "text": "Liquid B, since its vapor pressure is lower",
+        "why": "A lower vapor pressure means B must be heated more to reach 1 atm, so its boiling point is higher. A gets to 1 atm first."
+      },
+      {
+        "text": "They boil at the same temperature, since the curves have similar shapes",
+        "why": "Similar shapes don't mean the curves overlap. A's curve lies higher, so it crosses 1 atm at a lower temperature."
+      },
+      {
+        "text": "It can't be told without their critical points",
+        "why": "The normal boiling point depends only on where each curve crosses 1 atm. With A's curve above B's, A crosses first."
+      }
+    ],
+    "explanation": "Each curve rises with temperature until it crosses the 1 atm line, at the normal boiling point. The liquid with the higher vapor pressure gets there first, so it has the lower boiling point."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-water-16-bar",
+    "type": "multiple-choice",
+    "prompt": "The section's first worked example finds that water, which boils at 373 K under 1 bar, boils at 473 K under about 16 bar. What does this 16 bar represent?",
+    "choices": [
+      {
+        "text": "Water's vapor pressure at 473 K",
+        "correct": true
+      },
+      {
+        "text": "Water's pressure at its critical point",
+        "why": "16 bar is just one point on water's vapor-pressure curve, the one at 473 K. The critical point lies at the far end of that curve."
+      },
+      {
+        "text": "The pressure at which water freezes at 473 K",
+        "why": "Water is far above its melting point at 473 K. The 16 bar is its vapor pressure there, the outside pressure at which it boils."
+      },
+      {
+        "text": "A drop in pressure from 1 bar as water heats",
+        "why": "Vapor pressure rises with temperature, from 1 bar at 373 K to about 16 bar at 473 K. Water boils at 473 K once the outside pressure is 16 bar."
+      }
+    ],
+    "explanation": "A liquid boils when its vapor pressure equals the pressure above it. Water's vapor pressure reaches about 16 bar at 473 K, so under 16 bar water boils at 473 K instead of 373 K."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-sublimation-too",
+    "type": "multiple-choice",
+    "prompt": "Besides vaporization, to which phase change does the section apply the Clausius–Clapeyron equation?",
+    "choices": [
+      {
+        "text": "Sublimation, solid to vapor",
+        "correct": true
+      },
+      {
+        "text": "Melting, solid to liquid",
+        "why": "The section warns against this: no gas is involved, so the general Clapeyron equation must be used. Sublimation does produce a vapor, so it works."
+      },
+      {
+        "text": "Freezing, liquid to solid",
+        "why": "Freezing involves no gas phase, so the ideal-vapor step fails. The section applies the equation to sublimation, which has a vapor."
+      },
+      {
+        "text": "A change from one solid form to another",
+        "why": "With no gas present, ΔV̄ can't be replaced by RT/P. The section's other use is sublimation, as in the ice example."
+      }
+    ],
+    "explanation": "Sublimation, like vaporization, produces a vapor whose volume dwarfs that of the condensed phase. Example 23.4.2 uses the vapor pressures of ice at two temperatures to estimate ΔH_sub."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-not-for-melting",
+    "type": "multiple-choice",
+    "prompt": "Why does the section's advanced note say not to use the Clausius–Clapeyron equation for the solid–liquid transition?",
+    "choices": [
+      {
+        "text": "Neither phase is a gas, so ΔV̄ ≈ RT/P fails",
+        "correct": true
+      },
+      {
+        "text": "ΔH_fus is too small to measure",
+        "why": "ΔH_fus is easily measured, about 6 kJ/mol for ice. The problem is that no vapor is involved, so ΔV̄ can't be taken as RT/P."
+      },
+      {
+        "text": "Melting is a second-order transition",
+        "why": "Melting is first order, with jumps in volume and enthalpy. The issue is that ΔV̄ is a small difference between two condensed phases, not RT/P."
+      },
+      {
+        "text": "The solid and liquid have equal molar volumes",
+        "why": "They differ slightly, and that small ΔV̄ is what the general Clapeyron equation uses. The step ΔV̄ ≈ RT/P needs a vapor."
+      }
+    ],
+    "explanation": "The Clausius–Clapeyron equation rests on ΔV̄ ≈ V̄_g = RT/P, which needs one phase to be an ideal-gas vapor. For melting, use the general dP/dT = (ΔH̄)/(TΔV̄) with the enthalpy and volume of fusion."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ice-above-water",
+    "type": "multiple-choice",
+    "prompt": "Exercise 23.4.2 asks you to show that at 274 K the vapor pressure of ice is higher than that of liquid water. The two are nearly equal at 273 K. Why does ice end up higher at 274 K?",
+    "choices": [
+      {
+        "text": "Its ΔH_sub is larger than water's ΔH_vap",
+        "correct": true
+      },
+      {
+        "text": "Ice is denser than liquid water",
+        "why": "Ice is actually less dense than water, and density doesn't enter the equation. What matters is that ΔH_sub > ΔH_vap, so ln P climbs faster for ice."
+      },
+      {
+        "text": "Water's ΔH_vap is larger than ice's ΔH_sub",
+        "why": "It is the other way round, since ΔH_sub = ΔH_fus + ΔH_vap. The larger enthalpy makes ice's vapor pressure climb faster above 273 K."
+      },
+      {
+        "text": "A solid's vapor pressure doesn't change with T",
+        "why": "Ice's vapor pressure rises with T too: Example 23.4.2 gives 2.965 torr at 268 K and 4.560 torr at 273 K. It rises faster than water's because ΔH_sub > ΔH_vap."
+      }
+    ],
+    "explanation": "In (d ln P)/(dT) = (ΔH)/(RT^2), a larger enthalpy gives a steeper rise. Since ΔH_sub = ΔH_fus + ΔH_vap is larger than ΔH_vap, ice's vapor pressure overtakes water's just above 273 K."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-dh-from-slope",
+    "type": "numeric",
+    "prompt": "Vapor-pressure data for a liquid fall on a straight line when ln P is plotted against 1/T, with slope −4.20 × 10^3 K. Since the slope equals −(ΔH_vap)/R, with R = 8.314 J/(mol·K), what is ΔH_vap, in kJ/mol? (Give it as a decimal.)",
+    "answer": 34.9,
+    "explanation": "ΔH_vap = −R × slope = (8.314 J/(mol·K))(4.20 × 10^3 K) = 3.49 × 10^4 J/mol = 34.9 kJ/mol. The two minus signs cancel, so ΔH_vap comes out positive."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-water-entropy-vap",
+    "type": "numeric",
+    "prompt": "The section's water example takes ΔH_vap = 40.7 kJ/mol, and water boils at T_b = 373 K under 1 atm. Using ΔS_vap = (ΔH_vap)/(T_b), what is water's molar entropy of vaporization, in J/(mol·K)? (Give it as a decimal.)",
+    "answer": 109.1,
+    "explanation": "ΔS_vap = 40 700 J/mol ÷ 373 K = 109.1 J/(mol·K). The relation holds because ΔḠ = ΔH̄ − TΔS̄ = 0 while liquid and vapor are in equilibrium."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ethanol-333k",
+    "type": "numeric",
+    "prompt": "Ethanol's vapor pressure is 760 torr at its normal boiling point, 351 K. For T_2 = 333 K and ΔH_vap = 39.0 kJ/mol, the two-point Clausius–Clapeyron equation gives ln(P_2/P_1) = −0.722. Using exp(−0.722) = 0.486, what is ethanol's vapor pressure at 333 K, in torr? (Give it as a decimal.)",
+    "answer": 369.4,
+    "unit": "torr",
+    "explanation": "P_2 = P_1 × exp(−0.722) = 760 torr × 0.486 = 369.4 torr. Cooling ethanol by 18 K roughly halves its vapor pressure."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-doubling-dh",
+    "type": "numeric",
+    "prompt": "A liquid's vapor pressure doubles between T_1 = 300 K and T_2 = 310 K, so ln(P_2/P_1) = ln 2 = 0.693. Using ΔH_vap = (R ln(P_2/P_1))/(1/T_1 − 1/T_2), with 1/T_1 − 1/T_2 = 1.075 × 10^−4 K^−1 and R = 8.314 J/(mol·K), what is ΔH_vap, in kJ/mol? (Give it as a decimal.)",
+    "answer": 53.6,
+    "explanation": "ΔH_vap = (8.314 × 0.693) ÷ (1.075 × 10^−4 K^−1) = 5.36 × 10^4 J/mol = 53.6 kJ/mol. Example 23.4.2 uses the same rearrangement to find ΔH_sub for ice."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ice-sublimation-sum",
+    "type": "numeric",
+    "prompt": "Example 23.4.2 notes that the heat of sublimation of ice is the sum of its heat of melting and the heat of vaporization of water. At 0 °C, ΔH_fus = 6.006 kJ/mol and ΔH_vap = 45.051 kJ/mol. What ΔH_sub does this sum give, in kJ/mol? (Give it as a decimal.)",
+    "answer": 51.06,
+    "explanation": "ΔH_sub = 6.006 kJ/mol + 45.051 kJ/mol = 51.06 kJ/mol. Going straight from solid to vapor takes the same enthalpy as melting and then vaporizing, and the example's estimate from vapor pressures, 52.37 kJ/mol, is close."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-vapor-molar-volume",
+    "type": "numeric",
+    "prompt": "To simplify ΔV̄ for boiling water, the section treats the vapor as an ideal gas, V̄_g = RT/P. With R = 0.08206 L·atm/(mol·K), what is V̄_g at 373 K and 1.00 atm, in L/mol? (Give it as a decimal.)",
+    "answer": 30.6,
+    "explanation": "V̄_g = (0.08206 L·atm/(mol·K))(373 K) ÷ 1.00 atm = 30.6 L/mol. Liquid water takes up only about 0.019 L/mol, some 1600 times less, which is why V̄_l can be dropped from ΔV̄."
+  },
+  {
+    "id": "pc23-clausius-clapeyron-ethanol-dpdt",
+    "type": "numeric",
+    "prompt": "Rearranging the Clausius–Clapeyron equation gives dP/dT = (ΔH_vap P)/(RT^2). For ethanol at its normal boiling point, 351 K and 1.00 atm, with ΔH_vap = 39.0 kJ/mol and R = 8.314 J/(mol·K), how fast does the vapor pressure rise with temperature, in atm/K? (Give it as a decimal.)",
+    "answer": 0.0381,
+    "explanation": "dP/dT = (39 000 J/mol × 1.00 atm) ÷ (8.314 J/(mol·K) × (351 K)^2) = 0.0381 atm/K. Near its boiling point, ethanol's vapor pressure rises by about 29 torr for each kelvin."
+  }
+]

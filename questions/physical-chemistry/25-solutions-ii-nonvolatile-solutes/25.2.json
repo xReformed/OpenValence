@@ -1,0 +1,343 @@
+[
+  {
+    "id": "pc25-nonvolatile-activity-gas-fugacity",
+    "type": "multiple-choice",
+    "prompt": "The section defines activity through μ = μ° + RT ln a and compares it with the gas expression μ = μ° + RT ln(f/P°), with P° = 1 bar. What is the activity of a non-ideal gas equal to?",
+    "choices": [
+      {
+        "text": "Its fugacity, divided by 1 bar",
+        "correct": true
+      },
+      {
+        "text": "Its pressure, divided by 1 bar",
+        "why": "That holds only for an ideal gas, where f = P. For a non-ideal gas the activity is the fugacity, the effective pressure, divided by 1 bar."
+      },
+      {
+        "text": "Its fugacity coefficient, φ = f/P",
+        "why": "φ compares the fugacity with the actual pressure, not with P°. Matching the two equations gives a = f/P°."
+      },
+      {
+        "text": "Its mole fraction in the gas phase",
+        "why": "The mole fraction does not appear in either equation. Matching them gives a = f/P°, the fugacity in bar."
+      }
+    ],
+    "explanation": "Matching μ° + RT ln a with μ° + RT ln(f/P°) gives a = f/P°, so with P° = 1 bar the activity equals the fugacity. For an ideal gas f = P, so the activity is just the pressure in bar."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-ideal-gas-a",
+    "type": "numeric",
+    "prompt": "For an ideal gas the activity is its pressure divided by the standard pressure, a = P/P°, with P° = 1 bar = 100 kPa. What is the activity of an ideal gas at 40.0 kPa? (Give it as a decimal.)",
+    "answer": 0.4,
+    "explanation": "a = (40.0 kPa)/(100 kPa) = 0.400. The units cancel, so the activity is the pressure expressed in bar, without its unit."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-arbitrary",
+    "type": "multiple-choice",
+    "prompt": "The section says the choice of standard state is, in principle, arbitrary. What decides the conventions that chemists actually use?",
+    "choices": [
+      {
+        "text": "Mathematical or experimental convenience",
+        "correct": true
+      },
+      {
+        "text": "The laws of thermodynamics, which allow only one",
+        "why": "If thermodynamics allowed only one choice, the choice would not be arbitrary. Conventions are picked for mathematical or experimental convenience."
+      },
+      {
+        "text": "Room conditions, 25 °C and 1 atm, in every case",
+        "why": "Standard states are not tied to one set of room conditions; a solution component's standard state is at the solution's own T and P. Conventions are picked for convenience."
+      },
+      {
+        "text": "Whatever makes every activity equal to 1",
+        "why": "Only a substance in its standard state has a = 1; other states have other activities. Conventions are picked for mathematical or experimental convenience."
+      }
+    ],
+    "explanation": "Because activity is a relative measure, any standard state would work in principle. Conventions such as P° = 1 bar for a gas, or the pure component for a component of a solution, are chosen because they make the mathematics or the experiments convenient."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-component-standard",
+    "type": "multiple-choice",
+    "prompt": "In this section, which works from vapor pressures and Raoult's law, what is the standard state for a component of a solution?",
+    "choices": [
+      {
+        "text": "The pure component at the solution's T and P",
+        "correct": true
+      },
+      {
+        "text": "The pure component at 25 °C and 1 bar",
+        "why": "The standard state is not fixed at 25 °C and 1 bar. It is the pure component at the same temperature and pressure as the solution."
+      },
+      {
+        "text": "The component's vapor at a pressure of 1 bar",
+        "why": "A gas at 1 bar is the standard state for a gas. For a component of a solution it is the pure component at the solution's temperature and pressure."
+      },
+      {
+        "text": "The solution with equal amounts of each component",
+        "why": "An equal mixture is not the reference. The standard state is the pure component, which is why a pure component has a_i = 1."
+      }
+    ],
+    "explanation": "The standard state for a component in a solution is the pure component at the temperature and pressure of the solution. This is the same as setting the activity of pure component i to a_i = 1."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-mu-star",
+    "type": "multiple-choice",
+    "prompt": "In μ_i^(sln) = μ_i^* + RT ln((P_i)/(P_i^*)), what does μ_i^* stand for?",
+    "choices": [
+      {
+        "text": "The chemical potential of pure liquid i",
+        "correct": true
+      },
+      {
+        "text": "The chemical potential of i as a gas at 1 bar",
+        "why": "That is μ_i°, the gas standard state, which cancels out of this equation. μ_i^* belongs to the pure liquid, in equilibrium with its vapor at P_i^*."
+      },
+      {
+        "text": "The chemical potential of i in the vapor above the solution",
+        "why": "At equilibrium that equals μ_i^(sln), the left side. μ_i^* is the chemical potential of pure liquid i."
+      },
+      {
+        "text": "The chemical potential of i at infinite dilution",
+        "why": "Infinite dilution is the other end of the composition range. μ_i^* is the chemical potential of pure liquid i, where x_i = 1."
+      }
+    ],
+    "explanation": "μ_i^* is the chemical potential of pure component i, which is in equilibrium with its vapor at P_i^*. The term RT ln((P_i)/(P_i^*)) then gives how far μ_i in the solution lies from it."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-any-solution",
+    "type": "multiple-choice",
+    "prompt": "The equation μ_i^(sln) = μ_i^* + RT ln((P_i)/(P_i^*)) comes from setting μ_i in the solution equal to μ_i in its vapor, before any law for P_i is used. For which solutions does it hold?",
+    "choices": [
+      {
+        "text": "Ideal and non-ideal solutions alike",
+        "correct": true
+      },
+      {
+        "text": "Only ideal solutions that obey Raoult's law",
+        "why": "Raoult's law is used only in the next step, to turn P_i/P_i^* into x_i. The section applies the same equation to non-ideal solutions too."
+      },
+      {
+        "text": "Only non-ideal solutions, with γ_i ≠ 1",
+        "why": "Ideal solutions are included too: with Raoult's law the equation gives μ_i^* + RT ln x_i. It holds whether or not the solution is ideal."
+      },
+      {
+        "text": "Only very dilute solutions of the component",
+        "why": "Nothing in the derivation needs the component to be dilute; liquid and vapor share μ_i at any composition. The equation holds for ideal and non-ideal solutions alike."
+      }
+    ],
+    "explanation": "The equation uses only equilibrium between the solution and its vapor, treated as an ideal gas. The section then applies it to an ideal solution, with Raoult's law, and to a non-ideal one, where P_i is larger or smaller than the Raoult value."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-raoult-step",
+    "type": "multiple-choice",
+    "prompt": "For a component i of a solution, the section finds μ_i^(sln) = μ_i^* + RT ln((P_i)/(P_i^*)). Which law turns this into μ_i^(sln) = μ_i^* + RT ln x_i for an ideal solution?",
+    "choices": [
+      {
+        "text": "Raoult's law, P_i = x_i P_i^*",
+        "correct": true
+      },
+      {
+        "text": "Henry's law, P_i = K_H x_i",
+        "why": "Henry's law would give ln(K_H x_i/P_i^*), which is not ln x_i unless K_H = P_i^*. Raoult's law makes the ratio P_i/P_i^* equal to x_i."
+      },
+      {
+        "text": "Dalton's law of partial pressures",
+        "why": "Dalton's law adds partial pressures; it does not link P_i to x_i. Raoult's law, P_i = x_i P_i^*, makes P_i/P_i^* equal to x_i."
+      },
+      {
+        "text": "The ideal gas law, PV = nRT",
+        "why": "The vapor is already treated as ideal in getting this equation. The step to ln x_i needs Raoult's law, P_i = x_i P_i^*."
+      }
+    ],
+    "explanation": "With Raoult's law, P_i/P_i^* = x_i, so the logarithm becomes ln x_i. This relates the chemical potential of a component in an ideal solution to that of the pure liquid and to its mole fraction."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-gamma-range",
+    "type": "multiple-choice",
+    "prompt": "In μ_i^(sln) = μ_i^* + RT ln(γ_i x_i), the section calls γ_i a positive coefficient that accounts for deviations from ideality. Which values can γ_i take?",
+    "choices": [
+      {
+        "text": "Any positive value; 1 means ideal",
+        "correct": true
+      },
+      {
+        "text": "Only values between 0 and 1",
+        "why": "γ_i is above 1 for positive deviations and below 1 for negative ones. Both kinds of solution exist, so γ_i is not capped at 1."
+      },
+      {
+        "text": "Only values of 1 or more",
+        "why": "γ_i falls below 1 for a negative deviation, where P_i is smaller than the Raoult value. It can be any positive number."
+      },
+      {
+        "text": "Any real value, negative ones included",
+        "why": "A negative γ_i would make γ_i x_i negative, and its logarithm undefined. The section calls γ_i a positive coefficient."
+      }
+    ],
+    "explanation": "γ_i is larger than 1 for positive deviations from Raoult's law and smaller than 1 for negative deviations. It is always positive, so that ln(γ_i x_i) is defined."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-mu-below-ideal",
+    "type": "multiple-choice",
+    "prompt": "For a component of a non-ideal solution, μ_i^(sln) = μ_i^* + RT ln(γ_i x_i). If γ_i < 1, how does μ_i^(sln) compare with its value in an ideal solution of the same mole fraction?",
+    "choices": [
+      {
+        "text": "It is lower, since ln γ_i is negative",
+        "correct": true
+      },
+      {
+        "text": "It is higher, since ln γ_i is positive",
+        "why": "ln γ_i is positive only for γ_i > 1. For γ_i < 1, ln γ_i < 0, so μ_i lies below the ideal value."
+      },
+      {
+        "text": "It is the same, since x_i is the same",
+        "why": "Equal mole fractions give equal μ_i only if γ_i = 1. Here the extra term RT ln γ_i is negative."
+      },
+      {
+        "text": "It equals μ_i^*, the pure component's value",
+        "why": "μ_i^(sln) equals μ_i^* only when γ_i x_i = 1, as for the pure component. With γ_i < 1 it lies below the ideal value, which is itself below μ_i^*."
+      }
+    ],
+    "explanation": "Since ln(γ_i x_i) = ln x_i + ln γ_i, the non-ideal μ_i is the ideal value plus RT ln γ_i. With γ_i < 1 this term is negative, which goes with a partial pressure below the Raoult value, a negative deviation."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-rt-ln-gamma",
+    "type": "numeric",
+    "prompt": "Since ln(γ_i x_i) = ln x_i + ln γ_i, the non-ideal μ_i^(sln) = μ_i^* + RT ln(γ_i x_i) differs from the ideal-solution value by RT ln γ_i. What is RT ln γ_i, in kJ/mol, for γ_i = 1.50 at 300 K, with R = 8.314 J/(mol·K) and ln 1.50 = 0.405? (Give it as a decimal.)",
+    "answer": 1.01,
+    "explanation": "RT ln γ_i = 8.314 J/(mol·K) × 300 K × 0.405 = 1010 J/mol = 1.01 kJ/mol. It is positive because γ_i > 1, a positive deviation, so μ_i lies above its ideal-solution value."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-raoult-pressure",
+    "type": "multiple-choice",
+    "prompt": "The section writes the activity coefficient of component i as γ_i = (P_i)/(P_i^(R)). What is P_i^(R)?",
+    "choices": [
+      {
+        "text": "The Raoult's law value, x_i P_i^*",
+        "correct": true
+      },
+      {
+        "text": "The vapor pressure of pure component i",
+        "why": "That is P_i^*. P_i^(R) is the Raoult value, x_i P_i^*, which scales P_i^* by the mole fraction."
+      },
+      {
+        "text": "The partial pressure of i measured above the solution",
+        "why": "The measured partial pressure is P_i, in the numerator. P_i^(R) is what Raoult's law predicts, x_i P_i^*."
+      },
+      {
+        "text": "The standard pressure P°, 1 bar",
+        "why": "P° sets the gas standard state and does not appear here. P_i^(R) = x_i P_i^*, the partial pressure Raoult's law predicts."
+      }
+    ],
+    "explanation": "P_i^(R) = x_i P_i^* is the partial pressure that Raoult's law predicts at the solution's composition. Dividing the measured P_i by it gives the activity coefficient."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-gamma-from-raoult-value",
+    "type": "numeric",
+    "prompt": "Above a mixture of acetone and chloroform, Raoult's law predicts a partial pressure of acetone P_i^(R) = 48.0 torr, but the measured value is P_i = 36.0 torr. Using γ_i = (P_i)/(P_i^(R)), what is the activity coefficient of the acetone? (Give it as a decimal.)",
+    "answer": 0.75,
+    "explanation": "γ_i = (36.0 torr)/(48.0 torr) = 0.750. Since γ_i < 1, the acetone shows a negative deviation from Raoult's law."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-ideal-gamma",
+    "type": "multiple-choice",
+    "prompt": "The section finds γ_i = (P_i)/(x_i P_i^*) = (P_i)/(P_i^(R)), and says this proves that γ = 1 for an ideal solution. Why does it?",
+    "choices": [
+      {
+        "text": "Its partial pressures equal the Raoult values",
+        "correct": true
+      },
+      {
+        "text": "Its partial pressures equal the pure vapor pressures",
+        "why": "P_i = P_i^* holds only for a pure component, not for a component of a solution. In an ideal solution P_i equals the Raoult value x_i P_i^*, so the ratio is 1."
+      },
+      {
+        "text": "Its mole fractions add up to 1",
+        "why": "Mole fractions add up to 1 in every solution, ideal or not. γ = 1 because the measured P_i equals P_i^(R)."
+      },
+      {
+        "text": "Its components all have activity 1",
+        "why": "Only a pure component has a_i = 1; in an ideal solution a_i = x_i. γ = 1 because P_i equals the Raoult value P_i^(R)."
+      }
+    ],
+    "explanation": "An ideal solution obeys Raoult's law, so its measured P_i is exactly P_i^(R) = x_i P_i^*. Their ratio, γ_i, is then 1."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-measure",
+    "type": "multiple-choice",
+    "prompt": "How does the section say the activity coefficient γ_i of a component of a non-ideal solution can be found by experiment?",
+    "choices": [
+      {
+        "text": "Measure P_i in the vapor and divide by x_i P_i^*",
+        "correct": true
+      },
+      {
+        "text": "Measure the heat given off on mixing",
+        "why": "That gives the enthalpy of mixing, not γ_i. The section measures the partial pressure P_i of the vapor and divides it by the Raoult value x_i P_i^*."
+      },
+      {
+        "text": "Measure x_i precisely; γ_i follows from it alone",
+        "why": "The mole fraction alone says nothing about deviations from ideality. γ_i needs a measured P_i, compared with the Raoult value x_i P_i^*."
+      },
+      {
+        "text": "Measure the solution's density at several x_i",
+        "why": "Density does not appear in γ_i = P_i/(x_i P_i^*). The section uses the measured partial vapor pressure P_i."
+      }
+    ],
+    "explanation": "The section measures the partial pressure of i in the vapor above the non-ideal solution and divides it by the Raoult value: γ_i = (P_i)/(x_i P_i^*). Doing this across the pressure–composition diagram gives γ_i for both positive and negative deviations."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-pressure-from-a",
+    "type": "numeric",
+    "prompt": "Ethanol in a liquid mixture at 25 °C has activity a_i = 0.700, and pure ethanol has a vapor pressure P_i^* = 59.0 torr at that temperature. Using P_i = a_i P_i^*, what is the partial pressure of ethanol above the mixture, in torr? (Give it as a decimal.)",
+    "answer": 41.3,
+    "unit": "torr",
+    "explanation": "P_i = 0.700 × 59.0 torr = 41.3 torr. The activity works as an effective mole fraction, taking the place of x_i in Raoult's law."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-k-general",
+    "type": "multiple-choice",
+    "prompt": "The section calls activity the most general quantity for writing an equilibrium constant or a reaction quotient. What advantage does it name?",
+    "choices": [
+      {
+        "text": "It is defined for every phase, ideal or not",
+        "correct": true
+      },
+      {
+        "text": "It always equals the molar concentration",
+        "why": "Activity matches the molar concentration, without units, only for an ideal solute. The advantage is that it is defined for ideal and non-ideal gases, liquids, solids and solutions."
+      },
+      {
+        "text": "It does not depend on any standard state",
+        "why": "Activity is a relative measure, defined against a standard state. Its advantage is that it applies to gases, liquids, solids and solutions, ideal or not."
+      },
+      {
+        "text": "It suits ideal gases, by far the most common case",
+        "why": "Partial pressures already serve ideal gases. Activity is defined for non-ideal gases and for ideal and non-ideal solutions in the liquid and the solid phase as well."
+      }
+    ],
+    "explanation": "Activity is defined for ideal and non-ideal gases and gas mixtures, and for ideal and non-ideal solutions in both the liquid and the solid phase. So one form of the equilibrium constant covers every case."
+  },
+  {
+    "id": "pc25-nonvolatile-activity-k-relative",
+    "type": "multiple-choice",
+    "prompt": "An equilibrium constant written with activities also measures equilibrium relative to a standard state. Why does the section say this should not surprise us?",
+    "choices": [
+      {
+        "text": "K is tied to Δ_r G°, a standard-state quantity",
+        "correct": true
+      },
+      {
+        "text": "K is measured only at 25 °C and a pressure of 1 bar",
+        "why": "K can be found at other temperatures too. It is relative because Gibbs' relation ties it to Δ_r G°, which refers to the standard state."
+      },
+      {
+        "text": "K always equals 1 at the standard state",
+        "why": "K equals 1 only for a reaction with Δ_r G° = 0, not in general. The point is that K is tied to Δ_r G°, which refers to the standard state."
+      },
+      {
+        "text": "K uses concentrations, which have units",
+        "why": "Activities are pure numbers, so a K built from them has no units. K is relative because it is tied to Δ_r G°, a standard-state quantity."
+      }
+    ],
+    "explanation": "Gibbs' relation, Δ_r G° = −RT ln K, ties K to Δ_r G°, which refers to reactants and products in their standard states. So K, like activity, is relative to a standard state, which is why IUPAC defines one that chemists around the globe follow."
+  }
+]

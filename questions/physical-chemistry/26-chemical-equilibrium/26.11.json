@@ -1,0 +1,350 @@
+[
+  {
+    "id": "pc26-activity-k-written-with",
+    "type": "multiple-choice",
+    "prompt": "For non-ideal systems the section replaces μ_i = μ_i° + RT ln(P_i/P_i°) by μ_i = μ_i° + RT ln a_i. In terms of what is the equilibrium constant K then written?",
+    "choices": [
+      {
+        "text": "Activities at equilibrium",
+        "correct": true
+      },
+      {
+        "text": "Molarities at equilibrium, in mol/L",
+        "why": "Plain concentrations ignore non-ideal behavior and carry units. K is written with the equilibrium activities, each raised to its stoichiometric coefficient."
+      },
+      {
+        "text": "The activity coefficients γ_i alone",
+        "why": "The γ_i are only one part of each activity, a_i = γ_i c_i/c_i°. K uses the full activities."
+      },
+      {
+        "text": "Activities at the start of reaction",
+        "why": "Starting values give a reaction quotient, not K. K uses the activities once equilibrium is reached."
+      }
+    ],
+    "explanation": "With μ_i = μ_i° + RT ln a_i, the same steps that gave K in pressures give it in activities. For A + B ⇌ Y + Z, K = (a_Y a_Z)/(a_A a_B), with each equilibrium activity raised to its stoichiometric coefficient."
+  },
+  {
+    "id": "pc26-activity-k-solution-water",
+    "type": "numeric",
+    "prompt": "In a dilute aqueous solution, A(aq) + B(aq) ⇌ C(aq) + H2O(ℓ) reaches equilibrium with activities a_A = 0.400, a_B = 0.250 and a_C = 0.180. Taking the activity of the water solvent as 1, what is K = (a_C a_(H2O))/(a_A a_B)? (Give it as a decimal.)",
+    "answer": 1.8,
+    "explanation": "K = (0.180 × 1)/(0.400 × 0.250) = 0.180/0.100 = 1.80. Using water's molarity, 55.5 mol/L, in place of its activity would make K about 55 times too large."
+  },
+  {
+    "id": "pc26-activity-k-ideal-factor",
+    "type": "multiple-choice",
+    "prompt": "Writing each activity as a_i = γ_i c_i/c_i° splits K into three factors, K = K_(γ) K_c/K°. Which factor equals 1 for an ideal solution but generally not for a real one?",
+    "choices": [
+      {
+        "text": "K_(γ), built from activity coefficients",
+        "correct": true
+      },
+      {
+        "text": "K_c, built from equilibrium concentrations",
+        "why": "K_c is set by the equilibrium amounts and equals 1 only by chance. It is K_(γ) that becomes 1 when every γ_i = 1."
+      },
+      {
+        "text": "K, the thermodynamic constant",
+        "why": "K is fixed by the temperature and is not generally 1. In an ideal solution every γ_i = 1, so K_(γ) = 1 and K = K_c/K°."
+      },
+      {
+        "text": "K_c/K°, the concentration part",
+        "why": "That ratio is set by the equilibrium amounts, and in an ideal solution it equals K, not 1. The factor that becomes 1 is K_(γ)."
+      }
+    ],
+    "explanation": "K_(γ) collects the activity coefficients the same way K_c collects the concentrations. In an ideal solution every γ_i = 1, so K_(γ) = 1; for ionic solutions that is seldom the case."
+  },
+  {
+    "id": "pc26-activity-k-standard-factor",
+    "type": "multiple-choice",
+    "prompt": "In K = K_(γ) K_c/K°, the factor K° is built from the unit concentration c° raised to the stoichiometric coefficients. Why is it often left out?",
+    "choices": [
+      {
+        "text": "It equals 1 and only cancels the units of K_c",
+        "correct": true
+      },
+      {
+        "text": "It is tiny next to K_c, so it barely matters",
+        "why": "K° is not small; it equals exactly 1. It is left out because it changes no numbers, only the units."
+      },
+      {
+        "text": "It cancels K_(γ) exactly",
+        "why": "K_(γ) holds the activity coefficients and is not generally 1. K° is unity on its own and only removes the units of K_c."
+      },
+      {
+        "text": "It applies only to reactions of gases",
+        "why": "It applies to concentrations in solution, as here. It is dropped because its value is 1."
+      }
+    ],
+    "explanation": "Since c° is unity in the chosen concentration measure, any product of its powers is also 1. K° changes no numbers; it only cancels the dimensions of K_c, so it is often omitted."
+  },
+  {
+    "id": "pc26-activity-k-gamma-times-kc",
+    "type": "numeric",
+    "prompt": "For a reaction in a non-ideal solution, the equilibrium concentrations give K_c/K° = 5.00 × 10^−4, and the activity coefficients give K_(γ) = 0.800. Using K = K_(γ) K_c/K°, what is the thermodynamic equilibrium constant K? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0004,
+    "explanation": "K = 0.800 × 5.00 × 10^−4 = 4.00 × 10^−4. Treating the solution as ideal, with K_(γ) = 1, would give 5.00 × 10^−4, which is 25 percent too high."
+  },
+  {
+    "id": "pc26-activity-k-pure-standard",
+    "type": "multiple-choice",
+    "prompt": "For a pure solid or liquid, the section takes the pure compound at 1 bar and the temperature of interest as the standard state. Why is its activity then exactly 1 at 1 bar?",
+    "choices": [
+      {
+        "text": "There μ = μ°, so RT ln a = 0",
+        "correct": true
+      },
+      {
+        "text": "Its concentration there is 1 mol/L",
+        "why": "A pure solid's concentration is not 1 mol/L, and concentration doesn't set its activity. At the standard state μ = μ°, so ln a = 0 and a = 1."
+      },
+      {
+        "text": "Its vapor pressure there is 1 bar",
+        "why": "The 1 bar is the pressure on the solid, not its vapor pressure. At the standard state μ = μ°, which forces ln a = 0."
+      },
+      {
+        "text": "Solids and liquids take no part in reactions",
+        "why": "They do react; they just enter K with a = 1. That follows from μ = μ° at the standard state, so ln a = 0."
+      }
+    ],
+    "explanation": "At the standard state μ = μ°, and putting that into μ = μ° + RT ln a gives ln a = 0, so a = 1. Away from 1 bar the activity changes, but only slightly."
+  },
+  {
+    "id": "pc26-activity-k-small-volume",
+    "type": "multiple-choice",
+    "prompt": "For a pure condensed phase the section writes RT d ln a = V̄ dP, which gives ln a' = ((P' − 1 bar)V̄)/(RT) at a pressure P'. Why does the activity of a pure solid or liquid change only a little with pressure?",
+    "choices": [
+      {
+        "text": "Its molar volume V̄ is small",
+        "correct": true
+      },
+      {
+        "text": "Its molar volume V̄ is very large",
+        "why": "A large V̄ would make the activity strongly pressure dependent. It is because V̄ is small for solids and liquids that a barely changes."
+      },
+      {
+        "text": "Its chemical potential doesn't depend on pressure",
+        "why": "μ does change with pressure, at the rate (∂μ/∂P)_T = V̄. The change is small because V̄ is small for a condensed phase."
+      },
+      {
+        "text": "Its activity is defined as 1 at every pressure",
+        "why": "a = 1 holds exactly only at the standard state, 1 bar. At other pressures ln a' is small, but not zero, because V̄ is small."
+      }
+    ],
+    "explanation": "The pressure dependence of μ is set by the molar volume, (∂μ/∂P)_T = V̄. For a solid or liquid V̄ is small and nearly constant, so ln a' stays close to 0 unless the pressure is very high."
+  },
+  {
+    "id": "pc26-activity-k-pressure-direction",
+    "type": "multiple-choice",
+    "prompt": "Using ln a' = ((P' − 1 bar)V̄)/(RT), how does the activity of a pure liquid at 50 bar compare with its activity of 1 at 1 bar?",
+    "choices": [
+      {
+        "text": "It is slightly greater than 1",
+        "correct": true
+      },
+      {
+        "text": "It is slightly less than 1",
+        "why": "With P' above 1 bar and V̄ positive, ln a' is positive. So a' is a little above 1, not below."
+      },
+      {
+        "text": "It is exactly 1 at any pressure",
+        "why": "ln a' = 0 only at P' = 1 bar. At 50 bar ln a' is small but positive, so a' is slightly above 1."
+      },
+      {
+        "text": "It is about 50 times larger",
+        "why": "The pressure enters through ln a', multiplied by the small factor V̄/(RT). The activity rises only slightly above 1."
+      }
+    ],
+    "explanation": "Above 1 bar, P' − 1 bar is positive, and so are V̄ and RT, so ln a' > 0 and a' > 1. Because V̄ is small, a' is only slightly above 1."
+  },
+  {
+    "id": "pc26-activity-k-graphite-error",
+    "type": "multiple-choice",
+    "prompt": "The section quotes graphite's activity as only 1.02 at 100 bar. If a = 1 is used for graphite in K at that pressure, roughly how large is the error in its activity?",
+    "choices": [
+      {
+        "text": "About 2 percent",
+        "correct": true
+      },
+      {
+        "text": "About 100-fold",
+        "why": "The pressure rose 100-fold, but the activity only went from 1 to 1.02. That is an error of about 2 percent."
+      },
+      {
+        "text": "About 20 percent",
+        "why": "1.02 is 2 percent above 1, not 20 percent. That small error is why a = 1 is usually fine for pure solids."
+      },
+      {
+        "text": "None; a stays exactly 1 at any pressure",
+        "why": "a = 1 is exact only at the 1 bar standard state. At 100 bar graphite's activity is 1.02, so a = 1 is off by about 2 percent."
+      }
+    ],
+    "explanation": "Going from 1 bar to 100 bar raises graphite's activity only from 1 to 1.02, about 2 percent. So when pure condensed compounds take part in reactions, their activity can mostly be taken as 1."
+  },
+  {
+    "id": "pc26-activity-k-nacl-pressure",
+    "type": "numeric",
+    "prompt": "Solid sodium chloride has a molar volume V̄ = 27.0 cm^3/mol = 2.70 × 10^−5 m^3/mol. Using ln a' = (V̄(P' − P°))/(RT), with P° = 1 bar, 1 bar = 10^5 Pa, R = 8.314 J/(mol·K) and T = 298 K, what is ln a' for the solid at P' = 51 bar? (Give it as a decimal.)",
+    "answer": 0.0545,
+    "explanation": "P' − P° = 50 bar = 5.00 × 10^6 Pa and RT = 8.314 × 298 = 2478 J/mol, so ln a' = (2.70 × 10^−5 × 5.00 × 10^6)/2478 = 135/2478 = 0.0545 (Pa·m^3 = J, so the units cancel). That makes a' = exp(0.0545) ≈ 1.06, only about 6 percent above 1 even at 51 bar."
+  },
+  {
+    "id": "pc26-activity-k-caco3",
+    "type": "multiple-choice",
+    "prompt": "For CaCO3(s) ⇌ CaO(s) + CO2(g), treating CO2 as an ideal gas and giving each pure solid a = 1, what does the thermodynamic K reduce to?",
+    "choices": [
+      {
+        "text": "(P_(CO2))/(P°)",
+        "correct": true
+      },
+      {
+        "text": "1, since two of the three species are solids",
+        "why": "The solids contribute factors of 1, but CO2 still contributes its activity. So K = a_(CO2) = (P_(CO2))/(P°)."
+      },
+      {
+        "text": "([CaO] P_(CO2))/([CaCO3])",
+        "why": "Pure solids don't enter K as concentrations; their activities are 1. Only CO2 remains, so K = (P_(CO2))/(P°)."
+      },
+      {
+        "text": "(P°)/(P_(CO2))",
+        "why": "That inverts the ratio: CO2 is a product, so its activity goes on top. K = (P_(CO2))/(P°)."
+      }
+    ],
+    "explanation": "The pure solids have activities of 1, so they drop out, and K = a_(CO2) = (P_(CO2))/(P°). At a given temperature, then, the CO2 pressure over the two solids at equilibrium is fixed."
+  },
+  {
+    "id": "pc26-activity-k-boudouard",
+    "type": "numeric",
+    "prompt": "For C(s, graphite) + CO2(g) ⇌ 2CO(g) at a high temperature, the equilibrium partial pressures are P_(CO) = 0.800 bar and P_(CO2) = 0.400 bar. Treating the gases as ideal, with a = P/P° and P° = 1 bar, and taking a = 1 for the graphite, what is K? (Give it as a decimal.)",
+    "answer": 1.6,
+    "explanation": "K = (a_(CO)^2)/(a_(C) a_(CO2)) = (0.640)/(1 × 0.400) = 1.60, since a_(CO)^2 = 0.800^2 = 0.640. The graphite contributes only a factor of 1, and CO is squared because its coefficient is 2."
+  },
+  {
+    "id": "pc26-activity-k-solvent-product",
+    "type": "multiple-choice",
+    "prompt": "A reaction in a dilute aqueous solution produces H2O(ℓ) as one of its products. What activity does the section use for this water in K?",
+    "choices": [
+      {
+        "text": "About 1, as a nearly pure solvent",
+        "correct": true
+      },
+      {
+        "text": "About 55.5, its molarity in mol/L",
+        "why": "Water's molarity is not its activity. As a nearly pure solvent, its activity P/P^* is close to 1."
+      },
+      {
+        "text": "Zero, since only solutes count in K",
+        "why": "The solvent counts too, but with an activity near 1. Its activity P/P^* approaches 1 as the solution nears pure water."
+      },
+      {
+        "text": "Its vapor pressure above the solution",
+        "why": "The activity is the ratio P/P^*, not P itself. For a dilute solution that ratio is close to 1."
+      }
+    ],
+    "explanation": "By Raoult's law the solvent's activity is P/P^*, which approaches 1 as the solution approaches pure solvent. So water made by a reaction in dilute solution can be given a = 1 to a very good approximation, even if the solution is non-ideal."
+  },
+  {
+    "id": "pc26-activity-k-all-condensed-q",
+    "type": "multiple-choice",
+    "prompt": "In a process where every reactant and product is a pure solid or liquid, each with a = 1, what are Q and Δ_r G?",
+    "choices": [
+      {
+        "text": "Q = 1, so Δ_r G = Δ_r G°",
+        "correct": true
+      },
+      {
+        "text": "Q = 0, so Δ_r G = 0",
+        "why": "A product of activities that are all 1 is 1, not 0. Then ln Q = 0 and Δ_r G = Δ_r G°."
+      },
+      {
+        "text": "Q = K, so Δ_r G = 0",
+        "why": "Q is fixed at 1, and K equals 1 only if Δ_r G° = 0. In general Δ_r G = Δ_r G°, which is not zero."
+      },
+      {
+        "text": "Q changes as the solid is used up",
+        "why": "Using up a pure solid does not change its activity, which stays 1. So Q = 1 throughout and Δ_r G = Δ_r G°."
+      }
+    ],
+    "explanation": "With every activity equal to 1, Q = 1 and ln Q = 0, so Δ_r G = Δ_r G° + RT ln Q = Δ_r G°. Q can't move toward K as the process runs, because none of the activities change."
+  },
+  {
+    "id": "pc26-activity-k-one-temperature",
+    "type": "multiple-choice",
+    "prompt": "For a process involving only pure solids and liquids, Δ_r G = Δ_r G°. At what temperature can such a process be at equilibrium?",
+    "choices": [
+      {
+        "text": "Only where Δ_r G° = 0, at T = Δ_r H°/Δ_r S°",
+        "correct": true
+      },
+      {
+        "text": "At any temperature, once enough product forms",
+        "why": "Forming product doesn't change any activity, so Δ_r G stays equal to Δ_r G°. Equilibrium needs Δ_r G° = 0, which happens at one temperature only."
+      },
+      {
+        "text": "Only at 298.15 K, the standard temperature",
+        "why": "Standard states can be taken at any temperature. Equilibrium needs Δ_r G° = 0, which happens at T = Δ_r H°/Δ_r S°."
+      },
+      {
+        "text": "At no temperature at all",
+        "why": "There is one temperature where Δ_r G° = Δ_r H° − TΔ_r S° = 0. There, and only there, the two sides can coexist."
+      }
+    ],
+    "explanation": "Equilibrium needs Δ_r G = 0, and here that means Δ_r G° = Δ_r H° − TΔ_r S° = 0. That holds at just one temperature, T = Δ_r H°/Δ_r S°; for melting, it is the melting point."
+  },
+  {
+    "id": "pc26-activity-k-ice-water",
+    "type": "multiple-choice",
+    "prompt": "At 1 bar, ice and liquid water can coexist at equilibrium only at 0 °C. What happens to a mixture of ice and water held at 1 bar and 5 °C?",
+    "choices": [
+      {
+        "text": "The ice melts completely",
+        "correct": true
+      },
+      {
+        "text": "It settles at an equilibrium mix of ice and water",
+        "why": "Both phases are pure, with a = 1, so no mix of the two can make Δ_r G = 0 away from 0 °C. The process goes to completion, and all the ice melts."
+      },
+      {
+        "text": "The water freezes completely",
+        "why": "Above 0 °C liquid water is the stable form, so it is the ice that disappears. The process runs to completion toward the liquid."
+      },
+      {
+        "text": "Nothing changes, since both have a = 1",
+        "why": "With a = 1 for both, Δ_r G = Δ_r G°, which is not zero at 5 °C. So melting proceeds until no ice is left."
+      }
+    ],
+    "explanation": "At 5 °C, Δ_r G = Δ_r G° for melting is negative and cannot change, since both activities stay 1. The process goes to completion rather than to equilibrium, leaving only liquid water."
+  },
+  {
+    "id": "pc26-activity-k-tin",
+    "type": "numeric",
+    "prompt": "Gray tin and white tin are two pure solid forms of tin, so in gray tin → white tin both activities are 1. Taking Δ_r H° = 2.09 kJ/mol and Δ_r S° = 7.30 J/(mol·K) as constant, at what temperature, in K, can the two forms coexist at equilibrium? (Give it as a decimal.)",
+    "answer": 286.3,
+    "unit": "K",
+    "explanation": "With Δ_r H° converted to 2090 J/mol, T = Δ_r H°/Δ_r S° = 2090/7.30 = 286 K, about 13 °C. At any other temperature, one form turns completely into the other."
+  },
+  {
+    "id": "pc26-activity-k-range-of-t",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what must a reaction include for it to have an equilibrium at a whole series of temperatures?",
+    "choices": [
+      {
+        "text": "At least one gas or dilute solute",
+        "correct": true
+      },
+      {
+        "text": "Only pure solids and pure liquids",
+        "why": "With only pure condensed phases every a = 1, and equilibrium is possible at just one temperature. A gas or a dilute solute is needed."
+      },
+      {
+        "text": "A catalyst to speed up the reaction",
+        "why": "A catalyst changes the rate, not whether an equilibrium state exists. What's needed is a species, such as a gas or dilute solute, whose activity can change."
+      },
+      {
+        "text": "A standard reaction enthalpy of zero",
+        "why": "Δ_r H° = 0 still leaves Δ_r G° = −TΔ_r S°, which is not zero in general. Equilibrium over a range of temperatures needs a species whose activity can adjust."
+      }
+    ],
+    "explanation": "A gas or a dilute solute has an activity that depends on composition, so Q can shift until Q = K at each temperature. With only pure condensed phases Q stays 1, and equilibrium is possible at just one temperature."
+  }
+]

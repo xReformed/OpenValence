@@ -1,0 +1,502 @@
+[
+  {
+    "id": "pc24-mixing-activity-raoult-limit",
+    "type": "multiple-choice",
+    "prompt": "The section defines the activity by μ_i^(sln) ≡ μ_i^* + RT ln a_i, or a_i ≡ P_i/P_i^*, where P_i^* is the vapor pressure of pure i. Why must a_i approach x_i as x_i → 1?",
+    "choices": [
+      {
+        "text": "Raoult's law holds when i is nearly pure",
+        "correct": true
+      },
+      {
+        "text": "Activities always equal the mole fractions",
+        "why": "That would make every solution ideal. a_i equals x_i only in the limit x_i → 1; elsewhere the two differ."
+      },
+      {
+        "text": "Henry's law holds when i is nearly pure",
+        "why": "Henry's law describes a component at low mole fraction, x_i → 0. Near x_i → 1 Raoult's law holds, so P_i/P_i^* → x_i."
+      },
+      {
+        "text": "P_i^* goes to zero as x_i → 1",
+        "why": "P_i^* is the fixed vapor pressure of pure i. As x_i → 1, P_i → x_i P_i^*, so a_i = P_i/P_i^* → x_i."
+      }
+    ],
+    "explanation": "At high enough mole fraction Raoult's law, P_i = x_i P_i^*, still applies, so a_i = P_i/P_i^* → x_i. Away from that limit the activity and the mole fraction differ, and the activity coefficient γ_i in a_i = γ_i x_i measures the difference."
+  },
+  {
+    "id": "pc24-mixing-activity-gamma-is-margules",
+    "type": "multiple-choice",
+    "prompt": "If the vapor pressure is modeled as P_i = x_i P_i^* f_Mar, then a_i = P_i/P_i^* = x_i f_Mar. What does this make the activity coefficient γ_i?",
+    "choices": [
+      {
+        "text": "The Margules function, f_Mar",
+        "correct": true
+      },
+      {
+        "text": "The pure vapor pressure, P_i^*",
+        "why": "P_i^* cancels in a_i = P_i/P_i^*. Comparing a_i = x_i f_Mar with a_i = γ_i x_i gives γ_i = f_Mar."
+      },
+      {
+        "text": "The mole fraction, x_i",
+        "why": "x_i is the other factor in a_i = γ_i x_i. What multiplies it here is f_Mar, so γ_i = f_Mar."
+      },
+      {
+        "text": "Exactly 1 at every composition",
+        "why": "γ_i = 1 everywhere would mean an ideal solution. Here γ_i = f_Mar, which differs from 1 away from pure i."
+      }
+    ],
+    "explanation": "a_i = γ_i x_i and a_i = x_i f_Mar describe the same activity, so γ_i = f_Mar. In this description the activity coefficient and the Margules function are the same thing."
+  },
+  {
+    "id": "pc24-mixing-activity-gamma-from-pressure",
+    "type": "numeric",
+    "prompt": "In a binary solution, component 1 has x_1 = 0.500 and a partial vapor pressure P_1 = 18.0 kPa, and pure 1 has P_1^* = 30.0 kPa. Using γ_1 = P_1/(x_1 P_1^*), which follows from a_1 = P_1/P_1^* = γ_1 x_1, what is γ_1? (Give it as a decimal.)",
+    "answer": 1.2,
+    "explanation": "γ_1 = (18.0 kPa)/(0.500 × 30.0 kPa) = 18.0/15.0 = 1.20. Since γ_1 > 1, component 1's vapor pressure is above the Raoult value of 15.0 kPa, and γ_1 equals the Margules function f_Mar at this composition."
+  },
+  {
+    "id": "pc24-mixing-activity-extra-terms",
+    "type": "multiple-choice",
+    "prompt": "For a non-ideal binary solution the section finds ΔḠ_mix/(RT) = x_1 ln x_1 + x_2 ln x_2 + x_1 ln γ_1 + x_2 ln γ_2. What happens to the last two terms when γ_1 = γ_2 = 1?",
+    "choices": [
+      {
+        "text": "They vanish, leaving the ideal result",
+        "correct": true
+      },
+      {
+        "text": "They double the ideal mixing term",
+        "why": "ln 1 = 0, so each extra term is zero. What is left is the ideal ΔḠ_mix/(RT) = x_1 ln x_1 + x_2 ln x_2."
+      },
+      {
+        "text": "They turn ΔḠ_mix from negative to positive",
+        "why": "With γ = 1, x_i ln γ_i = x_i ln 1 = 0. Nothing is added, so ΔḠ_mix keeps its negative ideal value."
+      },
+      {
+        "text": "They add up to x_1 + x_2 = 1",
+        "why": "The terms contain ln γ_i, not γ_i, and ln 1 = 0. So they vanish rather than adding up to 1."
+      }
+    ],
+    "explanation": "With γ_1 = γ_2 = 1, both ln γ terms are ln 1 = 0, and ΔḠ_mix/(RT) reduces to the ideal x_1 ln x_1 + x_2 ln x_2. The γ terms carry all the non-ideality."
+  },
+  {
+    "id": "pc24-mixing-activity-regular-definition",
+    "type": "multiple-choice",
+    "prompt": "What does the section call a solution whose Margules function keeps only one parameter, with all the others neglected?",
+    "choices": [
+      {
+        "text": "A regular solution",
+        "correct": true
+      },
+      {
+        "text": "An ideal solution",
+        "why": "An ideal solution needs no Margules parameter at all, since f_Mar = 1. Keeping exactly one parameter, a, gives a regular solution."
+      },
+      {
+        "text": "A real solution",
+        "why": "Real solutions often need several Margules parameters, sometimes too many to handle. One parameter is the simplest non-ideal case, the regular solution."
+      },
+      {
+        "text": "A dilute solution",
+        "why": "Dilution is about how little solute there is, not how many parameters a model keeps. One Margules parameter defines a regular solution."
+      }
+    ],
+    "explanation": "A regular solution is the simplest non-ideal case: a single Margules parameter a, so that a_1 = x_1 exp(a x_2^2). Ideal solutions need none, and strongly non-ideal ones need more."
+  },
+  {
+    "id": "pc24-mixing-activity-regular-a2",
+    "type": "multiple-choice",
+    "prompt": "For a regular solution, a_1 = x_1 exp(a x_2^2). What does the Gibbs–Duhem equation give for a_2?",
+    "choices": [
+      {
+        "text": "a_2 = x_2 exp(a x_1^2)",
+        "correct": true
+      },
+      {
+        "text": "a_2 = x_2 exp(a x_2^2)",
+        "why": "As for a_1, the exponent uses the other component's mole fraction. For component 2 that is x_1, so a_2 = x_2 exp(a x_1^2)."
+      },
+      {
+        "text": "a_2 = x_2 exp(−a x_1^2)",
+        "why": "The same parameter a, with the same sign, appears for both components of a regular solution. Gibbs–Duhem gives a_2 = x_2 exp(a x_1^2)."
+      },
+      {
+        "text": "a_2 = 1 − a_1",
+        "why": "Activities need not add up to 1 the way mole fractions do. Gibbs–Duhem gives a_2 = x_2 exp(a x_1^2)."
+      }
+    ],
+    "explanation": "Gibbs–Duhem links the two activities: if a_1 = x_1 exp(a x_2^2), then a_2 = x_2 exp(a x_1^2). Each exponent uses the other component's mole fraction, so ln γ_1 = a x_2^2 and ln γ_2 = a x_1^2."
+  },
+  {
+    "id": "pc24-mixing-activity-ln-gamma-regular",
+    "type": "numeric",
+    "prompt": "For a regular solution, ln γ_1 = a x_2^2. If a = 1.60 and x_2 = 0.500, what is ln γ_1? (Give it as a decimal.)",
+    "answer": 0.4,
+    "explanation": "ln γ_1 = (1.60)(0.500)^2 = 1.60 × 0.250 = 0.400. So γ_1 = exp(0.400) ≈ 1.49, and component 1's activity is about 1.5 times its mole fraction."
+  },
+  {
+    "id": "pc24-mixing-activity-simplify",
+    "type": "multiple-choice",
+    "prompt": "For a regular solution, the extra terms in ΔḠ_mix/(RT) are x_1 a x_2^2 + x_2 a x_1^2. Why does the section simplify them to a x_1 x_2?",
+    "choices": [
+      {
+        "text": "Factoring out a x_1 x_2 leaves x_1 + x_2 = 1",
+        "correct": true
+      },
+      {
+        "text": "For a mole fraction, x_2^2 is the same as x_2",
+        "why": "That is true only for 0 or 1. The terms factor as a x_1 x_2(x_2 + x_1), and x_1 + x_2 = 1."
+      },
+      {
+        "text": "The two terms are always equal to each other",
+        "why": "They are equal only when x_1 = x_2 = 0.5. In general a x_1 x_2(x_1 + x_2) = a x_1 x_2, since x_1 + x_2 = 1."
+      },
+      {
+        "text": "a is small, so the squared terms can be dropped",
+        "why": "No approximation is made; the result is exact. The terms factor as a x_1 x_2(x_1 + x_2), and the bracket equals 1."
+      }
+    ],
+    "explanation": "x_1 a x_2^2 + x_2 a x_1^2 = a x_1 x_2(x_2 + x_1). Since x_1 + x_2 = 1, this is simply a x_1 x_2, so ΔḠ_mix/(RT) = x_1 ln x_1 + x_2 ln x_2 + a x_1 x_2."
+  },
+  {
+    "id": "pc24-mixing-activity-regular-dg",
+    "type": "numeric",
+    "prompt": "For a regular solution with a = 1.00, ΔḠ_mix/(RT) = x_1 ln x_1 + x_2 ln x_2 + a x_1 x_2. Using x_1 = 0.400, x_2 = 0.600, ln 0.400 = −0.916 and ln 0.600 = −0.511, what is ΔḠ_mix/(RT), including its sign? (Give it as a decimal.)",
+    "answer": -0.433,
+    "explanation": "x_1 ln x_1 + x_2 ln x_2 = 0.400(−0.916) + 0.600(−0.511) = −0.366 − 0.307 = −0.673, and a x_1 x_2 = 1.00 × 0.400 × 0.600 = 0.240. So ΔḠ_mix/(RT) = −0.673 + 0.240 = −0.433: the interaction term makes mixing less favorable than in the ideal case, but mixing still lowers G."
+  },
+  {
+    "id": "pc24-mixing-activity-meaning-a",
+    "type": "multiple-choice",
+    "prompt": "In the regular-solution result, ΔḠ_mix/(RT) = x_1 ln x_1 + x_2 ln x_2 + a x_1 x_2, what does the dimensionless parameter a represent?",
+    "choices": [
+      {
+        "text": "Interactions that differ with the neighbor",
+        "correct": true
+      },
+      {
+        "text": "The entropy gained on mixing",
+        "why": "The entropy of mixing is the x_1 ln x_1 + x_2 ln x_2 part. The extra term a x_1 x_2 reflects interaction energies that depend on the neighbor."
+      },
+      {
+        "text": "The ratio of the two pure vapor pressures",
+        "why": "The vapor pressures are absent from the final result. a reflects how the interactions between unlike neighbors differ from those between like ones."
+      },
+      {
+        "text": "The difference in the two molar masses",
+        "why": "Molar masses do not enter. a reflects how the interactions between molecules change depending on who the neighbor is."
+      }
+    ],
+    "explanation": "The extra term reflects the fact that the strong interactions between molecules differ depending on who the neighbor is. The section writes a = W/RT, with W = 2U_12 − U_11 − U_22, the difference in average interaction energies."
+  },
+  {
+    "id": "pc24-mixing-activity-w-value",
+    "type": "numeric",
+    "prompt": "In a mixture of liquids 1 and 2, the average interaction energies are U_11 = −12.0 kJ/mol, U_22 = −10.0 kJ/mol and U_12 = −9.0 kJ/mol. Using W = 2U_12 − U_11 − U_22, what is W, in kJ/mol, including its sign?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "W = 2(−9.0) − (−12.0) − (−10.0) = −18.0 + 22.0 = +4.0 kJ/mol. W is positive because unlike neighbors attract each other less than like ones do, which favors segregation at low temperature."
+  },
+  {
+    "id": "pc24-mixing-activity-a-from-w",
+    "type": "numeric",
+    "prompt": "A regular solution has W = 5.00 kJ/mol. Using a = W/RT with R = 8.314 J/(mol·K), what is the dimensionless parameter a at 400 K? (Give it as a decimal.)",
+    "answer": 1.5,
+    "explanation": "RT = (8.314 J/(mol·K))(400 K) = 3326 J/mol, so a = (5000 J/mol)/(3326 J/mol) = 1.50. W must be in J/mol, like RT, for a to come out dimensionless."
+  },
+  {
+    "id": "pc24-mixing-activity-entropy-high-t",
+    "type": "multiple-choice",
+    "prompt": "The section writes ΔḠ_mix/W = (RT/W)[x_1 ln x_1 + x_2 ln x_2] + x_1 x_2. For positive W, the entropy term favors mixing and the interaction term favors segregation. Which wins at high temperature?",
+    "choices": [
+      {
+        "text": "The entropy term, so the liquids mix",
+        "correct": true
+      },
+      {
+        "text": "The interaction term, so the liquids separate",
+        "why": "The entropy term carries the factor RT/W, which grows with T. At high temperature it dominates and the liquids mix completely."
+      },
+      {
+        "text": "Neither, since T does not affect the balance",
+        "why": "Temperature enters through RT/W in front of the entropy term. Raising T makes that term more important."
+      },
+      {
+        "text": "The interaction term, since W rises with T",
+        "why": "W does not depend strongly on temperature. It is the entropy term, with its factor RT/W, that grows with T."
+      }
+    ],
+    "explanation": "The mixing entropy is multiplied by RT/W, so it matters more as T rises. At high temperature it wins and the components mix completely; at low temperature the interaction term wins and they tend to segregate."
+  },
+  {
+    "id": "pc24-mixing-activity-term-shapes",
+    "type": "multiple-choice",
+    "prompt": "In ΔḠ_mix/W = (RT/W)[x_1 ln x_1 + x_2 ln x_2] + x_1 x_2, the entropy term has its minimum at x_1 = 0.5. For positive W, what does the interaction term x_1 x_2 have there?",
+    "choices": [
+      {
+        "text": "A maximum, so it opposes mixing",
+        "correct": true
+      },
+      {
+        "text": "A minimum, so it also favors mixing",
+        "why": "x_1 x_2 is 0.25 at x_1 = 0.5 and falls to 0 at either end, so it peaks in the middle. With W > 0 that peak raises ΔḠ_mix and favors segregation."
+      },
+      {
+        "text": "A value of zero, so it drops out",
+        "why": "x_1 x_2 is zero only at the pure ends, x_1 = 0 or 1. At x_1 = 0.5 it is largest, 0.25."
+      },
+      {
+        "text": "A change of sign, from + to −",
+        "why": "x_1 x_2 is never negative for mole fractions between 0 and 1. It has its maximum, 0.25, at x_1 = 0.5."
+      }
+    ],
+    "explanation": "x_1 x_2 is 0 at both ends and reaches its maximum, 0.25, at x_1 = 0.5. With W > 0 this term favors segregation while the entropy term favors mixing, so the outcome is a compromise that depends on RT/W, that is, on the temperature."
+  },
+  {
+    "id": "pc24-mixing-activity-consolute",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the point at the transition between limited mutual solubility at low temperature and complete mixing at high temperature?",
+    "choices": [
+      {
+        "text": "The consolute point",
+        "correct": true
+      },
+      {
+        "text": "The azeotrope point",
+        "why": "An azeotrope is where a boiling liquid and its vapor share a composition. The point where two liquids become fully miscible is the consolute point."
+      },
+      {
+        "text": "The triple point",
+        "why": "A triple point is where three phases of one substance coexist. The change from limited to complete mixing of two liquids is the consolute point."
+      },
+      {
+        "text": "The eutectic point",
+        "why": "In this section the eutectic involves the two liquids boiling, at reduced pressure. The onset of complete mixing is the consolute point."
+      }
+    ],
+    "explanation": "Below the consolute, or critical, point the two liquids have limited mutual solubility; above it they mix in all proportions. For a regular solution it is predicted to be a maximum in temperature."
+  },
+  {
+    "id": "pc24-mixing-activity-symmetric",
+    "type": "multiple-choice",
+    "prompt": "The regular-solution curves are symmetric about x = 0.5. What does this imply?",
+    "choices": [
+      {
+        "text": "Dissolving A in B is as easy as B in A",
+        "correct": true
+      },
+      {
+        "text": "The two liquids have equal vapor pressures",
+        "why": "Vapor pressures are absent from the regular-solution result. The symmetry means it is as easy, or as hard, to dissolve A in B as B in A."
+      },
+      {
+        "text": "Only a 50:50 mixture can form",
+        "why": "Mixtures of any composition are described. The symmetry is about the curves, which look the same on both sides of x = 0.5."
+      },
+      {
+        "text": "The solution must be ideal",
+        "why": "A regular solution has an extra term a x_1 x_2, so it is not ideal. That term is itself symmetric, since swapping x_1 and x_2 leaves it unchanged."
+      }
+    ],
+    "explanation": "Both x_1 ln x_1 + x_2 ln x_2 and a x_1 x_2 are unchanged when x_1 and x_2 swap, so the curves are symmetric about x = 0.5. That implies dissolving A in B is as easy, or as hard, as dissolving B in A, which is often not realistic."
+  },
+  {
+    "id": "pc24-mixing-activity-asymmetry",
+    "type": "multiple-choice",
+    "prompt": "Many real systems are not symmetric about x = 0.5. How does the section say the regular-solution model can be extended to describe them?",
+    "choices": [
+      {
+        "text": "Add more Margules terms, such as a β term",
+        "correct": true
+      },
+      {
+        "text": "Set the parameter a to zero",
+        "why": "a = 0 gives the ideal solution, which is also symmetric. Adding a β term to the Margules function is what undoes the symmetry."
+      },
+      {
+        "text": "Raise the temperature until the curves tilt",
+        "why": "Changing T changes the size of the terms, not their symmetry. A β term in the Margules function is what breaks it."
+      },
+      {
+        "text": "Bring in the two pure vapor pressures",
+        "why": "The pure vapor pressures do not appear in the result. Adding a β term to the Margules function is what breaks the symmetry."
+      }
+    ],
+    "explanation": "Adding a β term to the Margules function undoes the symmetry. Some systems are so non-ideal, though, that the Margules expression becomes unwieldy with too many parameters."
+  },
+  {
+    "id": "pc24-mixing-activity-nicotine",
+    "type": "multiple-choice",
+    "prompt": "What does the nicotine–water system show, according to the section?",
+    "choices": [
+      {
+        "text": "Two consolute points, an upper and a lower one",
+        "correct": true
+      },
+      {
+        "text": "One consolute point, at a maximum temperature",
+        "why": "That is what a regular solution predicts. Nicotine–water has two consolute points, so on heating it mixes, segregates and then mixes again."
+      },
+      {
+        "text": "Complete mixing at every temperature",
+        "why": "Nicotine and water separate over a range of temperatures. On heating, the mixture first mixes, then segregates, then mixes again."
+      },
+      {
+        "text": "Behavior that one Margules parameter fits exactly",
+        "why": "Two consolute points are far more complicated than one Margules parameter can describe. A regular solution predicts only one."
+      }
+    ],
+    "explanation": "Heating a nicotine–water mixture first gives mixing, then segregation, then mixing again: it has an upper and a lower consolute point. This is more complicated than a regular solution, with one Margules parameter, can describe."
+  },
+  {
+    "id": "pc24-mixing-activity-volume-why",
+    "type": "multiple-choice",
+    "prompt": "In a regular solution, ΔV_mix = ((∂ΔH_mix)/(∂P))_T. Why are volumes then no longer additive?",
+    "choices": [
+      {
+        "text": "ΔH_mix depends on the pressure",
+        "correct": true
+      },
+      {
+        "text": "The entropy of mixing changes with P",
+        "why": "The entropy part, RT(n_1 ln x_1 + n_2 ln x_2), does not change with pressure. The pressure dependence comes from ΔH_mix."
+      },
+      {
+        "text": "ΔH_mix is zero for a regular solution",
+        "why": "If ΔH_mix were zero, its pressure derivative would be zero too, and volumes would add. In a regular solution ΔH_mix is not zero and depends on P."
+      },
+      {
+        "text": "The temperature changes during mixing",
+        "why": "The derivative is taken at constant T. Volumes stop being additive because ΔH_mix depends on pressure."
+      }
+    ],
+    "explanation": "W depends on the distances between the molecules, so the enthalpy of mixing changes with pressure. Its pressure derivative, ΔV_mix, is then not zero, and the partial molar volumes depend on composition."
+  },
+  {
+    "id": "pc24-mixing-activity-volume-change",
+    "type": "numeric",
+    "prompt": "Liquids A and B have pure molar volumes V̄_A^* = 18.0 mL/mol and V̄_B^* = 58.0 mL/mol. In a mixture of 2.00 mol A and 1.00 mol B, their partial molar volumes are V̄_A = 17.5 mL/mol and V̄_B = 56.0 mL/mol. Using ΔV_mix = n_A(V̄_A − V̄_A^*) + n_B(V̄_B − V̄_B^*), what is ΔV_mix, in mL, including its sign?",
+    "answer": -3,
+    "tolerance": 0,
+    "explanation": "ΔV_mix = 2.00(17.5 − 18.0) + 1.00(56.0 − 58.0) = −1.0 − 2.0 = −3.0 mL. The mixture takes up 91.0 mL rather than the 94.0 mL of the separate liquids, so the volumes are not additive."
+  },
+  {
+    "id": "pc24-mixing-activity-lens-closes",
+    "type": "multiple-choice",
+    "prompt": "For an ideal solution, the liquid–vapor two-phase region is lens-shaped. What happens to this region at an azeotrope in a non-ideal system?",
+    "choices": [
+      {
+        "text": "It closes to a point at a minimum or maximum",
+        "correct": true
+      },
+      {
+        "text": "It splits into two lenses that never touch",
+        "why": "The two halves do meet. At the azeotrope the gap between the liquid and vapor curves closes to a single point."
+      },
+      {
+        "text": "It becomes wider than in the ideal case",
+        "why": "At the azeotrope the gap narrows to nothing. The liquid and vapor curves touch, so the region closes to a point."
+      },
+      {
+        "text": "It disappears at every composition",
+        "why": "The two-phase region still exists at other compositions. Only at the azeotrope does it close to a single point."
+      }
+    ],
+    "explanation": "In non-ideal systems the two-phase region often has a minimum or a maximum, where the gap closes to a point. That point is the azeotrope, where the liquid and vapor curves touch."
+  },
+  {
+    "id": "pc24-mixing-activity-congruent",
+    "type": "multiple-choice",
+    "prompt": "The section says the liquid at an azeotrope boils congruently. What does that mean?",
+    "choices": [
+      {
+        "text": "Its vapor has the same composition as the liquid",
+        "correct": true
+      },
+      {
+        "text": "It boils at the same temperature as the pure liquids",
+        "why": "An azeotrope boils below or above both pure liquids. Boiling congruently means the vapor's composition equals the liquid's."
+      },
+      {
+        "text": "It boils without forming any vapor",
+        "why": "Boiling always forms vapor. Congruently means that vapor has the same composition as the liquid."
+      },
+      {
+        "text": "Only the more volatile component boils off",
+        "why": "That would enrich the vapor in one component, as in ordinary distillation. At an azeotrope the vapor matches the liquid's composition."
+      }
+    ],
+    "explanation": "Boiling congruently means the liquid turns into a vapor of the same composition. That is why an azeotrope is the end point of a distillation: boiling it no longer changes the composition."
+  },
+  {
+    "id": "pc24-mixing-activity-lower-pressure",
+    "type": "multiple-choice",
+    "prompt": "Two partly miscible liquids have their consolute point below the gas–liquid gap. What does lowering the pressure do, according to the section?",
+    "choices": [
+      {
+        "text": "The gas–liquid gap falls a lot; mixing barely changes",
+        "correct": true
+      },
+      {
+        "text": "Mixing changes a lot; the boiling points barely move",
+        "why": "It is the other way round. Boiling points depend strongly on pressure, while the mixing of two liquids is only weakly affected."
+      },
+      {
+        "text": "Both rise in temperature by the same amount",
+        "why": "Lowering the pressure lowers the boiling points, and by much more than it shifts the mixing behavior."
+      },
+      {
+        "text": "Nothing, since the diagram does not depend on P",
+        "why": "Boiling points depend strongly on pressure, so the whole gas–liquid gap comes down in temperature. Only the mixing of the liquids is weakly affected."
+      }
+    ],
+    "explanation": "Boiling involves the large volume of the gas, so the gas–liquid gap moves down strongly as the pressure drops. Mixing involves only the liquids' small volumes, so it hardly changes, and the consolute point can end up above the gap."
+  },
+  {
+    "id": "pc24-mixing-activity-eutectic-composition",
+    "type": "multiple-choice",
+    "prompt": "At low pressure, two partly miscible liquids boil before they can mix. At the eutectic temperature, what happens to a mixture with the eutectic composition?",
+    "choices": [
+      {
+        "text": "Both liquid phases boil away together",
+        "correct": true
+      },
+      {
+        "text": "Only the liquid richer in A boils away",
+        "why": "At other compositions one liquid boils completely and the other only in part. At the eutectic composition both boil away at the same time."
+      },
+      {
+        "text": "The two liquids first mix, then boil",
+        "why": "At this low pressure the liquids boil before they get a chance to mix. At the eutectic composition both liquid phases boil away together."
+      },
+      {
+        "text": "The vapor splits into two phases",
+        "why": "Gases mix in any proportion, so the vapor is one phase. At the eutectic composition both liquids boil away at once."
+      }
+    ],
+    "explanation": "At the eutectic temperature one liquid boils completely and the other in part. At the eutectic composition both boil away simultaneously, to a vapor with the same overall composition."
+  },
+  {
+    "id": "pc24-mixing-activity-eutectic-solubility",
+    "type": "multiple-choice",
+    "prompt": "Below the eutectic temperature, the mutual solubility of two partly miscible liquids increases as the temperature rises. Why does this stop at the eutectic temperature?",
+    "choices": [
+      {
+        "text": "The liquids boil there, so the vapor takes over",
+        "correct": true
+      },
+      {
+        "text": "The liquids become fully miscible there",
+        "why": "That would be a consolute point, which here lies above the gas–liquid gap and is never reached. The rise stops because the liquids boil."
+      },
+      {
+        "text": "The solubility starts to fall with T there",
+        "why": "Solubility keeps rising with T right up to that point. It stops because the mixture boils at the eutectic temperature."
+      },
+      {
+        "text": "The liquids freeze at the eutectic temperature",
+        "why": "Here the eutectic involves boiling, not freezing. Competition from the vapor phase ends the rise in solubility."
+      }
+    ],
+    "explanation": "The mutual solubility limits rise with temperature, as in critical mixing. But because of competition from the vapor phase, the rise comes to an end at the eutectic temperature, where the liquids boil."
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "id": "pc28-transition-state-activated-complex",
+    "type": "multiple-choice",
+    "prompt": "In transition state theory for A + B → C, what is present at the dividing surface between reactants and products?",
+    "choices": [
+      {
+        "text": "An activated complex, neither A + B nor C",
+        "correct": true
+      },
+      {
+        "text": "The product C, already fully formed",
+        "why": "C forms only on the product side. At the dividing surface the system is an activated complex, part way between A + B and C."
+      },
+      {
+        "text": "Separate A and B molecules, not yet touching",
+        "why": "Separated reactants are on the reactant side. At the dividing surface the atoms form an activated complex, the transition state."
+      },
+      {
+        "text": "An equilibrium mixture of A, B and C",
+        "why": "The dividing surface is a single place on the reaction path, not a mixture. There the system is an activated complex, the transition state."
+      }
+    ],
+    "explanation": "The dividing surface sits at the point on the reaction path where E_a is evaluated. There the system is neither A + B nor C but an activated complex, also called the transition state."
+  },
+  {
+    "id": "pc28-transition-state-q-dagger",
+    "type": "multiple-choice",
+    "prompt": "In transition state theory, what does the symbol q‡ denote?",
+    "choices": [
+      {
+        "text": "The value of q at the transition state",
+        "correct": true
+      },
+      {
+        "text": "The partition function of the reactants",
+        "why": "The reactants' partition function is Q_r. q‡ is the value of the reaction coordinate q at the transition state, where the dividing surface lies."
+      },
+      {
+        "text": "The heat taken in to form the activated complex",
+        "why": "q‡ is not a heat. It is the value of the reaction coordinate q at the dividing surface between reactants and products."
+      },
+      {
+        "text": "The rate of change of q as a trajectory starts",
+        "why": "The rate of change of q is q̇, which must be positive at the start. q‡ is the position on the reaction coordinate where the transition state lies."
+      }
+    ],
+    "explanation": "The reaction coordinate q measures progress from reactants to products. Its value at the transition state, q‡, marks the dividing surface, with reactants at q < q‡ and products at q > q‡."
+  },
+  {
+    "id": "pc28-transition-state-two-atoms",
+    "type": "multiple-choice",
+    "prompt": "For two atoms A and B undergoing a collision, what does the section suggest as a reaction coordinate q?",
+    "choices": [
+      {
+        "text": "The distance between them, |r_A − r_B|",
+        "correct": true
+      },
+      {
+        "text": "The sum of their speeds, |v_A| + |v_B|",
+        "why": "Speeds tell how fast the atoms move, not how far the collision has progressed. The distance r = |r_A − r_B| tracks that."
+      },
+      {
+        "text": "Their total energy, kinetic plus potential",
+        "why": "The total energy stays the same along a trajectory under Newton's laws, so it cannot mark progress. The distance r = |r_A − r_B| does."
+      },
+      {
+        "text": "The angle between their two velocities",
+        "why": "An angle does not track how close the atoms are. The simple choice is the distance r = |r_A − r_B| between them."
+      }
+    ],
+    "explanation": "For two atoms, progress through the collision is simply their separation, q = r = |r_A − r_B|, a function of their positions. For large molecules such as proteins, q(x) is a much more complicated function."
+  },
+  {
+    "id": "pc28-transition-state-classical",
+    "type": "multiple-choice",
+    "prompt": "Which of these is one of the assumptions of transition state theory as listed in the section?",
+    "choices": [
+      {
+        "text": "The atoms move classically, by Newton's laws",
+        "correct": true
+      },
+      {
+        "text": "The atoms move according to the Schrödinger equation",
+        "why": "The theory as set out here is classical. Coordinates and momenta change in time by Newton's laws of motion."
+      },
+      {
+        "text": "Every atom in the system has the same mass",
+        "why": "The atoms can have different masses m_i; the kinetic energy sums (p_i^2)/(2m_i) over the atoms. The assumption is that the motion is classical."
+      },
+      {
+        "text": "All of the atoms start out at rest",
+        "why": "Each trajectory starts at the dividing surface with the reaction coordinate moving toward products, so not at rest. The assumption is classical, Newtonian motion."
+      }
+    ],
+    "explanation": "Transition state theory, as set out here, treats the system classically: coordinates and momenta change in time by Newton's laws. Each trajectory then follows uniquely from its starting point."
+  },
+  {
+    "id": "pc28-transition-state-trajectory-start",
+    "type": "multiple-choice",
+    "prompt": "In transition state theory, where and how does each trajectory start?",
+    "choices": [
+      {
+        "text": "At q = q‡, with q̇ > 0, toward products",
+        "correct": true
+      },
+      {
+        "text": "At q = q‡, with q̇ < 0, toward reactants",
+        "why": "The trajectories start moving toward products, with q̇ > 0. Their later fate then decides whether they count as reactive."
+      },
+      {
+        "text": "Deep on the reactant side, at rest",
+        "why": "They start right on the dividing surface, q = q‡, not among the reactants. The reaction coordinate initially moves toward products."
+      },
+      {
+        "text": "On the product side, moving back",
+        "why": "They start on the dividing surface, q = q‡, with the reaction coordinate moving toward products, q̇ > 0."
+      }
+    ],
+    "explanation": "Each trajectory begins on the dividing surface, q(x) = q‡, with the reaction coordinate initially moving toward products. Newton's laws then carry it forward in time."
+  },
+  {
+    "id": "pc28-transition-state-reactive",
+    "type": "multiple-choice",
+    "prompt": "A trajectory starts at the dividing surface q = q‡, moving toward products. When does the section call it reactive?",
+    "choices": [
+      {
+        "text": "If q > q‡, the product side, at time t",
+        "correct": true
+      },
+      {
+        "text": "If it crosses the surface q = q‡ at all",
+        "why": "Every trajectory starts on q = q‡, so crossing alone decides nothing. It is reactive if q > q‡ at time t, on the product side."
+      },
+      {
+        "text": "If its total energy is higher than E_a",
+        "why": "The test is where the trajectory is, not its energy. It counts as reactive if q > q‡ at time t."
+      },
+      {
+        "text": "If q < q‡, the reactant side, at time t",
+        "why": "q < q‡ is the reactant side, so such a trajectory has gone back to reactants. Reactive ones have q > q‡ at time t."
+      }
+    ],
+    "explanation": "If q > q‡ at time t, the trajectory is on the product side and counts as reactive. The step function θ(q − q‡) applies this test inside k(t)."
+  },
+  {
+    "id": "pc28-transition-state-step-function",
+    "type": "numeric",
+    "prompt": "The step function θ(y) is 1 if y ≥ 0 and 0 if y < 0. With the dividing surface at q‡ = 0, a trajectory has q = −0.8 at time t. What is θ(q − q‡) for this trajectory?",
+    "answer": 0,
+    "tolerance": 0,
+    "explanation": "q − q‡ = −0.8 − 0 = −0.8, which is less than 0, so θ = 0. The trajectory is on the reactant side at time t and adds nothing to the reactive flux k(t)."
+  },
+  {
+    "id": "pc28-transition-state-reactant-states",
+    "type": "multiple-choice",
+    "prompt": "The reactant partition function Q_r contains the step function θ(q‡ − q(x)). Which states does this factor let Q_r count?",
+    "choices": [
+      {
+        "text": "Only states on the reactant side of q‡",
+        "correct": true
+      },
+      {
+        "text": "Only states on the product side of q‡",
+        "why": "θ(q‡ − q) is 1 only when q ≤ q‡, the reactant side. Product-side states give 0 and are left out of Q_r."
+      },
+      {
+        "text": "Only states exactly at the dividing surface",
+        "why": "States with q = q‡ alone are counted by Z‡. Q_r counts every state on the reactant side."
+      },
+      {
+        "text": "Every state, on both sides of q‡",
+        "why": "The step function cuts off the product side: θ(q‡ − q) = 0 when q > q‡. So Q_r counts reactant-side states only."
+      }
+    ],
+    "explanation": "θ(q‡ − q(x)) equals 1 when q(x) ≤ q‡ and 0 otherwise, so Q_r counts the microscopic states on the reactant side of the energy profile. That makes Q_r the partition function of the reactants."
+  },
+  {
+    "id": "pc28-transition-state-flux-name",
+    "type": "multiple-choice",
+    "prompt": "What does the section call k(t), the flux of trajectories that leave the dividing surface toward products and are on the product side at time t?",
+    "choices": [
+      {
+        "text": "The reactive flux",
+        "correct": true
+      },
+      {
+        "text": "The transmission factor",
+        "why": "The transmission factor is κ, the ratio of the true rate constant to k_TST. k(t) is the reactive flux."
+      },
+      {
+        "text": "The reactant partition function",
+        "why": "That is Q_r, which appears in the denominator of k(t). k(t) itself is the reactive flux."
+      },
+      {
+        "text": "The activation energy",
+        "why": "k(t) has the units of a rate constant, not of an energy. It is called the reactive flux."
+      }
+    ],
+    "explanation": "k(t) is the reactive flux, an ensemble average that counts trajectories leaving the dividing surface toward products and still on the product side at time t. Its long-time value gives the rate constant."
+  },
+  {
+    "id": "pc28-transition-state-flux-shape",
+    "type": "multiple-choice",
+    "prompt": "How do typical reactive-flux functions k(t) change with time t?",
+    "choices": [
+      {
+        "text": "They fall at first, then level off",
+        "correct": true
+      },
+      {
+        "text": "They rise steadily and never level off",
+        "why": "k(t) starts at its largest value, k(0), and decays as some trajectories recross. It then settles on a plateau."
+      },
+      {
+        "text": "They stay at their t = 0 value, k(0)",
+        "why": "k(t) would stay at k(0) only if no trajectory ever recrossed. In typical systems it drops at first and then reaches a plateau."
+      },
+      {
+        "text": "They decay steadily all the way to zero",
+        "why": "The decay stops at a plateau, not at zero. That plateau is taken as the true rate constant."
+      }
+    ],
+    "explanation": "k(t) starts at k(0) and decays as trajectories that first head toward products cross back. Once every trajectory that will react has done so, k(t) reaches a plateau."
+  },
+  {
+    "id": "pc28-transition-state-true-k",
+    "type": "multiple-choice",
+    "prompt": "Which value of the reactive flux k(t) gives the true rate constant k?",
+    "choices": [
+      {
+        "text": "Its plateau value, the limit as t → ∞",
+        "correct": true
+      },
+      {
+        "text": "Its value at t = 0",
+        "why": "k(0) is the transition state theory estimate, k_TST, which is too large. The true rate constant is the long-time plateau of k(t)."
+      },
+      {
+        "text": "Its average over the first few instants",
+        "why": "Early times include trajectories that will still recross. The true rate constant is the long-time plateau of k(t)."
+      },
+      {
+        "text": "The area under the whole k(t) curve",
+        "why": "k(t) is already a rate constant, so no area is taken. The true k is the plateau value, the limit of k(t) as t → ∞."
+      }
+    ],
+    "explanation": "The plateau is reached once every trajectory that will become reactive has done so, so k = lim(t → ∞) k(t). The value at t = 0 is only the transition state theory estimate."
+  },
+  {
+    "id": "pc28-transition-state-k-tst-is-k0",
+    "type": "multiple-choice",
+    "prompt": "How is the transition state theory estimate of the rate constant, k_TST, obtained from the reactive flux k(t)?",
+    "choices": [
+      {
+        "text": "It is k(0), the flux at time zero",
+        "correct": true
+      },
+      {
+        "text": "It is the plateau of k(t) at long times",
+        "why": "The plateau is the true rate constant k. k_TST is the value at t = 0, before any recrossing has happened."
+      },
+      {
+        "text": "It is κ times the plateau of k(t)",
+        "why": "κ links the two the other way round: k = κ k_TST. k_TST itself is simply k(0)."
+      },
+      {
+        "text": "It is k(t) at its lowest point",
+        "why": "The lowest values come after trajectories recross. k_TST is the starting value, k(0), which is the largest."
+      }
+    ],
+    "explanation": "Setting t = 0 counts every trajectory that starts toward products as reactive, which gives k_TST = k(0). Working out that integral leads to k_TST = ((k_B T)/h) exp(−βΔF‡)."
+  },
+  {
+    "id": "pc28-transition-state-upper-bound",
+    "type": "multiple-choice",
+    "prompt": "How does the transition state theory rate constant k_TST compare with the true rate constant k?",
+    "choices": [
+      {
+        "text": "k_TST is an upper bound on k",
+        "correct": true
+      },
+      {
+        "text": "k_TST is always smaller than k",
+        "why": "It is the other way round. k(t) starts at k_TST and falls, so the true k, its plateau, is below k_TST."
+      },
+      {
+        "text": "The two are always exactly equal",
+        "why": "They would be equal only if no trajectory ever recrossed the dividing surface. In general k < k_TST."
+      },
+      {
+        "text": "k_TST can be larger or smaller than k",
+        "why": "Since k(t) < k_TST for t > 0, the true k can only be smaller. k_TST is always an upper bound."
+      }
+    ],
+    "explanation": "k(t)/k_TST starts at 1 and stays below 1 for t > 0, so the plateau k is below k_TST. Transition state theory therefore always gives an upper bound to the true rate constant."
+  },
+  {
+    "id": "pc28-transition-state-why-overestimate",
+    "type": "multiple-choice",
+    "prompt": "Why does transition state theory overestimate the rate of a reaction?",
+    "choices": [
+      {
+        "text": "It assumes every start toward products reacts",
+        "correct": true
+      },
+      {
+        "text": "It ignores the kinetic energy of the atoms",
+        "why": "Kinetic energy is included in the mechanical energy ℰ(x). The overestimate comes from assuming that every trajectory heading toward products reacts."
+      },
+      {
+        "text": "It treats the motion by quantum mechanics",
+        "why": "The theory here is classical, using Newton's laws. It overestimates because it assumes every trajectory leaving toward products becomes product."
+      },
+      {
+        "text": "It leaves out the reactants' partition function",
+        "why": "Q_r is in the denominator of k(t), so it is not left out. The overestimate comes from counting every trajectory heading toward products as reactive."
+      }
+    ],
+    "explanation": "In reality a trajectory can cross the dividing surface several times before ending on either side. Some that start toward products return to reactants, so counting them all makes k_TST too large."
+  },
+  {
+    "id": "pc28-transition-state-recrossing",
+    "type": "multiple-choice",
+    "prompt": "The dividing surface is at q = 0, with reactants toward q = −1 and products toward q = 1. A trajectory leaves q = 0 heading toward products, crosses back, and ends near q = −1. How does it enter the rate constants?",
+    "choices": [
+      {
+        "text": "It counts in k_TST but not in the true k",
+        "correct": true
+      },
+      {
+        "text": "It counts in both k_TST and the true k",
+        "why": "It ends among the reactants, so it adds nothing to the true k. Only k_TST, which counts every start toward products, includes it."
+      },
+      {
+        "text": "It counts in neither, since it starts at q = 0",
+        "why": "Every trajectory starts at q = 0. Because this one heads toward products at first, k_TST counts it; the true k does not."
+      },
+      {
+        "text": "It counts in the true k but not in k_TST",
+        "why": "This is reversed. k_TST counts every trajectory that starts toward products, but the true k counts only those that end as products."
+      }
+    ],
+    "explanation": "k_TST = k(0) counts this trajectory, since it starts toward products. It ends among the reactants, so it does not contribute to the plateau k; such trajectories are why k < k_TST."
+  },
+  {
+    "id": "pc28-transition-state-kappa-meaning",
+    "type": "multiple-choice",
+    "prompt": "In k = κ k_TST, what does the transmission factor κ account for?",
+    "choices": [
+      {
+        "text": "Recrossings of the dividing surface",
+        "correct": true
+      },
+      {
+        "text": "The height of the free-energy barrier",
+        "why": "The barrier enters through ΔF‡ in the exponential of k_TST. κ corrects for trajectories that recross and return to reactants."
+      },
+      {
+        "text": "Quantum tunneling through the barrier",
+        "why": "The theory here is classical, so tunneling is not part of it. κ accounts for recrossings of the dividing surface."
+      },
+      {
+        "text": "The number of reactant molecules present",
+        "why": "The amount of reactant affects the rate, not the rate constant. κ corrects k_TST for trajectories that recross the dividing surface."
+      }
+    ],
+    "explanation": "κ < 1 accounts for multiple recrossings of the dividing surface and for trajectories that never become reactive. It scales the upper bound k_TST down to the true rate constant."
+  },
+  {
+    "id": "pc28-transition-state-kappa-plateau",
+    "type": "numeric",
+    "prompt": "A reactive-flux calculation gives k(t)/k_TST = 1 at t = 0, and at long times the ratio levels off at 0.35. Using k = κ k_TST, where the true k is the plateau value of k(t), what is the transmission factor κ? (Give it as a decimal.)",
+    "answer": 0.35,
+    "explanation": "The plateau of k(t)/k_TST is k/k_TST, which is κ, so κ = 0.35. It is less than 1, as it must be, because some trajectories recross and return to reactants."
+  },
+  {
+    "id": "pc28-transition-state-z-dagger",
+    "type": "multiple-choice",
+    "prompt": "In deriving k_TST, the section defines Z‡ as an integral of exp(−βU) over the configurations that have q = q‡. What does Z‡ count?",
+    "choices": [
+      {
+        "text": "States lying on the dividing surface",
+        "correct": true
+      },
+      {
+        "text": "All states on the reactant side",
+        "why": "Reactant-side states are counted by Q_r. Z‡ is restricted to configurations with q = q‡, on the dividing surface."
+      },
+      {
+        "text": "Trajectories that end up as products",
+        "why": "Z‡ counts no trajectories; it is an integral over configurations. It counts states with q = q‡, so it is a partition function for the dividing surface."
+      },
+      {
+        "text": "States on the product side, q > q‡",
+        "why": "The condition in Z‡ is q = q‡ exactly, not q > q‡. It counts states on the dividing surface itself."
+      }
+    ],
+    "explanation": "Because Z‡ counts the microscopic states with q = q‡, it is a kind of partition function. A free energy of the transition state follows from it, F‡ ∝ −k_B T ln Z‡."
+  },
+  {
+    "id": "pc28-transition-state-delta-f",
+    "type": "multiple-choice",
+    "prompt": "The section's result is k_TST = ((k_B T)/h) exp(−βΔF‡), with β = 1/(k_B T) and ΔF‡ = F‡ − F_r. What is ΔF‡?",
+    "choices": [
+      {
+        "text": "The free-energy barrier above the reactants",
+        "correct": true
+      },
+      {
+        "text": "The free-energy change from reactants to products",
+        "why": "That overall change sets the equilibrium constant, not the rate. ΔF‡ = F‡ − F_r compares the transition state with the reactants."
+      },
+      {
+        "text": "The kinetic energy of the reaction coordinate",
+        "why": "That kinetic energy is integrated over and gives the k_B T in (k_B T)/h. ΔF‡ is a free-energy difference, F‡ − F_r."
+      },
+      {
+        "text": "The energy given off when the product C forms",
+        "why": "Energy released in forming products is not part of k_TST. ΔF‡ compares the transition state with the reactants."
+      }
+    ],
+    "explanation": "F‡ comes from Z‡, the states on the dividing surface, and F_r from the reactants, so ΔF‡ = F‡ − F_r is the free-energy barrier. The larger it is, the smaller exp(−βΔF‡) and the smaller k_TST."
+  },
+  {
+    "id": "pc28-transition-state-prefactor-units",
+    "type": "multiple-choice",
+    "prompt": "In k_TST = ((k_B T)/h) exp(−βΔF‡), k_B T is an energy in J and h is Planck's constant in J s. What are the units of (k_B T)/h?",
+    "choices": [
+      {
+        "text": "s^−1, the units of a frequency",
+        "correct": true
+      },
+      {
+        "text": "J, the units of an energy",
+        "why": "Dividing J by J s cancels the joules and leaves s^−1. (k_B T)/h is a frequency, about 6 × 10^12 s^−1 near room temperature."
+      },
+      {
+        "text": "J s, the units of an action",
+        "why": "That is the unit of h itself. Dividing k_B T, in J, by h, in J s, leaves s^−1."
+      },
+      {
+        "text": "None, since it is a pure number",
+        "why": "The exponential is the part without units. (k_B T)/h has units J/(J s) = s^−1, and these become the units of k_TST."
+      }
+    ],
+    "explanation": "J/(J s) = s^−1, so (k_B T)/h is a frequency; at 300 K it is about 6.25 × 10^12 s^−1. The exponential exp(−βΔF‡) has no units, so k_TST carries the units of s^−1."
+  },
+  {
+    "id": "pc28-transition-state-prefactor-400k",
+    "type": "numeric",
+    "prompt": "What is the prefactor (k_B T)/h of the transition state theory rate constant at 400 K, in s^−1, using k_B = 1.381 × 10^−23 J/K and h = 6.626 × 10^−34 J s? (Type it in scientific notation, like 2.5e12.)",
+    "answer": 8340000000000.0,
+    "explanation": "(k_B T)/h = (1.381 × 10^−23 × 400)/(6.626 × 10^−34) = (5.524 × 10^−21)/(6.626 × 10^−34) = 8.34 × 10^12 s^−1. The prefactor grows in proportion to T, while most of a rate constant's temperature dependence comes from exp(−βΔF‡)."
+  },
+  {
+    "id": "pc28-transition-state-rate-constant",
+    "type": "numeric",
+    "prompt": "For a reaction at 300 K, (k_B T)/h = 6.25 × 10^12 s^−1, exp(−βΔF‡) = 2.0 × 10^−8 and the transmission factor is κ = 0.40. Using k = κ((k_B T)/h) exp(−βΔF‡), what is the rate constant k, in s^−1? (Type it in scientific notation, like 2.5e4.)",
+    "answer": 50000.0,
+    "explanation": "k_TST = 6.25 × 10^12 × 2.0 × 10^−8 = 1.25 × 10^5 s^−1, and k = 0.40 × 1.25 × 10^5 = 5.0 × 10^4 s^−1. Leaving out κ would give k_TST, the upper bound."
+  },
+  {
+    "id": "pc28-transition-state-barrier-ratio",
+    "type": "numeric",
+    "prompt": "Two reactions run at the same temperature and have the same κ. For reaction 1, exp(−βΔF‡) = 3.0 × 10^−6; for reaction 2, which has a higher barrier, it is 1.5 × 10^−9. Using k = κ((k_B T)/h) exp(−βΔF‡), how many times larger is k for reaction 1?",
+    "answer": 2000,
+    "tolerance": 0,
+    "explanation": "κ and (k_B T)/h are the same for both reactions, so they cancel: k_1/k_2 = (3.0 × 10^−6)/(1.5 × 10^−9) = 2000. A higher free-energy barrier ΔF‡ lowers k by orders of magnitude."
+  }
+]

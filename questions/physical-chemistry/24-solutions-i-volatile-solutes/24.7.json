@@ -1,0 +1,476 @@
+[
+  {
+    "id": "pc24-activities-fugacity-analogy",
+    "type": "multiple-choice",
+    "prompt": "Real solutions deviate from ideal behavior. The section introduces activity for them in the same way as which quantity was introduced for real gases?",
+    "choices": [
+      {
+        "text": "Fugacity",
+        "correct": true
+      },
+      {
+        "text": "Partial pressure",
+        "why": "Partial pressure is what an ideal gas already uses. Fugacity was introduced so that a real gas could keep the ideal formulas, and activity does the same for real solutions."
+      },
+      {
+        "text": "The compressibility factor",
+        "why": "The compressibility factor measures how far a gas is from ideal, but it does not take the place of P in the chemical potential. Fugacity does, and activity plays that role for solutions."
+      },
+      {
+        "text": "The van der Waals constants",
+        "why": "Van der Waals constants describe a real gas through an equation of state. The gas quantity that activity parallels is fugacity, which keeps the ideal formulas usable."
+      }
+    ],
+    "explanation": "Fugacity let the ideal-gas formulas be used for real gases. Activity does the same for real solutions: it accounts for their deviation from ideal behavior while keeping the ideal model intact."
+  },
+  {
+    "id": "pc24-activities-replaces-x",
+    "type": "multiple-choice",
+    "prompt": "For an ideal solution, μ_i = μ_i^* + RT ln x_i. For a real solution the section writes μ_i = μ_i^* + RT ln a_i. What has the activity a_i replaced?",
+    "choices": [
+      {
+        "text": "The mole fraction x_i",
+        "correct": true
+      },
+      {
+        "text": "The reference value μ_i^*",
+        "why": "μ_i^* stays in the equation as the reference. Only the mole fraction inside the logarithm is replaced by the activity."
+      },
+      {
+        "text": "The activity coefficient γ_i",
+        "why": "γ_i is part of the activity, a_i = γ_i x_i, not something the activity replaces. The activity stands where x_i stood."
+      },
+      {
+        "text": "The temperature T",
+        "why": "The RT in front is unchanged. The activity takes the place of x_i inside the logarithm."
+      }
+    ],
+    "explanation": "Activity keeps the ideal-solution formula intact: x_i inside the logarithm becomes a_i. The two are linked by the activity coefficient, a_i = γ_i x_i."
+  },
+  {
+    "id": "pc24-activities-unitless",
+    "type": "multiple-choice",
+    "prompt": "The section writes a solute's activity as a_B = γ m_B/m°, where m_B is its molality and m° is unit molality, 1 mol/kg. What units does a_B have?",
+    "choices": [
+      {
+        "text": "None; it is dimensionless",
+        "correct": true
+      },
+      {
+        "text": "mol/kg, the units of molality",
+        "why": "Dividing m_B by m° = 1 mol/kg cancels the units of molality. γ is unitless too, so a_B has no units."
+      },
+      {
+        "text": "mol/L, the units of molarity",
+        "why": "Molarity does not appear here, and the ratio m_B/m° cancels units anyway. The activity a_B is a pure number."
+      },
+      {
+        "text": "Units of pressure, such as atm",
+        "why": "Pressure appears in Henry's law constants, not in this definition. Here a_B = γ m_B/m° is a pure number."
+      }
+    ],
+    "explanation": "Since m_B and m° have the same units, m_B/m° is a pure number, and γ is unitless. So the activity is dimensionless, as it must be to sit inside ln a_B."
+  },
+  {
+    "id": "pc24-activities-dilute-gamma",
+    "type": "multiple-choice",
+    "prompt": "The section says the activity coefficient in a_B = γ m_B/m° makes dilute solutions behave ideally. What value does γ approach as the molality m_B goes to zero?",
+    "choices": [
+      {
+        "text": "1",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "If γ went to zero, the activity would vanish even faster than the molality. Instead γ → 1, so a very dilute solution behaves ideally."
+      },
+      {
+        "text": "Infinity",
+        "why": "Deviations from ideal behavior shrink as a solution is diluted, so γ heads to 1, not to infinity."
+      },
+      {
+        "text": "m°, the unit molality",
+        "why": "γ is a unitless coefficient, not a molality. As m_B → 0, γ → 1, so that a_B → m_B/m°."
+      }
+    ],
+    "explanation": "As m_B → 0, γ → 1, so a_B → m_B/m°. This ensures that very dilute solutions behave ideally; at higher molality γ can depend on temperature, pressure and concentration."
+  },
+  {
+    "id": "pc24-activities-mean-why",
+    "type": "multiple-choice",
+    "prompt": "For a dissolved salt MX, the section uses a mean activity coefficient γ_(±) instead of separate values γ_(+) and γ_(−). Why?",
+    "choices": [
+      {
+        "text": "Experiments can't split the two ions' effects",
+        "correct": true
+      },
+      {
+        "text": "The cation and anion always have the same γ",
+        "why": "The two coefficients need not be equal. The mean is used because experiments see only their combined effect."
+      },
+      {
+        "text": "Ions in solution always behave ideally",
+        "why": "Ions deviate strongly from ideal behavior, which is why γ matters for them. The mean is used because the product γ_(+) γ_(−) can't be split."
+      },
+      {
+        "text": "Only the cation changes the Gibbs energy",
+        "why": "Both ions contribute, through the term RT ln γ_(+) γ_(−). Since only the product can be measured, a mean of the two is used."
+      }
+    ],
+    "explanation": "All of the deviation from ideal behavior sits in the term RT ln γ_(+) γ_(−), and experiment can't split it between the two ions. So the section defines a geometric mean, γ_(±) = √(γ_(+) γ_(−)), for a 1:1 salt."
+  },
+  {
+    "id": "pc24-activities-mean-cacl2",
+    "type": "multiple-choice",
+    "prompt": "For a salt M_x X_y, the mean activity coefficient is the (x + y)th root of γ_(+)^(x) γ_(−)^(y). For CaCl2, which dissolves to one Ca^(2+) ion and two Cl^− ions, what is γ_(±)?",
+    "choices": [
+      {
+        "text": "(γ_(+) γ_(−)^2)^(1/3)",
+        "correct": true
+      },
+      {
+        "text": "√(γ_(+) γ_(−)^2)",
+        "why": "A square root suits a salt that gives two ions. CaCl2 gives three ions, so the root is a cube root."
+      },
+      {
+        "text": "(γ_(+)^2 γ_(−))^(1/3)",
+        "why": "The exponents are swapped. There are two chloride ions, so it is γ_(−) that is squared."
+      },
+      {
+        "text": "γ_(+) γ_(−)^2",
+        "why": "This is the product without the root. Taking the cube root, one for each of the three ions, turns it into a mean."
+      }
+    ],
+    "explanation": "Here x = 1 and y = 2, so x + y = 3 and γ_(±) = (γ_(+) γ_(−)^2)^(1/3). Like √(γ_(+) γ_(−)) for a 1:1 salt, it is a geometric mean, now taken over three ions."
+  },
+  {
+    "id": "pc24-activities-dh-dielectric",
+    "type": "multiple-choice",
+    "prompt": "The Debye–Hückel limiting law is log_10 γ_(±) = −(1.824 × 10^6)/((εT)^(3/2)) |z_(+) z_(−)|√I. Which property of the solvent appears in it?",
+    "choices": [
+      {
+        "text": "Its dielectric constant",
+        "correct": true
+      },
+      {
+        "text": "Its vapor pressure, P_1^*",
+        "why": "The vapor pressure gives the solvent's own activity, a_1 = P_1/P_1^*, but it is not in this law. The solvent enters only through its dielectric constant ε."
+      },
+      {
+        "text": "Its density, ρ",
+        "why": "Density does not appear in the law. The solvent enters only through ε, its dielectric constant."
+      },
+      {
+        "text": "Its viscosity, η",
+        "why": "Viscosity does not appear in the law. The solvent enters through ε, its dielectric constant, along with the temperature T."
+      }
+    ],
+    "explanation": "The factor (1.824 × 10^6)/((εT)^(3/2)) holds the solvent's dielectric constant ε and the temperature T in kelvin. For water at 25 °C, ε = 78.5 and the factor is 0.509."
+  },
+  {
+    "id": "pc24-activities-dh-below-one",
+    "type": "multiple-choice",
+    "prompt": "For water at 25 °C the limiting law reads log_10 γ_(±) = −0.509|z_(+) z_(−)|√I, where I is the ionic strength. What does it predict for γ_(±) in a dilute salt solution?",
+    "choices": [
+      {
+        "text": "It is below 1 and falls as I rises",
+        "correct": true
+      },
+      {
+        "text": "It is above 1 and rises as I rises",
+        "why": "The minus sign makes log_10 γ_(±) negative, so γ_(±) is below 1. It drops further as I grows."
+      },
+      {
+        "text": "It is exactly 1 for every 1:1 salt",
+        "why": "For a 1:1 salt |z_(+) z_(−)| = 1, not 0, so log_10 γ_(±) = −0.509√I is still negative. γ_(±) reaches 1 only as I goes to zero."
+      },
+      {
+        "text": "It does not depend on I at all",
+        "why": "The law contains √I, so γ_(±) changes with ionic strength. It falls as I rises."
+      }
+    ],
+    "explanation": "With the minus sign in front, log_10 γ_(±) is negative for any I above zero, so γ_(±) < 1. The more ions there are (the larger I), the further γ_(±) falls below 1."
+  },
+  {
+    "id": "pc24-activities-dh-charges",
+    "type": "multiple-choice",
+    "prompt": "At the same ionic strength in water at 25 °C, how does log_10 γ_(±) for MgSO4, a 2:2 salt, compare with that for NaCl, a 1:1 salt, according to the limiting law?",
+    "choices": [
+      {
+        "text": "Its size is four times as large",
+        "correct": true
+      },
+      {
+        "text": "Its size is twice as large",
+        "why": "The law uses the product of the charges, |z_(+) z_(−)| = 2 × 2 = 4 for MgSO4, against 1 for NaCl. So the effect is four times as large, not twice."
+      },
+      {
+        "text": "The two values are equal",
+        "why": "Equal ionic strength alone does not make them equal: the law also has |z_(+) z_(−)|, which is 4 for MgSO4 and 1 for NaCl."
+      },
+      {
+        "text": "Its size is a quarter as large",
+        "why": "Higher charges make the deviation bigger, not smaller. |z_(+) z_(−)| = 4 for MgSO4, so its log_10 γ_(±) is four times as negative."
+      }
+    ],
+    "explanation": "With I fixed, log_10 γ_(±) is proportional to |z_(+) z_(−)|, which is 4 for MgSO4 and 1 for NaCl. So γ_(±) for MgSO4 lies much further below 1."
+  },
+  {
+    "id": "pc24-activities-ionic-strength-cacl2",
+    "type": "numeric",
+    "prompt": "A 0.0100 mol/kg solution of CaCl2 contains m_(+) = 0.0100 mol/kg of Ca^(2+) and m_(−) = 0.0200 mol/kg of Cl^−. Using I = 1/2 (m_(+) z_(+)^2 + m_(−) z_(−)^2)/m°, with m° = 1 mol/kg, what is the ionic strength I? (Give it as a decimal.)",
+    "answer": 0.03,
+    "explanation": "I = 1/2 [(0.0100)(2)^2 + (0.0200)(−1)^2] = 1/2 (0.0400 + 0.0200) = 0.0300. Each charge is squared, so the doubly charged Ca^(2+) counts four times as much as its molality alone."
+  },
+  {
+    "id": "pc24-activities-dh-log",
+    "type": "numeric",
+    "prompt": "A 0.0100 mol/kg solution of KCl, a 1:1 salt, in water at 25 °C has ionic strength I = 0.0100, so √I = 0.100. Using the limiting law log_10 γ_(±) = −0.509|z_(+) z_(−)|√I, what is log_10 γ_(±), including its sign? (Give it as a decimal.)",
+    "answer": -0.0509,
+    "explanation": "For a 1:1 salt |z_(+) z_(−)| = 1, so log_10 γ_(±) = −0.509 × 1 × 0.100 = −0.0509. That gives γ_(±) = 10^(−0.0509) ≈ 0.889, a little below 1."
+  },
+  {
+    "id": "pc24-activities-gamma-from-a",
+    "type": "numeric",
+    "prompt": "Vapor-pressure data give a component of a liquid mixture an activity a_i = 0.510 at mole fraction x_i = 0.600. Using a_i = γ_i x_i, what is its activity coefficient γ_i? (Give it as a decimal.)",
+    "answer": 0.85,
+    "explanation": "γ_i = a_i/x_i = 0.510/0.600 = 0.850. Since γ_i < 1, the component's partial vapor pressure is lower than Raoult's law predicts."
+  },
+  {
+    "id": "pc24-activities-gamma-above-one",
+    "type": "multiple-choice",
+    "prompt": "A component of a solution has a_i = γ_i x_i = P_i/P_i^*. If its activity coefficient γ_i is greater than 1, what does this say about its partial vapor pressure P_i?",
+    "choices": [
+      {
+        "text": "It is higher than Raoult's law predicts",
+        "correct": true
+      },
+      {
+        "text": "It is lower than Raoult's law predicts",
+        "why": "That is the case γ_i < 1. With γ_i > 1, P_i = γ_i x_i P_i^* is above the Raoult value x_i P_i^*."
+      },
+      {
+        "text": "It is exactly what Raoult's law predicts",
+        "why": "Raoult's law holds when γ_i = 1. With γ_i > 1, P_i = γ_i x_i P_i^* is larger than x_i P_i^*."
+      },
+      {
+        "text": "It is above the pure component's P_i^*",
+        "why": "Not necessarily: γ_i x_i can still be below 1. γ_i > 1 only says that P_i is above the Raoult value x_i P_i^*."
+      }
+    ],
+    "explanation": "Putting a_i = γ_i x_i into a_i = P_i/P_i^* gives P_i = γ_i x_i P_i^*. With γ_i > 1 the partial vapor pressure is above Raoult's x_i P_i^*, a positive deviation."
+  },
+  {
+    "id": "pc24-activities-solute-henry",
+    "type": "multiple-choice",
+    "prompt": "Why does the section suggest defining a solute's activity from Henry's law rather than Raoult's law?",
+    "choices": [
+      {
+        "text": "The dilute solute follows Henry's law",
+        "correct": true
+      },
+      {
+        "text": "Raoult's law never holds for any component",
+        "why": "Raoult's law still holds for the solvent as its mole fraction nears 1. It is the solute, in the dilute limit, that follows Henry's law."
+      },
+      {
+        "text": "The solute has no vapor pressure at all",
+        "why": "Most solutes are volatile and do have a vapor pressure. The point is that a dilute solute's vapor pressure follows Henry's law, not Raoult's."
+      },
+      {
+        "text": "Henry's law holds at every composition",
+        "why": "Henry's law is a limiting law for low solute concentration, not exact everywhere. It is chosen because the dilute limit is where the solute is found."
+      }
+    ],
+    "explanation": "Raoult's law is valid for the solvent in its limit, so a Raoult-based activity suits the solvent. The solute is the minority component, and there its vapor pressure follows Henry's law, so its activity is defined as a_(solute, H) = P_solute/K_(x,H)."
+  },
+  {
+    "id": "pc24-activities-henry-virtual",
+    "type": "multiple-choice",
+    "prompt": "With a Henry-based activity, the reference μ^* becomes μ^(*Henry). What state does μ^(*Henry) describe?",
+    "choices": [
+      {
+        "text": "A virtual pure solute obeying Henry's law",
+        "correct": true
+      },
+      {
+        "text": "The real pure solute at its own vapor pressure",
+        "why": "Extending the Henry line to x_solute = 1 does not reach the real vapor pressure of the pure solute. The state it points to is virtual and cannot be made."
+      },
+      {
+        "text": "The pure solvent at its own vapor pressure",
+        "why": "The pure solvent is the reference for the solvent's Raoult-based activity. μ^(*Henry) belongs to the solute, extrapolated along the Henry line to x_solute = 1."
+      },
+      {
+        "text": "The solution at infinite dilution",
+        "why": "Infinite dilution is where Henry's law is exact, but μ^(*Henry) is found by extending that line all the way to x_solute = 1. That end point is a virtual state."
+      }
+    ],
+    "explanation": "Extending Henry's law to x_solute = 1 points to a pressure that is not the pure solute's real vapor pressure. The state is virtual and cannot be realized, but that does not affect the usefulness of the convention."
+  },
+  {
+    "id": "pc24-activities-henry-a",
+    "type": "numeric",
+    "prompt": "A volatile solute in a dilute solution has a partial pressure P_solute = 24.0 torr above it, and its Henry's law constant on the mole-fraction scale is K_(x,H) = 600 torr. Using a_(solute, H) = P_solute/K_(x,H), what is the solute's activity? (Give it as a decimal.)",
+    "answer": 0.04,
+    "explanation": "a_(solute, H) = (24.0 torr)/(600 torr) = 0.0400. The pressure units cancel, so the activity is a pure number."
+  },
+  {
+    "id": "pc24-activities-k-scales",
+    "type": "multiple-choice",
+    "prompt": "Henry's law constants can be based on mole fraction, molarity or molality. What changes from one concentration measure to another?",
+    "choices": [
+      {
+        "text": "Both the value of K and its units",
+        "correct": true
+      },
+      {
+        "text": "Only the units of K, not its value",
+        "why": "For O2 in water K_(x,H) = 4.259 × 10^4 atm, while K_(pc,H) = 769.23 L·atm/mol, so the numbers differ too. That is why the scale must always be stated."
+      },
+      {
+        "text": "Only the value of K; it stays in atm",
+        "why": "K_(pc,H) for O2 is in L·atm/mol, not atm. Both the value and the dimensions change with the concentration measure."
+      },
+      {
+        "text": "Nothing; K is the same on every scale",
+        "why": "The section's O2 values, 4.259 × 10^4 atm and 769.23 L·atm/mol, show that K changes with the scale. An activity must say which scale it uses."
+      }
+    ],
+    "explanation": "Both the numerical value and the dimensions of K depend on the concentration measure, and the pressure units can differ too. So when an activity is based on a Henry constant, the scale must be specified."
+  },
+  {
+    "id": "pc24-activities-kcp-kpc",
+    "type": "multiple-choice",
+    "prompt": "For oxygen in water the section lists K_(cp,H) = 1.3 × 10^−3 mol/(L·atm) and K_(pc,H) = 769.23 L·atm/mol. How are these two constants related?",
+    "choices": [
+      {
+        "text": "Each is the reciprocal of the other",
+        "correct": true
+      },
+      {
+        "text": "They differ by 1000, from liters to milliliters",
+        "why": "No liter-to-milliliter conversion is involved: 1/769.23 = 1.3 × 10^−3. One constant is the reciprocal of the other."
+      },
+      {
+        "text": "They are equal; only the units differ",
+        "why": "769.23 and 0.0013 are clearly not equal. K_(cp,H) = 1/K_(pc,H): one is concentration over pressure, the other pressure over concentration."
+      },
+      {
+        "text": "They differ by the molar mass of O2",
+        "why": "No molar mass is involved: 1/769.23 = 1.3 × 10^−3. One constant is just the reciprocal of the other."
+      }
+    ],
+    "explanation": "K_(cp,H) gives concentration per unit pressure and K_(pc,H) gives pressure per unit concentration, so K_(cp,H) = 1/K_(pc,H) = 1/769.23 = 1.3 × 10^−3. Both conventions are in use."
+  },
+  {
+    "id": "pc24-activities-oxygen-no-raoult",
+    "type": "multiple-choice",
+    "prompt": "Why is a Raoult-based activity not feasible for oxygen dissolved in water at room temperature?",
+    "choices": [
+      {
+        "text": "O2 is above its critical point, so it has no P^*",
+        "correct": true
+      },
+      {
+        "text": "O2 does not dissolve in water at all",
+        "why": "O2 does dissolve; the section gives its Henry constants in water. The trouble is that pure O2 has no vapor pressure at room temperature to compare with."
+      },
+      {
+        "text": "O2's vapor pressure is too small to measure",
+        "why": "That describes a non-volatile solute such as sucrose. O2 is the opposite case: far above its critical point, it cannot be a liquid with a vapor pressure P^*."
+      },
+      {
+        "text": "O2 obeys Raoult's law exactly, so no activity is needed",
+        "why": "Raoult's law needs P^* of pure liquid O2, which does not exist at room temperature. A Henry-based activity is used instead."
+      }
+    ],
+    "explanation": "A Raoult-based activity needs the pure component's equilibrium vapor pressure, P^*. At room temperature O2 is far above its critical point, so that vapor pressure does not exist, and a Henry-based activity is used instead."
+  },
+  {
+    "id": "pc24-activities-nonvolatile-ratio",
+    "type": "multiple-choice",
+    "prompt": "For a non-volatile solute such as sucrose, both P_solute and K_(x,H) are exceedingly small. What does the section say about its Henry-based activity, a_(solute, H) = P_solute/K_(x,H)?",
+    "choices": [
+      {
+        "text": "It is still finite, since the ratio is finite",
+        "correct": true
+      },
+      {
+        "text": "It is zero, since the solute doesn't evaporate",
+        "why": "A tiny P_solute is divided by an equally tiny K_(x,H), so the ratio stays finite. The activity is not zero."
+      },
+      {
+        "text": "It is infinite, since K_(x,H) is nearly zero",
+        "why": "K_(x,H) is small, but so is P_solute. Their ratio is finite."
+      },
+      {
+        "text": "It is 1, as for a pure solid",
+        "why": "An activity of 1 belongs to a pure solid or liquid, not a dissolved solute. Here the ratio of two tiny quantities gives a finite activity."
+      }
+    ],
+    "explanation": "Even though P_solute and K_(x,H) are both exceedingly small, their ratio is finite, so the Henry-based definition still works. The catch is that neither can be measured directly."
+  },
+  {
+    "id": "pc24-activities-sucrose-route",
+    "type": "multiple-choice",
+    "prompt": "Sucrose's vapor pressure above its water solution is immeasurably small. How does the section get at the activity of the dissolved sucrose?",
+    "choices": [
+      {
+        "text": "From water's vapor pressure, via Gibbs–Duhem",
+        "correct": true
+      },
+      {
+        "text": "By setting its activity equal to its mole fraction",
+        "why": "A non-volatile solute need not be ideal, so a_2 = x_2 is not assumed. The water's measured vapor pressure is turned into a_2 with the Gibbs–Duhem equation."
+      },
+      {
+        "text": "From Raoult's law applied to the sucrose",
+        "why": "That would need sucrose's own vapor pressure, which is immeasurably small. The water's vapor pressure is measured instead and converted with Gibbs–Duhem."
+      },
+      {
+        "text": "From the Debye–Hückel limiting law",
+        "why": "Debye–Hückel is for ions, and sucrose does not dissociate. The section measures the water's vapor pressure and converts it with Gibbs–Duhem."
+      }
+    ],
+    "explanation": "The water vapor pressure above the solution can be measured, giving a_1 = P_1/P_1^*. The Gibbs–Duhem equation then translates the solvent's activity into the solute's."
+  },
+  {
+    "id": "pc24-activities-solvent-a",
+    "type": "numeric",
+    "prompt": "Glucose is non-volatile. Above a glucose solution in water at 25 °C the water vapor pressure is P_1 = 22.6 torr, while pure water has P_1^* = 23.8 torr. Using a_1 = P_1/P_1^*, what is the activity of the water? (Give it as a decimal.)",
+    "answer": 0.95,
+    "explanation": "a_1 = (22.6 torr)/(23.8 torr) = 0.950. The units cancel, and a_1 < 1 because the dissolved glucose lowers the water's vapor pressure."
+  },
+  {
+    "id": "pc24-activities-ln-small-x",
+    "type": "multiple-choice",
+    "prompt": "At low solute concentrations the section writes ln a_1 = ln x_1 ≈ −x_2 for the solvent of a binary solution. What justifies the last step?",
+    "choices": [
+      {
+        "text": "ln(1 − x_2) ≈ −x_2 when x_2 is small",
+        "correct": true
+      },
+      {
+        "text": "x_1 = −x_2 in a binary solution",
+        "why": "Mole fractions are never negative: x_1 = 1 − x_2. The step uses ln(1 − x_2) ≈ −x_2 for small x_2."
+      },
+      {
+        "text": "ln x_1 ≈ −x_1 for any mole fraction",
+        "why": "ln x_1 is close to −x_2, not −x_1: ln 0.990 ≈ −0.010. The step uses x_1 = 1 − x_2 and ln(1 − x_2) ≈ −x_2."
+      },
+      {
+        "text": "The solvent obeys Henry's law when dilute",
+        "why": "The solvent is the majority component, where Raoult's law gives ln a_1 = ln x_1. The last step is the approximation ln(1 − x_2) ≈ −x_2."
+      }
+    ],
+    "explanation": "In a binary solution x_1 = 1 − x_2, and for small x_2, ln(1 − x_2) ≈ −x_2. For example, with x_2 = 0.010, ln 0.990 = −0.01005."
+  },
+  {
+    "id": "pc24-activities-osmotic-phi",
+    "type": "numeric",
+    "prompt": "At higher solute concentrations the section writes ln(P_1/P_1^*) = ln a_1 ≈ −x_2 φ, where φ is the osmotic coefficient. For a solution with x_2 = 0.0400, ln(P_1/P_1^*) = −0.0388. What is φ? (Give it as a decimal.)",
+    "answer": 0.97,
+    "explanation": "φ = −(ln a_1)/x_2 = 0.0388/0.0400 = 0.970. A value of exactly 1 would mean the simple dilute result, ln a_1 ≈ −x_2, holds."
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "pc24-phase-mu-other-amounts",
+    "type": "multiple-choice",
+    "prompt": "In a mixture, the chemical potential of component i is μ_i = ((∂G)/(∂n_i)), taken at constant temperature and pressure. What else is held constant in this derivative?",
+    "choices": [
+      {
+        "text": "The amounts n_j of all the other components",
+        "correct": true
+      },
+      {
+        "text": "The total amount of material in the mixture",
+        "why": "Adding component i changes the total amount, so it cannot be held fixed. What stays fixed are the amounts n_j of every other component."
+      },
+      {
+        "text": "The mole fraction of component i",
+        "why": "Adding some i raises its mole fraction, so x_i changes in this derivative. The amounts of the other components are what stay fixed."
+      },
+      {
+        "text": "The volume of the mixture",
+        "why": "The volume can change as i is added; for G the variables held fixed are T and P. Along with them, the amounts n_j of the other components stay fixed."
+      }
+    ],
+    "explanation": "Only n_i changes: T, P and the amounts n_j of every other component (j ≠ i) are held fixed. μ_i then tells how G changes as the composition changes through component i alone."
+  },
+  {
+    "id": "pc24-phase-mu-from-u",
+    "type": "multiple-choice",
+    "prompt": "Table 24.3.1 also defines μ_i as a derivative of the internal energy U with respect to n_i, with the other amounts n_j fixed. Which two variables does it hold constant besides the n_j?",
+    "choices": [
+      {
+        "text": "Entropy S and volume V",
+        "correct": true
+      },
+      {
+        "text": "Temperature T and pressure P",
+        "why": "T and P are held fixed in the derivative of G. For U, whose differential is dU = T dS − P dV + Σ μ_i dn_i, they are S and V."
+      },
+      {
+        "text": "Temperature T and volume V",
+        "why": "T and V are held fixed in the derivative of A. The natural variables of U are S and V."
+      },
+      {
+        "text": "Entropy S and pressure P",
+        "why": "S and P are held fixed in the derivative of H. The changes in dU = T dS − P dV + Σ μ_i dn_i are dS and dV, so S and V are fixed."
+      }
+    ],
+    "explanation": "From dU = T dS − P dV + Σ μ_i dn_i, μ_i = ((∂U)/(∂n_i))_(S,V), with the other n_j also fixed. Adding dn_i of component i at constant S and V changes U by μ_i dn_i."
+  },
+  {
+    "id": "pc24-phase-mu-same-value",
+    "type": "multiple-choice",
+    "prompt": "Table 24.3.1 gives μ_i as a derivative of U, H, A or G, each with its own variables held constant. How do the four results compare?",
+    "choices": [
+      {
+        "text": "They all give the same chemical potential μ_i",
+        "correct": true
+      },
+      {
+        "text": "They differ by terms such as PV and TS",
+        "why": "U, H, A and G differ by PV and TS, but their derivatives at their own natural variables all equal μ_i. That is why the same μ_i dn_i term appears in all four differentials."
+      },
+      {
+        "text": "Only the derivative of G is a chemical potential",
+        "why": "The derivative of G is the most commonly used, but the table shows that each of the four gives μ_i. The same μ_i dn_i term appears in dU, dH, dA and dG."
+      },
+      {
+        "text": "They agree only for a mixture of ideal gases",
+        "why": "The table holds for any mixture, ideal or not. In every case the derivative equals the same μ_i."
+      }
+    ],
+    "explanation": "The same term Σ μ_i dn_i appears in dU, dH, dA and dG, so each function gives the same μ_i when differentiated at its own natural variables. The derivative of G at constant T and P is the most commonly used."
+  },
+  {
+    "id": "pc24-phase-mu-direction",
+    "type": "multiple-choice",
+    "prompt": "Component j is present in a liquid solution and in the vapor above it, at constant temperature and pressure. Its chemical potential is higher in the liquid than in the vapor. What happens?",
+    "choices": [
+      {
+        "text": "Some j moves from the liquid into the vapor",
+        "correct": true
+      },
+      {
+        "text": "Some j moves from the vapor into the liquid",
+        "why": "Moving j into the phase where its chemical potential is higher would raise G. Matter moves toward lower chemical potential, here from liquid to vapor."
+      },
+      {
+        "text": "Nothing, because only the total pressure matters",
+        "why": "Each component's chemical potential matters on its own. A difference between the phases drives j toward the phase where μ_j is lower."
+      },
+      {
+        "text": "The other components move instead of j",
+        "why": "The difference is in the chemical potential of j, so j itself moves. It goes from the liquid, where μ_j is higher, to the vapor."
+      }
+    ],
+    "explanation": "Systems at constant T and P move toward lower total Gibbs energy, and moving j from the phase where its chemical potential is higher to the one where it is lower does that. The transfer goes on until μ_j is the same in both phases."
+  },
+  {
+    "id": "pc24-phase-mu-each-component",
+    "type": "multiple-choice",
+    "prompt": "A benzene–toluene solution is in equilibrium with its vapor. Which condition must hold?",
+    "choices": [
+      {
+        "text": "Each component's μ is equal in liquid and vapor",
+        "correct": true
+      },
+      {
+        "text": "Benzene and toluene have the same μ in the liquid",
+        "why": "Different substances need not have equal chemical potentials. The condition pairs each component with itself: benzene in liquid and vapor, and toluene in liquid and vapor."
+      },
+      {
+        "text": "Benzene and toluene have equal partial pressures",
+        "why": "The partial pressures are generally different. Equilibrium requires each component's chemical potential to be equal in the two phases."
+      },
+      {
+        "text": "The liquid and the vapor have the same composition",
+        "why": "Equal chemical potentials do not require equal compositions. The condition is that each component's μ is the same in the liquid and the vapor."
+      }
+    ],
+    "explanation": "At equilibrium μ_j^(sln) = μ_j^(gas) must hold for every component j. For this solution that means two conditions, one for benzene and one for toluene."
+  },
+  {
+    "id": "pc24-phase-mu-why-equal",
+    "type": "multiple-choice",
+    "prompt": "The components of a mixture are spread over several phases. Why must each component's chemical potential be the same in every phase where it appears, once the system is at equilibrium?",
+    "choices": [
+      {
+        "text": "Otherwise moving some of it to a lower μ would lower G",
+        "correct": true
+      },
+      {
+        "text": "Because every phase has the same composition",
+        "why": "Phases in equilibrium can differ in composition. The condition comes from G: if μ differed, a transfer toward lower μ would lower G further."
+      },
+      {
+        "text": "Because the phases are at the same pressure",
+        "why": "Equal pressure alone does not make the chemical potentials equal. They must be equal because any difference would let G fall by moving material."
+      },
+      {
+        "text": "Because all substances have the same chemical potential",
+        "why": "Different substances have different chemical potentials. The equality is for one component across phases, since any difference would let G fall."
+      }
+    ],
+    "explanation": "At constant T and P a system moves to lower its total Gibbs energy. If a component's μ differed between two phases, moving some of it to the phase with lower μ would lower G, so equilibrium requires equal values."
+  },
+  {
+    "id": "pc24-phase-mu-partial-pressure",
+    "type": "multiple-choice",
+    "prompt": "In a mixture of ideal gases, the section writes μ_j = μ_j° + RT ln((P_j)/(P°)) for each gas j. What is P_j?",
+    "choices": [
+      {
+        "text": "The partial pressure of gas j",
+        "correct": true
+      },
+      {
+        "text": "The total pressure of the mixture",
+        "why": "Each gas gets its own term with its own pressure. P_j is the partial pressure of gas j, not the total."
+      },
+      {
+        "text": "The vapor pressure of pure liquid j",
+        "why": "The vapor pressure of the pure component is written with a star, P_j^*. In the gas-mixture formula, P_j is the partial pressure of j."
+      },
+      {
+        "text": "The standard pressure, 1 bar",
+        "why": "The standard pressure is P°, in the denominator. P_j is the partial pressure of gas j in the mixture."
+      }
+    ],
+    "explanation": "Each gas in an ideal mixture behaves as if it were alone at its own partial pressure, so its chemical potential uses P_j. μ_j equals μ_j° when P_j = P° = 1 bar."
+  },
+  {
+    "id": "pc24-phase-mu-vapor-probe",
+    "type": "multiple-choice",
+    "prompt": "To find the chemical potential of component j in an ideal liquid solution, the section looks at the vapor above it. Why does that work?",
+    "choices": [
+      {
+        "text": "At equilibrium, μ_j is the same in liquid and vapor",
+        "correct": true
+      },
+      {
+        "text": "μ_j in the liquid does not depend on composition",
+        "why": "It does depend on composition, and the vapor is used to find how. At equilibrium μ_j^(sln) = μ_j^(gas), and the gas value follows from P_j."
+      },
+      {
+        "text": "Only the vapor phase has a chemical potential for j",
+        "why": "Every component has a chemical potential in each phase where it appears. The vapor is used because, at equilibrium, its μ_j equals the liquid's."
+      },
+      {
+        "text": "The partial pressure of j above it is always 1 bar",
+        "why": "Partial pressures over a solution vary with composition and temperature. The vapor is useful because μ_j^(gas) = μ_j^(sln) at equilibrium, and μ_j^(gas) follows from P_j."
+      }
+    ],
+    "explanation": "Since μ_j^(sln) = μ_j^(gas) at equilibrium, and μ_j^(gas) = μ_j° + RT ln((P_j)/(P°)), the partial pressure of j above the solution reports on μ_j in the liquid. The section calls the gas phase a probe for the liquid."
+  },
+  {
+    "id": "pc24-phase-mu-combine",
+    "type": "multiple-choice",
+    "prompt": "Through the vapor, j in a solution has μ_j^(sln) = μ_j° + RT ln((P_j)/(P°)), and pure liquid j has μ_j^* = μ_j° + RT ln((P_j^*)/(P°)). What does subtracting the second from the first give?",
+    "choices": [
+      {
+        "text": "μ_j^(sln) = μ_j^* + RT ln((P_j)/(P_j^*))",
+        "correct": true
+      },
+      {
+        "text": "μ_j^(sln) = μ_j^* + RT ln((P_j^*)/(P_j))",
+        "why": "The ratio is upside down. ln(P_j/P°) − ln(P_j^*/P°) = ln(P_j/P_j^*), with the solution's pressure on top."
+      },
+      {
+        "text": "μ_j^(sln) = μ_j° + RT ln((P_j)/(P_j^*))",
+        "why": "Subtracting removes μ_j°, and μ_j^* takes its place as the reference. The result is μ_j^(sln) = μ_j^* + RT ln(P_j/P_j^*)."
+      },
+      {
+        "text": "μ_j^(sln) = μ_j^* + RT ln((P_j)/(P°))",
+        "why": "P° cancels in the subtraction too, since ln(P_j/P°) − ln(P_j^*/P°) = ln(P_j/P_j^*). The pure liquid's vapor pressure becomes the reference."
+      }
+    ],
+    "explanation": "In the difference, μ_j° cancels and ln(P_j/P°) − ln(P_j^*/P°) = ln(P_j/P_j^*). The gas and its pressure link the solution to the pure liquid: μ_j^(sln) = μ_j^* + RT ln((P_j)/(P_j^*))."
+  },
+  {
+    "id": "pc24-phase-mu-sln-lower",
+    "type": "multiple-choice",
+    "prompt": "Using μ_j^(sln) = μ_j^* + RT ln((P_j)/(P_j^*)), suppose the partial pressure of j above a solution is less than the vapor pressure of pure j. How does μ_j in the solution compare with μ_j^* of pure liquid j?",
+    "choices": [
+      {
+        "text": "It is lower",
+        "correct": true
+      },
+      {
+        "text": "It is higher",
+        "why": "With P_j < P_j^*, the ratio is below 1 and its logarithm is negative. So μ_j^(sln) is below μ_j^*."
+      },
+      {
+        "text": "It is the same",
+        "why": "They are equal only when P_j = P_j^*, so that ln 1 = 0. Here the logarithm is negative, so μ_j^(sln) is lower."
+      },
+      {
+        "text": "It cannot be told without μ_j°",
+        "why": "μ_j° does not appear in this formula, which compares the solution directly with pure liquid j. Since P_j/P_j^* < 1, μ_j^(sln) < μ_j^*."
+      }
+    ],
+    "explanation": "When P_j < P_j^*, ln((P_j)/(P_j^*)) < 0, so μ_j^(sln) < μ_j^*. Component j has a lower chemical potential in the solution than in its pure liquid."
+  },
+  {
+    "id": "pc24-phase-mu-pure-benzene",
+    "type": "numeric",
+    "prompt": "Pure liquid benzene at 298 K is in equilibrium with its vapor at P^* = 0.127 bar. Using μ^* = μ° + RT ln((P^*)/(P°)), with P° = 1 bar, R = 8.314 J/(mol·K) and ln 0.127 = −2.064, what is μ^* − μ° for liquid benzene, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -5.11,
+    "explanation": "RT = (8.314 J/(mol·K))(298 K) = 2478 J/mol, so μ^* − μ° = (2478 J/mol)(−2.064) = −5114 J/mol = −5.11 kJ/mol. The liquid has the chemical potential of its vapor at 0.127 bar, which is below the value at the 1 bar standard pressure."
+  },
+  {
+    "id": "pc24-phase-mu-solution-vs-pure",
+    "type": "numeric",
+    "prompt": "Above a solution at 298 K, the partial pressure of toluene is 18.0 torr, while pure toluene has a vapor pressure of 30.0 torr. Using μ_j^(sln) = μ_j^* + RT ln((P_j)/(P_j^*)), with R = 8.314 J/(mol·K) and ln 0.600 = −0.511, what is μ_j^(sln) − μ_j^* for toluene, in kJ/mol, including its sign? (Give it as a decimal.)",
+    "answer": -1.27,
+    "explanation": "P_j/P_j^* = 18.0/30.0 = 0.600, so μ_j^(sln) − μ_j^* = (8.314 J/(mol·K))(298 K)(−0.511) = −1266 J/mol = −1.27 kJ/mol. Toluene has a lower chemical potential in the solution than in the pure liquid."
+  },
+  {
+    "id": "pc24-phase-mu-air-nitrogen",
+    "type": "numeric",
+    "prompt": "In air, treated as an ideal gas mixture at 300 K, the partial pressure of N2 is 0.780 bar. Using μ_j = μ_j° + RT ln((P_j)/(P°)), with P° = 1 bar, R = 8.314 J/(mol·K) and ln 0.780 = −0.248, what is μ_j − μ_j° for N2, in J/mol, including its sign? (Give it as a decimal.)",
+    "answer": -618.6,
+    "explanation": "RT = (8.314 J/(mol·K))(300 K) = 2494 J/mol, so μ_j − μ_j° = (2494 J/mol)(−0.248) = −618.6 J/mol. Using the total pressure of 1 bar in place of the partial pressure would wrongly give zero."
+  }
+]

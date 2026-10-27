@@ -1,0 +1,313 @@
+[
+  {
+    "id": "pc23-two-phase-mu-equal",
+    "type": "multiple-choice",
+    "prompt": "Ice and liquid water are in equilibrium at constant T and P. How are their chemical potentials related?",
+    "choices": [
+      {
+        "text": "μ_ice = μ_water",
+        "correct": true
+      },
+      {
+        "text": "μ_ice > μ_water",
+        "why": "If μ_ice were higher, ice would melt until it was used up. At equilibrium neither phase gains at the other's expense, so the chemical potentials are equal."
+      },
+      {
+        "text": "μ_water > μ_ice",
+        "why": "A higher μ for the liquid would make it all freeze. Equilibrium needs equal chemical potentials, Δμ = 0."
+      },
+      {
+        "text": "μ_ice + μ_water = 0",
+        "why": "Chemical potentials need not add up to zero. Equilibrium needs them to be equal, so their difference Δμ is zero."
+      }
+    ],
+    "explanation": "At equilibrium, moving dn_water of substance from one phase to the other changes G by Δμ dn_water, and this must be zero. So the chemical potentials are equal, and the same holds for any two phases in equilibrium."
+  },
+  {
+    "id": "pc23-two-phase-mu-terms-drop",
+    "type": "multiple-choice",
+    "prompt": "The section writes dG = −SdT + VdP + μ_ice dn_ice + μ_water dn_water for ice and water together, then strikes out −SdT + VdP. Why can those two terms be dropped?",
+    "choices": [
+      {
+        "text": "T and P are constant, so dT = dP = 0",
+        "correct": true
+      },
+      {
+        "text": "Ice and water have the same S and V",
+        "why": "Ice and water differ in both entropy and volume. The terms vanish because T and P are held constant."
+      },
+      {
+        "text": "S and V are both zero at equilibrium",
+        "why": "S and V are positive at any temperature. The terms vanish because dT and dP are zero, not because S or V is."
+      },
+      {
+        "text": "Those terms are too small to matter here",
+        "why": "The terms are not just small; they are exactly zero. The equilibrium is at constant T and P, so dT = 0 and dP = 0."
+      }
+    ],
+    "explanation": "Equilibrium between ice and water is at constant temperature and pressure, so dT = 0 and dP = 0. Only the terms for moving substance between the phases, μ_ice dn_ice + μ_water dn_water, remain."
+  },
+  {
+    "id": "pc23-two-phase-mu-why-zero",
+    "type": "multiple-choice",
+    "prompt": "With dn_ice = −dn_water, the section finds 0 = (μ_water − μ_ice) dn_water at equilibrium. Why must Δμ = μ_water − μ_ice be zero?",
+    "choices": [
+      {
+        "text": "dn_water is not zero, so Δμ has to be",
+        "correct": true
+      },
+      {
+        "text": "dn_water is always zero at equilibrium",
+        "why": "Substance can pass between the phases at equilibrium; some ice can melt while some water freezes. Since dn_water is not zero, Δμ must be."
+      },
+      {
+        "text": "The two phases have the same molar volume",
+        "why": "Ice and water have different molar volumes. The product Δμ dn_water is zero while dn_water ≠ 0, so Δμ = 0."
+      },
+      {
+        "text": "The total amount of water is zero",
+        "why": "The total amount is fixed, not zero, which is why dn_ice = −dn_water. Since dn_water ≠ 0, Δμ must vanish."
+      }
+    ],
+    "explanation": "At equilibrium some ice may melt or some water freeze, so dn_water can take any small value. The only way the product Δμ dn_water stays zero for every such change is Δμ = 0."
+  },
+  {
+    "id": "pc23-two-phase-mu-dmu-dt",
+    "type": "multiple-choice",
+    "prompt": "For a single pure phase, the chemical potential μ depends on T and P. What is ((∂μ)/(∂T))_P?",
+    "choices": [
+      {
+        "text": "−S̄",
+        "correct": true
+      },
+      {
+        "text": "+S̄",
+        "why": "The sign is negative. Since μ = Ḡ and ((∂Ḡ)/(∂T))_P = −S̄, μ falls as T rises."
+      },
+      {
+        "text": "V̄",
+        "why": "V̄ is the slope of μ against P at constant T. Against T at constant P, the slope is −S̄."
+      },
+      {
+        "text": "H̄",
+        "why": "The slope of μ against T is set by the entropy, not the enthalpy. It is ((∂μ)/(∂T))_P = −S̄."
+      }
+    ],
+    "explanation": "For a pure substance μ = Ḡ, and ((∂Ḡ)/(∂T))_P = −S̄. So μ falls as T rises, and it falls fastest for the phase with the most entropy."
+  },
+  {
+    "id": "pc23-two-phase-mu-dmu-dp",
+    "type": "multiple-choice",
+    "prompt": "For a single pure phase, what is ((∂μ)/(∂P))_T, the change in its chemical potential with pressure at constant temperature?",
+    "choices": [
+      {
+        "text": "V̄",
+        "correct": true
+      },
+      {
+        "text": "−V̄",
+        "why": "Pressure raises μ, since the molar volume is positive. The slope is ((∂μ)/(∂P))_T = +V̄."
+      },
+      {
+        "text": "−S̄",
+        "why": "−S̄ is the slope of μ against T, not P. Against P at constant T, the slope is V̄."
+      },
+      {
+        "text": "PV̄",
+        "why": "There is no extra factor of P. Since μ = Ḡ and ((∂Ḡ)/(∂P))_T = V̄, the slope is just V̄."
+      }
+    ],
+    "explanation": "Since μ = Ḡ for a pure substance and ((∂Ḡ)/(∂P))_T = V̄, raising the pressure raises μ by about V̄ per unit of pressure. A phase with a larger molar volume is affected more."
+  },
+  {
+    "id": "pc23-two-phase-mu-stay-on-line",
+    "type": "multiple-choice",
+    "prompt": "Points on the ice–water melting line are at different T and P, but Δμ = 0 at every one of them. Moving along the line by dT and dP, what must be true of the changes in chemical potential?",
+    "choices": [
+      {
+        "text": "dμ_ice = dμ_water",
+        "correct": true
+      },
+      {
+        "text": "dμ_ice = −dμ_water",
+        "why": "That would make μ_ice and μ_water drift apart, breaking Δμ = 0. To stay equal, both must change by the same amount."
+      },
+      {
+        "text": "dμ_ice = dμ_water = 0",
+        "why": "μ does change along the line, since T and P change. It just has to change by the same amount in both phases."
+      },
+      {
+        "text": "dμ_ice > dμ_water",
+        "why": "Unequal changes would leave one phase with the lower μ, and the other would disappear. On the line the changes must be equal."
+      }
+    ],
+    "explanation": "Since μ_ice = μ_water at every point of the line, moving from one point to the next must change both by the same amount. Writing each dμ as V̄ dP − S̄ dT then leads to the Clapeyron equation."
+  },
+  {
+    "id": "pc23-two-phase-mu-ds-over-dv",
+    "type": "multiple-choice",
+    "prompt": "Equating dμ for ice and water gives V̄_ice dP − S̄_ice dT = V̄_water dP − S̄_water dT. Solving for dP/dT, what does the section get?",
+    "choices": [
+      {
+        "text": "dP/dT = (ΔS̄)/(ΔV̄)",
+        "correct": true
+      },
+      {
+        "text": "dP/dT = (ΔV̄)/(ΔS̄)",
+        "why": "The volume terms carry dP, so collecting terms gives ΔV̄ dP = ΔS̄ dT. Dividing, dP/dT = ΔS̄/ΔV̄."
+      },
+      {
+        "text": "dP/dT = ΔS̄ × ΔV̄",
+        "why": "Collecting terms gives ΔV̄ dP = ΔS̄ dT, so the volume change divides rather than multiplies. dP/dT = ΔS̄/ΔV̄."
+      },
+      {
+        "text": "dP/dT = −(ΔS̄)/(ΔV̄)",
+        "why": "With both differences taken the same way, water minus ice, the signs cancel. dP/dT = ΔS̄/ΔV̄, with no minus sign."
+      }
+    ],
+    "explanation": "Collecting terms gives (V̄_water − V̄_ice) dP = (S̄_water − S̄_ice) dT, that is ΔV̄ dP = ΔS̄ dT. So dP/dT = ΔS̄/ΔV̄."
+  },
+  {
+    "id": "pc23-two-phase-mu-ds-from-dh",
+    "type": "multiple-choice",
+    "prompt": "To turn dP/dT = (ΔS̄)/(ΔV̄) into dP/dT = (ΔH̄)/(TΔV̄), the section replaces ΔS̄ by ΔH̄/T. What justifies this?",
+    "choices": [
+      {
+        "text": "ΔḠ = ΔH̄ − TΔS̄ = 0 for the two phases",
+        "correct": true
+      },
+      {
+        "text": "ΔH̄ = 0 along the melting line",
+        "why": "Melting takes in heat, so ΔH̄ is not zero. It is ΔḠ that is zero at equilibrium, which gives ΔS̄ = ΔH̄/T."
+      },
+      {
+        "text": "S̄ = H̄/T holds for every phase",
+        "why": "That is not true of the absolute values. Only the difference between two phases in equilibrium obeys ΔS̄ = ΔH̄/T, because ΔḠ = 0."
+      },
+      {
+        "text": "T is the same at every point on the line",
+        "why": "T changes along the melting line. At each point, though, ΔḠ = ΔH̄ − TΔS̄ = 0, so ΔS̄ = ΔH̄/T there."
+      }
+    ],
+    "explanation": "The two phases are in equilibrium, so ΔḠ = ΔH̄ − TΔS̄ = 0 at each point on the line, giving ΔS̄ = ΔH̄/T. Substituting gives the Clapeyron equation, dP/dT = (ΔH̄)/(TΔV̄)."
+  },
+  {
+    "id": "pc23-two-phase-mu-slope-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the Clapeyron equation, dP/dT = (ΔH̄)/(TΔV̄), what does dP/dT describe?",
+    "choices": [
+      {
+        "text": "The slope of a phase boundary on a P–T diagram",
+        "correct": true
+      },
+      {
+        "text": "How fast a sample's pressure rises as it is heated",
+        "why": "That would describe a single phase in a closed container. Here dP/dT follows the line along which two phases coexist."
+      },
+      {
+        "text": "How fast the solid melts at a given temperature",
+        "why": "The equation says nothing about how fast melting happens. dP/dT is the slope of the coexistence line on the phase diagram."
+      },
+      {
+        "text": "The heat taken in per kelvin of warming",
+        "why": "Heat per kelvin is a heat capacity, not dP/dT. dP/dT is how the equilibrium pressure changes with T along the boundary."
+      }
+    ],
+    "explanation": "dP/dT tells how much the pressure must change, per kelvin, to keep two phases in equilibrium. That is the slope of the line separating them on a P–T phase diagram, such as the melting line."
+  },
+  {
+    "id": "pc23-two-phase-mu-water-tilts-left",
+    "type": "multiple-choice",
+    "prompt": "Water's melting line on a P–T diagram tilts slightly to the left, so its slope is negative. According to the Clapeyron equation, dP/dT = (ΔH̄)/(TΔV̄), why?",
+    "choices": [
+      {
+        "text": "ΔV̄_fus < 0, since water is denser than ice",
+        "correct": true
+      },
+      {
+        "text": "ΔH̄_fus < 0, since freezing gives off heat",
+        "why": "Melting takes in heat, so ΔH̄_fus > 0. The negative sign comes from ΔV̄_fus, which is negative because water is denser than ice."
+      },
+      {
+        "text": "ΔS̄_fus < 0, since ice is more disordered",
+        "why": "Ice is more ordered than water, so ΔS̄_fus > 0. The minus sign comes from ΔV̄_fus < 0: the liquid is denser than ice."
+      },
+      {
+        "text": "ΔV̄_fus > 0, since ice is denser than water",
+        "why": "Ice floats because it is less dense than water. So melting shrinks the volume, ΔV̄_fus < 0, and dP/dT is negative."
+      }
+    ],
+    "explanation": "ΔH̄_fus and T are positive, so the sign of dP/dT is the sign of ΔV̄_fus. Liquid water is a little denser than ice, so ΔV̄_fus < 0 and the line leans left: higher pressure lowers the melting point."
+  },
+  {
+    "id": "pc23-two-phase-mu-nearly-vertical",
+    "type": "multiple-choice",
+    "prompt": "A melting line on a P–T diagram is usually almost vertical. What in the Clapeyron equation, dP/dT = (ΔH̄)/(TΔV̄), makes it so steep?",
+    "choices": [
+      {
+        "text": "The volume change on melting is tiny",
+        "correct": true
+      },
+      {
+        "text": "The enthalpy of fusion is tiny",
+        "why": "A smaller ΔH̄_fus would make the line flatter, not steeper. The line is steep because ΔV̄_fus, in the denominator, is tiny."
+      },
+      {
+        "text": "The melting temperature is very high",
+        "why": "A large T would make dP/dT smaller, not larger. The slope is large because a solid and its liquid have nearly the same molar volume."
+      },
+      {
+        "text": "The entropy of fusion is zero",
+        "why": "If ΔS̄_fus were zero, dP/dT = ΔS̄/ΔV̄ would be zero, a flat line. The line is steep because ΔV̄_fus is tiny."
+      }
+    ],
+    "explanation": "A solid and its liquid have nearly the same molar volume, so ΔV̄_fus is tiny and dP/dT is very large, typically 10^6 to 10^7 Pa/K. A large change in pressure then shifts the melting point only a little."
+  },
+  {
+    "id": "pc23-two-phase-mu-which-boundary-constant",
+    "type": "multiple-choice",
+    "prompt": "Along which kind of phase boundary can ΔH̄ and ΔV̄ in the Clapeyron equation most safely be treated as constants?",
+    "choices": [
+      {
+        "text": "Solid–liquid, the melting line",
+        "correct": true
+      },
+      {
+        "text": "Liquid–vapor, the boiling line",
+        "why": "A gas is involved there, and its molar volume changes greatly with P and T, so ΔV̄ is far from constant. The melting line, between two condensed phases, is the safe case."
+      },
+      {
+        "text": "Solid–vapor, the sublimation line",
+        "why": "The vapor's molar volume changes strongly along this line, so ΔV̄ does too. Only between two condensed phases, as in melting, are ΔH̄ and ΔV̄ nearly constant."
+      },
+      {
+        "text": "Every boundary, equally well",
+        "why": "Lines that involve a gas are different, because a gas's molar volume changes greatly with P and T. Only along the melting line do ΔH̄ and ΔV̄ stay nearly constant."
+      }
+    ],
+    "explanation": "Solids and liquids are hard to compress, so along a melting line ΔH̄ and ΔV̄ change little with pressure. When a gas is involved, its molar volume changes a lot with P and T, so ΔV̄ cannot be taken as constant."
+  },
+  {
+    "id": "pc23-two-phase-mu-water-slope",
+    "type": "numeric",
+    "prompt": "For melting ice at 273 K, ΔH̄_fus = 6010 J/mol and ΔV̄_fus = V̄_water − V̄_ice = −1.63 × 10^−6 m^3/mol. Since 1 J/m^3 = 1 Pa, the Clapeyron equation, dP/dT = (ΔH̄)/(TΔV̄), gives the slope in Pa/K. What is the slope of water's melting line, including its sign? (Type it in scientific notation, like 2.5e7.)",
+    "answer": -13500000.0,
+    "explanation": "TΔV̄ = (273 K)(−1.63 × 10^−6 m^3/mol) = −4.45 × 10^−4 m^3·K/mol, so dP/dT = (6010 J/mol)/(−4.45 × 10^−4 m^3·K/mol) = −1.35 × 10^7 Pa/K. The minus sign is the leftward tilt: about 135 bar of extra pressure lowers the melting point by 1 K."
+  },
+  {
+    "id": "pc23-two-phase-mu-mercury-slope",
+    "type": "numeric",
+    "prompt": "Mercury melts with ΔS̄_fus = 9.80 J/(mol·K) and ΔV̄_fus = +5.00 × 10^−7 m^3/mol. Using dP/dT = (ΔS̄)/(ΔV̄), with 1 J/m^3 = 1 Pa, what is the slope of mercury's melting line, in Pa/K? (Type it in scientific notation, like 2.5e7.)",
+    "answer": 19600000.0,
+    "explanation": "Dividing 9.80 J/(mol·K) by 5.00 × 10^−7 m^3/mol gives dP/dT = 1.96 × 10^7 Pa/K. It is positive, as for most substances, because mercury expands on melting."
+  },
+  {
+    "id": "pc23-two-phase-mu-pressure-for-shift",
+    "type": "numeric",
+    "prompt": "A solid's melting line has a slope dP/dT = 4.00 × 10^6 Pa/K, and ΔH̄ and ΔV̄ can be taken as constant. Using ΔP ≈ (dP/dT)ΔT and 1 bar = 10^5 Pa, by how much must the pressure rise, in bar, to raise the melting point by 2.50 K?",
+    "answer": 100,
+    "unit": "bar",
+    "tolerance": 0,
+    "explanation": "ΔP ≈ (4.00 × 10^6 Pa/K)(2.50 K) = 1.00 × 10^7 Pa = 100 bar. Because melting lines are so steep, it takes a large change in pressure to move a melting point by a few kelvin."
+  }
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "id": "pc26-k-temperature-standard-not-eq",
+    "type": "multiple-choice",
+    "prompt": "At equilibrium Δ_r G = 0, and the section writes Δ_r G° = −RT ln K. Why is Δ_r G° itself usually not zero?",
+    "choices": [
+      {
+        "text": "The standard state is rarely at equilibrium",
+        "correct": true
+      },
+      {
+        "text": "Δ_r G° is measured before the reaction starts",
+        "why": "Δ_r G° is not tied to a moment in the reaction; it refers to every species in its standard state. That state is generally not the equilibrium mixture."
+      },
+      {
+        "text": "Equilibrium is never fully reached in practice",
+        "why": "Equilibrium is reached, and there Δ_r G = 0. Δ_r G° differs because it refers to the standard state, which is generally not at equilibrium."
+      },
+      {
+        "text": "K is always larger than 1 for a gas reaction",
+        "why": "K can be larger or smaller than 1. Δ_r G° = −RT ln K is zero only for K = 1, that is, only if the standard state happens to be at equilibrium."
+      }
+    ],
+    "explanation": "Δ_r G° refers to every species in its standard state, such as 1 bar for each gas. That mixture is typically not an equilibrium mixture, so Δ_r G° = −RT ln K is not zero."
+  },
+  {
+    "id": "pc26-k-temperature-what-changes-k",
+    "type": "multiple-choice",
+    "prompt": "For a reaction between ideal gases, which of these changes the value of the equilibrium constant K?",
+    "choices": [
+      {
+        "text": "Raising the temperature",
+        "correct": true
+      },
+      {
+        "text": "Compressing the gas mixture",
+        "why": "Compression shifts the equilibrium, changing ξ_eq, but K stays the same. For ideal gases K depends only on temperature."
+      },
+      {
+        "text": "Adding more of one reactant",
+        "why": "Adding a reactant makes the mixture react, but the new equilibrium has the same K. Only a change in temperature changes K."
+      },
+      {
+        "text": "Using a larger reaction vessel",
+        "why": "A change of volume shifts the position of equilibrium, not K. For an ideal-gas reaction K is a function of temperature only."
+      }
+    ],
+    "explanation": "The section stresses that for an ideal-gas reaction K depends only on T, not on the total pressure. Changes in pressure, volume or amounts shift the position of equilibrium while K keeps its value."
+  },
+  {
+    "id": "pc26-k-temperature-why-not-pressure",
+    "type": "multiple-choice",
+    "prompt": "K is fixed by Δ_r G° = −RT ln K, where Δ_r G° refers to every gas at the standard pressure P° = 1 bar. Why, then, does K not depend on the total pressure of the mixture?",
+    "choices": [
+      {
+        "text": "Δ_r G° is set at P°, so it varies only with T",
+        "correct": true
+      },
+      {
+        "text": "The total pressure is always 1 bar at equilibrium",
+        "why": "The total pressure can have any value. K ignores it because Δ_r G° refers to the fixed standard pressure P°, not to the actual pressure."
+      },
+      {
+        "text": "Δ_r G° depends on P, but RT cancels it",
+        "why": "RT does not cancel any pressure. Δ_r G° refers to the fixed pressure P°, so it changes only with T, and K with it."
+      },
+      {
+        "text": "K is defined with concentrations, not pressures",
+        "why": "Here K is written with partial pressures. It is independent of the total pressure because Δ_r G° is taken at the fixed pressure P°."
+      }
+    ],
+    "explanation": "Δ_r G° compares products and reactants each at the standard pressure P°, a fixed reference, so it depends only on temperature. Since K = exp(−(Δ_r G°)/(RT)), K too depends only on T, just as U of an ideal gas does."
+  },
+  {
+    "id": "pc26-k-temperature-pcl5-compress",
+    "type": "multiple-choice",
+    "prompt": "For PCl5 ⇌ PCl3 + Cl2, starting from 1 mol of PCl5, the section finds K = P (ξ_eq^2)/(1 − ξ_eq^2), where P is the total pressure. If the gas is compressed to a higher P at constant temperature, what happens to ξ_eq?",
+    "choices": [
+      {
+        "text": "It decreases, so less PCl5 dissociates",
+        "correct": true
+      },
+      {
+        "text": "It increases, so more PCl5 dissociates",
+        "why": "With K fixed, a larger P must be offset by a smaller (ξ_eq^2)/(1 − ξ_eq^2). So ξ_eq falls and the equilibrium shifts toward PCl5."
+      },
+      {
+        "text": "It stays the same, since K does not change",
+        "why": "K does stay the same, but P appears in the expression. To keep K constant at a higher P, ξ_eq must fall."
+      },
+      {
+        "text": "It drops to zero, so no PCl5 dissociates",
+        "why": "ξ_eq falls but stays above zero, so some PCl5 is still dissociated. The equilibrium only shifts toward the side with fewer molecules."
+      }
+    ],
+    "explanation": "K depends only on T, so compression leaves it unchanged. Since P multiplies (ξ_eq^2)/(1 − ξ_eq^2), a larger P forces a smaller ξ_eq: the equilibrium shifts toward PCl5, the side with fewer molecules."
+  },
+  {
+    "id": "pc26-k-temperature-total-moles",
+    "type": "multiple-choice",
+    "prompt": "For A ⇌ B + C (such as PCl5 ⇌ PCl3 + Cl2), starting from 1 mol of A, the section writes n_A = 1 − ξ and n_B = n_C = ξ. Why is the total amount of gas 1 + ξ mol rather than 1 mol?",
+    "choices": [
+      {
+        "text": "Each A that reacts gives two molecules",
+        "correct": true
+      },
+      {
+        "text": "An inert gas is added during the reaction",
+        "why": "Nothing is added. Each A that dissociates is replaced by one B and one C, so the total is (1 − ξ) + ξ + ξ = 1 + ξ."
+      },
+      {
+        "text": "The gas expands as the reaction proceeds",
+        "why": "Expansion changes the volume, not the number of moles. The amount grows because one A becomes two molecules, B and C."
+      },
+      {
+        "text": "Only B is counted, not C",
+        "why": "Both B and C are counted: (1 − ξ) + ξ + ξ = 1 + ξ. Counting only B would give exactly 1 mol."
+      }
+    ],
+    "explanation": "Adding the amounts gives (1 − ξ) + ξ + ξ = 1 + ξ mol. Each A that dissociates becomes one B and one C, so the gas gains ξ mol, which is why compression pushes the equilibrium back toward A."
+  },
+  {
+    "id": "pc26-k-temperature-dalton-pa",
+    "type": "numeric",
+    "prompt": "For PCl5 ⇌ PCl3 + Cl2 starting from 1 mol of PCl5, Dalton's law gives the partial pressure of PCl5 as P_A = ((1 − ξ)/(1 + ξ)) P. At ξ = 0.250 and a total pressure P = 2.00 bar, what is P_A, in bar? (Give it as a decimal.)",
+    "answer": 1.2,
+    "unit": "bar",
+    "explanation": "P_A = (0.750/1.250) × 2.00 bar = 0.600 × 2.00 bar = 1.20 bar. PCl3 and Cl2 each have (0.250/1.250) × 2.00 bar = 0.400 bar, and the three add up to 2.00 bar."
+  },
+  {
+    "id": "pc26-k-temperature-k-from-xi",
+    "type": "numeric",
+    "prompt": "For PCl5 ⇌ PCl3 + Cl2 starting from 1 mol of PCl5, the section finds K = P (ξ_eq^2)/(1 − ξ_eq^2), with the total pressure P in bar (P° = 1 bar). At a certain temperature, ξ_eq = 0.200 when P = 2.40 bar. What is K? (Give it as a decimal.)",
+    "answer": 0.1,
+    "explanation": "K = 2.40 × (0.200^2)/(1 − 0.200^2) = 2.40 × 0.0400/0.960 = 0.100. At a higher pressure ξ_eq would be smaller, but K would still be 0.100 at this temperature."
+  },
+  {
+    "id": "pc26-k-temperature-ionic-strength",
+    "type": "multiple-choice",
+    "prompt": "According to the section, in ionic solutions an equilibrium constant written with concentrations can be affected by more than the temperature. Which other factor does it name?",
+    "choices": [
+      {
+        "text": "The ionic strength of the solution",
+        "correct": true
+      },
+      {
+        "text": "The pressure of the air above the solution",
+        "why": "The section does not name air pressure. In ionic solutions the ionic strength changes the activity coefficients, and with them K."
+      },
+      {
+        "text": "The volume of solution used",
+        "why": "The amount of solution doesn't change K. The section names the ionic strength, which changes the activity coefficients of the ions."
+      },
+      {
+        "text": "The rate at which the solution is stirred",
+        "why": "Stirring affects how fast equilibrium is reached, not where it lies. The section names changes in the ionic strength."
+      }
+    ],
+    "explanation": "Ions interact strongly, so ionic solutions are far from ideal. An equilibrium constant written with concentrations changes with the ionic strength, and predictions need the activity coefficients."
+  },
+  {
+    "id": "pc26-k-temperature-nh3-remove-h2",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g) at equilibrium, some H2 is removed at constant temperature. Which way does the equilibrium shift?",
+    "choices": [
+      {
+        "text": "Toward the products, N2 and H2",
+        "correct": true
+      },
+      {
+        "text": "Toward the reactant, NH3",
+        "why": "Removing H2 lowers Q below K. The system makes more products to replace it, so it shifts toward N2 and H2."
+      },
+      {
+        "text": "It does not shift, since K is unchanged",
+        "why": "K is unchanged, but Q is not: with less H2, Q < K. More NH3 decomposes until Q = K again."
+      },
+      {
+        "text": "Toward NH3, as the total pressure falls",
+        "why": "A lower pressure would favor the side with more molecules, N2 and H2, anyway. Removing H2 makes Q < K, so the reaction runs forward."
+      }
+    ],
+    "explanation": "Taking away a product lowers Q = (P_(N2) P_(H2)^3)/(P_(NH3)^2) below K. More NH3 decomposes until Q = K again, so the equilibrium shifts toward the products."
+  },
+  {
+    "id": "pc26-k-temperature-nh3-add-n2",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g) at equilibrium, extra N2 is added at constant temperature. Which way does the equilibrium shift?",
+    "choices": [
+      {
+        "text": "Toward the reactant, NH3",
+        "correct": true
+      },
+      {
+        "text": "Toward the products, N2 and H2",
+        "why": "Adding a product raises Q above K. The system uses up some of the added N2, shifting back toward NH3."
+      },
+      {
+        "text": "It does not shift, since K depends only on T",
+        "why": "K stays the same, but adding N2 makes Q larger than K. The equilibrium shifts toward NH3 until Q = K again."
+      },
+      {
+        "text": "Only the H2 pressure rises",
+        "why": "Adding N2 drives the reverse reaction, which uses up H2 as well, so the H2 pressure falls. The equilibrium shifts toward NH3."
+      }
+    ],
+    "explanation": "Adding a product raises Q above its equilibrium value, so Q > K. The reverse reaction then turns N2 and H2 into NH3 until Q = K again."
+  },
+  {
+    "id": "pc26-k-temperature-nh3-volume",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g) at equilibrium, the container volume is decreased at constant temperature. Which way does the equilibrium shift?",
+    "choices": [
+      {
+        "text": "Toward NH3, the side with fewer gas molecules",
+        "correct": true
+      },
+      {
+        "text": "Toward N2 and H2, the side with more molecules",
+        "why": "Compression favors the side with fewer molecules. There are 2 on the NH3 side and 4 on the other, so the shift is toward NH3."
+      },
+      {
+        "text": "It does not shift, since K is unchanged",
+        "why": "K is unchanged, but compression raises every partial pressure, and the product side has more molecules. The equilibrium shifts toward NH3."
+      },
+      {
+        "text": "Toward N2 and H2, as pressure breaks NH3 apart",
+        "why": "Pressure does not break molecules apart. It favors the side with fewer gas molecules, here the 2 NH3."
+      }
+    ],
+    "explanation": "Two molecules of NH3 stand against four of N2 and H2. Compression raises the total pressure, and the equilibrium shifts to the side with fewer molecules, as Le Chatelier's principle says."
+  },
+  {
+    "id": "pc26-k-temperature-nh3-argon",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g) at equilibrium, argon is added at constant temperature and constant volume. Which way does the equilibrium shift?",
+    "choices": [
+      {
+        "text": "It does not shift",
+        "correct": true
+      },
+      {
+        "text": "Toward NH3, since the total pressure rises",
+        "why": "The total pressure does rise, but the partial pressures of NH3, N2 and H2 stay the same. Q still equals K, so there is no shift."
+      },
+      {
+        "text": "Toward N2 and H2, as argon dilutes them",
+        "why": "At constant volume the argon does not lower the other gases' partial pressures. Q is unchanged, so nothing shifts."
+      },
+      {
+        "text": "Toward NH3, as argon reacts with H2",
+        "why": "Argon is an inert gas and does not react. It leaves every partial pressure in Q unchanged, so the equilibrium stays put."
+      }
+    ],
+    "explanation": "At constant volume and temperature, each reacting gas keeps its amount, so its partial pressure, nRT/V, is unchanged. Q stays equal to K, so the argon has no effect even though the total pressure rises."
+  },
+  {
+    "id": "pc26-k-temperature-nh3-heat",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g), the section gives Δ_f H°(NH3, g) = −45.90 kJ/mol. If the temperature is raised at constant pressure, which way does the equilibrium shift?",
+    "choices": [
+      {
+        "text": "Toward N2 and H2, as the reaction is endothermic",
+        "correct": true
+      },
+      {
+        "text": "Toward NH3, as NH3 has a negative Δ_f H°",
+        "why": "Δ_f H° < 0 means forming NH3 releases heat, so decomposing it absorbs heat. Heating favors this endothermic direction, toward N2 and H2."
+      },
+      {
+        "text": "It does not shift, since the pressure is constant",
+        "why": "A temperature change alters K itself. Since the decomposition is endothermic, K rises on heating and the equilibrium shifts toward N2 and H2."
+      },
+      {
+        "text": "Toward NH3, because heating lowers K",
+        "why": "Heating lowers K only for an exothermic reaction. Here Δ_r H° = −2 × (−45.90 kJ/mol) = +91.80 kJ/mol, so K rises."
+      }
+    ],
+    "explanation": "The decomposition reverses the formation of 2 mol NH3, so Δ_r H° = −2 × (−45.90 kJ/mol) = +91.80 kJ/mol. For an endothermic reaction, raising T increases K, and the equilibrium shifts toward N2 and H2."
+  },
+  {
+    "id": "pc26-k-temperature-mole-fraction-power",
+    "type": "multiple-choice",
+    "prompt": "For 2NH3(g) ⇌ N2(g) + 3H2(g), writing each partial pressure as P_i = y_i P, with y_i the mole fraction and P the total pressure, gives K = (y_(N2) y_(H2)^3)/(y_(NH3)^2) × (P/P°)^(n). What is the power n?",
+    "choices": [
+      {
+        "text": "2",
+        "correct": true
+      },
+      {
+        "text": "4",
+        "why": "4 counts only the product molecules, 1 + 3. The NH3 term divides by P^2, so the power is 1 + 3 − 2 = 2."
+      },
+      {
+        "text": "−2",
+        "why": "The sign is reversed. The products bring P^4 to the numerator and NH3 brings P^2 to the denominator, leaving P^2."
+      },
+      {
+        "text": "6",
+        "why": "The powers from the denominator subtract, not add. The net power is (1 + 3) − 2 = 2."
+      }
+    ],
+    "explanation": "Each partial pressure brings one factor of P per coefficient: P^4 on top and P^2 below, so n = 1 + 3 − 2 = 2. With K fixed, a higher P must lower the mole-fraction ratio, which is the shift toward NH3."
+  },
+  {
+    "id": "pc26-k-temperature-kp-hi",
+    "type": "numeric",
+    "prompt": "For H2(g) + I2(g) ⇌ 2HI(g), the equilibrium partial pressures at some temperature are P_(H2) = 0.100 bar, P_(I2) = 0.200 bar and P_(HI) = 0.800 bar. Using K = (P_(HI)^2)/(P_(H2) P_(I2)), with the pressures in bar (P° = 1 bar), what is K?",
+    "answer": 32,
+    "tolerance": 0,
+    "explanation": "K = (0.800^2)/(0.100 × 0.200) = 0.640/0.0200 = 32. The coefficient 2 on HI becomes the power 2 on its pressure."
+  },
+  {
+    "id": "pc26-k-temperature-gas-concentration",
+    "type": "numeric",
+    "prompt": "The ideal gas law gives the concentration of a gas as c = P/(RT). What is c, in mol/L, for a gas at P = 2.00 bar and T = 400 K, with R = 0.08314 L·bar/(mol·K)? (Give it as a decimal.)",
+    "answer": 0.0601,
+    "explanation": "RT = 0.08314 × 400 = 33.26 L·bar/mol, so c = 2.00/33.26 mol/L = 0.0601 mol/L. This link, c = P/(RT), is what lets K be written with concentrations instead of pressures."
+  },
+  {
+    "id": "pc26-k-temperature-kc-equals-kp",
+    "type": "multiple-choice",
+    "prompt": "Writing K with concentrations, using c = P/(RT), leaves a factor (RT)^(g), where g = (sum of product coefficients) − (sum of reactant coefficients). For which reaction do all the RT factors cancel, so that K_c = K_P?",
+    "choices": [
+      {
+        "text": "CO(g) + H2O(g) ⇌ CO2(g) + H2(g)",
+        "correct": true
+      },
+      {
+        "text": "PCl5(g) ⇌ PCl3(g) + Cl2(g)",
+        "why": "Here g = 1 + 1 − 1 = 1, so one factor of RT is left over. The factors cancel only when g = 0."
+      },
+      {
+        "text": "N2(g) + 3H2(g) ⇌ 2NH3(g)",
+        "why": "Here g = 2 − 1 − 3 = −2, so (RT)^(−2) remains. Only a reaction with equal numbers of gas molecules on both sides has g = 0."
+      },
+      {
+        "text": "CH4(g) + H2O(g) ⇌ CO(g) + 3H2(g)",
+        "why": "Here g = (1 + 3) − (1 + 1) = 2, so (RT)^2 remains. The factors cancel only for g = 0."
+      }
+    ],
+    "explanation": "For CO + H2O ⇌ CO2 + H2, g = (1 + 1) − (1 + 1) = 0: two gas molecules on each side. Then (RT)^0 = 1 and K_c = K_P."
+  },
+  {
+    "id": "pc26-k-temperature-g-count",
+    "type": "numeric",
+    "prompt": "For ν_A A + ν_B B ⇌ ν_Y Y + ν_Z Z, writing K with concentrations leaves a factor (RT)^(g), where g = ν_Y + ν_Z − ν_A − ν_B for the gases. What is g for 4NH3(g) + 5O2(g) ⇌ 4NO(g) + 6H2O(g)?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "g = (4 + 6) − (4 + 5) = 10 − 9 = 1. Because g is not zero, K_c and K_P for this reaction differ by a factor of RT."
+  },
+  {
+    "id": "pc26-k-temperature-kc-to-kp",
+    "type": "numeric",
+    "prompt": "For PCl5(g) ⇌ PCl3(g) + Cl2(g), K_c = 0.0250 at 500 K, with concentrations in mol/L. Using K_P = K_c (RT)^(g), with g = 1 and RT = 41.6 L·bar/mol at 500 K, what is K_P, with pressures in bar? (Give it as a decimal.)",
+    "answer": 1.04,
+    "explanation": "K_P = 0.0250 × 41.6 = 1.04. Here g = 1, since one gas molecule becomes two, so a single factor of RT links the two constants."
+  },
+  {
+    "id": "pc26-k-temperature-new-standard-state",
+    "type": "multiple-choice",
+    "prompt": "When K is written with concentrations, the leftover term g ln(RT) is usually folded into Δ_r G°. What does Δ_r G° then refer to?",
+    "choices": [
+      {
+        "text": "A standard state of 1 mol/L of each species",
+        "correct": true
+      },
+      {
+        "text": "A standard state of 1 bar for each species",
+        "why": "1 bar is the standard state for K in pressures. Folding g ln(RT) into Δ_r G° moves it to 1 mol/L of each species."
+      },
+      {
+        "text": "The equilibrium mixture itself",
+        "why": "Δ_r G° never refers to the equilibrium mixture. With the RT term folded in, its standard state becomes 1 mol/L of each species."
+      },
+      {
+        "text": "A pure, unmixed liquid of each species",
+        "why": "Pure liquids are not involved here. Folding in g ln(RT) gives a standard state of 1 mol/L of each species."
+      }
+    ],
+    "explanation": "Because c = P/(RT), the concentration form of K differs from the pressure form by a factor (RT)^(g). Absorbing g ln(RT) into Δ_r G° changes its standard state from 1 bar to 1 mole per liter of each species."
+  }
+]

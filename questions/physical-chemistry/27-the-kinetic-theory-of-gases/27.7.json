@@ -1,0 +1,295 @@
+[
+  {
+    "id": "pc27-gas-reactions-every-collision-rate",
+    "type": "numeric",
+    "prompt": "In a gas mixture, A and B molecules collide 1.2 × 10^29 times per cm^3 per second. If every collision in A + B → C gave product, the rate in mol dm^−3 s^−1 would be (collisions per cm^3 per second) × 1000/N_A, using 1 dm^3 = 1000 cm^3 and N_A = 6.022 × 10^23 mol^−1. What would that rate be, in mol dm^−3 s^−1? (Type it in scientific notation, like 2.5e8.)",
+    "answer": 199000000.0,
+    "explanation": "Rate = 1.2 × 10^29 × 1000/(6.022 × 10^23) = (1.2 × 10^32)/(6.022 × 10^23) = 1.99 × 10^8 mol dm^−3 s^−1. That is close to the 10^8 mol dm^−3 s^−1 the section quotes for H2 at 1 bar and 25 °C, far faster than most real reactions."
+  },
+  {
+    "id": "pc27-gas-reactions-most-collisions-fail",
+    "type": "multiple-choice",
+    "prompt": "If every collision between A and B gave product, a gas reaction A + B → C near 1 bar and 25 °C would run at about 10^8 mol dm^−3 s^−1. Most reactions are observed to be far slower. What does the section conclude from this?",
+    "choices": [
+      {
+        "text": "Most collisions do not lead to reaction",
+        "correct": true
+      },
+      {
+        "text": "Molecules collide far less often than calculated",
+        "why": "The collision rate follows from kinetic theory and is not in doubt. The reaction is slower because only a small share of the collisions produce C."
+      },
+      {
+        "text": "Most of the product C falls apart again",
+        "why": "The section does not blame a reverse reaction. Its conclusion is that most collisions never produce C in the first place."
+      },
+      {
+        "text": "Gas reactions take place only at the walls",
+        "why": "The reaction happens in collisions between A and B molecules in the gas. The rate is low because only some of those collisions react."
+      }
+    ],
+    "explanation": "The collision rate is an upper limit on the reaction rate. Since observed rates are much lower, only a small fraction of collisions can be effective, those with enough energy to react."
+  },
+  {
+    "id": "pc27-gas-reactions-collision-rate-units",
+    "type": "multiple-choice",
+    "prompt": "For H2 at 1 bar and 25 °C, the section quotes a collision rate of about 10^8 mol dm^−3 s^−1. What does this number count?",
+    "choices": [
+      {
+        "text": "Moles of collisions per dm^3 of gas per second",
+        "correct": true
+      },
+      {
+        "text": "Collisions that one H2 molecule makes per second",
+        "why": "That is z_A, the collision frequency of one molecule, in s^−1. The quoted number counts all the collisions in a volume of gas, in moles per dm^3 per second."
+      },
+      {
+        "text": "Moles of H2 that react per dm^3 per second",
+        "why": "H2 colliding with H2 does not react here. The number counts collisions; it would equal a reaction rate only if every collision reacted."
+      },
+      {
+        "text": "Collisions with each dm^2 of wall per second",
+        "why": "Wall collisions are counted per unit area, as z_w. This number counts collisions between molecules per unit volume of gas."
+      }
+    ],
+    "explanation": "It is the total collision frequency per unit volume, 1.7 × 10^29 cm^−3 s^−1, converted to moles per dm^3 per second. Being in the same units as a reaction rate, it shows how fast A + B → C would go if every collision reacted."
+  },
+  {
+    "id": "pc27-gas-reactions-rate-factors",
+    "type": "multiple-choice",
+    "prompt": "In the collision picture of this section, the rate of a gas reaction A + B → C depends on which two things?",
+    "choices": [
+      {
+        "text": "How often A and B collide and with what energy",
+        "correct": true
+      },
+      {
+        "text": "How often A and B collide, and nothing else",
+        "why": "If every collision counted, the rate would be about 10^8 mol dm^−3 s^−1, far faster than observed. Only collisions with enough energy react."
+      },
+      {
+        "text": "How often A and B hit the walls of the vessel",
+        "why": "Wall collisions serve only as a model for how fast molecules are favored. The rate depends on how often A and B meet and with what energy."
+      },
+      {
+        "text": "The masses of A and B, but not how fast they move",
+        "why": "Speeds matter most, since fast molecules collide more often and with more energy. Mass enters through the reduced mass μ in the speed distribution."
+      }
+    ],
+    "explanation": "The rate is set by how often A and B collide and by the share of those collisions with enough energy to overcome repulsion and break bonds. Most collisions lack that energy, so the rate falls far below the collision rate."
+  },
+  {
+    "id": "pc27-gas-reactions-fast-molecules",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which colliding molecules are the most likely to react?",
+    "choices": [
+      {
+        "text": "Those traveling at high speeds",
+        "correct": true
+      },
+      {
+        "text": "Those traveling at low speeds",
+        "why": "Slow collisions carry little energy. Fast molecules have enough energy to overcome electronic repulsions and break existing bonds."
+      },
+      {
+        "text": "Those with the same mass as their partner",
+        "why": "Equal masses are not required. What matters is the energy of the collision, which is larger for fast molecules."
+      },
+      {
+        "text": "Those with the largest mass",
+        "why": "Mass alone does not decide it, since a heavy molecule can move slowly. The section points to speed: fast molecules bring the energy needed to react."
+      }
+    ],
+    "explanation": "Fast molecules carry enough energy to overcome electronic repulsions and to break existing bonds. Slow ones mostly bounce apart unchanged."
+  },
+  {
+    "id": "pc27-gas-reactions-energy-needed",
+    "type": "multiple-choice",
+    "prompt": "In the section's picture of reacting collisions, what does the collision energy have to be large enough to do?",
+    "choices": [
+      {
+        "text": "Overcome electronic repulsions and break bonds",
+        "correct": true
+      },
+      {
+        "text": "Form new bonds, a step that takes in energy",
+        "why": "Forming bonds releases energy rather than taking it in. The energy is needed to push past electronic repulsions and to break existing bonds."
+      },
+      {
+        "text": "Ionize the molecules so that they attract each other",
+        "why": "The colliding molecules are not ionized. The collision energy lets them push past electronic repulsions and break existing bonds."
+      },
+      {
+        "text": "Raise the temperature of the whole gas",
+        "why": "One collision does not heat the gas. The energy of that collision is what has to overcome electronic repulsions and break bonds."
+      }
+    ],
+    "explanation": "As two molecules close in, their electron clouds repel, and old bonds must break before new ones form. Only collisions with enough energy get past both, which is why fast molecules are the ones likely to react."
+  },
+  {
+    "id": "pc27-gas-reactions-wall-model",
+    "type": "multiple-choice",
+    "prompt": "To begin estimating how collisions lead to reaction, the section starts from the collision frequency with a wall, z_w = (1/4)ρ⟨v⟩. What reason does it give for this starting point?",
+    "choices": [
+      {
+        "text": "Wall hits, like reactions, favor fast molecules",
+        "correct": true
+      },
+      {
+        "text": "Most gas reactions happen on the container walls",
+        "why": "The reactions considered happen between molecules in the gas. The wall equation is used because it, too, favors fast molecules."
+      },
+      {
+        "text": "Wall collisions involve no spread of molecular speeds",
+        "why": "The wall flux averages over the whole Maxwell–Boltzmann spread of speeds. It is used because it weights fast molecules more heavily."
+      },
+      {
+        "text": "The wall equation does not depend on temperature",
+        "why": "It depends on T through ⟨v⟩. It is chosen because, as with reaction, wall collisions favor faster molecules."
+      }
+    ],
+    "explanation": "The faster a molecule moves, the more likely it is to hit the wall in a given time, and likewise the more likely it is to meet another molecule hard enough to react. The wall equation is then modified for collisions between two molecules."
+  },
+  {
+    "id": "pc27-gas-reactions-wall-hitters-faster",
+    "type": "multiple-choice",
+    "prompt": "The wall collision frequency comes from an integral over v F(v), and the speed distribution F(v) already carries a factor of v^2, so the integrand grows as v^3. What does this tell you about the molecules that hit the wall?",
+    "choices": [
+      {
+        "text": "They are faster on average than those in the bulk",
+        "correct": true
+      },
+      {
+        "text": "They are slower on average than those in the bulk",
+        "why": "The extra factor of v weights fast molecules more, not less. Fast molecules reach the wall more often in a given time."
+      },
+      {
+        "text": "They have the same speeds as those in the bulk",
+        "why": "That would be true only if every molecule hit the wall equally often. The factor v^3 shows that fast molecules are overrepresented."
+      },
+      {
+        "text": "Their average speed grows as the cube of T",
+        "why": "The v^3 is a weighting inside the integral, not a power of T. It means the molecules hitting the wall are, on average, faster than those in the bulk."
+      }
+    ],
+    "explanation": "In a given time a fast molecule reaches the wall more often than a slow one, so wall collisions favor the fast end of the distribution. Collisions between molecules favor fast pairs in the same way."
+  },
+  {
+    "id": "pc27-gas-reactions-mass-to-mu",
+    "type": "multiple-choice",
+    "prompt": "To turn the wall-collision result into one for collisions between molecules A and B, the section replaces the mass m of a single molecule with what?",
+    "choices": [
+      {
+        "text": "The reduced mass μ of the pair",
+        "correct": true
+      },
+      {
+        "text": "The total mass m_A + m_B",
+        "why": "The sum is not used. The relative motion of two molecules behaves like one particle of reduced mass μ, so μ takes the place of m."
+      },
+      {
+        "text": "The mass of the heavier molecule",
+        "why": "Neither mass alone describes the pair. The section uses the reduced mass μ, which combines both."
+      },
+      {
+        "text": "The average mass (m_A + m_B)/2",
+        "why": "The plain average does not describe the relative motion. The section uses the reduced mass μ, which is smaller than either mass."
+      }
+    ],
+    "explanation": "With m replaced by μ, the speed in the formula becomes the relative speed v_r of the two molecules. The result then counts A–B collisions instead of wall hits."
+  },
+  {
+    "id": "pc27-gas-reactions-dz-counts",
+    "type": "multiple-choice",
+    "prompt": "The section writes dZ_AB = A v_r^3 exp(−(μv_r^2)/(2k_B T)) dv_r, where v_r is the relative speed of A and B. What does dZ_AB count?",
+    "choices": [
+      {
+        "text": "A–B collisions per volume per second in a narrow v_r range",
+        "correct": true
+      },
+      {
+        "text": "All A–B collisions per volume per second, at every v_r",
+        "why": "That total is Z_AB, which comes from adding up dZ_AB over all relative speeds. dZ_AB is only the part with relative speed between v_r and v_r + dv_r."
+      },
+      {
+        "text": "A–B collisions per volume per second that lead to reaction",
+        "why": "The expression counts collisions, not reactions. Whether a collision reacts depends on its energy, which is a separate question."
+      },
+      {
+        "text": "The number of A molecules per volume moving at speed v_r",
+        "why": "dZ_AB counts collisions between A and B, and v_r is their relative speed, not the speed of A alone."
+      }
+    ],
+    "explanation": "dZ_AB is the collision frequency per unit volume for A–B collisions whose relative speed lies between v_r and v_r + dv_r. Adding it up over all relative speeds gives the total, Z_AB."
+  },
+  {
+    "id": "pc27-gas-reactions-constant-a",
+    "type": "multiple-choice",
+    "prompt": "In dZ_AB = A v_r^3 exp(−(μv_r^2)/(2k_B T)) dv_r, A is a proportionality constant. How does the section fix its value?",
+    "choices": [
+      {
+        "text": "Integrating over all v_r must give Z_AB",
+        "correct": true
+      },
+      {
+        "text": "It is set equal to the cross-section σ_AB",
+        "why": "A does contain σ_AB, but also ρ_A, ρ_B and other factors. It is fixed by requiring the integral over all relative speeds to equal Z_AB."
+      },
+      {
+        "text": "It is measured from the rate of reaction",
+        "why": "No reaction rate is used. A follows from requiring that dZ_AB, added up over all relative speeds, gives the known total Z_AB."
+      },
+      {
+        "text": "It is 1, because probabilities add to 1",
+        "why": "dZ_AB is a collision frequency, not a probability, so A is not 1. It is chosen so that the integral over all v_r equals Z_AB."
+      }
+    ],
+    "explanation": "Adding up dZ_AB over all relative speeds has to give the total collision frequency per unit volume, Z_AB = σ_AB ρ_A ρ_B ((8k_B T)/(πμ))^(1/2). Solving that condition gives A = σ_AB ρ_A ρ_B (μ/(k_B T))^(3/2)(2/π)^(1/2)."
+  },
+  {
+    "id": "pc27-gas-reactions-fraction-reacting",
+    "type": "numeric",
+    "prompt": "For a gas reaction A + B → C, the collision rate between A and B corresponds to 2.0 × 10^8 mol dm^−3 s^−1, but the observed rate is only 6.0 × 10^−4 mol dm^−3 s^−1. What fraction of the collisions lead to reaction, that is, observed rate/collision rate? (Type it in scientific notation, like 2.5e-12.)",
+    "answer": 3e-12,
+    "explanation": "Fraction = (6.0 × 10^−4)/(2.0 × 10^8) = 3.0 × 10^−12. Only about 3 collisions in 10^12 produce C, which is why this reaction is far slower than the collision rate."
+  },
+  {
+    "id": "pc27-gas-reactions-rate-from-fraction",
+    "type": "numeric",
+    "prompt": "In a simple collision model, rate = (collision rate) × (fraction of collisions with energy of at least E_a), and that fraction is exp(−E_a/(RT)). If the collision rate is 3.0 × 10^8 mol dm^−3 s^−1 and exp(−E_a/(RT)) = 2.0 × 10^−9, what is the rate, in mol dm^−3 s^−1? (Give it as a decimal.)",
+    "answer": 0.6,
+    "explanation": "Rate = 3.0 × 10^8 × 2.0 × 10^−9 = 0.60 mol dm^−3 s^−1. Only 2 collisions in 10^9 are energetic enough, so the rate is far below the collision rate."
+  },
+  {
+    "id": "pc27-gas-reactions-heating-why-faster",
+    "type": "multiple-choice",
+    "prompt": "At constant volume, raising the temperature of a gas by 10% raises the A–B collision rate by only about 5%, yet many gas reactions speed up several-fold. In the collision picture, what explains the difference?",
+    "choices": [
+      {
+        "text": "A far larger share of collisions is energetic enough",
+        "correct": true
+      },
+      {
+        "text": "The molecules grow larger and easier to hit",
+        "why": "Molecular size, and so σ_AB, does not change with temperature. The big effect is the steep rise in the share of collisions with enough energy to react."
+      },
+      {
+        "text": "Heating lowers the energy each collision needs",
+        "why": "The energy needed to react stays the same. Heating raises the share of collisions that have that much energy."
+      },
+      {
+        "text": "Each collision lasts longer, giving bonds time to break",
+        "why": "Faster molecules spend less time in contact, not more. The speed-up comes from the larger share of collisions energetic enough to react."
+      }
+    ],
+    "explanation": "The collision rate grows only about as √T, and √(1.10) ≈ 1.05. The share of collisions with enough energy to react rises much more steeply, so it accounts for nearly all of the speed-up."
+  },
+  {
+    "id": "pc27-gas-reactions-warmer-rate",
+    "type": "numeric",
+    "prompt": "For a reaction with E_a = 50 kJ/mol, the fraction of collisions energetic enough to react, exp(−E_a/(RT)), is 2.0 × 10^−9 at 300 K and 1.2 × 10^−8 at 330 K. Treating the collision rate as nearly the same at both temperatures, how many times faster is the reaction at 330 K?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "Ratio = (1.2 × 10^−8)/(2.0 × 10^−9) = 6. A 10% rise in T makes the share of collisions energetic enough to react six times larger, and the rate follows it."
+  }
+]
