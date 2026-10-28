@@ -1,0 +1,610 @@
+[
+  {
+    "id": "pc31-unit-cell-valid-choice",
+    "type": "multiple-choice",
+    "prompt": "Several different parallelograms are drawn on the same two-dimensional pattern of dots. What makes one of them a valid unit cell?",
+    "choices": [
+      {
+        "text": "Repeating it in every direction fills the whole pattern",
+        "correct": true
+      },
+      {
+        "text": "It is the smallest shape with a dot at each corner",
+        "why": "Size alone doesn't decide it. A shape is a valid unit cell when repeating it in every direction reproduces the whole pattern."
+      },
+      {
+        "text": "Its corners sit exactly on the dots of the pattern",
+        "why": "The section shows valid cells placed at different locations in the lattice. What matters is that repeating the cell fills the pattern."
+      },
+      {
+        "text": "It is the only shape that can describe the lattice",
+        "why": "A lattice has many valid unit cells, differing in location or orientation. Each is valid because repeating it fills the pattern."
+      }
+    ],
+    "explanation": "A crystal is a large number of repetitions of a unit cell in every direction. The section's three valid two-dimensional cells differ in where they sit and how they are oriented, but repeating any of them fills the overall pattern of dots."
+  },
+  {
+    "id": "pc31-unit-cell-triangle-invalid",
+    "type": "multiple-choice",
+    "prompt": "In the section's two-dimensional figure, a triangle drawn on the pattern of dots is not a valid unit cell. Why not?",
+    "choices": [
+      {
+        "text": "Repeating it fills only half of the pattern",
+        "correct": true
+      },
+      {
+        "text": "It contains too few dots to be a cell",
+        "why": "The number of dots is not the test. The triangle fails because repeating it in space fills only half of the pattern."
+      },
+      {
+        "text": "Unit cells must be squares in two dimensions",
+        "why": "The valid cells in the figure are parallelograms, not squares. The triangle fails because its repeats leave half the pattern unfilled."
+      },
+      {
+        "text": "It is too small to show the pattern's symmetry",
+        "why": "The problem is not its size. Repeated in space, the triangle covers only half of the pattern, so it can't generate the crystal."
+      }
+    ],
+    "explanation": "A unit cell must reproduce the whole structure when repeated in every direction. The triangle covers only half of the space in the pattern, so it is not a valid unit cell, while the parallelograms are."
+  },
+  {
+    "id": "pc31-unit-cell-face-share",
+    "type": "multiple-choice",
+    "prompt": "An atom sits at the center of one face of a cubic unit cell. How much of it counts toward that unit cell?",
+    "choices": [
+      {
+        "text": "1/2, since two cells share the face",
+        "correct": true
+      },
+      {
+        "text": "1/4, since four cells share the face",
+        "why": "Four cells meet at an edge, not at a face. A face is shared by just two cells, so a face atom counts 1/2."
+      },
+      {
+        "text": "1/8, since eight cells share the face",
+        "why": "Eight cells meet at a corner. Only two cells share a face, so half the atom lies in each."
+      },
+      {
+        "text": "All of it, since it lies on this cell",
+        "why": "Only an atom in the body of the cell is wholly inside it. A face atom is split between the two cells that share the face."
+      }
+    ],
+    "explanation": "A face is shared by two adjacent cells, so only half of a face-centered atom lies inside each one. In the formula N = N_body + (N_face)/(2) + (N_edge)/(4) + (N_corner)/(8), face atoms are divided by 2."
+  },
+  {
+    "id": "pc31-unit-cell-edge-share",
+    "type": "multiple-choice",
+    "prompt": "An ion sits at the middle of an edge of a cubic unit cell. What fraction of it belongs to that cell?",
+    "choices": [
+      {
+        "text": "1/4",
+        "correct": true
+      },
+      {
+        "text": "1/2",
+        "why": "1/2 is the share of a face atom, which two cells share. Four cells meet along an edge, so an edge ion counts 1/4."
+      },
+      {
+        "text": "1/8",
+        "why": "1/8 is the share of a corner atom, where eight cells meet. An edge is shared by four cells, so the share is 1/4."
+      },
+      {
+        "text": "1/3",
+        "why": "No cubic site is shared by three cells. Four cells meet along each edge, so an edge ion counts 1/4."
+      }
+    ],
+    "explanation": "Four adjacent cubes share each edge, so a quarter of an edge ion lies in each. In the section's NaCl cell, the chloride ion in the middle of each of the twelve edges counts one-quarter, giving 12/4 = 3 chloride ions."
+  },
+  {
+    "id": "pc31-unit-cell-corner-share",
+    "type": "multiple-choice",
+    "prompt": "How many cubic unit cells meet at one corner, and what share of a corner atom does each cell get?",
+    "choices": [
+      {
+        "text": "Eight cells, so each gets 1/8",
+        "correct": true
+      },
+      {
+        "text": "Nine cells, so each gets 1/9",
+        "why": "Eight cells meet at a corner in all: this one and seven others. Counting this cell plus eight others overcounts by one."
+      },
+      {
+        "text": "Four cells, so each gets 1/4",
+        "why": "Four cells share an edge. A corner is where eight cubes meet, two layers of four, so each gets 1/8."
+      },
+      {
+        "text": "Six cells, so each gets 1/6",
+        "why": "A cube has six faces, but that isn't how many cells meet at a corner. Eight cubes meet there, so each gets 1/8."
+      }
+    ],
+    "explanation": "At a corner, four cubes meet in the layer below and four in the layer above: eight cells in all, this one and seven others. Each corner atom therefore counts 1/8, and the eight corners of a cube together give 8 × 1/8 = 1 atom."
+  },
+  {
+    "id": "pc31-unit-cell-nacl-count",
+    "type": "multiple-choice",
+    "prompt": "The section's NaCl unit cell has Na^+ at the corners and face centers, and Cl^− at the edge midpoints and the body center. How many ions of each kind does the unit cell contain?",
+    "choices": [
+      {
+        "text": "Four Na^+ and four Cl^−",
+        "correct": true
+      },
+      {
+        "text": "Fourteen Na^+ and thirteen Cl^−",
+        "why": "That counts every ion drawn, 8 + 6 and 12 + 1, as if each were wholly inside. Shared ions count only in part: 8/8 + 6/2 = 4 and 12/4 + 1 = 4."
+      },
+      {
+        "text": "One Na^+ and one Cl^−",
+        "why": "One of each is the formula unit, but the cell holds more. Counting shares gives 8/8 + 6/2 = 4 Na^+ and 12/4 + 1 = 4 Cl^−."
+      },
+      {
+        "text": "Four Na^+ and one Cl^−",
+        "why": "That counts only the Cl^− in the body. The twelve edge Cl^− add 12/4 = 3 more, for four Cl^− in all."
+      }
+    ],
+    "explanation": "Na^+: 6 face ions × 1/2 = 3, plus 8 corner ions × 1/8 = 1, for 4. Cl^−: 12 edge ions × 1/4 = 3, plus 1 in the body, for 4. The 4 : 4 count matches the 1 : 1 formula NaCl."
+  },
+  {
+    "id": "pc31-unit-cell-nacl-chloride-corners",
+    "type": "multiple-choice",
+    "prompt": "The section draws the NaCl unit cell with sodium ions at its corners. What does it say about choosing the cell with chloride ions at the corners instead?",
+    "choices": [
+      {
+        "text": "That is an equally valid unit cell",
+        "correct": true
+      },
+      {
+        "text": "It is not allowed, since Cl^− is the larger ion",
+        "why": "Ion size doesn't decide the choice. The section says the cell could alternatively be chosen with chloride ions at the corners."
+      },
+      {
+        "text": "It gives a cell with a different Na : Cl ratio",
+        "why": "Any valid cell of the same crystal has the same composition. Shifting the cell so that Cl^− sits at the corners still gives a 1 : 1 ratio."
+      },
+      {
+        "text": "It describes a different crystal, not NaCl",
+        "why": "The crystal is the same; only where the cell is drawn changes. A unit cell is a choice, and the section allows either ion at the corners."
+      }
+    ],
+    "explanation": "A unit cell is a choice: cells that differ in location are all valid if repeating them fills the structure. For NaCl the cell can have sodium ions at the corners or, alternatively, chloride ions at the corners."
+  },
+  {
+    "id": "pc31-unit-cell-count-faces-edges",
+    "type": "numeric",
+    "prompt": "A cubic unit cell has an atom at the center of each of its 6 faces and at the middle of each of its 12 edges, and no atoms at the corners or inside. Using N = N_body + (N_face)/(2) + (N_edge)/(4) + (N_corner)/(8), how many atoms does the cell contain?",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "N = 0 + 6/2 + 12/4 + 0/8 = 3 + 3 = 6. Eighteen atoms are drawn on the cell, but each is shared with neighboring cells, so only 6 belong to it."
+  },
+  {
+    "id": "pc31-unit-cell-count-interior",
+    "type": "numeric",
+    "prompt": "A cubic unit cell has atoms at its 8 corners and 6 face centers, plus 4 atoms lying wholly inside the cube. Using N = N_body + (N_face)/(2) + (N_edge)/(4) + (N_corner)/(8), how many atoms does the cell contain?",
+    "answer": 8,
+    "tolerance": 0,
+    "explanation": "N = 4 + 6/2 + 0/4 + 8/8 = 4 + 3 + 1 = 8. Atoms in the body are not shared with any other cell, so each counts in full."
+  },
+  {
+    "id": "pc31-unit-cell-formula-from-sites",
+    "type": "multiple-choice",
+    "prompt": "In a cubic unit cell, A atoms sit at the 8 corners, one B atom sits at the body center and X atoms sit at the 6 face centers. Counting each atom's share of the cell, what is the formula of the compound?",
+    "choices": [
+      {
+        "text": "ABX_3",
+        "correct": true
+      },
+      {
+        "text": "A_8BX_6",
+        "why": "That counts each drawn atom as wholly inside. Corner atoms count 1/8 and face atoms 1/2, giving 8/8 = 1 A and 6/2 = 3 X."
+      },
+      {
+        "text": "ABX_6",
+        "why": "The corners were counted correctly, but face atoms are shared by two cells. Six face atoms give 6/2 = 3 X."
+      },
+      {
+        "text": "A_4BX_3",
+        "why": "Corner atoms are shared by eight cells, not two. Eight corners give 8/8 = 1 A."
+      }
+    ],
+    "explanation": "A: 8 × 1/8 = 1. B: 1 in the body, unshared. X: 6 × 1/2 = 3. The cell holds 1 A, 1 B and 3 X, so the formula is ABX_3."
+  },
+  {
+    "id": "pc31-unit-cell-salt-cubes",
+    "type": "multiple-choice",
+    "prompt": "Table salt often forms visible cubes, matching its cubic unit cell. What does the section say about the shape of a macroscopic crystal in general?",
+    "choices": [
+      {
+        "text": "It need not match the shape of the unit cell",
+        "correct": true
+      },
+      {
+        "text": "It always has the same shape as the unit cell",
+        "why": "The section warns that it doesn't always turn out this way: crystal growth is complex, so the large crystal need not match the cell."
+      },
+      {
+        "text": "It is cubic for every ionic compound",
+        "why": "Unit cells need not be cubes, and even the crystal's outer shape is not guaranteed. Salt cubes are one case, not a rule."
+      },
+      {
+        "text": "It is decided by the number of ions in the cell",
+        "why": "The section gives no such rule. It says only that, because crystal growth is complex, the crystal's shape need not match the unit cell."
+      }
+    ],
+    "explanation": "Salt cubes do reflect the cubic unit cell of NaCl. But the section adds that crystal growth is a complex process, so it is not guaranteed that the macroscopic crystal matches the unit cell."
+  },
+  {
+    "id": "pc31-unit-cell-shape-rule",
+    "type": "multiple-choice",
+    "prompt": "Which statement about the shape of a three-dimensional unit cell agrees with the section?",
+    "choices": [
+      {
+        "text": "It must be parallel-sided but need not be a cube",
+        "correct": true
+      },
+      {
+        "text": "It must be a cube",
+        "why": "The cube is only the simplest case. The section says unit cells need not be cubes, but they must be parallel-sided figures."
+      },
+      {
+        "text": "It must have all its angles equal to 90°",
+        "why": "Only some lattice systems have rectangular cells. In the others, some or all of the angles are not 90°."
+      },
+      {
+        "text": "It can be any solid that fits the atoms",
+        "why": "A unit cell must be parallel-sided so that it can be repeated in every direction to fill the crystal."
+      }
+    ],
+    "explanation": "Unit cells need not be cubes, but they must be parallel-sided, three-dimensional figures, so that repeats fill space with no gaps. Such a cell is described by three edge lengths and three angles."
+  },
+  {
+    "id": "pc31-unit-cell-six-parameters",
+    "type": "multiple-choice",
+    "prompt": "Which set of lattice parameters does the section use to describe a general unit cell?",
+    "choices": [
+      {
+        "text": "Three edge lengths a, b, c and three angles α, β, γ",
+        "correct": true
+      },
+      {
+        "text": "One edge length a and one angle α",
+        "why": "That is enough only for a highly symmetric cell. A general cell needs all six: a, b, c and α, β, γ."
+      },
+      {
+        "text": "Three edge lengths a, b, c and the cell volume",
+        "why": "The volume follows from the edges and angles but doesn't fix the shape. The six parameters are a, b, c and α, β, γ."
+      },
+      {
+        "text": "The number of atoms and the edge length a",
+        "why": "The atom count matters for classification, but the shape is set by the six parameters: three axial distances and three axial angles."
+      }
+    ],
+    "explanation": "A parallel-sided cell is fixed by the lengths of three adjacent edges, a, b and c, and the angles between them, α, β and γ. These are the six lattice parameters: three axial distances and three axial angles."
+  },
+  {
+    "id": "pc31-unit-cell-bravais",
+    "type": "multiple-choice",
+    "prompt": "Crystals are usually classified into Bravais lattices. How many are there, and what decides which one a crystal belongs to?",
+    "choices": [
+      {
+        "text": "Fourteen, set by the cell's shape and atom count",
+        "correct": true
+      },
+      {
+        "text": "Seven, set by the cell's shape alone",
+        "why": "Seven is the number of lattice systems. There are fourteen Bravais lattices, which depend on the number of atoms in the cell as well as its shape."
+      },
+      {
+        "text": "Three, the simple, body- and face-centered cubic",
+        "why": "Those are the three cubic unit cells, one family among many. Unit cells need not be cubes, and there are fourteen Bravais lattices."
+      },
+      {
+        "text": "Fourteen, set by the size of the atoms",
+        "why": "The count is right, but the classification depends on the shape of the unit cell and the number of atoms in it, not on atomic size."
+      }
+    ],
+    "explanation": "The section says crystals are usually classified into one of fourteen Bravais lattices, depending on the shape of the unit cell and the number of atoms in it. These fall into seven lattice systems."
+  },
+  {
+    "id": "pc31-unit-cell-cubic-system",
+    "type": "multiple-choice",
+    "prompt": "A unit cell has a = b = c and α = β = γ = 90°. Which lattice system does it belong to?",
+    "choices": [
+      {
+        "text": "Cubic",
+        "correct": true
+      },
+      {
+        "text": "Tetragonal",
+        "why": "Tetragonal cells are rectangular but their edges are not all equal. With all three edges equal and all angles 90°, the cell is cubic."
+      },
+      {
+        "text": "Hexagonal",
+        "why": "A hexagonal cell has a 120° angle between two equal sides. Here every angle is 90°."
+      },
+      {
+        "text": "Triclinic",
+        "why": "Triclinic is the least symmetrical system, with no equal edges and no 90° angles. This cell is the most symmetrical, the cubic."
+      }
+    ],
+    "explanation": "The section calls the cubic system the simplest: all edges of the unit cell are equal and all angles are 90°. The tetragonal and orthorhombic systems keep the 90° angles but have edges that are not all equal."
+  },
+  {
+    "id": "pc31-unit-cell-rectangular-unequal",
+    "type": "multiple-choice",
+    "prompt": "A unit cell has all three angles equal to 90°, but its edges a, b and c are not all equal. According to the section, which lattice systems could it belong to?",
+    "choices": [
+      {
+        "text": "Tetragonal or orthorhombic",
+        "correct": true
+      },
+      {
+        "text": "Cubic",
+        "why": "A cubic cell needs all three edges equal as well as 90° angles. With unequal edges, the cell is tetragonal or orthorhombic."
+      },
+      {
+        "text": "Triclinic",
+        "why": "A triclinic cell has no angles equal to 90°. A rectangular cell with unequal edges is tetragonal or orthorhombic."
+      },
+      {
+        "text": "Hexagonal",
+        "why": "A hexagonal cell has a 120° angle between two equal sides. With every angle 90°, the cell is tetragonal or orthorhombic."
+      }
+    ],
+    "explanation": "The section says the tetragonal and orthorhombic systems also feature rectangular cells, like the cubic, but their edges are not all equal. In the remaining systems some or all of the angles are not 90°."
+  },
+  {
+    "id": "pc31-unit-cell-triclinic",
+    "type": "multiple-choice",
+    "prompt": "Which description fits the triclinic unit cell, the least symmetrical lattice system?",
+    "choices": [
+      {
+        "text": "No equal edges; no angles equal to each other or 90°",
+        "correct": true
+      },
+      {
+        "text": "Three equal edges; three angles of 90°",
+        "why": "That is the cubic cell, the most symmetrical. The triclinic cell has no equal edges and no angles equal to each other or to 90°."
+      },
+      {
+        "text": "Unequal edges; three angles of 90°",
+        "why": "Rectangular cells with unequal edges are tetragonal or orthorhombic. In a triclinic cell none of the angles is 90°."
+      },
+      {
+        "text": "Two equal edges at 120°; other angles 90°",
+        "why": "That is the hexagonal cell of hcp. The triclinic cell has no equal edges and no 90° angles at all."
+      }
+    ],
+    "explanation": "The triclinic system is the least symmetrical: no edges are equal, and no angles are equal to each other or to 90°. It is the opposite extreme from the cubic system, where all edges are equal and all angles are 90°."
+  },
+  {
+    "id": "pc31-unit-cell-close-packed-where",
+    "type": "multiple-choice",
+    "prompt": "According to the section, in which solids are close-packed structures commonly found?",
+    "choices": [
+      {
+        "text": "Many metals and the solidified noble gases",
+        "correct": true
+      },
+      {
+        "text": "Ionic solids such as sodium chloride",
+        "why": "Close packing describes atoms that are all the same. The section names many metals and the solidified noble gases."
+      },
+      {
+        "text": "Molecular solids made of long chains",
+        "why": "The model packs identical spheres as closely as possible. The section's examples are many metals and the solidified noble gases."
+      },
+      {
+        "text": "Any solid with a triclinic unit cell",
+        "why": "Close-packed structures have hexagonal or cubic cells, not triclinic ones. They occur in many metals and solidified noble gases."
+      }
+    ],
+    "explanation": "Close packing is the arrangement of identical spheres packed together as closely as possible. The section says it is found in many metals and in the solidified noble gases, where the atoms are all the same."
+  },
+  {
+    "id": "pc31-unit-cell-coordination-twelve",
+    "type": "multiple-choice",
+    "prompt": "In a close-packed structure, each sphere has a coordination number of 12. Where are its twelve neighbors?",
+    "choices": [
+      {
+        "text": "Six in its own layer, three above, three below",
+        "correct": true
+      },
+      {
+        "text": "Four in its own layer, four above, four below",
+        "why": "A close-packed layer is hexagonal, so each sphere touches six in its own plane. It nestles among three in the layer above and three below."
+      },
+      {
+        "text": "Six in the layer above and six below",
+        "why": "This leaves out the layer the sphere sits in. It touches six in its own layer and only three in each neighboring layer."
+      },
+      {
+        "text": "Eight at cube corners and four at face centers",
+        "why": "Eight corner neighbors describe the bcc central sphere, with coordination number 8. In close packing: six in the layer, three above, three below."
+      }
+    ],
+    "explanation": "In a hexagonal layer each sphere touches six of its fellows. It also sits in a depression among three spheres of the layer below and is covered by three in the layer above, so 6 + 3 + 3 = 12. The section says no structure can have a larger coordination number."
+  },
+  {
+    "id": "pc31-unit-cell-hcp-stacking",
+    "type": "multiple-choice",
+    "prompt": "Close-packed layers are stacked so that the third layer lies directly above the first, giving the pattern ABAB…. What structure results?",
+    "choices": [
+      {
+        "text": "Hexagonal close packed (hcp)",
+        "correct": true
+      },
+      {
+        "text": "Cubic close packed (ccp)",
+        "why": "ccp needs a third layer, C, that lies above neither A nor B. When the third layer repeats A, the structure is hcp."
+      },
+      {
+        "text": "Body-centered cubic (bcc)",
+        "why": "bcc is not made of close-packed layers; its coordination number is only 8. ABAB stacking of close-packed layers gives hcp."
+      },
+      {
+        "text": "Simple cubic",
+        "why": "Simple cubic is not close packed. Stacking hexagonal layers ABAB… gives the hexagonal close-packed structure."
+      }
+    ],
+    "explanation": "In ABAB… stacking, the second layer B is not directly above A, but the third layer is, so it is labeled A again. The resulting unit cell belongs to the hexagonal system, so the structure is called hexagonal close packed."
+  },
+  {
+    "id": "pc31-unit-cell-ccp-stacking",
+    "type": "multiple-choice",
+    "prompt": "Close-packed layers are stacked ABCABC…, with the third layer above neither the first nor the second. Which statement about the result is true?",
+    "choices": [
+      {
+        "text": "It is ccp, with a face-centered cubic unit cell",
+        "correct": true
+      },
+      {
+        "text": "It is hcp, with a hexagonal unit cell",
+        "why": "hcp repeats every two layers, ABAB…. A third distinct layer C gives cubic close packing, whose cell is face-centered cubic."
+      },
+      {
+        "text": "It is ccp, with a body-centered cubic unit cell",
+        "why": "bcc is not close packed: its coordination number is 8, not 12. The ccp cell is the face-centered cubic one."
+      },
+      {
+        "text": "It is less closely packed than ABAB stacking",
+        "why": "Both stackings are close packed, and in each every sphere has 12 nearest neighbors. ABCABC is cubic close packing."
+      }
+    ],
+    "explanation": "ABCABC… stacking gives a unit cell with three equal sides and all angles 90°, so it belongs to the cubic system and is called cubic close packed. The section identifies this cell with the face-centered cubic lattice, and each sphere still has 12 nearest neighbors."
+  },
+  {
+    "id": "pc31-unit-cell-hcp-cell-shape",
+    "type": "multiple-choice",
+    "prompt": "What does the unit cell of the hexagonal close-packed structure look like, according to the section?",
+    "choices": [
+      {
+        "text": "Two equal sides at 120°; other angles 90°",
+        "correct": true
+      },
+      {
+        "text": "Three equal sides; all angles 90°",
+        "why": "That is the cubic cell of ccp. The hcp cell has two equal sides with 120° between them, which puts it in the hexagonal system."
+      },
+      {
+        "text": "No equal sides; no angles of 90°",
+        "why": "That is the triclinic cell. The hcp cell has two equal sides at 120° and its other angles are 90°."
+      },
+      {
+        "text": "Unequal sides; all angles 90°",
+        "why": "That describes tetragonal or orthorhombic cells. The hcp cell has a 120° angle between two equal sides."
+      }
+    ],
+    "explanation": "ABAB… stacking gives a unit cell with two equal sides and an angle of 120° between them, while the other angles are 90°. That shape belongs to the hexagonal crystal system, hence the name hexagonal close packed."
+  },
+  {
+    "id": "pc31-unit-cell-bcc-coordination",
+    "type": "multiple-choice",
+    "prompt": "In a body-centered cubic (bcc) unit cell, the sphere at the center touches the spheres at the corners. What is its coordination number, and how does bcc compare with the close-packed structures?",
+    "choices": [
+      {
+        "text": "8; bcc is less compactly packed",
+        "correct": true
+      },
+      {
+        "text": "12; bcc is just as compactly packed",
+        "why": "12 belongs to hcp and ccp. The bcc central sphere has only the eight corner spheres around it."
+      },
+      {
+        "text": "8; bcc is more compactly packed",
+        "why": "Fewer neighbors means looser packing. With coordination number 8 against 12, bcc is less compact than the close-packed structures."
+      },
+      {
+        "text": "6; bcc is less compactly packed",
+        "why": "Six is the number of neighbors in one close-packed layer. The bcc central sphere has eight neighbors, one at each corner."
+      }
+    ],
+    "explanation": "The central sphere of a bcc cell is surrounded by the eight spheres at the corners, so its coordination number is 8. The close-packed structures have 12, and no structure can pack more, so bcc is not as compactly packed."
+  },
+  {
+    "id": "pc31-unit-cell-fcc-touching",
+    "type": "multiple-choice",
+    "prompt": "In a face-centered cubic unit cell of identical atoms with edge a, the atoms touch along one line of the cell. Which line, and how long is it in terms of the atomic radius r?",
+    "choices": [
+      {
+        "text": "The face diagonal, √2 a = 4r",
+        "correct": true
+      },
+      {
+        "text": "The cube edge, a = 2r",
+        "why": "In fcc the corner atoms along an edge don't touch each other. Each touches the face-centered atom, so contact runs along the face diagonal."
+      },
+      {
+        "text": "The face diagonal, √2 a = 2r",
+        "why": "The face diagonal passes through a corner atom's radius, the whole face-centered atom and another corner atom's radius: r + 2r + r = 4r."
+      },
+      {
+        "text": "The body diagonal, √3 a = 4r",
+        "why": "In fcc there is no atom at the cube's center to fill the body diagonal. The corner and face-centered atoms touch along the face diagonal."
+      }
+    ],
+    "explanation": "Across a face, a corner atom, the face-centered atom and the opposite corner atom touch in a line. The face diagonal is √2 a long and holds r + 2r + r = 4r, so √2 a = 4r."
+  },
+  {
+    "id": "pc31-unit-cell-fcc-radius",
+    "type": "numeric",
+    "prompt": "A metal crystallizes face-centered cubic with edge length a = 400.0 pm. The atoms touch along the face diagonal, so √2 a = 4r. What is the atomic radius r, in pm?",
+    "answer": 141.4,
+    "unit": "pm",
+    "explanation": "The face diagonal is √2 × 400.0 pm = 565.7 pm, and it spans four radii, so r = 565.7 pm/4 = 141.4 pm. Taking a = 2r, as if atoms touched along the edge, would give 200 pm instead."
+  },
+  {
+    "id": "pc31-unit-cell-fcc-edge",
+    "type": "numeric",
+    "prompt": "Atoms of radius r = 144 pm pack in a face-centered cubic lattice, touching along the face diagonal so that √2 a = 4r. What is the edge length a of the unit cell, in pm?",
+    "answer": 407.3,
+    "unit": "pm",
+    "explanation": "a = 4r/√2 = 2√2 r = 2 × 1.4142 × 144 pm = 407.3 pm. The face diagonal is then √2 × 407.3 pm = 576 pm, which is four radii."
+  },
+  {
+    "id": "pc31-unit-cell-fcc-density",
+    "type": "numeric",
+    "prompt": "A metal with molar mass 107.9 g mol^−1 has a face-centered cubic unit cell (4 atoms per cell) with edge a = 408.6 pm. Taking N_A = 6.022 × 10^23 mol^−1, what is its density, in g cm^−3? (1 pm = 10^−10 cm.)",
+    "answer": 10.51,
+    "unit": "g cm^−3",
+    "explanation": "One cell has mass (4 × 107.9 g mol^−1)/(6.022 × 10^23 mol^−1) = 7.167 × 10^−22 g and volume (408.6 × 10^−10 cm)^3 = 6.822 × 10^−23 cm^3. The density is 7.167 × 10^−22 g/6.822 × 10^−23 cm^3 = 10.51 g cm^−3."
+  },
+  {
+    "id": "pc31-unit-cell-atoms-from-density",
+    "type": "numeric",
+    "prompt": "A cubic metal has molar mass 50.0 g mol^−1, density 6.15 g cm^−3 and unit-cell edge a = 300.0 pm. Taking N_A = 6.022 × 10^23 mol^−1, how many atoms does one unit cell contain? (1 pm = 10^−10 cm.)",
+    "answer": 2,
+    "tolerance": 0.02,
+    "explanation": "The cell volume is (300.0 × 10^−10 cm)^3 = 2.70 × 10^−23 cm^3, so its mass is 6.15 × 2.70 × 10^−23 g = 1.661 × 10^−22 g. One atom has mass 50.0/(6.022 × 10^23) g = 8.30 × 10^−23 g, so the cell holds 1.661 × 10^−22/8.30 × 10^−23 = 2 atoms, as in a body-centered cubic cell."
+  },
+  {
+    "id": "pc31-unit-cell-bcc-molar-volume",
+    "type": "numeric",
+    "prompt": "The Avogadro constant links the unit cell to one mole of crystal: N_A = (N V_m)/(V_(unit cell)), where N is the number of atoms per cell and V_m the molar volume. A body-centered cubic metal (N = 2) has cell edge a = 316.5 pm. Taking N_A = 6.022 × 10^23 mol^−1, what is V_m, in cm^3 mol^−1? (1 pm = 10^−10 cm.)",
+    "answer": 9.546,
+    "unit": "cm^3 mol^−1",
+    "explanation": "V_(unit cell) = (316.5 × 10^−10 cm)^3 = 3.1705 × 10^−23 cm^3. Rearranging, V_m = (N_A V_(unit cell))/N = (6.022 × 10^23 mol^−1 × 3.1705 × 10^−23 cm^3)/2 = 9.546 cm^3 mol^−1. Each cell holds two atoms, so a mole of atoms fills N_A/2 cells."
+  },
+  {
+    "id": "pc31-unit-cell-what-spheres",
+    "type": "multiple-choice",
+    "prompt": "In the section's models of unit cells and close packing, what can each sphere represent?",
+    "choices": [
+      {
+        "text": "An atom, an ion, a molecule or a group of molecules",
+        "correct": true
+      },
+      {
+        "text": "Only a single neutral atom",
+        "why": "The section's NaCl cell already uses spheres for ions. It notes that spheres can stand for atoms, monatomic or polyatomic ions, molecules or collections of molecules."
+      },
+      {
+        "text": "Only a monatomic ion",
+        "why": "Close-packed metals and noble gases use spheres for atoms. The section allows atoms, ions of either kind, molecules or groups of molecules."
+      },
+      {
+        "text": "Only a point of the lattice, never a particle",
+        "why": "The spheres stand for real particles in the crystal. The section lists atoms, monatomic ions, polyatomic ions, molecules or a collection of molecules."
+      }
+    ],
+    "explanation": "The section notes that the spheres in these models can represent atoms, monatomic ions, polyatomic ions, molecules, or a collection of molecules. The same unit-cell and packing ideas apply whatever the repeating particle is."
+  }
+]

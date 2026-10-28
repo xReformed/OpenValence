@@ -1,0 +1,579 @@
+[
+  {
+    "id": "pc29-unique-mechanism-rate-law-test",
+    "type": "multiple-choice",
+    "prompt": "Why does the experimental rate law play a central role in investigating a reaction mechanism?",
+    "choices": [
+      {
+        "text": "A mechanism is valid only if it fits the rate law",
+        "correct": true
+      },
+      {
+        "text": "The rate law shows which mechanism is the true one",
+        "why": "A rate law can rule a mechanism out, but it can't single one out: several mechanisms can predict the same rate law. It is a test any valid mechanism must pass."
+      },
+      {
+        "text": "The rate law lists the elementary steps in order",
+        "why": "The rate law is an empirical fit to concentration-versus-time data. The steps are proposed separately, then checked against it."
+      },
+      {
+        "text": "The rate law gives every rate constant directly",
+        "why": "An observed rate constant is often a composite of several rate constants. The rate law's role is as a check: a valid mechanism must agree with it."
+      }
+    ],
+    "explanation": "A proposed mechanism can be valid only if it is consistent with the rate law found by experiment. The section therefore works out which rate laws a given mechanism predicts, so they can be compared with the data."
+  },
+  {
+    "id": "pc29-unique-mechanism-numerical-inputs",
+    "type": "multiple-choice",
+    "prompt": "To test a proposed mechanism by numerical integration of its differential equations, what must be known or assumed?",
+    "choices": [
+      {
+        "text": "All initial concentrations and all rate constants",
+        "correct": true
+      },
+      {
+        "text": "Only the rate constant of the slowest step",
+        "why": "Numerical integration solves the full set of equations, so every step's rate constant is needed, along with every starting concentration."
+      },
+      {
+        "text": "Only the initial concentrations of the reactants",
+        "why": "The starting concentrations are known from how the reaction is set up, but the integration also needs values, known or assumed, for all the rate constants."
+      },
+      {
+        "text": "The equilibrium constant of the overall reaction",
+        "why": "Integration follows the rates of the individual steps. It needs the initial concentrations of all species and values for all the rate constants."
+      }
+    ],
+    "explanation": "Integration predicts each species' concentration over time, starting from its initial concentration and using every rate constant. The initial concentrations are known from the setup, but the rate constants must be found iteratively: estimates are refined by comparing predicted and measured concentrations."
+  },
+  {
+    "id": "pc29-unique-mechanism-intermediate-equations",
+    "type": "multiple-choice",
+    "prompt": "Why may a mechanism with more than one elementary step need more than one differential equation to describe it?",
+    "choices": [
+      {
+        "text": "It involves an intermediate with its own rate of change",
+        "correct": true
+      },
+      {
+        "text": "Each reactant needs a separate rate constant",
+        "why": "The number of equations follows the species whose concentrations change, not the number of reactants. A multi-step mechanism has an intermediate, which needs its own equation."
+      },
+      {
+        "text": "The overall reaction never goes to completion",
+        "why": "The section assumes the overall reaction does go to completion. The extra equations are needed because an intermediate forms and is used up."
+      },
+      {
+        "text": "Every elementary step is reversible",
+        "why": "Reversibility adds terms to an equation, not new equations. The extra equation is the one for the intermediate's concentration."
+      }
+    ],
+    "explanation": "A mechanism with more than one step involves an intermediate, and a valid mechanism must include it. Its concentration changes in its own way, so more than one differential equation may be needed; the section looks for conditions under which a single equation, the rate law, describes the formation of the product."
+  },
+  {
+    "id": "pc29-unique-mechanism-intermediate-profile",
+    "type": "multiple-choice",
+    "prompt": "In the mechanism A + B ⇌ C → D, started with no C present, how does [C] behave over the course of the reaction?",
+    "choices": [
+      {
+        "text": "It rises, passes through a maximum, then falls",
+        "correct": true
+      },
+      {
+        "text": "It rises steadily until the reaction ends",
+        "why": "C is used up by C → D, so it can't keep accumulating. Once A runs low, C is consumed faster than it forms, and [C] falls."
+      },
+      {
+        "text": "It falls steadily from the start",
+        "why": "With [C]_0 = 0, C can only rise at first. It rises while A + B → C outpaces its removal, peaks, then falls."
+      },
+      {
+        "text": "It stays fixed at its initial value",
+        "why": "C forms from A and B and is converted to D, so its concentration changes. It starts at zero, rises to a maximum, then falls."
+      }
+    ],
+    "explanation": "[C] increases early in the reaction, passes through a maximum, then decreases at long times as C is converted to D. This is why the exact solution of the coupled equations is rather complex, and why the section turns to approximations."
+  },
+  {
+    "id": "pc29-unique-mechanism-mass-balance",
+    "type": "numeric",
+    "prompt": "For A + B ⇌ C → D started with [C]_0 = [D]_0 = 0, the mass balance is [A]_0 = [A] + [C] + [D]. If [A]_0 = 0.050 M, and at some time [A] = 0.030 M and [D] = 0.015 M, what is [C], in M? (Give it as a decimal.)",
+    "answer": 0.005,
+    "unit": "M",
+    "explanation": "[C] = [A]_0 − [A] − [D] = 0.050 M − 0.030 M − 0.015 M = 0.005 M. Every A that has reacted is now either C or D, which is why the mass balance holds when the reaction starts with no C or D."
+  },
+  {
+    "id": "pc29-unique-mechanism-flooding-effect",
+    "type": "multiple-choice",
+    "prompt": "The section runs A + B ⇌ C → D with [B]_0 ≫ [A]_0, an example of flooding. What is the practical effect?",
+    "choices": [
+      {
+        "text": "[B] stays effectively at [B]_0 throughout",
+        "correct": true
+      },
+      {
+        "text": "[A] stays effectively at [A]_0 throughout",
+        "why": "A is the limiting reactant here, so it is A that gets used up. The reactant in large excess, B, is the one whose concentration barely changes."
+      },
+      {
+        "text": "The reverse step C → A + B is stopped",
+        "why": "Flooding doesn't remove any step. It keeps [B] close to [B]_0, so k_1[A][B] can be written as k_obs[A]."
+      },
+      {
+        "text": "The intermediate C never forms",
+        "why": "C still forms from A and B. Flooding only keeps [B] effectively constant, which simplifies the equations."
+      }
+    ],
+    "explanation": "With B in large excess, only a small fraction of it is used up, so [B] remains effectively at its initial value. The term k_1[A][B] can then be replaced by k_obs[A], with k_obs = k_1[B]_0, which simplifies the differential equations significantly."
+  },
+  {
+    "id": "pc29-unique-mechanism-flooding-kobs",
+    "type": "numeric",
+    "prompt": "In A + B ⇌ C → D with [B]_0 ≫ [A]_0, the term k_1[A][B] is replaced by k_obs[A], where k_obs = k_1[B]_0. If k_1 = 2.5 M^−1 s^−1 and [B]_0 = 0.40 M, what is k_obs, in s^−1?",
+    "answer": 1,
+    "unit": "s^−1",
+    "tolerance": 0,
+    "explanation": "k_obs = k_1[B]_0 = 2.5 M^−1 s^−1 × 0.40 M = 1.0 s^−1. Multiplying by a concentration turns the second-order rate constant into a first-order one, in s^−1."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-i-rds",
+    "type": "multiple-choice",
+    "prompt": "In A + B ⇌ C → D, suppose k_1[A][B] ≫ k_2[C] and k_3 ≫ k_2. Which step does the section call rate-determining?",
+    "choices": [
+      {
+        "text": "The first step, A + B → C",
+        "correct": true
+      },
+      {
+        "text": "The last step, C → D",
+        "why": "With k_3 ≫ k_2, C turns into D as soon as it forms. The slow part is forming C, so A + B → C is rate-determining."
+      },
+      {
+        "text": "The reverse step, C → A + B",
+        "why": "The reverse step is the slowest, but it hardly happens, so it doesn't limit the rate of forming D. The first step, A + B → C, does."
+      },
+      {
+        "text": "No single step; all three set the rate",
+        "why": "That describes the steady-state case, where all three steps run at similar rates. Here forming C is the slow step and it controls the rate."
+      }
+    ],
+    "explanation": "In Case I, C goes on to D far faster than it returns to A and B, so forming a molecule of C is tantamount to forming a molecule of D. D appears at the rate A + B → C proceeds, which makes that first step rate-determining."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-i-no-c",
+    "type": "multiple-choice",
+    "prompt": "In Case I of A + B ⇌ C → D (k_1[A][B] ≫ k_2[C] and k_3 ≫ k_2), why is no significant concentration of C ever observed?",
+    "choices": [
+      {
+        "text": "C is converted to D as fast as it forms",
+        "correct": true
+      },
+      {
+        "text": "C returns to A and B as fast as it forms",
+        "why": "With k_3 ≫ k_2, C rarely goes back to A and B. It goes on to D so rapidly that it never builds up."
+      },
+      {
+        "text": "C forms only after all of A is used up",
+        "why": "C forms throughout the reaction, from A + B. It just doesn't last, because C → D is very fast."
+      },
+      {
+        "text": "Flooding with B keeps [C] at zero",
+        "why": "Flooding keeps [B] near [B]_0; it doesn't remove C. [C] ≈ 0 here because C → D is much faster than C → A + B."
+      }
+    ],
+    "explanation": "When C is produced under these conditions, it is converted to D so rapidly that [C] ≈ 0. The mass balance then becomes [A] = [A]_0 − [D], and D is produced at essentially the rate that A is consumed."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-i-rate",
+    "type": "numeric",
+    "prompt": "In Case I, dx/dt = k_(I, obs)([A]_0 − x), where x = [D] and k_(I, obs) = k_1[B]_0. With k_1 = 0.30 M^−1 s^−1, [B]_0 = 0.50 M and [A]_0 = 0.020 M, what is dx/dt when x = 0.012 M, in M s^−1? (Type it in scientific notation, like 2.5e-3.)",
+    "answer": 0.0012,
+    "unit": "M s^−1",
+    "explanation": "k_(I, obs) = 0.30 M^−1 s^−1 × 0.50 M = 0.15 s^−1, and [A]_0 − x = 0.020 M − 0.012 M = 0.008 M. So dx/dt = 0.15 s^−1 × 0.008 M = 1.2 × 10^−3 M s^−1."
+  },
+  {
+    "id": "pc29-unique-mechanism-pseudo-first-order",
+    "type": "multiple-choice",
+    "prompt": "With [B]_0 ≫ [A]_0, the section calls k_(I, obs) = k_1[B]_0 a pseudo-first-order rate constant. Why \"pseudo\"?",
+    "choices": [
+      {
+        "text": "It holds only while [B] stays near [B]_0",
+        "correct": true
+      },
+      {
+        "text": "The reaction is really zero order in A",
+        "why": "The rate is proportional to [A]_0 − x, so it is first order in A. \"Pseudo\" refers to [B] being treated as a constant."
+      },
+      {
+        "text": "The rate constant k_1 changes with time",
+        "why": "k_1 is a true constant. The product k_1[B] is only approximately constant, because [B] changes a little."
+      },
+      {
+        "text": "C builds up and slows the reaction",
+        "why": "In Case I, [C] ≈ 0. The constant is \"pseudo\" because it contains [B], which is only approximately constant."
+      }
+    ],
+    "explanation": "The true rate is k_1[A][B], second order overall. Flooding makes k_1[B] ≈ k_1[B]_0, so the rate looks first order in A, but since [B] is not strictly constant, neither is k_(I, obs)."
+  },
+  {
+    "id": "pc29-unique-mechanism-product-equilibrium",
+    "type": "multiple-choice",
+    "prompt": "In the mechanism A → B ⇌ C, A → B is rate-determining and B and C interconvert rapidly, always satisfying K = [C]/[B]. How does the section regard B?",
+    "choices": [
+      {
+        "text": "As a product at equilibrium with the co-product C",
+        "correct": true
+      },
+      {
+        "text": "As an intermediate that never accumulates",
+        "why": "B can build up to a large concentration. The section doesn't count it as an intermediate, because it is in equilibrium with C."
+      },
+      {
+        "text": "As evidence that A → B can't be rate-determining",
+        "why": "The rate-determining-step idea doesn't exclude a species building up if it is in equilibrium with another product. A → B is still rate-determining."
+      },
+      {
+        "text": "As a reactant that is regenerated from C",
+        "why": "B is formed from A and stays in equilibrium with C. It is treated as one of the products, not as a reactant."
+      }
+    ],
+    "explanation": "The rate-determining-step approximation means that no intermediate produced by or after that step builds up to a significant concentration. It doesn't exclude a species in equilibrium with another product, so B here is a product, not an intermediate."
+  },
+  {
+    "id": "pc29-unique-mechanism-product-split",
+    "type": "numeric",
+    "prompt": "In A → B ⇌ C, the rapid interconversion keeps K = [C]/[B] = 4.0. If A → B has so far produced 0.50 M of B and C combined, what is [B], in M? (Give it as a decimal.)",
+    "answer": 0.1,
+    "unit": "M",
+    "explanation": "[B] + [C] = [B] + 4.0[B] = 5.0[B] = 0.50 M, so [B] = 0.10 M and [C] = 0.40 M. B builds up to a sizable concentration, yet the section treats it as a product because it is in equilibrium with C."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-ii-rds",
+    "type": "multiple-choice",
+    "prompt": "In A + B ⇌ C → D, suppose k_1[A][B] ≫ k_3[C]. Which step is rate-determining?",
+    "choices": [
+      {
+        "text": "C → D",
+        "correct": true
+      },
+      {
+        "text": "A + B → C",
+        "why": "k_1[A][B] ≫ k_3[C] says forming C is fast compared with converting it. The slow step, C → D, is rate-determining."
+      },
+      {
+        "text": "C → A + B",
+        "why": "This condition compares forming C with converting C to D; it says nothing about the reverse step being slow. The rate-determining step is C → D."
+      },
+      {
+        "text": "No step; the rates are similar",
+        "why": "The condition says one rate is much larger than another, so the rates are not similar. C → D is the slow step."
+      }
+    ],
+    "explanation": "When A + B → C is fast compared with the rate at which C is converted to D, the slow step C → D controls the rate. This is Case II, which the section splits into three sub-cases by how [C] behaves."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iia-rate",
+    "type": "numeric",
+    "prompt": "In Case IIa, A + B → C is rapid and essentially complete, so [C] = [A]_0 − x and dx/dt = k_3([A]_0 − x), where x = [D]. With k_3 = 0.040 s^−1 and [A]_0 = 0.025 M, what is dx/dt when x = 0.010 M, in M s^−1? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0006,
+    "unit": "M s^−1",
+    "explanation": "[C] = [A]_0 − x = 0.025 M − 0.010 M = 0.015 M, so dx/dt = 0.040 s^−1 × 0.015 M = 6.0 × 10^−4 M s^−1. Nearly all of the limiting reactant is already C, and D forms by the first-order decay of C."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iia-b-independent",
+    "type": "multiple-choice",
+    "prompt": "Experiments on A + B ⇌ C → D with [B]_0 ≫ [A]_0 find that D forms by a first-order rate law whose rate constant doesn't change when [B]_0 is changed. Which of the section's cases fits this?",
+    "choices": [
+      {
+        "text": "Case IIa, with dx/dt = k_3([A]_0 − x)",
+        "correct": true
+      },
+      {
+        "text": "Case I, with k_(I, obs) = k_1[B]_0",
+        "why": "In Case I the constant is k_1[B]_0, which doubles when [B]_0 doubles. Only k_3 in Case IIa is free of [B]_0."
+      },
+      {
+        "text": "Case IIb, with k_(IIb, obs) = k_3K_eq[B]_0",
+        "why": "In Case IIb the constant is directly proportional to [B]_0. A constant with no [B]_0 in it points to Case IIa."
+      },
+      {
+        "text": "Case III, with k_(III, obs) = (k_1k_3[B]_0)/(k_2 + k_3)",
+        "why": "In Case III the constant is proportional to [B]_0. Only Case IIa gives a rate constant, k_3, that doesn't depend on [B]_0."
+      }
+    ],
+    "explanation": "In Case IIa all of A is quickly converted to C, so D forms at the rate k_3[C] = k_3([A]_0 − x). The observed constant is just k_3, with no [B]_0 in it, unlike the composite pseudo-first-order constants of Cases I, IIb and III."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iib-equilibrium",
+    "type": "multiple-choice",
+    "prompt": "In Case IIb of A + B ⇌ C → D, k_1[A][B] ≫ k_3[C] and k_2 ≫ k_3. What does this let the section assume about the first step?",
+    "choices": [
+      {
+        "text": "It stays at equilibrium while D forms",
+        "correct": true
+      },
+      {
+        "text": "It goes to completion before D forms",
+        "why": "That is Case IIa, where k_3 ≫ k_2. With k_2 ≫ k_3, C returns to A and B much faster than it goes on to D, so the first step stays at equilibrium."
+      },
+      {
+        "text": "It is the rate-determining step",
+        "why": "Both directions of the first step are fast, so C → D is the slow, rate-determining step. The first step only stays at equilibrium."
+      },
+      {
+        "text": "Its reverse reaction can be neglected",
+        "why": "k_2 ≫ k_3 makes the reverse reaction important, not negligible. Fast forward and reverse reactions keep the first step at equilibrium."
+      }
+    ],
+    "explanation": "If both the forward and reverse reactions of the first step are rapid compared with C → D, the first step is effectively at equilibrium the whole time D forms. Then K_eq = [C]/([A][B]) holds throughout the reaction."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iib-kobs",
+    "type": "numeric",
+    "prompt": "In Case IIb, D forms with the pseudo-first-order rate constant k_(IIb, obs) = k_3K_eq[B]_0. If k_3 = 0.020 s^−1, K_eq = 0.50 M^−1 and [B]_0 = 0.10 M, what is k_(IIb, obs), in s^−1? (Type it in scientific notation, like 2.5e-3.)",
+    "answer": 0.001,
+    "unit": "s^−1",
+    "explanation": "k_(IIb, obs) = 0.020 s^−1 × 0.50 M^−1 × 0.10 M = 1.0 × 10^−3 s^−1. The composite constant combines the rate constant of the slow step with the equilibrium constant of the fast first step."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iib-double-b",
+    "type": "multiple-choice",
+    "prompt": "In Case IIb, k_(IIb, obs) = k_3K_eq[B]_0. If [B]_0 is doubled while B is still in large excess, what happens to k_(IIb, obs)?",
+    "choices": [
+      {
+        "text": "It doubles",
+        "correct": true
+      },
+      {
+        "text": "It stays the same",
+        "why": "That is Case IIa, where the constant is k_3. In Case IIb, [B]_0 appears in the constant, so doubling it doubles k_(IIb, obs)."
+      },
+      {
+        "text": "It quadruples",
+        "why": "[B]_0 appears to the first power, not squared. Doubling it doubles k_(IIb, obs)."
+      },
+      {
+        "text": "It halves",
+        "why": "More B pushes the first step toward C, so [C] and the rate grow. k_(IIb, obs) is directly proportional to [B]_0."
+      }
+    ],
+    "explanation": "The pseudo-first-order rate constant k_(IIb, obs) = k_3K_eq[B]_0 is a composite quantity directly proportional to [B]_0. Doubling [B]_0 doubles [C] = K_eq[B]_0([A]_0 − x), and with it the rate of forming D."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iic-vs-iib",
+    "type": "multiple-choice",
+    "prompt": "Cases IIb and IIc of A + B ⇌ C → D both have the first step at equilibrium while D forms. What assumption does Case IIc drop?",
+    "choices": [
+      {
+        "text": "That [C] is negligibly small compared with [A]",
+        "correct": true
+      },
+      {
+        "text": "That B is in large excess over A",
+        "why": "Case IIc still uses [B]_0 in place of [B]. What changes is that [C] is no longer neglected in the mass balance."
+      },
+      {
+        "text": "That C → D is the rate-determining step",
+        "why": "In both cases the first step stays at equilibrium and C → D is slow. Case IIc differs only in keeping [C] in the mass balance."
+      },
+      {
+        "text": "That the first step is at equilibrium",
+        "why": "Case IIc keeps the equilibrium K_eq = [C]/([A][B]). It drops the assumption that [C] ≈ 0 compared with [A]."
+      }
+    ],
+    "explanation": "Case IIb assumes [A] ≫ [C] ≈ 0, so the mass balance is [A] = [A]_0 − x. Case IIc keeps [C], writing [A] = [A]_0 − [C] − x, which puts a factor 1 + K_eq[B]_0 in the denominator of the rate constant."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iic-kobs",
+    "type": "numeric",
+    "prompt": "In Case IIc, k_(IIc, obs) = (k_3K_eq[B]_0)/(1 + K_eq[B]_0). If k_3 = 0.060 s^−1, K_eq = 2.0 M^−1 and [B]_0 = 1.5 M, what is k_(IIc, obs), in s^−1? (Give it as a decimal.)",
+    "answer": 0.045,
+    "unit": "s^−1",
+    "explanation": "K_eq[B]_0 = 2.0 M^−1 × 1.5 M = 3.0, so k_(IIc, obs) = (0.060 s^−1 × 3.0)/(1 + 3.0) = 0.18/4.0 s^−1 = 0.045 s^−1. The Case IIb formula would give 0.18 s^−1, four times too large, because here [C] is not small compared with [A]."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iic-limit",
+    "type": "multiple-choice",
+    "prompt": "The Case IIc constant is k_(IIc, obs) = (k_3K_eq[B]_0)/(1 + K_eq[B]_0). Under what condition does it reduce to the Case IIb result, k_3K_eq[B]_0?",
+    "choices": [
+      {
+        "text": "When K_eq[B]_0 ≪ 1",
+        "correct": true
+      },
+      {
+        "text": "When K_eq[B]_0 ≫ 1",
+        "why": "Then the denominator is about K_eq[B]_0, and k_(IIc, obs) approaches k_3, not k_3K_eq[B]_0. The 1 must dominate the denominator instead."
+      },
+      {
+        "text": "When K_eq[B]_0 = 1",
+        "why": "Then the denominator is 2, and k_(IIc, obs) is half of k_3K_eq[B]_0. The two agree only when K_eq[B]_0 is much smaller than 1."
+      },
+      {
+        "text": "When k_3 ≫ K_eq[B]_0",
+        "why": "k_3 is a rate constant and K_eq[B]_0 is dimensionless, so they can't be compared. What matters is K_eq[B]_0 compared with 1."
+      }
+    ],
+    "explanation": "If K_eq[B]_0 ≪ 1, the denominator 1 + K_eq[B]_0 is close to 1, leaving k_3K_eq[B]_0. Since [C]/[A] = K_eq[B]_0, this is the same as Case IIb's assumption that [C] is negligible compared with [A]."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iic-a-decay",
+    "type": "multiple-choice",
+    "prompt": "In Case IIc, D forms with the pseudo-first-order constant k_(IIc, obs). How does the pseudo-first-order constant for the disappearance of A compare?",
+    "choices": [
+      {
+        "text": "It is the same, k_(IIc, obs)",
+        "correct": true
+      },
+      {
+        "text": "It is k_3, the constant of the slow step",
+        "why": "A disappears through the equilibrium with C, so its constant includes K_eq[B]_0. Since [A] = ([A]_0 − x)/(1 + K_eq[B]_0), it is k_(IIc, obs)."
+      },
+      {
+        "text": "It is k_3K_eq[B]_0, the Case IIb constant",
+        "why": "That ignores the factor 1 + K_eq[B]_0. Because [A] is a fixed fraction of [A]_0 − x, A disappears with the same constant k_(IIc, obs)."
+      },
+      {
+        "text": "There is none; A doesn't decay first order",
+        "why": "[A] is a fixed fraction, 1/(1 + K_eq[B]_0), of [A]_0 − x, so it falls by the same first-order law as [A]_0 − x."
+      }
+    ],
+    "explanation": "Solving the mass balance and equilibrium together gives [A] = ([A]_0 − x)/(1 + K_eq[B]_0), a fixed fraction of [A]_0 − x. So −d[A]/dt = k_(IIc, obs)[A]: A disappears with the same pseudo-first-order constant with which D forms."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iii-assumption",
+    "type": "multiple-choice",
+    "prompt": "In Case III of A + B ⇌ C → D, all three reactions proceed at similar rates. What assumption simplifies the equations?",
+    "choices": [
+      {
+        "text": "[C] is always very small, so d[C]/dt ≈ 0",
+        "correct": true
+      },
+      {
+        "text": "One step is much slower than the others",
+        "why": "That is the assumption of Cases I and II. Case III needs no slow step; it relies on [C] staying very small."
+      },
+      {
+        "text": "The first step stays at equilibrium",
+        "why": "That is the prior-equilibrium assumption of Cases IIb and IIc. Case III sets d[C]/dt ≈ 0 because [C] is always small."
+      },
+      {
+        "text": "[C] stays equal to [A] throughout",
+        "why": "C is assumed to stay at a very small concentration, not to match [A]. Its slope, d[C]/dt, is then approximately zero."
+      }
+    ],
+    "explanation": "If [C] is always very small, a graph of [C] against time has a slope near zero, so d[C]/dt = k_1[A][B] − k_2[C] − k_3[C] ≈ 0. This is the steady-state approximation."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iii-concentration",
+    "type": "numeric",
+    "prompt": "Setting d[C]/dt ≈ 0 in Case III gives [C] = (k_1[A][B])/(k_2 + k_3). If k_1 = 50 M^−1 s^−1, [A] = 0.010 M, [B] = 0.20 M, k_2 = 300 s^−1 and k_3 = 200 s^−1, what is [C], in M? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0002,
+    "unit": "M",
+    "explanation": "k_1[A][B] = 50 M^−1 s^−1 × 0.010 M × 0.20 M = 0.10 M s^−1, and k_2 + k_3 = 500 s^−1, so [C] = (0.10 M s^−1)/(500 s^−1) = 2.0 × 10^−4 M. That is far below [A], as the steady-state approximation requires."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iii-kobs",
+    "type": "numeric",
+    "prompt": "In Case III, D forms with k_(III, obs) = (k_1k_3[B]_0)/(k_2 + k_3). If k_1 = 6.0 M^−1 s^−1, k_2 = 30 s^−1, k_3 = 10 s^−1 and [B]_0 = 0.50 M, what is k_(III, obs), in s^−1? (Give it as a decimal.)",
+    "answer": 0.75,
+    "unit": "s^−1",
+    "explanation": "k_1k_3[B]_0 = 6.0 M^−1 s^−1 × 10 s^−1 × 0.50 M = 30 s^−2, and k_2 + k_3 = 40 s^−1, so k_(III, obs) = (30 s^−2)/(40 s^−1) = 0.75 s^−1. The constant depends on [B]_0 and on all three rate constants."
+  },
+  {
+    "id": "pc29-unique-mechanism-case-iii-limit",
+    "type": "multiple-choice",
+    "prompt": "In Case III, k_(III, obs) = (k_1k_3[B]_0)/(k_2 + k_3). What does it become when k_3 ≫ k_2?",
+    "choices": [
+      {
+        "text": "k_1[B]_0, as in Case I",
+        "correct": true
+      },
+      {
+        "text": "k_3, as in Case IIa",
+        "why": "With k_3 ≫ k_2, the k_3 in the numerator cancels the k_3 in the denominator, leaving k_1[B]_0, not k_3."
+      },
+      {
+        "text": "(k_1k_3[B]_0)/k_2",
+        "why": "That keeps k_2 and drops k_3 from the denominator, which is the opposite limit, k_2 ≫ k_3. Here k_2 + k_3 ≈ k_3."
+      },
+      {
+        "text": "k_1k_3[B]_0",
+        "why": "The denominator doesn't disappear; it becomes k_3, which cancels the k_3 above. That leaves k_1[B]_0."
+      }
+    ],
+    "explanation": "With k_3 ≫ k_2, k_2 + k_3 ≈ k_3, so k_(III, obs) ≈ (k_1k_3[B]_0)/k_3 = k_1[B]_0. That is the Case I constant: every C formed goes on to D, so forming C is rate-determining."
+  },
+  {
+    "id": "pc29-unique-mechanism-same-rate-law",
+    "type": "multiple-choice",
+    "prompt": "With [B]_0 ≫ [A]_0, experiments find that D forms by a pseudo-first-order rate law whose constant is directly proportional to [B]_0. Which of the section's cases fit this result?",
+    "choices": [
+      {
+        "text": "Cases I, IIb and III",
+        "correct": true
+      },
+      {
+        "text": "Case I only",
+        "why": "Case I gives k_1[B]_0, but Case IIb gives k_3K_eq[B]_0 and Case III gives (k_1k_3[B]_0)/(k_2 + k_3), both also proportional to [B]_0."
+      },
+      {
+        "text": "Case IIa only",
+        "why": "Case IIa gives the constant k_3, which doesn't depend on [B]_0 at all. Cases I, IIb and III all give constants proportional to [B]_0."
+      },
+      {
+        "text": "Cases IIa and IIc",
+        "why": "Case IIa's constant, k_3, has no [B]_0, and Case IIc's depends on [B]_0 in a more complex way. Cases I, IIb and III are proportional to [B]_0."
+      }
+    ],
+    "explanation": "Case I gives k_1[B]_0, Case IIb gives k_3K_eq[B]_0 and Case III gives (k_1k_3[B]_0)/(k_2 + k_3): the same form of rate law from different conditions. Agreeing with the rate law shows only that a mechanism could be right, not which one is."
+  },
+  {
+    "id": "pc29-unique-mechanism-steady-state-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the name \"steady-state approximation\", what is it that is approximately steady?",
+    "choices": [
+      {
+        "text": "The concentration of the intermediate",
+        "correct": true
+      },
+      {
+        "text": "The state of the whole reacting system",
+        "why": "A net reaction is occurring, so the state of the system is distinctly not constant. Only the small intermediate concentration is nearly steady."
+      },
+      {
+        "text": "The concentrations of the reactants",
+        "why": "Reactants are being used up, so their concentrations change. It is the intermediate's small concentration whose slope is near zero."
+      },
+      {
+        "text": "The rate of the overall reaction",
+        "why": "The rate falls as A is used up, as dx/dt = k_(III, obs)([A]_0 − x) shows. The approximately steady quantity is the intermediate's concentration."
+      }
+    ],
+    "explanation": "The name is traditional, and the \"state\" that is approximately \"steady\" is the intermediate's concentration. Since a net reaction is occurring, the state of the system is distinctly not constant."
+  },
+  {
+    "id": "pc29-unique-mechanism-steady-state-payoff",
+    "type": "multiple-choice",
+    "prompt": "What does setting an intermediate's time derivative to zero accomplish in the steady-state approximation?",
+    "choices": [
+      {
+        "text": "It gives an algebraic equation for the intermediate",
+        "correct": true
+      },
+      {
+        "text": "It shows the intermediate's concentration is zero",
+        "why": "d[C]/dt ≈ 0 means the concentration is small and nearly constant, not zero; Case III solves for a nonzero [C] = (k_1[A][B])/(k_2 + k_3)."
+      },
+      {
+        "text": "It gives the equilibrium constant of the first step",
+        "why": "The steady-state condition isn't an equilibrium condition; Case III's [C] depends on k_3 as well as k_1 and k_2. It gives an algebraic expression for [C]."
+      },
+      {
+        "text": "It shows the reactant concentrations are constant",
+        "why": "The reactants are being used up; only the intermediate's small concentration is treated as nearly steady. Setting d[C]/dt = 0 gives an algebraic equation for [C]."
+      }
+    ],
+    "explanation": "Equating the derivative to zero turns the intermediate's differential equation into an algebraic one, which can be solved for its concentration and used to simplify the other equations. With several such intermediates, as often in free-radical mechanisms, the simplification can be remarkable."
+  }
+]

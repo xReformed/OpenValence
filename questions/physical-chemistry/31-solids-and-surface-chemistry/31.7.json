@@ -1,0 +1,544 @@
+[
+  {
+    "id": "pc31-isotherm-pressure-temperature",
+    "type": "multiple-choice",
+    "prompt": "A gas is in equilibrium with the surface of a solid. According to the section, how do raising the gas pressure and raising the surface temperature affect the surface coverage?",
+    "choices": [
+      {
+        "text": "Higher pressure raises it; higher temperature lowers it",
+        "correct": true
+      },
+      {
+        "text": "Higher pressure lowers it; higher temperature raises it",
+        "why": "Both effects are reversed. More gas above the surface pushes the equilibrium toward adsorbed species, while heating the surface drives them off."
+      },
+      {
+        "text": "Both raise the coverage",
+        "why": "Pressure and temperature act in opposite directions. Raising the temperature reduces the coverage, so the two can't both increase it."
+      },
+      {
+        "text": "Only the pressure matters; temperature has no effect",
+        "why": "Temperature is one of the three factors the section lists. Raising it reduces the coverage, the opposite of raising the pressure."
+      }
+    ],
+    "explanation": "The position of the gas–surface equilibrium depends on the stabilities of the species, the temperature and the gas pressure. The section notes that pressure and temperature generally have opposite effects: coverage rises with pressure but falls when the surface is heated."
+  },
+  {
+    "id": "pc31-isotherm-other-isotherms",
+    "type": "multiple-choice",
+    "prompt": "The section mentions other isotherms besides Langmuir's, such as the Temkin and Freundlich isotherms. In particular, what do they treat differently?",
+    "choices": [
+      {
+        "text": "How the enthalpy of adsorption depends on surface coverage",
+        "correct": true
+      },
+      {
+        "text": "Whether the gas pressure affects the surface coverage",
+        "why": "Every isotherm describes how coverage varies with pressure; that is what an isotherm is. They differ mainly in how they treat the coverage dependence of the enthalpy of adsorption."
+      },
+      {
+        "text": "Whether the temperature is held constant",
+        "why": "All isotherms are taken at a fixed temperature, as the name says. The difference the section singles out is the coverage dependence of the enthalpy of adsorption."
+      },
+      {
+        "text": "Whether adsorption is an equilibrium process",
+        "why": "All of them describe the equilibrium between gas and adsorbed species. They differ in their assumptions, chiefly about how the enthalpy of adsorption changes with coverage."
+      }
+    ],
+    "explanation": "Isotherms differ in one or more of the assumptions used to derive the coverage, and in particular in how they treat the coverage dependence of the enthalpy of adsorption. The Langmuir isotherm is one of the simplest: it takes that enthalpy to be independent of coverage."
+  },
+  {
+    "id": "pc31-isotherm-coverage-convention",
+    "type": "multiple-choice",
+    "prompt": "How is the surface coverage θ conventionally defined when working with adsorption isotherms?",
+    "choices": [
+      {
+        "text": "So that the saturation coverage is always θ_max = 1",
+        "correct": true
+      },
+      {
+        "text": "As the ratio of adsorbed species to surface substrate atoms",
+        "why": "That is the usual surface-science definition, which mostly gives saturation coverages below 1. For isotherms, θ is scaled so that saturation is always 1."
+      },
+      {
+        "text": "As the number of adsorbed molecules per square meter",
+        "why": "θ is a dimensionless fraction, not a surface density. For isotherms it is defined so that the saturation coverage equals 1."
+      },
+      {
+        "text": "As the fraction of the gas that ends up adsorbed",
+        "why": "θ describes the surface, not the gas. It is the fraction of the maximum (saturation) coverage, so θ_max = 1."
+      }
+    ],
+    "explanation": "For isotherms, θ is defined so that the maximum (saturation) coverage of a given adsorbate on a given surface is always unity. This differs from the common surface-science practice of equating θ with the ratio of adsorbate species to surface substrate atoms."
+  },
+  {
+    "id": "pc31-isotherm-coverage-two-definitions",
+    "type": "multiple-choice",
+    "prompt": "An adsorbate saturates a surface at one adsorbed molecule for every two surface atoms. What is the saturation coverage under the isotherm convention, and under the usual surface-science convention?",
+    "choices": [
+      {
+        "text": "1 for the isotherm convention; 0.5 for surface science",
+        "correct": true
+      },
+      {
+        "text": "0.5 for the isotherm convention; 1 for surface science",
+        "why": "The two are swapped. Isotherms set saturation to 1 by definition; surface science counts adsorbates per substrate atom, giving 1/2 here."
+      },
+      {
+        "text": "0.5 under both conventions",
+        "why": "Only the surface-science ratio, adsorbates per substrate atom, gives 0.5. The isotherm convention always sets the saturation coverage to 1."
+      },
+      {
+        "text": "2 for the isotherm convention; 0.5 for surface science",
+        "why": "θ never exceeds 1 under the isotherm convention, because saturation is defined as θ_max = 1. The surface-science value is 1/2 = 0.5."
+      }
+    ],
+    "explanation": "Under the isotherm convention the saturation coverage is unity by definition, whatever the packing. Surface science equates θ with adsorbates per substrate atom, here 1/2, which is why its saturation coverages are almost always below 1."
+  },
+  {
+    "id": "pc31-isotherm-vacant-site",
+    "type": "multiple-choice",
+    "prompt": "The section writes molecular adsorption as the equilibrium S−* + M_(g) ⇌ S − M. What does S−* stand for?",
+    "choices": [
+      {
+        "text": "A vacant surface site",
+        "correct": true
+      },
+      {
+        "text": "A molecule adsorbed on the surface",
+        "why": "The adsorbed molecule is S − M, the product. S−* is the empty site that M binds to."
+      },
+      {
+        "text": "An excited gas-phase molecule",
+        "why": "The gas molecule is M_(g). S−* is a site on the solid's surface that is not yet occupied."
+      },
+      {
+        "text": "A surface atom with a molecule dissociated onto it",
+        "why": "The equation is for non-dissociative (molecular) adsorption. S−* is simply an empty surface site."
+      }
+    ],
+    "explanation": "The equilibrium is between gas molecules M together with vacant surface sites S−*, and the adsorbed species S − M. Writing it this way treats the vacant sites as a reactant, which leads to K = ([S − M])/([S−*][M])."
+  },
+  {
+    "id": "pc31-isotherm-fixed-sites",
+    "type": "multiple-choice",
+    "prompt": "Writing adsorption as S−* + M_(g) ⇌ S − M carries the first major assumption of the Langmuir isotherm. What is it?",
+    "choices": [
+      {
+        "text": "The surface has a fixed number of localized adsorption sites",
+        "correct": true
+      },
+      {
+        "text": "The enthalpy of adsorption is independent of coverage",
+        "why": "That is the second major assumption, needed for b to be a constant. The first is that there are a fixed number of localized surface sites."
+      },
+      {
+        "text": "Molecules can adsorb on top of other adsorbed molecules",
+        "why": "Each molecule takes one site, and saturation is complete occupancy of those sites: a single monolayer. The assumption is a fixed number of localized sites."
+      },
+      {
+        "text": "Adsorbed molecules attract one another on the surface",
+        "why": "Interactions between adsorbates would make the enthalpy of adsorption depend on coverage, which the second assumption rules out. The first is a fixed number of localized sites."
+      }
+    ],
+    "explanation": "Treating vacant sites S−* as a reactant assumes that there are a fixed number of localized surface sites. Saturation then means every site is occupied, which is why θ approaches 1 as the pressure rises."
+  },
+  {
+    "id": "pc31-isotherm-proportional-terms",
+    "type": "multiple-choice",
+    "prompt": "In K = ([S − M])/([S−*][M]), which quantity does the section take to be proportional to 1 − θ?",
+    "choices": [
+      {
+        "text": "[S−*]",
+        "correct": true
+      },
+      {
+        "text": "[S − M]",
+        "why": "[S − M] counts the occupied sites, so it is proportional to θ. The vacant sites, [S−*], go as 1 − θ."
+      },
+      {
+        "text": "[M]",
+        "why": "[M] is the gas-phase concentration, proportional to the pressure P. The vacant sites, [S−*], go as 1 − θ."
+      },
+      {
+        "text": "K",
+        "why": "K is the equilibrium constant, not a concentration. The fraction of sites that are empty, 1 − θ, is proportional to [S−*]."
+      }
+    ],
+    "explanation": "[S − M] is proportional to θ, [S−*] to the fraction of vacant sites 1 − θ, and [M] to the pressure P. Replacing each gives the constant b = θ/((1 − θ)P)."
+  },
+  {
+    "id": "pc31-isotherm-rearrange",
+    "type": "multiple-choice",
+    "prompt": "The section defines b = θ/((1 − θ)P). What expression for θ does rearranging it give?",
+    "choices": [
+      {
+        "text": "θ = bP/(1 + bP)",
+        "correct": true
+      },
+      {
+        "text": "θ = bP",
+        "why": "That drops the (1 − θ) factor. From bP(1 − θ) = θ, collecting θ gives θ(1 + bP) = bP, so θ = bP/(1 + bP)."
+      },
+      {
+        "text": "θ = 1/(1 + bP)",
+        "why": "That is 1 − θ, the fraction of vacant sites. The occupied fraction is θ = bP/(1 + bP)."
+      },
+      {
+        "text": "θ = (1 + bP)/bP",
+        "why": "That is 1/θ, which is always at least 1. Inverting it gives θ = bP/(1 + bP)."
+      }
+    ],
+    "explanation": "Multiplying out gives bP − bPθ = θ, so θ(1 + bP) = bP and θ = bP/(1 + bP). This is the usual form of the Langmuir isotherm."
+  },
+  {
+    "id": "pc31-isotherm-b-units",
+    "type": "multiple-choice",
+    "prompt": "In b = θ/((1 − θ)P), θ is a dimensionless fraction. If P is measured in kPa, what are the units of b?",
+    "choices": [
+      {
+        "text": "kPa^−1",
+        "correct": true
+      },
+      {
+        "text": "kPa",
+        "why": "P sits in the denominator, so b has the inverse units. That keeps bP in θ = bP/(1 + bP) dimensionless."
+      },
+      {
+        "text": "No units",
+        "why": "θ and 1 − θ are dimensionless, but P is not. Dividing by P leaves b in kPa^−1."
+      },
+      {
+        "text": "kPa^−1 s^−1",
+        "why": "b is an equilibrium constant, not a rate constant, so no time unit appears. Dividing a pure number by P gives kPa^−1."
+      }
+    ],
+    "explanation": "θ/(1 − θ) is a pure number, so b = θ/((1 − θ)P) has the units of 1/P, here kPa^−1. Then bP is dimensionless, as it must be in θ = bP/(1 + bP)."
+  },
+  {
+    "id": "pc31-isotherm-coverage-calc",
+    "type": "numeric",
+    "prompt": "A gas adsorbs on a surface with Langmuir constant b = 0.40 atm^−1. Using θ = bP/(1 + bP), what is the surface coverage θ at P = 1.5 atm? (Give it as a decimal.)",
+    "answer": 0.375,
+    "explanation": "bP = 0.40 atm^−1 × 1.5 atm = 0.60, so θ = 0.60/(1 + 0.60) = 0.60/1.60 = 0.375. A bit over a third of the sites are occupied."
+  },
+  {
+    "id": "pc31-isotherm-b-from-coverage",
+    "type": "numeric",
+    "prompt": "At constant temperature, a gas covers θ = 0.80 of a surface when its pressure is 2.0 bar. Using b = θ/((1 − θ)P), what is b, in bar^−1?",
+    "answer": 2,
+    "unit": "bar^−1",
+    "explanation": "b = 0.80/((1 − 0.80) × 2.0 bar) = 0.80/(0.40 bar) = 2.0 bar^−1. Check: bP = 4.0, and 4.0/(1 + 4.0) = 0.80."
+  },
+  {
+    "id": "pc31-isotherm-pressure-for-coverage",
+    "type": "numeric",
+    "prompt": "A gas has Langmuir constant b = 0.50 kPa^−1 on a surface. Using θ = bP/(1 + bP), what pressure, in kPa, is needed for a coverage of θ = 0.90?",
+    "answer": 18,
+    "unit": "kPa",
+    "explanation": "Rearranging gives P = θ/(b(1 − θ)) = 0.90/(0.50 kPa^−1 × 0.10) = 18 kPa. Going from θ = 0.50 (at 2.0 kPa) to 0.90 takes nine times the pressure, because the isotherm flattens as the sites fill."
+  },
+  {
+    "id": "pc31-isotherm-half-coverage",
+    "type": "multiple-choice",
+    "prompt": "According to the Langmuir isotherm θ = bP/(1 + bP), at what pressure is exactly half the surface covered?",
+    "choices": [
+      {
+        "text": "P = 1/b",
+        "correct": true
+      },
+      {
+        "text": "P = b",
+        "why": "b has units of inverse pressure, so P = b doesn't even match in units. Half coverage needs bP = 1, so P = 1/b."
+      },
+      {
+        "text": "P = 1/(2b)",
+        "why": "Then bP = 1/2 and θ = (1/2)/(3/2) = 1/3, not 1/2. θ = 1/2 needs bP = 1."
+      },
+      {
+        "text": "P = 2/b",
+        "why": "Then bP = 2 and θ = 2/3. Half coverage needs bP = 1, so P = 1/b."
+      }
+    ],
+    "explanation": "Setting θ = 1/2 gives bP/(1 + bP) = 1/2, so 2bP = 1 + bP and bP = 1. The half-coverage pressure is 1/b: the more strongly a gas binds (larger b), the lower the pressure needed to cover half the sites."
+  },
+  {
+    "id": "pc31-isotherm-shape",
+    "type": "multiple-choice",
+    "prompt": "Which description fits a plot of θ against bP for the Langmuir isotherm (Figure 31.7.1)?",
+    "choices": [
+      {
+        "text": "It rises steeply from the origin, then levels off toward 1",
+        "correct": true
+      },
+      {
+        "text": "It is sigmoidal: flat at first, then steep, then level",
+        "why": "The Langmuir curve has no flat start: its slope is greatest at the origin and falls steadily. It is not sigmoidal."
+      },
+      {
+        "text": "It is a straight line through the origin",
+        "why": "θ = bP/(1 + bP) is nonlinear in P. The straight line comes from plotting 1/θ against 1/P instead."
+      },
+      {
+        "text": "It rises without limit as the pressure increases",
+        "why": "θ can't exceed 1, the saturation coverage. The curve levels off as θ approaches 1."
+      }
+    ],
+    "explanation": "θ = bP/(1 + bP) rises fastest at low pressure and bends over as the sites fill, approaching 1 at high pressure. The figure shows this nonlinear relationship between coverage and pressure; the curve is not sigmoidal."
+  },
+  {
+    "id": "pc31-isotherm-high-pressure",
+    "type": "multiple-choice",
+    "prompt": "According to the Langmuir isotherm, what is on the surface when the pressure is high enough that θ approaches 1?",
+    "choices": [
+      {
+        "text": "A nearly complete monolayer of adsorbed gas",
+        "correct": true
+      },
+      {
+        "text": "Several layers of adsorbed gas stacked on one another",
+        "why": "The Langmuir model has a fixed number of sites, each holding one molecule. θ = 1 means every site is filled: a single monolayer."
+      },
+      {
+        "text": "Half the sites filled and half vacant",
+        "why": "That is θ = 1/2, reached when bP = 1. As θ approaches 1 nearly every site is occupied."
+      },
+      {
+        "text": "A surface with no vacant sites and no further desorption",
+        "why": "Adsorption is a dynamic equilibrium, so molecules keep desorbing and readsorbing. θ near 1 just means nearly every site is occupied at any moment."
+      }
+    ],
+    "explanation": "As the pressure increases θ approaches 1, meaning that nearly the entire surface is coated with a monolayer of adsorbed gas. Saturation corresponds to complete occupancy of the fixed set of sites."
+  },
+  {
+    "id": "pc31-isotherm-triple-pressure",
+    "type": "numeric",
+    "prompt": "A gas has Langmuir constant b = 1.0 kPa^−1. Using θ = bP/(1 + bP), by what factor does θ increase when the pressure is tripled from 1.0 kPa to 3.0 kPa?",
+    "answer": 1.5,
+    "explanation": "At 1.0 kPa, θ = 1.0/2.0 = 0.50; at 3.0 kPa, θ = 3.0/4.0 = 0.75. The ratio is 0.75/0.50 = 1.5, not 3, because the isotherm is already bending toward saturation."
+  },
+  {
+    "id": "pc31-isotherm-enthalpy-assumption",
+    "type": "multiple-choice",
+    "prompt": "For a certain gas, the enthalpy of adsorption becomes less negative as more of the surface is covered. Why would the Langmuir isotherm then fit poorly?",
+    "choices": [
+      {
+        "text": "b would change with θ instead of being a constant",
+        "correct": true
+      },
+      {
+        "text": "The number of surface sites would no longer be fixed",
+        "why": "A changing enthalpy says nothing about how many sites there are. It breaks the second assumption: b is constant only if the enthalpy of adsorption is independent of coverage."
+      },
+      {
+        "text": "θ would no longer be able to reach 1",
+        "why": "Saturation is still full occupancy of the sites. The problem is that b, which depends on the enthalpy of adsorption, would vary with θ."
+      },
+      {
+        "text": "The temperature could no longer be held constant",
+        "why": "An isotherm is measured at a fixed temperature whatever the enthalpy does. The issue is that b would vary with coverage."
+      }
+    ],
+    "explanation": "b is related to the Gibbs energy and enthalpy of adsorption, so it is a constant (independent of θ) only if the enthalpy of adsorption is independent of coverage. That is the second major assumption of the Langmuir isotherm."
+  },
+  {
+    "id": "pc31-isotherm-linear-plot",
+    "type": "multiple-choice",
+    "prompt": "The Langmuir isotherm can be rearranged to 1/θ = 1 + 1/(bP). Which plot of adsorption data should then give a straight line?",
+    "choices": [
+      {
+        "text": "1/θ against 1/P",
+        "correct": true
+      },
+      {
+        "text": "θ against P",
+        "why": "θ against P is the curved isotherm itself. The rearranged form is linear in 1/θ and 1/P."
+      },
+      {
+        "text": "1/θ against P",
+        "why": "1/θ depends on 1/P, not on P. Plotting 1/θ against P gives a curve."
+      },
+      {
+        "text": "ln θ against 1/P",
+        "why": "No logarithm appears in 1/θ = 1 + 1/(bP). The inverse coverage is linear in the inverse pressure."
+      }
+    ],
+    "explanation": "1/θ = 1 + (1/b)(1/P) has the form y = c + mx with y = 1/θ and x = 1/P. The section shows that O_2 and CO adsorbed on silica give straight lines on such a plot, so the Langmuir isotherm describes the data well."
+  },
+  {
+    "id": "pc31-isotherm-slope-intercept",
+    "type": "multiple-choice",
+    "prompt": "Data that obey the Langmuir isotherm are plotted as 1/θ against 1/P. Using 1/θ = 1 + 1/(bP), what are the slope and the intercept of the line?",
+    "choices": [
+      {
+        "text": "Slope 1/b, intercept 1",
+        "correct": true
+      },
+      {
+        "text": "Slope b, intercept 1",
+        "why": "The slope is the coefficient of 1/P, which is 1/b. A gas that binds strongly (large b) gives a shallow line."
+      },
+      {
+        "text": "Slope 1/b, intercept 0",
+        "why": "The 1 in 1/θ = 1 + 1/(bP) is the intercept: as 1/P → 0 the surface saturates and θ → 1."
+      },
+      {
+        "text": "Slope 1, intercept 1/b",
+        "why": "That swaps the two. The term that multiplies 1/P is 1/b, so it is the slope; the constant 1 is the intercept."
+      }
+    ],
+    "explanation": "Written as 1/θ = 1 + (1/b)(1/P), the slope is 1/b and the intercept is 1. The intercept corresponds to infinite pressure, where θ = 1."
+  },
+  {
+    "id": "pc31-isotherm-b-from-slope",
+    "type": "numeric",
+    "prompt": "Adsorption data for a gas give a straight line of 1/θ against 1/P with slope 0.25 atm. Using 1/θ = 1 + 1/(bP), what is the Langmuir constant b, in atm^−1?",
+    "answer": 4,
+    "unit": "atm^−1",
+    "explanation": "The slope is 1/b, so b = 1/(0.25 atm) = 4.0 atm^−1. Half the surface would then be covered at P = 1/b = 0.25 atm."
+  },
+  {
+    "id": "pc31-isotherm-higher-temperature-line",
+    "type": "multiple-choice",
+    "prompt": "A gas's surface coverage at a given pressure falls as the temperature rises. On a plot of 1/θ against 1/P, how does its line at a higher temperature compare with its line at a lower one?",
+    "choices": [
+      {
+        "text": "Steeper, because b is smaller at the higher temperature",
+        "correct": true
+      },
+      {
+        "text": "Shallower, because b is smaller at the higher temperature",
+        "why": "The slope is 1/b, so a smaller b gives a larger slope. The higher-temperature line is the steeper one."
+      },
+      {
+        "text": "The same slope, but a larger intercept",
+        "why": "The intercept is fixed at 1 by the convention θ_max = 1. Temperature changes b, and so the slope 1/b."
+      },
+      {
+        "text": "The same line, since b doesn't depend on temperature",
+        "why": "b is an equilibrium constant, so it is temperature-dependent. Lower coverage at the same pressure means a smaller b and a steeper line."
+      }
+    ],
+    "explanation": "Lower coverage at the same pressure means a smaller b, and the slope of 1/θ against 1/P is 1/b. So the higher-temperature line is steeper, while both lines share the intercept 1."
+  },
+  {
+    "id": "pc31-isotherm-dynamic-equilibrium",
+    "type": "multiple-choice",
+    "prompt": "The section also derives the Langmuir isotherm from kinetics. What is the starting idea of that derivation?",
+    "choices": [
+      {
+        "text": "At equilibrium the rates of adsorption and desorption are equal",
+        "correct": true
+      },
+      {
+        "text": "At equilibrium both adsorption and desorption stop",
+        "why": "The equilibrium is dynamic: molecules keep adsorbing and desorbing. It is the balance of the two rates that is equated."
+      },
+      {
+        "text": "Adsorption is much faster than desorption",
+        "why": "Neither process dominates at equilibrium. The derivation sets the rate of adsorption equal to the rate of desorption."
+      },
+      {
+        "text": "Every gas molecule that hits the surface stays there",
+        "why": "Then nothing would ever desorb and there would be no equilibrium. The derivation balances the adsorption and desorption rates."
+      }
+    ],
+    "explanation": "The gas–surface equilibrium is a dynamic state in which the rate of adsorption is exactly counterbalanced by the rate of desorption. Equating R_ads and R_des therefore gives an isotherm."
+  },
+  {
+    "id": "pc31-isotherm-coverage-dependence",
+    "type": "multiple-choice",
+    "prompt": "In the kinetic derivation, f(θ) and f'(θ) are the coverage dependences of the rates of adsorption and desorption. What forms does the section take for molecular adsorption?",
+    "choices": [
+      {
+        "text": "f(θ) = c(1 − θ) and f'(θ) = c'θ",
+        "correct": true
+      },
+      {
+        "text": "f(θ) = cθ and f'(θ) = c'(1 − θ)",
+        "why": "These are swapped. Adsorption needs a vacant site, so it goes as 1 − θ; desorption needs an occupied one, so it goes as θ."
+      },
+      {
+        "text": "f(θ) = c(1 − θ) and f'(θ) = c'(1 − θ)",
+        "why": "Only adsorption depends on the vacant sites. Desorption comes from occupied sites, so f'(θ) = c'θ."
+      },
+      {
+        "text": "f(θ) = c and f'(θ) = c'θ",
+        "why": "Adsorption can only happen onto an empty site, so its rate falls as the surface fills: f(θ) = c(1 − θ)."
+      }
+    ],
+    "explanation": "Adsorption is proportional to the fraction of sites that are unoccupied, f(θ) = c(1 − θ), and desorption to the fraction that are occupied, f'(θ) = c'θ. Substituting them gives (P(1 − θ))/θ = B(T), which rearranges to θ = bP/(1 + bP)."
+  },
+  {
+    "id": "pc31-isotherm-elementary-orders",
+    "type": "multiple-choice",
+    "prompt": "The section justifies f(θ) = c(1 − θ) and f'(θ) = c'θ by treating adsorption and desorption as elementary steps. What orders does that predict?",
+    "choices": [
+      {
+        "text": "Adsorption first order in vacant sites and in gas pressure; desorption first order in adsorbed molecules",
+        "correct": true
+      },
+      {
+        "text": "Adsorption first order in gas pressure only; desorption first order in vacant sites",
+        "why": "Adsorption also needs an empty site, so it is first order in vacant sites too. Desorption depends on the adsorbed molecules, not the vacant sites."
+      },
+      {
+        "text": "Adsorption second order in vacant sites; desorption second order in adsorbed molecules",
+        "why": "Each step involves one site and, for adsorption, one gas molecule. Both are first order in each species they involve."
+      },
+      {
+        "text": "Adsorption zero order in vacant sites; desorption first order in gas pressure",
+        "why": "Adsorption depends on how many sites are free, and desorption on how many are occupied, not on the gas above the surface."
+      }
+    ],
+    "explanation": "For S−* + M(g) ⇌ S-M as elementary steps, the forward rate is first order in vacant sites and first order in gas particles (proportional to P), and the reverse rate is first order in adsorbed molecules. These give the (1 − θ)P and θ dependences used in the derivation."
+  },
+  {
+    "id": "pc31-isotherm-b-of-t",
+    "type": "numeric",
+    "prompt": "Balancing adsorption and desorption gives (P(1 − θ))/θ = B(T), with b = 1/B(T). If B(T) = 0.50 atm at some temperature, what is θ at P = 2.0 atm? (Give it as a decimal.)",
+    "answer": 0.8,
+    "explanation": "b = 1/(0.50 atm) = 2.0 atm^−1, so bP = 4.0 and θ = bP/(1 + bP) = 4.0/5.0 = 0.80. Directly: (2.0(1 − θ))/θ = 0.50 gives 2.0 − 2.0θ = 0.50θ, so θ = 2.0/2.5 = 0.80."
+  },
+  {
+    "id": "pc31-isotherm-enthalpy-from-barriers",
+    "type": "numeric",
+    "prompt": "A gas has an activation energy for adsorption Ea^(ads) = 10 kJ mol^−1 and for desorption Ea^(des) = 90 kJ mol^−1. Using ΔH_ads = Ea^(ads) − Ea^(des), what is ΔH_ads, in kJ mol^−1?",
+    "answer": -80,
+    "unit": "kJ mol^−1",
+    "tolerance": 0,
+    "explanation": "ΔH_ads = 10 kJ mol^−1 − 90 kJ mol^−1 = −80 kJ mol^−1. Since b ∝ exp[(Ea^(des) − Ea^(ads))/RT] = exp[−ΔH_ads/RT], the higher desorption barrier makes adsorption exothermic and b large."
+  },
+  {
+    "id": "pc31-isotherm-b-temperature",
+    "type": "multiple-choice",
+    "prompt": "The section finds b ∝ exp[−ΔH_ads/RT]. For an exothermic adsorption (ΔH_ads < 0), what happens to b as the temperature is raised?",
+    "choices": [
+      {
+        "text": "It decreases, so the coverage at a given pressure falls",
+        "correct": true
+      },
+      {
+        "text": "It increases, so the coverage at a given pressure rises",
+        "why": "With ΔH_ads < 0, −ΔH_ads/RT is positive and shrinks as T rises, so b falls. That matches the observation that heating lowers the coverage."
+      },
+      {
+        "text": "It stays the same, since b is an equilibrium constant",
+        "why": "Equilibrium constants depend on temperature; the section says b is temperature-dependent. Here it falls as T rises."
+      },
+      {
+        "text": "It decreases, but the coverage at a given pressure rises",
+        "why": "θ = bP/(1 + bP) increases with b, so a smaller b means a lower coverage at the same pressure."
+      }
+    ],
+    "explanation": "For ΔH_ads < 0 the exponent −ΔH_ads/RT is positive and gets smaller as T increases, so b decreases. A smaller b gives a smaller θ = bP/(1 + bP) at the same P, which is why raising the temperature reduces the surface coverage."
+  },
+  {
+    "id": "pc31-isotherm-b-ratio",
+    "type": "numeric",
+    "prompt": "A gas adsorbs with ΔH_ads = −20.0 kJ mol^−1, independent of temperature. Using b ∝ exp[−ΔH_ads/RT] with R = 8.314 J mol^−1 K^−1, what is the ratio b(350 K)/b(300 K)? (Give it as a decimal.)",
+    "answer": 0.318,
+    "tolerance": 0.02,
+    "explanation": "b(350)/b(300) = exp[(−ΔH_ads/R)(1/350 K − 1/300 K)] = exp[(20 000/8.314 K)(−4.762 × 10^−4 K^−1)] = exp(−1.146) = 0.318. Warming the surface by 50 K cuts b to about a third, lowering the coverage at any pressure."
+  }
+]

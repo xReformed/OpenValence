@@ -1,0 +1,538 @@
+[
+  {
+    "id": "pc30-collision-theory-every-collision",
+    "type": "multiple-choice",
+    "prompt": "For Q(g) + B(g) → products, suppose every collision between a Q and a B particle gives products. What is the reaction rate, on a molecular scale?",
+    "choices": [
+      {
+        "text": "The collision frequency per unit volume, Z_QB",
+        "correct": true
+      },
+      {
+        "text": "The collision frequency of one Q molecule",
+        "why": "One molecule's collision rate counts only its own collisions. The rate per unit volume counts every Q–B collision, which is Z_QB = σ_QB⟨v_r⟩ρ_Q ρ_B."
+      },
+      {
+        "text": "Z_QB multiplied by e^(−E_0/k_B T)",
+        "why": "The Boltzmann-type factor appears only once an energy requirement is added. If every collision reacts, the rate is simply Z_QB."
+      },
+      {
+        "text": "Half the collision frequency, (1/2)Z_QB",
+        "why": "A factor 1/2 removes double counting in a pure gas of one kind. Here each collision is one Q meeting one B, so the rate is Z_QB."
+      }
+    ],
+    "explanation": "If each collision makes products, the reactions per volume per second equal the collisions per volume per second: rate = Z_QB = σ_QB⟨v_r⟩ρ_Q ρ_B. The section uses this to get a rough estimate of k."
+  },
+  {
+    "id": "pc30-collision-theory-zqb-units",
+    "type": "multiple-choice",
+    "prompt": "The section writes the collision frequency as Z_QB = σ_QB⟨v_r⟩ρ_Q ρ_B. What are its units?",
+    "choices": [
+      {
+        "text": "molecules m^−3 s^−1",
+        "correct": true
+      },
+      {
+        "text": "s^−1",
+        "why": "That is the unit of one molecule's collision rate. Z_QB counts collisions per unit volume too: m^2 × m s^−1 × m^−3 × m^−3 gives m^−3 s^−1."
+      },
+      {
+        "text": "mol m^−3 s^−1",
+        "why": "That is the molar scale, Z_QB/N_0. Z_QB itself counts molecules, so it is in molecules m^−3 s^−1."
+      },
+      {
+        "text": "m^3 mol^−1 s^−1",
+        "why": "Those are the units of the rate constant k, not of the collision frequency. Z_QB is a number of collisions per volume per time."
+      }
+    ],
+    "explanation": "σ_QB is in m^2, ⟨v_r⟩ in m s^−1, and each number density in m^−3. Together they give collisions, that is molecules, per cubic meter per second."
+  },
+  {
+    "id": "pc30-collision-theory-divide-avogadro",
+    "type": "multiple-choice",
+    "prompt": "Why does the section divide the collision frequency Z_QB by Avogadro's number N_0?",
+    "choices": [
+      {
+        "text": "To put the rate on a molar scale",
+        "correct": true
+      },
+      {
+        "text": "To remove double counting of collisions",
+        "why": "Dividing by N_0 is a change of units, not a correction for counting. It turns molecules per volume per time into moles per volume per time."
+      },
+      {
+        "text": "To keep only collisions with enough energy",
+        "why": "The energy requirement comes later, through σ_r(E_r). Dividing by N_0 only converts molecules to moles."
+      },
+      {
+        "text": "To turn number densities into speeds",
+        "why": "N_0 links number densities to molar concentrations, not to speeds. Z_QB/N_0 is the rate in moles per volume per time."
+      }
+    ],
+    "explanation": "Z_QB counts molecules, so dividing by N_0 gives the collision frequency in moles: rate = −d[Q]/dt = Z_QB/N_0. The number densities are then rewritten as concentrations using ρ_Q = N_0[Q]."
+  },
+  {
+    "id": "pc30-collision-theory-density-to-concentration",
+    "type": "multiple-choice",
+    "prompt": "To write the rate in molar concentrations, the section uses (ρ_Q)/(N_0) = [Q]. What does it then substitute for the number density ρ_Q?",
+    "choices": [
+      {
+        "text": "N_0[Q]",
+        "correct": true
+      },
+      {
+        "text": "[Q]/N_0",
+        "why": "The ratio is upside down. A number density is much larger than the molar concentration, so ρ_Q = N_0[Q]."
+      },
+      {
+        "text": "[Q]",
+        "why": "ρ_Q counts molecules per volume, while [Q] counts moles per volume. They differ by the factor N_0."
+      },
+      {
+        "text": "N_0/[Q]",
+        "why": "Rearranging (ρ_Q)/(N_0) = [Q] gives ρ_Q = N_0[Q], with [Q] in the numerator."
+      }
+    ],
+    "explanation": "Multiplying (ρ_Q)/(N_0) = [Q] by N_0 gives ρ_Q = N_0[Q], and likewise ρ_B = N_0[B]. Substituting both into (σ_QB⟨v_r⟩/N_0)ρ_Q ρ_B gives N_0σ_QB⟨v_r⟩[Q][B]."
+  },
+  {
+    "id": "pc30-collision-theory-k-expression",
+    "type": "multiple-choice",
+    "prompt": "Comparing −d[Q]/dt = N_0σ_QB⟨v_r⟩[Q][B] with rate = k[Q][B], which rate constant does hard-sphere collision theory give?",
+    "choices": [
+      {
+        "text": "k = N_0σ_QB√((8k_B T)/(πμ_QB))",
+        "correct": true
+      },
+      {
+        "text": "k = σ_QB√((8k_B T)/(πμ_QB))/N_0",
+        "why": "Two factors of N_0 come from ρ_Q = N_0[Q] and ρ_B = N_0[B], and one is divided out. That leaves N_0 multiplying, not dividing."
+      },
+      {
+        "text": "k = N_0^2σ_QB√((8k_B T)/(πμ_QB))",
+        "why": "N_0^2 appears in Z_QB written with concentrations. After dividing by N_0 for the molar rate, k has a single N_0."
+      },
+      {
+        "text": "k = N_0σ_QB√((πμ_QB)/(8k_B T))",
+        "why": "The square root is upside down. The mean relative speed is ⟨v_r⟩ = √((8k_B T)/(πμ_QB)), which grows with T."
+      }
+    ],
+    "explanation": "The rate law has the form k[Q][B], so k is everything multiplying [Q][B]: k = N_0σ_QB⟨v_r⟩. Writing out the mean relative speed gives k = N_0σ_QB√((8k_B T)/(πμ_QB))."
+  },
+  {
+    "id": "pc30-collision-theory-k-units",
+    "type": "multiple-choice",
+    "prompt": "The hard-sphere rate constant is k = N_0σ_QB⟨v_r⟩, with σ_QB in m^2, N_0 in mol^−1 and ⟨v_r⟩ in m/s. What are the units of k?",
+    "choices": [
+      {
+        "text": "m^3 mol^−1 s^−1",
+        "correct": true
+      },
+      {
+        "text": "m^2 mol^−1 s^−1",
+        "why": "The meters from σ_QB (m^2) and ⟨v_r⟩ (m/s) multiply to m^3, not m^2. So k is in m^3 mol^−1 s^−1."
+      },
+      {
+        "text": "m^3 mol s^−1",
+        "why": "N_0 is per mole, so it contributes mol^−1, not mol. The units are m^3 mol^−1 s^−1."
+      },
+      {
+        "text": "s^−1",
+        "why": "s^−1 is the unit of a first-order rate constant. A bimolecular k must turn [Q][B] into a rate, so it has m^3 mol^−1 s^−1."
+      }
+    ],
+    "explanation": "Multiplying mol^−1 × m^2 × m s^−1 gives m^3 mol^−1 s^−1. These are the units a second-order rate constant needs when concentrations are in mol m^−3."
+  },
+  {
+    "id": "pc30-collision-theory-sigma-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the hard-sphere model, σ_QB = π((d_Q + d_B)/2)^2. What does σ_QB represent?",
+    "choices": [
+      {
+        "text": "The collision region one molecule presents to another",
+        "correct": true
+      },
+      {
+        "text": "The sum of the two molecules' own cross-sectional areas",
+        "why": "Adding the two areas gives π(d_Q/2)^2 + π(d_B/2)^2, which is smaller. σ_QB uses the contact distance (d_Q + d_B)/2 as its radius."
+      },
+      {
+        "text": "The surface area of a Q molecule",
+        "why": "σ_QB is a target area for collisions, built from both diameters. It is not the surface of either molecule."
+      },
+      {
+        "text": "The fraction of collisions that react",
+        "why": "σ_QB is an area in m^2, not a fraction. In the hard-sphere model every collision inside it is assumed to react."
+      }
+    ],
+    "explanation": "Q and B touch when their centers are (d_Q + d_B)/2 apart, so a circle of that radius is the target area for a collision. The section often writes it as σ_QB = πd_QB^2."
+  },
+  {
+    "id": "pc30-collision-theory-sigma-calc",
+    "type": "numeric",
+    "prompt": "Molecule Q has diameter d_Q = 0.30 nm and molecule B has d_B = 0.50 nm. Using σ_QB = π((d_Q + d_B)/2)^2, what is σ_QB, in nm^2? (Give it as a decimal.)",
+    "answer": 0.5027,
+    "unit": "nm^2",
+    "explanation": "(d_Q + d_B)/2 = (0.30 nm + 0.50 nm)/2 = 0.40 nm, so σ_QB = π(0.40 nm)^2 = 3.1416 × 0.160 nm^2 = 0.503 nm^2. This is 5.03 × 10^−19 m^2, the size of σ_QB that goes into k."
+  },
+  {
+    "id": "pc30-collision-theory-mean-relative-speed",
+    "type": "numeric",
+    "prompt": "The mean relative speed is ⟨v_r⟩ = √((8k_B T)/(πμ_QB)), with k_B = 1.381 × 10^−23 J K^−1. What is ⟨v_r⟩, in m/s, for a pair with reduced mass μ_QB = 2.5 × 10^−26 kg at 400 K?",
+    "answer": 750,
+    "unit": "m/s",
+    "explanation": "(8k_B T)/(πμ_QB) = (8 × 1.381 × 10^−23 J K^−1 × 400 K)/(π × 2.5 × 10^−26 kg) = (4.419 × 10^−20 J)/(7.854 × 10^−26 kg) = 5.63 × 10^5 m^2 s^−2. The square root is ⟨v_r⟩ = 750 m/s."
+  },
+  {
+    "id": "pc30-collision-theory-k-calc",
+    "type": "numeric",
+    "prompt": "Using the hard-sphere result k = N_0σ_QB⟨v_r⟩ with N_0 = 6.022 × 10^23 mol^−1, what is k, in m^3 mol^−1 s^−1, for σ_QB = 3.0 × 10^−19 m^2 and ⟨v_r⟩ = 800 m/s? (Type it in scientific notation, like 2.5e8.)",
+    "answer": 144500000,
+    "unit": "m^3 mol^−1 s^−1",
+    "explanation": "k = (6.022 × 10^23 mol^−1)(3.0 × 10^−19 m^2)(800 m/s) = 1.45 × 10^8 m^3 mol^−1 s^−1. The section calls this only a rough estimate, since its temperature dependence is wrong."
+  },
+  {
+    "id": "pc30-collision-theory-zqb-calc",
+    "type": "numeric",
+    "prompt": "A gas mixture has ρ_Q = 2.0 × 10^24 m^−3 and ρ_B = 3.0 × 10^24 m^−3, with σ_QB = 4.0 × 10^−19 m^2 and ⟨v_r⟩ = 500 m/s. Using Z_QB = σ_QB⟨v_r⟩ρ_Q ρ_B, what is Z_QB, in m^−3 s^−1? (Type it in scientific notation, like 2.5e33.)",
+    "answer": 1.2e33,
+    "unit": "m^−3 s^−1",
+    "explanation": "Z_QB = (4.0 × 10^−19 m^2)(500 m/s)(2.0 × 10^24 m^−3)(3.0 × 10^24 m^−3) = 2.0 × 10^−16 m^3 s^−1 × 6.0 × 10^48 m^−6 = 1.2 × 10^33 m^−3 s^−1. If every collision reacted, this would be the rate in molecules per cubic meter per second."
+  },
+  {
+    "id": "pc30-collision-theory-heavier-pair",
+    "type": "multiple-choice",
+    "prompt": "Two hard-sphere reactions have the same σ_QB and temperature, but the reduced mass μ_QB of the second pair is four times that of the first. Using k = N_0σ_QB√((8k_B T)/(πμ_QB)), how does the second k compare?",
+    "choices": [
+      {
+        "text": "Half as large",
+        "correct": true
+      },
+      {
+        "text": "A quarter as large",
+        "why": "μ_QB sits under a square root. Four times the reduced mass divides ⟨v_r⟩, and so k, by √4 = 2."
+      },
+      {
+        "text": "Twice as large",
+        "why": "Heavier pairs move more slowly and collide less often. μ_QB is in the denominator, so k falls."
+      },
+      {
+        "text": "The same",
+        "why": "k depends on mass through the mean relative speed. Four times μ_QB halves ⟨v_r⟩, so k halves."
+      }
+    ],
+    "explanation": "k is proportional to ⟨v_r⟩ = √((8k_B T)/(πμ_QB)), which goes as 1/√μ_QB. Multiplying μ_QB by 4 divides k by 2."
+  },
+  {
+    "id": "pc30-collision-theory-temperature-dependence",
+    "type": "multiple-choice",
+    "prompt": "According to the hard-sphere expression k = N_0σ_QB√((8k_B T)/(πμ_QB)), how does k depend on temperature?",
+    "choices": [
+      {
+        "text": "It is proportional to √T",
+        "correct": true
+      },
+      {
+        "text": "It is proportional to T",
+        "why": "T appears inside the square root, through the mean relative speed. So k grows only as √T."
+      },
+      {
+        "text": "It is proportional to e^(−E_0/k_B T)",
+        "why": "Hard-sphere theory has no energy threshold, so no exponential appears. Its only temperature dependence is √T from ⟨v_r⟩."
+      },
+      {
+        "text": "It does not depend on T",
+        "why": "⟨v_r⟩ rises with temperature, so k does too, as √T. σ_QB, μ_QB and N_0 are the parts that don't change."
+      }
+    ],
+    "explanation": "The only temperature in k = N_0σ_QB⟨v_r⟩ is in ⟨v_r⟩ = √((8k_B T)/(πμ_QB)), so k ∝ √T. The section says this is exactly what the hard-sphere theory gets wrong."
+  },
+  {
+    "id": "pc30-collision-theory-temperature-scaling",
+    "type": "numeric",
+    "prompt": "A hard-sphere estimate gives k = 1.0 × 10^8 m^3 mol^−1 s^−1 at 300 K. Using k = N_0σ_QB√((8k_B T)/(πμ_QB)), what does the same model give at 1200 K, in m^3 mol^−1 s^−1? (Type it in scientific notation, like 2.5e8.)",
+    "answer": 200000000,
+    "unit": "m^3 mol^−1 s^−1",
+    "tolerance": 0,
+    "explanation": "Only ⟨v_r⟩ changes with T, and k ∝ √T. Raising T by a factor of 4 multiplies k by √4 = 2, giving 2.0 × 10^8 m^3 mol^−1 s^−1. A fourfold rise in T changes k this little because the model has no energy requirement."
+  },
+  {
+    "id": "pc30-collision-theory-rough-estimate",
+    "type": "multiple-choice",
+    "prompt": "The section calls the hard-sphere value of k only a rough estimate. What is the main reason it gives?",
+    "choices": [
+      {
+        "text": "Its temperature dependence of k is wrong",
+        "correct": true
+      },
+      {
+        "text": "The collision diameters can't be measured",
+        "why": "The section takes σ_QB as known from the diameters. Its complaint is that the hard-sphere k depends on T in the wrong way."
+      },
+      {
+        "text": "It leaves out the mean relative speed",
+        "why": "⟨v_r⟩ is built into k = N_0σ_QB⟨v_r⟩. The problem is that this √T is the model's only temperature dependence."
+      },
+      {
+        "text": "It treats the reaction as first order",
+        "why": "The model gives a second-order rate, k[Q][B], as a bimolecular reaction should. The weak point is how k depends on T."
+      }
+    ],
+    "explanation": "Hard-sphere theory assumes every collision reacts, so k grows only as √T. The section says this misrepresents the temperature dependence of k, and the rest of the section begins to correct it with an energy-dependent cross section."
+  },
+  {
+    "id": "pc30-collision-theory-successful-collision",
+    "type": "multiple-choice",
+    "prompt": "What does the section say reactant molecules need for a collision to be successful?",
+    "choices": [
+      {
+        "text": "Enough kinetic energy to overcome electron-cloud repulsion and break bonds",
+        "correct": true
+      },
+      {
+        "text": "Only to come within the collision diameter of each other",
+        "why": "Coming within the diameter makes a collision, which is all hard-sphere theory requires. A successful one also needs enough kinetic energy."
+      },
+      {
+        "text": "A relative speed equal to the mean relative speed ⟨v_r⟩",
+        "why": "⟨v_r⟩ is an average, not a threshold. What matters is having at least a minimum kinetic energy, which many slower pairs lack."
+      },
+      {
+        "text": "A reduced mass larger than that of the products",
+        "why": "The section sets no condition on mass. Its condition is enough kinetic energy to overcome the repulsions and break existing bonds."
+      }
+    ],
+    "explanation": "The colliding molecules must bring enough kinetic energy to push through the repulsion of their electron clouds and break the existing bonds. To include this, the section replaces σ_QB with an energy-dependent reaction cross section."
+  },
+  {
+    "id": "pc30-collision-theory-reaction-cross-section",
+    "type": "multiple-choice",
+    "prompt": "To account for the energy needed in a successful collision, the section introduces a reaction cross section σ_r(v_r). How does it differ from the hard-sphere σ_QB?",
+    "choices": [
+      {
+        "text": "It depends on the relative speed of the reactants",
+        "correct": true
+      },
+      {
+        "text": "It depends on the concentrations of Q and B",
+        "why": "Concentrations enter the rate through [Q][B], not the cross section. σ_r(v_r) changes with the relative speed of the colliding pair."
+      },
+      {
+        "text": "It is always larger than σ_QB",
+        "why": "Leaving out collisions that lack enough energy can only shrink the effective target. σ_r is at most σ_QB."
+      },
+      {
+        "text": "It depends only on the molecular diameters",
+        "why": "That describes σ_QB, which is fixed by d_Q and d_B. The new σ_r(v_r) also depends on how fast the molecules approach."
+      }
+    ],
+    "explanation": "σ_QB is a fixed area, so every collision counts. σ_r(v_r) is a function of the relative speed, so slow collisions can count for less or nothing, giving k(v_r) = v_r σ_r(v_r)."
+  },
+  {
+    "id": "pc30-collision-theory-k-of-vr",
+    "type": "multiple-choice",
+    "prompt": "With an energy-dependent reaction cross section σ_r(v_r), which expression does the section write for the rate constant of collisions at a single relative speed v_r?",
+    "choices": [
+      {
+        "text": "k(v_r) = v_r σ_r(v_r)",
+        "correct": true
+      },
+      {
+        "text": "k(v_r) = σ_r(v_r)/v_r",
+        "why": "Faster pairs sweep out more volume per second, so k grows with v_r. Speed multiplies the cross section."
+      },
+      {
+        "text": "k(v_r) = N_0σ_QB⟨v_r⟩",
+        "why": "That is the hard-sphere k, averaged over speeds and with no energy dependence. At one speed v_r the section writes k(v_r) = v_r σ_r(v_r)."
+      },
+      {
+        "text": "k(v_r) = (1/2)μv_r^2 σ_r(v_r)",
+        "why": "(1/2)μv_r^2 is the relative kinetic energy, not a speed. k(v_r) is speed times cross section, v_r σ_r(v_r)."
+      }
+    ],
+    "explanation": "As in hard-sphere theory, a rate constant is a speed times a target area. At a fixed relative speed this gives k(v_r) = v_r σ_r(v_r), which is then averaged over all speeds."
+  },
+  {
+    "id": "pc30-collision-theory-average-over-speeds",
+    "type": "multiple-choice",
+    "prompt": "Once k(v_r) = v_r σ_r(v_r) is known for each relative speed, how does the section get the overall rate constant k?",
+    "choices": [
+      {
+        "text": "By averaging k(v_r) over the speed distribution f(v_r)",
+        "correct": true
+      },
+      {
+        "text": "By evaluating k(v_r) at the most probable speed",
+        "why": "A single speed ignores the many faster and slower pairs. The section integrates k(v_r)f(v_r) over all speeds."
+      },
+      {
+        "text": "By adding k(v_r) for every speed, unweighted",
+        "why": "Each speed must be weighted by how many pairs have it. The section uses k = ∫_0^∞ k(v_r)f(v_r)dv_r."
+      },
+      {
+        "text": "By taking the largest value of k(v_r)",
+        "why": "Few pairs move at the highest speeds, so the largest k(v_r) overstates the rate. The speeds are averaged using f(v_r)."
+      }
+    ],
+    "explanation": "The section writes k = ∫_0^∞ k(v_r)f(v_r)dv_r = ∫_0^∞ v_r f(v_r)σ_r(v_r)dv_r. Each speed contributes in proportion to the fraction of pairs that have it."
+  },
+  {
+    "id": "pc30-collision-theory-why-energy-variable",
+    "type": "multiple-choice",
+    "prompt": "Why does the section change the variable of integration from the relative speed v_r to the relative kinetic energy E_r = (1/2)μv_r^2?",
+    "choices": [
+      {
+        "text": "To compare k with the Arrhenius form",
+        "correct": true
+      },
+      {
+        "text": "Because σ_r cannot depend on speed",
+        "why": "σ_r(v_r) is defined as a function of speed in the first place. The change to E_r is made so that k can be set beside the Arrhenius equation."
+      },
+      {
+        "text": "To remove the reduced mass from k",
+        "why": "μ is still in the result, through ⟨v_r⟩ = √((8k_B T)/(πμ)). The point of E_r is to compare k with the Arrhenius form."
+      },
+      {
+        "text": "Because f(v_r) is not normalized",
+        "why": "The speed distribution is normalized either way. The change of variable is made to compare k with the Arrhenius equation."
+      }
+    ],
+    "explanation": "The Arrhenius form is written in terms of an energy, so the section rewrites the integral in E_r, using v_r = ((2E_r)/μ)^(1/2). The threshold E_0 is then a minimum relative kinetic energy."
+  },
+  {
+    "id": "pc30-collision-theory-relative-energy",
+    "type": "numeric",
+    "prompt": "Two molecules with reduced mass μ = 4.0 × 10^−26 kg approach each other at a relative speed v_r = 1500 m/s. Using E_r = (1/2)μv_r^2, what is their relative kinetic energy, in J? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 4.5e-20,
+    "unit": "J",
+    "explanation": "E_r = (1/2)(4.0 × 10^−26 kg)(1500 m/s)^2 = (1/2)(4.0 × 10^−26 kg)(2.25 × 10^6 m^2 s^−2) = 4.5 × 10^−20 J. In the section's model the collision counts only if E_r ≥ E_0."
+  },
+  {
+    "id": "pc30-collision-theory-step-cross-section",
+    "type": "multiple-choice",
+    "prompt": "With a minimum energy E_0, which energy-dependent reaction cross section does the section assume?",
+    "choices": [
+      {
+        "text": "σ_r = 0 if E_r < E_0, and σ_r = σ_QB if E_r ≥ E_0",
+        "correct": true
+      },
+      {
+        "text": "σ_r = σ_QB if E_r < E_0, and σ_r = 0 if E_r ≥ E_0",
+        "why": "This is backward: it would let only the low-energy collisions react. Collisions below E_0 lack the energy to react, so σ_r = 0 there."
+      },
+      {
+        "text": "σ_r = σ_QB for every value of E_r",
+        "why": "That is the plain hard-sphere model, with no energy requirement. The section switches σ_r off below E_0."
+      },
+      {
+        "text": "σ_r = σ_QB(E_r/E_0) if E_r ≥ E_0",
+        "why": "This model doesn't let σ_r grow with energy above the threshold. Every collision with E_r ≥ E_0 counts fully, as σ_QB."
+      }
+    ],
+    "explanation": "Only collisions with relative kinetic energy of at least E_0 count, so σ_r(E_r) is a step: 0 below E_0 and σ_QB at or above it. That is why the integral for k runs from E_0 to ∞."
+  },
+  {
+    "id": "pc30-collision-theory-threshold-result",
+    "type": "multiple-choice",
+    "prompt": "Integrating with σ_r = 0 below E_0 and σ_r = σ_QB above it, which rate constant does the section obtain?",
+    "choices": [
+      {
+        "text": "k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T))",
+        "correct": true
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)",
+        "why": "That is the plain Arrhenius-like form, which this model does not reach. The integral leaves an extra factor of (1 + (E_0)/(k_B T))."
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB e^(+E_0/k_B T)(1 + (E_0)/(k_B T))",
+        "why": "The sign of the exponent is wrong: that would make k grow as E_0 rises. Fewer collisions clear a higher threshold, so the exponent is −E_0/k_B T."
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB(1 + (E_0)/(k_B T))",
+        "why": "Without the exponential, a higher threshold would make k larger. The factor e^(−E_0/k_B T) comes from the fraction of pairs above E_0."
+      }
+    ],
+    "explanation": "Using ∫xe^(ax)dx = a^−2e^(ax)(ax − 1) from E_0 to ∞ gives k = ((8k_B T)/(μπ))^(1/2)σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)), and the square root is ⟨v_r⟩. The exponential limits k to the pairs with enough energy."
+  },
+  {
+    "id": "pc30-collision-theory-energy-factor",
+    "type": "numeric",
+    "prompt": "In the section's threshold model, k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)). For a reaction with E_0 = 6k_B T, by what factor is k smaller than the hard-sphere value ⟨v_r⟩σ_QB? Give the factor e^(−E_0/k_B T)(1 + (E_0)/(k_B T)) as a decimal.",
+    "answer": 0.01735,
+    "explanation": "With E_0/k_B T = 6, the factor is e^(−6)(1 + 6) = 0.002479 × 7 = 0.0174. So only about 1.7% of the hard-sphere value survives the energy requirement."
+  },
+  {
+    "id": "pc30-collision-theory-not-arrhenius",
+    "type": "multiple-choice",
+    "prompt": "The threshold model gives k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)). Why does the section say this is not yet equivalent to the Arrhenius equation?",
+    "choices": [
+      {
+        "text": "It has an extra factor of (1 + (E_0)/(k_B T))",
+        "correct": true
+      },
+      {
+        "text": "It has no exponential factor at all",
+        "why": "It does contain e^(−E_0/k_B T). The mismatch is the extra factor (1 + (E_0)/(k_B T)) multiplying it."
+      },
+      {
+        "text": "Its exponent uses E_r instead of E_0",
+        "why": "E_r is the variable of integration and is gone after integrating; the exponent is −E_0/k_B T. The difference from Arrhenius is the extra (1 + (E_0)/(k_B T))."
+      },
+      {
+        "text": "It doesn't depend on temperature",
+        "why": "T appears in ⟨v_r⟩, in the exponential and in the extra factor. It is the extra factor (1 + (E_0)/(k_B T)) that breaks the Arrhenius form."
+      }
+    ],
+    "explanation": "In the Arrhenius equation k is proportional to e^(−E_0/k_B T) alone. The threshold model also takes the temperature and a minimum energy into account, but multiplies the exponential by (1 + (E_0)/(k_B T))."
+  },
+  {
+    "id": "pc30-collision-theory-zero-threshold",
+    "type": "multiple-choice",
+    "prompt": "In k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)), what does k become if the minimum energy E_0 is set to zero?",
+    "choices": [
+      {
+        "text": "⟨v_r⟩σ_QB, the hard-sphere result",
+        "correct": true
+      },
+      {
+        "text": "Zero, since no energy is needed",
+        "why": "With no threshold every collision counts, which gives the largest k, not zero. e^0(1 + 0) = 1 leaves ⟨v_r⟩σ_QB."
+      },
+      {
+        "text": "2⟨v_r⟩σ_QB",
+        "why": "With E_0 = 0 the extra factor is 1 + 0 = 1, not 2. k reduces to ⟨v_r⟩σ_QB."
+      },
+      {
+        "text": "⟨v_r⟩σ_QB/e",
+        "why": "e^(−0) = 1, not 1/e. With E_0 = 0 both factors are 1 and k = ⟨v_r⟩σ_QB."
+      }
+    ],
+    "explanation": "With E_0 = 0, e^0 = 1 and 1 + 0 = 1, so k = ⟨v_r⟩σ_QB. With no energy requirement every collision reacts, which is the hard-sphere model (times N_0 on a molar scale)."
+  },
+  {
+    "id": "pc30-collision-theory-raise-threshold",
+    "type": "multiple-choice",
+    "prompt": "In the threshold model, k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)). At a fixed temperature, what happens to k as E_0 is raised well above k_B T?",
+    "choices": [
+      {
+        "text": "It falls, because fewer pairs have enough energy",
+        "correct": true
+      },
+      {
+        "text": "It rises, because (1 + (E_0)/(k_B T)) grows",
+        "why": "That factor grows only linearly, while e^(−E_0/k_B T) shrinks exponentially. The product falls as E_0 rises."
+      },
+      {
+        "text": "It stays the same, since ⟨v_r⟩ and σ_QB don't change",
+        "why": "⟨v_r⟩ and σ_QB are fixed, but the energy factor is not. A higher threshold leaves fewer pairs able to react."
+      },
+      {
+        "text": "It falls, because the molecules collide less often",
+        "why": "k does fall, but the collision rate is unchanged: ⟨v_r⟩ and σ_QB don't depend on E_0. Fewer of the collisions have enough energy."
+      }
+    ],
+    "explanation": "The exponential e^(−E_0/k_B T) shrinks much faster than (1 + (E_0)/(k_B T)) grows, so k falls as E_0 rises. Collisions are just as frequent, but a smaller fraction of them is energetic enough to react."
+  }
+]

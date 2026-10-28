@@ -1,0 +1,530 @@
+[
+  {
+    "id": "pc30-impact-parameter-why-modify",
+    "type": "multiple-choice",
+    "prompt": "The threshold model of the previous section assumed that every collision with enough energy leads to reaction. Why does this section call that unrealistic?",
+    "choices": [
+      {
+        "text": "Not all collisions occur with a proper alignment of the particles",
+        "correct": true
+      },
+      {
+        "text": "Collisions with enough energy are too rare to matter",
+        "why": "Rarity is already handled by the factor e^(−E_0/k_B T). The problem is that some energetic collisions are glancing and don't use all their energy."
+      },
+      {
+        "text": "The particles' speeds are not distributed as f(v_r)",
+        "why": "The section keeps the same speed distribution. What it questions is how the particles are aligned when they collide."
+      },
+      {
+        "text": "Particles must collide more than once to react",
+        "why": "The section says nothing about repeated collisions. Its point is that a glancing blow doesn't put all of E_r into the reaction."
+      }
+    ],
+    "explanation": "In a head-on collision all the kinetic energy can go into overcoming repulsion and breaking bonds, but in a glancing blow only part of it can. So σ_r(E_r) from the previous section is inaccurate and must allow for these less efficient collisions."
+  },
+  {
+    "id": "pc30-impact-parameter-glancing-blow",
+    "type": "multiple-choice",
+    "prompt": "Two particles have a relative kinetic energy E_r and collide with a glancing blow rather than head-on. According to the section, how much of E_r goes into the reaction process?",
+    "choices": [
+      {
+        "text": "Only part of it",
+        "correct": true
+      },
+      {
+        "text": "All of it, as in a head-on collision",
+        "why": "All of E_r is available only in a head-on collision. In a glancing blow only part of the kinetic energy is contributed to the reaction."
+      },
+      {
+        "text": "None of it, since glancing blows never react",
+        "why": "A glancing blow still contributes some energy, E_loc > 0, as long as the particles actually touch. It can react if that part exceeds E_0."
+      },
+      {
+        "text": "More than E_r, since the particles also spin",
+        "why": "The energy available to the collision can't exceed E_r in this model. A glancing blow uses less than all of it."
+      }
+    ],
+    "explanation": "Figure 30.2.1 contrasts a head-on collision, where all the kinetic energy can be used to overcome electron–electron repulsion and break bonds, with a glancing blow, where only part of it is. The line-of-centers model puts this into σ_r(E_r)."
+  },
+  {
+    "id": "pc30-impact-parameter-complex-molecules",
+    "type": "multiple-choice",
+    "prompt": "Besides head-on versus glancing collisions, what does the section note is often needed for an effective collision between larger, more complex molecules?",
+    "choices": [
+      {
+        "text": "A specific molecular orientation",
+        "correct": true
+      },
+      {
+        "text": "A relative speed below ⟨v_r⟩",
+        "why": "Slower collisions bring less energy, not more. The section's extra requirement for complex molecules is a specific orientation."
+      },
+      {
+        "text": "An impact parameter larger than the sum of the radii",
+        "why": "With b that large the molecules miss and E_loc = 0. The extra requirement is that they meet in a specific orientation."
+      },
+      {
+        "text": "A third molecule to carry away energy",
+        "why": "The section treats bimolecular collisions only. For larger, more complex molecules it adds that a specific orientation is often required."
+      }
+    ],
+    "explanation": "The caption of Figure 30.2.1 notes that with larger, more complex molecules there is often a specific molecular orientation required for an effective collision. The line-of-centers model, which treats the particles as spheres, does not include this."
+  },
+  {
+    "id": "pc30-impact-parameter-relative-velocity",
+    "type": "multiple-choice",
+    "prompt": "In the line-of-centers model, how does the section define the relative velocity v_r of particles Q and B, with velocities v⃗_Q and v⃗_B?",
+    "choices": [
+      {
+        "text": "v_r = v⃗_Q − v⃗_B",
+        "correct": true
+      },
+      {
+        "text": "v_r = v⃗_Q + v⃗_B",
+        "why": "The sum describes how the pair moves together, not how fast they approach each other. The relative velocity is the difference, v⃗_Q − v⃗_B."
+      },
+      {
+        "text": "v_r = (v⃗_Q + v⃗_B)/2",
+        "why": "That is an average velocity. The rate of approach of Q and B is the difference v⃗_Q − v⃗_B."
+      },
+      {
+        "text": "v_r = |v⃗_Q| × |v⃗_B|",
+        "why": "A product of speeds doesn't have units of velocity. The relative velocity is the difference v⃗_Q − v⃗_B."
+      }
+    ],
+    "explanation": "The relative velocity of approach is v_r = v⃗_Q − v⃗_B, and the relative kinetic energy is E_r = (1/2)μv_r^2. Only part of E_r is used in a collision that is not head-on."
+  },
+  {
+    "id": "pc30-impact-parameter-relative-energy-calc",
+    "type": "numeric",
+    "prompt": "Along one line, particle Q moves at +600 m/s and particle B at −400 m/s, so they approach head-on. Their reduced mass is μ = 2.0 × 10^−26 kg. Using v_r = v⃗_Q − v⃗_B and E_r = (1/2)μv_r^2, what is E_r, in J? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 1e-20,
+    "unit": "J",
+    "explanation": "v_r = 600 m/s − (−400 m/s) = 1000 m/s, so E_r = (1/2)(2.0 × 10^−26 kg)(1000 m/s)^2 = 1.0 × 10^−20 J. Since the collision is head-on, b = 0 and all of this energy is available: E_loc = E_r."
+  },
+  {
+    "id": "pc30-impact-parameter-definition",
+    "type": "multiple-choice",
+    "prompt": "What is the impact parameter b in the line-of-centers model?",
+    "choices": [
+      {
+        "text": "The perpendicular distance between the paths of the two centers before the collision",
+        "correct": true
+      },
+      {
+        "text": "The distance between the two centers at the moment of contact",
+        "why": "At contact the centers are always the sum of the radii apart. b measures how far apart the extrapolated paths of the centers lie, so it changes from one collision to the next."
+      },
+      {
+        "text": "The distance the particles travel between collisions",
+        "why": "That is the mean free path, a different quantity. b is the perpendicular offset between the paths of the two centers."
+      },
+      {
+        "text": "The angle between the two velocity vectors",
+        "why": "b is a distance, not an angle. It is the perpendicular distance between the extrapolated paths traveled by the centers."
+      }
+    ],
+    "explanation": "The impact parameter b is the perpendicular distance between the extrapolated paths of the centers of Q and B before they collide. It sets how much of E_r can be applied to the collision."
+  },
+  {
+    "id": "pc30-impact-parameter-eloc-depends",
+    "type": "multiple-choice",
+    "prompt": "Two collisions have the same relative kinetic energy E_r. In the line-of-centers model, what decides how much of E_r each one applies to the collision, E_loc?",
+    "choices": [
+      {
+        "text": "The impact parameter b",
+        "correct": true
+      },
+      {
+        "text": "The minimum energy E_0",
+        "why": "E_0 is the threshold that E_loc is compared with; it doesn't set E_loc. The fraction of E_r applied depends on b."
+      },
+      {
+        "text": "The temperature of the gas",
+        "why": "Temperature sets how E_r is distributed over many collisions. For two collisions with the same E_r, E_loc is set by b."
+      },
+      {
+        "text": "Nothing; E_loc always equals E_r",
+        "why": "E_loc = E_r only for a head-on collision, b = 0. For any other b, E_loc < E_r."
+      }
+    ],
+    "explanation": "From Figure 30.2.2, the fraction of E_r that can be applied to the collision depends on b, the impact parameter. It is all of E_r at b = 0, less at larger b, and none once b exceeds the sum of the radii."
+  },
+  {
+    "id": "pc30-impact-parameter-zero",
+    "type": "multiple-choice",
+    "prompt": "In the line-of-centers model, two particles collide with impact parameter b = 0. How does E_loc, the part of E_r applied to the collision, compare with E_r?",
+    "choices": [
+      {
+        "text": "E_loc = E_r",
+        "correct": true
+      },
+      {
+        "text": "E_loc = 0",
+        "why": "E_loc = 0 when b exceeds the sum of the radii and the particles miss. With b = 0 they meet head-on and all of E_r is applied."
+      },
+      {
+        "text": "E_loc = E_r/2",
+        "why": "No fixed half is lost. With b = 0 the collision is head-on, so all of the relative kinetic energy is applied."
+      },
+      {
+        "text": "E_loc > E_r",
+        "why": "E_loc is the part of E_r applied to the collision, so it can never exceed E_r. It equals E_r when b = 0."
+      }
+    ],
+    "explanation": "b = 0 means the centers travel along the same line, a head-on collision. All of the relative kinetic energy then lies along the line of centers, so E_loc = E_r."
+  },
+  {
+    "id": "pc30-impact-parameter-intermediate",
+    "type": "multiple-choice",
+    "prompt": "Particles Q and B collide with an impact parameter b that is greater than 0 but less than the sum of their radii. What does the section say about E_loc?",
+    "choices": [
+      {
+        "text": "0 < E_loc < E_r",
+        "correct": true
+      },
+      {
+        "text": "E_loc = E_r",
+        "why": "All of E_r is applied only when b = 0. For any other value of b, E_loc < E_r."
+      },
+      {
+        "text": "E_loc = 0",
+        "why": "E_loc = 0 only when b exceeds the sum of the radii and the particles miss. Here they do collide, with a glancing blow."
+      },
+      {
+        "text": "E_loc = E_0",
+        "why": "E_0 is the minimum energy the reaction needs, not the energy a collision supplies. A glancing collision supplies some E_loc less than E_r."
+      }
+    ],
+    "explanation": "For any b other than 0, E_loc < E_r. As long as b is less than the sum of the radii the particles still collide, so some energy is applied and E_loc > 0."
+  },
+  {
+    "id": "pc30-impact-parameter-miss",
+    "type": "multiple-choice",
+    "prompt": "In the line-of-centers model, what happens when the impact parameter b is greater than the sum of the radii of Q and B?",
+    "choices": [
+      {
+        "text": "The particles don't collide, and E_loc = 0",
+        "correct": true
+      },
+      {
+        "text": "They collide head-on, and E_loc = E_r",
+        "why": "A head-on collision has b = 0. When b exceeds the sum of the radii the paths are too far apart for the particles to touch."
+      },
+      {
+        "text": "They collide with a glancing blow, and E_loc < E_r",
+        "why": "Glancing blows have b between 0 and the sum of the radii. Beyond that the particles miss each other entirely."
+      },
+      {
+        "text": "They react only if E_r ≥ E_0",
+        "why": "No energy is applied if the particles miss, however large E_r is. With E_loc = 0 they cannot react."
+      }
+    ],
+    "explanation": "If b is larger than the sum of the radii, the centers' paths are too far apart for the particles to touch, so no energy is applied: E_loc = 0. This is why the cross section σ_QB has the sum of the radii as its radius."
+  },
+  {
+    "id": "pc30-impact-parameter-effective-condition",
+    "type": "multiple-choice",
+    "prompt": "In the line-of-centers model, which condition makes a collision effective?",
+    "choices": [
+      {
+        "text": "E_loc > E_0",
+        "correct": true
+      },
+      {
+        "text": "E_r > E_0",
+        "why": "That was the condition of the previous section's threshold model. Here only the part of E_r along the line of centers, E_loc, counts."
+      },
+      {
+        "text": "b > E_0",
+        "why": "b is a distance and E_0 an energy, so they can't be compared. The condition is on the energy applied, E_loc > E_0."
+      },
+      {
+        "text": "E_loc = E_r",
+        "why": "That holds only for head-on collisions. A glancing collision can still be effective if its E_loc exceeds E_0."
+      }
+    ],
+    "explanation": "The line-of-centers model counts a collision as effective when E_loc > E_0, where E_loc allows for the fact that not every collision is head-on. Comparing E_r itself with E_0 would count glancing blows as if they were head-on."
+  },
+  {
+    "id": "pc30-impact-parameter-loc-cross-section",
+    "type": "multiple-choice",
+    "prompt": "Which reaction cross section does the line-of-centers model give for E_r ≥ E_0? (Below E_0 it is 0.)",
+    "choices": [
+      {
+        "text": "σ_r(E_r) = σ_QB(1 − (E_0)/(E_r))",
+        "correct": true
+      },
+      {
+        "text": "σ_r(E_r) = σ_QB",
+        "why": "That is the hard-sphere step of the previous section, which counts every energetic collision fully. The line-of-centers result is smaller."
+      },
+      {
+        "text": "σ_r(E_r) = σ_QB(1 − (E_r)/(E_0))",
+        "why": "The ratio is upside down: with E_r ≥ E_0 this would be zero or negative. The factor is (1 − (E_0)/(E_r))."
+      },
+      {
+        "text": "σ_r(E_r) = σ_QB(E_0)/(E_r)",
+        "why": "This would shrink as E_r grows, so faster collisions would react less. σ_r = σ_QB(1 − (E_0)/(E_r)) grows with E_r."
+      }
+    ],
+    "explanation": "The section quotes the result of the line-of-centers calculation: σ_r(E_r) = 0 for E_r < E_0 and σ_QB(1 − (E_0)/(E_r)) for E_r ≥ E_0. The factor (1 − (E_0)/(E_r)) allows for collisions that are not head-on."
+  },
+  {
+    "id": "pc30-impact-parameter-at-threshold",
+    "type": "multiple-choice",
+    "prompt": "Compare the two models at exactly E_r = E_0. What reaction cross section does each give?",
+    "choices": [
+      {
+        "text": "Hard-sphere: σ_QB; line of centers: 0",
+        "correct": true
+      },
+      {
+        "text": "Both give σ_QB",
+        "why": "The line-of-centers factor (1 − (E_0)/(E_r)) is 1 − 1 = 0 at E_r = E_0. Only the hard-sphere step is already σ_QB there."
+      },
+      {
+        "text": "Both give 0",
+        "why": "The hard-sphere step gives σ_QB for E_r ≥ E_0, including E_r = E_0. Only the line-of-centers cross section is 0 there."
+      },
+      {
+        "text": "Hard-sphere: 0; line of centers: σ_QB",
+        "why": "This swaps the models. At E_r = E_0 the step jumps to σ_QB, while σ_QB(1 − (E_0)/(E_r)) is still 0."
+      }
+    ],
+    "explanation": "The hard-sphere model gives σ_r = σ_QB once E_r ≥ E_0. The line-of-centers cross section σ_QB(1 − (E_0)/(E_r)) is zero at E_r = E_0, since a collision with just E_0 would have to be exactly head-on to use all of it."
+  },
+  {
+    "id": "pc30-impact-parameter-high-energy",
+    "type": "multiple-choice",
+    "prompt": "In the line-of-centers model, σ_r(E_r) = σ_QB(1 − (E_0)/(E_r)) for E_r ≥ E_0. What does σ_r approach when E_r is very much larger than E_0?",
+    "choices": [
+      {
+        "text": "σ_QB",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "σ_r is 0 at the threshold, not at high energy. As E_r grows, (E_0)/(E_r) shrinks and σ_r rises toward σ_QB."
+      },
+      {
+        "text": "Infinity",
+        "why": "σ_r cannot exceed σ_QB, since (1 − (E_0)/(E_r)) is less than 1. It levels off at σ_QB."
+      },
+      {
+        "text": "σ_QB/2",
+        "why": "σ_QB/2 is reached at E_r = 2E_0, on the way up. At much higher energy, σ_r gets close to σ_QB."
+      }
+    ],
+    "explanation": "As E_r grows, (E_0)/(E_r) goes to 0, so σ_r approaches σ_QB, the hard-sphere value. At very high energy even glancing collisions supply E_loc > E_0, so almost every collision counts."
+  },
+  {
+    "id": "pc30-impact-parameter-compare-models",
+    "type": "multiple-choice",
+    "prompt": "For any E_r above E_0, how does the line-of-centers cross section σ_QB(1 − (E_0)/(E_r)) compare with the hard-sphere value σ_QB?",
+    "choices": [
+      {
+        "text": "It is smaller",
+        "correct": true
+      },
+      {
+        "text": "It is larger",
+        "why": "(1 − (E_0)/(E_r)) is less than 1 for any finite E_r, so σ_r is less than σ_QB. Glancing collisions are no longer all counted."
+      },
+      {
+        "text": "It is the same",
+        "why": "They agree only in the limit of very large E_r. At any finite energy above E_0, the factor (1 − (E_0)/(E_r)) is less than 1."
+      },
+      {
+        "text": "It is larger near E_0, smaller far above it",
+        "why": "Near E_0 the line-of-centers value is close to 0, far below σ_QB. It is smaller at every energy and approaches σ_QB only at high E_r."
+      }
+    ],
+    "explanation": "Since (E_0)/(E_r) > 0 for any finite E_r, the factor (1 − (E_0)/(E_r)) is less than 1. The line-of-centers model drops the glancing collisions whose E_loc falls short of E_0, which the hard-sphere step counted."
+  },
+  {
+    "id": "pc30-impact-parameter-sigma-calc",
+    "type": "numeric",
+    "prompt": "In the line-of-centers model, σ_r(E_r) = σ_QB(1 − (E_0)/(E_r)) for E_r ≥ E_0. What is σ_r, in m^2, when σ_QB = 4.0 × 10^−19 m^2, E_0 = 50 kJ mol^−1 and E_r = 80 kJ mol^−1? (Type it in scientific notation, like 2.5e-19.)",
+    "answer": 1.5e-19,
+    "unit": "m^2",
+    "explanation": "(E_0)/(E_r) = 50/80 = 0.625, so σ_r = 4.0 × 10^−19 m^2 × (1 − 0.625) = 4.0 × 10^−19 m^2 × 0.375 = 1.5 × 10^−19 m^2. The hard-sphere step would give the full 4.0 × 10^−19 m^2."
+  },
+  {
+    "id": "pc30-impact-parameter-energy-for-fraction",
+    "type": "numeric",
+    "prompt": "A reaction has E_0 = 40 kJ mol^−1. Using the line-of-centers cross section σ_r = σ_QB(1 − (E_0)/(E_r)), at what relative energy E_r, in kJ mol^−1, does σ_r reach 0.75σ_QB?",
+    "answer": 160,
+    "unit": "kJ mol^−1",
+    "tolerance": 0,
+    "explanation": "Setting 1 − (E_0)/(E_r) = 0.75 gives (E_0)/(E_r) = 0.25, so E_r = 4E_0 = 4 × 40 kJ mol^−1 = 160 kJ mol^−1. σ_r approaches σ_QB only slowly as E_r rises."
+  },
+  {
+    "id": "pc30-impact-parameter-integrand",
+    "type": "multiple-choice",
+    "prompt": "Substituting σ_r = σ_QB(1 − (E_0)/(E_r)) into the integral for k gives an integrand containing E_r(1 − (E_0)/(E_r)). What does this product simplify to?",
+    "choices": [
+      {
+        "text": "E_r − E_0",
+        "correct": true
+      },
+      {
+        "text": "E_r − 1",
+        "why": "E_r × (E_0)/(E_r) cancels E_r and leaves E_0, not 1. The product is E_r − E_0."
+      },
+      {
+        "text": "1 − E_0",
+        "why": "Multiplying the 1 by E_r gives E_r, not 1. The product is E_r − E_0."
+      },
+      {
+        "text": "E_r − (E_0)/(E_r)",
+        "why": "E_r multiplies both terms in the bracket: E_r × (E_0)/(E_r) = E_0. So the product is E_r − E_0."
+      }
+    ],
+    "explanation": "E_r(1 − (E_0)/(E_r)) = E_r − E_0. Integrating (E_r − E_0)e^(−E_r/k_B T) from E_0 to ∞ is what removes the extra (1 + (E_0)/(k_B T)) factor of the hard-sphere model."
+  },
+  {
+    "id": "pc30-impact-parameter-loc-k",
+    "type": "multiple-choice",
+    "prompt": "Which rate constant does the line-of-centers model give?",
+    "choices": [
+      {
+        "text": "k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)",
+        "correct": true
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T))",
+        "why": "That is the hard-sphere threshold result of the previous section. The line-of-centers cross section removes the factor (1 + (E_0)/(k_B T))."
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB(1 − (E_0)/(k_B T))",
+        "why": "This puts the cross-section factor straight into k. Integrating over all energies turns it into the exponential e^(−E_0/k_B T)."
+      },
+      {
+        "text": "k = ⟨v_r⟩σ_QB",
+        "why": "That is the plain hard-sphere k with no energy requirement. The line-of-centers k keeps the factor e^(−E_0/k_B T)."
+      }
+    ],
+    "explanation": "Integrating with σ_r = σ_QB(1 − (E_0)/(E_r)) gives k = ((8k_B T)/(μπ))^(1/2)σ_QB e^(−E_0/k_B T) = ⟨v_r⟩σ_QB e^(−E_0/k_B T). The extra factor of the hard-sphere threshold model is gone."
+  },
+  {
+    "id": "pc30-impact-parameter-exponent-e0",
+    "type": "multiple-choice",
+    "prompt": "The integral for the line-of-centers k contains e^(−E_r/k_B T) and runs over E_r from E_0 to ∞. Why does the result contain e^(−E_0/k_B T) rather than e^(−E_r/k_B T)?",
+    "choices": [
+      {
+        "text": "E_r is the variable of integration, so only the lower limit E_0 is left",
+        "correct": true
+      },
+      {
+        "text": "E_r and E_0 are equal for an effective collision",
+        "why": "Effective collisions have E_r at or above E_0, not equal to it. E_0 appears because it is the lower limit of the integral over E_r."
+      },
+      {
+        "text": "E_0 is the average value of E_r",
+        "why": "E_0 is the minimum energy, not the average. After integrating over E_r, only the limit E_0 can remain in the answer."
+      },
+      {
+        "text": "The exponent is changed to fit the Arrhenius equation",
+        "why": "Nothing is changed by hand. Integrating over E_r removes it, and evaluating at the lower limit leaves e^(−E_0/k_B T)."
+      }
+    ],
+    "explanation": "k is an average over all energies, so E_r cannot appear in the answer. Evaluating the integral of (E_r − E_0)e^(−E_r/k_B T) between E_0 and ∞ leaves (k_B T)^2 e^(−E_0/k_B T), as in the hard-sphere threshold model."
+  },
+  {
+    "id": "pc30-impact-parameter-arrhenius-form",
+    "type": "multiple-choice",
+    "prompt": "What does the section say the line-of-centers result, k = ⟨v_r⟩σ_QB e^(−E_0/k_B T), achieves that the hard-sphere threshold model did not?",
+    "choices": [
+      {
+        "text": "It expresses k in the same terms as the Arrhenius equation",
+        "correct": true
+      },
+      {
+        "text": "It matches experimental values of k",
+        "why": "The section says experimental k values still differ from the line-of-centers prediction. What it gains is the Arrhenius form."
+      },
+      {
+        "text": "It makes k independent of temperature",
+        "why": "k still depends on T, through ⟨v_r⟩ and e^(−E_0/k_B T). The gain is that it now has the Arrhenius form."
+      },
+      {
+        "text": "It removes the need for a minimum energy E_0",
+        "why": "E_0 is still there, in e^(−E_0/k_B T). The gain is losing the extra factor (1 + (E_0)/(k_B T))."
+      }
+    ],
+    "explanation": "In the Arrhenius equation k is proportional to e^(−E_0/k_B T). The line-of-centers k is ⟨v_r⟩σ_QB times exactly that exponential, while the hard-sphere threshold model had an extra (1 + (E_0)/(k_B T))."
+  },
+  {
+    "id": "pc30-impact-parameter-model-ratio",
+    "type": "multiple-choice",
+    "prompt": "For the same E_0, σ_QB and T, the hard-sphere threshold model gives k = ⟨v_r⟩σ_QB e^(−E_0/k_B T)(1 + (E_0)/(k_B T)) and the line-of-centers model gives k = ⟨v_r⟩σ_QB e^(−E_0/k_B T). Which gives the larger k?",
+    "choices": [
+      {
+        "text": "Hard-sphere, by a factor of 1 + (E_0)/(k_B T)",
+        "correct": true
+      },
+      {
+        "text": "Line of centers, by a factor of 1 + (E_0)/(k_B T)",
+        "why": "The line-of-centers k lacks the factor 1 + (E_0)/(k_B T), which is greater than 1. It counts fewer collisions, so its k is smaller."
+      },
+      {
+        "text": "They are equal",
+        "why": "They differ by the factor 1 + (E_0)/(k_B T), which equals 1 only if E_0 = 0."
+      },
+      {
+        "text": "Hard-sphere, by a factor of e^(E_0/k_B T)",
+        "why": "Both expressions share e^(−E_0/k_B T), so it cancels in the ratio. The ratio is 1 + (E_0)/(k_B T)."
+      }
+    ],
+    "explanation": "Dividing the two expressions leaves 1 + (E_0)/(k_B T), which is greater than 1 for any E_0 > 0. The hard-sphere step counts glancing collisions fully, so it predicts the larger k."
+  },
+  {
+    "id": "pc30-impact-parameter-ratio-calc",
+    "type": "numeric",
+    "prompt": "The hard-sphere threshold k is larger than the line-of-centers k by the factor 1 + (E_0)/(k_B T). What is this factor for E_0 = 2.0 × 10^−20 J at 400 K, with k_B = 1.381 × 10^−23 J K^−1?",
+    "answer": 4.62,
+    "explanation": "k_B T = 1.381 × 10^−23 J K^−1 × 400 K = 5.52 × 10^−21 J, so (E_0)/(k_B T) = (2.0 × 10^−20 J)/(5.52 × 10^−21 J) = 3.62 and the factor is 4.62. The line-of-centers model predicts a k about 4.6 times smaller."
+  },
+  {
+    "id": "pc30-impact-parameter-loc-k-calc",
+    "type": "numeric",
+    "prompt": "Using the line-of-centers result k = ⟨v_r⟩σ_QB e^(−E_0/k_B T), what is k, in m^3 s^−1, for ⟨v_r⟩ = 700 m/s, σ_QB = 3.5 × 10^−19 m^2 and E_0 = 8k_B T? (Type it in scientific notation, like 2.5e-20.)",
+    "answer": 8.22e-20,
+    "unit": "m^3 s^−1",
+    "explanation": "⟨v_r⟩σ_QB = 700 m/s × 3.5 × 10^−19 m^2 = 2.45 × 10^−16 m^3 s^−1, and e^(−8) = 3.35 × 10^−4, so k = 8.22 × 10^−20 m^3 s^−1. Multiplying by N_0 would put it on a molar scale."
+  },
+  {
+    "id": "pc30-impact-parameter-temperature-ratio",
+    "type": "numeric",
+    "prompt": "For a reaction with E_0/k_B = 2400 K, the line-of-centers model gives k = ⟨v_r⟩σ_QB e^(−E_0/k_B T), where ⟨v_r⟩ = √((8k_B T)/(πμ)). By what factor does k increase when T rises from 300 K to 600 K?",
+    "answer": 77.2,
+    "tolerance": 0.02,
+    "explanation": "⟨v_r⟩ grows by √(600/300) = 1.414, and the exponential grows by e^(−2400/600)/e^(−2400/300) = e^(−4 + 8) = e^4 = 54.6. Together k grows by 1.414 × 54.6 = 77.2, almost all of it from the exponential."
+  },
+  {
+    "id": "pc30-impact-parameter-still-off",
+    "type": "multiple-choice",
+    "prompt": "Experimental rate constants still differ from those predicted by the line-of-centers model. Where does the section place the error?",
+    "choices": [
+      {
+        "text": "σ_r(E_r) is not accurately described by σ_QB(1 − (E_0)/(E_r))",
+        "correct": true
+      },
+      {
+        "text": "The exponential should contain E_r instead of E_0",
+        "why": "E_r is integrated over and cannot appear in k. The section blames the form of σ_r(E_r), which affects the Arrhenius factor A."
+      },
+      {
+        "text": "The mean relative speed ⟨v_r⟩ is miscalculated",
+        "why": "The section does not question ⟨v_r⟩. It says the error comes from σ_r(E_r) not being accurately σ_QB(1 − (E_0)/(E_r))."
+      },
+      {
+        "text": "The hard-sphere factor (1 + (E_0)/(k_B T)) was wrongly dropped",
+        "why": "Dropping that factor is what gave the Arrhenius form; the section doesn't call it a mistake. The error lies in the assumed σ_r(E_r)."
+      }
+    ],
+    "explanation": "The section says the line-of-centers model still describes σ_r(E_r) inaccurately, so more work is needed on the model for A, the Arrhenius factor. The next sections take up orientation and internal energy."
+  }
+]

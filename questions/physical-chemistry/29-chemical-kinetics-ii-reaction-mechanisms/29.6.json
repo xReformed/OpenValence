@@ -1,0 +1,610 @@
+[
+  {
+    "id": "pc29-lindemann-purpose",
+    "type": "multiple-choice",
+    "prompt": "What does a Lindemann mechanism do with a reaction such as the decomposition A + M → P?",
+    "choices": [
+      {
+        "text": "Splits it into elementary steps, each with its own rate constant",
+        "correct": true
+      },
+      {
+        "text": "Treats it as one unimolecular step with a single rate constant",
+        "why": "That is the simple picture the mechanism replaces. It breaks the reaction into an activation step and a reaction step, each with a rate constant."
+      },
+      {
+        "text": "Assumes A and P stay at equilibrium for the whole reaction",
+        "why": "No overall equilibrium is assumed. The mechanism writes elementary steps with rate constants and derives the rate law from them."
+      },
+      {
+        "text": "Measures one overall rate constant and leaves out the steps",
+        "why": "The point is the opposite: the rate law is derived from the elementary steps and their rate constants, not just measured."
+      }
+    ],
+    "explanation": "The Lindemann mechanism breaks the reaction into two or more elementary steps and gives each a rate constant. The rate law for the whole reaction is then derived from those steps."
+  },
+  {
+    "id": "pc29-lindemann-apparent-order",
+    "type": "multiple-choice",
+    "prompt": "A gas-phase decomposition has a net equation with a single reactant molecule, so it looks first order. What does the section say a Lindemann mechanism may show?",
+    "choices": [
+      {
+        "text": "That it is actually second order (bimolecular)",
+        "correct": true
+      },
+      {
+        "text": "That it is actually zero order in the reactant",
+        "why": "The mechanism starts with a collision, A + M, so the order it can reveal is two, not zero."
+      },
+      {
+        "text": "That it must be first order, as the equation says",
+        "why": "The section's point is that the net equation can mislead: the activating collision can make the reaction second order."
+      },
+      {
+        "text": "That its order equals the number of products",
+        "why": "Order is not read off the products. In a Lindemann mechanism it comes from the activating collision A + M, which can make it second order."
+      }
+    ],
+    "explanation": "The net formula of a decomposition may suggest a unimolecular, first-order reaction. Because A must first be activated by a collision with M, a Lindemann mechanism may show that the reaction is really second order."
+  },
+  {
+    "id": "pc29-lindemann-activated-intermediate",
+    "type": "multiple-choice",
+    "prompt": "What is A^* in the Lindemann mechanism?",
+    "choices": [
+      {
+        "text": "An activated intermediate of A, energized by a collision",
+        "correct": true
+      },
+      {
+        "text": "The final product that the reaction forms from A",
+        "why": "The product is P. A^* is an intermediate that forms P only in a second step, A^* → P."
+      },
+      {
+        "text": "An excited form of A made by absorbing light",
+        "why": "In this mechanism A gains its energy by collision with M, not from light."
+      },
+      {
+        "text": "A catalyst that is formed and then given back",
+        "why": "M, not A^*, comes out of step 1 unchanged. A^* is an energized A that is either deactivated or goes on to product."
+      }
+    ],
+    "explanation": "A^* is an activated reaction intermediate. It is produced from A only after enough energy is supplied by a collision, and it is then either deactivated or reacts to give product."
+  },
+  {
+    "id": "pc29-lindemann-fates",
+    "type": "multiple-choice",
+    "prompt": "Once an activated molecule A^* has formed, what can happen to it, according to the section?",
+    "choices": [
+      {
+        "text": "It is deactivated back to A, or it reacts to form product",
+        "correct": true
+      },
+      {
+        "text": "It always reacts to form product, since it is energized",
+        "why": "Not every A^* reacts. Another collision during the delay before reaction can deactivate it back to A."
+      },
+      {
+        "text": "It always returns to A; the product forms from A directly",
+        "why": "In the mechanism the product forms only from A^*, in step 2. A^* can also be deactivated, but it is the route to P."
+      },
+      {
+        "text": "It collides with A and turns it into a second A^*",
+        "why": "Activation happens when A collides with M. A^* itself either loses its energy to M or goes on to form P."
+      }
+    ],
+    "explanation": "The section gives A^* two fates: deactivation back to A, A^* + M → A + M, with rate constant k_(−1), or reaction to product, A^* → P, with rate constant k_2. Which one wins decides the observed kinetics."
+  },
+  {
+    "id": "pc29-lindemann-step-molecularity",
+    "type": "multiple-choice",
+    "prompt": "In the scheme A + M ⇌ A^* + M followed by A^* → P, what is the molecularity of each step?",
+    "choices": [
+      {
+        "text": "Activation is bimolecular; the reaction of A^* is unimolecular",
+        "correct": true
+      },
+      {
+        "text": "Activation is unimolecular; the reaction of A^* is bimolecular",
+        "why": "This is swapped. Activation needs two species, A and M, while A^* → P involves A^* alone."
+      },
+      {
+        "text": "Both steps are unimolecular, like the net reaction",
+        "why": "Step 1 is a collision between A and M, so it is bimolecular. Only A^* → P is unimolecular."
+      },
+      {
+        "text": "Both steps are bimolecular, since M takes part in each",
+        "why": "M takes part in step 1 only. In step 2 the energized A^* falls apart or rearranges by itself."
+      }
+    ],
+    "explanation": "The section labels step 1 as the bimolecular activation of A, A + M ⇌ A^* + M, and step 2 as the unimolecular reaction of A^*, A^* → P."
+  },
+  {
+    "id": "pc29-lindemann-role-of-m",
+    "type": "multiple-choice",
+    "prompt": "In the activation step A + M ⇌ A^* + M, what can M be?",
+    "choices": [
+      {
+        "text": "A reactant, product or inert molecule present in the reactor",
+        "correct": true
+      },
+      {
+        "text": "Only a second molecule of A, as in the N_2O_5 example",
+        "why": "The N_2O_5 example uses M = N_2O_5, but the section says M can be any molecule present, including products and inert gases."
+      },
+      {
+        "text": "Only an inert gas added on purpose to supply energy",
+        "why": "An inert gas can serve, but so can a reactant or product molecule. Any collision partner can transfer energy."
+      },
+      {
+        "text": "A catalyst surface on which A is adsorbed",
+        "why": "The mechanism is for gas-phase collisions. M is a collision partner molecule, not a surface."
+      }
+    ],
+    "explanation": "M is whatever molecule A collides with: a reactant molecule, a product molecule or another inert molecule in the reactor. It supplies or removes energy and leaves step 1 unchanged."
+  },
+  {
+    "id": "pc29-lindemann-energy-source",
+    "type": "multiple-choice",
+    "prompt": "According to the first of the section's three principles of the Lindemann mechanism, how does A gain the energy it needs to react?",
+    "choices": [
+      {
+        "text": "By energy transfer in a collision with M",
+        "correct": true
+      },
+      {
+        "text": "By absorbing a photon of the right energy",
+        "why": "Light plays no part here. The first principle is that energy is transferred by collision, the forward reaction of step 1."
+      },
+      {
+        "text": "From heat released as product is formed",
+        "why": "The energy comes before any product forms. A is energized by a collision with M."
+      },
+      {
+        "text": "By rearranging its own bonds with no outside help",
+        "why": "An isolated A can't gain energy by itself. It is activated by colliding with M."
+      }
+    ],
+    "explanation": "The three principles are: energy is transferred by collision (forward step 1), there is a time delay Δt between collision and reaction (step 2), and molecules may be deactivated by another collision during Δt (reverse step 1)."
+  },
+  {
+    "id": "pc29-lindemann-time-delay",
+    "type": "multiple-choice",
+    "prompt": "Which of the Lindemann principles is what gives an activated molecule the chance to be deactivated before it reacts?",
+    "choices": [
+      {
+        "text": "There is a time delay Δt between collision and reaction",
+        "correct": true
+      },
+      {
+        "text": "Energy is transferred to A by a collision",
+        "why": "That explains how A^* forms. Deactivation is only possible because A^* does not react at once: there is a delay Δt."
+      },
+      {
+        "text": "The product forms in an irreversible step",
+        "why": "Step 2 is written one way, but that is not what allows deactivation. A^* waits a time Δt, during which another collision can deactivate it."
+      },
+      {
+        "text": "M is not used up in the activation step",
+        "why": "M is unchanged by step 1, but that alone doesn't open a window for deactivation. The delay Δt does."
+      }
+    ],
+    "explanation": "If A^* reacted the instant it formed, nothing could intervene. Because there is a time delay Δt between collision and reaction, another collision during Δt can take the energy away again: the third principle."
+  },
+  {
+    "id": "pc29-lindemann-deactivation-step",
+    "type": "multiple-choice",
+    "prompt": "Which step of the mechanism corresponds to an activated molecule being deactivated by another collision?",
+    "choices": [
+      {
+        "text": "The reverse of step 1, A^* + M → A + M",
+        "correct": true
+      },
+      {
+        "text": "The forward step 1, A + M → A^* + M",
+        "why": "The forward step activates A. Deactivation is the same collision run backward, A^* + M → A + M, with rate constant k_(−1)."
+      },
+      {
+        "text": "Step 2, A^* → P",
+        "why": "Step 2 removes A^* by turning it into product, not by deactivating it. Deactivation is the reverse of step 1."
+      },
+      {
+        "text": "The reverse of step 2, P → A^*",
+        "why": "The mechanism has no reverse of step 2. Deactivation is A^* + M → A + M, the reverse of step 1."
+      }
+    ],
+    "explanation": "Deactivation is the reverse of the activation step, A^* + M → A + M, with rate constant k_(−1). It competes with step 2, A^* → P, for the activated molecules."
+  },
+  {
+    "id": "pc29-lindemann-rate-terms",
+    "type": "multiple-choice",
+    "prompt": "In d[A^*]/dt = k_1[A][M] − k_(−1)[A^*][M] − k_2[A^*], what does the term k_(−1)[A^*][M] stand for?",
+    "choices": [
+      {
+        "text": "Loss of A^* by collisional deactivation",
+        "correct": true
+      },
+      {
+        "text": "Formation of A^* by collisional activation",
+        "why": "Formation is the positive term, k_1[A][M]. The term with k_(−1) is subtracted: A^* lost back to A in collisions with M."
+      },
+      {
+        "text": "Loss of A^* by reaction to form P",
+        "why": "Reaction to P is the k_2[A^*] term. The k_(−1)[A^*][M] term needs M, so it is loss by collision."
+      },
+      {
+        "text": "Formation of P in collisions with M",
+        "why": "The equation tracks A^*, not P, and P forms from A^* alone in step 2. The k_(−1) term is deactivation of A^*."
+      }
+    ],
+    "explanation": "A^* is produced by the forward first step, k_1[A][M], and consumed both by the reverse first step, k_(−1)[A^*][M], and by the second step, k_2[A^*]."
+  },
+  {
+    "id": "pc29-lindemann-steady-state",
+    "type": "multiple-choice",
+    "prompt": "What does the steady-state approximation assume in the Lindemann derivation?",
+    "choices": [
+      {
+        "text": "A^* is formed as fast as it is used up, so d[A^*]/dt ≈ 0",
+        "correct": true
+      },
+      {
+        "text": "The forward and reverse rates of step 1 are equal",
+        "why": "That would leave out the loss of A^* to product. The steady state balances formation against both losses: k_1[A][M] = k_(−1)[A^*][M] + k_2[A^*]."
+      },
+      {
+        "text": "[A^*] stays equal to [A] throughout the reaction",
+        "why": "The approximation is about the rate of change of [A^*], not its size. In fact [A^*] is assumed to be small."
+      },
+      {
+        "text": "Product forms at a constant rate, so d[P]/dt ≈ 0",
+        "why": "If d[P]/dt were zero there would be no reaction. It is the intermediate A^* whose concentration is held constant."
+      }
+    ],
+    "explanation": "Setting d[A^*]/dt ≈ 0 makes the rate of production of A^* equal to its rate of consumption: k_1[A][M] = k_(−1)[A^*][M] + k_2[A^*]. Solving this gives [A^*] in terms of [A] and [M]."
+  },
+  {
+    "id": "pc29-lindemann-steady-state-condition",
+    "type": "multiple-choice",
+    "prompt": "The section applies the steady-state approximation on the assumption that the concentration of A^* stays small. Which condition does it give for this?",
+    "choices": [
+      {
+        "text": "k_1[M] ≪ k_2 + k_(−1)[M]",
+        "correct": true
+      },
+      {
+        "text": "k_1[M] ≫ k_2 + k_(−1)[M]",
+        "why": "This is backwards. A^* stays scarce when it is used up much faster than it forms, so k_1[M] must be the small side."
+      },
+      {
+        "text": "k_(−1)[M] ≫ k_2",
+        "why": "That is the high-pressure limit, which decides the order. Keeping [A^*] small needs activation to be slow compared with both losses together."
+      },
+      {
+        "text": "k_2 ≫ k_(−1)[M]",
+        "why": "That is the low-pressure limit, which decides the order. Keeping [A^*] small needs k_1[M] ≪ k_2 + k_(−1)[M]."
+      }
+    ],
+    "explanation": "From [A^*] = (k_1[M][A])/(k_2 + k_(−1)[M]), [A^*] is much smaller than [A] when k_1[M] ≪ k_2 + k_(−1)[M]. The rates, not the bare constants, are compared."
+  },
+  {
+    "id": "pc29-lindemann-astar-expression",
+    "type": "multiple-choice",
+    "prompt": "Solving the steady-state balance k_1[A][M] = k_(−1)[A^*][M] + k_2[A^*] for [A^*] gives which result?",
+    "choices": [
+      {
+        "text": "[A^*] = (k_1[A][M])/(k_(−1)[M] + k_2)",
+        "correct": true
+      },
+      {
+        "text": "[A^*] = (k_1[A][M])/(k_(−1)[M])",
+        "why": "This drops the k_2[A^*] loss term. Both losses share the factor [A^*], so the denominator is k_(−1)[M] + k_2."
+      },
+      {
+        "text": "[A^*] = (k_1[A])/(k_(−1) + k_2)",
+        "why": "[M] has been dropped from both terms that contain it. Factoring out [A^*] gives k_1[A][M] over k_(−1)[M] + k_2."
+      },
+      {
+        "text": "[A^*] = (k_(−1)[M] + k_2)/(k_1[A][M])",
+        "why": "This is upside down. Factoring [A^*] out of the right side and dividing gives k_1[A][M] in the numerator."
+      }
+    ],
+    "explanation": "Factoring [A^*] out of the right side gives k_1[A][M] = [A^*](k_(−1)[M] + k_2), so [A^*] = (k_1[A][M])/(k_(−1)[M] + k_2)."
+  },
+  {
+    "id": "pc29-lindemann-general-rate",
+    "type": "multiple-choice",
+    "prompt": "The rate of product formation is d[P]/dt = k_2[A^*]. Substituting the steady-state [A^*] gives which rate law?",
+    "choices": [
+      {
+        "text": "(k_1 k_2[A][M])/(k_(−1)[M] + k_2)",
+        "correct": true
+      },
+      {
+        "text": "k_1[A][M]",
+        "why": "That is only the low-pressure limit, when k_(−1)[M] ≪ k_2. The full rate law keeps both terms of the denominator."
+      },
+      {
+        "text": "((k_1 k_2)/(k_(−1)))[A]",
+        "why": "That is only the high-pressure limit, when k_(−1)[M] ≫ k_2. The full rate law keeps both terms of the denominator."
+      },
+      {
+        "text": "(k_1 k_2[A][M])/(k_(−1)[M] − k_2)",
+        "why": "The sign is wrong. Both deactivation and reaction remove A^*, so their terms add in the denominator."
+      }
+    ],
+    "explanation": "d[P]/dt = k_2 × (k_1[A][M])/(k_(−1)[M] + k_2) = (k_1 k_2[A][M])/(k_(−1)[M] + k_2). The section notes that this is not a simple first- or second-order rate law."
+  },
+  {
+    "id": "pc29-lindemann-n2o5-order",
+    "type": "multiple-choice",
+    "prompt": "For N_2O_5 → NO_2 + NO_3 with M = N_2O_5, the Lindemann rate is (k_1 k_2[N_2O_5]^2)/(k_(−1)[N_2O_5] + k_2). What order is this in N_2O_5?",
+    "choices": [
+      {
+        "text": "No single order, except in limiting cases",
+        "correct": true
+      },
+      {
+        "text": "Second order, from the [N_2O_5]^2 on top",
+        "why": "[N_2O_5] also appears in the denominator. Only when k_2 ≫ k_(−1)[N_2O_5] does the rate become k_1[N_2O_5]^2."
+      },
+      {
+        "text": "First order, since [N_2O_5]^2 over [N_2O_5] leaves one",
+        "why": "The denominator is a sum, k_(−1)[N_2O_5] + k_2, so it doesn't simply cancel. It reduces to first order only when k_2 ≪ k_(−1)[N_2O_5]."
+      },
+      {
+        "text": "Third order, counting the top and the bottom",
+        "why": "Concentrations in a denominator don't add to the order. The expression has no single order, and its limits are first and second order."
+      }
+    ],
+    "explanation": "Because [N_2O_5] appears in both the numerator and a sum in the denominator, the rate law is not simply first or second order. Experiment indeed finds the rate first order sometimes and second order at other times."
+  },
+  {
+    "id": "pc29-lindemann-second-order-limit",
+    "type": "multiple-choice",
+    "prompt": "The N_2O_5 rate is (k_1 k_2[N_2O_5]^2)/(k_(−1)[N_2O_5] + k_2). What does it become when k_2 ≫ k_(−1)[N_2O_5]?",
+    "choices": [
+      {
+        "text": "k_1[N_2O_5]^2, second order",
+        "correct": true
+      },
+      {
+        "text": "((k_1 k_2)/(k_(−1)))[N_2O_5], first order",
+        "why": "That is the opposite limit, k_2 ≪ k_(−1)[N_2O_5]. Here the denominator is about k_2, which cancels the k_2 on top."
+      },
+      {
+        "text": "k_2[N_2O_5], first order",
+        "why": "The k_2 cancels between top and bottom, leaving k_1[N_2O_5]^2. The rate is set by activation, which needs two N_2O_5 molecules."
+      },
+      {
+        "text": "k_1[N_2O_5], first order",
+        "why": "The numerator holds [N_2O_5]^2, and only k_2 cancels. The limit is k_1[N_2O_5]^2, second order."
+      }
+    ],
+    "explanation": "When k_2 ≫ k_(−1)[N_2O_5], the denominator is about k_2, and it cancels the k_2 in the numerator: Rate = k_1[N_2O_5]^2. This is the same as treating k_(−1) ≈ 0, so the rate is second order."
+  },
+  {
+    "id": "pc29-lindemann-first-order-limit",
+    "type": "multiple-choice",
+    "prompt": "With k_obs = (k_1 k_2[M])/(k_2 + k_(−1)[M]), what does k_obs become when k_(−1)[M] ≫ k_2?",
+    "choices": [
+      {
+        "text": "(k_1 k_2)/(k_(−1))",
+        "correct": true
+      },
+      {
+        "text": "k_1[M]",
+        "why": "That is the opposite limit, k_(−1)[M] ≪ k_2. Here the denominator is about k_(−1)[M], and [M] cancels."
+      },
+      {
+        "text": "(k_1 k_(−1))/(k_2)",
+        "why": "k_(−1) belongs in the denominator, where it comes from the dominant deactivation term. The limit is (k_1 k_2)/(k_(−1))."
+      },
+      {
+        "text": "k_2",
+        "why": "k_2 would be the answer only if every A were activated. Most A^* is deactivated instead, and dividing by k_(−1)[M] leaves (k_1 k_2)/(k_(−1))."
+      }
+    ],
+    "explanation": "When k_(−1)[M] ≫ k_2, the denominator is about k_(−1)[M], and [M] cancels: k_obs = (k_1 k_2)/(k_(−1)). The rate, ((k_1 k_2)/(k_(−1)))[A], is then first order in A."
+  },
+  {
+    "id": "pc29-lindemann-compare-units",
+    "type": "multiple-choice",
+    "prompt": "The limits of the Lindemann rate law compare k_2 with k_(−1)[M], not with k_(−1) alone. Why?",
+    "choices": [
+      {
+        "text": "k_2 and k_(−1) have different units, so only k_(−1)[M] matches k_2",
+        "correct": true
+      },
+      {
+        "text": "k_(−1) is always much larger than k_2, so it must be scaled down",
+        "why": "Their sizes can't even be compared directly, because k_2 is in s^−1 and k_(−1) in M^−1 s^−1. Multiplying by [M] makes them comparable."
+      },
+      {
+        "text": "[M] stays constant, so including it changes nothing",
+        "why": "[M] matters: changing it is how the reaction moves between the limits. It is also needed to give k_(−1)[M] the units of k_2."
+      },
+      {
+        "text": "M is not used up, so its concentration must cancel",
+        "why": "M is unchanged by step 1, but its concentration still sets how often A^* is deactivated. That is why k_(−1)[M] is compared with k_2."
+      }
+    ],
+    "explanation": "The limits compare the two terms of the denominator, k_(−1)[M] + k_2. A unimolecular k_2 has units of s^−1, while the bimolecular k_(−1) has units of M^−1 s^−1, so only k_(−1)[M] can be weighed against k_2."
+  },
+  {
+    "id": "pc29-lindemann-high-pressure",
+    "type": "multiple-choice",
+    "prompt": "Methylisonitrile isomerizes, CH_3NC → CH_3CN. What kinetics does the section say are seen at high pressure, and why?",
+    "choices": [
+      {
+        "text": "First order; frequent collisions make k_(−1)[M] ≫ k_2",
+        "correct": true
+      },
+      {
+        "text": "Second order; frequent collisions make k_(−1)[M] ≫ k_2",
+        "why": "The condition is right but the order is not. With k_(−1)[M] ≫ k_2, [M] cancels and −d[A]/dt = ((k_1 k_2)/(k_(−1)))[A], first order."
+      },
+      {
+        "text": "Second order; more molecules are there to collide",
+        "why": "More collisions mean deactivation dominates, and [M] cancels out of the rate. High pressure gives first-order kinetics."
+      },
+      {
+        "text": "First order; collisions are rare, so k_(−1)[M] ≪ k_2",
+        "why": "Collisions are frequent at high pressure, not rare. Rare collisions belong to the low-pressure, second-order case."
+      }
+    ],
+    "explanation": "At high pressure collisions occur frequently, so k_(−1)[M] ≫ k_2 and the rate becomes −d[A]/dt = ((k_1 k_2)/(k_(−1)))[A]. That is why the isomerization shows first-order kinetics only at high pressures."
+  },
+  {
+    "id": "pc29-lindemann-low-pressure",
+    "type": "multiple-choice",
+    "prompt": "At low pressure, the methylisonitrile isomerization follows a second-order rate law. How does the Lindemann mechanism explain this?",
+    "choices": [
+      {
+        "text": "Deactivation is rare, so the rate is that of activation, k_1[A][M]",
+        "correct": true
+      },
+      {
+        "text": "Deactivation is frequent, so A and A^* reach equilibrium",
+        "why": "Frequent deactivation is the high-pressure case, which gives first order. At low pressure collisions are infrequent, so k_(−1)[M] ≪ k_2."
+      },
+      {
+        "text": "Step 2 becomes bimolecular when the gas is dilute",
+        "why": "Step 2 stays unimolecular. The second order comes from step 1: with little deactivation, the rate is k_1[A][M]."
+      },
+      {
+        "text": "A^* builds up until it is as plentiful as A",
+        "why": "A^* stays a small, steady-state intermediate. The rate becomes k_1[A][M] because nearly every activated molecule goes on to react."
+      }
+    ],
+    "explanation": "At low pressure collisions are infrequent, so k_(−1)[M] ≪ k_2 and the rate becomes −d[A]/dt = k_1[A][M]. Almost every A^* reacts before it can be deactivated, so the rate is the rate of activating collisions, which is second order."
+  },
+  {
+    "id": "pc29-lindemann-kobs-pressure",
+    "type": "multiple-choice",
+    "prompt": "How does k_obs = (k_1 k_2[M])/(k_2 + k_(−1)[M]) change as [M] is raised from very low to very high?",
+    "choices": [
+      {
+        "text": "It rises, then levels off at (k_1 k_2)/(k_(−1))",
+        "correct": true
+      },
+      {
+        "text": "It rises in proportion to [M] without limit",
+        "why": "It is proportional to [M] only at low [M], where k_obs ≈ k_1[M]. At high [M] the k_(−1)[M] term takes over and k_obs stops rising."
+      },
+      {
+        "text": "It falls, because deactivation grows with [M]",
+        "why": "Activation grows with [M] too. k_obs rises at low [M] and approaches the constant (k_1 k_2)/(k_(−1)) at high [M]."
+      },
+      {
+        "text": "It stays at (k_1 k_2)/(k_(−1)) at every [M]",
+        "why": "That value is reached only when k_(−1)[M] ≫ k_2. At low [M], k_obs ≈ k_1[M], which is much smaller."
+      }
+    ],
+    "explanation": "At low [M], k_obs ≈ k_1[M], which grows with [M]. At high [M], k_(−1)[M] ≫ k_2 and k_obs ≈ (k_1 k_2)/(k_(−1)), a constant, so the observed first-order rate constant levels off."
+  },
+  {
+    "id": "pc29-lindemann-inert-gas",
+    "type": "multiple-choice",
+    "prompt": "A Lindemann decomposition is run at low pressure, where the rate is k_1[A][M]. An inert gas is added while [A] is kept the same. What happens to the rate?",
+    "choices": [
+      {
+        "text": "It increases, because inert molecules can act as M",
+        "correct": true
+      },
+      {
+        "text": "It doesn't change, because the inert gas doesn't react",
+        "why": "M doesn't need to react; it only supplies energy by collision. More M means more activating collisions and a faster rate."
+      },
+      {
+        "text": "It decreases, because inert molecules deactivate A^*",
+        "why": "At low pressure deactivation is rare, k_(−1)[M] ≪ k_2, so almost every A^* still reacts. Extra M mainly adds activating collisions."
+      },
+      {
+        "text": "It decreases, because the inert gas dilutes A",
+        "why": "[A] is held the same here. The added gas raises [M], and the low-pressure rate k_1[A][M] rises with it."
+      }
+    ],
+    "explanation": "M can be an inert molecule present in the reactor, and at low pressure the rate is k_1[A][M]. Raising [M] with an inert gas gives more activating collisions, so the rate rises."
+  },
+  {
+    "id": "pc29-lindemann-double-low-pressure",
+    "type": "multiple-choice",
+    "prompt": "Pure gas A reacts by a Lindemann mechanism with A itself as M, at a pressure so low that k_(−1)[A] ≪ k_2. If [A] is doubled and the condition still holds, by what factor does the rate change?",
+    "choices": [
+      {
+        "text": "It quadruples",
+        "correct": true
+      },
+      {
+        "text": "It doubles",
+        "why": "That is the first-order, high-pressure behavior. With M = A the low-pressure rate is k_1[A]^2, so doubling [A] gives 2^2 = 4."
+      },
+      {
+        "text": "It is unchanged",
+        "why": "The low-pressure rate depends on how often A molecules collide. With M = A it is k_1[A]^2, which quadruples."
+      },
+      {
+        "text": "It rises eightfold",
+        "why": "That would be third order. The low-pressure rate k_1[A][M] with M = A is k_1[A]^2, second order."
+      }
+    ],
+    "explanation": "When k_(−1)[M] ≪ k_2 the rate is k_1[A][M], and with M = A this is k_1[A]^2, second order. Doubling [A] multiplies the rate by 4."
+  },
+  {
+    "id": "pc29-lindemann-astar-value",
+    "type": "numeric",
+    "prompt": "For a Lindemann mechanism, [A^*] = (k_1[A][M])/(k_(−1)[M] + k_2). Find [A^*], in M, when k_1 = 2.0 × 10^3 M^−1 s^−1, k_(−1) = 4.0 × 10^9 M^−1 s^−1, k_2 = 2.0 × 10^8 s^−1, [A] = 0.010 M and [M] = 0.050 M. (Type it in scientific notation, like 2.5e-9.)",
+    "answer": 2.5e-9,
+    "unit": "M",
+    "explanation": "k_(−1)[M] = 4.0 × 10^9 × 0.050 = 2.0 × 10^8 s^−1, so the denominator is 4.0 × 10^8 s^−1. The numerator is 2.0 × 10^3 × 0.010 × 0.050 = 1.0 M s^−1, so [A^*] = 2.5 × 10^−9 M, far below [A], as the steady-state approximation assumes."
+  },
+  {
+    "id": "pc29-lindemann-rate-value",
+    "type": "numeric",
+    "prompt": "A gas reacts by a Lindemann mechanism with M = A, so the rate is (k_1 k_2[A]^2)/(k_(−1)[A] + k_2). Find the rate, in M s^−1, when k_1 = 1.0 × 10^3 M^−1 s^−1, k_(−1) = 1.0 × 10^9 M^−1 s^−1, k_2 = 3.0 × 10^7 s^−1 and [A] = 0.020 M. (Give it as a decimal.)",
+    "answer": 0.24,
+    "unit": "M s^−1",
+    "explanation": "The numerator is 1.0 × 10^3 × 3.0 × 10^7 × (0.020)^2 = 1.2 × 10^7 M s^−2. The denominator is 1.0 × 10^9 × 0.020 + 3.0 × 10^7 = 5.0 × 10^7 s^−1, so the rate is 0.24 M s^−1. Neither denominator term is negligible here, so neither limiting law would do."
+  },
+  {
+    "id": "pc29-lindemann-kobs-value",
+    "type": "numeric",
+    "prompt": "Using k_obs = (k_1 k_2[M])/(k_2 + k_(−1)[M]), find k_obs, in s^−1, when k_1 = 1.0 × 10^4 M^−1 s^−1, k_2 = 1.0 × 10^6 s^−1, k_(−1) = 1.0 × 10^8 M^−1 s^−1 and [M] = 0.030 M.",
+    "answer": 75,
+    "unit": "s^−1",
+    "explanation": "The numerator is 1.0 × 10^4 × 1.0 × 10^6 × 0.030 = 3.0 × 10^8 s^−2, and the denominator is 1.0 × 10^6 + 1.0 × 10^8 × 0.030 = 4.0 × 10^6 s^−1, so k_obs = 75 s^−1. That is already three quarters of the high-pressure value, (k_1 k_2)/(k_(−1)) = 100 s^−1."
+  },
+  {
+    "id": "pc29-lindemann-high-pressure-value",
+    "type": "numeric",
+    "prompt": "In the high-pressure limit of a Lindemann mechanism, k_obs = (k_1 k_2)/(k_(−1)). Find k_obs, in s^−1, when k_1 = 6.0 × 10^3 M^−1 s^−1, k_2 = 2.0 × 10^5 s^−1 and k_(−1) = 4.0 × 10^9 M^−1 s^−1. (Give it as a decimal.)",
+    "answer": 0.3,
+    "unit": "s^−1",
+    "explanation": "k_obs = (6.0 × 10^3 M^−1 s^−1 × 2.0 × 10^5 s^−1)/(4.0 × 10^9 M^−1 s^−1) = 0.30 s^−1. The M^−1 s^−1 units of k_1 and k_(−1) cancel, leaving the s^−1 of a first-order rate constant."
+  },
+  {
+    "id": "pc29-lindemann-low-pressure-value",
+    "type": "numeric",
+    "prompt": "Pure gas A reacts by a Lindemann mechanism with M = A, at low pressure where the rate is k_1[A][M]. Find the rate, in M s^−1, when k_1 = 0.40 M^−1 s^−1 and [A] = 0.050 M. (Type it in scientific notation, like 2.5e-3.)",
+    "answer": 0.001,
+    "unit": "M s^−1",
+    "explanation": "With M = A, the rate is k_1[A]^2 = 0.40 M^−1 s^−1 × (0.050 M)^2 = 0.40 × 0.0025 M s^−1 = 1.0 × 10^−3 M s^−1. Only k_1 appears, because at low pressure nearly every activated molecule goes on to react."
+  },
+  {
+    "id": "pc29-lindemann-half-limit",
+    "type": "numeric",
+    "prompt": "k_obs = (k_1 k_2[M])/(k_2 + k_(−1)[M]) reaches half its high-pressure value, (k_1 k_2)/(k_(−1)), when k_(−1)[M] = k_2. For k_2 = 3.0 × 10^5 s^−1 and k_(−1) = 1.5 × 10^9 M^−1 s^−1, at what [M], in M, does this happen? (Type it in scientific notation, like 2.5e-4.)",
+    "answer": 0.0002,
+    "unit": "M",
+    "explanation": "[M] = k_2/k_(−1) = (3.0 × 10^5 s^−1)/(1.5 × 10^9 M^−1 s^−1) = 2.0 × 10^−4 M. Here the two terms of the denominator are equal, so the reaction is midway between its second-order and first-order limits."
+  },
+  {
+    "id": "pc29-lindemann-loss-ratio",
+    "type": "numeric",
+    "prompt": "A^* is lost by deactivation at the rate k_(−1)[A^*][M] and by reaction at the rate k_2[A^*]. With k_(−1) = 2.0 × 10^9 M^−1 s^−1, [M] = 0.10 M and k_2 = 4.0 × 10^6 s^−1, how many times faster is deactivation than reaction?",
+    "answer": 50,
+    "tolerance": 0,
+    "explanation": "The ratio is (k_(−1)[A^*][M])/(k_2[A^*]) = (k_(−1)[M])/(k_2) = (2.0 × 10^9 × 0.10)/(4.0 × 10^6) = 50. Since k_(−1)[M] ≫ k_2, this reaction is near the high-pressure, first-order limit."
+  }
+]

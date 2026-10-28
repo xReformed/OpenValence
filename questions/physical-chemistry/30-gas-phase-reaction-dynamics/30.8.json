@@ -1,0 +1,562 @@
+[
+  {
+    "id": "pc30-product-velocity-energy-budget",
+    "type": "multiple-choice",
+    "prompt": "For F + D_2 → DF + D, the section writes E_P(trans) + E_P(vib) = 165 kJ/mol. What does this equation say?",
+    "choices": [
+      {
+        "text": "A fixed 165 kJ/mol is shared between product translation and DF vibration",
+        "correct": true
+      },
+      {
+        "text": "Product translation and DF vibration each receive 165 kJ/mol",
+        "why": "The two energies add up to 165 kJ/mol; they don't each get the full amount. Whatever goes into vibration is taken from translation."
+      },
+      {
+        "text": "The products always move off with 165 kJ/mol of translational energy",
+        "why": "That ignores the vibrational term. The translational share is 165 kJ/mol minus E_P(vib), so it depends on the vibrational state of DF."
+      },
+      {
+        "text": "DF always forms with 165 kJ/mol of vibrational energy",
+        "why": "E_P(vib) depends on the vibrational state, (v + 1/2)(34.8 kJ/mol). The 165 kJ/mol is the total of vibration and translation together."
+      }
+    ],
+    "explanation": "The products have a fixed amount of energy to share. Writing it as E_P(trans) + E_P(vib) = 165 kJ/mol means that the more energy DF holds as vibration, the less is left for the products' translational motion."
+  },
+  {
+    "id": "pc30-product-velocity-vib-expression",
+    "type": "multiple-choice",
+    "prompt": "Treating DF as a harmonic oscillator, which expression does the section use for the vibrational energy of DF in state v?",
+    "choices": [
+      {
+        "text": "E_P(vib) = (v + 1/2)(34.8 kJ/mol)",
+        "correct": true
+      },
+      {
+        "text": "E_P(vib) = v(34.8 kJ/mol)",
+        "why": "This leaves out the zero-point energy. A harmonic oscillator has (1/2)(34.8 kJ/mol) even in v = 0, so the factor is v + 1/2."
+      },
+      {
+        "text": "E_P(vib) = (v + 1)(34.8 kJ/mol)",
+        "why": "The ground state holds half a quantum, not a whole one. The harmonic-oscillator levels are (v + 1/2)(34.8 kJ/mol)."
+      },
+      {
+        "text": "E_P(vib) = (v + 1/2)^2(34.8 kJ/mol)",
+        "why": "Harmonic-oscillator levels are equally spaced, so the energy is linear in v, not quadratic: (v + 1/2)(34.8 kJ/mol)."
+      }
+    ],
+    "explanation": "The harmonic-oscillator levels are (v + 1/2)hν, and for DF the quantum is 34.8 kJ/mol. So each step up in v takes another 34.8 kJ/mol, starting from a zero-point energy of 17.4 kJ/mol."
+  },
+  {
+    "id": "pc30-product-velocity-evib-v3",
+    "type": "numeric",
+    "prompt": "Using E_P(vib) = (v + 1/2)(34.8 kJ/mol) for a DF molecule, what is the vibrational energy of DF formed in v = 3, in kJ/mol?",
+    "answer": 121.8,
+    "unit": "kJ mol^−1",
+    "explanation": "E_P(vib) = (3 + 1/2)(34.8 kJ/mol) = 3.5 × 34.8 kJ/mol = 121.8 kJ/mol. Forgetting the 1/2 would give 104.4 kJ/mol."
+  },
+  {
+    "id": "pc30-product-velocity-etrans-v2",
+    "type": "numeric",
+    "prompt": "In F + D_2 → DF + D, the products share E_P(trans) + E_P(vib) = 165 kJ/mol, with E_P(vib) = (v + 1/2)(34.8 kJ/mol). If DF forms in v = 2, what is the products' translational energy, in kJ/mol?",
+    "answer": 78,
+    "unit": "kJ mol^−1",
+    "explanation": "E_P(vib) = 2.5 × 34.8 kJ/mol = 87.0 kJ/mol, so E_P(trans) = 165 kJ/mol − 87.0 kJ/mol = 78.0 kJ/mol. More than half of the available energy has gone into vibration."
+  },
+  {
+    "id": "pc30-product-velocity-etrans-difference",
+    "type": "numeric",
+    "prompt": "In F + D_2 → DF + D, the products share 165 kJ/mol between translation and vibration, with E_P(vib) = (v + 1/2)(34.8 kJ/mol). How much less translational energy, in kJ/mol, do the products have when DF forms in v = 3 rather than v = 1?",
+    "answer": 69.6,
+    "unit": "kJ mol^−1",
+    "explanation": "Each step up in v moves 34.8 kJ/mol from translation into vibration, so two steps cost 2 × 34.8 kJ/mol = 69.6 kJ/mol. The zero-point terms cancel in the difference: (3.5 − 1.5)(34.8 kJ/mol) = 69.6 kJ/mol."
+  },
+  {
+    "id": "pc30-product-velocity-highest-v",
+    "type": "numeric",
+    "prompt": "The products of F + D_2 → DF + D share 165 kJ/mol between translation and vibration, with E_P(vib) = (v + 1/2)(34.8 kJ/mol). What is the highest vibrational state v in which DF can form?",
+    "answer": 4,
+    "tolerance": 0,
+    "explanation": "Vibration can take at most 165 kJ/mol, so (v + 1/2) ≤ 165/34.8 = 4.74, giving v ≤ 4.24. The highest whole-number state is v = 4, which leaves 165 − 4.5 × 34.8 = 8.4 kJ/mol for translation; v = 5 would need 191.4 kJ/mol."
+  },
+  {
+    "id": "pc30-product-velocity-mu-and-vpr",
+    "type": "multiple-choice",
+    "prompt": "The section writes the products' translational energy as E_P(trans) = (1/2)μ_P v_Pr^2. What are μ_P and v_Pr?",
+    "choices": [
+      {
+        "text": "The reduced mass of DF and D, and their relative velocity",
+        "correct": true
+      },
+      {
+        "text": "The mass of DF, and its speed in the laboratory",
+        "why": "The energy that the reaction releases goes into the motion of the products relative to each other. That is described by the reduced mass of DF + D and their relative velocity."
+      },
+      {
+        "text": "The total mass m_D2 + m_F, and the center-of-mass velocity",
+        "why": "The total mass M goes with the motion of the center of mass, which the reaction doesn't change. The released energy goes into relative motion, with μ_P = (m_DF m_D)/(m_DF + m_D)."
+      },
+      {
+        "text": "The mass of the D atom, and its speed in the laboratory",
+        "why": "μ_P is close to the mass of D, but it is the reduced mass of the pair, (m_DF m_D)/(m_DF + m_D) = 1.84 g/mol, and v_Pr is the velocity of DF and D relative to each other."
+      }
+    ],
+    "explanation": "μ_P = (m_DF m_D)/(m_DF + m_D) = 1.84 g/mol is the reduced mass of the products, and v_Pr is their relative velocity. Together, (1/2)μ_P v_Pr^2 is the kinetic energy of DF and D moving apart."
+  },
+  {
+    "id": "pc30-product-velocity-mu-hf",
+    "type": "numeric",
+    "prompt": "In the analogous reaction F + H_2 → HF + H, the products are HF (20.01 g/mol) and H (1.008 g/mol). Using μ_P = (m_1 m_2)/(m_1 + m_2), what is the reduced mass of the products, in g/mol? (Give it as a decimal.)",
+    "answer": 0.96,
+    "unit": "g/mol",
+    "explanation": "μ_P = (20.01 × 1.008)/(20.01 + 1.008) g/mol = 20.17/21.02 g/mol = 0.960 g/mol. As with DF + D (1.84 g/mol), the reduced mass is a little less than the mass of the light atom."
+  },
+  {
+    "id": "pc30-product-velocity-kg-per-mol",
+    "type": "multiple-choice",
+    "prompt": "To solve E_P(trans) = (1/2)μ_P v_Pr^2 for v_Pr, the section writes μ_P = 1.84 g/mol as 0.00184 kg/mol and the energy in J/mol. Why?",
+    "choices": [
+      {
+        "text": "(J/mol)/(kg/mol) = m^2/s^2, so v_Pr comes out in m/s",
+        "correct": true
+      },
+      {
+        "text": "Reduced masses must always be smaller than 1",
+        "why": "The size of the number doesn't matter. The units must match: a joule is kg m^2 s^−2, so the mass must be in kg for the square root to come out in m/s."
+      },
+      {
+        "text": "To turn the molar mass into the mass of one molecule",
+        "why": "0.00184 kg/mol is still per mole; the per-mole units of energy and mass cancel. Converting g to kg is what makes J/(kg) equal m^2/s^2."
+      },
+      {
+        "text": "Because the energy in kJ/mol must be divided by 1000",
+        "why": "kJ/mol is converted to J/mol by multiplying by 1000, and g/mol to kg/mol by dividing by 1000. Both are done so that the units combine to m^2/s^2."
+      }
+    ],
+    "explanation": "A joule is kg m^2 s^−2. With energy in J/mol and μ_P in kg/mol, (2/μ_P)E_P(trans) has units of m^2/s^2, and its square root gives v_Pr in m/s, the units of Table 30.8.1."
+  },
+  {
+    "id": "pc30-product-velocity-vpr-from-etrans",
+    "type": "numeric",
+    "prompt": "The products DF + D have reduced mass μ_P = 0.00184 kg/mol. Using E_P(trans) = (1/2)μ_P v_Pr^2, what is their relative velocity v_Pr, in m/s, when E_P(trans) = 92.0 kJ/mol?",
+    "answer": 10000,
+    "unit": "m/s",
+    "explanation": "v_Pr = √((2 × 9.20 × 10^4 J/mol)/(0.00184 kg/mol)) = √(1.00 × 10^8 m^2/s^2) = 1.00 × 10^4 m/s. Using 92.0 instead of 92,000 J/mol would give a speed about 32 times too small."
+  },
+  {
+    "id": "pc30-product-velocity-trend-with-v",
+    "type": "multiple-choice",
+    "prompt": "Table 30.8.1 lists v_Pr, the relative velocity of DF and D, for DF in v = 0 to 4. How does v_Pr change as v increases?",
+    "choices": [
+      {
+        "text": "It falls, by larger amounts at each step",
+        "correct": true
+      },
+      {
+        "text": "It falls by the same amount at each step",
+        "why": "The energy steps are equal (34.8 kJ/mol), but v_Pr goes as the square root of E_P(trans). So the speed drops by more each time: 12,700, 11,100, 9210, 6850, 3020 m/s."
+      },
+      {
+        "text": "It rises, since higher states have more energy",
+        "why": "Higher v means more vibrational energy, but the total is fixed at 165 kJ/mol. The extra vibration is taken from translation, so the products move apart more slowly."
+      },
+      {
+        "text": "It stays the same, since the total energy is fixed",
+        "why": "The total is fixed, but its split is not. Each step up in v moves 34.8 kJ/mol from translation into vibration, so v_Pr falls."
+      }
+    ],
+    "explanation": "v_Pr = √((2/μ_P)(165 kJ/mol − (v + 1/2)(34.8 kJ/mol))). Each step up in v removes the same 34.8 kJ/mol of translational energy, but because of the square root the speed drops by about 1600, 1900, 2400 and then 3800 m/s."
+  },
+  {
+    "id": "pc30-product-velocity-quarter-energy",
+    "type": "multiple-choice",
+    "prompt": "With E_P(trans) = (1/2)μ_P v_Pr^2, the same pair of products is formed with a quarter of the translational energy in one collision as in another. How do their relative velocities v_Pr compare?",
+    "choices": [
+      {
+        "text": "Half as large",
+        "correct": true
+      },
+      {
+        "text": "A quarter as large",
+        "why": "The energy goes as the square of the velocity, not the velocity itself. v_Pr is proportional to √E_P(trans), and √(1/4) = 1/2."
+      },
+      {
+        "text": "A sixteenth as large",
+        "why": "That squares the ratio instead of taking its square root. Since v_Pr = √(2E_P(trans)/μ_P), a quarter of the energy gives half the speed."
+      },
+      {
+        "text": "The same, since μ_P is unchanged",
+        "why": "μ_P is the same, but v_Pr still depends on the energy: v_Pr = √(2E_P(trans)/μ_P). A quarter of the energy gives half the speed."
+      }
+    ],
+    "explanation": "Solving E_P(trans) = (1/2)μ_P v_Pr^2 gives v_Pr = √(2E_P(trans)/μ_P), so v_Pr is proportional to the square root of the translational energy. A quarter of the energy gives √(1/4) = 1/2 of the relative velocity."
+  },
+  {
+    "id": "pc30-product-velocity-df-cm-speed",
+    "type": "numeric",
+    "prompt": "For F + D_2 → DF + D, the section gives the speed of DF relative to the center of mass as |v⃗_DF − v⃗_cm| = ((m_D)/M)v_Pr, with m_D = 2.014 g/mol and M = m_D2 + m_F = 23.03 g/mol. If v_Pr = 8000 m/s, what is |v⃗_DF − v⃗_cm|, in m/s?",
+    "answer": 699.6,
+    "unit": "m/s",
+    "explanation": "|v⃗_DF − v⃗_cm| = (2.014/23.03)(8000 m/s) = 0.08745 × 8000 m/s = 699.6 m/s. Using m_DF/M instead would give a speed more than ten times too large."
+  },
+  {
+    "id": "pc30-product-velocity-df-cm-small",
+    "type": "multiple-choice",
+    "prompt": "In Table 30.8.1, DF in v = 0 has v_Pr = 12,700 m/s but |v⃗_DF − v⃗_cm| = 1108 m/s. Why is the second speed so much smaller?",
+    "choices": [
+      {
+        "text": "It equals ((m_D)/M)v_Pr, and m_D/M is only about 0.087",
+        "correct": true
+      },
+      {
+        "text": "DF loses most of its speed to rotation after it forms",
+        "why": "Both columns are computed from the same translational energy, with no rotation. The second is smaller by the factor m_D/M = 2.014/23.03."
+      },
+      {
+        "text": "The center of mass moves at nearly v_Pr itself",
+        "why": "The relation is |v⃗_DF − v⃗_cm| = ((m_D)/M)v_Pr. The ratio is small because the D atom is light compared with the total mass M."
+      },
+      {
+        "text": "The two columns use different units of speed",
+        "why": "Both columns are in m/s. The second is smaller because |v⃗_DF − v⃗_cm| = ((m_D)/M)v_Pr, with m_D/M = 2.014/23.03."
+      }
+    ],
+    "explanation": "The section's relation is |v⃗_DF − v⃗_cm| = ((m_D)/M)v_Pr, with M = m_D2 + m_F = 23.03 g/mol. Since m_D/M = 2.014/23.03 = 0.087, DF moves away from the center of mass at less than a tenth of the products' relative velocity: 1108 m/s for v = 0."
+  },
+  {
+    "id": "pc30-product-velocity-map-measures",
+    "type": "multiple-choice",
+    "prompt": "Y. T. Lee's center-of-mass velocity flux contour map for D_2 + F → DF + D comes from crossed molecular beam experiments. What does it measure?",
+    "choices": [
+      {
+        "text": "The speed and angular distributions of the DF products",
+        "correct": true
+      },
+      {
+        "text": "The potential energy of the atoms along the reaction path",
+        "why": "The map is built from measured product velocities, not energies of the atoms during the reaction. It shows how fast and in which direction the DF molecules leave."
+      },
+      {
+        "text": "The concentration of DF as a function of time",
+        "why": "The map has no time axis. Each point is a velocity, so it shows how many DF molecules leave with each speed and in each direction."
+      },
+      {
+        "text": "The vibrational energy levels of an isolated DF molecule",
+        "why": "The map shows the vibrational states only through the speeds they allow (the dashed circles). What it measures is the speed and angular distribution of DF from the collisions."
+      }
+    ],
+    "explanation": "The map records the DF molecules produced when a D_2 molecule from the left meets an F atom from the right. Its distance from the center gives the speed and its direction the scattering angle, so it measures both the speed distribution and the angular distribution."
+  },
+  {
+    "id": "pc30-product-velocity-map-radius",
+    "type": "multiple-choice",
+    "prompt": "On the center-of-mass velocity flux contour map for D_2 + F → DF + D, what does moving farther from the center of the map, in any direction, represent?",
+    "choices": [
+      {
+        "text": "A higher DF speed",
+        "correct": true
+      },
+      {
+        "text": "A higher vibrational state of DF",
+        "why": "It is the other way around: the highest vibrational state lies closest to the center. Distance from the center measures speed."
+      },
+      {
+        "text": "A later time after the collision",
+        "why": "The map is a map of velocities, not of time. Its center is the center-of-mass velocity, and the distance from it is the speed."
+      },
+      {
+        "text": "A lower DF speed",
+        "why": "The center of the map is zero speed relative to the center of mass, so speed increases outward, not inward."
+      }
+    ],
+    "explanation": "The map plots velocities relative to the center of mass, which sits at its center. Moving away from the center in any direction means a higher speed, and the direction gives the scattering angle."
+  },
+  {
+    "id": "pc30-product-velocity-dashed-circles",
+    "type": "multiple-choice",
+    "prompt": "What do the dashed circles on the center-of-mass velocity flux contour map for D_2 + F → DF + D represent?",
+    "choices": [
+      {
+        "text": "The maximum speed of DF in each vibrational state",
+        "correct": true
+      },
+      {
+        "text": "The speeds of DF in excited rotational states",
+        "why": "Rotationally excited molecules lie between the dashed lines. Each circle marks the speed of a vibrational state when no energy goes into rotation, the most it can have."
+      },
+      {
+        "text": "Contours of equal numbers of DF molecules",
+        "why": "The contour lines show numbers of molecules. The dashed circles are fixed by energy: each marks the largest speed DF can have in one vibrational state."
+      },
+      {
+        "text": "The speeds of the incoming D_2 and F beams",
+        "why": "The map shows the products, DF. The dashed circles mark the largest speed DF can have in each vibrational state."
+      }
+    ],
+    "explanation": "In each vibrational state the products have a fixed amount of translational energy, which sets a largest possible speed. The dashed circles mark these speeds, one for each vibrational state of DF."
+  },
+  {
+    "id": "pc30-product-velocity-innermost-circle",
+    "type": "multiple-choice",
+    "prompt": "On the center-of-mass velocity flux contour map for D_2 + F → DF + D, which vibrational state's dashed circle lies closest to the center?",
+    "choices": [
+      {
+        "text": "v = 4, the highest state",
+        "correct": true
+      },
+      {
+        "text": "v = 0, the lowest state",
+        "why": "v = 0 has the least vibrational energy, so it leaves the most for translation and has the largest circle. The circles shrink as v increases."
+      },
+      {
+        "text": "v = 3, the most populated state",
+        "why": "How many molecules are in a state doesn't set its circle's radius; its energy does. The highest state, v = 4, has the least translational energy and the smallest circle."
+      },
+      {
+        "text": "None; all the circles have the same radius",
+        "why": "Each vibrational state leaves a different amount of energy for translation, so each has a different maximum speed and a different circle."
+      }
+    ],
+    "explanation": "As the vibrational energy increases, the translational energy decreases, so the products move more slowly. The highest vibrational state, v = 4, therefore has the smallest circle, closest to the center, as the theory predicts."
+  },
+  {
+    "id": "pc30-product-velocity-contour-spacing",
+    "type": "multiple-choice",
+    "prompt": "On the center-of-mass velocity flux contour map for D_2 + F → DF + D, what do closely spaced contour lines in a region indicate?",
+    "choices": [
+      {
+        "text": "Many DF molecules with that velocity in that vibrational state",
+        "correct": true
+      },
+      {
+        "text": "Few DF molecules with that velocity in that vibrational state",
+        "why": "It is the reverse. Each contour area holds a constant number of molecules, so where the lines crowd together, more molecules have that velocity."
+      },
+      {
+        "text": "A higher vibrational state of DF",
+        "why": "Vibrational states are marked by the dashed circles, not by contour spacing. Close contours mean more DF molecules at that velocity."
+      },
+      {
+        "text": "DF molecules moving faster than the maximum speed",
+        "why": "No molecule moves faster than its state's maximum. The spacing of the contours tells you how many molecules there are, not how fast they move."
+      }
+    ],
+    "explanation": "The contour areas represent a constant number of DF molecules. The more closely the contour lines are spaced, the greater the number of DF molecules with that velocity in that vibrational state."
+  },
+  {
+    "id": "pc30-product-velocity-most-populated",
+    "type": "multiple-choice",
+    "prompt": "According to the section's estimate from the contour map, which vibrational state holds the most DF molecules formed in D_2 + F → DF + D?",
+    "choices": [
+      {
+        "text": "v = 3, with roughly half of the molecules",
+        "correct": true
+      },
+      {
+        "text": "v = 0, with roughly half of the molecules",
+        "why": "That would be true at thermal equilibrium, where the lowest state is the most populated. The map shows very few DF molecules in v = 0."
+      },
+      {
+        "text": "v = 4, with roughly half of the molecules",
+        "why": "v = 4 holds roughly 25% of the molecules, about the same as v = 2. The largest share, roughly half, is in v = 3."
+      },
+      {
+        "text": "v = 2, with roughly half of the molecules",
+        "why": "v = 2 holds roughly 25%, about the same as v = 4. Roughly half of the DF molecules are in v = 3."
+      }
+    ],
+    "explanation": "The section estimates that roughly half the DF molecules are in v = 3, roughly 25% in v = 2 and roughly 25% in v = 4. The reaction puts most of its products into a highly excited vibrational state."
+  },
+  {
+    "id": "pc30-product-velocity-empty-states",
+    "type": "multiple-choice",
+    "prompt": "According to the contour map for D_2 + F → DF + D, which vibrational states of DF hold very few of the product molecules?",
+    "choices": [
+      {
+        "text": "v = 0 and v = 1",
+        "correct": true
+      },
+      {
+        "text": "v = 3 and v = 4",
+        "why": "These hold about three quarters of the molecules between them: roughly half in v = 3 and 25% in v = 4. The nearly empty states are the lowest ones."
+      },
+      {
+        "text": "v = 2 and v = 4",
+        "why": "These each hold roughly 25% of the molecules. Very few DF molecules are in v = 0 or v = 1."
+      },
+      {
+        "text": "v = 4 only",
+        "why": "v = 4 holds roughly 25% of the molecules, even though it leaves the least energy for translation. The nearly empty states are v = 0 and v = 1."
+      }
+    ],
+    "explanation": "The section's estimate puts roughly half the molecules in v = 3 and roughly 25% each in v = 2 and v = 4, which leaves very few in v = 0 and v = 1. The low states are nearly empty, the opposite of a thermal population."
+  },
+  {
+    "id": "pc30-product-velocity-between-circles",
+    "type": "multiple-choice",
+    "prompt": "On the contour map for D_2 + F → DF + D, some DF molecules have velocities that fall between the dashed circles. What does the section say this shows?",
+    "choices": [
+      {
+        "text": "Those molecules are in various rotational states",
+        "correct": true
+      },
+      {
+        "text": "Those molecules are in vibrational states between whole numbers",
+        "why": "Vibrational states are quantized, so v is always a whole number. The speeds between the circles come from energy going into rotation."
+      },
+      {
+        "text": "Those molecules were not formed by the reaction",
+        "why": "They are DF products like the rest. They lie between the circles because part of their energy is rotational, which lowers their speed."
+      },
+      {
+        "text": "Those molecules have more than 165 kJ/mol of energy",
+        "why": "No product has more than the available energy. Molecules between the circles have less translational energy than the circle's maximum, because some is in rotation."
+      }
+    ],
+    "explanation": "If every DF molecule had E_rot = 0 (J = 0), the velocities would be centered on the dashed circles. Molecules between the dashed lines show that DF forms in various rotational states within each vibrational state."
+  },
+  {
+    "id": "pc30-product-velocity-rotation-speed",
+    "type": "multiple-choice",
+    "prompt": "Compare a DF molecule formed in v = 3 with J > 0 with one formed in v = 3 with J = 0. How does the rotating molecule's speed compare?",
+    "choices": [
+      {
+        "text": "It is slower, because its rotational energy comes out of translation",
+        "correct": true
+      },
+      {
+        "text": "It is faster, because rotation adds to its energy",
+        "why": "The total energy is fixed, so rotation doesn't add energy; it takes some. With E_rot > 0, less is left for translation."
+      },
+      {
+        "text": "It is the same, because rotation doesn't affect translation",
+        "why": "Rotation and translation share the same fixed energy. Energy in rotation is not available for translation, so the molecule moves more slowly."
+      },
+      {
+        "text": "It sits exactly on the v = 4 dashed circle",
+        "why": "It is still in v = 3. Its rotational energy lowers its speed somewhat, putting it between the v = 3 and v = 4 circles, not on the v = 4 circle."
+      }
+    ],
+    "explanation": "With J = 0, E_rot = 0 and a v = 3 molecule moves at the speed marked by the v = 3 dashed circle. Molecules with J > 0 have E_rot > 0, so their translational energy lies between that of the rotational ground states of neighboring vibrational states."
+  },
+  {
+    "id": "pc30-product-velocity-gaussian",
+    "type": "multiple-choice",
+    "prompt": "How does the section describe the distribution of vibrational states among the DF molecules formed in D_2 + F → DF + D?",
+    "choices": [
+      {
+        "text": "Closer to a normal (Gaussian-like) distribution than a Boltzmann one",
+        "correct": true
+      },
+      {
+        "text": "A Boltzmann distribution at room temperature",
+        "why": "A Boltzmann distribution falls off with v, with v = 0 the most populated. The measured distribution peaks at v = 3 instead."
+      },
+      {
+        "text": "An even spread over v = 0 to v = 4",
+        "why": "The states are far from equally filled: roughly half are in v = 3, and very few are in v = 0 or v = 1."
+      },
+      {
+        "text": "Concentrated almost entirely in v = 4",
+        "why": "v = 4 holds only roughly 25% of the molecules. The distribution peaks at v = 3, with v = 2 and v = 4 on either side."
+      }
+    ],
+    "explanation": "Roughly 25% in v = 2, half in v = 3 and 25% in v = 4 gives a peaked distribution, more like a normal (Gaussian-like) one. It is not the Boltzmann distribution expected at thermal equilibrium."
+  },
+  {
+    "id": "pc30-product-velocity-thermal-contrast",
+    "type": "multiple-choice",
+    "prompt": "If the DF molecules from D_2 + F → DF + D were in thermal equilibrium at 298 K, how would the populations of their vibrational states vary with v?",
+    "choices": [
+      {
+        "text": "They would decrease as v increases",
+        "correct": true
+      },
+      {
+        "text": "They would peak at v = 3, as observed",
+        "why": "A peak at v = 3 is what the experiment finds, and it is not what thermal equilibrium gives. A Boltzmann distribution falls steadily with v."
+      },
+      {
+        "text": "They would increase as v increases",
+        "why": "Higher states have more energy, so a Boltzmann distribution puts fewer molecules in them. The populations fall as v increases."
+      },
+      {
+        "text": "They would be equal in every state",
+        "why": "In a Boltzmann distribution each higher state, with more energy, holds fewer molecules than the one below it, so the populations fall as v increases."
+      }
+    ],
+    "explanation": "At thermal equilibrium the populations follow a Boltzmann distribution, N(v) proportional to e^(−(v + 1/2)hν_DF/k_B T), which decreases as v increases. The measured populations peak at v = 3 instead, so the products are not in thermal equilibrium."
+  },
+  {
+    "id": "pc30-product-velocity-rebound-definition",
+    "type": "multiple-choice",
+    "prompt": "In D_2 + F → DF + D, most DF molecules head back toward the direction from which the F atom approached, and some head directly back. What does the section call this type of collision?",
+    "choices": [
+      {
+        "text": "A rebound reaction",
+        "correct": true
+      },
+      {
+        "text": "A stripping reaction",
+        "why": "In a stripping reaction the products carry on in the same direction the reactants were moving. Here DF heads back, which makes it a rebound reaction."
+      },
+      {
+        "text": "A thermal reaction",
+        "why": "That term describes reactants at thermal equilibrium, not a scattering direction. A product heading back the way the reactant came marks a rebound reaction."
+      },
+      {
+        "text": "A head-on reaction",
+        "why": "The section names the collision by where the products go. DF heading back toward where F came from makes it a rebound reaction."
+      }
+    ],
+    "explanation": "The contour map shows that a majority of DF molecules head back toward the direction from which F originally approached, some directly back. This kind of collision is a rebound reaction, and the next section shows that not every reaction is one."
+  },
+  {
+    "id": "pc30-product-velocity-rebound-direction",
+    "type": "multiple-choice",
+    "prompt": "On the contour map for D_2 + F → DF + D, a D_2 molecule approaches from the left and an F atom from the right. In which direction do most DF molecules leave?",
+    "choices": [
+      {
+        "text": "Toward the right, back the way F came",
+        "correct": true
+      },
+      {
+        "text": "Toward the left, onward in the direction F was moving",
+        "why": "That would be forward scattering. The map shows DF mostly heading back toward the direction from which F approached, the right."
+      },
+      {
+        "text": "Equally in all directions",
+        "why": "The angular distribution is far from even. Most DF molecules head back toward where F came from, on the right."
+      },
+      {
+        "text": "Straight up or down, perpendicular to the beams",
+        "why": "Some DF is scattered sideways, but most heads back toward the direction from which F approached, which is the right."
+      }
+    ],
+    "explanation": "F arrives from the right. Most DF molecules head back toward the direction from which the F atom approached, so they leave toward the right, some directly back; this is a rebound reaction."
+  },
+  {
+    "id": "pc30-product-velocity-dot-density",
+    "type": "multiple-choice",
+    "prompt": "In Figure 30.8.1, a different style of contour map for D_2 + F → DF + D, what do the density of the dots and the intensity of their color represent?",
+    "choices": [
+      {
+        "text": "The number of particles scattered at each angle",
+        "correct": true
+      },
+      {
+        "text": "The temperature of the particles at each angle",
+        "why": "The map counts particles, not temperatures. Denser, more intense dots mean more particles scattered at that angle."
+      },
+      {
+        "text": "The energy of each collision",
+        "why": "The dots don't encode collision energy. Their density and color show how many particles are scattered at specific angles."
+      },
+      {
+        "text": "The time each particle takes to reach the detector",
+        "why": "No time appears on the map. Dot density and color intensity show how many particles are scattered at each angle."
+      }
+    ],
+    "explanation": "In this style of map, the density of the dots and the intensity of their color show the number of particles scattered at specific angles. It displays the angular distribution of the products."
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "pc30-internal-energy-modification",
+    "type": "multiple-choice",
+    "prompt": "After energy, collision geometry and orientation, what further modification of the collision model does this section introduce?",
+    "choices": [
+      {
+        "text": "Including the internal energy of the colliding particles",
+        "correct": true
+      },
+      {
+        "text": "Including the impact parameter of the collision",
+        "why": "The impact parameter b was already introduced in the line-of-centers model. This section adds the particles' internal energy."
+      },
+      {
+        "text": "Including the orientation of non-spherical molecules",
+        "why": "Orientation was the previous modification. This section adds the internal energy of the colliding particles."
+      },
+      {
+        "text": "Including a minimum energy E_0",
+        "why": "E_0 was introduced with the first energy-dependent cross section. The new step is to include internal energy."
+      }
+    ],
+    "explanation": "The section adds the internal energy of the colliding particles to the model. The earlier refinements dealt with the energy of relative motion, how off-center the collision is, and how the molecules are oriented."
+  },
+  {
+    "id": "pc30-internal-energy-components",
+    "type": "multiple-choice",
+    "prompt": "The section lists the kinds of energy that make up the internal energy of a polyatomic gas particle. Which of these is not one of them?",
+    "choices": [
+      {
+        "text": "Translational energy",
+        "correct": true
+      },
+      {
+        "text": "Vibrational energy",
+        "why": "Vibrational energy is on the list, and the section stresses it most. Translational energy, the motion of the particle as a whole, is not internal."
+      },
+      {
+        "text": "Electronic energy",
+        "why": "Electronic energy is the first item on the section's list. Translational energy is the one that is not internal."
+      },
+      {
+        "text": "Rotational energy",
+        "why": "The section includes rotational energy, possibly, in the internal energy. Translational energy is not part of it."
+      }
+    ],
+    "explanation": "The internal energy of a polyatomic gas particle includes electronic, vibrational and, possibly, rotational energy. Translational energy, the energy of relative motion E_r used in the earlier models, is separate from it."
+  },
+  {
+    "id": "pc30-internal-energy-vibration-exceeds",
+    "type": "multiple-choice",
+    "prompt": "A reaction has E_0 = 150 kJ mol^−1, and a polyatomic reactant molecule is in a vibrational state with 170 kJ mol^−1 of vibrational energy. According to the section, how much additional translational energy does it need to react?",
+    "choices": [
+      {
+        "text": "None",
+        "correct": true
+      },
+      {
+        "text": "At least 150 kJ mol^−1",
+        "why": "That treats E_0 as a requirement on translational energy alone. The section says a molecule whose vibrational energy alone exceeds E_0 needs no more translational energy."
+      },
+      {
+        "text": "At least 20 kJ mol^−1",
+        "why": "20 kJ mol^−1 is how far the vibrational energy exceeds E_0, an excess, not a shortfall. With more than E_0 in vibration, no translational energy is needed."
+      },
+      {
+        "text": "At least 320 kJ mol^−1",
+        "why": "Adding the two energies doesn't give a requirement. Since the vibrational energy already exceeds E_0, no additional translational energy is needed."
+      }
+    ],
+    "explanation": "The section notes that polyatomic molecules can be in a vibrational state high enough that their vibrational energy alone is greater than E_0. Such molecules would not require any additional translational energy to react."
+  },
+  {
+    "id": "pc30-internal-energy-source-of-e0",
+    "type": "multiple-choice",
+    "prompt": "In the earlier models, a collision needed a relative translational energy of at least E_0. What does this section imply about where the energy to reach E_0 can come from?",
+    "choices": [
+      {
+        "text": "From internal energy, such as vibration, as well as translation",
+        "correct": true
+      },
+      {
+        "text": "Only from the relative translational energy E_r",
+        "why": "That is the assumption this section corrects. A molecule with enough vibrational energy can react with no additional translational energy."
+      },
+      {
+        "text": "Only from vibrational energy",
+        "why": "Translational energy still counts, as in the earlier models. The section adds that internal energy, especially vibration, can supply energy too."
+      },
+      {
+        "text": "Only from the electronic energy of the molecules",
+        "why": "The section's example is vibrational energy, not electronic. Both translation and internal energy, especially vibration, can help reach E_0."
+      }
+    ],
+    "explanation": "The earlier cross sections depended only on E_r. Because a molecule with vibrational energy above E_0 needs no extra translational energy, energy stored inside the molecule can also count toward the minimum energy."
+  },
+  {
+    "id": "pc30-internal-energy-slow-collision",
+    "type": "multiple-choice",
+    "prompt": "A vibrationally excited polyatomic molecule, with vibrational energy greater than E_0, collides slowly with a partner, so that E_r < E_0. What would the threshold model of Section 30.1, with σ_r = 0 for E_r < E_0, wrongly predict?",
+    "choices": [
+      {
+        "text": "That the collision cannot lead to reaction",
+        "correct": true
+      },
+      {
+        "text": "That the collision certainly leads to reaction",
+        "why": "The threshold model looks only at E_r, which is below E_0 here, so it sets σ_r = 0. It wrongly rules the reaction out."
+      },
+      {
+        "text": "That the collision has a negative cross section",
+        "why": "The threshold model gives σ_r = 0 below E_0, never a negative value. The mistake is predicting no reaction at all."
+      },
+      {
+        "text": "That the vibrational energy is lost before the collision",
+        "why": "The threshold model has no internal energy in it at all, so it predicts nothing about vibration. It simply sets σ_r = 0 because E_r < E_0."
+      }
+    ],
+    "explanation": "The threshold model sets σ_r = 0 whenever E_r < E_0, so it rules out this collision. But the section says a molecule whose vibrational energy alone exceeds E_0 needs no additional translational energy, so it can react."
+  },
+  {
+    "id": "pc30-internal-energy-earlier-variable",
+    "type": "multiple-choice",
+    "prompt": "In the hard-sphere threshold and line-of-centers models, the reaction cross section was written σ_r(E_r). What is E_r?",
+    "choices": [
+      {
+        "text": "The relative translational kinetic energy of the colliding pair",
+        "correct": true
+      },
+      {
+        "text": "The total internal energy of the two molecules",
+        "why": "E_r = (1/2)μv_r^2 is the energy of relative motion. Internal energy was left out of those models, which is what this section addresses."
+      },
+      {
+        "text": "The vibrational energy of the more excited molecule",
+        "why": "The earlier models had no vibrational energy in them. E_r is the relative kinetic energy, (1/2)μv_r^2."
+      },
+      {
+        "text": "The minimum energy needed for reaction",
+        "why": "That is E_0, the threshold. E_r is the relative kinetic energy of the pair, compared with E_0."
+      }
+    ],
+    "explanation": "E_r = (1/2)μv_r^2 is the kinetic energy of the relative motion of the pair. Writing σ_r as a function of E_r alone leaves out the internal energy that this section says also affects σ_r."
+  },
+  {
+    "id": "pc30-internal-energy-constant-total",
+    "type": "multiple-choice",
+    "prompt": "Two collisions have the same total energy, but in one more of it is vibrational energy of a reactant. According to the section, can the two have different reaction cross sections σ_r?",
+    "choices": [
+      {
+        "text": "Yes; for constant total energy, σ_r depends on the vibrational state",
+        "correct": true
+      },
+      {
+        "text": "No; σ_r depends only on the total energy",
+        "why": "The section says the opposite: at constant total energy, σ_r still depends on the vibrational and rotational state."
+      },
+      {
+        "text": "No; σ_r depends only on the relative translational energy",
+        "why": "That was the earlier models' assumption. The section says the vibrational state, and to a smaller extent the rotational state, also matters."
+      },
+      {
+        "text": "Yes, but only if the molecules are spheres",
+        "why": "Spheres were the line-of-centers assumption. The section's point concerns polyatomic molecules, whose vibrational state affects σ_r."
+      }
+    ],
+    "explanation": "The section states that, for a constant total energy, the value of σ_r depends on the vibrational and, to a smaller extent, rotational state. How the energy is distributed matters, not just how much there is."
+  },
+  {
+    "id": "pc30-internal-energy-vib-vs-rot",
+    "type": "multiple-choice",
+    "prompt": "According to the section, how do the vibrational and rotational states compare in their effect on σ_r at constant total energy?",
+    "choices": [
+      {
+        "text": "Vibration has the larger effect; rotation a smaller one",
+        "correct": true
+      },
+      {
+        "text": "Rotation has the larger effect; vibration a smaller one",
+        "why": "This reverses the section, which says σ_r depends on the vibrational and, to a smaller extent, the rotational state."
+      },
+      {
+        "text": "Vibration matters; rotation has no effect at all",
+        "why": "The section says rotation matters to a smaller extent, not that it doesn't matter. Both affect σ_r, vibration more."
+      },
+      {
+        "text": "They have equal effects",
+        "why": "The section singles out vibration and says rotation matters to a smaller extent. Their effects are not equal."
+      }
+    ],
+    "explanation": "The section says that for a constant total energy σ_r depends on the vibrational and, to a smaller extent, rotational state of the particle. Its example of a molecule that can react without translational energy is a vibrationally excited one."
+  },
+  {
+    "id": "pc30-internal-energy-excited-partner",
+    "type": "multiple-choice",
+    "prompt": "Two collisions have the same relative translational energy E_r, just below E_0. In one, a reactant is in a high vibrational state; in the other, it is not. Which is more likely to lead to reaction?",
+    "choices": [
+      {
+        "text": "The one with the vibrationally excited reactant",
+        "correct": true
+      },
+      {
+        "text": "The one without vibrational excitation",
+        "why": "Vibrational energy can help a molecule react, not hinder it. With E_r just below E_0, the extra vibrational energy can make the difference."
+      },
+      {
+        "text": "Neither; both have E_r below E_0",
+        "why": "That holds only if E_r is all that matters, as in the earlier models. The section says vibrational energy can also supply what is needed to react."
+      },
+      {
+        "text": "Both equally, since E_r is the same",
+        "why": "Equal E_r doesn't mean equal chances once internal energy counts. The vibrationally excited reactant brings more energy to the collision."
+      }
+    ],
+    "explanation": "The section says vibrational energy can count toward the energy needed to react; a molecule with enough of it needs no extra translational energy at all. So with the same E_r, the vibrationally excited reactant is more likely to react."
+  },
+  {
+    "id": "pc30-internal-energy-exchange",
+    "type": "multiple-choice",
+    "prompt": "What does the section say can happen to energy during a collision between reacting particles?",
+    "choices": [
+      {
+        "text": "It can be exchanged between different degrees of freedom",
+        "correct": true
+      },
+      {
+        "text": "It stays in whichever degree of freedom it started in",
+        "why": "The section says the opposite: energy can move between degrees of freedom during a collision, and the model must allow for this."
+      },
+      {
+        "text": "Only translational energy can change during a collision",
+        "why": "Internal energy can change too. The section says energy can be exchanged between the different degrees of freedom."
+      },
+      {
+        "text": "It is lost, so the total energy falls",
+        "why": "The section speaks of energy being exchanged among degrees of freedom, not lost. The challenge is to track where it goes."
+      }
+    ],
+    "explanation": "During a collision, energy can be exchanged between the different degrees of freedom of the particle, such as translation and vibration. The section says the model must be modified to take these exchanges into account."
+  },
+  {
+    "id": "pc30-internal-energy-why-exchange-matters",
+    "type": "multiple-choice",
+    "prompt": "Why does the exchange of energy between degrees of freedom during a collision mean the collision model must be modified?",
+    "choices": [
+      {
+        "text": "The energy available in each form can change as the collision happens",
+        "correct": true
+      },
+      {
+        "text": "It makes the collision cross section σ_QB larger",
+        "why": "σ_QB is set by the molecular diameters and doesn't change. The issue is that energy shifts between forms during the collision."
+      },
+      {
+        "text": "It means that E_0 changes with each collision",
+        "why": "E_0 is the minimum energy for the reaction. What changes is how the colliding particles' energy is distributed among its forms."
+      },
+      {
+        "text": "It makes the molecules spherical",
+        "why": "Energy exchange has nothing to do with shape. It matters because energy can move between translation, vibration and rotation during the collision."
+      }
+    ],
+    "explanation": "If energy can flow between translation, vibration and rotation during a collision, the energy present in each form before the collision does not fix the outcome. A model that counts E_r alone misses this, so the section says the model must account for these exchanges."
+  },
+  {
+    "id": "pc30-internal-energy-center-of-mass",
+    "type": "multiple-choice",
+    "prompt": "According to the section, what will allow internal energy to be incorporated into the model of a reactive collision?",
+    "choices": [
+      {
+        "text": "Describing the collision in a center-of-mass coordinate system",
+        "correct": true
+      },
+      {
+        "text": "Treating the reactants as hard spheres",
+        "why": "Hard spheres have no internal energy, which is the problem. The section points to a center-of-mass coordinate system, taken up in Section 30.5."
+      },
+      {
+        "text": "Using the line-of-centers cross section",
+        "why": "The line-of-centers model deals with off-center collisions, not internal energy. The section points ahead to center-of-mass coordinates."
+      },
+      {
+        "text": "Raising the temperature until E_r exceeds E_0",
+        "why": "That changes the conditions, not the model. The section says a center-of-mass coordinate system will let internal energy into the model."
+      }
+    ],
+    "explanation": "The section says that Section 30.5 will use a center-of-mass coordinate system to describe the reactive collision. That description will allow the internal energy to be incorporated into the model."
+  },
+  {
+    "id": "pc30-internal-energy-left-out",
+    "type": "multiple-choice",
+    "prompt": "The hard-sphere, line-of-centers and orientation pictures all compare energy of relative motion with E_0. Which factor do they all leave out?",
+    "choices": [
+      {
+        "text": "The internal energy of the reactants",
+        "correct": true
+      },
+      {
+        "text": "The relative speed of the reactants",
+        "why": "All of these models use the relative speed, through ⟨v_r⟩ or E_r = (1/2)μv_r^2. What they leave out is internal energy."
+      },
+      {
+        "text": "The size of the molecules",
+        "why": "Size enters every one of them through σ_QB. Internal energy, such as vibration, is what is missing."
+      },
+      {
+        "text": "The temperature of the gas",
+        "why": "Temperature enters through ⟨v_r⟩ and e^(−E_0/k_B T). The missing factor is the reactants' internal energy."
+      }
+    ],
+    "explanation": "Each earlier picture uses E_r, σ_QB and T, and the later ones add collision geometry and orientation. None of them lets vibrational or rotational energy count, which is the factor this section adds."
+  },
+  {
+    "id": "pc30-internal-energy-loc-condition",
+    "type": "multiple-choice",
+    "prompt": "The line-of-centers model counts a collision as effective when E_loc > E_0. Why is this condition incomplete for a reactant in a high vibrational state?",
+    "choices": [
+      {
+        "text": "Vibrational energy can also supply the energy needed",
+        "correct": true
+      },
+      {
+        "text": "Vibration makes the impact parameter zero",
+        "why": "Vibration doesn't change how the paths of the centers line up. The condition is incomplete because vibrational energy also counts toward reaction."
+      },
+      {
+        "text": "Vibration raises the minimum energy E_0",
+        "why": "The section doesn't say vibration changes E_0. It says vibrational energy can help meet it, even without translational energy."
+      },
+      {
+        "text": "Vibrating molecules cannot collide",
+        "why": "Vibrating molecules collide like any others. The point is that their vibrational energy can count toward the energy needed to react."
+      }
+    ],
+    "explanation": "E_loc is part of the relative translational energy, so E_loc > E_0 counts only translation. A molecule whose vibrational energy alone exceeds E_0 can react without additional translational energy, so the condition misses it."
+  },
+  {
+    "id": "pc30-internal-energy-improved-sigma",
+    "type": "multiple-choice",
+    "prompt": "Once internal energy is included, what should the reaction cross section σ_r depend on?",
+    "choices": [
+      {
+        "text": "The relative energy and the vibrational and rotational states",
+        "correct": true
+      },
+      {
+        "text": "Only the relative translational energy E_r",
+        "why": "That was the earlier form, σ_r(E_r). The section says σ_r also depends on the vibrational and, less, rotational state."
+      },
+      {
+        "text": "Only the total energy of the colliding pair",
+        "why": "The section says that even at constant total energy σ_r depends on the vibrational and rotational states, so the total alone is not enough."
+      },
+      {
+        "text": "Only the molecular diameters",
+        "why": "That is the hard-sphere σ_QB, which has no energy dependence. The improved σ_r depends on the energies and states of the reactants."
+      }
+    ],
+    "explanation": "The earlier models wrote σ_r(E_r). Since the vibrational state, and to a smaller extent the rotational state, change σ_r even at constant total energy, a better σ_r must depend on these states as well as on the collision energy."
+  }
+]

@@ -1,0 +1,523 @@
+[
+  {
+    "id": "pc30-center-of-mass-why-model",
+    "type": "multiple-choice",
+    "prompt": "The section applies a center-of-mass coordinate system to the reaction B(g) + Q(g) → F(g) + G(g). What is the model meant to give?",
+    "choices": [
+      {
+        "text": "Theoretical values closer to experiment",
+        "correct": true
+      },
+      {
+        "text": "A way to measure molecular velocities",
+        "why": "The model is a way of describing the collision, not an instrument. The section uses it to develop an improved model of reaction kinetics."
+      },
+      {
+        "text": "Exact product scattering angles",
+        "why": "The section ends by saying the opposite: the angle between v⃗r and v⃗_Pr can't be determined, since products can leave in any direction."
+      },
+      {
+        "text": "A rate law read off the mechanism",
+        "why": "Rate laws come from mechanisms, not from this model. Here the aim is an improved model whose theoretical values more closely match experimental results."
+      }
+    ],
+    "explanation": "The section sets up the center-of-mass description to build an improved model for reaction kinetics, one whose theoretical values more closely represent experimental results. It does this by separating out the part of the kinetic energy that can drive the reaction."
+  },
+  {
+    "id": "pc30-center-of-mass-on-line",
+    "type": "multiple-choice",
+    "prompt": "Where does the section say the center of mass of two colliding molecules B and Q must lie?",
+    "choices": [
+      {
+        "text": "On the straight line between their centers",
+        "correct": true
+      },
+      {
+        "text": "Exactly halfway between their centers",
+        "why": "Halfway holds only when m_B = m_Q. In general R = (m_B r_B + m_Q r_Q)/M lies on the line between them, nearer the heavier molecule."
+      },
+      {
+        "text": "At the center of the heavier molecule",
+        "why": "R is weighted toward the heavier molecule but sits at its center only if the lighter one has no mass. It lies on the line joining the two centers."
+      },
+      {
+        "text": "Off the line, along the total velocity",
+        "why": "R is a mass-weighted average of the two positions, so it always lies on the straight line drawn between the two centers."
+      }
+    ],
+    "explanation": "The section states that the center of mass of two objects lies along the straight line drawn between their centers. R = (m_B r_B + m_Q r_Q)/M is a mass-weighted average of the two positions, so it sits nearer the heavier molecule."
+  },
+  {
+    "id": "pc30-center-of-mass-separation-vector",
+    "type": "multiple-choice",
+    "prompt": "B and Q head toward each other, so the line between them keeps changing length. Which vector does the section use to describe it?",
+    "choices": [
+      {
+        "text": "r⃗ = r⃗_B − r⃗_Q",
+        "correct": true
+      },
+      {
+        "text": "r⃗ = r⃗_B + r⃗_Q",
+        "why": "Adding the position vectors doesn't give the separation. The vector from Q to B is the difference, r⃗_B − r⃗_Q."
+      },
+      {
+        "text": "r⃗ = (m_B r⃗_B + m_Q r⃗_Q)/M",
+        "why": "That is R, the position of the center of mass. The changing line between the molecules is r⃗ = r⃗_B − r⃗_Q."
+      },
+      {
+        "text": "r⃗ = |r⃗_B| − |r⃗_Q|",
+        "why": "A difference of lengths is a single number with no direction, and it isn't the distance between them. The section uses the vector r⃗_B − r⃗_Q."
+      }
+    ],
+    "explanation": "The section represents the shrinking line between the molecules by r⃗ = r⃗_B − r⃗_Q. Its rate of change is the relative velocity v⃗_B − v⃗_Q, whose magnitude is the relative speed v_r."
+  },
+  {
+    "id": "pc30-center-of-mass-position-calc",
+    "type": "numeric",
+    "prompt": "Along a line, molecule B (mass 4.0 u) is at x = 0 and molecule Q (mass 12 u) is at x = 0.20 nm. Using R = (m_B r_B + m_Q r_Q)/M, where is the center of mass, in nm?",
+    "answer": 0.15,
+    "unit": "nm",
+    "explanation": "M = 4.0 u + 12 u = 16 u, so R = (4.0 u × 0 + 12 u × 0.20 nm)/(16 u) = 0.15 nm. The center of mass lies on the line between them, three times nearer the heavier Q."
+  },
+  {
+    "id": "pc30-center-of-mass-velocity-formula",
+    "type": "multiple-choice",
+    "prompt": "The section gets the velocity of the center of mass by differentiating R = (m_B r_B + m_Q r_Q)/M with respect to time. Which expression results?",
+    "choices": [
+      {
+        "text": "v⃗_cm = (m_B v⃗_B + m_Q v⃗_Q)/M",
+        "correct": true
+      },
+      {
+        "text": "v⃗_cm = (v⃗_B + v⃗_Q)/2",
+        "why": "A plain average ignores the masses; it holds only when m_B = m_Q. Differentiating R keeps the mass weighting."
+      },
+      {
+        "text": "v⃗_cm = v⃗_B − v⃗_Q",
+        "why": "That is the relative velocity, the rate of change of r⃗ = r⃗_B − r⃗_Q. The center of mass moves at the mass-weighted average."
+      },
+      {
+        "text": "v⃗_cm = (m_B v⃗_B − m_Q v⃗_Q)/M",
+        "why": "R is a sum of mass-weighted positions, so its derivative is a sum too. The minus sign belongs to the relative velocity, not v⃗_cm."
+      }
+    ],
+    "explanation": "Since velocity is dr⃗/dt, differentiating each position in R gives v⃗_cm = (m_B v⃗_B + m_Q v⃗_Q)/M with M = m_B + m_Q. Multiplying through by M shows that M v⃗_cm is the total linear momentum."
+  },
+  {
+    "id": "pc30-center-of-mass-velocity-calc",
+    "type": "numeric",
+    "prompt": "B (0.020 kg mol^−1) moves at +1000 m s^−1 and Q (0.030 kg mol^−1) moves at −500 m s^−1 along the same line. Using v_cm = (m_B v_B + m_Q v_Q)/M, what is v_cm, in m s^−1?",
+    "answer": 100,
+    "unit": "m s^−1",
+    "explanation": "v_cm = (0.020 × 1000 + 0.030 × (−500))/(0.050) m s^−1 = (20 − 15)/0.050 m s^−1 = 100 m s^−1. The pair as a whole drifts slowly in B's direction even though the molecules close in at 1500 m s^−1."
+  },
+  {
+    "id": "pc30-center-of-mass-ke-split",
+    "type": "multiple-choice",
+    "prompt": "The section rewrites KE_react = (1/2)m_B v_B^2 + (1/2)m_Q v_Q^2 as the sum of two terms. Which?",
+    "choices": [
+      {
+        "text": "(1/2)Mv_cm^2 + (1/2)μv_r^2",
+        "correct": true
+      },
+      {
+        "text": "(1/2)μv_cm^2 + (1/2)Mv_r^2",
+        "why": "The masses are swapped. The center of mass carries the total mass M; the relative motion uses the reduced mass μ."
+      },
+      {
+        "text": "(1/2)Mv_cm^2 − (1/2)μv_r^2",
+        "why": "Both terms are kinetic energies and so both are positive; the total is their sum, not their difference."
+      },
+      {
+        "text": "(1/2)Mv_r^2 + (1/2)μv_r^2",
+        "why": "Only one term involves the relative speed. The other is the motion of the pair as a whole, (1/2)Mv_cm^2."
+      }
+    ],
+    "explanation": "The kinetic energy splits into (1/2)Mv_cm^2, the motion of the center of mass with the total mass M, and (1/2)μv_r^2, the relative motion of B and Q with the reduced mass μ and relative speed v_r."
+  },
+  {
+    "id": "pc30-center-of-mass-relative-speed-definition",
+    "type": "multiple-choice",
+    "prompt": "In the section, how is the relative speed v_r of the colliding particles defined?",
+    "choices": [
+      {
+        "text": "v_r = |v⃗_B − v⃗_Q|",
+        "correct": true
+      },
+      {
+        "text": "v_r = |v⃗_B| − |v⃗_Q|",
+        "why": "A difference of speeds ignores direction: two molecules with equal speeds heading straight at each other would get v_r = 0. It is the magnitude of the difference of the velocities."
+      },
+      {
+        "text": "v_r = |v⃗_B + v⃗_Q|",
+        "why": "The sum of the velocities relates to the motion of the pair as a whole. Relative motion is the difference, v⃗_B − v⃗_Q."
+      },
+      {
+        "text": "v_r = |(m_B v⃗_B + m_Q v⃗_Q)/M|",
+        "why": "That is the speed of the center of mass, v_cm. The relative speed is |v⃗_B − v⃗_Q|."
+      }
+    ],
+    "explanation": "The relative speed is the magnitude of the difference of the two velocity vectors, v_r = |v⃗_B − v⃗_Q|. Taking the difference of the vectors first matters whenever the molecules aren't moving in the same direction."
+  },
+  {
+    "id": "pc30-center-of-mass-relative-speed-perpendicular",
+    "type": "numeric",
+    "prompt": "B moves at 600 m s^−1 along x and Q moves at 800 m s^−1 along y. Using v_r = |v⃗_B − v⃗_Q|, what is their relative speed, in m s^−1?",
+    "answer": 1000,
+    "unit": "m s^−1",
+    "explanation": "v⃗_B − v⃗_Q has components (600, −800) m s^−1, so v_r = √(600^2 + 800^2) m s^−1 = 1000 m s^−1. Subtracting the speeds, 800 − 600 = 200 m s^−1, would be wrong: v_r is the magnitude of the difference of the velocities."
+  },
+  {
+    "id": "pc30-center-of-mass-same-velocity",
+    "type": "multiple-choice",
+    "prompt": "B and Q fly side by side with exactly the same velocity v⃗. How much of KE_react = (1/2)Mv_cm^2 + (1/2)μv_r^2 is in relative motion?",
+    "choices": [
+      {
+        "text": "None; v_r = 0",
+        "correct": true
+      },
+      {
+        "text": "All of it; v_cm = 0",
+        "why": "With equal velocities the center of mass moves at v⃗ too, not 0. It is the relative speed |v⃗ − v⃗| that is zero."
+      },
+      {
+        "text": "Half of it",
+        "why": "There is no fixed half-and-half split; it depends on the velocities. Here v⃗_B − v⃗_Q = 0, so the relative term vanishes."
+      },
+      {
+        "text": "The fraction m_Q/M",
+        "why": "m_Q/M is the share when B moves and Q is at rest. With equal velocities, v_r = |v⃗ − v⃗| = 0 and none is relative."
+      }
+    ],
+    "explanation": "With v⃗_B = v⃗_Q, v_r = |v⃗_B − v⃗_Q| = 0 and all the kinetic energy is (1/2)Mv_cm^2. Since only (1/2)μv_r^2 can help overcome the barrier, such a pair has no collision energy at all, however fast it moves."
+  },
+  {
+    "id": "pc30-center-of-mass-relative-ke-calc",
+    "type": "numeric",
+    "prompt": "B has molar mass 0.010 kg mol^−1, Q has 0.040 kg mol^−1, and their relative speed is v_r = 2000 m s^−1. With μ = (m_B m_Q)/(m_B + m_Q), what is the relative kinetic energy (1/2)μv_r^2, in kJ mol^−1?",
+    "answer": 16,
+    "unit": "kJ mol^−1",
+    "explanation": "μ = (0.010 × 0.040)/(0.050) kg mol^−1 = 0.0080 kg mol^−1, so (1/2)μv_r^2 = 0.5 × 0.0080 × (2000)^2 J mol^−1 = 16 000 J mol^−1 = 16 kJ mol^−1. This is the part of the kinetic energy available to the reaction."
+  },
+  {
+    "id": "pc30-center-of-mass-target-at-rest",
+    "type": "numeric",
+    "prompt": "B (0.020 kg mol^−1) moves at 3000 m s^−1 toward Q (0.030 kg mol^−1), which is at rest. With μ = (m_B m_Q)/(m_B + m_Q) and v_r = |v⃗_B − v⃗_Q|, how much kinetic energy is in relative motion, (1/2)μv_r^2, in kJ mol^−1?",
+    "answer": 54,
+    "unit": "kJ mol^−1",
+    "explanation": "With Q at rest, v_r = 3000 m s^−1 and μ = (0.020 × 0.030)/(0.050) kg mol^−1 = 0.012 kg mol^−1, so (1/2)μv_r^2 = 0.5 × 0.012 × (3000)^2 J mol^−1 = 54 kJ mol^−1. The total is (1/2)(0.020)(3000)^2 J mol^−1 = 90 kJ mol^−1; the other 36 kJ mol^−1 is center-of-mass motion, which can't drive the reaction."
+  },
+  {
+    "id": "pc30-center-of-mass-which-energy-reacts",
+    "type": "multiple-choice",
+    "prompt": "According to the section, which part of the reactants' kinetic energy can contribute to overcoming the energy barrier?",
+    "choices": [
+      {
+        "text": "(1/2)μv_r^2, the relative motion",
+        "correct": true
+      },
+      {
+        "text": "(1/2)Mv_cm^2, the center of mass",
+        "why": "The center-of-mass energy stays constant through the collision, so it can't be spent on the reaction. Only the relative-motion term can."
+      },
+      {
+        "text": "Both terms, in full",
+        "why": "The center-of-mass term never contributes, and even the relative term contributes only in part when the collision isn't head-on."
+      },
+      {
+        "text": "(1/2)m_B v_B^2, the faster molecule's",
+        "why": "Each molecule's own kinetic energy includes some center-of-mass motion. What counts is the relative-motion term, (1/2)μv_r^2."
+      }
+    ],
+    "explanation": "The section splits the kinetic energy into a center-of-mass part and a relative part, and only (1/2)μv_r^2 can contribute to overcoming the barrier. The center-of-mass energy is constant, so it is carried through the collision unchanged."
+  },
+  {
+    "id": "pc30-center-of-mass-not-head-on",
+    "type": "multiple-choice",
+    "prompt": "Why does the section say only a fraction of (1/2)μv_r^2 contributes to overcoming the barrier?",
+    "choices": [
+      {
+        "text": "The molecules don't collide head-on",
+        "correct": true
+      },
+      {
+        "text": "Part of it is center-of-mass motion",
+        "why": "The center-of-mass motion is the other term, (1/2)Mv_cm^2, already set aside. The fraction lost from (1/2)μv_r^2 is because the collision isn't head-on."
+      },
+      {
+        "text": "Part of it is lost as heat to the gas",
+        "why": "The section treats an isolated collision of ideal gases, with energy conserved. The fraction arises because the molecules aren't colliding head-on."
+      },
+      {
+        "text": "The products carry some of it away",
+        "why": "What the products carry follows from energy conservation after the reaction. Before it, the limit is that the collision isn't head-on."
+      }
+    ],
+    "explanation": "The figure shows that each molecule contributes only the component of its velocity along the collision direction. In a glancing collision part of the relative motion is sideways, so only a fraction of (1/2)μv_r^2 goes toward the barrier."
+  },
+  {
+    "id": "pc30-center-of-mass-velocity-component",
+    "type": "multiple-choice",
+    "prompt": "In Figure 30.5.1, what part of each reactant's velocity contributes energy toward the reaction?",
+    "choices": [
+      {
+        "text": "The component along the collision direction",
+        "correct": true
+      },
+      {
+        "text": "The component perpendicular to it",
+        "why": "Motion across the collision direction makes the molecules pass by each other rather than push together. The co-linear component is what counts."
+      },
+      {
+        "text": "The component along v⃗_cm",
+        "why": "Motion with the center of mass is the part that never contributes. What counts is the component co-linear with the collision direction."
+      },
+      {
+        "text": "The whole velocity, whatever its direction",
+        "why": "If that were so, every bit of (1/2)μv_r^2 would count. The section says only a fraction does, the part co-linear with the collision direction."
+      }
+    ],
+    "explanation": "The figure caption says the energy each particle can contribute is set by the component of its velocity co-linear with the collision direction. These contributions are combined in the term (1/2)μv_r^2."
+  },
+  {
+    "id": "pc30-center-of-mass-figure-vcm",
+    "type": "multiple-choice",
+    "prompt": "Figure 30.5.1 follows a reactive collision at several times. What happens to the velocity of the center of mass as the collision proceeds?",
+    "choices": [
+      {
+        "text": "It stays constant at all times",
+        "correct": true
+      },
+      {
+        "text": "It drops to zero at the moment of collision",
+        "why": "The molecules' relative motion is stopped and redirected, not the pair's overall motion. v⃗_cm is the same before, during and after."
+      },
+      {
+        "text": "It reverses direction after the collision",
+        "why": "Reversing v⃗_cm would change the total momentum M v⃗_cm, which is conserved. The center of mass keeps moving the same way."
+      },
+      {
+        "text": "It grows as the barrier is crossed",
+        "why": "No energy flows into or out of the center-of-mass motion; that is why it can't help the reaction. v⃗_cm stays constant."
+      }
+    ],
+    "explanation": "The figure caption states that the velocity of the center of mass remains constant at all times. This is linear momentum conservation, M v⃗_cm = m_B v⃗_B + m_Q v⃗_Q, and it is why the center-of-mass energy can't be used for the reaction."
+  },
+  {
+    "id": "pc30-center-of-mass-momentum-conservation",
+    "type": "multiple-choice",
+    "prompt": "Which equation does the section write for conservation of linear momentum in B + Q → F + G?",
+    "choices": [
+      {
+        "text": "m_B v⃗_B + m_Q v⃗_Q = m_F v⃗_F + m_G v⃗_G = Mv⃗_cm",
+        "correct": true
+      },
+      {
+        "text": "m_B v⃗_B − m_Q v⃗_Q = m_F v⃗_F − m_G v⃗_G = Mv⃗_cm",
+        "why": "Total momentum is the sum of the molecules' momenta, not a difference. The differences belong to relative velocities."
+      },
+      {
+        "text": "m_B v_B^2 + m_Q v_Q^2 = m_F v_F^2 + m_G v_G^2",
+        "why": "Those are (twice) kinetic energies, and the products' kinetic energy differs from the reactants' because internal energy changes. Momentum, mv⃗, is what is conserved here."
+      },
+      {
+        "text": "μv⃗_r = μ_P v⃗_Pr",
+        "why": "The section says only that μ_P and v_Pr differ from μ and v_r, and that the angle between v⃗_r and v⃗_Pr can't be determined. The conserved quantity is the total momentum, Mv⃗_cm."
+      }
+    ],
+    "explanation": "The total momentum before, m_B v⃗_B + m_Q v⃗_Q, equals the total after, m_F v⃗_F + m_G v⃗_G, and both equal Mv⃗_cm. Since M is also conserved, v⃗_cm doesn't change."
+  },
+  {
+    "id": "pc30-center-of-mass-products-cm-momentum",
+    "type": "numeric",
+    "prompt": "In a frame where the center of mass is at rest (v_cm = 0), product F (0.020 kg mol^−1) leaves at 150 m s^−1. Using m_F v⃗_F + m_G v⃗_G = Mv⃗_cm, how fast does product G (0.0020 kg mol^−1) move, in m s^−1?",
+    "answer": 1500,
+    "unit": "m s^−1",
+    "explanation": "With v⃗_cm = 0, m_G v⃗_G = −m_F v⃗_F, so v_G = (0.020 × 150)/(0.0020) m s^−1 = 1500 m s^−1, in the opposite direction to F. The light product moves ten times faster than the heavy one."
+  },
+  {
+    "id": "pc30-center-of-mass-what-changes",
+    "type": "multiple-choice",
+    "prompt": "In B + Q → F + G, which quantity does the section say generally differs between reactants and products?",
+    "choices": [
+      {
+        "text": "The reduced mass, μ versus μ_P",
+        "correct": true
+      },
+      {
+        "text": "The total mass M",
+        "why": "Mass is conserved: M = m_B + m_Q = m_F + m_G. It is how the mass is divided between the two particles, and so the reduced mass, that changes."
+      },
+      {
+        "text": "The center-of-mass velocity v⃗_cm",
+        "why": "v⃗_cm is conserved through the reaction along with the total momentum Mv⃗_cm. The reduced mass and relative speed are what change."
+      },
+      {
+        "text": "The total linear momentum",
+        "why": "Linear momentum must be conserved: m_B v⃗_B + m_Q v⃗_Q = m_F v⃗_F + m_G v⃗_G. The reduced mass is what changes."
+      }
+    ],
+    "explanation": "Because F and G have different individual masses from B and Q, the products get their own reduced mass μ_P and relative speed v_Pr. The total mass M, the velocity v⃗_cm and the total momentum Mv⃗_cm are all conserved."
+  },
+  {
+    "id": "pc30-center-of-mass-products-ke",
+    "type": "multiple-choice",
+    "prompt": "After reaction, the section writes the products' kinetic energy as (1/2)m_F v_F^2 + (1/2)m_G v_G^2. How does it split?",
+    "choices": [
+      {
+        "text": "(1/2)Mv_cm^2 + (1/2)μ_P v_Pr^2",
+        "correct": true
+      },
+      {
+        "text": "(1/2)Mv_cm^2 + (1/2)μv_r^2",
+        "why": "That is the reactants' split. The products have their own reduced mass μ_P and relative speed v_Pr."
+      },
+      {
+        "text": "(1/2)M_P v_cm^2 + (1/2)μ_P v_Pr^2",
+        "why": "There is no separate product total mass: M = m_F + m_G = m_B + m_Q is conserved, so the first term is still (1/2)Mv_cm^2."
+      },
+      {
+        "text": "(1/2)μ_P v_Pr^2 only",
+        "why": "The pair still moves as a whole after the reaction, with the same v⃗_cm as before. The center-of-mass term (1/2)Mv_cm^2 remains."
+      }
+    ],
+    "explanation": "The products' kinetic energy is (1/2)Mv_cm^2 + (1/2)μ_P v_Pr^2. The first term is the same as before the reaction, since M and v⃗_cm are conserved; only the relative-motion term changes."
+  },
+  {
+    "id": "pc30-center-of-mass-why-cm-drops-out",
+    "type": "multiple-choice",
+    "prompt": "Why does the energy of center-of-mass motion not contribute to a successful reactive collision?",
+    "choices": [
+      {
+        "text": "It stays constant, since M and v⃗_cm are conserved",
+        "correct": true
+      },
+      {
+        "text": "It is always much smaller than the relative energy",
+        "why": "It needn't be small; a pair moving together has all its energy in center-of-mass motion. The point is that this energy is constant."
+      },
+      {
+        "text": "It is converted into the products' internal energy",
+        "why": "If it were converted it would contribute. It stays (1/2)Mv_cm^2 throughout because M and v⃗_cm are conserved."
+      },
+      {
+        "text": "It is zero for any pair of colliding molecules",
+        "why": "(1/2)Mv_cm^2 is zero only when the total momentum is zero. It doesn't contribute because it can't change, not because it vanishes."
+      }
+    ],
+    "explanation": "Total mass is conserved and linear momentum conservation keeps v⃗_cm constant, so (1/2)Mv_cm^2 is the same before and after. Energy that can't change can't be spent on the reaction, so it drops out of the energy balance."
+  },
+  {
+    "id": "pc30-center-of-mass-energy-balance",
+    "type": "multiple-choice",
+    "prompt": "Once the center-of-mass term is removed, which energy balance does the section obtain for B + Q → F + G?",
+    "choices": [
+      {
+        "text": "E_R(int) + (1/2)μv_r^2 = E_P(int) + (1/2)μ_P v_Pr^2",
+        "correct": true
+      },
+      {
+        "text": "E_R(int) + (1/2)Mv_cm^2 = E_P(int) + (1/2)Mv_cm^2",
+        "why": "The center-of-mass terms are the ones that cancel. What is left on each side is internal energy plus relative translational energy."
+      },
+      {
+        "text": "E_R(int) − (1/2)μv_r^2 = E_P(int) − (1/2)μ_P v_Pr^2",
+        "why": "Translational energy adds to the internal energy in the total; both are positive contributions on each side."
+      },
+      {
+        "text": "(1/2)μv_r^2 = (1/2)μ_P v_Pr^2",
+        "why": "That would hold only if no internal energy changed. A reaction changes the internal energy, so E_R(int) and E_P(int) must appear."
+      }
+    ],
+    "explanation": "Conservation of energy gives E_R(int) + (1/2)μv_r^2 = E_P(int) + (1/2)μ_P v_Pr^2, written more compactly as E_R(int) + E_R(trans) = E_P(int) + E_P(trans). Here 'trans' means the relative translational energy only."
+  },
+  {
+    "id": "pc30-center-of-mass-trans-meaning",
+    "type": "multiple-choice",
+    "prompt": "In the section's E_R(int) + E_R(trans) = E_P(int) + E_P(trans), what is E_R(trans)?",
+    "choices": [
+      {
+        "text": "(1/2)μv_r^2, the relative translational energy",
+        "correct": true
+      },
+      {
+        "text": "(1/2)m_B v_B^2 + (1/2)m_Q v_Q^2, the total",
+        "why": "The total also includes (1/2)Mv_cm^2, which is the same on both sides and has been removed. E_R(trans) is the relative term alone."
+      },
+      {
+        "text": "(1/2)Mv_cm^2, the center-of-mass energy",
+        "why": "That term is constant and was dropped from the balance. E_R(trans) is the energy of relative motion, (1/2)μv_r^2."
+      },
+      {
+        "text": "The reactants' rotational energy",
+        "why": "Rotation is internal energy, part of E_R(int). E_R(trans) is the relative translational energy (1/2)μv_r^2."
+      }
+    ],
+    "explanation": "The section rewrites E_R(int) + (1/2)μv_r^2 = E_P(int) + (1/2)μ_P v_Pr^2 by calling the kinetic terms E_R(trans) and E_P(trans). So E_R(trans) = (1/2)μv_r^2, the relative translational energy of the reactants."
+  },
+  {
+    "id": "pc30-center-of-mass-product-trans-calc",
+    "type": "numeric",
+    "prompt": "Measured from a common zero, a reacting pair has E_R(int) = 30 kJ mol^−1 and E_R(trans) = 15 kJ mol^−1, and the products have E_P(int) = 5 kJ mol^−1. Using E_R(int) + E_R(trans) = E_P(int) + E_P(trans), what is E_P(trans), in kJ mol^−1?",
+    "answer": 40,
+    "unit": "kJ mol^−1",
+    "tolerance": 0,
+    "explanation": "E_P(trans) = 30 + 15 − 5 kJ mol^−1 = 40 kJ mol^−1. The 25 kJ mol^−1 of internal energy the reaction gives up appears as extra relative translational energy of the products."
+  },
+  {
+    "id": "pc30-center-of-mass-product-speed-calc",
+    "type": "numeric",
+    "prompt": "The products of a reaction have E_P(trans) = (1/2)μ_P v_Pr^2 = 25 kJ mol^−1 and reduced mass μ_P = 0.0020 kg mol^−1. What is their relative speed v_Pr, in m s^−1?",
+    "answer": 5000,
+    "unit": "m s^−1",
+    "explanation": "v_Pr = √(2E_P(trans)/μ_P) = √(2 × 25 000 J mol^−1 / 0.0020 kg mol^−1) = √(2.5 × 10^7) m s^−1 = 5000 m s^−1. Remember to convert kJ to J so the units come out in m s^−1."
+  },
+  {
+    "id": "pc30-center-of-mass-exothermic-products",
+    "type": "multiple-choice",
+    "prompt": "In a reaction, E_P(int) is lower than E_R(int). By E_R(int) + E_R(trans) = E_P(int) + E_P(trans), how do the products' relative translational energy and the reactants' compare?",
+    "choices": [
+      {
+        "text": "E_P(trans) is larger than E_R(trans)",
+        "correct": true
+      },
+      {
+        "text": "E_P(trans) is smaller than E_R(trans)",
+        "why": "That is the case when internal energy rises. Here internal energy falls, and the difference reappears as translational energy."
+      },
+      {
+        "text": "They are equal, since energy is conserved",
+        "why": "Energy conservation applies to the total, internal plus translational. If the internal part falls, the translational part must rise by the same amount."
+      },
+      {
+        "text": "They are equal, since v⃗_cm is conserved",
+        "why": "Conserving v⃗_cm fixes (1/2)Mv_cm^2, which is not in this balance. The relative translational energies can differ."
+      }
+    ],
+    "explanation": "Rearranging gives E_P(trans) − E_R(trans) = E_R(int) − E_P(int). If the internal energy falls, that amount is added to the relative translational energy, so E_P(trans) > E_R(trans)."
+  },
+  {
+    "id": "pc30-center-of-mass-scattering-angle",
+    "type": "multiple-choice",
+    "prompt": "Conservation of energy and momentum fix the products' relative speed. What does the section say they cannot fix?",
+    "choices": [
+      {
+        "text": "The angle between v⃗_r and v⃗_Pr",
+        "correct": true
+      },
+      {
+        "text": "The velocity of the center of mass",
+        "why": "v⃗_cm is fixed: momentum conservation keeps it the same as before the reaction. It is the direction of v⃗_Pr that is left open."
+      },
+      {
+        "text": "The total mass of the products",
+        "why": "M = m_F + m_G is known; mass is conserved. What can't be determined is the angle between v⃗_r and v⃗_Pr."
+      },
+      {
+        "text": "The products' reduced mass μ_P",
+        "why": "μ_P follows from the product masses m_F and m_G. What can't be found is the direction the products leave in."
+      }
+    ],
+    "explanation": "Energy and momentum conservation fix v⃗_cm and the size of v_Pr, but not its direction. Products can theoretically disperse from the collision in any direction, so the angle between v⃗_r and v⃗_Pr can't be determined this way."
+  }
+]

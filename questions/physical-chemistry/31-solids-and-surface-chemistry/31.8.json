@@ -1,0 +1,511 @@
+[
+  {
+    "id": "pc31-surface-rate-unimolecular-assumptions",
+    "type": "multiple-choice",
+    "prompt": "For the surface decomposition A_(g) ⇌ A_(ads) → Products, which of these is one of the section's assumptions?",
+    "choices": [
+      {
+        "text": "The surface decomposition step is rate determining",
+        "correct": true
+      },
+      {
+        "text": "Adsorption of A is the rate-determining step",
+        "why": "If adsorption were slow, A_(ads) would not be in equilibrium with the gas and the Langmuir isotherm couldn't be used. The section takes the surface decomposition as the rds."
+      },
+      {
+        "text": "The products are strongly bound and stay on the surface",
+        "why": "The section assumes the opposite: the products are very weakly bound and, once formed, rapidly desorb."
+      },
+      {
+        "text": "Decomposition happens only at a few special sites",
+        "why": "The section assumes the reaction occurs uniformly across all the sites where A can adsorb, not at a limited number of special sites."
+      }
+    ],
+    "explanation": "The section assumes that decomposition occurs uniformly across the adsorption sites, that the products are weakly bound and rapidly desorbed, and that the surface decomposition is the rate-determining step. Together these let it take θ from the Langmuir isotherm and write rate = kθ."
+  },
+  {
+    "id": "pc31-surface-rate-why-isotherm",
+    "type": "multiple-choice",
+    "prompt": "In A_(g) ⇌ A_(ads) → Products, why can the section use the Langmuir isotherm θ = bP/(1 + bP) for the coverage of A during the reaction?",
+    "choices": [
+      {
+        "text": "Adsorbed A stays in equilibrium with the gas, since the slow step comes after adsorption",
+        "correct": true
+      },
+      {
+        "text": "No A is consumed on the surface, so the coverage never changes",
+        "why": "A is consumed by the decomposition. Because that step is slow, adsorption and desorption keep the coverage at its equilibrium value."
+      },
+      {
+        "text": "The isotherm applies to any surface, whatever the reaction does",
+        "why": "The isotherm describes an equilibrium. It holds here only because the decomposition is slow enough that adsorbed A stays in equilibrium with gas-phase A."
+      },
+      {
+        "text": "The products adsorb on the same sites and set the coverage of A",
+        "why": "The products are assumed to desorb rapidly, so they don't take up sites. The coverage of A comes from its own adsorption equilibrium."
+      }
+    ],
+    "explanation": "With surface decomposition as the rate-determining step, the molecules of A on the surface are in equilibrium with those in the gas phase. Their coverage is therefore given by the Langmuir isotherm, θ = bP/(1 + bP)."
+  },
+  {
+    "id": "pc31-surface-rate-unimolecular-law",
+    "type": "multiple-choice",
+    "prompt": "The decomposition of adsorbed A is a unimolecular elementary step, so rate = kθ. Using the Langmuir isotherm for θ, what is the rate in terms of the pressure P of A?",
+    "choices": [
+      {
+        "text": "rate = kbP/(1 + bP)",
+        "correct": true
+      },
+      {
+        "text": "rate = kbP",
+        "why": "That is only the low-pressure limit, where 1 + bP ≈ 1. The full expression keeps the denominator: kbP/(1 + bP)."
+      },
+      {
+        "text": "rate = k/(1 + bP)",
+        "why": "1/(1 + bP) is the fraction of vacant sites, 1 − θ. The rate goes with the occupied fraction θ = bP/(1 + bP)."
+      },
+      {
+        "text": "rate = kP",
+        "why": "That ignores adsorption altogether. The rate depends on P only through θ, giving kbP/(1 + bP)."
+      }
+    ],
+    "explanation": "Substituting θ = bP/(1 + bP) into rate = kθ gives rate = kbP/(1 + bP). This expresses the rate in terms of the pressure of gas above the surface."
+  },
+  {
+    "id": "pc31-surface-rate-unimolecular-calc",
+    "type": "numeric",
+    "prompt": "A gas decomposes on a catalyst with rate = kbP/(1 + bP), where k = 0.040 mol m^−2 s^−1 and b = 0.20 kPa^−1. What is the rate, in mol m^−2 s^−1, at P = 15 kPa? (Give it as a decimal.)",
+    "answer": 0.03,
+    "unit": "mol m^−2 s^−1",
+    "explanation": "bP = 0.20 kPa^−1 × 15 kPa = 3.0, so θ = 3.0/4.0 = 0.75 and rate = 0.040 × 0.75 = 0.030 mol m^−2 s^−1. The rate is three quarters of its maximum value k."
+  },
+  {
+    "id": "pc31-surface-rate-low-pressure-limit",
+    "type": "multiple-choice",
+    "prompt": "For rate = kbP/(1 + bP), what kinetics does the section find in the low-pressure (or weak-binding) limit, bP ≪ 1?",
+    "choices": [
+      {
+        "text": "First order in P, with apparent rate constant k' = kb",
+        "correct": true
+      },
+      {
+        "text": "First order in P, with apparent rate constant k' = k",
+        "why": "The order is right, but b stays in the rate: rate ≈ kbP, so k' = kb."
+      },
+      {
+        "text": "Zero order in P, with rate ≈ k",
+        "why": "That is the high-pressure limit, bP ≫ 1. At low pressure 1 + bP ≈ 1 and the rate is kbP."
+      },
+      {
+        "text": "Second order in P, with rate ≈ kb^2P^2",
+        "why": "Only one adsorbed molecule takes part in the rate-determining step. With 1 + bP ≈ 1, rate ≈ kbP, first order in P."
+      }
+    ],
+    "explanation": "When bP ≪ 1, 1 + bP ≈ 1 and rate ≈ kbP. The coverage is very small, and the kinetics are first order in the partial pressure of A, with apparent first-order rate constant k' = kb."
+  },
+  {
+    "id": "pc31-surface-rate-low-pressure-error",
+    "type": "numeric",
+    "prompt": "For rate = kbP/(1 + bP) with b = 0.010 kPa^−1, what is the ratio of the true rate to the low-pressure approximation kbP at P = 5.0 kPa? (Give it as a decimal.)",
+    "answer": 0.952,
+    "explanation": "The ratio is (kbP/(1 + bP))/(kbP) = 1/(1 + bP). With bP = 0.010 × 5.0 = 0.050, it is 1/1.050 = 0.952, so the first-order approximation is within 5%."
+  },
+  {
+    "id": "pc31-surface-rate-strong-binding",
+    "type": "multiple-choice",
+    "prompt": "A gas binds very strongly to a catalyst (large b), so bP ≫ 1 even at modest pressures. According to the section, what is the order of its decomposition rate with respect to its pressure?",
+    "choices": [
+      {
+        "text": "Zero order",
+        "correct": true
+      },
+      {
+        "text": "First order",
+        "why": "First order needs bP ≪ 1, the weak-binding limit. With bP ≫ 1 the surface is nearly saturated and rate ≈ k."
+      },
+      {
+        "text": "Negative first order",
+        "why": "A single reactant can't block itself here: rate = kθ, and θ only rises toward 1. With bP ≫ 1, rate ≈ k, independent of P."
+      },
+      {
+        "text": "Half order",
+        "why": "Half order arises from dissociative adsorption, as for O_2 in the CO oxidation example. For molecular A with bP ≫ 1, rate ≈ k."
+      }
+    ],
+    "explanation": "The high-pressure limit is also the strong-binding limit. With bP ≫ 1, 1 + bP ≈ bP and rate ≈ k: the coverage is almost unity, and the reaction is zero order in the pressure of A."
+  },
+  {
+    "id": "pc31-surface-rate-double-pressure",
+    "type": "numeric",
+    "prompt": "A gas decomposes on a surface with rate = kbP/(1 + bP) and b = 0.50 kPa^−1. By what factor does the rate increase when P is doubled from 2.0 kPa to 4.0 kPa?",
+    "answer": 1.333,
+    "explanation": "At 2.0 kPa, bP = 1.0 and θ = 0.50; at 4.0 kPa, bP = 2.0 and θ = 0.667. The rate rises by 0.667/0.50 = 1.33: between the factor of 2 of a first-order reaction and the factor of 1 of a zero-order one."
+  },
+  {
+    "id": "pc31-surface-rate-follows-coverage",
+    "type": "multiple-choice",
+    "prompt": "The section notes that the rate of the unimolecular surface decomposition shows the same pressure variation as the surface coverage. Why is this hardly surprising?",
+    "choices": [
+      {
+        "text": "The rate is directly proportional to θ",
+        "correct": true
+      },
+      {
+        "text": "The rate is proportional to P, and so is θ",
+        "why": "θ is proportional to P only in the low-pressure limit. The rate tracks θ at every pressure because rate = kθ."
+      },
+      {
+        "text": "The rate and θ are both independent of P",
+        "why": "Both depend on P through θ = bP/(1 + bP); they level off only at high pressure. They match because rate = kθ."
+      },
+      {
+        "text": "The products desorb as fast as A adsorbs",
+        "why": "Fast product desorption keeps sites free, but it isn't why the rate tracks θ. That follows from rate = kθ."
+      }
+    ],
+    "explanation": "Because rate = kθ, the rate is just the coverage multiplied by a constant. Figure 31.8.1 has the same shape as the isotherm: first order at low pressure, approaching zero order at high pressure."
+  },
+  {
+    "id": "pc31-surface-rate-mobile-adsorbates",
+    "type": "multiple-choice",
+    "prompt": "For the Langmuir-Hinshelwood scheme A_(ads) + B_(ads) → AB_(ads) → AB_(g), with the surface reaction rate determining, what condition does the section state for writing Rate = kθ_A θ_B?",
+    "choices": [
+      {
+        "text": "The adsorbed molecules are mobile and freely intermix",
+        "correct": true
+      },
+      {
+        "text": "A and B adsorb on different kinds of sites",
+        "why": "The section has A and B competing for the same sites. Rate = kθ_A θ_B needs the adsorbed molecules to be mobile and freely intermixed."
+      },
+      {
+        "text": "The product AB is strongly bound to the surface",
+        "why": "AB_(ads) is assumed to desorb fast. The condition for Rate = kθ_A θ_B is that the adsorbed A and B are mobile and freely intermix."
+      },
+      {
+        "text": "Only one of A or B adsorbs; the other reacts from the gas",
+        "why": "Both are adsorbed in this scheme, which is why both coverages appear. The condition is that they are mobile and freely intermix."
+      }
+    ],
+    "explanation": "If the two adsorbed molecules are mobile on the surface and freely intermix, the bimolecular surface combination step has Rate = kθ_A θ_B. The coverages then come from the Langmuir isotherm for two competing adsorbates."
+  },
+  {
+    "id": "pc31-surface-rate-competitive-coverage",
+    "type": "multiple-choice",
+    "prompt": "Molecules A and B compete for the same adsorption sites. Which expression does the section give for the coverage of A?",
+    "choices": [
+      {
+        "text": "θ_A = (b_A P_A)/(1 + b_A P_A + b_B P_B)",
+        "correct": true
+      },
+      {
+        "text": "θ_A = (b_A P_A)/(1 + b_A P_A)",
+        "why": "That is the single-gas isotherm, which ignores B. Since B takes up some of the same sites, b_B P_B also appears in the denominator."
+      },
+      {
+        "text": "θ_A = (b_A P_A)/(1 + b_B P_B)",
+        "why": "This leaves out A's own term. The denominator includes both gases: 1 + b_A P_A + b_B P_B."
+      },
+      {
+        "text": "θ_A = (b_A P_A b_B P_B)/(1 + b_A P_A + b_B P_B)",
+        "why": "The numerator holds only A's term; θ_B has b_B P_B in its numerator. The product of the two appears later, in the rate."
+      }
+    ],
+    "explanation": "For two molecules competing for the same sites, θ_A = (b_A P_A)/(1 + b_A P_A + b_B P_B) and θ_B = (b_B P_B)/(1 + b_A P_A + b_B P_B). The shared denominator reflects that each gas takes sites away from the other."
+  },
+  {
+    "id": "pc31-surface-rate-competitive-calc",
+    "type": "numeric",
+    "prompt": "Gases A and B compete for the same sites, with b_A = 0.40 kPa^−1, P_A = 5.0 kPa, b_B = 0.10 kPa^−1 and P_B = 10 kPa. Using θ_A = (b_A P_A)/(1 + b_A P_A + b_B P_B), what is θ_A? (Give it as a decimal.)",
+    "answer": 0.5,
+    "explanation": "b_A P_A = 2.0 and b_B P_B = 1.0, so θ_A = 2.0/(1 + 2.0 + 1.0) = 0.50. Without B it would be 2.0/3.0 = 0.67; the competing gas takes a quarter of the sites."
+  },
+  {
+    "id": "pc31-surface-rate-squared-denominator",
+    "type": "multiple-choice",
+    "prompt": "Why does the Langmuir-Hinshelwood rate, Rate = (kb_A P_A b_B P_B)/((1 + b_A P_A + b_B P_B)^2), have a squared denominator?",
+    "choices": [
+      {
+        "text": "It is the product θ_A θ_B, and both coverages share that denominator",
+        "correct": true
+      },
+      {
+        "text": "Two sites are needed for each adsorbed molecule",
+        "why": "Each molecule takes one site here. The square comes from multiplying θ_A by θ_B, which both have 1 + b_A P_A + b_B P_B underneath."
+      },
+      {
+        "text": "The surface reaction is second order in vacant sites",
+        "why": "The rate depends on the occupied sites, θ_A and θ_B, not the vacant ones. Each coverage brings one factor of the shared denominator."
+      },
+      {
+        "text": "The product AB also competes for the sites",
+        "why": "AB is assumed to desorb fast and doesn't appear in the denominator. The square comes from multiplying the two coverages."
+      }
+    ],
+    "explanation": "Rate = kθ_A θ_B, and θ_A and θ_B each equal their own bP term divided by 1 + b_A P_A + b_B P_B. Multiplying them gives that denominator squared."
+  },
+  {
+    "id": "pc31-surface-rate-bimolecular-calc",
+    "type": "numeric",
+    "prompt": "For a Langmuir-Hinshelwood reaction, Rate = kθ_A θ_B with θ_A = (b_A P_A)/(1 + b_A P_A + b_B P_B) and θ_B = (b_B P_B)/(1 + b_A P_A + b_B P_B). Find the rate, in mol m^−2 s^−1, when k = 0.050 mol m^−2 s^−1, b_A = 0.25 kPa^−1, P_A = 4.0 kPa, b_B = 0.30 kPa^−1 and P_B = 10 kPa. (Give it as a decimal.)",
+    "answer": 0.006,
+    "unit": "mol m^−2 s^−1",
+    "explanation": "b_A P_A = 1.0 and b_B P_B = 3.0, so the denominator is 5.0, θ_A = 0.20 and θ_B = 0.60. Rate = 0.050 × 0.20 × 0.60 = 0.0060 mol m^−2 s^−1."
+  },
+  {
+    "id": "pc31-surface-rate-raise-pb",
+    "type": "multiple-choice",
+    "prompt": "A and B compete for the same surface sites. If P_B is raised while P_A is held fixed, what happens to θ_A = (b_A P_A)/(1 + b_A P_A + b_B P_B)?",
+    "choices": [
+      {
+        "text": "It decreases, because B occupies sites A could use",
+        "correct": true
+      },
+      {
+        "text": "It stays the same, because P_A hasn't changed",
+        "why": "θ_A depends on P_B through the shared denominator. More B on the surface leaves fewer sites for A."
+      },
+      {
+        "text": "It increases, because there is more gas overall",
+        "why": "B's extra pressure fills sites with B, not A. b_B P_B grows in the denominator, so θ_A falls."
+      },
+      {
+        "text": "It decreases, because B reacts with gas-phase A",
+        "why": "In this scheme A and B react only once both are adsorbed. θ_A falls because B competes with A for the same sites."
+      }
+    ],
+    "explanation": "b_B P_B appears in the denominator of θ_A, so raising P_B lowers θ_A. The two adsorbates compete for the same sites, and more of one means less room for the other."
+  },
+  {
+    "id": "pc31-surface-rate-bimolecular-low-limit",
+    "type": "multiple-choice",
+    "prompt": "For Rate = (kb_A P_A b_B P_B)/((1 + b_A P_A + b_B P_B)^2), what kinetics does the section find when b_A P_A ≪ 1 and b_B P_B ≪ 1?",
+    "choices": [
+      {
+        "text": "First order in both A and B",
+        "correct": true
+      },
+      {
+        "text": "Zero order in both A and B",
+        "why": "Zero order would need nearly saturated sites. With both coverages small, the denominator is about 1 and Rate → kb_A P_A b_B P_B."
+      },
+      {
+        "text": "First order in A and negative first order in B",
+        "why": "That is the mixed limit, b_A P_A ≪ 1 ≪ b_B P_B. With both terms small, the rate is k'P_A P_B."
+      },
+      {
+        "text": "Second order in A and second order in B",
+        "why": "The squared term is the denominator, which tends to 1 here. The numerator has P_A and P_B each to the first power."
+      }
+    ],
+    "explanation": "With both bP terms much less than 1, θ_A and θ_B are both very low, the denominator is close to 1, and Rate → kb_A P_A b_B P_B = k'P_A P_B. The reaction is first order in both reactants."
+  },
+  {
+    "id": "pc31-surface-rate-mixed-limit",
+    "type": "multiple-choice",
+    "prompt": "In the section's mixed limit, b_A P_A ≪ 1 ≪ b_B P_B, what does Rate = (kb_A P_A b_B P_B)/((1 + b_A P_A + b_B P_B)^2) become?",
+    "choices": [
+      {
+        "text": "(k'P_A)/(P_B): first order in A, negative first order in B",
+        "correct": true
+      },
+      {
+        "text": "k'P_A P_B: first order in both A and B",
+        "why": "That holds only when both bP terms are small. Here b_B P_B ≫ 1, so the denominator is about (b_B P_B)^2 and one factor of P_B cancels."
+      },
+      {
+        "text": "k'P_A: first order in A, zero order in B",
+        "why": "The denominator, (b_B P_B)^2, has one more power of P_B than the numerator, so P_B is left in the denominator: order −1 in B."
+      },
+      {
+        "text": "(k'P_B)/(P_A): first order in B, negative first order in A",
+        "why": "This swaps the roles. B is the strongly adsorbed gas, so B's pressure ends up in the denominator."
+      }
+    ],
+    "explanation": "With b_B P_B dominating, the denominator is about (b_B P_B)^2, so Rate → (kb_A P_A b_B P_B)/(b_B P_B)^2 = (kb_A P_A)/(b_B P_B) = (k'P_A)/(P_B). The reaction is first order in A but negative first order in B."
+  },
+  {
+    "id": "pc31-surface-rate-mixed-coverage",
+    "type": "multiple-choice",
+    "prompt": "In the mixed limit b_A P_A ≪ 1 ≪ b_B P_B of a Langmuir-Hinshelwood reaction, what does the surface look like?",
+    "choices": [
+      {
+        "text": "Almost all sites hold B; very few hold A",
+        "correct": true
+      },
+      {
+        "text": "Almost all sites hold A; very few hold B",
+        "why": "This swaps the two. b_B P_B ≫ 1 means B is strongly adsorbed, so θ_B → 1 while θ_A → 0."
+      },
+      {
+        "text": "A and B each cover about half the sites",
+        "why": "That would need b_A P_A ≈ b_B P_B. Here b_B P_B is far larger, so B fills almost every site."
+      },
+      {
+        "text": "Most of the sites are vacant",
+        "why": "Mostly vacant sites match the low-pressure limit, where both bP terms are small. Here b_B P_B ≫ 1, so θ_B → 1."
+      }
+    ],
+    "explanation": "In this limit θ_A → 0 and θ_B → 1: B covers nearly the whole surface. Raising P_B can't add much more B, but it pushes A off the surface, which is why the rate falls with P_B."
+  },
+  {
+    "id": "pc31-surface-rate-mixed-scaling",
+    "type": "numeric",
+    "prompt": "A Langmuir-Hinshelwood reaction is in the mixed limit, where Rate = (k'P_A)/(P_B). By what factor does the rate change when P_A is tripled and P_B is doubled?",
+    "answer": 1.5,
+    "tolerance": 0,
+    "explanation": "The rate is proportional to P_A/P_B, so it changes by 3/2 = 1.5. Tripling A alone would triple the rate, but doubling the strongly adsorbed B halves it, because B crowds A off the surface."
+  },
+  {
+    "id": "pc31-surface-rate-rise-and-fall",
+    "type": "multiple-choice",
+    "prompt": "In a Langmuir-Hinshelwood reaction with P_A held low (b_A P_A ≪ 1), P_B is raised from b_B P_B ≪ 1 to b_B P_B ≫ 1. Using the section's two limits, how does the rate respond?",
+    "choices": [
+      {
+        "text": "It first rises with P_B, then falls as P_B keeps increasing",
+        "correct": true
+      },
+      {
+        "text": "It rises with P_B throughout, then levels off",
+        "why": "Leveling off is what the unimolecular rate does. Here the rate is first order in B at low P_B but order −1 in B at high P_B, so it falls."
+      },
+      {
+        "text": "It falls with P_B throughout",
+        "why": "At low P_B the rate is k'P_A P_B, first order in B, so it rises at first. It falls only once b_B P_B ≫ 1."
+      },
+      {
+        "text": "It doesn't depend on P_B, since A is the limiting reactant",
+        "why": "Both coverages enter the rate. B's pressure first raises θ_B, then crowds A off the surface."
+      }
+    ],
+    "explanation": "When b_B P_B ≪ 1 the rate is k'P_A P_B, first order in B, so it rises. When b_B P_B ≫ 1 it becomes (k'P_A)/(P_B), so it falls. The same mechanism thus shows different apparent orders in B depending on the pressure."
+  },
+  {
+    "id": "pc31-surface-rate-mechanism-warning",
+    "type": "multiple-choice",
+    "prompt": "One Langmuir-Hinshelwood model gives first-order kinetics in B under some conditions and negative first-order kinetics under others. What lesson does the section draw from this?",
+    "choices": [
+      {
+        "text": "Inferring a mechanism from kinetic data alone is risky",
+        "correct": true
+      },
+      {
+        "text": "The Langmuir-Hinshelwood model must be wrong",
+        "why": "The changing orders follow from the model itself, depending on the partial pressures and binding strengths. The danger lies in reasoning backward from the kinetics to the mechanism."
+      },
+      {
+        "text": "Each measured order identifies a unique mechanism",
+        "why": "This is the opposite of the section's point: one mechanism can give several apparent orders, so an order alone doesn't pin down the mechanism."
+      },
+      {
+        "text": "Surface reactions never have whole-number orders",
+        "why": "The limits give whole-number orders such as 1 and −1. What varies is which order appears, depending on pressure and binding strength."
+      }
+    ],
+    "explanation": "Depending on the partial pressures and binding strengths, one reaction scheme can give a variety of apparent kinetics. The section concludes that this highlights the dangers of the reverse process: trying to use kinetic data to obtain information about the mechanism."
+  },
+  {
+    "id": "pc31-surface-rate-co2-desorption",
+    "type": "multiple-choice",
+    "prompt": "In the CO oxidation mechanism on Pt, CO_(ads) + O_(ads) → CO_2(ads) → CO_2(g), why is the surface reaction, not CO_2 desorption, usually the rate-determining step?",
+    "choices": [
+      {
+        "text": "CO_2 is weakly bound, so it desorbs relatively fast",
+        "correct": true
+      },
+      {
+        "text": "CO_2 is strongly bound, so it stays on the surface",
+        "why": "A strongly bound product would desorb slowly and could become rate determining. The section notes CO_2 is weakly bound and leaves quickly."
+      },
+      {
+        "text": "CO_2 reacts again with adsorbed O",
+        "why": "No such step appears in the mechanism. CO_2 is weakly bound and desorbs fast, leaving the surface reaction as the slow step."
+      },
+      {
+        "text": "CO_2 desorption is an equilibrium, so it has no rate",
+        "why": "Desorption has a rate like any process. It is fast because CO_2 is only weakly bound to the surface."
+      }
+    ],
+    "explanation": "CO_2 is comparatively weakly bound to the surface, so desorption of the product is relatively fast. In many circumstances the slow step is therefore the reaction between the two adsorbed species."
+  },
+  {
+    "id": "pc31-surface-rate-dissociative-sqrt",
+    "type": "multiple-choice",
+    "prompt": "In the CO oxidation example, θ_O = (√(b_O P_O2))/(1 + √(b_O P_O2) + b_CO P_CO). Why does oxygen enter as √(b_O P_O2) rather than b_O P_O2?",
+    "choices": [
+      {
+        "text": "O_2 adsorbs dissociatively, as O_2(g) ⇌ 2O_(ads)",
+        "correct": true
+      },
+      {
+        "text": "O_2 is only weakly bound to the surface",
+        "why": "Binding strength sets the size of b_O, not the power. The square root comes from O_2 splitting into two adsorbed O atoms."
+      },
+      {
+        "text": "Only half the O_2 molecules that hit the surface stick",
+        "why": "A sticking fraction would scale b_O by a constant, not take a square root. The root comes from dissociative adsorption, O_2 → 2O_(ads)."
+      },
+      {
+        "text": "O_2 adsorbs on only half of the surface sites",
+        "why": "CO and O compete for the same sites. The square root reflects dissociative adsorption, with each O_2 giving two O atoms."
+      }
+    ],
+    "explanation": "CO is molecularly adsorbed, but O_2 is dissociatively adsorbed, O_2(g) ⇌ 2O_(ads). The section's competitive coverages for one molecular and one dissociative adsorbate carry √(b_O P_O2) for the oxygen atoms."
+  },
+  {
+    "id": "pc31-surface-rate-co-limit-orders",
+    "type": "multiple-choice",
+    "prompt": "In the CO oxidation example, when b_CO P_CO ≫ 1 + √(b_O P_O2) the rate becomes k'(P_O2^(1/2))/(P_CO). What are the orders with respect to O_2 and CO?",
+    "choices": [
+      {
+        "text": "Half order in O_2, negative first order in CO",
+        "correct": true
+      },
+      {
+        "text": "First order in O_2, negative first order in CO",
+        "why": "O_2 enters as P_O2^(1/2) because it adsorbs dissociatively. The order in O_2 is 1/2."
+      },
+      {
+        "text": "Half order in O_2, first order in CO",
+        "why": "P_CO is in the denominator, so the order in CO is −1. More CO slows the reaction."
+      },
+      {
+        "text": "Half order in O_2, zero order in CO",
+        "why": "The denominator (b_CO P_CO)^2 has one more power of P_CO than the numerator, leaving 1/P_CO: order −1."
+      }
+    ],
+    "explanation": "With CO dominating the denominator, rate ≈ (k√(b_O P_O2))/(b_CO P_CO) = k'(P_O2^(1/2))/(P_CO). The kinetics are half order in O_2 and negative order in CO."
+  },
+  {
+    "id": "pc31-surface-rate-co-poison",
+    "type": "multiple-choice",
+    "prompt": "In the limit where CO is much more strongly bound than oxygen, raising the CO pressure slows the oxidation of CO on Pt. Why does the section call CO a poison here, even though it is a reactant?",
+    "choices": [
+      {
+        "text": "Adsorbed CO blocks O_2 from adsorbing, leaving too few O atoms",
+        "correct": true
+      },
+      {
+        "text": "CO reacts with the platinum and destroys the active sites",
+        "why": "CO isn't destroying the catalyst; it is only occupying sites. With nearly every site holding CO, too little oxygen can adsorb."
+      },
+      {
+        "text": "Excess CO reacts with CO_2 and reverses the reaction",
+        "why": "No such step is in the mechanism. CO slows the reaction by covering the surface so that oxygen can't adsorb."
+      },
+      {
+        "text": "CO weakens the O–O bond so O_2 desorbs before reacting",
+        "why": "The section's explanation is about site blocking: CO binds so strongly that it keeps oxygen off the surface."
+      }
+    ],
+    "explanation": "CO is so strongly bound that it covers the surface and blocks oxygen from adsorbing. Without enough O atoms on the surface the rate falls, so increasing the CO pressure slows the reaction: CO acts as a poison despite being a reactant."
+  },
+  {
+    "id": "pc31-surface-rate-co-scaling",
+    "type": "numeric",
+    "prompt": "CO oxidation on a catalyst is in the CO-poisoned limit, rate = k'(P_O2^(1/2))/(P_CO). By what factor does the rate change when P_O2 is increased ninefold and P_CO is increased by a factor of 1.5?",
+    "answer": 2,
+    "tolerance": 0,
+    "explanation": "The O_2 factor is 9^(1/2) = 3 and the CO factor is 1/1.5, so the rate changes by 3/1.5 = 2.0. Because O_2 adsorbs dissociatively, a ninefold rise in its pressure only triples its contribution."
+  }
+]

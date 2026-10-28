@@ -1,0 +1,594 @@
+[
+  {
+    "id": "pc31-xray-spacing-why-crystals",
+    "type": "multiple-choice",
+    "prompt": "Why can a crystal act as a diffraction grating for x-rays?",
+    "choices": [
+      {
+        "text": "Its atomic spacing is about the x-ray wavelength",
+        "correct": true
+      },
+      {
+        "text": "Its atoms absorb x-rays and re-emit them",
+        "why": "Absorption is not what makes a grating. A crystal diffracts x-rays because its interatomic distances, about 1 Å, match the x-ray wavelength."
+      },
+      {
+        "text": "Its spacing is much larger than the wavelength",
+        "why": "A grating diffracts light whose wavelength is on the same order as its spacing. X-rays are about 1 Å long, like the distances between atoms."
+      },
+      {
+        "text": "Its surface is polished flat like a mirror",
+        "why": "A smooth surface reflects but does not diffract. Diffraction needs a periodic spacing on the order of the wavelength, which the crystal lattice supplies."
+      }
+    ],
+    "explanation": "Diffracting light needs a grating with a spacing on the same order as the wavelength. X-rays have wavelengths of about 1 Å, and the atoms in a crystal are about 1 Å apart, so the crystal itself serves as the grating."
+  },
+  {
+    "id": "pc31-xray-spacing-wavelength-scale",
+    "type": "multiple-choice",
+    "prompt": "On what order of magnitude are the wavelengths of x-rays, according to the section?",
+    "choices": [
+      {
+        "text": "1 Å, or 10^−8 cm",
+        "correct": true
+      },
+      {
+        "text": "1 μm, or 10^−4 cm",
+        "why": "That is the scale of infrared light, which a spectrometer grating diffracts. X-rays are about 10^4 times shorter, near 1 Å."
+      },
+      {
+        "text": "1 nm, or 10^−5 cm",
+        "why": "1 nm is 10 Å, too long by a factor of ten. The section puts x-ray wavelengths at about 1 Å, or 10^−8 cm."
+      },
+      {
+        "text": "1 pm, or 10^−10 cm",
+        "why": "1 pm is a hundred times too short. X-ray wavelengths are about 1 Å = 100 pm, like the 154.4 pm of a copper source."
+      }
+    ],
+    "explanation": "The section gives x-ray wavelengths on the order of 1 Å, which is 10^−8 cm or 100 pm. The copper source in its examples has λ = 154.4 pm."
+  },
+  {
+    "id": "pc31-xray-spacing-laue-assumptions",
+    "type": "multiple-choice",
+    "prompt": "Max von Laue's 1912 prediction that crystals would diffract x-rays rested on three assumptions. Which of these was one of them?",
+    "choices": [
+      {
+        "text": "X-rays are electromagnetic radiation",
+        "correct": true
+      },
+      {
+        "text": "X-rays are a stream of particles",
+        "why": "Whether x-rays were particles or waves was still debated. Laue assumed they were electromagnetic waves, since only waves would be diffracted."
+      },
+      {
+        "text": "Atoms in a crystal are randomly arranged",
+        "why": "Laue assumed the opposite: the atomic lattice of a crystal is periodic. A random arrangement would not act as a grating."
+      },
+      {
+        "text": "Atoms in a crystal are far apart compared with λ",
+        "why": "Laue assumed the interatomic distance is on the same order as the x-ray wavelength, which is what a grating needs."
+      }
+    ],
+    "explanation": "Laue assumed that the crystal lattice is periodic, that x-rays are electromagnetic radiation, and that the interatomic distance is on the same order as the x-ray wavelength. Friedrich and Knipping confirmed his prediction by photographing the diffraction pattern of CuSO_4·5H_2O."
+  },
+  {
+    "id": "pc31-xray-spacing-needs-order",
+    "type": "multiple-choice",
+    "prompt": "A sample of glass has atoms at about the same distances as a crystal but no ordered, repeating arrangement. What does the section imply about its x-ray diffraction?",
+    "choices": [
+      {
+        "text": "It gives no crystal diffraction pattern",
+        "correct": true
+      },
+      {
+        "text": "It gives the same pattern as the crystal",
+        "why": "Having the right distances is not enough. The section says the atoms must be in an ordered, periodic structure to diffract the beams."
+      },
+      {
+        "text": "It gives a pattern at twice the angles",
+        "why": "No periodic spacing means no set of planes to fix the angles at all. Diffraction needs an ordered, periodic structure."
+      },
+      {
+        "text": "It diffracts only second-order reflections",
+        "why": "Every order, first or second, comes from the same periodic spacing. Without periodic order there are no reflections of any order."
+      }
+    ],
+    "explanation": "The section states that the atoms must be in an ordered, periodic structure for them to diffract x-ray beams. The pattern a crystal gives is characteristic of that periodic arrangement, which a disordered solid lacks."
+  },
+  {
+    "id": "pc31-xray-spacing-constructive",
+    "type": "multiple-choice",
+    "prompt": "In a diffraction pattern, what produces an area of constructive interference?",
+    "choices": [
+      {
+        "text": "Two waves meeting in phase",
+        "correct": true
+      },
+      {
+        "text": "Two waves meeting out of phase",
+        "why": "Waves out of phase cancel; that is destructive interference. Constructive interference needs them in phase."
+      },
+      {
+        "text": "Two waves of different wavelength meeting",
+        "why": "Diffraction here involves one wavelength, λ. What matters is whether the waves arrive in phase, which gives constructive interference."
+      },
+      {
+        "text": "A single wave passing straight through",
+        "why": "Interference needs at least two waves. Where they interact in phase, they reinforce each other constructively."
+      }
+    ],
+    "explanation": "The section defines constructive interference as two waves interacting in phase and destructive interference as two waves interacting out of phase. The bright spots of a diffraction pattern are the areas of constructive interference."
+  },
+  {
+    "id": "pc31-xray-spacing-path-difference",
+    "type": "multiple-choice",
+    "prompt": "X-rays strike a row of scattering points a distance x apart at the angle α_0 and leave at the angle α. Since BD = x cos α_0 and AC = x cos α, which condition gives a strong scattered beam?",
+    "choices": [
+      {
+        "text": "x(cos α − cos α_0) = nλ",
+        "correct": true
+      },
+      {
+        "text": "x(cos α + cos α_0) = nλ",
+        "why": "The incoming wave on one side travels the extra BD and the outgoing wave on the other side the extra AC, so the net path difference is AC − BD, a difference."
+      },
+      {
+        "text": "x(cos α − cos α_0) = (n + 1/2)λ",
+        "why": "A path difference of a half-integer number of wavelengths puts the waves out of phase. Constructive interference needs a whole number, nλ."
+      },
+      {
+        "text": "x(sin α − sin α_0) = nλ",
+        "why": "These angles are measured from the row of points, so the projected path segments are x cos α and x cos α_0, not sines."
+      }
+    ],
+    "explanation": "The total path difference between the two waves is AC − BD = x cos α − x cos α_0. The waves reinforce when this is a whole number of wavelengths, giving x(cos α − cos α_0) = nλ."
+  },
+  {
+    "id": "pc31-xray-spacing-half-wavelength",
+    "type": "multiple-choice",
+    "prompt": "For two x-rays scattered from neighboring points, the path difference AC − BD at some angle α comes out to 1.5λ. What is seen at that angle?",
+    "choices": [
+      {
+        "text": "No strong beam; the waves are out of phase",
+        "correct": true
+      },
+      {
+        "text": "A first-order beam, since 1.5 rounds to 1",
+        "why": "The path difference must equal an integer number of wavelengths exactly. At 1.5λ one wave's crest meets the other's trough."
+      },
+      {
+        "text": "A beam halfway between first and second order",
+        "why": "There are no half orders. Only whole-number path differences, AC − BD = nλ, give constructive interference."
+      },
+      {
+        "text": "A strong beam, since any path difference adds",
+        "why": "Path differences don't simply add intensity. Waves 1.5λ apart are out of phase and interfere destructively."
+      }
+    ],
+    "explanation": "A strong beam needs AC − BD = nλ with n an integer, so that the waves arrive in phase. A difference of 1.5λ puts them half a wavelength out of step, which is destructive interference."
+  },
+  {
+    "id": "pc31-xray-spacing-path-wavelength",
+    "type": "numeric",
+    "prompt": "X-rays strike a row of points 300 pm apart at α_0 = 90° and give a first-order (n = 1) beam at α = 60°. Using x(cos α − cos α_0) = nλ, what is the wavelength, in pm?",
+    "answer": 150,
+    "unit": "pm",
+    "explanation": "cos 90° = 0 and cos 60° = 0.500, so λ = (300 pm)(0.500 − 0)/1 = 150 pm. The path difference AC − BD is exactly one wavelength, so the scattered waves are in phase."
+  },
+  {
+    "id": "pc31-xray-spacing-three-laue",
+    "type": "multiple-choice",
+    "prompt": "Why does the section need three Laue equations, a(cos α − cos α_0) = nhλ, b(cos β − cos β_0) = nkλ and c(cos γ − cos γ_0) = nlλ, rather than one?",
+    "choices": [
+      {
+        "text": "One for each axis of the unit cell",
+        "correct": true
+      },
+      {
+        "text": "One for each order of reflection",
+        "why": "The order is the n inside every equation. The three equations describe the three axes a, b and c of the periodic crystal."
+      },
+      {
+        "text": "One for each of three x-ray wavelengths",
+        "why": "All three use the same λ. They are needed because the crystal repeats along three axes, a, b and c."
+      },
+      {
+        "text": "One each for incident, scattered and transmitted rays",
+        "why": "Each equation already holds an incident angle and a scattered angle. There are three because the crystal is periodic in three dimensions."
+      }
+    ],
+    "explanation": "A crystal is periodic in three dimensions, so the one-dimensional condition x(cos α − cos α_0) = nλ is written once for each unit-cell axis a, b and c. Each has its own incident and diffracted angles."
+  },
+  {
+    "id": "pc31-xray-spacing-order-n",
+    "type": "multiple-choice",
+    "prompt": "In the Laue equations, such as a(cos α − cos α_0) = nhλ, what does n = 2 indicate?",
+    "choices": [
+      {
+        "text": "A second-order reflection",
+        "correct": true
+      },
+      {
+        "text": "Diffraction from the second axis, b",
+        "why": "Each axis has its own equation; n doesn't pick an axis. n gives the order of the reflection."
+      },
+      {
+        "text": "A wavelength of 2λ",
+        "why": "The wavelength stays λ. n = 2 means the path difference is two wavelengths, a second-order reflection."
+      },
+      {
+        "text": "A crystal with two atoms per unit cell",
+        "why": "The number of atoms doesn't appear here. The section defines n as the order of the reflections."
+      }
+    ],
+    "explanation": "The section calls n the order of the reflections: n = 1 gives first-order reflections and n = 2 gives second-order reflections."
+  },
+  {
+    "id": "pc31-xray-spacing-integer-hkl",
+    "type": "multiple-choice",
+    "prompt": "According to the section, when do the Laue equations give a diffraction signal (constructive interference)?",
+    "choices": [
+      {
+        "text": "When h, k and l are all integers",
+        "correct": true
+      },
+      {
+        "text": "When h, k and l are all equal",
+        "why": "h, k and l can differ, as in a 100 or 110 reflection. What matters is that each is a whole number."
+      },
+      {
+        "text": "When h + k + l equals n",
+        "why": "No such sum appears in the equations. A signal arises when each of h, k and l is an integer."
+      },
+      {
+        "text": "When all three angles equal 90°",
+        "why": "That would make every cosine zero and give only h = k = l = 0. In general a signal needs h, k and l to be integers."
+      }
+    ],
+    "explanation": "Each Laue equation sets a path difference equal to a multiple of λ. A diffraction signal arises when h, k and l are integer values, so that all three axes scatter in phase."
+  },
+  {
+    "id": "pc31-xray-spacing-perpendicular-beam",
+    "type": "multiple-choice",
+    "prompt": "In the rotating crystal method, the beam strikes the crystal at 90° to its a axis, so α_0 = 90°. What does a(cos α − cos α_0) = nhλ become?",
+    "choices": [
+      {
+        "text": "a cos α = nhλ",
+        "correct": true
+      },
+      {
+        "text": "a(cos α − 1) = nhλ",
+        "why": "That uses cos 90° = 1, but cos 90° = 0. The cos α_0 term drops out, leaving a cos α = nhλ."
+      },
+      {
+        "text": "a sin α = nhλ",
+        "why": "Setting α_0 = 90° removes a term; it doesn't turn the cosine into a sine. The result is a cos α = nhλ."
+      },
+      {
+        "text": "a = nhλ",
+        "why": "Only cos α_0 becomes zero; the scattered angle α is still free. The equation is a cos α = nhλ."
+      }
+    ],
+    "explanation": "With α_0 = 90°, cos α_0 = 0, so the first Laue equation reduces to a cos α = nhλ. This is the starting point for finding the length of the rotation axis."
+  },
+  {
+    "id": "pc31-xray-spacing-h-zero",
+    "type": "multiple-choice",
+    "prompt": "In the rotating crystal method the beam meets the a axis at α_0 = 90°. Which value of h belongs to x-rays scattered at α = 90°?",
+    "choices": [
+      {
+        "text": "h = 0",
+        "correct": true
+      },
+      {
+        "text": "h = 1",
+        "why": "With α = 90°, cos α = 0, so a cos α = nhλ forces h = 0. The h = 1 spots lie at a smaller α."
+      },
+      {
+        "text": "h = 2",
+        "why": "Higher h needs a larger cos α, so α moves further from 90°. At α = 90°, cos α = 0 and h = 0."
+      },
+      {
+        "text": "Any h, since cos α_0 = 0",
+        "why": "cos α_0 = 0 removes the incident term, but cos α = 0 too at α = 90°. Then nhλ = 0, so h = 0."
+      }
+    ],
+    "explanation": "With cos α_0 = 0 the equation is a cos α = nhλ. At α = 90°, cos α = 0, so h = 0, which is the reference spot from which the other h spots are measured."
+  },
+  {
+    "id": "pc31-xray-spacing-rotation-axis",
+    "type": "multiple-choice",
+    "prompt": "A crystal surrounded by a cylindrical film rotates about one of its unit-cell axes in an x-ray beam. What length does the equation a = nhλ/(cos(tan^−1(r/y))) give?",
+    "choices": [
+      {
+        "text": "The axis the crystal was rotated around",
+        "correct": true
+      },
+      {
+        "text": "The spacing between the spots on the film",
+        "why": "The spot spacing is y, which is measured and put into the equation. The result a is the length of the rotation axis."
+      },
+      {
+        "text": "The distance from crystal to film",
+        "why": "That is r, the film radius, also an input. The equation gives a, the length of the unit-cell axis of rotation."
+      },
+      {
+        "text": "The x-ray wavelength",
+        "why": "λ must be known to use the equation. What it yields is the length of the axis the crystal rotates around."
+      }
+    ],
+    "explanation": "The section uses the rotating crystal method to measure the length of the unit-cell axis about which the crystal turns. The film radius r, the spot distance y and the wavelength λ go in, and a comes out."
+  },
+  {
+    "id": "pc31-xray-spacing-r-and-y",
+    "type": "multiple-choice",
+    "prompt": "In a = nhλ/(cos(tan^−1(r/y))), what are r and y?",
+    "choices": [
+      {
+        "text": "r: crystal-to-film distance; y: distance from the h = 0 spot",
+        "correct": true
+      },
+      {
+        "text": "r: distance from the h = 0 spot; y: crystal-to-film distance",
+        "why": "The roles are swapped. α is measured from the rotation axis, so tan α = r/y with r the film radius and y the distance along the film from h = 0."
+      },
+      {
+        "text": "r: atomic radius; y: spacing of lattice planes",
+        "why": "Both are measured on the apparatus. r is the radius of the film and y the distance from the h = 0 spot to the spot of interest."
+      },
+      {
+        "text": "r: crystal-to-film distance; y: beam width",
+        "why": "r is right, but y is not the beam width. y is the distance on the film from the h = 0 spot to the h of interest."
+      }
+    ],
+    "explanation": "r is the radius of the film, the distance from the center of the crystal to the detector, and y is the distance from the h = 0 spot to the spot of interest. Because α is measured from the rotation axis, tan α = r/y."
+  },
+  {
+    "id": "pc31-xray-spacing-longer-axis",
+    "type": "multiple-choice",
+    "prompt": "In the rotating crystal method, a cos α = nhλ with α measured from the rotation axis and tan α = r/y. With the same film and wavelength, a crystal with a longer axis a puts its h = 1 spot where, compared with a crystal with a shorter axis?",
+    "choices": [
+      {
+        "text": "Closer to the h = 0 spot",
+        "correct": true
+      },
+      {
+        "text": "Farther from the h = 0 spot",
+        "why": "A longer a makes cos α = nhλ/a smaller, so α moves toward 90° and the spot moves toward h = 0, not away."
+      },
+      {
+        "text": "At the same place",
+        "why": "The spot position depends on a through cos α = nhλ/a. A longer axis gives a smaller cos α and a smaller y."
+      },
+      {
+        "text": "On top of the h = 0 spot",
+        "why": "For h = 1 the right side nhλ is not zero, so cos α can't be zero. The spot moves closer to h = 0 but stays separate."
+      }
+    ],
+    "explanation": "From a cos α = nhλ, a larger a gives a smaller cos α, so α is nearer 90°. A larger α means a larger r/y, and with r fixed, a smaller y: long axes give closely spaced spots."
+  },
+  {
+    "id": "pc31-xray-spacing-rotating-a",
+    "type": "numeric",
+    "prompt": "A crystal is rotated about its a axis with the beam perpendicular to that axis. The film is 6.00 cm from the crystal, and the h = 1 spot (n = 1) is 2.50 cm from the h = 0 spot. Using a = nhλ/(cos(tan^−1(r/y))) with λ = 150.0 pm, what is a, in pm?",
+    "answer": 390,
+    "unit": "pm",
+    "explanation": "tan α = r/y = 6.00/2.50 = 2.40, so α = 67.38° and cos α = 0.3846. Then a = (1)(1)(150.0 pm)/0.3846 = 390.0 pm. Using tan^−1(y/r) instead would put α at the wrong angle and give a far shorter axis."
+  },
+  {
+    "id": "pc31-xray-spacing-rotating-h2",
+    "type": "numeric",
+    "prompt": "In a rotating crystal experiment with the beam perpendicular to the a axis, the film radius is r = 4.00 cm and the h = 2 spot (n = 1) lies y = 3.00 cm from the h = 0 spot. Using a = nhλ/(cos(tan^−1(r/y))) with λ = 150.0 pm, what is a, in pm?",
+    "answer": 500,
+    "unit": "pm",
+    "explanation": "tan α = 4.00/3.00, so cos α = 3.00/5.00 = 0.600. Then a = (1)(2)(150.0 pm)/0.600 = 500 pm. Leaving out h = 2 would give half the true length, 250 pm."
+  },
+  {
+    "id": "pc31-xray-spacing-rotating-spot",
+    "type": "numeric",
+    "prompt": "A crystal with a = 500 pm is rotated about its a axis with the beam perpendicular to it, using λ = 150 pm and a film of radius r = 5.00 cm. From a cos α = nhλ and tan α = r/y, how far from the h = 0 spot is the h = 1, n = 1 spot, in cm?",
+    "answer": 1.572,
+    "unit": "cm",
+    "explanation": "cos α = (1)(1)(150 pm)/(500 pm) = 0.300, so α = 72.54° and tan α = 3.180. Then y = r/tan α = 5.00 cm/3.180 = 1.57 cm. This runs the section's method backward: from the axis length to where its spots fall."
+  },
+  {
+    "id": "pc31-xray-spacing-modern-detectors",
+    "type": "multiple-choice",
+    "prompt": "Modern diffractometers record reflections with scintillation or area detectors instead of the cylindrical film of the rotating crystal method. What advantage does the section give for them?",
+    "choices": [
+      {
+        "text": "Data go straight to a computer for faster analysis",
+        "correct": true
+      },
+      {
+        "text": "They make the crystal rotate faster",
+        "why": "The detector records the reflections; it doesn't drive the crystal. Its advantage is sending the data directly to a computer."
+      },
+      {
+        "text": "They no longer need the crystal to be periodic",
+        "why": "Diffraction still needs an ordered, periodic crystal. The detector only changes how the reflections are recorded and analyzed."
+      },
+      {
+        "text": "They remove the need for a known wavelength",
+        "why": "Bragg's law and the Laue equations still need λ. The detector's advantage is faster analysis by computer."
+      }
+    ],
+    "explanation": "Scintillation and area detectors act as a sort of electronic film. The diffraction data can be sent directly to a computer and analyzed much more rapidly than with photographic film, which had to be unwrapped and developed."
+  },
+  {
+    "id": "pc31-xray-spacing-electron-cloud",
+    "type": "multiple-choice",
+    "prompt": "According to the section, x-rays are diffracted by a crystalline solid when they interact with what?",
+    "choices": [
+      {
+        "text": "The electron clouds around the atoms",
+        "correct": true
+      },
+      {
+        "text": "The atomic nuclei",
+        "why": "The section says diffraction occurs when the light interacts with the electron cloud surrounding the atoms, not with the nuclei."
+      },
+      {
+        "text": "The bonds' vibrations",
+        "why": "Vibrations absorb infrared light; they don't diffract x-rays. X-rays are diffracted by the electron clouds of the atoms."
+      },
+      {
+        "text": "The empty space between the planes",
+        "why": "Empty space doesn't scatter. The planes diffract because their atoms carry electron clouds that interact with the x-rays."
+      }
+    ],
+    "explanation": "The section states that diffraction of an x-ray beam by a crystalline solid occurs when the light interacts with the electron cloud surrounding the atoms. The periodic arrangement of these atoms lets the solid be treated as a series of equally spaced planes."
+  },
+  {
+    "id": "pc31-xray-spacing-bragg-path",
+    "type": "multiple-choice",
+    "prompt": "In Bragg's picture, x-rays strike parallel planes a distance d apart at the angle θ. The beam reflected from the second plane travels an extra BG + GF, where BG = GF = d sin θ. When do the two reflected beams reinforce?",
+    "choices": [
+      {
+        "text": "When 2d sin θ = nλ",
+        "correct": true
+      },
+      {
+        "text": "When d sin θ = nλ",
+        "why": "That counts only one segment. The beam travels the extra distance going in and coming out, BG + GF = 2d sin θ."
+      },
+      {
+        "text": "When 2d cos θ = nλ",
+        "why": "With θ measured from the planes, each extra segment is the opposite side, d sin θ. The condition is 2d sin θ = nλ."
+      },
+      {
+        "text": "When 2d sin θ = (n + 1/2)λ",
+        "why": "A half-integer path difference puts the beams out of phase. They reinforce when the extra path is a whole number of wavelengths."
+      }
+    ],
+    "explanation": "The extra path is BG + GF = d sin θ + d sin θ = 2d sin θ. The beams are in phase when this equals a whole number of wavelengths, which is Bragg's law, 2d sin θ = nλ."
+  },
+  {
+    "id": "pc31-xray-spacing-bragg-larger-d",
+    "type": "multiple-choice",
+    "prompt": "Bragg's law gives sin θ = nλ/(2d). With the same x-ray wavelength, how does the first-order angle for widely spaced planes compare with that for closely spaced planes?",
+    "choices": [
+      {
+        "text": "It is smaller",
+        "correct": true
+      },
+      {
+        "text": "It is larger",
+        "why": "d is in the denominator of sin θ = nλ/(2d). A larger spacing gives a smaller sin θ and so a smaller angle."
+      },
+      {
+        "text": "It is the same",
+        "why": "The angle depends on d. For the same λ and n, sin θ is inversely proportional to the spacing."
+      },
+      {
+        "text": "It depends only on the wavelength",
+        "why": "λ matters, but so does d. At fixed λ and n, widely spaced planes reflect at a smaller angle."
+      }
+    ],
+    "explanation": "sin θ = nλ/(2d) is inversely proportional to d. Widely spaced planes therefore diffract at small angles and closely spaced planes at large ones."
+  },
+  {
+    "id": "pc31-xray-spacing-bragg-second-order",
+    "type": "numeric",
+    "prompt": "X-rays with λ = 150 pm give a second-order (n = 2) reflection from a set of planes at θ = 30.0°. Using Bragg's law, 2d sin θ = nλ, what is the interplanar spacing d, in pm?",
+    "answer": 300,
+    "unit": "pm",
+    "explanation": "d = nλ/(2 sin θ) = (2)(150 pm)/(2 × 0.500) = 300 pm. Treating the reflection as first order would give half the spacing, 150 pm."
+  },
+  {
+    "id": "pc31-xray-spacing-bragg-angle",
+    "type": "numeric",
+    "prompt": "Planes in a crystal are d = 200 pm apart. Using sin θ = nλ/(2d), at what angle θ does the first-order reflection of x-rays with λ = 100 pm appear, in degrees?",
+    "answer": 14.48,
+    "unit": "°",
+    "explanation": "sin θ = (1)(100 pm)/(2 × 200 pm) = 0.250, so θ = sin^−1(0.250) = 14.48°. On a plot of intensity against 2θ this peak would appear at 28.96°."
+  },
+  {
+    "id": "pc31-xray-spacing-two-theta",
+    "type": "numeric",
+    "prompt": "A diffraction spectrum, plotted as intensity against 2θ, shows a first-order peak at 2θ = 40.00° for x-rays with λ = 154.4 pm. Using 2d sin θ = nλ, what is the interplanar spacing d, in pm?",
+    "answer": 225.7,
+    "unit": "pm",
+    "explanation": "The peak is at 2θ, so θ = 20.00° and sin θ = 0.3420. Then d = (1)(154.4 pm)/(2 × 0.3420) = 225.7 pm. Putting 40.00° into Bragg's law as θ would give 120.1 pm."
+  },
+  {
+    "id": "pc31-xray-spacing-second-order-angle",
+    "type": "multiple-choice",
+    "prompt": "A set of planes gives a first-order Bragg reflection at the angle θ_1. How is the second-order angle θ_2 for the same planes related to it?",
+    "choices": [
+      {
+        "text": "sin θ_2 = 2 sin θ_1",
+        "correct": true
+      },
+      {
+        "text": "θ_2 = 2θ_1 exactly",
+        "why": "Bragg's law fixes sin θ, not θ: sin θ = nλ/(2d). Doubling n doubles sin θ, which is not quite the same as doubling the angle."
+      },
+      {
+        "text": "sin θ_2 = (1/2) sin θ_1",
+        "why": "n is in the numerator of sin θ = nλ/(2d), so the second order is at the larger angle, with twice the sine."
+      },
+      {
+        "text": "θ_2 = θ_1, but twice as intense",
+        "why": "The order changes the angle, not just the intensity. With n = 2, sin θ is twice as large as for n = 1."
+      }
+    ],
+    "explanation": "From sin θ = nλ/(2d), going from n = 1 to n = 2 doubles sin θ. For small angles θ roughly doubles too, but not exactly: in the section's cesium example the angles are 10.40° and 21.16°, not 10.40° and 20.80°."
+  },
+  {
+    "id": "pc31-xray-spacing-smallest-angle-plane",
+    "type": "multiple-choice",
+    "prompt": "For a primitive cubic crystal, combining Bragg's law with 1/d^2 = (h^2 + k^2 + l^2)/a^2 gives sin^2θ = ((n^2λ^2)/(4a^2))(h^2 + k^2 + l^2). Which planes give the smallest first-order angle?",
+    "choices": [
+      {
+        "text": "The 100 planes",
+        "correct": true
+      },
+      {
+        "text": "The 111 planes",
+        "why": "h^2 + k^2 + l^2 = 3 for 111, larger than 1 for 100. A larger sum gives a larger sin^2θ, so 111 reflects at a larger angle."
+      },
+      {
+        "text": "The 110 planes",
+        "why": "h^2 + k^2 + l^2 = 2 for 110, larger than 1 for 100. The 110 planes are closer together, so their angle is larger."
+      },
+      {
+        "text": "The 200 planes",
+        "why": "h^2 + k^2 + l^2 = 4 for 200, the largest of these. Those planes are only a/2 apart, so they reflect at the largest angle."
+      }
+    ],
+    "explanation": "sin^2θ is proportional to h^2 + k^2 + l^2, which is 1 for 100, 2 for 110, 3 for 111 and 4 for 200. The 100 planes are the farthest apart, d = a, so they give the smallest angle."
+  },
+  {
+    "id": "pc31-xray-spacing-cubic-from-111",
+    "type": "numeric",
+    "prompt": "A primitive cubic crystal gives a first-order reflection from its 111 planes at θ = 30.00° with λ = 154.4 pm. Using 2d sin θ = nλ and 1/d^2 = (h^2 + k^2 + l^2)/a^2, what is the unit cell length a, in pm?",
+    "answer": 267.4,
+    "unit": "pm",
+    "explanation": "d = (1)(154.4 pm)/(2 × 0.500) = 154.4 pm. For the 111 planes, 1/d^2 = 3/a^2, so a = d√3 = 154.4 pm × 1.732 = 267.4 pm. Taking a = d would treat the 111 planes as if they were 100 planes."
+  },
+  {
+    "id": "pc31-xray-spacing-certain-angles",
+    "type": "multiple-choice",
+    "prompt": "Why does a crystal register diffracted x-rays only at certain angles, not at every angle?",
+    "choices": [
+      {
+        "text": "Only there are the reflected beams in phase",
+        "correct": true
+      },
+      {
+        "text": "Only there do x-rays reach the inner planes",
+        "why": "X-rays reach the inner planes at any angle. What singles out certain angles is that the path difference 2d sin θ equals nλ there."
+      },
+      {
+        "text": "At other angles the x-rays are absorbed",
+        "why": "Absorption isn't what the section uses. At other angles the beams from different planes are out of phase and cancel."
+      },
+      {
+        "text": "Only there do the planes reflect any x-rays",
+        "why": "Each plane scatters some light at any θ. Only at angles where 2d sin θ = nλ do the beams from all the planes add up."
+      }
+    ],
+    "explanation": "Beams reflected from successive planes travel different path lengths. They reinforce only when the difference, 2d sin θ, is a whole number of wavelengths, so only angles with sin θ = nλ/(2d) register."
+  }
+]

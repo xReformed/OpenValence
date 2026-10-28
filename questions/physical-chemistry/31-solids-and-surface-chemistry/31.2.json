@@ -1,0 +1,570 @@
+[
+  {
+    "id": "pc31-miller-what-they-describe",
+    "type": "multiple-choice",
+    "prompt": "What do the Miller indices (hkl) of a crystal plane quantify?",
+    "choices": [
+      {
+        "text": "Where the plane intercepts the crystal axes",
+        "correct": true
+      },
+      {
+        "text": "The number of atoms lying in the plane",
+        "why": "The indices come only from geometry, the plane's intercepts on the x-, y- and z-axes. They say nothing about how many atoms the plane holds."
+      },
+      {
+        "text": "The plane's distance from the origin",
+        "why": "Parallel planes at different distances can share indices: (200) divides through to (100). The indices fix the plane's orientation through its intercepts."
+      },
+      {
+        "text": "The angles between the crystal axes",
+        "why": "Those angles belong to the unit cell, not to a plane. The indices are built from where the plane cuts the axes."
+      }
+    ],
+    "explanation": "The section defines a plane's orientation by how it intersects the main crystallographic axes. A set of rules turns the intercepts into the Miller indices (hkl), which then identify the plane or surface uniquely."
+  },
+  {
+    "id": "pc31-miller-parallel-intercept",
+    "type": "multiple-choice",
+    "prompt": "A plane in a cubic crystal is parallel to the y-axis, so it never meets it. What intercept on the y-axis does the recipe assign it?",
+    "choices": [
+      {
+        "text": "∞",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "why": "An intercept of 0 would mean the plane passes through the origin on that axis. A plane that never meets the axis is given an intercept at infinity."
+      },
+      {
+        "text": "a",
+        "why": "An intercept at a means the plane cuts the axis one cell length out. A parallel plane never cuts it, so its intercept is taken as ∞."
+      },
+      {
+        "text": "It has no intercept, so the plane can't be indexed",
+        "why": "Parallel planes are indexed all the time, like (100). The section treats the intercept as ∞ for this special case."
+      }
+    ],
+    "explanation": "Strictly a plane parallel to an axis has no intercept on it, but the section takes the intercept to be at infinity (∞). Its reciprocal is then 0, which is why the (100) plane has zeros for the y- and z-axes."
+  },
+  {
+    "id": "pc31-miller-fractional-coordinates",
+    "type": "multiple-choice",
+    "prompt": "In step 2 of the recipe, a point (x, y, z) in a unit cell of dimensions a × b × c is converted to fractional co-ordinates. What are they?",
+    "choices": [
+      {
+        "text": "(x/a, y/b, z/c)",
+        "correct": true
+      },
+      {
+        "text": "(a/x, b/y, c/z)",
+        "why": "That inverts the fractions, which is what step 3 does to the fractional intercepts. Step 2 divides each co-ordinate by its cell dimension."
+      },
+      {
+        "text": "(x/a, y/a, z/a)",
+        "why": "Dividing everything by a works only for a cubic cell. In general each co-ordinate is divided by its own cell dimension: x/a, y/b, z/c."
+      },
+      {
+        "text": "(xa, yb, zc)",
+        "why": "Multiplying makes the numbers larger, not fractions of the cell. Each co-ordinate is divided by its cell dimension."
+      }
+    ],
+    "explanation": "Co-ordinates become fractional co-ordinates by dividing by the respective cell dimension, giving (x/a, y/b, z/c). For a cubic cell every co-ordinate is simply divided by the cell constant a."
+  },
+  {
+    "id": "pc31-miller-step-order",
+    "type": "multiple-choice",
+    "prompt": "Which order of steps does the section's recipe follow to get the Miller indices of a plane?",
+    "choices": [
+      {
+        "text": "Intercepts, then divide by the cell dimensions, then take reciprocals",
+        "correct": true
+      },
+      {
+        "text": "Intercepts, then take reciprocals, then multiply by the cell dimensions",
+        "why": "This mixes up the steps. The intercepts are first made fractional by dividing by the cell dimensions, and only then inverted."
+      },
+      {
+        "text": "Intercepts, then divide by the cell dimensions, then simplify the fractions",
+        "why": "Fractional intercepts such as ½, 1, ∞ are not yet the indices. They must be inverted, giving 2, 1, 0 and so (210)."
+      },
+      {
+        "text": "Reciprocals of the intercepts, then divide by the cell dimensions",
+        "why": "Inverting first and dividing second gives 1/(xa), not a/x. Step 2 makes the intercepts fractional, and step 3 inverts them."
+      }
+    ],
+    "explanation": "Step 1 finds the intercepts on the x-, y- and z-axes, step 2 divides them by the cell dimensions to give fractional intercepts, and step 3 takes the reciprocals. For intercepts a, ∞, ∞ this gives 1, ∞, ∞ and then (100)."
+  },
+  {
+    "id": "pc31-miller-written-form",
+    "type": "multiple-choice",
+    "prompt": "A plane has Miller indices h = 1, k = 1 and l = 0. How does the section write it as one unique surface?",
+    "choices": [
+      {
+        "text": "(110)",
+        "correct": true
+      },
+      {
+        "text": "(1,1,0)",
+        "why": "By convention the indices are written without commas or any other separating symbols, inside standard brackets: (110)."
+      },
+      {
+        "text": "{110}",
+        "why": "Curly brackets denote the whole set of symmetry-equivalent surfaces. One unique surface uses standard brackets, (110)."
+      },
+      {
+        "text": "[110]",
+        "why": "Square brackets denote the vector [hkl], which in a cubic crystal is normal to the plane. The plane itself is written (110)."
+      }
+    ],
+    "explanation": "The section says the indices are written without commas or other symbols and enclosed in standard brackets (….) when specifying a unique surface. So the plane is the (110) plane."
+  },
+  {
+    "id": "pc31-miller-intercepts-120",
+    "type": "multiple-choice",
+    "prompt": "A plane in a cubic crystal with cell constant a cuts the x-axis at a, cuts the y-axis at ½a, and is parallel to the z-axis. What are its Miller indices?",
+    "choices": [
+      {
+        "text": "(120)",
+        "correct": true
+      },
+      {
+        "text": "(210)",
+        "why": "The indices are in the wrong order. The x-intercept of a gives h = 1, and the y-intercept of ½a gives k = 2. (210) has its half-cell intercept on x."
+      },
+      {
+        "text": "(102)",
+        "why": "(102) would be parallel to the y-axis, with its half-cell intercept on z. Here the plane is parallel to z, so l = 0."
+      },
+      {
+        "text": "(121)",
+        "why": "The reciprocal of ∞ is 0, not 1, so a plane parallel to z has l = 0."
+      }
+    ],
+    "explanation": "Intercepts: a, ½a, ∞. Fractional intercepts: 1, ½, ∞. Reciprocals: 1, 2, 0, so the plane is (120). The half-cell intercept gives the index 2, as in the section's (210) surface."
+  },
+  {
+    "id": "pc31-miller-intercepts-221",
+    "type": "multiple-choice",
+    "prompt": "A plane in a cubic crystal with cell constant a cuts the axes at x = ½a, y = ½a and z = a. What are its Miller indices?",
+    "choices": [
+      {
+        "text": "(221)",
+        "correct": true
+      },
+      {
+        "text": "(112)",
+        "why": "That takes the fractional intercepts ½, ½, 1 without inverting them and then clears the fractions. Inverting gives 2, 2, 1."
+      },
+      {
+        "text": "(111)",
+        "why": "The plane does cut all three axes, but not at equal distances. The reciprocals of ½, ½, 1 are 2, 2, 1."
+      },
+      {
+        "text": "(110)",
+        "why": "An index of 0 means the plane is parallel to that axis. This plane cuts z at a, so l = 1."
+      }
+    ],
+    "explanation": "Intercepts: ½a, ½a, a. Fractional intercepts: ½, ½, 1. Taking reciprocals gives 2, 2, 1, so the plane is (221). A smaller intercept gives a larger index."
+  },
+  {
+    "id": "pc31-miller-clear-fractions",
+    "type": "multiple-choice",
+    "prompt": "A plane in a cubic crystal with cell constant a cuts the axes at x = 2a, y = 2a and z = a. What are its Miller indices in lowest whole numbers?",
+    "choices": [
+      {
+        "text": "(112)",
+        "correct": true
+      },
+      {
+        "text": "(221)",
+        "why": "Those are the fractional intercepts 2, 2, 1 used as they stand. Their reciprocals are ½, ½, 1, which become (112) when multiplied through by 2."
+      },
+      {
+        "text": "(224)",
+        "why": "Those are whole numbers, but they share a factor of 2. Dividing through gives the simpler (112), which the question asks for."
+      },
+      {
+        "text": "(111)",
+        "why": "The plane cuts the three axes at different distances, so the indices can't all be equal. The reciprocals ½, ½, 1 give (112)."
+      }
+    ],
+    "explanation": "Fractional intercepts: 2, 2, 1. Reciprocals: ½, ½, 1. The section notes that indices may be multiplied or divided through by a common number to simplify them; multiplying by 2 gives (112)."
+  },
+  {
+    "id": "pc31-miller-simplify-200",
+    "type": "multiple-choice",
+    "prompt": "A plane cutting the x-axis at ½a and parallel to y and z gives (200), which the section divides through by 2 to get (100). What does this simplification mean for the plane?",
+    "choices": [
+      {
+        "text": "It gives a parallel plane at a different distance from the origin",
+        "correct": true
+      },
+      {
+        "text": "It turns the plane into one perpendicular to the first",
+        "why": "Dividing all the indices by the same number doesn't change the orientation. The new plane is parallel to the old one."
+      },
+      {
+        "text": "It gives the very same plane, at the same place",
+        "why": "(100) cuts the x-axis at a, not at ½a. The two planes are parallel but sit at different distances from the origin."
+      },
+      {
+        "text": "It gives a symmetry-equivalent face of the cube",
+        "why": "Symmetry-equivalent faces, like (100) and (010), have different orientations. (200) and (100) are parallel planes."
+      }
+    ],
+    "explanation": "The section says multiplying or dividing the indices through by a common number simply generates a parallel plane at a different distance from the origin of the unit cell. Both planes share the orientation the indices describe."
+  },
+  {
+    "id": "pc31-miller-bar-notation",
+    "type": "multiple-choice",
+    "prompt": "A plane has Miller indices 0, 0 and −1. How does the section write them?",
+    "choices": [
+      {
+        "text": "(001̄)",
+        "correct": true
+      },
+      {
+        "text": "(00−1)",
+        "why": "The section says the negative sign is not written as a minus sign. It is shown by overstriking the number, as a bar over the 1."
+      },
+      {
+        "text": "(001)",
+        "why": "The negative intercept carries through into the indices, so the sign can't be dropped. It is written as a bar over the 1."
+      },
+      {
+        "text": "(1̄00)",
+        "why": "The bar belongs on the index that is negative, here the third one, for the z-axis. The plane is written with the bar over the last 1."
+      }
+    ],
+    "explanation": "If an intercept is at a negative value on an axis, the negative sign carries through into the Miller indices. It is shown by overstriking the relevant number, so (00 −1) is written (001̄)."
+  },
+  {
+    "id": "pc31-miller-negative-intercept",
+    "type": "multiple-choice",
+    "prompt": "A plane in a cubic crystal with cell constant a cuts the x-axis at a, cuts the y-axis at −a, and is parallel to the z-axis. What are its Miller indices?",
+    "choices": [
+      {
+        "text": "(11̄0)",
+        "correct": true
+      },
+      {
+        "text": "(110)",
+        "why": "The negative intercept on y carries through into the indices, so k is negative. That is shown with a bar over the second 1."
+      },
+      {
+        "text": "(1̄10)",
+        "why": "The bar is on the wrong index. The negative intercept is on the y-axis, so the second index carries the bar."
+      },
+      {
+        "text": "(1̄1̄0)",
+        "why": "Only the y-intercept is negative; the x-intercept is at +a. Only the second index carries a bar."
+      }
+    ],
+    "explanation": "Intercepts: a, −a, ∞. Fractional intercepts: 1, −1, ∞. Reciprocals: 1, −1, 0, and the section writes the negative index with a bar over it: (11̄0)."
+  },
+  {
+    "id": "pc31-miller-parallel-axis-from-indices",
+    "type": "multiple-choice",
+    "prompt": "In a cubic crystal, which axis is the (011) plane parallel to?",
+    "choices": [
+      {
+        "text": "The x-axis",
+        "correct": true
+      },
+      {
+        "text": "The y- and z-axes",
+        "why": "Indices of 1 mean the plane cuts those axes, at a. The 0 is the index for a plane parallel to an axis."
+      },
+      {
+        "text": "The z-axis",
+        "why": "(110) would be parallel to the z-axis. In (011) the 0 is the first index, which belongs to the x-axis."
+      },
+      {
+        "text": "None; it cuts all three axes",
+        "why": "An index of 0 is the reciprocal of an intercept at ∞, so the plane never meets the x-axis."
+      }
+    ],
+    "explanation": "An index of 0 is the reciprocal of an intercept at ∞, so the plane is parallel to that axis. (011) has intercepts ∞, a, a: it is parallel to x and cuts y and z at a."
+  },
+  {
+    "id": "pc31-miller-low-index",
+    "type": "multiple-choice",
+    "prompt": "The section calls some surfaces of a cubic crystal low index surfaces. Which of these is not one of them?",
+    "choices": [
+      {
+        "text": "(210)",
+        "correct": true
+      },
+      {
+        "text": "(100)",
+        "why": "(100) is one of the section's three low index surfaces; its indices are only 0 and 1. (210) contains a 2."
+      },
+      {
+        "text": "(110)",
+        "why": "(110) is one of the section's three low index surfaces; its indices are only 0 and 1. (210) contains a 2."
+      },
+      {
+        "text": "(111)",
+        "why": "(111) is one of the section's three low index surfaces; its indices are all 1. (210) contains a 2."
+      }
+    ],
+    "explanation": "The (100), (110) and (111) surfaces are the low index surfaces of a cubic crystal, where \"low\" means the indices are small numbers, 0 or 1. The (210) surface is one of the infinite number of other planes the notation can describe."
+  },
+  {
+    "id": "pc31-miller-hcp-four-indices",
+    "type": "multiple-choice",
+    "prompt": "Articles may refer to an hcp (0001) surface, with four Miller indices instead of three. Why four?",
+    "choices": [
+      {
+        "text": "The hcp system has four principal axes",
+        "correct": true
+      },
+      {
+        "text": "The fourth index marks a negative intercept",
+        "why": "A negative index is shown by a bar over the number, not by an extra index. hcp has four indices because it has four principal axes."
+      },
+      {
+        "text": "The fourth index gives the plane's distance from the origin",
+        "why": "Miller indices come only from intercepts on the axes. There is one index per principal axis, and hcp has four."
+      },
+      {
+        "text": "The fourth index counts the equivalent faces",
+        "why": "Symmetry-equivalent faces are shown with curly brackets, like {100}. hcp has four indices because it has four principal axes."
+      }
+    ],
+    "explanation": "In the hcp crystal system there are four principal axes, so there are four Miller indices. The section adds that the intercepts on the first three axes are not independent, so the first three indices are linked by a simple mathematical relationship."
+  },
+  {
+    "id": "pc31-miller-curly-brackets",
+    "type": "multiple-choice",
+    "prompt": "What does the notation {100} denote for a cubic crystal?",
+    "choices": [
+      {
+        "text": "The set of faces equivalent to (100) by symmetry",
+        "correct": true
+      },
+      {
+        "text": "The (100) plane and the planes parallel to it",
+        "why": "Parallel planes like (200) are related to (100) by dividing through, not by curly brackets. {100} gathers the symmetry-equivalent faces such as (010) and (001)."
+      },
+      {
+        "text": "The vector normal to the (100) plane",
+        "why": "A vector is written with square brackets, [100]. Curly brackets denote a set of symmetry-related surfaces."
+      },
+      {
+        "text": "One unique (100) surface",
+        "why": "A unique surface is written with standard brackets, (100). Curly brackets denote every surface in the symmetry-related set."
+      }
+    ],
+    "explanation": "Surfaces related by the symmetry elements of the cubic crystal are entirely equivalent. Any surface in the set can be denoted by the general notation {100}, the Miller indices of one surface in curly brackets."
+  },
+  {
+    "id": "pc31-miller-family-count",
+    "type": "numeric",
+    "prompt": "How many faces of a cubic crystal does the section say are equivalent by symmetry to the (100) surface and make up the set {100}? (Count (100) itself.)",
+    "answer": 6,
+    "tolerance": 0,
+    "explanation": "The set {100} contains 6 faces, the six faces of the cube: (100), (1̄00), (010), (01̄0), (001) and (001̄). They are related by the symmetry elements of the cubic crystal and are entirely equivalent."
+  },
+  {
+    "id": "pc31-miller-family-member",
+    "type": "multiple-choice",
+    "prompt": "Which of these surfaces of a cubic crystal belongs to the set {100}?",
+    "choices": [
+      {
+        "text": "(001̄)",
+        "correct": true
+      },
+      {
+        "text": "(110)",
+        "why": "(110) cuts two axes, so it is not one of the cube faces. It belongs to the set {110}."
+      },
+      {
+        "text": "(111)",
+        "why": "(111) cuts all three axes, so it is not a cube face. It belongs to the set {111}."
+      },
+      {
+        "text": "(210)",
+        "why": "(210) is a different plane, cutting x at ½a and y at a. It is not equivalent to a cube face."
+      }
+    ],
+    "explanation": "The {100} set is the 6 cube faces, each cutting one axis and parallel to the other two. (001̄) cuts the z-axis at −a and is parallel to x and y, so it is one of them."
+  },
+  {
+    "id": "pc31-miller-normal-vector-cubic",
+    "type": "multiple-choice",
+    "prompt": "In a cubic crystal, which vector is normal to the (110) plane?",
+    "choices": [
+      {
+        "text": "[110]",
+        "correct": true
+      },
+      {
+        "text": "[001]",
+        "why": "(110) is parallel to the z-axis, so [001] lies in the plane rather than normal to it. In a cubic crystal [hkl] is normal to (hkl)."
+      },
+      {
+        "text": "[1̄10]",
+        "why": "[1̄10] is perpendicular to [110], so it lies in the (110) plane. The normal is [110]."
+      },
+      {
+        "text": "[111]",
+        "why": "[111] is normal to the (111) plane. In a cubic crystal, the vector with the same indices as the plane is its normal: [110]."
+      }
+    ],
+    "explanation": "The section's final note says that in the cubic system the (hkl) plane and the vector [hkl], defined in the normal fashion with respect to the origin, are normal to one another. So [110] is normal to (110)."
+  },
+  {
+    "id": "pc31-miller-normal-vector-only-cubic",
+    "type": "multiple-choice",
+    "prompt": "The section says the (hkl) plane and the vector [hkl] are normal to one another. For which crystals does this hold?",
+    "choices": [
+      {
+        "text": "Only crystals in the cubic system",
+        "correct": true
+      },
+      {
+        "text": "Crystals in all seven crystal systems",
+        "why": "The section stresses that this is unique to the cubic system. It does not apply to systems of lower symmetry."
+      },
+      {
+        "text": "Cubic and tetragonal crystals, where a = b",
+        "why": "a = b is not enough. The section says the property is unique to the cubic system and fails for any of lower symmetry."
+      },
+      {
+        "text": "Only low index planes such as (100)",
+        "why": "In a cubic crystal it holds for every (hkl), not just the low index ones. What limits it is the crystal system."
+      }
+    ],
+    "explanation": "In the cubic system, (hkl) and [hkl] are normal to one another for any plane. The section notes that this is unique to the cubic system and does not apply to crystal systems of lower symmetry."
+  },
+  {
+    "id": "pc31-miller-d-definition",
+    "type": "multiple-choice",
+    "prompt": "What does the symbol d stand for in the section's table of equations?",
+    "choices": [
+      {
+        "text": "The perpendicular spacing between adjacent planes",
+        "correct": true
+      },
+      {
+        "text": "The distance from the origin to a plane's x-intercept",
+        "why": "An intercept locates where one plane cuts an axis. d is the perpendicular distance between neighbouring parallel planes."
+      },
+      {
+        "text": "The length of the unit cell edge",
+        "why": "The cell edges are a, b and c, which go into the equations. d is the perpendicular spacing between adjacent planes."
+      },
+      {
+        "text": "The distance between neighbouring atoms in a plane",
+        "why": "d is measured between planes, perpendicular to them, not between atoms within one plane."
+      }
+    ],
+    "explanation": "The symbol d designates the perpendicular spacing between adjacent planes. Table 31.2.1 gives the equations for d in four of the seven crystal systems, each in terms of the Miller indices h, k, l and the cell dimensions."
+  },
+  {
+    "id": "pc31-miller-tetragonal-equation",
+    "type": "multiple-choice",
+    "prompt": "A tetragonal unit cell has a = b ≠ c. Which equation from the section gives the spacing d between adjacent (hkl) planes?",
+    "choices": [
+      {
+        "text": "1/d^2 = (h^2 + k^2)/a^2 + l^2/c^2",
+        "correct": true
+      },
+      {
+        "text": "1/d^2 = (h^2 + k^2 + l^2)/a^2",
+        "why": "That is the cubic equation, where all three edges equal a. In a tetragonal cell c differs, so l^2 is divided by c^2."
+      },
+      {
+        "text": "1/d^2 = (h^2 + k^2)/c^2 + l^2/a^2",
+        "why": "The edges are swapped. h and k go with the two equal edges a = b, and l goes with the different edge c."
+      },
+      {
+        "text": "1/d^2 = (4/3)((h^2 + hk + k^2)/a^2) + l^2/c^2",
+        "why": "That is the hexagonal equation, with its hk cross term. The tetragonal equation has no such term."
+      }
+    ],
+    "explanation": "Because a = b in a tetragonal cell, h and k share the denominator a^2, while l goes with the different edge c. The table gives 1/d^2 = (h^2 + k^2)/a^2 + l^2/c^2."
+  },
+  {
+    "id": "pc31-miller-smallest-spacing",
+    "type": "multiple-choice",
+    "prompt": "A cubic crystal has 1/d^2 = (h^2 + k^2 + l^2)/a^2. Which of these planes has the smallest spacing d?",
+    "choices": [
+      {
+        "text": "(210)",
+        "correct": true
+      },
+      {
+        "text": "(100)",
+        "why": "(100) has h^2 + k^2 + l^2 = 1, the smallest sum, so it has the largest spacing, d = a."
+      },
+      {
+        "text": "(110)",
+        "why": "(110) gives h^2 + k^2 + l^2 = 2, so d = a/√2. (210) gives 5, a smaller d."
+      },
+      {
+        "text": "(111)",
+        "why": "(111) gives h^2 + k^2 + l^2 = 3, so d = a/√3. (210) gives 5, a smaller d."
+      }
+    ],
+    "explanation": "d = a/√(h^2 + k^2 + l^2), so the larger the sum of squared indices, the closer the planes. The sums are 1, 2, 3 and 5 for (100), (110), (111) and (210), so (210) has the smallest spacing, a/√5."
+  },
+  {
+    "id": "pc31-miller-cubic-111",
+    "type": "numeric",
+    "prompt": "A cubic crystal has a = 433 pm. Using 1/d^2 = (h^2 + k^2 + l^2)/a^2, what is the spacing d between adjacent (111) planes, in pm?",
+    "answer": 250,
+    "unit": "pm",
+    "explanation": "1/d^2 = 3/(433 pm)^2, so d = (433 pm)/√3 = 250 pm. For any (hkl) in a cubic crystal, d = a/√(h^2 + k^2 + l^2)."
+  },
+  {
+    "id": "pc31-miller-cubic-ratio",
+    "type": "numeric",
+    "prompt": "For a cubic crystal, 1/d^2 = (h^2 + k^2 + l^2)/a^2. What is the ratio d_(100)/d_(110)? (Give it as a decimal.)",
+    "answer": 1.414,
+    "explanation": "d_(100) = a/√1 = a and d_(110) = a/√2, so d_(100)/d_(110) = √2 = 1.414. The cell constant cancels, so the ratio is the same for every cubic crystal."
+  },
+  {
+    "id": "pc31-miller-cubic-200",
+    "type": "numeric",
+    "prompt": "A cubic crystal has a = 360 pm. Using 1/d^2 = (h^2 + k^2 + l^2)/a^2, what is the spacing d for the (200) planes, in pm?",
+    "answer": 180,
+    "unit": "pm",
+    "explanation": "1/d^2 = 4/(360 pm)^2, so d = (360 pm)/2 = 180 pm, half of d_(100) = 360 pm. (200) and (100) are parallel planes; doubling the indices gives planes twice as close together."
+  },
+  {
+    "id": "pc31-miller-tetragonal-110",
+    "type": "numeric",
+    "prompt": "A tetragonal unit cell has a = b = 400 pm and c = 600 pm. Using 1/d^2 = (h^2 + k^2)/a^2 + l^2/c^2, what is the spacing d between adjacent (110) planes, in pm?",
+    "answer": 282.8,
+    "unit": "pm",
+    "explanation": "With l = 0 the c term drops out: 1/d^2 = 2/(400 pm)^2, so d = (400 pm)/√2 = 282.8 pm. The (110) planes are parallel to the c-axis, so their spacing doesn't depend on c."
+  },
+  {
+    "id": "pc31-miller-hexagonal-100",
+    "type": "numeric",
+    "prompt": "A hexagonal unit cell has a = 300 pm and c = 500 pm. Using 1/d^2 = (4/3)((h^2 + hk + k^2)/a^2) + l^2/c^2, what is the spacing d between adjacent (100) planes, in pm?",
+    "answer": 259.8,
+    "unit": "pm",
+    "explanation": "With h = 1 and k = l = 0, 1/d^2 = (4/3)(1/(300 pm)^2), so d = (300 pm) × √3/2 = 259.8 pm. The factor 4/3 makes d smaller than a, unlike the cubic case where d_(100) = a."
+  },
+  {
+    "id": "pc31-miller-orthorhombic-120",
+    "type": "numeric",
+    "prompt": "An orthorhombic unit cell has a = 300 pm, b = 800 pm and c = 500 pm. Using 1/d^2 = h^2/a^2 + k^2/b^2 + l^2/c^2, what is the spacing d between adjacent (120) planes, in pm?",
+    "answer": 240,
+    "unit": "pm",
+    "explanation": "1/d^2 = 1/(300 pm)^2 + 4/(800 pm)^2 + 0 = 1.111 × 10^−5 pm^−2 + 0.625 × 10^−5 pm^−2 = 1.736 × 10^−5 pm^−2, so d = 240 pm. With l = 0 the c term drops out."
+  },
+  {
+    "id": "pc31-miller-intercept-from-indices",
+    "type": "numeric",
+    "prompt": "In a cubic crystal with a = 400 pm, a plane has Miller indices (124), with no common factor removed, so the reciprocals of its fractional intercepts are 1, 2 and 4. Where does it cut the z-axis, in pm?",
+    "answer": 100,
+    "unit": "pm",
+    "tolerance": 0,
+    "explanation": "The fractional intercept on z is 1/4, and multiplying by the cell constant gives (1/4) × 400 pm = 100 pm. This runs the recipe backwards: invert the index, then multiply by a."
+  }
+]

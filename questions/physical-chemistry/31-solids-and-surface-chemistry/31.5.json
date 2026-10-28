@@ -1,0 +1,474 @@
+[
+  {
+    "id": "pc31-fourier-transform-definition",
+    "type": "multiple-choice",
+    "prompt": "What does the section say a Fourier transform does?",
+    "choices": [
+      {
+        "text": "Converts one function into another, as from time to frequency",
+        "correct": true
+      },
+      {
+        "text": "Averages a function down to a single number",
+        "why": "The result is a whole function, not one number. In FTIR, for example, a function of time becomes a function of frequency."
+      },
+      {
+        "text": "Squares a function to give its intensity",
+        "why": "Squaring gives an intensity, but that isn't a Fourier transform. The transform converts one function into another, such as time domain into frequency domain."
+      },
+      {
+        "text": "Removes the noise from measured data",
+        "why": "The transform doesn't filter data; it re-expresses a function in another domain, as FTIR turns a time-domain signal into a frequency spectrum."
+      }
+    ],
+    "explanation": "The section defines a Fourier transform as an operation that converts one function into another. In FTIR it takes a function in the time domain into the frequency domain; in X-ray diffraction it links the diffraction data to the electron density in real space."
+  },
+  {
+    "id": "pc31-fourier-music-analogy",
+    "type": "multiple-choice",
+    "prompt": "The section compares a Fourier transform with playing written music, turning notes in the \"sheet\" domain into notes in the \"sound\" domain. What point does the comparison make?",
+    "choices": [
+      {
+        "text": "The same information is expressed in a different form",
+        "correct": true
+      },
+      {
+        "text": "Some information is lost in the conversion",
+        "why": "The section says each note played represents exactly what is on the paper. Nothing is lost; it is just expressed differently."
+      },
+      {
+        "text": "The sound domain holds more information",
+        "why": "Playing adds nothing that wasn't on the sheet. Each note played represents exactly what is written, in a different way."
+      },
+      {
+        "text": "The conversion can go in one direction only",
+        "why": "The section's two equations go both ways: F(hkl) builds ρ(x, y, z), and an integral over ρ(x, y, z) gives back F(hkl). The point is that both forms carry the same information."
+      }
+    ],
+    "explanation": "Each note played represents exactly what is on the paper, just in a different way. In the same way, the Fourier transform re-expresses the X-ray diffraction data as the electron density in real space, without adding or losing information."
+  },
+  {
+    "id": "pc31-fourier-goal",
+    "type": "multiple-choice",
+    "prompt": "In X-ray crystallography, what is the Fourier transform of the diffraction data used to find?",
+    "choices": [
+      {
+        "text": "The electron density around the atoms in real space",
+        "correct": true
+      },
+      {
+        "text": "The wavelength of the X-rays used",
+        "why": "The wavelength is chosen for the experiment, not found from the data. The transform gives the electron density in real space."
+      },
+      {
+        "text": "The frequency spectrum of the X-ray source",
+        "why": "Time-to-frequency is the FTIR use of the transform. In diffraction it turns structure factors into the electron density of the crystal."
+      },
+      {
+        "text": "The Miller indices of each reflection",
+        "why": "The Miller indices label the reflections; they are inputs to the sums. The transform gives the electron density around the atoms."
+      }
+    ],
+    "explanation": "The section applies the Fourier transform to the diffraction data to determine the electron density around the atoms of the crystal in real space. The density shows where the electrons, and so the atoms, are."
+  },
+  {
+    "id": "pc31-fourier-spread-density",
+    "type": "multiple-choice",
+    "prompt": "Section 31.4 treated the lattice points as individual, localized electron densities. How does Section 31.5 treat the electron density of a unit cell?",
+    "choices": [
+      {
+        "text": "As spread over a much larger space in the cell",
+        "correct": true
+      },
+      {
+        "text": "As localized at the lattice points",
+        "why": "That is the simpler picture of Section 31.4. In reality, the section says, the electron density is distributed over a much larger space."
+      },
+      {
+        "text": "As point charges sitting at the nuclei",
+        "why": "X-rays are scattered by electrons, and the section treats their density as spread out. That continuous density is what ρ(x, y, z) describes."
+      },
+      {
+        "text": "As confined to the bonds between atoms",
+        "why": "The density isn't limited to bonds. The section treats it as distributed through the cell, as a continuous function ρ(x, y, z)."
+      }
+    ],
+    "explanation": "In reality, the section says, the electron density of a unit cell is distributed over a much larger space than a set of points. It is therefore described by a continuous function ρ(x, y, z), found from the structure factors by a Fourier series."
+  },
+  {
+    "id": "pc31-fourier-expansion-coefficients",
+    "type": "multiple-choice",
+    "prompt": "In ρ(x, y, z) = Σ_h Σ_k Σ_l F(hkl)e^(−2πi(hx/a + ky/b + lz/c)), what role do the structure factors F(hkl) play?",
+    "choices": [
+      {
+        "text": "They are the coefficients of the Fourier series for ρ",
+        "correct": true
+      },
+      {
+        "text": "They are the positions of the atoms",
+        "why": "The positions are what the series reveals. F(hkl) are the coefficients, one for each set of Miller indices hkl."
+      },
+      {
+        "text": "They are the electron densities at the lattice points",
+        "why": "F(hkl) belongs to reciprocal space and is labeled by hkl, not by a point in the cell. Each is the weight of one term in the series."
+      },
+      {
+        "text": "They are the measured X-ray intensities",
+        "why": "Intensities give |F(hkl)|^2. The series needs the complex F(hkl), with its phase, as the coefficient of each term."
+      }
+    ],
+    "explanation": "This is the Fourier expansion of the electron density function: a sum of waves e^(−2πi(hx/a + ky/b + lz/c)), one for each hkl, weighted by F(hkl). Knowing all the structure factors gives the electron density at every point (x, y, z)."
+  },
+  {
+    "id": "pc31-fourier-real-reciprocal",
+    "type": "multiple-choice",
+    "prompt": "Which pairing of each function with its space is correct?",
+    "choices": [
+      {
+        "text": "ρ(x, y, z) in real space; F(hkl) in reciprocal space",
+        "correct": true
+      },
+      {
+        "text": "ρ(x, y, z) in reciprocal space; F(hkl) in real space",
+        "why": "This swaps them. ρ(x, y, z) depends on positions in the cell, so it is in real space; F(hkl) is labeled by Miller indices, in reciprocal space."
+      },
+      {
+        "text": "Both in real space",
+        "why": "Only ρ(x, y, z), a function of position, is in real space. F(hkl), labeled by the Miller indices, is in reciprocal space."
+      },
+      {
+        "text": "Both in reciprocal space",
+        "why": "F(hkl) is in reciprocal space, but the electron density ρ(x, y, z) is a function of position: real space."
+      }
+    ],
+    "explanation": "The electron density ρ(x, y, z) is a function of position in the unit cell, in real space. The structure factor F(hkl), labeled by the Miller indices, is in reciprocal space, and the Fourier transform connects the two."
+  },
+  {
+    "id": "pc31-fourier-sum-limits",
+    "type": "multiple-choice",
+    "prompt": "Over which values of h, k and l does the Fourier series for the electron density ρ(x, y, z) run?",
+    "choices": [
+      {
+        "text": "All integers, from −∞ to ∞",
+        "correct": true
+      },
+      {
+        "text": "Positive integers only",
+        "why": "Each sum runs from h = −∞ to ∞, so negative indices are included too."
+      },
+      {
+        "text": "Only 0 and 1, like the corners of the cell",
+        "why": "That confuses the Miller indices with coordinates within the cell. Each index runs over all integers, from −∞ to ∞."
+      },
+      {
+        "text": "Only h, k, l that are all odd or all even",
+        "why": "The sums take every hkl. Some F(hkl) may be zero for a given lattice, but the series itself runs over all integers."
+      }
+    ],
+    "explanation": "The section writes the electron density as a triple sum with h, k and l each running from −∞ to ∞. In practice it is evaluated over all the values of h, k and l for which F(hkl) is known."
+  },
+  {
+    "id": "pc31-fourier-sign-exponent",
+    "type": "multiple-choice",
+    "prompt": "The series for ρ(x, y, z) uses e^(−2πi(hx/a + ky/b + lz/c)). How does the exponential in the integral that gives F(hkl) from ρ(x, y, z) differ?",
+    "choices": [
+      {
+        "text": "Its exponent has the opposite sign, +2πi",
+        "correct": true
+      },
+      {
+        "text": "It is the same, with −2πi",
+        "why": "The forward and back transforms differ in sign. F(hkl) ∝ ∫∫∫ρ(x, y, z)e^(+2πi(hx/a + ky/b + lz/c))dx dy dz."
+      },
+      {
+        "text": "It has no i, so it is real",
+        "why": "Both exponentials are complex phase factors. The one that gives F(hkl) has +2πi in place of −2πi."
+      },
+      {
+        "text": "It is squared, as in an intensity",
+        "why": "No square appears in the transform. The integral for F(hkl) uses e^(+2πi(hx/a + ky/b + lz/c))."
+      }
+    ],
+    "explanation": "The two equations form a Fourier pair: the series builds ρ(x, y, z) from F(hkl) with e^(−2πi(…)), and the integral over x, y and z recovers F(hkl) from ρ(x, y, z) with e^(+2πi(…)). The +2πi matches the sign in the sum over atoms, Σ_j f_j e^(2πi(hx_j + ky_j + lz_j))."
+  },
+  {
+    "id": "pc31-fourier-magnitude-phase",
+    "type": "multiple-choice",
+    "prompt": "The section writes the structure factor as F(q) = |F(q)|e^(iφ(q)). What do |F(q)| and φ(q) represent?",
+    "choices": [
+      {
+        "text": "The magnitude and the phase of F",
+        "correct": true
+      },
+      {
+        "text": "The real and imaginary parts of F",
+        "why": "Those are A_hkl and B_hkl in F = A_hkl + iB_hkl. |F| is the magnitude and φ the phase."
+      },
+      {
+        "text": "The phase and the magnitude of F",
+        "why": "This is the wrong way round. The factor in front, |F(q)|, is the magnitude; φ(q) in the exponent is the phase."
+      },
+      {
+        "text": "The intensity and the wavelength",
+        "why": "The intensity goes as |F|^2, and the wavelength doesn't appear here. |F(q)| is the magnitude and φ(q) the phase."
+      }
+    ],
+    "explanation": "F(hkl) is generally a complex number. Written as |F(q)|e^(iφ(q)), its size is the magnitude |F(q)| and its direction in the complex plane is the phase φ(q)."
+  },
+  {
+    "id": "pc31-fourier-a-hkl",
+    "type": "multiple-choice",
+    "prompt": "The section splits the structure factor as F_hkl = A_hkl + iB_hkl. What is A_hkl?",
+    "choices": [
+      {
+        "text": "Σ_j f_j cos[2π(hx_j + ky_j + lz_j)]",
+        "correct": true
+      },
+      {
+        "text": "Σ_j f_j sin[2π(hx_j + ky_j + lz_j)]",
+        "why": "That is B_hkl, the imaginary part. A_hkl is the real part, the sum with cosines."
+      },
+      {
+        "text": "|F_hkl|^2",
+        "why": "|F_hkl|^2 = A_hkl^2 + B_hkl^2 governs the intensity. A_hkl itself is the real part, Σ_j f_j cos[2π(hx_j + ky_j + lz_j)]."
+      },
+      {
+        "text": "Σ_j f_j",
+        "why": "That would need every cosine to equal 1, as it does for hkl = 000. In general each atom is weighted by its phase: A_hkl = Σ_j f_j cos[2π(hx_j + ky_j + lz_j)]."
+      }
+    ],
+    "explanation": "Writing each e^(2πi(hx_j + ky_j + lz_j)) as cos + i sin splits the structure factor in two. The cosine sum is the real part A_hkl and the sine sum is the imaginary part B_hkl."
+  },
+  {
+    "id": "pc31-fourier-modulus",
+    "type": "numeric",
+    "prompt": "A reflection has A_hkl = 12 and B_hkl = 5, where F_hkl = A_hkl + iB_hkl. What is the modulus |F_hkl|?",
+    "answer": 13,
+    "tolerance": 0,
+    "explanation": "|F_hkl| = √(A_hkl^2 + B_hkl^2) = √(144 + 25) = √169 = 13. This is the amplitude, the part of F_hkl that the intensity of the diffracted beam reveals."
+  },
+  {
+    "id": "pc31-fourier-a-two-atoms",
+    "type": "numeric",
+    "prompt": "A unit cell has an atom with f = 6 at fractional coordinates (0, 0, 0) and an atom with f = 8 at (1/4, 0, 0). Using A_hkl = Σ_j f_j cos[2π(hx_j + ky_j + lz_j)], what is A_hkl for the 200 reflection?",
+    "answer": -2,
+    "tolerance": 0,
+    "explanation": "The first atom gives 6 cos 0 = 6. The second gives 8 cos(2π × 2 × 1/4) = 8 cos π = −8. So A_200 = 6 − 8 = −2; A_hkl can be negative because each atom's term carries its own phase."
+  },
+  {
+    "id": "pc31-fourier-modulus-from-atoms",
+    "type": "numeric",
+    "prompt": "A unit cell has an atom with f = 9 at fractional coordinates (0, 0, 0) and an atom with f = 12 at (0, 0, 1/4). Using F_hkl = Σ_j f_j e^(2πi(hx_j + ky_j + lz_j)), what is |F_hkl| for the 001 reflection?",
+    "answer": 15,
+    "tolerance": 0,
+    "explanation": "The first atom gives 9e^0 = 9. The second gives 12e^(2πi × 1/4) = 12e^(iπ/2) = 12i. So F_001 = 9 + 12i, with A = 9 and B = 12, and |F_001| = √(81 + 144) = 15."
+  },
+  {
+    "id": "pc31-fourier-phase-angle",
+    "type": "numeric",
+    "prompt": "A reflection has A_hkl = 3 and B_hkl = 3. Writing F_hkl = |F_hkl|e^(iα_hkl) = A_hkl + iB_hkl, what is the phase α_hkl, in degrees?",
+    "answer": 45,
+    "unit": "°",
+    "tolerance": 0,
+    "explanation": "A_hkl = |F_hkl| cos α_hkl and B_hkl = |F_hkl| sin α_hkl, so tan α_hkl = B_hkl/A_hkl = 3/3 = 1 and α_hkl = 45°. The magnitude is |F_hkl| = √(9 + 9) = 4.24."
+  },
+  {
+    "id": "pc31-fourier-real-part",
+    "type": "numeric",
+    "prompt": "A structure factor has modulus |F_hkl| = 20 and phase α_hkl = 60°. Writing F_hkl = |F_hkl|e^(iα_hkl) = A_hkl + iB_hkl, what is A_hkl?",
+    "answer": 10,
+    "explanation": "e^(iα) = cos α + i sin α, so A_hkl = |F_hkl| cos α_hkl = 20 × cos 60° = 20 × 0.500 = 10. The imaginary part is B_hkl = 20 × sin 60° = 17.3."
+  },
+  {
+    "id": "pc31-fourier-what-is-measured",
+    "type": "multiple-choice",
+    "prompt": "What does the measured intensity of a diffracted beam tell you about the structure factor of that reflection?",
+    "choices": [
+      {
+        "text": "Its amplitude, but not its phase",
+        "correct": true
+      },
+      {
+        "text": "Both its amplitude and its phase",
+        "why": "The intensity is related only to the amplitude. The section says the phase must normally be deduced by indirect means."
+      },
+      {
+        "text": "Its phase, but not its amplitude",
+        "why": "It is the other way round. The intensity is directly related to the amplitude; the phase has to be deduced indirectly."
+      },
+      {
+        "text": "Its value at every point in the cell",
+        "why": "The structure factor belongs to one reflection hkl, not to a point. The intensity gives its amplitude; the phase is missing."
+      }
+    ],
+    "explanation": "The section states that the intensity of a diffracted beam is directly related to the amplitude of the structure factor, but the phase must normally be deduced by indirect means. That missing phase is why structure determination has to estimate phases and refine a model."
+  },
+  {
+    "id": "pc31-fourier-needs-phase",
+    "type": "multiple-choice",
+    "prompt": "To compute the electron density ρ(x, y, z) from the Fourier series Σ F(hkl)e^(−2πi(hx/a + ky/b + lz/c)), what must be known for each reflection?",
+    "choices": [
+      {
+        "text": "Both |F(hkl)| and its phase",
+        "correct": true
+      },
+      {
+        "text": "Only |F(hkl)|, from the intensity",
+        "why": "The series adds complex numbers F(hkl) = |F|e^(iφ). Without the phases the terms can't be added correctly, which is why phases must be estimated."
+      },
+      {
+        "text": "Only the phase of F(hkl)",
+        "why": "The phase alone doesn't say how much each term contributes. The series needs the whole complex F(hkl), magnitude and phase."
+      },
+      {
+        "text": "Only whether each reflection is present",
+        "why": "Presence or absence helps identify the lattice, but the series needs the size and the phase of every F(hkl)."
+      }
+    ],
+    "explanation": "The coefficients of the series are the complex numbers F(hkl) = |F(hkl)|e^(iφ), so both parts are needed. The intensities supply |F(hkl)|, but the phases have to be deduced indirectly."
+  },
+  {
+    "id": "pc31-fourier-same-modulus",
+    "type": "multiple-choice",
+    "prompt": "Two structure factors are F_1 = 10e^(i·0) and F_2 = 10e^(iπ/2). How do the intensities of the two reflections compare?",
+    "choices": [
+      {
+        "text": "They are equal",
+        "correct": true
+      },
+      {
+        "text": "F_1 gives the stronger reflection",
+        "why": "The phase doesn't change the intensity. Both have |F| = 10, so both intensities go as 10^2."
+      },
+      {
+        "text": "F_2 gives the stronger reflection",
+        "why": "A larger phase doesn't mean a stronger beam. Both have |F| = 10, and the intensity depends only on the amplitude."
+      },
+      {
+        "text": "F_2 gives no reflection",
+        "why": "e^(iπ/2) = i, so F_2 = 10i, which is not zero. Its intensity, like that of F_1, goes as |F|^2 = 100."
+      }
+    ],
+    "explanation": "The intensity of a diffracted beam depends on the amplitude |F|, which is 10 for both. The phases differ by π/2, but that difference doesn't show in the intensities, which is why the phase must be deduced by indirect means."
+  },
+  {
+    "id": "pc31-fourier-sum-over-atoms",
+    "type": "multiple-choice",
+    "prompt": "In F_hkl = Σ_j f_j e^(2πi(hx_j + ky_j + lz_j)), what does the sum over j run over?",
+    "choices": [
+      {
+        "text": "All the atoms in the unit cell",
+        "correct": true
+      },
+      {
+        "text": "All the sets of planes hkl",
+        "why": "Each F_hkl belongs to one set of planes. The sum over hkl is in the series for ρ(x, y, z); the sum over j runs over the atoms."
+      },
+      {
+        "text": "All the electrons of one atom",
+        "why": "The electrons of one atom are already summed inside its scattering factor f_j. The sum over j adds the atoms of the unit cell."
+      },
+      {
+        "text": "All the unit cells in the crystal",
+        "why": "The sum covers one unit cell; x_j, y_j, z_j are positions within it. j labels the atoms in that cell."
+      }
+    ],
+    "explanation": "The section says the sum is over all atoms in the unit cell, with x_j, y_j, z_j the positional coordinates of the jth atom and f_j its scattering factor. Each atom adds a wave of size f_j with a phase set by its position."
+  },
+  {
+    "id": "pc31-fourier-initial-model",
+    "type": "multiple-choice",
+    "prompt": "In structure determination, phases are first estimated and an initial model is deduced. What does that initial model describe?",
+    "choices": [
+      {
+        "text": "The positions and anisotropic displacements of the atoms",
+        "correct": true
+      },
+      {
+        "text": "Only the edge lengths of the unit cell",
+        "why": "The model goes further: it places the scattering atoms in the cell, with their positions and anisotropic displacements."
+      },
+      {
+        "text": "The measured phases of every reflection",
+        "why": "Phases are not measured; they are estimated. The model built from them gives the positions and anisotropic displacements of the atoms."
+      },
+      {
+        "text": "The X-ray wavelength best suited to the crystal",
+        "why": "The model describes the crystal's contents, not the experiment: the positions and anisotropic displacements of the scattering atoms."
+      }
+    ],
+    "explanation": "From the estimated phases, the section says, an initial description of the positions and anisotropic displacements of the scattering atoms is deduced. Structure factors are then calculated from this model."
+  },
+  {
+    "id": "pc31-fourier-refinement-order",
+    "type": "multiple-choice",
+    "prompt": "Which sequence of steps does the section describe for determining a crystal structure?",
+    "choices": [
+      {
+        "text": "Estimate phases, build a model, calculate F, compare with observed F, repeat",
+        "correct": true
+      },
+      {
+        "text": "Compare calculated with observed F, then estimate phases, then build a model",
+        "why": "Calculated F values come from a model, so the model must come first. Phases are estimated, a model is built, then its F values are compared."
+      },
+      {
+        "text": "Read the phases from the intensities, compute ρ directly, then stop",
+        "why": "Intensities give only the amplitude; the phase must be deduced indirectly. So the structure is found by estimating phases and refining a model."
+      },
+      {
+        "text": "Estimate phases, build a model, then accept the first calculated F",
+        "why": "One calculation is not enough. The section's refinement repeats the comparison until calculation and experiment agree satisfactorily."
+      }
+    ],
+    "explanation": "Phases are estimated, an initial model of the atoms is deduced, structure factors are calculated from it and compared with those observed. Iterative refinement repeats this until a satisfactory fit is obtained."
+  },
+  {
+    "id": "pc31-fourier-refinement-goal",
+    "type": "multiple-choice",
+    "prompt": "What do the iterative refinement procedures of structure determination try to minimize?",
+    "choices": [
+      {
+        "text": "The difference between calculated and observed F",
+        "correct": true
+      },
+      {
+        "text": "The number of atoms in the model",
+        "why": "The atom count is set by the structure, not minimized. Refinement adjusts the model until the calculated structure factors match the observed ones."
+      },
+      {
+        "text": "The intensities of the weak reflections",
+        "why": "The measured intensities are fixed data. Refinement changes the model to bring the calculated structure factors close to the observed ones."
+      },
+      {
+        "text": "The phases of all the reflections",
+        "why": "Phases are estimated and improved, not driven to zero. The quantity minimized is the difference between calculation and experiment."
+      }
+    ],
+    "explanation": "Structure factors calculated from the model are compared with those observed, and the refinement procedures attempt to minimize the difference between calculation and experiment until a satisfactory fit has been obtained."
+  },
+  {
+    "id": "pc31-fourier-density-map",
+    "type": "multiple-choice",
+    "prompt": "Figure 31.5.1 shows an electron density map of a quinoline derivative and one water molecule. What is such a map?",
+    "choices": [
+      {
+        "text": "The electron density in real space, found from diffraction data",
+        "correct": true
+      },
+      {
+        "text": "A photograph of the diffraction spots",
+        "why": "The spots are the raw data, labeled by hkl. The map is the electron density computed from them, showing where the atoms are."
+      },
+      {
+        "text": "A plot of the scattering factor f against angle",
+        "why": "That is a different graph, for single atoms. The map shows ρ(x, y, z) for the whole molecule, determined from X-ray diffraction data."
+      },
+      {
+        "text": "A map of the positions of the nuclei only",
+        "why": "X-rays are scattered by electrons, so the map shows electron density. The atoms appear where that density is concentrated."
+      }
+    ],
+    "explanation": "The map shows the electron density of the quinoline derivative, determined from X-ray diffraction data. Atoms appear where the density is concentrated; the section points out the oxygen of a water molecule sitting close to the N atom of the quinoline."
+  }
+]

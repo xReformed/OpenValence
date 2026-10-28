@@ -1,0 +1,458 @@
+[
+  {
+    "id": "pc29-steady-state-which-species",
+    "type": "multiple-choice",
+    "prompt": "To what kind of species does the section apply the steady-state approximation?",
+    "choices": [
+      {
+        "text": "A highly reactive, short-lived intermediate",
+        "correct": true
+      },
+      {
+        "text": "A reactant present in large excess",
+        "why": "The approximation is about the concentration of an intermediate, not a reactant. It suits a highly reactive intermediate that is used as fast as it is made."
+      },
+      {
+        "text": "The final product of the reaction",
+        "why": "A product builds up as the reaction goes on, so its concentration isn't constant. The approximation is for a short-lived intermediate."
+      },
+      {
+        "text": "A stable intermediate that accumulates",
+        "why": "An intermediate that accumulates has a changing concentration. The approximation is for a highly reactive one whose concentration holds constant."
+      }
+    ],
+    "explanation": "The section applies the approximation to a highly reactive, short-lived intermediate whose concentration holds a constant value over a long period of time. For such an intermediate I, d[I]/dt = 0."
+  },
+  {
+    "id": "pc29-steady-state-statement",
+    "type": "multiple-choice",
+    "prompt": "For a short-lived intermediate I, what does the steady-state approximation set equal to zero?",
+    "choices": [
+      {
+        "text": "d[I]/dt",
+        "correct": true
+      },
+      {
+        "text": "[I]",
+        "why": "The intermediate is present; its concentration is small but not zero. What is zero is its rate of change, d[I]/dt."
+      },
+      {
+        "text": "The rate of the overall reaction",
+        "why": "The reaction still goes on and forms product. Only the intermediate's concentration is held constant: d[I]/dt = 0."
+      },
+      {
+        "text": "The rate of the step that forms I",
+        "why": "I is still being formed. The approximation says it is used up as fast as it is formed, so d[I]/dt = 0."
+      }
+    ],
+    "explanation": "The approximation sets d[I]/dt = 0 for the intermediate. Its concentration holds a constant value, which can then be solved for."
+  },
+  {
+    "id": "pc29-steady-state-constant-not-zero",
+    "type": "multiple-choice",
+    "prompt": "The steady-state approximation sets d[I]/dt = 0 for an intermediate I. What does this say about [I]?",
+    "choices": [
+      {
+        "text": "It holds a constant value",
+        "correct": true
+      },
+      {
+        "text": "It is zero",
+        "why": "A zero rate of change doesn't mean a zero concentration. The section solves for the constant, nonzero [I]."
+      },
+      {
+        "text": "It equals the concentration of the reactant",
+        "why": "Nothing sets [I] equal to a reactant concentration. d[I]/dt = 0 means [I] is constant, and the section solves for its value."
+      },
+      {
+        "text": "It rises steadily with time",
+        "why": "A steadily rising [I] would have d[I]/dt > 0. Setting the derivative to zero means [I] stays constant."
+      }
+    ],
+    "explanation": "d[I]/dt = 0 means [I] is not changing, so it holds a constant value. The approximation is useful because it lets that constant concentration be solved for, as the section does for A_2 and A^*."
+  },
+  {
+    "id": "pc29-steady-state-requirement",
+    "type": "multiple-choice",
+    "prompt": "What does the section say one must be able to write in order to use the steady-state approximation to find an intermediate's concentration?",
+    "choices": [
+      {
+        "text": "An expression for the rate of change of [I]",
+        "correct": true
+      },
+      {
+        "text": "The equilibrium constant of the overall reaction",
+        "why": "No equilibrium constant is needed. The method sets the expression for d[I]/dt to zero and solves it for [I]."
+      },
+      {
+        "text": "The measured rate law of the reaction",
+        "why": "The steady-state approximation predicts a rate law from the mechanism; it doesn't start from the measured one. It needs an expression for d[I]/dt."
+      },
+      {
+        "text": "The integrated rate law for the product",
+        "why": "No integration is needed. Writing d[I]/dt from the steps and setting it to zero gives [I]."
+      }
+    ],
+    "explanation": "So long as one can write an expression for d[I]/dt, the approximation lets one solve for the intermediate's constant concentration. For each mechanism, the section writes d[I]/dt from the steps that form and use I."
+  },
+  {
+    "id": "pc29-steady-state-a2-rate-of-change",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A + A → A_2 (rate constant k_1), then A_2 + B → C + A (rate constant k_2), what is d[A_2]/dt?",
+    "choices": [
+      {
+        "text": "k_1[A]^2 − k_2[A_2][B]",
+        "correct": true
+      },
+      {
+        "text": "k_1[A]^2 + k_2[A_2][B]",
+        "why": "Step 2 uses up A_2, so its term is subtracted. A_2 is formed by step 1 and consumed by step 2."
+      },
+      {
+        "text": "k_2[A_2][B] − k_1[A]^2",
+        "why": "The signs are reversed. Step 1 forms A_2, so k_1[A]^2 is positive; step 2 consumes it, so k_2[A_2][B] is negative."
+      },
+      {
+        "text": "k_1[A] − k_2[A_2][B]",
+        "why": "Step 1 brings together two A, so its rate is k_1[A]^2, not k_1[A]."
+      }
+    ],
+    "explanation": "A_2 is formed by step 1 at the rate k_1[A]^2 and used up by step 2 at the rate k_2[A_2][B]. So d[A_2]/dt = k_1[A]^2 − k_2[A_2][B]."
+  },
+  {
+    "id": "pc29-steady-state-balance-meaning",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), setting d[A_2]/dt ≈ 0 is the same as saying what?",
+    "choices": [
+      {
+        "text": "A_2 is used up as fast as it is formed: k_2[A_2][B] = k_1[A]^2",
+        "correct": true
+      },
+      {
+        "text": "Neither step is happening: k_1[A]^2 = k_2[A_2][B] = 0",
+        "why": "Both steps keep going; product C is still made. They just run at the same rate, so [A_2] doesn't change."
+      },
+      {
+        "text": "Step 1 is at equilibrium with its reverse",
+        "why": "This mechanism has no reverse of step 1. The steady state balances forming A_2 in step 1 against using it in step 2."
+      },
+      {
+        "text": "A_2 forms faster than it is used: k_1[A]^2 > k_2[A_2][B]",
+        "why": "Then [A_2] would rise, so d[A_2]/dt would be positive. The steady state needs the two rates equal."
+      }
+    ],
+    "explanation": "d[A_2]/dt = k_1[A]^2 − k_2[A_2][B] ≈ 0 means the rate of forming A_2 equals the rate of using it up. That balance is what keeps [A_2] constant."
+  },
+  {
+    "id": "pc29-steady-state-a2-concentration",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), d[A_2]/dt = k_1[A]^2 − k_2[A_2][B]. What steady-state [A_2] does the section obtain?",
+    "choices": [
+      {
+        "text": "(k_1[A]^2)/(k_2[B])",
+        "correct": true
+      },
+      {
+        "text": "(k_2[B])/(k_1[A]^2)",
+        "why": "The fraction is upside down. Solving k_1[A]^2 = k_2[A_2][B] for [A_2] puts k_1[A]^2 on top."
+      },
+      {
+        "text": "(k_1[A]^2)/(k_2)",
+        "why": "[B] is missing. Step 2's rate is k_2[A_2][B], so dividing by k_2[B] is needed to isolate [A_2]."
+      },
+      {
+        "text": "(k_1[A])/(k_2[B])",
+        "why": "Step 1 brings together two A, so its rate is k_1[A]^2. The squared term carries through to [A_2]."
+      }
+    ],
+    "explanation": "Setting k_1[A]^2 − k_2[A_2][B] ≈ 0 and solving gives [A_2] ≈ (k_1[A]^2)/(k_2[B]). This constant concentration is then substituted into the rate of forming C."
+  },
+  {
+    "id": "pc29-steady-state-a2-numeric",
+    "type": "numeric",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), the steady-state concentration is [A_2] ≈ (k_1[A]^2)/(k_2[B]). What is [A_2], in M, when k_1 = 0.50 M^−1 s^−1, k_2 = 2.0 × 10^4 M^−1 s^−1, [A] = 0.20 M and [B] = 0.10 M? (Type it in scientific notation, like 2.5e-6.)",
+    "answer": 0.00001,
+    "unit": "M",
+    "explanation": "[A_2] ≈ (0.50 × (0.20)^2)/(2.0 × 10^4 × 0.10) M = (0.020)/(2.0 × 10^3) M = 1.0 × 10^−5 M. Because step 2 is much faster than step 1, the intermediate stays at a very low, constant level."
+  },
+  {
+    "id": "pc29-steady-state-rate-of-c",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), the section expresses the overall rate as the rate of forming C. Which expression does it start from?",
+    "choices": [
+      {
+        "text": "d[C]/dt = k_2[A_2][B]",
+        "correct": true
+      },
+      {
+        "text": "d[C]/dt = k_1[A]^2",
+        "why": "That is where the derivation ends, not where it starts. C is formed only in step 2, so d[C]/dt starts as k_2[A_2][B]."
+      },
+      {
+        "text": "d[C]/dt = k_1[A]^2 − k_2[A_2][B]",
+        "why": "That is d[A_2]/dt, the rate of change of the intermediate. C is formed only in step 2, at the rate k_2[A_2][B]."
+      },
+      {
+        "text": "d[C]/dt = k_2[A][B]",
+        "why": "Step 2 uses A_2, not A. C forms at the rate k_2[A_2][B]."
+      }
+    ],
+    "explanation": "C is produced only by step 2, A_2 + B → C + A, so d[C]/dt = k_2[A_2][B]. The intermediate's concentration in this expression is then replaced by its steady-state value."
+  },
+  {
+    "id": "pc29-steady-state-a2-rate-law",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), substituting [A_2] ≈ (k_1[A]^2)/(k_2[B]) into d[C]/dt = k_2[A_2][B] gives which rate law?",
+    "choices": [
+      {
+        "text": "d[C]/dt = k_1[A]^2",
+        "correct": true
+      },
+      {
+        "text": "d[C]/dt = k_1[A]^2[B]",
+        "why": "The [B] from step 2 cancels the [B] in the denominator of [A_2]. No [B] is left in the rate law."
+      },
+      {
+        "text": "d[C]/dt = (k_1^2[A]^2)/(k_2)",
+        "why": "k_2 cancels: k_2 × (k_1[A]^2)/(k_2[B]) × [B] = k_1[A]^2. Only k_1 remains, to the first power."
+      },
+      {
+        "text": "d[C]/dt = k_1[A]",
+        "why": "That is the rate law of the A → A^* mechanism. Here step 1 uses two A, so the rate is k_1[A]^2."
+      }
+    ],
+    "explanation": "d[C]/dt = k_2 × (k_1[A]^2)/(k_2[B]) × [B]; k_2 and [B] cancel, leaving k_1[A]^2. The mechanism is predicted to be second order in A."
+  },
+  {
+    "id": "pc29-steady-state-zero-order-b",
+    "type": "multiple-choice",
+    "prompt": "The steady-state treatment of A + A → A_2 (k_1), then A_2 + B → C + A (k_2), predicts d[C]/dt = k_1[A]^2, even though B is a reactant. What order in B does it predict, and why?",
+    "choices": [
+      {
+        "text": "Zero order, because [B] cancels in the derivation",
+        "correct": true
+      },
+      {
+        "text": "First order, because B appears in step 2",
+        "why": "B does appear in step 2, but the steady-state [A_2] has [B] in its denominator, which cancels the [B] in k_2[A_2][B]."
+      },
+      {
+        "text": "Second order, matching the order in A",
+        "why": "The orders in A and B are separate. [B] cancels completely, so the predicted order in B is zero."
+      },
+      {
+        "text": "Zero order, because B is not used up",
+        "why": "B is used up, one per C formed. The order is zero because the extra [B] lowers [A_2] by just as much, so [B] cancels."
+      }
+    ],
+    "explanation": "Raising [B] speeds up step 2 but lowers the steady-state [A_2] = (k_1[A]^2)/(k_2[B]) by the same factor. The two effects cancel, so d[C]/dt = k_1[A]^2 has no [B] in it."
+  },
+  {
+    "id": "pc29-steady-state-double-b-rate",
+    "type": "numeric",
+    "prompt": "The steady-state treatment of A + A → A_2 (k_1), then A_2 + B → C + A (k_2), predicts d[C]/dt = k_1[A]^2. By what factor does the predicted rate change if [B] is doubled, with [A] unchanged?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "[B] doesn't appear in d[C]/dt = k_1[A]^2, so the factor is 1: the rate is unchanged. Doubling [B] halves the steady-state [A_2] while doubling step 2's rate per A_2, and the two effects cancel."
+  },
+  {
+    "id": "pc29-steady-state-double-b-intermediate",
+    "type": "numeric",
+    "prompt": "For the mechanism A + A → A_2 (k_1), then A_2 + B → C + A (k_2), the steady-state concentration is [A_2] ≈ (k_1[A]^2)/(k_2[B]). By what factor does [A_2] change if [B] is doubled, with [A] unchanged? (Give it as a decimal.)",
+    "answer": 0.5,
+    "tolerance": 0,
+    "explanation": "[A_2] is inversely proportional to [B], so doubling [B] multiplies [A_2] by 1/2 = 0.5. More B uses up A_2 faster, so less of it is present at steady state."
+  },
+  {
+    "id": "pc29-steady-state-a2-rate-numeric",
+    "type": "numeric",
+    "prompt": "The steady-state treatment of A + A → A_2 (k_1), then A_2 + B → C + A (k_2), predicts d[C]/dt = k_1[A]^2. What is d[C]/dt, in M s^−1, when k_1 = 0.040 M^−1 s^−1 and [A] = 0.50 M? (Give it as a decimal.)",
+    "answer": 0.01,
+    "unit": "M s^−1",
+    "explanation": "d[C]/dt = 0.040 M^−1 s^−1 × (0.50 M)^2 = 0.040 × 0.25 M s^−1 = 0.010 M s^−1. Neither k_2 nor [B] is needed, since both cancel in the derivation."
+  },
+  {
+    "id": "pc29-steady-state-k2-drops-out",
+    "type": "multiple-choice",
+    "prompt": "In the steady-state rate law d[C]/dt = k_1[A]^2 for A + A → A_2 (k_1), then A_2 + B → C + A (k_2), the constant k_2 does not appear. What does this mean?",
+    "choices": [
+      {
+        "text": "Every A_2 formed goes on to C, so the rate of step 1 sets the rate",
+        "correct": true
+      },
+      {
+        "text": "Step 2 doesn't happen",
+        "why": "Step 2 is the only step that forms C, so it must happen. Its rate constant cancels because, at steady state, it uses A_2 as fast as step 1 makes it."
+      },
+      {
+        "text": "k_2 is zero",
+        "why": "If k_2 were zero, no C would form. k_2 cancels because a larger k_2 lowers [A_2] by the same factor."
+      },
+      {
+        "text": "k_2 equals k_1",
+        "why": "The derivation makes no assumption about their sizes. k_2 cancels between d[C]/dt = k_2[A_2][B] and [A_2] = (k_1[A]^2)/(k_2[B])."
+      }
+    ],
+    "explanation": "At steady state, step 2 uses A_2 as fast as step 1 forms it, so C forms at the rate of step 1, k_1[A]^2. A larger k_2 only lowers the steady-state [A_2], leaving the rate the same."
+  },
+  {
+    "id": "pc29-steady-state-astar-rate-of-change",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A → A^* (rate constant k_1), then A^* + B → C (rate constant k_2), what is d[A^*]/dt?",
+    "choices": [
+      {
+        "text": "k_1[A] − k_2[A^*][B]",
+        "correct": true
+      },
+      {
+        "text": "k_1[A]^2 − k_2[A^*][B]",
+        "why": "Step 1 here uses a single A, so its rate is k_1[A], not k_1[A]^2."
+      },
+      {
+        "text": "k_1[A] + k_2[A^*][B]",
+        "why": "Step 2 uses up A^*, so its term is subtracted. A^* is formed in step 1 and consumed in step 2."
+      },
+      {
+        "text": "k_1[A] − k_2[A^*]",
+        "why": "Step 2 also needs B, so its rate is k_2[A^*][B]."
+      }
+    ],
+    "explanation": "A^* is formed by step 1 at the rate k_1[A] and used up by step 2 at the rate k_2[A^*][B]. So d[A^*]/dt = k_1[A] − k_2[A^*][B]."
+  },
+  {
+    "id": "pc29-steady-state-astar-concentration",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A → A^* (k_1), then A^* + B → C (k_2), d[A^*]/dt = k_1[A] − k_2[A^*][B]. What steady-state [A^*] follows?",
+    "choices": [
+      {
+        "text": "(k_1[A])/(k_2[B])",
+        "correct": true
+      },
+      {
+        "text": "(k_1[A]^2)/(k_2[B])",
+        "why": "That is [A_2] for the other mechanism, where step 1 uses two A. Here step 1 uses one A, so [A] is not squared."
+      },
+      {
+        "text": "(k_2[B])/(k_1[A])",
+        "why": "The fraction is upside down. Solving k_1[A] = k_2[A^*][B] for [A^*] puts k_1[A] on top."
+      },
+      {
+        "text": "(k_1[A][B])/(k_2)",
+        "why": "[B] belongs in the denominator. Dividing k_1[A] = k_2[A^*][B] by k_2[B] isolates [A^*]."
+      }
+    ],
+    "explanation": "Setting k_1[A] − k_2[A^*][B] ≈ 0 and solving gives [A^*] ≈ (k_1[A])/(k_2[B]). Substituting it into d[C]/dt = k_2[A^*][B] gives the predicted rate law."
+  },
+  {
+    "id": "pc29-steady-state-astar-numeric",
+    "type": "numeric",
+    "prompt": "For the mechanism A → A^* (k_1), then A^* + B → C (k_2), the steady-state concentration is [A^*] ≈ (k_1[A])/(k_2[B]). What is [A^*], in M, when k_1 = 3.0 s^−1, k_2 = 1.5 × 10^5 M^−1 s^−1, [A] = 0.10 M and [B] = 0.050 M? (Type it in scientific notation, like 2.5e-6.)",
+    "answer": 0.00004,
+    "unit": "M",
+    "explanation": "[A^*] ≈ (3.0 s^−1 × 0.10 M)/(1.5 × 10^5 M^−1 s^−1 × 0.050 M) = (0.30)/(7.5 × 10^3) M = 4.0 × 10^−5 M. The intermediate is used up so fast that its steady-state concentration is tiny."
+  },
+  {
+    "id": "pc29-steady-state-astar-rate-law",
+    "type": "multiple-choice",
+    "prompt": "For the mechanism A → A^* (k_1), then A^* + B → C (k_2), substituting [A^*] ≈ (k_1[A])/(k_2[B]) into d[C]/dt = k_2[A^*][B] gives which rate law?",
+    "choices": [
+      {
+        "text": "d[C]/dt = k_1[A]",
+        "correct": true
+      },
+      {
+        "text": "d[C]/dt = k_1[A]^2",
+        "why": "That is the rate law of the A + A → A_2 mechanism. Here step 1 uses one A, so the rate is first order in A."
+      },
+      {
+        "text": "d[C]/dt = k_1[A][B]",
+        "why": "The [B] from step 2 cancels the [B] in the denominator of [A^*], so no [B] is left."
+      },
+      {
+        "text": "d[C]/dt = k_2[A][B]",
+        "why": "k_2 cancels and k_1 remains: k_2 × (k_1[A])/(k_2[B]) × [B] = k_1[A]."
+      }
+    ],
+    "explanation": "d[C]/dt = k_2 × (k_1[A])/(k_2[B]) × [B]; k_2 and [B] cancel, leaving k_1[A]. This mechanism is predicted to be first order in A."
+  },
+  {
+    "id": "pc29-steady-state-astar-k1-from-rate",
+    "type": "numeric",
+    "prompt": "The steady-state treatment of A → A^* (k_1), then A^* + B → C (k_2), predicts d[C]/dt = k_1[A]. If the measured d[C]/dt is 6.0 × 10^−3 M s^−1 when [A] = 0.30 M, what is k_1, in s^−1? (Give it as a decimal.)",
+    "answer": 0.02,
+    "unit": "s^−1",
+    "explanation": "k_1 = (d[C]/dt)/[A] = (6.0 × 10^−3 M s^−1)/(0.30 M) = 0.020 s^−1. The units come out as s^−1 because the rate law is first order overall."
+  },
+  {
+    "id": "pc29-steady-state-k1-units",
+    "type": "multiple-choice",
+    "prompt": "Rates are in M s^−1. The steady-state rate laws are d[C]/dt = k_1[A]^2 for the A + A → A_2 mechanism and d[C]/dt = k_1[A] for the A → A^* mechanism. What are the units of k_1 in each?",
+    "choices": [
+      {
+        "text": "M^−1 s^−1 for the A_2 mechanism, s^−1 for the A^* mechanism",
+        "correct": true
+      },
+      {
+        "text": "s^−1 for the A_2 mechanism, M^−1 s^−1 for the A^* mechanism",
+        "why": "These are swapped. k_1[A]^2 has an extra M to cancel, so its k_1 is in M^−1 s^−1; k_1[A] needs only s^−1."
+      },
+      {
+        "text": "s^−1 for both",
+        "why": "s^−1 works for k_1[A] but not for k_1[A]^2, which would then be in M^2 s^−1. The A_2 mechanism's k_1 needs M^−1 s^−1."
+      },
+      {
+        "text": "M s^−1 for both",
+        "why": "M s^−1 is the unit of the rate itself. Multiplying it by [A] or [A]^2 would give the wrong units for d[C]/dt."
+      }
+    ],
+    "explanation": "For k_1[A]^2 to be in M s^−1, k_1 must be in M^−1 s^−1; for k_1[A], k_1 must be in s^−1. In each case k_1 is the rate constant of step 1, which uses two A in one mechanism and one A in the other."
+  },
+  {
+    "id": "pc29-steady-state-distinguish-experiment",
+    "type": "multiple-choice",
+    "prompt": "The steady-state treatment predicts d[C]/dt = k_1[A]^2 for the A + A → A_2 mechanism and d[C]/dt = k_1[A] for the A → A^* mechanism. Which experiment tells the two predictions apart?",
+    "choices": [
+      {
+        "text": "Vary [A] at fixed [B] and see how the rate changes",
+        "correct": true
+      },
+      {
+        "text": "Vary [B] at fixed [A] and see how the rate changes",
+        "why": "Neither predicted rate law contains [B], so both predict no change. Only the dependence on [A] differs."
+      },
+      {
+        "text": "Check that C is the product",
+        "why": "Both mechanisms make C from A and B. Their predictions differ only in how the rate depends on [A]."
+      },
+      {
+        "text": "Measure the rate at a single set of concentrations",
+        "why": "One rate can be matched by either law with a suitable k_1. Changing [A] shows whether the rate goes as [A] or [A]^2."
+      }
+    ],
+    "explanation": "The predictions differ only in the order in A: doubling [A] should quadruple the rate for the A_2 mechanism but double it for the A^* mechanism. Comparing with what is observed rules one of them out."
+  },
+  {
+    "id": "pc29-steady-state-elimination",
+    "type": "multiple-choice",
+    "prompt": "A mechanism's steady-state rate law is d[C]/dt = k_1[A], but experiments show the rate rises fourfold when [A] is doubled. What does the section say happens to the mechanism?",
+    "choices": [
+      {
+        "text": "It is eliminated from consideration",
+        "correct": true
+      },
+      {
+        "text": "It is confirmed, since the rate rises with [A]",
+        "why": "A first-order law predicts a doubling, not a fourfold rise. When a prediction can't be reconciled with observation, the mechanism is eliminated."
+      },
+      {
+        "text": "k_1 is adjusted until it fits",
+        "why": "Changing k_1 can't turn a doubling into a fourfold rise; that depends on the order. The mechanism is eliminated."
+      },
+      {
+        "text": "The steady-state approximation is dropped and the mechanism kept",
+        "why": "The section compares the predicted rate law with observation and, when they can't be reconciled, eliminates the mechanism."
+      }
+    ],
+    "explanation": "A fourfold rise on doubling [A] means second order in A, which d[C]/dt = k_1[A] can't produce. The section says that if a prediction cannot be reconciled with observation, the scientific method eliminates that mechanism."
+  }
+]

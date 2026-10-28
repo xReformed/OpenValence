@@ -1,0 +1,434 @@
+[
+  {
+    "id": "pc29-indistinguishable-value-of-kinetics",
+    "type": "multiple-choice",
+    "prompt": "What does the section call the great value of chemical kinetics?",
+    "choices": [
+      {
+        "text": "It gives insight into the pathways reactants take to products",
+        "correct": true
+      },
+      {
+        "text": "It gives the equilibrium constant of every reaction",
+        "why": "The section is about mechanisms, not equilibrium constants. Its point is that kinetics gives insight into the actual reaction pathways."
+      },
+      {
+        "text": "It proves which mechanism a reaction follows",
+        "why": "The section says kinetic analysis can rule mechanisms out but cannot confirm one. Its value is the insight it gives into pathways."
+      },
+      {
+        "text": "It shows which products a reaction makes",
+        "why": "The products are known from the overall reaction. Kinetics gives insight into the steps, the mechanism, that lead to them."
+      }
+    ],
+    "explanation": "The section says the great value of kinetics is that it can give insight into the actual reaction pathways, or mechanisms, that reactants take to form products. Checking which rate law a mechanism is consistent with is how that insight is gained."
+  },
+  {
+    "id": "pc29-indistinguishable-same-overall",
+    "type": "multiple-choice",
+    "prompt": "The section proposes two different mechanisms for A + B → C. What does this show about an overall reaction?",
+    "choices": [
+      {
+        "text": "One overall reaction can have more than one possible mechanism",
+        "correct": true
+      },
+      {
+        "text": "Its equation fixes the mechanism",
+        "why": "Both mechanisms add up to the same A + B → C, so the equation alone can't fix which one happens."
+      },
+      {
+        "text": "It always happens in a single step",
+        "why": "Both proposed mechanisms have two steps. And because there are two candidates, the overall equation can't say which is right."
+      },
+      {
+        "text": "Its two mechanisms must give the same rate law",
+        "why": "The two mechanisms in the section predict different rate laws, second and first order in A. That difference is what lets one be ruled out."
+      }
+    ],
+    "explanation": "A + A → A_2 then A_2 + B → C + A, and A → A^* then A^* + B → C, both add up to A + B → C. The overall reaction alone doesn't say which pathway the reactants take."
+  },
+  {
+    "id": "pc29-indistinguishable-intermediates",
+    "type": "multiple-choice",
+    "prompt": "Mechanism 1 for A + B → C is A + A → A_2, then A_2 + B → C + A. Mechanism 2 is A → A^*, then A^* + B → C. What are the intermediates of mechanisms 1 and 2?",
+    "choices": [
+      {
+        "text": "A_2 in mechanism 1 and A^* in mechanism 2",
+        "correct": true
+      },
+      {
+        "text": "A in mechanism 1 and B in mechanism 2",
+        "why": "A and B are reactants. The intermediates are the species formed in step 1 and used in step 2: A_2 and A^*."
+      },
+      {
+        "text": "C in both mechanisms",
+        "why": "C is the product of both, formed in the last step and not used again. The intermediates are A_2 and A^*."
+      },
+      {
+        "text": "A^* in mechanism 1 and A_2 in mechanism 2",
+        "why": "These are swapped. Mechanism 1 forms A_2 from two A; mechanism 2 forms A^* from a single A."
+      }
+    ],
+    "explanation": "A_2 is formed in step 1 of mechanism 1 and used in step 2; A^* plays the same part in mechanism 2. The section's predicted rate laws assume the steady-state approximation can be applied to these intermediates."
+  },
+  {
+    "id": "pc29-indistinguishable-step-two-returns-a",
+    "type": "multiple-choice",
+    "prompt": "In mechanism 1 for A + B → C, step 1 is A + A → A_2 and step 2 is A_2 + B → C + A. Why must step 2 give back a molecule of A?",
+    "choices": [
+      {
+        "text": "So the steps add up to A + B → C",
+        "correct": true
+      },
+      {
+        "text": "Because A is the intermediate",
+        "why": "A is a reactant, not the intermediate; A_2 is the intermediate. Step 2 returns an A so the steps sum to the overall reaction."
+      },
+      {
+        "text": "Because A is a catalyst in this mechanism",
+        "why": "A is used up overall, one per C formed, so it is a reactant, not a catalyst. Returning one A just makes the steps add up to A + B → C."
+      },
+      {
+        "text": "So the reaction becomes first order in A",
+        "why": "Mechanism 1 predicts second order in A. The A in step 2 is there so the steps balance to A + B → C."
+      }
+    ],
+    "explanation": "Adding the steps gives 2A + A_2 + B → A_2 + C + A, and cancelling A_2 and one A leaves A + B → C. Without the returned A, the steps would add up to 2A + B → C instead."
+  },
+  {
+    "id": "pc29-indistinguishable-net-a-used",
+    "type": "numeric",
+    "prompt": "In the mechanism A + A → A_2 (step 1), then A_2 + B → C + A (step 2), how many molecules of A are used up, net, for each molecule of C formed?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Step 1 uses 2 A and step 2 gives 1 A back, so the net use is 2 − 1 = 1 A per C. That matches the overall reaction A + B → C."
+  },
+  {
+    "id": "pc29-indistinguishable-mechanism-one-order",
+    "type": "multiple-choice",
+    "prompt": "For A + B → C, mechanism 1 is A + A → A_2, then A_2 + B → C + A. What order in A does the section say it predicts?",
+    "choices": [
+      {
+        "text": "Second order",
+        "correct": true
+      },
+      {
+        "text": "First order",
+        "why": "First order in A is the prediction of the other mechanism, A → A^*. Here step 1 combines two molecules of A."
+      },
+      {
+        "text": "Zero order",
+        "why": "The rate depends on A through step 1, A + A → A_2. The section predicts second order in A."
+      },
+      {
+        "text": "Third order",
+        "why": "Step 1 involves two A, not three; the A in step 2 is a product. The predicted order in A is two."
+      }
+    ],
+    "explanation": "The section says the first mechanism predicts the reaction should be second order in A. This holds in the limit that the steady-state approximation can be applied to the intermediate A_2."
+  },
+  {
+    "id": "pc29-indistinguishable-mechanism-two-order",
+    "type": "multiple-choice",
+    "prompt": "For A + B → C, mechanism 2 is A → A^*, then A^* + B → C. What order in A does the section say it predicts?",
+    "choices": [
+      {
+        "text": "First order",
+        "correct": true
+      },
+      {
+        "text": "Second order",
+        "why": "Second order in A is the prediction of the A + A → A_2 mechanism. Here step 1 uses a single A."
+      },
+      {
+        "text": "Zero order",
+        "why": "The rate still depends on A, through step 1, A → A^*. The section predicts first order in A."
+      },
+      {
+        "text": "Half order",
+        "why": "Nothing in this mechanism gives a fractional order. With one A in step 1, the section predicts first order."
+      }
+    ],
+    "explanation": "The section says the second mechanism predicts first order in A, in the limit that the steady-state approximation can be applied to A^*. The difference from mechanism 1 traces to step 1, which uses one A here and two there."
+  },
+  {
+    "id": "pc29-indistinguishable-why-second-order",
+    "type": "multiple-choice",
+    "prompt": "Mechanism 1 (A + A → A_2, then A_2 + B → C + A) predicts second order in A, and mechanism 2 (A → A^*, then A^* + B → C) predicts first order. Which difference between them accounts for this?",
+    "choices": [
+      {
+        "text": "Step 1 brings together two A in mechanism 1 but one A in mechanism 2",
+        "correct": true
+      },
+      {
+        "text": "Step 2 uses B in mechanism 1 but not in mechanism 2",
+        "why": "Step 2 uses B in both mechanisms. The difference in order in A comes from step 1, which takes two A in one mechanism and one in the other."
+      },
+      {
+        "text": "Mechanism 1 has more steps than mechanism 2",
+        "why": "Both mechanisms have two steps. What differs is how many A molecules step 1 brings together."
+      },
+      {
+        "text": "Mechanism 1 makes more C than mechanism 2",
+        "why": "Both mechanisms add up to A + B → C, one C per A and B. The order differs because step 1 uses two A in one and one A in the other."
+      }
+    ],
+    "explanation": "The first step forms the intermediate, and it uses two molecules of A in mechanism 1 but only one in mechanism 2. So with the steady-state approximation, the predicted rate goes as [A]^2 for mechanism 1 and as [A] for mechanism 2."
+  },
+  {
+    "id": "pc29-indistinguishable-steady-state-limit",
+    "type": "multiple-choice",
+    "prompt": "The two mechanisms for A + B → C predict second and first order in A. Under what condition does the section say these predictions hold?",
+    "choices": [
+      {
+        "text": "When the steady-state approximation applies to A_2 and A^*",
+        "correct": true
+      },
+      {
+        "text": "When A and B start at equal concentrations",
+        "why": "The section doesn't tie the predictions to starting concentrations. They hold in the limit where the steady-state approximation applies to the intermediates."
+      },
+      {
+        "text": "When the reactions have reached equilibrium",
+        "why": "The predictions are about the rate of forming C, not about equilibrium. They rest on the steady-state approximation for A_2 and A^*."
+      },
+      {
+        "text": "When the intermediates build up to large amounts",
+        "why": "The steady-state approximation is for short-lived intermediates whose concentrations stay constant, not ones that build up."
+      }
+    ],
+    "explanation": "The section says the predicted orders hold in the limit that the steady-state approximation can be applied to A_2 and A^*. That approximation is developed in the section on the steady-state approximation."
+  },
+  {
+    "id": "pc29-indistinguishable-rule-out-second",
+    "type": "multiple-choice",
+    "prompt": "Experiments show that A + B → C is second order in A. Which proposed mechanism can be ruled out?",
+    "choices": [
+      {
+        "text": "A → A^*, then A^* + B → C",
+        "correct": true
+      },
+      {
+        "text": "A + A → A_2, then A_2 + B → C + A",
+        "why": "This mechanism predicts second order in A, so it agrees with the data and can't be ruled out. The one-A mechanism predicts first order."
+      },
+      {
+        "text": "Both mechanisms",
+        "why": "The A_2 mechanism predicts second order in A, which matches. Only the A^* mechanism, which predicts first order, is ruled out."
+      },
+      {
+        "text": "Neither mechanism",
+        "why": "The A^* mechanism predicts first order in A, which disagrees with the observed second order, so it can be ruled out."
+      }
+    ],
+    "explanation": "The A^* mechanism predicts first order in A, so a second-order observation rules it out. The A_2 mechanism is consistent with the data, but that alone doesn't confirm it."
+  },
+  {
+    "id": "pc29-indistinguishable-rule-out-first",
+    "type": "multiple-choice",
+    "prompt": "Experiments show that A + B → C is first order in A. Which conclusion does the section support?",
+    "choices": [
+      {
+        "text": "The A_2 mechanism is ruled out, but the A^* mechanism is not proven",
+        "correct": true
+      },
+      {
+        "text": "The A^* mechanism is proven correct",
+        "why": "Agreement with the rate law shows only that the A^* mechanism is consistent. The section says this kind of analysis cannot confirm a mechanism."
+      },
+      {
+        "text": "The A^* mechanism is ruled out",
+        "why": "The A^* mechanism predicts first order in A, which matches. It is the A_2 mechanism, predicting second order, that is ruled out."
+      },
+      {
+        "text": "Neither mechanism can be ruled out",
+        "why": "The A_2 mechanism predicts second order in A, which disagrees with a first-order observation, so it can be ruled out."
+      }
+    ],
+    "explanation": "A first-order result rules out the A_2 mechanism, which predicts second order. The A^* mechanism survives, but the section stresses that rate-law analysis cannot confirm a specific mechanism; other evidence is needed."
+  },
+  {
+    "id": "pc29-indistinguishable-cannot-confirm",
+    "type": "multiple-choice",
+    "prompt": "A student finds that a proposed mechanism predicts exactly the observed rate law and concludes the mechanism is correct. What is wrong with this conclusion?",
+    "choices": [
+      {
+        "text": "Matching the rate law can rule mechanisms out but not confirm one",
+        "correct": true
+      },
+      {
+        "text": "Nothing; matching the rate law confirms the mechanism",
+        "why": "The section says this analysis cannot confirm a specific mechanism. Another mechanism could predict the same rate law."
+      },
+      {
+        "text": "A rate law can never be compared with a mechanism",
+        "why": "The section does compare them: a predicted rate law that disagrees with observation rules a mechanism out. It just can't prove one right."
+      },
+      {
+        "text": "The predicted rate law must disagree with observation to be useful",
+        "why": "Agreement is useful: the mechanism stays under consideration. It just isn't proof, since other mechanisms may agree too."
+      }
+    ],
+    "explanation": "A matching rate law shows a mechanism is consistent with the data, not that it is the one that happens. Other evidence is needed to draw such a conclusion, which is why multiple mechanisms are often indistinguishable."
+  },
+  {
+    "id": "pc29-indistinguishable-other-evidence",
+    "type": "multiple-choice",
+    "prompt": "Which kind of evidence does the section give as able to support a specific mechanism, beyond the rate law?",
+    "choices": [
+      {
+        "text": "Spectroscopic observation of an intermediate only that mechanism can form",
+        "correct": true
+      },
+      {
+        "text": "A more precise measurement of the reaction order",
+        "why": "A better order still only rules mechanisms in or out by their rate laws. The section points to observing an intermediate that only one mechanism forms."
+      },
+      {
+        "text": "The balanced equation for the overall reaction",
+        "why": "Different mechanisms share the same overall equation, so it can't pick between them. Observing a mechanism-specific intermediate can."
+      },
+      {
+        "text": "Observing that the products form",
+        "why": "Every proposed mechanism forms the same products. An intermediate formed only by one mechanism is what distinguishes it."
+      }
+    ],
+    "explanation": "The section names spectroscopic observation of a particular reaction intermediate that can only be formed by a specific mechanism. Such evidence goes beyond what the rate law can show."
+  },
+  {
+    "id": "pc29-indistinguishable-detect-intermediate",
+    "type": "multiple-choice",
+    "prompt": "Two mechanisms are proposed for A + B → C: one through the intermediate A_2, one through A^*. Spectroscopy detects A_2 during the reaction, and A_2 can be formed only by the first mechanism. What does this support?",
+    "choices": [
+      {
+        "text": "The mechanism through A_2",
+        "correct": true
+      },
+      {
+        "text": "The mechanism through A^*",
+        "why": "The A^* mechanism never forms A_2. Seeing an intermediate that only the A_2 mechanism makes points to that mechanism."
+      },
+      {
+        "text": "Neither; spectroscopy can't bear on mechanisms",
+        "why": "The section names spectroscopic observation of an intermediate as exactly the kind of extra evidence that can support a mechanism."
+      },
+      {
+        "text": "Both mechanisms equally",
+        "why": "Only one mechanism can form A_2, so observing it favors that one over the other."
+      }
+    ],
+    "explanation": "An intermediate that only one mechanism can form is a fingerprint of that mechanism. Observing A_2 supports the first mechanism in a way that rate-law analysis alone cannot."
+  },
+  {
+    "id": "pc29-indistinguishable-predict-factor",
+    "type": "numeric",
+    "prompt": "Mechanism 1 for A + B → C predicts a rate that is second order in A. By what factor does it predict the rate will change if [A] is tripled, with everything else the same?",
+    "answer": 9,
+    "tolerance": 0,
+    "explanation": "A rate second order in A goes as [A]^2, so tripling [A] multiplies the rate by 3^2 = 9. The first-order mechanism would predict a factor of 3, which is how an experiment can tell them apart."
+  },
+  {
+    "id": "pc29-indistinguishable-order-from-data",
+    "type": "numeric",
+    "prompt": "For A + B → C at fixed [B], the initial rate is 1.5 × 10^−5 M s^−1 at [A] = 0.020 M and 3.0 × 10^−5 M s^−1 at [A] = 0.040 M. What is the order of the reaction in A?",
+    "answer": 1,
+    "tolerance": 0,
+    "explanation": "Doubling [A] doubles the rate (3.0 × 10^−5/1.5 × 10^−5 = 2 = 2^1), so the reaction is first order in A. Of the section's two mechanisms, that rules out the A + A → A_2 one, which predicts second order."
+  },
+  {
+    "id": "pc29-indistinguishable-same-prediction",
+    "type": "multiple-choice",
+    "prompt": "Two different mechanisms for a reaction both predict the same rate law, and it matches the observed one. What can rate measurements tell about which mechanism is right?",
+    "choices": [
+      {
+        "text": "Nothing; the two are indistinguishable by rate law",
+        "correct": true
+      },
+      {
+        "text": "The simpler mechanism must be right",
+        "why": "The section offers no such rule. When both predict the observed rate law, kinetics can't choose; other evidence is needed."
+      },
+      {
+        "text": "Both mechanisms are ruled out",
+        "why": "A mechanism is ruled out only when its prediction disagrees with observation. Here both agree, so neither is ruled out."
+      },
+      {
+        "text": "The one proposed first must be right",
+        "why": "The order of proposal has no bearing. Rate-law analysis can only rule out mechanisms whose predictions disagree with the data."
+      }
+    ],
+    "explanation": "Rate-law analysis rules out mechanisms whose predictions disagree with observation, and neither does here. That is the sense in which multiple mechanisms are often indistinguishable; evidence such as an observed intermediate is needed."
+  },
+  {
+    "id": "pc29-indistinguishable-toolbox",
+    "type": "multiple-choice",
+    "prompt": "The section lists approximations for analyzing mechanisms and predicting rate laws. Which of these is NOT one of them?",
+    "choices": [
+      {
+        "text": "The half-life approximation",
+        "correct": true
+      },
+      {
+        "text": "The rate-determining step approximation",
+        "why": "This is on the section's list, along with the steady-state and equilibrium approximations."
+      },
+      {
+        "text": "The steady-state approximation",
+        "why": "This is on the section's list; it is also what the section's predicted rate laws rely on."
+      },
+      {
+        "text": "The equilibrium approximation",
+        "why": "This is on the section's list, with the rate-determining step and steady-state approximations."
+      }
+    ],
+    "explanation": "The section's toolbox is the rate-determining step approximation, the steady-state approximation and the equilibrium approximation. A half-life describes a rate law; it is not one of these approximations."
+  },
+  {
+    "id": "pc29-indistinguishable-limits",
+    "type": "multiple-choice",
+    "prompt": "How does the section say the rate-determining step, steady-state and equilibrium approximations are used?",
+    "choices": [
+      {
+        "text": "Each is important in certain limits, and they are often used together",
+        "correct": true
+      },
+      {
+        "text": "Each applies to every mechanism without limits",
+        "why": "The section says each approximation is important in certain limits, not everywhere."
+      },
+      {
+        "text": "Only one may be used in any one analysis",
+        "why": "The section says they are oftentimes used in conjunction with one another to predict the final form of a rate law."
+      },
+      {
+        "text": "They are used to confirm a mechanism",
+        "why": "They predict rate laws from mechanisms. Comparing predictions with data can rule mechanisms out, but the section says it cannot confirm one."
+      }
+    ],
+    "explanation": "The section says each type of approximation is important in certain limits, and they are oftentimes used in conjunction with one another to predict the final forms of rate laws."
+  },
+  {
+    "id": "pc29-indistinguishable-purpose-of-prediction",
+    "type": "multiple-choice",
+    "prompt": "Why does the section analyze a proposed mechanism to find the rate law it predicts?",
+    "choices": [
+      {
+        "text": "To compare it with the observed rate law and rule out inconsistent mechanisms",
+        "correct": true
+      },
+      {
+        "text": "To measure the rate constant without experiments",
+        "why": "The predicted rate law gives the form of the rate's dependence on concentration; it doesn't replace measurement. Its use is comparison with observation."
+      },
+      {
+        "text": "To find the overall balanced equation",
+        "why": "The overall equation is known before any mechanism is proposed. Predicting a rate law lets a mechanism be checked against the observed one."
+      },
+      {
+        "text": "To prove the mechanism correct",
+        "why": "The section says this kind of analysis cannot confirm a mechanism. It can only show whether a mechanism is consistent with the data."
+      }
+    ],
+    "explanation": "Working out the rate law a mechanism is consistent with lets it be compared with the observed rate law. If they disagree, the mechanism is ruled out; if they agree, it remains possible but unproven."
+  }
+]
