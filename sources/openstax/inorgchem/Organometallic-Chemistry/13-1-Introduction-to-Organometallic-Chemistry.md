@@ -54,7 +54,7 @@ An organometallic complex is defined as a complex with bonding interactions betw
 
 Which of the molecules below is an organometallic complex?
 
-[Sn(Me)4] Sn(OMe)4cis-[PtCl2(NH3)2]
+[Sn(Me)4]    Sn(OMe)4cis-[PtCl2(NH3)2]
 
 **Solution**
 

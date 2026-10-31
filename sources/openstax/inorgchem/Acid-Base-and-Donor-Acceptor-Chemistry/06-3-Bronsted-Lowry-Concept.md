@@ -446,7 +446,7 @@ Two lessons may be derived from gas phase acidity and proton affinity data:
 
 [Note: corrected; the source prints "As shown in Figure 6.3.3.1, acid" where this reads "As shown in Figure 6.3.5.1, acid". The thermodynamic cycle for acid ionization is Figure 6.3.5.1.]
 
-HCl(g) + H2O(g) → H3O^+(g) + Cl^-(g) ΔH = +699 kJ/mol
+HCl(g) + H2O(g) → H3O^+(g) + Cl^-(g)    ΔH = +699 kJ/mol
 
 In other words, based on the thermodynamics of hydrogen ion transfer in the gas phase, most strong Brønsted acids should not act as Brønsted acids towards water. Nevertheless they do act as strong acids. This means that the solvation energy terms in the thermodynamic cycle of Figure 6.3.3.1 (possibly assisted by entropic effects) are driving hydrogen ion transfer in solution.
 
@@ -872,17 +872,17 @@ The Brønsted-Lowry concept allows for an understanding of hydrogen ion transfer
 
 [Note: corrected; the source prints "can both accept and receive hydrogen ions" where this reads "can both donate and accept hydrogen ions". Amphoteric solvents both donate and accept hydrogen ions.]
 
-2H2O(l) ⇌ H3O^+ + OH^- Kw = 1.0 × 10^−14
+2H2O(l) ⇌ H3O^+ + OH^-    Kw = 1.0 × 10^−14
 
 For example, sulfuric acid ionizes according to the equation:
 
-2H2SO4(l) ⇌ H3SO4^+ + HSO4^- K = 4 × 10^−4
+2H2SO4(l) ⇌ H3SO4^+ + HSO4^-    K = 4 × 10^−4
 
 The magnitude of the solvent autoionization constant in a given amphoteric solvent determines the amount of protonated and deprotonated* solvent present. Since sulfuric acid's autoionization constant is much larger than that of water (Kw = 10^−14), the concentrations of H3SO4^+ and HSO4^- present in pure sulfuric acid are ~0.02 M, much greater than the 10^−7 M H3O^+ and OH^- present in pure water.
 
 In contrast, ammonia's autoionization constant is much less than that of water and only 10^−14 M NH4^+ and NH2^- are present in pure ammonia.
 
-2NH3(l) ⇌ NH4^+ + NH2^- K = 10^−27
+2NH3(l) ⇌ NH4^+ + NH2^-    K = 10^−27
 
 ### The Solvent Leveling Effect Limits the Strongest Acid or Base that Can Exist
 

@@ -23,7 +23,7 @@ Consider the two equilibrium reactions shown below. The autoionization of water 
 
 [Note: corrected; the source prints "On the left is the dissociation" where this reads "On the right is the dissociation". The autoionization of water is on the left; the Zn^2+ equilibrium is on the right.]
 
-H2O ⇌ H^+ + OH^- vs. [Zn(H2O)]^2+ ⇌ H^+ + [Zn(OH)]^+
+H2O ⇌ H^+ + OH^-    vs.    [Zn(H2O)]^2+ ⇌ H^+ + [Zn(OH)]^+
 
 #### Exercise 12.9.1.1
 

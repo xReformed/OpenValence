@@ -88,6 +88,8 @@ Sections the converter didn't produce are safe from that command. Chapters 1–7
 
 - `scan.py` flags the braces in the quantum-number sets of 8.3 and 8.4 (`{1, 0, 0, +1/2}`); they are printed that way in the source.
 - `scan.py` flags the braces around HMPA's formula in *Organic Chemistry* 11.3 (`{[(CH3)2N]3PO, abbreviated HMPA}`); they are printed that way in the source.
+- `scan.py` flags the braces in "S_samp = kA{CA + K_(A, I) × CI}" in *Instrumental Analysis* 1.4; the source groups the terms with braces.
+- `scan.py` flags the braces in the ion-selective electrode and standard-addition equations of *Instrumental Analysis* 23.3 and 23.6, and an equation of 26.2 ("log{aA + K_(A, I)(aI)^(zA/zI)}"); the source groups the terms with `\left\{ … \right\}`.
 - `scan.py` flags "C 8 H15 N O 6" in an image description in *Organic Chemistry* 25.7; the source's description spaces the formula that way.
 - `scan.py` flags the braces in formulas of *Inorganic Chemistry* 9.2–9.4 ("[Co{Co(NH3)4(OH)2}3]", "bis{[…]Nickel(II)}", "K{Fe^II[Cr^III(CN)6]}"): they are the source's own nesting brackets.
 - `scan.py` flags the braces in the cluster formulas "[Al69{N(SiMe3)2}18]^3- and [Al77{N(SiMe3)2}20]^2-" in *Inorganic Chemistry* 8.6.2. They group the ligand in the source (the second is a corrected source typo).
