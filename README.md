@@ -19,7 +19,7 @@ Retrieval works end to end from the command line, and the web app is built — b
 | Markdown chunker | Working |
 | Embedding + index build | Working |
 | Similarity search (CLI) | Working |
-| Eval question set | **270 questions** for the current books: 183 answerable, 87 `unanswerable` (see [Evals](#evals)) — no runner yet |
+| Eval question set | **408 questions** for the current books: 341 answerable, 67 `unanswerable` (see [Evals](#evals)) — no runner yet |
 | HTTP API | Scaffolded — no endpoints yet |
 | Web UI | **Built** — landing page, topic pages, roadmap and learning paths, in-app section pages, chat with history and citations (chat runs on mock answers) |
 | Practice | **Started** — the books' Examples and Exercises are "compare with the book's solution" cards on the section pages, and OpenValence's own questions (written in [questions/](questions/), served from the database; a pool of up to 30 per section for all 16 chapters of *Beginning Chemistry* (7.2, 8.2 and 9.2 still to do), and for chapters 1–6 of *Organic Chemistry*, of which each student gets 10 at random) get one try each and a score, and a set must score 6 out of 10 to unlock the next section. Mastery bars fill as sections are finished; scores don't feed into them yet |
@@ -244,7 +244,7 @@ Do not add material to `sources/` unless you have checked its license and record
 
 ## Evals
 
-[evals/questions.jsonl](evals/questions.jsonl) holds **270 questions**, one JSON object per line:
+[evals/questions.jsonl](evals/questions.jsonl) holds **408 questions**, one JSON object per line:
 
 ```json
 {"id": "q003", "kind": "concept", "answerable": true,
@@ -258,16 +258,18 @@ Do not add material to `sources/` unless you have checked its license and record
 
 | Kind | Count | What it tests |
 | ---- | ----: | ------------- |
-| concept | 53 | Explanations, often in casual student phrasing |
-| calculation | 36 | Worked methods and values, recomputed during writing |
-| fact | 33 | Single facts and definitions |
-| distractor | 22 | A term that appears in many files but is taught in one |
-| exact-token | 15 | Questions that hinge on a precise token (`K_b` vs `K_a`, `ΔH_sub`, `δ+`) — the baseline for hybrid search |
-| defect | 20 | The book misprinted the answer; the corpus corrects it in place (or flags it in a `[Note: …]`), and the app must give the correct value, not the misprint |
-| contradiction | 4 | Two sections disagree (bond energies in *Beginning Chemistry* 9.5's average table vs *Organic Chemistry* 1.6–1.9) |
-| unanswerable | 87 | Questions the corpus can't answer — near misses (kinetics, crystal field theory), specific values it doesn't list, format gaps, off-topic requests |
+| concept | 99 | Explanations, often in casual student phrasing |
+| calculation | 70 | Worked methods and values, recomputed during writing |
+| fact | 58 | Single facts and definitions |
+| distractor | 42 | A term that appears in many files but is taught in one |
+| exact-token | 30 | Questions that hinge on a precise token (`K_b` vs `K_a`, `ΔH_sub`, `δ+`, `6-31G**`, κ vs η vs μ) — the baseline for hybrid search |
+| defect | 33 | The book misprinted the answer; the corpus corrects it in place (or flags it in a `[Note: …]`), and the app must give the correct value, not the misprint |
+| contradiction | 9 | Two sections disagree (C=C and C≡C bond energies across *Beginning Chemistry* 9.5, *Organic Chemistry* 1.8–1.9 and *Physical Chemistry* 9.10; water's pKa, 14.00 or 15.74; ΔS° for the same chelate reaction in *Inorganic Chemistry* 10.1 and 12.2) |
+| unanswerable | 67 | Questions the corpus can't answer — near misses (a value or method the books stop short of, such as Δo for [Ir(NH3)6]^3+ or the Cottrell equation), format gaps, off-topic requests, false premises and live data |
 
-The questions were written for OpenStax *Chemistry* 1e. When that book was removed, every one was re-checked against the current corpus: 50 still have an answer and now point at the *Beginning Chemistry* or *Organic Chemistry* section that gives it, with `expect` rewritten to that book's own numbers (for example, q054's bond energies now come from *Organic Chemistry* 1.7–1.9). The other 102 are labelled `unanswerable`, mostly kinetics, thermodynamics, the main-group and transition elements, and anything beyond organic chapter 1. Each keeps its question text unchanged, and its note says what it used to test ("Formerly a … question answered by *Chemistry* 1e …") and what a retriever might wrongly return instead. 118 new answerable questions (q153–q270) were then written for the current books, to rebalance the set: every chapter of *Beginning Chemistry* and organic chapter 1, including 20 `defect` questions built on the books' `[Note: …]` corrections and 4 `contradiction` questions. 168 of the 270 were then answerable; q123 (SN1 vs SN2), q122 (IR carbonyl stretch), q121 (NMR splitting), q125 (Hückel's rule), q132 (phenol's pKa), q150 (diethyl ether from ethanol), q005 (buffer pH, Henderson–Hasselbalch), q040 (aldol mechanism), q075 (soap and micelles) and q139 (Krebs cycle) became answerable when organic chapters 11–29 were transcribed, and q024 (formal charge), q035 (Lewis acid), q116 (cis/trans 2-butene), q124 (Markovnikov) and q126 (R/S), already covered by chapters 2, 5 and 7, were re-labelled at the same time, so 183 are now. There is no runner yet; the plan is below.
+The questions were written for OpenStax *Chemistry* 1e. When that book was removed, every one was re-checked against the current corpus: 50 still have an answer and now point at the *Beginning Chemistry* or *Organic Chemistry* section that gives it, with `expect` rewritten to that book's own numbers (for example, q054's bond energies now come from *Organic Chemistry* 1.7–1.9). The other 102 are labelled `unanswerable`, mostly kinetics, thermodynamics, the main-group and transition elements, and anything beyond organic chapter 1. Each keeps its question text unchanged, and its note says what it used to test ("Formerly a … question answered by *Chemistry* 1e …") and what a retriever might wrongly return instead. 118 new answerable questions (q153–q270) were then written for the current books, to rebalance the set: every chapter of *Beginning Chemistry* and organic chapter 1, including 20 `defect` questions built on the books' `[Note: …]` corrections and 4 `contradiction` questions. 168 of the 270 were then answerable; q123 (SN1 vs SN2), q122 (IR carbonyl stretch), q121 (NMR splitting), q125 (Hückel's rule), q132 (phenol's pKa), q150 (diethyl ether from ethanol), q005 (buffer pH, Henderson–Hasselbalch), q040 (aldol mechanism), q075 (soap and micelles) and q139 (Krebs cycle) became answerable when organic chapters 11–29 were transcribed, and q024 (formal charge), q035 (Lewis acid), q116 (cis/trans 2-butene), q124 (Markovnikov) and q126 (R/S), already covered by chapters 2, 5 and 7, were re-labelled at the same time, so 183 were.
+
+When *Inorganic Chemistry*, *Physical Chemistry* and *Instrumental Analysis* (chapters 1–27) were added, the 87 unanswerable questions were re-checked against all five books: 44 now have an answer and were re-labelled the same way (q006 coordination number, q026 Born–Haber, q057 rms speed, q078–q079 rate laws and activation energy, q096 S = k ln W, q101 Nernst concentration cell, q115 high- vs low-spin iron, among others), and the other 43 keep the label with an updated near-miss list and a "Rechecked against all five books" line in the note. 138 new questions (q271–q408) followed: 36 for *Organic Chemistry* chapters 2–31 (so every chapter has at least one), 28 for *Inorganic Chemistry* and 50 for *Physical Chemistry* (every chapter), and 24 new unanswerable ones to refill that group. *Instrumental Analysis* gets its own questions once its chapters 28–34 are transcribed; until then its sections are cited only where they answer a question written for another book. 341 of the 408 are answerable. There is no runner yet; the plan is below.
 
 ---
 
